@@ -1,758 +1,855 @@
 from __future__ import annotations
 
-CHAPTER_12 = {
-    "id": "Q12",
-    "chapter_id": "Q12",
-    "chapter_number": 12,
-    "question_number": 12,
-    "slug": "first-30-day-launch-sprint-kill-fix-scale",
-    "question_prompt": "What is the exact Day-1-to-Day-30 execution schedule for launching government contract brokering, and what quantitative thresholds govern Kill, Fix, or Scale decisions at Day 30/60/90?",
-    "kicker": "Q12 / THE BIG MONEY PLAYBOOKS",
-    "title": "The First 30-Day Launch Sprint & Kill / Fix / Scale Gates",
-    "subtitle": "A SAM.gov and Municipal Bid-Desk Sprint: Seven Operator Plays, FAR Teaming Controls, Cash Limits, and Evidence-Based Day 30/60/90 Decisions",
-    "layout_template": "thirty_day_plan",
-    "reading_time_minutes": 14,
-    "executive_summary": (
-        "Candidate #4, Government Contract Brokering, ranks #27 with a 79/100 "
-        "Money-to-Manpower Score. Launch a paid procurement-services desk, not an "
-        "award-prediction business. Map seven plays into one controlled workflow: "
-        "solicitation monitoring, bid qualification, deadline management, proposal "
-        "assembly, supplier diligence, prime/sub teaming, and invoice administration. "
-        "The first month proves buyer demand, lawful delivery, and cash discipline "
-        "using a 2 FT + 3 C pod. Day 30/60/90 decisions use collected service fees, "
-        "accepted work, contribution margin, and runway rather than advertised "
-        "contract ceilings. Canonical annual owner profits remain $18,000 "
-        "Conservative, $126,000 Base, and $300,000 Scaled. The sprint does not "
-        "compress the stated 6–18-month first-deal horizon; it tests whether "
-        "customers will pay for useful work before an award arrives."
-    ),
-    "key_metrics": [
-        {
-            "label": "Conservative",
-            "value": "$120,000",
-            "context": "Annual recognized service fees; excludes client contract value",
-            "note": "15% net margin; $18,000 annual owner net profit; 2 FT + 3 C",
-        },
-        {
-            "label": "Base",
-            "value": "$560,000",
-            "context": "Annual recognized service fees; excludes client contract value",
-            "note": "22.5% net margin; $126,000 annual owner net profit; 2 FT + 3 C",
-        },
-        {
-            "label": "Scaled",
-            "value": "$1,000,000",
-            "context": "Annual recognized service fees; excludes client contract value",
-            "note": "30% net margin; $300,000 annual owner net profit; 3 FT + 4 C",
-        },
-    ],
-    "sections": [
-        {
-            "heading": "1. Days 1–7: Build a Lawful, Costed Bid Desk Before Selling Access",
-            "epistemic_status": "operating_framework",
-            "paragraphs": [
-                (
-                    "Start Day 1 by narrowing Candidate #4 to one buyer problem: "
-                    "help established suppliers decide which public solicitations "
-                    "to pursue and assemble responsive submissions. Select one "
-                    "service category, two federal buying offices, and one municipal "
-                    "portal; janitorial services for nearby facilities is a workable "
-                    "example when the team understands staffing, site visits, and "
-                    "wage determinations. Use SAM.gov Contract Opportunities and "
-                    "the municipality's official procurement website as source "
-                    "records, with USAspending.gov only for historical award "
-                    "research. Map the seven operator plays explicitly: P1 "
-                    "solicitation monitoring, P2 bid qualification, P3 deadline "
-                    "management, P4 proposal assembly, P5 supplier diligence, P6 "
-                    "prime/sub teaming, and P7 invoice administration. These are "
-                    "the sprint's operating labels, not seven separate businesses. "
-                    "Assign each opportunity one source URL, solicitation number, "
-                    "amendment history, customer, owner, and next action. Capture "
-                    "the actual solicitation attachments rather than relying on "
-                    "an alert excerpt. Federal and municipal requirements stay "
-                    "in separate checklists because a FAR provision does not "
-                    "automatically govern a city purchase. By Day 2, the desk "
-                    "must explain precisely which customer work it sells and "
-                    "which contractual responsibilities remain with the bidding "
-                    "prime. Reject requests to sell influence or privileged access."
-                ),
-                (
-                    "Keep the initial pod at 2 FT + 3 C: one full-time "
-                    "commercial lead owns discovery, scopes, collections, and "
-                    "customer decisions; one full-time delivery lead owns the "
-                    "bid calendar, source records, and document quality. Three "
-                    "contractors provide proposal editing, supplier costing, and "
-                    "procurement-law review under capped assignments. Budget "
-                    "80 employee hours and 24 combined contractor hours weekly, "
-                    "with 70 hours reserved for delivery and 34 for selling, "
-                    "administration, and rework. Contractor headcount does not "
-                    "mean three full-time schedules. Measure actual hours by "
-                    "play and customer from the first assignment using Toggl "
-                    "Track or a controlled spreadsheet. Establish Microsoft "
-                    "Lists for the opportunity register, Outlook for deadlines, "
-                    "and SharePoint for versioned workpapers; equivalent tools "
-                    "are acceptable when ownership and audit trails remain "
-                    "clear. Restrict the starter service to public solicitation "
-                    "material and ordinary customer business records. Do not "
-                    "accept controlled unclassified information merely because "
-                    "a customer can upload it. Contract clauses and information "
-                    "categories determine additional system requirements. Reserve "
-                    "review capacity before accepting a rush job, and cap "
-                    "simultaneous submission projects at three until measured "
-                    "touch time supports another. Every client receives a "
-                    "named alternate for deadline coverage."
-                ),
-                (
-                    "Before outreach, have the specialist review the compensation "
-                    "model against FAR Subpart 3.4 and FAR 52.203-5 where "
-                    "applicable. Fixed fees for real deliverables reduce dependence "
-                    "on awards but do not excuse influence selling, improper "
-                    "payments, or inaccurate certifications. Examine procurement "
-                    "integrity under 41 U.S.C. 2102 and kickbacks under 41 U.S.C. "
-                    "8702; document refusal of nonpublic source-selection material "
-                    "and payments intended to secure favorable treatment. For "
-                    "this illustrative launch, authorize $90,000 of available "
-                    "capital, a maximum $20,000 cash outflow in each 30-day "
-                    "period, and a $60,000 cumulative ceiling through Day 90. "
-                    "That leaves a $30,000 reserve before customer collections. "
-                    "The ceiling includes payroll, contractor invoices, tools, "
-                    "insurance, and professional review; it is a limit, not a "
-                    "spending target. Obtain actual payroll and contractor quotes "
-                    "by Day 5. If two full-time roles cannot fit, fund the "
-                    "difference within the ceiling or stop the proposed launch; "
-                    "do not silently replace the specified pod. Maintain a "
-                    "13-week cash forecast separating unrestricted cash, customer "
-                    "deposits owed against undelivered work, receivables, and "
-                    "committed payments. The minimum ongoing reserve equals "
-                    "eight weeks of forecast net cash burn plus noncancelable "
-                    "obligations falling after that window."
-                ),
-            ],
-            "table": {
-                "caption": "Days 1–7: Daily Foundation Deliverables for the Five-Person Procurement Pod",
-                "headers": [
-                    "Execution day and accountable operating owner",
-                    "Required deliverable and mapped operator plays",
-                    "Source evidence retained in the workpaper",
-                    "Acceptance test before the next commitment",
-                ],
-                "rows": [
-                    [
-                        "Day 1 — commercial lead chooses the initial market",
-                        "Define one supplier category and three buying destinations",
-                        "Save official procurement links and ten representative solicitations",
-                        "Explain the purchased service without promising contract awards",
-                    ],
-                    [
-                        "Day 2 — delivery lead establishes the opportunity register",
-                        "Activate P1 monitoring and P2 written qualification criteria",
-                        "Record identifiers, amendments, deadlines, eligibility, and named owners",
-                        "Every sampled opportunity traces directly to official source documents",
-                    ],
-                    [
-                        "Day 3 — commercial lead commissions specialist structure review",
-                        "Review fixed-fee scopes and permitted P6 teaming assistance",
-                        "Retain counsel comments on compensation and proposed relationships",
-                        "Remove influence payments and unresolved restricted deal structures",
-                    ],
-                    [
-                        "Day 4 — delivery lead assigns the five-person workload",
-                        "Allocate P3 calendars and P4 document ownership explicitly",
-                        "Publish weekly hours, backup coverage, and contractor spending caps",
-                        "No live deadline depends on an unavailable specialist",
-                    ],
-                    [
-                        "Day 5 — commercial lead validates available launch capital",
-                        "Approve cash forecast and maximum twenty-thousand-dollar monthly outflow",
-                        "Attach bank evidence, payroll quotes, and contractor rate schedules",
-                        "Ninety-day commitments preserve the defined minimum cash reserve",
-                    ],
-                    [
-                        "Day 6 — costing contractor builds supplier review worksheets",
-                        "Create P5 capacity checks and P7 invoice evidence fields",
-                        "Collect reference prompts, quote validity, and acceptance record templates",
-                        "Supplier checks distinguish delivery capacity from attractive pricing",
-                    ],
-                    [
-                        "Day 7 — delivery lead runs a complete rehearsal",
-                        "Process one public solicitation through all seven plays",
-                        "Save timed work logs and independently reviewed sample outputs",
-                        "Resolve every mandatory-field omission before paid delivery begins",
-                    ],
-                ],
-            },
-            "callout": {
-                "kind": "OPERATOR GATE",
-                "title": "Four Verifications Before Accepting a Customer's First Deadline",
-                "body": (
-                    "A signed service order authorizes only its stated scope. "
-                    "Check these four records before accepting money or taking "
-                    "responsibility for a submission milestone."
-                ),
-                "items": [
-                    "Verify the customer's authorized signer, required bidder registrations, eligibility representations, and responsibility for final certifications; SAM.gov registration itself is free.",
-                    "Record the compensation review, relevant solicitation clauses, municipal intermediary restrictions, and any unresolved teaming question before offering the affected service.",
-                    "Confirm the source deadline, time zone, amendment set, required site visits, and designated submission account with an independent second reviewer.",
-                    "Confirm paid capacity, contractor availability, cash reserve, and a usable delivery environment appropriate to the information actually being handled.",
-                ],
-            },
-        },
-        {
-            "heading": "2. Days 8–14: Sell Paid Work Packages, Not the Government's Contract Ceiling",
-            "epistemic_status": "illustrative_model",
-            "paragraphs": [
-                (
-                    "Use Days 8–10 to interview established suppliers rather "
-                    "than cold-pitching public officials for introductions. Build "
-                    "a list of 40 distinct qualified supplier accounts with "
-                    "evidence of relevant delivery capability, an identifiable "
-                    "decision-maker, and a plausible procurement need. Historical "
-                    "award records can identify incumbents and adjacent suppliers, "
-                    "but an old award is neither current demand nor permission "
-                    "to reuse a contact's personal information indiscriminately. "
-                    "A qualified outreach counts once per account after a "
-                    "tailored message reaches a relevant business contact; "
-                    "automated retries do not enlarge the denominator. Ask for "
-                    "the last abandoned bid, estimated preparation hours, "
-                    "supplier-quote failures, and the customer's payment process. "
-                    "Record why they would pay now even if the next award "
-                    "takes months. Target eight completed discovery calls by "
-                    "Day 30, with each call producing a stated problem, a "
-                    "named buyer, a budget discussion, and a dated next step. "
-                    "A polite reply is not discovery. Do not contact officials "
-                    "through prohibited channels once a solicitation restricts "
-                    "communications. Public question periods, industry days, "
-                    "and official clarification procedures are useful research "
-                    "channels, not substitutes for customer willingness to buy. "
-                    "Keep the sales record separate from the government's "
-                    "evaluation or award timeline."
-                ),
-                (
-                    "Offer two tightly bounded starter packages. A $2,000 "
-                    "bid-readiness assessment covers one solicitation, an "
-                    "eligibility matrix, a bid/no-bid recommendation, and a "
-                    "calendar; a $4,000 monthly bid-desk retainer covers a "
-                    "defined alert set, weekly reviews, and separately limited "
-                    "document support. These prices are illustrative test "
-                    "offers, not additions to the canonical scorecard. Specify "
-                    "revision limits, customer dependencies, acceptance evidence, "
-                    "payment dates, and excluded representation or certification "
-                    "tasks. Collect an agreed assessment deposit or first "
-                    "retainer installment before reserving delivery hours. "
-                    "Track cash collection independently from recognized revenue: "
-                    "an advance for unfinished work remains a delivery "
-                    "obligation, while completed services are recognized under "
-                    "the operator's consistently applied accounting policy. "
-                    "Never book a $500,000 client award as desk revenue. "
-                    "If the desk earns $4,000 for support, its revenue basis "
-                    "is the earned $4,000 service fee, not the prime's "
-                    "receipts or potential contract ceiling. For unit testing, "
-                    "a completed $2,000 assessment using eight direct hours "
-                    "at a $75 fully loaded rate consumes $600, leaving "
-                    "$1,400, or 70%, before shared overhead. Adding $200 of "
-                    "direct specialist review reduces that contribution to "
-                    "$1,200, or 60%; neither percentage is owner net margin."
-                ),
-                (
-                    "Days 11–14 convert interviews into three priced proposals "
-                    "and at least one signed assessment order, with a second "
-                    "paying customer targeted by Day 30. Each proposal maps "
-                    "specific outputs to P1–P7, including plays excluded from "
-                    "that particular purchase. A readiness assessment may use "
-                    "P1–P3 heavily while flagging later supplier and teaming "
-                    "work; do not bill for seven completed services when "
-                    "only three were delivered. Make the commercial lead "
-                    "responsible for the order and collections, the delivery "
-                    "lead responsible for effort estimates, and the editing "
-                    "contractor responsible for a readability check only after "
-                    "substantive requirements are correct. Test the $75 labor "
-                    "assumption against payroll burden and actual contractor "
-                    "rates rather than treating it as an industry benchmark. "
-                    "Use a weekly capacity board showing committed hours, "
-                    "remaining hours, and deadline collisions. No single new "
-                    "customer should consume more than 35 of the pod's "
-                    "70 delivery hours in a week during this sprint. "
-                    "Price additional work explicitly when an amendment "
-                    "changes the scope. If qualified buyers repeatedly reject "
-                    "the same offer, change the deliverable or segment before "
-                    "buying more lead volume. Procurement software cannot "
-                    "repair a service that customers do not value."
-                ),
-            ],
-            "table": {
-                "caption": "Days 8–14: Demand Tests, Paid Offers, and Recognized-Fee Controls",
-                "headers": [
-                    "Execution day and primary accountable team member",
-                    "Commercial action tied to the seven plays",
-                    "Required customer or accounting evidence retained",
-                    "Daily test that protects time and cash",
-                ],
-                "rows": [
-                    [
-                        "Day 8 — commercial lead assembles qualified supplier accounts",
-                        "Connect P1 opportunities with forty plausible customer businesses",
-                        "Document category fit, contact role, and relevant delivery evidence",
-                        "Exclude accounts lacking a credible need for procurement support",
-                    ],
-                    [
-                        "Day 9 — commercial lead starts targeted discovery outreach",
-                        "Test P2 qualification pain through specific abandoned-bid questions",
-                        "Log delivered messages and distinct account-level response outcomes",
-                        "Count each account once rather than inflating outreach totals",
-                    ],
-                    [
-                        "Day 10 — delivery lead joins substantive discovery calls",
-                        "Translate customer bottlenecks into bounded P3 and P4 outputs",
-                        "Capture buyer authority, existing workflow, budget, and next action",
-                        "Reject urgent work that exceeds available specialist review capacity",
-                    ],
-                    [
-                        "Day 11 — commercial lead prepares three priced proposals",
-                        "Offer assessment and retainer scopes with explicit play coverage",
-                        "Retain scope versions, labor estimates, and payment schedules",
-                        "Separate purchased operator services from underlying government contract value",
-                    ],
-                    [
-                        "Day 12 — specialist contractor reviews the first service order",
-                        "Inspect P6 relationships and compensation terms requiring specialist judgment",
-                        "Save customer responsibilities and documented treatment of restricted structures",
-                        "Resolve material concerns before the customer authorizes affected work",
-                    ],
-                    [
-                        "Day 13 — commercial lead collects the first installment",
-                        "Activate paid work only within the agreed service scope",
-                        "Record bank receipt separately from earned service revenue",
-                        "Exclude undelivered deposits from completed-work contribution calculations entirely",
-                    ],
-                    [
-                        "Day 14 — delivery lead publishes the next capacity board",
-                        "Reserve P4 production and P5 review hours before scheduling",
-                        "Show customer assignments, remaining hours, and named backup reviewers",
-                        "Keep each customer's weekly demand within thirty-five delivery hours",
-                    ],
-                ],
-            },
-            "callout": {
-                "kind": "INSIDER PRO-TIPS",
-                "title": "Veteran Bid-Desk Tactics That Prevent Expensive False Positives",
-                "body": (
-                    "The fastest desk is the one that rejects unsuitable "
-                    "opportunities early and preserves evidence when requirements change."
-                ),
-                "items": [
-                    "Read amendments before polishing the proposal: changed quantities, wage determinations, or mandatory visits can invalidate yesterday's attractive opportunity.",
-                    "Ask suppliers for quote expiration, freight assumptions, lead times, and substitution limits in one worksheet; a low price without availability is unusable.",
-                    "Use USAspending.gov to frame incumbent and buying-pattern questions, then verify current requirements in the live solicitation rather than extrapolating eligibility.",
-                    "Sell a paid bid/no-bid assessment before a large proposal engagement; documenting a defensible decision to decline can be the customer's highest-value outcome.",
-                ],
-            },
-        },
-        {
-            "heading": "3. Days 15–21: Deliver Three Reviewable Packets Without Becoming a Paper Prime",
-            "epistemic_status": "operating_framework",
-            "paragraphs": [
-                (
-                    "The third week tests whether the desk can turn public "
-                    "requirements into accepted customer work without creating "
-                    "new procurement risk. By Day 21, assemble three reviewable "
-                    "packets across the paid assignments: a qualification "
-                    "assessment, an amendment-controlled calendar, and a supplier "
-                    "or teaming worksheet. Each packet must be a separately "
-                    "identified contractual deliverable or milestone; splitting "
-                    "one document into three files does not satisfy the "
-                    "target. A completed bid submission is optional because "
-                    "the government's timetable may not fit the launch month. "
-                    "The customer remains the bidder and approves "
-                    "representations, pricing, signatures, and final submission. "
-                    "Use the agency's designated portal, including PIEE "
-                    "solicitation functionality where instructed, or the city's "
-                    "published bidding system. Do not share customer passwords; "
-                    "use authorized delegated access when available and retain "
-                    "the submission receipt. Measure delivery reliability "
-                    "against the customer-approved internal deadline, ideally "
-                    "one business day ahead of the official deadline. "
-                    "A proposal that misses the official cutoff cannot be "
-                    "rescued by a beautiful internal checklist. Compare "
-                    "attachments, file limits, required acknowledgments, and "
-                    "signature authority with the current instructions "
-                    "immediately before release. Treat a late amendment as "
-                    "a fresh review event, not an informal email addendum."
-                ),
-                (
-                    "P5 supplier diligence establishes whether quoted performance "
-                    "is real: verify legal entity, actual capacity, reference "
-                    "contacts, delivery geography, insurance when required, and "
-                    "quote validity. For federal opportunities, inspect applicable "
-                    "exclusion records and relevant solicitation clauses rather "
-                    "than declaring every vendor eligible from a single search. "
-                    "P6 teaming assistance then documents the actual division "
-                    "of work, pricing responsibilities, customer ownership, and "
-                    "subcontract administration. FAR Subpart 9.6 recognizes "
-                    "contractor team arrangements, but it does not eliminate "
-                    "responsibility, competition, or small-business requirements. "
-                    "Apply 13 CFR 125.6 when limitations on subcontracting "
-                    "govern the particular set-aside or contract; identify the "
-                    "contract category, applicable payment base, and treatment "
-                    "of similarly situated entities before calculating any "
-                    "percentage. Evaluate ostensible-subcontractor concerns "
-                    "under 13 CFR 121.103(h), including who performs primary "
-                    "and vital requirements and whether the prime is "
-                    "unusually reliant on another business. Where applicable, "
-                    "FAR 52.215-23 restricts excessive pass-through charges "
-                    "when the contractor adds no or negligible value. "
-                    "A nominal prime that merely forwards invoices is not "
-                    "the same business as a fee-based bid-support desk. "
-                    "Escalate ambiguous structures to the retained specialist "
-                    "before pricing or introducing counterparties, and reject "
-                    "structures that cannot meet the applicable requirements."
-                ),
-                (
-                    "Create a review ledger with two distinct measures. "
-                    "Mandatory-control completion must equal 100%: eligibility "
-                    "checks, required signatures, deadline verification, "
-                    "amendment acknowledgment, and authorized release cannot "
-                    "be averaged away. Separately require at least 95% "
-                    "first-pass accuracy across all checklist fields; calculate "
-                    "correct fields divided by inspected fields and keep "
-                    "the denominator. Review every packet during the pilot "
-                    "rather than drawing a small sample. Record defects "
-                    "by source, consequence, repair time, and responsible "
-                    "play. A missed attachment points to P4; an expired "
-                    "supplier quote points to P5; a missed date points "
-                    "to P3. P7 closes the loop with customer acceptance, "
-                    "earned-fee evidence, an invoice, and a scheduled "
-                    "collection follow-up. Government payment timing does "
-                    "not automatically determine when a private customer "
-                    "owes the desk; the service agreement controls that "
-                    "relationship. Do not describe the federal Prompt "
-                    "Payment Act as a direct remedy for every private "
-                    "consulting invoice. Track open invoices by contractual "
-                    "due date and dispute reason. If a customer insists "
-                    "on paying only after award, exclude that engagement "
-                    "from the early-cash test and review its compensation "
-                    "structure. The 6–18-month first-deal horizon makes "
-                    "award-dependent working capital especially dangerous "
-                    "for this five-person operating pod."
-                ),
-            ],
-            "table": {
-                "caption": "Days 15–21: Delivery Evidence, Supplier Reality, and Teaming Structure Tests",
-                "headers": [
-                    "Execution day and responsible delivery pod member",
-                    "Required production action across the mapped plays",
-                    "Evidence proving the work was actually performed",
-                    "Failure condition requiring immediate correction or rejection",
-                ],
-                "rows": [
-                    [
-                        "Day 15 — delivery lead completes the qualification assessment",
-                        "Resolve P2 eligibility and P3 dates against current attachments",
-                        "Retain a source-linked matrix with independently checked mandatory fields",
-                        "Reject pursuits with unresolved eligibility or impossible submission timing",
-                    ],
-                    [
-                        "Day 16 — editing contractor assembles the first work packet",
-                        "Build P4 response structure around actual evaluation instructions",
-                        "Save version history, requirement references, and customer dependency requests",
-                        "Repair missing mandatory content before spending time on formatting",
-                    ],
-                    [
-                        "Day 17 — costing contractor validates proposed supplier inputs",
-                        "Execute P5 checks for capacity, lead times, and prices",
-                        "Retain dated quotes and corroborating delivery-capability reference notes",
-                        "Replace unsupported quotes instead of hiding assumptions inside pricing",
-                    ],
-                    [
-                        "Day 18 — specialist contractor examines the teaming worksheet",
-                        "Test P6 workshare and applicable pass-through or affiliation issues",
-                        "Document prime responsibilities and the actual proposed performance allocation",
-                        "Reject paper-prime structures that cannot satisfy applicable requirements",
-                    ],
-                    [
-                        "Day 19 — delivery lead conducts independent packet review",
-                        "Inspect every mandatory control and calculate first-pass field accuracy",
-                        "Preserve defect counts, inspected-field totals, and correction ownership",
-                        "Require complete mandatory controls and ninety-five-percent overall first-pass accuracy",
-                    ],
-                    [
-                        "Day 20 — commercial lead secures written customer acceptance",
-                        "Confirm P7 acceptance evidence and earned-fee invoice eligibility",
-                        "Retain dated acceptance messages and completed milestone descriptions",
-                        "Do not recognize unfinished work merely because cash arrived",
-                    ],
-                    [
-                        "Day 21 — entire pod reviews three contractual deliverables",
-                        "Trace each output through its contributing P1–P7 work records",
-                        "Publish direct hours, realized contribution, defects, and remaining capacity",
-                        "Fix recurring losses before accepting another similar work package",
-                    ],
-                ],
-            },
-            "sop_steps": [
-                {
-                    "step": 1,
-                    "title": "Freeze the authoritative requirement set",
-                    "action": "Capture the solicitation, attachments, amendments, and official communication instructions.",
-                    "detail": "Record retrieval time, source links, deadline time zone, and the reviewer responsible for checking subsequent changes.",
-                },
-                {
-                    "step": 2,
-                    "title": "Approve the customer's actual pursuit decision",
-                    "action": "Complete eligibility, capacity, workshare, and priced-effort checks before production.",
-                    "detail": "The customer's authorized decision-maker accepts the bid/no-bid recommendation and owns final certifications and pricing decisions.",
-                },
-                {
-                    "step": 3,
-                    "title": "Review and release the bounded deliverable",
-                    "action": "Use a second reviewer for mandatory controls and customer authorization.",
-                    "detail": "Retain corrected defects, authorized release evidence, and any official submission receipt required by the purchased scope.",
-                },
-                {
-                    "step": 4,
-                    "title": "Close the service and cash records",
-                    "action": "Record acceptance, earned revenue, direct effort, invoice due date, and collection status.",
-                    "detail": "Separate deposits from earned fees and route unresolved customer disputes to the commercial lead before additional work starts.",
-                },
-            ],
-        },
-        {
-            "heading": "4. Days 22–30 and Beyond: Apply Kill / Fix / Scale to Evidence, Not Optimism",
-            "epistemic_status": "illustrative_model",
-            "paragraphs": [
-                (
-                    "Use the final nine days to audit the experiment rather "
-                    "than manufacture a dramatic award announcement. Reconcile "
-                    "the bank ledger, service orders, accepted milestones, "
-                    "timesheets, invoices, and source-linked opportunity records. "
-                    "Count only unrelated paying customer businesses, excluding "
-                    "founder transfers, barter, refundable demonstrations, and "
-                    "uncollected promises. Day 30's commercial Scale threshold "
-                    "is 40 qualified accounts contacted, eight completed "
-                    "discoveries, three priced proposals, two paying customers, "
-                    "$4,000 cumulative collected service fees, and three "
-                    "accepted packets. This is permission to repeat a "
-                    "controlled experiment, not to forecast a procurement "
-                    "award. Operational Scale also requires at least 60% "
-                    "realized contribution on completed work, 100% mandatory "
-                    "controls, at least 95% first-pass field accuracy, all "
-                    "customer milestones on time, and the required cash "
-                    "reserve. Calculate contribution using earned service "
-                    "revenue less direct delivery labor and direct specialist "
-                    "costs, without deducting those costs twice in the "
-                    "operating ledger. A single strong customer cannot "
-                    "compensate for unresolved improper conduct. Stop the "
-                    "affected activity immediately if evidence shows an "
-                    "unlawful payment or unauthorized use of procurement "
-                    "information. Preserve the records and obtain specialist "
-                    "direction before deciding whether the broader service "
-                    "can continue in a corrected form."
-                ),
-                (
-                    "Apply the decision hierarchy consistently at Days 30, "
-                    "60, and 90: hard stops first, commercial Kill thresholds "
-                    "second, every Scale condition third, and Fix for "
-                    "remaining cases. The matrix states cumulative commercial "
-                    "targets and minimum paid evidence at each checkpoint. "
-                    "Falling below a Kill floor after completing the required "
-                    "outreach retires the tested offer-and-segment combination, "
-                    "not necessarily the entire company. Incomplete outreach "
-                    "means the experiment is unproven; allow one ten-business-day "
-                    "Fix cycle with a named owner and no increased "
-                    "spending cap. A second missed execution commitment "
-                    "retires that experiment. Day 60 Scale adds at least "
-                    "one paid repeat engagement; Day 90 requires at least "
-                    "three and removes dependence on a single lucky sale. "
-                    "From Day 60, require weighted average days outstanding "
-                    "of open invoices no greater than 45 and no undisputed "
-                    "invoice more than 60 days past its contractual due "
-                    "date. Weight invoice age by outstanding balance; use "
-                    "zero when no invoices remain open. For Scale, add "
-                    "at most 25% more committed delivery hours per "
-                    "checkpoint without exceeding 70 weekly hours. Hiring "
-                    "beyond the original pod requires a separate cash "
-                    "and workload case; checkpoint success alone does "
-                    "not authorize the Scaled seven-person configuration."
-                ),
-                (
-                    "Reconcile the operating experiment to the annual scorecard "
-                    "before presenting results. Conservative recognized service "
-                    "revenue is $120,000, with $102,000 total costs and "
-                    "$18,000 owner net profit at 15%; Base is $560,000, "
-                    "$434,000 costs, and $126,000 profit at 22.5%; Scaled "
-                    "is $1,000,000, $700,000 costs, and $300,000 profit "
-                    "at 30%. Conservative and Base retain 2 FT + 3 C; "
-                    "Scaled uses 3 FT + 4 C. Average monthly revenue "
-                    "equivalents are $10,000, approximately $46,667, and "
-                    "approximately $83,333, respectively, not first-month "
-                    "sales promises. The $20,000 launch outflow ceiling "
-                    "cannot be repeated all year inside Conservative's "
-                    "$102,000 annual cost envelope. A dedicated five-person "
-                    "delivery model may fail that scenario's labor economics; "
-                    "show the gap explicitly rather than erasing wages "
-                    "or changing the canonical profit. The launch cap "
-                    "is a cash stress limit, not a replacement annual "
-                    "expense forecast. Likewise, 60% package contribution "
-                    "must still absorb sales time, shared payroll, insurance, "
-                    "software, and other overhead before owner profit. "
-                    "Keep service revenue, customer award value, deposits, "
-                    "receivables, and owner distributions in separate ledger "
-                    "categories. At every checkpoint, compare actual "
-                    "cash consumption with remaining runway and stop "
-                    "new commitments before the protected reserve is consumed."
-                ),
-            ],
-            "table": {
-                "caption": "Days 22–30 Execution and Cumulative Day 30/60/90 Kill / Fix / Scale Matrix",
-                "headers": [
-                    "Execution date or formal decision checkpoint",
-                    "Required action or minimum commercial test",
-                    "Kill or Fix interpretation and response",
-                    "Completion evidence or full Scale requirement",
-                ],
-                "rows": [
-                    [
-                        "Day 22 — commercial lead reconciles service-fee cash receipts",
-                        "Match each receipt to its customer and contracted scope",
-                        "Fix unmatched receipts before using collections in checkpoint metrics",
-                        "Produce a bank-supported ledger separating deposits and earned fees",
-                    ],
-                    [
-                        "Day 23 — delivery lead recalculates actual package contribution",
-                        "Include direct employee effort and specialist costs exactly once",
-                        "Fix loss-making packages through scope, price, or delivery changes",
-                        "Show completed-work contribution alongside remaining obligations on prepaid work",
-                    ],
-                    [
-                        "Day 24 — editing contractor classifies observed delivery defects",
-                        "Attribute every defect to a specific mapped operator play",
-                        "Fix repeated omissions with source-linked checklist and review changes",
-                        "Retain reviewed denominators and corrected mandatory-control evidence for packets",
-                    ],
-                    [
-                        "Day 25 — commercial lead completes missing discovery conversations",
-                        "Reach eight substantive discoveries without counting superficial replies",
-                        "Fix segment selection when responses lack budget or urgency",
-                        "Document problem, buyer, budget discussion, and dated next action",
-                    ],
-                    [
-                        "Day 26 — costing contractor refreshes supplier-dependent workpapers",
-                        "Reconfirm expiring quotes and changed performance assumptions before reuse",
-                        "Reject supplier-dependent promises unsupported by current capacity and pricing",
-                        "Keep live quote validity and alternate-source evidence together",
-                    ],
-                    [
-                        "Day 27 — commercial lead tests paid repeat demand",
-                        "Offer a bounded next engagement to satisfied pilot customers",
-                        "Fix weak retention by identifying the missing recurring deliverable",
-                        "Count signed and paid repeats rather than complimentary interest",
-                    ],
-                    [
-                        "Day 28 — delivery lead refreshes the capacity forecast",
-                        "Model existing deadlines and only twenty-five-percent incremental committed hours",
-                        "Fix overload before accepting additional work or promising turnaround",
-                        "Maintain the seventy-hour weekly delivery ceiling with reviewer coverage",
-                    ],
-                    [
-                        "Day 29 — commercial lead completes the checkpoint evidence pack",
-                        "Reconcile outreach, proposals, customers, cash, quality, and forecast reserve",
-                        "Fix unsupported counts rather than substituting pipeline contract ceilings",
-                        "Publish traceable metrics with their definitions and source records",
-                    ],
-                    [
-                        "Day 30 — both full-time leads record the decision",
-                        "Apply hard stops before commercial and operational threshold tests",
-                        "Assign each Fix action one owner and ten-business-day deadline",
-                        "Sign a dated Kill, Fix, or Scale decision record",
-                    ],
-                    [
-                        "Day 30 checkpoint — first tested offer and segment",
-                        "Complete forty qualified contacts, eight discoveries, and three proposals",
-                        "Kill with zero paying customers after forty contacts; otherwise Fix any unmet Scale condition",
-                        "Scale with two paying customers, $4,000 collected, three accepted packets, and every operating condition",
-                    ],
-                    [
-                        "Day 60 checkpoint — repeatability within the original pod",
-                        "Complete eighty qualified contacts, sixteen discoveries, and six proposals cumulatively",
-                        "Kill below two paying customers or $4,000 collected after eighty contacts; otherwise Fix unmet Scale conditions",
-                        "Scale with four paying customers, $10,000 collected, six accepted packets, one paid repeat, and every operating condition",
-                    ],
-                    [
-                        "Day 90 checkpoint — durable demand before staffing expansion",
-                        "Complete 120 qualified contacts, twenty-four discoveries, and ten proposals cumulatively",
-                        "Kill below four paying customers or $10,000 collected after 120 contacts; otherwise Fix unmet Scale conditions",
-                        "Scale with six paying customers, $20,000 collected, ten accepted packets, three paid repeats, and every operating condition",
-                    ],
-                    [
-                        "Every checkpoint — overriding cash and conduct stop conditions",
-                        "Check monthly outflow, cumulative commitments, reserve, and affected procurement activities",
-                        "Stop new commitments for reserve failure; stop affected work for unlawful payments or unauthorized procurement information",
-                        "Scale requires sixty-percent contribution, complete mandatory controls, ninety-five-percent accuracy, punctual delivery, and sufficient reserve",
-                    ],
-                    [
-                        "Days 60 and 90 — additional receivables quality conditions",
-                        "Calculate balance-weighted open-invoice age and undisputed contractual payment delinquency",
-                        "Fix excessive invoice age before expanding delivery commitments further",
-                        "Scale requires weighted age at most forty-five days and no undisputed invoice over sixty days past due",
-                    ],
-                ],
-            },
-        },
-    ],
-    "pull_quote": "Scale the desk when customers pay for repeatable work, not when a government notice displays a large contract ceiling.",
-    "diagram_id": "diag-08",
-    "action_checklist": [
-        "By Day 2, map P1–P7 into one source-linked register covering one supplier category, two federal buying offices, and one municipal portal.",
-        "By Day 5, validate the 2 FT + 3 C pod against actual rates, $90,000 available launch capital, and the $20,000 maximum monthly cash outflow.",
-        "By Day 14, issue three bounded proposals, secure the first paid assessment, and preserve separate records for cash deposits and earned service fees.",
-        "By Day 21, review three contractual work packets with complete mandatory controls, measured field accuracy, actual labor hours, and written acceptance evidence.",
-        "By Day 30, reconcile forty qualified contacts, eight discoveries, two paying customers, and $4,000 collected against the full Kill / Fix / Scale matrix.",
-        "At Days 60 and 90, require paid repeat demand, acceptable receivables, protected runway, and canonical annual-cost reconciliation before increasing delivery commitments.",
-    ],
-    "statutory_citations": [
-        {
-            "title": "FAR Subpart 3.4 — Contingent Fees",
-            "url": "https://www.acquisition.gov/far/subpart-3.4",
-            "relevance": "Review proposed compensation and intermediary relationships against federal contingent-fee restrictions and their defined exceptions.",
-        },
-        {
-            "title": "FAR 52.203-5 — Covenant Against Contingent Fees",
-            "url": "https://www.acquisition.gov/far/52.203-5",
-            "relevance": "Examine the actual solicitation and contract clause before proposing award-linked compensation or claiming that a relationship qualifies for an exception.",
-        },
-        {
-            "title": "41 U.S.C. 2102 — Prohibitions on Disclosing and Obtaining Procurement Information",
-            "url": "https://www.law.cornell.edu/uscode/text/41/2102",
-            "relevance": "Protect contractor bid or proposal information and source-selection information within the statute's scope; reject unauthorized procurement information.",
-        },
-        {
-            "title": "41 U.S.C. 8702 — Prohibitions on Kickbacks",
-            "url": "https://www.law.cornell.edu/uscode/text/41/8702",
-            "relevance": "Prohibit kickbacks intended to obtain or reward favorable treatment in connection with covered prime contracts and subcontracts.",
-        },
-        {
-            "title": "FAR Subpart 9.6 — Contractor Team Arrangements",
-            "url": "https://www.acquisition.gov/far/subpart-9.6",
-            "relevance": "Distinguish recognized contractor team arrangements from informal introductions while preserving the prime contractor's responsibility.",
-        },
-        {
-            "title": "13 CFR 125.6 — Limitations on Subcontracting",
-            "url": "https://www.ecfr.gov/current/title-13/section-125.6",
-            "relevance": "Apply the appropriate limitation, contract category, payment base, and similarly situated entity treatment when covered small-business requirements govern.",
-        },
-        {
-            "title": "13 CFR 121.103(h) — Affiliation Through Joint Ventures and Certain Subcontracting Relationships",
-            "url": "https://www.ecfr.gov/current/title-13/section-121.103",
-            "relevance": "Examine ostensible-subcontractor concerns, primary and vital requirements, and unusual reliance before supporting a proposed prime/sub structure.",
-        },
-        {
-            "title": "FAR 52.215-23 — Limitations on Pass-Through Charges",
-            "url": "https://www.acquisition.gov/far/52.215-23",
-            "relevance": "Where applicable, evaluate whether proposed contractor or subcontractor charges reflect added value rather than excessive pass-through charges.",
-        },
-        {
-            "title": "31 U.S.C. 3902 — Interest Penalties",
-            "url": "https://www.law.cornell.edu/uscode/text/31/3902",
-            "relevance": "Distinguish federal agency prompt-payment obligations from payment terms governing a separate private bid-desk service agreement.",
-        },
-    ],
-}
+CHAPTER_12 = {'id': 'Q12',
+ 'chapter_id': 'Q12',
+ 'chapter_number': 12,
+ 'question_number': 12,
+ 'slug': 'funding-the-contract-and-getting-paid',
+ 'question_prompt': 'How do I fund performance after award, invoice correctly, and get paid on time?',
+ 'kicker': 'Q12 / THE BIG MONEY PLAYBOOKS',
+ 'title': 'Funding the Contract and Getting Paid',
+ 'subtitle': 'Credit cards, invoice factoring and PO financing, FAR 32 payment triggers, WAWF/PIEE '
+             'invoices, combo and receiving reports, resolving DLA payment issues, the Prompt Payment Act, '
+             'and SBA/EIDL loan risks, collections, franchise directory checks and loan scams',
+ 'layout_template': 'action_worksheet_summary',
+ 'reading_time_minutes': 15,
+ 'executive_summary': 'The practitioners agree that winning an award does not put cash in the bank. A '
+                      'contractor typically works about 30 days, invoices, and then waits roughly another '
+                      '30, so someone has to cover that gap before the first dollar arrives. They teach '
+                      'four ways to fund it. Invoice factoring costs 3% to 5%, and one named factor '
+                      'charges 2.5%. Purchase-order terms and PO financing are the second. Credit cards '
+                      'cover small product buys. Success-fee mobilization lenders fund against a signed '
+                      'contract or Notice to Proceed. Getting paid on DoD and DLA work runs through WAWF '
+                      'inside PIEE. The wrong document type or a mismatched DoDAAC stalls payment and '
+                      'forfeits prompt-payment interest. A missing final-shipment Z draws DLA corrective '
+                      'action. The operators differ on which tool fits which job. Debra Smith matches '
+                      'factoring to services and credit cards to products. Business Cash Now warns that '
+                      'low-bid margins of 5% to 7% leave nothing to pay for any financing.',
+ 'key_metrics': [{'label': 'Fair Factoring Fee Range',
+                  'metric': 'Fair Factoring Fee Range',
+                  'value': '3% to 5% of the invoice; over 5% flagged as a bad factor; RTS Financial cited '
+                           'at 2.5%',
+                  'confidence': 'attributed_practitioner_claim',
+                  'context': "Debra Smith's rule for what a factor should charge to buy government "
+                             'receivables and front the cash, with the advice to price the fee into the '
+                             'contract.',
+                  'source': 'Debra Smith ([NusotbSsCa4 @ 00:02:56])'},
+                 {'label': 'Prompt Payment Window and Late Interest',
+                  'metric': 'Prompt Payment Window and Late Interest',
+                  'value': 'Payment due within 30 days of a proper invoice; late interest quoted at 4.6%',
+                  'confidence': 'attributed_practitioner_claim',
+                  'context': 'Josh, a warranted contracting officer, says DFAS adds interest automatically '
+                             'when the government pays late. The clock starts only on a proper invoice, '
+                             'and an invoice with errors earns no interest.',
+                  'source': 'Acquisition Pro Tips ([WXCymE9NjBg @ 00:07:17])'},
+                 {'label': 'Progress and Performance-Based Payment Rates',
+                  'metric': 'Progress and Performance-Based Payment Rates',
+                  'value': 'Progress payments 80% for large and 95% for small businesses; '
+                           'performance-based up to 90% of contract value',
+                  'confidence': 'attributed_practitioner_claim',
+                  'context': 'Government financing invoice types inside WAWF. The two methods cannot be '
+                             'combined on the same contract, and performance-based payment is the '
+                             "government's preferred method.",
+                  'source': 'Acquisition Pro Tips ([WXCymE9NjBg @ 00:05:32])'},
+                 {'label': 'Low-Bid Gross Margin Trap',
+                  'metric': 'Low-Bid Gross Margin Trap',
+                  'value': '5% to 7% gross margin on low bids versus 20% to 40% needed on rebids',
+                  'confidence': 'attributed_practitioner_claim',
+                  'context': 'Chris Curtin, who says his firm has 20 years of government PO and '
+                             'receivables funding, warns that bidders who buy the door at thin margins '
+                             'lose the next round when they try to raise prices.',
+                  'source': 'Business Cash Now ([4V1zq5q3VuQ @ 00:00:53])'}],
+ 'sections': [{'heading': 'Section 1: The Practitioner Consensus',
+               'paragraphs': ['An award looks like money, but it is not money yet. GovSuccess opens with '
+                              'the warning that a strong backlog can sit beside a weak bank balance. It '
+                              'treats a purchase-order total, a funded amount, a financing authorization, '
+                              'and cash collected as four different facts. None of them is payroll money '
+                              'until the clauses and payment instructions say so [jTTWqhTfPMM @ 00:00:36]. '
+                              'Mobilization Capital describes the same squeeze from the field. After '
+                              'leaving the military, the founder talked with working contractors and found '
+                              'their recurring problem was cash flow. A contractor works about 30 days '
+                              'before earning the right to invoice, then waits another 30 days to get paid '
+                              '[oOQSsJO94kM @ 00:00:19]. Debra Smith calls winning only half the battle, '
+                              'because you still have to deliver and prove you can pull it off '
+                              '[NusotbSsCa4 @ 00:00:30]. She puts the typical government wait at 30 days, '
+                              'sometimes 60 or 90, and says most small shops at this stage do not have the '
+                              'capital to carry it [NusotbSsCa4 @ 00:02:56]. The shared baseline is to '
+                              'model the gap between award, performance, a proper invoice, and collected '
+                              'cash before committing labor or suppliers. Pick the funding tool before the '
+                              'purchase order arrives, not after.',
+                              'Three speakers point to the same set of tools: outside money that relies on '
+                              "the government's credit rather than yours. Debra Smith names factoring, "
+                              'credit cards, and purchase-order terms as the three easiest options. A '
+                              'factor buys your invoice, pays you up front, and keeps a cut, so you do not '
+                              'have to wait on the agency [NusotbSsCa4 @ 00:02:12]. She adds that the '
+                              "factor checks the agency's credit, not yours, and the government has no "
+                              'credit issues, whether the agency is the National Park Service or DoD '
+                              '[NusotbSsCa4 @ 00:04:57]. Chris Curtin of Business Cash Now says his firm '
+                              'has done PO financing and receivables funding on government work for 20 '
+                              'years. He claims 99% of U.S. government entities are creditworthy and that '
+                              'every contract has a section allowing it to be assigned for financing '
+                              'purposes [4V1zq5q3VuQ @ 00:00:08] [4V1zq5q3VuQ @ 00:01:50]. Mobilization '
+                              'Capital advances startup capital against a signed contract or Notice to '
+                              'Proceed. It is repaid when the government pays the contractor and charges a '
+                              'success fee based on contract or invoice value [oOQSsJO94kM @ 00:00:49]. '
+                              'One Mobilization client said they visited six banks, one bank forgot they '
+                              'were there, and they cancelled their remaining bank appointments after one '
+                              "meeting [oOQSsJO94kM @ 00:01:06]. In every case, the agency's contract, not "
+                              "the founder's own balance sheet, is the collateral that unlocks working "
+                              'capital.',
+                              'On collections, the speakers agree on one point: the payment clock starts '
+                              'with a proper invoice, not with your email. GovSuccess notes that FAR '
+                              '32.904 generally ties the due date to a proper invoice plus acceptance. It '
+                              'warns against assuming payment a fixed number of days after you hit send '
+                              '[jTTWqhTfPMM @ 00:01:13]. Josh, a warranted contracting officer who runs '
+                              'Acquisition Pro Tips, says the prompt payment clause requires payment '
+                              'within 30 days of a proper invoice. If the government is late, DFAS adds '
+                              'interest automatically at a Treasury rate he quoted at 4.6%. If the invoice '
+                              'has missing or wrong details, no interest is owed [WXCymE9NjBg @ 00:07:17]. '
+                              "Elda of Don't Know Much About Construction puts federal construction "
+                              'payment at roughly 14 to 30 days after a proper invoice. She describes '
+                              'interest penalties for late payment, monthly progress payments based on '
+                              'percent complete, and a duty for the prime to pay subs promptly once the '
+                              'prime is paid [uUf-xLjfPf8 @ 00:01:11]. Tristan Thomas of MeND Sourcing '
+                              'adds the mindset: no one cares about your business as much as you do. Never '
+                              'assume the government will pay; check every invoice yourself [yXqp5I7wQK0 @ '
+                              '00:01:01]. The shared requirements are an accurate invoice the first time '
+                              'and constant follow-up.'],
+               'table': {'caption': 'Where the funding and payment practitioners agree',
+                         'headers': ['Consensus Point',
+                                     'What Practitioners Report',
+                                     'Operator Takeaway',
+                                     'Expert Source'],
+                         'rows': [['An award is not cash in the bank',
+                                   'PO total, funded amount, financing authorization, and collected cash '
+                                   'are four separate facts',
+                                   'Build a payment-trigger worksheet before committing any payroll or '
+                                   'supplier money',
+                                   'Win Government Contracts with GovSuccess ([jTTWqhTfPMM @ 00:00:36])'],
+                                  ['The 30-and-30 cash gap is the norm',
+                                   'Contractors perform about 30 days, invoice, then wait another 30 days '
+                                   'to collect',
+                                   'Line up startup capital before the Notice to Proceed arrives, not '
+                                   'after',
+                                   'Mobilization Capital ([oOQSsJO94kM @ 00:00:19])'],
+                                  ["The government's credit carries the financing deal",
+                                   "Factors check the agency's credit, and the government has no credit "
+                                   'issues to clear',
+                                   'Pick factors who know government receivables, not only trucking and '
+                                   'logistics',
+                                   'Debra Smith ([NusotbSsCa4 @ 00:04:57])'],
+                                  ['Contracts can be assigned to a financer',
+                                   'Every government contract has a section allowing assignment for '
+                                   'financing purposes',
+                                   'Use that assignment section to bring in PO or receivables funding '
+                                   'partners',
+                                   'Business Cash Now ([4V1zq5q3VuQ @ 00:01:50])'],
+                                  ['A proper invoice starts the payment clock',
+                                   'Payment is due within 30 days of a proper invoice, with interest added '
+                                   'automatically if late',
+                                   'Invoices with errors forfeit interest, so get every field right the '
+                                   'first time',
+                                   'Acquisition Pro Tips ([WXCymE9NjBg @ 00:07:17])'],
+                                  ['The prime must pass payment down to subs',
+                                   'Once the prime receives government payment, subs and suppliers must be '
+                                   'paid promptly',
+                                   'Time sub payments to actual government receipts, never to the award '
+                                   'date',
+                                   "Don't Know Much About Construction ([uUf-xLjfPf8 @ 00:01:52])"],
+                                  ['The owner personally chases every outstanding dollar',
+                                   'No one cares about your business like you do; the squeaky wheel gets '
+                                   'the grease',
+                                   'Check My Invoice weekly and escalate every discrepancy yourself, '
+                                   'without waiting',
+                                   'Tris10 @ MeND ([yXqp5I7wQK0 @ 00:01:13])']]}},
+              {'heading': 'Section 2: Exact Street Mechanics, Tools & Numbers',
+               'paragraphs': ['The speakers give specific pricing numbers. Debra Smith says a factor '
+                              'should charge 3% to 5% and anything over 5% is not a good factoring '
+                              'company. She names RTS Financial at 2.5% [NusotbSsCa4 @ 00:02:56] '
+                              '[NusotbSsCa4 @ 00:03:39]. Her pricing move: if you know you will factor, '
+                              'add the 3%, 4%, or 5% to your contract price. The fee then sits inside your '
+                              'profit margin, and it is as if it never existed. She places factoring in '
+                              'the $500K to $5 million contract range and notes that larger contracts mean '
+                              'a bigger cut taken off the top [NusotbSsCa4 @ 00:04:37] [NusotbSsCa4 @ '
+                              '00:05:14]. Chris Curtin of Business Cash Now looks at the other side of '
+                              'that math. Low bidders at 5% to 7% gross margin think they are getting a '
+                              'foot in the door. Then they lose the rebid when they raise prices to the '
+                              '20%, 30%, or 40% they actually need. He says the only thing worse than no '
+                              'sales is selling at a loss [4V1zq5q3VuQ @ 00:00:53]. His firm also issues a '
+                              'letter of financial capability showing a half-million or million-dollar '
+                              'factoring or PO financing facility. The letter is meant to reassure the '
+                              'government buyer [4V1zq5q3VuQ @ 00:01:12]. Mobilization Capital asks only '
+                              'for a signed contract or Notice to Proceed and charges on success '
+                              '[oOQSsJO94kM @ 00:00:49].',
+                              'Inside PIEE, every invoice starts at Vendor, then Create Document in Wide '
+                              'Area Workflow. Josh at Acquisition Pro Tips says the DFARS WAWF payment '
+                              'instructions clause sets the document type. Use Combo for supplies and '
+                              '2-in-1 for services. Use a cost voucher, progress payment, or '
+                              'performance-based payment only where the contract requires it [cdachjXPX3k '
+                              '@ 00:04:23] [WXCymE9NjBg @ 00:04:01]. The Proposal Pro Coach found that '
+                              'clause on page 16 of her services contract, with the DoDAAC routing table '
+                              'on page 17. She says that skimming the word combo would have sent her down '
+                              'the wrong path. She types zeros, never the letter O, and fills in only the '
+                              'fields marked with asterisks [EesWMxgpXqk @ 00:07:37] [EesWMxgpXqk @ '
+                              '00:04:16]. Tristan Thomas builds shipment numbers from three company '
+                              'letters plus a sequence number, such as MSS0001. He adds a Z to the final '
+                              'shipment, because he has seen companies receive DLA corrective action '
+                              'reports for leaving it off [weLOISkZc5k @ 00:11:12]. He types the same text '
+                              'in Mark For and Comments, for example one box, 3,414 pieces, contract '
+                              'complete, plus the tracking number, so the receivers count correctly '
+                              '[weLOISkZc5k @ 00:13:04]. On multi-year work, mark Final Invoice as No. The '
+                              'coach was told that choosing Yes can take a month to reopen the contract '
+                              '[EesWMxgpXqk @ 00:12:10].',
+                              'After you submit, you track the money in My Invoice. Tristan Thomas checks '
+                              'it every Friday. A normal invoice moves from researching quantity and/or '
+                              'price discrepancy, to scheduled for payment, to paid. A status of see '
+                              'reason and remark codes means something is wrong, and the amount being held '
+                              'appears next to it [yXqp5I7wQK0 @ 00:03:10] [yXqp5I7wQK0 @ 00:04:47]. One '
+                              'hold was $57,000 two days before its due date, and he says the due date '
+                              'would have passed unpaid if he had not chased it. Quantity problems go to '
+                              'the DLA service desk at 877-352-2255. Accounting problems go to DFAS at '
+                              "800-756-4571, and you need the contract's DoDAAC from box 15 ready "
+                              '[yXqp5I7wQK0 @ 00:10:51] [yXqp5I7wQK0 @ 00:11:33]. In one real case he '
+                              'shipped and invoiced 3,409 units in three containers of 1,000, 1,000, and '
+                              '1,409, but was paid for only 1,409. The service desk traced a labeling '
+                              'issue to two web SDRs and closed the case the next day. He then called DFAS '
+                              'to get paid for the missing 2,000 [yXqp5I7wQK0 @ 00:12:18]. Josh adds the '
+                              'government financing rates: progress payments at 80% for large businesses '
+                              'and 95% for small businesses, and performance-based payments up to 90%. The '
+                              'two can never be used on the same contract [WXCymE9NjBg @ 00:05:32]. Elda '
+                              'notes that construction progress payments are made monthly, based on '
+                              'percent complete [uUf-xLjfPf8 @ 00:01:32].'],
+               'table': {'caption': 'Funding levers and WAWF settings with the exact numbers the '
+                                    'practitioners quote',
+                         'headers': ['Lever or Tool',
+                                     'Exact Number or Setting',
+                                     'How Operators Use It',
+                                     'Expert Source'],
+                         'rows': [['Invoice factoring fee',
+                                   '3% to 5%; over 5% is a bad factor; RTS Financial cited at 2.5%',
+                                   'Add the fee to the contract price so it never comes out of margin',
+                                   'Debra Smith ([NusotbSsCa4 @ 00:03:39])'],
+                                  ['Minimum gross margin on bids',
+                                   '5% to 7% low-bid margins lose rebids; 20% to 40% is needed',
+                                   'Refuse to buy your way in with a margin you cannot repeat later',
+                                   'Business Cash Now ([4V1zq5q3VuQ @ 00:00:53])'],
+                                  ['Letter of financial capability',
+                                   'Shows a half-million or million-dollar factoring or PO financing '
+                                   'facility',
+                                   'Give it to the government buyer to prove you can fund delivery',
+                                   'Business Cash Now ([4V1zq5q3VuQ @ 00:01:12])'],
+                                  ['Mobilization startup capital',
+                                   'Requires a signed contract or Notice to Proceed; success fee on '
+                                   'contract or invoice value',
+                                   'Fund startup labor and materials without going through traditional '
+                                   'bank red tape',
+                                   'Mobilization Capital ([oOQSsJO94kM @ 00:00:49])'],
+                                  ['WAWF invoice document type',
+                                   'Combo for supplies, 2-in-1 for services, as the payment instructions '
+                                   'clause directs',
+                                   'Match the contract exactly, because the wrong type is the fastest '
+                                   'route to rejection',
+                                   'Acquisition Pro Tips ([WXCymE9NjBg @ 00:05:10])'],
+                                  ['Shipment number format',
+                                   'Three company letters plus a sequence number, with Z added to the '
+                                   'final shipment',
+                                   'Leaving off the Z has drawn DLA corrective action reports',
+                                   'Tris10 @ MeND ([weLOISkZc5k @ 00:11:28])'],
+                                  ['Escalation phone lines',
+                                   'DLA service desk 877-352-2255; DFAS 800-756-4571, selecting by '
+                                   'contract DoDAAC',
+                                   'Send quantity disputes to DLA first, then invoice and payment disputes '
+                                   'to DFAS',
+                                   'Tris10 @ MeND ([yXqp5I7wQK0 @ 00:11:33])']]},
+               'callout': {'kind': 'INSIDER PRO-TIPS',
+                           'title': 'Street-level moves that protect the deal and speed up payment',
+                           'body': 'Practitioners use these moves to keep competitors away from their '
+                                   'awards and to keep invoices moving through the DoD payment chain.',
+                           'items': ['Never give a would-be supplier the agency name and point of contact '
+                                     'before you hold the PO. Debra Smith caught a sub using that request '
+                                     'to try to undercut her and bid directly, so now she says the '
+                                     'information is confidential under her terms and conditions and moves '
+                                     'on to another supplier [Debra Smith — NusotbSsCa4 @ 00:12:21]',
+                                     'When WAWF rejects an invoice, copy the rejected document, fix only '
+                                     'the field that failed, and resubmit instead of rebuilding from '
+                                     'scratch [Acquisition Pro Tips — cdachjXPX3k @ 00:14:51]',
+                                     'Never enter the admin DoDAAC as the ship-to code. The invoice goes '
+                                     "to the wrong resource advisor's inbox, sits unseen, and earns no "
+                                     'interest because the error is yours [Acquisition Pro Tips — '
+                                     'cdachjXPX3k @ 00:15:08]',
+                                     'Photograph every unit, intermediate, and exterior container and '
+                                     'download FedEx or UPS proof of delivery before calling DLA, so you '
+                                     'can prove exactly what left your dock [Tris10 @ MeND — yXqp5I7wQK0 @ '
+                                     '00:09:18]']},
+               'sop_steps': [{'step': 1,
+                              'title': 'Build the payment-trigger worksheet',
+                              'action': 'Map every expected receipt to its clause, CLIN, trigger, and '
+                                        'evidence before spending.',
+                              'detail': 'For each receipt, record the clause and line item, the trigger, '
+                                        'the supporting evidence, the submission route, the acceptance '
+                                        'owner, the forecast date, and the actual receipt date. Put the '
+                                        'matching supplier and payroll payments next to each one [Win '
+                                        'Government Contracts with GovSuccess — jTTWqhTfPMM @ 00:03:06]'},
+                             {'step': 2,
+                              'title': 'Lock in funding before the PO arrives',
+                              'action': 'Pick a factor, a PO financer, or a mobilization lender, and price '
+                                        'its fee into the bid.',
+                              'detail': 'Add the 3% to 5% factoring fee to the contract price so it comes '
+                                        'out of the bid rather than your profit [Debra Smith — NusotbSsCa4 '
+                                        '@ 00:04:37]. Line up a mobilization lender that funds against a '
+                                        'signed contract or Notice to Proceed [Mobilization Capital — '
+                                        'oOQSsJO94kM @ 00:00:49]'},
+                             {'step': 3,
+                              'title': 'Prep the vendor quick kit and submit in WAWF',
+                              'action': 'Gather the contract, modifications, codes, quantities, and PDFs, '
+                                        'then build and preview the document.',
+                              'detail': 'Have the contract and modifications, CAGE code, contract and '
+                                        'order numbers, your internal invoice number, quantities, units, '
+                                        'prices, and supporting PDFs ready before you log in. Having these '
+                                        'ready heads off 90% of the headaches [annica at Bill Bright — '
+                                        'WDekT_xRXC0 @ 00:01:18]. Preview the commercial invoice and '
+                                        'receiving report and check them line by line against the contract '
+                                        'before you submit [Acquisition Pro Tips — cdachjXPX3k @ '
+                                        '00:10:35]'},
+                             {'step': 4,
+                              'title': 'Run a Friday My Invoice check and escalate',
+                              'action': 'Check every open invoice weekly and act immediately on any see '
+                                        'reason and remark codes status.',
+                              'detail': 'Every Friday, check whether each invoice is being researched, '
+                                        'scheduled, or paid. For any hold, have shipped quantities, '
+                                        'tracking numbers, proofs of delivery, and photos ready, then call '
+                                        'the DLA service desk for quantity issues and DFAS for payment '
+                                        'issues [Tris10 @ MeND — yXqp5I7wQK0 @ 00:03:10]'}]},
+              {'heading': 'Section 3: Where Practitioners Disagree & Alternative Playbooks',
+               'paragraphs': ['Debra Smith runs a three-tool playbook and ranks factoring first: a factor '
+                              'buys the invoice, fronts the cash, and should charge 3% to 5%, with '
+                              'anything over 5% flagged as a bad factor and RTS Financial quoted at 2.5% '
+                              "[NusotbSsCa4 @ 00:02:36]. Smith's pricing move is to load that 3% to 5% "
+                              'straight into the bid so the fee rides inside the profit margin, and Smith '
+                              'pegs factoring for contracts in the 500k to 5 million range. Chris Curtin '
+                              'of Business Cash Now, twenty years into purchase order and receivables '
+                              'funding for government work, attacks the thin-bid habit from the other '
+                              'side: bidders who come in at 5% to 7% gross margin to get a foot in the '
+                              'door lose the next round when they try to climb to 20%, 30% or 40%, because '
+                              'there is only one thing worse than no sales and that is selling at a loss '
+                              '[4V1zq5q3VuQ @ 00:00:53]. Mobilization Capital skips invoice purchase '
+                              'entirely, funding startup capital the moment a signed contract or Notice to '
+                              'Proceed exists and charging a success fee based on contract or invoice '
+                              'value, recovered when the government pays [oOQSsJO94kM @ 00:00:49]. One '
+                              'client visited six banks, got forgotten at one of them, and cancelled every '
+                              'remaining bank appointment after meeting Samir [oOQSsJO94kM @ 00:01:20].',
+                              'How fast the money lands depends on who is talking. Debra Smith says it is '
+                              'typically 30 days but plans for 30, 60 or 90, and during their own '
+                              'logistics run a 90-day customer forced them to factor loads so carriers got '
+                              'paid right away [NusotbSsCa4 @ 00:23:03]. Josh at Acquisition Pro Tips puts '
+                              'the prompt payment clock at 30 days from a proper invoice, with DFAS adding '
+                              'interest automatically at a Treasury rate quoted at 4.6%, but only once the '
+                              "invoice is proper [WXCymE9NjBg @ 00:07:17]. Elda at Don't Know Much About "
+                              'Construction quotes 14 to 30 days on federal construction, progress '
+                              'payments monthly on percent complete, and argues the Anti-Deficiency Act '
+                              'means funding is allocated before award so nobody argues about money '
+                              '[uUf-xLjfPf8 @ 00:01:11]. Elda adds that once the prime gets paid, '
+                              'subcontractors and suppliers must be paid promptly too. GovSuccess pushes '
+                              'back on any fixed-days promise: do not assume every invoice pays a set '
+                              'number of days after you email it; identify who receives it, what makes it '
+                              'proper, and what evidence proves acceptance [jTTWqhTfPMM @ 00:01:32]. An '
+                              'invoice is a request, not proof that acceptance occurred.',
+                              'On legacy SBA debt the two lawyers split on the line that matters most. '
+                              'Keck Legal puts the personal-guarantee trigger on COVID EIDL loans at '
+                              'amounts above $200,000 [x1-UtiYGpVc @ 00:03:41], while Joshua Sternberg '
+                              'puts it at $150,000 and says a borrower with no guarantee who closes the '
+                              'business does not have to worry, unless the money was misused [IMjYXOH8UoU '
+                              "@ 00:01:43]. Both say read the paperwork rather than guess. Keck's ladder "
+                              'runs hardship accommodation and deferral first, then an offer in compromise '
+                              'lump sum, then a Chapter 11 plan that a federal judge approves so the SBA '
+                              "only has to not object, with the rest of the debt wiped out. Sternberg's "
+                              'red flag is spending: a quarter million personally guaranteed and dumped '
+                              'into Robinhood for Bitcoin is a problem, while payroll, advertising, '
+                              'inventory and R&D are clean. On paid help the split is sharper. CO- '
+                              'panelists say the borrower cannot be charged a packaging fee, the bank pays '
+                              'any packager, and the SBDC helps at no cost [C6VmvdA7JT4 @ 00:00:54], while '
+                              'Ryder at Skip sells VIP and platinum funding coaching and pushes a Bluevine '
+                              'line of credit up to 250k at rates as low as 4.8% [FZ6VO4mNzF4 @ '
+                              '00:10:12].'],
+               'table': {'caption': 'Competing Playbooks for Funding the Gap, Invoicing, and Handling SBA '
+                                    'Debt',
+                         'headers': ['Decision Point', 'Playbook A', 'Playbook B', 'Expert Source'],
+                         'rows': [['How to bridge cash between award and first government payment',
+                                   'Sell invoices to a factor at 3% to 5%, rejecting any factor charging '
+                                   'over 5%',
+                                   'Take a success-fee advance once a signed contract or Notice to Proceed '
+                                   'exists',
+                                   'Debra Smith ([NusotbSsCa4 @ 00:02:36]); Mobilization Capital '
+                                   '([oOQSsJO94kM @ 00:00:49])'],
+                                  ['How to price the bid when financing costs money',
+                                   'Add the factoring fee into the contract so it is like it never existed',
+                                   'Never low-bid at 5% to 7% gross margin; raising to 20% to 40% later '
+                                   'loses',
+                                   'Debra Smith ([NusotbSsCa4 @ 00:04:37]); Business Cash Now '
+                                   '([4V1zq5q3VuQ @ 00:00:53])'],
+                                  ['Which government financing method to plan cash flow around',
+                                   'Progress payments on incurred costs at 80% large and 95% small; '
+                                   'performance-based up to 90%, never both',
+                                   'Performance-based financing pays only on contract-identified events; '
+                                   'an internal design review creates no entitlement',
+                                   'Acquisition Pro Tips ([WXCymE9NjBg @ 00:05:32]); GovSuccess '
+                                   '([jTTWqhTfPMM @ 00:00:56])'],
+                                  ['How to build the WAWF shipment number',
+                                   'First three company letters plus 00001, adding a Z on the final '
+                                   'shipment',
+                                   'Three letters plus four numbers, or month letters followed by the year',
+                                   'Tris10 @ MeND ([weLOISkZc5k @ 00:11:28]); annica at Bill Bright '
+                                   '([WDekT_xRXC0 @ 00:06:41])'],
+                                  ['Which WAWF document to file for the work delivered',
+                                   'Services contract billed monthly per CLIN uses an Invoice 2-in-1 with '
+                                   'final invoice marked No',
+                                   'Product shops file receiving report only for FAT or PLT, then combo '
+                                   'for production shipments',
+                                   'The Proposal Pro Coach ([EesWMxgpXqk @ 00:09:15]); Tris10 @ MeND '
+                                   '([weLOISkZc5k @ 00:02:51])'],
+                                  ['How to track whether DFAS actually paid the invoice',
+                                   'Check My Invoice every Friday and personally chase DLA and DFAS on '
+                                   'discrepancies',
+                                   'Route WAWF alerts to organizational inboxes and monitor My Invoice '
+                                   'proactively for interest',
+                                   'Tris10 @ MeND ([yXqp5I7wQK0 @ 00:03:10]); Acquisition Pro Tips '
+                                   '([WXCymE9NjBg @ 00:09:50])'],
+                                  ['Where the EIDL personal guarantee line sits and what to do next',
+                                   'Above $200,000 likely guaranteed; try hardship accommodation, offer in '
+                                   'compromise, then Chapter 11',
+                                   'Below $150,000 likely not guaranteed; closing the business and clean '
+                                   'fund use ends exposure',
+                                   'Keck Legal, LLC ([x1-UtiYGpVc @ 00:03:41]); Sternberg Law Group '
+                                   '([IMjYXOH8UoU @ 00:01:01])']]}},
+              {'heading': 'Section 4: Firsthand Failure Modes, Traps & Economics Checks',
+               'paragraphs': ["Debra Smith's sharpest war story is a supplier that advertised "
+                              'purchase-order terms, then refused to quote unless it got the agency name '
+                              'and point of contact. Smith read it as a setup: hand over those two facts '
+                              'and the sub finds the contract, bids direct and pushes the broker out, so '
+                              'the answer was that the information is confidential under company terms and '
+                              'conditions until the purchase order issues, by which point it is too late '
+                              'for anyone to bid [NusotbSsCa4 @ 00:12:42]. The rule Smith teaches is '
+                              'blunt: if a sub asks for agency and contact, run for the hills, and never '
+                              'claim to work for the county or agency [NusotbSsCa4 @ 00:15:24]. GovSuccess '
+                              'walks through a test-unit supplier whose forecast booked a payment at its '
+                              "own design review while the contract's financing event required a different "
+                              'documented accomplishment; the fix was rebuilding the forecast around the '
+                              'real trigger, modeling the cash gap and a second scenario with '
+                              'administrative delay [jTTWqhTfPMM @ 00:02:07]. It also warns against '
+                              'counting financing twice as revenue or cash, tracking what was submitted, '
+                              'approved, withheld, liquidated and collected. Business Cash Now adds that '
+                              'buyers may demand proof of financial capability, answered with a lender '
+                              'letter showing a half-million or million-dollar facility [4V1zq5q3VuQ @ '
+                              '00:01:12].',
+                              "Most lost weeks trace to keystrokes. Josh's top-ten rejection list runs "
+                              'contract data mismatch, wrong DoDAAC, missing attachments, wrong invoice '
+                              'type, quantity and price errors, slow acceptance, wrong pay office, '
+                              'one-digit typos, missing final-invoice marks and bad timing, boiled down to '
+                              'measure twice, invoice once [WXCymE9NjBg @ 00:08:47]. The costliest error '
+                              'in the combo tutorial is typing the admin DoDAAC into ship-to: the invoice '
+                              "lands in the resource advisor's inbox instead of the acceptor's, nobody "
+                              'knows it exists, and because the vendor caused it, no interest accrues '
+                              '[cdachjXPX3k @ 00:15:08]. The Proposal Pro Coach admits a rushed read would '
+                              'have grabbed combo on a services contract because the clause headline said '
+                              'invoice and receiving report, until the full line showed services take an '
+                              'Invoice 2-in-1; that coach was also told that marking final invoice yes by '
+                              'mistake takes about a month to get the contract re-opened [EesWMxgpXqk @ '
+                              '00:12:10]. Tristan Thomas of MeND Sourcing has seen companies draw DLA '
+                              'corrective action reports for leaving the Z off a final shipment number, '
+                              'and writes the exact piece count plus tracking number into Mark For and '
+                              'Comments so the receiving clerk does not short-count 3,414 pieces as 3,400 '
+                              '[weLOISkZc5k @ 00:11:42].',
+                              "When money stalls, MeND Sourcing treats any 'See reason and remark code' "
+                              'status in My Invoice as a problem it owns: one hold was $1,899, another was '
+                              'large enough that the due date would pass unpaid, and on a CLIN of 3,409 '
+                              'pieces the company was paid for only 1,409 [yXqp5I7wQK0 @ 00:12:18]. The '
+                              'fix was a prepared file of quantity per exterior container, FedEx tracking '
+                              'numbers, proof-of-delivery PDFs and photos, then a call to the DLA service '
+                              'desk at 877-352-2255 for quantity, which opened a case and found two web '
+                              'SDRs from a labeling issue, then DFAS at 800-756-4571 for the accounting '
+                              'side. On the SBA side, The Money Rules runs the franchise math: on a '
+                              '$400,000 project, 10% down leaves a $360,000 loan at a 10% cap, about '
+                              '$4,757 a month, while a $350,000 loan can price to 11.5%, costing $163 more '
+                              'monthly and about $29,600 more interest over ten years [rlj1s_mZ7uo @ '
+                              "00:05:29]. Skip's Ryder flags SBA's EIDL data migration, where the agency "
+                              'leaned on contractor row counts to reconcile nearly $400 billion in loans, '
+                              'while the inspector general has already found $84.3 billion of potentially '
+                              'fraudulent COVID EIDL loans [FZ6VO4mNzF4 @ 00:08:08].'],
+               'table': {'caption': 'Firsthand Payment Failures, Their Cost, and the Countermove '
+                                    'Practitioners Used',
+                         'headers': ['Failure Mode',
+                                     'What It Cost the Operator',
+                                     'Countermove Practitioners Used',
+                                     'Expert Source'],
+                         'rows': [['Sub with PO terms demands agency name and point of contact',
+                                   'Sub finds the contract, bids direct, and pushes the broker out',
+                                   'Call it confidential under your terms until the purchase order issues',
+                                   'Debra Smith ([NusotbSsCa4 @ 00:12:42])'],
+                                  ['Admin DoDAAC typed into the ship-to routing field',
+                                   'Invoice sits unseen in the resource advisor inbox and earns no '
+                                   'interest',
+                                   'Copy ship-to from the WAWF clause and recheck routing before submit',
+                                   'Acquisition Pro Tips ([cdachjXPX3k @ 00:15:08])'],
+                                  ['Final invoice marked Yes on a multi-year services contract',
+                                   'Roughly a month to get the contract re-opened for billing',
+                                   'Mark final invoice No until the truly last bill of the contract',
+                                   'The Proposal Pro Coach ([EesWMxgpXqk @ 00:12:10])'],
+                                  ['Receiving site counts fewer pieces than were shipped and invoiced',
+                                   'Paid for 1,409 of 3,409 pieces until the discrepancy was chased',
+                                   'DLA service desk with tracking numbers and proof of delivery, then '
+                                   'DFAS',
+                                   'Tris10 @ MeND ([yXqp5I7wQK0 @ 00:12:37])'],
+                                  ['Improper invoice with missing details or wrong data',
+                                   'Prompt payment clock never starts and late-payment interest does not '
+                                   'apply',
+                                   'Copy straight from the contract, not memory, and validate every line',
+                                   'Acquisition Pro Tips ([WXCymE9NjBg @ 00:07:38])'],
+                                  ['Hunting for documents mid-session inside the WAWF web application',
+                                   'Session times out after 15 minutes of inactivity and work is lost',
+                                   'Assemble a vendor quick kit of contract, codes, quantities and PDFs '
+                                   'first',
+                                   'Acquisition Pro Tips ([cdachjXPX3k @ 00:05:35]); annica at Bill Bright '
+                                   '([WDekT_xRXC0 @ 00:02:46])'],
+                                  ['Borrowing $10,000 less on an SBA 7(a) franchise loan',
+                                   'Cap rises to 11.5%, about $29,600 more interest over ten years',
+                                   'Ask every lender for its actual rate instead of trusting the cap',
+                                   'The Money Rules ([rlj1s_mZ7uo @ 00:05:29])']]},
+               'callout': {'kind': 'OPERATOR GATE',
+                           'title': 'Four Checks Before Any Quote, Invoice, or Payment Chase Goes Out',
+                           'body': 'Every item below is a pitfall a named practitioner hit or watched '
+                                   'others hit. Clear all four before you release information to a sub, '
+                                   'press submit in WAWF, or assume DFAS has paid.',
+                           'items': ['Withhold the agency name and point of contact from any sub until the '
+                                     'purchase order is in hand; a sub demanding both is a signal to walk '
+                                     '[Debra Smith — NusotbSsCa4 @ 00:15:24].',
+                                     'Match the document type to the WAWF payment instructions clause '
+                                     'every time: combo for supplies, Invoice 2-in-1 for services, since '
+                                     'the wrong type is the fastest route to rejection [Acquisition Pro '
+                                     'Tips — WXCymE9NjBg @ 00:05:10].',
+                                     'Confirm the ship-to DoDAAC is not the admin DoDAAC before submit, or '
+                                     'the invoice sits in the wrong inbox and accrues no interest '
+                                     '[Acquisition Pro Tips — cdachjXPX3k @ 00:15:08].',
+                                     "Open My Invoice every Friday and treat any 'See reason and remark "
+                                     "code' status as yours to fix, calling DLA for quantity and DFAS for "
+                                     'accounting [Tris10 @ MeND — yXqp5I7wQK0 @ 00:15:10].']}}],
+ 'pull_quote': '"A two-minute email can save 30 days of delay." — Acquisition Pro Tips (WXCymE9NjBg @ '
+               '00:11:37).',
+ 'diagram_id': 'diag-08',
+ 'action_checklist': ['Build a payment-trigger worksheet listing clause, CLIN, trigger, evidence, '
+                      'submission route, acceptance owner, forecast date and actual receipt, with supplier '
+                      'and payroll outflows beside it [GovSuccess — jTTWqhTfPMM @ 00:03:06].',
+                      'Line up government-savvy factoring companies before award, confirm they know the '
+                      'government process, and walk from any quote over 5% [Debra Smith — NusotbSsCa4 @ '
+                      '00:03:39].',
+                      'Assemble the vendor quick kit before logging into PIEE: contract and mods, CAGE '
+                      'code, contract and delivery order numbers, internal invoice number, quantities, '
+                      'unit prices and supporting PDFs [annica at Bill Bright — WDekT_xRXC0 @ 00:01:18].',
+                      'Highlight every key code in the contract and screenshot the WAWF payment '
+                      'instructions clause into the invoice file [Acquisition Pro Tips — cdachjXPX3k @ '
+                      '00:05:02].',
+                      'Preview the receiving report, print the document and pack list before submit, and '
+                      'keep every tracking number and receiving report in a per-contract folder [Tris10 @ '
+                      'MeND — weLOISkZc5k @ 00:17:45].',
+                      'For any EIDL balance, run the four-question check: loan size, personal guarantee, '
+                      'business open or closing, and whether funds went to allowed uses [Sternberg Law '
+                      'Group — IMjYXOH8UoU @ 00:02:53].'],
+ 'statutory_citations': [{'title': 'Acquisition Pro Tips — Ep. 2: Wide Area Workflow (WAWF) Explained | '
+                                   'How to Invoice with the DoD & Avoid Rejections [00:07:17]',
+                          'url': 'https://www.youtube.com/watch?v=WXCymE9NjBg&t=437s',
+                          'relevance': 'Primary practitioner testimony on the 30-day prompt payment clock, '
+                                       'automatic DFAS interest, and the proper-invoice requirement.'},
+                         {'title': 'Debra Smith — 3 Smart Ways to Fund Your Government Contract *Credit '
+                                   'Cards, Factoring, & Purchase Orders* [00:02:12]',
+                          'url': 'https://www.youtube.com/watch?v=NusotbSsCa4&t=132s',
+                          'relevance': 'Primary practitioner testimony on factoring rates, credit cards, '
+                                       'and purchase-order terms for funding delivery.'},
+                         {'title': 'Acquisition Pro Tips — Ep. 9: How to Submit a WAWF COMBO Invoice | '
+                                   'Vendor Step-by-Step Tutorial [00:15:08]',
+                          'url': 'https://www.youtube.com/watch?v=cdachjXPX3k&t=908s',
+                          'relevance': 'Primary practitioner testimony on the ship-to DoDAAC routing error '
+                                       'that strands invoices without interest.'},
+                         {'title': 'Win Government Contracts with GovSuccess — FAR Part 32 (Simplified) | '
+                                   'Check Payment Triggers Before Planning Cash Flow [00:03:06]',
+                          'url': 'https://www.youtube.com/watch?v=jTTWqhTfPMM&t=186s',
+                          'relevance': 'Primary practitioner testimony on building a payment-trigger '
+                                       'worksheet around documented contract triggers.'}],
+ 'source_citations': [{'source_type': 'video_pro_tip',
+                       'video_id': 'jTTWqhTfPMM',
+                       'title': 'FAR Part 32 (Simplified) | Check Payment Triggers Before Planning Cash '
+                                'Flow',
+                       'channel': 'Win Government Contracts with GovSuccess',
+                       'author': 'Win Government Contracts with GovSuccess',
+                       'text': 'Track what has been submitted, approved, withheld, liquidated, and '
+                               'collected so financing is not counted twice as revenue or available cash.',
+                       'tip': 'Track what has been submitted, approved, withheld, liquidated, and '
+                              'collected so financing is not counted twice as revenue or available cash.',
+                       'timestamp': 164,
+                       'timestamp_seconds': 164,
+                       'timestamp_label': '[00:02:44]',
+                       'url': 'https://www.youtube.com/watch?v=jTTWqhTfPMM&t=164s',
+                       'markdown': '[00:02:44](https://www.youtube.com/watch?v=jTTWqhTfPMM&t=164s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q12.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'NusotbSsCa4',
+                       'title': '3 Smart Ways to Fund Your Government Contract *Credit Cards, Factoring, & '
+                                'Purchase Orders*',
+                       'channel': 'Debra Smith',
+                       'author': 'Debra Smith',
+                       'text': "3% to 5% is what they should be charging; any factoring company that's "
+                               'charging you over 5% is not a good factoring company.',
+                       'tip': "3% to 5% is what they should be charging; any factoring company that's "
+                              'charging you over 5% is not a good factoring company.',
+                       'timestamp': 156,
+                       'timestamp_seconds': 156,
+                       'timestamp_label': '[00:02:36]',
+                       'url': 'https://www.youtube.com/watch?v=NusotbSsCa4&t=156s',
+                       'markdown': '[00:02:36](https://www.youtube.com/watch?v=NusotbSsCa4&t=156s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q12.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'NusotbSsCa4',
+                       'title': '3 Smart Ways to Fund Your Government Contract *Credit Cards, Factoring, & '
+                                'Purchase Orders*',
+                       'channel': 'Debra Smith',
+                       'author': 'Debra Smith',
+                       'text': "If they say we need the agency's name along with the point of contact, run "
+                               'for the hills.',
+                       'tip': "If they say we need the agency's name along with the point of contact, run "
+                              'for the hills.',
+                       'timestamp': 924,
+                       'timestamp_seconds': 924,
+                       'timestamp_label': '[00:15:24]',
+                       'url': 'https://www.youtube.com/watch?v=NusotbSsCa4&t=924s',
+                       'markdown': '[00:15:24](https://www.youtube.com/watch?v=NusotbSsCa4&t=924s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q12.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': '4V1zq5q3VuQ',
+                       'title': 'Government Contract Invoice Factoring and PO Financing',
+                       'channel': 'Business Cash Now',
+                       'author': 'Business Cash Now',
+                       'text': "Make sure you have enough margin; there's only one thing worse than no "
+                               "sales and that's selling it at a loss.",
+                       'tip': "Make sure you have enough margin; there's only one thing worse than no "
+                              "sales and that's selling it at a loss.",
+                       'timestamp': 53,
+                       'timestamp_seconds': 53,
+                       'timestamp_label': '[00:00:53]',
+                       'url': 'https://www.youtube.com/watch?v=4V1zq5q3VuQ&t=53s',
+                       'markdown': '[00:00:53](https://www.youtube.com/watch?v=4V1zq5q3VuQ&t=53s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q12.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'oOQSsJO94kM',
+                       'title': 'Mobilization Capital Gov Contract Funding',
+                       'channel': 'Mobilization Capital',
+                       'author': 'Mobilization Capital',
+                       'text': 'The most important thing Mobilization Capital needs to see is a signed '
+                               'contract with the government or a Notice to Proceed.',
+                       'tip': 'The most important thing Mobilization Capital needs to see is a signed '
+                              'contract with the government or a Notice to Proceed.',
+                       'timestamp': 32,
+                       'timestamp_seconds': 32,
+                       'timestamp_label': '[00:00:32]',
+                       'url': 'https://www.youtube.com/watch?v=oOQSsJO94kM&t=32s',
+                       'markdown': '[00:00:32](https://www.youtube.com/watch?v=oOQSsJO94kM&t=32s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q12.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'WXCymE9NjBg',
+                       'title': 'Ep. 2: Wide Area Workflow (WAWF) Explained | How to Invoice with the DoD '
+                                '& Avoid Rejections',
+                       'channel': 'Acquisition Pro Tips',
+                       'author': 'Acquisition Pro Tips',
+                       'text': 'The prompt payment clause requires payment within 30 days of receiving a '
+                               'proper invoice, but the clock only starts when a proper invoice is '
+                               'submitted.',
+                       'tip': 'The prompt payment clause requires payment within 30 days of receiving a '
+                              'proper invoice, but the clock only starts when a proper invoice is '
+                              'submitted.',
+                       'timestamp': 437,
+                       'timestamp_seconds': 437,
+                       'timestamp_label': '[00:07:17]',
+                       'url': 'https://www.youtube.com/watch?v=WXCymE9NjBg&t=437s',
+                       'markdown': '[00:07:17](https://www.youtube.com/watch?v=WXCymE9NjBg&t=437s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q12.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'weLOISkZc5k',
+                       'title': 'PIEE and WAWF: Invoices and Receiving Reports for DIBBS Government '
+                                'Contracts',
+                       'channel': 'Tris10 @ MeND',
+                       'author': 'Tris10 @ MeND',
+                       'text': 'If this is your last shipment to the government for this contract, make '
+                               'sure to put a Z.',
+                       'tip': 'If this is your last shipment to the government for this contract, make '
+                              'sure to put a Z.',
+                       'timestamp': 702,
+                       'timestamp_seconds': 702,
+                       'timestamp_label': '[00:11:42]',
+                       'url': 'https://www.youtube.com/watch?v=weLOISkZc5k&t=702s',
+                       'markdown': '[00:11:42](https://www.youtube.com/watch?v=weLOISkZc5k&t=702s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q12.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'EesWMxgpXqk',
+                       'title': 'Submitting Invoice In WAWF',
+                       'channel': 'The Proposal Pro Coach',
+                       'author': 'The Proposal Pro Coach',
+                       'text': 'Make sure you click on no, not yes, because if you click on yes I was told '
+                               'that it would take a month to get the contract re up and running again.',
+                       'tip': 'Make sure you click on no, not yes, because if you click on yes I was told '
+                              'that it would take a month to get the contract re up and running again.',
+                       'timestamp': 730,
+                       'timestamp_seconds': 730,
+                       'timestamp_label': '[00:12:10]',
+                       'url': 'https://www.youtube.com/watch?v=EesWMxgpXqk&t=730s',
+                       'markdown': '[00:12:10](https://www.youtube.com/watch?v=EesWMxgpXqk&t=730s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q12.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'cdachjXPX3k',
+                       'title': 'Ep. 9: How to Submit a WAWF COMBO Invoice | Vendor Step-by-Step Tutorial',
+                       'channel': 'Acquisition Pro Tips',
+                       'author': 'Acquisition Pro Tips',
+                       'text': "When you're inputting the DoDAAC for the ship to information, be sure to "
+                               'not write the admin DoDAAC.',
+                       'tip': "When you're inputting the DoDAAC for the ship to information, be sure to "
+                              'not write the admin DoDAAC.',
+                       'timestamp': 908,
+                       'timestamp_seconds': 908,
+                       'timestamp_label': '[00:15:08]',
+                       'url': 'https://www.youtube.com/watch?v=cdachjXPX3k&t=908s',
+                       'markdown': '[00:15:08](https://www.youtube.com/watch?v=cdachjXPX3k&t=908s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q12.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'WDekT_xRXC0',
+                       'title': 'WAWF Invoicing How To: Expert Guidance to Get Paid FAST and Avoid Delays!',
+                       'channel': 'annica at Bill Bright',
+                       'author': 'annica at Bill Bright',
+                       'text': 'I call this the vendor quick kit, and having these things ready will '
+                               'prevent 90% of the headaches.',
+                       'tip': 'I call this the vendor quick kit, and having these things ready will '
+                              'prevent 90% of the headaches.',
+                       'timestamp': 61,
+                       'timestamp_seconds': 61,
+                       'timestamp_label': '[00:01:01]',
+                       'url': 'https://www.youtube.com/watch?v=WDekT_xRXC0&t=61s',
+                       'markdown': '[00:01:01](https://www.youtube.com/watch?v=WDekT_xRXC0&t=61s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q12.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'yXqp5I7wQK0',
+                       'title': 'Handling DLA Payment Issues - Invoicing Issues with the DLA Explained! 💡',
+                       'channel': 'Tris10 @ MeND',
+                       'author': 'Tris10 @ MeND',
+                       'text': 'No one will care about your business as much as you do; you got to take '
+                               "ownership of this and don't assume that they're going to do it.",
+                       'tip': 'No one will care about your business as much as you do; you got to take '
+                              "ownership of this and don't assume that they're going to do it.",
+                       'timestamp': 884,
+                       'timestamp_seconds': 884,
+                       'timestamp_label': '[00:14:44]',
+                       'url': 'https://www.youtube.com/watch?v=yXqp5I7wQK0&t=884s',
+                       'markdown': '[00:14:44](https://www.youtube.com/watch?v=yXqp5I7wQK0&t=884s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q12.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'uUf-xLjfPf8',
+                       'title': 'The Prompt Payment Act exists to ensure quick payment to contractors and '
+                                'subs in federal projects.',
+                       'channel': "Don't Know Much About Construction",
+                       'author': "Don't Know Much About Construction",
+                       'text': 'The government is prohibited by the Anti-Deficiency Act to award a '
+                               'contract without having the funding allocated for that contract.',
+                       'tip': 'The government is prohibited by the Anti-Deficiency Act to award a contract '
+                              'without having the funding allocated for that contract.',
+                       'timestamp': 256,
+                       'timestamp_seconds': 256,
+                       'timestamp_label': '[00:04:16]',
+                       'url': 'https://www.youtube.com/watch?v=uUf-xLjfPf8&t=256s',
+                       'markdown': '[00:04:16](https://www.youtube.com/watch?v=uUf-xLjfPf8&t=256s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q12.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'FZ6VO4mNzF4',
+                       'title': 'Major SBA EIDL Record Keeping Problems',
+                       'channel': 'Skip',
+                       'author': 'Skip',
+                       'text': 'SBA chose to rely on row counts provided by the contractor as a general '
+                               'way of reconciling data transfer.',
+                       'tip': 'SBA chose to rely on row counts provided by the contractor as a general way '
+                              'of reconciling data transfer.',
+                       'timestamp': 353,
+                       'timestamp_seconds': 353,
+                       'timestamp_label': '[00:05:53]',
+                       'url': 'https://www.youtube.com/watch?v=FZ6VO4mNzF4&t=353s',
+                       'markdown': '[00:05:53](https://www.youtube.com/watch?v=FZ6VO4mNzF4&t=353s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q12.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'x1-UtiYGpVc',
+                       'title': 'How to Fight the SBA: Stop Collections on Your EIDL Loan',
+                       'channel': 'Keck Legal, LLC',
+                       'author': 'Keck Legal, LLC',
+                       'text': 'The SBA was requiring personal guarantees for loans I believe in excess of '
+                               '$200,000.',
+                       'tip': 'The SBA was requiring personal guarantees for loans I believe in excess of '
+                              '$200,000.',
+                       'timestamp': 221,
+                       'timestamp_seconds': 221,
+                       'timestamp_label': '[00:03:41]',
+                       'url': 'https://www.youtube.com/watch?v=x1-UtiYGpVc&t=221s',
+                       'markdown': '[00:03:41](https://www.youtube.com/watch?v=x1-UtiYGpVc&t=221s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q12.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'IMjYXOH8UoU',
+                       'title': 'Who Should Really Worry About EIDL Loans | Sternberg Law Group',
+                       'channel': 'Sternberg Law Group',
+                       'author': 'Sternberg Law Group',
+                       'text': 'If your loan is below $150,000, you more than likely did not sign a '
+                               'personal guarantee, but go look at your contract.',
+                       'tip': 'If your loan is below $150,000, you more than likely did not sign a '
+                              'personal guarantee, but go look at your contract.',
+                       'timestamp': 61,
+                       'timestamp_seconds': 61,
+                       'timestamp_label': '[00:01:01]',
+                       'url': 'https://www.youtube.com/watch?v=IMjYXOH8UoU&t=61s',
+                       'markdown': '[00:01:01](https://www.youtube.com/watch?v=IMjYXOH8UoU&t=61s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q12.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'rlj1s_mZ7uo',
+                       'title': 'SBA Franchise Directory 2026: Is Your Franchise on the SBA List?',
+                       'channel': 'The Money Rules',
+                       'author': 'The Money Rules',
+                       'text': 'Borrowing less can cost you more; at $350,000 or less, the lender can add '
+                               '4.5% instead of 3%.',
+                       'tip': 'Borrowing less can cost you more; at $350,000 or less, the lender can add '
+                              '4.5% instead of 3%.',
+                       'timestamp': 304,
+                       'timestamp_seconds': 304,
+                       'timestamp_label': '[00:05:04]',
+                       'url': 'https://www.youtube.com/watch?v=rlj1s_mZ7uo&t=304s',
+                       'markdown': '[00:05:04](https://www.youtube.com/watch?v=rlj1s_mZ7uo&t=304s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q12.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'C6VmvdA7JT4',
+                       'title': 'How to Avoid SBA Loan Scams',
+                       'channel': 'CO-',
+                       'author': 'CO-',
+                       'text': 'The borrower cannot be charged a fee for this; the fee to pay a packager '
+                               'has to come out of the bank, not the borrower.',
+                       'tip': 'The borrower cannot be charged a fee for this; the fee to pay a packager '
+                              'has to come out of the bank, not the borrower.',
+                       'timestamp': 54,
+                       'timestamp_seconds': 54,
+                       'timestamp_label': '[00:00:54]',
+                       'url': 'https://www.youtube.com/watch?v=C6VmvdA7JT4&t=54s',
+                       'markdown': '[00:00:54](https://www.youtube.com/watch?v=C6VmvdA7JT4&t=54s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q12.'}]}

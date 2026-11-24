@@ -1,686 +1,923 @@
 from __future__ import annotations
 
-
 def build_volume_022_workbook() -> dict:
-    def field(name: str, input_type: str, prompt: str, example: str) -> dict:
-        return {"name": name, "type": input_type, "prompt": prompt, "example": example}
-
-    return {
-        "workbook_id": "wb-022-medical-equipment-resale",
-        "volume_id": "vol-022-medical-equipment-resale",
-        "title": "Medical Equipment Resale — Operator Companion Workbook",
-        "subtitle": (
-            "6 Printable Operator Worksheets for Device Underwriting, Resale Economics, "
-            "Biomed QA, Regulatory Mapping, Inventory Automation, and Exit-Ready Operations"
-        ),
-        "worksheets": [
-            {
-                "worksheet_id": "ws-01",
-                "number": 1,
-                "title": "Opportunity, Vertical Underwriting & Counterparty Qualification",
-                "purpose": (
-                    "Select a serviceable equipment niche before committing acquisition cash. "
-                    "Document buyer demand, seller authority, device identity, service access, "
-                    "and credible liquidation routes so an attractive purchase price cannot "
-                    "conceal unsupported software, encumbered ownership, contamination, or obsolete components."
-                ),
-                "chapter_ref": "Q1, Q2, Q6",
-                "instructions": [
-                    (
-                        "Choose one initial device family and one buyer segment. Compare diagnostic, "
-                        "surgical, veterinary, and aesthetic applications without assuming their "
-                        "regulatory obligations are interchangeable. Write the intended use, installation "
-                        "requirements, and exclusions before collecting seller quotations."
-                    ),
-                    (
-                        "Build a serial-specific acquisition file using seller invoices, asset registers, "
-                        "service records, and photographs. Independently verify the selling entity and "
-                        "signatory authority; escalate leases, security interests, disputed ownership, and "
-                        "missing identification before proposing any payment."
-                    ),
-                    (
-                        "Obtain demand evidence from actual purchasing conversations and completed "
-                        "transactions rather than marketplace asking prices. Separate cash buyers "
-                        "from contingent buyers, document accessories included in each comparison, "
-                        "and adjust for installation, warranty, and software differences."
-                    ),
-                    (
-                        "Ask a qualified biomedical service provider to price inspection and likely "
-                        "repairs before submitting a firm bid. Confirm access to manufacturer procedures, "
-                        "calibration equipment, replacement parts, software rights, and an appropriate "
-                        "decontamination process for the specific device."
-                    ),
-                    (
-                        "Score the opportunity against downside recovery and working-capital limits, "
-                        "not just prospective resale spread. Record a named decision owner, acquisition "
-                        "ceiling, evidence expiration date, and explicit rejection conditions that remain "
-                        "binding when a seller pressures for speed."
-                    ),
-                ],
-                "fields": [
-                    field(
-                        "Initial vertical and intended-use boundary",
-                        "textarea",
-                        "Define the first device family, clinical or veterinary application, buyer profile, and excluded configurations. Explain why your service partners can support this boundary without changing intended use or materially altering device performance.",
-                        "Start with two established cart-based ultrasound models for outpatient human diagnostic practices. Exclude therapeutic ultrasound, investigational configurations, unsupported operating systems, and undocumented probes. A regional biomed partner supports both models; veterinary opportunities receive a separate intended-use and service assessment before bidding.",
-                    ),
-                    field(
-                        "Buyer demand and purchasing authority",
-                        "textarea",
-                        "Record qualified buyer conversations, purchasing authority, budget, timing, and installation constraints. Distinguish demonstrated demand from casual interest, and identify the evidence needed before treating a prospect as a credible inventory exit.",
-                        "Interview eight imaging practices and qualify three opportunities: budgets of $24,000, $26,000, and $28,000, each with an identified purchasing manager. Two require delivery within ninety days. Obtain written configuration requests; neither verbal interest nor a marketplace message counts as a purchase commitment.",
-                    ),
-                    field(
-                        "Seller identity and authority evidence",
-                        "textarea",
-                        "Identify the legal seller, asset owner, authorized signer, payment beneficiary, and any intermediary. Describe independent verification steps and the documents establishing that the proposed seller may transfer this particular equipment.",
-                        "The hospital asset register identifies unit US-022-017 as owned equipment. Its procurement director supplies a disposal authorization and original invoice. Confirm authority through the hospital switchboard and match bank beneficiary details to the contracting entity before releasing the proposed $14,000 acquisition payment.",
-                    ),
-                    field(
-                        "Title, leases, and security interests",
-                        "textarea",
-                        "Document title review, lease status, relevant UCC searches, and any required secured-party release. Explain how counsel will resolve ambiguous ownership rather than treating possession or a seller warranty as sufficient evidence.",
-                        "Search the seller's exact legal name in the appropriate filing jurisdiction and investigate a blanket equipment lien. Require a serial-specific release from the secured lender and a bill of sale. UCC Article 9 review remains open until counsel confirms the proposed transfer treatment.",
-                    ),
-                    field(
-                        "Device identity and configuration manifest",
-                        "textarea",
-                        "Capture manufacturer, model, serial number, available UDI information, software version, accessories, and labeled intended use. Specify how photographs and physical inspection will reconcile discrepancies across invoices, labels, and service records.",
-                        "Manifest US-022-017 lists one ultrasound console, two identified probes, software version 6.2, a printer, and a locking cart. Photograph each serial plate and probe connector. Record the UDI when present; older equipment lacking one receives a documented identity review rather than an invented identifier.",
-                    ),
-                    field(
-                        "Comparable sales and achievable price",
-                        "textarea",
-                        "Select comparable completed sales and normalize their condition, accessories, service coverage, delivery, and software rights. State the achievable equipment resale price separately from customer clinical revenue or any estimated procedure economics.",
-                        "Three documented comparable transactions closed at $24,000, $25,500, and $26,000 with similar probes. After adjusting the higher-priced package for additional service coverage, underwrite $25,000 gross equipment proceeds. The buyer's projected patient billings are excluded entirely from operator revenue and acquisition justification.",
-                    ),
-                    field(
-                        "Serviceability and obsolescence horizon",
-                        "textarea",
-                        "Identify support expiration, critical spare availability, software transfer restrictions, cybersecurity support, and technician access. Establish the minimum supported ownership period and the evidence required to price equipment approaching a support cutoff.",
-                        "The service partner confirms probe availability from two documented suppliers and a twelve-month repair agreement. Written manufacturer information shows software support continuing through the planned resale window. Reject the lot if its required license cannot transfer or its only replacement power board lacks traceable sourcing.",
-                    ),
-                    field(
-                        "Decontamination and data exposure screen",
-                        "textarea",
-                        "Describe likely biological contamination and stored patient information before transport or inspection. Assign responsibility for decontamination evidence, data handling, quarantine location, and specialist escalation when the device cannot safely enter ordinary inventory.",
-                        "Treat the ultrasound console as potentially containing patient images until verified otherwise. The seller performs documented surface decontamination using compatible procedures, while authorized technicians handle storage sanitization. Receiving staff place the unit in restricted quarantine; no customer demonstration occurs until both evidence packages are accepted.",
-                    ),
-                    field(
-                        "Downside liquidation and bid ceiling",
-                        "textarea",
-                        "Calculate an acquisition ceiling from credible resale proceeds, inspection and repair costs, transport, defect provision, and required contribution. Add a separate downside recovery case supported by actual wholesale or parts-channel evidence.",
-                        "At $25,000 resale, subtract $2,000 refurbishment, $1,000 freight, $1,000 defect provision, and $7,000 required contribution to set a $14,000 bid ceiling. A documented $15,000 wholesale offer less $1,000 outbound costs returns $14,000 before sunk inspection or repair spending.",
-                    ),
-                    field(
-                        "Opportunity decision and rejection conditions",
-                        "textarea",
-                        "State the acquisition decision, accountable owner, unresolved evidence, expiry date, and hard rejection conditions. Relate the capital and labor burden to the candidate score rather than presenting equipment trading as passive income.",
-                        "Proceed only after title release, probe testing, and license confirmation. The acquisition lead owns a ten-business-day offer window. Candidate #14 ranks #20 of 29 with 85/100: revenue potential 24, margin potential 22, team efficiency 18, startup accessibility 11, and automation potential 10; capital and labor remain substantial.",
-                    ),
-                ],
-                "completion_gate": (
-                    "The acquisition lead and biomed reviewer sign a serial-specific underwriting packet "
-                    "containing verified seller authority, supported intended use, comparable sales, service "
-                    "access, title resolution, contamination and data controls, and an enforceable bid ceiling."
-                ),
-            },
-            {
-                "worksheet_id": "ws-02",
-                "number": 2,
-                "title": "Unit Economics, Scrub Reserve & Working-Capital Float Calculator",
-                "purpose": (
-                    "Convert equipment spreads into reconciled owner profit and a dated cash requirement. "
-                    "Keep acquisition, refurbishment, freight, data scrubbing, defect exposure, and operating "
-                    "overhead visible while distinguishing recognized resale proceeds from deposits, unsold "
-                    "inventory, customer procedure revenue, and available cash."
-                ),
-                "chapter_ref": "Q3, Q4",
-                "instructions": [
-                    (
-                        "Copy the three canonical annual scenarios before adding transaction assumptions. "
-                        "Preserve their gross revenue, net margins, owner profit, and staffing exactly. "
-                        "Use illustrative unit counts only as a reconciliation bridge, not as "
-                        "replacement forecasts or promised production."
-                    ),
-                    (
-                        "Build the landed-cost calculation by serial number. Separate acquisition from "
-                        "refurbishment, freight, sanitization labor, and defect provision; document whether "
-                        "each amount is paid, accrued, reserved in cash, or included within another "
-                        "line to prevent duplicate charges."
-                    ),
-                    (
-                        "Draw the cash timeline from seller payment through buyer collection, including "
-                        "inspection delays and acceptance terms. Model simultaneous inventory positions "
-                        "rather than relying on average annual margin; a profitable transaction can "
-                        "still consume unavailable cash."
-                    ),
-                    (
-                        "Reconcile unit contribution to annual overhead and owner net profit. Treat "
-                        "reserve additions, claim utilization, inventory write-downs, and cash ring-fencing "
-                        "as distinct management events, then have the bookkeeper map them to the "
-                        "applicable accounting treatment."
-                    ),
-                    (
-                        "Stress repair cost, resale price, collection timing, and unsold inventory "
-                        "individually before combining adverse changes. Set cash minimums and purchase "
-                        "stop rules that preserve the service and warranty obligations already sold "
-                        "to existing customers."
-                    ),
-                ],
-                "fields": [
-                    field(
-                        "Canonical scenario reconciliation",
-                        "textarea",
-                        "Enter all three annual scenarios with exact revenue, net margin, owner profit, and staffing. Define the revenue basis explicitly so equipment sales are never confused with buyer procedure billings or pass-through principal.",
-                        "Conservative: $250,000 gross resale revenue, 10% margin, $25,000 owner net, 2 FT plus 4 contractors. Base: $1,025,000, 16.0%, $164,000, the same staffing. Scaled: $1,800,000, 22%, $396,000, 3 FT plus 5 contractors. Acquisition and refurbishment are expenses within these margins.",
-                    ),
-                    field(
-                        "Base-case unit contribution bridge",
-                        "textarea",
-                        "Specify sale price and each direct cost for a representative unit, then reconcile contribution to the annual base case. Identify which recurring expenses remain in overhead rather than quietly excluding them from owner profit.",
-                        "Sell 41 units at $25,000 for $1,025,000. Per unit, deduct $14,000 acquisition, $2,000 refurbishment, $1,000 freight, and $1,000 defect provision: $7,000 contribution. Annual contribution is $287,000; subtract $123,000 overhead to produce exactly $164,000 owner net and a 16.0% margin.",
-                    ),
-                    field(
-                        "Conservative and scaled cost bridges",
-                        "textarea",
-                        "Construct illustrative unit-volume and cost bridges for the other canonical cases. Preserve each annual profit and show how differences in equipment mix, sourcing, overhead absorption, and repair burden explain the implied economics.",
-                        "Conservative uses 10 units at $25,000, $16,500 direct cost each, and $60,000 overhead: $25,000 net. Scaled uses 60 units at $30,000, $20,800 direct cost each, and $156,000 overhead: $396,000 net. These bridges reflect different sourcing and product mixes, not identical unit economics.",
-                    ),
-                    field(
-                        "Scrub, defect, and warranty provision",
-                        "textarea",
-                        "Separate routine patient-data sanitization from uncertain repair and warranty exposure. State expected frequency, severity, timing, accounting treatment, and cash protection, making clear when actual claims consume an existing provision rather than create duplicate expenses.",
-                        "The $2,000 refurbishment allowance includes $150 authorized data-sanitization labor and $1,850 inspection and service work. The separate $1,000 defect provision represents 20% expected claim frequency times $5,000 average severity. A $600 covered repair consumes the tracked provision; the bookkeeper reconciles expense recognition separately.",
-                    ),
-                    field(
-                        "Transaction cash timeline",
-                        "textarea",
-                        "List payment and collection dates, deposit assumptions, acceptance conditions, and cash exposure before buyer settlement. Distinguish the date inventory becomes ready for sale from the date customer funds become available for another acquisition.",
-                        "Pay $14,000 on day zero, $2,000 refurbishment on day twenty, and $1,000 freight on day thirty-five. Deliver and invoice $25,000 on day thirty-five; collect on day sixty-five. Peak paid exposure is $17,000, or $18,000 including a ring-fenced $1,000 defect buffer.",
-                    ),
-                    field(
-                        "Startup capitalization and inventory slots",
-                        "textarea",
-                        "Allocate startup cash across acquisition slots, refurbishment, freight, protected defect liquidity, overhead runway, and contingency. Reconcile the total to the stated startup range and avoid counting a cash reserve as both spending and available inventory capital.",
-                        "Allocate $180,000 as $112,000 for eight acquisitions, $16,000 refurbishment, $8,000 freight, $8,000 protected defect cash, $30,750 for three months of base overhead, and $5,250 contingency. The total sits within the $20,000–$95,000 startup range; protected amounts cannot fund additional purchases.",
-                    ),
-                    field(
-                        "Inventory turns and collection stress",
-                        "textarea",
-                        "Translate annual unit demand and cash-cycle duration into concurrent funded inventory positions. Round requirements upward and quantify the additional capital or reduced throughput caused by slower acceptance, delayed parts, or extended buyer payment terms.",
-                        "At 41 annual units and a 65-day cash cycle, average funding demand is 7.30 units; eight slots support the steady-state plan. At 80 days, demand becomes 8.99 units, requiring nine slots. Add $18,000 protected liquidity or reduce acquisition pace rather than borrowing warranty cash.",
-                    ),
-                    field(
-                        "Overhead and staffing coverage",
-                        "textarea",
-                        "Break annual overhead into operating categories and explain how full-time staff and contractors are funded. Distinguish contractor headcount from full-time equivalents, and identify compensation assumptions requiring local validation before using the scenario operationally.",
-                        "Base overhead is $123,000: $72,000 combined fixed staff compensation and employer burden, $18,000 storage, $12,000 insurance, $9,000 selling costs, $6,000 systems and bookkeeping, and $6,000 administration. Four contractors receive variable assignments inside direct costs. Monthly overhead is $10,250; validate local compensation before hiring.",
-                    ),
-                    field(
-                        "Price, repair, and inventory stress",
-                        "textarea",
-                        "Calculate a downside unit case and its annual implications without overwriting the canonical scorecard. State the response when price compression and repair overruns erase contribution, including purchase suspension, repricing, or a supported wholesale exit.",
-                        "A $22,500 selling price, $14,000 acquisition, $3,500 refurbishment, $1,000 freight, and $1,500 defect provision leave $2,500 contribution. Across 41 units, $102,500 contribution less $123,000 overhead produces a $20,500 loss. Label this a stress case and suspend purchases until costs or pricing recover.",
-                    ),
-                    field(
-                        "Revenue recognition and cash reconciliation",
-                        "textarea",
-                        "Define how the ledger distinguishes inventory, deposits, earned equipment revenue, receivables, and collections. Assign responsibility for reconciling the management model to accounting records, particularly when acceptance terms, brokerage arrangements, or returns change the transaction substance.",
-                        "A $5,000 advance remains a customer deposit until the applicable recognition criteria are met. A qualifying $25,000 equipment sale creates gross resale revenue, not $30,000. Broker-only fees are tracked separately. Reconcile receivables, deposits, inventory costs, provisions, and bank receipts monthly with the bookkeeper.",
-                    ),
-                ],
-                "completion_gate": (
-                    "The operator and bookkeeper verify all three canonical profit calculations, the "
-                    "$180,000 capitalization allocation, base overhead, reserve treatment, and dated "
-                    "cash-cycle model; no acquisition proceeds if protected service liquidity would be spent."
-                ),
-            },
-            {
-                "worksheet_id": "ws-03",
-                "number": 3,
-                "title": "Execution Ledger & Technical QA Pre-Flight Sheet",
-                "purpose": (
-                    "Control each unit from collection through buyer acceptance using a serial-level "
-                    "ledger and evidence-backed technical release. Separate physical custody, contamination "
-                    "status, data sanitization, repairs, calibration, and commercial readiness so no "
-                    "unverified device reaches a demonstration, shipment, or clinical installation."
-                ),
-                "chapter_ref": "Q7, Q8",
-                "instructions": [
-                    (
-                        "Create the inventory record before pickup and attach the signed purchase "
-                        "documents, configuration manifest, and condition photographs. Assign separate "
-                        "custody and technical owners so movement between warehouse, carrier, and "
-                        "service provider never silently changes release status."
-                    ),
-                    (
-                        "Receive every device into a controlled quarantine location. Verify identity, "
-                        "accessories, transport condition, contamination documentation, and potential data "
-                        "exposure before energizing or connecting it; escalate discrepancies to qualified "
-                        "personnel rather than improvising repairs or exploratory access."
-                    ),
-                    (
-                        "Use manufacturer procedures and device-specific acceptance criteria for technical "
-                        "inspection. Record instrument identity, calibration status, measured results, "
-                        "technician qualifications, and outstanding failures. A generic electrical test "
-                        "or clean enclosure does not establish clinical performance."
-                    ),
-                    (
-                        "Keep data sanitization and decontamination as separate evidence streams. Verify "
-                        "that each process is compatible with the device and accessories, preserves "
-                        "necessary functionality, and supports a signed result without placing patient "
-                        "information into ordinary resale records."
-                    ),
-                    (
-                        "Complete independent release review before shipment, then collect delivery, "
-                        "installation, and acceptance evidence under the contract. Preserve a complaint "
-                        "route and serial-specific warranty history so later failures can be traced "
-                        "to inspections, parts, and responsible service providers."
-                    ),
-                ],
-                "fields": [
-                    field(
-                        "Serial-level custody ledger",
-                        "textarea",
-                        "Define the inventory identifier, physical location, custodian, status, and movement record. Require event timestamps and supporting documents so ownership, custody, technical release, and customer allocation remain independently traceable throughout the resale process.",
-                        "Asset US-022-017 enters the ledger at seller pickup with status Quarantine and location Carrier A. Receiving signs the handoff at Bay Q2 and photographs the transport seal. The service partner later acknowledges custody without changing sale readiness; only the technical release reviewer can authorize that change.",
-                    ),
-                    field(
-                        "Receiving inspection and transit damage",
-                        "textarea",
-                        "List the receiving checks for identity, accessory count, packaging, visible damage, environmental exposure, and documentation. Explain how staff preserve carrier evidence and prevent a damaged or mismatched shipment from entering available inventory.",
-                        "Receiving expects one console, two probes, printer, cart, and power cord. A crushed corner and cracked probe holder trigger photographs before unpacking, carrier notification within contractual deadlines, and a damage hold. The $1,000 freight budget does not justify skipping inspection or accepting hidden damage.",
-                    ),
-                    field(
-                        "Decontamination evidence and handling",
-                        "textarea",
-                        "Record device-specific cleaning and decontamination evidence, responsible personnel, compatible methods, and receiving restrictions. Distinguish surface treatment from validated reprocessing of patient-contact accessories, and identify items requiring specialist handling or rejection.",
-                        "Accept the seller's signed surface-decontamination record only after checking device identity, method, date, and compatibility. A reusable endocavitary probe requires its own applicable reprocessing evidence and specialist assessment. Missing records keep that probe quarantined; an apparently clean exterior does not establish readiness for patient contact.",
-                    ),
-                    field(
-                        "Patient-data sanitization and verification",
-                        "textarea",
-                        "Identify storage media, authorized handling arrangements, sanitization method selection, verification evidence, and exceptions. Explain how the technician protects device functionality while preventing patient identifiers, images, or network credentials from entering resale demonstrations and inventory attachments.",
-                        "The authorized technician inventories internal storage and removable media, follows the device-compatible sanitization procedure, and verifies results using an approved protocol aligned with NIST SP 800-88. Store a serial-linked certificate without patient identifiers. Unverifiable media remain controlled pending an approved replacement or destruction decision.",
-                    ),
-                    field(
-                        "Biomed test plan and acceptance limits",
-                        "textarea",
-                        "Specify the applicable service procedure, qualified tester, required calibrated instruments, and device-specific pass criteria. Cover functional and safety checks without inventing universal thresholds that could conflict with manufacturer requirements or clinical use.",
-                        "The biomed partner follows the current service manual for this exact console and probe combination. Record safety-analyzer identification, calibration due date, image-phantom results, probe integrity findings, and each manual-defined acceptance limit. A failed image-uniformity test blocks release even when the console powers on normally.",
-                    ),
-                    field(
-                        "Repair record and parts traceability",
-                        "textarea",
-                        "Document each defect, approved corrective action, replacement component, source, labor cost, and verification result. Require review when proposed changes could alter intended use or significantly change performance or safety specifications rather than merely restore them.",
-                        "Replace a failed cooling fan with a traceable equivalent permitted by the service procedure: $180 part and $220 labor. Record supplier, part number, technician, and post-repair temperature results. A proposed processor upgrade receives a separate remanufacturing assessment before any work order is approved.",
-                    ),
-                    field(
-                        "Software, network, and accessory release",
-                        "textarea",
-                        "Verify transferable software rights, licensed functions, credential reset, supported connectivity, and accessory compatibility. Explain how demonstrations remain isolated from patient systems and how missing entitlements or unsupported configurations affect the sale description.",
-                        "Confirm that purchased imaging options transfer with US-022-017, remove seller network settings, and establish buyer-controlled credentials at installation. Demonstrate using synthetic test data on an isolated network. Exclude a third-party probe lacking documented compatibility, and revise the accessory manifest before issuing the $25,000 quotation.",
-                    ),
-                    field(
-                        "Technical and commercial release packet",
-                        "textarea",
-                        "List the evidence required for release and distinguish technical approval from price or payment approval. Identify who may sign, how exceptions are resolved, and which failures automatically prevent listing, demonstration, shipment, or installation.",
-                        "The packet contains identity photographs, custody history, title documents, decontamination evidence, sanitization certificate, service report, calibrated-test results, license confirmation, and final accessory manifest. The biomed reviewer signs technical release; the sales lead verifies contractual accuracy. An unresolved safety finding blocks shipment regardless of buyer payment.",
-                    ),
-                    field(
-                        "Delivery, installation, and acceptance",
-                        "textarea",
-                        "Define transport protection, installer responsibilities, destination checks, buyer training, acceptance testing, and the evidence triggering contractual milestones. Tie timing to the cash model while preserving the buyer's agreed process for documenting delivery or performance defects.",
-                        "On day thirty-five, an insured carrier delivers the released console and a qualified installer verifies configuration and agreed tests. The buyer signs a serial-specific acceptance record after successful checks. Payment remains due on day sixty-five under the illustrative terms; damage exceptions are recorded before signatures.",
-                    ),
-                    field(
-                        "Complaints, returns, and service continuity",
-                        "textarea",
-                        "Set the complaint intake record, immediate containment steps, technical escalation, reportability assessment, and warranty-cost linkage. Explain how a returned device reenters quarantine and how other units are checked for a shared defect or sourcing problem.",
-                        "A buyer reports intermittent probe dropout ten days after installation. Open a serial-linked complaint, advise suspension of the affected function pending qualified review, and notify the service partner. A $600 covered repair is tracked against the provision; the reviewer assesses reporting duties according to the operator's role.",
-                    ),
-                ],
-                "completion_gate": (
-                    "Every offered unit has a complete custody trail and signed technical release "
-                    "supported by device-specific testing, compatible decontamination, verified data "
-                    "sanitization, transferable configuration, and documented delivery and complaint procedures."
-                ),
-            },
-            {
-                "worksheet_id": "ws-04",
-                "number": 4,
-                "title": "Statutory, Licensing, Contract & Outreach Audit",
-                "purpose": (
-                    "Map actual business activities to device, privacy, workplace, state, and commercial "
-                    "requirements before expanding the catalog. Translate legal findings into records, "
-                    "contract clauses, and assigned operating tasks rather than assuming every used "
-                    "device, service intervention, or buyer jurisdiction follows identical rules."
-                ),
-                "chapter_ref": "Q5, Q9",
-                "instructions": [
-                    (
-                        "Classify the device and the operator's actual role for each transaction, "
-                        "including resale, servicing, importation, or remanufacturing. Use current FDA "
-                        "sources and qualified regulatory review; do not infer obligations solely "
-                        "from marketplace category labels or seller assurances."
-                    ),
-                    (
-                        "Compare planned repair activities with FDA servicing and remanufacturing "
-                        "guidance. Escalate changes affecting intended use or significantly changing "
-                        "safety or performance specifications, and document the resulting registration, "
-                        "quality-system, labeling, and premarket analysis before performing the work."
-                    ),
-                    (
-                        "Map state and local requirements to the warehouse, service activities, "
-                        "buyer location, and device type. Give special attention to radiation-producing "
-                        "equipment, prescription restrictions, and occupational exposure; keep authority "
-                        "citations and verification dates in the operating file."
-                    ),
-                    (
-                        "Review purchase, sale, service, transport, and data-handling agreements as "
-                        "a connected chain. Ensure title, representations, inspection rights, acceptance, "
-                        "warranty scope, software rights, loss allocation, and record access agree "
-                        "with the actual workflow and insurance coverage."
-                    ),
-                    (
-                        "Audit every outreach channel and product claim before campaign activation. "
-                        "Use truthful condition descriptions, evidence-backed technical statements, "
-                        "applicable commercial-email and calling controls, and suppression records; "
-                        "never turn clinical claims or regulatory status into unsupported sales language."
-                    ),
-                ],
-                "fields": [
-                    field(
-                        "FDA device and operator-role map",
-                        "textarea",
-                        "Identify device classification, product code, intended use, prescription status, and operator role. Record the authoritative source and determine which establishment, listing, labeling, import, or other requirements actually apply to the proposed activities.",
-                        "For the selected human-use ultrasound system, verify classification and product code in FDA records and assess 21 CFR Parts 801 and 807. Document domestic resale separately from importing or manufacturing. Do not advertise establishment registration as FDA approval or assume veterinary labeling resolves a human-use device's obligations.",
-                    ),
-                    field(
-                        "Servicing versus remanufacturing analysis",
-                        "textarea",
-                        "Describe each planned intervention and compare its effects with FDA's servicing and remanufacturing framework. Assign a reviewer to determine applicable manufacturer obligations, including quality-system requirements, before changes to intended use or significant performance specifications proceed.",
-                        "Replacing a failed fan to restore documented specifications enters the servicing analysis; changing output parameters or intended use requires deeper review. Consult FDA's May 2024 remanufacturing guidance. If activities constitute manufacturing subject to the rules, assess registration, listing, premarket duties, and the QMSR under 21 CFR Part 820.",
-                    ),
-                    field(
-                        "State licensing and radiation requirements",
-                        "textarea",
-                        "Create a jurisdiction-specific list of licenses, registrations, permits, and installation duties for the actual catalog and locations. Distinguish ordinary business registration from device-specific requirements, and identify who verifies changes before entering a new state.",
-                        "Begin with non-ionizing ultrasound and exclude X-ray systems from the first catalog. Before adding California radiographic equipment, review California Health and Safety Code sections 114960–115273 and applicable Title 17 radiation rules with the state program. Assign separate verification of equipment registration, installer duties, and local business requirements.",
-                    ),
-                    field(
-                        "HIPAA role and data-handling agreement",
-                        "textarea",
-                        "Determine whether the transaction involves protected health information and whether the operator acts as a business associate. Define permitted access, agreement requirements, subcontractor controls, incident response, and sanitization evidence without assuming all equipment dealers automatically share one status.",
-                        "If the dealer handles stored patient images on behalf of a covered clinic, assess business-associate status under 45 CFR 160.103 and agreement duties under 45 CFR 164.502(e) and 164.504(e). Prefer seller sanitization before transfer; incidental resale possession never authorizes browsing patient records.",
-                    ),
-                    field(
-                        "Workplace exposure and transport controls",
-                        "textarea",
-                        "Identify employee exposure risks, required training, protective practices, waste handling, and transport restrictions. Connect concrete duties to applicable standards and separate ordinary clean equipment freight from regulated materials requiring specialist classification or handling.",
-                        "Assess reasonably anticipated occupational exposure under OSHA's Bloodborne Pathogens Standard, 29 CFR 1910.1030, and chemical communication under 29 CFR 1910.1200. Train receiving staff before handling suspect equipment. Units containing regulated batteries or hazardous materials receive a separate transport assessment under applicable 49 CFR requirements.",
-                    ),
-                    field(
-                        "Purchase contract and title protections",
-                        "textarea",
-                        "Draft the operative acquisition terms covering identity, ownership, liens, inspection access, condition disclosures, data removal, and remedies. Explain how documentary verification supports contractual promises, particularly when equipment comes through brokers or institutional liquidation channels.",
-                        "The purchase schedule identifies US-022-017, both probes, and the $14,000 price. Seller represents authority to transfer and discloses liens, recalls, leases, and known defects. Counsel reviews title and warranty language against the state's enacted UCC sections 2-312 and 2-316; signed promises do not replace lien-release evidence.",
-                    ),
-                    field(
-                        "Sales acceptance and warranty allocation",
-                        "textarea",
-                        "Specify sold condition, included accessories, acceptance tests, payment milestones, limited warranty scope, exclusions, returns, and service response. Ensure the language matches technical evidence and insurance rather than relying on broad condition labels to resolve every dispute.",
-                        "Quote the released configuration at $25,000 with listed probes, installation checks, thirty-day payment terms, and a ninety-day parts-and-labor warranty for identified components. Define misuse exclusions and return authorization clearly. Counsel evaluates the state's UCC sections 2-313 through 2-316 and any limits on disclaimers or remedies.",
-                    ),
-                    field(
-                        "Complaint reporting and recall traceability",
-                        "textarea",
-                        "Determine reporting, corrections, removals, and recall responsibilities from the operator's actual regulatory role. Define a serial-level customer contact process, retained evidence, escalation deadlines, and who evaluates whether an incident triggers mandatory external action.",
-                        "Maintain purchaser, serial, installation, and service contacts for every sale. The regulatory reviewer assesses 21 CFR Part 803 duties for applicable manufacturers, importers, or user facilities and Part 806 duties for applicable manufacturers or importers. Reseller status alone does not establish identical obligations; every serious complaint still receives prompt escalation.",
-                    ),
-                    field(
-                        "Commercial outreach and technical claims",
-                        "textarea",
-                        "Review email, telephone, messaging, and listing practices against applicable channel rules. Record opt-out handling, claim substantiation, sender identity, and buyer targeting so the campaign sells documented equipment capability rather than unsupported clinical or regulatory assertions.",
-                        "Commercial email uses accurate headers, a valid postal address, and working opt-out handling under 15 U.S.C. 7704. Calling and texting receive a separate 47 U.S.C. 227 and 47 CFR 64.1200 review. Listings describe tested configurations and condition, never unsupported FDA endorsement or guaranteed clinical outcomes.",
-                    ),
-                    field(
-                        "Insurance, records, and exception ownership",
-                        "textarea",
-                        "Record insurance coverage, relevant exclusions, retention responsibilities, renewal dates, and unresolved statutory or contractual issues. Assign each exception an owner and a concrete restriction on buying, servicing, marketing, or shipping affected devices.",
-                        "Ask the broker to confirm product-liability, completed-operations, cargo, and cyber coverage for the actual resale and service activities, including contractors. Maintain the serial record under a documented retention schedule. An exclusion for aesthetic lasers keeps lasers outside the catalog until coverage and operational requirements are resolved.",
-                    ),
-                ],
-                "completion_gate": (
-                    "The operator records a reviewed role-and-jurisdiction map, applicable authority "
-                    "citations, contract versions, insurance evidence, privacy arrangements, outreach "
-                    "controls, and named exception owners; affected activities remain restricted until "
-                    "their specific requirements are satisfied."
-                ),
-            },
-            {
-                "worksheet_id": "ws-05",
-                "number": 5,
-                "title": "Automation, Growth Flywheel & Risk Fallback Tracker",
-                "purpose": (
-                    "Automate inventory visibility and service-history retrieval without delegating technical "
-                    "judgment to software. Connect verified stock, accurate listings, qualified demand, "
-                    "and complaint feedback while defining manual recovery paths for integration failures, "
-                    "incorrect records, obsolescence signals, and unsellable inventory."
-                ),
-                "chapter_ref": "Q6, Q10",
-                "instructions": [
-                    (
-                        "Choose one inventory source of truth and a unique serial-linked asset "
-                        "identifier. Define required fields, permitted status transitions, evidence "
-                        "locations, and accountable owners before connecting the inventory system "
-                        "to accounting, customer management, or public listing tools."
-                    ),
-                    (
-                        "Index service documents using controlled metadata and access permissions. "
-                        "Automated extraction may suggest dates, parts, or model references, but "
-                        "a qualified reviewer must confirm consequential findings against the "
-                        "original report before they affect technical release."
-                    ),
-                    (
-                        "Publish only commercially and technically released inventory. Link every "
-                        "public specification, accessory list, condition statement, and warranty "
-                        "description to reviewed source records; maintain a rapid withdrawal "
-                        "process when a unit is sold, held, or reclassified."
-                    ),
-                    (
-                        "Build outreach around verified buyer needs and serviceable inventory "
-                        "rather than bulk message volume. Measure qualified conversations, "
-                        "configuration matches, accepted quotations, collections, and referrals "
-                        "while recording suppression requests and the cost of acquisition."
-                    ),
-                    (
-                        "Test failures deliberately using synthetic records: duplicate serials, "
-                        "stale listings, inaccessible documents, accounting sync errors, and "
-                        "unsupported equipment. Assign a manual fallback and recovery owner "
-                        "for each incident so automation cannot conceal unsafe or unprofitable work."
-                    ),
-                ],
-                "fields": [
-                    field(
-                        "Inventory source of truth and state model",
-                        "textarea",
-                        "Select the inventory system, stable asset key, required fields, and authorized state transitions. Distinguish ownership, location, technical release, listing availability, reservation, sale, and collection so a single status cannot obscure incompatible business facts.",
-                        "Use Airtable for serial-linked inventory and QuickBooks Online for accounting, with US-022-017 as the shared asset key. Track custody, technical state, commercial state, and payment state separately. A buyer reservation cannot overwrite a quarantine flag, and payment receipt cannot automatically authorize technical release.",
-                    ),
-                    field(
-                        "Service-history indexing and provenance",
-                        "textarea",
-                        "Define document categories, naming, extracted metadata, reviewer checks, and original-source links. Explain how indexing improves retrieval while preventing uncertain machine extraction, mismatched serials, or stale manuals from becoming authoritative service instructions.",
-                        "Store purchase, decontamination, sanitization, test, repair, and warranty documents in restricted folders linked to the asset record. An OCR workflow proposes service dates and part numbers. The biomed reviewer confirms serial identity and manual revision before accepting indexed results; original signed reports remain the controlling evidence.",
-                    ),
-                    field(
-                        "Integrations and reconciliation controls",
-                        "textarea",
-                        "Specify the events exchanged among inventory, accounting, customer management, and listing systems. Include duplicate prevention, retry handling, failure alerts, and reconciliation so a dropped or repeated event cannot create fictitious revenue or duplicate inventory.",
-                        "A reviewed sale event sends one invoice request to QuickBooks Online using an asset-and-order idempotency key. Retry failures enter an exception queue instead of creating another invoice. Each evening, compare sold assets, invoices, deposits, and collections; the bookkeeper resolves differences before the next management report.",
-                    ),
-                    field(
-                        "Access, backups, and sensitive-data exclusion",
-                        "textarea",
-                        "Define staff permissions, multifactor authentication, backup recovery, audit access, and prohibited data categories. Keep patient information outside resale tools and explain how contractors receive only the records necessary for their authorized work.",
-                        "Sales staff see released specifications and sanitized service summaries, while the biomed contractor receives the assigned asset folder. Enable multifactor authentication and export encrypted weekly backups. Patient images and identifiers never enter the CRM. Test restoration monthly with synthetic asset records and document the recovery result.",
-                    ),
-                    field(
-                        "Verified listing publication workflow",
-                        "textarea",
-                        "Describe the record checks required before listings publish or update. Connect technical claims, price, accessories, availability, and warranty terms to approved evidence, and specify withdrawal timing when inventory status or safety information changes.",
-                        "Publish the $25,000 ultrasound only after technical release, license confirmation, accessory reconciliation, and sales-description review. Show actual photographs without patient identifiers. A hold event immediately queues listing withdrawal, with a fifteen-minute operator check to confirm removal from the website and any external marketplace.",
-                    ),
-                    field(
-                        "Buyer segmentation and lawful outreach cadence",
-                        "textarea",
-                        "Define buyer segments, evidence of equipment need, contact provenance, channel controls, and a practical follow-up sequence. Measure relevant conversations instead of raw contact counts, and explain how suppression requests propagate across every sending system.",
-                        "Build a list of forty outpatient practices from public business sources and document model-fit hypotheses. Send individualized equipment-availability emails through HubSpot with required sender details and opt-out handling. Follow up twice over fourteen days unless suppressed; calling or texting starts only after the separate channel review.",
-                    ),
-                    field(
-                        "Growth funnel and acquisition economics",
-                        "textarea",
-                        "Set measurable stages from qualified prospect to collected sale and calculate selling cost per completed transaction. Separate pilot targets from canonical annual revenue, and include staff or agency effort rather than treating outreach software as the entire acquisition cost.",
-                        "A planning funnel uses 120 researched accounts, 24 conversations, eight qualified configuration requests, four quotations, and two collected sales. A fully allocated $400 campaign cost implies $200 per sale if both close. Across 41 annual sales, $8,200 fits within the base $9,000 selling budget.",
-                    ),
-                    field(
-                        "Service feedback and referral flywheel",
-                        "textarea",
-                        "Explain how acceptance checks, warranty contacts, and service outcomes improve sourcing, listings, and buyer referrals. Define the evidence required before repeating a supplier purchase or making a quality claim based on earlier transactions.",
-                        "Contact each buyer seven and thirty days after acceptance to capture configuration satisfaction and service issues. A probe-failure pattern across two units triggers supplier review and tighter incoming tests. Request introductions only after issues are resolved; publish buyer statements only with permission and without patient information.",
-                    ),
-                    field(
-                        "Obsolescence and unsellable-stock triggers",
-                        "textarea",
-                        "Set aging, support-life, repair-cost, and demand triggers that force a written disposition decision. Assign owners and price floors, and distinguish a management liquidation decision from the accounting assessment of inventory carrying value.",
-                        "At sixty days without a qualified quotation, recheck price and demand. At ninety days, obtain two wholesale bids. A supported $15,000 bid less $1,000 selling freight yields $14,000 cash; against $16,000 acquisition-plus-refurbishment cost, assess a $2,000 shortfall and applicable inventory valuation treatment.",
-                    ),
-                    field(
-                        "Automation failure and manual recovery",
-                        "textarea",
-                        "List the highest-consequence automation failures, detection method, immediate containment, manual operating method, and recovery test. Require reconciliation before restarting integrations so restored software does not replay stale orders or republish held devices.",
-                        "If inventory synchronization fails, freeze automated listings and purchases, export the last verified asset register, and maintain a signed movement log. The operations owner reconciles physical stock and open orders before restart. Replay only reviewed events; a test record must confirm that quarantine still prevents publication.",
-                    ),
-                ],
-                "completion_gate": (
-                    "The operator demonstrates one complete synthetic asset flow, duplicate-event "
-                    "protection, held-stock withdrawal, suppression propagation, backup restoration, "
-                    "and manual recovery; technical release remains a qualified human decision."
-                ),
-            },
-            {
-                "worksheet_id": "ws-06",
-                "number": 6,
-                "title": "30-Day Launch Sprint, Pod KPI Scorecard & Exit-Readiness Ledger",
-                "purpose": (
-                    "Turn the operating design into a sequenced first-month launch without pretending "
-                    "that equipment sourcing and sales close immediately. Assign the small-team pod, "
-                    "track evidence and cash discipline, and build transferable records that support "
-                    "repeatable operations, lender review, and eventual ownership transition."
-                ),
-                "chapter_ref": "Q11, Q12",
-                "instructions": [
-                    (
-                        "Plan thirty days of setup, qualification, and controlled pipeline development "
-                        "against the canonical three-to-nine-month first-deal horizon. Define completed "
-                        "evidence and tested processes as launch outputs; do not manufacture booked "
-                        "revenue to make the sprint appear successful."
-                    ),
-                    (
-                        "Assign the two full-time roles and four contractor relationships required "
-                        "by the base case. Document responsibilities, availability, compensation "
-                        "assumptions, and backup coverage; contractor headcount measures people, "
-                        "not a promise of four additional full-time work schedules."
-                    ),
-                    (
-                        "Hold a weekly operating review covering cash, inventory age, technical "
-                        "exceptions, buyer demand, claims, and evidence completeness. Compare "
-                        "actual results with the model while preserving the canonical scenarios "
-                        "as reference cases rather than silently rewriting them."
-                    ),
-                    (
-                        "Authorize acquisition spending only after underwriting and liquidity checks "
-                        "are complete. Preserve protected service cash and record the reason "
-                        "for every rejected purchase; disciplined avoidance of unsellable inventory "
-                        "is a measurable operating result during launch."
-                    ),
-                    (
-                        "Assemble an ownership-transition ledger from the first transaction. "
-                        "Separate transferable contracts, licenses, records, and operating knowledge "
-                        "from owner-dependent relationships, then test whether another authorized "
-                        "operator could reproduce the workflow without undocumented judgment or inaccessible files."
-                    ),
-                ],
-                "fields": [
-                    field(
-                        "Days 1–7: market and control foundation",
-                        "textarea",
-                        "Schedule the first week's tangible deliverables, accountable people, and completion evidence. Prioritize niche definition, buyer interviews, entity and insurance review, and operating records before purchasing equipment or committing to an expensive warehouse arrangement.",
-                        "By day seven, the commercial lead completes eight buyer interviews and a two-model catalog boundary. The operations lead establishes the asset register, obtains two insurance quotations, and requests service-partner credentials. Deliver a written demand summary and controls checklist; no inventory payment is authorized during this foundation week.",
-                    ),
-                    field(
-                        "Days 8–14: supplier and service qualification",
-                        "textarea",
-                        "Define the second week's sourcing, title, technical, and contracting work. Identify evidence that makes a seller or service provider usable, and specify which missing documents keep a prospective acquisition outside the funded pipeline.",
-                        "Qualify three institutional sellers and two biomed providers. Obtain sample service reports, calibration records, insurance evidence, and written pricing for inspection and sanitization. Review one sample purchase agreement and title-search workflow. A seller lacking serial-specific ownership support remains a prospect, not an approved source for the $14,000 bid.",
-                    ),
-                    field(
-                        "Days 15–21: rehearsals and buyer matching",
-                        "textarea",
-                        "Plan a controlled rehearsal of receiving, quarantine, documentation, technical review, listing, and accounting using synthetic records. Connect potential equipment configurations to qualified buyers without presenting unowned or unreleased equipment as immediately available inventory.",
-                        "Run a synthetic US-TEST-022 asset through quarantine, failed inspection, repair review, release, quotation, invoice, and collection reconciliation. Test a duplicate invoice event and a listing withdrawal. Separately match three buyer requests to seller configurations, labeling availability as conditional until ownership, inspection, and release are complete.",
-                    ),
-                    field(
-                        "Days 22–30: launch review and acquisition readiness",
-                        "textarea",
-                        "Specify the final week's evidence review, cash authorization, unresolved blockers, and next-month pipeline. Distinguish readiness to pursue a first transaction from a completed deal, respecting the longer expected sourcing and selling cycle.",
-                        "At day thirty, present one fully underwritten target, eight qualified inventory slots in the cash model, two contracted service alternatives, and a tested release workflow. Spend only if evidence supports the specific purchase. The expected first deal remains three to nine months; readiness does not become recognized revenue.",
-                    ),
-                    field(
-                        "Pod responsibilities and backup coverage",
-                        "textarea",
-                        "Assign full-time and contractor responsibilities, escalation authority, documented handoffs, and backup arrangements. Connect staffing to the canonical scenarios and identify any service capacity, compensation, or skill limitations that could constrain actual throughput.",
-                        "Base staffing uses two full-time people: commercial lead and operations lead. Four contractors cover biomed service, freight and installation, bookkeeping, and regulatory or contract review. Scaled staffing adds one full-time inventory coordinator and one service contractor, totaling eight people: 3 FT plus 5 contractors.",
-                    ),
-                    field(
-                        "Weekly operating KPI definitions",
-                        "textarea",
-                        "Define each KPI with numerator, denominator, source record, review frequency, and accountable owner. Include cash and safety-oriented measures alongside sales, and prevent targets from encouraging shipment of incomplete devices or concealment of aging inventory.",
-                        "Review released units divided by inspected units, quoted qualified buyers divided by qualified conversations, average acquisition-to-collection days, and assets older than ninety days divided by owned assets. Require 100% serial-level evidence completeness before shipment. The operations lead reports holds separately so inspection failures cannot disappear from the denominator.",
-                    ),
-                    field(
-                        "Canonical performance and variance ledger",
-                        "textarea",
-                        "Record canonical annual targets alongside actual period performance and explain variances through units, price, costs, and timing. Avoid presenting annual averages as evenly distributed monthly outcomes in a lumpy equipment business.",
-                        "Base reference is $1,025,000 annual revenue and $164,000 owner net; arithmetic monthly averages are $85,416.67 and $13,666.67. Scaled reference is $1,800,000 and $396,000; Conservative is $250,000 and $25,000. Review actual collected sales and accrued costs separately instead of expecting identical monthly unit counts.",
-                    ),
-                    field(
-                        "Cash floor, purchase stop, and recovery plan",
-                        "textarea",
-                        "Set protected liquidity, maximum concurrent exposure, and events that suspend acquisitions. Define who may resume buying and what verified improvement is required, especially when collections slip, service claims rise, or inventory becomes difficult to sell.",
-                        "Protect $8,000 defect cash, $30,750 overhead runway, and $5,250 contingency within the $180,000 startup plan. Stop new commitments if the 65-day cash cycle stretches toward eighty days without the additional $18,000 ninth-slot funding. Resume only after collected cash or revised purchase pacing restores coverage.",
-                    ),
-                    field(
-                        "Exit-readiness and transferable evidence",
-                        "textarea",
-                        "Inventory the records, contracts, systems, service relationships, and permissions a successor would need. Identify transfer restrictions and owner-dependent knowledge, while preserving confidentiality and preventing patient data from entering a buyer diligence package.",
-                        "Maintain serial-level inventory valuation, supplier agreements, service contracts, warranty exposure, insurance history, monthly reconciliations, and documented workflows. Flag software and customer contracts requiring transfer consent. A redacted diligence folder contains no patient records; the successor receives authorized operating access only under the agreed transaction and access plan.",
-                    ),
-                    field(
-                        "Day-thirty decision and next ninety days",
-                        "textarea",
-                        "Record the launch decision, remaining blockers, funded actions, review dates, and criteria for expanding the catalog or team. Keep growth contingent on demonstrated serviceability, demand, collections, and evidence quality rather than enthusiasm or inventory volume.",
-                        "Proceed with one supported ultrasound family and the qualified seller pipeline; defer surgical energy devices and aesthetic lasers. Over the next ninety days, pursue the first fully documented acquisition, maintain three qualified buyer opportunities, and verify cash weekly. Expand only after successful acceptance, collection, and observed service performance.",
-                    ),
-                ],
-                "completion_gate": (
-                    "At day thirty, both full-time role owners sign the evidence-based launch review, "
-                    "confirm funded inventory limits and protected liquidity, assign every remaining "
-                    "blocker, and approve a dated ninety-day plan consistent with the three-to-nine-month "
-                    "first-deal horizon and canonical staffing."
-                ),
-            },
-        ],
-    }
+    return {'workbook_id': 'wb-022-medical-equipment-resale',
+ 'volume_id': 'vol-022-medical-equipment-resale',
+ 'title': 'Medical Equipment Resale — Practitioner Testimony Operator Workbook',
+ 'subtitle': 'Field worksheets for buying surplus hospital gear cheap, proving it safe on the bench, and '
+             'keeping every resale, rental, and refurbishment inside FDA rules, built from the numbers and '
+             'warnings of refurbishers, biomeds, auction houses, and regulatory practitioners',
+ 'worksheets': [{'worksheet_id': 'ws-01',
+                 'number': 1,
+                 'title': 'The Resale Engine: Capital, Sourcing, Listings, Freight, and Export Targets',
+                 'purpose': 'Lock in the core resale engine practitioners describe: buy surplus hospital '
+                            'gear cheap, document and biomed-check it, then resell or rerent it. This '
+                            'worksheet forces decisions on launch capital, surplus channels, high-demand '
+                            'items, inspection standards, listing disclosures, rental cycles, first hires, '
+                            'refurbisher vetting, freight insurance, and the first cross-border buyer '
+                            'profile.',
+                 'chapter_ref': 'Q1-Q2',
+                 'instructions': ['Fill every field with your own numbers, names, and dates, using the '
+                                  'cited practitioner example only as a benchmark to measure your plan '
+                                  'against.',
+                                  'Write capital, volume, and price figures as specific dollar amounts or '
+                                  'unit counts, never as ranges you have not checked against a real quote '
+                                  'or invoice.',
+                                  'Where a field asks for a rule, phrase it as a hard yes-or-no test a new '
+                                  'employee could apply on the warehouse floor without asking you.',
+                                  'Treat the biomed check, listing disclosure, refurbisher vetting, and '
+                                  'freight insurance fields as gates: no unit ships until each one has a '
+                                  'written answer.',
+                                  'Revisit the sourcing and export fields every quarter, comparing your '
+                                  'actual inventory turn and buyer response against the benchmarks you '
+                                  'recorded here.'],
+                 'fields': [{'name': 'capital_plan',
+                             'type': 'textarea',
+                             'prompt': 'Write down the liquid capital you can commit today, then decide '
+                                       'whether you are launching a lean resale operation or a licensed '
+                                       'Medicare-billing rental company, and list which licenses, '
+                                       'warehouse space, and first hire each path would demand from you.',
+                             'example': 'The Earn Your Leisure founder started with $700,000 liquid and '
+                                        'needed 6-7 licenses per location to bill Medicare [Earn Your '
+                                        'Leisure — hQY0qIkQ-xY @ 00:02:44]. A Florida starter pitch claims '
+                                        'a $4,000 lean launch. My plan: start lean with $4,000 reselling '
+                                        'surplus gear, and revisit the Medicare rental path once cash '
+                                        'reserves can support licensing.'},
+                            {'name': 'surplus_sources',
+                             'type': 'textarea',
+                             'prompt': 'List every surplus channel you will work for inventory, including '
+                                       'hospital liquidations, surplus auctions, manufacturer trade-in '
+                                       'programs, and reseller pickups, and note the expected monthly '
+                                       'volume and turn rate you would need from each channel.',
+                             'example': 'Centurion Service Group moves about 6,000 pieces a month for well '
+                                        'over 1,000 hospitals, surgery centers and manufacturers, and '
+                                        'turns its entire inventory every 5 weeks [Centurion Service '
+                                        'Group: A TRIMEDX Company — dUZz08G_Dzc @ 00:00:21]. My benchmark: '
+                                        'bid on regional hospital surplus lots weekly and target a full '
+                                        'inventory turn inside two months while I build volume.'},
+                            {'name': 'high_demand_skus',
+                             'type': 'text',
+                             'prompt': 'Name the specific high-demand items you will hunt first, explain '
+                                       'why buyers want them, and pair each with the accessories that make '
+                                       'it easier to sell, such as lifts that fit underneath beds or '
+                                       'matching components buyers request together.',
+                             'example': 'Stryker bassinets are called high demand, progressive beds hard '
+                                        'to find, and GlideScope systems always in demand [Used Medical '
+                                        'Equipment — 0jN0a_8CpgI @ 00:01:08]. Low-base Hoyer lifts like '
+                                        'the Linux and Leos suit progressive hospital beds because they go '
+                                        'low enough to fit underneath [Used Medical Equipment — '
+                                        '0jN0a_8CpgI @ 00:01:57]. I will bundle any progressive bed with a '
+                                        'low-base lift.'},
+                            {'name': 'biomed_check',
+                             'type': 'textarea',
+                             'prompt': 'Describe the exact inspection each unit receives before it ships, '
+                                       'who performs the biomed check, and how you label anything that has '
+                                       'not been fully verified, so no item leaves your floor on a '
+                                       'power-on test alone.',
+                             'example': 'Bill Whittemore warns that sellers who see the lights come on, '
+                                        'call it good and ship it are hurting the industry [Bill '
+                                        'Whittemore — zLW0PtGvqQE @ 00:11:23]. His rule is to recheck with '
+                                        'a biomed team or sell explicitly as is [Bill Whittemore — '
+                                        'zLW0PtGvqQE @ 00:12:05]. My standard: every unit gets a biomed '
+                                        'recheck or an as-is tag.'},
+                            {'name': 'listing_standards',
+                             'type': 'textarea',
+                             'prompt': 'Draft the condition disclosure template you will attach to every '
+                                       'online listing, including the known limits of the item, the photo '
+                                       'angles required, and the wording that sets buyer expectations '
+                                       'before a return request ever arrives.',
+                             'example': 'Jon Sheppard Sells calls medical items the biggest return in '
+                                        'profits of anything picked up over years of reselling [Jon '
+                                        'Sheppard Sells — 8meyld3BWGg @ 00:00:19], yet warns returns still '
+                                        'hit sellers who claimed nothing, so condition limits and clear '
+                                        'pictures go into the listing before it goes live [Jon Sheppard '
+                                        'Sells — 8meyld3BWGg @ 00:03:44]. My template opens with known '
+                                        'flaws.'},
+                            {'name': 'rental_model',
+                             'type': 'textarea',
+                             'prompt': 'If you plan to rent rather than sell, map the rental cycle for '
+                                       'your core equipment, the pickup trigger when a patient no longer '
+                                       'needs it, and the steps required before the same unit is rerented '
+                                       'to the next patient.',
+                             'example': 'The Earn Your Leisure founder describes a 13-month rental for '
+                                        'most equipment; if a patient passes away, goes into the hospital '
+                                        'or no longer needs it, the unit is picked up and rerented [Earn '
+                                        'Your Leisure — hQY0qIkQ-xY @ 00:08:26]. Every Medicare-primary '
+                                        'patient is run through the one-per-five-years wheelchair rule '
+                                        'before delivery [Earn Your Leisure — hQY0qIkQ-xY @ 00:07:57].'},
+                            {'name': 'first_hire_and_stockpile',
+                             'type': 'text',
+                             'prompt': 'Identify your first hire and the referral relationships that '
+                                       'person brings, then estimate the orders those relationships could '
+                                       'send your way and describe the stockpile you would build ahead of '
+                                       'a supply disruption to fill them.',
+                             'example': 'The Earn Your Leisure founder made a salesperson the first hire, '
+                                        'the son of a rehab director overseeing three rehab centers [Earn '
+                                        'Your Leisure — hQY0qIkQ-xY @ 00:09:26]. When COVID hit, the '
+                                        'founder filled a roughly 7,000 square foot ranch warehouse floor '
+                                        'to roof and avoided most supply chain issues [Earn Your Leisure — '
+                                        'hQY0qIkQ-xY @ 00:10:17].'},
+                            {'name': 'refurbisher_vetting',
+                             'type': 'textarea',
+                             'prompt': 'List the questions you will put to every refurbishment provider '
+                                       'before payment, covering HIPAA data removal, internal '
+                                       'decontamination, pre-ship quality results, and proof that the '
+                                       "system runs within the original manufacturer's specifications on "
+                                       'an unedited recording.',
+                             'example': 'Block Imaging says to get the HIPAA data-removal step, internal '
+                                        'decontamination and pre-ship QA results confirmed before payment '
+                                        '[Block Imaging — xvO7-DA6X2w @ 00:01:37], and to demand an '
+                                        'unedited functionality video proving the system runs within '
+                                        'original manufacturer specifications [Block Imaging — xvO7-DA6X2w '
+                                        '@ 00:03:05]. DES Technologies adds audit reports so data erasure '
+                                        'is verifiable [DES Technologies — xzb3hv6fB4g @ 00:01:19].'},
+                            {'name': 'freight_plan',
+                             'type': 'text',
+                             'prompt': 'Outline how you will move high-value equipment, including the '
+                                       "carrier's medical freight history, whether trucks offer air-ride "
+                                       'and climate control, and how you confirm the insurance coverage '
+                                       'matches the freight value before the pickup is scheduled.',
+                             'example': 'Ntwdequiptrans says to confirm the carrier has moved medical '
+                                        'loads before and that its insurance lines up with the freight '
+                                        'value before the wheels start turning, especially on six-figure '
+                                        'machines [Ntwdequiptrans — LXOka69hkxs @ 00:01:55]. My rule: no '
+                                        "pickup on any imaging or lab system until the carrier's insurance "
+                                        'coverage meets my invoice value.'},
+                            {'name': 'export_targets',
+                             'type': 'textarea',
+                             'prompt': 'Choose your first cross-border market and define the buyer profile '
+                                       'you will target there, including facility size, location, and the '
+                                       'equipment tier those buyers will accept, plus how you will handle '
+                                       'leads in their language.',
+                             'example': 'Global Health Intelligence filtered 195 targets from 1,800-plus '
+                                        'Brazilian private institutions at 100-plus beds [Global Health '
+                                        'Intelligence — FzWeG7sw7qk @ 00:01:46]. Healthcare Direct USA '
+                                        'says tier three gear no longer moves into Latin America '
+                                        '[Healthcare Direct USA — 09hrQ3SQK3E @ 00:10:03] and routes '
+                                        'unanswered messages to email after about 15 minutes, sending '
+                                        'Spanish-speaking buyers to Spanish-speaking reps [Healthcare '
+                                        'Direct USA — 09hrQ3SQK3E @ 00:20:15].'}],
+                 'completion_gate': 'Worksheet 1 is complete only when every field names a specific dollar '
+                                    'figure, channel, or rule; the biomed check field forbids shipping on '
+                                    'a power-on test alone; the refurbisher field requires HIPAA data '
+                                    'removal, decontamination, and pre-ship QA before payment; and the '
+                                    'freight field ties carrier insurance to invoice value.'},
+                {'worksheet_id': 'ws-02',
+                 'number': 2,
+                 'title': 'The Service Bench: Rates, Memberships, Parts Vetting, Safety Testing, and Stop '
+                          'Rules',
+                 'purpose': 'Turn the third-party biomed playbook into a working service operation. '
+                            'Practitioners say the edge comes from people, parts, and paperwork, and that '
+                            'every bench reading starts with a proven analyzer. This worksheet sets rate '
+                            'cards, recurring memberships, contractor insurance, parts supplier vetting, '
+                            'service report fields, bidding floors, and the electrical safety sequence and '
+                            'stop rules every technician follows.',
+                 'chapter_ref': 'Q3-Q4',
+                 'instructions': ['Price every service line from your real costs of labor, parts, travel, '
+                                  'and shipping before comparing your numbers to the practitioner '
+                                  'benchmarks cited.',
+                                  'Write each vetting and insurance check as a document you can file, so '
+                                  'an auditor or customer can see proof rather than a verbal promise.',
+                                  'Record electrical safety limits as exact numbers with units, such as '
+                                  'microamps, ohms, megohms, and amps, and never as general pass or fail '
+                                  'notes.',
+                                  'Run the analyzer verification steps before filling in the test sequence '
+                                  'field, and record the actual stud readings you got on your own meter.',
+                                  'Treat the stop rules as binding: any condition listed there halts the '
+                                  'job until recalibration, service intervention, or a root-cause repair '
+                                  'is documented.'],
+                 'fields': [{'name': 'service_rate_card',
+                             'type': 'text',
+                             'prompt': 'Build your service rate card line by line, separating labor, '
+                                       'parts, travel, and shipping, and set your regular hourly rate, '
+                                       'after-hours rate, and the travel threshold beyond which a customer '
+                                       'pays an added trip charge.',
+                             'example': 'Jason of Bright Idea Dental Repair bills four lines, labor, '
+                                        'parts, travel and shipping, at $175 an hour regular, $225 after '
+                                        'hours, and $75 travel beyond 30 minutes [Better Biomed Channel — '
+                                        'YXLWY7VHfxM @ 00:35:36]. He launched on $8,000 of test gear and '
+                                        'first priced at $150 an hour before raising to $175.'},
+                            {'name': 'pm_membership',
+                             'type': 'textarea',
+                             'prompt': 'Design a recurring preventive maintenance membership for your '
+                                       'clinic customers, stating the monthly price, what each visit '
+                                       'includes, the revenue target per technician, and the part-time '
+                                       'role you would add so the shop can run without you.',
+                             'example': 'Jason sells $200-a-month PM memberships and targets $4k a month '
+                                        'per tech. To break the ceiling near $300k a year, the advice is '
+                                        'to build the shop so it runs without the owner, adding a '
+                                        'part-time autoclave bench tech [Better Biomed Channel — '
+                                        'YXLWY7VHfxM @ 00:16:13]. My target: twenty members before hiring '
+                                        'that bench tech.'},
+                            {'name': 'contractor_insurance',
+                             'type': 'text',
+                             'prompt': 'List the insurance and credential checks every subcontracted or '
+                                       '1099 technician must clear before going on site, and describe how '
+                                       'you will document each check so a water-damage or liability claim '
+                                       'never lands on your company alone.',
+                             'example': 'Before any 1099 contractor goes on site, confirm they carry their '
+                                        'own insurance, because water-damage liability already makes '
+                                        'dental-service coverage hard to place [Better Biomed Channel — '
+                                        "YXLWY7VHfxM @ 00:18:38]. My checklist: proof of the contractor's "
+                                        'own policy on file, a signed scope of work, and a training record '
+                                        'tied to our servicing procedures.'},
+                            {'name': 'parts_supplier_vetting',
+                             'type': 'textarea',
+                             'prompt': 'Write the vetting checklist you will apply to any remanufactured '
+                                       'board, cable, or probe supplier, covering ISO 13485 scope, record '
+                                       'retention, soldering certification, risk management, certificate '
+                                       'verification, site visits, and references before a single part is '
+                                       'installed.',
+                             'example': 'Summit Imaging says to vet suppliers for full-scope ISO 13485, '
+                                        'not just brokering, plus retained records, IPC soldering '
+                                        'certification and risk management, then verify certificates on '
+                                        'ISO boards and visit the site [TechNation TV — 7d4lxsuW9Xs @ '
+                                        '00:59:23]. Knockoff parts running at 60% of OEM performance '
+                                        'inflate total cost of ownership through downtime, so cheap parts '
+                                        'rarely stay cheap.'},
+                            {'name': 'service_report_fields',
+                             'type': 'textarea',
+                             'prompt': 'Define the fields every service report must capture before a work '
+                                       'order closes, including complaint status, reportability review, '
+                                       'device name, lot number, services performed, the technician, the '
+                                       'date, related test records, and any routing into corrective and '
+                                       'preventive action.',
+                             'example': 'Quality Systems Explained says to review each service report for '
+                                        'complaint status and reportability, capturing device name, lot '
+                                        'number, services done, performer, date and related test records '
+                                        '[Quality Systems Explained — ohnyLE9h6ok @ 00:01:30]. Servicing '
+                                        'personnel must be trained to the servicing procedures and '
+                                        'understand customer requirements [Quality Systems Explained — '
+                                        'ohnyLE9h6ok @ 00:01:10].'},
+                            {'name': 'contract_bidding_floor',
+                             'type': 'text',
+                             'prompt': 'Before bidding against an incumbent service provider, record the '
+                                       'prior contract price, any rival quote, and your true cost to '
+                                       'deliver, then decide the floor below which you will walk away '
+                                       'rather than absorb losses.',
+                             'example': 'Better Biomed Channel warns that a rival quoting about half the '
+                                        'prior price may be padding the books for a sale [Better Biomed '
+                                        'Channel — UQh0OoupetI @ 00:01:21]; they underbid to secure the '
+                                        'contract, which increases their valuation [Better Biomed Channel '
+                                        '— UQh0OoupetI @ 00:01:43]. Contracts priced below cost leave the '
+                                        'eventual owner and the techs absorbing losses.'},
+                            {'name': 'analyzer_verification',
+                             'type': 'text',
+                             'prompt': 'Record how you prove your safety analyzer and test leads before '
+                                       'trusting any reading, including the resistance stud value, the '
+                                       'leakage stud value, the tolerance you accept, and what you do when '
+                                       'a reading drifts high.',
+                             'example': 'Better Biomed Channel verifies meters against a 1 ohm stud and a '
+                                        '100 microamp stud, which should land within about 0.5 microamp '
+                                        '[Better Biomed Channel — HBf8beE8tGc @ 00:00:32]. If the 1 ohm '
+                                        'reading runs high, rotate the clamp to break surface oxidation '
+                                        'and it should stabilize close to 1 ohm [Better Biomed Channel — '
+                                        'HBf8beE8tGc @ 00:00:49].'},
+                            {'name': 'safety_test_sequence',
+                             'type': 'textarea',
+                             'prompt': 'List your fixed electrical safety test sequence in order, from '
+                                       'mains voltage through protective earth, earth leakage, enclosure '
+                                       'leakage, and applied-part leakage, and note the pass limit you '
+                                       'will enforce at every step for each device type.',
+                             'example': "Josh Herzka's R Series defibrillator passed at 129 microamps "
+                                        'earth leakage against a 500 microamp limit [Better Biomed Channel '
+                                        '— Z56Xw5_JbNs @ 00:06:06], with 6.5 microamps single-fault '
+                                        'applied-part leakage against 50. AbishkarTECH reads mains first: '
+                                        'a no-ground fault showed live-to-earth at 53 and neutral-to-earth '
+                                        'at 32 against under five [AbishkarTECH — rqUE2pFiqUI @ '
+                                        '00:00:44].'},
+                            {'name': 'insulation_and_current_draw',
+                             'type': 'text',
+                             'prompt': 'Set your insulation resistance and current draw acceptance rules, '
+                                       'including the test voltage, the megohm value that fails a device, '
+                                       'what an over-range reading means, and how you compare idle draw '
+                                       "against the manufacturer's rating.",
+                             'example': 'On the Fluke ESA620 at 250 V or 500 V DC, below 2 megohms fails, '
+                                        '1.5 megohms fails, and OL over the 100 megohm range is good '
+                                        '[AbishkarTECH — rqUE2pFiqUI @ 00:06:20]. The same analyzer read '
+                                        '0.2 A at idle, which may run higher under load, so cross-check '
+                                        "the manufacturer's rating [AbishkarTECH — rqUE2pFiqUI @ "
+                                        '00:04:56].'},
+                            {'name': 'bench_stop_rules',
+                             'type': 'textarea',
+                             'prompt': 'Write the stop rules for your bench, naming the conditions that '
+                                       'halt a job until recalibration or service intervention, how you '
+                                       'handle a no-power complaint beyond the fuse, and when automation '
+                                       'can replace a manual test.',
+                             'example': 'Better Biomed Channel says never to close a no-power ticket on a '
+                                        'fuse swap alone, because a band-aid fix always comes back [Better '
+                                        'Biomed Channel — 7JgSRU2VyXE @ 00:08:14]. Isiah stops any job '
+                                        'showing out-of-tolerance readings or persistent boot alarms '
+                                        '[MedDeviceEngineerX  | Isiah — bLqvmql3QHs @ 00:05:42]. Jamie '
+                                        'Spragus simulated a full safety test in under two minutes '
+                                        '[TechNation TV — x772T1-4M-Q @ 00:37:50].'}],
+                 'completion_gate': 'Worksheet 2 is complete only when the rate card shows all four '
+                                    'billing lines, every contractor and parts supplier check produces a '
+                                    'filed document, the analyzer verification records actual 1 ohm and '
+                                    '100 microamp stud readings, the safety sequence lists a numeric limit '
+                                    'for each step, and the stop rules forbid closing any no-power ticket '
+                                    'on a fuse swap alone.'},
+                {'worksheet_id': 'ws-03',
+                 'number': 3,
+                 'title': 'The Compliance File: QMSR Readiness, Risk, Suppliers, Product Codes, Fees, and '
+                          'Labels',
+                 'purpose': 'Prepare the regulatory backbone a resale, relabeling, or servicing business '
+                            'needs now that the QMSR governs from February 2, 2026. Practitioners agree '
+                            'that certification buys no inspection exemption, risk is the thread '
+                            'investigators pull, and the three-letter product code decides class, pathway, '
+                            'and cost. This worksheet captures those decisions with dates, fees, and named '
+                            'owners.',
+                 'chapter_ref': 'Q5-Q6',
+                 'instructions': ['Assume every procedure, management review record, and audit record you '
+                                  'write can be read by an investigator, and draft each answer with that '
+                                  'reader in mind.',
+                                  'Record dates, fee amounts, and product codes exactly as they appear on '
+                                  'your own filings and quotes, and note the source beside each figure.',
+                                  'Name one responsible person for every field, so the risk file, supplier '
+                                  'tiers, complaint escalation, and label audit each have a clear owner.',
+                                  'Secure the small business determination number before you buy any '
+                                  '510(k) cover sheet, and record that date in the fee budget field.',
+                                  'Re-open this worksheet after each monthly complaint review and after '
+                                  'any new product code, supplier, or label change enters your operation.'],
+                 'fields': [{'name': 'qmsr_transition_map',
+                             'type': 'textarea',
+                             'prompt': 'Map your quality system against the February 2, 2026 QMSR switch, '
+                                       'noting which procedures still reference the old QSR structure, '
+                                       'where ISO 13485 language now governs, and which FDA add-ons for '
+                                       'UDI, tracking, and corrections remain.',
+                             'example': 'AMORIT EDUCATION marks February 2, 2026 as the hard switch after '
+                                        'a two-year transition from the February 2024 final rule [AMORIT '
+                                        'EDUCATION — PhHUunSO_iQ @ 00:01:02]. Regulatory Compliance '
+                                        'Associates says firms already following ISO 13485 face little '
+                                        'change, while Part 820-only firms face significant change '
+                                        '[Regulatory Compliance Associates — cNSAixRUu9Q @ 00:04:06].'},
+                            {'name': 'coverage_decision',
+                             'type': 'text',
+                             'prompt': 'Decide whether your resale, relabeling, repackaging, or '
+                                       'sterilizing activities pull you under the QMSR, and record the '
+                                       'reasoning, remembering that coverage follows activity and that '
+                                       'holding an ISO or MDSAP certificate earns no inspection exemption.',
+                             'example': 'AMORIT EDUCATION states an MDSAP or ISO certificate gives no pass '
+                                        'on FDA inspections [AMORIT EDUCATION — PhHUunSO_iQ @ 00:02:50]. '
+                                        'NextGenMedTech adds that Parts 800 to 1050 apply, not only Part '
+                                        '820 [NextGenMedTech — sB46aiZG8lw @ 00:25:39]. My note: if I '
+                                        'relabel or repackage refurbished units, I treat the QMSR as '
+                                        'covering that activity.'},
+                            {'name': 'records_language_sweep',
+                             'type': 'textarea',
+                             'prompt': 'Sweep your procedures, management review minutes, internal audits, '
+                                       'and supplier audits for any language you would not want an '
+                                       'investigator to read, then list each document, the risky wording '
+                                       'found, and the corrected replacement text.',
+                             'example': "Medmarc says to sweep procedures for 'do not show to FDA' "
+                                        'language and kill any fewer-CAPA objective, because management '
+                                        'review and audit records are now open to inspection [Medmarc — '
+                                        "L11OFtMOx3E @ 00:21:58]. Every blank or 'N/A' field in complaint "
+                                        'records needs a written justification instead of being left '
+                                        'unexplained [Medmarc — L11OFtMOx3E @ 00:25:44].'},
+                            {'name': 'risk_file_upkeep',
+                             'type': 'textarea',
+                             'prompt': 'Describe how your risk management file stays current, which '
+                                       'complaint trends feed it, how often you update it, and how risk '
+                                       'links your other quality areas together, since investigators now '
+                                       'pull that thread first during a visit.',
+                             'example': 'Matrix One says to confirm the risk management file is current '
+                                        'and reflects the latest complaint trends, because it steers the '
+                                        'visit [Matrix One — b_a74PE0Cn0 @ 00:03:23]. Software Connect '
+                                        'calls risk management the link that ties the various QM areas '
+                                        'together [Software Connect — DWOABbtgSgI @ 00:04:24]. My cadence: '
+                                        'update the file after every monthly complaint review.'},
+                            {'name': 'supplier_risk_tiers',
+                             'type': 'textarea',
+                             'prompt': 'Tier every supplier by risk, separating critical service providers '
+                                       'such as contract sterilizers from off-the-shelf vendors, and set '
+                                       'the oversight level, audit frequency, and evidence you keep for '
+                                       'each tier as the responsible legal manufacturer.',
+                             'example': 'FDA says supplier oversight is tiered by risk, treating a '
+                                        'contract sterilizer differently from an off-the-shelf supplier, '
+                                        'because the legal manufacturer stays responsible for everything '
+                                        '[U.S. Food and Drug Administration — QFNSAlfJaic @ 00:15:43]. My '
+                                        'tiers: sterilizers and refurbishers get annual audits with '
+                                        'retained records; packaging and generic supply vendors get a '
+                                        'documented qualification review.'},
+                            {'name': 'standards_and_tools_budget',
+                             'type': 'text',
+                             'prompt': 'Budget for the standards, software, and habit-building time your '
+                                       'quality system needs, listing where you will buy the standards, '
+                                       'which eQMS option you are weighing and its entry price, and how '
+                                       'long you will monitor new habits.',
+                             'example': 'Henry flags that the free ANSI portal is view-only and that '
+                                        "Estonia's standards are cheaper [Greenlight Guru — yW4-Hn0IXI8 @ "
+                                        '00:44:59]. Matrix Quality starts from 10,000 euros a year and '
+                                        'goes live in 2 to 6 weeks [Matrix One — b_a74PE0Cn0 @ 00:04:06]. '
+                                        'Kellerman monitors about 21 days after retraining staff '
+                                        '[Kellerman Consulting — jUOtQFk5I3Q @ 00:30:08].'},
+                            {'name': 'product_code_register',
+                             'type': 'textarea',
+                             'prompt': 'For every device you resell, relabel, or plan to import, record '
+                                       'the three-letter product code, the resulting device class, the '
+                                       'likely pathway, and any wording on your labels or marketing that '
+                                       'could push a comparison toward De Novo.',
+                             'example': 'Easy Medical Device calls the three-letter product code probably '
+                                        'the single most important piece of information a company needs '
+                                        '[Easy Medical Device — USqn2QdZTCM @ 00:03:25]. leanRAQA warns a '
+                                        'wrong code such as FXX for an antimicrobial mask is refused at '
+                                        'RTA [leanRAQA — EnjRMOB1Uio @ 00:21:00] and advises avoiding '
+                                        "words like 'novel' [leanRAQA — EnjRMOB1Uio @ 00:33:17]."},
+                            {'name': 'fda_fee_and_timeline_budget',
+                             'type': 'textarea',
+                             'prompt': 'Build your FDA fee and timeline budget, listing the 510(k) user '
+                                       'fee at standard and small-business rates, the establishment '
+                                       'registration fee, the realistic elapsed review time, and the date '
+                                       'you will secure a small business determination.',
+                             'example': 'Registrar Corp quotes the 2025 510(k) fee at $24,335 standard '
+                                        'versus $6,084 small business [Registrar Corp — 9Unzt431qg8 @ '
+                                        '01:02:38], and establishment registration hits $11,423 in 2026. '
+                                        'leanRAQA puts the 90-day 510(k) clock at about 200 days actual '
+                                        '[leanRAQA — EnjRMOB1Uio @ 00:44:39]. FDA warns that paying before '
+                                        'the SBD number means no refunds [U.S. Food and Drug '
+                                        'Administration — cjw_q6QL1W4 @ 05:28:15].'},
+                            {'name': 'complaint_escalation',
+                             'type': 'textarea',
+                             'prompt': 'Rewrite your complaint intake procedure so that any event possibly '
+                                       'reportable under Part 803 is escalated immediately, and record who '
+                                       'triages it, how documentation is captured, and how you prove the '
+                                       'five-day report window was protected.',
+                             'example': 'FDA warns that a complaint procedure slower than immediate, such '
+                                        "as a 10-day internal window, can miss Part 803's 5-day report "
+                                        '[U.S. Food and Drug Administration — cjw_q6QL1W4 @ 07:25:57]. NSF '
+                                        'says most FDA deviations come from CAPA and complaint handling '
+                                        '[NSF — gfFy3QwozGE @ 00:35:17], and Invent Healthcare reminds '
+                                        'that if it was not documented it did not occur.'},
+                            {'name': 'label_and_agent_audit',
+                             'type': 'text',
+                             'prompt': 'Audit the labels, boxes, and import paperwork for every incoming '
+                                       'shipment, confirming no FDA logo or printed FDA mark appears, that '
+                                       'your US agent has a real street address, and that automated label '
+                                       'checks get human sampling.',
+                             'example': 'Registrar Corp says to strip the FDA logo and printed FDA from '
+                                        'labels and boxes before shipment to avoid stickering costs, '
+                                        'delays and storage fees [Registrar Corp — 9Unzt431qg8 @ '
+                                        '01:15:55], and a US agent cannot use a PO box [Registrar Corp — '
+                                        '9Unzt431qg8 @ 00:52:04]. Henry wants automated label checks '
+                                        'backed by a statistically significant human sample [Greenlight '
+                                        'Guru — yW4-Hn0IXI8 @ 01:00:32].'}],
+                 'completion_gate': 'Worksheet 3 is complete only when the QMSR map cites the February 2, '
+                                    '2026 switch, the records sweep lists every corrected document, the '
+                                    'risk file has a named owner and update cadence, every resold or '
+                                    'relabeled device carries a confirmed three-letter product code, the '
+                                    'small business determination date precedes any fee payment, and '
+                                    'complaint escalation is immediate.'},
+                {'worksheet_id': 'ws-04',
+                 'number': 4,
+                 'title': '510(k) Readiness and Recall Response Ledger',
+                 'purpose': 'Assemble the evidence trail that gets a 510(k) past the refuse-to-accept '
+                            'screen on the first pass, and set up the recall, Part 806, and MAUDE '
+                            'discipline that protects a reseller or remanufacturer once product is in the '
+                            'field.',
+                 'chapter_ref': 'Q7-Q8',
+                 'instructions': ['Work through the fields in order, because predicate choice shapes every '
+                                  'later answer in this worksheet.',
+                                  'Cite the exact page, attachment, or record location for each claim so a '
+                                  'reviewer can verify it within a minute.',
+                                  'Treat every blank cell or missing document as a gap with a named owner '
+                                  'and a due date.',
+                                  'Start recall clocks on the date of the decision to act, never the date '
+                                  'a customer letter goes out.',
+                                  'Revisit this worksheet before every filing, software release, or field '
+                                  'action, and date each revision.'],
+                 'fields': [{'name': 'predicate_lock',
+                             'type': 'textarea',
+                             'prompt': 'Name the predicate device you intend to claim, record its '
+                                       'three-letter product code, and paste its indications for use word '
+                                       'for word. Explain why this predicate is defensible and what '
+                                       'evidence you hold that it is not the wrong match.',
+                             'example': 'Predicate: a cleared powered patient lift sharing our product '
+                                        'code. Indications copied verbatim from its 510(k) summary, no '
+                                        'added adjectives. Reason: Qualio warns 15% of submissions fail on '
+                                        'the wrong predicate [Qualio — 1GKnWm8UYVk @ 00:59:39], so we '
+                                        'compared intended use, technology, and materials side by side, '
+                                        'and dropped a newer candidate whose wording drifted toward novel '
+                                        'features.'},
+                            {'name': 'rta_checklist_annotation',
+                             'type': 'textarea',
+                             'prompt': 'List every Refuse to Accept checklist item and the exact page or '
+                                       'attachment where each one lives inside your package. Flag any item '
+                                       'you cannot locate in under a minute and assign an owner who will '
+                                       'close that gap before filing.',
+                             'example': 'Item 12, biocompatibility: Attachment 7, pages 3 to 9. Item 18, '
+                                        'level of concern: missing, owner is the software lead, due '
+                                        'Friday. Packard says more than 50% of submissions die at RTA '
+                                        'screening and the clock resets to zero [MedicalMarcom — '
+                                        '-ceDuiClggg @ 00:13:03], while an annotated checklist once won '
+                                        'acceptance on day 2 [MedicalMarcom — nUaPO0mfwKI @ 00:31:54].'},
+                            {'name': 'fee_and_small_business_status',
+                             'type': 'text',
+                             'prompt': 'Record the user fee you expect to pay, whether you hold a current '
+                                       'small business qualification, and the date you will reapply. Note '
+                                       'who files the tax paperwork and how you will confirm approval '
+                                       'before the cover sheet is paid.',
+                             'example': 'Packard quotes $10,953 standard versus $2,738 small business, '
+                                        'with requalification required every year [MedicalMarcom — '
+                                        '-ceDuiClggg @ 00:08:36]. Our controller submits on August 1st '
+                                        'alongside the tax filing, a roughly 15-minute task, and Packard '
+                                        'has seen approval in 5 days against the stated 60 [MedicalMarcom '
+                                        '— -ceDuiClggg @ 00:39:20]. Cover sheet payment waits for the '
+                                        'determination letter.'},
+                            {'name': 'estar_rta_triggers',
+                             'type': 'textarea',
+                             'prompt': 'Confirm the two most common Refuse to Accept triggers are covered '
+                                       'in your eSTAR: level of concern documentation and wireless '
+                                       'coexistence testing. Also record where confidential material sits, '
+                                       'since only the 510(k) summary attachment becomes public to anyone '
+                                       'searching.',
+                             'example': 'Level of concern memo sits in Attachment 4, and wireless '
+                                        'coexistence results sit in Attachment 11, because Packard sees '
+                                        'many RTAs from missing level of concern files [Medical Device '
+                                        'Academy — b1Ejw4mhVFU @ 00:15:58]. Supplier pricing and test '
+                                        'vendor names go in attachments, never the eSTAR text box, since '
+                                        'the summary is the only public attachment [Medical Device Academy '
+                                        '— b1Ejw4mhVFU @ 00:27:42].'},
+                            {'name': 'traceability_drill',
+                             'type': 'textarea',
+                             'prompt': 'Pick three random components or outputs from your design file and '
+                                       'time how long it takes to trace each back to a user need. Record '
+                                       'every empty cell in your traceability matrix and the remediation '
+                                       'plan for closing it honestly.',
+                             'example': 'Drill result: battery housing traced to the user need for '
+                                        'wipe-down cleaning in 40 seconds; motor controller took four '
+                                        'minutes and failed. Saunders sets the bar at under 60 seconds and '
+                                        'treats every empty matrix cell as a gap [Dave Saunders — '
+                                        '6w27HXwMbmU @ 00:13:16]. Because Saunders warns documentation '
+                                        'cannot be created retroactively [Dave Saunders — 6w27HXwMbmU @ '
+                                        '00:36:12], we rerun verification instead.'},
+                            {'name': 'software_change_screen',
+                             'type': 'textarea',
+                             'prompt': 'Describe the next software change you plan to ship and answer two '
+                                       'questions: does a predetermined change control plan already cover '
+                                       'it, and why are you retraining or modifying the code? State '
+                                       'whether expanded inputs push you toward a special 510(k).',
+                             'example': 'Planned change: the algorithm will accept a second sensor input. '
+                                        'No PCCP exists for this device, and we are retraining to add that '
+                                        'input, which Innolitics flags as a special 510(k) trigger '
+                                        '[Innolitics — UdQw2LB0EYc @ 00:25:57]. Decision: hold the '
+                                        'release, draft the special 510(k), and note that the O.N. '
+                                        'Diagnostics warning letter showed FDA staying conservative on '
+                                        'software changes.'},
+                            {'name': 'review_calendar',
+                             'type': 'text',
+                             'prompt': 'Build a realistic review calendar from submission to decision, '
+                                       'marking the refuse-to-accept screen, the interactive review '
+                                       'checkpoint, and the decision window. Note what internal resources '
+                                       'must be standing by at each milestone so questions get answered '
+                                       'within hours.',
+                             'example': 'Day 0 submit; day 15 RTA screen result; day 60 interactive review '
+                                        'decision point; decision about 30 days after interactive review, '
+                                        'for a realistic total of 120 to 130 days [MedicalMarcom — '
+                                        'gGje01O9B44 @ 00:11:34]. Regulatory lead and test lab stay on '
+                                        'call from day 55. Packard reminds us usually time is more '
+                                        'valuable than money [MedicalMarcom — -ceDuiClggg @ 01:13:27].'},
+                            {'name': 'part_806_clock',
+                             'type': 'textarea',
+                             'prompt': 'Record the date your firm decided to correct or remove product, '
+                                       'the date the Part 806 report is due, and who signs it. Explain how '
+                                       'you will avoid starting the clock at the customer letter instead '
+                                       'of the decision.',
+                             'example': 'Decision logged March 3 by the quality director after three '
+                                        'wheelchair motor complaints. Risk-to-health actions are reported '
+                                        'within 10 working days [Gardner Law — aYQu_0ujhyU @ 00:12:43], '
+                                        'and Phillips lands the report by Day 15 on the calendar, counted '
+                                        'from the decision [Gardner Law — aYQu_0ujhyU @ 00:21:52]. '
+                                        'Following Needelman, we file 80% of the facts on time rather than '
+                                        '100% late.'},
+                            {'name': 'recall_effectiveness_and_closure',
+                             'type': 'textarea',
+                             'prompt': 'Set your recall effectiveness target, the number of contact '
+                                       'attempts per customer, and the root cause evidence you will '
+                                       'present for closure. Describe how you will match lot, serial, '
+                                       'model, and dates against the official recall notice.',
+                             'example': 'Expect about 30% product return and make three good-faith '
+                                        'attempts per customer [Medmarc — nJblY5CRIVY @ 00:39:10]. Root '
+                                        'cause report attached, since FDA will not close a recall without '
+                                        'one [Medmarc — nJblY5CRIVY @ 00:33:13]. Each returned bed is '
+                                        'checked by lot, serial, model, and date against the current '
+                                        'agency page, never screenshots [Treomark — GoXd4_jxKBg @ '
+                                        '00:00:33].'},
+                            {'name': 'maude_search_log',
+                             'type': 'textarea',
+                             'prompt': 'Log every MAUDE search you run on a device you plan to buy or '
+                                       'resell: product code, keywords, brand variants, and date ranges. '
+                                       'Record how you bypassed the single-search cap and which records '
+                                       'you treated as leads worth investigating.',
+                             'example': 'Searched infusion pump narratives in quarterly date ranges '
+                                        'because MAUDE returns only 500 reports per search [Ofstead '
+                                        'Insights — a-scTl1C2PA @ 00:08:44], then merged the Excel '
+                                        'exports. Event-type filter left off, since malfunction reports '
+                                        'can describe injuries [Ofstead Insights — a-scTl1C2PA @ '
+                                        '00:03:32]. Every hit is a lead, not causation [Expert Institute — '
+                                        'xbxXTRwdVRs @ 00:22:47].'}],
+                 'completion_gate': 'Done only when the predicate, product code, and indications are '
+                                    'locked, every RTA checklist item is annotated with its location, the '
+                                    'small business determination is in hand before payment, the '
+                                    'traceability drill passes under 60 seconds, and the Part 806 clock '
+                                    'and MAUDE search log are dated and signed.'},
+                {'worksheet_id': 'ws-05',
+                 'number': 5,
+                 'title': 'Imaging Deinstall and Laser Handover File',
+                 'purpose': 'Capture the helium, site safety, service contract, and laser compliance facts '
+                            'that decide whether a used MRI, CT, or medical laser can be sold, shipped, '
+                            'and put to work without hidden costs or regulatory blocks.',
+                 'chapter_ref': 'Q9-Q10',
+                 'instructions': ['Fill in one copy of this worksheet per imaging system or laser in the '
+                                  'deal.',
+                                  'Record measured values, such as helium percentage and gauss line '
+                                  'locations, rather than seller estimates.',
+                                  'Mark each item as verified or unverified, and do not quote a final '
+                                  'price while any critical item is unverified.',
+                                  'Route electrical, blast-shield, and interlock questions to a biomed '
+                                  'before anyone moves or powers the unit.',
+                                  'Attach license numbers, signed agreements, and survey results directly '
+                                  'to the matching field.'],
+                 'fields': [{'name': 'magnet_deinstall_plan',
+                             'type': 'textarea',
+                             'prompt': 'Describe how the MRI magnet you are buying or selling will be '
+                                       'deinstalled, stating plainly whether it stays cold and energized '
+                                       'or gets quenched. Name who signs off on the plan and what happens '
+                                       'if helium runs short.',
+                             'example': 'The 1.5T magnet ships cold and energized, never quenched, because '
+                                        'quenching creates thermal shocks that can damage a system headed '
+                                        'for the secondhand market [FGI — HPAddrORIJU @ 00:34:49]. Our '
+                                        'lead engineer signs the plan. Helium supply is confirmed in '
+                                        'writing with the contractor first, since quenched facilities sat '
+                                        'down for a protracted period waiting on refills [FGI — '
+                                        'HPAddrORIJU @ 00:32:11].'},
+                            {'name': 'helium_cost_model',
+                             'type': 'text',
+                             'prompt': "Enter the magnet's current helium level, its daily boil-off rate, "
+                                       'and the replacement cost per liter you expect to pay. Calculate '
+                                       'the refill exposure if the magnet quenched and the monthly '
+                                       'boil-off cost you will build into price.',
+                             'example': 'Level reads 78 percent, above the 70 percent floor Block Imaging '
+                                        'recommends [Block Imaging — _-e12TPIFxw @ 00:03:19]. At $20 to '
+                                        '$30 a liter on roughly 2,000 liters, a quench risks $40,000 to '
+                                        '$60,000 in helium alone [Block Imaging — _-e12TPIFxw @ 00:02:59]. '
+                                        'This older unit boils off 5 to 10 liters daily, up to $500 per '
+                                        'day [MRIPETCTSOURCE — Bu466hadTu0 @ 00:00:40].'},
+                            {'name': 'whole_system_inventory',
+                             'type': 'textarea',
+                             'prompt': 'List everything that ships with the imaging system beyond the '
+                                       'magnet or gantry: coils, software, service records, room '
+                                       'requirements, and ongoing support. Mark which items you have '
+                                       "physically verified and which still rest on the seller's word "
+                                       'alone.',
+                             'example': 'Verified: head, knee, and spine coils, software license, and five '
+                                        'years of service records. Unverified: shielding drawings for the '
+                                        "buyer's room. MRIPETCTSOURCE stresses that a fill alone runs "
+                                        '1,200 to 1,500 liters, about $60,000 [MRIPETCTSOURCE — '
+                                        'Bu466hadTu0 @ 00:00:40], so we price the whole system, not the '
+                                        'magnet photo, and attach a three-year extended contract past '
+                                        'warranty.'},
+                            {'name': 'ct_tube_and_service_terms',
+                             'type': 'textarea',
+                             'prompt': "For any CT system in your deal, record the tube's age, scan "
+                                       'history, and whether a replacement tube is covered under the '
+                                       'service agreement. Note whether the original manufacturer has '
+                                       'issued an end-of-support letter limiting parts and engineering.',
+                             'example': 'Tube is original with no replacement history logged. Block '
+                                        'Imaging calls the tube or glassware a major component that drives '
+                                        'the price of a service agreement [Block Imaging — 3203LTd64a8 @ '
+                                        '00:00:30], so our quote includes tube coverage. The owner holds '
+                                        'an OEM end-of-support letter, which makes the account a target '
+                                        'for a customized extended agreement [Block Imaging — 3203LTd64a8 '
+                                        '@ 00:01:33].'},
+                            {'name': 'mri_site_safety_survey',
+                             'type': 'textarea',
+                             'prompt': "Document the five gauss line survey for the buyer's site, "
+                                       'including floors above and below the scanner. Record how Zone 3 '
+                                       'entry will be screened and whether a whole-body ferrous-only '
+                                       'detection system has been specified instead of hand wands.',
+                             'example': 'Five gauss line metered on all three floors and taped on the '
+                                        'floor before Zone 3 was defined, because the field bulges through '
+                                        'floors and ceilings [Imaging Notes — fRqZHq_Gruc @ 00:06:22]. '
+                                        'Zone 3 entry gets a whole-body ferrous-only detector; Posh notes '
+                                        'metal detectors are not approved for MRI use and hand wands vary '
+                                        'between users [Metrasens — DdLolB1kuRY @ 00:57:27].'},
+                            {'name': 'quench_pipe_and_accident_history',
+                             'type': 'textarea',
+                             'prompt': 'Record the quench-pipe discharge detail for this specific scanner '
+                                       "model and confirm it was not copied from another manufacturer's "
+                                       'job. Then log the MAUDE accident history search you ran, including '
+                                       'the product code and date range used.',
+                             'example': 'Quench-pipe detail drawn fresh for the Philips unit; Gilk has '
+                                        'seen GE details pasted onto Philips scanners even when the '
+                                        'criteria did not match [FGI — HPAddrORIJU @ 00:13:58]. MAUDE '
+                                        'search ran on product code LNH for the past five years, because '
+                                        'searching MRI returns nothing while hundreds of MR events are '
+                                        'reported annually [Metrasens — DdLolB1kuRY @ 00:47:20].'},
+                            {'name': 'laser_inventory_record',
+                             'type': 'textarea',
+                             'prompt': 'Create the intake record for each laser you acquire: wavelength, '
+                                       'class, serial, service history, and the trained medical laser '
+                                       'safety officer responsible at the receiving site. Note any gaps '
+                                       'that would block the facility from passing a CMS-grade inventory '
+                                       'review.',
+                             'example': 'Unit: 755/1064 hair removal platform, class confirmed from the '
+                                        "label, two prior handpiece services. The buyer's MLSO is named on "
+                                        'the record, because Dennis says a rental operator is not your LSO '
+                                        'and the laser safety program has to be internal [OR Today '
+                                        'Magazine — 4yS9pDHEcIs @ 00:36:30]. Gap: no blast-shield service '
+                                        'log, so a biomed reviews it before resale.'},
+                            {'name': 'interlock_and_electrical_check',
+                             'type': 'text',
+                             'prompt': 'Record the interlock and key codes found on arrival, the new codes '
+                                       'assigned, and the date key control was verified. Then document the '
+                                       'electrical service the laser requires and confirm the destination '
+                                       'room supplies it without cheater cords.',
+                             'example': 'Arrival code was 5678, the same one Dennis says everybody in the '
+                                        'United States had [OR Today Magazine — 4yS9pDHEcIs @ 00:19:37]; '
+                                        'reset and key control verified the same day. The unit needs a 50 '
+                                        'amp plug, so the biomed confirmed the room before moving it, '
+                                        'unlike the excimer laser that could not roll to the cath lab '
+                                        '[TechNation TV — kBlmK6r6MgU @ 00:17:08].'},
+                            {'name': 'rental_technician_credentialing',
+                             'type': 'textarea',
+                             'prompt': 'For every rental or leased laser technician entering the facility, '
+                                       'record their laser operator credential under your own procedures '
+                                       'and the date the business associate agreement was signed. Note '
+                                       'what case data they may take for billing.',
+                             'example': 'Technician credentialed as a laser operator under our SOPs on '
+                                        'June 2, with the signed BAA on file before any case data leaves '
+                                        'for billing [OR Today Magazine — 4yS9pDHEcIs @ 00:37:22]. '
+                                        'Certification check: we accept NCLC credentials, with a passing '
+                                        'score of 70 and results in about two weeks [Laser Training — '
+                                        'KPlnFyWRwTQ @ 00:06:16], not one-hour online certificates.'},
+                            {'name': 'jurisdiction_license_timeline',
+                             'type': 'text',
+                             'prompt': 'If the laser ships to a licensed jurisdiction, record the '
+                                       'possession license number, the approval to acquire, and the '
+                                       'expected lead times. State the earliest realistic delivery date '
+                                       'and what payment terms protect you until approval arrives.',
+                             'example': 'Queensland buyer has no laser on site, so a possession license '
+                                        'with a clinic-specific RSPP comes first, about 2 to 3 months plus '
+                                        '1 to 2 weeks for approval to acquire [K-Laser Australia — '
+                                        'Hsmu9JQR5UM @ 00:04:36]. Delivery is not allowed without it '
+                                        '[K-Laser Australia — Hsmu9JQR5UM @ 00:05:14], so the deposit '
+                                        'stays refundable until the license number arrives.'}],
+                 'completion_gate': 'Done only when the magnet is confirmed cold and energized with helium '
+                                    'above 70 percent, the whole-system inventory is verified, the five '
+                                    'gauss survey and LNH search are logged, laser codes are reset with '
+                                    'key control verified, and every operator credential, BAA, and '
+                                    'possession license is on file.'},
+                {'worksheet_id': 'ws-06',
+                 'number': 6,
+                 'title': 'Clinic Account Map and Sales Pipeline Ledger',
+                 'purpose': 'Turn veterinary, dental, and ambulatory surgery buyers into documented '
+                            'accounts by mapping sterile processing needs, proving cost savings line by '
+                            'line, and running an honest capital pipeline backed by clean outreach and '
+                            'recurring revenue.',
+                 'chapter_ref': 'Q11-Q12',
+                 'instructions': ['Choose one live clinic account and one live capital deal before you '
+                                  'begin, and keep both in view throughout.',
+                                  'Lead every account conversation with the sterile processing room, then '
+                                  'branch into scopes, instruments, and consumables.',
+                                  'Show savings as line items against reimbursement, not as a single '
+                                  'headline discount.',
+                                  'Record pipeline stages exactly as they stand today, and downgrade any '
+                                  'deal that lacks a named champion.',
+                                  'Audit every outreach message against the field rules here before it '
+                                  'leaves your outbox.'],
+                 'fields': [{'name': 'central_sterile_opening',
+                             'type': 'textarea',
+                             'prompt': 'Map the sterile processing room for one target clinic: autoclaves, '
+                                       'instrument washers, processing sinks, prep-and-pack areas, and '
+                                       'cassettes. Note which items the owner has overlooked and which you '
+                                       'can supply as certified used units with documentation.',
+                             'example': 'Target ASC has one autoclave and no instrument washer or '
+                                        'dedicated prep-and-pack area. We lead with Central Sterile, '
+                                        'because many ASC owners do not realize one vendor can sell '
+                                        'autoclaves, washers, sinks, prep-and-pack areas, and cassettes '
+                                        '[Henry Schein Medical — VMonxNBLqE4 @ 00:05:23]. Offer: a '
+                                        'certified used washer with service records, plus new cassettes '
+                                        'matched to their trays.'},
+                            {'name': 'scope_intake_and_leak_test',
+                             'type': 'textarea',
+                             'prompt': 'For every endoscope you take in, record the distal end and bending '
+                                       'rubber inspection, the leak test result, and whether air was '
+                                       'flushed from the channels first. Classify the repair as a minor '
+                                       'bending rubber fix or full rebuild.',
+                             'example': 'Distal end clean; bending rubber shows a small tooth cut. '
+                                        'Pressure tested before immersion [Surgical Direct (Surgical '
+                                        'Direct) — DrTCjk0roNk @ 00:01:04], channels flushed of air, no '
+                                        'enzymatic cleaner added beforehand [Surgical Direct (Surgical '
+                                        'Direct) — DrTCjk0roNk @ 00:08:18]. Steady champagne bubbles at '
+                                        'the cut confirmed a real leak, caught early enough for a bending '
+                                        'rubber repair instead of a rebuild.'},
+                            {'name': 'pack_release_standard',
+                             'type': 'textarea',
+                             'prompt': 'Write the release standard your veterinary or surgical buyer uses '
+                                       'before a sterile pack leaves processing: indicator tape, inner '
+                                       'indicator strip, gauze count, wrap layers, and shelf life. Note '
+                                       'which consumables this standard burns through each week.',
+                             'example': 'Release only when outer tape shows black stripes and the inner '
+                                        'strip has changed [Four Paws Animal Hospital & Wellness Center — '
+                                        'PlDJXzo7cN4 @ 00:03:52], with an exact gauze count inside. '
+                                        'Triple-wrapped packs unused after six months get rewashed, '
+                                        'repacked, and resterilized [PEER at TAMU — WoO-cNElJpg @ '
+                                        '00:20:10]. Weekly burn: indicator tape, strips, wraps, and '
+                                        'ultrasonic solution.'},
+                            {'name': 'surgeon_line_item_comparison',
+                             'type': 'textarea',
+                             'prompt': 'Build a line-item cost comparison for one surgeon or procedure at '
+                                       'your target ambulatory surgery center. List the current price of '
+                                       'each tray item, your alternative price, and the savings per case '
+                                       "against the facility's reimbursement.",
+                             'example': 'Total knee: trays standardized from five to two [American '
+                                        'Association of Hip and Knee Surgeons — AQIyPCz9bJM @ 00:23:06]. '
+                                        'Blade line: $85 current versus $45 alternative, the exact '
+                                        'question surgeons asked once costs were shown per surgeon '
+                                        '[American Association of Hip and Knee Surgeons — AQIyPCz9bJM @ '
+                                        '00:26:08]. Target: $750 saved per case against a roughly $8,400 '
+                                        'Medicare knee.'},
+                            {'name': 'dental_account_web',
+                             'type': 'textarea',
+                             'prompt': 'Sketch the referral web around one dental client: the oral '
+                                       'surgeons, orthodontists, and periodontists they refer to. Note the '
+                                       'compliance exposures each practice carries, including patient '
+                                       'record request deadlines, and which relationship you will approach '
+                                       'next.',
+                             'example': 'Anchor client refers to two oral surgeons and one orthodontist; '
+                                        'dentists refer tightly, so one relationship compounds into '
+                                        'several accounts [Nuronus — iAwNQ3QON9c @ 00:02:30]. Each office '
+                                        'gets a records-request checklist, since Gums Dental Care was '
+                                        'fined seventy thousand dollars with no breach [Nuronus — '
+                                        'iAwNQ3QON9c @ 00:00:24]. Next approach: the orthodontist, who '
+                                        'just bought a new autoclave.'},
+                            {'name': 'instrument_quality_tier',
+                             'type': 'text',
+                             'prompt': 'Decide which instrument and sterilization accessory tiers you will '
+                                       'stock for clinic buyers, from premium instruments built to last '
+                                       'decades to low-cost cassettes and soak boxes. Record the price '
+                                       'points, expected lifespan, and care rules you will hand buyers.',
+                             'example': 'Budget tier: soak boxes from $5.23 and trays up to about $21 '
+                                        '[LopinMoetas — 8kG0BUAGcP4 @ 00:00:33]. Premium tier: German '
+                                        'surgical instruments sold for decades of use. Every kit ships '
+                                        'with a care card warning that instruments should never sit '
+                                        'overnight in the ultrasonic cleaner or milk, since they can rust '
+                                        '[Vet Candy | Veterinary Education, CE & News — Zb4YYmRy5x0 @ '
+                                        '00:10:28].'},
+                            {'name': 'capital_pipeline_funnel',
+                             'type': 'textarea',
+                             'prompt': 'List the capital equipment accounts in your pipeline, the stage '
+                                       'each has truthfully reached, and the champion inside each one. '
+                                       'Calculate how many accounts you need to reach your purchase order '
+                                       'goal, and note any stage you are tempted to inflate.',
+                             'example': "Goal: four imaging purchase orders. Licata's funnel says 30 "
+                                        'accounts yield 1 to 2 purchase orders [Joe Licata | Medical Sales '
+                                        'Coach — KsMhJhbA73k @ 00:37:42], so we need roughly 60 to 120 '
+                                        'accounts. Two late-stage deals lack a champion and get '
+                                        'downgraded, because managers carry pipeline straight to the board '
+                                        '[Joe Licata | Medical Sales Coach — KsMhJhbA73k @ 00:34:00].'},
+                            {'name': 'vac_presentation_plan',
+                             'type': 'textarea',
+                             'prompt': 'Plan how your physician champion will present your equipment to '
+                                       'the value analysis committee. Record the in-service date relative '
+                                       'to the meeting, the ROI model you will hand the CFO, and the '
+                                       'struggles you uncovered indirectly.',
+                             'example': 'VAC meets Thursday; in-service set for Tuesday, because reps are '
+                                        "barred and the physician presents: if you don't remember, they "
+                                        "won't [Joe Licata | Medical Sales Coach — KsMhJhbA73k @ "
+                                        '00:14:21]. Struggles surfaced by asking whether the surgeon faced '
+                                        'the same problem Dr B described [New to Medical Device Sales — '
+                                        'PaW-3LfksaU @ 00:07:29]. CFO model shows service and consumables '
+                                        'revenue.'},
+                            {'name': 'outreach_message_audit',
+                             'type': 'textarea',
+                             'prompt': 'Paste the next outreach message you plan to send to a hiring '
+                                       'manager, clinic owner, or buyer. Audit its word count, strip '
+                                       'leftover AI dashes, confirm connection requests carry no note, and '
+                                       'check your profile badges before sending anything.',
+                             'example': 'Message trimmed to 82 words, under the 100-word ceiling. Dashes '
+                                        'removed, since AI dashes are the top complaint Jacob hears from '
+                                        'hiring managers [New to Medical Device Sales — G5Dl1131xAw @ '
+                                        '00:35:06]. Connection request sent with no note [New to Medical '
+                                        'Device Sales — G5Dl1131xAw @ 00:30:02], and the open to work '
+                                        'badge came off [Med Sales With Matt — 2Nn9rL0ZXRg @ 00:03:11].'},
+                            {'name': 'recurring_revenue_after_sale',
+                             'type': 'textarea',
+                             'prompt': 'For each machine you sell or place, list the service contract, '
+                                       'consumables, and utilization revenue that follow the sale. Note '
+                                       'any pricing ceiling payers will tolerate, and confirm you have not '
+                                       'priced at the full incremental cost you solve.',
+                             'example': 'Placed unit: refurbished patient monitor package. Recurring '
+                                        'lines: annual service contract, monthly consumables, and per-use '
+                                        'supplies. The problem it solves costs the clinic about $20K '
+                                        'incrementally, but pricing stays well below that to leave payer '
+                                        'headroom [Fast Forward Medical Innovation – Commercialization '
+                                        'Education — oAV1SBup8Q8 @ 00:34:59]. Contract terms avoid '
+                                        'surprises, because discounts vanish, penalties do not [Hidden '
+                                        'Industries — uNFHZlCznIw @ 00:02:48].'}],
+                 'completion_gate': "Done only when one clinic's sterile processing room is mapped, scope "
+                                    'intake and pack release standards are written, a line-item savings '
+                                    'sheet exists for one surgeon, the pipeline math covers your purchase '
+                                    'order goal with honest stages, and every outbound message passes the '
+                                    'audit.'}]}

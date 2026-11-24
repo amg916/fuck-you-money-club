@@ -1,702 +1,790 @@
 from __future__ import annotations
 
-CHAPTER_4 = {
-    "id": "Q4",
-    "chapter_id": "Q4",
-    "chapter_number": 4,
-    "question_number": 4,
-    "slug": "startup-capital-lean-infrastructure-pre-flight-stack",
-    "question_prompt": "How do you allocate startup capital ($15,000–$80,000 USD) and configure a lean, low-opex ($6,000–$30,000 USD/mo) production stack without wasting cash on bloated overhead?",
-    "kicker": "Q4 / THE BIG MONEY PLAYBOOKS",
-    "title": "Startup Capital, Lean Infrastructure & Pre-Flight Stack",
-    "subtitle": "Reserve-First Carrier Payments, FMCSA Security, Highway/RMIS Screening, and a Twelve-Layer Dispatch Stack",
-    "layout_template": "comparison_table",
-    "reading_time_minutes": 14,
-    "executive_summary": (
-        "Candidate #12, Freight Brokerage, ranks #19 with a 85/100 Money-to-Manpower "
-        "Score because carrier payments arrive before many shipper collections. "
-        "Allocate at least half of startup capital to accessible freight float, "
-        "separate statutory security from operating cash, and purchase software only "
-        "against a documented control requirement. This chapter organizes eight mapped "
-        "plays: the supplied FMCSA/DOT trigger funnel plus seven chapter-local operating "
-        "plays covering reserve allocation, payment terms, security procurement, lean "
-        "infrastructure, carrier identity, invoice evidence, and launch rehearsal. "
-        "Canonical annual owner profits remain $30,000 Conservative, $165,000 Base, "
-        "and $400,000 Scaled, on gross shipper billings rather than brokerage spread. "
-        "The production design combines bounded credit exposure, independent carrier "
-        "verification, twelve infrastructure layers, and explicit stop conditions "
-        "before the first truck moves."
-    ),
-    "key_metrics": [
-        {
-            "label": "Conservative",
-            "value": "$1,000,000",
-            "context": "Annual gross shipper billings including carrier costs",
-            "note": "3% net margin; $30,000 annual owner net profit; 3 FT + 2 C",
-        },
-        {
-            "label": "Base",
-            "value": "$3,000,000",
-            "context": "Annual gross shipper billings including carrier costs",
-            "note": "5.5% net margin; $165,000 annual owner net profit; 3 FT + 2 C",
-        },
-        {
-            "label": "Scaled",
-            "value": "$5,000,000",
-            "context": "Annual gross shipper billings including carrier costs",
-            "note": "8% net margin; $400,000 annual owner net profit; 4 FT + 3 C",
-        },
-    ],
-    "sections": [
-        {
-            "heading": "1. Allocate Capital Around the Carrier Payment Clock",
-            "epistemic_status": "illustrative_model",
-            "paragraphs": [
-                (
-                    "Start with the Reserve-First Capital Allocation play: divide startup "
-                    "cash into unrestricted carrier float, security procurement, formation "
-                    "and insurance, production systems, launch labor, and incident cash. "
-                    "The budgets below allocate $30,000 of $50,000 and $150,000 of "
-                    "$250,000 to float, preserving 60% in both cases. These are spending "
-                    "envelopes, not promises that every applicant can obtain a bond "
-                    "within the allowance. A BMC-84 surety bond has a $75,000 penal "
-                    "sum; its premium and any collateral depend on underwriting. A "
-                    "BMC-85 trust ties up qualifying assets and cannot simultaneously "
-                    "serve as unrestricted carrier-payment cash. At $50,000, a fully "
-                    "funded $75,000 trust is outside the budget before operations even "
-                    "begin. Obtain written security terms before committing payroll or "
-                    "annual software contracts. If the surety demands substantial "
-                    "collateral, increase capitalization, reduce initial exposure, or "
-                    "delay launch rather than relabel restricted money as reserve. "
-                    "Keep the incident allocation separate from float because a "
-                    "deductible and a shipper default can occur together. The startup "
-                    "range also assumes a staged launch: a small initial desk cannot "
-                    "support the canonical full team indefinitely without collections "
-                    "or additional capital. Model the entire two-to-six-month sales "
-                    "ramp before hiring against hoped-for freight."
-                ),
-                (
-                    "The Payment-Term Compression play converts sales promises into "
-                    "fundable loads. Estimate required float as monthly carrier "
-                    "purchases multiplied by the positive collection-payment gap, "
-                    "divided by thirty, then add concentration and dispute cushions. "
-                    "For an illustrative Base desk, $250,000 monthly shipper billings "
-                    "and an 82% carrier-cost ratio produce $205,000 monthly carrier "
-                    "purchases. Collecting in forty-five days while paying in twenty "
-                    "requires approximately $170,833 before any cushion. That exceeds "
-                    "even the $150,000 reserve in the larger startup budget. Collecting "
-                    "in thirty days and paying in twenty-one reduces the estimate to "
-                    "$61,500; adding $30,000 for exceptions yields $91,500. These are "
-                    "planning approximations: build a daily invoice-level cash forecast "
-                    "because weekly payment batches and concentrated customers create "
-                    "larger troughs than averages suggest. A $15,000 shipper deposit "
-                    "covers ten $1,500 carrier commitments only if the deposit is "
-                    "available and those obligations have no other funding claim. "
-                    "For a slow-paying customer, offer prepaid pilot loads, negotiate "
-                    "shorter terms, or decline additional tenders. Factoring is a "
-                    "priced funding option, not improved freight economics; examine "
-                    "recourse, reserves, minimum charges, assignment notices, and "
-                    "termination fees before counting proceeds. Never finance one "
-                    "customer's overdue balance by silently delaying another "
-                    "carrier's agreed payment."
-                ),
-                (
-                    "Reconcile the scorecard before declaring the infrastructure lean. "
-                    "Conservative gross shipper billings of $1,000,000 at 3% produce "
-                    "$30,000 annual owner net profit; Base billings of $3,000,000 at "
-                    "5.5% produce $165,000; Scaled billings of $5,000,000 at 8% produce "
-                    "$400,000. One illustrative bridge uses carrier purchases of "
-                    "$850,000, $2,460,000, and $4,000,000 respectively. The resulting "
-                    "spreads are $150,000, $540,000, and $1,000,000, leaving total "
-                    "other operating costs of $120,000, $375,000, and $600,000. These "
-                    "bridge assumptions explain the canonical results without "
-                    "claiming the scorecard supplied carrier percentages. Monthly "
-                    "fixed overhead of $6,000, $15,000, and $30,000 would leave "
-                    "another $4,000, $16,250, and $20,000 monthly for commissions, "
-                    "variable labor, funding charges, claims allowances, and other "
-                    "costs. Therefore, the stated overhead band is not a cap on all "
-                    "expenses. Conservative and Base staffing remain 3 FT + 2 C; "
-                    "Scaled remains 4 FT + 3 C. Price actual wages, payroll taxes, "
-                    "benefits, and contractor scopes before accepting the bridge "
-                    "as feasible. The leanest case is particularly demanding. "
-                    "Maintain separate reporting for shipper billings, carrier "
-                    "purchases, brokerage spread, and owner profit; determine "
-                    "principal-versus-agent accounting presentation from the actual "
-                    "contracts rather than treating customer freight value as margin."
-                ),
-            ],
-            "table": {
-                "caption": "Six Capital Envelopes Preserve Sixty Percent as Accessible Freight Float",
-                "headers": [
-                    "Capital envelope and operating purpose",
-                    "$50,000 startup allocation",
-                    "$250,000 startup allocation",
-                    "Release condition and cash protection",
-                ],
-                "rows": [
-                    [
-                        "Unrestricted carrier float held outside routine spending",
-                        "$30,000 reserved exclusively for documented carrier payment obligations",
-                        "$150,000 reserved exclusively for documented carrier payment obligations",
-                        "Release against accepted freight obligations and daily cash forecasting",
-                    ],
-                    [
-                        "Surety premium and security procurement spending allowance",
-                        "$5,000 allowance subject to actual surety underwriting terms",
-                        "$20,000 allowance subject to actual surety underwriting terms",
-                        "Rebudget any collateral requirement before accepting shipper tenders",
-                    ],
-                    [
-                        "Entity formation, contracts, and insurance binding expenses",
-                        "$3,000 reserved for scoped setup and insurance deposits",
-                        "$10,000 reserved for scoped setup and insurance deposits",
-                        "Bind required coverage before assuming contractual freight exposure",
-                    ],
-                    [
-                        "Production software setup and initial subscription runway",
-                        "$2,000 reserved for necessary activation and short commitments",
-                        "$10,000 reserved for necessary activation and short commitments",
-                        "Activate seats only after assigning owners and acceptance tests",
-                    ],
-                    [
-                        "Launch labor and customer acquisition runway allocation",
-                        "$8,000 supports a tightly staged initial operating desk",
-                        "$50,000 supports a longer measured customer acquisition runway",
-                        "Expand payroll only against funded demand and collection evidence",
-                    ],
-                    [
-                        "Incident cash outside the ordinary carrier float",
-                        "$2,000 cushions small exceptions without pretending full loss coverage",
-                        "$10,000 cushions exceptions while preserving ordinary payment capacity",
-                        "Escalate losses exceeding this envelope before booking more freight",
-                    ],
-                ],
-            },
-            "callout": {
-                "kind": "INSIDER PRO-TIPS",
-                "title": "Protect the Money That Keeps Carriers Answering",
-                "body": "Treat liquidity as a dispatch constraint, not a month-end accounting observation.",
-                "items": [
-                    "Maintain separate bank subaccounts for carrier float and overhead; reconcile both to a single controlled general ledger.",
-                    "Negotiate pilot-load deposits before offering volume discounts; a cheaper rate does not repair a forty-five-day collection cycle.",
-                    "Ask the surety for premium, collateral, indemnity, cancellation, and renewal terms in writing before buying annual software.",
-                    "Measure customer days-to-cash from invoice eligibility, not dispatch date; missing delivery evidence can consume the entire apparent margin cushion.",
-                ],
-            },
-        },
-        {
-            "heading": "2. Build Twelve Layers Without Buying Twelve Enterprise Contracts",
-            "epistemic_status": "operating_framework",
-            "paragraphs": [
-                (
-                    "The Lean Infrastructure Procurement play starts with a single "
-                    "load identifier shared across dispatch, carrier onboarding, "
-                    "tracking, billing, and bank reconciliation. Select a "
-                    "transportation management system only after testing that "
-                    "identifier through a complete shipment. The matrix names "
-                    "twelve production layers and precise purchasing assumptions. "
-                    "Dollar figures are illustrative internal monthly budget caps, "
-                    "not verified vendor tariffs; named tiers identify the intended "
-                    "scope, and quote-based products require written pricing. This "
-                    "distinction prevents an outdated public price from becoming "
-                    "a procurement commitment. Three core users at a $15-per-user "
-                    "planning allowance consume $45 monthly, while a $250 TMS cap "
-                    "and $150 load-board cap consume another $400. The twelve "
-                    "listed caps total $1,150 monthly before taxes, transaction "
-                    "charges, and implementation. That leaves $4,850 within a "
-                    "$6,000 fixed-overhead envelope, but does not establish that "
-                    "the full canonical team fits. Begin with monthly subscriptions "
-                    "and an export test; prepay annually only after measured usage "
-                    "and an acceptable cancellation position. For every overlapping "
-                    "feature, nominate one system of record. Paying both a TMS and "
-                    "an accounting tool to generate uncontrolled invoice numbers "
-                    "creates reconciliation work rather than automation. Reject "
-                    "bundles whose savings depend on seats the desk cannot use."
-                ),
-                (
-                    "Automate evidence movement before automating freight decisions. "
-                    "A TMS webhook can open a shipment folder, queue a tracking "
-                    "request, and prepare an invoice checklist without granting "
-                    "software authority to approve a new payee. Use Google "
-                    "Workspace shared drives or Microsoft 365 team storage rather "
-                    "than a dispatcher's personal mailbox as the record archive. "
-                    "Keep application administrators separate from daily dispatch "
-                    "roles, require multifactor authentication, and store integration "
-                    "secrets in a managed password vault. A $15 monthly vault "
-                    "allowance is trivial compared with one misdirected $2,000 "
-                    "carrier payment. Configure tracking to collect shipment-relevant "
-                    "positions only for the agreed movement; stop access when "
-                    "delivery closes. Establish an exception queue for missing "
-                    "pickup confirmation, stale location data, changed appointment "
-                    "times, and unreturned proof of delivery. Assign each exception "
-                    "an owner and deadline instead of sending every alert to "
-                    "everyone. Test exports of loads, documents, invoices, and "
-                    "carrier records before entering an annual contract. If a "
-                    "vendor becomes unavailable, the desk should still retrieve "
-                    "pickup numbers, contact verified carriers, document delivery, "
-                    "and produce an invoice using its own retained records. "
-                    "A manual continuity sheet is useful only when updated "
-                    "from the actual production load register."
-                ),
-                (
-                    "The Invoice Evidence Capture play protects both cash conversion "
-                    "and dispute resolution. At tender acceptance, record the shipper "
-                    "purchase-order requirement, billing address, appointment rules, "
-                    "accessorial authorization method, and proof-of-delivery standard. "
-                    "At delivery, collect legible paperwork and reconcile seal, "
-                    "quantity, exception, and appointment information before sending "
-                    "the invoice. Ten invoices at $2,000 each delayed seven days "
-                    "lock up $20,000 in receivables for that additional week; at "
-                    "an illustrative 18% annual funding rate, the direct carrying "
-                    "cost is about $69, excluding collection labor and lost capacity. "
-                    "Preventing the delay matters more than saving a few dollars "
-                    "on document storage. The Carrier Identity Verification play "
-                    "then connects the payment record to the onboarded legal "
-                    "carrier, rather than trusting a familiar display name. "
-                    "Highway or RMIS can organize identity and insurance evidence, "
-                    "but neither replaces independent callbacks or a documented "
-                    "response to conflicting information. Set automation to flag "
-                    "changes in bank details, contact domains, insurance status, "
-                    "and dispatch authority. When a signal cannot be resolved, "
-                    "pause the affected tender or payment and use a previously "
-                    "verified contact channel. Cheap alternatives are acceptable "
-                    "when they preserve evidence and accountability; they are "
-                    "not acceptable when they simply remove the control."
-                ),
-            ],
-            "table": {
-                "caption": "Twelve-Layer Vendor Stack: Named Tiers, Internal Budget Caps, and Lean Substitutes",
-                "headers": [
-                    "Production layer and named vendor tier",
-                    "Exact planning cap and purchasing basis",
-                    "Required operating role and acceptance evidence",
-                    "Cheaper lean alternative with explicit limitation",
-                ],
-                "rows": [
-                    [
-                        "Business identity using Google Workspace Business Starter",
-                        "$45 monthly cap for three users; verify current tariff",
-                        "Shared company communications with controlled access and retained records",
-                        "Microsoft 365 Business Basic if its written quote is lower",
-                    ],
-                    [
-                        "Credential control using Bitwarden Teams organization subscription",
-                        "$15 monthly cap for three users; verify current tariff",
-                        "Shared secrets with individual accounts and immediate staff offboarding",
-                        "KeePassXC encrypted vault requires disciplined sharing and recovery procedures",
-                    ],
-                    [
-                        "Load execution using AscendTMS quoted paid operating tier",
-                        "$250 monthly cap; obtain exact tier and implementation quote",
-                        "Unique load records, rate confirmations, milestones, and exportable history",
-                        "Controlled spreadsheet register only while manual checks remain reliable",
-                    ],
-                    [
-                        "Spot capacity sourcing using DAT One Standard subscription",
-                        "$150 monthly cap for one seat; verify current tariff",
-                        "Lane discovery and capacity contacts without substituting for onboarding",
-                        "Direct carrier roster reduces subscription spending but narrows coverage",
-                    ],
-                    [
-                        "Carrier screening using Highway broker onboarding quoted package",
-                        "$200 monthly cap; written quote determines package and affordability",
-                        "Identity evidence and exception handling before first carrier dispatch",
-                        "Quote RMIS or document manual checks with lower load limits",
-                    ],
-                    [
-                        "Shipment visibility using Trucker Tools quoted broker tracking",
-                        "$100 monthly cap; confirm usage charges and integration scope",
-                        "Shipment-specific tracking with stale-location alerts and delivery closure",
-                        "Scheduled driver check calls require consent and dispatcher availability",
-                    ],
-                    [
-                        "General ledger using QuickBooks Online Simple Start subscription",
-                        "$50 monthly cap; verify current tariff and user limitations",
-                        "Reconcile invoices, carrier liabilities, funding charges, and bank activity",
-                        "GnuCash supports bookkeeping but requires more manual document linking",
-                    ],
-                    [
-                        "Banking and ACH using Relay business account offering",
-                        "$25 monthly service cap; transaction fees require separate confirmation",
-                        "Separate cash buckets with payment permissions and bank reconciliation",
-                        "Existing insured business bank works if controls meet requirements",
-                    ],
-                    [
-                        "Agreement signatures using Dropbox Sign Essentials subscription",
-                        "$25 monthly cap for one sender; verify current tariff",
-                        "Executed agreements linked to carrier and shipper legal identities",
-                        "Signed PDFs with verified counterparties require manual evidence retention",
-                    ],
-                    [
-                        "Customer pipeline using HubSpot CRM free tools tier",
-                        "$0 software subscription cap within documented free-tier feature limits",
-                        "Track qualified shippers, credit status, next actions, and concentration",
-                        "Shared spreadsheet works with named owners and version history",
-                    ],
-                    [
-                        "Company calling using Zoom Phone US and Canada Unlimited",
-                        "$60 monthly cap for three users; confirm taxes separately",
-                        "Stable business numbers, coverage routing, and retrievable call metadata",
-                        "One dedicated business line limits concurrent dispatch conversations",
-                    ],
-                    [
-                        "Recovery copies using Backblaze B2 pay-as-you-go object storage",
-                        "$130 monthly combined cap for storage and scoped integration",
-                        "Independent exports with tested restoration and restricted deletion access",
-                        "Encrypted offline exports cost less but require daily ownership",
-                    ],
-                ],
-            },
-        },
-        {
-            "heading": "3. Separate Authority, Identity, and Trigger-Based Acquisition",
-            "epistemic_status": "operating_framework",
-            "paragraphs": [
-                (
-                    "The Authority and Security Procurement play begins with matching "
-                    "legal names across the entity record, IRS employer identification "
-                    "number, FMCSA application, bank account, shipper agreement, "
-                    "carrier agreement, and surety filing. Obtain the EIN directly "
-                    "from the IRS, document signing authority, and keep personal "
-                    "transactions outside business accounts. Confirm active broker "
-                    "authority, process-agent designation, and required security "
-                    "before arranging transportation subject to federal broker "
-                    "registration. Under 49 U.S.C. 13904 and 13906, registration "
-                    "and financial security are substantive operating requirements, "
-                    "not website badges. Distinguish the BMC-84 premium from its "
-                    "$75,000 coverage amount and review the current BMC-85 asset "
-                    "and trustee requirements in 49 CFR 387.307. Purchase insurance "
-                    "against the actual contractual exposure: contingent cargo, "
-                    "errors and omissions, general liability, and cyber coverage "
-                    "have different triggers and exclusions. A carrier cargo "
-                    "certificate is evidence to investigate, not proof that every "
-                    "commodity, theft method, or unattended vehicle loss is covered. "
-                    "Obtain confirmation from the insurer or authorized producer "
-                    "through an independently sourced channel. If a shipper demands "
-                    "coverage the business does not hold, revise the contract or "
-                    "bind the coverage before accepting freight. Do not fund "
-                    "insurance deposits by borrowing silently from committed "
-                    "carrier-payment cash."
-                ),
-                (
-                    "Implement fmcsa_dot_inspection_trigger_arbitrage as the supplied "
-                    "TRACK_1 acquisition play, with accurate timing and transparent "
-                    "branding. Its intended signals are new MC/DOT activity and "
-                    "recent hours-of-service or maintenance findings. However, a "
-                    "universal mandatory twenty-one-day insurance-filing window is "
-                    "not the correct operating premise: the twenty-one-day interval "
-                    "generally concerns the published authority application's protest "
-                    "period. A new USDOT number, pending application, and granted "
-                    "operating authority are different events. Ingest permitted "
-                    "FMCSA Census and Licensing & Insurance data daily where "
-                    "available, recording source publication dates and status "
-                    "transitions. Poll for SMS releases, but do not represent SMS "
-                    "as a universal daily violation feed; public SMS data are "
-                    "generally refreshed monthly, and access to detailed inspection "
-                    "information varies. Contact operators about visible, relevant "
-                    "issues without claiming federal affiliation or privileged "
-                    "knowledge. For example, 200 screened records yielding twenty "
-                    "qualified responses and four $250 documentation engagements "
-                    "produce $1,000 of separate service receipts. At twelve "
-                    "research hours valued at $30 and $100 distribution cost, "
-                    "$540 remains before delivery expenses. Those receipts are "
-                    "neither freight billings nor assumed scorecard upside. If "
-                    "freshness or access is inadequate, use transparent private "
-                    "compliance-agency branding, free BOC-3/MCS-150 status checks, "
-                    "and inbound hand-raiser forms instead of manufacturing urgency."
-                ),
-                (
-                    "Keep the trigger funnel separate from carrier acceptance. A "
-                    "fleet with a fresh maintenance citation may be a prospect "
-                    "for an administrative service while remaining unsuitable for "
-                    "a particular load. Do not imply that buying assistance "
-                    "improves access to brokerage freight or erases enforcement "
-                    "history. Screen authority, insurance, relevant safety evidence, "
-                    "equipment suitability, and the actual dispatch relationship "
-                    "on their own merits. Independent callbacks should use a "
-                    "previously verified number, especially when someone changes "
-                    "the carrier's bank account or requests payment to another "
-                    "entity. Require documented shipper authorization and contract "
-                    "structure before using a co-broker; ordinary motor-carrier "
-                    "authority does not establish brokerage authority. For an "
-                    "illustrative $2,400 load with a $2,000 carrier commitment, "
-                    "the $400 gross spread cannot justify a plausible $2,000 "
-                    "diversion loss. A thirty-minute verification costing $20 "
-                    "of staff time consumes 5% of spread but protects the "
-                    "whole payable and customer relationship. If identity remains "
-                    "unresolved, substitute a verified carrier or decline the "
-                    "movement. Commercial email must meet 15 U.S.C. 7704 "
-                    "requirements, including accurate identification and functioning "
-                    "opt-outs. Evaluate telephone and text outreach separately "
-                    "under applicable calling rules; a public federal record "
-                    "does not itself provide permission for every contact method."
-                ),
-            ],
-            "table": {
-                "caption": "Authority and Fraud Evidence Matrix Before a Shipment Becomes a Payable",
-                "headers": [
-                    "Control surface and primary evidence",
-                    "Required verification action before commercial reliance",
-                    "Failure signal requiring immediate operational response",
-                    "Fallback preserving service without accepting unresolved exposure",
-                ],
-                "rows": [
-                    [
-                        "Entity identity across registration, tax, and banking records",
-                        "Match exact legal names and documented authorized signers",
-                        "Payment beneficiary differs from the contracted legal entity",
-                        "Obtain independently verified assignment documentation before releasing funds",
-                    ],
-                    [
-                        "Broker authority shown through FMCSA registration status",
-                        "Confirm active status rather than relying on application receipt",
-                        "Website claims authority while official status remains pending",
-                        "Delay regulated brokerage activity until registration becomes effective",
-                    ],
-                    [
-                        "BMC-84 or BMC-85 filing and underlying security terms",
-                        "Confirm current filing plus premium, collateral, and renewal obligations",
-                        "Restricted collateral has been counted as accessible operating float",
-                        "Recapitalize or shrink exposure before accepting additional tenders",
-                    ],
-                    [
-                        "Carrier insurance evidence and commodity-specific coverage requirements",
-                        "Verify applicable coverage through an independently sourced producer contact",
-                        "Certificate and policy information conflict about covered cargo",
-                        "Use another verified carrier meeting the actual shipment requirements",
-                    ],
-                    [
-                        "Authority transition and inspection trigger acquisition records",
-                        "Store publication dates and distinguish applications from granted authority",
-                        "Marketing message depends on unsupported filing deadlines or affiliation",
-                        "Use clearly branded inbound status checks without artificial urgency",
-                    ],
-                    [
-                        "Carrier dispatch authority and requested payment beneficiary",
-                        "Confirm changes through established contacts outside the initiating message",
-                        "Urgent bank change arrives alongside unfamiliar dispatch contact details",
-                        "Suspend affected payment while verifying the legitimate contractual payee",
-                    ],
-                ],
-            },
-        },
-        {
-            "heading": "4. Rehearse the First Load, Then Release Capacity Gradually",
-            "epistemic_status": "operating_framework",
-            "paragraphs": [
-                (
-                    "The Launch Rehearsal and Exception Drill play turns configuration "
-                    "into an observable production test. Build one synthetic load "
-                    "with a $2,400 shipper charge and $2,000 carrier payable; mark "
-                    "it clearly as a test so nobody issues a real tender or "
-                    "payment. Move it through credit review, carrier verification, "
-                    "rate confirmation, pickup, tracking, delivery evidence, invoice "
-                    "creation, and reconciliation. Confirm that the $400 spread "
-                    "appears once and that neither the bank transfer nor the "
-                    "carrier invoice becomes a second revenue entry. Inject a "
-                    "bank-change request, an unreadable delivery document, a stale "
-                    "tracking event, and a disputed detention charge. Each "
-                    "exception must have a named owner, evidence requirements, "
-                    "and a documented release decision. Test after-hours coverage "
-                    "with the person actually assigned to answer, not the "
-                    "founder assuming permanent availability. Restore the load "
-                    "packet from an independent export and time the recovery. "
-                    "A desk that can only recover by contacting a departed "
-                    "employee has not passed. Finish by checking the daily "
-                    "cash forecast against the intended carrier payment date "
-                    "and the customer's actual invoice-acceptance rules. The "
-                    "exercise should produce a retained evidence packet, not "
-                    "a verbal assurance that the software appears to work."
-                ),
-                (
-                    "Release credit and capacity in measured increments. A "
-                    "$30,000 unrestricted reserve with a $10,000 liquidity "
-                    "cushion supports no more than $20,000 of otherwise "
-                    "unfunded carrier commitments under this simple exposure "
-                    "rule. At $2,000 per load, that is ten loads, not "
-                    "twenty merely because the shipper promises repeat volume. "
-                    "Deduct other due obligations and anticipated deductions "
-                    "before using this ceiling; released customer payments "
-                    "replenish capacity only when available to spend. Set "
-                    "customer limits using all outstanding exposure, including "
-                    "delivered but unbilled freight and accepted tenders. "
-                    "Concentration matters because ten loads for one debtor "
-                    "are not ten independent credit risks. Review aging "
-                    "daily during the pilot and immediately stop additional "
-                    "unsecured commitments when an agreed threshold is "
-                    "breached. Use cleared deposits, shorter payment terms, "
-                    "or a properly reviewed funding facility to reopen "
-                    "capacity. Never confuse an undrawn line with cash "
-                    "unless the borrowing conditions are satisfied. Measure "
-                    "automation by exception minutes per load and clean "
-                    "invoice turnaround, not the number of integrations "
-                    "installed. If forty monthly shipments each save fifteen "
-                    "minutes, ten recovered hours valued at $30 justify "
-                    "at most $300 of monthly labor savings before "
-                    "maintenance and error costs."
-                ),
-                (
-                    "Maintain a weekly owner dashboard joining cash, service, "
-                    "and control evidence. Include unrestricted float, restricted "
-                    "security assets, next fourteen days of carrier maturities, "
-                    "customer aging, unbilled deliveries, disputed accessorials, "
-                    "claims reserves, and identity exceptions. Display gross "
-                    "shipper billings separately from brokerage spread and "
-                    "owner profit so a large booked load cannot hide "
-                    "deteriorating collections. Review vendor invoices against "
-                    "actual seats and transactions; cancel duplicate tracking "
-                    "or document features only after proving the remaining "
-                    "system retains the necessary record. Broker transaction "
-                    "records under 49 CFR 371.3 generally require three "
-                    "years of retention and must support the specified "
-                    "transaction information and review rights. Retain longer "
-                    "where contracts, claims, tax obligations, or preservation "
-                    "duties require it. Document each material change in "
-                    "banking, security, insurance, carrier onboarding, and "
-                    "customer terms, then rerun the relevant rehearsal "
-                    "step. This closes the eight-play operating map: "
-                    "reserve allocation, payment terms, authority and "
-                    "security, infrastructure procurement, carrier identity, "
-                    "invoice evidence, trigger acquisition, and launch "
-                    "rehearsal. Seven are chapter-local operating labels; "
-                    "only the trigger identifier was supplied as a "
-                    "catalog play. Expand toward the canonical team "
-                    "and revenue cases only when observed collection "
-                    "behavior and tested staffing capacity support the "
-                    "next block of carrier commitments."
-                ),
-            ],
-            "table": {
-                "caption": "Pre-Flight Evidence and Bounded Production Release Decisions",
-                "headers": [
-                    "Production readiness test and operating owner",
-                    "Evidence required before the first live tender",
-                    "Concrete release criterion tied to actual exposure",
-                    "Failure response that preserves cash and records",
-                ],
-                "rows": [
-                    [
-                        "Founder verifies authority, security, and process-agent readiness",
-                        "Official active registration and current required filings retained",
-                        "Legal entity and operating records match across all documents",
-                        "Postpone regulated brokerage activity until every discrepancy is resolved",
-                    ],
-                    [
-                        "Treasury owner proves available float and payment permissions",
-                        "Daily forecast separates unrestricted balances from all restricted assets",
-                        "Next carrier commitments fit reserves after the liquidity cushion",
-                        "Reduce tender capacity or obtain cleared customer deposits first",
-                    ],
-                    [
-                        "Carrier owner tests onboarding and independent identity verification",
-                        "Verified contact, authority, coverage, equipment, and beneficiary evidence retained",
-                        "Every material conflict has a documented resolution before dispatch",
-                        "Substitute a verified carrier or decline the affected shipment",
-                    ],
-                    [
-                        "Billing owner rehearses invoice eligibility and document retrieval",
-                        "Complete test packet contains required delivery and accessorial evidence",
-                        "Invoice reconciles to agreed charges without duplicate revenue entries",
-                        "Repair the document workflow before granting additional customer credit",
-                    ],
-                    [
-                        "Dispatch owner exercises tracking and after-hours incident response",
-                        "Assigned responder successfully handles delayed pickup and stale tracking",
-                        "Customer updates and carrier contacts remain available during outage",
-                        "Reduce operating hours or secure qualified coverage before launch",
-                    ],
-                    [
-                        "System owner restores shipment evidence from independent exports",
-                        "Recovered records include rates, contacts, documents, invoices, and timestamps",
-                        "Restored packet supports operations without the unavailable primary application",
-                        "Repair exports and access controls before increasing shipment volume",
-                    ],
-                ],
-            },
-            "callout": {
-                "kind": "OPERATOR GATE",
-                "title": "Four Conditions Before the First Live Shipment",
-                "body": "Retain the evidence for each condition and assign one accountable owner.",
-                "items": [
-                    "Verify effective broker registration, process-agent filing, and $75,000 security; an application receipt does not establish active authority.",
-                    "Prove the first shipment's carrier payment fits unrestricted cash after existing obligations and the documented liquidity cushion.",
-                    "Complete independent carrier identity, coverage, equipment, and beneficiary checks; resolve conflicting dispatch or bank instructions before release.",
-                    "Pass the synthetic shipment, invoice, outage, and exception drills with named daytime and after-hours responders.",
-                ],
-            },
-            "sop_steps": [
-                {
-                    "step": 1,
-                    "title": "Freeze the funded operating envelope",
-                    "action": "Approve startup allocations and a daily thirteen-week cash forecast.",
-                    "detail": "Separate accessible float, restricted security, fixed overhead, and incident cash; attach actual surety and insurance terms.",
-                },
-                {
-                    "step": 2,
-                    "title": "Configure the minimum connected stack",
-                    "action": "Assign one owner, identifier, and record location to each production layer.",
-                    "detail": "Obtain written vendor pricing, limit seats, enable multifactor authentication, and test exports before annual commitments.",
-                },
-                {
-                    "step": 3,
-                    "title": "Execute the complete shipment rehearsal",
-                    "action": "Run the synthetic load through dispatch, exceptions, invoicing, and reconciliation.",
-                    "detail": "Retain results for changed payee details, missing delivery evidence, tracking outage, recovery, and customer credit exhaustion.",
-                },
-                {
-                    "step": 4,
-                    "title": "Release a bounded live pilot",
-                    "action": "Accept only shipments inside verified carrier capacity and funded customer limits.",
-                    "detail": "Review aging, unbilled deliveries, reserve coverage, and exception minutes daily before increasing tenders or staffing.",
-                },
-            ],
-        },
-    ],
-    "pull_quote": "Buy the controls that protect carrier cash before buying the software that makes the desk look large.",
-    "diagram_id": "diag-07",
-    "action_checklist": [
-        "Allocate at least 50% of startup capital to accessible carrier float, excluding surety collateral and trust assets.",
-        "Obtain written BMC-84 or BMC-85 terms and verify effective broker authority, process-agent filing, and insurance scope.",
-        "Build a daily thirteen-week forecast using actual shipper collection dates, carrier maturities, and concentration cushions.",
-        "Quote the twelve stack layers, cap seats and commitments, and prove load-level exports before production use.",
-        "Configure the FMCSA trigger play with source timestamps, accurate authority stages, transparent branding, and inbound fallback.",
-        "Pass the four pre-flight conditions, retain the synthetic shipment evidence, and launch within documented cash and credit limits.",
-    ],
-    "statutory_citations": [
-        {
-            "title": "49 U.S.C. 13904 — Registration of brokers",
-            "url": "https://www.law.cornell.edu/uscode/text/49/13904",
-            "relevance": "Establishes federal broker registration requirements relevant to activating the operating desk.",
-        },
-        {
-            "title": "49 U.S.C. 13906(b) — Broker financial security",
-            "url": "https://www.law.cornell.edu/uscode/text/49/13906",
-            "relevance": "Provides the statutory framework for the $75,000 broker security requirement and related security protections.",
-        },
-        {
-            "title": "49 CFR 387.307 — Property broker surety bond or trust fund",
-            "url": "https://www.ecfr.gov/current/title-49/section-387.307",
-            "relevance": "Controls required broker security, including current trust and surety requirements that must be distinguished from unrestricted float.",
-        },
-        {
-            "title": "49 CFR 366.4 — Designation of process agents",
-            "url": "https://www.ecfr.gov/current/title-49/section-366.4",
-            "relevance": "Supports verification of the process-agent designation required for applicable registered operations.",
-        },
-        {
-            "title": "49 CFR 371.3 — Records to be kept by brokers",
-            "url": "https://www.ecfr.gov/current/title-49/section-371.3",
-            "relevance": "Specifies broker transaction records, the three-year retention period, and transaction review rights.",
-        },
-        {
-            "title": "15 U.S.C. 7704 — Requirements for commercial electronic mail",
-            "url": "https://www.law.cornell.edu/uscode/text/15/7704",
-            "relevance": "Governs commercial email identification, message practices, opt-out mechanisms, and processing of opt-out requests.",
-        },
-        {
-            "title": "47 CFR 64.1200 — Restrictions on telephone solicitation",
-            "url": "https://www.ecfr.gov/current/title-47/section-64.1200",
-            "relevance": "Requires separate evaluation of calling and texting methods rather than treating public fleet records as permission for outreach.",
-        },
-    ],
-}
+CHAPTER_4 = {'id': 'Q4',
+ 'chapter_id': 'Q4',
+ 'chapter_number': 4,
+ 'question_number': 4,
+ 'slug': 'freight-agent-vs-freight-broker',
+ 'question_prompt': 'Should I start as a freight agent or a licensed broker, and how does agent money '
+                    'actually work?',
+ 'kicker': 'Q4 / THE BIG MONEY PLAYBOOKS',
+ 'title': 'Freight Agent vs. Freight Broker',
+ 'subtitle': 'Choosing the first path, becoming an agent with no MC, commission splits and 100%-commission '
+             'models, cradle-to-grave realities, the grit test, and agent success stories including a '
+             '$500K/month build',
+ 'layout_template': 'comparison_matrix',
+ 'reading_time_minutes': 15,
+ 'executive_summary': 'Freight agents and brokers split the same load differently. Practitioners agree the '
+                      'broker holds MC authority, the $75K bond, the back office and the credit risk. The '
+                      'agent is the front-end salesperson, paid a share of margin and never of gross. '
+                      'Splits cluster at 50 to 70%: new agents sit near 50%, while agents who bring '
+                      "shippers or volume reach 60 to 70%. In Matt Krause's math, a $300 margin pays an "
+                      'agent $180. Five shippers pay an agent $4,500 a week against $7,500 for an owner, '
+                      'but the owner carries $2,500 to $3,500 in startup costs plus factoring, insurance '
+                      'and receivables that can stretch to 65 days. Dennis Brown pegs top-100 broker '
+                      'margins at 14.99%. The disagreements center on book ownership, non-competes, Eagle '
+                      "Express's 100% commission with a 5% gross fee, and whether new brokers should ever "
+                      'recruit agents.',
+ 'key_metrics': [{'label': 'Agent Take on a $300 Margin',
+                  'metric': 'Agent Take on a $300 Margin',
+                  'value': '$180 to the agent, $120 to the brokerage at a 60% split',
+                  'confidence': 'attributed_practitioner_claim',
+                  'context': 'Shipper pays $2,000 and the carrier gets $1,700. The split is always taken '
+                             'from margin, never from gross.',
+                  'source': 'Matt Krause ([hhT4X32MspU @ 00:01:29])'},
+                 {'label': 'Top-100 Brokerage Average Margin',
+                  'metric': 'Top-100 Brokerage Average Margin',
+                  'value': '14.99%',
+                  'confidence': 'attributed_practitioner_claim',
+                  'context': "Dennis Brown's analysis of $70B in 2024 freight spend across the top 100 "
+                             'brokerages.',
+                  'source': 'FreightBrokers ([6bYvpf5qJSY @ 00:10:08])'},
+                 {'label': 'Owner Startup Cost vs Agent Startup Cost',
+                  'metric': 'Owner Startup Cost vs Agent Startup Cost',
+                  'value': '$2,500 to $3,500 for an owner vs roughly $0 for an agent',
+                  'confidence': 'attributed_practitioner_claim',
+                  'context': 'Owner total includes the $300 federal filing and a $20 to $100 process '
+                             'agent. An agent may only need a background check.',
+                  'source': 'Matt Krause ([hhT4X32MspU @ 00:08:29])'},
+                 {'label': 'Veteran Agent Split',
+                  'metric': 'Veteran Agent Split',
+                  'value': 'About 67% of profit',
+                  'confidence': 'attributed_practitioner_claim',
+                  'context': 'Connor Harutyunyan, an ALG agent. New agents typically start near 50%, some '
+                             'brokerages pay 40%, and tenured high-volume agents reach 60 to 70%.',
+                  'source': 'FreightBrokers ([jgNUpO0VPws @ 01:04:08])'}],
+ 'sections': [{'heading': 'Section 1: The Practitioner Consensus',
+               'paragraphs': ['Every practitioner draws the same line between the two seats. Matt Krause '
+                              'calls the broker the “kitchen owner”: the broker holds the MC number and '
+                              'surety bond and runs invoicing, carrier pay, compliance and claims. In '
+                              'return, the broker makes 100% of the profit while footing 100% of the risk '
+                              '[xe6QTceV_JE @ 00:01:04]. Nate Cross of Freight 360 describes the same '
+                              'structure. A licensed, usually mid-size brokerage maintains authority, bond '
+                              'and insurance, and the agent works from home as an independent contractor. '
+                              'The back office absorbs billing, collections, claims, cash flow, marketing '
+                              'and IT support, and sometimes pricing and dispatch [SPl9Y_xMJHA @ '
+                              '00:02:08]. Victor Mason compresses it to one line: the agent is “only the '
+                              "front end,” operating under the brokerage's authority while focusing on "
+                              'sales and relationships. He calls it the lowest barrier to entry in the '
+                              'business [4n9e0eEuFtM @ 00:01:23]. Krause adds the piece new operators '
+                              'underestimate. The brokerage supplies credit to float shippers who pay in '
+                              '30 to 60 days. It also carries the $75K bond, which costs roughly $1,200 to '
+                              '$1,300 in premium with good credit [hhT4X32MspU @ 00:01:46]. Krause sums up '
+                              'the trade as profit margin for peace of mind: “The broker is building a '
+                              'business and the agent is building a job.”',
+                              'The second point of agreement is that commission is cut from margin, never '
+                              "from gross. Krause says it flatly: “it's always a percent of the margin” "
+                              "[hhT4X32MspU @ 00:01:29]. Freight 360's commission breakdown repeats the "
+                              'rule: “you should only ever get compensated off of your margin” '
+                              '[e9-lormMK4w @ 00:23:06]. The ranges cluster tightly. Krause puts splits at '
+                              '50 to 80%, mostly 60 to 70%, with agents who bring their own shippers '
+                              'commanding the high end. Cross quotes 50 to 70%, with the brokerage keeping '
+                              '30 to 50% to run its back office and for profit [SPl9Y_xMJHA @ 00:02:46]. '
+                              'Connor Harutyunyan, an ALG agent interviewed by Dennis Brown, reports that '
+                              'new agents typically start near 50%. Some shops pay 40%, and tenured '
+                              'high-volume agents reach 60 to 70%. Connor sits at about 67% [jgNUpO0VPws @ '
+                              '01:03:33]. Freight 360 separates the roles further: a cradle-to-grave agent '
+                              'can earn 70%, a pure freight finder half or less, and a W-2 rep who did not '
+                              'find the customer 5 to 15% of gross profit. Krause also tells operators to '
+                              'ask exactly what comes out before and after the split: load board, software '
+                              'and insurance. Those deductions quietly change the real percentage an agent '
+                              'takes home.',
+                              'Practitioners also agree on who should take which seat and what to read '
+                              "before signing. Krause's decision rule is simple. With no logistics, sales "
+                              'or brokering experience, start as an agent. With any one of the three, get '
+                              "your own license [hhT4X32MspU @ 00:00:35]. Krause's three-step funnel "
+                              'follows from that rule: work as an agent, build proven customers, then get '
+                              'licensed. The agent path is the training, and the broker path is how you '
+                              'scale. Ownership of the book is the universal checkpoint. Krause warns '
+                              'operators to check who owns the book of business, to watch for 1 to 2 year '
+                              'non-competes, and to get shipper ownership in writing. Mason says to “read '
+                              'the agreement carefully” for non-competes, non-solicits and whether you '
+                              'build your own book [4n9e0eEuFtM @ 00:03:01]. Robert, a TAB agent on Bobby '
+                              'Loads, verified that his customers could transfer before joining. He points '
+                              'to a contract stating that customers stay his [bkrMqfq4evM @ 00:24:50]. '
+                              'Finally, nobody sells this as passive income. Krause calls it a home-office '
+                              'grind with no steady paycheck. Dennis Brown tells owner-operators that the '
+                              'agent seat is doable at 2 to 3 hours a day, or 10 to 15 hours a week, but '
+                              "“It's not a side hustle” [6bYvpf5qJSY @ 00:32:22]."],
+               'table': {'caption': 'Where the practitioners line up on agent vs broker fundamentals',
+                         'headers': ['Consensus Point',
+                                     'What Practitioners Say',
+                                     'Operator Implication',
+                                     'Expert Source'],
+                         'rows': [['Broker holds authority, bond and liability',
+                                   'Broker keeps 100% of the profit and foots 100% of the risk, including '
+                                   'claims and compliance',
+                                   'The agent avoids MC, bond and back-office overhead but gives up a '
+                                   'large share of margin',
+                                   'Matt Krause ([xe6QTceV_JE @ 00:01:04])'],
+                                  ['The agent is only the front end',
+                                   "The agent operates under the brokerage's authority and focuses on "
+                                   'sales and shipper relationships',
+                                   'Lowest barrier to entry, but pay depends entirely on what the agent '
+                                   'personally sells',
+                                   'Victor Mason ([4n9e0eEuFtM @ 00:01:23])'],
+                                  ['Split is paid on margin only',
+                                   'Commission is always a percentage of margin, never a cut of gross '
+                                   'revenue',
+                                   'Model every load as shipper rate minus carrier cost before applying '
+                                   'any split',
+                                   'Matt Krause ([hhT4X32MspU @ 00:01:29])'],
+                                  ['Typical split ranges',
+                                   'Agents generally earn 50 to 70% while the brokerage keeps 30 to 50% '
+                                   'for back office and profit',
+                                   'Benchmark every brokerage offer against this band before signing an '
+                                   'agent agreement',
+                                   'Freight 360 ([SPl9Y_xMJHA @ 00:02:46])'],
+                                  ['Starting split for new agents',
+                                   'New agents typically get about 50%, some brokerages pay 40%, veterans '
+                                   'reach 60 to 70%',
+                                   'Expect the percentage to climb through tenure, volume and bringing '
+                                   'your own shippers',
+                                   'FreightBrokers ([jgNUpO0VPws @ 01:03:33])'],
+                                  ['Book ownership must be in writing',
+                                   'Read every agreement for non-competes, non-solicits and whether the '
+                                   'agent builds their own book',
+                                   'Confirm customer transfer rights before onboarding, not after landing '
+                                   'the first big account',
+                                   'Victor Mason ([4n9e0eEuFtM @ 00:03:01])'],
+                                  ['Experience decides which seat to take',
+                                   'No logistics, sales or brokering experience means start as an agent; '
+                                   'any one of the three means get licensed',
+                                   'Use the agent seat as paid training, then file authority once shippers '
+                                   'are proven',
+                                   'Matt Krause ([hhT4X32MspU @ 00:00:35])']]}},
+              {'heading': 'Section 2: Exact Street Mechanics, Tools & Numbers',
+               'paragraphs': ["Run the load math the way the practitioners do. Krause's baseline: the "
+                              'shipper pays $2,000 and the carrier gets $1,700. The $300 margin splits '
+                              '60/40, so the agent pockets $180 and the brokerage $120 [hhT4X32MspU @ '
+                              "00:00:50]. Mason's version uses a $2,500 shipper rate and $2,000 in carrier "
+                              'pay. That leaves a $500 margin, and a 50% split pays $250 a load. Two loads '
+                              "a day equals $500 a day, with no cap but no floor either: “If you don't "
+                              "sell, you don't earn” [4n9e0eEuFtM @ 00:02:08]. Connor's example runs "
+                              'smaller. A $1,000 load with $800 to the carrier leaves $200 profit, and a '
+                              "new 50% agent takes $100 [jgNUpO0VPws @ 01:03:51]. Krause's beginner "
+                              'example prices a $500 carrier cost plus 20% for a $100 margin, leaving the '
+                              'agent $60 to $70 [pXxS5GOHXZE @ 00:04:04]. Scale is where the seats '
+                              'diverge. In the same breakdown, Krause models one shipper at 5 loads a '
+                              'week. That pays the agent $900 a week against $1,500 for an owner. At five '
+                              'shippers, it pays the agent $4,500 against $7,500 for the owner. The agent '
+                              "stays ahead at low volume, because the owner's gross must first cover bond "
+                              'premium, a factoring cut, insurance, load board and software before any of '
+                              'it becomes real take-home.',
+                              'The owner seat carries a cost stack and a cash-flow trap the agent never '
+                              'touches. Krause lists owner startup at $2,500 to $3,500 all-in, including '
+                              'the $300 federal filing and a $20 to $100 process agent. Recurring costs '
+                              'follow: bond premium of $900 to $2,500 a year, plus factoring cuts, '
+                              "insurance, load board and software. The agent's startup is roughly $0, "
+                              'possibly a background check [hhT4X32MspU @ 00:08:29]. The real trap is '
+                              'receivables. Krause walked away from more than $2M in awarded freight '
+                              'because the shipper paid in about 65 days, and neither the factoring '
+                              'company nor a bank would fund it: “I was literally winning too much freight '
+                              'too soon” [hhT4X32MspU @ 00:02:58]. That float is exactly what an agent '
+                              'rents from the brokerage. Dennis Brown adds that a broker can only run one '
+                              'factoring company because of the UCC filing, so that choice locks in early '
+                              '[wOYj-TrF9aI @ 00:32:14]. On margin expectations, Brown analyzed $70B in '
+                              '2024 freight spend across the top 100 brokerages and found an average '
+                              'margin of 14.99%. He adds that brokers sometimes lose $100 to $500 on a '
+                              "load to keep a client [6bYvpf5qJSY @ 00:10:08]. Krause's year-one owner "
+                              'target lands in the same band: about $300K in business at a 15 to 20% '
+                              'margin.',
+                              "The agent's paycheck runs on an activity engine. Krause sets the baseline "
+                              'at 100 activities a day. That should yield 10 to 15 decision-maker '
+                              'conversations a week and 1 to 3 quotes. Beginners start at 5 a day and add '
+                              '5 daily [yeFtuLvEdO8 @ 00:03:43]. Robert, the TAB agent, makes 200 to 600 '
+                              'calls a day and says it takes 5 to 6 touches over 6 to 8 months to win a '
+                              'customer. Robert usually clears $100 to $200 a load and holds a $100 '
+                              'minimum. In August, Robert moved 186 loads for earnings “just above” five '
+                              "figures [bkrMqfq4evM @ 00:16:30]. Carl's surgical prospecting, shown on "
+                              "Krause's channel, cuts the dial count. 100 generic calls produce 2 quotes "
+                              'and 0 loads. 50 targeted calls produce 4 quotes and 1 load at a $200 '
+                              'margin, worth $4,000 a month [EJYdmoWKsmw @ 00:06:34]. Connor went the '
+                              'other way on channel. LinkedIn produced nothing for about a year. Then '
+                              'daily posts about the niche, life and jokes, plus 1,000 to 2,000 targeted '
+                              'connections, turned cold calls into warm ones. The first inbound lead moved '
+                              "three or four shipments the next day [jgNUpO0VPws @ 00:11:52]. Connor's "
+                              'first $10K commission month came after 4 to 5 months, with zero sales '
+                              'background.'],
+               'table': {'caption': 'Unit economics and cost numbers the practitioners actually run',
+                         'headers': ['Mechanic', 'Numbers Stated', 'How Operators Use It', 'Expert Source'],
+                         'rows': [['Per-load split math',
+                                   '$2,000 shipper rate, $1,700 carrier cost, $300 margin, $180 to the '
+                                   'agent at 60%',
+                                   'Price every quote backward from margin before promising carriers a '
+                                   'rate',
+                                   'Matt Krause ([hhT4X32MspU @ 00:00:50])'],
+                                  ['Agent vs owner at scale',
+                                   'Five shippers at 5 loads weekly pay an agent $4,500 versus an owner '
+                                   '$7,500',
+                                   'Stay an agent at low volume; owner math only wins with scale and '
+                                   'funding',
+                                   'Matt Krause ([hhT4X32MspU @ 00:05:46])'],
+                                  ['Owner startup and overhead',
+                                   '$2,500 to $3,500 total, including the $300 federal filing and a $20 to '
+                                   '$100 process agent',
+                                   'Budget recurring bond premium, factoring, insurance and software '
+                                   'before filing authority',
+                                   'Matt Krause ([hhT4X32MspU @ 00:08:29])'],
+                                  ['W-2 rep benchmark',
+                                   '$40,000 median base plus a 13.2% average commission on gross profit',
+                                   'Compare commission-only agent offers against salaried rep pay that '
+                                   'includes training',
+                                   'Freight 360 ([SPl9Y_xMJHA @ 00:04:15])'],
+                                  ['Industry margin reality check',
+                                   'Top 100 brokerages averaged a 14.99% margin on $70B of 2024 freight '
+                                   'spend',
+                                   'Use it to sanity-check any pitch promising outsized brokerage margins',
+                                   'FreightBrokers ([6bYvpf5qJSY @ 00:10:08])'],
+                                  ['100% commission offer',
+                                   'No split and no non-compete, but a 5% admin fee charged on gross',
+                                   'Model the gross fee against your real margin before transferring an '
+                                   'active book',
+                                   'Eagle Express ([952lbvkEVvM @ 00:01:19])'],
+                                  ['Per-load margin floor',
+                                   'Usually $100 to $200 per load, with a $100 minimum and sometimes as '
+                                   'low as $25',
+                                   'Set a floor, but drop margin as far as possible to secure an available '
+                                   'carrier',
+                                   'Bobby Loads ([bkrMqfq4evM @ 00:16:30])']]},
+               'callout': {'kind': 'INSIDER PRO-TIPS',
+                           'title': 'Street-level edges for the agent-vs-broker decision',
+                           'body': 'These are the moves practitioners say separate agents who keep their '
+                                   "margin and their book from agents who end up building someone else's "
+                                   'business.',
+                           'items': ['Before signing, ask exactly what the brokerage deducts before and '
+                                     'after the split: load board, software and insurance. The headline '
+                                     'percentage is not what you keep. [Matt Krause — hhT4X32MspU @ '
+                                     '00:04:19]',
+                                     'Read a “100% commission” offer closely. Eagle Express charges a 5% '
+                                     'admin fee on gross, while other practitioners insist compensation '
+                                     'should only come off margin. [Eagle Express — 952lbvkEVvM @ '
+                                     '00:01:19]',
+                                     'Never give a load back to a shipper. Carl will eat a $500 loss '
+                                     'rather than hand back freight and lose the account. [Matt Krause — '
+                                     'EJYdmoWKsmw @ 00:08:07]',
+                                     'Avoid cold calling shippers before you are onboarded with a '
+                                     'brokerage, because you cannot answer a free-quote request. Network '
+                                     'at trade shows and on LinkedIn instead. [FreightBrokers — '
+                                     '6bYvpf5qJSY @ 00:06:16]']},
+               'sop_steps': [{'step': 1,
+                              'title': 'Pick the seat by experience',
+                              'action': 'Audit your logistics, sales and brokering background before '
+                                        'choosing agent or license.',
+                              'detail': 'With none of the three, start as an agent at roughly $0 in '
+                                        'startup cost. With any one of them, file your own authority and '
+                                        'budget $2,500 to $3,500. [Matt Krause — hhT4X32MspU @ 00:00:35]'},
+                             {'step': 2,
+                              'title': 'Vet the brokerage and the paper',
+                              'action': 'Score the brokerage on carrier pay, ops support, tools, split and '
+                                        'contract terms.',
+                              'detail': 'Confirm the brokerage pays carriers on time, offers ops support '
+                                        'and has tools. Then read the agreement for non-competes, '
+                                        'non-solicits and who owns the book. [Victor Mason — 4n9e0eEuFtM @ '
+                                        '00:03:01] Verify your customers can transfer before you join. '
+                                        '[Bobby Loads — bkrMqfq4evM @ 00:24:50]'},
+                             {'step': 3,
+                              'title': 'Run the daily activity engine',
+                              'action': 'Build to 100 sales activities a day and track every touch.',
+                              'detail': 'Start at 5 activities a day and add 5 daily until you reach 100. '
+                                        'Target 10 to 15 decision-maker conversations and 1 to 3 quotes a '
+                                        'week, and log everything in a CRM or spreadsheet. [Matt Krause — '
+                                        'yeFtuLvEdO8 @ 00:03:43]'},
+                             {'step': 4,
+                              'title': 'Retain, stack shippers, then scale',
+                              'action': 'Lock in weekly contact with every shipper and add new clients '
+                                        'monthly before filing authority.',
+                              'detail': 'Call every shipper weekly; Carl does it on Thursdays and keeps '
+                                        'the talk about 75% personal. [Matt Krause — EJYdmoWKsmw @ '
+                                        '00:28:24] Aim for 2 to 4 new clients a month, since 5 to 10 small '
+                                        'clients can produce a six-figure income. [FreightBrokers — '
+                                        'wOYj-TrF9aI @ 00:33:57]'}]},
+              {'heading': 'Section 3: Where Practitioners Disagree & Alternative Playbooks',
+               'paragraphs': ['The split number is the loudest fault line, and the ranges barely overlap. '
+                              'Matt Krause quotes agent splits of 50 to 80 percent, mostly landing at 60 '
+                              'to 70, with the high end reserved for agents who bring their own shippers, '
+                              'and tells agents to ask exactly what gets deducted before and after the '
+                              'split, from load board to software to insurance [hhT4X32MspU @ 00:04:19]. '
+                              'Nate Cross at Freight 360 pins the agent band at 50 to 70 percent, with the '
+                              'brokerage keeping 30 to 50 to fund the back office and profit [SPl9Y_xMJHA '
+                              '@ 00:02:46]. A separate Freight 360 episode pushes back hard: a '
+                              'cradle-to-grave agent may see 70 percent, but a pure freight finder makes '
+                              'half or less, and that speaker has never seen anything above 50, with most '
+                              'deals at 25 to 40 percent [e9-lormMK4w @ 00:24:30]. Connor Harutyunyan, an '
+                              'ALG agent, splits the difference with real numbers: new agents typically '
+                              'start around 50 percent, some shops pay 40, tenured high-volume agents earn '
+                              '60 to 70, and Connor personally sits near 67 percent [jgNUpO0VPws @ '
+                              '01:04:08]. The operator read: the percentage is negotiated off tenure, '
+                              'volume, and whether the agent owns the customer relationship end to end.',
+                              'Who owns the book is the second split, and Matt Krause contradicts Matt '
+                              'Krause. In one breakdown, an agent who leaves a brokerage gets to keep '
+                              'their clients and carry them to another shop [pXxS5GOHXZE @ 00:04:45]; in '
+                              'another, Krause warns that the agreement decides who owns the book, flags '
+                              '1-to-2-year non-competes, then tells agents to run a walk-away test and get '
+                              'shipper ownership in writing [hhT4X32MspU @ 00:06:43]. Eagle Express sells '
+                              "the opposite contract outright: no non-compete, so 'your hard work will "
+                              "always belong to you,' paired with a pitch of 100 percent of profit "
+                              'margins, though the same offer carries a 5 percent admin fee on gross and '
+                              'requires transferring an active book [952lbvkEVvM @ 00:00:32]. Robert, a '
+                              'TAB agent on Bobby Loads, says the TAB contract keeps customers with the '
+                              'agent, but insists you verify your customers can transfer before you sign '
+                              'anything [bkrMqfq4evM @ 00:24:50]. The W-2 seat sits at the far pole, where '
+                              'the house owns the accounts outright. The working rule across these '
+                              'speakers: read the non-compete and non-solicit language, and confirm '
+                              'customer portability in writing, before the first dial.',
+                              'Prospecting splits between raw volume and precision, and follow-up cadence '
+                              'splits even harder. Carl, the 24-year-old running a $6M annualized book on '
+                              "Matt Krause's channel, rejects the spray: 100 generic calls yield two "
+                              'quotes and zero loads, while 50 targeted calls yield four quotes and one '
+                              'load at a $200 margin, roughly $4,000 a month [EJYdmoWKsmw @ 00:06:34]. '
+                              'Once a shipper is won, Carl calls every one weekly on Thursdays, visits '
+                              'quarterly, and keeps the talk about 75 percent personal [EJYdmoWKsmw @ '
+                              '00:28:24]. Dennis Brown opposes weekly touches on prospects, telling '
+                              'brokers to ask permission to follow up in 30, 60, or 90 days and then do '
+                              'exactly what the prospect said, because calling weekly makes you look like '
+                              "'a jerk' [wOYj-TrF9aI @ 00:19:36]. Connor Harutyunyan skipped cold volume "
+                              'almost entirely: daily LinkedIn posts, 1,000 to 2,000 targeted connections '
+                              'in year one, direct messages, then phone calls, while dismissing mass email '
+                              'to bought lists of 800 to 1,000 a day as useless because 99 percent lands '
+                              'in spam [jgNUpO0VPws @ 00:36:03]. The reconciling detail is the audience: '
+                              "Carl's weekly rhythm serves existing shippers, Dennis's 30-60-90 rule "
+                              'serves prospects, so retention and prospecting run on separate clocks.'],
+               'table': {'caption': 'Side-by-side playbooks where freight agents and brokers split on '
+                                    'splits, ownership, scaling, and margin discipline',
+                         'headers': ['Fault Line', 'Playbook A', 'Playbook B', 'Expert Source'],
+                         'rows': [['Agent commission split range',
+                                   'Krause quotes 50 to 80 percent, mostly 60 to 70, high end for agents '
+                                   'bringing shippers',
+                                   'Freight 360 has never seen above 50 percent, most deals at 25 to 40',
+                                   'Matt Krause ([hhT4X32MspU @ 00:04:19]); Freight 360 ([e9-lormMK4w @ '
+                                   '00:24:30])'],
+                                  ['Book ownership when the agent leaves',
+                                   'Krause says agents keep their own clients and bring them to another '
+                                   'brokerage',
+                                   'Krause later warns of 1-to-2-year non-competes and demands shipper '
+                                   'ownership in writing',
+                                   'Matt Krause ([pXxS5GOHXZE @ 00:04:45]); Matt Krause ([hhT4X32MspU @ '
+                                   '00:06:43])'],
+                                  ['The 100 percent commission pitch',
+                                   'Eagle Express offers no split, no non-compete, and full back-office '
+                                   'handling for transferred books',
+                                   'The same offer charges a 5 percent admin fee on gross, while Krause '
+                                   'says splits always come from margin',
+                                   'Eagle Express ([952lbvkEVvM @ 00:01:19]); Matt Krause ([hhT4X32MspU @ '
+                                   '00:01:29])'],
+                                  ['Who should start as an agent first',
+                                   'Krause: zero logistics, sales, or brokering experience means start as '
+                                   'an agent',
+                                   'Nate Cross: the agent model requires experience and an existing '
+                                   'customer base; W-2 requires none',
+                                   'Matt Krause ([hhT4X32MspU @ 00:00:35]); Freight 360 ([SPl9Y_xMJHA @ '
+                                   '00:03:21])'],
+                                  ['New broker recruiting agents to scale',
+                                   'Krause frames the broker path as adding agents under your license and '
+                                   'taking a cut',
+                                   'Dennis Brown says no: three years inside, $6M to $10M before the first '
+                                   'agent',
+                                   'Matt Krause ([xe6QTceV_JE @ 00:03:04]); FreightBrokers ([6bYvpf5qJSY @ '
+                                   '00:14:37])'],
+                                  ['Margin discipline when a load gets tight',
+                                   'Robert drops margin as far as possible to secure a carrier, with a '
+                                   '$100 floor',
+                                   'Carl declines below-market lanes but never gives a load back, eating '
+                                   '$500 if needed',
+                                   'Bobby Loads ([bkrMqfq4evM @ 00:13:59]); Matt Krause ([EJYdmoWKsmw @ '
+                                   '00:08:07])'],
+                                  ['Cradle-to-grave versus split desk structure',
+                                   'Malcolm Harris prefers cradle-to-grave for efficiency and the best '
+                                   'customer and carrier experience',
+                                   'Freight 360 pays cradle-to-grave agents 70 percent, pure freight '
+                                   'finders half or less',
+                                   'FreightWaves ([OHagUq3qWcQ @ 00:33:01]); Freight 360 ([e9-lormMK4w @ '
+                                   '00:23:22])']]}},
+              {'heading': 'Section 4: Firsthand Failure Modes, Traps & Economics Checks',
+               'paragraphs': ['The trap that hits new owners first is cash, not sales. Matt Krause walked '
+                              'away from more than $2M in awarded freight because the shipper paid in '
+                              'about 65 days and neither the factoring company nor a bank would fund it: '
+                              "'I was literally winning too much freight too soon' [hhT4X32MspU @ "
+                              '00:03:28]. That squeeze is the core of the agent argument, because the '
+                              'brokerage carries the $75K bond, the back office, and the credit to float '
+                              'shippers who pay in 30 to 60 days. Dennis Brown adds a structural limit on '
+                              'the owner side: a broker can only run one factoring company because of the '
+                              "UCC filing, a point Dennis says they are '98% sure' about [wOYj-TrF9aI @ "
+                              '00:32:14]. Agents feel a softer version of the same lag. Robert at TAB is '
+                              'paid every 30 days, the first check took 45 days, and TAB offered to split '
+                              'checks to bridge the gap [bkrMqfq4evM @ 00:29:40]. Malcolm Harris on '
+                              'FreightWaves sets the timeline expectation most newcomers skip: an '
+                              "18-to-24-month minimum ramp, with the reminder that 'you have to buy your "
+                              "seat' before a desk carries its own weight [OHagUq3qWcQ @ 00:38:49].",
+                              'The second cluster is self-inflicted operating mistakes. Robert calls '
+                              "hiring too soon 'the biggest mistake that we made' and now works alone "
+                              '[bkrMqfq4evM @ 00:12:22]. Robert also runs flat rates with no fuel '
+                              'surcharge and labels that a mistake, while competitors running $25 margins '
+                              'keep pressing on a $100 floor. Dennis Brown sees the same overreach at the '
+                              "brokerage level: a new authority built only to run agents has a 'slim to "
+                              "none' chance, and Dennis spent about three years building an inside team "
+                              'first [jgNUpO0VPws @ 00:54:13]. On freight selection, Dennis warns '
+                              'beginners off fresh produce and deep-frozen loads held at minus 10, since '
+                              'older reefers struggle to hold that temperature in 100-degree Arizona '
+                              'compared with 20-degree Montana [wOYj-TrF9aI @ 00:08:03]. Matt Krause shows '
+                              'what the bad day looks like on a home desk: 100 emails, 10 missed calls, '
+                              'and a truck fire destroying a 40,000 lb ice cream load, followed by 49 or '
+                              '50 rejections out of every 50 dials [wxTvTywQET4 @ 00:00:54]. None of these '
+                              'failures came from weak demand; each came from scaling headcount, pricing, '
+                              "or freight type ahead of the operator's skill and cash.",
+                              'The agent-side failure is usually quiet attrition. Connor Harutyunyan lost '
+                              'customers in 2024, fell to zero, and nearly quit, after a first year in '
+                              'which LinkedIn produced nothing; what pulled Connor back was watching other '
+                              "brokers move loads daily and concluding 'That's mean I am slow' "
+                              "[jgNUpO0VPws @ 00:16:42]. Dennis Brown's prescription in the same interview "
+                              "was a 30-day daily-posting challenge, on the logic that 'it cost you zero' "
+                              'and virality is not the goal. Victor Mason names the pattern directly: most '
+                              "people fail because they are inconsistent, and if you don't sell, you don't "
+                              'earn [4n9e0eEuFtM @ 00:03:19]. Contract math is the other quiet leak. Eagle '
+                              'Express advertises 100 percent of profit margins yet takes a 5 percent '
+                              'admin fee on gross, a fee that sits in tension with the headline claim '
+                              '[952lbvkEVvM @ 00:01:19]. Freight 360 adds the fraud tax: double brokering '
+                              'is massive enough that withholding pickup numbers until a carrier is '
+                              'verified by GPS or photo is now industry best practice, delivered through a '
+                              "'company policy' line, while lying about pickup times is called totally "
+                              'wrong [e9-lormMK4w @ 00:08:15]. The common thread: commission-only income '
+                              'punishes any gap in activity, fees, or carrier vetting immediately.'],
+               'table': {'caption': 'Firsthand traps, what actually happened, and the economics check each '
+                                    'one forces',
+                         'headers': ['Trap', 'What Happened', 'Economics Check', 'Expert Source'],
+                         'rows': [['Winning freight you cannot fund',
+                                   'Krause walked away from more than $2M in awarded freight on 65-day '
+                                   'shipper terms',
+                                   'Factoring company and bank both refused; brokerage credit covers '
+                                   '30-to-60-day payers',
+                                   'Matt Krause ([hhT4X32MspU @ 00:03:28])'],
+                                  ['Hiring staff before the book supports it',
+                                   'Robert called early hiring the biggest mistake the operation made',
+                                   'Now works solo and holds a minimum margin of about $100 per load',
+                                   'Bobby Loads ([bkrMqfq4evM @ 00:12:22])'],
+                                  ['Flat rates with no fuel surcharge',
+                                   'Robert quotes flat rates without a fuel surcharge and calls it a '
+                                   'mistake',
+                                   'Competitors working $25 margins squeeze any rate left unprotected',
+                                   'Bobby Loads ([bkrMqfq4evM @ 00:22:41])'],
+                                  ['The 100 percent offer with a gross fee',
+                                   'Eagle Express pitches full margins but charges a 5 percent admin fee '
+                                   'on gross',
+                                   'Compare against splits taken only from margin before transferring an '
+                                   'active book',
+                                   'Eagle Express ([952lbvkEVvM @ 00:01:19])'],
+                                  ['Launching an authority to run only agents',
+                                   'Dennis Brown rates an agents-only brokerage start as slim to none',
+                                   'Dennis built an inside team for about three years before the agent '
+                                   'model',
+                                   'FreightBrokers ([jgNUpO0VPws @ 00:54:13])'],
+                                  ['Burnout after the book drops to zero',
+                                   'Connor lost customers in 2024, hit zero, and almost quit the business',
+                                   'First $10K commission month took four to five months with no sales '
+                                   'background',
+                                   'FreightBrokers ([jgNUpO0VPws @ 00:16:42])'],
+                                  ['Going owner too early at low volume',
+                                   'One shipper at five loads weekly pays agent $900 versus owner $1,500',
+                                   'Owner still absorbs $900 to $2,500 bond premium, factoring cut, '
+                                   'insurance, and software',
+                                   'Matt Krause ([hhT4X32MspU @ 00:05:46])']]},
+               'callout': {'kind': 'OPERATOR GATE',
+                           'title': 'Four checks before you sign an agent agreement or move a load',
+                           'body': 'Every item below comes from a trap a working agent or broker hit or '
+                                   'warned about directly. Clear all four before the first load moves '
+                                   'under a new brokerage.',
+                           'items': ['Get shipper ownership in writing, check for a 1-to-2-year '
+                                     'non-compete, and run the walk-away test before signing [Matt Krause '
+                                     '— hhT4X32MspU @ 00:06:43].',
+                                     'Ask exactly what comes out before and after the split, including '
+                                     'load board, software, and insurance [Matt Krause — hhT4X32MspU @ '
+                                     '00:04:54].',
+                                     'Only run credit through Dun & Bradstreet or Ansonia on customers who '
+                                     'have actually given you an order [FreightBrokers — wOYj-TrF9aI @ '
+                                     '00:18:23].',
+                                     'Withhold pickup numbers until the carrier is verified as who they '
+                                     'say they are with the equipment they claim [Freight 360 — '
+                                     'e9-lormMK4w @ 00:08:15].']}}],
+ 'pull_quote': '"The broker is building a business and the agent is building a job." — attributed to Matt '
+               'Krause (xe6QTceV_JE @ 00:02:46).',
+ 'diagram_id': 'diag-07',
+ 'action_checklist': ['Apply the entry rule: with no logistics, sales, or brokering experience, start as '
+                      'an agent; with any one of the three, get your own license [Matt Krause — '
+                      'hhT4X32MspU @ 00:00:35].',
+                      'Vet the brokerage for on-time carrier pay, ops support, tools, the commission '
+                      'split, and any non-compete or non-solicit language [Victor Mason — 4n9e0eEuFtM @ '
+                      '00:02:45].',
+                      'Verify your existing customers can transfer to the new brokerage before joining '
+                      '[Bobby Loads — bkrMqfq4evM @ 00:24:50].',
+                      'Build to 100 prospecting activities a day by starting at five and adding five daily '
+                      '[Matt Krause — yeFtuLvEdO8 @ 00:05:34].',
+                      'Ask prospects for permission to follow up in 30, 60, or 90 days and then do exactly '
+                      'what they say [FreightBrokers — wOYj-TrF9aI @ 00:19:36].',
+                      'Set a minimum margin of about $100 per load and say no below it [Bobby Loads — '
+                      'bkrMqfq4evM @ 00:16:30].'],
+ 'statutory_citations': [{'title': 'Matt Krause — Freight Broker vs Freight Agent in 2027 (Which to Start '
+                                   'First) [00:03:28]',
+                          'url': 'https://www.youtube.com/watch?v=hhT4X32MspU&t=208s',
+                          'relevance': 'Primary practitioner testimony on walking away from $2M in awarded '
+                                       'freight over 65-day shipper terms and agent-versus-owner math.'},
+                         {'title': 'Freight 360 — Crushing Cold Calls and Freight Agent Commissions | The '
+                                   'Final Mile #23 [00:24:30]',
+                          'url': 'https://www.youtube.com/watch?v=e9-lormMK4w&t=1470s',
+                          'relevance': 'Primary practitioner testimony on agent and W-2 commission ranges '
+                                       'and pickup-number fraud controls.'},
+                         {'title': 'FreightBrokers — Freight Agent Success Interview [Freight Broker Boot '
+                                   'Camp LIVE} [00:54:13]',
+                          'url': 'https://www.youtube.com/watch?v=jgNUpO0VPws&t=3253s',
+                          'relevance': 'Primary practitioner testimony on agent splits, burnout, LinkedIn '
+                                       'prospecting, and why agents-only brokerages rarely work.'},
+                         {'title': 'Bobby Loads — How to Become a Freight Agent—and How the Money Works '
+                                   '[00:12:22]',
+                          'url': 'https://www.youtube.com/watch?v=bkrMqfq4evM&t=742s',
+                          'relevance': 'Primary practitioner testimony on hiring too soon, margin floors, '
+                                       'pay timing, and book transfer.'}],
+ 'source_citations': [{'source_type': 'video_pro_tip',
+                       'video_id': 'hhT4X32MspU',
+                       'title': 'Freight Broker vs Freight Agent in 2027 (Which to Start First)',
+                       'channel': 'Matt Krause',
+                       'author': 'Matt Krause',
+                       'text': "And it's always a percent of the margin.",
+                       'tip': "And it's always a percent of the margin.",
+                       'timestamp': 89,
+                       'timestamp_seconds': 89,
+                       'timestamp_label': '[00:01:29]',
+                       'url': 'https://www.youtube.com/watch?v=hhT4X32MspU&t=89s',
+                       'markdown': '[00:01:29](https://www.youtube.com/watch?v=hhT4X32MspU&t=89s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q4.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'hhT4X32MspU',
+                       'title': 'Freight Broker vs Freight Agent in 2027 (Which to Start First)',
+                       'channel': 'Matt Krause',
+                       'author': 'Matt Krause',
+                       'text': 'I was literally winning too much freight too soon.',
+                       'tip': 'I was literally winning too much freight too soon.',
+                       'timestamp': 208,
+                       'timestamp_seconds': 208,
+                       'timestamp_label': '[00:03:28]',
+                       'url': 'https://www.youtube.com/watch?v=hhT4X32MspU&t=208s',
+                       'markdown': '[00:03:28](https://www.youtube.com/watch?v=hhT4X32MspU&t=208s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q4.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'nUM2jUENmpc',
+                       'title': 'The Untold Reality of Becoming a Freight Broker: Can You Handle It?',
+                       'channel': 'Matt Krause',
+                       'author': 'Matt Krause',
+                       'text': "Freedom comes with the risk and there's no steady paycheck.",
+                       'tip': "Freedom comes with the risk and there's no steady paycheck.",
+                       'timestamp': 284,
+                       'timestamp_seconds': 284,
+                       'timestamp_label': '[00:04:44]',
+                       'url': 'https://www.youtube.com/watch?v=nUM2jUENmpc&t=284s',
+                       'markdown': '[00:04:44](https://www.youtube.com/watch?v=nUM2jUENmpc&t=284s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q4.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'xe6QTceV_JE',
+                       'title': 'Freight Agent or Broker: The Smarter Path for Beginners',
+                       'channel': 'Matt Krause',
+                       'author': 'Matt Krause',
+                       'text': 'The broker is building a business and the agent is building a job.',
+                       'tip': 'The broker is building a business and the agent is building a job.',
+                       'timestamp': 166,
+                       'timestamp_seconds': 166,
+                       'timestamp_label': '[00:02:46]',
+                       'url': 'https://www.youtube.com/watch?v=xe6QTceV_JE&t=166s',
+                       'markdown': '[00:02:46](https://www.youtube.com/watch?v=xe6QTceV_JE&t=166s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q4.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'OHagUq3qWcQ',
+                       'title': 'Cradle to Grave: Grit, Growth & the Realities of Freight Brokerage | WHAT '
+                                'THE TRUCK?!?',
+                       'channel': 'FreightWaves',
+                       'author': 'FreightWaves',
+                       'text': "But now you have to be mindful all business isn't good business.",
+                       'tip': "But now you have to be mindful all business isn't good business.",
+                       'timestamp': 2128,
+                       'timestamp_seconds': 2128,
+                       'timestamp_label': '[00:35:28]',
+                       'url': 'https://www.youtube.com/watch?v=OHagUq3qWcQ&t=2128s',
+                       'markdown': '[00:35:28](https://www.youtube.com/watch?v=OHagUq3qWcQ&t=2128s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q4.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'wxTvTywQET4',
+                       'title': 'Do you have what it takes to build a freight brokerage?',
+                       'channel': 'Matt Krause',
+                       'author': 'Matt Krause',
+                       'text': "And you're looking at probably a margin of around 15 to 20%.",
+                       'tip': "And you're looking at probably a margin of around 15 to 20%.",
+                       'timestamp': 361,
+                       'timestamp_seconds': 361,
+                       'timestamp_label': '[00:06:01]',
+                       'url': 'https://www.youtube.com/watch?v=wxTvTywQET4&t=361s',
+                       'markdown': '[00:06:01](https://www.youtube.com/watch?v=wxTvTywQET4&t=361s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q4.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'EJYdmoWKsmw',
+                       'title': 'How A 24 Year Old Built A $500k/Mo Freight Business In 11 Months',
+                       'channel': 'Matt Krause',
+                       'author': 'Matt Krause',
+                       'text': "I've never given a load back and never will, frankly.",
+                       'tip': "I've never given a load back and never will, frankly.",
+                       'timestamp': 487,
+                       'timestamp_seconds': 487,
+                       'timestamp_label': '[00:08:07]',
+                       'url': 'https://www.youtube.com/watch?v=EJYdmoWKsmw&t=487s',
+                       'markdown': '[00:08:07](https://www.youtube.com/watch?v=EJYdmoWKsmw&t=487s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q4.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'pXxS5GOHXZE',
+                       'title': 'How to Become a Freight Agent in 2027 (No Experience Needed)',
+                       'channel': 'Matt Krause',
+                       'author': 'Matt Krause',
+                       'text': 'And if you leave that brokerage you get to keep your own clients and bring '
+                               'them over to another brokerage.',
+                       'tip': 'And if you leave that brokerage you get to keep your own clients and bring '
+                              'them over to another brokerage.',
+                       'timestamp': 285,
+                       'timestamp_seconds': 285,
+                       'timestamp_label': '[00:04:45]',
+                       'url': 'https://www.youtube.com/watch?v=pXxS5GOHXZE&t=285s',
+                       'markdown': '[00:04:45](https://www.youtube.com/watch?v=pXxS5GOHXZE&t=285s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q4.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'e9-lormMK4w',
+                       'title': 'Crushing Cold Calls and Freight Agent Commissions | The Final Mile #23',
+                       'channel': 'Freight 360',
+                       'author': 'Freight 360',
+                       'text': "I've never seen anything above 50 most are probably 25 to 40%.",
+                       'tip': "I've never seen anything above 50 most are probably 25 to 40%.",
+                       'timestamp': 1470,
+                       'timestamp_seconds': 1470,
+                       'timestamp_label': '[00:24:30]',
+                       'url': 'https://www.youtube.com/watch?v=e9-lormMK4w&t=1470s',
+                       'markdown': '[00:24:30](https://www.youtube.com/watch?v=e9-lormMK4w&t=1470s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q4.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'bkrMqfq4evM',
+                       'title': 'How to Become a Freight Agent—and How the Money Works',
+                       'channel': 'Bobby Loads',
+                       'author': 'Bobby Loads',
+                       'text': 'And that is the biggest mistake that we made.',
+                       'tip': 'And that is the biggest mistake that we made.',
+                       'timestamp': 742,
+                       'timestamp_seconds': 742,
+                       'timestamp_label': '[00:12:22]',
+                       'url': 'https://www.youtube.com/watch?v=bkrMqfq4evM&t=742s',
+                       'markdown': '[00:12:22](https://www.youtube.com/watch?v=bkrMqfq4evM&t=742s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q4.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'SPl9Y_xMJHA',
+                       'title': 'Freight Broker Commission Percentage | Everything you need to know! 🚚',
+                       'channel': 'Freight 360',
+                       'author': 'Freight 360',
+                       'text': 'Agents are generally on a commission split that will vary around 50 to '
+                               '70%.',
+                       'tip': 'Agents are generally on a commission split that will vary around 50 to 70%.',
+                       'timestamp': 166,
+                       'timestamp_seconds': 166,
+                       'timestamp_label': '[00:02:46]',
+                       'url': 'https://www.youtube.com/watch?v=SPl9Y_xMJHA&t=166s',
+                       'markdown': '[00:02:46](https://www.youtube.com/watch?v=SPl9Y_xMJHA&t=166s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q4.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'yeFtuLvEdO8',
+                       'title': '7 Step Freight Agent Training To Go From $0-$1,000,000 From Home',
+                       'channel': 'Matt Krause',
+                       'author': 'Matt Krause',
+                       'text': '44% of reps quit after one follow-up and then they just move on to the '
+                               'next one.',
+                       'tip': '44% of reps quit after one follow-up and then they just move on to the next '
+                              'one.',
+                       'timestamp': 608,
+                       'timestamp_seconds': 608,
+                       'timestamp_label': '[00:10:08]',
+                       'url': 'https://www.youtube.com/watch?v=yeFtuLvEdO8&t=608s',
+                       'markdown': '[00:10:08](https://www.youtube.com/watch?v=yeFtuLvEdO8&t=608s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q4.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': '4n9e0eEuFtM',
+                       'title': 'How to Be a Freight Agent in 2026 (No Truck, No MC, No Guessing)',
+                       'channel': 'Victor Mason',
+                       'author': 'Victor Mason',
+                       'text': "Most people fail because they're inconsistent.",
+                       'tip': "Most people fail because they're inconsistent.",
+                       'timestamp': 199,
+                       'timestamp_seconds': 199,
+                       'timestamp_label': '[00:03:19]',
+                       'url': 'https://www.youtube.com/watch?v=4n9e0eEuFtM&t=199s',
+                       'markdown': '[00:03:19](https://www.youtube.com/watch?v=4n9e0eEuFtM&t=199s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q4.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': '952lbvkEVvM',
+                       'title': 'How to Make 100% Commission as a Freight Broker Agent',
+                       'channel': 'Eagle Express',
+                       'author': 'Eagle Express',
+                       'text': 'Incorporating a small 5% admin fee on your gross.',
+                       'tip': 'Incorporating a small 5% admin fee on your gross.',
+                       'timestamp': 79,
+                       'timestamp_seconds': 79,
+                       'timestamp_label': '[00:01:19]',
+                       'url': 'https://www.youtube.com/watch?v=952lbvkEVvM&t=79s',
+                       'markdown': '[00:01:19](https://www.youtube.com/watch?v=952lbvkEVvM&t=79s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q4.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'wOYj-TrF9aI',
+                       'title': 'Become A Successful Freight Broker Q&A w/ Dennis Brown 12-15-25',
+                       'channel': 'FreightBrokers',
+                       'author': 'FreightBrokers',
+                       'text': "You're not going to run credit on prospects that have not given you an "
+                               'order.',
+                       'tip': "You're not going to run credit on prospects that have not given you an "
+                              'order.',
+                       'timestamp': 1103,
+                       'timestamp_seconds': 1103,
+                       'timestamp_label': '[00:18:23]',
+                       'url': 'https://www.youtube.com/watch?v=wOYj-TrF9aI&t=1103s',
+                       'markdown': '[00:18:23](https://www.youtube.com/watch?v=wOYj-TrF9aI&t=1103s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q4.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': '6bYvpf5qJSY',
+                       'title': 'Freight Broker/Agent LIVE Q&A w Dennis Brown 1-26-26',
+                       'channel': 'FreightBrokers',
+                       'author': 'FreightBrokers',
+                       'text': "It's not a side hustle.",
+                       'tip': "It's not a side hustle.",
+                       'timestamp': 1960,
+                       'timestamp_seconds': 1960,
+                       'timestamp_label': '[00:32:40]',
+                       'url': 'https://www.youtube.com/watch?v=6bYvpf5qJSY&t=1960s',
+                       'markdown': '[00:32:40](https://www.youtube.com/watch?v=6bYvpf5qJSY&t=1960s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q4.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'jgNUpO0VPws',
+                       'title': 'Freight Agent Success Interview [Freight Broker Boot Camp LIVE}',
+                       'channel': 'FreightBrokers',
+                       'author': 'FreightBrokers',
+                       'text': 'So, most new brokers are going to get 50%.',
+                       'tip': 'So, most new brokers are going to get 50%.',
+                       'timestamp': 3831,
+                       'timestamp_seconds': 3831,
+                       'timestamp_label': '[01:03:51]',
+                       'url': 'https://www.youtube.com/watch?v=jgNUpO0VPws&t=3831s',
+                       'markdown': '[01:03:51](https://www.youtube.com/watch?v=jgNUpO0VPws&t=3831s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q4.'}]}

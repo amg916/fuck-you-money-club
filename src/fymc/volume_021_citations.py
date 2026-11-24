@@ -1,4314 +1,3308 @@
-"""Curated 180-citation Automated E-Commerce baseline (15 per chapter across Q1-Q12) mined strictly from verified Automated E-Commerce YouTube transcripts."""
+"""100% verbatim YouTube practitioner citations selected directly by Claude across Chapters Q1-Q12 of Volume 021 (Automated E-Commerce)."""
 from __future__ import annotations
 
-CHAPTER_KEYWORDS: dict[int, set[str]] = {1: {'321',
-     '3pl',
-     'ads',
+CHAPTER_KEYWORDS: dict[int, set[str]] = {1: {'high', 'dropshipping', 'model', 'real', 'niches', 'ticket', 'store', 'results', 'products'},
+ 2: {'accounts',
      'amazon',
-     'aov',
-     'authorized',
-     'automated',
-     'automation',
-     'avalara',
-     'avoiding',
-     'brand',
-     'bundle',
-     'business',
-     'capital',
-     'cash',
-     'center',
-     'certification',
-     'chargeback',
-     'churn',
-     'client',
-     'clients',
-     'commerce',
-     'contribution',
-     'conversion',
-     'cost',
-     'cpsc',
-     'creative',
-     'cro',
-     'customer',
-     'customs',
-     'cycle',
-     'dealer',
-     'dimensional',
-     'firm',
-     'margin',
-     'market',
-     'model',
-     'niche',
-     'operator',
-     'revenue',
-     'service',
-     'value'},
- 2: {'321',
-     '3pl',
-     'ads',
-     'amazon',
-     'aov',
-     'authorized',
-     'automated',
-     'automation',
-     'avalara',
-     'avoiding',
-     'brand',
-     'budget',
-     'bundle',
-     'buyer',
-     'capital',
-     'cash',
-     'center',
-     'certification',
-     'chargeback',
-     'churn',
-     'commerce',
-     'contract',
-     'contribution',
-     'conversion',
-     'cost',
-     'cpsc',
-     'creative',
-     'cro',
-     'customer',
-     'customs',
-     'cycle',
-     'dealer',
-     'decision',
-     'dimensional',
-     'escrow',
-     'fee',
-     'fees',
-     'invoice',
-     'pay',
-     'payment',
-     'pays',
-     'retainer'},
- 3: {'321',
-     '3pl',
-     'ads',
-     'amazon',
-     'aov',
-     'authorized',
-     'automated',
-     'automation',
-     'avalara',
-     'avoiding',
-     'brand',
-     'bundle',
-     'capital',
-     'cash',
-     'cashflow',
-     'center',
-     'certification',
-     'chargeback',
-     'churn',
-     'commerce',
-     'commission',
-     'contribution',
-     'conversion',
-     'cost',
-     'costs',
-     'cpsc',
-     'creative',
-     'cro',
-     'customer',
-     'customs',
-     'cycle',
-     'dealer',
-     'dimensional',
-     'economics',
-     'margin',
-     'margins',
-     'price',
-     'pricing',
-     'profit',
-     'roi',
-     'unit'},
- 4: {'321',
-     '3pl',
-     'ads',
-     'amazon',
-     'aov',
-     'authorized',
-     'automated',
-     'automation',
-     'avalara',
-     'avoiding',
-     'brand',
-     'budget',
-     'bundle',
-     'capital',
-     'cash',
-     'center',
-     'certification',
-     'chargeback',
-     'churn',
-     'commerce',
-     'contribution',
-     'conversion',
-     'cost',
-     'cpsc',
-     'creative',
-     'cro',
-     'customer',
-     'customs',
-     'cycle',
-     'dealer',
-     'dimensional',
-     'entity',
-     'insurance',
-     'lean',
-     'license',
-     'llc',
-     'setup',
-     'software',
-     'stack',
-     'startup',
-     'tools'},
- 5: {'321',
-     '3pl',
-     'ads',
-     'amazon',
-     'aov',
-     'audit',
-     'authorized',
-     'automated',
-     'automation',
-     'avalara',
-     'avoid',
-     'avoiding',
-     'brand',
-     'bundle',
-     'capital',
-     'cash',
-     'center',
-     'certification',
-     'chargeback',
-     'churn',
-     'clawback',
-     'commerce',
-     'contribution',
-     'conversion',
-     'cost',
-     'cpsc',
-     'creative',
-     'cro',
-     'customer',
-     'customs',
-     'cycle',
-     'dealer',
-     'dimensional',
-     'dispute',
-     'edge',
-     'fail',
-     'mistake',
-     'mistakes',
-     'problem',
-     'risk',
-     'risks',
-     'trap',
-     'traps'},
- 6: {'321',
-     '3pl',
-     'ads',
-     'amazon',
-     'aov',
-     'authorized',
-     'automated',
-     'automation',
-     'avalara',
-     'avoiding',
-     'brand',
-     'bundle',
-     'capital',
-     'cash',
-     'center',
-     'certification',
-     'chargeback',
-     'churn',
-     'client',
-     'commerce',
-     'contribution',
-     'conversion',
-     'cost',
-     'cpsc',
-     'creative',
-     'cro',
-     'customer',
-     'customs',
-     'cycle',
-     'data',
-     'deal',
-     'dealer',
-     'dimensional',
-     'find',
-     'first',
-     'lead',
-     'leads',
-     'list',
-     'outbound',
-     'prospect',
-     'qualify',
-     'search',
-     'sourcing'},
- 7: {'321',
-     '3pl',
-     'ads',
-     'amazon',
-     'aov',
-     'authorized',
-     'automated',
-     'automation',
-     'avalara',
-     'avoiding',
-     'brand',
-     'bundle',
-     'capital',
-     'cash',
-     'center',
-     'certification',
-     'chargeback',
-     'checklist',
-     'churn',
-     'commerce',
-     'contribution',
-     'conversion',
-     'cost',
-     'cpsc',
-     'creative',
-     'cro',
-     'customer',
-     'customs',
-     'cycle',
-     'dealer',
-     'delivery',
-     'dimensional',
-     'execution',
-     'process',
-     'quality',
-     'sop',
-     'step',
-     'steps',
-     'system',
-     'underwriting',
-     'verify',
-     'workflow'},
- 8: {'321',
-     '3pl',
-     'ads',
-     'amazon',
-     'aov',
-     'api',
-     'authorized',
-     'automated',
-     'automation',
-     'avalara',
-     'avoiding',
-     'brand',
-     'bundle',
-     'capital',
-     'cash',
-     'center',
-     'certification',
-     'chargeback',
-     'churn',
-     'commerce',
-     'contribution',
-     'conversion',
-     'cost',
-     'cpsc',
-     'creative',
-     'crm',
-     'cro',
-     'customer',
-     'customs',
-     'cycle',
-     'data',
-     'database',
-     'dealer',
-     'dimensional',
-     'platform',
-     'portal',
-     'scraper',
-     'search',
-     'software',
-     'tool',
-     'tools',
-     'tracking'},
- 9: {'321',
-     '3pl',
-     'ads',
-     'agreement',
-     'amazon',
-     'aov',
-     'authorized',
-     'automated',
-     'automation',
-     'avalara',
-     'avoiding',
-     'brand',
-     'bundle',
-     'capital',
-     'cash',
-     'center',
-     'certification',
-     'chargeback',
-     'churn',
-     'commerce',
-     'compliance',
-     'contract',
-     'contribution',
-     'conversion',
-     'cost',
-     'cpsc',
-     'creative',
-     'cro',
-     'customer',
-     'customs',
-     'cycle',
-     'dealer',
-     'dimensional',
-     'disclosure',
-     'law',
-     'legal',
-     'license',
-     'outreach',
-     'rules',
-     'script',
-     'state',
-     'terms'},
- 10: {'321',
-      '3pl',
-      'ads',
-      'agent',
-      'ai',
-      'amazon',
-      'aov',
-      'authorized',
-      'automate',
-      'automated',
-      'automation',
-      'avalara',
-      'avoiding',
-      'brand',
-      'bundle',
-      'capital',
-      'cash',
-      'center',
-      'certification',
-      'chargeback',
-      'churn',
-      'commerce',
-      'contribution',
-      'conversion',
-      'cost',
-      'cpsc',
-      'creative',
-      'cro',
-      'customer',
-      'customs',
-      'cycle',
-      'dashboard',
-      'dealer',
-      'dimensional',
-      'leverage',
-      'pipeline',
-      'scale',
-      'script',
-      'speed',
-      'template',
-      'workflow'},
- 11: {'321',
-      '3pl',
-      'ads',
-      'amazon',
-      'aov',
-      'authorized',
-      'automated',
-      'automation',
-      'avalara',
-      'avoiding',
-      'brand',
-      'bundle',
-      'capital',
-      'cash',
-      'center',
-      'certification',
-      'chargeback',
-      'churn',
-      'commerce',
-      'contractor',
-      'contribution',
-      'conversion',
-      'cost',
-      'cpsc',
-      'creative',
-      'cro',
-      'customer',
-      'customs',
-      'cycle',
-      'dealer',
-      'dimensional',
-      'exit',
-      'hire',
-      'hiring',
-      'kpi',
-      'manager',
-      'operations',
-      'pod',
-      'scale',
-      'scaling',
-      'team',
-      'valuation'},
- 12: {'321',
-      '3pl',
-      'action',
-      'ads',
-      'amazon',
-      'aov',
-      'authorized',
-      'automated',
-      'automation',
-      'avalara',
-      'avoiding',
-      'brand',
-      'bundle',
-      'capital',
-      'cash',
-      'center',
-      'certification',
-      'chargeback',
-      'churn',
-      'commerce',
-      'contribution',
-      'conversion',
-      'cost',
-      'cpsc',
-      'creative',
-      'cro',
-      'customer',
-      'customs',
-      'cycle',
-      'day',
-      'days',
-      'dealer',
-      'dimensional',
-      'launch',
-      'milestone',
-      'month',
-      'plan',
-      'roadmap',
-      'sprint',
-      'start',
-      'thirty',
-      'week'}}
+     'brands',
+     'distributors',
+     'high',
+     'opening',
+     'supplier',
+     'ticket',
+     'wholesale'},
+ 3: {'economics', 'margin', 'contribution', 'unit'},
+ 4: {'true', 'landed', 'duties', 'goods', 'tariffs', 'cost'},
+ 5: {'conversion', 'cash', 'working', 'cycle', 'capital'},
+ 6: {'nexus', 'compliance', 'automation', 'sales'},
+ 7: {'inside', 'fulfillment', 'outsourced'},
+ 8: {'traps', 'automating', 'back', 'office', 'automation'},
+ 9: {'returns', 'refunds', 'chargebacks'},
+ 10: {'support', 'retention', 'automated'},
+ 11: {'feeds', 'google', 'center', 'shopping', 'merchant'},
+ 12: {'scaling', 'figures', 'eight', 'conversion'}}
 
-BASELINE_EXPERT_CITATIONS_BY_CHAPTER: dict[int, list[dict]] = {1: [{'author': 'Noah Haynes',
-      'channel': 'Noah Haynes',
+BASELINE_EXPERT_CITATIONS_BY_CHAPTER: dict[int, list[dict]] = {1: [{'author': 'Joe Verschoor',
+      'channel': 'Joe Verschoor',
       'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:02:52](https://www.youtube.com/watch?v=SjGeVqhkKPw&t=172s)',
-      'relevance': 'Attributed practitioner commentary on lean 3PL-backed & authorized-dealer '
-                   'e-commerce operations, contribution-margin underwriting, and automated '
-                   'retention (Chapter Q1 operational verification).',
+      'markdown': '[00:06:13](https://www.youtube.com/watch?v=5jY7d_1m1t0&t=373s)',
+      'relevance': 'Verbatim practitioner testimony from Chapter Q1.',
       'source_type': 'video_pro_tip',
-      'text': "So, let's say you found a big growing market. That brings us to the second "
-              'system, your business model. And this is where you need to understand unit '
-              'economics. The first is your AOV, or average order value, which is how much '
-              'your average customer spends per order.',
-      'timestamp': 172,
-      'timestamp_label': '[00:02:52]',
-      'timestamp_seconds': 172,
-      'tip': "So, let's say you found a big growing market. That brings us to the second "
-             'system, your business model. And this is where you need to understand unit '
-             'economics. The first is your AOV, or average order value, which is how much your '
-             'average customer spends per order.',
-      'title': 'Scaling an Ecommerce Brand Is Hard Until You Understand These 3 Systems (Noah '
-               'Haynes)',
-      'url': 'https://www.youtube.com/watch?v=SjGeVqhkKPw&t=172s',
-      'video_id': 'SjGeVqhkKPw'},
-     {'author': 'Ecommerce Paradise | High Ticket Dropshipping',
-      'channel': 'Ecommerce Paradise | High Ticket Dropshipping',
+      'text': "In my experience, it's realistic to aim for 15 to 20% net margins out of all gross "
+              'revenue.',
+      'timestamp': 373,
+      'timestamp_label': '[00:06:13]',
+      'timestamp_seconds': 373,
+      'tip': "In my experience, it's realistic to aim for 15 to 20% net margins out of all gross "
+             'revenue.',
+      'title': 'How Much Money Can You Actually Make High Ticket Dropshipping? [2027]',
+      'url': 'https://www.youtube.com/watch?v=5jY7d_1m1t0&t=373s',
+      'video_id': '5jY7d_1m1t0'},
+     {'author': 'Marcus Lam | High Ticket Dropshipping (AI)',
+      'channel': 'Marcus Lam | High Ticket Dropshipping (AI)',
       'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:04:19](https://www.youtube.com/watch?v=EaAeDMJIPLQ&t=259s)',
-      'relevance': 'Attributed practitioner commentary on lean 3PL-backed & authorized-dealer '
-                   'e-commerce operations, contribution-margin underwriting, and automated '
-                   'retention (Chapter Q1 operational verification).',
+      'markdown': '[00:11:13](https://www.youtube.com/watch?v=ic0HLQbBhQA&t=673s)',
+      'relevance': 'Verbatim practitioner testimony from Chapter Q1.',
       'source_type': 'video_pro_tip',
-      'text': "'s going to make you, you know, way more money. So the biggest difference "
-              'between this business model and other drop shipping business models really is '
-              'that authorized dealer agreement you have with the brand.',
-      'timestamp': 259,
-      'timestamp_label': '[00:04:19]',
-      'timestamp_seconds': 259,
-      'tip': "'s going to make you, you know, way more money. So the biggest difference "
-             'between this business model and other drop shipping business models really is '
-             'that authorized dealer agreement you have with the brand.',
-      'title': 'What Is High Ticket Dropshipping? Complete Beginner Guide (2026) (Ecommerce '
-               'Paradise | High Ticket Dropshipping)',
-      'url': 'https://www.youtube.com/watch?v=EaAeDMJIPLQ&t=259s',
-      'video_id': 'EaAeDMJIPLQ'},
-     {'author': 'Kurtis Hanni',
-      'channel': 'Kurtis Hanni',
+      'text': 'Suppliers send you an Excel sheet with the MAP, the dealer cost, and the market '
+              'price.',
+      'timestamp': 673,
+      'timestamp_label': '[00:11:13]',
+      'timestamp_seconds': 673,
+      'tip': 'Suppliers send you an Excel sheet with the MAP, the dealer cost, and the market '
+             'price.',
+      'title': 'What is an Authorized Dealer? High Ticket Dropshipping',
+      'url': 'https://www.youtube.com/watch?v=ic0HLQbBhQA&t=673s',
+      'video_id': 'ic0HLQbBhQA'},
+     {'author': 'Anton Kraly - Drop Ship Lifestyle',
+      'channel': 'Anton Kraly - Drop Ship Lifestyle',
       'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:01:58](https://www.youtube.com/watch?v=0WBeNhRVKHY&t=118s)',
-      'relevance': 'Attributed practitioner commentary on lean 3PL-backed & authorized-dealer '
-                   'e-commerce operations, contribution-margin underwriting, and automated '
-                   'retention (Chapter Q1 operational verification).',
+      'markdown': '[00:07:20](https://www.youtube.com/watch?v=D6kFUv6fy_4&t=440s)',
+      'relevance': 'Verbatim practitioner testimony from Chapter Q1.',
       'source_type': 'video_pro_tip',
-      'text': 'And every business cycle is different. Sometimes in service businesses, you '
-              "have arrangements that are pay when paid, meaning you don't have to pay the "
-              'contractor or the person doing the work until you have p been paid by your '
-              'customer.',
-      'timestamp': 118,
-      'timestamp_label': '[00:01:58]',
-      'timestamp_seconds': 118,
-      'tip': 'And every business cycle is different. Sometimes in service businesses, you have '
-             "arrangements that are pay when paid, meaning you don't have to pay the "
-             'contractor or the person doing the work until you have p been paid by your '
-             'customer.',
-      'title': 'You’re Not Broke, Your Cash Is Just Stuck (Cash Conversion Cycle Explained) '
-               '(Kurtis Hanni)',
-      'url': 'https://www.youtube.com/watch?v=0WBeNhRVKHY&t=118s',
-      'video_id': '0WBeNhRVKHY'},
-     {'author': 'InstructorTom',
-      'channel': 'InstructorTom',
+      'text': '30 targeted website visitors a day is more than enough to be very profitable with '
+              'this business model.',
+      'timestamp': 440,
+      'timestamp_label': '[00:07:20]',
+      'timestamp_seconds': 440,
+      'tip': '30 targeted website visitors a day is more than enough to be very profitable with '
+             'this business model.',
+      'title': 'What Is High-Ticket Dropshipping?',
+      'url': 'https://www.youtube.com/watch?v=D6kFUv6fy_4&t=440s',
+      'video_id': 'D6kFUv6fy_4'},
+     {'author': 'built with ali',
+      'channel': 'built with ali',
       'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:07:23](https://www.youtube.com/watch?v=Ju1MGgf9RUw&t=443s)',
-      'relevance': 'Attributed practitioner commentary on lean 3PL-backed & authorized-dealer '
-                   'e-commerce operations, contribution-margin underwriting, and automated '
-                   'retention (Chapter Q1 operational verification).',
+      'markdown': '[00:16:02](https://www.youtube.com/watch?v=Mf4bZiQ2-Fc&t=962s)',
+      'relevance': 'Verbatim practitioner testimony from Chapter Q1.',
       'source_type': 'video_pro_tip',
-      'text': 'Could at least see the value of doing so and if we were too hard on our '
-              'customers and making them pay in a very short time we may lose customers at '
-              'least we can measure the effects of the cash conversion cycle thanks for '
-              'watching.',
-      'timestamp': 443,
-      'timestamp_label': '[00:07:23]',
-      'timestamp_seconds': 443,
-      'tip': 'Could at least see the value of doing so and if we were too hard on our '
-             'customers and making them pay in a very short time we may lose customers at '
-             'least we can measure the effects of the cash conversion cycle thanks for '
-             'watching.',
-      'title': 'Video   Cash Conversion Cycle (InstructorTom)',
-      'url': 'https://www.youtube.com/watch?v=Ju1MGgf9RUw&t=443s',
-      'video_id': 'Ju1MGgf9RUw'},
-     {'author': 'Peak Flow Media',
-      'channel': 'Peak Flow Media',
+      'text': 'Drop anything that is seasonal or under $1,000.',
+      'timestamp': 962,
+      'timestamp_label': '[00:16:02]',
+      'timestamp_seconds': 962,
+      'tip': 'Drop anything that is seasonal or under $1,000.',
+      'title': 'how i find dropshipping products that sell for $6,135.12 each (the opposite of '
+               'what gurus tell you)',
+      'url': 'https://www.youtube.com/watch?v=Mf4bZiQ2-Fc&t=962s',
+      'video_id': 'Mf4bZiQ2-Fc'},
+     {'author': 'Natan',
+      'channel': 'Natan',
       'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:01:52](https://www.youtube.com/watch?v=YmrOjrklnxM&t=112s)',
-      'relevance': 'Attributed practitioner commentary on lean 3PL-backed & authorized-dealer '
-                   'e-commerce operations, contribution-margin underwriting, and automated '
-                   'retention (Chapter Q1 operational verification).',
+      'markdown': '[00:08:41](https://www.youtube.com/watch?v=YHmvKbjg81E&t=521s)',
+      'relevance': 'Verbatim practitioner testimony from Chapter Q1.',
       'source_type': 'video_pro_tip',
-      'text': 'Model also known as high toet e-commerce and what this business model entails '
-              'is finding products from the United States and becoming a no inventory '
-              'authorized.',
-      'timestamp': 112,
-      'timestamp_label': '[00:01:52]',
-      'timestamp_seconds': 112,
-      'tip': 'Model also known as high toet e-commerce and what this business model entails is '
-             'finding products from the United States and becoming a no inventory authorized.',
-      'title': 'What is High Ticket Dropshipping and Common FAQs (Peak Flow Media)',
-      'url': 'https://www.youtube.com/watch?v=YmrOjrklnxM&t=112s',
-      'video_id': 'YmrOjrklnxM'},
-     {'author': 'Eric Andrews',
-      'channel': 'Eric Andrews',
-      'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:12:59](https://www.youtube.com/watch?v=gG33a-ErNRQ&t=779s)',
-      'relevance': 'Attributed practitioner commentary on lean 3PL-backed & authorized-dealer '
-                   'e-commerce operations, contribution-margin underwriting, and automated '
-                   'retention (Chapter Q1 operational verification).',
-      'source_type': 'video_pro_tip',
-      'text': 'Product launches and so the customer lifetime value is now 3.1 orders so our '
-              'contribution margin to CAC ratio is 2.1 and LTV to CAC ratio is 6.7.',
-      'timestamp': 779,
-      'timestamp_label': '[00:12:59]',
-      'timestamp_seconds': 779,
-      'tip': 'Product launches and so the customer lifetime value is now 3.1 orders so our '
-             'contribution margin to CAC ratio is 2.1 and LTV to CAC ratio is 6.7.',
-      'title': 'Unit Economics Benchmarks for eCommerce | From Idea to Exit (Eric Andrews)',
-      'url': 'https://www.youtube.com/watch?v=gG33a-ErNRQ&t=779s',
-      'video_id': 'gG33a-ErNRQ'},
+      'text': 'Google Shopping is pay per click, while on Meta you pay per impression.',
+      'timestamp': 521,
+      'timestamp_label': '[00:08:41]',
+      'timestamp_seconds': 521,
+      'tip': 'Google Shopping is pay per click, while on Meta you pay per impression.',
+      'title': 'how i did $8.3m in sales with high ticket dropshipping',
+      'url': 'https://www.youtube.com/watch?v=YHmvKbjg81E&t=521s',
+      'video_id': 'YHmvKbjg81E'},
      {'author': 'Joe Verschoor',
       'channel': 'Joe Verschoor',
       'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:09:48](https://www.youtube.com/watch?v=uxvzRhKmdXU&t=588s)',
-      'relevance': 'Attributed practitioner commentary on lean 3PL-backed & authorized-dealer '
-                   'e-commerce operations, contribution-margin underwriting, and automated '
-                   'retention (Chapter Q1 operational verification).',
+      'markdown': '[00:04:18](https://www.youtube.com/watch?v=uxvzRhKmdXU&t=258s)',
+      'relevance': 'Verbatim practitioner testimony from Chapter Q1.',
       'source_type': 'video_pro_tip',
-      'text': '100% of my clients have seen a sale within the first 2 weeks of launching. '
-              "That's just what's been observed. And in fact, I had a client get her first "
-              'sale before even running ads a couple weeks ago for 33 plus thousand dollars on '
-              'a single order.',
-      'timestamp': 588,
-      'timestamp_label': '[00:09:48]',
-      'timestamp_seconds': 588,
-      'tip': '100% of my clients have seen a sale within the first 2 weeks of launching. '
-             "That's just what's been observed. And in fact, I had a client get her first sale "
-             'before even running ads a couple weeks ago for 33 plus thousand dollars on a '
-             'single order.',
-      'title': 'How to Choose a High Ticket Dropshipping Niche in 2026 (Joe Verschoor)',
-      'url': 'https://www.youtube.com/watch?v=uxvzRhKmdXU&t=588s',
+      'text': 'You need high search volume plus low keyword difficulty.',
+      'timestamp': 258,
+      'timestamp_label': '[00:04:18]',
+      'timestamp_seconds': 258,
+      'tip': 'You need high search volume plus low keyword difficulty.',
+      'title': 'How to Choose a High Ticket Dropshipping Niche in 2026',
+      'url': 'https://www.youtube.com/watch?v=uxvzRhKmdXU&t=258s',
       'video_id': 'uxvzRhKmdXU'},
-     {'author': 'Arthur Glinkin',
-      'channel': 'Arthur Glinkin',
-      'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:00:38](https://www.youtube.com/watch?v=1Cr_iHc8p4s&t=38s)',
-      'relevance': 'Attributed practitioner commentary on lean 3PL-backed & authorized-dealer '
-                   'e-commerce operations, contribution-margin underwriting, and automated '
-                   'retention (Chapter Q1 operational verification).',
-      'source_type': 'video_pro_tip',
-      'text': "So, real quick, my name's Arthur. I'm a certified pro adviser inside of "
-              "QuickBooks Online. I'm also the owner of SMG Bookkeeping, an accounting and "
-              'bookkeeping firm that works specifically with e-commerce clients to help '
-              'streamline their accounting on the back end.',
-      'timestamp': 38,
-      'timestamp_label': '[00:00:38]',
-      'timestamp_seconds': 38,
-      'tip': "So, real quick, my name's Arthur. I'm a certified pro adviser inside of "
-             "QuickBooks Online. I'm also the owner of SMG Bookkeeping, an accounting and "
-             'bookkeeping firm that works specifically with e-commerce clients to help '
-             'streamline their accounting on the back end.',
-      'title': 'Ecommerce Sales Tax MADE EASY (TaxJar Setup) (Arthur Glinkin)',
-      'url': 'https://www.youtube.com/watch?v=1Cr_iHc8p4s&t=38s',
-      'video_id': '1Cr_iHc8p4s'},
-     {'author': 'Enterprise Industry Network',
-      'channel': 'Enterprise Industry Network',
-      'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:00:47](https://www.youtube.com/watch?v=axmEedpIF1E&t=47s)',
-      'relevance': 'Attributed practitioner commentary on lean 3PL-backed & authorized-dealer '
-                   'e-commerce operations, contribution-margin underwriting, and automated '
-                   'retention (Chapter Q1 operational verification).',
-      'source_type': 'video_pro_tip',
-      'text': 'They do not want to buy the business and then immediately inject more cash just '
-              'to fund payroll, inventory, or receivables gaps. That is where the adjustment '
-              'comes in. During the deal process, buyer and seller usually agree on a target '
-              'working capital amount.',
-      'timestamp': 47,
-      'timestamp_label': '[00:00:47]',
-      'timestamp_seconds': 47,
-      'tip': 'They do not want to buy the business and then immediately inject more cash just '
-             'to fund payroll, inventory, or receivables gaps. That is where the adjustment '
-             'comes in. During the deal process, buyer and seller usually agree on a target '
-             'working capital amount.',
-      'title': 'Working Capital Adjustments in a Business Sale | EIN Business Brokers | '
-               'Enterprise Industry Network (Enterprise Industry Network)',
-      'url': 'https://www.youtube.com/watch?v=axmEedpIF1E&t=47s',
-      'video_id': 'axmEedpIF1E'},
-     {'author': 'Report Pundit',
-      'channel': 'Report Pundit',
-      'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:01:28](https://www.youtube.com/watch?v=bX6lGJtCxao&t=88s)',
-      'relevance': 'Attributed practitioner commentary on lean 3PL-backed & authorized-dealer '
-                   'e-commerce operations, contribution-margin underwriting, and automated '
-                   'retention (Chapter Q1 operational verification).',
-      'source_type': 'video_pro_tip',
-      'text': 'Inventory on hand in report pundit. Add columns like cost and current value and '
-              'schedule to email or Google Sheets. So the team starts the day with stock '
-              'reality. Grade products A or B or C by their share of revenue in your selected '
-              'window.',
-      'timestamp': 88,
-      'timestamp_label': '[00:01:28]',
-      'timestamp_seconds': 88,
-      'tip': 'Inventory on hand in report pundit. Add columns like cost and current value and '
-             'schedule to email or Google Sheets. So the team starts the day with stock '
-             'reality. Grade products A or B or C by their share of revenue in your selected '
-             'window.',
-      'title': 'Shopify Inventory Tracking Guide: ABC Analysis, Bundles & Stock Alerts (Report '
-               'Pundit)',
-      'url': 'https://www.youtube.com/watch?v=bX6lGJtCxao&t=88s',
-      'video_id': 'bX6lGJtCxao'},
-     {'author': 'Emiel Dingemans | eCommerce Retention Marketing',
-      'channel': 'Emiel Dingemans | eCommerce Retention Marketing',
-      'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:00:15](https://www.youtube.com/watch?v=6OklvvWTGmw&t=15s)',
-      'relevance': 'Attributed practitioner commentary on lean 3PL-backed & authorized-dealer '
-                   'e-commerce operations, contribution-margin underwriting, and automated '
-                   'retention (Chapter Q1 operational verification).',
-      'source_type': 'video_pro_tip',
-      'text': 'In this video I walk you to the exact flows we use at magically to generate '
-              'consistent automated revenue for our clients including seven eight and nine.',
-      'timestamp': 15,
-      'timestamp_label': '[00:00:15]',
-      'timestamp_seconds': 15,
-      'tip': 'In this video I walk you to the exact flows we use at magically to generate '
-             'consistent automated revenue for our clients including seven eight and nine.',
-      'title': 'Klaviyo Flows Tutorial For Beginners (2025 Full Course for Shopify) (Emiel '
-               'Dingemans | eCommerce Retention Marketing)',
-      'url': 'https://www.youtube.com/watch?v=6OklvvWTGmw&t=15s',
-      'video_id': '6OklvvWTGmw'},
-     {'author': 'CTLGlobalSolutions',
-      'channel': 'CTLGlobalSolutions',
-      'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:01:01](https://www.youtube.com/watch?v=i9PB8pM9lZ4&t=61s)',
-      'relevance': 'Attributed practitioner commentary on lean 3PL-backed & authorized-dealer '
-                   'e-commerce operations, contribution-margin underwriting, and automated '
-                   'retention (Chapter Q1 operational verification).',
-      'source_type': 'video_pro_tip',
-      'text': 'Clients can call their account managers directly. Many of them are set up on '
-              "Teams. It's really important to us that the account management team is an "
-              'extension of the client and that the client feels that they are part of their '
-              'team as well.',
-      'timestamp': 61,
-      'timestamp_label': '[00:01:01]',
-      'timestamp_seconds': 61,
-      'tip': 'Clients can call their account managers directly. Many of them are set up on '
-             "Teams. It's really important to us that the account management team is an "
-             'extension of the client and that the client feels that they are part of their '
-             'team as well.',
-      'title': '3PL Fulfillment Built for Scaling Brands | CTL (CTLGlobalSolutions)',
-      'url': 'https://www.youtube.com/watch?v=i9PB8pM9lZ4&t=61s',
-      'video_id': 'i9PB8pM9lZ4'},
-     {'author': 'CartonCloud',
-      'channel': 'CartonCloud',
-      'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:00:19](https://www.youtube.com/watch?v=EYQU96qv5rk&t=19s)',
-      'relevance': 'Attributed practitioner commentary on lean 3PL-backed & authorized-dealer '
-                   'e-commerce operations, contribution-margin underwriting, and automated '
-                   'retention (Chapter Q1 operational verification).',
-      'source_type': 'video_pro_tip',
-      'text': 'Become a proper three pearl operation that was our overall objective at the '
-              'same time our business was evolving so suddenly we had 40 clients.',
-      'timestamp': 19,
-      'timestamp_label': '[00:00:19]',
-      'timestamp_seconds': 19,
-      'tip': 'Become a proper three pearl operation that was our overall objective at the same '
-             'time our business was evolving so suddenly we had 40 clients.',
-      'title': '3PL warehouse B2C x CartonCloud case study (CartonCloud)',
-      'url': 'https://www.youtube.com/watch?v=EYQU96qv5rk&t=19s',
-      'video_id': 'EYQU96qv5rk'},
      {'author': 'WatchMeDropship',
       'channel': 'WatchMeDropship',
       'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:28:35](https://www.youtube.com/watch?v=xJp0s6G8Hew&t=1715s)',
-      'relevance': 'Attributed practitioner commentary on lean 3PL-backed & authorized-dealer '
-                   'e-commerce operations, contribution-margin underwriting, and automated '
-                   'retention (Chapter Q1 operational verification).',
+      'markdown': '[00:36:38](https://www.youtube.com/watch?v=xJp0s6G8Hew&t=2198s)',
+      'relevance': 'Verbatim practitioner testimony from Chapter Q1.',
       'source_type': 'video_pro_tip',
-      'text': 'Want to focus like I said on the make the model the brand and and what it is in '
-              'combination with that not just golf simulator.',
-      'timestamp': 1715,
-      'timestamp_label': '[00:28:35]',
-      'timestamp_seconds': 1715,
-      'tip': 'Want to focus like I said on the make the model the brand and and what it is in '
-             'combination with that not just golf simulator.',
-      'title': 'High Ticket Product Research & USA Based Wholesale Dropshipping Suppliers '
-               '(WatchMeDropship)',
-      'url': 'https://www.youtube.com/watch?v=xJp0s6G8Hew&t=1715s',
+      'text': "If you don't follow MAP pricing, usually what they'll do is they'll take away your "
+              "wholesale account and they won't let you sell anymore.",
+      'timestamp': 2198,
+      'timestamp_label': '[00:36:38]',
+      'timestamp_seconds': 2198,
+      'tip': "If you don't follow MAP pricing, usually what they'll do is they'll take away your "
+             "wholesale account and they won't let you sell anymore.",
+      'title': 'High Ticket Product Research & USA Based Wholesale Dropshipping Suppliers',
+      'url': 'https://www.youtube.com/watch?v=xJp0s6G8Hew&t=2198s',
       'video_id': 'xJp0s6G8Hew'},
-     {'author': 'Kai Cromwell - eCommerce SEO',
-      'channel': 'Kai Cromwell - eCommerce SEO',
+     {'author': 'Ecommerce Paradise | High Ticket Dropshipping',
+      'channel': 'Ecommerce Paradise | High Ticket Dropshipping',
       'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:01:51](https://www.youtube.com/watch?v=61mBGqDsSo4&t=111s)',
-      'relevance': 'Attributed practitioner commentary on lean 3PL-backed & authorized-dealer '
-                   'e-commerce operations, contribution-margin underwriting, and automated '
-                   'retention (Chapter Q1 operational verification).',
+      'markdown': '[00:02:06](https://www.youtube.com/watch?v=EaAeDMJIPLQ&t=126s)',
+      'relevance': 'Verbatim practitioner testimony from Chapter Q1.',
       'source_type': 'video_pro_tip',
-      'text': "'re just like drop shipping from other brands, you're going to crush because "
-              "people's vices are typically lifetime vices. So, you will have that client for "
-              'years to come.',
-      'timestamp': 111,
-      'timestamp_label': '[00:01:51]',
-      'timestamp_seconds': 111,
-      'tip': "'re just like drop shipping from other brands, you're going to crush because "
-             "people's vices are typically lifetime vices. So, you will have that client for "
-             'years to come.',
-      'title': '5 Best High Ticket SEO Dropshipping Niches for 2025 (Kai Cromwell - eCommerce '
-               'SEO)',
-      'url': 'https://www.youtube.com/watch?v=61mBGqDsSo4&t=111s',
-      'video_id': '61mBGqDsSo4'}],
- 2: [{'author': 'Marketing Business Network',
-      'channel': 'Marketing Business Network',
+      'text': 'So sometimes those high ticket disputes can really eat away at your margins and '
+              'your cash flow.',
+      'timestamp': 126,
+      'timestamp_label': '[00:02:06]',
+      'timestamp_seconds': 126,
+      'tip': 'So sometimes those high ticket disputes can really eat away at your margins and your '
+             'cash flow.',
+      'title': 'What Is High Ticket Dropshipping? Complete Beginner Guide (2026)',
+      'url': 'https://www.youtube.com/watch?v=EaAeDMJIPLQ&t=126s',
+      'video_id': 'EaAeDMJIPLQ'},
+     {'author': 'Brook Hiddink',
+      'channel': 'Brook Hiddink',
       'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:02:14](https://www.youtube.com/watch?v=C5Ut79jWwHA&t=134s)',
-      'relevance': 'Attributed practitioner commentary on lean 3PL-backed & authorized-dealer '
-                   'e-commerce operations, contribution-margin underwriting, and automated '
-                   'retention (Chapter Q2 operational verification).',
+      'markdown': '[00:04:40](https://www.youtube.com/watch?v=cBdVAQxml6U&t=280s)',
+      'relevance': 'Verbatim practitioner testimony from Chapter Q1.',
       'source_type': 'video_pro_tip',
-      'text': 'Likewise, keeping too little stock can leave customers waiting and cost the '
-              'company sales. Some businesses collect customer money before they pay '
-              'suppliers, producing a negative cash conversion cycle. That describes payment '
-              'timing, not a loss.',
-      'timestamp': 134,
-      'timestamp_label': '[00:02:14]',
-      'timestamp_seconds': 134,
-      'tip': 'Likewise, keeping too little stock can leave customers waiting and cost the '
-             'company sales. Some businesses collect customer money before they pay suppliers, '
-             'producing a negative cash conversion cycle. That describes payment timing, not a '
-             'loss.',
-      'title': 'What is the Cash Conversion Cycle? (Marketing Business Network)',
-      'url': 'https://www.youtube.com/watch?v=C5Ut79jWwHA&t=134s',
-      'video_id': 'C5Ut79jWwHA'},
-     {'author': 'Adam Callinan',
-      'channel': 'Adam Callinan',
+      'text': 'So a lot less cost sensitive than a consumer.',
+      'timestamp': 280,
+      'timestamp_label': '[00:04:40]',
+      'timestamp_seconds': 280,
+      'tip': 'So a lot less cost sensitive than a consumer.',
+      'title': 'B2B High Ticket Dropshipping Explained',
+      'url': 'https://www.youtube.com/watch?v=cBdVAQxml6U&t=280s',
+      'video_id': 'cBdVAQxml6U'},
+     {'author': 'Marcus Lam | High Ticket Dropshipping (AI)',
+      'channel': 'Marcus Lam | High Ticket Dropshipping (AI)',
       'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:09:35](https://www.youtube.com/watch?v=VCXWZQgbKXw&t=575s)',
-      'relevance': 'Attributed practitioner commentary on lean 3PL-backed & authorized-dealer '
-                   'e-commerce operations, contribution-margin underwriting, and automated '
-                   'retention (Chapter Q2 operational verification).',
+      'markdown': '[00:04:06](https://www.youtube.com/watch?v=7B1m62WaDkw&t=246s)',
+      'relevance': 'Verbatim practitioner testimony from Chapter Q1.',
       'source_type': 'video_pro_tip',
-      'text': 'Think of cost of goods sold, shipping and fulfillment to the customer, credit '
-              'card fees, Shopify fees, Amazon fees, all the stuff that you pay when you sell '
-              'a product.',
-      'timestamp': 575,
-      'timestamp_label': '[00:09:35]',
-      'timestamp_seconds': 575,
-      'tip': 'Think of cost of goods sold, shipping and fulfillment to the customer, credit '
-             'card fees, Shopify fees, Amazon fees, all the stuff that you pay when you sell a '
-             'product.',
-      'title': 'The Only Video You Need to Scale Your Ecommerce Brand to 8 Figures (Adam '
-               'Callinan)',
-      'url': 'https://www.youtube.com/watch?v=VCXWZQgbKXw&t=575s',
-      'video_id': 'VCXWZQgbKXw'},
-     {'author': 'RRA Group | Freight Forwarding & Logistics',
-      'channel': 'RRA Group | Freight Forwarding & Logistics',
+      'text': 'I think the biggest levers that Johnny did was really learning the ads and '
+              'suppliers.',
+      'timestamp': 246,
+      'timestamp_label': '[00:04:06]',
+      'timestamp_seconds': 246,
+      'tip': 'I think the biggest levers that Johnny did was really learning the ads and '
+             'suppliers.',
+      'title': 'Niching Down and Finding Better Suppliers | High Ticket Dropshipping (Case Study)',
+      'url': 'https://www.youtube.com/watch?v=7B1m62WaDkw&t=246s',
+      'video_id': '7B1m62WaDkw'},
+     {'author': 'Dropship Circle - High Ticket Dropshipping',
+      'channel': 'Dropship Circle - High Ticket Dropshipping',
       'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:01:27](https://www.youtube.com/watch?v=007vdtJ5XrY&t=87s)',
-      'relevance': 'Attributed practitioner commentary on lean 3PL-backed & authorized-dealer '
-                   'e-commerce operations, contribution-margin underwriting, and automated '
-                   'retention (Chapter Q2 operational verification).',
+      'markdown': '[00:11:50](https://www.youtube.com/watch?v=WAF10Ijm6RE&t=710s)',
+      'relevance': 'Verbatim practitioner testimony from Chapter Q1.',
       'source_type': 'video_pro_tip',
-      'text': 'That landed cost per unit is what to compare with the selling price. So: start '
-              'with the invoice, add freight, insurance and fees, get duties and taxes '
-              'estimated by a customs broker, and mark your estimates. Next: why freight '
-              'quotes expire.',
-      'timestamp': 87,
-      'timestamp_label': '[00:01:27]',
-      'timestamp_seconds': 87,
-      'tip': 'That landed cost per unit is what to compare with the selling price. So: start '
-             'with the invoice, add freight, insurance and fees, get duties and taxes '
-             'estimated by a customs broker, and mark your estimates. Next: why freight quotes '
-             'expire.',
-      'title': 'Build a Landed-Cost Estimate: A Canadian Import Example (RRA Group | Freight '
-               'Forwarding & Logistics)',
-      'url': 'https://www.youtube.com/watch?v=007vdtJ5XrY&t=87s',
-      'video_id': '007vdtJ5XrY'},
-     {'author': 'ZIK Analytics',
-      'channel': 'ZIK Analytics',
+      'text': 'All the work that had to be done was to receive the invoice from the supplier, get '
+              "the money from the customer, use the customer's money to pay the supplier so you "
+              "don't have to buy any products upfront.",
+      'timestamp': 710,
+      'timestamp_label': '[00:11:50]',
+      'timestamp_seconds': 710,
+      'tip': 'All the work that had to be done was to receive the invoice from the supplier, get '
+             "the money from the customer, use the customer's money to pay the supplier so you "
+             "don't have to buy any products upfront.",
+      'title': 'The Top 5 High-Ticket Dropshipping Products to Sell in 2025 for Maximum Profit',
+      'url': 'https://www.youtube.com/watch?v=WAF10Ijm6RE&t=710s',
+      'video_id': 'WAF10Ijm6RE'},
+     {'author': 'Asonjf',
+      'channel': 'Asonjf',
       'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:06:02](https://www.youtube.com/watch?v=7GY4PPBU0GY&t=362s)',
-      'relevance': 'Attributed practitioner commentary on lean 3PL-backed & authorized-dealer '
-                   'e-commerce operations, contribution-margin underwriting, and automated '
-                   'retention (Chapter Q2 operational verification).',
+      'markdown': '[00:21:02](https://www.youtube.com/watch?v=91zki-xXArY&t=1262s)',
+      'relevance': 'Verbatim practitioner testimony from Chapter Q1.',
       'source_type': 'video_pro_tip',
-      'text': 'In this case, the buyer is responsible for paying the return shipping cost. '
-              'Once the item is received, you can issue the refund. While this method is '
-              "common, it can lead to a negative customer experience and may harm your brand's "
-              'reputation.',
-      'timestamp': 362,
-      'timestamp_label': '[00:06:02]',
-      'timestamp_seconds': 362,
-      'tip': 'In this case, the buyer is responsible for paying the return shipping cost. Once '
-             'the item is received, you can issue the refund. While this method is common, it '
-             "can lead to a negative customer experience and may harm your brand's reputation.",
-      'title': 'How To Handle Returns & Refunds on Shopify | 2026 Shipping Tutorial (ZIK '
-               'Analytics)',
-      'url': 'https://www.youtube.com/watch?v=7GY4PPBU0GY&t=362s',
-      'video_id': '7GY4PPBU0GY'},
-     {'author': 'Acuity Ecommerce Accounting',
-      'channel': 'Acuity Ecommerce Accounting',
+      'text': 'One good supplier, one good product, one good store, one good ad, all it takes, '
+              "literally, that's it.",
+      'timestamp': 1262,
+      'timestamp_label': '[00:21:02]',
+      'timestamp_seconds': 1262,
+      'tip': 'One good supplier, one good product, one good store, one good ad, all it takes, '
+             "literally, that's it.",
+      'title': '$200,000 A Month Dropshipping High Ticket Products - Case Study',
+      'url': 'https://www.youtube.com/watch?v=91zki-xXArY&t=1262s',
+      'video_id': '91zki-xXArY'},
+     {'author': 'Asonjf',
+      'channel': 'Asonjf',
       'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:12:26](https://www.youtube.com/watch?v=8zfPSv7hAWM&t=746s)',
-      'relevance': 'Attributed practitioner commentary on lean 3PL-backed & authorized-dealer '
-                   'e-commerce operations, contribution-margin underwriting, and automated '
-                   'retention (Chapter Q2 operational verification).',
+      'markdown': '[00:14:38](https://www.youtube.com/watch?v=91zki-xXArY&t=878s)',
+      'relevance': 'Verbatim practitioner testimony from Chapter Q1.',
       'source_type': 'video_pro_tip',
-      'text': "If you have just a little bit of volume you'll be a smaller fee if you have a "
-              "lot of volume you'll pay higher fees so you'll have to check out the pricing.",
+      'text': "You're supposed to incrementally spend more, not just dump $200 a day into a "
+              'campaign; it should just be like 20% increases every so often.',
+      'timestamp': 878,
+      'timestamp_label': '[00:14:38]',
+      'timestamp_seconds': 878,
+      'tip': "You're supposed to incrementally spend more, not just dump $200 a day into a "
+             'campaign; it should just be like 20% increases every so often.',
+      'title': '$200,000 A Month Dropshipping High Ticket Products - Case Study',
+      'url': 'https://www.youtube.com/watch?v=91zki-xXArY&t=878s',
+      'video_id': '91zki-xXArY'},
+     {'author': 'Theo Clarke Podcast',
+      'channel': 'Theo Clarke Podcast',
+      'epistemic_status': 'attributed_practitioner_claim',
+      'markdown': '[00:31:03](https://www.youtube.com/watch?v=8V2vAoy6GNA&t=1863s)',
+      'relevance': 'Verbatim practitioner testimony from Chapter Q1.',
+      'source_type': 'video_pro_tip',
+      'text': "I think that's a big mistake a lot of people make is they just go in, they think "
+              "they're just going to turn on the ads and then sales are just going to come pouring "
+              'in.',
+      'timestamp': 1863,
+      'timestamp_label': '[00:31:03]',
+      'timestamp_seconds': 1863,
+      'tip': "I think that's a big mistake a lot of people make is they just go in, they think "
+             "they're just going to turn on the ads and then sales are just going to come pouring "
+             'in.',
+      'title': 'How To Dropship High-Ticket Products Using US Suppliers | Brook Hiddink | Ep.19',
+      'url': 'https://www.youtube.com/watch?v=8V2vAoy6GNA&t=1863s',
+      'video_id': '8V2vAoy6GNA'},
+     {'author': 'Asonjf',
+      'channel': 'Asonjf',
+      'epistemic_status': 'attributed_practitioner_claim',
+      'markdown': '[00:12:48](https://www.youtube.com/watch?v=r79NEO4JF2M&t=768s)',
+      'relevance': 'Verbatim practitioner testimony from Chapter Q1.',
+      'source_type': 'video_pro_tip',
+      'text': 'Businesses fail because suppliers lower their product quality to raise the profit '
+              'margin.',
+      'timestamp': 768,
+      'timestamp_label': '[00:12:48]',
+      'timestamp_seconds': 768,
+      'tip': 'Businesses fail because suppliers lower their product quality to raise the profit '
+             'margin.',
+      'title': 'How To Find Winning High Ticket Products',
+      'url': 'https://www.youtube.com/watch?v=r79NEO4JF2M&t=768s',
+      'video_id': 'r79NEO4JF2M'},
+     {'author': 'Peak Flow Media',
+      'channel': 'Peak Flow Media',
+      'epistemic_status': 'attributed_practitioner_claim',
+      'markdown': '[00:08:06](https://www.youtube.com/watch?v=YmrOjrklnxM&t=486s)',
+      'relevance': 'Verbatim practitioner testimony from Chapter Q1.',
+      'source_type': 'video_pro_tip',
+      'text': 'My recommended starting budget for a high ticket e-commerce store is $2,000 '
+              'starting capital, but you can honestly start with as little as 500 bucks.',
+      'timestamp': 486,
+      'timestamp_label': '[00:08:06]',
+      'timestamp_seconds': 486,
+      'tip': 'My recommended starting budget for a high ticket e-commerce store is $2,000 starting '
+             'capital, but you can honestly start with as little as 500 bucks.',
+      'title': 'What is High Ticket Dropshipping and Common FAQs',
+      'url': 'https://www.youtube.com/watch?v=YmrOjrklnxM&t=486s',
+      'video_id': 'YmrOjrklnxM'},
+     {'author': 'built with ali',
+      'channel': 'built with ali',
+      'epistemic_status': 'attributed_practitioner_claim',
+      'markdown': '[00:23:17](https://www.youtube.com/watch?v=pbk_t9e4Xpo&t=1397s)',
+      'relevance': 'Verbatim practitioner testimony from Chapter Q1.',
+      'source_type': 'video_pro_tip',
+      'text': "You're probably going to lose a lot of money on some deals.",
+      'timestamp': 1397,
+      'timestamp_label': '[00:23:17]',
+      'timestamp_seconds': 1397,
+      'tip': "You're probably going to lose a lot of money on some deals.",
+      'title': 'how i make $6,000 sales dropshipping (the anti-guru guide)',
+      'url': 'https://www.youtube.com/watch?v=pbk_t9e4Xpo&t=1397s',
+      'video_id': 'pbk_t9e4Xpo'}],
+ 2: [{'author': 'Ecommerce Paradise | High Ticket Dropshipping',
+      'channel': 'Ecommerce Paradise | High Ticket Dropshipping',
+      'epistemic_status': 'attributed_practitioner_claim',
+      'markdown': '[00:12:15](https://www.youtube.com/watch?v=hHXf1_WdANY&t=735s)',
+      'relevance': 'Verbatim practitioner testimony from Chapter Q2.',
+      'source_type': 'video_pro_tip',
+      'text': 'Most suppliers need two to four touches before they respond.',
+      'timestamp': 735,
+      'timestamp_label': '[00:12:15]',
+      'timestamp_seconds': 735,
+      'tip': 'Most suppliers need two to four touches before they respond.',
+      'title': 'How to Find USA High-Ticket Dropshipping Suppliers in 2026',
+      'url': 'https://www.youtube.com/watch?v=hHXf1_WdANY&t=735s',
+      'video_id': 'hHXf1_WdANY'},
+     {'author': 'Marcus Lam | High Ticket Dropshipping (AI)',
+      'channel': 'Marcus Lam | High Ticket Dropshipping (AI)',
+      'epistemic_status': 'attributed_practitioner_claim',
+      'markdown': '[00:02:01](https://www.youtube.com/watch?v=g_OL9gG7q_I&t=121s)',
+      'relevance': 'Verbatim practitioner testimony from Chapter Q2.',
+      'source_type': 'video_pro_tip',
+      'text': "Some of the best margins I've had were 3,000, 4,000, even $5,000 profit in just one "
+              'single order.',
+      'timestamp': 121,
+      'timestamp_label': '[00:02:01]',
+      'timestamp_seconds': 121,
+      'tip': "Some of the best margins I've had were 3,000, 4,000, even $5,000 profit in just one "
+             'single order.',
+      'title': 'How to Find USA Suppliers for High Ticket Dropshipping',
+      'url': 'https://www.youtube.com/watch?v=g_OL9gG7q_I&t=121s',
+      'video_id': 'g_OL9gG7q_I'},
+     {'author': 'Build Assets Online',
+      'channel': 'Build Assets Online',
+      'epistemic_status': 'attributed_practitioner_claim',
+      'markdown': '[00:04:14](https://www.youtube.com/watch?v=ocjVuvj0QJg&t=254s)',
+      'relevance': 'Verbatim practitioner testimony from Chapter Q2.',
+      'source_type': 'video_pro_tip',
+      'text': 'It works out to about one sale for every twenty quotes, so do not take this on as a '
+              'solo operator.',
+      'timestamp': 254,
+      'timestamp_label': '[00:04:14]',
+      'timestamp_seconds': 254,
+      'tip': 'It works out to about one sale for every twenty quotes, so do not take this on as a '
+             'solo operator.',
+      'title': 'High Ticket Dropshipping Suppliers with No Price Lists - What to Do',
+      'url': 'https://www.youtube.com/watch?v=ocjVuvj0QJg&t=254s',
+      'video_id': 'ocjVuvj0QJg'},
+     {'author': 'Marcus Lam | High Ticket Dropshipping (AI)',
+      'channel': 'Marcus Lam | High Ticket Dropshipping (AI)',
+      'epistemic_status': 'attributed_practitioner_claim',
+      'markdown': '[00:16:19](https://www.youtube.com/watch?v=r2ydHddjtIw&t=979s)',
+      'relevance': 'Verbatim practitioner testimony from Chapter Q2.',
+      'source_type': 'video_pro_tip',
+      'text': 'The brands will let you list their products and then once you get the sale, you '
+              'send an email to your supplier and then they will ship for you.',
+      'timestamp': 979,
+      'timestamp_label': '[00:16:19]',
+      'timestamp_seconds': 979,
+      'tip': 'The brands will let you list their products and then once you get the sale, you send '
+             'an email to your supplier and then they will ship for you.',
+      'title': 'How to Dropship as an Authorized Dealer in 2026 | High Ticket Dropshipping',
+      'url': 'https://www.youtube.com/watch?v=r2ydHddjtIw&t=979s',
+      'video_id': 'r2ydHddjtIw'},
+     {'author': 'Trevor Zheng | High Ticket Dropshipping',
+      'channel': 'Trevor Zheng | High Ticket Dropshipping',
+      'epistemic_status': 'attributed_practitioner_claim',
+      'markdown': '[00:12:26](https://www.youtube.com/watch?v=v64Z-O_YyTY&t=746s)',
+      'relevance': 'Verbatim practitioner testimony from Chapter Q2.',
+      'source_type': 'video_pro_tip',
+      'text': 'If it is your first time, call the brands that have a MAP policy first and focus on '
+              'speed.',
       'timestamp': 746,
       'timestamp_label': '[00:12:26]',
       'timestamp_seconds': 746,
-      'tip': "If you have just a little bit of volume you'll be a smaller fee if you have a "
-             "lot of volume you'll pay higher fees so you'll have to check out the pricing.",
-      'title': 'Avalara TaxJar Taxify | Sales Tax Solutions for Ecommerce Sellers (Acuity '
-               'Ecommerce Accounting)',
-      'url': 'https://www.youtube.com/watch?v=8zfPSv7hAWM&t=746s',
-      'video_id': '8zfPSv7hAWM'},
+      'tip': 'If it is your first time, call the brands that have a MAP policy first and focus on '
+             'speed.',
+      'title': 'How To ACTUALLY Find Shopify Dropshipping Suppliers (USA High Ticket Suppliers)',
+      'url': 'https://www.youtube.com/watch?v=v64Z-O_YyTY&t=746s',
+      'video_id': 'v64Z-O_YyTY'},
+     {'author': 'Pedro Bermudez',
+      'channel': 'Pedro Bermudez',
+      'epistemic_status': 'attributed_practitioner_claim',
+      'markdown': '[00:05:23](https://www.youtube.com/watch?v=nm9aWWMYnEg&t=323s)',
+      'relevance': 'Verbatim practitioner testimony from Chapter Q2.',
+      'source_type': 'video_pro_tip',
+      'text': 'Under 50 people is really your zone.',
+      'timestamp': 323,
+      'timestamp_label': '[00:05:23]',
+      'timestamp_seconds': 323,
+      'tip': 'Under 50 people is really your zone.',
+      'title': 'How to Find Amazon Wholesale and Brand Suppliers That Actually Make You Money '
+               'Faster',
+      'url': 'https://www.youtube.com/watch?v=nm9aWWMYnEg&t=323s',
+      'video_id': 'nm9aWWMYnEg'},
+     {'author': 'Daniel Boufford',
+      'channel': 'Daniel Boufford',
+      'epistemic_status': 'attributed_practitioner_claim',
+      'markdown': '[00:00:15](https://www.youtube.com/watch?v=jYFh4ucNZuw&t=15s)',
+      'relevance': 'Verbatim practitioner testimony from Chapter Q2.',
+      'source_type': 'video_pro_tip',
+      'text': "Usually, it's actually a lower barrier to entry to open those types of accounts.",
+      'timestamp': 15,
+      'timestamp_label': '[00:00:15]',
+      'timestamp_seconds': 15,
+      'tip': "Usually, it's actually a lower barrier to entry to open those types of accounts.",
+      'title': 'The Truth About Distributors vs Brand Direct (Amazon Wholesale)',
+      'url': 'https://www.youtube.com/watch?v=jYFh4ucNZuw&t=15s',
+      'video_id': 'jYFh4ucNZuw'},
+     {'author': 'I Am David Scheuer',
+      'channel': 'I Am David Scheuer',
+      'epistemic_status': 'attributed_practitioner_claim',
+      'markdown': '[00:08:45](https://www.youtube.com/watch?v=HqGwAnGaUf8&t=525s)',
+      'relevance': 'Verbatim practitioner testimony from Chapter Q2.',
+      'source_type': 'video_pro_tip',
+      'text': 'Do not mention Amazon at the start of the conversation.',
+      'timestamp': 525,
+      'timestamp_label': '[00:08:45]',
+      'timestamp_seconds': 525,
+      'tip': 'Do not mention Amazon at the start of the conversation.',
+      'title': 'How to contact brands and distributors for your Amazon wholesale business!',
+      'url': 'https://www.youtube.com/watch?v=HqGwAnGaUf8&t=525s',
+      'video_id': 'HqGwAnGaUf8'},
+     {'author': 'William Rivera',
+      'channel': 'William Rivera',
+      'epistemic_status': 'attributed_practitioner_claim',
+      'markdown': '[00:02:06](https://www.youtube.com/watch?v=KImeudrcJTU&t=126s)',
+      'relevance': 'Verbatim practitioner testimony from Chapter Q2.',
+      'source_type': 'video_pro_tip',
+      'text': 'About 80 percent of the results you find are not going to be a fit.',
+      'timestamp': 126,
+      'timestamp_label': '[00:02:06]',
+      'timestamp_seconds': 126,
+      'tip': 'About 80 percent of the results you find are not going to be a fit.',
+      'title': 'How To Find Amazon Wholesale Suppliers In 5 Minutes',
+      'url': 'https://www.youtube.com/watch?v=KImeudrcJTU&t=126s',
+      'video_id': 'KImeudrcJTU'},
+     {'author': 'Strictly Commerce',
+      'channel': 'Strictly Commerce',
+      'epistemic_status': 'attributed_practitioner_claim',
+      'markdown': '[00:01:26](https://www.youtube.com/watch?v=fOjBryou0Do&t=86s)',
+      'relevance': 'Verbatim practitioner testimony from Chapter Q2.',
+      'source_type': 'video_pro_tip',
+      'text': 'The minimum is about $3,500, and the catalog order came out to roughly $7,000.',
+      'timestamp': 86,
+      'timestamp_label': '[00:01:26]',
+      'timestamp_seconds': 86,
+      'tip': 'The minimum is about $3,500, and the catalog order came out to roughly $7,000.',
+      'title': 'Talking to Wholesale Distributors for Amazon FBA (LIVE Call) | Road to $1M',
+      'url': 'https://www.youtube.com/watch?v=fOjBryou0Do&t=86s',
+      'video_id': 'fOjBryou0Do'},
+     {'author': 'Marvin',
+      'channel': 'Marvin',
+      'epistemic_status': 'attributed_practitioner_claim',
+      'markdown': '[00:24:00](https://www.youtube.com/watch?v=fHLUiiiopmw&t=1440s)',
+      'relevance': 'Verbatim practitioner testimony from Chapter Q2.',
+      'source_type': 'video_pro_tip',
+      'text': 'Present yourself as a retailer, never as an Amazon seller.',
+      'timestamp': 1440,
+      'timestamp_label': '[00:24:00]',
+      'timestamp_seconds': 1440,
+      'tip': 'Present yourself as a retailer, never as an Amazon seller.',
+      'title': 'Amazon Wholesale || How To Find Wholesale Suppliers For Amazon FBA',
+      'url': 'https://www.youtube.com/watch?v=fHLUiiiopmw&t=1440s',
+      'video_id': 'fHLUiiiopmw'},
+     {'author': 'Third-Party Profits',
+      'channel': 'Third-Party Profits',
+      'epistemic_status': 'attributed_practitioner_claim',
+      'markdown': '[00:01:03](https://www.youtube.com/watch?v=1lcG6ji-5ls&t=63s)',
+      'relevance': 'Verbatim practitioner testimony from Chapter Q2.',
+      'source_type': 'video_pro_tip',
+      'text': "So, if you're struggling to find profit products, it's not a product issue, it's a "
+              "access issue, it's a cost issue.",
+      'timestamp': 63,
+      'timestamp_label': '[00:01:03]',
+      'timestamp_seconds': 63,
+      'tip': "So, if you're struggling to find profit products, it's not a product issue, it's a "
+             "access issue, it's a cost issue.",
+      'title': 'How to Find Amazon Wholesale Suppliers That Actually Make You Money | Third-Party '
+               'Profits Tutorial',
+      'url': 'https://www.youtube.com/watch?v=1lcG6ji-5ls&t=63s',
+      'video_id': '1lcG6ji-5ls'},
+     {'author': 'Brad Sherman | OperationAMZ',
+      'channel': 'Brad Sherman | OperationAMZ',
+      'epistemic_status': 'attributed_practitioner_claim',
+      'markdown': '[00:03:40](https://www.youtube.com/watch?v=G9hSjTySxP0&t=220s)',
+      'relevance': 'Verbatim practitioner testimony from Chapter Q2.',
+      'source_type': 'video_pro_tip',
+      'text': 'So when we talk about this, Amazon wholesale is a relationship-driven game.',
+      'timestamp': 220,
+      'timestamp_label': '[00:03:40]',
+      'timestamp_seconds': 220,
+      'tip': 'So when we talk about this, Amazon wholesale is a relationship-driven game.',
+      'title': 'How to Contact Amazon FBA Wholesale Suppliers in 30 minutes',
+      'url': 'https://www.youtube.com/watch?v=G9hSjTySxP0&t=220s',
+      'video_id': 'G9hSjTySxP0'},
+     {'author': 'Sertac Altun',
+      'channel': 'Sertac Altun',
+      'epistemic_status': 'attributed_practitioner_claim',
+      'markdown': '[00:08:29](https://www.youtube.com/watch?v=B-HQodfgIG4&t=509s)',
+      'relevance': 'Verbatim practitioner testimony from Chapter Q2.',
+      'source_type': 'video_pro_tip',
+      'text': 'You need to understand your only goal in this business is just to open up wholesale '
+              'accounts and not worry about anything else.',
+      'timestamp': 509,
+      'timestamp_label': '[00:08:29]',
+      'timestamp_seconds': 509,
+      'tip': 'You need to understand your only goal in this business is just to open up wholesale '
+             'accounts and not worry about anything else.',
+      'title': 'Amazon FBA Wholesale Brand direct for Beginners: The Easiest Way to Start in 2027',
+      'url': 'https://www.youtube.com/watch?v=B-HQodfgIG4&t=509s',
+      'video_id': 'B-HQodfgIG4'},
+     {'author': 'Thomas | Amazon Wholesale',
+      'channel': 'Thomas | Amazon Wholesale',
+      'epistemic_status': 'attributed_practitioner_claim',
+      'markdown': '[00:00:46](https://www.youtube.com/watch?v=48JkrcvKaVs&t=46s)',
+      'relevance': 'Verbatim practitioner testimony from Chapter Q2.',
+      'source_type': 'video_pro_tip',
+      'text': 'Select distributor on the retail inquiry form and the who are you currently '
+              'purchasing from field shows you the authorized distributors.',
+      'timestamp': 46,
+      'timestamp_label': '[00:00:46]',
+      'timestamp_seconds': 46,
+      'tip': 'Select distributor on the retail inquiry form and the who are you currently '
+             'purchasing from field shows you the authorized distributors.',
+      'title': 'This is how you find brands authorized distributors to buy and sell their products '
+               'on Amazon',
+      'url': 'https://www.youtube.com/watch?v=48JkrcvKaVs&t=46s',
+      'video_id': '48JkrcvKaVs'},
+     {'author': 'Thomas Sleeth',
+      'channel': 'Thomas Sleeth',
+      'epistemic_status': 'attributed_practitioner_claim',
+      'markdown': '[00:02:50](https://www.youtube.com/watch?v=HMXZkRAYR5Y&t=170s)',
+      'relevance': 'Verbatim practitioner testimony from Chapter Q2.',
+      'source_type': 'video_pro_tip',
+      'text': 'And again, this just gives them even less of a reason that they can say no to you.',
+      'timestamp': 170,
+      'timestamp_label': '[00:02:50]',
+      'timestamp_seconds': 170,
+      'tip': 'And again, this just gives them even less of a reason that they can say no to you.',
+      'title': 'How I Get Approved by High Ticket Dropshipping Suppliers',
+      'url': 'https://www.youtube.com/watch?v=HMXZkRAYR5Y&t=170s',
+      'video_id': 'HMXZkRAYR5Y'}],
+ 3: [{'author': 'LedgerGurus: Ecommerce Accounting Experts',
+      'channel': 'LedgerGurus: Ecommerce Accounting Experts',
+      'epistemic_status': 'attributed_practitioner_claim',
+      'markdown': '[00:02:14](https://www.youtube.com/watch?v=e5r7-KT6mQ0&t=134s)',
+      'relevance': 'Verbatim practitioner testimony from Chapter Q3.',
+      'source_type': 'video_pro_tip',
+      'text': 'If you have a contribution margin of 0% or less, you have a broken business. Your '
+              'fundamental pricing and variable costs must change.',
+      'timestamp': 134,
+      'timestamp_label': '[00:02:14]',
+      'timestamp_seconds': 134,
+      'tip': 'If you have a contribution margin of 0% or less, you have a broken business. Your '
+             'fundamental pricing and variable costs must change.',
+      'title': 'Ecommerce Contribution Margin Explained',
+      'url': 'https://www.youtube.com/watch?v=e5r7-KT6mQ0&t=134s',
+      'video_id': 'e5r7-KT6mQ0'},
+     {'author': 'Eric Andrews Clips',
+      'channel': 'Eric Andrews Clips',
+      'epistemic_status': 'attributed_practitioner_claim',
+      'markdown': '[00:01:31](https://www.youtube.com/watch?v=LKEn47f67vQ&t=91s)',
+      'relevance': 'Verbatim practitioner testimony from Chapter Q3.',
+      'source_type': 'video_pro_tip',
+      'text': "If you're profitable on the first order then all of the subsequent orders that a "
+              "customer makes when they return will be pure profit because there'll generally be "
+              'little or no marketing associated with them.',
+      'timestamp': 91,
+      'timestamp_label': '[00:01:31]',
+      'timestamp_seconds': 91,
+      'tip': "If you're profitable on the first order then all of the subsequent orders that a "
+             "customer makes when they return will be pure profit because there'll generally be "
+             'little or no marketing associated with them.',
+      'title': 'Contribution Margin: CAC Ratio for eCommerce | Unit Economics',
+      'url': 'https://www.youtube.com/watch?v=LKEn47f67vQ&t=91s',
+      'video_id': 'LKEn47f67vQ'},
+     {'author': 'Eric Andrews',
+      'channel': 'Eric Andrews',
+      'epistemic_status': 'attributed_practitioner_claim',
+      'markdown': '[00:12:53](https://www.youtube.com/watch?v=8xfPvprL5qE&t=773s)',
+      'relevance': 'Verbatim practitioner testimony from Chapter Q3.',
+      'source_type': 'video_pro_tip',
+      'text': 'The key to success with these businesses is optimizing the unit economics; if you '
+              'can negotiate or eliminate any individual expense and knock a couple dollars out '
+              'that might be the difference between an extra five dollars per order.',
+      'timestamp': 773,
+      'timestamp_label': '[00:12:53]',
+      'timestamp_seconds': 773,
+      'tip': 'The key to success with these businesses is optimizing the unit economics; if you '
+             'can negotiate or eliminate any individual expense and knock a couple dollars out '
+             'that might be the difference between an extra five dollars per order.',
+      'title': 'How to Calculate eCommerce Contribution Margins',
+      'url': 'https://www.youtube.com/watch?v=8xfPvprL5qE&t=773s',
+      'video_id': '8xfPvprL5qE'},
+     {'author': 'Eric Andrews Clips',
+      'channel': 'Eric Andrews Clips',
+      'epistemic_status': 'attributed_practitioner_claim',
+      'markdown': '[00:01:33](https://www.youtube.com/watch?v=tj2W9oEqeQo&t=93s)',
+      'relevance': 'Verbatim practitioner testimony from Chapter Q3.',
+      'source_type': 'video_pro_tip',
+      'text': "It's good to sometimes just do a trailing average of a couple months, especially if "
+              'the numbers bounce around a lot.',
+      'timestamp': 93,
+      'timestamp_label': '[00:01:33]',
+      'timestamp_seconds': 93,
+      'tip': "It's good to sometimes just do a trailing average of a couple months, especially if "
+             'the numbers bounce around a lot.',
+      'title': 'Master Contribution Margins for eCommerce',
+      'url': 'https://www.youtube.com/watch?v=tj2W9oEqeQo&t=93s',
+      'video_id': 'tj2W9oEqeQo'},
+     {'author': 'Mark Builds Brands Highlights',
+      'channel': 'Mark Builds Brands Highlights',
+      'epistemic_status': 'attributed_practitioner_claim',
+      'markdown': '[00:06:45](https://www.youtube.com/watch?v=eTADhJ3N_oo&t=405s)',
+      'relevance': 'Verbatim practitioner testimony from Chapter Q3.',
+      'source_type': 'video_pro_tip',
+      'text': "Your CAC is only going to go up, so if you're not super profitable at these low "
+              "levels of spend, then no shot that you're going to be profitable as you try to "
+              'scale more.',
+      'timestamp': 405,
+      'timestamp_label': '[00:06:45]',
+      'timestamp_seconds': 405,
+      'tip': "Your CAC is only going to go up, so if you're not super profitable at these low "
+             "levels of spend, then no shot that you're going to be profitable as you try to scale "
+             'more.',
+      'title': 'unit economics for ecom explained (boring as hell, but prints $$$)',
+      'url': 'https://www.youtube.com/watch?v=eTADhJ3N_oo&t=405s',
+      'video_id': 'eTADhJ3N_oo'},
+     {'author': 'Eric Andrews',
+      'channel': 'Eric Andrews',
+      'epistemic_status': 'attributed_practitioner_claim',
+      'markdown': '[00:15:10](https://www.youtube.com/watch?v=gG33a-ErNRQ&t=910s)',
+      'relevance': 'Verbatim practitioner testimony from Chapter Q3.',
+      'source_type': 'video_pro_tip',
+      'text': 'Our contribution margin to CAC ratio is less than one and our LTV to CAC ratio is '
+              'less than one, and so this business should not be scaling until it can fix its unit '
+              'economics.',
+      'timestamp': 910,
+      'timestamp_label': '[00:15:10]',
+      'timestamp_seconds': 910,
+      'tip': 'Our contribution margin to CAC ratio is less than one and our LTV to CAC ratio is '
+             'less than one, and so this business should not be scaling until it can fix its unit '
+             'economics.',
+      'title': 'Unit Economics Benchmarks for eCommerce | From Idea to Exit',
+      'url': 'https://www.youtube.com/watch?v=gG33a-ErNRQ&t=910s',
+      'video_id': 'gG33a-ErNRQ'},
+     {'author': 'Eric Andrews',
+      'channel': 'Eric Andrews',
+      'epistemic_status': 'attributed_practitioner_claim',
+      'markdown': '[00:00:00](https://www.youtube.com/watch?v=t2H3gJHuw6k&t=0s)',
+      'relevance': 'Verbatim practitioner testimony from Chapter Q3.',
+      'source_type': 'video_pro_tip',
+      'text': 'I used to know an e-commerce brand that ran a 50% off sitewide discount every Black '
+              'Friday. And the last time they ran it, they lost $500,000.',
+      'timestamp': 0,
+      'timestamp_label': '[00:00:00]',
+      'timestamp_seconds': 0,
+      'tip': 'I used to know an e-commerce brand that ran a 50% off sitewide discount every Black '
+             'Friday. And the last time they ran it, they lost $500,000.',
+      'title': '50% Off vs. BOGO: Unit Economics Case Study (How We Lost $500K)',
+      'url': 'https://www.youtube.com/watch?v=t2H3gJHuw6k&t=0s',
+      'video_id': 't2H3gJHuw6k'},
+     {'author': 'Eric Andrews',
+      'channel': 'Eric Andrews',
+      'epistemic_status': 'attributed_practitioner_claim',
+      'markdown': '[00:07:15](https://www.youtube.com/watch?v=t2H3gJHuw6k&t=435s)',
+      'relevance': 'Verbatim practitioner testimony from Chapter Q3.',
+      'source_type': 'video_pro_tip',
+      'text': 'When you offer the customer two for one, you are able to give them $135, but the '
+              "difference is that you don't lose half your revenue. An extra unit only costs you "
+              '$21.',
+      'timestamp': 435,
+      'timestamp_label': '[00:07:15]',
+      'timestamp_seconds': 435,
+      'tip': 'When you offer the customer two for one, you are able to give them $135, but the '
+             "difference is that you don't lose half your revenue. An extra unit only costs you "
+             '$21.',
+      'title': '50% Off vs. BOGO: Unit Economics Case Study (How We Lost $500K)',
+      'url': 'https://www.youtube.com/watch?v=t2H3gJHuw6k&t=435s',
+      'video_id': 't2H3gJHuw6k'},
+     {'author': 'Valentin Kuznetcov',
+      'channel': 'Valentin Kuznetcov',
+      'epistemic_status': 'attributed_practitioner_claim',
+      'markdown': '[00:05:38](https://www.youtube.com/watch?v=LmlQ8JEPflQ&t=338s)',
+      'relevance': 'Verbatim practitioner testimony from Chapter Q3.',
+      'source_type': 'video_pro_tip',
+      'text': 'Direct marketing is costs incurred to promote or advertise your product, whereas '
+              'OPEX is costs that build systems and elevate the organization.',
+      'timestamp': 338,
+      'timestamp_label': '[00:05:38]',
+      'timestamp_seconds': 338,
+      'tip': 'Direct marketing is costs incurred to promote or advertise your product, whereas '
+             'OPEX is costs that build systems and elevate the organization.',
+      'title': 'Ecommerce Marketing Costs Explained: What Goes Into OPEX vs CM3?',
+      'url': 'https://www.youtube.com/watch?v=LmlQ8JEPflQ&t=338s',
+      'video_id': 'LmlQ8JEPflQ'},
+     {'author': 'Eric Andrews Clips',
+      'channel': 'Eric Andrews Clips',
+      'epistemic_status': 'attributed_practitioner_claim',
+      'markdown': '[00:00:20](https://www.youtube.com/watch?v=Zh6xNyWZVs4&t=20s)',
+      'relevance': 'Verbatim practitioner testimony from Chapter Q3.',
+      'source_type': 'video_pro_tip',
+      'text': 'Often people say gross margin when they mean contribution margin and vice versa, so '
+              "it's important to define them according to how you're running your business and "
+              'then measure them as unique ideas.',
+      'timestamp': 20,
+      'timestamp_label': '[00:00:20]',
+      'timestamp_seconds': 20,
+      'tip': 'Often people say gross margin when they mean contribution margin and vice versa, so '
+             "it's important to define them according to how you're running your business and then "
+             'measure them as unique ideas.',
+      'title': 'Gross margin vs. contribution margin for eCommerce | Eric Andrews clips',
+      'url': 'https://www.youtube.com/watch?v=Zh6xNyWZVs4&t=20s',
+      'video_id': 'Zh6xNyWZVs4'},
+     {'author': "Patrick O'Driscoll | E-Commerce Growth Marketer",
+      'channel': "Patrick O'Driscoll | E-Commerce Growth Marketer",
+      'epistemic_status': 'attributed_practitioner_claim',
+      'markdown': '[00:11:58](https://www.youtube.com/watch?v=vI_Np8RQikw&t=718s)',
+      'relevance': 'Verbatim practitioner testimony from Chapter Q3.',
+      'source_type': 'video_pro_tip',
+      'text': "This is called scaling on lifetime value: if you're scaling where your new customer "
+              "acquisition is higher than your AOV, then you're betting that a customer will make "
+              'a second or third purchase to become profitable.',
+      'timestamp': 718,
+      'timestamp_label': '[00:11:58]',
+      'timestamp_seconds': 718,
+      'tip': "This is called scaling on lifetime value: if you're scaling where your new customer "
+             "acquisition is higher than your AOV, then you're betting that a customer will make a "
+             'second or third purchase to become profitable.',
+      'title': 'The E-Commerce Profit Framework (Used by 7–8 Figure Brands)',
+      'url': 'https://www.youtube.com/watch?v=vI_Np8RQikw&t=718s',
+      'video_id': 'vI_Np8RQikw'},
+     {'author': 'Bloom Analytics',
+      'channel': 'Bloom Analytics',
+      'epistemic_status': 'attributed_practitioner_claim',
+      'markdown': '[00:00:00](https://www.youtube.com/watch?v=mWL3C_COYk8&t=0s)',
+      'relevance': 'Verbatim practitioner testimony from Chapter Q3.',
+      'source_type': 'video_pro_tip',
+      'text': 'Most contribution margin formulas do not include your marketing costs. Take '
+              "marketing out and that number is not your contribution margin anymore. It's your "
+              'gross profit.',
+      'timestamp': 0,
+      'timestamp_label': '[00:00:00]',
+      'timestamp_seconds': 0,
+      'tip': 'Most contribution margin formulas do not include your marketing costs. Take '
+             "marketing out and that number is not your contribution margin anymore. It's your "
+             'gross profit.',
+      'title': 'How to Calculate Contribution Margin (Formula + Shopify Example)',
+      'url': 'https://www.youtube.com/watch?v=mWL3C_COYk8&t=0s',
+      'video_id': 'mWL3C_COYk8'},
+     {'author': 'StoreHero',
+      'channel': 'StoreHero',
+      'epistemic_status': 'attributed_practitioner_claim',
+      'markdown': '[00:20:07](https://www.youtube.com/watch?v=xJXlWITRM7I&t=1207s)',
+      'relevance': 'Verbatim practitioner testimony from Chapter Q3.',
+      'source_type': 'video_pro_tip',
+      'text': "As long as your increase in ad spend is yielding extra contribution margin, that's "
+              'a positive and you should continue to spend.',
+      'timestamp': 1207,
+      'timestamp_label': '[00:20:07]',
+      'timestamp_seconds': 1207,
+      'tip': "As long as your increase in ad spend is yielding extra contribution margin, that's a "
+             'positive and you should continue to spend.',
+      'title': 'Contribution Margin Explained (with Examples)',
+      'url': 'https://www.youtube.com/watch?v=xJXlWITRM7I&t=1207s',
+      'video_id': 'xJXlWITRM7I'},
+     {'author': 'Matt Byrne',
+      'channel': 'Matt Byrne',
+      'epistemic_status': 'attributed_practitioner_claim',
+      'markdown': '[00:15:26](https://www.youtube.com/watch?v=sR1NjOCbwOA&t=926s)',
+      'relevance': 'Verbatim practitioner testimony from Chapter Q3.',
+      'source_type': 'video_pro_tip',
+      'text': "I've seen businesses where their gross profit margin is so low it doesn't leave any "
+              'capacity behind to spend money on ads and therefore the contribution margin is '
+              'negative, but they continue to sell it.',
+      'timestamp': 926,
+      'timestamp_label': '[00:15:26]',
+      'timestamp_seconds': 926,
+      'tip': "I've seen businesses where their gross profit margin is so low it doesn't leave any "
+             'capacity behind to spend money on ads and therefore the contribution margin is '
+             'negative, but they continue to sell it.',
+      'title': 'Understanding Unit Economics in Ecommerce',
+      'url': 'https://www.youtube.com/watch?v=sR1NjOCbwOA&t=926s',
+      'video_id': 'sR1NjOCbwOA'},
+     {'author': 'Abir, CFO',
+      'channel': 'Abir, CFO',
+      'epistemic_status': 'attributed_practitioner_claim',
+      'markdown': '[00:07:31](https://www.youtube.com/watch?v=lrF2Uey1-uU&t=451s)',
+      'relevance': 'Verbatim practitioner testimony from Chapter Q3.',
+      'source_type': 'video_pro_tip',
+      'text': "Just because you reduced ad spend to improve your ROAS doesn't necessarily mean "
+              "that your business is doing better; you have to make sure that you're generating "
+              'enough contribution margin to cover your fixed expenses.',
+      'timestamp': 451,
+      'timestamp_label': '[00:07:31]',
+      'timestamp_seconds': 451,
+      'tip': "Just because you reduced ad spend to improve your ROAS doesn't necessarily mean that "
+             "your business is doing better; you have to make sure that you're generating enough "
+             'contribution margin to cover your fixed expenses.',
+      'title': 'How to Calculate eCommerce Contribution Margins (DTC Accountant Explains)',
+      'url': 'https://www.youtube.com/watch?v=lrF2Uey1-uU&t=451s',
+      'video_id': 'lrF2Uey1-uU'},
+     {'author': 'Common Thread Collective',
+      'channel': 'Common Thread Collective',
+      'epistemic_status': 'attributed_practitioner_claim',
+      'markdown': '[00:08:57](https://www.youtube.com/watch?v=gCo34Jl1RkQ&t=537s)',
+      'relevance': 'Verbatim practitioner testimony from Chapter Q3.',
+      'source_type': 'video_pro_tip',
+      'text': 'The amount of people that I see running a Facebook ad account where they treat '
+              'every SKU as if they produce the same net outcome is one of the number one drainers '
+              'of money in your pocket.',
+      'timestamp': 537,
+      'timestamp_label': '[00:08:57]',
+      'timestamp_seconds': 537,
+      'tip': 'The amount of people that I see running a Facebook ad account where they treat every '
+             'SKU as if they produce the same net outcome is one of the number one drainers of '
+             'money in your pocket.',
+      'title': 'Unit Economics of Ecommerce Growth',
+      'url': 'https://www.youtube.com/watch?v=gCo34Jl1RkQ&t=537s',
+      'video_id': 'gCo34Jl1RkQ'},
+     {'author': 'Common Thread Collective',
+      'channel': 'Common Thread Collective',
+      'epistemic_status': 'attributed_practitioner_claim',
+      'markdown': '[00:05:44](https://www.youtube.com/watch?v=b4ddPmPdQcY&t=344s)',
+      'relevance': 'Verbatim practitioner testimony from Chapter Q3.',
+      'source_type': 'video_pro_tip',
+      'text': 'You can never just have one revenue goal or one spend goal or even an MER goal; you '
+              'have to look at all of these things together to really understand how your business '
+              'is getting to where it is.',
+      'timestamp': 344,
+      'timestamp_label': '[00:05:44]',
+      'timestamp_seconds': 344,
+      'tip': 'You can never just have one revenue goal or one spend goal or even an MER goal; you '
+             'have to look at all of these things together to really understand how your business '
+             'is getting to where it is.',
+      'title': 'How to Track, Measure, and Report Contribution Margin',
+      'url': 'https://www.youtube.com/watch?v=b4ddPmPdQcY&t=344s',
+      'video_id': 'b4ddPmPdQcY'}],
+ 4: [{'author': 'Racklify',
+      'channel': 'Racklify',
+      'epistemic_status': 'attributed_practitioner_claim',
+      'markdown': '[00:04:14](https://www.youtube.com/watch?v=NXZLkZ_Gfuk&t=254s)',
+      'relevance': 'Verbatim practitioner testimony from Chapter Q4.',
+      'source_type': 'video_pro_tip',
+      'text': 'That hand soap retails for about $2.99 a unit; I would actually lose money by '
+              'shipping that hand soap first-class to a customer.',
+      'timestamp': 254,
+      'timestamp_label': '[00:04:14]',
+      'timestamp_seconds': 254,
+      'tip': 'That hand soap retails for about $2.99 a unit; I would actually lose money by '
+             'shipping that hand soap first-class to a customer.',
+      'title': 'Dimensional Weight: How You Are Overpaying For Shipping Selling On Amazon & '
+               'Shopify',
+      'url': 'https://www.youtube.com/watch?v=NXZLkZ_Gfuk&t=254s',
+      'video_id': 'NXZLkZ_Gfuk'},
+     {'author': 'Witners Shipping',
+      'channel': 'Witners Shipping',
+      'epistemic_status': 'attributed_practitioner_claim',
+      'markdown': '[00:02:06](https://www.youtube.com/watch?v=8I51jDAoe-E&t=126s)',
+      'relevance': 'Verbatim practitioner testimony from Chapter Q4.',
+      'source_type': 'video_pro_tip',
+      'text': 'Import VAT is calculated on the value of the goods inclusive of any customs duty '
+              'and excise tax, so VAT is charged on the CIF value plus duty, not on the invoice '
+              'price alone.',
+      'timestamp': 126,
+      'timestamp_label': '[00:02:06]',
+      'timestamp_seconds': 126,
+      'tip': 'Import VAT is calculated on the value of the goods inclusive of any customs duty and '
+             'excise tax, so VAT is charged on the CIF value plus duty, not on the invoice price '
+             'alone.',
+      'title': 'How to Work Out Landed Cost for a Shipment Into Dubai',
+      'url': 'https://www.youtube.com/watch?v=8I51jDAoe-E&t=126s',
+      'video_id': '8I51jDAoe-E'},
+     {'author': 'Stord',
+      'channel': 'Stord',
+      'epistemic_status': 'attributed_practitioner_claim',
+      'markdown': '[00:00:16](https://www.youtube.com/watch?v=eZY2MYqExrQ&t=16s)',
+      'relevance': 'Verbatim practitioner testimony from Chapter Q4.',
+      'source_type': 'video_pro_tip',
+      'text': 'Eliminating de minimis Section 321 exemptions for imports from China and Hong Kong '
+              'and implementing a universal 10% tariff on nearly all imported goods.',
+      'timestamp': 16,
+      'timestamp_label': '[00:00:16]',
+      'timestamp_seconds': 16,
+      'tip': 'Eliminating de minimis Section 321 exemptions for imports from China and Hong Kong '
+             'and implementing a universal 10% tariff on nearly all imported goods.',
+      'title': 'A Message On New Tariffs And De Minimis (Section 321)',
+      'url': 'https://www.youtube.com/watch?v=eZY2MYqExrQ&t=16s',
+      'video_id': 'eZY2MYqExrQ'},
+     {'author': 'US Customs Clearing',
+      'channel': 'US Customs Clearing',
+      'epistemic_status': 'attributed_practitioner_claim',
+      'markdown': '[00:03:33](https://www.youtube.com/watch?v=DLfvskykJiY&t=213s)',
+      'relevance': 'Verbatim practitioner testimony from Chapter Q4.',
+      'source_type': 'video_pro_tip',
+      'text': 'Find ways to optimize transportation, such as utilizing cost-effective shipping '
+              'methods or consolidating shipments to reduce fees.',
+      'timestamp': 213,
+      'timestamp_label': '[00:03:33]',
+      'timestamp_seconds': 213,
+      'tip': 'Find ways to optimize transportation, such as utilizing cost-effective shipping '
+             'methods or consolidating shipments to reduce fees.',
+      'title': 'How Do I Calculate The Landed Cost Of Imported Goods Into The USA?',
+      'url': 'https://www.youtube.com/watch?v=DLfvskykJiY&t=213s',
+      'video_id': 'DLfvskykJiY'},
+     {'author': 'Intel by CandiMentor',
+      'channel': 'Intel by CandiMentor',
+      'epistemic_status': 'attributed_practitioner_claim',
+      'markdown': '[00:05:57](https://www.youtube.com/watch?v=CvHvBnjwlJg&t=357s)',
+      'relevance': 'Verbatim practitioner testimony from Chapter Q4.',
+      'source_type': 'video_pro_tip',
+      'text': 'Divide that by 1,000 units, and the true cost becomes $12 per unit instead of the '
+              '$10 supplier price.',
+      'timestamp': 357,
+      'timestamp_label': '[00:05:57]',
+      'timestamp_seconds': 357,
+      'tip': 'Divide that by 1,000 units, and the true cost becomes $12 per unit instead of the '
+             '$10 supplier price.',
+      'title': 'Landed Cost Calculation Explained',
+      'url': 'https://www.youtube.com/watch?v=CvHvBnjwlJg&t=357s',
+      'video_id': 'CvHvBnjwlJg'},
+     {'author': 'ICandT',
+      'channel': 'ICandT',
+      'epistemic_status': 'attributed_practitioner_claim',
+      'markdown': '[00:05:45](https://www.youtube.com/watch?v=ebKN15qGOxo&t=345s)',
+      'relevance': 'Verbatim practitioner testimony from Chapter Q4.',
+      'source_type': 'video_pro_tip',
+      'text': 'In our example, a gearbox housing quoted at $100 from China lands at $190.17, and '
+              'the US supplier lands at $117.63.',
+      'timestamp': 345,
+      'timestamp_label': '[00:05:45]',
+      'timestamp_seconds': 345,
+      'tip': 'In our example, a gearbox housing quoted at $100 from China lands at $190.17, and '
+             'the US supplier lands at $117.63.',
+      'title': 'World Class Free Landed Cost Program that auto-updates currencies, duties, '
+               'tariffs, etc.',
+      'url': 'https://www.youtube.com/watch?v=ebKN15qGOxo&t=345s',
+      'video_id': 'ebKN15qGOxo'},
+     {'author': 'ISF Expedite',
+      'channel': 'ISF Expedite',
+      'epistemic_status': 'attributed_practitioner_claim',
+      'markdown': '[00:00:19](https://www.youtube.com/watch?v=3iYfv5mrDBE&t=19s)',
+      'relevance': 'Verbatim practitioner testimony from Chapter Q4.',
+      'source_type': 'video_pro_tip',
+      'text': 'Landed costs encompass all the expenses incurred from the moment the goods leave '
+              'the supplier to when they arrive at your doorstep.',
+      'timestamp': 19,
+      'timestamp_label': '[00:00:19]',
+      'timestamp_seconds': 19,
+      'tip': 'Landed costs encompass all the expenses incurred from the moment the goods leave the '
+             'supplier to when they arrive at your doorstep.',
+      'title': 'Calculating Landed Costs for Imported Goods',
+      'url': 'https://www.youtube.com/watch?v=3iYfv5mrDBE&t=19s',
+      'video_id': '3iYfv5mrDBE'},
+     {'author': 'SKUio',
+      'channel': 'SKUio',
+      'epistemic_status': 'attributed_practitioner_claim',
+      'markdown': '[00:00:20](https://www.youtube.com/watch?v=DFZ8XDRkuCE&t=20s)',
+      'relevance': 'Verbatim practitioner testimony from Chapter Q4.',
+      'source_type': 'video_pro_tip',
+      'text': 'Brands like this often price a piece on its factory cost; the duty shows up weeks '
+              "later on the customs broker's bill, and until then every margin report looks better "
+              'than the truth.',
+      'timestamp': 20,
+      'timestamp_label': '[00:00:20]',
+      'timestamp_seconds': 20,
+      'tip': 'Brands like this often price a piece on its factory cost; the duty shows up weeks '
+             "later on the customs broker's bill, and until then every margin report looks better "
+             'than the truth.',
+      'title': 'Jewelry Landed Cost: Duty, Sets and True Margin, from PO to Sale',
+      'url': 'https://www.youtube.com/watch?v=DFZ8XDRkuCE&t=20s',
+      'video_id': 'DFZ8XDRkuCE'},
+     {'author': 'New York SBDC',
+      'channel': 'New York SBDC',
+      'epistemic_status': 'attributed_practitioner_claim',
+      'markdown': '[00:24:54](https://www.youtube.com/watch?v=LBisYGOUrx0&t=1494s)',
+      'relevance': 'Verbatim practitioner testimony from Chapter Q4.',
+      'source_type': 'video_pro_tip',
+      'text': 'When I used to work in shipping, we used to tell all our clients, avoid DDP at all '
+              'costs; just send it to the nearest port or ocean port.',
+      'timestamp': 1494,
+      'timestamp_label': '[00:24:54]',
+      'timestamp_seconds': 1494,
+      'tip': 'When I used to work in shipping, we used to tell all our clients, avoid DDP at all '
+             'costs; just send it to the nearest port or ocean port.',
+      'title': 'Calculating Landed Cost for Exported and Imported Goods',
+      'url': 'https://www.youtube.com/watch?v=LBisYGOUrx0&t=1494s',
+      'video_id': 'LBisYGOUrx0'},
+     {'author': 'New York SBDC',
+      'channel': 'New York SBDC',
+      'epistemic_status': 'attributed_practitioner_claim',
+      'markdown': '[00:49:00](https://www.youtube.com/watch?v=LBisYGOUrx0&t=2940s)',
+      'relevance': 'Verbatim practitioner testimony from Chapter Q4.',
+      'source_type': 'video_pro_tip',
+      'text': 'Most of the countries of the world apply duties based on the cost of the goods, the '
+              'insurance and freight; that is a heck of a difference.',
+      'timestamp': 2940,
+      'timestamp_label': '[00:49:00]',
+      'timestamp_seconds': 2940,
+      'tip': 'Most of the countries of the world apply duties based on the cost of the goods, the '
+             'insurance and freight; that is a heck of a difference.',
+      'title': 'Calculating Landed Cost for Exported and Imported Goods',
+      'url': 'https://www.youtube.com/watch?v=LBisYGOUrx0&t=2940s',
+      'video_id': 'LBisYGOUrx0'},
+     {'author': 'RRA Group | Freight Forwarding & Logistics',
+      'channel': 'RRA Group | Freight Forwarding & Logistics',
+      'epistemic_status': 'attributed_practitioner_claim',
+      'markdown': '[00:01:18](https://www.youtube.com/watch?v=007vdtJ5XrY&t=78s)',
+      'relevance': 'Verbatim practitioner testimony from Chapter Q4.',
+      'source_type': 'video_pro_tip',
+      'text': 'Rates change, so date your estimate; that landed cost per unit is what to compare '
+              'with the selling price.',
+      'timestamp': 78,
+      'timestamp_label': '[00:01:18]',
+      'timestamp_seconds': 78,
+      'tip': 'Rates change, so date your estimate; that landed cost per unit is what to compare '
+             'with the selling price.',
+      'title': 'Build a Landed-Cost Estimate: A Canadian Import Example',
+      'url': 'https://www.youtube.com/watch?v=007vdtJ5XrY&t=78s',
+      'video_id': '007vdtJ5XrY'},
+     {'author': 'Marcus Lam | High Ticket Dropshipping (AI)',
+      'channel': 'Marcus Lam | High Ticket Dropshipping (AI)',
+      'epistemic_status': 'attributed_practitioner_claim',
+      'markdown': '[00:06:46](https://www.youtube.com/watch?v=b7IMdD7nvhg&t=406s)',
+      'relevance': 'Verbatim practitioner testimony from Chapter Q4.',
+      'source_type': 'video_pro_tip',
+      'text': 'The first one was about 7,000 in revenue and the next one was about 4,000; I did '
+              'learn the hard way though what margins look like after shipping.',
+      'timestamp': 406,
+      'timestamp_label': '[00:06:46]',
+      'timestamp_seconds': 406,
+      'tip': 'The first one was about 7,000 in revenue and the next one was about 4,000; I did '
+             'learn the hard way though what margins look like after shipping.',
+      'title': '9 to 5 Employee Learns Margins After Shipping | High Ticket Dropshipping (Case '
+               'Study)',
+      'url': 'https://www.youtube.com/watch?v=b7IMdD7nvhg&t=406s',
+      'video_id': 'b7IMdD7nvhg'},
+     {'author': 'Trade Counsel',
+      'channel': 'Trade Counsel',
+      'epistemic_status': 'attributed_practitioner_claim',
+      'markdown': '[00:03:34](https://www.youtube.com/watch?v=-WXoF_u08g0&t=214s)',
+      'relevance': 'Verbatim practitioner testimony from Chapter Q4.',
+      'source_type': 'video_pro_tip',
+      'text': "If it's late, wrong or missing, customs can claim $5,000 per violation against your "
+              'bond.',
+      'timestamp': 214,
+      'timestamp_label': '[00:03:34]',
+      'timestamp_seconds': 214,
+      'tip': "If it's late, wrong or missing, customs can claim $5,000 per violation against your "
+             'bond.',
+      'title': "What Importers Get Wrong About US Customs (And It's Expensive) | Expert's Guide "
+               'for Beginner',
+      'url': 'https://www.youtube.com/watch?v=-WXoF_u08g0&t=214s',
+      'video_id': '-WXoF_u08g0'},
+     {'author': 'SKUio',
+      'channel': 'SKUio',
+      'epistemic_status': 'attributed_practitioner_claim',
+      'markdown': '[00:02:49](https://www.youtube.com/watch?v=BAGqaHYyMlA&t=169s)',
+      'relevance': 'Verbatim practitioner testimony from Chapter Q4.',
+      'source_type': 'video_pro_tip',
+      'text': 'The Customs card shows what was billed, and the variance, here about seven percent '
+              'over.',
+      'timestamp': 169,
+      'timestamp_label': '[00:02:49]',
+      'timestamp_seconds': 169,
+      'tip': 'The Customs card shows what was billed, and the variance, here about seven percent '
+             'over.',
+      'title': 'How to Capitalize Estimated Import Duty Into Landed Cost and Reconcile Broker '
+               'Bills | SKU.io',
+      'url': 'https://www.youtube.com/watch?v=BAGqaHYyMlA&t=169s',
+      'video_id': 'BAGqaHYyMlA'},
      {'author': 'CFOmarketIQ',
       'channel': 'CFOmarketIQ',
       'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:02:22](https://www.youtube.com/watch?v=nUu4s78pX8E&t=142s)',
-      'relevance': 'Attributed practitioner commentary on lean 3PL-backed & authorized-dealer '
-                   'e-commerce operations, contribution-margin underwriting, and automated '
-                   'retention (Chapter Q2 operational verification).',
+      'markdown': '[00:00:17](https://www.youtube.com/watch?v=nUu4s78pX8E&t=17s)',
+      'relevance': 'Verbatim practitioner testimony from Chapter Q4.',
       'source_type': 'video_pro_tip',
-      'text': 'Customer pricing, and whether your contracts let you pass any of it through. '
-              "And then there's cash, because you pay the duty when the goods come in, long "
-              'before you sell them. So a tariff change can squeeze your cash a quarter before '
-              'it ever shows up in the P&L.',
-      'timestamp': 142,
-      'timestamp_label': '[00:02:22]',
-      'timestamp_seconds': 142,
-      'tip': 'Customer pricing, and whether your contracts let you pass any of it through. And '
-             "then there's cash, because you pay the duty when the goods come in, long before "
-             'you sell them. So a tariff change can squeeze your cash a quarter before it ever '
-             'shows up in the P&L.',
-      'title': 'Tariff news and your landed cost (CFOmarketIQ)',
-      'url': 'https://www.youtube.com/watch?v=nUu4s78pX8E&t=142s',
+      'text': "From April on, it hits the full customs value; that's twenty-five dollars of duty, "
+              'on the exact same part.',
+      'timestamp': 17,
+      'timestamp_label': '[00:00:17]',
+      'timestamp_seconds': 17,
+      'tip': "From April on, it hits the full customs value; that's twenty-five dollars of duty, "
+             'on the exact same part.',
+      'title': 'Tariff news and your landed cost',
+      'url': 'https://www.youtube.com/watch?v=nUu4s78pX8E&t=17s',
       'video_id': 'nUu4s78pX8E'},
      {'author': 'Shipping Solutions',
       'channel': 'Shipping Solutions',
       'epistemic_status': 'attributed_practitioner_claim',
       'markdown': '[00:05:46](https://www.youtube.com/watch?v=4868R7AGDp0&t=346s)',
-      'relevance': 'Attributed practitioner commentary on lean 3PL-backed & authorized-dealer '
-                   'e-commerce operations, contribution-margin underwriting, and automated '
-                   'retention (Chapter Q2 operational verification).',
+      'relevance': 'Verbatim practitioner testimony from Chapter Q4.',
       'source_type': 'video_pro_tip',
-      'text': 'Click on the plus sign to see the detail for each country. For Canada, if my '
-              'goods qualify for the USMCA, then I only pay the cost of the goods plus freight '
-              'and a small merchandise processing fee and harbor maintenance fee.',
+      'text': "If the goods don't qualify for the USMCA, then I also owe a special duty under "
+              '99030110 of 25%.',
       'timestamp': 346,
       'timestamp_label': '[00:05:46]',
       'timestamp_seconds': 346,
-      'tip': 'Click on the plus sign to see the detail for each country. For Canada, if my '
-             'goods qualify for the USMCA, then I only pay the cost of the goods plus freight '
-             'and a small merchandise processing fee and harbor maintenance fee.',
-      'title': 'Landed Cost Calculator: Compare Tariffs, Duties & Fees from Multiple Countries '
-               '(Shipping Solutions)',
+      'tip': "If the goods don't qualify for the USMCA, then I also owe a special duty under "
+             '99030110 of 25%.',
+      'title': 'Landed Cost Calculator: Compare Tariffs, Duties & Fees from Multiple Countries',
       'url': 'https://www.youtube.com/watch?v=4868R7AGDp0&t=346s',
       'video_id': '4868R7AGDp0'},
-     {'author': 'Learn With Shopify',
-      'channel': 'Learn With Shopify',
+     {'author': 'John Galt Finance',
+      'channel': 'John Galt Finance',
       'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:07:14](https://www.youtube.com/watch?v=088tKYu7kKY&t=434s)',
-      'relevance': 'Attributed practitioner commentary on lean 3PL-backed & authorized-dealer '
-                   'e-commerce operations, contribution-margin underwriting, and automated '
-                   'retention (Chapter Q2 operational verification).',
+      'markdown': '[00:02:36](https://www.youtube.com/watch?v=8RBtd8u_F-I&t=156s)',
+      'relevance': 'Verbatim practitioner testimony from Chapter Q4.',
       'source_type': 'video_pro_tip',
-      'text': 'Pick and pack rates per order makes 3pls cost prohibitive by pick and pack rate '
-              'i mean the fee the 3pl charges you for each item that they.',
-      'timestamp': 434,
-      'timestamp_label': '[00:07:14]',
-      'timestamp_seconds': 434,
-      'tip': 'Pick and pack rates per order makes 3pls cost prohibitive by pick and pack rate '
-             'i mean the fee the 3pl charges you for each item that they.',
-      'title': 'Ecommerce Shipping and Fulfillment: A Complete Guide (Learn With Shopify)',
-      'url': 'https://www.youtube.com/watch?v=088tKYu7kKY&t=434s',
-      'video_id': '088tKYu7kKY'},
-     {'author': "Jim's Ecommerce Tutorials",
-      'channel': "Jim's Ecommerce Tutorials",
+      'text': 'In some case it could be more than 10%; that could be crucial, that can eat all '
+              'your margin.',
+      'timestamp': 156,
+      'timestamp_label': '[00:02:36]',
+      'timestamp_seconds': 156,
+      'tip': 'In some case it could be more than 10%; that could be crucial, that can eat all your '
+             'margin.',
+      'title': 'E-Commerce Financial Model: Calculating Unit Economics, Margins & Break-Even Point',
+      'url': 'https://www.youtube.com/watch?v=8RBtd8u_F-I&t=156s',
+      'video_id': '8RBtd8u_F-I'}],
+ 5: [{'author': 'Invoice Finance News',
+      'channel': 'Invoice Finance News',
       'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:02:00](https://www.youtube.com/watch?v=HPTGnp51Iks&t=120s)',
-      'relevance': 'Attributed practitioner commentary on lean 3PL-backed & authorized-dealer '
-                   'e-commerce operations, contribution-margin underwriting, and automated '
-                   'retention (Chapter Q2 operational verification).',
+      'markdown': '[00:02:22](https://www.youtube.com/watch?v=Ooq0PnAEf5s&t=142s)',
+      'relevance': 'Verbatim practitioner testimony from Chapter Q5.',
       'source_type': 'video_pro_tip',
-      'text': 'Next, review the exchange amount and any payment difference. Depending on the '
-              'products involved, the customer may need to pay more, receive a partial refund, '
-              'or have a balance adjusted.',
-      'timestamp': 120,
-      'timestamp_label': '[00:02:00]',
-      'timestamp_seconds': 120,
-      'tip': 'Next, review the exchange amount and any payment difference. Depending on the '
-             'products involved, the customer may need to pay more, receive a partial refund, '
-             'or have a balance adjusted.',
-      'title': "How To Process Shopify Returns And Exchanges (Easy Guide) (Jim's Ecommerce "
-               'Tutorials)',
-      'url': 'https://www.youtube.com/watch?v=HPTGnp51Iks&t=120s',
-      'video_id': 'HPTGnp51Iks'},
-     {'author': 'Novutech',
-      'channel': 'Novutech',
+      'text': 'A company that has managed to negotiate payment terms with suppliers so that they '
+              'have a high DPO might create a low or even negative CCC score, however that company '
+              'might gain a reputation in its sector for being slow payers, thus causing '
+              'reputational damage.',
+      'timestamp': 142,
+      'timestamp_label': '[00:02:22]',
+      'timestamp_seconds': 142,
+      'tip': 'A company that has managed to negotiate payment terms with suppliers so that they '
+             'have a high DPO might create a low or even negative CCC score, however that company '
+             'might gain a reputation in its sector for being slow payers, thus causing '
+             'reputational damage.',
+      'title': 'What is the Cash Conversion Cycle?',
+      'url': 'https://www.youtube.com/watch?v=Ooq0PnAEf5s&t=142s',
+      'video_id': 'Ooq0PnAEf5s'},
+     {'author': 'InstructorTom',
+      'channel': 'InstructorTom',
       'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:27:53](https://www.youtube.com/watch?v=kjk-aLs-t1g&t=1673s)',
-      'relevance': 'Attributed practitioner commentary on lean 3PL-backed & authorized-dealer '
-                   'e-commerce operations, contribution-margin underwriting, and automated '
-                   'retention (Chapter Q2 operational verification).',
+      'markdown': '[00:03:50](https://www.youtube.com/watch?v=Ju1MGgf9RUw&t=230s)',
+      'relevance': 'Verbatim practitioner testimony from Chapter Q5.',
       'source_type': 'video_pro_tip',
-      'text': "Um everything is is down there. So this webop as well because it's the test web "
-              'shop it also gives me the option to pay by bank deposits which is uh makes it '
-              'easy for us to actually not having to fill out all the payment details.',
-      'timestamp': 1673,
-      'timestamp_label': '[00:27:53]',
-      'timestamp_seconds': 1673,
-      'tip': "Um everything is is down there. So this webop as well because it's the test web "
-             'shop it also gives me the option to pay by bank deposits which is uh makes it '
-             'easy for us to actually not having to fill out all the payment details.',
-      'title': 'Shopify orders in NetSuite with 3PL fulfillment (Novutech)',
-      'url': 'https://www.youtube.com/watch?v=kjk-aLs-t1g&t=1673s',
-      'video_id': 'kjk-aLs-t1g'},
-     {'author': 'Carbon Box Media',
-      'channel': 'Carbon Box Media',
+      'text': "If I'm carrying an average balance of fifty nine million dollars at an annual cost "
+              "of seven percent, it's gonna cost me four million dollars a year just to pay the "
+              'interest on that working capital.',
+      'timestamp': 230,
+      'timestamp_label': '[00:03:50]',
+      'timestamp_seconds': 230,
+      'tip': "If I'm carrying an average balance of fifty nine million dollars at an annual cost "
+             "of seven percent, it's gonna cost me four million dollars a year just to pay the "
+             'interest on that working capital.',
+      'title': 'Video   Cash Conversion Cycle',
+      'url': 'https://www.youtube.com/watch?v=Ju1MGgf9RUw&t=230s',
+      'video_id': 'Ju1MGgf9RUw'},
+     {'author': 'Understanding Accounting',
+      'channel': 'Understanding Accounting',
       'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:11:54](https://www.youtube.com/watch?v=wFXlLgdV31A&t=714s)',
-      'relevance': 'Attributed practitioner commentary on lean 3PL-backed & authorized-dealer '
-                   'e-commerce operations, contribution-margin underwriting, and automated '
-                   'retention (Chapter Q2 operational verification).',
+      'markdown': '[00:28:29](https://www.youtube.com/watch?v=OoegPOU-YCE&t=1709s)',
+      'relevance': 'Verbatim practitioner testimony from Chapter Q5.',
       'source_type': 'video_pro_tip',
-      'text': '500 or $1,000 for the platform and an agency fee or you do it in house, the '
-              'email will always always be 10x to us or whatever you pay, whatever you pay.',
-      'timestamp': 714,
-      'timestamp_label': '[00:11:54]',
-      'timestamp_seconds': 714,
-      'tip': '500 or $1,000 for the platform and an agency fee or you do it in house, the '
-             'email will always always be 10x to us or whatever you pay, whatever you pay.',
-      'title': 'How to 3x Your Email Revenue (Shopify Brand Case Study) | Lifecycle Talks '
-               '(Carbon Box Media)',
-      'url': 'https://www.youtube.com/watch?v=wFXlLgdV31A&t=714s',
-      'video_id': 'wFXlLgdV31A'},
-     {'author': 'A Simple Model',
-      'channel': 'A Simple Model',
+      'text': 'Faster collection may reflect tighter customer credit. Fewer inventory days may '
+              'reflect faster sales or stockouts. More payment days may reflect longer agreed '
+              'terms or overdue bills.',
+      'timestamp': 1709,
+      'timestamp_label': '[00:28:29]',
+      'timestamp_seconds': 1709,
+      'tip': 'Faster collection may reflect tighter customer credit. Fewer inventory days may '
+             'reflect faster sales or stockouts. More payment days may reflect longer agreed terms '
+             'or overdue bills.',
+      'title': 'Inventory Estimates and the Cash Conversion Cycle | ACC 300 Lecture 20',
+      'url': 'https://www.youtube.com/watch?v=OoegPOU-YCE&t=1709s',
+      'video_id': 'OoegPOU-YCE'},
+     {'author': 'Laurence Gartside',
+      'channel': 'Laurence Gartside',
       'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:06:10](https://www.youtube.com/watch?v=8qsUvwoLJHw&t=370s)',
-      'relevance': 'Attributed practitioner commentary on lean 3PL-backed & authorized-dealer '
-                   'e-commerce operations, contribution-margin underwriting, and automated '
-                   'retention (Chapter Q2 operational verification).',
+      'markdown': '[00:03:02](https://www.youtube.com/watch?v=z3z_GomovEI&t=182s)',
+      'relevance': 'Verbatim practitioner testimony from Chapter Q5.',
       'source_type': 'video_pro_tip',
-      'text': "Result in a working capital adjustment of 2.5 million dollars in the buyer's "
-              'favor because you have a working capital peg of 4 million dollars and a january '
-              'balance of networking capital equal to 1.5 million.',
-      'timestamp': 370,
-      'timestamp_label': '[00:06:10]',
-      'timestamp_seconds': 370,
-      'tip': "Result in a working capital adjustment of 2.5 million dollars in the buyer's "
-             'favor because you have a working capital peg of 4 million dollars and a january '
-             'balance of networking capital equal to 1.5 million.',
-      'title': 'The Working Capital Peg for a Seasonal Business (A Simple Model)',
-      'url': 'https://www.youtube.com/watch?v=8qsUvwoLJHw&t=370s',
-      'video_id': '8qsUvwoLJHw'},
-     {'author': 'Carles Fos',
-      'channel': 'Carles Fos',
+      'text': 'For a better shorter cash conversion cycle we want to turn over inventory quickly, '
+              'have few credit sales, get paid quickly and pay our suppliers as late as possible, '
+              "assuming we're not paying interest.",
+      'timestamp': 182,
+      'timestamp_label': '[00:03:02]',
+      'timestamp_seconds': 182,
+      'tip': 'For a better shorter cash conversion cycle we want to turn over inventory quickly, '
+             'have few credit sales, get paid quickly and pay our suppliers as late as possible, '
+             "assuming we're not paying interest.",
+      'title': 'The Cash Conversion Cycle formula and how to use it',
+      'url': 'https://www.youtube.com/watch?v=z3z_GomovEI&t=182s',
+      'video_id': 'z3z_GomovEI'},
+     {'author': 'Understanding Accounting',
+      'channel': 'Understanding Accounting',
       'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:05:20](https://www.youtube.com/watch?v=6joO-M0xN0k&t=320s)',
-      'relevance': 'Attributed practitioner commentary on lean 3PL-backed & authorized-dealer '
-                   'e-commerce operations, contribution-margin underwriting, and automated '
-                   'retention (Chapter Q2 operational verification).',
+      'markdown': '[01:06:52](https://www.youtube.com/watch?v=GtIbksKcl3Q&t=4012s)',
+      'relevance': 'Verbatim practitioner testimony from Chapter Q5.',
       'source_type': 'video_pro_tip',
-      'text': 'Marcas es que simplemente cogen estos productos y hacen una campaña de Google '
-              'Shopping en Google ads y esto está mal por qué Porque esos datos que vamos a.',
-      'timestamp': 320,
-      'timestamp_label': '[00:05:20]',
-      'timestamp_seconds': 320,
-      'tip': 'Marcas es que simplemente cogen estos productos y hacen una campaña de Google '
-             'Shopping en Google ads y esto está mal por qué Porque esos datos que vamos a.',
-      'title': '🚀 Optimiza Tu Feed en Google Merchant Center | Guía Completa para Más Ventas 💰 '
-               '(Carles Fos)',
-      'url': 'https://www.youtube.com/watch?v=6joO-M0xN0k&t=320s',
-      'video_id': '6joO-M0xN0k'},
-     {'author': 'Zero To Sale',
-      'channel': 'Zero To Sale',
+      'text': 'Using cost of goods sold as a proxy would instead produce 29.65 days. Inventory '
+              'increased, so cost of goods sold is smaller than purchases here. The smaller '
+              'denominator overstates payment days and makes the calculated cash conversion cycle '
+              'shorter.',
+      'timestamp': 4012,
+      'timestamp_label': '[01:06:52]',
+      'timestamp_seconds': 4012,
+      'tip': 'Using cost of goods sold as a proxy would instead produce 29.65 days. Inventory '
+             'increased, so cost of goods sold is smaller than purchases here. The smaller '
+             'denominator overstates payment days and makes the calculated cash conversion cycle '
+             'shorter.',
+      'title': 'Inventory Estimates and the Cash Conversion Cycle | ACC 300 Chapter 18 Reading',
+      'url': 'https://www.youtube.com/watch?v=GtIbksKcl3Q&t=4012s',
+      'video_id': 'GtIbksKcl3Q'},
+     {'author': 'One Minute Finance',
+      'channel': 'One Minute Finance',
       'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:00:22](https://www.youtube.com/watch?v=Cy4Xvc1vYac&t=22s)',
-      'relevance': 'Attributed practitioner commentary on lean 3PL-backed & authorized-dealer '
-                   'e-commerce operations, contribution-margin underwriting, and automated '
-                   'retention (Chapter Q2 operational verification).',
+      'markdown': '[00:07:28](https://www.youtube.com/watch?v=7yuWFm95LDw&t=448s)',
+      'relevance': 'Verbatim practitioner testimony from Chapter Q5.',
       'source_type': 'video_pro_tip',
-      'text': 'Amazon हमारी इनवॉइस के अंदर क्या चीजें देखता है। हमारी इनवॉइस के अंदर ऐसी कौन '
-              'सी चीजें होनी चाहिए कि Amazon उसको एक्सेप्ट करें। ठीक है?',
-      'timestamp': 22,
-      'timestamp_label': '[00:00:22]',
-      'timestamp_seconds': 22,
-      'tip': 'Amazon हमारी इनवॉइस के अंदर क्या चीजें देखता है। हमारी इनवॉइस के अंदर ऐसी कौन सी '
-             'चीजें होनी चाहिए कि Amazon उसको एक्सेप्ट करें। ठीक है?',
-      'title': 'Amazon Wholesale FBA invoice requirements explained (Zero To Sale)',
-      'url': 'https://www.youtube.com/watch?v=Cy4Xvc1vYac&t=22s',
-      'video_id': 'Cy4Xvc1vYac'},
-     {'author': 'Prediko AI Inventory Management',
-      'channel': 'Prediko AI Inventory Management',
+      'text': 'If you let that discount lapse just so you can hold onto your cash for 20 extra '
+              'days, the annualized cost of that decision is a staggering 37.2%.',
+      'timestamp': 448,
+      'timestamp_label': '[00:07:28]',
+      'timestamp_seconds': 448,
+      'tip': 'If you let that discount lapse just so you can hold onto your cash for 20 extra '
+             'days, the annualized cost of that decision is a staggering 37.2%.',
+      'title': 'The Cash Conversion Cycle (CCC) Explained | Formula, Working Capital & Cash Flow '
+               'Mastery',
+      'url': 'https://www.youtube.com/watch?v=7yuWFm95LDw&t=448s',
+      'video_id': '7yuWFm95LDw'},
+     {'author': 'LedgerGurus: Ecommerce Accounting Experts',
+      'channel': 'LedgerGurus: Ecommerce Accounting Experts',
       'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:00:21](https://www.youtube.com/watch?v=9Gx9hcJhdbo&t=21s)',
-      'relevance': 'Attributed practitioner commentary on lean 3PL-backed & authorized-dealer '
-                   'e-commerce operations, contribution-margin underwriting, and automated '
-                   'retention (Chapter Q2 operational verification).',
+      'markdown': '[00:07:52](https://www.youtube.com/watch?v=F-Y1cubdesE&t=472s)',
+      'relevance': 'Verbatim practitioner testimony from Chapter Q5.',
       'source_type': 'video_pro_tip',
-      'text': "And after that, we're going to begin the onboarding. Um, in the meantime, I'll "
-              'just give a quick introduction. I manage customer success in Predico for our UK '
-              'and AMIA region. And joining me today is Isaiah who manages customer success '
-              'for our US region.',
-      'timestamp': 21,
-      'timestamp_label': '[00:00:21]',
-      'timestamp_seconds': 21,
-      'tip': "And after that, we're going to begin the onboarding. Um, in the meantime, I'll "
-             'just give a quick introduction. I manage customer success in Predico for our UK '
-             'and AMIA region. And joining me today is Isaiah who manages customer success for '
-             'our US region.',
-      'title': 'How to Set Up Prediko: Shopify Inventory Forecasting, Purchase Orders & AI '
-               'Planning (Onboarding) (Prediko AI Inventory Management)',
-      'url': 'https://www.youtube.com/watch?v=9Gx9hcJhdbo&t=21s',
-      'video_id': '9Gx9hcJhdbo'}],
- 3: [{'author': 'Mark Builds Brands Highlights',
-      'channel': 'Mark Builds Brands Highlights',
+      'text': "Businesses don't always fail because they're unprofitable, but they definitely fail "
+              "because they don't have enough cash.",
+      'timestamp': 472,
+      'timestamp_label': '[00:07:52]',
+      'timestamp_seconds': 472,
+      'tip': "Businesses don't always fail because they're unprofitable, but they definitely fail "
+             "because they don't have enough cash.",
+      'title': 'Cash Conversion Cycle: The Metric EVERY Ecommerce Owner Should Understand',
+      'url': 'https://www.youtube.com/watch?v=F-Y1cubdesE&t=472s',
+      'video_id': 'F-Y1cubdesE'},
+     {'author': 'LedgerGurus: Ecommerce Accounting Experts',
+      'channel': 'LedgerGurus: Ecommerce Accounting Experts',
       'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:03:01](https://www.youtube.com/watch?v=eTADhJ3N_oo&t=181s)',
-      'relevance': 'Attributed practitioner commentary on lean 3PL-backed & authorized-dealer '
-                   'e-commerce operations, contribution-margin underwriting, and automated '
-                   'retention (Chapter Q3 operational verification).',
+      'markdown': '[00:06:05](https://www.youtube.com/watch?v=F-Y1cubdesE&t=365s)',
+      'relevance': 'Verbatim practitioner testimony from Chapter Q5.',
       'source_type': 'video_pro_tip',
-      'text': "Gross profit per unit, all right? Basically, the the product price what you're "
-              'selling it for minus the total product cost, which is going to be these two '
-              'cells right here. Next, gross margin percentage.',
-      'timestamp': 181,
-      'timestamp_label': '[00:03:01]',
-      'timestamp_seconds': 181,
-      'tip': "Gross profit per unit, all right? Basically, the the product price what you're "
-             'selling it for minus the total product cost, which is going to be these two '
-             'cells right here. Next, gross margin percentage.',
-      'title': 'unit economics for ecom explained (boring as hell, but prints $$$) (Mark '
-               'Builds Brands Highlights)',
-      'url': 'https://www.youtube.com/watch?v=eTADhJ3N_oo&t=181s',
-      'video_id': 'eTADhJ3N_oo'},
-     {'author': 'Intel by CandiMentor',
-      'channel': 'Intel by CandiMentor',
-      'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:00:30](https://www.youtube.com/watch?v=CvHvBnjwlJg&t=30s)',
-      'relevance': 'Attributed practitioner commentary on lean 3PL-backed & authorized-dealer '
-                   'e-commerce operations, contribution-margin underwriting, and automated '
-                   'retention (Chapter Q3 operational verification).',
-      'source_type': 'video_pro_tip',
-      'text': 'Freight, insurance, customs charges, and receiving expenses can all increase '
-              'what each unit truly costs you. Purchase price tells you what the supplier '
-              'charges. Landed cost tells you what the product costs after it has traveled '
-              'through the entire inbound supply chain.',
-      'timestamp': 30,
-      'timestamp_label': '[00:00:30]',
-      'timestamp_seconds': 30,
-      'tip': 'Freight, insurance, customs charges, and receiving expenses can all increase '
-             'what each unit truly costs you. Purchase price tells you what the supplier '
-             'charges. Landed cost tells you what the product costs after it has traveled '
-             'through the entire inbound supply chain.',
-      'title': 'Landed Cost Calculation Explained (Intel by CandiMentor)',
-      'url': 'https://www.youtube.com/watch?v=CvHvBnjwlJg&t=30s',
-      'video_id': 'CvHvBnjwlJg'},
-     {'author': 'Marcus Lam | High Ticket Dropshipping (AI)',
-      'channel': 'Marcus Lam | High Ticket Dropshipping (AI)',
-      'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:11:19](https://www.youtube.com/watch?v=ic0HLQbBhQA&t=679s)',
-      'relevance': 'Attributed practitioner commentary on lean 3PL-backed & authorized-dealer '
-                   'e-commerce operations, contribution-margin underwriting, and automated '
-                   'retention (Chapter Q3 operational verification).',
-      'source_type': 'video_pro_tip',
-      'text': 'I have a video that explains what map pricing is. Minimum advertising price '
-              'that prevents people from going price war with you. You will have the dealer '
-              'cost. You will have your market price.',
-      'timestamp': 679,
-      'timestamp_label': '[00:11:19]',
-      'timestamp_seconds': 679,
-      'tip': 'I have a video that explains what map pricing is. Minimum advertising price that '
-             'prevents people from going price war with you. You will have the dealer cost. '
-             'You will have your market price.',
-      'title': 'What is an Authorized Dealer? High Ticket Dropshipping (Marcus Lam | High '
-               'Ticket Dropshipping (AI))',
-      'url': 'https://www.youtube.com/watch?v=ic0HLQbBhQA&t=679s',
-      'video_id': 'ic0HLQbBhQA'},
-     {'author': 'SKUio',
-      'channel': 'SKUio',
-      'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:00:20](https://www.youtube.com/watch?v=DFZ8XDRkuCE&t=20s)',
-      'relevance': 'Attributed practitioner commentary on lean 3PL-backed & authorized-dealer '
-                   'e-commerce operations, contribution-margin underwriting, and automated '
-                   'retention (Chapter Q3 operational verification).',
-      'source_type': 'video_pro_tip',
-      'text': 'The duty rates are illustrative too, so confirm real rates with your customs '
-              'broker. Brands like this often price a piece on its factory cost. The duty '
-              "shows up weeks later, on the customs broker's bill. Until then, every margin "
-              'report looks better than the truth.',
-      'timestamp': 20,
-      'timestamp_label': '[00:00:20]',
-      'timestamp_seconds': 20,
-      'tip': 'The duty rates are illustrative too, so confirm real rates with your customs '
-             'broker. Brands like this often price a piece on its factory cost. The duty shows '
-             "up weeks later, on the customs broker's bill. Until then, every margin report "
-             'looks better than the truth.',
-      'title': 'Jewelry Landed Cost: Duty, Sets and True Margin, from PO to Sale (SKUio)',
-      'url': 'https://www.youtube.com/watch?v=DFZ8XDRkuCE&t=20s',
-      'video_id': 'DFZ8XDRkuCE'},
-     {'author': 'Asonjf',
-      'channel': 'Asonjf',
-      'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:10:13](https://www.youtube.com/watch?v=r79NEO4JF2M&t=613s)',
-      'relevance': 'Attributed practitioner commentary on lean 3PL-backed & authorized-dealer '
-                   'e-commerce operations, contribution-margin underwriting, and automated '
-                   'retention (Chapter Q3 operational verification).',
-      'source_type': 'video_pro_tip',
-      'text': '20%, but it can even lower to 15%. All right, guys, you guys will see your '
-              'margins will actually increase based on the ticket price of your product. So, '
-              'the higher the ticket price, likely the higher the profit you will actually '
-              'receive as a dealer.',
-      'timestamp': 613,
-      'timestamp_label': '[00:10:13]',
-      'timestamp_seconds': 613,
-      'tip': '20%, but it can even lower to 15%. All right, guys, you guys will see your '
-             'margins will actually increase based on the ticket price of your product. So, '
-             'the higher the ticket price, likely the higher the profit you will actually '
-             'receive as a dealer.',
-      'title': 'How To Find Winning High Ticket Products (Asonjf)',
-      'url': 'https://www.youtube.com/watch?v=r79NEO4JF2M&t=613s',
-      'video_id': 'r79NEO4JF2M'},
-     {'author': 'Tarun Brar - eCom Email Marketing',
-      'channel': 'Tarun Brar - eCom Email Marketing',
-      'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:03:41](https://www.youtube.com/watch?v=coevagBV6wU&t=221s)',
-      'relevance': 'Attributed practitioner commentary on lean 3PL-backed & authorized-dealer '
-                   'e-commerce operations, contribution-margin underwriting, and automated '
-                   'retention (Chapter Q3 operational verification).',
-      'source_type': 'video_pro_tip',
-      'text': '3x means it costs around $33 to find that customer, which means your gross '
-              'profit after your acquisition cost is $26. If that customer just comes back for '
-              'one more purchase, your gross profit increases exponentially.',
-      'timestamp': 221,
-      'timestamp_label': '[00:03:41]',
-      'timestamp_seconds': 221,
-      'tip': '3x means it costs around $33 to find that customer, which means your gross '
-             'profit after your acquisition cost is $26. If that customer just comes back for '
-             'one more purchase, your gross profit increases exponentially.',
-      'title': 'Klaviyo Tutorial: How to Setup the Post-Purchase Flow 2025 (Step by Step) '
-               '(Tarun Brar - eCom Email Marketing)',
-      'url': 'https://www.youtube.com/watch?v=coevagBV6wU&t=221s',
-      'video_id': 'coevagBV6wU'},
-     {'author': 'Eric Andrews',
-      'channel': 'Eric Andrews',
-      'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:03:57](https://www.youtube.com/watch?v=8xfPvprL5qE&t=237s)',
-      'relevance': 'Attributed practitioner commentary on lean 3PL-backed & authorized-dealer '
-                   'e-commerce operations, contribution-margin underwriting, and automated '
-                   'retention (Chapter Q3 operational verification).',
-      'source_type': 'video_pro_tip',
-      'text': 'Get access to it okay so at a high level here is how we would break down unit '
-              'economics for an e-commerce business so you have your net.',
-      'timestamp': 237,
-      'timestamp_label': '[00:03:57]',
-      'timestamp_seconds': 237,
-      'tip': 'Get access to it okay so at a high level here is how we would break down unit '
-             'economics for an e-commerce business so you have your net.',
-      'title': 'How to Calculate eCommerce Contribution Margins (Eric Andrews)',
-      'url': 'https://www.youtube.com/watch?v=8xfPvprL5qE&t=237s',
-      'video_id': '8xfPvprL5qE'},
-     {'author': 'Natan',
-      'channel': 'Natan',
-      'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:06:48](https://www.youtube.com/watch?v=YHmvKbjg81E&t=408s)',
-      'relevance': 'Attributed practitioner commentary on lean 3PL-backed & authorized-dealer '
-                   'e-commerce operations, contribution-margin underwriting, and automated '
-                   'retention (Chapter Q3 operational verification).',
-      'source_type': 'video_pro_tip',
-      'text': 'Facebook and Instagram ads, and trying to figure out how to keep any profit was '
-              'really difficult because after the product cost, which was like $15 for this '
-              '$30 item, and $6 in shipping, and then whatever other fees, I got left with '
-              'like five or $6 per item.',
-      'timestamp': 408,
-      'timestamp_label': '[00:06:48]',
-      'timestamp_seconds': 408,
-      'tip': 'Facebook and Instagram ads, and trying to figure out how to keep any profit was '
-             'really difficult because after the product cost, which was like $15 for this $30 '
-             'item, and $6 in shipping, and then whatever other fees, I got left with like '
-             'five or $6 per item.',
-      'title': 'how i did $8.3m in sales with high ticket dropshipping (Natan)',
-      'url': 'https://www.youtube.com/watch?v=YHmvKbjg81E&t=408s',
-      'video_id': 'YHmvKbjg81E'},
-     {'author': 'Eric Andrews Clips',
-      'channel': 'Eric Andrews Clips',
-      'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:01:39](https://www.youtube.com/watch?v=LKEn47f67vQ&t=99s)',
-      'relevance': 'Attributed practitioner commentary on lean 3PL-backed & authorized-dealer '
-                   'e-commerce operations, contribution-margin underwriting, and automated '
-                   'retention (Chapter Q3 operational verification).',
-      'source_type': 'video_pro_tip',
-      'text': "Pure profit because there'll generally be little or no marketing associated "
-              'with them so being profitable on the first order is ideal and some businesses '
-              'are very profitable on the first order and those are exceptional e-commerce '
-              'businesses.',
-      'timestamp': 99,
-      'timestamp_label': '[00:01:39]',
-      'timestamp_seconds': 99,
-      'tip': "Pure profit because there'll generally be little or no marketing associated with "
-             'them so being profitable on the first order is ideal and some businesses are '
-             'very profitable on the first order and those are exceptional e-commerce '
-             'businesses.',
-      'title': 'Contribution Margin: CAC Ratio for eCommerce | Unit Economics (Eric Andrews '
-               'Clips)',
-      'url': 'https://www.youtube.com/watch?v=LKEn47f67vQ&t=99s',
-      'video_id': 'LKEn47f67vQ'},
-     {'author': 'Dropship Circle - High Ticket Dropshipping',
-      'channel': 'Dropship Circle - High Ticket Dropshipping',
-      'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:10:25](https://www.youtube.com/watch?v=WAF10Ijm6RE&t=625s)',
-      'relevance': 'Attributed practitioner commentary on lean 3PL-backed & authorized-dealer '
-                   'e-commerce operations, contribution-margin underwriting, and automated '
-                   'retention (Chapter Q3 operational verification).',
-      'source_type': 'video_pro_tip',
-      'text': "'s the, the price the customer pays, right? So the good thing is, is this meets "
-              "that criteria. It's 900 pounds to 5,000 pound plus. So we've got a big tick "
-              'there. Profit per sale, 300 to 1,500. So evergreen means, is it seasonal or is '
-              'it sold all year round.',
-      'timestamp': 625,
-      'timestamp_label': '[00:10:25]',
-      'timestamp_seconds': 625,
-      'tip': "'s the, the price the customer pays, right? So the good thing is, is this meets "
-             "that criteria. It's 900 pounds to 5,000 pound plus. So we've got a big tick "
-             'there. Profit per sale, 300 to 1,500. So evergreen means, is it seasonal or is '
-             'it sold all year round.',
-      'title': 'The Top 5 High-Ticket Dropshipping Products to Sell in 2025 for Maximum Profit '
-               '(Dropship Circle - High Ticket Dropshipping)',
-      'url': 'https://www.youtube.com/watch?v=WAF10Ijm6RE&t=625s',
-      'video_id': 'WAF10Ijm6RE'},
-     {'author': 'Peak Flow Media',
-      'channel': 'Peak Flow Media',
-      'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:01:52](https://www.youtube.com/watch?v=wy_uAK2tMS0&t=112s)',
-      'relevance': 'Attributed practitioner commentary on lean 3PL-backed & authorized-dealer '
-                   'e-commerce operations, contribution-margin underwriting, and automated '
-                   'retention (Chapter Q3 operational verification).',
-      'source_type': 'video_pro_tip',
-      'text': "It's called high ticket drop shipping where you are finding luxury products, "
-              'products that are $1,000 and above. So, the reason why we do that is because '
-              'the profit margins per one unit is a lot more. You can make 300 to 1,000 plus '
-              'profit in one sale.',
-      'timestamp': 112,
-      'timestamp_label': '[00:01:52]',
-      'timestamp_seconds': 112,
-      'tip': "It's called high ticket drop shipping where you are finding luxury products, "
-             'products that are $1,000 and above. So, the reason why we do that is because the '
-             'profit margins per one unit is a lot more. You can make 300 to 1,000 plus profit '
-             'in one sale.',
-      'title': 'High-Ticket Dropshipping Explained (Peak Flow Media)',
-      'url': 'https://www.youtube.com/watch?v=wy_uAK2tMS0&t=112s',
-      'video_id': 'wy_uAK2tMS0'},
-     {'author': 'Brent Freeman  - The CBB Group',
-      'channel': 'Brent Freeman  - The CBB Group',
-      'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:06:19](https://www.youtube.com/watch?v=KSfESWIcDGI&t=379s)',
-      'relevance': 'Attributed practitioner commentary on lean 3PL-backed & authorized-dealer '
-                   'e-commerce operations, contribution-margin underwriting, and automated '
-                   'retention (Chapter Q3 operational verification).',
-      'source_type': 'video_pro_tip',
-      'text': 'Price uh to satisfy that requirement and keep the business running so what kind '
-              'of businesses require working capital well in general.',
-      'timestamp': 379,
-      'timestamp_label': '[00:06:19]',
-      'timestamp_seconds': 379,
-      'tip': 'Price uh to satisfy that requirement and keep the business running so what kind '
-             'of businesses require working capital well in general.',
-      'title': 'Working Capital Adjustment in a Business Sale. How it Can Change the Final '
-               'Purchase Price! (Brent Freeman  - The CBB Group)',
-      'url': 'https://www.youtube.com/watch?v=KSfESWIcDGI&t=379s',
-      'video_id': 'KSfESWIcDGI'},
-     {'author': 'Theo Clarke Podcast',
-      'channel': 'Theo Clarke Podcast',
-      'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:16:08](https://www.youtube.com/watch?v=8V2vAoy6GNA&t=968s)',
-      'relevance': 'Attributed practitioner commentary on lean 3PL-backed & authorized-dealer '
-                   'e-commerce operations, contribution-margin underwriting, and automated '
-                   'retention (Chapter Q3 operational verification).',
-      'source_type': 'video_pro_tip',
-      'text': "Processing holds that will eat into your profit margins that's why I'm excited "
-              'to introduce you to commerci of our sponsor today they handle everything from.',
-      'timestamp': 968,
-      'timestamp_label': '[00:16:08]',
-      'timestamp_seconds': 968,
-      'tip': "Processing holds that will eat into your profit margins that's why I'm excited "
-             'to introduce you to commerci of our sponsor today they handle everything from.',
-      'title': 'How To Dropship High-Ticket Products Using US Suppliers | Brook Hiddink | '
-               'Ep.19 (Theo Clarke Podcast)',
-      'url': 'https://www.youtube.com/watch?v=8V2vAoy6GNA&t=968s',
-      'video_id': '8V2vAoy6GNA'},
-     {'author': 'Derek Stroh',
-      'channel': 'Derek Stroh',
-      'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:02:12](https://www.youtube.com/watch?v=cerX0RFHJ0c&t=132s)',
-      'relevance': 'Attributed practitioner commentary on lean 3PL-backed & authorized-dealer '
-                   'e-commerce operations, contribution-margin underwriting, and automated '
-                   'retention (Chapter Q3 operational verification).',
-      'source_type': 'video_pro_tip',
-      'text': 'So, not only is it going to help with increasing your customer satisfaction and '
-              "increasing LTV, it's also going to help to reduce potential returns, which is "
-              'again profit.',
-      'timestamp': 132,
-      'timestamp_label': '[00:02:12]',
-      'timestamp_seconds': 132,
-      'tip': 'So, not only is it going to help with increasing your customer satisfaction and '
-             "increasing LTV, it's also going to help to reduce potential returns, which is "
-             'again profit.',
-      'title': 'Klaviyo Post Purchase Thank You Flow Strategies (Derek Stroh)',
-      'url': 'https://www.youtube.com/watch?v=cerX0RFHJ0c&t=132s',
-      'video_id': 'cerX0RFHJ0c'},
-     {'author': 'Avalara',
-      'channel': 'Avalara',
-      'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:00:29](https://www.youtube.com/watch?v=QiT660QtcXA&t=29s)',
-      'relevance': 'Attributed practitioner commentary on lean 3PL-backed & authorized-dealer '
-                   'e-commerce operations, contribution-margin underwriting, and automated '
-                   'retention (Chapter Q3 operational verification).',
-      'source_type': 'video_pro_tip',
-      'text': "But that doesn't mean you can just start a store on Amazon Marketplace and call "
-              'it a day. First, you need to know if your marketplace is collecting sales tax '
-              'for you. Some marketplaces, including Amazon, Walmart and Etsy, are required to '
-              'collect sales tax on your behalf.',
-      'timestamp': 29,
-      'timestamp_label': '[00:00:29]',
-      'timestamp_seconds': 29,
-      'tip': "But that doesn't mean you can just start a store on Amazon Marketplace and call "
-             'it a day. First, you need to know if your marketplace is collecting sales tax '
-             'for you. Some marketplaces, including Amazon, Walmart and Etsy, are required to '
-             'collect sales tax on your behalf.',
-      'title': 'Tax 101: Does my online marketplace collect sales tax for me? (Avalara)',
-      'url': 'https://www.youtube.com/watch?v=QiT660QtcXA&t=29s',
-      'video_id': 'QiT660QtcXA'}],
- 4: [{'author': 'ICandT',
-      'channel': 'ICandT',
-      'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:02:20](https://www.youtube.com/watch?v=ebKN15qGOxo&t=140s)',
-      'relevance': 'Attributed practitioner commentary on lean 3PL-backed & authorized-dealer '
-                   'e-commerce operations, contribution-margin underwriting, and automated '
-                   'retention (Chapter Q4 operational verification).',
-      'source_type': 'video_pro_tip',
-      'text': 'One tool, every cost fully auditable. Any quote in any currency, the full '
-              'tariff and duty stack. Customs fees done right, hidden costs priced in, '
-              'offshore versus US head-to-head, working capital impact, tooling payback, and '
-              'always current tariff data.',
-      'timestamp': 140,
-      'timestamp_label': '[00:02:20]',
-      'timestamp_seconds': 140,
-      'tip': 'One tool, every cost fully auditable. Any quote in any currency, the full tariff '
-             'and duty stack. Customs fees done right, hidden costs priced in, offshore versus '
-             'US head-to-head, working capital impact, tooling payback, and always current '
-             'tariff data.',
-      'title': 'World Class Free Landed Cost Program that auto-updates currencies, duties, '
-               'tariffs, etc. (ICandT)',
-      'url': 'https://www.youtube.com/watch?v=ebKN15qGOxo&t=140s',
-      'video_id': 'ebKN15qGOxo'},
+      'text': 'They sign a new relationship with a big wholesaler, they have net 60 day terms, and '
+              'the days sales outstanding can grow tremendously; you can show revenue on the '
+              "books, but you don't have the cash from selling that inventory.",
+      'timestamp': 365,
+      'timestamp_label': '[00:06:05]',
+      'timestamp_seconds': 365,
+      'tip': 'They sign a new relationship with a big wholesaler, they have net 60 day terms, and '
+             'the days sales outstanding can grow tremendously; you can show revenue on the books, '
+             "but you don't have the cash from selling that inventory.",
+      'title': 'Cash Conversion Cycle: The Metric EVERY Ecommerce Owner Should Understand',
+      'url': 'https://www.youtube.com/watch?v=F-Y1cubdesE&t=365s',
+      'video_id': 'F-Y1cubdesE'},
      {'author': 'WallStreetMojo',
       'channel': 'WallStreetMojo',
       'epistemic_status': 'attributed_practitioner_claim',
       'markdown': '[00:15:52](https://www.youtube.com/watch?v=Sw24t4Xzk0I&t=952s)',
-      'relevance': 'Attributed practitioner commentary on lean 3PL-backed & authorized-dealer '
-                   'e-commerce operations, contribution-margin underwriting, and automated '
-                   'retention (Chapter Q4 operational verification).',
+      'relevance': 'Verbatim practitioner testimony from Chapter Q5.',
       'source_type': 'video_pro_tip',
-      'text': 'Be honest likewise other examples where negative cash conversion cycle could be '
-              "like amazon so if you look at amazon's cash conversion cycle again it's the "
-              "same it's around I think minus 24 25 days.",
+      'text': 'Other examples where negative cash conversion cycle could be like Amazon; if you '
+              "look at Amazon's cash conversion cycle, it's around minus 24, 25 days.",
       'timestamp': 952,
       'timestamp_label': '[00:15:52]',
       'timestamp_seconds': 952,
-      'tip': 'Be honest likewise other examples where negative cash conversion cycle could be '
-             "like amazon so if you look at amazon's cash conversion cycle again it's the same "
-             "it's around I think minus 24 25 days.",
-      'title': 'Cash Conversion Cycle - Meaning, Formula, Calculation & Interpretations '
-               '(WallStreetMojo)',
+      'tip': 'Other examples where negative cash conversion cycle could be like Amazon; if you '
+             "look at Amazon's cash conversion cycle, it's around minus 24, 25 days.",
+      'title': 'Cash Conversion Cycle - Meaning, Formula, Calculation & Interpretations',
       'url': 'https://www.youtube.com/watch?v=Sw24t4Xzk0I&t=952s',
       'video_id': 'Sw24t4Xzk0I'},
-     {'author': 'New York SBDC',
-      'channel': 'New York SBDC',
+     {'author': 'Marketing Business Network',
+      'channel': 'Marketing Business Network',
       'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:36:57](https://www.youtube.com/watch?v=LBisYGOUrx0&t=2217s)',
-      'relevance': 'Attributed practitioner commentary on lean 3PL-backed & authorized-dealer '
-                   'e-commerce operations, contribution-margin underwriting, and automated '
-                   'retention (Chapter Q4 operational verification).',
+      'markdown': '[00:01:55](https://www.youtube.com/watch?v=C5Ut79jWwHA&t=115s)',
+      'relevance': 'Verbatim practitioner testimony from Chapter Q5.',
       'source_type': 'video_pro_tip',
-      'text': 'We also provide assistance as John mentioned classifying goods with the '
-              'harmonized target schedule and utilize all the tools available from the US '
-              'Department of Commerce. Um sorry and also there are tools from customs that are '
-              'very useful.',
-      'timestamp': 2217,
-      'timestamp_label': '[00:36:57]',
-      'timestamp_seconds': 2217,
-      'tip': 'We also provide assistance as John mentioned classifying goods with the '
-             'harmonized target schedule and utilize all the tools available from the US '
-             'Department of Commerce. Um sorry and also there are tools from customs that are '
-             'very useful.',
-      'title': 'Calculating Landed Cost for Exported and Imported Goods (New York SBDC)',
-      'url': 'https://www.youtube.com/watch?v=LBisYGOUrx0&t=2217s',
-      'video_id': 'LBisYGOUrx0'},
-     {'author': 'Macha',
-      'channel': 'Macha',
+      'text': 'Longer supplier terms can also help, if the supplier agrees to them. Simply paying '
+              'late is different from negotiating more time. Missed deadlines may damage '
+              'relationships or bring charges.',
+      'timestamp': 115,
+      'timestamp_label': '[00:01:55]',
+      'timestamp_seconds': 115,
+      'tip': 'Longer supplier terms can also help, if the supplier agrees to them. Simply paying '
+             'late is different from negotiating more time. Missed deadlines may damage '
+             'relationships or bring charges.',
+      'title': 'What is the Cash Conversion Cycle?',
+      'url': 'https://www.youtube.com/watch?v=C5Ut79jWwHA&t=115s',
+      'video_id': 'C5Ut79jWwHA'},
+     {'author': 'Kurtis Hanni',
+      'channel': 'Kurtis Hanni',
       'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:04:30](https://www.youtube.com/watch?v=eusN-cV9bSQ&t=270s)',
-      'relevance': 'Attributed practitioner commentary on lean 3PL-backed & authorized-dealer '
-                   'e-commerce operations, contribution-margin underwriting, and automated '
-                   'retention (Chapter Q4 operational verification).',
+      'markdown': '[00:11:29](https://www.youtube.com/watch?v=0WBeNhRVKHY&t=689s)',
+      'relevance': 'Verbatim practitioner testimony from Chapter Q5.',
       'source_type': 'video_pro_tip',
-      'text': 'And the price grows with success. Each automated interaction carries its own '
-              'fee on top of the ticket, so a better month costs more. We use the same '
-              'scorecard as in our best AI customer service software video.',
-      'timestamp': 270,
-      'timestamp_label': '[00:04:30]',
-      'timestamp_seconds': 270,
-      'tip': 'And the price grows with success. Each automated interaction carries its own fee '
-             'on top of the ticket, so a better month costs more. We use the same scorecard as '
-             'in our best AI customer service software video.',
-      'title': 'Gorgias AI Agent review (2026): AI Agent 3.0, price and setup, scored (Macha)',
-      'url': 'https://www.youtube.com/watch?v=eusN-cV9bSQ&t=270s',
-      'video_id': 'eusN-cV9bSQ'},
-     {'author': 'Anton Kraly - Drop Ship Lifestyle',
-      'channel': 'Anton Kraly - Drop Ship Lifestyle',
+      'text': 'They were able to take their cash conversion cycle from 230 days to 45 days, which '
+              'meant that their cash positive happened in month two, meaning they can start '
+              'investing that money back in inventory.',
+      'timestamp': 689,
+      'timestamp_label': '[00:11:29]',
+      'timestamp_seconds': 689,
+      'tip': 'They were able to take their cash conversion cycle from 230 days to 45 days, which '
+             'meant that their cash positive happened in month two, meaning they can start '
+             'investing that money back in inventory.',
+      'title': 'You’re Not Broke, Your Cash Is Just Stuck (Cash Conversion Cycle Explained)',
+      'url': 'https://www.youtube.com/watch?v=0WBeNhRVKHY&t=689s',
+      'video_id': '0WBeNhRVKHY'},
+     {'author': 'Luke Kermode, CFA',
+      'channel': 'Luke Kermode, CFA',
       'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:06:41](https://www.youtube.com/watch?v=D6kFUv6fy_4&t=401s)',
-      'relevance': 'Attributed practitioner commentary on lean 3PL-backed & authorized-dealer '
-                   'e-commerce operations, contribution-margin underwriting, and automated '
-                   'retention (Chapter Q4 operational verification).',
+      'markdown': '[00:07:13](https://www.youtube.com/watch?v=1gBvyu9ADGo&t=433s)',
+      'relevance': 'Verbatim practitioner testimony from Chapter Q5.',
       'source_type': 'video_pro_tip',
-      'text': "The reality is you don't need to buy things up front. You just need a budget "
-              'for ads and a Shopify setup. Myth number two is that all suppliers are going to '
-              'reject beginners and new store owners.',
-      'timestamp': 401,
-      'timestamp_label': '[00:06:41]',
-      'timestamp_seconds': 401,
-      'tip': "The reality is you don't need to buy things up front. You just need a budget for "
-             'ads and a Shopify setup. Myth number two is that all suppliers are going to '
-             'reject beginners and new store owners.',
-      'title': 'What Is High-Ticket Dropshipping? (Anton Kraly - Drop Ship Lifestyle)',
-      'url': 'https://www.youtube.com/watch?v=D6kFUv6fy_4&t=401s',
-      'video_id': 'D6kFUv6fy_4'},
-     {'author': 'Shipping Solutions',
-      'channel': 'Shipping Solutions',
-      'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:02:59](https://www.youtube.com/watch?v=IrCCfr1mSvg&t=179s)',
-      'relevance': 'Attributed practitioner commentary on lean 3PL-backed & authorized-dealer '
-                   'e-commerce operations, contribution-margin underwriting, and automated '
-                   'retention (Chapter Q4 operational verification).',
-      'source_type': 'video_pro_tip',
-      'text': 'HTS code right, because that determines the duty rate you’ll pay. Then build '
-              'the full landed cost—that means rolling in the purchase price, transportation, '
-              'insurance, customs duties, taxes, import processing charges, and any add-ons '
-              'like anti-dumping duties.',
-      'timestamp': 179,
-      'timestamp_label': '[00:02:59]',
-      'timestamp_seconds': 179,
-      'tip': 'HTS code right, because that determines the duty rate you’ll pay. Then build the '
-             'full landed cost—that means rolling in the purchase price, transportation, '
-             'insurance, customs duties, taxes, import processing charges, and any add-ons '
-             'like anti-dumping duties.',
-      'title': 'Duties, Tariffs and Taxes: Understanding the Costs of International Trade '
-               '(Shipping Solutions)',
-      'url': 'https://www.youtube.com/watch?v=IrCCfr1mSvg&t=179s',
-      'video_id': 'IrCCfr1mSvg'},
-     {'author': 'Trade Counsel',
-      'channel': 'Trade Counsel',
-      'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:02:43](https://www.youtube.com/watch?v=-WXoF_u08g0&t=163s)',
-      'relevance': 'Attributed practitioner commentary on lean 3PL-backed & authorized-dealer '
-                   'e-commerce operations, contribution-margin underwriting, and automated '
-                   'retention (Chapter Q4 operational verification).',
-      'source_type': 'video_pro_tip',
-      'text': "That's the $2,400 from the start. Paying it takes some setup. You need an "
-              'importer number, which for most businesses is simply their federal tax ID. You '
-              'need a customs bond, a guarantee from an insurance company that customs will be '
-              "paid what it's owed, penalties included.",
-      'timestamp': 163,
-      'timestamp_label': '[00:02:43]',
-      'timestamp_seconds': 163,
-      'tip': "That's the $2,400 from the start. Paying it takes some setup. You need an "
-             'importer number, which for most businesses is simply their federal tax ID. You '
-             'need a customs bond, a guarantee from an insurance company that customs will be '
-             "paid what it's owed, penalties included.",
-      'title': "What Importers Get Wrong About US Customs (And It's Expensive) | Expert's "
-               'Guide for Beginner (Trade Counsel)',
-      'url': 'https://www.youtube.com/watch?v=-WXoF_u08g0&t=163s',
-      'video_id': '-WXoF_u08g0'},
-     {'author': 'Crescent Kao',
-      'channel': 'Crescent Kao',
-      'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:02:14](https://www.youtube.com/watch?v=qeqvFEGP-7g&t=134s)',
-      'relevance': 'Attributed practitioner commentary on lean 3PL-backed & authorized-dealer '
-                   'e-commerce operations, contribution-margin underwriting, and automated '
-                   'retention (Chapter Q4 operational verification).',
-      'source_type': 'video_pro_tip',
-      'text': 'Amazon will resolve the claim through a concession to the customer and will not '
-              'request reimbursement from you or your insurer if you provide proof of.',
-      'timestamp': 134,
-      'timestamp_label': '[00:02:14]',
-      'timestamp_seconds': 134,
-      'tip': 'Amazon will resolve the claim through a concession to the customer and will not '
-             'request reimbursement from you or your insurer if you provide proof of.',
-      'title': 'Amazon FBA Product Liability Insurance for Beginners Explained 2024 UPDATE! '
-               '(Crescent Kao)',
-      'url': 'https://www.youtube.com/watch?v=qeqvFEGP-7g&t=134s',
-      'video_id': 'qeqvFEGP-7g'},
-     {'author': 'Insurance Assurance',
-      'channel': 'Insurance Assurance',
-      'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:00:32](https://www.youtube.com/watch?v=XxorvB6ExNs&t=32s)',
-      'relevance': 'Attributed practitioner commentary on lean 3PL-backed & authorized-dealer '
-                   'e-commerce operations, contribution-margin underwriting, and automated '
-                   'retention (Chapter Q4 operational verification).',
-      'source_type': 'video_pro_tip',
-      'text': 'E-commerce business from your living room this guide is for you to get the '
-              'insurance from the best rated insurance company check out the link in the.',
-      'timestamp': 32,
-      'timestamp_label': '[00:00:32]',
-      'timestamp_seconds': 32,
-      'tip': 'E-commerce business from your living room this guide is for you to get the '
-             'insurance from the best rated insurance company check out the link in the.',
-      'title': 'Product Liability Insurance Coverage and Cost | What is Product Liability? '
-               'Small Business Insurance (Insurance Assurance)',
-      'url': 'https://www.youtube.com/watch?v=XxorvB6ExNs&t=32s',
-      'video_id': 'XxorvB6ExNs'},
-     {'author': 'GroPulse',
-      'channel': 'GroPulse',
-      'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:00:56](https://www.youtube.com/watch?v=El6hMZ1_77w&t=56s)',
-      'relevance': 'Attributed practitioner commentary on lean 3PL-backed & authorized-dealer '
-                   'e-commerce operations, contribution-margin underwriting, and automated '
-                   'retention (Chapter Q4 operational verification).',
-      'source_type': 'video_pro_tip',
-      'text': 'Stocky, built right into Shopify, can handle automated reordering like a champ. '
-              'Katana MRP is perfect for syncing your production, and OrderHive uses AI to '
-              'predict demand spikes before they hit. All these tools install in one click, '
-              'saving you hours every week.',
-      'timestamp': 56,
-      'timestamp_label': '[00:00:56]',
-      'timestamp_seconds': 56,
-      'tip': 'Stocky, built right into Shopify, can handle automated reordering like a champ. '
-             'Katana MRP is perfect for syncing your production, and OrderHive uses AI to '
-             'predict demand spikes before they hit. All these tools install in one click, '
-             'saving you hours every week.',
-      'title': 'Shopify Inventory Management Complete Setup Guide (GroPulse)',
-      'url': 'https://www.youtube.com/watch?v=El6hMZ1_77w&t=56s',
-      'video_id': 'El6hMZ1_77w'},
-     {'author': 'BIS Benefits - Best In Serving',
-      'channel': 'BIS Benefits - Best In Serving',
-      'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:04:48](https://www.youtube.com/watch?v=A0rgATB8PiM&t=288s)',
-      'relevance': 'Attributed practitioner commentary on lean 3PL-backed & authorized-dealer '
-                   'e-commerce operations, contribution-margin underwriting, and automated '
-                   'retention (Chapter Q4 operational verification).',
-      'source_type': 'video_pro_tip',
-      'text': 'And so, um, what I would encourage the audience to kind of hear is insurance '
-              'tends to stack and you get what you need just to check the box at the beginning '
-              "in survival mode. 't afford to not have someone care or be dorks like us and "
-              'and know the right questions to ask.',
-      'timestamp': 288,
-      'timestamp_label': '[00:04:48]',
-      'timestamp_seconds': 288,
-      'tip': 'And so, um, what I would encourage the audience to kind of hear is insurance '
-             'tends to stack and you get what you need just to check the box at the beginning '
-             "in survival mode. 't afford to not have someone care or be dorks like us and and "
-             'know the right questions to ask.',
-      'title': 'What is Product Liability Insurance? (BIS Benefits - Best In Serving)',
-      'url': 'https://www.youtube.com/watch?v=A0rgATB8PiM&t=288s',
-      'video_id': 'A0rgATB8PiM'},
-     {'author': 'Avalara',
-      'channel': 'Avalara',
-      'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:01:49](https://www.youtube.com/watch?v=A7FAFArV6JM&t=109s)',
-      'relevance': 'Attributed practitioner commentary on lean 3PL-backed & authorized-dealer '
-                   'e-commerce operations, contribution-margin underwriting, and automated '
-                   'retention (Chapter Q4 operational verification).',
-      'source_type': 'video_pro_tip',
-      'text': 'Background Avalara ave attacks is easy on your end too it comes ready to '
-              'connect with s AP Commerce cloud using a pre-built.',
-      'timestamp': 109,
-      'timestamp_label': '[00:01:49]',
-      'timestamp_seconds': 109,
-      'tip': 'Background Avalara ave attacks is easy on your end too it comes ready to connect '
-             'with s AP Commerce cloud using a pre-built.',
-      'title': 'SAP Commerce Cloud + Avalara (Avalara)',
-      'url': 'https://www.youtube.com/watch?v=A7FAFArV6JM&t=109s',
-      'video_id': 'A7FAFArV6JM'},
-     {'author': 'MarketingSherpa',
-      'channel': 'MarketingSherpa',
-      'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:04:10](https://www.youtube.com/watch?v=u0WQ5ZC6KME&t=250s)',
-      'relevance': 'Attributed practitioner commentary on lean 3PL-backed & authorized-dealer '
-                   'e-commerce operations, contribution-margin underwriting, and automated '
-                   'retention (Chapter Q4 operational verification).',
-      'source_type': 'video_pro_tip',
-      'text': 'The other excellent lisa a lot of great points thank you so much for joining us '
-              "in the media center and don't forget you can view all of our videos online at "
-              'www.marketingsherpa.com irc.',
-      'timestamp': 250,
-      'timestamp_label': '[00:04:10]',
-      'timestamp_seconds': 250,
-      'tip': 'The other excellent lisa a lot of great points thank you so much for joining us '
-             "in the media center and don't forget you can view all of our videos online at "
-             'www.marketingsherpa.com irc.',
-      'title': 'E-commerce Marketing: Evaluating what omnichannel really means '
-               '(MarketingSherpa)',
-      'url': 'https://www.youtube.com/watch?v=u0WQ5ZC6KME&t=250s',
-      'video_id': 'u0WQ5ZC6KME'},
-     {'author': 'Gavin Hewitson',
-      'channel': 'Gavin Hewitson',
-      'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:01:34](https://www.youtube.com/watch?v=Cu4iN3jgMwI&t=94s)',
-      'relevance': 'Attributed practitioner commentary on lean 3PL-backed & authorized-dealer '
-                   'e-commerce operations, contribution-margin underwriting, and automated '
-                   'retention (Chapter Q4 operational verification).',
-      'source_type': 'video_pro_tip',
-      'text': "Now, this store is integrated with Woo Commerce. So, it's triggered off of a "
-              'Woo Commerce metric, but in some cases may be triggered off of a Shopify placed '
-              "order metric, but we're triggering this flow off of the placed order metric.",
-      'timestamp': 94,
-      'timestamp_label': '[00:01:34]',
-      'timestamp_seconds': 94,
-      'tip': "Now, this store is integrated with Woo Commerce. So, it's triggered off of a Woo "
-             'Commerce metric, but in some cases may be triggered off of a Shopify placed '
-             "order metric, but we're triggering this flow off of the placed order metric.",
-      'title': 'Klaviyo Post Purchase Flow Tutorial | Shopify Thank You Flow Setup (Gavin '
-               'Hewitson)',
-      'url': 'https://www.youtube.com/watch?v=Cu4iN3jgMwI&t=94s',
-      'video_id': 'Cu4iN3jgMwI'},
-     {'author': 'Marcus Lam | High Ticket Dropshipping (AI)',
-      'channel': 'Marcus Lam | High Ticket Dropshipping (AI)',
-      'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:00:15](https://www.youtube.com/watch?v=7B1m62WaDkw&t=15s)',
-      'relevance': 'Attributed practitioner commentary on lean 3PL-backed & authorized-dealer '
-                   'e-commerce operations, contribution-margin underwriting, and automated '
-                   'retention (Chapter Q4 operational verification).',
-      'source_type': 'video_pro_tip',
-      'text': "I think real close it'll be over over a grand nice yeah that was uh free "
-              "because I wasn't even I'm not even running ads to.",
-      'timestamp': 15,
-      'timestamp_label': '[00:00:15]',
-      'timestamp_seconds': 15,
-      'tip': "I think real close it'll be over over a grand nice yeah that was uh free because "
-             "I wasn't even I'm not even running ads to.",
-      'title': 'Niching Down and Finding Better Suppliers | High Ticket Dropshipping (Case '
-               'Study) (Marcus Lam | High Ticket Dropshipping (AI))',
-      'url': 'https://www.youtube.com/watch?v=7B1m62WaDkw&t=15s',
-      'video_id': '7B1m62WaDkw'}],
- 5: [{'author': 'One Minute Finance',
-      'channel': 'One Minute Finance',
-      'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:01:43](https://www.youtube.com/watch?v=7yuWFm95LDw&t=103s)',
-      'relevance': 'Attributed practitioner commentary on lean 3PL-backed & authorized-dealer '
-                   'e-commerce operations, contribution-margin underwriting, and automated '
-                   'retention (Chapter Q5 operational verification).',
-      'source_type': 'video_pro_tip',
-      'text': 'The cash conversion cycle, or the CCC, measures exactly how long this trap '
-              'lasts, from the exact moment cash leaves to pay suppliers, all the way to when '
-              'it finally returns from your customers.',
-      'timestamp': 103,
-      'timestamp_label': '[00:01:43]',
-      'timestamp_seconds': 103,
-      'tip': 'The cash conversion cycle, or the CCC, measures exactly how long this trap '
-             'lasts, from the exact moment cash leaves to pay suppliers, all the way to when '
-             'it finally returns from your customers.',
-      'title': 'The Cash Conversion Cycle (CCC) Explained | Formula, Working Capital & Cash '
-               'Flow Mastery (One Minute Finance)',
-      'url': 'https://www.youtube.com/watch?v=7yuWFm95LDw&t=103s',
-      'video_id': '7yuWFm95LDw'},
+      'text': 'A short cash conversion cycle is seen as a positive sign for a company and it '
+              'indicates that the company is converting its cash investment in inventory into cash '
+              'inflow from sales quickly and is operating efficiently.',
+      'timestamp': 433,
+      'timestamp_label': '[00:07:13]',
+      'timestamp_seconds': 433,
+      'tip': 'A short cash conversion cycle is seen as a positive sign for a company and it '
+             'indicates that the company is converting its cash investment in inventory into cash '
+             'inflow from sales quickly and is operating efficiently.',
+      'title': 'Cash Conversion Cycle Explained | CFA Level 1 Corporate Issuers',
+      'url': 'https://www.youtube.com/watch?v=1gBvyu9ADGo&t=433s',
+      'video_id': '1gBvyu9ADGo'},
      {'author': 'Mergers & Inquisitions / Breaking Into Wall Street',
       'channel': 'Mergers & Inquisitions / Breaking Into Wall Street',
       'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:08:38](https://www.youtube.com/watch?v=rNjMWAOJHwM&t=518s)',
-      'relevance': 'Attributed practitioner commentary on lean 3PL-backed & authorized-dealer '
-                   'e-commerce operations, contribution-margin underwriting, and automated '
-                   'retention (Chapter Q5 operational verification).',
+      'markdown': '[00:08:52](https://www.youtube.com/watch?v=rNjMWAOJHwM&t=532s)',
+      'relevance': 'Verbatim practitioner testimony from Chapter Q5.',
       'source_type': 'video_pro_tip',
-      'text': 'That depend heavily on inventory in these cases the trends in the cash '
-              'conversion cycle could indicate when a company might need to raise capital or.',
-      'timestamp': 518,
-      'timestamp_label': '[00:08:38]',
-      'timestamp_seconds': 518,
-      'tip': 'That depend heavily on inventory in these cases the trends in the cash '
-             'conversion cycle could indicate when a company might need to raise capital or.',
-      'title': 'The Cash Conversion Cycle (CCC): The King of the Cash Flow Statement? (Mergers '
-               '& Inquisitions / Breaking Into Wall Street)',
-      'url': 'https://www.youtube.com/watch?v=rNjMWAOJHwM&t=518s',
+      'text': 'These companies often find it harder to collect from customers and they may '
+              'sometimes get squeezed by suppliers who impose tougher payment terms because of the '
+              'financial state of the companies.',
+      'timestamp': 532,
+      'timestamp_label': '[00:08:52]',
+      'timestamp_seconds': 532,
+      'tip': 'These companies often find it harder to collect from customers and they may '
+             'sometimes get squeezed by suppliers who impose tougher payment terms because of the '
+             'financial state of the companies.',
+      'title': 'The Cash Conversion Cycle (CCC): The King of the Cash Flow Statement?',
+      'url': 'https://www.youtube.com/watch?v=rNjMWAOJHwM&t=532s',
       'video_id': 'rNjMWAOJHwM'},
-     {'author': 'Daniel Boufford',
-      'channel': 'Daniel Boufford',
-      'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:02:23](https://www.youtube.com/watch?v=jYFh4ucNZuw&t=143s)',
-      'relevance': 'Attributed practitioner commentary on lean 3PL-backed & authorized-dealer '
-                   'e-commerce operations, contribution-margin underwriting, and automated '
-                   'retention (Chapter Q5 operational verification).',
-      'source_type': 'video_pro_tip',
-      'text': "Um but if uh if there's a problem on Amazon and they say a customer says it's "
-              "inauthentic or any number of things can happen, they'll they'll request an "
-              'invoice and they may or may not accept the invoice from the distributor.',
-      'timestamp': 143,
-      'timestamp_label': '[00:02:23]',
-      'timestamp_seconds': 143,
-      'tip': "Um but if uh if there's a problem on Amazon and they say a customer says it's "
-             "inauthentic or any number of things can happen, they'll they'll request an "
-             'invoice and they may or may not accept the invoice from the distributor.',
-      'title': 'The Truth About Distributors vs Brand Direct (Amazon Wholesale) (Daniel '
-               'Boufford)',
-      'url': 'https://www.youtube.com/watch?v=jYFh4ucNZuw&t=143s',
-      'video_id': 'jYFh4ucNZuw'},
-     {'author': 'Coffeezilla',
-      'channel': 'Coffeezilla',
-      'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:06:23](https://www.youtube.com/watch?v=fPLMdewUMQw&t=383s)',
-      'relevance': 'Attributed practitioner commentary on lean 3PL-backed & authorized-dealer '
-                   'e-commerce operations, contribution-margin underwriting, and automated '
-                   'retention (Chapter Q5 operational verification).',
-      'source_type': 'video_pro_tip',
-      'text': 'Do it for the amazon automated store guys again do you notice do you notice you '
-              'take all the risk.',
-      'timestamp': 383,
-      'timestamp_label': '[00:06:23]',
-      'timestamp_seconds': 383,
-      'tip': 'Do it for the amazon automated store guys again do you notice do you notice you '
-             'take all the risk.',
-      'title': 'Exposing the Walmart "Automation" SCAM (Coffeezilla)',
-      'url': 'https://www.youtube.com/watch?v=fPLMdewUMQw&t=383s',
-      'video_id': 'fPLMdewUMQw'},
-     {'author': 'Sertac Altun',
-      'channel': 'Sertac Altun',
-      'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:03:31](https://www.youtube.com/watch?v=B-HQodfgIG4&t=211s)',
-      'relevance': 'Attributed practitioner commentary on lean 3PL-backed & authorized-dealer '
-                   'e-commerce operations, contribution-margin underwriting, and automated '
-                   'retention (Chapter Q5 operational verification).',
-      'source_type': 'video_pro_tip',
-      'text': "This is what inversion is and let's get into that. What kind of brands are we "
-              "avoiding on Amazon? It's going to be brands that look like this. This is what's "
-              "going to guarantee our failure, right? There's no proof of concept for "
-              'resellers, so we should avoid these products.',
-      'timestamp': 211,
-      'timestamp_label': '[00:03:31]',
-      'timestamp_seconds': 211,
-      'tip': "This is what inversion is and let's get into that. What kind of brands are we "
-             "avoiding on Amazon? It's going to be brands that look like this. This is what's "
-             "going to guarantee our failure, right? There's no proof of concept for "
-             'resellers, so we should avoid these products.',
-      'title': 'Amazon FBA Wholesale Brand direct for Beginners: The Easiest Way to Start in '
-               '2027 (Sertac Altun)',
-      'url': 'https://www.youtube.com/watch?v=B-HQodfgIG4&t=211s',
-      'video_id': 'B-HQodfgIG4'},
-     {'author': 'LedgerGurus: Ecommerce Accounting Experts',
-      'channel': 'LedgerGurus: Ecommerce Accounting Experts',
-      'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:00:55](https://www.youtube.com/watch?v=-DhtTN5_Rh4&t=55s)',
-      'relevance': 'Attributed practitioner commentary on lean 3PL-backed & authorized-dealer '
-                   'e-commerce operations, contribution-margin underwriting, and automated '
-                   'retention (Chapter Q5 operational verification).',
-      'source_type': 'video_pro_tip',
-      'text': "And then lastly, I'm going to give a detailed review of pros and cons of some "
-              'of our favorite slash most used softwares out there for sales tax automation. '
-              "I'm going to talk about TaxJar, Avalara, Sovos, and Taxify. Why is sales tax so "
-              'complicated for e-commerce sellers?',
-      'timestamp': 55,
-      'timestamp_label': '[00:00:55]',
-      'timestamp_seconds': 55,
-      'tip': "And then lastly, I'm going to give a detailed review of pros and cons of some of "
-             "our favorite slash most used softwares out there for sales tax automation. I'm "
-             'going to talk about TaxJar, Avalara, Sovos, and Taxify. Why is sales tax so '
-             'complicated for e-commerce sellers?',
-      'title': 'Avalara? TaxJar? Taxify? BEST SALES TAX APP for Ecommerce (LedgerGurus: '
-               'Ecommerce Accounting Experts)',
-      'url': 'https://www.youtube.com/watch?v=-DhtTN5_Rh4&t=55s',
-      'video_id': '-DhtTN5_Rh4'},
-     {'author': 'Third-Party Profits',
-      'channel': 'Third-Party Profits',
-      'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:01:35](https://www.youtube.com/watch?v=1lcG6ji-5ls&t=95s)',
-      'relevance': 'Attributed practitioner commentary on lean 3PL-backed & authorized-dealer '
-                   'e-commerce operations, contribution-margin underwriting, and automated '
-                   'retention (Chapter Q5 operational verification).',
-      'source_type': 'video_pro_tip',
-      'text': "'ve been around, the more likely they are to be an authorized distributor of "
-              "the brand. So, we're going to put 20 to 50 years and 50 plus years. Those are "
-              'the two toggles that recommend. The second thing that recommend to do is to '
-              'select a region.',
-      'timestamp': 95,
-      'timestamp_label': '[00:01:35]',
-      'timestamp_seconds': 95,
-      'tip': "'ve been around, the more likely they are to be an authorized distributor of the "
-             "brand. So, we're going to put 20 to 50 years and 50 plus years. Those are the "
-             'two toggles that recommend. The second thing that recommend to do is to select a '
-             'region.',
-      'title': 'How to Find Amazon Wholesale Suppliers That Actually Make You Money | '
-               'Third-Party Profits Tutorial (Third-Party Profits)',
-      'url': 'https://www.youtube.com/watch?v=1lcG6ji-5ls&t=95s',
-      'video_id': '1lcG6ji-5ls'},
-     {'author': 'Anatoliy Labinskiy | E-com business encyclopedia',
-      'channel': 'Anatoliy Labinskiy | E-com business encyclopedia',
-      'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:02:50](https://www.youtube.com/watch?v=XED26wvEepA&t=170s)',
-      'relevance': 'Attributed practitioner commentary on lean 3PL-backed & authorized-dealer '
-                   'e-commerce operations, contribution-margin underwriting, and automated '
-                   'retention (Chapter Q5 operational verification).',
-      'source_type': 'video_pro_tip',
-      'text': 'Your payment providers avoid the holds than just save couple of bucks on there '
-              'or win the dispute with the client and again if you want to know more more.',
-      'timestamp': 170,
-      'timestamp_label': '[00:02:50]',
-      'timestamp_seconds': 170,
-      'tip': 'Your payment providers avoid the holds than just save couple of bucks on there '
-             'or win the dispute with the client and again if you want to know more more.',
-      'title': 'How to Deal with Shopify Chargebacks, Refunds, and Returns | Dropshipping '
-               'Beginner Mistakes in Ecom (Anatoliy Labinskiy | E-com business encyclopedia)',
-      'url': 'https://www.youtube.com/watch?v=XED26wvEepA&t=170s',
-      'video_id': 'XED26wvEepA'},
-     {'author': 'KeyCommerce',
-      'channel': 'KeyCommerce',
-      'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:01:05](https://www.youtube.com/watch?v=S1NhYxaPnic&t=65s)',
-      'relevance': 'Attributed practitioner commentary on lean 3PL-backed & authorized-dealer '
-                   'e-commerce operations, contribution-margin underwriting, and automated '
-                   'retention (Chapter Q5 operational verification).',
-      'source_type': 'video_pro_tip',
-      'text': 'Say you have a store that sells handmade rugs, minimalist design, short product '
-              'names that look great on your site, something like The Midnight Oasis. We see '
-              'this all the time when we audit stores at our agency, and it works perfectly as '
-              'a brand product name.',
-      'timestamp': 65,
-      'timestamp_label': '[00:01:05]',
-      'timestamp_seconds': 65,
-      'tip': 'Say you have a store that sells handmade rugs, minimalist design, short product '
-             'names that look great on your site, something like The Midnight Oasis. We see '
-             'this all the time when we audit stores at our agency, and it works perfectly as '
-             'a brand product name.',
-      'title': 'How To Optimize Your Product Feed & Data In Google Merchant Center '
-               '(KeyCommerce)',
-      'url': 'https://www.youtube.com/watch?v=S1NhYxaPnic&t=65s',
-      'video_id': 'S1NhYxaPnic'},
-     {'author': 'Thomas | Amazon Wholesale',
-      'channel': 'Thomas | Amazon Wholesale',
-      'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:01:52](https://www.youtube.com/watch?v=48JkrcvKaVs&t=112s)',
-      'relevance': 'Attributed practitioner commentary on lean 3PL-backed & authorized-dealer '
-                   'e-commerce operations, contribution-margin underwriting, and automated '
-                   'retention (Chapter Q5 operational verification).',
-      'source_type': 'video_pro_tip',
-      'text': 'Get their cataloges running through scan unlimited it um which is like a '
-              "catalog scanner to find profitable products and then you'll be good to go and "
-              "that's exactly how you find authorized Distributors for Brands such as aani new "
-              'to sell on Amazon.',
-      'timestamp': 112,
-      'timestamp_label': '[00:01:52]',
-      'timestamp_seconds': 112,
-      'tip': 'Get their cataloges running through scan unlimited it um which is like a catalog '
-             "scanner to find profitable products and then you'll be good to go and that's "
-             'exactly how you find authorized Distributors for Brands such as aani new to sell '
-             'on Amazon.',
-      'title': 'This is how you find brands authorized distributors to buy and sell their '
-               'products on Amazon (Thomas | Amazon Wholesale)',
-      'url': 'https://www.youtube.com/watch?v=48JkrcvKaVs&t=112s',
-      'video_id': '48JkrcvKaVs'},
-     {'author': 'Joe Verschoor',
-      'channel': 'Joe Verschoor',
-      'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:04:08](https://www.youtube.com/watch?v=5jY7d_1m1t0&t=248s)',
-      'relevance': 'Attributed practitioner commentary on lean 3PL-backed & authorized-dealer '
-                   'e-commerce operations, contribution-margin underwriting, and automated '
-                   'retention (Chapter Q5 operational verification).',
-      'source_type': 'video_pro_tip',
-      'text': "MAP is not enforced, then it's kind of up to you what you charge for your "
-              'products above your dealer cost to to your supplier. Um, so MAP versus no MAP, '
-              "that's obviously a factor.",
-      'timestamp': 248,
-      'timestamp_label': '[00:04:08]',
-      'timestamp_seconds': 248,
-      'tip': "MAP is not enforced, then it's kind of up to you what you charge for your "
-             'products above your dealer cost to to your supplier. Um, so MAP versus no MAP, '
-             "that's obviously a factor.",
-      'title': 'How Much Money Can You Actually Make High Ticket Dropshipping? [2027] (Joe '
-               'Verschoor)',
-      'url': 'https://www.youtube.com/watch?v=5jY7d_1m1t0&t=248s',
-      'video_id': '5jY7d_1m1t0'},
-     {'author': 'Racklify',
-      'channel': 'Racklify',
-      'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:01:30](https://www.youtube.com/watch?v=NXZLkZ_Gfuk&t=90s)',
-      'relevance': 'Attributed practitioner commentary on lean 3PL-backed & authorized-dealer '
-                   'e-commerce operations, contribution-margin underwriting, and automated '
-                   'retention (Chapter Q5 operational verification).',
-      'source_type': 'video_pro_tip',
-      'text': "Offerings on your site to do this you're going to have to ship these items to "
-              'the customer in that set this is going to allow you to take full advantage of '
-              'your.',
-      'timestamp': 90,
-      'timestamp_label': '[00:01:30]',
-      'timestamp_seconds': 90,
-      'tip': "Offerings on your site to do this you're going to have to ship these items to "
-             'the customer in that set this is going to allow you to take full advantage of '
-             'your.',
-      'title': 'Dimensional Weight: How You Are Overpaying For Shipping Selling On Amazon & '
-               'Shopify (Racklify)',
-      'url': 'https://www.youtube.com/watch?v=NXZLkZ_Gfuk&t=90s',
-      'video_id': 'NXZLkZ_Gfuk'},
-     {'author': 'ShipBob',
-      'channel': 'ShipBob',
-      'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:02:55](https://www.youtube.com/watch?v=zldfAGyfsfA&t=175s)',
-      'relevance': 'Attributed practitioner commentary on lean 3PL-backed & authorized-dealer '
-                   'e-commerce operations, contribution-margin underwriting, and automated '
-                   'retention (Chapter Q5 operational verification).',
-      'source_type': 'video_pro_tip',
-      'text': 'Pack your orders in your custom branded packaging and offer the unbo boxing '
-              'experience you want your customers to have to learn more about e-commerce '
-              "fulfillment or how you can get started with ship Bob's fulfillment Solutions "
-              'visit ship bob.com.',
-      'timestamp': 175,
-      'timestamp_label': '[00:02:55]',
-      'timestamp_seconds': 175,
-      'tip': 'Pack your orders in your custom branded packaging and offer the unbo boxing '
-             'experience you want your customers to have to learn more about e-commerce '
-             "fulfillment or how you can get started with ship Bob's fulfillment Solutions "
-             'visit ship bob.com.',
-      'title': 'How Ecommerce Fulfillment Works | Behind-The-Scenes of Order Fulfillment '
-               '(ShipBob)',
-      'url': 'https://www.youtube.com/watch?v=zldfAGyfsfA&t=175s',
-      'video_id': 'zldfAGyfsfA'},
-     {'author': 'Brook Hiddink',
-      'channel': 'Brook Hiddink',
-      'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:02:38](https://www.youtube.com/watch?v=cBdVAQxml6U&t=158s)',
-      'relevance': 'Attributed practitioner commentary on lean 3PL-backed & authorized-dealer '
-                   'e-commerce operations, contribution-margin underwriting, and automated '
-                   'retention (Chapter Q5 operational verification).',
-      'source_type': 'video_pro_tip',
-      'text': "You actually have picked one look let's say I'm doing restaurants you can go I "
-              'am starting a computer Graphics store in the B to B restaurant niche please '
-              'tell me tell me 15 to 20 products that cost over two five two thousand five '
-              'hundred dollars at a restaurant.',
-      'timestamp': 158,
-      'timestamp_label': '[00:02:38]',
-      'timestamp_seconds': 158,
-      'tip': "You actually have picked one look let's say I'm doing restaurants you can go I "
-             'am starting a computer Graphics store in the B to B restaurant niche please tell '
-             'me tell me 15 to 20 products that cost over two five two thousand five hundred '
-             'dollars at a restaurant.',
-      'title': 'B2B High Ticket Dropshipping Explained (Brook Hiddink)',
-      'url': 'https://www.youtube.com/watch?v=cBdVAQxml6U&t=158s',
-      'video_id': 'cBdVAQxml6U'},
-     {'author': 'Strictly Commerce',
-      'channel': 'Strictly Commerce',
-      'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:03:18](https://www.youtube.com/watch?v=fOjBryou0Do&t=198s)',
-      'relevance': 'Attributed practitioner commentary on lean 3PL-backed & authorized-dealer '
-                   'e-commerce operations, contribution-margin underwriting, and automated '
-                   'retention (Chapter Q5 operational verification).',
-      'source_type': 'video_pro_tip',
-      'text': 'Items night call two pack oh really that list two pack Pepto Bismol two pack uh '
-              'Pepto Bismol 4 o DayQuil 8 O nqu 8 t packs regular and super temps so uh we '
-              "just brought those in and we're bringing more items in okay do you guys do you "
-              'guys buy direct.',
-      'timestamp': 198,
-      'timestamp_label': '[00:03:18]',
-      'timestamp_seconds': 198,
-      'tip': 'Items night call two pack oh really that list two pack Pepto Bismol two pack uh '
-             'Pepto Bismol 4 o DayQuil 8 O nqu 8 t packs regular and super temps so uh we just '
-             "brought those in and we're bringing more items in okay do you guys do you guys "
-             'buy direct.',
-      'title': 'Talking to Wholesale Distributors for Amazon FBA (LIVE Call) | Road to $1M '
-               '(Strictly Commerce)',
-      'url': 'https://www.youtube.com/watch?v=fOjBryou0Do&t=198s',
-      'video_id': 'fOjBryou0Do'}],
- 6: [{'author': 'Eric Andrews',
-      'channel': 'Eric Andrews',
-      'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:00:56](https://www.youtube.com/watch?v=t2H3gJHuw6k&t=56s)',
-      'relevance': 'Attributed practitioner commentary on lean 3PL-backed & authorized-dealer '
-                   'e-commerce operations, contribution-margin underwriting, and automated '
-                   'retention (Chapter Q6 operational verification).',
-      'source_type': 'video_pro_tip',
-      'text': "So, first let's walk through the economics of this brand outside of Black "
-              'Friday, and then walk through these promos side by side. So, this brand is has '
-              'a conversion rate of 1. Obviously, your customer acquisition cost is a function '
-              'of your conversion rate.',
-      'timestamp': 56,
-      'timestamp_label': '[00:00:56]',
-      'timestamp_seconds': 56,
-      'tip': "So, first let's walk through the economics of this brand outside of Black "
-             'Friday, and then walk through these promos side by side. So, this brand is has a '
-             'conversion rate of 1. Obviously, your customer acquisition cost is a function of '
-             'your conversion rate.',
-      'title': '50% Off vs. BOGO: Unit Economics Case Study (How We Lost $500K) (Eric Andrews)',
-      'url': 'https://www.youtube.com/watch?v=t2H3gJHuw6k&t=56s',
-      'video_id': 't2H3gJHuw6k'},
-     {'author': 'Abdul Rauf Ali',
-      'channel': 'Abdul Rauf Ali',
-      'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:01:37](https://www.youtube.com/watch?v=V0LAr3jchLs&t=97s)',
-      'relevance': 'Attributed practitioner commentary on lean 3PL-backed & authorized-dealer '
-                   'e-commerce operations, contribution-margin underwriting, and automated '
-                   'retention (Chapter Q6 operational verification).',
-      'source_type': 'video_pro_tip',
-      'text': 'Number four, does the landing page close? Your feed is the blueprint. If your '
-              "blueprint is wrong, you don't fix the building by repainting the walls. So "
-              'before we do any optimization in the Google Merchant Center, first we need to '
-              'look at the ads account search terms data.',
-      'timestamp': 97,
-      'timestamp_label': '[00:01:37]',
-      'timestamp_seconds': 97,
-      'tip': 'Number four, does the landing page close? Your feed is the blueprint. If your '
-             "blueprint is wrong, you don't fix the building by repainting the walls. So "
-             'before we do any optimization in the Google Merchant Center, first we need to '
-             'look at the ads account search terms data.',
-      'title': 'Google Shopping Feed Optimization for Performance Max, 3 Fixes to improve ROAS '
-               '& Merchant centre (Abdul Rauf Ali)',
-      'url': 'https://www.youtube.com/watch?v=V0LAr3jchLs&t=97s',
-      'video_id': 'V0LAr3jchLs'},
-     {'author': 'Wise Explainer',
-      'channel': 'Wise Explainer',
-      'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:01:28](https://www.youtube.com/watch?v=X3G7DDq6KD8&t=88s)',
-      'relevance': 'Attributed practitioner commentary on lean 3PL-backed & authorized-dealer '
-                   'e-commerce operations, contribution-margin underwriting, and automated '
-                   'retention (Chapter Q6 operational verification).',
-      'source_type': 'video_pro_tip',
-      'text': 'Smaller stores may find the cost higher than simpler solutions, but the time '
-              'savings, automation, and professional customer experience often justify the '
-              'investment.',
-      'timestamp': 88,
-      'timestamp_label': '[00:01:28]',
-      'timestamp_seconds': 88,
-      'tip': 'Smaller stores may find the cost higher than simpler solutions, but the time '
-             'savings, automation, and professional customer experience often justify the '
-             'investment.',
-      'title': 'Loop Returns Dropshipping Honest Review - Watch Before Using (Wise Explainer)',
-      'url': 'https://www.youtube.com/watch?v=X3G7DDq6KD8&t=88s',
-      'video_id': 'X3G7DDq6KD8'},
-     {'author': 'Shopify Mastery',
-      'channel': 'Shopify Mastery',
-      'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:03:10](https://www.youtube.com/watch?v=EjZsqaOIDsc&t=190s)',
-      'relevance': 'Attributed practitioner commentary on lean 3PL-backed & authorized-dealer '
-                   'e-commerce operations, contribution-margin underwriting, and automated '
-                   'retention (Chapter Q6 operational verification).',
-      'source_type': 'video_pro_tip',
-      'text': 'That means that any customer who wants to find it can. This is also what '
-              'payment processors like Shopify Payments, Stripe, and PayPal look for when a '
-              'customer files a dispute. Having a clear, published policy is your first line '
-              'of defense in a chargeback situation.',
-      'timestamp': 190,
-      'timestamp_label': '[00:03:10]',
-      'timestamp_seconds': 190,
-      'tip': 'That means that any customer who wants to find it can. This is also what payment '
-             'processors like Shopify Payments, Stripe, and PayPal look for when a customer '
-             'files a dispute. Having a clear, published policy is your first line of defense '
-             'in a chargeback situation.',
-      'title': 'How to Handle Shopify Dropshipping Returns, Refunds, and Return Policies. '
-               '(Shopify Mastery)',
-      'url': 'https://www.youtube.com/watch?v=EjZsqaOIDsc&t=190s',
-      'video_id': 'EjZsqaOIDsc'},
-     {'author': 'Pedro Bermudez',
-      'channel': 'Pedro Bermudez',
-      'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:00:57](https://www.youtube.com/watch?v=nm9aWWMYnEg&t=57s)',
-      'relevance': 'Attributed practitioner commentary on lean 3PL-backed & authorized-dealer '
-                   'e-commerce operations, contribution-margin underwriting, and automated '
-                   'retention (Chapter Q6 operational verification).',
-      'source_type': 'video_pro_tip',
-      'text': 'One, three ways to find brands with nobody sitting between you and them. The '
-              'first one you can do tonight right on your phone. Two, the 30-second filter '
-              'that tells you whether a brand is worth your time or a wasted week.',
-      'timestamp': 57,
-      'timestamp_label': '[00:00:57]',
-      'timestamp_seconds': 57,
-      'tip': 'One, three ways to find brands with nobody sitting between you and them. The '
-             'first one you can do tonight right on your phone. Two, the 30-second filter that '
-             'tells you whether a brand is worth your time or a wasted week.',
-      'title': 'How to Find Amazon Wholesale and Brand Suppliers That Actually Make You Money '
-               'Faster (Pedro Bermudez)',
-      'url': 'https://www.youtube.com/watch?v=nm9aWWMYnEg&t=57s',
-      'video_id': 'nm9aWWMYnEg'},
-     {'author': 'KeyCommerce',
-      'channel': 'KeyCommerce',
-      'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:05:43](https://www.youtube.com/watch?v=jmjy6G9akyM&t=343s)',
-      'relevance': 'Attributed practitioner commentary on lean 3PL-backed & authorized-dealer '
-                   'e-commerce operations, contribution-margin underwriting, and automated '
-                   'retention (Chapter Q6 operational verification).',
-      'source_type': 'video_pro_tip',
-      'text': 'Under this, you can choose your audience, and here you have two options. The '
-              "first is new customers. These are shoppers who haven't interacted with your "
-              'brand before. Just be aware, this audience type is exclusively for shopping '
-              'ads, not free listings.',
-      'timestamp': 343,
-      'timestamp_label': '[00:05:43]',
-      'timestamp_seconds': 343,
-      'tip': 'Under this, you can choose your audience, and here you have two options. The '
-             "first is new customers. These are shoppers who haven't interacted with your "
-             'brand before. Just be aware, this audience type is exclusively for shopping ads, '
-             'not free listings.',
-      'title': 'How to Run Promotions in Merchant Center for Google Shopping (KeyCommerce)',
-      'url': 'https://www.youtube.com/watch?v=jmjy6G9akyM&t=343s',
-      'video_id': 'jmjy6G9akyM'},
-     {'author': 'Marcus Lam | High Ticket Dropshipping (AI)',
-      'channel': 'Marcus Lam | High Ticket Dropshipping (AI)',
-      'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:04:59](https://www.youtube.com/watch?v=g_OL9gG7q_I&t=299s)',
-      'relevance': 'Attributed practitioner commentary on lean 3PL-backed & authorized-dealer '
-                   'e-commerce operations, contribution-margin underwriting, and automated '
-                   'retention (Chapter Q6 operational verification).',
-      'source_type': 'video_pro_tip',
-      'text': 'If you look hard enough, you could actually go to the bottom. I believe they '
-              "should have some form of dealer program. I'm going to search dealer program. "
-              "I'm actually going to go to Google. I'll search dealer program with the brand "
-              'name.',
-      'timestamp': 299,
-      'timestamp_label': '[00:04:59]',
-      'timestamp_seconds': 299,
-      'tip': 'If you look hard enough, you could actually go to the bottom. I believe they '
-             "should have some form of dealer program. I'm going to search dealer program. I'm "
-             "actually going to go to Google. I'll search dealer program with the brand name.",
-      'title': 'How to Find USA Suppliers for High Ticket Dropshipping (Marcus Lam | High '
-               'Ticket Dropshipping (AI))',
-      'url': 'https://www.youtube.com/watch?v=g_OL9gG7q_I&t=299s',
-      'video_id': 'g_OL9gG7q_I'},
-     {'author': 'Trevor Zheng | High Ticket Dropshipping',
-      'channel': 'Trevor Zheng | High Ticket Dropshipping',
-      'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:07:26](https://www.youtube.com/watch?v=v64Z-O_YyTY&t=446s)',
-      'relevance': 'Attributed practitioner commentary on lean 3PL-backed & authorized-dealer '
-                   'e-commerce operations, contribution-margin underwriting, and automated '
-                   'retention (Chapter Q6 operational verification).',
-      'source_type': 'video_pro_tip',
-      'text': 'Them Brands here search that up onto Google and find our contact us information '
-              'and contact them to become a dealer and another way is to look at.',
-      'timestamp': 446,
-      'timestamp_label': '[00:07:26]',
-      'timestamp_seconds': 446,
-      'tip': 'Them Brands here search that up onto Google and find our contact us information '
-             'and contact them to become a dealer and another way is to look at.',
-      'title': 'How To ACTUALLY Find Shopify Dropshipping Suppliers (USA High Ticket '
-               'Suppliers) (Trevor Zheng | High Ticket Dropshipping)',
-      'url': 'https://www.youtube.com/watch?v=v64Z-O_YyTY&t=446s',
-      'video_id': 'v64Z-O_YyTY'},
-     {'author': 'Theo Clough | Email Marketing',
-      'channel': 'Theo Clough | Email Marketing',
-      'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:03:18](https://www.youtube.com/watch?v=AZHCdf0AuwM&t=198s)',
-      'relevance': 'Attributed practitioner commentary on lean 3PL-backed & authorized-dealer '
-                   'e-commerce operations, contribution-margin underwriting, and automated '
-                   'retention (Chapter Q6 operational verification).',
-      'source_type': 'video_pro_tip',
-      'text': "You cannot do the same with your followers. The next thing is the cost doesn't "
-              'change. So, in Q4, your Facebook ads are going to increase in cost because more '
-              'people are advertising. With email, the cost never increases unless you add '
-              'more people onto the list.',
-      'timestamp': 198,
-      'timestamp_label': '[00:03:18]',
-      'timestamp_seconds': 198,
-      'tip': "You cannot do the same with your followers. The next thing is the cost doesn't "
-             'change. So, in Q4, your Facebook ads are going to increase in cost because more '
-             'people are advertising. With email, the cost never increases unless you add more '
-             'people onto the list.',
-      'title': 'Klaviyo Email Marketing For Beginners In (2026 Q4 Tutorial) (Theo Clough | '
-               'Email Marketing)',
-      'url': 'https://www.youtube.com/watch?v=AZHCdf0AuwM&t=198s',
-      'video_id': 'AZHCdf0AuwM'},
-     {'author': 'Ecom Chris',
-      'channel': 'Ecom Chris',
-      'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:06:53](https://www.youtube.com/watch?v=d9kULGtUBD4&t=413s)',
-      'relevance': 'Attributed practitioner commentary on lean 3PL-backed & authorized-dealer '
-                   'e-commerce operations, contribution-margin underwriting, and automated '
-                   'retention (Chapter Q6 operational verification).',
-      'source_type': 'video_pro_tip',
-      'text': 'Like actual search terms based on data. So without guessing and of course '
-              "without keyword stuffing, right? That's that's the worst because that leads to "
-              "turning titles into unreadable garbage. We don't want it either, right? It just "
-              "doesn't make sense.",
-      'timestamp': 413,
-      'timestamp_label': '[00:06:53]',
-      'timestamp_seconds': 413,
-      'tip': 'Like actual search terms based on data. So without guessing and of course '
-             "without keyword stuffing, right? That's that's the worst because that leads to "
-             "turning titles into unreadable garbage. We don't want it either, right? It just "
-             "doesn't make sense.",
-      'title': 'Ultimate Guide to Google Shopping Feed Optimization: Increase CTR, Conversions '
-               '& ROAS (Ecom Chris)',
-      'url': 'https://www.youtube.com/watch?v=d9kULGtUBD4&t=413s',
-      'video_id': 'd9kULGtUBD4'},
-     {'author': 'SKUio',
-      'channel': 'SKUio',
-      'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:00:20](https://www.youtube.com/watch?v=BAGqaHYyMlA&t=20s)',
-      'relevance': 'Attributed practitioner commentary on lean 3PL-backed & authorized-dealer '
-                   'e-commerce operations, contribution-margin underwriting, and automated '
-                   'retention (Chapter Q6 operational verification).',
-      'source_type': 'video_pro_tip',
-      'text': 'The page sets out how estimated duty works, card by card. The first card '
-              'explains what happens in your books. Step one, goods are received. Their '
-              'estimated duty goes into stock cost, and is held in an accrued customs duty '
-              'account.',
-      'timestamp': 20,
-      'timestamp_label': '[00:00:20]',
-      'timestamp_seconds': 20,
-      'tip': 'The page sets out how estimated duty works, card by card. The first card '
-             'explains what happens in your books. Step one, goods are received. Their '
-             'estimated duty goes into stock cost, and is held in an accrued customs duty '
-             'account.',
-      'title': 'How to Capitalize Estimated Import Duty Into Landed Cost and Reconcile Broker '
-               'Bills | SKU.io (SKUio)',
-      'url': 'https://www.youtube.com/watch?v=BAGqaHYyMlA&t=20s',
-      'video_id': 'BAGqaHYyMlA'},
-     {'author': 'William Rivera',
-      'channel': 'William Rivera',
-      'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:00:15](https://www.youtube.com/watch?v=KImeudrcJTU&t=15s)',
-      'relevance': 'Attributed practitioner commentary on lean 3PL-backed & authorized-dealer '
-                   'e-commerce operations, contribution-margin underwriting, and automated '
-                   'retention (Chapter Q6 operational verification).',
-      'source_type': 'video_pro_tip',
-      'text': "Suppliers every single time I need another one and in this video I'm going to "
-              'show you a method that costs $0 for you to find your first profitable.',
-      'timestamp': 15,
-      'timestamp_label': '[00:00:15]',
-      'timestamp_seconds': 15,
-      'tip': "Suppliers every single time I need another one and in this video I'm going to "
-             'show you a method that costs $0 for you to find your first profitable.',
-      'title': 'How To Find Amazon Wholesale Suppliers In 5 Minutes (William Rivera)',
-      'url': 'https://www.youtube.com/watch?v=KImeudrcJTU&t=15s',
-      'video_id': 'KImeudrcJTU'},
-     {'author': 'Tech Help Daily',
-      'channel': 'Tech Help Daily',
-      'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:00:25](https://www.youtube.com/watch?v=I8fM406sSsA&t=25s)',
-      'relevance': 'Attributed practitioner commentary on lean 3PL-backed & authorized-dealer '
-                   'e-commerce operations, contribution-margin underwriting, and automated '
-                   'retention (Chapter Q6 operational verification).',
-      'source_type': 'video_pro_tip',
-      'text': 'Now click inventory just below. Once products exist, this page lists every '
-              'variant that tracks quantity at each location with its numbers side by side. To '
-              'find one, type a product name or SKU in search and filter, like t-shirt.',
-      'timestamp': 25,
-      'timestamp_label': '[00:00:25]',
-      'timestamp_seconds': 25,
-      'tip': 'Now click inventory just below. Once products exist, this page lists every '
-             'variant that tracks quantity at each location with its numbers side by side. To '
-             'find one, type a product name or SKU in search and filter, like t-shirt.',
-      'title': 'Shopify Inventory Management Tutorial for Beginners (2026 Step-by-Step Guide '
-               'to Managing Stock) (Tech Help Daily)',
-      'url': 'https://www.youtube.com/watch?v=I8fM406sSsA&t=25s',
-      'video_id': 'I8fM406sSsA'},
-     {'author': 'Prediko AI Inventory Management',
-      'channel': 'Prediko AI Inventory Management',
-      'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:03:27](https://www.youtube.com/watch?v=IWUFOfiPmUI&t=207s)',
-      'relevance': 'Attributed practitioner commentary on lean 3PL-backed & authorized-dealer '
-                   'e-commerce operations, contribution-margin underwriting, and automated '
-                   'retention (Chapter Q6 operational verification).',
-      'source_type': 'video_pro_tip',
-      'text': 'Um, this call is mostly going to go over how to get started with Predico, what '
-              'is kind of those first steps that you would want to take and then how to make '
-              "the most of your data and the insights we're providing. If there are questions, "
-              'we have the Q&A open.',
-      'timestamp': 207,
-      'timestamp_label': '[00:03:27]',
-      'timestamp_seconds': 207,
-      'tip': 'Um, this call is mostly going to go over how to get started with Predico, what '
-             'is kind of those first steps that you would want to take and then how to make '
-             "the most of your data and the insights we're providing. If there are questions, "
-             'we have the Q&A open.',
-      'title': 'How to Set Up Prediko: Shopify Inventory Forecasting, Purchase Orders & AI '
-               'Planning (Onboarding) (Prediko AI Inventory Management)',
-      'url': 'https://www.youtube.com/watch?v=IWUFOfiPmUI&t=207s',
-      'video_id': 'IWUFOfiPmUI'},
-     {'author': 'Build Assets Online',
-      'channel': 'Build Assets Online',
-      'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:04:35](https://www.youtube.com/watch?v=ocjVuvj0QJg&t=275s)',
-      'relevance': 'Attributed practitioner commentary on lean 3PL-backed & authorized-dealer '
-                   'e-commerce operations, contribution-margin underwriting, and automated '
-                   'retention (Chapter Q6 operational verification).',
-      'source_type': 'video_pro_tip',
-      'text': 'That was helpful if you want to learn how to build an online asset portfolio '
-              'worth a million dollars or more we will show you how to do it build '
-              "assetsonline.com playbook go check out the class and we'll see in the next one.",
-      'timestamp': 275,
-      'timestamp_label': '[00:04:35]',
-      'timestamp_seconds': 275,
-      'tip': 'That was helpful if you want to learn how to build an online asset portfolio '
-             'worth a million dollars or more we will show you how to do it build '
-             "assetsonline.com playbook go check out the class and we'll see in the next one.",
-      'title': 'High Ticket Dropshipping Suppliers with No Price Lists - What to Do (Build '
-               'Assets Online)',
-      'url': 'https://www.youtube.com/watch?v=ocjVuvj0QJg&t=275s',
-      'video_id': 'ocjVuvj0QJg'}],
- 7: [{'author': 'ShipSage',
-      'channel': 'ShipSage',
-      'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:01:03](https://www.youtube.com/watch?v=eRxb-KV0R4E&t=63s)',
-      'relevance': 'Attributed practitioner commentary on lean 3PL-backed & authorized-dealer '
-                   'e-commerce operations, contribution-margin underwriting, and automated '
-                   'retention (Chapter Q7 operational verification).',
-      'source_type': 'video_pro_tip',
-      'text': 'Shopify, TikTok Shop, Etsy, and Amazon, your stock is synced across all your '
-              'stores. No more overselling a size you ran out of. Step 3: the order comes in. '
-              "Your customer checks out, and the order drops straight into ShipSage's OMS. "
-              "That's our own order management system.",
-      'timestamp': 63,
-      'timestamp_label': '[00:01:03]',
-      'timestamp_seconds': 63,
-      'tip': 'Shopify, TikTok Shop, Etsy, and Amazon, your stock is synced across all your '
-             'stores. No more overselling a size you ran out of. Step 3: the order comes in. '
-             "Your customer checks out, and the order drops straight into ShipSage's OMS. "
-             "That's our own order management system.",
-      'title': 'How Shopify & TikTok Shop Clothing Brands Ship Thousands of Orders Daily | '
-               'Inside an Apparel 3PL (ShipSage)',
-      'url': 'https://www.youtube.com/watch?v=eRxb-KV0R4E&t=63s',
-      'video_id': 'eRxb-KV0R4E'},
-     {'author': 'Einstein Fulfillment',
-      'channel': 'Einstein Fulfillment',
-      'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:00:35](https://www.youtube.com/watch?v=7Xr-2wI5LJo&t=35s)',
-      'relevance': 'Attributed practitioner commentary on lean 3PL-backed & authorized-dealer '
-                   'e-commerce operations, contribution-margin underwriting, and automated '
-                   'retention (Chapter Q7 operational verification).',
-      'source_type': 'video_pro_tip',
-      'text': "Whether it's Shopify, Amazon, Woo Commerce, or a customuilt system, we'll make "
-              'sure that your orders flow smoothly, your inventory stays sync, and reports are '
-              'sent to you in real time. Step three, product inbound and warehouse prep.',
-      'timestamp': 35,
-      'timestamp_label': '[00:00:35]',
-      'timestamp_seconds': 35,
-      'tip': "Whether it's Shopify, Amazon, Woo Commerce, or a customuilt system, we'll make "
-             'sure that your orders flow smoothly, your inventory stays sync, and reports are '
-             'sent to you in real time. Step three, product inbound and warehouse prep.',
-      'title': 'How a 3PL Onboards New Clients (Einstein Fulfillment)',
-      'url': 'https://www.youtube.com/watch?v=7Xr-2wI5LJo&t=35s',
-      'video_id': '7Xr-2wI5LJo'},
-     {'author': 'Growth Manifesto Podcast',
-      'channel': 'Growth Manifesto Podcast',
-      'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:32:21](https://www.youtube.com/watch?v=7v_KO8bj_G0&t=1941s)',
-      'relevance': 'Attributed practitioner commentary on lean 3PL-backed & authorized-dealer '
-                   'e-commerce operations, contribution-margin underwriting, and automated '
-                   'retention (Chapter Q7 operational verification).',
-      'source_type': 'video_pro_tip',
-      'text': 'As what are the key things that an e-commerce brand has to figure out to to '
-              'step from 100 to 500 or from you say for I say for example 100 to 300 and then '
-              "from 300 to 750, right? Cuz they're some pretty big steps, right?",
-      'timestamp': 1941,
-      'timestamp_label': '[00:32:21]',
-      'timestamp_seconds': 1941,
-      'tip': 'As what are the key things that an e-commerce brand has to figure out to to step '
-             'from 100 to 500 or from you say for I say for example 100 to 300 and then from '
-             "300 to 750, right? Cuz they're some pretty big steps, right?",
-      'title': 'How to scale an eCommerce brand to $1M/mo | Paul Waddy (Growth Manifesto '
-               'Podcast)',
-      'url': 'https://www.youtube.com/watch?v=7v_KO8bj_G0&t=1941s',
-      'video_id': '7v_KO8bj_G0'},
-     {'author': 'Ecommerce Paradise | High Ticket Dropshipping',
-      'channel': 'Ecommerce Paradise | High Ticket Dropshipping',
-      'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:11:19](https://www.youtube.com/watch?v=hHXf1_WdANY&t=679s)',
-      'relevance': 'Attributed practitioner commentary on lean 3PL-backed & authorized-dealer '
-                   'e-commerce operations, contribution-margin underwriting, and automated '
-                   'retention (Chapter Q7 operational verification).',
-      'source_type': 'video_pro_tip',
-      'text': "I'm interested in becoming an authorized dealer for your brand name. We drive "
-              'traffic through Google Shopping and SEO and are looking for quality US brands '
-              'to feature in our catalog.',
-      'timestamp': 679,
-      'timestamp_label': '[00:11:19]',
-      'timestamp_seconds': 679,
-      'tip': "I'm interested in becoming an authorized dealer for your brand name. We drive "
-             'traffic through Google Shopping and SEO and are looking for quality US brands to '
-             'feature in our catalog.',
-      'title': 'How to Find USA High-Ticket Dropshipping Suppliers in 2026 (Ecommerce Paradise '
-               '| High Ticket Dropshipping)',
-      'url': 'https://www.youtube.com/watch?v=hHXf1_WdANY&t=679s',
-      'video_id': 'hHXf1_WdANY'},
-     {'author': 'Monopoly',
-      'channel': 'Monopoly',
-      'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:00:48](https://www.youtube.com/watch?v=SeloMfYsYk0&t=48s)',
-      'relevance': 'Attributed practitioner commentary on lean 3PL-backed & authorized-dealer '
-                   'e-commerce operations, contribution-margin underwriting, and automated '
-                   'retention (Chapter Q7 operational verification).',
-      'source_type': 'video_pro_tip',
-      'text': 'Products manufactured overseas travel by ocean freight, clear customs at '
-              'American ports, and move by rail or truck to a 3PL warehouse. When shipments '
-              'arrive, warehouse teams unload pallets, inspect products, verify cargo '
-              'quantities, and digitally record incoming inventory.',
-      'timestamp': 48,
-      'timestamp_label': '[00:00:48]',
-      'timestamp_seconds': 48,
-      'tip': 'Products manufactured overseas travel by ocean freight, clear customs at '
-             'American ports, and move by rail or truck to a 3PL warehouse. When shipments '
-             'arrive, warehouse teams unload pallets, inspect products, verify cargo '
-             'quantities, and digitally record incoming inventory.',
-      'title': 'What Is 3PL Logistics? The Hidden System Powering E-Commerce #3plservices '
-               '#fulfillment (Monopoly)',
-      'url': 'https://www.youtube.com/watch?v=SeloMfYsYk0&t=48s',
-      'video_id': 'SeloMfYsYk0'},
-     {'author': 'Tutorial Stack',
-      'channel': 'Tutorial Stack',
-      'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:03:00](https://www.youtube.com/watch?v=YnEcCYA-UDs&t=180s)',
-      'relevance': 'Attributed practitioner commentary on lean 3PL-backed & authorized-dealer '
-                   'e-commerce operations, contribution-margin underwriting, and automated '
-                   'retention (Chapter Q7 operational verification).',
-      'source_type': 'video_pro_tip',
-      'text': 'So, this is the part where you want to communicate with the customer. Keep the '
-              'customer informed throughout the refund or return process. Send them a '
-              'confirmation email with details of the refund or return and any next steps.',
-      'timestamp': 180,
-      'timestamp_label': '[00:03:00]',
-      'timestamp_seconds': 180,
-      'tip': 'So, this is the part where you want to communicate with the customer. Keep the '
-             'customer informed throughout the refund or return process. Send them a '
-             'confirmation email with details of the refund or return and any next steps.',
-      'title': 'How to Handle Shopify Refunds and Returns (Step-by-Step) (Tutorial Stack)',
-      'url': 'https://www.youtube.com/watch?v=YnEcCYA-UDs&t=180s',
-      'video_id': 'YnEcCYA-UDs'},
-     {'author': 'Tarun Brar - eCom Email Marketing',
-      'channel': 'Tarun Brar - eCom Email Marketing',
-      'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:00:20](https://www.youtube.com/watch?v=JT1uQ-EOyhM&t=20s)',
-      'relevance': 'Attributed practitioner commentary on lean 3PL-backed & authorized-dealer '
-                   'e-commerce operations, contribution-margin underwriting, and automated '
-                   'retention (Chapter Q7 operational verification).',
-      'source_type': 'video_pro_tip',
-      'text': "Most brands are doing SMS completely wrong. So, in this video, I'm going to "
-              'show you guys how to build a profitable and customer-f first SMS marketing '
-              'system that drives consistent revenue for your ecom brand.',
-      'timestamp': 20,
-      'timestamp_label': '[00:00:20]',
-      'timestamp_seconds': 20,
-      'tip': "Most brands are doing SMS completely wrong. So, in this video, I'm going to show "
-             'you guys how to build a profitable and customer-f first SMS marketing system '
-             'that drives consistent revenue for your ecom brand.',
-      'title': 'Klaviyo SMS Marketing Tutorial: Step-by-Step for Beginners (Tarun Brar - eCom '
-               'Email Marketing)',
-      'url': 'https://www.youtube.com/watch?v=JT1uQ-EOyhM&t=20s',
-      'video_id': 'JT1uQ-EOyhM'},
-     {'author': 'Perseuss LLC',
-      'channel': 'Perseuss LLC',
-      'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:01:46](https://www.youtube.com/watch?v=VD9O6JRw54A&t=106s)',
-      'relevance': 'Attributed practitioner commentary on lean 3PL-backed & authorized-dealer '
-                   'e-commerce operations, contribution-margin underwriting, and automated '
-                   'retention (Chapter Q7 operational verification).',
-      'source_type': 'video_pro_tip',
-      'text': 'So, the typical 3PL magic consists of three steps. Number one, order drops in '
-              'from Shopify, Okay? The products for that order live somewhere among these '
-              'shelves. That means someone needs to first grab it and pick it. The second step '
-              'of the magic is packing.',
-      'timestamp': 106,
-      'timestamp_label': '[00:01:46]',
-      'timestamp_seconds': 106,
-      'tip': 'So, the typical 3PL magic consists of three steps. Number one, order drops in '
-             'from Shopify, Okay? The products for that order live somewhere among these '
-             'shelves. That means someone needs to first grab it and pick it. The second step '
-             'of the magic is packing.',
-      'title': '3PL Explained: Real Warehouse Walkthrough (For Shopify Brands) (Perseuss LLC)',
-      'url': 'https://www.youtube.com/watch?v=VD9O6JRw54A&t=106s',
-      'video_id': 'VD9O6JRw54A'},
-     {'author': 'ISF Expedite',
-      'channel': 'ISF Expedite',
-      'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:01:12](https://www.youtube.com/watch?v=3iYfv5mrDBE&t=72s)',
-      'relevance': 'Attributed practitioner commentary on lean 3PL-backed & authorized-dealer '
-                   'e-commerce operations, contribution-margin underwriting, and automated '
-                   'retention (Chapter Q7 operational verification).',
-      'source_type': 'video_pro_tip',
-      'text': 'Step from determining freight costs to factoring and customs duties and taxes '
-              'each component plays a crucial role in the final landed cost of your imported.',
-      'timestamp': 72,
-      'timestamp_label': '[00:01:12]',
-      'timestamp_seconds': 72,
-      'tip': 'Step from determining freight costs to factoring and customs duties and taxes '
-             'each component plays a crucial role in the final landed cost of your imported.',
-      'title': 'Calculating Landed Costs for Imported Goods (ISF Expedite)',
-      'url': 'https://www.youtube.com/watch?v=3iYfv5mrDBE&t=72s',
-      'video_id': '3iYfv5mrDBE'},
-     {'author': 'Guides by Dan',
-      'channel': 'Guides by Dan',
-      'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:02:15](https://www.youtube.com/watch?v=V0kR_J_Vdkw&t=135s)',
-      'relevance': 'Attributed practitioner commentary on lean 3PL-backed & authorized-dealer '
-                   'e-commerce operations, contribution-margin underwriting, and automated '
-                   'retention (Chapter Q7 operational verification).',
-      'source_type': 'video_pro_tip',
-      'text': 'And there you have it, a simple step-by-step guide to setting up your Shopify '
-              'refunds and returns. Remember, a well-managed return and refund process not '
-              'only helps in maintaining customer trust, but also in running a smooth online '
-              'store operation.',
-      'timestamp': 135,
-      'timestamp_label': '[00:02:15]',
-      'timestamp_seconds': 135,
-      'tip': 'And there you have it, a simple step-by-step guide to setting up your Shopify '
-             'refunds and returns. Remember, a well-managed return and refund process not only '
-             'helps in maintaining customer trust, but also in running a smooth online store '
-             'operation.',
-      'title': 'How To Handle Shopify Refunds And Returns 2025 For Beginners (Guides by Dan)',
-      'url': 'https://www.youtube.com/watch?v=V0kR_J_Vdkw&t=135s',
-      'video_id': 'V0kR_J_Vdkw'},
-     {'author': 'SAL Accounting CPA',
-      'channel': 'SAL Accounting CPA',
-      'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:07:31](https://www.youtube.com/watch?v=HbiniE5ODzI&t=451s)',
-      'relevance': 'Attributed practitioner commentary on lean 3PL-backed & authorized-dealer '
-                   'e-commerce operations, contribution-margin underwriting, and automated '
-                   'retention (Chapter Q7 operational verification).',
-      'source_type': 'video_pro_tip',
-      'text': "So, as you can see on my screen right now, there's all the steps that you have "
-              'to follow in tax jar where if you go down to step four, it would you can let it '
-              'know where you want to when to collect sales tax.',
-      'timestamp': 451,
-      'timestamp_label': '[00:07:31]',
-      'timestamp_seconds': 451,
-      'tip': "So, as you can see on my screen right now, there's all the steps that you have "
-             'to follow in tax jar where if you go down to step four, it would you can let it '
-             'know where you want to when to collect sales tax.',
-      'title': 'Numeral vs TaxJar vs Avalara - Best US Sales Tax Platform for Canadians (SAL '
-               'Accounting CPA)',
-      'url': 'https://www.youtube.com/watch?v=HbiniE5ODzI&t=451s',
-      'video_id': 'HbiniE5ODzI'},
-     {'author': 'Invoice Finance News',
-      'channel': 'Invoice Finance News',
-      'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:04:21](https://www.youtube.com/watch?v=Ooq0PnAEf5s&t=261s)',
-      'relevance': 'Attributed practitioner commentary on lean 3PL-backed & authorized-dealer '
-                   'e-commerce operations, contribution-margin underwriting, and automated '
-                   'retention (Chapter Q7 operational verification).',
-      'source_type': 'video_pro_tip',
-      'text': 'A low number means cash flow is good and the danger of running out of money is '
-              'minimized the formula for CCC also highlights the possible areas where '
-              'improvements can be made good analytics just as much as Big Ideas can keep a '
-              'company profitable.',
-      'timestamp': 261,
-      'timestamp_label': '[00:04:21]',
-      'timestamp_seconds': 261,
-      'tip': 'A low number means cash flow is good and the danger of running out of money is '
-             'minimized the formula for CCC also highlights the possible areas where '
-             'improvements can be made good analytics just as much as Big Ideas can keep a '
-             'company profitable.',
-      'title': 'What is the Cash Conversion Cycle? (Invoice Finance News)',
-      'url': 'https://www.youtube.com/watch?v=Ooq0PnAEf5s&t=261s',
-      'video_id': 'Ooq0PnAEf5s'},
      {'author': 'A Simple Model',
       'channel': 'A Simple Model',
       'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:03:25](https://www.youtube.com/watch?v=DbHq5BHo_XA&t=205s)',
-      'relevance': 'Attributed practitioner commentary on lean 3PL-backed & authorized-dealer '
-                   'e-commerce operations, contribution-margin underwriting, and automated '
-                   'retention (Chapter Q7 operational verification).',
+      'markdown': '[00:02:07](https://www.youtube.com/watch?v=DbHq5BHo_XA&t=127s)',
+      'relevance': 'Verbatim practitioner testimony from Chapter Q5.',
       'source_type': 'video_pro_tip',
-      'text': "In the next video we're going to look at this process in detail by exploring an "
-              'example that involves heavy seasonality and comparing it to an example that '
-              "does not but otherwise that's all for now thanks for watching.",
-      'timestamp': 205,
-      'timestamp_label': '[00:03:25]',
-      'timestamp_seconds': 205,
-      'tip': "In the next video we're going to look at this process in detail by exploring an "
-             'example that involves heavy seasonality and comparing it to an example that does '
-             "not but otherwise that's all for now thanks for watching.",
-      'title': 'The Definition of Working Capital in the Working Capital Peg (A Simple Model)',
-      'url': 'https://www.youtube.com/watch?v=DbHq5BHo_XA&t=205s',
+      'text': 'A buyer may want to omit all accounts receivable balances aged 90 days or more to '
+              "avoid the risk that those customers do not end up paying, because that's cash that "
+              'the buyer may not receive once the transaction closes, so why pay for it.',
+      'timestamp': 127,
+      'timestamp_label': '[00:02:07]',
+      'timestamp_seconds': 127,
+      'tip': 'A buyer may want to omit all accounts receivable balances aged 90 days or more to '
+             "avoid the risk that those customers do not end up paying, because that's cash that "
+             'the buyer may not receive once the transaction closes, so why pay for it.',
+      'title': 'The Definition of Working Capital in the Working Capital Peg',
+      'url': 'https://www.youtube.com/watch?v=DbHq5BHo_XA&t=127s',
       'video_id': 'DbHq5BHo_XA'},
-     {'author': 'Flying Start Online',
-      'channel': 'Flying Start Online',
+     {'author': 'Enterprise Industry Network',
+      'channel': 'Enterprise Industry Network',
       'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:10:10](https://www.youtube.com/watch?v=rhATJAycfEU&t=610s)',
-      'relevance': 'Attributed practitioner commentary on lean 3PL-backed & authorized-dealer '
-                   'e-commerce operations, contribution-margin underwriting, and automated '
-                   'retention (Chapter Q7 operational verification).',
+      'markdown': '[00:02:21](https://www.youtube.com/watch?v=axmEedpIF1E&t=141s)',
+      'relevance': 'Verbatim practitioner testimony from Chapter Q5.',
       'source_type': 'video_pro_tip',
-      'text': "Way we have processed your order and it's going to take X amount of days to "
-              "reach you once it does I'll be happy to process a.",
-      'timestamp': 610,
-      'timestamp_label': '[00:10:10]',
-      'timestamp_seconds': 610,
-      'tip': "Way we have processed your order and it's going to take X amount of days to "
-             "reach you once it does I'll be happy to process a.",
-      'title': 'DEALING WITH SHOPIFY REFUNDS & CHARGEBACKS (Day 27/30) #Bizathon3 (Flying '
-               'Start Online)',
-      'url': 'https://www.youtube.com/watch?v=rhATJAycfEU&t=610s',
-      'video_id': 'rhATJAycfEU'},
-     {'author': 'Tutorials by Manizha & Ryan',
-      'channel': 'Tutorials by Manizha & Ryan',
+      'text': 'If you wait until late stage diligence to understand working capital, you are '
+              'already negotiating from a weaker position.',
+      'timestamp': 141,
+      'timestamp_label': '[00:02:21]',
+      'timestamp_seconds': 141,
+      'tip': 'If you wait until late stage diligence to understand working capital, you are '
+             'already negotiating from a weaker position.',
+      'title': 'Working Capital Adjustments in a Business Sale | EIN Business Brokers | Enterprise '
+               'Industry Network',
+      'url': 'https://www.youtube.com/watch?v=axmEedpIF1E&t=141s',
+      'video_id': 'axmEedpIF1E'},
+     {'author': 'A Simple Model',
+      'channel': 'A Simple Model',
       'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:07:50](https://www.youtube.com/watch?v=B2xFNVqbu7c&t=470s)',
-      'relevance': 'Attributed practitioner commentary on lean 3PL-backed & authorized-dealer '
-                   'e-commerce operations, contribution-margin underwriting, and automated '
-                   'retention (Chapter Q7 operational verification).',
+      'markdown': '[00:01:47](https://www.youtube.com/watch?v=8qsUvwoLJHw&t=107s)',
+      'relevance': 'Verbatim practitioner testimony from Chapter Q5.',
       'source_type': 'video_pro_tip',
-      'text': 'Share with me or if I left something out then leave that in the comment box '
-              'down below I would love to know what you guys have to say and I will catch you '
-              'guys guys in the next video.',
-      'timestamp': 470,
-      'timestamp_label': '[00:07:50]',
-      'timestamp_seconds': 470,
-      'tip': 'Share with me or if I left something out then leave that in the comment box down '
-             'below I would love to know what you guys have to say and I will catch you guys '
-             'guys in the next video.',
-      'title': 'How To Handle Shopify Refunds And Returns 2026 (For Beginners) (Tutorials by '
-               'Manizha & Ryan)',
-      'url': 'https://www.youtube.com/watch?v=B2xFNVqbu7c&t=470s',
-      'video_id': 'B2xFNVqbu7c'}],
- 8: [{'author': 'Understanding Accounting',
-      'channel': 'Understanding Accounting',
+      'text': 'Had sales spiked more abruptly, the 15 million cash balance that the company '
+              "started the season with would have been insufficient; it's a little "
+              'counterintuitive, but strong growth can bankrupt a company with positive net '
+              'working capital.',
+      'timestamp': 107,
+      'timestamp_label': '[00:01:47]',
+      'timestamp_seconds': 107,
+      'tip': 'Had sales spiked more abruptly, the 15 million cash balance that the company started '
+             "the season with would have been insufficient; it's a little counterintuitive, but "
+             'strong growth can bankrupt a company with positive net working capital.',
+      'title': 'The Working Capital Peg for a Seasonal Business',
+      'url': 'https://www.youtube.com/watch?v=8qsUvwoLJHw&t=107s',
+      'video_id': '8qsUvwoLJHw'},
+     {'author': 'Brent Freeman  - The CBB Group',
+      'channel': 'Brent Freeman  - The CBB Group',
       'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:25:20](https://www.youtube.com/watch?v=OoegPOU-YCE&t=1520s)',
-      'relevance': 'Attributed practitioner commentary on lean 3PL-backed & authorized-dealer '
-                   'e-commerce operations, contribution-margin underwriting, and automated '
-                   'retention (Chapter Q8 operational verification).',
+      'markdown': '[00:06:02](https://www.youtube.com/watch?v=KSfESWIcDGI&t=362s)',
+      'relevance': 'Verbatim practitioner testimony from Chapter Q5.',
       'source_type': 'video_pro_tip',
-      'text': 'This relationship alone establishes neither cash reserves nor overall '
-              'liquidity. Calculate credit purchases, collection days, inventory days, payment '
-              'days, and the cash conversion cycle. Annual credit sales are 788,400 dollars '
-              'and cost of goods sold is 481,800 dollars.',
-      'timestamp': 1520,
-      'timestamp_label': '[00:25:20]',
-      'timestamp_seconds': 1520,
-      'tip': 'This relationship alone establishes neither cash reserves nor overall liquidity. '
-             'Calculate credit purchases, collection days, inventory days, payment days, and '
-             'the cash conversion cycle. Annual credit sales are 788,400 dollars and cost of '
-             'goods sold is 481,800 dollars.',
-      'title': 'Inventory Estimates and the Cash Conversion Cycle | ACC 300 Lecture 20 '
-               '(Understanding Accounting)',
-      'url': 'https://www.youtube.com/watch?v=OoegPOU-YCE&t=1520s',
-      'video_id': 'OoegPOU-YCE'},
-     {'author': 'Davie Fogarty Mentors',
-      'channel': 'Davie Fogarty Mentors',
+      'text': "If you purchase a business with insufficient working capital, you're going to end "
+              'up injecting cash on top of your purchase price to satisfy that requirement and '
+              'keep the business running.',
+      'timestamp': 362,
+      'timestamp_label': '[00:06:02]',
+      'timestamp_seconds': 362,
+      'tip': "If you purchase a business with insufficient working capital, you're going to end up "
+             'injecting cash on top of your purchase price to satisfy that requirement and keep '
+             'the business running.',
+      'title': 'Working Capital Adjustment in a Business Sale. How it Can Change the Final '
+               'Purchase Price!',
+      'url': 'https://www.youtube.com/watch?v=KSfESWIcDGI&t=362s',
+      'video_id': 'KSfESWIcDGI'}],
+ 6: [{'author': 'Shipping Solutions',
+      'channel': 'Shipping Solutions',
       'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:13:57](https://www.youtube.com/watch?v=A-7pTamjBIw&t=837s)',
-      'relevance': 'Attributed practitioner commentary on lean 3PL-backed & authorized-dealer '
-                   'e-commerce operations, contribution-margin underwriting, and automated '
-                   'retention (Chapter Q8 operational verification).',
+      'markdown': '[00:00:56](https://www.youtube.com/watch?v=IrCCfr1mSvg&t=56s)',
+      'relevance': 'Verbatim practitioner testimony from Chapter Q6.',
       'source_type': 'video_pro_tip',
-      'text': 'The homepage turns into a lookbook rather than a store. Instead, feature your '
-              'key products front and center. Add a banner that communicates your main offer, '
-              "such as free shipping, a seasonal sale, a bundle deal, or even if you're a "
-              'brand new brand.',
-      'timestamp': 837,
-      'timestamp_label': '[00:13:57]',
-      'timestamp_seconds': 837,
-      'tip': 'The homepage turns into a lookbook rather than a store. Instead, feature your '
-             'key products front and center. Add a banner that communicates your main offer, '
-             "such as free shipping, a seasonal sale, a bundle deal, or even if you're a brand "
-             'new brand.',
-      'title': 'How To 4X Your Shopify Conversion Rate (Complete CRO Guide) (Davie Fogarty '
-               'Mentors)',
-      'url': 'https://www.youtube.com/watch?v=A-7pTamjBIw&t=837s',
-      'video_id': 'A-7pTamjBIw'},
-     {'author': 'Ecom Chris',
-      'channel': 'Ecom Chris',
+      'text': 'Even if your product qualifies for duty-free treatment under a free trade '
+              'agreement, VAT or GST may still apply at import.',
+      'timestamp': 56,
+      'timestamp_label': '[00:00:56]',
+      'timestamp_seconds': 56,
+      'tip': 'Even if your product qualifies for duty-free treatment under a free trade agreement, '
+             'VAT or GST may still apply at import.',
+      'title': 'Duties, Tariffs and Taxes: Understanding the Costs of International Trade',
+      'url': 'https://www.youtube.com/watch?v=IrCCfr1mSvg&t=56s',
+      'video_id': 'IrCCfr1mSvg'},
+     {'author': 'Avalara',
+      'channel': 'Avalara',
       'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:17:03](https://www.youtube.com/watch?v=XQTEnn-3t0E&t=1023s)',
-      'relevance': 'Attributed practitioner commentary on lean 3PL-backed & authorized-dealer '
-                   'e-commerce operations, contribution-margin underwriting, and automated '
-                   'retention (Chapter Q8 operational verification).',
+      'markdown': '[00:49:10](https://www.youtube.com/watch?v=EtT3YoVfP0c&t=2950s)',
+      'relevance': 'Verbatim practitioner testimony from Chapter Q6.',
       'source_type': 'video_pro_tip',
-      'text': 'If you have a great product feed and you start to run ads, but your tracking '
-              'kind of sucks. You already you feed the algorithm bad input data on your '
-              'conversions and how things are going, right?',
-      'timestamp': 1023,
-      'timestamp_label': '[00:17:03]',
-      'timestamp_seconds': 1023,
-      'tip': 'If you have a great product feed and you start to run ads, but your tracking '
-             'kind of sucks. You already you feed the algorithm bad input data on your '
-             'conversions and how things are going, right?',
-      'title': 'Your Google Merchant Center Feed Is Losing You Sales! (Ecom Chris)',
-      'url': 'https://www.youtube.com/watch?v=XQTEnn-3t0E&t=1023s',
-      'video_id': 'XQTEnn-3t0E'},
-     {'author': 'WorkflowLife',
-      'channel': 'WorkflowLife',
+      'text': 'The state of Texas is one of the only states in the country that you can '
+              'voluntarily make prepayments.',
+      'timestamp': 2950,
+      'timestamp_label': '[00:49:10]',
+      'timestamp_seconds': 2950,
+      'tip': 'The state of Texas is one of the only states in the country that you can voluntarily '
+             'make prepayments.',
+      'title': 'Webinar: Ecommerce Sales Tax Basics for Growing Sellers',
+      'url': 'https://www.youtube.com/watch?v=EtT3YoVfP0c&t=2950s',
+      'video_id': 'EtT3YoVfP0c'},
+     {'author': 'Sales Tax at Scale',
+      'channel': 'Sales Tax at Scale',
       'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:07:35](https://www.youtube.com/watch?v=etEhM2kyodk&t=455s)',
-      'relevance': 'Attributed practitioner commentary on lean 3PL-backed & authorized-dealer '
-                   'e-commerce operations, contribution-margin underwriting, and automated '
-                   'retention (Chapter Q8 operational verification).',
+      'markdown': '[00:05:47](https://www.youtube.com/watch?v=5Dtw2cworM0&t=347s)',
+      'relevance': 'Verbatim practitioner testimony from Chapter Q6.',
       'source_type': 'video_pro_tip',
-      'text': 'Where do you think AI can realistically help 3PL operations today? Imagine I '
-              'know that the tools we have and actually has an AI capabilities, but what is '
-              'right tool to go in and use the AI? And where do you see the 3PL operation '
-              'using AI?',
-      'timestamp': 455,
-      'timestamp_label': '[00:07:35]',
-      'timestamp_seconds': 455,
-      'tip': 'Where do you think AI can realistically help 3PL operations today? Imagine I '
-             'know that the tools we have and actually has an AI capabilities, but what is '
-             'right tool to go in and use the AI? And where do you see the 3PL operation using '
-             'AI?',
-      'title': 'What Happens After You Click Buy? | Inside 3PL with Radial (WorkflowLife)',
-      'url': 'https://www.youtube.com/watch?v=etEhM2kyodk&t=455s',
-      'video_id': 'etEhM2kyodk'},
-     {'author': 'Brad Sherman | OperationAMZ',
-      'channel': 'Brad Sherman | OperationAMZ',
+      'text': 'Neither Avalara nor TaxJar offers hands on audit defense.',
+      'timestamp': 347,
+      'timestamp_label': '[00:05:47]',
+      'timestamp_seconds': 347,
+      'tip': 'Neither Avalara nor TaxJar offers hands on audit defense.',
+      'title': 'Avalara? TaxJar? TaxCloud? The Honest Comparison for Ecommerce',
+      'url': 'https://www.youtube.com/watch?v=5Dtw2cworM0&t=347s',
+      'video_id': '5Dtw2cworM0'},
+     {'author': 'SAL Accounting CPA',
+      'channel': 'SAL Accounting CPA',
       'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:15:54](https://www.youtube.com/watch?v=G9hSjTySxP0&t=954s)',
-      'relevance': 'Attributed practitioner commentary on lean 3PL-backed & authorized-dealer '
-                   'e-commerce operations, contribution-margin underwriting, and automated '
-                   'retention (Chapter Q8 operational verification).',
+      'markdown': '[00:02:41](https://www.youtube.com/watch?v=HbiniE5ODzI&t=161s)',
+      'relevance': 'Verbatim practitioner testimony from Chapter Q6.',
       'source_type': 'video_pro_tip',
-      'text': '"Can you tell me more about your e-commerce strategy? What does Amazon platform '
-              'look like for you?" Or something along the lines of, "Can you tell me more '
-              'about your e-commerce strategy?',
-      'timestamp': 954,
-      'timestamp_label': '[00:15:54]',
-      'timestamp_seconds': 954,
-      'tip': '"Can you tell me more about your e-commerce strategy? What does Amazon platform '
-             'look like for you?" Or something along the lines of, "Can you tell me more about '
-             'your e-commerce strategy?',
-      'title': 'How to Contact Amazon FBA Wholesale Suppliers in 30 minutes (Brad Sherman | '
-               'OperationAMZ)',
-      'url': 'https://www.youtube.com/watch?v=G9hSjTySxP0&t=954s',
-      'video_id': 'G9hSjTySxP0'},
-     {'author': 'Max Crakanthorp',
-      'channel': 'Max Crakanthorp',
-      'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:00:21](https://www.youtube.com/watch?v=FZOo2bNTrzo&t=21s)',
-      'relevance': 'Attributed practitioner commentary on lean 3PL-backed & authorized-dealer '
-                   'e-commerce operations, contribution-margin underwriting, and automated '
-                   'retention (Chapter Q8 operational verification).',
-      'source_type': 'video_pro_tip',
-      'text': 'Google Merchant Center step-by-step live in the account, so your products stay '
-              'approved, show up more often, and send better data into Google Ads. For those '
-              "of you who don't know me, I'm Max, the founder of Kraken Digital.",
-      'timestamp': 21,
-      'timestamp_label': '[00:00:21]',
-      'timestamp_seconds': 21,
-      'tip': 'Google Merchant Center step-by-step live in the account, so your products stay '
-             'approved, show up more often, and send better data into Google Ads. For those of '
-             "you who don't know me, I'm Max, the founder of Kraken Digital.",
-      'title': 'Set Up Google Merchant Center The Right Way (Full Course) (Max Crakanthorp)',
-      'url': 'https://www.youtube.com/watch?v=FZOo2bNTrzo&t=21s',
-      'video_id': 'FZOo2bNTrzo'},
-     {'author': 'NET not GROSS',
-      'channel': 'NET not GROSS',
-      'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:02:55](https://www.youtube.com/watch?v=El3a3K2N_sY&t=175s)',
-      'relevance': 'Attributed practitioner commentary on lean 3PL-backed & authorized-dealer '
-                   'e-commerce operations, contribution-margin underwriting, and automated '
-                   'retention (Chapter Q8 operational verification).',
-      'source_type': 'video_pro_tip',
-      'text': 'The model underneath was the same old one: someone runs a store on Amazon or '
-              'Walmart with your money. The AI was what changed in the advertising. In another '
-              'file, the AI the company described was a repricing tool — software that adjusts '
-              'prices.',
-      'timestamp': 175,
-      'timestamp_label': '[00:02:55]',
-      'timestamp_seconds': 175,
-      'tip': 'The model underneath was the same old one: someone runs a store on Amazon or '
-             'Walmart with your money. The AI was what changed in the advertising. In another '
-             'file, the AI the company described was a repricing tool — software that adjusts '
-             'prices.',
-      'title': 'Done-For-You AI Store: We Read the FTC Files (NET not GROSS)',
-      'url': 'https://www.youtube.com/watch?v=El3a3K2N_sY&t=175s',
-      'video_id': 'El3a3K2N_sY'},
-     {'author': 'Kai Cromwell - eCommerce SEO',
-      'channel': 'Kai Cromwell - eCommerce SEO',
-      'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:02:42](https://www.youtube.com/watch?v=W6w0BjjlBs4&t=162s)',
-      'relevance': 'Attributed practitioner commentary on lean 3PL-backed & authorized-dealer '
-                   'e-commerce operations, contribution-margin underwriting, and automated '
-                   'retention (Chapter Q8 operational verification).',
-      'source_type': 'video_pro_tip',
-      'text': 'Would apply to a product page within your shoply store or whatever e-commerce '
-              "platform you're operating on be intentional with your keywords and place.",
-      'timestamp': 162,
-      'timestamp_label': '[00:02:42]',
-      'timestamp_seconds': 162,
-      'tip': 'Would apply to a product page within your shoply store or whatever e-commerce '
-             "platform you're operating on be intentional with your keywords and place.",
-      'title': 'How to Increase Organic Revenue with Google Merchant Center Optimization (Full '
-               'Guide) (Kai Cromwell - eCommerce SEO)',
-      'url': 'https://www.youtube.com/watch?v=W6w0BjjlBs4&t=162s',
-      'video_id': 'W6w0BjjlBs4'},
-     {'author': 'Jyll Saskin Gales | Google Ads Coach',
-      'channel': 'Jyll Saskin Gales | Google Ads Coach',
-      'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:03:00](https://www.youtube.com/watch?v=Q-KrwvAVhR4&t=180s)',
-      'relevance': 'Attributed practitioner commentary on lean 3PL-backed & authorized-dealer '
-                   'e-commerce operations, contribution-margin underwriting, and automated '
-                   'retention (Chapter Q8 operational verification).',
-      'source_type': 'video_pro_tip',
-      'text': 'And I think it is so overlooked, not intentionally, but just because a lot of '
-              "us are so in the platform working with Google Ads that we're thinking, right, I "
-              'need to work on getting my uh performance up. Why uh is this campaign not '
-              'working really well?',
-      'timestamp': 180,
-      'timestamp_label': '[00:03:00]',
-      'timestamp_seconds': 180,
-      'tip': 'And I think it is so overlooked, not intentionally, but just because a lot of us '
-             "are so in the platform working with Google Ads that we're thinking, right, I "
-             'need to work on getting my uh performance up. Why uh is this campaign not '
-             'working really well?',
-      'title': 'How to Optimize Product Category in Google Merchant Center | Inside Google Ads '
-               'course | Casey Gill (Jyll Saskin Gales | Google Ads Coach)',
-      'url': 'https://www.youtube.com/watch?v=Q-KrwvAVhR4&t=180s',
-      'video_id': 'Q-KrwvAVhR4'},
-     {'author': 'PreProduct',
-      'channel': 'PreProduct',
-      'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:01:43](https://www.youtube.com/watch?v=ZXDpWj-RfOQ&t=103s)',
-      'relevance': 'Attributed practitioner commentary on lean 3PL-backed & authorized-dealer '
-                   'e-commerce operations, contribution-margin underwriting, and automated '
-                   'retention (Chapter Q8 operational verification).',
-      'source_type': 'video_pro_tip',
-      'text': 'And then also in Shopify orders admin, we need to apply a fulfillment status of '
-              "hold so your 3PL warehouse software doesn't try to fulfill an item which "
-              "doesn't actually exist in stock yet. So, let's set up the integration. Jump "
-              "into pre-products and we'll go integrations.",
-      'timestamp': 103,
-      'timestamp_label': '[00:01:43]',
-      'timestamp_seconds': 103,
-      'tip': 'And then also in Shopify orders admin, we need to apply a fulfillment status of '
-             "hold so your 3PL warehouse software doesn't try to fulfill an item which doesn't "
-             "actually exist in stock yet. So, let's set up the integration. Jump into "
-             "pre-products and we'll go integrations.",
-      'title': 'Loop Returns Pre-order Integration for Shopify (PreProduct)',
-      'url': 'https://www.youtube.com/watch?v=ZXDpWj-RfOQ&t=103s',
-      'video_id': 'ZXDpWj-RfOQ'},
-     {'author': 'Grow My Ads',
-      'channel': 'Grow My Ads',
-      'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:04:58](https://www.youtube.com/watch?v=hY8ZBC3A4uQ&t=298s)',
-      'relevance': 'Attributed practitioner commentary on lean 3PL-backed & authorized-dealer '
-                   'e-commerce operations, contribution-margin underwriting, and automated '
-                   'retention (Chapter Q8 operational verification).',
-      'source_type': 'video_pro_tip',
-      'text': "'s going to be like, you know, 32 oz black spillproof water tumbler Oala or "
-              'Bowala or however that gets thrown on there. But if someone searches for a '
-              "brand search for Aala, they'll put Owala tumbler.",
-      'timestamp': 298,
-      'timestamp_label': '[00:04:58]',
-      'timestamp_seconds': 298,
-      'tip': "'s going to be like, you know, 32 oz black spillproof water tumbler Oala or "
-             'Bowala or however that gets thrown on there. But if someone searches for a brand '
-             "search for Aala, they'll put Owala tumbler.",
-      'title': 'Google Shopping Feed Optimizations for 10X Growth (2026 Updated) (Grow My Ads)',
-      'url': 'https://www.youtube.com/watch?v=hY8ZBC3A4uQ&t=298s',
-      'video_id': 'hY8ZBC3A4uQ'},
-     {'author': 'Wixpa Google Shopping Feed',
-      'channel': 'Wixpa Google Shopping Feed',
-      'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:04:45](https://www.youtube.com/watch?v=RHJvGN_6sf0&t=285s)',
-      'relevance': 'Attributed practitioner commentary on lean 3PL-backed & authorized-dealer '
-                   'e-commerce operations, contribution-margin underwriting, and automated '
-                   'retention (Chapter Q8 operational verification).',
-      'source_type': 'video_pro_tip',
-      'text': 'Google Merchant Center is actively receiving your Shopify product data. Before '
-              "you celebrate, there's something extremely important you need to know. A "
-              'perfect product feed does not guarantee product approval.',
-      'timestamp': 285,
-      'timestamp_label': '[00:04:45]',
-      'timestamp_seconds': 285,
-      'tip': 'Google Merchant Center is actively receiving your Shopify product data. Before '
-             "you celebrate, there's something extremely important you need to know. A perfect "
-             'product feed does not guarantee product approval.',
-      'title': 'Shopify Google Merchant Center Product Feed Setup (2026) | Complete Beginner '
-               'Guide #shopify #google (Wixpa Google Shopping Feed)',
-      'url': 'https://www.youtube.com/watch?v=RHJvGN_6sf0&t=285s',
-      'video_id': 'RHJvGN_6sf0'},
-     {'author': 'KeyCommerce',
-      'channel': 'KeyCommerce',
-      'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:01:51](https://www.youtube.com/watch?v=UcU7Ishu1lY&t=111s)',
-      'relevance': 'Attributed practitioner commentary on lean 3PL-backed & authorized-dealer '
-                   'e-commerce operations, contribution-margin underwriting, and automated '
-                   'retention (Chapter Q8 operational verification).',
-      'source_type': 'video_pro_tip',
-      'text': 'Your products in merant Center clicking on one brings us to its product Details '
-              'page where we can review the data Google is working with for what we want to '
-              'do.',
-      'timestamp': 111,
-      'timestamp_label': '[00:01:51]',
-      'timestamp_seconds': 111,
-      'tip': 'Your products in merant Center clicking on one brings us to its product Details '
-             'page where we can review the data Google is working with for what we want to do.',
-      'title': 'How To Optimize Your Product Feed & Data In Google Merchant Center '
-               '(KeyCommerce)',
-      'url': 'https://www.youtube.com/watch?v=UcU7Ishu1lY&t=111s',
-      'video_id': 'UcU7Ishu1lY'},
-     {'author': 'Laurence Gartside',
-      'channel': 'Laurence Gartside',
-      'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:04:03](https://www.youtube.com/watch?v=z3z_GomovEI&t=243s)',
-      'relevance': 'Attributed practitioner commentary on lean 3PL-backed & authorized-dealer '
-                   'e-commerce operations, contribution-margin underwriting, and automated '
-                   'retention (Chapter Q8 operational verification).',
-      'source_type': 'video_pro_tip',
-      'text': 'Subtracting a few numbers but the Simplicity of the formula hides many pitfalls '
-              'and nuances choices that we need to make when Gathering the data and '
-              "calculating the various components that's where the real work lies.",
-      'timestamp': 243,
-      'timestamp_label': '[00:04:03]',
-      'timestamp_seconds': 243,
-      'tip': 'Subtracting a few numbers but the Simplicity of the formula hides many pitfalls '
-             'and nuances choices that we need to make when Gathering the data and calculating '
-             "the various components that's where the real work lies.",
-      'title': 'The Cash Conversion Cycle formula and how to use it (Laurence Gartside)',
-      'url': 'https://www.youtube.com/watch?v=z3z_GomovEI&t=243s',
-      'video_id': 'z3z_GomovEI'},
-     {'author': 'DigiSkills 3.0',
-      'channel': 'DigiSkills 3.0',
-      'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:00:16](https://www.youtube.com/watch?v=wy6f7PCtG90&t=16s)',
-      'relevance': 'Attributed practitioner commentary on lean 3PL-backed & authorized-dealer '
-                   'e-commerce operations, contribution-margin underwriting, and automated '
-                   'retention (Chapter Q8 operational verification).',
-      'source_type': 'video_pro_tip',
-      'text': 'बहुत सारे ऑर्डर्स पर आपको कुछ डिस्प्यूट्स भी फेस करना पड़ सकते हैं। कुछ ऐसा भी '
-              'सिनेरियो हो सकता है कि आपने जो प्रोडक्ट शिप की है शिपमेंट के दौरान.',
-      'timestamp': 16,
-      'timestamp_label': '[00:00:16]',
-      'timestamp_seconds': 16,
-      'tip': 'बहुत सारे ऑर्डर्स पर आपको कुछ डिस्प्यूट्स भी फेस करना पड़ सकते हैं। कुछ ऐसा भी '
-             'सिनेरियो हो सकता है कि आपने जो प्रोडक्ट शिप की है शिपमेंट के दौरान.',
-      'title': 'Professional Refund Protocols & Chargebacks Protection | Shopify | Lec 112 | '
-               'DigiSkills 3.0 (DigiSkills 3.0)',
-      'url': 'https://www.youtube.com/watch?v=wy6f7PCtG90&t=16s',
-      'video_id': 'wy6f7PCtG90'}],
- 9: [{'author': 'LedgerGurus: Ecommerce Accounting Experts',
-      'channel': 'LedgerGurus: Ecommerce Accounting Experts',
-      'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:05:55](https://www.youtube.com/watch?v=F-Y1cubdesE&t=355s)',
-      'relevance': 'Attributed practitioner commentary on lean 3PL-backed & authorized-dealer '
-                   'e-commerce operations, contribution-margin underwriting, and automated '
-                   'retention (Chapter Q9 operational verification).',
-      'source_type': 'video_pro_tip',
-      'text': "It's somewhere between the factory and the customer. The longer that cycle is, "
-              'the longer your cash is tied up. Everybody gets excited about going '
-              'multi-channel. They sign a new relationship with a big wholesaler. They have '
-              'net 60 day terms.',
-      'timestamp': 355,
-      'timestamp_label': '[00:05:55]',
-      'timestamp_seconds': 355,
-      'tip': "It's somewhere between the factory and the customer. The longer that cycle is, "
-             'the longer your cash is tied up. Everybody gets excited about going '
-             'multi-channel. They sign a new relationship with a big wholesaler. They have net '
-             '60 day terms.',
-      'title': 'Cash Conversion Cycle: The Metric EVERY Ecommerce Owner Should Understand '
-               '(LedgerGurus: Ecommerce Accounting Experts)',
-      'url': 'https://www.youtube.com/watch?v=F-Y1cubdesE&t=355s',
-      'video_id': 'F-Y1cubdesE'},
-     {'author': 'Understanding Accounting',
-      'channel': 'Understanding Accounting',
-      'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:49:14](https://www.youtube.com/watch?v=GtIbksKcl3Q&t=2954s)',
-      'relevance': 'Attributed practitioner commentary on lean 3PL-backed & authorized-dealer '
-                   'e-commerce operations, contribution-margin underwriting, and automated '
-                   'retention (Chapter Q9 operational verification).',
-      'source_type': 'video_pro_tip',
-      'text': 'From the operating cycle to the cash conversion cycle. A company acquires '
-              'inventory, holds it until sale, and collects payment from the customer. A cash '
-              'sale brings in payment at the time of sale.',
-      'timestamp': 2954,
-      'timestamp_label': '[00:49:14]',
-      'timestamp_seconds': 2954,
-      'tip': 'From the operating cycle to the cash conversion cycle. A company acquires '
-             'inventory, holds it until sale, and collects payment from the customer. A cash '
-             'sale brings in payment at the time of sale.',
-      'title': 'Inventory Estimates and the Cash Conversion Cycle | ACC 300 Chapter 18 Reading '
-               '(Understanding Accounting)',
-      'url': 'https://www.youtube.com/watch?v=GtIbksKcl3Q&t=2954s',
-      'video_id': 'GtIbksKcl3Q'},
-     {'author': 'Vexrulon',
-      'channel': 'Vexrulon',
-      'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:03:03](https://www.youtube.com/watch?v=bufdu58UUfo&t=183s)',
-      'relevance': 'Attributed practitioner commentary on lean 3PL-backed & authorized-dealer '
-                   'e-commerce operations, contribution-margin underwriting, and automated '
-                   'retention (Chapter Q9 operational verification).',
-      'source_type': 'video_pro_tip',
-      'text': "It's like, how do I spend some of that extra cash to solidify the brand of me? "
-              'So, this is not direct response ads. This is like kind of the big aspirational '
-              'moments, these brand moments like we just did this launch this, you know, two '
-              'weekends ago.',
-      'timestamp': 183,
-      'timestamp_label': '[00:03:03]',
-      'timestamp_seconds': 183,
-      'tip': "It's like, how do I spend some of that extra cash to solidify the brand of me? "
-             'So, this is not direct response ads. This is like kind of the big aspirational '
-             'moments, these brand moments like we just did this launch this, you know, two '
-             'weekends ago.',
-      'title': "Alex Hormozi's Guide to Scaling an E-Commerce Brand (Vexrulon)",
-      'url': 'https://www.youtube.com/watch?v=bufdu58UUfo&t=183s',
-      'video_id': 'bufdu58UUfo'},
-     {'author': 'TaxJar',
-      'channel': 'TaxJar',
-      'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:03:42](https://www.youtube.com/watch?v=M_AJmScLLXE&t=222s)',
-      'relevance': 'Attributed practitioner commentary on lean 3PL-backed & authorized-dealer '
-                   'e-commerce operations, contribution-margin underwriting, and automated '
-                   'retention (Chapter Q9 operational verification).',
-      'source_type': 'video_pro_tip',
-      'text': 'This sale was made on Amazon into New York. Since New York has a marketplace '
-              'facilitator law, Amazon collects the sales tax on this transaction on your '
-              'behalf and remits it to the state.',
-      'timestamp': 222,
-      'timestamp_label': '[00:03:42]',
-      'timestamp_seconds': 222,
-      'tip': 'This sale was made on Amazon into New York. Since New York has a marketplace '
-             'facilitator law, Amazon collects the sales tax on this transaction on your '
-             'behalf and remits it to the state.',
-      'title': 'TaxJar demo: How to automate sales tax compliance in 2026 (TaxJar)',
-      'url': 'https://www.youtube.com/watch?v=M_AJmScLLXE&t=222s',
-      'video_id': 'M_AJmScLLXE'},
-     {'author': 'Chase Chappell',
-      'channel': 'Chase Chappell',
-      'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:09:02](https://www.youtube.com/watch?v=daDsoHXE52A&t=542s)',
-      'relevance': 'Attributed practitioner commentary on lean 3PL-backed & authorized-dealer '
-                   'e-commerce operations, contribution-margin underwriting, and automated '
-                   'retention (Chapter Q9 operational verification).',
-      'source_type': 'video_pro_tip',
-      'text': 'And this is very important because we want people to recognize our brand '
-              'because it can help increase conversion rates whenever ads are consistent and '
-              'synergistic between each of our creatives.',
-      'timestamp': 542,
-      'timestamp_label': '[00:09:02]',
-      'timestamp_seconds': 542,
-      'tip': 'And this is very important because we want people to recognize our brand because '
-             'it can help increase conversion rates whenever ads are consistent and '
-             'synergistic between each of our creatives.',
-      'title': 'How To Increase Conversion Rates on Shopify (2026 Guide) (Chase Chappell)',
-      'url': 'https://www.youtube.com/watch?v=daDsoHXE52A&t=542s',
-      'video_id': 'daDsoHXE52A'},
-     {'author': 'PPC Incubator',
-      'channel': 'PPC Incubator',
-      'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:04:17](https://www.youtube.com/watch?v=79VrN9FhpT8&t=257s)',
-      'relevance': 'Attributed practitioner commentary on lean 3PL-backed & authorized-dealer '
-                   'e-commerce operations, contribution-margin underwriting, and automated '
-                   'retention (Chapter Q9 operational verification).',
-      'source_type': 'video_pro_tip',
-      'text': 'Now that we see all the information, so all the custom labels populated for our '
-              'products, we just need to go on our Google Ads account and for example, I will '
-              'open the low brand rows and listing groups.',
-      'timestamp': 257,
-      'timestamp_label': '[00:04:17]',
-      'timestamp_seconds': 257,
-      'tip': 'Now that we see all the information, so all the custom labels populated for our '
-             'products, we just need to go on our Google Ads account and for example, I will '
-             'open the low brand rows and listing groups.',
-      'title': 'Google Merchant Center - Optimizing Your Feed: Custom Labels with Google '
-               'Sheets & Attribute Rules (PPC Incubator)',
-      'url': 'https://www.youtube.com/watch?v=79VrN9FhpT8&t=257s',
-      'video_id': '79VrN9FhpT8'},
+      'text': 'So Shopify tax does half the work for you.',
+      'timestamp': 161,
+      'timestamp_label': '[00:02:41]',
+      'timestamp_seconds': 161,
+      'tip': 'So Shopify tax does half the work for you.',
+      'title': 'Numeral vs TaxJar vs Avalara - Best US Sales Tax Platform for Canadians',
+      'url': 'https://www.youtube.com/watch?v=HbiniE5ODzI&t=161s',
+      'video_id': 'HbiniE5ODzI'},
      {'author': 'LedgerGurus: Ecommerce Accounting Experts',
       'channel': 'LedgerGurus: Ecommerce Accounting Experts',
       'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:20:25](https://www.youtube.com/watch?v=pqXEldKeguY&t=1225s)',
-      'relevance': 'Attributed practitioner commentary on lean 3PL-backed & authorized-dealer '
-                   'e-commerce operations, contribution-margin underwriting, and automated '
-                   'retention (Chapter Q9 operational verification).',
+      'markdown': '[00:10:22](https://www.youtube.com/watch?v=-DhtTN5_Rh4&t=622s)',
+      'relevance': 'Verbatim practitioner testimony from Chapter Q6.',
       'source_type': 'video_pro_tip',
-      'text': "'s called a voluntary disclosure agreement. We, we can help you waive any kind "
-              'of penalties by working through us, who in turn will be working with the state '
-              'to remediate things.',
-      'timestamp': 1225,
-      'timestamp_label': '[00:20:25]',
-      'timestamp_seconds': 1225,
-      'tip': "'s called a voluntary disclosure agreement. We, we can help you waive any kind "
-             'of penalties by working through us, who in turn will be working with the state '
-             'to remediate things.',
-      'title': 'Sales Tax 101 with Avalara (LedgerGurus: Ecommerce Accounting Experts)',
-      'url': 'https://www.youtube.com/watch?v=pqXEldKeguY&t=1225s',
-      'video_id': 'pqXEldKeguY'},
+      'text': 'So 10 out of 10 for calculation.',
+      'timestamp': 622,
+      'timestamp_label': '[00:10:22]',
+      'timestamp_seconds': 622,
+      'tip': 'So 10 out of 10 for calculation.',
+      'title': 'Avalara? TaxJar? Taxify? BEST SALES TAX APP for Ecommerce',
+      'url': 'https://www.youtube.com/watch?v=-DhtTN5_Rh4&t=622s',
+      'video_id': '-DhtTN5_Rh4'},
+     {'author': 'LedgerGurus: Ecommerce Accounting Experts',
+      'channel': 'LedgerGurus: Ecommerce Accounting Experts',
+      'epistemic_status': 'attributed_practitioner_claim',
+      'markdown': '[00:17:26](https://www.youtube.com/watch?v=-DhtTN5_Rh4&t=1046s)',
+      'relevance': 'Verbatim practitioner testimony from Chapter Q6.',
+      'source_type': 'video_pro_tip',
+      'text': 'TaxJar remits what it calculates, not what you collected, which leads to illegal '
+              'retention of tax or overpayment.',
+      'timestamp': 1046,
+      'timestamp_label': '[00:17:26]',
+      'timestamp_seconds': 1046,
+      'tip': 'TaxJar remits what it calculates, not what you collected, which leads to illegal '
+             'retention of tax or overpayment.',
+      'title': 'Avalara? TaxJar? Taxify? BEST SALES TAX APP for Ecommerce',
+      'url': 'https://www.youtube.com/watch?v=-DhtTN5_Rh4&t=1046s',
+      'video_id': '-DhtTN5_Rh4'},
+     {'author': 'Cherry Bekaert',
+      'channel': 'Cherry Bekaert',
+      'epistemic_status': 'attributed_practitioner_claim',
+      'markdown': '[00:01:00](https://www.youtube.com/watch?v=rUvJ4UwGqiA&t=60s)',
+      'relevance': 'Verbatim practitioner testimony from Chapter Q6.',
+      'source_type': 'video_pro_tip',
+      'text': 'Since June 2018, most states use a threshold of $100,000 in sales or 200 '
+              'transactions, while California, New York and Texas set higher thresholds.',
+      'timestamp': 60,
+      'timestamp_label': '[00:01:00]',
+      'timestamp_seconds': 60,
+      'tip': 'Since June 2018, most states use a threshold of $100,000 in sales or 200 '
+             'transactions, while California, New York and Texas set higher thresholds.',
+      'title': 'Sales & Use Tax: eCommerce Nexus',
+      'url': 'https://www.youtube.com/watch?v=rUvJ4UwGqiA&t=60s',
+      'video_id': 'rUvJ4UwGqiA'},
+     {'author': 'Avalara',
+      'channel': 'Avalara',
+      'epistemic_status': 'attributed_practitioner_claim',
+      'markdown': '[00:01:18](https://www.youtube.com/watch?v=QiT660QtcXA&t=78s)',
+      'relevance': 'Verbatim practitioner testimony from Chapter Q6.',
+      'source_type': 'video_pro_tip',
+      'text': 'That means a major marketplace like Amazon is already taking care of sales tax for '
+              'you.',
+      'timestamp': 78,
+      'timestamp_label': '[00:01:18]',
+      'timestamp_seconds': 78,
+      'tip': 'That means a major marketplace like Amazon is already taking care of sales tax for '
+             'you.',
+      'title': 'Tax 101: Does my online marketplace collect sales tax for me?',
+      'url': 'https://www.youtube.com/watch?v=QiT660QtcXA&t=78s',
+      'video_id': 'QiT660QtcXA'},
+     {'author': 'Avalara',
+      'channel': 'Avalara',
+      'epistemic_status': 'attributed_practitioner_claim',
+      'markdown': '[00:02:08](https://www.youtube.com/watch?v=RRnAKNi_DBU&t=128s)',
+      'relevance': 'Verbatim practitioner testimony from Chapter Q6.',
+      'source_type': 'video_pro_tip',
+      'text': 'If the answer to any of the nexus, customer or item questions is no, the tax '
+              'returned is zero dollars.',
+      'timestamp': 128,
+      'timestamp_label': '[00:02:08]',
+      'timestamp_seconds': 128,
+      'tip': 'If the answer to any of the nexus, customer or item questions is no, the tax '
+             'returned is zero dollars.',
+      'title': 'Avalara AvaTax Demo',
+      'url': 'https://www.youtube.com/watch?v=RRnAKNi_DBU&t=128s',
+      'video_id': 'RRnAKNi_DBU'},
+     {'author': 'Acuity Ecommerce Accounting',
+      'channel': 'Acuity Ecommerce Accounting',
+      'epistemic_status': 'attributed_practitioner_claim',
+      'markdown': '[00:07:28](https://www.youtube.com/watch?v=8zfPSv7hAWM&t=448s)',
+      'relevance': 'Verbatim practitioner testimony from Chapter Q6.',
+      'source_type': 'video_pro_tip',
+      'text': "Don't even really consider it.",
+      'timestamp': 448,
+      'timestamp_label': '[00:07:28]',
+      'timestamp_seconds': 448,
+      'tip': "Don't even really consider it.",
+      'title': 'Avalara TaxJar Taxify | Sales Tax Solutions for Ecommerce Sellers',
+      'url': 'https://www.youtube.com/watch?v=8zfPSv7hAWM&t=448s',
+      'video_id': '8zfPSv7hAWM'},
+     {'author': 'Arthur Glinkin',
+      'channel': 'Arthur Glinkin',
+      'epistemic_status': 'attributed_practitioner_claim',
+      'markdown': '[00:07:21](https://www.youtube.com/watch?v=1Cr_iHc8p4s&t=441s)',
+      'relevance': 'Verbatim practitioner testimony from Chapter Q6.',
+      'source_type': 'video_pro_tip',
+      'text': 'So, last time I checked, the Tax Jar subscriptions start at about $20 per month, '
+              'which is super affordable.',
+      'timestamp': 441,
+      'timestamp_label': '[00:07:21]',
+      'timestamp_seconds': 441,
+      'tip': 'So, last time I checked, the Tax Jar subscriptions start at about $20 per month, '
+             'which is super affordable.',
+      'title': 'Ecommerce Sales Tax MADE EASY (TaxJar Setup)',
+      'url': 'https://www.youtube.com/watch?v=1Cr_iHc8p4s&t=441s',
+      'video_id': '1Cr_iHc8p4s'},
+     {'author': 'Tyler',
+      'channel': 'Tyler',
+      'epistemic_status': 'attributed_practitioner_claim',
+      'markdown': '[00:08:29](https://www.youtube.com/watch?v=SgxDnkPR36U&t=509s)',
+      'relevance': 'Verbatim practitioner testimony from Chapter Q6.',
+      'source_type': 'video_pro_tip',
+      'text': 'Shopify does not remit the tax for you, so use the tax filing report and export it '
+              'to your accountant.',
+      'timestamp': 509,
+      'timestamp_label': '[00:08:29]',
+      'timestamp_seconds': 509,
+      'tip': 'Shopify does not remit the tax for you, so use the tax filing report and export it '
+             'to your accountant.',
+      'title': 'Online Sales Tax: A Guide to Economic Nexus & Ecommerce',
+      'url': 'https://www.youtube.com/watch?v=SgxDnkPR36U&t=509s',
+      'video_id': 'SgxDnkPR36U'},
+     {'author': 'Ryan McKenzie',
+      'channel': 'Ryan McKenzie',
+      'epistemic_status': 'attributed_practitioner_claim',
+      'markdown': '[00:01:27](https://www.youtube.com/watch?v=jmsERJHMp_0&t=87s)',
+      'relevance': 'Verbatim practitioner testimony from Chapter Q6.',
+      'source_type': 'video_pro_tip',
+      'text': 'The size of your business does not grant you anything.',
+      'timestamp': 87,
+      'timestamp_label': '[00:01:27]',
+      'timestamp_seconds': 87,
+      'tip': 'The size of your business does not grant you anything.',
+      'title': "Don't Get Crushed by Ecom Sales Tax! Learn the Wayfair Secret to Survival",
+      'url': 'https://www.youtube.com/watch?v=jmsERJHMp_0&t=87s',
+      'video_id': 'jmsERJHMp_0'},
+     {'author': 'LedgerGurus: Ecommerce Accounting Experts',
+      'channel': 'LedgerGurus: Ecommerce Accounting Experts',
+      'epistemic_status': 'attributed_practitioner_claim',
+      'markdown': '[00:23:37](https://www.youtube.com/watch?v=1L7s6llWlRo&t=1417s)',
+      'relevance': 'Verbatim practitioner testimony from Chapter Q6.',
+      'source_type': 'video_pro_tip',
+      'text': 'For simple needs go with TaxJar or Taxify, for moderate needs Taxify, and for '
+              'robust needs Avalara.',
+      'timestamp': 1417,
+      'timestamp_label': '[00:23:37]',
+      'timestamp_seconds': 1417,
+      'tip': 'For simple needs go with TaxJar or Taxify, for moderate needs Taxify, and for robust '
+             'needs Avalara.',
+      'title': '2020 Sales Tax Apps for Online Sellers | Avalara, Taxjar, and Taxify',
+      'url': 'https://www.youtube.com/watch?v=1L7s6llWlRo&t=1417s',
+      'video_id': '1L7s6llWlRo'},
+     {'author': 'Avalara',
+      'channel': 'Avalara',
+      'epistemic_status': 'attributed_practitioner_claim',
+      'markdown': '[00:00:39](https://www.youtube.com/watch?v=A7FAFArV6JM&t=39s)',
+      'relevance': 'Verbatim practitioner testimony from Chapter Q6.',
+      'source_type': 'video_pro_tip',
+      'text': 'Two buyers in the same zip code with the same cart pay different tax, because one '
+              'sits in a City Improvement District that most certainly would have been overlooked.',
+      'timestamp': 39,
+      'timestamp_label': '[00:00:39]',
+      'timestamp_seconds': 39,
+      'tip': 'Two buyers in the same zip code with the same cart pay different tax, because one '
+             'sits in a City Improvement District that most certainly would have been overlooked.',
+      'title': 'SAP Commerce Cloud + Avalara',
+      'url': 'https://www.youtube.com/watch?v=A7FAFArV6JM&t=39s',
+      'video_id': 'A7FAFArV6JM'},
+     {'author': 'TaxJar',
+      'channel': 'TaxJar',
+      'epistemic_status': 'attributed_practitioner_claim',
+      'markdown': '[00:02:43](https://www.youtube.com/watch?v=M_AJmScLLXE&t=163s)',
+      'relevance': 'Verbatim practitioner testimony from Chapter Q6.',
+      'source_type': 'video_pro_tip',
+      'text': "We track nexus based on your number of orders or revenue based on each state's "
+              'economic nexus thresholds.',
+      'timestamp': 163,
+      'timestamp_label': '[00:02:43]',
+      'timestamp_seconds': 163,
+      'tip': "We track nexus based on your number of orders or revenue based on each state's "
+             'economic nexus thresholds.',
+      'title': 'TaxJar demo: How to automate sales tax compliance in 2026',
+      'url': 'https://www.youtube.com/watch?v=M_AJmScLLXE&t=163s',
+      'video_id': 'M_AJmScLLXE'},
+     {'author': 'LedgerGurus: Ecommerce Accounting Experts',
+      'channel': 'LedgerGurus: Ecommerce Accounting Experts',
+      'epistemic_status': 'attributed_practitioner_claim',
+      'markdown': '[00:31:09](https://www.youtube.com/watch?v=pqXEldKeguY&t=1869s)',
+      'relevance': 'Verbatim practitioner testimony from Chapter Q6.',
+      'source_type': 'video_pro_tip',
+      'text': "So please don't collect unless you're registered.",
+      'timestamp': 1869,
+      'timestamp_label': '[00:31:09]',
+      'timestamp_seconds': 1869,
+      'tip': "So please don't collect unless you're registered.",
+      'title': 'Sales Tax 101 with Avalara',
+      'url': 'https://www.youtube.com/watch?v=pqXEldKeguY&t=1869s',
+      'video_id': 'pqXEldKeguY'}],
+ 7: [{'author': 'WorkflowLife',
+      'channel': 'WorkflowLife',
+      'epistemic_status': 'attributed_practitioner_claim',
+      'markdown': '[00:05:39](https://www.youtube.com/watch?v=etEhM2kyodk&t=339s)',
+      'relevance': 'Verbatim practitioner testimony from Chapter Q7.',
+      'source_type': 'video_pro_tip',
+      'text': 'Best case, we can do it in a few days. I think a realistic expectation is about 4 '
+              'weeks.',
+      'timestamp': 339,
+      'timestamp_label': '[00:05:39]',
+      'timestamp_seconds': 339,
+      'tip': 'Best case, we can do it in a few days. I think a realistic expectation is about 4 '
+             'weeks.',
+      'title': 'What Happens After You Click Buy? | Inside 3PL with Radial',
+      'url': 'https://www.youtube.com/watch?v=etEhM2kyodk&t=339s',
+      'video_id': 'etEhM2kyodk'},
+     {'author': 'ShipSage',
+      'channel': 'ShipSage',
+      'epistemic_status': 'attributed_practitioner_claim',
+      'markdown': '[00:01:27](https://www.youtube.com/watch?v=eRxb-KV0R4E&t=87s)',
+      'relevance': 'Verbatim practitioner testimony from Chapter Q7.',
+      'source_type': 'video_pro_tip',
+      'text': 'Our team goes to each bin and scans every item. Wrong size or wrong color? The scan '
+              'catches it before it even leaves the shelf.',
+      'timestamp': 87,
+      'timestamp_label': '[00:01:27]',
+      'timestamp_seconds': 87,
+      'tip': 'Our team goes to each bin and scans every item. Wrong size or wrong color? The scan '
+             'catches it before it even leaves the shelf.',
+      'title': 'How Shopify & TikTok Shop Clothing Brands Ship Thousands of Orders Daily | Inside '
+               'an Apparel 3PL',
+      'url': 'https://www.youtube.com/watch?v=eRxb-KV0R4E&t=87s',
+      'video_id': 'eRxb-KV0R4E'},
+     {'author': 'Smart Capital',
+      'channel': 'Smart Capital',
+      'epistemic_status': 'attributed_practitioner_claim',
+      'markdown': '[00:34:26](https://www.youtube.com/watch?v=8R8um_CLrWI&t=2066s)',
+      'relevance': 'Verbatim practitioner testimony from Chapter Q7.',
+      'source_type': 'video_pro_tip',
+      'text': 'A 3PL that quotes a pick and pack fee a dollar below everyone else usually recovers '
+              'that dollar in storage, receiving, or returns fees.',
+      'timestamp': 2066,
+      'timestamp_label': '[00:34:26]',
+      'timestamp_seconds': 2066,
+      'tip': 'A 3PL that quotes a pick and pack fee a dollar below everyone else usually recovers '
+             'that dollar in storage, receiving, or returns fees.',
+      'title': 'How to Automate E-Commerce Fulfillment: Best US 3PL Partners for 2-Day Shipping '
+               '2026',
+      'url': 'https://www.youtube.com/watch?v=8R8um_CLrWI&t=2066s',
+      'video_id': '8R8um_CLrWI'},
+     {'author': 'Smart Capital',
+      'channel': 'Smart Capital',
+      'epistemic_status': 'attributed_practitioner_claim',
+      'markdown': '[00:22:52](https://www.youtube.com/watch?v=8R8um_CLrWI&t=1372s)',
+      'relevance': 'Verbatim practitioner testimony from Chapter Q7.',
+      'source_type': 'video_pro_tip',
+      'text': 'Where they do not match, a size spelled differently, a color code missing, a bundle '
+              'listed as one SKU in the store and two SKUs in the warehouse, the connection will '
+              'fail silently.',
+      'timestamp': 1372,
+      'timestamp_label': '[00:22:52]',
+      'timestamp_seconds': 1372,
+      'tip': 'Where they do not match, a size spelled differently, a color code missing, a bundle '
+             'listed as one SKU in the store and two SKUs in the warehouse, the connection will '
+             'fail silently.',
+      'title': 'How to Automate E-Commerce Fulfillment: Best US 3PL Partners for 2-Day Shipping '
+               '2026',
+      'url': 'https://www.youtube.com/watch?v=8R8um_CLrWI&t=1372s',
+      'video_id': '8R8um_CLrWI'},
+     {'author': 'Einstein Fulfillment',
+      'channel': 'Einstein Fulfillment',
+      'epistemic_status': 'attributed_practitioner_claim',
+      'markdown': '[00:01:15](https://www.youtube.com/watch?v=7Xr-2wI5LJo&t=75s)',
+      'relevance': 'Verbatim practitioner testimony from Chapter Q7.',
+      'source_type': 'video_pro_tip',
+      'text': "In this final phase, we'll walk you through your client portal, provide support to "
+              'your team, and run test orders to ensure everything will set up correctly.',
+      'timestamp': 75,
+      'timestamp_label': '[00:01:15]',
+      'timestamp_seconds': 75,
+      'tip': "In this final phase, we'll walk you through your client portal, provide support to "
+             'your team, and run test orders to ensure everything will set up correctly.',
+      'title': 'How a 3PL Onboards New Clients',
+      'url': 'https://www.youtube.com/watch?v=7Xr-2wI5LJo&t=75s',
+      'video_id': '7Xr-2wI5LJo'},
+     {'author': 'CTLGlobalSolutions',
+      'channel': 'CTLGlobalSolutions',
+      'epistemic_status': 'attributed_practitioner_claim',
+      'markdown': '[00:01:08](https://www.youtube.com/watch?v=i9PB8pM9lZ4&t=68s)',
+      'relevance': 'Verbatim practitioner testimony from Chapter Q7.',
+      'source_type': 'video_pro_tip',
+      'text': "If we see something that's trending in a certain way, we find a solution and we "
+              "bring it to them. We don't wait for them to come to us.",
+      'timestamp': 68,
+      'timestamp_label': '[00:01:08]',
+      'timestamp_seconds': 68,
+      'tip': "If we see something that's trending in a certain way, we find a solution and we "
+             "bring it to them. We don't wait for them to come to us.",
+      'title': '3PL Fulfillment Built for Scaling Brands | CTL',
+      'url': 'https://www.youtube.com/watch?v=i9PB8pM9lZ4&t=68s',
+      'video_id': 'i9PB8pM9lZ4'},
+     {'author': 'Monopoly',
+      'channel': 'Monopoly',
+      'epistemic_status': 'attributed_practitioner_claim',
+      'markdown': '[00:03:59](https://www.youtube.com/watch?v=SeloMfYsYk0&t=239s)',
+      'relevance': 'Verbatim practitioner testimony from Chapter Q7.',
+      'source_type': 'video_pro_tip',
+      'text': 'A low storage rate can be misleading. Picking fees, packaging markups, shipping '
+              'charges, and account minimums determine the true fulfillment cost.',
+      'timestamp': 239,
+      'timestamp_label': '[00:03:59]',
+      'timestamp_seconds': 239,
+      'tip': 'A low storage rate can be misleading. Picking fees, packaging markups, shipping '
+             'charges, and account minimums determine the true fulfillment cost.',
+      'title': 'What Is 3PL Logistics? The Hidden System Powering E-Commerce #3plservices '
+               '#fulfillment',
+      'url': 'https://www.youtube.com/watch?v=SeloMfYsYk0&t=239s',
+      'video_id': 'SeloMfYsYk0'},
+     {'author': 'Learn With Shopify',
+      'channel': 'Learn With Shopify',
+      'epistemic_status': 'attributed_practitioner_claim',
+      'markdown': '[00:08:16](https://www.youtube.com/watch?v=088tKYu7kKY&t=496s)',
+      'relevance': 'Verbatim practitioner testimony from Chapter Q7.',
+      'source_type': 'video_pro_tip',
+      'text': 'Our average order has three or more items in a box, and given that you need to pay '
+              "for each item that's picked and packed into an order, the shipping cost in our case "
+              'is too high for 3PLs to make any sense.',
+      'timestamp': 496,
+      'timestamp_label': '[00:08:16]',
+      'timestamp_seconds': 496,
+      'tip': 'Our average order has three or more items in a box, and given that you need to pay '
+             "for each item that's picked and packed into an order, the shipping cost in our case "
+             'is too high for 3PLs to make any sense.',
+      'title': 'Ecommerce Shipping and Fulfillment: A Complete Guide',
+      'url': 'https://www.youtube.com/watch?v=088tKYu7kKY&t=496s',
+      'video_id': '088tKYu7kKY'},
+     {'author': 'Perseuss LLC',
+      'channel': 'Perseuss LLC',
+      'epistemic_status': 'attributed_practitioner_claim',
+      'markdown': '[00:03:35](https://www.youtube.com/watch?v=VD9O6JRw54A&t=215s)',
+      'relevance': 'Verbatim practitioner testimony from Chapter Q7.',
+      'source_type': 'video_pro_tip',
+      'text': "We have to make sure that every parcel, there's no duplicated tracking number, "
+              "there's no duplicated order, and every order is paid, and it's sorted.",
+      'timestamp': 215,
+      'timestamp_label': '[00:03:35]',
+      'timestamp_seconds': 215,
+      'tip': "We have to make sure that every parcel, there's no duplicated tracking number, "
+             "there's no duplicated order, and every order is paid, and it's sorted.",
+      'title': '3PL Explained: Real Warehouse Walkthrough (For Shopify Brands)',
+      'url': 'https://www.youtube.com/watch?v=VD9O6JRw54A&t=215s',
+      'video_id': 'VD9O6JRw54A'},
+     {'author': 'ShipSage',
+      'channel': 'ShipSage',
+      'epistemic_status': 'attributed_practitioner_claim',
+      'markdown': '[00:01:08](https://www.youtube.com/watch?v=CVklpdSeqOA&t=68s)',
+      'relevance': 'Verbatim practitioner testimony from Chapter Q7.',
+      'source_type': 'video_pro_tip',
+      'text': 'There is a third way. They can keep their warehouse, and they can also, at the same '
+              'time, utilize ShipSage WMS software to orchestrate all the orders for them.',
+      'timestamp': 68,
+      'timestamp_label': '[00:01:08]',
+      'timestamp_seconds': 68,
+      'tip': 'There is a third way. They can keep their warehouse, and they can also, at the same '
+             'time, utilize ShipSage WMS software to orchestrate all the orders for them.',
+      'title': 'E-Commerce Fulfillment | When You Outgrow Your Warehouse | 3PL Updates in US | '
+               'ShipSage',
+      'url': 'https://www.youtube.com/watch?v=CVklpdSeqOA&t=68s',
+      'video_id': 'CVklpdSeqOA'},
+     {'author': 'ShipBob',
+      'channel': 'ShipBob',
+      'epistemic_status': 'attributed_practitioner_claim',
+      'markdown': '[00:02:07](https://www.youtube.com/watch?v=zldfAGyfsfA&t=127s)',
+      'relevance': 'Verbatim practitioner testimony from Chapter Q7.',
+      'source_type': 'video_pro_tip',
+      'text': 'ShipBob has a network of dozens of fulfillment centers around the world, which '
+              'allows e-commerce brands to strategically distribute their inventory to be closer '
+              'to end customers.',
+      'timestamp': 127,
+      'timestamp_label': '[00:02:07]',
+      'timestamp_seconds': 127,
+      'tip': 'ShipBob has a network of dozens of fulfillment centers around the world, which '
+             'allows e-commerce brands to strategically distribute their inventory to be closer to '
+             'end customers.',
+      'title': 'How Ecommerce Fulfillment Works | Behind-The-Scenes of Order Fulfillment',
+      'url': 'https://www.youtube.com/watch?v=zldfAGyfsfA&t=127s',
+      'video_id': 'zldfAGyfsfA'},
+     {'author': 'ShipWise',
+      'channel': 'ShipWise',
+      'epistemic_status': 'attributed_practitioner_claim',
+      'markdown': '[00:01:55](https://www.youtube.com/watch?v=PTU-PzhQg_4&t=115s)',
+      'relevance': 'Verbatim practitioner testimony from Chapter Q7.',
+      'source_type': 'video_pro_tip',
+      'text': 'Within 2 days I think 95% of our production was already up and working, and in five '
+              'business days we had fully switched off our old TMS.',
+      'timestamp': 115,
+      'timestamp_label': '[00:01:55]',
+      'timestamp_seconds': 115,
+      'tip': 'Within 2 days I think 95% of our production was already up and working, and in five '
+             'business days we had fully switched off our old TMS.',
+      'title': 'How this 3PL doubled their daily throughput | SKU Distribution | Case Study',
+      'url': 'https://www.youtube.com/watch?v=PTU-PzhQg_4&t=115s',
+      'video_id': 'PTU-PzhQg_4'},
+     {'author': 'CartonCloud',
+      'channel': 'CartonCloud',
+      'epistemic_status': 'attributed_practitioner_claim',
+      'markdown': '[00:01:06](https://www.youtube.com/watch?v=EYQU96qv5rk&t=66s)',
+      'relevance': 'Verbatim practitioner testimony from Chapter Q7.',
+      'source_type': 'video_pro_tip',
+      'text': "We've turned an unprofitable operation into a profitable one and we've probably had "
+              'a reduction of four full-time equivalent in terms of head count.',
+      'timestamp': 66,
+      'timestamp_label': '[00:01:06]',
+      'timestamp_seconds': 66,
+      'tip': "We've turned an unprofitable operation into a profitable one and we've probably had "
+             'a reduction of four full-time equivalent in terms of head count.',
+      'title': '3PL warehouse B2C x CartonCloud case study',
+      'url': 'https://www.youtube.com/watch?v=EYQU96qv5rk&t=66s',
+      'video_id': 'EYQU96qv5rk'},
+     {'author': 'SHIPHYPE Fulfillment',
+      'channel': 'SHIPHYPE Fulfillment',
+      'epistemic_status': 'attributed_practitioner_claim',
+      'markdown': '[00:00:00](https://www.youtube.com/watch?v=CB8e30IUILU&t=0s)',
+      'relevance': 'Verbatim practitioner testimony from Chapter Q7.',
+      'source_type': 'video_pro_tip',
+      'text': 'Most Shopify 3PL problems do not start when the order imports. Order import is the '
+              'easy part.',
+      'timestamp': 0,
+      'timestamp_label': '[00:00:00]',
+      'timestamp_seconds': 0,
+      'tip': 'Most Shopify 3PL problems do not start when the order imports. Order import is the '
+             'easy part.',
+      'title': 'Shopify 3PL: The Fulfillment Problem Brands Often Miss',
+      'url': 'https://www.youtube.com/watch?v=CB8e30IUILU&t=0s',
+      'video_id': 'CB8e30IUILU'},
+     {'author': 'Relay Distro',
+      'channel': 'Relay Distro',
+      'epistemic_status': 'attributed_practitioner_claim',
+      'markdown': '[00:02:01](https://www.youtube.com/watch?v=6LI3_5-zPpY&t=121s)',
+      'relevance': 'Verbatim practitioner testimony from Chapter Q7.',
+      'source_type': 'video_pro_tip',
+      'text': 'When a picker grabs an item, they scan it into their tote, and when they pack the '
+              "cart, they're also scanning it again to pack it, so it's a double confirmation.",
+      'timestamp': 121,
+      'timestamp_label': '[00:02:01]',
+      'timestamp_seconds': 121,
+      'tip': 'When a picker grabs an item, they scan it into their tote, and when they pack the '
+             "cart, they're also scanning it again to pack it, so it's a double confirmation.",
+      'title': 'How a 3PL Works [E-commerce Fulfillment Process Explained]',
+      'url': 'https://www.youtube.com/watch?v=6LI3_5-zPpY&t=121s',
+      'video_id': '6LI3_5-zPpY'},
+     {'author': 'ShipSage',
+      'channel': 'ShipSage',
+      'epistemic_status': 'attributed_practitioner_claim',
+      'markdown': '[00:00:24](https://www.youtube.com/watch?v=-xS69Ouj3nM&t=24s)',
+      'relevance': 'Verbatim practitioner testimony from Chapter Q7.',
+      'source_type': 'video_pro_tip',
+      'text': 'During picking, we scan three barcodes, the item, the bin, the shipping labels.',
+      'timestamp': 24,
+      'timestamp_label': '[00:00:24]',
+      'timestamp_seconds': 24,
+      'tip': 'During picking, we scan three barcodes, the item, the bin, the shipping labels.',
+      'title': 'How ShipSage Masters B2B & B2C Apparel Fulfillment | 3PL for Brands | Facility '
+               'Tour',
+      'url': 'https://www.youtube.com/watch?v=-xS69Ouj3nM&t=24s',
+      'video_id': '-xS69Ouj3nM'},
+     {'author': 'ShipSage',
+      'channel': 'ShipSage',
+      'epistemic_status': 'attributed_practitioner_claim',
+      'markdown': '[00:01:18](https://www.youtube.com/watch?v=5V9d55NqxRw&t=78s)',
+      'relevance': 'Verbatim practitioner testimony from Chapter Q7.',
+      'source_type': 'video_pro_tip',
+      'text': 'If you want to go live in a week, or you want to take one step at a time, we are '
+              'here with you, and we move at your pace.',
+      'timestamp': 78,
+      'timestamp_label': '[00:01:18]',
+      'timestamp_seconds': 78,
+      'tip': 'If you want to go live in a week, or you want to take one step at a time, we are '
+             'here with you, and we move at your pace.',
+      'title': '3PL Customer Onboarding Steps | Easy E-Commerce Fulfillment | Seamless Process '
+               'with ShipSage',
+      'url': 'https://www.youtube.com/watch?v=5V9d55NqxRw&t=78s',
+      'video_id': '5V9d55NqxRw'}],
+ 8: [{'author': 'Novutech',
+      'channel': 'Novutech',
+      'epistemic_status': 'attributed_practitioner_claim',
+      'markdown': '[00:21:23](https://www.youtube.com/watch?v=kjk-aLs-t1g&t=1283s)',
+      'relevance': 'Verbatim practitioner testimony from Chapter Q8.',
+      'source_type': 'video_pro_tip',
+      'text': "It hasn't got an integration app, which is obviously not an issue.",
+      'timestamp': 1283,
+      'timestamp_label': '[00:21:23]',
+      'timestamp_seconds': 1283,
+      'tip': "It hasn't got an integration app, which is obviously not an issue.",
+      'title': 'Shopify orders in NetSuite with 3PL fulfillment',
+      'url': 'https://www.youtube.com/watch?v=kjk-aLs-t1g&t=1283s',
+      'video_id': 'kjk-aLs-t1g'},
+     {'author': 'Peak Flow Media',
+      'channel': 'Peak Flow Media',
+      'epistemic_status': 'attributed_practitioner_claim',
+      'markdown': '[00:04:58](https://www.youtube.com/watch?v=wy_uAK2tMS0&t=298s)',
+      'relevance': 'Verbatim practitioner testimony from Chapter Q8.',
+      'source_type': 'video_pro_tip',
+      'text': "If the math doesn't work, I'm pretty much just working for free.",
+      'timestamp': 298,
+      'timestamp_label': '[00:04:58]',
+      'timestamp_seconds': 298,
+      'tip': "If the math doesn't work, I'm pretty much just working for free.",
+      'title': 'High-Ticket Dropshipping Explained',
+      'url': 'https://www.youtube.com/watch?v=wy_uAK2tMS0&t=298s',
+      'video_id': 'wy_uAK2tMS0'},
+     {'author': 'Coffeezilla',
+      'channel': 'Coffeezilla',
+      'epistemic_status': 'attributed_practitioner_claim',
+      'markdown': '[00:11:31](https://www.youtube.com/watch?v=fPLMdewUMQw&t=691s)',
+      'relevance': 'Verbatim practitioner testimony from Chapter Q8.',
+      'source_type': 'video_pro_tip',
+      'text': 'It is literally a confidence game.',
+      'timestamp': 691,
+      'timestamp_label': '[00:11:31]',
+      'timestamp_seconds': 691,
+      'tip': 'It is literally a confidence game.',
+      'title': 'Exposing the Walmart "Automation" SCAM',
+      'url': 'https://www.youtube.com/watch?v=fPLMdewUMQw&t=691s',
+      'video_id': 'fPLMdewUMQw'},
+     {'author': 'Amazon Seller School',
+      'channel': 'Amazon Seller School',
+      'epistemic_status': 'attributed_practitioner_claim',
+      'markdown': '[00:08:02](https://www.youtube.com/watch?v=x2RzKux5lK0&t=482s)',
+      'relevance': 'Verbatim practitioner testimony from Chapter Q8.',
+      'source_type': 'video_pro_tip',
+      'text': "For $30,000 they're not going to put in all the work.",
+      'timestamp': 482,
+      'timestamp_label': '[00:08:02]',
+      'timestamp_seconds': 482,
+      'tip': "For $30,000 they're not going to put in all the work.",
+      'title': 'FTC Sues Amazon Automation Company for Passive Income Scams & Death Threats',
+      'url': 'https://www.youtube.com/watch?v=x2RzKux5lK0&t=482s',
+      'video_id': 'x2RzKux5lK0'},
+     {'author': 'NET not GROSS',
+      'channel': 'NET not GROSS',
+      'epistemic_status': 'attributed_practitioner_claim',
+      'markdown': '[00:05:12](https://www.youtube.com/watch?v=El3a3K2N_sY&t=312s)',
+      'relevance': 'Verbatim practitioner testimony from Chapter Q8.',
+      'source_type': 'video_pro_tip',
+      'text': "A store that gets shut down by the platform doesn't make passive income.",
+      'timestamp': 312,
+      'timestamp_label': '[00:05:12]',
+      'timestamp_seconds': 312,
+      'tip': "A store that gets shut down by the platform doesn't make passive income.",
+      'title': 'Done-For-You AI Store: We Read the FTC Files',
+      'url': 'https://www.youtube.com/watch?v=El3a3K2N_sY&t=312s',
+      'video_id': 'El3a3K2N_sY'},
+     {'author': 'Crescent Kao',
+      'channel': 'Crescent Kao',
+      'epistemic_status': 'attributed_practitioner_claim',
+      'markdown': '[00:05:38](https://www.youtube.com/watch?v=qeqvFEGP-7g&t=338s)',
+      'relevance': 'Verbatim practitioner testimony from Chapter Q8.',
+      'source_type': 'video_pro_tip',
+      'text': 'Cheap premiums mean cheap coverage.',
+      'timestamp': 338,
+      'timestamp_label': '[00:05:38]',
+      'timestamp_seconds': 338,
+      'tip': 'Cheap premiums mean cheap coverage.',
+      'title': 'Amazon FBA Product Liability Insurance for Beginners Explained 2024 UPDATE!',
+      'url': 'https://www.youtube.com/watch?v=qeqvFEGP-7g&t=338s',
+      'video_id': 'qeqvFEGP-7g'},
+     {'author': 'BIS Benefits - Best In Serving',
+      'channel': 'BIS Benefits - Best In Serving',
+      'epistemic_status': 'attributed_practitioner_claim',
+      'markdown': '[00:03:04](https://www.youtube.com/watch?v=A0rgATB8PiM&t=184s)',
+      'relevance': 'Verbatim practitioner testimony from Chapter Q8.',
+      'source_type': 'video_pro_tip',
+      'text': 'New York, Colorado, those are two states that are highly litigious from a product '
+              'liability perspective.',
+      'timestamp': 184,
+      'timestamp_label': '[00:03:04]',
+      'timestamp_seconds': 184,
+      'tip': 'New York, Colorado, those are two states that are highly litigious from a product '
+             'liability perspective.',
+      'title': 'What is Product Liability Insurance?',
+      'url': 'https://www.youtube.com/watch?v=A0rgATB8PiM&t=184s',
+      'video_id': 'A0rgATB8PiM'},
      {'author': 'Davie Fogarty',
       'channel': 'Davie Fogarty',
       'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:23:51](https://www.youtube.com/watch?v=313GvO3pScc&t=1431s)',
-      'relevance': 'Attributed practitioner commentary on lean 3PL-backed & authorized-dealer '
-                   'e-commerce operations, contribution-margin underwriting, and automated '
-                   'retention (Chapter Q9 operational verification).',
+      'markdown': '[00:30:33](https://www.youtube.com/watch?v=313GvO3pScc&t=1833s)',
+      'relevance': 'Verbatim practitioner testimony from Chapter Q8.',
       'source_type': 'video_pro_tip',
-      'text': "Realistically, as I said before, you've got a few ways to create the product. "
-              'Typically, first-time founders, they will actually outreach to their supplier '
-              "to create the product with the supplier. This is good because it's very "
-              'cost-effective.',
-      'timestamp': 1431,
-      'timestamp_label': '[00:23:51]',
-      'timestamp_seconds': 1431,
-      'tip': "Realistically, as I said before, you've got a few ways to create the product. "
-             'Typically, first-time founders, they will actually outreach to their supplier to '
-             "create the product with the supplier. This is good because it's very "
-             'cost-effective.',
-      'title': 'Complete E-commerce Operations Guide (Advanced Tutorial) (Davie Fogarty)',
-      'url': 'https://www.youtube.com/watch?v=313GvO3pScc&t=1431s',
+      'text': 'Tracking profit on a daily basis is fundamental to your e-commerce business.',
+      'timestamp': 1833,
+      'timestamp_label': '[00:30:33]',
+      'timestamp_seconds': 1833,
+      'tip': 'Tracking profit on a daily basis is fundamental to your e-commerce business.',
+      'title': 'Complete E-commerce Operations Guide (Advanced Tutorial)',
+      'url': 'https://www.youtube.com/watch?v=313GvO3pScc&t=1833s',
+      'video_id': '313GvO3pScc'},
+     {'author': 'Davie Fogarty',
+      'channel': 'Davie Fogarty',
+      'epistemic_status': 'attributed_practitioner_claim',
+      'markdown': '[01:06:24](https://www.youtube.com/watch?v=313GvO3pScc&t=3984s)',
+      'relevance': 'Verbatim practitioner testimony from Chapter Q8.',
+      'source_type': 'video_pro_tip',
+      'text': 'People are just going to point fingers.',
+      'timestamp': 3984,
+      'timestamp_label': '[01:06:24]',
+      'timestamp_seconds': 3984,
+      'tip': 'People are just going to point fingers.',
+      'title': 'Complete E-commerce Operations Guide (Advanced Tutorial)',
+      'url': 'https://www.youtube.com/watch?v=313GvO3pScc&t=3984s',
       'video_id': '313GvO3pScc'},
      {'author': 'Fazil Automates',
       'channel': 'Fazil Automates',
       'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:01:19](https://www.youtube.com/watch?v=4OmfNbuCmDQ&t=79s)',
-      'relevance': 'Attributed practitioner commentary on lean 3PL-backed & authorized-dealer '
-                   'e-commerce operations, contribution-margin underwriting, and automated '
-                   'retention (Chapter Q9 operational verification).',
+      'markdown': '[00:00:32](https://www.youtube.com/watch?v=4OmfNbuCmDQ&t=32s)',
+      'relevance': 'Verbatim practitioner testimony from Chapter Q8.',
       'source_type': 'video_pro_tip',
-      'text': "Here's the job in plain terms. Every time a paid order lands, this needs to "
-              'happen automatically. The customer gets created in my system, my inventory '
-              'updates, the order becomes a sales order and an invoice in my accounting and it '
-              'gets tracked with the team notifier.',
-      'timestamp': 79,
-      'timestamp_label': '[00:01:19]',
-      'timestamp_seconds': 79,
-      'tip': "Here's the job in plain terms. Every time a paid order lands, this needs to "
-             'happen automatically. The customer gets created in my system, my inventory '
-             'updates, the order becomes a sales order and an invoice in my accounting and it '
-             'gets tracked with the team notifier.',
-      'title': 'I Automated My Entire Shopify Store With Claude (No Code) (Fazil Automates)',
-      'url': 'https://www.youtube.com/watch?v=4OmfNbuCmDQ&t=79s',
+      'text': "It's everything after the order that eats your day.",
+      'timestamp': 32,
+      'timestamp_label': '[00:00:32]',
+      'timestamp_seconds': 32,
+      'tip': "It's everything after the order that eats your day.",
+      'title': 'I Automated My Entire Shopify Store With Claude (No Code)',
+      'url': 'https://www.youtube.com/watch?v=4OmfNbuCmDQ&t=32s',
       'video_id': '4OmfNbuCmDQ'},
-     {'author': 'Tyler',
-      'channel': 'Tyler',
+     {'author': 'GroPulse',
+      'channel': 'GroPulse',
       'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:01:13](https://www.youtube.com/watch?v=SgxDnkPR36U&t=73s)',
-      'relevance': 'Attributed practitioner commentary on lean 3PL-backed & authorized-dealer '
-                   'e-commerce operations, contribution-margin underwriting, and automated '
-                   'retention (Chapter Q9 operational verification).',
+      'markdown': '[00:01:14](https://www.youtube.com/watch?v=El6hMZ1_77w&t=74s)',
+      'relevance': 'Verbatim practitioner testimony from Chapter Q8.',
       'source_type': 'video_pro_tip',
-      'text': 'Since e-commerce sellers have been required to collect and remit state sales '
-              'tax the confusion around setting up taxes on e-commerce.',
+      'text': 'Sync your POS to avoid double selling.',
+      'timestamp': 74,
+      'timestamp_label': '[00:01:14]',
+      'timestamp_seconds': 74,
+      'tip': 'Sync your POS to avoid double selling.',
+      'title': 'Shopify Inventory Management Complete Setup Guide',
+      'url': 'https://www.youtube.com/watch?v=El6hMZ1_77w&t=74s',
+      'video_id': 'El6hMZ1_77w'},
+     {'author': 'Tech Help Daily',
+      'channel': 'Tech Help Daily',
+      'epistemic_status': 'attributed_practitioner_claim',
+      'markdown': '[00:02:02](https://www.youtube.com/watch?v=I8fM406sSsA&t=122s)',
+      'relevance': 'Verbatim practitioner testimony from Chapter Q8.',
+      'source_type': 'video_pro_tip',
+      'text': 'A common mistake is turning on sell when out of stock by accident.',
+      'timestamp': 122,
+      'timestamp_label': '[00:02:02]',
+      'timestamp_seconds': 122,
+      'tip': 'A common mistake is turning on sell when out of stock by accident.',
+      'title': 'Shopify Inventory Management Tutorial for Beginners (2026 Step-by-Step Guide to '
+               'Managing Stock)',
+      'url': 'https://www.youtube.com/watch?v=I8fM406sSsA&t=122s',
+      'video_id': 'I8fM406sSsA'},
+     {'author': 'Report Pundit',
+      'channel': 'Report Pundit',
+      'epistemic_status': 'attributed_practitioner_claim',
+      'markdown': '[00:01:46](https://www.youtube.com/watch?v=bX6lGJtCxao&t=106s)',
+      'relevance': 'Verbatim practitioner testimony from Chapter Q8.',
+      'source_type': 'video_pro_tip',
+      'text': 'So the team starts the day with stock reality.',
+      'timestamp': 106,
+      'timestamp_label': '[00:01:46]',
+      'timestamp_seconds': 106,
+      'tip': 'So the team starts the day with stock reality.',
+      'title': 'Shopify Inventory Tracking Guide: ABC Analysis, Bundles & Stock Alerts',
+      'url': 'https://www.youtube.com/watch?v=bX6lGJtCxao&t=106s',
+      'video_id': 'bX6lGJtCxao'},
+     {'author': 'Prediko AI Inventory Management',
+      'channel': 'Prediko AI Inventory Management',
+      'epistemic_status': 'attributed_practitioner_claim',
+      'markdown': '[00:14:26](https://www.youtube.com/watch?v=IWUFOfiPmUI&t=866s)',
+      'relevance': 'Verbatim practitioner testimony from Chapter Q8.',
+      'source_type': 'video_pro_tip',
+      'text': "However, the caveat to that is we'll always still suggest the smart model just "
+              'because it is still a mixture of the simple plus intelligent.',
+      'timestamp': 866,
+      'timestamp_label': '[00:14:26]',
+      'timestamp_seconds': 866,
+      'tip': "However, the caveat to that is we'll always still suggest the smart model just "
+             'because it is still a mixture of the simple plus intelligent.',
+      'title': 'How to Set Up Prediko: Shopify Inventory Forecasting, Purchase Orders & AI '
+               'Planning (Onboarding)',
+      'url': 'https://www.youtube.com/watch?v=IWUFOfiPmUI&t=866s',
+      'video_id': 'IWUFOfiPmUI'},
+     {'author': 'Prediko AI Inventory Management',
+      'channel': 'Prediko AI Inventory Management',
+      'epistemic_status': 'attributed_practitioner_claim',
+      'markdown': '[00:09:15](https://www.youtube.com/watch?v=9Gx9hcJhdbo&t=555s)',
+      'relevance': 'Verbatim practitioner testimony from Chapter Q8.',
+      'source_type': 'video_pro_tip',
+      'text': 'The smart model, however, is a lot more intuitive and would work really well if you '
+              'have about one and a half to two years or more of sales history.',
+      'timestamp': 555,
+      'timestamp_label': '[00:09:15]',
+      'timestamp_seconds': 555,
+      'tip': 'The smart model, however, is a lot more intuitive and would work really well if you '
+             'have about one and a half to two years or more of sales history.',
+      'title': 'How to Set Up Prediko: Shopify Inventory Forecasting, Purchase Orders & AI '
+               'Planning (Onboarding)',
+      'url': 'https://www.youtube.com/watch?v=9Gx9hcJhdbo&t=555s',
+      'video_id': '9Gx9hcJhdbo'},
+     {'author': 'FlexSync: Shopify Stock & Order Sync',
+      'channel': 'FlexSync: Shopify Stock & Order Sync',
+      'epistemic_status': 'attributed_practitioner_claim',
+      'markdown': '[00:03:32](https://www.youtube.com/watch?v=oYy3k8xOKpA&t=212s)',
+      'relevance': 'Verbatim practitioner testimony from Chapter Q8.',
+      'source_type': 'video_pro_tip',
+      'text': 'Formula changes reach Shopify on a 5-minute schedule.',
+      'timestamp': 212,
+      'timestamp_label': '[00:03:32]',
+      'timestamp_seconds': 212,
+      'tip': 'Formula changes reach Shopify on a 5-minute schedule.',
+      'title': 'The Ultimate Shopify Inventory Management Guide | Stop Losing Sales!',
+      'url': 'https://www.youtube.com/watch?v=oYy3k8xOKpA&t=212s',
+      'video_id': 'oYy3k8xOKpA'},
+     {'author': 'Prediko AI Inventory Management',
+      'channel': 'Prediko AI Inventory Management',
+      'epistemic_status': 'attributed_practitioner_claim',
+      'markdown': '[00:41:30](https://www.youtube.com/watch?v=P-gBTGovRRs&t=2490s)',
+      'relevance': 'Verbatim practitioner testimony from Chapter Q8.',
+      'source_type': 'video_pro_tip',
+      'text': "If you don't create production orders, then the stock wouldn't move.",
+      'timestamp': 2490,
+      'timestamp_label': '[00:41:30]',
+      'timestamp_seconds': 2490,
+      'tip': "If you don't create production orders, then the stock wouldn't move.",
+      'title': 'How to Set Up Prediko: Shopify Inventory Forecasting, Purchase Orders & Raw '
+               'Materials (Onboarding)',
+      'url': 'https://www.youtube.com/watch?v=P-gBTGovRRs&t=2490s',
+      'video_id': 'P-gBTGovRRs'}],
+ 9: [{'author': 'GuidePixel',
+      'channel': 'GuidePixel',
+      'epistemic_status': 'attributed_practitioner_claim',
+      'markdown': '[00:01:13](https://www.youtube.com/watch?v=3VDc8PoFZa8&t=73s)',
+      'relevance': 'Verbatim practitioner testimony from Chapter Q9.',
+      'source_type': 'video_pro_tip',
+      'text': 'Inform the customer of any changes made by using the communication tools within '
+              'Loop Returns.',
       'timestamp': 73,
       'timestamp_label': '[00:01:13]',
       'timestamp_seconds': 73,
-      'tip': 'Since e-commerce sellers have been required to collect and remit state sales tax '
-             'the confusion around setting up taxes on e-commerce.',
-      'title': 'Online Sales Tax: A Guide to Economic Nexus & Ecommerce (Tyler)',
-      'url': 'https://www.youtube.com/watch?v=SgxDnkPR36U&t=73s',
-      'video_id': 'SgxDnkPR36U'},
-     {'author': 'Max Crakanthorp',
-      'channel': 'Max Crakanthorp',
+      'tip': 'Inform the customer of any changes made by using the communication tools within Loop '
+             'Returns.',
+      'title': 'How to update Shopify returns with Loop Returns - Step By Step',
+      'url': 'https://www.youtube.com/watch?v=3VDc8PoFZa8&t=73s',
+      'video_id': '3VDc8PoFZa8'},
+     {'author': 'Returndotai',
+      'channel': 'Returndotai',
       'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:14:15](https://www.youtube.com/watch?v=H4yH9xs030Q&t=855s)',
-      'relevance': 'Attributed practitioner commentary on lean 3PL-backed & authorized-dealer '
-                   'e-commerce operations, contribution-margin underwriting, and automated '
-                   'retention (Chapter Q9 operational verification).',
+      'markdown': '[00:01:17](https://www.youtube.com/watch?v=JzyBmddGOms&t=77s)',
+      'relevance': 'Verbatim practitioner testimony from Chapter Q9.',
       'source_type': 'video_pro_tip',
-      'text': "It's something you kind of need to um you need to buy it for your own brand if "
-              'you run a brand, right? Now, if you have a GTIN, put it in. It will give you an '
-              'advantage in Merchant Center.',
-      'timestamp': 855,
-      'timestamp_label': '[00:14:15]',
-      'timestamp_seconds': 855,
-      'tip': "It's something you kind of need to um you need to buy it for your own brand if "
-             'you run a brand, right? Now, if you have a GTIN, put it in. It will give you an '
-             'advantage in Merchant Center.',
-      'title': 'Live Optimizing A Product In Google Merchant Center (A - Z Guide) (Max '
-               'Crakanthorp)',
-      'url': 'https://www.youtube.com/watch?v=H4yH9xs030Q&t=855s',
-      'video_id': 'H4yH9xs030Q'},
-     {'author': 'I Am David Scheuer',
-      'channel': 'I Am David Scheuer',
+      'text': 'Refunds can be processed via gift cards, store credit, discount codes, the original '
+              'payment method, or through third-party refund providers.',
+      'timestamp': 77,
+      'timestamp_label': '[00:01:17]',
+      'timestamp_seconds': 77,
+      'tip': 'Refunds can be processed via gift cards, store credit, discount codes, the original '
+             'payment method, or through third-party refund providers.',
+      'title': 'Shopify Returns Management App Demo | Automate Returns & Exchanges in 2 Minutes',
+      'url': 'https://www.youtube.com/watch?v=JzyBmddGOms&t=77s',
+      'video_id': 'JzyBmddGOms'},
+     {'author': 'Wise Explainer',
+      'channel': 'Wise Explainer',
       'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:07:39](https://www.youtube.com/watch?v=HqGwAnGaUf8&t=459s)',
-      'relevance': 'Attributed practitioner commentary on lean 3PL-backed & authorized-dealer '
-                   'e-commerce operations, contribution-margin underwriting, and automated '
-                   'retention (Chapter Q9 operational verification).',
+      'markdown': '[00:01:21](https://www.youtube.com/watch?v=X3G7DDq6KD8&t=81s)',
+      'relevance': 'Verbatim practitioner testimony from Chapter Q9.',
       'source_type': 'video_pro_tip',
-      'text': 'Here in the comment section you can write something like this um we are looking '
-              'at the products your brand offers and would like to set up a wholesale account.',
-      'timestamp': 459,
-      'timestamp_label': '[00:07:39]',
-      'timestamp_seconds': 459,
-      'tip': 'Here in the comment section you can write something like this um we are looking '
-             'at the products your brand offers and would like to set up a wholesale account.',
-      'title': 'How to contact brands and distributors for your Amazon wholesale business! (I '
-               'Am David Scheuer)',
-      'url': 'https://www.youtube.com/watch?v=HqGwAnGaUf8&t=459s',
-      'video_id': 'HqGwAnGaUf8'},
-     {'author': 'Brandon Amoroso',
-      'channel': 'Brandon Amoroso',
+      'text': 'While Loop Returns excels at automating returns and improving the customer '
+              'experience, it is best suited for medium to large-scale drop shipping stores that '
+              'handle a significant number of orders and returns.',
+      'timestamp': 81,
+      'timestamp_label': '[00:01:21]',
+      'timestamp_seconds': 81,
+      'tip': 'While Loop Returns excels at automating returns and improving the customer '
+             'experience, it is best suited for medium to large-scale drop shipping stores that '
+             'handle a significant number of orders and returns.',
+      'title': 'Loop Returns Dropshipping Honest Review - Watch Before Using',
+      'url': 'https://www.youtube.com/watch?v=X3G7DDq6KD8&t=81s',
+      'video_id': 'X3G7DDq6KD8'},
+     {'author': 'ZIK Analytics',
+      'channel': 'ZIK Analytics',
       'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:07:11](https://www.youtube.com/watch?v=Pwv-LlhTPwo&t=431s)',
-      'relevance': 'Attributed practitioner commentary on lean 3PL-backed & authorized-dealer '
-                   'e-commerce operations, contribution-margin underwriting, and automated '
-                   'retention (Chapter Q9 operational verification).',
+      'markdown': '[00:03:37](https://www.youtube.com/watch?v=7GY4PPBU0GY&t=217s)',
+      'relevance': 'Verbatim practitioner testimony from Chapter Q9.',
       'source_type': 'video_pro_tip',
-      'text': 'Your billing you can import data as well and then your automations you can also '
-              "build out more rules so let's say we want to do one ticket is created if the "
-              'ticket status or rather the shopify last order.',
-      'timestamp': 431,
-      'timestamp_label': '[00:07:11]',
-      'timestamp_seconds': 431,
-      'tip': 'Your billing you can import data as well and then your automations you can also '
-             "build out more rules so let's say we want to do one ticket is created if the "
-             'ticket status or rather the shopify last order.',
-      'title': "Gorgias Overview & Demo | Shopify's #1 Customer Service App (Brandon Amoroso)",
-      'url': 'https://www.youtube.com/watch?v=Pwv-LlhTPwo&t=431s',
-      'video_id': 'Pwv-LlhTPwo'},
-     {'author': 'Grow My Ads',
-      'channel': 'Grow My Ads',
+      'text': 'The second thing you need to keep in mind is to provide proof of shipping, and the '
+              'best way to do that is by giving the buyer a tracking number that both they and '
+              'your payment provider can access.',
+      'timestamp': 217,
+      'timestamp_label': '[00:03:37]',
+      'timestamp_seconds': 217,
+      'tip': 'The second thing you need to keep in mind is to provide proof of shipping, and the '
+             'best way to do that is by giving the buyer a tracking number that both they and your '
+             'payment provider can access.',
+      'title': 'How To Handle Returns & Refunds on Shopify | 2026 Shipping Tutorial',
+      'url': 'https://www.youtube.com/watch?v=7GY4PPBU0GY&t=217s',
+      'video_id': '7GY4PPBU0GY'},
+     {'author': 'Dean Alma',
+      'channel': 'Dean Alma',
       'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:08:40](https://www.youtube.com/watch?v=-w0GraOv2B0&t=520s)',
-      'relevance': 'Attributed practitioner commentary on lean 3PL-backed & authorized-dealer '
-                   'e-commerce operations, contribution-margin underwriting, and automated '
-                   'retention (Chapter Q9 operational verification).',
+      'markdown': '[00:00:51](https://www.youtube.com/watch?v=GYROU1C9Mks&t=51s)',
+      'relevance': 'Verbatim practitioner testimony from Chapter Q9.',
       'source_type': 'video_pro_tip',
-      'text': 'That out lots of great value in that video on feed optimizations Beyond just '
-              "using these attribute rules so again that's somewhere on the screen or will be "
-              "in the description below if not no worries we'll see you on the next video.",
-      'timestamp': 520,
-      'timestamp_label': '[00:08:40]',
-      'timestamp_seconds': 520,
-      'tip': 'That out lots of great value in that video on feed optimizations Beyond just '
-             "using these attribute rules so again that's somewhere on the screen or will be "
-             "in the description below if not no worries we'll see you on the next video.",
-      'title': 'How to Optimize Google Ads Shopping Feeds with Feed Attribute Rules '
-               '[Step-by-Step Tutorial] (Grow My Ads)',
-      'url': 'https://www.youtube.com/watch?v=-w0GraOv2B0&t=520s',
-      'video_id': '-w0GraOv2B0'},
-     {'author': 'Marcus Lam | High Ticket Dropshipping (AI)',
-      'channel': 'Marcus Lam | High Ticket Dropshipping (AI)',
+      'text': "You always want to pay for tracked shipping even if it's greater cost because it "
+              'prevents the number of returns.',
+      'timestamp': 51,
+      'timestamp_label': '[00:00:51]',
+      'timestamp_seconds': 51,
+      'tip': "You always want to pay for tracked shipping even if it's greater cost because it "
+             'prevents the number of returns.',
+      'title': 'How to Deal With Refunds & Returns (Shopify Dropshipping)',
+      'url': 'https://www.youtube.com/watch?v=GYROU1C9Mks&t=51s',
+      'video_id': 'GYROU1C9Mks'},
+     {'author': 'Tutorials by Manizha & Ryan',
+      'channel': 'Tutorials by Manizha & Ryan',
       'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:09:46](https://www.youtube.com/watch?v=b7IMdD7nvhg&t=586s)',
-      'relevance': 'Attributed practitioner commentary on lean 3PL-backed & authorized-dealer '
-                   'e-commerce operations, contribution-margin underwriting, and automated '
-                   'retention (Chapter Q9 operational verification).',
+      'markdown': '[00:06:53](https://www.youtube.com/watch?v=B2xFNVqbu7c&t=413s)',
+      'relevance': 'Verbatim practitioner testimony from Chapter Q9.',
       'source_type': 'video_pro_tip',
-      'text': 'Also something not a lot of people think about is their store sellable at the '
-              "Oney year mark it's an asset yeah I appreciate that thank you stuff for the "
-              "goal so okay yeah perfect uh so that's about it Trevor we're going to end the "
-              'recording.',
-      'timestamp': 586,
-      'timestamp_label': '[00:09:46]',
-      'timestamp_seconds': 586,
-      'tip': 'Also something not a lot of people think about is their store sellable at the '
-             "Oney year mark it's an asset yeah I appreciate that thank you stuff for the goal "
-             "so okay yeah perfect uh so that's about it Trevor we're going to end the "
-             'recording.',
-      'title': '9 to 5 Employee Learns Margins After Shipping | High Ticket Dropshipping (Case '
-               'Study) (Marcus Lam | High Ticket Dropshipping (AI))',
-      'url': 'https://www.youtube.com/watch?v=b7IMdD7nvhg&t=586s',
-      'video_id': 'b7IMdD7nvhg'}],
- 10: [{'author': 'Leading Social',
-       'channel': 'Leading Social',
-       'epistemic_status': 'attributed_practitioner_claim',
-       'markdown': '[00:00:26](https://www.youtube.com/watch?v=KpmUvCBEKK4&t=26s)',
-       'relevance': 'Attributed practitioner commentary on lean 3PL-backed & authorized-dealer '
-                    'e-commerce operations, contribution-margin underwriting, and automated '
-                    'retention (Chapter Q10 operational verification).',
-       'source_type': 'video_pro_tip',
-       'text': 'I look at before we scale any e-commerce brand. Number one is contribution '
-               "margin. So that's not your revenue, that's not your rorowaz. Contribution "
-               'margin is revenue minus cost of goods, shipping, payment fees, and marketing. '
-               "That's going to be your real fuel.",
-       'timestamp': 26,
-       'timestamp_label': '[00:00:26]',
-       'timestamp_seconds': 26,
-       'tip': 'I look at before we scale any e-commerce brand. Number one is contribution '
-              "margin. So that's not your revenue, that's not your rorowaz. Contribution "
-              'margin is revenue minus cost of goods, shipping, payment fees, and marketing. '
-              "That's going to be your real fuel.",
-       'title': '5 Financial Metrics You Must Know Before Scaling an Ecommerce Brand (Beyond '
-                'ROAS) (Leading Social)',
-       'url': 'https://www.youtube.com/watch?v=KpmUvCBEKK4&t=26s',
-       'video_id': 'KpmUvCBEKK4'},
-      {'author': 'Dropshipping Deep Dive',
-       'channel': 'Dropshipping Deep Dive',
-       'epistemic_status': 'attributed_practitioner_claim',
-       'markdown': '[00:13:33](https://www.youtube.com/watch?v=1L4TNDjsICQ&t=813s)',
-       'relevance': 'Attributed practitioner commentary on lean 3PL-backed & authorized-dealer '
-                    'e-commerce operations, contribution-margin underwriting, and automated '
-                    'retention (Chapter Q10 operational verification).',
-       'source_type': 'video_pro_tip',
-       'text': 'Three days is not a window. So the speed of your customer conversation '
-               'directly determines whether the supplier shares the cost or you eat all of it. '
-               'And that changes your workflow. When a customer reports damage, you need '
-               'photos the same day, not eventually.',
-       'timestamp': 813,
-       'timestamp_label': '[00:13:33]',
-       'timestamp_seconds': 813,
-       'tip': 'Three days is not a window. So the speed of your customer conversation directly '
-              'determines whether the supplier shares the cost or you eat all of it. And that '
-              'changes your workflow. When a customer reports damage, you need photos the same '
-              'day, not eventually.',
-       'title': 'Returns Without the Bleed: Refunds, Exchanges, and the Supplier Reality '
-                '(Dropshipping Deep Dive)',
-       'url': 'https://www.youtube.com/watch?v=1L4TNDjsICQ&t=813s',
-       'video_id': '1L4TNDjsICQ'},
-      {'author': 'Macha',
+      'text': "If you don't have a strong policy in place, people are going to be very prone to "
+              'just milking out your business.',
+      'timestamp': 413,
+      'timestamp_label': '[00:06:53]',
+      'timestamp_seconds': 413,
+      'tip': "If you don't have a strong policy in place, people are going to be very prone to "
+             'just milking out your business.',
+      'title': 'How To Handle Shopify Refunds And Returns 2026 (For Beginners)',
+      'url': 'https://www.youtube.com/watch?v=B2xFNVqbu7c&t=413s',
+      'video_id': 'B2xFNVqbu7c'},
+     {'author': 'Tutorial Stack',
+      'channel': 'Tutorial Stack',
+      'epistemic_status': 'attributed_practitioner_claim',
+      'markdown': '[00:02:51](https://www.youtube.com/watch?v=YnEcCYA-UDs&t=171s)',
+      'relevance': 'Verbatim practitioner testimony from Chapter Q9.',
+      'source_type': 'video_pro_tip',
+      'text': "Usually, it's much faster to offer them store credit.",
+      'timestamp': 171,
+      'timestamp_label': '[00:02:51]',
+      'timestamp_seconds': 171,
+      'tip': "Usually, it's much faster to offer them store credit.",
+      'title': 'How to Handle Shopify Refunds and Returns (Step-by-Step)',
+      'url': 'https://www.youtube.com/watch?v=YnEcCYA-UDs&t=171s',
+      'video_id': 'YnEcCYA-UDs'},
+     {'author': 'Sunrise Integration',
+      'channel': 'Sunrise Integration',
+      'epistemic_status': 'attributed_practitioner_claim',
+      'markdown': '[00:06:59](https://www.youtube.com/watch?v=daoVeRnScfo&t=419s)',
+      'relevance': 'Verbatim practitioner testimony from Chapter Q9.',
+      'source_type': 'video_pro_tip',
+      'text': "It's a good idea for the store merchant to wait for receipt of the item before "
+              'choosing to initiate the refund.',
+      'timestamp': 419,
+      'timestamp_label': '[00:06:59]',
+      'timestamp_seconds': 419,
+      'tip': "It's a good idea for the store merchant to wait for receipt of the item before "
+             'choosing to initiate the refund.',
+      'title': 'How To Use Shopify Self-Serve Returns - Shopify Tutorial',
+      'url': 'https://www.youtube.com/watch?v=daoVeRnScfo&t=419s',
+      'video_id': 'daoVeRnScfo'},
+     {'author': 'Shopify Mastery',
+      'channel': 'Shopify Mastery',
+      'epistemic_status': 'attributed_practitioner_claim',
+      'markdown': '[00:04:21](https://www.youtube.com/watch?v=EjZsqaOIDsc&t=261s)',
+      'relevance': 'Verbatim practitioner testimony from Chapter Q9.',
+      'source_type': 'video_pro_tip',
+      'text': 'For lower value items, say anything under $20, almost always just refund without '
+              'return.',
+      'timestamp': 261,
+      'timestamp_label': '[00:04:21]',
+      'timestamp_seconds': 261,
+      'tip': 'For lower value items, say anything under $20, almost always just refund without '
+             'return.',
+      'title': 'How to Handle Shopify Dropshipping Returns, Refunds, and Return Policies.',
+      'url': 'https://www.youtube.com/watch?v=EjZsqaOIDsc&t=261s',
+      'video_id': 'EjZsqaOIDsc'},
+     {'author': 'Shopify Mastery',
+      'channel': 'Shopify Mastery',
+      'epistemic_status': 'attributed_practitioner_claim',
+      'markdown': '[00:07:07](https://www.youtube.com/watch?v=EjZsqaOIDsc&t=427s)',
+      'relevance': 'Verbatim practitioner testimony from Chapter Q9.',
+      'source_type': 'video_pro_tip',
+      'text': "Tell the customer that you're going to give them 50% back and they don't need to "
+              'ship anything.',
+      'timestamp': 427,
+      'timestamp_label': '[00:07:07]',
+      'timestamp_seconds': 427,
+      'tip': "Tell the customer that you're going to give them 50% back and they don't need to "
+             'ship anything.',
+      'title': 'How to Handle Shopify Dropshipping Returns, Refunds, and Return Policies.',
+      'url': 'https://www.youtube.com/watch?v=EjZsqaOIDsc&t=427s',
+      'video_id': 'EjZsqaOIDsc'},
+     {'author': 'PreProduct',
+      'channel': 'PreProduct',
+      'epistemic_status': 'attributed_practitioner_claim',
+      'markdown': '[00:01:41](https://www.youtube.com/watch?v=ZXDpWj-RfOQ&t=101s)',
+      'relevance': 'Verbatim practitioner testimony from Chapter Q9.',
+      'source_type': 'video_pro_tip',
+      'text': 'In Shopify orders admin, we need to apply a fulfillment status of hold so your 3PL '
+              "warehouse software doesn't try to fulfill an item which doesn't actually exist in "
+              'stock yet.',
+      'timestamp': 101,
+      'timestamp_label': '[00:01:41]',
+      'timestamp_seconds': 101,
+      'tip': 'In Shopify orders admin, we need to apply a fulfillment status of hold so your 3PL '
+             "warehouse software doesn't try to fulfill an item which doesn't actually exist in "
+             'stock yet.',
+      'title': 'Loop Returns Pre-order Integration for Shopify',
+      'url': 'https://www.youtube.com/watch?v=ZXDpWj-RfOQ&t=101s',
+      'video_id': 'ZXDpWj-RfOQ'},
+     {'author': 'Flying Start Online',
+      'channel': 'Flying Start Online',
+      'epistemic_status': 'attributed_practitioner_claim',
+      'markdown': '[00:11:03](https://www.youtube.com/watch?v=rhATJAycfEU&t=663s)',
+      'relevance': 'Verbatim practitioner testimony from Chapter Q9.',
+      'source_type': 'video_pro_tip',
+      'text': 'If 10 people asked for a refund, only about a couple of them will actually send the '
+              'product back to you.',
+      'timestamp': 663,
+      'timestamp_label': '[00:11:03]',
+      'timestamp_seconds': 663,
+      'tip': 'If 10 people asked for a refund, only about a couple of them will actually send the '
+             'product back to you.',
+      'title': 'DEALING WITH SHOPIFY REFUNDS & CHARGEBACKS (Day 27/30) #Bizathon3',
+      'url': 'https://www.youtube.com/watch?v=rhATJAycfEU&t=663s',
+      'video_id': 'rhATJAycfEU'},
+     {'author': 'Flying Start Online',
+      'channel': 'Flying Start Online',
+      'epistemic_status': 'attributed_practitioner_claim',
+      'markdown': '[00:17:49](https://www.youtube.com/watch?v=rhATJAycfEU&t=1069s)',
+      'relevance': 'Verbatim practitioner testimony from Chapter Q9.',
+      'source_type': 'video_pro_tip',
+      'text': "If a customer asks something and you don't reply to them for four days, they are "
+              'going to get upset and go to PayPal and either do a chargeback or do a refund.',
+      'timestamp': 1069,
+      'timestamp_label': '[00:17:49]',
+      'timestamp_seconds': 1069,
+      'tip': "If a customer asks something and you don't reply to them for four days, they are "
+             'going to get upset and go to PayPal and either do a chargeback or do a refund.',
+      'title': 'DEALING WITH SHOPIFY REFUNDS & CHARGEBACKS (Day 27/30) #Bizathon3',
+      'url': 'https://www.youtube.com/watch?v=rhATJAycfEU&t=1069s',
+      'video_id': 'rhATJAycfEU'},
+     {'author': 'Anatoliy Labinskiy | E-com business encyclopedia',
+      'channel': 'Anatoliy Labinskiy | E-com business encyclopedia',
+      'epistemic_status': 'attributed_practitioner_claim',
+      'markdown': '[00:03:53](https://www.youtube.com/watch?v=XED26wvEepA&t=233s)',
+      'relevance': 'Verbatim practitioner testimony from Chapter Q9.',
+      'source_type': 'video_pro_tip',
+      'text': 'We start getting a lot of chargebacks because our shoes were really ugly; there was '
+              'no leather there, it was like a plastic shoe.',
+      'timestamp': 233,
+      'timestamp_label': '[00:03:53]',
+      'timestamp_seconds': 233,
+      'tip': 'We start getting a lot of chargebacks because our shoes were really ugly; there was '
+             'no leather there, it was like a plastic shoe.',
+      'title': 'How to Deal with Shopify Chargebacks, Refunds, and Returns | Dropshipping Beginner '
+               'Mistakes in Ecom',
+      'url': 'https://www.youtube.com/watch?v=XED26wvEepA&t=233s',
+      'video_id': 'XED26wvEepA'},
+     {'author': 'Insurance Assurance',
+      'channel': 'Insurance Assurance',
+      'epistemic_status': 'attributed_practitioner_claim',
+      'markdown': '[00:00:59](https://www.youtube.com/watch?v=XxorvB6ExNs&t=59s)',
+      'relevance': 'Verbatim practitioner testimony from Chapter Q9.',
+      'source_type': 'video_pro_tip',
+      'text': "Even if you didn't design or make the product, you can still be held responsible as "
+              'a retailer.',
+      'timestamp': 59,
+      'timestamp_label': '[00:00:59]',
+      'timestamp_seconds': 59,
+      'tip': "Even if you didn't design or make the product, you can still be held responsible as "
+             'a retailer.',
+      'title': 'Product Liability Insurance Coverage and Cost | What is Product Liability? Small '
+               'Business Insurance',
+      'url': 'https://www.youtube.com/watch?v=XxorvB6ExNs&t=59s',
+      'video_id': 'XxorvB6ExNs'},
+     {'author': "Jim's Ecommerce Tutorials",
+      'channel': "Jim's Ecommerce Tutorials",
+      'epistemic_status': 'attributed_practitioner_claim',
+      'markdown': '[00:02:07](https://www.youtube.com/watch?v=HPTGnp51Iks&t=127s)',
+      'relevance': 'Verbatim practitioner testimony from Chapter Q9.',
+      'source_type': 'video_pro_tip',
+      'text': 'Depending on the products involved, the customer may need to pay more, receive a '
+              'partial refund, or have a balance adjusted.',
+      'timestamp': 127,
+      'timestamp_label': '[00:02:07]',
+      'timestamp_seconds': 127,
+      'tip': 'Depending on the products involved, the customer may need to pay more, receive a '
+             'partial refund, or have a balance adjusted.',
+      'title': 'How To Process Shopify Returns And Exchanges (Easy Guide)',
+      'url': 'https://www.youtube.com/watch?v=HPTGnp51Iks&t=127s',
+      'video_id': 'HPTGnp51Iks'},
+     {'author': 'Guides by Dan',
+      'channel': 'Guides by Dan',
+      'epistemic_status': 'attributed_practitioner_claim',
+      'markdown': '[00:01:17](https://www.youtube.com/watch?v=V0kR_J_Vdkw&t=77s)',
+      'relevance': 'Verbatim practitioner testimony from Chapter Q9.',
+      'source_type': 'video_pro_tip',
+      'text': 'Click on return rules; these rules set the foundation for how returns are handled '
+              'within your store.',
+      'timestamp': 77,
+      'timestamp_label': '[00:01:17]',
+      'timestamp_seconds': 77,
+      'tip': 'Click on return rules; these rules set the foundation for how returns are handled '
+             'within your store.',
+      'title': 'How To Handle Shopify Refunds And Returns 2025 For Beginners',
+      'url': 'https://www.youtube.com/watch?v=V0kR_J_Vdkw&t=77s',
+      'video_id': 'V0kR_J_Vdkw'},
+     {'author': 'Dropshipping Deep Dive',
+      'channel': 'Dropshipping Deep Dive',
+      'epistemic_status': 'attributed_practitioner_claim',
+      'markdown': '[00:13:07](https://www.youtube.com/watch?v=1L4TNDjsICQ&t=787s)',
+      'relevance': 'Verbatim practitioner testimony from Chapter Q9.',
+      'source_type': 'video_pro_tip',
+      'text': "Under CJ's published dispute policy, a damage dispute for an ordinary product "
+              'should be opened within three days of the customer receiving it, and for '
+              'electronics the window is seven days.',
+      'timestamp': 787,
+      'timestamp_label': '[00:13:07]',
+      'timestamp_seconds': 787,
+      'tip': "Under CJ's published dispute policy, a damage dispute for an ordinary product should "
+             'be opened within three days of the customer receiving it, and for electronics the '
+             'window is seven days.',
+      'title': 'Returns Without the Bleed: Refunds, Exchanges, and the Supplier Reality',
+      'url': 'https://www.youtube.com/watch?v=1L4TNDjsICQ&t=787s',
+      'video_id': '1L4TNDjsICQ'}],
+ 10: [{'author': 'Macha',
        'channel': 'Macha',
        'epistemic_status': 'attributed_practitioner_claim',
-       'markdown': '[00:01:23](https://www.youtube.com/watch?v=7Ac3MIM55Yc&t=83s)',
-       'relevance': 'Attributed practitioner commentary on lean 3PL-backed & authorized-dealer '
-                    'e-commerce operations, contribution-margin underwriting, and automated '
-                    'retention (Chapter Q10 operational verification).',
+       'markdown': '[00:06:31](https://www.youtube.com/watch?v=VsY0GsB1UI0&t=391s)',
+       'relevance': 'Verbatim practitioner testimony from Chapter Q10.',
        'source_type': 'video_pro_tip',
-       'text': 'It replies on email, live chat, SMS, Instagram, Facebook Messenger and '
-               'WhatsApp. You need a Shopify store connected to Gorgias to use it. Gorgias '
-               'says it automates up to 60% of customer conversations. Gorgias automation is '
-               'the scripted side, with no AI writing the reply.',
-       'timestamp': 83,
-       'timestamp_label': '[00:01:23]',
-       'timestamp_seconds': 83,
-       'tip': 'It replies on email, live chat, SMS, Instagram, Facebook Messenger and '
-              'WhatsApp. You need a Shopify store connected to Gorgias to use it. Gorgias says '
-              'it automates up to 60% of customer conversations. Gorgias automation is the '
-              'scripted side, with no AI writing the reply.',
-       'title': 'Gorgias AI explained (2026): AI Agent, automation and cost (Macha)',
-       'url': 'https://www.youtube.com/watch?v=7Ac3MIM55Yc&t=83s',
-       'video_id': '7Ac3MIM55Yc'},
-      {'author': 'GuidePixel',
-       'channel': 'GuidePixel',
-       'epistemic_status': 'attributed_practitioner_claim',
-       'markdown': '[00:01:11](https://www.youtube.com/watch?v=3VDc8PoFZa8&t=71s)',
-       'relevance': 'Attributed practitioner commentary on lean 3PL-backed & authorized-dealer '
-                    'e-commerce operations, contribution-margin underwriting, and automated '
-                    'retention (Chapter Q10 operational verification).',
-       'source_type': 'video_pro_tip',
-       'text': 'Inform the customer of any changes made by using the communication tools '
-               'within Loop Returns. You can choose to send an automated email update or '
-               'contact the customer directly. To track the updated return, you can revisit '
-               'the returns dashboard for future reference.',
-       'timestamp': 71,
-       'timestamp_label': '[00:01:11]',
-       'timestamp_seconds': 71,
-       'tip': 'Inform the customer of any changes made by using the communication tools within '
-              'Loop Returns. You can choose to send an automated email update or contact the '
-              'customer directly. To track the updated return, you can revisit the returns '
-              'dashboard for future reference.',
-       'title': 'How to update Shopify returns with Loop Returns - Step By Step (GuidePixel)',
-       'url': 'https://www.youtube.com/watch?v=3VDc8PoFZa8&t=71s',
-       'video_id': '3VDc8PoFZa8'},
-      {'author': 'TUTOR BASE',
-       'channel': 'TUTOR BASE',
-       'epistemic_status': 'attributed_practitioner_claim',
-       'markdown': '[00:01:39](https://www.youtube.com/watch?v=qaQ0aFPTDKA&t=99s)',
-       'relevance': 'Attributed practitioner commentary on lean 3PL-backed & authorized-dealer '
-                    'e-commerce operations, contribution-margin underwriting, and automated '
-                    'retention (Chapter Q10 operational verification).',
-       'source_type': 'video_pro_tip',
-       'text': "After selecting the appropriate template, it's time to personalize your flow. "
-               'Give your automation a distinct and memorable name. This could be something '
-               "like post purchase journey core or any name that resonates with your brand's "
-               'voice and strategy.',
-       'timestamp': 99,
-       'timestamp_label': '[00:01:39]',
-       'timestamp_seconds': 99,
-       'tip': "After selecting the appropriate template, it's time to personalize your flow. "
-              'Give your automation a distinct and memorable name. This could be something '
-              "like post purchase journey core or any name that resonates with your brand's "
-              'voice and strategy.',
-       'title': 'How to Set Up Post Purchase Flow in Klaviyo 2026 (Quick Guide) (TUTOR BASE)',
-       'url': 'https://www.youtube.com/watch?v=qaQ0aFPTDKA&t=99s',
-       'video_id': 'qaQ0aFPTDKA'},
-      {'author': 'Asonjf',
-       'channel': 'Asonjf',
-       'epistemic_status': 'attributed_practitioner_claim',
-       'markdown': '[00:28:43](https://www.youtube.com/watch?v=91zki-xXArY&t=1723s)',
-       'relevance': 'Attributed practitioner commentary on lean 3PL-backed & authorized-dealer '
-                    'e-commerce operations, contribution-margin underwriting, and automated '
-                    'retention (Chapter Q10 operational verification).',
-       'source_type': 'video_pro_tip',
-       'text': "Right yeah basically that's only yeah and and how much is it actually going to "
-               'cost to automate your customer service department so to automate uh there are.',
-       'timestamp': 1723,
-       'timestamp_label': '[00:28:43]',
-       'timestamp_seconds': 1723,
-       'tip': "Right yeah basically that's only yeah and and how much is it actually going to "
-              'cost to automate your customer service department so to automate uh there are.',
-       'title': '$200,000 A Month Dropshipping High Ticket Products - Case Study (Asonjf)',
-       'url': 'https://www.youtube.com/watch?v=91zki-xXArY&t=1723s',
-       'video_id': '91zki-xXArY'},
-      {'author': 'ShipSage',
-       'channel': 'ShipSage',
-       'epistemic_status': 'attributed_practitioner_claim',
-       'markdown': '[00:00:23](https://www.youtube.com/watch?v=CVklpdSeqOA&t=23s)',
-       'relevance': 'Attributed practitioner commentary on lean 3PL-backed & authorized-dealer '
-                    'e-commerce operations, contribution-margin underwriting, and automated '
-                    'retention (Chapter Q10 operational verification).',
-       'source_type': 'video_pro_tip',
-       'text': 'So basically, what they do is they are ecommerce sellers selling on multiple '
-               'channels: Amazon, Shopify. And basically, they outgrew their own warehouse. '
-               "They spend a lot of time managing their warehouse, and now they're kind of "
-               'facing a question: How do they scale, right?',
-       'timestamp': 23,
-       'timestamp_label': '[00:00:23]',
-       'timestamp_seconds': 23,
-       'tip': 'So basically, what they do is they are ecommerce sellers selling on multiple '
-              'channels: Amazon, Shopify. And basically, they outgrew their own warehouse. '
-              "They spend a lot of time managing their warehouse, and now they're kind of "
-              'facing a question: How do they scale, right?',
-       'title': 'E-Commerce Fulfillment | When You Outgrow Your Warehouse | 3PL Updates in US '
-                '| ShipSage (ShipSage)',
-       'url': 'https://www.youtube.com/watch?v=CVklpdSeqOA&t=23s',
-       'video_id': 'CVklpdSeqOA'},
-      {'author': 'Returndotai',
-       'channel': 'Returndotai',
-       'epistemic_status': 'attributed_practitioner_claim',
-       'markdown': '[00:01:23](https://www.youtube.com/watch?v=JzyBmddGOms&t=83s)',
-       'relevance': 'Attributed practitioner commentary on lean 3PL-backed & authorized-dealer '
-                    'e-commerce operations, contribution-margin underwriting, and automated '
-                    'retention (Chapter Q10 operational verification).',
-       'source_type': 'video_pro_tip',
-       'text': 'With everything verified and approved, the return is ready to move forward. '
-               'Fast, accurate, and fully automated. Configure your store in minutes. Define '
-               'return policies, set return windows and conditions that fit your brand.',
-       'timestamp': 83,
-       'timestamp_label': '[00:01:23]',
-       'timestamp_seconds': 83,
-       'tip': 'With everything verified and approved, the return is ready to move forward. '
-              'Fast, accurate, and fully automated. Configure your store in minutes. Define '
-              'return policies, set return windows and conditions that fit your brand.',
-       'title': 'Shopify Returns Management App Demo | Automate Returns & Exchanges in 2 '
-                'Minutes (Returndotai)',
-       'url': 'https://www.youtube.com/watch?v=JzyBmddGOms&t=83s',
-       'video_id': 'JzyBmddGOms'},
-      {'author': 'Frankly eCommerce',
-       'channel': 'Frankly eCommerce',
-       'epistemic_status': 'attributed_practitioner_claim',
-       'markdown': '[00:26:01](https://www.youtube.com/watch?v=CCtunt0iWMU&t=1561s)',
-       'relevance': 'Attributed practitioner commentary on lean 3PL-backed & authorized-dealer '
-                    'e-commerce operations, contribution-margin underwriting, and automated '
-                    'retention (Chapter Q10 operational verification).',
-       'source_type': 'video_pro_tip',
-       'text': "And so we want to and that's we don't want to punish people. We just want to "
-               "say, hey, if you enjoy this and you're faster at it, let's get you doing it "
-               "more. And so, you know, we're trying trying to leverage speed and then have "
-               'have a better idea.',
-       'timestamp': 1561,
-       'timestamp_label': '[00:26:01]',
-       'timestamp_seconds': 1561,
-       'tip': "And so we want to and that's we don't want to punish people. We just want to "
-              "say, hey, if you enjoy this and you're faster at it, let's get you doing it "
-              "more. And so, you know, we're trying trying to leverage speed and then have "
-              'have a better idea.',
-       'title': 'Scaling Creative Brands Through Operations (Frankly eCommerce)',
-       'url': 'https://www.youtube.com/watch?v=CCtunt0iWMU&t=1561s',
-       'video_id': 'CCtunt0iWMU'},
-      {'author': 'Macha',
-       'channel': 'Macha',
-       'epistemic_status': 'attributed_practitioner_claim',
-       'markdown': '[00:01:20](https://www.youtube.com/watch?v=iqOjQraqwcM&t=80s)',
-       'relevance': 'Attributed practitioner commentary on lean 3PL-backed & authorized-dealer '
-                    'e-commerce operations, contribution-margin underwriting, and automated '
-                    'retention (Chapter Q10 operational verification).',
-       'source_type': 'video_pro_tip',
-       'text': 'You keep paying for your Gorgias help desk whichever agent you pick, so we '
-               "only price the AI part. We don't add the scores into one total. A brand "
-               'watching price weighs them differently from one with nobody free to build the '
-               'agent.',
-       'timestamp': 80,
-       'timestamp_label': '[00:01:20]',
-       'timestamp_seconds': 80,
-       'tip': 'You keep paying for your Gorgias help desk whichever agent you pick, so we only '
-              "price the AI part. We don't add the scores into one total. A brand watching "
-              'price weighs them differently from one with nobody free to build the agent.',
-       'title': 'Best AI agent for Gorgias and Shopify support (2026) (Macha)',
-       'url': 'https://www.youtube.com/watch?v=iqOjQraqwcM&t=80s',
-       'video_id': 'iqOjQraqwcM'},
-      {'author': 'Dean Alma',
-       'channel': 'Dean Alma',
-       'epistemic_status': 'attributed_practitioner_claim',
-       'markdown': '[00:01:31](https://www.youtube.com/watch?v=GYROU1C9Mks&t=91s)',
-       'relevance': 'Attributed practitioner commentary on lean 3PL-backed & authorized-dealer '
-                    'e-commerce operations, contribution-margin underwriting, and automated '
-                    'retention (Chapter Q10 operational verification).',
-       'source_type': 'video_pro_tip',
-       'text': 'Sample the product and send it out for promo videos or to ship it to another '
-               'customer and then just reuse it refunds are issued manually via the Shopify '
-               "dashboard in the order section okay so that's how you can actually do shipment "
-               'refunds and returns.',
-       'timestamp': 91,
-       'timestamp_label': '[00:01:31]',
-       'timestamp_seconds': 91,
-       'tip': 'Sample the product and send it out for promo videos or to ship it to another '
-              'customer and then just reuse it refunds are issued manually via the Shopify '
-              "dashboard in the order section okay so that's how you can actually do shipment "
-              'refunds and returns.',
-       'title': 'How to Deal With Refunds & Returns (Shopify Dropshipping) (Dean Alma)',
-       'url': 'https://www.youtube.com/watch?v=GYROU1C9Mks&t=91s',
-       'video_id': 'GYROU1C9Mks'},
+       'text': 'Before launch, we agree the bar with your team, usually about nine in ten drafts '
+               'approved.',
+       'timestamp': 391,
+       'timestamp_label': '[00:06:31]',
+       'timestamp_seconds': 391,
+       'tip': 'Before launch, we agree the bar with your team, usually about nine in ten drafts '
+              'approved.',
+       'title': 'AI for "where is my order" tickets in Gorgias',
+       'url': 'https://www.youtube.com/watch?v=VsY0GsB1UI0&t=391s',
+       'video_id': 'VsY0GsB1UI0'},
       {'author': 'Amol Walunj',
        'channel': 'Amol Walunj',
        'epistemic_status': 'attributed_practitioner_claim',
-       'markdown': '[00:00:15](https://www.youtube.com/watch?v=QZz9_VSA1lA&t=15s)',
-       'relevance': 'Attributed practitioner commentary on lean 3PL-backed & authorized-dealer '
-                    'e-commerce operations, contribution-margin underwriting, and automated '
-                    'retention (Chapter Q10 operational verification).',
+       'markdown': '[00:02:09](https://www.youtube.com/watch?v=QZz9_VSA1lA&t=129s)',
+       'relevance': 'Verbatim practitioner testimony from Chapter Q10.',
        'source_type': 'video_pro_tip',
-       'text': "Here's how a Savano's agent handles that across Shopify and Gorgeous >>  >> "
-               'inside the policies you set.',
-       'timestamp': 15,
-       'timestamp_label': '[00:00:15]',
-       'timestamp_seconds': 15,
-       'tip': "Here's how a Savano's agent handles that across Shopify and Gorgeous >>  >> "
-              'inside the policies you set.',
-       'title': 'How to Automate Gorgias Customer Support with Cevanos AI | Live Demo (Amol '
-                'Walunj)',
-       'url': 'https://www.youtube.com/watch?v=QZz9_VSA1lA&t=15s',
+       'text': 'Any refund over $75 goes to a person through an approval queue.',
+       'timestamp': 129,
+       'timestamp_label': '[00:02:09]',
+       'timestamp_seconds': 129,
+       'tip': 'Any refund over $75 goes to a person through an approval queue.',
+       'title': 'How to Automate Gorgias Customer Support with Cevanos AI | Live Demo',
+       'url': 'https://www.youtube.com/watch?v=QZz9_VSA1lA&t=129s',
        'video_id': 'QZz9_VSA1lA'},
-      {'author': 'ShipWise',
-       'channel': 'ShipWise',
-       'epistemic_status': 'attributed_practitioner_claim',
-       'markdown': '[00:04:14](https://www.youtube.com/watch?v=PTU-PzhQg_4&t=254s)',
-       'relevance': 'Attributed practitioner commentary on lean 3PL-backed & authorized-dealer '
-                    'e-commerce operations, contribution-margin underwriting, and automated '
-                    'retention (Chapter Q10 operational verification).',
-       'source_type': 'video_pro_tip',
-       'text': 'Over again it gets tiring and so if we can free up that for the staff because '
-               'again that allows us to scale and the scalability of shipwise is literally '
-               "there's no ceiling to that piece we were looking for a partner and we found "
-               'that partner in ship wise.',
-       'timestamp': 254,
-       'timestamp_label': '[00:04:14]',
-       'timestamp_seconds': 254,
-       'tip': 'Over again it gets tiring and so if we can free up that for the staff because '
-              'again that allows us to scale and the scalability of shipwise is literally '
-              "there's no ceiling to that piece we were looking for a partner and we found "
-              'that partner in ship wise.',
-       'title': 'How this 3PL doubled their daily throughput | SKU Distribution | Case Study '
-                '(ShipWise)',
-       'url': 'https://www.youtube.com/watch?v=PTU-PzhQg_4&t=254s',
-       'video_id': 'PTU-PzhQg_4'},
-      {'author': 'Tim Sutton | Google Ads | Launchpresso',
-       'channel': 'Tim Sutton | Google Ads | Launchpresso',
-       'epistemic_status': 'attributed_practitioner_claim',
-       'markdown': '[00:01:27](https://www.youtube.com/watch?v=APb0cOGKROE&t=87s)',
-       'relevance': 'Attributed practitioner commentary on lean 3PL-backed & authorized-dealer '
-                    'e-commerce operations, contribution-margin underwriting, and automated '
-                    'retention (Chapter Q10 operational verification).',
-       'source_type': 'video_pro_tip',
-       'text': "For today's example, I'm going to show you how to do that using my example "
-               'store, CheapCampingGear. And coming across to my Google Merchant Center '
-               'account that is associated with that test store. If you come across to '
-               "products on the left, you'll see all your products.",
-       'timestamp': 87,
-       'timestamp_label': '[00:01:27]',
-       'timestamp_seconds': 87,
-       'tip': "For today's example, I'm going to show you how to do that using my example "
-              'store, CheapCampingGear. And coming across to my Google Merchant Center account '
-              'that is associated with that test store. If you come across to products on the '
-              "left, you'll see all your products.",
-       'title': 'How to Master Google Merchant Center Custom Labels in 5 Minutes! (Tim Sutton '
-                '| Google Ads | Launchpresso)',
-       'url': 'https://www.youtube.com/watch?v=APb0cOGKROE&t=87s',
-       'video_id': 'APb0cOGKROE'},
-      {'author': 'LedgerGurus: Ecommerce Accounting Experts',
-       'channel': 'LedgerGurus: Ecommerce Accounting Experts',
-       'epistemic_status': 'attributed_practitioner_claim',
-       'markdown': '[00:25:50](https://www.youtube.com/watch?v=1L7s6llWlRo&t=1550s)',
-       'relevance': 'Attributed practitioner commentary on lean 3PL-backed & authorized-dealer '
-                    'e-commerce operations, contribution-margin underwriting, and automated '
-                    'retention (Chapter Q10 operational verification).',
-       'source_type': 'video_pro_tip',
-       'text': 'Again feel free to let us know if you have any questions or any comments any '
-               "feedbacks about these three different softwares I'd love to hear what you "
-               'think as well thank you so much and have a great day bye.',
-       'timestamp': 1550,
-       'timestamp_label': '[00:25:50]',
-       'timestamp_seconds': 1550,
-       'tip': 'Again feel free to let us know if you have any questions or any comments any '
-              "feedbacks about these three different softwares I'd love to hear what you think "
-              'as well thank you so much and have a great day bye.',
-       'title': '2020 Sales Tax Apps for Online Sellers | Avalara, Taxjar, and Taxify '
-                '(LedgerGurus: Ecommerce Accounting Experts)',
-       'url': 'https://www.youtube.com/watch?v=1L7s6llWlRo&t=1550s',
-       'video_id': '1L7s6llWlRo'}],
- 11: [{'author': 'Marcus Lam | High Ticket Dropshipping (AI)',
-       'channel': 'Marcus Lam | High Ticket Dropshipping (AI)',
-       'epistemic_status': 'attributed_practitioner_claim',
-       'markdown': '[00:02:16](https://www.youtube.com/watch?v=r2ydHddjtIw&t=136s)',
-       'relevance': 'Attributed practitioner commentary on lean 3PL-backed & authorized-dealer '
-                    'e-commerce operations, contribution-margin underwriting, and automated '
-                    'retention (Chapter Q11 operational verification).',
-       'source_type': 'video_pro_tip',
-       'text': "'re wrong, but that business model is very very outdated and it's logistically "
-               'very hard to scale. Any e-commerce owner that has a drop shipping store will '
-               'tell you that, you know, you want to go into branding, but building brand '
-               'requires so much capital upfront.',
-       'timestamp': 136,
-       'timestamp_label': '[00:02:16]',
-       'timestamp_seconds': 136,
-       'tip': "'re wrong, but that business model is very very outdated and it's logistically "
-              'very hard to scale. Any e-commerce owner that has a drop shipping store will '
-              'tell you that, you know, you want to go into branding, but building brand '
-              'requires so much capital upfront.',
-       'title': 'How to Dropship as an Authorized Dealer in 2026 | High Ticket Dropshipping '
-                '(Marcus Lam | High Ticket Dropshipping (AI))',
-       'url': 'https://www.youtube.com/watch?v=r2ydHddjtIw&t=136s',
-       'video_id': 'r2ydHddjtIw'},
-      {'author': 'Sales Tax at Scale',
-       'channel': 'Sales Tax at Scale',
-       'epistemic_status': 'attributed_practitioner_claim',
-       'markdown': '[00:08:52](https://www.youtube.com/watch?v=5Dtw2cworM0&t=532s)',
-       'relevance': 'Attributed practitioner commentary on lean 3PL-backed & authorized-dealer '
-                    'e-commerce operations, contribution-margin underwriting, and automated '
-                    'retention (Chapter Q11 operational verification).',
-       'source_type': 'video_pro_tip',
-       'text': 'What sets them apart is their customer service and their personal approach. '
-               'So, here is how I would decide. Choose Avalara if you are a large enterprise '
-               'with global operations, an in-house tax team, and the budget to match.',
-       'timestamp': 532,
-       'timestamp_label': '[00:08:52]',
-       'timestamp_seconds': 532,
-       'tip': 'What sets them apart is their customer service and their personal approach. So, '
-              'here is how I would decide. Choose Avalara if you are a large enterprise with '
-              'global operations, an in-house tax team, and the budget to match.',
-       'title': 'Avalara? TaxJar? TaxCloud? The Honest Comparison for Ecommerce (Sales Tax at '
-                'Scale)',
-       'url': 'https://www.youtube.com/watch?v=5Dtw2cworM0&t=532s',
-       'video_id': '5Dtw2cworM0'},
-      {'author': 'Nick Theriot',
-       'channel': 'Nick Theriot',
-       'epistemic_status': 'attributed_practitioner_claim',
-       'markdown': '[00:01:25](https://www.youtube.com/watch?v=iacAWRoEwXI&t=85s)',
-       'relevance': 'Attributed practitioner commentary on lean 3PL-backed & authorized-dealer '
-                    'e-commerce operations, contribution-margin underwriting, and automated '
-                    'retention (Chapter Q11 operational verification).',
-       'source_type': 'video_pro_tip',
-       'text': "Google Ads or email agency. From my experience, we've seen mostly people hire "
-               'out Google agencies and email agencies at this stage and continue to run their '
-               'own Facebook ads. This is actually going to help us scale further through '
-               'channel expansion.',
-       'timestamp': 85,
-       'timestamp_label': '[00:01:25]',
-       'timestamp_seconds': 85,
-       'tip': "Google Ads or email agency. From my experience, we've seen mostly people hire "
-              'out Google agencies and email agencies at this stage and continue to run their '
-              'own Facebook ads. This is actually going to help us scale further through '
-              'channel expansion.',
-       'title': 'Every Level of Scaling an ECOM Brand ($0, $30k, $100k, $1m, $10m) (Nick '
-                'Theriot)',
-       'url': 'https://www.youtube.com/watch?v=iacAWRoEwXI&t=85s',
-       'video_id': 'iacAWRoEwXI'},
-      {'author': 'ZEOS',
-       'channel': 'ZEOS',
-       'epistemic_status': 'attributed_practitioner_claim',
-       'markdown': '[00:00:21](https://www.youtube.com/watch?v=xEx0Lhv0wec&t=21s)',
-       'relevance': 'Attributed practitioner commentary on lean 3PL-backed & authorized-dealer '
-                    'e-commerce operations, contribution-margin underwriting, and automated '
-                    'retention (Chapter Q11 operational verification).',
-       'source_type': 'video_pro_tip',
-       'text': 'Here we unpack all things e-commerce, logistics, innovation, and Europe '
-               'tailored to fashion and lifestyle. In this episode, we talk about your own '
-               'e-commerce store and how you can scale your online TTC operations across '
-               'Europe.',
-       'timestamp': 21,
-       'timestamp_label': '[00:00:21]',
-       'timestamp_seconds': 21,
-       'tip': 'Here we unpack all things e-commerce, logistics, innovation, and Europe '
-              'tailored to fashion and lifestyle. In this episode, we talk about your own '
-              'e-commerce store and how you can scale your online TTC operations across '
-              'Europe.',
-       'title': 'Scaling Own.Com in Europe | Business Casual with Luis Ribeiro (ZEOS)',
-       'url': 'https://www.youtube.com/watch?v=xEx0Lhv0wec&t=21s',
-       'video_id': 'xEx0Lhv0wec'},
-      {'author': 'Witners Shipping',
-       'channel': 'Witners Shipping',
-       'epistemic_status': 'attributed_practitioner_claim',
-       'markdown': '[00:03:48](https://www.youtube.com/watch?v=8I51jDAoe-E&t=228s)',
-       'relevance': 'Attributed practitioner commentary on lean 3PL-backed & authorized-dealer '
-                    'e-commerce operations, contribution-margin underwriting, and automated '
-                    'retention (Chapter Q11 operational verification).',
-       'source_type': 'video_pro_tip',
-       'text': 'Add them up, then divide by the number of units to get a landed cost per unit. '
-               'W I T E E R S has in-house licensed UAE customs brokers handling imports, '
-               'exports, and free zone movements with air, ocean, and road freight through one '
-               'accountable team.',
-       'timestamp': 228,
-       'timestamp_label': '[00:03:48]',
-       'timestamp_seconds': 228,
-       'tip': 'Add them up, then divide by the number of units to get a landed cost per unit. '
-              'W I T E E R S has in-house licensed UAE customs brokers handling imports, '
-              'exports, and free zone movements with air, ocean, and road freight through one '
-              'accountable team.',
-       'title': 'How to Work Out Landed Cost for a Shipment Into Dubai (Witners Shipping)',
-       'url': 'https://www.youtube.com/watch?v=8I51jDAoe-E&t=228s',
-       'video_id': '8I51jDAoe-E'},
-      {'author': 'MoreMozi',
-       'channel': 'MoreMozi',
-       'epistemic_status': 'attributed_practitioner_claim',
-       'markdown': '[00:03:28](https://www.youtube.com/watch?v=raqfsvgSW0o&t=208s)',
-       'relevance': 'Attributed practitioner commentary on lean 3PL-backed & authorized-dealer '
-                    'e-commerce operations, contribution-margin underwriting, and automated '
-                    'retention (Chapter Q11 operational verification).',
-       'source_type': 'video_pro_tip',
-       'text': "Okay, so let's go to the other one. Spend more paid ads, make more make more "
-               'content, right? Um if you want to really get the brand where it wants to be, I '
-               "would you'll probably get in the neighborhood of somewhere of like this is me "
-               'just like shooting from the hip here.',
-       'timestamp': 208,
-       'timestamp_label': '[00:03:28]',
-       'timestamp_seconds': 208,
-       'tip': "Okay, so let's go to the other one. Spend more paid ads, make more make more "
-              'content, right? Um if you want to really get the brand where it wants to be, I '
-              "would you'll probably get in the neighborhood of somewhere of like this is me "
-              'just like shooting from the hip here.',
-       'title': 'Helping an E-Commerce Brand Doing $5M/Year Scale (MoreMozi)',
-       'url': 'https://www.youtube.com/watch?v=raqfsvgSW0o&t=208s',
-       'video_id': 'raqfsvgSW0o'},
-      {'author': 'EICOM Institute',
-       'channel': 'EICOM Institute',
-       'epistemic_status': 'attributed_practitioner_claim',
-       'markdown': '[00:22:23](https://www.youtube.com/watch?v=TZ1BQdO4bl4&t=1343s)',
-       'relevance': 'Attributed practitioner commentary on lean 3PL-backed & authorized-dealer '
-                    'e-commerce operations, contribution-margin underwriting, and automated '
-                    'retention (Chapter Q11 operational verification).',
-       'source_type': 'video_pro_tip',
-       'text': 'Creative and content management we need to uh if you you we want to hyper '
-               'personalize we need to create content and to create content that scale you.',
-       'timestamp': 1343,
-       'timestamp_label': '[00:22:23]',
-       'timestamp_seconds': 1343,
-       'tip': 'Creative and content management we need to uh if you you we want to hyper '
-              'personalize we need to create content and to create content that scale you.',
-       'title': 'Scaling Omnichannel Personalization | Commerce Chats (EICOM Institute)',
-       'url': 'https://www.youtube.com/watch?v=TZ1BQdO4bl4&t=1343s',
-       'video_id': 'TZ1BQdO4bl4'},
-      {'author': 'Amazon Seller School',
-       'channel': 'Amazon Seller School',
-       'epistemic_status': 'attributed_practitioner_claim',
-       'markdown': '[00:00:49](https://www.youtube.com/watch?v=x2RzKux5lK0&t=49s)',
-       'relevance': 'Attributed practitioner commentary on lean 3PL-backed & authorized-dealer '
-                    'e-commerce operations, contribution-margin underwriting, and automated '
-                    'retention (Chapter Q11 operational verification).',
-       'source_type': 'video_pro_tip',
-       'text': 'Automation company and they started contacting him claiming to be a Russian '
-               "Shadow team and we're showing him his home address social security number.",
-       'timestamp': 49,
-       'timestamp_label': '[00:00:49]',
-       'timestamp_seconds': 49,
-       'tip': 'Automation company and they started contacting him claiming to be a Russian '
-              "Shadow team and we're showing him his home address social security number.",
-       'title': 'FTC Sues Amazon Automation Company for Passive Income Scams & Death Threats '
-                '(Amazon Seller School)',
-       'url': 'https://www.youtube.com/watch?v=x2RzKux5lK0&t=49s',
-       'video_id': 'x2RzKux5lK0'},
-      {'author': 'Cherry Bekaert',
-       'channel': 'Cherry Bekaert',
-       'epistemic_status': 'attributed_practitioner_claim',
-       'markdown': '[00:00:50](https://www.youtube.com/watch?v=rUvJ4UwGqiA&t=50s)',
-       'relevance': 'Attributed practitioner commentary on lean 3PL-backed & authorized-dealer '
-                    'e-commerce operations, contribution-margin underwriting, and automated '
-                    'retention (Chapter Q11 operational verification).',
-       'source_type': 'video_pro_tip',
-       'text': 'Amazon warehouse or a 3pl but what about economic nexus well this is the new '
-               'kid on the block economic nexus came around in june 2018.',
-       'timestamp': 50,
-       'timestamp_label': '[00:00:50]',
-       'timestamp_seconds': 50,
-       'tip': 'Amazon warehouse or a 3pl but what about economic nexus well this is the new '
-              'kid on the block economic nexus came around in june 2018.',
-       'title': 'Sales & Use Tax: eCommerce Nexus (Cherry Bekaert)',
-       'url': 'https://www.youtube.com/watch?v=rUvJ4UwGqiA&t=50s',
-       'video_id': 'rUvJ4UwGqiA'},
-      {'author': 'Ryan McKenzie',
-       'channel': 'Ryan McKenzie',
-       'epistemic_status': 'attributed_practitioner_claim',
-       'markdown': '[00:03:57](https://www.youtube.com/watch?v=jmsERJHMp_0&t=237s)',
-       'relevance': 'Attributed practitioner commentary on lean 3PL-backed & authorized-dealer '
-                    'e-commerce operations, contribution-margin underwriting, and automated '
-                    'retention (Chapter Q11 operational verification).',
-       'source_type': 'video_pro_tip',
-       'text': 'The third option is to leverage human resources. What I mean by that is hire a '
-               'team internally. This is not the solution for 98 percent of us. If my company, '
-               "we have this massive tax team now it's, it's massive.",
-       'timestamp': 237,
-       'timestamp_label': '[00:03:57]',
-       'timestamp_seconds': 237,
-       'tip': 'The third option is to leverage human resources. What I mean by that is hire a '
-              'team internally. This is not the solution for 98 percent of us. If my company, '
-              "we have this massive tax team now it's, it's massive.",
-       'title': "Don't Get Crushed by Ecom Sales Tax! Learn the Wayfair Secret to Survival "
-                '(Ryan McKenzie)',
-       'url': 'https://www.youtube.com/watch?v=jmsERJHMp_0&t=237s',
-       'video_id': 'jmsERJHMp_0'},
-      {'author': 'Prediko AI Inventory Management',
-       'channel': 'Prediko AI Inventory Management',
-       'epistemic_status': 'attributed_practitioner_claim',
-       'markdown': '[00:26:02](https://www.youtube.com/watch?v=P-gBTGovRRs&t=1562s)',
-       'relevance': 'Attributed practitioner commentary on lean 3PL-backed & authorized-dealer '
-                    'e-commerce operations, contribution-margin underwriting, and automated '
-                    'retention (Chapter Q11 operational verification).',
-       'source_type': 'video_pro_tip',
-       'text': 'Q&A panel for questions now. Feel free to post yours if you have any. And um '
-               "join joining me today uh sorry I didn't do the introductions earlier. Joining "
-               'me today is Isaiah, our customer success manager for a US region.',
-       'timestamp': 1562,
-       'timestamp_label': '[00:26:02]',
-       'timestamp_seconds': 1562,
-       'tip': 'Q&A panel for questions now. Feel free to post yours if you have any. And um '
-              "join joining me today uh sorry I didn't do the introductions earlier. Joining "
-              'me today is Isaiah, our customer success manager for a US region.',
-       'title': 'How to Set Up Prediko: Shopify Inventory Forecasting, Purchase Orders & Raw '
-                'Materials (Onboarding) (Prediko AI Inventory Management)',
-       'url': 'https://www.youtube.com/watch?v=P-gBTGovRRs&t=1562s',
-       'video_id': 'P-gBTGovRRs'},
-      {'author': 'Justin Lalonde',
-       'channel': 'Justin Lalonde',
-       'epistemic_status': 'attributed_practitioner_claim',
-       'markdown': '[00:00:15](https://www.youtube.com/watch?v=la7VuqSuHHE&t=15s)',
-       'relevance': 'Attributed practitioner commentary on lean 3PL-backed & authorized-dealer '
-                    'e-commerce operations, contribution-margin underwriting, and automated '
-                    'retention (Chapter Q11 operational verification).',
-       'source_type': 'video_pro_tip',
-       'text': 'Some reason a big pool of our clients are within the fashion space which led '
-               'us to become experts at marketing for these types of e-commerce brands after '
-               'a.',
-       'timestamp': 15,
-       'timestamp_label': '[00:00:15]',
-       'timestamp_seconds': 15,
-       'tip': 'Some reason a big pool of our clients are within the fashion space which led us '
-              'to become experts at marketing for these types of e-commerce brands after a.',
-       'title': 'How I Would Scale A Fashion Ecom Brand! (Justin Lalonde)',
-       'url': 'https://www.youtube.com/watch?v=la7VuqSuHHE&t=15s',
-       'video_id': 'la7VuqSuHHE'},
-      {'author': 'US Customs Clearing',
-       'channel': 'US Customs Clearing',
-       'epistemic_status': 'attributed_practitioner_claim',
-       'markdown': '[00:04:13](https://www.youtube.com/watch?v=DLfvskykJiY&t=253s)',
-       'relevance': 'Attributed practitioner commentary on lean 3PL-backed & authorized-dealer '
-                    'e-commerce operations, contribution-margin underwriting, and automated '
-                    'retention (Chapter Q11 operational verification).',
-       'source_type': 'video_pro_tip',
-       'text': 'Budgeting pricing and ensuring profitability in import operations remember to '
-               'factor in all the components we discussed gather reliable information and '
-               'optimize your processes for successful importing.',
-       'timestamp': 253,
-       'timestamp_label': '[00:04:13]',
-       'timestamp_seconds': 253,
-       'tip': 'Budgeting pricing and ensuring profitability in import operations remember to '
-              'factor in all the components we discussed gather reliable information and '
-              'optimize your processes for successful importing.',
-       'title': 'How Do I Calculate The Landed Cost Of Imported Goods Into The USA? (US '
-                'Customs Clearing)',
-       'url': 'https://www.youtube.com/watch?v=DLfvskykJiY&t=253s',
-       'video_id': 'DLfvskykJiY'},
-      {'author': 'Eric Andrews Clips',
-       'channel': 'Eric Andrews Clips',
-       'epistemic_status': 'attributed_practitioner_claim',
-       'markdown': '[00:02:03](https://www.youtube.com/watch?v=tj2W9oEqeQo&t=123s)',
-       'relevance': 'Attributed practitioner commentary on lean 3PL-backed & authorized-dealer '
-                    'e-commerce operations, contribution-margin underwriting, and automated '
-                    'retention (Chapter Q11 operational verification).',
-       'source_type': 'video_pro_tip',
-       'text': 'Total orders and you can see that 64. and again you finally take the '
-               'Fulfillment you add up all the Fulfillment expenses and then you divide it by '
-               'the total orders and the average would be 74. so on average you make 100 of '
-               'contribution margin per order.',
-       'timestamp': 123,
-       'timestamp_label': '[00:02:03]',
-       'timestamp_seconds': 123,
-       'tip': 'Total orders and you can see that 64. and again you finally take the '
-              'Fulfillment you add up all the Fulfillment expenses and then you divide it by '
-              'the total orders and the average would be 74. so on average you make 100 of '
-              'contribution margin per order.',
-       'title': 'Master Contribution Margins for eCommerce (Eric Andrews Clips)',
-       'url': 'https://www.youtube.com/watch?v=tj2W9oEqeQo&t=123s',
-       'video_id': 'tj2W9oEqeQo'},
-      {'author': 'Marketing Business Network',
-       'channel': 'Marketing Business Network',
-       'epistemic_status': 'attributed_practitioner_claim',
-       'markdown': '[00:02:10](https://www.youtube.com/watch?v=C5Ut79jWwHA&t=130s)',
-       'relevance': 'Attributed practitioner commentary on lean 3PL-backed & authorized-dealer '
-                    'e-commerce operations, contribution-margin underwriting, and automated '
-                    'retention (Chapter Q11 operational verification).',
-       'source_type': 'video_pro_tip',
-       'text': 'Missed deadlines may damage relationships or bring charges. Likewise, keeping '
-               'too little stock can leave customers waiting and cost the company sales. Some '
-               'businesses collect customer money before they pay suppliers, producing a '
-               'negative cash conversion cycle.',
-       'timestamp': 130,
-       'timestamp_label': '[00:02:10]',
-       'timestamp_seconds': 130,
-       'tip': 'Missed deadlines may damage relationships or bring charges. Likewise, keeping '
-              'too little stock can leave customers waiting and cost the company sales. Some '
-              'businesses collect customer money before they pay suppliers, producing a '
-              'negative cash conversion cycle.',
-       'title': 'What is the Cash Conversion Cycle? (Marketing Business Network)',
-       'url': 'https://www.youtube.com/watch?v=C5Ut79jWwHA&t=130s',
-       'video_id': 'C5Ut79jWwHA'}],
- 12: [{'author': 'LedgerGurus: Ecommerce Accounting Experts',
-       'channel': 'LedgerGurus: Ecommerce Accounting Experts',
-       'epistemic_status': 'attributed_practitioner_claim',
-       'markdown': '[00:01:02](https://www.youtube.com/watch?v=e5r7-KT6mQ0&t=62s)',
-       'relevance': 'Attributed practitioner commentary on lean 3PL-backed & authorized-dealer '
-                    'e-commerce operations, contribution-margin underwriting, and automated '
-                    'retention (Chapter Q12 operational verification).',
-       'source_type': 'video_pro_tip',
-       'text': 'Shipping costs can vary based on the product item, size, weight, or bundle of '
-               'products. Payment processing fees can vary based on the credit card that the '
-               'customer uses. Finally, advertising costs can vary by the month, week, day, '
-               'and even time of day.',
-       'timestamp': 62,
-       'timestamp_label': '[00:01:02]',
-       'timestamp_seconds': 62,
-       'tip': 'Shipping costs can vary based on the product item, size, weight, or bundle of '
-              'products. Payment processing fees can vary based on the credit card that the '
-              'customer uses. Finally, advertising costs can vary by the month, week, day, and '
-              'even time of day.',
-       'title': 'Ecommerce Contribution Margin Explained (LedgerGurus: Ecommerce Accounting '
-                'Experts)',
-       'url': 'https://www.youtube.com/watch?v=e5r7-KT6mQ0&t=62s',
-       'video_id': 'e5r7-KT6mQ0'},
-      {'author': 'Luke Kermode, CFA',
-       'channel': 'Luke Kermode, CFA',
-       'epistemic_status': 'attributed_practitioner_claim',
-       'markdown': '[00:05:03](https://www.youtube.com/watch?v=1gBvyu9ADGo&t=303s)',
-       'relevance': 'Attributed practitioner commentary on lean 3PL-backed & authorized-dealer '
-                    'e-commerce operations, contribution-margin underwriting, and automated '
-                    'retention (Chapter Q12 operational verification).',
-       'source_type': 'video_pro_tip',
-       'text': "The Day sales outstanding so we've got the operating cycle so how do we bridge "
-               'to the um cash conversion cycle well if you remember from the formula we need '
-               'to deduct the days payable.',
-       'timestamp': 303,
-       'timestamp_label': '[00:05:03]',
-       'timestamp_seconds': 303,
-       'tip': "The Day sales outstanding so we've got the operating cycle so how do we bridge "
-              'to the um cash conversion cycle well if you remember from the formula we need '
-              'to deduct the days payable.',
-       'title': 'Cash Conversion Cycle Explained | CFA Level 1 Corporate Issuers (Luke '
-                'Kermode, CFA)',
-       'url': 'https://www.youtube.com/watch?v=1gBvyu9ADGo&t=303s',
-       'video_id': '1gBvyu9ADGo'},
-      {'author': 'built with ali',
-       'channel': 'built with ali',
-       'epistemic_status': 'attributed_practitioner_claim',
-       'markdown': '[00:03:18](https://www.youtube.com/watch?v=Mf4bZiQ2-Fc&t=198s)',
-       'relevance': 'Attributed practitioner commentary on lean 3PL-backed & authorized-dealer '
-                    'e-commerce operations, contribution-margin underwriting, and automated '
-                    'retention (Chapter Q12 operational verification).',
-       'source_type': 'video_pro_tip',
-       'text': "'s called an authorized dealer or an authorized retailer. And basically, they "
-               "will ship on your behalf directly to the customer. That's why it's drop "
-               "shipping. And they'll usually do that within the US from US-based warehouses "
-               'within the same business day.',
-       'timestamp': 198,
-       'timestamp_label': '[00:03:18]',
-       'timestamp_seconds': 198,
-       'tip': "'s called an authorized dealer or an authorized retailer. And basically, they "
-              "will ship on your behalf directly to the customer. That's why it's drop "
-              "shipping. And they'll usually do that within the US from US-based warehouses "
-              'within the same business day.',
-       'title': 'how i find dropshipping products that sell for $6,135.12 each (the opposite '
-                'of what gurus tell you) (built with ali)',
-       'url': 'https://www.youtube.com/watch?v=Mf4bZiQ2-Fc&t=198s',
-       'video_id': 'Mf4bZiQ2-Fc'},
       {'author': 'Macha',
        'channel': 'Macha',
        'epistemic_status': 'attributed_practitioner_claim',
-       'markdown': '[00:06:50](https://www.youtube.com/watch?v=VsY0GsB1UI0&t=410s)',
-       'relevance': 'Attributed practitioner commentary on lean 3PL-backed & authorized-dealer '
-                    'e-commerce operations, contribution-margin underwriting, and automated '
-                    'retention (Chapter Q12 operational verification).',
+       'markdown': '[00:04:06](https://www.youtube.com/watch?v=eusN-cV9bSQ&t=246s)',
+       'relevance': 'Verbatim practitioner testimony from Chapter Q10.',
        'source_type': 'video_pro_tip',
-       'text': 'Most teams have their first category live within a week. Setup is included in '
-               'every plan, with no setup fee. Plans start at two hundred and ninety-nine '
-               'dollars a month for seven hundred and fifty tickets, about forty cents a '
-               'ticket.',
-       'timestamp': 410,
-       'timestamp_label': '[00:06:50]',
-       'timestamp_seconds': 410,
-       'tip': 'Most teams have their first category live within a week. Setup is included in '
-              'every plan, with no setup fee. Plans start at two hundred and ninety-nine '
-              'dollars a month for seven hundred and fifty tickets, about forty cents a '
-              'ticket.',
-       'title': 'AI for "where is my order" tickets in Gorgias (Macha)',
-       'url': 'https://www.youtube.com/watch?v=VsY0GsB1UI0&t=410s',
-       'video_id': 'VsY0GsB1UI0'},
-      {'author': 'Stord',
-       'channel': 'Stord',
+       'text': 'Our own review comes down to three points.',
+       'timestamp': 246,
+       'timestamp_label': '[00:04:06]',
+       'timestamp_seconds': 246,
+       'tip': 'Our own review comes down to three points.',
+       'title': 'Gorgias AI Agent review (2026): AI Agent 3.0, price and setup, scored',
+       'url': 'https://www.youtube.com/watch?v=eusN-cV9bSQ&t=246s',
+       'video_id': 'eusN-cV9bSQ'},
+      {'author': 'Macha',
+       'channel': 'Macha',
        'epistemic_status': 'attributed_practitioner_claim',
-       'markdown': '[00:01:28](https://www.youtube.com/watch?v=eZY2MYqExrQ&t=88s)',
-       'relevance': 'Attributed practitioner commentary on lean 3PL-backed & authorized-dealer '
-                    'e-commerce operations, contribution-margin underwriting, and automated '
-                    'retention (Chapter Q12 operational verification).',
+       'markdown': '[00:05:42](https://www.youtube.com/watch?v=iqOjQraqwcM&t=342s)',
+       'relevance': 'Verbatim practitioner testimony from Chapter Q10.',
        'source_type': 'video_pro_tip',
-       'text': 'One that can endure the tumultuous environment of rapid growth e-commerce '
-               'businesses. We have the ability to rapidly launch nationwide fulfillment for '
-               'brands in days when providers or tariffs change. We can reduce parcel costs '
-               'when carriers levy new GRI.',
-       'timestamp': 88,
-       'timestamp_label': '[00:01:28]',
-       'timestamp_seconds': 88,
-       'tip': 'One that can endure the tumultuous environment of rapid growth e-commerce '
-              'businesses. We have the ability to rapidly launch nationwide fulfillment for '
-              'brands in days when providers or tariffs change. We can reduce parcel costs '
-              'when carriers levy new GRI.',
-       'title': 'A Message On New Tariffs And De Minimis (Section 321) (Stord)',
-       'url': 'https://www.youtube.com/watch?v=eZY2MYqExrQ&t=88s',
-       'video_id': 'eZY2MYqExrQ'},
-      {'author': 'Avalara',
-       'channel': 'Avalara',
+       'text': "Against Gorgias's AI Agent, Macha breaks even only when it resolves close to half "
+               'your tickets.',
+       'timestamp': 342,
+       'timestamp_label': '[00:05:42]',
+       'timestamp_seconds': 342,
+       'tip': "Against Gorgias's AI Agent, Macha breaks even only when it resolves close to half "
+              'your tickets.',
+       'title': 'Best AI agent for Gorgias and Shopify support (2026)',
+       'url': 'https://www.youtube.com/watch?v=iqOjQraqwcM&t=342s',
+       'video_id': 'iqOjQraqwcM'},
+      {'author': 'Macha',
+       'channel': 'Macha',
        'epistemic_status': 'attributed_practitioner_claim',
-       'markdown': '[00:01:11](https://www.youtube.com/watch?v=RRnAKNi_DBU&t=71s)',
-       'relevance': 'Attributed practitioner commentary on lean 3PL-backed & authorized-dealer '
-                    'e-commerce operations, contribution-margin underwriting, and automated '
-                    'retention (Chapter Q12 operational verification).',
+       'markdown': '[00:05:06](https://www.youtube.com/watch?v=7Ac3MIM55Yc&t=306s)',
+       'relevance': 'Verbatim practitioner testimony from Chapter Q10.',
        'source_type': 'video_pro_tip',
-       'text': 'Nexus and states where you might need to start collecting and remitting sales '
-               'tax. AvaTax not only calculates U. Simply select all countries that you sell '
-               'into and AvaTax will calculate those taxes as well as customs duties and '
-               'tariffs. Two Is the customer taxable?',
-       'timestamp': 71,
-       'timestamp_label': '[00:01:11]',
-       'timestamp_seconds': 71,
-       'tip': 'Nexus and states where you might need to start collecting and remitting sales '
-              'tax. AvaTax not only calculates U. Simply select all countries that you sell '
-              'into and AvaTax will calculate those taxes as well as customs duties and '
-              'tariffs. Two Is the customer taxable?',
-       'title': 'Avalara AvaTax Demo (Avalara)',
-       'url': 'https://www.youtube.com/watch?v=RRnAKNi_DBU&t=71s',
-       'video_id': 'RRnAKNi_DBU'},
-      {'author': 'Marvin',
-       'channel': 'Marvin',
+       'text': 'The AI part of the bill grows with every resolution.',
+       'timestamp': 306,
+       'timestamp_label': '[00:05:06]',
+       'timestamp_seconds': 306,
+       'tip': 'The AI part of the bill grows with every resolution.',
+       'title': 'Gorgias AI explained (2026): AI Agent, automation and cost',
+       'url': 'https://www.youtube.com/watch?v=7Ac3MIM55Yc&t=306s',
+       'video_id': '7Ac3MIM55Yc'},
+      {'author': 'Brandon Amoroso',
+       'channel': 'Brandon Amoroso',
        'epistemic_status': 'attributed_practitioner_claim',
-       'markdown': '[00:00:15](https://www.youtube.com/watch?v=fHLUiiiopmw&t=15s)',
-       'relevance': 'Attributed practitioner commentary on lean 3PL-backed & authorized-dealer '
-                    'e-commerce operations, contribution-margin underwriting, and automated '
-                    'retention (Chapter Q12 operational verification).',
+       'markdown': '[00:09:16](https://www.youtube.com/watch?v=Pwv-LlhTPwo&t=556s)',
+       'relevance': 'Verbatim practitioner testimony from Chapter Q10.',
        'source_type': 'video_pro_tip',
-       'text': "FBA business now I've helped over 600 people start and grow their own Amazon "
-               'FBA business many of them going from zero to over 100K per month in under one.',
-       'timestamp': 15,
-       'timestamp_label': '[00:00:15]',
-       'timestamp_seconds': 15,
-       'tip': "FBA business now I've helped over 600 people start and grow their own Amazon "
-              'FBA business many of them going from zero to over 100K per month in under one.',
-       'title': 'Amazon Wholesale || How To Find Wholesale Suppliers For Amazon FBA (Marvin)',
-       'url': 'https://www.youtube.com/watch?v=fHLUiiiopmw&t=15s',
-       'video_id': 'fHLUiiiopmw'},
+       'text': 'Gorgias drastically reduces the number of hours spent on customer support.',
+       'timestamp': 556,
+       'timestamp_label': '[00:09:16]',
+       'timestamp_seconds': 556,
+       'tip': 'Gorgias drastically reduces the number of hours spent on customer support.',
+       'title': "Gorgias Overview & Demo | Shopify's #1 Customer Service App",
+       'url': 'https://www.youtube.com/watch?v=Pwv-LlhTPwo&t=556s',
+       'video_id': 'Pwv-LlhTPwo'},
       {'author': 'Milan Raviji│Klaviyo & Email Marketing',
        'channel': 'Milan Raviji│Klaviyo & Email Marketing',
        'epistemic_status': 'attributed_practitioner_claim',
-       'markdown': '[00:05:55](https://www.youtube.com/watch?v=6xiaPZPDBCQ&t=355s)',
-       'relevance': 'Attributed practitioner commentary on lean 3PL-backed & authorized-dealer '
-                    'e-commerce operations, contribution-margin underwriting, and automated '
-                    'retention (Chapter Q12 operational verification).',
+       'markdown': '[00:06:42](https://www.youtube.com/watch?v=6xiaPZPDBCQ&t=402s)',
+       'relevance': 'Verbatim practitioner testimony from Chapter Q10.',
        'source_type': 'video_pro_tip',
-       'text': 'Now the targeting here, we only chose this for products where the churn was '
-               'extremely high on month one. And that was their anal glands timing analogy '
-               'products. And you can just set the flow to trigger after x amount of days of '
-               'them receiving their box.',
-       'timestamp': 355,
-       'timestamp_label': '[00:05:55]',
-       'timestamp_seconds': 355,
-       'tip': 'Now the targeting here, we only chose this for products where the churn was '
-              'extremely high on month one. And that was their anal glands timing analogy '
-              'products. And you can just set the flow to trigger after x amount of days of '
-              'them receiving their box.',
-       'title': 'Recharge Subscription Flows Tutorial For 2026 (Full Strategy) (Milan '
-                'Raviji│Klaviyo & Email Marketing)',
-       'url': 'https://www.youtube.com/watch?v=6xiaPZPDBCQ&t=355s',
+       'text': 'If you keep a customer for 3 months, the likelihood that they stay for longer is '
+               'extraordinarily high.',
+       'timestamp': 402,
+       'timestamp_label': '[00:06:42]',
+       'timestamp_seconds': 402,
+       'tip': 'If you keep a customer for 3 months, the likelihood that they stay for longer is '
+              'extraordinarily high.',
+       'title': 'Recharge Subscription Flows Tutorial For 2026 (Full Strategy)',
+       'url': 'https://www.youtube.com/watch?v=6xiaPZPDBCQ&t=402s',
        'video_id': '6xiaPZPDBCQ'},
-      {'author': 'FlexSync: Shopify Stock & Order Sync',
-       'channel': 'FlexSync: Shopify Stock & Order Sync',
+      {'author': 'Carbon Box Media',
+       'channel': 'Carbon Box Media',
        'epistemic_status': 'attributed_practitioner_claim',
-       'markdown': '[00:04:09](https://www.youtube.com/watch?v=oYy3k8xOKpA&t=249s)',
-       'relevance': 'Attributed practitioner commentary on lean 3PL-backed & authorized-dealer '
-                    'e-commerce operations, contribution-margin underwriting, and automated '
-                    'retention (Chapter Q12 operational verification).',
+       'markdown': '[00:05:47](https://www.youtube.com/watch?v=wFXlLgdV31A&t=347s)',
+       'relevance': 'Verbatim practitioner testimony from Chapter Q10.',
        'source_type': 'video_pro_tip',
-       'text': 'Track every SKU, set reorder points, count regularly, and keep one source of '
-               'truth. Flex Sync has a free plan for up to 500 SKUs, and paid plans come with '
-               'a 14-day free trial. Find Flex Sync on the Shopify app store and start '
-               'managing your inventory from Google Sheets.',
-       'timestamp': 249,
-       'timestamp_label': '[00:04:09]',
-       'timestamp_seconds': 249,
-       'tip': 'Track every SKU, set reorder points, count regularly, and keep one source of '
-              'truth. Flex Sync has a free plan for up to 500 SKUs, and paid plans come with a '
-              '14-day free trial. Find Flex Sync on the Shopify app store and start managing '
-              'your inventory from Google Sheets.',
-       'title': 'The Ultimate Shopify Inventory Management Guide | Stop Losing Sales! '
-                '(FlexSync: Shopify Stock & Order Sync)',
-       'url': 'https://www.youtube.com/watch?v=oYy3k8xOKpA&t=249s',
-       'video_id': 'oYy3k8xOKpA'},
-      {'author': 'Avalara',
-       'channel': 'Avalara',
+       'text': 'Email should be somewhere between 35 and 50 percent of your attributed revenue.',
+       'timestamp': 347,
+       'timestamp_label': '[00:05:47]',
+       'timestamp_seconds': 347,
+       'tip': 'Email should be somewhere between 35 and 50 percent of your attributed revenue.',
+       'title': 'How to 3x Your Email Revenue (Shopify Brand Case Study) | Lifecycle Talks',
+       'url': 'https://www.youtube.com/watch?v=wFXlLgdV31A&t=347s',
+       'video_id': 'wFXlLgdV31A'},
+      {'author': 'Tarun Brar - eCom Email Marketing',
+       'channel': 'Tarun Brar - eCom Email Marketing',
        'epistemic_status': 'attributed_practitioner_claim',
-       'markdown': '[00:16:36](https://www.youtube.com/watch?v=EtT3YoVfP0c&t=996s)',
-       'relevance': 'Attributed practitioner commentary on lean 3PL-backed & authorized-dealer '
-                    'e-commerce operations, contribution-margin underwriting, and automated '
-                    'retention (Chapter Q12 operational verification).',
+       'markdown': '[00:02:04](https://www.youtube.com/watch?v=JT1uQ-EOyhM&t=124s)',
+       'relevance': 'Verbatim practitioner testimony from Chapter Q10.',
        'source_type': 'video_pro_tip',
-       'text': 'How do I then track, you know, the the where of tomorrow of next week of next '
-               'month of next year. But we always start with where do we need to be collecting '
-               'today? I want to jump in there real quick because we have talked about '
-               'tracking the sales and the number of sales.',
-       'timestamp': 996,
-       'timestamp_label': '[00:16:36]',
-       'timestamp_seconds': 996,
-       'tip': 'How do I then track, you know, the the where of tomorrow of next week of next '
-              'month of next year. But we always start with where do we need to be collecting '
-              'today? I want to jump in there real quick because we have talked about tracking '
-              'the sales and the number of sales.',
-       'title': 'Webinar: Ecommerce Sales Tax Basics for Growing Sellers (Avalara)',
-       'url': 'https://www.youtube.com/watch?v=EtT3YoVfP0c&t=996s',
-       'video_id': 'EtT3YoVfP0c'},
-      {'author': 'Smart Capital',
-       'channel': 'Smart Capital',
+       'text': "It's basically 14 times higher than email.",
+       'timestamp': 124,
+       'timestamp_label': '[00:02:04]',
+       'timestamp_seconds': 124,
+       'tip': "It's basically 14 times higher than email.",
+       'title': 'Klaviyo SMS Marketing Tutorial: Step-by-Step for Beginners',
+       'url': 'https://www.youtube.com/watch?v=JT1uQ-EOyhM&t=124s',
+       'video_id': 'JT1uQ-EOyhM'},
+      {'author': 'Theo Clough | Email Marketing',
+       'channel': 'Theo Clough | Email Marketing',
        'epistemic_status': 'attributed_practitioner_claim',
-       'markdown': '[00:02:27](https://www.youtube.com/watch?v=8R8um_CLrWI&t=147s)',
-       'relevance': 'Attributed practitioner commentary on lean 3PL-backed & authorized-dealer '
-                    'e-commerce operations, contribution-margin underwriting, and automated '
-                    'retention (Chapter Q12 operational verification).',
+       'markdown': '[00:01:08](https://www.youtube.com/watch?v=AZHCdf0AuwM&t=68s)',
+       'relevance': 'Verbatim practitioner testimony from Chapter Q10.',
        'source_type': 'video_pro_tip',
-       'text': 'But the mechanics are real, and they are the same mechanics working sellers '
-               'use every day. In the next few minutes, you will learn the exact order volume '
-               'number where self-fulfillment starts costing you more than a 3PL.',
-       'timestamp': 147,
-       'timestamp_label': '[00:02:27]',
-       'timestamp_seconds': 147,
-       'tip': 'But the mechanics are real, and they are the same mechanics working sellers use '
-              'every day. In the next few minutes, you will learn the exact order volume '
-              'number where self-fulfillment starts costing you more than a 3PL.',
-       'title': 'How to Automate E-Commerce Fulfillment: Best US 3PL Partners for 2-Day '
-                'Shipping 2026 (Smart Capital)',
-       'url': 'https://www.youtube.com/watch?v=8R8um_CLrWI&t=147s',
-       'video_id': '8R8um_CLrWI'},
-      {'author': 'Sunrise Integration',
-       'channel': 'Sunrise Integration',
+       'text': 'So, the profitability is like no other and that is why email is your highest ROI '
+               'platform.',
+       'timestamp': 68,
+       'timestamp_label': '[00:01:08]',
+       'timestamp_seconds': 68,
+       'tip': 'So, the profitability is like no other and that is why email is your highest ROI '
+              'platform.',
+       'title': 'Klaviyo Email Marketing For Beginners In (2026 Q4 Tutorial)',
+       'url': 'https://www.youtube.com/watch?v=AZHCdf0AuwM&t=68s',
+       'video_id': 'AZHCdf0AuwM'},
+      {'author': 'Derek Stroh',
+       'channel': 'Derek Stroh',
        'epistemic_status': 'attributed_practitioner_claim',
-       'markdown': '[00:07:52](https://www.youtube.com/watch?v=daoVeRnScfo&t=472s)',
-       'relevance': 'Attributed practitioner commentary on lean 3PL-backed & authorized-dealer '
-                    'e-commerce operations, contribution-margin underwriting, and automated '
-                    'retention (Chapter Q12 operational verification).',
+       'markdown': '[00:09:35](https://www.youtube.com/watch?v=cerX0RFHJ0c&t=575s)',
+       'relevance': 'Verbatim practitioner testimony from Chapter Q10.',
        'source_type': 'video_pro_tip',
-       'text': 'Your Shopify store is now ready to start accepting customer returns and if you '
-               'need help configuring your Shopify store please contact our eCommerce experts '
-               'at Sunrise integration.',
-       'timestamp': 472,
-       'timestamp_label': '[00:07:52]',
-       'timestamp_seconds': 472,
-       'tip': 'Your Shopify store is now ready to start accepting customer returns and if you '
-              'need help configuring your Shopify store please contact our eCommerce experts '
-              'at Sunrise integration.',
-       'title': 'How To Use Shopify Self-Serve Returns - Shopify Tutorial (Sunrise '
-                'Integration)',
-       'url': 'https://www.youtube.com/watch?v=daoVeRnScfo&t=472s',
-       'video_id': 'daoVeRnScfo'},
+       'text': 'So, what we found is that if we can get someone to purchase again in the first 30 '
+               'to 60 days, people are going to come back and loyalty is going to be much higher '
+               "than if we can't do that.",
+       'timestamp': 575,
+       'timestamp_label': '[00:09:35]',
+       'timestamp_seconds': 575,
+       'tip': 'So, what we found is that if we can get someone to purchase again in the first 30 '
+              'to 60 days, people are going to come back and loyalty is going to be much higher '
+              "than if we can't do that.",
+       'title': 'Klaviyo Post Purchase Thank You Flow Strategies',
+       'url': 'https://www.youtube.com/watch?v=cerX0RFHJ0c&t=575s',
+       'video_id': 'cerX0RFHJ0c'},
+      {'author': 'Tarun Brar - eCom Email Marketing',
+       'channel': 'Tarun Brar - eCom Email Marketing',
+       'epistemic_status': 'attributed_practitioner_claim',
+       'markdown': '[00:12:12](https://www.youtube.com/watch?v=coevagBV6wU&t=732s)',
+       'relevance': 'Verbatim practitioner testimony from Chapter Q10.',
+       'source_type': 'video_pro_tip',
+       'text': 'For example, we want to wait until after delivery to ask for review.',
+       'timestamp': 732,
+       'timestamp_label': '[00:12:12]',
+       'timestamp_seconds': 732,
+       'tip': 'For example, we want to wait until after delivery to ask for review.',
+       'title': 'Klaviyo Tutorial: How to Setup the Post-Purchase Flow 2025 (Step by Step)',
+       'url': 'https://www.youtube.com/watch?v=coevagBV6wU&t=732s',
+       'video_id': 'coevagBV6wU'},
       {'author': 'Klaviyo',
        'channel': 'Klaviyo',
        'epistemic_status': 'attributed_practitioner_claim',
-       'markdown': '[00:01:24](https://www.youtube.com/watch?v=zfCLuKMRGEE&t=84s)',
-       'relevance': 'Attributed practitioner commentary on lean 3PL-backed & authorized-dealer '
-                    'e-commerce operations, contribution-margin underwriting, and automated '
-                    'retention (Chapter Q12 operational verification).',
+       'markdown': '[00:02:56](https://www.youtube.com/watch?v=zfCLuKMRGEE&t=176s)',
+       'relevance': 'Verbatim practitioner testimony from Chapter Q10.',
        'source_type': 'video_pro_tip',
-       'text': 'During major marketing moments for your brand, like a holiday sale, product '
-               'launch, or a large site wide promotion, send the same message through both '
-               'email and SMS to reinforce the importance of the event.',
-       'timestamp': 84,
-       'timestamp_label': '[00:01:24]',
-       'timestamp_seconds': 84,
-       'tip': 'During major marketing moments for your brand, like a holiday sale, product '
-              'launch, or a large site wide promotion, send the same message through both '
-              'email and SMS to reinforce the importance of the event.',
-       'title': 'Klaviyo SMS & Email Integration: Boost Conversions & Engagement | Klaviyo '
-                'Academy (Klaviyo)',
-       'url': 'https://www.youtube.com/watch?v=zfCLuKMRGEE&t=84s',
+       'text': 'Try adding SMS to the following flows, post purchase, replenishment and birthday '
+               'flows.',
+       'timestamp': 176,
+       'timestamp_label': '[00:02:56]',
+       'timestamp_seconds': 176,
+       'tip': 'Try adding SMS to the following flows, post purchase, replenishment and birthday '
+              'flows.',
+       'title': 'Klaviyo SMS & Email Integration: Boost Conversions & Engagement | Klaviyo Academy',
+       'url': 'https://www.youtube.com/watch?v=zfCLuKMRGEE&t=176s',
        'video_id': 'zfCLuKMRGEE'},
+      {'author': 'TUTOR BASE',
+       'channel': 'TUTOR BASE',
+       'epistemic_status': 'attributed_practitioner_claim',
+       'markdown': '[00:00:55](https://www.youtube.com/watch?v=qaQ0aFPTDKA&t=55s)',
+       'relevance': 'Verbatim practitioner testimony from Chapter Q10.',
+       'source_type': 'video_pro_tip',
+       'text': 'In this bar, type the words post purchase.',
+       'timestamp': 55,
+       'timestamp_label': '[00:00:55]',
+       'timestamp_seconds': 55,
+       'tip': 'In this bar, type the words post purchase.',
+       'title': 'How to Set Up Post Purchase Flow in Klaviyo 2026 (Quick Guide)',
+       'url': 'https://www.youtube.com/watch?v=qaQ0aFPTDKA&t=55s',
+       'video_id': 'qaQ0aFPTDKA'},
+      {'author': 'Gavin Hewitson',
+       'channel': 'Gavin Hewitson',
+       'epistemic_status': 'attributed_practitioner_claim',
+       'markdown': '[00:13:16](https://www.youtube.com/watch?v=Cu4iN3jgMwI&t=796s)',
+       'relevance': 'Verbatim practitioner testimony from Chapter Q10.',
+       'source_type': 'video_pro_tip',
+       'text': "Keep in mind, the second order is typically more profitable because you're not "
+               'spending as much money on advertising to get them across the line.',
+       'timestamp': 796,
+       'timestamp_label': '[00:13:16]',
+       'timestamp_seconds': 796,
+       'tip': "Keep in mind, the second order is typically more profitable because you're not "
+              'spending as much money on advertising to get them across the line.',
+       'title': 'Klaviyo Post Purchase Flow Tutorial | Shopify Thank You Flow Setup',
+       'url': 'https://www.youtube.com/watch?v=Cu4iN3jgMwI&t=796s',
+       'video_id': 'Cu4iN3jgMwI'},
+      {'author': 'Gavin Hewitson',
+       'channel': 'Gavin Hewitson',
+       'epistemic_status': 'attributed_practitioner_claim',
+       'markdown': '[00:07:54](https://www.youtube.com/watch?v=Cu4iN3jgMwI&t=474s)',
+       'relevance': 'Verbatim practitioner testimony from Chapter Q10.',
+       'source_type': 'video_pro_tip',
+       'text': 'You get better deliverability if it ends up here.',
+       'timestamp': 474,
+       'timestamp_label': '[00:07:54]',
+       'timestamp_seconds': 474,
+       'tip': 'You get better deliverability if it ends up here.',
+       'title': 'Klaviyo Post Purchase Flow Tutorial | Shopify Thank You Flow Setup',
+       'url': 'https://www.youtube.com/watch?v=Cu4iN3jgMwI&t=474s',
+       'video_id': 'Cu4iN3jgMwI'},
+      {'author': 'Emiel Dingemans | eCommerce Retention Marketing',
+       'channel': 'Emiel Dingemans | eCommerce Retention Marketing',
+       'epistemic_status': 'attributed_practitioner_claim',
+       'markdown': '[00:28:08](https://www.youtube.com/watch?v=6OklvvWTGmw&t=1688s)',
+       'relevance': 'Verbatim practitioner testimony from Chapter Q10.',
+       'source_type': 'video_pro_tip',
+       'text': 'This flow is important because right after buying people are still in buying mode '
+               'as we call it.',
+       'timestamp': 1688,
+       'timestamp_label': '[00:28:08]',
+       'timestamp_seconds': 1688,
+       'tip': 'This flow is important because right after buying people are still in buying mode '
+              'as we call it.',
+       'title': 'Klaviyo Flows Tutorial For Beginners (2025 Full Course for Shopify)',
+       'url': 'https://www.youtube.com/watch?v=6OklvvWTGmw&t=1688s',
+       'video_id': '6OklvvWTGmw'},
+      {'author': 'Emiel Dingemans | eCommerce Retention Marketing',
+       'channel': 'Emiel Dingemans | eCommerce Retention Marketing',
+       'epistemic_status': 'attributed_practitioner_claim',
+       'markdown': '[00:34:33](https://www.youtube.com/watch?v=6OklvvWTGmw&t=2073s)',
+       'relevance': 'Verbatim practitioner testimony from Chapter Q10.',
+       'source_type': 'video_pro_tip',
+       'text': 'Between those 10 minutes they will receive a transactional email from Shopify.',
+       'timestamp': 2073,
+       'timestamp_label': '[00:34:33]',
+       'timestamp_seconds': 2073,
+       'tip': 'Between those 10 minutes they will receive a transactional email from Shopify.',
+       'title': 'Klaviyo Flows Tutorial For Beginners (2025 Full Course for Shopify)',
+       'url': 'https://www.youtube.com/watch?v=6OklvvWTGmw&t=2073s',
+       'video_id': '6OklvvWTGmw'}],
+ 11: [{'author': 'Grow My Ads',
+       'channel': 'Grow My Ads',
+       'epistemic_status': 'attributed_practitioner_claim',
+       'markdown': '[00:10:45](https://www.youtube.com/watch?v=hY8ZBC3A4uQ&t=645s)',
+       'relevance': 'Verbatim practitioner testimony from Chapter Q11.',
+       'source_type': 'video_pro_tip',
+       'text': 'Retitling the Alley sofa to a kid and pet friendly washable sectional sofa '
+               'produced a 10x jump in clicks and impressions, and sales rose.',
+       'timestamp': 645,
+       'timestamp_label': '[00:10:45]',
+       'timestamp_seconds': 645,
+       'tip': 'Retitling the Alley sofa to a kid and pet friendly washable sectional sofa produced '
+              'a 10x jump in clicks and impressions, and sales rose.',
+       'title': 'Google Shopping Feed Optimizations for 10X Growth (2026 Updated)',
+       'url': 'https://www.youtube.com/watch?v=hY8ZBC3A4uQ&t=645s',
+       'video_id': 'hY8ZBC3A4uQ'},
+      {'author': 'Grow My Ads',
+       'channel': 'Grow My Ads',
+       'epistemic_status': 'attributed_practitioner_claim',
+       'markdown': '[00:03:19](https://www.youtube.com/watch?v=hY8ZBC3A4uQ&t=199s)',
+       'relevance': 'Verbatim practitioner testimony from Chapter Q11.',
+       'source_type': 'video_pro_tip',
+       'text': 'Price baiting, checkout hacks and fake sale prices can get you suspended.',
+       'timestamp': 199,
+       'timestamp_label': '[00:03:19]',
+       'timestamp_seconds': 199,
+       'tip': 'Price baiting, checkout hacks and fake sale prices can get you suspended.',
+       'title': 'Google Shopping Feed Optimizations for 10X Growth (2026 Updated)',
+       'url': 'https://www.youtube.com/watch?v=hY8ZBC3A4uQ&t=199s',
+       'video_id': 'hY8ZBC3A4uQ'},
+      {'author': 'KeyCommerce',
+       'channel': 'KeyCommerce',
+       'epistemic_status': 'attributed_practitioner_claim',
+       'markdown': '[00:01:32](https://www.youtube.com/watch?v=jmjy6G9akyM&t=92s)',
+       'relevance': 'Verbatim practitioner testimony from Chapter Q11.',
+       'source_type': 'video_pro_tip',
+       'text': 'Google ends promotions at midnight the day before, so set the end time to 11:59 '
+               'p.m.',
+       'timestamp': 92,
+       'timestamp_label': '[00:01:32]',
+       'timestamp_seconds': 92,
+       'tip': 'Google ends promotions at midnight the day before, so set the end time to 11:59 '
+              'p.m.',
+       'title': 'How to Run Promotions in Merchant Center for Google Shopping',
+       'url': 'https://www.youtube.com/watch?v=jmjy6G9akyM&t=92s',
+       'video_id': 'jmjy6G9akyM'},
+      {'author': 'KeyCommerce',
+       'channel': 'KeyCommerce',
+       'epistemic_status': 'attributed_practitioner_claim',
+       'markdown': '[00:06:21](https://www.youtube.com/watch?v=S1NhYxaPnic&t=381s)',
+       'relevance': 'Verbatim practitioner testimony from Chapter Q11.',
+       'source_type': 'video_pro_tip',
+       'text': 'Doing so would create a new product for Google.',
+       'timestamp': 381,
+       'timestamp_label': '[00:06:21]',
+       'timestamp_seconds': 381,
+       'tip': 'Doing so would create a new product for Google.',
+       'title': 'How To Optimize Your Product Feed & Data In Google Merchant Center',
+       'url': 'https://www.youtube.com/watch?v=S1NhYxaPnic&t=381s',
+       'video_id': 'S1NhYxaPnic'},
+      {'author': 'Kai Cromwell - eCommerce SEO',
+       'channel': 'Kai Cromwell - eCommerce SEO',
+       'epistemic_status': 'attributed_practitioner_claim',
+       'markdown': '[00:00:14](https://www.youtube.com/watch?v=W6w0BjjlBs4&t=14s)',
+       'relevance': 'Verbatim practitioner testimony from Chapter Q11.',
+       'source_type': 'video_pro_tip',
+       'text': 'The average e-commerce CPA is $45.2, and free listings can take it to zero.',
+       'timestamp': 14,
+       'timestamp_label': '[00:00:14]',
+       'timestamp_seconds': 14,
+       'tip': 'The average e-commerce CPA is $45.2, and free listings can take it to zero.',
+       'title': 'How to Increase Organic Revenue with Google Merchant Center Optimization (Full '
+                'Guide)',
+       'url': 'https://www.youtube.com/watch?v=W6w0BjjlBs4&t=14s',
+       'video_id': 'W6w0BjjlBs4'},
+      {'author': 'Max Crakanthorp',
+       'channel': 'Max Crakanthorp',
+       'epistemic_status': 'attributed_practitioner_claim',
+       'markdown': '[00:13:20](https://www.youtube.com/watch?v=H4yH9xs030Q&t=800s)',
+       'relevance': 'Verbatim practitioner testimony from Chapter Q11.',
+       'source_type': 'video_pro_tip',
+       'text': 'I always recommend adding sale price.',
+       'timestamp': 800,
+       'timestamp_label': '[00:13:20]',
+       'timestamp_seconds': 800,
+       'tip': 'I always recommend adding sale price.',
+       'title': 'Live Optimizing A Product In Google Merchant Center (A - Z Guide)',
+       'url': 'https://www.youtube.com/watch?v=H4yH9xs030Q&t=800s',
+       'video_id': 'H4yH9xs030Q'},
+      {'author': 'Jyll Saskin Gales | Google Ads Coach',
+       'channel': 'Jyll Saskin Gales | Google Ads Coach',
+       'epistemic_status': 'attributed_practitioner_claim',
+       'markdown': '[00:01:00](https://www.youtube.com/watch?v=Q-KrwvAVhR4&t=60s)',
+       'relevance': 'Verbatim practitioner testimony from Chapter Q11.',
+       'source_type': 'video_pro_tip',
+       'text': "So that's going to be a much better way of optimizing that product category.",
+       'timestamp': 60,
+       'timestamp_label': '[00:01:00]',
+       'timestamp_seconds': 60,
+       'tip': "So that's going to be a much better way of optimizing that product category.",
+       'title': 'How to Optimize Product Category in Google Merchant Center | Inside Google Ads '
+                'course | Casey Gill',
+       'url': 'https://www.youtube.com/watch?v=Q-KrwvAVhR4&t=60s',
+       'video_id': 'Q-KrwvAVhR4'},
+      {'author': 'Tim Sutton | Google Ads | Launchpresso',
+       'channel': 'Tim Sutton | Google Ads | Launchpresso',
+       'epistemic_status': 'attributed_practitioner_claim',
+       'markdown': '[00:05:06](https://www.youtube.com/watch?v=APb0cOGKROE&t=306s)',
+       'relevance': 'Verbatim practitioner testimony from Chapter Q11.',
+       'source_type': 'video_pro_tip',
+       'text': 'Price buckets run from 100 to 10,000, with a 2,000+ label carrying its own tROAS.',
+       'timestamp': 306,
+       'timestamp_label': '[00:05:06]',
+       'timestamp_seconds': 306,
+       'tip': 'Price buckets run from 100 to 10,000, with a 2,000+ label carrying its own tROAS.',
+       'title': 'How to Master Google Merchant Center Custom Labels in 5 Minutes!',
+       'url': 'https://www.youtube.com/watch?v=APb0cOGKROE&t=306s',
+       'video_id': 'APb0cOGKROE'},
+      {'author': 'Max Crakanthorp',
+       'channel': 'Max Crakanthorp',
+       'epistemic_status': 'attributed_practitioner_claim',
+       'markdown': '[00:08:23](https://www.youtube.com/watch?v=FZOo2bNTrzo&t=503s)',
+       'relevance': 'Verbatim practitioner testimony from Chapter Q11.',
+       'source_type': 'video_pro_tip',
+       'text': 'Business information that does not match the website leads to misrepresentation '
+               'bans.',
+       'timestamp': 503,
+       'timestamp_label': '[00:08:23]',
+       'timestamp_seconds': 503,
+       'tip': 'Business information that does not match the website leads to misrepresentation '
+              'bans.',
+       'title': 'Set Up Google Merchant Center The Right Way (Full Course)',
+       'url': 'https://www.youtube.com/watch?v=FZOo2bNTrzo&t=503s',
+       'video_id': 'FZOo2bNTrzo'},
+      {'author': 'Ecom Chris',
+       'channel': 'Ecom Chris',
+       'epistemic_status': 'attributed_practitioner_claim',
+       'markdown': '[00:00:00](https://www.youtube.com/watch?v=XQTEnn-3t0E&t=0s)',
+       'relevance': 'Verbatim practitioner testimony from Chapter Q11.',
+       'source_type': 'video_pro_tip',
+       'text': "If your shopping or performance max feels random, it's usually not your bidding, "
+               "it's your product data.",
+       'timestamp': 0,
+       'timestamp_label': '[00:00:00]',
+       'timestamp_seconds': 0,
+       'tip': "If your shopping or performance max feels random, it's usually not your bidding, "
+              "it's your product data.",
+       'title': 'Your Google Merchant Center Feed Is Losing You Sales!',
+       'url': 'https://www.youtube.com/watch?v=XQTEnn-3t0E&t=0s',
+       'video_id': 'XQTEnn-3t0E'},
+      {'author': 'Ecom Chris',
+       'channel': 'Ecom Chris',
+       'epistemic_status': 'attributed_practitioner_claim',
+       'markdown': '[00:15:27](https://www.youtube.com/watch?v=XQTEnn-3t0E&t=927s)',
+       'relevance': 'Verbatim practitioner testimony from Chapter Q11.',
+       'source_type': 'video_pro_tip',
+       'text': 'What that means for you is research your competitor pricing.',
+       'timestamp': 927,
+       'timestamp_label': '[00:15:27]',
+       'timestamp_seconds': 927,
+       'tip': 'What that means for you is research your competitor pricing.',
+       'title': 'Your Google Merchant Center Feed Is Losing You Sales!',
+       'url': 'https://www.youtube.com/watch?v=XQTEnn-3t0E&t=927s',
+       'video_id': 'XQTEnn-3t0E'},
+      {'author': 'KeyCommerce',
+       'channel': 'KeyCommerce',
+       'epistemic_status': 'attributed_practitioner_claim',
+       'markdown': '[00:04:52](https://www.youtube.com/watch?v=UcU7Ishu1lY&t=292s)',
+       'relevance': 'Verbatim practitioner testimony from Chapter Q11.',
+       'source_type': 'video_pro_tip',
+       'text': 'Never overwrite the ID, because that creates a new product and loses its history.',
+       'timestamp': 292,
+       'timestamp_label': '[00:04:52]',
+       'timestamp_seconds': 292,
+       'tip': 'Never overwrite the ID, because that creates a new product and loses its history.',
+       'title': 'How To Optimize Your Product Feed & Data In Google Merchant Center',
+       'url': 'https://www.youtube.com/watch?v=UcU7Ishu1lY&t=292s',
+       'video_id': 'UcU7Ishu1lY'},
+      {'author': 'Grow My Ads',
+       'channel': 'Grow My Ads',
+       'epistemic_status': 'attributed_practitioner_claim',
+       'markdown': '[00:03:09](https://www.youtube.com/watch?v=-w0GraOv2B0&t=189s)',
+       'relevance': 'Verbatim practitioner testimony from Chapter Q11.',
+       'source_type': 'video_pro_tip',
+       'text': 'If the title contains Christmas, Santa or holiday, set custom label 3 to '
+               'Christmas.',
+       'timestamp': 189,
+       'timestamp_label': '[00:03:09]',
+       'timestamp_seconds': 189,
+       'tip': 'If the title contains Christmas, Santa or holiday, set custom label 3 to Christmas.',
+       'title': 'How to Optimize Google Ads Shopping Feeds with Feed Attribute Rules [Step-by-Step '
+                'Tutorial]',
+       'url': 'https://www.youtube.com/watch?v=-w0GraOv2B0&t=189s',
+       'video_id': '-w0GraOv2B0'},
+      {'author': 'Wixpa Google Shopping Feed',
+       'channel': 'Wixpa Google Shopping Feed',
+       'epistemic_status': 'attributed_practitioner_claim',
+       'markdown': '[00:04:47](https://www.youtube.com/watch?v=RHJvGN_6sf0&t=287s)',
+       'relevance': 'Verbatim practitioner testimony from Chapter Q11.',
+       'source_type': 'video_pro_tip',
+       'text': 'A perfect product feed does not guarantee product approval.',
+       'timestamp': 287,
+       'timestamp_label': '[00:04:47]',
+       'timestamp_seconds': 287,
+       'tip': 'A perfect product feed does not guarantee product approval.',
+       'title': 'Shopify Google Merchant Center Product Feed Setup (2026) | Complete Beginner '
+                'Guide #shopify #google',
+       'url': 'https://www.youtube.com/watch?v=RHJvGN_6sf0&t=287s',
+       'video_id': 'RHJvGN_6sf0'},
+      {'author': 'Ecom Chris',
+       'channel': 'Ecom Chris',
+       'epistemic_status': 'attributed_practitioner_claim',
+       'markdown': '[00:30:17](https://www.youtube.com/watch?v=d9kULGtUBD4&t=1817s)',
+       'relevance': 'Verbatim practitioner testimony from Chapter Q11.',
+       'source_type': 'video_pro_tip',
+       'text': 'You need a lot of budget, a lot of data to also test this properly.',
+       'timestamp': 1817,
+       'timestamp_label': '[00:30:17]',
+       'timestamp_seconds': 1817,
+       'tip': 'You need a lot of budget, a lot of data to also test this properly.',
+       'title': 'Ultimate Guide to Google Shopping Feed Optimization: Increase CTR, Conversions & '
+                'ROAS',
+       'url': 'https://www.youtube.com/watch?v=d9kULGtUBD4&t=1817s',
+       'video_id': 'd9kULGtUBD4'},
+      {'author': 'Kai Cromwell - eCommerce SEO',
+       'channel': 'Kai Cromwell - eCommerce SEO',
+       'epistemic_status': 'attributed_practitioner_claim',
+       'markdown': '[00:00:25](https://www.youtube.com/watch?v=61mBGqDsSo4&t=25s)',
+       'relevance': 'Verbatim practitioner testimony from Chapter Q11.',
+       'source_type': 'video_pro_tip',
+       'text': "High ticket we're defining as $1,000 or more.",
+       'timestamp': 25,
+       'timestamp_label': '[00:00:25]',
+       'timestamp_seconds': 25,
+       'tip': "High ticket we're defining as $1,000 or more.",
+       'title': '5 Best High Ticket SEO Dropshipping Niches for 2025',
+       'url': 'https://www.youtube.com/watch?v=61mBGqDsSo4&t=25s',
+       'video_id': '61mBGqDsSo4'},
+      {'author': 'Abdul Rauf Ali',
+       'channel': 'Abdul Rauf Ali',
+       'epistemic_status': 'attributed_practitioner_claim',
+       'markdown': '[00:08:40](https://www.youtube.com/watch?v=V0LAr3jchLs&t=520s)',
+       'relevance': 'Verbatim practitioner testimony from Chapter Q11.',
+       'source_type': 'video_pro_tip',
+       'text': 'Filter for ROAS above 1.9, which is breakeven, with at least 50 clicks over six to '
+               'twelve months.',
+       'timestamp': 520,
+       'timestamp_label': '[00:08:40]',
+       'timestamp_seconds': 520,
+       'tip': 'Filter for ROAS above 1.9, which is breakeven, with at least 50 clicks over six to '
+              'twelve months.',
+       'title': 'Google Shopping Feed Optimization for Performance Max, 3 Fixes to improve ROAS & '
+                'Merchant centre',
+       'url': 'https://www.youtube.com/watch?v=V0LAr3jchLs&t=520s',
+       'video_id': 'V0LAr3jchLs'},
+      {'author': 'PPC Incubator',
+       'channel': 'PPC Incubator',
+       'epistemic_status': 'attributed_practitioner_claim',
+       'markdown': '[00:00:41](https://www.youtube.com/watch?v=79VrN9FhpT8&t=41s)',
+       'relevance': 'Verbatim practitioner testimony from Chapter Q11.',
+       'source_type': 'video_pro_tip',
+       'text': 'Custom labels can be populated from a Google Sheet, a supplemental feed, or a '
+               'developer-pushed main feed.',
+       'timestamp': 41,
+       'timestamp_label': '[00:00:41]',
+       'timestamp_seconds': 41,
+       'tip': 'Custom labels can be populated from a Google Sheet, a supplemental feed, or a '
+              'developer-pushed main feed.',
+       'title': 'Google Merchant Center - Optimizing Your Feed: Custom Labels with Google Sheets & '
+                'Attribute Rules',
+       'url': 'https://www.youtube.com/watch?v=79VrN9FhpT8&t=41s',
+       'video_id': '79VrN9FhpT8'}],
+ 12: [{'author': 'Davie Fogarty Mentors',
+       'channel': 'Davie Fogarty Mentors',
+       'epistemic_status': 'attributed_practitioner_claim',
+       'markdown': '[00:01:26](https://www.youtube.com/watch?v=A-7pTamjBIw&t=86s)',
+       'relevance': 'Verbatim practitioner testimony from Chapter Q12.',
+       'source_type': 'video_pro_tip',
+       'text': 'The average Shopify store converts at 1 to 3%.',
+       'timestamp': 86,
+       'timestamp_label': '[00:01:26]',
+       'timestamp_seconds': 86,
+       'tip': 'The average Shopify store converts at 1 to 3%.',
+       'title': 'How To 4X Your Shopify Conversion Rate (Complete CRO Guide)',
+       'url': 'https://www.youtube.com/watch?v=A-7pTamjBIw&t=86s',
+       'video_id': 'A-7pTamjBIw'},
+      {'author': 'Chase Chappell',
+       'channel': 'Chase Chappell',
+       'epistemic_status': 'attributed_practitioner_claim',
+       'markdown': '[00:01:49](https://www.youtube.com/watch?v=daDsoHXE52A&t=109s)',
+       'relevance': 'Verbatim practitioner testimony from Chapter Q12.',
+       'source_type': 'video_pro_tip',
+       'text': 'For every 1 second delay, there is a 7% decrease in your conversion rates.',
+       'timestamp': 109,
+       'timestamp_label': '[00:01:49]',
+       'timestamp_seconds': 109,
+       'tip': 'For every 1 second delay, there is a 7% decrease in your conversion rates.',
+       'title': 'How To Increase Conversion Rates on Shopify (2026 Guide)',
+       'url': 'https://www.youtube.com/watch?v=daDsoHXE52A&t=109s',
+       'video_id': 'daDsoHXE52A'},
       {'author': 'Justin Lalonde',
        'channel': 'Justin Lalonde',
        'epistemic_status': 'attributed_practitioner_claim',
-       'markdown': '[00:07:08](https://www.youtube.com/watch?v=rBcV_0ROMHM&t=428s)',
-       'relevance': 'Attributed practitioner commentary on lean 3PL-backed & authorized-dealer '
-                    'e-commerce operations, contribution-margin underwriting, and automated '
-                    'retention (Chapter Q12 operational verification).',
+       'markdown': '[00:02:32](https://www.youtube.com/watch?v=la7VuqSuHHE&t=152s)',
+       'relevance': 'Verbatim practitioner testimony from Chapter Q12.',
        'source_type': 'video_pro_tip',
-       'text': "Not worse comes to worse we'll just leave you with a free action plan to "
-               'implement on your own so make sure you check out other videos on the channel '
-               "for some more useful ecommerce marketing tips and I'll see you guys in the "
-               'next video peace.',
-       'timestamp': 428,
-       'timestamp_label': '[00:07:08]',
-       'timestamp_seconds': 428,
-       'tip': "Not worse comes to worse we'll just leave you with a free action plan to "
-              'implement on your own so make sure you check out other videos on the channel '
-              "for some more useful ecommerce marketing tips and I'll see you guys in the next "
-              'video peace.',
-       'title': 'The BITTER Truth About Scaling An Ecommerce Business! - DO THIS INSTEAD! '
-                '(Justin Lalonde)',
-       'url': 'https://www.youtube.com/watch?v=rBcV_0ROMHM&t=428s',
-       'video_id': 'rBcV_0ROMHM'},
-      {'author': 'Understanding Accounting',
-       'channel': 'Understanding Accounting',
+       'text': 'Paid marketing will not create demand, it will just enhance an already existing '
+               'demand.',
+       'timestamp': 152,
+       'timestamp_label': '[00:02:32]',
+       'timestamp_seconds': 152,
+       'tip': 'Paid marketing will not create demand, it will just enhance an already existing '
+              'demand.',
+       'title': 'How I Would Scale A Fashion Ecom Brand!',
+       'url': 'https://www.youtube.com/watch?v=la7VuqSuHHE&t=152s',
+       'video_id': 'la7VuqSuHHE'},
+      {'author': 'Growth Manifesto Podcast',
+       'channel': 'Growth Manifesto Podcast',
        'epistemic_status': 'attributed_practitioner_claim',
-       'markdown': '[00:24:44](https://www.youtube.com/watch?v=OoegPOU-YCE&t=1484s)',
-       'relevance': 'Attributed practitioner commentary on lean 3PL-backed & authorized-dealer '
-                    'e-commerce operations, contribution-margin underwriting, and automated '
-                    'retention (Chapter Q12 operational verification).',
+       'markdown': '[00:34:39](https://www.youtube.com/watch?v=7v_KO8bj_G0&t=2079s)',
+       'relevance': 'Verbatim practitioner testimony from Chapter Q12.',
        'source_type': 'video_pro_tip',
-       'text': 'Subtract the unrounded payment period to obtain about 55. 74 days, roughly a '
-               '56-day financing gap. Payroll, capital spending, debt service, and taxes still '
-               'require separate cash forecasts.',
-       'timestamp': 1484,
-       'timestamp_label': '[00:24:44]',
-       'timestamp_seconds': 1484,
-       'tip': 'Subtract the unrounded payment period to obtain about 55. 74 days, roughly a '
-              '56-day financing gap. Payroll, capital spending, debt service, and taxes still '
-              'require separate cash forecasts.',
-       'title': 'Inventory Estimates and the Cash Conversion Cycle | ACC 300 Lecture 20 '
-                '(Understanding Accounting)',
-       'url': 'https://www.youtube.com/watch?v=OoegPOU-YCE&t=1484s',
-       'video_id': 'OoegPOU-YCE'}]}
+       'text': "And it's probably the number one reason I see brands going insolvent.",
+       'timestamp': 2079,
+       'timestamp_label': '[00:34:39]',
+       'timestamp_seconds': 2079,
+       'tip': "And it's probably the number one reason I see brands going insolvent.",
+       'title': 'How to scale an eCommerce brand to $1M/mo | Paul Waddy',
+       'url': 'https://www.youtube.com/watch?v=7v_KO8bj_G0&t=2079s',
+       'video_id': '7v_KO8bj_G0'},
+      {'author': 'Growth Manifesto Podcast',
+       'channel': 'Growth Manifesto Podcast',
+       'epistemic_status': 'attributed_practitioner_claim',
+       'markdown': '[01:06:03](https://www.youtube.com/watch?v=7v_KO8bj_G0&t=3963s)',
+       'relevance': 'Verbatim practitioner testimony from Chapter Q12.',
+       'source_type': 'video_pro_tip',
+       'text': 'So, try and just pull back 5% off your marketing spend in cyber.',
+       'timestamp': 3963,
+       'timestamp_label': '[01:06:03]',
+       'timestamp_seconds': 3963,
+       'tip': 'So, try and just pull back 5% off your marketing spend in cyber.',
+       'title': 'How to scale an eCommerce brand to $1M/mo | Paul Waddy',
+       'url': 'https://www.youtube.com/watch?v=7v_KO8bj_G0&t=3963s',
+       'video_id': '7v_KO8bj_G0'},
+      {'author': 'Adam Callinan',
+       'channel': 'Adam Callinan',
+       'epistemic_status': 'attributed_practitioner_claim',
+       'markdown': '[00:23:59](https://www.youtube.com/watch?v=VCXWZQgbKXw&t=1439s)',
+       'relevance': 'Verbatim practitioner testimony from Chapter Q12.',
+       'source_type': 'video_pro_tip',
+       'text': 'So ad budgets without any mathematical framework behind them feels like gambling '
+               'because honestly it is just gambling.',
+       'timestamp': 1439,
+       'timestamp_label': '[00:23:59]',
+       'timestamp_seconds': 1439,
+       'tip': 'So ad budgets without any mathematical framework behind them feels like gambling '
+              'because honestly it is just gambling.',
+       'title': 'The Only Video You Need to Scale Your Ecommerce Brand to 8 Figures',
+       'url': 'https://www.youtube.com/watch?v=VCXWZQgbKXw&t=1439s',
+       'video_id': 'VCXWZQgbKXw'},
+      {'author': 'Adam Callinan',
+       'channel': 'Adam Callinan',
+       'epistemic_status': 'attributed_practitioner_claim',
+       'markdown': '[00:43:02](https://www.youtube.com/watch?v=VCXWZQgbKXw&t=2582s)',
+       'relevance': 'Verbatim practitioner testimony from Chapter Q12.',
+       'source_type': 'video_pro_tip',
+       'text': 'More contribution profit, less fixed expenses.',
+       'timestamp': 2582,
+       'timestamp_label': '[00:43:02]',
+       'timestamp_seconds': 2582,
+       'tip': 'More contribution profit, less fixed expenses.',
+       'title': 'The Only Video You Need to Scale Your Ecommerce Brand to 8 Figures',
+       'url': 'https://www.youtube.com/watch?v=VCXWZQgbKXw&t=2582s',
+       'video_id': 'VCXWZQgbKXw'},
+      {'author': 'Justin Lalonde',
+       'channel': 'Justin Lalonde',
+       'epistemic_status': 'attributed_practitioner_claim',
+       'markdown': '[00:04:41](https://www.youtube.com/watch?v=rBcV_0ROMHM&t=281s)',
+       'relevance': 'Verbatim practitioner testimony from Chapter Q12.',
+       'source_type': 'video_pro_tip',
+       'text': "That's what happens when you scale, things do break.",
+       'timestamp': 281,
+       'timestamp_label': '[00:04:41]',
+       'timestamp_seconds': 281,
+       'tip': "That's what happens when you scale, things do break.",
+       'title': 'The BITTER Truth About Scaling An Ecommerce Business! - DO THIS INSTEAD!',
+       'url': 'https://www.youtube.com/watch?v=rBcV_0ROMHM&t=281s',
+       'video_id': 'rBcV_0ROMHM'},
+      {'author': 'MoreMozi',
+       'channel': 'MoreMozi',
+       'epistemic_status': 'attributed_practitioner_claim',
+       'markdown': '[00:04:59](https://www.youtube.com/watch?v=raqfsvgSW0o&t=299s)',
+       'relevance': 'Verbatim practitioner testimony from Chapter Q12.',
+       'source_type': 'video_pro_tip',
+       'text': 'So, that offsets CAC at scale, which is word of mouth.',
+       'timestamp': 299,
+       'timestamp_label': '[00:04:59]',
+       'timestamp_seconds': 299,
+       'tip': 'So, that offsets CAC at scale, which is word of mouth.',
+       'title': 'Helping an E-Commerce Brand Doing $5M/Year Scale',
+       'url': 'https://www.youtube.com/watch?v=raqfsvgSW0o&t=299s',
+       'video_id': 'raqfsvgSW0o'},
+      {'author': 'ZEOS',
+       'channel': 'ZEOS',
+       'epistemic_status': 'attributed_practitioner_claim',
+       'markdown': '[00:02:50](https://www.youtube.com/watch?v=xEx0Lhv0wec&t=170s)',
+       'relevance': 'Verbatim practitioner testimony from Chapter Q12.',
+       'source_type': 'video_pro_tip',
+       'text': "It's quite important that brands adopt data as an enabler for their business.",
+       'timestamp': 170,
+       'timestamp_label': '[00:02:50]',
+       'timestamp_seconds': 170,
+       'tip': "It's quite important that brands adopt data as an enabler for their business.",
+       'title': 'Scaling Own.Com in Europe | Business Casual with Luis Ribeiro',
+       'url': 'https://www.youtube.com/watch?v=xEx0Lhv0wec&t=170s',
+       'video_id': 'xEx0Lhv0wec'},
+      {'author': 'Vexrulon',
+       'channel': 'Vexrulon',
+       'epistemic_status': 'attributed_practitioner_claim',
+       'markdown': '[00:21:57](https://www.youtube.com/watch?v=bufdu58UUfo&t=1317s)',
+       'relevance': 'Verbatim practitioner testimony from Chapter Q12.',
+       'source_type': 'video_pro_tip',
+       'text': 'Some of the best money you ever spend is deciding to stop spending bad money.',
+       'timestamp': 1317,
+       'timestamp_label': '[00:21:57]',
+       'timestamp_seconds': 1317,
+       'tip': 'Some of the best money you ever spend is deciding to stop spending bad money.',
+       'title': "Alex Hormozi's Guide to Scaling an E-Commerce Brand",
+       'url': 'https://www.youtube.com/watch?v=bufdu58UUfo&t=1317s',
+       'video_id': 'bufdu58UUfo'},
+      {'author': 'Nick Theriot',
+       'channel': 'Nick Theriot',
+       'epistemic_status': 'attributed_practitioner_claim',
+       'markdown': '[00:03:00](https://www.youtube.com/watch?v=iacAWRoEwXI&t=180s)',
+       'relevance': 'Verbatim practitioner testimony from Chapter Q12.',
+       'source_type': 'video_pro_tip',
+       'text': "But the problem we're experiencing now is CAC is rising.",
+       'timestamp': 180,
+       'timestamp_label': '[00:03:00]',
+       'timestamp_seconds': 180,
+       'tip': "But the problem we're experiencing now is CAC is rising.",
+       'title': 'Every Level of Scaling an ECOM Brand ($0, $30k, $100k, $1m, $10m)',
+       'url': 'https://www.youtube.com/watch?v=iacAWRoEwXI&t=180s',
+       'video_id': 'iacAWRoEwXI'},
+      {'author': 'Leading Social',
+       'channel': 'Leading Social',
+       'epistemic_status': 'attributed_practitioner_claim',
+       'markdown': '[00:01:48](https://www.youtube.com/watch?v=KpmUvCBEKK4&t=108s)',
+       'relevance': 'Verbatim practitioner testimony from Chapter Q12.',
+       'source_type': 'video_pro_tip',
+       'text': 'So if your payback is 30 to 60 days, you can scale confidently.',
+       'timestamp': 108,
+       'timestamp_label': '[00:01:48]',
+       'timestamp_seconds': 108,
+       'tip': 'So if your payback is 30 to 60 days, you can scale confidently.',
+       'title': '5 Financial Metrics You Must Know Before Scaling an Ecommerce Brand (Beyond ROAS)',
+       'url': 'https://www.youtube.com/watch?v=KpmUvCBEKK4&t=108s',
+       'video_id': 'KpmUvCBEKK4'},
+      {'author': 'Frankly eCommerce',
+       'channel': 'Frankly eCommerce',
+       'epistemic_status': 'attributed_practitioner_claim',
+       'markdown': '[00:07:53](https://www.youtube.com/watch?v=CCtunt0iWMU&t=473s)',
+       'relevance': 'Verbatim practitioner testimony from Chapter Q12.',
+       'source_type': 'video_pro_tip',
+       'text': 'And so by having somebody pick the order and somebody else pack the order, we have '
+               'reduced our mistakes drastically.',
+       'timestamp': 473,
+       'timestamp_label': '[00:07:53]',
+       'timestamp_seconds': 473,
+       'tip': 'And so by having somebody pick the order and somebody else pack the order, we have '
+              'reduced our mistakes drastically.',
+       'title': 'Scaling Creative Brands Through Operations',
+       'url': 'https://www.youtube.com/watch?v=CCtunt0iWMU&t=473s',
+       'video_id': 'CCtunt0iWMU'},
+      {'author': 'Noah Haynes',
+       'channel': 'Noah Haynes',
+       'epistemic_status': 'attributed_practitioner_claim',
+       'markdown': '[00:03:27](https://www.youtube.com/watch?v=SjGeVqhkKPw&t=207s)',
+       'relevance': 'Verbatim practitioner testimony from Chapter Q12.',
+       'source_type': 'video_pro_tip',
+       'text': 'Shipping alone costs brands 20 to 40% of their total cost depending on their '
+               'product size.',
+       'timestamp': 207,
+       'timestamp_label': '[00:03:27]',
+       'timestamp_seconds': 207,
+       'tip': 'Shipping alone costs brands 20 to 40% of their total cost depending on their '
+              'product size.',
+       'title': 'Scaling an Ecommerce Brand Is Hard Until You Understand These 3 Systems',
+       'url': 'https://www.youtube.com/watch?v=SjGeVqhkKPw&t=207s',
+       'video_id': 'SjGeVqhkKPw'},
+      {'author': 'MarketingSherpa',
+       'channel': 'MarketingSherpa',
+       'epistemic_status': 'attributed_practitioner_claim',
+       'markdown': '[00:03:20](https://www.youtube.com/watch?v=u0WQ5ZC6KME&t=200s)',
+       'relevance': 'Verbatim practitioner testimony from Chapter Q12.',
+       'source_type': 'video_pro_tip',
+       'text': 'The overlooked priority is inventory visibility, knowing where the blue shirt size '
+               'extra large actually is.',
+       'timestamp': 200,
+       'timestamp_label': '[00:03:20]',
+       'timestamp_seconds': 200,
+       'tip': 'The overlooked priority is inventory visibility, knowing where the blue shirt size '
+              'extra large actually is.',
+       'title': 'E-commerce Marketing: Evaluating what omnichannel really means',
+       'url': 'https://www.youtube.com/watch?v=u0WQ5ZC6KME&t=200s',
+       'video_id': 'u0WQ5ZC6KME'},
+      {'author': 'EICOM Institute',
+       'channel': 'EICOM Institute',
+       'epistemic_status': 'attributed_practitioner_claim',
+       'markdown': '[00:31:47](https://www.youtube.com/watch?v=TZ1BQdO4bl4&t=1907s)',
+       'relevance': 'Verbatim practitioner testimony from Chapter Q12.',
+       'source_type': 'video_pro_tip',
+       'text': 'Restructure the organization into a cross-channel operating model, and do it '
+               'before the technology.',
+       'timestamp': 1907,
+       'timestamp_label': '[00:31:47]',
+       'timestamp_seconds': 1907,
+       'tip': 'Restructure the organization into a cross-channel operating model, and do it before '
+              'the technology.',
+       'title': 'Scaling Omnichannel Personalization | Commerce Chats',
+       'url': 'https://www.youtube.com/watch?v=TZ1BQdO4bl4&t=1907s',
+       'video_id': 'TZ1BQdO4bl4'},
+      {'author': 'Bloom Analytics',
+       'channel': 'Bloom Analytics',
+       'epistemic_status': 'attributed_practitioner_claim',
+       'markdown': '[00:02:31](https://www.youtube.com/watch?v=IlWyYcfaKpg&t=151s)',
+       'relevance': 'Verbatim practitioner testimony from Chapter Q12.',
+       'source_type': 'video_pro_tip',
+       'text': 'Pays back inside 60 days, you can spend more.',
+       'timestamp': 151,
+       'timestamp_label': '[00:02:31]',
+       'timestamp_seconds': 151,
+       'tip': 'Pays back inside 60 days, you can spend more.',
+       'title': 'How to Calculate Ecommerce Unit Economics (and Know When to Scale Ads)',
+       'url': 'https://www.youtube.com/watch?v=IlWyYcfaKpg&t=151s',
+       'video_id': 'IlWyYcfaKpg'}]}

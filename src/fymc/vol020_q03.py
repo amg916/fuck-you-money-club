@@ -1,709 +1,857 @@
 from __future__ import annotations
 
-CHAPTER_3 = {
-    "id": "Q3",
-    "chapter_id": "Q3",
-    "chapter_number": 3,
-    "question_number": 3,
-    "slug": "unit-economics-margin-waterfall-working-capital-float",
-    "question_prompt": "What are the real unit economics, gross-to-net margin deductions, scrub/reversal reserves, and working-capital float requirements for government contract brokering?",
-    "kicker": "Q3 / THE BIG MONEY PLAYBOOKS",
-    "title": "Unit Economics, Margin Waterfall & Working-Capital Float",
-    "subtitle": "SAM.gov Bid-Desk Fees, FAR Teaming Economics, Reversal Reserves & Acceptance-to-Cash Funding",
-    "layout_template": "financial_breakdown",
-    "reading_time_minutes": 14,
-    "executive_summary": (
-        "Candidate #4, Government Contract Brokering, ranks #27 with a 79/100 "
-        "Money-to-Manpower Score. Its economics depend on recognized service fees, "
-        "not the face value of contracts sourced through SAM.gov or municipal portals. "
-        "This chapter develops seven mapped plays as operating variants of the supplied "
-        "brokerage play: federal sourcing, municipal sourcing, janitorial coordination, "
-        "grounds coordination, courier coordination, translation coordination, and IT staffing "
-        "coordination. Canonical annual owner profit is $18,000 Conservative, $126,000 Base, "
-        "and $300,000 Scaled. The waterfall separates scope credits from delivery labor, "
-        "customer acquisition, operating overhead, and collection losses. Working-capital "
-        "tests expose acceptance holds and invoice delays before they consume contractor "
-        "payroll. Fixed deliverable fees, documented management work, and lawful teaming "
-        "structures make the spread defensible; an award announcement alone creates neither "
-        "earned revenue nor spendable cash."
-    ),
-    "key_metrics": [
-        {
-            "label": "Conservative",
-            "value": "$120,000",
-            "context": "Annual recognized procurement-service fees; excludes underlying client contract value",
-            "note": "15% margin; $18,000 annual owner net profit; 2 FT + 3 C",
-        },
-        {
-            "label": "Base",
-            "value": "$560,000",
-            "context": "Annual recognized procurement-service fees; excludes underlying client contract value",
-            "note": "22.5% margin; $126,000 annual owner net profit; 2 FT + 3 C",
-        },
-        {
-            "label": "Scaled",
-            "value": "$1,000,000",
-            "context": "Annual recognized procurement-service fees; excludes underlying client contract value",
-            "note": "30% margin; $300,000 annual owner net profit; 3 FT + 4 C",
-        },
-    ],
-    "sections": [
-        {
-            "heading": "1. Define the fee-bearing unit before calculating a management spread",
-            "epistemic_status": "operating_framework",
-            "paragraphs": [
-                (
-                    "Start with the signed service agreement, not the solicitation's estimated "
-                    "ceiling. The canonical revenue basis is recognized service fees, excluding "
-                    "client contract value, subcontractor pass-through principal, and unexercised "
-                    "options. The supplied mapped play, government_rfp_subcontractor_brokerage, "
-                    "uses SAM.gov, state procurement portals, and municipal bid boards to locate "
-                    "low-bid-density service opportunities and coordinate qualified fulfillment. "
-                    "Its advertised 15–30% management spread is an underwriting range, not an "
-                    "automatic accounting treatment. On a $100,000 client service package, "
-                    "$80,000 of supplier delivery and $20,000 of separately earned desk fees "
-                    "produce a 20% fee share of package value and a 25% markup on supplier "
-                    "cost. Those percentages answer different questions. If the desk instead "
-                    "contracts as principal and controls the promised service, gross presentation "
-                    "may be required; a $20,000 margin cannot simply be relabeled $20,000 of "
-                    "revenue. Keep that principal model outside this fee-based scorecard until "
-                    "the accounting policy and scenario are rebuilt. Maintain a deal record "
-                    "linking the customer, solicitation identifier, fee payer, delivery obligations, "
-                    "acceptance evidence, supplier invoices, and recognized fee. A purchase order "
-                    "ceiling is pipeline capacity; only satisfied contractual performance supports "
-                    "the operating revenue ledger."
-                ),
-                (
-                    "For this chapter, seven mapped plays mean seven operating variants of that "
-                    "single supplied catalog identifier, not seven invented catalog entries. "
-                    "Federal sourcing and municipal sourcing monetize bid-desk deliverables; "
-                    "janitorial, grounds, courier, translation, and IT staffing coordination "
-                    "monetize distinct management work. Price sourcing through fixed retainers "
-                    "or completed milestones where appropriate, rather than assuming an award "
-                    "percentage is permissible. FAR Subpart 3.4 and FAR 52.203-5 restrict "
-                    "contingent-fee arrangements within their applicable scope; the bona fide "
-                    "employee or agency exception requires factual qualification, not a label "
-                    "in an invoice. Likewise, 41 U.S.C. 2102 protects specified procurement "
-                    "information, and 41 U.S.C. 8702 prohibits kickbacks connected with covered "
-                    "prime contracts and subcontracts. No pricing model should require buying "
-                    "source-selection information or paying an undisclosed reward for favorable "
-                    "treatment. A percentage can illustrate coordination economics without "
-                    "authorizing a commission for obtaining an award. State and municipal "
-                    "requirements must be checked separately. Record the actual service, fee "
-                    "trigger, customer benefit, and applicable restrictions before a salesperson "
-                    "promises a spread. The matrix shows illustrative standalone units; its "
-                    "rows are alternative delivery motions, not additive components of the "
-                    "canonical annual revenue totals."
-                ),
-                (
-                    "Screen structure before calculating contribution. For covered small-business "
-                    "service contracts, 13 CFR 125.6 generally limits payments to subcontractors "
-                    "that are not similarly situated to 50% of the amount paid by the government "
-                    "for contract performance, subject to the rule's definitions and exclusions. "
-                    "A similarly situated entity must meet the relevant program status and "
-                    "size requirements; location alone proves nothing. Further subcontracting "
-                    "can affect the limitation calculation, and ostensible-subcontractor concerns "
-                    "remain a separate affiliation issue. A broker retaining 20% while sending "
-                    "80% to an ineligible fulfillment company can therefore have attractive "
-                    "arithmetic and an unusable structure. Check FAR 52.215-23 when applicable: "
-                    "a pass-through charge needs substantive added value, not merely invoice "
-                    "routing. The fallback is an unrestricted opportunity whose actual terms "
-                    "permit the structure, including suitable commercial or municipal work, "
-                    "or a properly qualified similarly situated team. Municipal status does "
-                    "not erase local subcontracting restrictions. Document scheduling, quality "
-                    "inspection, customer reporting, replacement coverage, and dispute resolution "
-                    "as management deliverables. If those services cannot justify the fee, "
-                    "sell a narrower fixed-price bid-desk engagement instead. Reject a tempting "
-                    "award when eligibility, delivery control, or fee legality cannot support "
-                    "the proposed economics."
-                ),
-            ],
-            "table": {
-                "caption": "Seven Fee-Bearing Operating Variants of government_rfp_subcontractor_brokerage",
-                "headers": [
-                    "Operating variant and purchased management deliverable",
-                    "Illustrative unit price and contribution arithmetic",
-                    "Evidence supporting performance and fee recognition",
-                    "Specific failure mode and practical fallback",
-                ],
-                "rows": [
-                    [
-                        "Federal sourcing desk delivering screened SAM.gov opportunity packets",
-                        "$4,000 monthly fee less $2,200 delivery leaves $1,800",
-                        "Archive search filters, amendments, eligibility screens, and delivered packets",
-                        "When awards slip, retain only funded deliverable-based engagements",
-                    ],
-                    [
-                        "Municipal sourcing desk delivering jurisdiction-specific bid calendar coverage",
-                        "$3,000 monthly fee less $1,650 delivery leaves $1,350",
-                        "Preserve portal notices, local submission rules, and completed calendars",
-                        "When portal access fails, use permitted exports and verification",
-                    ],
-                    [
-                        "Janitorial coordination delivering inspections, scheduling, and replacement coverage",
-                        "$100,000 package supports $20,000 fees less $12,000 desk costs",
-                        "Retain inspection reports, staffing rosters, and accepted management milestones",
-                        "Use unrestricted work or qualified similarly situated fulfillment",
-                    ],
-                    [
-                        "Grounds coordination delivering seasonal scheduling and weather recovery",
-                        "$120,000 package supports $24,000 fees less $14,400 desk costs",
-                        "Retain site photographs, weather logs, and approved recovery schedules",
-                        "Replace missed visits through priced backup crews and capacity",
-                    ],
-                    [
-                        "Courier coordination delivering route controls and exception handling",
-                        "$80,000 package supports $16,000 fees less $9,600 desk costs",
-                        "Retain delivery scans, route exceptions, and accepted coordination reports",
-                        "Activate alternate carriers without selling unsupported delivery guarantees",
-                    ],
-                    [
-                        "Translation coordination delivering assignment routing and quality review",
-                        "$60,000 package supports $12,000 fees less $7,200 desk costs",
-                        "Retain reviewer credentials, revision logs, and customer acceptance evidence",
-                        "Use screened replacement linguists and predefined paid revision limits",
-                    ],
-                    [
-                        "IT staffing coordination delivering onboarding and replacement management",
-                        "$200,000 package supports $40,000 fees less $24,000 desk costs",
-                        "Retain approved timesheets, onboarding records, and replacement response evidence",
-                        "Stop unfunded starts and maintain qualified replacement candidate coverage",
-                    ],
-                ],
-            },
-            "callout": {
-                "kind": "OPERATOR GATE",
-                "title": "Verify the structure before pricing the fee",
-                "body": (
-                    "The spreadsheet becomes actionable only after the contracting structure, "
-                    "recognition basis, performance obligations, and cash obligations agree."
-                ),
-                "items": [
-                    "Identify whether the desk is service provider, agent, subcontractor, or prime; document why the scorecard includes only its recognized fees.",
-                    "Check the solicitation and agreement against FAR contingent-fee provisions, procurement-integrity restrictions, and applicable state or municipal requirements.",
-                    "For a covered set-aside, calculate the 13 CFR 125.6 limitation using actual supplier status and further-subcontracting facts.",
-                    "Obtain executable supplier pricing, acceptance criteria, replacement coverage, and payment terms before committing customer delivery dates.",
-                ],
-            },
-        },
-        {
-            "heading": "2. Reconcile annual cohorts from gross fee billings to owner profit",
-            "epistemic_status": "illustrative_model",
-            "paragraphs": [
-                (
-                    "Use an annual cohort of completed fee-bearing engagements to reconcile the "
-                    "three canonical scenarios. The illustrative customer counts are six "
-                    "Conservative, fourteen Base, and twenty Scaled, producing average recognized "
-                    "annual fees of $20,000, $40,000, and $50,000 per customer. Gross earned fee "
-                    "billings before scope credits are $126,000, $580,000, and $1,040,000. "
-                    "Expected contractual credits and performance reversals of $6,000, $20,000, "
-                    "and $40,000 reduce those amounts to exactly $120,000, $560,000, and "
-                    "$1,000,000 of recognized service revenue. This is a steady-state annual "
-                    "cohort illustration: no opening deferred balances or unfinished performance "
-                    "are embedded in the bridge. In a live ledger, reconcile invoicing, earned "
-                    "amounts, contract liabilities, and unbilled receivables separately. The "
-                    "credit assumptions equal 4.76%, 3.45%, and 3.85% of gross fee billings, "
-                    "respectively. They represent fee reductions for narrowed scope, rejected "
-                    "deliverables, or documented service failures; they are not interchangeable "
-                    "with losses on valid receivables. Exclude unawarded pipeline entirely. "
-                    "A bid lost before contracted work is earned creates acquisition expense "
-                    "or idle capacity, not a reversal of imaginary award revenue. Each "
-                    "cohort must reconcile to signed fee schedules and actual performance "
-                    "before its margin is used for hiring."
-                ),
-                (
-                    "Delivery labor is $54,000, $252,000, and $420,000 across the cases. "
-                    "An explicit staffing assumption makes the low case intelligible: its "
-                    "two full-time people are a working owner taking residual profit and "
-                    "one employee budgeted at $36,000 fully loaded, plus three contractors "
-                    "sharing $18,000 of delivery invoices. That employee budget requires "
-                    "location-specific wage and benefit validation and may be inadequate. "
-                    "The Base case assumes $72,000 for the paid employee and $180,000 "
-                    "across three contractors; the Scaled case assumes two paid employees "
-                    "at $90,000 each and $240,000 across four contractors, alongside the "
-                    "working owner. Contractor counts describe a delivery bench, not "
-                    "full-time-equivalent salaries. Acquisition spending of $12,000, $56,000, "
-                    "and $80,000 yields customer acquisition costs of $2,000, $4,000, and "
-                    "$4,000 using the cohort counts above. Include unsuccessful proposal "
-                    "work in that spending and do not also charge those hours to "
-                    "delivery. After labor and acquisition, contribution is $54,000, "
-                    "$252,000, and $500,000. Named software such as Microsoft 365, "
-                    "Airtable, and QuickBooks belongs in the platform budget, not hidden "
-                    "inside a fictional zero-cost automation assumption. Separate proposal "
-                    "production time, customer management time, and supplier fulfillment "
-                    "time in weekly timesheets."
-                ),
-                (
-                    "The remaining deductions are platform, insurance, and operating support "
-                    "of $18,000, $70,000, and $110,000; financing, collection losses, and "
-                    "payment administration of $3,000, $14,000, and $20,000; and fixed "
-                    "administrative overhead of $15,000, $42,000, and $70,000. Total expenses "
-                    "therefore equal $102,000, $434,000, and $700,000, leaving the exact "
-                    "canonical owner profits of $18,000, $126,000, and $300,000. No additional "
-                    "market-rate owner salary is deducted in this illustration; residual "
-                    "profit compensates ownership and the owner's full-time labor before "
-                    "personal taxes. The Conservative case is consequently a fragile "
-                    "owner-operated business, not evidence that five people receive "
-                    "comfortable full-time compensation. Split the combined financing line "
-                    "internally: Conservative budgets $1,000 each for financing, collection "
-                    "losses, and payment administration; Base budgets $8,000, $4,000, and "
-                    "$2,000; Scaled budgets $10,000, $6,000, and $4,000. Collection losses "
-                    "remain an expense against otherwise valid receivables, while contractual "
-                    "fee credits stay above recognized revenue. Reserve releases must follow "
-                    "resolved evidence rather than a target margin. Reconcile gross profit, "
-                    "contribution, and owner profit as distinct subtotals so a strong "
-                    "supplier spread cannot conceal an expensive bid desk."
-                ),
-            ],
-            "table": {
-                "caption": "Annual Completed-Cohort Waterfall Reconciled to the Canonical Scorecard",
-                "headers": [
-                    "Waterfall line and accounting treatment",
-                    "Conservative annual fee-based operating case",
-                    "Base annual fee-based operating case",
-                    "Scaled annual fee-based operating case",
-                ],
-                "rows": [
-                    [
-                        "Gross earned fee billings before contractual scope reductions",
-                        "$126,000 billed for completed fee-bearing service obligations",
-                        "$580,000 billed for completed fee-bearing service obligations",
-                        "$1,040,000 billed for completed fee-bearing service obligations",
-                    ],
-                    [
-                        "Subtract contractual credits and documented performance reversal allowances",
-                        "$6,000 deducted for expected contractual fee reductions",
-                        "$20,000 deducted for expected contractual fee reductions",
-                        "$40,000 deducted for expected contractual fee reductions",
-                    ],
-                    [
-                        "Recognized service revenue excluding client contract principal value",
-                        "$120,000 recognized revenue matching the canonical Conservative case",
-                        "$560,000 recognized revenue matching the canonical Base case",
-                        "$1,000,000 recognized revenue matching the canonical Scaled case",
-                    ],
-                    [
-                        "Subtract paid employee delivery labor and contractor invoices",
-                        "$54,000 comprising $36,000 employee and $18,000 contractors",
-                        "$252,000 comprising $72,000 employee and $180,000 contractors",
-                        "$420,000 comprising $180,000 employees and $240,000 contractors",
-                    ],
-                    [
-                        "Delivery gross profit before customer acquisition and overhead",
-                        "$66,000 remaining after recognized revenue funds delivery labor",
-                        "$308,000 remaining after recognized revenue funds delivery labor",
-                        "$580,000 remaining after recognized revenue funds delivery labor",
-                    ],
-                    [
-                        "Subtract acquisition spending including unsuccessful proposal production costs",
-                        "$12,000 acquisition spending divided across six paying customers",
-                        "$56,000 acquisition spending divided across fourteen paying customers",
-                        "$80,000 acquisition spending divided across twenty paying customers",
-                    ],
-                    [
-                        "Contribution remaining after delivery labor and acquisition spending",
-                        "$54,000 contribution available for support and administrative costs",
-                        "$252,000 contribution available for support and administrative costs",
-                        "$500,000 contribution available for support and administrative costs",
-                    ],
-                    [
-                        "Subtract platform subscriptions, insurance premiums, and operating support",
-                        "$18,000 annual budget supporting the contracted service operation",
-                        "$70,000 annual budget supporting the contracted service operation",
-                        "$110,000 annual budget supporting the contracted service operation",
-                    ],
-                    [
-                        "Subtract financing, collection losses, and payment administration expenses",
-                        "$3,000 combined budget with three separately tracked components",
-                        "$14,000 combined budget with three separately tracked components",
-                        "$20,000 combined budget with three separately tracked components",
-                    ],
-                    [
-                        "Subtract fixed administrative overhead without additional owner salary",
-                        "$15,000 annual administrative allocation separate from delivery labor",
-                        "$42,000 annual administrative allocation separate from delivery labor",
-                        "$70,000 annual administrative allocation separate from delivery labor",
-                    ],
-                    [
-                        "Total operating deductions after recognized service revenue measurement",
-                        "$102,000 total expenses reconciled across five deduction categories",
-                        "$434,000 total expenses reconciled across five deduction categories",
-                        "$700,000 total expenses reconciled across five deduction categories",
-                    ],
-                    [
-                        "Residual annual owner profit and recognized revenue margin",
-                        "$18,000 owner profit equals 15% of recognized revenue",
-                        "$126,000 owner profit equals 22.5% of recognized revenue",
-                        "$300,000 owner profit equals 30% of recognized revenue",
-                    ],
-                ],
-            },
-        },
-        {
-            "heading": "3. Fund acceptance holds and invoice DSO without borrowing against fiction",
-            "epistemic_status": "illustrative_model",
-            "paragraphs": [
-                (
-                    "Measure the cash clock from the first delivery outlay, not from the "
-                    "award notice. Separate mobilization before performance, acceptance or "
-                    "milestone-release holds before invoicing, invoice-to-cash days sales "
-                    "outstanding, and supplier payment dates. The illustration assumes "
-                    "immediate operating outlays, no supplier credit, and a fifteen-day "
-                    "pre-invoice acceptance hold in every case. Invoice DSO is thirty, "
-                    "sixty, and seventy-five days, producing cash gaps of forty-five, "
-                    "seventy-five, and ninety days. These are planning assumptions, not "
-                    "statutory payment promises. If the desk invoices a prime rather than "
-                    "an agency, the relevant collectible obligation is the prime's signed "
-                    "agreement with the desk. Federal prompt-payment provisions do not "
-                    "automatically turn every subcontract invoice into a direct government "
-                    "receivable. Check 31 U.S.C. 3903, FAR Subpart 32.9, and applicable "
-                    "payment clauses for the actual transaction. FAR 52.232-40 addresses "
-                    "accelerated payments to small-business subcontractors when its conditions "
-                    "apply, but it does not supply an unconditional accelerated cash date. "
-                    "For municipal work, obtain the jurisdiction's payment provisions and "
-                    "the customer's acceptance workflow. A missing purchase-order reference, "
-                    "incorrect remittance record, or disputed timesheet can extend collection "
-                    "even when the buyer has adequate appropriations."
-                ),
-                (
-                    "Use total annual expense divided by 365 as a deliberately conservative "
-                    "daily funding proxy: approximately $279.45 Conservative, $1,189.04 Base, "
-                    "and $1,917.81 Scaled. This includes collection-loss allowances and other "
-                    "budgeted charges that may not be immediate cash payments, so it is "
-                    "a screening calculation rather than a substitute for a dated cash "
-                    "forecast. Multiplying by the assumed cash gaps gives approximately "
-                    "$12,575, $89,178, and $172,603 of operating float. Add thirty days "
-                    "of expense buffer, approximately $8,384, $35,671, and $57,534, producing "
-                    "rounded funding targets of $20,959, $124,849, and $230,137. Calculate "
-                    "totals before rounding the displayed components. The Scaled target "
-                    "exceeds the stated $20,000–$90,000 startup capital range; expansion "
-                    "therefore needs accumulated cash, contracted advances, suitable credit, "
-                    "or slower starts. The stated $5,000–$25,000 monthly operating range "
-                    "also cannot describe all-in spending at scale: canonical annual "
-                    "expenses imply approximately $8,500, $36,167, and $58,333 monthly. "
-                    "Keep the monthly range as an early-stage planning reference rather "
-                    "than silently forcing mature delivery expenses underneath it. Neither "
-                    "an unsigned credit proposal nor an anticipated award closes a "
-                    "funding gap."
-                ),
-                (
-                    "Build a thirteen-week cash schedule by customer and weekly payment "
-                    "date. Enter earned invoices, expected acceptance dates, disputed amounts, "
-                    "supplier payroll deadlines, taxes, insurance renewals, and available "
-                    "credit. A fifteen-day hold belongs before invoice DSO here; if an "
-                    "actual arrangement instead withholds cash after collection, model that "
-                    "separate restriction without counting the same delay twice. The Base "
-                    "case's $124,849 target falls to $104,849 if two customers each "
-                    "provide an available $10,000 advance, but the advances remain contract "
-                    "liabilities until earned and must be restored if refund obligations "
-                    "arise. Confirm that their terms permit operational use. Supplier "
-                    "credit can reduce float only where enforceable terms support it; "
-                    "a contractor's informal willingness to wait is not financing. A "
-                    "thirty-day DSO extension adds approximately $8,384, $35,671, or "
-                    "$57,534 to required funding before incremental borrowing charges. "
-                    "Reserve a committed facility for that timing shock rather than "
-                    "using it to justify structurally negative contracts. Validate "
-                    "assignment restrictions, lender collateral terms, and any applicable "
-                    "federal assignment requirements before pledging receivables. Review "
-                    "actual bank availability weekly, because borrowing-base exclusions "
-                    "can remove disputed, aged, or concentrated invoices precisely when "
-                    "the desk needs liquidity most."
-                ),
-            ],
-            "table": {
-                "caption": "Acceptance-to-Cash Float, Buffer Requirements, and Timing Sensitivities",
-                "headers": [
-                    "Funding assumption and operating interpretation",
-                    "Conservative cash requirement and underlying timing",
-                    "Base cash requirement and underlying timing",
-                    "Scaled cash requirement and underlying timing",
-                ],
-                "rows": [
-                    [
-                        "Invoice collection interval measured after a valid invoice",
-                        "Thirty invoice DSO days following the acceptance hold",
-                        "Sixty invoice DSO days following the acceptance hold",
-                        "Seventy-five invoice DSO days following the acceptance hold",
-                    ],
-                    [
-                        "Total modeled cash gap with immediate expense payments",
-                        "Forty-five days comprising fifteen acceptance plus thirty collection",
-                        "Seventy-five days comprising fifteen acceptance plus sixty collection",
-                        "Ninety days comprising fifteen acceptance plus seventy-five collection",
-                    ],
-                    [
-                        "Daily funding proxy using all annual expense categories",
-                        "$102,000 divided by 365 equals approximately $279.45 daily",
-                        "$434,000 divided by 365 equals approximately $1,189.04 daily",
-                        "$700,000 divided by 365 equals approximately $1,917.81 daily",
-                    ],
-                    [
-                        "Operating float before the separate thirty-day expense buffer",
-                        "$12,575 approximately funds the modeled forty-five-day cash gap",
-                        "$89,178 approximately funds the modeled seventy-five-day cash gap",
-                        "$172,603 approximately funds the modeled ninety-day cash gap",
-                    ],
-                    [
-                        "Total funding target including thirty additional buffer days",
-                        "$20,959 rounded target covers seventy-five total expense days",
-                        "$124,849 rounded target covers 105 total expense days",
-                        "$230,137 rounded target covers 120 total expense days",
-                    ],
-                    [
-                        "Incremental funding needed when invoice DSO increases thirty days",
-                        "$8,384 additional funding before any incremental financing charges",
-                        "$35,671 additional funding before any incremental financing charges",
-                        "$57,534 additional funding before any incremental financing charges",
-                    ],
-                ],
-            },
-            "callout": {
-                "kind": "INSIDER PRO-TIPS",
-                "title": "Shorten the administrative cash gap before buying more leads",
-                "body": (
-                    "Experienced bid desks collect evidence continuously and distinguish "
-                    "customer acceptance friction from actual funding scarcity."
-                ),
-                "items": [
-                    "Send a sample invoice and supporting-document checklist to the prime's accounts-payable team before the first delivery milestone.",
-                    "Track acceptance aging separately from invoice aging so an apparently healthy DSO metric cannot hide unbilled completed work.",
-                    "Negotiate smaller accepted milestones and supplier billing intervals rather than relying on an unpriced promise to wait for payment.",
-                    "Keep customer advances, credit-loss allowances, contractual fee credits, and unrestricted operating cash in separate ledger accounts and forecast lines.",
-                ],
-            },
-            "sop_steps": [
-                {
-                    "step": 1,
-                    "title": "Map the contractual cash clock",
-                    "action": "Record first outlay, acceptance conditions, invoice eligibility, customer payment terms, and supplier due dates.",
-                    "detail": "Assign an accountable person to every acceptance document and distinguish agency payment from prime-to-desk payment.",
-                },
-                {
-                    "step": 2,
-                    "title": "Reconcile the weekly collection population",
-                    "action": "Match earned fees, issued invoices, contractual credits, receivable losses, and bank receipts by engagement identifier.",
-                    "detail": "Investigate invoice rejection reasons and unbilled completed milestones before changing the forecast collection date.",
-                },
-                {
-                    "step": 3,
-                    "title": "Stress the available liquidity",
-                    "action": "Apply thirty extra collection days and remove disputed invoices from assumed credit availability.",
-                    "detail": "Compare the lowest weekly cash balance with committed funds after supplier obligations and refund exposure.",
-                },
-                {
-                    "step": 4,
-                    "title": "Authorize only funded delivery starts",
-                    "action": "Schedule new engagements only when available cash and executable financing cover the stressed weekly deficit.",
-                    "detail": "If funding fails, reduce concurrent starts, obtain permitted advances, or renegotiate milestone and supplier payment intervals.",
-                },
-            ],
-        },
-        {
-            "heading": "4. Stress revenue, replacement labor, and acquisition before expanding capacity",
-            "epistemic_status": "illustrative_model",
-            "paragraphs": [
-                (
-                    "Run sensitivities against recognized fees, not the government contract's "
-                    "headline value. A 10% reduction in recognized revenue with annual "
-                    "costs held fixed reduces owner profit to $6,000 Conservative, "
-                    "$70,000 Base, and $200,000 Scaled. The resulting margins are "
-                    "approximately 5.56%, 13.89%, and 22.22%. Separately, a 10% increase "
-                    "in delivery labor reduces profit to $12,600, $100,800, and "
-                    "$258,000. Combining both shocks leaves only $600, $44,800, and "
-                    "$158,000 before any additional financing expense. These are "
-                    "deliberately blunt fixed-cost tests, appropriate when employees, "
-                    "subscriptions, and subcontractor minimums cannot be removed immediately. "
-                    "Do not claim that all costs automatically decline with lost awards. "
-                    "An increase in contractual fee credits equal to two percentage "
-                    "points of gross billings costs another $2,520, $11,600, or "
-                    "$20,800, respectively; use the gross-billings denominator rather "
-                    "than recognized revenue for that calculation. Keep each stress "
-                    "separate unless explicitly constructing a combined scenario. A "
-                    "credit-loss shock belongs below recognized revenue, while a scope "
-                    "credit changes the transaction price above it. This separation "
-                    "preserves a useful diagnosis: weak scope control, weak collections, "
-                    "and weak labor pricing require different corrective actions."
-                ),
-                (
-                    "Customer acquisition deserves its own loss funnel. With a hypothetical "
-                    "25% conversion from fully qualified proposals to paying customers, "
-                    "six, fourteen, and twenty customers require twenty-four, fifty-six, "
-                    "and eighty proposals. Acquisition budgets therefore support average "
-                    "proposal costs of $500, $1,000, and $1,000. Those costs include "
-                    "screening, estimating, document preparation, and unsuccessful submissions; "
-                    "they exclude delivery already charged to contracted customers. If "
-                    "conversion falls to 20% while proposal counts and spend remain "
-                    "fixed, expected customer counts fall to 4.8, 11.2, and sixteen, "
-                    "and expected acquisition cost per customer rises to $2,500, "
-                    "$5,000, and $5,000. Fractional customers describe an expected-value "
-                    "planning model, not actual engagements. Protect the funnel by "
-                    "checking amendment history, incumbent advantages, mandatory site "
-                    "visits, wage determinations, and realistic subcontractor availability "
-                    "before paying for a proposal. SAM.gov alerts and bid calendars "
-                    "reduce monitoring effort but do not establish eligibility or "
-                    "commercial viability. For covered federal service work, the "
-                    "Service Contract Labor Standards statute and applicable wage "
-                    "determination can invalidate a cheap labor quote. Rebid with "
-                    "verified rates or decline; automation cannot repair a spread "
-                    "built on unpaid benefits or unavailable personnel."
-                ),
-                (
-                    "Translate these tests into operating limits rather than decorative "
-                    "charts. Give each engagement a maximum funded exposure, a minimum "
-                    "post-delivery contribution, and a documented replacement-provider "
-                    "budget. Under the Base waterfall, $560,000 of fees less $252,000 "
-                    "delivery labor leaves $308,000 before acquisition; that pool must "
-                    "still cover $182,000 of acquisition and other overhead to produce "
-                    "$126,000 owner profit. A single $15,000 replacement expense "
-                    "therefore consumes approximately 11.9% of annual Base owner "
-                    "profit even though it is only 2.7% of revenue. Secure backup "
-                    "janitorial crews, alternate courier capacity, or replacement "
-                    "linguists before the service failure, with documented prices "
-                    "and applicable qualifications. Review cohort credits monthly "
-                    "against actual root causes and revise future quotes without "
-                    "retroactively disguising failed jobs. For an early-stage desk, "
-                    "the stated six-to-eighteen-month time to first deal also "
-                    "requires a separate pre-revenue runway; mature annual margins "
-                    "do not fund months before the first collection. Expand only "
-                    "when the existing book demonstrates repeatable acceptance, "
-                    "collectible invoices, and funded replacement capacity. When "
-                    "those conditions fail, narrow the scope to paid bid-desk "
-                    "deliverables, reduce concurrent launches, or pursue permitted "
-                    "unrestricted work instead of borrowing to preserve an "
-                    "unsupported headline spread."
-                ),
-            ],
-            "table": {
-                "caption": "Scenario Stress Tests with Explicit Denominators and Operational Responses",
-                "headers": [
-                    "Stress definition and immediate operating response",
-                    "Conservative residual profit or acquisition result",
-                    "Base residual profit or acquisition result",
-                    "Scaled residual profit or acquisition result",
-                ],
-                "rows": [
-                    [
-                        "Reduce recognized revenue 10%; hold annual expenses unchanged",
-                        "$6,000 profit remains on $108,000 recognized annual revenue",
-                        "$70,000 profit remains on $504,000 recognized annual revenue",
-                        "$200,000 profit remains on $900,000 recognized annual revenue",
-                    ],
-                    [
-                        "Increase delivery labor 10%; reprice future supplier commitments",
-                        "$12,600 profit remains after $5,400 additional delivery expense",
-                        "$100,800 profit remains after $25,200 additional delivery expense",
-                        "$258,000 profit remains after $42,000 additional delivery expense",
-                    ],
-                    [
-                        "Combine revenue reduction and labor increase without savings",
-                        "$600 profit remains before any incremental financing expense",
-                        "$44,800 profit remains before any incremental financing expense",
-                        "$158,000 profit remains before any incremental financing expense",
-                    ],
-                    [
-                        "Increase contractual credits two percentage points of gross billings",
-                        "$15,480 profit remains after $2,520 additional fee credits",
-                        "$114,400 profit remains after $11,600 additional fee credits",
-                        "$279,200 profit remains after $20,800 additional fee credits",
-                    ],
-                    [
-                        "Lower proposal conversion from 25% to 20% at fixed spending",
-                        "$2,500 expected acquisition cost across 4.8 expected customers",
-                        "$5,000 expected acquisition cost across 11.2 expected customers",
-                        "$5,000 expected acquisition cost across sixteen expected customers",
-                    ],
-                    [
-                        "Absorb one $15,000 replacement event without customer reimbursement",
-                        "$3,000 profit remains; freeze expansion until replacement exposure stabilizes",
-                        "$111,000 profit remains; restore reserves before adding concurrent starts",
-                        "$285,000 profit remains; investigate provider concentration and replacement pricing",
-                    ],
-                ],
-            },
-        },
-    ],
-    "pull_quote": "A management spread is real only after earned fees cover failed bids, replacement labor, and the cash gap before collection.",
-    "diagram_id": "diag-03",
-    "action_checklist": [
-        "Build an engagement-level revenue bridge separating underlying contract value, earned desk fees, scope credits, valid receivables, and collected cash.",
-        "Reconcile the three annual scenarios to $120,000, $560,000, and $1,000,000 revenue and $18,000, $126,000, and $300,000 owner profit.",
-        "Verify prime-sub structure, contingent-fee terms, similarly situated supplier status where relevant, and the actual management work supporting every spread.",
-        "Create a thirteen-week cash forecast with separate acceptance holds, invoice DSO, supplier due dates, available advances, and executable credit.",
-        "Stress every cohort for 10% lower fees, 10% higher delivery labor, thirty extra collection days, and a priced replacement-provider event.",
-        "Limit concurrent starts to funded capacity and validate employee compensation, contractor availability, wage determinations, and pre-revenue runway before hiring.",
-    ],
-    "statutory_citations": [
-        {
-            "title": "13 CFR 125.6 — Limitations on subcontracting",
-            "url": "https://www.ecfr.gov/current/title-13/chapter-I/part-125/section-125.6",
-            "relevance": (
-                "Determines applicable subcontracting limits, similarly situated treatment, "
-                "and calculation requirements for covered small-business awards."
-            ),
-        },
-        {
-            "title": "FAR 52.203-5 — Covenant Against Contingent Fees",
-            "url": "https://www.acquisition.gov/far/52.203-5",
-            "relevance": (
-                "Requires review of contingent compensation for obtaining covered government "
-                "contracts and the specific bona fide employee or agency exception."
-            ),
-        },
-        {
-            "title": "FAR 52.215-23 — Limitations on Pass-Through Charges",
-            "url": "https://www.acquisition.gov/far/52.215-23",
-            "relevance": (
-                "Supports examination of substantive added value and excessive pass-through "
-                "charges where the clause applies to the contracting structure."
-            ),
-        },
-        {
-            "title": "41 U.S.C. 2102 — Prohibitions on disclosing and obtaining procurement information",
-            "url": "https://www.law.cornell.edu/uscode/text/41/2102",
-            "relevance": (
-                "Restricts access to specified contractor bid, proposal, and source-selection "
-                "information; public opportunity monitoring does not authorize protected disclosures."
-            ),
-        },
-        {
-            "title": "41 U.S.C. 8702 — Prohibition on kickbacks",
-            "url": "https://www.law.cornell.edu/uscode/text/41/8702",
-            "relevance": (
-                "Prohibits covered kickbacks and prevents acquisition budgets or supplier "
-                "commissions from being used to purchase favorable contract treatment."
-            ),
-        },
-        {
-            "title": "31 U.S.C. 3903 — Regulations governing prompt payment",
-            "url": "https://www.law.cornell.edu/uscode/text/31/3903",
-            "relevance": (
-                "Provides the statutory framework for federal payment timing, proper invoices, "
-                "and acceptance procedures rather than an assumed universal subcontract DSO."
-            ),
-        },
-        {
-            "title": "FAR 52.232-40 — Providing Accelerated Payments to Small Business Subcontractors",
-            "url": "https://www.acquisition.gov/far/52.232-40",
-            "relevance": (
-                "Addresses acceleration of payments under the clause's conditions and explains "
-                "why subcontract cash forecasts must still use actual contractual obligations."
-            ),
-        },
-        {
-            "title": "41 U.S.C. 6703 — Required contract terms for covered service contracts",
-            "url": "https://www.law.cornell.edu/uscode/text/41/6703",
-            "relevance": (
-                "Requires specified wage and fringe-benefit provisions for covered federal "
-                "service contracts, affecting fulfillment quotes and replacement labor economics."
-            ),
-        },
-        {
-            "title": "31 U.S.C. 3727 — Assignments of claims",
-            "url": "https://www.law.cornell.edu/uscode/text/31/3727",
-            "relevance": (
-                "Requires transaction-specific review before relying on assignment of claims "
-                "against the United States as a receivables-financing mechanism."
-            ),
-        },
-    ],
-}
+CHAPTER_3 = {'id': 'Q3',
+ 'chapter_id': 'Q3',
+ 'chapter_number': 3,
+ 'question_number': 3,
+ 'slug': 'micro-purchases-simplified-acquisitions-commercial-items',
+ 'question_prompt': 'How do I win my first small-dollar contracts through micro-purchases, simplified '
+                    'acquisitions and commercial-item buying?',
+ 'kicker': 'Q3 / THE BIG MONEY PLAYBOOKS',
+ 'title': 'Micro-Purchases, Simplified Acquisitions and Commercial Items',
+ 'subtitle': 'Micro-purchase thresholds and GPC card buys, finding sub-$10,000 opportunities on SAM.gov, '
+             'Simplified Acquisition Procedures as low-hanging fruit, and FAR Part 12 and DFARS 212 rules '
+             'for selling commercial products and services',
+ 'layout_template': 'financial_analysis',
+ 'reading_time_minutes': 15,
+ 'executive_summary': 'Practitioners agree that micro-purchases under $10,000 and simplified acquisitions '
+                      'under $250,000 are the fastest door into federal work for small firms. SamSearch '
+                      'reports that 65% of simplified acquisition contracts went to small businesses, '
+                      'versus 26% of traditional contract spending. The consensus play is '
+                      'relationship-driven. Micro-purchases are rarely advertised, so operators call '
+                      'buyers, accept purchase cards, and stack small jobs into past performance. The '
+                      "street mechanics include Humam's SAM.gov and FPDS filter chains, Eric Coffie's "
+                      "Sources Sought CSV drill, Sheenapreneur's intelligence on card limits, and Kizzy "
+                      "Parks' $1,300-a-month Coast Guard profit. The disagreements run deep. Speakers "
+                      'quote micro ceilings from $2,500 to $10,000 and split on whether SAM registration '
+                      'is required. They contradict each other on lowest-price versus best-value awards '
+                      'and on whether two or three quotes are needed. Commercial-item buys add a separate '
+                      'FAR Part 12 layer.',
+ 'key_metrics': [{'label': 'Small-business share of simplified acquisitions',
+                  'metric': 'Small-business share of simplified acquisitions',
+                  'value': '65% of SAP contracts vs 26% of traditional contract spending',
+                  'confidence': 'attributed_practitioner_claim',
+                  'context': "SamSearch's comparison of how much simplified acquisition work went to small "
+                             'businesses against traditional contract spending, alongside $30B of SAP '
+                             'spend in FY2022',
+                  'source': 'SamSearch - AI for Government Contracting ([e7wypJIJZpw @ 00:05:43])'},
+                 {'label': 'Coast Guard award monthly profit',
+                  'metric': 'Coast Guard award monthly profit',
+                  'value': '$1,300/month profit on $14,000/month split across 10 vendors',
+                  'confidence': 'attributed_practitioner_claim',
+                  'context': "Kizzy Parks' Coast Guard win sourced on Unison, which she compares against a "
+                             '$250/month rental unit and 3-5% restaurant margins',
+                  'source': 'Kizzy Parks ([Ac9lYLwR6QQ @ 00:11:25])'},
+                 {'label': 'Markup on specialized items',
+                  'metric': 'Markup on specialized items',
+                  'value': '30-40% (5-10% under heavy competition; doubling with a single player)',
+                  'confidence': 'attributed_practitioner_claim',
+                  'context': "Eric Coffie's markup ranges. Commercial off-the-shelf items carry low "
+                             'margin, while specialized items carry 30-40%.',
+                  'source': 'Eric Coffie ([AOa0-iEhmks @ 00:30:07])'},
+                 {'label': 'FPDS simplified-award filter funnel',
+                  'metric': 'FPDS simplified-award filter funnel',
+                  'value': '86 million records to 30,000 to 535',
+                  'confidence': 'attributed_practitioner_claim',
+                  'context': "Humam's FPDS search. A $20,000 action obligation returns 86M records. "
+                             'Simplified procedures plus a date signed from March 1 cut that to 30,000. '
+                             "The keyword 'cleaning' cuts it to 535.",
+                  'source': 'GovCon with Humam ([IEV3HAgB8jA @ 00:10:26])'}],
+ 'sections': [{'heading': 'Section 1: The Practitioner Consensus',
+               'paragraphs': ['Operators anchor this lane in FAR Part 13 and two dollar lines: '
+                              'micro-purchases under $10,000 and the simplified acquisition threshold '
+                              'under $250,000. SamSearch frames Part 13 around three goals: lower '
+                              'administrative cost, easier small-business wins, and a streamlined process. '
+                              'It says Part 13 covers products, services, and construction. It also flags '
+                              'an $800,000 emergency threshold that beginners can skip [e7wypJIJZpw @ '
+                              '00:02:00]. Humam draws the same $10K and $250K lines and tells newcomers to '
+                              "ignore the exceptions that stretch to 'seven digits' [IEV3HAgB8jA @ "
+                              '00:02:17]. Eric Coffie dates the current numbers to February 2018. That is '
+                              'when the micro line rose from $3,000 to $10,000 and the SAT climbed from '
+                              '$150K to $250K. He insists that all SAP work goes to small businesses that '
+                              'fit the NAICS size standard for the buy [JVBkE6J1jPc @ 00:00:37]. The '
+                              'payoff is speed and odds. SamSearch puts simplified awards at weeks or '
+                              'months, against years for standard contracts. It cites $30B of SAP spend in '
+                              'FY2022. It reports that 65% of simplified acquisition contracts went to '
+                              'small businesses, compared with 26% of traditional contract spending '
+                              '[e7wypJIJZpw @ 00:05:43]. Other operators put annual spend nearer $20B, but '
+                              'every one of them pitches this tier as the place where a firm with no track '
+                              'record can realistically land its first federal dollars.',
+                              'The strongest consensus is that micro-purchases are a relationship game, '
+                              'not a search game. Kizzy Parks says flatly that no website lists them. Her '
+                              'own wins came from existing clients. In one, a training job, the agency '
+                              "asked 'can you take a credit card.' In another, a GSA-schedule training "
+                              'under $4,000 was paid on the card [Ac9lYLwR6QQ @ 00:01:12]. Government '
+                              "Contract Blueprint says awards under $10K are 'rarely advertised.' They "
+                              'move through relationships, vendor networks, and internal processes, and a '
+                              'brief conversation at an event can turn into years of business [ZL3JyvzdhyE '
+                              '@ 00:01:18]. In his long SAM.gov session, Eric Coffie says micro-purchases '
+                              "are 'not typically solicited through Sam' and that 'there is no database' "
+                              'of them. Historical data has to come from the people who actually did the '
+                              'work [AOa0-iEhmks @ 00:38:02]. Fed Biz Access compresses the whole play '
+                              'into one line: a market of more than $20B a year that you win by '
+                              'introducing yourself to buyers [mAsjZ4QW_48 @ 00:00:37]. The shared logic '
+                              'is simple. The contracting officer can award without soliciting competitive '
+                              'quotations, so the vendor the buyer already knows gets the order. A '
+                              "newcomer's job is to become that known vendor before the need surfaces, not "
+                              'after a notice posts.',
+                              'Every beginner-facing operator pushes the same sequence: start tiny, '
+                              'collect past performance, then climb. The second SamSearch tutorial warns '
+                              "that when new contractors chase big contracts, the win 'usually never "
+                              "happens,' because they lack reputation, experience, and patience. It "
+                              'pitches small awards for their shorter turnaround, lighter paperwork, and '
+                              'agency relationships [xeEO2U-Vy38 @ 00:00:30]. Humam names the same '
+                              'barriers (no past performance, no reputation, no connections) and '
+                              "prescribes 'micro steps' [IEV3HAgB8jA @ 00:01:37]. Sheenapreneur argues "
+                              'that even a $500 job counts as past performance. She tells vendors to '
+                              'accept credit cards, because purchase-card holders are the buyers in this '
+                              'tier [B6uLsI5zZTQ @ 00:08:43]. Government Contract Blueprint lays out the '
+                              'ladder explicitly: progress from micro work to $20K, then $50K, then '
+                              '$100K-plus awards as the record builds [ZL3JyvzdhyE @ 00:06:40]. The card '
+                              'is the common rail. SamSearch lists the government purchase card as one of '
+                              'four SAP methods. The others are purchase orders paid within 30 days, '
+                              'blanket purchase agreements for recurring needs such as office supplies or '
+                              'landscaping, and RFQs, which it calls the most common route. Operators '
+                              'treat card acceptance as table stakes rather than a perk, because a buyer '
+                              'who cannot swipe simply moves on to a vendor who can.'],
+               'table': {'caption': 'Where multiple practitioners converge on micro-purchase and '
+                                    'simplified acquisition basics',
+                         'headers': ['Consensus Point',
+                                     'What Practitioners Report',
+                                     'Operator Implication',
+                                     'Expert Source'],
+                         'rows': [['Micro-purchase dollar ceiling for new vendors',
+                                   'Awards under $10,000 skip competitive bidding entirely and go straight '
+                                   'to a chosen vendor',
+                                   'Package offers so a single order lands cleanly below the $10,000 line',
+                                   'Government Contract Blueprint ([ZL3JyvzdhyE @ 00:01:00])'],
+                                  ['Simplified acquisition threshold ceiling for small buys',
+                                   'Any contract under $250,000 is considered a simplified acquisition '
+                                   'contract under Part 13',
+                                   'Target RFQs under $250,000, where awards close in weeks or months '
+                                   'instead of years',
+                                   'SamSearch - AI for Government Contracting ([e7wypJIJZpw @ 00:02:00])'],
+                                  ['Small businesses dominate the simplified acquisition tier',
+                                   '65% of simplified acquisition contracts went to small businesses '
+                                   'versus 26% of traditional spending',
+                                   'Small firms face far better odds here than in large full-and-open '
+                                   'competitions',
+                                   'SamSearch - AI for Government Contracting ([e7wypJIJZpw @ 00:05:43])'],
+                                  ['SAP work reserved for size-qualified small businesses',
+                                   'All simplified acquisition work must go to small businesses meeting '
+                                   'the NAICS size standard',
+                                   'Confirm your NAICS size standard before chasing any simplified '
+                                   'acquisition opportunity',
+                                   'Eric Coffie ([JVBkE6J1jPc @ 00:01:34])'],
+                                  ['Micro-purchases flow through relationships, not public postings',
+                                   'Micro-purchases are rarely advertised and move through relationships, '
+                                   'vendor networks, and internal processes',
+                                   'Spend prospecting time on buyers and events rather than refreshing '
+                                   'public listings',
+                                   'Government Contract Blueprint ([ZL3JyvzdhyE @ 00:01:18])'],
+                                  ['No website or database lists micro-purchase buys',
+                                   'Wins came from existing clients asking whether she could take a credit '
+                                   'card',
+                                   'Turn current customers and warm contacts into the first card-paid '
+                                   'federal orders',
+                                   'Kizzy Parks ([Ac9lYLwR6QQ @ 00:01:12])'],
+                                  ['Tiny jobs still build usable past performance',
+                                   'A $500 purchase-card job still counts as past performance, so vendors '
+                                   'should accept credit cards',
+                                   'Take small card-paid jobs deliberately to stack a record for larger '
+                                   'bids',
+                                   'Sheenapreneur ([B6uLsI5zZTQ @ 00:08:43])']]}},
+              {'heading': 'Section 2: Exact Street Mechanics, Tools & Numbers',
+               'paragraphs': ['Humam runs the cleanest free workflow. On SAM.gov he clicks Contracting, '
+                              "then Advanced Search, and keys in 'simplified acquisition' for 1,154 "
+                              'results. He then narrows by notice type (presolicitation, solicitation, and '
+                              'combined synopsis/solicitation), a response date in the coming month, and a '
+                              'NAICS code. That cuts the list to 262 [IEV3HAgB8jA @ 00:07:44]. To find '
+                              'buyer contacts, he resets the search, selects award notices plus inactive, '
+                              "and accepts that the list comes back 'very small.' His bigger lever is "
+                              'FPDS. An advanced search with an action obligation such as $20,000 returns '
+                              "86 million records. Setting solicitation procedures to 'simplified' with a "
+                              'date signed from March 1 trims that to about 30,000. A description keyword '
+                              "like 'cleaning' narrows it to 535, which he sorts by date signed "
+                              '[IEV3HAgB8jA @ 00:11:13]. The action obligation figure doubles as a pricing '
+                              'benchmark. Pasting the solicitation ID back into SAM.gov with inactive '
+                              "notices selected surfaces the point of contact's name, phone, and email "
+                              '[IEV3HAgB8jA @ 00:13:19]. SamSearch warns that SAM.gov has no SAP filter, '
+                              'so every notice has to be read by hand. Its own product layers a '
+                              "'simplified acquisition' filter that AI-scans attachments, followed by "
+                              "'active only' and an RFX type of RFQ [e7wypJIJZpw @ 00:08:39].",
+                              "Eric Coffie's daily drill starts in SAM.gov. He logs in, searches Contract "
+                              'Opportunities, and sets the notice type to Sources Sought. Filtering to '
+                              'responses due in the next three days yields roughly 300 results. He then '
+                              'uses Actions to download a CSV and imports it into a free Google Sheet for '
+                              'triage [AOa0-iEhmks @ 00:15:07]. He skips any notice that demands '
+                              "government past performance, calling that requirement 'not standard.' He "
+                              'also points out that a set-aside decision can hinge on Sources Sought '
+                              'responses, and a strong answer can sometimes lead to a direct award '
+                              '[AOa0-iEhmks @ 00:40:18]. On margin, he says commercial off-the-shelf items '
+                              'carry thin markup, while specialized items run 30 to 40%. He has seen 5 to '
+                              '10% under heavy competition, and pricing double when only one player serves '
+                              'the market [AOa0-iEhmks @ 00:30:07]. Government Contract Blueprint adds a '
+                              'demand-mapping routine. Target five to ten agencies such as DoD, VA, and '
+                              'GSA, find contracting officer contacts, and send an intro email. Then study '
+                              'past awards to spot repeat buys, such as training purchased again and again '
+                              'at $500 to $3,000 [ZL3JyvzdhyE @ 00:04:36]. Its suggested categories are '
+                              'software training, equipment repair, admin support, short studies, and '
+                              'office equipment, which are all jobs a small shop can deliver under the '
+                              'micro line.',
+                              'The purchase-card play has its own mechanics. Sheenapreneur notes that '
+                              'cards are issued per department rather than per agency, that holders must '
+                              "be trained, and that limits vary by month or quarter. Her example: 'Bob "
+                              "only has 3 500... Jeff has 4 500.' Unlike contracting officers on a bid, "
+                              'cardholders may simply tell you their budget [B6uLsI5zZTQ @ 00:07:25]. '
+                              'TendersPage tells vendors to build a website optimized for search with the '
+                              'SmartPay logo and to visit P-card holders in person. It warns that routing '
+                              "card payments through PayPal gets treated as 'high-risk,' so take Visa or "
+                              'Mastercard directly [xobcboYBB6w @ 00:03:10]. Kizzy Parks prescribes '
+                              "spending 10% of your time on 'Dialing for Dollars.' Her example is a "
+                              'student who is a service-disabled veteran-owned business owner and walked '
+                              'into his local VA. She also reports a Coast Guard award sourced on Unison '
+                              'worth $14,000 a month, split across 10 vendors, that netted $1,300 a month '
+                              'in profit. She compares that against a rental unit earning $250 a month and '
+                              'restaurant margins of 3 to 5% [Ac9lYLwR6QQ @ 00:11:25]. Government Contract '
+                              'Blueprint flags the cash-flow side. You might invoice the agency and wait '
+                              '30, 60, or even 90 days to get paid, so line up cash before stacking '
+                              'several jobs at once [ZL3JyvzdhyE @ 00:05:50].'],
+               'table': {'caption': 'Exact filters, numbers, and unit economics taught by practitioners',
+                         'headers': ['Mechanic',
+                                     'Exact Setting or Number',
+                                     'Reported Result or Use',
+                                     'Expert Source'],
+                         'rows': [['SAM.gov keyword search for simplified acquisitions',
+                                   "Contracting, Advanced Search, keyword 'simplified acquisition', three "
+                                   'notice types, next-month response date, NAICS',
+                                   '1,154 results narrowed to 262 workable notices for review',
+                                   'GovCon with Humam ([IEV3HAgB8jA @ 00:07:44])'],
+                                  ['FPDS historical award mining for simplified buys',
+                                   "Action obligation $20,000, solicitation procedures 'simplified', date "
+                                   "signed from March 1, keyword 'cleaning'",
+                                   '86 million records cut to 30,000, then to 535 sortable awards',
+                                   'GovCon with Humam ([IEV3HAgB8jA @ 00:11:13])'],
+                                  ['Sources Sought daily export into a spreadsheet',
+                                   'Notice type Sources Sought, responses due within three days, Actions '
+                                   'then Download CSV',
+                                   'About 300 results imported into a free Google Sheet for triage',
+                                   'Eric Coffie ([AOa0-iEhmks @ 00:15:07])'],
+                                  ['Markup bands by product type and competition',
+                                   'Specialized items 30-40%; 5-10% under heavy competition; doubling with '
+                                   'a single player',
+                                   'Price commercial off-the-shelf items thin and specialized items fat',
+                                   'Eric Coffie ([AOa0-iEhmks @ 00:30:07])'],
+                                  ['Purchase-card holder spending limits by person',
+                                   "Limits vary per month or quarter, e.g. 'Bob only has 3 500... Jeff has "
+                                   "4 500'",
+                                   'Ask cardholders their budget, which COs will not share on bids',
+                                   'Sheenapreneur ([B6uLsI5zZTQ @ 00:07:25])'],
+                                  ['Multi-vendor Coast Guard award unit economics',
+                                   '$14,000 per month split across 10 vendors, sourced on Unison',
+                                   '$1,300 per month profit, compared against a $250 rental and 3-5% '
+                                   'restaurant margins',
+                                   'Kizzy Parks ([Ac9lYLwR6QQ @ 00:11:25])'],
+                                  ['Repeat micro-buy pattern in past awards',
+                                   'Training bought repeatedly at $500 to $3,000 per order across target '
+                                   'agencies',
+                                   'Signals recurring card-sized demand worth pitching directly to buyers',
+                                   'Government Contract Blueprint ([ZL3JyvzdhyE @ 00:04:36])']]},
+               'callout': {'kind': 'INSIDER PRO-TIPS',
+                           'title': 'Card, Pricing, and Contact Edges Operators Actually Use',
+                           'body': 'Small mechanical edges decide micro-purchase wins: how you get paid, '
+                                   "what you know about the buyer's budget, where your price anchor comes "
+                                   'from, and how fast you read the rules.',
+                           'items': ['Take Visa or Mastercard directly and put the SmartPay logo on your '
+                                     'website. Card payments routed through PayPal get treated as '
+                                     "'high-risk.' [TendersPage Corp. — xobcboYBB6w @ 00:03:10]",
+                                     'Ask purchase-card holders what their budget is. Unlike contracting '
+                                     'officers on a bid, they may simply tell you. [Sheenapreneur — '
+                                     'B6uLsI5zZTQ @ 00:07:57]',
+                                     'Use the FPDS action obligation on comparable simplified awards as '
+                                     'your pricing benchmark before you quote. [GovCon with Humam — '
+                                     'IEV3HAgB8jA @ 00:13:00]',
+                                     'Read FAR 13.203 yourself. It is four paragraphs, and it shows that '
+                                     'price reasonableness need not be verified on micro buys. [Eric '
+                                     'Coffie — JVBkE6J1jPc @ 00:05:47]']},
+               'sop_steps': [{'step': 1,
+                              'title': 'Set up identity and payment rails',
+                              'action': 'Register on SAM.gov, obtain your identifier, and set up direct '
+                                        'credit-card acceptance.',
+                              'detail': 'Government Contract Blueprint starts with SAM.gov registration '
+                                        'and a nine-digit free identifier, then filters opportunities to '
+                                        'values under $10K [Government Contract Blueprint — ZL3JyvzdhyE @ '
+                                        '00:01:35].'},
+                             {'step': 2,
+                              'title': 'Mine FPDS for repeat simplified buys',
+                              'action': 'Filter FPDS by action obligation, simplified procedures, date '
+                                        'signed, and a service keyword.',
+                              'detail': 'Humam cuts 86 million records to 535 cleaning awards and sorts '
+                                        'them by date signed to find active buyers and price levels '
+                                        '[GovCon with Humam — IEV3HAgB8jA @ 00:11:13].'},
+                             {'step': 3,
+                              'title': 'Pull contacts and send your pitch',
+                              'action': 'Open award notices, scroll to the contacts, and email them your '
+                                        'website and past projects.',
+                              'detail': 'SamSearch pulls award notices, scrolls to the contacts, and '
+                                        'emails them a website and past projects, backed by a capability '
+                                        'statement [SamSearch - AI for Government Contracting — '
+                                        'xeEO2U-Vy38 @ 00:07:13].'},
+                             {'step': 4,
+                              'title': 'Work the Sources Sought pipeline daily',
+                              'action': 'Export three-day Sources Sought notices to CSV and answer the '
+                                        'strong fits.',
+                              'detail': 'Eric Coffie downloads about 300 Sources Sought notices into '
+                                        'Google Sheets, because a strong response can shape the set-aside '
+                                        'or lead to a direct award [Eric Coffie — AOa0-iEhmks @ '
+                                        '00:40:18].'}]},
+              {'title': 'Where Practitioners Disagree & Alternative Playbooks',
+               'heading': 'Where Practitioners Disagree & Alternative Playbooks',
+               'paragraphs': ['Four channels teach four different micro-purchase ceilings. Eric Coffie '
+                              'dates the jump to February 2018, when the micro-purchase line moved from '
+                              '$3,000 to $10,000 and the simplified acquisition threshold moved from '
+                              '$150,000 to $250,000, with every SAP award going to small businesses that '
+                              'meet the NAICS size standard [JVBkE6J1jPc @ 00:00:37]. Sheenapreneur lands '
+                              'on the same $10,000 and $250,000 figures as of June 2023, framing the SAT '
+                              'band as $10,001 to $250,000, but tells a different origin story: micro rose '
+                              "from $3,500 'within the last year' and the SAT climbed from $150,000 'since "
+                              "covid' [B6uLsI5zZTQ @ 00:01:19]. TendersPage Corp. still teaches a $3,500 "
+                              'maximum, raised from $3,000 on October 1, 2015, against $15 billion to $20 '
+                              'billion in yearly spend [xobcboYBB6w @ 00:01:26]. The U.S. Department of '
+                              'Commerce training does not use one number at all: services cap at $2,500, '
+                              'professional services at $10,000, and construction at $2,000, with anything '
+                              'above the construction figure referred to the procurement office '
+                              '[Z3BTLzceXHU @ 00:02:31]. The operator read: the ceiling depends on the '
+                              'category of work and the rulebook the office trains to, so ask the card '
+                              'holder or contracting officer which cap applies to your line item before '
+                              'quoting against the full $10,000.',
+                              'Registration splits the room. SamSearch tells new contractors that '
+                              'micro-purchases need no sam.gov registration and no competition '
+                              '[xeEO2U-Vy38 @ 00:01:59], and GovCon with Humam repeats that '
+                              'micro-purchases need neither competition nor SAM registration and are '
+                              'reserved for small businesses [IEV3HAgB8jA @ 00:03:40]. Eric Coffie reads '
+                              'the FAR the other way: SAM is the primary vendor source, so registration is '
+                              'required [JVBkE6J1jPc @ 00:03:13]. Government Contract Blueprint puts '
+                              'registration first in its workflow, telling viewers to register on sam.gov '
+                              'and get a free nine-digit DUNS number [ZL3JyvzdhyE @ 00:01:35]. The second '
+                              'split is where to hunt. SamSearch and Humam both run sam.gov keyword '
+                              "searches for 'simplified acquisition' layered with notice types and NAICS "
+                              "codes, with Humam's search returning 1,154 results before narrowing to 262 "
+                              '[xeEO2U-Vy38 @ 00:06:10] [IEV3HAgB8jA @ 00:07:44]. Coffie counters that '
+                              '5.202 imposes no public advertising, which is why only about 40 percent of '
+                              'these contracts showed up on FedBizOpps [JVBkE6J1jPc @ 00:03:46], and '
+                              'Blueprint says micro-purchases are rarely advertised and flow through '
+                              'relationships, vendor networks, and internal processes [ZL3JyvzdhyE @ '
+                              '00:01:18]. The workable read is to register anyway, run the portal searches '
+                              'for solicited SAT work, and treat under-$10,000 card buys as a '
+                              'phone-and-email game with contracting officers.',
+                              "The award logic conflicts too. SamSearch's first tutorial calls the RFQ the "
+                              'most common method and says it usually goes to the lowest-cost capable '
+                              'quote [e7wypJIJZpw @ 00:07:18]. The second SamSearch tutorial stresses that '
+                              'contracting officers cannot select on personal preference or restrict to '
+                              'well-known brands, and that the standard is best value, not just the '
+                              'cheapest [xeEO2U-Vy38 @ 00:04:58]. Quote counts drift as well. The U.S. '
+                              'Department of Commerce training tells buyers to get at least two prices '
+                              'from two vendors and never split requirements [Z3BTLzceXHU @ 00:00:20], '
+                              'while ASI Education says the Revolutionary FAR Overhaul now requires '
+                              'soliciting at least three sources, stricter than the old Part 13 '
+                              '[_0QnHiuRnhc @ 00:02:24]. ASI also reports the structural shift under the '
+                              'whole chapter: simplified procedures for commercial buys under $9 million '
+                              'now sit in Part 12, Part 13 becomes non-commercial, standing price '
+                              'quotations are allowed, and Part 8 priority sources such as schedules, '
+                              'GWACs, and BIC vehicles come first [_0QnHiuRnhc @ 00:00:16]. The playbook '
+                              'consequence: a bare low price may carry an RFQ under the lowest-cost read, '
+                              'but under best value and the three-source rule your quote has to stand next '
+                              'to at least two competitors, and the buyer looks at Part 8 priority '
+                              'vehicles before your quote.'],
+               'table': {'caption': 'Side-by-side playbooks where Chapter Q3 practitioners split',
+                         'headers': ['Contested Question', 'Playbook A', 'Playbook B', 'Expert Source'],
+                         'rows': [['What the micro-purchase ceiling actually is today',
+                                   '$10,000 ceiling since a February 2018 jump from $3,000, SAT at '
+                                   '$250,000',
+                                   '$3,500 maximum raised from $3,000 on October 1, 2015',
+                                   'Eric Coffie ([JVBkE6J1jPc @ 00:00:37]); TendersPage Corp. '
+                                   '([xobcboYBB6w @ 00:01:26])'],
+                                  ['Whether SAM registration is needed for micro-purchases',
+                                   'No sam.gov registration and no competition required for '
+                                   'micro-purchases',
+                                   'SAM is the primary vendor source, so registration is required',
+                                   'SamSearch - AI for Government Contracting ([xeEO2U-Vy38 @ 00:01:59]); '
+                                   'Eric Coffie ([JVBkE6J1jPc @ 00:03:13])'],
+                                  ['Where the small-dollar opportunities can actually be found',
+                                   "Keyword 'simplified acquisition' on sam.gov plus notice types and "
+                                   'NAICS filters',
+                                   'No website exists for micro-purchases; they come from existing '
+                                   'relationships',
+                                   'GovCon with Humam ([IEV3HAgB8jA @ 00:07:44]); Kizzy Parks '
+                                   '([Ac9lYLwR6QQ @ 00:01:12])'],
+                                  ['How the RFQ winner gets picked by the buyer',
+                                   'Usually awarded to the lowest-cost quote from a capable vendor',
+                                   'Best value, not just the cheapest, with no brand-name restriction '
+                                   'allowed',
+                                   'SamSearch - AI for Government Contracting ([e7wypJIJZpw @ 00:07:18]); '
+                                   'SamSearch - AI for Government Contracting ([xeEO2U-Vy38 @ 00:04:58])'],
+                                  ['How many quotes or sources the buyer must gather',
+                                   'At least two prices from two vendors, and never split requirements',
+                                   'At least three sources under the Revolutionary FAR Overhaul, stricter '
+                                   'than Part 13',
+                                   'U.S. Department of Commerce ([Z3BTLzceXHU @ 00:00:20]); ASI Education '
+                                   '([_0QnHiuRnhc @ 00:02:24])'],
+                                  ['Which search tooling to run for daily lead flow',
+                                   'SamSearch filters for simplified acquisition, active only, and RFQ '
+                                   'notice type',
+                                   'Free sam.gov Sources Sought CSV download imported into Google Sheets',
+                                   'SamSearch - AI for Government Contracting ([e7wypJIJZpw @ 00:08:39]); '
+                                   'Eric Coffie ([AOa0-iEhmks @ 00:15:07])'],
+                                  ['How to get in front of card holders and buyers',
+                                   'Spend 10 percent of your time Dialing for Dollars; an SDVOSB student '
+                                   'walked into the local VA',
+                                   'Website and SEO carrying the SmartPay logo so card holders find you',
+                                   'Kizzy Parks ([Ac9lYLwR6QQ @ 00:04:37]); TendersPage Corp. '
+                                   '([xobcboYBB6w @ 00:03:59])']]}},
+              {'title': 'Firsthand Failure Modes, Traps & Economics Checks',
+               'heading': 'Firsthand Failure Modes, Traps & Economics Checks',
+               'paragraphs': ['The first trap is aiming too high. SamSearch warns that new contractors '
+                              'chase big contracts and the win usually never happens because they lack '
+                              'reputation, experience, and patience [xeEO2U-Vy38 @ 00:00:00]. GovCon with '
+                              'Humam names the same barriers, no past performance, no reputation, no '
+                              'connections, and prescribes micro steps instead [IEV3HAgB8jA @ 00:00:41]. '
+                              'Sheenapreneur adds that a $500 job still counts as past performance, and '
+                              'that card holders may tell you their budget outright, something contracting '
+                              'officers on bids will not do [B6uLsI5zZTQ @ 00:08:43]. The second trap is '
+                              'cash. Government Contract Blueprint warns that after invoicing, payment can '
+                              'take 30, 60, or even 90 days, so cash flow has to be secured first, and the '
+                              "channel lists obligations that ride along even on small jobs: workers' "
+                              'compensation, labor standards, and records [ZL3JyvzdhyE @ 00:05:50] '
+                              "[ZL3JyvzdhyE @ 00:05:21]. Blueprint's growth path is deliberately staged, "
+                              'moving from micro awards to $20,000, then $50,000, then $100,000-plus '
+                              '[ZL3JyvzdhyE @ 00:06:40]. The economics check is plain: size each job to '
+                              'the receivables you can carry for up to 90 days, and let the stack of small '
+                              'completed jobs build the past-performance file before you chase bigger '
+                              'awards.',
+                              'Search and payment mechanics hide their own losses. SamSearch warns that '
+                              'sam.gov has no simplified-acquisition filter, so every notice has to be '
+                              "opened and read [e7wypJIJZpw @ 00:07:51]. Eric Coffie's live sam.gov "
+                              'session shows the noise: a bulk fertilizer listing turned out to be a '
+                              'misfiled solicitation [AOa0-iEhmks @ 00:03:50], and Coffie tells viewers to '
+                              'skip notices demanding government past performance because that requirement '
+                              "is not standard [AOa0-iEhmks @ 00:20:07]. Coffie's margin math is the "
+                              'economics check: commercial off-the-shelf items carry low margin, '
+                              'specialized items run 30 to 40 percent, heavy competition has pushed '
+                              'markups to 5 to 10 percent, and a single-player market can double the price '
+                              '[AOa0-iEhmks @ 00:30:07]. Coffie adds there is no database of '
+                              'micro-purchases, so past pricing must come from the people who did the work '
+                              '[AOa0-iEhmks @ 00:38:02]. TendersPage Corp. warns that routing card '
+                              'payments through PayPal is treated as high-risk, so accept Visa or '
+                              'Mastercard [xobcboYBB6w @ 00:03:10]. The U.S. Department of Commerce '
+                              'training lists the buyer-side limits a vendor runs into: no splitting '
+                              'requirements, an IT checklist on purchases over $3,500, and convenience '
+                              'checks capped at half the micro-purchase threshold with none over $5,000 '
+                              '[Z3BTLzceXHU @ 00:00:20] [Z3BTLzceXHU @ 00:04:20].',
+                              'Commercial-item work carries heavier downside. The government contracts '
+                              'panelist on the How To Sell To & Win Federal Government Contracts channel '
+                              'lists the exposure: excess reprocurement costs, past-performance hits that '
+                              'stay live about three years, False Claims Act treble damages, and '
+                              'suspension or debarment [CbeDp1nctog @ 00:12:33]. The same session cites a '
+                              "termination-for-convenience claim that failed because the contractor's "
+                              'records were too rudimentary, a ruling now on appeal, and a $40,000 billing '
+                              'error swept under the rug inside a $100 million False Claims Act case, with '
+                              'the fix being a culture that empowers staff instead of scaring them '
+                              '[CbeDp1nctog @ 00:11:33] [CbeDp1nctog @ 00:15:00]. Richard Rector calls '
+                              'fixed-price commercial work higher margin but a double-edged sword, and '
+                              "warns that contracting officers typically don't want to negotiate "
+                              'tailorable clauses even when you show they clash with customary commercial '
+                              'practice [qWeiLfjB7k0 @ 00:05:17] [qWeiLfjB7k0 @ 00:15:57]. Win Government '
+                              'Contracts with GovSuccess warns that a quote alone may not create a '
+                              'contract and that old Part 13 checklists should not be reused [IiWbsx5Iudg '
+                              '@ 00:01:58]. ASI Education adds that under 12.301(b) a brief explanation '
+                              'replaces the debriefing, and losing vendors should not stay silent '
+                              '[_0QnHiuRnhc @ 00:05:46].'],
+               'table': {'caption': 'Firsthand traps, losses and unit-economics checks reported by Chapter '
+                                    'Q3 practitioners',
+                         'headers': ['Failure Mode',
+                                     'What The Practitioner Reported',
+                                     'Economics Check Or Countermove',
+                                     'Expert Source'],
+                         'rows': [['Chasing large contracts before any past performance exists',
+                                   'The win usually never happens without reputation, experience, and '
+                                   'patience',
+                                   'Take micro steps; even a $500 job counts as past performance',
+                                   'SamSearch - AI for Government Contracting ([xeEO2U-Vy38 @ 00:00:00]); '
+                                   'Sheenapreneur ([B6uLsI5zZTQ @ 00:08:43])'],
+                                  ['Running out of cash while waiting on agency payment',
+                                   'Payment after invoicing can take 30, 60, or even 90 days',
+                                   'Secure cash flow first, then step up to $20,000, $50,000, and '
+                                   '$100,000-plus',
+                                   'Government Contract Blueprint ([ZL3JyvzdhyE @ 00:05:50])'],
+                                  ['Taking card payments through a PayPal routing setup',
+                                   'Routing through PayPal is treated as high-risk by card programs',
+                                   'Accept Visa or Mastercard directly and advertise the SmartPay logo',
+                                   'TendersPage Corp. ([xobcboYBB6w @ 00:03:10])'],
+                                  ['Pricing commodity items into a crowded competitive field',
+                                   'Off-the-shelf items carry low margin; heavy competition pushed markups '
+                                   'to 5 to 10 percent',
+                                   'Specialized items run 30 to 40 percent, and a single player can double',
+                                   'Eric Coffie ([AOa0-iEhmks @ 00:30:07])'],
+                                  ['Underestimating how thin a reseller-style monthly award really is',
+                                   'A Coast Guard win paid $14,000 per month across 10 vendors',
+                                   'It netted $1,300 per month profit, compared with a $250 rental unit '
+                                   'and 3 to 5 percent restaurant margins',
+                                   'Kizzy Parks ([Ac9lYLwR6QQ @ 00:11:25])'],
+                                  ['Keeping accounting records too thin to support a claim',
+                                   'A termination-for-convenience claim failed because records were too '
+                                   'rudimentary; it is on appeal',
+                                   'A standard accounting system should suffice if records are actually '
+                                   'kept',
+                                   'How To Sell To & Win Federal Government Contracts ([CbeDp1nctog @ '
+                                   '00:11:33])'],
+                                  ['Expecting contracting officers to negotiate commercial clause terms',
+                                   "Contracting officers typically don't want to negotiate the tailorable "
+                                   'clauses',
+                                   'Price non-standard terms higher, such as a $10 product carrying a '
+                                   'warranty two years longer',
+                                   'How To Sell To & Win Federal Government Contracts ([qWeiLfjB7k0 @ '
+                                   '00:15:57])']]},
+               'callout': {'kind': 'OPERATOR GATE',
+                           'title': 'Four checks before you quote a micro-purchase or SAT job',
+                           'body': "Clear each gate from the practitioners' own losses and warnings before "
+                                   'committing labor or inventory to a small-dollar government buy.',
+                           'items': ['Cash runway: confirm you can carry the job while payment takes 30, '
+                                     '60, or even 90 days after invoicing [Government Contract Blueprint — '
+                                     'ZL3JyvzdhyE @ 00:05:50].',
+                                     'Payment rail: take the card as Visa or Mastercard directly, because '
+                                     'routing through PayPal is treated as high-risk [TendersPage Corp. — '
+                                     'xobcboYBB6w @ 00:03:10].',
+                                     'Notice screen: skip any notice that demands government past '
+                                     'performance, since that requirement is not standard [Eric Coffie — '
+                                     'AOa0-iEhmks @ 00:20:07].',
+                                     'Records: keep accounting records solid enough to back a claim, after '
+                                     'a termination-for-convenience claim failed on rudimentary records '
+                                     '[How To Sell To & Win Federal Government Contracts — CbeDp1nctog @ '
+                                     '00:11:33].']}}],
+ 'pull_quote': '"Personal relationships matter enormously in government contracting, and a brief '
+               'conversation at an event can lead to years of business opportunities." — Government '
+               'Contract Blueprint (ZL3JyvzdhyE @ 00:04:21).',
+ 'diagram_id': 'diag-03',
+ 'action_checklist': ['Build a capability statement and start calling and emailing contracting officers '
+                      'directly [Eric Coffie — JVBkE6J1jPc @ 00:05:05].',
+                      'Read FAR 13.203, which runs only four paragraphs, before your first pitch [Eric '
+                      'Coffie — JVBkE6J1jPc @ 00:05:47].',
+                      'In FPDS, filter simplified solicitation procedures, date signed, and a keyword, '
+                      'then paste the solicitation ID into sam.gov inactive notices to pull the POC name, '
+                      'phone, and email [GovCon with Humam — IEV3HAgB8jA @ 00:13:19].',
+                      'Target 5 to 10 agencies such as DoD, VA, and GSA, send contracting officers an '
+                      'intro email, and study repeat past awards in the $500 to $3,000 range [Government '
+                      'Contract Blueprint — ZL3JyvzdhyE @ 00:03:50].',
+                      'Accept credit cards and ask government card holders for their budget, since they '
+                      'may share it unlike contracting officers on bids [Sheenapreneur — B6uLsI5zZTQ @ '
+                      '00:09:13].',
+                      'For commercial items, build an evidence file covering description, users, '
+                      'definitional evidence, gaps versus the requirement, and pricing, license, warranty, '
+                      'and support records [Win Government Contracts with GovSuccess — IiWbsx5Iudg @ '
+                      '00:00:34].'],
+ 'statutory_citations': [{'title': 'SamSearch - AI for Government Contracting — Simplified Acquisitions & '
+                                   'Micro-Purchases Tutorial - Easiest Way to Win Government Contracts '
+                                   '[00:02:00]',
+                          'url': 'https://www.youtube.com/watch?v=e7wypJIJZpw&t=120s',
+                          'relevance': 'Primary practitioner testimony on the $250,000 simplified '
+                                       'acquisition line, the $10,000 micro-purchase line, and the four '
+                                       'SAP award methods.'},
+                         {'title': 'Eric Coffie — How do I find micro purchase government contracts wins '
+                                   'using SAM.gov [00:38:02]',
+                          'url': 'https://www.youtube.com/watch?v=AOa0-iEhmks&t=2282s',
+                          'relevance': 'Primary practitioner testimony on micro-purchases not being '
+                                       'solicited through SAM and having no public database.'},
+                         {'title': 'How To Sell To & Win Federal Government Contracts — 2024: FAR Part 12 '
+                                   '- Acquisition of Commercial Items [00:24:20]',
+                          'url': 'https://www.youtube.com/watch?v=CbeDp1nctog&t=1460s',
+                          'relevance': 'Primary practitioner testimony on 52.212-4 commercial terms, '
+                                       'uncapped direct damages, and contractor exposure.'},
+                         {'title': 'How To Sell To & Win Federal Government Contracts — Government '
+                                   'Contacting - FAR Part 12 - Acquisition Of Commercial Items - Win '
+                                   'Federal Contracts [00:29:15]',
+                          'url': 'https://www.youtube.com/watch?v=qWeiLfjB7k0&t=1755s',
+                          'relevance': "Primary practitioner testimony on the four 'of a type' commercial "
+                                       'item questions and clause tailoring.'}],
+ 'source_citations': [{'source_type': 'video_pro_tip',
+                       'video_id': 'e7wypJIJZpw',
+                       'title': 'Simplified Acquisitions & Micro-Purchases Tutorial - Easiest Way to Win '
+                                'Government Contracts',
+                       'channel': 'SamSearch - AI for Government Contracting',
+                       'author': 'SamSearch - AI for Government Contracting',
+                       'text': 'So any contract that is sub $250,000 is considered simplified acquisition '
+                               'contract.',
+                       'tip': 'So any contract that is sub $250,000 is considered simplified acquisition '
+                              'contract.',
+                       'timestamp': 120,
+                       'timestamp_seconds': 120,
+                       'timestamp_label': '[00:02:00]',
+                       'url': 'https://www.youtube.com/watch?v=e7wypJIJZpw&t=120s',
+                       'markdown': '[00:02:00](https://www.youtube.com/watch?v=e7wypJIJZpw&t=120s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q3.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'e7wypJIJZpw',
+                       'title': 'Simplified Acquisitions & Micro-Purchases Tutorial - Easiest Way to Win '
+                                'Government Contracts',
+                       'channel': 'SamSearch - AI for Government Contracting',
+                       'author': 'SamSearch - AI for Government Contracting',
+                       'text': 'And fun fact, 65% of all simplified acquisition contracts went to small '
+                               'businesses compared to just 26% of traditional contract spending.',
+                       'tip': 'And fun fact, 65% of all simplified acquisition contracts went to small '
+                              'businesses compared to just 26% of traditional contract spending.',
+                       'timestamp': 343,
+                       'timestamp_seconds': 343,
+                       'timestamp_label': '[00:05:43]',
+                       'url': 'https://www.youtube.com/watch?v=e7wypJIJZpw&t=343s',
+                       'markdown': '[00:05:43](https://www.youtube.com/watch?v=e7wypJIJZpw&t=343s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q3.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'xeEO2U-Vy38',
+                       'title': 'Simplified Acquisitions & Micro-Purchases Tutorial',
+                       'channel': 'SamSearch - AI for Government Contracting',
+                       'author': 'SamSearch - AI for Government Contracting',
+                       'text': 'The award goes to best value, not just the cheapest quote.',
+                       'tip': 'The award goes to best value, not just the cheapest quote.',
+                       'timestamp': 298,
+                       'timestamp_seconds': 298,
+                       'timestamp_label': '[00:04:58]',
+                       'url': 'https://www.youtube.com/watch?v=xeEO2U-Vy38&t=298s',
+                       'markdown': '[00:04:58](https://www.youtube.com/watch?v=xeEO2U-Vy38&t=298s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q3.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'IEV3HAgB8jA',
+                       'title': 'Simplified Acquisitions & Micro-Purchases Tutorial - Easiest Way to Win '
+                                'Government Contracts',
+                       'channel': 'GovCon with Humam',
+                       'author': 'GovCon with Humam',
+                       'text': 'So we start by clicking on contracting and then on advanced search.',
+                       'tip': 'So we start by clicking on contracting and then on advanced search.',
+                       'timestamp': 464,
+                       'timestamp_seconds': 464,
+                       'timestamp_label': '[00:07:44]',
+                       'url': 'https://www.youtube.com/watch?v=IEV3HAgB8jA&t=464s',
+                       'markdown': '[00:07:44](https://www.youtube.com/watch?v=IEV3HAgB8jA&t=464s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q3.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'ZL3JyvzdhyE',
+                       'title': 'How to Find Micro-Purchases on SAM.gov (Under $10,000 Without Bidding)',
+                       'channel': 'Government Contract Blueprint',
+                       'author': 'Government Contract Blueprint',
+                       'text': 'You might invoice the agency and it could take 30, 60, or even 90 days to '
+                               'get paid.',
+                       'tip': 'You might invoice the agency and it could take 30, 60, or even 90 days to '
+                              'get paid.',
+                       'timestamp': 350,
+                       'timestamp_seconds': 350,
+                       'timestamp_label': '[00:05:50]',
+                       'url': 'https://www.youtube.com/watch?v=ZL3JyvzdhyE&t=350s',
+                       'markdown': '[00:05:50](https://www.youtube.com/watch?v=ZL3JyvzdhyE&t=350s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q3.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'JVBkE6J1jPc',
+                       'title': 'Low hanging fruit contracts (SAP) Simplified Acquisition Procedures - '
+                                'Eric Coffie',
+                       'channel': 'Eric Coffie',
+                       'author': 'Eric Coffie',
+                       'text': 'There is no public advertising requirement, which is why only 40 percent '
+                               'of these contracts show up on FedBizOpps.',
+                       'tip': 'There is no public advertising requirement, which is why only 40 percent of '
+                              'these contracts show up on FedBizOpps.',
+                       'timestamp': 226,
+                       'timestamp_seconds': 226,
+                       'timestamp_label': '[00:03:46]',
+                       'url': 'https://www.youtube.com/watch?v=JVBkE6J1jPc&t=226s',
+                       'markdown': '[00:03:46](https://www.youtube.com/watch?v=JVBkE6J1jPc&t=226s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q3.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'B6uLsI5zZTQ',
+                       'title': 'Government Contracting Made Easy: Simplified Acquisitions & '
+                                'Micro-Purchases for Beginners | GPC Card',
+                       'channel': 'Sheenapreneur',
+                       'author': 'Sheenapreneur',
+                       'text': 'Even a $500 job still counts as past performance.',
+                       'tip': 'Even a $500 job still counts as past performance.',
+                       'timestamp': 523,
+                       'timestamp_seconds': 523,
+                       'timestamp_label': '[00:08:43]',
+                       'url': 'https://www.youtube.com/watch?v=B6uLsI5zZTQ&t=523s',
+                       'markdown': '[00:08:43](https://www.youtube.com/watch?v=B6uLsI5zZTQ&t=523s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q3.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'Ac9lYLwR6QQ',
+                       'title': 'How to Win Micro-Purchase Contracts with the Government For Beginners',
+                       'channel': 'Kizzy Parks',
+                       'author': 'Kizzy Parks',
+                       'text': 'Spend 10 percent of your time Dialing for Dollars.',
+                       'tip': 'Spend 10 percent of your time Dialing for Dollars.',
+                       'timestamp': 277,
+                       'timestamp_seconds': 277,
+                       'timestamp_label': '[00:04:37]',
+                       'url': 'https://www.youtube.com/watch?v=Ac9lYLwR6QQ&t=277s',
+                       'markdown': '[00:04:37](https://www.youtube.com/watch?v=Ac9lYLwR6QQ&t=277s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q3.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'xobcboYBB6w',
+                       'title': 'Simplified acquisition threshold - Federal Micro Purchases for small '
+                                'businesses',
+                       'channel': 'TendersPage Corp.',
+                       'author': 'TendersPage Corp.',
+                       'text': 'Accept Visa or Mastercard, because routing payments through PayPal is '
+                               'treated as high-risk.',
+                       'tip': 'Accept Visa or Mastercard, because routing payments through PayPal is '
+                              'treated as high-risk.',
+                       'timestamp': 190,
+                       'timestamp_seconds': 190,
+                       'timestamp_label': '[00:03:10]',
+                       'url': 'https://www.youtube.com/watch?v=xobcboYBB6w&t=190s',
+                       'markdown': '[00:03:10](https://www.youtube.com/watch?v=xobcboYBB6w&t=190s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q3.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'AOa0-iEhmks',
+                       'title': 'How do I find micro purchase government contracts wins using SAM.gov',
+                       'channel': 'Eric Coffie',
+                       'author': 'Eric Coffie',
+                       'text': 'Micro-purchases are not typically solicited through SAM, and there is no '
+                               'database of them.',
+                       'tip': 'Micro-purchases are not typically solicited through SAM, and there is no '
+                              'database of them.',
+                       'timestamp': 2282,
+                       'timestamp_seconds': 2282,
+                       'timestamp_label': '[00:38:02]',
+                       'url': 'https://www.youtube.com/watch?v=AOa0-iEhmks&t=2282s',
+                       'markdown': '[00:38:02](https://www.youtube.com/watch?v=AOa0-iEhmks&t=2282s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q3.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'CbeDp1nctog',
+                       'title': '2024: FAR Part 12 - Acquisition of Commercial Items',
+                       'channel': 'How To Sell To & Win Federal Government Contracts',
+                       'author': 'How To Sell To & Win Federal Government Contracts',
+                       'text': 'Under commercial item contracts consequential damages are carved out but '
+                               "there's not a cap on direct damages.",
+                       'tip': 'Under commercial item contracts consequential damages are carved out but '
+                              "there's not a cap on direct damages.",
+                       'timestamp': 1493,
+                       'timestamp_seconds': 1493,
+                       'timestamp_label': '[00:24:53]',
+                       'url': 'https://www.youtube.com/watch?v=CbeDp1nctog&t=1493s',
+                       'markdown': '[00:24:53](https://www.youtube.com/watch?v=CbeDp1nctog&t=1493s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q3.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'qWeiLfjB7k0',
+                       'title': 'Government Contacting - FAR Part 12 - Acquisition Of Commercial Items - '
+                                'Win Federal Contracts',
+                       'channel': 'How To Sell To & Win Federal Government Contracts',
+                       'author': 'How To Sell To & Win Federal Government Contracts',
+                       'text': 'Because in a commercial item acquisition the government is prohibited from '
+                               'asking for certified cost or pricing data.',
+                       'tip': 'Because in a commercial item acquisition the government is prohibited from '
+                              'asking for certified cost or pricing data.',
+                       'timestamp': 2183,
+                       'timestamp_seconds': 2183,
+                       'timestamp_label': '[00:36:23]',
+                       'url': 'https://www.youtube.com/watch?v=qWeiLfjB7k0&t=2183s',
+                       'markdown': '[00:36:23](https://www.youtube.com/watch?v=qWeiLfjB7k0&t=2183s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q3.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': '_0QnHiuRnhc',
+                       'title': 'Mastering FAR Part 12: The Revolutionary FAR Overhaul (RFO)',
+                       'channel': 'ASI Education',
+                       'author': 'ASI Education',
+                       'text': 'Now, you must solicit at least three sources.',
+                       'tip': 'Now, you must solicit at least three sources.',
+                       'timestamp': 144,
+                       'timestamp_seconds': 144,
+                       'timestamp_label': '[00:02:24]',
+                       'url': 'https://www.youtube.com/watch?v=_0QnHiuRnhc&t=144s',
+                       'markdown': '[00:02:24](https://www.youtube.com/watch?v=_0QnHiuRnhc&t=144s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q3.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': '_0QnHiuRnhc',
+                       'title': 'Mastering FAR Part 12: The Revolutionary FAR Overhaul (RFO)',
+                       'channel': 'ASI Education',
+                       'author': 'ASI Education',
+                       'text': 'Over 40 clauses eliminated from commercial contracts.',
+                       'tip': 'Over 40 clauses eliminated from commercial contracts.',
+                       'timestamp': 394,
+                       'timestamp_seconds': 394,
+                       'timestamp_label': '[00:06:34]',
+                       'url': 'https://www.youtube.com/watch?v=_0QnHiuRnhc&t=394s',
+                       'markdown': '[00:06:34](https://www.youtube.com/watch?v=_0QnHiuRnhc&t=394s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q3.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'IiWbsx5Iudg',
+                       'title': 'FAR Part 12 (Simplified) | Selling Commercial Products and Services',
+                       'channel': 'Win Government Contracts with GovSuccess',
+                       'author': 'Win Government Contracts with GovSuccess',
+                       'text': 'Calling something commercial in your proposal does not settle the '
+                               'question.',
+                       'tip': 'Calling something commercial in your proposal does not settle the question.',
+                       'timestamp': 18,
+                       'timestamp_seconds': 18,
+                       'timestamp_label': '[00:00:18]',
+                       'url': 'https://www.youtube.com/watch?v=IiWbsx5Iudg&t=18s',
+                       'markdown': '[00:00:18](https://www.youtube.com/watch?v=IiWbsx5Iudg&t=18s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q3.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'IP2vqKHZqlE',
+                       'title': 'Government Contracting - DFARS Part 212 - Acquisition of Commercial Items '
+                                '- Win Federal Contracts',
+                       'channel': 'How To Sell To & Win Federal Government Contracts',
+                       'author': 'How To Sell To & Win Federal Government Contracts',
+                       'text': 'Contracts are firm fixed price or firm fixed price with an economic price '
+                               'adjustment clause, and only two percent is on a time and materials basis.',
+                       'tip': 'Contracts are firm fixed price or firm fixed price with an economic price '
+                              'adjustment clause, and only two percent is on a time and materials basis.',
+                       'timestamp': 1090,
+                       'timestamp_seconds': 1090,
+                       'timestamp_label': '[00:18:10]',
+                       'url': 'https://www.youtube.com/watch?v=IP2vqKHZqlE&t=1090s',
+                       'markdown': '[00:18:10](https://www.youtube.com/watch?v=IP2vqKHZqlE&t=1090s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q3.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'Z3BTLzceXHU',
+                       'title': 'Micro Purchase Thresholds',
+                       'channel': 'U.S. Department of Commerce',
+                       'author': 'U.S. Department of Commerce',
+                       'text': 'Obtain at least two prices from two vendors, and do not split '
+                               'requirements.',
+                       'tip': 'Obtain at least two prices from two vendors, and do not split requirements.',
+                       'timestamp': 20,
+                       'timestamp_seconds': 20,
+                       'timestamp_label': '[00:00:20]',
+                       'url': 'https://www.youtube.com/watch?v=Z3BTLzceXHU&t=20s',
+                       'markdown': '[00:00:20](https://www.youtube.com/watch?v=Z3BTLzceXHU&t=20s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q3.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'mAsjZ4QW_48',
+                       'title': 'Stage 1, Step 2 - Micro-Purchase',
+                       'channel': 'Fed Biz Access',
+                       'author': 'Fed Biz Access',
+                       'text': 'The micro-purchase market is over $20 billion per year, and you win it by '
+                               'introducing yourself to buyers.',
+                       'tip': 'The micro-purchase market is over $20 billion per year, and you win it by '
+                              'introducing yourself to buyers.',
+                       'timestamp': 37,
+                       'timestamp_seconds': 37,
+                       'timestamp_label': '[00:00:37]',
+                       'url': 'https://www.youtube.com/watch?v=mAsjZ4QW_48&t=37s',
+                       'markdown': '[00:00:37](https://www.youtube.com/watch?v=mAsjZ4QW_48&t=37s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q3.'}]}

@@ -1,855 +1,876 @@
 from __future__ import annotations
 
-CHAPTER_2 = {
-    "id": "Q2",
-    "chapter_id": "Q2",
-    "chapter_number": 2,
-    "question_number": 2,
-    "slug": "who-pays-why-they-pay-government-contract-brokering",
-    "question_prompt": "Who writes the check in government contract brokering, what acute financial or statutory pain forces them to pay, and how do funds clear cleanly without circumvention or non-payment?",
-    "kicker": "Q2 / THE BIG MONEY PLAYBOOKS",
-    "title": "Who Pays, Why They Pay & How the Payment Rail Works",
-    "subtitle": "Prime CFOs, Municipal Bid Desks, Treasury ACH, FAR Fee Restrictions, and Evidence-Backed Service Collections",
-    "layout_template": "executive_summary",
-    "reading_time_minutes": 14,
-    "executive_summary": (
-        "Candidate #4, Government Contract Brokering, holds Rank #27 with a "
-        "79/100 Money-to-Manpower Score: a high-leverage operator play built on "
-        "recognized service fees, never client contract value. The check usually "
-        "comes from a contractor's operating account, not an agency procurement "
-        "officer. Seven chapter-mapped plays monetize capture retainers, bid "
-        "packages, supplier onboarding, acceptance evidence, municipal readiness, "
-        "teaming administration, and sponsored directory placements. Buyers pay "
-        "to prevent missed submissions, rejected invoices, supplier failures, "
-        "and expensive staff diversion. Conservative, Base, and Scaled annual "
-        "owner profits are $18,000, $126,000, and $300,000 respectively. Clean "
-        "collections require authorized buyers, defined acceptance, verified "
-        "bank instructions, and fixed service economics that survive award "
-        "loss without becoming prohibited procurement commissions."
-    ),
-    "key_metrics": [
-        {
-            "label": "Conservative",
-            "value": "$120,000",
-            "context": "Annual recognized service-fee revenue; excludes client contract value",
-            "note": "15% net margin; $18,000 annual owner net profit; 2 FT + 3 C",
-        },
-        {
-            "label": "Base",
-            "value": "$560,000",
-            "context": "Annual recognized service-fee revenue; excludes client contract value",
-            "note": "22.5% net margin; $126,000 annual owner net profit; 2 FT + 3 C",
-        },
-        {
-            "label": "Scaled",
-            "value": "$1,000,000",
-            "context": "Annual recognized service-fee revenue; excludes client contract value",
-            "note": "30% net margin; $300,000 annual owner net profit; 3 FT + 4 C",
-        },
-    ],
-    "sections": [
-        {
-            "heading": "1. Sell to the Budget Owner Who Absorbs the Failure",
-            "epistemic_status": "operating_framework",
-            "paragraphs": [
-                (
-                    "Start by identifying the legal customer, the budget owner, "
-                    "and the person who can accept your work; they are often "
-                    "three different parties. A small prime's president may "
-                    "want more bids, their controller may control vendor "
-                    "payments, and their proposal manager may certify delivery. "
-                    "The government contracting officer normally pays the "
-                    "awarded contractor, not an outside adviser hired by that "
-                    "contractor. A contracting officer's representative may "
-                    "inspect performance without possessing authority to change "
-                    "price or obligate additional funds. Under FAR 1.602-1, "
-                    "contracting officers bind the government only within "
-                    "delegated authority. Therefore, a friendly agency "
-                    "introduction, purchase forecast, or program manager email "
-                    "cannot substitute for an authorized contract. For a "
-                    "private contractor engagement, obtain the customer's "
-                    "executed service order, purchasing authorization, billing "
-                    "address, and accounts-payable contact before starting. "
-                    "For a direct municipal engagement, inspect the actual "
-                    "charter, purchasing ordinance, appropriation, and "
-                    "delegation documents rather than transplanting federal "
-                    "rules. Separate signature authority from banking "
-                    "authority: the person requesting a supplier setup form "
-                    "may have neither. Your first sales deliverable is a "
-                    "one-page authority map connecting the buyer's operational "
-                    "problem to an enforceable payment obligation and a named "
-                    "acceptance owner."
-                ),
-                (
-                    "The strongest buyer is paying to remove a measurable "
-                    "bottleneck, not to purchase influence over an award. A "
-                    "proposal director sees an approaching deadline and "
-                    "insufficient reviewer capacity; a CFO sees delivered "
-                    "work trapped behind rejected invoices; a supplier "
-                    "manager sees a subcontractor whose missing records "
-                    "threaten the prime's performance. Translate each problem "
-                    "into controllable service units. A $5,000 bid package "
-                    "might include a solicitation crosswalk, amendment log, "
-                    "pricing workbook checks, and submission evidence, while "
-                    "leaving technical certifications with the customer. If "
-                    "it replaces 40 internal hours budgeted at $150 each, "
-                    "the comparison is $6,000 of internal capacity against "
-                    "a $5,000 external fee, not a promised contract win. "
-                    "Similarly, a $2,500 acceptance-evidence package can be "
-                    "evaluated against the customer's documented rework "
-                    "hours and collection delay. Do not claim that assembling "
-                    "documents creates statutory eligibility or compels an "
-                    "agency to pay. Ask buyers which rejected document, "
-                    "missed amendment, or unresolved discrepancy caused their "
-                    "last loss. Their answer reveals the acceptance test "
-                    "they will actually fund. Procurement anxiety supports "
-                    "a sale only when your scope converts that anxiety into "
-                    "specific work, bounded responsibility, and inspectable "
-                    "evidence that another employee can verify."
-                ),
-                (
-                    "Use seven chapter-level commercial mappings: capture "
-                    "retainers, bid packages, supplier onboarding, acceptance "
-                    "evidence, municipal readiness, teaming administration, "
-                    "and sponsored directory placements. These are service "
-                    "offers, not seven permissions to intermediate public "
-                    "money. A $4,000 monthly capture retainer buys monitored "
-                    "opportunities and a maintained bid calendar; a $3,000 "
-                    "teaming assignment buys documented workshare and "
-                    "responsibility coordination, not an award-dependent "
-                    "introduction. The directory offer is the specified "
-                    "ego_bait_directory_badge_arbitrage play, monetized through "
-                    "advertising sold separately from rankings. Each offer "
-                    "needs its own payer and deliverable because the "
-                    "advertising buyer may have no procurement relationship "
-                    "with any listed agency. For federal opportunities, "
-                    "screen contingent compensation against FAR Subpart 3.4 "
-                    "and applicable FAR 52.203-5 terms; bona fide employee "
-                    "and established commercial or selling agency exceptions "
-                    "require actual factual support. Renaming a success fee "
-                    "as consulting does not change its substance. Fixed "
-                    "fees also do not sanitize improper influence, kickbacks, "
-                    "or misuse of protected information. When the customer "
-                    "insists on paying only after an award, offer a smaller "
-                    "prepaid diagnostic or decline that compensation "
-                    "structure. Preserve a commercially useful service "
-                    "relationship without making the public procurement "
-                    "decision your payment trigger."
-                ),
-            ],
-            "table": {
-                "caption": "Seven Commercial Mappings: Economic Buyer, Acute Pain, and Collectible Deliverable",
-                "headers": [
-                    "Mapped service and practical buying owner",
-                    "Pain that unlocks an existing budget",
-                    "Billable unit with an inspectable acceptance test",
-                    "Payment protection and operating fallback",
-                ],
-                "rows": [
-                    [
-                        "Capture retainer purchased by the prime's business development director",
-                        "Staff repeatedly miss relevant amendments and qualified solicitation deadlines",
-                        "$4,000 monthly covers monitored searches, qualification notes, and calendar maintenance",
-                        "Collect monthly in advance; narrow searches when opportunity volume exceeds scope",
-                    ],
-                    [
-                        "Bid package purchased by the proposal director with purchasing authorization",
-                        "Internal reviewers cannot finish the solicitation crosswalk before submission",
-                        "$5,000 buys an agreed package, review log, and delivery receipt",
-                        "Collect a deposit; charge for delivered work even when bidding stops",
-                    ],
-                    [
-                        "Supplier onboarding purchased by the prime's subcontract administration manager",
-                        "Incomplete supplier records prevent work authorization and expose delivery dependencies",
-                        "$2,000 covers one supplier file and documented exception follow-up",
-                        "Exclude unsupported certifications; pause onboarding until the supplier supplies evidence",
-                    ],
-                    [
-                        "Acceptance evidence purchased by the controller managing disputed customer invoices",
-                        "Completed work remains unaccepted because required receiving evidence is missing",
-                        "$2,500 covers one defined evidence package and discrepancy reconciliation",
-                        "Bill for document services; never promise release of disputed agency funds",
-                    ],
-                    [
-                        "Municipal readiness purchased by the contractor's regional operating leader",
-                        "Local registrations and bid requirements consume scarce branch management attention",
-                        "$7,500 covers one jurisdiction-specific readiness assessment and implementation package",
-                        "Verify the actual ordinance; exclude unrelated jurisdictions through written boundaries",
-                    ],
-                    [
-                        "Teaming administration purchased by the prime's authorized program executive",
-                        "Unclear workshare and responsibilities create supplier conflict before proposal submission",
-                        "$3,000 covers documented responsibilities, workshare schedules, and agreed administrative records",
-                        "Use fixed service fees; reject compensation dependent upon improper award influence",
-                    ],
-                    [
-                        "Sponsored directory placement purchased by the listed firm's marketing manager",
-                        "The firm wants attributable inbound prospects within its geographic specialty",
-                        "$500 monthly buys a labeled placement and measured lead-routing service",
-                        "Keep rankings independent; offer cancellation instead of selling a better score",
-                    ],
-                ],
-            },
-            "callout": {
-                "kind": "INSIDER PRO-TIPS",
-                "title": "Sell the Avoided Rework, Then Document the Buying Authority",
-                "body": (
-                    "Experienced bid desks qualify the payer as carefully as the "
-                    "solicitation. These tactics expose collection problems before "
-                    "they become unpaid labor."
-                ),
-                "items": [
-                    "Ask for a redacted rejected invoice or missed-amendment example; build the scope around the actual failure rather than a generic promise of more awards.",
-                    "Have the customer's accounts-payable team confirm the purchase-order reference, invoice channel, and vendor setup before the proposal team receives production work.",
-                    "Maintain SAM.gov opportunity identifiers and amendment timestamps in the delivery record; preserve the customer's final submission receipt separately.",
-                    "Give directory winners a free branded badge regardless of advertising purchases; retain dated ranking inputs so sales staff cannot rewrite the result.",
-                ],
-            },
-        },
-        {
-            "heading": "2. Separate the Service Invoice from the Government Disbursement",
-            "epistemic_status": "operating_framework",
-            "paragraphs": [
-                (
-                    "Draw two money paths before selecting a payment method. "
-                    "The agency-to-prime path follows the public contract, "
-                    "acceptance requirements, proper-invoice rules, and "
-                    "designated disbursement system. The prime-to-adviser "
-                    "path follows your separate service agreement unless "
-                    "you are directly contracted by the agency. A $2 "
-                    "million government award remains the contractor's "
-                    "contract value; a $5,000 bid-desk invoice is your "
-                    "service revenue when earned under the applicable "
-                    "accounting policy. Never route the full award through "
-                    "your account merely to extract a fee. Federal "
-                    "electronic payments generally operate under 31 CFR "
-                    "Part 208, while the applicable contract may use FAR "
-                    "52.232-33 and banking information maintained through "
-                    "SAM.gov. Invoice submission still depends on the "
-                    "agency and contract: Treasury's Invoice Processing "
-                    "Platform and DoD's Procurement Integrated Enterprise "
-                    "Environment are examples, not interchangeable "
-                    "destinations. Municipal systems have their own vendor "
-                    "registration and remittance instructions. Map the "
-                    "purchase order, invoice identifier, receiving record, "
-                    "and remittance reference so the controller can "
-                    "reconcile each payment without guessing. A remittance "
-                    "notice is not bank settlement, and bank settlement "
-                    "does not establish that your performance obligations "
-                    "are complete. Track invoiced, accepted, paid, and "
-                    "earned amounts as separate fields."
-                ),
-                (
-                    "The eight commonly proposed rails combine actual "
-                    "transfer methods with commercial arrangements, so "
-                    "compare them on custody, finality, and release "
-                    "authority rather than calling them equivalent. A "
-                    "wire can move a deposit quickly but provides no "
-                    "automatic dispute adjudication. ACH is usually "
-                    "efficient for recurring business payments, but "
-                    "return exposure depends on transaction type, "
-                    "authorization, timing, and applicable rules. Escrow "
-                    "introduces an independent holder and a written "
-                    "release mechanism; it does not manufacture an "
-                    "agency appropriation or override contractual "
-                    "assignment restrictions. Retainers and milestone "
-                    "holds define when money is due, while an underlying "
-                    "wire, ACH transfer, or card transaction moves it. "
-                    "For example, split a $5,000 bid package into a "
-                    "$2,500 deposit and $2,500 payable upon documented "
-                    "delivery. If the customer needs a holdback, cap it "
-                    "at an agreed amount tied to an explicit checklist "
-                    "instead of waiting indefinitely for an award. A "
-                    "platform checkout through Stripe or Square can "
-                    "simplify a $500 directory subscription, but card "
-                    "disputes remain possible. Disclose renewal terms, "
-                    "retain placement evidence, and provide a clear "
-                    "cancellation process. The checkout receipt should "
-                    "identify advertising services, not imply that the "
-                    "buyer purchased public certification or preferred "
-                    "access to government decision-makers."
-                ),
-                (
-                    "Public payment timing requires contract-specific "
-                    "analysis. The Prompt Payment Act, including 31 "
-                    "U.S.C. 3903, and 5 CFR Part 1315 establish federal "
-                    "payment requirements and interest mechanisms; they "
-                    "do not make every private service invoice payable "
-                    "on a universal schedule. FAR 52.232-25, when "
-                    "applicable, links payment administration to proper "
-                    "invoices and acceptance conditions. FAR 52.232-40 "
-                    "addresses accelerated payments to small business "
-                    "subcontractors without creating a new Prompt "
-                    "Payment Act entitlement or automatically rewriting "
-                    "the subcontract's payment terms. If a prime "
-                    "offers factoring as your collection solution, "
-                    "identify whose receivable is being sold. An "
-                    "assignment of federal contract proceeds may "
-                    "implicate 31 U.S.C. 3727, 41 U.S.C. 6305, and FAR "
-                    "Subpart 32.8; ordinary broker instructions cannot "
-                    "replace those requirements. Financing also "
-                    "introduces fees, reserves, recourse, and dilution "
-                    "risk. On an illustrative $50,000 eligible "
-                    "receivable, an 85% advance supplies $42,500, "
-                    "leaving $7,500 before reserves and charges. That "
-                    "advance is liquidity against the receivable, not "
-                    "new service revenue. When eligibility or assignment "
-                    "is disputed, use a smaller prepaid service scope "
-                    "rather than assuming a financier will cure weak "
-                    "documentation or an unenforceable payment claim."
-                ),
-            ],
-            "table": {
-                "caption": "Eight Payment and Settlement Arrangements: Authority, Mechanics, and Failure Recovery",
-                "headers": [
-                    "Rail or arrangement and appropriate service use",
-                    "Who controls funds and authorizes release",
-                    "Concrete settlement and unit economics mechanics",
-                    "Principal failure mode and practical fallback",
-                ],
-                "rows": [
-                    [
-                        "Bank wire for a larger verified service deposit",
-                        "Customer treasury initiates payment using independently verified beneficiary instructions",
-                        "A $2,500 deposit moves directly into the contracted provider's account",
-                        "Redirected instructions can cause loss; verify changes through established callbacks",
-                    ],
-                    [
-                        "Independent escrow for a negotiated disputed-delivery risk allocation",
-                        "A qualified holder releases funds under the signed escrow instructions",
-                        "Deposit $5,000 and release against specifically identified delivery evidence",
-                        "Ambiguous acceptance traps funds; specify dispute handling and termination releases",
-                    ],
-                    [
-                        "Business ACH for recurring capture or advertising service invoices",
-                        "The account holder authorizes the payment through its banking arrangements",
-                        "A $4,000 monthly service payment receives invoice-level reconciliation references",
-                        "Returns interrupt cash forecasts; maintain authorization evidence and a collection reserve",
-                    ],
-                    [
-                        "Advance retainer for a defined monthly bid-desk capacity commitment",
-                        "The service contract defines application, refunds, and earned service treatment",
-                        "Collect $4,000 before reserving the month's expressly defined delivery capacity",
-                        "Unused scope causes disputes; document carryover rules and refund treatment explicitly",
-                    ],
-                    [
-                        "Statutory disbursement for the agency's actual awarded contract obligation",
-                        "Authorized agency personnel process proper invoices through designated disbursement systems",
-                        "Agency payments satisfy contractor receivables rather than automatically funding adviser invoices",
-                        "Acceptance disputes delay payment; correct documented defects through contractual channels",
-                    ],
-                    [
-                        "Platform checkout for clearly labeled recurring directory advertising subscriptions",
-                        "The merchant processor settles receipts subject to its reserves and dispute rules",
-                        "Charge $500 monthly while separately recording processing costs and refunds",
-                        "Card disputes reverse receipts; retain advertising delivery and renewal authorization evidence",
-                    ],
-                    [
-                        "Factoring for eligible receivables after assignment and contract restrictions review",
-                        "The financier advances funds against documented receivables under negotiated recourse terms",
-                        "An 85% advance on $50,000 supplies $42,500 before financing charges",
-                        "Rejected assignments defeat funding; retain direct collection and prepaid service alternatives",
-                    ],
-                    [
-                        "Milestone holdback for objectively defined remaining deliverables in a private engagement",
-                        "The customer retains only the amount and duration expressly negotiated",
-                        "Hold $500 of a $5,000 package until specified corrections finish",
-                        "Award-linked holds become indefinite; use dated delivery criteria and escalation provisions",
-                    ],
-                ],
-            },
-            "sop_steps": [
-                {
-                    "step": 1,
-                    "title": "Map both obligations",
-                    "action": "Separate the agency's contractor obligation from the contractor's service-provider obligation.",
-                    "detail": "Record the legal payers, contract identifiers, acceptance owners, invoice destinations, and applicable payment terms for each path.",
-                },
-                {
-                    "step": 2,
-                    "title": "Verify the account instructions",
-                    "action": "Confirm beneficiary details through an independently established customer contact.",
-                    "detail": "Require separate review for bank changes, preserve callback evidence, and never treat a forwarded email as sufficient verification.",
-                },
-                {
-                    "step": 3,
-                    "title": "Attach delivery evidence",
-                    "action": "Submit the invoice with the exact evidence required by the service order.",
-                    "detail": "Include the purchase-order reference, delivered version, acceptance checklist, agreed milestone, and any documented customer exceptions.",
-                },
-                {
-                    "step": 4,
-                    "title": "Reconcile cleared funds",
-                    "action": "Match bank settlement to the invoice and update earned revenue separately.",
-                    "detail": "Track deposits, holds, processor fees, returns, credits, and remaining receivables without counting client contract proceeds as operator revenue.",
-                },
-            ],
-        },
-        {
-            "heading": "3. Protect Fees with Evidence, Credit Limits, and Lawful Workshare",
-            "epistemic_status": "operating_framework",
-            "paragraphs": [
-                (
-                    "Fee protection begins with scope architecture, not "
-                    "an intimidating noncircumvention paragraph. Define "
-                    "the customer entities covered, named deliverables, "
-                    "customer dependencies, permitted use, price, "
-                    "acceptance criteria, change procedure, and "
-                    "collection terms. A bid-package engagement can "
-                    "require written identification of missing "
-                    "checklist items within five business days, "
-                    "followed by a specified correction process; "
-                    "the enforceability and effect of silence must "
-                    "be checked under the governing agreement and "
-                    "applicable law. Preserve version history in "
-                    "SharePoint or a controlled document repository, "
-                    "plus delivery receipts and the customer's "
-                    "requested changes. Tie the final invoice to "
-                    "delivery of the contracted service, not the "
-                    "government's award decision. Use a narrowly "
-                    "defined confidentiality and work-product "
-                    "license arrangement to protect research, "
-                    "templates, and authorized introductions without "
-                    "restricting lawful public competition. Any "
-                    "noncircumvention provision needs a defined "
-                    "relationship, duration, and legitimate scope; "
-                    "it cannot confer ownership of a publicly "
-                    "posted solicitation. Avoid percentage tails "
-                    "on government awards disguised as protection "
-                    "against bypass. If the prime brings the work "
-                    "in-house, collect for completed milestones and "
-                    "the expressly purchased capacity, subject to "
-                    "the agreement, rather than claiming an "
-                    "unearned slice of future public spending. "
-                    "This turns a potentially emotional bypass "
-                    "dispute into a narrower evidentiary collection problem."
-                ),
-                (
-                    "Credit-screen the actual payer before extending "
-                    "terms. Confirm legal existence through the "
-                    "relevant secretary of state, match the "
-                    "contracting entity to its tax and payment "
-                    "records, and inspect exclusions where relevant "
-                    "through SAM.gov. Active registration is not "
-                    "evidence of solvency. USAspending.gov can help "
-                    "test claims about federal award history, but "
-                    "obligations and reported awards are not "
-                    "available cash. Request recent receivables "
-                    "aging, customer concentration, references from "
-                    "comparable service vendors, and evidence of "
-                    "the authorized purchasing process. Review "
-                    "public liens, litigation, and bankruptcy "
-                    "records through appropriate official systems "
-                    "and PACER where useful; interpret findings "
-                    "with the entity and jurisdiction correctly "
-                    "matched. Establish exposure limits in dollars. "
-                    "For a new $5,000 package, a $2,500 deposit "
-                    "limits the unpaid contract balance to $2,500 "
-                    "before approved changes. A $4,000 retainer "
-                    "billed after service can become $8,000 of "
-                    "receivables when a second month begins "
-                    "unpaid, with additional unbilled work "
-                    "increasing exposure. Stop new discretionary "
-                    "work at the contractual threshold and notify "
-                    "the customer before suspension. For essential "
-                    "existing obligations, follow the agreed "
-                    "termination and transition provisions rather "
-                    "than abruptly withholding files the customer "
-                    "already owns. Credit policy should protect "
-                    "cash without creating a fresh performance breach."
-                ),
-                (
-                    "Lawful teaming requires an actual performance "
-                    "role. Under FAR 9.6, contractor team "
-                    "arrangements can organize complementary "
-                    "capabilities, but the label does not excuse "
-                    "a shell prime that contributes no meaningful "
-                    "value. FAR 52.215-22 and 52.215-23 address "
-                    "excessive pass-through charges when applicable; "
-                    "check their inclusion and the transaction "
-                    "facts rather than asserting a universal "
-                    "prohibition on subcontracting. Small-business "
-                    "set-asides add distinct requirements under "
-                    "13 CFR 125.6 and, where incorporated, FAR "
-                    "52.219-14. For covered services, the general "
-                    "limitation concerns amounts paid to firms "
-                    "that are not similarly situated, with "
-                    "contract-category rules and specified "
-                    "exclusions requiring careful calculation. "
-                    "Review affiliation and ostensible subcontractor "
-                    "issues under 13 CFR 121.103 as well. "
-                    "Procurement integrity restrictions in 41 "
-                    "U.S.C. 2102 protect contractor bid or "
-                    "proposal information and source-selection "
-                    "information before award. Anti-kickback "
-                    "restrictions in 41 U.S.C. 8702 reach "
-                    "improper benefits used to obtain or reward "
-                    "favorable treatment in covered contracting. "
-                    "Never pay a prime employee personally to "
-                    "route subcontract work, and never buy "
-                    "competitor proposal contents. The fallback "
-                    "is a documented service assignment with "
-                    "permitted information, real deliverables, "
-                    "and traceable payment to the contracting "
-                    "business. If the economics require hidden "
-                    "influence or fictitious workshare, abandon "
-                    "that structure before preparing the invoice."
-                ),
-            ],
-            "table": {
-                "caption": "Counterparty Credit and Fee-Protection Evidence: Eight Checks Before Unsecured Work",
-                "headers": [
-                    "Verification target and responsible operator",
-                    "Evidence that supports a bounded decision",
-                    "Concrete warning signal requiring intervention",
-                    "Protective action that preserves legitimate delivery",
-                ],
-                "rows": [
-                    [
-                        "Legal entity identity checked by the engagement manager",
-                        "State entity record matches the executed order and payment account",
-                        "Purchase order names an affiliate that never signed the agreement",
-                        "Obtain the correct obligor's signature before extending additional service credit",
-                    ],
-                    [
-                        "Purchasing authority checked with the customer's accounts-payable team",
-                        "Written authorization identifies the signer, budget reference, and invoice destination",
-                        "An enthusiastic proposal employee cannot obtain a required purchase order",
-                        "Provide a priced diagnostic only after documented authorization and payment",
-                    ],
-                    [
-                        "Payment capacity reviewed by the operator's finance lead",
-                        "Recent aging, vendor references, and concentration data support the requested exposure",
-                        "Customer cites large awards while refusing any evidence of current liquidity",
-                        "Require deposits and shorten milestones rather than relying on award headlines",
-                    ],
-                    [
-                        "Public record findings assessed against the exact contracting entity",
-                        "Matched court, lien, and bankruptcy records inform a documented credit decision",
-                        "Similar entity names create misleading results or conceal the actual payer",
-                        "Resolve identity discrepancies before changing terms or making adverse assertions",
-                    ],
-                    [
-                        "Bank instructions independently checked by a second authorized reviewer",
-                        "Established callbacks and beneficiary confirmation support the payment setup record",
-                        "Urgent email requests redirect funds to a previously unmentioned third party",
-                        "Pause the transfer and contact the known counterparty through existing channels",
-                    ],
-                    [
-                        "Acceptance criteria maintained by the named delivery owner",
-                        "Signed scope and versioned checklist identify objectively complete service outputs",
-                        "Customer adds award success as an unwritten condition for paying invoices",
-                        "Enforce agreed delivery terms and negotiate new work through written changes",
-                    ],
-                    [
-                        "Workshare and compensation reviewed before any federal teaming assignment",
-                        "Actual responsibilities, applicable clauses, and fee terms support the proposed structure",
-                        "Proposed prime performs little work while charging for access or influence",
-                        "Restructure around genuine services or decline the unsupported intermediary arrangement",
-                    ],
-                    [
-                        "Receivable exposure monitored weekly by the operator's finance lead",
-                        "Invoice aging includes deposits, earned balances, disputes, and unbilled work",
-                        "A second service period begins while the first remains unpaid",
-                        "Apply the agreed credit limit and communicate a documented suspension plan",
-                    ],
-                ],
-            },
-            "callout": {
-                "kind": "OPERATOR GATE",
-                "title": "Four Verifications Before Committing Delivery Capacity",
-                "body": (
-                    "Complete these checks before accepting exposure that depends "
-                    "on a customer's future award, disputed invoice, or supplier performance."
-                ),
-                "items": [
-                    "Verify the actual contracting entity, authorized signer, purchasing reference, acceptance owner, and accounts-payable destination.",
-                    "Review the proposed fee structure against applicable contingent-fee, procurement-integrity, anti-kickback, pass-through, and set-aside requirements.",
-                    "Confirm the deposit or approved credit limit, independently verified bank details, milestone evidence, and written collection escalation terms.",
-                    "Document genuine workshare and lawful information sources; reject unsupported supplier certifications, hidden personal payments, and award-dependent influence fees.",
-                ],
-            },
-        },
-        {
-            "heading": "4. Reconcile Seven Service Plays to the Three Canonical Profit Cases",
-            "epistemic_status": "illustrative_model",
-            "paragraphs": [
-                (
-                    "The scorecard recognizes service fees, not "
-                    "client award value, escrow balances, or "
-                    "factoring advances. Its Conservative case is "
-                    "$120,000 revenue at 15% net margin, leaving "
-                    "$18,000 annual owner net profit and $102,000 "
-                    "of modeled costs with 2 FT + 3 C. "
-                    "The Base case is $560,000 revenue at "
-                    "22.5%, leaving $126,000 profit and $434,000 "
-                    "of modeled costs with the same team "
-                    "counts. Scaled is $1,000,000 revenue at "
-                    "30%, leaving $300,000 profit and $700,000 "
-                    "of modeled costs with 3 FT + 4 C, "
-                    "seven people total. The table supplies "
-                    "one illustrative revenue mix that reconciles "
-                    "exactly to each case; it does not claim "
-                    "these prices or sales volumes are observed "
-                    "market results. Contractor counts do not "
-                    "specify hours, and the Conservative cost "
-                    "envelope must be tested against actual "
-                    "compensation before hiring. In particular, "
-                    "$102,000 cannot casually be treated as "
-                    "funding five full-time market-rate positions. "
-                    "Track delivery hours and contribution by "
-                    "offer so heavy proposal revisions do not "
-                    "consume the retainer margin. A $5,000 "
-                    "package requiring 40 hours yields $125 "
-                    "per delivery hour before overhead; at "
-                    "80 hours that falls to $62.50. Use "
-                    "scope boundaries and priced change orders, "
-                    "not optimistic award probabilities, to "
-                    "protect those economics."
-                ),
-                (
-                    "For ego_bait_directory_badge_arbitrage, publish "
-                    "data-scored state and city lists such as "
-                    "'Top 15 Verified Specialists in Austin' "
-                    "using documented verification criteria. "
-                    "State precisely what verified means: "
-                    "for example, checked business identity "
-                    "and documented specialty evidence, not "
-                    "government endorsement or award eligibility. "
-                    "Issue free embeddable 'Top Rated' winner "
-                    "badges only to firms meeting the published "
-                    "method. Freeze each published edition's "
-                    "objective scores against commercial "
-                    "editing; retain the input snapshot and "
-                    "publish factual corrections transparently. "
-                    "Sell $299–$799 monthly Featured #1 "
-                    "Lead-Capture placements in a separate "
-                    "'Sponsored / Featured' advertising area, "
-                    "never by rewriting the underlying ranking. "
-                    "At $500 monthly, three annual "
-                    "subscriptions produce $18,000, matching "
-                    "the Base bridge. Five specialists in "
-                    "each of 20 cities embedding a badge "
-                    "would produce 100 referring sites, but "
-                    "neither adoption nor domain-rating scores "
-                    "are assured. Earn hundreds of links "
-                    "through genuine distribution, not purchased "
-                    "ranking treatment. Use clean branded "
-                    "anchor text, distinguish sponsored links "
-                    "appropriately, and never promise search "
-                    "position. FTC Act Section 5 and "
-                    "applicable endorsement principles require "
-                    "truthful presentation of the commercial "
-                    "relationship. If badge adoption or lead "
-                    "quality disappoints, retain the free "
-                    "objective directory, stop unsupported "
-                    "performance claims, and let advertisers "
-                    "cancel rather than manipulating scores "
-                    "to rescue subscription revenue."
-                ),
-                (
-                    "The other six plays need equally "
-                    "explicit fallbacks. Capture retainers sell "
-                    "a $4,000 monthly monitoring scope; reduce "
-                    "coverage or pause renewal when no useful "
-                    "opportunities fit. Bid packages sell "
-                    "$5,000 deliverables; collect for accepted "
-                    "work when a customer abandons a bid. "
-                    "Supplier onboarding sells $2,000 files; "
-                    "record unresolved evidence instead of "
-                    "inventing eligibility. Acceptance packages "
-                    "sell $2,500 documentation assignments; "
-                    "escalate disputes without representing "
-                    "that the agency must release cash. "
-                    "Municipal readiness sells $7,500 "
-                    "jurisdiction-specific projects; narrow "
-                    "scope when local requirements expand. "
-                    "Teaming administration sells $3,000 "
-                    "assignments; stop when proposed workshare "
-                    "or compensation cannot survive the "
-                    "applicable rules. These controls address "
-                    "award uncertainty, payment delays, and "
-                    "supplier failure without merging the "
-                    "operator's receivable with the client's "
-                    "public contract. The stated $20,000–$90,000 "
-                    "startup range and $5,000–$25,000 monthly "
-                    "opex range do not establish sufficient "
-                    "runway for a 6–18 month first-deal cycle. "
-                    "At $25,000 monthly, $150,000 covers six "
-                    "months before setup costs; eighteen "
-                    "months would consume $450,000. Treat "
-                    "the opex range as a planning input, "
-                    "not a replacement for the scenario's "
-                    "complete cost reconciliation. Launch with "
-                    "paid diagnostics, committed deposits, "
-                    "and flexible contractor hours, and "
-                    "forecast cash weekly. Automate solicitation "
-                    "alerts, bid calendars, and checklist "
-                    "reminders while retaining human review "
-                    "of authority, certifications, and "
-                    "payment exceptions."
-                ),
-            ],
-            "table": {
-                "caption": "Illustrative Seven-Play Revenue Bridge: Exactly $120,000, $560,000, and $1,000,000",
-                "headers": [
-                    "Service unit and revenue recognition boundary",
-                    "Conservative annual delivered service mix",
-                    "Base annual delivered service mix",
-                    "Scaled annual delivered service mix",
-                ],
-                "rows": [
-                    [
-                        "Capture retainers earned through the contracted monthly monitoring service",
-                        "One client times twelve months times $4,000 equals $48,000",
-                        "Six clients times twelve months times $4,000 equals $288,000",
-                        "Ten clients times twelve months times $4,000 equals $480,000",
-                    ],
-                    [
-                        "Bid packages earned through delivery of separately contracted proposal support",
-                        "Eight delivered packages times $5,000 per package equals $40,000",
-                        "Twenty-four delivered packages times $5,000 per package equals $120,000",
-                        "Forty delivered packages times $5,000 per package equals $200,000",
-                    ],
-                    [
-                        "Supplier onboarding earned through completion of the specified supplier file",
-                        "Four completed supplier files times $2,000 per file equals $8,000",
-                        "Twenty completed supplier files times $2,000 per file equals $40,000",
-                        "Forty completed supplier files times $2,000 per file equals $80,000",
-                    ],
-                    [
-                        "Acceptance evidence earned for documentation services rather than agency collections",
-                        "Four delivered evidence packages times $2,500 per package equals $10,000",
-                        "Sixteen delivered evidence packages times $2,500 per package equals $40,000",
-                        "Thirty-two delivered evidence packages times $2,500 per package equals $80,000",
-                    ],
-                    [
-                        "Municipal readiness earned through the agreed jurisdiction-specific project deliverables",
-                        "One completed readiness project times $7,500 per project equals $7,500",
-                        "Four completed readiness projects times $7,500 per project equals $30,000",
-                        "Twelve completed readiness projects times $7,500 per project equals $90,000",
-                    ],
-                    [
-                        "Teaming administration earned through real administrative work without award commissions",
-                        "One completed teaming assignment times $3,000 per assignment equals $3,000",
-                        "Eight completed teaming assignments times $3,000 per assignment equals $24,000",
-                        "Sixteen completed teaming assignments times $3,000 per assignment equals $48,000",
-                    ],
-                    [
-                        "Sponsored directory advertising earned over delivered and clearly labeled placement periods",
-                        "Seven delivered placement-months times $500 per placement-month equals $3,500",
-                        "Thirty-six delivered placement-months times $500 per placement-month equals $18,000",
-                        "Forty-four delivered placement-months times $500 per placement-month equals $22,000",
-                    ],
-                ],
-            },
-        },
-    ],
-    "pull_quote": "Sell documented work to an authorized payer, and never confuse a government award with money owed to your bid desk.",
-    "diagram_id": "diag-04",
-    "action_checklist": [
-        "Create an authority map naming the customer entity, purchasing signer, budget owner, acceptance owner, and accounts-payable contact before beginning delivery.",
-        "Price the seven service offers around measurable outputs, and review federal compensation structures before accepting contingent or introduction-based fees.",
-        "Draw separate agency-to-prime and prime-to-provider money paths, identifying invoice systems, bank verification steps, holds, and reconciliation references.",
-        "Set a dollar credit limit using deposits, receivable aging, vendor references, entity records, and documented customer purchasing authority.",
-        "Publish directory scoring criteria and preserved ranking editions; sell labeled Sponsored / Featured inventory without altering objective scores.",
-        "Reconcile the service pipeline to $120,000, $560,000, and $1,000,000 revenue cases, then test staffing costs and weekly cash runway against the exact profit targets.",
-    ],
-    "statutory_citations": [
-        {
-            "title": "FAR 1.602-1 — Contracting officer authority",
-            "url": "https://www.acquisition.gov/far/1.602-1",
-            "relevance": "Distinguishes authorized federal obligations from requests by personnel who cannot bind the government.",
-        },
-        {
-            "title": "FAR Subpart 3.4 and FAR 52.203-5 — Contingent fees",
-            "url": "https://www.acquisition.gov/far/52.203-5",
-            "relevance": "Supports examination of award-dependent compensation and the factual requirements for the stated exceptions.",
-        },
-        {
-            "title": "41 U.S.C. 2102 — Procurement information restrictions",
-            "url": "https://www.law.cornell.edu/uscode/text/41/2102",
-            "relevance": "Restricts improper disclosure and obtaining of protected bid, proposal, and source-selection information before award.",
-        },
-        {
-            "title": "41 U.S.C. 8702 — Anti-kickback prohibitions",
-            "url": "https://www.law.cornell.edu/uscode/text/41/8702",
-            "relevance": "Prohibits covered kickback conduct involving improper favorable treatment in prime contracts and subcontracts.",
-        },
-        {
-            "title": "31 U.S.C. 3903 — Prompt Payment Act regulations",
-            "url": "https://www.law.cornell.edu/uscode/text/31/3903",
-            "relevance": "Provides the statutory basis for federal payment administration without creating a universal private-service payment term.",
-        },
-        {
-            "title": "5 CFR Part 1315 — Prompt payment requirements",
-            "url": "https://www.ecfr.gov/current/title-5/chapter-III/subchapter-B/part-1315",
-            "relevance": "Connects federal payment timing to proper invoices, acceptance, and applicable interest provisions.",
-        },
-        {
-            "title": "31 CFR Part 208 — Federal electronic funds transfers",
-            "url": "https://www.ecfr.gov/current/title-31/subtitle-B/chapter-II/subchapter-A/part-208",
-            "relevance": "Governs federal electronic payment requirements and exceptions rather than private escrow release arrangements.",
-        },
-        {
-            "title": "FAR 52.232-33 — Payment by electronic funds transfer through SAM",
-            "url": "https://www.acquisition.gov/far/52.232-33",
-            "relevance": "Addresses contractor banking information and electronic payment responsibilities when this clause applies.",
-        },
-        {
-            "title": "FAR 52.232-25 — Prompt Payment",
-            "url": "https://www.acquisition.gov/far/52.232-25",
-            "relevance": "Specifies applicable invoice, acceptance, payment, and interest mechanics within covered federal contracts.",
-        },
-        {
-            "title": "FAR 52.232-40 — Accelerated payments to small business subcontractors",
-            "url": "https://www.acquisition.gov/far/52.232-40",
-            "relevance": "Addresses acceleration after government payment without independently creating new Prompt Payment Act rights.",
-        },
-        {
-            "title": "31 U.S.C. 3727 — Assignment of claims",
-            "url": "https://www.law.cornell.edu/uscode/text/31/3727",
-            "relevance": "Requires review of federal claim-assignment restrictions and exceptions before financing or redirecting receivables.",
-        },
-        {
-            "title": "41 U.S.C. 6305 — Transfer of contracts and assignment of claims",
-            "url": "https://www.law.cornell.edu/uscode/text/41/6305",
-            "relevance": "Distinguishes restrictions on transferring federal contracts from permitted assignments meeting statutory conditions.",
-        },
-        {
-            "title": "FAR Subpart 32.8 — Assignment of claims",
-            "url": "https://www.acquisition.gov/far/subpart-32.8",
-            "relevance": "Provides contract administration procedures relevant to eligible assignments of federal payment claims.",
-        },
-        {
-            "title": "FAR Subpart 9.6 — Contractor team arrangements",
-            "url": "https://www.acquisition.gov/far/subpart-9.6",
-            "relevance": "Frames legitimate teaming arrangements while preserving contractual responsibility and other applicable requirements.",
-        },
-        {
-            "title": "FAR 52.215-23 — Limitations on pass-through charges",
-            "url": "https://www.acquisition.gov/far/52.215-23",
-            "relevance": "Addresses excessive pass-through charges and added-value considerations when the clause applies.",
-        },
-        {
-            "title": "13 CFR 125.6 — Limitations on subcontracting",
-            "url": "https://www.ecfr.gov/current/title-13/chapter-I/part-125/section-125.6",
-            "relevance": "Sets category-specific subcontracting limits and similarly situated entity treatment for covered awards.",
-        },
-        {
-            "title": "13 CFR 121.103 — Affiliation principles",
-            "url": "https://www.ecfr.gov/current/title-13/chapter-I/part-121/section-121.103",
-            "relevance": "Supports examination of affiliation and ostensible subcontractor concerns in proposed small-business structures.",
-        },
-        {
-            "title": "15 U.S.C. 45 — FTC Act Section 5",
-            "url": "https://www.law.cornell.edu/uscode/text/15/45",
-            "relevance": "Supports truthful directory rankings, substantiated verification claims, and clear distinctions between advertising and independent results.",
-        },
-        {
-            "title": "16 CFR Part 255 — Endorsement and testimonial guides",
-            "url": "https://www.ecfr.gov/current/title-16/chapter-I/subchapter-B/part-255",
-            "relevance": "Provides FTC guidance on endorsement representations and material connections where applicable to badges and promotional claims.",
-        },
-    ],
-}
+CHAPTER_2 = {'id': 'Q2',
+ 'chapter_id': 'Q2',
+ 'chapter_number': 2,
+ 'question_number': 2,
+ 'slug': 'getting-registered-and-credentialed',
+ 'question_prompt': 'How do I get registered and credentialed in SAM.gov, get a UEI and CAGE code, write a '
+                    'capability statement, and pick a small-business certification?',
+ 'kicker': 'Q2 / THE BIG MONEY PLAYBOOKS',
+ 'title': 'Getting Registered and Credentialed',
+ 'subtitle': 'Login.gov, TIN/EIN, UEI and CAGE/NCAGE codes, step-by-step SAM.gov registration, looking up '
+             'your CAGE code, one-page capability statements, and the WOSB, SDVOSB, 8(a) and HUBZone '
+             'certification programs and processes',
+ 'layout_template': 'executive_summary',
+ 'reading_time_minutes': 15,
+ 'executive_summary': 'Practitioners agree the registration stack is sequential and free: Login.gov '
+                      'sign-in, SAM.gov entity validation for a 12-character UEI, then a five-character '
+                      'CAGE code that DLA assigns after submission, never something the operator requests '
+                      'or buys. Kizzy Parks pulled a UEI roughly three minutes into the flow and pushes '
+                      'speed over perfection: one NAICS such as 541611, a $1 receipts placeholder, '
+                      'personal checking if no business account, and yes to credit cards, disaster '
+                      'response, and DoD work, then fix everything once the CAGE lands. Neil McDonnell '
+                      'treats the UEI as a mask for the EIN and expects DLA to take three days to three '
+                      'weeks. Disagreements center on virtual addresses, paid registration help, and '
+                      'whether HUBZone status is worth chasing when governmentwide HUBZone spend '
+                      'reportedly sat at 0.44%.',
+ 'key_metrics': [{'label': 'UEI Turnaround Inside SAM.gov',
+                  'metric': 'UEI Turnaround Inside SAM.gov',
+                  'value': 'Roughly 3 minutes',
+                  'confidence': 'attributed_practitioner_claim',
+                  'context': 'Time Kizzy Parks clocked from starting her 2024 entity validation '
+                             'walkthrough to receiving the Unique Entity ID on screen.',
+                  'source': 'Kizzy Parks ([FWfV2m3K4jY @ 00:05:56])'},
+                 {'label': 'CAGE Assignment Lag After IRS Verification',
+                  'metric': 'CAGE Assignment Lag After IRS Verification',
+                  'value': 'About a week or two',
+                  'confidence': 'attributed_practitioner_claim',
+                  'context': 'Gap Colleen Spiegel reports between the IRS EIN verification email and '
+                             'either a request for more information or the CAGE assignment email.',
+                  'source': 'SEMSCIO ([rRWCLLWqrV0 @ 00:00:50])'},
+                 {'label': 'Deadline To Answer The DLA Follow-Up Email',
+                  'metric': 'Deadline To Answer The DLA Follow-Up Email',
+                  'value': '3 business days',
+                  'confidence': 'attributed_practitioner_claim',
+                  'context': 'Window Kizzy Parks says registrants have to respond to the proof-of-address '
+                             'or company-questions email before the CAGE code is issued.',
+                  'source': 'Kizzy Parks ([FWfV2m3K4jY @ 00:23:47])'},
+                 {'label': 'SAM.gov Registration Renewal Cycle',
+                  'metric': 'SAM.gov Registration Renewal Cycle',
+                  'value': 'Every 365 days',
+                  'confidence': 'attributed_practitioner_claim',
+                  'context': "FedOpp's renewal interval, with a warning that an expired registration can "
+                             'block awards and that operators should never request a second UEI.',
+                  'source': 'FedOpp ([2Bp78kNCVGI @ 00:04:47])'}],
+ 'sections': [{'section': 1,
+               'heading': 'The Practitioner Consensus: The Registration Stack Every Broker Must Clear',
+               'paragraphs': ['Every practitioner who covers registration describes the same identity '
+                              'stack, and the order matters. Neil McDonnell breaks it down: the TIN is the '
+                              'umbrella term, an SSN identifies the person, an EIN identifies the company, '
+                              'and he tells operators never to post the EIN on a website because it is '
+                              'effectively a social security number for the business. SAM.gov then issues '
+                              'the Unique Entity ID, which McDonnell says exists mainly to mask the EIN '
+                              'while making the firm visible in every government tool [QIEmDXcWhSE @ '
+                              '00:03:05]. He adds that a company holds exactly one UEI but can carry '
+                              'multiple CAGE codes, which is what he did when he opened offices in Duncan, '
+                              'Oklahoma and in Virginia and simply requested another CAGE for the second '
+                              'location [QIEmDXcWhSE @ 00:04:04]. FedOpp pins the UEI at 12 characters, '
+                              'assigned the moment the legal name and address validate, with a Federal '
+                              'Service Desk ticket available from that same page if validation fails '
+                              '[2Bp78kNCVGI @ 00:02:10]. The CAGE code is the last layer: Colleen Spiegel '
+                              'of SEMSCIO calls it a five-character alphanumeric identifier issued by the '
+                              'Defense Logistics Agency to U.S. entities, with foreign firms receiving an '
+                              'NCAGE code instead, and says a valid CAGE or NCAGE is needed to finish '
+                              'SAM.gov registration and bid on contracts [rRWCLLWqrV0 @ 00:00:33].',
+                              'The practitioners also agree on what not to chase. Eric Coffie is blunt '
+                              'that nobody needs a CAGE code before registering: once the entity '
+                              'information is submitted for processing, the government assigns the code '
+                              "and adds it to the SAM record, and the registrant does 'not a thing' beyond "
+                              'finishing the SAM flow [wcz-GpTaAp8 @ 00:01:36]. The lever the operator '
+                              'does control is the registration purpose. FedOpp says to choose Register '
+                              'Entity rather than a UEI-only record and to select All Awards, because an '
+                              'ID alone will not let a firm bid as a prime [2Bp78kNCVGI @ 00:01:48]. Kizzy '
+                              'Parks makes the identical call on screen, telling viewers they are '
+                              'interested in all awards because a CAGE code is required to obtain a prime '
+                              'government contract, and that nearly everyone watching should answer no to '
+                              'the government-entity question [wNMt73DArFc @ 00:01:59]. Her pre-flight kit '
+                              'is short and deliberately forgiving: business banking details, or plain '
+                              'personal checking if no business account exists yet; a copy of the '
+                              'IRS-issued EIN document; a physical address affiliated with the business, '
+                              'whether it is a for-profit or a nonprofit; and at least one NAICS code, '
+                              'because every one of these items can be changed after the CAGE lands '
+                              '[wNMt73DArFc @ 00:00:40]. The shared message is to stop polishing and push '
+                              'the record through to submission.',
+                              'Beyond the base registration, the certification practitioners share one '
+                              'hard rule: SAM.gov comes first. Nick Waters states that no firm can be '
+                              'federally certified without a SAM.gov registration plus a UEI and CAGE '
+                              'code, and that being a small business is the next gate, since all four '
+                              'federal programs run directly through the SBA [sqfiBzNcTPI @ 00:01:40]. '
+                              'Derek James of GovKidMethod gives the same order, telling viewers to have '
+                              'the business entity registered in SAM before applying for any set-aside '
+                              'through the SBA certification site, where self-certification is usually '
+                              'easier and faster in his experience [LnPiGkUTs2E @ 00:05:54]. On the money '
+                              'behind those tags, the speakers converge on a 23% governmentwide small '
+                              'business goal. Neil McDonnell frames it against a small-business-eligible '
+                              'pool of roughly $500 to $550 billion a year rather than the '
+                              'multi-trillion-dollar federal budget, with subcategories carved out of that '
+                              '23% for women-owned firms and 8(a) firms at 5% each [9sogImn1jJQ @ '
+                              '00:04:16]. Squared Compass cites the same 23% overall target for all small '
+                              "businesses [oSSAuniLuDI @ 00:01:05]. McDonnell's practical read is that "
+                              'these are tags, not strategy: they shrink the competition pool when '
+                              'something is set aside, but tightly focused core competency and past '
+                              'performance are what actually win.'],
+               'table': {'caption': 'Registration prerequisites the practitioners agree on before a broker '
+                                    'can bid as a prime',
+                         'headers': ['Registration Element',
+                                     'Practitioner Consensus Position',
+                                     'Operator Implication',
+                                     'Expert Source'],
+                         'rows': [['Login.gov account with multi-factor sign-in protection',
+                                   'Use an always-reachable email, a 12-plus character password, and a '
+                                   'second MFA method',
+                                   'Login.gov handles sign-in only; the entity record itself lives inside '
+                                   'SAM.gov',
+                                   'FedOpp ([2Bp78kNCVGI @ 00:00:54])'],
+                                  ['Unique Entity ID issued by SAM.gov after validation',
+                                   'One UEI per company that masks the private EIN from public view',
+                                   'Never publish the EIN; share the UEI on capability material and '
+                                   'outreach',
+                                   'Neil McDonnell ([QIEmDXcWhSE @ 00:03:05])'],
+                                  ['CAGE code issued by the Defense Logistics Agency',
+                                   'Assigned by the government after the SAM submission is processed, not '
+                                   'requested',
+                                   'Do not hunt for a CAGE beforehand; finish SAM and watch for emails',
+                                   'Eric Coffie ([wcz-GpTaAp8 @ 00:01:36])'],
+                                  ['Registration purpose selected on the entity setup screen',
+                                   'Select All Awards, because a CAGE code is required for prime contracts',
+                                   'Brokers chasing prime awards must run full entity registration, never '
+                                   'ID-only',
+                                   'Kizzy Parks ([wNMt73DArFc @ 00:01:59])'],
+                                  ['Physical business address listed on the entity record',
+                                   'Mailing can be a PO Box or virtual address, but a physical address is '
+                                   'mandatory',
+                                   'Keep a lease or home evidence ready because the physical field gets '
+                                   'verified',
+                                   'Kizzy Parks ([wNMt73DArFc @ 00:06:21])'],
+                                  ['Taxpayer name and incorporation data matched to IRS records',
+                                   'Enter information exactly as it appears on the IRS-issued document, '
+                                   'typos included',
+                                   'Copy and paste straight from the EIN letter instead of retyping from '
+                                   'memory',
+                                   'Kizzy Parks ([FWfV2m3K4jY @ 00:03:27])'],
+                                  ['SBA set-aside certifications layered on top of registration',
+                                   'No WOSB, SDVOSB, 8(a) or HUBZone certification without SAM, UEI and '
+                                   'CAGE first',
+                                   'Sequence the stack: register, receive the CAGE, then apply free '
+                                   'through SBA',
+                                   'Nick Waters GovCon ([sqfiBzNcTPI @ 00:01:40])']]}},
+              {'section': 2,
+               'heading': 'Exact Street Mechanics, Tools & Numbers: Pushing Through to the CAGE Code',
+               'paragraphs': ['The fast path starts with paperwork, then Login.gov. FedOpp lays out the '
+                              'front end: pull the SAM.gov Entity Registration Checklist and gather the '
+                              'legal business name and physical address exactly as the IRS has them, with '
+                              'no post office box, plus incorporation date and state, Taxpayer '
+                              'Identification Number, bank details, NAICS codes and points of contact, '
+                              'before building a Login.gov account with a reachable email, a password of '
+                              '12 or more characters, and multi-factor authentication [2Bp78kNCVGI @ '
+                              '00:00:28]. Kizzy Parks says any email works, Gmail, Yahoo, Outlook or '
+                              'Hotmail, as long as the operator can access it, because two-factor texts '
+                              'and one-time passcodes gate almost every save [FWfV2m3K4jY @ 00:00:39]. '
+                              'Once inside, she selects Get Started, creates a new entity, confirms a '
+                              'physical address, answers no to an existing CAGE, and enters the year and '
+                              'state of incorporation rather than the state where the owner currently '
+                              'lives. In her 2024 walkthrough the UEI came back roughly three minutes in, '
+                              'at which point the operator can pause or keep pushing straight toward the '
+                              'CAGE [FWfV2m3K4jY @ 00:05:56]. Her other warning is operational: SAM '
+                              'typically sends zero reminder emails for a half-finished registration, so '
+                              'once the process starts, log in at least weekly and use Update Entity to '
+                              'correct misspellings or add an approved DBA [eIFlVzfusWo @ 00:02:23].',
+                              "Core Data and Assertions are where Parks's speed-over-perfection doctrine "
+                              'shows. If there is no business bank account, she enters personal checking '
+                              'and swaps it out once the CAGE is assigned [wNMt73DArFc @ 00:11:52]. She '
+                              'tells everyone to answer yes to accepting credit cards, whether through a '
+                              'merchant account, Stripe or Square, because it is an easy button for the '
+                              'government and often how micro-purchases get paid [wNMt73DArFc @ 00:12:15]. '
+                              'For NAICS, one code is enough to clear the gate. She entered 541611 as a '
+                              'common default and recounts winning an order for Oculus headsets she bought '
+                              'on Amazon and flipped to the Air Force, listed under a computer assembly '
+                              'code she never would have guessed, which is why codes get added after the '
+                              'fact [wNMt73DArFc @ 00:15:33]. With nothing to report on size metrics, she '
+                              'types one dollar in receipts and one employee. Neil McDonnell runs the same '
+                              'playbook: he answers yes to credit cards and yes to Disaster Response '
+                              'everywhere, including Guam, because saying yes keeps the operator on '
+                              'government outreach while the decision to decline is made situation by '
+                              'situation, and he enters zero receipts and one employee rather than '
+                              'pretending to be bigger [QIEmDXcWhSE @ 00:15:08].',
+                              'The back half of the form is reps and certs, and the practitioners answer '
+                              'them tactically. Parks selects yes on bidding for DoD-issued or DoD-funded '
+                              'contracts unless the operator truly wants no Army, Navy or Air Force work '
+                              "[wNMt73DArFc @ 00:22:42]. On foreign end products she picks 'vendor will "
+                              "provide' because Government Publishing Office work often runs on "
+                              'Alibaba-sourced goods from China and buyers will ask for images and origin '
+                              'details [wNMt73DArFc @ 00:20:13]. She also answers yes on GAAP-compliant '
+                              'financial statements even without QuickBooks or Xero, reasoning that the '
+                              'question asks whether you will follow the principles, not whether you have '
+                              'an account. FedOpp requires three mandatory points of contact, Accounts '
+                              'Receivable, Electronic Business and Government Business, and warns that '
+                              'validation emails go to the Government Business contact, so that inbox must '
+                              'be watched [2Bp78kNCVGI @ 00:03:30]. After submission, the CAGE side '
+                              'verifies the physical address. Parks says an email asking for proof of '
+                              'address or company details may arrive within days, must be answered within '
+                              'three business days, and usually carries a phone number worth calling '
+                              '[FWfV2m3K4jY @ 00:23:47]. FedOpp tells operators to allow at least ten '
+                              'business days, check spam, and renew every 365 days.'],
+               'table': {'caption': 'Field-by-field answers and numbers practitioners use to push a '
+                                    'registration through to the CAGE code',
+                         'headers': ['SAM.gov Field or Stage',
+                                     'Practitioner Answer or Number',
+                                     'Street Rationale Given',
+                                     'Expert Source'],
+                         'rows': [['UEI turnaround after entity validation clears',
+                                   'UEI displayed roughly three minutes into her 2024 walkthrough',
+                                   'Pause there or keep going, since the CAGE needs every remaining '
+                                   'section',
+                                   'Kizzy Parks ([FWfV2m3K4jY @ 00:05:56])'],
+                                  ['Accept credit cards question in financial information',
+                                   'Always answer yes, then accept through Stripe, Square or a merchant '
+                                   'account',
+                                   'Credit cards are often how federal buyers pay for micro-purchases',
+                                   'Kizzy Parks ([wNMt73DArFc @ 00:12:34])'],
+                                  ['NAICS entry during the Assertions section',
+                                   'Enter one code such as 541611 and mark it as the primary',
+                                   'Buyers use unexpected codes, so add more once the CAGE is assigned',
+                                   'Kizzy Parks ([wNMt73DArFc @ 00:15:52])'],
+                                  ['Size metrics for a brand-new company with no revenue',
+                                   'Zero dollars in annual receipts and one employee entered on the form',
+                                   'He is just getting started and refuses to look bigger than he is',
+                                   'Neil McDonnell ([QIEmDXcWhSE @ 00:14:55])'],
+                                  ['Disaster Response registration opt-in question',
+                                   'Answer yes everywhere, including remote locations such as Guam',
+                                   'Yes keeps you on agency emails; decline individual jobs case by case '
+                                   'later',
+                                   'Neil McDonnell ([QIEmDXcWhSE @ 00:15:08])'],
+                                  ['DLA follow-up email after the registration is submitted',
+                                   'Respond within three business days and call the phone number listed',
+                                   'The CAGE code is issued once address and company details are confirmed',
+                                   'Kizzy Parks ([FWfV2m3K4jY @ 00:23:47])'],
+                                  ['Wait time after the IRS EIN verification email arrives',
+                                   'Roughly a week or two before an info request or CAGE assignment',
+                                   'Watch the inbox closely for each verification and assignment email',
+                                   'SEMSCIO ([rRWCLLWqrV0 @ 00:00:50])']]},
+               'callout': {'kind': 'INSIDER PRO-TIPS',
+                           'title': 'Registration Moves the Operators Actually Use',
+                           'body': 'Small field-level choices that keep the record moving, make the firm '
+                                   'findable, and stop the CAGE from stalling.',
+                           'items': ['Self-select woman-owned, minority-owned or veteran status on the SAM '
+                                     'form, but know that WOSB and EDWOSB set-asides still require formal '
+                                     'SBA certification [Kizzy Parks — FWfV2m3K4jY @ 00:11:44].',
+                                     'Opt into public search so primes and agencies looking for partners '
+                                     'can find the firm in the Dynamic Small Business Search [Kizzy Parks '
+                                     '— eIFlVzfusWo @ 00:06:08].',
+                                     'Several businesses and joint ventures can share one physical address '
+                                     'as long as each has a lease or you have evidence the address is your '
+                                     'home [Kizzy Parks — eIFlVzfusWo @ 00:05:26].',
+                                     'Confirm the CAGE fast through SAM.gov search by business name or '
+                                     'UEI, or on the DLA CAGE site by company name, CAGE or legacy DUNS '
+                                     'number [Federal Processing Registry — lcWf2_8nWcc @ 00:00:37].']},
+               'sop_steps': [{'step': 1,
+                              'title': 'Stage the documents before logging in',
+                              'action': 'Gather the IRS EIN letter, proof of physical address, bank '
+                                        'routing and account numbers, and one NAICS code.',
+                              'detail': 'Keep the IRS-issued legal business document and a lease or '
+                                        'similar address evidence on hand at all times, because the entity '
+                                        'data is matched against IRS records [Kizzy Parks — eIFlVzfusWo @ '
+                                        '00:03:40].'},
+                             {'step': 2,
+                              'title': 'Create Login.gov and validate the entity',
+                              'action': 'Set up Login.gov with MFA, choose Register Entity and All Awards, '
+                                        'and validate the legal name and address.',
+                              'detail': 'Once the name and address validate, SAM.gov assigns the '
+                                        '12-character Unique Entity ID; if validation fails, open a '
+                                        'Federal Service Desk ticket from that page [FedOpp — 2Bp78kNCVGI '
+                                        '@ 00:02:10].'},
+                             {'step': 3,
+                              'title': 'Push through Core Data, Assertions and reps',
+                              'action': 'Answer no to an existing CAGE, yes to credit cards, DoD and '
+                                        'disaster response, enter one NAICS and minimal size metrics.',
+                              'detail': 'All of this information can be revised after the fact, so the '
+                                        'goal is reaching the CAGE code, not perfection [Kizzy Parks — '
+                                        'wNMt73DArFc @ 00:09:39].'},
+                             {'step': 4,
+                              'title': 'Submit, answer DLA, verify and renew',
+                              'action': 'Respond to the address-verification email within three business '
+                                        'days, confirm the CAGE, and calendar renewal.',
+                              'detail': 'Answer the proof-of-address email and call the listed number if '
+                                        'needed [Kizzy Parks — FWfV2m3K4jY @ 00:23:47], then check status '
+                                        'by UEI or CAGE and renew every 365 days [FedOpp — 2Bp78kNCVGI @ '
+                                        '00:04:47].'}]},
+              {'heading': 'Where Practitioners Disagree & Alternative Playbooks',
+               'paragraphs': ['The loudest split is over the capability statement. Kizzy Parks tells '
+                              'beginners flatly that they do not need one to win any work. She calls it a '
+                              'flyer for outreach, partnering, and marketing, and says to build it after '
+                              'the first win unless you are deliberately chasing the subcontract route '
+                              '[GA5_o6kPhnw @ 00:08:14]. Yet she credits a capability statement for one of '
+                              'her own wins. She emailed it to the point of contact on a USDA forecast, '
+                              'got flown to Maryland for a meeting, and walked away about a month and a '
+                              'half later with a $4 million sole source award [GA5_o6kPhnw @ 00:09:51]. '
+                              'Nick Waters GovCon reverses the order for certified firms. He says to build '
+                              'a very nice capability statement first and use it to pitch large primes '
+                              'that must carry a subcontracting plan, presenting yourself as the certified '
+                              'firm that helps them meet their obligations [sqfiBzNcTPI @ 00:17:09]. '
+                              "Kizzy's one-pager breakdown lands between the two. She treats the document "
+                              'as a resume that gets you in the door for one-on-one capability briefs with '
+                              'small business reps, contracting officers, and program managers. You email '
+                              'it as a PDF before the call, but it is never the thing that wins the job '
+                              '[K_zNUytFOQo @ 00:02:22]. The operator read: if your first lane is '
+                              'open-market bidding, skip it for now. If your first lane is teaming or '
+                              'capability briefs, you need it to get in.',
+                              'The second fault line is how fast to push through SAM.gov. Kizzy Parks runs '
+                              "a speed-first playbook to reach the CAGE code. She chooses 'vendor will "
+                              "provide' on foreign end products, enters one dollar of receipts, and "
+                              'selects yes on GAAP-compliant financials even with no QuickBooks account. '
+                              "Her reasoning is that every field can be revised later, and 'it's not about "
+                              "being perfect it's taking action' [wNMt73DArFc @ 00:10:02]. Neil McDonnell "
+                              "calls clicking yes on everything 'incredibly irresponsible' and insists on "
+                              'taking two seconds to read the FAR provision behind each representation. He '
+                              'also argues that an owner should be a salesperson who hires FAR experts '
+                              'later, not a FAR expert [QIEmDXcWhSE @ 00:13:56]. The same two operators '
+                              'split on the physical address. Kizzy says it has to be a place where '
+                              'someone can physically meet you in an office setting, whether that is a '
+                              'house, apartment, condo, or virtual working space with an office. If it is '
+                              'not, expect an email asking for more information or a flat rejection '
+                              '[wNMt73DArFc @ 00:27:14]. Neil is deliberately testing a virtual physical '
+                              'address on his brand-new company. He concedes it may fail for HUBZone, but '
+                              "says that for general registration 'physical address really who cares it's "
+                              "a virtual world' [QIEmDXcWhSE @ 00:09:29]. Choose your approach knowing "
+                              'which of these risks you are taking on.',
+                              'The numbers collide on whether certifications are worth it. Squared Compass '
+                              'pulls 2024 data showing government-wide HUBZone spend at 0.44% against a 3% '
+                              'goal, with DoD at 0.38% and HUD at 0.24%. Its conclusion is that for many '
+                              'companies the juice is not worth the squeeze, unless HUBZone is the only '
+                              'certification they can get [oSSAuniLuDI @ 00:02:50]. Diamond Hunter '
+                              'Enterprises, which runs a woman-owned firm with more than 420 employees, '
+                              "says the opposite. She calls 8(a) and HUBZone 'where the money resides' and "
+                              'says 8(a) sole source runs up to 4.5 million in services and 7 million in '
+                              'manufacturing. She adds that the power of these certifications has not '
+                              'diminished, despite what others say on YouTube [-0giDdnv0RA @ 00:04:00]. '
+                              'GovKidMethod says he cannot recommend 8(a) enough. He also highly '
+                              'recommends HUBZone for its 10% price evaluation preference in full and open '
+                              'competition [LnPiGkUTs2E @ 00:17:31]. Neil McDonnell lands in the middle. '
+                              'HUBZone is his favorite program because it targets a community rather than '
+                              "an individual owner. Still, he tells small firms the designations are 'just "
+                              "tags' and not to dwell on them, and to compete on core competency instead "
+                              '[9sogImn1jJQ @ 00:08:42]. Even the 8(a) sole source ceiling differs, with '
+                              "GovKidMethod quoting up to 4 million per contract against Diamond's 4.5 "
+                              'million for services.'],
+               'table': {'caption': 'Contested playbooks on registration and credentials, side by side',
+                         'headers': ['Contested Question', 'Playbook A', 'Playbook B', 'Expert Source'],
+                         'rows': [['When to build the capability statement',
+                                   'Not required to win any contract; create it after your first win '
+                                   'unless you are chasing subcontracts.',
+                                   'Build a strong one early and pitch large primes that must fill '
+                                   'subcontracting plan goals.',
+                                   'Kizzy Parks ([GA5_o6kPhnw @ 00:08:14]); Nick Waters GovCon '
+                                   '([sqfiBzNcTPI @ 00:17:09])'],
+                                  ['How fast to answer the SAM.gov questions',
+                                   'Push through with safe defaults to reach the CAGE code, then revise '
+                                   'every answer later.',
+                                   'Read every representation and the FAR provision behind it; do not '
+                                   'guess on certifications.',
+                                   'Kizzy Parks ([wNMt73DArFc @ 00:10:02]); Neil McDonnell ([QIEmDXcWhSE @ '
+                                   '00:13:56]); FedOpp ([2Bp78kNCVGI @ 00:03:30])'],
+                                  ['Virtual versus true physical address',
+                                   'The address must be a place someone can physically meet you, or expect '
+                                   'more questions or a rejection.',
+                                   'Testing a virtual physical address for general registration; it '
+                                   'matters mainly for a HUBZone certification.',
+                                   'Kizzy Parks ([wNMt73DArFc @ 00:27:14]); Neil McDonnell ([QIEmDXcWhSE @ '
+                                   '00:09:29])'],
+                                  ['Whether HUBZone certification is worth chasing',
+                                   'Government-wide HUBZone spend hit only 0.44%, so for many firms the '
+                                   'juice is not worth the squeeze.',
+                                   'The 10% price evaluation preference and exclusive set-asides make it '
+                                   'highly recommended.',
+                                   'Squared Compass ([oSSAuniLuDI @ 00:02:50]); GovKidMethod ([LnPiGkUTs2E '
+                                   '@ 00:17:31])'],
+                                  ['Paying an outside firm for registration help',
+                                   'The CAGE code is assigned at no charge after you submit, so never pay '
+                                   'a private website.',
+                                   'A paid service offers entity validation, fast-track registration, and '
+                                   'ongoing renewal support.',
+                                   'FedOpp ([2Bp78kNCVGI @ 00:04:20]); Federal Processing Registry '
+                                   '([lcWf2_8nWcc @ 00:01:34])'],
+                                  ["Dollar trigger for a large prime's subcontracting plan",
+                                   'Large primes winning over roughly 700,000 must carry a small business '
+                                   'plan with set goals.',
+                                   'The threshold is 900,000 outside construction and $2 million for '
+                                   'construction contracts.',
+                                   'Neil McDonnell ([9sogImn1jJQ @ 00:09:00]); Nick Waters GovCon '
+                                   '([sqfiBzNcTPI @ 00:15:35])'],
+                                  ['The Disaster Response checkbox in SAM.gov',
+                                   'Always say yes so agencies contact you, then decline jobs case by case '
+                                   'later.',
+                                   'Click no when disaster response work is not an area you actually want '
+                                   'to pursue.',
+                                   'Neil McDonnell ([QIEmDXcWhSE @ 00:15:08]); Kizzy Parks ([FWfV2m3K4jY @ '
+                                   '00:15:07])']]}},
+              {'heading': 'Firsthand Failure Modes, Traps & Economics Checks',
+               'paragraphs': ['The first losses happen inside the registration itself, and most are '
+                              'self-inflicted typos. The taxpayer name has to match the IRS record '
+                              'exactly, and Kizzy Parks had her one-time passcode verification fail '
+                              'because she typed a period after her middle initial. She also had a date '
+                              'rejected for not using double digits [wNMt73DArFc @ 00:07:15]. On another '
+                              "registration she hit the same wall by adding a period after 'Dr' "
+                              '[FWfV2m3K4jY @ 00:09:42]. The bigger trap is silence. Kizzy reports that '
+                              'you will typically get zero emails telling you it is time to continue '
+                              'entity validation, so she logs in at least weekly once the process starts '
+                              '[eIFlVzfusWo @ 00:02:23]. After you submit, the CAGE desk checks your '
+                              'physical address and may ask questions about your company. She warns that '
+                              'you must answer that email within three business days and should call the '
+                              'number at the bottom rather than freeze [FWfV2m3K4jY @ 00:23:28]. Speed '
+                              'varies a lot by step. Kizzy pulled a UEI in about three minutes, but the '
+                              'CAGE code is only issued after that address verification clears. The '
+                              'economics are simple: a stalled CAGE code means you cannot bid as a prime. '
+                              'Put a weekly login on the calendar, and keep the IRS letter and the lease '
+                              'or proof of residence on hand before you start.',
+                              'Security failures cost real money. Kizzy Parks explains that SAM.gov holds '
+                              'the bank account every prime payment goes to. People have created dummy '
+                              "accounts to get in and change the banking details, and then 'poof your "
+                              "money is diverted to them.' That is why she is cautious about letting a "
+                              'third party register for you [wNMt73DArFc @ 00:03:30]. Neil McDonnell flags '
+                              'a leak beginners create themselves: posting the EIN on a website because no '
+                              'one told them not to. He treats the EIN like a Social Security number for '
+                              'the company and notes the UEI exists precisely to mask it [QIEmDXcWhSE @ '
+                              '00:02:33]. Maintenance is the slow failure. FedOpp says to renew every 365 '
+                              'days and update the record whenever your address, bank, or contacts change. '
+                              'It also says never to request a second UEI, and warns that an expired '
+                              'registration can block awards [2Bp78kNCVGI @ 00:05:15]. When a CAGE code '
+                              'will not show up in a lookup, Federal Processing Registry lists the usual '
+                              'causes: an expired registration, incorrect data on file, or a submission '
+                              'that was never completed. The fix is to update the SAM.gov profile or '
+                              'contact DLA support [lcWf2_8nWcc @ 00:01:15]. Treat the SAM profile like a '
+                              'bank login, because that is effectively what it is.',
+                              'Certification traps hit after approval as often as before. GovKidMethod '
+                              'warns that going over the three-year average size standard on your primary '
+                              'NAICS code costs you your small business status. In 8(a), it can get you '
+                              'kicked out of the program for growing too quickly, so he tells winners to '
+                              'spread contracts across different NAICS codes [LnPiGkUTs2E @ 00:22:47]. '
+                              'HUBZone status is fragile too. Firms must notify the SBA of material '
+                              'changes, such as a new office or falling below the 35% employee residency '
+                              'minimum, and the SBA may visit unannounced to check [LnPiGkUTs2E @ '
+                              '00:20:45]. Nick Waters GovCon describes male owners who list their wife as '
+                              'majority owner while she works a 9-to-5, and says the SBA is getting very '
+                              'good at catching it. The woman must own at least 51%, run the day-to-day '
+                              'operations, typically be the highest paid, and show 40 hours a week on '
+                              'paper [sqfiBzNcTPI @ 00:08:56]. Kizzy Parks adds a marketing failure from '
+                              'her own career. A CDC small business rep praised her patriotic, freshly '
+                              'branded capability statement as pretty, then tore it apart because it had '
+                              'no NAICS codes. Pride turned into embarrassment in the middle of an '
+                              'in-person meeting [K_zNUytFOQo @ 00:08:54]. Content beats design every '
+                              'time.'],
+               'table': {'caption': 'Firsthand failure modes with the fix each practitioner teaches',
+                         'headers': ['Failure Mode',
+                                     'What Happened Or Was Warned',
+                                     'Operator Fix Taught',
+                                     'Expert Source'],
+                         'rows': [['Taxpayer name mismatch kills verification',
+                                   'A period after a middle initial broke the passcode verification, and a '
+                                   'single-digit date was rejected.',
+                                   'Copy the name exactly as it appears on the IRS-issued form and use '
+                                   'double-digit dates.',
+                                   'Kizzy Parks ([wNMt73DArFc @ 00:07:15])'],
+                                  ['Silent stall during entity validation',
+                                   'You typically receive zero emails telling you it is time to continue '
+                                   'the process.',
+                                   'Log in to SAM.gov at least weekly once registration starts and click '
+                                   'update entity.',
+                                   'Kizzy Parks ([eIFlVzfusWo @ 00:02:23])'],
+                                  ['Missed address verification request',
+                                   'The CAGE team emails asking for proof of address and may question your '
+                                   'company.',
+                                   'Respond within three business days and call the phone number at the '
+                                   'bottom.',
+                                   'Kizzy Parks ([FWfV2m3K4jY @ 00:23:28])'],
+                                  ['Expired or incomplete SAM registration',
+                                   'An expired registration can block awards, and the CAGE code will not '
+                                   'appear in lookup.',
+                                   'Renew every 365 days, update bank and contacts, and never request a '
+                                   'second UEI.',
+                                   'FedOpp ([2Bp78kNCVGI @ 00:05:15]); Federal Processing Registry '
+                                   '([Xy8v4C-FfTc @ 00:00:49])'],
+                                  ['Growing past the size standard',
+                                   'Exceeding the three-year average on your primary NAICS blows small '
+                                   'status and can get you kicked out of 8(a).',
+                                   'Win contracts under different NAICS codes to protect the primary '
+                                   "code's average.",
+                                   'GovKidMethod ([LnPiGkUTs2E @ 00:22:47])'],
+                                  ['Putting a spouse on paper as the woman owner',
+                                   'Male owners listing a wife who works a 9-to-5 elsewhere are getting '
+                                   'caught by the SBA.',
+                                   'The woman must own at least 51%, run daily operations, and show 40 '
+                                   'hours weekly on paper.',
+                                   'Nick Waters GovCon ([sqfiBzNcTPI @ 00:08:56])'],
+                                  ['Active exclusion or termination for cause',
+                                   'An active exclusion means you cannot bid, and termination for cause '
+                                   'causes lasting contractor issues.',
+                                   'Answer every debarment, conviction, and delinquent tax question '
+                                   'honestly for your actual situation.',
+                                   'Kizzy Parks ([FWfV2m3K4jY @ 00:16:31])']]},
+               'callout': {'kind': 'OPERATOR GATE',
+                           'title': 'Clear these four checkpoints before you treat yourself as bid-ready',
+                           'body': 'Each checkpoint comes from a mistake or warning these operators '
+                                   'reported firsthand. Clear all four before you start chasing awards.',
+                           'items': ['Match the taxpayer name, start date, and state of incorporation to '
+                                     'the IRS-issued document character for character before you open '
+                                     "SAM.gov, because a stray period broke Kizzy's passcode verification "
+                                     '[Kizzy Parks — wNMt73DArFc @ 00:07:15].',
+                                     'Control who can touch the registration: it holds the bank account '
+                                     'every prime payment goes to, and anyone you list as a point of '
+                                     'contact can obtain access to all of it [Kizzy Parks — wNMt73DArFc @ '
+                                     '00:25:07].',
+                                     'Never pay a private website for the CAGE code; it is assigned at no '
+                                     'charge after you submit, and the registration must be renewed every '
+                                     '365 days [FedOpp — 2Bp78kNCVGI @ 00:04:20].',
+                                     'Before you chase HUBZone, confirm your office and 35% of employee '
+                                     'home addresses fall inside a HUBZone [Nick Waters GovCon — '
+                                     'sqfiBzNcTPI @ 00:07:25], and weigh it against government-wide '
+                                     'HUBZone spend of 0.44% [Squared Compass — oSSAuniLuDI @ '
+                                     '00:02:28].']}}],
+ 'pull_quote': "'Between the lack of solicitations targeted at and awarded to HUBZone companies as well as "
+               "the requirements to obtain and maintain HUBZone status, the juice just isn't worth the "
+               "squeeze.' Squared Compass (oSSAuniLuDI @ 00:02:50).",
+ 'diagram_id': 'diag-04',
+ 'action_checklist': ['Before logging in, have your IRS-issued EIN document, business or personal checking '
+                      'details, a physical address tied to the business, and at least one NAICS code ready '
+                      '[Kizzy Parks — wNMt73DArFc @ 00:00:40].',
+                      'Choose Register Entity with the All Awards purpose, not a Unique Entity ID only, '
+                      'because an ID alone is not enough to bid as a prime [FedOpp — 2Bp78kNCVGI @ '
+                      '00:01:48].',
+                      'Select yes to accepting credit cards, since the government often pays for micro '
+                      'purchases that way and you can set up Stripe, Square, or a merchant account '
+                      'afterward [Kizzy Parks — wNMt73DArFc @ 00:12:15].',
+                      'After submitting, watch for the CAGE address verification email and respond within '
+                      'three business days, calling the number at the bottom if needed [Kizzy Parks — '
+                      'FWfV2m3K4jY @ 00:23:47].',
+                      'Confirm your CAGE code by searching your business name or UEI on SAM.gov and '
+                      'opening the entity snapshot to check the status and expiration date [Federal '
+                      'Processing Registry — lcWf2_8nWcc @ 00:00:37].',
+                      'Look up the size standard tied to your primary NAICS code and keep your three-year '
+                      'average receipts under it so you do not lose small status [GovKidMethod — '
+                      'LnPiGkUTs2E @ 00:22:30].'],
+ 'statutory_citations': [{'title': 'Kizzy Parks — Sam.Gov Registration 2023 | Getting To Cage Code '
+                                   'Successfully | Part 2 [00:27:14]',
+                          'url': 'https://www.youtube.com/watch?v=wNMt73DArFc&t=1634s',
+                          'relevance': 'Primary practitioner testimony on physical address verification, '
+                                       'rejection risk, and the submission-to-CAGE handoff.'},
+                         {'title': 'FedOpp — How to Register on SAM.gov: Login.gov, UEI and CAGE (Step by '
+                                   'Step) | FedOpp [00:05:15]',
+                          'url': 'https://www.youtube.com/watch?v=2Bp78kNCVGI&t=315s',
+                          'relevance': 'Primary practitioner testimony on 365-day renewal, expired '
+                                       'registrations blocking awards, and never requesting a second UEI.'},
+                         {'title': 'Squared Compass — Federal Contracting Strategy: HUBZone vs Every Other '
+                                   'SBA Cert [00:02:50]',
+                          'url': 'https://www.youtube.com/watch?v=oSSAuniLuDI&t=170s',
+                          'relevance': 'Primary practitioner testimony on 2024 HUBZone spend data and the '
+                                       'case against chasing HUBZone certification.'},
+                         {'title': 'Nick Waters GovCon — Government Contracting Certifications for '
+                                   'Beginners: WOSB, SDVOSB, 8(a) & HUBZone [00:08:56]',
+                          'url': 'https://www.youtube.com/watch?v=sqfiBzNcTPI&t=536s',
+                          'relevance': 'Primary practitioner testimony on the SBA catching front ownership '
+                                       'and on the woman-owned control requirements.'}],
+ 'source_citations': [{'source_type': 'video_pro_tip',
+                       'video_id': 'rRWCLLWqrV0',
+                       'title': 'Sam.gov registration: CAGE & NCAGE Codes - Colleen Spiegel',
+                       'channel': 'SEMSCIO',
+                       'author': 'SEMSCIO',
+                       'text': "Usually there's some time, perhaps a week or two after that email, and "
+                               "you'll receive an email either asking for additional information or with "
+                               'the assignment of the cage code.',
+                       'tip': "Usually there's some time, perhaps a week or two after that email, and "
+                              "you'll receive an email either asking for additional information or with "
+                              'the assignment of the cage code.',
+                       'timestamp': 50,
+                       'timestamp_seconds': 50,
+                       'timestamp_label': '[00:00:50]',
+                       'url': 'https://www.youtube.com/watch?v=rRWCLLWqrV0&t=50s',
+                       'markdown': '[00:00:50](https://www.youtube.com/watch?v=rRWCLLWqrV0&t=50s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q2.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'wNMt73DArFc',
+                       'title': 'Sam.Gov Registration 2023 | Getting To Cage Code Successfully | Part 2',
+                       'channel': 'Kizzy Parks',
+                       'author': 'Kizzy Parks',
+                       'text': 'If it is not a place that somebody can physically go and meet with you in '
+                               "an office environment, you're going to get an email and they're going to "
+                               "ask for more information or they're just going to flat out reject it.",
+                       'tip': 'If it is not a place that somebody can physically go and meet with you in '
+                              "an office environment, you're going to get an email and they're going to "
+                              "ask for more information or they're just going to flat out reject it.",
+                       'timestamp': 1634,
+                       'timestamp_seconds': 1634,
+                       'timestamp_label': '[00:27:14]',
+                       'url': 'https://www.youtube.com/watch?v=wNMt73DArFc&t=1634s',
+                       'markdown': '[00:27:14](https://www.youtube.com/watch?v=wNMt73DArFc&t=1634s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q2.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'wNMt73DArFc',
+                       'title': 'Sam.Gov Registration 2023 | Getting To Cage Code Successfully | Part 2',
+                       'channel': 'Kizzy Parks',
+                       'author': 'Kizzy Parks',
+                       'text': 'This portal holds your banking information, so if someone is able to get '
+                               'in here they can change the banking information and your money is diverted '
+                               'to them.',
+                       'tip': 'This portal holds your banking information, so if someone is able to get in '
+                              'here they can change the banking information and your money is diverted to '
+                              'them.',
+                       'timestamp': 210,
+                       'timestamp_seconds': 210,
+                       'timestamp_label': '[00:03:30]',
+                       'url': 'https://www.youtube.com/watch?v=wNMt73DArFc&t=210s',
+                       'markdown': '[00:03:30](https://www.youtube.com/watch?v=wNMt73DArFc&t=210s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q2.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'eIFlVzfusWo',
+                       'title': 'Sam.Gov Registration Success: Get UEI and Cage Code Successfully | Part 2 '
+                                '(Updated)',
+                       'channel': 'Kizzy Parks',
+                       'author': 'Kizzy Parks',
+                       'text': "Typically you will receive zero emails that it's time for you to do this, "
+                               "so it's really important that once you start this entire process to log in "
+                               'at least weekly.',
+                       'tip': "Typically you will receive zero emails that it's time for you to do this, "
+                              "so it's really important that once you start this entire process to log in "
+                              'at least weekly.',
+                       'timestamp': 143,
+                       'timestamp_seconds': 143,
+                       'timestamp_label': '[00:02:23]',
+                       'url': 'https://www.youtube.com/watch?v=eIFlVzfusWo&t=143s',
+                       'markdown': '[00:02:23](https://www.youtube.com/watch?v=eIFlVzfusWo&t=143s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q2.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'GA5_o6kPhnw',
+                       'title': 'How To Write A Winning Capability Statement For Government Contracting',
+                       'channel': 'Kizzy Parks',
+                       'author': 'Kizzy Parks',
+                       'text': "What's beautiful is you do not need one of these to win a contract; they "
+                               'are not required at all, this is a nice to have and I suggest that you '
+                               'create one after your first win.',
+                       'tip': "What's beautiful is you do not need one of these to win a contract; they "
+                              'are not required at all, this is a nice to have and I suggest that you '
+                              'create one after your first win.',
+                       'timestamp': 494,
+                       'timestamp_seconds': 494,
+                       'timestamp_label': '[00:08:14]',
+                       'url': 'https://www.youtube.com/watch?v=GA5_o6kPhnw&t=494s',
+                       'markdown': '[00:08:14](https://www.youtube.com/watch?v=GA5_o6kPhnw&t=494s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q2.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'QIEmDXcWhSE',
+                       'title': 'Journey to $1M as a New GovCon - Day 23 (SAM.gov Pre-Requisites and '
+                                'numbers - TIN/SSN/EIN/UEI/CAGE)',
+                       'channel': 'Neil McDonnell',
+                       'author': 'Neil McDonnell',
+                       'text': 'Sometimes people do this thing that is incredibly irresponsible, which is '
+                               'they just go in and they go yes yes yes or whatever the easy answer is; '
+                               'take two seconds to read this.',
+                       'tip': 'Sometimes people do this thing that is incredibly irresponsible, which is '
+                              'they just go in and they go yes yes yes or whatever the easy answer is; '
+                              'take two seconds to read this.',
+                       'timestamp': 836,
+                       'timestamp_seconds': 836,
+                       'timestamp_label': '[00:13:56]',
+                       'url': 'https://www.youtube.com/watch?v=QIEmDXcWhSE&t=836s',
+                       'markdown': '[00:13:56](https://www.youtube.com/watch?v=QIEmDXcWhSE&t=836s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q2.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'wcz-GpTaAp8',
+                       'title': 'What is a CAGE Code | SAM Registration Help Desk | Start Government '
+                                'Contracting',
+                       'channel': 'Eric Coffie',
+                       'author': 'Eric Coffie',
+                       'text': 'The important thing is you do not need a cage code prior to registration; '
+                               'once your entity information is submitted for processing the government '
+                               'will assign you a cage code.',
+                       'tip': 'The important thing is you do not need a cage code prior to registration; '
+                              'once your entity information is submitted for processing the government '
+                              'will assign you a cage code.',
+                       'timestamp': 96,
+                       'timestamp_seconds': 96,
+                       'timestamp_label': '[00:01:36]',
+                       'url': 'https://www.youtube.com/watch?v=wcz-GpTaAp8&t=96s',
+                       'markdown': '[00:01:36](https://www.youtube.com/watch?v=wcz-GpTaAp8&t=96s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q2.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'K_zNUytFOQo',
+                       'title': 'How To Write A Winning Capability Statement',
+                       'channel': 'Kizzy Parks',
+                       'author': 'Kizzy Parks',
+                       'text': 'She leans in and says this is a really pretty capability statement, but '
+                               'where are your NAICS codes, and she started ripping it apart.',
+                       'tip': 'She leans in and says this is a really pretty capability statement, but '
+                              'where are your NAICS codes, and she started ripping it apart.',
+                       'timestamp': 552,
+                       'timestamp_seconds': 552,
+                       'timestamp_label': '[00:09:12]',
+                       'url': 'https://www.youtube.com/watch?v=K_zNUytFOQo&t=552s',
+                       'markdown': '[00:09:12](https://www.youtube.com/watch?v=K_zNUytFOQo&t=552s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q2.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'FWfV2m3K4jY',
+                       'title': 'How To Register In Sam.Gov 2024 (Step-by-Step Guide)',
+                       'channel': 'Kizzy Parks',
+                       'author': 'Kizzy Parks',
+                       'text': 'You must respond to that email in three business days, and there typically '
+                               "is a phone number at the bottom of that email, so don't hesitate to call "
+                               'them.',
+                       'tip': 'You must respond to that email in three business days, and there typically '
+                              "is a phone number at the bottom of that email, so don't hesitate to call "
+                              'them.',
+                       'timestamp': 1427,
+                       'timestamp_seconds': 1427,
+                       'timestamp_label': '[00:23:47]',
+                       'url': 'https://www.youtube.com/watch?v=FWfV2m3K4jY&t=1427s',
+                       'markdown': '[00:23:47](https://www.youtube.com/watch?v=FWfV2m3K4jY&t=1427s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q2.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': '2Bp78kNCVGI',
+                       'title': 'How to Register on SAM.gov: Login.gov, UEI and CAGE (Step by Step) | '
+                                'FedOpp',
+                       'channel': 'FedOpp',
+                       'author': 'FedOpp',
+                       'text': 'For U.S. entities, it is assigned after you submit, at no charge, so never '
+                               'pay a private website.',
+                       'tip': 'For U.S. entities, it is assigned after you submit, at no charge, so never '
+                              'pay a private website.',
+                       'timestamp': 260,
+                       'timestamp_seconds': 260,
+                       'timestamp_label': '[00:04:20]',
+                       'url': 'https://www.youtube.com/watch?v=2Bp78kNCVGI&t=260s',
+                       'markdown': '[00:04:20](https://www.youtube.com/watch?v=2Bp78kNCVGI&t=260s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q2.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'oSSAuniLuDI',
+                       'title': 'Federal Contracting Strategy: HUBZone vs Every Other SBA Cert',
+                       'channel': 'Squared Compass',
+                       'author': 'Squared Compass',
+                       'text': 'Between the lack of solicitations targeted at and awarded to HUBZone '
+                               'companies as well as the requirements to obtain and maintain HUBZone '
+                               "status, the juice just isn't worth the squeeze.",
+                       'tip': 'Between the lack of solicitations targeted at and awarded to HUBZone '
+                              'companies as well as the requirements to obtain and maintain HUBZone '
+                              "status, the juice just isn't worth the squeeze.",
+                       'timestamp': 170,
+                       'timestamp_seconds': 170,
+                       'timestamp_label': '[00:02:50]',
+                       'url': 'https://www.youtube.com/watch?v=oSSAuniLuDI&t=170s',
+                       'markdown': '[00:02:50](https://www.youtube.com/watch?v=oSSAuniLuDI&t=170s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q2.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': '-0giDdnv0RA',
+                       'title': 'HUBZone Certification Program 2026 | 8a, SBA Small Business Set-Asides '
+                                'Explained',
+                       'channel': 'Diamond Hunter Enterprises',
+                       'author': 'Diamond Hunter Enterprises',
+                       'text': 'The more you engage with contracting officers, the more opportunities you '
+                               'will unlock; despite what others say on YouTube, the power of these two '
+                               'certifications has not diminished.',
+                       'tip': 'The more you engage with contracting officers, the more opportunities you '
+                              'will unlock; despite what others say on YouTube, the power of these two '
+                              'certifications has not diminished.',
+                       'timestamp': 479,
+                       'timestamp_seconds': 479,
+                       'timestamp_label': '[00:07:59]',
+                       'url': 'https://www.youtube.com/watch?v=-0giDdnv0RA&t=479s',
+                       'markdown': '[00:07:59](https://www.youtube.com/watch?v=-0giDdnv0RA&t=479s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q2.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'sqfiBzNcTPI',
+                       'title': 'Government Contracting Certifications for Beginners: WOSB, SDVOSB, 8(a) & '
+                                'HUBZone',
+                       'channel': 'Nick Waters GovCon',
+                       'author': 'Nick Waters GovCon',
+                       'text': 'All my male owners out there who think you can just sign up your wife as '
+                               "majority owner and then have her work a 9-to-5, it's usually not going to "
+                               'work; the SBA is getting very good at snipping that out.',
+                       'tip': 'All my male owners out there who think you can just sign up your wife as '
+                              "majority owner and then have her work a 9-to-5, it's usually not going to "
+                              'work; the SBA is getting very good at snipping that out.',
+                       'timestamp': 536,
+                       'timestamp_seconds': 536,
+                       'timestamp_label': '[00:08:56]',
+                       'url': 'https://www.youtube.com/watch?v=sqfiBzNcTPI&t=536s',
+                       'markdown': '[00:08:56](https://www.youtube.com/watch?v=sqfiBzNcTPI&t=536s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q2.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': '9sogImn1jJQ',
+                       'title': 'Intro to the 4 Small Business Programs in Federal Contracting | WOSB, '
+                                'SDVOSB, 8(a), HUBZone',
+                       'channel': 'Neil McDonnell',
+                       'author': 'Neil McDonnell',
+                       'text': "So, they're good programs, but they're just tags; don't overly dwell.",
+                       'tip': "So, they're good programs, but they're just tags; don't overly dwell.",
+                       'timestamp': 522,
+                       'timestamp_seconds': 522,
+                       'timestamp_label': '[00:08:42]',
+                       'url': 'https://www.youtube.com/watch?v=9sogImn1jJQ&t=522s',
+                       'markdown': '[00:08:42](https://www.youtube.com/watch?v=9sogImn1jJQ&t=522s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q2.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'LnPiGkUTs2E',
+                       'title': 'Government Contracts Set-Asides : 8(a), WOSB, EDWOSB, VOSB, SDVOSB, '
+                                'HUBZone Certification Process',
+                       'channel': 'GovKidMethod',
+                       'author': 'GovKidMethod',
+                       'text': "If you're in the 8(a) program and you exceed it, you can actually get "
+                               'yourself kicked out of the 8(a) program for growing too quickly.',
+                       'tip': "If you're in the 8(a) program and you exceed it, you can actually get "
+                              'yourself kicked out of the 8(a) program for growing too quickly.',
+                       'timestamp': 1367,
+                       'timestamp_seconds': 1367,
+                       'timestamp_label': '[00:22:47]',
+                       'url': 'https://www.youtube.com/watch?v=LnPiGkUTs2E&t=1367s',
+                       'markdown': '[00:22:47](https://www.youtube.com/watch?v=LnPiGkUTs2E&t=1367s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q2.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'lcWf2_8nWcc',
+                       'title': 'How to Find and Look Up Your CAGE Code Quickly Step by Step Guide for '
+                                '2025',
+                       'channel': 'Federal Processing Registry',
+                       'author': 'Federal Processing Registry',
+                       'text': 'Your SAM registration has expired, you have incorrect data on file, or '
+                               "you've never completed your SAM submission; in those cases, you'll need to "
+                               'update your SAM.gov profile or contact DLA support.',
+                       'tip': 'Your SAM registration has expired, you have incorrect data on file, or '
+                              "you've never completed your SAM submission; in those cases, you'll need to "
+                              'update your SAM.gov profile or contact DLA support.',
+                       'timestamp': 75,
+                       'timestamp_seconds': 75,
+                       'timestamp_label': '[00:01:15]',
+                       'url': 'https://www.youtube.com/watch?v=lcWf2_8nWcc&t=75s',
+                       'markdown': '[00:01:15](https://www.youtube.com/watch?v=lcWf2_8nWcc&t=75s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q2.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'Xy8v4C-FfTc',
+                       'title': 'How to Find Your CAGE Code Fast',
+                       'channel': 'Federal Processing Registry',
+                       'author': 'Federal Processing Registry',
+                       'text': 'If your cage code does not show up, your SAM profile may be inactive or '
+                               'incomplete; common issues include mismatched entity details, pending '
+                               'validation, or expired registration.',
+                       'tip': 'If your cage code does not show up, your SAM profile may be inactive or '
+                              'incomplete; common issues include mismatched entity details, pending '
+                              'validation, or expired registration.',
+                       'timestamp': 49,
+                       'timestamp_seconds': 49,
+                       'timestamp_label': '[00:00:49]',
+                       'url': 'https://www.youtube.com/watch?v=Xy8v4C-FfTc&t=49s',
+                       'markdown': '[00:00:49](https://www.youtube.com/watch?v=Xy8v4C-FfTc&t=49s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q2.'}]}

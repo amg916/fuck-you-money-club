@@ -8,49 +8,49 @@
       "RIGHTS"
     ],
     "deck": [
-      "VERIFY NET REVENUE DECIMAL. TRACK PERMITS.",
-      "AVOID WORKING-INTEREST LIABILITY."
+      "192 PRACTITIONERS STRESS-TEST DEEDS, LEASES, DECIMALS AND EVERY OFFER PER NET ROYALTY ACRE",
+      "THEY BUILD TRACT INVENTORIES, TITLE CHAINS, DECLINE-CURVE VALUATIONS AND LEGACIES FOR HEIRS"
     ],
-    "lead": "Acquiring & Flipping Non-Cost-Bearing Mineral & Royalty Interests Ahead of Horizontal Drilling Permits and Forced-Pooling Orders",
-    "summary": "Calculate exact Net Mineral Acres and division-order decimals, cure severed chains of title, and sell de-risked packages to institutional funds.",
+    "lead": "Learn what you actually own beneath the surface, how to prove it on a separate mineral chain of title, and how to reconcile your decimal and price every offer the way working landmen, buyers and royalty owners do.",
+    "summary": "All 12 chapters synthesize 192 verbatim YouTube practitioner testimonies, from mineral estates and leases to division orders, title, shale drilling, valuation, taxes, regulators and market news. Every claim, metric, pro-tip and quote carries timestamped inline attribution to the practitioner and video it came from.",
     "chapters": [
-      "Business model & revenue boundaries",
-      "Decision-makers & payment rails",
-      "Unit economics & margin waterfall",
-      "Startup capital & lean stack",
-      "Beginner traps & failure modes",
-      "Sourcing & first deals",
-      "End-to-end operating blueprint",
-      "Public records, APIs & tooling",
-      "Contracts, statutes & scripts",
-      "Automation & distribution loops",
-      "Small-team pod & exit valuation",
-      "First 30-day launch sprint"
+      "What You Actually Own: Mineral Estates, Royalties and Their Carve-Outs",
+      "Locating, Researching and Inventorying Your Minerals",
+      "The Oil and Gas Lease, Pooling and Owner Bargaining Power",
+      "Working the Numbers: WI and NRI Calculations",
+      "Division Orders and the Decimal Interest on Your Check",
+      "Landmen and Title: From Courthouse to Curative",
+      "How Wells Get Drilled: Horizontal Technology and the Major Shale Plays",
+      "Decline Curves, Well Performance and Mineral Valuation",
+      "Buying and Selling Mineral Rights",
+      "Taxes, Working Interests and Passing Minerals to Heirs",
+      "Regulators, Hearings and Permits",
+      "Mineral Market News, Capital and Emerging Opportunities"
     ],
     "flow": [
       [
-        "SOURCE",
-        "Mine high-intent deal triggers"
+        "INVENTORY",
+        "Pull the legal description from the source deed, plot it on a free state GIS, and log every tract in one spreadsheet with interest type, net acres, lease status and provenance."
       ],
       [
-        "UNDERWRITE",
-        "Screen margin, float & rules"
+        "TITLE",
+        "Run a dedicated mineral title search on its separate chain from the surface, hiring a landman at about $600 a day or a limited search at about $3,000 when needed."
       ],
       [
-        "ENGAGE",
-        "Execute mandate or pre-sell"
+        "VERIFY ACTIVITY",
+        "Before trusting an alert or a nearby pad, pull the permit and plat and confirm the first take point and lateral footage fall inside your tract."
       ],
       [
-        "DELIVER",
-        "Run standardized SOP & ledger"
+        "LEASE",
+        "Negotiate before signing, confirm which rights the document affects and who the contact represents, and favor the highest royalty rate over the bonus."
       ],
       [
-        "VERIFY",
-        "Audit quality, scrubs & statutes"
+        "RECONCILE DECIMALS",
+        "Check that every owner's decimal sums back to the lease royalty, pull the deeds when it misses, and ask the payer which records support its division order."
       ],
       [
-        "COMPOUND",
-        "Reconcile cash & scale pod"
+        "PRICE AND SELL",
+        "Convert every offer to dollars per net royalty acre, ask which royalty rate the buyer assumed, and price to remaining economic life after reviewing declines, reserves, operators, rights and lease terms."
       ]
     ]
   },
@@ -58,10 +58,10 @@
   "book_series": "THE BIG MONEY PLAYBOOKS",
   "tagline": "Big Money. Small Teams. No Bullshit.",
   "title": "MINERAL RIGHTS",
-  "subtitle": "The Complete Playbook for Mineral Rights: $30,000–$400,000 USD in Annual Revenue, Built from a 1 FT + 3 C Pod (4 People)",
+  "subtitle": "Rebuild every decimal before you sign, convert every offer to net royalty acres, trade bonus for royalty, cure title before it costs you, and follow the drill bit from permit to payout.",
   "chapter_count": 12,
-  "total_word_count": 77041,
-  "expert_youtube_link_count": 180,
+  "total_word_count": 74119,
+  "expert_youtube_link_count": 213,
   "min_expert_youtube_links_required": 150,
   "target_expert_youtube_links": "150-200+",
   "min_expert_youtube_links_per_chapter": 12,
@@ -76,5 +76,5 @@
   "publication_status": "approved_master",
   "public_deploy_approved": false,
   "paid_sales_approved": false,
-  "updated_at": "2026-11-23T22:48:02Z"
+  "updated_at": "2026-11-24T21:35:15Z"
 }

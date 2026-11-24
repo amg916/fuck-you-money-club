@@ -1,669 +1,807 @@
 from __future__ import annotations
 
-CHAPTER_9 = {
-    "id": "Q9",
-    "chapter_id": "Q9",
-    "chapter_number": 9,
-    "question_number": 9,
-    "slug": "mineral-rights-contracts-statutory-guardrails-licensing-outreach",
-    "question_prompt": "Which federal/state statutes, licensing boundaries, contract clauses, and compliant outreach scripts govern mineral rights?",
-    "kicker": "Q9 / THE BIG MONEY PLAYBOOKS",
-    "title": "Contracts, Statutory Guardrails, Licensing & Outreach Scripts",
-    "subtitle": "Severed Mineral Title, NMA/NPRI Conveyances, Pooling Elections, Securities Boundaries & Owner Contact Controls",
-    "layout_template": "legal_compliance_notes",
-    "reading_time_minutes": 14,
-    "executive_summary": (
-        "Candidate #7, Mineral Rights, ranks #25 with a 81/100 Money-to-Manpower "
-        "Score: attractive asset economics, constrained by capital, title work, and specialist labor. "
-        "This chapter maps five operator plays: producing-mineral acquisitions, NPRI acquisitions, "
-        "pooling-docket curve-jumping, royalty reconciliation, and institutional flips. Each requires "
-        "different authority, contract language, and evidence before money moves. The Conservative, "
-        "Base, and Scaled cases produce annual owner net profits of $6,000, $69,875, and $180,000 "
-        "on recognized revenue of $30,000, $215,000, and $400,000. Returned acquisition basis "
-        "never becomes revenue. Build the initial operation around one full-time principal and "
-        "three specialist contractors; reserve the six-person structure for the Scaled case. "
-        "Use state-specific title review, narrow service engagements, documented outreach, and "
-        "separate securities analysis before accepting pooled investor capital."
-    ),
-    "key_metrics": [
-        {
-            "label": "Conservative",
-            "value": "$30,000",
-            "context": "Annual royalty receipts and realized rights-trading gains, excluding returned basis",
-            "note": "20% net margin; $6,000 annual owner net profit; 1 FT + 3 C",
-        },
-        {
-            "label": "Base",
-            "value": "$215,000",
-            "context": "Annual royalty receipts and realized rights-trading gains, excluding returned basis",
-            "note": "32.5% net margin; $69,875 annual owner net profit; 1 FT + 3 C",
-        },
-        {
-            "label": "Scaled",
-            "value": "$400,000",
-            "context": "Annual royalty receipts and realized rights-trading gains, excluding returned basis",
-            "note": "45% net margin; $180,000 annual owner net profit; 2 FT + 4 C",
-        },
-    ],
-    "sections": [
-        {
-            "heading": "1. Classify the Interest, Jurisdiction, and Actual Operator Role",
-            "epistemic_status": "operating_framework",
-            "paragraphs": [
-                (
-                    "Begin every opportunity with an interest classification, not a price per acre. "
-                    "A fee mineral interest can carry executive, bonus, rental, and royalty rights, "
-                    "but prior reservations may separate those attributes. An NPRI normally lacks "
-                    "executive rights and participation in bonuses or rentals; its actual language "
-                    "determines whether the royalty is fixed or floats with the lease royalty. "
-                    "A deed conveying one sixteenth of production does not necessarily convey "
-                    "one sixteenth of the lessor's royalty. Have the title attorney resolve that "
-                    "distinction before the principal converts acres into cash flow. For this chapter, "
-                    "the five mapped plays are producing-mineral acquisitions, NPRI acquisitions, "
-                    "pooling-docket curve-jumping, royalty reconciliation, and institutional flips. "
-                    "Maintain a separate rights-and-authority sheet for each play, including tract "
-                    "description, recording references, ownership fraction, lease status, executive "
-                    "holder, and permitted activity. Texas Property Code Chapter 13 makes recording "
-                    "and notice relevant to competing claims; a county index search alone does "
-                    "not establish marketable title. Obtain the underlying instruments, probate "
-                    "documents, assignments, releases, and applicable judgments. The principal owns "
-                    "pricing; the contract landman assembles the chain; the attorney interprets "
-                    "legal effect; the tax accountant controls basis and reporting. That allocation "
-                    "keeps the canonical four-person pod from treating clerical extraction as a "
-                    "substitute for a title opinion."
-                ),
-                (
-                    "Apply jurisdictional rules to the property and the activity separately. Texas "
-                    "Occupations Code Section 1101.005 contains an exemption concerning dealings "
-                    "in mineral leases or interests, but its text does not create a nationwide "
-                    "license or authorize unrelated surface brokerage. For Oklahoma transactions, "
-                    "have local counsel classify the exact service under that state's licensing "
-                    "statutes before promising a procurement fee. Oklahoma forced pooling under "
-                    "52 O.S. Section 87.1 creates order-specific elections and deadlines; a hearing "
-                    "notice is neither a completed well nor an assured royalty payment. North "
-                    "Dakota's dormant mineral framework, Chapter 38-18.1, requires analysis of "
-                    "statutory use, notice, and preservation procedures. Louisiana mineral servitudes "
-                    "raise prescription questions under Mineral Code Article 27 and related "
-                    "provisions, rather than a universal perpetual-severance assumption. Federal "
-                    "and Indian leases introduce additional agency requirements: 30 CFR Part "
-                    "1206 governs valuation for covered production, not every private royalty "
-                    "check. Record property location, owner location, contact location, and the "
-                    "operator's service location because each can matter differently. For docket "
-                    "curve-jumping, archive the signed order and subsequent amendments, then "
-                    "separate legal status from engineering probability. Never label a proposed "
-                    "unit as producing merely because Enverus displays nearby completed wells. "
-                    "The landman should reconcile vendor records against the commission docket "
-                    "and county instruments before the acquisition model changes."
-                ),
-                (
-                    "Separate buying assets for the firm's own account from selling interests "
-                    "or arranging investments for others. Securities Act Section 2(a)(1), "
-                    "15 U.S.C. Section 77b(a)(1), expressly includes fractional undivided interests "
-                    "in oil, gas, or other mineral rights within its securities definition. "
-                    "Entity interests and managed royalty pools can also raise investment-contract "
-                    "issues based on their actual structure. Before collecting investor commitments, "
-                    "have securities counsel identify the instrument, offering exemption, solicitation "
-                    "method, investor eligibility, state notices, and intermediary compensation. "
-                    "Rule 506(b) and Rule 506(c) are different operating paths: broad advertising "
-                    "does not fit the former, while the latter requires reasonable steps to verify "
-                    "accredited status and sales only to accredited investors. An exempt offering "
-                    "does not erase antifraud duties or resolve broker-registration questions "
-                    "under Exchange Act Section 15(a). A percentage of capital raised is a "
-                    "serious classification issue, not an administrative introduction fee. Keep "
-                    "institutional asset-sale outreach distinct from investor solicitation, and "
-                    "avoid publishing yield packages while assuming the transaction is merely "
-                    "a deed sale. For the four-person pod, the title attorney should identify "
-                    "when separate securities expertise is required and obtain it before marketing. "
-                    "If that expertise exceeds the approved contractor budget, remain an "
-                    "own-account buyer rather than improvising a pooled offering."
-                ),
-            ],
-            "table": {
-                "caption": "Jurisdiction and Activity Matrix for Mineral Ownership and Capital Formation",
-                "headers": [
-                    "Activity and controlling source",
-                    "Required factual classification",
-                    "Operator control before action",
-                    "Evidence retained in transaction file",
-                ],
-                "rows": [
-                    [
-                        "Texas mineral transactions under Occupations Code Section 1101.005",
-                        "Separate qualifying mineral dealings from unrelated surface brokerage services",
-                        "Attorney documents exemption scope for the actual compensated activity",
-                        "Written role analysis and executed engagement describe permitted services",
-                    ],
-                    [
-                        "Texas recording priorities under Property Code Chapter 13",
-                        "Identify prior conveyances, reservations, notice issues, and competing claims",
-                        "Landman retrieves instruments while attorney evaluates legal title consequences",
-                        "Indexed chain includes copies of instruments and unresolved exceptions",
-                    ],
-                    [
-                        "Oklahoma pooling proceedings under 52 O.S. Section 87.1",
-                        "Distinguish pending applications from signed orders and subsequent amendments",
-                        "Calendar order-specific election obligations before pricing the affected interest",
-                        "Saved order, service evidence, election documents, and receipt confirmations",
-                    ],
-                    [
-                        "North Dakota dormant minerals under Chapter 38-18.1",
-                        "Evaluate qualifying use, preservation filings, notice, and succession history",
-                        "Local attorney resolves dormancy exposure before issuing closing instructions",
-                        "Recorded preservation documents and supporting use evidence accompany opinion",
-                    ],
-                    [
-                        "Louisiana servitude prescription under Mineral Code Article 27",
-                        "Determine whether servitude prescription and interruption rules affect ownership",
-                        "Local counsel analyzes relevant operations and instrument-specific rights separately",
-                        "Chronology connects operative documents with production and operations evidence",
-                    ],
-                    [
-                        "Pooled mineral investment offerings under federal securities statutes",
-                        "Classify fractional interests, entity securities, solicitation, and intermediary roles",
-                        "Securities counsel establishes offering pathway before investor materials circulate",
-                        "Offering analysis, investor records, notices, and compensation agreements remain segregated",
-                    ],
-                ],
-            },
-            "callout": {
-                "kind": "INSIDER PRO-TIPS",
-                "title": "Four Checks That Experienced Mineral Buyers Perform Early",
-                "body": "Spend specialist time where an apparently small drafting or docket detail changes the purchased cash flow.",
-                "items": [
-                    "Compare every NPRI fraction with both the reservation instrument and current lease; build fixed and floating interpretations before counsel selects the supported treatment.",
-                    "Download pooling orders and amendments directly from the commission record; vendor status labels can lag changed election terms or dismissed proceedings.",
-                    "Ask the payor whether suspense attaches to the owner account, a specific property, or a disputed fraction; those problems require different cures.",
-                    "Obtain the institutional buyer's required title package before buying; a cheap tract can become unsalable when the eventual buyer requires expensive missing probate work.",
-                ],
-            },
-        },
-        {
-            "heading": "2. Write Contracts Around the Interest and the Payment Trigger",
-            "epistemic_status": "operating_framework",
-            "paragraphs": [
-                (
-                    "Use separate documents for acquisition, specialist services, and disposition. "
-                    "The purchase agreement should identify the exact estate, legal description, "
-                    "depth limitations, owned fraction, associated leases, and excluded rights. "
-                    "Attach a schedule rather than relying on a county name and a seller's "
-                    "spreadsheet. Specify whether the transaction covers mineral ownership, an "
-                    "NPRI, an overriding royalty, or another defined interest; those assets do "
-                    "not convey identical rights. State the price allocation, deposit handling, "
-                    "effective date, closing conditions, and treatment of receipts spanning that "
-                    "date. A per-NMA price needs an agreed net mineral acre definition and "
-                    "a title-adjustment mechanism; an NPRI purchase needs a separately defined "
-                    "economic fraction rather than an unexplained acre conversion. Include a "
-                    "title-defect notice period, defect valuation method, cure rights, minimum "
-                    "deliverable interest, and termination mechanics. Address probate, spousal "
-                    "signatures, entity authority, liens, and third-party consents where relevant. "
-                    "Texas Property Code Section 5.151 imposes a prescribed disclosure for "
-                    "covered mailed mineral purchase packages; use its current wording and "
-                    "format when the transaction falls within the statute. Do not substitute "
-                    "a friendly cover letter for required text. Record the final conveyance "
-                    "promptly and confirm indexing, because an executed deed sitting in email "
-                    "does not complete the recording work."
-                ),
-                (
-                    "For the landman, define scope as specified counties, instruments, ownership "
-                    "questions, deliverables, and completion dates. For royalty reconciliation, "
-                    "define the properties, production months, source statements, exception "
-                    "thresholds, and allowed payor contacts. A service agreement should distinguish "
-                    "document collection from title interpretation and distinguish arithmetic "
-                    "exceptions from an asserted legal claim. Use fixed milestones or approved "
-                    "hourly budgets where suitable. If compensation depends on a closing or "
-                    "recovery, describe the exact trigger, calculation base, deductions, receipt "
-                    "date, reversals, and dispute process, then obtain the relevant licensing "
-                    "and professional-conduct analysis. Never pay on total sale proceeds when "
-                    "the agreed trigger is realized gain. Narrow anti-circumvention to identified "
-                    "counterparties, documented introductions, a reasonable term, and an express "
-                    "preexisting-relationship exception. It should not capture every mineral owner "
-                    "in a basin. Set a negotiated liability cap for appropriate service risks, "
-                    "with deliberate treatment of fraud, intentional misconduct, confidentiality "
-                    "breaches, and unauthorized transfers. Avoid assuming a cap can defeat "
-                    "nonwaivable statutory remedies. Define escalation, governing law, forum, "
-                    "and whether arbitration covers service disputes; local real-property "
-                    "proceedings may require different treatment. The principal approves budgets "
-                    "and business terms, while counsel drafts enforceable allocations rather "
-                    "than importing a software consulting form into a deed transaction."
-                ),
-                (
-                    "Own the transaction evidence without claiming ownership of every underlying "
-                    "record. County instruments remain public records; vendor databases, imagery, "
-                    "and extracted datasets may carry contractual reuse restrictions. The service "
-                    "agreement should allocate ownership of newly prepared schedules and models, "
-                    "license necessary preexisting tools, identify permitted recipients, and require "
-                    "return or deletion of confidential seller materials when work ends. Check "
-                    "Enverus and county-access terms before placing exports in an institutional "
-                    "data room. For the flip, disclose the actual acquired interest, title "
-                    "exceptions, lease burdens, suspense status, and the provenance of production "
-                    "assumptions. A permit, drilling application, or pooling order cannot support "
-                    "a representation that reserves are proved. Match assignment language and "
-                    "warranty scope to what the seller can actually support. Obtain a closing "
-                    "statement separating consideration, transferred basis, expenses, and retained "
-                    "receivables. If purchase cost is $100,000 and gross disposition consideration "
-                    "is $130,000, the rights-trading gain before transaction costs is $30,000; "
-                    "the $100,000 returned basis is not operator revenue. Prevent duplicate "
-                    "recognition when accrued royalties are included in the purchase adjustment. "
-                    "Store the signed agreement, deed, recording receipt, funds confirmation, "
-                    "and accounting bridge together. The accountant should trace each recognized "
-                    "dollar to a royalty receipt or realized trading gain, not to a purchase "
-                    "price headline."
-                ),
-            ],
-            "table": {
-                "caption": "Clause Checklist for Acquisitions, Specialist Engagements, and Institutional Flips",
-                "headers": [
-                    "Clause and contract placement",
-                    "Required negotiated business detail",
-                    "Failure prevented by precise drafting",
-                    "Evidence supporting enforcement and accounting",
-                ],
-                "rows": [
-                    [
-                        "Scope clauses in purchase and specialist service agreements",
-                        "Identify estate, tract, depth, fraction, deliverables, and explicit exclusions",
-                        "Prevents buying different rights or expecting uncontracted title conclusions",
-                        "Executed schedules connect recorded descriptions with the approved work plan",
-                    ],
-                    [
-                        "Fee trigger clauses in compensated specialist service engagements",
-                        "Specify milestone, calculation base, collected amount, reversals, and timing",
-                        "Prevents paying recovery fees on estimates or returned acquisition basis",
-                        "Invoice calculation reconciles directly to accepted work or collected receipts",
-                    ],
-                    [
-                        "Anti-circumvention provisions governing specifically documented commercial introductions",
-                        "Limit counterparties, duration, covered conduct, and preexisting relationship exceptions",
-                        "Prevents basin-wide restrictions from obstructing unrelated existing business relationships",
-                        "Dated introduction log establishes which counterparties entered the protected scope",
-                    ],
-                    [
-                        "Liability allocation provisions within the applicable specialist agreement",
-                        "Negotiate appropriate caps, exclusions, insurance evidence, and statutory limitations",
-                        "Prevents a generic cap from concealing unauthorized transfers or misconduct",
-                        "Signed terms and coverage documents identify the actual risk allocation",
-                    ],
-                    [
-                        "Dispute resolution provisions across services and property transaction documents",
-                        "Set escalation, governing law, forum, and carefully scoped arbitration coverage",
-                        "Prevents service arbitration language from confusing local property remedies",
-                        "Notice addresses and preservation procedures support timely dispute handling",
-                    ],
-                    [
-                        "Intellectual property and data clauses governing transaction work products",
-                        "Allocate prepared schedules, preexisting tools, vendor licenses, and permitted sharing",
-                        "Prevents unauthorized vendor redistribution and loss of purchased work products",
-                        "Deliverable register records ownership, license conditions, and authorized recipients",
-                    ],
-                ],
-            },
-            "callout": {
-                "kind": "OPERATOR GATE",
-                "title": "Four Required Verifications Before Signing or Sending Funds",
-                "body": "The principal records these checks separately; one completed check does not substitute for the others.",
-                "items": [
-                    "Counsel confirms the purchased estate, fraction, authority to convey, material title exceptions, and required state-specific offer language.",
-                    "The principal matches price, deposit, effective date, title-adjustment rights, and payment instructions to the executed agreement.",
-                    "The responsible specialist confirms the operator's licensing position and whether investor solicitation or transaction-based compensation requires separate analysis.",
-                    "The accountant confirms basis treatment, royalty cutover, settlement adjustments, and the revenue bridge; independently verified payment instructions match the authorized payee.",
-                ],
-            },
-        },
-        {
-            "heading": "3. Reconcile Statutory Payment Rules with the Four-Person Pod",
-            "epistemic_status": "operating_framework",
-            "paragraphs": [
-                (
-                    "Royalty reconciliation begins with the lease and the payor's source data, "
-                    "not a blanket assumption that every deduction is improper. Obtain check "
-                    "detail, production month, sales volumes, realized prices, decimal interest, "
-                    "taxes, deductions, and prior-period adjustments. Texas Natural Resources "
-                    "Code Section 91.402 governs payment timing and specified withholding "
-                    "circumstances; Section 91.403 addresses interest. Oklahoma's Production "
-                    "Revenue Standards Act, including 52 O.S. Section 570.10, has its own "
-                    "payment and interest structure. Have counsel determine the applicable "
-                    "deadline, title condition, exceptions, and interest treatment before sending "
-                    "a demand. A division order helps administer payment but does not replace "
-                    "the underlying conveyance or lease; Texas Section 91.402 also restricts "
-                    "its effect on lease terms. Calculate a simple unit decimal only when "
-                    "the governing instruments support that method. Forty NMA in a 640-acre "
-                    "unit at a one-fifth lease royalty yields 0.0125 before applicable burdens "
-                    "or other allocation adjustments. Do not reuse that formula for a fixed "
-                    "NPRI, allocation well, or depth-limited interest without reviewing the "
-                    "operative documents. Flag volume discrepancies against state production "
-                    "records, recognizing reporting lags and differences between well production "
-                    "and sales. Escalate supported exceptions with a property identifier, "
-                    "production period, expected amount, observed amount, and documentary basis."
-                ),
-                (
-                    "Keep taxes and management economics in separate but reconciled schedules. "
-                    "Internal Revenue Code Sections 611, 612, and 613A address depletion, "
-                    "basis, and oil-and-gas-specific limitations; eligibility depends on the "
-                    "taxpayer and interest, not a universal percentage applied to every deposit. "
-                    "The accountant should distinguish royalty income, acquisition basis, sale "
-                    "proceeds, realized gain, allowable deductions, and applicable state obligations. "
-                    "State severance taxes, local property taxes, and information reporting need "
-                    "their own calendars. A payor's tax deduction does not prove every owner "
-                    "filing has been completed. Preserve the canonical scorecard without replacing "
-                    "it with a transaction's headline proceeds: Conservative recognized revenue "
-                    "is $30,000, net margin is 20%, and owner net profit is $6,000. Base "
-                    "recognized revenue is $215,000, margin is 32.5%, and owner net profit "
-                    "is $69,875. Scaled recognized revenue is $400,000, margin is 45%, "
-                    "and owner net profit is $180,000. The corresponding differences between "
-                    "revenue and profit are $24,000, $145,125, and $220,000. These are "
-                    "scenario expense envelopes, not permission to expense returned acquisition "
-                    "principal as recurring overhead. Maintain a separate capital ledger for "
-                    "the $15,000 to $75,000 startup capital range. Explain timing and "
-                    "classification differences between cash movement, asset basis, and recognized "
-                    "results before comparing a quarter with the annual model."
-                ),
-                (
-                    "Operate the Conservative and Base cases with one full-time principal "
-                    "and three contractors: landman, attorney, and tax accountant. The principal "
-                    "handles acquisition pricing, owner conversations, payment authorization, "
-                    "and institutional buyer relationships. The landman maintains tract-level "
-                    "evidence and monitors relevant commission dockets. The attorney reviews "
-                    "title, operative clauses, and jurisdictional questions within the retained "
-                    "scope. The accountant reconciles receipts, basis, and taxes. Use Airtable "
-                    "for tract and deadline tracking, QuickBooks for transaction accounting, "
-                    "and restricted document storage for source instruments; software does "
-                    "not decide title or waive contract deadlines. Automate royalty statement "
-                    "ingestion and production-change alerts, then route exceptions to the "
-                    "responsible person. For pooling-docket curve-jumping, require a second "
-                    "human check of order status and election dates before changing the bid. "
-                    "For NPRI acquisitions, require counsel's fraction interpretation before "
-                    "the model is released to a buyer. For institutional flips, assemble "
-                    "the buyer-ready evidence package before marketing. The Scaled case "
-                    "adds a second full-time operations analyst and a fourth contractor, "
-                    "such as a petroleum engineer, reaching six people rather than silently "
-                    "expanding the Base pod. With a six-to-twenty-four-month first-deal horizon "
-                    "and monthly operating expense range of $1,000 to $12,000, preserve "
-                    "capacity by rejecting unresolved low-value files early instead of "
-                    "multiplying speculative research assignments."
-                ),
-            ],
-            "table": {
-                "caption": "Five-Play Evidence Routing and Canonical Revenue Controls",
-                "headers": [
-                    "Play or accounting control",
-                    "Evidence required before economic reliance",
-                    "Four-person pod responsibility and escalation",
-                    "Recognition or operating failure prevented",
-                ],
-                "rows": [
-                    [
-                        "Producing-mineral acquisitions supported by verified title and leases",
-                        "Recorded chain, effective lease, payment history, and supported ownership decimal",
-                        "Principal prices assets after landman collection and attorney interpretation",
-                        "Prevents projected production from replacing actual owned royalty entitlement",
-                    ],
-                    [
-                        "NPRI acquisitions requiring instrument-specific economic fraction interpretation",
-                        "Reservation language, lease royalty, burden schedule, and counsel's written interpretation",
-                        "Attorney resolves fraction while principal maintains supported pricing alternatives",
-                        "Prevents fixed royalty interests from being incorrectly modeled as floating",
-                    ],
-                    [
-                        "Pooling-docket curve-jumping based on documented procedural changes",
-                        "Signed orders, amendments, election deadlines, and separately supported development assumptions",
-                        "Landman tracks changes while principal obtains required second-person verification",
-                        "Prevents pending applications from being represented as established producing assets",
-                    ],
-                    [
-                        "Royalty reconciliation applied to the firm's owned interests",
-                        "Check detail, lease terms, sales periods, decimals, and supported exceptions",
-                        "Accountant reconciles receipts while attorney handles disputed legal interpretations",
-                        "Prevents unsupported demands and duplicate recognition of adjusted royalty receipts",
-                    ],
-                    [
-                        "Institutional flips using transferable interests and buyer-ready evidence",
-                        "Recorded conveyance, title exceptions, licensed data, and itemized settlement statement",
-                        "Principal manages buyer process while specialists validate their assigned evidence",
-                        "Prevents gross sale consideration from being mistaken for trading revenue",
-                    ],
-                    [
-                        "Canonical annual revenue and owner profit reconciliation controls",
-                        "Royalty receipts and realized gains exclude returned acquisition basis",
-                        "Accountant bridges scenario totals while principal approves documented classifications",
-                        "Preserves exact Conservative, Base, and Scaled scorecard comparisons consistently",
-                    ],
-                ],
-            },
-            "sop_steps": [
-                {
-                    "step": 1,
-                    "title": "Open the jurisdiction and rights file",
-                    "action": "Record tract, estate, fraction, lease, owner authority, and proposed operator role.",
-                    "detail": "Assign the landman to source documents and the attorney to unresolved legal classifications; do not price an assumed interest.",
-                },
-                {
-                    "step": 2,
-                    "title": "Validate the legal and economic bridge",
-                    "action": "Connect operative instruments to decimals, payment rules, title conditions, and contract terms.",
-                    "detail": "Keep proposed development upside separate from current receipts and retain the evidence supporting each modeled adjustment.",
-                },
-                {
-                    "step": 3,
-                    "title": "Execute and record through controlled instructions",
-                    "action": "Confirm signatures, closing conditions, independently verified payment details, and recording responsibility.",
-                    "detail": "Retain the settlement statement, conveyance, recording confirmation, and payor ownership-change package in the same restricted file.",
-                },
-                {
-                    "step": 4,
-                    "title": "Reconcile receipts and monitor exceptions",
-                    "action": "Match incoming royalties and realized sale gains to accounting records and source statements.",
-                    "detail": "Route title, payment, production, tax, and deadline exceptions to their assigned specialist; document resolution before closing each exception.",
-                },
-            ],
-        },
-        {
-            "heading": "4. Use Verbatim Outreach That States Role, Limits, and Next Steps",
-            "epistemic_status": "operating_framework",
-            "paragraphs": [
-                (
-                    "Use a plain initial owner-contact script: 'Hello, I am the principal "
-                    "of a business that buys mineral and royalty interests for its own "
-                    "account. Public records suggest you may own an interest in the tract "
-                    "described below. Those records can be incomplete, so I am asking "
-                    "whether you are the appropriate person to contact. We are interested "
-                    "in discussing a purchase, not collecting a fee from you. You do "
-                    "not need to send identification documents or bank details to have "
-                    "an initial conversation. If you prefer no further contact, reply stop "
-                    "and we will remove you from our outreach list.' Insert only verified "
-                    "sender and tract details. Do not imply affiliation with a producing "
-                    "operator, county office, or another owner. For commercial email, assess "
-                    "15 U.S.C. Section 7704 and implement accurate headers, a truthful "
-                    "subject, required identification, a valid physical postal address, and "
-                    "a working opt-out with timely suppression. Maintain source, contact "
-                    "date, channel, and suppression status. If enclosing a deed and payment "
-                    "in a covered Texas mailing, apply Section 5.151 separately; this "
-                    "introductory script is not its prescribed disclosure. Never disguise "
-                    "a purchase solicitation as a royalty statement or an urgent government "
-                    "notice, and never suggest that silence transfers ownership."
-                ),
-                (
-                    "For discovery, say: 'Before discussing price, may I confirm whether "
-                    "you hold minerals, a royalty reservation, or an inherited interest? "
-                    "Do you have a deed reference, lease, or recent statement you are "
-                    "comfortable sharing through our secure document channel? Please remove "
-                    "bank and tax identifiers from an initial copy. Are there other "
-                    "owners, estate proceedings, liens, or existing sale agreements we should "
-                    "account for? We will review the documents and explain the interest "
-                    "our offer covers, the proposed price, and any title conditions. You "
-                    "may have your own attorney review the documents before deciding.' "
-                    "Record answers as owner statements pending verification, not established "
-                    "title facts. For calls and texts, classify the actual campaign under "
-                    "47 U.S.C. Section 227 and 47 CFR Section 64.1200, including technology, "
-                    "message purpose, number type, and applicable state restrictions. An "
-                    "offer to purchase property is not automatically treated identically "
-                    "to every sales solicitation; obtain a campaign-specific determination "
-                    "instead of assuming either universal exemption or universal coverage. "
-                    "Use manual, individually reviewed contact as the initial operating "
-                    "method, honor stop requests, and check relevant calling restrictions. "
-                    "Before recording, evaluate the laws implicated by both participants' "
-                    "locations; California Penal Code Section 632 illustrates why confidential "
-                    "calls need specific recording analysis. Do not record while that "
-                    "analysis remains unresolved."
-                ),
-                (
-                    "For an institutional flip, use: 'We own the interest identified in "
-                    "the attached schedule and are evaluating a sale. The package separates "
-                    "recorded ownership, current lease terms, historical receipts, title exceptions, "
-                    "and development assumptions. Any pending pooling or drilling activity "
-                    "is labeled by its actual docket status and date. If this fits "
-                    "your acquisition criteria, we can provide a restricted data room "
-                    "and discuss your title requirements before agreeing on a closing "
-                    "schedule.' Use that ownership statement only after acquisition is "
-                    "complete; otherwise disclose the actual contractual position and transfer "
-                    "restrictions. For reconciliation, say: 'We are reviewing payments on "
-                    "an interest our firm owns. Please confirm the decimal and explain "
-                    "the listed adjustments for these production months. Our attached "
-                    "schedule identifies the source documents and arithmetic differences; "
-                    "please identify any title or account condition affecting payment.' "
-                    "These scripts support the five plays without adding outside service "
-                    "fees to the canonical revenue model. Log every material representation "
-                    "and retain the version of the package actually sent. The principal "
-                    "handles consequential conversations; contractors receive only their "
-                    "assigned documents. If a prospect asks to invest rather than sell "
-                    "an asset, stop the asset-buying script and route the proposal "
-                    "for securities review before accepting money or sending projected "
-                    "distributions. Suppression requests follow the contact across future lists."
-                ),
-            ],
-            "table": {
-                "caption": "Outreach and Discovery Controls for Owners, Payors, and Institutional Buyers",
-                "headers": [
-                    "Contact situation and intended recipient",
-                    "Required message content and boundaries",
-                    "Evidence or permissions checked first",
-                    "Specific next action and stop condition",
-                ],
-                "rows": [
-                    [
-                        "Initial owner email requesting a voluntary acquisition conversation",
-                        "State own-account buyer role and provide accurate sender identification",
-                        "Verify tract reference, address source, suppression status, and applicable requirements",
-                        "Offer a voluntary response channel and suppress further contact upon request",
-                    ],
-                    [
-                        "Texas mailed purchase package containing conveyance and payment",
-                        "Include prescribed statutory disclosure when the package triggers Section 5.151",
-                        "Counsel checks current text, required format, and transaction-specific applicability",
-                        "Send only the reviewed package and retain an exact dated copy",
-                    ],
-                    [
-                        "Owner discovery conversation about inherited or reserved interests",
-                        "Ask about documents and authority without treating answers as verified title",
-                        "Confirm safe document channel and avoid collecting unnecessary sensitive identifiers",
-                        "Request redacted source documents and pause pricing pending material title clarification",
-                    ],
-                    [
-                        "Telephone or text campaign reaching individual mineral owners",
-                        "Use truthful identity and honor channel-specific stop requests promptly",
-                        "Review technology, campaign purpose, number type, jurisdictions, and calling restrictions",
-                        "Permit only reviewed contact methods and disable unresolved automated messaging",
-                    ],
-                    [
-                        "Payor inquiry concerning the firm's own royalty payment exceptions",
-                        "Identify property, production periods, supported decimal, and requested adjustment explanation",
-                        "Verify account authority and attach evidence without unrelated owner information",
-                        "Reconcile the response and escalate supported legal disputes through counsel",
-                    ],
-                    [
-                        "Institutional buyer contact regarding an actual owned asset",
-                        "Separate ownership facts, historical receipts, exceptions, and dated development assumptions",
-                        "Confirm ownership, sharing rights, document accuracy, and buyer access permissions",
-                        "Release restricted evidence and redirect investor requests for separate securities review",
-                    ],
-                ],
-            },
-        },
-    ],
-    "pull_quote": "Buy the interest the instruments convey, collect the cash the lease supports, and sell only the evidence you can defend.",
-    "diagram_id": "diag-05",
-    "action_checklist": [
-        "Create a tract-level rights sheet for each of the five plays, separating mineral ownership, NPRI fractions, executive rights, lease burdens, and development assumptions.",
-        "Assign the Base pod's principal, landman, attorney, and accountant explicit pricing, evidence, interpretation, and accounting responsibilities before opening new files.",
-        "Have counsel confirm state licensing boundaries, title rules, required offer language, and any securities implications of outside capital or intermediary compensation.",
-        "Execute transaction-specific scope, fee-trigger, anti-circumvention, liability, dispute, and data clauses; independently verify closing payment instructions.",
-        "Deploy the reviewed owner, discovery, buyer, and payor scripts with campaign-specific channel controls, suppression tracking, and secure document exchange.",
-        "Reconcile royalty receipts and realized trading gains to the exact scorecard cases, excluding returned basis and preserving the separate acquisition capital ledger.",
-    ],
-    "statutory_citations": [
-        {
-            "title": "Texas Occupations Code Section 1101.005 — Applicability of Real Estate License Act",
-            "url": "https://statutes.capitol.texas.gov/Docs/OC/htm/OC.1101.htm#1101.005",
-            "relevance": "Evaluate the mineral-interest exemption against the actual transaction and services; do not extend it to unrelated activities or other states.",
-        },
-        {
-            "title": "Texas Property Code Chapter 13 — Effects of Recording",
-            "url": "https://statutes.capitol.texas.gov/Docs/PR/htm/PR.13.htm",
-            "relevance": "Analyze recording, notice, and competing claims when reviewing severed title and recording acquired interests.",
-        },
-        {
-            "title": "Texas Property Code Section 5.151 — Disclosure in Offer to Purchase Mineral Interest",
-            "url": "https://statutes.capitol.texas.gov/Docs/PR/htm/PR.5.htm#5.151",
-            "relevance": "Apply the prescribed disclosure and format to covered mailed mineral purchase packages rather than substituting ordinary outreach text.",
-        },
-        {
-            "title": "Texas Natural Resources Code Sections 91.402 and 91.403 — Proceeds and Interest",
-            "url": "https://statutes.capitol.texas.gov/Docs/NR/htm/NR.91.htm#91.402",
-            "relevance": "Review payment timing, permitted withholding, division-order treatment, and associated interest provisions against the actual royalty dispute.",
-        },
-        {
-            "title": "Oklahoma Statutes Title 52, Sections 87.1 and 570.10",
-            "url": "https://oksenate.gov/sites/default/files/2019-12/os52.pdf",
-            "relevance": "Primary statutory text covers pooling and production-proceeds requirements; verify subsequent amendments and the controlling commission order before action.",
-        },
-        {
-            "title": "North Dakota Century Code Chapter 38-18.1 — Termination of Mineral Interest",
-            "url": "https://ndlegis.gov/cencode/t38c18-1.pdf",
-            "relevance": "Evaluate statutory use, notices, and preservation procedures before assuming a severed mineral interest remains enforceable.",
-        },
-        {
-            "title": "30 CFR Part 1206 — Product Valuation",
-            "url": "https://www.ecfr.gov/current/title-30/chapter-XII/subchapter-A/part-1206",
-            "relevance": "Determine applicable valuation requirements for covered federal and Indian production without importing them indiscriminately into private leases.",
-        },
-        {
-            "title": "15 U.S.C. Section 77b(a)(1) — Definition of Security",
-            "url": "https://www.law.cornell.edu/uscode/text/15/77b",
-            "relevance": "Recognize the express inclusion of fractional undivided oil, gas, and other mineral interests when structuring sales or pooled investments.",
-        },
-        {
-            "title": "17 CFR Section 230.506 — Exemption for Limited Offers and Sales",
-            "url": "https://www.ecfr.gov/current/title-17/chapter-II/part-230/section-230.506",
-            "relevance": "Distinguish Rule 506(b) solicitation limits from Rule 506(c) accredited-investor and verification requirements before marketing an offering.",
-        },
-        {
-            "title": "15 U.S.C. Section 78o(a) — Broker and Dealer Registration",
-            "url": "https://www.law.cornell.edu/uscode/text/15/78o",
-            "relevance": "Review investor introductions, securities transaction activity, and transaction-based compensation separately from the offering exemption.",
-        },
-        {
-            "title": "26 U.S.C. Sections 611, 612, and 613A — Depletion and Oil and Gas Limitations",
-            "url": "https://www.law.cornell.edu/uscode/text/26/613A",
-            "relevance": "Coordinate depletion eligibility and limitations with basis records and related Sections 611 and 612; avoid applying a universal deduction to all receipts.",
-        },
-        {
-            "title": "15 U.S.C. Section 7704 — Requirements for Commercial Electronic Mail",
-            "url": "https://www.law.cornell.edu/uscode/text/15/7704",
-            "relevance": "Assess commercial email classification and implement accurate routing, truthful subjects, required sender information, and opt-out handling.",
-        },
-        {
-            "title": "47 U.S.C. Section 227 — Restrictions on Telephone Equipment",
-            "url": "https://www.law.cornell.edu/uscode/text/47/227",
-            "relevance": "Classify calls and texts by technology, purpose, recipient, and applicable statutory restrictions before selecting contact methods.",
-        },
-        {
-            "title": "47 CFR Section 64.1200 — Delivery Restrictions",
-            "url": "https://www.ecfr.gov/current/title-47/chapter-I/subchapter-B/part-64/subpart-L/section-64.1200",
-            "relevance": "Apply relevant calling, messaging, permission, and suppression requirements to the reviewed outreach campaign.",
-        },
-        {
-            "title": "California Penal Code Section 632 — Confidential Communications",
-            "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?lawCode=PEN&sectionNum=632.",
-            "relevance": "Evaluate recording of confidential conversations using the actual participants' locations and the applicable permission requirements.",
-        },
-    ],
-}
+CHAPTER_9 = {'id': 'Q9',
+ 'chapter_id': 'Q9',
+ 'chapter_number': 9,
+ 'question_number': 9,
+ 'slug': 'buying-and-selling-mineral-rights',
+ 'question_prompt': 'How do I buy or sell mineral rights profitably, and how do I protect myself from bad '
+                    'buyers?',
+ 'kicker': 'Q9 / THE BIG MONEY PLAYBOOKS',
+ 'title': 'Buying and Selling Mineral Rights',
+ 'subtitle': 'Reasons to sell, three ways to sell, types of mineral buyers and who to avoid, the history '
+             'of mineral buying, selling at peak value, buying producing cash-flowing minerals, brokering '
+             'and flipping vs. holding royalties, and building monthly income',
+ 'layout_template': 'tool_resource_directory',
+ 'reading_time_minutes': 15,
+ 'executive_summary': 'Mineral buyers and sell-side advisors converge on one rule: follow the drill bit. '
+                      'Steven Hatcher, Troy Eckard and Matt Sands all buy proven, multi-zone acreage near '
+                      'active permits, chain title from patent to present because no title company insures '
+                      'minerals, and treat a sale as a liquidity trade where the seller hands price and '
+                      'volume risk to the buyer. The mechanics are numeric: Sands discounts producing '
+                      'minerals at about 10%, rig-on-site acreage at 15-20% and five-year-plan acreage at '
+                      '20-30%, and pays 36-60x monthly royalty for old flat wells; Hatcher reports a '
+                      '$95,000 PDP buy recouping 40% in nine months and a $30,000-plus contract flip with '
+                      'no capital. Disagreements center on never-sell advice, dry gas, auction quality, '
+                      'and whether flipping minerals is a legitimate play or something to avoid.',
+ 'key_metrics': [{'label': 'Producing Minerals Discount Rate',
+                  'metric': 'Producing Minerals Discount Rate',
+                  'value': 'About 10% (vs. 15-20% rig on site, 20-30% inside an SEC five-year plan)',
+                  'confidence': 'attributed_practitioner_claim',
+                  'context': "Matt Sands' DCF discount rates by development stage when pricing mineral "
+                             'acquisitions',
+                  'source': 'Modern Land Investor ([1c2UBDuXhrk @ 00:33:41])'},
+                 {'label': 'Older-Well Purchase Multiple',
+                  'metric': 'Older-Well Purchase Multiple',
+                  'value': '36x to 60x monthly royalty',
+                  'confidence': 'attributed_practitioner_claim',
+                  'context': "Sands' rule of thumb for wells older than five years with no future "
+                             'development expected',
+                  'source': 'Modern Land Investor ([1c2UBDuXhrk @ 00:37:52])'},
+                 {'label': 'PDP Deal Payback',
+                  'metric': 'PDP Deal Payback',
+                  'value': '$95,000 paid; 40% recouped in 9 months; ~$155,000 projected (1.63 MOIC, 20% '
+                           'IRR)',
+                  'confidence': 'attributed_practitioner_claim',
+                  'context': "Hatcher's 16-acre Louisiana Haynesville buy with two existing and two new "
+                             'wells',
+                  'source': 'Steven Hatcher | Minerals Guy ([zV7XrUzBPJQ @ 00:01:54])'},
+                 {'label': 'Royalty Rate Impact on Sale Value',
+                  'metric': 'Royalty Rate Impact on Sale Value',
+                  'value': 'A 25% royalty yields twice the sale value of a 12.5% royalty',
+                  'confidence': 'attributed_practitioner_claim',
+                  'context': 'Sands on why sellers must know the lease royalty rate before pricing PUD '
+                             'acreage',
+                  'source': 'Matt Sands ([RR2BlQf14H8 @ 00:05:59])'}],
+ 'sections': [{'heading': 'Section 1: The Practitioner Consensus',
+               'paragraphs': ['The buyers agree on one thing first: follow the drill bit. Steven Hatcher '
+                              "calls West Texas 'Mecca,' adds North Louisiana, North Dakota and "
+                              'Northeastern Colorado, and tells buyers to stay near active permitting and '
+                              'drilling [I-uVEypiL9w @ 00:02:32]. He backs that with his own allocation: '
+                              '95% of drilling is horizontal shale, he spends 95% of his time there, and '
+                              'buying in the wrong area is the first mistake on his list [zV7XrUzBPJQ @ '
+                              '00:04:32]. Matt Sands gives the same instruction in distance terms: buy one '
+                              'to two miles from active drilling that is moving your way, because even '
+                              'undrilled acreage in that path may get leased, and a rig running 16 '
+                              'horizontal wells means royalties inside 12 months [1c2UBDuXhrk @ 00:27:56]. '
+                              'Troy Eckard tightens the screen further. He refuses speculative minerals, '
+                              'wants well-drilled direct offsets that are proven and derisked, and wants '
+                              'primary, secondary and tertiary zones stacked underneath, because a '
+                              'single-zone tract depletes to no residual value [S-yENwSQhi0 @ 00:01:11]. '
+                              'The shared logic is that operators spend millions per well, so the mineral '
+                              "owner's only job is to sit where a well-capitalized company is already "
+                              'committing capital. Sands calls anything outside that zone a goat pasture '
+                              'and warns that minerals are not a lottery ticket.',
+                              'The second point of agreement is that the asset is invisible until you dig '
+                              'it out of the courthouse. Hatcher notes the surface owner is usually not '
+                              'the mineral owner, because minerals get reserved when surface sells, so he '
+                              'chains title through county deed records and grantor/grantee indexes, '
+                              'mostly online, using mineral tax rolls in Texas and pooling and unitization '
+                              'records in Oklahoma and Ohio [I-uVEypiL9w @ 00:03:48]. Sands states flatly '
+                              'that no title company will underwrite title insurance on minerals, so the '
+                              'buyer must run title from patent to present, and he warns that 640 gross '
+                              'acres can shrink to a quarter of a net acre once fractions are traced '
+                              '[1c2UBDuXhrk @ 00:16:39]. In his Cashflow Ninja walkthrough he pulls the '
+                              "oil-and-gas commission's list of interested parties for each drilling unit, "
+                              'verifies deeds at the county clerk, and corroborates ownership with '
+                              'operator title opinions and royalty checks because fraudulent deeds '
+                              'circulate [uhffuS4DlLQ @ 00:33:33]. Hatcher reduces the whole discipline to '
+                              'one line: you have to learn how to run title and review revenue statements '
+                              "to understand exactly what they own, and 'that is the entire game right "
+                              "there' [zV7XrUzBPJQ @ 00:05:42]. Finding hidden ownership and underwriting "
+                              'are precisely the two gaps he tells wholesalers and land flippers they must '
+                              'close.',
+                              'Buyers and sell-side advisors also agree on what the transaction actually '
+                              "is: a liquidity trade. Hatcher frames his company's role as providing a "
+                              'valuable service, liquidity, to owners who want to buy a home, start a '
+                              'business, retire or move into more stable assets, and he likens selling to '
+                              'taking the lower Powerball lump sum over the bigger 30-year stream '
+                              '[WvlIfeyW4-Q @ 00:02:52]. In his seller-side video he spells out what '
+                              'changes hands: the seller shifts price risk and volume risk onto the buyer '
+                              'in exchange for certainty in a fixed sum, and selling half or a quarter is '
+                              'allowed [Sz-1-E8zTqU @ 00:05:01]. Sands rejects blanket never-sell advice '
+                              'on the same grounds, telling concentrated owners they can sell any '
+                              'fraction, such as half, and diversify by tract, basin or oil-versus-gas mix '
+                              '[y5etlsUEcO0 @ 00:13:51]. Daniel Lewis pitches Oklahoma owners the '
+                              'identical flexibility, buying anything from 5 to 50,000 net mineral acres '
+                              'with partial sales welcome and no pressure [qZGXdB7E1lE @ 00:01:45]. For an '
+                              'acquirer, that consensus becomes the opening line of every call: you are '
+                              'not asking for the whole estate, only the slice that pays off a mortgage, a '
+                              'medical bill or a wedding.'],
+               'table': {'caption': 'Where the buyers, advisors and operators line up on mineral '
+                                    'acquisitions and sales',
+                         'headers': ['Consensus Principle',
+                                     'What the Practitioner Says',
+                                     'Operator Application',
+                                     'Expert Source'],
+                         'rows': [['Buy only where operators are actively drilling',
+                                   'West Texas is Mecca; stay near active permitting and drilling activity',
+                                   'Screen every lead against current permits before making any offer',
+                                   'Steven Hatcher | Minerals Guy ([I-uVEypiL9w @ 00:02:32])'],
+                                  ['Proven, multi-zone, well-capitalized acreage with no speculation',
+                                   'Wants well-drilled direct offsets with primary, secondary and tertiary '
+                                   'zones',
+                                   'Reject single-zone tracts because depletion leaves no residual value '
+                                   'behind',
+                                   'Eckard Enterprises | Oil & Gas Investing ([S-yENwSQhi0 @ 00:01:11])'],
+                                  ['Title must be run from patent to present',
+                                   'No title company will underwrite title insurance on mineral interests',
+                                   'Budget a landman or title attorney review before money moves',
+                                   'Modern Land Investor ([1c2UBDuXhrk @ 00:16:39])'],
+                                  ['Corroborate ownership beyond the recorded deed alone',
+                                   'Fraudulent deeds exist; check operator title opinions and royalty '
+                                   'checks',
+                                   'Demand division orders and check stubs before trusting any chain',
+                                   'Cashflow Ninja ([uhffuS4DlLQ @ 00:30:04])'],
+                                  ['Sellers trade price and volume risk for certainty',
+                                   'Owners prefer a fixed sum over an uncertain multi-decade royalty '
+                                   'stream',
+                                   'Pitch certainty and liquidity rather than the headline royalty upside',
+                                   'Steven Hatcher | Minerals Guy ([Sz-1-E8zTqU @ 00:05:01])'],
+                                  ['Partial sales are normal and widely accepted by buyers',
+                                   'Owners can sell any fraction, such as half, to diversify concentration',
+                                   'Offer to buy half when a full-interest sale stalls out',
+                                   'Matt Sands ([y5etlsUEcO0 @ 00:13:51])'],
+                                  ['Owner education is the defense against knowledge arbitrage',
+                                   'Buyers historically held superior information; a second opinion levels '
+                                   'it',
+                                   'Expect sophisticated sellers to arrive with independent valuations in '
+                                   'hand',
+                                   'Steven Hatcher | Minerals Guy ([ehsvjfRcJIM @ 00:05:33])']]}},
+              {'heading': 'Section 2: Exact Street Mechanics, Tools & Numbers',
+               'paragraphs': ["Valuation starts from Hatcher's warning that there is no Zillow or Redfin "
+                              'for minerals, so he prices off three methods: a multiple of the existing '
+                              'royalty check, price per acre from comps, and discounted cash flow '
+                              '[I-uVEypiL9w @ 00:04:36]. Sands supplies the discount rates that drive the '
+                              'DCF: about 10% for producing minerals, 15-20% with a rig on site, and '
+                              "20-30% for acreage inside an operator's SEC five-year plan within one to "
+                              'two miles of drilling. His shortcut for wells older than five years with no '
+                              'future development is 36 to 60 times the monthly royalty [1c2UBDuXhrk @ '
+                              '00:33:41]. On the sell side he reports how buyers haircut the price deck: '
+                              'at $100 oil they underwrite at $75-80, at roughly $60 oil they underwrite '
+                              'near $50, and they apply a 10-15% discount rate, which makes commodity '
+                              'price timing and development timing the two biggest levers on value '
+                              '[y5etlsUEcO0 @ 00:23:04]. In his tips episode he explains why wellbore-only '
+                              'interests are in hot demand: PDP gets discounted at 8-10% against 30-50% '
+                              'for PUD, because producing wells demand a lower discount rate, which means '
+                              'higher value [RR2BlQf14H8 @ 00:20:22]. Offers are typically quoted per net '
+                              'mineral acre, such as three thousand dollars per acre.',
+                              'Deal flow is a records-and-outreach machine. Sands points to statutory '
+                              'pooling filings, such as those at the Oklahoma Corporation Commission, '
+                              'which list mineral owners a year or more before permits appear, and he runs '
+                              'the same outreach land investors use: letters, calls, email and texts, '
+                              'timed to catch owners facing something like medical bills [1c2UBDuXhrk @ '
+                              "00:29:35]. Hatcher's sourcing system is four moves: track operator permits, "
+                              'pull tax, regulatory and courthouse records, contact owners systematically, '
+                              'and buy only where operators are spending [zV7XrUzBPJQ @ 00:05:42]. Blue '
+                              'Mesa Minerals warns that starting an acquisitions company is a lot of work '
+                              'built on two numbers games, because many owners must be contacted to find '
+                              'one seller [08zWLxyGaag @ 00:02:20]. Sands sequences the paper so cash '
+                              'stays protected: target permitted or drilling acreage, pull the '
+                              "commission's interested-parties list, verify deeds, send offers, run DCF at "
+                              'your target return, and only after a signed purchase and sale agreement '
+                              'hire a landman, then adjust price to the net acres found, close, and notify '
+                              'the operator promptly [uhffuS4DlLQ @ 00:34:38]. He also notes that one '
+                              'winner pays for three or four duds, which is why he calls the whole '
+                              'business a numbers game.',
+                              'Hatcher puts hard numbers on three ways to make money. For PDP cash flow, '
+                              'he paid $95,000 for 16 Louisiana acres with two existing and two new '
+                              'Haynesville wells, recouped 40% in nine months, and projects about $155,000 '
+                              'total, a 1.63 MOIC and 20% IRR [zV7XrUzBPJQ @ 00:01:54]. For white-space '
+                              'appreciation, 60 acres in Benville Parish cost $325,000; nine months later '
+                              'the operator permitted and drilled four wells, and he projects over $1 '
+                              'million, a 3x return. For brokering, he contracted an Ohio interest at '
+                              '$220,000 after courthouse title revealed more acreage than the 5.5 acres on '
+                              'the tax records, then assigned it for $250,000, netting over $30,000 with '
+                              'no capital used [zV7XrUzBPJQ @ 00:03:32]. Sands calibrates entry pricing: '
+                              'owning 1/160 of a 160-acre tract equals one net mineral acre worth a few '
+                              'thousand dollars, beginners can start with quarter-acre deals costing a few '
+                              'hundred, but in the Permian owners get unsolicited $25,000-per-acre offers '
+                              'and a $5,000 bid gets laughed out [1c2UBDuXhrk @ 00:13:06]. On the sell '
+                              'side he quotes non-producing Permian at $5,000-10,000 per net royalty acre, '
+                              'possibly two to three times that once permitted, versus a couple hundred '
+                              'per acre for an Oklahoma goat pasture [y5etlsUEcO0 @ 00:30:45].'],
+               'table': {'caption': 'Street numbers, tools and pricing levers quoted by the practitioners',
+                         'headers': ['Mechanic', 'Exact Number or Tool', 'How It Is Used', 'Expert Source'],
+                         'rows': [['DCF discount rate by development stage',
+                                   'About 10% producing; 15-20% rig on site; 20-30% SEC plan',
+                                   'Price each tract by development stage before sending any offer',
+                                   'Modern Land Investor ([1c2UBDuXhrk @ 00:33:41])'],
+                                  ['Rule-of-thumb multiple for older flat production',
+                                   '36 to 60 times monthly royalty for wells over five years',
+                                   'Applies only when no future development is expected on the tract',
+                                   'Modern Land Investor ([1c2UBDuXhrk @ 00:37:52])'],
+                                  ['Independent consultant or engineer valuation report',
+                                   '$600 to $800 per property for an engineered valuation',
+                                   'Gives sellers the same information as the buyer, a level playing field',
+                                   'Matt Sands ([RR2BlQf14H8 @ 00:07:30])'],
+                                  ['Well Database forecasting software subscription',
+                                   'Free plan, or $250 for one month with no contract',
+                                   'Track permits, completions and forecasts alongside free state '
+                                   'commission sites',
+                                   'Matt Sands ([RR2BlQf14H8 @ 00:15:56])'],
+                                  ['Buyer price deck haircut on oil',
+                                   '$100 oil underwritten at $75-80; $60 oil underwritten near $50',
+                                   'Expect offers built on decks well below current oil prices',
+                                   'Matt Sands ([y5etlsUEcO0 @ 00:23:04])'],
+                                  ['EnergyNet auction listing for producing minerals',
+                                   'Sweet spot of $1,000 to $10,000 per month in royalty income',
+                                   'List right after a new well, before revenue falls toward 10%',
+                                   'Blue Mesa Minerals ([vogFrTHuYiY @ 00:06:17])'],
+                                  ['Contract assignment flip with no capital deployed',
+                                   'Contracted at $220,000, assigned for $250,000, netting over $30,000',
+                                   'Lock the seller first, then assign the contract to an end buyer',
+                                   'Steven Hatcher | Minerals Guy ([zV7XrUzBPJQ @ 00:03:32])']]},
+               'callout': {'kind': 'INSIDER PRO-TIPS',
+                           'title': 'Moves the operators use to protect margin',
+                           'body': 'Small sequencing and timing choices that the buyers and advisors say '
+                                   'move the final number.',
+                           'items': ['Hire the landman only after a signed purchase and sale agreement, '
+                                     'then adjust the price to the net acres actually found [Cashflow '
+                                     'Ninja — uhffuS4DlLQ @ 00:34:38].',
+                                     'Pull mineral deeds recorded in the past 6-12 months to identify '
+                                     "active end buyers and research each one's model, such as PE-backed "
+                                     'funds [Matt Sands — y5etlsUEcO0 @ 00:32:43].',
+                                     'Lease before selling in Reeves, Lea and Eddy counties: taking a 12% '
+                                     "royalty instead of 25% halves the property's value [Matt Sands — "
+                                     'y5etlsUEcO0 @ 00:25:50].',
+                                     'No escrow companies will go near mineral rights, so the sale ends '
+                                     'with a signed deed and a wire; Blue Mesa usually closes inside a '
+                                     'week versus 30-90 days elsewhere [Blue Mesa Minerals — vogFrTHuYiY @ '
+                                     '00:02:21].']},
+               'sop_steps': [{'step': 1,
+                              'title': 'Target the drilling path',
+                              'action': 'Track operator permits and pick acreage where operators are '
+                                        'spending, ideally one to two miles from active drilling.',
+                              'detail': "Hatcher's system starts with tracking operator permits and buying "
+                                        'only where operators are spending, and he spends 95% of his time '
+                                        'in horizontal shale [Steven Hatcher | Minerals Guy — zV7XrUzBPJQ '
+                                        '@ 00:05:42].'},
+                             {'step': 2,
+                              'title': 'Pull the owner list',
+                              'action': "Download the commission's interested-parties list for each "
+                                        'drilling unit, then verify deeds at the county clerk.',
+                              'detail': "Sands pulls the oil-and-gas commission's list of interested "
+                                        'parties for the drilling units before verifying ownership at the '
+                                        'county clerk [Cashflow Ninja — uhffuS4DlLQ @ 00:33:33].'},
+                             {'step': 3,
+                              'title': 'Price with stage-based DCF',
+                              'action': 'Run discounted cash flow on a price deck at 10% for producing, '
+                                        '15-20% rig on site, 20-30% five-year-plan acreage.',
+                              'detail': 'Sands uses about a 10% discount rate on producing minerals and '
+                                        'steps it up as development risk rises [Modern Land Investor — '
+                                        '1c2UBDuXhrk @ 00:33:41].'},
+                             {'step': 4,
+                              'title': 'Contract, then title, then close',
+                              'action': 'Get the PSA signed, hire the landman, adjust to net acres found, '
+                                        'close, and notify the operator promptly.',
+                              'detail': 'Sands does not outlay the cost of a landman until he has a signed '
+                                        'purchase and sale agreement, then closes and notifies the '
+                                        'operator [Cashflow Ninja — uhffuS4DlLQ @ 00:34:38].'}]},
+              {'heading': 'Section 3: Where Practitioners Disagree & Alternative Playbooks',
+               'paragraphs': ['The sharpest split is whether to sell at all. Steven Hatcher rejects the '
+                              'never-sell mindset outright, telling owners to treat minerals as a '
+                              'balance-sheet asset and weigh the opportunity cost of holding against the '
+                              'opportunity cost of selling [Sz-1-E8zTqU @ 00:00:35]. Hatcher frames a sale '
+                              'through the Powerball choice: $500M paid over 30 years versus a $300M lump '
+                              'sum, where selling means choosing the lower lump sum in exchange for '
+                              'certainty [WvlIfeyW4-Q @ 00:03:22]. Matt Sands lands on the same side, '
+                              'disagreeing with blanket never-sell advice and stressing that any fraction, '
+                              'such as half, can go to market while the rest keeps paying [y5etlsUEcO0 @ '
+                              '00:13:51]. Yet in the 2020 outlook episode with guest Justin Williams, the '
+                              'counterweight surfaces: buyers were calling that moment a good buying '
+                              'opportunity, so an owner selling into the window risks handing future '
+                              'upside to the buyer [RR2BlQf14H8 @ 00:33:07]. Both camps treat the asset as '
+                              'a tradeable position rather than a family heirloom; they diverge on timing. '
+                              'Hatcher sells certainty and redeployment into a home, 1031 real estate, a '
+                              'farm tract, or a small business, while Sands asks a harder question first: '
+                              'is the buyer bidding into a trough that will reverse?',
+                              'Commodity and basin selection split the room just as hard. Troy Eckard '
+                              'avoids dry gas, naming the Marcellus and Haynesville, and only breaks that '
+                              'rule for a pure rate-of-return play under a solid operator targeting 1.5 to '
+                              '3x [S-yENwSQhi0 @ 00:03:35]. Steven Hatcher walked straight into '
+                              'Haynesville gas anyway: 16 acres in Bojer Parish, Louisiana with two '
+                              'existing and two new wells, bought for $95,000, 40% recouped in nine '
+                              'months, projected at roughly $155,000 total for a 1.63 MOIC and 20% IRR, '
+                              "which lands inside Eckard's own exception band [zV7XrUzBPJQ @ 00:01:54]. "
+                              'Matt Sands goes further on gas, arguing that US gas at $2.50 to $3 per Mcf '
+                              'reflects a glut and that LNG export capacity coming online points to buying '
+                              'depressed gas assets now [uhffuS4DlLQ @ 00:26:17]. On geography, Hatcher '
+                              "calls West Texas 'Mecca' and says to buy near permitting and drilling "
+                              '[I-uVEypiL9w @ 00:02:32], while Sands steers toward overlooked areas under '
+                              'regulatory pressure because the Permian costs multiples per acre and draws '
+                              "more competition. Pick the lane deliberately: Eckard's legacy-hold filter "
+                              "demands multiple stacked formations, Hatcher's filter is the right "
+                              'neighborhood, right operator and multiple wells, and Sands insists on a mix '
+                              'of oil and gas across basins.',
+                              'Auctions and flipping draw the most direct contradictions. On the buy side, '
+                              'Blue Mesa Minerals reports seeing decent deals at auction but never really '
+                              'good ones, since lots have usually been passed over by everybody first '
+                              '[08zWLxyGaag @ 00:01:17]. From the sell side, Matt Sands flips the read: '
+                              'auction commissions run 6 to 10%, but less sophisticated auction buyers may '
+                              'overpay, and Sands positions a fixed, lower advisory percentage as the '
+                              'alternative route to competing bids [y5etlsUEcO0 @ 00:34:41]. Steven '
+                              'Hatcher teaches flipping as a core income stream: a Harrison County, Ohio '
+                              'deal started at 5.5 acres off tax records, courthouse title turned up more '
+                              'acreage, and the contract at $220,000 was assigned for $250,000, netting '
+                              'over 30K with no capital deployed [zV7XrUzBPJQ @ 00:03:32]. Blue Mesa '
+                              'Minerals rejects that model on its own book, describing flippers who buy, '
+                              'wait for a new well, then list on EnergyNet, and stating it keeps '
+                              'everything it buys [vogFrTHuYiY @ 00:09:12]. The two flips are different '
+                              "animals: Hatcher's is a contract assignment with zero capital at risk, "
+                              'while the Blue Mesa complaint targets buy-and-hold-for-a-well arbitrage '
+                              'aimed at auction buyers who miss the coming decline. Sellers should know '
+                              'which flipper is on the other side of the table.'],
+               'table': {'caption': 'Competing Playbooks on Holding, Basins, Channels and Flipping',
+                         'headers': ['Decision Point', 'Playbook A', 'Playbook B', 'Expert Source'],
+                         'rows': [['Hold forever or sell for certainty',
+                                   'Hatcher treats minerals as a balance-sheet asset and sells to shift '
+                                   'price and volume risk to the buyer',
+                                   'Sands and Williams warn buyers see a good buying opportunity, so '
+                                   'selling now risks missing upside',
+                                   'Steven Hatcher | Minerals Guy ([Sz-1-E8zTqU @ 00:05:01]); Matt Sands '
+                                   '([RR2BlQf14H8 @ 00:33:07])'],
+                                  ['Dry gas exposure in the portfolio',
+                                   'Eckard avoids Marcellus and Haynesville dry gas except pure '
+                                   'rate-of-return plays targeting 1.5 to 3x',
+                                   "Lewis pitches Oklahoma's fifth-place dry gas rank; Sands says buy "
+                                   'depressed gas assets ahead of LNG exports',
+                                   'Eckard Enterprises | Oil & Gas Investing ([S-yENwSQhi0 @ 00:03:19]); '
+                                   'Daniel Lewis ([qZGXdB7E1lE @ 00:02:01]); Cashflow Ninja ([uhffuS4DlLQ '
+                                   '@ 00:26:17])'],
+                                  ['Core basin versus overlooked basin',
+                                   'Hatcher calls West Texas Mecca and buys near active permitting and '
+                                   'drilling activity',
+                                   'Sands favors overlooked areas under regulatory pressure because the '
+                                   'Permian costs multiples per acre',
+                                   'Steven Hatcher | Minerals Guy ([I-uVEypiL9w @ 00:02:32]); Cashflow '
+                                   'Ninja ([uhffuS4DlLQ @ 00:36:51])'],
+                                  ['Producing only versus white-space appreciation',
+                                   'Eckard buys only proven, derisked acreage with well-drilled direct '
+                                   'offsets, never speculative minerals',
+                                   'Hatcher paid $325,000 for 60 Benville Parish acres; four wells '
+                                   'followed within nine months, projecting a 3x return',
+                                   'Eckard Enterprises | Oil & Gas Investing ([S-yENwSQhi0 @ 00:01:11]); '
+                                   'Steven Hatcher | Minerals Guy ([zV7XrUzBPJQ @ 00:02:29])'],
+                                  ['Which sale channel fits the asset',
+                                   'Blue Mesa rule: small goes to an individual, big undeveloped to a '
+                                   'broker, big with new wells to auction',
+                                   'Sands markets to reputable end buyers for a fixed, lower percentage '
+                                   'than 6 to 10% auction commissions',
+                                   'Blue Mesa Minerals ([vogFrTHuYiY @ 00:04:34]); Matt Sands '
+                                   '([y5etlsUEcO0 @ 00:35:25])'],
+                                  ['Buying inventory at auction',
+                                   'Blue Mesa has seen decent auction deals but never really good ones, '
+                                   'since lots were passed over first',
+                                   'Sands notes EnergyNet is open to accredited investors only and warns '
+                                   'of overpaying from auction fever',
+                                   'Blue Mesa Minerals ([08zWLxyGaag @ 00:01:17]); Cashflow Ninja '
+                                   '([uhffuS4DlLQ @ 00:06:52])'],
+                                  ['Flipping versus keeping every interest',
+                                   'Hatcher assigned a $220,000 Ohio contract for $250,000, netting over '
+                                   '30K with no capital used',
+                                   'Blue Mesa disagrees with buy-wait-for-a-well-then-auction flippers and '
+                                   'keeps everything it buys',
+                                   'Steven Hatcher | Minerals Guy ([zV7XrUzBPJQ @ 00:03:32]); Blue Mesa '
+                                   'Minerals ([vogFrTHuYiY @ 00:09:28])']]}},
+              {'heading': 'Section 4: Firsthand Failure Modes, Traps & Economics Checks',
+               'paragraphs': ['Title is where practitioners have already watched real money disappear. The '
+                              'Modern Land Investor host spent roughly $3,000 to $4,000 on a '
+                              'mineral-rights attorney to learn severance, parked the severed minerals in '
+                              'a separate entity without researching them, and never earned a dime from '
+                              'them [1c2UBDuXhrk @ 00:02:33]. Matt Sands spells out why diligence is '
+                              'non-negotiable on that same episode: no title company will insure minerals, '
+                              'title runs from patent to present, 640 gross acres can shrink to a quarter '
+                              'net acre, and a $6,000 quiet-title suit on a quarter NMA means pass or pay '
+                              'very little [1c2UBDuXhrk @ 00:57:36]. On Cashflow Ninja, Sands adds '
+                              'fraudulent deeds to the threat list and corroborates every claimed '
+                              'ownership interest against operator title opinions and actual royalty '
+                              'checks [uhffuS4DlLQ @ 00:30:04]. For sellers, the same defects cut the '
+                              'other way: in MRP 310 Sands reports that defects lower offers, cures such '
+                              'as a determination of heirship or reopened probate sit on the critical path '
+                              'to closing, and sellers can negotiate a split of the curative cost '
+                              '[y5etlsUEcO0 @ 00:20:51]. Run title before money moves, or price every '
+                              'defect directly into the offer.',
+                              'The second failure cluster is development that never arrives or decays '
+                              'faster than modeled. Troy Eckard warns that a single-zone position leaves '
+                              "no residual value once it depletes, and that an undercapitalized 'Johnny "
+                              "come lately' operator may wait about two years for each well to pay out, "
+                              'stretching four to twelve analog wells across 10 to 20 years [S-yENwSQhi0 @ '
+                              '00:02:19]. Matt Sands flags that operators may never drill permitted wells '
+                              'and that new wells can underperform the analogs used to price them, so the '
+                              'fix is diversification across states, basins and commodities [uhffuS4DlLQ @ '
+                              '00:27:16]. On Modern Land Investor, Sands adds that an oil-price crash can '
+                              'cancel drilling plans outright, that a property where nothing will happen '
+                              "is a 'goat pasture,' and that one winner has to pay for three or four duds "
+                              '[1c2UBDuXhrk @ 00:31:45]. Blue Mesa Minerals quantifies the decline trap '
+                              "from the auction desk: a new well's revenue can fall to maybe 10% within a "
+                              'year, and $1,000 a month can become $200 a year later [vogFrTHuYiY @ '
+                              '00:07:40]. Any buyer underwriting off a first-month check without a decline '
+                              'curve is paying peak price for a fading stream.',
+                              'The final cluster is the paper itself. Steven Hatcher tells owners to throw '
+                              'away unsolicited mail resembling a check, legal agreement or deed, notes '
+                              'that sending deed-like mailers is illegal in several jurisdictions, and '
+                              'lists evasive identity, no online presence and high-pressure tactics as red '
+                              'flags [WIqkczvqoz0 @ 00:06:12]. The MRP 70 episode with Justin Williams '
+                              'warns that buyers forced to make assumptions will make them in their own '
+                              'favor, which is why an independent consultant or engineer at $600 to $800 '
+                              'per property is pitched as the way to level the playing field [RR2BlQf14H8 '
+                              "@ 00:06:55]. MRP 310 puts the PSA risk bluntly, 'it takes one sentence, "
+                              "Matt, to sign away far more than what you were anticipating,' with "
+                              'royalties in suspense the named target, and Sands adds that leasing at 12% '
+                              "instead of 25% in Reeves, Lea or Eddy counties halves the property's value "
+                              'before any sale [y5etlsUEcO0 @ 00:21:04]. Blue Mesa Minerals closes the '
+                              'loop: no escrow companies will go near mineral rights, so the sale is a '
+                              "signed deed against a wire in a 'Wild Wild West' market, and Sands "
+                              'separately insists on getting paid before handing over the deed '
+                              '[vogFrTHuYiY @ 00:02:21].'],
+               'table': {'caption': 'Firsthand Traps and the Economics Check That Catches Each One',
+                         'headers': ['Trap',
+                                     'What Happened or Can Happen',
+                                     'Economics Check or Counter-Move',
+                                     'Expert Source'],
+                         'rows': [['Severing minerals without researching them',
+                                   'Host spent roughly $3,000 to $4,000 on a mineral-rights attorney, '
+                                   'parked severed minerals in an entity, never earned a dime',
+                                   'Sands targets acreage 1 to 2 miles from active drilling moving your '
+                                   'way, where even undrilled acreage may lease',
+                                   'Modern Land Investor ([1c2UBDuXhrk @ 00:02:33])'],
+                                  ['Assuming mineral title is insurable like surface',
+                                   'No title company will underwrite title insurance on minerals, and 640 '
+                                   'gross acres can equal a quarter net acre',
+                                   'Run title from patent to present and have a landman, title attorney or '
+                                   'oil-and-gas attorney review it',
+                                   'Modern Land Investor ([1c2UBDuXhrk @ 00:16:39])'],
+                                  ['Curative costs exceeding the size of the interest',
+                                   'Title problems can require reopening probate or filing a quiet-title '
+                                   'suit before any deal closes',
+                                   'On a quarter net mineral acre, a $6,000 suit means pass or pay very '
+                                   'little for it',
+                                   'Modern Land Investor ([1c2UBDuXhrk @ 00:57:36])'],
+                                  ['Buying a single producing zone for a legacy hold',
+                                   'Once the lone formation depletes, the position carries no residual '
+                                   'value for the owner at all',
+                                   'Eckard demands primary, secondary and tertiary zones plus a '
+                                   'well-capitalized lessee before buying anything',
+                                   'Eckard Enterprises | Oil & Gas Investing ([S-yENwSQhi0 @ 00:02:04])'],
+                                  ['Pricing a brand-new well off its first checks',
+                                   'Revenue can drop to maybe 10% within a year, and $1,000 a month can '
+                                   'become $200',
+                                   'Underwrite the decline curve; sellers list new wells at auction '
+                                   'because buyers may not realize the drop',
+                                   'Blue Mesa Minerals ([vogFrTHuYiY @ 00:07:40])'],
+                                  ['Signing a cheap lease right before selling',
+                                   'In Reeves, Lea and Eddy counties, a 12% royalty instead of 25% halves '
+                                   "the property's value",
+                                   'Lease first at the strongest royalty rate, then sell; Sands says be '
+                                   'very careful when you do that',
+                                   'Matt Sands ([y5etlsUEcO0 @ 00:27:04])'],
+                                  ['Overpaying on fraudulent or too-good-to-be-true deals',
+                                   'Fraudulent deeds circulate and shysters cold-call accredited investors '
+                                   'with offers that look too good to be true',
+                                   'Corroborate ownership with operator title opinions and royalty checks; '
+                                   'deal directly with owners, not Facebook crackpot deals',
+                                   'Cashflow Ninja ([uhffuS4DlLQ @ 00:30:41]); Steven Hatcher | Minerals '
+                                   'Guy ([zV7XrUzBPJQ @ 00:05:07])']]},
+               'callout': {'kind': 'OPERATOR GATE',
+                           'title': 'Pre-Close Kill Switches',
+                           'body': 'Stop the deal if any of these practitioner-reported traps is live on '
+                                   'either side of the table.',
+                           'items': ['Do not spend on a landman until a signed purchase and sale agreement '
+                                     'is in hand, then adjust price to the net acres actually found '
+                                     '[Cashflow Ninja — uhffuS4DlLQ @ 00:34:38].',
+                                     'Trash unsolicited mail that looks like a check, legal agreement or '
+                                     'deed, and walk from any buyer who is evasive, invisible online or '
+                                     'using high-pressure tactics [Steven Hatcher | Minerals Guy — '
+                                     'WIqkczvqoz0 @ 00:05:35].',
+                                     'Have the PSA reviewed for any sentence that signs over royalties in '
+                                     'suspense before signing anything [Matt Sands — y5etlsUEcO0 @ '
+                                     '00:21:34].',
+                                     'Run title and review revenue statements before buying, because there '
+                                     'are 101 ways to lose your ass on an oil and gas deal [Steven Hatcher '
+                                     '| Minerals Guy — zV7XrUzBPJQ @ 00:05:07].']}}],
+ 'pull_quote': '"It takes one sentence, Matt, to sign away far more than what you were anticipating." — '
+               'Matt Sands (y5etlsUEcO0 @ 00:21:04).',
+ 'diagram_id': 'diag-05',
+ 'action_checklist': ['Assemble mineral deeds, the lease royalty rate, division orders proving NRI and '
+                      'three to four months of check stubs before entertaining any offer [Matt Sands — '
+                      'RR2BlQf14H8 @ 00:03:48].',
+                      'Commission an independent valuation from a consultant or engineer at $600 to $800 '
+                      'per property, or forecast yourself with a $250 one-month Well Database plan [Matt '
+                      'Sands — RR2BlQf14H8 @ 00:07:30].',
+                      'Pull mineral deeds recorded in the past 6 to 12 months to identify active end '
+                      "buyers, then research each buyer's model, such as PE-backed funds [Matt Sands — "
+                      'y5etlsUEcO0 @ 00:32:43].',
+                      'Vet every buyer by first name, last name and city in a Google search, and confirm '
+                      'the company site shows owners, officers, funding and a physical address [Steven '
+                      'Hatcher | Minerals Guy — WIqkczvqoz0 @ 00:03:04].',
+                      "Collect multiple bids and play them off each other, using Voss's Never Split the "
+                      'Difference as the negotiation playbook [Matt Sands — RR2BlQf14H8 @ 00:36:28].',
+                      "On the buy side, pull the commission's interested-parties list for drilling units, "
+                      'verify deeds at the county clerk, send offers, and run DCF at your target return '
+                      '[Cashflow Ninja — uhffuS4DlLQ @ 00:33:33].'],
+ 'statutory_citations': [{'title': 'Matt Sands — MRP 310:  Strategic Portfolio Management: How to Sell '
+                                   'Mineral Rights at Peak Value [00:21:04]',
+                          'url': 'https://www.youtube.com/watch?v=y5etlsUEcO0&t=1264s',
+                          'relevance': 'Primary practitioner testimony on PSA language risk, title cure, '
+                                       'price decks and finding end buyers when selling.'},
+                         {'title': 'Matt Sands — MRP 70: 5 Tips if You Are Thinking About Selling Mineral '
+                                   'Rights [00:20:22]',
+                          'url': 'https://www.youtube.com/watch?v=RR2BlQf14H8&t=1222s',
+                          'relevance': 'Primary practitioner testimony on discount rates, wellbore-only '
+                                       'sales, independent valuation and bid competition.'},
+                         {'title': 'Cashflow Ninja — Matt Sands Shares How To Invest In Mineral Rights & '
+                                   'Royalties [00:34:38]',
+                          'url': 'https://www.youtube.com/watch?v=uhffuS4DlLQ&t=2078s',
+                          'relevance': 'Primary practitioner testimony on the buy-side due-diligence '
+                                       'workflow, auction fever and fraudulent deeds.'},
+                         {'title': 'Steven Hatcher | Minerals Guy — Watch This Before Selling Mineral '
+                                   'Rights! | Types of Mineral Buyers and Who to Avoid! [00:06:12]',
+                          'url': 'https://www.youtube.com/watch?v=WIqkczvqoz0&t=372s',
+                          'relevance': 'Primary practitioner testimony on buyer red flags, vetting tactics '
+                                       'and deed-like unsolicited mailers.'}],
+ 'source_citations': [{'source_type': 'video_pro_tip',
+                       'video_id': 'I-uVEypiL9w',
+                       'title': 'How To Buy Mineral Rights (Get Into This $800B Industry)',
+                       'channel': 'Steven Hatcher | Minerals Guy',
+                       'author': 'Steven Hatcher | Minerals Guy',
+                       'text': 'There is no Zillow, there is no Redfin when it comes to mineral rights.',
+                       'tip': 'There is no Zillow, there is no Redfin when it comes to mineral rights.',
+                       'timestamp': 276,
+                       'timestamp_seconds': 276,
+                       'timestamp_label': '[00:04:36]',
+                       'url': 'https://www.youtube.com/watch?v=I-uVEypiL9w&t=276s',
+                       'markdown': '[00:04:36](https://www.youtube.com/watch?v=I-uVEypiL9w&t=276s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q9.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'S-yENwSQhi0',
+                       'title': '5 Fundamentals of Buying Mineral Rights',
+                       'channel': 'Eckard Enterprises | Oil & Gas Investing',
+                       'author': 'Eckard Enterprises | Oil & Gas Investing',
+                       'text': 'With only a single zone, once it depletes there is no residual value.',
+                       'tip': 'With only a single zone, once it depletes there is no residual value.',
+                       'timestamp': 124,
+                       'timestamp_seconds': 124,
+                       'timestamp_label': '[00:02:04]',
+                       'url': 'https://www.youtube.com/watch?v=S-yENwSQhi0&t=124s',
+                       'markdown': '[00:02:04](https://www.youtube.com/watch?v=S-yENwSQhi0&t=124s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q9.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'WvlIfeyW4-Q',
+                       'title': 'Can Mineral Rights Make You Rich?',
+                       'channel': 'Steven Hatcher | Minerals Guy',
+                       'author': 'Steven Hatcher | Minerals Guy',
+                       'text': 'Selling your minerals is choosing the lower lump sum.',
+                       'tip': 'Selling your minerals is choosing the lower lump sum.',
+                       'timestamp': 202,
+                       'timestamp_seconds': 202,
+                       'timestamp_label': '[00:03:22]',
+                       'url': 'https://www.youtube.com/watch?v=WvlIfeyW4-Q&t=202s',
+                       'markdown': '[00:03:22](https://www.youtube.com/watch?v=WvlIfeyW4-Q&t=202s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q9.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'Sz-1-E8zTqU',
+                       'title': 'Thinking about Selling Mineral Rights? | Reasons to Sell Oil and Gas '
+                                'Mineral Rights and Royalties!',
+                       'channel': 'Steven Hatcher | Minerals Guy',
+                       'author': 'Steven Hatcher | Minerals Guy',
+                       'text': 'Selling shifts the price risk and the volume risk over to the buyer.',
+                       'tip': 'Selling shifts the price risk and the volume risk over to the buyer.',
+                       'timestamp': 301,
+                       'timestamp_seconds': 301,
+                       'timestamp_label': '[00:05:01]',
+                       'url': 'https://www.youtube.com/watch?v=Sz-1-E8zTqU&t=301s',
+                       'markdown': '[00:05:01](https://www.youtube.com/watch?v=Sz-1-E8zTqU&t=301s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q9.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'QKOAcxHhi_I',
+                       'title': 'Own Mineral Rights? | Learn about the Shale Revolution and the Market for '
+                                'Oil and Gas Royalties!',
+                       'channel': 'Steven Hatcher | Minerals Guy',
+                       'author': 'Steven Hatcher | Minerals Guy',
+                       'text': 'Minerals are now a fairly liquid asset that can be sold at market value.',
+                       'tip': 'Minerals are now a fairly liquid asset that can be sold at market value.',
+                       'timestamp': 267,
+                       'timestamp_seconds': 267,
+                       'timestamp_label': '[00:04:27]',
+                       'url': 'https://www.youtube.com/watch?v=QKOAcxHhi_I&t=267s',
+                       'markdown': '[00:04:27](https://www.youtube.com/watch?v=QKOAcxHhi_I&t=267s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q9.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'RR2BlQf14H8',
+                       'title': 'MRP 70: 5 Tips if You Are Thinking About Selling Mineral Rights',
+                       'channel': 'Matt Sands',
+                       'author': 'Matt Sands',
+                       'text': "If they have to make assumptions they're going to make assumptions that "
+                               'are going to be in their favor.',
+                       'tip': "If they have to make assumptions they're going to make assumptions that are "
+                              'going to be in their favor.',
+                       'timestamp': 415,
+                       'timestamp_seconds': 415,
+                       'timestamp_label': '[00:06:55]',
+                       'url': 'https://www.youtube.com/watch?v=RR2BlQf14H8&t=415s',
+                       'markdown': '[00:06:55](https://www.youtube.com/watch?v=RR2BlQf14H8&t=415s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q9.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'MsMdpB0pFnc',
+                       'title': 'Flips Pay Once. Royalties Pay Forever.',
+                       'channel': 'Steven Hatcher | Minerals Guy',
+                       'author': 'Steven Hatcher | Minerals Guy',
+                       'text': "If you're already a hustler who knows how to find deals and get them under "
+                               "contract, you're already 80% of the way there.",
+                       'tip': "If you're already a hustler who knows how to find deals and get them under "
+                              "contract, you're already 80% of the way there.",
+                       'timestamp': 33,
+                       'timestamp_seconds': 33,
+                       'timestamp_label': '[00:00:33]',
+                       'url': 'https://www.youtube.com/watch?v=MsMdpB0pFnc&t=33s',
+                       'markdown': '[00:00:33](https://www.youtube.com/watch?v=MsMdpB0pFnc&t=33s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q9.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'qZGXdB7E1lE',
+                       'title': 'Sell Mineral Rights Oklahoma Oil and Gas Leases Royalty Income from '
+                                'Mineral Rights',
+                       'channel': 'Daniel Lewis',
+                       'author': 'Daniel Lewis',
+                       'text': 'We buy from 5 to 50,000 net mineral acres, partial sales are fine, and '
+                               'there is no pressure.',
+                       'tip': 'We buy from 5 to 50,000 net mineral acres, partial sales are fine, and '
+                              'there is no pressure.',
+                       'timestamp': 105,
+                       'timestamp_seconds': 105,
+                       'timestamp_label': '[00:01:45]',
+                       'url': 'https://www.youtube.com/watch?v=qZGXdB7E1lE&t=105s',
+                       'markdown': '[00:01:45](https://www.youtube.com/watch?v=qZGXdB7E1lE&t=105s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q9.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': '1c2UBDuXhrk',
+                       'title': 'Exploring Mineral Rights with Matt Sands: A Guide for Land Investors',
+                       'channel': 'Modern Land Investor',
+                       'author': 'Modern Land Investor',
+                       'text': 'No title company will underwrite title insurance on minerals.',
+                       'tip': 'No title company will underwrite title insurance on minerals.',
+                       'timestamp': 999,
+                       'timestamp_seconds': 999,
+                       'timestamp_label': '[00:16:39]',
+                       'url': 'https://www.youtube.com/watch?v=1c2UBDuXhrk&t=999s',
+                       'markdown': '[00:16:39](https://www.youtube.com/watch?v=1c2UBDuXhrk&t=999s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q9.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'uhffuS4DlLQ',
+                       'title': 'Matt Sands Shares How To Invest In Mineral Rights & Royalties',
+                       'channel': 'Cashflow Ninja',
+                       'author': 'Cashflow Ninja',
+                       'text': "The way that I try to structure it is I'm not outlaying the expense of "
+                               'hiring a landman to go do that for me until I have a signed purchase and '
+                               'sale agreement.',
+                       'tip': "The way that I try to structure it is I'm not outlaying the expense of "
+                              'hiring a landman to go do that for me until I have a signed purchase and '
+                              'sale agreement.',
+                       'timestamp': 2078,
+                       'timestamp_seconds': 2078,
+                       'timestamp_label': '[00:34:38]',
+                       'url': 'https://www.youtube.com/watch?v=uhffuS4DlLQ&t=2078s',
+                       'markdown': '[00:34:38](https://www.youtube.com/watch?v=uhffuS4DlLQ&t=2078s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q9.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'y5etlsUEcO0',
+                       'title': 'MRP 310:  Strategic Portfolio Management: How to Sell Mineral Rights at '
+                                'Peak Value',
+                       'channel': 'Matt Sands',
+                       'author': 'Matt Sands',
+                       'text': 'It takes one sentence, Matt, to sign away far more than what you were '
+                               'anticipating.',
+                       'tip': 'It takes one sentence, Matt, to sign away far more than what you were '
+                              'anticipating.',
+                       'timestamp': 1264,
+                       'timestamp_seconds': 1264,
+                       'timestamp_label': '[00:21:04]',
+                       'url': 'https://www.youtube.com/watch?v=y5etlsUEcO0&t=1264s',
+                       'markdown': '[00:21:04](https://www.youtube.com/watch?v=y5etlsUEcO0&t=1264s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q9.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'y5etlsUEcO0',
+                       'title': 'MRP 310:  Strategic Portfolio Management: How to Sell Mineral Rights at '
+                                'Peak Value',
+                       'channel': 'Matt Sands',
+                       'author': 'Matt Sands',
+                       'text': 'Commodity price timing and then development timing are the two biggest '
+                               "levers on value when you're looking to sell.",
+                       'tip': 'Commodity price timing and then development timing are the two biggest '
+                              "levers on value when you're looking to sell.",
+                       'timestamp': 1518,
+                       'timestamp_seconds': 1518,
+                       'timestamp_label': '[00:25:18]',
+                       'url': 'https://www.youtube.com/watch?v=y5etlsUEcO0&t=1518s',
+                       'markdown': '[00:25:18](https://www.youtube.com/watch?v=y5etlsUEcO0&t=1518s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q9.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': '08zWLxyGaag',
+                       'title': 'How to Buy Mineral Rights and Oil & Gas Royalties',
+                       'channel': 'Blue Mesa Minerals',
+                       'author': 'Blue Mesa Minerals',
+                       'text': "Decent deals, I don't think I've ever seen any really good deals at "
+                               'auction.',
+                       'tip': "Decent deals, I don't think I've ever seen any really good deals at "
+                              'auction.',
+                       'timestamp': 77,
+                       'timestamp_seconds': 77,
+                       'timestamp_label': '[00:01:17]',
+                       'url': 'https://www.youtube.com/watch?v=08zWLxyGaag&t=77s',
+                       'markdown': '[00:01:17](https://www.youtube.com/watch?v=08zWLxyGaag&t=77s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q9.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'ehsvjfRcJIM',
+                       'title': 'Selling Mineral Rights? | Learn about the History of Mineral Buying and '
+                                'How to Protect Yourself!',
+                       'channel': 'Steven Hatcher | Minerals Guy',
+                       'author': 'Steven Hatcher | Minerals Guy',
+                       'text': 'The knowledge arbitrage exists where the buyer has superior knowledge, '
+                               'superior information than the seller does about the thing being sold.',
+                       'tip': 'The knowledge arbitrage exists where the buyer has superior knowledge, '
+                              'superior information than the seller does about the thing being sold.',
+                       'timestamp': 333,
+                       'timestamp_seconds': 333,
+                       'timestamp_label': '[00:05:33]',
+                       'url': 'https://www.youtube.com/watch?v=ehsvjfRcJIM&t=333s',
+                       'markdown': '[00:05:33](https://www.youtube.com/watch?v=ehsvjfRcJIM&t=333s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q9.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'WIqkczvqoz0',
+                       'title': 'Watch This Before Selling Mineral Rights! | Types of Mineral Buyers and '
+                                'Who to Avoid!',
+                       'channel': 'Steven Hatcher | Minerals Guy',
+                       'author': 'Steven Hatcher | Minerals Guy',
+                       'text': "It's actually illegal in several jurisdictions for mineral buyers to send "
+                               'out anything on an unsolicited basis that looks like a mineral deed.',
+                       'tip': "It's actually illegal in several jurisdictions for mineral buyers to send "
+                              'out anything on an unsolicited basis that looks like a mineral deed.',
+                       'timestamp': 372,
+                       'timestamp_seconds': 372,
+                       'timestamp_label': '[00:06:12]',
+                       'url': 'https://www.youtube.com/watch?v=WIqkczvqoz0&t=372s',
+                       'markdown': '[00:06:12](https://www.youtube.com/watch?v=WIqkczvqoz0&t=372s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q9.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'vogFrTHuYiY',
+                       'title': 'Three Ways to Sell Your Mineral Rights',
+                       'channel': 'Blue Mesa Minerals',
+                       'author': 'Blue Mesa Minerals',
+                       'text': 'There are no escrow companies who will go near mineral rights.',
+                       'tip': 'There are no escrow companies who will go near mineral rights.',
+                       'timestamp': 141,
+                       'timestamp_seconds': 141,
+                       'timestamp_label': '[00:02:21]',
+                       'url': 'https://www.youtube.com/watch?v=vogFrTHuYiY&t=141s',
+                       'markdown': '[00:02:21](https://www.youtube.com/watch?v=vogFrTHuYiY&t=141s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q9.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'zV7XrUzBPJQ',
+                       'title': '3 Ways to Make Money With Mineral Rights (Beginner Friendly)',
+                       'channel': 'Steven Hatcher | Minerals Guy',
+                       'author': 'Steven Hatcher | Minerals Guy',
+                       'text': 'There are 101 ways to lose your ass on an oil and gas deal.',
+                       'tip': 'There are 101 ways to lose your ass on an oil and gas deal.',
+                       'timestamp': 307,
+                       'timestamp_seconds': 307,
+                       'timestamp_label': '[00:05:07]',
+                       'url': 'https://www.youtube.com/watch?v=zV7XrUzBPJQ&t=307s',
+                       'markdown': '[00:05:07](https://www.youtube.com/watch?v=zV7XrUzBPJQ&t=307s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q9.'}]}

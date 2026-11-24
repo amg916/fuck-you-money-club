@@ -8,49 +8,49 @@
       "E-COMMERCE"
     ],
     "deck": [
-      "TRACK CONTRIBUTION MARGIN. AUTOMATE 3PL.",
-      "PROTECT CASH CYCLE."
+      "THEY TEST NICHES, STRICT MAP POLICIES, AND MULTI-TOUCH SUPPLIER OUTREACH",
+      "THEY BUILD AUTHORIZED-DEALER STORES ON GOOGLE SHOPPING AT 15-30% MARGINS"
     ],
-    "lead": "Lean 5-Person E-Commerce Operations Built on Profit-on-Ad-Spend (POAS), 3PL SLAs, Landed-Cost Discipline & Automated LTV",
-    "summary": "Avoid deceptive 'passive store' scams and run real 3PL and authorized-dealer retail with strict inventory, tariff, and return controls.",
+    "lead": "Practitioners show how authorized-dealer stores list $1,000-plus products from established US brands, collect the customer's money first, and let the supplier ship within days, from opening supplier accounts through conversion and scaling to eight figures.",
+    "summary": "All 12 chapters synthesize 192 verbatim YouTube practitioner testimonies into one operating playbook for automated e-commerce. Every claim, metric, and quote carries timestamped inline attribution to the practitioner and video it came from.",
     "chapters": [
-      "Business model & revenue boundaries",
-      "Decision-makers & payment rails",
-      "Unit economics & margin waterfall",
-      "Startup capital & lean stack",
-      "Beginner traps & failure modes",
-      "Sourcing & first deals",
-      "End-to-end operating blueprint",
-      "Public records, APIs & tooling",
-      "Contracts, statutes & scripts",
-      "Automation & distribution loops",
-      "Small-team pod & exit valuation",
-      "First 30-day launch sprint"
+      "The High-Ticket Dropshipping Model: Niches, Products, and Real Store Results",
+      "Opening Supplier Accounts: High-Ticket Brands and Amazon Wholesale Distributors",
+      "Unit Economics and Contribution Margin",
+      "Landed Cost: Duties, Tariffs, and the True Cost of Goods",
+      "Cash Conversion Cycle and Working Capital",
+      "Sales Tax Nexus and Compliance Automation",
+      "Outsourced Fulfillment: Inside the 3PL",
+      "Automating the Back Office, and the Automation Traps",
+      "Returns, Refunds, and Chargebacks",
+      "Automated Support and Retention",
+      "Google Shopping Feeds and Merchant Center",
+      "Conversion and Scaling to Eight Figures"
     ],
     "flow": [
       [
-        "SOURCE",
-        "Mine high-intent deal triggers"
+        "VALIDATE NICHE",
+        "Confirm demand with WordStream or Semrush, keep evergreen trends, drop anything seasonal or under $1,000, and skip products sold by Best Buy, Home Depot, Lowe's or Walmart"
       ],
       [
-        "UNDERWRITE",
-        "Screen margin, float & rules"
+        "BENCHMARK DEALERS",
+        "Search 'buy [brand] [product]' in the Shopping tab, count thriving online-only dealers through Similarweb math, and confirm strict MAP on identical models"
       ],
       [
-        "ENGAGE",
-        "Execute mandate or pre-sell"
+        "APPLY TO BRANDS",
+        "Register a real business and apply to 10-20 brands at once for 30-50% acceptance, following up on day 1, day 4, a call on day 8, LinkedIn on day 12, and a final email on day 18"
       ],
       [
-        "DELIVER",
-        "Run standardized SOP & ledger"
+        "VET SUPPLIERS",
+        "Check address, About Us, social media, Trustpilot and BBB, and reject $5,000-plus minimums, drop-ship fees over $15 per order, or margin under 10 to 15 percent"
       ],
       [
-        "VERIFY",
-        "Audit quality, scrubs & statutes"
+        "LIST AND ADVERTISE",
+        "Price chargeback, return and warranty exposure into each brand's margin, then run bottom-of-funnel Google Shopping with Meta pushed to remarketing"
       ],
       [
-        "COMPOUND",
-        "Reconcile cash & scale pod"
+        "COLLECT AND SHIP",
+        "Collect the customer's money first, email the supplier the order, let them ship within days, and keep adding brands so no single supplier dominates revenue"
       ]
     ]
   },
@@ -58,10 +58,10 @@
   "book_series": "THE BIG MONEY PLAYBOOKS",
   "tagline": "Big Money. Small Teams. No Bullshit.",
   "title": "AUTOMATED E-COMMERCE",
-  "subtitle": "The Complete Playbook for Automated E-Commerce: $250,000–$2,000,000 USD Annually with a 2 FT + 3 C (5 People) Core Pod, Expanding to Seven at Scale",
+  "subtitle": "Authorized-dealer dropshipping on $1,000-plus US brands, supplier accounts won by persistent outreach, contribution margin before CAC, landed cost beyond the invoice, a shorter cash cycle, register-first sales tax, tested 3PLs, scam-proof automation, budgeted returns, AI support with human refund gates, feed-first Google Shopping, and scaling on CAC payback",
   "chapter_count": 12,
-  "total_word_count": 75913,
-  "expert_youtube_link_count": 180,
+  "total_word_count": 73095,
+  "expert_youtube_link_count": 207,
   "min_expert_youtube_links_required": 150,
   "target_expert_youtube_links": "150-200+",
   "min_expert_youtube_links_per_chapter": 12,
@@ -76,5 +76,5 @@
   "publication_status": "approved_master",
   "public_deploy_approved": false,
   "paid_sales_approved": false,
-  "updated_at": "2026-11-23T22:48:01Z"
+  "updated_at": "2026-11-24T21:35:15Z"
 }

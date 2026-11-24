@@ -1,626 +1,842 @@
 from __future__ import annotations
 
-CHAPTER_6 = {
-    "id": "Q6",
-    "chapter_id": "Q6",
-    "chapter_number": 6,
-    "question_number": 6,
-    "slug": "sourcing-demand-mining-first-medical-equipment-resale-deals",
-    "question_prompt": "Where do high-margin deals, clients, or undervalued assets hide in medical equipment resale, and what repeatable outbound/inbound sourcing system lands the first 3-to-10 wins (2–7 months)?",
-    "kicker": "Q6 / THE BIG MONEY PLAYBOOKS",
-    "title": "Sourcing, Demand Mining & Landing Your First Deals",
-    "subtitle": "Hospital Replacement Signals, Practice-Closure Lots, Buyer-Led Specialty Sourcing, Biomed Acceptance, and FDA/HIPAA Controls",
-    "layout_template": "step_by_step_sop",
-    "reading_time_minutes": 14,
-    "executive_summary": (
-        "Candidate #14, Medical Equipment Resale, ranks #20 with a 85/100 "
-        "Money-to-Manpower Score: attractive spreads depend on disciplined capital "
-        "deployment and technical labor. This chapter maps three operator plays: "
-        "hospital replacement-cycle capture, practice-closure asset recovery, and "
-        "buyer-led specialty sourcing. Build demand records before bidding, turn "
-        "public replacement signals into authorized seller conversations, and "
-        "quote serial-specific equipment with documented biomed acceptance. The "
-        "canonical annual owner profits are $25,000 Conservative, $164,000 Base, "
-        "and $396,000 Scaled; revenue means gross equipment resale proceeds, not "
-        "customer procedure receipts. A two-employee, four-contractor pod targets "
-        "its first three-to-ten completed deals over three-to-nine months by "
-        "limiting simultaneous lots, verifying transferable functionality, and "
-        "making every outreach sequence answer a concrete replacement need."
-    ),
-    "key_metrics": [
-        {
-            "label": "Conservative",
-            "value": "$250,000",
-            "context": "Annual gross equipment resale proceeds; acquisition and refurbishment included in margin",
-            "note": "10% net margin; $25,000 annual owner net profit; 1 FT + 3 C",
-        },
-        {
-            "label": "Base",
-            "value": "$1,025,000",
-            "context": "Annual gross equipment resale proceeds; acquisition and refurbishment included in margin",
-            "note": "16.0% net margin; $164,000 annual owner net profit; 1 FT + 3 C",
-        },
-        {
-            "label": "Scaled",
-            "value": "$1,800,000",
-            "context": "Annual gross equipment resale proceeds; acquisition and refurbishment included in margin",
-            "note": "22% net margin; $396,000 annual owner net profit; 1 FT + 3 C",
-        },
-    ],
-    "sections": [
-        {
-            "heading": "1. Mine replacement events, not indiscriminate equipment lists",
-            "epistemic_status": "operating_framework",
-            "paragraphs": [
-                (
-                    "Start with three mapped plays and reject opportunities that fit none of them. "
-                    "Play one captures hospital replacement cycles: diagnostic systems, surgical "
-                    "equipment, and compatible accessories displaced by a funded replacement rather "
-                    "than by technical failure. Play two recovers practice-closure assets: veterinary "
-                    "clinics, ambulatory practices, and aesthetic operators selling identifiable "
-                    "equipment under a documented ownership chain. Play three sources against "
-                    "qualified specialty demand: a buyer specifies an application, configuration, "
-                    "budget, and installation window before the pod locates supply. The first "
-                    "employee owns seller discovery, acquisition economics, and inventory records; "
-                    "the second owns buyer qualification, quotations, and acceptance scheduling. "
-                    "Four fractional contractors cover biomed inspection, decontamination and data "
-                    "handling, insured transport, and bookkeeping with transaction-document "
-                    "administration. Contract specialists remain subject to competency checks; a "
-                    "bookkeeper cannot substitute for device counsel when a classification question "
-                    "arises. Begin with two supported device families and one geographic service "
-                    "radius. Favor equipment whose accessories, service access, and test procedures "
-                    "the pod can actually obtain. A cheap laser without transferable activation "
-                    "or a diagnostic platform without supported probes is not undervalued inventory; "
-                    "it is an unresolved restoration project. Record the exclusion reason so the "
-                    "same attractive photograph does not consume another inspection slot."
-                ),
-                (
-                    "Create a weekly signal queue from hospital board packets, capital-budget "
-                    "resolutions, public procurement awards, state facility-license changes, "
-                    "bankruptcy sale notices, and disclosed clinic relocations. A replacement award "
-                    "is a timing hypothesis, not proof that the outgoing device belongs to the "
-                    "hospital or will be sold. Capture the source URL, publication date, facility, "
-                    "likely equipment family, expected removal month, and named public contact. "
-                    "Use SAM.gov and public hospital purchasing portals for award research, then "
-                    "check whether an incumbent vendor already holds a trade-in right. Review "
-                    "GovDeals and Public Surplus descriptions for serial lists, inspection windows, "
-                    "removal obligations, buyer premiums, and seller authority. PACER can identify "
-                    "a proceeding, but the applicable sale order and authorized representative "
-                    "determine what transaction is actually available. Do not treat a corporate "
-                    "dissolution filing as permission to collect property. Where a record is "
-                    "ambiguous, ask one factual question: who controls disposition of these named "
-                    "assets, and when can their condition be verified? Route every answer into "
-                    "inventory tracking rather than an unstructured inbox. Schedule fresh research "
-                    "twice weekly, deduplicate by facility and event, and expire replacement "
-                    "signals after thirty days without confirmation so stale awards cannot inflate "
-                    "the sourcing pipeline."
-                ),
-                (
-                    "Mine buyer intent in parallel because seller abundance does not establish "
-                    "resale demand. Watch state facility applications, veterinary practice "
-                    "acquisitions, new specialty locations, public equipment solicitations, and "
-                    "job postings that indicate a service expansion. These signals justify a "
-                    "conversation, not a claim about an organization's purchasing budget. For "
-                    "diagnostic buyers, ask about probe compatibility, DICOM requirements, room "
-                    "power, service coverage, and clinical workflow. For surgical buyers, establish "
-                    "the exact accessory chain, sterilization requirements, and biomedical acceptance "
-                    "process. Veterinary buyers may prioritize ruggedness and local support, while "
-                    "aesthetic buyers often depend on consumable availability, activation rights, "
-                    "and an appropriately licensed operating setting. Verify each device's intended "
-                    "use rather than assuming that a veterinary destination removes every relevant "
-                    "requirement. Build narrowly scoped inbound pages naming supported models, "
-                    "available configurations, inspection deliverables, and service geography. "
-                    "Use HubSpot or a structured spreadsheet for demand records and Google Search "
-                    "Console to identify search terms that produce qualified configuration requests. "
-                    "Do not advertise inventory you merely saw at auction as inventory you own. "
-                    "Publish procurement briefs for sought equipment, with condition requirements "
-                    "and response instructions. The useful inbound conversion is a documented "
-                    "buying requirement, not a download, an anonymous price inquiry, or an "
-                    "unverified expression of interest."
-                ),
-            ],
-            "table": {
-                "caption": "Six Public and Commercial Signals Converted into Authorized Sourcing Conversations",
-                "headers": [
-                    "Signal and mapped play",
-                    "Evidence to capture",
-                    "First operator question",
-                    "Reason to stop pursuit",
-                ],
-                "rows": [
-                    [
-                        "Hospital replacement-cycle capture through public capital committee minutes",
-                        "Funded replacement description, department contact, and anticipated removal month",
-                        "Who owns the outgoing serials and controls their disposition?",
-                        "Existing trade-in agreement assigns the equipment to another vendor",
-                    ],
-                    [
-                        "Hospital replacement-cycle capture through GovDeals or Public Surplus listings",
-                        "Serial schedule, buyer premium, inspection access, and removal obligations",
-                        "Can our biomed inspect every offered serial before bidding?",
-                        "Inspection restrictions prevent verification of the essential operating configuration",
-                    ],
-                    [
-                        "Practice-closure asset recovery through state facility closure records",
-                        "Facility identity, closure timing, authorized representative, and equipment photographs",
-                        "Which assets are owned outright rather than leased or financed?",
-                        "Seller cannot establish ownership or obtain required lien releases",
-                    ],
-                    [
-                        "Practice-closure asset recovery through court-supervised equipment sale notices",
-                        "Applicable sale order, asset schedule, representative authority, and deadlines",
-                        "Which order provisions establish the proposed asset transfer conditions?",
-                        "Offered assets cannot be matched to the controlling documents",
-                    ],
-                    [
-                        "Buyer-led specialty sourcing through veterinary expansion and acquisition announcements",
-                        "Clinical application, opening schedule, supported models, and service territory",
-                        "What installed configuration must be working before your opening?",
-                        "Required configuration lacks obtainable parts or competent local service",
-                    ],
-                    [
-                        "Buyer-led specialty sourcing through diagnostic and aesthetic procurement requests",
-                        "Budget authority, accessory requirements, activation terms, and acceptance protocol",
-                        "Who signs acceptance and which tests determine satisfactory delivery?",
-                        "Buyer requirements depend on unsupported software or unavailable consumables",
-                    ],
-                ],
-            },
-            "callout": {
-                "kind": "INSIDER PRO-TIPS",
-                "title": "Find the spread inside configuration and timing",
-                "body": "Experienced resellers price the complete usable system and the removal calendar before negotiating the headline purchase price.",
-                "items": [
-                    "Ask the hospital biomed department for the outgoing asset configuration and service chronology; reconcile them to the disposition officer's serial schedule.",
-                    "Photograph probe labels, footswitches, handpieces, carts, and installed options separately; one missing proprietary accessory can erase the apparent equipment discount.",
-                    "Obtain a written OEM or authorized-provider answer on software transfer and reactivation costs before treating an unlocked demonstration as transferable functionality.",
-                    "Offer a documented pickup window after seller authority is verified; reliable removal can win a lot without increasing the acquisition price.",
-                ],
-            },
-        },
-        {
-            "heading": "2. Qualify demand and underwrite serial-specific inventory",
-            "epistemic_status": "operating_framework",
-            "paragraphs": [
-                (
-                    "Score each opportunity out of one hundred using five weighted fields: verified "
-                    "buyer demand earns thirty points, usable and supportable condition twenty-five, "
-                    "documented seller authority twenty, landed contribution fifteen, and executable "
-                    "pickup timing ten. Award demand points only against a named buyer's recorded "
-                    "requirements, purchasing authority, budget, and target date. Award condition "
-                    "points against inspection evidence rather than the phrase working when "
-                    "removed. A score of eighty merits a quotation and reserved inspection "
-                    "capacity; sixty through seventy-nine remains research only; anything lower "
-                    "leaves the active queue. These are internal operating thresholds, not measured "
-                    "industry predictors. Critical failures override the total: unresolved ownership, "
-                    "inaccessible stored patient data, missing essential accessories, or an "
-                    "unresolved recall affecting safe operation prevents purchase. Match seller "
-                    "identity, serials, bills of sale, lease releases, and relevant lien records. "
-                    "Under UCC section 9-315, a security interest can continue in disposed "
-                    "collateral unless an applicable exception or authorized disposition applies; "
-                    "verify the governing state's enactment and obtain releases where needed. A "
-                    "search result alone does not establish clean title. Assign an employee to "
-                    "resolve each failed field, give the task a dated next action, and prohibit "
-                    "a persuasive seller narrative from silently changing the score."
-                ),
-                (
-                    "Underwrite the delivered configuration, not the auction hammer price. An "
-                    "illustrative unit sold for $25,000 might require $12,000 acquisition, $600 "
-                    "buyer premium, $2,400 refurbishment, $1,200 freight and rigging, $500 data "
-                    "handling and decontamination, $300 payment costs, and a $1,000 warranty "
-                    "reserve. Those direct charges total $18,000, leaving $7,000 contribution "
-                    "before allocated overhead, carrying costs, and other business expenses. "
-                    "Applicable unrecoverable taxes and additional installation costs must be "
-                    "added when present; the example assumes none beyond the stated charges. "
-                    "That twenty-eight-percent contribution is not the canonical net margin. "
-                    "Backsolve the purchase ceiling from the buyer's supported delivered price "
-                    "less every nonpurchase charge and the required contribution. Use written "
-                    "carrier quotes and a biomed scope rather than rounded guesses. Within the "
-                    "$20,000–$95,000 startup-capital range, keep a separate reserve for operating "
-                    "expenses, warranty work, and delayed collections. Initially cap each purchase "
-                    "at twenty-five percent of deployable inventory cash and hold no more than "
-                    "two unaccepted lots. Both are conservative internal controls, not scorecard "
-                    "assumptions. Request a time-limited seller inspection option where possible; "
-                    "do not describe a refundable buyer reservation as earned resale revenue "
-                    "or spend it as unrestricted margin."
-                ),
-                (
-                    "Make the inspection packet answer what the next owner will need to operate "
-                    "the equipment. Index service history by serial, record firmware and licensed "
-                    "options, check FDA recall records, and have a competent biomed document "
-                    "model-specific functional and electrical-safety testing. Record instruments, "
-                    "calibration status, test conditions, deficiencies, corrective work, and final "
-                    "results. Cleaning evidence must identify the method and its compatibility "
-                    "with manufacturer instructions; a cosmetic wipe is not decontamination "
-                    "evidence. For ultrasound consoles, imaging workstations, and other storage-bearing "
-                    "devices, isolate storage before any demonstration or transfer. Determine "
-                    "whether the reseller or contractor is acting as a HIPAA business associate; "
-                    "when applicable, establish the required agreement and safeguards before "
-                    "handling protected information. Apply the seller's authorized sanitization "
-                    "method, retain verification evidence without patient content, and quarantine "
-                    "media that cannot be cleared. Use NIST SP 800-88 as technical guidance, "
-                    "not as a substitute for HIPAA obligations. Evaluate modifications against "
-                    "FDA's servicing-versus-remanufacturing distinction; changes that significantly "
-                    "alter performance, safety specifications, or intended use require a different "
-                    "regulatory analysis. Assess applicable registration, listing, quality-system, "
-                    "labeling, and state dealer or radiation-equipment requirements before expanding "
-                    "the offering. The pod should reject a category it cannot competently inspect "
-                    "rather than manufacture confidence through a longer sales description."
-                ),
-            ],
-            "table": {
-                "caption": "Weighted Qualification and Evidence Required Before Inventory Cash Is Committed",
-                "headers": [
-                    "Qualification dimension",
-                    "Evidence earning the points",
-                    "Assigned verification owner",
-                    "Purchase decision or failure response",
-                ],
-                "rows": [
-                    [
-                        "Verified buyer demand carries thirty available qualification points",
-                        "Named buyer confirms application, budget, purchasing authority, and deadline",
-                        "Sales employee records requirements and obtains written configuration confirmation",
-                        "Without verified demand, retain the lead without speculative purchasing",
-                    ],
-                    [
-                        "Usable supported condition carries twenty-five available qualification points",
-                        "Biomed report establishes functionality, accessories, service access, and deficiencies",
-                        "Biomed contractor documents test results against the identified serial",
-                        "Unresolved essential functionality prevents purchase despite an attractive price",
-                    ],
-                    [
-                        "Documented seller authority carries twenty available qualification points",
-                        "Ownership records, representative authority, and applicable releases match serials",
-                        "Sourcing employee coordinates document review and resolves ownership discrepancies",
-                        "Unresolved ownership overrides the aggregate qualification score immediately",
-                    ],
-                    [
-                        "Landed contribution carries fifteen available opportunity qualification points",
-                        "Delivered buyer price exceeds documented direct charges and contribution target",
-                        "Sourcing employee and bookkeeping contractor reconcile the acquisition worksheet",
-                        "Reduce the bid or abandon transactions below required contribution",
-                    ],
-                    [
-                        "Executable pickup timing carries ten available qualification points",
-                        "Seller access, carrier capacity, decontamination, and destination readiness align",
-                        "Transport contractor confirms rigging, insurance, access, and delivery appointment",
-                        "Reprice actual delay costs before accepting revised removal obligations",
-                    ],
-                    [
-                        "Patient data and unresolved recalls are overriding purchase blockers",
-                        "Sanitization verification and recall resolution support the proposed transfer",
-                        "Data contractor and biomed contractor provide separate documented findings",
-                        "Quarantine affected assets until the specific blocker is resolved",
-                    ],
-                ],
-            },
-            "callout": {
-                "kind": "OPERATOR GATE",
-                "title": "Four checks before the pod commits acquisition cash",
-                "body": "A high aggregate score never compensates for missing authority, unsafe condition, inaccessible data, or an unexecutable delivery.",
-                "items": [
-                    "Match seller authority, serial schedule, ownership evidence, and required releases; resolve leased equipment and security interests before executing the purchase.",
-                    "Obtain configuration-specific biomed results, accessory reconciliation, recall disposition, and a service path that covers the buyer's location.",
-                    "Verify authorized data sanitization and decontamination records; prohibit transfer of unresolved patient-bearing storage or inadequately processed equipment.",
-                    "Confirm written delivered-price economics, available acquisition cash, contractor capacity, and buyer acceptance terms before releasing funds.",
-                ],
-            },
-        },
-        {
-            "heading": "3. Run a permission-aware cadence that earns the first purchase orders",
-            "epistemic_status": "operating_framework",
-            "paragraphs": [
-                (
-                    "Run separate seller and buyer sequences so each message asks for one "
-                    "appropriate next action. On day one, send a short business email referencing "
-                    "the public replacement or expansion event and naming the equipment family. "
-                    "For sellers, request the disposition contact and serial schedule; for buyers, "
-                    "offer a configuration worksheet and ask which application must be supported. "
-                    "On day three, make a manual call to a published business number during "
-                    "appropriate local hours. On day six, send one useful artifact: a removal "
-                    "checklist to the seller or a redacted sample acceptance packet to the buyer. "
-                    "On day ten, follow up through a legitimate professional introduction or "
-                    "platform message without scraping restricted information. On day fifteen, "
-                    "close the sequence with a direct question about timing, then stop unless "
-                    "the contact requests continued engagement. Follow CAN-SPAM requirements for "
-                    "commercial email, including accurate headers, a valid postal address, and "
-                    "a working opt-out honored within the statutory period. Maintain suppression "
-                    "records across employees and contractors. Avoid automated calls, prerecorded "
-                    "messages, and unsolicited texts without a documented assessment of TCPA "
-                    "and applicable state requirements. A public telephone number is not blanket "
-                    "permission for every outreach technology. Measure replies that advance "
-                    "qualification, not merely opens."
-                ),
-                (
-                    "Treat conversion benchmarks as a testable cohort plan, not a market fact. "
-                    "For an initial ninety-day buyer cohort, model 120 researched accounts "
-                    "producing forty-eight qualified requirements, twenty-four configuration calls, "
-                    "twelve accepted inspection packets or demonstrations, six signed purchase "
-                    "orders, and three delivered units with completed acceptance. The stage "
-                    "rates are forty percent followed by four successive fifty-percent transitions; "
-                    "the overall researched-account-to-accepted-sale rate is 2.5 percent. These "
-                    "are deliberately explicit planning assumptions that actual results must "
-                    "replace. Define a qualified requirement as a named buying organization with "
-                    "application, configuration, budget authority, and timing recorded. Count a "
-                    "purchase order only when its commercial conditions are understood; count "
-                    "a completed win only after contractual delivery and acceptance. Track seller "
-                    "sourcing separately, because several potential lots can support one buyer "
-                    "and one lot can contain several units. Use distinct account, lot, serial, "
-                    "and transaction identifiers to prevent double counting. At day thirty, "
-                    "inspect the largest stage loss and revise one variable: target segment, "
-                    "configuration fit, evidence packet, or commercial terms. Do not solve weak "
-                    "qualification by buying more equipment. Extend the same measured system "
-                    "toward three-to-ten wins over three-to-nine months while respecting the "
-                    "pod's actual inspection and delivery capacity."
-                ),
-                (
-                    "Handle objections with evidence and scoped commercial choices rather than "
-                    "discount reflexes. When a buyer says a marketplace listing is cheaper, "
-                    "compare serial-specific accessories, tested functions, activation, freight, "
-                    "installation, and warranty coverage line by line. If they want OEM service, "
-                    "seek written eligibility and pricing from the relevant provider; an "
-                    "independent reseller's optimism cannot establish manufacturer support. When "
-                    "they fear downtime, specify response hours, available parts, escalation "
-                    "contacts, and the exact remedy the pod can fund. Do not promise a loaner "
-                    "unless compatible stock is reserved. For a seller demanding immediate "
-                    "payment, explain which ownership and inspection evidence allows a faster "
-                    "close and offer a dated inspection appointment. For a buyer seeking a "
-                    "trial, price freight, damage responsibility, acceptance tests, return timing, "
-                    "and restocking treatment explicitly before shipment. If the objection is "
-                    "cash timing, refer the buyer to an independent equipment lender and "
-                    "verify funding before releasing inventory; keep lender fees separate from "
-                    "equipment economics. End every substantive call with an agreed document, "
-                    "responsible person, and date. Send a concise recap distinguishing confirmed "
-                    "facts from open conditions. A quotation should expire when its freight, "
-                    "inventory availability, or service assumptions expire, not remain indefinitely "
-                    "available because the CRM never scheduled a follow-up."
-                ),
-            ],
-            "table": {
-                "caption": "Objection Responses That Replace Vague Reassurance with Closing Evidence",
-                "headers": [
-                    "Objection heard during qualification",
-                    "Evidence to put in front of buyer",
-                    "Commercial response within pod capacity",
-                    "Recorded next action and stopping condition",
-                ],
-                "rows": [
-                    [
-                        "Another marketplace listing shows a substantially lower asking price",
-                        "Compare accessories, activation, testing, delivered freight, and warranty scope",
-                        "Offer a matched configuration comparison before discussing price changes",
-                        "Close the comparison after buyer confirms the required configuration",
-                    ],
-                    [
-                        "Our department requires manufacturer support after the equipment arrives",
-                        "Provide written service eligibility and a provider-issued support quotation",
-                        "Make purchase terms conditional on the specified support availability",
-                        "Stop pursuing unsupported models when manufacturer coverage is essential",
-                    ],
-                    [
-                        "We cannot tolerate equipment downtime during scheduled patient sessions",
-                        "Show actual response coverage, parts access, and escalation responsibilities",
-                        "Price only service commitments backed by qualified available resources",
-                        "Decline response promises that exceed the contractor coverage agreement",
-                    ],
-                    [
-                        "We want an unrestricted trial before committing to purchase",
-                        "Provide serial-specific acceptance tests and documented baseline operating condition",
-                        "Define trial duration, transport charges, damage responsibility, and returns",
-                        "Ship only after both parties accept the written trial terms",
-                    ],
-                    [
-                        "The seller requires immediate payment before allowing meaningful inspection",
-                        "Request ownership evidence, access arrangements, and existing service records",
-                        "Offer an accelerated inspection appointment instead of blind payment",
-                        "Withdraw when essential inspection or ownership verification remains impossible",
-                    ],
-                    [
-                        "The buyer needs equipment now but funding arrives later",
-                        "Obtain lender confirmation and an executable purchase funding schedule",
-                        "Reserve inventory only under explicit duration and deposit terms",
-                        "Release equipment after agreed payment conditions are actually satisfied",
-                    ],
-                ],
-            },
-            "sop_steps": [
-                {
-                    "step": 1,
-                    "title": "Build paired supply and demand records",
-                    "action": "Assign every lead to one of the three mapped plays.",
-                    "detail": "Store the source, event date, equipment family, authorized contact, and next action; maintain separate buyer-account and seller-lot identifiers.",
-                },
-                {
-                    "step": 2,
-                    "title": "Qualify before reserving technical labor",
-                    "action": "Complete the weighted score and identify overriding blockers.",
-                    "detail": "Reserve a biomed slot only after configuration, seller authority, plausible delivered economics, and a credible buyer requirement justify inspection.",
-                },
-                {
-                    "step": 3,
-                    "title": "Quote the documented usable configuration",
-                    "action": "Issue a serial-specific quotation and acceptance packet.",
-                    "detail": "Include accessories, licensed options, test evidence, sanitization status, delivery scope, warranty terms, payment conditions, and a defined quotation expiry.",
-                },
-                {
-                    "step": 4,
-                    "title": "Close and reconcile the accepted transaction",
-                    "action": "Collect the required payment and document delivery acceptance.",
-                    "detail": "Match the purchase order, invoice, serial, freight evidence, acceptance record, direct charges, and warranty reserve before updating realized contribution.",
-                },
-            ],
-        },
-        {
-            "heading": "4. Pace the first ten wins against cash, labor, and canonical economics",
-            "epistemic_status": "illustrative_model",
-            "paragraphs": [
-                (
-                    "Use the first month to choose the supported equipment families, contract "
-                    "the four specialist functions, create document templates, and build the "
-                    "initial buyer cohort. Months two and three concentrate on inspection-ready "
-                    "seller relationships and configuration calls, not warehouse accumulation. "
-                    "The earliest completed transaction may fall in month three; complex "
-                    "replacement schedules or site preparation can push first-deal timing "
-                    "toward month nine. Treat three-to-ten completed wins during that operating "
-                    "window as a target range, not a substitute for the stated three-to-nine-month "
-                    "time to first deal. Assign weekly capacity explicitly: the sourcing employee "
-                    "spends two research blocks on signals and two on seller verification; "
-                    "the sales employee runs qualification calls, quotations, and acceptance "
-                    "coordination. Reserve two biomed inspection slots weekly only where "
-                    "contractor availability supports them, and batch nearby visits to reduce "
-                    "travel costs. Limit simultaneous active acquisitions to two until actual "
-                    "turnaround and warranty workload are measured. Four contractors means four "
-                    "specialist relationships, not four full-time people waiting for instructions. "
-                    "Maintain backup providers for critical functions without silently counting "
-                    "them as permanent staff. Move a delivery date when competence or safe "
-                    "handling cannot be secured; the calendar does not override technical "
-                    "readiness or the buyer's receiving requirements."
-                ),
-                (
-                    "Keep the scorecard visible while reviewing early deals. Conservative annual "
-                    "gross equipment resale proceeds are $250,000 at a ten-percent net margin, "
-                    "producing $25,000 owner net profit with two full-time employees and four "
-                    "contractors. Base proceeds are $1,025,000 at 16.0 percent, producing "
-                    "$164,000 with the same staffing structure. Scaled proceeds are $1,800,000 "
-                    "at twenty-two percent, producing $396,000 with three employees and five "
-                    "contractors, eight people total. The corresponding total expense envelopes "
-                    "are $225,000, $861,000, and $1,404,000. Acquisition and refurbishment sit "
-                    "inside those expenses, not outside the margin calculation. The stated "
-                    "$4,000–$18,000 monthly operating-expense range does not represent the "
-                    "entire cost of purchased inventory. Gross resale proceeds also exclude "
-                    "the buyer's patient billings, procedure volume, and equipment-financing "
-                    "principal. These scenarios assume equipment resale as principal; a separate "
-                    "brokerage service must assess its own revenue presentation rather than "
-                    "booking the asset's entire selling price as a commission business's revenue. "
-                    "Do not annualize three successful early transactions into a claimed Base "
-                    "result. Instead, reconcile realized contribution, remaining overhead, "
-                    "inventory aging, warranty exposure, and available cash monthly. The Scaled "
-                    "margin requires an actual operating improvement; adding inventory and a "
-                    "third employee does not mechanically create a twenty-two-percent outcome."
-                ),
-                (
-                    "Instrument the system so failures become specific operating decisions. Inventory "
-                    "tracking should retain acquisition date, serial, configuration, direct costs, "
-                    "storage location, reservation status, and days since the last qualified "
-                    "buyer interaction. Service-history indexing should connect each claim in "
-                    "the quotation to a dated report, photograph, or provider confirmation. "
-                    "Keep patient content out of the CRM and sales attachments. Use document "
-                    "permissions and a transfer log when sharing technical evidence with buyers. "
-                    "Review unsold equipment at thirty, sixty, and ninety days: obtain fresh "
-                    "buyer feedback first, revise configuration or price second, and execute "
-                    "a documented exit plan when carrying costs defeat the original thesis. "
-                    "For every lost deal, record one primary reason such as unsupported "
-                    "activation, weak title evidence, excessive landed cost, or installation "
-                    "delay. For every accepted deal, request a factual reference and permission "
-                    "to describe the equipment category and service experience without exposing "
-                    "patient or confidential operational details. Feed repeat demand into the "
-                    "next acquisition search. Expand from the initial four-person pod only "
-                    "after measured inspection backlog, repeatable demand, and cash conversion "
-                    "justify the extra capacity. The durable advantage is a reliable chain "
-                    "from signal to supported equipment, not a larger spreadsheet of sellers "
-                    "or a warehouse full of apparently inexpensive machines."
-                ),
-            ],
-            "table": {
-                "caption": "First-Deal Control Board for the Two-Employee, Four-Contractor Pod",
-                "headers": [
-                    "Control and review rhythm",
-                    "Specific operating evidence",
-                    "Owner and corrective action",
-                    "Economic or capacity implication",
-                ],
-                "rows": [
-                    [
-                        "Review new public sourcing signals twice during each week",
-                        "Dated event source links to equipment family and authorized contact",
-                        "Sourcing employee expires stale leads and verifies disposition timing",
-                        "Protects research hours from repeated pursuit of unavailable equipment",
-                    ],
-                    [
-                        "Review buyer cohort stage conversion every thirty operating days",
-                        "Distinct accounts progress through requirements, calls, packets, orders, acceptance",
-                        "Sales employee fixes the largest evidenced stage loss first",
-                        "Tests the illustrative 2.5 percent accepted-sale conversion assumption",
-                    ],
-                    [
-                        "Review deployable acquisition cash before every proposed inventory commitment",
-                        "Purchase worksheet separates inventory funds from operating and warranty reserves",
-                        "Sourcing employee enforces initial lot and cash concentration limits",
-                        "Prevents attractive individual purchases from exhausting the entire operating reserve",
-                    ],
-                    [
-                        "Review contractor readiness before confirming each inspection and delivery",
-                        "Named specialists confirm scope, competence, availability, and quoted charges",
-                        "Both employees align biomed, data handling, and transport schedules",
-                        "Keeps four-person pod commitments within actual fractional specialist capacity",
-                    ],
-                    [
-                        "Review unsold equipment at thirty, sixty, and ninety days",
-                        "Serial-level aging combines carrying costs with recent qualified buyer feedback",
-                        "Sales employee revises price or executes the documented exit",
-                        "Limits obsolescence losses and releases cash from unsellable configurations",
-                    ],
-                    [
-                        "Reconcile monthly results against the three canonical annual scenarios",
-                        "Recognized proceeds and complete expenses reconcile to owner net profit",
-                        "Bookkeeping contractor separates direct contribution from total business profitability",
-                        "Preserves exact ten, sixteen, and twenty-two percent scenario margins",
-                    ],
-                ],
-            },
-        },
-    ],
-    "pull_quote": "Buy the configuration a verified buyer can accept, not the discount a motivated seller can describe.",
-    "diagram_id": "diag-02",
-    "action_checklist": [
-        "Select two supported equipment families and map every opportunity to hospital replacement-cycle capture, practice-closure asset recovery, or buyer-led specialty sourcing.",
-        "Build separate seller-lot and buyer-account records with dated source evidence, authorized contacts, configuration requirements, and explicit next actions.",
-        "Apply the one-hundred-point qualification score and resolve ownership, recall, patient-data, and essential-functionality blockers before committing acquisition cash.",
-        "Run the fifteen-day multichannel cadence with suppression controls, a useful technical artifact, and one concrete qualification request per message.",
-        "Reserve biomed, data handling, and transport capacity before issuing serial-specific delivery and acceptance commitments.",
-        "Count completed accepted sales separately from reservations and purchase orders, then reconcile contribution, cash, warranty exposure, and canonical annual net-profit cases.",
-    ],
-    "statutory_citations": [
-        {
-            "title": "21 CFR 807.20 — Establishment registration and device listing",
-            "url": "https://www.ecfr.gov/current/title-21/chapter-I/subchapter-H/part-807/subpart-B/section-807.20",
-            "relevance": "Assess registration and listing obligations against the reseller's actual activities and applicable exemptions rather than assuming every resale operation has the same status.",
-        },
-        {
-            "title": "21 CFR 820.1 and 820.3 — Quality Management System Regulation scope and definitions",
-            "url": "https://www.ecfr.gov/current/title-21/chapter-I/subchapter-H/part-820",
-            "relevance": "Evaluate whether the operation performs manufacturing or remanufacturing activities that bring applicable quality-system requirements into scope.",
-        },
-        {
-            "title": "45 CFR 164.310(d) — Device and media controls",
-            "url": "https://www.ecfr.gov/current/title-45/subtitle-A/subchapter-C/part-164/subpart-C/section-164.310",
-            "relevance": "For regulated entities, govern disposal, media reuse, accountability, and relevant movement of hardware or media containing electronic protected health information.",
-        },
-        {
-            "title": "45 CFR 164.502(e) and 164.504(e) — Business associate arrangements",
-            "url": "https://www.ecfr.gov/current/title-45/subtitle-A/subchapter-C/part-164/subpart-E/section-164.504",
-            "relevance": "Determine the reseller's or sanitization contractor's role and establish required business associate terms before handling protected health information on another regulated entity's behalf.",
-        },
-        {
-            "title": "15 U.S.C. 7704 — Requirements for commercial electronic mail",
-            "url": "https://www.law.cornell.edu/uscode/text/15/7704",
-            "relevance": "Structure commercial sourcing and sales email with accurate transmission information, required identification and address information, and timely handling of opt-out requests.",
-        },
-        {
-            "title": "47 U.S.C. 227 — Restrictions on telephone equipment use",
-            "url": "https://www.law.cornell.edu/uscode/text/47/227",
-            "relevance": "Assess restrictions on automated and prerecorded outreach and relevant texts before choosing outreach technology; also check implementing rules and applicable state requirements.",
-        },
-        {
-            "title": "UCC section 9-315 — Secured party rights on disposition of collateral",
-            "url": "https://www.law.cornell.edu/ucc/9/9-315",
-            "relevance": "Use this model provision as the starting point for checking the governing state's enacted law and whether a security interest continues after an equipment sale.",
-        },
-        {
-            "title": "21 U.S.C. 331(a) — Prohibited introduction of adulterated or misbranded devices",
-            "url": "https://www.law.cornell.edu/uscode/text/21/331",
-            "relevance": "Tie device-condition, labeling, and modification review to the prohibition on introducing adulterated or misbranded devices into interstate commerce.",
-        },
-    ],
-}
+CHAPTER_6 = {'id': 'Q6',
+ 'chapter_id': 'Q6',
+ 'chapter_number': 6,
+ 'question_number': 6,
+ 'slug': 'fda-device-regulation-fundamentals',
+ 'question_prompt': 'How does FDA classify devices and decide which market pathway applies?',
+ 'kicker': 'Q6 / THE BIG MONEY PLAYBOOKS',
+ 'title': 'FDA Device Regulation Fundamentals',
+ 'subtitle': 'Device classification case studies, 510(k) vs. De Novo vs. PMA, FDA 101 webinars, CDRH '
+             'industry basics, REdI conference sessions, CLIA-waived point-of-care IVDs, distributors '
+             'filing 510(k)s for Chinese devices, and the 510(k) predicate loophole and litigation',
+ 'layout_template': 'step_by_step_blueprint',
+ 'reading_time_minutes': 15,
+ 'executive_summary': 'Practitioners from FDA, Registrar Corp, leanRAQA, NSF, Invent Healthcare and '
+                      'independent consultants converge on one rule: the three-letter product code decides '
+                      "class, pathway and cost, and 'exempt' never means unregulated. Class I runs about "
+                      '45-50% of devices, the 510(k) is the dominant route, and only PMA devices are '
+                      "'approved.' Street numbers: the 2025 510(k) fee is $24,335 standard versus $6,084 "
+                      "small business, establishment registration hits $11,423 in 2026, and FDA's 90-day "
+                      '510(k) clock runs about 200 days in practice. Small-business status can cut fees up '
+                      'to 75%, but paying before qualifying forfeits any refund. Isaac Erickson argues the '
+                      '510(k) holder controls the US market and that distributors can file. Disagreements '
+                      "surface on wording ('approval' versus 'clearance'), inspection frequency (every 2 "
+                      'versus 3-4 years), and whether recalled predicates turn the 510(k) into a loophole.',
+ 'key_metrics': [{'label': 'FY2025 510(k) user fee, standard vs small business',
+                  'metric': 'FY2025 510(k) user fee, standard vs small business',
+                  'value': '$24,335 standard vs $6,084 small business',
+                  'confidence': 'attributed_practitioner_claim',
+                  'context': 'Registrar Corp quoted the 2025 510(k) fee spread; small-business status '
+                             'requires under $100M in receipts and is renewed yearly.',
+                  'source': 'Registrar Corp ([9Unzt431qg8 @ 01:02:38])'},
+                 {'label': '510(k) FDA clock vs actual elapsed time',
+                  'metric': '510(k) FDA clock vs actual elapsed time',
+                  'value': '90-day clock vs ~200 days actual',
+                  'confidence': 'attributed_practitioner_claim',
+                  'context': "leanRAQA's pathway table also puts De Novo at 120 days on the clock vs ~400 "
+                             'actual and PMA at 180 vs ~800.',
+                  'source': 'leanRAQA ([EnjRMOB1Uio @ 00:44:39])'},
+                 {'label': 'Share of 510(k)s requiring clinical data',
+                  'metric': 'Share of 510(k)s requiring clinical data',
+                  'value': '10-15%',
+                  'confidence': 'attributed_practitioner_claim',
+                  'context': "Invent Healthcare's 510(k) panel said only 10 to 15 percent of 510(k)s need "
+                             'clinical data, and animal data is sometimes sufficient.',
+                  'source': 'Invent Healthcare ([kwzaOqIZO2k @ 01:45:58])'},
+                 {'label': 'Class I recalls tied to a recalled predicate',
+                  'metric': 'Class I recalls tied to a recalled predicate',
+                  'value': 'Nearly half of Class I recalls, 2017-2021',
+                  'confidence': 'attributed_practitioner_claim',
+                  'context': '23ABC News reported a study of 2017-2021 Class I recalls in which nearly '
+                             'half traced to a recalled predicate, at about 10,000 units per recall.',
+                  'source': '23ABC News | KERO ([-sk7wovpoZQ @ 00:01:29])'}],
+ 'sections': [{'number': 1,
+               'heading': 'The Practitioner Consensus',
+               'paragraphs': ['The product code is the chokepoint every practitioner routes through first. '
+                              "Easy Medical Device's guest calls the three-letter code 'probably the "
+                              'single most important piece of information that a company needs to know '
+                              "about,' because it defines the device, the governing regulation and the "
+                              'intended use, and it dictates both class and pathway [USqn2QdZTCM @ '
+                              '00:03:25]. Registrar Corp places the rules in 21 CFR 800-899 and confirms '
+                              'that every device type carries its own three-letter product code '
+                              '[GUA_JDVPQG0 @ 00:04:29]. NextGenMedTech flags product codes as the '
+                              "shortcut through the rulebook ('This will help you a lot') and maps class "
+                              'to pathway: Class I runs on general controls and is mostly exempt with a '
+                              'few 510(k)s, Class II stacks general plus special controls and mostly needs '
+                              'a 510(k), and Class III layers PMA on top of general controls [sB46aiZG8lw '
+                              '@ 00:30:42]. The DICOM Code & Cure operator, who took a computed tomography '
+                              'x-ray system to clearance under Class II product code JAK inside the 21 CFR '
+                              "892 radiology regulations, adds the execution rule: 'you want to keep the "
+                              'same product code as your predict device because that will make more sense '
+                              "to substantiate its equivalence' [l_IqH_YvZ68 @ 00:06:58]. Code first; "
+                              'fees, testing, submission type and timeline all follow from it.',
+                              'The second point of total agreement: exempt does not mean free. NSF puts '
+                              "Class I at about 47% of devices and states flatly, 'Many of them are exempt "
+                              "from 510k but that does not mean they are not regulated' [gfFy3QwozGE @ "
+                              '00:05:00]. leanRAQA splits the market as Class I 45-50%, Class II 40-45% '
+                              'and Class III 5-10%, then warns that exempt products still carry '
+                              'registration, listing (contract manufacturers included), and complaint and '
+                              "quality-record procedures [EnjRMOB1Uio @ 00:06:26]. FDA's Kendra Holter "
+                              "warns at the 2023 REdI conference that '510k exempt' does not mean no "
+                              'controls apply, then demonstrates with an air-fluidized bed, code INX under '
+                              'regulation 890.5160, that is Class II and 510(k)-exempt yet carries special '
+                              'controls and is not GMP-exempt [cjw_q6QL1W4 @ 00:45:40]. At the top of the '
+                              "risk ladder, Registrar Corp closes the door: 'There are no exemptions in "
+                              "class three' [9Unzt431qg8 @ 00:16:32]. The same Registrar Corp session "
+                              'shows how counterintuitive the boundaries get: exam gloves, a mechanical '
+                              'wheelchair and oral lubricant are Class I yet need a 510(k), while a '
+                              'mercury thermometer, a bassinet and an AC-powered bed are Class II and '
+                              'exempt; even sunglasses are a device under code HQY. How simple a product '
+                              'looks predicts nothing; the code decides.',
+                              'Practitioners also agree on the vocabulary and on who actually controls the '
+                              "market. Invent Healthcare's 510(k) presenter states that 'only products or "
+                              'devices that are approved through the pre-market approval process are '
+                              "considered FDA approved,' so a 510(k) device is cleared, not approved "
+                              "[kwzaOqIZO2k @ 01:05:23]. Registrar Corp adds two hard don'ts: FDA 'does "
+                              "not issue any registration certificates for registered establishment,' and "
+                              'the FDA logo is prohibited on products, with logo-bearing shipments forced '
+                              'into stickering that adds costs, delays and storage fees [9Unzt431qg8 @ '
+                              "00:59:54]. Registrar Corp's second session repeats the instruction not to "
+                              "print 'FDA' on boxes, and in Q&A confirms that distributors need not "
+                              'register while the Chinese factory must [GUA_JDVPQG0 @ 00:44:31]. The '
+                              'commercial lever comes from Isaac Erickson, who says a distributor can file '
+                              'as the 510(k) applicant under 21 CFR 807 provided it has access to the '
+                              "manufacturer's documents, and who frames the clearance as intellectual "
+                              "property: 'If you have that 510k, you have control over the United States "
+                              "market' [TChhZNirpeM @ 00:01:20]. Citing 15+ years in the business, "
+                              'Erickson warns against trusting manufacturers to prioritize you. For an '
+                              'importer or reseller, holding the clearance rather than just the inventory '
+                              'is what Erickson treats as the controlling asset.'],
+               'table': {'caption': 'Where FDA Device Practitioners Agree: Baseline Rules for Market Entry',
+                         'headers': ['Consensus Point', 'What Operators Must Do', 'Expert Source'],
+                         'rows': [['The three-letter product code is the single master key',
+                                   'Search the product code database with the most generic term, then '
+                                   'eliminate mismatches',
+                                   'Easy Medical Device ([USqn2QdZTCM @ 00:03:45])'],
+                                  ['Exempt status never means the device is unregulated',
+                                   'Keep registration, listing, complaint handling and quality records '
+                                   'running on exempt devices',
+                                   'leanRAQA ([EnjRMOB1Uio @ 00:06:26])'],
+                                  ['Class III devices have no exemption door at all',
+                                   'Route every Class III device through PMA with general controls layered '
+                                   'underneath',
+                                   'Registrar Corp ([9Unzt431qg8 @ 00:16:32])'],
+                                  ['The 510(k) is the most used market-entry pathway',
+                                   'Expect most Class II products to need clearance against a legally '
+                                   'marketed predicate',
+                                   'NSF ([gfFy3QwozGE @ 00:18:53])'],
+                                  ['Only devices through PMA are considered FDA approved',
+                                   'Describe 510(k) devices as cleared and reserve approved strictly for '
+                                   'PMA devices',
+                                   'Invent Healthcare ([kwzaOqIZO2k @ 01:05:23])'],
+                                  ['FDA issues no registration certificates and bans its logo',
+                                   "Never print the FDA logo or 'FDA' on boxes; logo shipments get "
+                                   'stickered',
+                                   'Registrar Corp ([GUA_JDVPQG0 @ 00:33:19])'],
+                                  ['The 510(k) holder controls access to the US market',
+                                   'Treat clearance as intellectual property; distributors can file as '
+                                   'applicant under Part 807',
+                                   'Isaac Erickson ([TChhZNirpeM @ 00:01:20])']]}},
+              {'number': 2,
+               'heading': 'Exact Street Mechanics, Tools & Numbers',
+               'paragraphs': ['Fees are the first hard number. Registrar Corp quotes the 2025 510(k) user '
+                              'fee at $24,335 standard versus $6,084 for small businesses, with '
+                              'small-business status requiring under $100M in receipts and renewal every '
+                              "year [9Unzt431qg8 @ 01:02:38]. Registrar Corp's second session puts 2026 "
+                              'establishment registration at $11,423 and notes small-business approval can '
+                              "take up to 60 days [GUA_JDVPQG0 @ 00:27:25]. FDA's Jason Brookbank of the "
+                              'Division of Financial Management sets the tiers: at or under $100M in gross '
+                              'receipts including affiliates earns a 75% discount, and at or under $30M '
+                              'with no prior PMA, BLA, PDP or PMR waives the fee on the first submission '
+                              "[cjw_q6QL1W4 @ 05:09:22]. Sequencing is everything: Invent Healthcare's "
+                              "presenter warns that 'if you submit the standard 510k user fee and then "
+                              'subsequently later get a small business determination qualification the FDA '
+                              "will not refund you the difference' [kwzaOqIZO2k @ 01:23:51]. Brookbank "
+                              'adds that registration fees get no discount, the determination is '
+                              'non-transferable and valid for one fiscal year, applications should go in '
+                              'at least 60 days ahead, and gross receipts mean total sales rather than '
+                              "profit. After an acquisition, the parent company's receipts count, so "
+                              'Brookbank recommends qualifying before being acquired.',
+                              'The review clock runs on fixed checkpoints. Invent Healthcare lays out Day '
+                              '7 for an acknowledgment or hold letter, Day 15 for the refuse-to-accept '
+                              'review, Day 60 for substantive interaction, a 90-day MDUFA goal (30 days '
+                              'for a special 510(k)), and additional-information requests that stop the '
+                              'clock and allow 180 days to respond [kwzaOqIZO2k @ 01:25:17]. Prime Path '
+                              "Medtech flags the cheapest failure, 'if you haven't paid the user free "
+                              "you'll get a hold letter,' and counsels building the file against FDA's own "
+                              'checklist [0CrtB8E2n30 @ 00:02:34]. FDA reviewer Andrew details the traps '
+                              'inside the clock: a non-accepted file gets 180 days to fix and restarts at '
+                              'Day 0, a clarification call on an AI letter must be requested within 10 '
+                              'days, eSTAR files skip refuse-to-accept in favor of virus and technical '
+                              'screening, and eSTAR is mandatory for all 510(k)s from October 1 unless '
+                              'exempted [cjw_q6QL1W4 @ 02:54:31]. The clock also runs midnight-to-midnight '
+                              'Eastern regardless of weekends, so letters can land at 10pm on a Friday. '
+                              "leanRAQA's reality check: the 510(k) carries a 90-day FDA clock but runs "
+                              'about 200 days in practice, De Novo 120 versus about 400, and PMA 180 '
+                              'versus about 800 [EnjRMOB1Uio @ 00:44:39].',
+                              "Predicate hunting is a database grind. FDA's classification case study runs "
+                              'three methods (the classification database, clearance and approval '
+                              'searches, and listing searches) and tells users to use Quick Search, avoid '
+                              "plurals and not be too specific; 'traction' returned 11 results leading to "
+                              'product code ITH, 21 CFR 890.5900, Class II, 510(k) required, and the '
+                              'closing advice is to cross-check across all three databases [XMo038fEjH4 @ '
+                              "00:17:20]. FDA's Andrew explains why older predicates go dark: 510(k)s "
+                              'cleared before 1990 have no summaries, 1990-2007 summaries were accepted '
+                              'but not regularly posted and need a FOIA request, and 2007 onward is '
+                              "typically posted; clearance letters are a 'snapshot in time' and are not "
+                              'reissued after a 510(k) is purchased [cjw_q6QL1W4 @ 03:10:44]. Invent '
+                              'Healthcare allows multiple predicates if one primary predicate passes the '
+                              "whole flowchart, but 'split predicates are inconsistent with the 510k "
+                              "regulatory standard' [kwzaOqIZO2k @ 01:16:46]. leanRAQA warns that stacking "
+                              "too many predicates looks like a 'Frankenstein' that gets pushed to De "
+                              "Novo, that words like 'novel' invite trouble, and that a wrong product code "
+                              'gets refused at RTA [EnjRMOB1Uio @ 00:36:54].'],
+               'table': {'caption': 'Street Numbers: Fees, Clocks and Testing Payoffs Quoted by '
+                                    'Practitioners',
+                         'headers': ['Mechanic or Number',
+                                     'Exact Figure or Rule',
+                                     'Operator Use',
+                                     'Expert Source'],
+                         'rows': [['FY2025 510(k) user fee spread',
+                                   '$24,335 standard versus $6,084 for qualified small businesses',
+                                   'Budget the small-business rate only after the qualification letter '
+                                   'lands',
+                                   'Registrar Corp ([9Unzt431qg8 @ 01:02:38])'],
+                                  ['Establishment registration fee per physical location',
+                                   '$9,280 per physical location; credit-card payment clears in 24-48 '
+                                   'hours',
+                                   'Price every physical location separately when building startup cost '
+                                   'models',
+                                   'Registrar Corp ([9Unzt431qg8 @ 00:37:27])'],
+                                  ['2026 annual establishment registration fee',
+                                   '$11,423 for 2026, paid in the October 1 to December 31 window',
+                                   'Calendar the annual renewal window and budget the full registration '
+                                   'fee',
+                                   'Registrar Corp ([GUA_JDVPQG0 @ 00:27:25])'],
+                                  ['Small business determination discount tiers',
+                                   'Up to 75% off at $100M receipts; first submission waived at $30M',
+                                   'File the determination at least 60 days before paying any cover sheet',
+                                   'U.S. Food and Drug Administration ([cjw_q6QL1W4 @ 05:09:22])'],
+                                  ['510(k) acceptance and decision checkpoints',
+                                   'Day 15 acceptance, about Day 60 substantive, Day 90 final decision',
+                                   'Have AI responses staffed because a hold allows 180 days to answer',
+                                   'U.S. Food and Drug Administration ([cjw_q6QL1W4 @ 02:54:31])'],
+                                  ['Actual elapsed time by premarket pathway',
+                                   '510(k) about 200 days, De Novo about 400, PMA about 800',
+                                   'Plan cash runway on actual elapsed days rather than statutory clocks',
+                                   'leanRAQA ([EnjRMOB1Uio @ 00:44:39])'],
+                                  ['ASCA accredited testing versus non-ASCA testing',
+                                   'EMC report of 46 pages with 4 deficiencies versus 9 pages with none',
+                                   'Use ASCA-accredited labs to shrink reports and avoid review '
+                                   'deficiencies',
+                                   'U.S. Food and Drug Administration ([cjw_q6QL1W4 @ 02:22:28])']]},
+               'callout': {'kind': 'INSIDER PRO-TIPS',
+                           'title': 'Filing-Desk Moves That Save Money and Days',
+                           'body': 'Practitioners repeatedly flagged sequencing and logistics mistakes '
+                                   'that cost refunds or calendar days before a reviewer ever reads the '
+                                   'file.',
+                           'items': ['Get the small business determination number before paying the 510(k) '
+                                     "cover sheet; pay first and 'there are no refunds' [U.S. Food and "
+                                     'Drug Administration — cjw_q6QL1W4 @ 05:28:15]',
+                                     'Upload before the 1600 Eastern daily cutoff: a Friday 1800 upload is '
+                                     "processed Monday, status updates only once per night, and 'Sent to "
+                                     "FDA' does not mean received [U.S. Food and Drug Administration — "
+                                     'cjw_q6QL1W4 @ 04:29:10]',
+                                     "Build the 510(k) against FDA's own checklist, and pay the user fee "
+                                     'up front, because an unpaid fee triggers a hold letter before review '
+                                     'starts [Prime Path Medtech — 0CrtB8E2n30 @ 00:03:08]',
+                                     "Keep the 510(k) language tight and avoid words like 'novel,' which "
+                                     'push a predicate comparison toward De Novo territory [leanRAQA — '
+                                     'EnjRMOB1Uio @ 00:33:17]']},
+               'sop_steps': [{'step': 1,
+                              'title': 'Lock intended use and the product code',
+                              'action': 'Define the product, confirm it is a device, and pin the '
+                                        'three-letter product code before the first prototype.',
+                              'detail': "leanRAQA's five steps run define the product, verify it is a "
+                                        'device, classify, gather evidence, submit, with intended use '
+                                        'locked down first and regulatory strategy set before the first '
+                                        'prototype [leanRAQA — EnjRMOB1Uio @ 00:09:40]; Easy Medical '
+                                        'Device searches the product code database with the most generic '
+                                        'term, eliminates mismatches, shortlists a handful of codes and '
+                                        "checks each regulation's intended use [Easy Medical Device — "
+                                        'USqn2QdZTCM @ 00:03:45].'},
+                             {'step': 2,
+                              'title': 'Select and document the predicate',
+                              'action': 'Cross-check the classification, clearance and listing databases, '
+                                        "then keep the predicate's product code.",
+                              'detail': "FDA's case study tells users to cross-check across all three "
+                                        'databases [U.S. Food and Drug Administration — XMo038fEjH4 @ '
+                                        "00:17:20]; DICOM Code & Cure keeps the predicate's product code "
+                                        'to substantiate equivalence [DICOM Code & Cure: MedPhysics and '
+                                        'FDA Insights — l_IqH_YvZ68 @ 00:06:58]; Registrar Corp notes FDA '
+                                        "won't pick your predicate, but it can come from another company "
+                                        '[Registrar Corp — GUA_JDVPQG0 @ 00:42:12].'},
+                             {'step': 3,
+                              'title': 'Qualify for fee relief before paying',
+                              'action': 'File the small business determination at least 60 days ahead, '
+                                        'then pay the user fee.',
+                              'detail': 'Brookbank says to submit at least 60 days ahead, with each '
+                                        'determination valid for one fiscal year [U.S. Food and Drug '
+                                        'Administration — cjw_q6QL1W4 @ 05:11:08]; Invent Healthcare warns '
+                                        'that FDA will not refund the difference if the standard fee is '
+                                        'paid before qualification [Invent Healthcare — kwzaOqIZO2k @ '
+                                        '01:23:51].'},
+                             {'step': 4,
+                              'title': 'Submit via eSTAR and work the clock',
+                              'action': 'File through eSTAR, track Day 15, Day 60 and Day 90 checkpoints, '
+                                        'and register after clearance.',
+                              'detail': 'eSTAR is mandatory for all 510(k)s from October 1 unless exempted '
+                                        '[U.S. Food and Drug Administration — cjw_q6QL1W4 @ 03:02:19]; AI '
+                                        'requests stop the clock with 180 days to respond [Invent '
+                                        'Healthcare — kwzaOqIZO2k @ 01:25:17]; Kendra Holter says to '
+                                        'register within 30 days of starting commercial distribution, '
+                                        'waiting until clearance for devices that need it [U.S. Food and '
+                                        'Drug Administration — cjw_q6QL1W4 @ 01:01:23].'}]},
+              {'title': 'Where Practitioners Disagree & Alternative Playbooks',
+               'paragraphs': ['The first split is vocabulary, and it decides how stock gets described. '
+                              'DICOM Code & Cure describes a predicate as having "received a FDA 510k '
+                              'approval" [l_IqH_YvZ68 @ 00:00:47], and Patient Guard also calls the 510(k) '
+                              "outcome an approval. The opposite camp is blunt. Invent Healthcare's FDA "
+                              'panel states that only devices that go through the premarket approval '
+                              'process are considered FDA approved [kwzaOqIZO2k @ 01:05:23]. leanRAQA '
+                              'lists authorized for EUA, cleared for 510(k) and approved for PMA as terms '
+                              'that are not interchangeable [EnjRMOB1Uio @ 00:45:43]. De Novo naming '
+                              'splits the same way. Registrar Corp calls it a "de novo 510(k)", while NSF '
+                              'frames De Novo as a separate pathway intended for novel devices that are '
+                              'still low to moderate risk [gfFy3QwozGE @ 00:11:55]. Fee numbers drift just '
+                              "as hard. Invent Healthcare's De Novo panel said there were no fees for "
+                              'pre-submissions or de novos, with the 510(k) fee charged only when the de '
+                              'novo starts as a 510(k). leanRAQA quotes $33,000 for De Novo, roughly '
+                              '$5,000 for a small-business 510(k) and $110,000 for a small-business PMA. '
+                              'Registrar Corp quotes the 2025 510(k) fee at $6,084 for small business '
+                              'against $24,335 standard, with small-business status requiring under $100M '
+                              'in receipts and yearly renewal.',
+                              'Inspection cadence and what an investigator may open are the second fault '
+                              'line. NSF puts routine inspections at about every two years, possibly every '
+                              'five, lasting two to five days or up to two weeks [gfFy3QwozGE @ 00:34:07]. '
+                              'Registrar Corp splits it by class: Class III roughly every two years and '
+                              'Class II about every three to four years, with unannounced foreign '
+                              'inspections expanding after an India and China pilot [9Unzt431qg8 @ '
+                              '00:45:28]. Registrar Corp also notes that inspections can occur as soon as '
+                              'the establishment is registered and listed. On internal audits the camps '
+                              "flatly contradict each other. Easy Medical Device's guest says FDA "
+                              'inspectors cannot look at internal audits, management review or supplier '
+                              "audits [USqn2QdZTCM @ 00:14:28]. FDA's own CAPA presenter at Invent "
+                              'Healthcare says the Office of Regulatory Affairs does not review internal '
+                              'audit findings or management review minutes, except where they relate to '
+                              'CAPA [kwzaOqIZO2k @ 03:25:45]. NSF counters that QMSR, in effect since '
+                              'February and aligned with ISO 13485, makes internal audits reviewable. The '
+                              'CAPA panel closes the gap from the other side: you cannot shield a CAPA '
+                              'inside audit documents, and internal audits that never feed CAPA are a red '
+                              "flag. NSF's warning is that the older assumption of private audits no "
+                              'longer holds under QMSR.',
+                              'Predicate strategy and speed produce the sharpest alternative playbooks. '
+                              "Invent Healthcare's 510(k) panel allows multiple predicates only when one "
+                              'primary predicate passes the entire flowchart, and it calls split '
+                              'predicates inconsistent with the 510(k) standard [kwzaOqIZO2k @ 01:17:01]. '
+                              'leanRAQA warns that stacking too many predicates reads as a "Frankenstein" '
+                              'and gets pushed to De Novo, and it tells filers to avoid words like "novel" '
+                              '[EnjRMOB1Uio @ 00:36:54]. On speed, leanRAQA says third-party review can '
+                              'cut about 100 days but costs an extra fee and has proved "far worse". Its '
+                              'table shows a 90-day FDA clock running about 200 days in practice. POCTCTR '
+                              'reports 3 to 4 months for a traditional 510(k) and up to one to two years '
+                              'for complex submissions [kiNTAANRFVM @ 00:07:34]. The critics reject the '
+                              'whole predicate model. 23ABC News reports that a recalled predicate can '
+                              'still count and that transvaginal mesh was cleared this way. It also '
+                              'reports that nearly half of 2017 to 2021 Class I recalls used a recalled '
+                              'predicate. Verdict Videos calls the result "leapfrog" chains where nothing '
+                              "gets adequately tested [Tb7dnxPHBNo @ 00:01:50]. FDA's own reviewers, by "
+                              'contrast, treat the predicate comparison as the core of the most common '
+                              'pathway.'],
+               'table': {'caption': 'Side-by-side practitioner disagreements on FDA device pathways, '
+                                    'inspections and filing tactics',
+                         'headers': ['Dispute', 'Camp A Position', 'Camp B Position', 'Expert Source'],
+                         'rows': [['510(k) outcome wording: approval versus clearance language',
+                                   'DICOM Code & Cure and Patient Guard both describe a cleared 510(k) as '
+                                   'an approval',
+                                   'Invent Healthcare panel says only devices through the PMA process are '
+                                   'considered FDA approved',
+                                   'DICOM Code & Cure ([l_IqH_YvZ68 @ 00:00:47]); Invent Healthcare '
+                                   '([kwzaOqIZO2k @ 01:05:23])'],
+                                  ['How De Novo relates to the 510(k) pathway',
+                                   'Registrar Corp calls it a de novo 510(k) during its pathway overview',
+                                   'NSF treats De Novo as a separate pathway for novel low to moderate '
+                                   'risk devices',
+                                   'Registrar Corp ([9Unzt431qg8 @ 00:22:47]); NSF ([gfFy3QwozGE @ '
+                                   '00:11:55])'],
+                                  ['Routine FDA inspection frequency for device establishments',
+                                   'NSF says roughly every two years, possibly every five, lasting two to '
+                                   'five days',
+                                   'Registrar Corp says Class III about every two years, Class II every '
+                                   'three to four',
+                                   'NSF ([gfFy3QwozGE @ 00:34:07]); Registrar Corp ([9Unzt431qg8 @ '
+                                   '00:45:28])'],
+                                  ['Whether investigators can read internal audit records',
+                                   'Easy Medical Device guest says inspectors cannot look at internal '
+                                   'audits or management review',
+                                   'NSF says internal audits are now reviewable under QMSR aligned with '
+                                   'ISO 13485',
+                                   'Easy Medical Device ([USqn2QdZTCM @ 00:14:28]); NSF ([gfFy3QwozGE @ '
+                                   '00:25:45])'],
+                                  ['Stacking multiple predicates in one 510(k) submission',
+                                   'Invent Healthcare allows multiple predicates if one primary passes the '
+                                   'whole flowchart',
+                                   'leanRAQA warns too many predicates looks like a Frankenstein pushed to '
+                                   'De Novo',
+                                   'Invent Healthcare ([kwzaOqIZO2k @ 01:17:01]); leanRAQA ([EnjRMOB1Uio @ '
+                                   '00:36:54])'],
+                                  ['Third-party review used as a speed shortcut',
+                                   'leanRAQA says third-party review can cut roughly 100 days off the '
+                                   'review',
+                                   'Same speaker says it costs an extra fee and has proved far worse',
+                                   'leanRAQA ([EnjRMOB1Uio @ 00:24:43])'],
+                                  ['Recording non-conforming product investigations inside the CAPA system',
+                                   'Ruth B. Diaco hesitated on whether investigations must be recorded in '
+                                   'CAPA',
+                                   'Moderator Joe confirmed investigations do not have to be recorded in '
+                                   'CAPA',
+                                   'U.S. Food and Drug Administration ([cjw_q6QL1W4 @ 06:41:45])']]}},
+              {'title': 'Firsthand Failure Modes, Traps & Economics Checks',
+               'paragraphs': ['The most expensive mistakes are fee sequencing errors that cannot be '
+                              "undone. Invent Healthcare's 510(k) presenter warns that if you pay the "
+                              'standard user fee and qualify for small business later, FDA will not refund '
+                              "the difference [kwzaOqIZO2k @ 01:23:51]. FDA's Division of Financial "
+                              'Management repeats it at REdI: get the SBD number before paying for the '
+                              'cover sheet, because there are no refunds [cjw_q6QL1W4 @ 05:28:15]. The '
+                              'same speaker lists the recurring rejects. They include editing the PDF in a '
+                              'browser instead of Adobe Reader, a wrong fiscal year or Org ID, and not '
+                              'summing receipts on the tax forms. They also include a signer who does not '
+                              'match line 4 and certification by an accountant instead of the national tax '
+                              'authority. Submit at least 60 days ahead, since the SBD covers one fiscal '
+                              "year only. Qualify before any acquisition, because the parent's receipts "
+                              'then count. Front-door failures cost time instead of cash. Prime Path '
+                              'Medtech says an unpaid fee triggers a hold letter and that an RTA hold '
+                              'gives 180 days to fix [0CrtB8E2n30 @ 00:02:34]. leanRAQA reports that a '
+                              'wrong product code, such as FXX against an antimicrobial mask, gets refused '
+                              "at RTA [EnjRMOB1Uio @ 00:21:00]. FDA's reviewer adds that the acceptance "
+                              'clock restarts at Day 0 after a refusal.',
+                              'Post-market, the 483 data keeps pointing at the same weak spots. NSF says '
+                              'CAPA is the top 483 observation, with complaint handling right behind '
+                              "[gfFy3QwozGE @ 00:35:17]. FDA's REdI speakers put numbers on it: complaint "
+                              'files drew 120 citations in FY2022 and non-conforming product drew 104 '
+                              "[cjw_q6QL1W4 @ 06:16:18]. Tanya Wilbon's sharpest trap is the internal "
+                              'clock. "Timely" means immediately, because a 10-day internal procedure can '
+                              "miss Part 803's 5-day and 30-day reporting windows [cjw_q6QL1W4 @ "
+                              "07:25:57]. Invent Healthcare's CAPA presenter flags two self-inflicted "
+                              'failures [kwzaOqIZO2k @ 03:15:39]. The first is training showing up again '
+                              'and again as the corrective action, which should make you question the '
+                              'investigation itself. The second is identifying an action and then never '
+                              "implementing it. His baseline rule is that if it wasn't documented, it "
+                              "didn't occur. Physical controls matter too: Ruth B. Diaco says "
+                              'non-conforming product must still be physically segregated even when a '
+                              "system block exists. Invent Healthcare's eMDR panel says relabelers and "
+                              'repackagers are manufacturers for MDR purposes. It also says a production '
+                              'account takes two to six weeks, which is why the panel says to set up eMDR '
+                              'early against the 30-day deadline.',
+                              'Distribution and labeling traps hit resellers and importers directly. Isaac '
+                              'Erickson says a distributor can file a 510(k) as applicant if it has access '
+                              "to the manufacturer's documents, and that whoever holds the 510(k) controls "
+                              'the US market. His warning, from 15-plus years of experience, is not to '
+                              'trust manufacturers to prioritize you [TChhZNirpeM @ 00:02:11]. Buying a '
+                              "clearance has its own catch. FDA's 510(k) reviewer says clearance letters "
+                              'are a "snapshot in time" and are not reissued after a 510(k) is purchased '
+                              '[cjw_q6QL1W4 @ 03:19:04]. Registrar Corp lists the labeling and agent '
+                              'errors that stall shipments [9Unzt431qg8 @ 01:15:55]. FDA does not issue '
+                              'registration certificates, and you cannot use a PO box for your US agent. '
+                              'Putting the FDA logo on product forces stickering, with added costs, delays '
+                              "and storage fees. Registrar Corp's 2026 session adds three more rules: do "
+                              'not print "FDA" on boxes, the Chinese factory must register, and '
+                              'distributors themselves need not register. NSF warns that a CE-ready label '
+                              'is not US-ready and that contract manufacturers must be registered every '
+                              "year [gfFy3QwozGE @ 00:30:02]. Easy Medical Device's guest adds a systems "
+                              'trap. One-size consultant quality systems turned out big and bulky, clients '
+                              'could not resource them, and that created compliance issues.'],
+               'table': {'caption': 'Firsthand traps, reported consequences and the practitioners who '
+                                    'flagged them',
+                         'headers': ['Trap',
+                                     'What Happened Or Was Warned',
+                                     'Cost Or Consequence',
+                                     'Expert Source'],
+                         'rows': [['Paying the standard 510(k) fee before small-business qualification',
+                                   'Filer pays the full user fee, then later receives a small business '
+                                   'determination',
+                                   'FDA will not refund the difference between the standard and '
+                                   'small-business fees',
+                                   'Invent Healthcare ([kwzaOqIZO2k @ 01:23:51])'],
+                                  ['Buying the cover sheet before getting the SBD number',
+                                   'Fee is paid before the small business determination number is issued',
+                                   'No refunds are given, and the SBD is not transferable between '
+                                   'organizations',
+                                   'U.S. Food and Drug Administration ([cjw_q6QL1W4 @ 05:28:15])'],
+                                  ['Unpaid user fee or wrong product code at submission',
+                                   'An unpaid fee triggers a hold letter, and a wrong code gets refused at '
+                                   'RTA',
+                                   'Acceptance hold with 180 days allowed to fix the deficiency before '
+                                   'review proceeds',
+                                   'Prime Path Medtech ([0CrtB8E2n30 @ 00:02:34]); leanRAQA ([EnjRMOB1Uio '
+                                   '@ 00:21:00])'],
+                                  ['Ten-day internal complaint procedure running against Part 803 clocks',
+                                   'Internal procedure gives staff ten days to process an incoming '
+                                   'complaint',
+                                   'Firm may miss the five-day and thirty-day MDR reporting requirements',
+                                   'U.S. Food and Drug Administration ([cjw_q6QL1W4 @ 07:25:57])'],
+                                  ['Training repeated as the default corrective action',
+                                   'Training shows up again and again as the CAPA corrective action',
+                                   'Presenter says this pattern should make you question the investigation '
+                                   'itself',
+                                   'Invent Healthcare ([kwzaOqIZO2k @ 03:15:39])'],
+                                  ['FDA logo printed on shipped product or packaging',
+                                   'Shipments arrive bearing the FDA logo, which device firms are '
+                                   'prohibited from using',
+                                   'Stickering is required, with added costs, shipment delays and storage '
+                                   'fees',
+                                   'Registrar Corp ([9Unzt431qg8 @ 01:15:55])'],
+                                  ['Assuming a purchased 510(k) comes with a fresh clearance letter',
+                                   'Buyer acquires a 510(k) and expects FDA to reissue the clearance '
+                                   'letter',
+                                   'Clearance letters are a snapshot in time and are not reissued after '
+                                   'purchase',
+                                   'U.S. Food and Drug Administration ([cjw_q6QL1W4 @ 03:19:04])']]},
+               'callout': {'kind': 'OPERATOR GATE',
+                           'title': 'Four Checks Before Stock Or Paperwork Moves',
+                           'body': 'Each check below comes from a trap a named practitioner reported or '
+                                   'warned about directly.',
+                           'items': ['Secure the SBD number before buying any cover sheet. Paying first '
+                                     'means no refunds, and the determination is not transferable [U.S. '
+                                     'Food and Drug Administration — cjw_q6QL1W4 @ 05:28:15].',
+                                     'Rewrite any complaint procedure that is slower than immediate, '
+                                     "because a 10-day internal window can miss Part 803's 5-day report "
+                                     '[U.S. Food and Drug Administration — cjw_q6QL1W4 @ 07:25:57].',
+                                     'Strip the FDA logo and any printed "FDA" from labels and boxes '
+                                     'before shipment to avoid stickering costs, delays and storage fees '
+                                     '[Registrar Corp — 9Unzt431qg8 @ 01:15:55].',
+                                     'Lock the exact three-letter product code before filing, since a '
+                                     'wrong code such as FXX for an antimicrobial mask is refused at RTA '
+                                     '[leanRAQA — EnjRMOB1Uio @ 00:21:00].']}}],
+ 'pull_quote': '"If you have that 510k, you have control over the United States market." — Isaac Erickson '
+               '(TChhZNirpeM @ 00:01:20).',
+ 'diagram_id': 'diag-02',
+ 'action_checklist': ['Search the FDA product code database with the most generic term, eliminate '
+                      "mismatches, shortlist a handful of codes, and check each regulation's intended use "
+                      'against yours [Easy Medical Device — USqn2QdZTCM @ 00:03:45].',
+                      'Cross-check the classification, clearance and approval, and registration and '
+                      'listing databases before settling on a class and pathway [U.S. Food and Drug '
+                      'Administration — XMo038fEjH4 @ 00:17:20].',
+                      'Keep the same product code as your predicate device so the substantial equivalence '
+                      'argument holds together [DICOM Code & Cure — l_IqH_YvZ68 @ 00:06:58].',
+                      "If you are distributing imported devices, secure access to the manufacturer's "
+                      'documents and file the 510(k) as applicant under 21 CFR 807 [Isaac Erickson — '
+                      'TChhZNirpeM @ 00:00:42].',
+                      'Use a free pre-submission whenever the evidence FDA will expect is unclear, before '
+                      'generating the data [Invent Healthcare — kwzaOqIZO2k @ 01:52:15].',
+                      'Download eSubmitter, train on it, then set up WebTrader early, because a '
+                      'production-ready account takes two to six weeks against a 30-day MDR deadline '
+                      '[Invent Healthcare — kwzaOqIZO2k @ 04:38:38].'],
+ 'statutory_citations': [{'title': 'NSF — FDA Medical Device Market Entry: 510(k), De Novo, and PMA '
+                                   'Explained for Life Sciences Leaders [00:34:07]',
+                          'url': 'https://www.youtube.com/watch?v=gfFy3QwozGE&t=2047s',
+                          'relevance': 'Primary practitioner testimony on inspection cadence, top 483 '
+                                       'observations, QMSR audit visibility and US labeling readiness.'},
+                         {'title': 'Invent Healthcare — Webinar: Introduction to US FDA Medical Device '
+                                   'Regulations (510k, De Novo, IDE, CAPA, eMDR) [01:23:51]',
+                          'url': 'https://www.youtube.com/watch?v=kwzaOqIZO2k&t=5031s',
+                          'relevance': 'Primary practitioner testimony on 510(k) user fees, split '
+                                       'predicates, CAPA failures and eMDR setup timelines.'},
+                         {'title': 'U.S. Food and Drug Administration — FDA Regulatory Education for '
+                                   'Industry (REdI) Annual Conference 2023 – Devices Day 1 [05:28:15]',
+                          'url': 'https://www.youtube.com/watch?v=cjw_q6QL1W4&t=19695s',
+                          'relevance': 'Primary practitioner testimony on small business determination '
+                                       'traps, 510(k) review clocks and complaint-file reporting windows.'},
+                         {'title': 'Registrar Corp — Introduction to U.S. FDA Medical Device Regulations '
+                                   '[01:15:55]',
+                          'url': 'https://www.youtube.com/watch?v=9Unzt431qg8&t=4555s',
+                          'relevance': 'Primary practitioner testimony on FDA logo stickering costs, US '
+                                       'agent address rules and registration fees.'}],
+ 'source_citations': [{'source_type': 'video_pro_tip',
+                       'video_id': 'sB46aiZG8lw',
+                       'title': 'USFDA Medical Device Submission Explained | 510(k), De Novo & PMA | '
+                                'Complete Introduction',
+                       'channel': 'NextGenMedTech',
+                       'author': 'NextGenMedTech',
+                       'text': 'Parts 800 to 1050 apply, not only Part 820, so, that is not true actually.',
+                       'tip': 'Parts 800 to 1050 apply, not only Part 820, so, that is not true actually.',
+                       'timestamp': 1539,
+                       'timestamp_seconds': 1539,
+                       'timestamp_label': '[00:25:39]',
+                       'url': 'https://www.youtube.com/watch?v=sB46aiZG8lw&t=1539s',
+                       'markdown': '[00:25:39](https://www.youtube.com/watch?v=sB46aiZG8lw&t=1539s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q6.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'gfFy3QwozGE',
+                       'title': 'FDA Medical Device Market Entry: 510(k), De Novo, and PMA Explained for '
+                                'Life Sciences Leaders',
+                       'channel': 'NSF',
+                       'author': 'NSF',
+                       'text': 'So the most deviations which the FDA writes or issues is coming from a '
+                               'CAPA and complaint handling part.',
+                       'tip': 'So the most deviations which the FDA writes or issues is coming from a CAPA '
+                              'and complaint handling part.',
+                       'timestamp': 2117,
+                       'timestamp_seconds': 2117,
+                       'timestamp_label': '[00:35:17]',
+                       'url': 'https://www.youtube.com/watch?v=gfFy3QwozGE&t=2117s',
+                       'markdown': '[00:35:17](https://www.youtube.com/watch?v=gfFy3QwozGE&t=2117s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q6.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': '9Unzt431qg8',
+                       'title': 'Introduction to U.S. FDA Medical Device Regulations',
+                       'channel': 'Registrar Corp',
+                       'author': 'Registrar Corp',
+                       'text': 'What you cannot do, you cannot use a PO box as an address for your US '
+                               'agent.',
+                       'tip': 'What you cannot do, you cannot use a PO box as an address for your US '
+                              'agent.',
+                       'timestamp': 3124,
+                       'timestamp_seconds': 3124,
+                       'timestamp_label': '[00:52:04]',
+                       'url': 'https://www.youtube.com/watch?v=9Unzt431qg8&t=3124s',
+                       'markdown': '[00:52:04](https://www.youtube.com/watch?v=9Unzt431qg8&t=3124s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q6.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'l_IqH_YvZ68',
+                       'title': 'How to Get FDA 510(k) Clearance? | Medical Device Submission Guide | '
+                                'Intro Video',
+                       'channel': 'DICOM Code & Cure: MedPhysics and FDA Insights',
+                       'author': 'DICOM Code & Cure: MedPhysics and FDA Insights',
+                       'text': 'So in general you want to keep the same product code as your predicate '
+                               'device because that will make more sense to substantiate its equivalence.',
+                       'tip': 'So in general you want to keep the same product code as your predicate '
+                              'device because that will make more sense to substantiate its equivalence.',
+                       'timestamp': 418,
+                       'timestamp_seconds': 418,
+                       'timestamp_label': '[00:06:58]',
+                       'url': 'https://www.youtube.com/watch?v=l_IqH_YvZ68&t=418s',
+                       'markdown': '[00:06:58](https://www.youtube.com/watch?v=l_IqH_YvZ68&t=418s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q6.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'USqn2QdZTCM',
+                       'title': 'How to register a Medical Device with FDA? (510k, PMA, de Novo...)',
+                       'channel': 'Easy Medical Device',
+                       'author': 'Easy Medical Device',
+                       'text': 'So that three-letter product code is probably the single most important '
+                               'piece of information that a company needs to know about.',
+                       'tip': 'So that three-letter product code is probably the single most important '
+                              'piece of information that a company needs to know about.',
+                       'timestamp': 205,
+                       'timestamp_seconds': 205,
+                       'timestamp_label': '[00:03:25]',
+                       'url': 'https://www.youtube.com/watch?v=USqn2QdZTCM&t=205s',
+                       'markdown': '[00:03:25](https://www.youtube.com/watch?v=USqn2QdZTCM&t=205s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q6.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'kwzaOqIZO2k',
+                       'title': 'Webinar: Introduction to US FDA Medical Device Regulations (510k, De '
+                                'Novo, IDE, CAPA, eMDR)',
+                       'channel': 'Invent Healthcare',
+                       'author': 'Invent Healthcare',
+                       'text': 'If you submit the standard 510k user fee and then subsequently later get a '
+                               'small business determination qualification the FDA will not refund you the '
+                               'difference.',
+                       'tip': 'If you submit the standard 510k user fee and then subsequently later get a '
+                              'small business determination qualification the FDA will not refund you the '
+                              'difference.',
+                       'timestamp': 5031,
+                       'timestamp_seconds': 5031,
+                       'timestamp_label': '[01:23:51]',
+                       'url': 'https://www.youtube.com/watch?v=kwzaOqIZO2k&t=5031s',
+                       'markdown': '[01:23:51](https://www.youtube.com/watch?v=kwzaOqIZO2k&t=5031s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q6.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'kwzaOqIZO2k',
+                       'title': 'Webinar: Introduction to US FDA Medical Device Regulations (510k, De '
+                                'Novo, IDE, CAPA, eMDR)',
+                       'channel': 'Invent Healthcare',
+                       'author': 'Invent Healthcare',
+                       'text': "Because from a general standpoint if it wasn't documented it didn't occur.",
+                       'tip': "Because from a general standpoint if it wasn't documented it didn't occur.",
+                       'timestamp': 12271,
+                       'timestamp_seconds': 12271,
+                       'timestamp_label': '[03:24:31]',
+                       'url': 'https://www.youtube.com/watch?v=kwzaOqIZO2k&t=12271s',
+                       'markdown': '[03:24:31](https://www.youtube.com/watch?v=kwzaOqIZO2k&t=12271s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q6.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': '0CrtB8E2n30',
+                       'title': 'How to Submit a 510(k) to the FDA | Step-by-Step Guide for Medical Device '
+                                'Approval',
+                       'channel': 'Prime Path Medtech',
+                       'author': 'Prime Path Medtech',
+                       'text': "If you haven't paid the user fee you'll get a hold letter.",
+                       'tip': "If you haven't paid the user fee you'll get a hold letter.",
+                       'timestamp': 154,
+                       'timestamp_seconds': 154,
+                       'timestamp_label': '[00:02:34]',
+                       'url': 'https://www.youtube.com/watch?v=0CrtB8E2n30&t=154s',
+                       'markdown': '[00:02:34](https://www.youtube.com/watch?v=0CrtB8E2n30&t=154s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q6.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': '-sk7wovpoZQ',
+                       'title': 'FDA loophole led to years of unsafe medical devices',
+                       'channel': '23ABC News | KERO',
+                       'author': '23ABC News | KERO',
+                       'text': 'The issue here lies with Congress actually because the way the FDA must '
+                               'evaluate medical devices is written in law.',
+                       'tip': 'The issue here lies with Congress actually because the way the FDA must '
+                              'evaluate medical devices is written in law.',
+                       'timestamp': 175,
+                       'timestamp_seconds': 175,
+                       'timestamp_label': '[00:02:55]',
+                       'url': 'https://www.youtube.com/watch?v=-sk7wovpoZQ&t=175s',
+                       'markdown': '[00:02:55](https://www.youtube.com/watch?v=-sk7wovpoZQ&t=175s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q6.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'ZXn0JVoWAQk',
+                       'title': 'Understanding the FDA Medical Device 510k Process',
+                       'channel': 'Patient Guard | Medical Device Consultancy',
+                       'author': 'Patient Guard | Medical Device Consultancy',
+                       'text': 'The 510k shows the device is at least as safe and effective as a legally '
+                               'marketed device that is not subject to PMA.',
+                       'tip': 'The 510k shows the device is at least as safe and effective as a legally '
+                              'marketed device that is not subject to PMA.',
+                       'timestamp': 23,
+                       'timestamp_seconds': 23,
+                       'timestamp_label': '[00:00:23]',
+                       'url': 'https://www.youtube.com/watch?v=ZXn0JVoWAQk&t=23s',
+                       'markdown': '[00:00:23](https://www.youtube.com/watch?v=ZXn0JVoWAQk&t=23s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q6.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'XMo038fEjH4',
+                       'title': 'Case Study: How is My Medical Device Classified?',
+                       'channel': 'U.S. Food and Drug Administration',
+                       'author': 'U.S. Food and Drug Administration',
+                       'text': 'The regulation number is 21 CFR 890.5900, the product code is ITH, and a '
+                               '510(k) clearance is required prior to marketing this device.',
+                       'tip': 'The regulation number is 21 CFR 890.5900, the product code is ITH, and a '
+                              '510(k) clearance is required prior to marketing this device.',
+                       'timestamp': 432,
+                       'timestamp_seconds': 432,
+                       'timestamp_label': '[00:07:12]',
+                       'url': 'https://www.youtube.com/watch?v=XMo038fEjH4&t=432s',
+                       'markdown': '[00:07:12](https://www.youtube.com/watch?v=XMo038fEjH4&t=432s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q6.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'kiNTAANRFVM',
+                       'title': 'FDA Approval and Licensing Process',
+                       'channel': 'POCTCTR',
+                       'author': 'POCTCTR',
+                       'text': "There's a minimum of three sites and a minimum of 120 subjects per site.",
+                       'tip': "There's a minimum of three sites and a minimum of 120 subjects per site.",
+                       'timestamp': 910,
+                       'timestamp_seconds': 910,
+                       'timestamp_label': '[00:15:10]',
+                       'url': 'https://www.youtube.com/watch?v=kiNTAANRFVM&t=910s',
+                       'markdown': '[00:15:10](https://www.youtube.com/watch?v=kiNTAANRFVM&t=910s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q6.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'Tb7dnxPHBNo',
+                       'title': 'FDA 510k process',
+                       'channel': 'Verdict Videos, Day in the Life Legal Video',
+                       'author': 'Verdict Videos, Day in the Life Legal Video',
+                       'text': 'With leapfrog predicates, chains of equivalence mean nothing gets '
+                               'adequately tested.',
+                       'tip': 'With leapfrog predicates, chains of equivalence mean nothing gets '
+                              'adequately tested.',
+                       'timestamp': 110,
+                       'timestamp_seconds': 110,
+                       'timestamp_label': '[00:01:50]',
+                       'url': 'https://www.youtube.com/watch?v=Tb7dnxPHBNo&t=110s',
+                       'markdown': '[00:01:50](https://www.youtube.com/watch?v=Tb7dnxPHBNo&t=110s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q6.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'TChhZNirpeM',
+                       'title': 'Can Distributors File a 510(k) for Chinese Medical Devices?  YES!',
+                       'channel': 'Isaac Erickson',
+                       'author': 'Isaac Erickson',
+                       'text': 'If you have that 510k, you have control over the United States market.',
+                       'tip': 'If you have that 510k, you have control over the United States market.',
+                       'timestamp': 80,
+                       'timestamp_seconds': 80,
+                       'timestamp_label': '[00:01:20]',
+                       'url': 'https://www.youtube.com/watch?v=TChhZNirpeM&t=80s',
+                       'markdown': '[00:01:20](https://www.youtube.com/watch?v=TChhZNirpeM&t=80s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q6.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'EnjRMOB1Uio',
+                       'title': 'Medical Devices 101: An Entry Level Overview of the FDA',
+                       'channel': 'leanRAQA',
+                       'author': 'leanRAQA',
+                       'text': 'Authorized, cleared and approved are not interchangeable: EUA devices are '
+                               'authorized, 510(k) devices are cleared and PMA devices are approved.',
+                       'tip': 'Authorized, cleared and approved are not interchangeable: EUA devices are '
+                              'authorized, 510(k) devices are cleared and PMA devices are approved.',
+                       'timestamp': 2743,
+                       'timestamp_seconds': 2743,
+                       'timestamp_label': '[00:45:43]',
+                       'url': 'https://www.youtube.com/watch?v=EnjRMOB1Uio&t=2743s',
+                       'markdown': '[00:45:43](https://www.youtube.com/watch?v=EnjRMOB1Uio&t=2743s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q6.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'GUA_JDVPQG0',
+                       'title': 'Introduction to U.S. FDA Medical Device Regulations',
+                       'channel': 'Registrar Corp',
+                       'author': 'Registrar Corp',
+                       'text': 'FDA will not pick your predicate for you.',
+                       'tip': 'FDA will not pick your predicate for you.',
+                       'timestamp': 2532,
+                       'timestamp_seconds': 2532,
+                       'timestamp_label': '[00:42:12]',
+                       'url': 'https://www.youtube.com/watch?v=GUA_JDVPQG0&t=2532s',
+                       'markdown': '[00:42:12](https://www.youtube.com/watch?v=GUA_JDVPQG0&t=2532s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q6.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'cjw_q6QL1W4',
+                       'title': 'FDA Regulatory Education for Industry (REdI) Annual Conference 2023 – '
+                                'Devices Day 1',
+                       'channel': 'U.S. Food and Drug Administration',
+                       'author': 'U.S. Food and Drug Administration',
+                       'text': 'Remember get your SBD number first before you pay for that cover sheet; if '
+                               'you pay for it before you get your SBD number there are no refunds.',
+                       'tip': 'Remember get your SBD number first before you pay for that cover sheet; if '
+                              'you pay for it before you get your SBD number there are no refunds.',
+                       'timestamp': 19695,
+                       'timestamp_seconds': 19695,
+                       'timestamp_label': '[05:28:15]',
+                       'url': 'https://www.youtube.com/watch?v=cjw_q6QL1W4&t=19695s',
+                       'markdown': '[05:28:15](https://www.youtube.com/watch?v=cjw_q6QL1W4&t=19695s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q6.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'cjw_q6QL1W4',
+                       'title': 'FDA Regulatory Education for Industry (REdI) Annual Conference 2023 – '
+                                'Devices Day 1',
+                       'channel': 'U.S. Food and Drug Administration',
+                       'author': 'U.S. Food and Drug Administration',
+                       'text': 'Then you may miss the regulatory requirement for reporting it under 803 if '
+                               'it requires you to report that within five days.',
+                       'tip': 'Then you may miss the regulatory requirement for reporting it under 803 if '
+                              'it requires you to report that within five days.',
+                       'timestamp': 26776,
+                       'timestamp_seconds': 26776,
+                       'timestamp_label': '[07:26:16]',
+                       'url': 'https://www.youtube.com/watch?v=cjw_q6QL1W4&t=26776s',
+                       'markdown': '[07:26:16](https://www.youtube.com/watch?v=cjw_q6QL1W4&t=26776s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q6.'}]}

@@ -1,732 +1,851 @@
 from __future__ import annotations
 
-CHAPTER_3 = {
-    "id": "Q3",
-    "chapter_id": "Q3",
-    "chapter_number": 3,
-    "question_number": 3,
-    "slug": "unit-economics-margin-waterfall-working-capital-float",
-    "question_prompt": "What are the real unit economics, gross-to-net margin deductions, scrub/reversal reserves, and working-capital float requirements for automated e-commerce?",
-    "kicker": "Q3 / THE BIG MONEY PLAYBOOKS",
-    "title": "Unit Economics, Margin Waterfall & Working-Capital Float",
-    "subtitle": "Shopify and 3PL Cohort Accounting, CAC Recovery, Processor Holds, and Customs-Cost Underwriting",
-    "layout_template": "financial_breakdown",
-    "reading_time_minutes": 14,
-    "executive_summary": (
-        "Candidate #28, Automated E-Commerce, ranks #21 with a 85/100 Money-to-Manpower "
-        "Score across 18 mapped plays. Its economics depend on retained retail sales, "
-        "not checkout volume, attributed advertising revenue, or another merchant's "
-        "import value. The canonical annual owner-profit cases are $12,500 Conservative, "
-        "$129,375 Base, and $360,000 Scaled. This chapter reconciles each case through "
-        "landed inventory, fulfillment, acquisition, reversals, contractor labor, and "
-        "fixed overhead, then separates accounting profit from cash trapped in stock "
-        "and processor reserves. Two aggressive mapped plays receive explicit economic "
-        "and operating boundaries: identity-resolution claims require permissioned "
-        "alternatives, while cross-border tariff savings require current customs "
-        "eligibility rather than historical parcel exemptions. Scale only after "
-        "cohort contribution and stressed liquidity both survive reconciliation."
-    ),
-    "key_metrics": [
-        {
-            "label": "Conservative",
-            "value": "$250,000",
-            "context": "Annual recognized retail sales net of refunds",
-            "note": "5% net margin; $12,500 annual owner net profit; 2 FT + 3 C",
-        },
-        {
-            "label": "Base",
-            "value": "$1,125,000",
-            "context": "Annual recognized retail sales net of refunds",
-            "note": "11.5% net margin; $129,375 annual owner net profit; 2 FT + 3 C",
-        },
-        {
-            "label": "Scaled",
-            "value": "$2,000,000",
-            "context": "Annual recognized retail sales net of refunds",
-            "note": "18% net margin; $360,000 annual owner net profit; 3 FT + 4 C",
-        },
-    ],
-    "sections": [
-        {
-            "heading": "1. Reconcile checkout billings to spendable owner profit",
-            "epistemic_status": "illustrative_model",
-            "paragraphs": [
-                (
-                    "Start with the revenue definition before connecting Shopify, Amazon Seller "
-                    "Central, Stripe, or a warehouse ledger. The scorecard's gross revenue "
-                    "label represents retail sales net of refunds; it is not marketplace "
-                    "merchandise volume, sales tax collected, or processor deposits. For the "
-                    "illustrative Base cohort, 12,500 orders billed at $100 produce $1,250,000 "
-                    "of merchandise billings. Refunds and credits totaling $125,000 leave "
-                    "$1,125,000 of recognized sales. The resulting $90 per original order "
-                    "is a revenue normalization, not a claim that every customer keeps "
-                    "exactly ninety percent of a purchase. Exclude collected sales taxes "
-                    "from both billings and revenue in this model, and hold their cash "
-                    "in a separate liability account. Record gift-card receipts as liabilities "
-                    "until recognition is appropriate. Match each order identifier to capture, "
-                    "shipment, refund, processor fee, and warehouse invoice. A settlement "
-                    "deposit combines several accounting movements and cannot replace this "
-                    "bridge. Keep the original sales cohort attached to later credits so "
-                    "January acquisition does not look profitable merely because February "
-                    "absorbed its returns. The Conservative and Scaled columns apply the "
-                    "same ten-percent illustrative gross-billings deduction, with cent "
-                    "rounding confined to the displayed bridge."
-                ),
-                (
-                    "Build the margin waterfall with mutually exclusive cost buckets. Landed "
-                    "goods include supplier price, inbound freight, duty, brokerage, and "
-                    "nonrecoverable inbound damage; fulfillment includes outbound postage, "
-                    "pick-and-pack, packaging, and warehouse handling. Processing is modeled "
-                    "as a blended three percent of recognized sales, not a quotation from "
-                    "Stripe or Shopify Payments: actual fees can attach to original charges, "
-                    "include fixed transaction components, and remain after refunds. Replace "
-                    "that allowance with contract-level calculations before buying traffic. "
-                    "Return handling covers inspection, return labels, and inventory write-downs "
-                    "after any recovered stock value, while customer refunds already reduced "
-                    "revenue. Fraud losses cover incremental unrecovered dispute principal "
-                    "and fees; any reversal already classified as a sales reduction must "
-                    "be removed from this expense bucket. The Base arithmetic is $1,125,000 "
-                    "less $472,500 goods, $112,500 fulfillment, $33,750 processing, $157,500 "
-                    "acquisition, $11,250 retention, $22,500 return handling, $5,625 fraud, "
-                    "$45,000 contractors, and $135,000 fixed overhead. The residual is "
-                    "exactly $129,375. Owner distributions consume that residual rather "
-                    "than becoming a second operating expense. Inventory purchases and "
-                    "loan principal payments belong in the cash schedule, not duplicate "
-                    "deductions from this profit waterfall."
-                ),
-                (
-                    "Do not mistake the canonical staffing labels for evidence that payroll "
-                    "is affordable. Conservative retains 2 FT plus 3 contractors, Base "
-                    "retains 2 FT plus 3 contractors, and Scaled retains 3 FT plus "
-                    "4 contractors. Contractor pools are $10,000, $45,000, and $80,000 "
-                    "respectively; headcount describes participating people, not purchased "
-                    "full-time equivalents. At an illustrative loaded contractor rate of "
-                    "$30 per hour, those pools buy approximately 333, 1,500, and 2,667 "
-                    "hours annually across customer support, catalog corrections, and "
-                    "exception handling. Fixed overhead is only $27,500 Conservative, "
-                    "$135,000 Base, and $250,000 Scaled. An illustrative split reserving "
-                    "$9,500, $35,000, and $55,000 for software, insurance, accounting, "
-                    "and other overhead leaves employee compensation envelopes of "
-                    "$18,000, $100,000, and $195,000. The Conservative envelope cannot "
-                    "support two market-rate full-time employees; preserve its published "
-                    "$12,500 result while explicitly rejecting it as a fully funded "
-                    "hiring plan. Track working-owner hours and calculate a separate "
-                    "replacement-labor adjustment. Do not quietly improve the margin by "
-                    "assigning unpaid labor to automation. These annual owner-profit "
-                    "figures are the specified operating residuals, before personal owner "
-                    "taxes, with no additional financing or entity-tax charges assumed "
-                    "in the illustrative allocation."
-                ),
-            ],
-            "table": {
-                "caption": "Canonical Annual Retail Waterfall with Explicit Cost Allocations",
-                "headers": [
-                    "Revenue bridge or cost classification",
-                    "Conservative annual dollars and operating basis",
-                    "Base annual dollars and operating basis",
-                    "Scaled annual dollars and operating basis",
-                ],
-                "rows": [
-                    [
-                        "Gross merchandise billings before modeled customer credits",
-                        "$277,777.78 billed before the illustrative refund deduction",
-                        "$1,250,000 billed across twelve thousand five hundred orders",
-                        "$2,222,222.22 billed before the illustrative refund deduction",
-                    ],
-                    [
-                        "Customer refunds and credits deducted from billings",
-                        "$27,777.78 deducted once when establishing recognized sales",
-                        "$125,000 deducted once when establishing recognized sales",
-                        "$222,222.22 deducted once when establishing recognized sales",
-                    ],
-                    [
-                        "Recognized retail revenue excluding collected sales taxes",
-                        "$250,000 retained sales form the canonical revenue denominator",
-                        "$1,125,000 retained sales form the canonical revenue denominator",
-                        "$2,000,000 retained sales form the canonical revenue denominator",
-                    ],
-                    [
-                        "Landed goods including freight, brokerage, and duties",
-                        "$112,500 expense equals forty-five percent of recognized sales",
-                        "$472,500 expense equals forty-two percent of recognized sales",
-                        "$760,000 expense equals thirty-eight percent of recognized sales",
-                    ],
-                    [
-                        "Outbound fulfillment including packaging and warehouse handling",
-                        "$30,000 expense equals twelve percent of recognized sales",
-                        "$112,500 expense equals ten percent of recognized sales",
-                        "$180,000 expense equals nine percent of recognized sales",
-                    ],
-                    [
-                        "Blended processing allowance replaced with actual contract fees",
-                        "$7,500 expense equals three percent of recognized sales",
-                        "$33,750 expense equals three percent of recognized sales",
-                        "$60,000 expense equals three percent of recognized sales",
-                    ],
-                    [
-                        "Paid acquisition expense allocated to original customer cohorts",
-                        "$40,000 expense equals sixteen percent of recognized sales",
-                        "$157,500 expense equals fourteen percent of recognized sales",
-                        "$240,000 expense equals twelve percent of recognized sales",
-                    ],
-                    [
-                        "Retention systems and campaigns excluding duplicated acquisition costs",
-                        "$2,500 expense equals one percent of recognized sales",
-                        "$11,250 expense equals one percent of recognized sales",
-                        "$20,000 expense equals one percent of recognized sales",
-                    ],
-                    [
-                        "Reverse logistics and inventory write-downs after recoveries",
-                        "$5,000 expense equals two percent of recognized sales",
-                        "$22,500 expense equals two percent of recognized sales",
-                        "$40,000 expense equals two percent of recognized sales",
-                    ],
-                    [
-                        "Incremental fraud losses excluding reversals already reducing sales",
-                        "$2,500 expense equals one percent of recognized sales",
-                        "$5,625 expense equals one-half percent of recognized sales",
-                        "$10,000 expense equals one-half percent of recognized sales",
-                    ],
-                    [
-                        "Contribution before contractors and fixed operating overhead",
-                        "$50,000 remains after the preceding variable operating deductions",
-                        "$309,375 remains after the preceding variable operating deductions",
-                        "$690,000 remains after the preceding variable operating deductions",
-                    ],
-                    [
-                        "Contractor delivery labor for support and operational exceptions",
-                        "$10,000 expense funds three participating contractors at limited hours",
-                        "$45,000 expense funds three participating contractors at limited hours",
-                        "$80,000 expense funds four participating contractors at limited hours",
-                    ],
-                    [
-                        "Fixed overhead including the modeled employee compensation envelope",
-                        "$27,500 expense leaves insufficient funding for two market-rate employees",
-                        "$135,000 expense includes employee compensation and recurring operating overhead",
-                        "$250,000 expense includes employee compensation and recurring operating overhead",
-                    ],
-                    [
-                        "Annual owner operating residual matching the canonical scorecard",
-                        "$12,500 owner net profit equals five percent net margin",
-                        "$129,375 owner net profit equals eleven-point-five percent net margin",
-                        "$360,000 owner net profit equals eighteen percent net margin",
-                    ],
-                ],
-            },
-            "callout": {
-                "kind": "INSIDER PRO-TIPS",
-                "title": "Close the leaks that dashboard revenue conceals",
-                "body": (
-                    "Use order-level evidence to distinguish attractive attribution from "
-                    "retained contribution and cash actually available for purchasing."
-                ),
-                "items": [
-                    "Export processor balance transactions alongside Shopify orders; isolate reserve transfers, fee adjustments, and refunds before matching bank deposits.",
-                    "Require the 3PL to separate first-item picks, additional picks, packaging, storage, return inspection, and disposal on its invoice.",
-                    "Attach refund reason and recovered inventory condition to the original SKU cohort; recovered stock is not automatically worth its original landed cost.",
-                    "Price contractor work per resolved exception as well as per hour; falling ticket counts can conceal rising complexity and handling time.",
-                ],
-            },
-        },
-        {
-            "heading": "2. Underwrite acquisition using retained cohort contribution",
-            "epistemic_status": "illustrative_model",
-            "paragraphs": [
-                (
-                    "Use blended and new-customer acquisition measures together. The Base "
-                    "budget of $157,500 divided by 9,000 independently deduplicated new "
-                    "customers yields $17.50 CAC; its 12,500 original orders imply "
-                    "$12.60 acquisition expense per order. These denominators answer "
-                    "different questions. New customers can place repeat orders, and "
-                    "platform-attributed conversions can overlap across Google Ads, Meta, "
-                    "Klaviyo, and affiliate reports. At $90 recognized revenue per original "
-                    "Base order, landed goods consume $37.80, fulfillment $9.00, processing "
-                    "$2.70, retention $0.90, reverse logistics $1.80, and fraud $0.45. "
-                    "The remaining $37.35 precedes paid acquisition, contractor labor, "
-                    "and fixed overhead. Subtract $12.60 acquisition, $3.60 contractors, "
-                    "and $10.80 fixed overhead to reach $10.35 owner profit per original "
-                    "order. Do not call $37.35 an allowable CAC without preserving "
-                    "coverage for those remaining obligations. Track first-order contribution "
-                    "separately from ninety-day repeat contribution, and exclude unobserved "
-                    "repeat purchases from cash-payback claims. Conservative assumes "
-                    "2,000 acquired customers at $20 CAC; Scaled assumes 16,000 at "
-                    "$15 CAC. These customer counts are explicit modeling assumptions, "
-                    "not additional scorecard facts. Test whether each acquisition channel "
-                    "can deliver them without lowering realized prices or worsening returns."
-                ),
-                (
-                    "The mapped play identity_graph_pixel_arbitrage contains a commercially "
-                    "tempting but unsuitable premise: resolving anonymous visitors into "
-                    "private contact and household records through cross-party identity "
-                    "matching. Do not build IP-to-person enrichment, reverse hashed consumer "
-                    "directories, or buy presumed identities for unsuspecting visitors. "
-                    "A CNAME changes a hostname, not the visitor's permission, and "
-                    "SHA-256 hashing does not make identifiable customer data anonymous. "
-                    "Treat the advertised 35–55% match range as an unsupported vendor "
-                    "claim rather than forecastable demand. Substitute voluntary account "
-                    "creation, permissioned email capture, contextual search advertising, "
-                    "and authorized customer-list audiences. For an illustrative test, "
-                    "10,000 eligible visits with eight-percent voluntary signup produce "
-                    "800 subscribers. A six-percent incremental purchase rate produces "
-                    "48 orders and $4,320 recognized sales at the Base $90 rate. "
-                    "Their pre-acquisition contribution is $1,792.80 at $37.35 per order; "
-                    "a $1,200 incremental campaign leaves $592.80 before incremental "
-                    "labor and fixed costs. Use a randomized holdout to establish "
-                    "incrementality instead of crediting every subscriber purchase. Honor "
-                    "applicable deletion and sale-or-sharing opt-outs before audience "
-                    "uploads. US-only traffic restrictions do not remove state privacy "
-                    "duties, and platform permission to upload a list does not establish "
-                    "the underlying right to use it."
-                ),
-                (
-                    "Physical mail is another measured acquisition channel, not a permission "
-                    "loophole. CAN-SPAM regulates commercial electronic mail under 15 U.S.C. "
-                    "7704; postal campaigns instead face their own data-use, deceptive "
-                    "marketing, and suppression requirements. Use addresses customers "
-                    "provided for an authorized purpose, assess that purpose before "
-                    "marketing, and suppress objections. Mailing 1,000 eligible households "
-                    "at $0.85 delivered costs $850. Twenty-five incremental orders generate "
-                    "$933.75 of Base pre-acquisition contribution, leaving only $83.75 "
-                    "before campaign labor. Thirty orders leave $270.50; twenty orders "
-                    "lose $103 before labor. The campaign therefore needs at least "
-                    "23 incremental orders just to cover postage and production, because "
-                    "$850 divided by $37.35 is approximately 22.76. Compare this test "
-                    "with permissioned email and contextual ads using the same retained-sales "
-                    "window. Product liability and delivery failures can reverse apparently "
-                    "excellent retention economics: recalled inventory is not a remarketing "
-                    "opportunity, and a delayed shipment is not revenue earned by a "
-                    "tracking notification. Under 16 CFR 435.2, build shipment-promise "
-                    "controls and the required delay-consent or refund workflow. Keep "
-                    "customer service empowered to stop sequences when a dispute, safety "
-                    "complaint, or delivery exception makes another automated sales message "
-                    "commercially destructive."
-                ),
-            ],
-            "table": {
-                "caption": "Cohort Acquisition and Retention Tests with Observable Failure Signals",
-                "headers": [
-                    "Test and measurable customer population",
-                    "Unit economics before scaling the channel",
-                    "Evidence required for a defensible measurement",
-                    "Fallback when the test misses its threshold",
-                ],
-                "rows": [
-                    [
-                        "Conservative acquisition across two thousand new customers",
-                        "$40,000 acquisition spend produces a modeled $20 CAC",
-                        "Deduplicate customers against order history and refunded first purchases",
-                        "Reduce weak placements before adding discount-driven acquisition volume",
-                    ],
-                    [
-                        "Base acquisition across nine thousand new customers",
-                        "$157,500 acquisition spend produces a modeled $17.50 CAC",
-                        "Reconcile channel invoices with retained orders and experiment holdouts",
-                        "Shift budget toward cohorts retaining positive first-order contribution",
-                    ],
-                    [
-                        "Scaled acquisition across sixteen thousand new customers",
-                        "$240,000 acquisition spend produces a modeled $15 CAC",
-                        "Verify incremental reach rather than repeated attribution of existing buyers",
-                        "Cap spend when marginal acquisition costs exceed contribution coverage",
-                    ],
-                    [
-                        "Permissioned signup alternative to anonymous identity enrichment",
-                        "Forty-eight incremental orders leave $592.80 after campaign expense",
-                        "Document voluntary signup and randomized purchase lift measurement",
-                        "Use contextual search campaigns without purchasing inferred household identities",
-                    ],
-                    [
-                        "Postal retention test using eligible customer-provided addresses",
-                        "Twenty-five incremental orders leave $83.75 before additional labor",
-                        "Reconcile mailed households, suppression requests, and incremental orders",
-                        "Stop mailing segments below twenty-three incremental orders per thousand",
-                    ],
-                    [
-                        "Returns-adjusted retention measured after the observation window",
-                        "Recognize contribution only after expected refunds and handling costs",
-                        "Link every later credit to its original acquisition cohort",
-                        "Delay expansion when immature cohorts conceal unresolved customer reversals",
-                    ],
-                ],
-            },
-        },
-        {
-            "heading": "3. Fund inventory, settlement delays, and reversal reserves separately",
-            "epistemic_status": "illustrative_model",
-            "paragraphs": [
-                (
-                    "Retail customers usually pay before shipment, but the operator can "
-                    "still face a material collection delay. Measure DSO here as elapsed "
-                    "days between recognized sale and unrestricted processor cash; do "
-                    "not confuse card capture with money available to pay suppliers. "
-                    "The Base planning case uses 45 inventory days, seven settlement "
-                    "days, and 15 payable days. Using 365 days, inventory funding is "
-                    "$472,500 divided by 365 times 45, or $58,253.42. Settlement "
-                    "receivables are $1,125,000 divided by 365 times seven, or "
-                    "$21,575.34. Supplier credit offsets $472,500 divided by 365 "
-                    "times 15, or $19,417.81. Net operating working capital is "
-                    "$60,410.96 before processor rolling reserves and liquidity buffers. "
-                    "This simplified revenue-based settlement estimate excludes tax cash "
-                    "and assumes refunds are already reflected in the revenue run rate; "
-                    "the treasury forecast must instead use actual gross settlements, "
-                    "refund debits, and fees. Prepaid suppliers provide zero payable "
-                    "days, increasing the Base need by $19,417.81. Inventory days "
-                    "must include stock economically owned in transit and at the 3PL, "
-                    "not just sale-ready units. A seven-day dashboard payout average "
-                    "can conceal a much longer tail for new accounts, disputed orders, "
-                    "or concentrated marketplace exposure."
-                ),
-                (
-                    "Layer processor holds and return liquidity on top without recording "
-                    "them as new expenses. Assume, illustratively, a processor withholds "
-                    "five percent of the Base $1,250,000 annual gross merchandise "
-                    "billings for 90 days. The steady-state restricted-cash balance is "
-                    "$15,410.96, calculated as billings divided by 365 times ninety "
-                    "times five percent. Actual contracts can use different bases, caps, "
-                    "release tests, or indefinite security rights; obtain the signed "
-                    "schedule. Separately allocate one month of modeled customer refunds, "
-                    "$125,000 divided by twelve or $10,416.67, as accessible refund "
-                    "liquidity. That amount is not a second refund expense and is "
-                    "not freely distributable profit. A fraud reserve forecast likewise "
-                    "distinguishes the expected loss already in the income statement "
-                    "from cash potentially withdrawn during dispute handling. Add one "
-                    "month of contractor and fixed overhead, $180,000 divided by "
-                    "twelve or $15,000, for a defined operating buffer. These "
-                    "components produce a Base planning target of approximately "
-                    "$101,238.58. This is a specified liquidity scenario, not a "
-                    "complete launch budget: deposits, initial tooling, abnormal demand "
-                    "ramps, taxes, and lender covenants require separate lines. Reconcile "
-                    "the target against unrestricted cash, undrawn committed facilities, "
-                    "and the next thirteen weeks of dated obligations."
-                ),
-                (
-                    "Model the cash failure before increasing the reorder quantity. A "
-                    "fourteen-day extension to the Base settlement delay traps another "
-                    "$43,150.68 of revenue-based cash. Fifteen additional inventory days "
-                    "require $19,417.81. Together they add $62,568.49, raising the "
-                    "illustrative Base liquidity target to $163,807.07 without changing "
-                    "recognized revenue or accounting profit. That distinction explains "
-                    "why profitable shops miss payroll after promotional growth. The "
-                    "Conservative planning case uses 60 inventory days, ten settlement "
-                    "days, and zero supplier credit; Scaled uses 35, five, and "
-                    "30 respectively. Apply the same five-percent, ninety-day gross-billings "
-                    "reserve assumption, one month of refunds, and one month of "
-                    "contractor plus fixed overhead to compare their funding needs. "
-                    "Do not assume better supplier terms merely because the Scaled "
-                    "column needs them: get written credit limits and confirm whether "
-                    "freight, duty, and deposits actually qualify for those terms. Route "
-                    "inventory alerts through reorder rules that use sell-through and "
-                    "cash availability together. Retain an alternate fulfillment route, "
-                    "but never move identical inventory obligations between dashboards "
-                    "to make exposure disappear. If a payout lock exceeds funded "
-                    "capacity, pause discretionary acquisition and new purchase commitments "
-                    "while preserving refunds, essential service, and already-promised "
-                    "customer shipments."
-                ),
-            ],
-            "table": {
-                "caption": "Working-Capital Scenarios Using Explicit Timing and Reserve Assumptions",
-                "headers": [
-                    "Funding component and calculation basis",
-                    "Conservative cash requirement and operating assumption",
-                    "Base cash requirement and operating assumption",
-                    "Scaled cash requirement and operating assumption",
-                ],
-                "rows": [
-                    [
-                        "Owned inventory valued at annual landed cost",
-                        "$18,493.15 funds sixty days of landed goods cost",
-                        "$58,253.42 funds forty-five days of landed goods cost",
-                        "$72,876.71 funds thirty-five days of landed goods cost",
-                    ],
-                    [
-                        "Settlement receivables estimated using recognized daily revenue",
-                        "$6,849.32 bridges ten days before unrestricted settlement",
-                        "$21,575.34 bridges seven days before unrestricted settlement",
-                        "$27,397.26 bridges five days before unrestricted settlement",
-                    ],
-                    [
-                        "Supplier credit offset against inventory financing requirements",
-                        "$0 offset assumes suppliers require payment before delivery",
-                        "$19,417.81 offset assumes fifteen days of effective supplier credit",
-                        "$62,465.75 offset assumes thirty days of effective supplier credit",
-                    ],
-                    [
-                        "Restricted processor cash using gross merchandise billings",
-                        "$3,424.66 reflects five-percent withholding over ninety rolling days",
-                        "$15,410.96 reflects five-percent withholding over ninety rolling days",
-                        "$27,397.26 reflects five-percent withholding over ninety rolling days",
-                    ],
-                    [
-                        "Accessible refund liquidity without duplicating recognized refund expense",
-                        "$2,314.81 earmarked for one month of modeled refunds",
-                        "$10,416.67 earmarked for one month of modeled refunds",
-                        "$18,518.52 earmarked for one month of modeled refunds",
-                    ],
-                    [
-                        "Operating buffer for contractors and fixed overhead",
-                        "$3,125 reserved for one month of specified operating costs",
-                        "$15,000 reserved for one month of specified operating costs",
-                        "$27,500 reserved for one month of specified operating costs",
-                    ],
-                    [
-                        "Combined planning target calculated before rounding individual components",
-                        "$34,206.94 required before additional launch and tax obligations",
-                        "$101,238.58 required before additional launch and tax obligations",
-                        "$111,224.00 required before additional launch and tax obligations",
-                    ],
-                ],
-            },
-            "sop_steps": [
-                {
-                    "step": 1,
-                    "title": "Close the retained-sales bridge",
-                    "action": "Join order, shipment, refund, dispute, and processor balance exports.",
-                    "detail": (
-                        "Reconcile gross merchandise billings to recognized sales and "
-                        "bank settlements separately; retain original cohort identifiers."
-                    ),
-                },
-                {
-                    "step": 2,
-                    "title": "Rebuild dated inventory obligations",
-                    "action": "Schedule supplier deposits, balances, freight, duties, and 3PL invoices.",
-                    "detail": (
-                        "Use contractual due dates and actual ownership transfer; "
-                        "separate credit-eligible purchases from prepaid charges."
-                    ),
-                },
-                {
-                    "step": 3,
-                    "title": "Stress the thirteen-week cash schedule",
-                    "action": "Add fourteen settlement days and fifteen inventory days.",
-                    "detail": (
-                        "Include restricted processor balances, tax liabilities, refund "
-                        "debits, and committed purchase orders without duplicating costs."
-                    ),
-                },
-                {
-                    "step": 4,
-                    "title": "Release spending against funded capacity",
-                    "action": "Authorize only purchase and advertising commitments the stressed forecast supports.",
-                    "detail": (
-                        "Document the minimum unrestricted cash balance and assign "
-                        "an owner to any forecast breach before increasing spend."
-                    ),
-                },
-            ],
-        },
-        {
-            "heading": "4. Stress tariff, acquisition, and operating assumptions before scaling",
-            "epistemic_status": "illustrative_model",
-            "paragraphs": [
-                (
-                    "The mapped play section_321_de_minimis_bonded_tariff_arbitrage must not "
-                    "be underwritten using its historical exemption claims. The broad "
-                    "US duty-free de minimis suspension effective August 29, 2025 "
-                    "invalidated the premise that qualifying low-value parcels could "
-                    "generally enter duty-free merely because their origin was Vietnam, "
-                    "India, the EU, Bangladesh, or Cambodia. Verify current CBP "
-                    "implementation and any subsequent changes before quoting landed "
-                    "cost; this model assumes no Section 321 savings. Neither "
-                    "Mexican IMMEX processing nor Canadian bonded storage independently "
-                    "changes origin or creates US duty relief. Splitting shipments "
-                    "does not manufacture eligibility under 19 U.S.C. 1321. For "
-                    "historical sensitivity only, a $40 customs value carrying a "
-                    "25% duty creates a $10 duty line; removing it would save "
-                    "$10, but only an actually available legal treatment can justify "
-                    "that removal. If a valid program saves $4 per unit while "
-                    "border handling adds $2.50, net savings are $1.50, not $4. "
-                    "A service provider charging forty percent of that net saving "
-                    "would earn $0.60 per unit before its own costs. Such "
-                    "service fees are a different business model and are not "
-                    "added to this retail scorecard. The retail operator recognizes "
-                    "its own merchandise sales and actual landed-cost reduction."
-                ),
-                (
-                    "The practical fallback is documented customs classification, actual "
-                    "origin, ordinary duty-paid fulfillment, and valuation supported by "
-                    "the transaction record. First-sale valuation is not an automatic "
-                    "discount: under 19 U.S.C. 1401a and applicable customs precedent, "
-                    "the importer must substantiate a qualifying sale, destination, "
-                    "valuation elements, and the supporting chain of transactions. "
-                    "Have the customs broker identify the evidence required for "
-                    "the specific merchandise and commercial structure; a cheaper "
-                    "upstream invoice alone does not establish eligibility. Authorized-dealer "
-                    "agreements also need review for territory, channel, warranty, and "
-                    "returns economics. A product that loses manufacturer warranty "
-                    "support across a border can destroy more margin than duty "
-                    "planning saves. Keep product-safety traceability by lot and supplier, "
-                    "and escalate reportable hazards under 15 U.S.C. 2064 rather "
-                    "than allowing automated replenishment to continue. For each SKU, "
-                    "compare a domestic duty-paid route against any substantiated "
-                    "cross-border alternative using freight, duty, brokerage, delivery "
-                    "time, returns recovery, and replacement-stock funding. Reject "
-                    "an alternative when its savings require undocumented origin "
-                    "changes or unavailable parcel treatment. A ten-percent increase "
-                    "in Base landed goods cost is $47,250, cutting annual profit "
-                    "from $129,375 to $82,125 if prices, volume, and all other "
-                    "costs remain unchanged."
-                ),
-                (
-                    "Use explicit sensitivities rather than optimistic blended forecasts. "
-                    "A twenty-percent increase in acquisition spending at unchanged "
-                    "customer volume subtracts $8,000 Conservative, $31,500 Base, "
-                    "and $48,000 Scaled, leaving $4,500, $97,875, and $312,000 "
-                    "respectively. Adding two percentage points of recognized revenue "
-                    "to fulfillment expense subtracts $5,000, $22,500, and $40,000. "
-                    "An incremental loss equal to two percent of current recognized "
-                    "sales, with no cost recovery, produces the same dollar "
-                    "reductions; if the event instead reduces revenue, recompute "
-                    "the margin denominator rather than reporting the old percentage. "
-                    "Stack acquisition inflation, fulfillment inflation, and that loss "
-                    "to produce owner residuals of negative $5,500, $52,875, "
-                    "and $232,000. These are downside tests, not replacements "
-                    "for the canonical three cases. Then overlay settlement and "
-                    "inventory stresses because losses and cash locks can occur "
-                    "together. Startup capital of $15,000–$80,000 and monthly "
-                    "operating expense of $4,000–$25,000 are screening ranges, "
-                    "not substitutes for this expense taxonomy or dated cash "
-                    "schedule. Order routing, inventory alerts, and returns tracking "
-                    "earn their place only when exception rates, labor consumption, "
-                    "and retained contribution improve. Expand after observing those "
-                    "improvements through a complete return cycle, not after an "
-                    "advertising dashboard posts a flattering revenue multiple."
-                ),
-            ],
-            "table": {
-                "caption": "Annual Profit Sensitivities with Fixed Volumes and Explicit Incremental Costs",
-                "headers": [
-                    "Sensitivity and assumptions held constant",
-                    "Conservative owner-profit impact and remaining dollars",
-                    "Base owner-profit impact and remaining dollars",
-                    "Scaled owner-profit impact and remaining dollars",
-                ],
-                "rows": [
-                    [
-                        "Acquisition spending rises twenty percent without incremental customers",
-                        "$8,000 additional expense leaves $4,500 annual owner profit",
-                        "$31,500 additional expense leaves $97,875 annual owner profit",
-                        "$48,000 additional expense leaves $312,000 annual owner profit",
-                    ],
-                    [
-                        "Fulfillment expense rises two percentage points of revenue",
-                        "$5,000 additional expense leaves $7,500 annual owner profit",
-                        "$22,500 additional expense leaves $106,875 annual owner profit",
-                        "$40,000 additional expense leaves $320,000 annual owner profit",
-                    ],
-                    [
-                        "Incremental unrecovered losses equal two percent of current revenue",
-                        "$5,000 additional losses leave $7,500 annual owner profit",
-                        "$22,500 additional losses leave $106,875 annual owner profit",
-                        "$40,000 additional losses leave $320,000 annual owner profit",
-                    ],
-                    [
-                        "Combined acquisition, fulfillment, and unrecovered-loss downside case",
-                        "$18,000 combined deductions create a $5,500 annual owner loss",
-                        "$76,500 combined deductions leave $52,875 annual owner profit",
-                        "$128,000 combined deductions leave $232,000 annual owner profit",
-                    ],
-                    [
-                        "Landed goods cost rises ten percent without repricing",
-                        "$11,250 additional expense leaves $1,250 annual owner profit",
-                        "$47,250 additional expense leaves $82,125 annual owner profit",
-                        "$76,000 additional expense leaves $284,000 annual owner profit",
-                    ],
-                    [
-                        "Settlement delays extend fourteen days without additional expenses",
-                        "$9,589.04 additional cash requirement leaves accounting profit unchanged",
-                        "$43,150.68 additional cash requirement leaves accounting profit unchanged",
-                        "$76,712.33 additional cash requirement leaves accounting profit unchanged",
-                    ],
-                ],
-            },
-            "callout": {
-                "kind": "OPERATOR GATE",
-                "title": "Verify four conditions before expanding commitments",
-                "body": (
-                    "Do not release a larger purchasing or advertising budget until "
-                    "the operating record supports each condition."
-                ),
-                "items": [
-                    "Reconcile all three canonical profit cases exactly, then show replacement-labor costs separately wherever staffing exceeds the funded compensation envelope.",
-                    "Document processor settlement timing, reserve terms, and supplier credit; demonstrate funded capacity for the combined inventory and payout-delay stress.",
-                    "Use permissioned customer data and measured incremental demand; exclude anonymous-person enrichment and unsupported identity-match forecasts from acquisition underwriting.",
-                    "Obtain current customs treatment and complete landed-cost documentation for every import route; exclude assumed Section 321 relief from purchase commitments.",
-                ],
-            },
-        },
-    ],
-    "pull_quote": (
-        "A profitable order is not funded growth until its refund risk, replacement inventory, "
-        "and locked payout all have cash behind them."
-    ),
-    "diagram_id": "diag-03",
-    "action_checklist": [
-        "Build an order-level bridge from merchandise billings through refunds, fees, landed goods, fulfillment, contractors, and owner profit.",
-        "Reconcile the annual cases to $12,500, $129,375, and $360,000 while flagging the Conservative staffing funding shortfall.",
-        "Calculate new-customer CAC and retained contribution using deduplicated cohorts and a complete return-observation window.",
-        "Create a thirteen-week cash forecast separating supplier obligations, unrestricted settlements, processor reserves, tax liabilities, and refund liquidity.",
-        "Replace unsupported identity-resolution and parcel-duty assumptions with permissioned acquisition tests and documented current customs treatment.",
-        "Run stacked acquisition, fulfillment, loss, inventory, and payout-delay stresses before increasing advertising spend or purchase-order commitments.",
-    ],
-    "statutory_citations": [
-        {
-            "title": "19 U.S.C. 1321 — Administrative exemptions",
-            "url": "https://www.law.cornell.edu/uscode/text/19/1321",
-            "relevance": (
-                "Provides the statutory framework for administrative customs exemptions; "
-                "eligibility and current implementing restrictions must be established "
-                "rather than assumed from parcel value or warehouse location."
-            ),
-        },
-        {
-            "title": "Executive Order 14324 — Suspending Duty-Free De Minimis Treatment for All Countries",
-            "url": "https://www.whitehouse.gov/presidential-actions/2025/07/suspending-duty-free-de-minimis-treatment-for-all-countries/",
-            "relevance": (
-                "Directed the broad suspension effective August 29, 2025; historical "
-                "Section 321 savings claims require reassessment against current implementation."
-            ),
-        },
-        {
-            "title": "19 U.S.C. 1401a — Valuation of merchandise",
-            "url": "https://www.law.cornell.edu/uscode/text/19/1401a",
-            "relevance": (
-                "Establishes customs valuation methods and transaction-value elements "
-                "relevant to substantiating landed costs and any proposed first-sale treatment."
-            ),
-        },
-        {
-            "title": "16 CFR 435.2 — Mail, Internet, or Telephone Order Merchandise Rule",
-            "url": "https://www.ecfr.gov/current/title-16/chapter-I/subchapter-D/part-435/section-435.2",
-            "relevance": (
-                "Requires supported shipment representations and specified delay-consent "
-                "or refund procedures, directly affecting fulfillment controls and refund cash."
-            ),
-        },
-        {
-            "title": "15 U.S.C. 7704 — Requirements for transmission of messages",
-            "url": "https://www.law.cornell.edu/uscode/text/15/7704",
-            "relevance": (
-                "Establishes commercial electronic-mail requirements, including identification "
-                "and opt-out obligations; it does not authorize unrelated consumer-data collection."
-            ),
-        },
-        {
-            "title": "California Civil Code 1798.120 — Right to opt out of sale or sharing",
-            "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=1798.120.&lawCode=CIV",
-            "relevance": (
-                "Requires covered businesses to honor applicable sale-or-sharing opt-outs, "
-                "including when customer information is used in qualifying advertising arrangements."
-            ),
-        },
-        {
-            "title": "15 U.S.C. 2064 — Substantial product hazards",
-            "url": "https://www.law.cornell.edu/uscode/text/15/2064",
-            "relevance": (
-                "Establishes product-hazard reporting and corrective-action obligations "
-                "that affect inventory availability, returns exposure, and automated replenishment."
-            ),
-        },
-    ],
-}
+CHAPTER_3 = {'id': 'Q3',
+ 'chapter_id': 'Q3',
+ 'chapter_number': 3,
+ 'question_number': 3,
+ 'slug': 'unit-economics-and-contribution-margin',
+ 'question_prompt': 'How much profit does each order really make after product, fulfillment, payment, and '
+                    'ad costs, and how should those numbers guide decisions?',
+ 'kicker': 'Q3 / THE BIG MONEY PLAYBOOKS',
+ 'title': 'Unit Economics and Contribution Margin',
+ 'subtitle': 'Gross vs. contribution margin, CM1–CM3 and where marketing costs sit (OPEX vs. CM3), '
+             'contribution-margin-to-CAC ratios, lifecycle benchmarks from idea to exit, tracking and '
+             'reporting CM, and the 50%-off vs. BOGO case that lost $500K',
+ 'layout_template': 'financial_analysis',
+ 'reading_time_minutes': 15,
+ 'executive_summary': 'Accountants, agency operators and finance coaches converge on one spine: '
+                      'contribution margin is net revenue minus every cost that moves with an order, '
+                      'including product, fulfillment, payment fees and, for most, marketing, and it caps '
+                      'both operating margin and the CAC you can afford. Eric Andrews targets a '
+                      'contribution-margin-to-CAC ratio above 1 and break-even or better on the first '
+                      'order; Common Thread Collective turns $53 of fuel profit minus a $20 net target '
+                      'into a $33 target CAC; Mark Builds Brands targets 60 percent gross margin and a 1.3 '
+                      'break-even ROAS. Street-tested levers include two-for-one offers instead of 50 '
+                      'percent off and pushing ad spend into the highest-margin SKU. Disagreements center '
+                      'on whether marketing belongs inside contribution margin, how to classify agency and '
+                      'creative fees, and whether to scale on lifetime value.',
+ 'key_metrics': [{'label': 'Contribution Margin to CAC Ratio Target',
+                  'metric': 'Contribution Margin to CAC Ratio Target',
+                  'value': 'Better than 1.0 on the first order (1.5 in the idea-phase plan, 2.1 at late '
+                           'stage in the optimal scenario)',
+                  'confidence': 'attributed_practitioner_claim',
+                  'context': "Eric Andrews' lifecycle benchmarks for an apparel brand moving from idea to "
+                             'late stage, where the optimal business always breaks even or better on the '
+                             'first order',
+                  'source': 'Eric Andrews ([gG33a-ErNRQ @ 00:13:30])'},
+                 {'label': 'Break-Even Revenue Point',
+                  'metric': 'Break-Even Revenue Point',
+                  'value': '$1,000,000 ($300,000 fixed costs divided by a 30% contribution margin ratio)',
+                  'confidence': 'attributed_practitioner_claim',
+                  'context': "Stephen's worked example of using the contribution margin ratio and fixed "
+                             'costs to find the revenue at which profit starts',
+                  'source': 'LedgerGurus: Ecommerce Accounting Experts ([e5r7-KT6mQ0 @ 00:02:28])'},
+                 {'label': 'Target Gross Margin and Break-Even ROAS',
+                  'metric': 'Target Gross Margin and Break-Even ROAS',
+                  'value': '60% gross margin KPI; 1.3 personal break-even ROAS target (1.84 called tough '
+                           'to scale)',
+                  'confidence': 'attributed_practitioner_claim',
+                  'context': "Mark's unit economics calculator KPIs for scaling a new product on paid ads",
+                  'source': 'Mark Builds Brands Highlights ([eTADhJ3N_oo @ 00:03:21])'},
+                 {'label': 'BOGO vs 50% Off Contribution Margin',
+                  'metric': 'BOGO vs 50% Off Contribution Margin',
+                  'value': '$69 vs $29 contribution margin per order; $36 contribution margin after CAC on '
+                           'two-for-one',
+                  'confidence': 'attributed_practitioner_claim',
+                  'context': 'Black Friday case study of a brand that lost $500,000 running 50% off '
+                             'sitewide, re-run as a two-for-one offer',
+                  'source': 'Eric Andrews ([t2H3gJHuw6k @ 00:08:56])'}],
+ 'sections': [{'heading': '1. The Practitioner Consensus: Contribution Margin Is the Ceiling on Everything',
+               'paragraphs': ['Every operator here builds the same spine: contribution margin is what '
+                              'survives after the costs that move with each order. Stephen at LedgerGurus '
+                              'defines it as revenue minus variable costs, with COGS, fulfillment and '
+                              'shipping, payment processor fees and advertising sitting on the variable '
+                              'side, while payroll, software, rent and non-advertising marketing sit in '
+                              'fixed [e5r7-KT6mQ0 @ 00:01:14]. Abir, a DTC accountant, frames it '
+                              'identically as the money left over after variable expenses that then covers '
+                              'fixed expenses, and walks a pogo-stick store from $100,000 revenue down to '
+                              '$33,000 of contribution margin after discounts, product, shipping, merchant '
+                              'fees and $30,000 of ads [lrF2Uey1-uU @ 00:03:43]. Common Thread Collective '
+                              'defines it as net revenue minus payment processor fee, pick-pack, '
+                              'fulfillment, cost of goods and ad spend [b4ddPmPdQcY @ 00:00:00], and Chan '
+                              'at Bloom Analytics spells out the formula as net revenue minus variable '
+                              'costs minus marketing costs, with net revenue meaning sales after discounts '
+                              'and refunds [mWL3C_COYk8 @ 00:00:36]. Both accountants add a reality check: '
+                              'costs are rarely perfectly fixed or variable, and fixed costs climb in step '
+                              "functions as the business grows. Stephen's hard rule follows directly: "
+                              'operating margin can never exceed contribution margin, and a contribution '
+                              'margin at or below zero means a broken business that must raise prices or '
+                              'cut costs fast.',
+                              'The second point of agreement is that margin must be split into layers '
+                              'instead of one blended COGS bucket. Eric Andrews defines gross margin as '
+                              'revenue minus product cost, so a $100 item that costs $20 to make and land '
+                              'in the warehouse runs about 80 percent; contribution margin then also backs '
+                              "out fulfillment to the customer's door, and post-marketing contribution "
+                              'margin, the lowest layer, asks whether you made money after all marketing '
+                              '[Zh6xNyWZVs4 @ 00:01:10]. Valentin Kuznetcov runs the same ladder with '
+                              'numbered labels: product profit is CM1, gross profit after cost of delivery '
+                              'is CM2, and profit contribution after the costs that incur revenue is CM3, '
+                              'with everything below that treated as OPEX [LmlQ8JEPflQ @ 00:04:57]. Chan '
+                              'at Bloom turns the ladder into a waterfall on a $10,000 month: $3,500 '
+                              'product leaves 65 percent, $1,500 fulfillment leaves 50 percent, $2,000 '
+                              'marketing leaves a 30 percent contribution margin [mWL3C_COYk8 @ 00:02:33]. '
+                              "Chan's diagnostic: a weak first layer is a pricing or sourcing problem ads "
+                              'will not fix, a big fulfillment bite points to a low free-shipping '
+                              'threshold or heavy cheap products, and a healthy gross profit with a thin '
+                              'contribution margin means acquisition cost is the problem [mWL3C_COYk8 @ '
+                              '00:03:14].',
+                              'The third consensus is that contribution margin per order is the ceiling on '
+                              'what you can pay to acquire a customer. Eric Andrews shows $64 of '
+                              'contribution margin per unit against a $42 CAC, a '
+                              'contribution-margin-to-CAC ratio of about 1.5, and argues that being '
+                              'profitable on the first order makes every repeat order close to pure profit '
+                              'because little or no marketing attaches to it [LKEn47f67vQ @ 00:01:31]. In '
+                              'his lifecycle benchmarks the goal of most businesses is at the very least '
+                              'break-even on the first order, with the exception being brands whose '
+                              'customers buy five, ten or fifteen times [gG33a-ErNRQ @ 00:04:53]. Common '
+                              'Thread Collective calls the same number fuel profit: with 53 points of '
+                              'margin left on a $100 boot, you could spend up to $52 to acquire a customer '
+                              "and still net one dollar [gCo34Jl1RkQ @ 00:07:25]. Patrick O'Driscoll of "
+                              'TVG lands in the same place from the agency side, saying most smaller '
+                              'brands are better off keeping new customer acquisition cost below AOV from '
+                              'day one and not scaling spend until contribution margin is healthy, even '
+                              'though the fastest scaling happens on lifetime value [vI_Np8RQikw @ '
+                              '00:12:23]. The shared rule: know the per-order margin before you touch the '
+                              'ad budget.'],
+               'table': {'caption': 'Where the practitioners agree on contribution margin fundamentals',
+                         'headers': ['Consensus Principle',
+                                     'Operator Detail From the Speaker',
+                                     'Expert Source'],
+                         'rows': [['Contribution margin equals revenue minus every variable cost tied to '
+                                   'each order',
+                                   'COGS, fulfillment and shipping, payment processor fees and advertising '
+                                   'all sit on the variable side',
+                                   'LedgerGurus: Ecommerce Accounting Experts ([e5r7-KT6mQ0 @ 00:00:26])'],
+                                  ['Operating margin can never exceed the contribution margin ratio of the '
+                                   'business',
+                                   'A 30 percent contribution margin caps operating margin at 30 percent, '
+                                   'and zero or below means a broken business',
+                                   'LedgerGurus: Ecommerce Accounting Experts ([e5r7-KT6mQ0 @ 00:02:00])'],
+                                  ['Break gross margin, contribution margin and post-marketing margin into '
+                                   'separate layers',
+                                   'Product cost and fulfillment are backed out separately so each one can '
+                                   'be evaluated independently',
+                                   'Eric Andrews Clips ([Zh6xNyWZVs4 @ 00:01:29])'],
+                                  ['Contribution margin per order sets the hard ceiling on customer '
+                                   'acquisition cost',
+                                   'With $83 of contribution margin on a $175 order, CAC should be $83 or '
+                                   'less',
+                                   'Eric Andrews ([gG33a-ErNRQ @ 00:06:53])'],
+                                  ['Aim to break even or better on the very first customer order',
+                                   'Many customers buy only once, so first-order economics must work '
+                                   'unless lifetime orders run very high',
+                                   'Eric Andrews ([gG33a-ErNRQ @ 00:04:16])'],
+                                  ['Track unit economics by SKU instead of treating every product as '
+                                   'identical',
+                                   'Treating every SKU as producing the same net outcome is one of the '
+                                   'number one drainers of money',
+                                   'Common Thread Collective ([gCo34Jl1RkQ @ 00:08:57])'],
+                                  ['Do not scale ad spend until contribution margin is in a healthy spot',
+                                   'First levers are raising prices, cutting cost of goods via suppliers '
+                                   'or shipping, and lowering acquisition costs',
+                                   "Patrick O'Driscoll | E-Commerce Growth Marketer ([vI_Np8RQikw @ "
+                                   '00:11:11])']]}},
+              {'heading': '2. Exact Street Mechanics, Tools & Numbers',
+               'paragraphs': ['Eric Andrews builds per-order unit economics with plain division: total '
+                              'revenue over total orders gives a $232 AOV, product COGS over orders gives '
+                              '$62, fulfillment over orders gives $71, leaving $99 of contribution margin '
+                              'per order; when months bounce around he runs a trailing average, which '
+                              'lands at $238, $64, $74 and roughly $100 [tj2W9oEqeQo @ 00:00:56]. In his '
+                              'fuller case study, gross revenue takes product sales and taxes collected, '
+                              'then discounts and returns come out and shipping income goes back in to '
+                              'reach net revenue, about $134 per order [8xfPvprL5qE @ 00:07:34]. COGS '
+                              'covers product cost, import freight, duties and taxes at 29 and 27 percent '
+                              'of revenue; fulfillment covers pick and pack, packing materials, other 3PL '
+                              'charges, shipping to customer and merchant fees, about $31 and $35 per '
+                              'order, leaving $64 of contribution margin, a little under 50 percent '
+                              '[8xfPvprL5qE @ 00:10:18]. Marketing then eats 31 to 36 percent of revenue, '
+                              '$42 and $48 per order, so post-marketing contribution is only $22 and $12; '
+                              'opex of about $8 per order leaves operating income around 11 and 5 percent. '
+                              'Matt Byrne of Day One Advisory warns that once multiple stock orders carry '
+                              'different landed costs per unit, tracking in Excel becomes death by '
+                              'spreadsheet, so landed cost belongs in an inventory system [sR1NjOCbwOA @ '
+                              '00:09:49].',
+                              "Common Thread Collective's fuel-profit math is the cleanest street build. "
+                              'Start at a $100 retail price, subtract $20 paid to the manufacturer, about '
+                              '$1 per unit for the 3PL to break bulk and shelve, roughly $2 in payment '
+                              'processing, about $1 pick fee, $10 to ship a heavy item, and $15 for a 15 '
+                              'percent return rate, landing at $53 of fuel profit [gCo34Jl1RkQ @ '
+                              '00:06:19]. Then set a net target per order: fuel profit of $53 minus a $20 '
+                              'net target gives a $33 target CAC, which becomes the rule for building the '
+                              'ad account and thinking about bid caps [gCo34Jl1RkQ @ 00:08:06]. Mark of '
+                              'Mark Builds Brands wires the same logic into a calculator: product price, '
+                              'COGS from AliExpress or CJ Dropshipping, US shipping, and payment '
+                              'processing at a standard 2.7 percent plus 30 cents per order [eTADhJ3N_oo @ '
+                              '00:02:47]. His KPIs are a 60 percent gross margin, a break-even ROAS where '
+                              '1.84 is tough to scale and his personal target is 1.3, and a 20 percent '
+                              'profit margin; his sample store showed a 1.67 ROAS against that 1.84 '
+                              'break-even, meaning a 3 percent margin and $613 of profit [eTADhJ3N_oo @ '
+                              '00:04:57]. His two product-selection rules are a $20 gross margin minimum '
+                              'and pricing at 3x cost of goods.',
+                              "Eric Andrews' Black Friday case shows the mechanics of promo math. "
+                              'Baseline: 1.75 percent conversion, $75 CAC, $124 net AOV, $21 product COGS, '
+                              '$19 fulfillment, $84 contribution margin and only $9 after CAC [t2H3gJHuw6k '
+                              '@ 00:02:33]. At 50 percent off, CAC can drop to $33, but most buyers take '
+                              'one unit, gross order value falls to $68, product and fulfillment costs '
+                              'barely move, and contribution margin of $29 sits below the $33 CAC, so '
+                              'every customer loses money [t2H3gJHuw6k @ 00:05:13]. Switch to two-for-one '
+                              'with no refunds and the customer pays $135, product COGS doubles to $42, '
+                              'shipping rises only marginally, and contribution margin jumps to $69 with '
+                              '$36 left after CAC; on 20,000 orders he puts that at three-quarters of a '
+                              'million dollars [t2H3gJHuw6k @ 00:09:35]. Abir runs the ad-spend version: '
+                              '$250,000 of spend at 4x ROAS with 30 percent COGS throws off $450,000 of '
+                              'contribution and $150,000 profit against $300,000 fixed costs; when ROAS '
+                              'slides to 3x the business drops to a $25,000 loss, cutting spend to '
+                              '$150,000 to restore 4x deepens it to $30,000, while raising spend to '
+                              '$350,000 at 3x yields an $85,000 profit [lrF2Uey1-uU @ 00:08:08]. He adds '
+                              'that break-even in that model sits around a 2.6 or 2.7 ROAS.'],
+               'table': {'caption': 'Exact per-order numbers and levers taught by the practitioners',
+                         'headers': ['Line Item or Lever',
+                                     'Exact Number Taught',
+                                     'How the Speaker Uses It',
+                                     'Expert Source'],
+                         'rows': [['Payment processing fees charged on every single order',
+                                   'Standard 2.7 percent plus 30 cents per transaction',
+                                   'Auto-calculated per order inside the unit economics calculator',
+                                   'Mark Builds Brands Highlights ([eTADhJ3N_oo @ 00:02:47])'],
+                                  ['Stacked merchant fees for smaller retailers using multiple processors',
+                                   'Often around 5 to 6 percent once everything is added up',
+                                   'Check the combined total of third-party merchant plus Shopify fees, '
+                                   'not one line',
+                                   'Matt Byrne ([sR1NjOCbwOA @ 00:11:22])'],
+                                  ['Fuel profit converted into a target customer acquisition cost',
+                                   '$53 fuel profit minus a $20 net target equals a $33 CAC',
+                                   'Sets the rule for building the ad account and thinking about bid caps',
+                                   'Common Thread Collective ([gCo34Jl1RkQ @ 00:08:06])'],
+                                  ['Break-even revenue calculated from fixed costs and contribution ratio',
+                                   '$2,400 fixed costs divided by 30 percent equals $8,000 per month',
+                                   'Every dollar sold past $8,000 adds 30 cents of profit to the business',
+                                   'Bloom Analytics ([mWL3C_COYk8 @ 00:04:14])'],
+                                  ['Black Friday two-for-one offer versus a 50 percent sitewide discount',
+                                   '$69 versus $29 contribution margin per order on identical CAC lift',
+                                   'Gift extra product because an additional unit only costs the brand $21',
+                                   'Eric Andrews ([t2H3gJHuw6k @ 00:08:36])'],
+                                  ['Discount capacity tested on a single lower-margin SKU',
+                                   '20 percent off loses money; 15 percent leaves a very small profit',
+                                   'Run net price after discount through COGS and cost per acquisition '
+                                   'before promoting',
+                                   'Matt Byrne ([sR1NjOCbwOA @ 00:19:13])']]},
+               'callout': {'kind': 'INSIDER PRO-TIPS',
+                           'title': 'Margin Leaks the Operators Plug First',
+                           'body': 'Small per-order line items decide whether a brand profits at scale. '
+                                   'These are the tactical adjustments the speakers apply directly in '
+                                   'their models and dashboards.',
+                           'items': ['Give marketing its own line: use ad spend alone when you calculate '
+                                     'ROAS, but use full marketing costs, including influencer and '
+                                     'affiliate payouts, agency fees and email and SMS tools, for '
+                                     'contribution margin [Bloom Analytics — mWL3C_COYk8 @ 00:01:53].',
+                                     'Audit total processing cost, not the headline rate: running another '
+                                     'merchant on top of Shopify means paying both sets of fees, which can '
+                                     'add up to 5 or 6 percent for smaller retailers [Matt Byrne — '
+                                     'sR1NjOCbwOA @ 00:11:22].',
+                                     'During any promo, do not offer refunds or returns, so the net order '
+                                     'value holds above a straight 50 percent haircut, landing near 55 '
+                                     'percent of normal net AOV [Eric Andrews — t2H3gJHuw6k @ 00:04:37].',
+                                     'Layer hidden costs into the daily contribution calculation as a '
+                                     'percentage of sales (royalties, revenue shares), a dollar figure per '
+                                     'order such as a $2 pick fee, or a monthly cost such as agency or '
+                                     'influencer fees [Common Thread Collective — b4ddPmPdQcY @ '
+                                     '00:04:08].']},
+               'sop_steps': [{'step': 1,
+                              'title': 'Build Net Revenue Per Order',
+                              'action': 'Start from gross revenue, back out discounts and returns, add '
+                                        'shipping income, and divide by orders to get net AOV.',
+                              'detail': 'Eric Andrews puts product sales and taxes collected into gross '
+                                        'revenue, subtracts discounts and returns, adds shipping charges '
+                                        'as revenue, and lands at about $134 of net revenue per order '
+                                        '[Eric Andrews — 8xfPvprL5qE @ 00:07:02].'},
+                             {'step': 2,
+                              'title': 'Split Product COGS From Fulfillment COGS',
+                              'action': 'Price landed cost (product, freight, duties, insurance) '
+                                        'separately from pick and pack, packaging, last-mile shipping and '
+                                        'merchant fees.',
+                              'detail': 'Matt Byrne pulls landed cost from an inventory system, 3PL '
+                                        'packing costs from the 3PL invoice, merchant fees from Shopify, '
+                                        'PayPal or Afterpay, and shipping from the carrier, using a '
+                                        'weighted average for city versus regional deliveries [Matt Byrne '
+                                        '— sR1NjOCbwOA @ 00:12:21].'},
+                             {'step': 3,
+                              'title': 'Convert Fuel Profit Into a Target CAC',
+                              'action': 'Subtract all per-unit costs and the return rate from price, then '
+                                        'subtract your desired net profit per order to set the CAC '
+                                        'ceiling.',
+                              'detail': 'Common Thread Collective nets a $100 boot to $53 of fuel profit, '
+                                        'subtracts a $20 net target, and runs the ad account against a $33 '
+                                        'target CAC [Common Thread Collective — gCo34Jl1RkQ @ 00:08:06].'},
+                             {'step': 4,
+                              'title': 'Set Daily Contribution Targets and Track Against Them',
+                              'action': 'Build a bottoms-up forecast to the P&L level, load daily revenue, '
+                                        'spend and contribution targets, and review actuals every day.',
+                              'detail': 'Common Thread Collective sets an expectation for every dollar '
+                                        'earned, spent and contributed each day of the month, then reads '
+                                        'contribution margin against target as the primary driving metric '
+                                        '[Common Thread Collective — b4ddPmPdQcY @ 00:01:16].'}]},
+              {'heading': 'Where Practitioners Disagree & Alternative Playbooks',
+               'paragraphs': ['The first fight is about definitions: does marketing sit inside '
+                              'contribution margin or below it? Eric Andrews defines contribution margin '
+                              'as revenue minus product cost minus fulfillment. He then carves out a '
+                              'separate post-marketing contribution margin, which he calls the lowest and '
+                              'most important profit view [8xfPvprL5qE @ 00:02:14]. Chan at Bloom '
+                              'Analytics rejects that split outright. Chan points out that most formulas '
+                              'leave marketing out, and once marketing is gone the number is not '
+                              'contribution margin anymore, it is gross profit [mWL3C_COYk8 @ 00:00:00]. '
+                              'Common Thread Collective sides with Bloom. It defines contribution margin '
+                              'as net revenue minus payment processing, pick-pack, fulfillment, cost of '
+                              'goods, and ad spend [b4ddPmPdQcY @ 00:00:00]. Valentin Kuznetcov settles '
+                              'the naming war by stacking three layers: product profit as CM1, gross '
+                              'profit as CM2, and profit contribution as CM3, where every cost that brings '
+                              'in revenue lives. Everything after that is OPEX [LmlQ8JEPflQ @ 00:04:36]. '
+                              'For an operator, the point is not which label wins. Every team in the '
+                              'business has to use the same ladder. Andrews himself warns that people say '
+                              'gross margin when they mean contribution margin and vice versa. Each brand '
+                              'has to define the terms by how it actually runs and then measure them as '
+                              'separate ideas [Zh6xNyWZVs4 @ 00:00:20].',
+                              'The second split is over which marketing dollars belong in the variable '
+                              'layer. Bloom puts ad spend, influencer and affiliate payouts, agency fees, '
+                              'and email and SMS tools straight into marketing costs inside contribution '
+                              'margin [mWL3C_COYk8 @ 00:01:14]. Abir, CFO, takes a middle line. Agency '
+                              'fees count as variable only if they scale with ad spend or revenue, and '
+                              'influencer costs depend on how the deal is structured [lrF2Uey1-uU @ '
+                              '00:03:05]. Kuznetcov goes the other way and argues that what a cost does '
+                              'matters more than whether it scales. A fixed-retainer paid media agency is '
+                              '100% OPEX. Even a performance-based agency goes to OPEX, because swapping '
+                              'it for a retainer shop is just deal structure and does not change what the '
+                              'cost is [LmlQ8JEPflQ @ 00:13:21]. His one exception is an agency that '
+                              'explicitly charges per acquisition, such as 15% of new-customer profit '
+                              'contribution. He treats that as a premium on nCAC. He also puts email and '
+                              'SMS send fees into CM3, while Klaviyo-style platform fees and CRM software '
+                              'sit in OPEX. He puts most creative and content in OPEX too, because a '
+                              "creative can run for days or for years. Common Thread's Statlas setup lets "
+                              'operators add agency or influencer fees as a monthly fixed cost, a '
+                              'percentage of sales, or a per-order dollar figure [b4ddPmPdQcY @ 00:04:08].',
+                              'The sharpest strategic disagreement is how much first-order loss a brand '
+                              'can carry. Eric Andrews calls first-order profitability the ideal, because '
+                              'every repeat order then lands as nearly pure profit with little or no '
+                              'marketing attached [LKEn47f67vQ @ 00:01:31]. His benchmark work softens '
+                              'that position. A brand whose customers buy 5, 10, or 15 times can afford to '
+                              'lose more on the first order. A contribution-margin-to-CAC ratio under one '
+                              'is survivable only with heavy repeat buyers, never with one-time buyers '
+                              '[gG33a-ErNRQ @ 00:05:10]. Common Thread runs Bamboo Earth at first-order '
+                              'break-even, meaning zero contribution, so every repeat order is pure '
+                              "incremental contribution [b4ddPmPdQcY @ 00:02:46]. Patrick O'Driscoll "
+                              'agrees that scaling on lifetime value is the fastest way to grow. He adds '
+                              'that it needs significant cash reserves and a deep grasp of repeat purchase '
+                              'rates, and that most smaller brands should keep nCAC below AOV from day one '
+                              '[vI_Np8RQikw @ 00:12:23]. Practitioners also split on spend. Mark warns '
+                              'that CAC climbs at every step from $100 a day to $100,000 a day. StoreHero, '
+                              'on the other hand, watched a brand raise spend 260%, take a 56% drop in '
+                              'MER, and still grow contribution margin 18%.'],
+               'table': {'caption': 'Side-by-side playbooks where named practitioners split on '
+                                    'contribution margin decisions',
+                         'headers': ['Decision Point', 'Playbook A', 'Playbook B', 'Expert Source'],
+                         'rows': [['Where marketing sits in the margin stack',
+                                   'Contribution margin is revenue minus product cost minus fulfillment, '
+                                   'with post-marketing margin tracked separately',
+                                   'Strip marketing out and the number is not contribution margin, it is '
+                                   'just gross profit',
+                                   'Eric Andrews ([8xfPvprL5qE @ 00:02:14]); Bloom Analytics ([mWL3C_COYk8 '
+                                   '@ 00:00:00])'],
+                                  ['How to book paid media agency fees',
+                                   'Treat agency fees as variable costs when they scale with ad spend or '
+                                   'revenue',
+                                   'Book them as OPEX whether retainer or performance based, unless the '
+                                   'agency explicitly charges per acquisition',
+                                   'Abir, CFO ([lrF2Uey1-uU @ 00:03:05]); Valentin Kuznetcov ([LmlQ8JEPflQ '
+                                   '@ 00:13:21])'],
+                                  ['How much loss a first order can carry',
+                                   'Black Friday buyers retain badly, so every brand should make money on '
+                                   'the first order',
+                                   'Brands whose customers buy 5, 10, or 15 times can lose more upfront '
+                                   'and recover it later',
+                                   'Eric Andrews ([t2H3gJHuw6k @ 00:02:56]); Eric Andrews ([gG33a-ErNRQ @ '
+                                   '00:05:10])'],
+                                  ['Scaling when nCAC is higher than AOV',
+                                   'Most smaller brands should keep new customer acquisition cost below '
+                                   'AOV from day one',
+                                   'The fastest way to scale is betting on LTV, backed by cash reserves '
+                                   'and repeat-rate data',
+                                   "Patrick O'Driscoll | E-Commerce Growth Marketer ([vI_Np8RQikw @ "
+                                   '00:12:23])'],
+                                  ['What to do when ROAS falls on Meta',
+                                   'The usual owner reflex is to cut ad spend until the 4x ROAS target '
+                                   'comes back',
+                                   'Turn spend up instead, since break-even holds down to about 2.6 or 2.7 '
+                                   'ROAS',
+                                   'Abir, CFO ([lrF2Uey1-uU @ 00:07:01]); Abir, CFO ([lrF2Uey1-uU @ '
+                                   '00:08:21])'],
+                                  ['Minimum gross margin before spending on ads',
+                                   'Target a 60% gross margin, at least $20 gross margin per unit, and a '
+                                   '3x COGS price',
+                                   'A product at 70 to 75 percent gross margin counts as a healthy margin',
+                                   'Mark Builds Brands Highlights ([eTADhJ3N_oo @ 00:05:30]); Eric Andrews '
+                                   '([8xfPvprL5qE @ 00:08:52])'],
+                                  ['How granular contribution tracking should be',
+                                   'Start at business and channel level, because SKU tracking is very time '
+                                   'consuming',
+                                   'Treating every SKU as the same net outcome is a top drain on money in '
+                                   'your pocket',
+                                   'LedgerGurus: Ecommerce Accounting Experts ([e5r7-KT6mQ0 @ 00:03:11]); '
+                                   'Common Thread Collective ([gCo34Jl1RkQ @ 00:08:40])']]}},
+              {'heading': 'Firsthand Failure Modes, Traps & Economics Checks',
+               'paragraphs': ['The most expensive trap anyone reported is the sitewide percentage '
+                              'discount. Eric Andrews knew a brand that ran 50% off every Black Friday and '
+                              'lost $500,000 the last time it did [t2H3gJHuw6k @ 00:00:00]. The mechanics '
+                              'are brutal. Baseline economics were $124 net AOV, $21 product COGS, $19 '
+                              'fulfillment, $84 contribution margin, and only $9 left after a $75 CAC. At '
+                              'half off, the conversion lift pushed CAC down to $33. But net order value '
+                              'fell to about 55% of normal while product and fulfillment costs stayed the '
+                              'same. That left $29 of contribution margin and a loss on every customer. '
+                              'Switching to buy-one-get-one gave the shopper the same perceived value, '
+                              'since the extra unit cost the brand only $21. Contribution margin rose to '
+                              '$69 and CM minus CAC to $36, worth roughly three quarters of a million '
+                              'dollars on 20,000 orders [t2H3gJHuw6k @ 00:09:35]. Matt Byrne hit the same '
+                              'ceiling on everyday promos. A flat 20% discount on a $100 SKU makes it lose '
+                              'money, 15% leaves very little, and that product could really only afford '
+                              'about 5% [sR1NjOCbwOA @ 00:19:33]. Bloom Analytics adds the rule underneath '
+                              'both cases: with negative contribution margin, more sales make things worse '
+                              '[mWL3C_COYk8 @ 00:04:14].',
+                              'The second failure pattern is scaling spend into economics that never '
+                              "worked. Mark's own calculator example shows a 1.67 estimated ROAS that "
+                              'looks fine until you compare it with a 1.84 break-even ROAS. The result is '
+                              'negative net profit per order and a 3% profit margin against a 20% KPI '
+                              '[eTADhJ3N_oo @ 00:04:57]. He warns that CAC rises at every step up in daily '
+                              'spend, so a brand that is not very profitable at $1K to $10K a day has no '
+                              'shot at scale. Eric Andrews models the venture-funded version. CAC climbs '
+                              'from $68 to $79 to $123 to $149 while the team raises a $20 million round '
+                              'and keeps pouring money into marketing. It ends at a 0.58 '
+                              'contribution-margin-to-CAC ratio, losing money on every customer '
+                              '[gG33a-ErNRQ @ 00:15:47]. Abir, CFO, shows the opposite panic. When Meta '
+                              'slips from 4x to 3x ROAS on $250,000 of spend, a $150,000 profit becomes a '
+                              '$25,000 loss. Cutting spend to $150,000 to get back to 4x makes the loss '
+                              'worse, at $30,000 [lrF2Uey1-uU @ 00:07:17]. His fix was raising spend to '
+                              '$350,000, which got the business back to an $85,000 profit. StoreHero calls '
+                              'both mistakes waste: overspending for topline revenue, and leaving cash in '
+                              'the bank idle when the unit economics are staring you in the face '
+                              '[xJXlWITRM7I @ 00:23:59].',
+                              'The quietest losses come from bad data. Matt Byrne has seen businesses keep '
+                              'selling SKUs whose gross margin leaves no room for ads. Contribution margin '
+                              'on those SKUs goes negative, while profitable SKUs fund the loss and hide '
+                              'it inside a P&L that looks profitable overall [sR1NjOCbwOA @ 00:15:26]. He '
+                              'also warns that landed costs tracked in Excel break down once several '
+                              'purchase orders carry different per-unit costs, which ends in death by '
+                              'spreadsheet. Stacked merchant and Shopify fees can reach 5 or 6% for '
+                              "smaller retailers. Bloom Analytics points out that Shopify's built-in "
+                              'profit reports subtract product cost and stop there, so shipping, payment '
+                              'fees, and ad spend never reach the number [mWL3C_COYk8 @ 00:04:36]. '
+                              'Valentin Kuznetcov flags two costs of misclassification. Dumping variable '
+                              'promotion costs into OPEX inflates OPEX against benchmarks and hides broken '
+                              'growth economics. Miscategorized costs can also lead a brand to overpay its '
+                              'growth team on performance compensation [LmlQ8JEPflQ @ 00:03:02]. Common '
+                              "Thread's daily reporting shows why single-number goals mislead. Sales and "
+                              'spend ran about 8% above target and MER sat on target, yet contribution '
+                              'margin landed almost 60% over expectation. Repeat cohorts outperformed '
+                              'while new customer acquisition ran about 10% behind [b4ddPmPdQcY @ '
+                              '00:05:11].'],
+               'table': {'caption': 'Firsthand losses and modeled blow-ups with the economics check that '
+                                    'catches each one',
+                         'headers': ['Failure Mode', 'What Happened', 'Economics Check', 'Expert Source'],
+                         'rows': [['Running 50% off sitewide on Black Friday',
+                                   'The brand lost $500,000 the last time it ran the half-off promo',
+                                   'Contribution margin of $29 against a $33 CAC means losing money on '
+                                   'each customer',
+                                   'Eric Andrews ([t2H3gJHuw6k @ 00:05:13])'],
+                                  ['Cutting ad spend to chase a ROAS target',
+                                   'Cutting spend to $150K got back to 4x ROAS, but the loss grew to $30K',
+                                   'Measure contribution margin dollars against fixed costs, not ROAS '
+                                   'alone',
+                                   'Abir, CFO ([lrF2Uey1-uU @ 00:07:17])'],
+                                  ['Scaling with a CM to CAC ratio below one',
+                                   'A funded brand pushed CAC to $149 while lifetime orders stayed at 1.8',
+                                   'An LTV to CAC ratio of one leaves no money to cover OPEX',
+                                   'Eric Andrews ([gG33a-ErNRQ @ 00:16:44])'],
+                                  ['Hidden SKUs with negative contribution margin',
+                                   'Profitable SKUs quietly paid for ad spend on products that were losing '
+                                   'money',
+                                   'Calculate contribution margin per SKU before deciding where ad budget '
+                                   'goes',
+                                   'Matt Byrne ([sR1NjOCbwOA @ 00:15:42])'],
+                                  ["Trusting Shopify's built-in profit reports",
+                                   'The built-in reports subtract product costs and then stop calculating',
+                                   'Add shipping, payment fees, and ad spend before reading any profit '
+                                   'number',
+                                   'Bloom Analytics ([mWL3C_COYk8 @ 00:04:36])'],
+                                  ['Weak front-end margins before scaling spend',
+                                   'A 1.67 estimated ROAS looked acceptable against a 1.84 break-even ROAS',
+                                   'Hold a 60% gross margin and at least $20 gross margin per unit',
+                                   'Mark Builds Brands Highlights ([eTADhJ3N_oo @ 00:04:57])'],
+                                  ['Cash flow squeeze while scaling inventory and ads',
+                                   'Clients cut marketing, agencies, and staff when cash got tight, which '
+                                   'slowed growth',
+                                   'Track cash conversion cycle, inventory turnover, burn rate, and '
+                                   'operating cash flow',
+                                   "Patrick O'Driscoll | E-Commerce Growth Marketer ([vI_Np8RQikw @ "
+                                   '00:09:20])']]},
+               'callout': {'kind': 'OPERATOR GATE',
+                           'title': 'Stop-Checks Before Spend Goes Up or a Promo Ships',
+                           'body': 'Four stop-checks drawn from losses these operators took or modeled. '
+                                   'Run every one before raising budget, launching a discount, or cutting '
+                                   'spend.',
+                           'items': ['Do not scale while the first-order contribution margin to CAC ratio '
+                                     'is below one on a product people buy once. Andrews says that '
+                                     'business should not be scaling until it fixes its unit economics '
+                                     '[Eric Andrews — gG33a-ErNRQ @ 00:15:10].',
+                                     'Before launch, model every Black Friday promo both as percent-off '
+                                     'and as two-for-one. Kill any version where contribution margin minus '
+                                     'CAC goes negative [Eric Andrews — t2H3gJHuw6k @ 00:05:34].',
+                                     'If contribution margin is 0% or less, stop and fix pricing, COGS, or '
+                                     'cost of sales right away, because the business is broken '
+                                     '[LedgerGurus: Ecommerce Accounting Experts — e5r7-KT6mQ0 @ '
+                                     '00:02:14].',
+                                     'Before cutting spend on a ROAS dip, recalculate contribution margin '
+                                     'dollars against fixed costs at both lower and higher spend levels '
+                                     '[Abir, CFO — lrF2Uey1-uU @ 00:07:31].']}}],
+ 'pull_quote': '"If your unit economics work, your business works. If your unit economics don\'t work, '
+               'your business will never work." — Eric Andrews (t2H3gJHuw6k @ 00:10:14).',
+ 'diagram_id': 'diag-03',
+ 'action_checklist': ['Rebuild the P&L into product profit, gross profit, and profit contribution layers, '
+                      'with paid media and affiliate commission inside CM3 [Valentin Kuznetcov — '
+                      'LmlQ8JEPflQ @ 00:04:57].',
+                      'Calculate per-order AOV, product COGS, and fulfillment by dividing each monthly '
+                      'total by total orders, and use a trailing average of a couple of months when the '
+                      'numbers bounce around [Eric Andrews Clips — tj2W9oEqeQo @ 00:01:33].',
+                      'Set target CAC as fuel profit minus net target, so $53 minus $20 gives a $33 CAC, '
+                      'and calculate it separately for each SKU [Common Thread Collective — gCo34Jl1RkQ @ '
+                      '00:08:06].',
+                      'Find break-even revenue by dividing fixed costs by the contribution margin ratio, '
+                      'so $2,400 divided by 30% equals $8,000 a month [Bloom Analytics — mWL3C_COYk8 @ '
+                      '00:04:14].',
+                      'Calculate blended nCAC as total marketing spend divided by new customers only, '
+                      "leaving returning customers out of the denominator [Patrick O'Driscoll | E-Commerce "
+                      'Growth Marketer — vI_Np8RQikw @ 00:10:35].',
+                      'Set a daily contribution margin target from a bottoms-up forecast and review '
+                      'actuals against it every day [Common Thread Collective — b4ddPmPdQcY @ 00:00:45].'],
+ 'statutory_citations': [{'title': 'Eric Andrews — 50% Off vs. BOGO: Unit Economics Case Study (How We '
+                                   'Lost $500K) [00:00:00]',
+                          'url': 'https://www.youtube.com/watch?v=t2H3gJHuw6k&t=0s',
+                          'relevance': 'Primary practitioner testimony on the $500,000 Black Friday promo '
+                                       'loss and the buy-one-get-one contribution margin fix.'},
+                         {'title': 'Abir, CFO — How to Calculate eCommerce Contribution Margins (DTC '
+                                   'Accountant Explains) [00:06:29]',
+                          'url': 'https://www.youtube.com/watch?v=lrF2Uey1-uU&t=389s',
+                          'relevance': 'Primary practitioner testimony on why cutting ad spend to recover '
+                                       'ROAS deepened losses while raising spend restored profit.'},
+                         {'title': 'Valentin Kuznetcov — Ecommerce Marketing Costs Explained: What Goes '
+                                   'Into OPEX vs CM3? [00:04:57]',
+                          'url': 'https://www.youtube.com/watch?v=LmlQ8JEPflQ&t=297s',
+                          'relevance': 'Primary practitioner testimony on sorting marketing costs into CM3 '
+                                       'or OPEX by the nature of the cost.'},
+                         {'title': 'Eric Andrews — Unit Economics Benchmarks for eCommerce | From Idea to '
+                                   'Exit [00:15:10]',
+                          'url': 'https://www.youtube.com/watch?v=gG33a-ErNRQ&t=910s',
+                          'relevance': 'Primary practitioner testimony on contribution margin to CAC '
+                                       'benchmarks and the funded scale-up that loses money on every '
+                                       'customer.'}],
+ 'source_citations': [{'source_type': 'video_pro_tip',
+                       'video_id': 'e5r7-KT6mQ0',
+                       'title': 'Ecommerce Contribution Margin Explained',
+                       'channel': 'LedgerGurus: Ecommerce Accounting Experts',
+                       'author': 'LedgerGurus: Ecommerce Accounting Experts',
+                       'text': 'If you have a contribution margin of 0% or less, you have a broken '
+                               'business. Your fundamental pricing and variable costs must change.',
+                       'tip': 'If you have a contribution margin of 0% or less, you have a broken '
+                              'business. Your fundamental pricing and variable costs must change.',
+                       'timestamp': 134,
+                       'timestamp_seconds': 134,
+                       'timestamp_label': '[00:02:14]',
+                       'url': 'https://www.youtube.com/watch?v=e5r7-KT6mQ0&t=134s',
+                       'markdown': '[00:02:14](https://www.youtube.com/watch?v=e5r7-KT6mQ0&t=134s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q3.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'LKEn47f67vQ',
+                       'title': 'Contribution Margin: CAC Ratio for eCommerce | Unit Economics',
+                       'channel': 'Eric Andrews Clips',
+                       'author': 'Eric Andrews Clips',
+                       'text': "If you're profitable on the first order then all of the subsequent orders "
+                               'that a customer makes when they return will be pure profit because '
+                               "there'll generally be little or no marketing associated with them.",
+                       'tip': "If you're profitable on the first order then all of the subsequent orders "
+                              "that a customer makes when they return will be pure profit because there'll "
+                              'generally be little or no marketing associated with them.',
+                       'timestamp': 91,
+                       'timestamp_seconds': 91,
+                       'timestamp_label': '[00:01:31]',
+                       'url': 'https://www.youtube.com/watch?v=LKEn47f67vQ&t=91s',
+                       'markdown': '[00:01:31](https://www.youtube.com/watch?v=LKEn47f67vQ&t=91s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q3.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': '8xfPvprL5qE',
+                       'title': 'How to Calculate eCommerce Contribution Margins',
+                       'channel': 'Eric Andrews',
+                       'author': 'Eric Andrews',
+                       'text': 'The key to success with these businesses is optimizing the unit economics; '
+                               'if you can negotiate or eliminate any individual expense and knock a '
+                               'couple dollars out that might be the difference between an extra five '
+                               'dollars per order.',
+                       'tip': 'The key to success with these businesses is optimizing the unit economics; '
+                              'if you can negotiate or eliminate any individual expense and knock a couple '
+                              'dollars out that might be the difference between an extra five dollars per '
+                              'order.',
+                       'timestamp': 773,
+                       'timestamp_seconds': 773,
+                       'timestamp_label': '[00:12:53]',
+                       'url': 'https://www.youtube.com/watch?v=8xfPvprL5qE&t=773s',
+                       'markdown': '[00:12:53](https://www.youtube.com/watch?v=8xfPvprL5qE&t=773s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q3.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'tj2W9oEqeQo',
+                       'title': 'Master Contribution Margins for eCommerce',
+                       'channel': 'Eric Andrews Clips',
+                       'author': 'Eric Andrews Clips',
+                       'text': "It's good to sometimes just do a trailing average of a couple months, "
+                               'especially if the numbers bounce around a lot.',
+                       'tip': "It's good to sometimes just do a trailing average of a couple months, "
+                              'especially if the numbers bounce around a lot.',
+                       'timestamp': 93,
+                       'timestamp_seconds': 93,
+                       'timestamp_label': '[00:01:33]',
+                       'url': 'https://www.youtube.com/watch?v=tj2W9oEqeQo&t=93s',
+                       'markdown': '[00:01:33](https://www.youtube.com/watch?v=tj2W9oEqeQo&t=93s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q3.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'eTADhJ3N_oo',
+                       'title': 'unit economics for ecom explained (boring as hell, but prints $$$)',
+                       'channel': 'Mark Builds Brands Highlights',
+                       'author': 'Mark Builds Brands Highlights',
+                       'text': "Your CAC is only going to go up, so if you're not super profitable at "
+                               "these low levels of spend, then no shot that you're going to be profitable "
+                               'as you try to scale more.',
+                       'tip': "Your CAC is only going to go up, so if you're not super profitable at these "
+                              "low levels of spend, then no shot that you're going to be profitable as you "
+                              'try to scale more.',
+                       'timestamp': 405,
+                       'timestamp_seconds': 405,
+                       'timestamp_label': '[00:06:45]',
+                       'url': 'https://www.youtube.com/watch?v=eTADhJ3N_oo&t=405s',
+                       'markdown': '[00:06:45](https://www.youtube.com/watch?v=eTADhJ3N_oo&t=405s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q3.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'gG33a-ErNRQ',
+                       'title': 'Unit Economics Benchmarks for eCommerce | From Idea to Exit',
+                       'channel': 'Eric Andrews',
+                       'author': 'Eric Andrews',
+                       'text': 'Our contribution margin to CAC ratio is less than one and our LTV to CAC '
+                               'ratio is less than one, and so this business should not be scaling until '
+                               'it can fix its unit economics.',
+                       'tip': 'Our contribution margin to CAC ratio is less than one and our LTV to CAC '
+                              'ratio is less than one, and so this business should not be scaling until it '
+                              'can fix its unit economics.',
+                       'timestamp': 910,
+                       'timestamp_seconds': 910,
+                       'timestamp_label': '[00:15:10]',
+                       'url': 'https://www.youtube.com/watch?v=gG33a-ErNRQ&t=910s',
+                       'markdown': '[00:15:10](https://www.youtube.com/watch?v=gG33a-ErNRQ&t=910s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q3.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 't2H3gJHuw6k',
+                       'title': '50% Off vs. BOGO: Unit Economics Case Study (How We Lost $500K)',
+                       'channel': 'Eric Andrews',
+                       'author': 'Eric Andrews',
+                       'text': 'I used to know an e-commerce brand that ran a 50% off sitewide discount '
+                               'every Black Friday. And the last time they ran it, they lost $500,000.',
+                       'tip': 'I used to know an e-commerce brand that ran a 50% off sitewide discount '
+                              'every Black Friday. And the last time they ran it, they lost $500,000.',
+                       'timestamp': 0,
+                       'timestamp_seconds': 0,
+                       'timestamp_label': '[00:00:00]',
+                       'url': 'https://www.youtube.com/watch?v=t2H3gJHuw6k&t=0s',
+                       'markdown': '[00:00:00](https://www.youtube.com/watch?v=t2H3gJHuw6k&t=0s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q3.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 't2H3gJHuw6k',
+                       'title': '50% Off vs. BOGO: Unit Economics Case Study (How We Lost $500K)',
+                       'channel': 'Eric Andrews',
+                       'author': 'Eric Andrews',
+                       'text': 'When you offer the customer two for one, you are able to give them $135, '
+                               "but the difference is that you don't lose half your revenue. An extra unit "
+                               'only costs you $21.',
+                       'tip': 'When you offer the customer two for one, you are able to give them $135, '
+                              "but the difference is that you don't lose half your revenue. An extra unit "
+                              'only costs you $21.',
+                       'timestamp': 435,
+                       'timestamp_seconds': 435,
+                       'timestamp_label': '[00:07:15]',
+                       'url': 'https://www.youtube.com/watch?v=t2H3gJHuw6k&t=435s',
+                       'markdown': '[00:07:15](https://www.youtube.com/watch?v=t2H3gJHuw6k&t=435s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q3.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'LmlQ8JEPflQ',
+                       'title': 'Ecommerce Marketing Costs Explained: What Goes Into OPEX vs CM3?',
+                       'channel': 'Valentin Kuznetcov',
+                       'author': 'Valentin Kuznetcov',
+                       'text': 'Direct marketing is costs incurred to promote or advertise your product, '
+                               'whereas OPEX is costs that build systems and elevate the organization.',
+                       'tip': 'Direct marketing is costs incurred to promote or advertise your product, '
+                              'whereas OPEX is costs that build systems and elevate the organization.',
+                       'timestamp': 338,
+                       'timestamp_seconds': 338,
+                       'timestamp_label': '[00:05:38]',
+                       'url': 'https://www.youtube.com/watch?v=LmlQ8JEPflQ&t=338s',
+                       'markdown': '[00:05:38](https://www.youtube.com/watch?v=LmlQ8JEPflQ&t=338s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q3.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'Zh6xNyWZVs4',
+                       'title': 'Gross margin vs. contribution margin for eCommerce | Eric Andrews clips',
+                       'channel': 'Eric Andrews Clips',
+                       'author': 'Eric Andrews Clips',
+                       'text': 'Often people say gross margin when they mean contribution margin and vice '
+                               "versa, so it's important to define them according to how you're running "
+                               'your business and then measure them as unique ideas.',
+                       'tip': 'Often people say gross margin when they mean contribution margin and vice '
+                              "versa, so it's important to define them according to how you're running "
+                              'your business and then measure them as unique ideas.',
+                       'timestamp': 20,
+                       'timestamp_seconds': 20,
+                       'timestamp_label': '[00:00:20]',
+                       'url': 'https://www.youtube.com/watch?v=Zh6xNyWZVs4&t=20s',
+                       'markdown': '[00:00:20](https://www.youtube.com/watch?v=Zh6xNyWZVs4&t=20s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q3.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'vI_Np8RQikw',
+                       'title': 'The E-Commerce Profit Framework (Used by 7–8 Figure Brands)',
+                       'channel': "Patrick O'Driscoll | E-Commerce Growth Marketer",
+                       'author': "Patrick O'Driscoll | E-Commerce Growth Marketer",
+                       'text': "This is called scaling on lifetime value: if you're scaling where your new "
+                               "customer acquisition is higher than your AOV, then you're betting that a "
+                               'customer will make a second or third purchase to become profitable.',
+                       'tip': "This is called scaling on lifetime value: if you're scaling where your new "
+                              "customer acquisition is higher than your AOV, then you're betting that a "
+                              'customer will make a second or third purchase to become profitable.',
+                       'timestamp': 718,
+                       'timestamp_seconds': 718,
+                       'timestamp_label': '[00:11:58]',
+                       'url': 'https://www.youtube.com/watch?v=vI_Np8RQikw&t=718s',
+                       'markdown': '[00:11:58](https://www.youtube.com/watch?v=vI_Np8RQikw&t=718s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q3.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'mWL3C_COYk8',
+                       'title': 'How to Calculate Contribution Margin (Formula + Shopify Example)',
+                       'channel': 'Bloom Analytics',
+                       'author': 'Bloom Analytics',
+                       'text': 'Most contribution margin formulas do not include your marketing costs. '
+                               'Take marketing out and that number is not your contribution margin '
+                               "anymore. It's your gross profit.",
+                       'tip': 'Most contribution margin formulas do not include your marketing costs. Take '
+                              "marketing out and that number is not your contribution margin anymore. It's "
+                              'your gross profit.',
+                       'timestamp': 0,
+                       'timestamp_seconds': 0,
+                       'timestamp_label': '[00:00:00]',
+                       'url': 'https://www.youtube.com/watch?v=mWL3C_COYk8&t=0s',
+                       'markdown': '[00:00:00](https://www.youtube.com/watch?v=mWL3C_COYk8&t=0s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q3.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'xJXlWITRM7I',
+                       'title': 'Contribution Margin Explained (with Examples)',
+                       'channel': 'StoreHero',
+                       'author': 'StoreHero',
+                       'text': 'As long as your increase in ad spend is yielding extra contribution '
+                               "margin, that's a positive and you should continue to spend.",
+                       'tip': 'As long as your increase in ad spend is yielding extra contribution margin, '
+                              "that's a positive and you should continue to spend.",
+                       'timestamp': 1207,
+                       'timestamp_seconds': 1207,
+                       'timestamp_label': '[00:20:07]',
+                       'url': 'https://www.youtube.com/watch?v=xJXlWITRM7I&t=1207s',
+                       'markdown': '[00:20:07](https://www.youtube.com/watch?v=xJXlWITRM7I&t=1207s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q3.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'sR1NjOCbwOA',
+                       'title': 'Understanding Unit Economics in Ecommerce',
+                       'channel': 'Matt Byrne',
+                       'author': 'Matt Byrne',
+                       'text': "I've seen businesses where their gross profit margin is so low it doesn't "
+                               'leave any capacity behind to spend money on ads and therefore the '
+                               'contribution margin is negative, but they continue to sell it.',
+                       'tip': "I've seen businesses where their gross profit margin is so low it doesn't "
+                              'leave any capacity behind to spend money on ads and therefore the '
+                              'contribution margin is negative, but they continue to sell it.',
+                       'timestamp': 926,
+                       'timestamp_seconds': 926,
+                       'timestamp_label': '[00:15:26]',
+                       'url': 'https://www.youtube.com/watch?v=sR1NjOCbwOA&t=926s',
+                       'markdown': '[00:15:26](https://www.youtube.com/watch?v=sR1NjOCbwOA&t=926s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q3.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'lrF2Uey1-uU',
+                       'title': 'How to Calculate eCommerce Contribution Margins (DTC Accountant Explains)',
+                       'channel': 'Abir, CFO',
+                       'author': 'Abir, CFO',
+                       'text': "Just because you reduced ad spend to improve your ROAS doesn't necessarily "
+                               "mean that your business is doing better; you have to make sure that you're "
+                               'generating enough contribution margin to cover your fixed expenses.',
+                       'tip': "Just because you reduced ad spend to improve your ROAS doesn't necessarily "
+                              "mean that your business is doing better; you have to make sure that you're "
+                              'generating enough contribution margin to cover your fixed expenses.',
+                       'timestamp': 451,
+                       'timestamp_seconds': 451,
+                       'timestamp_label': '[00:07:31]',
+                       'url': 'https://www.youtube.com/watch?v=lrF2Uey1-uU&t=451s',
+                       'markdown': '[00:07:31](https://www.youtube.com/watch?v=lrF2Uey1-uU&t=451s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q3.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'gCo34Jl1RkQ',
+                       'title': 'Unit Economics of Ecommerce Growth',
+                       'channel': 'Common Thread Collective',
+                       'author': 'Common Thread Collective',
+                       'text': 'The amount of people that I see running a Facebook ad account where they '
+                               'treat every SKU as if they produce the same net outcome is one of the '
+                               'number one drainers of money in your pocket.',
+                       'tip': 'The amount of people that I see running a Facebook ad account where they '
+                              'treat every SKU as if they produce the same net outcome is one of the '
+                              'number one drainers of money in your pocket.',
+                       'timestamp': 537,
+                       'timestamp_seconds': 537,
+                       'timestamp_label': '[00:08:57]',
+                       'url': 'https://www.youtube.com/watch?v=gCo34Jl1RkQ&t=537s',
+                       'markdown': '[00:08:57](https://www.youtube.com/watch?v=gCo34Jl1RkQ&t=537s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q3.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'b4ddPmPdQcY',
+                       'title': 'How to Track, Measure, and Report Contribution Margin',
+                       'channel': 'Common Thread Collective',
+                       'author': 'Common Thread Collective',
+                       'text': 'You can never just have one revenue goal or one spend goal or even an MER '
+                               'goal; you have to look at all of these things together to really '
+                               'understand how your business is getting to where it is.',
+                       'tip': 'You can never just have one revenue goal or one spend goal or even an MER '
+                              'goal; you have to look at all of these things together to really understand '
+                              'how your business is getting to where it is.',
+                       'timestamp': 344,
+                       'timestamp_seconds': 344,
+                       'timestamp_label': '[00:05:44]',
+                       'url': 'https://www.youtube.com/watch?v=b4ddPmPdQcY&t=344s',
+                       'markdown': '[00:05:44](https://www.youtube.com/watch?v=b4ddPmPdQcY&t=344s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q3.'}]}

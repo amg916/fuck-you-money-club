@@ -1,641 +1,866 @@
 from __future__ import annotations
 
-CHAPTER_1 = {
-    "id": "Q1",
-    "chapter_id": "Q1",
-    "chapter_number": 1,
-    "question_number": 1,
-    "slug": "what-exactly-is-medical-equipment-resale",
-    "question_prompt": "What exactly is medical equipment resale, how is real operator revenue recognized vs underlying asset/client GMV, and what separates durable small-team moats from fragile beginner hype?",
-    "kicker": "Q1 / THE BIG MONEY PLAYBOOKS",
-    "title": "What Exactly Is Medical Equipment Resale?",
-    "subtitle": "Serial-Level Trading, Biomed Acceptance, FDA Servicing Boundaries, HIPAA Data Hygiene, and CON-Sensitive Imaging Exits",
-    "layout_template": "opportunity_overview",
-    "reading_time_minutes": 14,
-    "executive_summary": (
-        "Medical equipment resale converts documented, serviceable assets into buyer-ready clinical capacity, "
-        "not merely inexpensive auction inventory. Candidate #14, Pipeline Rank #20 of 29, scores 85/100 "
-        "because capital exposure and specialist labor constrain otherwise attractive spreads. This chapter "
-        "maps three operating plays: CON-sensitive decommissioned imaging arbitrage, diagnostic equipment "
-        "refurbishment, and veterinary equipment redeployment; the latter two are chapter-level applications, "
-        "not additional canonical play identifiers. Principal-owned equipment sales generate gross resale "
-        "revenue, with acquisition and refurbishment inside costs; agency transactions generate only earned "
-        "fees. Canonical annual owner profits are $25,000 Conservative, $164,000 Base, and $396,000 Scaled. "
-        "Durability comes from verified title, model-specific testing, service-history indexing, controlled "
-        "patient-data handling, and buyers whose installation requirements are understood before inventory is purchased."
-    ),
-    "key_metrics": [
-        {
-            "label": "Conservative",
-            "value": "$250,000",
-            "context": "Annual gross equipment resale proceeds; acquisition and refurbishment included in margin",
-            "note": "10% net margin; $25,000 annual owner net profit; 1 FT + 3 C",
-        },
-        {
-            "label": "Base",
-            "value": "$1,025,000",
-            "context": "Annual gross equipment resale proceeds; acquisition and refurbishment included in margin",
-            "note": "16.0% net margin; $164,000 annual owner net profit; 1 FT + 3 C",
-        },
-        {
-            "label": "Scaled",
-            "value": "$1,800,000",
-            "context": "Annual gross equipment resale proceeds; acquisition and refurbishment included in margin",
-            "note": "22% net margin; $396,000 annual owner net profit; 1 FT + 3 C",
-        },
-    ],
-    "sections": [
-        {
-            "heading": "1. Define the asset, the customer promise, and the revenue boundary",
-            "epistemic_status": "operating_framework",
-            "paragraphs": [
-                (
-                    "Medical equipment resale is the purchase, preparation, and sale of identifiable devices whose "
-                    "remaining utility exceeds the cost of restoring buyer confidence. The operator acquires title "
-                    "or a clearly defined selling mandate, documents condition, arranges appropriate servicing, and "
-                    "delivers an agreed configuration to an identified buyer. Diagnostic ultrasound, surgical tables, "
-                    "veterinary monitors, and aesthetic lasers are different businesses because their accessories, "
-                    "technical support, installation requirements, and failure liabilities differ. A listing marked "
-                    "working does not establish measurement accuracy, software rights, electrical safety, or clinical "
-                    "suitability. The actual product is a serial-numbered asset plus evidence that its promised "
-                    "functions survive transport and acceptance testing. Five useful archetypes are diagnostic "
-                    "refurbisher, surgical package assembler, veterinary redeployer, aesthetic specialist, and imaging "
-                    "project trader. Each earns a spread by resolving a specific uncertainty rather than simply "
-                    "finding a cheaper seller. Bimedis, DOTmed, eBay, and hospital auctions expose opportunities, "
-                    "but none substitutes for a title review or a model-specific inspection. Start with a narrow "
-                    "supported model family, a qualified service partner, and buyers willing to specify acceptance "
-                    "criteria before the purchase order. The first competitive advantage is knowing which apparently "
-                    "cheap assets cannot economically become saleable inventory."
-                ),
-                (
-                    "Revenue follows the contractual role and transfer of control, not the largest number passing "
-                    "through a transaction. When the business controls equipment before transfer, bears inventory "
-                    "risk, and is responsible for delivering the promised asset, gross equipment resale proceeds "
-                    "are the relevant principal revenue basis. Acquisition, refurbishment, contractor labor, freight "
-                    "obligations, and warranty exposure then reduce earnings. A $25,000 sale of an owned ultrasound "
-                    "system is not merely the difference between its selling price and its purchase price. Conversely, "
-                    "an agent arranging a $100,000 hospital asset sale for an earned 8% commission ordinarily records "
-                    "$8,000 of fee revenue, not $100,000 of equipment revenue. Labels such as broker or consignment "
-                    "are insufficient; assess control and the actual promises using ASC 606 principal-versus-agent "
-                    "guidance. Deposits received before performance are generally liabilities, and purchased devices "
-                    "held for resale are inventory rather than immediate revenue offsets. Separately assess freight, "
-                    "installation, taxes collected for authorities, returns, and warranty terms. A buyer's future "
-                    "patient-service receipts are outside the reseller's revenue boundary. Keep agency fees in a "
-                    "separate ledger so brokerage volume cannot inflate the canonical gross-resale scorecard or make "
-                    "an inventory-light operation appear comparable to a principal-owned trading business."
-                ),
-                (
-                    "The durable moat is an evidence chain that competitors cannot recreate by copying photographs. "
-                    "For every serial number, retain acquisition authority, lien-release evidence where applicable, "
-                    "incoming condition images, configuration details, service findings, decontamination records, "
-                    "data-sanitization evidence, and signed acceptance results. Use Odoo or Zoho Inventory to track "
-                    "status and landed cost, with access-controlled document storage for supporting records. Service-history "
-                    "indexing should expose recurring fault codes, unsupported software releases, probe failures, "
-                    "and parts consumption across the same model family. It should not accumulate patient identifiers "
-                    "inside a general sales database. A contractor's reputation helps, but a reproducible test protocol "
-                    "and traceable instruments matter more than a reassuring verbal assessment. UCC Sections 2-312 "
-                    "and 2-313 explain why title promises and specific descriptions deserve operational discipline: "
-                    "a listing can create obligations that survive a casually worded as-is label. Describe tested "
-                    "functions precisely and distinguish cosmetic restoration from verified performance. A beginner "
-                    "sells an attractive photograph and hopes the buyer discovers no expensive defect. An established "
-                    "operator prices a documented configuration, budgets the residual defect risk, and knows which "
-                    "service organization can resolve a failure after delivery without consuming the entire deal spread."
-                ),
-            ],
-            "table": {
-                "caption": "Five Sub-Niche Operator Archetypes and Their Actual Deliverables",
-                "headers": [
-                    "Operator archetype and customer",
-                    "Saleable asset and evidence package",
-                    "Economic engine and staffing requirement",
-                    "Failure boundary and practical fallback",
-                ],
-                "rows": [
-                    [
-                        "Diagnostic refurbisher serving independent outpatient imaging practices",
-                        "Supported ultrasound systems with probe tests and configuration records",
-                        "Own inventory spread funds specialist inspection and documented repairs",
-                        "Reject damaged probes unless replacement economics preserve target contribution",
-                    ],
-                    [
-                        "Surgical package assembler serving procedure rooms and ambulatory centers",
-                        "Matched tables, lights, and accessories with installation specifications",
-                        "Bundle compatibility reduces buyer coordination and supports package pricing",
-                        "Separate incompatible components rather than promising an unvalidated room",
-                    ],
-                    [
-                        "Veterinary redeployer serving established companion animal clinical practices",
-                        "Appropriate monitors and imaging equipment with species-relevant application review",
-                        "Lower acquisition basis rewards careful accessory and workflow matching",
-                        "Do not assume human equipment automatically suits veterinary applications",
-                    ],
-                    [
-                        "Aesthetic specialist serving properly credentialed treatment facility buyers",
-                        "Verified laser platforms with transferable rights and tested handpieces",
-                        "Service access and consumable availability determine achievable resale spread",
-                        "Walk away when software transfer or service support fails",
-                    ],
-                    [
-                        "Imaging project trader coordinating hospital decommissioning and replacement",
-                        "Inspected imaging assets with rigging plans and site boundaries",
-                        "Project execution earns spread while equipment and authority remain separate",
-                        "Exit under contingencies or sell equipment without operating authority claims",
-                    ],
-                ],
-            },
-            "callout": {
-                "kind": "INSIDER PRO-TIPS",
-                "title": "Buy the evidence before buying the apparent bargain",
-                "body": (
-                    "Veteran traders reduce uncertainty before committing scarce working capital. These tactics "
-                    "create a repeatable advantage without pretending that every used device deserves refurbishment."
-                ),
-                "items": [
-                    "Request the exact software version, enabled options, accessory serials, and service-access terms before negotiating the headline price.",
-                    "Ask the biomed contractor to quote a model-specific incoming inspection separately from repair labor so rejection remains economically possible.",
-                    "Photograph accessory layouts and connector condition before packing; these images resolve missing-part disputes faster than generic condition statements.",
-                    "Maintain model-family defect histories and quote a stressed exit price before bidding, including the cost of a second freight movement.",
-                ],
-            },
-        },
-        {
-            "heading": "2. Select sub-verticals by supportability rather than auction discount",
-            "epistemic_status": "operating_framework",
-            "paragraphs": [
-                (
-                    "A sub-vertical is attractive when customers can define the required configuration, service partners "
-                    "can measure performance, and enough comparable transactions support disciplined pricing. Asking "
-                    "prices on DOTmed or Bimedis are discovery signals, not completed-sale evidence. Auction catalogs "
-                    "from GovDeals or AllSurplus often make removal deadlines and buyer premiums explicit, but those "
-                    "terms vary by seller and lot. Read the actual auction conditions instead of borrowing a fee "
-                    "percentage from another transaction. Direct hospital purchases may avoid a marketplace charge "
-                    "while introducing procurement coordination, lien questions, and difficult deinstallation. eBay "
-                    "adds category-specific selling costs, payment timing, and return exposure; verify current terms "
-                    "before setting a bid ceiling. Establish a landed-cost worksheet that includes acquisition, "
-                    "premium, unrecoverable taxes, removal, packing, transport, inspection, parts, software transfer, "
-                    "and expected support costs. The bid ceiling is the conservative net selling price minus every "
-                    "remaining cost and the required contribution. Refuse inventory whose price works only if a "
-                    "missing accessory appears free, a password becomes available, or a hospital extends removal "
-                    "time. Those are unresolved costs, not entrepreneurial upside. A six-figure original purchase "
-                    "price means little when the manufacturer no longer supports the installed configuration or "
-                    "replacement parts consume the achievable resale price."
-                ),
-                (
-                    "Map the mandatory play con_decommissioned_medical_imaging_arbitrage to equipment and site diligence "
-                    "as two separate workstreams. A hospital's approved capacity can influence a buyer's interest, "
-                    "but a used scanner does not carry portable permission to operate an imaging service. State "
-                    "Certificate-of-Need rules can address projects, services, facilities, ownership changes, and "
-                    "replacement equipment differently. North Carolina General Statutes Section 131E-178 illustrates "
-                    "the requirement to establish whether a proposed new institutional health service requires a "
-                    "certificate before undertaking it. Never infer transferable authority from a seller's historic "
-                    "utilization or an existing room. Consider an illustrative $125,000 equipment acquisition, "
-                    "$22,000 deinstallation and transport budget, $12,000 inspection and servicing budget, $6,000 "
-                    "holding allowance, and $10,000 transaction overhead allocation. A $190,000 principal resale "
-                    "leaves $15,000 after those $175,000 of specified costs. A $10,000 option credited against the "
-                    "purchase price is part of the $125,000 acquisition, not an extra profit source. This is "
-                    "deal arithmetic, not an annual forecast. Contract for inspection and required authorization "
-                    "contingencies, cap the option exposure, and verify refund terms. If the intended site transaction "
-                    "cannot proceed, exercise an available termination right or sell inspected equipment separately "
-                    "without representing transferable operating authority."
-                ),
-                (
-                    "The two complementary chapter-level plays are diagnostic refurbishment and veterinary redeployment. "
-                    "For a diagnostic example, a $14,000 ultrasound purchase plus $3,000 of probe and system testing, "
-                    "$1,500 freight, and a $1,000 warranty allowance creates a $19,500 specified cost basis. A "
-                    "$25,000 sale provides $5,500 contribution before remaining business overhead, not $5,500 of "
-                    "assured owner profit. If inspection reveals an additional $6,000 probe replacement, that spread "
-                    "turns negative before overhead; reject the acquisition under negotiated inspection terms or "
-                    "reprice the device for a clearly described alternative sale. For veterinary redeployment, "
-                    "a $4,000 monitor package, $1,200 service and accessory budget, and $600 shipping cost against "
-                    "an $8,000 sale yield $2,200 before overhead and residual support exposure. Species-appropriate "
-                    "accessories, intended application, and buyer training needs remain explicit diligence items. "
-                    "A failed compatibility check means returning the asset when contractually allowed or selling "
-                    "it into a supported use, not improvising undocumented adaptations. Both examples reward "
-                    "standardization across repeatable configurations. Neither example changes the canonical annual "
-                    "profit cases. Keep these contribution calculations beside the inventory record so acquisition "
-                    "staff can distinguish a repairable exception from an asset whose eventual sale merely hides "
-                    "a loss behind impressive transaction volume."
-                ),
-            ],
-            "table": {
-                "caption": "Sixteen Sub-Verticals: Named Channels, Fee Bases, Defensible Moats, and Reversal Triggers",
-                "headers": [
-                    "Sub-vertical and named sourcing channel",
-                    "Fee structure and purchase economics",
-                    "Small-team moat and verification work",
-                    "Refund, clawback, or failure trigger",
-                ],
-                "rows": [
-                    [
-                        "Cart ultrasound systems sourced through DOTmed and hospital relationships",
-                        "Quote channel charges separately from negotiated equipment purchase consideration",
-                        "Index probe condition, enabled options, and model-specific service histories",
-                        "Undisclosed probe defects trigger negotiated remedies and consume warranty reserves",
-                    ],
-                    [
-                        "Portable ultrasound platforms located through Bimedis and direct sellers",
-                        "Confirm any subscription or promotion charges before evaluating contribution",
-                        "Verify battery health, charger originality, and software entitlement continuity",
-                        "Missing licensed functions undermine acceptance despite successful basic startup",
-                    ],
-                    [
-                        "CT systems offered through DOTmed and decommissioning project relationships",
-                        "Budget equipment price plus rigging, freight, and project contractor charges",
-                        "Document tube usage, service access, and buyer installation dependencies",
-                        "Tube failure or missing service access destroys projected resale spread",
-                    ],
-                    [
-                        "MRI systems sourced through hospital tenders and DOTmed listings",
-                        "Price specialist deinstallation and transport independently from equipment consideration",
-                        "Use qualified magnet specialists and documented site-specific removal plans",
-                        "Magnet condition or access constraints can exceed the asset spread",
-                    ],
-                    [
-                        "Mobile C-arms discovered through Bimedis and surgical center replacements",
-                        "Include negotiated marketplace costs and qualified imaging inspection charges",
-                        "Confirm detector performance, mechanical motion, and destination radiation requirements",
-                        "Image artifacts or registration deficiencies prevent contracted buyer acceptance",
-                    ],
-                    [
-                        "Digital radiography packages sourced through AllSurplus and hospital disposals",
-                        "Apply lot-specific buyer premiums and collection costs before setting bids",
-                        "Match detectors, workstations, interfaces, and transferable software rights",
-                        "Missing detector pairing or software rights strands otherwise functional hardware",
-                    ],
-                    [
-                        "Mammography systems identified through DOTmed and specialist service networks",
-                        "Separate asset pricing from installation, testing, and specialist transport quotes",
-                        "Coordinate buyer facility requirements under applicable mammography quality standards",
-                        "Facility certification assumptions or detector defects invalidate installation economics",
-                    ],
-                    [
-                        "Flexible endoscopy systems located through Bimedis and endoscopy center replacements",
-                        "Include specialist inspection and validated reprocessing costs within acquisition underwriting",
-                        "Document leak testing, image quality, compatibility, and reprocessing evidence",
-                        "Channel damage or inadequate reprocessing records creates serious return exposure",
-                    ],
-                    [
-                        "Surgical tables purchased through GovDeals and direct hospital asset sales",
-                        "Read lot premiums, removal deadlines, and loading responsibility before purchase",
-                        "Verify load specifications, articulation, batteries, and accessory mounting compatibility",
-                        "Missing specialty attachments or unstable movement defeats procedure-specific acceptance",
-                    ],
-                    [
-                        "Surgical lighting systems sourced through AllSurplus and operating room renovations",
-                        "Budget removal crews, mounting hardware, freight protection, and installation coordination",
-                        "Preserve complete arm assemblies and confirm buyer structural mounting requirements",
-                        "Incomplete ceiling components create expensive substitutions and installation delays",
-                    ],
-                    [
-                        "Anesthesia workstations identified through DOTmed and specialist refurbishment sellers",
-                        "Add qualified testing, approved replacement parts, and support allowances",
-                        "Require model-specific safety checks and documented service capability before trading",
-                        "Leaks, unsupported components, or failed safety tests require withholding delivery",
-                    ],
-                    [
-                        "Multiparameter monitors sourced through eBay and hospital replacement programs",
-                        "Check current category selling fees and applicable payment charges",
-                        "Standardize modules, accessories, batteries, and measurement verification across repeat purchases",
-                        "Accessory incompatibility or inaccurate readings triggers contractual correction obligations",
-                    ],
-                    [
-                        "Electrosurgical generators offered through Bimedis and surgical equipment liquidations",
-                        "Include analyzer testing and complete accessory costs in landed basis",
-                        "Document output verification through qualified technicians using suitable test equipment",
-                        "Failed output tests or damaged insulation require repair before resale",
-                    ],
-                    [
-                        "Veterinary imaging packages found through DOTmed and established clinic referrals",
-                        "Price species-relevant accessories and specialist application review alongside freight",
-                        "Match actual clinic workflows rather than assuming universal cross-use suitability",
-                        "Unsupported application or inaccessible service creates preventable buyer disputes",
-                    ],
-                    [
-                        "Aesthetic laser platforms sourced through Bimedis and direct practice replacements",
-                        "Verify handpiece replacement charges and license transfer costs before bidding",
-                        "Authenticate usage records, service eligibility, and supported treatment configurations",
-                        "Locked software or exhausted consumables eliminates the apparent purchase discount",
-                    ],
-                    [
-                        "Tabletop sterilizers located through GovDeals and authorized service relationships",
-                        "Budget auction premiums, transport, servicing, and appropriate cycle verification",
-                        "Match chamber capacity and manufacturer instructions to the buyer workflow",
-                        "Failed cycle performance or pressure-system defects blocks promised operational delivery",
-                    ],
-                ],
-            },
-        },
-        {
-            "heading": "3. Reconcile the scorecard with inventory turns and fully counted costs",
-            "epistemic_status": "illustrative_model",
-            "paragraphs": [
-                (
-                    "The canonical Conservative case is $250,000 gross equipment resale revenue at a 10% net margin, "
-                    "producing $25,000 annual owner net profit with two full-time staff and four contractors. The "
-                    "Base case is $1,025,000 at 16.0%, producing $164,000 with the same staffing counts. The Scaled "
-                    "case is $1,800,000 at 22%, producing $396,000 with three full-time staff and five contractors, "
-                    "eight people in total. These imply total annual expenses of $225,000, $861,000, and $1,404,000 "
-                    "respectively. Contractor counts describe people engaged, not full-time-equivalent workloads. "
-                    "For an illustrative volume bridge, ten sales averaging $25,000 reproduce Conservative revenue; "
-                    "forty-one sales averaging $25,000 reproduce Base revenue; sixty sales averaging $30,000 reproduce "
-                    "Scaled revenue. These are arithmetic decompositions rather than promised deal frequencies or "
-                    "a required product mix. The corresponding fully allocated expense per sale is $22,500, $21,000, "
-                    "and $23,400, respectively. A higher absolute cost per Scaled transaction is compatible with "
-                    "a stronger margin because its average selling price is higher. Acquisition, refurbishment, "
-                    "paid labor, ordinary support, and operating expenses must fit within each total expense envelope. "
-                    "Do not append contractor invoices after calling the residual owner profit, and do not count "
-                    "inventory purchases twice when translating earnings into cash requirements."
-                ),
-                (
-                    "Working capital explains why a profitable spreadsheet can still produce a failed trading "
-                    "business. The startup capital range is $20,000 to $95,000, monthly operating expenditure ranges "
-                    "from $4,000 to $18,000, and time to first deal is three to nine months. Those are planning "
-                    "ranges, not additional deductions layered onto already complete annual cases. Classify recurring "
-                    "operating costs separately from inventory acquisition cash flows and reconcile both to the "
-                    "expense model. Three months at the upper operating range consumes $66,000 before any equipment "
-                    "purchase, so the lowest capital starting point cannot support every inventory strategy. A "
-                    "hospital purchase paid immediately, followed by six weeks of servicing and thirty-day customer "
-                    "terms, can tie up cash far longer than the visible repair duration. Customer deposits help "
-                    "fund the cycle but remain obligations until the promised performance occurs. Maintain a rolling "
-                    "thirteen-week cash forecast with serial-level expected completion dates, committed contractor "
-                    "payments, removal deadlines, tax payments, and realistic collection timing. Set purchase limits "
-                    "against the stressed forecast rather than bank balance alone. Track aged inventory at thirty, "
-                    "sixty, and ninety days, then reprice, return where permitted, or liquidate under a documented "
-                    "plan instead of allowing yesterday's purchase decision to dictate today's valuation."
-                ),
-                (
-                    "Sensitivity work should attack the assumptions most likely to break, not add attractive revenue "
-                    "categories. In the Base decomposition, a $1,000 average increase in unrecovered costs across "
-                    "forty-one sales reduces annual profit by $41,000, from $164,000 to $123,000, assuming revenue "
-                    "and other costs remain unchanged. A single $20,000 unrecovered warranty loss consumes roughly "
-                    "12.2% of the canonical Base profit. In the imaging illustration, an additional $18,000 repair "
-                    "changes the specified $15,000 deal remainder into a $3,000 loss. These are sensitivities, not "
-                    "replacement scorecard cases. Use them to set purchase contingencies, maximum repair authorizations, "
-                    "and model-family concentration limits. Avoid booking speculative service subscriptions or buyer "
-                    "procedure income as a rescue. If a separate maintenance agreement is actually sold, evaluate "
-                    "its performance obligations and costs separately rather than recognizing the entire contract "
-                    "with the equipment shipment. Track contribution by model, realized warranty cost, days to cash, "
-                    "and repeat-buyer rate alongside gross sales. A business with fewer sales and cleaner acceptance "
-                    "can outperform one carrying impressive but disputed invoices. Inventory automation earns its "
-                    "place when it prevents duplicate purchases, catches missing accessories, and identifies "
-                    "unsupported configurations early; it does not make technician judgment or field service "
-                    "capacity disappear from the labor model."
-                ),
-            ],
-            "table": {
-                "caption": "Canonical Annual Economics and Explicitly Separate Transaction Boundaries",
-                "headers": [
-                    "Case or transaction being measured",
-                    "Recognized revenue and applicable economic basis",
-                    "Cost reconciliation and resulting operator earnings",
-                    "Staffing interpretation or recognition control required",
-                ],
-                "rows": [
-                    [
-                        "Conservative annual case using ten illustrative equipment sales",
-                        "$250,000 gross resale proceeds from ten $25,000 transactions",
-                        "$225,000 total expenses leave $25,000 profit at 10%",
-                        "Two full-time staff plus four contractors within total expenses",
-                    ],
-                    [
-                        "Base annual case using forty-one illustrative equipment sales",
-                        "$1,025,000 gross resale proceeds from forty-one $25,000 transactions",
-                        "$861,000 total expenses leave $164,000 profit at 16.0%",
-                        "Two full-time staff plus four contractors within total expenses",
-                    ],
-                    [
-                        "Scaled annual case using sixty illustrative equipment sales",
-                        "$1,800,000 gross resale proceeds from sixty $30,000 transactions",
-                        "$1,404,000 total expenses leave $396,000 profit at 22%",
-                        "Three full-time staff plus five contractors, eight people total",
-                    ],
-                    [
-                        "Agency illustration kept outside the canonical principal-resale cases",
-                        "$8,000 earned commission on a $100,000 underlying asset sale",
-                        "Subtract agency operating costs before determining actual agency profit",
-                        "Document control assessment rather than relying on broker labels",
-                    ],
-                    [
-                        "Imaging principal transaction with separately evaluated site authority",
-                        "$190,000 equipment proceeds exclude any claimed transferable CON value",
-                        "$175,000 specified costs leave $15,000 before additional unmodeled costs",
-                        "Option credit belongs inside acquisition cost, without double counting",
-                    ],
-                    [
-                        "Customer deposit collected before promised equipment performance occurs",
-                        "Cash receipt generally creates liability rather than immediate revenue",
-                        "Release liability as applicable contractual performance obligations are satisfied",
-                        "Track deposits separately from available unrestricted operating cash balances",
-                    ],
-                ],
-            },
-        },
-        {
-            "heading": "4. Make technical evidence and bounded obligations the operating system",
-            "epistemic_status": "operating_framework",
-            "paragraphs": [
-                (
-                    "Regulatory diligence begins with the device and the activity, not the reseller's preferred "
-                    "business label. FDA establishment registration and listing obligations under 21 CFR Part 807 "
-                    "depend on the role performed; buying and reselling used equipment does not automatically make "
-                    "every domestic trader a manufacturer. Importing, relabeling, repackaging, or remanufacturing can "
-                    "change the analysis. FDA distinguishes servicing intended to return a device to its original "
-                    "safety and performance specifications and intended use from remanufacturing that significantly "
-                    "changes performance, safety specifications, or intended use. Document the scope before modifying "
-                    "hardware or software, and obtain specialist review when a proposed change crosses that boundary. "
-                    "The Quality Management System Regulation in 21 CFR Part 820 became effective February 2, 2026; "
-                    "determine applicability rather than assuming a technician's invoice satisfies manufacturer "
-                    "obligations. Search FDA recall records using model, catalog number, and serial range, then "
-                    "resolve applicable corrective actions before shipment. Radiation-producing equipment adds "
-                    "device-specific federal and destination-state requirements; mammography facilities also face "
-                    "21 CFR Part 900 requirements. State licensing, prescription-device restrictions, and installation "
-                    "rules require a destination-specific check. Neither veterinary placement nor export should "
-                    "serve as a casual escape route for a device whose actual condition and permitted use remain "
-                    "unresolved after inspection."
-                ),
-                (
-                    "Patient-data control and physical decontamination are separate acceptance tracks. Ultrasound "
-                    "consoles, imaging workstations, printers, and removable storage may retain patient names, images, "
-                    "worklists, network credentials, and exported reports. Ask the transferring institution to "
-                    "identify storage and its authorized sanitization process before collection. Where the reseller "
-                    "acts as a business associate and handles protected health information, address the applicable "
-                    "contract and safeguard requirements under 45 CFR Sections 164.502(e), 164.504(e), and 164.308. "
-                    "HIPAA does not automatically apply to every reseller merely because equipment once sat in a "
-                    "hospital, but that distinction is no reason to accept uncontrolled patient records. The media "
-                    "disposal and reuse provisions in 45 CFR Section 164.310(d)(2) provide concrete requirements "
-                    "for regulated parties. Use an authorized, validated process consistent with current NIST "
-                    "media-sanitization guidance and manufacturer constraints; a factory reset alone may not erase "
-                    "all storage. Preserve necessary software entitlements while recording what was sanitized, by "
-                    "whom, when, and how completion was verified. Separately require model-appropriate cleaning "
-                    "or reprocessing evidence before technician handling. A generic clean sticker cannot establish "
-                    "that a flexible endoscope was properly reprocessed or that inaccessible contaminated components "
-                    "are safe to handle. Unresolved assets stay isolated from saleable inventory."
-                ),
-                (
-                    "Build a small-team workflow around explicit custody changes and signed evidence, not verbal "
-                    "assurances between independent contractors. One full-time role can own sourcing, contracts, "
-                    "and buyer qualification while another owns inventory records, scheduling, and acceptance "
-                    "coordination; specialist testing, rigging, freight, and field service remain assigned to "
-                    "qualified contractors. That division fits the canonical staffing structure without pretending "
-                    "every contractor works a full week. Before acquisition, confirm seller authority, exact "
-                    "configuration, inspection rights, removal obligations, and the downside exit. At intake, record "
-                    "condition and isolate the asset until decontamination, data handling, and technical checks "
-                    "are complete. Before listing, reconcile the advertised functions against the test report, "
-                    "software rights, included accessories, warranty scope, and destination requirements. Before "
-                    "delivery, obtain buyer agreement on installation responsibilities and measurable acceptance "
-                    "criteria. Preserve the packed-condition photographs and freight handoff record, then close "
-                    "the sale against actual contractual performance rather than a convenient invoice date. Schedule "
-                    "a post-delivery check while the service evidence is fresh and track every claim against the "
-                    "specific model family. The commercial objective is not eliminating all returns. It is making "
-                    "defects discoverable early, responsibilities legible, and recovery costs small enough that "
-                    "repeat transactions compound operating knowledge instead of repeatedly financing the same "
-                    "avoidable mistake."
-                ),
-            ],
-            "table": {
-                "caption": "Serial-Level Evidence Controls Before Purchase, Listing, and Delivery",
-                "headers": [
-                    "Control and responsible operating role",
-                    "Evidence required in the asset record",
-                    "Concrete authority or technical reference point",
-                    "Stop condition and bounded recovery action",
-                ],
-                "rows": [
-                    [
-                        "Acquisition lead confirms authority to sell and convey title",
-                        "Executed purchase terms, serial schedule, and relevant lien releases",
-                        "UCC Section 2-312 addresses title and related warranty obligations",
-                        "Suspend purchase until disputed ownership or encumbrances are resolved",
-                    ],
-                    [
-                        "Qualified technical lead classifies proposed servicing and device changes",
-                        "Written repair scope, intended-use comparison, and performance verification plan",
-                        "21 CFR Parts 807 and 820 apply according to role",
-                        "Escalate material changes before performing work or making claims",
-                    ],
-                    [
-                        "Data custodian controls retained records and storage media disposition",
-                        "Storage inventory, authorized sanitization record, and verification completion evidence",
-                        "45 CFR Section 164.310 addresses regulated media disposal and reuse",
-                        "Isolate equipment until authorized handling and verification are complete",
-                    ],
-                    [
-                        "Intake coordinator verifies appropriate cleaning before technician handling",
-                        "Model-specific decontamination evidence and documented handling requirements for staff",
-                        "29 CFR Section 1910.1030 applies where occupational exposure exists",
-                        "Withhold routine handling until exposure controls and cleaning are resolved",
-                    ],
-                    [
-                        "Project lead separates imaging assets from site operating permissions",
-                        "Equipment contract, destination analysis, and documented authorization contingencies",
-                        "North Carolina General Statutes Section 131E-178 illustrates CON obligations",
-                        "Terminate when permitted or pursue equipment-only sale without authority claims",
-                    ],
-                    [
-                        "Delivery coordinator aligns advertised functions with contractual acceptance tests",
-                        "Signed configuration schedule, test results, packing images, and acceptance record",
-                        "UCC Section 2-313 addresses express warranties created by descriptions",
-                        "Correct unsupported claims before shipment and document any agreed substitutions",
-                    ],
-                ],
-            },
-            "callout": {
-                "kind": "OPERATOR GATE",
-                "title": "Four pre-flight verifications before money becomes stranded inventory",
-                "body": (
-                    "Advance the asset only when the responsible person can produce the evidence. An attractive "
-                    "purchase price cannot compensate for an unresolved ownership, safety, or resale restriction."
-                ),
-                "items": [
-                    "Verify seller authority, serial identity, relevant liens, inspection rights, and enforceable removal terms before releasing acquisition funds.",
-                    "Verify a qualified technician's test plan, supported parts supply, software rights, and a capped repair budget before accepting the asset.",
-                    "Verify documented decontamination and authorized data sanitization before moving equipment into unrestricted handling or saleable stock.",
-                    "Verify buyer destination requirements, installation responsibility, measurable acceptance terms, and a contingency exit for any CON-sensitive project.",
-                ],
-            },
-            "sop_steps": [
-                {
-                    "step": 1,
-                    "title": "Underwrite the exact configuration",
-                    "action": "Create the serial-level asset record and calculate a stressed acquisition ceiling.",
-                    "detail": "Attach seller authority, accessories, software terms, channel charges, removal quotes, and an equipment-only fallback value.",
-                },
-                {
-                    "step": 2,
-                    "title": "Receive into controlled inventory",
-                    "action": "Record custody and condition while restricting access until handling requirements are resolved.",
-                    "detail": "Keep decontamination, storage-media disposition, and technical inspection as separate documented workstreams with named owners.",
-                },
-                {
-                    "step": 3,
-                    "title": "Release a defensible sale package",
-                    "action": "Match every advertised functional claim to test evidence and the agreed device configuration.",
-                    "detail": "Confirm service scope, destination obligations, licensed options, warranty terms, accessories, and buyer installation dependencies.",
-                },
-                {
-                    "step": 4,
-                    "title": "Close against performance and learn",
-                    "action": "Document delivery and acceptance, apply the correct revenue treatment, and monitor claims.",
-                    "detail": "Reconcile serial-level costs, release applicable deposit liabilities, update warranty exposure, and index defects for future purchase decisions.",
-                },
-            ],
-        },
-    ],
-    "pull_quote": "The spread belongs to the operator who resolves the device's uncertainty before the buyer inherits it.",
-    "diagram_id": "diag-01",
-    "action_checklist": [
-        "Choose one supported model family and interview five credible buyers about required configurations, acceptance tests, and installation constraints.",
-        "Build a serial-level landed-cost worksheet that includes auction charges, servicing, software rights, transport, warranty exposure, and downside liquidation value.",
-        "Separate principal equipment sales, earned agency fees, customer deposits, and buyer clinical receipts in the accounting design.",
-        "Contract with qualified biomed, decontamination, data-sanitization, and logistics providers before committing to inventory that requires their services.",
-        "For an imaging opportunity, document equipment economics separately from site authority and negotiate inspection, authorization, and exit contingencies.",
-        "Reconcile the thirteen-week cash forecast and annual expense envelopes to $25,000, $164,000, and $396,000 canonical owner profit cases.",
-    ],
-    "statutory_citations": [
-        {
-            "title": "21 CFR Part 807 — Establishment Registration and Device Listing",
-            "url": "https://www.ecfr.gov/current/title-21/chapter-I/subchapter-H/part-807",
-            "relevance": "Determine role-specific registration and listing obligations, including activities beyond ordinary domestic resale.",
-        },
-        {
-            "title": "21 CFR Part 820 — Quality Management System Regulation",
-            "url": "https://www.ecfr.gov/current/title-21/chapter-I/subchapter-H/part-820",
-            "relevance": "Assess manufacturer and remanufacturing obligations rather than treating every repair activity as ordinary servicing.",
-        },
-        {
-            "title": "45 CFR 164.310 — Physical Safeguards",
-            "url": "https://www.ecfr.gov/current/title-45/subtitle-A/subchapter-C/part-164/subpart-C/section-164.310",
-            "relevance": "Paragraph (d)(2) addresses disposal and media reuse controls for electronic protected health information handled by regulated parties.",
-        },
-        {
-            "title": "45 CFR 164.504 — Uses and Disclosures: Organizational Requirements",
-            "url": "https://www.ecfr.gov/current/title-45/subtitle-A/subchapter-C/part-164/subpart-E/section-164.504",
-            "relevance": "Paragraph (e) sets requirements relevant to business associate contracts when the reseller performs covered data-handling functions.",
-        },
-        {
-            "title": "North Carolina General Statutes 131E-178 — Activities Requiring Certificate",
-            "url": "https://www.ncleg.gov/EnactedLegislation/Statutes/HTML/BySection/Chapter_131E/GS_131E-178.html",
-            "relevance": "Illustrates why an imaging project requires state-specific analysis separate from ownership of the equipment being resold.",
-        },
-        {
-            "title": "21 CFR Part 900 — Mammography",
-            "url": "https://www.ecfr.gov/current/title-21/chapter-I/subchapter-I/part-900",
-            "relevance": "Mammography facility certification and quality requirements affect buyer readiness and installation planning without attaching automatically to an equipment listing.",
-        },
-        {
-            "title": "29 CFR 1910.1030 — Bloodborne Pathogens",
-            "url": "https://www.ecfr.gov/current/title-29/subtitle-B/chapter-XVII/part-1910/subpart-Z/section-1910.1030",
-            "relevance": "Establishes workplace controls when equipment handling creates occupational exposure to blood or other potentially infectious materials.",
-        },
-        {
-            "title": "UCC 2-312 — Warranty of Title and Against Infringement",
-            "url": "https://www.law.cornell.edu/ucc/2/2-312",
-            "relevance": "Model-code title warranty provisions support seller-authority and encumbrance checks; confirm the governing state's enacted text.",
-        },
-        {
-            "title": "UCC 2-313 — Express Warranties",
-            "url": "https://www.law.cornell.edu/ucc/2/2-313",
-            "relevance": "Model-code provisions explain how descriptions and factual promises can create express warranties; confirm the governing state's enacted text.",
-        },
-    ],
-}
+CHAPTER_1 = {'id': 'Q1',
+ 'chapter_id': 'Q1',
+ 'chapter_number': 1,
+ 'question_number': 1,
+ 'slug': 'used-medical-equipment-resale-business',
+ 'question_prompt': 'How do operators start and run a used medical equipment resale business, and where '
+                    'does the inventory come from?',
+ 'kicker': 'Q1 / THE BIG MONEY PLAYBOOKS',
+ 'title': 'The Used Medical Equipment Resale Business',
+ 'subtitle': 'Founder stories, garage-to-showroom refurbishers, hospital liquidations and surplus '
+             'auctions, buy-back offers, online marketplaces like Medinas, DME buy/sell services, '
+             'high-ticket drop shipping, franchising, lean medical supply startups, and refurbished market '
+             'outlook',
+ 'layout_template': 'opportunity_overview',
+ 'reading_time_minutes': 15,
+ 'executive_summary': 'Operators converge on one engine: buy surplus hospital gear cheap, document and '
+                      'biomed-check it, then resell or rerent it. Bill Whittemore built a garage operation '
+                      'into $100M+ in refurbished sales over 32 years; Centurion Service Group moves about '
+                      '6,000 pieces a month and turns inventory every 5 weeks; Medinas Health takes a cut '
+                      'of gross sales instead of seller fees. The rental side is the cash machine: the '
+                      'Earn Your Leisure founder bills 13-month Medicare rentals and rerents returned '
+                      'units, but started with $700,000 liquid and 6-7 licenses per location, while a '
+                      'Florida starter pitch claims a $4,000 lean launch. Disagreements are sharp: Joe '
+                      'Verschoor grades high-ticket medical drop shipping only B to B-minus because of '
+                      'Google ad policy friction, and Whittemore warns that wipe-down-and-ship sellers '
+                      "trash the industry's reputation.",
+ 'key_metrics': [{'label': 'Liquid Capital To Launch A Medicare-Billing Equipment Company',
+                  'metric': 'Liquid Capital To Launch A Medicare-Billing Equipment Company',
+                  'value': '$700,000 liquid',
+                  'confidence': 'attributed_practitioner_claim',
+                  'context': 'Amount the founder says was required in liquid funds when they started their '
+                             'medical equipment business; they note the number may have changed since.',
+                  'source': 'Earn Your Leisure ([hQY0qIkQ-xY @ 00:02:44])'},
+                 {'label': 'Medical Equipment Auction Throughput',
+                  'metric': 'Medical Equipment Auction Throughput',
+                  'value': 'About 6,000 pieces per month; entire inventory turned every 5 weeks',
+                  'confidence': 'attributed_practitioner_claim',
+                  'context': "Centurion's monthly unit volume as the self-described largest medical "
+                             'equipment auction company, representing well over 1,000 hospitals, surgery '
+                             'centers and manufacturers.',
+                  'source': 'Centurion Service Group: A TRIMEDX Company ([dUZz08G_Dzc @ 00:00:21])'},
+                 {'label': 'Lifetime Refurbished Equipment Sales',
+                  'metric': 'Lifetime Refurbished Equipment Sales',
+                  'value': 'Over $100 million across 32 years',
+                  'confidence': 'attributed_practitioner_claim',
+                  'context': 'Cumulative refurbished medical equipment sold by a dealer who started out of '
+                             'a garage selling to veterinarians and later equipped entire hospitals and '
+                             'surgical centers.',
+                  'source': 'Bill Whittemore ([zLW0PtGvqQE @ 00:00:20])'},
+                 {'label': 'SEO Keyword Filter For High-Ticket Medical Products',
+                  'metric': 'SEO Keyword Filter For High-Ticket Medical Products',
+                  'value': 'Keyword difficulty 15 or below with at least 1,000 monthly searches',
+                  'confidence': 'attributed_practitioner_claim',
+                  'context': 'Threshold used in Semrush to pick specific long-tail medical mobility '
+                             'keywords worth ranking for over time on $2,000+ drop shipped products.',
+                  'source': 'Joe Verschoor ([-23KPzW6CW8 @ 00:12:47])'}],
+ 'sections': [{'section': 1,
+               'heading': 'The Practitioner Consensus',
+               'paragraphs': ['The supply side is the one thing every operator agrees on: hospitals dump '
+                              'usable equipment, and the money is in capturing it. Chloe Alpert of Medinas '
+                              'Health saw CT scanners, dialysis and x-ray machines lining facility walls '
+                              'in 2016 and found upwards of $15 billion of electronic medical equipment '
+                              'ending up in the US waste stream, with volumes growing 14% a year, because '
+                              'insurers and hospitals favor the newest technology [NFqBMUIcgl4 @ '
+                              '00:00:36]. Centurion Service Group has built on that same flow since 2001, '
+                              'representing well over 1,000 hospitals, surgery centers and manufacturers '
+                              'and selling both surplus equipment and manufacturer trade-in programs '
+                              '[dUZz08G_Dzc @ 00:00:36]. Bill Whittemore, who started out of a garage '
+                              'selling to veterinarians and then doctors hunting deals, mostly from '
+                              'Mexico, lists the acquisition channels: buy direct from hospitals wherever '
+                              'possible, work the auction market on an as-is basis, and lean on fellow '
+                              'dealers and wholesalers, because unlike manufacturers, a used dealer cannot '
+                              'simply make more inventory [zLW0PtGvqQE @ 00:09:11]. Block Imaging adds why '
+                              'sellers show up at all: a facility wants new capability such as AI software '
+                              'or new isotope studies, or its unit is outdated, and even gear two to three '
+                              'generations old still carries component value for servicing newer systems '
+                              '[4suol4m0dq4 @ 00:00:51].',
+                              'The second consensus point: refurbished gear only sells when it leaves the '
+                              'dock biomed-checked and patient ready. The I Medical Equipment and Service '
+                              'showroom crew, formerly Hospital Direct Medical, stages monitors, '
+                              'defibrillators, infusion pumps and a full operating room labeled biomed '
+                              'certified, patient ready, so doctors can walk in, power units on, compare '
+                              'screens, and schedule delivery or carry small items home [ezF-botYEqQ @ '
+                              '00:03:57]. All States MED founder Josino Fera pitches brand-new options '
+                              'alongside used and refurbished options at a quarter of the price, backed by '
+                              'an in-house biomed department for ongoing maintenance and repairs '
+                              '[60julptDir4 @ 00:02:07]. The Doctorpreneur Academy tells clinic owners '
+                              'that refurbished big-ticket machines mostly come from Europe and the USA, '
+                              'and to buy through Philips, Siemens or similar companies that provide AMC '
+                              'and CMC coverage, because a direct import leaves nobody to service it when '
+                              'something breaks; refurbished status changes nothing on loans, subsidies or '
+                              'government schemes [GZlFJf6akG0 @ 00:00:56]. Bill Whittemore frames the '
+                              'stakes: the customer who grabbed a cheap unit may have no biomedical team '
+                              'to check it before patient use, and the dealers who keep a biomed team to '
+                              'recheck equipment before retail are the ones who can stand behind it, '
+                              'versus pure buy-low-sell-high brokering sold as-is [zLW0PtGvqQE @ '
+                              '00:12:05].',
+                              'On the home medical side, practitioners agree the recurring rental is the '
+                              'profit lever and service is the moat that holds it together. The Earn Your '
+                              "Leisure founder, who runs 16 locations, qualifies a patient's prescription "
+                              "against Medicare's one-per-five-years rule, bills a 13-month rental on most "
+                              'equipment, then picks the unit back up when the patient dies, is '
+                              'hospitalized or no longer needs it and rerents the same item to someone '
+                              'else [hQY0qIkQ-xY @ 00:08:26]. That founder also argues the middleman '
+                              'exists because manufacturers would need a whole separate division to fit '
+                              'wheelchairs, keep patients from falling and out of the hospital, and '
+                              'service them after delivery [hQY0qIkQ-xY @ 00:04:08]. The Florida starter '
+                              'breakdown from How to Start a Business that Prints Cash names the same '
+                              'lever, recurring monthly rental of specialized hardware, as the one '
+                              'beginners almost always miss, and tells operators to lock in recurring '
+                              'contract revenue [Ahi8z5l5Yao @ 00:00:49]. Bundling is how the margin '
+                              'stacks: a bedbound patient may need a hospital bed, lift, commode, walker, '
+                              'wheelchair and oxygen, so a thin margin on the bed gets offset by a better '
+                              'margin on the wheelchair, which is why the founder calls margins good '
+                              'overall even while admitting some items suck [hQY0qIkQ-xY @ 00:07:28].'],
+               'table': {'caption': 'Where Medical Equipment Resale Operators Agree',
+                         'headers': ['Consensus Point',
+                                     'What The Practitioner Reported',
+                                     'Operator Implication',
+                                     'Expert Source'],
+                         'rows': [['Hospital surplus is the primary raw material supply',
+                                   'Upwards of $15 billion in electronic medical equipment ends up in the '
+                                   'US waste stream, growing 14% per year',
+                                   'Position sourcing at the hospital loading dock rather than retail '
+                                   'resale channels',
+                                   'Berkeley Haas Case Series ([NFqBMUIcgl4 @ 00:00:36])'],
+                                  ['Auction consolidation lets buyers fill entire containers at once',
+                                   'Inventory turns every five weeks, with a Las Vegas warehouse handling '
+                                   'everything west of the Rockies',
+                                   'Buy container-sized lots instead of hopping between states and regions '
+                                   'for single pieces',
+                                   'Centurion Service Group: A TRIMEDX Company ([dUZz08G_Dzc @ 00:00:36])'],
+                                  ['Acquisition runs through hospitals, auctions and fellow dealers',
+                                   'Buy direct from hospitals wherever possible, take the as-is auction '
+                                   'bet, and rely on other dealers and wholesalers',
+                                   'Build dealer relationships because used inventory cannot be '
+                                   'manufactured on demand like new stock',
+                                   'Bill Whittemore ([zLW0PtGvqQE @ 00:09:11])'],
+                                  ['Patient-ready biomed certification is what closes the sale',
+                                   'Showroom monitors and equipment are biomed certified, patient ready '
+                                   'and ready to go out the door',
+                                   'Let doctors see, touch and power on equipment before scheduling '
+                                   'delivery',
+                                   'Used Medical Equipment ([ezF-botYEqQ @ 00:03:57])'],
+                                  ['Refurbished pricing undercuts new equipment by a wide margin',
+                                   'Used and refurbished options are sold at a quarter of the price, '
+                                   'alongside brand-new stock',
+                                   'Offer new and refurbished side by side so buyers can choose on budget',
+                                   'All States MED ([60julptDir4 @ 00:02:07])'],
+                                  ['Recurring rentals and rerents drive home medical profitability',
+                                   'Most equipment bills as a 13-month rental, then gets picked up and '
+                                   'rerented to another patient',
+                                   'Track every rental unit for pickup and fast redeployment to the next '
+                                   'qualified patient',
+                                   'Earn Your Leisure ([hQY0qIkQ-xY @ 00:08:26])'],
+                                  ['Hands-on service after delivery is the competitive moat',
+                                   'Staff fit the wheelchair, make sure it clears doorways, remove '
+                                   'obstructions, and service the patient for a year',
+                                   'Budget delivery drivers and setup time into every single equipment '
+                                   'placement',
+                                   'Earn Your Leisure ([hQY0qIkQ-xY @ 00:02:12])']]}},
+              {'section': 2,
+               'heading': 'Exact Street Mechanics, Tools & Numbers',
+               'paragraphs': ['Capital requirements split hard by model. The Earn Your Leisure founder '
+                              'says starting a Medicare-billing equipment company required $700,000 liquid '
+                              'back when they launched, admitting the number may have changed since '
+                              '[hQY0qIkQ-xY @ 00:02:44]. Each location then carries at least six and '
+                              'sometimes seven licenses: state licensing, accreditation, Medicare, every '
+                              'other insurance plan, plus a separate oxygen license. Florida takes longer '
+                              'and charges more, which the founder was told traces back to South Florida '
+                              'Medicare fraud, and the founder stresses that Medicare guidelines govern '
+                              'every state, making the industry more regulated than pharmacy [hQY0qIkQ-xY '
+                              '@ 00:05:40]. At the opposite end, the Florida starter breakdown claims a '
+                              'lean operation launches for about $4,000 covering legal formation, basic '
+                              'inventory and liability insurance, with Agency for Health Care '
+                              'Administration compliance as the licensing anchor and wholesale pricing '
+                              'tiers set strictly by purchasing volume, not business age [Ahi8z5l5Yao @ '
+                              '00:00:16]. ELEGANCEPRENEUR lays out the paperwork sequence: pick a '
+                              'structure, with an LLC for liability protection, register with the '
+                              'Secretary of State, pull a free EIN from the IRS, and check the state '
+                              'Health Department for a Wholesale Distributor license before sourcing from '
+                              'ISO- or FDA-certified suppliers [z8FeVDQ8g_U @ 00:01:30].',
+                              'On the sell side, the mechanics are about documentation. Block Imaging '
+                              'wants a list before you even pick up the phone: year, make and model; '
+                              'actual usage such as tube age, scan seconds and, for GE, milliamp seconds; '
+                              'and configuration, meaning injectors, monitoring, Mac labs, workstations '
+                              'and the licensed software, which reveals what the system can be used for '
+                              'next [4suol4m0dq4 @ 00:01:35]. Photos shortcut the condition check: at '
+                              'least one glamour shot of the whole unit, the series tag to confirm age and '
+                              'configuration, the computers, the gantry from back, side and front, and '
+                              'every accessory included in the sale, and anyone on staff, from the '
+                              'radiology manager to a tech, can shoot them [4suol4m0dq4 @ 00:02:26]. '
+                              'Robert Remitz runs the peer-to-peer version at Go Southern MD: sellers list '
+                              'new or used equipment free in five to ten minutes by clicking Sell, then '
+                              'experienced staff verify the listing is accurate, advise on what the market '
+                              'is demanding, and make sure buyer and seller both understand the '
+                              'transaction [_ue3Y22oMAA @ 00:03:15]. The I Medical liquidation crew walks '
+                              'entire hospitals, from ER and pediatrics to ICU and OR suites, documenting '
+                              'every asset before reconditioning, scaling from 40 to 60 patient rooms up '
+                              'to 300 to 500 room hospitals [IA2PW_vSjBc @ 00:03:47].',
+                              'The revenue models vary but the numbers are concrete. Medinas Health '
+                              "charges hospitals no seller's fee, unlike some competitors, and instead "
+                              'takes a percentage of gross sales on each piece, pairing every exclusive '
+                              'hospital with a dedicated manager, regional warehouse space, inventory and '
+                              'sales software, and an approved-buyer list; by October 2019 it had 20 '
+                              'employees and was on track to break 1 million in gross merchandise value '
+                              '[NFqBMUIcgl4 @ 00:02:16]. Centurion pairs its Las Vegas warehouse, where '
+                              'buyers inspect goods and buy in real time, with timed online auctions that '
+                              'let buyers pick up fixed assets directly from the hospital after watching '
+                              'them run [dUZz08G_Dzc @ 00:00:52]. Down at the small-reseller end, Jon '
+                              'Sheppard calls medical stock the biggest profit return of anything picked '
+                              'up over years of reselling: a Repose inflatable support mattress listed at '
+                              '£55 sold for £47 on an offer, an earlier brand-new one went for £100 and '
+                              'another for £40, against roughly £120 to £140 new on Amazon [8meyld3BWGg @ '
+                              '00:07:41]. For online high-ticket sellers, Joe Verschoor targets products '
+                              'priced $2,000 and up, filters Semrush keywords to a difficulty of 15 or '
+                              "lower with at least 1,000 monthly searches for SEO, and adds 'used' as a "
+                              'negative keyword in Google Ads [-23KPzW6CW8 @ 00:12:47].'],
+               'table': {'caption': 'Medical Equipment Resale Numbers And Tools Operators Actually Use',
+                         'headers': ['Mechanic',
+                                     'Exact Number Or Tool',
+                                     'How Operators Use It',
+                                     'Expert Source'],
+                         'rows': [['Home medical startup liquidity requirement at launch',
+                                   '$700,000 liquid needed when the founder started, possibly changed '
+                                   'since',
+                                   'Size capital before chasing Medicare billing and multi-license '
+                                   'physical locations',
+                                   'Earn Your Leisure ([hQY0qIkQ-xY @ 00:02:44])'],
+                                  ['Per-location licensing stack required to sell equipment',
+                                   'At least six, sometimes seven licenses including a separate oxygen '
+                                   'license',
+                                   'Budget extra time and cost for Florida, which licenses slower and '
+                                   'charges more',
+                                   'Earn Your Leisure ([hQY0qIkQ-xY @ 00:05:40])'],
+                                  ['Lean starter medical supply launch budget in Florida',
+                                   'About $4,000 covering legal formation, basic inventory and liability '
+                                   'insurance',
+                                   'Cover formation, inventory and insurance before buying any heavy '
+                                   'equipment',
+                                   'How to Start a Business that Prints Cash ([Ahi8z5l5Yao @ 00:00:16])'],
+                                  ['Imaging equipment valuation inputs gathered before calling buyers',
+                                   'Year, make, model, tube age, scan seconds, milliamp seconds and full '
+                                   'configuration',
+                                   'Compile the list plus photos so the buyer can quote the best price',
+                                   'Block Imaging ([4suol4m0dq4 @ 00:01:35])'],
+                                  ['Marketplace revenue model built without any seller fees',
+                                   'Percentage of gross sales on each piece of equipment sold for the '
+                                   'hospital',
+                                   'Make money only when hospitals make money to win exclusive agreements',
+                                   'Berkeley Haas Case Series ([NFqBMUIcgl4 @ 00:01:42])'],
+                                  ['High-ticket drop shipping keyword research filter in Semrush',
+                                   'Keyword difficulty 15 or below, 1,000+ monthly searches, products '
+                                   'priced $2,000 and up',
+                                   'Chase specific long-tail and branded terms instead of broad head '
+                                   'keywords',
+                                   'Joe Verschoor ([-23KPzW6CW8 @ 00:12:47])'],
+                                  ['Auction throughput and full inventory turn rate',
+                                   'About 6,000 pieces sold monthly with the entire inventory turned every '
+                                   'five weeks',
+                                   'Return monthly to restock completely different equipment for another '
+                                   'center',
+                                   'Centurion Service Group: A TRIMEDX Company ([dUZz08G_Dzc @ '
+                                   '00:00:36])']]},
+               'callout': {'kind': 'INSIDER PRO-TIPS',
+                           'title': 'Insider Pro-Tips From The Resale Floor',
+                           'body': 'Moves the operators credit for landing volume, protecting supply and '
+                                   'moving the right stock.',
+                           'items': ['Make your first hire a salesperson: the Earn Your Leisure founder '
+                                     "hired a rehab director's son whose parent oversaw three rehab "
+                                     'centers, betting on the equipment orders that relationship would '
+                                     'send their way [Earn Your Leisure — hQY0qIkQ-xY @ 00:09:26].',
+                                     'Stockpile ahead of disruption: when COVID hit, the founder filled a '
+                                     'roughly 7,000 square foot ranch warehouse floor to roof and avoided '
+                                     'the supply chain issues most competitors hit [Earn Your Leisure — '
+                                     'hQY0qIkQ-xY @ 00:10:17].',
+                                     'Hunt the high-demand SKUs: Stryker bassinets are called high demand, '
+                                     'progressive beds hard to find, and GlideScope systems always in '
+                                     'demand on the warehouse floor [Used Medical Equipment — 0jN0a_8CpgI '
+                                     '@ 00:01:08].',
+                                     'Match accessories to beds: low-base Hoyer lifts like the Linux and '
+                                     'Leos are flagged as ideal for progressive hospital beds because they '
+                                     'go low enough to fit underneath [Used Medical Equipment — '
+                                     '0jN0a_8CpgI @ 00:01:57].']},
+               'sop_steps': [{'step': 1,
+                              'title': 'Lock Hospital Supply',
+                              'action': 'Pitch hospitals and closing facilities on surplus removal and '
+                                        'full liquidation.',
+                              'detail': 'Walk the facility department by department documenting every '
+                                        'asset, from ER and pediatrics to ICU and OR suites, on jobs '
+                                        'ranging from 40-room units to 500-room hospitals [Used Medical '
+                                        'Equipment — IA2PW_vSjBc @ 00:00:25].'},
+                             {'step': 2,
+                              'title': 'Build The Valuation Packet',
+                              'action': 'Capture year, make, model, usage, configuration and photos before '
+                                        'pricing anything.',
+                              'detail': 'Get a glamour shot of the whole system, the series tag, '
+                                        'computers, gantry from back, side and front, and every included '
+                                        'accessory so condition and configuration are confirmed fast '
+                                        '[Block Imaging — 4suol4m0dq4 @ 00:02:10].'},
+                             {'step': 3,
+                              'title': 'Recondition And Biomed Check',
+                              'action': 'Run every unit past a biomed team before it goes out retail.',
+                              'detail': 'Recheck equipment rather than assuming it works because the '
+                                        'lights came on, then stage it patient ready so buyers can power '
+                                        'it on and compare units in person [Bill Whittemore — zLW0PtGvqQE '
+                                        '@ 00:12:27].'},
+                             {'step': 4,
+                              'title': 'Route To The Highest-Return Exit',
+                              'action': 'Sell refurbished units outright or place home equipment on '
+                                        'recurring rental.',
+                              'detail': 'On the home medical side, bill most equipment as a 13-month '
+                                        'rental, pick it up when the patient no longer needs it, and '
+                                        'rerent the same item to the next patient [Earn Your Leisure — '
+                                        'hQY0qIkQ-xY @ 00:08:26].'}]},
+              {'heading': 'Section 3: Where Practitioners Disagree & Alternative Playbooks',
+               'paragraphs': ['The sharpest split is how much money it takes to get in the door. The Earn '
+                              'Your Leisure founder, who now runs 15 to 16 locations with one or two '
+                              'warehouses each, said that when they started they needed $700,000 liquid to '
+                              'open an insurance-billed medical equipment operation, and flagged that the '
+                              'number may have changed since [hQY0qIkQ-xY @ 00:02:44]. Their engine is '
+                              'rentals billed to Medicare and other plans: a 13-month rental on most '
+                              'equipment, then pick-up and re-rent of the same item when the patient '
+                              'passes away, goes into the hospital, or no longer needs it [hQY0qIkQ-xY @ '
+                              '00:08:26]. The How to Start a Business that Prints Cash narrator pitches '
+                              'the opposite entry point: a lean starter operation for about $4,000 '
+                              'covering legal formation, basic inventory, and liability insurance '
+                              '[Ahi8z5l5Yao @ 00:00:16]. That narrator also names recurring monthly rental '
+                              'of specialized hardware as the pricing lever beginners miss, but routes the '
+                              'first 10 paying customers through direct partnerships with regional home '
+                              'health agencies and local nursing facilities instead of a heavy warehouse '
+                              'footprint [Ahi8z5l5Yao @ 00:00:49]. All States MED founder Josino Fera '
+                              'sells a third lane: secure a franchise territory with what they call a '
+                              'small investment, then lean on comprehensive training, location selection, '
+                              'and marketing support from a company that started door-to-door with only a '
+                              'business card [60julptDir4 @ 00:04:05].',
+                              'Practitioners also split on how much work a unit needs before it ships. '
+                              'Bill Whittemore, 32 years in refurbished equipment and over $100 million '
+                              'sold, argues resellers should benchmark against the manufacturer standards '
+                              'that got the product to market in the first place, and that wiping it down '
+                              'and shipping it off without due diligence is what gives the industry a bad '
+                              'name [zLW0PtGvqQE @ 00:02:09]. Yet Whittemore concedes that as-is brokering '
+                              'has its place: buy low, sell high, sold as is, take your chances, which '
+                              'works for dealers who have the expertise and a biomed team to recheck '
+                              'equipment before it reaches the retail side [zLW0PtGvqQE @ 00:12:05]. The I '
+                              'Medical Equipment and Service crew on the Used Medical Equipment channel '
+                              'plants itself at the high-touch end, displaying biomed-certified, '
+                              'patient-ready gear in Richmond, Virginia and San Diego, California so '
+                              'doctors can turn monitors on, compare screen sizes, and test brands before '
+                              'buying [ezF-botYEqQ @ 00:05:23]. At the street-flip end, Jon Sheppard buys '
+                              'medical items at car boots and lists them straight on eBay: a Repose '
+                              'pump-up mattress that runs roughly 120 to 140 pounds new on Amazon sold for '
+                              '47 pounds, an earlier pair went for 100 and 40, and Sheppard calls medical '
+                              'stuff the biggest return in profits they have found because nobody else '
+                              'picks it up [8meyld3BWGg @ 00:07:41].',
+                              'Where to buy and sell is just as contested. Centurion Service Group runs '
+                              'the auction route: about 6,000 pieces a month for well over 1,000 '
+                              'hospitals, surgery centers, and manufacturers, turning the entire inventory '
+                              'every five weeks, with timed online auctions where buyers pick up straight '
+                              'from the hospital and international buyers fill a container in one stop '
+                              '[dUZz08G_Dzc @ 00:00:36]. Medinas Health, profiled by the Berkeley Haas '
+                              'Case Series, built the opposite structure: exclusive hospital agreements, a '
+                              'dedicated manager, regional warehouse space, inventory software, and an '
+                              'approved buyer list, charging no seller fee as some competitors did and '
+                              'instead taking a percentage of gross sales, so it made money when hospitals '
+                              'made money [NFqBMUIcgl4 @ 00:01:42]. The Doctorpreneur Academy tells clinic '
+                              'buyers to skip independents and go through Philips, Siemens, and similar '
+                              'firms, because if you import directly from the USA, UK, or Germany, nobody '
+                              'services you when there is a problem [GZlFJf6akG0 @ 00:00:56]. Joe '
+                              'Verschoor holds no inventory at all, testing medical mobility as a '
+                              'high-ticket drop shipping niche above $2,000 per item with ChatGPT product '
+                              'lists and Semrush keyword difficulty, and grades it B to B-minus because '
+                              'other niches carry lower keyword difficulty with just as much search volume '
+                              '[-23KPzW6CW8 @ 00:18:07].'],
+               'table': {'caption': 'Competing playbooks for entering and operating in used and '
+                                    'refurbished medical equipment',
+                         'headers': ['Decision Point', 'Playbook A', 'Playbook B', 'Expert Source'],
+                         'rows': [['Startup capital required to enter the business',
+                                   'Insurance-billed rental operation needed $700,000 liquid at the '
+                                   "founder's launch",
+                                   'Lean starter operation launched for about $4,000 covering formation, '
+                                   'inventory, insurance',
+                                   'Earn Your Leisure ([hQY0qIkQ-xY @ 00:02:44]) vs How to Start a '
+                                   'Business that Prints Cash ([Ahi8z5l5Yao @ 00:00:16])'],
+                                  ['Inventory depth and stocking strategy under supply shocks',
+                                   'Stocked a 7,000 square foot ranch warehouse floor to roof when COVID '
+                                   'hit',
+                                   'Lean inventory of high-demand consumables plus just-in-time heavy '
+                                   'equipment delivery',
+                                   'Earn Your Leisure ([hQY0qIkQ-xY @ 00:10:02]) vs How to Start a '
+                                   'Business that Prints Cash ([Ahi8z5l5Yao @ 00:01:21])'],
+                                  ['Refurbishment standard required before a unit ships',
+                                   'Benchmark against manufacturer standards and recheck everything with '
+                                   'an in-house biomed team',
+                                   'Broker it as is, buy low, sell high, and let the buyer take chances',
+                                   'Bill Whittemore ([zLW0PtGvqQE @ 00:02:09]) and Bill Whittemore '
+                                   '([zLW0PtGvqQE @ 00:12:05])'],
+                                  ['Sales channel for moving hospital surplus equipment',
+                                   'Auction about 6,000 pieces monthly and turn the entire inventory every '
+                                   'five weeks',
+                                   'Exclusive hospital agreements with no seller fee, earning a percentage '
+                                   'of gross sales',
+                                   'Centurion Service Group: A TRIMEDX Company ([dUZz08G_Dzc @ 00:00:36]) '
+                                   'vs Berkeley Haas Case Series ([NFqBMUIcgl4 @ 00:01:42])'],
+                                  ['Where clinic buyers should source refurbished machines',
+                                   'Go through Philips, Siemens and similar firms that provide AMC and CMC '
+                                   'support',
+                                   'Visit a showroom and test biomed-certified, patient-ready units before '
+                                   'delivery or pickup',
+                                   'The Doctorpreneur Academy ([GZlFJf6akG0 @ 00:00:23]) vs Used Medical '
+                                   'Equipment ([ezF-botYEqQ @ 00:04:12])'],
+                                  ['Owning physical inventory versus pure online arbitrage',
+                                   'High-ticket drop shipping above $2,000 targeting keyword difficulty of '
+                                   '15 or below',
+                                   'Walk-through video of one warehouse out of three with truckloads '
+                                   'arriving constantly',
+                                   'Joe Verschoor ([-23KPzW6CW8 @ 00:05:35]) vs Used Medical Equipment '
+                                   '([0jN0a_8CpgI @ 00:03:04])'],
+                                  ['Seller entry path into the resale market',
+                                   'Franchise territory bought for a small investment with training and '
+                                   'ongoing support',
+                                   'Free self-managed listing on Go Southern MD with experienced staff '
+                                   'vetting buyers',
+                                   'All States MED ([60julptDir4 @ 00:04:05]) vs Robert Remitz '
+                                   '([_ue3Y22oMAA @ 00:01:05])']]}},
+              {'heading': 'Section 4: Firsthand Failure Modes, Traps & Economics Checks',
+               'paragraphs': ['The most expensive failure Whittemore describes is the lazy test: it works, '
+                              'the lights came on, it must be good, ship it away. They say this is going '
+                              'on all the time, the customer who got the great price often lacks the '
+                              'biomedical team to check the product before it is used on a patient, and '
+                              'because bad news travels faster than good news, reputation will tell '
+                              '[zLW0PtGvqQE @ 00:11:23]. Whittemore also admits that no deal they have '
+                              'done in all their years went without something coming up, whether operator '
+                              'error, a unit nobody plugged in, or a step the shop simply did not cover '
+                              'well [zLW0PtGvqQE @ 00:04:42]. Robert Remitz of Go Southern MD built a free '
+                              'seller-listing service specifically because of calls from people who bought '
+                              'new and used equipment from third parties, did not get exactly what they '
+                              'ordered, and had nobody to contact with questions, warning that a buyer who '
+                              'does not know exactly what they are doing ends up with gear that will not '
+                              'work or is the wrong size [_ue3Y22oMAA @ 00:00:22]. Medinas Health learned '
+                              'that a hospital cannot just list a machine on eBay: biohazard liability '
+                              'issues need documenting before any sale, and the market lacked the '
+                              'transaction trust to close those deals cleanly [NFqBMUIcgl4 @ 00:00:54].',
+                              'Pricing is the next trap. Whittemore explains that the used market lacks '
+                              'the raw-material and R&D cost structure that sets new-equipment prices, so '
+                              'value is negotiated deal by deal; they once gave a buyer a great deal, then '
+                              "the buyer's buddy showed up demanding the same price, which Whittemore "
+                              'could not even replicate by going back out into the market [zLW0PtGvqQE @ '
+                              '00:08:09]. On the rental side, the Earn Your Leisure founder admits some '
+                              'item margins suck and others are not that great, and the math only works '
+                              'because a bedbound patient needs a hospital bed, lift, commode, walker, '
+                              'wheelchair, and sometimes oxygen, so thin items get offset by better ones '
+                              '[hQY0qIkQ-xY @ 00:07:13]. Inventory itself can trap capital. The How to '
+                              'Start a Business that Prints Cash narrator names overstocking obsolete '
+                              'technology that depreciates rapidly as the number one expensive mistake, '
+                              'locking working capital into non-income producing assets, and prescribes '
+                              'high-demand consumables plus just-in-time delivery of heavy equipment '
+                              '[Ahi8z5l5Yao @ 00:01:21]. Jon Sheppard shows the slow-mover version at '
+                              'small scale: a medical mattress that sold fast once listed had sat in a '
+                              'bedroom corner for over a year because they could not be bothered to list '
+                              'it, and by then they had no clue what they paid for it [8meyld3BWGg @ '
+                              '00:07:59].',
+                              'Regulation and platform rules punish operators who ignore them. The Earn '
+                              'Your Leisure founder says medical equipment is more regulated than '
+                              'pharmacy: a state license, accreditation, Medicare, every other insurance '
+                              'plan, and a separate oxygen license, adding up to six and sometimes seven '
+                              'licenses per location, with Florida slower and costlier to license, which '
+                              "they tie to South Florida's history of Medicare fraud [hQY0qIkQ-xY @ "
+                              '00:05:40]. Medicare-primary patients can only get one wheelchair per five '
+                              'years, so their staff run every patient through the system before anything '
+                              'ships [hQY0qIkQ-xY @ 00:07:57]. Joe Verschoor warns that Google ads in this '
+                              'niche can get you in trouble, because Google treats targeting people who '
+                              'might need medical equipment as possible exploitation of elderly or '
+                              "vulnerable users, and adds that no tool's PPC data is reliable, with "
+                              'Semrush often not even close [-23KPzW6CW8 @ 00:16:48]. Jon Sheppard took a '
+                              'return on a bundle a buyer claimed was broken and incomplete, leaving them '
+                              '115 pounds down even though the listing never claimed completeness; the fix '
+                              'was relisting at 150 pounds with explicit wording that pieces may be '
+                              'incomplete or broken, and they note the pump-up medical mattress could come '
+                              'back the same way if it gets popped [8meyld3BWGg @ 00:05:00].'],
+               'table': {'caption': 'Firsthand failure modes and the economics behind them',
+                         'headers': ['Failure Mode',
+                                     'What Happened Firsthand',
+                                     'Economics Check',
+                                     'Expert Source'],
+                         'rows': [['Lazy power-on testing before shipping refurbished units',
+                                   'Lights came on, assumed good, shipped to buyers lacking biomed teams',
+                                   'Bad news travels faster, so reputation decides repeat business volume',
+                                   'Bill Whittemore ([zLW0PtGvqQE @ 00:11:23])'],
+                                  ['Sweetheart pricing deals that cannot be replicated',
+                                   "Gave a great deal, then the buyer's buddy demanded the identical price",
+                                   'Dealer could not rebuy the same unit in market at that price',
+                                   'Bill Whittemore ([zLW0PtGvqQE @ 00:08:09])'],
+                                  ['Buyer return on an honestly described resale bundle',
+                                   'Buyer claimed broken, missing parts despite no completeness claim in '
+                                   'listing',
+                                   '115 pounds refunded, then relisted at 150 pounds with explicit '
+                                   'condition wording',
+                                   'Jon Sheppard Sells ([8meyld3BWGg @ 00:05:00])'],
+                                  ['Google ads policy enforcement in the medical niche',
+                                   'Ads flagged for targeting elderly people or people in need of '
+                                   'equipment',
+                                   'PPC estimates from Semrush are often not even close to correct',
+                                   'Joe Verschoor ([-23KPzW6CW8 @ 00:16:48])'],
+                                  ['Obsolete inventory locking up the working capital',
+                                   'Overstocking rapidly depreciating technology named the number one '
+                                   'expensive mistake',
+                                   'Shift to high-demand consumables and just-in-time heavy equipment '
+                                   'delivery instead',
+                                   'How to Start a Business that Prints Cash ([Ahi8z5l5Yao @ 00:01:21])'],
+                                  ['Multi-license regulatory load carried by every location',
+                                   'Six to seven licenses per location including a separate oxygen license',
+                                   'Florida licenses take longer and cost more after its Medicare fraud '
+                                   'history',
+                                   'Earn Your Leisure ([hQY0qIkQ-xY @ 00:05:40])'],
+                                  ['Disengaged hospital asset managers stalling surplus sourcing',
+                                   'Managers had limited technical knowledge and limited financial '
+                                   'accountability for surplus',
+                                   'Resale stayed low priority because other areas produced greater '
+                                   'revenue gain',
+                                   'Berkeley Haas Case Series ([NFqBMUIcgl4 @ 00:02:55])']]},
+               'callout': {'kind': 'OPERATOR GATE',
+                           'title': 'Four checks before a unit, listing, or ad goes live',
+                           'body': 'Every item below comes from a loss, reversal, or bottleneck a '
+                                   'practitioner hit firsthand. Clear all four before you ship, bill, '
+                                   'list, or spend on ads.',
+                           'items': ['Never ship on a power-on check alone; recheck with a biomed team or '
+                                     'sell it explicitly as is [Bill Whittemore — zLW0PtGvqQE @ 00:12:05].',
+                                     'Run every Medicare-primary patient through the system for the '
+                                     'one-per-five-years rule before delivering a wheelchair [Earn Your '
+                                     'Leisure — hQY0qIkQ-xY @ 00:07:57].',
+                                     'Write condition limits and clear pictures into the listing before it '
+                                     'goes live, because returns still hit sellers who claimed nothing '
+                                     '[Jon Sheppard Sells — 8meyld3BWGg @ 00:03:44].',
+                                     'Expect Google policy trouble when advertising to people who need '
+                                     'medical equipment, and filter the word used as a negative keyword '
+                                     '[Joe Verschoor — -23KPzW6CW8 @ 00:17:03].']}}],
+ 'pull_quote': '"If you make a mistake and you do it sloppy and you don\'t take the time to check the '
+               'product thoroughly and say oh yeah it works, lights came on, must be good, and ship it '
+               'away, this is going on all the time." Attributed to Bill Whittemore (zLW0PtGvqQE @ '
+               '00:11:23).',
+ 'diagram_id': 'diag-01',
+ 'action_checklist': ['Before asking anyone for a sale assessment, list year, make, model, usage such as '
+                      'tube age and scan seconds, configuration, and installed software licensing [Block '
+                      'Imaging — 4suol4m0dq4 @ 00:01:19].',
+                      'Shoot one glamour shot of the whole system plus the serial tag, computers, gantry '
+                      'front, back, and side, and every included accessory [Block Imaging — 4suol4m0dq4 @ '
+                      '00:02:26].',
+                      'Make your first hire a salesperson and aim that hire at referral sources like rehab '
+                      'directors who control large equipment volume [Earn Your Leisure — hQY0qIkQ-xY @ '
+                      '00:09:08].',
+                      'Land your first 10 paying customers through direct partnerships with regional home '
+                      'health agencies and local nursing facilities [How to Start a Business that Prints '
+                      'Cash — Ahi8z5l5Yao @ 00:00:49].',
+                      'On hospital liquidations, walk and document every department, then sell the pieces '
+                      'for maximum value [Used Medical Equipment — IA2PW_vSjBc @ 00:03:30].',
+                      'For SEO, chase specific long-tail keywords with at least 1,000 monthly searches and '
+                      'keyword difficulty of 15 or less [Joe Verschoor — -23KPzW6CW8 @ 00:12:47].'],
+ 'statutory_citations': [{'title': 'Earn Your Leisure — How To Build a Medical Equipment Business '
+                                   '[00:08:26]',
+                          'url': 'https://www.youtube.com/watch?v=hQY0qIkQ-xY&t=506s',
+                          'relevance': 'Primary practitioner testimony on the 13-month Medicare rental and '
+                                       're-rent model behind insurance-billed equipment.'},
+                         {'title': 'Bill Whittemore — The used medical equipment marketplace. [00:12:05]',
+                          'url': 'https://www.youtube.com/watch?v=zLW0PtGvqQE&t=725s',
+                          'relevance': 'Primary practitioner testimony on as-is brokering versus '
+                                       'biomed-rechecked refurbishment and its reputation risk.'},
+                         {'title': 'Centurion Service Group: A TRIMEDX Company — Medical Equipment '
+                                   'Auctions [00:00:36]',
+                          'url': 'https://www.youtube.com/watch?v=dUZz08G_Dzc&t=36s',
+                          'relevance': 'Primary practitioner testimony on auction volume, five-week '
+                                       'inventory turns, and container-fill buying.'},
+                         {'title': 'Berkeley Haas Case Series — Medinas Health: Building a Medical '
+                                   'Equipment Marketplace | Berkeley Haas Case Series [00:01:42]',
+                          'url': 'https://www.youtube.com/watch?v=NFqBMUIcgl4&t=102s',
+                          'relevance': 'Primary practitioner testimony on the no-seller-fee, '
+                                       'percentage-of-gross marketplace model and hospital sourcing '
+                                       'hurdles.'}],
+ 'source_citations': [{'source_type': 'video_pro_tip',
+                       'video_id': 'hQY0qIkQ-xY',
+                       'title': 'How To Build a Medical Equipment Business',
+                       'channel': 'Earn Your Leisure',
+                       'author': 'Earn Your Leisure',
+                       'text': "It's a 13-month rental for most equipment, and if a patient passes away or "
+                               "goes in the hospital or no longer needs it you pick it up because they're "
+                               'rentals, then you rerent the same item to someone else.',
+                       'tip': "It's a 13-month rental for most equipment, and if a patient passes away or "
+                              "goes in the hospital or no longer needs it you pick it up because they're "
+                              'rentals, then you rerent the same item to someone else.',
+                       'timestamp': 506,
+                       'timestamp_seconds': 506,
+                       'timestamp_label': '[00:08:26]',
+                       'url': 'https://www.youtube.com/watch?v=hQY0qIkQ-xY&t=506s',
+                       'markdown': '[00:08:26](https://www.youtube.com/watch?v=hQY0qIkQ-xY&t=506s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q1.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': '0jN0a_8CpgI',
+                       'title': 'Used Medical Equipment Company Current Inventory June 2026!',
+                       'channel': 'Used Medical Equipment',
+                       'author': 'Used Medical Equipment',
+                       'text': "If you're looking for medical equipment, truckloads of stuff coming in, "
+                               'this is just one warehouse out of three.',
+                       'tip': "If you're looking for medical equipment, truckloads of stuff coming in, "
+                              'this is just one warehouse out of three.',
+                       'timestamp': 184,
+                       'timestamp_seconds': 184,
+                       'timestamp_label': '[00:03:04]',
+                       'url': 'https://www.youtube.com/watch?v=0jN0a_8CpgI&t=184s',
+                       'markdown': '[00:03:04](https://www.youtube.com/watch?v=0jN0a_8CpgI&t=184s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q1.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': '8meyld3BWGg',
+                       'title': 'Reselling Medical Equipment Is Where The BIG MONEY Is...MUST WATCH VIDEO',
+                       'channel': 'Jon Sheppard Sells',
+                       'author': 'Jon Sheppard Sells',
+                       'text': "If you're not buying medical stuff, you need to start buying it because "
+                               "out of all the items that I've picked up throughout my years of reselling, "
+                               'medical stuff has probably gave me the biggest return in profits and no '
+                               'one seems to pick it up.',
+                       'tip': "If you're not buying medical stuff, you need to start buying it because out "
+                              "of all the items that I've picked up throughout my years of reselling, "
+                              'medical stuff has probably gave me the biggest return in profits and no one '
+                              'seems to pick it up.',
+                       'timestamp': 19,
+                       'timestamp_seconds': 19,
+                       'timestamp_label': '[00:00:19]',
+                       'url': 'https://www.youtube.com/watch?v=8meyld3BWGg&t=19s',
+                       'markdown': '[00:00:19](https://www.youtube.com/watch?v=8meyld3BWGg&t=19s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q1.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': '_ue3Y22oMAA',
+                       'title': 'How to Sell or Buy Used Durable Medical Equipment.',
+                       'channel': 'Robert Remitz',
+                       'author': 'Robert Remitz',
+                       'text': "When you're talking about medical equipment you're talking about a life "
+                               'and death situation sometimes, or something that if you buy it you have to '
+                               "know exactly what you're doing or else it won't work or it's the wrong "
+                               'size.',
+                       'tip': "When you're talking about medical equipment you're talking about a life and "
+                              'death situation sometimes, or something that if you buy it you have to know '
+                              "exactly what you're doing or else it won't work or it's the wrong size.",
+                       'timestamp': 132,
+                       'timestamp_seconds': 132,
+                       'timestamp_label': '[00:02:12]',
+                       'url': 'https://www.youtube.com/watch?v=_ue3Y22oMAA&t=132s',
+                       'markdown': '[00:02:12](https://www.youtube.com/watch?v=_ue3Y22oMAA&t=132s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q1.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'ezF-botYEqQ',
+                       'title': 'Used Medical Equipment for Sale USA',
+                       'channel': 'Used Medical Equipment',
+                       'author': 'Used Medical Equipment',
+                       'text': "One thing that we've done is try to put equipment that's on display that's "
+                               'biomed certified patient ready, and it allows doctors to come in and see '
+                               "all the equipment that's available.",
+                       'tip': "One thing that we've done is try to put equipment that's on display that's "
+                              'biomed certified patient ready, and it allows doctors to come in and see '
+                              "all the equipment that's available.",
+                       'timestamp': 93,
+                       'timestamp_seconds': 93,
+                       'timestamp_label': '[00:01:33]',
+                       'url': 'https://www.youtube.com/watch?v=ezF-botYEqQ&t=93s',
+                       'markdown': '[00:01:33](https://www.youtube.com/watch?v=ezF-botYEqQ&t=93s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q1.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'dUZz08G_Dzc',
+                       'title': 'Medical Equipment Auctions',
+                       'channel': 'Centurion Service Group: A TRIMEDX Company',
+                       'author': 'Centurion Service Group: A TRIMEDX Company',
+                       'text': 'We sell both surplus equipment and do trade-in programs for manufacturers, '
+                               'and we turn the entire inventory every 5 weeks.',
+                       'tip': 'We sell both surplus equipment and do trade-in programs for manufacturers, '
+                              'and we turn the entire inventory every 5 weeks.',
+                       'timestamp': 36,
+                       'timestamp_seconds': 36,
+                       'timestamp_label': '[00:00:36]',
+                       'url': 'https://www.youtube.com/watch?v=dUZz08G_Dzc&t=36s',
+                       'markdown': '[00:00:36](https://www.youtube.com/watch?v=dUZz08G_Dzc&t=36s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q1.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'NFqBMUIcgl4',
+                       'title': 'Medinas Health: Building a Medical Equipment Marketplace | Berkeley Haas '
+                                'Case Series',
+                       'channel': 'Berkeley Haas Case Series',
+                       'author': 'Berkeley Haas Case Series',
+                       'text': "Medinas Health would not charge hospitals a seller's fee as some "
+                               'competitors did but would instead earn revenue by taking a percentage of '
+                               'the gross sales of each piece of equipment.',
+                       'tip': "Medinas Health would not charge hospitals a seller's fee as some "
+                              'competitors did but would instead earn revenue by taking a percentage of '
+                              'the gross sales of each piece of equipment.',
+                       'timestamp': 102,
+                       'timestamp_seconds': 102,
+                       'timestamp_label': '[00:01:42]',
+                       'url': 'https://www.youtube.com/watch?v=NFqBMUIcgl4&t=102s',
+                       'markdown': '[00:01:42](https://www.youtube.com/watch?v=NFqBMUIcgl4&t=102s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q1.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'zLW0PtGvqQE',
+                       'title': 'The used medical equipment marketplace.',
+                       'channel': 'Bill Whittemore',
+                       'author': 'Bill Whittemore',
+                       'text': "If you make a mistake and you do it sloppy and you don't take the time to "
+                               'check the product thoroughly and say oh yeah it works, lights came on, '
+                               'must be good, and ship it away, this is going on all the time.',
+                       'tip': "If you make a mistake and you do it sloppy and you don't take the time to "
+                              'check the product thoroughly and say oh yeah it works, lights came on, must '
+                              'be good, and ship it away, this is going on all the time.',
+                       'timestamp': 683,
+                       'timestamp_seconds': 683,
+                       'timestamp_label': '[00:11:23]',
+                       'url': 'https://www.youtube.com/watch?v=zLW0PtGvqQE&t=683s',
+                       'markdown': '[00:11:23](https://www.youtube.com/watch?v=zLW0PtGvqQE&t=683s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q1.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'Ahi8z5l5Yao',
+                       'title': 'How To Start A Medical Supply Business In Florida',
+                       'channel': 'How to Start a Business that Prints Cash',
+                       'author': 'How to Start a Business that Prints Cash',
+                       'text': 'The number one expensive mistake is overstocking obsolete technology that '
+                               'depreciates rapidly, effectively locking your working capital into static '
+                               'non-income producing inventory assets.',
+                       'tip': 'The number one expensive mistake is overstocking obsolete technology that '
+                              'depreciates rapidly, effectively locking your working capital into static '
+                              'non-income producing inventory assets.',
+                       'timestamp': 81,
+                       'timestamp_seconds': 81,
+                       'timestamp_label': '[00:01:21]',
+                       'url': 'https://www.youtube.com/watch?v=Ahi8z5l5Yao&t=81s',
+                       'markdown': '[00:01:21](https://www.youtube.com/watch?v=Ahi8z5l5Yao&t=81s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q1.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': '-23KPzW6CW8',
+                       'title': 'Medical Equipment: 7-Figure Niche or Waste of Time?',
+                       'channel': 'Joe Verschoor',
+                       'author': 'Joe Verschoor',
+                       'text': "You can kind of get in trouble with Google when you're trying to advertise "
+                               "these things because they think that you're trying to exploit people like "
+                               'elderly people or people in need.',
+                       'tip': "You can kind of get in trouble with Google when you're trying to advertise "
+                              "these things because they think that you're trying to exploit people like "
+                              'elderly people or people in need.',
+                       'timestamp': 1008,
+                       'timestamp_seconds': 1008,
+                       'timestamp_label': '[00:16:48]',
+                       'url': 'https://www.youtube.com/watch?v=-23KPzW6CW8&t=1008s',
+                       'markdown': '[00:16:48](https://www.youtube.com/watch?v=-23KPzW6CW8&t=1008s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q1.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': '60julptDir4',
+                       'title': 'All States MED Franchising - Medical Equipment Sales Franchise '
+                                'Opportunity',
+                       'channel': 'All States MED',
+                       'author': 'All States MED',
+                       'text': 'Our expertise in the medical equipment field sets us apart from the rest, '
+                               'enabling us to supply brand new options along with used and refurbished '
+                               'options at a quarter of the price.',
+                       'tip': 'Our expertise in the medical equipment field sets us apart from the rest, '
+                              'enabling us to supply brand new options along with used and refurbished '
+                              'options at a quarter of the price.',
+                       'timestamp': 107,
+                       'timestamp_seconds': 107,
+                       'timestamp_label': '[00:01:47]',
+                       'url': 'https://www.youtube.com/watch?v=60julptDir4&t=107s',
+                       'markdown': '[00:01:47](https://www.youtube.com/watch?v=60julptDir4&t=107s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q1.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'GZlFJf6akG0',
+                       'title': 'Should we buy refurbished medical equipment.',
+                       'channel': 'The Doctorpreneur Academy',
+                       'author': 'The Doctorpreneur Academy',
+                       'text': 'You may not directly import from the USA or UK or Germany because then who '
+                               'will service you in case of a problem, so go through the Philips, Siemens '
+                               'kind of people who are already doing the refurbished thing.',
+                       'tip': 'You may not directly import from the USA or UK or Germany because then who '
+                              'will service you in case of a problem, so go through the Philips, Siemens '
+                              'kind of people who are already doing the refurbished thing.',
+                       'timestamp': 56,
+                       'timestamp_seconds': 56,
+                       'timestamp_label': '[00:00:56]',
+                       'url': 'https://www.youtube.com/watch?v=GZlFJf6akG0&t=56s',
+                       'markdown': '[00:00:56](https://www.youtube.com/watch?v=GZlFJf6akG0&t=56s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q1.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': '4suol4m0dq4',
+                       'title': 'Sell Us Your Old Medical Equipment and Get the Most Value',
+                       'channel': 'Block Imaging',
+                       'author': 'Block Imaging',
+                       'text': 'Even though something is two to three generations old there still could be '
+                               "components on that that could be used to service equipment that's only a "
+                               'generation old, and so there still is some value.',
+                       'tip': 'Even though something is two to three generations old there still could be '
+                              "components on that that could be used to service equipment that's only a "
+                              'generation old, and so there still is some value.',
+                       'timestamp': 51,
+                       'timestamp_seconds': 51,
+                       'timestamp_label': '[00:00:51]',
+                       'url': 'https://www.youtube.com/watch?v=4suol4m0dq4&t=51s',
+                       'markdown': '[00:00:51](https://www.youtube.com/watch?v=4suol4m0dq4&t=51s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q1.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'z8FeVDQ8g_U',
+                       'title': 'How to Start a Medical Supply Business Step by Step Guide for Beginners '
+                                'in 2025',
+                       'channel': 'ELEGANCEPRENEUR',
+                       'author': 'ELEGANCEPRENEUR',
+                       'text': 'Medical supply businesses often require specific licenses like a Wholesale '
+                               "Distributor license, so check with your State's Health Department for "
+                               'details.',
+                       'tip': 'Medical supply businesses often require specific licenses like a Wholesale '
+                              "Distributor license, so check with your State's Health Department for "
+                              'details.',
+                       'timestamp': 90,
+                       'timestamp_seconds': 90,
+                       'timestamp_label': '[00:01:30]',
+                       'url': 'https://www.youtube.com/watch?v=z8FeVDQ8g_U&t=90s',
+                       'markdown': '[00:01:30](https://www.youtube.com/watch?v=z8FeVDQ8g_U&t=90s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q1.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'BuQ4F5q1wEE',
+                       'title': 'Refurbished Medical Equipment Market | Exactitude Consultancy Reports',
+                       'channel': 'Exactitude Consultancy',
+                       'author': 'Exactitude Consultancy',
+                       'text': 'Customers of refurbished medical gadgets include not just tiny hospitals '
+                               'with limited finances but also prestigious medical institutions.',
+                       'tip': 'Customers of refurbished medical gadgets include not just tiny hospitals '
+                              'with limited finances but also prestigious medical institutions.',
+                       'timestamp': 57,
+                       'timestamp_seconds': 57,
+                       'timestamp_label': '[00:00:57]',
+                       'url': 'https://www.youtube.com/watch?v=BuQ4F5q1wEE&t=57s',
+                       'markdown': '[00:00:57](https://www.youtube.com/watch?v=BuQ4F5q1wEE&t=57s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q1.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'IA2PW_vSjBc',
+                       'title': 'Hospital Medical Equipment Liquidator',
+                       'channel': 'Used Medical Equipment',
+                       'author': 'Used Medical Equipment',
+                       'text': 'No project is too big or too small; we do rooms, 40, 50, 60 patient rooms, '
+                               'up to 300, 400, 500 patient room hospitals.',
+                       'tip': 'No project is too big or too small; we do rooms, 40, 50, 60 patient rooms, '
+                              'up to 300, 400, 500 patient room hospitals.',
+                       'timestamp': 227,
+                       'timestamp_seconds': 227,
+                       'timestamp_label': '[00:03:47]',
+                       'url': 'https://www.youtube.com/watch?v=IA2PW_vSjBc&t=227s',
+                       'markdown': '[00:03:47](https://www.youtube.com/watch?v=IA2PW_vSjBc&t=227s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q1.'}]}

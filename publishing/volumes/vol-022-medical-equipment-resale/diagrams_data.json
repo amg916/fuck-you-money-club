@@ -1,332 +1,333 @@
 {
   "diagrams": [
     {
-      "diagram_id": "diag-01-traceable-resale-workflow",
-      "chart_type": "process_flow",
-      "title": "From Retired Device to Accepted Resale",
-      "subtitle": "Five evidence-backed stages for diagnostic, surgical, veterinary, and aesthetic equipment.",
+      "diagram_id": "diag-01-surplus-to-resale-engine",
       "chapter_number": 1,
-      "epistemic_tag": "operating_framework",
-      "assumptions_note": "Stage values indicate sequence, not elapsed time or conversion. The canonical time to first deal is 2–7 months. Inventory tracking and service-history indexing automate records, not physical testing or device-specific regulatory classification.",
-      "caption": "Keep one serial-level record from sourcing through buyer acceptance; never substitute a cosmetic refurbishment claim for functional evidence.",
+      "chart_type": "process_flow",
+      "title": "The Surplus-to-Resale Engine",
+      "subtitle": "Buy surplus cheap, verify it, document it, then resell or rerent",
+      "caption": "Operators converge on one loop. Centurion moves about 6,000 pieces a month and turns its entire inventory every 5 weeks, while the Earn Your Leisure founder rerents returned units on 13-month Medicare rentals.",
+      "assumptions_note": "Step order follows the operator gates and quotes attributed below; no throughput or margin figures beyond those stated by the speakers are implied.",
+      "note": "Attributed to Centurion Service Group (A TRIMEDX Company), Bill Whittemore, Jon Sheppard Sells, Used Medical Equipment, and Earn Your Leisure.",
       "stages": [
         {
-          "label": "Source against demand",
-          "value": "1 | Buyer need and asset identity",
-          "numeric_value": 1.0,
-          "detail": "Record model, serial number, intended use, accessories, software revision, asking price, and two dated buyer-demand observations. Check recalls and service support before committing inventory cash."
+          "step": "01",
+          "label": "Source hospital surplus and trade-ins",
+          "value": "Step 1",
+          "detail": "Centurion represents well over 1,000 hospitals, surgery centers and manufacturers and moves about 6,000 pieces a month."
         },
         {
-          "label": "Establish transfer rights",
-          "value": "2 | Ownership and disposition evidence",
-          "numeric_value": 2.0,
-          "detail": "Match seller authority to the serial list, inspect relevant UCC filings, and obtain required secured-party release or disposition authorization. UCC 9-315 means sale alone does not necessarily remove a security interest."
+          "step": "02",
+          "label": "Recheck with a biomed team",
+          "value": "Step 2",
+          "detail": "Bill Whittemore: never ship on a power-on check alone; recheck with biomed or sell it explicitly as is."
         },
         {
-          "label": "Quarantine and sanitize",
-          "value": "3 | Separate biological and data controls",
-          "numeric_value": 3.0,
-          "detail": "Require device-compatible decontamination documentation and inspect every data-bearing component. Record sanitization method and verification separately; do not assume a factory reset removes stored patient records or that surface cleaning addresses internal contamination."
+          "step": "03",
+          "label": "Write condition limits into the listing",
+          "value": "Step 3",
+          "detail": "Jon Sheppard Sells: add condition limits and clear pictures before the listing goes live, because returns still hit sellers."
         },
         {
-          "label": "Restore and verify",
-          "value": "4 | Qualified biomed acceptance evidence",
-          "numeric_value": 4.0,
-          "detail": "Use model-specific test procedures, calibrated instruments, parts traceability, and measured acceptance limits. Evaluate servicing versus remanufacturing before changes to performance, safety specifications, or intended use; investigate duties under 21 CFR Parts 807 and 820 when triggered."
+          "step": "04",
+          "label": "Display patient-ready inventory",
+          "value": "Step 4",
+          "detail": "Used Medical Equipment puts biomed certified, patient-ready equipment on display so doctors can see what is available."
         },
         {
-          "label": "Deliver and close",
-          "value": "5 | Settled proceeds and buyer acceptance",
-          "numeric_value": 5.0,
-          "detail": "Confirm site readiness, insured freight, installation scope, payment settlement, and signed acceptance. Archive test results, transfer records, warranty terms, and service history against the serial number; recognize equipment resale proceeds rather than treating refundable deposits as completed revenue."
+          "step": "05",
+          "label": "Resell or rerent the unit",
+          "value": "Step 5",
+          "detail": "Earn Your Leisure bills a 13-month rental for most equipment, picks it up when no longer needed, and rerents the same item."
         }
       ]
     },
     {
-      "diagram_id": "diag-02-serial-lot-conversion-funnel",
-      "chart_type": "funnel",
-      "title": "A Cohort Funnel That Rejects Weak Inventory Early",
-      "subtitle": "One acquisition cohort; each later stage is a subset of the preceding stage.",
+      "diagram_id": "diag-02-pathway-clock-vs-calendar",
       "chapter_number": 6,
-      "epistemic_tag": "illustrative_model",
-      "assumptions_note": "Illustrative cohort of 100 distinct candidate lots followed over 2–7 months, not a monthly sales forecast. One opportunity identifier persists through all stages; repeat inquiries do not create new lots. Counts do not establish prices, annual revenue, or realized margin.",
-      "caption": "Four completed sales from 100 sourced opportunities represent 4% cohort conversion, not four sales during the launch sprint.",
+      "chart_type": "funnel",
+      "title": "Pathway Clock vs. Calendar",
+      "subtitle": "FDA review-clock targets against elapsed days in practice",
+      "caption": "leanRAQA's pathway table shows the FDA clock understating real elapsed time on every route, with the 510(k) at a 90-day clock but about 200 days in practice.",
+      "assumptions_note": "Elapsed-day values are approximate figures from the leanRAQA pathway table; the PMA 180-day clock is cited in the conversion text rather than plotted as its own stage.",
+      "note": "Attributed to leanRAQA, with hold-letter and fee guidance from Prime Path Medtech and Registrar Corp.",
       "stages": [
         {
-          "label": "Identified resale lots",
-          "value": "100 lots | Starting acquisition cohort",
-          "numeric_value": 100.0,
-          "detail": "Log 100 distinct serial-defined lots with a named seller, device family, location, asking terms, and evidence of ownership authority; remove duplicate listings before counting."
+          "label": "PMA elapsed in practice",
+          "value": 800,
+          "display": "~800 days",
+          "conversion": "vs 180-day FDA clock",
+          "detail": "leanRAQA puts PMA at about 800 actual days; only PMA devices are 'approved.'"
         },
         {
-          "label": "Documented screening passes",
-          "value": "60 lots | 60% of starting cohort",
-          "numeric_value": 60.0,
-          "detail": "Retain 60 of the original 100 after checking provenance, recall status, manufacturer support, and availability of decontamination and service records; exclude undocumented inventory."
+          "label": "De Novo elapsed in practice",
+          "value": 400,
+          "display": "~400 days",
+          "conversion": "vs 120-day FDA clock",
+          "detail": "leanRAQA warns that words like 'novel' push a predicate comparison toward De Novo."
         },
         {
-          "label": "Technical and economic passes",
-          "value": "30 lots | 50% of preceding stage",
-          "numeric_value": 30.0,
-          "detail": "Retain 30 of those 60 after qualified inspection, landed-cost estimates, parts availability, and buyer-price comparisons; reject lots whose credible repair exposure erases contribution."
+          "label": "510(k) elapsed in practice",
+          "value": 200,
+          "display": "~200 days",
+          "conversion": "vs 90-day FDA clock",
+          "detail": "The 510(k) is the dominant route; Registrar Corp quotes a $24,335 standard FY2025 fee."
         },
         {
-          "label": "Acquired buyer-backed lots",
-          "value": "12 lots | 40% of preceding stage",
-          "numeric_value": 12.0,
-          "detail": "Acquire 12 of those 30 within the working-capital limit after documenting qualified buyer interest and enforceable purchase terms; buyer interest alone is neither a sale nor cash."
+          "label": "De Novo on the FDA clock",
+          "value": 120,
+          "display": "120 days",
+          "conversion": "Clock target; ~400 days actual",
+          "detail": "Lock the exact three-letter product code before filing to avoid an RTA refusal."
         },
         {
-          "label": "Accepted and settled sales",
-          "value": "4 lots | 33.3% of preceding stage",
-          "numeric_value": 4.0,
-          "detail": "Close four of the 12 acquired lots after testing, delivery, acceptance, and payment settlement. The other eight remain open cohort inventory or documented dispositions; they are not counted as completed sales."
+          "label": "510(k) on the FDA clock",
+          "value": 90,
+          "display": "90 days",
+          "conversion": "Clock target; ~200 days actual",
+          "detail": "Prime Path Medtech: an unpaid user fee triggers a hold letter before review starts."
         }
       ]
     },
     {
-      "diagram_id": "diag-03-base-case-profit-waterfall",
-      "chart_type": "waterfall",
-      "title": "Base-Case Gross Proceeds to Owner Net",
-      "subtitle": "$1,025,000 annual gross equipment resale proceeds → $164,000 annual owner net.",
+      "diagram_id": "diag-03-dental-service-rate-ladder",
       "chapter_number": 3,
-      "epistemic_tag": "illustrative_model",
-      "assumptions_note": "USD per year. First and last bars are absolute totals; the middle four bars are signed deductions. Acquisition, refurbishment, and delivery are modeled direct costs, separate from operating overhead. The cost allocation is illustrative; canonical revenue, net margin, and owner net are fixed. No unlisted residual deduction is assumed.",
-      "caption": "$1,025,000 − $574,000 − $102,500 − $41,000 − $143,500 = $164,000, exactly 16.0% of gross resale proceeds. Gross proceeds are operator equipment sales, not a brokerage fee or the buyer's downstream clinical receipts.",
-      "stages": [
+      "chart_type": "waterfall",
+      "title": "Dental Service Rate Ladder",
+      "subtitle": "Bright Idea Dental Repair rate card, from after-hours call to launch rate",
+      "caption": "Jason of Bright Idea Dental Repair launched at $150 an hour, now bills $175 regular and $225 after hours, plus $75 travel beyond 30 minutes, invoiced on labor, parts, travel and shipping lines.",
+      "assumptions_note": "The opening bar adds the reported $225 after-hours rate and $75 travel line; step-downs are the differences between reported rates. Parts and shipping lines are excluded because no figures were given.",
+      "note": "Attributed to Jason of Bright Idea Dental Repair on the Better Biomed Channel.",
+      "bars": [
         {
-          "label": "Gross resale proceeds",
-          "value": "$1,025,000 | Opening total, 100.0%",
-          "numeric_value": 1025000.0,
-          "detail": "Canonical Base-Case annual equipment resale revenue. Recognize sales under the operator's applicable accounting policy; exclude pass-through sales taxes and refundable deposits from this illustrative revenue total."
+          "label": "After-hours hour plus travel",
+          "value": 300,
+          "display": "$225 + $75 travel",
+          "kind": "total"
         },
         {
-          "label": "Equipment acquisition",
-          "value": "−$574,000 | 56.0% of gross proceeds",
-          "numeric_value": -574000.0,
-          "detail": "Cost of equipment sold, including purchase premiums assigned to those units; remaining bridge value is $451,000. Unsold purchases stay in inventory rather than becoming current-period cost of sold equipment."
+          "label": "Travel fee beyond 30 minutes",
+          "value": 75,
+          "display": "-$75",
+          "kind": "deduction"
         },
         {
-          "label": "Refurbishment and biomed QA",
-          "value": "−$102,500 | 10.0% of gross proceeds",
-          "numeric_value": -102500.0,
-          "detail": "Parts, direct contractor bench labor, calibration, documented decontamination, and unit-level testing assigned to sold units; remaining bridge value is $348,500. Do not charge the same contractor invoice again within overhead."
+          "label": "After-hours premium",
+          "value": 50,
+          "display": "-$50",
+          "kind": "deduction"
         },
         {
-          "label": "Delivery and transaction costs",
-          "value": "−$41,000 | 4.0% of gross proceeds",
-          "numeric_value": -41000.0,
-          "detail": "Crating, insured freight, payment charges, and modeled sale-related warranty expense; remaining bridge value is $307,500. Assign warranty exposure consistently and avoid counting both the provision and settlement as separate costs."
+          "label": "Regular hourly labor rate",
+          "value": 175,
+          "display": "$175/hr",
+          "kind": "result"
         },
         {
-          "label": "Pod and operating overhead",
-          "value": "−$143,500 | 14.0% of gross proceeds",
-          "numeric_value": -143500.0,
-          "detail": "Loaded payroll, premises, insurance, software, selling expense, and administration consume $143,500 annually, approximately $11,958 monthly within the $4,000–$18,000 canonical operating range. This is a budget envelope requiring local staffing validation."
+          "label": "Gap back to launch pricing",
+          "value": 25,
+          "display": "-$25",
+          "kind": "deduction"
         },
         {
-          "label": "Annual owner net profit",
-          "value": "$164,000 | Closing total, 16.0%",
-          "numeric_value": 164000.0,
-          "detail": "Canonical Base-Case modeled owner net, with no additional deduction invented for an unspecified tax or funding structure. Reference scenarios remain $250,000 × 10% = $25,000 and $1,800,000 × 22% = $396,000; owner net is not gross margin."
+          "label": "Launch hourly labor rate",
+          "value": 150,
+          "display": "$150/hr",
+          "kind": "result"
         }
       ]
     },
     {
-      "diagram_id": "diag-04-specialty-contribution-yields",
-      "chart_type": "horizontal_bars",
-      "title": "Compare Contribution Yield Before Buying",
-      "subtitle": "Five illustrative specialty and settlement combinations, measured on equal $10,000 sales.",
+      "diagram_id": "diag-04-used-vs-oem-parts-pricing",
       "chapter_number": 2,
-      "epistemic_tag": "illustrative_model",
-      "assumptions_note": "Each numeric value is a percentage of a hypothetical $10,000 sale remaining after equipment acquisition, refurbishment, freight, transaction costs, and modeled warranty expense, before shared overhead. These are screening examples, not observed market yields or scenario net margins. Payment method alone does not determine yield.",
-      "caption": "Use quoted unit costs to replace these assumptions. The Base-Case waterfall has 30% contribution before 14% overhead; these specialty bars are not a weighted revenue mix or a replacement scorecard.",
-      "stages": [
+      "chart_type": "horizontal_bars",
+      "title": "Used Gear vs. OEM Pricing",
+      "subtitle": "What a hospital biomed paid on eBay against OEM quotes and trade credit",
+      "unit": "USD",
+      "caption": "Better Biomed Channel documents $200-$300 eBay buys replacing $1,200-$2,200 OEM parts and repairs, and a camera-head trade-in loop that saved $10,000-plus.",
+      "assumptions_note": "Where the speaker gave a range, the typical marker sits at the range midpoint; single reported prices use the same value for min, max and typical.",
+      "note": "Attributed to the Better Biomed Channel; Storz trade credit as described by the same speaker.",
+      "bars": [
         {
-          "label": "Diagnostic ultrasound with bank settlement",
-          "value": "32% contribution | $3,200 per $10,000 sale",
-          "numeric_value": 32.0,
-          "detail": "$10,000 sale less $5,400 acquisition, $900 refurbishment, and $500 delivery, payment, and warranty costs leaves $3,200. Test probes for defects and verify software-license transfer before accepting the apparent spread."
+          "label": "Used part bought on eBay",
+          "min": 200,
+          "max": 300,
+          "typical": 250,
+          "display": "$200-$300"
         },
         {
-          "label": "Surgical instrument sets with bank settlement",
-          "value": "35% contribution | $3,500 per $10,000 sale",
-          "numeric_value": 35.0,
-          "detail": "$10,000 sale less $4,700 acquisition, $1,300 refurbishment, and $500 delivery, payment, and warranty costs leaves $3,500. Confirm set completeness and reusable-device instructions; exclude single-use reprocessing from this illustration."
+          "label": "Used camera-head box on eBay",
+          "min": 800,
+          "max": 800,
+          "typical": 800,
+          "display": "~$800"
         },
         {
-          "label": "Veterinary monitors with bank settlement",
-          "value": "28% contribution | $2,800 per $10,000 sale",
-          "numeric_value": 28.0,
-          "detail": "$10,000 sale less $5,600 acquisition, $1,000 refurbishment, and $600 delivery, payment, and warranty costs leaves $2,800. Verify intended animal use, compatible accessories, and service access rather than assuming human-device equivalence."
+          "label": "OEM part or repair quote",
+          "min": 1200,
+          "max": 2200,
+          "typical": 1700,
+          "display": "$1,200-$2,200"
         },
         {
-          "label": "Aesthetic laser with card settlement",
-          "value": "24% contribution | $2,400 per $10,000 sale",
-          "numeric_value": 24.0,
-          "detail": "$10,000 sale less $5,500 acquisition, $1,300 refurbishment, and $800 delivery, card, and warranty costs leaves $2,400. Validate handpiece life, energy output, destination requirements, and dispute exposure before releasing equipment."
+          "label": "Whole used tower on eBay",
+          "min": 2500,
+          "max": 2500,
+          "typical": 2500,
+          "display": "$2,500"
         },
         {
-          "label": "Diagnostic cart with third-party lender settlement",
-          "value": "30% contribution | $3,000 per $10,000 sale",
-          "numeric_value": 30.0,
-          "detail": "$10,000 sale less $5,300 acquisition, $1,100 refurbishment, and $600 delivery, settlement, and warranty costs leaves $3,000. Confirm lender acceptance conditions, payout timing, and recourse terms; funding approval alone is not settled proceeds."
+          "label": "Storz trade credit per head",
+          "min": 2500,
+          "max": 2500,
+          "typical": 2500,
+          "display": "$2,500 credit"
         }
       ]
     },
     {
-      "diagram_id": "diag-05-device-release-decision-tree",
-      "chart_type": "decision_tree",
-      "title": "Four Checks Before Purchase or Release",
-      "subtitle": "A failed check moves the lot into documented hold or rejection, never an automatic exception.",
+      "diagram_id": "diag-05-qmsr-inspection-readiness",
       "chapter_number": 5,
-      "epistemic_tag": "operating_framework",
-      "assumptions_note": "Numeric values indicate check order, not risk scores. Each affirmative branch advances to the next check; unresolved evidence holds the lot, and an unremediable defect rejects it. Complete purchase-stage checks before commitment and repeat release-stage checks before shipment. Requirements depend on device, activity, destination, and data role.",
-      "caption": "Keep title, device regulation, patient-data handling, and biological safety as distinct evidence tracks. Passing one does not satisfy another.",
-      "stages": [
+      "chart_type": "decision_tree",
+      "title": "QMSR Inspection-Readiness Gates",
+      "subtitle": "Four checks before the February 2, 2026 hard switch bites",
+      "caption": "The QMSR incorporates ISO 13485:2016 by reference, makes risk the thread investigators pull, and opens management review and audit records to inspection.",
+      "assumptions_note": "Gate sequence reflects the operator gates attributed below; an ISO or MDSAP certificate does not exempt a firm from any gate.",
+      "note": "Attributed to AMORIT EDUCATION, Regulatory Compliance Associates, Matrix One, Medmarc, and Greenlight Guru.",
+      "nodes": [
         {
-          "label": "Clear title and transfer authority?",
-          "value": "Yes: advance | Unresolved: hold purchase",
-          "numeric_value": 1.0,
-          "detail": "Match seller authority, asset serials, sale terms, and relevant lien searches. Under UCC 9-315, a security interest can survive a sale unless disposition is authorized or another rule applies. Obtain applicable release evidence; reject assets the seller cannot lawfully transfer."
+          "gate": "G1",
+          "question": "Is the quality system already built on ISO 13485:2016?",
+          "pass_next": "G2",
+          "fail_action": "Re-baseline now; firms complying only with Part 820 face significant change."
         },
         {
-          "label": "Correct device and activity classification?",
-          "value": "Yes: advance | Duty unresolved: hold work",
-          "numeric_value": 2.0,
-          "detail": "Review intended use, prescription restrictions under 21 CFR 801.109, and whether proposed work constitutes remanufacturing. Assess registration and listing under 21 CFR Part 807 and manufacturer quality-system duties under Part 820 when applicable. Check destination-state licensing and radiation requirements; do not assume every reseller must register as a manufacturer."
+          "gate": "G2",
+          "question": "Does the risk management file reflect the latest complaint trends?",
+          "pass_next": "G3",
+          "fail_action": "Update it before the visit; Matrix One says the risk file steers the inspection."
         },
         {
-          "label": "Patient-data exposure resolved?",
-          "value": "Yes: advance | Verification fails: hold media",
-          "numeric_value": 3.0,
-          "detail": "Identify drives, removable media, network credentials, and embedded storage. Determine covered-entity or business-associate responsibilities under 45 CFR 164.502(e), with written terms under 164.504(e) where required. For regulated handling, apply 164.310(d) device and media controls; verify sanitization while preserving safe device operation and software entitlements."
+          "gate": "G3",
+          "question": "Are procedures free of 'do not show to FDA' language and fewer-CAPA objectives?",
+          "pass_next": "G4",
+          "fail_action": "Sweep and rewrite; management review and audit records are now reviewable."
         },
         {
-          "label": "Decontamination and functional acceptance complete?",
-          "value": "Yes: release | Evidence incomplete: quarantine",
-          "numeric_value": 4.0,
-          "detail": "Require manufacturer-compatible decontamination records, calibrated biomed results, accessory completeness, recall resolution, and agreed buyer acceptance limits. Where occupational exposure is reasonably anticipated, apply 29 CFR 1910.1030 bloodborne-pathogen controls. Reject equipment lacking a credible route to safe, supported operation."
+          "gate": "G4",
+          "question": "Is every automated label check backed by a statistically significant human sample?",
+          "pass_next": "Ready for a CP 7382.850 inspection",
+          "fail_action": "Add the human sample, as Henry of Greenlight Guru insists."
         }
       ]
     },
     {
-      "diagram_id": "diag-06-four-core-and-two-expansion-seats",
-      "chart_type": "org_architecture",
-      "title": "Four Core Seats, Six at Scaled Capacity",
-      "subtitle": "Conservative and Base: 1 FT + 3 C; Scaled Small-Team: 2 FT + 4 C.",
+      "diagram_id": "diag-06-sterile-processing-buying-center",
       "chapter_number": 11,
-      "epistemic_tag": "operating_framework",
-      "assumptions_note": "The first four entries are core seats with numeric values of 1, representing 1 FT + 3 C. The final two entries have numeric values of 0 because they are expansion seats excluded from core headcount; adding 1 FT + 1 C produces the six-person scaled pod of 2 FT + 4 C. FT means full-time and C means contractor, not a full-time-equivalent commitment. External vendor and trade sub-crews are charged to direct subcontractor/COGS pass-through, not internal pod headcount. Allocate each labor charge once; contractor hours and local loaded payroll must fit the modeled cost envelopes.",
-      "caption": "The four-person core supports canonical $250,000 and $1,025,000 gross-revenue scenarios; the $1,800,000 scaled scenario uses six people. FYMC 2.0 score: 85/100; rank #20 of 29; tier: Elite Small-Team Cash Machine. Automation does not remove technical accountability.",
-      "stages": [
+      "chart_type": "org_architecture",
+      "title": "Sterile Processing as the Buying Center",
+      "subtitle": "Who buys around Central Sterile in ASC, veterinary and dental clinics",
+      "caption": "Henry Schein Medical pitches autoclaves, instrument washers, sinks and cassettes as the room ASC owners overlook, while surgeons cut total knee trays from five to two.",
+      "assumptions_note": "No staffing counts were reported, so headcount is described qualitatively; spoke KPIs are the figures each practitioner stated.",
+      "note": "Attributed to Henry Schein Medical, the American Association of Hip and Knee Surgeons (Drs. Ballard and Pickering), PEER at TAMU, and Nuronus.",
+      "center": {
+        "role": "Central Sterile processing",
+        "headcount": "Shared processing room serving every surgical team",
+        "focus": "Autoclaves, instrument washers, processing sinks, prep-and-pack, cassettes"
+      },
+      "spokes": [
         {
-          "label": "Core FT 1: Commercial and operations lead",
-          "value": "One core full-time seat | Buying, sales, and inventory",
-          "numeric_value": 1.0,
-          "detail": "Own demand qualification, acquisition ceilings, written sale terms, contribution estimates, and aged-stock decisions. Oversee receiving quarantine, cost allocation, and buyer acceptance scheduling; reconcile physical assets against the inventory ledger weekly. Keep commercial urgency separate from technical release."
+          "role": "ASC owner",
+          "type": "Capital buyer",
+          "kpi": "Bundles sterilizers, washers, sinks and cassettes from one vendor"
         },
         {
-          "label": "Core C 1: Biomedical specialist",
-          "value": "One core contractor seat | Testing and repair",
-          "numeric_value": 1.0,
-          "detail": "Perform model-qualified inspection, repair planning, calibration checks, functional testing, and signed technical findings. Escalate unavailable parts or unsupported software before the commercial lead commits acquisition funds. Specify qualified external bench work when needed and allocate unit-level labor to direct costs without duplicate overhead."
+          "role": "Orthopedic surgeon",
+          "type": "Cost champion",
+          "kpi": "Knee trays 5 to 2; $750 saved per case vs ~$8,400 Medicare knee"
         },
         {
-          "label": "Core C 2: Logistics and decontamination coordinator",
-          "value": "One core contractor seat | Biological controls and delivery",
-          "numeric_value": 1.0,
-          "detail": "Coordinate qualified external decontamination providers, device-compatible procedures, process records, and occupational exposure controls. Arrange packing, insured freight, receiving appointments, site readiness, and damage claims. External cleaning, packing, and installation crews are direct subcontractor/COGS pass-through, not additional pod seats."
+          "role": "Veterinary surgical team",
+          "type": "Consumables buyer",
+          "kpi": "Triple-wrapped packs rewashed and resterilized every 6 months"
         },
         {
-          "label": "Core C 3: Data and documentation specialist",
-          "value": "One core contractor seat | Media and traceability",
-          "numeric_value": 1.0,
-          "detail": "Map storage locations, perform authorized sanitization and verification, preserve permitted service evidence, and assemble release packets. Maintain serial-level inventory records and service-history indexing. Escalate device-specific regulatory questions for qualified review rather than inventing certifications."
-        },
-        {
-          "label": "Scaled FT 2: Account and inventory planner",
-          "value": "Expansion only | One additional FT seat; zero core count",
-          "numeric_value": 0.0,
-          "detail": "Join only at scaled capacity to own recurring buyer accounts, replenishment forecasts, site readiness follow-up, and aging reviews at the $1,800,000 gross-revenue scenario. Add capacity against measured workload and funded payroll, not a revenue aspiration alone; this seat raises full-time headcount to two."
-        },
-        {
-          "label": "Scaled C 4: Additional field biomed specialist",
-          "value": "Expansion only | One additional C seat; zero core count",
-          "numeric_value": 0.0,
-          "detail": "Join only at scaled capacity to provide additional qualified bench or installation coverage when test queues and geography exceed the core specialist's capacity. Maintain the same instrument calibration, evidence standards, and serial-level accountability; this seat raises contractor headcount to four."
+          "role": "Dental practice",
+          "type": "Compliance buyer",
+          "kpi": "$4,000-8,000 initial; $500-1,500 per month retainer"
         }
       ]
     },
     {
-      "diagram_id": "diag-07-lean-reference-expanded-startup-allocation",
-      "chart_type": "stacked_comparison",
-      "title": "Four Buckets Allocate the $55,000 Reference Budget",
-      "subtitle": "Startup capital: $20,000–$95,000 USD; compare $20,000 lean, $55,000 reference, and $95,000 expanded.",
+      "diagram_id": "diag-07-bench-readings-vs-limits",
       "chapter_number": 4,
-      "epistemic_tag": "illustrative_model",
-      "assumptions_note": "Numeric values are USD in the central $55,000 reference startup plan, within the canonical $20,000–$95,000 range. Each bucket uses the same percentage at the $20,000 lean and $95,000 expanded endpoints, allowing proportional stacked comparison. Capital allocations are funding uses, not annual expense or revenue. The reference allocation is not an additional earnings scenario or a guarantee of sufficient runway.",
-      "caption": "All four buckets reconcile at each funding level: $20,000 lean, $55,000 reference, and $95,000 expanded. Monthly opex remains $4,000–$18,000 and time to first deal remains 2–7 months; match commitments to funded liquidity rather than assuming the cash buffer covers the entire launch. Inventory purchases are not profit.",
-      "stages": [
+      "chart_type": "stacked_comparison",
+      "title": "Bench Readings vs. Pass Limits",
+      "subtitle": "Measured values against thresholds on the electrical safety sequence",
+      "total_range": "Measured reading (low) against pass or fail threshold (high), per test",
+      "caption": "Prove the analyzer first, then run mains, protective earth, leakage and insulation in a fixed sequence; Josh Herzka's R Series defib passed both leakage checks with wide margin.",
+      "assumptions_note": "Each bucket carries its own unit as stated in the notes; buckets are compared within a test, not across tests.",
+      "note": "Attributed to Josh Herzka of ReNew Biomedical on the Better Biomed Channel, and to AbishkarTECH on the Fluke ESA620.",
+      "buckets": [
         {
-          "label": "Equipment acquisition reserve",
-          "value": "$27,500 reference allocation | 50% of capital",
-          "numeric_value": 27500.0,
-          "detail": "Lean stack: $10,000; reference stack: $27,500; expanded stack: $47,500. Fund serial-defined inventory within per-model exposure limits and documented buyer demand. Keep unsold equipment on the inventory ledger and review aging weekly."
+          "label": "Earth leakage, R Series defib",
+          "low": 129,
+          "high": 500,
+          "notes": "Microamps; 129 measured under normal conditions vs an under-500 limit."
         },
         {
-          "label": "Refurbishment and testing capacity",
-          "value": "$11,000 reference allocation | 20% of capital",
-          "numeric_value": 11000.0,
-          "detail": "Lean stack: $4,000; reference stack: $11,000; expanded stack: $19,000. Fund inspection, parts, bench work, calibrated test equipment access, decontamination, and service documentation. Separate durable tooling from unit-level inventory costs."
+          "label": "Applied-part leakage, single fault",
+          "low": 6.5,
+          "high": 50,
+          "notes": "Microamps; 6.5 measured vs a limit of 50."
         },
         {
-          "label": "Operating cash buffer",
-          "value": "$13,750 reference allocation | 25% of capital",
-          "numeric_value": 13750.0,
-          "detail": "Lean stack: $5,000; reference stack: $13,750; expanded stack: $23,750. At the modeled $11,958 monthly Base-Case overhead, the reference buffer covers about 1.15 months before direct inventory spending, shorter than the 2–7 month first-deal window. Phase commitments, reduce launch burn, or secure additional liquidity before taking on unfunded obligations."
+          "label": "Mains check on a no-ground fault",
+          "low": 32,
+          "high": 53,
+          "notes": "Neutral-to-earth 32 and live-to-earth 53 vs an expected figure under five."
         },
         {
-          "label": "Setup and transaction reserve",
-          "value": "$2,750 reference allocation | 5% of capital",
-          "numeric_value": 2750.0,
-          "detail": "Lean stack: $1,000; reference stack: $2,750; expanded stack: $4,750. Fund insurance deposits, inventory-system setup, initial packing materials, and specialist classification review. Track refundable deposits separately from expenses and avoid duplicating operating-buffer charges."
+          "label": "Insulation resistance",
+          "low": 2,
+          "high": 100,
+          "notes": "Megohms; below 2 fails, 1.5 fails, OL over the 100 megohm range is good."
         }
       ]
     },
     {
-      "diagram_id": "diag-08-first-thirty-days-roadmap",
-      "chart_type": "timeline_roadmap",
-      "title": "Thirty Days to an Evidence-Ready Trading Operation",
-      "subtitle": "Build sourcing, testing, cash controls, and buyer evidence before expecting a closed deal.",
+      "diagram_id": "diag-08-breaking-into-device-sales",
       "chapter_number": 12,
-      "epistemic_tag": "operating_framework",
-      "assumptions_note": "Numeric values indicate milestone order. The four periods cover Days 1–30 without gaps; the final period contains nine days. These are readiness milestones, not revenue commitments. Canonical time to first deal remains 2–7 months.",
-      "caption": "End the sprint with a controlled acquisition pipeline and testable unit economics, not an invented first-month sale or compulsory purchase.",
-      "stages": [
+      "chart_type": "timeline_roadmap",
+      "title": "Breaking Into Device Sales",
+      "subtitle": "A referral-first sprint from profile cleanup to a capital pipeline",
+      "caption": "Valente says almost all roles come from referrals and fewer than 1% of applicants break in; Licata's capital funnel runs 30 accounts for 1 to 2 purchase orders.",
+      "assumptions_note": "The four-week sequencing organizes the practitioners' tactics; the speakers did not prescribe a calendar.",
+      "note": "Attributed to Vincent Valente (Break Into Medical Device Sales), Jacob (New to Medical Device Sales), Med Sales With Matt, and Joe Licata.",
+      "weeks": [
         {
-          "label": "Days 1-7",
-          "value": "Define scope and establish the evidence register",
-          "numeric_value": 1.0,
-          "detail": "Select two supported device families and one destination market. Record applicable FDA activity questions, state requirements, intended use, title documents, and data exposure. Build a serial-level SQLite or spreadsheet register with links to a restricted-access evidence folder."
+          "week": "Week 1",
+          "title": "Clean up the profile",
+          "deliverable": "Open to work badge removed and AI dashes stripped from outreach text",
+          "gate": "Hiring managers no longer read desperation into the profile"
         },
         {
-          "label": "Days 8-14",
-          "value": "Qualify supply and verify buyer demand",
-          "numeric_value": 2.0,
-          "detail": "Interview five prospective buyers and screen ten distinct seller lots. Record model preferences, budget authority, installation constraints, and comparable asking prices. Obtain written biomed and freight quotes for the two strongest lots without treating interest as a purchase commitment."
+          "week": "Week 2",
+          "title": "Work the referral web",
+          "deliverable": "No-note LinkedIn requests and sub-100-word messages to reps",
+          "gate": "Referral conversations booked, held to a 70/30 listening ratio"
         },
         {
-          "label": "Days 15-21",
-          "value": "Rehearse inspection and reconcile unit economics",
-          "numeric_value": 3.0,
-          "detail": "Inspect one authorized candidate with a qualified biomed contractor. Review storage-media access, decontamination evidence, test limits, service support, and title records. Reconcile quoted acquisition, repair, delivery, and warranty exposure against a defensible buyer price and the available cash buffer."
+          "week": "Week 3",
+          "title": "Run the interview gauntlet",
+          "deliverable": "Prepared for 4 to 8 rounds against 200 to 400 applicants per role",
+          "gate": "Interview even if relocating; multiple offers trigger bidding wars"
         },
         {
-          "label": "Days 22-30",
-          "value": "Prepare one complete acquisition decision packet",
-          "numeric_value": 4.0,
-          "detail": "Assemble price ceiling, serial list, seller authority, classification review, service plan, sanitization method, delivery quote, and draft acceptance terms. Proceed only with resolved material issues and sufficient cash; otherwise retain a documented rejection and continue sourcing."
+          "week": "Week 4",
+          "title": "Map the capital pipeline",
+          "deliverable": "30 accounts targeted for 1 to 2 purchase orders over 1 to 5 years",
+          "gate": "Never inflate pipeline progress reported to managers"
         }
       ]
     }

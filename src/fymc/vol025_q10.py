@@ -1,643 +1,842 @@
 from __future__ import annotations
 
-CHAPTER_10 = {
-    "id": "Q10",
-    "chapter_id": "Q10",
-    "chapter_number": 10,
-    "question_number": 10,
-    "slug": "freight-brokerage-automation-ai-scalable-distribution",
-    "question_prompt": "How does a 3 FT + 2 C (5 people) freight brokerage team automate 70%+ of repetitive research, qualification, fulfillment, and traffic/deal acquisition while keeping human-in-the-loop QA?",
-    "kicker": "Q10 / THE BIG MONEY PLAYBOOKS",
-    "title": "Automation, AI Leverage & Scalable Distribution Flywheels",
-    "subtitle": "Python Event Queues, Highway/RMIS Identity Checks, FMCSA Authority Controls, and Cash-Aware Freight Growth",
-    "layout_template": "case_study_walkthrough",
-    "reading_time_minutes": 14,
-    "executive_summary": (
-        "Candidate #12, Freight Brokerage, ranks #19 with a Money-to-Manpower Score of "
-        "85/100 because automation cannot erase carrier exposure, working-capital demands, "
-        "or service accountability. This chapter maps eight operator plays: lane research, "
-        "shipper qualification, carrier verification, load matching, shipment tracking, "
-        "invoice reconciliation, targeted outbound, and lane-content referrals. A 3 FT + "
-        "2 C pod routes routine evidence through Python workers while people retain "
-        "pricing, identity exceptions, credit, claims, and payment decisions. The canonical "
-        "annual owner-profit cases remain $30,000 Conservative, $165,000 Base, and $400,000 "
-        "Scaled; gross shipper billings include carrier costs. Measure 70%+ automation "
-        "against a fixed repetitive-work baseline, price every run including review "
-        "labor, and expand distribution only when delivery reliability and cash headroom "
-        "support the next shipper."
-    ),
-    "key_metrics": [
-        {
-            "label": "Conservative",
-            "value": "$1,000,000",
-            "context": "Annual gross shipper billings, including carrier costs",
-            "note": "3% net margin; $30,000 annual owner net profit; 3 FT + 2 C",
-        },
-        {
-            "label": "Base",
-            "value": "$3,000,000",
-            "context": "Annual gross shipper billings, including carrier costs",
-            "note": "5.5% net margin; $165,000 annual owner net profit; 3 FT + 2 C",
-        },
-        {
-            "label": "Scaled",
-            "value": "$5,000,000",
-            "context": "Annual gross shipper billings, including carrier costs",
-            "note": "8% net margin; $400,000 annual owner net profit; 4 FT + 3 C",
-        },
-    ],
-    "sections": [
-        {
-            "heading": "1. Assign eight plays to an evidence-first, five-person operating pod",
-            "epistemic_status": "operating_framework",
-            "paragraphs": [
-                (
-                    "Start with a responsibility map rather than a chatbot subscription. "
-                    "Candidate #12's eight mapped operator plays are organized here as lane "
-                    "research, shipper qualification, carrier verification, load matching, "
-                    "shipment tracking, invoice reconciliation, targeted outbound, and "
-                    "lane-content referrals. These are operating labels for this chapter, "
-                    "not eight independent businesses. Assign the first full-time operator "
-                    "to shipper sales and credit coordination, the second to carrier "
-                    "procurement and dispatch, and the third to billing, collections, and "
-                    "exception ownership. One contractor maintains integrations and observability; "
-                    "the other performs scheduled document and tracking support. Contractors "
-                    "receive task-scoped access, not shared administrator credentials or "
-                    "unrestricted banking permissions. Each play must produce a durable "
-                    "artifact: a sourced lane brief, qualified account, verified carrier "
-                    "packet, ranked match, milestone history, reconciled invoice, attributed "
-                    "conversation, or referral record. Those artifacts feed the next play "
-                    "through stable shipment and account identifiers. The pod stays small "
-                    "because information moves without rekeying, not because responsibility "
-                    "disappears. Maintain named primary and backup owners for every exception "
-                    "queue, with coverage windows visible in the TMS. If nobody owns an "
-                    "exception during an overnight pickup, automation has merely hidden "
-                    "an unstaffed service promise."
-                ),
-                (
-                    "Build the integration spine around the brokerage's TMS, such as "
-                    "Rose Rocket or Tai where contracted APIs support the required actions. "
-                    "A Python webhook receiver authenticates the provider's documented "
-                    "signature, checks timestamp freshness where supported, and stores the "
-                    "original event before returning success. Use hashlib and hmac for "
-                    "applicable signature schemes, json for strict payload parsing, and "
-                    "sqlite3 for a bounded single-host pilot queue; move concurrent production "
-                    "workloads to a managed durable queue when operational requirements "
-                    "exceed that design. An event record carries provider_event_id, shipment_id, "
-                    "event_type, schema_version, received_at, source_reference, and processing_state. "
-                    "Enforce a unique provider/event key and a separate business-action key "
-                    "so redelivery cannot create another tender or payment instruction. "
-                    "Workers write proposed changes to an outbox; a narrowly authorized "
-                    "dispatcher applies approved actions. Keep external calls outside database "
-                    "transactions and reconcile uncertain acknowledgments before retrying. "
-                    "Treat attached documents and extracted text as untrusted data: an LLM "
-                    "cannot follow instructions embedded in a rate confirmation or change "
-                    "its own tool permissions. Store model version, prompt version, extracted "
-                    "fields, and evidence locations with each proposal. This makes later "
-                    "disputes explainable without allowing a language model to become the "
-                    "system of record."
-                ),
-                (
-                    "Define the 70% objective before selecting vendors. Sample two weeks "
-                    "of repetitive research, qualification, fulfillment administration, and "
-                    "acquisition work, recording task counts and median human handling "
-                    "minutes. Freeze that task catalog for each measurement period so "
-                    "automation cannot improve its apparent score by excluding difficult "
-                    "loads. An illustrative weekly baseline contains 100 research tasks "
-                    "at four minutes, 100 qualification tasks at six minutes, 200 fulfillment "
-                    "tasks at six minutes, and 100 acquisition tasks at four minutes: "
-                    "2,600 minutes total. If the corresponding residual handling, review, "
-                    "and allocated maintenance times are 100, 180, 350, and 150 minutes, "
-                    "the reduction is exactly 70%, or 1,820 minutes recovered. This is "
-                    "a handling-time result, not proof that 70% of decisions are autonomous "
-                    "or that payroll falls by 70%. Track straight-through completion, "
-                    "review minutes, escaped errors, reopened exceptions, and service failures "
-                    "separately. Count contractor repair time and manual spreadsheet rescues "
-                    "against the automation result. Review a random sample of successful "
-                    "runs as well as every material exception. Preserve broker transaction "
-                    "records required by 49 CFR 371.3, including compensation and relevant "
-                    "freight-charge records, for three years; choose additional retention "
-                    "periods according to contracts and other applicable duties."
-                ),
-            ],
-            "table": {
-                "caption": "Eight Mapped Plays: Evidence Products, Human Ownership, and Release Conditions",
-                "headers": [
-                    "Mapped operator play and practical scope",
-                    "Automation artifact produced for downstream use",
-                    "Human owner and consequential decision retained",
-                    "Release condition before downstream work proceeds",
-                ],
-                "rows": [
-                    [
-                        "Play one: research recurring lanes within the chosen niche",
-                        "Source-linked lane briefs summarize equipment, seasonality, and facilities",
-                        "Sales operator confirms fit against actual service coverage",
-                        "Publish only briefs with dated sources and defensible assumptions",
-                    ],
-                    [
-                        "Play two: qualify shippers before promising available capacity",
-                        "Account packets combine contact evidence and credit-review inputs",
-                        "Sales operator owns account acceptance and credit coordination",
-                        "Release quoting only within documented account exposure limits",
-                    ],
-                    [
-                        "Play three: verify carriers before any tender commitment",
-                        "Highway or RMIS evidence joins official authority checks",
-                        "Procurement operator resolves identity conflicts through independent callbacks",
-                        "Release only after identity and required coverage checks",
-                    ],
-                    [
-                        "Play four: match loads against verified carrier capacity",
-                        "Ranked candidates expose equipment, timing, price, and exclusions",
-                        "Procurement operator approves carrier selection and final rate",
-                        "Tender only after refreshed eligibility and capacity confirmation",
-                    ],
-                    [
-                        "Play five: track shipments and manage milestone exceptions",
-                        "Timestamped milestones distinguish fresh telemetry from stale estimates",
-                        "Dispatch owner handles missed appointments and material deviations",
-                        "Send routine updates only from attributable current evidence",
-                    ],
-                    [
-                        "Play six: reconcile invoices against contracted shipment evidence",
-                        "Variance packets link confirmations, delivery documents, and invoice lines",
-                        "Billing operator authorizes payable changes and cash release",
-                        "Release payment only after identity and reconciliation controls",
-                    ],
-                    [
-                        "Play seven: acquire accounts through targeted outbound sequences",
-                        "Evidence-based drafts connect relevant lanes to shipper needs",
-                        "Sales operator approves claims, recipients, and sequence limits",
-                        "Send only after suppression checks and content review",
-                    ],
-                    [
-                        "Play eight: compound lane content and customer referrals",
-                        "Approved service evidence becomes useful pages and referral links",
-                        "Sales operator approves publication and customer attribution permissions",
-                        "Publish only supported claims without confidential shipment details",
-                    ],
-                ],
-            },
-        },
-        {
-            "heading": "2. Automate matching and tracking without automating carrier trust",
-            "epistemic_status": "operating_framework",
-            "paragraphs": [
-                (
-                    "Load matching begins with deterministic eligibility, followed by ranking. "
-                    "Normalize origin and destination geography, pickup and delivery windows, "
-                    "equipment, commodity, weight, temperature requirements, and shipper-specific "
-                    "restrictions into typed fields. Reject missing hard constraints rather "
-                    "than asking a model to invent them. Query contracted DAT or "
-                    "Truckstop services only through permitted access methods; feed candidates "
-                    "through Highway or RMIS evidence and the brokerage's own carrier "
-                    "history. Confirm official authority and relevant filings through FMCSA "
-                    "sources, while recognizing that a valid USDOT or MC number alone "
-                    "does not establish the identity of the person offering the truck. "
-                    "Rank eligible carriers using quoted buy rate, historical punctuality, "
-                    "equipment fit, geographic relevance, and evidence freshness. An LLM "
-                    "may summarize why three candidates fit, but the explanation must "
-                    "cite stored inputs and cannot reverse a hard exclusion. The procurement "
-                    "operator confirms capacity, identity continuity, and commercial terms "
-                    "before tendering. Recheck material signals at tender time because "
-                    "yesterday's verified packet may no longer describe today's contact, "
-                    "authority status, or payment destination. Log both rejected and selected "
-                    "candidates so post-loss reviews can reconstruct what was visible when "
-                    "the decision was made."
-                ),
-                (
-                    "Double-brokering defense requires binding the carrier identity to the "
-                    "actual pickup, not merely collecting more documents. Compare the "
-                    "tender contact, established phone channel, email domain, dispatch "
-                    "instructions, named carrier, and payment beneficiary. Independently call "
-                    "a previously established number when a contact or bank account "
-                    "changes; never use only the number supplied in the change request. "
-                    "Ask the shipper's pickup team to record the arriving carrier identity "
-                    "and report discrepancies before releasing freight under the agreed "
-                    "operating procedure. A photo, insurance certificate, or portal screenshot "
-                    "is supporting evidence, not self-authenticating proof. Verify insurance "
-                    "through independently established channels and distinguish required "
-                    "filings from contractual cargo coverage and commodity exclusions. "
-                    "Place conflicting identities, unexplained reassignments, and urgent "
-                    "payment changes into a held state with a named resolver. U.S. "
-                    "property brokers generally require FMCSA registration under 49 U.S.C. "
-                    "13904 and $75,000 bond or trust security under 49 CFR 387.307; "
-                    "verify current rules, accepted instruments, and filing status before "
-                    "operating. That security does not establish a carrier's cargo coverage "
-                    "or fund the brokerage's ordinary carrier-pay cycle. Keep identity "
-                    "controls independent from sales urgency and from the model's confidence "
-                    "language, which measures neither authority nor honesty."
-                ),
-                (
-                    "Shipment tracking uses the same event spine but different decision "
-                    "rights. Accept supported project44, FourKites, carrier API, or contracted "
-                    "tracking feeds, and label each milestone with observed_at, received_at, "
-                    "source, location precision, and freshness. Distinguish an observed arrival "
-                    "from a predicted arrival and a driver's message from independent "
-                    "location evidence. Compute lateness against appointment windows with "
-                    "explicit time zones; preserve the original timestamp and normalize "
-                    "processing to UTC. An LLM can turn verified milestones into concise "
-                    "shipper updates, but it cannot convert an estimate into a delivered "
-                    "status or declare cargo undamaged. Suppress automatic reassurance when "
-                    "telemetry becomes stale, route diversions appear, or facility evidence "
-                    "conflicts. Route those cases to dispatch with the last reliable event "
-                    "and a recommended next contact. Use bounded retries with jitter for "
-                    "transient outages, then move failed events to a dead-letter queue "
-                    "with an alert and manual recovery instructions. During a tracking "
-                    "provider outage, switch to scheduled carrier check calls and shipper "
-                    "appointment confirmation, marking updates as manually sourced. After "
-                    "restoration, replay events in shipment sequence without duplicating "
-                    "notifications. Test this fallback before selling continuous visibility "
-                    "to accounts whose appointment penalties make silence expensive."
-                ),
-            ],
-            "table": {
-                "caption": "Carrier and Tracking Failure Modes: Detection, Containment, and Recovery",
-                "headers": [
-                    "Failure pattern observed during shipment execution",
-                    "Evidence that triggers a controlled exception",
-                    "Immediate containment action assigned to humans",
-                    "Recovery evidence required before normal processing",
-                ],
-                "rows": [
-                    [
-                        "A known carrier requests an urgent beneficiary change",
-                        "Payment details differ from the previously verified master",
-                        "Billing freezes the change and procurement contacts established dispatch",
-                        "Independent confirmation and dual review document the authorized beneficiary",
-                    ],
-                    [
-                        "Pickup personnel report a different arriving carrier identity",
-                        "Facility records conflict with the approved tender identity",
-                        "Dispatch requests a pickup hold under agreed facility procedures",
-                        "Documented identity resolution precedes any revised release instruction",
-                    ],
-                    [
-                        "A matching worker receives an incomplete equipment requirement",
-                        "Required equipment field fails deterministic shipment schema validation",
-                        "Procurement asks the shipper for the missing constraint",
-                        "Corrected shipment requirements support a fresh eligible-carrier ranking",
-                    ],
-                    [
-                        "Tracking provider returns stale positions during active transit",
-                        "Observed timestamps exceed the lane-specific freshness operating threshold",
-                        "Dispatch initiates carrier check calls and labels manual updates",
-                        "Fresh attributable events reconcile with manually collected milestone history",
-                    ],
-                    [
-                        "Provider redelivery repeats an already processed shipment milestone",
-                        "Stored provider identifier matches an existing successful event",
-                        "Worker records duplicate receipt without sending another notification",
-                        "Existing business-action record confirms the intended notification outcome",
-                    ],
-                    [
-                        "A delivery estimate conflicts with actual facility evidence",
-                        "Predicted arrival disagrees with signed or confirmed receiving information",
-                        "Dispatch suppresses reassurance and contacts the receiving facility",
-                        "Resolved appointment status replaces the estimate with attributable evidence",
-                    ],
-                ],
-            },
-            "callout": {
-                "kind": "INSIDER PRO-TIPS",
-                "title": "Make fraud expensive before making dispatch fast",
-                "body": (
-                    "Experienced operators preserve independent evidence channels and make "
-                    "exception ownership visible before increasing load volume."
-                ),
-                "items": [
-                    "Store verified callback numbers separately from incoming documents; a forged packet must not replace the channel used to authenticate itself.",
-                    "Refresh carrier eligibility immediately before tendering, especially after contact, ownership, authority, or payment changes.",
-                    "Give pickup facilities a short discrepancy script naming the expected carrier and the dispatch number for resolving mismatches.",
-                    "Measure check-call workload by lane and tracking provider; apparently cheap visibility becomes costly when operators repeatedly repair stale feeds.",
-                ],
-            },
-        },
-        {
-            "heading": "3. Reconcile money, meter automation, and protect the carrier-pay float",
-            "epistemic_status": "illustrative_model",
-            "paragraphs": [
-                (
-                    "Invoice reconciliation should compare evidence, not merely extract "
-                    "invoice totals. Ingest the shipper agreement, carrier rate confirmation, "
-                    "bill of lading, proof of delivery, accessorial approvals, carrier "
-                    "invoice, and shipper invoice into a shipment-linked document register. "
-                    "Use OCR where necessary, then require extracted amounts, dates, "
-                    "reference numbers, and line items to point back to document pages. "
-                    "Python decimal arithmetic handles money; binary floating-point "
-                    "rounding must not decide a payable variance. Match base freight "
-                    "against the signed confirmation, accessorials against required "
-                    "supporting evidence, and delivery status against attributable receipt "
-                    "information. A missing signature, disputed detention period, duplicate "
-                    "invoice number, or changed beneficiary creates a review task rather "
-                    "than an automatic payment. LLM output can draft the discrepancy "
-                    "message but cannot amend the agreed rate or release cash. Keep "
-                    "claims in a separate case record linked to the shipment. The "
-                    "Carmack framework in 49 U.S.C. 14706 addresses covered carrier "
-                    "liability; do not mechanically assign every cargo loss to the "
-                    "broker or assume contract labels settle the broker's role. Where "
-                    "49 CFR Part 370 applies, capture written claim particulars and "
-                    "supporting evidence instead of treating a delivery exception note "
-                    "as a complete claim."
-                ),
-                (
-                    "Price an automated run as a complete operating event. An illustrative "
-                    "LLM extraction consumes 6,000 input tokens at $2 per million and "
-                    "1,000 output tokens at $8 per million, producing $0.020 in model "
-                    "cost. Add $0.015 for OCR, $0.005 for queue and storage operations, "
-                    "and $0.010 in allocated provider expense: $0.050 before human review. "
-                    "These are budgeting assumptions, not vendor quotations; replace them "
-                    "with contracted rates and actual invoice allocations. If 10% of "
-                    "runs require four minutes of review at a loaded $30 hourly "
-                    "rate, average review cost is $0.200 per run and combined cost "
-                    "is $0.250. At 2,000 monthly runs, that is $500 and roughly "
-                    "13.3 review hours. Reserve another $100 monthly for engineering "
-                    "maintenance, making the planning total $600, or $0.300 per run. "
-                    "Meter retries, failed calls, and document pages rather than counting "
-                    "only successful responses. Allocate fixed TMS and verification "
-                    "subscriptions separately unless the provider allocation already "
-                    "includes them. Compare the full workload cost with measured manual "
-                    "handling time and escaped-error losses. Cheap tokens do not rescue "
-                    "a workflow that doubles disputes or consumes a senior operator's "
-                    "afternoon correcting unsupported extraction results."
-                ),
-                (
-                    "Keep automation economics separate from the canonical brokerage "
-                    "scorecard. Conservative gross shipper billings are $1,000,000 at "
-                    "3% net margin, producing $30,000 owner net profit with 3 FT + "
-                    "2 C. Base is $3,000,000 at 5.5%, producing $165,000 with the "
-                    "same pod. Scaled is $5,000,000 at 8%, producing $400,000 with "
-                    "4 FT + 3 C, seven people rather than five. These billings "
-                    "include carrier costs; they are not all retained brokerage fees, "
-                    "and accounting presentation can differ. For an illustrative Base "
-                    "bridge, 1,200 loads billed at $2,500 generate $3,000,000; carrier "
-                    "purchases of $2,150 per load total $2,580,000. The resulting "
-                    "$420,000 spread less $255,000 of other costs leaves exactly "
-                    "$165,000. Include automation inside those costs, not as an extra "
-                    "unreconciled profit claim. If carriers are paid at day 21 and "
-                    "shippers pay at day 45, a steady-state 24-day carrier-cost gap "
-                    "requires about $169,644 using $2,580,000 divided by 365 times "
-                    "24. This excludes seasonality and loss reserves. Track cash "
-                    "headroom, receivable aging, and shipper concentration before accepting "
-                    "additional freight; faster booking can otherwise accelerate a "
-                    "liquidity shortage while the income statement still looks profitable."
-                ),
-            ],
-            "table": {
-                "caption": "Illustrative Base Economics and Cash Controls Reconciled to the Canonical Scorecard",
-                "headers": [
-                    "Economic component and explicit calculation basis",
-                    "Illustrative amount with substantive operating interpretation",
-                    "Measurement source and responsible operating owner",
-                    "Control preventing misleading profit or cash conclusions",
-                ],
-                "rows": [
-                    [
-                        "Annual gross billings equal twelve hundred loads times $2,500",
-                        "$3,000,000 includes purchased transportation rather than retained fees",
-                        "Billing owner reconciles shipper invoices with shipment records",
-                        "Report carrier purchases separately from the brokerage's retained spread",
-                    ],
-                    [
-                        "Carrier purchases equal twelve hundred loads times $2,150",
-                        "$2,580,000 represents transportation purchases supporting those shipper billings",
-                        "Procurement and billing reconcile accepted confirmations against payables",
-                        "Investigate accessorial variances before treating forecast spread as earned",
-                    ],
-                    [
-                        "Gross spread subtracts carrier purchases from shipper billings",
-                        "$420,000 remains before payroll, systems, losses, and other costs",
-                        "Billing owner maintains a shipment-level realized spread report",
-                        "Keep spread terminology distinct from annual owner net profit",
-                    ],
-                    [
-                        "Other costs consume the remaining reconciled operating expense envelope",
-                        "$255,000 includes automation and all other modeled operating costs",
-                        "Owner reconciles the expense ledger to the scenario bridge",
-                        "Revise assumptions if staffing and losses exceed this envelope",
-                    ],
-                    [
-                        "Base owner profit subtracts other costs from gross spread",
-                        "$165,000 exactly equals the canonical 5.5% net margin",
-                        "Owner reviews closed-period results rather than booking projections",
-                        "Do not add modeled automation savings twice to profit",
-                    ],
-                    [
-                        "Carrier funding gap uses annual purchases and twenty-four days",
-                        "About $169,644 funds the illustrative steady-state timing mismatch",
-                        "Billing owner maintains a weekly dated cash forecast",
-                        "Add stress reserves for late payers and seasonal peaks",
-                    ],
-                ],
-            },
-            "callout": {
-                "kind": "OPERATOR GATE",
-                "title": "Four pre-flight checks before increasing automated throughput",
-                "body": (
-                    "Keep consequential actions held until the assigned operator records "
-                    "the following evidence in the shipment or account record."
-                ),
-                "items": [
-                    "Verify current FMCSA broker authority, required $75,000 security, and applicable filing status through official records before accepting brokerage work.",
-                    "Confirm carrier identity continuity, required coverage, tender terms, and independently verified payment details before releasing shipment instructions or money.",
-                    "Reconcile the shipment's commercial documents and resolve material amount, delivery, or duplicate-invoice exceptions before authorizing payment.",
-                    "Confirm shipper credit capacity and stressed carrier-pay cash headroom before allowing an acquisition sequence to create additional accepted load volume.",
-                ],
-            },
-            "sop_steps": [
-                {
-                    "step": 1,
-                    "title": "Register immutable source evidence",
-                    "action": "Attach original documents and provider events to stable shipment identifiers.",
-                    "detail": "Record receipt time, source reference, document digest, and access scope before extracting or transforming fields.",
-                },
-                {
-                    "step": 2,
-                    "title": "Validate proposed operational changes",
-                    "action": "Run deterministic schema, identity, arithmetic, and duplicate checks before routing proposals.",
-                    "detail": "Separate missing evidence from contradictory evidence, and give each exception a named owner and resolution deadline.",
-                },
-                {
-                    "step": 3,
-                    "title": "Authorize consequential execution",
-                    "action": "Require the responsible operator to approve tender, credit, disputed charges, and payment decisions.",
-                    "detail": "Store the reviewer, evidence version, approved values, and business-action identifier before the dispatcher applies the action.",
-                },
-                {
-                    "step": 4,
-                    "title": "Reconcile results and rehearse recovery",
-                    "action": "Confirm downstream acknowledgments, sample completed runs, and replay a controlled failed event.",
-                    "detail": "Verify that retries do not duplicate tenders, notifications, invoices, or payment instructions and that manual fallback remains usable.",
-                },
-            ],
-        },
-        {
-            "heading": "4. Compound niche distribution only as fast as verified service capacity",
-            "epistemic_status": "operating_framework",
-            "paragraphs": [
-                (
-                    "Programmatic distribution starts with service knowledge the brokerage "
-                    "can actually defend. Turn approved lane briefs into useful pages "
-                    "covering equipment fit, appointment preparation, seasonal constraints, "
-                    "and document requirements for the chosen niche. Generate structured "
-                    "drafts from a controlled template and source register, not thousands "
-                    "of interchangeable city pages. Python can assemble static HTML, "
-                    "validate internal links, and produce sitemap entries; an LLM can "
-                    "compress operator notes into readable explanations. A human verifies "
-                    "every material service claim and removes customer names, negotiated "
-                    "rates, facility vulnerabilities, and shipment identifiers unless "
-                    "publication is explicitly authorized. Publish original observations "
-                    "with measurement periods and sample sizes, and separate historical "
-                    "performance from future commitments. Attribute visits through first-party "
-                    "campaign parameters and connect qualified inquiries to account and "
-                    "shipment identifiers in the CRM. The loop is specific: a useful "
-                    "lane page attracts an inquiry, a qualified account produces completed "
-                    "loads, verified service results improve the page, and that evidence "
-                    "supports the next relevant inquiry. Measure contribution from collected "
-                    "business, not page count or search impressions. If a lane lacks "
-                    "reliable capacity, pause its acquisition page rather than allowing "
-                    "marketing to sell coverage the procurement operator cannot consistently "
-                    "deliver."
-                ),
-                (
-                    "Targeted outbound should reuse the same lane evidence rather than "
-                    "inventing a second research department. Build a small account universe "
-                    "from permitted company sources, trade directories, and existing "
-                    "customer referrals. Capture why each company plausibly fits the "
-                    "niche, who owns the relationship, and when the source was checked. "
-                    "An LLM drafts a short, specific message about an observable "
-                    "shipping need; it must not fabricate a conversation, customer "
-                    "endorsement, available truck, or confidential shipping schedule. "
-                    "The sales operator approves batches, monitors replies, and removes "
-                    "irrelevant accounts. For U.S. commercial email, implement the "
-                    "requirements of 15 U.S.C. 7704, including accurate routing information, "
-                    "nondeceptive subject lines, required sender information, and a working "
-                    "opt-out process honoring requests within ten business days. Apply "
-                    "suppression before every send, including contractor campaigns. Keep "
-                    "automated calls and texts outside this pipeline unless a separately "
-                    "reviewed process addresses applicable requirements. Make referrals "
-                    "easy through a shipper-approved introduction link after successful "
-                    "service, not by exposing live shipment tracking publicly. The viral "
-                    "mechanism is a useful introduction between relevant operators, not "
-                    "an incentive to broadcast sensitive load details. Record referral "
-                    "source, qualified opportunities, collected spread, and support burden "
-                    "so apparent growth can be evaluated against actual contribution."
-                ),
-                (
-                    "Scale through controlled cohorts with explicit stop conditions. "
-                    "Run a small lane and shipper cohort in shadow mode, comparing "
-                    "proposed matches, status updates, and invoice outcomes with operator "
-                    "decisions before enabling routine writes. Release low-consequence "
-                    "actions first, such as internal research packets and verified "
-                    "milestone drafts, then expand only after measured quality holds. "
-                    "Set workflow-specific limits for escaped errors, stale events, "
-                    "exception age, and review minutes; a changed model or provider "
-                    "schema returns the affected workflow to shadow comparison. Keep "
-                    "a versioned prompt and rule registry, a rollback switch, and "
-                    "a daily reconciliation of received events against completed actions. "
-                    "The integration contractor owns repairs, but the full-time process "
-                    "owner decides whether service can continue manually. Review "
-                    "acquisition and operations together each week: qualified inquiries, "
-                    "accepted loads, on-time milestones, realized spread, cash collections, "
-                    "and unresolved claims belong on one scorecard. Do not extrapolate "
-                    "the five-person Base pod indefinitely. The canonical Scaled case "
-                    "explicitly adds one full-time operator and one contractor, reaching "
-                    "4 FT + 3 C. Add that capacity when coverage and exception "
-                    "loads require it, not after service failures force emergency hiring. "
-                    "A distribution flywheel compounds only when each new account "
-                    "strengthens evidence, margin quality, and operating resilience."
-                ),
-            ],
-            "table": {
-                "caption": "Distribution Flywheel Controls: Useful Evidence, Measurable Conversion, and Stop Conditions",
-                "headers": [
-                    "Distribution asset or recurring acquisition mechanism",
-                    "Evidence required before external publication or sending",
-                    "Commercial measure tied to actual operating results",
-                    "Stop condition and practical human recovery action",
-                ],
-                "rows": [
-                    [
-                        "Niche lane pages explain realistic equipment and appointment requirements",
-                        "Procurement validates coverage claims against current service capability",
-                        "Track qualified inquiries that become collected profitable shipments",
-                        "Pause promotion when reliable capacity or service coverage deteriorates",
-                    ],
-                    [
-                        "Targeted email batches connect observed needs with relevant services",
-                        "Sales verifies source relevance and current suppression status",
-                        "Track reply quality, accepted accounts, and collected contribution",
-                        "Stop sequences when objections reveal poor targeting or unsupported claims",
-                    ],
-                    [
-                        "Customer introduction links simplify relevant peer referrals after delivery",
-                        "Account owner confirms permission and removes sensitive shipment information",
-                        "Measure referred account quality and subsequent support burden",
-                        "Withdraw public material if attribution permission changes or details leak",
-                    ],
-                    [
-                        "Service case studies summarize verified outcomes within a defined period",
-                        "Operator checks sample size, exclusions, and customer publication authorization",
-                        "Connect assisted opportunities to realized spread after collection",
-                        "Revise claims when newer results no longer support positioning",
-                    ],
-                    [
-                        "CRM follow-up tasks reactivate accounts with suitable recurring lanes",
-                        "Sales checks relationship ownership, credit status, and lane readiness",
-                        "Measure repeat loads alongside concentration and overdue receivables",
-                        "Hold new commitments when account exposure exceeds documented limits",
-                    ],
-                    [
-                        "Weekly cohort reviews coordinate marketing pace with operational capacity",
-                        "Owners reconcile event completion, exception age, and cash forecasts",
-                        "Track collected contribution per combined operating and acquisition hour",
-                        "Reduce acquisition volume before backlog or funding pressure harms service",
-                    ],
-                ],
-            },
-        },
-    ],
-    "pull_quote": "Automate the evidence trail, keep judgment accountable, and let collected freight profit set the speed of growth.",
-    "diagram_id": "diag-02",
-    "action_checklist": [
-        "Assign all eight mapped plays to the 3 FT + 2 C pod, with named exception owners, backups, and documented coverage windows.",
-        "Baseline repetitive task minutes for two weeks and measure residual review, maintenance, and rework against the same fixed task catalog.",
-        "Implement authenticated event ingestion, idempotent business-action keys, an approval-backed outbox, and a tested dead-letter recovery procedure.",
-        "Refresh carrier identity and eligibility before tendering; independently verify contact or beneficiary changes and coordinate pickup discrepancy handling.",
-        "Reconcile invoice evidence with decimal arithmetic and maintain a dated carrier-pay cash forecast that includes delayed shipper collections.",
-        "Publish reviewed lane evidence and run suppression-checked outbound cohorts only while service quality, credit exposure, and cash headroom remain acceptable.",
-    ],
-    "statutory_citations": [
-        {
-            "title": "49 U.S.C. 13904 — Registration of brokers",
-            "url": "https://www.law.cornell.edu/uscode/text/49/13904",
-            "relevance": "Establishes the federal registration framework for brokers; verify applicable authority before conducting covered brokerage operations.",
-        },
-        {
-            "title": "49 CFR 387.307 — Property broker and freight forwarder financial security",
-            "url": "https://www.ecfr.gov/current/title-49/subtitle-B/chapter-III/subchapter-B/part-387/subpart-C/section-387.307",
-            "relevance": "Provides the $75,000 property-broker bond or trust security requirement and related conditions; confirm current filings and instrument requirements.",
-        },
-        {
-            "title": "49 CFR 371.3 — Records to be kept by brokers",
-            "url": "https://www.ecfr.gov/current/title-49/subtitle-B/chapter-III/subchapter-B/part-371/section-371.3",
-            "relevance": "Requires specified transaction records, three-year preservation, and access rights for parties to brokered transactions; design evidence storage accordingly.",
-        },
-        {
-            "title": "49 U.S.C. 14706 — Liability of carriers under receipts and bills of lading",
-            "url": "https://www.law.cornell.edu/uscode/text/49/14706",
-            "relevance": "Supplies the carrier cargo-liability framework for covered transportation; preserve shipment evidence and assess actual roles rather than assuming broker liability.",
-        },
-        {
-            "title": "49 CFR 370.3 — Filing of claims",
-            "url": "https://www.ecfr.gov/current/title-49/subtitle-B/chapter-III/subchapter-B/part-370/section-370.3",
-            "relevance": "Defines minimum claim-filing particulars for covered claims and distinguishes supporting shipment notations from a sufficient written claim.",
-        },
-        {
-            "title": "15 U.S.C. 7704 — Requirements for transmission of messages",
-            "url": "https://www.law.cornell.edu/uscode/text/15/7704",
-            "relevance": "Governs U.S. commercial email practices, including routing accuracy, subject lines, required disclosures, opt-out mechanisms, and timely suppression.",
-        },
-    ],
-}
+CHAPTER_10 = {'id': 'Q10',
+ 'chapter_id': 'Q10',
+ 'chapter_number': 10,
+ 'question_number': 10,
+ 'slug': 'accessorials-detention-layover-tonu',
+ 'question_prompt': 'How should I handle detention, layover, TONU and other accessorial charges without '
+                    'losing carriers or margin?',
+ 'kicker': 'Q10 / THE BIG MONEY PLAYBOOKS',
+ 'title': 'Accessorials: Detention, Layover and TONU',
+ 'subtitle': 'Definitions and differences, carrier tactics for getting paid, broker obligations and '
+             'policies, rate disputes, dispatcher responsibility, and how brokers profit from or lose on '
+             'accessorials',
+ 'layout_template': 'expert_commentary',
+ 'reading_time_minutes': 15,
+ 'executive_summary': 'Carriers, dispatchers and brokers converge on one rule: if detention, layover and '
+                      'TONU terms are not in the rate confirmation or broker-carrier agreement before the '
+                      'truck rolls, the money is mostly gone. The street baseline is two free hours, then '
+                      'roughly $30-$75 per hour, with $50 cited most often by brokers. TONU clusters at '
+                      '$150-$200, and layover runs anywhere from $100 per night to $500 or more. '
+                      'Collection is a documentation game: timestamped arrival emails, warnings before '
+                      'free time expires, in/out times on the bill of lading, and invoices chased until '
+                      'paid. The fights are over who eats the cost when the shipper refuses. Some brokers '
+                      'pay from their own pocket, others pay only what the customer approves. The other '
+                      'split is whether brokers should pass accessorials through at cost or mark them up '
+                      'for margin.',
+ 'key_metrics': [{'label': 'Industry-Standard Detention Policy',
+                  'metric': 'Industry-Standard Detention Policy',
+                  'value': '$50 per hour after 2 hours free',
+                  'confidence': 'attributed_practitioner_claim',
+                  'context': "A broker's stated view of the typical, fair detention policy that brokers "
+                             'should adopt and carriers should demand on the rate con',
+                  'source': 'ShipLeague ([OzmQFxT30NM @ 00:03:56])'},
+                 {'label': 'Published Detention Rate Band',
+                  'metric': 'Published Detention Rate Band',
+                  'value': '$30 to $75 per hour',
+                  'confidence': 'attributed_practitioner_claim',
+                  'context': 'Standard hourly detention band, paid in half-hour or hourly increments after '
+                             'two free hours',
+                  'source': 'Think Trucking ([uHIZpxSLN-c @ 00:00:52])'},
+                 {'label': 'Common-Practice TONU',
+                  'metric': 'Common-Practice TONU',
+                  'value': '$150 flat',
+                  'confidence': 'attributed_practitioner_claim',
+                  'context': 'Typical truck-order-not-used payment regardless of whether the driver '
+                             'deadheaded two miles or 200 miles to the pickup',
+                  'source': 'Never Stop Trucking ([tvnlRLMXRJ4 @ 00:07:20])'},
+                 {'label': 'Negotiated TONU Win',
+                  'metric': 'Negotiated TONU Win',
+                  'value': '$540',
+                  'confidence': 'attributed_practitioner_claim',
+                  'context': 'TONU a dispatcher collected after flagging cancellation risk when the broker '
+                             'moved the pickup, versus the $150 default offer',
+                  'source': 'Pauline Nabacwa ([fpu1Fhdo9Vs @ 00:09:13])'}],
+ 'sections': [{'heading': '1. The Practitioner Consensus',
+               'paragraphs': ['The baseline every seat in the deal agrees on is two hours of unpaid dock '
+                              'time, then the meter starts. Nate Cross of Freight 360 calls it free time, '
+                              'pegs the industry standard at two hours, and says roughly $50 an hour is '
+                              'normal once a driver passes it [A7rlv69JAj8 @ 00:01:59]. Think Trucking '
+                              'quotes the same two free hours and a wider $30 to $75 hourly band, paid in '
+                              'half-hour or hourly increments [uHIZpxSLN-c @ 00:00:52]. Ernest at Never '
+                              'Stop Trucking spells out the math that burns rookies: if a truck sits four '
+                              'hours under a two-hour policy, only the last two get paid, at anywhere from '
+                              '$25 to $50 an hour. Ernest treats $50 as the bare minimum because the '
+                              'broker is renting a running truck, its fuel, and a driver, not an hourly '
+                              'factory worker [tvnlRLMXRJ4 @ 00:03:18]. Everybody scraps over this money '
+                              'because of opportunity cost. Trucking Territory puts a one-load-a-day '
+                              'driver at $800 to $1,200 in daily revenue. A six-hour hold erases time that '
+                              'could have been spent driving and earning. Dispatchers only get paid when '
+                              'the driver gets paid, so they hate detention as much as drivers do '
+                              '[Q-HgB9nn1jI @ 00:00:22].',
+                              'Second point of near-total agreement: if the terms are not written down '
+                              'before the truck is dispatched, they effectively do not exist. Think '
+                              'Trucking puts it as the rule that if it is not in the rate confirmation, it '
+                              'does not exist. Accessorial pay only becomes real when it is written before '
+                              'the work happens [uHIZpxSLN-c @ 00:03:40]. The ShipLeague broker is stunned '
+                              'by how rarely dispatchers or drivers ask about detention. They grill a '
+                              'broker on commodity, weight, distance and rate, but skip detention. '
+                              'ShipLeague demands the amount and start time in black and white on the rate '
+                              'con, noting it takes no time at all because the driver is the one who will '
+                              'actually sit there [OzmQFxT30NM @ 00:00:18]. Tim at Freight Master '
+                              'Resources walked a carrier friend through exactly that failure. The '
+                              'appointment was noon, the driver was on site at 10:30, and the real '
+                              'appointment turned out to be 6 a.m. the next day. Nothing about detention '
+                              'or layover was in either the rate confirmation or the carrier setup packet, '
+                              'so the broker threw roughly $150 and walked [1Fdc8KYk8M0 @ 00:03:31]. '
+                              'Brandon Scott assigns the responsibility bluntly from the brokerage chair: '
+                              'the carrier has to make sure the broker has a detention policy in place. '
+                              'Without one, there is a very real possibility of collecting nothing '
+                              '[V11p0IBJsTk @ 00:04:21].',
+                              'The third consensus: the carrier bills the broker, and paper beats phone '
+                              'calls. Pauline Nabacwa, speaking as a dispatcher and company owner, is '
+                              'explicit that the broker pays detention. The broker may later chase the '
+                              'shipper for it, but the carrier side bills the broker directly [fpu1Fhdo9Vs '
+                              "@ 00:06:03]. Brandon Scott explains the plumbing: the shipper's "
+                              'relationship is with the broker, not the carrier, so the detention policy '
+                              "that governs is the broker's. The broker's job is to negotiate a policy "
+                              'with the shipper up front so the carrier can be paid when hours stretch '
+                              '[V11p0IBJsTk @ 00:03:41]. Craig Bliss has worked the shipper, broker and '
+                              'carrier sides. Craig says verbal conversations do not prove detention, '
+                              'especially against brokers that go quiet once the request lands; the paper '
+                              'trail does. Any phone call gets recapped in the same email chain with a '
+                              "'per our conversation' line [WU9uuEFffXU @ 00:04:53]. Yvonne of "
+                              'Freightbrokerchic runs the identical playbook toward the customer. The '
+                              'moment an on-time driver is being held, the shipper is notified and the '
+                              'driver is told to keep track of time. Every phone call is followed up by '
+                              'email, so nobody can later claim they did not know a detention was coming '
+                              '[zvX7UreND4E @ 00:09:20].'],
+               'table': {'caption': 'Where carriers, dispatchers and brokers agree on detention, layover '
+                                    'and TONU',
+                         'headers': ['Consensus Point',
+                                     'What Practitioners Report',
+                                     'Operator Implication',
+                                     'Expert Source'],
+                         'rows': [['Two free hours is the default dock window',
+                                   'Detention typically starts after two unpaid hours, with roughly $50 '
+                                   'per hour normal after that',
+                                   'Price every load assuming the first two dock hours earn nothing at all',
+                                   'Freight 360 ([A7rlv69JAj8 @ 00:01:59])'],
+                                  ['Terms must be written down before booking the load',
+                                   'If detention is not in the rate confirmation before acceptance, the '
+                                   'claim is already lost',
+                                   'Get rate, free time and billing increments onto the rate con before '
+                                   'accepting',
+                                   'Think Trucking ([uHIZpxSLN-c @ 00:06:26])'],
+                                  ['Carriers rarely ask about detention policy up front',
+                                   'Drivers and dispatchers ask about commodity, weight and rate but '
+                                   'almost never detention',
+                                   'Add detention, layover and TONU questions to every single broker '
+                                   'inquiry script',
+                                   'ShipLeague ([OzmQFxT30NM @ 00:00:18])'],
+                                  ['The broker is the payer of record for detention',
+                                   'Carrier side bills the broker directly even when the shipper caused '
+                                   'the delay at the dock',
+                                   'Invoice the broker, not the shipper, and let the broker chase its own '
+                                   'customer',
+                                   'Pauline Nabacwa ([fpu1Fhdo9Vs @ 00:06:03])'],
+                                  ['Verbal agreements do not collect accessorial money',
+                                   'Phone conversations do not prove detention; emails with timestamps and '
+                                   'bills of lading do',
+                                   'Recap every call in the same email thread with a per-our-conversation '
+                                   'line',
+                                   'Craig Bliss ([WU9uuEFffXU @ 00:06:32])'],
+                                  ['TONU gets paid more reliably than detention does',
+                                   'TONU is usually paid, while brokers and customers hunt for reasons to '
+                                   'dodge detention claims',
+                                   'Expect a fight on detention, but push TONU confidently when the truck '
+                                   'arrived',
+                                   'Never Stop Trucking ([izh0UL8y-_4 @ 00:01:01])'],
+                                  ['Long free windows on a rate con are warnings',
+                                   'Three or four free hours signal a shipper the broker already knows '
+                                   'loads slowly',
+                                   'Treat extended free time as a red flag and reprice or skip the load',
+                                   'Never Stop Trucking ([tvnlRLMXRJ4 @ 00:04:56])']]}},
+              {'heading': '2. Exact Street Mechanics, Tools & Numbers',
+               'paragraphs': ['The street rate card is wide, and practitioners quote it to the dollar. The '
+                              'spread between low and high offers is where negotiation lives. Trucking '
+                              'Territory works with $30 for each extra hour past two, and $100 to $150 per '
+                              'night of layover when the broker is reasonable [Q-HgB9nn1jI @ 00:03:17]. '
+                              'Pauline Nabacwa reports the floor going lower: brokers offering $12, $15 or '
+                              '$20 an hour, or a flat $100, $150 or $200 for the whole wait. Pauline calls '
+                              'that cheap change against what the truck gives up [fpu1Fhdo9Vs @ 00:03:41]. '
+                              'Ernest at Never Stop Trucking adds the cap buried in many policies: a '
+                              'typical broker policy pays $50 an hour up to a $250 maximum, then flips to '
+                              'layover. Layover commonly lands at $200 to $250 a day, roughly $10 to $12 '
+                              'an hour once divided by 24. TONU is a flat $150 whether the driver '
+                              'deadheaded two miles or 200 [tvnlRLMXRJ4 @ 00:05:33]. Nate Cross at Freight '
+                              '360 prices layover higher on the broker side, at around $500 depending on '
+                              'equipment. Nate sets TONU near $200 and extra stops at $50 to $100 each. '
+                              'Lumpers run roughly $75 up to $200, reimbursed against a receipt or '
+                              'advanced to the driver up front [A7rlv69JAj8 @ 00:05:06].',
+                              'Collection runs on a timed email sequence, and Craig Bliss hands it out '
+                              'nearly word for word. On arrival, the carrier emails the broker something '
+                              'like: driver has arrived at the shipper as of 1300, detention will start at '
+                              '1500 at $50 per hour, and a heads-up will follow before it starts '
+                              '[WU9uuEFffXU @ 00:02:33]. At about 90 minutes, a second email in the same '
+                              'chain notes the driver is still not loaded at 1430 and offers to help speed '
+                              'loading. At expiry, a third email says detention is now running. After '
+                              'loading, a final email carries total charges plus the bill of lading with '
+                              'in and out times. Think Trucking runs the same five-step drill. First, the '
+                              'clause goes on the rate con. Second, the carrier sends a timestamped '
+                              'written arrival notice rather than a phone call. Third comes a warning '
+                              'before free time ends. Fourth, in and out times go on the BOL, initialed by '
+                              'facility staff, with gate tickets and photos kept. Fifth, the invoice is '
+                              'chased until it lands on settlement [uHIZpxSLN-c @ 00:07:00]. Trucking '
+                              'Territory adds a field tactic: the two-hour call itself can push the broker '
+                              'to get the truck loaded faster to save money. If the next pickup is at '
+                              'risk, call that broker too and try to move the appointment to the next day '
+                              '[Q-HgB9nn1jI @ 00:04:47].',
+                              'On the broker side, the mechanics turn on approval paperwork and, for some, '
+                              'margin. Brandon Scott emails the shipper the situation and the PO number, '
+                              'then gets the PO approved for detention. Brandon then issues the carrier a '
+                              'new rate confirmation showing the accumulated detention hours, so the final '
+                              'invoice includes it [V11p0IBJsTk @ 00:08:16]. Freight 360 does the same on '
+                              'TONU. The broker confirms what the customer typically pays on cancellation '
+                              'and invoices the customer the $200. The broker then cuts a fresh rate con '
+                              'to the driver for $200 and makes zero margin on the transaction '
+                              '[7sfi19fbIzU @ 00:02:52]. Brandon Manney teaches the opposite money play: '
+                              'ask every shipper its detention and layover rates during the sale, then pay '
+                              "the carrier less than collected. In Manney's example, a shipper pays $200 "
+                              'an hour for two hours, $400 total. The broker pays the carrier $100 an hour '
+                              'and keeps $200, or collects $500 on a layover and pays $400 or $300 '
+                              '[8Mhf3iqBflw @ 00:04:09]. Carriers can flip the paperwork too. Tim at '
+                              'Freight Master Resources has carriers draft their own detention and layover '
+                              'terms as a PDF and send them for signature through DocuSign or similar. '
+                              'That lets them negotiate from $75 an hour down to $40 or $50 instead of '
+                              'accepting $20 to $25 after three or four hours [1Fdc8KYk8M0 @ 00:07:39].'],
+               'table': {'caption': 'Street numbers and triggers for detention, layover, TONU and related '
+                                    'accessorials',
+                         'headers': ['Accessorial or Mechanic',
+                                     'Street Number',
+                                     'How It Is Triggered or Paid',
+                                     'Expert Source'],
+                         'rows': [['Detention hourly band',
+                                   '$30 to $75 per hour, paid in half-hour or hourly increments',
+                                   'Starts after two free hours measured from appointment time, not actual '
+                                   'arrival',
+                                   'Think Trucking ([uHIZpxSLN-c @ 00:00:52])'],
+                                  ['Detention cap before layover',
+                                   '$50 per hour up to a $250 maximum',
+                                   'Once the cap is reached, the broker switches the driver to layover '
+                                   'policy',
+                                   'Never Stop Trucking ([tvnlRLMXRJ4 @ 00:05:33])'],
+                                  ['Detention billing math',
+                                   '6 hours on the dock, 4 billable at $60 equals $240 owed',
+                                   'First two hours are free; only hours past free time get invoiced',
+                                   'Think Trucking ([uHIZpxSLN-c @ 00:01:25])'],
+                                  ['TONU standard payment',
+                                   '$150 flat regardless of deadhead distance to the pickup',
+                                   'Driver usually must actually arrive at pickup; halfway cancellations '
+                                   'get nothing',
+                                   'Never Stop Trucking ([tvnlRLMXRJ4 @ 00:07:37])'],
+                                  ['Layover broker-side pricing',
+                                   'Around $500, more for rarer equipment types',
+                                   'Customer pays when its facility is at fault; late drivers may face '
+                                   'late fees',
+                                   'Freight 360 ([A7rlv69JAj8 @ 00:05:06])'],
+                                  ['Broker detention spread',
+                                   'Shipper pays $200 per hour; carrier paid $100; broker keeps $200 on '
+                                   'two hours',
+                                   'Broker learns shipper rates during the sale and sets the carrier rate '
+                                   'separately',
+                                   'Brandon Manney The Mentor ([8Mhf3iqBflw @ 00:03:47])'],
+                                  ['Partial with extra stop and driver assist',
+                                   'About two-thirds of full truckload, plus roughly $500 per extra stop',
+                                   'Driver assist adds roughly another $500 on top of the partial pricing',
+                                   'Freight 360 ([xe94bfEYHEU @ 00:14:08])']]},
+               'callout': {'kind': 'INSIDER PRO-TIPS',
+                           'title': 'Collection Edges Practitioners Actually Use',
+                           'body': 'Small timing and paperwork moves that separate paid accessorial claims '
+                                   'from ignored ones.',
+                           'items': ['If the broker moves the appointment after the truck is already '
+                                     'committed, anchor detention to the original rate-con time. On an 8 '
+                                     'a.m. appointment with two free hours, the hosts would pay 10 to 1, '
+                                     'three hours of detention [Freight 360 — xe94bfEYHEU @ 00:09:16]',
+                                     'Raise TONU the moment detention starts building or the broker shifts '
+                                     'the pickup. Pauline Nabacwa turned a $150 default into $540 by '
+                                     'flagging the cancellation risk early, partly through pity and partly '
+                                     'through negotiation [Pauline Nabacwa — fpu1Fhdo9Vs @ 00:10:53]',
+                                     'The two-hour grace period is measured from appointment time, not '
+                                     'arrival. Showing up early and sitting an hour before the appointment '
+                                     'may not count at all [Think Trucking — uHIZpxSLN-c @ 00:01:10]',
+                                     'If the broker goes silent, keep the same email chain and add the '
+                                     "broker's accounting team and other operational staff to it [Craig "
+                                     'Bliss — WU9uuEFffXU @ 00:04:36]']},
+               'sop_steps': [{'step': 1,
+                              'title': 'Lock Terms at Booking',
+                              'action': 'Ask the broker about the detention rate per hour, when detention '
+                                        'starts, and the layover and TONU terms, then get them all written '
+                                        'on the rate con.',
+                              'detail': 'Ask before booking whether the broker pays detention, at what '
+                                        'hourly rate, and after how many hours. If they refuse, do not '
+                                        'stack a tight reload behind that load, and try negotiating a '
+                                        'better line rate [Trucking Territory — Q-HgB9nn1jI @ 00:04:12]'},
+                             {'step': 2,
+                              'title': 'Timestamp Arrival in Writing',
+                              'action': 'Email the broker the moment the driver checks in, stating the '
+                                        'arrival time, the detention start time and the hourly rate.',
+                              'detail': 'Use a script like: driver arrived at the shipper as of 1300, '
+                                        'detention will start at 1500 at $50 per hour, and a heads-up will '
+                                        'follow before it starts [Craig Bliss — WU9uuEFffXU @ 00:02:33]'},
+                             {'step': 3,
+                              'title': 'Warn Before Free Time Expires',
+                              'action': 'Alert the broker before the two hours run out, and use that '
+                                        'window to start negotiating.',
+                              'detail': 'Tell the broker the shipper has not loaded the truck yet and that '
+                                        'detention starts if the shipper does not move in the next 20 '
+                                        'minutes. This opens room to push for a higher rate [Pauline '
+                                        'Nabacwa — fpu1Fhdo9Vs @ 00:04:45]'},
+                             {'step': 4,
+                              'title': 'Close Out With BOL and Invoice',
+                              'action': 'Get in and out times initialed on the BOL, keep the gate tickets '
+                                        'and photos, invoice, and follow up until the charge lands on '
+                                        'settlement.',
+                              'detail': 'Have someone at the facility write and initial the in and out '
+                                        'times on the bill of lading, and photograph everything. Then '
+                                        'submit the claim with the documentation attached [Think Trucking '
+                                        '— uHIZpxSLN-c @ 00:07:16]'}]},
+              {'heading': 'Section 3: Where Practitioners Disagree & Alternative Playbooks',
+               'paragraphs': ["The sharpest split is what happens when the shipper says no. ShipLeague's "
+                              'broker-side host is blunt: if you ask your customer for detention and the '
+                              'customer refuses, you still pay it, because the brokerage is the customer '
+                              'to the carrier and a shipper refusal is no excuse [OzmQFxT30NM @ 00:02:22]. '
+                              'Craig Bliss runs a brokerage the same way, paying carriers off the '
+                              "brokerage's own policy rather than the customer's, while admitting the "
+                              'common practice is to pay carriers only what the paying customer agreed to '
+                              "[WU9uuEFffXU @ 00:06:32]. Freightbrokerchic's guest Dexter takes the "
+                              'opposite line: as a carrier bills detention, the broker can only pay out '
+                              'what the customer has already authorized, and nobody reaches into their own '
+                              'pocket to lose money on a load [zvX7UreND4E @ 00:06:27]. Nate Cross at '
+                              'Freight 360 sits in the middle, carving out a messy zone where the customer '
+                              'refuses a TONU but the driver already rolled toward the pickup or turned '
+                              'down a good load, and the broker makes a judgment call to cover a small '
+                              'TONU out of pocket to protect a solid carrier relationship [7sfi19fbIzU @ '
+                              '00:05:05]. For carriers, the payout depends on which of these three '
+                              'philosophies sits on the other end of the rate confirmation.',
+                              'Whether accessorials are a profit line or a pass-through is the second '
+                              'fault line. Brandon Manney teaches brokers to ask every shipper what it '
+                              'pays for detention and layover, then quote the carrier less: in the worked '
+                              'example the shipper pays $200 an hour, the carrier is told $100, and on two '
+                              "hours the broker banks $200 while the driver never learns the shipper's "
+                              'number [8Mhf3iqBflw @ 00:03:47]. Manney frames layover the same way, '
+                              'collecting $500 and paying the trucking company $400 or even $300 depending '
+                              'on what it will accept. Freight 360 teaches the reverse: detention is '
+                              'invoiced directly to the customer and passed directly through to the '
+                              'carrier, with no additional profit made by the broker [A7rlv69JAj8 @ '
+                              '00:02:31]. On the Final Mile podcast the Freight 360 hosts went further, '
+                              'describing an agent whose customer approved a TONU the carrier never '
+                              'requested and who planned to keep it, and telling that agent flatly it was '
+                              "the carrier's money for wasted time [xe94bfEYHEU @ 00:11:49]. Think "
+                              'Trucking flags the same leakage on the carrier side: some carriers pass '
+                              'detention straight to company drivers, others keep it or pay less, so a '
+                              'driver should get the pass-through policy in writing before sitting at a '
+                              'dock where the carrier might collect $60 an hour and pay out $20 '
+                              '[uHIZpxSLN-c @ 00:07:49].',
+                              'Even the headline numbers are contested between camps. ShipLeague calls $50 '
+                              'an hour after two hours free the industry standard [OzmQFxT30NM @ '
+                              '00:03:56]. Never Stop Trucking says the two-hour window only works in the '
+                              "shipper's and broker's favor because most trucks load in 30 minutes to an "
+                              'hour and a half, and treats $50 an hour as the bare minimum for idling '
+                              'equipment, burning fuel and a stranded driver [tvnlRLMXRJ4 @ 00:03:38]. '
+                              'Pauline Nabacwa reports brokers offering $12, $15 or $20 an hour, or flat '
+                              'fees of $100 to $200, and calls it cheap change against the day lost. '
+                              "Layover bands swing wider still: Freightbrokerchic's guest pegs a customary "
+                              '$250 a day [zvX7UreND4E @ 00:04:50], Freight 360 says expect around $500 '
+                              'depending on equipment, and Brandon Manney says $500 to $1,000 or more. The '
+                              'TONU trigger splits as well. Never Stop Trucking says the common $150 is '
+                              'paid whether the driver deadheaded two miles or 200, but only once the '
+                              'truck physically reaches the pickup, not halfway there [tvnlRLMXRJ4 @ '
+                              '00:07:56]. Freight 360 instead pays when the driver is actively working the '
+                              'load, including one already rolling toward the shipper an hour before '
+                              'pickup, and expects the customer to cover around $200.'],
+               'table': {'caption': 'Competing playbooks on detention, layover and TONU between brokers, '
+                                    'carriers and dispatchers',
+                         'headers': ['Contested Point', 'Playbook A', 'Playbook B', 'Expert Source'],
+                         'rows': [['Customer refuses to pay detention',
+                                   'Broker pays the carrier anyway because a shipper refusal is no excuse',
+                                   'Broker only pays what the customer authorizes, carrier can take it or '
+                                   'leave it',
+                                   'ShipLeague ([OzmQFxT30NM @ 00:02:22]); Freightbrokerchic ([zvX7UreND4E '
+                                   '@ 00:05:28])'],
+                                  ['Broker spread on accessorial pay',
+                                   'Learn the shipper rate, pay the carrier $100 of $200 hourly, keep the '
+                                   'difference',
+                                   'Invoice the customer and pass detention directly through with zero '
+                                   'broker profit',
+                                   'Brandon Manney The Mentor ([8Mhf3iqBflw @ 00:03:47]); Freight 360 '
+                                   '([A7rlv69JAj8 @ 00:02:31])'],
+                                  ['Length of the free time window',
+                                   '$50 an hour after two hours free is the fair industry standard',
+                                   'Two hours is way too long since 24 pallets should load within one hour',
+                                   'ShipLeague ([OzmQFxT30NM @ 00:03:56]); Never Stop Trucking '
+                                   '([izh0UL8y-_4 @ 00:05:41])'],
+                                  ['Point where a TONU is earned',
+                                   'Truck must physically arrive at the pickup, halfway there earns '
+                                   'nothing at all',
+                                   'Pay whenever the driver is actively working the load, even while still '
+                                   'en route',
+                                   'Never Stop Trucking ([tvnlRLMXRJ4 @ 00:07:56]); Freight 360 '
+                                   '([A7rlv69JAj8 @ 00:04:05])'],
+                                  ['When accessorial terms get set',
+                                   'Detention and layover usually only get discussed once they actually '
+                                   'occur on the load',
+                                   'Detention clause must sit in the rate confirmation before the load is '
+                                   'accepted',
+                                   'Freightbrokerchic ([zvX7UreND4E @ 00:05:09]); Think Trucking '
+                                   '([uHIZpxSLN-c @ 00:06:08])'],
+                                  ['Fair price for an overnight layover',
+                                   'Around $100 to $150 per night if you get a reasonable broker',
+                                   'At a bare minimum $500 and up to $1,000 or more per overnight',
+                                   'Trucking Territory ([Q-HgB9nn1jI @ 00:03:17]); Brandon Manney The '
+                                   'Mentor ([8Mhf3iqBflw @ 00:05:56])'],
+                                  ['What a fair detention hour is worth',
+                                   '$50 an hour is considered a pretty reasonable detention rate for '
+                                   'brokers',
+                                   'Detention should match driving pay at $100 plus, with no free grace '
+                                   'period',
+                                   'Freight 360 ([d6HWIm_kCFk @ 00:04:40]); Think Trucking ([uHIZpxSLN-c @ '
+                                   '00:08:54])']]}},
+              {'heading': 'Section 4: Firsthand Failure Modes, Traps & Economics Checks',
+               'paragraphs': ['The most repeated firsthand loss is booking blind. Tim at Freight Master '
+                              'Resources walked a carrier friend through a first load with a Georgia '
+                              'brokerage: the driver arrived around 10:30 for a noon delivery, was told to '
+                              "take a nap, and at three o'clock learned the appointment was actually 6 "
+                              'a.m. the next morning, putting a hurricane relief pickup at risk while the '
+                              'broker ignored calls, emails, texts and Telegram [1Fdc8KYk8M0 @ 00:02:28]. '
+                              'Neither the rate confirmation nor the carrier agreement mentioned detention '
+                              'or layover, so the broker threw roughly $150 and that was it [1Fdc8KYk8M0 @ '
+                              '00:04:16]. ShipLeague says it is literally rare for a dispatcher or driver '
+                              'to ask about detention while asking commodity, distance, weight and rate '
+                              '[OzmQFxT30NM @ 00:00:18]. Brandon Manney describes having to school callers '
+                              'who book off the load board without ever asking. On Final Mile, Freight 360 '
+                              'traced a carrier who checked in at 10 a.m. for a 5 p.m. pickup, sat until 9 '
+                              'p.m. with no product and bailed, back to nobody setting expectations, and '
+                              'named three things to settle before every pickup: what happens if it is not '
+                              'loaded on time, the detention terms, and the cutoff between detention and '
+                              'layover [xe94bfEYHEU @ 00:04:39].',
+                              'The second trap is the clock itself. Think Trucking warns the two-hour '
+                              'grace is measured from appointment time, not arrival, so an hour spent '
+                              'waiting early may not count at all [uHIZpxSLN-c @ 00:01:10]. Never Stop '
+                              'Trucking reads three or four free hours on a rate confirmation as a big red '
+                              'flag that the broker already knows the shipper loads slowly, and adds that '
+                              'detention usually carries a cap, such as $50 an hour up to $250, after '
+                              'which a $250 layover works out to roughly $10 to $12 an hour [tvnlRLMXRJ4 @ '
+                              '00:05:33]. Freight 360 picked apart a case where a new broker moved an 8 '
+                              'a.m. delivery to 11 a.m. mid-load, the receiver could not start until noon, '
+                              'and the broker recognized detention only from 1 p.m., leaving one billable '
+                              'hour on a lost day. The hosts said they would have paid three hours from '
+                              'the original 8 a.m. appointment, and that most of the time this pattern is '
+                              'a broker lying to cover a hard load, then trying to stiff the carrier '
+                              '[xe94bfEYHEU @ 00:09:49]. They have also watched carriers file on a '
+                              "broker's bond, and told one of their own brokers to pay up because the bond "
+                              'would likely pay and the brokerage would owe it back [xe94bfEYHEU @ '
+                              '00:08:07].',
+                              'Even when the paperwork is clean, the economics stay thin. Pauline Nabacwa '
+                              'sent a truck 160 deadhead miles, sat until 9 p.m., watched the load cancel '
+                              'with no rebook that night or the next day, and the most the broker offered '
+                              'was $150 TONU [fpu1Fhdo9Vs @ 00:07:53]. Pauline learned to reopen TONU '
+                              'terms the moment detention starts counting; on a later load that slid from '
+                              'noon to a 5 p.m. pickup, Pauline had warned the broker about a turn-away, '
+                              'the missing freight piece proved the point, and that earlier warning helped '
+                              'push the TONU to $540 [fpu1Fhdo9Vs @ 00:09:13]. Alfa X Logistics tells '
+                              'dispatch clients it is realistically 50/50: half the time the money is '
+                              'collected, the other half the broker caves, stops responding, and little '
+                              'can be done unless the amount justifies legal action [CNjYZO0c1o4 @ '
+                              '00:02:55]. Craig Bliss adds that most customers refuse detention when the '
+                              'broker got no heads-up before charges started, and that agents and mega '
+                              'brokerages tend to go MIA once detention is requested. The cost of losing '
+                              'it compounds: Think Trucking puts five lost hours a week at $60 an hour at '
+                              '$300 weekly, or $15,600 a year sitting still [uHIZpxSLN-c @ 00:09:27].'],
+               'table': {'caption': 'Firsthand detention, layover and TONU losses with the economics '
+                                    'behind each one',
+                         'headers': ['Failure Mode', 'What Happened', 'Economics Check', 'Expert Source'],
+                         'rows': [['Blanket-signed carrier agreement on a first load',
+                                   'Appointment was really next morning and the broker went silent on '
+                                   'every channel',
+                                   'Roughly $150 paid because nothing on paper required the broker to pay '
+                                   'more',
+                                   'Freight Master Resources ([1Fdc8KYk8M0 @ 00:04:16])'],
+                                  ['Long deadhead straight into a cancellation',
+                                   '160-mile deadhead, wait until 9 p.m., load cancelled, no rebook that '
+                                   'night',
+                                   'Broker offered only $150 for an entire day dedicated to the load',
+                                   'Pauline Nabacwa ([fpu1Fhdo9Vs @ 00:08:10])'],
+                                  ['Broker moves the appointment mid-load',
+                                   'Delivery moved from 8 a.m. to 11 a.m., receiver could not unload '
+                                   'before noon',
+                                   'Broker counted one hour while hosts say three hours were owed from 8 '
+                                   'a.m.',
+                                   'Freight 360 ([xe94bfEYHEU @ 00:09:16])'],
+                                  ['Arriving early and burning the grace window',
+                                   'Hour spent waiting before the appointment time may not count toward '
+                                   'free time',
+                                   'Six-hour wait at $60 an hour is $240 owed only with a documented clock',
+                                   'Think Trucking ([uHIZpxSLN-c @ 00:01:10]); Think Trucking '
+                                   '([uHIZpxSLN-c @ 00:01:25])'],
+                                  ['Driver late to the appointment window',
+                                   'Late arrival forces an overnight wait at the pickup or the delivery '
+                                   'facility',
+                                   'Customer will not pay the layover and the broker may charge a late fee',
+                                   'Freight 360 ([A7rlv69JAj8 @ 00:05:36]); ShipLeague ([OzmQFxT30NM @ '
+                                   '00:03:25])'],
+                                  ['Broker goes unresponsive after the claim',
+                                   "Broker caves and stops responding to the dispatcher's documented "
+                                   'detention requests',
+                                   'Collection runs roughly 50/50 with legal action only worth it on large '
+                                   'amounts',
+                                   'Alfa X Logistics ([CNjYZO0c1o4 @ 00:02:55])'],
+                                  ['Silent shipper queue that kills the next load',
+                                   'Queue too long and facility closing, so no unload until the next '
+                                   'morning',
+                                   'Five hours lost, next load cancelled by its broker, and driver stuck '
+                                   'overnight',
+                                   'Trucking Territory ([Q-HgB9nn1jI @ 00:03:01])']]},
+               'callout': {'kind': 'OPERATOR GATE',
+                           'title': 'Do Not Roll Until These Four Checks Clear',
+                           'body': 'Every loss above traces back to terms nobody wrote down, a clock '
+                                   'nobody documented, or a TONU nobody renegotiated before the '
+                                   'cancellation. Clear these four checks on every load before the truck '
+                                   'moves.',
+                           'items': ['No detention rate, free-time start and layover terms in the rate '
+                                     'confirmation or carrier packet means no booking; a blank agreement '
+                                     'left one carrier with roughly $150 [Freight Master Resources — '
+                                     '1Fdc8KYk8M0 @ 00:04:16].',
+                                     'Three or four free hours on the rate confirmation is a red flag for '
+                                     'a slow shipper, so price the sit into the rate or pass on the load '
+                                     '[Never Stop Trucking — tvnlRLMXRJ4 @ 00:04:56].',
+                                     'Run one email chain with a timestamped arrival notice, a pre-expiry '
+                                     'warning, a detention-started notice and BOL in and out times before '
+                                     'departure, because verbal calls prove nothing [Craig Bliss — '
+                                     'WU9uuEFffXU @ 00:02:33].',
+                                     'Once detention starts counting, reopen TONU terms before the load '
+                                     'cancels instead of accepting a default $150 [Pauline Nabacwa — '
+                                     'fpu1Fhdo9Vs @ 00:08:53].']}}],
+ 'pull_quote': '"A customer not paying it is no excuse for a broker not to pay it to a carrier." — '
+               'ShipLeague (OzmQFxT30NM @ 00:03:10).',
+ 'diagram_id': 'diag-02',
+ 'action_checklist': ['Before booking, ask the broker whether they pay detention, the hourly rate and '
+                      'after how many hours the clock starts, then make sure it is written into the rate '
+                      'confirmation [Trucking Territory — Q-HgB9nn1jI @ 00:04:12].',
+                      'Read the broker carrier agreement instead of blanket signing it; if it is silent, '
+                      'send your own detention, layover and accessorial terms as a PDF or DocuSign for the '
+                      'broker to sign [Freight Master Resources — 1Fdc8KYk8M0 @ 00:07:18].',
+                      'On arrival, email the broker the check-in time plus the exact time and hourly rate '
+                      'at which detention will start [Craig Bliss — WU9uuEFffXU @ 00:02:33].',
+                      'Send a warning before free time expires and a detention-started notice when it '
+                      "does, then add the broker's accounting team or operations staff to the same chain "
+                      'if nobody answers [Craig Bliss — WU9uuEFffXU @ 00:04:36].',
+                      'Get in and out times written on the bill of lading and initialed by someone at the '
+                      'facility, keep gate tickets and receipts, and photograph everything [Think Trucking '
+                      '— uHIZpxSLN-c @ 00:07:00].',
+                      'Brokers: ask every shipper its detention policy up front, send a detention approval '
+                      'email with the PO number when a truck is held, and issue an updated rate '
+                      'confirmation with the approved hours [Brandon Scott — V11p0IBJsTk @ 00:08:16].'],
+ 'statutory_citations': [{'title': 'Freight 360 — How Clear Policies On Detention And Layover Save '
+                                   'Headaches | Final Mile 133 [00:09:49]',
+                          'url': 'https://www.youtube.com/watch?v=xe94bfEYHEU&t=589s',
+                          'relevance': 'Primary practitioner testimony on brokers moving appointments '
+                                       'mid-load, recognizing detention from the wrong time, and bond '
+                                       'claims that force payout.'},
+                         {'title': "ShipLeague — Broker didn't pay Detention?? Broker's take on Detention! "
+                                   '[00:02:22]',
+                          'url': 'https://www.youtube.com/watch?v=OzmQFxT30NM&t=142s',
+                          'relevance': 'Primary practitioner testimony on the broker paying detention to '
+                                       'the carrier even when the customer refuses.'},
+                         {'title': 'Pauline Nabacwa — Detention and TONU Fees In Trucking. [00:09:13]',
+                          'url': 'https://www.youtube.com/watch?v=fpu1Fhdo9Vs&t=553s',
+                          'relevance': 'Primary practitioner testimony on renegotiating a TONU from the '
+                                       'default $150 to $540 after a turn-away.'},
+                         {'title': 'Freight Master Resources — Detention and Layover Pay [00:04:16]',
+                          'url': 'https://www.youtube.com/watch?v=1Fdc8KYk8M0&t=256s',
+                          'relevance': 'Primary practitioner testimony on a carrier left with roughly $150 '
+                                       'after booking with a broker whose agreement said nothing about '
+                                       'detention or layover.'}],
+ 'source_citations': [{'source_type': 'video_pro_tip',
+                       'video_id': 'Q-HgB9nn1jI',
+                       'title': 'How To Make Freight Brokers Pay For Detentions & Layovers',
+                       'channel': 'Trucking Territory',
+                       'author': 'Trucking Territory',
+                       'text': 'Always ask the broker before booking a load if they pay detention, what '
+                               'rate they pay per hour and after how many hours detention time starts, and '
+                               'make sure they include this in the rate confirmation.',
+                       'tip': 'Always ask the broker before booking a load if they pay detention, what '
+                              'rate they pay per hour and after how many hours detention time starts, and '
+                              'make sure they include this in the rate confirmation.',
+                       'timestamp': 252,
+                       'timestamp_seconds': 252,
+                       'timestamp_label': '[00:04:12]',
+                       'url': 'https://www.youtube.com/watch?v=Q-HgB9nn1jI&t=252s',
+                       'markdown': '[00:04:12](https://www.youtube.com/watch?v=Q-HgB9nn1jI&t=252s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q10.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'izh0UL8y-_4',
+                       'title': 'What are TONU, Detention and Layover? Trucking Phrases Explained',
+                       'channel': 'Never Stop Trucking',
+                       'author': 'Never Stop Trucking',
+                       'text': 'When the rate confirmation says first three hours or first four hours '
+                               'free, it means you are probably not going to get detention and the driver '
+                               'is going to stay there for a long time.',
+                       'tip': 'When the rate confirmation says first three hours or first four hours free, '
+                              'it means you are probably not going to get detention and the driver is '
+                              'going to stay there for a long time.',
+                       'timestamp': 181,
+                       'timestamp_seconds': 181,
+                       'timestamp_label': '[00:03:01]',
+                       'url': 'https://www.youtube.com/watch?v=izh0UL8y-_4&t=181s',
+                       'markdown': '[00:03:01](https://www.youtube.com/watch?v=izh0UL8y-_4&t=181s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q10.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'uHIZpxSLN-c',
+                       'title': 'How to Get Paid Detention, Layover & Accessorial Pay as a Truck Driver',
+                       'channel': 'Think Trucking',
+                       'author': 'Think Trucking',
+                       'text': 'That 2-hour grace period is measured from your appointment time, not from '
+                               'when you actually arrive.',
+                       'tip': 'That 2-hour grace period is measured from your appointment time, not from '
+                              'when you actually arrive.',
+                       'timestamp': 70,
+                       'timestamp_seconds': 70,
+                       'timestamp_label': '[00:01:10]',
+                       'url': 'https://www.youtube.com/watch?v=uHIZpxSLN-c&t=70s',
+                       'markdown': '[00:01:10](https://www.youtube.com/watch?v=uHIZpxSLN-c&t=70s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q10.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'uHIZpxSLN-c',
+                       'title': 'How to Get Paid Detention, Layover & Accessorial Pay as a Truck Driver',
+                       'channel': 'Think Trucking',
+                       'author': 'Think Trucking',
+                       'text': 'A driver who loses just 5 hours a week past free time at $60 an hour is '
+                               'giving away $300 a week, and that is $15,600 a year for sitting still.',
+                       'tip': 'A driver who loses just 5 hours a week past free time at $60 an hour is '
+                              'giving away $300 a week, and that is $15,600 a year for sitting still.',
+                       'timestamp': 567,
+                       'timestamp_seconds': 567,
+                       'timestamp_label': '[00:09:27]',
+                       'url': 'https://www.youtube.com/watch?v=uHIZpxSLN-c&t=567s',
+                       'markdown': '[00:09:27](https://www.youtube.com/watch?v=uHIZpxSLN-c&t=567s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q10.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'WU9uuEFffXU',
+                       'title': "Detention Secrets Brokers Don't Want Carriers to Know About",
+                       'channel': 'Craig Bliss',
+                       'author': 'Craig Bliss',
+                       'text': 'Paper trails are very important for proving extra charges; verbal '
+                               'conversations do not prove detention.',
+                       'tip': 'Paper trails are very important for proving extra charges; verbal '
+                              'conversations do not prove detention.',
+                       'timestamp': 392,
+                       'timestamp_seconds': 392,
+                       'timestamp_label': '[00:06:32]',
+                       'url': 'https://www.youtube.com/watch?v=WU9uuEFffXU&t=392s',
+                       'markdown': '[00:06:32](https://www.youtube.com/watch?v=WU9uuEFffXU&t=392s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q10.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'fpu1Fhdo9Vs',
+                       'title': 'Detention and TONU Fees In Trucking.',
+                       'channel': 'Pauline Nabacwa',
+                       'author': 'Pauline Nabacwa',
+                       'text': 'Of recent I have been able to get a load paid out for over five hundred '
+                               'dollars, I think it was 540 dollars, for TONU fees.',
+                       'tip': 'Of recent I have been able to get a load paid out for over five hundred '
+                              'dollars, I think it was 540 dollars, for TONU fees.',
+                       'timestamp': 553,
+                       'timestamp_seconds': 553,
+                       'timestamp_label': '[00:09:13]',
+                       'url': 'https://www.youtube.com/watch?v=fpu1Fhdo9Vs&t=553s',
+                       'markdown': '[00:09:13](https://www.youtube.com/watch?v=fpu1Fhdo9Vs&t=553s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q10.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'OzmQFxT30NM',
+                       'title': "Broker didn't pay Detention?? Broker's take on Detention!",
+                       'channel': 'ShipLeague',
+                       'author': 'ShipLeague',
+                       'text': 'A customer not paying it is no excuse for a broker not to pay it to a '
+                               'carrier.',
+                       'tip': 'A customer not paying it is no excuse for a broker not to pay it to a '
+                              'carrier.',
+                       'timestamp': 190,
+                       'timestamp_seconds': 190,
+                       'timestamp_label': '[00:03:10]',
+                       'url': 'https://www.youtube.com/watch?v=OzmQFxT30NM&t=190s',
+                       'markdown': '[00:03:10](https://www.youtube.com/watch?v=OzmQFxT30NM&t=190s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q10.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'd6HWIm_kCFk',
+                       'title': 'What is Detention Pay for Freight Brokers?',
+                       'channel': 'Freight 360',
+                       'author': 'Freight 360',
+                       'text': 'If a driver earns three bucks a mile on a load and they drive an average '
+                               'of 60 miles an hour, that means they are earning a hundred and eighty '
+                               'dollars per hour that they are driving.',
+                       'tip': 'If a driver earns three bucks a mile on a load and they drive an average of '
+                              '60 miles an hour, that means they are earning a hundred and eighty dollars '
+                              'per hour that they are driving.',
+                       'timestamp': 294,
+                       'timestamp_seconds': 294,
+                       'timestamp_label': '[00:04:54]',
+                       'url': 'https://www.youtube.com/watch?v=d6HWIm_kCFk&t=294s',
+                       'markdown': '[00:04:54](https://www.youtube.com/watch?v=d6HWIm_kCFk&t=294s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q10.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': '7sfi19fbIzU',
+                       'title': '**TONU** Explained for Freight Brokers 🚛',
+                       'channel': 'Freight 360',
+                       'author': 'Freight 360',
+                       'text': 'At the end of the day, if your customer is not going to pay the TONU, you '
+                               'would be paying out of your own pocket to compensate your driver.',
+                       'tip': 'At the end of the day, if your customer is not going to pay the TONU, you '
+                              'would be paying out of your own pocket to compensate your driver.',
+                       'timestamp': 305,
+                       'timestamp_seconds': 305,
+                       'timestamp_label': '[00:05:05]',
+                       'url': 'https://www.youtube.com/watch?v=7sfi19fbIzU&t=305s',
+                       'markdown': '[00:05:05](https://www.youtube.com/watch?v=7sfi19fbIzU&t=305s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q10.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'tvnlRLMXRJ4',
+                       'title': 'Difference between layover and detention',
+                       'channel': 'Never Stop Trucking',
+                       'author': 'Never Stop Trucking',
+                       'text': 'Usually if the driver is like halfway to the pickup and the broker calls '
+                               'and tells you the load has been canceled, they are not going to give you '
+                               'that truck order not used.',
+                       'tip': 'Usually if the driver is like halfway to the pickup and the broker calls '
+                              'and tells you the load has been canceled, they are not going to give you '
+                              'that truck order not used.',
+                       'timestamp': 476,
+                       'timestamp_seconds': 476,
+                       'timestamp_label': '[00:07:56]',
+                       'url': 'https://www.youtube.com/watch?v=tvnlRLMXRJ4&t=476s',
+                       'markdown': '[00:07:56](https://www.youtube.com/watch?v=tvnlRLMXRJ4&t=476s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q10.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'CNjYZO0c1o4',
+                       'title': 'Are Truck Dispatchers financially responsible for Detention, Layover and '
+                                'TONU?',
+                       'channel': 'Alfa X Logistics',
+                       'author': 'Alfa X Logistics',
+                       'text': 'Realistically we have a 50/50 chance; 50% of the time things work and we '
+                               'get you all the money you are owed.',
+                       'tip': 'Realistically we have a 50/50 chance; 50% of the time things work and we '
+                              'get you all the money you are owed.',
+                       'timestamp': 175,
+                       'timestamp_seconds': 175,
+                       'timestamp_label': '[00:02:55]',
+                       'url': 'https://www.youtube.com/watch?v=CNjYZO0c1o4&t=175s',
+                       'markdown': '[00:02:55](https://www.youtube.com/watch?v=CNjYZO0c1o4&t=175s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q10.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'A7rlv69JAj8',
+                       'title': 'What are Accessorial Charges in Truckload Transportation? 🤔 🚛',
+                       'channel': 'Freight 360',
+                       'author': 'Freight 360',
+                       'text': 'This is a charge that should be invoiced directly to your customer and '
+                               'passed directly through to your carrier; no additional profit should be '
+                               'made by you as a freight broker.',
+                       'tip': 'This is a charge that should be invoiced directly to your customer and '
+                              'passed directly through to your carrier; no additional profit should be '
+                              'made by you as a freight broker.',
+                       'timestamp': 151,
+                       'timestamp_seconds': 151,
+                       'timestamp_label': '[00:02:31]',
+                       'url': 'https://www.youtube.com/watch?v=A7rlv69JAj8&t=151s',
+                       'markdown': '[00:02:31](https://www.youtube.com/watch?v=A7rlv69JAj8&t=151s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q10.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'V11p0IBJsTk',
+                       'title': 'How Freight Brokers Handle Detention And Rate Issues!',
+                       'channel': 'Brandon Scott',
+                       'author': 'Brandon Scott',
+                       'text': 'It is your responsibility as a carrier to make sure that your broker has a '
+                               'detention policy in place.',
+                       'tip': 'It is your responsibility as a carrier to make sure that your broker has a '
+                              'detention policy in place.',
+                       'timestamp': 261,
+                       'timestamp_seconds': 261,
+                       'timestamp_label': '[00:04:21]',
+                       'url': 'https://www.youtube.com/watch?v=V11p0IBJsTk&t=261s',
+                       'markdown': '[00:04:21](https://www.youtube.com/watch?v=V11p0IBJsTk&t=261s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q10.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'zvX7UreND4E',
+                       'title': 'FREIGHT BROKER CHIC—-“TONU or DETENTION THAT IS THE QUESTION!”',
+                       'channel': 'Freightbrokerchic',
+                       'author': 'Freightbrokerchic',
+                       'text': 'As the carrier charges us a detention, we can only pay out what our '
+                               'customer has already told us that they will pay in these situations.',
+                       'tip': 'As the carrier charges us a detention, we can only pay out what our '
+                              'customer has already told us that they will pay in these situations.',
+                       'timestamp': 387,
+                       'timestamp_seconds': 387,
+                       'timestamp_label': '[00:06:27]',
+                       'url': 'https://www.youtube.com/watch?v=zvX7UreND4E&t=387s',
+                       'markdown': '[00:06:27](https://www.youtube.com/watch?v=zvX7UreND4E&t=387s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q10.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': '1Fdc8KYk8M0',
+                       'title': 'Detention and Layover Pay',
+                       'channel': 'Freight Master Resources',
+                       'author': 'Freight Master Resources',
+                       'text': 'What we really want to pay attention to when we are filling out those '
+                               'broker carrier agreements is do not just blanket sign those things.',
+                       'tip': 'What we really want to pay attention to when we are filling out those '
+                              'broker carrier agreements is do not just blanket sign those things.',
+                       'timestamp': 314,
+                       'timestamp_seconds': 314,
+                       'timestamp_label': '[00:05:14]',
+                       'url': 'https://www.youtube.com/watch?v=1Fdc8KYk8M0&t=314s',
+                       'markdown': '[00:05:14](https://www.youtube.com/watch?v=1Fdc8KYk8M0&t=314s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q10.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'xe94bfEYHEU',
+                       'title': 'How Clear Policies On Detention And Layover Save Headaches | Final Mile '
+                                '133',
+                       'channel': 'Freight 360',
+                       'author': 'Freight 360',
+                       'text': 'Most of the time this is a broker lying; this is a broker that knew it '
+                               'could not get unloaded until 12 and could not get the load covered.',
+                       'tip': 'Most of the time this is a broker lying; this is a broker that knew it '
+                              'could not get unloaded until 12 and could not get the load covered.',
+                       'timestamp': 589,
+                       'timestamp_seconds': 589,
+                       'timestamp_label': '[00:09:49]',
+                       'url': 'https://www.youtube.com/watch?v=xe94bfEYHEU&t=589s',
+                       'markdown': '[00:09:49](https://www.youtube.com/watch?v=xe94bfEYHEU&t=589s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q10.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': '8Mhf3iqBflw',
+                       'title': 'HOW FREIGHT BROKERS EARN MORE MONEY WITH DETENTION & LAYOVER-PAY WHILE '
+                                'SOME TRUCK DRIVERS ARE MAD!!!',
+                       'channel': 'Brandon Manney The Mentor',
+                       'author': 'Brandon Manney The Mentor',
+                       'text': 'The shipper is going to pay that freight broker 400 for that driver being '
+                               'there for that two hours, and the freight broker tells the trucking '
+                               'company they are going to get a hundred dollars per hour.',
+                       'tip': 'The shipper is going to pay that freight broker 400 for that driver being '
+                              'there for that two hours, and the freight broker tells the trucking company '
+                              'they are going to get a hundred dollars per hour.',
+                       'timestamp': 227,
+                       'timestamp_seconds': 227,
+                       'timestamp_label': '[00:03:47]',
+                       'url': 'https://www.youtube.com/watch?v=8Mhf3iqBflw&t=227s',
+                       'markdown': '[00:03:47](https://www.youtube.com/watch?v=8Mhf3iqBflw&t=227s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q10.'}]}

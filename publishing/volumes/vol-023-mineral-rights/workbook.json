@@ -1,470 +1,470 @@
 {
   "workbook_id": "wb-023-mineral-rights",
   "volume_id": "vol-023-mineral-rights",
-  "title": "Mineral Rights — Operator Companion Workbook",
-  "subtitle": "6 Printable Operator Worksheets for Mineral and NPRI Underwriting, Pooling-Docket Research, Royalty Reconciliation, Capital Discipline, and Institutional Exits",
+  "title": "Mineral Rights — Practitioner Testimony Operator Workbook",
+  "subtitle": "Ownership, Leasing and Division Order Worksheets: Mapping Mineral and Royalty Interests, Rebuilding Every Decimal, and Clearing Title Before Signing",
   "worksheets": [
     {
       "worksheet_id": "ws-01",
       "number": 1,
-      "title": "Opportunity Underwriting and Counterparty Qualification",
-      "purpose": "Turn a mineral acquisition lead into a documented investment decision before committing capital. Establish the exact property interest, ownership chain, production exposure, development catalyst, seller authority, and realistic institutional buyer universe while separating recorded facts from speculative drilling expectations.",
-      "chapter_ref": "Q1, Q2, Q6",
+      "title": "Ownership Map and Tract Inventory",
+      "purpose": "Build a verified, tract-by-tract record of what you actually own, separating mineral, royalty, NPRI, and override interests, converting every acre figure to net royalty acres, and tying each entry to a source deed and state well record.",
+      "chapter_ref": "Q1-Q2",
       "instructions": [
-        "Select one county, producing formation, and acquisition strategy before reviewing offers. Assemble the recorded instruments, lease schedule, production history, public docket entries, and ownership evidence into one dated packet so underwriting assumptions remain traceable to source documents.",
-        "Calculate net mineral acres separately from royalty ownership. Read every reservation and granting clause before applying a lease royalty fraction, and obtain a title professional's written interpretation whenever fixed, floating, term, or depth-limited interests create competing decimal outcomes.",
-        "Treat pooling applications, permits, and operator presentations as research inputs rather than completed development. Record hearing dates, protests, final orders, elections, and expiration conditions, then price a delayed-development case alongside the proposed near-term drilling case.",
-        "Verify seller identity and signing authority through independently obtained records and a trusted callback. Compare the payment recipient with the deed grantor and estate or entity documents before allowing an executed purchase agreement to enter closing.",
-        "Identify potential institutional buyers using completed transactions and their stated acquisition criteria. Document acreage thresholds, title expectations, data requirements, and concentration limits without treating an indicative conversation as a binding bid or a guaranteed resale channel."
+        "Gather every deed, lease, division order, and royalty statement related to the minerals before filling any field, and keep everything that might be related.",
+        "Work one tract at a time, copying legal descriptions from the source deed rather than from a check stub or tax notice.",
+        "Express every interest three ways: net mineral acres, royalty decimal, and net royalty acres normalized to one-eighth.",
+        "Run the sum check on every tract and pull the deeds whenever owner decimals fail to add up to the lease royalty.",
+        "Redact Social Security numbers before any document touches an AI tool, and spot-check every AI-generated figure by hand."
       ],
       "fields": [
         {
-          "name": "County, formation, and acquisition thesis",
+          "name": "interest_type_classification",
           "type": "textarea",
-          "prompt": "Define the geographic boundary, target formation, interest type, investment duration, and observable reason the property fits your strategy. State what evidence would invalidate the thesis before contacting additional owners.",
-          "example": "Target producing oil and gas minerals in one defined Reeves County, Texas, acquisition area, with a thirty-six-month holding case. Require recorded ownership and twelve monthly check details. Reject purchases supported only by neighboring permits when the subject tract has no documented development or producing allocation."
+          "prompt": "List every interest you hold in each tract and label it as a mineral interest, royalty interest, non-participating royalty interest, or overriding royalty interest. Note which document created it, whether it carries the executive right, and whether it can collect bonus or rentals.",
+          "example": "Tract A, 40 gross acres in Reeves County: full mineral interest by 1952 deed, executive right included, so I lease and collect bonus. Tract B: a 1/16 NPRI, production only, no lease, bonus, or rentals. An NPRI can be sold for a lump sum while the mineral owner keeps control [Matt Sands — 3AnqzZSRGtg @ 00:11:29]."
         },
         {
-          "name": "Interest classification and conveyance language",
+          "name": "nma_to_nra_conversion",
           "type": "textarea",
-          "prompt": "Quote the operative grant and reservation language, then classify mineral, executive, royalty, and depth rights separately. Explain whether an NPRI fraction is fixed or floating and identify unresolved construction questions.",
-          "example": "Instrument A conveys an undivided one-fourth mineral interest in 160 gross acres without a listed depth limitation. Instrument B reserves one-fourth of the royalty, requiring separate floating-NPRI analysis. Do not label both instruments forty royalty acres or combine their burdens without tracing which estate each instrument affects."
+          "prompt": "Convert your net mineral acres into net royalty acres using your actual lease royalty rate, then restate every per-acre offer you have received in dollars per net royalty acre so competing bids can be compared on the same one-eighth basis.",
+          "example": "16 NMA under a 25% royalty equals 32 NRA because net royalty acres are normalized to one-eighth. A buyer offering $6,000 per NMA, or $96,000 total, is really paying only $3,000 per NRA. I logged both figures side by side before replying to the buyer's letter [Matt Sands — iVFjOPF8JW0 @ 00:09:06]."
         },
         {
-          "name": "Net mineral acres and unit decimal",
-          "type": "textarea",
-          "prompt": "Show gross acres, mineral ownership, lease royalty, unit acreage, and the allocation method actually authorized by the governing documents. Identify burdens and participation adjustments before accepting a revenue decimal.",
-          "example": "For an unburdened illustrative tract, 160 gross acres times 25% ownership equals 40 NMA. With a 20% lease royalty and valid acreage allocation across 1,280 acres, the decimal is 40 divided by 1,280 times 0.20, or 0.00625. Confirm this allocation rather than importing it into every horizontal unit."
+          "name": "lease_royalty_rate",
+          "type": "text",
+          "prompt": "Record the royalty rate on each existing lease and, for unleased tracts, the rate a buyer or lessee assumes in its offer. Note the going rate in your area and whether a gap leaves room to negotiate before you respond.",
+          "example": "Tract C is unleased. The buyer's offer assumed a 12.5% royalty, but nearby leases are running 15-20%, so I asked which rate they used and countered [Matt Sands — iVFjOPF8JW0 @ 00:14:51]. Lease royalties typically run 12.5% to 25% of gross well revenue, paid monthly while the well produces [Steven Hatcher | Minerals Guy — WZxmCcTgeWk @ 00:00:49]."
         },
         {
-          "name": "Fixed and floating NPRI comparison",
+          "name": "npri_fixed_or_floating",
           "type": "textarea",
-          "prompt": "Model competing royalty interpretations using the actual tract allocation and lease fraction. Preserve the instrument language alongside each calculation, and explain why an NPRI must not automatically be multiplied by royalty twice.",
-          "example": "Across a fully represented 160-acre tract in a 1,280-acre unit, a fixed 1/64 royalty yields 0.015625 times 160/1,280 equals 0.001953125. A floating one-fourth of a 20% royalty yields 0.00625 instead. These alternative examples assume no additional ownership fraction, burdens, or allocation adjustments."
+          "prompt": "Quote the exact NPRI wording from each reservation deed and decide whether it reads as a fixed fraction of production or a floating fraction of whatever royalty the lease sets. Calculate the NPRI decimal under both readings at your current lease royalty.",
+          "example": "The 1961 deed reserves 'one-half of the one-eighth royalty.' Read as fixed, it stays at one-sixteenth whether the lease royalty is one-eighth or 25%. Read as floating, it would be one-half of the royalty, or 12.5% on my 25% lease. In Van Dyke that difference was worth about $44 million [Oliva Gibbs — QPk4GTvt5YU @ 00:12:22]."
         },
         {
-          "name": "Recorded chain and severance investigation",
+          "name": "tract_sum_check",
           "type": "textarea",
-          "prompt": "List the deed chain, mineral severances, probate links, liens, reservations, and depth restrictions that establish saleable ownership. Assign a responsible reviewer and a specific corrective document for every material break.",
-          "example": "The seller's 2018 deed references a 1974 mineral reservation and a 2009 estate distribution. The landman retrieves both instruments and the probate order; the title attorney resolves whether the reserved interest remains outstanding. A missing heir conveyance blocks funding until an acceptable recorded curative instrument establishes the seller's interest."
+          "prompt": "Build a sum check for every tract: list each owner's royalty or NPRI decimal, add them together, and compare the total to the lease royalty. Record any shortfall or overage and which deeds you pulled to explain it.",
+          "example": "Tract B lease royalty is 25%. Ann holds 12.5% as mineral owner, Bob holds a 6.25% NPRI, and Carl was shown at 3.125%, totaling 21.875%. Ann plus Bob plus Carl has to equal the lease royalty, so I went back to the deeds to find the missing 3.125% [LMJ Land Services — IBxLIQjDNto @ 00:02:02]."
         },
         {
-          "name": "Production, decline, and operator concentration",
+          "name": "orri_status_and_valuation",
           "type": "textarea",
-          "prompt": "Summarize monthly production, realized pricing, downtime, well age, decline assumptions, and operator exposure. Distinguish historical reported volumes from forecast volumes, and identify whether public data represent wells, leases, or allocated units.",
-          "example": "Twelve purchaser statements support $18,750 of annual gross royalty on Tract A before specified deductions. The downside case applies a 20% volume decline and 25% price reduction, producing $11,250 before deductions. One operator controls all current cash flow, so the file separately models ninety days of payment interruption."
+          "prompt": "For any overriding royalty you hold or are considering, record the underlying lease, whether it is still alive, the producing wells holding it, protective language against washout, and the production basis you used to value it today.",
+          "example": "Offered a 1% ORRI on an old single-well lease. The override is carved from the working interest and dies if the lease is released, so I confirmed the well is economic and valued only existing production. I also requested anti-washout language in the assignment before agreeing to any price [Matt Sands — pjmqehPUgL8 @ 00:07:10]."
         },
         {
-          "name": "Pooling-docket catalyst and jurisdiction",
+          "name": "legal_description_and_gis_plot",
           "type": "textarea",
-          "prompt": "Identify the agency, proceeding type, tract coverage, public event dates, and legal effect of each docket development. Separate a filed application from an effective order and an effective order from production.",
-          "example": "For an illustrative Oklahoma prospect, track the pooling application under 52 O.S. § 87.1, service evidence, hearing, final order, and owner election deadline. A scheduled hearing does not establish completed pooling or drilling. Keep this Oklahoma workflow separate from Texas Mineral Interest Pooling Act analysis under Natural Resources Code Chapter 102."
+          "prompt": "Copy the legal description for each tract directly from the source deed, plot it on the free state GIS map, and record the API numbers of every well and permit that falls inside or touches the tract boundary.",
+          "example": "Tract A legal description pulled from the 1952 deed and plotted on the Texas RRC viewer using 8-digit API entry. Two permitted laterals cross the section, and I confirmed the first take point and lateral footage fall inside my tract on the permit and plat before trusting the nearby pad [Matt Sands — gFgW6n9nb-c @ 00:13:20]."
         },
         {
-          "name": "Seller identity and authority",
+          "name": "state_data_sources",
           "type": "textarea",
-          "prompt": "Record the grantor's verified identity, ownership capacity, authorized signer, independent contact source, and payment instructions. Identify estate, trust, entity, or marital documents that must be reviewed before execution and disbursement.",
-          "example": "A Texas limited liability company owns the minerals, while an individual negotiates the sale. Obtain its formation record, governing authority, and transaction authorization. Confirm the signer through an independently sourced telephone number, then require the escrow recipient to match documented ownership rather than a newly emailed personal bank account."
+          "prompt": "Name the state data sites you use for each tract, the subscription or cost of each, and the production figures you pulled, noting whether volumes are reported by lease or by well and whether gas is wet or dry.",
+          "example": "North Dakota tract: skipped the $50-a-year DMR Basic subscription and used WellDatabase's free tier [Matt Sands — 1HDBzjGoDdc @ 00:16:47]. Texas tract: summed wells at the lease level and read the disposition column, since April 2012 showed 1,990 bbl produced but 1,905 sold. RRC gas is wet, so paid volume runs lower [Matt Sands — gFgW6n9nb-c @ 00:25:22]."
         },
         {
-          "name": "Institutional buyer qualification and exit fit",
+          "name": "title_search_record",
           "type": "textarea",
-          "prompt": "Name the intended buyer category, minimum package size, producing exposure, acceptable jurisdictions, title standards, and required data format. Record the difference between a qualified buyer conversation and an executable purchase offer.",
-          "example": "The target buyer acquires producing Permian mineral packages with at least $100,000 annual documented royalty receipts. Our $18,750 tract is an aggregation component, not a standalone institutional package. The buyer requests tract polygons, recorded deeds, payor decimals, and twenty-four months of statements before providing a priced indication."
+          "prompt": "Describe the title work completed on each tract, who performed it, what it cost, and how long it took. Note whether a dedicated mineral title search was run, since the mineral chain runs separately from the surface chain.",
+          "example": "Inherited Tract D: hired a landman at about $600 a day for a limited title search that cost roughly $3,000 and took about one week [Matt Sands — u4xA0UNrxQs @ 00:19:39]. The mineral chain was run on its own, separate from the surface, and it exposed a 1938 split-off [AFX Videos — JpHijIsWFL4 @ 00:01:50]."
         },
         {
-          "name": "Investment decision and kill criteria",
+          "name": "master_inventory_and_ai_controls",
           "type": "textarea",
-          "prompt": "State the maximum purchase price, approved assumptions, remaining conditions, responsible decision maker, and explicit rejection triggers. Explain which uncertainty can be priced and which uncertainty prevents an acquisition entirely.",
-          "example": "Authorize an indicative price ceiling of $120,000 for Tract A only after the forty NMA and 0.00625 decimal are established. Reject unresolved competing ownership or unverifiable seller authority. A drilling delay may justify a lower price; a missing ownership link cannot be solved merely by assuming a higher future commodity price."
+          "prompt": "Describe the master spreadsheet that logs every tract with interest type, net acres, lease status, and provenance. Note any AI tools used to build run sheets, how you spot-checked their output, and what personal data you redacted first.",
+          "example": "One workbook, one row per tract: interest type, NMA, NRA, lease status, operator, and source deed. I fed division orders to a paid AI tier with training opt-out, after redacting my Social Security number, then spot-checked every decimal by hand. Every related paper stays in a labeled folder for my heirs [Matt Sands — NkT15qxxGYM @ 00:34:48]."
         }
       ],
-      "completion_gate": "Advance only when the acquisition lead, title reviewer, and capital owner have signed the source-linked ownership calculation, downside valuation, counterparty verification, and written rejection criteria."
+      "completion_gate": "Every tract has a source deed, an interest type, net mineral acres, net royalty acres, a lease status, and a passing sum check; every offer on file has been converted to dollars per net royalty acre; and every NPRI and ORRI has a written fixed-or-floating or lease-alive determination."
     },
     {
       "worksheet_id": "ws-02",
       "number": 2,
-      "title": "Unit Economics, Defect Reserve, and Working-Capital Float",
-      "purpose": "Build an acquisition and portfolio model that preserves the distinction between mineral purchase capital, royalty receipts, realized trading gains, operating costs, and owner profit. Quantify title-curative exposure, payment delays, commodity sensitivity, and liquidity without inflating revenue through returned investment basis.",
-      "chapter_ref": "Q3, Q4",
+      "title": "Lease Terms, Pooling Math and Net Revenue Interest",
+      "purpose": "Judge every lease and pooling decision on royalty economics rather than bonus headlines, and rebuild owner and operator net revenue interests from acres, royalty fractions, and burdens so no decimal is accepted on faith.",
+      "chapter_ref": "Q3-Q4",
       "instructions": [
-        "Lock the three canonical portfolio scenarios before entering tract assumptions. Use the stated revenue and owner-profit figures exactly, label supporting allocations as illustrative, and never represent one acquisition's cash yield as the entire portfolio's net margin.",
-        "Maintain separate schedules for acquisition basis, realized gain, recurring royalties, overhead, direct transaction costs, and cash restrictions. Reconcile bank movement to those schedules rather than classifying every incoming wire as recognized operator revenue or spendable profit.",
-        "Build the royalty forecast from verified ownership decimals and an explicit unit revenue assumption. Show production decline, commodity price, deductions, and downtime separately so a reviewer can identify the exact input responsible for each valuation change.",
-        "Size the title-defect reserve from identified curative tasks and credible downside costs. Treat a cash designation as a liquidity decision rather than an automatic expense, and release reserved funds only after documented resolution or a revised written exposure assessment.",
-        "Stress payment suspension and delayed resale together, then confirm the business can fund overhead without forced asset sales. State distribution limits and capital-call assumptions explicitly; an attractive paper gain does not pay a near-term legal invoice."
+        "Negotiate before signing; once a lease is executed, its royalty, shut-in, and pooling terms may govern for 20, 30, or 50 years.",
+        "Read the full lease, including strike-outs and addenda, before entering any royalty rate.",
+        "Write every calculation as fractions first, then decimals, showing acres, unit size, and royalty rate as separate inputs.",
+        "Calendar every election deadline and shut-in payment date the day the notice or lease arrives.",
+        "Check each lease separately when a unit combines leases with different burdens, and sum back to the tract share."
       ],
       "fields": [
         {
-          "name": "Canonical portfolio scenario lock",
+          "name": "royalty_versus_bonus",
           "type": "textarea",
-          "prompt": "Enter annual gross revenue, net margin, owner net profit, and team size for all three canonical scenarios. Calculate implied total costs and preserve these figures when adding detailed operating assumptions.",
-          "example": "Conservative: $30,000 revenue, 20% margin, $6,000 profit, $24,000 costs, 1 FT plus 3 C. Base: $215,000, 32.5%, $69,875, $145,125 costs, 1 FT plus 3 C. Scaled: $400,000, 45%, $180,000, $220,000 costs, 2 FT plus 4 C, totaling six people."
+          "prompt": "Compare each lease offer's bonus against its royalty rate and estimate the long-term value of every extra point of royalty. Record whether you would accept a lower or zero bonus in exchange for the highest available royalty, and why.",
+          "example": "Offer 1: $1,500 per acre bonus at 1/5. Offer 2: zero bonus at 25%. Sands says it is almost always better to take zero bonus and the highest royalty because the rate drives mineral value going forward [Matt Sands — qru8bh4mMms @ 00:09:06]. Still, a zero bonus can signal an operator not serious about drilling [Energy Law Professor — WBGDgooXnq8 @ 00:22:32]."
         },
         {
-          "name": "Recognized revenue and returned basis bridge",
-          "type": "textarea",
-          "prompt": "Bridge royalty receipts and realized rights-trading gains to total recognized operator revenue. Show gross disposal proceeds and returned basis separately, and identify whether transaction costs are expensed or included in basis.",
-          "example": "Illustrative Base revenue combines $175,000 royalty receipts and $40,000 realized gain. A $160,000 Tract B sale returns $120,000 recorded basis and creates that $40,000 gain. Total incoming receipts are $335,000, but recognized operator revenue remains $215,000. Selling costs sit within the stated expense bridge, not inside the gain again."
+          "name": "bonus_benchmark",
+          "type": "text",
+          "prompt": "Estimate the current value per net mineral acre for each tract, divide it by two and by three to set a fair bonus range, and compare that range to the bonus actually offered in writing by each landman or operator.",
+          "example": "Nacogdoches County Haynesville tract, 14.3 NMA, offered $300 per NMA. Minerals valued near $3,000 per NMA support about a $1,000 per acre bonus using the divide-by-two-or-three rule [Matt Sands — xiP5PiaaYKE @ 00:06:17]. I pulled competing terms from the Lease Price Report and Mineral Rights Forum before countering [Matt Sands — xiP5PiaaYKE @ 00:09:06]."
         },
         {
-          "name": "Purchase basis and royalty cash yield",
+          "name": "lease_face_and_addenda_check",
           "type": "textarea",
-          "prompt": "Record the acquisition's capitalized basis and its forecast royalty receipts before and after specified deductions. Distinguish unlevered cash yield from owner net margin, and disclose any acquisition costs excluded from the illustrative calculation.",
-          "example": "Tract A has an illustrative $120,000 recorded basis. Annual unit sales of $3,000,000 times 0.00625 produce $18,750 before deductions, a 15.625% gross cash yield. Assumed annual deductions of $1,650 reduce receipts to $17,100 and the cash yield to 14.25%, before portfolio overhead and income taxes."
+          "prompt": "Read every page of each existing lease, including strike-outs, interlineations, and addenda, and record the royalty rate that actually controls. If only a memorandum of lease is recorded, note how you obtained or back-calculated the real terms.",
+          "example": "The printed form says 1/8, but like the 1998 Jim Wells County lease where 1/8 was struck and replaced with 1/5, my addendum sets 19% and overrides the printed 12.5% [Tracy Lenz — HGUBxgz_6Ak @ 00:22:21]. A second tract shows only a memorandum, so I back-calculated royalty from three of the four variables on the check [Tracy Lenz — HGUBxgz_6Ak @ 00:13:01]."
         },
         {
-          "name": "Commodity and depletion stress calculation",
+          "name": "shut_in_clause_log",
           "type": "textarea",
-          "prompt": "Recalculate the acquisition under separate price, volume, and payment-interruption stresses. State which costs remain fixed, which deductions move with sales, and whether the analysis includes new wells or only existing production.",
-          "example": "Apply 20% lower production and 25% lower realized price to the $18,750 gross royalty forecast: $18,750 times 0.80 times 0.75 equals $11,250. For a simple downside test, hold $1,650 deductions constant, leaving $9,600 before overhead. No future wells or sale appreciation rescue this existing-production calculation."
+          "prompt": "Quote the shut-in royalty clause from each lease, note whether it covers gas wells only or all wells, list the payment due dates, and record whether every shut-in payment arrived on time, since a late payment can end the lease.",
+          "example": "Lease 2 has a 'gas well' shut-in clause, so it cannot hold an oil well shut in for low prices [Energy Law Professor — 7sPTlHr4F7A @ 00:12:56]. Its language keeps the lease 'while royalty is so paid,' and in Freeman v. Magnolia a late payment terminated the lease. I log every payment date [Energy Law Professor — 7sPTlHr4F7A @ 00:07:22]."
         },
         {
-          "name": "Title scrub and defect reserve",
-          "type": "textarea",
-          "prompt": "Itemize title-review, curative, recording, and disputed-payment exposures with expected timing and responsible owners. Separate a designated cash reserve from booked expense and explain what evidence permits each reserve release.",
-          "example": "Designate $15,000 cash for a $6,000 heirship curative, $4,000 specialist title review, $2,000 recording and document retrieval allowance, and $3,000 contingency. This designation is not itself an expense. The accountant classifies actual invoices once incurred; the acquisition lead releases unused cash only after the title reviewer accepts the recorded cure."
+          "name": "pooled_tract_dilution",
+          "type": "text",
+          "prompt": "For each pooled unit, multiply your lease royalty by your tract acres over total unit acres and write down the resulting decimal. Compare it with the headline royalty rate so you value the interest on what it actually pays.",
+          "example": "My 5-acre tract sits in a 40-acre pooled unit under a 3/16 lease. The math is 3/16 x 5/40 = .0234375, really about 2% rather than the 18% the lease face suggests. I now value this tract on the .0234375 decimal, not the headline royalty rate [behoge13 — le24nqd0H0M @ 00:13:55]."
         },
         {
-          "name": "Working-capital float and receipt suspension",
+          "name": "force_pooling_election",
           "type": "textarea",
-          "prompt": "Calculate the cash needed for overhead, expected receipt delays, and curative work before distributions. Identify double counting between lost receipts and funded overhead, and define the minimum unrestricted cash balance required throughout the stress period.",
-          "example": "At $6,000 monthly cash overhead, six months require $36,000. Add the separately designated $15,000 curative reserve for a $51,000 liquidity target. A ninety-day suspension of $1,425 monthly Tract A receipts delays $4,275; do not add that amount again when the six-month model already assumes zero receipts."
+          "prompt": "If you received a force-pooling order or notice, record the election options offered, the written election deadline, the risk penalty attached to each option, and the default deemed-lease terms that apply if no election is made.",
+          "example": "Notice received for a $6M well. Option two carries a 300% risk penalty, meaning $18M of production is recovered before payout, and reworks reset it. Default with no election is a deemed lease at $300 per acre and 1/8. I mailed my election in writing ten days early [behoge13 — le24nqd0H0M @ 00:37:31]."
         },
         {
-          "name": "Base expense and profit reconciliation",
+          "name": "leverage_and_holdout_risk",
           "type": "textarea",
-          "prompt": "Allocate the Base scenario's implied annual costs across overhead, transaction work, specialist support, and administration. Make the arithmetic reconcile exactly and explain which line items are recurring versus acquisition-dependent costs.",
-          "example": "Base costs comprise $72,000 recurring overhead, $31,000 specialist title and land support, $18,000 deal diligence and sale execution, $12,125 accounting and administration, and $12,000 other operating expense. Total costs equal $145,125; subtracting them from $215,000 revenue produces $69,875 owner net profit, exactly 32.5%."
+          "prompt": "Describe your leverage on each tract, including your net acreage relative to the unit size, nearby delineation results, and any offers you have declined. Record what you would lose if drilling moved elsewhere while you held out for better terms.",
+          "example": "I own 5 net acres inside a 1,280-acre unit, so I am more likely to be pooled than to dictate terms; 5,000-acre owners command 1/4 cost-free royalties. During the Haynesville rush bonuses hit $20,000 per acre, yet holdouts lost multi-million-dollar offers once delineation drilling proved their acreage worthless [Steven Hatcher | Minerals Guy — hZZNvuvGfkc @ 00:02:04]."
         },
         {
-          "name": "Startup capital and cash allocation",
+          "name": "owner_nri_decimal",
           "type": "textarea",
-          "prompt": "Choose a startup capitalization within the canonical range and allocate it between purchases, liquidity, curative exposure, and undeployed capital. Preserve the distinction between cash spent on assets and current-period operating expense.",
-          "example": "An illustrative $400,000 capitalization sits within the $15,000–$75,000 range. Allocate $120,000 each to Tracts A and B, $36,000 overhead float, $15,000 curative cash, and $109,000 uncommitted capital. These allocations total $400,000; they do not create $240,000 of immediate operating expense simply because two mineral purchases close."
+          "prompt": "Calculate your owner net revenue interest for each well by dividing net mineral acres by drilling spacing unit acres and multiplying by the lease royalty. Then estimate an early royalty check using expected volumes and a realistic realized price.",
+          "example": "Bakken tract: 16 NMA divided by a 1,280-acre DSU times a 15% royalty gives .001875 [Matt Sands — Yy7az5T7_vs @ 00:12:22]. Nearby wells averaged 10,000 barrels in three months; at $50 per barrel, not the $60 WTI print, that is about $937. State data can lag a couple of months [Matt Sands — Yy7az5T7_vs @ 00:16:47]."
         },
         {
-          "name": "Scaled workload and cost capacity",
+          "name": "operator_nri_and_overrides",
           "type": "textarea",
-          "prompt": "Test whether the Scaled scenario's staffing and cost envelope can support the portfolio's actual statement volume, title workload, and acquisitions. Separate recurring monthly overhead from annual variable transaction and specialist costs.",
-          "example": "Scaled revenue of $400,000 less $220,000 total costs leaves $180,000 owner net profit. Illustratively, recurring overhead is $10,000 monthly, with $100,000 annual variable costs beyond it. Two full-time operators and four contractors cover acquisition, reconciliation, land, title, accounting, and data work without exceeding six people."
+          "prompt": "Work out the operator's net revenue interest on each lease by subtracting the royalty and every override from its working interest, then carry that lease-level figure into the unit by tract share. Run the check lease by lease.",
+          "example": "A 1/8 lease leaves the operator 0.875 and a 3/16 lease leaves 0.8125. On the Sunrise lease, 100% WI minus a 12.5% royalty and 5% geologist override leaves 82.5 cents per dollar; pooled as 80 acres into 320, that is a 0.20625 unit NRI. I checked each lease separately, never commingled [UHD Continuing and Professional Education — oHKF06pFkh0 @ 00:10:21]."
         },
         {
-          "name": "Capital release and distribution rule",
+          "name": "npri_and_unleased_trap",
           "type": "textarea",
-          "prompt": "Specify when cash may leave the business and which balances remain restricted by operating policy. Reconcile sale proceeds, expenses, reserve requirements, and proposed distributions without treating returned basis as earned operating profit.",
-          "example": "After Tract B sells for $160,000, tag $120,000 as returned investment basis and $40,000 as realized gain before separately recorded expenses. Distributions require the next six months of overhead plus unresolved curative exposure to remain funded. Reinvestment of returned basis is a capital decision, not a profit margin improvement."
+          "prompt": "Identify any conveyance using 'produced and saved' or similar royalty language, record the NPRI it created, and note whether a lease exists yet. Keep mineral interest in its own spreadsheet column rather than folding it into acres.",
+          "example": "The 1974 deed to Charlie reads 'produced and saved,' so Charlie holds a 3% NPRI, not minerals. With no lease yet, David owns 100% of the minerals subject to that NPRI, and the answer is not 9.5% [Land Training www.landtraining.net — HkEK5QVZAJ0 @ 00:04:30]. Mineral interest sits in its own column so a bad input stays visible."
         }
       ],
-      "completion_gate": "Advance only when all three canonical scenarios reconcile exactly, the Base cash-to-revenue bridge excludes returned basis, and the stressed cash schedule funds overhead and identified defects without relying on an uncontracted sale."
+      "completion_gate": "Every lease offer has a bonus benchmark and a royalty comparison, every pooled tract has a royalty-times-tract-share decimal, every force-pooling notice has a written election or a recorded decision to default, and every owner and operator NRI reconciles lease by lease."
     },
     {
       "worksheet_id": "ws-03",
       "number": 3,
-      "title": "Execution, Ownership Ledger, and Technical Pre-Flight",
-      "purpose": "Convert an approved acquisition into recorded ownership, correct payor setup, and auditable receipts. Establish document controls, parcel identifiers, closing instructions, decimal verification, transaction coding, and exception handling so title defects and payment errors cannot disappear inside a successful-looking dashboard.",
-      "chapter_ref": "Q7, Q8",
+      "title": "Division Order Audit and Title Curative Log",
+      "purpose": "Verify the decimal on every division order and check stub before signing, control the paper you return to each operator, and document the title chain and curative steps needed to release suspended royalties.",
+      "chapter_ref": "Q5-Q6",
       "instructions": [
-        "Assign immutable identifiers before importing documents or sending purchase agreements. Link the property, instrument, owner, lease, well, unit, and payor through explicit relationships rather than assuming an operator's property number uniquely identifies the mineral estate.",
-        "Prepare a closing checklist that distinguishes executed documents, verified authority, cleared conditions, recorded instruments, and disbursed funds. A signed deed alone does not prove recording, and a bank debit does not prove the correct recipient received payment.",
-        "Recalculate ownership decimals from source instruments before accepting division-order values. Compare the payor's allocation method with lease and unit documents, then route any unexplained difference to a named reviewer rather than silently forcing the ledger to match.",
-        "Reconcile each statement line to production month, product, price, volume, taxes, deductions, and cash settlement. Preserve adjustments as separate records so retroactive corrections remain visible and do not overwrite the original accounting or supporting evidence.",
-        "Complete a technical pre-flight with duplicate files, revised statements, suspended payments, and mismatched decimals before importing a live portfolio. Define rollback procedures and retain original source files so an incorrect parser release can be reversed cleanly."
+        "Do not sign any division order until your rebuilt decimal matches the operator's figure or the operator has shown its calculation in writing.",
+        "Treat a division order as a statement of your decimal, not a lease amendment, and strike language that changes lease terms.",
+        "Return the W-9 to every payer whether or not you sign the order.",
+        "Run title in fractions from the earliest conveyance forward, flagging 'of my interest' wording and never guessing.",
+        "Price every curative step against the value of the interest and ask the operator what it will accept before drafting."
       ],
       "fields": [
         {
-          "name": "Property master and relationship keys",
-          "type": "textarea",
-          "prompt": "Define stable identifiers for tracts, interests, leases, wells, units, and payors. Record how multiple wells relate to one tract and how changed operator identifiers are preserved without creating duplicate assets.",
-          "example": "Use TRACT-023-001 for Tract A and INTEREST-023-001 for its purchased mineral estate. Store county recording references separately from operator property codes. Two wells may share the same unit but retain distinct well identifiers. An operator transfer creates a dated payor relationship, not a second copy of the purchased forty NMA."
+          "name": "rebuilt_decimal",
+          "type": "text",
+          "prompt": "Rebuild the decimal for each well on the division order from your own records: net mineral acres divided by unit acres, multiplied by the lease royalty rate. Record the operator's decimal beside yours and the difference between them.",
+          "example": "Two-section horizontal unit under a 3/16 lease: 160 NMA divided by 1,280 acres times 18.75% equals 0.0234375, and that exact number should appear for every well in the unit [Matt Sands — tJr4jiz31fw @ 00:15:50]. The operator showed 0.0234375 on wells one and two, so both matched before I signed anything."
         },
         {
-          "name": "Document manifest and evidence versions",
+          "name": "discrepancy_cost",
           "type": "textarea",
-          "prompt": "List every required source document with its origin, retrieval date, version, and integrity fingerprint. Explain how a revised instrument interpretation changes derived calculations without deleting the earlier evidence or reviewer comments.",
-          "example": "The manifest includes the recorded vesting deed, lease, amendments, unit instrument, title memorandum, purchase agreement, and twelve statements. Python hashlib computes SHA-256 fingerprints for stored files. A corrected title memorandum receives version two; version one remains retained and marked superseded, with the resulting decimal change linked to both versions."
+          "prompt": "When your rebuilt decimal and the operator's decimal differ, calculate the monthly, yearly, and long-term dollar gap using the well's current gross revenue, and note whether the gap is a real error or only rounding at the eighth decimal place.",
+          "example": "Correct decimal 0.015625, order shows 0.0078125. On a well generating $100,000 a month, that gap costs $781.25 monthly, $9,375 yearly, and $187,500 over a simplified 20 years [Mineral View — KYu7M4t5LAk @ 00:02:08]. By contrast, a miss at the eighth decimal place is one penny per million dollars of revenue [Matt Sands — tJr4jiz31fw @ 00:29:18]."
         },
         {
-          "name": "Purchase agreement and closing sequence",
+          "name": "stub_versus_lease_fraction",
           "type": "textarea",
-          "prompt": "Set the order of diligence completion, execution, funding, recording, and evidence delivery. Name the person responsible for each step and specify the evidence needed before the escrow agent releases purchase funds.",
-          "example": "The agreement identifies the exact conveyed interest, a $120,000 purchase price, the effective date, permitted burdens, and title remedies. Escrow receives funds only after authority review. Release follows the agreed recording protocol and verified instructions; the closing file retains the stamped instrument, disbursement statement, and independent wire confirmation."
+          "prompt": "Hold the decimal printed on each royalty check stub against the lease royalty fraction and your rebuilt decimal. Note whether the stub reflects an outdated one-eighth figure, a pooled tract share, or another basis you cannot yet explain.",
+          "example": "My lease is 1/4, but the stub decimal matches the old 1/8 calculation, which pays exactly half of a 1/4 royalty, so I am being paid half [Royalty Clerk — blbomhUd0sA @ 00:01:11]. Running the math backward, the stub credits me with 20 acres instead of 40, so I called the land department before signing [Steven Hatcher | Minerals Guy — Z_HlEDh8-rw @ 00:08:30]."
         },
         {
-          "name": "Wire verification and exception response",
+          "name": "struck_clauses_and_delivery",
           "type": "textarea",
-          "prompt": "Document the trusted callback process, approved recipient, dual verification responsibility, and response to changed bank instructions. State which evidence stops disbursement and how an attempted substitution is preserved for investigation.",
-          "example": "The acquisition lead calls the escrow officer using a previously verified number, while the operations reviewer compares account details against the signed closing instructions. An email changes the recipient two hours before funding; disbursement stops immediately. Retain the message and headers, contact escrow independently, and resume only after the discrepancy is resolved."
+          "prompt": "List every clause on the division order that goes beyond the statutory contents for your state, mark which ones you struck and initialed, and record how and when you returned the order with proof of delivery.",
+          "example": "Texas order included an indemnity clause and post-production cost language. I struck both, initialed each strike with a line saying I do not agree, and returned it by a method giving proof of delivery [Royalty Clerk — DN-VIoSmyF0 @ 00:03:58]. If the payer balks, it may not withhold payment solely because I refused provisions beyond the list [Royalty Clerk — DN-VIoSmyF0 @ 00:01:56]."
         },
         {
-          "name": "Division order and payor onboarding",
+          "name": "form_choice_by_operator",
           "type": "textarea",
-          "prompt": "Identify required payor forms, ownership evidence, tax documentation, effective dates, and decimal review steps. Explain how division-order language is checked against the lease rather than accepted as a replacement for underlying rights.",
-          "example": "Submit the recorded deed, requested ownership documentation, secure tax form, and verified contact information. Compare the offered 0.00500 decimal with the supported 0.00625 calculation before signing. For Texas production, the reviewer checks relevant division-order requirements under Natural Resources Code § 91.402 and requests correction with the supporting tract calculation attached."
+          "prompt": "Decide for each operator whether you will sign its form, substitute the NADOA model division order, or decline to sign at all. Record the objectionable language, the operator's response, and any state late-payment remedies that apply.",
+          "example": "Texas operator's form carried cost-deduction terms against my cost-free lease, so I sent the NADOA model form; Blue Mesa had problems with maybe 2 of about 130 operators [Blue Mesa Minerals — SfX6ycoYg24 @ 00:06:26]. On the Oklahoma well I signed nothing, citing Hull v. Sun Refining and 12% interest compounded annually on late pay [Richard Winblad — iD4uCjptCXM @ 00:09:58]."
         },
         {
-          "name": "Statement normalization and receipt ledger",
-          "type": "textarea",
-          "prompt": "Specify the normalized statement columns and bank-matching rules. Preserve production month separately from payment date and identify how taxes, transportation, processing, adjustments, and suspense releases appear in the accounting trail.",
-          "example": "A monthly line shows $250,000 unit sales times 0.00625 equals $1,562.50 gross royalty. Separately record $93.75 taxes and $43.75 other stated deductions, leaving $1,425 cash. The ledger stores production month, payment date, statement reference, bank transaction, and deduction descriptions so the $137.50 reduction remains inspectable."
+          "name": "w9_and_withholding_status",
+          "type": "text",
+          "prompt": "Confirm a signed W-9 and tax ID are on file with every payer, including operators whose division orders you refuse to sign. Record the date each was sent and whether any backup withholding has appeared on your statements.",
+          "example": "W-9 mailed to all three operators on the same day, including the Oklahoma operator whose division order I declined, so no company withholds the maximum the tax code requires [Richard Winblad — iD4uCjptCXM @ 00:09:16]. Without it, backup withholding runs roughly 28%. I logged the send dates and confirmed no withholding appeared on the first statements."
         },
         {
-          "name": "Decimal variance and deduction dispute",
+          "name": "operator_change_red_flag",
           "type": "textarea",
-          "prompt": "Set tolerances for ownership and payment differences and define the evidence required to open a payor inquiry. Distinguish a mathematical discrepancy from a disputed contractual deduction and assign each issue a resolution deadline.",
-          "example": "At $250,000 unit sales, a 0.00500 decimal produces $1,250 rather than the expected $1,562.50 gross royalty, a $312.50 difference. Open a decimal inquiry with the recorded deed and allocation calculation. Separately challenge the $43.75 charge only after reviewing the lease's valuation and deduction provisions; the two issues require different evidence."
+          "prompt": "When a well changes operators or a new division order arrives, compare its decimal with the prior order. If the number moved, record your written request for the operator's calculation and any redacted title opinion pages covering your interest.",
+          "example": "New operator's order dropped my decimal, which is a red flag, so I asked in writing how it came up with the number [Matt Sands — tJr4jiz31fw @ 00:35:55]. I also requested the one or two redacted title opinion pages mentioning my interest, which show exactly how the decimal was built [Matt Sands — tJr4jiz31fw @ 00:24:58]."
         },
         {
-          "name": "Asset basis and disposition ledger",
+          "name": "courthouse_search_log",
           "type": "textarea",
-          "prompt": "Define the asset-level records supporting acquisition basis, later adjustments, partial disposals, and realized gains. Explain how the operating ledger reconciles to tax-basis schedules without assuming both schedules always carry identical balances.",
-          "example": "Tract B's operating schedule records $120,000 basis and $160,000 sale proceeds, producing $40,000 realized gain before separately expensed sale costs. The accountant maintains any depletion-related tax adjustments in a linked schedule. A partial sale requires a documented basis allocation before posting gain; the full original basis cannot be deducted on every partial disposition."
+          "prompt": "Log each courthouse or online records search you ran, including the platform, search terms, number of results, cost, and turnaround. Note any zero-result searches and how you ruled out an input error before concluding nothing was recorded.",
+          "example": "Reeves County legal-description search on Courthouse Direct returned 439 results for $63.90, a $20 base plus $0.10 per record [CourthouseAcademy — 822U1_i8V5Q @ 00:21:12]. A first attempt returned zero because data went into the wrong box, so I re-entered it [CourthouseAcademy — 822U1_i8V5Q @ 00:20:42]. A complex chain may take 3-5 weeks [Matt Sands — zoP-dgL5D7M @ 00:11:42]."
         },
         {
-          "name": "Parser tests and duplicate prevention",
+          "name": "fraction_chain_verification",
           "type": "textarea",
-          "prompt": "Describe test fixtures for statement ingestion, revised payments, ownership changes, and malformed numbers. Define idempotency keys and expected results so repeated imports cannot multiply royalty revenue or erase historical adjustments.",
-          "example": "Load the same statement twice and require one posted receipt. Use file fingerprints plus payor, owner account, statement identifier, and line identity for matching. A revised statement becomes a linked correction. A parenthesized $125.00 adjustment posts as negative $125.00, while an unreadable amount enters manual review instead of silently becoming zero."
+          "prompt": "Work every conveyance in the chain as a fraction, flag any deed containing the words 'of my interest,' and show how each grantor's share passed forward. Record who verified each fraction so no interest leaves the desk as a guess.",
+          "example": "Grandfather owned 1/2 and deeded 'one-half of my interest' to Aunt Ruth, so she received 1/4, not 1/2, because a grantor can only deed out what they have [Sebastian Cosme — -fWjBQtg9r4 @ 00:01:35]. A second reviewer verified every fraction, since guessed title calls have produced $400,000 to $500,000 mistakes [Landman Class — ibeQr-rDmZ4 @ 00:35:50]."
         },
         {
-          "name": "Month-end certification and recovery plan",
+          "name": "curative_plan_and_cost",
           "type": "textarea",
-          "prompt": "State the close checklist, reviewer responsibilities, unresolved exception presentation, and restoration procedure. Identify the evidence proving recorded receipts match bank activity and that ownership changes have reached each relevant payor.",
-          "example": "By business day ten, the bookkeeper ties receipts to bank deposits and the operations lead reviews all decimal changes and suspended balances. Unresolved items remain visible with owners and dates. Before updating the parser, retain a read-only ledger export and database backup; restore and replay the test set if reconciliation totals change unexpectedly."
+          "prompt": "For each title defect, describe the curative instrument you plan to use, what the operator or division order analyst said it will accept, the estimated cost, and how that cost compares with the value of the interest.",
+          "example": "Uncle's 0.1 net-acre interest is in suspense. A simple probate would run $3,000-4,000 and could exceed its value, so I asked the division order analyst first and they will accept an affidavit of heirship [Matt Sands — sB8BNPnN_Os @ 00:16:13]. One signed lease lacked trustee capacity, so I re-obtained the signature rather than editing it [Susan Jessup — sldaaowniGM @ 00:32:23]."
         }
       ],
-      "completion_gate": "Advance only when closing evidence is complete, recorded ownership and payor decimals reconcile, duplicate-import tests pass, and the first available receipt or documented suspense entry matches the asset-level ledger."
+      "completion_gate": "Every well has a rebuilt decimal matching the operator's or a written dispute on file, every returned order has documented strikes and proof of delivery, every payer has a W-9, and every title defect has a costed curative plan the operator has agreed to accept."
     },
     {
       "worksheet_id": "ws-04",
       "number": 4,
-      "title": "Statutory, Contract, Tax, and Outreach Audit",
-      "purpose": "Translate jurisdiction-specific mineral, leasing, pooling, tax, brokerage, securities, and outreach requirements into documented operating tasks. Identify the exact activity being performed, the controlling authority, the required specialist review, and the evidence necessary before signing instruments, soliciting owners, or accepting investor capital.",
-      "chapter_ref": "Q5, Q9",
+      "title": "Wells, Decline Curves and What Your Producing Minerals Are Worth",
+      "purpose": "Build a working record of how the wells under your tract were drilled, how fast they are declining, and what that decline means for value. Turn rig schedules, lateral footage, decline settings, and economic limits into a defensible valuation before you answer any offer.",
+      "chapter_ref": "Q7-Q8",
       "instructions": [
-        "Map every property and business activity to its jurisdiction before choosing forms or outreach methods. Separate direct ownership purchases from representing another party, and distinguish private mineral interests from federal, state, or tribal leases with additional requirements.",
-        "Have the title reviewer resolve severances, reservations, probate authority, marital interests, and recordation requirements using the actual chain. Do not replace instrument analysis with a county tax listing, a seller spreadsheet, or a payor's existing ownership decimal.",
-        "Convert lease and purchase provisions into measurable obligations covering effective dates, deductions, pooling authority, warranties, curative periods, and payment remedies. Record the controlling clause beside each operational action instead of relying on a generic contract summary.",
-        "Review tax classification, licensing exposure, and capital solicitation before launching the relevant activity. Document the specific statutory pathway and supporting records; the fact that mineral assets are tangible property does not resolve every pooled-investment securities question.",
-        "Approve outreach scripts by channel and retain suppression records, source permissions, and complaint handling instructions. Stop a campaign when ownership identity, recipient restrictions, or message accuracy cannot be verified, while continuing permitted research and non-contact diligence work."
+        "Pull the drilling permit, plat, and completion records for every well touching your tract before filling in any field, and keep copies in the same folder as your deeds.",
+        "Separate producing wells from permitted or proposed wells, and complete the decline and economic limit fields only for wells with real production history.",
+        "Exclude early flowback from any decline fit and wait for 18 to 24 months of unrestricted production before trusting a single well's own curve.",
+        "Divide any bundled first check by the number of production months it covers before using it to budget or to value the interest.",
+        "Treat every valuation figure as a range, and record the multiple, discount, price, and decline assumptions next to the number so another reader can reproduce it."
       ],
       "fields": [
         {
-          "name": "Jurisdiction and property-regime map",
+          "name": "well_type_and_pad_layout",
           "type": "textarea",
-          "prompt": "Identify the property location, ownership regime, regulator, recording office, and additional approvals that attach to the specific estate. Explain which familiar private-land workflow cannot be reused without modification.",
-          "example": "The pilot acquires privately owned Texas minerals and records conveyances with the appropriate county clerk. A later prospect involving a federal oil and gas lease requires separate review of 43 CFR Part 3100 and applicable assignment rules. Exclude that prospect from the private-mineral template until the relevant transfer requirements are mapped."
+          "prompt": "Describe the well type drilling your tract, whether vertical, deviated, directional, or horizontal, and record how many wells share the pad. Note the spacing unit acreage and whether one multi-well pad replaced multiple vertical locations across the section you hold.",
+          "example": "Our 1,280-acre section is developed from one horizontal pad. Chesapeake's field comparison shows up to 32 vertical wells on separate pads replaced by a single multi-well horizontal pad with 90% less surface disturbance [Oil & Gas Industry VDA — 7tXxUXv528A @ 00:05:10]. We logged four horizontal wells on the pad, all producing from the same unit, and mapped the pad."
         },
         {
-          "name": "Conveyance, recording, and ownership authority",
-          "type": "textarea",
-          "prompt": "List the instrument execution and recording requirements applicable to the transaction, including authority and property description review. Identify the statute and the documented title condition that must be resolved before funding.",
-          "example": "For a Texas conveyance, review Property Code §§ 5.021, 12.001, and 13.001 for relevant conveyance, recording, and notice requirements. The deed must accurately identify the transferred estate and authorized grantor. A probate representative's signature is accepted only after reviewing the appointment and scope of authority supporting this particular sale."
+          "name": "rig_timeline",
+          "type": "text",
+          "prompt": "Record the rig schedule for the wells on or near your tract, including spud date, total depth date, and expected rig days. Compare the operator's actual pace against the typical continuous drilling window so you can anticipate when completion and first production may follow.",
+          "example": "Expand Energy drills a typical horizontal natural gas well 24 hours a day, 7 days a week, for approximately 21 to 28 days [Expand Energy — zhTs0NrEVgE @ 00:00:16]. Our permit showed a spud in early March, so we penciled total depth for late March and set a reminder to check for completion activity and the first royalty statement afterward."
         },
         {
-          "name": "Lease terms and payment obligations",
+          "name": "lateral_length_and_trajectory",
           "type": "textarea",
-          "prompt": "Extract royalty valuation, deductions, pooling, retained-acreage, depth, cessation, and payment provisions from the governing lease. Link each provision to a calculation or monitoring task and identify statutory payment exceptions requiring further review.",
-          "example": "The lease states a one-fifth royalty and contains a negotiated transportation provision that requires clause-specific interpretation. Review Texas Natural Resources Code §§ 91.402–91.403 for applicable payment timing, withholding grounds, and interest. A suspended payment triggers a written reason request; it does not automatically establish that statutory interest is owed."
+          "prompt": "Enter the permitted lateral length and describe how the wellbore turns from vertical to horizontal, including whether a rotary steerable system or bent motor is named. Note how much of the lateral footage actually crosses your tract according to the plat.",
+          "example": "The build curve can be steered using either a rotary steerable system or a downhole motor assembly with an adjustable bend [Expand Energy — zhTs0NrEVgE @ 00:03:57]. Our Utica permit lists a lateral longer than 12,500 ft, matching nearly nine out of 10 wells drilled in 2025 [FutureWise Energy — nbj7-lPJ59w @ 00:11:46]. Roughly a third crosses our tract."
         },
         {
-          "name": "Pooling authority and owner election calendar",
-          "type": "textarea",
-          "prompt": "Specify whether pooling arises from contract, voluntary agreement, or a statutory proceeding. Record notice, hearing, election, and payment deadlines from the actual documents rather than applying another state's default timeline.",
-          "example": "An Oklahoma pooling order under 52 O.S. § 87.1 requires the team to extract the exact election and payment terms from the entered order. For Texas, evaluate contractual pooling authority and any proposed proceeding under Natural Resources Code Chapter 102 separately. Neither workflow treats a filed application as an effective conveyance or a completed well."
+          "name": "pad_capital_and_operator_commitment",
+          "type": "text",
+          "prompt": "Estimate the upfront capital the operator has committed to the pad or wells affecting your minerals. Record the source of the figure and explain what that spending suggests about how seriously the operator intends to develop the remaining locations in your unit.",
+          "example": "Range Resources puts upfront investment for a single Marcellus drilling pad upwards of $60 million, maybe even $70 million, before a blade of grass is moved [Range Resources Corporation — 8M30VzyjEpk @ 00:01:53]. We treated that scale of commitment as evidence the operator plans to keep drilling the pad, and we tracked whether new permits followed."
         },
         {
-          "name": "Purchase protections and defect remedies",
+          "name": "bench_and_zone_screening",
           "type": "textarea",
-          "prompt": "Draft the operational meaning of the title standard, defect threshold, curative period, purchase-price adjustment, closing condition, and remedy. Ensure the agreement allocates risk explicitly rather than relying on an undocumented promise to fix title later.",
-          "example": "The purchase agreement schedules forty NMA, specifies the conveyed depths, and permits a price adjustment for verified acreage shortfalls under its stated formula. A material unresolved ownership defect permits termination before funding. An escrow holdback secures only defined curative obligations; it does not transform disputed ownership into established title."
+          "prompt": "List every target zone or bench beneath your tract and describe what evidence supports each one. Record whether physical cuttings, open-hole logs, or offset results were reviewed, and flag any zone where the evidence is thin or the logs alone carry the case.",
+          "example": "Premier analyzed four Wolfcamp wells in Eddy and Lee County and found two great, one marginal and one poor, even though the open hole logs looked fairly similar [Hart Energy — KynEhshipEg @ 00:07:18]. Our tract has two candidate benches supported only by logs, so we marked both as unproven until cuttings or offset production confirm them."
         },
         {
-          "name": "Activity-based licensing assessment",
-          "type": "textarea",
-          "prompt": "Describe whether the business purchases for its own account, negotiates for others, receives transaction compensation, or performs specialist services. Obtain a jurisdiction-specific assessment of licensing requirements and document the activities actually authorized.",
-          "example": "The initial business buys minerals for its own portfolio and pays a land contractor for documented research. Before accepting a success fee to negotiate another owner's sale, obtain a Texas Occupations Code Chapter 1101 analysis covering the interest, activity, and any applicable exclusion. Do not assume the contractor's job title settles the licensing question."
+          "name": "first_check_reality",
+          "type": "text",
+          "prompt": "Record the production months covered by your first royalty check and calculate what a single month actually paid. Write down how you will budget household spending until several single-month checks show the real run rate rather than the bundled opening payment.",
+          "example": "Troy Eckard warns that the first check covers one to five months of production, and the next single-month check can run a third or a sixth of it [Eckard Enterprises | Oil & Gas Investing — nn1juJ3_-WA @ 00:08:21]. Our first check covered four months, so we divided it by four and budgeted household spending only from that smaller monthly figure."
         },
         {
-          "name": "Royalty tax and depletion workpaper",
+          "name": "decline_profile",
           "type": "textarea",
-          "prompt": "Assign responsibility for royalty reporting, production taxes, property taxes, depletion analysis, basis adjustments, and disposition reporting. Distinguish operating scorecard profit from the separate tax calculations that depend on owner and property circumstances.",
-          "example": "The accountant reviews 26 U.S.C. §§ 611, 612, 613, and 613A when evaluating depletion eligibility and limitations. Texas production-tax review considers Tax Code Chapters 201 and 202. Maintain supporting statements and tax-basis adjustments separately; a depletion deduction does not increase the canonical Base operating profit above $69,875."
+          "prompt": "Describe the decline profile of the producing wells on your tract, including the share of volume expected in the first two years. Record whether the data comes from your own statements, state production reports, or a type curve built from offset wells.",
+          "example": "A shale well will recover 70 to 80 percent of its total volume within the first two years of production [Steven Hatcher | Minerals Guy — CiR-w5lHfvI @ 00:11:46]. Our two wells came online eighteen months ago, so we assumed most of their volume has already been produced and reduced our expectations for future checks accordingly, pending new drilling."
         },
         {
-          "name": "Pooled capital and securities pathway",
+          "name": "decline_fit_settings",
           "type": "textarea",
-          "prompt": "Describe who contributes capital, who manages the assets, how returns are presented, and whether interests are offered publicly. Require a documented securities analysis before soliciting passive investors or accepting pooled investment subscriptions.",
-          "example": "Three passive investors propose funding an operator-managed mineral entity. Review Securities Act § 2(a)(1), 15 U.S.C. § 77b(a)(1), including investment-contract and fractional mineral-interest issues. If using Regulation D, select and satisfy the applicable 17 CFR § 230.506 pathway, required filings, state notices, and relevant intermediary or adviser analysis before solicitation."
+          "prompt": "Document the settings you used to fit a decline curve, including the b-factor cap, terminal decline rate, start point, and months of data. Explain how you excluded flowback and why the well has enough unrestricted history to support a forecast.",
+          "example": "We kept the b-factor below 1.3 with an 8% terminal decline, which Matt Sands calls a good conservative number for most wells [Matt Sands — VYytHJ0lMVw @ 00:38:39]. We moved the start marker past early flowback before running the hyperbolic regression [KAPPA Engineering — tPB4O0ryZww @ 00:01:54], and used 22 months of unrestricted production, satisfying the 18-24 month minimum before trusting the fitted curve."
         },
         {
-          "name": "Owner outreach and suppression controls",
-          "type": "textarea",
-          "prompt": "Define permitted outreach channels, contact data sources, message representations, opt-out handling, and retention rules. Map telephone, text, and commercial email requirements to the specific campaign rather than treating all channels alike.",
-          "example": "Start with accurate direct mail identifying the purchasing entity and property interest. Before phone or text outreach, assess 47 U.S.C. § 227, 47 CFR § 64.1200, and applicable state restrictions. Commercial email review uses 15 U.S.C. § 7704. Suppress opted-out recipients promptly and never imply that a county office endorsed the offer."
+          "name": "economic_limit",
+          "type": "text",
+          "prompt": "Calculate the economic limit rate where revenue from oil and gas equals operating cost for the producing well. Record the oil price, net gas price, gas-oil ratio, and operating expense you used, and note how close current production sits to that breakeven.",
+          "example": "TopDogEngineer solved q times oil price plus q times GOR times gas price minus OpEx equals zero, using a net gas price of about $2.067/Mcf, and reached 140.3 bbl/month [TopDogEngineer — 4mzbNb16NQc @ 00:08:25]. Below that rate the well loses money, so we flagged our older well producing roughly 200 bbl/month for close monthly watching."
         },
         {
-          "name": "Liens, secured interests, and release evidence",
+          "name": "valuation_snapshot",
           "type": "textarea",
-          "prompt": "Identify recorded mortgages, judgments, assignment restrictions, and financing claims that may affect the acquired estate or proceeds. Explain which searches and releases are required and why one database cannot establish clear title.",
-          "example": "The title reviewer searches the real-property records and evaluates relevant UCC filings. UCC § 9-109(d)(11) addresses the real-property exclusion with exceptions, while § 9-502(b) addresses specified real-property-related filings. A seller's lender claims as-extracted collateral; obtain a transaction-specific release analysis rather than assuming a standard UCC termination alone clears the mineral conveyance."
+          "prompt": "Produce a quick valuation of your producing royalty using a multiple of recent monthly income, then explain how development timing, price assumptions, and decline would change that number. Note whether a full engineering valuation should follow before any offer is considered.",
+          "example": "Matt Sands values mature producing minerals at 50 to 70 times the average of the last 3 months of royalty, up to 100 times in hot areas [Matt Sands — 86mQK92f7Bg @ 00:29:36]. Our three-month average was $1,200, giving a quick range of $60,000 to $84,000 before a full engineering valuation tests decline and development timing."
         }
       ],
-      "completion_gate": "Advance only when every applicable statutory and contract task has an owner, source citation, and retained evidence; unresolved title authority, licensing scope, investor solicitation, or restricted outreach prevents the affected activity from proceeding."
+      "completion_gate": "Do not move to Worksheet 5 until every producing well has a documented decline fit built on 18 to 24 months of unrestricted data with flowback excluded, the first check has been divided into single production months, an economic limit rate is recorded, and the quick valuation lists its multiple and assumptions."
     },
     {
       "worksheet_id": "ws-05",
       "number": 5,
-      "title": "Automation, Owner Outreach, and Risk Fallback Tracker",
-      "purpose": "Design a small-team operating system that automates royalty reconciliation and production monitoring while preserving human judgment for title, valuation, and owner communications. Build a repeatable acquisition pipeline with explicit data provenance, review queues, failure alerts, and manual recovery procedures.",
-      "chapter_ref": "Q6, Q10",
+      "title": "Selling, Taxes and Passing Minerals to Heirs",
+      "purpose": "Decide whether to hold or sell with a clear view of development stage, lease royalty rate, buyer quality, and deal paperwork, then lock in the tax and inheritance steps that keep royalties flowing. Use it to protect value at sale, at filing time, and at death.",
+      "chapter_ref": "Q9-Q10",
       "instructions": [
-        "Start with a narrow data flow connecting authorized source documents to a normalized ledger and exception queue. Automate deterministic checks first, retain original evidence, and keep ownership interpretation and purchase-price decisions assigned to named human reviewers.",
-        "Establish production-monitoring thresholds using reporting frequency and known data delays. Differentiate missing reports, revised volumes, well downtime, and actual depletion before sending alerts or changing valuations, particularly where public reporting aggregates several wells.",
-        "Build outreach from verified ownership records and a single suppression list shared across the team. Measure qualified conversations and complete underwriting packets rather than rewarding raw message volume, repeated contacts, or unverified owner matches.",
-        "Use public pooling and permit information to prioritize research, not to represent certain development. Require source links and dated status transitions, then record why each catalyst changed the acquisition queue without automatically raising the offer.",
-        "Define fallback procedures before deploying each automation. A source outage, parser error, disputed decimal, or exposed credential must have an owner, recovery target, manual operating method, and documented condition for returning to routine processing."
+        "Write down your reason for selling before you contact any buyer, and list the tracts you would keep for future development upside.",
+        "Research every buyer through recently recorded mineral deeds and online presence, and discard unsolicited mail that resembles a check, legal agreement, or deed.",
+        "Have the purchase and sale agreement and the deed reviewed at your own expense for any language reaching royalties in suspense or escheated funds.",
+        "Confirm a W-9 and tax ID are on file with every operator, choose a depletion method property by property, and keep every receipt for deductible mineral expenses.",
+        "Record every county and state where minerals sit so heirs know exactly where to file affidavits of heirship and which operators to contact."
       ],
       "fields": [
         {
-          "name": "Authorized source inventory and cadence",
+          "name": "reason_to_sell_or_hold",
           "type": "textarea",
-          "prompt": "List each production, title, docket, and payment source with access method, refresh frequency, permitted use, and responsible owner. Separate authoritative records from useful secondary indexes that require confirmation before decisions.",
-          "example": "Use Texas Railroad Commission public production records for monitoring, county clerk instruments for recorded conveyances, and operator statements for payor-specific receipts. Review Oklahoma Corporation Commission docket updates for designated prospects. Refresh production monthly and active dockets twice weekly, using permitted downloads and retaining source dates instead of bypassing access restrictions."
+          "prompt": "State plainly why you are considering a sale, whether for liquidity, estate simplicity, or risk transfer. Describe what price and volume risk you would hand to a buyer, and what future development upside you would give up by accepting a lump sum.",
+          "example": "Steven Hatcher says selling shifts the price risk and the volume risk over to the buyer [Steven Hatcher | Minerals Guy — Sz-1-E8zTqU @ 00:05:01], and that selling is choosing the lower lump sum. We want liquidity for a family expense, so we wrote down which tracts we would sell and which tracts with upside we would keep."
         },
         {
-          "name": "Normalization pipeline and validation rules",
+          "name": "development_stage_discount",
           "type": "textarea",
-          "prompt": "Describe ingestion, parsing, validation, storage, review, and export stages. Define required fields and numerical checks that reject unreliable records without discarding the original source or inventing missing ownership and payment values.",
-          "example": "A Python stdlib workflow uses csv for exports, decimal for money, sqlite3 for records, and hashlib for file identity. It checks that gross royalty minus listed deductions equals payment within one cent. Missing production month or unreadable decimal sends the record to review with its original attachment and failure reason preserved."
+          "prompt": "Classify each tract by development stage, from producing wells to rig on site to acreage inside an operator's five-year plan. Assign the discount rate a buyer is likely to apply at each stage and explain how that changes the offer you should expect.",
+          "example": "Matt Sands discounts producing minerals at about 10%, rig-on-site acreage at 15-20%, and acreage inside an SEC five-year plan at 20-30% [Modern Land Investor — 1c2UBDuXhrk @ 00:33:41]. Our north tract produces, so we expect the tightest discount there, while the south tract sits in a five-year plan and will draw a much steeper one."
         },
         {
-          "name": "Royalty reconciliation automation",
-          "type": "textarea",
-          "prompt": "Define automated comparisons between expected ownership, reported sales, deductions, and bank receipts. State numerical alert thresholds and identify which discrepancies can be resolved mechanically versus those requiring lease or title interpretation.",
-          "example": "For Tract A, the system compares the approved 0.00625 decimal with every statement and flags any change. It also flags a bank mismatch above $1.00 after documented timing items. A rounding difference may close through a logged rule; an unexplained ownership change requires the land or title reviewer to approve the resolution."
+          "name": "lease_rate_before_sale",
+          "type": "text",
+          "prompt": "Record the royalty rate on any existing lease, or the rate you could negotiate before selling unleased acreage. Explain how the rate changes what a buyer will pay, and decide whether leasing first at a stronger royalty would raise the eventual sale price.",
+          "example": "A 25% royalty yields twice the sale value of a 12.5% royalty [Matt Sands — RR2BlQf14H8 @ 00:05:59]. In Reeves, Lea and Eddy counties, Sands advises leasing before selling, because taking a 12% royalty instead of 25% halves the property's value. Our Reeves County acreage is unleased, so we will lease first and price the sale afterward."
         },
         {
-          "name": "Production monitoring and decline alerts",
+          "name": "buyer_screening",
           "type": "textarea",
-          "prompt": "Set a monitoring baseline, reporting-lag allowance, variance threshold, and investigation sequence. Explain how revised reports, new wells, shut-ins, and lease-level aggregation affect the interpretation of apparent production changes.",
-          "example": "Flag a reported volume decline above 25% against the trailing three reported months, excluding periods still inside the source's normal publication lag. The reviewer checks revisions, downtime, and reporting scope before changing the forecast. If two wells share a lease-level record, the alert cannot assign the decline to one well without additional evidence."
+          "prompt": "List every buyer who has contacted you and how each one reached you. For each, record whether they are visible online, whether they pressured you, whether their mail looked like a check or deed, and whether recent recorded deeds show them actively buying.",
+          "example": "Hatcher says to trash unsolicited mail that looks like a check, legal agreement or deed, and walk from any buyer who is evasive, invisible online or using high-pressure tactics [Steven Hatcher | Minerals Guy — WIqkczvqoz0 @ 00:05:35]. We pulled deeds recorded in the past 6-12 months to find active end buyers and dropped two evasive mail-only buyers [Matt Sands — y5etlsUEcO0 @ 00:32:43]."
         },
         {
-          "name": "Pooling-docket research prioritization",
+          "name": "psa_and_deed_review",
           "type": "textarea",
-          "prompt": "Specify how public docket events create research tasks and change lead priority. Record status definitions, source evidence, and safeguards against representing procedural movement as a certain near-term production catalyst.",
-          "example": "A filed Oklahoma pooling application creates a research task for tract coverage and owner identity. An entered order creates an election-calendar task, while a permit prompts development review. The model assigns no production revenue until supported by its explicit forecast assumptions; a protested or continued hearing reduces urgency rather than increasing price."
+          "prompt": "Review the purchase and sale agreement and draft deed line by line. Record any language that sweeps in royalties held in suspense or escheated funds, note who drafted the deed, and confirm whether you paid for your own independent review before signing.",
+          "example": "Sands warns that buyer-drafted deeds can sweep in suspense or escheated funds [Matt Sands — 86mQK92f7Bg @ 00:27:15]. Our draft PSA contained a sentence assigning all royalties in suspense to the buyer, so we paid for our own review, had that sentence struck, and confirmed the deed covered only the intended tracts before signing [Matt Sands — y5etlsUEcO0 @ 00:21:34]."
         },
         {
-          "name": "Owner acquisition funnel and attribution",
-          "type": "textarea",
-          "prompt": "Define the stages from researched owner through verified interest, qualified conversation, offer, diligence, and closing. Set denominator rules so conversion rates reflect unique owners and real progress rather than duplicate contacts.",
-          "example": "A monthly cohort contains 120 researched owners, 90 verified contact records, 18 replies, six qualified conversations, three indicative offers, and one diligence file. Reply rate is 18 divided by 90, or 20%. The diligence file is not a closed acquisition, and a second letter to the same owner does not enlarge the owner denominator."
+          "name": "closing_mechanics_and_title",
+          "type": "text",
+          "prompt": "Describe how the sale will close, including when a landman is hired, how title will be chained, and how payment will arrive. Note any adjustment to price if the landman finds fewer net acres than the purchase agreement assumed at signing.",
+          "example": "The buyer hires the landman only after a signed purchase and sale agreement, then adjusts the price to the net acres actually found [Cashflow Ninja — uhffuS4DlLQ @ 00:34:38]. No escrow companies will go near mineral rights, so our sale ends with a signed deed and a wire, and Blue Mesa usually closes inside a week."
         },
         {
-          "name": "Outreach content and suppression workflow",
+          "name": "depletion_method",
           "type": "textarea",
-          "prompt": "Write the factual message boundaries, review responsibilities, contact-frequency limits, and suppression propagation process. Explain how the team handles ownership disputes and requests to stop contact across every tool used for acquisition outreach.",
-          "example": "The letter says the company is interested in purchasing the described mineral interest and invites a discussion; it does not claim a mandatory sale or official affiliation. One stop-contact request updates the central suppression record before the next export. A recipient denying ownership triggers research, not a more aggressive automated follow-up."
+          "prompt": "For each property, choose percentage or cost depletion and record why. Note your basis, whether an appraisal is needed for an inherited asset, and how the chosen method will continue or stop once basis reaches zero in later tax years.",
+          "example": "Tracy Lenz says you don't have to use the same method for each property [Tracy Lenz — NYvxAlVlAmQ @ 00:22:40]. We used cost depletion on the freshly inherited tract with newly drilled wells, supported by an appraisal costing a couple thousand dollars, and 15% percentage depletion of gross on older royalties, which keeps running after basis hits zero [Tracy Lenz — NYvxAlVlAmQ @ 00:46:35]."
         },
         {
-          "name": "Manual fallback and incident owner",
-          "type": "textarea",
-          "prompt": "For each critical automation, define failure detection, accountable owner, manual procedure, recovery target, and return-to-service evidence. Explain how work continues without losing accounting history or bypassing unresolved title questions.",
-          "example": "If the parser fails on a new operator layout, the reconciliation contractor enters the statement into the controlled review sheet within two business days. The engineer adds a fixture and validates totals before release. Automated posting resumes only after the same statement produces identical reviewed amounts and no duplicate receipt."
+          "name": "tax_id_and_deductions",
+          "type": "text",
+          "prompt": "Confirm that a W-9 and tax ID are on file with every operator paying you. List deductible expenses tied to your minerals, such as attorney deed filings, landman research, and consulting fees, and record where the receipts are stored for filing.",
+          "example": "Operators are required to withhold about 30% when no W-9 or tax ID is on file [Matt Sands — _MHogbd2xzU @ 00:16:53]. We sent W-9s to all three operators before first production, confirmed receipt with each payer, and keep a labeled folder of attorney deed filing, landman research and consulting receipts for our preparer, all deductible [Matt Sands — z9gHz7FYvRk @ 00:09:45]."
         },
         {
-          "name": "Access, backups, and document protection",
+          "name": "working_interest_risk",
           "type": "textarea",
-          "prompt": "Assign access by operating role and classify documents containing identity, bank, or tax information. Set backup, restoration, and credential-removal procedures that protect seller information while keeping authorized reviewers productive.",
-          "example": "The outreach contractor sees property and permitted contact records, not bank details or tax forms. Closing documents reside in a restricted repository with multifactor authentication. Revoke departing-contractor access the same day, retain access logs, and test a monthly restore using a non-sensitive ledger copy before relying on backups for production recovery."
+          "prompt": "If a working interest is offered, compare its costs and tax treatment against your royalty position. Record plugging liability, non-consent penalties, the sponsor's track record and own money in the deal, and when K-1s are expected so filing can be planned.",
+          "example": "Lenz prices plugging and abandonment at $30,000 to $40,000 per well and flags the roughly 300% non-consent penalty [Tracy Lenz — mHolW0RfGQ0 @ 00:09:41]. The sponsor offering us a non-op interest had no 5 to 10 year track record, matching the warning about 4x to 5x markups that shrink $100,000 to $20,000 of real interest [Passive Income MD — 41VgsNOdrto @ 00:17:03], so we declined."
         },
         {
-          "name": "Automation value and escalation budget",
+          "name": "heirship_and_transfer_plan",
           "type": "textarea",
-          "prompt": "Measure saved processing time, exception volume, rework, and specialist review costs. Define when growing exception rates justify reducing automation scope instead of adding more records to an unreliable process.",
-          "example": "Manual reconciliation of eighty statements at fifteen minutes each takes twenty hours. Automation leaves four hours of routine work plus six hours of exception review, saving ten hours monthly. At $50 per hour, the capacity value is $500; it becomes a cash saving only if actual paid labor or outside spending declines."
+          "prompt": "Map how the minerals pass to heirs, listing every county and state where interests sit. Record whether an affidavit of heirship has been recorded in each county, which operators hold royalties in suspense, and what written instructions your heirs will receive.",
+          "example": "After a death, record the affidavit of heirship in every county where minerals sit, send each operator the packet with death certificate and W-9s, and ask in writing how much has been held [Royalty Clerk — q5XqULtWaUQ @ 00:04:03]. Our minerals sit in two states, so we budgeted several thousand dollars per state to clear suspense."
         }
       ],
-      "completion_gate": "Deploy only after source permissions, duplicate protection, decimal alerts, suppression propagation, and manual restoration have passed documented tests; retain human review for title construction, valuation changes, disputed deductions, and owner disputes."
+      "completion_gate": "Do not move to Worksheet 6 until every tract carries a development-stage discount, every buyer has been screened against recorded deeds, the PSA and deed have had your own review for suspense language, W-9s are confirmed with every operator, and an heirship map lists every county and state."
     },
     {
       "worksheet_id": "ws-06",
       "number": 6,
-      "title": "30-Day Launch, Pod Scorecard, and Exit-Readiness Ledger",
-      "purpose": "Launch a disciplined research and acquisition operation without mistaking a thirty-day sprint for a guaranteed closing timeline. Assign the small-team workload, track capital and quality indicators, and assemble the ownership, receipt, and basis evidence an institutional buyer needs to evaluate a mineral package.",
-      "chapter_ref": "Q11, Q12",
+      "title": "Regulators, Hearings and the Mineral Market",
+      "purpose": "Track the permits, dockets, bonding rules, and market forces that decide when and how your minerals get paid. Connect regulator activity, gas quality, price lag, operator capital allocation, deductions, and emerging opportunities to concrete actions you take on your own acreage.",
+      "chapter_ref": "Q11-Q12",
       "instructions": [
-        "Set the first month's deliverables around research quality, workflow testing, and qualified opportunities. Preserve the canonical six-to-twenty-four-month first-deal window, and never manufacture a closing deadline that pressures the team to bypass ownership verification or adequate capital planning.",
-        "Assign one accountable owner to each deliverable and define the contractor boundaries before outreach begins. Track the Conservative and Base staffing pattern separately from the six-person Scaled configuration so a growth plan does not silently assume unlimited support.",
-        "Use weekly reviews to compare evidence quality, cash availability, unresolved defects, and qualified lead conversion. Review volume metrics alongside rejection reasons, because a smaller clean pipeline may be more valuable than a large list with uncertain ownership.",
-        "Build the exit data room while acquiring assets rather than reconstructing it at sale. Maintain consistent tract identifiers, recorded instruments, royalty history, ownership calculations, and basis schedules that allow a buyer to reproduce the package economics independently.",
-        "End the sprint with a written continue, narrow, pause, or stop decision tied to predefined evidence. Do not equate process completion with profitable execution; continue only when capital capacity, ownership quality, and a credible acquisition thesis remain intact."
+        "Search the state regulator portal and GIS viewer for every permit and docket item touching your unit, and save each permit, plat, and case record.",
+        "Calendar every hearing date and protest deadline as soon as you find it, because the docket clock controls the outcome.",
+        "Assess your operator's bonding exposure and inactive well count, and note any plugging cost figures raised in rulemaking or public comment.",
+        "Compare each royalty statement against the lease for deductions and against the price month it reflects, and never budget household spending on spot prices.",
+        "Screen every new lease, easement, or helium offer for counterparty track record, and bring a landman or attorney before accepting any final offer."
       ],
       "fields": [
         {
-          "name": "Day 1–7 market boundary and operating setup",
-          "type": "textarea",
-          "prompt": "List the first week's concrete deliverables, owners, and acceptance tests. Include the acquisition boundary, document repository, capital ledger, specialist engagement, and source inventory needed before the first owner contact.",
-          "example": "By day seven, the principal selects one Reeves County acquisition area, documents the $400,000 illustrative capital plan, and engages land, title, and accounting contractors. The team creates the tract ledger and tests restricted document access. Completion requires one reproducible sample ownership calculation, not a promise to acquire forty NMA immediately."
+          "name": "permit_and_api_lookup",
+          "type": "text",
+          "prompt": "Record every drilling permit affecting your tract, including the W-1 or state equivalent, the API number, permit date, and operator name. Note which regulator portal or GIS viewer you used and where the permit and plat copies are saved for later reference.",
+          "example": "We searched the RRC GIS viewer and RRC CASES portal for permits on our section and saved two W-1 permits with their plats. Before trusting a nearby pad, Sands says to pull the permit and plat and confirm the first take point and lateral footage fall inside your tract [Matt Sands — gFgW6n9nb-c @ 00:13:20]."
         },
         {
-          "name": "Day 8–14 research and owner qualification",
+          "name": "spacing_and_hearing_docket",
           "type": "textarea",
-          "prompt": "Define the second week's research cohort, ownership checks, contact verification, and outreach review. State the evidence required to promote a lead from raw source record to a qualified owner opportunity.",
-          "example": "The land contractor researches thirty tracts and traces ten promising ownership chains. The principal reviews five complete owner packets before sending factual acquisition letters. Each packet includes the recorded reference, interest description, independently checked contact source, and suppression status. A tax-roll name alone does not qualify the lead."
+          "prompt": "List any spacing, pooling, or permit hearings on the regulator's docket that touch your unit. Record the case number, hearing date, applicant, proposed well spacing, and the deadline for filing a protest or appearance so you do not miss the docket clock.",
+          "example": "At an OCD hearing, a witness said that if we were at much tighter spacings, we would be having a different conversation here, but that's not what we've proposed [OCD Pecos Hall — Gyi9ijeMNgA @ 00:48:28]. We logged the case, the hearing date and the proposed spacing for our unit, and set a calendar alert ahead of the protest deadline."
         },
         {
-          "name": "Day 15–21 underwriting and workflow rehearsal",
+          "name": "child_well_and_parent_impact",
           "type": "textarea",
-          "prompt": "Specify the third week's valuation files, title questions, cash stresses, and technical tests. Identify the assumptions that remain conditional and the evidence needed before issuing a purchase commitment.",
-          "example": "Prepare three underwriting packets with verified fraction calculations, existing-production forecasts, and commodity downside cases. Rehearse the $1,562.50 gross-to-$1,425 cash statement and the duplicate-import test. The title reviewer addresses each material reservation question; the principal may issue conditional indications but cannot treat unresolved title as completed diligence."
+          "prompt": "Identify any parent wells already producing near new child wells proposed for your unit. Describe how the operator's spacing and zone placement might affect performance, and record whether you plan to ask about parent wellbores within the same geologic zone.",
+          "example": "Enverus states plainly that child wells are significantly impacted [Enverus — 2rbY0Lt22CU @ 00:02:50], and its cylindrical search is a good proxy for considering parent wellbores within the same geologic zone [Enverus — hYa6oTD7seU @ 00:08:50]. Two older parent wells sit beside the proposed child wells in our unit, so we lowered our expected volumes for the new wells accordingly."
         },
         {
-          "name": "Day 22–30 decision and pipeline handoff",
+          "name": "operator_bonding_and_plugging_exposure",
           "type": "textarea",
-          "prompt": "Define the final week's deliverables and decision evidence. Separate offers, signed agreements, recorded acquisitions, and first royalty payments so the launch report cannot overstate commercial progress or cash realization.",
-          "example": "By day thirty, deliver one complete investment memorandum, an operating reconciliation demonstration, a qualified buyer profile, and the next ninety-day research plan. Report zero closed deals if none have closed. The canonical first-deal expectation remains six to twenty-four months; a successful launch establishes discipline rather than artificial revenue."
+          "prompt": "Assess the operator's bonding and plugging exposure across its well count. Record how many of its wells are marginal or inactive, the bond tier that applies, and whether a stricter trigger could push the operator to abandon wells on or near your tract.",
+          "example": "McGowan's worked example shows a 100-well operator with 15 marginal or inactive wells facing a $15 million blanket bond overnight, with operators liable to hand you the keys and walk off [New Mexico Oil Conservation Commission — gfqoliQ78bk @ 00:54:15]. Our small operator runs about 60 wells, so we tallied its inactive count against that 15% trigger."
         },
         {
-          "name": "Pod roles and specialist capacity",
-          "type": "textarea",
-          "prompt": "Assign acquisition, land research, title interpretation, reconciliation, accounting, and data responsibilities within the canonical staffing envelope. Identify functions that may share one role and decisions requiring an independent specialist.",
-          "example": "Base uses one full-time principal plus three contractors: a land researcher, a title attorney, and a bookkeeping and tax provider. Scaled uses two full-time operators plus four contractors, adding dedicated data support. Six people is the Scaled total, not six employees plus an invisible external team excluded from the cost model."
+          "name": "plugging_cost_and_public_comment",
+          "type": "text",
+          "prompt": "Record the plugging cost estimates raised in public comment or rulemaking for wells in your area. Note who presented each figure, whether it reflects an average or extreme case, and how orphaned wells could affect surface use or future development on your tract.",
+          "example": "Rossi of Moms Clean Air Force cited an average plugging cost of $163,000 per well, some over $700,000, with up to $1.6 billion unfunded [New Mexico Oil Conservation Commission — -7pNwWErBfk @ 00:01:06]. We recorded that figure as an advocate's average, separate from operator estimates, and noted two idle wells near our south boundary for follow-up with the regulator."
         },
         {
-          "name": "Weekly quality and cash scorecard",
+          "name": "gas_quality_and_takeaway",
           "type": "textarea",
-          "prompt": "Choose a compact set of quality, conversion, cash, and exception indicators with clear denominators and responsible owners. Explain which metrics signal excessive risk even when outreach activity or offers increase.",
-          "example": "Track verified ownership packets over researched tracts, qualified conversations over unique contacted owners, unresolved material title issues, unrestricted cash, and unmatched receipts. Ten verified packets from thirty tracts equal 33.3%. A rise to six unresolved ownership disputes pauses new commitments even if the team doubles its weekly letter volume."
+          "prompt": "Describe the gas composition and takeaway capacity for wells on your unit, including sour gas or impurity levels against pipeline limits. Record any allocation method the operator uses for impurities and whether midstream constraints could curtail production or delay royalty payments.",
+          "example": "Devon faced roughly 13,500 ppm sour gas against a 10,000 ppm takeaway allowance [OCD Pecos Hall — Gyi9ijeMNgA @ 00:34:55], and the workaround used gas samples for per-well impurity allocation and blended in leaner wells to dilute the stream. We asked our operator for the impurity reading on our wells and the allocation method it applies."
         },
         {
-          "name": "Canonical candidate and performance ledger",
-          "type": "textarea",
-          "prompt": "Record the candidate's ranking, score components, capital range, monthly overhead range, and canonical profit outcomes. Keep these portfolio reference values distinct from the first month's actual activity and cash balances.",
-          "example": "Candidate #7, Resource assets, ranks #25 of 29 and scores 81/100: revenue potential 21, margin potential 22, team efficiency 16, startup accessibility 11, and automation potential 11. Capital is $15,000–$75,000; monthly opex is $1,000–$12,000. Canonical annual owner profits are $6,000, $69,875, and $180,000. None becomes recognized launch-month profit merely because the operating plan is complete."
+          "name": "price_lag_and_budget",
+          "type": "text",
+          "prompt": "Track how commodity price moves reach your royalty statements. Record the months between a price spike and the check that reflects it, the weighted average price shown on the statement, and how you will avoid budgeting household spending on spot prints.",
+          "example": "Sands warns against budgeting household spending on spot spikes, because royalty statements reflect a monthly weighted average, not the instantaneous spot print [Matt Sands — M3eFdVkW_mY @ 00:03:56]. Price spikes reach checks about two months late, so after a spring rally we held spending flat until the statement showed the realized average for that production month."
         },
         {
-          "name": "Institutional exit data-room manifest",
+          "name": "operator_capital_allocation",
           "type": "textarea",
-          "prompt": "List the documents and machine-readable schedules required for buyer diligence. Assign an owner and freshness standard to each item, and explain how sensitive seller information is excluded from routine marketing materials.",
-          "example": "Prepare tract polygons, legal descriptions, recorded deeds, lease schedules, title memoranda, unit allocations, approved decimals, twenty-four months of available statements, and a basis bridge. Reconcile every marketed tract to the ownership ledger. Remove tax identifiers and banking details from the buyer overview, providing restricted materials only through controlled diligence access."
+          "prompt": "Read your operator's latest investor presentation and record where windfall cash is going, whether to buybacks, dividends, acquisitions, or new drilling. Estimate how long before any rig response reaches your unit and note whether bolt-on deals suggest more activity nearby.",
+          "example": "Sands advises reading your operator's investor presentation instead of headlines [Matt Sands — n2MrqKJ_h80 @ 00:18:14] and expects at least a one to two quarter lag before rigs respond. Permian Resources ran about $1.05B across about 190 bolt-on deals year-to-date, the largest a $520M Ward County deal [The Byte-Size Brief — fqGTqf-VpBc @ 00:06:14], so we watched for new permits near our Ward County tract."
         },
         {
-          "name": "Exit proceeds and owner-profit bridge",
+          "name": "deduction_and_easement_check",
           "type": "textarea",
-          "prompt": "Model the contemplated disposal using actual asset basis, sale proceeds, selling costs, and retained obligations. Reconcile portfolio revenue and profit without counting returned capital or unrealized marks as recognized operating income.",
-          "example": "The illustrative Base year receives $175,000 royalties and $160,000 Tract B proceeds. Subtract $120,000 returned basis to obtain $215,000 recognized revenue. Subtract the complete $145,125 cost schedule, including its sale-execution allocation, to obtain $69,875 profit. A higher appraisal of unsold Tract A adds nothing to this realized-revenue bridge."
+          "prompt": "Compare the post-production deductions on your statements against what your lease authorizes, and record any pipeline easement offers received. For each, note the amount, the offering company, the deduction or easement language, and whether a landman or attorney has reviewed it.",
+          "example": "Flywheel deducted post-production costs since 2019 under the net-proceeds statute despite gross proceeds leases, and only a court ruling stopped it [Matt Sands — n2MrqKJ_h80 @ 00:07:01]. Matterhorn's $21,000 final offer became a $7M jury award, though typical protesters win only 10% to 20% above the final offer [Matt Sands — FDXztudBSFk @ 00:10:24]. We brought an attorney to our easement offer."
         },
         {
-          "name": "Continue, narrow, pause, or stop decision",
+          "name": "emerging_opportunity_screen",
           "type": "textarea",
-          "prompt": "State the final operating decision, supporting evidence, capital limits, next review date, and conditions that would reverse the decision. Differentiate a temporary research pause from disposing of assets or terminating the strategy.",
-          "example": "Continue research within the selected county while limiting new commitments to $120,000 per fully reviewed tract. Pause purchases if unrestricted liquidity falls below the $51,000 operating-and-curative target or ownership authority remains unresolved. Review again after thirty days. A pause does not authorize a distressed sale or abandonment of existing payor reconciliation."
+          "prompt": "Screen your acreage for emerging opportunities such as helium, carbon dioxide, or enhanced recovery. Record any scout card entries, prospect metrics, and the promoter's identity, and confirm whether the counterparty actually drills wells or simply re-promotes leases to others.",
+          "example": "Sands suggests scanning scout cards for non-flammable gas entries to find overlooked helium and CO2 potential [Matt Sands — ptrz57qzl54 @ 00:35:35]. Tim Rynott screens for 0.5% to 1.5% helium, 3 to 6 MMcf/d and 10 to 20 locations. A helium lease offer arrived from a company with no drilling history, so we declined it as a re-promoter."
         }
       ],
-      "completion_gate": "Complete the launch only when all thirty-day deliverables are evidenced, the canonical scorecard and cash bridge reconcile, specialist responsibilities are accepted, and the next-period decision states capital limits, unresolved risks, and the documented six-to-twenty-four-month first-deal horizon."
+      "completion_gate": "Treat this worksheet as complete only when every permit and plat is saved with its API number, every docket deadline is calendared, operator bonding exposure is tallied, statement deductions are checked against the lease, and every easement or helium offer has a named reviewer and a documented counterparty track record."
     }
   ]
 }

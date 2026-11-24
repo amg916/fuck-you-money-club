@@ -1,761 +1,519 @@
 from __future__ import annotations
 
 VOLUME_025_SUBTITLE: str = (
-    "The Complete Playbook for $1,000,000–$5,000,000 USD in Annual Gross "
-    "Shipper Billings: Build a 3 FT + 2 C (5 People) Freight Brokerage Pod "
-    "and Scale to Seven"
+    "Niche into steel, lumber and machinery, post the $75,000 bond at a negotiated premium, "
+    "win five great shippers with relentless touches, price from the truck up, lock accessorials "
+    "into the rate con, and fence out double brokers before the cargo goes dark"
 )
-
-VOLUME_025_POSITIONING_ALTERNATIVES: list[dict] = [
-    {
-        "title": "The Verified-Carrier Freight Brokerage",
-        "subtitle": (
-            "Build a niche property brokerage around verified carrier identity, "
-            "controlled load tendering, and documented shipment handoffs."
-        ),
-        "audience": (
-            "Experienced freight operators building a five-person brokerage "
-            "serving repeat domestic commercial shippers."
-        ),
-        "research_basis": (
-            "49 U.S.C. 13904 establishes broker registration requirements; "
-            "49 CFR 371.2 defines brokerage roles. FMCSA registration and "
-            "carrier records support identity checks, while Highway or RMIS "
-            "can supplement direct verification. Platform signals alone do "
-            "not establish carrier identity or authorize subcontracting."
-        ),
-        "sources": [
-            "https://www.law.cornell.edu/uscode/text/49/13904",
-            "https://www.ecfr.gov/current/title-49/section-371.2",
-            "https://www.fmcsa.dot.gov/registration/broker-registration",
-            "https://safer.fmcsa.dot.gov/",
-        ],
-        "validation_status": (
-            "Source-informed editorial positioning; not market-tested."
-        ),
-    },
-    {
-        "title": "The Freight Float Control Desk",
-        "subtitle": (
-            "Separate shipper billings, carrier obligations, brokerage spread, "
-            "and collectible cash before accepting another load."
-        ),
-        "audience": (
-            "Brokerage founders managing shipper credit exposure and carrier "
-            "payment commitments with $15,000–$80,000 USD in startup capital."
-        ),
-        "research_basis": (
-            "49 U.S.C. 13906(b) and 49 CFR 387.307 establish property-broker "
-            "security requirements. Broker transaction records under "
-            "49 CFR 371.3 support reconciliation of freight charges and "
-            "brokerage compensation. These requirements inform a cash-control "
-            "positioning rather than evidence of customer demand."
-        ),
-        "sources": [
-            "https://www.law.cornell.edu/uscode/text/49/13906",
-            "https://www.ecfr.gov/current/title-49/section-387.307",
-            "https://www.ecfr.gov/current/title-49/section-371.3",
-        ],
-        "validation_status": (
-            "Source-informed editorial positioning; not market-tested."
-        ),
-    },
-    {
-        "title": "The Repeat-Lane Brokerage Pod",
-        "subtitle": (
-            "Turn a narrow shipper segment into repeat lanes through disciplined "
-            "quoting, carrier coverage, tracking, and invoice reconciliation."
-        ),
-        "audience": (
-            "Commercial freight sellers and carrier-operations leads combining "
-            "three full-time seats with two specialist contractors."
-        ),
-        "research_basis": (
-            "49 CFR 371.3 provides a transaction-record foundation for repeat "
-            "loads. 49 U.S.C. 14706 addresses covered carrier cargo liability, "
-            "and 49 CFR Part 370 addresses covered carrier claim processing. "
-            "The operating design distinguishes broker coordination from "
-            "carrier obligations and prices service complexity explicitly."
-        ),
-        "sources": [
-            "https://www.ecfr.gov/current/title-49/section-371.3",
-            "https://www.law.cornell.edu/uscode/text/49/14706",
-            "https://www.ecfr.gov/current/title-49/part-370",
-        ],
-        "validation_status": (
-            "Source-informed editorial positioning; not market-tested."
-        ),
-    },
-]
 
 
 def build_volume_025_diagrams_data() -> list[dict]:
-    specs = [
-        (
-            "diag-01-verified-load-workflow",
-            "process_flow",
-            "One Load, Five Controlled Handoffs",
-            "Move from a credit-cleared shipper order to reconciled cash.",
-            1,
-            "operating_framework",
-            (
-                "Applies to an authorized domestic property brokerage. Stage "
-                "values indicate sequence, not load volume or conversion rates."
+    return [
+        {
+            "diagram_id": "diag-01-launch-roadmap",
+            "chapter_number": 1,
+            "title": "Five-Step Brokerage Launch Roadmap",
+            "subtitle": "From niche selection to a funded float, per Matt Krause and The Finance Pro",
+            "chart_type": "process_flow",
+            "caption": (
+                "Krause launches on hard freight, files authority for roughly $2,500 to $4,500 all-in, "
+                "runs a stack near $300 a month, and funds the float before booking volume."
             ),
-            (
-                "Automate load matching, tracking, and invoice reconciliation; "
-                "assign a named owner to identity, service, and payment exceptions."
+            "assumptions_note": (
+                "Dollar figures are attributed practitioner claims. Startup cost excludes training. "
+                "The $40,000 float assumes 10 loads a week, as Krause frames it."
             ),
-            [
-                (
-                    "Qualify shipper and lane",
-                    "Confirm credit before accepting the order",
-                    1.0,
-                    (
-                        "Record commodity, equipment, declared cargo value, "
-                        "pickup windows, accessorial terms, and shipper credit "
-                        "limit in the TMS before committing capacity."
+            "note": (
+                "Sources - Matt Krause (afV63okbAMs, bP4Dnpd58PE) and The Finance Pro (29d2gRCN8Ng)."
+            ),
+            "stages": [
+                {
+                    "step": "01",
+                    "label": "Pick a hard-freight niche",
+                    "value": "Step 1",
+                    "detail": (
+                        "Chase steel, lumber and machinery, which Krause calls 1/4 of the work for the "
+                        "same money. Satellite recon shows white rectangles for lumber, gray cylinders "
+                        "for steel coils and yellow shapes for machinery."
                     ),
-                ),
-                (
-                    "Quote and reserve exposure",
-                    "Price carrier cost and service burden",
-                    2.0,
-                    (
-                        "Set the shipper rate against a documented carrier buy "
-                        "rate; reserve credit exposure for the entire invoice, "
-                        "not merely the expected brokerage spread."
+                },
+                {
+                    "step": "02",
+                    "label": "File authority and bond",
+                    "value": "Step 2",
+                    "detail": (
+                        "The $300 FMCSA fee, BMC-84 premium, BOC-3, $46 UCR, LLC and contingent cargo "
+                        "run about $2,500 to $3,500, or $3,500 to $4,500 with weaker credit."
                     ),
-                ),
-                (
-                    "Verify and tender carrier",
-                    "Match authority, identity, driver, and equipment",
-                    3.0,
-                    (
-                        "Cross-check FMCSA records with Highway or RMIS, call a "
-                        "previously verified carrier contact, verify insurance "
-                        "with the issuer, and investigate identity mismatches "
-                        "before issuing the rate confirmation."
+                },
+                {
+                    "step": "03",
+                    "label": "Stand up the tech stack",
+                    "value": "Step 3",
+                    "detail": (
+                        "Load board ~$150, vetting tool $50-$100, TMS ~$25 or free, phone $30. "
+                        "Total ~$300 a month, covered by one $400-margin load."
                     ),
-                ),
-                (
-                    "Track and resolve exceptions",
-                    "Monitor pickup, transit, delivery, and evidence",
-                    4.0,
-                    (
-                        "Use TMS tracking events and exception alerts; confirm "
-                        "unexpected tractor, driver, or destination changes "
-                        "through trusted contacts and retain delivery evidence."
+                },
+                {
+                    "step": "04",
+                    "label": "Build the prospect list",
+                    "value": "Step 4",
+                    "detail": (
+                        "Look for 3+ dock doors with trailers and a careers page posting logistics "
+                        "openings, then star 50 prospects before dialing. Who is on the list matters "
+                        "more than how many."
                     ),
-                ),
-                (
-                    "Reconcile and settle obligations",
-                    "Match documents before releasing carrier payment",
-                    5.0,
-                    (
-                        "Match rate confirmation, proof of delivery, carrier "
-                        "invoice, and approved accessorials. Bill the shipper, "
-                        "pay under agreed terms, and retain required broker "
-                        "transaction records for three years under 49 CFR 371.3."
+                },
+                {
+                    "step": "05",
+                    "label": "Fund the float",
+                    "value": "Step 5",
+                    "detail": (
+                        "At 10 loads a week a new desk is $40,000 out of pocket by week four. With $10K "
+                        "of monthly overhead at $200 per load, break-even is 50 loads a month."
                     ),
-                ),
+                },
             ],
-        ),
-        (
-            "diag-02-repeat-shipper-cohort-funnel",
-            "funnel",
-            "From Named Accounts to Repeat Shippers",
-            "Track one acquisition cohort through five nested account states.",
-            6,
-            "illustrative_model",
-            (
-                "Illustrative 180-day cohort of 200 distinct shipper accounts; "
-                "each later stage is a subset of the prior stage. Counts are "
-                "planning assumptions, not measured benchmarks or load counts. "
-                "The canonical first-deal planning range remains 2–6 months."
+        },
+        {
+            "diagram_id": "diag-02-cold-call-funnel",
+            "chapter_number": 6,
+            "title": "From Dials to a Recurring Account",
+            "subtitle": "Touch volume and the test-load conversion, per Dennis Brown and Matt Krause",
+            "chart_type": "funnel",
+            "caption": (
+                "Phone-built brokers win on volume and follow-up. One 'we don't use brokers' prospect "
+                "became a $150 test load and roughly $20,000 a year in profit."
             ),
-            (
-                "200 targeted accounts produce 10 repeat shippers in this "
-                "illustration: 5% end-to-end conversion, with no implied revenue "
-                "until actual load frequency and invoice values are established."
+            "assumptions_note": (
+                "Stages mix units (monthly touches, daily calls, touches per close, loads), so stage "
+                "values show order of magnitude, not a single cohort conversion rate."
             ),
-            [
-                (
-                    "Named target accounts",
-                    "200 lane-matched commercial shipper accounts",
-                    200.0,
-                    (
-                        "Select accounts with recurring lanes, compatible "
-                        "equipment requirements, reachable transportation buyers, "
-                        "and an identifiable entity responsible for payment."
+            "note": (
+                "Sources - Matt Krause (NF0itNMuQvY, r0gf3CDabxw) and FreightBrokers with Dennis Brown "
+                "(BCLv7SfCxIo, kc6-g1EZ0Fk, knW5LzcUJIw)."
+            ),
+            "stages": [
+                {
+                    "label": "Monthly touches per yes",
+                    "value": 300,
+                    "display": "~300 touches/month",
+                    "conversion": "About one shipper yes per ~300 monthly touches (Krause)",
+                    "detail": "Krause runs 10-20 nightly touches after burning out at 100 a day.",
+                },
+                {
+                    "label": "Daily dial floor",
+                    "value": 50,
+                    "display": "50 calls/day",
+                    "conversion": "Brown's minimum; brokers who stop prospecting stop growing",
+                    "detail": (
+                        "Retire 'did I catch you at a bad time' - Gong figures put it under 1%, about "
+                        "40% worse than average."
                     ),
-                ),
-                (
-                    "Qualified buyer conversations",
-                    "80 accounts; 40% of targeted accounts",
-                    80.0,
-                    (
-                        "Document shipment cadence, incumbent service gaps, "
-                        "procurement process, payment terms, and an accessible "
-                        "buyer with authority to sponsor a trial."
+                },
+                {
+                    "label": "Touches to close",
+                    "value": 12,
+                    "display": "8-12 touches",
+                    "conversion": "6-8 is reasonable; it never closes on the first call",
+                    "detail": "Follow-up across phone, email, LinkedIn and face-to-face carries the deal.",
+                },
+                {
+                    "label": "Test load booked",
+                    "value": 1,
+                    "display": "$150 gross profit",
+                    "conversion": "A 'we don't use brokers' prospect won with one test load",
+                    "detail": "Take three of five loads you can cover rather than committing to five and covering three.",
+                },
+                {
+                    "label": "Recurring account",
+                    "value": 1,
+                    "display": "~$20,000/year",
+                    "conversion": "Over $100,000 across 5+ years from that single pet food shipper",
+                    "detail": (
+                        "Send the handover email the moment the carrier is confirmed, with carrier, "
+                        "pickup time, driver and the driver's direct number."
                     ),
-                ),
-                (
-                    "Documented quoting opportunities",
-                    "40 accounts; 50% of qualified conversations",
-                    40.0,
-                    (
-                        "Receive actual origin, destination, commodity, weight, "
-                        "equipment, and timing requirements; exclude speculative "
-                        "rate checks without a credible shipment opportunity."
-                    ),
-                ),
-                (
-                    "Completed first-load customers",
-                    "20 accounts; 50% of quoting opportunities",
-                    20.0,
-                    (
-                        "Count only customers with a delivered first shipment "
-                        "and an issued invoice; a signed agreement without a "
-                        "completed load does not enter this stage."
-                    ),
-                ),
-                (
-                    "Repeat-load customers",
-                    "10 accounts; 50% of first-load customers",
-                    10.0,
-                    (
-                        "Require a second completed shipment within the cohort "
-                        "window and no overdue undisputed invoice before treating "
-                        "the account as an active repeat relationship."
-                    ),
-                ),
+                },
             ],
-        ),
-        (
-            "diag-03-base-case-billings-to-owner-net",
-            "waterfall",
-            "$3,000,000 Billings to $165,000 Owner Net",
-            "Six bars reconcile the canonical Base-Case 5.5% net margin.",
-            3,
-            "illustrative_model",
-            (
-                "USD per year. Opening and closing bars are totals; intervening "
-                "bars are signed deductions. Carrier cost and expense splits "
-                "are illustrative allocations; the $3,000,000 billings, "
-                "$165,000 owner net, and 5.5% margin are canonical. Owner net "
-                "is the scorecard residual, not a modeled personal tax outcome."
+        },
+        {
+            "diagram_id": "diag-03-bond-premium-ladder",
+            "chapter_number": 3,
+            "title": "The BMC-84 Premium Ladder",
+            "subtitle": "Annual premium on a $75,000 bond, from sub-600 credit to the best market rate",
+            "chart_type": "waterfall",
+            "caption": (
+                "Brokers pay a credit-driven percentage, not $75,000 in cash. Quotes run from $8,000 to "
+                "$10,000 for sub-600 scores down to $975 at a 1.3% rate."
             ),
-            (
-                "$3,000,000 - $2,550,000 - $180,000 - $45,000 - $60,000 "
-                "= $165,000. Carrier costs leave $450,000 in brokerage gross "
-                "profit; $285,000 annual operating expense equals $23,750 "
-                "monthly. Gross shipper billings are the scorecard basis, "
-                "not automatically recognized operator revenue under an "
-                "agent accounting presentation."
+            "assumptions_note": (
+                "Each step lands on a reported premium. Step sizes are the arithmetic gaps between those "
+                "reported quotes, not separate practitioner figures."
             ),
-            [
-                (
-                    "Gross shipper billings",
-                    "$3,000,000 opening total; includes carrier costs",
-                    3000000.0,
-                    (
-                        "Record the full annual shipper invoice amount as the "
-                        "scorecard denominator. This figure includes money "
-                        "owed to carriers and is not retained brokerage income."
-                    ),
-                ),
-                (
-                    "Purchased carrier transportation",
-                    "Subtract $2,550,000; retain $450,000 gross profit",
-                    -2550000.0,
-                    (
-                        "Illustrative carrier purchases consume 85% of billings, "
-                        "leaving a 15% brokerage gross margin before staffing, "
-                        "systems, credit losses, and other operating expenses."
-                    ),
-                ),
-                (
-                    "Pod labor and contractor expense",
-                    "Subtract $180,000 in annual staffing expense",
-                    -180000.0,
-                    (
-                        "Illustrative combined payroll, payroll burden, and "
-                        "contractor spending for the 3 FT + 2 C core pod "
-                        "(five people); reconcile actual owner compensation "
-                        "and local labor costs without counting distributions twice. "
-                        "External carrier/vendor and trade sub-crews belong to "
-                        "direct subcontractor/COGS pass-through, not internal "
-                        "pod headcount."
-                    ),
-                ),
-                (
-                    "Systems and operating services",
-                    "Subtract $45,000 in annual systems expense",
-                    -45000.0,
-                    (
-                        "Illustrative allowance for TMS, load-board access, "
-                        "Highway or RMIS verification, shipment visibility, "
-                        "communications, and invoice-reconciliation services; "
-                        "obtain actual vendor quotes before commitment."
-                    ),
-                ),
-                (
-                    "Other overhead and loss expense",
-                    "Subtract $60,000 in annual residual expense",
-                    -60000.0,
-                    (
-                        "Illustrative combined allowance for insurance, security "
-                        "arrangement costs, administration, acquisition spending, "
-                        "credit losses, claims expense, and funding charges. "
-                        "Restricted trust principal is not an operating expense."
-                    ),
-                ),
-                (
-                    "Annual owner net profit",
-                    "$165,000 closing total; 5.5% of billings",
-                    165000.0,
-                    (
-                        "Reconcile to the canonical Base Case exactly. The "
-                        "Conservative case is $1,000,000 at 3% for $30,000; "
-                        "the Scaled case is $5,000,000 at 8% for $400,000."
-                    ),
-                ),
+            "note": (
+                "Sources - Surety Bonds Direct (tkM7CbVBoC0), Brandon Scott (lzC0i5OReRU), Brandon Manney "
+                "The Mentor (BKciSMvLpD8) and Freight Broker TV (wSNSmdThc6A)."
+            ),
+            "bars": [
+                {
+                    "label": "Sub-600 credit quote",
+                    "value": 10000,
+                    "display": "$8,000-$10,000/yr (upper end)",
+                    "kind": "total",
+                },
+                {
+                    "label": "Poor credit at 4.6%",
+                    "value": 6550,
+                    "display": "Down to $3,450/yr",
+                    "kind": "deduction",
+                },
+                {
+                    "label": "Scott's accepted first quote",
+                    "value": 450,
+                    "display": "Down to $3,000/yr",
+                    "kind": "deduction",
+                },
+                {
+                    "label": "Renegotiated at term end",
+                    "value": 1500,
+                    "display": "Down to $1,500/yr",
+                    "kind": "deduction",
+                },
+                {
+                    "label": "Best market rate at 1.3%",
+                    "value": 525,
+                    "display": "Down to $975/yr",
+                    "kind": "deduction",
+                },
+                {
+                    "label": "Strong-credit premium",
+                    "value": 975,
+                    "display": "$975/yr on $75,000",
+                    "kind": "result",
+                },
             ],
-        ),
-        (
-            "diag-04-niche-gross-spread-yields",
-            "horizontal_bars",
-            "Compare Niche Gross Spread, Not Headline Billings",
-            "Five illustrative lane archetypes use the same $2,000 shipper invoice.",
-            2,
-            "illustrative_model",
-            (
-                "Numeric values are brokerage gross-margin percentages: "
-                "(shipper invoice minus carrier purchase) divided by shipper "
-                "invoice. These are hypothetical quoting comparisons, not "
-                "market yield estimates or net-profit forecasts. Payment terms "
-                "and accessorial treatment are held constant."
+        },
+        {
+            "diagram_id": "diag-04-authority-cost-ranges",
+            "chapter_number": 2,
+            "title": "What Broker Authority Actually Costs",
+            "subtitle": "Reported cost ranges for filing, process agent, UCR, bond premium and all-in launch",
+            "chart_type": "horizontal_bars",
+            "unit": "USD",
+            "caption": (
+                "Authority is $300 per type, but the bond premium swings from $900 to $9,000 on owner "
+                "credit and dominates the all-in launch bill."
             ),
-            (
-                "A wider spread can compensate for harder coverage, cargo "
-                "exposure, or after-hours labor. Compare contribution after "
-                "service costs rather than treating the highest bar as the "
-                "best niche."
+            "assumptions_note": (
+                "The 'typical' marker is a practitioner-named anchor where one exists (Scott's $3,000 "
+                "quote, Krause's $3,500 band edge); otherwise it is the upper end of the reported range."
             ),
-            [
-                (
-                    "Predictable dry-van replenishment",
-                    "12% gross margin; $240 retained spread",
-                    12.0,
-                    (
-                        "$2,000 shipper invoice less $1,760 carrier purchase "
-                        "leaves $240 before overhead. Repeat appointments can "
-                        "reduce touch time, while competitive bids compress spread."
-                    ),
-                ),
-                (
-                    "Regional industrial replacement parts",
-                    "14% gross margin; $280 retained spread",
-                    14.0,
-                    (
-                        "$2,000 shipper invoice less $1,720 carrier purchase "
-                        "leaves $280 before overhead. Confirm receiving hours "
-                        "and accessorial recovery before accepting urgent orders."
-                    ),
-                ),
-                (
-                    "Scheduled packaged-goods truckload",
-                    "15% gross margin; $300 retained spread",
-                    15.0,
-                    (
-                        "$2,000 shipper invoice less $1,700 carrier purchase "
-                        "leaves $300 before overhead. This illustrative spread "
-                        "matches the Base waterfall's carrier-cost assumption."
-                    ),
-                ),
-                (
-                    "Appointment-sensitive refrigerated freight",
-                    "17% gross margin; $340 retained spread",
-                    17.0,
-                    (
-                        "$2,000 shipper invoice less $1,660 carrier purchase "
-                        "leaves $340 before overhead. Verify temperature "
-                        "instructions, equipment suitability, and relevant cargo "
-                        "coverage before tender."
-                    ),
-                ),
-                (
-                    "Time-critical manufacturing recovery",
-                    "18% gross margin; $360 retained spread",
-                    18.0,
-                    (
-                        "$2,000 shipper invoice less $1,640 carrier purchase "
-                        "leaves $360 before overhead. Price after-hours "
-                        "coordination and recovery capacity rather than assuming "
-                        "urgency creates free margin."
-                    ),
-                ),
+            "note": (
+                "Sources - The Broker Intellect (5TtQ4-VoZuI), Truckers Authority (jyVHYDl8PgQ), "
+                "Matt Krause (afV63okbAMs, hhT4X32MspU) and Brandon Scott (lzC0i5OReRU)."
+            ),
+            "bars": [
+                {
+                    "label": "Application fee per authority",
+                    "min": 300,
+                    "max": 300,
+                    "typical": 300,
+                    "display": "$300 per authority type; $0 paid means only a DOT number",
+                },
+                {
+                    "label": "UCR filing",
+                    "min": 46,
+                    "max": 46,
+                    "typical": 46,
+                    "display": "$46",
+                },
+                {
+                    "label": "Process agent (BOC-3)",
+                    "min": 20,
+                    "max": 100,
+                    "typical": 100,
+                    "display": "$20-$100; must cover every operating state",
+                },
+                {
+                    "label": "BMC-84 bond premium",
+                    "min": 900,
+                    "max": 9000,
+                    "typical": 3000,
+                    "display": "$900-$9,000 by owner credit",
+                },
+                {
+                    "label": "All-in authority launch",
+                    "min": 2500,
+                    "max": 4500,
+                    "typical": 3500,
+                    "display": "$2,500-$3,500; up to $4,500 with weaker credit",
+                },
             ],
-        ),
-        (
-            "diag-05-broker-preflight-decision-tree",
-            "decision_tree",
-            "Four Checks Before a Load Moves",
-            "Advance on documented evidence; route failed checks to remediation.",
-            5,
-            "operating_framework",
-            (
-                "Numeric values indicate check order, not risk scores. Apply "
-                "current federal requirements and shipment-specific obligations. "
-                "Software verification supplements, rather than replaces, "
-                "document review and trusted-contact confirmation."
+        },
+        {
+            "diagram_id": "diag-05-shipper-qualification-gates",
+            "chapter_number": 5,
+            "title": "Four Gates Before a Shipper Earns More Freight",
+            "subtitle": "Vetting, margin floor, payment terms and pipeline discipline, per Dennis Brown",
+            "chart_type": "decision_tree",
+            "caption": (
+                "Brown's startup rules - vet every party, hold a $100 floor, state 30-day terms, and keep "
+                "90%+ of time on prospecting - protect cash while 5-10 shippers build a six-figure book."
             ),
-            (
-                "The sequence separates broker authority, carrier identity, "
-                "cash exposure, and cargo risk. Passing one check does not "
-                "resolve failures in another."
+            "assumptions_note": (
+                "Gate order is an editorial sequence. Each threshold is quoted from FreightBrokers "
+                "sessions led by Dennis Brown."
             ),
-            [
-                (
-                    "Broker authority and required security",
-                    "Pass to identity; otherwise suspend booking",
-                    1.0,
-                    (
-                        "Confirm active FMCSA property-broker authority, required "
-                        "process-agent designation, and $75,000 BMC-84 bond or "
-                        "BMC-85 trust security under 49 U.S.C. 13904, "
-                        "13906(b), and 49 CFR 387.307. Verify current provider "
-                        "eligibility and security status; a pending filing "
-                        "does not authorize brokerage operations."
+            "note": (
+                "Source - FreightBrokers with Dennis Brown (UhCy0ncTrTI, j9lUdJynzFA, dciVQpw-BWM, "
+                "kc6-g1EZ0Fk)."
+            ),
+            "nodes": [
+                {
+                    "gate": "G1",
+                    "question": "Has due diligence cleared the shipper, the carrier and the driver?",
+                    "pass_next": "G2",
+                    "fail_action": "Hold the tender until all three checks are complete.",
+                },
+                {
+                    "gate": "G2",
+                    "question": "Does the load clear $100 gross while targeting 10-15% margin?",
+                    "pass_next": "G3",
+                    "fail_action": (
+                        "After the deliberate break-even first load, drop shippers below $100 gross."
                     ),
-                ),
-                (
-                    "Carrier identity and operating eligibility",
-                    "Pass to credit; otherwise investigate mismatches",
-                    2.0,
-                    (
-                        "Check applicable carrier authority and insurance "
-                        "filings through FMCSA, supplement with Highway or "
-                        "RMIS, and confirm dispatch through a trusted number. "
-                        "Independently verify cargo coverage and bank changes; "
-                        "resolve substituted identities or unauthorized "
-                        "re-brokering before release."
-                    ),
-                ),
-                (
-                    "Shipper credit and payment float",
-                    "Pass to cargo; otherwise change exposure",
-                    3.0,
-                    (
-                        "At Base carrier purchases of $2,550,000 annually, a "
-                        "20-day collection-versus-payment gap requires about "
-                        "$139,726 using annual carrier cost divided by 365. "
-                        "If available cash cannot cover modeled obligations, "
-                        "obtain a deposit, change agreed terms, or reduce volume."
-                    ),
-                ),
-                (
-                    "Cargo terms and claims readiness",
-                    "Pass to tender; otherwise resolve coverage",
-                    4.0,
-                    (
-                        "Match commodity, value, exclusions, handling instructions, "
-                        "and contract obligations to verified coverage. "
-                        "49 U.S.C. 14706 addresses covered carrier cargo "
-                        "liability; broker exposure also depends on conduct "
-                        "and contract. Preserve claim evidence and track "
-                        "applicable deadlines under 49 CFR Part 370."
-                    ),
-                ),
+                },
+                {
+                    "gate": "G3",
+                    "question": "Were 30-day terms stated upfront and AP called after the first load?",
+                    "pass_next": "G4",
+                    "fail_action": "Trigger a credit hold at 60 days unpaid.",
+                },
+                {
+                    "gate": "G4",
+                    "question": "Is 90% or more of time still spent prospecting as loads arrive?",
+                    "pass_next": "Grow toward 5-10 active small-to-midsize shippers.",
+                    "fail_action": "Rebuild the pipeline; the business dies when prospecting stops.",
+                },
             ],
-        ),
-        (
-            "diag-06-five-to-seven-person-pod",
-            "org_architecture",
-            "Five Core Seats, Two Scale Seats",
-            "Base: 3 FT + 2 C. Scaled: 4 FT + 3 C.",
-            11,
-            "operating_framework",
-            (
-                "Each numeric value represents one person, not full-time "
-                "equivalent capacity. The first five seats form the "
-                "Conservative and Base pod; the final two are Scaled-only "
-                "additions. Contractor status requires a fact-specific "
-                "classification assessment, not merely a seat label."
+        },
+        {
+            "diagram_id": "diag-06-fraud-defense-desk",
+            "chapter_number": 11,
+            "title": "The Double-Brokering Defense Desk",
+            "subtitle": "Four controls that treat freight fraud as identity theft",
+            "chart_type": "org_architecture",
+            "caption": (
+                "Double brokering cost an estimated $2 to $3 billion in 2024, and a $75,000 bond paid "
+                "Convoy carriers under 10 cents on the dollar. Defense is verification, not insurance."
             ),
-            (
-                "Conservative: $1,000,000 billings and $30,000 owner net with "
-                "five people. Base: $3,000,000 and $165,000 with five. Scaled: "
-                "$5,000,000 and $400,000 with seven. The $180,000 Base labor "
-                "allocation is illustrative and must be tested against actual "
-                "staffing costs and workload."
+            "assumptions_note": (
+                "No practitioner reported desk staffing levels, so headcount is left unspecified. "
+                "Spokes are controls, not mandated roles."
             ),
-            [
-                (
-                    "Founder and commercial lead",
-                    "Core seat one; full-time commercial owner",
-                    1.0,
-                    (
-                        "Own shipper acquisition, pricing limits, customer "
-                        "concentration, and cash planning. Approve unusual "
-                        "credit exposure without also controlling every "
-                        "payment-master change."
+            "note": (
+                "Sources - Double Broker Bounty Hunter (J96nZa6x_Ek, 3dI5z6SHDPc, 3WxrmhqpsyY), Highway "
+                "(b-vDBH9GpuA, sKKld4Wdyqg), Overdrive with Hank Seaton (jnoJihiGSEA) and Freight 360 "
+                "(uGu6NcZkt28)."
+            ),
+            "center": {
+                "role": "Carrier Vetting and Fraud Desk",
+                "headcount": "Not reported by practitioners",
+                "focus": "Confirm who is actually hauling before any pickup number leaves the building.",
+            },
+            "spokes": [
+                {
+                    "role": "Association Insights Screen",
+                    "type": "Vetting platform (Highway)",
+                    "kpi": (
+                        "Flag shared addresses, phones and equipment; 10+ trucks claimed from a "
+                        "residential area; 16 trucks with no inspections in 24 months."
                     ),
-                ),
-                (
-                    "Carrier procurement and verification lead",
-                    "Core seat two; full-time carrier owner",
-                    1.0,
-                    (
-                        "Source capacity, verify carrier identity, negotiate "
-                        "buy rates, and document coverage decisions. Escalate "
-                        "identity conflicts independently of sales pressure."
+                },
+                {
+                    "role": "Rate Anomaly Check",
+                    "type": "Pricing trigger (Double Broker Bounty Hunter)",
+                    "kpi": "Dig at 20% above or below market; 30% above is most likely a scam.",
+                },
+                {
+                    "role": "Credential and PIN Hygiene",
+                    "type": "Account security",
+                    "kpi": (
+                        "DOT PIN reset since the March 2023 breach; never authenticate a load board "
+                        "login from an emailed link."
                     ),
-                ),
-                (
-                    "Shipment operations and service lead",
-                    "Core seat three; full-time execution owner",
-                    1.0,
-                    (
-                        "Run pickup and delivery execution, monitor tracking "
-                        "exceptions, collect proof of delivery, and maintain "
-                        "shipper updates and claims evidence."
+                },
+                {
+                    "role": "Pickup Proof and BOL Control",
+                    "type": "Dispatch protocol (Overdrive, Freight 360)",
+                    "kpi": (
+                        "Authorized carrier name on every bill of lading, a gap on two-thirds to "
+                        "three-quarters of shipments; stacked pickup photo requests."
                     ),
-                ),
-                (
-                    "Billing and reconciliation specialist",
-                    "Core seat four; contracted accounting support",
-                    1.0,
-                    (
-                        "Match invoices to load records, reconcile carrier "
-                        "payables, monitor receivables aging, and flag "
-                        "duplicate invoices. Separate payment preparation "
-                        "from final release."
-                    ),
-                ),
-                (
-                    "After-hours tracking specialist",
-                    "Core seat five; contracted coverage support",
-                    1.0,
-                    (
-                        "Cover agreed monitoring windows, escalate missed "
-                        "milestones, and preserve event logs. One contractor "
-                        "does not provide continuous round-the-clock staffing."
-                    ),
-                ),
-                (
-                    "Additional account operations manager",
-                    "Scaled seat six; added full-time capacity",
-                    1.0,
-                    (
-                        "Add only in the seven-person configuration to own "
-                        "repeat-account execution and absorb measured service "
-                        "load without weakening carrier or credit controls."
-                    ),
-                ),
-                (
-                    "Additional coverage and exception specialist",
-                    "Scaled seat seven; added contracted capacity",
-                    1.0,
-                    (
-                        "Expand defined coverage windows and document exception "
-                        "resolution during peak demand. Track contracted hours "
-                        "against incremental load contribution and service results."
-                    ),
-                ),
+                },
             ],
-        ),
-        (
-            "diag-07-startup-capital-45000-reference-plan",
-            "stacked_comparison",
-            "Allocate a $45,000 Reference Startup Capital Plan",
-            "Four buckets compare $15,000 lean, $45,000 reference, and $80,000 expanded plans.",
-            4,
-            "illustrative_model",
-            (
-                "USD. Numeric values represent the $45,000 central/reference "
-                "plan within the canonical $15,000–$80,000 startup range; "
-                "value and detail text show the lean and expanded alternatives. "
-                "All three plans assume a $75,000 BMC-84 bond, not a fully "
-                "funded BMC-85 trust. Security allocations cover illustrative "
-                "premium, provider charges, and any required collateral only "
-                "if actual underwriting fits the allowance. Bond face value "
-                "is not cash available to the brokerage. Verify current "
-                "requirements and quotes before launch; restricted collateral "
-                "cannot also fund carrier payments or operating runway."
+        },
+        {
+            "diagram_id": "diag-07-agent-split-ranges",
+            "chapter_number": 4,
+            "title": "Freight Agent Commission Splits",
+            "subtitle": "Share of margin, never of gross, by agent tenure and book",
+            "chart_type": "stacked_comparison",
+            "total_range": "40%-70% of load margin",
+            "caption": (
+                "On a $300 margin at a 60% split the agent keeps $180 and the brokerage $120. The broker "
+                "carries authority, bond, back office and credit risk."
             ),
-            (
-                "Lean: $3,000 + $4,000 + $6,000 + $2,000 = $15,000. "
-                "Reference: $5,000 + $15,000 + $20,000 + $5,000 = $45,000. "
-                "Expanded: $8,000 + $30,000 + $34,000 + $8,000 = $80,000. "
-                "Bucket order is bond security, carrier working capital, "
-                "operating runway, and setup. These launch budgets do not "
-                "fully fund Base-volume payment gaps or guarantee runway "
-                "through the 2–6 month first-deal window; phase spending, "
-                "limit load exposure, or arrange additional funding."
+            "assumptions_note": (
+                "Percentages apply to margin only. Ask what comes out before and after the split - load "
+                "board, software, insurance - since the headline rate is not take-home."
             ),
-            [
-                (
-                    "Broker bond premium and security allowance",
-                    "Lean $3,000; reference $5,000; expanded $8,000",
-                    5000.0,
-                    (
-                        "Allocate $3,000 of the $15,000 lean plan, $5,000 of "
-                        "the $45,000 reference plan, or $8,000 of the $80,000 "
-                        "expanded plan to quoted BMC-84 premium, provider "
-                        "charges, and any required collateral. These are "
-                        "planning allowances, not guaranteed quotes. If "
-                        "underwriting exceeds the allocation, revise funding "
-                        "before launch; do not substitute a partial BMC-85 "
-                        "trust or count restricted collateral as working cash."
-                    ),
-                ),
-                (
-                    "Carrier payment working capital",
-                    "Lean $4,000; reference $15,000; expanded $30,000",
-                    15000.0,
-                    (
-                        "Reserve $4,000 of the $15,000 lean plan, $15,000 of "
-                        "the $45,000 reference plan, or $30,000 of the $80,000 "
-                        "expanded plan for carrier-payment timing gaps. Base "
-                        "carrier purchases of $2,550,000 annually require "
-                        "about $139,726 for a 20-day gap before buffers, so "
-                        "none of these allocations supports that exposure. "
-                        "Shorten collection terms, obtain deposits, reduce "
-                        "load volume, or secure additional committed funding."
-                    ),
-                ),
-                (
-                    "Launch operating runway",
-                    "Lean $6,000; reference $20,000; expanded $34,000",
-                    20000.0,
-                    (
-                        "Reserve $6,000 of the $15,000 lean plan, $20,000 of "
-                        "the $45,000 reference plan, or $34,000 of the $80,000 "
-                        "expanded plan for pre-revenue operations and initial "
-                        "staffing. At $6,000 monthly burn, these fund about "
-                        "1.0, 3.3, and 5.7 months respectively. The canonical "
-                        "monthly opex range is $6,000–$30,000, so higher burn "
-                        "shortens runway. None guarantees six months; phase "
-                        "hiring and spending or arrange additional funding "
-                        "without double-counting carrier working capital."
-                    ),
-                ),
-                (
-                    "Setup systems and administration",
-                    "Lean $2,000; reference $5,000; expanded $8,000",
-                    5000.0,
-                    (
-                        "Allocate $2,000 of the $15,000 lean plan, $5,000 of "
-                        "the $45,000 reference plan, or $8,000 of the $80,000 "
-                        "expanded plan to registration work, process-agent "
-                        "services, contract preparation, TMS configuration, "
-                        "verification onboarding, and accounting setup. "
-                        "Obtain actual quotes and prioritize required launch "
-                        "controls. Keep one-time setup charges separate from "
-                        "bond costs and recurring operating-runway spending."
-                    ),
-                ),
+            "note": (
+                "Sources - Matt Krause (hhT4X32MspU) and FreightBrokers with Connor Harutyunyan of ALG "
+                "(jgNUpO0VPws)."
+            ),
+            "buckets": [
+                {
+                    "label": "Low-paying brokerages",
+                    "low": 40,
+                    "high": 40,
+                    "notes": "Some brokerages pay 40%.",
+                },
+                {
+                    "label": "New agents",
+                    "low": 50,
+                    "high": 50,
+                    "notes": "New agents typically start near 50%.",
+                },
+                {
+                    "label": "Agents bringing shippers or volume",
+                    "low": 60,
+                    "high": 70,
+                    "notes": "Tenured, high-volume agents reach 60 to 70%.",
+                },
+                {
+                    "label": "Veteran ALG agent",
+                    "low": 67,
+                    "high": 67,
+                    "notes": "Connor Harutyunyan reports about 67% of profit.",
+                },
             ],
-        ),
-        (
-            "diag-08-first-thirty-days-roadmap",
-            "timeline_roadmap",
-            "Thirty Days to an Evidence-Ready Brokerage",
-            "Prepare the operating system without forcing premature live loads.",
-            12,
-            "operating_framework",
-            (
-                "Numeric values are milestone end days: 7, 14, 21, and 30. "
-                "This sprint prepares launch readiness; it does not replace "
-                "the canonical 2–6 month time-to-first-deal planning range "
-                "or accelerate external authority processing."
+        },
+        {
+            "diagram_id": "diag-08-claims-readiness-roadmap",
+            "chapter_number": 12,
+            "title": "Four-Week Cargo Claims Readiness Plan",
+            "subtitle": "Evidence, coverage proof, high-value protocol and claim filing",
+            "chart_type": "timeline_roadmap",
+            "caption": (
+                "Brokers sit outside Carmack and contingent cargo only matches what the carrier carries; "
+                "Peerless saw one $17,000 contingent payout in 45 years. Documents win claims."
             ),
-            (
-                "Finish the month with a documented niche, tracked authority "
-                "work, tested verification procedures, and a cash-limited "
-                "pipeline. Live brokerage begins only when required authority "
-                "and operating prerequisites are satisfied."
+            "assumptions_note": (
+                "The weekly sequence is an editorial rollout. Clocks, tracker prices and payout figures "
+                "are attributed practitioner claims."
             ),
-            [
-                (
-                    "Days 1-7",
-                    "Define niche, economics, and authority work",
-                    7.0,
-                    (
-                        "Choose equipment and lane boundaries, identify 50 "
-                        "target shippers, document the three canonical "
-                        "scorecard scenarios, obtain security quotes, and "
-                        "prepare required registration and process-agent work."
+            "note": (
+                "Sources - Freight 360 (qTcDOmwZMjI), LOGISTICS RISK EXPERT by Cassandra Gaines "
+                "(Ig6sI3O1a14), CargoRex with Jared Palmer (xQYjaYAvyms) and Cargo Rant (NxIispBOkz8)."
+            ),
+            "weeks": [
+                {
+                    "week": "Week 1",
+                    "title": "Build the claim file first",
+                    "deliverable": (
+                        "Standing folder per load with bill of lading, commercial invoice, packing list, "
+                        "photos and every carrier email."
                     ),
-                ),
-                (
-                    "Days 8-14",
-                    "Configure verification and transaction records",
-                    14.0,
-                    (
-                        "Configure the TMS, Highway or RMIS workflow, trusted "
-                        "callback procedure, carrier document checklist, and "
-                        "49 CFR 371.3 record retention. Test identity and "
-                        "bank-change exceptions using synthetic records."
+                    "gate": "No load closes without its evidence file started.",
+                },
+                {
+                    "week": "Week 2",
+                    "title": "Prove coverage in writing",
+                    "deliverable": (
+                        "Certificates pulled through Highway, RMIS or AssureAssist as holder; carrier's "
+                        "insurance agent emails confirmation that the commodity is not excluded."
                     ),
-                ),
-                (
-                    "Days 15-21",
-                    "Test quoting, credit, and cash timing",
-                    21.0,
-                    (
-                        "Conduct shipper discovery, assemble carrier coverage "
-                        "options, and model sample quotes without representing "
-                        "pending authority as active. Stress-test payment gaps "
-                        "and set account exposure limits against available cash."
+                    "gate": "A carrier's verbal yes does not count.",
+                },
+                {
+                    "week": "Week 3",
+                    "title": "Lock the high-value protocol",
+                    "deliverable": (
+                        "High-value loads go only to relationship carriers, never a load board, with a "
+                        "covert tracker now about $15 instead of $750."
                     ),
-                ),
-                (
-                    "Days 22-30",
-                    "Rehearse shipment execution and reconciliation",
-                    30.0,
-                    (
-                        "Run a synthetic tender-to-settlement exercise, assign "
-                        "the five core seats, test tracking alerts and duplicate "
-                        "invoice detection, and review authority status. Keep "
-                        "live loads paused while required prerequisites remain open."
+                    "gate": "Theft response begins inside the 24 to 48 hour window.",
+                },
+                {
+                    "week": "Week 4",
+                    "title": "Standardize claim filing",
+                    "deliverable": (
+                        "Formal written claim with a dollar amount and commercial invoice, tracked "
+                        "against the 30-day acknowledgment and 120-day disposition clocks."
                     ),
-                ),
+                    "gate": "Check contracts for a specific nine-month limit before accepting 'too old'.",
+                },
             ],
-        ),
+        },
     ]
 
-    return [
-        dict(
-            diagram_id=identifier,
-            chart_type=kind,
-            title=title,
-            subtitle=subtitle,
-            chapter_number=chapter,
-            epistemic_tag=tag,
-            assumptions_note=note,
-            caption=caption,
-            stages=[
-                dict(
-                    label=label,
-                    value=value,
-                    numeric_value=float(number),
-                    detail=detail,
-                )
-                for label, value, number, detail in stages
-            ],
-        )
-        for (
-            identifier,
-            kind,
-            title,
-            subtitle,
-            chapter,
-            tag,
-            note,
-            caption,
-            stages,
-        ) in specs
-    ]
+
+VOLUME_025_POSITIONING_ALTERNATIVES: list[dict] = [
+    {
+        "title": "The Hard-Freight Spread",
+        "subtitle": "Launch a brokerage on steel, lumber and machinery for a few thousand dollars and a funded float",
+        "audience": "First-time owners weighing authority, bond and startup cash",
+        "research_basis": (
+            "Matt Krause prices authority at $2,500 to $4,500 and a stack near $300 a month, chases "
+            "hard freight as 1/4 of the work, and warns of a $40,000 float by week four; Brandon Scott "
+            "halved a $3,000 bond premium at renewal."
+        ),
+        "sources": [
+            "https://www.youtube.com/watch?v=afV63okbAMs&t=470s",
+            "https://www.youtube.com/watch?v=bP4Dnpd58PE&t=390s",
+            "https://www.youtube.com/watch?v=bP4Dnpd58PE&t=1899s",
+            "https://www.youtube.com/watch?v=VD-td9ERDAU&t=123s",
+            "https://www.youtube.com/watch?v=lzC0i5OReRU&t=318s",
+        ],
+        "validation_status": "Grounded strictly in Vol. 025 YouTube practitioner transcripts.",
+    },
+    {
+        "title": "Five Great Shippers",
+        "subtitle": "Touch counts, scripts and test loads that turn cold dials into six-figure books",
+        "audience": "New brokers and agents stuck before their first recurring account",
+        "research_basis": (
+            "Dennis Brown says 5-10 shippers produce six figures and closes take 8-12 touches; Krause "
+            "counts about 300 touches per yes; a $150 test load grew to about $20,000 a year."
+        ),
+        "sources": [
+            "https://www.youtube.com/watch?v=kc6-g1EZ0Fk&t=425s",
+            "https://www.youtube.com/watch?v=kc6-g1EZ0Fk&t=2158s",
+            "https://www.youtube.com/watch?v=NF0itNMuQvY&t=141s",
+            "https://www.youtube.com/watch?v=r0gf3CDabxw&t=559s",
+            "https://www.youtube.com/watch?v=knW5LzcUJIw&t=285s",
+        ],
+        "validation_status": "Grounded strictly in Vol. 025 YouTube practitioner transcripts.",
+    },
+    {
+        "title": "Broker Without the Burn",
+        "subtitle": "Fraud vetting, bond floors and claim files that keep one bad load from ending the business",
+        "audience": "Operating brokers exposed to double brokering, cargo theft and claims",
+        "research_basis": (
+            "Double Broker Bounty Hunter sizes losses at $2 to $3 billion and digs at 20% off market; "
+            "ThinkFreight reports the 7-day replenishment rule; Freight 360 cites one $17,000 contingent "
+            "payout in 45 years; Gaines sets the 30 and 120 day claim clocks."
+        ),
+        "sources": [
+            "https://www.youtube.com/watch?v=J96nZa6x_Ek&t=619s",
+            "https://www.youtube.com/watch?v=3dI5z6SHDPc&t=859s",
+            "https://www.youtube.com/watch?v=s-qzw5ZxjmU&t=101s",
+            "https://www.youtube.com/watch?v=jnoJihiGSEA&t=1528s",
+            "https://www.youtube.com/watch?v=qTcDOmwZMjI&t=867s",
+            "https://www.youtube.com/watch?v=Ig6sI3O1a14&t=311s",
+        ],
+        "validation_status": "Grounded strictly in Vol. 025 YouTube practitioner transcripts.",
+    },
+]

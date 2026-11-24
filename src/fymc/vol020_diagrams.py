@@ -1,742 +1,563 @@
-from __future__ import annotations
+"""Volume 020 diagrams for Government Contract Brokering."""
 
-VOLUME_020_SUBTITLE = (
-    "The Complete Playbook for Government Contract Brokering: "
-    "$120,000–$1,000,000 USD in Annual Service Revenue, "
-    "Built from a 2 FT + 3 C Five-Person Bid Desk"
+from typing import Any, Dict, List
+
+VOLUME_020_SUBTITLE: str = (
+    "Three Quotes, a 7-25% Markup, and the 50% Line: Middleman Primes, "
+    "DIBBS Parts Brokering, FPDS Price Intelligence, Set-Aside Outreach, "
+    "and Funding the 30-Day Payment Gap"
 )
 
-VOLUME_020_POSITIONING_ALTERNATIVES = [
+
+def build_volume_020_diagrams_data() -> List[Dict[str, Any]]:
+    return [
+        {
+            "diagram_id": "diag-01-middleman-bid-workflow",
+            "chapter_number": 1,
+            "title": "The Middleman Bid Workflow",
+            "subtitle": "From set-aside filter to priced submission, as Kizzy Parks teaches it",
+            "caption": (
+                "Kizzy Parks rates a priced VA waste-removal small business set-aside at 50% to 55% "
+                "win odds for a couple hours of monthly oversight, worth $500 to $2,000 a month to "
+                "the prime. GovClose counters that middlemen write 20 to 50 proposals per win."
+            ),
+            "assumptions_note": (
+                "Attorney Steve places the limitations-on-subcontracting exemption at the $350,000 "
+                "simplified acquisition threshold for plain small business set-asides, while Humam "
+                "cites roughly $250,000. A 100% pass-through on 8(a), HUBZone or SDVOSB set-asides "
+                "crosses the legal line. GovCon TechLab floated $30,000 when an agency paid months late."
+            ),
+            "note": (
+                "Sources - Kizzy Parks (kejmg4Gzuuc, 386MNSeLv9E, 2GThNGqMOJQ, R-2hdJLvKUM), "
+                "Dr. Wes Fisher (7NhHddZW0kE), J. White - The Federal Code (LWdgQS6TyHg), "
+                "GovCon TechLab (uYFWvLCSDgA), GovCon Empire with Derrick Green 'Theo' (h72zKiJRBe4), "
+                "GovClose | DoD Contract Academy (GSss1UvHnQg)."
+            ),
+            "chart_type": "process_flow",
+            "stages": [
+                {
+                    "step": "01",
+                    "label": "Filter Small Business Set-Asides",
+                    "value": "Step 1",
+                    "detail": (
+                        "Filter SAM for small business set-asides and open every attachment, because "
+                        "Parks calls it a game of reading. Check whether 52.219-14 is checked on the "
+                        "solicitation (Dr. Wes Fisher)."
+                    ),
+                },
+                {
+                    "step": "02",
+                    "label": "Pull the Prior Contract Amount",
+                    "value": "Step 2",
+                    "detail": (
+                        "Get the prior award from the point of contact, USA Spending or FPDS so a "
+                        "$120,000 bid never lands against a $40,000 history (Kizzy Parks)."
+                    ),
+                },
+                {
+                    "step": "03",
+                    "label": "Collect Three Vendor Quotes",
+                    "value": "Step 3",
+                    "detail": (
+                        "Three price quotes before opening a Word document. Quote big players such as "
+                        "WM or Republic, not small rivals who will bid the job themselves (Kizzy Parks). "
+                        "Line up a backup sub at the same price (J. White, citing Stephanie)."
+                    ),
+                },
+                {
+                    "step": "04",
+                    "label": "Lock Pay-After-Paid Terms",
+                    "value": "Step 4",
+                    "detail": (
+                        "Ask the vendor whether paying after you have been paid is okay and write a "
+                        "stop-work clause into the service agreement (Kizzy Parks). Prove 60 to 90 days "
+                        "of float through a line of credit or cash reserve (GovCon TechLab)."
+                    ),
+                },
+                {
+                    "step": "05",
+                    "label": "Mark Up and Document Management",
+                    "value": "Step 5",
+                    "detail": (
+                        "Add a 20% to 100% markup (Kizzy Parks), then document oversight with an org "
+                        "chart, defined roles and Gantt charts, because if the paperwork is not right, "
+                        "it did not happen (Derrick Green 'Theo')."
+                    ),
+                },
+            ],
+        },
+        {
+            "diagram_id": "diag-02-recompete-pricing-funnel",
+            "chapter_number": 6,
+            "title": "Recompete Pricing Funnel",
+            "subtitle": "Sizing the pipeline, then recovering the real incumbent number from FPDS",
+            "caption": (
+                "Neil McDonnell sizes recompete pipeline at $25-100M of opportunities for every $5M of "
+                "revenue targeted. Fox Wade recovered $1,686,566.88 over three years from modification 0 "
+                "of a DHS NAICS 541611 incumbent, where the latest action alone showed 348k."
+            ),
+            "assumptions_note": (
+                "Stages 1-3 restate McDonnell's pipeline rule and stages 4-5 restate one Fox Wade "
+                "recompete, so the values are not a single continuous conversion path. Kizzy Parks "
+                "assumed an Army award was at least $250K and it came in around $35K, so the POC is "
+                "asked for incumbent, contract number and value every time."
+            ),
+            "note": (
+                "Sources - Neil McDonnell (17foq325L5w), Fox Wade (Z2ZeI5rayvk), "
+                "Kizzy Parks (L0SM3XAM3IE), FedAccess (GrYP5KyxBho)."
+            ),
+            "chart_type": "funnel",
+            "stages": [
+                {
+                    "label": "Pipeline Ceiling",
+                    "value": 100000000,
+                    "display": "$100M",
+                    "conversion": "Top of the $25-100M band per $5M targeted",
+                    "detail": (
+                        "McDonnell pulls recompetes from FPDS and saves each search by URL, because "
+                        "the query lives in the URL."
+                    ),
+                },
+                {
+                    "label": "Pipeline Floor",
+                    "value": 25000000,
+                    "display": "$25M",
+                    "conversion": "Bottom of the band per $5M targeted",
+                    "detail": "McDonnell's floor, with 2027 revenue to be won in 2026.",
+                },
+                {
+                    "label": "Revenue Target",
+                    "value": 5000000,
+                    "display": "$5M",
+                    "conversion": "Revenue the pipeline must convert into",
+                    "detail": "The revenue unit McDonnell's pipeline multiple is anchored to.",
+                },
+                {
+                    "label": "Incumbent Base Award Recovered",
+                    "value": 1686566.88,
+                    "display": "$1,686,566.88",
+                    "conversion": "Modification 0 over three years",
+                    "detail": (
+                        "Fox Wade sorted FPDS by date signed and pulled modification 0 of the DHS "
+                        "incumbent, then pulled the old solicitation because scope can grow from "
+                        "2 people to 10 (FedAccess)."
+                    ),
+                },
+                {
+                    "label": "Latest-Action Trap",
+                    "value": 348000,
+                    "display": "$348K",
+                    "conversion": "Latest action alone",
+                    "detail": (
+                        "The number a pricer sees by skipping modification 0, which Fox Wade warns "
+                        "distorts the recompete price."
+                    ),
+                },
+            ],
+        },
+        {
+            "diagram_id": "diag-03-fpds-simplified-award-filter",
+            "chapter_number": 3,
+            "title": "FPDS Simplified-Award Filter",
+            "subtitle": "Humam's filter chain from 86 million records to 535 pricing comparables",
+            "caption": (
+                "SamSearch reports 65% of simplified acquisition contracts went to small businesses "
+                "versus 26% of traditional contract spending. Humam uses the FPDS action obligation on "
+                "comparable simplified awards as the pricing benchmark before quoting."
+            ),
+            "assumptions_note": (
+                "Deduction bars are the arithmetic gaps between Humam's three reported counts. The year "
+                "of the March 1 date-signed filter was not stated. Kizzy Parks' Coast Guard award shows "
+                "the payoff scale, $1,300 a month profit on $14,000 a month split across 10 vendors."
+            ),
+            "note": (
+                "Sources - GovCon with Humam (IEV3HAgB8jA), SamSearch - AI for Government Contracting "
+                "(e7wypJIJZpw), Kizzy Parks (Ac9lYLwR6QQ)."
+            ),
+            "chart_type": "waterfall",
+            "bars": [
+                {
+                    "label": "FPDS Records at $20K Obligation",
+                    "value": 86000000,
+                    "display": "86 million",
+                    "kind": "total",
+                },
+                {
+                    "label": "Simplified Procedures + Date Signed",
+                    "value": -85970000,
+                    "display": "Cut to 30,000",
+                    "kind": "deduction",
+                },
+                {
+                    "label": "Simplified Award Pool",
+                    "value": 30000,
+                    "display": "30,000",
+                    "kind": "total",
+                },
+                {
+                    "label": "Keyword 'cleaning'",
+                    "value": -29465,
+                    "display": "Cut to 535",
+                    "kind": "deduction",
+                },
+                {
+                    "label": "Cleaning Comparables",
+                    "value": 535,
+                    "display": "535",
+                    "kind": "total",
+                },
+                {
+                    "label": "Pricing Benchmark Set",
+                    "value": 535,
+                    "display": "535 awards to price against",
+                    "kind": "result",
+                },
+            ],
+        },
+        {
+            "diagram_id": "diag-04-registration-clock",
+            "chapter_number": 2,
+            "title": "The Registration Clock",
+            "subtitle": "How long each step of the SAM and CAGE stack takes, per practitioners",
+            "caption": (
+                "Kizzy Parks pulled a UEI roughly 3 minutes into the entity validation flow. The CAGE "
+                "code is assigned by DLA at no charge after submission and is never bought "
+                "(FedOpp, Eric Coffie)."
+            ),
+            "assumptions_note": (
+                "Where a speaker gave only a range, the typical value marks the earliest point given, "
+                "since no midpoint was testified. Three weeks is shown as 21 days. HUBZone requires the "
+                "office and 35% of employee home addresses inside a zone (Nick Waters GovCon), against "
+                "government-wide HUBZone spend of 0.44% (Squared Compass)."
+            ),
+            "note": (
+                "Sources - Neil McDonnell (QIEmDXcWhSE), SEMSCIO (rRWCLLWqrV0), Kizzy Parks "
+                "(FWfV2m3K4jY, eIFlVzfusWo), FedOpp (2Bp78kNCVGI)."
+            ),
+            "chart_type": "horizontal_bars",
+            "unit": "days",
+            "bars": [
+                {
+                    "label": "CAGE Assignment by DLA",
+                    "min": 3,
+                    "max": 21,
+                    "typical": 3,
+                    "display": "3 days to 3 weeks (Neil McDonnell)",
+                },
+                {
+                    "label": "CAGE After IRS Verification",
+                    "min": 7,
+                    "max": 14,
+                    "typical": 7,
+                    "display": "About a week or two (SEMSCIO)",
+                },
+                {
+                    "label": "DLA Follow-Up Response Window",
+                    "min": 3,
+                    "max": 3,
+                    "typical": 3,
+                    "display": "3 business days (Kizzy Parks)",
+                },
+                {
+                    "label": "Registration Login Cadence",
+                    "min": 7,
+                    "max": 7,
+                    "typical": 7,
+                    "display": "At least weekly, since zero reminder emails arrive (Kizzy Parks)",
+                },
+                {
+                    "label": "SAM Renewal Cycle",
+                    "min": 365,
+                    "max": 365,
+                    "typical": 365,
+                    "display": "Every 365 days (FedOpp)",
+                },
+            ],
+        },
+        {
+            "diagram_id": "diag-05-set-aside-sled-bid-gates",
+            "chapter_number": 5,
+            "title": "Set-Aside and SLED Bid Gates",
+            "subtitle": "Four checks before spending time on a certification or a bid",
+            "caption": (
+                "Neil McDonnell counts 11,152 FY2023 SDVOSB set-aside awards against 5,413,622 total new "
+                "contract actions (WOSB 2,845, HUBZone 1,534, 8(a) 872), and reports that 20-30 "
+                "sources-sought responses yield 5-10 RFP responses."
+            ),
+            "assumptions_note": (
+                "SLED figures come from separate speakers. Texas SmartBuy drops from 20,000 pages to 27 "
+                "with status set to posted (SamSearch), and Foley Equipment estimates cooperative "
+                "purchasing at about 20-30% of US purchases."
+            ),
+            "note": (
+                "Sources - GovKidMethod (nRXCetmIWUs, xXM1cyLQ_jY), D'S Construction (yxjYYFbCa5E), "
+                "Government Contracting Strategist & Host (iTD46ZpHbdI), GovClose | DoD Contract Academy "
+                "(Qij-5QQmwc8), Neil McDonnell (4poj2n7iLrs)."
+            ),
+            "chart_type": "decision_tree",
+            "nodes": [
+                {
+                    "gate": "G1",
+                    "question": (
+                        "Does the SAM set-aside filter on your NAICS code show enough set-aside "
+                        "volume to justify a certification?"
+                    ),
+                    "pass_next": "G2",
+                    "fail_action": (
+                        "Hold off on the certification, because the SBA is not going to be bringing "
+                        "you contracts (GovKidMethod)."
+                    ),
+                },
+                {
+                    "gate": "G2",
+                    "question": "Is there a mandatory pre-bid meeting, and can you attend it?",
+                    "pass_next": "G3",
+                    "fail_action": "Skip the bid, because missing it means you cannot submit (D'S Construction).",
+                },
+                {
+                    "gate": "G3",
+                    "question": "Have you pulled the bid tabs and the last award letter?",
+                    "pass_next": "G4",
+                    "fail_action": (
+                        "Pull them and price against history instead of guessing "
+                        "(Government Contracting Strategist & Host)."
+                    ),
+                },
+                {
+                    "gate": "G4",
+                    "question": "Did your questions go in at the sources-sought or RFI stage?",
+                    "pass_next": "Bid, and keep flooding sources sought with a 10-20 firm team (Neil McDonnell)",
+                    "fail_action": (
+                        "Target the next sources-sought notice, since contracting officers avoid "
+                        "one-on-one questions once a solicitation drops (GovClose)."
+                    ),
+                },
+            ],
+        },
+        {
+            "diagram_id": "diag-06-dibbs-broker-architecture",
+            "chapter_number": 11,
+            "title": "DIBBS Parts Broker Architecture",
+            "subtitle": "One narrow FSC lane, quoted every day",
+            "caption": (
+                "DVN reports DLA posts 2,000 to 3,000 solicitations a day, and the active DIBBS vendor "
+                "pool shrank to about 8,500 from roughly 15,000 before the pandemic. Roughly 99% of "
+                "awards go to the cheapest bid."
+            ),
+            "assumptions_note": (
+                "Spokes are functions, not hires, and may all sit with one owner-operator. No headcount "
+                "was testified. Tooling ranges from FedOpp browser-built batch files to DVN's DLA BUS "
+                "catalog uploads and Gov Scraper at $100 a month."
+            ),
+            "note": (
+                "Sources - Tris10 @ MeND (v4ulUMKE5xA, JE_OOJ3NAVk), Secureframe with Tristan Thomas "
+                "(v7nJCLRc0uo), The DLA Vendor Network (DVN) with Ki Hendris (jjX9klCZFKI, MyfmHjDF9HI), "
+                "Loocey DLA & GovCon (LzmJyrGyMBw), FedOpp (bTs2wy13K1c)."
+            ),
+            "chart_type": "org_architecture",
+            "center": {
+                "role": "DIBBS Broker",
+                "headcount": "Owner-operator in a 3 to 5 FSC lane",
+                "focus": "Quote every day, because bid count tracks award count (Tris10 @ MeND)",
+            },
+            "spokes": [
+                {
+                    "role": "RFQ Screener",
+                    "type": "Solicitation intake",
+                    "kpi": (
+                        "Read the full solicitation, filter Approved Sources is null, and reject "
+                        "parts from non-qualifying countries such as China or Afghanistan"
+                    ),
+                },
+                {
+                    "role": "Supplier Sourcer",
+                    "type": "Supply side",
+                    "kpi": (
+                        "Map every NSN to the manufacturer part number with nsn-now, then call "
+                        "instead of email"
+                    ),
+                },
+                {
+                    "role": "Pricer",
+                    "type": "Margin control",
+                    "kpi": (
+                        "10-15% margin anchored to procurement history, since asking 20-30% gets "
+                        "underbid (Tristan Thomas)"
+                    ),
+                },
+                {
+                    "role": "Invoicing and Cash",
+                    "type": "Collections",
+                    "kpi": (
+                        "Net 30 terms with the government paying in 23 to 25 days on average, "
+                        "and My Invoice checked every Friday"
+                    ),
+                },
+            ],
+        },
+        {
+            "diagram_id": "diag-07-winning-markup-bands",
+            "chapter_number": 4,
+            "title": "Winning Markup Bands",
+            "subtitle": "Where first wins and nine-figure bids were actually priced",
+            "caption": (
+                "Dr. Wes Fisher compresses execution into five days, listing 15-20 opportunities and "
+                "getting a quote within 48 hours. Derek James says bids 10-20 are in the money."
+            ),
+            "assumptions_note": (
+                "Each bucket is one practitioner's reported band, not a market survey. Kizzy Parks warns "
+                "the hard part is funding, as with a $155,000 outlay for $10,000 in profit, and that "
+                "upfront-cash, weird or overseas bids can sit outside the 7-25% band."
+            ),
+            "note": (
+                "Sources - Kizzy Parks (etvo2gL7_Cs, AHQVro9N9HM, RrDUfb8vNms, WR8VA1o3VMU), "
+                "with David Packouz and James Walk as reported by Parks."
+            ),
+            "chart_type": "stacked_comparison",
+            "total_range": "7% to 25% markup, the contracting officer's middle band",
+            "buckets": [
+                {
+                    "label": "Contracting Officer Middle Band",
+                    "low": 7,
+                    "high": 25,
+                    "notes": "A contracting officer told Kizzy Parks newcomers bid either too low or too high.",
+                },
+                {
+                    "label": "Gravel Sweet Spot",
+                    "low": 10,
+                    "high": 13,
+                    "notes": "The same contracting officer's band for gravel bids.",
+                },
+                {
+                    "label": "Packouz Munitions Margin",
+                    "low": 10,
+                    "high": 20,
+                    "notes": "Bid just under $300M and came in $52M under the next bidder, while majors bid around $500M.",
+                },
+                {
+                    "label": "James Walk VA Parts",
+                    "low": 15,
+                    "high": 15,
+                    "notes": "About $42K of VA Dallas cooling-tower parts, won under LPTA without being the lowest bidder.",
+                },
+            ],
+        },
+        {
+            "diagram_id": "diag-08-funding-and-payment-roadmap",
+            "chapter_number": 12,
+            "title": "Funding the Gap and Getting Paid",
+            "subtitle": "From financing choice to a proper invoice that starts the payment clock",
+            "caption": (
+                "A contractor typically works about 30 days, invoices, then waits roughly another 30. "
+                "Debra Smith calls 3% to 5% a fair factoring fee, flags anything over 5%, and cites "
+                "RTS Financial at 2.5%."
+            ),
+            "assumptions_note": (
+                "The four-week sequencing is an organizing frame and no practitioner testified to a "
+                "weekly schedule. Progress payments run 80% for large and 95% for small businesses, "
+                "and performance-based payments reach up to 90% of contract value (Acquisition Pro Tips)."
+            ),
+            "note": (
+                "Sources - Debra Smith (NusotbSsCa4), Business Cash Now with Chris Curtin (4V1zq5q3VuQ), "
+                "Mobilization Capital (oOQSsJO94kM), Acquisition Pro Tips (WXCymE9NjBg, cdachjXPX3k), "
+                "Tris10 @ MeND (weLOISkZc5k, yXqp5I7wQK0)."
+            ),
+            "chart_type": "timeline_roadmap",
+            "weeks": [
+                {
+                    "week": "Week 1",
+                    "title": "Pick the Funding Tool",
+                    "deliverable": (
+                        "Factoring for services and credit cards for products (Debra Smith), or a "
+                        "mobilization lender against a signed contract or Notice to Proceed"
+                    ),
+                    "gate": (
+                        "Margin covers the fee, since 5% to 7% low-bid margins leave nothing for "
+                        "financing (Business Cash Now)"
+                    ),
+                },
+                {
+                    "week": "Week 2",
+                    "title": "Lock the Supplier",
+                    "deliverable": "Supplier terms in hand with agency name and POC kept confidential",
+                    "gate": "A sub demanding the agency name and POC before the PO is a signal to walk (Debra Smith)",
+                },
+                {
+                    "week": "Week 3",
+                    "title": "Ship and Invoice in WAWF",
+                    "deliverable": (
+                        "Combo for supplies or Invoice 2-in-1 for services, a Z on the final shipment, "
+                        "and photos plus carrier proof of delivery"
+                    ),
+                    "gate": "Ship-to DoDAAC is not the admin DoDAAC (Acquisition Pro Tips)",
+                },
+                {
+                    "week": "Week 4",
+                    "title": "Chase the Payment",
+                    "deliverable": (
+                        "My Invoice opened every Friday, and rejected invoices copied with only the "
+                        "failed field fixed"
+                    ),
+                    "gate": (
+                        "A proper invoice starts the 30-day prompt payment clock, with late interest "
+                        "quoted at 4.6%"
+                    ),
+                },
+            ],
+        },
+    ]
+
+
+VOLUME_020_POSITIONING_ALTERNATIVES: List[Dict[str, Any]] = [
     {
-        "title": "The Federal Bid Desk",
-        "subtitle": (
-            "Build a recurring-fee procurement service around SAM.gov opportunity "
-            "screening, solicitation matrices, and submission calendars."
-        ),
-        "audience": (
-            "Procurement specialists serving capable small-business suppliers "
-            "that need disciplined capture support without a full internal bid team."
-        ),
+        "title": "The Middleman Prime",
+        "subtitle": "Three Quotes, a Real Markup, and the Line Between Brokering and Fraud",
+        "audience": "New small business owners who want to prime set-asides by managing qualified subs",
         "research_basis": (
-            "SAM.gov provides federal opportunity discovery; FAR 4.1102 establishes "
-            "registration requirements subject to stated exceptions. FAR Subpart 3.4 "
-            "and FAR 52.203-5 constrain contingent-fee arrangements. Position the "
-            "desk around documented services rather than selling influence or "
-            "assuming every award-linked fee is permissible."
+            "Kizzy Parks' three-quote workflow and 50% to 55% win-odds estimate, attorney Steve's "
+            "$350,000 limitations-on-subcontracting exemption, GovCon TechLab's $30,000 float, and "
+            "PilieroMazza's 50% services cap with a 47-49% buffer."
         ),
         "sources": [
-            "https://sam.gov/opportunities",
-            "https://www.acquisition.gov/far/4.1102",
-            "https://www.acquisition.gov/far/subpart-3.4",
-            "https://www.acquisition.gov/far/52.203-5",
+            "https://www.youtube.com/watch?v=kejmg4Gzuuc&t=601s",
+            "https://www.youtube.com/watch?v=R-2hdJLvKUM&t=1250s",
+            "https://www.youtube.com/watch?v=uYFWvLCSDgA&t=447s",
+            "https://www.youtube.com/watch?v=i9prjadeAyM&t=757s",
         ],
-        "validation_status": (
-            "Source-informed editorial positioning; not market-tested."
-        ),
+        "validation_status": "Grounded strictly in Vol. 020 YouTube practitioner transcripts.",
     },
     {
-        "title": "The Prime/Sub Teaming Desk",
-        "subtitle": (
-            "Turn supplier capability evidence into documented workshare, "
-            "responsible teaming, and executable delivery plans."
-        ),
-        "audience": (
-            "Experienced capture operators supporting established primes and "
-            "specialist subcontractors with demonstrable delivery capacity."
-        ),
+        "title": "The DIBBS Parts Broker",
+        "subtitle": "Quote Every Day in a Narrow FSC Lane at 10-15% Margin",
+        "audience": "Operators who want high-volume DLA parts brokering without a factory",
         "research_basis": (
-            "FAR Subpart 9.6 recognizes contractor team arrangements without "
-            "eliminating prime responsibility. FAR 52.215-23 addresses excessive "
-            "pass-through charges when applicable. Under 13 CFR 125.6, covered "
-            "set-aside contracts impose category-specific subcontracting limits; "
-            "a paper intermediary cannot substitute for required performance."
+            "DVN's 2,000-3,000 daily solicitations and shrinking vendor pool, Tristan Thomas' 10-15% "
+            "margin sweet spot, Tris10's bid-count-to-award correlation, and WAWF payment mechanics "
+            "from Acquisition Pro Tips."
         ),
         "sources": [
-            "https://www.acquisition.gov/far/subpart-9.6",
-            "https://www.acquisition.gov/far/52.215-23",
-            "https://www.ecfr.gov/current/title-13/section-125.6",
-            "https://www.acquisition.gov/far/52.219-14",
+            "https://www.youtube.com/watch?v=jjX9klCZFKI&t=1213s",
+            "https://www.youtube.com/watch?v=v7nJCLRc0uo&t=2283s",
+            "https://www.youtube.com/watch?v=v4ulUMKE5xA&t=955s",
+            "https://www.youtube.com/watch?v=WXCymE9NjBg&t=437s",
         ],
-        "validation_status": (
-            "Source-informed editorial positioning; not market-tested."
-        ),
+        "validation_status": "Grounded strictly in Vol. 020 YouTube practitioner transcripts.",
     },
     {
-        "title": "The Municipal Solicitation Desk",
-        "subtitle": (
-            "Run repeatable local-government bid operations with jurisdiction-specific "
-            "submission controls and fixed-scope service fees."
-        ),
-        "audience": (
-            "Regional bid operators helping suppliers pursue municipal purchasing "
-            "opportunities while maintaining separate rulebooks for each jurisdiction."
-        ),
+        "title": "Price to Win, Fund to Deliver",
+        "subtitle": "FPDS History, the 7-25% Band, and Cash That Survives the Payment Gap",
+        "audience": "Bidders losing on price or winning awards they cannot afford to perform",
         "research_basis": (
-            "New York General Municipal Law sections 103 and 104-b illustrate "
-            "the distinction between competitive-bidding requirements and local "
-            "procurement policies for other purchases. These provisions are a "
-            "jurisdiction-specific example, not a nationwide municipal rule. "
-            "Municipal work involving federal awards also requires analysis of "
-            "applicable 2 CFR Part 200 procurement provisions."
+            "The contracting officer's 7-25% middle band reported by Kizzy Parks, Solvability's 1.5 "
+            "wrap rate and 8-15% G&A norm, Fox Wade's modification 0 recovery, and Debra Smith's 3% "
+            "to 5% factoring rule."
         ),
         "sources": [
-            "https://www.nysenate.gov/legislation/laws/GMU/103",
-            "https://www.nysenate.gov/legislation/laws/GMU/104-B",
-            "https://www.ecfr.gov/current/title-2/section-200.318",
-            "https://www.ecfr.gov/current/title-2/section-200.319",
+            "https://www.youtube.com/watch?v=etvo2gL7_Cs&t=143s",
+            "https://www.youtube.com/watch?v=lOumu-Dk0Jw&t=2451s",
+            "https://www.youtube.com/watch?v=Z2ZeI5rayvk&t=170s",
+            "https://www.youtube.com/watch?v=NusotbSsCa4&t=176s",
         ],
-        "validation_status": (
-            "Source-informed editorial positioning; not market-tested."
-        ),
+        "validation_status": "Grounded strictly in Vol. 020 YouTube practitioner transcripts.",
     },
 ]
-
-
-def build_volume_020_diagrams_data() -> list[dict]:
-    specs = [
-        (
-            "diag-01-bid-desk-delivery-workflow",
-            "process_flow",
-            "Operate a Bid Desk, Not an Influence Channel",
-            "Five evidence-backed handoffs from supplier intake to service billing.",
-            1,
-            "operating_framework",
-            (
-                "The operator sells procurement support to supplier clients. "
-                "Government contract face value and subcontract principal remain "
-                "outside recognized operator service revenue. Federal and municipal "
-                "solicitations require separate rule matrices."
-            ),
-            (
-                "Automate solicitation alerts, bid calendars, and checklist reminders; "
-                "retain named human ownership of eligibility, pricing, and submission."
-            ),
-            [
-                (
-                    "Qualify the supplier",
-                    "Document delivery capacity before pursuit",
-                    1.0,
-                    (
-                        "Record client authority, past performance, delivery resources, "
-                        "cash requirements, and conflicts. Check SAM.gov registration "
-                        "and exclusions where relevant; verify claimed set-aside status "
-                        "rather than treating a profile entry as sufficient evidence."
-                    ),
-                ),
-                (
-                    "Screen the opportunity",
-                    "Match requirements against documented capability",
-                    2.0,
-                    (
-                        "Use SAM.gov saved searches and municipal purchasing portals. "
-                        "Extract mandatory qualifications, place of performance, "
-                        "response deadlines, amendments, and evaluation factors into "
-                        "a solicitation matrix with a named pursuit owner."
-                    ),
-                ),
-                (
-                    "Design the service",
-                    "Separate fees from contract principal",
-                    3.0,
-                    (
-                        "Define fixed-scope or retainer deliverables, client "
-                        "responsibilities, and acceptance evidence. Review contingent-fee "
-                        "restrictions and proposed teaming structures before signing; "
-                        "a fixed fee does not cure prohibited conduct."
-                    ),
-                ),
-                (
-                    "Prepare and submit",
-                    "Control versions, amendments, and receipts",
-                    4.0,
-                    (
-                        "Maintain a dated bid calendar, assign technical sections, "
-                        "validate required representations, and obtain client signoff. "
-                        "Have the authorized submitter retain the final package, "
-                        "amendment acknowledgments, and portal receipt."
-                    ),
-                ),
-                (
-                    "Deliver and collect",
-                    "Invoice accepted procurement support services",
-                    5.0,
-                    (
-                        "Record completed service milestones and invoice under the "
-                        "client agreement. Track receivables aging and supplier "
-                        "performance separately; recognize earned service fees without "
-                        "booking the client's government award as operator revenue."
-                    ),
-                ),
-            ],
-        ),
-        (
-            "diag-02-qualified-client-cohort",
-            "funnel",
-            "One Annual Client Cohort, Five Nested Stages",
-            "200 screened suppliers become 20 signed and served clients.",
-            6,
-            "illustrative_model",
-            (
-                "Illustrative mature-year acquisition cohort, not measured conversion "
-                "data. Every stage is a subset of the preceding stage, counted by "
-                "unique supplier organization. All 20 final clients receive a full "
-                "year of services averaging $28,000 each; partial-year starts would "
-                "require a separate revenue schedule."
-            ),
-            (
-                "200 to 80 to 40 to 25 to 20 produces 10% end-to-end conversion "
-                "and $560,000 Base-Case recognized service revenue. Signed service "
-                "clients are not government contract awards."
-            ),
-            [
-                (
-                    "Screened suppliers",
-                    "200 distinct prospective client organizations",
-                    200.0,
-                    (
-                        "Select suppliers with a defined public-sector offering, "
-                        "reachable decision-makers, and a plausible delivery footprint. "
-                        "Count each organization once, even when it pursues multiple "
-                        "solicitations through different purchasing portals."
-                    ),
-                ),
-                (
-                    "Capability-qualified suppliers",
-                    "80 organizations; 40% of initial cohort",
-                    80.0,
-                    (
-                        "Confirm relevant capability evidence, resource availability, "
-                        "and procurement fit. Remove organizations seeking access "
-                        "payments, unsupported certifications, or opportunities they "
-                        "cannot perform with the proposed team."
-                    ),
-                ),
-                (
-                    "Completed discovery engagements",
-                    "40 organizations; 50% of qualified cohort",
-                    40.0,
-                    (
-                        "Complete a structured discovery meeting with an authorized "
-                        "buyer. Establish bid volume, service boundaries, payment "
-                        "capacity, and which activities remain with the client's "
-                        "technical and pricing owners."
-                    ),
-                ),
-                (
-                    "Issued service proposals",
-                    "25 organizations; 62.5% of discovery cohort",
-                    25.0,
-                    (
-                        "Issue scoped service proposals only after reviewing fee "
-                        "structure, conflicts, and delivery effort. Include milestone "
-                        "acceptance, invoice timing, and workload limits rather than "
-                        "promising a government award."
-                    ),
-                ),
-                (
-                    "Signed and served clients",
-                    "20 organizations; 80% of proposal cohort",
-                    20.0,
-                    (
-                        "Deliver the modeled annual service mix: four clients at "
-                        "each of $40,000, $30,000, $28,000, $24,000, and $18,000. "
-                        "Total recognized fees equal $560,000 across 20 clients."
-                    ),
-                ),
-            ],
-        ),
-        (
-            "diag-03-base-case-service-revenue-waterfall",
-            "waterfall",
-            "Base Case: $560,000 Revenue to $126,000 Owner Net",
-            "Four expense deductions reconcile exactly to a 22.5% net margin.",
-            3,
-            "illustrative_model",
-            (
-                "USD per mature operating year. The first bar is recognized service "
-                "revenue, the next four bars are signed expense movements, and the "
-                "sixth bar is the closing total, not another movement. Expense "
-                "allocation is illustrative; revenue, net margin, and owner net "
-                "match the canonical Base Case."
-            ),
-            (
-                "$560,000 - $210,000 - $140,000 - $60,000 - $24,000 = $126,000; "
-                "$126,000 / $560,000 = 22.5%. Costs total $434,000. No client "
-                "award principal enters this bridge."
-            ),
-            [
-                (
-                    "Recognized service revenue",
-                    "Opening total: $560,000 annual service fees",
-                    560000.0,
-                    (
-                        "Recognize earned bid-desk and teaming-support fees under "
-                        "client service agreements. Exclude government award face "
-                        "value, client purchasing volume, and funds that merely "
-                        "pass through for another party."
-                    ),
-                ),
-                (
-                    "Direct contract delivery",
-                    "Expense movement: subtract $210,000 annually",
-                    -210000.0,
-                    (
-                        "Allocate aggregate project-based compensation to the three "
-                        "contractor seats covering capture analysis, proposal "
-                        "production, and delivery verification. Remaining contribution "
-                        "after this deduction is $350,000."
-                    ),
-                ),
-                (
-                    "Full-time personnel",
-                    "Expense movement: subtract $140,000 annually",
-                    -140000.0,
-                    (
-                        "Budget total loaded compensation for two full-time seats "
-                        "at an illustrative $70,000 each. Verify actual hiring costs "
-                        "before adopting this allocation. Remaining contribution "
-                        "after personnel expense is $210,000."
-                    ),
-                ),
-                (
-                    "Operating infrastructure",
-                    "Expense movement: subtract $60,000 annually",
-                    -60000.0,
-                    (
-                        "Allocate $24,000 to software and secure document operations, "
-                        "$18,000 to external legal and accounting services, and "
-                        "$18,000 to insurance, selling, and administration. These "
-                        "outside services do not create dedicated pod seats."
-                    ),
-                ),
-                (
-                    "Rework and credit losses",
-                    "Expense movement: subtract $24,000 annually",
-                    -24000.0,
-                    (
-                        "Model $16,000 of unrecovered delivery rework and $8,000 "
-                        "of recognized client credit-loss expense. These are modeled "
-                        "expenses, not an additional cash reserve or an assumption "
-                        "that every late invoice becomes a loss."
-                    ),
-                ),
-                (
-                    "Annual owner net profit",
-                    "Closing total: $126,000 at 22.5%",
-                    126000.0,
-                    (
-                        "Treat this bar as the closing total. Non-direct operating "
-                        "expenses equal $224,000 annually, or approximately $18,666.67 "
-                        "monthly, inside the stated $5,000–$25,000 monthly operating "
-                        "range; direct contract delivery remains separately identified."
-                    ),
-                ),
-            ],
-        ),
-        (
-            "diag-04-service-package-revenue-yields",
-            "horizontal_bars",
-            "Five Service Niches, One Recognized-Revenue Basis",
-            "Annual service fees per client; four clients in each niche.",
-            2,
-            "illustrative_model",
-            (
-                "Bar lengths show illustrative annual operator service fees per "
-                "client in USD, not observed market prices, contract award values, "
-                "or profit margins. Each client belongs to one primary service "
-                "package; no client is counted in two bars."
-            ),
-            (
-                "Four clients per package yield $160,000 + $120,000 + $112,000 "
-                "+ $96,000 + $72,000 = $560,000. Package pricing must support "
-                "documented work rather than payments for influence."
-            ),
-            [
-                (
-                    "Federal technical-services capture",
-                    "$40,000 annual service fees per client",
-                    40000.0,
-                    (
-                        "Four clients contribute $160,000 through capability mapping, "
-                        "solicitation analysis, and recurring capture coordination. "
-                        "Invoice contracted monthly services; keep the client's "
-                        "technical solution and bid pricing under client ownership."
-                    ),
-                ),
-                (
-                    "Municipal facilities bid operations",
-                    "$30,000 annual service fees per client",
-                    30000.0,
-                    (
-                        "Four clients contribute $120,000 through local portal "
-                        "monitoring, site-visit scheduling, document assembly, and "
-                        "amendment control. Maintain separate jurisdiction rules "
-                        "instead of applying federal clauses indiscriminately."
-                    ),
-                ),
-                (
-                    "Prime/sub teaming administration",
-                    "$28,000 annual service fees per client",
-                    28000.0,
-                    (
-                        "Four clients contribute $112,000 through capability "
-                        "verification, workshare documentation, and teaming records. "
-                        "Charge for actual support work; review FAR 9.6, applicable "
-                        "pass-through clauses, and set-aside performance limits."
-                    ),
-                ),
-                (
-                    "Public-supply solicitation desk",
-                    "$24,000 annual service fees per client",
-                    24000.0,
-                    (
-                        "Four clients contribute $96,000 through specification "
-                        "crosswalks, supplier confirmations, lead-time tracking, and "
-                        "bid assembly. Identify applicable domestic-source and "
-                        "nonmanufacturer requirements before pursuing supply awards."
-                    ),
-                ),
-                (
-                    "Post-submission administration",
-                    "$18,000 annual service fees per client",
-                    18000.0,
-                    (
-                        "Four clients contribute $72,000 through status tracking, "
-                        "client-directed clarification coordination, document retention, "
-                        "and service reporting. Keep authorized government "
-                        "communications distinct from unsolicited access selling."
-                    ),
-                ),
-            ],
-        ),
-        (
-            "diag-05-statutory-structure-decision-tree",
-            "decision_tree",
-            "Four Checks Before Accepting the Engagement",
-            "Each branch either proceeds with evidence or stops for redesign.",
-            5,
-            "operating_framework",
-            (
-                "The numeric values indicate check sequence, not risk scores. "
-                "Apply federal statutes and clauses according to their scope and "
-                "the solicitation. For municipal work, identify local ethics and "
-                "purchasing rules separately; federal funding can add requirements."
-            ),
-            (
-                "Run all four checks before promising services. A favorable result "
-                "on fee structure does not resolve procurement integrity, kickbacks, "
-                "or unlawful performance arrangements."
-            ),
-            [
-                (
-                    "Contingent-fee structure",
-                    "Proceed with documented lawful compensation",
-                    1.0,
-                    (
-                        "Does compensation depend on securing a government contract? "
-                        "If yes, stop for analysis under 41 U.S.C. 3901, FAR "
-                        "Subpart 3.4, and applicable FAR 52.203-5 terms, including "
-                        "the narrowly defined bona fide employee or agency exception. "
-                        "If no, document service deliverables and continue."
-                    ),
-                ),
-                (
-                    "Procurement integrity",
-                    "Proceed only with authorized information",
-                    2.0,
-                    (
-                        "Does the work involve protected bid, proposal, or source "
-                        "selection information, or restricted employment contacts? "
-                        "If yes, stop the affected activity and obtain a documented "
-                        "resolution under 41 U.S.C. 2102–2104 and FAR 3.104. "
-                        "Otherwise record information provenance and continue."
-                    ),
-                ),
-                (
-                    "Kickbacks and influence",
-                    "Reject improper payments or preferential treatment",
-                    3.0,
-                    (
-                        "Is anything of value being offered for improper favorable "
-                        "treatment in a prime contract or related subcontract? "
-                        "If yes, reject the arrangement and address applicable "
-                        "reporting duties. Apply 41 U.S.C. 8702 and FAR Subpart "
-                        "3.5; separately assess public-official bribery under "
-                        "18 U.S.C. 201 where applicable."
-                    ),
-                ),
-                (
-                    "Performance and eligibility",
-                    "Proceed only with executable lawful workshare",
-                    4.0,
-                    (
-                        "Can the eligible contractor perform the required workshare "
-                        "and substantiate intermediary value? If no, redesign or "
-                        "decline. Evaluate 13 CFR 125.6, applicable FAR 52.219-14 "
-                        "and 52.215-23 terms, and ostensible-subcontractor exposure "
-                        "under 13 CFR 121.103(h). If yes, retain the calculation "
-                        "and responsibility matrix."
-                    ),
-                ),
-            ],
-        ),
-        (
-            "diag-06-five-to-seven-person-pod",
-            "org_architecture",
-            "Five Core Seats; Two Seats Added at Scale",
-            "Conservative and Base: 2 FT + 3 C. Scaled: 3 FT + 4 C.",
-            11,
-            "operating_framework",
-            (
-                "FT means full-time employee; C means contractor seat with variable "
-                "engagement hours. Each stage represents one seat, not one full-time "
-                "equivalent. Seats six and seven exist only in the Scaled "
-                "Small-Team scenario; headcount alone does not establish capacity."
-            ),
-            (
-                "Canonical annual outcomes: Conservative $120,000 revenue at 15% "
-                "equals $18,000 owner net; Base $560,000 at 22.5% equals $126,000; "
-                "Scaled $1,000,000 at 30% equals $300,000. Recognized service fees "
-                "remain the revenue basis in every scenario."
-            ),
-            [
-                (
-                    "Managing operator",
-                    "Core seat one: full-time accountable lead",
-                    1.0,
-                    (
-                        "Own client selection, service pricing, conflict review, "
-                        "cash forecasting, and engagement scope. Approve pursuit "
-                        "capacity using actual hours and receivables rather than "
-                        "the nominal value of prospective client awards."
-                    ),
-                ),
-                (
-                    "Bid operations manager",
-                    "Core seat two: full-time workflow owner",
-                    1.0,
-                    (
-                        "Maintain solicitation alerts, bid calendars, version "
-                        "control, amendment tracking, and submission receipts. "
-                        "Escalate missed client inputs early enough to withdraw "
-                        "or revise a pursuit without a defective submission."
-                    ),
-                ),
-                (
-                    "Capture analyst",
-                    "Core seat three: contracted research specialist",
-                    1.0,
-                    (
-                        "Screen SAM.gov notices and municipal opportunities, map "
-                        "requirements to supplier capabilities, and maintain "
-                        "pursuit evidence. Distinguish public opportunity intelligence "
-                        "from protected procurement information."
-                    ),
-                ),
-                (
-                    "Proposal specialist",
-                    "Core seat four: contracted production specialist",
-                    1.0,
-                    (
-                        "Assemble response matrices, edit client-provided technical "
-                        "content, and check required attachments. Record unresolved "
-                        "claims for client correction instead of inventing past "
-                        "performance or unsupported qualifications."
-                    ),
-                ),
-                (
-                    "Supplier performance verifier",
-                    "Core seat five: contracted delivery specialist",
-                    1.0,
-                    (
-                        "Validate supplier commitments, lead times, workshare "
-                        "evidence, and delivery dependencies. Escalate supplier "
-                        "failure and substitution risk before the client commits "
-                        "to an unsupported performance schedule."
-                    ),
-                ),
-                (
-                    "Client delivery lead",
-                    "Scaled seat six: additional full-time employee",
-                    1.0,
-                    (
-                        "Add in the Scaled scenario to manage service acceptance, "
-                        "renewals, and cross-client workload. The resulting employee "
-                        "count is three; preserve separation between client award "
-                        "administration and operator service billing."
-                    ),
-                ),
-                (
-                    "Surge proposal specialist",
-                    "Scaled seat seven: additional contracted specialist",
-                    1.0,
-                    (
-                        "Add in the Scaled scenario for concurrent submission "
-                        "peaks and independent package checks. The resulting "
-                        "contractor count is four; schedule actual availability "
-                        "rather than assuming every contractor works full time."
-                    ),
-                ),
-            ],
-        ),
-        (
-            "diag-07-startup-capital-reference-budget",
-            "stacked_comparison",
-            "Allocate a $55,000 Reference Startup Budget",
-            "Four buckets across $20,000 lean, $55,000 reference, and $90,000 expanded plans.",
-            4,
-            "illustrative_model",
-            (
-                "Numeric bar values represent the $55,000 central/reference startup "
-                "plan in USD, inside the canonical $20,000–$90,000 startup capital "
-                "range. Each stage also specifies its $20,000 lean-plan and "
-                "$90,000 expanded-plan allocation. These are funding alternatives, "
-                "not the Conservative, Base, or Scaled annual earnings scenarios."
-            ),
-            (
-                "Lean: $8,000 + $4,000 + $5,000 + $3,000 = $20,000. Reference: "
-                "$22,000 + $11,000 + $14,000 + $8,000 = $55,000. Expanded: "
-                "$36,000 + $18,000 + $23,000 + $13,000 = $90,000."
-            ),
-            [
-                (
-                    "Working-capital runway",
-                    "Reference $22,000; lean $8,000; expanded $36,000",
-                    22000.0,
-                    (
-                        "Hold cash for staged operating commitments and collection "
-                        "timing. At $5,000 monthly operating expense, the lean, "
-                        "reference, and expanded allocations cover 1.6, 4.4, and "
-                        "7.2 months before receipts, respectively; at $25,000 they "
-                        "cover 0.32, 0.88, and 1.44 months. Direct delivery costs "
-                        "can require additional cash."
-                    ),
-                ),
-                (
-                    "Contracting and risk setup",
-                    "Reference $11,000; lean $4,000; expanded $18,000",
-                    11000.0,
-                    (
-                        "Fund scoped agreement review, insurance placement, entity "
-                        "administration, and jurisdiction-specific operating procedures. "
-                        "SAM.gov registration itself is free; any paid assistance "
-                        "must be separately described rather than represented as "
-                        "a government registration charge."
-                    ),
-                ),
-                (
-                    "Bid-desk systems and launch delivery",
-                    "Reference $14,000; lean $5,000; expanded $23,000",
-                    14000.0,
-                    (
-                        "Fund secure document storage, access controls, CRM setup, "
-                        "calendar automation, and limited launch contractor work. "
-                        "Use SAM.gov alerts, Microsoft 365, and documented checklists "
-                        "before purchasing overlapping research subscriptions."
-                    ),
-                ),
-                (
-                    "Pipeline development",
-                    "Reference $8,000; lean $3,000; expanded $13,000",
-                    8000.0,
-                    (
-                        "Fund targeted supplier outreach, capability interviews, "
-                        "industry meetings, and scoped proposal development. Model "
-                        "the stated 3–12 months to first deal; startup cash alone "
-                        "does not support every combination of that delay and "
-                        "the $5,000–$25,000 monthly operating range."
-                    ),
-                ),
-            ],
-        ),
-        (
-            "diag-08-first-thirty-days-roadmap",
-            "timeline_roadmap",
-            "Thirty Days to an Evidence-Ready Bid Desk",
-            "Build operating readiness without assuming an award in the first month.",
-            12,
-            "operating_framework",
-            (
-                "Numeric values identify milestone end days. The sprint establishes "
-                "service scope, systems, and pursuit discipline; the canonical "
-                "time to first deal remains 3–12 months. Client awards, signed "
-                "engagements, recognized fees, and collected cash are separate events."
-            ),
-            (
-                "Advance on completed evidence: a service charter, an opportunity "
-                "matrix, a tested submission workflow, and a dated pursuit plan."
-            ),
-            [
-                (
-                    "Days 1-7",
-                    "Define one service niche and fee structure",
-                    7.0,
-                    (
-                        "Select one supplier segment and initial jurisdiction. "
-                        "Draft deliverables, exclusions, pricing, and client "
-                        "responsibilities; complete the four statutory checks. "
-                        "Produce a service charter, conflict register, and startup "
-                        "cash plan with explicit spending limits."
-                    ),
-                ),
-                (
-                    "Days 8-14",
-                    "Build alerts, calendars, and opportunity evidence",
-                    14.0,
-                    (
-                        "Configure SAM.gov saved searches and relevant municipal "
-                        "portal monitoring. Review ten actual notices, record "
-                        "mandatory requirements and amendments, and assign calendar "
-                        "owners. Produce a dated opportunity matrix with documented "
-                        "reasons for pursuing or rejecting each notice."
-                    ),
-                ),
-                (
-                    "Days 15-21",
-                    "Test supplier qualification and submission controls",
-                    21.0,
-                    (
-                        "Conduct five capability interviews and document delivery "
-                        "constraints. Run a mock submission using a public notice, "
-                        "without transmitting a bid. Test attachment naming, "
-                        "deadline time zones, client signoff, access recovery, "
-                        "and receipt retention."
-                    ),
-                ),
-                (
-                    "Days 22-30",
-                    "Launch measured outreach and cash review",
-                    30.0,
-                    (
-                        "Issue service proposals only to qualified prospects "
-                        "with reviewed structures. Publish a ninety-day pursuit "
-                        "calendar and weekly receivables review. Record observed "
-                        "cohort conversion separately from the illustrative funnel; "
-                        "do not count outreach, bids, or client awards as earned fees."
-                    ),
-                ),
-            ],
-        ),
-    ]
-    return [
-        dict(
-            diagram_id=identifier,
-            chart_type=kind,
-            title=title,
-            subtitle=subtitle,
-            chapter_number=chapter,
-            epistemic_tag=tag,
-            assumptions_note=note,
-            caption=caption,
-            stages=[
-                dict(
-                    label=label,
-                    value=value,
-                    numeric_value=float(number),
-                    detail=detail,
-                )
-                for label, value, number, detail in stages
-            ],
-        )
-        for identifier, kind, title, subtitle, chapter, tag, note, caption, stages in specs
-    ]

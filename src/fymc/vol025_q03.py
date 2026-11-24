@@ -1,744 +1,846 @@
 from __future__ import annotations
 
-CHAPTER_3 = {
-    "id": "Q3",
-    "chapter_id": "Q3",
-    "chapter_number": 3,
-    "question_number": 3,
-    "slug": "freight-brokerage-unit-economics-margin-waterfall-working-capital",
-    "question_prompt": "What are the real unit economics, gross-to-net margin deductions, scrub/reversal reserves, and working-capital float requirements for freight brokerage?",
-    "kicker": "Q3 / THE BIG MONEY PLAYBOOKS",
-    "title": "Unit Economics, Margin Waterfall & Working-Capital Float",
-    "subtitle": "Shipper Receivables, Carrier Payables, Highway/RMIS Controls, BMC-84/BMC-85 Security, and Recovery-Fee Economics",
-    "layout_template": "financial_breakdown",
-    "reading_time_minutes": 14,
-    "executive_summary": (
-        "Candidate #12, Freight Brokerage, ranks #19 with a Money-to-Manpower Score "
-        "of 85/100 because spread is earned load by load while cash leaves before "
-        "shippers pay. The canonical annual owner profits are $30,000 Conservative, "
-        "$165,000 Base, and $400,000 Scaled on $1 million, $3 million, and $5 million "
-        "of gross shipper billings. This chapter maps eight operating plays: niche-lane "
-        "procurement, detention collection, carrier verification, quick-pay pricing, "
-        "shipper credit control, invoice reconciliation, contingency auditing, and "
-        "float treasury. It separates carrier pass-through, employee and contractor "
-        "labor, acquisition expense, reversals, and financing. Explicit DSO and "
-        "carrier-payment assumptions expose why a profitable brokerage can exhaust "
-        "its cash before its next growth milestone."
-    ),
-    "key_metrics": [
-        {
-            "label": "Conservative",
-            "value": "$1,000,000",
-            "context": "Annual gross shipper billings including carrier costs",
-            "note": "3% net margin; $30,000 annual owner net profit; 3 FT + 2 C",
-        },
-        {
-            "label": "Base",
-            "value": "$3,000,000",
-            "context": "Annual gross shipper billings including carrier costs",
-            "note": "5.5% net margin; $165,000 annual owner net profit; 3 FT + 2 C",
-        },
-        {
-            "label": "Scaled",
-            "value": "$5,000,000",
-            "context": "Annual gross shipper billings including carrier costs",
-            "note": "8% net margin; $400,000 annual owner net profit; 4 FT + 3 C",
-        },
-    ],
-    "sections": [
-        {
-            "heading": "1. Reconcile every load from shipper billing to owner profit",
-            "epistemic_status": "illustrative_model",
-            "paragraphs": [
-                (
-                    "Begin with the scorecard's measurement boundary: revenue means gross "
-                    "shipper billings including purchased transportation, not the broker's "
-                    "retained spread. Actual financial statements require a separate "
-                    "principal-versus-agent assessment; a net presentation changes the "
-                    "revenue denominator without manufacturing additional cash or profit. "
-                    "The illustrative annual cohorts contain 500, 1,500, and 2,500 delivered "
-                    "loads, each averaging $2,000 billed. Carrier purchases average $1,500, "
-                    "$1,600, and $1,560 per load, producing gross spreads of $500, $400, "
-                    "and $440. Those differences represent different customer and lane "
-                    "mixes, not a promise that procurement improves automatically with "
-                    "size. Conservative deliberately assumes a concentrated, higher-spread "
-                    "niche whose small volume absorbs fixed labor poorly. Base broadens "
-                    "the book at a thinner spread; Scaled gains density and purchasing "
-                    "discipline. Preserve separate load identifiers for original tenders, "
-                    "rebooks, accessorial amendments, carrier settlements, and shipper "
-                    "credits. Otherwise, a canceled booking can leave phantom revenue "
-                    "while a replacement carrier creates a second payable. The waterfall "
-                    "below is an explicit cost allocation constructed to reconcile the "
-                    "canonical outcomes, rather than additional scorecard data or vendor "
-                    "pricing. Its owner-profit residual follows all listed business "
-                    "expenses; personal taxes and owner distributions sit outside this "
-                    "operating model."
-                ),
-                (
-                    "Labor must remain visible even when an owner dispatches after "
-                    "hours. Annual loaded employee budgets are $150,000, $240,000, and "
-                    "$360,000 for three, three, and four full-time positions respectively. "
-                    "These imply average loaded costs of $50,000, $80,000, and $90,000; "
-                    "validate local wages, payroll taxes, benefits, and the owner's "
-                    "working-role compensation before accepting them. Contractor delivery "
-                    "support adds $24,000, $48,000, and $84,000, equivalent to 800, "
-                    "1,600, and 2,800 purchased hours at an illustrative $30 hourly "
-                    "rate. The two, two, and three contractors are fractional resources, "
-                    "not additional full-time equivalents. Assign their hours to "
-                    "check-calls, appointment recovery, document collection, and invoice "
-                    "exceptions. Contractor expense per delivered load is consequently "
-                    "$48, $32, and $33.60. Keep commissions inside the stated labor "
-                    "buckets or disclose a replacement allocation; quietly adding "
-                    "commissions later breaks the reconciliation. Employee and contractor "
-                    "classification depends on the actual relationship, not the "
-                    "spreadsheet label. If the Conservative employee budget proves "
-                    "$30,000 too low, its entire annual owner profit disappears. Track "
-                    "after-hours coverage and exception minutes alongside shipment "
-                    "count so nominal automation savings do not merely become "
-                    "unpaid owner labor."
-                ),
-                (
-                    "Acquisition expense is $12,000, $36,000, and $60,000, supporting "
-                    "six, eighteen, and thirty newly acquired shipper accounts at "
-                    "$2,000 incremental CAC each. These are acquisition counts, not "
-                    "an assumption that every load comes from a new account. For "
-                    "a new Base account contributing twenty loads, gross spread "
-                    "is $8,000; subtracting $640 of contractor support and $400 "
-                    "of expected losses leaves $6,960 before allocated employee, "
-                    "platform, financing, and other costs. That contribution covers "
-                    "the $2,000 incremental acquisition outlay after roughly six "
-                    "comparable loads, but collection timing still controls cash "
-                    "payback. A fully loaded CAC report should add attributed "
-                    "employee selling time while eliminating the corresponding "
-                    "double count from payroll when reconciling totals. Keep "
-                    "software and integration costs at $12,000, $24,000, and "
-                    "$42,000; loss provisions at $10,000, $30,000, and $50,000; "
-                    "financing at $6,000, $24,000, and $40,000; and other overhead "
-                    "at $6,000, $33,000, and $64,000. These deductions produce "
-                    "exact owner profits of $30,000, $165,000, and $400,000. "
-                    "Divide by delivered loads to obtain $60, $110, and $160 "
-                    "of owner profit, rather than mistaking the much larger "
-                    "gross spread for distributable earnings."
-                ),
-            ],
-            "table": {
-                "caption": "Annual Cohort Waterfall: Explicit Allocations Reconciled to All Three Canonical Cases",
-                "headers": [
-                    "Waterfall line and operator accounting treatment",
-                    "Conservative annual cohort with 500 delivered loads",
-                    "Base annual cohort with 1,500 delivered loads",
-                    "Scaled annual cohort with 2,500 delivered loads",
-                ],
-                "rows": [
-                    [
-                        "Start with gross shipper invoices before purchased transportation",
-                        "$1,000,000 billed across five hundred completed customer shipments",
-                        "$3,000,000 billed across fifteen hundred completed customer shipments",
-                        "$5,000,000 billed across twenty-five hundred completed customer shipments",
-                    ],
-                    [
-                        "Deduct contracted carrier linehaul and carrier accessorial purchases",
-                        "$750,000 deducted for verified carrier transportation and accessorials",
-                        "$2,400,000 deducted for verified carrier transportation and accessorials",
-                        "$3,900,000 deducted for verified carrier transportation and accessorials",
-                    ],
-                    [
-                        "Retain gross spread before brokerage operating expense deductions",
-                        "$250,000 retained spread equals twenty-five percent of gross billings",
-                        "$600,000 retained spread equals twenty percent of gross billings",
-                        "$1,100,000 retained spread equals twenty-two percent of gross billings",
-                    ],
-                    [
-                        "Deduct loaded employee compensation including working-owner role compensation",
-                        "$150,000 allocated across three full-time operating team positions",
-                        "$240,000 allocated across three full-time operating team positions",
-                        "$360,000 allocated across four full-time operating team positions",
-                    ],
-                    [
-                        "Deduct fractional contractor delivery support and exception handling",
-                        "$24,000 purchases eight hundred contractor hours across two people",
-                        "$48,000 purchases sixteen hundred contractor hours across two people",
-                        "$84,000 purchases twenty-eight hundred contractor hours across three people",
-                    ],
-                    [
-                        "Deduct incremental shipper acquisition spending without duplicating payroll",
-                        "$12,000 supports six acquired accounts at $2,000 incremental CAC",
-                        "$36,000 supports eighteen acquired accounts at $2,000 incremental CAC",
-                        "$60,000 supports thirty acquired accounts at $2,000 incremental CAC",
-                    ],
-                    [
-                        "Deduct transportation software subscriptions and recurring integration support",
-                        "$12,000 funds transportation systems and recurring data integration support",
-                        "$24,000 funds transportation systems and recurring data integration support",
-                        "$42,000 funds transportation systems and recurring data integration support",
-                    ],
-                    [
-                        "Deduct modeled credit losses and unrecovered settlement adjustments",
-                        "$10,000 provisions one percent of annual gross shipper billings",
-                        "$30,000 provisions one percent of annual gross shipper billings",
-                        "$50,000 provisions one percent of annual gross shipper billings",
-                    ],
-                    [
-                        "Deduct financing interest and fees under explicit borrowing assumptions",
-                        "$6,000 annual financing budget requires validation against lender terms",
-                        "$24,000 annual financing budget requires validation against lender terms",
-                        "$40,000 annual financing budget requires validation against lender terms",
-                    ],
-                    [
-                        "Deduct remaining insurance administration and other operating overhead",
-                        "$6,000 remaining overhead must fit actual insurance and administration",
-                        "$33,000 remaining overhead must fit actual insurance and administration",
-                        "$64,000 remaining overhead must fit actual insurance and administration",
-                    ],
-                    [
-                        "Retain canonical annual owner profit after every listed deduction",
-                        "$30,000 owner profit equals three percent of gross billings",
-                        "$165,000 owner profit equals 5.5 percent of gross billings",
-                        "$400,000 owner profit equals eight percent of gross billings",
-                    ],
-                ],
-            },
-        },
-        {
-            "heading": "2. Scrub invoices, reserve reversals, and price eight operating plays",
-            "epistemic_status": "operating_framework",
-            "paragraphs": [
-                (
-                    "Treat scrub as the process that converts an operational event "
-                    "into an enforceable, supported invoice, not as a mysterious "
-                    "percentage withheld from every shipment. Match the shipper "
-                    "tender, signed rate confirmation, delivery evidence, carrier "
-                    "invoice, and authorized accessorial record before billing. "
-                    "For detention, capture arrival, release, appointment, free "
-                    "time, and the applicable contractual rate. Four hours on "
-                    "site with two free hours at $75 per compensable hour "
-                    "supports $150, not $300. If the broker owes the carrier "
-                    "$100, retained incremental spread is $50 before collection "
-                    "and handling expense. Never assume tracking pings alone "
-                    "prove the customer's detention obligation. The annual "
-                    "one-percent loss provision can be analytically divided "
-                    "into 0.50% shipper credit loss, 0.30% unsupported billing "
-                    "or credit adjustments, and 0.20% unrecovered carrier "
-                    "settlement or claims-related costs. Base therefore assigns "
-                    "$15,000, $9,000, and $6,000 to those categories. Financial "
-                    "reporting must classify revenue reductions separately from "
-                    "credit expense where appropriate; this management waterfall "
-                    "combines them only to expose economic leakage. Reconcile "
-                    "opening reserve plus current provision less utilized "
-                    "amounts to closing reserve. A posted credit must not "
-                    "also become a second loss when the invoice finally closes."
-                ),
-                (
-                    "The supplied canonical play is freight_detention_audit_contingency, "
-                    "covering automated parcel, LTL freight, and tariff overcharge "
-                    "contingency auditing under TRACK_1. The remaining seven labels "
-                    "in the matrix are chapter-local operating mappings, not "
-                    "additional asserted catalog identifiers. Obtain shipper-authorized, "
-                    "read-only UPS, FedEx, and LTL billing feeds through supported "
-                    "APIs, EDI delivery, or controlled exports. Obtain CBP Form "
-                    "7501 entry summaries from the authorized importer or its "
-                    "customs service provider; do not assume a universal public "
-                    "API exposes entry records. Reconcile invoice lines to "
-                    "negotiated tariffs, dimensions, weights, service commitments, "
-                    "and actual delivery events. A $25,000 realized recovery "
-                    "at a 40% contingency produces $10,000 of operator fee "
-                    "revenue, not $25,000 and certainly not the underlying "
-                    "freight spend. Deduct $2,000 specialist labor, $1,000 "
-                    "acquisition, $500 data handling, and a $1,000 reversal "
-                    "reserve to obtain $5,500 contribution before allocated "
-                    "fixed overhead. The 35–50% fee range produces $8,750–$12,500 "
-                    "revenue on that same recovery. These are illustrative "
-                    "sidecar economics, excluded from the canonical brokerage "
-                    "totals unless an explicit offsetting allocation incorporates "
-                    "them. Require account-level proof that collected benefits "
-                    "belong to the contracted customer."
-                ),
-                (
-                    "Refund eligibility and drawback eligibility require different "
-                    "evidence. Parcel service guarantees may be suspended or "
-                    "contractually waived; LTL classifications depend on the "
-                    "shipment and governing tariff. When service-refund claims "
-                    "fail, pivot toward duplicate charges, dimensional-weight "
-                    "errors, LTL freight-class corrections, and contract-rate "
-                    "benchmarking recoveries. Target defensible billing errors "
-                    "where service-guarantee waivers do not control the claim, "
-                    "while still checking billing-dispute deadlines and "
-                    "contractual limitations. Duty drawback under 19 U.S.C. "
-                    "1313 requires a qualifying statutory pathway and "
-                    "supporting import, export, or destruction records; Form "
-                    "7501 alone establishes no refund entitlement. Route "
-                    "regulated customs business through appropriately licensed "
-                    "or otherwise authorized participants under 19 U.S.C. "
-                    "1641 and 19 CFR 111.2. Contract contingency fees against "
-                    "actually realized refunds or usable credits and define "
-                    "clawback treatment. A ninety-day recovery cycle can "
-                    "require the $3,500 of delivery, acquisition, and data "
-                    "spending before any fee arrives; the additional $1,000 "
-                    "reserve is retained protection, not immediate vendor "
-                    "spend. Use carrier identity controls from Highway or "
-                    "RMIS alongside independent FMCSA checks and verified "
-                    "bank-change callbacks. A clean platform status does "
-                    "not establish who actually collected the shipment or "
-                    "who controls the remittance account."
-                ),
-            ],
-            "table": {
-                "caption": "Eight Mapped Operating Plays: Unit Math, Evidence, and Risk Fallbacks",
-                "headers": [
-                    "Mapped operating play and defined commercial boundary",
-                    "Concrete unit economics for the operator",
-                    "Evidence required before counting the economic benefit",
-                    "Failure mode and practical fallback operating response",
-                ],
-                "rows": [
-                    [
-                        "Niche-lane procurement uses repeat demand rather than speculative capacity",
-                        "A $2,000 invoice less $1,600 carrier purchase yields $400",
-                        "Retain matched tender, accepted carrier rate, and delivery evidence",
-                        "If spot prices rise, reprice future tenders or decline coverage",
-                    ],
-                    [
-                        "Detention collection converts documented waiting time into supported accessorials",
-                        "Collect $150 detention, pay $100 carrier, retain $50 spread",
-                        "Preserve appointment, arrival, release, free-time allowance, and authorization records",
-                        "If authorization fails, remove unsupported revenue and repair customer terms",
-                    ],
-                    [
-                        "Carrier verification protects purchased transportation from impersonation and diversion",
-                        "A $12 incremental review costs 0.6% of $2,000 billing",
-                        "Cross-check Highway or RMIS with authority, identity, and bank ownership",
-                        "When identity conflicts persist, use a separately verified replacement carrier",
-                    ],
-                    [
-                        "Quick-pay pricing exchanges earlier carrier cash for an agreed discount",
-                        "Two percent of a $1,600 settlement equals $32 discount",
-                        "Record carrier election, actual settlement timing, and lender funding cost",
-                        "Reject discounts below financing cost plus fraud and administration exposure",
-                    ],
-                    [
-                        "Shipper credit control limits concentration before receivables become stranded",
-                        "An $80,000 receivable ceiling supports forty unpaid $2,000 invoices",
-                        "Aggregate delivered unbilled loads, receivables, disputes, and pending tenders",
-                        "Require prepayment or reduce new exposure when limits are exhausted",
-                    ],
-                    [
-                        "Invoice reconciliation prevents duplicate settlement and unsupported shipper billing",
-                        "Preventing one duplicate $1,600 payment preserves sixteen $100 contributions",
-                        "Match load identifier, carrier invoice number, amount, and payment trace",
-                        "Quarantine conflicting invoices for review without delaying unrelated valid obligations",
-                    ],
-                    [
-                        "freight_detention_audit_contingency: Automated Parcel, LTL Freight & Tariff Overcharge Contingency Auditing — TRACK_1",
-                        "$25,000 recovered at forty percent generates $10,000 operator fee",
-                        "Retain authorized billing feeds, applicable tariffs, entry records, and receipts",
-                        "Pivot to dimensional, duplicate-charge, class, and contract-rate recovery rules",
-                    ],
-                    [
-                        "Float treasury aligns invoice collectability with promised carrier payment dates",
-                        "Base carrier funding gap equals $2,400,000 times thirty divided by 365",
-                        "Maintain invoice-level collection forecasts and settlement-date carrier payable schedules",
-                        "Use committed eligible funding or constrain tenders before liquidity fails",
-                    ],
-                ],
-            },
-            "callout": {
-                "kind": "INSIDER PRO-TIPS",
-                "title": "Protect the spread before celebrating the shipment",
-                "body": (
-                    "Small operational exceptions become material when they repeat across "
-                    "an entire shipper cohort; instrument the repeatable failure first."
-                ),
-                "items": [
-                    "Export detention events weekly with appointment and release evidence; bill only compensable hours under the customer's actual terms.",
-                    "Require an independently sourced callback for carrier bank changes; an emailed voided check is supporting evidence, not identity verification.",
-                    "Age audit recoveries from documented customer realization, not from the date an analyst first flags an apparent overcharge.",
-                    "Code every credit by original load and root cause so sales concessions, document failures, and shipper insolvency remain distinguishable.",
-                ],
-            },
-        },
-        {
-            "heading": "3. Fund the collection gap without treating security as spendable cash",
-            "epistemic_status": "illustrative_model",
-            "paragraphs": [
-                (
-                    "Model working capital with a daily convention before quoting "
-                    "a growth target. Assume uniform annual activity over 365 "
-                    "days, shipper DSO of 45, 45, and 50 days, and "
-                    "effective carrier payment timing of 15, 15, and 14 "
-                    "days after delivery. DSO here includes delivery-to-invoice "
-                    "delay; operational dashboards should separately show that "
-                    "delay and invoice-to-cash aging. Carrier payment timing "
-                    "must likewise reflect actual settlement, not contractual "
-                    "terms that the business routinely overrides. The "
-                    "carrier-cost bridge equals annual carrier purchases "
-                    "divided by 365, multiplied by DSO less payment days. "
-                    "It is approximately $61,644 Conservative, $197,260 Base, "
-                    "and $384,658 Scaled. This bridge answers how much "
-                    "purchased transportation is funded between carrier "
-                    "settlement and corresponding customer collection; it "
-                    "does not include every business cash requirement. "
-                    "A document-related payout lock is a specific, "
-                    "contractually supported settlement condition, not an "
-                    "unlimited financing option. Track invoice receipt, "
-                    "proof-of-delivery completeness, exception resolution, "
-                    "and due date independently. Valid carrier obligations "
-                    "remain obligations even when the shipper disputes "
-                    "its own invoice. Repeatedly stretching carriers can "
-                    "remove trusted capacity precisely when a growing "
-                    "brokerage needs reliable service and stronger "
-                    "procurement leverage."
-                ),
-                (
-                    "A complementary balance-sheet measure is gross receivables "
-                    "less carrier payables. Multiply shipper billings by "
-                    "DSO over 365, then subtract carrier purchases times "
-                    "payment days over 365. The resulting trading working "
-                    "capital is approximately $92,466, $271,233, and $535,342. "
-                    "It exceeds the carrier-cost bridge because billed "
-                    "spread is also awaiting collection. These are "
-                    "alternative views of the same operating cycle; "
-                    "never add the two totals. For a planning cushion, "
-                    "add fourteen days of noncarrier cash operating "
-                    "expense, excluding the noncash loss provision. "
-                    "Annual cash expenses on that definition are "
-                    "$210,000, $405,000, and $650,000, producing cushions "
-                    "of roughly $8,055, $15,534, and $24,932. Trading "
-                    "working capital plus those cushions is therefore "
-                    "about $100,521, $286,767, and $560,274. Round "
-                    "illustrative accessible-liquidity targets upward to "
-                    "$110,000, $320,000, and $610,000 before separately "
-                    "assessing concentrated defaults, seasonality, or "
-                    "restricted security. These targets are planning "
-                    "choices, not lender commitments. Build a thirteen-week "
-                    "cash schedule to capture actual invoice batches, "
-                    "payroll dates, tax payments, deposits, and facility "
-                    "draws; steady-state averages can hide a severe "
-                    "Friday settlement shortfall. Undrawn facilities "
-                    "count only to the extent their borrowing conditions "
-                    "are actually satisfied."
-                ),
-                (
-                    "The $15,000–$80,000 startup capital range does not "
-                    "automatically fund the Base or Scaled receivables "
-                    "book. A $250,000 cash contribution falls $70,000 "
-                    "short of the illustrative Base liquidity target "
-                    "before restricted collateral or formation spending. "
-                    "FMCSA property-broker authority and financial "
-                    "responsibility are separate requirements under "
-                    "49 U.S.C. 13904 and 13906 and 49 CFR "
-                    "387.307. The $75,000 BMC-84 surety bond or "
-                    "BMC-85 trust security amount is neither automatic "
-                    "credit availability nor necessarily a $75,000 "
-                    "expense. Bond premium is expense; required "
-                    "collateral consumes liquidity; trust assets "
-                    "cannot simultaneously fund carrier payroll-like "
-                    "settlement runs. Verify current instrument, "
-                    "provider, replenishment, and authority-status "
-                    "requirements before operating. Compare a bank "
-                    "receivables line with factoring using advance "
-                    "rate, eligible collateral, concentration limits, "
-                    "recourse, reserve release, minimum fees, and "
-                    "notification requirements. At an 85% advance, "
-                    "Base gross receivables of about $369,863 "
-                    "produce at most $314,384 before exclusions "
-                    "and facility limits. That is below the "
-                    "$320,000 planning target even when every "
-                    "invoice qualifies. A recourse factor accelerates "
-                    "cash without necessarily transferring shipper "
-                    "default risk. Keep financing budgets provisional "
-                    "until actual balances, rate tiers, and fee "
-                    "schedules reproduce them."
-                ),
-            ],
-            "table": {
-                "caption": "Daily Float Model: Separate Carrier Funding, Trading Working Capital, and Accessible Liquidity",
-                "headers": [
-                    "Funding measure and calculation boundary",
-                    "Conservative funding assumptions and resulting dollars",
-                    "Base funding assumptions and resulting dollars",
-                    "Scaled funding assumptions and resulting dollars",
-                ],
-                "rows": [
-                    [
-                        "Set delivery-to-cash days and actual carrier settlement days",
-                        "Forty-five collection days less fifteen settlement days creates thirty days",
-                        "Forty-five collection days less fifteen settlement days creates thirty days",
-                        "Fifty collection days less fourteen settlement days creates thirty-six days",
-                    ],
-                    [
-                        "Calculate carrier purchases exposed during the collection gap",
-                        "$750,000 divided by 365 times thirty equals approximately $61,644",
-                        "$2,400,000 divided by 365 times thirty equals approximately $197,260",
-                        "$3,900,000 divided by 365 times thirty-six equals approximately $384,658",
-                    ],
-                    [
-                        "Calculate gross receivables before credit exclusions or lender haircuts",
-                        "$1,000,000 times forty-five divided by 365 equals approximately $123,288",
-                        "$3,000,000 times forty-five divided by 365 equals approximately $369,863",
-                        "$5,000,000 times fifty divided by 365 equals approximately $684,932",
-                    ],
-                    [
-                        "Subtract carrier payables to calculate trading working capital",
-                        "$123,288 receivables less $30,822 carrier payables leaves approximately $92,466",
-                        "$369,863 receivables less $98,630 carrier payables leaves approximately $271,233",
-                        "$684,932 receivables less $149,589 carrier payables leaves approximately $535,342",
-                    ],
-                    [
-                        "Add fourteen days of noncarrier cash operating expense",
-                        "$210,000 annual cash expense creates approximately $8,055 additional cushion",
-                        "$405,000 annual cash expense creates approximately $15,534 additional cushion",
-                        "$650,000 annual cash expense creates approximately $24,932 additional cushion",
-                    ],
-                    [
-                        "Set rounded accessible-liquidity targets excluding restricted financial security",
-                        "$110,000 planning target exceeds approximately $100,521 modeled requirement",
-                        "$320,000 planning target exceeds approximately $286,767 modeled requirement",
-                        "$610,000 planning target exceeds approximately $560,274 modeled requirement",
-                    ],
-                ],
-            },
-            "callout": {
-                "kind": "OPERATOR GATE",
-                "title": "Verify four funding conditions before increasing accepted loads",
-                "body": (
-                    "Authorize additional shipment exposure only when the shipment-level "
-                    "records and the treasury schedule support the promised settlements."
-                ),
-                "items": [
-                    "Reconcile delivery-to-invoice delay and invoice-to-cash aging to the assumed DSO; investigate excluded disputes and delivered unbilled shipments.",
-                    "Confirm carrier due dates and quick-pay elections against available cash, rather than assuming every carrier accepts the modeled payment interval.",
-                    "Verify current FMCSA authority and $75,000 financial-security support; exclude restricted trust assets and pledged collateral from usable liquidity.",
-                    "Recalculate lender availability after debtor concentration, aging, disputes, reserves, and recourse exposure; fund the remaining gap before accepting more tenders.",
-                ],
-            },
-        },
-        {
-            "heading": "4. Stress the cohort and turn exceptions into a weekly cash SOP",
-            "epistemic_status": "illustrative_model",
-            "paragraphs": [
-                (
-                    "Stress purchase cost and collection quality independently "
-                    "before combining them. A two-percentage-point increase "
-                    "in carrier cost as a share of gross billings "
-                    "removes $20,000, $60,000, and $100,000 from annual "
-                    "profit when customer pricing stays unchanged. "
-                    "Owner profit falls to $10,000, $105,000, and "
-                    "$300,000. An additional one-percentage-point loss "
-                    "provision removes another $10,000, $30,000, and "
-                    "$50,000. Together those operating shocks leave "
-                    "$0, $75,000, and $250,000 before any financing "
-                    "effect. Do not label a two-point revenue "
-                    "deduction as a two-percent carrier-price increase: "
-                    "the denominators differ. On Base carrier purchases "
-                    "of $2.4 million, a literal two-percent purchase "
-                    "increase is $48,000, whereas two points of "
-                    "$3 million billings is $60,000. Use both "
-                    "views during bid review and state the "
-                    "chosen denominator in the customer cohort "
-                    "report. Concentration produces a different "
-                    "shock: a single $50,000 unrecovered shipper "
-                    "balance exceeds Conservative annual profit "
-                    "before any offsetting reserve release. Model "
-                    "such events against existing provisions so "
-                    "the same expected loss is not charged "
-                    "twice. Future volume can be repriced; "
-                    "completed shipments need a collections and "
-                    "settlement plan rather than optimistic "
-                    "replacement bookings."
-                ),
-                (
-                    "Extend DSO by fifteen days without changing "
-                    "carrier payment behavior. Additional gross "
-                    "receivables become approximately $41,096, "
-                    "$123,288, and $205,479. If a lender funds "
-                    "the entire incremental balance at an "
-                    "illustrative 12% annual rate and the "
-                    "extension persists throughout a full year, "
-                    "incremental annual interest is $4,932, "
-                    "$14,795, and $24,658. A temporary delay "
-                    "requires interest based on actual duration, "
-                    "not this sustained annualization. Funding "
-                    "availability is a separate question: an "
-                    "aging invoice may lose eligibility just "
-                    "when cash is needed most. Combining "
-                    "the carrier-cost shock, extra losses, "
-                    "and sustained collection delay produces "
-                    "approximately negative $4,932, positive "
-                    "$60,205, and positive $225,342 in annual "
-                    "owner profit. Compare that with replacing "
-                    "the entire original financing budget "
-                    "with a simple 2% fee on every "
-                    "gross invoice. Annual fees would be "
-                    "$20,000, $60,000, and $100,000, yielding "
-                    "profits of $16,000, $129,000, and "
-                    "$340,000 after removing the old "
-                    "financing expense first. This fee-only "
-                    "comparison excludes additional interest "
-                    "and service charges; actual proposals "
-                    "must be modeled from their complete "
-                    "schedules. Never add a replacement "
-                    "financing fee while retaining an "
-                    "expense it explicitly replaces."
-                ),
-                (
-                    "Run the operating review from one immutable "
-                    "weekly shipment extract, then reconcile it "
-                    "to accounting and bank activity. Segment "
-                    "by shipper, lane, equipment, salesperson, "
-                    "carrier, invoice month, and exception "
-                    "reason. A Base load yielding $400 "
-                    "spread but requiring five extra contractor "
-                    "hours at $30 consumes $150 before "
-                    "employee escalation or credit loss. "
-                    "If that pattern repeats across one "
-                    "hundred loads, $15,000 of contribution "
-                    "vanishes even though headline gross "
-                    "margin appears healthy. Separate these "
-                    "exceptions from normal delivery support "
-                    "to determine whether the modeled "
-                    "$48,000 contractor budget still holds. "
-                    "Use TMS event timestamps, accounting "
-                    "payment traces, and bank reconciliation "
-                    "rather than salesperson estimates. "
-                    "Maintain the transaction records required "
-                    "by 49 CFR 371.3, including compensation "
-                    "and freight-charge information, and "
-                    "preserve applicable access rights. "
-                    "Assign each exception an owner, "
-                    "evidence requirement, recovery amount, "
-                    "and next action date. Escalate "
-                    "unresolved identity conflicts separately "
-                    "from ordinary missing paperwork. "
-                    "Finish each review with a signed "
-                    "cash forecast that states which "
-                    "customer exposure can grow, which "
-                    "needs prepayment, and which should "
-                    "stop receiving new tenders. Profit "
-                    "is usable only when the corresponding "
-                    "cash survives collection, settlement, "
-                    "and correction."
-                ),
-            ],
-            "table": {
-                "caption": "Annual Sensitivity Tests: Hold All Unmentioned Inputs Constant",
-                "headers": [
-                    "Explicit stress definition and accounting treatment",
-                    "Conservative annual owner-profit result or funding change",
-                    "Base annual owner-profit result or funding change",
-                    "Scaled annual owner-profit result or funding change",
-                ],
-                "rows": [
-                    [
-                        "Baseline uses the exact canonical revenue and profit cases",
-                        "$30,000 annual owner profit before any additional modeled stress",
-                        "$165,000 annual owner profit before any additional modeled stress",
-                        "$400,000 annual owner profit before any additional modeled stress",
-                    ],
-                    [
-                        "Carrier cost increases by two percentage points of gross billings",
-                        "$10,000 profit remains after subtracting $20,000 additional carrier expense",
-                        "$105,000 profit remains after subtracting $60,000 additional carrier expense",
-                        "$300,000 profit remains after subtracting $100,000 additional carrier expense",
-                    ],
-                    [
-                        "Loss provision increases alone by one percentage point of billings",
-                        "$20,000 profit remains after subtracting $10,000 additional expected losses",
-                        "$135,000 profit remains after subtracting $30,000 additional expected losses",
-                        "$350,000 profit remains after subtracting $50,000 additional expected losses",
-                    ],
-                    [
-                        "DSO extends fifteen days with sustained twelve-percent incremental borrowing",
-                        "Approximately $41,096 additional funding creates $4,932 annual incremental interest",
-                        "Approximately $123,288 additional funding creates $14,795 annual incremental interest",
-                        "Approximately $205,479 additional funding creates $24,658 annual incremental interest",
-                    ],
-                    [
-                        "Combine two-point carrier shock, one-point losses, and extended DSO",
-                        "Approximately negative $4,932 annual owner profit after all three shocks",
-                        "Approximately positive $60,205 annual owner profit after all three shocks",
-                        "Approximately positive $225,342 annual owner profit after all three shocks",
-                    ],
-                    [
-                        "Replace original financing expense with two-percent gross-invoice fee only",
-                        "$16,000 profit equals $30,000 plus $6,000 less $20,000 fees",
-                        "$129,000 profit equals $165,000 plus $24,000 less $60,000 fees",
-                        "$340,000 profit equals $400,000 plus $40,000 less $100,000 fees",
-                    ],
-                ],
-            },
-            "sop_steps": [
-                {
-                    "step": 1,
-                    "title": "Freeze and reconcile the delivered-load cohort",
-                    "action": "Export the prior week's deliveries, amendments, invoices, credits, and settlements into a versioned reconciliation workbook.",
-                    "detail": "Tie shipment counts and gross billings to the TMS and ledger; retain separate identifiers for canceled loads, replacement tenders, and disputed accessorials.",
-                },
-                {
-                    "step": 2,
-                    "title": "Rebuild the contribution and reserve waterfall",
-                    "action": "Allocate purchased transportation, contractor time, acquisition spending, and expected loss adjustments to the correct shipper cohort.",
-                    "detail": "Reconcile reserve opening balance, new provision, utilization, and closing balance; remove duplicate charges between revenue credits, loss expense, and actual write-offs.",
-                },
-                {
-                    "step": 3,
-                    "title": "Refresh thirteen-week settlement and collection liquidity",
-                    "action": "Update expected receipt dates, carrier due dates, payroll, lender availability, and restricted security balances.",
-                    "detail": "Run fifteen-day DSO deterioration and concentrated-customer default cases; exclude ineligible invoices and unavailable collateral from the funding sources column.",
-                },
-                {
-                    "step": 4,
-                    "title": "Assign corrective actions before accepting incremental exposure",
-                    "action": "Set customer-level prepayment requirements, revised tender limits, repricing actions, and exception-resolution owners.",
-                    "detail": "Record dollar exposure, evidence still required, next review date, and settlement responsibility; verify completion against subsequent bank and shipment records.",
-                },
-            ],
-        },
-    ],
-    "pull_quote": "A freight spread is only spendable after the shipper pays, the carrier clears, and the exceptions stop reversing.",
-    "diagram_id": "diag-03",
-    "action_checklist": [
-        "Reconcile the $1 million, $3 million, and $5 million gross-billing cohorts to exactly $30,000, $165,000, and $400,000 annual owner profit.",
-        "Validate employee compensation and fractional contractor hours against actual coverage requirements, including the owner's working role and after-hours exceptions.",
-        "Create load-linked reserve categories for credit loss, unsupported billing, and unrecovered settlement exposure without duplicating posted credits or write-offs.",
-        "Build a thirteen-week cash forecast using actual delivery-to-cash timing, carrier due dates, lender eligibility, and separately restricted financial security.",
-        "Pilot freight_detention_audit_contingency with authorized billing records, collection-based contingency fees, documented reversals, and qualified customs participants where required.",
-        "Run the two-point carrier-cost, one-point loss, and fifteen-day DSO stresses before increasing shipper credit limits or accepting materially more volume.",
-    ],
-    "statutory_citations": [
-        {
-            "title": "49 U.S.C. 13904 — Registration of brokers",
-            "url": "https://www.law.cornell.edu/uscode/text/49/13904",
-            "relevance": "Establishes the federal broker-registration framework that must be addressed before operating the property-brokerage business.",
-        },
-        {
-            "title": "49 U.S.C. 13906(b) — Broker financial security",
-            "url": "https://www.law.cornell.edu/uscode/text/49/13906",
-            "relevance": "Provides the statutory broker financial-security framework, including the $75,000 amount relevant to restricted capital and liquidity planning.",
-        },
-        {
-            "title": "49 CFR 387.307 — Property-broker surety bond or trust fund",
-            "url": "https://www.ecfr.gov/current/title-49/section-387.307",
-            "relevance": "Governs broker financial responsibility and the BMC-84/BMC-85 framework; verify current security maintenance requirements separately from operating cash availability.",
-        },
-        {
-            "title": "49 CFR 371.3 — Records to be kept by brokers",
-            "url": "https://www.ecfr.gov/current/title-49/section-371.3",
-            "relevance": "Requires transaction records covering brokerage activity, compensation, and freight-charge information, with retention and transaction-party access provisions.",
-        },
-        {
-            "title": "19 U.S.C. 1313 — Drawback and refunds",
-            "url": "https://www.law.cornell.edu/uscode/text/19/1313",
-            "relevance": "Defines statutory drawback pathways; an entry summary alone does not establish eligibility for the contingency audit's proposed customs recovery.",
-        },
-        {
-            "title": "19 U.S.C. 1641 — Customs brokers",
-            "url": "https://www.law.cornell.edu/uscode/text/19/1641",
-            "relevance": "Defines customs business and the licensing framework relevant when audit work moves beyond analytics into regulated customs representation.",
-        },
-        {
-            "title": "19 CFR 111.2 — License and permit requirements",
-            "url": "https://www.ecfr.gov/current/title-19/section-111.2",
-            "relevance": "Identifies licensing and permit requirements and applicable exceptions for customs business; structure drawback execution around the participant's actual authority.",
-        },
-    ],
-}
+CHAPTER_3 = {'id': 'Q3',
+ 'chapter_id': 'Q3',
+ 'chapter_number': 3,
+ 'question_number': 3,
+ 'slug': 'the-75000-surety-bond-bmc-84-vs-bmc-85',
+ 'question_prompt': 'What is the $75,000 broker bond, how much will it cost me, and should I choose a '
+                    'BMC-84 or BMC-85?',
+ 'kicker': 'Q3 / THE BIG MONEY PLAYBOOKS',
+ 'title': 'The $75,000 Surety Bond',
+ 'subtitle': "What the bond does and doesn't protect, BMC-84 surety bond vs. BMC-85 trust fund, premium "
+             'costs by credit with real examples, choosing a surety company, filing through Motus, and the '
+             'FMCSA bond rule change',
+ 'layout_template': 'financial_analysis',
+ 'reading_time_minutes': 15,
+ 'executive_summary': 'Freight brokers cannot activate authority without $75,000 in FMCSA financial '
+                      'security, and practitioners agree almost nobody posts that in cash: the BMC-84 '
+                      'surety bond costs a credit-driven annual premium, while the BMC-85 trust ties up '
+                      'the full $75,000. Speakers hammer one point repeatedly: the bond protects carriers, '
+                      'not the broker. The surety pays valid claims and claws every dollar back. Street '
+                      'pricing runs from roughly $900 to $975 a year for strong credit, with 1.3% cited as '
+                      'the best rate on the market, up to $8,000 to $10,000 for sub-600 scores. Brandon '
+                      'Scott cut a $3,000 first-year premium to $1,500 by renegotiating at renewal, and '
+                      'Freight Broker TV says to quote the bond before filing authority. The disagreements '
+                      'center on BMC-85 safety, whether rookies can get bonded at all, and whether the '
+                      'seven-day replenishment rule actually protects carriers.',
+ 'key_metrics': [{'label': 'Required Broker Financial Security',
+                  'metric': 'Required Broker Financial Security',
+                  'value': '$75,000 bond amount, paid as a percentage premium rather than in cash',
+                  'confidence': 'attributed_practitioner_claim',
+                  'context': 'Dennis Brown says the biggest beginner mistake is thinking they must write a '
+                             '$75,000 check, when the actual cost is only a percentage of the bond amount.',
+                  'source': 'FreightBrokers ([yiDO9s6ArZU @ 00:01:01])'},
+                 {'label': 'Best Premium Rate On The Market',
+                  'metric': 'Best Premium Rate On The Market',
+                  'value': '1.3% rate = $975 per year; poor or limited credit at 4.6% = $3,450',
+                  'confidence': 'attributed_practitioner_claim',
+                  'context': 'Surety Bonds Direct says they routinely see rates from just above 1% to 5%, '
+                             'and calls 1.3% currently the best rate on the market.',
+                  'source': 'Surety Bonds Direct ([tkM7CbVBoC0 @ 00:01:35])'},
+                 {'label': 'Negotiated Renewal Savings',
+                  'metric': 'Negotiated Renewal Savings',
+                  'value': '$3,000 per year ($750 per quarter) cut to $1,500 per year',
+                  'confidence': 'attributed_practitioner_claim',
+                  'context': 'Brandon Scott accepted the first $3,000 quote despite great credit. After '
+                             'paying carriers for a while, they reapplied at the end of the term and '
+                             'negotiated the premium down by half.',
+                  'source': 'Brandon Scott ([lzC0i5OReRU @ 00:05:18])'},
+                 {'label': 'Replenishment Window Before Suspension',
+                  'metric': 'Replenishment Window Before Suspension',
+                  'value': '7 calendar days',
+                  'confidence': 'attributed_practitioner_claim',
+                  'context': 'Truckadium reads the FMCSA rule: if available security falls below $75,000 '
+                             'and is not replenished within seven calendar days, FMCSA suspends the '
+                             'operating authority.',
+                  'source': 'Truckadium ([1YErjMy4aFQ @ 00:02:02])'}],
+ 'sections': [{'number': 1,
+               'title': 'The Practitioner Consensus',
+               'paragraphs': ['Every practitioner who addresses the instrument attacks the same rookie '
+                              'misconception first: the $75,000 BMC-84 is not insurance for the broker. '
+                              'Truckadium frames it bluntly. Insurance protects you against liabilities, '
+                              'while a surety bond protects others from you. Truckadium compares it to '
+                              'having a rich co-signer that steps in and pays a carrier when the broker '
+                              'cannot [1YErjMy4aFQ @ 00:00:52]. Dennis Brown, founder of Freight Broker '
+                              'Boot Camp, started a brokerage in 2003 and says they went on to do over '
+                              '$200 million in sales. Brown hammers the clawback: if the surety pays a '
+                              'valid claim on a carrier freight invoice, it comes back to the broker for '
+                              'reimbursement. That means the bond is not a free pass for late pay, sloppy '
+                              'cash flow, or ignored receivables [yiDO9s6ArZU @ 00:02:23]. Surety Bond '
+                              'Authority lays out the three-party structure: the broker is the Principal, '
+                              'the FMCSA is the Obligee, and the surety company is the underwriter. It '
+                              'confirms the broker repays whatever goes out on a validated claim '
+                              '[UPpi7ufHWec @ 00:01:14]. Mike at Freight Broker TV adds the operational '
+                              'sequence. The bonding company contacts the broker, takes their side of the '
+                              'story, and investigates. It then either denies the claim, or pays the '
+                              'trucking company and bills the broker back immediately [wSNSmdThc6A @ '
+                              '00:02:09].',
+                              'Nobody in the field says you need $75,000 sitting in the bank. Dennis Brown '
+                              'calls the urge to write a check for 75 grand the biggest beginner mistake. '
+                              'The bond amount is $75,000, but the actual cost is only a percentage of it. '
+                              'Most new brokers take the BMC-84 because it requires much less cash up '
+                              'front, while the BMC-85 trust fund generally requires the full $75,000 '
+                              'deposited into a trust [yiDO9s6ArZU @ 00:04:11]. ET Transport describes the '
+                              'BMC-84 as a line of credit: you pay a yearly premium and the bonding '
+                              'company guarantees claims up to $75,000. ET Transport says the BMC-85 makes '
+                              'a business look stronger financially, but it ties up so much money that '
+                              'most startups avoid it [2mhzYqbbsig @ 00:00:15]. ET Transport also stresses '
+                              'that whichever route you pick, the bond or trust must be filed directly '
+                              'with FMCSA before authority becomes active. FMCSA REGISTRATION dot com '
+                              'pitches the trust side: the BMC-85 means more control over funds and '
+                              'potentially lower long-term costs if managed correctly. But new brokers may '
+                              'need substantial backing or investor support to fund it [ZW6Aqdzv4uA @ '
+                              '00:00:54]. Mike at Freight Broker TV flags the hidden risk: BMC-85 trust '
+                              'companies do not have to be licensed by FMCSA and have no insolvency '
+                              'protection [wSNSmdThc6A @ 00:03:10].',
+                              'Practitioners agree the $75,000 number exists because brokers burned '
+                              'carriers. Brandon Scott traces it to MAP-21, the Moving Ahead for Progress '
+                              'in the 21st Century bill. That bill pushed the requirement from $10,000 to '
+                              '$75,000, a sevenfold increase. It came after a small fraction of new '
+                              'brokers moved large volumes of loads without paying, running some carriers '
+                              'out of business [lzC0i5OReRU @ 00:00:30]. Freightskills remembers the '
+                              'figure as only about $25,000 when they started brokering 10 to 15 years '
+                              'ago. Freightskills reads the bump as a move to weed out scammers and '
+                              'protect carriers more, while noting there are still ways to make the bond '
+                              'affordable for just about anybody [UfDvLSjdYbE @ 00:01:18]. FMCSA '
+                              'REGISTRATION dot com lists the stakes: the bond must be renewed annually, '
+                              'and running without a valid one can bring fines, suspension or revocation '
+                              'of the license, and legal action [fG1DJXPE2jk @ 00:00:58]. Dennis Brown '
+                              'supplies the zero-bond on-ramp. Freight agents working under a licensed '
+                              "broker's authority do not need a bond, because the broker holds the "
+                              'authority, the bond, and the responsibility. That is why some beginners '
+                              'start as agents first: they learn the business, build sales skills, and '
+                              'gain experience before owning a brokerage outright [yiDO9s6ArZU @ '
+                              '00:06:42].'],
+               'table': {'caption': 'Where the practitioners line up on what the $75,000 bond is and does',
+                         'headers': ['Consensus Point',
+                                     'What Practitioners Report',
+                                     'Operator Implication',
+                                     'Expert Source'],
+                         'rows': [['The surety bond is not insurance covering the broker',
+                                   'Insurance protects you against liabilities, while a surety bond '
+                                   'protects others from you',
+                                   'Treat every paid claim as your own debt that comes back to you',
+                                   'Truckadium ([1YErjMy4aFQ @ 00:00:52])'],
+                                  ['The surety pays valid claims and then claws back from the broker',
+                                   'A valid claim paid on a carrier freight invoice comes back to the '
+                                   'broker for reimbursement',
+                                   'Pay carriers on time and never spend money that belongs to carriers',
+                                   'FreightBrokers ([yiDO9s6ArZU @ 00:02:23])'],
+                                  ['The BMC-84 does not require $75,000 in cash up front',
+                                   'A yearly premium paid to a bonding company guarantees claims up to '
+                                   '$75,000',
+                                   'Default startup path for brokers launching with thin capital and '
+                                   'limited liquidity',
+                                   'ET Transport ([2mhzYqbbsig @ 00:00:15])'],
+                                  ['The BMC-85 trust locks up the full $75,000 collateral',
+                                   'Collateral is held in trust, usually by a trust company or bank, while '
+                                   'the license is valid',
+                                   'Only choose the trust route when spare capital or investor backing '
+                                   'already exists',
+                                   'Freight Broker TV ([wSNSmdThc6A @ 00:02:50])'],
+                                  ['Broker authority stays inactive until a bond is attached to it',
+                                   'You can hold authority, but it will not be active unless a bond goes '
+                                   'with it',
+                                   'Line up the bond before planning to move a single paying load',
+                                   'Freight Broker TV ([wSNSmdThc6A @ 00:00:41])'],
+                                  ['Coverage that drops below $75,000 triggers fast suspension of '
+                                   'authority',
+                                   'Security not replenished within seven calendar days leads FMCSA to '
+                                   'suspend operating authority',
+                                   'Repost any drawn-down bond amount immediately after a paid claim hits',
+                                   'Truckadium ([1YErjMy4aFQ @ 00:02:02])'],
+                                  ['Weak credit raises the price but does not automatically kill bonding',
+                                   'Bad credit means paying more, yet some companies still bond '
+                                   'weak-credit brokers',
+                                   'Apply to multiple sureties before assuming a low score disqualifies '
+                                   'you',
+                                   'StillHawginTV ([eEOluDo3mZM @ 00:02:40])']]}},
+              {'number': 2,
+               'title': 'Exact Street Mechanics, Tools & Numbers',
+               'paragraphs': ['Price is driven by credit, and the practitioners publish actual bands. '
+                              'Brandon Manney asks every mentee for their credit score before answering '
+                              'the price question. Manney quotes a 700-plus score at roughly $1,000 to '
+                              '$2,000 a year, 650 to 700 at $2,000 to $3,000, and 600 to 650 at $3,000 to '
+                              'about $5,000 [BKciSMvLpD8 @ 00:01:36]. Below 600, Manney says to expect '
+                              '$8,000 or more. About $10,000 is the most they have seen anyone pay, and '
+                              'that was for terrible credit [BKciSMvLpD8 @ 00:02:23]. Surety Bonds Direct '
+                              'converts this into rates. They routinely see rates from just above 1% to '
+                              '5%. A 1.3% rate equals a $975 premium, which they call currently the best '
+                              'rate on the market, while poor or limited credit might draw 4.6%, or $3,450 '
+                              '[tkM7CbVBoC0 @ 00:01:35]. Dennis Brown puts good-to-excellent credit at '
+                              '$900 to $2,000 a year and weaker credit at several thousand. Brown adds '
+                              'that the premium also reflects financial history, experience, and the '
+                              'surety company you pick [yiDO9s6ArZU @ 00:03:11]. Surety Bonds Direct also '
+                              'flags prior bond claims as a price inflator, and says years of brokering '
+                              'can lower the rate. The bond renews yearly, and Manney warns that '
+                              'underwriters re-check credit at renewal, so a falling score means a bigger '
+                              'bill.',
+                              "The shopping playbook is aggressive and consistent. Brandon Scott's first "
+                              'bond came in at $3,000, paid as $750 a quarter. Scott admits they had great '
+                              'credit but accepted the first price without negotiating. They later '
+                              'reapplied at the end of the term with a track record of paying carriers and '
+                              "cut the bill to $1,500 [lzC0i5OReRU @ 00:05:18]. Scott's rule is that the "
+                              'quote is not written in stone. Providers want to sell you a bond, and '
+                              'another company may beat the number if your credit is good, so negotiate, '
+                              'negotiate, negotiate. Scott also says to square up your personal credit '
+                              'first, because new brokers lack business credit and underwriters lean on '
+                              'personal credit [lzC0i5OReRU @ 00:04:05]. Mike at Freight Broker TV says '
+                              'most rookies get the sequence wrong by applying for authority first. Mike '
+                              'says to check on the bond before filing, because a quote may reveal the '
+                              'plan is not realistic yet, and quotes are generally good for 60 days '
+                              '[wSNSmdThc6A @ 00:06:18]. On a bonding site like JW Surety Bonds, Mike says '
+                              'you pick the BMC-84 freight broker bond in the get-started box, fill out '
+                              'the rest, and get a quote back within 24 to 48 hours, with no paid third '
+                              'party needed [wSNSmdThc6A @ 00:05:15]. Scott adds that no carrier has ever '
+                              'asked them who their surety provider is, so paying up for a big-name bond '
+                              'buys nothing extra.',
+                              "Getting filed is a sequence, not a single purchase. Dennis Brown's order "
+                              'is: apply for broker authority through FMCSA, complete the BOC-3 process '
+                              'agent filing, get the bond approved and filed with FMCSA, then wait out the '
+                              'required period until authority activates [yiDO9s6ArZU @ 00:04:48]. '
+                              'Underwriting can slam the door on rookies. Thee Freight Broker Report says '
+                              'Surety and Security denied them for not having enough experience. JW Surety '
+                              'Bonds also turned them down because it was not taking new brokers in 2025. '
+                              'The host warns that many sureties will not work with a broker inside the '
+                              'first 90 days or 6 months, and they eventually landed with PFA Protex '
+                              '[O1ZmR8X3CRg @ 00:05:19]. The same operator reports that payment terms are '
+                              'credit-gated too. Brokers pay monthly, quarterly, or yearly, and bad credit '
+                              'usually forces paying the full year up front [O1ZmR8X3CRg @ 00:03:07]. The '
+                              'FMCSA Motus walkthrough shows the submission itself: the filer creates a '
+                              'new filing, searches the USDOT number or legal business name, selects the '
+                              'authority and form, and enters the policy number. The system locks the '
+                              'filing amount on BMC-84 and BMC-85 forms, and a separate filing is required '
+                              'for each authority tied to a USDOT number [B48yGdlbTbo @ 00:01:49].'],
+               'table': {'caption': 'Street pricing, turnaround, and startup numbers quoted by '
+                                    'practitioners',
+                         'headers': ['Mechanic or Price Point',
+                                     'Figure Stated',
+                                     'Condition or Trigger',
+                                     'Expert Source'],
+                         'rows': [['Best annual premium rate currently on the market',
+                                   '1.3% rate equals a $975 annual premium on $75,000',
+                                   'Strong personal credit, priced through a specialty surety agent '
+                                   'shopping multiple sureties',
+                                   'Surety Bonds Direct ([tkM7CbVBoC0 @ 00:01:35])'],
+                                  ['Premium for poor or limited credit profiles',
+                                   '4.6% rate equals a $3,450 annual premium on $75,000',
+                                   'Poor or limited credit, with rates running from just above 1% to over '
+                                   '5%',
+                                   'Surety Bonds Direct ([tkM7CbVBoC0 @ 00:01:52])'],
+                                  ['Premium band for credit scores of 700 or more',
+                                   'Roughly $1,000 to $2,000 per year, renewed annually',
+                                   'Credit is re-checked at renewal, and a declining score raises the next '
+                                   'bill',
+                                   'Brandon Manney The Mentor ([BKciSMvLpD8 @ 00:00:35])'],
+                                  ['Premium band for credit scores below 600',
+                                   '$8,000 or more, topping out around $10,000 per year',
+                                   'Terrible credit, which Manney says can be covered by taking out a loan',
+                                   'Brandon Manney The Mentor ([BKciSMvLpD8 @ 00:01:59])'],
+                                  ['Negotiated premium at the first renewal cycle',
+                                   '$3,000 per year ($750 quarterly) cut to $1,500 per year',
+                                   'Reapplying at the end of the term after a track record of paying '
+                                   'carriers',
+                                   'Brandon Scott ([lzC0i5OReRU @ 00:05:18])'],
+                                  ["Full brokerage launch cost in Manney's 2017 start",
+                                   'About $1,930 total: $1,600 bond, $300 application, $30 BOC-3',
+                                   'Self-filed launch with a bond priced on good credit',
+                                   'Brandon Manney The Mentor ([BKciSMvLpD8 @ 00:03:44])'],
+                                  ['Turnaround on an online bond quote request',
+                                   'Quote returned within 24 to 48 hours, generally good for 60 days',
+                                   "Select the BMC-84 freight broker bond on the surety's get-started form",
+                                   'Freight Broker TV ([wSNSmdThc6A @ 00:05:15])']]},
+               'callout': {'kind': 'INSIDER PRO-TIPS',
+                           'title': 'How Operators Cut the Bond Bill',
+                           'body': 'Moves practitioners say lowered their premium or protected their cash '
+                                   'before the first load moved.',
+                           'items': ['Never accept the first number: Brandon Scott took a $3,000 quote at '
+                                     'face value despite great credit, then reapplied at the end of the '
+                                     'term and paid $1,500 [Brandon Scott — lzC0i5OReRU @ 00:05:03].',
+                                     'Unbundle the startup package. Mike warns that training outfits '
+                                     'charging $5,000 to $7,000 to file everything may be billing you for '
+                                     'a bond that costs under $1,000, and says a couple of phone calls can '
+                                     'get your own authority for less than $2,000 [Freight Broker TV — '
+                                     'wSNSmdThc6A @ 00:11:07].',
+                                     'Use a specialty surety agent that works with multiple A-rated '
+                                     'sureties, since each surety applies its own assessment to the same '
+                                     'credit file [Surety Bonds Direct — tkM7CbVBoC0 @ 00:02:07].',
+                                     'If a bad-credit quote lands at $8,000 to $10,000 and the cash is not '
+                                     "liquid, Manney's play is to take out a loan, pay the bond, and still "
+                                     'launch for under $10,000 [Brandon Manney The Mentor — BKciSMvLpD8 @ '
+                                     '00:03:04].']},
+               'sop_steps': [{'step': 1,
+                              'title': 'Square credit and quote the bond first',
+                              'action': 'Clean up your personal credit, then request BMC-84 quotes before '
+                                        'filing for authority.',
+                              'detail': 'Scott says underwriters price new brokers on personal credit, so '
+                                        'square it up first [Brandon Scott — lzC0i5OReRU @ 00:04:05]. Mike '
+                                        'says to quote the bond before filing authority, since quotes '
+                                        'generally hold for 60 days [Freight Broker TV — wSNSmdThc6A @ '
+                                        '00:04:11].'},
+                             {'step': 2,
+                              'title': 'Shop multiple sureties and expect rookie denials',
+                              'action': 'Apply to several providers, negotiate every quote, and keep going '
+                                        'after a denial.',
+                              'detail': 'Thee Freight Broker Report was turned away by sureties that will '
+                                        'not take brokers in their first 90 days or 6 months, before '
+                                        'landing with PFA Protex [Thee Freight Broker Report — O1ZmR8X3CRg '
+                                        '@ 00:06:55]. Surety Bonds Direct says its job is to price-shop '
+                                        'multiple sureties for the lowest rate [Surety Bonds Direct — '
+                                        'tkM7CbVBoC0 @ 00:02:21].'},
+                             {'step': 3,
+                              'title': 'Run the registration sequence',
+                              'action': 'Submit OP-1, file the bond, file the BOC-3, and complete UCR.',
+                              'detail': 'ZipBonds lists the order: submit form OP-1 and pay the $300 fee, '
+                                        'file the BMC-84 or BMC-85 for $75,000, file the BOC-3, then get '
+                                        'Unified Carrier Registration [ZipBonds — wD5QFpyjlRY @ 00:00:58]. '
+                                        'Dennis Brown says authority activates only after the waiting '
+                                        'period passes [FreightBrokers — yiDO9s6ArZU @ 00:04:48].'},
+                             {'step': 4,
+                              'title': 'File through Motus and defend the $75,000 floor',
+                              'action': 'Confirm the BMC-84/85 filing is accepted, then replenish any '
+                                        'drawn-down coverage immediately.',
+                              'detail': 'The filer must be registered as a supporting company and use '
+                                        'Manage Filings, then Create New Filing, in Motus [FMCSA — '
+                                        'B48yGdlbTbo @ 00:00:22]. Coverage below $75,000 that is not '
+                                        'replenished within seven calendar days triggers suspension '
+                                        '[Truckadium — 1YErjMy4aFQ @ 00:02:02].'}]},
+              {'id': 'section_3',
+               'heading': 'Section 3: Where Practitioners Disagree & Alternative Playbooks',
+               'paragraphs': ['Every practitioner agrees the premium rides on credit, but the price bands '
+                              'they quote do not line up, and the spread is the whole game. Brandon Manney '
+                              'The Mentor runs a whiteboard ladder: a 700-plus score pays roughly $1,000 '
+                              'to $2,000 a year, 650 to 700 pays $2,000 to $3,000, 600 to 650 pays $3,000 '
+                              'to $5,000, and sub-600 credit jumps to $8,000 or more, topping out near '
+                              '$10,000 [BKciSMvLpD8 @ 00:01:36]. Surety Bonds Direct frames the same math '
+                              'as a rate on the $75,000 face: 1.3 percent equals $975, which they call the '
+                              'best rate on the market, while poor or limited credit at 4.6 percent lands '
+                              'at $3,450, with routine quotes running from just above 1 percent to over 5 '
+                              'percent [tkM7CbVBoC0 @ 00:01:35]. Freightskills pitches a much tighter, '
+                              'friendlier band of $900 to $1,400 a year, stretching to $1,500 to $1,800 '
+                              'when credit is not stellar [UfDvLSjdYbE @ 00:04:46]. Brandon Scott, by '
+                              'contrast, says first-time brokers usually see $1,500 to $3,000 and that '
+                              'their own first bond was three grand [lzC0i5OReRU @ 00:03:13]. The operator '
+                              'takeaway is that a single quote tells you almost nothing about where the '
+                              'market actually clears for your file.',
+                              'The BMC-84 versus BMC-85 split is where the camps genuinely diverge. FMCSA '
+                              'REGISTRATION dot com sells the BMC-85 trust as the control play: the full '
+                              '$75,000 sits in a trust account, giving more control over funds and '
+                              'potentially lower long-term costs if managed correctly, and they steer '
+                              'brokers with sufficient capital toward it while pointing '
+                              'liquidity-sensitive operators to the BMC-84 [ZW6Aqdzv4uA @ 00:00:54]. ET '
+                              'Transport concedes a funded trust makes the business look stronger '
+                              'financially but warns it ties up a lot of money, which is why most startups '
+                              'avoid it [2mhzYqbbsig @ 00:00:31]. Freight Broker TV attacks the trust '
+                              'route on structural grounds: BMC-85 trust companies do not have to be '
+                              'licensed by the FMCSA and carry no insolvency protection, so if a trust '
+                              'company cannot pay back the debt, the $75,000 can be lost [wSNSmdThc6A @ '
+                              '00:03:10]. StillHawginTV adds a sales-side wrinkle from the field: trusts '
+                              'are sometimes a lot easier to obtain than a bond, but certain shippers '
+                              'would rather see a surety bond and certain contracts will not accept a '
+                              'trust at all [eEOluDo3mZM @ 00:03:51]. For an operator chasing contract '
+                              'shippers, that rejection risk sits on the trust side of the ledger, not the '
+                              'bond side.',
+                              'Practitioners also split on whether the 2024 enforcement change matters. '
+                              'Truckadium treats it as a hard tripwire: if available security falls below '
+                              '$75,000 and is not replenished within seven calendar days, FMCSA suspends '
+                              'the authority, and with 2026 enforcement waves the margin for error is gone '
+                              '[1YErjMy4aFQ @ 00:01:46]. ShipLeague calls the same rule a carrier loss '
+                              'dressed up as a win. Their math: a small brokerage running 50 loads a day '
+                              'at a $1,500 average load burns through $75,000 in one day, brokers '
+                              'typically have 30 days to pay carriers, and across 20 working days that is '
+                              '$1.5 million out before that bond is shut down, so the bond needs an '
+                              'increase [bOzO119lSlI @ 00:01:09]. The framing fight runs deeper. '
+                              'FreightBrokers founder Dennis Brown insists the bond is not insurance '
+                              'because it protects the public, and the surety comes back to the broker for '
+                              'reimbursement [yiDO9s6ArZU @ 00:02:08]. Thee Freight Broker Report treats '
+                              'it as straight insurance, describing a pool of money that covers cargo '
+                              'damage on a load and quoting the bond at $750,000, a figure and a '
+                              'cargo-damage scope that no other speaker repeats [O1ZmR8X3CRg @ 00:01:42]. '
+                              'Run the numbers both ways before trusting either the tripwire or the '
+                              'pitch.'],
+               'table': {'caption': 'Competing playbooks on the $75,000 financial security requirement',
+                         'headers': ['Decision Point',
+                                     'Playbook A',
+                                     'Contrary Playbook or Outcome',
+                                     'Expert Source'],
+                         'rows': [['BMC-85 trust versus BMC-84 surety bond capital',
+                                   'Park the full $75,000 in trust for more control and potentially lower '
+                                   'long-term cost',
+                                   'Trust companies need no FMCSA license and carry no insolvency '
+                                   'protection, making them riskier',
+                                   'FMCSA REGISTRATION dot com ([ZW6Aqdzv4uA @ 00:02:11]); Freight Broker '
+                                   'TV ([wSNSmdThc6A @ 00:03:10])'],
+                                  ['Shipper and contract acceptance of trust funds',
+                                   'Trusts are sometimes a lot easier to obtain than a surety bond',
+                                   'Certain shippers prefer surety bonds and certain contracts will not '
+                                   'accept a trust',
+                                   'StillHawginTV ([eEOluDo3mZM @ 00:03:51])'],
+                                  ['Seven-day replenishment and suspension rule',
+                                   'Automatic suspension when coverage drops means the margin for error is '
+                                   'now gone',
+                                   'Rule does almost nothing because $1.5 million can run unpaid before '
+                                   'shutdown',
+                                   'Truckadium ([1YErjMy4aFQ @ 00:01:46]); ShipLeague ([bOzO119lSlI @ '
+                                   '00:01:28])'],
+                                  ['Realistic premium band for a first-year broker',
+                                   'Pay $900 to $1,400 a year, rising toward $1,800 with weaker credit',
+                                   'Expect $1,500 to $3,000 when first getting started, with a $3,000 '
+                                   'first bond',
+                                   'Freightskills ([UfDvLSjdYbE @ 00:04:46]); Brandon Scott ([lzC0i5OReRU '
+                                   '@ 00:03:13])'],
+                                  ['Whether the bond functions like an insurance policy',
+                                   'Not insurance at all; the surety recovers every valid paid claim from '
+                                   'the broker',
+                                   'Treat it like car insurance paid quarterly, semi-annually, or annually '
+                                   'with no refund',
+                                   'FreightBrokers ([yiDO9s6ArZU @ 00:01:48]); Brandon Scott ([lzC0i5OReRU '
+                                   '@ 00:02:36])'],
+                                  ['Order of authority application versus bond quote',
+                                   'Apply for authority, complete the BOC-3, then get the bond filed and '
+                                   'wait',
+                                   'Quote the bond first, because filing authority before the quote is a '
+                                   'mistake',
+                                   'FreightBrokers ([yiDO9s6ArZU @ 00:04:48]); Freight Broker TV '
+                                   '([wSNSmdThc6A @ 00:03:51])'],
+                                  ['Where to source and shop the bond',
+                                   'Use a specialty surety agent that price shops multiple A-rated '
+                                   'sureties for you',
+                                   'Go straight to Google, contact providers directly, and shop the yearly '
+                                   'rate yourself',
+                                   'Surety Bonds Direct ([tkM7CbVBoC0 @ 00:02:07]); Freightskills '
+                                   '([UfDvLSjdYbE @ 00:05:24])']]}},
+              {'id': 'section_4',
+               'heading': 'Section 4: Firsthand Failure Modes, Traps & Economics Checks',
+               'paragraphs': ["The trap that bites hardest is believing a paid claim is the surety's loss. "
+                              'Freight Broker TV is blunt: any claim paid by the surety up to $75,000 must '
+                              'be reimbursed to that surety immediately, after the bonding company '
+                              'contacts you, hears your side, investigates, and either denies or allows '
+                              'the claim [wSNSmdThc6A @ 00:01:27]. Freightskills walks the full sequence '
+                              'on an $1,800 load the broker refuses to pay: the carrier takes signed '
+                              'paperwork and proof of delivery straight to the bond underwriter, an '
+                              'assigned investigator questions both sides and rules for the carrier on a '
+                              'clear legal answer, and the bond drops to $75,000 minus $1,800, which the '
+                              'broker must repost to keep transacting [UfDvLSjdYbE @ 00:03:41]. Truckadium '
+                              'attaches the clock: security that falls below $75,000 and is not '
+                              'replenished within seven calendar days gets the brokerage authority '
+                              'suspended, and the surety or financial institution must notify FMCSA when '
+                              'the minimum is breached [1YErjMy4aFQ @ 00:02:02]. StillHawginTV is living '
+                              "the other side of this, going after a broker's bond because that broker "
+                              'decided not to pay, and says the nonpayment ended up costing that broker a '
+                              'lot more money [eEOluDo3mZM @ 00:01:44]. One short-paid load becomes a '
+                              'reimbursement bill, a repost obligation, and a seven-day suspension clock.',
+                              'The second leak is overpaying for the premium itself. Brandon Scott had '
+                              'great credit, never negotiated, accepted a $3,000 quote as the going rate, '
+                              'and paid $750 a quarter for it; after time in business, paying carriers, '
+                              'and reapplying at the end of the term, the same bond dropped to $1,500 '
+                              '[lzC0i5OReRU @ 00:05:03]. Scott also says no carrier has ever asked who the '
+                              'surety provider is, so paying up for an expensive bond buys no extra '
+                              'protection. Freight Broker TV flags a worse leak: training outfits charging '
+                              'five, six, or seven thousand dollars to package the authority and bond, '
+                              'even though a bonding company returns a real quote in 24 to 48 hours and '
+                              'the bond itself may come in under a thousand [wSNSmdThc6A @ 00:05:37]. '
+                              "Mike's fix is to keep training separate from authority filing and bonding, "
+                              "which can put a broker's own authority under $2,000. Surety Bonds Direct "
+                              'warns that prior claims against earlier bonds push the next price higher, '
+                              'so disputes should be resolved before anything escalates into a claim '
+                              '[tkM7CbVBoC0 @ 00:01:04]. Every dollar of premium waste comes straight out '
+                              'of the startup runway.',
+                              'The third failure cluster is getting stuck at approval and filing. Thee '
+                              'Freight Broker Report shopped the big names with credit that is not bad and '
+                              'got denied: Surety and Security turned the application down for not enough '
+                              'experience, and JW Surety Bonds said it was not taking on new brokers in '
+                              '2025, with companies signaling they will not work with brokers inside their '
+                              'first 90 days or six months, before landing with PFA Protex, which works '
+                              'with new brokers [O1ZmR8X3CRg @ 00:05:19]. The same speaker reports bad '
+                              'credit more than likely forces annual payment instead of monthly or '
+                              'quarterly. Freight Broker TV calls filing authority before quoting the bond '
+                              'a mistake, because the quote may show the bond is not realistic, and warns '
+                              'that a botched self-filed FMCSA application gets kicked back, slows '
+                              'everything, and may cost an additional fee on top of the 21-day wait '
+                              '[wSNSmdThc6A @ 00:07:17]. On the filing side, the FMCSA Motus walkthrough '
+                              'warns that each authority under a USDOT number needs its own separate '
+                              'filing, the entity must be verified before submitting, and the BMC-84 and '
+                              'BMC-85 amount field is locked [B48yGdlbTbo @ 00:01:22]. Brandon Manney adds '
+                              'the renewal trap: the credit pull repeats every year, so a falling score '
+                              'means a higher premium [BKciSMvLpD8 @ 00:01:36].'],
+               'table': {'caption': 'Firsthand bond failure modes and the economics behind each one',
+                         'headers': ['Failure Mode',
+                                     'What The Practitioner Experienced',
+                                     'Economics Check',
+                                     'Expert Source'],
+                         'rows': [['Accepting the first premium quote without negotiating',
+                                   'Great credit, no negotiation, accepted $3,000 paid at $750 per quarter',
+                                   'Renegotiated at term end and dropped the same bond to $1,500',
+                                   'Brandon Scott ([lzC0i5OReRU @ 00:05:18])'],
+                                  ['Getting denied as a brand-new brokerage applicant',
+                                   'Surety and Security and JW Surety Bonds declined a new broker in 2025',
+                                   'Keep shopping past big names until a new-broker-friendly surety like '
+                                   'PFA Protex accepts',
+                                   'Thee Freight Broker Report ([O1ZmR8X3CRg @ 00:04:57])'],
+                                  ["Treating a paid claim as the surety's money",
+                                   'Surety investigates, pays the trucking company, then the broker pays '
+                                   'the surety back',
+                                   'Every allowed claim converts into a direct broker debt up to $75,000',
+                                   'Freight Broker TV ([wSNSmdThc6A @ 00:02:32])'],
+                                  ['Letting the posted bond fall below the minimum',
+                                   'An $1,800 short-paid load leaves only $75,000 minus $1,800 posted',
+                                   'Repost the difference or face suspension after seven calendar days '
+                                   'without replenishment',
+                                   'Freightskills ([UfDvLSjdYbE @ 00:03:59]); Truckadium ([1YErjMy4aFQ @ '
+                                   '00:02:02])'],
+                                  ['Buying a packaged training, authority, and bond bundle',
+                                   'Trainers charge five to seven thousand dollars to file everything '
+                                   'together',
+                                   'Separate training from filing; own authority is possible for under '
+                                   '$2,000',
+                                   'Freight Broker TV ([wSNSmdThc6A @ 00:11:07])'],
+                                  ['Carrying prior claims into the next bond application',
+                                   'Claims against previous bonds push the next surety bond price higher',
+                                   'Resolve customer disputes before anything ever escalates into a formal '
+                                   'bond claim',
+                                   'Surety Bonds Direct ([tkM7CbVBoC0 @ 00:01:04])'],
+                                  ['Letting personal credit slide before annual renewal',
+                                   'Credit gets checked again every year when the bond renews',
+                                   'Sub-600 scores jump to $8,000 or more, with $10,000 seen at the max',
+                                   'Brandon Manney The Mentor ([BKciSMvLpD8 @ 00:01:59])']]},
+               'callout': {'kind': 'OPERATOR GATE',
+                           'title': 'Clear These Four Bond Traps Before Moving Freight',
+                           'body': 'Each gate below comes from a practitioner who paid for the lesson in '
+                                   'denied applications, overpriced premiums, reimbursed claims, or '
+                                   'suspension exposure.',
+                           'items': ['Quote the BMC-84 before filing authority, because the quote may '
+                                     'prove the bond is not realistic for your credit [Freight Broker TV — '
+                                     'wSNSmdThc6A @ 00:06:18].',
+                                     'Never accept the first premium; renegotiate at every term end the '
+                                     'way a $3,000 bond was cut to $1,500 [Brandon Scott — lzC0i5OReRU @ '
+                                     '00:05:47].',
+                                     'Hold cash to replenish any paid claim within seven calendar days or '
+                                     'the brokerage authority gets suspended [Truckadium — 1YErjMy4aFQ @ '
+                                     '00:02:02].',
+                                     'Confirm a surety writes brand-new brokers before applying, since JW '
+                                     'Surety Bonds turned new brokers away in 2025 [Thee Freight Broker '
+                                     'Report — O1ZmR8X3CRg @ 00:05:19].']}}],
+ 'pull_quote': '"The bond gets you in the game, but good systems keep you in the game." -- FreightBrokers '
+               '(yiDO9s6ArZU @ 00:02:52).',
+ 'diagram_id': 'diag-03',
+ 'action_checklist': ['Square away your personal credit before applying, because with no business credit '
+                      'established the surety prices the bond off your personal score (Brandon Scott, '
+                      'lzC0i5OReRU @ 00:04:05).',
+                      "Pull a BMC-84 quote through a bonding company's online form before filing "
+                      'authority; expect a quote back within 24 to 48 hours (Freight Broker TV, '
+                      'wSNSmdThc6A @ 00:05:15).',
+                      'Shop the rate across several providers and ask every one for their best yearly '
+                      'price before paying (Freightskills, UfDvLSjdYbE @ 00:05:24).',
+                      'Run the filing stack in order: OP-1 with the $300 fee, the $75,000 BMC-84 or '
+                      'BMC-85, the BOC-3 process agent, then unified carrier registration (ZipBonds, '
+                      'wD5QFpyjlRY @ 00:00:58).',
+                      'In Motus, verify the regulated entity and create a separate BMC-84 or BMC-85 filing '
+                      'for each authority under the USDOT number (FMCSA, B48yGdlbTbo @ 00:01:22).',
+                      'Keep the bond untouched by paying carriers on time, invoicing shippers quickly, '
+                      'using written agreements, and avoiding customers unlikely to pay (FreightBrokers, '
+                      'yiDO9s6ArZU @ 00:02:38).'],
+ 'statutory_citations': [{'title': 'Truckadium — $75,000 Surety Bond Explained | BMC-84 vs BMC-85 for '
+                                   'Freight Brokers (FMCSA Rules 2026) [00:02:02]',
+                          'url': 'https://www.youtube.com/watch?v=1YErjMy4aFQ&t=122s',
+                          'relevance': 'Primary practitioner testimony on the seven-calendar-day '
+                                       'replenishment rule and automatic authority suspension.'},
+                         {'title': 'ShipLeague — Carriers Lose! FMCSA Broker Bond change [00:01:09]',
+                          'url': 'https://www.youtube.com/watch?v=bOzO119lSlI&t=69s',
+                          'relevance': 'Primary practitioner testimony on the 50-loads-a-day math showing '
+                                       '$1.5 million of exposure before the bond shuts down.'},
+                         {'title': "Freight Broker TV — Freight Broker Bond - BMC 84? BMC 85? Don't Be "
+                                   'Taken To The Bank! [00:03:10]',
+                          'url': 'https://www.youtube.com/watch?v=wSNSmdThc6A&t=190s',
+                          'relevance': 'Primary practitioner testimony on BMC-85 trust company risk, claim '
+                                       'reimbursement, and packaged-filing overcharges.'},
+                         {'title': 'Brandon Manney The Mentor — NEW FREIGHT BROKERS WILL NEED TO ACQUIRE A '
+                                   '$75,000 SURETY BOND! YOU WILL PAY BETWEEN $1k to $10,000! [00:01:59]',
+                          'url': 'https://www.youtube.com/watch?v=BKciSMvLpD8&t=119s',
+                          'relevance': 'Primary practitioner testimony on the credit-score premium ladder '
+                                       'and annual renewal repricing.'}],
+ 'source_citations': [{'source_type': 'video_pro_tip',
+                       'video_id': '1YErjMy4aFQ',
+                       'title': '$75,000 Surety Bond Explained | BMC-84 vs BMC-85 for Freight Brokers '
+                                '(FMCSA Rules 2026)',
+                       'channel': 'Truckadium',
+                       'author': 'Truckadium',
+                       'text': "If a broker's or freight forwarder's available financial security falls "
+                               'below $75,000 and is not replenished within seven calendar days, FMCSA '
+                               "will suspend the broker or freight forwarder's operating authority.",
+                       'tip': "If a broker's or freight forwarder's available financial security falls "
+                              'below $75,000 and is not replenished within seven calendar days, FMCSA will '
+                              "suspend the broker or freight forwarder's operating authority.",
+                       'timestamp': 122,
+                       'timestamp_seconds': 122,
+                       'timestamp_label': '[00:02:02]',
+                       'url': 'https://www.youtube.com/watch?v=1YErjMy4aFQ&t=122s',
+                       'markdown': '[00:02:02](https://www.youtube.com/watch?v=1YErjMy4aFQ&t=122s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q3.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'eEOluDo3mZM',
+                       'title': 'Freight Brokering | Top 6 Surety Bond Companies',
+                       'channel': 'StillHawginTV',
+                       'author': 'StillHawginTV',
+                       'text': "Certain shippers don't like trusts, they'd rather have surety bonds, but "
+                               'trusts are almost sometimes a lot easier to obtain versus a bond.',
+                       'tip': "Certain shippers don't like trusts, they'd rather have surety bonds, but "
+                              'trusts are almost sometimes a lot easier to obtain versus a bond.',
+                       'timestamp': 231,
+                       'timestamp_seconds': 231,
+                       'timestamp_label': '[00:03:51]',
+                       'url': 'https://www.youtube.com/watch?v=eEOluDo3mZM&t=231s',
+                       'markdown': '[00:03:51](https://www.youtube.com/watch?v=eEOluDo3mZM&t=231s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q3.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'fG1DJXPE2jk',
+                       'title': 'BMC 84 Surety Bond | Is a Freight Broker Bond Requirement (BMC-84)',
+                       'channel': 'FMCSA REGISTRATION dot com',
+                       'author': 'FMCSA REGISTRATION dot com',
+                       'text': 'Not having a BMC 84 surety bond can result in fines, suspension or '
+                               "revocation of the broker or forwarder's license, and even legal action.",
+                       'tip': 'Not having a BMC 84 surety bond can result in fines, suspension or '
+                              "revocation of the broker or forwarder's license, and even legal action.",
+                       'timestamp': 58,
+                       'timestamp_seconds': 58,
+                       'timestamp_label': '[00:00:58]',
+                       'url': 'https://www.youtube.com/watch?v=fG1DJXPE2jk&t=58s',
+                       'markdown': '[00:00:58](https://www.youtube.com/watch?v=fG1DJXPE2jk&t=58s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q3.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'yiDO9s6ArZU',
+                       'title': 'Freight Broker Surety Bond in Simple Terms 🤔',
+                       'channel': 'FreightBrokers',
+                       'author': 'FreightBrokers',
+                       'text': 'The bond gets you in the game, but good systems keep you in the game.',
+                       'tip': 'The bond gets you in the game, but good systems keep you in the game.',
+                       'timestamp': 172,
+                       'timestamp_seconds': 172,
+                       'timestamp_label': '[00:02:52]',
+                       'url': 'https://www.youtube.com/watch?v=yiDO9s6ArZU&t=172s',
+                       'markdown': '[00:02:52](https://www.youtube.com/watch?v=yiDO9s6ArZU&t=172s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q3.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'bOzO119lSlI',
+                       'title': 'Carriers Lose! FMCSA Broker Bond change',
+                       'channel': 'ShipLeague',
+                       'author': 'ShipLeague',
+                       'text': "That's $75,000 a day; the entire bond is gone in one day and they can do "
+                               "this for the next 30 days before anybody files on the bond because it's "
+                               'not due yet.',
+                       'tip': "That's $75,000 a day; the entire bond is gone in one day and they can do "
+                              "this for the next 30 days before anybody files on the bond because it's not "
+                              'due yet.',
+                       'timestamp': 69,
+                       'timestamp_seconds': 69,
+                       'timestamp_label': '[00:01:09]',
+                       'url': 'https://www.youtube.com/watch?v=bOzO119lSlI&t=69s',
+                       'markdown': '[00:01:09](https://www.youtube.com/watch?v=bOzO119lSlI&t=69s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q3.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'lzC0i5OReRU',
+                       'title': 'What You Need To Know About The Freight Broker Bond...',
+                       'channel': 'Brandon Scott',
+                       'author': 'Brandon Scott',
+                       'text': "I had great credit but I didn't negotiate at all; I got a three thousand "
+                               'dollar price for my surety bond and when I got that price I just accepted '
+                               'it.',
+                       'tip': "I had great credit but I didn't negotiate at all; I got a three thousand "
+                              'dollar price for my surety bond and when I got that price I just accepted '
+                              'it.',
+                       'timestamp': 303,
+                       'timestamp_seconds': 303,
+                       'timestamp_label': '[00:05:03]',
+                       'url': 'https://www.youtube.com/watch?v=lzC0i5OReRU&t=303s',
+                       'markdown': '[00:05:03](https://www.youtube.com/watch?v=lzC0i5OReRU&t=303s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q3.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'tkM7CbVBoC0',
+                       'title': 'Freight Broker Bond Cost Explained With Real Examples',
+                       'channel': 'Surety Bonds Direct',
+                       'author': 'Surety Bonds Direct',
+                       'text': 'If you are quoted a 1.3 percent rate your premium, the price you pay, '
+                               "would be 975 dollars; that's currently the best rate on the market.",
+                       'tip': 'If you are quoted a 1.3 percent rate your premium, the price you pay, would '
+                              "be 975 dollars; that's currently the best rate on the market.",
+                       'timestamp': 95,
+                       'timestamp_seconds': 95,
+                       'timestamp_label': '[00:01:35]',
+                       'url': 'https://www.youtube.com/watch?v=tkM7CbVBoC0&t=95s',
+                       'markdown': '[00:01:35](https://www.youtube.com/watch?v=tkM7CbVBoC0&t=95s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q3.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'O1ZmR8X3CRg',
+                       'title': 'HOW TO GET YOUR (BMC-84) SURETY BOND',
+                       'channel': 'Thee Freight Broker Report',
+                       'author': 'Thee Freight Broker Report',
+                       'text': 'JW Surety Bonds also denied me because they were not taking on new '
+                               'brokers.',
+                       'tip': 'JW Surety Bonds also denied me because they were not taking on new brokers.',
+                       'timestamp': 297,
+                       'timestamp_seconds': 297,
+                       'timestamp_label': '[00:04:57]',
+                       'url': 'https://www.youtube.com/watch?v=O1ZmR8X3CRg&t=297s',
+                       'markdown': '[00:04:57](https://www.youtube.com/watch?v=O1ZmR8X3CRg&t=297s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q3.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'UPpi7ufHWec',
+                       'title': 'What is a (BMC-84) Freight Broker Bond? A Guide',
+                       'channel': 'Surety Bond Authority',
+                       'author': 'Surety Bond Authority',
+                       'text': 'The freight broker will then be responsible for paying back the surety '
+                               'company for the amount that was paid out of the claim.',
+                       'tip': 'The freight broker will then be responsible for paying back the surety '
+                              'company for the amount that was paid out of the claim.',
+                       'timestamp': 94,
+                       'timestamp_seconds': 94,
+                       'timestamp_label': '[00:01:34]',
+                       'url': 'https://www.youtube.com/watch?v=UPpi7ufHWec&t=94s',
+                       'markdown': '[00:01:34](https://www.youtube.com/watch?v=UPpi7ufHWec&t=94s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q3.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'ZW6Aqdzv4uA',
+                       'title': 'BMC-85 Trust Fund EXPLAINED: What Every Freight Broker Needs to Know',
+                       'channel': 'FMCSA REGISTRATION dot com',
+                       'author': 'FMCSA REGISTRATION dot com',
+                       'text': 'If you have sufficient capital and prefer direct control over your funds '
+                               'the BMC 85 might be your best bet; however, if maintaining liquidity is '
+                               'crucial the BMC 84 could be more suitable.',
+                       'tip': 'If you have sufficient capital and prefer direct control over your funds '
+                              'the BMC 85 might be your best bet; however, if maintaining liquidity is '
+                              'crucial the BMC 84 could be more suitable.',
+                       'timestamp': 131,
+                       'timestamp_seconds': 131,
+                       'timestamp_label': '[00:02:11]',
+                       'url': 'https://www.youtube.com/watch?v=ZW6Aqdzv4uA&t=131s',
+                       'markdown': '[00:02:11](https://www.youtube.com/watch?v=ZW6Aqdzv4uA&t=131s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q3.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'B48yGdlbTbo',
+                       'title': 'File a BMC-84 / BMC-85 | Motus Explainer Series',
+                       'channel': 'FMCSA',
+                       'author': 'FMCSA',
+                       'text': 'You are going to need a separate filing for each individual authority '
+                               'associated with that USDOT number.',
+                       'tip': 'You are going to need a separate filing for each individual authority '
+                              'associated with that USDOT number.',
+                       'timestamp': 82,
+                       'timestamp_seconds': 82,
+                       'timestamp_label': '[00:01:22]',
+                       'url': 'https://www.youtube.com/watch?v=B48yGdlbTbo&t=82s',
+                       'markdown': '[00:01:22](https://www.youtube.com/watch?v=B48yGdlbTbo&t=82s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q3.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'wSNSmdThc6A',
+                       'title': "Freight Broker Bond - BMC 84? BMC 85? Don't Be Taken To The Bank!",
+                       'channel': 'Freight Broker TV',
+                       'author': 'Freight Broker TV',
+                       'text': 'BMC 85 trust companies do not have to be licensed by the FMCSA and they do '
+                               'not have insolvency protection.',
+                       'tip': 'BMC 85 trust companies do not have to be licensed by the FMCSA and they do '
+                              'not have insolvency protection.',
+                       'timestamp': 190,
+                       'timestamp_seconds': 190,
+                       'timestamp_label': '[00:03:10]',
+                       'url': 'https://www.youtube.com/watch?v=wSNSmdThc6A&t=190s',
+                       'markdown': '[00:03:10](https://www.youtube.com/watch?v=wSNSmdThc6A&t=190s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q3.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'wSNSmdThc6A',
+                       'title': "Freight Broker Bond - BMC 84? BMC 85? Don't Be Taken To The Bank!",
+                       'channel': 'Freight Broker TV',
+                       'author': 'Freight Broker TV',
+                       'text': 'For a couple of phone calls you can save yourself a lot of money, several '
+                               'thousand dollars, so you can actually have your own broker authority for '
+                               'less than two thousand.',
+                       'tip': 'For a couple of phone calls you can save yourself a lot of money, several '
+                              'thousand dollars, so you can actually have your own broker authority for '
+                              'less than two thousand.',
+                       'timestamp': 651,
+                       'timestamp_seconds': 651,
+                       'timestamp_label': '[00:10:51]',
+                       'url': 'https://www.youtube.com/watch?v=wSNSmdThc6A&t=651s',
+                       'markdown': '[00:10:51](https://www.youtube.com/watch?v=wSNSmdThc6A&t=651s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q3.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'UfDvLSjdYbE',
+                       'title': 'Everything You Need To Know about the BMC-84 Surety Bond',
+                       'channel': 'Freightskills',
+                       'author': 'Freightskills',
+                       'text': 'Your bond which was 75,000 is now the difference between 75 and 1800, and '
+                               'now you have to repost that amount in order to continue transacting '
+                               'business as a broker.',
+                       'tip': 'Your bond which was 75,000 is now the difference between 75 and 1800, and '
+                              'now you have to repost that amount in order to continue transacting '
+                              'business as a broker.',
+                       'timestamp': 221,
+                       'timestamp_seconds': 221,
+                       'timestamp_label': '[00:03:41]',
+                       'url': 'https://www.youtube.com/watch?v=UfDvLSjdYbE&t=221s',
+                       'markdown': '[00:03:41](https://www.youtube.com/watch?v=UfDvLSjdYbE&t=221s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q3.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': '2mhzYqbbsig',
+                       'title': 'Freight Broker Bond Explained | $75,000 BMC-84 vs BMC-85 | FMCSA '
+                                'Requirements | Bonding Companies',
+                       'channel': 'ET Transport',
+                       'author': 'ET Transport',
+                       'text': 'It makes your business look stronger financially, but it ties up a lot of '
+                               'money, so most startups avoid it.',
+                       'tip': 'It makes your business look stronger financially, but it ties up a lot of '
+                              'money, so most startups avoid it.',
+                       'timestamp': 31,
+                       'timestamp_seconds': 31,
+                       'timestamp_label': '[00:00:31]',
+                       'url': 'https://www.youtube.com/watch?v=2mhzYqbbsig&t=31s',
+                       'markdown': '[00:00:31](https://www.youtube.com/watch?v=2mhzYqbbsig&t=31s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q3.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'wD5QFpyjlRY',
+                       'title': 'What is a Freight Broker Surety Bond?',
+                       'channel': 'ZipBonds',
+                       'author': 'ZipBonds',
+                       'text': 'Your bond will be valid for one year from the date of issue, and it can '
+                               'cost between 900 to 7,500.',
+                       'tip': 'Your bond will be valid for one year from the date of issue, and it can '
+                              'cost between 900 to 7,500.',
+                       'timestamp': 101,
+                       'timestamp_seconds': 101,
+                       'timestamp_label': '[00:01:41]',
+                       'url': 'https://www.youtube.com/watch?v=wD5QFpyjlRY&t=101s',
+                       'markdown': '[00:01:41](https://www.youtube.com/watch?v=wD5QFpyjlRY&t=101s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q3.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'BKciSMvLpD8',
+                       'title': 'NEW FREIGHT BROKERS WILL NEED TO ACQUIRE A $75,000 SURETY BOND! YOU WILL '
+                                'PAY BETWEEN $1k to $10,000!',
+                       'channel': 'Brandon Manney The Mentor',
+                       'author': 'Brandon Manney The Mentor',
+                       'text': 'I started my freight brokerage for about $1,930; I believe my surety bond '
+                               'was $1,600, the application was 300 and the BOC-3 was $30.',
+                       'tip': 'I started my freight brokerage for about $1,930; I believe my surety bond '
+                              'was $1,600, the application was 300 and the BOC-3 was $30.',
+                       'timestamp': 224,
+                       'timestamp_seconds': 224,
+                       'timestamp_label': '[00:03:44]',
+                       'url': 'https://www.youtube.com/watch?v=BKciSMvLpD8&t=224s',
+                       'markdown': '[00:03:44](https://www.youtube.com/watch?v=BKciSMvLpD8&t=224s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q3.'}]}

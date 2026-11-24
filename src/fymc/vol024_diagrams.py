@@ -1,767 +1,588 @@
-from __future__ import annotations
+"""Volume 024 diagrams: Tax Lien Investing.
 
-VOLUME_024_SUBTITLE = (
-    "The Complete Playbook for Tax Lien Investing: "
-    "$15,000–$180,000 USD in Annual Realized Revenue, "
-    "a 1 FT + 2 C Core Pod (3 People), and a 5-Person Scale Model"
+Every figure, workflow and rule below is attributed to a named practitioner
+or channel. Figures are reported claims, not independently verified.
+"""
+
+from typing import Any, Dict, List
+
+VOLUME_024_SUBTITLE: str = (
+    "Statutory-Rate Certificates, Bid-Down and Premium Auctions, Over-the-Counter "
+    "Leftovers, Redeemable Deeds, Quiet Title Exits, and IRA-Funded Lien Portfolios "
+    "as County Tax Sale Practitioners Actually Run Them"
 )
 
-VOLUME_024_POSITIONING_ALTERNATIVES = [
+
+def build_volume_024_diagrams_data() -> List[Dict[str, Any]]:
+    """Return the eight Volume 024 diagram specifications."""
+    return [
+        {
+            "diagram_id": "diag-01-county-lien-entry-workflow",
+            "chapter_number": 1,
+            "title": "First-County Lien Entry Workflow",
+            "subtitle": "From a phone call to the county to a logged certificate",
+            "chart_type": "process_flow",
+            "stages": [
+                {
+                    "step": "01",
+                    "label": "Call the County",
+                    "value": "Step 1",
+                    "detail": (
+                        "Ask how many liens sold last year and how many people attended; "
+                        "200 to 500 liens with 20 bidders beats 30 liens with 50."
+                    ),
+                },
+                {
+                    "step": "02",
+                    "label": "Learn the State Ceiling",
+                    "value": "Step 2",
+                    "detail": (
+                        "Statutory ceilings cited include Florida 18%, Arizona 16%, "
+                        "Iowa 24% and Illinois 36%."
+                    ),
+                },
+                {
+                    "step": "03",
+                    "label": "Look at the Parcel and Set an Exit",
+                    "value": "Step 3",
+                    "detail": (
+                        "No bid on any parcel you have not looked at and have no exit "
+                        "strategy for; never bid on a lien you would not be comfortable owning."
+                    ),
+                },
+                {
+                    "step": "04",
+                    "label": "Bid Above Zero in Florida",
+                    "value": "Step 4",
+                    "detail": (
+                        "A $1,000 lien bid at 0.25% and redeemed in 3 months pays the 5% "
+                        "floor of $50; a 0% bid gets no minimum at all."
+                    ),
+                },
+                {
+                    "step": "05",
+                    "label": "Log Dates and Reserve Legal Fees",
+                    "value": "Step 5",
+                    "detail": (
+                        "Record redemption and expiration dates the day you buy (Florida "
+                        "certificates expire without a deed application within seven years) "
+                        "and reserve roughly $2,000 to $5,000 per file for attorney and "
+                        "foreclosure fees."
+                    ),
+                },
+            ],
+            "caption": (
+                "Start small in one county: size the competition, know the rate ceiling, "
+                "look before bidding, respect the Florida floor, and calendar every deadline."
+            ),
+            "assumptions_note": (
+                "Rates and redemption floors are state-specific practitioner claims; the "
+                "five-step order is an organizing sequence built from their separate tips."
+            ),
+            "note": (
+                "Sources: Dustin Hahn (eNKIUQC6io0 @ 00:05:44); Ted Thomas via Gerald Harris "
+                "(nMj50Itu21Q @ 00:03:13); Ted Thomas (JcAwqIfK0vo @ 00:12:26); Lien Ledger "
+                "(H9fPhqUYPfc @ 00:04:40, 00:05:50, 00:08:00); Tax Sale Secrets "
+                "(fIPCLCdZlAU @ 00:08:59)."
+            ),
+        },
+        {
+            "diagram_id": "diag-02-otc-leftover-list-funnel",
+            "chapter_number": 6,
+            "title": "Over-the-Counter Leftover List Funnel",
+            "subtitle": "How a full county leftover list narrows to a first purchase",
+            "chart_type": "funnel",
+            "stages": [
+                {
+                    "label": "Full Leftover List Screened",
+                    "value": 1000,
+                    "display": "1,000 parcels",
+                    "conversion": "100% of list",
+                    "detail": (
+                        "Parcels that drew no winning bid, sold by the treasurer for back "
+                        "taxes under names like scavenger, strike off, or lands available."
+                    ),
+                },
+                {
+                    "label": "Decent After Desk Screen",
+                    "value": 100,
+                    "display": "About 100 decent",
+                    "conversion": "10% of list",
+                    "detail": (
+                        "Desk diligence on county records, tax records, maps, Google Maps, "
+                        "and sold and for-sale comps; site visits skipped on deeds under $1,000."
+                    ),
+                },
+                {
+                    "label": "Great Parcels Identified",
+                    "value": 5,
+                    "display": "About 5 great",
+                    "conversion": "5% of decent",
+                    "detail": "Most of the list is crap, but a handful are worth buying.",
+                },
+                {
+                    "label": "Utility, Access and Title Gate",
+                    "value": 5,
+                    "display": "All 5 verified",
+                    "conversion": "Gate check on every survivor",
+                    "detail": (
+                        "Confirm power, sewer and access (a $1,500 lot needed $20,000 to "
+                        "bring power), match by parcel ID, and screen for IRS liens and "
+                        "buried gas tanks."
+                    ),
+                },
+                {
+                    "label": "First-Buy Cap",
+                    "value": 3,
+                    "display": "Up to 2 liens plus 1 deed",
+                    "conversion": "Capped until resale",
+                    "detail": (
+                        "Cap first buys at one or two liens and one deed and sell before "
+                        "buying more, after a student stacked 40 unsold properties."
+                    ),
+                },
+            ],
+            "caption": (
+                "The leftover list is a screening exercise: roughly one in ten parcels is "
+                "decent and a handful are great, and first buys stay capped until one sells."
+            ),
+            "assumptions_note": (
+                "The 1,000-to-100-to-5 yield is the Tax Sale Support hosts' estimate; the "
+                "purchase cap is Ted Thomas's rule. John Lane and Tax Deed Wolf counter that "
+                "most leftovers carry major problems or are overpriced."
+            ),
+            "note": (
+                "Sources: Tax Sale Support (5t3VbtPlElc @ 00:39:46, 00:50:20); Dustin Hahn "
+                "(uiH28IFKgC4 @ 00:03:46, 00:04:31; YVYW5E5cTUI @ 00:03:22); Saen Higgins "
+                "(nbHUraglUQo @ 00:07:11); Ted Thomas (XLUuBoGUOj8 @ 00:09:47)."
+            ),
+        },
+        {
+            "diagram_id": "diag-03-cook-county-redemption-waterfall",
+            "chapter_number": 3,
+            "title": "Cook County Redemption Waterfall",
+            "subtitle": "Overall redemption versus Chicago's south and west sides",
+            "chart_type": "waterfall",
+            "bars": [
+                {
+                    "label": "All Cook County Liens Sold",
+                    "value": 100,
+                    "display": "100%",
+                    "kind": "total",
+                },
+                {
+                    "label": "Redeemed Overall",
+                    "value": 96,
+                    "display": "-96%",
+                    "kind": "deduction",
+                },
+                {
+                    "label": "Left Unredeemed Overall",
+                    "value": 4,
+                    "display": "4%",
+                    "kind": "result",
+                },
+                {
+                    "label": "South and West Side Liens",
+                    "value": 100,
+                    "display": "100%",
+                    "kind": "total",
+                },
+                {
+                    "label": "Redeemed on South and West Sides",
+                    "value": 70,
+                    "display": "About -70%",
+                    "kind": "deduction",
+                },
+                {
+                    "label": "Left Unredeemed in Rougher Areas",
+                    "value": 30,
+                    "display": "About 30%",
+                    "kind": "result",
+                },
+            ],
+            "caption": (
+                "Countywide, almost every Cook County lien pays off; in rougher Chicago "
+                "neighborhoods the odds of ending up owning the parcel rise sharply."
+            ),
+            "assumptions_note": (
+                "Unredeemed shares are the arithmetic complement of Bob Diamond's 96% and "
+                "about-70% redemption figures; Illinois rules, including the 22-5 notice "
+                "deadline of four months and 15 days, decide whether a lien holds."
+            ),
+            "note": (
+                "Source: Bob Diamond - America's Tax Sale Attorney (B0WBR5swuac @ 00:03:17; "
+                "bFO7QIn_w3U @ 00:03:36)."
+            ),
+        },
+        {
+            "diagram_id": "diag-04-lien-vs-deed-odds-and-returns",
+            "chapter_number": 2,
+            "title": "Lien Versus Deed Odds and Returns",
+            "subtitle": "Redemption odds, interest, penalties and discounts by model",
+            "chart_type": "horizontal_bars",
+            "unit": "percent",
+            "bars": [
+                {
+                    "label": "Tax Lien Redemption Estimate",
+                    "min": 90,
+                    "max": 98,
+                    "typical": 95,
+                    "display": "90% to 98%, about 95% typical",
+                },
+                {
+                    "label": "Redemption Deed Redemption",
+                    "min": 50,
+                    "max": 50,
+                    "typical": 50,
+                    "display": "About 50% or less",
+                },
+                {
+                    "label": "Lien Certificate Interest",
+                    "min": 16,
+                    "max": 36,
+                    "typical": 18,
+                    "display": "16, 18, 24, up to 36 in Chicago",
+                },
+                {
+                    "label": "Georgia Redeemable Deed Penalty",
+                    "min": 20,
+                    "max": 20,
+                    "typical": 20,
+                    "display": "Flat 20% within 12 months",
+                },
+                {
+                    "label": "Tax Deed Auction Discount",
+                    "min": 60,
+                    "max": 80,
+                    "typical": 70,
+                    "display": "10 to 20 cents on the dollar (60% to 80% off)",
+                },
+            ],
+            "caption": (
+                "Lien buyers price for yield because nearly all liens redeem; deed buyers "
+                "price for discount because ownership is the likely outcome."
+            ),
+            "assumptions_note": (
+                "Ranges are practitioner estimates; the 'typical' lien interest marker uses "
+                "Ted Thomas's 18% example, and the deed discount midpoint uses his 70% example."
+            ),
+            "note": (
+                "Sources: Dustin Hahn (wemMjCnrX34 @ 00:01:09); Tax Sale Secrets "
+                "(0adTzNpuLtk @ 00:11:13); Ted Thomas (x3XX9ysKcUA @ 00:04:16; "
+                "jWaS4Y2Z1Mg @ 00:02:24); Cecil Jones (Yq9tyhYQJGY @ 00:03:41)."
+            ),
+        },
+        {
+            "diagram_id": "diag-05-online-deed-bid-gates",
+            "chapter_number": 5,
+            "title": "Online Auction Bid Gates",
+            "subtitle": "Four checks before a parcel earns a bid",
+            "chart_type": "decision_tree",
+            "nodes": [
+                {
+                    "gate": "G1",
+                    "question": "Is there a current photo or boots on the ground?",
+                    "pass_next": "G2",
+                    "fail_action": (
+                        "No bid; county and Street View shots run years stale."
+                    ),
+                },
+                {
+                    "gate": "G2",
+                    "question": (
+                        "Does the property appraiser site confirm usage and description?"
+                    ),
+                    "pass_next": "G3",
+                    "fail_action": (
+                        "Drop it; never rely on the vendor's assessed value or listing photo, "
+                        "and eliminate landlocked parcels."
+                    ),
+                },
+                {
+                    "gate": "G3",
+                    "question": (
+                        "Is title clear of hidden, municipal and IRS liens, plus any surviving "
+                        "deed of trust on Texas redemption deeds?"
+                    ),
+                    "pass_next": "G4",
+                    "fail_action": "Pass, or price the encumbrance before going further.",
+                },
+                {
+                    "gate": "G4",
+                    "question": (
+                        "Is the exit chosen (quiet title or as-is wholesale) and a CMA-based "
+                        "maximum written down?"
+                    ),
+                    "pass_next": (
+                        "Bid up to the written maximum and stay emotionally uninvolved."
+                    ),
+                    "fail_action": "Hold off until the exit and ceiling are fixed.",
+                },
+            ],
+            "caption": (
+                "Cheap online deeds still demand a current image, appraiser-site "
+                "verification, a title search and a fixed exit before any bid."
+            ),
+            "assumptions_note": (
+                "Practitioners disagree on buying sight-unseen; these gates follow the "
+                "stricter view. Tax Sale Secrets reports losing seven or eight Florida "
+                "properties before winning one under disciplined maximums."
+            ),
+            "note": (
+                "Sources: Tax Sale Secrets (IMGzMnzQiZQ @ 01:29:27; RgLErVu5_Kk @ 00:29:54, "
+                "00:48:38; AO4ZqaMio7s @ 00:27:24); The Jackie Jackson | Tax Deed & Real "
+                "Estate Coach (Pz2ZCMuIox4 @ 00:12:04); Ted Thomas (41UuQtBLiBo @ 00:03:04)."
+            ),
+        },
+        {
+            "diagram_id": "diag-06-post-tyler-certificate-control",
+            "chapter_number": 11,
+            "title": "Post-Tyler Certificate Control Structure",
+            "subtitle": "Who guards a certificate after Tyler v. Hennepin",
+            "chart_type": "org_architecture",
+            "center": {
+                "role": "Certificate Holder",
+                "headcount": "Solo holder backed by tax sale counsel",
+                "focus": (
+                    "Protect each certificate from notice defects, bankruptcy stays, "
+                    "equity claims and unconfirmed redemptions."
+                ),
+            },
+            "spokes": [
+                {
+                    "role": "Tax Sale Counsel",
+                    "type": "Outside legal",
+                    "kpi": (
+                        "Confirms how the county issues deeds; mandamus or judicial "
+                        "foreclosure plus suing the county as the fallback."
+                    ),
+                },
+                {
+                    "role": "Court File and Records Review",
+                    "type": "Diligence",
+                    "kpi": (
+                        "Court file and county records pulled on every certificate; ready "
+                        "for the court form's question on equity in the property."
+                    ),
+                },
+                {
+                    "role": "Notice Auditor",
+                    "type": "Compliance",
+                    "kpi": (
+                        "Every interest holder noticed, including trustees, with additional "
+                        "reasonable steps documented after certified mail comes back."
+                    ),
+                },
+                {
+                    "role": "Bankruptcy and Redemption Monitor",
+                    "type": "Operations",
+                    "kpi": (
+                        "Bankruptcy checked up to the minute of sale (a 9:48 a.m. filing "
+                        "voids a 10:00 a.m. auction); ticklers at two and three weeks after "
+                        "a redemption closing until proof arrives."
+                    ),
+                },
+            ],
+            "caption": (
+                "After the 9-0 Tyler ruling, a certificate is only as safe as its notice "
+                "trail, its bankruptcy check and written proof of redemption."
+            ),
+            "assumptions_note": (
+                "Roles are functions, not required hires. Practitioners split sharply: "
+                "Lynette Lowitz would not buy certificates now, while Tax Sale Secrets "
+                "frames the worst case as a few months of delay."
+            ),
+            "note": (
+                "Sources: Tax Sale Resources (d67aVfAEUxg @ 00:25:05); The Devine Law Group "
+                "(qAoyeFTuxms @ 00:15:05, 00:16:45); Florida Trust, Real Estate, Probate, & "
+                "Foreclosure (RlQwxNYiqok @ 00:15:33); Behind The Servicing "
+                "(au90-c2Pwvo @ 00:00:17); The Deed | Real Estate (sb6T0Xe5siY @ 00:06:20)."
+            ),
+        },
+        {
+            "diagram_id": "diag-07-auction-format-yield-bands",
+            "chapter_number": 4,
+            "title": "Auction Format Yield Bands",
+            "subtitle": "The statutory rate is a ceiling; the format decides the real yield",
+            "chart_type": "stacked_comparison",
+            "total_range": "0% to 18% depending on state and auction format",
+            "buckets": [
+                {
+                    "label": "Florida Interest Bid-Down",
+                    "low": 0.25,
+                    "high": 18,
+                    "notes": (
+                        "Quarter-point bids still collect the 5% penalty on fast redemption, "
+                        "but a quarter-point lien held two years yields only about 2.5% a year."
+                    ),
+                },
+                {
+                    "label": "Arizona Proxy Bidding",
+                    "low": 5,
+                    "high": 16,
+                    "notes": (
+                        "A lone 5% bid clears at the 16% maximum in proxy counties; in "
+                        "direct bid counties the same bid locks in 5%."
+                    ),
+                },
+                {
+                    "label": "Colorado Premium Bidding",
+                    "low": 13,
+                    "high": 13,
+                    "notes": (
+                        "About 13% in 2026, set at 9% over the federal discount rate, with a "
+                        "3-year redemption period; confirm overbid treatment first."
+                    ),
+                },
+                {
+                    "label": "New Jersey Bid-Down to Premium",
+                    "low": 0,
+                    "high": 18,
+                    "notes": (
+                        "Bids run 18% to 0%, then flip into dollar premiums; large investors "
+                        "scoop up sales at 0%."
+                    ),
+                },
+            ],
+            "caption": (
+                "Institutional money grinds popular counties toward zero, yet floors, proxy "
+                "engines and fixed premium rates still leave pockets of real yield."
+            ),
+            "assumptions_note": (
+                "Yields assume redemption on the stated terms; operators split on whether "
+                "quarter-point fast-five plays are smart bets or traps when liens sit "
+                "unredeemed for years."
+            ),
+            "note": (
+                "Sources: Tax Sale Resources (XbThUArmcIE @ 00:01:24, 00:02:11); Realauction "
+                "(cleRXY7vybQ @ 00:02:20; hKsLdKqVOE0 @ 00:01:12); Tax Sale Secrets "
+                "(stFlmSmpP3Q @ 00:01:09); Tax Lien School Highlights - Dustin Hahn "
+                "(mHvzzGVcYdI @ 00:01:53); Tax Sale Academy (0I_mhnrF0So @ 00:02:42)."
+            ),
+        },
+        {
+            "diagram_id": "diag-08-funding-and-scaling-roadmap",
+            "chapter_number": 12,
+            "title": "Four-Week Funding and Scaling Roadmap",
+            "subtitle": "Bankroll, entity, exit and calendar before sale season",
+            "chart_type": "timeline_roadmap",
+            "weeks": [
+                {
+                    "week": "Week 1",
+                    "title": "Set the Bankroll and Start Transfers",
+                    "deliverable": (
+                        "At least $20,000 to $25,000 earmarked; custodian transfers started, "
+                        "since moves out of Equity Trust take two to three weeks."
+                    ),
+                    "gate": "No sale-season bidding on $500; funds in motion before Illinois sales open in October.",
+                },
+                {
+                    "week": "Week 2",
+                    "title": "Stand Up the Bidding Entity",
+                    "deliverable": (
+                        "Bids in the IRA's exact name with its own TIN and bank account; one "
+                        "Wyoming lien LLC paired with one LLC per deed."
+                    ),
+                    "gate": "Bidding site accepts the entity and its account.",
+                },
+                {
+                    "week": "Week 3",
+                    "title": "Lock the Exit and REO Offload",
+                    "deliverable": (
+                        "Exit strategy fixed before any maximum bid; REO offload channel "
+                        "proven for Georgia and Texas, where REO rates run at least 60%."
+                    ),
+                    "gate": "Maximum bid written down with no room for auction fever.",
+                },
+                {
+                    "week": "Week 4",
+                    "title": "Calendar Notices and Budget Counsel",
+                    "deliverable": (
+                        "Every noticing deadline calendared with proof of delivery; $2,000 "
+                        "to $5,000 per property reserved for a tax attorney's clear title action."
+                    ),
+                    "gate": "Subsequent-tax payments planned to keep control of each lien.",
+                },
+            ],
+            "caption": (
+                "Funding engines run through self-directed retirement money, entity "
+                "wrappers and other people's money, such as 10% notes funding 20% Georgia "
+                "redemptions."
+            ),
+            "assumptions_note": (
+                "The four-week sequence is an organizing frame. Stephen Morel says matching "
+                "bank-level 15-18% yields takes six to seven figures because institutions "
+                "absorb roughly 80% of delinquent liens."
+            ),
+            "note": (
+                "Sources: REtipster with Ted Thomas (jDYlxXpw-e4 @ 00:36:45, 00:41:33); "
+                "Platinum Investment Properties Group - Tax Liens (AcKbZeNuPr4 @ 00:21:38, "
+                "00:50:34); CamaPlan Self Directed IRA (U08uLxrDVE4 @ 00:36:29; "
+                "DHgFebJCtQU @ 00:18:45); Ross Budrakey (VmzztAnZ71w @ 00:36:42, 01:24:13); "
+                "Kevin Bupp - Cash Flow Investor (UyiZp8ocowM @ 00:14:17, 00:39:08)."
+            ),
+        },
+    ]
+
+
+VOLUME_024_POSITIONING_ALTERNATIVES: List[Dict[str, Any]] = [
     {
-        "title": "Buy the Lien, Price the Wait",
-        "subtitle": (
-            "Build a certificate portfolio around auction bid-down math, "
-            "redemption timing, and realized interest rather than advertised rates."
-        ),
+        "title": "The Lien Lender",
+        "subtitle": "Statutory Rates, Penalty Floors, and Walk-Away Bids for Interest-Income Investors",
         "audience": (
-            "Capital-backed owner-operators deploying $15,000–$85,000 USD "
-            "with a full-time principal and contracted title and legal specialists."
+            "Yield-focused investors who want interest income and accept that houses "
+            "are the rare outcome."
         ),
         "research_basis": (
-            "Florida Statutes sections 197.432 and 197.472 and Arizona Revised "
-            "Statutes sections 42-18114 and 42-18153 establish distinct auction "
-            "and redemption mechanics. Compare actual bid rates, eligible "
-            "interest bases, redemption dates, and unrecovered transaction costs; "
-            "do not treat a statutory ceiling as the portfolio's earned yield."
+            "Lien Ledger's D.C. review of 9,395 properties shows 70% redeemed and 1% "
+            "foreclosed; Bob Diamond's written minimum-rate rule and Tax Sale Resources' "
+            "fast-five 5% floor frame liens as a lending business."
         ),
         "sources": [
-            "https://www.leg.state.fl.us/statutes/index.cfm?App_mode=Display_Statute&URL=0100-0199/0197/Sections/0197.432.html",
-            "https://www.leg.state.fl.us/statutes/index.cfm?App_mode=Display_Statute&URL=0100-0199/0197/Sections/0197.472.html",
-            "https://www.azleg.gov/ars/42/18114.htm",
-            "https://www.azleg.gov/ars/42/18153.htm",
+            "https://www.youtube.com/watch?v=H9fPhqUYPfc&t=213s",
+            "https://www.youtube.com/watch?v=B0WBR5swuac&t=276s",
+            "https://www.youtube.com/watch?v=XbThUArmcIE&t=84s",
         ],
-        "validation_status": (
-            "Source-informed editorial positioning; not market-tested."
-        ),
+        "validation_status": "Grounded strictly in Vol. 024 YouTube practitioner transcripts.",
     },
     {
-        "title": "The Three-Person Redemption Desk",
-        "subtitle": (
-            "Run auction screening and redemption tracking with one full-time "
-            "principal, one title contractor, and one local counsel contractor."
-        ),
+        "title": "The Leftover Hunter",
+        "subtitle": "Over-the-Counter Lists, Commissioner Sales, and Deeds Bought Below Ten Cents on the Dollar",
         "audience": (
-            "Small investment partnerships that need disciplined parcel records, "
-            "cash reconciliation, and statutory calendars before expanding headcount."
+            "Small-budget buyers willing to screen unsold county inventory and run desk "
+            "diligence to land property."
         ),
         "research_basis": (
-            "Florida Statutes section 197.502 and Arizona Revised Statutes "
-            "section 42-18201 distinguish certificate ownership from later "
-            "enforcement procedures. A parcel-level calendar, documented title "
-            "review, and counsel-owned notices support the core pod; automation "
-            "organizes evidence but does not establish title or clear a stay "
-            "under 11 U.S.C. section 362."
+            "Tax Sale Support's 1,000-to-100-to-5 list yield, Dustin Hahn's $500 Indiana "
+            "buy resold for $50,000, and Tax Sale Secrets students buying OTC land at "
+            "5-15% of value."
         ),
         "sources": [
-            "https://www.leg.state.fl.us/statutes/index.cfm?App_mode=Display_Statute&URL=0100-0199/0197/Sections/0197.502.html",
-            "https://www.azleg.gov/ars/42/18201.htm",
-            "https://www.law.cornell.edu/uscode/text/11/362",
+            "https://www.youtube.com/watch?v=5t3VbtPlElc&t=2386s",
+            "https://www.youtube.com/watch?v=SwH4FFj8oZc&t=46s",
+            "https://www.youtube.com/watch?v=RgLErVu5_Kk&t=1425s",
         ],
-        "validation_status": (
-            "Source-informed editorial positioning; not market-tested."
-        ),
+        "validation_status": "Grounded strictly in Vol. 024 YouTube practitioner transcripts.",
     },
     {
-        "title": "Redemption First, Equity Intact",
-        "subtitle": (
-            "Separate certificate interest, redeemable-deed premiums, and property "
-            "disposition gains while engineering lawful surplus handling after Tyler."
-        ),
+        "title": "From Lien to Clear Title",
+        "subtitle": "Foreclosure Counsel, Quiet Title Budgets, IRS Redemption Windows, and Hidden Municipal Liens",
         "audience": (
-            "Experienced property investors comparing certificate purchases with "
-            "redeemable deeds and budgeting for title defects and delayed exits."
+            "Investors targeting non-redeeming liens who need to price foreclosure, title "
+            "cure and federal lien risk before bidding."
         ),
         "research_basis": (
-            "Texas Tax Code section 34.21 supplies property-specific redemption "
-            "periods and payment formulas rather than ordinary certificate "
-            "interest. Tyler v. Hennepin County, 598 U.S. 631 (2023), addresses "
-            "government retention of value beyond the tax debt; it does not "
-            "create one nationwide private-investor foreclosure procedure. "
-            "Federal tax liens also require analysis under 26 U.S.C. section 7425."
+            "Saen Higgins' $500 to $4,000 foreclosure counsel range, Ted Thomas's $3,000 "
+            "to $5,000 quiet title over 3 to 6 months, the IRS 120-day redemption right, "
+            "and Alex Goldovsky's 25% of title issues from unrecorded municipal liens."
         ),
         "sources": [
-            "https://statutes.capitol.texas.gov/Docs/TX/htm/TX.34.htm#34.21",
-            "https://www.law.cornell.edu/supremecourt/text/21-166",
-            "https://www.law.cornell.edu/uscode/text/26/7425",
+            "https://www.youtube.com/watch?v=EXkUbWWenl0&t=470s",
+            "https://www.youtube.com/watch?v=MzL0xEaYnUI&t=91s",
+            "https://www.youtube.com/watch?v=q4Kqh7Vleyg&t=197s",
+            "https://www.youtube.com/watch?v=O6HhpnnQADM&t=960s",
         ],
-        "validation_status": (
-            "Source-informed editorial positioning; not market-tested."
-        ),
+        "validation_status": "Grounded strictly in Vol. 024 YouTube practitioner transcripts.",
     },
 ]
-
-
-def build_volume_024_diagrams_data() -> list[dict]:
-    specs = [
-        (
-            "diag-01-certificate-to-realized-cash",
-            "process_flow",
-            "From County Inventory to Realized Cash",
-            "Five operating steps keep invested principal separate from earnings.",
-            1,
-            "operating_framework",
-            (
-                "Applies to statutory certificates and separately classified "
-                "redeemable deeds. County procedures control execution. The "
-                "canonical time to first deal is 3–10 months; completing research "
-                "or registering for an auction does not establish an earned return."
-            ),
-            (
-                "Track each parcel from original county record through bank "
-                "settlement. Returned principal replenishes investment capital; "
-                "only realized interest, penalties, and disposition gains enter "
-                "the revenue scorecard."
-            ),
-            [
-                (
-                    "Source official inventory",
-                    "County records before auction marketing",
-                    1,
-                    (
-                        "Download the county treasurer or tax collector sale "
-                        "file, preserve its publication date, and cross-check "
-                        "parcel identifiers against assessor GIS and recorder "
-                        "records. Record whether the asset is a certificate or "
-                        "a redeemable deed."
-                    ),
-                ),
-                (
-                    "Underwrite parcel and procedure",
-                    "Title, access, value, and statutory clock",
-                    2,
-                    (
-                        "Have the title contractor review recorded interests, "
-                        "access, parcel usability, and competing taxes. Local "
-                        "counsel maps redemption and enforcement requirements; "
-                        "PACER checks support bankruptcy review under 11 U.S.C. "
-                        "section 362."
-                    ),
-                ),
-                (
-                    "Price and acquire",
-                    "Bid ceiling includes trapped-cash exposure",
-                    3,
-                    (
-                        "Model the actual interest-bearing base, auction premium, "
-                        "fees, subsequent taxes, and collection delay. Apply the "
-                        "auction's bid-down or premium rules rather than bidding "
-                        "from a headline statutory rate."
-                    ),
-                ),
-                (
-                    "Service and reconcile",
-                    "Track redemption without counting accruals",
-                    4,
-                    (
-                        "Use a SQLite parcel register and scheduled calendar "
-                        "alerts for receipts, statutory dates, and subsequent "
-                        "tax decisions. Match county statements to bank activity "
-                        "and flag overdue events for human review."
-                    ),
-                ),
-                (
-                    "Redeem or resolve",
-                    "Separate principal, earnings, costs, and surplus",
-                    5,
-                    (
-                        "Post returned principal to the investment ledger and "
-                        "realized earnings to revenue. Route nonredemption "
-                        "through counsel-led enforcement or loss resolution; "
-                        "a property transfer alone is not a realized disposition "
-                        "gain, and restricted surplus is not operator revenue."
-                    ),
-                ),
-            ],
-        ),
-        (
-            "diag-02-auction-underwriting-cohort",
-            "funnel",
-            "A Narrowing Auction Cohort",
-            "One acquisition cohort, five nested stages, and explicit rejection.",
-            6,
-            "illustrative_model",
-            (
-                "Illustrative counts represent the same candidate pool, not "
-                "historical conversion evidence. Every later stage is a subset "
-                "of the preceding stage. Twenty acquisitions at an average "
-                "$37,500 all-in basis use the $750,000 acquisition bucket in "
-                "the $1,000,000 capital illustration; this is not a 30-day target."
-            ),
-            (
-                "Screening automation reduces manual review volume. It does not "
-                "turn title exceptions into clean assets or convert acquired "
-                "certificates into certain redemptions."
-            ),
-            [
-                (
-                    "Published sale candidates",
-                    "1,000 entries form the starting cohort",
-                    1000,
-                    (
-                        "Import 1,000 county sale entries into one dated cohort. "
-                        "Retain withdrawn and duplicate entries as excluded "
-                        "records so the original denominator remains auditable."
-                    ),
-                ),
-                (
-                    "Desktop-qualified parcels",
-                    "300 remain; 30% of starting entries",
-                    300,
-                    (
-                        "Retain 300 candidates after removing duplicates, "
-                        "withdrawals, unusable parcel fragments, inaccessible "
-                        "land, and assets outside the selected county strategy."
-                    ),
-                ),
-                (
-                    "Title-reviewed candidates",
-                    "120 remain; 40% of desktop-qualified parcels",
-                    120,
-                    (
-                        "Advance 120 of the 300 desktop survivors after recorded "
-                        "interest review, bankruptcy checks, and counsel's "
-                        "identification of the applicable redemption procedure."
-                    ),
-                ),
-                (
-                    "Price-qualified bid plans",
-                    "40 remain; one-third of reviewed candidates",
-                    40,
-                    (
-                        "Approve internal bid plans for 40 of the 120 reviewed "
-                        "candidates after modeling premiums, taxes, duration, "
-                        "loss exposure, and portfolio concentration limits."
-                    ),
-                ),
-                (
-                    "Funded acquisitions",
-                    "20 acquired; 50% of price-qualified plans",
-                    20,
-                    (
-                        "Acquire 20 of the 40 planned bids without exceeding "
-                        "individual price ceilings. The resulting 2% overall "
-                        "conversion measures purchase selection, not redemption "
-                        "probability or future investment profitability."
-                    ),
-                ),
-            ],
-        ),
-        (
-            "diag-03-base-case-owner-profit",
-            "waterfall",
-            "Base Case: $97,500 Revenue to 42.5% Owner Net",
-            "Opening gross revenue, four deductions, and one closing total.",
-            3,
-            "illustrative_model",
-            (
-                "Canonical annual revenue and margin are fixed; expense "
-                "categories are an illustrative allocation of their difference. "
-                "The first bar is the opening total, the middle four are signed "
-                "deltas, and the sixth is the closing total, not another delta. "
-                "Recurring overhead plus contractors equals $36,000 annually "
-                "or $3,000 monthly, inside the $500–$4,000 monthly opex range. "
-                "Deal-specific costs and realized capital losses are separate."
-            ),
-            (
-                "$97,500 - $24,000 - $12,000 - $10,500 - $9,562.50 "
-                "= $41,437.50, exactly 42.5% of revenue and displayed as "
-                "$41,438 annual owner net profit. The owner works the core "
-                "full-time seat; no additional owner salary is deducted. "
-                "Returned principal never enters the opening revenue bar."
-            ),
-            [
-                (
-                    "Realized operator revenue",
-                    "$97,500 annual gross; principal receipts excluded",
-                    97500,
-                    (
-                        "Opening total contains realized interest, penalties, "
-                        "and positive disposition gains. Gross property sale "
-                        "proceeds and recovered certificate basis are not "
-                        "recognized as revenue in this operator scorecard."
-                    ),
-                ),
-                (
-                    "Recurring operating overhead",
-                    "Subtract $24,000 annual recurring operating overhead",
-                    -24000,
-                    (
-                        "Allocate $2,000 monthly to portfolio administration, "
-                        "data access, insurance, bookkeeping, secure records, "
-                        "and servicing systems; contractor retainers are "
-                        "separately shown in the next deduction."
-                    ),
-                ),
-                (
-                    "Two contracted core seats",
-                    "Subtract $12,000 annual contractor retainer expense",
-                    -12000,
-                    (
-                        "Budget $6,000 annually for title review retainers and "
-                        "$6,000 for local counsel retainers. These are limited "
-                        "service budgets, not full-time salaries; exceptional "
-                        "matter charges belong in deal-specific expenses."
-                    ),
-                ),
-                (
-                    "Deal-specific execution costs",
-                    "Subtract $10,500 in nonrecurring transaction costs",
-                    -10500,
-                    (
-                        "Allocate auction charges, targeted parcel inspections, "
-                        "recording expenses, incremental notices, and exceptional "
-                        "legal work here. Exclude costs already deducted when "
-                        "calculating a disposition gain to prevent double counting."
-                    ),
-                ),
-                (
-                    "Realized capital losses",
-                    "Subtract $9,562.50 of unrecovered investment basis",
-                    -9562.50,
-                    (
-                        "Recognize documented unrecovered basis from resolved "
-                        "loss positions. Do not expense every principal purchase "
-                        "or treat principal repayment as income; a cash reserve "
-                        "transfer alone does not establish a realized loss."
-                    ),
-                ),
-                (
-                    "Annual owner net profit",
-                    "$41,437.50 exact; $41,438 rounded annual owner net",
-                    41437.50,
-                    (
-                        "Closing total equals $97,500 multiplied by 42.5%. "
-                        "This is owner operating profit before personal income "
-                        "tax, with no leverage or separate owner salary modeled."
-                    ),
-                ),
-            ],
-        ),
-        (
-            "diag-04-realized-cash-yield-mechanics",
-            "horizontal_bars",
-            "Five Investment Bases, Five Cash-Yield Outcomes",
-            "Compare realized cash divided by invested cash, not headline rates.",
-            2,
-            "illustrative_model",
-            (
-                "All bars are independent transaction illustrations, not "
-                "portfolio forecasts or components of the canonical revenue "
-                "scenarios. Numeric values are realized cash-yield percentages "
-                "before expenses and taxes. Certificate examples assume one "
-                "year outstanding; the Texas example is one redemption event "
-                "within its applicable 180-day period and is not annualized."
-            ),
-            (
-                "The investment denominator matters as much as the rate. "
-                "Certificate interest, auction premiums, and redeemable-deed "
-                "payments follow different rules; verify the applicable statute "
-                "and county settlement calculation before committing funds."
-            ),
-            [
-                (
-                    "Florida certificate at 6%",
-                    "6.0% cash yield on $10,000 invested",
-                    6.0,
-                    (
-                        "Assume a $10,000 certificate acquired at a 6% auction "
-                        "rate and redeemed after one year: $600 realized "
-                        "interest divided by $10,000 invested. Apply Florida "
-                        "Statutes sections 197.432 and 197.472, including "
-                        "redemption-specific calculation rules."
-                    ),
-                ),
-                (
-                    "Arizona certificate at 8%",
-                    "8.0% cash yield on $10,000 invested",
-                    8.0,
-                    (
-                        "Assume a $10,000 interest-bearing certificate at an "
-                        "8% bid rate for one year: $800 divided by $10,000. "
-                        "Arizona Revised Statutes sections 42-18114 and "
-                        "42-18153 govern bid rates and redemption amounts; "
-                        "actual statutory month counting controls settlement."
-                    ),
-                ),
-                (
-                    "New Jersey certificate at 4%",
-                    "4.0% interest-only yield before separate redemption charges",
-                    4.0,
-                    (
-                        "Assume a $10,000 certificate bought without a premium "
-                        "at 4% and redeemed after one year. Interest alone "
-                        "contributes $400; separately analyze additional "
-                        "redemption amounts under N.J.S.A. 54:5-32 and "
-                        "54:5-61 rather than adding them to the bid rate."
-                    ),
-                ),
-                (
-                    "New Jersey premium-funded certificate",
-                    "2.0% interest-only yield on $20,000 committed",
-                    2.0,
-                    (
-                        "Assume the same $10,000 certificate at 4% requires "
-                        "a separate $10,000 auction premium. Its $400 interest "
-                        "divided by $20,000 committed yields 2%; premium "
-                        "return, forfeiture, and holding rules require separate "
-                        "review under N.J.S.A. 54:5-33."
-                    ),
-                ),
-                (
-                    "Texas nonhomestead redeemable deed",
-                    "25.0% event yield; no annualized comparison implied",
-                    25.0,
-                    (
-                        "Assume a qualifying nonhomestead, nonagricultural "
-                        "property under Texas Tax Code section 34.21(e), "
-                        "with $10,000 total qualifying expenditure and timely "
-                        "redemption. A 25% premium produces $2,500; this "
-                        "is a statutory redemption payment, not annual interest."
-                    ),
-                ),
-            ],
-        ),
-        (
-            "diag-05-statutory-risk-preflight",
-            "decision_tree",
-            "Four Checks Before Capital Moves",
-            "Every failed branch stops the bid or the proposed enforcement step.",
-            5,
-            "operating_framework",
-            (
-                "Read these as ordered checks: passing advances to the next "
-                "check; failing produces the stated stop action. Numeric values "
-                "are layout weights, not probabilities. Re-run relevant checks "
-                "before enforcement because bankruptcy, title, and statutory "
-                "facts can change after purchase."
-            ),
-            (
-                "Local auction eligibility, rate limits, notice procedures, "
-                "and redemption rights control the investment. A successful "
-                "auction bid does not resolve title defects or authorize "
-                "retaining another party's protected surplus."
-            ),
-            [
-                (
-                    "Eligibility and auction mechanics",
-                    "Pass documented authority; otherwise do not bid",
-                    1,
-                    (
-                        "Verify bidder registration, deposits, payment deadlines, "
-                        "asset type, and rate or premium rules against the "
-                        "current county packet and governing statute. If any "
-                        "material rule is unresolved, remove the parcel from "
-                        "the live bid list."
-                    ),
-                ),
-                (
-                    "Title, stays, and federal interests",
-                    "Pass counsel review; otherwise suspend affected action",
-                    1,
-                    (
-                        "Review recorded liens, ownership, access, and bankruptcy "
-                        "status. Counsel evaluates 11 U.S.C. section 362 and "
-                        "federal lien notice or redemption issues under "
-                        "26 U.S.C. section 7425; a recorder search alone "
-                        "does not establish that enforcement may proceed."
-                    ),
-                ),
-                (
-                    "Redemption, notice, and surplus",
-                    "Pass lawful procedure; otherwise redesign the exit",
-                    1,
-                    (
-                        "Map the jurisdiction's redemption period, required "
-                        "notices, foreclosure procedure, and surplus distribution. "
-                        "Apply Tyler v. Hennepin County, 598 U.S. 631 (2023), "
-                        "to the relevant government-taking issue without "
-                        "assuming identical rules for every private certificate."
-                    ),
-                ),
-                (
-                    "Loss capacity and bid economics",
-                    "Pass funded downside; otherwise reduce bid or reject",
-                    1,
-                    (
-                        "Stress delayed redemption, unusable collateral, "
-                        "subsequent taxes, counsel expense, and capital loss. "
-                        "Reject positions whose loss exposure or cash demands "
-                        "exceed funded reserves; a large statutory rate cannot "
-                        "repair defective collateral or an excessive premium."
-                    ),
-                ),
-            ],
-        ),
-        (
-            "diag-06-core-and-scaled-pod",
-            "org_architecture",
-            "Three Core Seats, Five at Scale",
-            "The principal owns capital decisions; specialists own defined work.",
-            11,
-            "operating_framework",
-            (
-                "FT means full-time and C means contractor. Conservative and "
-                "Base use 1 FT + 2 C, totaling three people. Scaled uses "
-                "2 FT + 3 C, totaling five people. The principal remains the "
-                "investment decision owner in both structures."
-            ),
-            (
-                "Canonical annual outcomes: Conservative $15,000 gross at 30% "
-                "margin yields $4,500 owner net; Base $97,500 gross at 42.5% "
-                "yields $41,438 rounded owner net; Scaled $180,000 gross at "
-                "55% yields $99,000 owner net. All gross figures exclude "
-                "returned principal, and the scaled result uses five people."
-            ),
-            [
-                (
-                    "Principal investor",
-                    "Core seat one: full-time capital decision owner",
-                    1,
-                    (
-                        "Sets county coverage, concentration limits, bid ceilings, "
-                        "reserve policy, and acquisition decisions. Reviews "
-                        "cash reconciliation and maintains the distinction "
-                        "between invested basis, recovered principal, realized "
-                        "revenue, and owner profit."
-                    ),
-                ),
-                (
-                    "Title and parcel reviewer",
-                    "Core seat two: contracted title research specialist",
-                    1,
-                    (
-                        "Reports recorded interests, legal-description mismatches, "
-                        "access issues, parcel fragmentation, and unresolved "
-                        "exceptions. Delivers dated evidence packets rather "
-                        "than treating assessor records as proof of clear title."
-                    ),
-                ),
-                (
-                    "Local enforcement counsel",
-                    "Core seat three: contracted jurisdiction-specific counsel",
-                    1,
-                    (
-                        "Owns legal interpretation, notice sequencing, stay "
-                        "analysis, federal lien issues, enforcement filings, "
-                        "and surplus treatment. Distinguishes ordinary retainer "
-                        "work from separately budgeted litigation."
-                    ),
-                ),
-                (
-                    "Portfolio operations lead",
-                    "Scaled seat four: second full-time operating seat",
-                    1,
-                    (
-                        "Added only in the five-person model. Maintains the "
-                        "SQLite portfolio register, redemption calendar, "
-                        "bank matching, document versioning, and overdue "
-                        "exception queue; the principal retains capital authority."
-                    ),
-                ),
-                (
-                    "Auction and field analyst",
-                    "Scaled seat five: third contracted specialist seat",
-                    1,
-                    (
-                        "Added only in the five-person model. Cleans auction "
-                        "files, verifies property conditions, collects local "
-                        "sale evidence, and documents inspection exceptions "
-                        "without substituting desktop estimates for title review."
-                    ),
-                ),
-            ],
-        ),
-        (
-            "diag-07-reference-startup-capital-allocation",
-            "stacked_comparison",
-            "$50,000 Startup Plan: Inventory, Reserves, and Runway",
-            "Four buckets compare $15,000 lean, $50,000 reference, and $85,000 expanded plans.",
-            4,
-            "illustrative_model",
-            (
-                "Numeric values are dollar allocations totaling exactly $50,000, "
-                "the central reference budget within the canonical "
-                "$15,000–$85,000 USD startup range. Allocation shares are "
-                "75%, 10%, 10%, and 5%. Lean allocations total "
-                "$11,250 + $1,500 + $1,500 + $750 = $15,000; reference "
-                "allocations total $37,500 + $5,000 + $5,000 + $2,500 = $50,000; "
-                "expanded allocations total "
-                "$63,750 + $8,500 + $8,500 + $4,250 = $85,000. "
-                "These are mechanical allocation comparisons, not forecasts. "
-                "Capital allocation alone does not generate the canonical "
-                "Conservative, Base, or Scaled revenue outcomes."
-            ),
-            (
-                "The $37,500 reference acquisition bucket is independent of "
-                "the larger twenty-position cohort illustration in diag-02; "
-                "this startup plan does not fund that cohort. The $2,500 "
-                "operating reserve covers five months at $500 monthly or "
-                "about 0.83 months at the Base illustration's $3,000 monthly "
-                "spend. It does not guarantee runway through the 3–10-month "
-                "first-deal window or a later redemption. Reallocate capital "
-                "before bidding if projected expenses exceed funded runway; "
-                "do not assume investment proceeds will cover the shortfall."
-            ),
-            [
-                (
-                    "Acquisition principal and premiums",
-                    "$37,500 reference allocation; 75% of startup capital",
-                    37500,
-                    (
-                        "Fund certificate principal or deed purchase basis "
-                        "and any required premium without counting purchases "
-                        "as revenue. Lean: $11,250 of $15,000; reference: "
-                        "$37,500 of $50,000; expanded: $63,750 of $85,000. "
-                        "Size acquisitions to available capital and parcel-level "
-                        "risk limits rather than targeting a fixed deal count."
-                    ),
-                ),
-                (
-                    "Parcel diligence and enforcement reserve",
-                    "$5,000 reference allocation; 10% of startup capital",
-                    5000,
-                    (
-                        "Hold cash for inspections, title work, recording, "
-                        "notices, and exceptional enforcement matters. Reserve "
-                        "funding is not an immediate expense. Lean: $1,500 "
-                        "of $15,000; reference: $5,000 of $50,000; expanded: "
-                        "$8,500 of $85,000. Verify matter-specific estimates "
-                        "before treating this reserve as sufficient."
-                    ),
-                ),
-                (
-                    "Liquidity and subsequent-tax reserve",
-                    "$5,000 reference allocation; 10% of startup capital",
-                    5000,
-                    (
-                        "Preserve uncommitted liquidity for delayed redemptions "
-                        "and underwritten subsequent-tax decisions. Do not "
-                        "assume every additional tax payment earns interest "
-                        "or preserves priority. Lean: $1,500 of $15,000; "
-                        "reference: $5,000 of $50,000; expanded: $8,500 "
-                        "of $85,000. Do not count this cash simultaneously "
-                        "as acquisition funding or operating runway."
-                    ),
-                ),
-                (
-                    "Operating cash runway",
-                    "$2,500 reference allocation; 5% of startup capital",
-                    2500,
-                    (
-                        "Fund recurring administration and contractor retainers "
-                        "while investment cash remains tied up. Lean: $750 "
-                        "of $15,000; reference: $2,500 of $50,000; expanded: "
-                        "$4,250 of $85,000. At $500 monthly, these reserves "
-                        "cover 1.5, 5, and 8.5 months respectively; at $4,000 "
-                        "monthly, each covers less than 1.1 months. Match "
-                        "commitments to funded runway and revise allocations "
-                        "before deployment if the cash plan does not cover "
-                        "the expected wait."
-                    ),
-                ),
-            ],
-        ),
-        (
-            "diag-08-first-thirty-days",
-            "timeline_roadmap",
-            "Thirty Days to a Documented Investment Process",
-            "Build the operating system before expecting investment proceeds.",
-            12,
-            "operating_framework",
-            (
-                "Four consecutive work periods cover Days 1–30. Numeric "
-                "values are each period's ending day, not revenue or deal "
-                "counts. The canonical first-deal window remains 3–10 months; "
-                "the sprint produces diligence and operating artifacts rather "
-                "than promising an acquisition, redemption, or foreclosure."
-            ),
-            (
-                "A completed sprint leaves a traceable county rulebook, tested "
-                "parcel records, conservative bid worksheets, and a funded "
-                "cash plan. An unsuitable auction remains a valid reason "
-                "to finish the month without deploying acquisition capital."
-            ),
-            [
-                (
-                    "Days 1-7",
-                    "Choose one jurisdiction and document its rules",
-                    7,
-                    (
-                        "Select one county and asset type. Archive its official "
-                        "auction packet, registration instructions, payment "
-                        "requirements, redemption statute, and enforcement "
-                        "procedure. Ask local counsel to identify notice, "
-                        "bankruptcy, federal lien, and surplus issues."
-                    ),
-                ),
-                (
-                    "Days 8-14",
-                    "Build and test the parcel evidence register",
-                    14,
-                    (
-                        "Create a SQLite register keyed by county and parcel "
-                        "identifier. Import one published sale file, retain "
-                        "source dates, and manually audit twenty records "
-                        "against assessor GIS, recorder documents, and counsel's "
-                        "title-review requirements."
-                    ),
-                ),
-                (
-                    "Days 15-21",
-                    "Model bids, reserves, and delayed cash recovery",
-                    21,
-                    (
-                        "Create spreadsheet bid worksheets separating principal, "
-                        "premiums, interest-bearing amounts, fees, and taxes. "
-                        "Stress redemption at 6, 18, and 36 months where "
-                        "legally relevant, plus capital loss; test reserve "
-                        "adequacy without assuming immediate owner distributions."
-                    ),
-                ),
-                (
-                    "Days 22-30",
-                    "Rehearse execution and verify cash classifications",
-                    30,
-                    (
-                        "Run a mock auction against documented bid ceilings, "
-                        "test redemption alerts, and reconcile sample receipts "
-                        "into principal and earnings. Confirm contractor scope, "
-                        "payment procedures, and record retention; fund a real "
-                        "purchase only when its specific checks pass."
-                    ),
-                ),
-            ],
-        ),
-    ]
-    return [
-        dict(
-            diagram_id=identifier,
-            chart_type=kind,
-            title=title,
-            subtitle=subtitle,
-            chapter_number=chapter,
-            epistemic_tag=tag,
-            assumptions_note=note,
-            caption=caption,
-            stages=[
-                dict(
-                    label=label,
-                    value=value,
-                    numeric_value=float(number),
-                    detail=detail,
-                )
-                for label, value, number, detail in stages
-            ],
-        )
-        for (
-            identifier,
-            kind,
-            title,
-            subtitle,
-            chapter,
-            tag,
-            note,
-            caption,
-            stages,
-        ) in specs
-    ]

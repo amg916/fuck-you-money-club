@@ -8,49 +8,49 @@
       "INVESTING"
     ],
     "deck": [
-      "UNDERWRITE PARCEL EQUITY. MODEL REDEMPTION.",
-      "RESPECT STATUTORY NOTICE."
+      "COUNTY SCRIPTS, STATUTORY RATES, REDEMPTION CLOCKS AND OVER-THE-COUNTER LEFTOVERS",
+      "LIEN YIELD VERSUS DEED DISCOUNTS, PRICED AGAINST TITLE TRAPS AND ATTORNEY COSTS"
     ],
-    "lead": "Data-Screened Tax Lien Certificate & Redeemable-Deed Investing Without Blind Landlocked, Brownfield, or Bid-Down Yield Traps",
-    "summary": "Separate returned principal from statutory interest income, screen EPA/GIS parcel hazards pre-auction, and follow post-Tyler equity rules.",
+    "lead": "Practitioners show how a county sells unpaid property taxes as a first-position certificate that pays a state-set rate of 12 to 36 percent when the owner redeems, which they put at about 95 percent of the time, and how a smaller set of deed and redeemable-deed plays turns unredeemed parcels into property bought at 10 to 20 cents on the dollar.",
+    "summary": "All 12 chapters synthesize 192 verbatim YouTube practitioner testimonies, each claim carrying timestamped inline attribution to the speaker and video it came from. Together they span foundations, lien-versus-deed models, state playbooks, auction formats, online and over-the-counter buying, due diligence, foreclosure and quiet title, risks, federal tax liens, court challenges, and portfolio funding.",
     "chapters": [
-      "Business model & revenue boundaries",
-      "Decision-makers & payment rails",
-      "Unit economics & margin waterfall",
-      "Startup capital & lean stack",
-      "Beginner traps & failure modes",
-      "Sourcing & first deals",
-      "End-to-end operating blueprint",
-      "Public records, APIs & tooling",
-      "Contracts, statutes & scripts",
-      "Automation & distribution loops",
-      "Small-team pod & exit valuation",
-      "First 30-day launch sprint"
+      "Tax Lien Investing Foundations",
+      "Liens vs. Deeds vs. Redeemable Deeds",
+      "The State-by-State Lien Playbook",
+      "Auction Formats and the Real Yield",
+      "Online Auctions and Cheap-Property Deed Plays",
+      "Over-the-Counter Liens and Deeds",
+      "Pre-Bid Due Diligence and GIS Research",
+      "Foreclosure and Quiet Title",
+      "Risks, Title Traps, and Field Case Studies",
+      "Federal Tax Liens and IRS Redemption",
+      "Tyler v. Hennepin, Bankruptcy, and Court Challenges",
+      "Funding, Structuring, and Scaling the Portfolio"
     ],
     "flow": [
       [
-        "SOURCE",
-        "Mine high-intent deal triggers"
+        "SCOUT THE COUNTY",
+        "Call the county for last year's lien count and attendance; 200 to 500 liens with 20 bidders beats 30 liens with 50, and starting small in one county teaches how its auction works."
       ],
       [
-        "UNDERWRITE",
-        "Screen margin, float & rules"
+        "READ THE RULES",
+        "Read the county's terms, deadlines and deposits, and check the state's interest ceiling or penalty, surplus and redemption rules before bringing a dollar."
       ],
       [
-        "ENGAGE",
-        "Execute mandate or pre-sell"
+        "VET THE PARCEL",
+        "Look at every property and confirm its value, search municipal liens and code violations that survive the sale, and pass on landlocked lots and demolition-grade structures."
       ],
       [
-        "DELIVER",
-        "Run standardized SOP & ledger"
+        "RUN THE ALL-IN NUMBER",
+        "Add the lien or deed price to roughly $2,000 to $5,000 in attorney and foreclosure fees and make sure the total sits well under resale value, with an exit strategy before you bid."
       ],
       [
-        "VERIFY",
-        "Audit quality, scrubs & statutes"
+        "BID OR BUY OVER THE COUNTER",
+        "Bid for yield on parcels likely to redeem or for property on those less likely to, mind Florida's 5 percent floor that a 0 percent bid forfeits, and work the unsold list that appears about 30 days after the sale."
       ],
       [
-        "COMPOUND",
-        "Reconcile cash & scale pod"
+        "TRACK, FORECLOSE AND EXIT",
+        "Log every redemption and expiration date on the day you buy, act before deadlines such as Florida's seven-year deed application lapse, and move foreclosed houses with big signs and Craigslist."
       ]
     ]
   },
@@ -58,10 +58,10 @@
   "book_series": "THE BIG MONEY PLAYBOOKS",
   "tagline": "Big Money. Small Teams. No Bullshit.",
   "title": "TAX LIEN INVESTING",
-  "subtitle": "The Complete Playbook for Tax Lien Investing: $15,000–$180,000 USD in Annual Realized Revenue, a 1 FT + 2 C Core Pod (3 People), and a 5-Person Scale Model",
+  "subtitle": "Statutory-Rate Certificates, Bid-Down and Premium Auctions, Over-the-Counter Leftovers, Redeemable Deeds, Quiet Title Exits, and IRA-Funded Lien Portfolios as County Tax Sale Practitioners Actually Run Them",
   "chapter_count": 12,
-  "total_word_count": 76593,
-  "expert_youtube_link_count": 180,
+  "total_word_count": 75741,
+  "expert_youtube_link_count": 209,
   "min_expert_youtube_links_required": 150,
   "target_expert_youtube_links": "150-200+",
   "min_expert_youtube_links_per_chapter": 12,
@@ -76,5 +76,5 @@
   "publication_status": "approved_master",
   "public_deploy_approved": false,
   "paid_sales_approved": false,
-  "updated_at": "2026-11-23T22:48:02Z"
+  "updated_at": "2026-11-24T21:35:15Z"
 }

@@ -1,470 +1,470 @@
 {
   "workbook_id": "wb-024-tax-lien-investing",
   "volume_id": "vol-024-tax-lien-investing",
-  "title": "Tax Lien Investing — Operator Companion Workbook",
-  "subtitle": "6 Printable Operator Worksheets for Certificate and Redeemable-Deed Underwriting, Auction Bid-Down Math, Capital Reserves, Statutory Execution, Redemption Tracking, and Small-Team Portfolio Control",
+  "title": "Tax Lien Investing — Practitioner Testimony Operator Workbook",
+  "subtitle": "A Field Workbook for Reading Lien Foundations, State Rulebooks, Auction Yields, Online Sales, and Over-the-Counter Leftovers Before Any Dollar Moves",
   "worksheets": [
     {
       "worksheet_id": "ws-01",
       "number": 1,
-      "title": "Opportunity Underwriting and Counterparty Qualification",
-      "purpose": "Build an evidence-backed acquisition thesis before committing capital. Distinguish tax certificates from redeemable deeds, qualify the selling authority and payment destination, and reject parcels whose title, access, environmental exposure, or recovery economics cannot support a defensible downside case.",
-      "chapter_ref": "Q1, Q2, Q6",
+      "title": "Foundations and Model Selection Ledger",
+      "purpose": "Turn the core lien trade into written commitments: one county, a measured competition ratio, a known rate ceiling, honest redemption math, a chosen model between liens, deeds and redeemable deeds, a budget path, and an exit logged before the first bid.",
+      "chapter_ref": "Q1-Q2",
       "instructions": [
-        "Select one certificate jurisdiction and one comparison jurisdiction. Retrieve current statutes, county auction terms, redemption instructions, and bidder registration requirements directly from official sources; record the retrieval date and responsible reviewer beside each document.",
-        "Separate the security being purchased from the underlying real estate. Identify whether the auction transfers a certificate, a redeemable deed, or another interest, then write the actual enforcement path rather than assuming immediate ownership or occupancy.",
-        "Underwrite each parcel using assessor records, recorded instruments, mapping, tax history, and a documented title search. Treat apparent discounts as questions requiring evidence, especially where access, structures, liens, ownership disputes, or contamination could impair recovery.",
-        "Independently authenticate the auction administrator and settlement account before funding. Call a published county number rather than a number supplied in a payment email, and retain the verification record with the proposed bid.",
-        "Apply exposure limits to the complete economic interest, including required subsequent taxes and enforcement funding. Rank approved candidates by evidence quality, capital duration, and downside recovery, then document specific reasons for every rejected parcel."
+        "Complete every field for a single county only; spreading research across several counties before learning one auction defeats the purpose of this ledger.",
+        "Call the county treasurer before filling the competition and rate fields, and write the answers exactly as the county gives them, with the date of the call.",
+        "Show your arithmetic in every return field, including face amount, bid rate, months held, and dollars collected, so a reviewer can check each figure.",
+        "Treat ownership as the rare outcome: plan around redemption first, then write how you would handle the parcel if the certificate never pays off.",
+        "Leave no field blank; if a number is unknown, write what is missing and who will supply it before the auction."
       ],
       "fields": [
         {
-          "name": "Investment mandate and capacity boundary",
-          "type": "textarea",
-          "prompt": "Define the permitted instruments, geography, cash commitment, staffing capacity, and expected waiting period. Explain which opportunities remain outside the mandate even when their advertised statutory return appears attractive to a new bidder.",
-          "example": "The pilot permits Florida tax certificates and separately reviewed Texas redeemable deeds, with $125,000 committed capital and no occupied-property management. Volume 024 ranks #24 of 29 and scores 81/100. Budget one full-time operator plus two contractors; retain the canonical 6–36 month first-deal planning window."
+          "name": "target_county_profile",
+          "type": "text",
+          "prompt": "Name the single county you will study first, the state it sits in, and whether it sells liens, deeds, or redeemable deeds. Record why you chose one county instead of spreading across several, and what you still do not know about its auction.",
+          "example": "Duval County, Florida, a lien state with certificates capped at 18 percent. Lien Ledger's rule drives the choice: start small in one county and learn how its auction works [Lien Ledger — H9fPhqUYPfc @ 00:08:00]. Still unknown: last year's lien count, attendance, and how many certificates went unsold to the county."
         },
         {
-          "name": "Instrument classification and ownership rights",
+          "name": "competition_ratio_check",
           "type": "textarea",
-          "prompt": "Describe the exact interest conveyed, the document evidencing ownership, the redemption mechanism, and the next lawful enforcement step. Identify rights the investor does not receive merely by winning the auction or paying the purchase amount.",
-          "example": "A Florida certificate evidences a tax lien, not a right to enter the residence or collect rent. A Texas tax-sale deed conveys a different interest subject to applicable redemption rights. The file therefore uses separate certificate and deed checklists, custody records, and possession instructions rather than one generic foreclosure script."
+          "prompt": "Write down the number of liens the county sold last year and how many bidders attended that sale. Divide one by the other, compare the result to the ratio test, and decide whether this county's crowd leaves room for a newcomer.",
+          "example": "Called the treasurer using Dustin Hahn's phone script: 240 liens sold last year with about 20 people in the room, roughly 12 liens per bidder. That sits inside the 200 to 500 liens with 20 attendees target, far from the 30 liens with 50 attendees trap [Dustin Hahn — eNKIUQC6io0 @ 00:05:44]. County passes the competition screen."
         },
         {
-          "name": "Auction authority and settlement verification",
-          "type": "textarea",
-          "prompt": "Identify the public seller, auction platform, registration requirements, deposit treatment, and authorized payment destination. Specify how the operator will independently confirm account changes and preserve evidence before sending an irreversible wire or other settlement payment.",
-          "example": "The operator finds the auction link through the county tax collector's official website and calls the published office number to confirm settlement instructions. A second reviewer checks the account beneficiary and $5,000 deposit credit. Any emailed account substitution suspends funding until the county independently confirms the change."
+          "name": "statutory_rate_ceiling",
+          "type": "text",
+          "prompt": "Record the statutory interest ceiling for your target state and note that it is only a maximum, not a promise. List two other state ceilings for comparison so you can see where your state ranks before setting any bidding expectations.",
+          "example": "Florida ceiling: 18 percent. Comparison ceilings from Ted Thomas's list: Arizona 16 percent, Iowa 24 percent, Illinois 36 percent, with Florida offering roughly one million certificates a year [Gerald Harris — nMj50Itu21Q @ 00:03:13]. Note to self: 18 percent is where bidding starts, and the crowd decides how far below it the winning rate lands."
         },
         {
-          "name": "Parcel identity and collateral triangulation",
+          "name": "minimum_return_floor_math",
           "type": "textarea",
-          "prompt": "Reconcile the parcel identifier, legal description, street reference, assessed improvements, and mapped boundaries. Describe how conflicting records will be resolved before bidding, including narrow strips, common areas, landlocked parcels, and separately assessed mineral interests.",
-          "example": "Parcel FL-PILOT-017 shows an $82,000 assessed value, but the auction description excludes the adjoining house lot. QGIS mapping reveals a narrow drainage tract with no recorded access. The analyst rejects the $4,600 certificate because the apparent collateral value belongs largely to a different legal description."
+          "prompt": "Work one redemption scenario using your state's minimum return rule. Show the lien face amount, your bid rate, the months until redemption, and the dollars collected, then state whether a zero percent bid would forfeit the minimum entirely.",
+          "example": "$1,000 lien bid at 0.25 percent, redeemed in 3 months. Interest at a quarter percent would be under $1, but the 5 percent floor pays $50, roughly 20 percent annualized [Lien Ledger — H9fPhqUYPfc @ 00:05:06]. A flat 0 percent bid gets no minimum at all, so my floor bid is 0.25, never zero [Lien Ledger — H9fPhqUYPfc @ 00:04:40]."
         },
         {
-          "name": "Title stack and competing claims",
+          "name": "redemption_expectation",
           "type": "textarea",
-          "prompt": "List recorded owners, mortgages, federal claims, judgments, easements, bankruptcy indicators, and other interests requiring review. Distinguish priority from extinguishment, and identify which searches must be refreshed before enforcement or any eventual property disposition.",
-          "example": "A $12,000 certificate is secured by a parcel with a $140,000 mortgage and a recorded federal tax lien. Mortgage size alone does not decide tax-lien priority, but federal notice and redemption issues require review under 26 U.S.C. 7425. The investor withholds a bid until counsel maps surviving interests and procedures."
+          "prompt": "State the redemption rate you are planning around and the outcome you expect on most certificates. Explain in your own words why that rate makes you a lender rather than a cheap-house buyer, and what share might end in foreclosure.",
+          "example": "Planning at 95 percent redemption: most of the time the owner comes back and pays the back taxes [Red Lotus Chic — ehSkuiHT060 @ 00:05:21]. The D.C. review of 9,395 properties showed 70 percent redeemed, 16 percent canceled, 13 percent in progress, and only 1 percent foreclosure [Lien Ledger — H9fPhqUYPfc @ 00:03:33]. I am a lender first."
         },
         {
-          "name": "Environmental and physical downside screen",
+          "name": "model_choice_lien_deed_redeemable",
           "type": "textarea",
-          "prompt": "Identify prior uses, physical deterioration, demolition exposure, flood conditions, and environmental indicators that could make ownership uneconomic. State what evidence is needed before moving from a passive certificate position toward acquiring or controlling the property.",
-          "example": "A former dry-cleaning parcel supports a $9,000 tax claim but carries solvent-release indicators in state records. Acquisition could create exposure under 42 U.S.C. 9607. The operator declines the pilot purchase rather than treating the lien amount as the maximum possible loss; future ownership review would address 40 CFR Part 312."
+          "prompt": "Choose between a tax lien, a tax deed, and a redeemable deed for your first purchase. Describe what each model actually buys you, how often each converts to ownership, and which one fits your budget, patience, and appetite for work.",
+          "example": "Liens buy a claim plus interest and redeem about 95 percent of the time; redemption deeds redeem about 50 percent or less, so they convert to ownership far more often [Tax Sale Secrets — 0adTzNpuLtk @ 00:11:13]. Deeds pay more but mean possession right away [Tax Sale Academy — oKQjnGAQlGs @ 00:09:12]. Choice: liens first, deeds after learning."
         },
         {
-          "name": "Redemption evidence and duration thesis",
-          "type": "textarea",
-          "prompt": "Build a redemption thesis from observable county records rather than owner stereotypes or unsupported payment predictions. Separate historical cohort behavior from a promise about one parcel, and show how slower recovery changes available acquisition cash.",
-          "example": "A reviewed county sample contains 120 comparable certificates: 78 redeemed within twelve months, 24 during months thirteen through twenty-four, and 18 remained open at the cutoff. Those observations inform liquidity scenarios only. The $100,000 pilot remains fundable if its unredeemed balance persists for thirty months."
+          "name": "budget_path",
+          "type": "text",
+          "prompt": "Write your starting budget in dollars and match it to a path. Note which practitioner rule applies to that budget, whether over-the-counter deeds or small liens, and what you would need to add before the other path becomes realistic.",
+          "example": "Budget: $15,000. The split runs from Dustin Hahn pushing anyone under $20,000 toward over-the-counter deeds to Casey Deon steering tiny budgets into liens. Ted Thomas sets a $20,000 to $25,000 floor and says $500 is not enough [REtipster — jDYlxXpw-e4 @ 00:36:45]. Path: small liens while reserving two to five grand per file [Tax Sale Secrets — fIPCLCdZlAU @ 00:08:59]."
         },
         {
-          "name": "Concentration and correlated exposure limits",
+          "name": "penalty_vs_interest",
           "type": "textarea",
-          "prompt": "Set maximum exposure by parcel, owner group, county, property type, and hazard cluster. Include unsettled wins and required future advances when testing limits so simultaneous auctions cannot quietly exceed the approved capital or geographic risk budget.",
-          "example": "The $100,000 deployment budget permits at most $10,000 per parcel, $15,000 per related owner group, and $40,000 per county. A proposed $8,000 certificate fails because existing and unsettled exposure to the same owner already equals $11,000. Separate parcels do not reset the beneficial-owner concentration limit."
+          "prompt": "Compare a penalty-style return with an interest-style return on the same dollar amount. Show what each pays if the owner redeems after one month and after twelve months, and note which structure rewards fast redemptions more heavily.",
+          "example": "$1,500 at Georgia's flat 20 percent pays $300 whether redemption comes the next day or in month twelve [Cecil Jones — Yq9tyhYQJGY @ 00:03:41]. An 18 percent lien redeemed in month one nets only about 1.5 percent. That is why Cecil Jones prefers redeemable-deed states over interest-rate liens [Cecil Jones — Yq9tyhYQJGY @ 00:04:13]."
         },
         {
-          "name": "Bid ceiling and walk-away rationale",
+          "name": "cushion_and_all_in_number",
           "type": "textarea",
-          "prompt": "Translate the downside case into an auction instruction appropriate to the bidding mechanism. For interest bid-down auctions, state a minimum acceptable rate; for price auctions, state a maximum cash bid including reserves and expected execution costs.",
-          "example": "For a $10,000 Florida certificate, the desk will not bid below 8% because the approved nine-month illustration yields $600 gross interest before $100 of direct costs. For a Texas deed, a separate $24,000 maximum purchase bid leaves cash for recording, subsequent taxes, and the reviewed downside case."
+          "prompt": "Size the cushion between what the property is worth and what is owed, then run the all-in number. Add the purchase price and estimated attorney foreclosure cost, and confirm the total sits well under resale value for this parcel.",
+          "example": "Parcel worth roughly $60,000 with $2,000 owed: a big cushion, which is safety as a lien buyer and profit as a deed buyer [Lien Ledger — ul1onF24UbM @ 00:06:33]. All-in: $2,000 lien plus about $2,500 attorney foreclosure cost equals $4,500, well under resale. A landlocked lot would turn this negative [Tax Sale Academy — FgLt0Zd5dxo @ 00:04:14]."
         },
         {
-          "name": "Investment decision and evidence owner",
+          "name": "exit_and_deadline_log",
           "type": "textarea",
-          "prompt": "Record the final acquire, watch, or reject decision with dated evidence, unresolved conditions, and a named role responsible for clearing each condition. Preserve rejected opportunities so repeated auctions do not erase prior defect discoveries.",
-          "example": "FL-PILOT-022 enters the approved list at an 8% minimum bid rate after parcel identity, title exceptions, and settlement instructions are checked. The title contractor owns a final bankruptcy refresh before enforcement. FL-PILOT-017 remains rejected for access and description defects; a lower auction price does not remove those defects."
+          "prompt": "Before bidding, write the exit you would use if the certificate never redeems, and log every redemption and expiration date on the day you buy. Note the action deadline that, if missed, would cost you the right to collect.",
+          "example": "Exit: if no redemption, foreclose and sell using big ugly signs and Craigslist [Gerald Harris — nMj50Itu21Q @ 00:10:08]. No bid without looking at the parcel and holding an exit [Ted Thomas — JcAwqIfK0vo @ 00:12:26]. Calendar: Florida certificate expires if no deed application is filed within seven years [Lien Ledger — H9fPhqUYPfc @ 00:05:50]."
         }
       ],
-      "completion_gate": "Advance only when every approved parcel has a verified instrument type, authenticated settlement route, documented downside case, exposure-limit check, and signed bid instruction."
+      "completion_gate": "Do not register for any auction until all ten fields are complete, the all-in number sits well under resale value, every redemption and expiration date is logged, and an exit is written for each parcel you might bid on."
     },
     {
       "worksheet_id": "ws-02",
       "number": 2,
-      "title": "Unit Economics, Defect Reserve, and Working-Capital Float",
-      "purpose": "Convert auction terms into cash-flow arithmetic without counting returned capital as revenue. Reconcile the three canonical scenarios, distinguish reserve earmarks from actual losses, and determine whether operating cash can support delayed redemptions, required advances, and property-disposition costs.",
-      "chapter_ref": "Q3, Q4",
+      "title": "State Rulebook and Real Yield Calculator",
+      "purpose": "Replace the idea of a national playbook with your state's actual rulebook, then convert statutory ceilings into the yield the auction format will really pay, stress-testing low bids, premiums, and paperwork deadlines before you raise your hand.",
+      "chapter_ref": "Q3-Q4",
       "instructions": [
-        "Copy the canonical revenue, margin, profit, and team figures before adding any deal assumptions. Maintain a separate deployment schedule because an invested dollar returning to the bank is recovered capital, not newly earned operator revenue.",
-        "Calculate each certificate or deed using its own statutory mechanism. Document interest periods, redemption minimums, eligible penalty bases, and auction increments; do not convert a flat statutory penalty into annual interest or apply one state's formula elsewhere.",
-        "Build a cash waterfall showing purchase capital, fees, subsequent advances, redemption receipts, basis recovery, and earned amounts. Keep county collection charges separate from investor proceeds unless the actual settlement statement establishes that the investor receives them.",
-        "Create separate schedules for spendable operating cash, earmarked defect reserves, realized losses, and accounting adjustments. A reserve transfer does not automatically create an expense, while an actual impairment requires its own documented measurement and recognition decision.",
-        "Stress the portfolio for slower collections, unusable collateral, and higher enforcement costs. Reduce new bids before assuming additional capital will appear, then reconcile the revised cash balance to the bank and all unsettled auction commitments at least weekly."
+        "Pull the county's published terms and bidding rules first, and fill the rulebook field from those documents rather than from memory or general state summaries.",
+        "Write your walk-away rate in ink before the sale and do not edit it during the auction for any reason.",
+        "For every yield calculation, show both a fast-redemption case and a no-redemption case held at least two years.",
+        "Put every recording, notice, and foreclosure deadline on a calendar the same day you buy, since one day late has gotten entire foreclosures thrown out.",
+        "Sort the county list by face amount and review past auction results before deciding which property types to chase."
       ],
       "fields": [
         {
-          "name": "Canonical scenario reconciliation",
+          "name": "state_rulebook_essentials",
           "type": "textarea",
-          "prompt": "Record all three canonical annual cases with recognized revenue, net margin, owner net profit, and team capacity. Explain the base-case rounding convention and identify returned capital as an excluded amount rather than a fourth revenue component.",
-          "example": "Conservative: $15,000 revenue, 30% margin, $4,500 owner profit, 1 FT + 2 C. Base: $97,500 revenue, 42.5% margin, $41,438 rounded owner profit, 1 FT + 2 C. Scaled: $180,000 revenue, 55% margin, $99,000 owner profit, 2 FT + 3 C. Base arithmetic produces $41,437.50 before whole-dollar rounding."
+          "prompt": "List the four essentials for your target state: the interest rate, the bidding procedure, the redemption period, and the life of the lien. Mark any item you could not confirm from the county's own published terms.",
+          "example": "Arizona: 16 percent maximum, interest bid down with no penalty floor. TaxLienLady names the four essentials as interest rate, bidding procedure, redemption period, and life of the lien [TaxLienLady — 7ybooMbrE58 @ 00:07:10]. Unconfirmed: whether this county runs proxy or direct bidding, which changes what a lone low bid wins [Realauction — cleRXY7vybQ @ 00:02:43]."
         },
         {
-          "name": "Annual expense bridge and staffing interpretation",
-          "type": "textarea",
-          "prompt": "Reconcile annual operating and direct costs to each scenario's required total expense. Explain whether staffing counts describe working capacity or fully salaried positions, and avoid presenting owner profit as both wages and residual earnings.",
-          "example": "Conservative costs total $10,500: $6,000 recurring opex plus $4,500 direct costs and losses. Base costs total $56,062.50: $24,000 plus $32,062.50. Scaled costs total $81,000: $48,000 plus $33,000. These illustrative allocations reconcile the canon; team counts describe capacity, not a promise that these budgets fund market-rate employee salaries."
+          "name": "minimum_rate_walkaway",
+          "type": "text",
+          "prompt": "Write your minimum acceptable rate on the list before the auction opens. Note the exact number at which you will stop bidding, and describe the ego-driven moment you expect to feel when someone bids one notch below you.",
+          "example": "Minimum: 8.5 percent, written at the top of the list. The moment bidding hits 8.49 percent, I walk, following Bob Diamond's rule against ego-based auction fever [Bob Diamond - America's Tax Sale Attorney — B0WBR5swuac @ 00:05:05]. Expected trigger: watching a competitor win a clean single-family lien I had researched for a week."
         },
         {
-          "name": "Deployment cohorts and recognized revenue boundary",
+          "name": "neighborhood_redemption_variance",
           "type": "textarea",
-          "prompt": "Show how a completed collection cohort supports the annual revenue scenario. Separate recovered certificate principal or disposition basis from realized interest, penalties, and gains, and distinguish this arithmetic from a forecast of portfolio-wide yield.",
-          "example": "Illustrative completed cohorts recover $100,000, $650,000, and $1,200,000 of capital while earning $15,000, $97,500, and $180,000 respectively. Corresponding receipts are $115,000, $747,500, and $1,380,000. The 15% ratios describe these selected cohorts, not annualized returns on every outstanding asset or a single state's certificate rate."
+          "prompt": "Record the overall redemption rate for your county and any area-level difference you can find. Explain how a lower-redeeming neighborhood changes the odds that you end up owning the parcel, and whether you want that outcome.",
+          "example": "Cook County: 96 percent redeem overall, but about 70 percent on Chicago's south and west sides, where bidders are far more likely to end up owning [Bob Diamond - America's Tax Sale Attorney — B0WBR5swuac @ 00:03:17]. Decision: stay in high-redeeming areas for yield until an exit for owned parcels is proven."
         },
         {
-          "name": "Certificate bid-down and redemption calculation",
+          "name": "subsequent_tax_plan",
           "type": "textarea",
-          "prompt": "Calculate a certificate's gross earned amount under the actual bid rate and statutory period rules. Show the applicable redemption minimum separately, test a zero-rate bid, and subtract investor-paid costs before describing deal-level contribution.",
-          "example": "Using nine statutory months, a $10,000 Florida certificate bid at 8% earns $600. The 5% minimum would be $500, so $600 controls under this simplified fact pattern. At 6%, $450 becomes $500; a zero-rate certificate does not receive that minimum. Review Fla. Stat. 197.172 and 197.472(2)."
+          "prompt": "Describe how you will handle the following year's unpaid taxes on a lien you already hold. Note the rate subsequent taxes earn in your state, who else can buy them, and how that offsets a low first-year rate.",
+          "example": "Illinois plan: hold the first lien and pay each following year's unpaid taxes at 12 percent with no competing bidders, which can make up for a near-zero first-year rate [Bob Diamond - America's Tax Sale Attorney — bFO7QIn_w3U @ 00:02:28]. Budget an extra year of taxes per certificate so the 12 percent layer is funded on time."
         },
         {
-          "name": "Redeemable-deed penalty base and timing",
+          "name": "paperwork_deadlines",
           "type": "textarea",
-          "prompt": "Identify the deed's property classification, redemption period, eligible reimbursement components, and statutory premium. Calculate the amount from the qualified base rather than applying a headline percentage to unrelated legal expenses or an invented annual interest balance.",
-          "example": "For a qualifying Texas homestead redemption during the first year, assume a $24,000 purchase bid, $100 recording fee, and $900 of qualifying taxes paid. The $25,000 statutory aggregate produces a $6,250 premium at 25%, for $31,250 total redemption payment under Tex. Tax Code 34.21; the premium is not an APR."
+          "prompt": "List every recording and notice deadline that decides whether your lien holds in this state. Give the number of days or months, the office that receives the filing, and who will prepare and serve it on your behalf.",
+          "example": "New Jersey: record the tax certificate with the county clerk within 90 days to keep it valid [Tax Lien Bestie | Sabrina — G8iotxNSgRg @ 00:06:08]. Illinois: the 22-5 notice is due four months and 15 days from the sale, prepared and served by experienced tax sale counsel [Bob Diamond - America's Tax Sale Attorney — bFO7QIn_w3U @ 00:03:36]."
         },
         {
-          "name": "Deal cash waterfall and deployable balance",
-          "type": "textarea",
-          "prompt": "Prepare a complete before-and-after cash reconciliation for one purchase. Include direct costs and untouched reserve cash, then show exactly which receipt amount is principal recovery and which amount is earned contribution after those costs.",
-          "example": "Starting cash is $10,400. Pay $10,000 for the certificate and $100 in direct costs, leaving $300 reserved. Redemption returns $10,600: $10,000 principal plus $600 interest. Ending cash is $10,900; the $500 increase is contribution after costs. Keeping $300 reserved changes spendable cash, not the $500 result."
+          "name": "lien_position_check",
+          "type": "text",
+          "prompt": "Confirm that the certificate you plan to buy is the first-position, first-year lien that carries the right to foreclose. Note whether this county restricts foreclosure to second- or third-year holders, and how you verified it with the county.",
+          "example": "Verified first-position status, because that priority is what lets the holder foreclose [Dustin Hahn — rYcTmrny9JQ @ 00:04:41]. Confirmed this is the first-year lien, not a second or third, since a third-year buyer cannot foreclose [Dustin Hahn — tXVBp8vbkT4 @ 00:05:34]. Asked the county directly whether foreclosure is limited to later-year holders: it is not."
         },
         {
-          "name": "Scrub losses and defect reserve policy",
+          "name": "auction_format_identification",
           "type": "textarea",
-          "prompt": "Set a cash reserve using exposure and defect severity, then distinguish it from screening expense and realized capital loss. Explain when an adverse title finding causes rejection, a valuation review, or a documented charge to results.",
-          "example": "The base portfolio earmarks 3% of $650,000, or $19,500, within its existing $150,000 liquidity allocation. The earmark is not an added expense. Base direct costs include $18,000 contractor work, $9,600 title work, and $4,462.50 realized losses, totaling $32,062.50; losses require asset-specific recovery evidence."
+          "prompt": "Identify the auction format your county uses: interest bid-down, premium or overbid, ownership-interest bid-down, or a hybrid that flips from rate to premium. Explain what you are actually competing on and what fixed rate, if any, survives.",
+          "example": "New Jersey hybrid: liens go to whoever accepts the lowest rate, and once bidding passes 0 percent, to whoever pays the highest premium [Realauction — hKsLdKqVOE0 @ 00:01:12]. Large investors routinely bid it to 0 percent [Tax Lien School Highlights - Dustin Hahn — mHvzzGVcYdI @ 00:01:53]. I am competing on premium dollars, not rate."
         },
         {
-          "name": "Startup capital and operating runway",
+          "name": "sub_one_percent_stress_test",
           "type": "textarea",
-          "prompt": "Allocate initial capital between investments and liquid support without exceeding the canonical startup range. Test monthly opex against the stated range and identify which legal, tax, or contractor commitments will shorten the apparent cash runway.",
-          "example": "Illustrative startup allocations are $125,000 with $100,000 deployed, $800,000 with $650,000 deployed, and $1,500,000 with $1,200,000 deployed. Monthly recurring opex is $500, $2,000, and $4,000. All fit the canonical ranges. Liquid balances also fund direct costs and advances, so dividing cash only by monthly opex overstates usable runway."
+          "prompt": "Price any bid below 1 percent against a no-redemption scenario. Show the yield if the owner redeems quickly and the yield if the lien sits unredeemed for two years, then decide whether the quick-redemption payoff justifies the risk.",
+          "example": "Florida quarter-point fast-five: 0.25 percent wins, and the 5 percent penalty applies even on a next-day redemption [Tax Sale Resources — XbThUArmcIE @ 00:01:24]. Stress case: never redeemed and held two years, the return drops to about 2.5 percent a year [Tax Sale Resources — XbThUArmcIE @ 00:02:11]. Cap: no more than a small slice at quarter-point."
         },
         {
-          "name": "Delayed redemption and enforcement stress",
+          "name": "premium_overbid_math",
           "type": "textarea",
-          "prompt": "Model a collection delay using cash commitments rather than merely reducing an expected yield. Identify the reserve floor, extra carrying period, enforcement budget, and resulting reduction in new bids before assuming external funding will cover the shortfall.",
-          "example": "Base liquid cash is $150,000, including $19,500 earmarked for defects. A twelve-month delay consumes $24,000 recurring opex; planned enforcement requires another $30,000. After those commitments and the reserve floor, only $76,500 remains uncommitted before other direct costs. The desk cancels a proposed $90,000 auction allocation rather than borrowing implicitly."
+          "prompt": "If your state auctions a premium above face value, confirm whether the overbid is returned and whether it earns interest. Estimate how many months of interest must accrue to cover the premium, using the county's own redemption timing statistics.",
+          "example": "Called the county for stats on how long most liens take to redeem, as a starting number [Tax Sale Academy — cnd7EM15dyk @ 00:00:40]. Overpaying the face value without enough months of interest to cover the overbid loses money [Tax Sale Academy — 0I_mhnrF0So @ 00:02:27]. Colorado alternative: fixed payoff around 13 percent under premium bidding [Tax Sale Secrets — stFlmSmpP3Q @ 00:01:09]."
         },
         {
-          "name": "Disposition gain and owner-profit bridge",
+          "name": "where_the_crowd_is_not",
           "type": "textarea",
-          "prompt": "Calculate recognized disposition gain from net proceeds and documented carrying basis. Prevent selling costs from being deducted twice, and explain how deal-level results feed annual owner profit without treating the property's entire sale price as operator revenue.",
-          "example": "A property sells for $170,000 with $2,500 selling costs and $150,000 documented basis. Net proceeds of $167,500 recover $150,000 capital and produce $17,500 gain. Pairing that gain with $30,000 realized interest and $50,000 penalties reconciles base gross revenue to $97,500; do not deduct the $2,500 again."
+          "prompt": "Review the county's past auction results and its full lien list sorted by face amount. Identify the property types bid to near zero, the types clearing at double-digit rates, and any liens too large for most bidders to fund.",
+          "example": "Pattern checked: downtown condo liens bid near zero while single-family liens cleared double digits [Smart Capital — TL6AIsoe5m0 @ 00:14:44]. The Montezuma list opens with $25 liens, and the $900 to $128,000 liens start about 11 pages in [Tax Sale Secrets — stFlmSmpP3Q @ 00:04:24], including a $128,000 lien on a Best Western valued at 5.7 million [Tax Sale Secrets — stFlmSmpP3Q @ 00:10:01]."
         }
       ],
-      "completion_gate": "Advance only when all three canonical cases reconcile, base rounding is explicit, principal is excluded from revenue, and the stressed cash schedule funds every committed payment without double-counting reserves."
+      "completion_gate": "Bidding is cleared only when the walk-away rate is written, the auction format and proxy-or-direct rule are confirmed, the no-redemption yield is acceptable, the lien is verified as first position, and every paperwork deadline is calendared with an assigned preparer."
     },
     {
       "worksheet_id": "ws-03",
       "number": 3,
-      "title": "Execution, Asset Ledger, and Technical QA Pre-Flight",
-      "purpose": "Translate an approved bid into an auditable asset record from registration through final recovery. Establish transaction identifiers, document custody, deadline controls, bank reconciliation, and technical checks that prevent duplicate funding, missing certificates, misclassified receipts, and premature enforcement.",
-      "chapter_ref": "Q7, Q8",
+      "title": "Online Sale and Over-the-Counter Verification Checklist",
+      "purpose": "Walk a single parcel from the online sale list or the county's leftover list to a funded purchase, verifying identity by parcel ID, condition by current image, usability by access and utilities, and price against a written maximum and a proven exit.",
+      "chapter_ref": "Q5-Q6",
       "instructions": [
-        "Create a lifecycle record before registering a bid. Use explicit states for screened, approved, bid, won, funded, issued, redeemed, enforcement review, and closed, with a documented reason and responsible role for every transition.",
-        "Reconcile the auction award against the approved instruction before paying. Check parcel identity, certificate amount, rate, premium where relevant, deposit credit, and settlement cutoff; stop any payment whose economic terms differ from the authorized bid record.",
-        "Store certificate evidence, deed records, title searches, notices, and county statements under stable asset identifiers. Preserve original files and retrieval metadata so later corrections cannot silently replace the evidence supporting an earlier investment or statutory decision.",
-        "Separate asset accounting from operational alerts. An approaching deadline should create a review task, not an automatic filing or owner demand; each consequential action needs confirmed facts, current procedural requirements, and a documented authorized reviewer.",
-        "Run calculation, reconciliation, access-control, and recovery tests before live use. Use synthetic records for technical QA, then compare sample real assets against county evidence without assuming that a successful import proves the underlying records are correct."
+        "Work one parcel per copy of this checklist and attach the parcel ID to every page.",
+        "Verify on the property appraiser site and county records; never rely on a vendor listing photo, an undated image, or a street address alone.",
+        "Fund deposits early enough that they are received on time, and confirm the platform's payment rules before registration closes.",
+        "On over-the-counter lists, assume most parcels are rejects and record your reason for every rejection.",
+        "Stop after your first-buy cap and sell what you own before adding more parcels."
       ],
       "fields": [
         {
-          "name": "Lifecycle states and transition evidence",
-          "type": "textarea",
-          "prompt": "Define allowed asset states and the evidence required to move between them. Specify which transitions can be performed by an analyst and which require settlement, legal, or accounting review before the operational record changes.",
-          "example": "Asset FL-2027-022 moves from approved to won only after the county award matches its 8% instruction. Funded requires bank confirmation; issued requires certificate evidence. A calendar reminder may move the asset to enforcement review, but only documented legal review authorizes the next application or filing step."
+          "name": "platform_registration",
+          "type": "text",
+          "prompt": "Name the online platform your county uses and record its registration deadline, deposit size, deposit method, and final payment method. Note how many working days each payment method needs so no deposit arrives late on sale day.",
+          "example": "Florida county on RealAuction: free registration, roughly 10 percent deposit. Deposit goes in at the county counter by 4 pm the day prior; ACH is used only for the final payment, because ACH needs four working days [Loren Brown - The 5am Reinvention Project — gamhQuWz38o @ 00:06:56]. Deposits must be received on time, not just sent [Ted Thomas — sXKw09ndbYg @ 00:14:54]."
         },
         {
-          "name": "Stable identifiers and duplicate protection",
+          "name": "parcel_id_verification",
           "type": "textarea",
-          "prompt": "Design identifiers that distinguish the same parcel across tax years, auctions, certificates, and ownership interests. Explain how repeated downloads and payment retries will be recognized without merging separate assets or sending money twice to the seller.",
-          "example": "The ledger key combines state, county, instrument class, tax year, and county certificate number. Parcel identity remains a separate linked attribute. Two imported rows for certificate 2027-004812 trigger a duplicate exception; a 2028 certificate on the same parcel remains distinct. A settlement reference can attach to only one funded transaction."
+          "prompt": "Take the parcel ID from the sale list and click through to the property appraiser site. Record the usage and description shown there, and note any mismatch between the parcel ID, the street address, and the vendor's listing.",
+          "example": "Appraiser site lists usage as vacant residential, matching the description, so the vendor's listing photo and assessed value were ignored [The Jackie Jackson | Tax Deed & Real Estate Coach — Pz2ZCMuIox4 @ 00:12:04]. Matched by parcel ID, never by street address [Dustin Hahn — YVYW5E5cTUI @ 00:03:22]. No mismatch found, so the parcel moves to imagery checks."
         },
         {
-          "name": "Award verification and settlement worksheet",
+          "name": "current_image_check",
           "type": "textarea",
-          "prompt": "Reconcile the approved bid, official award, deposit, and remaining settlement amount. Capture payment deadlines with time zones and define the independent checks required before releasing funds or accepting a changed county instruction.",
-          "example": "Three awarded certificates total $27,500 and the county applies a $5,000 deposit, leaving $22,500 due. The reviewer confirms that each rate equals or exceeds its approved floor and that the deadline is 3:00 p.m. Eastern on the stated date. The bank instruction carries the county's verified settlement reference."
+          "prompt": "Document the most current image you have of the parcel, its date, and its source. If county or Street View images are stale, record who you will send for fresh photos, what it will cost, and when they will report back.",
+          "example": "Street View image is years old, and county shots run stale, so no bid without a current photo [Tax Sale Secrets — IMGzMnzQiZQ @ 01:29:27]. First pass on Google Earth, then a wegowlook.com visit for $20 to $50 in pictures, or a Craigslist gig driver for about $50 [Dustin Hahn — uiH28IFKgC4 @ 00:06:06]. Report due Thursday."
         },
         {
-          "name": "Asset subledger and document custody",
+          "name": "access_and_utilities_screen",
           "type": "textarea",
-          "prompt": "Specify the minimum fields needed to reconstruct ownership, carrying basis, statutory terms, and document history. Keep original evidence accessible while recording corrections as new versions rather than silently overwriting the record used to approve acquisition.",
-          "example": "Each record stores purchase amount, investor-paid fees, issued rate, instrument date, county identifier, recording reference, and source-document checksum. A corrected owner spelling creates version two while preserving version one. The deed image and certificate receipt are separate document types; possession of an auction screenshot alone does not establish issuance."
+          "prompt": "Screen the parcel for access, size, and utilities before paying anything. Note whether it is landlocked, where the nearest power and sewer connections are, and what it would cost to bring them to the lot, and whether that cost erases the deal.",
+          "example": "Not landlocked; landlocked lots are among the first eliminated because of the use factor, even when cheap [Tax Sale Secrets — RgLErVu5_Kk @ 00:29:54]. Power poles sit at the lot line. Saen Higgins once found power at the end of the street, costing $20,000 to bring to a $1,500 lot [Saen Higgins — nbHUraglUQo @ 00:07:11]. Sewer confirmed with the county."
         },
         {
-          "name": "Redemption receipt allocation",
+          "name": "max_bid_and_exit",
           "type": "textarea",
-          "prompt": "Define how county receipts are matched to assets and split between returned capital, earned amounts, and other adjustments. Include an exception route for bundled remittances, partial payments, or receipts that disagree with the county's detailed settlement record.",
-          "example": "A $31,800 remittance covers three assets: $30,000 principal and $1,800 interest according to the county statement. The ledger closes those certificate balances and records only $1,800 as revenue. An unmatched $40 bank difference stays in a reconciliation exception account pending evidence; it is not forced into interest income."
+          "prompt": "Fix your exit and your maximum bid before the auction opens. State whether you will quiet title or wholesale as-is, show the comparable sales behind your ceiling, and write the number you will not exceed online.",
+          "example": "Exit: as-is wholesale. CMA built from the cheapest comps; ceiling written at $4,000 before registration [Tax Sale Secrets — RgLErVu5_Kk @ 00:48:38]. Once the bottom line is set and research done, there is no getting emotionally involved [Tax Sale Secrets — AO4ZqaMio7s @ 00:27:24]. Expect losses: one Florida run lost seven or eight properties before winning one [Tax Sale Secrets — IMGzMnzQiZQ @ 01:30:17]."
         },
         {
-          "name": "Statutory calendar and deadline ownership",
-          "type": "textarea",
-          "prompt": "List the triggering event, source provision, calculated date, local procedural conditions, and reviewer for each deadline. Distinguish eligibility to begin a process from expiration, redemption cutoff, notice service, and the date a court may actually act.",
-          "example": "For Florida certificates, the calendar tracks the tax-deed application framework in Fla. Stat. 197.502 and the certificate-expiration rules in 197.482. The reviewer verifies the relevant April 1 reference and any exceptions. Alerts occur 180, 90, and 30 days before the reviewed deadline; none automatically files a tax-deed application."
+          "name": "diligence_timing",
+          "type": "text",
+          "prompt": "Set the calendar window for your heavy due diligence relative to the auction date. Note how many days before the sale you will finish research, and why that timing keeps the parcel likely to still be available.",
+          "example": "Heavy diligence runs one to two weeks before the auction, so the parcel is still likely to be available on sale day [Tax Sale Secrets — AO4ZqaMio7s @ 01:41:13]. Also watching for sales whose registration closes months in advance, which is very rare and thins the bidder pool [Tax Lien School Highlights - Dustin Hahn — M8AxkDXoffk @ 00:03:08]."
         },
         {
-          "name": "Interest engine and rounding tests",
+          "name": "find_leftover_list",
           "type": "textarea",
-          "prompt": "Describe test cases for statutory period counting, minimum returns, zero-rate purchases, money precision, and rounding. Identify the official record used to resolve disagreements rather than treating an internal spreadsheet as the final redemption payoff authority.",
-          "example": "Python decimal-based tests cover $10,000 at 8% for nine statutory months equaling $600, and 6% equaling $450 before the Florida minimum test. A zero-rate fixture expects zero certificate interest. Whole-dollar scenario presentation uses ROUND_HALF_UP so $41,437.50 displays as $41,438. Actual payoff differences require county statement review."
+          "prompt": "Ask the county what happens to properties that did not sell, and record the name the county uses for its leftover list. Note when the list posts, how it is delivered, and whether a paid or hidden version exists.",
+          "example": "County calls it the strike off list; other states use scavenger, lands available, forfeited lands, or repository. It posts about 30 days after the sale [Saen Higgins — G44d74hIS_0 @ 00:09:40]. A paid version costs 15 cents a page, roughly $30 total, the list nobody else bothers to buy [Dustin Hahn — YVYW5E5cTUI @ 00:16:14]."
         },
         {
-          "name": "Bank reconciliation and cash availability",
+          "name": "otc_screening_yield",
           "type": "textarea",
-          "prompt": "Reconcile bank cash to funded assets, unsettled commitments, operating payments, and reserve earmarks. Show which balance controls bidding and explain how pending deposits or unconfirmed redemption notices are excluded from immediately spendable cash.",
-          "example": "The bank holds $82,000. Subtract $22,500 unsettled awards, $12,000 scheduled operating and title payments, and a $19,500 reserve floor to obtain $28,000 available for additional commitments. A county email announcing a $15,000 redemption does not increase that amount until the funds settle and the asset allocation is verified."
+          "prompt": "Screen the full leftover list and record how many parcels you reviewed, how many looked decent, and how many looked great. Compare your hit rate to the practitioner benchmark and note the most common reason you rejected parcels.",
+          "example": "Reviewed 1,000 parcels: 96 decent, 4 great, close to the 100 decent and 5 great benchmark [Tax Sale Support — 5t3VbtPlElc @ 00:39:46]. Most common rejection: minimum bid that made no sense against value [Dustin Hahn — YVYW5E5cTUI @ 00:03:22]. Dustin Hahn concedes most of it will be crap [Dustin Hahn — uiH28IFKgC4 @ 00:03:46], so the screen did its job."
         },
         {
-          "name": "Exception escalation and payment suspension",
+          "name": "otc_price_and_clock",
           "type": "textarea",
-          "prompt": "Define severity levels for parcel mismatches, missing issuance evidence, rate discrepancies, suspected account substitution, and deadline errors. Assign a response time and a specific action that remains suspended until the responsible reviewer resolves the exception.",
-          "example": "A deed referencing a different legal description is a critical exception: suspend further advances and obtain county and title review immediately. A $12 rounding discrepancy is investigated within two business days. Both remain visible in the ledger; neither is cleared merely because a dashboard's overall asset count still matches."
+          "prompt": "Record the over-the-counter price as a share of value and the redemption clock that applies. Note whether the clock runs from the original auction date or your purchase date, and when the earliest foreclosure or deed action becomes possible.",
+          "example": "Maryland OTC lien paying 20 percent. The six-month redemption counts from the auction date, not the purchase date, so this one is foreclosable the day I buy [Tax Lien School Highlights - Dustin Hahn — Ayjol9fgpNg @ 00:02:15]. For OTC land, target 10 percent of value or less; students buy at 5 to 15 percent [Tax Sale Secrets — RgLErVu5_Kk @ 00:23:45]."
         },
         {
-          "name": "Pre-flight acceptance and recovery drill",
+          "name": "first_buy_cap_and_encumbrances",
           "type": "textarea",
-          "prompt": "Define the evidence proving that the operational system can reconstruct balances and deadlines after an error or outage. Include restore testing, limited access rights, sample document retrieval, and end-to-end reconciliation before the first live acquisition.",
-          "example": "The reviewer restores yesterday's encrypted SQLite backup into an isolated workspace and reproduces all 25 synthetic assets, their document references, and $250,000 aggregate principal. A read-only analyst cannot alter settlement instructions. Five sampled redemption fixtures reconcile exactly, and a missing source document blocks the associated state transition."
+          "prompt": "Set a hard cap on your first over-the-counter purchases and list the encumbrance checks each parcel must pass. Include IRS liens, buried tanks, municipal liens, and chain-of-title notice failures, and state when you will sell before buying more.",
+          "example": "Cap: one or two liens and one deed, sold before buying more, after a student stacked 40 unsold properties [Ted Thomas — XLUuBoGUOj8 @ 00:09:47]. Each parcel screened for IRS liens, buried gas tanks, and chain-of-title notification failures before money moves [Dustin Hahn — uiH28IFKgC4 @ 00:04:31]. Title search covers hidden and municipal liens too [Ted Thomas — 41UuQtBLiBo @ 00:03:04]."
         }
       ],
-      "completion_gate": "Advance only after award-to-bank reconciliation, document retrieval, duplicate detection, statutory-date review, calculation fixtures, and backup restoration pass with recorded results and assigned exception owners."
+      "completion_gate": "No money moves on this parcel until the parcel ID matches the appraiser record, a current image is in hand, access and utilities are confirmed, encumbrance checks are clear, the redemption clock is known, and the maximum bid and exit are written down."
     },
     {
       "worksheet_id": "ws-04",
       "number": 4,
-      "title": "Statutory, Licensing, Contract, and Outreach Audit",
-      "purpose": "Turn jurisdiction-specific rules into explicit operating requirements. Review bidder eligibility, rate limits, redemption rights, notice procedures, bankruptcy, servicemember protections, federal claims, and surplus handling before any enforcement activity, while keeping contracts and owner communications within the actual rights acquired.",
-      "chapter_ref": "Q5, Q9",
+      "title": "Pre-Bid Research Ledger and Foreclosure-to-Clean-Title Plan",
+      "purpose": "Turn every parcel on the county list into a verified, valued, and title-mapped file before a single dollar moves. Then carry the non-redeeming lien through foreclosure, notice, and title cure, with costs and timelines budgeted before the bid.",
+      "chapter_ref": "Q7-Q8",
       "instructions": [
-        "Build a jurisdiction matrix from current statutory text and official county procedures. Record effective dates and distinguish statewide rules from auction-specific practices, especially where registration, assignment, premiums, or redemption calculations differ between neighboring counties.",
-        "Map each contemplated enforcement step to its required notices, parties, waiting periods, and evidence. Treat returned mail, bankruptcy indicators, military-service questions, and federal claims as substantive review events rather than clerical obstacles to process completion.",
-        "Review surplus treatment after Tyler using the actual jurisdiction and procedure. Separate lien recovery from owner equity, and do not model all remaining property value as investor profit merely because an older tax-foreclosure practice allowed retention.",
-        "Check the activities performed by each participant rather than assuming an investment label resolves licensing questions. Direct purchases, third-party servicing, debt collection, brokerage, pooled offerings, and property management can create different requirements and contractual responsibilities.",
-        "Approve communication templates against the actual instrument rights and verified balances. Remove threats of immediate possession, misleading government affiliation, and unsupported payoff demands; retain delivery evidence and route disputed amounts to the authorized county or legal process."
+        "Work one parcel per copy of this worksheet and identify it by parcel or account number, never by street address, so every later step points at the same asset.",
+        "Treat research as elimination scaled to cost: a small lien earns a lighter pass, while a deed or a lien likely to end in ownership earns the full ledger.",
+        "Date every image, record, and phone call you rely on, because stale photos and undated county pictures are the most common reason a parcel is misjudged.",
+        "Fix your maximum bid only after the valuation, land screen, and lien search are complete, and write it down before the sale opens so it cannot drift upward.",
+        "Complete the foreclosure and title-cure fields before you buy, not after the redemption window closes, so counsel, notice, cost, and carry time are already planned."
       ],
       "fields": [
         {
-          "name": "Florida certificate rules and auction eligibility",
-          "type": "textarea",
-          "prompt": "Document bidder eligibility, interest ceiling, bid-down mechanics, payment rules, and redemption calculations for the selected Florida county. Identify which requirements arise from statute and which come from the county's current auction registration materials.",
-          "example": "The Florida checklist cites Fla. Stat. 197.172, 197.432, and 197.472 for interest and certificate sale or redemption rules. The statutory ceiling is 18%, not the investor's assured return. County materials supply registration and deposit instructions. The reviewer separately documents the 5% redemption minimum and its zero-rate exception."
+          "name": "parcel_id_gis_verification",
+          "type": "text",
+          "prompt": "Record the parcel number exactly as printed on the county list, then confirm its location inside the county GIS or parcel viewer. Note whether this county even runs a GIS, and log any mismatch between the parcel number and the situs address.",
+          "example": "Parcel 14-22-0318 located by account number in the county parcel viewer, not by the Google pin, following the rule to verify location by parcel number [Jason Porter — bnQAJL9-zo0 @ 00:00:17]. The county does run a GIS, which only about half of counties do [Tax Sale Academy — 2B3hCb362oA @ 00:04:44]. No address listed, so the account number was copied directly."
         },
         {
-          "name": "Arizona rate and foreclosure eligibility comparison",
+          "name": "structure_imagery_check",
           "type": "textarea",
-          "prompt": "Describe Arizona's certificate rate framework and the distinction between holding a certificate and becoming eligible to seek foreclosure. Record notice requirements separately so passage of time cannot be mistaken for automatic ownership or immediate possession.",
-          "example": "Arizona review cites A.R.S. 42-18053 and 42-18114 for the interest framework and bid-down sale, including the 16% ceiling. A.R.S. 42-18201 generally permits a foreclosure action after three years, subject to applicable requirements. The file separately checks 42-18202 notice obligations and current surplus procedures before authorizing litigation."
+          "prompt": "Describe how you confirmed the structure still stands using dated Street View and historical aerial imagery. Record the capture date of every image, flag anything older than a few years, and note signs of long vacancy, fire, or demolition.",
+          "example": "Street View on the target home is six years old, and Ted Thomas warns that photos five to ten years old are unreliable [Ted Thomas — a81g1szr71Y @ 00:02:30]. Historical aerials show the roof intact but an overgrown lot. Because a property vacant for 10 to 20 years means serious issues [Tax Sale Academy — yUKmyPRuIsY @ 00:01:24], a drive-by is scheduled before bidding."
         },
         {
-          "name": "Texas deed classification and redemption rights",
+          "name": "land_usability_screen",
           "type": "textarea",
-          "prompt": "Classify the Texas property and identify the redemption clock's trigger, eligible reimbursement items, and premium schedule. Explain why the shorter period for other property cannot be substituted for the homestead or agricultural rules.",
-          "example": "Tex. Tax Code 34.21 generally provides two years for qualifying homestead, agricultural-use property, and mineral interests, measured from deed recording. Other property generally has 180 days. The applicable premium is generally 25% during the first year and 50% during the second for the two-year category, not compounded annual interest."
+          "prompt": "Screen the land itself before valuing any structure. Record lot size in acres, flood exposure, buildability, road access, and HOA status, and state plainly whether the parcel clears the minimum-size rule or should be eliminated before more research time is spent.",
+          "example": "Lot measures 0.08 acre, below the rule to skip anything under 0.1 acre and to call the HOA before bidding [Tax Sale Secrets — GxMaS0YFT1Y @ 00:46:21]. A second candidate is landlocked, and landlocked parcels are among the first eliminated even when cheap because of the use factor [Tax Sale Secrets — RgLErVu5_Kk @ 00:29:54]. Both parcels are struck from the list."
         },
         {
-          "name": "Notice recipients and returned-mail response",
-          "type": "textarea",
-          "prompt": "Identify parties entitled to notice, address sources, service methods, and evidence retention. Describe the escalation when mail fails and explain why a mailing receipt alone may not establish that the constitutional notice obligation has been satisfied.",
-          "example": "The notice file applies Mennonite Board of Missions v. Adams, 462 U.S. 791 (1983), and Jones v. Flowers, 547 U.S. 220 (2006), alongside local procedure. Returned certified mail triggers review of additional reasonable steps when practicable. Staff retain address searches, returned envelopes, delivery records, and counsel's documented service analysis."
+          "name": "opening_bid_screen",
+          "type": "text",
+          "prompt": "Enter the opening bid, the assessed value, and the ratio between them as a percentage. State whether the parcel passes a first-pass screen before you spend time pulling comps, maps, and owner records on it.",
+          "example": "Opening bid $6,200 against an assessed value of $48,000, about 13 percent, inside the quick-glance screen of 10 to 15 percent of assessed value, up to 20 percent [onlinetaxsales — OU-LqZt4nCs @ 00:47:15]. Passes to full research. Address split on paste into Zillow, so it was re-entered by hand [onlinetaxsales — OU-LqZt4nCs @ 00:48:08]."
         },
         {
-          "name": "Post-Tyler equity and surplus treatment",
+          "name": "cma_valuation",
           "type": "textarea",
-          "prompt": "Explain how the planned procedure protects owner equity beyond the tax obligation. Identify the controlling local sale, valuation, or surplus process without assuming that one Supreme Court decision creates identical mechanics for every private certificate holder.",
-          "example": "Tyler v. Hennepin County, 598 U.S. 631 (2023), rejects governmental retention of value exceeding the tax debt under the facts addressed. A $120,000 sale against $20,000 reviewed claims therefore does not create $100,000 automatic investor gain. The file maps applicable local surplus procedures, including Tex. Tax Code 34.04 where relevant."
+          "prompt": "Build a comparative market analysis from the cheapest credible comps. Record square footage, comp prices, the resulting price per square foot, and your valuation range, keeping the estimate within plus or minus ten percent of what the property would realistically sell for.",
+          "example": "Subject is 1,800 square feet. The cheapest comps sold at $105,000 to $110,000, which works out to $55 to $62 per square foot, matching the worked example and its warning, 'Don't cheat yourself' [Tax Sale Secrets — GxMaS0YFT1Y @ 00:34:52]. Valuation range set at $99,000 to $111,600, with the low end used for the maximum bid."
         },
         {
-          "name": "Bankruptcy and servicemember protections",
+          "name": "government_lien_owner_search",
           "type": "textarea",
-          "prompt": "Specify searches and escalation steps for bankruptcy and military-service indicators before enforcement. Distinguish routine portfolio monitoring from an act against protected property or a request for default judgment, and require documented review of applicable exceptions.",
-          "example": "A PACER search reveals a pending Chapter 13 case associated with the record owner. The operator suspends contemplated enforcement for review under 11 U.S.C. 362 rather than assuming tax status defeats the stay. Counsel also checks 50 U.S.C. 3931 default-judgment protections and 3991 tax-related protections when relevant."
+          "prompt": "List every court and county record search run on the current owner's name, including government liens, municipal liens, and code violations. Note which liens would survive a sale and record the final re-confirmation that the parcel remains on the county list.",
+          "example": "Owner name run through court records the week of the sale, the parcel re-confirmed on the county list, and the maximum bid fixed [Tax Sale Secrets — GxMaS0YFT1Y @ 00:05:41]. One open code-violation file found; municipal liens and code violations survive to the new buyer [The Residential Buyer — 2S4mkxCrOhM @ 00:03:06]. Counties never refund, so the file is flagged."
         },
         {
-          "name": "Federal claims and surviving redemption rights",
-          "type": "textarea",
-          "prompt": "Identify recorded federal claims and determine whether the planned process requires federal notice, joinder, or additional redemption tracking. Avoid assuming that local tax priority alone eliminates every federal interest or permits immediate resale with clear title.",
-          "example": "A recorded federal tax lien triggers review of 26 U.S.C. 7425 before a nonjudicial sale. The file examines applicable notice requirements, including the statutory 25-day notice timing where required. If discharged through the relevant sale process, federal redemption can extend 120 days or the longer applicable local period under 7425(d)."
+          "name": "lien_priority_foreclosure_right",
+          "type": "text",
+          "prompt": "Confirm the certificate is the first-year lien that carries the right to foreclose, not a second- or third-year lien. Record the redemption expiration date and the earliest date you can file, and note whether it came from county inventory.",
+          "example": "Certificate verified as the first-year lien; Dustin Hahn warns that a third-year buyer cannot foreclose [Dustin Hahn — tXVBp8vbkT4 @ 00:05:34]. Bought from county inventory already past redemption, so foreclosure can start immediately, which Saen Higgins likens to taking 20 shots on goal now instead of waiting two years [Saen Higgins — EXkUbWWenl0 @ 00:08:53]. Filing opens this month."
         },
         {
-          "name": "Activity-specific licensing and capital sourcing",
+          "name": "defendant_net_chain_of_title",
           "type": "textarea",
-          "prompt": "Describe who supplies capital and which services each entity performs. Review licensing and offering requirements separately for own-account investing, outside capital, collection services, brokerage, and property management instead of using a single blanket classification.",
-          "example": "The pilot uses only the owner's $125,000 and does not solicit passive investors. A future pooled vehicle requires a separate Securities Act registration or exemption analysis, including 15 U.S.C. 77e. Outsourced collection activity receives its own state-law and 15 U.S.C. 1692a coverage review rather than inheriting the investor's operating assumptions."
+          "prompt": "Build the full chain of title and list every undischarged interest holder who must be named and served, including mortgage lenders, junior lienholders, heirs, and trustees. Record the service method and date for each party so no claimant is missed.",
+          "example": "Chain of title shows the record owner, a first mortgage, a home-equity lender, and one judgment creditor, each named and served by certified mail. One missed claimant forces the whole suit to restart just to remove that interest [Quiet Title Michigan — kJRxvYeK_eU @ 00:03:19]. Once foreclosed, the lienholder holds the county's strength to extinguish encumbrances [Saen Higgins — EXkUbWWenl0 @ 00:06:28]."
         },
         {
-          "name": "Assignments, servicing contracts, and custody terms",
+          "name": "title_cure_path_and_budget",
           "type": "textarea",
-          "prompt": "Specify how an assignment becomes effective, who holds original evidence, who receives redemption funds, and how errors are resolved. Tie contract language to county recognition and the actual instrument rather than treating a generic transfer form as sufficient.",
-          "example": "The servicing agreement states: 'Servicer may monitor county records and reconcile receipts but may not settle claims or initiate enforcement without written authority.' A $10,000 certificate assignment closes only after required county recognition is documented. Redemption routing, document return, error correction, and termination assistance receive separate clauses."
+          "prompt": "Choose between a suit to quiet title and a tax foreclosure certification, and explain why. Record the quoted fee, expected timeline, counsel name, and whether an entity owner rules out filing pro se before any rehab or resale is scheduled.",
+          "example": "Certification quoted at $1,950 to $3,000 with a three-to-six-week turn [Tax Sale Academy — 7BP12s9Jn2c @ 00:15:10], versus a suit to quiet title planned at $3,000 to $5,000 over three to six months [Ted Thomas — MzL0xEaYnUI @ 00:01:31]. The parcel sits in an LLC, so pro se filing is off the table [Tax Sale Academy — vMMozg0xaSA @ 00:02:46]."
         },
         {
-          "name": "Owner outreach and payoff accuracy",
+          "name": "carry_cost_stress_test",
           "type": "textarea",
-          "prompt": "Draft an owner-contact standard covering identity, purpose, verified balances, disputes, and communication records. State which claims and collection methods are prohibited because they exceed the investor's rights or misrepresent the county's role.",
-          "example": "The approved message identifies the private certificate holder and directs the owner to the county's official redemption channel. It does not demand payment to an unverified account or threaten immediate eviction. A disputed $600 interest amount is checked against the county payoff statement before any further balance representation."
+          "prompt": "Stress-test the hold from foreclosure judgment to clean title. List monthly taxes, heat, snow removal, security, insurance, and attorney fees across a long hold, then confirm the resale margin survives a timeline far longer than the attorney's first estimate.",
+          "example": "Underwriting assumes a 13-month hold, mirroring the quiet title that took 13 months of diligent work before the judge would issue it [Ted Thomas — O8MWhOJE6Oc @ 00:07:42]. Taxes, heat, snow removal, and security are carried every month because buyers cannot get a mortgage until title clears [Ted Thomas — O8MWhOJE6Oc @ 00:08:01]. Margin still clears after the full hold."
         }
       ],
-      "completion_gate": "Advance only when current jurisdiction rules, notice requirements, protected-party checks, federal claims, surplus treatment, activity-specific permissions, and communication templates have documented reviewers and no unresolved execution-blocking issue."
+      "completion_gate": "Do not bid until the parcel is matched by number in the GIS, the structure is confirmed on dated imagery, the land passes the size and access screen, a CMA-based maximum is written down, and the first-year lien status, defendant list, title-cure path, and 13-month carry budget are all recorded."
     },
     {
       "worksheet_id": "ws-05",
       "number": 5,
-      "title": "Automation, Opportunity Pipeline, and Risk Fallback",
-      "purpose": "Automate repeatable screening and redemption monitoring without automating unsupported legal conclusions or irreversible payments. Build an evidence-preserving opportunity pipeline, measure screening precision, and establish manual fallbacks for changed county formats, stale records, duplicate assets, and interrupted data access.",
-      "chapter_ref": "Q6, Q10",
+      "title": "Title Trap Audit and Federal Lien Redemption Defense",
+      "purpose": "Expose the hidden liabilities that turn a cheap parcel into a loss, from burned structures and unrecorded municipal fines to supplemental taxes and HOA claims, then protect any foreclosure purchase against the federal right of redemption that can follow a property past the auction.",
+      "chapter_ref": "Q9-Q10",
       "instructions": [
-        "Inventory official data sources and their permitted access methods before writing import routines. Prefer published downloads or authorized interfaces, record refresh cadence, and avoid assuming that public visibility permits unrestricted automated collection or redistribution of every field.",
-        "Separate source capture, normalization, scoring, human review, and execution into distinct steps. Preserve original rows and transformation versions so a changed parcel format cannot silently alter the asset identity or approved bidding instruction.",
-        "Automate deterministic checks first: duplicate detection, missing identifiers, exposure limits, deadline reminders, and receipt matching. Route ownership ambiguities, title conclusions, bankruptcy questions, and statutory interpretation to qualified reviewers instead of giving a screening score decision authority.",
-        "Develop growth through additional official auction coverage and carefully qualified professional relationships. Measure approved opportunities per review hour rather than owner-contact volume, and expand only when reserve capacity and documented reviewer throughput support the larger pipeline.",
-        "Test failures deliberately using synthetic input files and disconnected integrations. Define when automation stops, who switches to manual county verification, and how restored processing avoids duplicate alerts, duplicate ledger entries, or conflicting versions of the same record."
+        "Get physical eyes on the property through your own visit or a hired local, because satellite imagery misses fires, floods, and demolitions that change the entire deal.",
+        "Pull a title report before bidding and follow it with a human search of municipal and utility departments, since a large share of title problems never reach the record.",
+        "Write down the strongest argument against the purchase and name the one condition that must hold for you to proceed; if that condition fails, drop the parcel.",
+        "When a federal tax lien appears, verify pre-sale notice to the IRS, mark the sale date as day zero, and freeze every cosmetic dollar until the window closes.",
+        "Keep every preservation receipt organized from day one, and calendar each IRS letter deadline and county release confirmation the moment the related document arrives."
       ],
       "fields": [
         {
-          "name": "Source inventory and permitted collection",
+          "name": "physical_inspection_record",
           "type": "textarea",
-          "prompt": "List each official auction, assessor, recorder, and redemption source with access method, refresh schedule, permitted use, and responsible role. Explain how unavailable or restricted access changes the workflow without bypassing source controls.",
-          "example": "County A publishes a weekly auction CSV, County B offers a manual redemption search, and the recorder charges $1 per document image. The analyst downloads permitted files and logs retrieval dates. County B remains a manual task until an authorized interface is available; no login or access restriction is circumvented."
+          "prompt": "Record who physically viewed the property, when, and what they saw. Note any fire damage, flood damage, demolition, environmental hazards such as underground tanks, or conditions that satellite imagery could have missed, and attach the dated photographs.",
+          "example": "A local driver photographed the house on Tuesday and found the rear half burned out, damage Google Earth never showed; a burned-down house has sold four times at auction [Dustin Hahn — vA4ImBMyenY @ 00:06:09]. The neighboring lot is a former gas station, and environmental sites are avoided outright [Dustin Hahn — vA4ImBMyenY @ 00:02:08]. Both parcels dropped."
         },
         {
-          "name": "Normalization schema and source lineage",
-          "type": "textarea",
-          "prompt": "Define normalized columns, currency precision, date formats, and source references. Preserve raw values beside interpreted values so reviewers can trace every screening result back to the county record that produced it.",
-          "example": "A Python csv import writes county_id, tax_year, parcel_id, instrument_id, face_amount, source_date, and source_hash into SQLite. Currency uses decimal arithmetic. The raw parcel value '001-024-009' retains its leading zeros even if a separate search key removes punctuation. Every derived record links to its original input row."
+          "name": "title_report_pull",
+          "type": "text",
+          "prompt": "Record the title report order date, cost per report, and every IRS or government lien it revealed. Size each lien against the property value and state whether the parcel stays on the bid list or is removed.",
+          "example": "Title reports pulled at $20 to $30 each, roughly $2,000 to $3,000 across 100 deeds, with IRS and government liens flagged and sized against value [Dustin Hahn — vA4ImBMyenY @ 00:07:24]. This parcel shows a federal tax lien near half its value, so it moves to the IRS redemption fields below before any bid is allowed."
         },
         {
-          "name": "Screening rules and rejection explanations",
+          "name": "unrecorded_municipal_lien_search",
           "type": "textarea",
-          "prompt": "Specify deterministic exclusion rules and explainable ranking factors. Record which findings require human review rather than automatic rejection, and keep the reason attached to the asset so future imports preserve the decision history.",
-          "example": "The first pass rejects missing legal descriptions and bids above the parcel limit, while flagging industrial-use indicators for specialist review. Of 500 rows, 320 fail explicit mandate rules, 140 need additional evidence, and 40 enter detailed underwriting. The score never labels a parcel clear-title merely because no lien appears in one download."
+          "prompt": "Document the human search for unrecorded municipal, utility, and code-enforcement liens that a recorded title report would miss. List each department contacted, the daily fine rate on open violations, and the running balance projected through your expected closing date.",
+          "example": "Building and water departments called directly, since a quarter of title issues trace to unrecorded municipal liens and Arizona code fines can run $100 per day [Alex Goldovsky — O6HhpnnQADM @ 00:16:00]. One open permit violation found, accruing daily. Silence is what turns a small problem into a large one [HOA Insights — YD_WDRyFt4Q @ 00:05:53], so the fine is priced in."
         },
         {
-          "name": "Redemption monitoring and event verification",
+          "name": "hoa_and_supplemental_tax_check",
           "type": "textarea",
-          "prompt": "Describe how redemption events are detected, verified, matched to cash, and closed. Define the distinction between a changed county status, a confirmed payoff statement, and an actual bank receipt before automating any accounting entry.",
-          "example": "A daily comparison flags FL-2027-022 as redeemed and opens a reconciliation task. The operator retrieves the county detail showing $10,000 principal and $600 interest, then matches the $10,600 settled deposit. Only after both checks does the asset close; the initial status change alone creates no cash balance or realized revenue."
+          "prompt": "List any HOA dues, HOA liens, supplemental tax bills, and subsequent-year taxes attached to the parcel. Record who is responsible for each, the payment deadline, and how paying subsequent taxes changes the capital required to keep the position.",
+          "example": "A supplemental tax bill arrived after the sale and is logged as the buyer's burden: 'If you don't pay the supplemental, that's your fault' [Premier Wealth Builders — AYiTxfuCWHk @ 00:01:36]. Next year's taxes are reserved too, since new liens take over old liens and subsequent liens require more capital [Rent To Retirement — iOoZ743spRo @ 00:02:02]. HOA statement requested."
         },
         {
-          "name": "Professional outreach and auction coverage",
+          "name": "four_essentials_and_odds",
           "type": "textarea",
-          "prompt": "Identify lawful growth channels that improve evidence quality or auction access rather than pressuring property owners. Set measurable relationship and coverage targets while excluding referral payments or special access arrangements that have not been reviewed.",
-          "example": "During the first month, the operator requests published auction calendars from four counties, interviews two title contractors, and obtains one fixed-scope local counsel proposal. The target is twenty fully evidenced candidates, not two hundred owner solicitations. Public staff receive no payment for preferential information or queue placement."
+          "prompt": "Write down the four essentials for this county: interest rate, bidding procedure, redemption period, and life of the lien. Then estimate how many liens you would need to buy to land one property, given realistic redemption rates.",
+          "example": "Interest rate, bidding procedure, redemption period, and life of the lien recorded for the county, the four essentials named by TaxLienLady [TaxLienLady — 7ybooMbrE58 @ 00:07:10]. With about 95 percent of liens redeeming and the bank the biggest redeemer [Dustin Hahn — iCR-rdsQrUg @ 00:02:31], $50,000 spread across 100 liens is modeled to produce about 5 properties."
         },
         {
-          "name": "Review productivity and screening precision",
+          "name": "skeptic_counterweight",
           "type": "textarea",
-          "prompt": "Measure throughput using completed evidence checks and approved opportunities rather than raw import volume. Define false positives, reviewer hours, and retained decision quality so automation gains cannot hide increased defect rates or skipped title review.",
-          "example": "Forty automated candidates consume twenty reviewer hours and produce twelve approved bids, or 0.6 approved opportunities per hour. Eight candidates contained parcel-identity errors, yielding a 20% identity-defect rate within the reviewed set. The next iteration improves identifier checks before increasing county coverage or the acquisition budget."
+          "prompt": "Write the strongest case against this purchase. Record the skeptical view you take most seriously, the specific failure it predicts for this parcel, and the single condition that would have to be true for you to proceed anyway.",
+          "example": "Counterweight: a host who has owned about 2,000 properties bought two of these and called it 'a freaking nightmare, never again' [The Ramsey Show Highlights — KytTy1-RC5I @ 00:05:35]. Predicted failure here is a contested title costing far more than budget. Proceed only if quiet title stays uncontested, near a grand or two rather than $100K+ disputed [Jose Luiz Morales — B0yvMIdmaaQ @ 00:23:16]."
         },
         {
-          "name": "Data minimization and access separation",
-          "type": "textarea",
-          "prompt": "Specify the information necessary for underwriting and statutory execution, who can access it, and which fields should remain outside marketing exports. Separate payment authority from research permissions and document retention according to operational need.",
-          "example": "Analysts can view parcel records and title evidence but cannot edit bank beneficiaries. The settlement reviewer receives payment access separately. Owner mailing addresses stay within the asset file and authorized notice workflow; they are excluded from relationship-marketing exports. Access is reviewed monthly and revoked when a contractor's engagement ends."
+          "name": "irs_presale_notice_check",
+          "type": "text",
+          "prompt": "Confirm the foreclosing party sent written notice to the IRS at least 25 days before the sale, and that the case went to an actual sale rather than a deed in lieu. Record the notice date and its proof.",
+          "example": "Notice to the IRS confirmed 31 days before the sale, clearing the 25-day pre-sale requirement [Global Estate Hub LLC — q4Kqh7Vleyg @ 00:06:35]. The case went to an actual sale, not a deed in lieu [LCO Law LLC | Estate Planning & Real Estate Law — GoBskUnMJ5k @ 00:01:19]. The federal lien is discharged, and the redemption clock starts on sale day."
         },
         {
-          "name": "Fallback for stale or changed county data",
-          "type": "textarea",
-          "prompt": "Define freshness thresholds, schema-change detection, manual verification steps, and bidding restrictions during data failure. Explain how the team will distinguish a genuinely empty auction list from an unsuccessful download or broken import.",
-          "example": "An auction file older than seven days receives a stale-data flag. If the certificate-number column disappears, import stops and preserves the prior dataset. The analyst checks the official portal manually before any bid. A zero-row response is treated as a retrieval exception until the county confirms there are no offerings."
+          "name": "redemption_window_calendar",
+          "type": "text",
+          "prompt": "Enter the sale date as day zero, the 120-day IRS redemption deadline, and any longer state-law period that applies. List the cosmetic spending you will freeze until that window fully closes or a redemption waiver issues.",
+          "example": "Sale date logged as day zero; the IRS has exactly 120 days to decide whether to redeem [Global Estate Hub LLC — q4Kqh7Vleyg @ 00:03:17]. Cabinets, granite, and hardwood floors are frozen, because a redemption wipes out every cent spent on upgrades [Global Estate Hub LLC — q4Kqh7Vleyg @ 00:05:23]. Thin equity here, so a redemption waiver request is filed."
         },
         {
-          "name": "Monitoring thresholds and response ownership",
+          "name": "preservation_receipts_ledger",
           "type": "textarea",
-          "prompt": "Set actionable thresholds for unmatched receipts, missed refreshes, upcoming deadlines, and concentration breaches. Assign each alert to a specific role with a response period and the exact activity that stops while the issue remains open.",
-          "example": "Any settlement-account change requires immediate payment suspension. Unmatched receipts older than two business days go to the ledger owner. A statutory deadline inside ninety days requires legal review scheduling. County exposure above $40,000 blocks additional pilot bids until commitments are reduced or the owner explicitly revises the documented limit."
+          "prompt": "Log every preservation expense that would be reimbursed if the IRS redeems, such as insurance, locks, superior-position property taxes, and roof repairs. Record the date, amount, and receipt location so the full claim can ship within fifteen days.",
+          "example": "Paid delinquent prior-year property taxes and a roof patch, both preserving the asset and outranking the IRS [LCO Law LLC | Estate Planning & Real Estate Law — GoBskUnMJ5k @ 00:02:37]. Reimbursement on redemption would be the bid plus 6 percent annual interest plus qualifying expenses [LCO Law LLC | Estate Planning & Real Estate Law — GoBskUnMJ5k @ 00:01:38]."
         },
         {
-          "name": "Automation expansion decision and rollback",
+          "name": "irs_letter_and_release_followup",
           "type": "textarea",
-          "prompt": "Define the evidence required to expand automation into another county or workflow. Include parallel manual checks, error tolerance, version control, and a rollback plan that preserves asset history without repeating payments or statutory communications.",
-          "example": "The new county adapter runs beside manual review for four weekly cycles. All asset identifiers and money fields must match source documents exactly. One misassigned certificate blocks production use. Rollback restores the prior parser version and reprocesses source files idempotently; payment and notice systems remain outside the adapter's authority."
+          "prompt": "Record the date any IRS redemption letter or Letter 3172 arrives, the response deadline you calculated, the mailing date and proof of mailing, and confirmation that any Certificate of Release actually posted with the county recorder.",
+          "example": "IRS redemption letter logged on arrival, and the 15-day deadline for receipts and senior-lien release proof calendared immediately [LCO Law LLC | Estate Planning & Real Estate Law — GoBskUnMJ5k @ 00:03:16]. After a payoff on a prior file, the recorder was checked directly, because nobody calls to say the release posted [Clarity Tax Relief — oPKD4zP1XUQ @ 00:07:18]."
         }
       ],
-      "completion_gate": "Expand only after source permissions, lineage, screening precision, redemption verification, alert ownership, manual fallback, and rollback tests are documented and no automation can independently release funds or initiate enforcement."
+      "completion_gate": "Do not bid or begin any rehab until the property has been physically viewed, the title report and municipal search are sized against value, supplemental and HOA charges are reserved, the skeptic condition is met, and any federal lien has a verified IRS notice, a day-zero calendar, and a receipts ledger."
     },
     {
       "worksheet_id": "ws-06",
       "number": 6,
-      "title": "30-Day Launch, Pod KPI Scorecard, and Exit Readiness",
-      "purpose": "Use the first thirty days to establish investable readiness rather than manufacture premature returns. Assign pod responsibilities, reconcile canonical economics, measure capital and evidence quality, and preserve transferable records for a controlled portfolio sale, assignment, or orderly wind-down.",
-      "chapter_ref": "Q11, Q12",
+      "title": "Legal Exposure Check and Funding-to-Scale Blueprint",
+      "purpose": "Shield each certificate from surplus-equity claims, defective notice, uncertain deed issuance, and bankruptcy stays, then design the capital stack, retirement-account plumbing, entity wrappers, and exit channels that let a lien book grow without one missed deadline erasing a year of returns.",
+      "chapter_ref": "Q11-Q12",
       "instructions": [
-        "Plan four weekly milestones that produce verifiable artifacts: jurisdiction rules, qualified candidates, tested records, and a funded operating plan. Preserve the canonical 6–36 month first-deal window; a thirty-day setup sprint does not imply a realized return within thirty days.",
-        "Assign a single accountable role to each acquisition, settlement, ledger, and statutory task. Use contractors for scoped specialist work, but keep investment authority and bank permissions explicit so a small pod does not rely on informal delegation.",
-        "Track leading indicators separately from earned results. Evidence completion, review throughput, liquidity coverage, and deadline health support readiness, while realized interest, penalties, disposition gains, and owner profit determine actual economic performance.",
-        "Review the scorecard weekly against canonical scenario definitions and current cash commitments. Explain deviations using cohort timing and documented costs instead of changing the revenue definition or counting unredeemed principal as new earnings.",
-        "Prepare transfer and wind-down records from the first acquisition. Maintain instrument evidence, assignment restrictions, basis history, open notices, and service responsibilities so another operator can underwrite the portfolio without relying on the founder's memory."
+        "Measure the equity above the taxes owed on every parcel, because surplus rulings now shape how certificates are challenged, compensated, and reviewed by the court.",
+        "Get the county's deed-issuance practice in writing and document every notice step to every interest holder, since a verbal answer or a missed trustee can unwind the deal.",
+        "Check for an owner bankruptcy filing right up to the minute of sale, and keep redemption proof ticklers running long after each payoff closes.",
+        "Size your bankroll honestly against institutional competition, then route retirement money, entities, and borrowed funds through structures set up well before sale season.",
+        "Prove your exit channel before you buy in high-foreclosure states, lock the maximum bid to that exit, and hand every foreclosure to a tax attorney."
       ],
       "fields": [
         {
-          "name": "Days 1–7 jurisdiction and capital setup",
+          "name": "surplus_equity_exposure",
           "type": "textarea",
-          "prompt": "Specify the first week's concrete deliverables for jurisdiction selection, capital allocation, official source collection, and specialist engagement. State what remains deliberately unfunded until the evidence and execution systems are ready for a live purchase.",
-          "example": "By day seven, the operator has a Florida rules matrix, a Texas comparison memo, two contractor scopes, and $125,000 allocated as $100,000 potential deployment plus $25,000 liquid support. No auction payment is authorized yet. The bank verification checklist and written parcel limits are completed before bidder registration is activated."
+          "prompt": "Estimate the equity sitting above the taxes owed on this parcel and describe how a post-Tyler surplus claim could affect your position. Record the assessed value, amount owed, and expected sale price, and note whether the court form asks about equity.",
+          "example": "Benchmark: in Tyler, a $40,000 sale on roughly $15,000 owed left Hennepin keeping about $25,000 [The Deed | Real Estate — sb6T0Xe5siY @ 00:01:27]. This parcel shows heavy equity over a small tax debt, and the court application form now asks whether there is equity in the property [The Devine Law Group — qAoyeFTuxms @ 00:15:05], so counsel reviews before purchase."
         },
         {
-          "name": "Days 8–14 candidate underwriting sprint",
-          "type": "textarea",
-          "prompt": "Define the second week's screening volume, evidence standards, reviewer assignments, and rejection record. Show how the team will produce a smaller qualified list rather than treating every imported auction row as an investable opportunity.",
-          "example": "The analyst screens 200 official auction rows, advances twenty to parcel review, and commissions title work on six. Three pass the mandate; two fail access review and one has unresolved federal-claim issues. The three approved files include legal descriptions, downside cases, bid floors, and identified evidence owners before any capital commitment."
+          "name": "deed_issuance_confirmation",
+          "type": "text",
+          "prompt": "Confirm in writing how this county actually handles deed issuance after the redemption period expires. Record the official contacted, the written answer received, and your fallback remedy if the county refuses or stalls on issuing the deed.",
+          "example": "Nebraska county treasurer emailed a written answer, because a verbal answer from a clerk is not proof [The Deed | Real Estate — sb6T0Xe5siY @ 00:06:20]. Counties there are split between issuing deeds, requiring foreclosure, and staying undecided, so the fallback is a mandamus action or judicial foreclosure followed by suing the county [Tax Sale Resources — d67aVfAEUxg @ 00:25:05]."
         },
         {
-          "name": "Days 15–21 execution rehearsal",
+          "name": "notice_audit",
           "type": "textarea",
-          "prompt": "Describe the rehearsal that tests acquisition, settlement, custody, redemption, and exception handling without sending money. Include a deliberately incorrect input and explain what the system must prevent before the rehearsal can be considered successful.",
-          "example": "The pod rehearses a $10,000 certificate at 8%, nine statutory months, and $600 interest. A duplicate award, a changed beneficiary, and a mismatched parcel are inserted deliberately. The system rejects duplicate funding, suspends the beneficiary change, and blocks issuance until parcel evidence matches. The mock redemption reconciles without counting principal as revenue."
+          "prompt": "Audit notice to every interest holder, including trustees, heirs, and lenders. For each, record the certified mail result, any returned envelopes, and the additional reasonable steps taken afterward, so a defective-notice appeal cannot unwind your deed later.",
+          "example": "Certified mail to the trustee came back unclaimed, so a posted notice and a second address were documented as additional reasonable steps [Florida Trust, Real Estate, Probate, & Foreclosure — RlQwxNYiqok @ 00:15:33]. Every notice is dated with proof of delivery, since one or two misses can derail a full year's returns [Kevin Bupp - Cash Flow Investor — UyiZp8ocowM @ 00:39:08]."
         },
         {
-          "name": "Days 22–30 readiness and acquisition decision",
-          "type": "textarea",
-          "prompt": "Define the final week's decision artifacts, remaining blockers, and authority to proceed or wait. Separate completion of operational setup from actual deal timing, auction availability, redemption, and recognition of earned investment revenue.",
-          "example": "By day thirty, three candidate files, a tested ledger, a verified settlement route, and a thirty-month liquidity stress are ready. The next suitable auction is still months away, so capital remains liquid. The launch milestone is readiness; the canonical first-deal window remains 6–36 months and no revenue is booked."
+          "name": "bankruptcy_stay_check",
+          "type": "text",
+          "prompt": "Record the time you last checked for a bankruptcy filing by the owner before the sale, the case number if one exists, and the steps you will take to halt collection activity if a filing appears.",
+          "example": "Bankruptcy search rerun at 9:55 a.m. for a 10:00 a.m. auction, because a 9:48 a.m. filing halts the sale and voids it [Behind The Servicing — au90-c2Pwvo @ 00:00:17]. Bankruptcy freezes the sale but never erases property taxes. If a filing appears, the case number is kept on hand for every caller [Bankruptcy Explained — m1B_j8n-b9E @ 00:02:11]."
         },
         {
-          "name": "Pod responsibilities and staffing economics",
-          "type": "textarea",
-          "prompt": "Assign operating roles for the conservative, base, and scaled configurations. Explain how contractor scopes and working capacity fit the expense bridge, and identify any hiring decision that requires a separate wage-budget test before expansion.",
-          "example": "Conservative and base use 1 FT + 2 C: an owner-operator, a title specialist, and local counsel. Scaled uses 2 FT + 3 C, five people total, adding operating capacity and a scoped field specialist. These capacity labels do not establish salary funding; any employee hire must fit a separately costed operating plan."
+          "name": "redemption_proof_tickler",
+          "type": "text",
+          "prompt": "Set tickler dates two and three weeks after every redemption closing. Record the certificate number, the redemption date, the date actual proof of payment arrived, and who confirmed it, so no payoff rests on an assumption.",
+          "example": "Illinois certificate redeemed on the 3rd; ticklers set for the 17th and 24th, because 'Bob thought Stan sent the check' is how certificates go sideways [The Devine Law Group — qAoyeFTuxms @ 00:16:45]. Actual proof of redemption received in writing on the 18th. A slow payout only drags a few months, already expected with liens [Tax Sale Secrets — qEuYpfZ_Qgg @ 00:01:42]."
         },
         {
-          "name": "Weekly operating KPI scorecard",
+          "name": "starting_bankroll_and_capital_plan",
           "type": "textarea",
-          "prompt": "Set numerical targets for evidence completion, review productivity, cash reconciliation, deadline ownership, and concentration. Distinguish leading metrics from realized earnings and identify which missed targets suspend new commitments rather than merely creating a dashboard warning.",
-          "example": "Weekly targets are 100% verified parcel identity, 100% assigned statutory deadlines, zero unreviewed settlement changes, and no unmatched receipt older than two business days. The pilot retains its $10,000 parcel and $40,000 county limits. Any breach suspends affected bids; importing 1,000 extra rows does not offset a failed cash-control metric."
+          "prompt": "State your total starting bankroll, how much stays in reserve for attorney and title-clearing costs, and the yield you realistically expect at that size given institutional competition. Note whether your capital is large enough to chase bank-level returns.",
+          "example": "Bankroll is $25,000, meeting Ted Thomas's floor of $20,000 to $25,000, since $500 is not enough [REtipster — jDYlxXpw-e4 @ 00:36:45]. Reserve set at $5,000 for the clear-title attorney [REtipster — jDYlxXpw-e4 @ 00:41:33]. Bank-level 15 to 18 percent yields take six to seven figures [Kevin Bupp - Cash Flow Investor — UyiZp8ocowM @ 00:14:17], so expectations stay modest."
         },
         {
-          "name": "Canonical performance and score interpretation",
+          "name": "self_directed_ira_setup",
           "type": "textarea",
-          "prompt": "Record the candidate's score components and annual owner-profit targets without treating a score as a return forecast. Explain how the capital-intensive profile changes launch priorities relative to a labor-light operating business.",
-          "example": "The 81/100 score comprises revenue potential 19, margin potential 24, team efficiency 16, startup accessibility 11, and automation potential 11. Annual owner-profit targets remain $4,500, $41,438, and $99,000 for conservative, base, and scaled cases. The capital and labor intensive classification prioritizes cash duration, title quality, and recovery discipline over rapid acquisition volume."
+          "prompt": "Describe how retirement money will flow into liens. Record the custodian, fee schedule, the exact name the IRA bids under, its TIN, any entity bank account required by bidding sites, and the transfer start date relative to sale season.",
+          "example": "Custodian charges $325 per asset per year [Next Generation — l9-Us7KWWPM @ 00:16:30]. Bids go in the IRA's exact name with its own TIN and an entity bank account, since bidding sites now require one [CamaPlan Self Directed IRA — U08uLxrDVE4 @ 00:36:29]. Transfer starts in August, well before the October Illinois sales."
         },
         {
-          "name": "Pause, stop-loss, and redeployment criteria",
-          "type": "textarea",
-          "prompt": "Define conditions for pausing purchases, escalating an impaired asset, or reallocating capital. Recognize that illiquid certificates may lack an immediate exit and distinguish a decision threshold from an executable market sale at a known price.",
-          "example": "New bids pause when spendable liquidity falls below twelve months of committed opex plus reviewed near-term advances. A suspected title loss above $5,000 triggers asset-specific recovery review. The operator does not assume a certificate can be sold tomorrow at face value; redeployment waits for verified redemption or a documented assignment offer."
+          "name": "entity_structure",
+          "type": "text",
+          "prompt": "Decide whether liens and deeds will be held individually, jointly, or through LLCs before you bid. Record the entity names, which assets each entity holds, and whether any title insurance endorsement is needed before transferring property into an entity.",
+          "example": "Following Clint Coons's pattern, one Wyoming LLC holds all liens and each deed gets its own LLC. Entity chosen before bidding, since re-deeding afterward can trigger tax uncapping or gift conveyance issues [Quiet Title Michigan — 7yD_brKdgXk @ 00:13:04]. A title insurance endorsement is ordered before any transfer, after one entity transfer voided coverage [Jose Luiz Morales — B0yvMIdmaaQ @ 00:29:12]."
         },
         {
-          "name": "Transfer package and buyer diligence ledger",
+          "name": "opm_and_ladder_plan",
           "type": "textarea",
-          "prompt": "List the records a buyer or successor operator needs to validate ownership, basis, statutory status, and future obligations. Identify assignment restrictions and distinguish sale preparation from permission to transfer private documents or execute a portfolio sale.",
-          "example": "A proposed twenty-certificate package includes county issuance evidence, $200,000 aggregate principal, rate schedules, recorded assignments, redemption history, title exceptions, and reviewed deadlines. Buyer access uses a controlled data room with necessary fields only. Transfer requires county-specific assignment steps and owner authorization; a prepared diligence folder does not itself authorize the sale."
+          "prompt": "Describe any other people's money you will use, the rate you will pay lenders, and the rate the lien or redeemable deed earns. Explain how you will ladder maturities and reinvest redemptions so capital keeps working without crowding your deadlines.",
+          "example": "Friends lend to the LLC on unsecured notes at 10 percent while Georgia redeemable deeds earn the 20 percent penalty, with lenders refunded if a bid strikes out [Ross Budrakey — VmzztAnZ71w @ 01:24:13]. Florida liens are allowed to run up to five years at 18 percent and are reinvested on a ladder [CamaPlan Self Directed IRA — U08uLxrDVE4 @ 00:44:40]."
         },
         {
-          "name": "Exit valuation and orderly wind-down",
+          "name": "reo_exit_and_scaling_rule",
           "type": "textarea",
-          "prompt": "Calculate a possible portfolio exit using documented basis, actual offer terms, and transfer costs. Preserve cash for continuing deadlines and services until assignments are effective, and explain how exit gain or loss enters recognized operator results.",
-          "example": "A buyer offers $196,000 for certificates with $200,000 carrying basis, and transfer costs are $2,000. Net proceeds of $194,000 create a $6,000 realized loss, not $194,000 revenue. The operator retains $8,000 for documented wind-down obligations and continues deadline monitoring until county records and contracts confirm the effective transfer."
+          "prompt": "Name your proven channel for selling any property you end up owning, and the scaling rule you will follow. Record the maximum bid tied to that exit, the foreclosure attorney you will use, and the costs you will carry after year one.",
+          "example": "Exit channel proven with two wholesale sales before entering Georgia and Texas, where REO rates run at least 60 percent [Platinum Investment Properties Group - Tax Liens — AcKbZeNuPr4 @ 00:21:38]. Maximum bid set only after the exit was locked [Ross Budrakey — VmzztAnZ71w @ 00:36:42]. A tax attorney handles every foreclosure, and post-day-365 costs are budgeted [Advanta IRA — c3YDDPR5wVo @ 00:44:29]."
         }
       ],
-      "completion_gate": "Finish the sprint only when all four weekly artifacts, pod assignments, canonical reconciliations, liquidity tests, KPI thresholds, and transfer records are complete; report unresolved blockers and recognize earnings only when supported by realized transactions."
+      "completion_gate": "Do not commit new capital until equity exposure is measured, deed issuance is confirmed in writing, every notice is documented, the bankruptcy check is timed to the sale, redemption ticklers are set, the bankroll and reserve are sized, retirement and entity plumbing is live, and a proven exit channel is locked to the maximum bid."
     }
   ]
 }

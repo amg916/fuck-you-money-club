@@ -1,663 +1,862 @@
 from __future__ import annotations
 
-CHAPTER_4 = {
-    "id": "Q4",
-    "chapter_id": "Q4",
-    "chapter_number": 4,
-    "question_number": 4,
-    "slug": "startup-capital-lean-infrastructure-pre-flight-stack",
-    "question_prompt": "How do you allocate startup capital ($15,000–$75,000 USD) and configure a lean, low-opex ($1,000–$12,000 USD/mo) production stack without wasting cash on bloated overhead?",
-    "kicker": "Q4 / THE BIG MONEY PLAYBOOKS",
-    "title": "Startup Capital, Lean Infrastructure & Pre-Flight Stack",
-    "subtitle": "Reserve-First NMA and NPRI Underwriting, County Title Evidence, Royalty Reconciliation, and FERC Queue-Signal Discipline",
-    "layout_template": "comparison_table",
-    "reading_time_minutes": 14,
-    "executive_summary": (
-        "Candidate #7, Mineral Rights, ranks #25 with a Money-to-Manpower Score of 81/100: "
-        "capital discipline matters more than subscription count. This chapter maps five operating "
-        "plays: producing-mineral purchases, NPRI purchases, pooling-docket curve-jumping, "
-        "institutional rights flips, and FERC queue-informed land options. Keep at least half "
-        "of startup capital untouched as liquidity, buy evidence before acreage, and separate "
-        "mineral ownership from surface access and electricity service. A twelve-layer stack "
-        "supports title packets, production monitoring, and royalty reconciliation without "
-        "enterprise overhead. Canonical annual owner profits remain $6,000 Conservative, "
-        "$69,875 Base, and $180,000 Scaled. The operating test is executable title, traceable "
-        "receipts, controlled downside, and enough cash to survive the full 6–24-month first-deal window."
-    ),
-    "key_metrics": [
-        {
-            "label": "Conservative",
-            "value": "$30,000",
-            "context": "Annual royalty receipts and realized rights-trading gains, excluding returned basis",
-            "note": "20% net margin; $6,000 annual owner net profit; 1 FT + 3 C",
-        },
-        {
-            "label": "Base",
-            "value": "$215,000",
-            "context": "Annual royalty receipts and realized rights-trading gains, excluding returned basis",
-            "note": "32.5% net margin; $69,875 annual owner net profit; 1 FT + 3 C",
-        },
-        {
-            "label": "Scaled",
-            "value": "$400,000",
-            "context": "Annual royalty receipts and realized rights-trading gains, excluding returned basis",
-            "note": "45% net margin; $180,000 annual owner net profit; 2 FT + 4 C",
-        },
-    ],
-    "sections": [
-        {
-            "heading": "1. Ring-fence liquidity before pricing the first mineral deed",
-            "epistemic_status": "illustrative_model",
-            "paragraphs": [
-                (
-                    "Start with a capital ledger, not an acreage target. At $150,000, place $90,000 "
-                    "in a separately tracked working-capital reserve, allocate $30,000 to rights "
-                    "purchases, $7,500 to title and technical diligence, $5,000 to contingent "
-                    "options, $4,000 to entity and insurance setup, $3,500 to data and systems, "
-                    "and $10,000 to transaction contingencies. These amounts total $150,000; "
-                    "the reserve is 60% of opening capital. At $2,000,000, allocate $1,100,000 "
-                    "to reserve, $650,000 to rights, $80,000 to diligence, $40,000 to options, "
-                    "$30,000 to setup, $20,000 to systems, and $80,000 to contingencies. "
-                    "That reserve is 55%. Neither reserve is acquisition capacity, collateral "
-                    "for an option, or a second name for committed purchase money. Release "
-                    "acquisition funds only after recording all outstanding exercises, title "
-                    "invoices, and closing costs. At the stated overhead endpoints, twenty-four "
-                    "months consumes $24,000 or $288,000, leaving $66,000 or $812,000 of "
-                    "the original reserve before receipts. Those runway calculations exclude "
-                    "deal-specific expenses, which belong in their own allocations. If overhead "
-                    "rises, reduce the acquisition envelope before signing another commitment. "
-                    "The 6–24-month first-deal window makes liquidity an operating input, not "
-                    "idle money awaiting a persuasive seller."
-                ),
-                (
-                    "Reconcile the scorecard before evaluating any software proposal. Conservative "
-                    "revenue of $30,000 less $24,000 of total expenses produces $6,000 of owner "
-                    "profit, exactly 20%. Base revenue of $215,000 less $145,125 produces "
-                    "$69,875, exactly 32.5%. Scaled revenue of $400,000 less $220,000 produces "
-                    "$180,000, exactly 45%. One illustrative expense bridge assigns monthly "
-                    "fixed overhead of $1,000, $4,000, and $12,000 respectively; annual fixed "
-                    "costs are $12,000, $48,000, and $144,000, leaving $12,000, $97,125, "
-                    "and $76,000 for all remaining recognized expenses. These are allocation "
-                    "constraints, not estimates of what every county or contractor will charge. "
-                    "Do not add acquisition principal to operating expense and then also deduct "
-                    "it from trading proceeds. Track asset basis, capitalized acquisition costs, "
-                    "depletion, disposition proceeds, and recurring expenses separately under "
-                    "the adopted accounting method. The teams remain 1 FT plus 3 contractors "
-                    "in Conservative and Base, and 2 FT plus 4 contractors in Scaled. Contractor "
-                    "counts describe scoped specialists, not four continuous salaries. Treat "
-                    "the owner as one full-time operator; any additional salary or benefit "
-                    "expense must fit the existing expense envelope. Personal income taxes "
-                    "and owner distributions require separate cash planning."
-                ),
-                (
-                    "Build the ownership and payment structure before circulating offers. Use "
-                    "the entity's exact legal name consistently on purchase agreements, deeds, "
-                    "tax forms, bank instructions, and operator ownership-transfer packets. "
-                    "A state-filed limited liability company can simplify administration, but "
-                    "it does not repair a broken mineral chain or change an NPRI into executive "
-                    "rights. Obtain an EIN, adopt signing authority, maintain a distinct ledger, "
-                    "and reconcile the operating account monthly. Mercury's Standard account "
-                    "can serve as a low-fee interface; examine the actual partner-bank and "
-                    "sweep arrangements rather than treating the interface as the insured "
-                    "bank. Aggregate deposits by ownership category and underlying bank when "
-                    "reviewing FDIC coverage. Bind coverage for actual activities: general "
-                    "liability for field visits, cyber and social-engineering exposures where "
-                    "available, and professional coverage only where the business performs "
-                    "services that require it. Ask specifically whether mineral title, contract "
-                    "disputes, pollution, and wire fraud are excluded. Do not assume a surface "
-                    "title policy insures severed minerals. Obtain closing instructions through "
-                    "an independently verified telephone number, use transaction counsel or "
-                    "an appropriate escrow provider, and prohibit emailed bank-detail changes "
-                    "from becoming payment authority without a callback."
-                ),
-            ],
-            "table": {
-                "caption": "Reserve-First Capital Envelopes and Canonical Expense Reconciliation",
-                "headers": [
-                    "Capital or expense decision",
-                    "Lean launch allocation and control",
-                    "Larger launch allocation and control",
-                    "Release evidence and downside response",
-                ],
-                "rows": [
-                    [
-                        "Protect working capital before accepting acquisition commitments",
-                        "$90,000 reserve equals 60% of $150,000 opening capital",
-                        "$1,100,000 reserve equals 55% of $2,000,000 opening capital",
-                        "Refresh runway monthly and cut commitments before exhausting liquidity",
-                    ],
-                    [
-                        "Limit rights purchases to separately authorized acquisition envelopes",
-                        "$30,000 buys rights without borrowing against protected reserves",
-                        "$650,000 buys rights without reclassifying reserve cash as available",
-                        "Require executed instruments and complete closing statements before funding",
-                    ],
-                    [
-                        "Fund title investigations and contingent options independently",
-                        "$7,500 diligence plus $5,000 options limits speculative cash exposure",
-                        "$80,000 diligence plus $40,000 options caps advance commitments",
-                        "Abandon unresolved ownership defects before exercising any purchase obligation",
-                    ],
-                    [
-                        "Separate setup costs from recurring production infrastructure",
-                        "$4,000 setup plus $3,500 systems supports a focused launch",
-                        "$30,000 setup plus $20,000 systems supports broader transaction capacity",
-                        "Obtain written scope and renewal terms before authorizing purchases",
-                    ],
-                    [
-                        "Hold transaction contingencies outside routine acquisition purchase prices",
-                        "$10,000 covers documented exceptions without concealing acquisition overruns",
-                        "$80,000 covers documented exceptions without consuming the protected reserve",
-                        "Require line-item explanations for curative work and closing changes",
-                    ],
-                    [
-                        "Preserve exact scorecard expense totals across operating scenarios",
-                        "Conservative expenses total $24,000; Base expenses total $145,125",
-                        "Scaled expenses total $220,000 against $400,000 recognized annual revenue",
-                        "Reconcile receipts and realized gains without counting returned basis",
-                    ],
-                ],
-            },
-            "callout": {
-                "kind": "OPERATOR GATE",
-                "title": "Four release tests before committing acquisition cash",
-                "body": "A commitment must pass all four tests using dated evidence and a named reviewer.",
-                "items": [
-                    "Confirm the opening reserve remains at least 50% of startup capital after identifying every signed obligation; publish a separate twenty-four-month overhead runway.",
-                    "Match the seller's identity and authority to the recorded chain, including probate, trusts, entity succession, reservations, and any required corrective instruments.",
-                    "Reconcile the purchase price, eligible basis additions, selling-cost treatment, and expected royalty decimal in an independently reviewed closing worksheet.",
-                    "Verify payment instructions by callback, establish operator transfer requirements, and assign responsibility for recording, tax notices, and the first royalty reconciliation.",
-                ],
-            },
-        },
-        {
-            "heading": "2. Assemble twelve inexpensive layers around an auditable tract ledger",
-            "epistemic_status": "operating_framework",
-            "paragraphs": [
-                (
-                    "Make the tract ledger the system of record. Each asset needs a stable "
-                    "identifier, state and county, legal description, gross acres, acquired "
-                    "fraction, net mineral acres, interest type, lease references, unit "
-                    "allocation, operator, well identifiers, payment decimal, acquisition "
-                    "basis, and document links. Keep NMA distinct from royalty-adjusted "
-                    "acreage; a marketing convention using an eighth royalty must never "
-                    "overwrite the actual deed fraction. Store the original instrument "
-                    "alongside a structured extraction and a reviewer decision. Python "
-                    "and SQLite are sufficient for a small portfolio when backups, "
-                    "validation, and access restrictions are real. Use decimal arithmetic "
-                    "for money and ownership fractions, retain source precision, and round "
-                    "only at a documented reporting boundary. QGIS connects tract polygons "
-                    "to units, wells, surface constraints, and substations without an "
-                    "enterprise mapping contract. A spatial intersection is a research "
-                    "lead, not a title conclusion. County index gaps, duplicate names, "
-                    "ambiguous aliquot descriptions, and stale unit polygons require human "
-                    "resolution. Keep ownership assertions separate from machine-derived "
-                    "geometry so an attractive map cannot silently become an approved "
-                    "purchase premise. Export the ledger and its document manifest monthly "
-                    "so switching vendors never requires rebuilding the title record."
-                ),
-                (
-                    "Use the twelve-layer matrix as a procurement baseline rather than a "
-                    "claim of live vendor quotations. The paid prices are explicit planning "
-                    "assumptions for named tiers, excluding taxes, promotions, optional "
-                    "services, and future changes; confirm vendor checkout terms before "
-                    "purchase. One Google Workspace Business Starter seat at $7 per month "
-                    "on an annual commitment and one DocuSign Personal subscription at "
-                    "$10 monthly equivalent imply $204 in annual subscription commitments. "
-                    "At the listed S3 Standard storage rate, twenty gigabytes adds $0.46 "
-                    "monthly before requests, transfer, or version accumulation. That makes "
-                    "the basic subscription-and-storage subtotal $17.46 per month, not "
-                    "the whole operating budget. County copies, counsel, landmen, insurance, "
-                    "bookkeeping labor, and technical review still consume the $1,000–$12,000 "
-                    "monthly envelope or separately budgeted deal costs. Avoid buying "
-                    "commercial production datasets until public records demonstrably fail "
-                    "a defined task. Test ten representative wells and three complete "
-                    "ownership files before upgrading. Measure missing months, mismatched "
-                    "identifiers, and reviewer hours, then compare the measured correction "
-                    "cost with an actual subscription proposal. A cheap dataset that "
-                    "creates expensive false positives is not a lean purchase."
-                ),
-                (
-                    "Automate ingestion and exception detection, not ownership judgments. "
-                    "Download permitted public production files on a documented cadence, "
-                    "save retrieval dates and source hashes, and preserve the original "
-                    "royalty statement before normalizing its rows. Reconcile operator "
-                    "checks by production month, product, property, decimal, price, taxes, "
-                    "deductions, and suspense adjustments. Compare reported volumes with "
-                    "public records only after accounting for reporting delays, unit "
-                    "aggregation, gas measurement conventions, and corrections. Flag a "
-                    "decimal change immediately; flag a missing check against contractual "
-                    "timing and the jurisdiction's payment rules rather than an arbitrary "
-                    "calendar date. Texas Natural Resources Code Section 91.402 supplies "
-                    "specific payment timing and withholding provisions for covered proceeds. "
-                    "A dashboard should show the disputed amount, evidence, owner, and next "
-                    "action instead of merely coloring a cell red. Restrict bank access "
-                    "to the operator and authorized backup, require multifactor authentication, "
-                    "and keep tax identifiers out of source repositories. Encrypt offline "
-                    "backups, restrict document storage, and test restoration quarterly. "
-                    "Have the contract landman inspect title exceptions, the petroleum "
-                    "specialist inspect production assumptions, and the accountant inspect "
-                    "cash-to-ledger differences. One accountable owner closes each exception "
-                    "before the next acquisition relies on the same data."
-                ),
-            ],
-            "table": {
-                "caption": "Twelve-Layer Named-Service Stack: Exact Planning Tiers, Roles, and Lean Alternatives",
-                "headers": [
-                    "Layer and named service",
-                    "Tier and explicit price basis",
-                    "Mineral-rights production role and operating boundary",
-                    "Cheaper implementation or controlled fallback",
-                ],
-                "rows": [
-                    [
-                        "01 / Banking through Mercury's Standard business interface",
-                        "Standard planning tier: $0 monthly subscription before optional services",
-                        "Separate reserve and operating cash while verifying underlying bank coverage",
-                        "Use an existing no-monthly-fee business account with equivalent controls",
-                    ],
-                    [
-                        "02 / Business identity through Google Workspace",
-                        "Business Starter assumption: $7 per user monthly, annual commitment",
-                        "Maintain domain email and controlled collaboration for acquisition evidence",
-                        "Retain existing secured business email instead of duplicating paid seats",
-                    ],
-                    [
-                        "03 / Individual credential custody through Bitwarden",
-                        "Free individual tier: $0 subscription for individual vault use",
-                        "Generate unique credentials without sharing one operator login among contractors",
-                        "Use local KeePassXC at $0 with encrypted backups and recovery",
-                    ],
-                    [
-                        "04 / Script version control through GitHub",
-                        "Free repository tier: $0 subscription within included service limits",
-                        "Version ingestion code and schemas without storing deeds or taxpayer identifiers",
-                        "Use local Git at $0 and maintain separately encrypted repository backups",
-                    ],
-                    [
-                        "05 / Evidence object storage through Amazon S3",
-                        "Standard, us-east-1: $0.023 per GB-month for first 50 TB",
-                        "Retain restricted source documents; requests and transfer carry additional charges",
-                        "Use encrypted local storage and a separately located encrypted backup",
-                    ],
-                    [
-                        "06 / Geographic underwriting through the QGIS project",
-                        "QGIS desktop open-source tier: $0 software license charge",
-                        "Overlay tract boundaries, units, wells, substations, and independent land constraints",
-                        "Use the same free desktop installation rather than hosted mapping subscriptions",
-                    ],
-                    [
-                        "07 / Production and docket research through RRC and OCC",
-                        "Texas RRC and Oklahoma OCC public web access: $0",
-                        "Retrieve agency records while purchasing county title evidence separately",
-                        "Download relevant public files manually before paying for aggregated datasets",
-                    ],
-                    [
-                        "08 / Commodity context through the U.S. EIA",
-                        "EIA API v2 public access: $0 service subscription",
-                        "Maintain benchmark price series without substituting benchmarks for realized prices",
-                        "Download EIA spreadsheets manually when scheduled ingestion adds little value",
-                    ],
-                    [
-                        "09 / Queue-signal research through PJM Interconnection",
-                        "Public New Services Queue viewing tier: $0 subscription",
-                        "Track project status and study documents without implying available electricity",
-                        "Review public queue exports manually within the actual target region",
-                    ],
-                    [
-                        "10 / Reconciliation through Python and SQLite",
-                        "Python runtime and SQLite library: $0 software license charges",
-                        "Normalize statements and flag decimal changes using reviewed deterministic rules",
-                        "Use LibreOffice Calc at $0 for very small validated portfolios",
-                    ],
-                    [
-                        "11 / Bookkeeping through Wave's Starter plan",
-                        "Starter subscription tier: $0 monthly; optional payment services priced separately",
-                        "Maintain eligible basic business books with a separate mineral basis subledger",
-                        "Use accountant-approved CSV ledgers when location or functionality prevents adoption",
-                    ],
-                    [
-                        "12 / Routine signatures through DocuSign Personal",
-                        "Personal annual-plan assumption: $120 yearly, five envelopes per month",
-                        "Execute suitable routine agreements; verify separate deed notarization and recording requirements",
-                        "Use wet signatures and required acknowledgments when county practice demands them",
-                    ],
-                ],
-            },
-            "callout": {
-                "kind": "INSIDER PRO-TIPS",
-                "title": "Four habits that save more than another data subscription",
-                "body": "Spend on resolving ownership and payment uncertainty before paying for prettier coverage.",
-                "items": [
-                    "Save the recorded image and recording reference, not just the county index result; reservations and exceptions often sit inside the instrument.",
-                    "Preserve every royalty statement revision and its production month so recoupments do not masquerade as fresh production deterioration.",
-                    "Store fixed and floating NPRI interpretations as separate underwriting cases until counsel resolves the deed language; never average incompatible ownership meanings.",
-                    "Require a dated queue document and independent surface-access evidence before paying for a land option; a nearby substation is not a service commitment.",
-                ],
-            },
-        },
-        {
-            "heading": "3. Budget five operating plays without manufacturing revenue or secured power",
-            "epistemic_status": "illustrative_model",
-            "paragraphs": [
-                (
-                    "The first two mapped plays are producing-mineral purchases and NPRI "
-                    "purchases; these are descriptive workflows, not additional scorecard "
-                    "scenarios. For producing minerals, assume ten NMA uniformly participate "
-                    "in a 640-acre unit under a 20% lease royalty, with no allocation "
-                    "adjustments. The modeled revenue decimal is 10 divided by 640 times "
-                    "0.20, or 0.003125. Applied to $80,000 of monthly unit sales value, "
-                    "that produces $250 before owner-level deductions and taxes. A $30,000 "
-                    "purchase therefore shows $3,000 annualized receipts and a 10% initial "
-                    "cash yield, not a 10% profit margin or a perpetual annuity. Stress "
-                    "price, volumes, deductions, and depletion separately. For an NPRI "
-                    "burdening an 80-acre tract within that same unit, a fixed 1/64 "
-                    "fraction of production produces $156.25 monthly, while a floating "
-                    "one-quarter of a 20% lease royalty produces $500. Those calculations "
-                    "assume uniform tract participation and expose why deed interpretation "
-                    "dominates spreadsheet precision. An $8,000 offer cannot rely on the "
-                    "larger result until title review supports it. If production economics "
-                    "fail, lower the price or pass; if NPRI meaning remains disputed, "
-                    "require curative evidence or withdraw rather than pricing ambiguity "
-                    "as assured upside."
-                ),
-                (
-                    "The third play, pooling-docket curve-jumping, buys or options an interest "
-                    "because a public proceeding may improve buyer attention, not because "
-                    "a hearing guarantees drilling. Read the actual application, spacing "
-                    "description, requested relief, notice record, and subsequent orders. "
-                    "An illustrative transaction spends $2,000 on an option, $3,000 on "
-                    "eligible acquisition diligence, and $25,000 on exercise, producing "
-                    "$30,000 of assumed basis. A $40,000 sale with $2,000 of selling "
-                    "costs yields $8,000 of realized gain and returns $30,000 of basis; "
-                    "the $40,000 proceeds are not all operator revenue. If the proceeding "
-                    "slips or the title cannot close, let the option expire and cap "
-                    "the sunk exposure at the amounts actually committed. The fourth "
-                    "play, institutional rights flipping, needs a buyer-quality package "
-                    "before acquisition: indexed instruments, tract schedules, lease terms, "
-                    "payment history, and a reproducible ownership decimal. Purchasing "
-                    "rights for $100,000, adding $10,000 of eligible basis costs, and "
-                    "selling for $145,000 with $5,000 selling costs creates $30,000 of "
-                    "realized gain and returns $110,000 of basis. If the buyer disappears, "
-                    "retain only assets whose stressed royalty economics independently "
-                    "justify the purchase. Otherwise reduce exposure before closing, "
-                    "rather than treating an indicative bid as cash."
-                ),
-                (
-                    "The fifth mapped play is ferc_grid_interconnection_queue_land_speculation, "
-                    "the TRACK_1 FERC / ISO Substation Interconnection Queue & Powered-Land "
-                    "Option Flipping workflow. Overlay the correct ISO or utility queue "
-                    "with substations, parcels, zoning, floodplain, access, and transmission "
-                    "constraints. Distinguish generator interconnection from the load-service "
-                    "process relevant to an industrial user. Queue position, study progress, "
-                    "and nearby infrastructure are signals; none conveys deliverable "
-                    "power, surface control, easements, or transferable interconnection "
-                    "rights. Assume a $5,000 assignable option on 45 acres with a "
-                    "$225,000 exercise price, plus $4,000 of studies. A permitted $15,000 "
-                    "option assignment produces an illustrative $6,000 gain if the "
-                    "$9,000 expenditure is properly included in basis and there are "
-                    "no further selling costs. The $225,000 exercise obligation remains "
-                    "outside that assignment calculation and must never be silently "
-                    "funded from protected reserves. Counsel must confirm assignability "
-                    "and the accounting treatment. Under 18 CFR 35.28, applicable tariffs "
-                    "and interconnection procedures govern relevant service processes; "
-                    "a land marketer cannot replace them with promotional language. "
-                    "If access, service feasibility, or assignment fails, let the "
-                    "contingent option lapse with $9,000 exposure, or reposition "
-                    "only for independently viable uses without claiming secured power."
-                ),
-            ],
-            "table": {
-                "caption": "Five Mapped Plays and the Evidence Needed Before Capital Moves",
-                "headers": [
-                    "Play or cross-play exposure",
-                    "Concrete unit economics and revenue treatment",
-                    "Evidence required before committing additional capital",
-                    "Failure response that preserves remaining liquidity",
-                ],
-                "rows": [
-                    [
-                        "Producing-mineral acquisition using verified net mineral acreage",
-                        "Ten NMA at the assumed allocation produces $250 monthly receipts",
-                        "Confirm unit participation, lease royalty, payment decimal, and production history",
-                        "Reduce offer or pass when stressed receipts fail the purchase hurdle",
-                    ],
-                    [
-                        "NPRI acquisition separating fixed and floating deed language",
-                        "The stated tract example yields $156.25 or $500 monthly",
-                        "Obtain instrument-specific interpretation and verify every applicable tract allocation",
-                        "Require curative evidence or withdraw rather than selecting optimistic language",
-                    ],
-                    [
-                        "Pooling-docket curve-jumping through a limited contingent option",
-                        "$40,000 sale less $30,000 basis and $2,000 selling costs",
-                        "Read filed application, legal description, notice record, and resulting orders",
-                        "Expire the option when title defects or procedural delays defeat timing",
-                    ],
-                    [
-                        "Institutional rights flipping with a buyer-ready ownership package",
-                        "$145,000 sale less $110,000 basis and $5,000 selling costs",
-                        "Secure reproducible ownership schedules and independently viable stressed holding economics",
-                        "Avoid closing if the fallback depends entirely on one indicative buyer",
-                    ],
-                    [
-                        "Queue-informed surface options under the named TRACK_1 workflow",
-                        "$15,000 assignment less $9,000 assumed basis yields $6,000 gain",
-                        "Verify assignment rights, surface control, service process, and independent land constraints",
-                        "Lapse contingent options or pursue uses that require no claimed power",
-                    ],
-                    [
-                        "Cross-play separation of mineral ownership and surface development",
-                        "Mineral purchase prices do not acquire separate surface or utility rights",
-                        "Review severance instruments, reservations, easements, and each contracted development right",
-                        "Stop incompatible combinations before marketing interests as a unified development package",
-                    ],
-                ],
-            },
-        },
-        {
-            "heading": "4. Rehearse closing, collection, and failure before launching acquisition outreach",
-            "epistemic_status": "operating_framework",
-            "paragraphs": [
-                (
-                    "Run a dry closing on one representative tract before scaling outreach. "
-                    "Start with the seller's claimed interest and trace every required "
-                    "conveyance, reservation, probate event, and entity succession through "
-                    "the chosen title standard. Texas Property Code Section 5.021 addresses "
-                    "written conveyances of covered estates; Section 13.001 addresses "
-                    "the effect of recording against specified subsequent parties. Neither "
-                    "a recorded deed nor a county search result independently proves "
-                    "that the seller owns the fraction advertised. Ask transaction "
-                    "counsel to identify exceptions, required curative instruments, "
-                    "acknowledgment requirements, and county recording practices. Compare "
-                    "the resulting ownership fraction with the lease, unit documents, "
-                    "division order, and most recent check detail. Confirm that any "
-                    "executive rights, bonus rights, delay rentals, and development "
-                    "rights are actually included rather than assumed from the word "
-                    "minerals. Assemble a closing packet containing the purchase agreement, "
-                    "deed, recording instructions, settlement statement, identity and "
-                    "authority evidence, tax documentation, and operator notification "
-                    "materials. Rehearse the failed-close branch as carefully as the "
-                    "successful branch: return unused escrow under the contract, "
-                    "terminate outstanding permissions, calendar option expiry, and "
-                    "preserve the reasons for rejection so the same defective interest "
-                    "does not reenter the pipeline under another seller."
-                ),
-                (
-                    "Then rehearse the first ninety days after funding without assuming "
-                    "the first check arrives immediately. Record the instrument, retain "
-                    "the recording confirmation, submit the operator's transfer package, "
-                    "and track requests for additional documentation. Division-order "
-                    "processing can delay payments, while disputed ownership can create "
-                    "suspense balances that remain unavailable for overhead. Establish "
-                    "a property-level receivable log showing production periods, expected "
-                    "decimal, paid amounts, deductions, and unresolved differences. "
-                    "Use the applicable lease and state payment rules when escalating "
-                    "a missing payment. For Texas assets, evaluate the circumstances "
-                    "against Section 91.402 rather than promising one universal check "
-                    "date. Have the accountant maintain acquisition basis and depletion "
-                    "schedules under the applicable tax rules, including 26 U.S.C. "
-                    "611 and 612, instead of applying an automatic deduction percentage "
-                    "to every receipt. Track state severance withholding, property "
-                    "assessments where applicable, and filing obligations by jurisdiction. "
-                    "Do not net an operator's entire sales statement into business "
-                    "revenue when most production belongs to other interests. Post "
-                    "only the owned interest's royalty receipts and realized rights "
-                    "gains on the scorecard basis. A reconciliation is complete only "
-                    "when the bank deposit, statement detail, and ledger entry agree "
-                    "or a documented exception has an accountable owner."
-                ),
-                (
-                    "Finally, establish a release decision that can survive an absent "
-                    "founder and a bad market. Give each specialist a written scope: "
-                    "the landman assembles evidence, counsel resolves legal ownership "
-                    "questions, the technical reviewer tests decline and allocation "
-                    "assumptions, and the accountant verifies treatment and reconciliation. "
-                    "At smaller scale, these are scoped contractor assignments rather "
-                    "than permanent departments. Fund the actual scopes inside the "
-                    "canonical expense limits before representing the team as operational. "
-                    "Require a second-person check of outgoing wire instructions and "
-                    "ownership decimals; retain the review record with the deal. "
-                    "Test whether the portfolio survives six months without a new "
-                    "sale, a 30% commodity-price reduction, and a production decline "
-                    "that the technical reviewer considers plausible for the assets. "
-                    "These are sensitivity tests, not replacements for the three "
-                    "canonical profit cases. If raising pooled capital, resolve the "
-                    "offering structure before soliciting investors: 15 U.S.C. 77b "
-                    "includes specified fractional mineral interests in its securities "
-                    "definition, and Section 77e governs registration requirements "
-                    "subject to applicable exemptions. Keep subscriber money distinct "
-                    "from operator revenue. Launch only after restoring a backup, "
-                    "reconciling a sample check, completing the title packet, and "
-                    "demonstrating that every outstanding commitment fits outside "
-                    "the protected opening reserve."
-                ),
-            ],
-            "table": {
-                "caption": "Pre-Launch Evidence Tests, Named Owners, and Stop Conditions",
-                "headers": [
-                    "Readiness test and accountable function",
-                    "Evidence that makes the test repeatable",
-                    "Specific pass condition before launch",
-                    "Response when the evidence does not reconcile",
-                ],
-                "rows": [
-                    [
-                        "Capital readiness owned by the acquisition operator",
-                        "Dated bank balances, commitment register, and twenty-four-month runway model",
-                        "Opening reserve exceeds 50% and all commitments have separate funding",
-                        "Reduce acquisition scope or postpone commitments without hiding unpaid obligations",
-                    ],
-                    [
-                        "Title readiness reviewed by retained transaction counsel",
-                        "Instrument chain, seller authority, legal description, reservations, and curative checklist",
-                        "Acquired rights and unresolved exceptions are explicitly documented before closing",
-                        "Require curative instruments or terminate under the negotiated purchase terms",
-                    ],
-                    [
-                        "Royalty readiness checked by accountant and technical reviewer",
-                        "Sample operator statement, allocation worksheet, production references, and bank receipt",
-                        "Decimal and cash reconcile with documented rounding and timing differences",
-                        "Assign the discrepancy and prevent its reuse in acquisition underwriting",
-                    ],
-                    [
-                        "Payment readiness controlled by an independent second reviewer",
-                        "Verified callback record, authorized recipient details, and settlement statement",
-                        "Payment destination matches independently confirmed closing instructions and signed authority",
-                        "Suspend the transfer and contact the verified closing representative directly",
-                    ],
-                    [
-                        "Technology readiness demonstrated by the designated backup operator",
-                        "Encrypted backup, restore log, access list, and reproducible sample reconciliation",
-                        "A restored ledger reproduces ownership records and the sample receipt",
-                        "Repair recovery procedures before accumulating additional irreplaceable acquisition evidence",
-                    ],
-                    [
-                        "Offering readiness reviewed before any pooled-capital solicitation",
-                        "Written structure analysis, investor materials, custody arrangements, and exemption analysis",
-                        "Counsel identifies the applicable securities pathway and required operating steps",
-                        "Defer solicitation and continue only with properly authorized proprietary capital",
-                    ],
-                ],
-            },
-            "sop_steps": [
-                {
-                    "step": 1,
-                    "title": "Lock the reserve and commitment register",
-                    "action": "Separate reserve cash from acquisition availability and enter every signed obligation.",
-                    "detail": "Use the $150,000 or $2,000,000 allocation model as a starting envelope; retain at least half of opening capital as protected working-capital liquidity.",
-                },
-                {
-                    "step": 2,
-                    "title": "Complete one evidence-grade tract file",
-                    "action": "Resolve seller authority, ownership fractions, lease rights, unit allocation, and recording requirements.",
-                    "detail": "Link original instruments to the tract ledger and obtain named specialist review rather than treating a geographic overlay as ownership evidence.",
-                },
-                {
-                    "step": 3,
-                    "title": "Rehearse payment and collection end to end",
-                    "action": "Verify wire instructions, simulate the settlement entry, and reconcile one sample royalty payment.",
-                    "detail": "Show returned basis separately from realized gain and preserve statement-level deductions, production periods, tax withholding, and unresolved suspense amounts.",
-                },
-                {
-                    "step": 4,
-                    "title": "Release only the funded acquisition scope",
-                    "action": "Restore the backup, confirm specialist capacity, and sign the dated launch checklist.",
-                    "detail": "Keep unresolved title, utility-service, offering-structure, and liquidity issues outside the launch scope until the responsible reviewer supplies the missing evidence.",
-                },
-            ],
-        },
-    ],
-    "pull_quote": "Buy evidence before acreage, protect liquidity before upside, and never sell a queue signal as secured power.",
-    "diagram_id": "diag-07",
-    "action_checklist": [
-        "Create separate reserve, acquisition, diligence, option, setup, systems, and contingency envelopes that sum exactly to opening capital.",
-        "Document at least 50% protected opening liquidity and calculate twenty-four-month runway using actual fixed-overhead commitments.",
-        "Configure the twelve-layer stack, verify paid-tier checkout terms, and restore an encrypted tract-ledger backup before importing live ownership records.",
-        "Build one counsel-reviewed NMA or NPRI file with original instruments, lease provisions, unit allocation, acquisition basis, and operator transfer requirements.",
-        "Reconcile a sample royalty statement and a sample rights sale so returned basis never appears as recognized operator revenue.",
-        "Complete the four-step launch rehearsal and require independent evidence for title, payment instructions, pooled-capital structure, and any claimed utility-service rights.",
-    ],
-    "statutory_citations": [
-        {
-            "title": "Texas Property Code Section 5.021 — Instrument of Conveyance",
-            "url": "https://statutes.capitol.texas.gov/Docs/PR/htm/PR.5.htm#5.021",
-            "relevance": "Establishes written-instrument requirements for covered conveyances; apply the requirement to the actual estate and transaction structure.",
-        },
-        {
-            "title": "Texas Property Code Section 13.001 — Validity of Unrecorded Instrument",
-            "url": "https://statutes.capitol.texas.gov/Docs/PR/htm/PR.13.htm#13.001",
-            "relevance": "Explains recording consequences against specified creditors and subsequent purchasers; recording does not independently cure defective ownership.",
-        },
-        {
-            "title": "Texas Natural Resources Code Section 91.402 — Time for Payment of Proceeds",
-            "url": "https://statutes.capitol.texas.gov/Docs/NR/htm/NR.91.htm#91.402",
-            "relevance": "Provides payment timing and withholding provisions relevant to covered oil-and-gas proceeds, ownership disputes, and post-closing collection workflows.",
-        },
-        {
-            "title": "18 CFR 35.28 — Non-discriminatory Open Access Transmission Tariff",
-            "url": "https://www.ecfr.gov/current/title-18/chapter-I/subchapter-C/part-35/section-35.28",
-            "relevance": "Provides the federal tariff framework relevant to covered transmission and interconnection procedures; a queue entry does not establish retail load service or site-specific deliverable power.",
-        },
-        {
-            "title": "26 U.S.C. 611 — Allowance of Deduction for Depletion",
-            "url": "https://www.law.cornell.edu/uscode/text/26/611",
-            "relevance": "Supports property-specific depletion accounting rather than treating all royalty receipts as economically undepletable income.",
-        },
-        {
-            "title": "26 U.S.C. 612 — Basis for Cost Depletion",
-            "url": "https://www.law.cornell.edu/uscode/text/26/612",
-            "relevance": "Connects cost-depletion calculations to adjusted basis, requiring maintained acquisition and adjustment records.",
-        },
-        {
-            "title": "15 U.S.C. 77b — Definitions Under the Securities Act",
-            "url": "https://www.law.cornell.edu/uscode/text/15/77b",
-            "relevance": "The securities definition includes specified fractional undivided interests in oil, gas, or other mineral rights; evaluate pooled structures before solicitation.",
-        },
-        {
-            "title": "15 U.S.C. 77e — Prohibitions Relating to Interstate Commerce and the Mails",
-            "url": "https://www.law.cornell.edu/uscode/text/15/77e",
-            "relevance": "Establishes registration-related requirements for securities offers and sales, subject to applicable exemptions and the offering's actual facts.",
-        },
-    ],
-}
+CHAPTER_4 = {'id': 'Q4',
+ 'chapter_id': 'Q4',
+ 'chapter_number': 4,
+ 'question_number': 4,
+ 'slug': 'wi-nri-calculations-working-the-numbers',
+ 'question_prompt': 'How do I calculate working interest and net revenue interest for owners, co-tenants '
+                    'and operators, including in pooled units?',
+ 'kicker': 'Q4 / THE BIG MONEY PLAYBOOKS',
+ 'title': 'Working the Numbers: WI and NRI Calculations',
+ 'subtitle': 'Three-step NRI calculation, gross working interest, operator NRI after royalties and '
+             'overrides, AAPL study-guide situations with NPRIs, pooled-unit acreage problems, and '
+             'undivided co-tenant interests with different royalties',
+ 'layout_template': 'comparison_matrix',
+ 'reading_time_minutes': 15,
+ 'executive_summary': 'Landmen and mineral owners working these numbers agree on one spine: before a lease '
+                      'the mineral owner holds 100% working interest and 100% net revenue interest; after '
+                      'the lease the lessee takes 100% of the WI and the lessor keeps only the royalty '
+                      'fraction. From there every division-order decimal is built by multiplication: '
+                      'royalty times mineral interest times tract acres over unit acres. Matt Sands turns '
+                      '16 net acres in a 1,280-acre DSU at a 15% royalty into .001875 and a roughly $937 '
+                      'three-month check estimate. Alyce Hoge and the Land Training drills show 1/8 '
+                      'leaving the operator 0.875 and 3/16 leaving 0.8125, with overrides and NPRIs carved '
+                      "out further. UHD's instructor insists on a lease-level check-and-balance, while "
+                      'Land Training leans on Excel fill-down and summing back to the tract share.',
+ 'key_metrics': [{'label': 'Owner NRI in Bakken DSU example',
+                  'metric': 'Owner NRI in Bakken DSU example',
+                  'value': '.001875 (0.1875% of oil and gas sold)',
+                  'confidence': 'attributed_practitioner_claim',
+                  'context': '16 net mineral acres divided by a 1,280-acre drilling spacing unit, '
+                             'multiplied by a 15% lease royalty; this decimal must match the division '
+                             'order.',
+                  'source': 'Matt Sands ([Yy7az5T7_vs @ 00:12:22])'},
+                 {'label': 'Estimated three-month oil royalty',
+                  'metric': 'Estimated three-month oil royalty',
+                  'value': 'About $937',
+                  'confidence': 'attributed_practitioner_claim',
+                  'context': '10,000 barrels in the first three months, based on averaging nearby Bakken '
+                             'wells, at $50 per barrel times the .001875 NRI.',
+                  'source': 'Matt Sands ([Yy7az5T7_vs @ 00:15:38])'},
+                 {'label': 'Going-rate well cost carried by the lessee',
+                  'metric': 'Going-rate well cost carried by the lessee',
+                  'value': 'About $6 million per well',
+                  'confidence': 'attributed_practitioner_claim',
+                  'context': "Hoge's justification for the grand bargain: the oil company pays for a dry "
+                             'hole, the royalty owner pays nothing.',
+                  'source': 'Land Training www.landtraining.net ([eZU5hvGcngg @ 00:05:34])'},
+                 {'label': 'Sunrise lease-level take and unit NRI',
+                  'metric': 'Sunrise lease-level take and unit NRI',
+                  'value': '82.5 cents per dollar; 0.20625 unit NRI',
+                  'confidence': 'attributed_practitioner_claim',
+                  'context': '100% WI lease burdened by a 12.5% royalty and 5% geologist override, then '
+                             'pooled as 80 acres into a 320-acre unit.',
+                  'source': 'UHD Continuing and Professional Education ([oHKF06pFkh0 @ 00:05:22])'}],
+ 'sections': [{'heading': 'Section 1: The Practitioner Consensus',
+               'paragraphs': ["The cleanest consensus across the Land Training sessions and Alyce Hoge's "
+                              'lease breakdown is the grand bargain. Before any oil and gas lease, the '
+                              'mineral owner holds 100% of the working interest and 100% of the net '
+                              'revenue interest, meaning they pay every drilling bill and keep every '
+                              'barrel, while the oil company owns 0% of both. Sign the lease and the '
+                              'lessor hands 100% of the working interest to the lessee, keeping only a '
+                              'royalty fraction in return [eZU5hvGcngg @ 00:03:47]. The Land Training '
+                              'instructor runs the same trade through the Harry Truman fact pattern: '
+                              'Hiroshima Drilling leases all 160 acres for a 1/8 royalty, leaving Truman '
+                              'with 0% working interest and a 0.125 net revenue interest, while the '
+                              'company holds 100% working interest and a 0.875 net revenue interest '
+                              '[PjGnR-YfLy4 @ 00:07:07]. Why would an owner accept that split? Every '
+                              'speaker answers with risk. Hoge prices a well at about $6 million and '
+                              "stresses that a dry hole is the company's loss alone; the royalty owner "
+                              'pays nothing [eZU5hvGcngg @ 00:05:34]. A second Land Training walkthrough '
+                              'puts the cost at a million dollars and up, climbing with every rework, and '
+                              'calls drilling cost prohibitive for most landowners [yWZaJ-ItXKQ @ '
+                              '00:02:51]. The lessor trades cost exposure for a clean, cost-free slice of '
+                              'production.',
+                              'The second point of agreement is that pooling shrinks the royalty by '
+                              'acreage, and everyone uses the same multiplication. The Land Training '
+                              'instructor explains that state conservation agencies, the Texas Railroad '
+                              "Commission, Louisiana's Department of Conservation and the Oklahoma "
+                              'Corporation Commission, cap wells per acreage, so owners without a wellbore '
+                              'on their tract still share production in proportion to the acres they '
+                              'contribute [WPeA0rs7SLA @ 00:04:17]. The formula: royalty interest times '
+                              'tract acres divided by unit acres. Hoge runs a lessor with 160 acres in a '
+                              '640-acre gas unit at 3/16 and lands on 0.046875, warning that these '
+                              'decimals usually run out to eight decimal places [eZU5hvGcngg @ 00:13:51]. '
+                              "Matt Sands, coming at it from the mineral owner's chair, builds the "
+                              'identical equation from three inputs that take under five minutes once '
+                              'gathered: net mineral acres, drilling spacing unit size and lease royalty '
+                              'rate [Yy7az5T7_vs @ 00:01:35]. Another Land Training walkthrough lands on '
+                              '1/32, or 0.03125, for 160 of 640 acres at 1/8 [yWZaJ-ItXKQ @ 00:09:51]. '
+                              'Practitioners also agree on where the numbers live: working interest on the '
+                              'joint interest billing deck, net revenue interest on the division order pay '
+                              "sheet. If the operator's decimal disagrees with the owner's math, the owner "
+                              'digs in.',
+                              "Third, the operator's net revenue interest is always gross working interest "
+                              "minus burdens, and overrides come off the company's side, never the "
+                              "lessor's. The UHD instructor calls net revenue interest the most important "
+                              'number an oil company has, the take-home pay after deductions, and lays out '
+                              'the order: calculate gross working interest first, calculate every burden '
+                              'second, then subtract [oHKF06pFkh0 @ 00:00:36]. The Land Training '
+                              "instructor applies it to Adam's 1/8 lease with a 3% override assigned to "
+                              'the geologist: the override is carved out of the working interest, so the '
+                              "company's 0.875 drops to 0.845 and the geologist holds a 0.03 decimal that "
+                              'pays nothing if the well is dry [B5fBIyi1-hw @ 00:04:40]. Non-participating '
+                              'royalties hit the other side of the ledger. When Alpha conveys 2.5% of the '
+                              'oil and gas produced and saved to Bravo and then leases to Charlie at 1/8, '
+                              "Alpha's 12.5% shrinks to 10%, Bravo keeps 2.5%, and Charlie still holds "
+                              "87.5% [JVbDAxk_YTU @ 00:04:49]. The instructor flags 'produced and saved' "
+                              'as the buzzwords that separate a royalty conveyance from a mineral '
+                              'conveyance, and notes that nobody takes a lease from the NPRI holder '
+                              '[HkEK5QVZAJ0 @ 00:01:14]. Whoever granted the burden absorbs it: the lessee '
+                              'for the override, the mineral owner for the NPRI.'],
+               'table': {'caption': 'Where the practitioners line up on WI and NRI fundamentals',
+                         'headers': ['Consensus Point',
+                                     'Practitioner Position',
+                                     'Operator Use',
+                                     'Expert Source'],
+                         'rows': [['Pre-lease ownership split between mineral owner and company',
+                                   'Mineral owner holds 100% WI and 100% NRI; the company holds zero of '
+                                   'both',
+                                   'Treat any unleased owner as paying every drilling bill on their own',
+                                   'Land Training www.landtraining.net ([eZU5hvGcngg @ 00:02:41])'],
+                                  ['Post-lease grand bargain transfers the full working interest to lessee',
+                                   'Lessor keeps 0% WI plus royalty; lessee takes 100% WI and 0.875 NRI at '
+                                   '1/8',
+                                   'Start every operator NRI from 100% minus the stated lease royalty '
+                                   'fraction',
+                                   'Land Training www.landtraining.net ([PjGnR-YfLy4 @ 00:07:07])'],
+                                  ["Royalty size directly cuts the operator's net revenue interest",
+                                   '1/8 leaves 0.875, 3/16 leaves 0.8125, and 1/4 leaves 0.75 to the '
+                                   'company',
+                                   'Hoge says operators typically want at least a 78% NRI for the venture '
+                                   'to pay',
+                                   'Land Training www.landtraining.net ([eZU5hvGcngg @ 00:07:46])'],
+                                  ['Pooled unit formula for a single mineral owner in a unit',
+                                   'Royalty interest times tract acres divided by unit acres equals the '
+                                   "owner's NRI",
+                                   "Farmer Brown's 160 acres in a 640-acre unit at 1/8 yields 0.03125",
+                                   'Land Training www.landtraining.net ([WPeA0rs7SLA @ 00:08:13])'],
+                                  ['Operator NRI equals gross working interest minus every listed burden',
+                                   'Calculate gross first, list every burden second, then subtract down to '
+                                   'the net',
+                                   'Sunrise keeps 82.5 cents per lease dollar after a 12.5% royalty and 5% '
+                                   'override',
+                                   'UHD Continuing and Professional Education ([oHKF06pFkh0 @ 00:05:22])'],
+                                  ["Division order decimal must match the owner's own independent math",
+                                   "Sands says the decimal on the division order is the owner's net "
+                                   'revenue interest',
+                                   'If numbers differ, recheck inputs, then challenge the operator who '
+                                   'sent the order',
+                                   'Matt Sands ([Yy7az5T7_vs @ 00:12:07])'],
+                                  ['Working interest and net revenue interest live on different decks',
+                                   'WI appears on the joint interest billing deck; NRI on the division '
+                                   'order pay sheet',
+                                   'Pull the JIB deck for cost shares and the pay deck for revenue shares',
+                                   'Land Training www.landtraining.net ([PjGnR-YfLy4 @ 00:08:35])']]}},
+              {'heading': 'Section 2: Exact Street Mechanics, Tools & Numbers',
+               'paragraphs': ['Matt Sands teaches the owner-side workflow as three inputs and one '
+                              'equation. Net mineral acres come from the legal description: gross acres '
+                              'times decimal ownership, so a 1/40 interest, 2.5%, in a 640-acre section '
+                              'yields 16 net mineral acres; if the decimal is unknown, a landman or '
+                              "lawyer's title search running the chain of transfers in county records "
+                              'supplies it [Yy7az5T7_vs @ 00:06:19]. Drilling spacing unit size comes off '
+                              "the state oil and gas commission's map; in North Dakota, Sands uses the "
+                              "Industrial Commission's GIS map server, turns on the spacing-unit layer, "
+                              'finds the section and reads a 1,280-acre, two-section DSU for a horizontal '
+                              'Bakken well. The royalty rate sits on page one of the lease, in the clause '
+                              "delivering the lessor's share free of cost into the tanks or pipeline, here "
+                              '15%, pulled from the county clerk and recorder if the owner has no copy '
+                              '[Yy7az5T7_vs @ 00:10:11]. Then 16 divided by 1,280 times 0.15 equals '
+                              '.001875, the decimal that must match the division order [Yy7az5T7_vs @ '
+                              '00:12:22]. Alyce Hoge confirms operators build the same figure, net acres '
+                              'over unit acres times the royalty fraction, which is how those crazy '
+                              'eight-place decimals appear on the pay deck [eZU5hvGcngg @ 00:12:21].',
+                              'Once ownership splits, the formula gains a factor. The Land Training '
+                              "instructor's spacing-unit formula for co-tenants is royalty interest times "
+                              'mineral interest times tract acres divided by unit acres, and they keep '
+                              'mineral interest as its own term so errors stay traceable [wUqopw4hh2o @ '
+                              '00:04:21]. The lease itself only shows 160 acres; the actual mineral '
+                              "interest comes from the lease purchase report built off the landman's chain "
+                              'of title, so assuming 100% from the lease face is wrong. In the Brady heirs '
+                              'problem, four children each hold 25% undivided in 160 acres inside a '
+                              '320-acre unit: Greg at 1/4 royalty nets 0.03125, Peter at 3/16 nets '
+                              '0.0234375, and Bobby and Cindy at 1/8 net 0.015625 each. The instructor '
+                              'builds it in Excel, typing the formula once with an equals sign, then '
+                              'dragging the fill handle when the skinny plus sign appears to populate '
+                              'every row [wUqopw4hh2o @ 00:10:21]. The single-owner drills stay fast: '
+                              "Franklin Roosevelt's 20 acres in an 80-acre unit at 3/16 come to 0.046875 "
+                              "[kw0rYmoBLXU @ 00:01:34], while Budro's 160 acres in a 160-acre unit keep "
+                              'the full 0.1875 because the tract fills the unit. Ten Marcellus acres at '
+                              '1/5 in an 80-acre unit work out to 0.20 times 10 over 80, or 0.025 '
+                              '[kC2dYFP0U0g @ 00:01:04].',
+                              "Burdens get the same discipline. The UHD instructor's Sunrise Oil and Gas "
+                              "example: 100% gross working interest in Homer Murray's 80-acre lease, 12.5% "
+                              'royalty, 5% override to the geologist, so Sunrise pockets 82.5 cents on '
+                              'every dollar [oHKF06pFkh0 @ 00:05:22]. Pool the 80 acres into a 320-acre '
+                              "unit and Sunrise's unit gross becomes 0.25, Homer's unit royalty 0.03125, "
+                              "the override 0.0125, because it is tied to Homer's acres, leaving a 0.20625 "
+                              'net. The check: 0.825 times 0.25 must equal 0.20625, and it does '
+                              "[oHKF06pFkh0 @ 00:09:36]. The UHD instructor's caution: if Sunrise brings "
+                              'five leases with different burdens, run the check lease by lease, never '
+                              'commingled, or the totals will not reconcile. Always run it, the instructor '
+                              'says, even when you think you aced the math. Land Training checks the '
+                              'co-tenant split the same way, summing royalty and lessee shares back to '
+                              "each owner's mineral interest times the unit factor, as with Greg's 0.5 "
+                              'times 0.25 equaling 0.125 [n2pg2-Q06P8 @ 00:10:23]. On paper, the landman '
+                              "writes the full fraction, 1/8, 3/16 or 1/6, into each co-tenant's lease, "
+                              'never the reduced decimal; the proportionate reduction clause then lets the '
+                              "division order drop Greg's 1/8 to 0.0625 based on what Greg actually owns "
+                              '[PNLVi6Ee0KM @ 00:09:16].'],
+               'table': {'caption': 'Worked numbers the practitioners ran on camera',
+                         'headers': ['Scenario',
+                                     'Inputs Stated',
+                                     'Calculation and Result',
+                                     'Expert Source'],
+                         'rows': [['Bakken owner holding a single section inside a two-section DSU',
+                                   '16 net mineral acres, 1,280-acre DSU, and a 15% lease royalty rate',
+                                   '16 / 1,280 x 0.15 = .001875 decimal expected on the division order',
+                                   'Matt Sands ([Yy7az5T7_vs @ 00:12:22])'],
+                                  ['Three-month royalty check estimate for a new Bakken well',
+                                   '10,000 barrels in the first three months at a $50 Bakken price',
+                                   '10,000 x $50 x .001875 = about $937 in oil royalty only',
+                                   'Matt Sands ([Yy7az5T7_vs @ 00:15:38])'],
+                                  ['Operator NRI after a 1/8 royalty and a geologist override',
+                                   "Adam's 1/8 lease plus a 3% override assigned to the geologist",
+                                   '0.875 minus 0.03 leaves a 0.845 operator net revenue interest',
+                                   'Land Training www.landtraining.net ([B5fBIyi1-hw @ 00:05:00])'],
+                                  ["NPRI carved out of the mineral owner's lease royalty share",
+                                   'Alpha conveys 2.5% produced and saved, then leases to Charlie at 1/8',
+                                   'Alpha 10% NRI, Bravo 2.5% NPRI, Charlie as lessee 87.5% NRI',
+                                   'Land Training www.landtraining.net ([JVbDAxk_YTU @ 00:04:49])'],
+                                  ['Pooled unit carrying both a lease royalty and a tied override',
+                                   'Sunrise 80 acres pooled into a 320-acre unit, 12.5% royalty, 5% ORRI',
+                                   '0.25 minus 0.03125 minus 0.0125 equals 0.20625; check 0.825 x 0.25',
+                                   'UHD Continuing and Professional Education ([oHKF06pFkh0 @ 00:07:43])'],
+                                  ['Co-tenants holding different royalties inside one spacing unit',
+                                   'Four heirs at 25% each in 160 acres within a 320-acre unit',
+                                   'Greg 0.03125, Peter 0.0234375, Bobby and Cindy 0.015625 each',
+                                   'Land Training www.landtraining.net ([wUqopw4hh2o @ 00:10:21])'],
+                                  ['Small tract pooled into a Marcellus drilling and spacing unit',
+                                   '10 acres leased at a 1/5 royalty inside an 80-acre unit',
+                                   '0.20 x 10 / 80 = 0.025 net revenue interest for the owner',
+                                   'Land Training www.landtraining.net ([kC2dYFP0U0g @ 00:01:04])']]},
+               'callout': {'kind': 'INSIDER PRO-TIPS',
+                           'title': 'Shortcuts and tells the practitioners lean on',
+                           'body': 'Small habits that keep a division-order decimal honest before anyone '
+                                   'signs or cashes a check.',
+                           'items': ["Watch for 'produced and saved' in any conveyance: it signals a "
+                                     'royalty, not minerals, so the grantee is an NPRI holder and the '
+                                     "mineral owner's NRI shrinks once a lease is signed [Land Training "
+                                     'www.landtraining.net — JVbDAxk_YTU @ 00:01:03].',
+                                     'Do not answer 9.5% when no lease exists yet: David simply owns 100% '
+                                     "of the minerals subject to Charlie's 3% NPRI until a lease royalty "
+                                     'is set [Land Training www.landtraining.net — HkEK5QVZAJ0 @ '
+                                     '00:04:30].',
+                                     'Expect the realized price to trail the benchmark: Sands cites WTI at '
+                                     '$60 while Bakken barrels bring $50 because of the price differential '
+                                     'for transport and processing, and state production data can lag a '
+                                     'couple of months [Matt Sands — Yy7az5T7_vs @ 00:16:47].',
+                                     'Keep mineral interest as its own column in Excel instead of folding '
+                                     'it into the acres, so a bad input is visible and traceable when the '
+                                     'decimal looks off [Land Training www.landtraining.net — wUqopw4hh2o '
+                                     '@ 00:04:43].']},
+               'sop_steps': [{'step': 1,
+                              'title': 'Pin down net mineral acres and true mineral interest',
+                              'action': 'Multiply gross tract acres by the decimal ownership from the '
+                                        'legal description or title work.',
+                              'detail': 'Sands gets 16 net mineral acres from 2.5% of 640 acres and falls '
+                                        "back on a landman's title search when the decimal is unknown "
+                                        '[Matt Sands — Yy7az5T7_vs @ 00:06:19]; lease administration '
+                                        'confirms the actual mineral interest on the lease purchase '
+                                        'report, not the lease face [Land Training www.landtraining.net — '
+                                        'wUqopw4hh2o @ 00:02:40].'},
+                             {'step': 2,
+                              'title': 'Pull unit size and the lease royalty rate',
+                              'action': 'Read the DSU from the state commission GIS layer and the royalty '
+                                        'from page one of the lease.',
+                              'detail': 'Sands turns on the spacing-unit layer on the North Dakota map '
+                                        'server, reads a 1,280-acre DSU, and takes the 15% royalty from '
+                                        'the delivery clause, pulling the lease from the county clerk and '
+                                        'recorder if needed [Matt Sands — Yy7az5T7_vs @ 00:10:11].'},
+                             {'step': 3,
+                              'title': 'Run the formula, then subtract operator burdens',
+                              'action': 'Multiply royalty x mineral interest x tract acres / unit acres; '
+                                        'for the lessee, subtract every burden from gross WI.',
+                              'detail': 'The co-tenant formula stacks royalty, mineral interest and '
+                                        'tract-over-unit acres [Land Training www.landtraining.net — '
+                                        "wUqopw4hh2o @ 00:00:42]; the operator's 0.875 less a 0.03 "
+                                        'override leaves 0.845 [Land Training www.landtraining.net — '
+                                        'B5fBIyi1-hw @ 00:05:21].'},
+                             {'step': 4,
+                              'title': 'Check, reconcile and challenge',
+                              'action': 'Run a check-and-balance per lease, compare to the division order, '
+                                        'and challenge mismatches.',
+                              'detail': 'UHD checks 0.825 x 0.25 against the 0.20625 net and runs each '
+                                        'lease separately when burdens differ [UHD Continuing and '
+                                        'Professional Education — oHKF06pFkh0 @ 00:10:00]; Sands goes back '
+                                        'to the operator who sent the division order when a verified '
+                                        'calculation does not match [Matt Sands — Yy7az5T7_vs @ '
+                                        '00:12:07].'}]},
+              {'title': 'Where Practitioners Disagree & Alternative Playbooks',
+               'paragraphs': ['Matt Sands and the Land Training instructors reach the same decimal through '
+                              'different keystrokes, and the order matters when you hunt for an error. '
+                              'Sands front-loads the ownership fraction: multiply gross acreage by your '
+                              'decimal interest to get net mineral acres, so 2.5% of a 640-acre section '
+                              'yields 16 NMA, then divide by the 1280-acre DSU and multiply by the 15% '
+                              'royalty to land on .001875 [Yy7az5T7_vs @ 00:06:19]. The Land Training '
+                              'co-tenant playbook refuses to pre-blend: royalty interest times mineral '
+                              'interest times tract acres divided by unit acres. The instructor explains '
+                              "that keeping the mineral interest as its own factor 'helps you know if "
+                              "there's a mistake where you can go back and look at it' [wUqopw4hh2o @ "
+                              '00:04:43]. For a 100% owner, the pooled-unit drills strip the formula down '
+                              'to royalty times tract acres over unit acres. Problem 2 shows that a '
+                              "160-acre tract in a 160-acre spacing unit leaves Boudreaux's 3/16 royalty "
+                              'untouched at .1875 [VPrc0ax0-_o @ 00:01:26]. The operator takeaway is a '
+                              "split by use case. Sands's collapsed NMA method is faster for a single "
+                              'mineral owner reading one division order. The separated-factor method '
+                              'scales better when four heirs, three royalty rates, and one spacing unit '
+                              'all hit the same pay deck and you need to isolate which input broke the '
+                              'number.',
+                              'Sands pitches self-service. With net mineral acres, DSU size, and royalty '
+                              "rate in hand, the math 'should take you less than five minutes,' and the "
+                              "county clerk and recorder website is 'worth giving it a shot yourself "
+                              "first' before paying a landman to pull the lease [Yy7az5T7_vs @ 00:09:40]. "
+                              'Sands flips that advice for bigger positions. When multiple horizontal '
+                              'wells are being drilled, Sands recommends a petroleum engineer for reserves '
+                              "and a proper production forecast, plus a landman, because you 'could "
+                              "actually own more or less' than you think [Yy7az5T7_vs @ 00:18:14]. The "
+                              'Land Training instructor routes the grind into Excel instead. After '
+                              "fumbling a hand calculation on Bobby's interest, the instructor says 'this "
+                              "is why we want to use a spreadsheet,' builds royalty, mineral, tract, and "
+                              "unit columns, and drags the formula down to fill every heir's row "
+                              '[wUqopw4hh2o @ 00:08:19]. The UHD instructor adds a verification layer that '
+                              "the other two playbooks do not mandate: 'always do a check and a balance "
+                              "even if it feels cumbersome.' The check multiplies the lease-level take of "
+                              '82.5 cents on the dollar by the unit gross working interest of 0.25 and '
+                              'confirms it matches the gross-minus-burdens figure of .20625 [oHKF06pFkh0 @ '
+                              '00:08:28]. That gives an operator three playbooks at three cost levels: '
+                              'free solo math, spreadsheet automation, or hired professionals.',
+                              'The practitioners also split on whose pocket a burden comes out of, and the '
+                              'answer changes every decimal downstream. An overriding royalty rides on the '
+                              'operator. In Situation #3, the oil company assigns a 3% override to its '
+                              "geologist, and that override is 'carved out of the working interest.' The "
+                              "company's 0.875 drops to a 0.845 net revenue interest, while Adam's .125 "
+                              'royalty stays whole [B5fBIyi1-hw @ 00:02:56]. A non-participating royalty '
+                              'rides on the mineral owner instead. In Situation #4, Alpha conveys 2.5% of '
+                              'the oil and gas produced and saved to Bravo, then leases to Charlie at 1/8. '
+                              "Alpha's 12.5% shrinks to a 10% net revenue interest, while Charlie the "
+                              'lessee keeps the full 87.5% [JVbDAxk_YTU @ 00:03:42]. On the company side, '
+                              'the royalty fraction itself is the lever, and Alyce Hoge walks it down the '
+                              'board. A 1/8 royalty leaves the operator 87.5%, 3/16 leaves 81.25%, and a '
+                              "quarter royalty leaves 75%, because the company's net revenue interest "
+                              "'decreases the higher the royalty goes' [eZU5hvGcngg @ 00:10:32]. Read the "
+                              'conveyance language before touching a calculator. Situation #4 teaches that '
+                              "'produced and saved' signals a royalty conveyance rather than minerals, and "
+                              "that one phrase decides which party's decimal absorbs the hit [JVbDAxk_YTU "
+                              '@ 00:01:03].'],
+               'table': {'caption': 'Side-by-side playbooks practitioners run on WI and NRI math',
+                         'headers': ['Decision Point', 'Playbook A', 'Playbook B', 'Expert Source'],
+                         'rows': [['Order of operations in the NRI formula',
+                                   'Sands multiplies gross acres by decimal interest first, then divides '
+                                   'NMA by DSU and multiplies by royalty',
+                                   'Land Training keeps royalty, mineral interest, tract acres, and unit '
+                                   'acres as separate factors to trace mistakes',
+                                   'Matt Sands ([Yy7az5T7_vs @ 00:06:19]); Land Training '
+                                   'www.landtraining.net ([wUqopw4hh2o @ 00:04:43])'],
+                                  ['Drilling cost that justifies the grand bargain',
+                                   'Alyce Hoge puts the going rate at roughly $6 million per well, with '
+                                   'the dry-hole risk carried by the company',
+                                   'Companion lecture says a well can cost a million dollars and up '
+                                   'easily, rising with every rework',
+                                   'Land Training www.landtraining.net ([eZU5hvGcngg @ 00:05:34]); Land '
+                                   'Training www.landtraining.net ([yWZaJ-ItXKQ @ 00:02:51])'],
+                                  ['Who digs up the lease and title inputs',
+                                   'Sands says try the county clerk and recorder website yourself before '
+                                   'paying anyone',
+                                   'For significant acreage with multiple horizontal wells, Sands hires a '
+                                   'landman and a petroleum engineer forecast',
+                                   'Matt Sands ([Yy7az5T7_vs @ 00:09:40]); Matt Sands ([Yy7az5T7_vs @ '
+                                   '00:18:14])'],
+                                  ['Hand math versus spreadsheet execution',
+                                   'Whiteboard multiplication for single-owner pooled problems such as '
+                                   '0.1875 times 0.25 equals 0.046875',
+                                   'Excel columns with the formula dragged down across every co-tenant row '
+                                   'in the unit',
+                                   'Land Training www.landtraining.net ([kw0rYmoBLXU @ 00:01:34]); Land '
+                                   'Training www.landtraining.net ([wUqopw4hh2o @ 00:10:21])'],
+                                  ['How to verify the final net figure',
+                                   'UHD multiplies the lease-level take of 82.5 cents by unit gross '
+                                   'working interest of 0.25',
+                                   'Unit co-tenant lesson sums royalty and lessee shares against mineral '
+                                   'interest times the unit factor',
+                                   'UHD Continuing and Professional Education ([oHKF06pFkh0 @ 00:09:12]); '
+                                   'Land Training www.landtraining.net ([n2pg2-Q06P8 @ 00:10:23])'],
+                                  ['Who absorbs a carved-out burden',
+                                   'Override is carved out of working interest, so the operator falls from '
+                                   '0.875 to 0.845',
+                                   'NPRI is paid out of lessor royalty, so Alpha drops from 12.5% to a 10% '
+                                   'NRI',
+                                   'Land Training www.landtraining.net ([B5fBIyi1-hw @ 00:02:56]); Land '
+                                   'Training www.landtraining.net ([JVbDAxk_YTU @ 00:03:42])'],
+                                  ['Which decimal belongs on which document',
+                                   'Operator writes 1/8 in the lease and reduces it to 0.0625 on the '
+                                   'division order',
+                                   'Owner recomputes the decimal independently and challenges the operator '
+                                   'when the division order mismatches',
+                                   'Land Training www.landtraining.net ([PNLVi6Ee0KM @ 00:09:16]); Matt '
+                                   'Sands ([Yy7az5T7_vs @ 00:12:22])']]}},
+              {'title': 'Firsthand Failure Modes, Traps & Economics Checks',
+               'paragraphs': ['The first failure mode is feeding the formula a bad input. The Land '
+                              'Training instructor warns that a lease reading 160 acres never states the '
+                              "lessor's fractional ownership. In the instructor's words, 'if you look at "
+                              'just the lease and it says 160 Acres you might assume that Greg owns 100, '
+                              "that would be incorrect,' so lease administration has to pull the lease "
+                              'purchase report [wUqopw4hh2o @ 00:02:40]. Sands flags a timing trap on '
+                              "production data. State commission sites update monthly and 'may lag a "
+                              "couple of months,' so a May lookup may only surface February or March "
+                              'volumes, and a brand-new well may not show at all [Yy7az5T7_vs @ 00:13:41]. '
+                              'Price is the next leak. Sands notes that Bakken barrels can clear at 50 '
+                              'dollars when WTI prints 60, because of a price differential tied to '
+                              'transport and processing costs, and that operator hedging blurs the average '
+                              'price on the check stub further [Yy7az5T7_vs @ 00:16:47]. The AAPL '
+                              'study-guide trap is premature math. In Situation #5, a 1/8 lease minus '
+                              "Charlie's 3% NPRI would net David 9.5%, but no lease exists yet. The "
+                              "instructor says 'don't be thinking the answer to this is 9.5%,' because the "
+                              'correct answer is 100% minerals subject to the 3% NPRI [HkEK5QVZAJ0 @ '
+                              '00:04:30]. Each of these errors produces a clean-looking decimal that is '
+                              'simply wrong.',
+                              'The second failure mode is fat-fingering decimals, and the instructors '
+                              "commit it live on camera. While checking the four Brady heirs' "
+                              'joint-ownership total, the Land Training instructor stalls '
+                              "mid-multiplication with 'oh I did that wrong sorry.' It takes a third pass "
+                              'before 0.03125 times four reconciles back to the original 1/8 royalty '
+                              '[pjP04Ns4pww @ 00:06:07]. In Pooled Unit Problem 4, a one-fifth royalty on '
+                              '10 acres inside an 80-acre Marcellus drilling and spacing unit correctly '
+                              "computes to 0.025. It then gets restated aloud as 'a 0.25 is the net "
+                              "revenue interest,' a tenfold slip that would wreck a pay deck if it reached "
+                              'a division order [kC2dYFP0U0g @ 00:01:26]. In the unit co-tenant lesson, '
+                              "the calculator returns 014063 for Peter's royalty share in the 640-acre "
+                              'unit, and the whiteboard receives 01463, a dropped zero that silently '
+                              'shifts the figure [n2pg2-Q06P8 @ 00:06:59]. Alyce Hoge explains why slips '
+                              "like these hide so well. Division order decimals 'usually go out to eight "
+                              "decimal places,' which is how owners end up staring at 'crazy decimals' "
+                              'they cannot eyeball [eZU5hvGcngg @ 00:13:51]. The practitioner fix is '
+                              'structural: separate factor columns, Excel formulas copied down the sheet, '
+                              'and a closing sum that must reconcile.',
+                              'The third failure mode is running a check that cannot catch the error. The '
+                              "UHD instructor's paycheck analogy is blunt: if the payroll person botches a "
+                              "deduction, take-home pay is wrong. Likewise, 'if we make a mistake anywhere "
+                              "before we get to the net it will affect the net revenue interest' "
+                              '[oHKF06pFkh0 @ 00:04:15]. The same instructor caps the method with a '
+                              'warning. When an operator brings five leases with different burdens into '
+                              "one unit, 'you can't co-mingle them.' The check has to run lease by lease, "
+                              'or it will not return the gross-minus-burdens figure [oHKF06pFkh0 @ '
+                              '00:10:21]. The unit co-tenant lesson supplies a per-owner reconciliation. '
+                              "Greg's royalty share plus the lessee's share must sum to 0.125, which "
+                              'equals his 0.5 mineral interest times the 0.25 unit factor, and the same '
+                              'test holds for Peter and Bobby [n2pg2-Q06P8 @ 00:10:23]. On the paper side, '
+                              'the Land Training instructor warns lease drafters not to write 0.0625 into '
+                              'a lease for a 50% owner. Write 1/8 instead and let the proportionate '
+                              'reduction clause cut the royalty on the division order, because that clause '
+                              'is what gives the operator the right to reduce it [PNLVi6Ee0KM @ 00:09:16]. '
+                              'Skip the clause logic, and the lease and the pay deck stop agreeing.'],
+               'table': {'caption': 'Firsthand traps, what broke, and the fix practitioners teach',
+                         'headers': ['Trap', 'What Went Wrong', 'Fix Taught', 'Expert Source'],
+                         'rows': [['Treating lease acreage as ownership',
+                                   'Lease shows 160 acres and the reader assumes Greg owns 100% when he '
+                                   'owns 25%',
+                                   'Pull the lease purchase report to get the actual mineral interest '
+                                   'before calculating',
+                                   'Land Training www.landtraining.net ([wUqopw4hh2o @ 00:02:40])'],
+                                  ['Estimating checks from stale production data',
+                                   'State commission sites update monthly and may lag a couple of months '
+                                   'behind',
+                                   'Average initial production across a large sample of similar nearby '
+                                   'wells in the same formation',
+                                   'Matt Sands ([Yy7az5T7_vs @ 00:13:41])'],
+                                  ['Plugging posted WTI into the royalty estimate',
+                                   'Bakken crude can realize 50 dollars when WTI sits at 60 because of the '
+                                   'differential',
+                                   'Expect the deduct, plus hedged and spot-sold volumes averaged on the '
+                                   'check stub',
+                                   'Matt Sands ([Yy7az5T7_vs @ 00:16:47])'],
+                                  ['Calculating an NRI before any lease exists',
+                                   'Answering 9.5% for David when only a 3% NPRI burden and no lease exist',
+                                   'State 100% minerals subject to the 3% non-participating royalty '
+                                   'interest to Charlie',
+                                   'Land Training www.landtraining.net ([HkEK5QVZAJ0 @ 00:04:30])'],
+                                  ['Shifting the decimal one place',
+                                   'A one-fifth royalty on 10 of 80 acres computed as 0.025, then spoken '
+                                   'as 0.25',
+                                   'Rerun royalty times tract acres divided by unit acres and confirm the '
+                                   'magnitude',
+                                   'Land Training www.landtraining.net ([kC2dYFP0U0g @ 00:01:26])'],
+                                  ["Misreading the lessee's seven-eighths",
+                                   'Seven-eighths written as 0.08 75 before being corrected on the board',
+                                   'Confirm the royalty decimal plus the lessee decimal totals 100 percent',
+                                   'Land Training www.landtraining.net ([yWZaJ-ItXKQ @ 00:04:47])'],
+                                  ['Commingling multiple leases in one check',
+                                   'Five leases with different burdens will not reconcile to gross minus '
+                                   'burdens',
+                                   'Run the check and balance on each lease separately before combining '
+                                   'results',
+                                   'UHD Continuing and Professional Education ([oHKF06pFkh0 @ '
+                                   '00:10:21])']]},
+               'callout': {'kind': 'OPERATOR GATE',
+                           'title': 'Do not release a decimal to the pay deck until these four clear',
+                           'body': 'Every gate below comes from a mistake or warning a practitioner '
+                                   'reported while working live WI and NRI numbers.',
+                           'items': ['Recompute every division order decimal from NMA, DSU acres, and '
+                                     'royalty rate, and challenge the operator if your number does not '
+                                     'match [Matt Sands — Yy7az5T7_vs @ 00:12:22].',
+                                     'Never take mineral interest from the face of the lease; confirm it '
+                                     'on the lease purchase report [Land Training www.landtraining.net — '
+                                     'wUqopw4hh2o @ 00:02:40].',
+                                     'Run the check and balance lease by lease when an operator brings '
+                                     'multiple leases with different burdens into a unit [UHD Continuing '
+                                     'and Professional Education — oHKF06pFkh0 @ 00:10:21].',
+                                     'Write the full royalty fraction in the lease and let the '
+                                     'proportionate reduction clause produce the reduced decimal on the '
+                                     'division order [Land Training www.landtraining.net — PNLVi6Ee0KM @ '
+                                     '00:09:16].']}}],
+ 'pull_quote': 'Always do a check and a balance even if it feels cumbersome, even if it feels like you '
+               'hardly ever make a mistake. Attributed to UHD Continuing and Professional Education '
+               '(oHKF06pFkh0 @ 00:08:28).',
+ 'diagram_id': 'diag-07',
+ 'action_checklist': ['Multiply gross tract acreage by your decimal interest to get net mineral acres, and '
+                      'order a title search if the decimal is unknown [Matt Sands — Yy7az5T7_vs @ '
+                      '00:06:19].',
+                      'Pull the drilling spacing unit size from the state oil and gas commission GIS map '
+                      'by turning on the DSU layer for your section [Matt Sands — Yy7az5T7_vs @ 00:07:46].',
+                      'Read the royalty clause on the first page of the lease and convert fractions like '
+                      '1/8 or 1/5 to decimals [Matt Sands — Yy7az5T7_vs @ 00:10:11].',
+                      'Build an Excel sheet with royalty, mineral interest, tract acres, and unit acres '
+                      'columns, then drag the formula down every owner row [Land Training '
+                      'www.landtraining.net — wUqopw4hh2o @ 00:10:21].',
+                      "Subtract any override from the operator's 0.875 before reporting its NRI, as in "
+                      '0.875 minus 0.03 equals 0.845 [Land Training www.landtraining.net — B5fBIyi1-hw @ '
+                      '00:05:00].',
+                      'Estimate the royalty check as barrels times price times NRI, as in 10,000 barrels '
+                      'times 50 dollars times .001875 equals about 937 dollars, and dig deeper if the '
+                      'actual check differs significantly [Matt Sands — Yy7az5T7_vs @ 00:15:38].'],
+ 'statutory_citations': [{'title': 'Matt Sands — MRP 3: How to Calculate your Net Revenue Interest in 3 '
+                                   'Simple Steps [00:11:24]',
+                          'url': 'https://www.youtube.com/watch?v=Yy7az5T7_vs&t=684s',
+                          'relevance': 'Primary practitioner testimony on the NMA divided by DSU times '
+                                       'royalty method and division order verification.'},
+                         {'title': 'UHD Continuing and Professional Education — Calculating the Oil '
+                                   "Company's Net Revenue Interest [00:08:28]",
+                          'url': 'https://www.youtube.com/watch?v=oHKF06pFkh0&t=508s',
+                          'relevance': 'Primary practitioner testimony on gross minus burdens and the '
+                                       'lease-level check and balance.'},
+                         {'title': 'Land Training www.landtraining.net — Calculating WI and NRI in an Oil '
+                                   '& Gas Lease by Alyce Hoge [00:12:00]',
+                          'url': 'https://www.youtube.com/watch?v=eZU5hvGcngg&t=720s',
+                          'relevance': 'Primary practitioner testimony on the grand bargain and how '
+                                       'pooled-unit division order decimals are built.'},
+                         {'title': 'Land Training www.landtraining.net — VII NRI Co Tenants Different RI '
+                                   'in a Spacing Unit Prob 1 [00:00:42]',
+                          'url': 'https://www.youtube.com/watch?v=wUqopw4hh2o&t=42s',
+                          'relevance': 'Primary practitioner testimony on the royalty times mineral '
+                                       'interest times tract over unit formula for co-tenants.'}],
+ 'source_citations': [{'source_type': 'video_pro_tip',
+                       'video_id': 'Yy7az5T7_vs',
+                       'title': 'MRP 3: How to Calculate your Net Revenue Interest in 3 Simple Steps',
+                       'channel': 'Matt Sands',
+                       'author': 'Matt Sands',
+                       'text': "If you're sure or fairly certain that you're using the right information, "
+                               "that's where you go back to the operator who sent you the division order "
+                               "and then you can challenge that interest to make sure that it's correct.",
+                       'tip': "If you're sure or fairly certain that you're using the right information, "
+                              "that's where you go back to the operator who sent you the division order "
+                              "and then you can challenge that interest to make sure that it's correct.",
+                       'timestamp': 742,
+                       'timestamp_seconds': 742,
+                       'timestamp_label': '[00:12:22]',
+                       'url': 'https://www.youtube.com/watch?v=Yy7az5T7_vs&t=742s',
+                       'markdown': '[00:12:22](https://www.youtube.com/watch?v=Yy7az5T7_vs&t=742s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q4.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'Yy7az5T7_vs',
+                       'title': 'MRP 3: How to Calculate your Net Revenue Interest in 3 Simple Steps',
+                       'channel': 'Matt Sands',
+                       'author': 'Matt Sands',
+                       'text': 'The first step is we take the net mineral acres that we own and divide '
+                               'that by the size of our drilling spacing unit acres.',
+                       'tip': 'The first step is we take the net mineral acres that we own and divide that '
+                              'by the size of our drilling spacing unit acres.',
+                       'timestamp': 684,
+                       'timestamp_seconds': 684,
+                       'timestamp_label': '[00:11:24]',
+                       'url': 'https://www.youtube.com/watch?v=Yy7az5T7_vs&t=684s',
+                       'markdown': '[00:11:24](https://www.youtube.com/watch?v=Yy7az5T7_vs&t=684s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q4.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'eZU5hvGcngg',
+                       'title': 'Calculating WI and NRI in an Oil & Gas Lease by Alyce Hoge',
+                       'channel': 'Land Training www.landtraining.net',
+                       'author': 'Land Training www.landtraining.net',
+                       'text': 'The lower we can make this royalty payment the higher the net revenue '
+                               'interest is going to be for the oil and gas company.',
+                       'tip': 'The lower we can make this royalty payment the higher the net revenue '
+                              'interest is going to be for the oil and gas company.',
+                       'timestamp': 466,
+                       'timestamp_seconds': 466,
+                       'timestamp_label': '[00:07:46]',
+                       'url': 'https://www.youtube.com/watch?v=eZU5hvGcngg&t=466s',
+                       'markdown': '[00:07:46](https://www.youtube.com/watch?v=eZU5hvGcngg&t=466s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q4.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'PjGnR-YfLy4',
+                       'title': 'III  GWI & NRI in an Oil & Gas Lease   One Owner Example 1',
+                       'channel': 'Land Training www.landtraining.net',
+                       'author': 'Land Training www.landtraining.net',
+                       'text': "Some people say think about this being the jib deck, it's who is paying "
+                               "the bills, so it's called a joint interest billing deck.",
+                       'tip': "Some people say think about this being the jib deck, it's who is paying the "
+                              "bills, so it's called a joint interest billing deck.",
+                       'timestamp': 515,
+                       'timestamp_seconds': 515,
+                       'timestamp_label': '[00:08:35]',
+                       'url': 'https://www.youtube.com/watch?v=PjGnR-YfLy4&t=515s',
+                       'markdown': '[00:08:35](https://www.youtube.com/watch?v=PjGnR-YfLy4&t=515s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q4.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'oHKF06pFkh0',
+                       'title': 'Calculating the Oil Company’s Net Revenue Interest',
+                       'channel': 'UHD Continuing and Professional Education',
+                       'author': 'UHD Continuing and Professional Education',
+                       'text': "Here's my advice: always do a check and a balance even if it feels "
+                               'cumbersome.',
+                       'tip': "Here's my advice: always do a check and a balance even if it feels "
+                              'cumbersome.',
+                       'timestamp': 508,
+                       'timestamp_seconds': 508,
+                       'timestamp_label': '[00:08:28]',
+                       'url': 'https://www.youtube.com/watch?v=oHKF06pFkh0&t=508s',
+                       'markdown': '[00:08:28](https://www.youtube.com/watch?v=oHKF06pFkh0&t=508s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q4.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'oHKF06pFkh0',
+                       'title': 'Calculating the Oil Company’s Net Revenue Interest',
+                       'channel': 'UHD Continuing and Professional Education',
+                       'author': 'UHD Continuing and Professional Education',
+                       'text': "You're going to have to calculate or do the check and a balance on each of "
+                               "the leases separately from one another; in other words, you can't "
+                               'co-mingle them.',
+                       'tip': "You're going to have to calculate or do the check and a balance on each of "
+                              "the leases separately from one another; in other words, you can't co-mingle "
+                              'them.',
+                       'timestamp': 621,
+                       'timestamp_seconds': 621,
+                       'timestamp_label': '[00:10:21]',
+                       'url': 'https://www.youtube.com/watch?v=oHKF06pFkh0&t=621s',
+                       'markdown': '[00:10:21](https://www.youtube.com/watch?v=oHKF06pFkh0&t=621s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q4.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'HkEK5QVZAJ0',
+                       'title': 'Situation #5 WI & NRI Calculations p  70 AAPL  Study Guide',
+                       'channel': 'Land Training www.landtraining.net',
+                       'author': 'Land Training www.landtraining.net',
+                       'text': "There's no lease currently, so don't be thinking the answer to this is "
+                               '9.5%.',
+                       'tip': "There's no lease currently, so don't be thinking the answer to this is "
+                              '9.5%.',
+                       'timestamp': 270,
+                       'timestamp_seconds': 270,
+                       'timestamp_label': '[00:04:30]',
+                       'url': 'https://www.youtube.com/watch?v=HkEK5QVZAJ0&t=270s',
+                       'markdown': '[00:04:30](https://www.youtube.com/watch?v=HkEK5QVZAJ0&t=270s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q4.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'yWZaJ-ItXKQ',
+                       'title': 'Working Interest & Net Revenue Interests in Oil & Gas Lease Calculations',
+                       'channel': 'Land Training www.landtraining.net',
+                       'author': 'Land Training www.landtraining.net',
+                       'text': "We're going to basically take their net acres divided by the unit acres "
+                               "times the royalty interest and that's going to give us the lessor's net "
+                               'revenue interest.',
+                       'tip': "We're going to basically take their net acres divided by the unit acres "
+                              "times the royalty interest and that's going to give us the lessor's net "
+                              'revenue interest.',
+                       'timestamp': 614,
+                       'timestamp_seconds': 614,
+                       'timestamp_label': '[00:10:14]',
+                       'url': 'https://www.youtube.com/watch?v=yWZaJ-ItXKQ&t=614s',
+                       'markdown': '[00:10:14](https://www.youtube.com/watch?v=yWZaJ-ItXKQ&t=614s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q4.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'JVbDAxk_YTU',
+                       'title': 'Situation #4 WI & NRI Calculations p  70 AAPL Study Guide',
+                       'channel': 'Land Training www.landtraining.net',
+                       'author': 'Land Training www.landtraining.net',
+                       'text': 'When we see the words produced and saved, that is an indication that we '
+                               'are not selling minerals but we are selling a royalty interest.',
+                       'tip': 'When we see the words produced and saved, that is an indication that we are '
+                              'not selling minerals but we are selling a royalty interest.',
+                       'timestamp': 63,
+                       'timestamp_seconds': 63,
+                       'timestamp_label': '[00:01:03]',
+                       'url': 'https://www.youtube.com/watch?v=JVbDAxk_YTU&t=63s',
+                       'markdown': '[00:01:03](https://www.youtube.com/watch?v=JVbDAxk_YTU&t=63s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q4.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'pjP04Ns4pww',
+                       'title': 'V NRI Joint Ownership Undivided Interests   Same RI Problem 1',
+                       'channel': 'Land Training www.landtraining.net',
+                       'author': 'Land Training www.landtraining.net',
+                       'text': 'All you have to remember is that we have to reduce that royalty by their '
+                               'actual percentage of interest.',
+                       'tip': 'All you have to remember is that we have to reduce that royalty by their '
+                              'actual percentage of interest.',
+                       'timestamp': 192,
+                       'timestamp_seconds': 192,
+                       'timestamp_label': '[00:03:12]',
+                       'url': 'https://www.youtube.com/watch?v=pjP04Ns4pww&t=192s',
+                       'markdown': '[00:03:12](https://www.youtube.com/watch?v=pjP04Ns4pww&t=192s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q4.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'WPeA0rs7SLA',
+                       'title': 'IV NRI Calculations of Mineral Owner Pooled Unit Problem 1',
+                       'channel': 'Land Training www.landtraining.net',
+                       'author': 'Land Training www.landtraining.net',
+                       'text': "The well doesn't have to be on your property in order for you to get a "
+                               'share of it, but your share is going to be reduced by the number of acres '
+                               "that's actually in the unit.",
+                       'tip': "The well doesn't have to be on your property in order for you to get a "
+                              'share of it, but your share is going to be reduced by the number of acres '
+                              "that's actually in the unit.",
+                       'timestamp': 274,
+                       'timestamp_seconds': 274,
+                       'timestamp_label': '[00:04:34]',
+                       'url': 'https://www.youtube.com/watch?v=WPeA0rs7SLA&t=274s',
+                       'markdown': '[00:04:34](https://www.youtube.com/watch?v=WPeA0rs7SLA&t=274s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q4.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'wUqopw4hh2o',
+                       'title': 'VII NRI Co Tenants Different RI in a Spacing Unit Prob 1',
+                       'channel': 'Land Training www.landtraining.net',
+                       'author': 'Land Training www.landtraining.net',
+                       'text': 'If you look at just the lease and it says 160 acres you might assume that '
+                               'Greg owns 100, that would be incorrect; you still have to look at this '
+                               'lease purchase report.',
+                       'tip': 'If you look at just the lease and it says 160 acres you might assume that '
+                              'Greg owns 100, that would be incorrect; you still have to look at this '
+                              'lease purchase report.',
+                       'timestamp': 160,
+                       'timestamp_seconds': 160,
+                       'timestamp_label': '[00:02:40]',
+                       'url': 'https://www.youtube.com/watch?v=wUqopw4hh2o&t=160s',
+                       'markdown': '[00:02:40](https://www.youtube.com/watch?v=wUqopw4hh2o&t=160s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q4.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'B5fBIyi1-hw',
+                       'title': 'Situation #3 WI & NRI Calculations AAPL Study Guide PG 70',
+                       'channel': 'Land Training www.landtraining.net',
+                       'author': 'Land Training www.landtraining.net',
+                       'text': 'The working interest owner, typically the oil and gas company, is going to '
+                               "be the one that pays the geologist; it doesn't come from the royalty "
+                               "owners or the mineral owner's property.",
+                       'tip': 'The working interest owner, typically the oil and gas company, is going to '
+                              "be the one that pays the geologist; it doesn't come from the royalty owners "
+                              "or the mineral owner's property.",
+                       'timestamp': 176,
+                       'timestamp_seconds': 176,
+                       'timestamp_label': '[00:02:56]',
+                       'url': 'https://www.youtube.com/watch?v=B5fBIyi1-hw&t=176s',
+                       'markdown': '[00:02:56](https://www.youtube.com/watch?v=B5fBIyi1-hw&t=176s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q4.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'n2pg2-Q06P8',
+                       'title': 'Unit:  Calculating Undivided Interests with Different Royalties in a Unit',
+                       'channel': 'Land Training www.landtraining.net',
+                       'author': 'Land Training www.landtraining.net',
+                       'text': "If you have a logical mind, you're going to be able to do this kind of "
+                               'work, so just take your time and think it through.',
+                       'tip': "If you have a logical mind, you're going to be able to do this kind of "
+                              'work, so just take your time and think it through.',
+                       'timestamp': 693,
+                       'timestamp_seconds': 693,
+                       'timestamp_label': '[00:11:33]',
+                       'url': 'https://www.youtube.com/watch?v=n2pg2-Q06P8&t=693s',
+                       'markdown': '[00:11:33](https://www.youtube.com/watch?v=n2pg2-Q06P8&t=693s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q4.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'PNLVi6Ee0KM',
+                       'title': 'Calculating Undivided Interest - Different Royalties.avi',
+                       'channel': 'Land Training www.landtraining.net',
+                       'author': 'Land Training www.landtraining.net',
+                       'text': 'The proportionate reduction clause says that we can reduce the royalty '
+                               'rate based on what they actually own in the fee simple estate.',
+                       'tip': 'The proportionate reduction clause says that we can reduce the royalty rate '
+                              'based on what they actually own in the fee simple estate.',
+                       'timestamp': 601,
+                       'timestamp_seconds': 601,
+                       'timestamp_label': '[00:10:01]',
+                       'url': 'https://www.youtube.com/watch?v=PNLVi6Ee0KM&t=601s',
+                       'markdown': '[00:10:01](https://www.youtube.com/watch?v=PNLVi6Ee0KM&t=601s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q4.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'kC2dYFP0U0g',
+                       'title': 'IV NRI Calculations of Mineral Owner Pooled Unit Problem 4',
+                       'channel': 'Land Training www.landtraining.net',
+                       'author': 'Land Training www.landtraining.net',
+                       'text': 'All we did was we took the royalty times the tract acres divided by the '
+                               'unit acres to get that net revenue interest.',
+                       'tip': 'All we did was we took the royalty times the tract acres divided by the '
+                              'unit acres to get that net revenue interest.',
+                       'timestamp': 86,
+                       'timestamp_seconds': 86,
+                       'timestamp_label': '[00:01:26]',
+                       'url': 'https://www.youtube.com/watch?v=kC2dYFP0U0g&t=86s',
+                       'markdown': '[00:01:26](https://www.youtube.com/watch?v=kC2dYFP0U0g&t=86s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q4.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'kw0rYmoBLXU',
+                       'title': 'IV NRI Calculations of Mineral Owner Pooled Unit Problem 3',
+                       'channel': 'Land Training www.landtraining.net',
+                       'author': 'Land Training www.landtraining.net',
+                       'text': "I've now taken out lease tract acres and it's just tract acres, which is "
+                               "how you're usually going to see it.",
+                       'tip': "I've now taken out lease tract acres and it's just tract acres, which is "
+                              "how you're usually going to see it.",
+                       'timestamp': 23,
+                       'timestamp_seconds': 23,
+                       'timestamp_label': '[00:00:23]',
+                       'url': 'https://www.youtube.com/watch?v=kw0rYmoBLXU&t=23s',
+                       'markdown': '[00:00:23](https://www.youtube.com/watch?v=kw0rYmoBLXU&t=23s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q4.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'VPrc0ax0-_o',
+                       'title': 'IV NRI Calculations of Mineral Owner Pooled Unit Problem 2',
+                       'channel': 'Land Training www.landtraining.net',
+                       'author': 'Land Training www.landtraining.net',
+                       'text': "This mineral owner's net revenue interest is not going to be reduced at "
+                               "all, so he's going to be able to keep that 1875 net revenue interest.",
+                       'tip': "This mineral owner's net revenue interest is not going to be reduced at "
+                              "all, so he's going to be able to keep that 1875 net revenue interest.",
+                       'timestamp': 86,
+                       'timestamp_seconds': 86,
+                       'timestamp_label': '[00:01:26]',
+                       'url': 'https://www.youtube.com/watch?v=VPrc0ax0-_o&t=86s',
+                       'markdown': '[00:01:26](https://www.youtube.com/watch?v=VPrc0ax0-_o&t=86s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q4.'}]}

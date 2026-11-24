@@ -1,438 +1,844 @@
 from __future__ import annotations
 
-CHAPTER_4 = {
-    "id": "Q4",
-    "chapter_id": "Q4",
-    "chapter_number": 4,
-    "question_number": 4,
-    "slug": "startup-capital-lean-infrastructure-pre-flight-stack",
-    "question_prompt": "How do you allocate startup capital ($15,000–$80,000 USD) and configure a lean, low-opex ($4,000–$25,000 USD/mo) production stack without wasting cash on bloated overhead?",
-    "kicker": "Q4 / THE BIG MONEY PLAYBOOKS",
-    "title": "Startup Capital, Lean Infrastructure & Pre-Flight Stack",
-    "subtitle": "Reserve-First Capital, Shopify-to-3PL Controls, Authorized Sourcing, and Customs Recovery Underwriting",
-    "layout_template": "comparison_table",
-    "reading_time_minutes": 14,
-    "executive_summary": (
-        "Candidate #28, Automated E-Commerce, ranks #21 of 29 with a Money-to-Manpower Score of 85/100. "
-        "Its 18 mapped plays reward disciplined purchasing, reliable fulfillment, and contribution-led retention rather than an oversized software estate. "
-        "Start with $15,000–$80,000, retain 60% as liquid working capital, and purchase infrastructure only against measured operating needs. "
-        "The canonical annual owner-profit cases are $12,500 Conservative, $129,375 Base, and $360,000 Scaled; retail revenue is net of refunds, with goods, fulfillment, and advertising inside the margin. "
-        "This chapter translates those constraints into capital envelopes, twelve named infrastructure layers, authorized freight-recovery and distributor-sourcing pilots, and evidence-based launch checks. "
-        "Keep the $4,000–$25,000 monthly overhead envelope separate from inventory purchases and settlement exposure."
-    ),
-    "key_metrics": [
-        {
-            "label": "Conservative",
-            "value": "$250,000",
-            "context": "Annual retail revenue net of refunds; goods, fulfillment, and advertising included in margin",
-            "note": "5% net margin; $12,500 annual owner net profit; 2 FT + 3 C",
-        },
-        {
-            "label": "Base",
-            "value": "$1,125,000",
-            "context": "Annual retail revenue net of refunds; goods, fulfillment, and advertising included in margin",
-            "note": "11.5% net margin; $129,375 annual owner net profit; 2 FT + 3 C",
-        },
-        {
-            "label": "Scaled",
-            "value": "$2,000,000",
-            "context": "Annual retail revenue net of refunds; goods, fulfillment, and advertising included in margin",
-            "note": "18% net margin; $360,000 annual owner net profit; 3 FT + 4 C",
-        },
-    ],
-    "sections": [
-        {
-            "heading": "1. Protect the cash cycle before buying inventory or headcount",
-            "epistemic_status": "illustrative_model",
-            "paragraphs": [
-                (
-                    "Allocate startup capital by cash function, not by the attractiveness of a storefront. The three envelopes below retain 60% as liquid working capital: $18,000 from $30,000, $60,000 from $100,000, and $150,000 from $250,000. Opening inventory is a separate allocation; counting the same cartons as both inventory and reserve defeats the policy. Within the liquid reserve, earmark half for replenishment, one quarter for settlement delays and customer refunds, and one quarter for duties, freight surprises, and supplier deposits. At the smallest envelope, those amounts are $9,000, $4,500, and $4,500. Keep these balances in separately labeled bank accounts or ledger subaccounts, with weekly reconciliation to actual available cash. A supplier deposit consumes liquidity immediately even when the purchase remains an asset on the books. Release a replenishment payment only after comparing stock cover, expected payout dates, and the latest refund cohort. Maintain a rolling thirteen-week cash forecast with purchase-order payment dates rather than averaged monthly purchases. Do not count an unapproved credit line, expected carrier recovery, or unsold inventory liquidation as available reserve. Require each proposed purchase to identify the exact reserve bucket it would consume."
-                ),
-                (
-                    "Treat the $4,000–$25,000 monthly operating envelope as a planning range requiring an explicit inclusion schedule, not as the total cash cost of running every scorecard case. A lean $4,000 overhead example allocates $1,800 to specialist support, $600 to bookkeeping and insurance accruals, $300 to software and communications, $500 to contracted storage and minimum service charges, and $800 to customer service and operating contingencies. Inventory replenishment, variable fulfillment, advertising, taxes collected, and owner compensation must appear separately wherever excluded from that envelope. Dividing the $18,000 reserve by $4,000 produces 4.5 months of overhead-only coverage, not 4.5 months of business runway. The replenishment and refund earmarks mean spendable overhead coverage is smaller still. Time to first deal is two to six months, so a $30,000 launch requires tightly capped testing and staged supplier commitments. The canonical two full-time roles plus three contractors describe an operating team, not proof that five people can be paid from $4,000 monthly. Cost actual hours and compensation before hiring. If that calculation fails, postpone hiring or increase capital; do not disguise unpaid labor as a durable margin."
-                ),
-                (
-                    "Reconcile every operating spreadsheet to the canonical annual cases before considering upgrades. Conservative revenue of $250,000 at 5% produces $12,500 owner net profit and permits $237,500 in aggregate costs. Base revenue of $1,125,000 at 11.5% produces $129,375 and permits $995,625 in costs. Scaled revenue of $2,000,000 at 18% produces $360,000 and permits $1,640,000 in costs, with three full-time staff and four contractors rather than the smaller cases' two full-time staff and three contractors. These are target reconciliations, not a claim that every proposed budget achieves them. Revenue means retail sales net of refunds; exclude sales taxes collected and do not add supplier invoice value or a client's shipping spend. On an illustrative $100 net sale, $45 goods, $10 fulfillment and postage, $3.20 processing, $20 acquisition, and $4 return-handling expense leave $17.80 before fixed overhead. The handling expense is distinct from refunds already removed from revenue. Underwrite acquisition against that contribution, then reconcile overhead to the case's owner-profit target. An additional $5 acquisition cost on every $100 sale removes five revenue percentage points before any offsetting improvement."
-                ),
-                (
-                    "Establish the entity, tax identity, banking, and product coverage before accepting orders. Obtain the EIN directly from the IRS, open an account in the selling entity's name, and separate operating cash, collected sales taxes, and the working-capital reserve in the ledger. Confirm beneficial-owner and signer information with the bank, restrict payment permissions, and use independent verification for supplier bank-detail changes. Obtain resale documentation where applicable and build a state-by-state sales-tax nexus register from actual sales and inventory locations; marketplace collection does not automatically settle obligations for direct sales or stock held at a third-party warehouse. Ask an insurance broker to identify product-liability, cargo, cyber, and recall coverage, exclusions, deductibles, and territory restrictions for the actual SKU list. General liability alone may exclude the precise imported category being purchased. Preserve supplier invoices, authorization letters, lot identifiers, and manufacturer contact records alongside each product master. Under 15 U.S.C. 2064(b), covered businesses must report qualifying product hazards promptly; create an escalation owner and reporting procedure before inventory arrives. Prefer a narrow, supportable category over a catalog whose safety, tax, and insurance requirements exceed the launch budget."
-                ),
-            ],
-            "table": {
-                "caption": "Reserve-First Startup Envelopes: Each Column Reconciles to Its Stated Capital",
-                "headers": [
-                    "Capital function",
-                    "$30,000 lean launch",
-                    "$100,000 controlled launch",
-                    "$250,000 expanded launch",
-                ],
-                "rows": [
-                    [
-                        "Liquid working capital, excluding all opening inventory",
-                        "$18,000 retained for replenishment, settlement exposure, and import surprises",
-                        "$60,000 retained for replenishment, settlement exposure, and import surprises",
-                        "$150,000 retained for replenishment, settlement exposure, and import surprises",
-                    ],
-                    [
-                        "Opening inventory purchased only against validated demand",
-                        "$5,000 purchases a narrow assortment with documented supplier authorization",
-                        "$18,000 purchases proven variants without funding speculative catalog breadth",
-                        "$45,000 purchases deeper proven stock across separately tracked suppliers",
-                    ],
-                    [
-                        "Entity setup, accounting setup, and initial insurance",
-                        "$2,000 funds formation costs and category-specific initial coverage",
-                        "$5,000 funds stronger coverage and documented import-accounting setup",
-                        "$10,000 funds broader coverage with specialist sourcing review",
-                    ],
-                    [
-                        "Production stack configuration and limited integration work",
-                        "$1,000 funds native configuration before commissioning custom code",
-                        "$3,000 funds tested connectors and a documented exception queue",
-                        "$8,000 funds integration hardening and warehouse reconciliation work",
-                    ],
-                    [
-                        "Acquisition experiments released through measured contribution tests",
-                        "$2,000 tests one audience and one tightly bounded offer",
-                        "$8,000 tests proven offers using weekly cohort contribution reviews",
-                        "$22,000 expands validated offers without assuming constant acquisition costs",
-                    ],
-                    [
-                        "Samples, packaging trials, and warehouse receiving validation",
-                        "$1,000 validates samples, carton labels, and initial handling quality",
-                        "$3,000 validates additional variants and documented return disposition",
-                        "$7,000 validates multiple lanes and category-specific packaging requirements",
-                    ],
-                    [
-                        "Separate launch contingency outside the protected float",
-                        "$1,000 absorbs setup corrections without borrowing refund reserves",
-                        "$3,000 absorbs integration corrections and early operating exceptions",
-                        "$8,000 absorbs larger setup corrections without weakening reserve policy",
-                    ],
-                ],
-            },
-        },
-        {
-            "heading": "2. Configure twelve layers without creating twelve separate operating systems",
-            "epistemic_status": "operating_framework",
-            "paragraphs": [
-                (
-                    "Use Shopify as the order record, the warehouse system as the physical-stock record, and QuickBooks as the accounting record. Each field needs one authoritative writer. The twelve-layer matrix provides exact planning tiers and price inputs, not verified current vendor quotations; confirm checkout terms, regional availability, taxes, and limits before committing cash. Shopify Basic at $39 monthly, two Google Workspace Business Starter seats at $8.40 each on flexible billing, 1Password Teams Starter Pack at a $19.95 monthly equivalent billed annually, QuickBooks Online Simple Start at $38 monthly, and Gorgias Starter at $10 monthly total $123.75 monthly equivalent. The remaining listed tiers add no subscription charge under their stated inclusion conditions. Annual billing creates an upfront cash payment, so amortized subscription expense is not the same as the first month's cash outflow. Domain registration, payment processing, postage, warehouse invoices, implementation, and usage overages remain outside this subtotal. Reserve $300 monthly in the lean overhead example for this stack plus modest headroom, then replace every planning input with an accepted order form. Avoid annual commitments until a workflow survives actual orders, refunds, and reconciliation."
-                ),
-                (
-                    "Keep fulfillment architecture simpler than the vendor catalog. Obtain written quotes from ShipBob and at least one independent regional 3PL using identical carton dimensions, unit weights, SKU counts, monthly orders, storage assumptions, receiving frequency, and return volumes. Neither a platform connection nor a pick fee represents the complete delivered cost. Compare receiving, storage, first and additional picks, packaging, postage markup, long-term storage, account minimums, removal charges, and return inspection separately. For an illustrative 500-order month, $1,500 receiving and storage allocation plus $2,000 pick-and-pack charges and $3,500 postage creates $7,000, or $14 per order, before returns. These are underwriting inputs, not a quoted vendor tariff. Pirate Ship provides a manual exception and pilot-shipping lane, not a second automatic fulfillment source for orders already released to the warehouse. Assign one fulfillment owner per order and require cancellation acknowledgment before rerouting. Use Shopify Flow for internal tags and alerts; do not assume it supplies every warehouse connector. Budget a paid connector only after validating the required API scopes and replay behavior. Inventory buffers should reflect actual receiving latency rather than an arbitrary percentage copied across every SKU."
-                ),
-                (
-                    "Make automation reversible and observable. Store the source order identifier, warehouse acknowledgment, shipment identifier, refund identifier, and last successful reconciliation timestamp in an exportable exception ledger. Use idempotency keys where supported, and otherwise compare stable business identifiers before retries; repeated webhooks must not create repeated shipments or refunds. Export daily orders, payouts, inventory adjustments, and open returns to restricted storage, then reconcile counts and money before deleting anything. Give the 3PL only the customer data needed to fulfill orders, and give analysts read-only extracts rather than administrator credentials. Enable multifactor authentication, prohibit shared owner accounts, and keep emergency recovery credentials in the password manager. Klaviyo's Free tier is a pilot tool with 250 active profiles and 500 monthly email sends; suppress unsubscribed addresses and forecast the paid threshold before importing historical customers. Separate transactional updates from marketing, and implement accurate sender identity and opt-out handling under 15 U.S.C. 7704. Native returns should record received condition and disposition, not merely print labels. Add paid software only when measured labor savings, recovered contribution, or reduced loss exceeds its full recurring cost and implementation burden."
-                ),
-            ],
-            "table": {
-                "caption": "Twelve-Layer Production Stack: Exact Planning Inputs Requiring Procurement Verification",
-                "headers": [
-                    "Layer and named vendor",
-                    "Tier and modeled subscription price",
-                    "Production responsibility and limit",
-                    "Cheaper or simpler operating alternative",
-                ],
-                "rows": [
-                    [
-                        "Storefront and order ledger using Shopify Basic",
-                        "Basic monthly billing: $39 USD before taxes and transaction charges",
-                        "Own checkout and order identity; processing remains separately charged",
-                        "Use the included theme rather than paid design applications",
-                    ],
-                    [
-                        "DNS and edge configuration using Cloudflare Free",
-                        "Free plan: $0 monthly for the selected baseline services",
-                        "Manage DNS deliberately; preserve Shopify's supported domain connection configuration",
-                        "Use registrar DNS when no additional edge features are needed",
-                    ],
-                    [
-                        "Business identity and mail using Google Workspace",
-                        "Business Starter flexible billing: $8.40 per user monthly; two users",
-                        "Separate purchasing and support identities through aliases and controlled access",
-                        "Use aliases instead of purchasing seats for unattended inboxes",
-                    ],
-                    [
-                        "Credential custody using 1Password Teams Starter Pack",
-                        "Teams Starter Pack: $19.95 monthly equivalent, with annual billing assumed",
-                        "Store named-user credentials and recovery material within controlled vaults",
-                        "Bitwarden Free individual accounts reduce fees but lose shared administration",
-                    ],
-                    [
-                        "Accounting ledger using QuickBooks Online Simple Start",
-                        "Simple Start planning price: $38 monthly before promotional discounts",
-                        "Reconcile bank and processor activity; do not assume inventory costing",
-                        "Use a controlled bookkeeping workbook until transaction complexity warrants migration",
-                    ],
-                    [
-                        "Internal workflow automation using the Shopify Flow application",
-                        "Shopify Flow: $0 additional subscription on the assumed Basic eligibility",
-                        "Tag exceptions and send alerts within documented plan capabilities",
-                        "Use daily saved reports before building fragile multistep automation",
-                    ],
-                    [
-                        "Sellable inventory controls using native Shopify inventory",
-                        "Native inventory tools: $0 additional subscription within Shopify Basic",
-                        "Publish sellable balances while preserving warehouse authority over physical counts",
-                        "Use one warehouse location before adding multiple synchronization paths",
-                    ],
-                    [
-                        "Pilot parcel labels and exceptions using Pirate Ship",
-                        "Free software account: $0 monthly; purchased postage remains payable",
-                        "Purchase supported USPS and UPS labels for manually assigned exceptions",
-                        "Use warehouse labels exclusively when negotiated delivered costs are lower",
-                    ],
-                    [
-                        "Return records using native Shopify return management",
-                        "Native return management: $0 additional subscription within the selected plan",
-                        "Track approved returns and refunds; inspection requires a warehouse procedure",
-                        "Use a structured support form rather than another returns portal",
-                    ],
-                    [
-                        "Lifecycle email experiments using Klaviyo Free",
-                        "Free tier: $0 monthly, 250 active profiles, 500 email sends",
-                        "Test post-purchase retention while respecting suppression and sending limits",
-                        "Use transactional order updates until a measurable marketing hypothesis exists",
-                    ],
-                    [
-                        "Customer support triage using Gorgias Starter",
-                        "Starter planning tier: $10 monthly including 50 billable tickets",
-                        "Centralize order-context support; confirm ticket definitions and overage pricing",
-                        "Use the existing Workspace support inbox during very low volume",
-                    ],
-                    [
-                        "External availability checks using Better Stack Uptime",
-                        "Free Uptime tier: $0 monthly for selected baseline monitoring",
-                        "Check public availability without exposing customer records in alert payloads",
-                        "Use provider status subscriptions before adding paid incident-management features",
-                    ],
-                ],
-            },
-            "callout": {
-                "kind": "INSIDER PRO-TIPS",
-                "title": "Buy operating leverage, not a stack screenshot",
-                "body": "Reduce recurring commitments by proving the workflow with native features and real warehouse exceptions first.",
-                "items": [
-                    "Ask every 3PL to price the same twenty historical or simulated orders, including oversized cartons and a refused delivery; compare the complete invoice rather than the advertised first-pick charge.",
-                    "Keep low-volume aliases inside existing Workspace seats, but give every person a separate authenticated identity; aliases are not a reason to share passwords.",
-                    "Disable automatic label creation in the backup shipping tool for warehouse-owned orders; retain the backup only for explicitly reassigned exceptions.",
-                    "Set subscription review triggers at measured ticket counts, email profiles, and reconciliation hours; export records before a trial converts to a paid annual commitment.",
-                ],
-            },
-        },
-        {
-            "heading": "3. Pilot mapped recovery and sourcing plays without spending the reserve twice",
-            "epistemic_status": "illustrative_model",
-            "paragraphs": [
-                (
-                    "The freight_detention_audit_contingency play begins with written shipper authorization, read-only UPS, FedEx, or LTL billing access, and licensed customs records, including CBP Form 7501 entry summaries. Normalize invoice number, shipment identifier, billed weight, dimensions, service promise, contract rate, and entry line before flagging discrepancies. For a third-party pilot, $100,000 audited spend yielding $6,000 actually credited at a 40% contingency produces $2,400 operator fee revenue; $900 review and processing cost leaves $1,500 contribution before overhead. The modeled split sits within the specified 35–50% range. Neither audited spend nor the full recovery is operator revenue. Recoveries on the retailer's own shipments generally reduce the related expense rather than becoming retail sales. Service refunds depend on applicable guarantees, contractual waivers, exclusions, and claim deadlines. If that lane closes, pivot toward dimensional-weight evidence, duplicate charges, LTL classification errors, and contract-rate discrepancies. Do not interpret the play's non-waivable shorthand as a universal legal entitlement; validate each claim against its governing terms. Duty drawback requires a separate eligibility and document test under 19 U.S.C. 1313 and 19 CFR Part 190. Imported stock alone does not establish a drawback claim."
-                ),
-                (
-                    "The authorized_distributor_grey_market_diversion_arbitrage play treats claimed 35–60% regional price differences as a sourcing hypothesis requiring invoices, not as an automatic margin. Foreign purchasing entities and authentic goods do not erase trademark restrictions, labeling duties, contractual limitations, or product-safety obligations. Kirtsaeng v. John Wiley & Sons interprets copyright first sale for lawfully made copies under 17 U.S.C. 109(a); it does not supply blanket clearance for every branded import. Evaluate 19 CFR 133.23, material differences, warranty coverage, packaging, and destination-market authorization before funding a purchase. An illustrative 100-unit pilot buys at $55 per unit against a documented $100 comparison price, a 45% acquisition discount. Add $6 inbound freight, $8 duty and brokerage, and $3 inspection and relabeling per unit, producing $72 landed cost. A $90 sale less $5 outbound and selling expense leaves $13 contribution per unit, or $1,300 across the pilot, before fixed overhead and losses. The $8 import input is illustrative; determine actual classification, origin, valuation, and current tariffs before purchase. One unbudgeted $10 charge per unit reduces contribution to $300, demonstrating why purchase-price discounts are not sufficient underwriting."
-                ),
-                (
-                    "Use globally identical, universal-packaging SKUs only after validating that identity through manufacturer documentation and physical samples. Universal packaging is a screening aid, not proof of import admissibility or channel permission. Favor documented direct B2B purchase orders from qualified regional wholesalers or off-price retailers over dependence on one marketplace account; TJX, Costco, and Burlington are potential channels, not assumed buyers. Require the actual buyer's purchase terms, acceptance criteria, deductions, and payment schedule before considering container quantities. The 100-unit pilot requires $7,200 landed inventory cash and another $500 selling-cost allowance before collecting $9,000. A forty-five-day buyer term extends exposure beyond physical delivery, while a return right can reopen it after payment. Retain the original reserve floor by staging purchases or funding them from the separate inventory envelope. Medical consumables, diabetic test strips, cosmetics, and fragrances need category-specific review of labeling, storage, expiry, transport, and applicable FDA requirements; exclude unsupported categories rather than relabeling blindly. If authorization, admissibility, or insurance cannot be established, revert to domestic authorized-dealer stock. Keep audit-service income and sourcing pilots in separate ledgers, and do not add either model's contribution to the canonical scorecard without rebuilding the complete case."
-                ),
-            ],
-            "table": {
-                "caption": "Mapped-Play Evidence, Unit Economics, and Capital-Preserving Fallbacks",
-                "headers": [
-                    "Pilot component and boundary",
-                    "Required evidence before money moves",
-                    "Concrete economic or cash test",
-                    "Failure response preserving operating capital",
-                ],
-                "rows": [
-                    [
-                        "Carrier audit intake covers explicitly authorized shipper accounts",
-                        "Signed authority, read-only credentials, contract schedules, and original billing records",
-                        "$100,000 audited spend is exposure reviewed, never recognized revenue",
-                        "Stop ingestion immediately when authority or account scope cannot be demonstrated",
-                    ],
-                    [
-                        "Service refunds require current contractual eligibility and timely claims",
-                        "Shipment timestamps, service commitments, exception codes, and applicable waiver language",
-                        "$6,000 credited recovery supports $2,400 fees at a 40% split",
-                        "Shift toward duplicate charges, measured dimensions, classification, and contract discrepancies",
-                    ],
-                    [
-                        "Duty drawback remains distinct from ordinary carrier billing adjustments",
-                        "Entry summaries, qualifying export or destruction evidence, and claimant eligibility",
-                        "Recognize contingent fees under contract only after the required recovery milestone",
-                        "Exclude unsupported entries and route eligible work through qualified customs specialists",
-                    ],
-                    [
-                        "Distributor sourcing starts with a documented 100-unit product pilot",
-                        "Authenticity chain, destination-market requirements, sample inspection, and written purchase terms",
-                        "$5,500 purchase plus $1,700 landing costs creates $7,200 inventory exposure",
-                        "Reject untraceable stock and buy through domestic authorized distribution instead",
-                    ],
-                    [
-                        "Direct wholesale placement requires an actual accepted buyer order",
-                        "Buyer identity, credit assessment, deductions schedule, acceptance rules, and payment terms",
-                        "$9,000 sales less $7,200 goods and $500 selling costs leaves $1,300",
-                        "Reduce lot size when buyer terms consume excessive protected liquidity",
-                    ],
-                    [
-                        "Globally identical packaging reduces differences without proving admissibility",
-                        "Manufacturer specifications, warranty terms, lawful labeling, and category-specific insurance coverage",
-                        "An extra $1,000 pilot cost cuts modeled contribution from $1,300 to $300",
-                        "Stop the imported category when lawful sale and coverage remain unresolved",
-                    ],
-                ],
-            },
-        },
-        {
-            "heading": "4. Launch only after cash, inventory, refunds, and evidence reconcile",
-            "epistemic_status": "operating_framework",
-            "paragraphs": [
-                (
-                    "Run a controlled order rehearsal before sending paid traffic. Create test cases for a normal shipment, partial shipment, address correction, cancellation, duplicate webhook, out-of-stock item, refused parcel, damaged return, and chargeback evidence request. Use sandbox payment paths where available; obtain authorization for any live payment and refund tests. Trace each case from checkout through warehouse acknowledgment, tracking, settlement, accounting, and customer communication. Record expected versus actual outcomes and the person responsible for every exception. Under the FTC Mail, Internet, or Telephone Order Merchandise Rule, 16 CFR Part 435, maintain a reasonable basis for shipment promises and follow the applicable delay-notice, cancellation, and refund requirements. A marketing page promising two-day shipping does not become accurate because a connector accepted the order. Set promises from warehouse cutoffs, stock availability, and carrier service, then review them when the fulfillment lane changes. Where no shipping time is stated, the rule generally uses thirty days; do not treat that default as a desirable service target. Freeze new acquisition if accepted orders exceed verified shipping capacity, and retain evidence of the customer communications actually sent."
-                ),
-                (
-                    "Stress the cash forecast using explicit events rather than a vague contingency percentage. Model a seven-day processor payout hold, a supplier demanding full prepayment, a ten-percentage-point increase in returns, and a thirty-day receiving delay separately, then combine the two most plausible events. At $1,125,000 annual net revenue, an even daily run rate is about $3,082.19; seven days corresponds to approximately $21,575 of gross settlement exposure before processor fees and other adjustments. Actual exposure depends on the payout schedule and daily sales, so replace this approximation with processor exports. A $60,000 working-capital reserve is not excessive when this single event can immobilize more than one third of it. For stockouts, suspend affected ads, update sellable inventory, and offer customers the required choices rather than accepting orders against imaginary inbound stock. For product-liability signals, quarantine the lot, preserve complaint evidence, notify the designated owner, and evaluate reporting obligations immediately. Maintain alternate domestic sourcing for the highest-contribution products, but do not assume an alternate supplier can deliver without verified stock and terms. Record the cost of each fallback in the contribution model before calling it resilience."
-                ),
-                (
-                    "Release launch spending in small, reversible increments. The first batch should validate receiving accuracy, delivered cost, customer response, and refund handling rather than maximize revenue. Review the dashboard daily during the first two weeks, then weekly after exceptions stabilize: liquid reserve, stock cover, orders awaiting acknowledgment, contribution after acquisition, refund cohorts, settlement variance, and support backlog. Use mature cohorts when judging acquisition economics; a seven-day advertising report can conceal returns that arrive in the following month. Require a written explanation for every unreconciled payout and every negative inventory adjustment. The launch owner signs the evidence register, the bookkeeping owner verifies money movement, and the warehouse contact confirms physical execution; these can be responsibilities rather than new hires. Keep the canonical staffing and profit scenarios visible, but distinguish a successful rehearsal from evidence that an annual margin has been achieved. Increase purchase orders only when demand, cash timing, and mature contribution support the next tranche. If the reserve falls below 50% of initial capital, pause discretionary expansion and rebuild liquidity before signing another annual software contract or committing to container-scale sourcing."
-                ),
-            ],
-            "table": {
-                "caption": "Pre-Launch Evidence Register and Explicit Stop Conditions",
-                "headers": [
-                    "Readiness area and accountable role",
-                    "Evidence required before customer acquisition",
-                    "Pass condition measured with actual records",
-                    "Stop condition and immediate operating response",
-                ],
-                "rows": [
-                    [
-                        "Capital readiness owned by the operating cash controller",
-                        "Bank balances, committed purchase payments, tax liabilities, and thirteen-week forecast",
-                        "Protected reserve starts at 60% with every commitment explicitly scheduled",
-                        "Pause expansion when projected liquidity breaches the 50% initial-capital floor",
-                    ],
-                    [
-                        "Inventory readiness owned jointly by purchasing and warehouse",
-                        "Receiving report, barcode mapping, lot records, physical count, and location export",
-                        "Every offered pilot SKU reconciles between physical stock and sellable quantity",
-                        "Suppress affected listings when physical availability cannot support the published quantity",
-                    ],
-                    [
-                        "Routing readiness owned by the integration administrator",
-                        "Rehearsal orders show unique identifiers, acknowledgments, cancellation handling, and replay outcomes",
-                        "Duplicate events create no duplicate shipments or duplicate refund instructions",
-                        "Disable automatic release and route new orders through controlled manual review",
-                    ],
-                    [
-                        "Money readiness owned by bookkeeping and payment administration",
-                        "Processor settlements, fee lines, tax records, refund records, and bank deposits",
-                        "Test money movement reconciles completely with separately classified fees and liabilities",
-                        "Investigate each variance before increasing traffic or extending supplier commitments",
-                    ],
-                    [
-                        "Product readiness owned by purchasing and safety escalation",
-                        "Authorization chain, category requirements, insurance schedule, labeling evidence, and complaint procedure",
-                        "Every launched SKU has documented lawful sourcing and applicable coverage",
-                        "Quarantine unsupported lots and remove affected products from active acquisition",
-                    ],
-                    [
-                        "Customer readiness owned by support and fulfillment management",
-                        "Published shipping promises, delay templates, return instructions, and support response rehearsal",
-                        "Operators successfully execute shipment delay, cancellation, and damaged-return test cases",
-                        "Reduce sales intake when response backlog threatens promised customer handling",
-                    ],
-                ],
-            },
-            "callout": {
-                "kind": "OPERATOR GATE",
-                "title": "Four pre-flight verifications before paid traffic",
-                "body": "Each verification requires saved evidence and an accountable owner, not a verbal assurance from a vendor.",
-                "items": [
-                    "Cash verification: reconcile opening bank balances, confirm the 60% reserve allocation, and show that committed payments do not breach the 50% expansion-stop floor.",
-                    "Order verification: demonstrate one shipment per authorized order across duplicate webhook, cancellation, stockout, and manual-reroute tests.",
-                    "Product verification: attach sourcing documents, applicable import and safety evidence, lot traceability, and insurance coverage for every launch SKU.",
-                    "Customer-money verification: complete a shipment-delay notification, cancellation, refund, and processor-to-bank reconciliation without unexplained differences.",
-                ],
-            },
-            "sop_steps": [
-                {
-                    "step": 1,
-                    "title": "Freeze the opening capital ledger",
-                    "action": "Assign every startup dollar to the selected capital envelope.",
-                    "detail": "Record initial capital, reserve suballocations, opening inventory, prepaid subscriptions, and all supplier commitments; exclude expected recoveries from available cash.",
-                },
-                {
-                    "step": 2,
-                    "title": "Configure minimal access and authoritative records",
-                    "action": "Create named accounts, enable multifactor authentication, and map each system's ownership.",
-                    "detail": "Document Shopify order ownership, warehouse physical-stock ownership, accounting ownership, credential recovery, connector scopes, and the manual fallback for each integration.",
-                },
-                {
-                    "step": 3,
-                    "title": "Rehearse the full exception lifecycle",
-                    "action": "Execute the order, shipment, cancellation, return, and settlement test suite.",
-                    "detail": "Save identifiers and screenshots or exports for each expected result; repair duplicate processing, inventory drift, and unexplained settlement differences before traffic begins.",
-                },
-                {
-                    "step": 4,
-                    "title": "Release a bounded launch tranche",
-                    "action": "Authorize only the first measured acquisition and inventory experiment.",
-                    "detail": "Review daily cash and fulfillment evidence, evaluate mature contribution cohorts, and expand only when the reserve floor and customer-service promises remain supportable.",
-                },
-            ],
-        },
-    ],
-    "pull_quote": "The leanest commerce stack protects the next inventory cycle before it buys the next application.",
-    "diagram_id": "diag-07",
-    "action_checklist": [
-        "Choose the $30,000, $100,000, or $250,000 capital envelope and move 60% into explicitly tracked working-capital allocations before placing opening orders.",
-        "Replace all twelve stack planning inputs with accepted vendor terms, including annual cash payments, usage limits, taxes, and connector charges.",
-        "Obtain comparable written 3PL quotes using identical order and carton data, then reconcile a pilot invoice to delivered cost per order.",
-        "Build separate evidence and accounting folders for freight audit fees, own-shipment recoveries, imported inventory, and direct retail revenue.",
-        "Complete sourcing, product-safety, import, sales-tax, insurance, and customer-communication checks for every SKU entering the launch assortment.",
-        "Run the four-step rehearsal, save the evidence register, and release acquisition spending only while the forecast preserves the 50% initial-capital reserve floor.",
-    ],
-    "statutory_citations": [
-        {
-            "title": "16 CFR Part 435 — Mail, Internet, or Telephone Order Merchandise Rule",
-            "url": "https://www.ecfr.gov/current/title-16/chapter-I/subchapter-D/part-435",
-            "relevance": "Requires a reasonable basis for shipping representations and establishes applicable delay-notice, cancellation, and refund procedures for covered orders.",
-        },
-        {
-            "title": "15 U.S.C. 2064(b) — Reporting of substantial product hazards",
-            "url": "https://www.law.cornell.edu/uscode/text/15/2064",
-            "relevance": "Supports the product-hazard escalation procedure for manufacturers, importers, distributors, and retailers subject to the reporting duty.",
-        },
-        {
-            "title": "15 U.S.C. 7704 — Requirements for commercial electronic mail",
-            "url": "https://www.law.cornell.edu/uscode/text/15/7704",
-            "relevance": "Governs commercial email practices including accurate transmission information, required disclosures, and functioning opt-out handling.",
-        },
-        {
-            "title": "19 U.S.C. 1313 — Drawback and refunds",
-            "url": "https://www.law.cornell.edu/uscode/text/19/1313",
-            "relevance": "Establishes statutory drawback categories and conditions; imported inventory alone does not establish eligibility for a refund.",
-        },
-        {
-            "title": "19 CFR Part 190 — Modernized drawback",
-            "url": "https://www.ecfr.gov/current/title-19/chapter-I/part-190",
-            "relevance": "Provides operating requirements for applicable drawback claims, supporting records, and qualifying transactions.",
-        },
-        {
-            "title": "17 U.S.C. 109(a) — Copyright first-sale limitation",
-            "url": "https://www.law.cornell.edu/uscode/text/17/109",
-            "relevance": "Provides the copyright first-sale framework addressed in Kirtsaeng; it does not replace trademark, customs, labeling, or product-safety analysis.",
-        },
-        {
-            "title": "19 CFR 133.23 — Restrictions on importation of gray market articles",
-            "url": "https://www.ecfr.gov/current/title-19/chapter-I/part-133/subpart-C/section-133.23",
-            "relevance": "Requires examination of protected trademarks and applicable gray-market restrictions before committing cash to branded foreign-market goods.",
-        },
-        {
-            "title": "21 U.S.C. 352 — Misbranded drugs and devices",
-            "url": "https://www.law.cornell.edu/uscode/text/21/352",
-            "relevance": "Identifies misbranding requirements relevant to covered medical consumables, including labeling issues that authenticity alone does not resolve.",
-        },
-    ],
-}
+CHAPTER_4 = {'id': 'Q4',
+ 'chapter_id': 'Q4',
+ 'chapter_number': 4,
+ 'question_number': 4,
+ 'slug': 'landed-cost-duties-tariffs-true-cost-of-goods',
+ 'question_prompt': 'What do my imported goods really cost once freight, duties, tariffs, and shipping '
+                    'dimensions are added, and how does that change my margins?',
+ 'kicker': 'Q4 / THE BIG MONEY PLAYBOOKS',
+ 'title': 'Landed Cost: Duties, Tariffs, and the True Cost of Goods',
+ 'subtitle': 'Landed-cost formulas for US, Canadian, and Dubai imports, tariff and de minimis (Section '
+             '321) changes, customs mistakes importers make, multi-country calculators, capitalizing '
+             'estimated duty and reconciling broker bills, jewelry set costing, dimensional-weight '
+             'overcharges, and margin models after shipping',
+ 'layout_template': 'comparison_matrix',
+ 'reading_time_minutes': 15,
+ 'executive_summary': 'Forwarders, customs brokers, inventory-software operators and e-commerce finance '
+                      'modelers agree on one rule: the supplier invoice is only the starting point. Landed '
+                      'cost per unit is goods plus freight, insurance, duty, taxes, fees and delivery, '
+                      "divided by units received. CandiMentor's worked example turns a $10 supplier price "
+                      'into $12 per unit. Trade Counsel stacks 3.4%, 7.5% and 12.5% layers into 23.4% duty '
+                      'on Chinese plastic bins. ICandT shows a $100 China gearbox quote landing at '
+                      '$190.17. SKUio puts estimated duty into stock cost at receipt and corrects it once '
+                      "the broker's bill arrives. The practitioners split on three questions: "
+                      'FOB-valuation countries like the US versus CIF-valuation countries, DDP quotes '
+                      'versus export pricing, and whether to allocate shared freight by value or by '
+                      'weight. Racklify adds a parcel point: dimensional-weight pricing means you pay for '
+                      'the whole box, so fill it.',
+ 'key_metrics': [{'label': 'True unit cost versus supplier price',
+                  'metric': 'True unit cost versus supplier price',
+                  'value': '$12 per unit versus $10 supplier price',
+                  'confidence': 'attributed_practitioner_claim',
+                  'context': '$10,000 of product, $1,200 freight, $500 duty and $300 fees on 1,000 units '
+                             'produce a $12,000 landed cost.',
+                  'source': 'Intel by CandiMentor ([CvHvBnjwlJg @ 00:05:57])'},
+                 {'label': 'Stacked US duty on Chinese plastic bins',
+                  'metric': 'Stacked US duty on Chinese plastic bins',
+                  'value': '23.4% ($2,340 on $10,000 of goods)',
+                  'confidence': 'attributed_practitioner_claim',
+                  'context': '3.4% normal rate plus 7.5% original Section 301 plus 12.5% newer Section 301 '
+                             'since July 2026, charged on goods value only.',
+                  'source': 'Trade Counsel ([-WXoF_u08g0 @ 00:01:56])'},
+                 {'label': 'Offshore gearbox landed cost',
+                  'metric': 'Offshore gearbox landed cost',
+                  'value': '$100 China quote lands at $190.17 versus $117.63 from a US supplier',
+                  'confidence': 'attributed_practitioner_claim',
+                  'context': 'With three-year currency risk the China part reaches 193; the US buy is '
+                             'shown saving $3.77 million over five years.',
+                  'source': 'ICandT ([ebKN15qGOxo @ 00:05:45])'},
+                 {'label': 'Customs duty share of jewelry landed cost',
+                  'metric': 'Customs duty share of jewelry landed cost',
+                  'value': '$1.65 of an $11.93 unit landed cost, close to 14%',
+                  'confidence': 'attributed_practitioner_claim',
+                  'context': 'Landed Cost Breakdown report across 56,029 units sold over 365 days for the '
+                             'demo jewelry brand.',
+                  'source': 'SKUio ([DFZ8XDRkuCE @ 00:04:33])'}],
+ 'sections': [{'section': 1,
+               'heading': 'The Practitioner Consensus',
+               'paragraphs': ['Forwarders, brokers and software operators all start from the same blunt '
+                              "point: the price on the supplier's invoice is not what the goods cost you. "
+                              'RRA Group calls the invoice only the starting point. It defines landed cost '
+                              'as the goods, freight, insurance, customs brokerage, duties and taxes, and '
+                              'delivery into your warehouse [007vdtJ5XrY @ 00:00:00]. Intel by CandiMentor '
+                              'draws the same line. Purchase price tells you what the supplier charges. '
+                              'Landed cost tells you what the product costs after it has traveled through '
+                              'the whole inbound supply chain. CandiMentor warns that logistics and import '
+                              'costs are where many estimates go wrong, because one shipment can pass '
+                              'through several carriers, brokers, ports and government charges '
+                              '[CvHvBnjwlJg @ 00:00:17]. Witners Shipping, which clears goods into Dubai, '
+                              'uses the same stack: product cost, international freight and insurance, '
+                              'customs duty, import VAT, then the handling, clearance and delivery charges '
+                              'your providers quote [8I51jDAoe-E @ 00:00:18]. US Customs Clearing lists '
+                              'the same four groups for American imports: product cost, freight and '
+                              'shipping fees, customs duties and taxes, and handling and documentation '
+                              'fees from brokers and forwarders [DLfvskykJiY @ 00:00:41]. The baseline for '
+                              'an operator is simple. If a cost touches the goods between the factory and '
+                              'your shelf, it belongs in the number.',
+                              'The second point of agreement is that the tariff code drives everything '
+                              'else. Whoever is named as the importer carries the liability for getting it '
+                              'right. Trade Counsel explains that the importer of record is the company '
+                              'customs holds responsible for the duty. Every product has a 10-digit HTS '
+                              'code that sets the rate. A supplier may suggest a code, but if it is wrong '
+                              'you can owe the difference plus penalties [-WXoF_u08g0 @ 00:00:54]. John '
+                              'Tracy of the US Commercial Service, speaking at the New York SBDC, adds '
+                              'that harmonized codes are meant to match at the first six digits in every '
+                              'country, while each country sets the last four. Each destination also keeps '
+                              'its own rules for interpreting codes, so the code you use in the US at '
+                              'export may not be the one the foreign customs office applies [LBisYGOUrx0 @ '
+                              '00:10:21]. ICandT stresses how fast this moves. Tariffs change almost every '
+                              "month, duties stack, some combine and some don't, and metal content and the "
+                              'HTS code can change the answer overnight [ebKN15qGOxo @ 00:01:21]. Witners '
+                              'Shipping makes the same point for the Gulf. The 5% common tariff is the '
+                              'default, but the HS code decides whether goods carry a different rate, such '
+                              'as 100% on tobacco or 50% on alcohol [8I51jDAoe-E @ 00:01:29].',
+                              'Third, every operator turns the shipment total into a per-unit figure and '
+                              'treats the first number as an estimate that real bills will correct. Intel '
+                              'by CandiMentor divides total landed cost by the units received to get a '
+                              'realistic cost per sellable unit. Its best practice is to define the scope, '
+                              'write down your assumptions, use one method consistently, and check '
+                              'estimates against actual bills so the model improves over time [CvHvBnjwlJg '
+                              '@ 00:06:18]. RRA Group tells importers to mark every line as an estimate, '
+                              'note what is still unknown, update the sheet when real quotes arrive, and '
+                              'date the estimate because rates change. The landed cost per unit is then '
+                              'the figure to compare with the selling price [007vdtJ5XrY @ 00:01:18]. John '
+                              'Tracy, drawing on years in freight forwarding, labels any landed cost he '
+                              'gives a buyer as estimated. Rates fluctuate, and someone can miss a line, '
+                              'such as a 4-cents-per-kilo inspection fee when customs examines the cargo '
+                              "[LBisYGOUrx0 @ 00:20:54]. SKUio's jewelry demo shows why the timing "
+                              'matters. Brands price a piece on its factory cost, the duty shows up weeks '
+                              "later on the broker's bill, and until then every margin report looks better "
+                              'than the truth [DFZ8XDRkuCE @ 00:00:20].'],
+               'table': {'caption': 'Where the practitioners agree on landed cost',
+                         'headers': ['Consensus Point',
+                                     'What The Practitioner Reported',
+                                     'Operator Move',
+                                     'Expert Source'],
+                         'rows': [['The supplier invoice is only the starting point',
+                                   'Landed cost covers goods, freight, insurance, brokerage, duties, taxes '
+                                   'and delivery to your warehouse',
+                                   'Build every quote up from the invoice; never price from the factory '
+                                   'number alone',
+                                   'RRA Group | Freight Forwarding & Logistics ([007vdtJ5XrY @ 00:00:00])'],
+                                  ['Per-unit cost is the number you actually use',
+                                   '$10,000 of goods plus $1,200 freight, $500 duty and $300 fees comes to '
+                                   '$12 per unit',
+                                   "Divide the shipment's total landed cost by the units actually received "
+                                   'at the dock',
+                                   'Intel by CandiMentor ([CvHvBnjwlJg @ 00:05:57])'],
+                                  ['The HTS code sets both the duty rate and the liability',
+                                   'If the supplier-suggested code is wrong, the importer of record owes '
+                                   'the difference plus penalties',
+                                   'Own the classification yourself before the first order leaves the '
+                                   'factory',
+                                   'Trade Counsel ([-WXoF_u08g0 @ 00:01:14])'],
+                                  ['In most markets, duty and VAT are charged on CIF value',
+                                   'Dubai charges 5% duty on CIF value, then 5% import VAT on CIF plus '
+                                   'duty',
+                                   'Calculate VAT on top of duty, not on the invoice price alone',
+                                   'Witners Shipping ([8I51jDAoe-E @ 00:02:06])'],
+                                  ['Insure the cargo, because carriers can limit their liability',
+                                   'Third-party cargo insurance costs roughly 1% of invoice value per '
+                                   'shipment',
+                                   'Add an insurance line, or accept that you are carrying the risk '
+                                   'yourself',
+                                   'New York SBDC ([LBisYGOUrx0 @ 00:08:54])'],
+                                  ['Cost of goods must include duty, testing, inspection and insurance',
+                                   'These extras can be around 2% or more than 10%, enough to wipe out the '
+                                   'margin',
+                                   'Put duty and inspection into cost of goods before you set the selling '
+                                   'price',
+                                   'John Galt Finance ([8RBtd8u_F-I @ 00:02:36])'],
+                                  ['Date your estimates and check them against real bills',
+                                   'Rates change, so mark every estimate and update it when real quotes '
+                                   'arrive',
+                                   'Date each worksheet and correct it against broker invoices',
+                                   'RRA Group | Freight Forwarding & Logistics ([007vdtJ5XrY @ '
+                                   '00:01:18])']]}},
+              {'section': 2,
+               'heading': 'Exact Street Mechanics, Tools & Numbers',
+               'paragraphs': ['The first mechanic is the valuation base. The same duty rate produces a '
+                              'different bill depending on what it is charged on. Witners Shipping walks '
+                              'through the Dubai sequence. Customs value is the transaction value plus '
+                              'transport, handling and insurance to the GCC border, which in practice is '
+                              'CIF value. The common tariff is 5% of CIF, and import VAT is 5% of CIF plus '
+                              'duty, not of the invoice alone [8I51jDAoe-E @ 00:01:29]. John Tracy runs a '
+                              'German export on the same logic: $10,000 of goods, $120 insurance and '
+                              '$2,500 freight give the CIF value, a 5% tariff comes to $631, and 19% VAT '
+                              'is charged on CIF plus duty before terminal handling and trucking to Munich '
+                              '[LBisYGOUrx0 @ 00:19:19]. Dr. Mercedes Sanchez Moore turns this around for '
+                              'imports. The US, Canada, Australia and New Zealand charge duty on the goods '
+                              'only, while most other countries use CIF. On $10,000 of goods with $3,500 '
+                              'of freight and insurance at 10% duty, the CIF method totals $14,850 against '
+                              '$14,500, a $350 gap [LBisYGOUrx0 @ 00:50:05]. Trade Counsel confirms how '
+                              'this works in the US. Ocean freight and insurance from China stay out of '
+                              'the dutiable value as long as they are shown separately, so $10,000 of bins '
+                              'pays $2,340 [-WXoF_u08g0 @ 00:02:19].',
+                              'The second mechanic is the tariff stack, which practitioners calculate one '
+                              "layer at a time. Trade Counsel's plastic bins from China carry a 3.4% "
+                              'normal rate. On top sits a 7.5% Section 301 tariff in place since 2018 and '
+                              '2019, then a newer Section 301 tariff, in force since July 2026, that adds '
+                              '12.5%. Together they come to 23.4% [-WXoF_u08g0 @ 00:01:56]. CFOmarketIQ '
+                              'shows that the amount a rate applies to can change while the rate stays the '
+                              'same. A $100 part that is about 40% steel paid roughly $10 while the 25% '
+                              'tariff applied only to the steel content. From April it applied to the full '
+                              'customs value, so the duty became $25, fifteen dollars more per unit, and '
+                              'no supplier sent an email about it [nUu4s78pX8E @ 00:00:17]. ICandT builds '
+                              'the metal rule into its workbook. Section 232 applies at a metal share of '
+                              '15% or more by weight, and parts made entirely of metal pay 50% on the full '
+                              'customs value. Base duty and China Section 301 tariffs are then added '
+                              'automatically based on country of origin [ebKN15qGOxo @ 00:04:25]. Shipping '
+                              'Solutions runs the stack in its calculator by entering Chapter 99 codes '
+                              'alongside HS number 6603203000. One Canadian code adds a 25% duty marked '
+                              "'in addition to'. The Vietnam comparison shows zero default duty but a 10% "
+                              'special duty [4868R7AGDp0 @ 00:06:11].',
+                              'The third mechanic covers the fees, the customs bond and the accounting '
+                              'that sit outside the duty rate. CFOmarketIQ puts the merchandise processing '
+                              'fee at about a third of a percent of value. Its cap per entry recently rose '
+                              'to a little over $670, and anything arriving by sea also pays a harbor '
+                              'maintenance fee. Duty is paid when the goods arrive, long before they sell, '
+                              'so a tariff change can squeeze your cash a quarter before it shows up in '
+                              'the P&L [nUu4s78pX8E @ 00:01:39]. Trade Counsel lists the setup. You need '
+                              'an importer number, which for most businesses is the federal tax ID. '
+                              'Shipments worth more than $2,500 need a customs bond, either a single-entry '
+                              'bond or a continuous bond starting at $50,000 of coverage. You also need an '
+                              'Importer Security Filing at least 24 hours before the goods are loaded in '
+                              'China, or customs can claim $5,000 per violation against the bond '
+                              '[-WXoF_u08g0 @ 00:03:17]. SKUio handles the books. Estimated duty goes into '
+                              'stock cost at receipt and is held in an Accrued Customs Duty account until '
+                              "the broker's bill clears it. Stock on hand and units already sold each take "
+                              'their share of any difference. Estimates older than 90 days are flagged, '
+                              'and any still unbilled are released 120 days after the last receipt '
+                              '[BAGqaHYyMlA @ 00:01:19].'],
+               'table': {'caption': 'The numbers, tools and settings practitioners use',
+                         'headers': ['Mechanic',
+                                     'Exact Number Or Setting',
+                                     'How Operators Apply It',
+                                     'Expert Source'],
+                         'rows': [['Dubai customs duty and import VAT',
+                                   '5% duty on CIF value, then 5% import VAT on CIF plus duty',
+                                   'Build the worksheet in order: invoice, freight and insurance, duty, '
+                                   'VAT, then clearance charges',
+                                   'Witners Shipping ([8I51jDAoe-E @ 00:03:17])'],
+                                  ['Stacked US duty on Chinese plastic bins',
+                                   '3.4% + 7.5% + 12.5% = 23.4%, or $2,340 on $10,000 of goods',
+                                   'Show freight and insurance separately so they stay out of the dutiable '
+                                   'value',
+                                   'Trade Counsel ([-WXoF_u08g0 @ 00:02:19])'],
+                                  ['Steel-content repricing on a $100 part',
+                                   'Duty rose from about $10 to $25 once the 25% applied to full customs '
+                                   'value',
+                                   'Flag any item containing steel, aluminum or copper and recheck its '
+                                   'duty on full value',
+                                   'CFOmarketIQ ([nUu4s78pX8E @ 00:00:17])'],
+                                  ["Duty built into a necklace's unit cost",
+                                   '$12.24 factory cost plus $2.26 duty at 11% base plus 7.5% Section 301',
+                                   'Set the tariff code on the product so every purchase order line '
+                                   'carries its estimated duty',
+                                   'SKUio ([DFZ8XDRkuCE @ 00:00:59])'],
+                                  ['Offshore versus US supplier comparison',
+                                   'A $100 China gearbox lands at $190.17; the US supplier lands at '
+                                   '$117.63',
+                                   'Run both landed costs, including cash tied up in transit, before '
+                                   'signing the purchase order',
+                                   'ICandT ([ebKN15qGOxo @ 00:05:45])'],
+                                  ['Dimensional-weight billing on parcel boxes',
+                                   'A 7 x 7 x 14 box divided by the UPS factor of 139 bills as 5 lb',
+                                   'Fill the box you are paying for with multipacks instead of padding '
+                                   'around one unit',
+                                   'Racklify ([NXZLkZ_Gfuk @ 00:01:43])'],
+                                  ['Checking broker bills against booked estimates',
+                                   "Each bill is split by the line's booked estimate; the sample bill came "
+                                   'in about 7% over',
+                                   'Run the Duty Reconciliation report grouped by product to spot items '
+                                   'that keep billing over estimate',
+                                   'SKUio ([BAGqaHYyMlA @ 00:02:49])']]},
+               'callout': {'kind': 'INSIDER PRO-TIPS',
+                           'title': 'Plays That Move the Landed Number',
+                           'body': 'Brokers, finance modelers and fulfillment operators use these to keep '
+                                   'the per-unit cost honest and the duty bill as small as it should be.',
+                           'items': ['Make the supplier list the price of the goods separately from '
+                                     'freight and insurance on the invoice and the bill of lading. If they '
+                                     'send one bundled figure, freight can end up in the dutiable value '
+                                     'when you import into FOB-valuation countries like the US [New York '
+                                     'SBDC — LBisYGOUrx0 @ 00:50:28].',
+                                     'Ask your broker which of your entries are still open. After the '
+                                     'Supreme Court ruling, the trade court ordered refunds on entries '
+                                     'that were not yet final. Once an entry is final, you have roughly '
+                                     'six months to protest it [CFOmarketIQ — nUu4s78pX8E @ 00:02:43].',
+                                     "Build your model on the factory's most expensive volume tier. If the "
+                                     'unit economics work at that price, they will work at the discounted '
+                                     'tier too [John Galt Finance — 8RBtd8u_F-I @ 00:01:58].',
+                                     'Never ship a $2.99 item alone in a dimensional-weight box. '
+                                     "Racklify's hand-soap six-pack sells for $12 to $15 and ships in one "
+                                     'box at almost the same price as a single bottle [Racklify — '
+                                     'NXZLkZ_Gfuk @ 00:04:14].']},
+               'sop_steps': [{'step': 1,
+                              'title': 'Lock the code and the tariff stack',
+                              'action': 'List your top 20 imported items by spend, with country of origin '
+                                        'and tariff code, and flag anything containing steel, aluminum or '
+                                        'copper.',
+                              'detail': "CFOmarketIQ's checklist starts with the top twenty items by "
+                                        'spend, their country of origin and tariff code. It then flags '
+                                        'metal content so you can recheck the duty on full value and reset '
+                                        'standard costs where the duty moved [CFOmarketIQ — nUu4s78pX8E @ '
+                                        '00:03:32].'},
+                             {'step': 2,
+                              'title': 'Build the worksheet in clearance order',
+                              'action': 'Start with the invoice, add freight and insurance to reach CIF '
+                                        'value, apply duty by HS code, add VAT on CIF plus duty, then add '
+                                        'the clearance, port, terminal and delivery quotes. Divide the '
+                                        'total by units.',
+                              'detail': "Witners Shipping's five-step order runs from product cost through "
+                                        'CIF value, duty, 5% VAT on CIF plus duty, and written quotes for '
+                                        'the remaining charges. The total is then divided by the number of '
+                                        'units to get a landed cost per unit [Witners Shipping — '
+                                        '8I51jDAoe-E @ 00:03:17].'},
+                             {'step': 3,
+                              'title': 'Clear the paperwork before the ship loads',
+                              'action': 'Have your broker, bond and Importer Security Filing ready 24 '
+                                        'hours before loading. File the entry within 15 days of arrival '
+                                        'and the entry summary within 10 working days of release.',
+                              'detail': "Trade Counsel's timeline: 15 days from arrival to file the entry, "
+                                        'then CBP Form 7501 filed and duty paid within 10 working days of '
+                                        'release. The $800 duty-free allowance has been suspended since '
+                                        'August 2025, and records must be kept for 5 years [Trade Counsel '
+                                        '— -WXoF_u08g0 @ 00:04:13].'},
+                             {'step': 4,
+                              'title': 'Book estimated duty at receipt and reconcile',
+                              'action': 'Turn on Capitalise estimated customs duty, receive the shipment, '
+                                        "enter the broker's bill split by estimated duty, and review the "
+                                        'Duty Reconciliation report.',
+                              'detail': 'In SKU.io, choose your customs broker as the supplier, type the '
+                                        'invoice number and enter the duty charged. The bill is split by '
+                                        "each line's booked estimate so each variance lands fairly, and "
+                                        "the shipment's status chip changes from Awaiting bill to Cleared "
+                                        '[SKUio — BAGqaHYyMlA @ 00:02:32].'}]},
+              {'heading': 'Where Practitioners Disagree & Alternative Playbooks',
+               'paragraphs': ['The sharpest split is over Delivered Duty Paid. John Tracy of the New York '
+                              'SBDC, a former freight forwarder, says his shop told every client to avoid '
+                              'DDP at all costs: quote CIF to the nearest ocean port or airport, hand the '
+                              'buyer a landed-cost-to-door figure for planning only, and wash your hands '
+                              'of destination duty, taxes and delivery [LBisYGOUrx0 @ 00:24:54]. Dr. '
+                              'Mercedes Sanchez Moore, speaking on the import side of the same webinar, '
+                              'flips it: she still advises buyers to request a DDP price first because it '
+                              'gives a clean read on total cost, then work backward from the raw export '
+                              'price to find where the seller buffered freight and fees [LBisYGOUrx0 @ '
+                              '00:43:45]. Intel by CandiMentor lands between them, noting a DDP invoice '
+                              'looks higher but is more complete, while FOB shifts the main international '
+                              'leg and import process onto the buyer [CvHvBnjwlJg @ 00:02:43]. Trade '
+                              'Counsel adds the liability angle operators miss: under FOB you are the '
+                              'importer of record that customs holds responsible for duty and every '
+                              'detail, while on DDP the seller usually takes that role [-WXoF_u08g0 @ '
+                              '00:00:35]. The working rule: DDP as a price-discovery quote, FOB or CIF as '
+                              'the contract you actually sign.',
+                              'The second split is the duty base itself. Sanchez Moore draws the line by '
+                              'country: the United States, Canada, Australia and New Zealand assess duty '
+                              'on the goods only, while Mexico, Egypt and most of the world charge on '
+                              'cost, insurance and freight; on $10,000 of goods with $3,500 freight and '
+                              'insurance at 10%, the CIF method lands $350 higher [LBisYGOUrx0 @ '
+                              '00:49:00]. Trade Counsel confirms the US side, but with a condition: ocean '
+                              'freight and insurance from China stay out of the value only as long as they '
+                              'are shown separately on the paperwork [-WXoF_u08g0 @ 00:02:19]. Witners '
+                              'Shipping runs the opposite model for Dubai, where the 5% GCC common tariff '
+                              'hits the CIF value and import VAT of 5% then lands on CIF plus duty, not '
+                              'the invoice alone [8I51jDAoe-E @ 00:02:06]. Even the US metal rules flipped '
+                              'mid-year: CFOmarketIQ shows the same 25% rate on a $100 part that is about '
+                              '40% steel jumping from roughly $10 of duty to $25 once it applied to full '
+                              'customs value instead of steel content, an extra $15 per unit nobody on the '
+                              'supplier side emailed about [nUu4s78pX8E @ 00:00:17]. Operator takeaway: '
+                              "know which base your destination uses before you trust anyone's duty math.",
+                              'Practitioners also split on how to carry landed cost through the books, how '
+                              'to insure it, and who does the grunt work. Intel by CandiMentor allocates '
+                              'shared freight by value when consumption broadly follows value, but '
+                              'switches to weight or volume when large, heavy or bulky lines eat most of '
+                              'the carrier capacity [CvHvBnjwlJg @ 00:04:10]. SKUio skips both for duty '
+                              "and splits the broker's bill by each line's booked duty estimate, so a line "
+                              'that carried most of the duty absorbs most of the bill and each variance '
+                              'stays fair [BAGqaHYyMlA @ 00:02:32]. On insurance, Tracy ran '
+                              "inventory-in-transit as a rider on a chemical manufacturer's plant policy, "
+                              'which was the cheaper route but forced him to maintain spreadsheets of '
+                              'every movement, while other shippers preferred paying a per-shipment fee '
+                              'through their forwarder to offload the work [LBisYGOUrx0 @ 01:26:53]. On '
+                              'brokerage, Tracy recalls the one customer in roughly 15 years who pulled '
+                              'logistics in-house while importing from Asia, then quit after a single year '
+                              'and handed it back, and his verdict is that first-time importers absolutely '
+                              'need a customs broker for commercial transactions [LBisYGOUrx0 @ 01:05:17]. '
+                              'The DIY saving only shows up after the reps are in and the paperwork stops '
+                              'costing you tutorial time.'],
+               'table': {'caption': 'Competing landed-cost playbooks, side by side',
+                         'headers': ['Decision Point', 'Playbook A', 'Playbook B', 'Expert Source'],
+                         'rows': [['Incoterm stance on export and import deals',
+                                   'Avoid DDP at all costs; quote CIF nearest port and let buyer handle '
+                                   'destination charges',
+                                   'Request a DDP price first as a total-cost read, then rebuild from the '
+                                   'export price',
+                                   'New York SBDC ([LBisYGOUrx0 @ 00:24:54]); New York SBDC ([LBisYGOUrx0 '
+                                   '@ 00:43:45])'],
+                                  ['Which value the duty rate is charged on',
+                                   'US, Canada, Australia and New Zealand charge duty on goods value only',
+                                   'Dubai and most other markets charge on CIF, with VAT on CIF plus duty',
+                                   'New York SBDC ([LBisYGOUrx0 @ 00:48:38]); Witners Shipping '
+                                   '([8I51jDAoe-E @ 00:02:06])'],
+                                  ['Allocating shared freight across product lines',
+                                   'Allocate by value when freight consumption broadly follows the value '
+                                   'of goods',
+                                   'Allocate by weight or volume when bulky, heavy lines eat most carrier '
+                                   'capacity',
+                                   'Intel by CandiMentor ([CvHvBnjwlJg @ 00:03:51]); Intel by CandiMentor '
+                                   '([CvHvBnjwlJg @ 00:04:10])'],
+                                  ['When duty hits the inventory cost',
+                                   'Capitalize estimated duty into stock cost the day goods are received',
+                                   'Price on factory cost and wait weeks for the broker bill, inflating '
+                                   'margin reports',
+                                   'SKUio ([BAGqaHYyMlA @ 00:00:02]); SKUio ([DFZ8XDRkuCE @ 00:00:20])'],
+                                  ['How to insure cargo moving in transit',
+                                   'Rider on the plant policy covering inventory in transit, cheaper but '
+                                   'spreadsheet-heavy',
+                                   'Per-shipment cover bought through the forwarder, figured at about 1% '
+                                   'of invoice value',
+                                   'New York SBDC ([LBisYGOUrx0 @ 01:26:53]); New York SBDC ([LBisYGOUrx0 '
+                                   '@ 00:09:09])'],
+                                  ['How to run the sourcing comparison',
+                                   'Offshore landed versus domestic: China gearbox at $190.17 against a US '
+                                   'supplier at $117.63',
+                                   'Up to five export countries side by side, Canada under USMCA versus '
+                                   'Vietnam with a 10% special duty',
+                                   'ICandT ([ebKN15qGOxo @ 00:05:45]); Shipping Solutions ([4868R7AGDp0 @ '
+                                   '00:06:11])'],
+                                  ['Who files the customs entries',
+                                   'Seasoned importers can file their own entries once they know the '
+                                   'process cold',
+                                   'Outsource to a licensed customs broker, which almost every importer '
+                                   'does',
+                                   'New York SBDC ([LBisYGOUrx0 @ 01:04:23]); Trade Counsel ([-WXoF_u08g0 '
+                                   '@ 00:02:59])']]}},
+              {'heading': 'Firsthand Failure Modes, Traps & Economics Checks',
+               'paragraphs': ['The most expensive failures come from duty the operator never modeled. '
+                              'CFOmarketIQ walks through the April change where nobody touched the 25% '
+                              'steel rate but moved it onto full customs value, and with no exception for '
+                              "goods already on the water, many CFOs only found out from the broker's "
+                              'invoice weeks later, or from a CEO asking why margin slipped [nUu4s78pX8E @ '
+                              '00:00:50]. John Galt Finance names the endgame: add-on costs like duty, '
+                              'testing and inspection can run more than 10% and eat the whole margin, and '
+                              'when US tariffs hit the European Union market, a lot of companies went '
+                              'bankrupt because their models never assumed higher customs duties '
+                              '[8RBtd8u_F-I @ 00:02:36]. Trade Counsel stacks the China layers on a '
+                              '$10,000 order of plastic bins, 3.4% base plus 7.5% Section 301 plus a newer '
+                              '12.5% Section 301 layer from July 2026, landing $2,340 in duty and about '
+                              '$2,400 with fees, and warns the $800 duty-free allowance has been suspended '
+                              'since August 2025 [-WXoF_u08g0 @ 00:04:36]. Stord flagged an earlier jolt: '
+                              'Section 321 de minimis eliminated for China and Hong Kong plus a universal '
+                              '10% tariff as of April 2nd [eZY2MYqExrQ @ 00:00:16]. Every one of these hit '
+                              "operators whose spreadsheets still showed last quarter's rate.",
+                              'Paperwork deadlines carry their own price tags, and they hit before a '
+                              'single unit sells. Trade Counsel warns the Importer Security Filing, naming '
+                              'seller, factory and HTS code, must reach customs at least 24 hours before '
+                              'goods are loaded in China, and a late, wrong or missing filing lets customs '
+                              'claim $5,000 per violation against your bond [-WXoF_u08g0 @ 00:03:34]. The '
+                              'same channel says anything made wholly or partly in Xinjiang is presumed '
+                              'forced-labor product, customs can detain it, and the burden of proving '
+                              'otherwise sits squarely on you as the importer [-WXoF_u08g0 @ 00:04:13]. '
+                              "Tracy's DDP horror story is the inspection hold: a non-resident importer of "
+                              'record gets called for exam, the cargo parks in a bonded warehouse, and the '
+                              'seller stays on the hook for very expensive storage charges until customs '
+                              'actually reviews and clears the documentation [LBisYGOUrx0 @ 00:22:48]. '
+                              'Intel by CandiMentor adds demurrage, the delay charge that appears when '
+                              'containers remain at a terminal too long, and treats it as a textbook '
+                              'avoidable charge that should be investigated rather than automatically '
+                              'booked as normal freight [CvHvBnjwlJg @ 00:04:45]. None of these charges '
+                              'appear on the supplier invoice, and as Trade Counsel puts it, get one step '
+                              'wrong and you find out at the port.',
+                              'The economics checks are where small operators bleed quietly. Nama, a '
+                              "student in Marcus Lam's high-ticket dropshipping program, booked two sales "
+                              'in one day, about $7,000 and $4,000 in revenue, then admitted learning the '
+                              'hard way what margins look like after shipping [b7IMdD7nvhg @ 00:06:46]. '
+                              'The hosts framed it as the moment cost of goods, shipping and profit turn '
+                              'into real numbers, and why suppliers have to be picked on fulfillment and '
+                              "margin, not just availability. Racklify's Bill runs the low-ticket version: "
+                              'a $2.99 hand soap loses money shipped first-class, while a six-pack selling '
+                              'for $12 to $15 ships in one box at almost the same price as a single bottle '
+                              '[NXZLkZ_Gfuk @ 00:04:14]. CFOmarketIQ adds the cash trap: you pay duty when '
+                              'goods arrive, long before you sell them, so a tariff change can squeeze '
+                              'cash a quarter before it ever shows in the P&L, while standard costs lag '
+                              'reality by a quarter if nobody resets them [nUu4s78pX8E @ 00:02:28]. John '
+                              "Galt Finance's unit-economics waterfall is the last gate: a product selling "
+                              'at 250 ends the day with only 50, and the operator has to walk every '
+                              'rectangle to find where the other 200 went and optimize what can be '
+                              'optimized [8RBtd8u_F-I @ 00:09:01].'],
+               'table': {'caption': 'Firsthand losses, traps and the economics check each one demands',
+                         'headers': ['Failure Mode', 'What Happened', 'Economics Check', 'Expert Source'],
+                         'rows': [['Late or missing Importer Security Filing',
+                                   'Security filing was late, wrong or missing before vessel loading in '
+                                   'China',
+                                   "Customs can claim $5,000 per violation against the importer's bond",
+                                   'Trade Counsel ([-WXoF_u08g0 @ 00:03:34])'],
+                                  ['Steel tariff base silently expanded',
+                                   'The 25% steel tariff moved from steel content to full customs value',
+                                   'Duty on a $100 part rose from about $10 to $25 per unit',
+                                   'CFOmarketIQ ([nUu4s78pX8E @ 00:00:17])'],
+                                  ['Margin discovered only after shipping',
+                                   'Two high-ticket sales of about $7,000 and $4,000 landed in one day',
+                                   'Seller learned the hard way what margin survives after shipping costs',
+                                   'Marcus Lam | High Ticket Dropshipping (AI) ([b7IMdD7nvhg @ 00:06:46])'],
+                                  ['Customs duty left out of the model',
+                                   'Companies never assumed higher customs duties when US tariffs hit EU '
+                                   'goods',
+                                   'Add-on COGS above 10% can eat all margin; many companies went bankrupt',
+                                   'John Galt Finance ([8RBtd8u_F-I @ 00:02:36])'],
+                                  ['Duty estimate drifting from the broker bill',
+                                   'The broker duty bill arrived about seven percent over the booked '
+                                   'estimate',
+                                   'Only the variance moves; stock on hand and sold units each take a '
+                                   'share',
+                                   'SKUio ([BAGqaHYyMlA @ 00:02:49])'],
+                                  ['Supplier ships short against the purchase order',
+                                   'India factory scored 2.9 of 5 on its scorecard and shipped a purchase '
+                                   'order short',
+                                   'Lines closed at the quantity received so the duty accrual matches '
+                                   'shelf stock',
+                                   'SKUio ([DFZ8XDRkuCE @ 00:07:23])'],
+                                  ['Cheap offshore quote that was not cheap',
+                                   'Gearbox housing quoted at $100 from China lands at $190.17',
+                                   'US supplier lands at $117.63, saving $3.77 million over five years',
+                                   'ICandT ([ebKN15qGOxo @ 00:05:45])']]},
+               'callout': {'kind': 'OPERATOR GATE',
+                           'title': 'Four Hard Stops Before the PO Ships',
+                           'body': 'Each stop comes from a loss or near-miss these practitioners walked '
+                                   'through. Clear all four before you commit cash to the purchase order.',
+                           'items': ['Confirm your broker has the customs bond and Importer Security '
+                                     'Filing ready at least 24 hours before goods load, or face $5,000 per '
+                                     'violation [Trade Counsel — -WXoF_u08g0 @ 00:03:34].',
+                                     'Flag every SKU containing steel, aluminum or copper and recheck the '
+                                     'duty on full customs value, not just metal share [CFOmarketIQ — '
+                                     'nUu4s78pX8E @ 00:03:32].',
+                                     'Do not sign DDP into a foreign market as a non-resident importer; '
+                                     'quote CIF nearest ocean port with duty, taxes and destination fees '
+                                     "on the buyer's account [New York SBDC — LBisYGOUrx0 @ 00:25:11].",
+                                     'Run the per-unit waterfall after freight, duty and fees; if a 250 '
+                                     'sale ends at 50, trace every rectangle until the missing 200 is '
+                                     'found [John Galt Finance — 8RBtd8u_F-I @ 00:09:01].']}}],
+ 'pull_quote': 'Same part, same supplier, same twenty-five percent tariff. And since April, two and a half '
+               'times the duty. Nobody changed the rate at all. They changed what the rate gets charged '
+               'on. — CFOmarketIQ (nUu4s78pX8E @ 00:00:00).',
+ 'diagram_id': 'diag-07',
+ 'action_checklist': ['List your top twenty imported items by spend with the country of origin and tariff '
+                      'code for each [CFOmarketIQ — nUu4s78pX8E @ 00:03:15].',
+                      'Make the seller separate the price of the goods from freight and insurance on the '
+                      'invoice so duty is not charged on a bundled number [New York SBDC — LBisYGOUrx0 @ '
+                      '00:50:28].',
+                      'Build landed cost in order: invoice, freight and insurance to CIF, duty by HS code, '
+                      'VAT on CIF plus duty, clearance charges, then divide by units [Witners Shipping — '
+                      '8I51jDAoe-E @ 00:03:17].',
+                      'Capitalize estimated duty into stock cost at receipt and hold it in Accrued Customs '
+                      'Duty until the broker bill clears it [SKUio — BAGqaHYyMlA @ 00:00:20].',
+                      'Mark every line as an estimate, date the sheet because rates change, and compare '
+                      'landed cost per unit with the selling price [RRA Group | Freight Forwarding & '
+                      'Logistics — 007vdtJ5XrY @ 00:01:18].',
+                      'Ask your broker which entries are still open, since you have roughly six months to '
+                      'protest once an entry is final [CFOmarketIQ — nUu4s78pX8E @ 00:02:43].'],
+ 'statutory_citations': [{'title': 'New York SBDC — Calculating Landed Cost for Exported and Imported '
+                                   'Goods [00:24:54]',
+                          'url': 'https://www.youtube.com/watch?v=LBisYGOUrx0&t=1494s',
+                          'relevance': 'Primary practitioner testimony on avoiding DDP, quoting CIF '
+                                       'nearest port, and the FOB versus CIF duty base split.'},
+                         {'title': "Trade Counsel — What Importers Get Wrong About US Customs (And It's "
+                                   "Expensive) | Expert's Guide for Beginner [00:03:34]",
+                          'url': 'https://www.youtube.com/watch?v=-WXoF_u08g0&t=214s',
+                          'relevance': 'Primary practitioner testimony on the China tariff stack, Importer '
+                                       'Security Filing penalties, and importer-of-record liability.'},
+                         {'title': 'CFOmarketIQ — Tariff news and your landed cost [00:00:17]',
+                          'url': 'https://www.youtube.com/watch?v=nUu4s78pX8E&t=17s',
+                          'relevance': 'Primary practitioner testimony on the steel duty base shift, cash '
+                                       'timing of duty, and open-entry refunds.'},
+                         {'title': 'SKUio — How to Capitalize Estimated Import Duty Into Landed Cost and '
+                                   'Reconcile Broker Bills | SKU.io [00:02:49]',
+                          'url': 'https://www.youtube.com/watch?v=BAGqaHYyMlA&t=169s',
+                          'relevance': 'Primary practitioner testimony on capitalizing estimated duty at '
+                                       'receipt and reconciling broker bill variances.'}],
+ 'source_citations': [{'source_type': 'video_pro_tip',
+                       'video_id': 'NXZLkZ_Gfuk',
+                       'title': 'Dimensional Weight: How You Are Overpaying For Shipping Selling On Amazon '
+                                '& Shopify',
+                       'channel': 'Racklify',
+                       'author': 'Racklify',
+                       'text': 'That hand soap retails for about $2.99 a unit; I would actually lose money '
+                               'by shipping that hand soap first-class to a customer.',
+                       'tip': 'That hand soap retails for about $2.99 a unit; I would actually lose money '
+                              'by shipping that hand soap first-class to a customer.',
+                       'timestamp': 254,
+                       'timestamp_seconds': 254,
+                       'timestamp_label': '[00:04:14]',
+                       'url': 'https://www.youtube.com/watch?v=NXZLkZ_Gfuk&t=254s',
+                       'markdown': '[00:04:14](https://www.youtube.com/watch?v=NXZLkZ_Gfuk&t=254s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q4.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': '8I51jDAoe-E',
+                       'title': 'How to Work Out Landed Cost for a Shipment Into Dubai',
+                       'channel': 'Witners Shipping',
+                       'author': 'Witners Shipping',
+                       'text': 'Import VAT is calculated on the value of the goods inclusive of any '
+                               'customs duty and excise tax, so VAT is charged on the CIF value plus duty, '
+                               'not on the invoice price alone.',
+                       'tip': 'Import VAT is calculated on the value of the goods inclusive of any customs '
+                              'duty and excise tax, so VAT is charged on the CIF value plus duty, not on '
+                              'the invoice price alone.',
+                       'timestamp': 126,
+                       'timestamp_seconds': 126,
+                       'timestamp_label': '[00:02:06]',
+                       'url': 'https://www.youtube.com/watch?v=8I51jDAoe-E&t=126s',
+                       'markdown': '[00:02:06](https://www.youtube.com/watch?v=8I51jDAoe-E&t=126s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q4.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'eZY2MYqExrQ',
+                       'title': 'A Message On New Tariffs And De Minimis (Section 321)',
+                       'channel': 'Stord',
+                       'author': 'Stord',
+                       'text': 'Eliminating de minimis Section 321 exemptions for imports from China and '
+                               'Hong Kong and implementing a universal 10% tariff on nearly all imported '
+                               'goods.',
+                       'tip': 'Eliminating de minimis Section 321 exemptions for imports from China and '
+                              'Hong Kong and implementing a universal 10% tariff on nearly all imported '
+                              'goods.',
+                       'timestamp': 16,
+                       'timestamp_seconds': 16,
+                       'timestamp_label': '[00:00:16]',
+                       'url': 'https://www.youtube.com/watch?v=eZY2MYqExrQ&t=16s',
+                       'markdown': '[00:00:16](https://www.youtube.com/watch?v=eZY2MYqExrQ&t=16s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q4.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'DLfvskykJiY',
+                       'title': 'How Do I Calculate The Landed Cost Of Imported Goods Into The USA?',
+                       'channel': 'US Customs Clearing',
+                       'author': 'US Customs Clearing',
+                       'text': 'Find ways to optimize transportation, such as utilizing cost-effective '
+                               'shipping methods or consolidating shipments to reduce fees.',
+                       'tip': 'Find ways to optimize transportation, such as utilizing cost-effective '
+                              'shipping methods or consolidating shipments to reduce fees.',
+                       'timestamp': 213,
+                       'timestamp_seconds': 213,
+                       'timestamp_label': '[00:03:33]',
+                       'url': 'https://www.youtube.com/watch?v=DLfvskykJiY&t=213s',
+                       'markdown': '[00:03:33](https://www.youtube.com/watch?v=DLfvskykJiY&t=213s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q4.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'CvHvBnjwlJg',
+                       'title': 'Landed Cost Calculation Explained',
+                       'channel': 'Intel by CandiMentor',
+                       'author': 'Intel by CandiMentor',
+                       'text': 'Divide that by 1,000 units, and the true cost becomes $12 per unit instead '
+                               'of the $10 supplier price.',
+                       'tip': 'Divide that by 1,000 units, and the true cost becomes $12 per unit instead '
+                              'of the $10 supplier price.',
+                       'timestamp': 357,
+                       'timestamp_seconds': 357,
+                       'timestamp_label': '[00:05:57]',
+                       'url': 'https://www.youtube.com/watch?v=CvHvBnjwlJg&t=357s',
+                       'markdown': '[00:05:57](https://www.youtube.com/watch?v=CvHvBnjwlJg&t=357s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q4.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'ebKN15qGOxo',
+                       'title': 'World Class Free Landed Cost Program that auto-updates currencies, '
+                                'duties, tariffs, etc.',
+                       'channel': 'ICandT',
+                       'author': 'ICandT',
+                       'text': 'In our example, a gearbox housing quoted at $100 from China lands at '
+                               '$190.17, and the US supplier lands at $117.63.',
+                       'tip': 'In our example, a gearbox housing quoted at $100 from China lands at '
+                              '$190.17, and the US supplier lands at $117.63.',
+                       'timestamp': 345,
+                       'timestamp_seconds': 345,
+                       'timestamp_label': '[00:05:45]',
+                       'url': 'https://www.youtube.com/watch?v=ebKN15qGOxo&t=345s',
+                       'markdown': '[00:05:45](https://www.youtube.com/watch?v=ebKN15qGOxo&t=345s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q4.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': '3iYfv5mrDBE',
+                       'title': 'Calculating Landed Costs for Imported Goods',
+                       'channel': 'ISF Expedite',
+                       'author': 'ISF Expedite',
+                       'text': 'Landed costs encompass all the expenses incurred from the moment the goods '
+                               'leave the supplier to when they arrive at your doorstep.',
+                       'tip': 'Landed costs encompass all the expenses incurred from the moment the goods '
+                              'leave the supplier to when they arrive at your doorstep.',
+                       'timestamp': 19,
+                       'timestamp_seconds': 19,
+                       'timestamp_label': '[00:00:19]',
+                       'url': 'https://www.youtube.com/watch?v=3iYfv5mrDBE&t=19s',
+                       'markdown': '[00:00:19](https://www.youtube.com/watch?v=3iYfv5mrDBE&t=19s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q4.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'DFZ8XDRkuCE',
+                       'title': 'Jewelry Landed Cost: Duty, Sets and True Margin, from PO to Sale',
+                       'channel': 'SKUio',
+                       'author': 'SKUio',
+                       'text': 'Brands like this often price a piece on its factory cost; the duty shows '
+                               "up weeks later on the customs broker's bill, and until then every margin "
+                               'report looks better than the truth.',
+                       'tip': 'Brands like this often price a piece on its factory cost; the duty shows up '
+                              "weeks later on the customs broker's bill, and until then every margin "
+                              'report looks better than the truth.',
+                       'timestamp': 20,
+                       'timestamp_seconds': 20,
+                       'timestamp_label': '[00:00:20]',
+                       'url': 'https://www.youtube.com/watch?v=DFZ8XDRkuCE&t=20s',
+                       'markdown': '[00:00:20](https://www.youtube.com/watch?v=DFZ8XDRkuCE&t=20s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q4.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'LBisYGOUrx0',
+                       'title': 'Calculating Landed Cost for Exported and Imported Goods',
+                       'channel': 'New York SBDC',
+                       'author': 'New York SBDC',
+                       'text': 'When I used to work in shipping, we used to tell all our clients, avoid '
+                               'DDP at all costs; just send it to the nearest port or ocean port.',
+                       'tip': 'When I used to work in shipping, we used to tell all our clients, avoid DDP '
+                              'at all costs; just send it to the nearest port or ocean port.',
+                       'timestamp': 1494,
+                       'timestamp_seconds': 1494,
+                       'timestamp_label': '[00:24:54]',
+                       'url': 'https://www.youtube.com/watch?v=LBisYGOUrx0&t=1494s',
+                       'markdown': '[00:24:54](https://www.youtube.com/watch?v=LBisYGOUrx0&t=1494s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q4.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'LBisYGOUrx0',
+                       'title': 'Calculating Landed Cost for Exported and Imported Goods',
+                       'channel': 'New York SBDC',
+                       'author': 'New York SBDC',
+                       'text': 'Most of the countries of the world apply duties based on the cost of the '
+                               'goods, the insurance and freight; that is a heck of a difference.',
+                       'tip': 'Most of the countries of the world apply duties based on the cost of the '
+                              'goods, the insurance and freight; that is a heck of a difference.',
+                       'timestamp': 2940,
+                       'timestamp_seconds': 2940,
+                       'timestamp_label': '[00:49:00]',
+                       'url': 'https://www.youtube.com/watch?v=LBisYGOUrx0&t=2940s',
+                       'markdown': '[00:49:00](https://www.youtube.com/watch?v=LBisYGOUrx0&t=2940s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q4.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': '007vdtJ5XrY',
+                       'title': 'Build a Landed-Cost Estimate: A Canadian Import Example',
+                       'channel': 'RRA Group | Freight Forwarding & Logistics',
+                       'author': 'RRA Group | Freight Forwarding & Logistics',
+                       'text': 'Rates change, so date your estimate; that landed cost per unit is what to '
+                               'compare with the selling price.',
+                       'tip': 'Rates change, so date your estimate; that landed cost per unit is what to '
+                              'compare with the selling price.',
+                       'timestamp': 78,
+                       'timestamp_seconds': 78,
+                       'timestamp_label': '[00:01:18]',
+                       'url': 'https://www.youtube.com/watch?v=007vdtJ5XrY&t=78s',
+                       'markdown': '[00:01:18](https://www.youtube.com/watch?v=007vdtJ5XrY&t=78s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q4.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'b7IMdD7nvhg',
+                       'title': '9 to 5 Employee Learns Margins After Shipping | High Ticket Dropshipping '
+                                '(Case Study)',
+                       'channel': 'Marcus Lam | High Ticket Dropshipping (AI)',
+                       'author': 'Marcus Lam | High Ticket Dropshipping (AI)',
+                       'text': 'The first one was about 7,000 in revenue and the next one was about 4,000; '
+                               'I did learn the hard way though what margins look like after shipping.',
+                       'tip': 'The first one was about 7,000 in revenue and the next one was about 4,000; '
+                              'I did learn the hard way though what margins look like after shipping.',
+                       'timestamp': 406,
+                       'timestamp_seconds': 406,
+                       'timestamp_label': '[00:06:46]',
+                       'url': 'https://www.youtube.com/watch?v=b7IMdD7nvhg&t=406s',
+                       'markdown': '[00:06:46](https://www.youtube.com/watch?v=b7IMdD7nvhg&t=406s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q4.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': '-WXoF_u08g0',
+                       'title': "What Importers Get Wrong About US Customs (And It's Expensive) | Expert's "
+                                'Guide for Beginner',
+                       'channel': 'Trade Counsel',
+                       'author': 'Trade Counsel',
+                       'text': "If it's late, wrong or missing, customs can claim $5,000 per violation "
+                               'against your bond.',
+                       'tip': "If it's late, wrong or missing, customs can claim $5,000 per violation "
+                              'against your bond.',
+                       'timestamp': 214,
+                       'timestamp_seconds': 214,
+                       'timestamp_label': '[00:03:34]',
+                       'url': 'https://www.youtube.com/watch?v=-WXoF_u08g0&t=214s',
+                       'markdown': '[00:03:34](https://www.youtube.com/watch?v=-WXoF_u08g0&t=214s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q4.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'BAGqaHYyMlA',
+                       'title': 'How to Capitalize Estimated Import Duty Into Landed Cost and Reconcile '
+                                'Broker Bills | SKU.io',
+                       'channel': 'SKUio',
+                       'author': 'SKUio',
+                       'text': 'The Customs card shows what was billed, and the variance, here about seven '
+                               'percent over.',
+                       'tip': 'The Customs card shows what was billed, and the variance, here about seven '
+                              'percent over.',
+                       'timestamp': 169,
+                       'timestamp_seconds': 169,
+                       'timestamp_label': '[00:02:49]',
+                       'url': 'https://www.youtube.com/watch?v=BAGqaHYyMlA&t=169s',
+                       'markdown': '[00:02:49](https://www.youtube.com/watch?v=BAGqaHYyMlA&t=169s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q4.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'nUu4s78pX8E',
+                       'title': 'Tariff news and your landed cost',
+                       'channel': 'CFOmarketIQ',
+                       'author': 'CFOmarketIQ',
+                       'text': "From April on, it hits the full customs value; that's twenty-five dollars "
+                               'of duty, on the exact same part.',
+                       'tip': "From April on, it hits the full customs value; that's twenty-five dollars "
+                              'of duty, on the exact same part.',
+                       'timestamp': 17,
+                       'timestamp_seconds': 17,
+                       'timestamp_label': '[00:00:17]',
+                       'url': 'https://www.youtube.com/watch?v=nUu4s78pX8E&t=17s',
+                       'markdown': '[00:00:17](https://www.youtube.com/watch?v=nUu4s78pX8E&t=17s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q4.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': '4868R7AGDp0',
+                       'title': 'Landed Cost Calculator: Compare Tariffs, Duties & Fees from Multiple '
+                                'Countries',
+                       'channel': 'Shipping Solutions',
+                       'author': 'Shipping Solutions',
+                       'text': "If the goods don't qualify for the USMCA, then I also owe a special duty "
+                               'under 99030110 of 25%.',
+                       'tip': "If the goods don't qualify for the USMCA, then I also owe a special duty "
+                              'under 99030110 of 25%.',
+                       'timestamp': 346,
+                       'timestamp_seconds': 346,
+                       'timestamp_label': '[00:05:46]',
+                       'url': 'https://www.youtube.com/watch?v=4868R7AGDp0&t=346s',
+                       'markdown': '[00:05:46](https://www.youtube.com/watch?v=4868R7AGDp0&t=346s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q4.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': '8RBtd8u_F-I',
+                       'title': 'E-Commerce Financial Model: Calculating Unit Economics, Margins & '
+                                'Break-Even Point',
+                       'channel': 'John Galt Finance',
+                       'author': 'John Galt Finance',
+                       'text': 'In some case it could be more than 10%; that could be crucial, that can '
+                               'eat all your margin.',
+                       'tip': 'In some case it could be more than 10%; that could be crucial, that can eat '
+                              'all your margin.',
+                       'timestamp': 156,
+                       'timestamp_seconds': 156,
+                       'timestamp_label': '[00:02:36]',
+                       'url': 'https://www.youtube.com/watch?v=8RBtd8u_F-I&t=156s',
+                       'markdown': '[00:02:36](https://www.youtube.com/watch?v=8RBtd8u_F-I&t=156s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q4.'}]}

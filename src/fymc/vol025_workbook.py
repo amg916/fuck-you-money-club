@@ -1,733 +1,891 @@
 from __future__ import annotations
 
-
 def build_volume_025_workbook() -> dict:
-    def field(name: str, input_type: str, prompt: str, example: str) -> dict:
-        return {
-            "name": name,
-            "type": input_type,
-            "prompt": prompt,
-            "example": example,
-        }
-
-    return {
-        "workbook_id": "wb-025-freight-brokerage",
-        "volume_id": "vol-025-freight-brokerage",
-        "title": "Freight Brokerage — Operator Companion Workbook",
-        "subtitle": (
-            "6 Printable Operator Worksheets for Niche Lane Underwriting, "
-            "Carrier Identity Defense, Shipper-to-Carrier Float, FMCSA Operating "
-            "Requirements, Shipment Automation, and Transferable Brokerage Operations"
-        ),
-        "worksheets": [
-            {
-                "worksheet_id": "ws-01",
-                "number": 1,
-                "title": "Niche Lane Underwriting and Counterparty Qualification",
-                "purpose": (
-                    "Select a defensible freight niche before buying loads with weak "
-                    "credit or uncertain capacity. Document the shipper, actual motor "
-                    "carrier, lane economics, cargo exposure, and payment chain so every "
-                    "accepted tender has a verified operating party and an affordable "
-                    "cash conversion cycle."
-                ),
-                "chapter_ref": "Q1, Q2, Q6",
-                "instructions": [
-                    (
-                        "Choose one equipment class, cargo profile, and repeatable lane "
-                        "cluster. Obtain actual tender histories and accessorial records "
-                        "from an authorized shipper contact; separate booked shipment "
-                        "evidence from sales estimates before forecasting weekly volume "
-                        "or staffing the brokerage desk."
-                    ),
-                    (
-                        "Identify the legal entity that owes the freight charges and "
-                        "the carrier that will physically transport the cargo. Independently "
-                        "verify authority, contact channels, insurance evidence, and payment "
-                        "instructions rather than accepting documents supplied through a "
-                        "single inbound email thread."
-                    ),
-                    (
-                        "Use Highway or RMIS to organize carrier checks, then reconcile "
-                        "material exceptions against FMCSA records and direct callbacks. "
-                        "A vendor risk score is evidence to investigate, not a substitute "
-                        "for confirming who controls the truck and receives payment."
-                    ),
-                    (
-                        "Price the lane from written carrier quotes, observed dwell, "
-                        "cargo requirements, and collection terms. Assign an owner to "
-                        "each uncertain assumption, and reject attractive spreads when "
-                        "fraud exposure, shipment concentration, or cash demands exceed "
-                        "the brokerage's documented operating capacity."
-                    ),
-                    (
-                        "Complete a counterparty packet before accepting the first "
-                        "binding tender. Preserve dated source records and named reviewers "
-                        "so dispatch, accounting, and replacement staff can reproduce "
-                        "the underwriting decision without relying on the salesperson's "
-                        "memory or private messages."
-                    ),
-                ],
-                "fields": [
-                    field(
-                        "Niche thesis and equipment boundary",
-                        "textarea",
-                        "Define cargo, equipment, geography, shipment frequency, and the operational problem you solve. State explicit exclusions so sales cannot quietly introduce temperature control, high-value theft exposure, or specialized handling without new underwriting.",
-                        "Launch with palletized packaging materials moving from Columbus, Ohio, to Nashville, Tennessee, in 53-foot dry vans. Target twenty recurring loads monthly per shipper. Exclude refrigerated freight, hazardous materials, household goods, and shipments valued above $100,000 until insurance, carrier capability, and handling procedures support those exposures.",
-                    ),
-                    field(
-                        "Shipper entity and payable obligation",
-                        "textarea",
-                        "Identify the contracting shipper, billing entity, credit decision maker, and accounts-payable workflow. Explain which signed document establishes payment responsibility and how a name mismatch between tender, invoice, and purchase order will be resolved.",
-                        "The illustrative customer is Cedar Packaging LLC, with invoices payable by that same entity rather than its warehouse affiliate. The transportation agreement names the LLC and requires purchase-order references. A verified accounts-payable supervisor confirms invoices enter the ERP within two business days after delivery documentation arrives.",
-                    ),
-                    field(
-                        "Observed lane demand and tender quality",
-                        "textarea",
-                        "Record actual historical loads, seasonality, lead times, appointment constraints, and cancellation behavior. Distinguish firm repeat demand from prospective bids, and translate evidence into a conservative first-month shipment ceiling rather than assuming every quoted load converts.",
-                        "The shipper provides twelve weeks containing 72 completed shipments, averaging six weekly, with 48-hour tender notice on 60 shipments. Begin with twenty monthly loads, not the full historical run rate. Price same-day tenders separately because emergency sourcing can consume the entire planned $450 contribution before overhead.",
-                    ),
-                    field(
-                        "Carrier legal identity and authority",
-                        "textarea",
-                        "Capture the motor carrier's legal name, USDOT identifier, operating-authority identifier where applicable, verified telephone source, and active authority evidence. Explain how reviewers resolve an identity mismatch instead of treating a copied authority certificate as sufficient.",
-                        "The carrier packet stores the carrier's actual legal identifiers after verification; this example does not invent a registration number. Dispatch compares FMCSA Licensing and Insurance records with Highway, then calls a separately verified number. A different legal name on the rate confirmation stops assignment until the discrepancy is resolved.",
-                    ),
-                    field(
-                        "Insurance evidence and cargo fit",
-                        "textarea",
-                        "Describe required insurance limits, deductibles, commodity restrictions, covered operations, and evidence sources. Confirm that the actual cargo and movement fit the policy; a certificate alone does not establish that every relevant loss would be covered.",
-                        "For an $85,000 packaging shipment, require a contractually specified $100,000 cargo limit and examine the $5,000 deductible, unattended-vehicle exclusions, and covered commodities. Confirm policy status through independently verified insurance contacts. Reject a certificate whose named insured differs from the operating carrier without a documented, supportable explanation.",
-                    ),
-                    field(
-                        "Double-brokering and substitution controls",
-                        "textarea",
-                        "Map the tender-to-truck identity chain, including dispatcher, driver, tractor, trailer, and pickup authorization. Specify which substitutions require renewed verification and how warehouse personnel contact the brokerage when arriving equipment does not match the released assignment.",
-                        "The rate confirmation prohibits unauthorized reassignment. Before pickup, the warehouse receives the verified carrier name, driver identification procedure, and equipment references. If a different carrier arrives, loading pauses while operations independently contacts the contracted carrier; a text claiming that the replacement is a sister company does not resolve the exception.",
-                    ),
-                    field(
-                        "Credit limit and concentration exposure",
-                        "textarea",
-                        "Set a shipper credit limit using open invoices, delivered unbilled freight, accepted tenders, and expected collection timing. Include related entities in concentration analysis and distinguish revenue concentration from the immediate cash exposure created by carrier obligations.",
-                        "A new shipper receives a $40,000 combined exposure limit. Ten open invoices at $2,500 consume $25,000, while four accepted tenders consume another $10,000. Only $5,000 remains for additional tenders; sales must collect funds or obtain a documented credit increase before accepting a third additional load.",
-                    ),
-                    field(
-                        "Lane quote and accessorial allocation",
-                        "textarea",
-                        "Build a written shipper quote and carrier commitment covering linehaul, fuel, detention, layover, redelivery, and cancellation. Identify the evidence and notice required for each charge, and make mismatched commercial terms visible before dispatch.",
-                        "Quote $2,500 all-in linehaul and fuel against a $2,050 carrier commitment. Both agreements allow two free detention hours, followed by $75 hourly with arrival and departure evidence. Shipper approval must precede discretionary redelivery; otherwise the brokerage may owe the carrier a charge it cannot recover.",
-                    ),
-                    field(
-                        "Opportunity score and investment fit",
-                        "textarea",
-                        "Connect the chosen niche to the canonical candidate score, capital range, staffing burden, and first-deal timing. Explain the evidence that makes this specific opportunity workable without treating the series ranking as a prediction of customer demand.",
-                        "Freight Brokerage is candidate 12, pipeline rank 25 of 29, scoring 85/100: revenue potential 24, margin potential 21, team efficiency 17, startup accessibility 12, and automation potential 11. The $15,000–$80,000 startup range and two-to-six-month first-deal window justify a staged launch rather than immediate full-volume hiring.",
-                    ),
-                    field(
-                        "Underwriting decision and accountable owner",
-                        "textarea",
-                        "Record the decision, approved shipment ceiling, unresolved conditions, reviewer, and next review date. Make the decision executable by operations: specify exactly what may move, what remains blocked, and which evidence can change the current limit.",
-                        "Approve Cedar Packaging for twenty monthly dry-van loads, subject to the $40,000 exposure ceiling and verified carrier assignment on every shipment. The owner reviews credit weekly. High-value cargo remains excluded, and a missed payment triggers a fresh exposure review before any additional tender is accepted.",
-                    ),
-                ],
-                "completion_gate": (
-                    "The owner and operations lead sign a dated counterparty packet "
-                    "containing verified identities, cargo-fit evidence, executable "
-                    "commercial terms, a credit ceiling, and a funded shipment limit. "
-                    "No shipment advances with an unresolved carrier substitution."
-                ),
-            },
-            {
-                "worksheet_id": "ws-02",
-                "number": 2,
-                "title": "Unit Economics, Defect Reserve, and Working-Capital Float",
-                "purpose": (
-                    "Translate gross shipper billings into carrier obligations, operating "
-                    "costs, expected loss provisions, and owner profit. Reconcile all "
-                    "three canonical scenarios, then calculate the cash needed between "
-                    "carrier settlement and shipper collection without confusing a "
-                    "surety bond's coverage with spendable working capital."
-                ),
-                "chapter_ref": "Q3, Q4",
-                "instructions": [
-                    (
-                        "Use gross shipper billings as the scorecard comparison basis, "
-                        "including carrier costs. Maintain separate measures for carrier "
-                        "purchased transportation, brokerage spread, and recognized "
-                        "accounting revenue; document the principal-versus-agent conclusion "
-                        "with the accountant rather than relabeling the spread as billings."
-                    ),
-                    (
-                        "Reproduce the Conservative, Base, and Scaled totals before "
-                        "adding sensitivity cases. The supporting cost allocations below "
-                        "are illustrative budgets that reconcile to those totals, not "
-                        "additional canonical assumptions or evidence that a particular "
-                        "lane will achieve the modeled margin."
-                    ),
-                    (
-                        "Build the float calculation from actual contractual payment "
-                        "dates and expected collection behavior. Include carrier payments "
-                        "due before collection, ordinary cash operating expenses, and "
-                        "available reserves; exclude restricted trust assets and unused "
-                        "bond coverage from cash available to pay carriers."
-                    ),
-                    (
-                        "Define the defect reserve using identifiable billing disputes, "
-                        "credit losses, and retained claim exposure. Separate a planning "
-                        "provision from a funded cash reserve and an accounting accrual, "
-                        "and ensure actual settlements do not become a second expense "
-                        "for the same modeled loss."
-                    ),
-                    (
-                        "Stress payment delays, rate compression, and disputed documents "
-                        "before increasing shipment volume. Set an explicit acceptance "
-                        "ceiling tied to cash and collectible receivables, then assign "
-                        "authority for reducing volume when a shipper ages beyond "
-                        "the approved payment assumptions."
-                    ),
-                ],
-                "fields": [
-                    field(
-                        "Revenue basis and accounting bridge",
-                        "textarea",
-                        "Define gross billings, purchased transportation, brokerage spread, and owner net profit. Explain how management reporting reconciles to the accounting presentation, particularly when a principal-versus-agent assessment results in net rather than gross reported revenue.",
-                        "The Base scorecard uses $3,000,000 gross shipper billings, including $2,460,000 carrier costs, producing $540,000 brokerage spread. Deduct $345,000 operating expenses and $30,000 expected losses to reach $165,000 owner net. If accounting reports revenue net, preserve a separate $3,000,000 billings reconciliation rather than changing the scorecard.",
-                    ),
-                    field(
-                        "Conservative annual scenario",
-                        "textarea",
-                        "Reconcile the Conservative case to its exact billings, margin, profit, and staffing. Show a complete illustrative cost waterfall and per-load calculation, and explain any unusually high brokerage spread required to support the small shipment base.",
-                        "At 400 loads averaging $2,500, billings equal $1,000,000. Illustrative carrier costs are $750,000, operating expenses $208,000, and expected losses $12,000, leaving $30,000, or 3%. Staffing remains 3 FT plus 2 C. The resulting 25% spread requires validated premium niche pricing, not ordinary spot-market assumptions.",
-                    ),
-                    field(
-                        "Base annual scenario",
-                        "textarea",
-                        "Reconcile the Base case to its exact annual profit and headcount, then express every cost category per completed load. Keep carrier cost, overhead, and expected losses separate so quote decisions cannot accidentally use net profit as gross spread.",
-                        "At 1,200 loads averaging $2,500, billings equal $3,000,000. Each load carries $2,050 transportation cost, $287.50 operating expense, and $25 expected loss, leaving $137.50. Annual owner net is $165,000 at 5.5%, with 3 FT plus 2 C and $28,750 average monthly operating expense.",
-                    ),
-                    field(
-                        "Scaled annual scenario",
-                        "textarea",
-                        "Reconcile the Scaled case without quietly increasing the canonical team size. Explain the required operating productivity and cost structure, while keeping the seven-person headcount distinct from the number of employees on payroll.",
-                        "At 2,000 loads averaging $2,500, billings equal $5,000,000. Carrier costs of $4,200,000, operating expenses of $360,000, and expected losses of $40,000 leave $400,000, or 8%. The team is 4 FT plus 3 C: seven people handling about 167 completed loads monthly.",
-                    ),
-                    field(
-                        "Staffing and owner compensation convention",
-                        "textarea",
-                        "State whether the working owner occupies a full-time seat and whether owner compensation is an expense or distribution. Reconcile staffing costs with each illustrative expense budget, and document contractor scope rather than assuming a contractor label determines worker status.",
-                        "These illustrative budgets include the owner within FT headcount and no separate owner salary. Conservative costs comprise $120,000 employee labor, $48,000 contractor services, and $40,000 other expense; Base uses $180,000, $84,000, and $81,000; Scaled uses $216,000, $72,000, and $72,000. Owner net precedes personal taxes.",
-                    ),
-                    field(
-                        "Invoice scrub and expected loss provision",
-                        "textarea",
-                        "Allocate the expected loss budget among billing defects, shipper nonpayment, and retained claims. Define evidence, review cadence, and treatment of recoveries, distinguishing expected economic cost from maximum possible cargo loss or insurance limits.",
-                        "The Base $30,000 annual provision allocates $12,000 to unrecovered billing defects, $10,000 to credit losses, and $8,000 to retained claims exposure. That equals $25 across 1,200 loads. Review quarterly against actual outcomes; one $85,000 cargo incident could exceed the provision and requires a separate liquidity response.",
-                    ),
-                    field(
-                        "Steady-state shipper-to-carrier float",
-                        "textarea",
-                        "Calculate carrier funding from monthly purchased transportation and the gap between carrier payment and shipper collection. State the day-count convention, add an operating cushion, and identify whether any reserve cash overlaps with another liquidity line.",
-                        "Base monthly carrier costs are $205,000. Using thirty-day months, shipper collection on day 45 and carrier payment on day 15 create $205,000 of carrier float. Add one month's $28,750 operating cushion and $2,500 funded reserve: total unrestricted operating liquidity required is $236,250, excluding setup costs.",
-                    ),
-                    field(
-                        "Startup funding and security distinction",
-                        "textarea",
-                        "List unrestricted startup cash, setup spending, committed borrowing, and restricted security separately. Distinguish a BMC-84 premium from the $75,000 security amount, and explain how using a BMC-85 trust changes available working capital.",
-                        "From $200,000 startup cash, spend $20,000 on setup, including an illustrative $3,000 annual bond premium, leaving $180,000. Base liquidity needs exceed that by $56,250. A fully available $75,000 credit line could cover the gap; posting $75,000 into a restricted trust instead would reduce operating cash further.",
-                    ),
-                    field(
-                        "Payment delay and margin stress",
-                        "textarea",
-                        "Stress collection timing and carrier pricing independently so the team can distinguish liquidity failure from profitability failure. Quantify the incremental funding or earnings effect and specify which corrective action must occur before accepting additional exposure.",
-                        "If collection moves to day 60 while carriers remain payable on day 15, carrier float rises to $307,500 and operating liquidity to $338,750. Separately, an unpassed $50 carrier increase across 1,200 Base loads reduces annual owner net by $60,000, from $165,000 to $105,000, before other changes.",
-                    ),
-                    field(
-                        "Funded volume ceiling and borrowing cost",
-                        "textarea",
-                        "Convert available liquidity into a maximum shipment pace using the same payment assumptions. Include financing expense in the operating budget and state the conditions under which a credit line remains usable rather than counting an unapproved borrowing request.",
-                        "With $180,000 cash, hold $31,250 for operating cushion and reserve, leaving $148,750 for carrier float. At $2,050 per load and a thirty-day gap, cap throughput near 72 loads monthly without borrowing. A steady $56,250 draw at 12% costs $6,750 annually, included within Base other expense.",
-                    ),
-                ],
-                "completion_gate": (
-                    "The owner and bookkeeper reconcile all three canonical profits "
-                    "exactly, document the accounting bridge, and verify cash or committed "
-                    "credit for the selected shipment ceiling. Funding calculations "
-                    "exclude restricted security and include borrowing expense."
-                ),
-            },
-            {
-                "worksheet_id": "ws-03",
-                "number": 3,
-                "title": "Shipment Execution, Ledger, and Technical QA Pre-Flight",
-                "purpose": (
-                    "Build a reproducible shipment record from accepted tender through "
-                    "final collection and carrier settlement. Link operational evidence "
-                    "to financial entries, enforce identity checks at pickup, and test "
-                    "document, payment, and integration failures before staff rely "
-                    "on automated shipment status or invoice creation."
-                ),
-                "chapter_ref": "Q7, Q8",
-                "instructions": [
-                    (
-                        "Create one immutable internal load identifier before booking "
-                        "capacity. Attach the shipper tender, carrier agreement, rate "
-                        "confirmation, pickup instructions, delivery evidence, and all "
-                        "subsequent adjustments to that identifier so dispatch and "
-                        "accounting cannot accidentally create competing shipment histories."
-                    ),
-                    (
-                        "Walk through pickup and delivery with the warehouse, carrier, "
-                        "and shipper contacts. Confirm appointment requirements, reference "
-                        "numbers, cargo restrictions, and escalation channels before "
-                        "dispatch; a technically valid TMS record does not prove the "
-                        "physical handoff can occur safely."
-                    ),
-                    (
-                        "Configure the ledger around billings, carrier obligations, "
-                        "accessorials, reserves, receipts, and settlements. Use explicit "
-                        "statuses for provisional and final amounts, and require "
-                        "supporting evidence when an operator changes either side "
-                        "of the shipment's commercial record."
-                    ),
-                    (
-                        "Test duplicate events, missing delivery documents, wrong "
-                        "amounts, changed bank details, and late carrier invoices. "
-                        "Record expected outcomes before running each test, then "
-                        "preserve actual results so a passed happy-path demonstration "
-                        "does not conceal untested failure handling."
-                    ),
-                    (
-                        "Close a sample shipment only after operations and accounting "
-                        "agree on delivery, invoice eligibility, carrier payable, "
-                        "and exceptions. Keep unresolved claims and disputed accessorials "
-                        "visible after operational delivery rather than making them "
-                        "disappear inside a generic completed status."
-                    ),
-                ],
-                "fields": [
-                    field(
-                        "Load identifier and source record",
-                        "textarea",
-                        "Define the internal load identifier, external reference mappings, and required source documents. Describe how revised tenders are versioned and how operators distinguish a genuine new shipment from an amended or duplicated customer transmission.",
-                        "Load FB-000101 maps to Cedar's purchase order CP-4107 and one carrier confirmation. A revised pickup appointment creates tender version two under the same load. An identical EDI transmission updates the receipt log without creating another shipment, customer invoice, or carrier payable in the TMS.",
-                    ),
-                    field(
-                        "Pre-dispatch commercial reconciliation",
-                        "textarea",
-                        "Compare the shipper tender and carrier commitment for locations, dates, equipment, cargo, linehaul, fuel, and accessorial rules. Assign ownership for resolving differences before the carrier receives executable pickup instructions and the warehouse releases freight.",
-                        "For FB-000101, shipper billing is $2,500 and carrier commitment $2,050, both including fuel. Pickup is Tuesday at 09:00 and delivery Wednesday at 11:00. Operations finds the carrier confirmation says Thursday delivery, corrects it, and obtains acknowledgment before issuing the warehouse pickup reference.",
-                    ),
-                    field(
-                        "Physical pickup identity confirmation",
-                        "textarea",
-                        "Specify what the warehouse verifies against the authorized assignment and how it reports discrepancies. Minimize unnecessary personal data collection while retaining enough evidence to establish the carrier, equipment, and authorized custody transfer at pickup.",
-                        "The warehouse compares arriving carrier identity and equipment references with the brokerage release, using its established driver-verification procedure. A different tractor number requires a callback and documented update. A different operating carrier requires renewed counterparty review; neither change is accepted solely because someone presents the correct pickup number.",
-                    ),
-                    field(
-                        "Tracking events and exception clock",
-                        "textarea",
-                        "Define operational milestones, source priority, stale-data thresholds, and escalation timing. Distinguish an absent tracking signal from confirmed shipment delay, and provide a manual verification method for shipments whose mobile or telematics integration stops reporting.",
-                        "project44 events feed booked, arrived pickup, departed pickup, arrived delivery, and delivered milestones when available. A ninety-minute signal gap opens an exception, not an automatic late-delivery conclusion. Dispatch calls the verified carrier contact, records the result, and updates the shipper with the confirmed estimate and next check time.",
-                    ),
-                    field(
-                        "Delivery evidence and invoice eligibility",
-                        "textarea",
-                        "List the delivery documents and shipment references required to issue a correct customer invoice. Describe how shortages, damage notations, missing signatures, and illegible images change the workflow without erasing contractual carrier-payment obligations.",
-                        "FB-000101 requires a legible signed delivery receipt, matching load reference, delivery date, and recorded exceptions. A receiver notation of two crushed cartons opens a claims review. Accounting separates the undisputed freight charge from the cargo issue and checks contract terms before withholding any amount owed to the carrier.",
-                    ),
-                    field(
-                        "Shipment ledger entries and reconciliation",
-                        "textarea",
-                        "Specify the ledger treatment for customer billing, carrier expense, receipts, and payment using the approved accounting policy. Show how a load-level subledger reconciles to control accounts without assuming every brokerage uses gross revenue presentation.",
-                        "Under an approved gross-presentation policy, FB-000101 records $2,500 customer receivable and revenue, plus $2,050 transportation expense and carrier payable. Collection clears receivable; payment clears payable. Under net presentation, the accountant changes financial-statement treatment while preserving the same $2,500 billings and $2,050 settlement audit trail.",
-                    ),
-                    field(
-                        "Accessorial evidence and adjustment history",
-                        "textarea",
-                        "Define the evidence required to add detention or another accessorial to either side of a load. Preserve original amounts, approval timestamps, and commercial asymmetries so a valid carrier charge is not mistaken for an automatically collectible customer charge.",
-                        "The truck records arrival at 09:00 and departure at 12:30. After two free hours, 1.5 hours at $75 equals $112.50 detention. With matching contractual terms and evidence, billing becomes $2,612.50 and carrier payable $2,162.50; the original $450 spread remains unchanged before operating expenses.",
-                    ),
-                    field(
-                        "Payment identity and bank-change review",
-                        "textarea",
-                        "Describe how the brokerage verifies the lawful payee, bank instructions, factoring notices, and changes. Require independent review for sensitive edits and explain how existing verified channels are used without trusting contact details inside the change request.",
-                        "A carrier requests a new bank account the afternoon before payment. Accounting suspends that payment instruction, calls the previously verified contact, and obtains independent reviewer confirmation. If a factor claims assignment, accounting validates the assignment and applicable UCC rights before choosing the payee, preventing a mistaken second payment.",
-                    ),
-                    field(
-                        "Integration QA and duplicate protection",
-                        "textarea",
-                        "Specify test inputs, expected outcomes, and evidence for shipment, invoice, and payment interfaces. Include repeated messages, partial failures, malformed amounts, and status reversals, and distinguish an integration acknowledgment from successful posting to the accounting ledger.",
-                        "Replay the delivered event for FB-000101 three times and expect one invoice draft. Send an invoice total of $25,000 against the $2,500 approved tender and expect an exception. Simulate a timeout after ledger posting; retry must find the existing transaction rather than create a duplicate receivable.",
-                    ),
-                    field(
-                        "Shipment close and unresolved exposure",
-                        "textarea",
-                        "Define separate operational, billing, payment, and claims closure conditions. Record who reviews remaining exposure and how closed-load adjustments are authorized, ensuring delivered freight cannot hide open receivables, unpaid carriers, or unresolved cargo incidents.",
-                        "FB-000101 is operationally delivered Wednesday, invoiced Thursday, paid to the carrier on day 15, and collected from the shipper on day 45. A cargo claim keeps the claims record open after financial settlement. Weekly reconciliation reports any difference between the load subledger, bank activity, and general ledger.",
-                    ),
-                ],
-                "completion_gate": (
-                    "Operations and accounting complete one documented shipment simulation "
-                    "and pass duplicate, discrepancy, missing-document, and payment-change "
-                    "tests. Every financial entry maps to supporting evidence, and "
-                    "unresolved cargo exposure remains separately visible."
-                ),
-            },
-            {
-                "worksheet_id": "ws-04",
-                "number": 4,
-                "title": "Authority, Security, Contracts, and Outreach Requirements",
-                "purpose": (
-                    "Convert the brokerage's statutory and contractual duties into "
-                    "specific operating evidence. Verify authority and financial security, "
-                    "maintain transaction records, align carrier and shipper agreements, "
-                    "and control marketing practices without confusing contractual cargo "
-                    "protection with FMCSA registration or motor-carrier insurance obligations."
-                ),
-                "chapter_ref": "Q5, Q9",
-                "instructions": [
-                    (
-                        "Determine the actual services and jurisdictions before applying "
-                        "rules. This workbook models a United States property broker, "
-                        "not a household-goods broker, motor carrier, freight forwarder, "
-                        "customs broker, or ocean transportation intermediary; separately "
-                        "review any expansion into those operating roles."
-                    ),
-                    (
-                        "Verify current FMCSA authority and security requirements from "
-                        "official sources before launch and renewal. Record the rule "
-                        "version, effective date, responsible reviewer, and evidence "
-                        "location, especially where financial-responsibility provisions "
-                        "have implementation dates that differ from publication dates."
-                    ),
-                    (
-                        "Read the shipper agreement and broker-carrier agreement together. "
-                        "Reconcile payment timing, accessorial evidence, claims handling, "
-                        "reassignment restrictions, and liability allocation; do not "
-                        "assume an obligation accepted from the shipper automatically "
-                        "passes through to the carrier."
-                    ),
-                    (
-                        "Build transaction retention and access procedures around "
-                        "applicable broker recordkeeping rules. Protect sensitive payment "
-                        "information through role-based access while preserving the "
-                        "records and examination rights required for parties to the "
-                        "brokered transaction."
-                    ),
-                    (
-                        "Review each outreach channel independently, including business "
-                        "email, manual calling, automated dialing, and text messaging. "
-                        "Record suppression handling and service-provider responsibilities "
-                        "so a sales automation setting cannot silently change the "
-                        "legal or operational character of a campaign."
-                    ),
-                ],
-                "fields": [
-                    field(
-                        "Operating role and authority scope",
-                        "textarea",
-                        "Document the entity's actual role, freight types, and transportation jurisdictions. Identify the applicable registration framework and explain how sales language, operating conduct, and contracts remain consistent with acting as a broker rather than an unregistered carrier.",
-                        "The entity arranges interstate transportation of non-household-goods property by authorized motor carriers. Review broker registration under 49 U.S.C. 13904 and the definitions in 49 CFR 371.2. Website copy says the company arranges transportation; dispatch does not represent that the brokerage owns the contracted trucks.",
-                    ),
-                    field(
-                        "FMCSA authority evidence and launch restriction",
-                        "textarea",
-                        "Record how the business confirms its operating authority is effective, not merely applied for. Include process-agent filing and renewal monitoring responsibilities, and identify which activities may proceed while authority or required filings remain incomplete.",
-                        "Before brokering regulated shipments, the owner confirms effective authority in FMCSA records and verifies the process-agent designation under 49 CFR Part 366. While filings remain incomplete, the team may research lanes and negotiate conditional agreements, but it does not represent a pending application as active authority.",
-                    ),
-                    field(
-                        "Bond or trust financial responsibility",
-                        "textarea",
-                        "Document the $75,000 property-broker security requirement, selected instrument, provider, and monitoring procedure. Review current provisions governing security availability, replenishment, and suspension, and state how restricted trust assets are excluded from working-capital calculations.",
-                        "The owner selects a BMC-84 surety bond meeting 49 U.S.C. 13906(b) and applicable 49 CFR 387.307 requirements. The $75,000 coverage is not operating cash. The renewal checklist verifies current FMCSA rules, provider notices, and response deadlines; any threatened lapse triggers immediate review of authority and shipment commitments.",
-                    ),
-                    field(
-                        "Broker transaction records and examination",
-                        "textarea",
-                        "Specify the transaction records retained under 49 CFR 371.3, the retention period, and the process for responding to a transaction party's examination request. Include compensation and freight-charge records without inventing a universal disclosure format.",
-                        "For each load, retain shipper identity, originating carrier details, bill-of-lading or freight-bill references, compensation, relevant non-brokerage services, and collected freight charges with carrier payment dates. Preserve required records for at least three years under 49 CFR 371.3 and maintain a controlled process for transaction-party examination requests.",
-                    ),
-                    field(
-                        "Broker identity and customer-facing representations",
-                        "textarea",
-                        "Review website text, rate confirmations, email signatures, and sales scripts for accurate broker identity. Explain how operators avoid representing the brokerage as a motor carrier and how the registered business name appears in regulated transportation activity.",
-                        "Review materials against 49 CFR 371.7. The homepage and confirmations identify the registered brokerage name and its broker role, while the selected motor carrier is separately named on shipment documents. Remove claims such as our fleet when the company neither owns nor operates the trucks being offered.",
-                    ),
-                    field(
-                        "Shipper agreement and collection mechanics",
-                        "textarea",
-                        "Capture payment terms, invoice evidence, accessorial authorization, dispute procedures, credit rights, and liability allocation. Identify clauses that could turn a minor document defect into a lengthy collection delay, and assign a reviewer for nonstandard customer terms.",
-                        "The shipper agreement makes undisputed invoices payable within 45 days after receipt of required documentation and requires itemized billing objections within ten business days. It defines detention evidence and permits suspension of new tenders after the credit limit is exceeded, without implying that existing carrier obligations disappear.",
-                    ),
-                    field(
-                        "Carrier agreement and cargo claims allocation",
-                        "textarea",
-                        "Document carrier responsibility, shipment reassignment restrictions, cargo evidence, claim notice procedures, and contractual liability limits. Distinguish the motor carrier's statutory cargo framework from any separate liability the brokerage accepts through its own representations or contracts.",
-                        "The carrier agreement prohibits unauthorized rebrokering and identifies the hauling carrier's cargo obligations. Review 49 U.S.C. 14706 and 49 CFR Part 370 where applicable to motor-carrier claims. Operations preserves delivery exceptions and shipment value evidence; the brokerage does not assume those provisions automatically resolve its separate contractual exposure.",
-                    ),
-                    field(
-                        "Factoring assignments and lawful payee",
-                        "textarea",
-                        "Define how accounting evaluates notices that carrier receivables have been assigned to a factor. Identify the applicable state enactment of UCC 9-406, authenticated notice handling, requests for proof, and escalation when competing parties demand payment.",
-                        "When a factor sends an authenticated assignment notice, accounting checks the carrier, covered receivables, effective date, and independently verified payee details. The reviewer considers applicable state UCC 9-406 requirements and any permitted proof request. Conflicting instructions remain an exception until resolved rather than being settled through the latest email.",
-                    ),
-                    field(
-                        "Commercial email and suppression workflow",
-                        "textarea",
-                        "Specify commercial-email identification, routing accuracy, postal-address inclusion, opt-out handling, and vendor oversight. Record how suppressed contacts remain excluded from future imports and campaigns, even when another employee acquires the same address from a different list.",
-                        "The B2B email sequence follows 15 U.S.C. 7704: accurate headers and subject lines, required commercial identification, a valid physical postal address, and a working opt-out method. Suppress requests within ten business days and retain suppression controls so a later CRM import cannot reactivate the contact.",
-                    ),
-                    field(
-                        "Calling, texting, and annual rules review",
-                        "textarea",
-                        "Document the calling technology, destination number types, message content, and jurisdictional review. Evaluate 47 U.S.C. 227, applicable FCC rules, and relevant state requirements rather than assuming a business contact record authorizes every automated call or text.",
-                        "Launch with individually placed calls to verified business contacts and no prerecorded sales calls or automated text sequence. Review 47 CFR 64.1200 and relevant state restrictions before changing technology. Record opt-outs centrally, evaluate call-recording requirements before recording conversations, and repeat the rules review when campaign settings or jurisdictions change.",
-                    ),
-                ],
-                "completion_gate": (
-                    "The owner records effective authority, current security evidence, "
-                    "process-agent filing, contract versions, retention procedures, and "
-                    "channel-specific outreach controls. Every time-sensitive statutory "
-                    "item has an official source, review date, and accountable reviewer."
-                ),
-            },
-            {
-                "worksheet_id": "ws-05",
-                "number": 5,
-                "title": "Automation, Growth Flywheel, and Risk Fallback Tracker",
-                "purpose": (
-                    "Automate repeatable load matching, shipment tracking, and invoice "
-                    "reconciliation while preserving human control over identity, credit, "
-                    "and payment changes. Connect outbound activity to profitable "
-                    "repeat lanes, and define manual fallback procedures that keep "
-                    "freight and financial records coherent when vendors or integrations fail."
-                ),
-                "chapter_ref": "Q6, Q10",
-                "instructions": [
-                    (
-                        "Map each workflow from source event to operational decision, "
-                        "system update, and exception owner. Automate stable information "
-                        "movement first; preserve explicit human review for carrier "
-                        "substitution, unusual cargo, credit increases, and changed "
-                        "payment instructions until controls are demonstrably reliable."
-                    ),
-                    (
-                        "Connect prospecting to an actual lane thesis and documented "
-                        "capacity. Segment by equipment, geography, shipment frequency, "
-                        "and payable entity, then measure qualified conversations and "
-                        "repeat profitable loads rather than treating sent messages "
-                        "or purchased contacts as business results."
-                    ),
-                    (
-                        "Use named system-of-record ownership for the TMS, CRM, "
-                        "carrier verification platform, accounting ledger, and tracking "
-                        "provider. Define what each integration may write, how duplicate "
-                        "events are detected, and which discrepancies must reach "
-                        "a staffed exception queue."
-                    ),
-                    (
-                        "Treat automation performance as both a labor metric and a "
-                        "control metric. Measure touch time, false exceptions, missed "
-                        "exceptions, stale data, and reconciliation breaks so a "
-                        "reduction in clicks does not mask greater cargo or "
-                        "payment exposure."
-                    ),
-                    (
-                        "Rehearse vendor outage, suspected carrier impersonation, and "
-                        "shipper nonpayment scenarios. Assign a fallback owner and "
-                        "recovery checklist for each, and verify that staff can "
-                        "continue permitted work without copying sensitive payment "
-                        "data into uncontrolled personal spreadsheets."
-                    ),
-                ],
-                "fields": [
-                    field(
-                        "System-of-record and integration ownership",
-                        "textarea",
-                        "Assign authoritative systems for customers, loads, carrier verification, invoices, and payments. Define the permitted direction of each interface and identify which system wins when two records disagree about a financial amount or shipment status.",
-                        "HubSpot owns prospect activity; the selected TMS owns loads and approved commercial amounts; Highway stores carrier-screening evidence; QuickBooks Online owns posted accounting entries. An integration may create invoice drafts but cannot change verified bank instructions. Disagreements between TMS totals and the ledger enter the accounting exception queue.",
-                    ),
-                    field(
-                        "Load-matching rules and capacity evidence",
-                        "textarea",
-                        "Define the inputs and exclusions for automated carrier recommendations. Include lane history, equipment, active authority evidence, insurance fit, service performance, and independently verified identity, and distinguish a suggested match from an authorized dispatch commitment.",
-                        "The matching rule ranks previously approved dry-van carriers with Columbus-to-Nashville history, suitable cargo coverage, and no unresolved identity exception. It proposes three options for a $2,050 target buy. Dispatch confirms actual capacity and driver assignment before tendering; a platform availability signal alone does not book the truck.",
-                    ),
-                    field(
-                        "Carrier screening exception pipeline",
-                        "textarea",
-                        "Specify screening refresh triggers, exception severity, and reviewer actions. Explain how Highway or RMIS findings interact with official authority records and independent callbacks, without claiming the platform detects every fraudulent or unauthorized transaction.",
-                        "Refresh screening before assignment and after a material contact or ownership change. A new dispatch domain combined with changed bank details creates a high-priority exception. Operations checks official records and calls established contacts; the load remains unassigned until identity is resolved, even if the offered carrier price is unusually low.",
-                    ),
-                    field(
-                        "Tracking automation and manual recovery",
-                        "textarea",
-                        "Define milestone ingestion, customer update rules, and the fallback when tracking fails. Include stale-signal thresholds, evidence quality labels, and the person responsible for confirming the truck's status instead of allowing software to manufacture certainty.",
-                        "Tracking events update the TMS every available reporting interval, while customer notices use only confirmed milestones. After ninety minutes without a signal, dispatch contacts the verified carrier and records a manual update. The system labels that update as dispatcher-confirmed and preserves the original telemetry gap for later vendor review.",
-                    ),
-                    field(
-                        "Invoice reconciliation and human review",
-                        "textarea",
-                        "Describe document extraction, matching tolerances, duplicate checks, and exception routing. Explain which values require exact agreement and why optical character recognition output cannot independently establish the carrier's entitlement or authorize an irreversible payment.",
-                        "The invoice workflow matches load identifier, carrier legal entity, approved rate, and delivery documentation. A $2,050 carrier invoice passes amount matching; a $2,162.50 invoice requires the supported detention adjustment. OCR may populate fields, but an unmatched payee, duplicate invoice number, or changed account routes to accounting review.",
-                    ),
-                    field(
-                        "Target account and outbound lane offer",
-                        "textarea",
-                        "Define the ideal shipper account and a specific operational offer grounded in your niche. Record contact sourcing, outreach channel, qualification questions, and suppression handling without claiming capacity or delivery performance that the brokerage has not established.",
-                        "Build a list of forty packaging manufacturers shipping dry-van freight within the Ohio-to-Tennessee corridor. The offer is a documented backup-capacity plan with transparent detention terms, not guaranteed savings. Ask about weekly tenders, collection terms, appointment failures, and cargo value; exclude accounts whose needs exceed the approved operating boundary.",
-                    ),
-                    field(
-                        "Growth funnel and repeat-load conversion",
-                        "textarea",
-                        "Track account progression from outreach through qualified discovery, pilot tender, collected invoice, and repeat volume. Separate gross billings from contribution and identify where acquisition costs are included so growth metrics reconcile with the operating budget.",
-                        "An illustrative month produces forty researched accounts, twelve conversations, four qualified lane reviews, two pilot shippers, and twelve completed loads. At Base unit economics, those loads generate $30,000 billings and $5,400 spread before overhead and expected losses. Prospecting labor and software remain inside the modeled operating expense budget.",
-                    ),
-                    field(
-                        "Automation labor and quality scorecard",
-                        "textarea",
-                        "Set measurable before-and-after targets for shipment touch time and error handling. Include sample size and review method, and distinguish hours potentially released by automation from payroll savings that require an actual staffing or capacity change.",
-                        "Across 100 monthly Base loads, reduce documented administrative touch time from 35 to 22 minutes, releasing about 21.7 hours monthly. Audit ten loads weekly for missed exceptions and duplicate entries. Keep the canonical 3 FT plus 2 C staffing until service performance and actual workload justify a different operating design.",
-                    ),
-                    field(
-                        "Fraud, claims, and nonpayment fallback",
-                        "textarea",
-                        "Create separate response paths for carrier fraud, cargo claims, and shipper nonpayment. Identify immediate containment, evidence preservation, customer communication, and payment responsibilities without treating every exception as grounds to cancel legitimate carrier obligations.",
-                        "Suspected impersonation stops cargo release and changed payment instructions while staff verify custody and contact relevant parties. Cargo damage triggers evidence preservation and insurer notification under policy terms. A shipper reaching day 60 triggers credit review and suspension of new tenders, while valid carrier invoices remain scheduled under their agreements.",
-                    ),
-                    field(
-                        "Vendor outage and recovery reconciliation",
-                        "textarea",
-                        "Define a minimum viable manual operating mode, access controls, and restoration checks. Explain how staff prevent duplicate loads, invoices, and payments when offline records are imported after service returns, and name the person who authorizes reconciliation completion.",
-                        "During a TMS outage, operations uses a controlled shared register with reserved load identifiers and read-only copies of active shipment packets. Accounting does not improvise new payees. After restoration, the integration owner reconciles each manual event, verifies one invoice per load, and confirms no payment was sent twice.",
-                    ),
-                ],
-                "completion_gate": (
-                    "The automation owner demonstrates one matched load, one tracking "
-                    "exception, one invoice discrepancy, and one outage recovery. Sales "
-                    "reports qualified, collected, repeat business, while identity and "
-                    "payment exceptions retain named human ownership."
-                ),
-            },
-            {
-                "worksheet_id": "ws-06",
-                "number": 6,
-                "title": "30-Day Launch Sprint, Pod Scorecard, and Exit-Readiness Ledger",
-                "purpose": (
-                    "Turn the workbook into a thirty-day evidence-building sprint "
-                    "with accountable owners, bounded spending, and measurable operating "
-                    "results. Preserve the realistic two-to-six-month first-deal horizon "
-                    "while establishing repeatable shipment controls, defensible financial "
-                    "records, and transferable customer relationships that reduce dependence "
-                    "on the founder."
-                ),
-                "chapter_ref": "Q11, Q12",
-                "instructions": [
-                    (
-                        "Treat thirty days as an operating-readiness sprint rather "
-                        "than a promise of first revenue. The canonical first-deal "
-                        "window is two to six months; authority timing, customer "
-                        "procurement, credit review, and carrier onboarding can extend "
-                        "beyond the initial preparation calendar."
-                    ),
-                    (
-                        "Assign a single accountable owner and tangible deliverable "
-                        "to each weekly milestone. Separate activities the team "
-                        "controls from external approvals and customer decisions, "
-                        "and record spending commitments before they reduce cash "
-                        "available for carrier settlement."
-                    ),
-                    (
-                        "Build the pod scorecard from reconciled load, cash, and "
-                        "exception records. Show gross billings, spread, expected "
-                        "losses, operating expense, owner profit, days to collect, "
-                        "and carrier-payment timing together so a volume increase "
-                        "cannot conceal deteriorating unit economics."
-                    ),
-                    (
-                        "Document role coverage and handoff procedures before the "
-                        "owner becomes the only person who can quote, dispatch, "
-                        "collect, or handle claims. Respect the canonical team "
-                        "sizes while recognizing that contractors need defined "
-                        "deliverables, access boundaries, and genuine classification review."
-                    ),
-                    (
-                        "Organize an exit-readiness file from the first shipment, "
-                        "including contracts, customer concentration, accounting bridges, "
-                        "authority records, and system ownership. Identify transfer "
-                        "restrictions and required counterparty actions without assuming "
-                        "broker authority or customer relationships automatically move "
-                        "with an asset sale."
-                    ),
-                ],
-                "fields": [
-                    field(
-                        "Days 1–7: niche, entity, and cash baseline",
-                        "textarea",
-                        "Define the first week's deliverables, responsible people, spending limits, and external dependencies. Include the niche thesis, legal entity, authority workstream, and initial liquidity model without representing incomplete filings as permission to operate.",
-                        "By day seven, the owner completes the packaging-lane thesis, documents the $200,000 funding example, and assigns authority and security filings to a named administrator. Spend no more than $5,000 of the $20,000 setup budget during this week. The bookkeeper establishes the gross-billings-to-ledger reconciliation before transactions begin.",
-                    ),
-                    field(
-                        "Days 8–14: counterparties and commercial packet",
-                        "textarea",
-                        "Set measurable targets for shipper discovery, carrier qualification, and contract preparation. Distinguish a researched prospect from an approved customer and a screened carrier from confirmed capacity, preserving evidence for every change in readiness status.",
-                        "By day fourteen, research forty shippers, complete eight discovery conversations, and assemble five carrier packets for the initial corridor. The operations lead checks each packet against official records and independently sourced contacts. Commercial drafts include payment timing, detention evidence, and reassignment restrictions, but no shipment is booked before effective authority.",
-                    ),
-                    field(
-                        "Days 15–21: systems and shipment rehearsal",
-                        "textarea",
-                        "Define the system configuration and test evidence required during the third week. Include a complete mock shipment, ledger reconciliation, fraud exception, and vendor outage exercise, with specific acceptance criteria and named reviewers rather than a generic software-ready milestone.",
-                        "By day twenty-one, operations rehearses FB-000101 from tender through delivery and accounting records the $2,500 receivable and $2,050 carrier payable in a test environment. Repeat the delivery event three times and confirm one invoice draft. The owner observes a failed bank-change request and a controlled outage recovery.",
-                    ),
-                    field(
-                        "Days 22–30: readiness review and bounded pilot",
-                        "textarea",
-                        "Specify the conditions for a live pilot and the useful work completed if external dependencies remain open. Bound shipment count and credit exposure, and avoid turning the sprint deadline into pressure to bypass authority, cash, or identity requirements.",
-                        "By day thirty, launch up to two pilot loads only if authority is effective, counterparties are verified, contracts are signed, and carrier payments are funded. Otherwise complete additional discovery and simulations. Two Base-priced pilot loads produce $5,000 billings and $900 spread, not evidence of sustainable monthly profitability.",
-                    ),
-                    field(
-                        "Pod roles, coverage, and canonical headcount",
-                        "textarea",
-                        "Map sales, dispatch, accounting, claims, and systems ownership to the canonical team. Specify backup coverage and contractor deliverables, and identify where the working owner is counted so staffing and compensation assumptions remain consistent with the financial worksheet.",
-                        "Conservative and Base use 3 FT plus 2 C: owner-commercial lead, operations lead, account operator, contract bookkeeping support, and contract systems support. Scaled uses 4 FT plus 3 C, adding an employee coordinator and scoped claims support. The owner occupies one FT seat in every illustrative budget.",
-                    ),
-                    field(
-                        "Weekly unit-economics and cash scorecard",
-                        "textarea",
-                        "Define scorecard formulas, source systems, review cadence, and action thresholds. Keep load margin, owner profit, cash collections, and carrier disbursements distinct, and show how a monthly operating view reconciles to the annual canonical Base scenario.",
-                        "At 100 Base loads monthly, track $250,000 billings, $205,000 carrier cost, $45,000 spread, $28,750 operating expense, $2,500 expected losses, and $13,750 owner net. Annualizing those amounts gives $165,000 owner net. Review receivable aging and the $236,250 liquidity requirement alongside the earnings figures each week.",
-                    ),
-                    field(
-                        "Service and counterparty quality scorecard",
-                        "textarea",
-                        "Select operational measures that reveal failure before financial losses appear. Define denominators, evidence sources, and escalation thresholds for identity verification, appointment performance, document turnaround, claim events, and unresolved exceptions rather than relying on aggregate customer satisfaction.",
-                        "Require verified carrier identity on every released load and reviewed payment identity on every changed payee instruction. Target at least 97 on-time pickups per 100 scheduled loads and delivery-document receipt within one business day on 95 loads. Report denominators and exceptions; one suspected impersonation receives review regardless of the aggregate rate.",
-                    ),
-                    field(
-                        "Capital release and volume expansion decision",
-                        "textarea",
-                        "Tie additional volume to demonstrated cash capacity, collected invoices, service performance, and risk exposure. State which data period supports expansion and explain how a revised payment pattern changes the funded load ceiling before sales commits capacity.",
-                        "Do not expand from 72 toward 100 monthly Base-cost loads using the $180,000 cash balance alone. Confirm the additional $56,250 funding requirement and available credit terms first. If collection drifts to day 60, recalculate using $338,750 operating liquidity and reduce accepted tenders until the larger gap is funded.",
-                    ),
-                    field(
-                        "Exit-readiness records and transfer constraints",
-                        "textarea",
-                        "List the financial, commercial, operational, and regulatory evidence a buyer would need to evaluate the business. Identify assignability and ownership questions explicitly, and distinguish management preparation from a completed legal or regulatory transfer of the brokerage.",
-                        "Maintain monthly billings-to-ledger bridges, customer-level spread, receivable aging, claims history, signed agreements, security records, and system-access inventories. Flag customer assignment clauses and transaction-specific FMCSA requirements for review. The data room separates owner-dependent relationships from documented account processes and excludes unrestricted distribution of sensitive carrier payment information.",
-                    ),
-                    field(
-                        "Day-30 decision and next ninety-day commitments",
-                        "textarea",
-                        "Record whether to continue, narrow, pause, or expand the launch, supported by observed evidence. Assign owners and dates for the next ninety days, preserving the canonical scenarios as benchmarks rather than presenting uncollected pilots as achieved annual results.",
-                        "Continue the packaging niche if authority, identity controls, and cash coverage are documented, while keeping the funded shipment ceiling unchanged until collections validate timing. Over the next ninety days, target two repeat shippers and complete monthly reconciliations. Report actual results separately from Conservative $30,000, Base $165,000, and Scaled $400,000 annual owner-net benchmarks.",
-                    ),
-                ],
-                "completion_gate": (
-                    "The owner signs a dated launch decision supported by readiness "
-                    "evidence, reconciled cash capacity, named pod responsibilities, "
-                    "and a ninety-day operating plan. Live activity remains bounded "
-                    "by effective authority, verified counterparties, and funded carrier obligations."
-                ),
-            },
-        ],
-    }
+    return {'workbook_id': 'wb-025-freight-brokerage',
+ 'volume_id': 'vol-025-freight-brokerage',
+ 'title': 'Freight Brokerage — Practitioner Testimony Operator Workbook',
+ 'subtitle': 'Launch math, broker authority, the $75,000 bond, agent versus owner economics, and the '
+             'prospecting and cold-call system that books a first shipper',
+ 'worksheets': [{'worksheet_id': 'ws-01',
+                 'number': 1,
+                 'title': 'Business Case, Launch Budget and Authority Filing Plan',
+                 'purpose': 'Turn the spread-trade model into hard numbers before spending a dollar. Pick '
+                            'a niche, total the startup and monthly burn, set margin and break-even '
+                            'targets, line up float funding, and map every step from the MOTIS application '
+                            'to an active MC number.',
+                 'chapter_ref': 'Q1-Q2',
+                 'instructions': ['Work the fields in order, because each number feeds the next: niche '
+                                  'drives margin, margin drives break-even, and break-even drives how much '
+                                  'float funding you need.',
+                                  'Write real dollar figures, not ranges, wherever you can, and keep '
+                                  'training costs in a separate column from authority startup costs.',
+                                  'Price every tool and fee yourself before relying on the reference '
+                                  'numbers, then note where your quote differs and why.',
+                                  'Treat the authority fields as a checklist: do not file until the '
+                                  'process agent, prior DOT disclosure and fee confirmation are all '
+                                  'written down.',
+                                  'Revisit the break-even and float fields every month for the first year '
+                                  'and update them against actual loads and actual collections.'],
+                 'fields': [{'name': 'niche_target',
+                             'type': 'textarea',
+                             'prompt': 'Name the single freight niche your brokerage will chase first, the '
+                                       'commodities inside it, and why that freight pays the same money '
+                                       'for a fraction of the work. List three shipper types and the '
+                                       'equipment each one needs.',
+                             'example': 'Niche: steel, lumber and machinery. Krause chases it because it '
+                                        'is 1/4 of the work for the same amount of money [Matt Krause — '
+                                        'bP4Dnpd58PE @ 00:06:30]. Targets: a lumber yard showing white '
+                                        'rectangles, a coil processor showing gray cylinders, and a '
+                                        'machinery dealer showing yellow shapes, each confirmed with '
+                                        'flatbeds on Street View [Matt Krause — bP4Dnpd58PE @ 00:07:11].'},
+                            {'name': 'startup_cost_budget',
+                             'type': 'textarea',
+                             'prompt': 'Itemize every authority startup cost you will pay before your '
+                                       'first load: FMCSA filing fee, BMC-84 premium, BOC-3, UCR, LLC '
+                                       'formation and contingent cargo. Total the line items, note your '
+                                       'credit tier, and keep training costs in a separate column.',
+                             'example': 'FMCSA fee $300, UCR $46, BOC-3 process agent, plus LLC, BMC-84 '
+                                        'premium and contingent cargo. Krause puts the all-in at $2,500 to '
+                                        '$3,500, rising to $3,500 to $4,500 with weaker credit, with '
+                                        'training kept separate [Matt Krause — afV63okbAMs @ 00:07:50]. My '
+                                        'credit is fair, so I am budgeting $4,000 and holding training '
+                                        'money in a separate account.'},
+                            {'name': 'monthly_tech_stack',
+                             'type': 'textarea',
+                             'prompt': 'List each monthly tool in your stack with its price: load board, '
+                                       'carrier vetting tool, TMS and phone line. Add the total, then '
+                                       'calculate how many loads at your expected margin cover that burn '
+                                       'every single month.',
+                             'example': 'Load board $150, vetting tool $50 to $100, TMS about $25 or free, '
+                                        'phone $30, for roughly $300 a month. Krause notes about two '
+                                        'loads, or one $400-margin load, covers it [Matt Krause — '
+                                        'bP4Dnpd58PE @ 00:11:44]. A TMS plan stays $0 with an active '
+                                        'shipper and a shipment every 30 days, otherwise $149 a month '
+                                        '[Freight Broker 911 — edDHTJiH5HM @ 00:00:34].'},
+                            {'name': 'margin_model',
+                             'type': 'textarea',
+                             'prompt': 'State the margin you will plan around for your chosen freight '
+                                       'type, then convert it into dollars on a typical load. Compare dry '
+                                       'van, blended and specialized ranges, and explain why gross revenue '
+                                       'is not the size of your business.',
+                             'example': 'Planning margin: 20% on specialized flatbed, against 8 to 12% for '
+                                        'dry van and 12 to 18% blended. A $50M gross operation equals a '
+                                        '$7.5M business, because only the spread is mine '
+                                        '[MillionsExplained — An8HIad4rIg @ 00:00:46]. Unit economics run '
+                                        '$100 to $600 per load at 10 to 20%, so a $2,000 shipper rate at '
+                                        '15% yields $300.'},
+                            {'name': 'owner_income_formula',
+                             'type': 'textarea',
+                             'prompt': 'Write your owner income formula as loads per week times margin per '
+                                       'load times weeks per year. Run it for one shipper and for five, '
+                                       'then note what still comes out before any of that margin becomes a '
+                                       'personal paycheck.',
+                             'example': 'One shipper at 5 loads a week x $200 = $50,000 a year in margin; '
+                                        'five shippers produce $250K of margin, which is not a paycheck '
+                                        '[Matt Krause — VD-td9ERDAU @ 00:02:03]. Even one shipment a week '
+                                        'at $200 is over $10,000 a year recurring [FreightBrokers — '
+                                        "9Yk3-F4z_xs @ 00:01:27]. Drew Taylor's target: five great clients "
+                                        '[Drew Taylor — xahcxGx0b30 @ 00:06:17].'},
+                            {'name': 'break_even_loads',
+                             'type': 'text',
+                             'prompt': 'Calculate your monthly break-even in loads by dividing total '
+                                       'monthly overhead by your average margin per load. Include '
+                                       'software, phones, insurance, bond premium and any salaries, and '
+                                       'state the load count you must clear before you earn anything.',
+                             'example': 'Overhead $10,000 a month divided by $200 per load means 50 loads '
+                                        'a month before the owner earns anything [The Finance Pro — '
+                                        '29d2gRCN8Ng @ 00:04:04]. My lean year-one overhead is $2,000, so '
+                                        'at $200 margin I break even at 10 loads monthly. A $300 gross '
+                                        'still nets about $225 after roughly $75 of expenses '
+                                        '[FreightBrokers — Lpq9AHrz7nQ @ 00:05:20].'},
+                            {'name': 'float_funding_plan',
+                             'type': 'textarea',
+                             'prompt': 'Map the cash gap between paying carriers and collecting from '
+                                       'shippers. Estimate weekly load count, average carrier pay and '
+                                       'shipper terms, then name the funding source, whether cash, credit '
+                                       'line or factoring, that covers the float by week four.',
+                             'example': 'At 10 loads a week a new desk is $40,000 out of pocket by week '
+                                        'four [Matt Krause — bP4Dnpd58PE @ 00:31:39]. A brokerage can '
+                                        'double its volume, book record margins, and run out of money in '
+                                        'the same quarter [MillionsExplained — An8HIad4rIg @ 00:04:47]. My '
+                                        'plan: factoring at 1.5 to 5 percent until reserves cover thirty '
+                                        'days.'},
+                            {'name': 'motis_application_log',
+                             'type': 'textarea',
+                             'prompt': 'Document your authority application path: the login.gov email you '
+                                       'will keep long term, each authority type you are applying for, the '
+                                       'fee paid per type, and the date you will check SAFER for an active '
+                                       'MC number afterward.',
+                             'example': 'Signed into MOTIS through login.gov with a long-lived business '
+                                        'email; applying is not the same as being approved [The Broker '
+                                        'Intellect — 5TtQ4-VoZuI @ 00:02:25]. Paid $300 for broker '
+                                        'authority, because paying $0 means only a DOT number was issued. '
+                                        'SAFER check under Licensing & Insurance set for roughly 24 hours '
+                                        'later [Truckers Authority — jyVHYDl8PgQ @ 00:27:37].'},
+                            {'name': 'process_agent_and_separation',
+                             'type': 'textarea',
+                             'prompt': 'Confirm your BOC-3 process agent covers every state you operate '
+                                       'in, and list any DOT number tied to you in the past three years. '
+                                       'If you also run trucks, describe how you keep the brokerage '
+                                       'separate on paper.',
+                             'example': 'Process agent confirmed for all operating states before filing, '
+                                        'since omitting one causes delays or rejection [FMCSA REGISTRATION '
+                                        'dot com — XvoPUTkM1io @ 00:01:04]. Prior DOT from 2024 disclosed, '
+                                        'because FMCSA links applicants by email, phone and tax ID. '
+                                        'Brokerage uses a different address, phone, email and owner than '
+                                        'the trucking company [Truckers Authority — jyVHYDl8PgQ @ '
+                                        '00:17:57].'},
+                            {'name': 'records_and_carrier_screen',
+                             'type': 'textarea',
+                             'prompt': 'Write your stance on 49 CFR 371.3 transaction records and how you '
+                                       'will respond when a carrier requests them. Then list the SAFER '
+                                       'checks every carrier must pass before you tender a load, including '
+                                       'the red flags you screen.',
+                             'example': 'Records requests get answered, because each party has the right '
+                                        'to review the record [CDL Shorty — _uTvz6Ay4oQ @ 00:01:47]; the '
+                                        '48-hour electronic proposal is not a final rule. Carriers must '
+                                        'show authorized status, matching phone, more than zero trucks and '
+                                        'a known grant date [Matt Krause — afV63okbAMs @ 00:29:48]. A '
+                                        '$4,000 post on a $2,700 lane gets screened out.'}],
+                 'completion_gate': 'Complete when the niche is named, startup and monthly costs are '
+                                    'totaled in dollars, break-even is stated as a load count, float '
+                                    'funding is secured for week four, the $300 authority fee and process '
+                                    'agent coverage are confirmed, and the carrier SAFER screen is '
+                                    'written.'},
+                {'worksheet_id': 'ws-02',
+                 'number': 2,
+                 'title': 'Bond Strategy and the Agent-or-Broker Decision',
+                 'purpose': 'Price and secure the $75,000 financial security on the best terms your credit '
+                            'allows, build a reserve for the seven-day replenishment rule, and decide with '
+                            'real split math whether to launch as a freight agent or an owner-broker.',
+                 'chapter_ref': 'Q3-Q4',
+                 'instructions': ['Get at least one BMC-84 quote in hand before filing authority, and '
+                                  'record the rate as a percentage of $75,000 as well as a dollar premium.',
+                                  'Remember the bond protects carriers, not you: the surety pays valid '
+                                  'claims and claws every dollar back, so plan for repayment.',
+                                  'Never accept the first premium; log every quote, its source and the '
+                                  'date so the renewal negotiation has evidence behind it.',
+                                  'For the agent fields, run one real load through the split and demand '
+                                  'every deduction in writing before comparing offers.',
+                                  'Finish with a written path decision and the specific trigger, in loads '
+                                  'or shippers, that would move you to the other path.'],
+                 'fields': [{'name': 'bond_quote_before_filing',
+                             'type': 'textarea',
+                             'prompt': 'Before filing authority, request a BMC-84 surety bond quote and '
+                                       "record the premium, the rate percentage and the surety's name. "
+                                       'State whether that premium is realistic for your current credit '
+                                       'and what you will do if it is not.',
+                             'example': 'Quoted the BMC-84 first, because the quote may prove the bond is '
+                                        'not realistic for your credit [Freight Broker TV — wSNSmdThc6A @ '
+                                        '00:06:18]. My quote came back at 4.6%, or $3,450 a year, the '
+                                        'poor-credit tier Surety Bonds Direct describes. If a quote hits '
+                                        "$8,000 to $10,000, Manney's play is a loan [Brandon Manney The "
+                                        'Mentor — BKciSMvLpD8 @ 00:03:04].'},
+                            {'name': 'premium_rate_math',
+                             'type': 'text',
+                             'prompt': 'Convert your bond premium into a percentage of the $75,000 bond '
+                                       'amount and compare it with the best market rate. Note your credit '
+                                       'score band and explain why the bond is not a $75,000 check you '
+                                       'write upfront.',
+                             'example': 'A 1.3% rate on $75,000 is $975 a year, currently the best rate on '
+                                        'the market, while 4.6% for limited credit is $3,450 [Surety Bonds '
+                                        'Direct — tkM7CbVBoC0 @ 00:01:35]. The biggest beginner mistake is '
+                                        'thinking you must write a $75,000 check [FreightBrokers — '
+                                        'yiDO9s6ArZU @ 00:01:01]. Sub-600 scores can see $8,000 to '
+                                        '$10,000.'},
+                            {'name': 'surety_selection',
+                             'type': 'textarea',
+                             'prompt': 'List at least three surety sources you will approach, including a '
+                                       'specialty agent with access to multiple A-rated sureties. For '
+                                       'each, confirm whether they write brand-new brokers before '
+                                       'applying, and record the date and outcome of every application.',
+                             'example': 'Source one: a specialty surety agent working multiple A-rated '
+                                        'sureties, since each surety applies its own assessment to the '
+                                        'same credit file [Surety Bonds Direct — tkM7CbVBoC0 @ 00:02:07]. '
+                                        'Source two: skipped JW Surety Bonds after learning they turned '
+                                        'away new brokers in 2025 [Thee Freight Broker Report — '
+                                        'O1ZmR8X3CRg @ 00:05:19]. Source three: a direct surety quote.'},
+                            {'name': 'renewal_negotiation_plan',
+                             'type': 'textarea',
+                             'prompt': 'Set the calendar date your bond term ends and write the '
+                                       'renegotiation plan you will run before renewal. Note your payment '
+                                       'history with carriers, the premium you will ask for, and how many '
+                                       'competing quotes you will collect first.',
+                             'example': 'Brandon Scott had great credit, accepted a $3,000 quote without '
+                                        'negotiating, paid $750 a quarter, then reapplied at term end and '
+                                        'cut it to $1,500 [Brandon Scott — lzC0i5OReRU @ 00:05:47]. My '
+                                        'term ends in month twelve; I will bring a record of carriers paid '
+                                        'on time and collect two competing quotes before signing '
+                                        'anything.'},
+                            {'name': 'bmc84_vs_bmc85',
+                             'type': 'textarea',
+                             'prompt': 'Compare the BMC-84 surety bond with the BMC-85 trust for your '
+                                       'situation. Record the cash each option ties up, how shippers view '
+                                       'each one, and which you will choose and why, given your credit and '
+                                       'liquid capital.',
+                             'example': 'The BMC-85 trust ties up the full $75,000, while the BMC-84 costs '
+                                        "only a credit-driven annual premium. Certain shippers don't like "
+                                        'trusts and would rather have surety bonds, but trusts are '
+                                        'sometimes easier to obtain [StillHawginTV — eEOluDo3mZM @ '
+                                        '00:03:51]. Choice: BMC-84, because I cannot park $75,000 and '
+                                        'still fund carrier payables.'},
+                            {'name': 'replenishment_reserve',
+                             'type': 'textarea',
+                             'prompt': 'Size the cash reserve you will hold to restore your $75,000 '
+                                       'security if a claim is paid against it. Write the step-by-step '
+                                       'response for the seven-day replenishment window, including who is '
+                                       'called first and where the money comes from.',
+                             'example': 'If security falls below $75,000 and is not replenished within '
+                                        'seven calendar days, FMCSA suspends the authority [Truckadium — '
+                                        '1YErjMy4aFQ @ 00:02:02]. The surety pays valid claims and claws '
+                                        'every dollar back. Fraud moves fast: $75,000 a day can empty the '
+                                        'whole bond in one day [ShipLeague — bOzO119lSlI @ 00:01:09]. '
+                                        'Reserve: $10,000 plus a standby credit line.'},
+                            {'name': 'package_unbundling',
+                             'type': 'textarea',
+                             'prompt': 'If a training outfit offers to file everything for you, list each '
+                                       'line item in their package and price it separately. Compare their '
+                                       'total against filing your own authority, and note what the bond '
+                                       'portion actually costs on its own.',
+                             'example': 'Package offered: $6,000 to file authority, bond and process '
+                                        'agent. Mike warns that $5,000 to $7,000 packages may be billing '
+                                        'for a bond that costs under $1,000, and a couple of phone calls '
+                                        'can get your own authority for less than $2,000 [Freight Broker '
+                                        'TV — wSNSmdThc6A @ 00:11:07]. Decision: unbundle and file it '
+                                        'myself.'},
+                            {'name': 'agent_split_math',
+                             'type': 'textarea',
+                             'prompt': 'Run one sample load through an agent split. Enter the shipper '
+                                       'rate, carrier rate, margin and split percentage, then show the '
+                                       "agent's take and the brokerage's take. Confirm the split comes off "
+                                       'margin, never off gross revenue.',
+                             'example': 'Shipper pays $2,000, carrier gets $1,700, margin $300. At a 60% '
+                                        "split the agent takes $180 and the brokerage keeps $120, and it's "
+                                        'always a percent of the margin [Matt Krause — hhT4X32MspU @ '
+                                        '00:01:29]. New agents start near 50%; veteran ALG agent Connor '
+                                        'Harutyunyan earns about 67% [FreightBrokers — jgNUpO0VPws @ '
+                                        '01:04:08].'},
+                            {'name': 'agent_contract_terms',
+                             'type': 'textarea',
+                             'prompt': 'Before signing any agent agreement, list every deduction taken '
+                                       'before and after the split, who owns the shipper relationships, '
+                                       'and the length of any non-compete. Then run the walk-away test and '
+                                       'record what you would keep if you left.',
+                             'example': 'Deductions asked in writing: load board, software and insurance, '
+                                        'before and after the split [Matt Krause — hhT4X32MspU @ '
+                                        "00:04:54]. Shipper ownership confirmed in writing; the contract's "
+                                        '2-year non-compete was flagged before the walk-away test [Matt '
+                                        'Krause — hhT4X32MspU @ 00:06:43]. Eagle Express advertises 100% '
+                                        'commission but charges a 5% admin fee on gross [Eagle Express — '
+                                        '952lbvkEVvM @ 00:01:19].'},
+                            {'name': 'path_decision',
+                             'type': 'textarea',
+                             'prompt': 'Choose your first path, freight agent or owner-broker, and defend '
+                                       'it with numbers. Compare startup cost, weekly income on five '
+                                       'shippers, receivables exposure and risk, then state what would '
+                                       'trigger a switch to the other path later.',
+                             'example': 'Owner startup runs $2,500 to $3,500 against roughly $0 for an '
+                                        'agent [Matt Krause — hhT4X32MspU @ 00:08:29]. Five shippers pay '
+                                        'an agent $4,500 a week versus $7,500 for an owner carrying '
+                                        'factoring, insurance and 65-day receivables. The broker is '
+                                        'building a business and the agent is building a job [Matt Krause '
+                                        '— xe6QTceV_JE @ 00:02:46]. Choice: agent first.'}],
+                 'completion_gate': 'Complete when a written BMC-84 quote is on file, three surety sources '
+                                    'are logged, a renewal date and negotiation plan are set, a seven-day '
+                                    'replenishment reserve is funded, and the agent-or-broker decision is '
+                                    'backed by split math and signed contract terms.'},
+                {'worksheet_id': 'ws-03',
+                 'number': 3,
+                 'title': 'Shipper Pipeline and Cold-Call Playbook',
+                 'purpose': 'Build a qualified prospect list, set the shipper count and touch cadence that '
+                            'produce a six-figure book, and script every part of the call, from opener and '
+                            'objections to the close, terms and the handover after the first load.',
+                 'chapter_ref': 'Q5-Q6',
+                 'instructions': ['Build the prospect list before writing any script, because the opener '
+                                  'and pitch must match the freight those facilities actually ship.',
+                                  'Write every script line word for word, then read it aloud standing up '
+                                  'and record yourself until it sounds relevant rather than rehearsed.',
+                                  'Track touches across phone, email, LinkedIn and face-to-face, and '
+                                  'expect 8 to 12 touches before a shipper says yes.',
+                                  'Set terms, margin floor and collection triggers before the first quote '
+                                  'so nothing gets negotiated away in the excitement of a win.',
+                                  'Keep 90 percent or more of your time on prospecting even after loads '
+                                  'arrive, and review these fields weekly against your call log.'],
+                 'fields': [{'name': 'prospect_list_build',
+                             'type': 'textarea',
+                             'prompt': 'Build your first prospect list of 50 shippers inside your niche. '
+                                       'Name the free tools you will use to find companies and contacts, '
+                                       'the job title you are hunting, and the physical clues that qualify '
+                                       'each facility before you dial.',
+                             'example': 'Fifty rows built from free Apollo, Keychain.com, LinkedIn People '
+                                        'tabs and Lusha for emails. Each facility shows multiple docks on '
+                                        'Google Maps satellite view; a food processor suggests reefer and '
+                                        'tight windows, plastics suggest flatbed or oversize [Matt Krause '
+                                        '— AWq6iXM53f8 @ 00:14:06]. Shelf-stable labels photographed at '
+                                        'Walmart point to van freight [FreightBrokers — BCLv7SfCxIo @ '
+                                        '00:22:16].'},
+                            {'name': 'shipper_count_goal',
+                             'type': 'text',
+                             'prompt': 'Set the number of active shippers you need for a six-figure book '
+                                       'and the loads per week each must deliver. Show the weekly margin '
+                                       'math, then estimate how many monthly touches it will take to earn '
+                                       "each shipper's first yes.",
+                             'example': 'Target: 5 to 10 small-to-midsize shippers, the handful Brown says '
+                                        'produces six figures in profit [FreightBrokers — kc6-g1EZ0Fk @ '
+                                        '00:07:05]. One shipper at 5 loads a week x $200 is $1,000 a week, '
+                                        'five shippers are $5,000, and each yes costs about 300 touches a '
+                                        'month [Matt Krause — NF0itNMuQvY @ 00:02:21].'},
+                            {'name': 'daily_touch_cadence',
+                             'type': 'textarea',
+                             'prompt': 'Write your daily prospecting cadence: the number of touches, the '
+                                       'channels used, the hours blocked, and the share of your week '
+                                       'reserved for prospecting. Decide where you sit between high-volume '
+                                       'dialing and a sustainable nightly routine, and explain why.',
+                             'example': 'Brown pushes 50 to 75 quality touches daily and says a startup '
+                                        'should spend 90 plus percent of its time prospecting '
+                                        '[FreightBrokers — j9lUdJynzFA @ 00:49:18]. Krause runs 10 to 20 '
+                                        'nightly touches after burning out at 100 a day. My cadence: 40 '
+                                        'touches across phone, email and LinkedIn, Monday through Friday, '
+                                        'since skipping Mondays and Fridays cuts 40% of prospecting time.'},
+                            {'name': 'hard_freight_pitch',
+                             'type': 'textarea',
+                             'prompt': 'Describe the hardest freight you will ask prospects for and why it '
+                                       'carries more margin than easy freight. Write the one-sentence '
+                                       'pitch you will use, keeping it relevant rather than clever, and '
+                                       'name who at the shipper hears it.',
+                             'example': 'Ask: step-deck machinery and last-minute loads the incumbent '
+                                        'rejects. Challenging freight is not cheap freight; less capacity '
+                                        'and more complexity make it more expensive [FreightBrokers — '
+                                        '57bmm_ipBSY @ 00:05:11]. Complexity creates opportunity and '
+                                        'complexity creates margin [FreightBrokers — j9lUdJynzFA @ '
+                                        '00:28:47]. Pitch goes to whoever gets the call when a truck is '
+                                        'late [Matt Krause — NF0itNMuQvY @ 00:06:56].'},
+                            {'name': 'opener_script',
+                             'type': 'textarea',
+                             'prompt': 'Write your first ten seconds on a cold call word for word, '
+                                       'including the opener, the pause and the small yes you are asking '
+                                       'for. Note which opener you are retiring and the posture and '
+                                       'recording habits you will practice.',
+                             'example': 'Retired: did I catch you at a bad time, which Gong data shows '
+                                        'books under 1%, about 40% worse than average [Matt Krause — '
+                                        'r0gf3CDabxw @ 00:09:19]. New opener asks for help, then pauses '
+                                        "for a small yes. Brown's alternative: you're most likely going to "
+                                        "hate me, I'm a freight broker. I stand, record calls, and replay "
+                                        'them nightly.'},
+                            {'name': 'brokers_objection_script',
+                             'type': 'textarea',
+                             'prompt': "Script your answers to two common phone brush-offs: we don't use "
+                                       "brokers and we're customer-routed. Write the diagnostic questions "
+                                       'you will ask, the test-load offer you will make, and the point at '
+                                       'which you politely move on.',
+                             'example': "A pet food shipper who said we don't use brokers took one $150 "
+                                        'test load and became about $20,000 a year, over $100,000 across '
+                                        '5+ years [FreightBrokers — knW5LzcUJIw @ 00:04:45]. For '
+                                        'customer-routed, ask about inbound freight, returns and stalled '
+                                        'customer pickups, give it 30 to 60 seconds, then move on '
+                                        '[FreightBrokers — UhCy0ncTrTI @ 00:41:32].'},
+                            {'name': 'send_me_rates_reframe',
+                             'type': 'textarea',
+                             'prompt': 'Write how you will answer when a prospect says send me your rates. '
+                                       'Avoid quoting a number on the spot, and list the operational '
+                                       'questions about lead time, appointments and late penalties you '
+                                       'will ask to uncover their biggest challenge.',
+                             'example': 'Answering send me your rates with a number starts a bidding war, '
+                                        'so I reframe around lead time, appointments and late penalties '
+                                        'and ask for their biggest operational challenge [Matt Krause — '
+                                        'ZG3bMHTCx1Y @ 00:05:13]. Price is not the number one objection '
+                                        '[FreightBrokers — 90xG4lQaA6Q @ 00:32:15]; fear of the unknown is '
+                                        '[FreightBrokers — BCLv7SfCxIo @ 00:32:50].'},
+                            {'name': 'terms_and_margin_floor',
+                             'type': 'textarea',
+                             'prompt': 'Set the credit terms, margin floor and collection triggers you '
+                                       'will state before the first load moves. Include payment days, the '
+                                       'accounts-payable call, the unpaid-days credit hold, your minimum '
+                                       'per-load margin, and when a shipper gets dropped.',
+                             'example': "Terms: 30 days stated upfront, the shipper's accounts-payable "
+                                        'contact called after load one, credit hold at 60 days unpaid '
+                                        '[FreightBrokers — dciVQpw-BWM @ 00:50:30]. Floor: after a '
+                                        'deliberate break-even first load, every load clears $100 gross '
+                                        'with a 10 to 15% target; shippers below $100 get dropped '
+                                        '[FreightBrokers — j9lUdJynzFA @ 00:27:30].'},
+                            {'name': 'close_ask',
+                             'type': 'text',
+                             'prompt': 'Decide what you will ask for at the end of the first conversation: '
+                                       'a saved backup number, the business itself, or a second meeting. '
+                                       'Write the exact closing line and explain why it fits your niche '
+                                       'and your prospect.',
+                             'example': 'Close: save my number as your backup for the next time a truck '
+                                        'falls off. Krause asks only for a saved backup number and offers '
+                                        'to be the backup rather than the replacement [Matt Krause — '
+                                        'NF0itNMuQvY @ 00:06:56]. The less you need any single deal, the '
+                                        'more deals you will close [Matt Krause — LNT0OaH1J8s @ '
+                                        '00:11:15].'},
+                            {'name': 'first_load_handover',
+                             'type': 'textarea',
+                             'prompt': 'Plan what happens the moment your first load is won. State how '
+                                       'many offered loads you can truly cover, and draft the carrier '
+                                       'handover email subject line plus the follow-up you will send the '
+                                       'day after delivery.',
+                             'example': 'Offered five loads, accepted three, because taking three of five '
+                                        'beats committing to five and covering three [FreightBrokers — '
+                                        'BCLv7SfCxIo @ 00:36:01]. Handover email sent the moment the '
+                                        'carrier confirmed, subject line: project name, carrier, pickup '
+                                        "time, driver and driver's direct number, so I never become the "
+                                        'ghost broker [Matt Krause — Bdydc4rCcVs @ 00:02:22].'}],
+                 'completion_gate': 'Complete when 50 qualified prospects are listed, the shipper count '
+                                    'and daily touch cadence are set, the opener, objection and '
+                                    'rate-request scripts are written word for word, terms and a $100 '
+                                    'margin floor are fixed, and the handover email template is ready to '
+                                    'send.'},
+                {'worksheet_id': 'ws-04',
+                 'number': 4,
+                 'title': 'Quote-to-Cash Pricing and Market Reading Desk',
+                 'purpose': 'Turn every quote into a defensible number and every booked load into '
+                            'collected cash. This worksheet builds your four-number pricing method, '
+                            'separates gross margin from net profit, funds the payables gap before volume '
+                            'grows, and sets the weekly market-reading loop that keeps your rates anchored '
+                            'to real freight instead of map colors.',
+                 'chapter_ref': 'Q7-Q8',
+                 'instructions': ['Work one real or practice lane from start to finish before filling in '
+                                  'any policy field, so every number on this page traces back to an actual '
+                                  'load.',
+                                  'Pull at least two rate sources and compare the 7-, 15- and 30-day reads '
+                                  'before you write down your expected buy rate.',
+                                  'Show the arithmetic behind every dollar figure, including gross margin, '
+                                  'per-load expenses, and the net profit you actually keep.',
+                                  'Complete the cash float and funding fields before you raise your weekly '
+                                  'load count, never after the payables gap has already opened.',
+                                  'Revisit the market-reading field every week and adjust your targets '
+                                  'whenever tender rejections, contract rates, or diesel prices shift.'],
+                 'fields': [{'name': 'lane_detail_capture',
+                             'type': 'textarea',
+                             'prompt': 'Record every load detail you collect before pricing a lane: '
+                                       'origin, destination, miles, equipment, weight, commodity, pickup '
+                                       'and delivery windows, and any special notes. Explain which details '
+                                       'change the truck price and how you confirm them with the shipper '
+                                       'before quoting.',
+                             'example': 'Lane: Atlanta, GA to Vineland, NJ, 766 miles, dry van. ShipLeague '
+                                        'prices this lane off DAT RateView 30-day and 7-day data and '
+                                        'expects about $1,700 to the truck [ShipLeague — rMpa5pbBWtI @ '
+                                        '00:04:10]. Before quoting, I read load notes for team '
+                                        'requirements, 1-pick-3-drop, oversize or $350K cargo [Bobby Loads '
+                                        '— Gz22R2KL_e4 @ 00:03:56].'},
+                            {'name': 'four_key_numbers',
+                             'type': 'text',
+                             'prompt': 'Write your four key numbers for one real or practice load: '
+                                       'expected buy rate, target margin, sell rate quoted to the shipper, '
+                                       'and maximum carrier rate ceiling. Show the arithmetic so anyone on '
+                                       'your desk could check it line by line.',
+                             'example': 'Buy rate $1,300, target margin $250, sell rate $1,550, maximum '
+                                        'carrier rate $1,350. The truck books at $1,325, leaving $225 of '
+                                        'spread on the load [FreightBrokers — HTQaqqy_CPs @ 00:04:26]. If '
+                                        'every carrier calling in wants more than $1,350, I stop, re-check '
+                                        'the numbers, or go back to the shipper instead of booking above '
+                                        'my ceiling.'},
+                            {'name': 'rate_data_triangulation',
+                             'type': 'textarea',
+                             'prompt': 'List the rate sources you will pull for each lane, such as DAT '
+                                       'RateView and FreightWaves data, and the time windows you compare. '
+                                       'Describe your rule for handling a short-term dip so a three-day '
+                                       'read never drags your quote below the market.',
+                             'example': 'On Atlanta to Vineland, the 7-, 15- and 30-day figures sat within '
+                                        '$8 of each other, so I price to the higher read, about $1,678, '
+                                        'and ignore the 3-day dip [ShipLeague — rMpa5pbBWtI @ 00:02:17]. '
+                                        "Cole Fairbrook found DAT's number extremely accurate while "
+                                        'screening Birmingham posts [Cole Fairbrook — bEWh0t-c_5o @ '
+                                        '00:10:37], so DAT stays my anchor source.'},
+                            {'name': 'margin_target',
+                             'type': 'text',
+                             'prompt': 'State your standard margin percentage and your minimum dollar '
+                                       'margin per load. Explain when you would accept less, when you '
+                                       'would push higher for complex freight, and how you will stop a '
+                                       'thin load from quietly becoming your normal pricing habit.',
+                             'example': 'Standard margin is 15%: expect about $1,700 to the truck and '
+                                        'quote about $1,850 [ShipLeague — rMpa5pbBWtI @ 00:04:10]. My '
+                                        'floor is $100 per load, with a 10-15% target while I am new '
+                                        '[FreightBrokers — dciVQpw-BWM @ 00:25:57]. Complex freight gets '
+                                        'priced higher, because complexity creates margin [FreightBrokers '
+                                        '— j9lUdJynzFA @ 00:28:47].'},
+                            {'name': 'gross_vs_net',
+                             'type': 'textarea',
+                             'prompt': "Convert one load's gross margin into net profit by listing every "
+                                       'expense that eats into it: load board, TMS, insurance, bond, '
+                                       'phones, accounting, and factoring costs. Write the per-load net '
+                                       'figure you will use when you judge whether a lane is worth '
+                                       'keeping.',
+                             'example': 'Shipper pays $2,100, carrier gets $1,800, so gross margin is '
+                                        '$300. After about $75 of load board, TMS, insurance, bond, '
+                                        'phones, accounting and factoring expenses, I keep $225 net '
+                                        '[FreightBrokers — Lpq9AHrz7nQ @ 00:05:20]. I track lanes in the '
+                                        'KPI summary of revenue, expenses, profit, per-mile figures and '
+                                        'gross margin percentage [AscendTMS - The Free (and Best) TMS '
+                                        'Software — ICIyOtMiEqY @ 00:21:04].'},
+                            {'name': 'cash_float_plan',
+                             'type': 'textarea',
+                             'prompt': 'Calculate how much cash you must float to pay carriers before '
+                                       'shippers pay you at your planned weekly load count. Name where '
+                                       'that money comes from, and set the load ceiling you will not '
+                                       'exceed until the payables gap is fully funded.',
+                             'example': 'Ten carriers at $1,800 each puts $18,000 out before a single '
+                                        'shipper pays [FreightBrokers — Lpq9AHrz7nQ @ 00:03:21]. A load '
+                                        'can be profitable on paper and still create a cash flow problem '
+                                        '[FreightBrokers — Lpq9AHrz7nQ @ 00:03:47]. My ceiling is six '
+                                        'loads a week until a factoring line or reserve covers the full '
+                                        'float.'},
+                            {'name': 'quick_pay_vs_factoring',
+                             'type': 'textarea',
+                             'prompt': 'Compare quick pay and factoring for your brokerage using fee '
+                                       'percentage, advance rate, funding speed, and which loads each '
+                                       'option covers. Decide which you will use first, and write the '
+                                       'condition that would make you switch to the other option.',
+                             'example': 'Quick pay costs 1-5% for payment in 2-7 days but only covers that '
+                                        "one broker's loads [Porter Capital — iJE2rZFL57E @ 00:00:13]. "
+                                        'Factoring advances about 80-90%, usually within 24 hours [Porter '
+                                        'Capital — R4i90VgyHqk @ 00:00:00]. I choose factoring because the '
+                                        'standardized process can be delegated to an admin hire [Trucking '
+                                        'From Scratch — K9UPJJr_uzQ @ 00:02:43].'},
+                            {'name': 'notice_of_assignment_rule',
+                             'type': 'text',
+                             'prompt': 'Write your payment-routing rule for carriers who factor their '
+                                       'invoices. Explain how you will handle a notice of assignment, how '
+                                       'you will review the scope of any UCC filing, and who on your team '
+                                       'may approve changing remit-to details.',
+                             'example': 'Once a notice of assignment arrives, payment goes only to the '
+                                        'named factor and is never redirected, and I learn the scope of '
+                                        'any UCC filing and how it gets released before signing [BLACK '
+                                        'BEAR FREIGHT & LOGISTICS — ZYkg1UepLL4 @ 00:05:26]. Remit-to '
+                                        "changes require owner approval plus a callback to the carrier's "
+                                        'number on file before any payment moves.'},
+                            {'name': 'tender_rejection_read',
+                             'type': 'textarea',
+                             'prompt': 'Describe your weekly market-reading loop: national averages, '
+                                       'tender rejection rates, and load-to-truck ratios. Explain how you '
+                                       'will use rejected contract freight as a short-range forecast, and '
+                                       'how you verify a hot map by searching real loads before you act on '
+                                       'its color.',
+                             'example': 'Rejected contract tenders reach the spot market in three to five '
+                                        'days, so the SONAR rejection map is my short-range forecast '
+                                        '[Trucking Made Successful — ZlWGSiCM45c @ 00:08:43]. During the '
+                                        'Q4 2026 squeeze, rejections ran about 14% with contract rates up '
+                                        '18% [Logistics Today — 5cyp2cCCUiA @ 00:02:10]. Red is not hot '
+                                        'until real loads check out [Bobby Loads — MDlMmII7ZrY @ '
+                                        '00:17:50].'},
+                            {'name': 'board_selection_and_coverage',
+                             'type': 'text',
+                             'prompt': 'Choose which load boards and rate tools you will pay for, with '
+                                       'monthly cost, and explain why. Note how quickly you must cover '
+                                       'freight once a shipper tenders, and how you keep your postings '
+                                       'fresh enough to keep carriers calling.',
+                             'example': 'Brokers have 24 to 36 hours to cover freight, so I carry both DAT '
+                                        'and Truckstop memberships [Contract Fortune — ocF4fny2uH8 @ '
+                                        "00:09:00]. DAT One Pro runs $135 a month [Tony's Topics — "
+                                        'wOpAqd5AALo @ 00:02:58]. I refresh postings on a schedule because '
+                                        'they get stale on the load boards [AscendTMS - The Free (and '
+                                        'Best) TMS Software — idL8PXMlKjQ @ 01:01:31].'}],
+                 'completion_gate': 'Complete when you can state your buy rate, target margin, sell rate '
+                                    'and maximum carrier rate for a real lane, show the net profit left '
+                                    'after every expense, name the funding source that covers your carrier '
+                                    'payables at your planned volume, and describe the weekly loop you use '
+                                    'to verify hot markets against actual posted loads.'},
+                {'worksheet_id': 'ws-05',
+                 'number': 5,
+                 'title': 'Equipment Niche and Accessorial Policy Builder',
+                 'purpose': 'Choose the trailer type and freight niche where your margin lives, then lock '
+                            'down the detention, layover and TONU terms that protect it. This worksheet '
+                            'turns booking checklists, all-miles rate floors, drayage controls and '
+                            'accessorial paperwork into written policy that carriers see on the rate '
+                            'confirmation before the truck rolls.',
+                 'chapter_ref': 'Q9-Q10',
+                 'instructions': ['Commit to one primary equipment niche before writing any checklist, '
+                                  'because reefer, flatbed, heavy haul and drayage each demand different '
+                                  'paperwork.',
+                                  'Price at least one niche load on all miles, including deadhead, and '
+                                  'compare it against your written rate floor before booking.',
+                                  'Skip the drayage fields only if you will never move containers, and '
+                                  'note that decision in writing so it is not revisited casually.',
+                                  'Draft every accessorial term exactly as it will appear on the rate '
+                                  'confirmation or carrier packet, with dollar amounts and clock start '
+                                  'times.',
+                                  'Test your documentation trail on your next live load and correct any '
+                                  'step that left a gap in timestamps or email records.'],
+                 'fields': [{'name': 'niche_selection',
+                             'type': 'textarea',
+                             'prompt': 'Pick the equipment niche you will build around first: dry van, '
+                                       'reefer, flatbed, heavy haul, or drayage. Explain why that niche '
+                                       'fits your skills and capital, and what paperwork or operational '
+                                       'burden you are willing to carry to earn its margin.',
+                             'example': 'I build around flatbed and heavy haul, because dry van is the '
+                                        'weakest seat and margin sits in equipment most operators avoid. '
+                                        'Chief Carriers reports a 15-truck heavy-haul carrier near $8 '
+                                        'million in revenue, almost double a regular flatbed operation '
+                                        '[Chief Carriers — 7kg1eMOTev8 @ 00:06:08]. Securement gets '
+                                        'checked often, because falling cargo can kill someone [Never Stop '
+                                        'Trucking — K5sqFMIL3IQ @ 00:10:23].'},
+                            {'name': 'equipment_booking_checklist',
+                             'type': 'textarea',
+                             'prompt': 'Write the booking checklist for your chosen equipment type. '
+                                       'Include commodity, temperature settings for reefer, dimensions and '
+                                       'weight for flatbed or oversize, securement and tarp requirements, '
+                                       'and any posting comments that hide extra costs before you commit a '
+                                       'truck.',
+                             'example': 'Checklist: commodity, temperature, dimensions, securement, and '
+                                        'tarp needs, since reefer and flatbed are priced like van but '
+                                        'booked off tighter checklists. I call the newest postings first '
+                                        'and read every posting comment, because comments hide costs such '
+                                        'as tarps, lumpers and appointments [Dispatch Desk USA — '
+                                        'w4fpPCLZG_I @ 00:03:35]. Team loads, multi-drops and $350K cargo '
+                                        'get flagged [Bobby Loads — Gz22R2KL_e4 @ 00:03:56].'},
+                            {'name': 'all_miles_floor',
+                             'type': 'text',
+                             'prompt': 'Set your all-miles rate floor, including deadhead, for the '
+                                       'equipment you broker. Explain how you will screen load board posts '
+                                       'against true rate over all miles, deadhead distance, and broker '
+                                       'pay history before you accept or offer a load.',
+                             'example': 'Dry van floor: $2.50 a mile on all miles. Cole Fairbrook calls '
+                                        '$2.35 a mile pretty much a loss and treats 263 as barely above '
+                                        'break-even while screening DAT and Truckstop posts out of '
+                                        'Birmingham [Cole Fairbrook — bEWh0t-c_5o @ 00:20:05]. On short '
+                                        'hauls the deadhead filter drops to 75 miles [Cole Fairbrook — '
+                                        'bEWh0t-c_5o @ 00:28:15].'},
+                            {'name': 'rate_negotiation_script',
+                             'type': 'textarea',
+                             'prompt': 'Script how you handle a rate call with a carrier or dispatcher on '
+                                       'a niche load. Note who states a number first, how you use silence, '
+                                       'what market anchor you cite, and the walk-away point you will hold '
+                                       'when the conversation stalls.',
+                             'example': 'Carriers are coached to let the broker quote first, ask for '
+                                        '$3.10, then go quiet, because silence is their friend and '
+                                        'sometimes 10% sits unoffered [Real Trucking Money — Xi2gMYEX18k @ '
+                                        '00:06:28]. So I open at my buy rate, hold silence myself, and '
+                                        'remember that the marketplace will correct my price [Brandon '
+                                        'Scott — xPxwiwivMXE @ 00:03:33]. Walk-away stays at my ceiling.'},
+                            {'name': 'drayage_controls',
+                             'type': 'textarea',
+                             'prompt': 'If you move containers, list your drayage controls: SCAC, UIIA, '
+                                       'and TWIC status, container release, last free date, holds, fees, '
+                                       'empty-return location, and booking number checks. Explain who '
+                                       'verifies each item and when, before any driver heads to the port.',
+                             'example': 'Before dispatch, I confirm release, the LFD, holds, fees and the '
+                                        'empty-return location with the steamship line [Drayage Academy — '
+                                        'fhPReUtDXkI @ 00:04:15]. Before ingate, the booking number must '
+                                        'match the reserved vessel, since a wrong booking triggers a dray '
+                                        'out of $500 to $4,000 [Victor Mason — o2G4zRoNHt4 @ 00:06:02]. On '
+                                        'sales calls I say capacity, never empties.'},
+                            {'name': 'intermodal_bid_and_demurrage',
+                             'type': 'textarea',
+                             'prompt': 'Work one container or intermodal lane: calculate a market-math '
+                                       'bid, compare it with a recent nearby run, and choose your final '
+                                       'number. Then estimate demurrage exposure if the box sits past its '
+                                       'free days, using the daily charges you were quoted.',
+                             'example': 'Houston to Wylie, TX: 600 round-trip miles at $2.80 is $1,680, '
+                                        'too high, so the bid anchored to a Grapevine run near $1,400 and '
+                                        'landed at $1,450 plus accessorials [Dispatching & Intermodal '
+                                        'Training — SvfUq9Udy60 @ 00:06:30]. A CMA reefer box in NY/NJ ran '
+                                        '3 free days, then $690 to $1,040 daily, about $13,000 over 14 '
+                                        'days [Victor Mason — o2G4zRoNHt4 @ 01:16:57].'},
+                            {'name': 'detention_policy',
+                             'type': 'textarea',
+                             'prompt': 'Write your detention policy exactly as it will appear on the rate '
+                                       'confirmation: free hours, hourly rate, billing increments, and '
+                                       'when the clock starts. Explain how you handle appointments moved '
+                                       'after the truck is committed and early arrivals before appointment '
+                                       'time.',
+                             'example': 'Policy: $50 per hour after 2 hours free, the fair standard '
+                                        '[ShipLeague — OzmQFxT30NM @ 00:03:56]. The grace period runs from '
+                                        'appointment time, not arrival [Think Trucking — uHIZpxSLN-c @ '
+                                        '00:01:10]. If I move an appointment after the truck is committed, '
+                                        'detention anchors to the original time: an 8 a.m. appointment '
+                                        'sitting until 1 pays three hours [Freight 360 — xe94bfEYHEU @ '
+                                        '00:09:16].'},
+                            {'name': 'tonu_and_layover_terms',
+                             'type': 'text',
+                             'prompt': 'Set your TONU and layover terms, including flat amounts and the '
+                                       'triggers that apply. Explain when you would pay above your '
+                                       'default, such as a moved pickup or a long deadhead, and how those '
+                                       'terms get written into the carrier packet.',
+                             'example': 'TONU defaults to $150 flat, common practice whether the driver '
+                                        'deadheaded two miles or 200 [Never Stop Trucking — tvnlRLMXRJ4 @ '
+                                        '00:07:20]. Layover runs $250 per night, inside the $100-to-$500 '
+                                        'street range. Dispatchers reopen TONU once detention builds or a '
+                                        'pickup moves; Pauline Nabacwa turned a $150 default into $540 '
+                                        '[Pauline Nabacwa — fpu1Fhdo9Vs @ 00:09:13].'},
+                            {'name': 'accessorial_documentation',
+                             'type': 'textarea',
+                             'prompt': 'Describe the documentation trail you require for every accessorial '
+                                       'claim. Name who sends the arrival notice, the pre-expiry warning, '
+                                       'and the detention-started notice, how in and out times reach the '
+                                       'bill of lading, and who chases unpaid invoices until they are '
+                                       'paid.',
+                             'example': 'One email chain per load: timestamped arrival notice, pre-expiry '
+                                        'warning, detention-started notice, and BOL in and out times '
+                                        'before departure, because verbal calls prove nothing [Craig Bliss '
+                                        '— WU9uuEFffXU @ 00:02:33]. If anyone goes silent, the same chain '
+                                        'gets accounting and operations staff added [Craig Bliss — '
+                                        'WU9uuEFffXU @ 00:04:36]. Every carrier receives this protocol '
+                                        'inside the setup packet.'},
+                            {'name': 'shipper_refusal_and_markup',
+                             'type': 'textarea',
+                             'prompt': 'Decide who absorbs an accessorial when the shipper refuses to pay, '
+                                       'and whether you pass accessorials through at cost or add margin. '
+                                       'Write the policy you will state to carriers and shippers, and the '
+                                       'slow-shipper signals that change your pricing.',
+                             'example': 'A customer not paying is no excuse for a broker not to pay the '
+                                        'carrier, so approved detention gets paid when the shipper refuses '
+                                        '[ShipLeague — OzmQFxT30NM @ 00:03:10]. Accessorials pass through '
+                                        'at cost. Three or four free hours on a rate confirmation flags a '
+                                        'slow shipper, so I price the sit in or pass [Never Stop Trucking '
+                                        '— tvnlRLMXRJ4 @ 00:04:56].'}],
+                 'completion_gate': 'Complete when your primary niche is named with its booking checklist, '
+                                    'your all-miles floor is written in dollars per mile, and your '
+                                    'detention, layover and TONU terms appear word for word as they will '
+                                    'on the rate confirmation, backed by an email documentation trail you '
+                                    'have tested on at least one live load.'},
+                {'worksheet_id': 'ws-06',
+                 'number': 6,
+                 'title': 'Fraud Defense, Cargo Liability and Claims Playbook',
+                 'purpose': 'Protect the brokerage from the two events that end young operations: a stolen '
+                            'or double-brokered load and an unpaid cargo claim. This worksheet builds your '
+                            'carrier vetting stack, rate and behavior triggers, credential security, '
+                            'pickup verification, stolen-load escalation, liability map, coverage '
+                            'confirmation and step-by-step claim protocol before you need any of them.',
+                 'chapter_ref': 'Q11-Q12',
+                 'instructions': ['Fill in every vetting and verification field before booking your next '
+                                  'new carrier, not after a suspicious load forces the question.',
+                                  'Write each red flag as a hard stop with a named person who can override '
+                                  'it, so pressure on a busy day cannot erode the rule.',
+                                  'Reset any shared or aging credentials while completing the security '
+                                  'field, and record the date each one was changed.',
+                                  'Build a sample claim file from a recent load, with bill of lading, '
+                                  'commercial invoice, photos and carrier emails, to test your '
+                                  'documentation habits.',
+                                  'Review this playbook quarterly and after every incident, adding any new '
+                                  'scam pattern or claim lesson your desk encountered.'],
+                 'fields': [{'name': 'carrier_vetting_stack',
+                             'type': 'textarea',
+                             'prompt': 'List the carrier vetting tools and checks you will run on every '
+                                       'new carrier, such as Highway, RMIS, or Truckstop MFA. State which '
+                                       'association signals, inspection gaps, or address red flags stop a '
+                                       'booking, and who on your desk can override them.',
+                             'example': 'Highway flags a carrier located within a quarter mile of another '
+                                        'carrier with broker authority, claiming 10 or more trucks from a '
+                                        'residential area [Highway — b-vDBH9GpuA @ 00:01:33]. A carrier '
+                                        'self-reporting 16 trucks with no inspections in 24 months is '
+                                        'another stop [Highway — sKKld4Wdyqg @ 00:01:17]. Only the owner '
+                                        'can override either flag, and never on the same call.'},
+                            {'name': 'off_market_rate_trigger',
+                             'type': 'text',
+                             'prompt': 'Define the off-market rate trigger that makes you investigate a '
+                                       'posted load or a carrier offer. Give the percentage above or below '
+                                       'market that starts digging, the level you treat as a likely scam, '
+                                       'and the steps you take next.',
+                             'example': 'Anything 20% above or below market triggers digging, and 30% '
+                                        'above is most likely a scam [Double Broker Bounty Hunter — '
+                                        '3dI5z6SHDPc @ 00:14:19]. A $4,000 post on a $2,700 lane, with no '
+                                        'setup packet and a sloppy rate confirmation, fails on sight '
+                                        '[Freight Master Resources — dFv317bclEU @ 00:15:20]. Next step is '
+                                        'a corporate-office callback on load number and lane.'},
+                            {'name': 'credential_security',
+                             'type': 'textarea',
+                             'prompt': 'Write your account security rules for load boards, email, and '
+                                       'FMCSA credentials. Cover how you handle emailed authentication '
+                                       'links, when DOT PINs must be reset, and what you check first if '
+                                       'you suspect your brokerage identity has been hijacked.',
+                             'example': 'No load board login gets authenticated from an email link; DAT '
+                                        'does not verify accounts by email [Double Broker Bounty Hunter — '
+                                        'J96nZa6x_Ek @ 00:17:44]. Any DOT PIN issued before March 2023 '
+                                        'gets replaced, because by the time a hijack is discovered it has '
+                                        'run at least 24 hours with 100-plus loads double brokered [Double '
+                                        'Broker Bounty Hunter — 3dI5z6SHDPc @ 00:17:23].'},
+                            {'name': 'pickup_verification',
+                             'type': 'textarea',
+                             'prompt': 'Describe how you confirm the truck at pickup is the carrier you '
+                                       'booked. Include when you release pickup or PO numbers, the photo '
+                                       'and geofence checks you request, and whose name must appear on the '
+                                       'bill of lading before the freight moves.',
+                             'example': 'Pickup numbers stay withheld until the carrier is verified with '
+                                        'the equipment it claims [Freight 360 — e9-lormMK4w @ 00:08:15]. I '
+                                        'stack photo requests and zoom in on every image for doctoring '
+                                        "[Freight 360 — uGu6NcZkt28 @ 00:02:58]. The authorized carrier's "
+                                        'name goes on the bill of lading, because in the copper wire scam '
+                                        'it never did [Overdrive — jnoJihiGSEA @ 00:25:46].'},
+                            {'name': 'stolen_load_escalation',
+                             'type': 'textarea',
+                             'prompt': 'Write your escalation plan for a carrier that goes dark after '
+                                       'booking or a tracking feed that fails. List who gets called first, '
+                                       'what you treat as confirmation of theft, and how fast each step '
+                                       'must happen before the cargo disappears.',
+                             'example': 'A carrier going dark or a failed tracking feed is treated as a '
+                                        'stolen load and escalated at once, because once they go dark the '
+                                        'cargo is gone [Double Broker Bounty Hunter — 3dI5z6SHDPc @ '
+                                        '00:18:48]. Victims have about 24 to 48 hours to act before '
+                                        'freight heads toward the port and overseas [CargoRex — '
+                                        'xQYjaYAvyms @ 00:13:43].'},
+                            {'name': 'paperwork_pressure_flags',
+                             'type': 'text',
+                             'prompt': 'Name the behavioral red flags you watch for after a load is '
+                                       'booked, such as pressure to send paperwork immediately or rushed '
+                                       'invoicing. Explain how you slow the process down and what '
+                                       'verification you complete before releasing any payment.',
+                             'example': 'A party pushing for paperwork immediately is a red flag, because '
+                                        'scammers track the load closely to beat the money to factoring '
+                                        'before the real invoice lands [Truck Driver Nation — 5dP6IV7sJW0 '
+                                        '@ 00:05:30]. Paying a double broker who never pays the hauling '
+                                        'carrier means paying for the same load twice [Freight 360 — '
+                                        'gnxgKnnz6Jw @ 00:01:27]. Payment waits for verified delivery.'},
+                            {'name': 'liability_map',
+                             'type': 'textarea',
+                             'prompt': 'Map your liability position on a typical load: what the motor '
+                                       'carrier owes under the Carmack Amendment, what your broker-carrier '
+                                       'and shipper contracts say, and which actions could make you look '
+                                       'like more than a freight broker in court.',
+                             'example': 'Motor carriers are automatically liable under Carmack, and the '
+                                        'shipper or broker has only a few things to demonstrate [LOGISTICS '
+                                        'RISK EXPERT by Cassandra Gaines — Ig6sI3O1a14 @ 00:11:37]. As a '
+                                        'broker I sit outside Carmack and live by contract. Once I act as '
+                                        'more than a broker, any attorney or insurer will find me harder '
+                                        'to defend [B3FinalMile — pRXH47gm66A @ 00:01:12].'},
+                            {'name': 'coverage_verification',
+                             'type': 'textarea',
+                             'prompt': "Explain how you confirm a carrier's cargo policy actually covers "
+                                       'the commodity on each load. Name where certificates come from, how '
+                                       'exclusions are confirmed in writing, and how your contingent cargo '
+                                       "policy relates to the carrier's own limits before you tender "
+                                       'freight.',
+                             'example': 'Certificates come from Highway, RMIS or AssureAssist as '
+                                        'certificate holder, never the dispatcher [Freight 360 — '
+                                        "qTcDOmwZMjI @ 00:27:38]. On eggs, the carrier's insurance agent "
+                                        'emails me confirming eggs are covered, because a verbal yes is '
+                                        'just taking their word [Freight 360 — qTcDOmwZMjI @ 00:27:57]. My '
+                                        'contingent policy only ever matches what the carrier has [Freight '
+                                        '360 — FtL-2SOSFOU @ 00:00:45].'},
+                            {'name': 'claim_filing_protocol',
+                             'type': 'textarea',
+                             'prompt': 'Write your step-by-step cargo claim protocol: the documents you '
+                                       'gather before any claim exists, the written format and dollar '
+                                       'figure you submit, and the federal acknowledgment and disposition '
+                                       'clocks you will enforce when a carrier stops responding on an open '
+                                       'claim.',
+                             'example': 'The file starts before a claim exists: bill of lading, commercial '
+                                        'invoice, packing list, photos and carrier emails [Cargo Rant — '
+                                        'NxIispBOkz8 @ 00:03:18]. Claims go out in writing with a dollar '
+                                        'amount and commercial invoice, never a phone call [LOGISTICS RISK '
+                                        'EXPERT by Cassandra Gaines — Ig6sI3O1a14 @ 00:06:19]. Carriers '
+                                        'get 30 days to acknowledge and 120 to pay, deny or compromise.'},
+                            {'name': 'high_value_and_time_limits',
+                             'type': 'textarea',
+                             'prompt': 'Set your rules for high-value loads and claim deadlines. Explain '
+                                       'how you book expensive freight, which carriers you trust with it, '
+                                       'what tracking you require, and how you respond when a carrier says '
+                                       'a claim was filed too late.',
+                             'example': 'High-value loads like $400,000 of copper never touch a load '
+                                        "board; they go to relationship carriers whose owners' numbers are "
+                                        'in my phone, with a covert tracker at about $15 per device '
+                                        '[CargoRex — xQYjaYAvyms @ 00:24:46]. When a carrier calls a claim '
+                                        'too old, I check contracts for a specific nine-month limit '
+                                        '[LOGISTICS RISK EXPERT by Cassandra Gaines — Ig6sI3O1a14 @ '
+                                        '00:07:42].'}],
+                 'completion_gate': 'Complete when every new carrier passes a written vetting stack with '
+                                    'named hard stops, your credentials and DOT PIN have documented reset '
+                                    'dates, pickup numbers are tied to verified equipment and a named '
+                                    'carrier on the bill of lading, and a sample claim file proves you can '
+                                    'submit a written, dollar-specific claim within the federal clocks.'}]}

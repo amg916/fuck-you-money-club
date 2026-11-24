@@ -9,49 +9,49 @@
       "BROKERING"
     ],
     "deck": [
-      "SCORE SOLICITATIONS. OBEY FAR RULES.",
-      "FUND WAWF FLOAT."
+      "SAM.GOV REGISTRATION, SET-ASIDE TARGETING AND THREE-QUOTE MARKUP BIDS",
+      "PRIME LIABILITY, SUBCONTRACTING LIMITS AND THE CASH FLOAT TO GET PAID"
     ],
-    "lead": "Compliant Federal, State & Municipal Bid-Desk Operations, Commercial-Item Supply Fulfilment & Prime/Subcontractor Teaming",
-    "summary": "Navigate FAR 3.4 contingent-fee and FAR 52.219-14 subcontracting limits cleanly while quoting simplified acquisitions with verified suppliers.",
+    "lead": "Practitioners from boosters to former contracting officers show how to register free through Login.gov and SAM.gov, filter for small business set-asides, pull three vendor quotes, add a 20% to 100% markup, and win as a prime that carries full performance liability without crossing the 100% pass-through line.",
+    "summary": "All 12 chapters synthesize 192 verbatim YouTube practitioner testimonies on government contract brokering, from registration and set-aside targeting to pricing, subcontracting limits, DIBBS parts brokering and getting paid. Every claim, metric, pro-tip and quote carries timestamped inline attribution to the practitioner and video it came from.",
     "chapters": [
-      "Business model & revenue boundaries",
-      "Decision-makers & payment rails",
-      "Unit economics & margin waterfall",
-      "Startup capital & lean stack",
-      "Beginner traps & failure modes",
-      "Sourcing & first deals",
-      "End-to-end operating blueprint",
-      "Public records, APIs & tooling",
-      "Contracts, statutes & scripts",
-      "Automation & distribution loops",
-      "Small-team pod & exit valuation",
-      "First 30-day launch sprint"
+      "The Middleman Model and Its Legal Line",
+      "Getting Registered and Credentialed",
+      "Micro-Purchases, Simplified Acquisitions and Commercial Items",
+      "Case Studies: From First Win to Nine Figures",
+      "Targeting Set-Asides and State, Local and Cooperative Bids",
+      "Pricing Intelligence and Cost Buildup",
+      "Responding to Solicitations and Building Compliant Proposals",
+      "Teaming, Subcontracting and Prime–Sub Relationships",
+      "Limitations on Subcontracting, Affiliation and Enforcement",
+      "Navigating the FAR and Contract Administration",
+      "Brokering DLA Parts Through DIBBS",
+      "Funding the Contract and Getting Paid"
     ],
     "flow": [
       [
-        "SOURCE",
-        "Mine high-intent deal triggers"
+        "REGISTER",
+        "Sign in through Login.gov, validate the entity in SAM.gov for a 12-character UEI, and let DLA assign the free five-character CAGE code; renew every 365 days."
       ],
       [
-        "UNDERWRITE",
-        "Screen margin, float & rules"
+        "TARGET",
+        "Filter SAM.gov for small business set-asides, open every attachment, and check whether clause 52.219-14 is checked before planning to subcontract."
       ],
       [
-        "ENGAGE",
-        "Execute mandate or pre-sell"
+        "QUOTE",
+        "Pull three vendor quotes from the big players before opening a Word document, and line up a backup sub at the same price."
       ],
       [
-        "DELIVER",
-        "Run standardized SOP & ledger"
+        "PRICE",
+        "Pull the prior contract amount from the point of contact, USA Spending or FPDS, then add a 20% to 100% markup."
       ],
       [
-        "VERIFY",
-        "Audit quality, scrubs & statutes"
+        "SUBMIT",
+        "Confirm the vendor accepts pay-after-paid with a stop-work clause, and document management with an org chart, defined roles and Gantt charts."
       ],
       [
-        "COMPOUND",
-        "Reconcile cash & scale pod"
+        "FLOAT",
+        "Prove you can carry sub payroll for 60 to 90 days through a line of credit or cash reserve, because agencies can pay months late."
       ]
     ]
   },
@@ -59,10 +59,10 @@
   "book_series": "THE BIG MONEY PLAYBOOKS",
   "tagline": "Big Money. Small Teams. No Bullshit.",
   "title": "GOVERNMENT CONTRACT BROKERING",
-  "subtitle": "The Complete Playbook for Government Contract Brokering: $120,000–$1,000,000 USD in Annual Service Revenue, Built from a 2 FT + 3 C Five-Person Bid Desk",
+  "subtitle": "Three Quotes, a 7-25% Markup, and the 50% Line: Middleman Primes, DIBBS Parts Brokering, FPDS Price Intelligence, Set-Aside Outreach, and Funding the 30-Day Payment Gap",
   "chapter_count": 12,
-  "total_word_count": 77441,
-  "expert_youtube_link_count": 180,
+  "total_word_count": 71995,
+  "expert_youtube_link_count": 210,
   "min_expert_youtube_links_required": 150,
   "target_expert_youtube_links": "150-200+",
   "min_expert_youtube_links_per_chapter": 12,
@@ -77,5 +77,5 @@
   "publication_status": "approved_master",
   "public_deploy_approved": false,
   "paid_sales_approved": false,
-  "updated_at": "2026-11-23T22:48:01Z"
+  "updated_at": "2026-11-24T21:35:15Z"
 }

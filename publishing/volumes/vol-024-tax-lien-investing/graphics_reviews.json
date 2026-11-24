@@ -29,14 +29,14 @@
     "08_phone_tablet_mockup",
     "09_series_collection_mockup",
     "10_social_promo_pack",
-    "diag-01-certificate-to-realized-cash",
-    "diag-02-auction-underwriting-cohort",
-    "diag-03-base-case-owner-profit",
-    "diag-04-realized-cash-yield-mechanics",
-    "diag-05-statutory-risk-preflight",
-    "diag-06-core-and-scaled-pod",
-    "diag-07-reference-startup-capital-allocation",
-    "diag-08-first-thirty-days"
+    "diag-01-county-lien-entry-workflow",
+    "diag-02-otc-leftover-list-funnel",
+    "diag-03-cook-county-redemption-waterfall",
+    "diag-04-lien-vs-deed-odds-and-returns",
+    "diag-05-online-deed-bid-gates",
+    "diag-06-post-tyler-certificate-control",
+    "diag-07-auction-format-yield-bands",
+    "diag-08-funding-and-scaling-roadmap"
   ],
   "cover_graphic_ids": [
     "cover_front",
@@ -54,14 +54,14 @@
     "10_social_promo_pack"
   ],
   "diagram_graphic_ids": [
-    "diag-01-certificate-to-realized-cash",
-    "diag-02-auction-underwriting-cohort",
-    "diag-03-base-case-owner-profit",
-    "diag-04-realized-cash-yield-mechanics",
-    "diag-05-statutory-risk-preflight",
-    "diag-06-core-and-scaled-pod",
-    "diag-07-reference-startup-capital-allocation",
-    "diag-08-first-thirty-days"
+    "diag-01-county-lien-entry-workflow",
+    "diag-02-otc-leftover-list-funnel",
+    "diag-03-cook-county-redemption-waterfall",
+    "diag-04-lien-vs-deed-odds-and-returns",
+    "diag-05-online-deed-bid-gates",
+    "diag-06-post-tyler-certificate-control",
+    "diag-07-auction-format-yield-bands",
+    "diag-08-funding-and-scaling-roadmap"
   ],
   "allowed_statuses": [
     "approved",
@@ -486,11 +486,11 @@
         "reviewed_at": null
       }
     },
-    "diag-01-certificate-to-realized-cash": {
+    "diag-01-county-lien-entry-workflow": {
       "concept_a": {
-        "graphic_id": "diag-01-certificate-to-realized-cash",
+        "graphic_id": "diag-01-county-lien-entry-workflow",
         "graphic_type": "diagram",
-        "label": "From County Inventory to Realized Cash",
+        "label": "First-County Lien Entry Workflow",
         "concept_id": "concept_a",
         "concept_label": "Concept A — Black & Gold Executive",
         "status": "pending_review",
@@ -498,9 +498,9 @@
         "reviewed_at": null
       },
       "concept_b": {
-        "graphic_id": "diag-01-certificate-to-realized-cash",
+        "graphic_id": "diag-01-county-lien-entry-workflow",
         "graphic_type": "diagram",
-        "label": "From County Inventory to Realized Cash",
+        "label": "First-County Lien Entry Workflow",
         "concept_id": "concept_b",
         "concept_label": "Concept B — Bold Editorial",
         "status": "pending_review",
@@ -508,9 +508,9 @@
         "reviewed_at": null
       },
       "concept_c": {
-        "graphic_id": "diag-01-certificate-to-realized-cash",
+        "graphic_id": "diag-01-county-lien-entry-workflow",
         "graphic_type": "diagram",
-        "label": "From County Inventory to Realized Cash",
+        "label": "First-County Lien Entry Workflow",
         "concept_id": "concept_c",
         "concept_label": "Concept C — Modern Wealth Intelligence",
         "status": "pending_review",
@@ -518,11 +518,11 @@
         "reviewed_at": null
       }
     },
-    "diag-02-auction-underwriting-cohort": {
+    "diag-02-otc-leftover-list-funnel": {
       "concept_a": {
-        "graphic_id": "diag-02-auction-underwriting-cohort",
+        "graphic_id": "diag-02-otc-leftover-list-funnel",
         "graphic_type": "diagram",
-        "label": "A Narrowing Auction Cohort",
+        "label": "Over-the-Counter Leftover List Funnel",
         "concept_id": "concept_a",
         "concept_label": "Concept A — Black & Gold Executive",
         "status": "pending_review",
@@ -530,9 +530,9 @@
         "reviewed_at": null
       },
       "concept_b": {
-        "graphic_id": "diag-02-auction-underwriting-cohort",
+        "graphic_id": "diag-02-otc-leftover-list-funnel",
         "graphic_type": "diagram",
-        "label": "A Narrowing Auction Cohort",
+        "label": "Over-the-Counter Leftover List Funnel",
         "concept_id": "concept_b",
         "concept_label": "Concept B — Bold Editorial",
         "status": "pending_review",
@@ -540,9 +540,9 @@
         "reviewed_at": null
       },
       "concept_c": {
-        "graphic_id": "diag-02-auction-underwriting-cohort",
+        "graphic_id": "diag-02-otc-leftover-list-funnel",
         "graphic_type": "diagram",
-        "label": "A Narrowing Auction Cohort",
+        "label": "Over-the-Counter Leftover List Funnel",
         "concept_id": "concept_c",
         "concept_label": "Concept C — Modern Wealth Intelligence",
         "status": "pending_review",
@@ -550,11 +550,11 @@
         "reviewed_at": null
       }
     },
-    "diag-03-base-case-owner-profit": {
+    "diag-03-cook-county-redemption-waterfall": {
       "concept_a": {
-        "graphic_id": "diag-03-base-case-owner-profit",
+        "graphic_id": "diag-03-cook-county-redemption-waterfall",
         "graphic_type": "diagram",
-        "label": "Base Case: $97,500 Revenue to 42.5% Owner Net",
+        "label": "Cook County Redemption Waterfall",
         "concept_id": "concept_a",
         "concept_label": "Concept A — Black & Gold Executive",
         "status": "pending_review",
@@ -562,9 +562,9 @@
         "reviewed_at": null
       },
       "concept_b": {
-        "graphic_id": "diag-03-base-case-owner-profit",
+        "graphic_id": "diag-03-cook-county-redemption-waterfall",
         "graphic_type": "diagram",
-        "label": "Base Case: $97,500 Revenue to 42.5% Owner Net",
+        "label": "Cook County Redemption Waterfall",
         "concept_id": "concept_b",
         "concept_label": "Concept B — Bold Editorial",
         "status": "pending_review",
@@ -572,9 +572,9 @@
         "reviewed_at": null
       },
       "concept_c": {
-        "graphic_id": "diag-03-base-case-owner-profit",
+        "graphic_id": "diag-03-cook-county-redemption-waterfall",
         "graphic_type": "diagram",
-        "label": "Base Case: $97,500 Revenue to 42.5% Owner Net",
+        "label": "Cook County Redemption Waterfall",
         "concept_id": "concept_c",
         "concept_label": "Concept C — Modern Wealth Intelligence",
         "status": "pending_review",
@@ -582,11 +582,11 @@
         "reviewed_at": null
       }
     },
-    "diag-04-realized-cash-yield-mechanics": {
+    "diag-04-lien-vs-deed-odds-and-returns": {
       "concept_a": {
-        "graphic_id": "diag-04-realized-cash-yield-mechanics",
+        "graphic_id": "diag-04-lien-vs-deed-odds-and-returns",
         "graphic_type": "diagram",
-        "label": "Five Investment Bases, Five Cash-Yield Outcomes",
+        "label": "Lien Versus Deed Odds and Returns",
         "concept_id": "concept_a",
         "concept_label": "Concept A — Black & Gold Executive",
         "status": "pending_review",
@@ -594,9 +594,9 @@
         "reviewed_at": null
       },
       "concept_b": {
-        "graphic_id": "diag-04-realized-cash-yield-mechanics",
+        "graphic_id": "diag-04-lien-vs-deed-odds-and-returns",
         "graphic_type": "diagram",
-        "label": "Five Investment Bases, Five Cash-Yield Outcomes",
+        "label": "Lien Versus Deed Odds and Returns",
         "concept_id": "concept_b",
         "concept_label": "Concept B — Bold Editorial",
         "status": "pending_review",
@@ -604,9 +604,9 @@
         "reviewed_at": null
       },
       "concept_c": {
-        "graphic_id": "diag-04-realized-cash-yield-mechanics",
+        "graphic_id": "diag-04-lien-vs-deed-odds-and-returns",
         "graphic_type": "diagram",
-        "label": "Five Investment Bases, Five Cash-Yield Outcomes",
+        "label": "Lien Versus Deed Odds and Returns",
         "concept_id": "concept_c",
         "concept_label": "Concept C — Modern Wealth Intelligence",
         "status": "pending_review",
@@ -614,11 +614,11 @@
         "reviewed_at": null
       }
     },
-    "diag-05-statutory-risk-preflight": {
+    "diag-05-online-deed-bid-gates": {
       "concept_a": {
-        "graphic_id": "diag-05-statutory-risk-preflight",
+        "graphic_id": "diag-05-online-deed-bid-gates",
         "graphic_type": "diagram",
-        "label": "Four Checks Before Capital Moves",
+        "label": "Online Auction Bid Gates",
         "concept_id": "concept_a",
         "concept_label": "Concept A — Black & Gold Executive",
         "status": "pending_review",
@@ -626,9 +626,9 @@
         "reviewed_at": null
       },
       "concept_b": {
-        "graphic_id": "diag-05-statutory-risk-preflight",
+        "graphic_id": "diag-05-online-deed-bid-gates",
         "graphic_type": "diagram",
-        "label": "Four Checks Before Capital Moves",
+        "label": "Online Auction Bid Gates",
         "concept_id": "concept_b",
         "concept_label": "Concept B — Bold Editorial",
         "status": "pending_review",
@@ -636,9 +636,9 @@
         "reviewed_at": null
       },
       "concept_c": {
-        "graphic_id": "diag-05-statutory-risk-preflight",
+        "graphic_id": "diag-05-online-deed-bid-gates",
         "graphic_type": "diagram",
-        "label": "Four Checks Before Capital Moves",
+        "label": "Online Auction Bid Gates",
         "concept_id": "concept_c",
         "concept_label": "Concept C — Modern Wealth Intelligence",
         "status": "pending_review",
@@ -646,11 +646,11 @@
         "reviewed_at": null
       }
     },
-    "diag-06-core-and-scaled-pod": {
+    "diag-06-post-tyler-certificate-control": {
       "concept_a": {
-        "graphic_id": "diag-06-core-and-scaled-pod",
+        "graphic_id": "diag-06-post-tyler-certificate-control",
         "graphic_type": "diagram",
-        "label": "Three Core Seats, Five at Scale",
+        "label": "Post-Tyler Certificate Control Structure",
         "concept_id": "concept_a",
         "concept_label": "Concept A — Black & Gold Executive",
         "status": "pending_review",
@@ -658,9 +658,9 @@
         "reviewed_at": null
       },
       "concept_b": {
-        "graphic_id": "diag-06-core-and-scaled-pod",
+        "graphic_id": "diag-06-post-tyler-certificate-control",
         "graphic_type": "diagram",
-        "label": "Three Core Seats, Five at Scale",
+        "label": "Post-Tyler Certificate Control Structure",
         "concept_id": "concept_b",
         "concept_label": "Concept B — Bold Editorial",
         "status": "pending_review",
@@ -668,9 +668,9 @@
         "reviewed_at": null
       },
       "concept_c": {
-        "graphic_id": "diag-06-core-and-scaled-pod",
+        "graphic_id": "diag-06-post-tyler-certificate-control",
         "graphic_type": "diagram",
-        "label": "Three Core Seats, Five at Scale",
+        "label": "Post-Tyler Certificate Control Structure",
         "concept_id": "concept_c",
         "concept_label": "Concept C — Modern Wealth Intelligence",
         "status": "pending_review",
@@ -678,11 +678,11 @@
         "reviewed_at": null
       }
     },
-    "diag-07-reference-startup-capital-allocation": {
+    "diag-07-auction-format-yield-bands": {
       "concept_a": {
-        "graphic_id": "diag-07-reference-startup-capital-allocation",
+        "graphic_id": "diag-07-auction-format-yield-bands",
         "graphic_type": "diagram",
-        "label": "$50,000 Startup Plan: Inventory, Reserves, and Runway",
+        "label": "Auction Format Yield Bands",
         "concept_id": "concept_a",
         "concept_label": "Concept A — Black & Gold Executive",
         "status": "pending_review",
@@ -690,9 +690,9 @@
         "reviewed_at": null
       },
       "concept_b": {
-        "graphic_id": "diag-07-reference-startup-capital-allocation",
+        "graphic_id": "diag-07-auction-format-yield-bands",
         "graphic_type": "diagram",
-        "label": "$50,000 Startup Plan: Inventory, Reserves, and Runway",
+        "label": "Auction Format Yield Bands",
         "concept_id": "concept_b",
         "concept_label": "Concept B — Bold Editorial",
         "status": "pending_review",
@@ -700,9 +700,9 @@
         "reviewed_at": null
       },
       "concept_c": {
-        "graphic_id": "diag-07-reference-startup-capital-allocation",
+        "graphic_id": "diag-07-auction-format-yield-bands",
         "graphic_type": "diagram",
-        "label": "$50,000 Startup Plan: Inventory, Reserves, and Runway",
+        "label": "Auction Format Yield Bands",
         "concept_id": "concept_c",
         "concept_label": "Concept C — Modern Wealth Intelligence",
         "status": "pending_review",
@@ -710,11 +710,11 @@
         "reviewed_at": null
       }
     },
-    "diag-08-first-thirty-days": {
+    "diag-08-funding-and-scaling-roadmap": {
       "concept_a": {
-        "graphic_id": "diag-08-first-thirty-days",
+        "graphic_id": "diag-08-funding-and-scaling-roadmap",
         "graphic_type": "diagram",
-        "label": "Thirty Days to a Documented Investment Process",
+        "label": "Four-Week Funding and Scaling Roadmap",
         "concept_id": "concept_a",
         "concept_label": "Concept A — Black & Gold Executive",
         "status": "pending_review",
@@ -722,9 +722,9 @@
         "reviewed_at": null
       },
       "concept_b": {
-        "graphic_id": "diag-08-first-thirty-days",
+        "graphic_id": "diag-08-funding-and-scaling-roadmap",
         "graphic_type": "diagram",
-        "label": "Thirty Days to a Documented Investment Process",
+        "label": "Four-Week Funding and Scaling Roadmap",
         "concept_id": "concept_b",
         "concept_label": "Concept B — Bold Editorial",
         "status": "pending_review",
@@ -732,9 +732,9 @@
         "reviewed_at": null
       },
       "concept_c": {
-        "graphic_id": "diag-08-first-thirty-days",
+        "graphic_id": "diag-08-funding-and-scaling-roadmap",
         "graphic_type": "diagram",
-        "label": "Thirty Days to a Documented Investment Process",
+        "label": "Four-Week Funding and Scaling Roadmap",
         "concept_id": "concept_c",
         "concept_label": "Concept C — Modern Wealth Intelligence",
         "status": "pending_review",
@@ -743,5 +743,5 @@
       }
     }
   },
-  "updated_at": "2026-11-23T22:48:02Z"
+  "updated_at": "2026-11-24T21:35:15Z"
 }

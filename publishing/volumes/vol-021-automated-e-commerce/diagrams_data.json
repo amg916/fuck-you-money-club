@@ -1,338 +1,333 @@
 {
   "diagrams": [
     {
-      "diagram_id": "diag-01-authorized-retail-operating-loop",
-      "chart_type": "process_flow",
-      "title": "Route Orders, Not Unresolved Exceptions",
-      "subtitle": "A five-stage operating loop for authorized, 3PL-backed retail.",
+      "diagram_id": "diag-01-high-ticket-dealer-launch-sequence",
       "chapter_number": 1,
-      "epistemic_tag": "operating_framework",
-      "assumptions_note": "Stage numbers indicate sequence, not performance estimates. The merchant sells its own retail inventory; recognized revenue is retail sales net of refunds, not supplier sales or payment-processor settlement volume.",
-      "caption": "Automate routine routing, inventory alerts, and returns tracking while assigning named owners to stock discrepancies, unsafe products, and refund exceptions.",
+      "chart_type": "process_flow",
+      "title": "High-Ticket Authorized-Dealer Launch Sequence",
+      "subtitle": "From keyword validation to Google Shopping on $1,000-plus US-brand products",
+      "caption": "Authorized-dealer operators list $1,000-plus products from established US brands, collect payment first, and let the supplier ship. Kenny's store reached about $207,953 in a month on $4,376.72 of ad spend.",
+      "assumptions_note": "Step order follows the research mechanics practitioners describe. Realistic net margin is 15-20% of gross revenue per Joe Verschoor; MAP compliance tops out near 90% per built with ali.",
+      "note": "Sources: Joe Verschoor [uxvzRhKmdXU @ 00:04:18; 5jY7d_1m1t0 @ 00:06:13], built with ali [pbk_t9e4Xpo @ 00:11:56; Mf4bZiQ2-Fc @ 00:16:02], Ecommerce Paradise [EaAeDMJIPLQ @ 00:02:06], Peak Flow Media [YmrOjrklnxM @ 00:10:02], Asonjf [91zki-xXArY @ 00:37:42].",
       "stages": [
         {
-          "label": "Authorize suppliers and establish product records",
-          "value": "Step 1: document sourcing and landed cost",
-          "numeric_value": 1.0,
-          "detail": "Collect dealer terms, supplier invoices, SKU identifiers, applicable safety evidence, and landed unit costs. Reject undocumented sourcing before publishing listings."
+          "step": "01",
+          "label": "Validate demand",
+          "value": "Step 1",
+          "detail": "Check WordStream or Semrush for high search volume plus low keyword difficulty; drop anything seasonal or under $1,000."
         },
         {
-          "label": "Publish inventory with explicit stock buffers",
-          "value": "Step 2: synchronize available-to-promise inventory",
-          "numeric_value": 2.0,
-          "detail": "Connect Shopify inventory to the 3PL feed; subtract reserved, damaged, and quarantined units. Alert the operations lead when feed age exceeds the agreed limit."
+          "step": "02",
+          "label": "Benchmark online-only dealers",
+          "value": "Step 2",
+          "detail": "Search 'buy [brand] [product]' in the Shopping tab and rule out dealers with physical locations or 'appointment required'."
         },
         {
-          "label": "Capture payment and route eligible orders",
-          "value": "Step 3: release only fulfillable paid orders",
-          "numeric_value": 3.0,
-          "detail": "Use idempotent order identifiers and payment-status checks before 3PL release. Send address failures, suspected fraud, and oversells to an exception queue."
+          "step": "03",
+          "label": "Confirm strict MAP",
+          "value": "Step 3",
+          "detail": "Compare the identical model and size across sellers; expect about 90% compliance at best."
         },
         {
-          "label": "Track delivery and close return exceptions",
-          "value": "Step 4: reconcile shipments, returns, and refunds",
-          "numeric_value": 4.0,
-          "detail": "Match carrier events to orders, investigate stalled shipments, and track return authorizations through inspection. Reconcile each refund to the original sale."
+          "step": "04",
+          "label": "Price dispute exposure into margin",
+          "value": "Step 4",
+          "detail": "Load chargeback, restocking, return-shipping and labor-warranty costs into each brand's margin before listing it."
         },
         {
-          "label": "Replenish selectively and measure retained demand",
-          "value": "Step 5: refresh purchasing and retention decisions",
-          "numeric_value": 5.0,
-          "detail": "Use sell-through, lead times, and contribution by SKU to replenish inventory. Suppress unavailable products and opted-out contacts from Klaviyo replenishment flows."
+          "step": "05",
+          "label": "Launch on Google Shopping",
+          "value": "Step 5",
+          "detail": "Bid bottom-of-funnel terms first, such as 'Samsung TV 36 in', and push Meta to remarketing."
         }
       ]
     },
     {
-      "diagram_id": "diag-02-base-retained-buyer-cohort",
-      "chart_type": "funnel",
-      "title": "A Nested Cohort That Reconciles to Base Revenue",
-      "subtitle": "Annual retained purchases, not clicks multiplied across unrelated cohorts.",
+      "diagram_id": "diag-02-sales-tax-compliance-cycle",
       "chapter_number": 6,
-      "epistemic_tag": "illustrative_model",
-      "assumptions_note": "Illustrative annual cohort: every downstream group is a subset of the preceding group of distinct visitors. Each retained buyer places exactly one retained order averaging $75 in recognized sales after refunds, excluding collected sales tax. Repeat orders are excluded from this simplified model.",
-      "caption": "15,000 retained orders × $75 = $1,125,000 annual Base revenue. The modeled 3% visitor-to-retained-buyer conversion is an assumption to test, not a traffic benchmark.",
+      "chart_type": "funnel",
+      "title": "Sales Tax Compliance Cycle",
+      "subtitle": "Nexus, register, calculate, sort marketplace sales, then file and remit",
+      "caption": "Since the 2018 Wayfair ruling, most states key economic nexus to $100,000 in sales or 200 transactions, and Avalara and LedgerGurus both insist on registering before collecting.",
+      "assumptions_note": "Funnel widths are ordinal stage positions (5 down to 1), not measured volumes. Dollar and count figures in each display are the practitioner numbers; California, New York and Texas set higher thresholds.",
+      "note": "Sources: Cherry Bekaert [rUvJ4UwGqiA @ 00:01:00; 00:00:24], Avalara [EtT3YoVfP0c @ 00:19:36; 00:38:55; QiT660QtcXA @ 00:01:18], Arthur Glinkin [1Cr_iHc8p4s @ 00:07:44], LedgerGurus [-DhtTN5_Rh4 @ 00:12:28; 00:13:07].",
       "stages": [
         {
-          "label": "Eligible distinct visitors entering the storefront",
-          "value": "500,000 visitors in the annual starting cohort",
-          "numeric_value": 500000.0,
-          "detail": "Deduplicate measured visitors using an appropriate first-party analytics design. Keep acquisition spend separate from attribution claims and record measurement limits."
+          "label": "Nexus test",
+          "value": 5,
+          "display": "$100,000 in sales or 200 transactions",
+          "conversion": "Map every employee, rep, office and Amazon or 3PL inventory location",
+          "detail": "Each of those creates physical nexus on its own (Cherry Bekaert)."
         },
         {
-          "label": "Visitors reaching an eligible product page",
-          "value": "200,000 visitors; 40% of the preceding cohort",
-          "numeric_value": 200000.0,
-          "detail": "Count only original-cohort visitors viewing stocked, purchasable products. Broken variant links and unavailable inventory should be diagnosed before increasing spend."
+          "label": "Register before collecting",
+          "value": 4,
+          "display": "Permit issued first",
+          "conversion": "No collection enabled until the permit is in hand",
+          "detail": "Collecting unregistered creates personal officer liability (Avalara)."
         },
         {
-          "label": "Product viewers adding an item to cart",
-          "value": "40,000 visitors; 20% of product-page viewers",
-          "numeric_value": 40000.0,
-          "detail": "Measure distinct cart creators rather than add-to-cart events. Investigate unexpected shipping charges and unclear product compatibility when this transition weakens."
+          "label": "Calculate the rate",
+          "value": 3,
+          "display": "13,000 permutations changing monthly",
+          "conversion": "Engine handles rate, rule and boundary changes",
+          "detail": "ZIP 30024 spans three counties (Avalara webinar presenters)."
         },
         {
-          "label": "Cart creators beginning the checkout sequence",
-          "value": "25,000 visitors; 62.5% of cart creators",
-          "numeric_value": 25000.0,
-          "detail": "Restrict checkout starts to the same cart-creator cohort. Segment payment failures and address-validation friction without double-counting repeated checkout attempts."
+          "label": "Sort marketplace and direct sales",
+          "value": 2,
+          "display": "Amazon, Walmart and Etsy collect",
+          "conversion": "Shopify is not a facilitator, so that tax stays with the seller",
+          "detail": "Marketplace-collected sales are already handled (Avalara)."
         },
         {
-          "label": "Checkout starters retaining one completed purchase",
-          "value": "15,000 buyers; 60% of checkout starters",
-          "numeric_value": 15000.0,
-          "detail": "Remove canceled and fully refunded purchases; use post-refund recognized order value for remaining buyers. This final cohort supplies exactly $1,125,000 annual sales."
+          "label": "File and remit",
+          "value": 1,
+          "display": "About $30-35 per TaxJar filing; $40-50 per Avalara return",
+          "conversion": "Approve returns before the platform cutoff",
+          "detail": "Avalara auto-files after the 11th at 5 PM ET; TaxJar's deadline is the 5th (LedgerGurus)."
         }
       ]
     },
     {
-      "diagram_id": "diag-03-base-retail-margin-waterfall",
-      "chart_type": "waterfall",
-      "title": "From $1,125,000 Retail Sales to $129,375 Owner Net",
-      "subtitle": "Six bars reconcile the canonical Base-Case 11.5% net margin.",
+      "diagram_id": "diag-03-margin-to-cac-waterfall",
       "chapter_number": 3,
-      "epistemic_tag": "illustrative_model",
-      "assumptions_note": "USD per year. The first bar is the opening revenue total, the next four bars are signed expense changes, and the final bar is the closing total, not an additional change. Canonical gross revenue means retail sales net of refunds. Expense allocations are illustrative and include paid pod labor.",
-      "caption": "$1,125,000 − $540,000 − $135,000 − $180,000 − $140,625 = $129,375; $129,375 ÷ $1,125,000 = 11.5%. Collected sales tax is excluded from revenue.",
-      "stages": [
+      "chart_type": "waterfall",
+      "title": "From Per-Order Margin to an Affordable CAC",
+      "subtitle": "Two worked examples of contribution margin before and after acquisition cost",
+      "caption": "Common Thread Collective turns $53 of fuel profit minus a $20 net target into a $33 target CAC. Eric Andrews' two-for-one re-run of a 50%-off Black Friday leaves $36 of contribution margin after CAC.",
+      "assumptions_note": "Andrews' CAC bar is the gap between his reported $69 contribution margin per order and $36 after CAC. The 50%-off version produced only $29 contribution margin per order before CAC.",
+      "note": "Sources: Common Thread Collective (as summarized for Chapter Q3), Eric Andrews [t2H3gJHuw6k @ 00:08:56; 00:07:15; gG33a-ErNRQ @ 00:15:10].",
+      "bars": [
         {
-          "label": "Opening total: recognized annual retail sales",
-          "value": "$1,125,000 revenue after refunds; 100% of sales",
-          "numeric_value": 1125000.0,
-          "detail": "Use Shopify order records and accounting adjustments to reconcile net retail sales. Do not deduct refunds again or substitute net processor deposits for revenue."
+          "label": "Fuel profit per order (CTC)",
+          "value": 53,
+          "display": "$53",
+          "kind": "total"
         },
         {
-          "label": "Subtract landed cost of goods sold",
-          "value": "−$540,000 annual expense; 48% of recognized sales",
-          "numeric_value": -540000.0,
-          "detail": "Include purchase cost, allocated inbound freight, applicable duties, and inventory-loss expense. Unsold inventory remains an asset until sold or written down."
+          "label": "Net profit target (CTC)",
+          "value": -20,
+          "display": "-$20",
+          "kind": "deduction"
         },
         {
-          "label": "Subtract fulfillment, payments, and return handling",
-          "value": "−$135,000 annual expense; 12% of recognized sales",
-          "numeric_value": -135000.0,
-          "detail": "Include 3PL storage and handling, outbound shipping, payment processing, and reverse logistics. Refund principal already reduces opening revenue and is not repeated."
+          "label": "Target CAC (CTC)",
+          "value": 33,
+          "display": "$33",
+          "kind": "result"
         },
         {
-          "label": "Subtract advertising and variable acquisition spend",
-          "value": "−$180,000 annual expense; 16% of recognized sales",
-          "numeric_value": -180000.0,
-          "detail": "Allocate media and directly variable acquisition charges here. Retained contribution after these three expense bars is $270,000, or 24% of sales."
+          "label": "Two-for-one contribution margin (Andrews)",
+          "value": 69,
+          "display": "$69",
+          "kind": "total"
         },
         {
-          "label": "Subtract labor and remaining operating overhead",
-          "value": "−$140,625 annual expense; 12.5% of recognized sales",
-          "numeric_value": -140625.0,
-          "detail": "Budget $96,000 loaded labor for two full-time seats, $24,000 for three limited-hour contractors, and $20,625 for software, insurance, and remaining overhead. Validate local staffing costs; fixed overhead averages $11,718.75 monthly."
+          "label": "Acquisition cost per order (Andrews)",
+          "value": -33,
+          "display": "-$33",
+          "kind": "deduction"
         },
         {
-          "label": "Closing total: canonical annual owner net profit",
-          "value": "$129,375 residual profit; 11.5% annual net margin",
-          "numeric_value": 129375.0,
-          "detail": "This closing bar equals revenue less all four expense bars. Paid owner labor, if included in the pod, belongs in labor expense; personal tax treatment is not modeled."
+          "label": "Contribution margin after CAC (Andrews)",
+          "value": 36,
+          "display": "$36",
+          "kind": "result"
         }
       ]
     },
     {
-      "diagram_id": "diag-04-subniche-contribution-yields",
-      "chart_type": "horizontal_bars",
-      "title": "Compare Contribution Yield Before Adding Fixed Overhead",
-      "subtitle": "Five illustrative sub-niche and payment-rail combinations.",
+      "diagram_id": "diag-04-supplier-account-ranges",
       "chapter_number": 2,
-      "epistemic_tag": "illustrative_model",
-      "assumptions_note": "Numeric values are contribution percentages of recognized retail sales after refunds, not annual net margins. Each example uses a $100 recognized-sales basis and subtracts landed goods, fulfillment including return handling, payment costs, and acquisition. Fixed labor and overhead remain excluded.",
-      "caption": "These are underwriting examples, not observed category benchmarks. Payment costs vary by provider, transaction mix, disputes, and contract; validate the complete order economics.",
-      "stages": [
+      "chart_type": "horizontal_bars",
+      "title": "Supplier Account Ranges Practitioners Report",
+      "subtitle": "Acceptance, markup, margin floor, quote close rate and MAP compliance",
+      "unit": "percent",
+      "caption": "Ecommerce Paradise reports 30-50% acceptance when applying to 10-20 brands at once, while Daniel Boufford pegs distributor markups at 20-50% over brand direct.",
+      "assumptions_note": "No practitioner gave a midpoint, so each typical marker sits at the low end of the quoted range. The quote close rate restates one sale per twenty quotes as a percentage.",
+      "note": "Sources: Ecommerce Paradise [hHXf1_WdANY @ 00:17:39; 00:09:24], Daniel Boufford [jYFh4ucNZuw @ 00:00:15], Build Assets Online [ocjVuvj0QJg @ 00:04:14], built with ali [pbk_t9e4Xpo @ 00:21:56].",
+      "bars": [
         {
-          "label": "Authorized replacement filters through card checkout",
-          "value": "28% contribution; $28 retained per $100 sales",
-          "numeric_value": 28.0,
-          "detail": "$100 less $42 landed goods, $12 fulfillment, $3 payment costs, and $15 acquisition leaves $28. Verify compatibility claims and prevent obsolete-model stock accumulation."
+          "label": "Acceptance on batch applications",
+          "min": 30,
+          "max": 50,
+          "typical": 30,
+          "display": "30-50% when applying to 10-20 brands"
         },
         {
-          "label": "Compact repair accessories through card checkout",
-          "value": "24% contribution; $24 retained per $100 sales",
-          "numeric_value": 24.0,
-          "detail": "$100 less $48 landed goods, $9 fulfillment, $3 payment costs, and $16 acquisition leaves $24. This cost mix matches Base contribution before fixed overhead."
+          "label": "Distributor markup over brand direct",
+          "min": 20,
+          "max": 50,
+          "typical": 20,
+          "display": "20-50% markup"
         },
         {
-          "label": "Bulky organization products through card checkout",
-          "value": "16% contribution; $16 retained per $100 sales",
-          "numeric_value": 16.0,
-          "detail": "$100 less $45 landed goods, $20 fulfillment, $3 payment costs, and $16 acquisition leaves $16. Measure dimensional-weight surcharges and damage-driven reverse logistics."
+          "label": "Supplier margin walk-away line",
+          "min": 10,
+          "max": 15,
+          "typical": 10,
+          "display": "Reject suppliers under 10-15% margin"
         },
         {
-          "label": "Premium accessories through installment-provider checkout",
-          "value": "22% contribution; $22 retained per $100 sales",
-          "numeric_value": 22.0,
-          "detail": "$100 less $47 landed goods, $10 fulfillment, $6 payment costs, and $15 acquisition leaves $22. Test incremental retained purchases rather than assuming financing lifts profit."
+          "label": "Sale rate on high-ticket quotes",
+          "min": 5,
+          "max": 5,
+          "typical": 5,
+          "display": "About one sale per twenty quotes"
         },
         {
-          "label": "Repeat business replenishment through ACH checkout",
-          "value": "36% contribution; $36 retained per $100 sales",
-          "numeric_value": 36.0,
-          "detail": "$100 less $48 landed goods, $10 fulfillment, $1 payment costs, and $5 acquisition leaves $36. Validate authorization, settlement timing, return exposure, and repeat demand."
+          "label": "MAP compliance ceiling",
+          "min": 90,
+          "max": 90,
+          "typical": 90,
+          "display": "About 90% compliance at best"
         }
       ]
     },
     {
-      "diagram_id": "diag-05-product-and-order-preflight",
-      "chart_type": "decision_tree",
-      "title": "Four Pre-Flight Checks Before Accepting Orders",
-      "subtitle": "Resolve product, customs, tax, and customer-treatment risks.",
+      "diagram_id": "diag-05-cash-cycle-gates",
       "chapter_number": 5,
-      "epistemic_tag": "operating_framework",
-      "assumptions_note": "Four sequential yes-or-no checks; numeric values indicate sequence only. A documented pass advances to the next check. A failed check follows the corrective branch described in its detail; product category and jurisdiction determine scope.",
-      "caption": "Use written evidence rather than a single vendor assurance. After all four checks pass, release only the affected, documented products and selling destinations.",
-      "stages": [
+      "chart_type": "decision_tree",
+      "title": "Cash Conversion Cycle Gates",
+      "subtitle": "Inventory days plus sales days minus payable days, checked before cash leaves",
+      "caption": "Kurtis Hanni cut a client's cycle from 230 to 45 days, slashing required cash from $235,000 to $67,000; LedgerGurus typically sees e-commerce cycles of at least 90 days.",
+      "assumptions_note": "Gate order runs from purchasing through exit. The 37.2% figure is One Minute Finance's annualized cost of letting a 2/10 net 30 discount lapse.",
+      "note": "Sources: Kurtis Hanni [0WBeNhRVKHY @ 00:09:32; 00:11:29], One Minute Finance [7yuWFm95LDw @ 00:07:28], LedgerGurus [F-Y1cubdesE @ 00:06:24], Brent Freeman - The CBB Group [KSfESWIcDGI @ 00:09:41].",
+      "nodes": [
         {
-          "label": "Check product safety and supplier traceability",
-          "value": "Check 1: pass documented safety and sourcing requirements",
-          "numeric_value": 1.0,
-          "detail": "Confirm dealer authorization, applicable testing and certificates, and recall screening. Under 15 U.S.C. 2064, evaluate immediate reporting duties when hazard information arises. Failure routes affected stock to quarantine and review."
+          "gate": "G1",
+          "question": "Does cash cover the full cycle before an overseas order with zero payable days?",
+          "pass_next": "G2",
+          "fail_action": "Hold the order and negotiate billing on arrival; the 230-day client needed $235,000 out before a dollar returned."
         },
         {
-          "label": "Check customs classification and landed import cost",
-          "value": "Check 2: pass importer and duty documentation",
-          "numeric_value": 2.0,
-          "detail": "Identify the importer of record and verify HTS classification, origin, and applicable duties under 19 U.S.C. 1484. For domestic purchases, retain supplier invoices and responsibility records. Failure pauses affected purchasing."
+          "gate": "G2",
+          "question": "Is every 2/10 net 30 early-pay discount being captured?",
+          "pass_next": "G3",
+          "fail_action": "Pay within 10 days; holding cash 20 extra days costs 37.2% annualized."
         },
         {
-          "label": "Check sales-tax nexus and collection configuration",
-          "value": "Check 3: pass destination-specific tax setup verification",
-          "numeric_value": 3.0,
-          "detail": "Review economic and physical nexus, including 3PL-held inventory. California Revenue and Taxation Code Section 6203 illustrates state-specific triggers. Separate marketplace collection from direct-store duties; unresolved destinations remain disabled."
+          "gate": "G3",
+          "question": "Has net 60 wholesale been modeled for the receivables jump and inventory build?",
+          "pass_next": "G4",
+          "fail_action": "Model receivables and inventory before signing; revenue can sit on the books without the cash."
         },
         {
-          "label": "Check promises, privacy, and retention messaging",
-          "value": "Check 4: pass customer-facing workflow verification",
-          "numeric_value": 4.0,
-          "detail": "Test shipping promises and delay handling under 16 CFR Part 435, claims under 15 U.S.C. 45, email opt-outs under 15 U.S.C. 7704, and applicable California Civil Code 1798.100 duties. Failure pauses the affected offer or flow until corrected and retested."
+          "gate": "G4",
+          "question": "Before going to market, is the 12- to 24-month average working capital computed?",
+          "pass_next": "Proceed to sale",
+          "fail_action": "Compute the average and pull excess capital out, or the buyer negotiates to keep it."
         }
       ]
     },
     {
-      "diagram_id": "diag-06-core-and-scaled-pod-seats",
-      "chart_type": "org_architecture",
-      "title": "Five Core Seats, Seven at the Scaled Case",
-      "subtitle": "Two full-time operators plus three contractors; add two seats selectively.",
+      "diagram_id": "diag-06-shopping-feed-ownership",
       "chapter_number": 11,
-      "epistemic_tag": "operating_framework",
-      "assumptions_note": "Each numeric value represents one person, not one full-time equivalent. The first five seats form the Conservative and Base pod: 2 FT + 3 C. The final two seats expand the Scaled pod to 3 FT + 4 C. Contractor hours must be budgeted explicitly.",
-      "caption": "Conservative: $250,000 × 5% = $12,500 owner net. Base: $1,125,000 × 11.5% = $129,375 owner net. Scaled: $2,000,000 × 18% = $360,000 owner net. Scale requires better unit economics, not automation alone.",
-      "stages": [
+      "chart_type": "org_architecture",
+      "title": "Google Shopping Feed Ownership Map",
+      "subtitle": "In Shopping and Performance Max the feed is the targeting",
+      "caption": "Operators front-load titles with the converting search term, keep price and availability identical to the site, never change product IDs, and segment with custom labels by margin, price bucket and season.",
+      "assumptions_note": "Practitioners did not specify team size; roles describe the feed responsibilities they name, which one operator may hold together.",
+      "note": "Sources: Grow My Ads [hY8ZBC3A4uQ @ 00:10:45; 00:13:00], Ecom Chris [d9kULGtUBD4 @ 00:12:01; XQTEnn-3t0E @ 00:23:16], Max Crakanthorp [H4yH9xs030Q @ 00:13:46], KeyCommerce [S1NhYxaPnic @ 00:06:21], Tim Sutton [APb0cOGKROE @ 00:05:06].",
+      "center": {
+        "role": "Feed owner",
+        "headcount": "Not specified by practitioners",
+        "focus": "Locks product IDs and edits inside the feed app; poorly optimized feeds pay 2-3x the CPC (Ecom Chris)."
+      },
+      "spokes": [
         {
-          "label": "Core full-time seat: general manager and merchandising",
-          "value": "Person 1: accountable for purchasing and profit",
-          "numeric_value": 1.0,
-          "detail": "Own supplier authorization, pricing, purchase commitments, and weekly contribution review. Approve reorder quantities using lead times, cash availability, and inventory aging."
+          "role": "Title and category editor",
+          "type": "Feed content",
+          "kpi": "10x clicks and impressions on the Home Reserve sofa retitle; 20-30% more sales on a jacket retitle"
         },
         {
-          "label": "Core full-time seat: operations and customer experience",
-          "value": "Person 2: accountable for fulfillment and exceptions",
-          "numeric_value": 1.0,
-          "detail": "Own 3PL service levels, inventory discrepancies, shipment delays, and refund resolution. Escalate safety incidents and maintain a daily exception backlog with owners."
+          "role": "Image curator",
+          "type": "Creative assets",
+          "kpi": "2-3x CTR lift from lifestyle images added behind the white-background main"
         },
         {
-          "label": "Core contractor seat: paid acquisition and creative",
-          "value": "Person 3: bounded acquisition and campaign workload",
-          "numeric_value": 1.0,
-          "detail": "Report contribution by campaign after refunds and acquisition costs. Pause deteriorating cohorts and reuse approved product evidence when developing advertising claims."
+          "role": "Price and promotion auditor",
+          "type": "Compliance",
+          "kpi": "Sale price identical to the live site; promotion end time set to 11:59 p.m."
         },
         {
-          "label": "Core contractor seat: automation and retention",
-          "value": "Person 4: bounded integration and messaging workload",
-          "numeric_value": 1.0,
-          "detail": "Maintain Shopify webhooks, 3PL routing, Klaviyo suppression, and return-status synchronization. Test retry behavior and duplicate-event handling before publishing workflow changes."
-        },
-        {
-          "label": "Core contractor seat: bookkeeping and inventory reconciliation",
-          "value": "Person 5: bounded close and reconciliation workload",
-          "numeric_value": 1.0,
-          "detail": "Reconcile processor settlements, refunds, inventory assets, and supplier invoices. Prepare tax-provider handoffs and flag unexplained differences before the monthly close."
-        },
-        {
-          "label": "Scaled full-time addition: inventory and supply planning",
-          "value": "Person 6: added only in the Scaled pod",
-          "numeric_value": 1.0,
-          "detail": "Take ownership of purchasing forecasts, stock transfers, and supplier lead-time variability when these exceed the core manager's measured operating capacity."
-        },
-        {
-          "label": "Scaled contractor addition: customer-support overflow coverage",
-          "value": "Person 7: added only in the Scaled pod",
-          "numeric_value": 1.0,
-          "detail": "Cover measured ticket peaks and returns administration under documented permissions. Keep refund authority, product-safety escalation, and customer-data access narrowly assigned."
+          "role": "Custom label segmenter",
+          "type": "Bidding structure",
+          "kpi": "Price buckets from 100 to 10,000 with a 2,000+ label on its own tROAS"
         }
       ]
     },
     {
-      "diagram_id": "diag-07-startup-capital-allocation",
-      "chart_type": "stacked_comparison",
-      "title": "Allocate Capital Before Funding Advertising Expansion",
-      "subtitle": "Four buckets across $15,000, $45,000, and $80,000 startup envelopes.",
+      "diagram_id": "diag-07-landed-cost-stack",
       "chapter_number": 4,
-      "epistemic_tag": "illustrative_model",
-      "assumptions_note": "Numeric values encode the $45,000 planning stack in USD. Each stage also states its $15,000 and $80,000 comparison allocations. These are startup funding envelopes, not the Conservative, Base, and Scaled annual revenue scenarios.",
-      "caption": "Lean: $6,000 + $3,000 + $2,000 + $4,000 = $15,000. Planning: $18,000 + $9,000 + $7,000 + $11,000 = $45,000. Expanded: $32,000 + $16,000 + $12,000 + $20,000 = $80,000.",
-      "stages": [
+      "chart_type": "stacked_comparison",
+      "title": "Landed Cost Stack Behind a $10 Supplier Price",
+      "subtitle": "Goods plus freight, duty and fees divided by units received",
+      "total_range": "$12,000 landed on 1,000 units, or $12 per unit versus a $10 supplier price",
+      "caption": "Intel by CandiMentor's worked example shows the supplier invoice is only the starting point; freight, duty and fees add $2,000 across 1,000 units.",
+      "assumptions_note": "Low and high are equal because the example reports single figures. Trade Counsel separately stacks 3.4%, 7.5% and 12.5% into 23.4% duty on Chinese plastic bins.",
+      "note": "Sources: Intel by CandiMentor [CvHvBnjwlJg @ 00:05:57], Trade Counsel [-WXoF_u08g0 @ 00:01:56], SKUio [DFZ8XDRkuCE @ 00:00:20].",
+      "buckets": [
         {
-          "label": "Opening inventory and supplier purchase commitments",
-          "value": "Lean $6,000; planning $18,000; expanded $32,000",
-          "numeric_value": 18000.0,
-          "detail": "Fund initial authorized-dealer test batches and supplier deposits with SKU-level sell-through limits. Keep purchase cash outflow separate from cost of goods recognized when products sell."
+          "label": "Product",
+          "low": 10000,
+          "high": 10000,
+          "notes": "Supplier invoice for 1,000 units"
         },
         {
-          "label": "Acquisition testing and launch creative production",
-          "value": "Lean $3,000; planning $9,000; expanded $16,000",
-          "numeric_value": 9000.0,
-          "detail": "Release spend in measured cohorts across creative, product pages, and paid traffic. Stop additional funding when retained-order contribution fails the underwriting target."
+          "label": "Freight",
+          "low": 1200,
+          "high": 1200,
+          "notes": "Keep freight separate on the invoice and bill of lading"
         },
         {
-          "label": "Storefront, integrations, and fulfillment onboarding setup",
-          "value": "Lean $2,000; planning $7,000; expanded $12,000",
-          "numeric_value": 7000.0,
-          "detail": "Budget Shopify configuration, 3PL onboarding, product data, routing tests, and returns setup. Separate one-time implementation payments from recurring software and service expenses."
+          "label": "Duty",
+          "low": 500,
+          "high": 500,
+          "notes": "Often arrives weeks later on the broker's bill (SKUio)"
         },
         {
-          "label": "Operating liquidity and exception recovery reserve",
-          "value": "Lean $4,000; planning $11,000; expanded $20,000",
-          "numeric_value": 11000.0,
-          "detail": "Hold cash for settlement delays, replacements, refunds, and operating expenses. Against the canonical $4,000–$25,000 monthly opex range, the planning and expanded reserves bridge initial settlement float before repeat-cohort replenishment."
+          "label": "Fees",
+          "low": 300,
+          "high": 300,
+          "notes": "Broker and handling fees"
         }
       ]
     },
     {
-      "diagram_id": "diag-08-thirty-day-operating-sprint",
-      "chart_type": "timeline_roadmap",
-      "title": "Thirty Days to a Tested Retail Operating System",
-      "subtitle": "Prepare evidence, integrations, and economics before increasing exposure.",
+      "diagram_id": "diag-08-scaling-readiness-roadmap",
       "chapter_number": 12,
-      "epistemic_tag": "operating_framework",
-      "assumptions_note": "Four milestones cover Days 1–30; numeric values are ending days. The canonical time to first deal is 2–6 months, so this sprint establishes readiness rather than assuming revenue within its first thirty days.",
-      "caption": "Advance with recorded test results and bounded purchasing. Unresolved supplier, product-safety, inventory, or margin issues remain explicit blockers for the affected products or workflows.",
-      "stages": [
+      "chart_type": "timeline_roadmap",
+      "title": "Scaling Readiness Roadmap",
+      "subtitle": "Speed, breakeven math, payback and capacity before more spend",
+      "caption": "Operators treat conversion and scaling as one math problem: revenue per visitor, contribution profit and CAC payback decide whether more traffic makes money.",
+      "assumptions_note": "Week sequencing orders the practitioners' gates; no speaker prescribed a four-week schedule. Average Shopify conversion is 1 to 3% per Davie Fogarty Mentors.",
+      "note": "Sources: Chase Chappell [daDsoHXE52A @ 00:01:49; 00:23:30], Adam Callinan [VCXWZQgbKXw @ 00:25:39], Leading Social [KpmUvCBEKK4 @ 00:01:48], Frankly eCommerce [CCtunt0iWMU @ 00:07:53].",
+      "weeks": [
         {
-          "label": "Days 1–7: establish sourcing and unit economics",
-          "value": "Week 1 ends with a documented product shortlist",
-          "numeric_value": 7.0,
-          "detail": "Obtain dealer terms, sample invoices, applicable safety records, and 3PL quotes. Build SKU contribution sheets that include duties, shipping, payment costs, returns, and explicit acquisition assumptions."
+          "week": "Week 1",
+          "title": "Fix page speed",
+          "deliverable": "Compress high-resolution images with Tiny Image Optimizer before other CRO work",
+          "gate": "Each 1-second delay costs 7% of conversion (Chase Chappell)"
         },
         {
-          "label": "Days 8–14: connect inventory and order routing",
-          "value": "Week 2 ends with repeatable integration test evidence",
-          "numeric_value": 14.0,
-          "detail": "Configure Shopify and the chosen 3PL integration. Test duplicate webhooks, stale inventory, partial shipments, payment failures, and address exceptions using test orders without uncontrolled customer charges."
+          "week": "Week 2",
+          "title": "Set breakeven ROAS by budget",
+          "deliverable": "Breakeven ROAS from fixed costs and variable margin at each planned spend level",
+          "gate": "Runs 22 at $10k spend, 6 at $50k and 4 at $100k (Adam Callinan)"
         },
         {
-          "label": "Days 15–21: exercise returns and retention workflows",
-          "value": "Week 3 ends with reconciled customer-lifecycle tests",
-          "numeric_value": 21.0,
-          "detail": "Run return, inspection, refund, delayed-shipment, and email opt-out cases. Verify accounting entries and suppression behavior; confirm unavailable products cannot trigger purchase-focused replenishment messages."
+          "week": "Week 3",
+          "title": "Check CAC payback",
+          "deliverable": "Payback period measured before raising budgets",
+          "gate": "30 to 60 days; six months or more means financing growth (Leading Social)"
         },
         {
-          "label": "Days 22–30: validate readiness and constrain exposure",
-          "value": "Week 4 ends with a funded operating plan",
-          "numeric_value": 30.0,
-          "detail": "Review supplier evidence, test results, cash runway, and contribution assumptions. If sourcing and readiness are complete, authorize a bounded pilot; otherwise schedule remediation within the 2–6 month first-deal horizon."
+          "week": "Week 4",
+          "title": "Recover carts and prove capacity",
+          "deliverable": "AI SMS cart recovery plus a separate picker and packer",
+          "gate": "15-30% of carts recovered at 10-15x ROI; two points of verification before surges"
         }
       ]
     }

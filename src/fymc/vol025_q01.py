@@ -1,630 +1,827 @@
 from __future__ import annotations
 
-CHAPTER_1 = {
-    "id": "Q1",
-    "chapter_id": "Q1",
-    "chapter_number": 1,
-    "question_number": 1,
-    "slug": "what-exactly-is-freight-brokerage",
-    "question_prompt": "What exactly is freight brokerage, how is real operator revenue recognized vs underlying asset/client GMV, and what separates durable small-team moats from fragile beginner hype?",
-    "kicker": "Q1 / THE BIG MONEY PLAYBOOKS",
-    "title": "What Exactly Is Freight Brokerage?",
-    "subtitle": "FMCSA Authority, BMC-84/BMC-85 Security, Highway/RMIS Carrier Controls, and Shipper-to-Carrier Cash Discipline",
-    "layout_template": "opportunity_overview",
-    "reading_time_minutes": 14,
-    "executive_summary": (
-        "Freight brokerage sells accountable transportation coordination, not trucks or ownership of cargo. "
-        "Candidate #12 ranks #19 of 29 with a Money-to-Manpower Score of 85/100: capital and labor remain binding constraints. "
-        "The canonical gross-billings cases produce $30,000, $165,000, and $400,000 in annual owner net profit, "
-        "but carrier payments consume most shipper collections. This chapter maps eight operator plays: niche lane procurement, "
-        "backup-capacity retainers, appointment exception management, carrier identity verification, shipment visibility, "
-        "invoice reconciliation, credit-and-float management, and public-filing trigger mail. The first seven are chapter-level "
-        "operating mappings; the eighth is the supplied cross-sector play. Durable advantage comes from repeat lanes, verified "
-        "capacity, documented exceptions, and collectible invoices, while gross-versus-net accounting depends on the actual "
-        "transportation promise and control assessment."
-    ),
-    "key_metrics": [
-        {
-            "label": "Conservative",
-            "value": "$1,000,000",
-            "context": "Annual gross shipper billings, including carrier costs",
-            "note": "3% net margin; $30,000 annual owner net profit; 3 FT + 2 C",
-        },
-        {
-            "label": "Base",
-            "value": "$3,000,000",
-            "context": "Annual gross shipper billings, including carrier costs",
-            "note": "5.5% net margin; $165,000 annual owner net profit; 3 FT + 2 C",
-        },
-        {
-            "label": "Scaled",
-            "value": "$5,000,000",
-            "context": "Annual gross shipper billings, including carrier costs",
-            "note": "8% net margin; $400,000 annual owner net profit; 4 FT + 3 C",
-        },
-    ],
-    "sections": [
-        {
-            "heading": "1. Sell a Controlled Transportation Promise, Not Access to a Load Board",
-            "epistemic_status": "operating_framework",
-            "paragraphs": [
-                (
-                    "A freight broker arranges transportation by authorized motor carriers for compensation without becoming the "
-                    "physical hauler merely by making that arrangement. Under 49 U.S.C. § 13102(2), the broker role turns on "
-                    "arranging transportation rather than owning tractors. A shipper tenders a shipment with origin, destination, "
-                    "commodity, equipment, appointment, and service requirements; the broker sources capacity, agrees commercial "
-                    "terms, monitors execution, and assembles payment evidence. The carrier accepts the transportation assignment "
-                    "and performs the movement. The broker earns the difference between its shipper charge and purchased "
-                    "transportation, plus separately contracted services where appropriate. That difference must pay the people, "
-                    "software, credit losses, and exceptions required to deliver the promise. A $2,000 shipment with a $1,700 "
-                    "carrier commitment creates $300 of transportation spread before those expenses, not $2,000 of disposable "
-                    "income. The cargo might be worth $200,000, but its declared value is neither brokerage sales nor a measure "
-                    "of brokerage profitability. Contract language, actual conduct, and representations also matter: describing "
-                    "the business as a carrier or accepting carrier obligations can create exposure that an asset-light label "
-                    "does not remove. Define the offered service precisely before quoting the first load."
-                ),
-                (
-                    "Five useful operator archetypes are the regional dry-van specialist, the refrigerated appointment specialist, "
-                    "the flatbed industrial coordinator, the port-drayage coordinator, and the time-critical recovery desk. Each "
-                    "requires a different operating memory. Dry van rewards repeat pickup calendars and dependable backup "
-                    "carriers. Refrigerated work adds temperature instructions, sanitation evidence, and rejection procedures. "
-                    "Flatbed requires accurate dimensions, securement specifications, and equipment confirmation. Drayage depends "
-                    "on terminal releases, chassis availability, free-time clocks, and delivery appointments. Recovery work "
-                    "requires rapid escalation and genuinely available equipment rather than an optimistic marketplace search. "
-                    "The archetype table makes these differences explicit because a beginner who accepts every commodity "
-                    "inherits five exception systems before mastering one. Start with a defined geography, equipment class, "
-                    "and shipper workflow, then write down circumstances the desk will decline. Highway and RMIS can support "
-                    "carrier onboarding, while DAT One and Truckstop can support capacity discovery; none substitutes for "
-                    "independent identity checks or commercial judgment. A defensible niche is demonstrated by shorter "
-                    "exception resolution, stronger carrier retention, and repeatable contribution per shipment. A large "
-                    "contact list without verified lane performance is prospecting inventory, not a moat. Expansion should "
-                    "follow measured operating reliability rather than a vendor's feature list."
-                ),
-                (
-                    "Eight mapped plays organize the chapter without implying eight separate businesses. The first seven are "
-                    "chapter-defined operating mappings, not additional supplied catalog identifiers. Niche lane procurement "
-                    "targets 100 loads at $250 spread, creating $25,000 before desk costs; fallback is repricing or declining "
-                    "an unserviceable lane. Backup-capacity retainers might bill $500 monthly for a defined readiness service, "
-                    "but must exclude claims of reserved trucks without carrier commitments. Appointment exception management "
-                    "can recover a documented $150 accessorial only when contracts permit it; otherwise absorb or dispute the "
-                    "cost rather than inventing a charge. Carrier identity verification costing an illustrative $8 across "
-                    "100 tenders consumes $800 and supports loss prevention, not a claim of certain savings. Shipment "
-                    "visibility costing $5 per movement consumes another $500; telephone escalation remains the fallback "
-                    "when tracking fails. Invoice reconciliation saving ten minutes on 100 invoices releases 16.7 desk hours, "
-                    "not automatic payroll savings. Credit-and-float management protects a $40,000 exposure limit by stopping "
-                    "new tenders when unpaid commitments exhaust it. The eighth play, public_filing_trigger_mail_arbitrage, "
-                    "is a separately measured acquisition experiment described later. These illustrative units are not "
-                    "extra revenue added to the canonical scenarios, and vendor prices require current quotations."
-                ),
-            ],
-            "table": {
-                "caption": "Five Freight Brokerage Archetypes and Their Defensible Operating Boundaries",
-                "headers": [
-                    "Operator archetype and ideal customer",
-                    "Service promise and illustrative fee structure",
-                    "Durable small-team operating advantage",
-                    "Failure boundary and practical fallback",
-                ],
-                "rows": [
-                    [
-                        "Regional dry-van desk serving repeat manufacturing replenishment lanes",
-                        "Quote an all-in shipment price with separately defined accessorials",
-                        "Maintain lane-specific carrier depth and documented pickup performance",
-                        "Decline unsupported pickup windows instead of buying speculative capacity",
-                    ],
-                    [
-                        "Refrigerated appointment desk serving regional food distribution centers",
-                        "Price transportation spread around temperature controls and appointment complexity",
-                        "Preserve written temperature instructions and receiver exception histories",
-                        "Escalate temperature deviations immediately and preserve available recorder evidence",
-                    ],
-                    [
-                        "Flatbed industrial desk serving machinery and fabricated steel shippers",
-                        "Quote shipment charges after dimensions and equipment requirements reconcile",
-                        "Build reliable carrier knowledge by equipment and securement capability",
-                        "Stop dispatch when dimensions change beyond the accepted equipment envelope",
-                    ],
-                    [
-                        "Port-drayage coordination desk serving importers with recurring container releases",
-                        "Separate linehaul assumptions from chassis storage and waiting charges",
-                        "Track terminal release readiness and free-time deadlines before dispatch",
-                        "Reschedule unreleased containers instead of accumulating avoidable dry-run charges",
-                    ],
-                    [
-                        "Time-critical recovery desk serving documented production interruption events",
-                        "Charge explicit expedited shipment prices with written response commitments",
-                        "Keep verified emergency capacity and reachable decision makers by shift",
-                        "Reject impossible transit promises and offer feasible recovery alternatives",
-                    ],
-                ],
-            },
-            "callout": {
-                "kind": "INSIDER PRO-TIPS",
-                "title": "Win the Exception Before Winning the Lane",
-                "body": (
-                    "Experienced desks sell a service envelope they can actually defend. "
-                    "Use these tactics before increasing tender volume."
-                ),
-                "items": [
-                    "Ask receivers which appointment errors cause rejection, then encode those conditions in the tender checklist.",
-                    "Keep a second verified carrier for each repeat lane; confirm real equipment availability before describing capacity as reserved.",
-                    "Record detention notice deadlines in the TMS so proof is gathered while the driver is still on site.",
-                    "Track spread per exception-adjusted desk hour, not only loads per employee or the cheapest carrier quote.",
-                ],
-            },
-        },
-        {
-            "heading": "2. Reconcile Gross Billings, Transportation Spread, Owner Profit, and Cash",
-            "epistemic_status": "illustrative_model",
-            "paragraphs": [
-                (
-                    "The scorecard deliberately uses gross shipper billings including carrier costs. Preserve that denominator "
-                    "when comparing its three cases, while keeping financial-statement presentation separate. Under the principal "
-                    "versus agent analysis in ASC 606, gross presentation depends on controlling the specified service before "
-                    "transfer; a broker's regulatory label or responsibility for collecting invoices does not alone settle "
-                    "that assessment. Where the entity is an agent, recognized revenue may instead be its net fee. Document "
-                    "the service promise, responsibility for fulfillment, pricing discretion, and relevant risk indicators "
-                    "with the reporting accountant. On the illustrative $2,000 shipment, a principal presentation could report "
-                    "$2,000 revenue and $1,700 purchased transportation; an agent presentation could report $300 revenue. "
-                    "Both can describe the same $300 pre-overhead economics, but their reported margin percentages differ. "
-                    "Neither presentation turns the cargo's $200,000 value into operator revenue. In the TMS and ledger, "
-                    "maintain separate fields for gross billings, carrier commitments, accessorials, credits, spread, and "
-                    "recognized revenue. Treat shipper deposits as obligations until the applicable performance conditions "
-                    "are met. Never advertise a larger business by adding cargo value, carrier payments, and brokerage fees "
-                    "together. A consistent bridge makes sales claims, management reports, and tax records easier to reconcile."
-                ),
-                (
-                    "The canonical annual cases are fixed: Conservative produces $1,000,000 gross billings and $30,000 owner "
-                    "net profit at 3%; Base produces $3,000,000 and $165,000 at 5.5%; Scaled produces $5,000,000 and $400,000 "
-                    "at 8%. The table supplies an illustrative transportation-cost bridge, not additional scorecard assumptions. "
-                    "Conservative can be modeled as 500 loads averaging $2,000, with $850,000 carrier costs and $120,000 "
-                    "remaining expenses. Base can be modeled as 1,000 loads averaging $3,000, with $2,520,000 carrier costs "
-                    "and $315,000 remaining expenses. Scaled can be modeled as 2,000 loads averaging $2,500, with $4,100,000 "
-                    "carrier costs and $500,000 remaining expenses. Subtraction yields exactly the required owner profits. "
-                    "The canonical teams remain three full-time people plus two contractors in Conservative and Base, and "
-                    "four full-time people plus three contractors in Scaled. Those headcounts are capacity assumptions, not "
-                    "proof that local compensation fits. Conservative's expense envelope is especially restrictive for three "
-                    "full-time workers. Price actual wages, benefits, software, insurance, borrowing, and losses before hiring; "
-                    "reject an infeasible budget instead of relabeling unpaid labor as automation. Owner compensation treatment "
-                    "must be explicit so the same earnings are not counted twice."
-                ),
-                (
-                    "Cash exposure grows before accounting profit becomes spendable. At Base, annual carrier purchases of "
-                    "$2,520,000 average approximately $6,904 per calendar day. If shippers pay 31 days after service and "
-                    "carriers receive payment after ten days, the simplified 21-day timing gap ties up approximately "
-                    "$144,986. This steady-state estimate excludes seasonality, disputed invoices, deposits, and reserves; "
-                    "use actual invoice cohorts rather than treating it as a credit facility quote. One late $40,000 "
-                    "shipper balance can consume months of owner earnings even while the income statement looks healthy. "
-                    "Set exposure limits using open receivables plus delivered-unbilled work and committed loads, less "
-                    "applicable deposits. The stated startup capital range is $15,000 to $80,000, with first deals "
-                    "typically modeled at two to six months. The stated monthly operating range is $6,000 to $30,000, "
-                    "but the illustrative Scaled residual expense envelope averages $41,667 monthly and therefore exceeds "
-                    "that range when all noncarrier costs are included. Make that expansion visible. A $75,000 BMC-84 "
-                    "surety bond is not a $75,000 spendable reserve; premiums, collateral, indemnity, and claim exposure "
-                    "depend on underwriting. A BMC-85 trust uses qualifying assets and also cannot substitute for cash "
-                    "needed to pay carriers."
-                ),
-            ],
-            "table": {
-                "caption": "Canonical Owner-Profit Reconciliation with Explicitly Illustrative Cost Bridges",
-                "headers": [
-                    "Scenario or accounting control",
-                    "Billing and purchased transportation calculation",
-                    "Expense and owner-profit reconciliation",
-                    "Staffing or operating interpretation",
-                ],
-                "rows": [
-                    [
-                        "Conservative canonical case with three full-time people and two contractors",
-                        "500 loads times $2,000 equals $1,000,000; carrier costs total $850,000",
-                        "$150,000 spread less $120,000 expenses equals $30,000 owner profit",
-                        "Three percent margin uses gross billings; validate compensation affordability locally",
-                    ],
-                    [
-                        "Base canonical case with three full-time people and two contractors",
-                        "1,000 loads times $3,000 equals $3,000,000; carrier costs total $2,520,000",
-                        "$480,000 spread less $315,000 expenses equals $165,000 owner profit",
-                        "Five point five percent margin requires disciplined collections and exceptions",
-                    ],
-                    [
-                        "Scaled canonical case with four full-time people and three contractors",
-                        "2,000 loads times $2,500 equals $5,000,000; carrier costs total $4,100,000",
-                        "$900,000 spread less $500,000 expenses equals $400,000 owner profit",
-                        "Eight percent margin assumes seven people and expanded expense capacity",
-                    ],
-                    [
-                        "Principal-versus-agent accounting bridge for one illustrative completed shipment",
-                        "Shipper charge totals $2,000 while carrier commitment totals $1,700",
-                        "Economic transportation spread remains $300 before the remaining operating expenses",
-                        "Recognized revenue presentation follows documented control assessment rather than marketing preference",
-                    ],
-                    [
-                        "Base carrier-payment timing bridge before reserves and seasonal adjustment",
-                        "$2,520,000 divided by 365 days equals approximately $6,904 daily purchases",
-                        "Twenty-one days of timing exposure requires approximately $144,986 working capital",
-                        "Use actual collection cohorts and carrier terms to size liquidity",
-                    ],
-                    [
-                        "Base sensitivity test for one incremental uncollectible shipper balance",
-                        "Assume $40,000 becomes fully uncollectible after the modeled expense baseline",
-                        "$165,000 baseline owner profit falls to $125,000 without offsetting recoveries",
-                        "Incremental loss is a stress test rather than revised canonical earnings",
-                    ],
-                ],
-            },
-        },
-        {
-            "heading": "3. Choose a Sub-Vertical and Build Evidence Against Fraud and Claims",
-            "epistemic_status": "operating_framework",
-            "paragraphs": [
-                (
-                    "The sub-vertical matrix compares operating burdens rather than promising that a platform creates demand. "
-                    "All fee descriptions are commercial structures, not current vendor quotations. DAT One, Truckstop, "
-                    "Dray Alliance, and other named systems serve different market functions; their inclusion does not "
-                    "establish an integration, endorsement, or entitlement to capacity. Use a TMS such as AscendTMS or "
-                    "Tai to preserve the accepted rate confirmation, carrier identity evidence, pickup events, delivery "
-                    "documents, and accessorial approvals in one shipment record. Refrigerated food requires attention to "
-                    "21 CFR Part 1, Subpart O where applicable, including clearly allocated sanitary transportation "
-                    "responsibilities. Oversize freight requires route-specific permits and accurate dimensions rather than "
-                    "a generic flatbed checkbox. Intermodal and drayage add terminal and equipment clocks that can overwhelm "
-                    "a desk accustomed to ordinary truckload shipments. Before entering a vertical, replay ten realistic "
-                    "exceptions and identify who can decide, who must be contacted, and what evidence preserves payment. "
-                    "If a customer cannot supply commodity details, receiving restrictions, or a claims contact, price "
-                    "the additional work or decline. A durable small team narrows uncertainty before dispatch instead "
-                    "of hiring people to chase preventable problems afterward. Measure success by retained spread after "
-                    "credits, claims handling, and collection effort."
-                ),
-                (
-                    "Carrier fraud defense is an evidence chain, not a purchased green badge. Check authority and insurance "
-                    "filings through FMCSA Licensing and Insurance, and use SAFER for available identification and safety "
-                    "information without treating either database as proof that the person emailing owns the carrier. "
-                    "Highway or RMIS can support onboarding and monitoring, but investigate inconsistencies in telephone "
-                    "numbers, email domains, authority history, banking instructions, equipment, and location. Call a "
-                    "previously verified number when payment details change; never rely solely on the replacement number "
-                    "provided in that same request. Confirm insurance through the issuing agent using independently "
-                    "established contact information and examine exclusions relevant to the commodity. For the actual "
-                    "pickup, reconcile the dispatched carrier, driver, tractor, trailer, and facility check-in information. "
-                    "Unexpected substitutions require resolution before freight release. Distinguish disclosed, authorized "
-                    "co-brokerage arrangements from concealed rebrokering, identity theft, or unauthorized assignment; "
-                    "contract labels alone cannot establish what happened. Preserve original messages and timestamps when "
-                    "a discrepancy appears, suspend the tender or payment change, and use verified shipper and carrier "
-                    "contacts to resolve it. A low rate that cannot survive identity verification is a rejected quote, "
-                    "not a procurement achievement."
-                ),
-                (
-                    "Claims and payment disputes require the same disciplined separation of obligations. The Carmack framework "
-                    "in 49 U.S.C. § 14706 principally addresses covered carrier liability; a broker's exposure can also "
-                    "arise from its contracts, representations, and conduct. Do not assume a carrier cargo policy pays "
-                    "every loss, that a certificate proves the relevant coverage, or that a customer may automatically "
-                    "deduct any claimed amount from unrelated invoices. Record the bill of lading, proof of delivery, "
-                    "seal history, photographs, temperature data where relevant, and contemporaneous exception notices. "
-                    "For covered carrier claims, 49 CFR Part 370 sets processing requirements, while contractual claim "
-                    "periods must respect applicable statutory limits. Keep the freight invoice, carrier payable, and "
-                    "claim ledger distinct so disputed recovery does not disappear inside a rate adjustment. For invoice "
-                    "reconciliation, match the accepted shipper quote and carrier rate confirmation against delivery "
-                    "evidence and authorized accessorials. A $250 detention charge with no arrival record and no contractual "
-                    "basis is not collectible simply because the carrier billed it. Shipment tracking should prompt "
-                    "action when milestones fail, not produce a decorative map. Assign an exception owner and a "
-                    "deadline, then measure resolution time, credit frequency, and cash recovery by lane and customer."
-                ),
-            ],
-            "table": {
-                "caption": "Sixteen Freight Sub-Verticals: Named Platforms, Fee Structures, Moats, and Reversal Triggers",
-                "headers": [
-                    "Sub-vertical and relevant named platform",
-                    "Commercial fee structure and cost boundary",
-                    "Repeatable small-team moat and required evidence",
-                    "Credit, claim, or failure trigger and fallback",
-                ],
-                "rows": [
-                    [
-                        "Regional dry-van replenishment using DAT One for capacity discovery",
-                        "All-in shipment rate less carrier purchase creates transportation spread",
-                        "Repeat pickup calendars and reliable backup carriers reduce sourcing time",
-                        "Missed pickup triggers negotiated service credits; activate verified alternate capacity",
-                    ],
-                    [
-                        "Refrigerated grocery deliveries using FourKites for supported shipment visibility",
-                        "Shipment spread must cover monitoring and separately agreed waiting charges",
-                        "Temperature instructions and receiver appointment histories protect service execution",
-                        "Temperature disputes threaten payment; preserve recorder data and escalate immediately",
-                    ],
-                    [
-                        "Produce spot movements using Truckstop for equipment and lane discovery",
-                        "Seasonal spot pricing requires explicit detention and rejection handling terms",
-                        "Origin inspection records and rapid receiver communication reduce disputed narratives",
-                        "Quality rejection can erase spread; document condition and coordinate disposition",
-                    ],
-                    [
-                        "Flatbed steel movements using DAT One for specialized capacity discovery",
-                        "Per-load spread reflects dimensions tarping requirements and equipment scarcity",
-                        "Accurate loading specifications and qualified carrier depth improve repeat performance",
-                        "Incorrect dimensions cause equipment failure; obtain revised measurements before dispatch",
-                    ],
-                    [
-                        "Oversize machinery movements using ProMiles for route planning support",
-                        "Quote transportation and permit-related charges under explicitly allocated responsibilities",
-                        "Route feasibility documentation and specialist carrier relationships protect execution quality",
-                        "Permit mismatch stops movement; revise routing before accepting the tender",
-                    ],
-                    [
-                        "Port container drayage using eModal for supported terminal appointment workflows",
-                        "Separate transportation charges from chassis waiting and documented terminal charges",
-                        "Release checks and free-time calendars prevent avoidable container handling costs",
-                        "Missing release creates dry runs; reschedule before dispatching the tractor",
-                    ],
-                    [
-                        "Import drayage procurement using Dray Alliance for platform-supported capacity access",
-                        "Compare quoted movement charges against excluded waiting and equipment expenses",
-                        "Customer-specific release workflows and responsive exception handling protect contribution",
-                        "Platform availability does not prove release readiness; verify terminal conditions independently",
-                    ],
-                    [
-                        "Intermodal truck coordination using Railinc for authorized rail information access",
-                        "Price truck segments separately from rail and equipment obligations",
-                        "Interchange event records and appointment sequencing reduce missed connections",
-                        "Rail delay causes storage exposure; notify customers and revise appointments",
-                    ],
-                    [
-                        "Less-than-truckload coordination using SMC3 for contracted rating workflow support",
-                        "Sell shipment charges with explicit classification and accessorial assumptions",
-                        "Accurate commodity dimensions and classification records prevent avoidable rebilling",
-                        "Reclassification reverses expected spread; collect shipment measurements before quoting",
-                    ],
-                    [
-                        "Retail appointment freight using project44 for supported milestone visibility",
-                        "Transportation spread must account for appointment labor and contractual service credits",
-                        "Receiver-specific scheduling rules and timely escalation improve repeat acceptance",
-                        "Late arrival creates chargeback exposure; document cause and request mitigation",
-                    ],
-                    [
-                        "Automotive production recovery using MacroPoint for supported vehicle location tracking",
-                        "Expedited shipment pricing reflects actual equipment and reachable response coverage",
-                        "Verified emergency carriers and fast decision paths reduce recovery uncertainty",
-                        "Impossible transit commitments create disputes; offer documented feasible delivery alternatives",
-                    ],
-                    [
-                        "Parcel overflow truckloads using AscendTMS for shipment and document coordination",
-                        "Per-trailer shipment pricing requires explicit volume and cutoff assumptions",
-                        "Facility handoff knowledge and trailer availability stabilize seasonal overflow execution",
-                        "Volume cancellations strand purchased capacity; require clear cancellation cost terms",
-                    ],
-                    [
-                        "Construction material deliveries using Truckstop for regional flatbed carrier discovery",
-                        "Shipment pricing separates unloading equipment and permitted waiting time charges",
-                        "Jobsite access records and unloading contact reliability reduce failed deliveries",
-                        "Site closure creates redelivery expense; confirm readiness before final dispatch",
-                    ],
-                    [
-                        "High-value electronics transport using Highway for carrier onboarding support",
-                        "Risk-sensitive shipment pricing includes required security procedures and verified coverage",
-                        "Pickup identity controls and tightly managed route exceptions protect custody",
-                        "Identity mismatch signals theft exposure; stop release and independently verify",
-                    ],
-                    [
-                        "Packaged chemical freight using RMIS for carrier credential workflow support",
-                        "Quote only after classification equipment and applicable transport requirements reconcile",
-                        "Documented commodity screening and qualified carrier selection reduce unsuitable assignments",
-                        "Misdeclared hazardous material requires suspension and specialist review before movement",
-                    ],
-                    [
-                        "Reverse logistics truckloads using Tai TMS for document and exception workflows",
-                        "Per-load pricing defines sorting waiting and rejected-return responsibilities explicitly",
-                        "Return authorization matching and delivery evidence reduce credit disputes",
-                        "Unmatched returned goods delay settlement; resolve authorization before accepting freight",
-                    ],
-                ],
-            },
-            "sop_steps": [
-                {
-                    "step": 1,
-                    "title": "Qualify the shipper and shipment",
-                    "action": "Confirm the payer, exposure limit, commodity, equipment, appointments, and service exclusions.",
-                    "detail": "Create the shipment only after the commercial terms and required cargo information are recorded.",
-                },
-                {
-                    "step": 2,
-                    "title": "Verify the carrier and actual pickup",
-                    "action": "Reconcile authority, relevant coverage, verified contacts, equipment, and facility check-in information.",
-                    "detail": "Resolve substitutions or payment-detail changes through independently established contacts before proceeding.",
-                },
-                {
-                    "step": 3,
-                    "title": "Monitor milestones and preserve exceptions",
-                    "action": "Assign an owner to late arrivals, tracking gaps, temperature deviations, and accessorial requests.",
-                    "detail": "Save timestamps, notices, approvals, and supporting documents while the event remains observable.",
-                },
-                {
-                    "step": 4,
-                    "title": "Reconcile documents and collect",
-                    "action": "Match quotes, rate confirmations, delivery evidence, invoices, credits, and carrier commitments.",
-                    "detail": "Keep claim recovery separate from freight settlement and update customer exposure before accepting another load.",
-                },
-            ],
-        },
-        {
-            "heading": "4. Launch Only When Acquisition, Authority, and Liquidity Survive a Stress Test",
-            "epistemic_status": "operating_framework",
-            "paragraphs": [
-                (
-                    "The supplied cross-sector play, public_filing_trigger_mail_arbitrage, uses daily Secretary of State new-LLC "
-                    "filings and County Recorder deed or mortgage recordings as commercial timing signals. It is not inherently "
-                    "a freight service and should not be forced into the brokerage ledger. For freight acquisition, a new "
-                    "industrial business or warehouse property transfer may justify a clearly branded private offer for "
-                    "shipping support, but a filing does not prove shipping volume, creditworthiness, or permission to "
-                    "contact every individual associated with it. Ingest only records available under applicable source "
-                    "terms, retain provenance, deduplicate entities and addresses, and suppress irrelevant residential "
-                    "records. Lob or PostGrid can support programmatic mailing after address quality and campaign content "
-                    "are checked. Do not transform public records into government-lookalike poster invoices or deed "
-                    "payment demands. 39 U.S.C. § 3001 addresses nonmailable matter, including specified deceptive bill-like "
-                    "solicitations and misleading governmental representations. California Business and Professions Code "
-                    "§ 17537.9 imposes requirements on covered recorded-document solicitations. Use unmistakable private "
-                    "commercial identity, actual offer terms, and a credible reason the recipient benefits. No seals, "
-                    "fabricated citation numbers, or payment-due styling should imply an official obligation. Keep a "
-                    "copy of each mailed version and its source cohort."
-                ),
-                (
-                    "An illustrative trigger-mail test sends 1,000 pieces at an assumed $1.10 all-in production and postage "
-                    "cost, spending $1,100 before data preparation and sales labor. If ten recipients respond and two "
-                    "become active shippers, mail-only acquisition cost is $550 per acquired shipper. If each ships "
-                    "four loads monthly at $200 transportation spread, the cohort generates $1,600 monthly spread before "
-                    "service costs and credit losses; neither response nor conversion is assured by the filing signal. "
-                    "At zero conversions, stop and diagnose targeting rather than scaling the spend. The original "
-                    "cross-sector mapping also supports genuine recurring workplace compliance subscriptions, property-tax "
-                    "appeal contingency offers, and exclusive new-mover or B2B lead monetization. Keep those distinct "
-                    "from freight brokerage economics and use qualified providers where representation rules require "
-                    "them. For example, a $240 annual subscription less $120 delivery cost and $60 acquisition cost "
-                    "leaves $60 before shared overhead. A properly structured 25% appeal contingency on $4,000 realized "
-                    "tax savings yields $1,000, subject to the contract and jurisdiction's representation rules. Selling "
-                    "twenty genuinely exclusive leads at $75 yields $1,500 before acquisition costs and refunds. The "
-                    "fallback is a useful, clearly private service, never an official-looking demand for payment."
-                ),
-                (
-                    "Before launch, verify active FMCSA property-broker authority, required process-agent designation, and the "
-                    "$75,000 financial security required under 49 U.S.C. § 13906 and 49 CFR § 387.307. Confirm the "
-                    "current security provider, asset eligibility where relevant, reporting obligations, and procedures "
-                    "if available security falls below the required amount; filing paperwork does not establish that "
-                    "authority remains active. Maintain broker transaction records required by 49 CFR § 371.3, including "
-                    "compensation and relevant freight-charge information, and address the rule's party-review provisions "
-                    "in the operating process. Start with one geography and equipment type, a documented shipper credit "
-                    "limit, and verified primary and alternate carriers. Run a simulated late pickup, changed bank "
-                    "account, cargo rejection, and overdue invoice before increasing volume. Automation should match "
-                    "loads, surface shipment exceptions, and reconcile invoices while preserving evidence and accountable "
-                    "human decisions. It should not release freight to an unresolved identity or keep selling into "
-                    "exhausted customer credit. Review weekly spread, cash exposure, claims, and after-hours workload "
-                    "together. The 85/100 score reflects real capital and labor intensity: the opportunity improves "
-                    "when repeatability lowers exception cost, not when gross billings are mistaken for wealth or "
-                    "contractor headcount is hidden."
-                ),
-            ],
-            "table": {
-                "caption": "Six Pre-Launch Evidence Tests for Authority, Acquisition, Fraud, and Cash",
-                "headers": [
-                    "Verification test and responsible operator",
-                    "Evidence required before committing resources",
-                    "Quantified boundary or statutory operating requirement",
-                    "Failure response and retained audit evidence",
-                ],
-                "rows": [
-                    [
-                        "Authority owner checks registration before accepting brokerage shipments",
-                        "Current FMCSA authority status and required process-agent filing records",
-                        "Maintain $75,000 broker financial security under the applicable federal requirements",
-                        "Do not accept regulated brokerage work while required authority is inactive",
-                    ],
-                    [
-                        "Treasury owner reconciles cash capacity before increasing customer exposure",
-                        "Receivables aging plus unbilled work and open carrier commitments",
-                        "Base timing illustration requires approximately $144,986 before additional reserves",
-                        "Reduce tenders or obtain committed liquidity before expanding payment obligations",
-                    ],
-                    [
-                        "Carrier desk tests identity controls before releasing valuable freight",
-                        "Independently verified contacts and matched driver tractor and trailer details",
-                        "Unresolved substitutions prevent freight release regardless of quoted rate savings",
-                        "Pause dispatch and retain original messages plus verification call records",
-                    ],
-                    [
-                        "Billing owner tests evidence quality before issuing customer invoices",
-                        "Accepted quotes delivery records and written accessorial support remain linked",
-                        "Unsubstantiated $250 detention requests remain disputed rather than automatic receivables",
-                        "Request missing evidence and separate the dispute from unrelated charges",
-                    ],
-                    [
-                        "Acquisition owner limits the first public-record mailing experiment",
-                        "Source provenance private branding address checks and campaign cohort identifiers",
-                        "Illustrative 1,000-piece test spends $1,100 before labor and data costs",
-                        "Stop expansion after zero conversions and inspect targeting before another test",
-                    ],
-                    [
-                        "Operations owner rehearses claim and outage escalation before scaling",
-                        "Named contacts alternate carriers document retention and manual tracking procedures",
-                        "Every live shipment receives an accountable exception owner and deadline",
-                        "Reduce accepted volume when desk coverage cannot support promised service",
-                    ],
-                ],
-            },
-            "callout": {
-                "kind": "OPERATOR GATE",
-                "title": "Four Checks Before Accepting the First Live Tender",
-                "body": (
-                    "Proceed only when the evidence supports the actual shipment promise. "
-                    "A software subscription or signed sales agreement cannot replace these checks."
-                ),
-                "items": [
-                    "Verify active FMCSA authority, required process-agent designation, and effective $75,000 bond or trust security using current official records.",
-                    "Approve the customer's documented credit limit against receivables, unbilled shipments, open commitments, and available carrier-payment liquidity.",
-                    "Confirm carrier identity, applicable coverage, equipment fit, pickup identity procedures, and a verified fallback carrier for the selected lane.",
-                    "Rehearse pickup failure, tracking loss, cargo exception, and invoice dispute handling with named owners and retrievable shipment evidence.",
-                ],
-            },
-        },
-    ],
-    "pull_quote": "A durable freight broker owns the exception process, not the truck and not the cargo's value.",
-    "diagram_id": "diag-01",
-    "action_checklist": [
-        "Select one freight archetype, one equipment class, and a repeatable lane cluster; document the shipments the desk will decline.",
-        "Build separate ledger fields for gross shipper billings, purchased transportation, spread, credits, claims, and recognized revenue.",
-        "Reconcile all three canonical owner-profit cases and replace illustrative expense assumptions with actual compensation and vendor quotations.",
-        "Verify authority, financial security, carrier identity controls, and relevant insurance evidence before accepting live tenders.",
-        "Model carrier-payment exposure from actual collection cohorts and set customer limits that include unbilled and committed shipments.",
-        "Run a capped, clearly private trigger-mail test only with documented source terms, relevant targeting, and independently measured acquisition economics.",
-    ],
-    "statutory_citations": [
-        {
-            "title": "49 U.S.C. § 13102(2) — Definition of broker",
-            "url": "https://www.law.cornell.edu/uscode/text/49/13102",
-            "relevance": "Defines the compensated transportation-arrangement role and distinguishes the broker function from carrier activity.",
-        },
-        {
-            "title": "49 U.S.C. § 13904 — Registration of brokers",
-            "url": "https://www.law.cornell.edu/uscode/text/49/13904",
-            "relevance": "Establishes the federal registration framework for brokers subject to the statute.",
-        },
-        {
-            "title": "49 U.S.C. § 13906(b) — Broker financial security",
-            "url": "https://www.law.cornell.edu/uscode/text/49/13906",
-            "relevance": "Provides the statutory framework for the $75,000 broker bond or trust requirement.",
-        },
-        {
-            "title": "49 CFR § 387.307 — Property broker surety bond or trust fund",
-            "url": "https://www.ecfr.gov/current/title-49/section-387.307",
-            "relevance": "Sets implementing requirements for broker financial security, including applicable maintenance and provider obligations.",
-        },
-        {
-            "title": "49 CFR § 366.4 — Process agents",
-            "url": "https://www.ecfr.gov/current/title-49/section-366.4",
-            "relevance": "Addresses process-agent designations required of covered carriers, brokers, and freight forwarders.",
-        },
-        {
-            "title": "49 CFR § 371.3 — Records to be kept by brokers",
-            "url": "https://www.ecfr.gov/current/title-49/section-371.3",
-            "relevance": "Specifies transaction records, retention requirements, and transaction-party rights to review relevant records.",
-        },
-        {
-            "title": "49 U.S.C. § 14706 — Liability of carriers under receipts and bills of lading",
-            "url": "https://www.law.cornell.edu/uscode/text/49/14706",
-            "relevance": "Establishes the covered carrier cargo-liability framework and limits on contractual claim and suit periods.",
-        },
-        {
-            "title": "49 CFR Part 370 — Processing of loss and damage claims",
-            "url": "https://www.ecfr.gov/current/title-49/subtitle-B/chapter-III/subchapter-B/part-370",
-            "relevance": "Provides requirements for covered carrier claim investigation, acknowledgment, disposition, and related records.",
-        },
-        {
-            "title": "21 CFR Part 1, Subpart O — Sanitary transportation of human and animal food",
-            "url": "https://www.ecfr.gov/current/title-21/chapter-I/subchapter-A/part-1/subpart-O",
-            "relevance": "Defines applicable sanitary transportation duties, including responsibilities that must be allocated in covered food movements.",
-        },
-        {
-            "title": "39 U.S.C. § 3001 — Nonmailable matter",
-            "url": "https://www.law.cornell.edu/uscode/text/39/3001",
-            "relevance": "Addresses specified deceptive bill-like solicitations and misleading representations of governmental connection in mailed matter.",
-        },
-        {
-            "title": "California Business and Professions Code § 17537.9 — Recorded-document solicitations",
-            "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=17537.9.&lawCode=BPC",
-            "relevance": "Imposes requirements on covered solicitations offering copies of recorded documents, directly relevant to deed-trigger mailing campaigns.",
-        },
-    ],
-}
+CHAPTER_1 = {'id': 'Q1',
+ 'chapter_id': 'Q1',
+ 'chapter_number': 1,
+ 'question_number': 1,
+ 'slug': 'freight-brokerage-business-case-launch-roadmap',
+ 'question_prompt': 'Is freight brokerage worth starting, what does it actually earn, and what training, '
+                    'plan and software do I need to go from zero to my first load?',
+ 'kicker': 'Q1 / THE BIG MONEY PLAYBOOKS',
+ 'title': 'The Business Case and Launch Roadmap',
+ 'subtitle': 'Why brokerage beats other startups, owner economics and gross margin vs. take-home, business '
+             'planning, step-by-step training paths, bootcamp reviews, and onboarding a TMS (AscendTMS, '
+             'Rose Rocket)',
+ 'layout_template': 'opportunity_overview',
+ 'reading_time_minutes': 15,
+ 'executive_summary': 'Freight brokerage operators describe the business as a spread trade financed like a '
+                      "bank. You contract the shipper's rate, buy the truck cheaper, and fund the gap "
+                      'between quick-paying carriers and slow-paying shippers. Matt Krause prices '
+                      'authority, bond premium, BOC-3, UCR, LLC, and contingent cargo at roughly $2,500 to '
+                      '$4,500, and runs the whole tech stack near $300 a month. Victor Mason, Drew Taylor, '
+                      'and FreightBrokers agree that no degree or trucking background is required. They '
+                      'also agree that a narrow niche beats competing head-on with C.H. Robinson. Unit '
+                      'economics run $100 to $600 per load at 10 to 20 percent margin. The disagreements '
+                      'center on time to first revenue (weeks versus nine to twelve months), whether to '
+                      'work at a brokerage first, and whether factoring at 1.5 to 5 percent is a lifeline '
+                      'or a margin killer.',
+ 'key_metrics': [{'label': 'All-In Authority Startup Cost',
+                  'metric': 'All-In Authority Startup Cost',
+                  'value': '$2,500-$3,500 (up to $3,500-$4,500 with weaker credit)',
+                  'confidence': 'attributed_practitioner_claim',
+                  'context': 'Sum of the $300 FMCSA fee, BMC-84 premium, BOC-3, $46 UCR, LLC, and '
+                             'contingent cargo. Training costs are kept separate.',
+                  'source': 'Matt Krause ([afV63okbAMs @ 00:07:50])'},
+                 {'label': 'Monthly Tech Stack Burn',
+                  'metric': 'Monthly Tech Stack Burn',
+                  'value': '~$300/month',
+                  'confidence': 'attributed_practitioner_claim',
+                  'context': 'Load board ~$150, vetting tool $50-$100, TMS ~$25 or free, and phone $30. '
+                             'About two loads, or one $400-margin load, covers it.',
+                  'source': 'Matt Krause ([bP4Dnpd58PE @ 00:11:44])'},
+                 {'label': 'Blended Brokerage Margin',
+                  'metric': 'Blended Brokerage Margin',
+                  'value': '12-18% blended; 8-12% dry van; 20-25% specialized',
+                  'confidence': 'attributed_practitioner_claim',
+                  'context': 'Net revenue, or the spread, by freight type. A $50M gross operation equals a '
+                             '$7.5M business.',
+                  'source': 'MillionsExplained ([An8HIad4rIg @ 00:00:46])'},
+                 {'label': 'One-Shipper Owner Income',
+                  'metric': 'One-Shipper Owner Income',
+                  'value': '5 loads/week x $200 = $50,000/year in margin',
+                  'confidence': 'attributed_practitioner_claim',
+                  'context': 'Owner formula of loads times margin times weeks. Five such shippers produce '
+                             '$250K of margin, which is not a paycheck.',
+                  'source': 'Matt Krause ([VD-td9ERDAU @ 00:02:03])'}],
+ 'sections': [{'heading': '1. The Practitioner Consensus',
+               'paragraphs': ['Every operator here describes the same core trade. Victor Mason frames it '
+                              "as contracting the shipper's rate, subcontracting a trucker, and keeping "
+                              'the difference. He argues that shippers happily pay that margin because it '
+                              'is cheaper than staffing every lane themselves [M6mVy3VEVoY @ 00:01:24]. '
+                              'Matt Krause casts the broker as an “insurer of certainty” rather than a '
+                              'scalper: shippers are paying you to take the pain away, and the spread is '
+                              'the price of that certainty [bP4Dnpd58PE @ 00:02:18]. MillionsExplained '
+                              "sharpens the accounting: “Gross revenue isn't income.” The spread, "
+                              'typically a 12 to 18 percent blended margin, is the real business, so a $50 '
+                              'million gross operation is actually a $7.5 million business [An8HIad4rIg @ '
+                              '00:00:46]. The Finance Pro lands in the same zone. A $3,000 shipper load '
+                              'against a $2,400 carrier payment leaves a $600 spread, and DAT puts typical '
+                              'margin around 15 percent [29d2gRCN8Ng @ 00:01:30]. The same analyst adds '
+                              'that about $85 of every $100 billed flows straight through to the carrier, '
+                              'and if the shipper defaults, the broker still owes the truck. The operator '
+                              'carries the risk on the whole invoice while keeping only the sliver on top.',
+                              'On entry barriers, the consensus is that the gate is money and grit, not '
+                              'credentials. FreightBrokers lists low startup cost as advantage number one, '
+                              'needing only a laptop, phone, and internet, and stresses that no experience '
+                              'or test is required [9Yk3-F4z_xs @ 00:00:15]. Mason goes further. He says '
+                              'no trucking background or college degree is needed and that a degree “might '
+                              'even slow you down,” because sales experience builds the resilience and '
+                              'repetition the job demands [M6mVy3VEVoY @ 00:10:07]. The FreightBrokers '
+                              'seven-step walkthrough lays out a short licensing path: FMCSA application, '
+                              'bond, BOC-3, and UCR, with no exam [Huke-ZINzYA @ 00:02:25]. Krause puts '
+                              'hard numbers on it. He lists a $300 FMCSA filing fee, a $75,000 BMC-84 bond '
+                              'that is coverage rather than cost, a premium around $900 to $2,500 a year, '
+                              'BOC-3 at $20 to $100, UCR at $46, and an LLC at $100 to $300. That totals '
+                              'roughly $2,500 to $3,500, or $3,500 to $4,500 for weaker credit '
+                              '[afV63okbAMs @ 00:07:50]. He insists training costs be kept separate from '
+                              'that figure. The Finance Pro quotes bond premiums starting around $938 a '
+                              'year, inside the same band. Nobody argues the paperwork is what kills new '
+                              'brokers; they all point downstream to sales and cash.',
+                              'The third point of agreement is focus. Drew Taylor admits you cannot beat '
+                              'C.H. Robinson or Coyote on price. Instead he landed a fragile-goods '
+                              'manufacturer whose pain was damage claims and solved it with third-party '
+                              'cargo insurance at a higher rate. He kept that client 12 years for “well '
+                              'over half a million dollars in commissions” [xahcxGx0b30 @ 00:03:01]. The '
+                              'Freight Broker Boot Camp founder says he grew one niche, segmented by '
+                              'equipment, industry, geography, or a hybrid, into seven figures and '
+                              'eventually “well over 200 million dollars in sale” [Huke-ZINzYA @ '
+                              '00:02:57]. Krause tells new brokers to skip giants like Coca-Cola, which '
+                              'already have “500 brokers on a waiting list,” and to hunt shippers too '
+                              'small for C.H. Robinson [bP4Dnpd58PE @ 00:04:52]. He pegs that sweet spot '
+                              'at $5 million to $100 million in annual revenue. Retention is where the '
+                              'money compounds. Krause argues a shipper kept three years is “worth more '
+                              "than three new ones” [VD-td9ERDAU @ 00:06:11]. Taylor's framework needs "
+                              'only five clients worth $50,000 to $100,000 a year each, with no ads, '
+                              'social media, or funnels. Mason warns against trying every mode at once. '
+                              'The shared target is a narrow lane of mid-sized shippers with a specific '
+                              'headache you can own, worked deeply rather than widely.'],
+               'table': {'caption': 'Where the practitioners line up on the core business case',
+                         'headers': ['Consensus Point',
+                                     'What Practitioners Report',
+                                     'Operator Implication',
+                                     'Expert Source'],
+                         'rows': [['The broker sells the spread between two prices',
+                                   "Contract the shipper's rate, subcontract a trucker, and keep the "
+                                   'difference',
+                                   'Margin is cheaper for shippers than staffing every lane in-house',
+                                   'TunedinTony ([M6mVy3VEVoY @ 00:01:24])'],
+                                  ['Gross revenue is not income',
+                                   'A 12-18% blended margin means a $50M gross operation is a $7.5M '
+                                   'business',
+                                   'Judge every deal by the spread kept, never by the revenue billed',
+                                   'MillionsExplained ([An8HIad4rIg @ 00:00:46])'],
+                                  ['No credentials or test are required to start',
+                                   'No experience or test needed; a laptop, phone, and internet are enough '
+                                   'to operate',
+                                   'Sales resilience and daily repetition matter more than any trucking '
+                                   'background',
+                                   'FreightBrokers ([9Yk3-F4z_xs @ 00:03:03])'],
+                                  ['Authority costs fall in a known band',
+                                   '$2,500-$3,500 all in, rising to $3,500-$4,500 with bad credit',
+                                   'Budget training separately and build the list during the three-week '
+                                   'FMCSA wait',
+                                   'Matt Krause ([afV63okbAMs @ 00:07:50])'],
+                                  ['Pick one niche before expanding',
+                                   'One niche grew to seven figures, then to well over $200 million in '
+                                   'sales',
+                                   'Segment by equipment, industry, or geography first, then expand '
+                                   'deliberately',
+                                   'FreightBrokers ([Huke-ZINzYA @ 00:02:57])'],
+                                  ['Avoid the giant shippers entirely',
+                                   'Coca-Cola-type shippers already have 500 brokers on a waiting list',
+                                   'Hunt shippers too small for C.H. Robinson to service closely',
+                                   'Matt Krause ([bP4Dnpd58PE @ 00:04:52])'],
+                                  ['A few deep relationships carry the business',
+                                   'Five great clients at $50K-$100K a year each, with no ads, social, or '
+                                   'funnels',
+                                   'Relationships compound over time; one fragile-goods client lasted '
+                                   'twelve years',
+                                   'Drew Taylor ([xahcxGx0b30 @ 00:06:17])']]}},
+              {'heading': '2. Exact Street Mechanics, Tools & Numbers',
+               'paragraphs': ['Krause runs the launch as a strict filing order: LLC, then EIN, FMCSA, '
+                              'bond, BOC-3, UCR, and finally the bank account. He uses the roughly '
+                              'three-week FMCSA wait to build a 50-row prospect list instead of sitting '
+                              'idle [afV63okbAMs @ 00:08:21]. Drew Taylor learned why speed matters the '
+                              'hard way. Shippers screen on authority age, and a three-month-old authority '
+                              'gets told to call back next year, so he says to file early [xahcxGx0b30 @ '
+                              '00:00:13]. The tech stack is cheap. Krause budgets about $150 a month for a '
+                              'load board with 30-day rate history, $50 to $100 for a vetting tool showing '
+                              'FreightGuard reports, around $25 or free for a TMS, and $30 for a phone. '
+                              'That is roughly $300 a month, which two ordinary loads or one $400-margin '
+                              'load covers [bP4Dnpd58PE @ 00:11:44]. He is explicit that you never price '
+                              'lanes with ChatGPT or Gemini. AscendTMS shows a one-click button that posts '
+                              'a load to every connected load board, plus invoicing, sales commissions, '
+                              'and settlement sheets [zALRluYUGLI @ 00:01:21]. It also offers free live '
+                              "training daily at 2pm EST. Rose Rocket's case for a TMS is a single source "
+                              'of truth across quoting, dispatch, and invoicing, with an order bot that '
+                              'scans rate confirmations to book orders in seconds.',
+                              "Pricing mechanics are where the numbers get specific. Krause's first-load "
+                              'math takes a $1,550 load board rate, adds 10 percent, quotes $1,700, and '
+                              'keeps $150; three such loads a week is $450. His floor is at least $100 '
+                              'margin on a first load or you pass, and he raises markup to 12 to 15 '
+                              'percent over time [afV63okbAMs @ 00:21:29]. His heavy-hitter rule pushes '
+                              'past that. Dry-van commodity freight earns $50 to $100, so hitting $10,000 '
+                              'a month takes 100 loads. Steel coils billed at $2,500 can clear $400, '
+                              'needing only 25 loads to reach the same number [bP4Dnpd58PE @ 00:05:27]. In '
+                              'his owner-math breakdown he reduces income to “loads times margin times '
+                              'weeks.” On a $2,500 load, the margin tiers read 10 percent at $250, 15 '
+                              'percent at $375, and 20 percent at $500 [VD-td9ERDAU @ 00:02:40]. '
+                              'Ten-percent loads get bid out to six brokers; 20-percent loads are the '
+                              'Friday backup covers. MillionsExplained puts commodity dry van at 8 to 12 '
+                              'percent and specialized freight like hazmat or oversized at 20 to 25 '
+                              "percent [An8HIad4rIg @ 00:00:46]. The Finance Pro's break-even example "
+                              'divides $10,000 of monthly overhead by $200 a load. That means 50 loads a '
+                              'month before the owner earns anything.',
+                              "On the phone, the scripts are tight. Krause's gatekeeper line is “Hey, is "
+                              'Mike in the back?” and, if pressed, “regarding the trucks for next week.” '
+                              "He follows with the opener “I'm not calling to ask for loads today,” "
+                              'delivered with a chuckle. The goal is 50 companies accepting you as a '
+                              'backup broker [bP4Dnpd58PE @ 00:16:10]. In his start-to-first-load training '
+                              'he uses a doctor-frame opener asking for help with “a logistics related '
+                              'question.” He lets the shipper talk 70 percent and pauses two seconds '
+                              'before responding, at 35 to 50 touches a day full-time or 10 to 20 '
+                              "part-time [afV63okbAMs @ 00:13:21]. Taylor's alternative is “cold "
+                              'listening”: ask about pain points instead of pitching [xahcxGx0b30 @ '
+                              '00:03:27]. Krause also vets every carrier before tendering. He checks the '
+                              'SAFER snapshot for authorized status, a matching phone, more than zero '
+                              'trucks, and the grant date. He confirms liability of at least $750,000 by '
+                              'calling the agent on the COI. The carrier packet must come back from a '
+                              "company domain, not Gmail, with the driver's trailer number matching. Cash "
+                              'is the last mechanic. MillionsExplained counts factoring at 1.5 to 3 '
+                              'percent of the gross invoice, so a $50 fee on a $300 margin eats roughly 17 '
+                              'percent [An8HIad4rIg @ 00:05:24]. The fee is charged against the gross '
+                              'invoice, not your margin.'],
+               'table': {'caption': 'Launch mechanics, scripts, and unit economics as taught by '
+                                    'practitioners',
+                         'headers': ['Mechanic',
+                                     'Exact Numbers or Script',
+                                     'How Operators Use It',
+                                     'Expert Source'],
+                         'rows': [['Startup filing stack and sequence',
+                                   '$300 FMCSA fee, $46 UCR, $20-$100 BOC-3, $100-$300 LLC',
+                                   'File the LLC, EIN, FMCSA, bond, BOC-3, and UCR in that order, then '
+                                   'open the bank account',
+                                   'Matt Krause ([afV63okbAMs @ 00:08:21])'],
+                                  ['Monthly tech stack budget',
+                                   'Load board ~$150, vetting $50-$100, TMS ~$25 or free, phone $30',
+                                   'Total near $300 a month, covered by about two ordinary loads',
+                                   'Matt Krause ([bP4Dnpd58PE @ 00:11:44])'],
+                                  ['First-load quote math',
+                                   '$1,550 board rate plus 10 percent equals a $1,700 quote with $150 kept',
+                                   'Pass on anything below $100 margin; climb to a 12-15 percent markup '
+                                   'over time',
+                                   'Matt Krause ([afV63okbAMs @ 00:21:29])'],
+                                  ['High-low anchor quote',
+                                   'Market about $1,000; standard option $1,100; guaranteed option $1,250',
+                                   'Respond within five minutes and let the shipper choose a certainty '
+                                   'tier',
+                                   'Matt Krause ([bP4Dnpd58PE @ 00:23:31])'],
+                                  ['Owner income formula',
+                                   'Loads times margin times weeks; 5 loads x $200 = $50K per year',
+                                   'Five shippers at that pace produce $250K of margin, not a paycheck',
+                                   'Matt Krause ([VD-td9ERDAU @ 00:02:03])'],
+                                  ['Break-even load count',
+                                   '$10K monthly overhead divided by $200 per load equals 50 loads',
+                                   'Know the required monthly load count before adding payroll or office '
+                                   'spend',
+                                   'The Finance Pro ([29d2gRCN8Ng @ 00:04:04])'],
+                                  ['One-click load posting inside the TMS',
+                                   'A single button posts the load to all connected load boards at once',
+                                   'Cuts posting time; the accounting module handles invoices, '
+                                   'commissions, and settlements',
+                                   'AscendTMS - The Free (and Best) TMS Software ([zALRluYUGLI @ '
+                                   '00:01:21])']]},
+               'callout': {'kind': 'INSIDER PRO-TIPS',
+                           'title': 'Prospecting and posting edges new brokers skip',
+                           'body': 'These are the low-cost tactics operators use to find heavy-margin '
+                                   'shippers and pull carrier calls without buying lead lists or chasing '
+                                   'giant accounts.',
+                           'items': ['Satellite recon: on Google Maps, white rectangles mean lumber, gray '
+                                     'cylinders mean steel coils, and yellow shapes mean machinery. '
+                                     'Confirm signage and flatbeds or step decks with Street View [Matt '
+                                     'Krause — bP4Dnpd58PE @ 00:07:11].',
+                                     'Help-wanted hustle: look for 3+ dock doors with trailers, then a '
+                                     'careers page posting logistics openings, and star 50 rows before '
+                                     'dialing [Matt Krause — afV63okbAMs @ 00:11:21].',
+                                     'Load-board posts need “driver candy”: light, no tarp, quick pay, and '
+                                     'price shown. Leave the price blank when the rate is bad [Matt Krause '
+                                     '— bP4Dnpd58PE @ 00:25:04].',
+                                     'Lane imbalance pricing: Atlanta to Miami runs $2,000 while Miami to '
+                                     'Atlanta runs $800. Charge inbound rates on outbound Florida freight '
+                                     'and pair trucks for round trips [TunedinTony — M6mVy3VEVoY @ '
+                                     '00:14:26].']},
+               'sop_steps': [{'step': 1,
+                              'title': 'File authority early and in order',
+                              'action': 'Form the LLC, get the EIN, file FMCSA, bind the bond, then BOC-3, '
+                                        'UCR, and the bank account.',
+                              'detail': 'Krause sequences LLC, EIN, FMCSA, bond, BOC-3, UCR, then bank, at '
+                                        '$2,500-$3,500 all in [Matt Krause — afV63okbAMs @ 00:08:21]. '
+                                        'Taylor warns that shippers screen on authority age, so start the '
+                                        'clock as soon as possible [Drew Taylor — xahcxGx0b30 @ '
+                                        '00:00:13].'},
+                             {'step': 2,
+                              'title': 'Build a 50-company target list during the wait',
+                              'action': 'Use satellite recon and job postings to star 50 mid-sized '
+                                        'shippers in a secondary market.',
+                              'detail': 'Target shippers with $5M-$100M revenue that have 3+ dock doors '
+                                        'and logistics job openings [Matt Krause — afV63okbAMs @ '
+                                        '00:10:27]. Favor steel, lumber, and machinery yards in markets '
+                                        'like Tulsa, Gary, Birmingham, or Cleveland [Matt Krause — '
+                                        'bP4Dnpd58PE @ 00:07:11].'},
+                             {'step': 3,
+                              'title': 'Stand up the ~$300 monthly stack and TMS',
+                              'action': 'Subscribe to a load board with rate history, a vetting tool, a '
+                                        'TMS, and a business phone.',
+                              'detail': 'Budget about $150 for the load board, $50-$100 for vetting, ~$25 '
+                                        'or free for the TMS, and $30 for the phone [Matt Krause — '
+                                        'bP4Dnpd58PE @ 00:11:44]. In AscendTMS, enable broker/3PL '
+                                        'features, upload a logo, then connect load posting, factoring, '
+                                        'and tracking integrations [AscendTMS - The Free (and Best) TMS '
+                                        'Software — Q6QrQJDEvDc @ 00:00:14].'},
+                             {'step': 4,
+                              'title': 'Quote, vet, and tender the first load',
+                              'action': 'Quote board rate plus 10%, enforce a $100 floor, and run three '
+                                        'vetting checks before tendering.',
+                              'detail': 'Pass on any first load under $100 margin [Matt Krause — '
+                                        'afV63okbAMs @ 00:23:08]. Before tender, confirm SAFER status, a '
+                                        'matching phone, a nonzero truck count, and the grant date, then '
+                                        'verify $750,000 liability with the COI agent [Matt Krause — '
+                                        'afV63okbAMs @ 00:29:48].'}]},
+              {'heading': 'Where Practitioners Disagree & Alternative Playbooks',
+               'paragraphs': ['The sharpest split is over who should start and how fast money shows up. '
+                              'FreightBrokers sells the eleven-advantage pitch: no experience, no test, '
+                              "laptop and phone, and profits 'within their first few months or even "
+                              "sometimes weeks' [9Yk3-F4z_xs @ 00:03:33]. Victor Mason, on TunedinTony, "
+                              "goes further, saying a college degree 'might even slow you down' and that "
+                              'sales reps beat ex-drivers because they already carry resilience and '
+                              'repetition [M6mVy3VEVoY @ 00:11:06]. Review By Maverick takes the opposite '
+                              "line after dissecting Dennis Brown's bootcamp page: work for a brokerage "
+                              'first since you need proof, and budget six months to a year before results '
+                              "[i2KiR_LCj-Q @ 00:08:11]. Drew Taylor's own clock lands closer to "
+                              "Maverick's than to the brochure. Taylor filed authority, then spent nine "
+                              'months screened out on authority age: credit cards by month six, a third '
+                              'missed mortgage payment in month seven, and Wells Fargo foreclosure letters '
+                              'by month eight [xahcxGx0b30 @ 00:01:06]. On licensing, both camps agree '
+                              'there is no test to pass. On revenue lag, every practitioner who disclosed '
+                              'a personal timeline describes months of dead air before a meaningful '
+                              'commission check finally lands on the desk.',
+                              'Margin philosophy splits even inside one channel. In the 2026 training, '
+                              'Matt Krause sells the heavy-hitter rule: dry-van commodity freight nets '
+                              'about $50 to $100, so a $1,200 load paying the truck $1,100 needs 100 loads '
+                              'to reach $10K a month, while a $2,500 steel-coil load clearing $400 gets '
+                              'there in 25 [bP4Dnpd58PE @ 00:05:27]. The 2027 start-to-first-load version '
+                              'switches to a percentage playbook: take the load board rate of $1,550, add '
+                              '10 percent, quote $1,700, keep $150, refuse anything under a $100 '
+                              'first-load floor, and climb to 12 to 15 percent over time [afV63okbAMs @ '
+                              '00:21:29]. MillionsExplained frames the spread as a blended 12 to 18 '
+                              'percent, with commodity dry van such as LA to Dallas stuck at 8 to 12 '
+                              'percent and hazmat, pharma reefer, and oversized freight earning 20 to 25 '
+                              "percent [An8HIad4rIg @ 00:00:46]. Krause's owner-math video lays the camps "
+                              'side by side by tier: on a $2,500 load, 10 percent is $250 and gets bid out '
+                              'to six brokers, while 20 percent is $500 and only shows up as the Friday '
+                              'backup cover [VD-td9ERDAU @ 00:02:40]. Fixed-dollar targeting fits steel, '
+                              'lumber, and machinery yards; percentage pricing fits standard pallet '
+                              'freight quoted off the board.',
+                              'Financing the float is the third fault line. FreightBrokers treats '
+                              'factoring as step six of the launch: shippers pay in 45 to 60 days, '
+                              'carriers expect about 30 days or sooner, so factor for one to two years and '
+                              'then graduate to a bank line [Huke-ZINzYA @ 00:08:08]. Matt Krause accepts '
+                              'factoring at 2 to 3 percent but insists on non-recourse, roughly 1 percent '
+                              'more, and tells operators to read the NOA release clause before signing '
+                              '[bP4Dnpd58PE @ 00:32:40]. MillionsExplained attacks the fee structure '
+                              'itself: factors charge 1.5 to 3.0 percent of the gross invoice, not the '
+                              'margin, so a $50 fee on a $300 spread consumes about 17 percent of profit, '
+                              'and the factor files a UCC-1 blanket lien on top [An8HIad4rIg @ 00:05:24]. '
+                              'The Finance Pro prices quick pay and factoring even higher at 2 to 5 '
+                              'percent, where 3 percent on $2,400 costs $72, and separately tells owners '
+                              'to forecast cash weekly [29d2gRCN8Ng @ 00:07:14]. Carrier terms split as '
+                              "well: Krause's float math pays trucks in 2 days on quick pay or 21 days "
+                              'standard, MillionsExplained cites carrier expectations of 2 to 14 days, and '
+                              'FreightBrokers assumes roughly 30, which sets how much cash a new desk must '
+                              'front.'],
+               'table': {'caption': 'Competing launch playbooks taught by freight brokerage practitioners',
+                         'headers': ['Decision Point Before Launch',
+                                     'Playbook A',
+                                     'Playbook B',
+                                     'Expert Source'],
+                         'rows': [['Experience barrier before taking a first shipper',
+                                   'No experience and no test; laptop, phone, and profits within the first '
+                                   'few months or weeks',
+                                   'Work for a brokerage first because you need proof, then budget six '
+                                   'months to a year',
+                                   'FreightBrokers ([9Yk3-F4z_xs @ 00:03:33]); Review By Maverick '
+                                   '([i2KiR_LCj-Q @ 00:04:14])'],
+                                  ['Margin targeting on each booked load',
+                                   'Fixed-dollar heavy hitters: steel coils clearing $400 versus dry van '
+                                   'at $50 to $100',
+                                   'Percentage markup: board rate plus 10 percent with a $100 first-load '
+                                   'floor, rising to 12 to 15 percent',
+                                   'Matt Krause ([bP4Dnpd58PE @ 00:05:27]); Matt Krause ([afV63okbAMs @ '
+                                   '00:21:29])'],
+                                  ['Prospecting style on the first call',
+                                   "Gatekeeper script plus an 'I'm not calling to ask for loads today' "
+                                   'opener delivered with a chuckle',
+                                   'Cold listening beats cold calling: ask about pain points instead of '
+                                   'pitching anything',
+                                   'Matt Krause ([bP4Dnpd58PE @ 00:18:19]); Drew Taylor ([xahcxGx0b30 @ '
+                                   '00:03:27])'],
+                                  ['Growth target for the first years',
+                                   'Five great clients at $50K to $100K a year each, with no ads, social '
+                                   'media, or funnels',
+                                   'Scale through agents: 10 agents with three shippers each at 10 percent '
+                                   'send $750K to the brokerage',
+                                   'Drew Taylor ([xahcxGx0b30 @ 00:06:17]); Matt Krause ([VD-td9ERDAU @ '
+                                   '00:05:14])'],
+                                  ['Factoring as the answer to the float',
+                                   'Factor for one to two years while shippers pay in 45 to 60 days, then '
+                                   'move to a bank line',
+                                   'Fee hits the gross invoice, eating about 17 percent of a $300 margin, '
+                                   'plus a UCC-1 blanket lien',
+                                   'FreightBrokers ([Huke-ZINzYA @ 00:08:08]); MillionsExplained '
+                                   '([An8HIad4rIg @ 00:05:24])'],
+                                  ['Business planning horizon for a new desk',
+                                   'Standard pro forma growing 1.10x per year over five years with '
+                                   'variable costs scaled and fixed costs flat',
+                                   'ABC Z approach: plan only a few quarters or 12 months because '
+                                   'opportunities are unpredictable even to customers',
+                                   'Freight 360 ([XtDq2J8HLqY @ 00:01:06]); Freight 360 ([XtDq2J8HLqY @ '
+                                   '00:02:32])'],
+                                  ['Training route into the business',
+                                   'Self-paced online program pitched as under 30 days with no waiting for '
+                                   'the next class and no traveling',
+                                   'The seller is possibly making more money from selling the course, so '
+                                   'look for proof of sales first',
+                                   'Valerie Robfogel ([EhqxL4P0ZTc @ 00:00:31]); Review By Maverick '
+                                   '([i2KiR_LCj-Q @ 00:04:00])']]}},
+              {'heading': 'Firsthand Failure Modes, Traps & Economics Checks',
+               'paragraphs': ["The most expensive trap is the float. Matt Krause's math: carriers get paid "
+                              'in 2 days on quick pay or 21 days standard, while shippers pay net 30 or '
+                              '45, and giants like AB InBev or Heinz stretch to 90 to 100 days, so a desk '
+                              'running 10 loads a week is $40,000 out of pocket by week four [bP4Dnpd58PE '
+                              '@ 00:31:39]. MillionsExplained runs the same squeeze at scale: at $1M a '
+                              "month gross, about $850K must be funded, and a brokerage 'can double its "
+                              "volume, book record margins, and run out of money in the same quarter' "
+                              '[An8HIad4rIg @ 00:04:47]. The Finance Pro quantifies the growth trap: '
+                              'moving from $300K to $600K a month in billings adds roughly $255K in '
+                              'funding needs, which is why cash gets forecast weekly [29d2gRCN8Ng @ '
+                              "00:07:54]. Krause's owner-math video shows the trap biting firsthand: "
+                              'Krause walked away from a large award worth a few hundred thousand dollars '
+                              'per month because no one would fund the terms [VD-td9ERDAU @ 00:10:07]. '
+                              'Before chasing a big shipper, model the days between carrier payout and '
+                              'shipper payment, multiply by weekly volume, and confirm a funder will '
+                              'actually carry that gap.',
+                              'Double brokering is the failure mode Matt Krause ranks first, calling it '
+                              "'the number one thing that kills new freight brokers' and naming the "
+                              "culprit 'the chameleon' [afV63okbAMs @ 00:28:18]. The 2026 training "
+                              'describes a truck resold for $1,500 and lays out a four-step defense: check '
+                              'FreightGuard and virtual Delaware addresses, hang up and call back the '
+                              'FMCSA-registered number, call the driver for the truck number, and check '
+                              'the email domain [bP4Dnpd58PE @ 00:28:02]. Liability compounds the fraud '
+                              "risk. Victor Mason warns on TunedinTony that a broker is 'completely on the "
+                              "hook' and that a small shop carrying $100K in liability can be wiped out by "
+                              'a single $500K to $700K mistake [M6mVy3VEVoY @ 00:37:13]. The Finance Pro '
+                              'reports Montgomery v. C.H. Robinson, decided 9-0 on May 14, 2026, holding '
+                              'that the FAAAA does not preempt negligent-hiring claims against brokers '
+                              '[29d2gRCN8Ng @ 00:11:22]. On every new carrier, each load needs the SAFER '
+                              'snapshot showing authorized status and more than zero trucks, a call to the '
+                              'agent named on the COI confirming at least $750,000 liability, and a packet '
+                              'returned from a company email domain rather than Gmail before a rate '
+                              'confirmation goes out.',
+                              'The quieter failures are about effort aimed at the wrong target. Matt '
+                              'Krause admits that a purchased list called at 100 companies a day ended in '
+                              "burnout after six weeks, concluding 'the real problem was never effort' and "
+                              "'it didn't matter how good I sounded' when the list itself was wrong "
+                              '[afV63okbAMs @ 00:09:32]. The owner-math video names the general killer: '
+                              'new brokers skip daily touches for months and hide in busywork like fixing '
+                              'spreadsheet column widths [VD-td9ERDAU @ 00:07:18]. Victor Mason shows how '
+                              'a dedicated lane gets taken: a $1,000-per-load lane paying drivers $20 an '
+                              'hour yields $500 profit per truck per run until a broker undercuts with a '
+                              '$700 quote that saves the shipper $300 [M6mVy3VEVoY @ 00:25:31]. Drew '
+                              "Taylor's first load, a single pallet from Cleveland to Phoenix, 'barely "
+                              "covered my phone bill,' so even a won account starts thin [xahcxGx0b30 @ "
+                              '00:05:15]. The pattern across all four: work a narrow list, hit daily touch '
+                              'counts of 35 to 50 full-time or 10 to 20 part-time, and keep touching the '
+                              "same shippers for months, because Krause's owner math says a shipper kept "
+                              'three years is worth more than three new ones.'],
+               'table': {'caption': 'Firsthand traps, measured damage, and the countermeasures '
+                                    'practitioners teach',
+                         'headers': ['Failure Mode',
+                                     'What Happened or Was Measured',
+                                     'Countermeasure Taught',
+                                     'Expert Source'],
+                         'rows': [['Authority age screen-out by shippers',
+                                   'Shippers screened out a three-month-old authority; nine months of '
+                                   'rejection ended in foreclosure letters',
+                                   'File authority early and build the prospect list during the roughly '
+                                   'three-week waiting window',
+                                   'Drew Taylor ([xahcxGx0b30 @ 00:01:06]); Matt Krause ([afV63okbAMs @ '
+                                   '00:08:21])'],
+                                  ['Bond shortfall triggering authority suspension',
+                                   'Security dropping below $75K can trigger suspension; new enforcement '
+                                   'allows 7 business days to top up',
+                                   'Keep the $75,000 BMC-84 fully funded; Krause locked a $650 annual '
+                                   'premium for three years',
+                                   'Matt Krause ([afV63okbAMs @ 00:05:35]); The Finance Pro ([29d2gRCN8Ng '
+                                   '@ 00:08:50])'],
+                                  ['Float crunch while volume ramps up',
+                                   'Ten loads a week leaves a new broker $40,000 out of pocket by week '
+                                   'four',
+                                   'Factor non-recourse and ask red-lighted shippers for credit card or '
+                                   'ACH payment on delivery',
+                                   'Matt Krause ([bP4Dnpd58PE @ 00:31:39]); Matt Krause ([bP4Dnpd58PE @ '
+                                   '00:34:14])'],
+                                  ['Spot-market squeeze on a contracted rate',
+                                   'On a $3,000 load, carrier cost at $2,900 leaves $100, and at $3,100 '
+                                   'the spread goes negative',
+                                   'Know break-even: $10K monthly overhead divided by $200 per load '
+                                   'requires 50 loads a month',
+                                   'The Finance Pro ([29d2gRCN8Ng @ 00:04:42]); The Finance Pro '
+                                   '([29d2gRCN8Ng @ 00:04:04])'],
+                                  ['Negligent selection exposure on a bad carrier',
+                                   'Verdicts can exceed $10M while the carrier liability minimum sits at '
+                                   '$750K',
+                                   'Verify at least $750,000 liability by calling the insurance agent '
+                                   'listed on the COI',
+                                   'MillionsExplained ([An8HIad4rIg @ 00:10:17]); Matt Krause '
+                                   '([afV63okbAMs @ 00:30:25])'],
+                                  ['Customer concentration in one dominant shipper',
+                                   'More than 20 percent concentration in a single customer triggers a '
+                                   'valuation discount at sale',
+                                   'Protect retention across several shippers; one kept three years beats '
+                                   'three new ones',
+                                   'MillionsExplained ([An8HIad4rIg @ 00:11:27]); Matt Krause '
+                                   '([VD-td9ERDAU @ 00:06:11])'],
+                                  ['Underpricing to win the first load',
+                                   "Quoting super low and chasing shippers who only accept the truck's "
+                                   'rate leaves no margin',
+                                   'Hold a $100 first-load floor and stop quoting shippers who only accept '
+                                   "the truck's rate",
+                                   'Matt Krause ([afV63okbAMs @ 00:20:38]); Matt Krause ([afV63okbAMs @ '
+                                   '00:24:22])']]},
+               'callout': {'kind': 'OPERATOR GATE',
+                           'title': 'Four Checks Before Booking Load One',
+                           'body': 'Each check below maps to a loss, near-miss, or measured trap that '
+                                   'practitioners reported firsthand. Clear all four before a rate '
+                                   'confirmation goes out.',
+                           'items': ['Bond fully funded at $75,000, because a shortfall now gets 7 '
+                                     'business days to top up before authority is suspended [Matt Krause — '
+                                     'afV63okbAMs @ 00:05:35].',
+                                     'Funding for the float lined up in advance, because 10 loads a week '
+                                     'puts a new desk $40,000 out of pocket by week four [Matt Krause — '
+                                     'bP4Dnpd58PE @ 00:31:39].',
+                                     'Carrier passes the SAFER snapshot: authorized status, matching '
+                                     'phone, more than zero trucks, and a known authority grant date [Matt '
+                                     'Krause — afV63okbAMs @ 00:29:48].',
+                                     'Break-even known cold: $10K of monthly overhead at $200 per load '
+                                     'requires 50 loads a month before the owner earns anything [The '
+                                     'Finance Pro — 29d2gRCN8Ng @ 00:04:04].']}}],
+ 'pull_quote': 'A freight brokerage looks like a logistics company, but it behaves a lot more like a small '
+               'bank with a phone. Attributed to The Finance Pro (29d2gRCN8Ng @ 00:16:15).',
+ 'diagram_id': 'diag-01',
+ 'action_checklist': ['File in order: LLC, EIN, FMCSA, bond, BOC-3, UCR, then bank, and use the roughly '
+                      'three-week wait to build the list [Matt Krause — afV63okbAMs @ 00:08:21].',
+                      'Build 50 starred rows of $5M to $100M shippers using satellite recon for 3+ dock '
+                      'doors with trailers and careers pages with logistics openings [Matt Krause — '
+                      'afV63okbAMs @ 00:11:21].',
+                      'Pick one niche by equipment, industry, geography, or a hybrid, and expand only '
+                      'after it works [FreightBrokers — Huke-ZINzYA @ 00:02:57].',
+                      'Run cold listening instead of cold pitching: ask about pain points and have the '
+                      'solution researched before the yes [Drew Taylor — xahcxGx0b30 @ 00:03:27].',
+                      'Set up a TMS with one-click posting to every connected load board so loads go out '
+                      'from a single screen [AscendTMS - The Free (and Best) TMS Software — zALRluYUGLI @ '
+                      '00:01:21].',
+                      'At 10 loads a week, roughly $8K a month in gross profit, hire a VA for $800 to '
+                      '$1,200 a month; at 30 loads a week, hire a US junior agent [Matt Krause — '
+                      'bP4Dnpd58PE @ 00:35:07].'],
+ 'statutory_citations': [{'title': 'Matt Krause — Full 2027 Freight Broker Training (Start to First Load) '
+                                   '[00:28:18]',
+                          'url': 'https://www.youtube.com/watch?v=afV63okbAMs&t=1698s',
+                          'relevance': 'Primary practitioner testimony on double brokering as the top '
+                                       'killer of new brokers and the three-check carrier vetting '
+                                       'routine.'},
+                         {'title': 'MillionsExplained — The Economics of Owning a Freight Brokerage '
+                                   '[00:04:47]',
+                          'url': 'https://www.youtube.com/watch?v=An8HIad4rIg&t=287s',
+                          'relevance': 'Primary practitioner testimony on the float, factoring fees '
+                                       'against the gross invoice, and brokerages running out of cash '
+                                       'while growing.'},
+                         {'title': 'The Finance Pro — The Economics of Owning a Freight Brokerage '
+                                   '[00:16:15]',
+                          'url': 'https://www.youtube.com/watch?v=29d2gRCN8Ng&t=975s',
+                          'relevance': 'Primary practitioner testimony on the brokerage as a small bank '
+                                       'with a phone, growth-driven funding needs, and break-even math.'},
+                         {'title': 'Drew Taylor — How to Become a Freight Broker in 2026 What I Wish I '
+                                   'Knew After 9 Months of Rejection [00:01:06]',
+                          'url': 'https://www.youtube.com/watch?v=xahcxGx0b30&t=66s',
+                          'relevance': 'Primary practitioner testimony on authority-age rejection, the '
+                                       'nine-month revenue gap, and the personal financial fallout.'}],
+ 'source_citations': [{'source_type': 'video_pro_tip',
+                       'video_id': 'bP4Dnpd58PE',
+                       'title': 'Full 2026 Freight Broker Training To Go From $0-$1,000,000',
+                       'channel': 'Matt Krause',
+                       'author': 'Matt Krause',
+                       'text': 'So, we are chasing the steel, lumber, and machinery because it is 1/4 of '
+                               'the work for the same amount of money.',
+                       'tip': 'So, we are chasing the steel, lumber, and machinery because it is 1/4 of '
+                              'the work for the same amount of money.',
+                       'timestamp': 390,
+                       'timestamp_seconds': 390,
+                       'timestamp_label': '[00:06:30]',
+                       'url': 'https://www.youtube.com/watch?v=bP4Dnpd58PE&t=390s',
+                       'markdown': '[00:06:30](https://www.youtube.com/watch?v=bP4Dnpd58PE&t=390s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q1.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'afV63okbAMs',
+                       'title': 'Full 2027 Freight Broker Training (Start to First Load)',
+                       'channel': 'Matt Krause',
+                       'author': 'Matt Krause',
+                       'text': "The number matters less than who's on the list.",
+                       'tip': "The number matters less than who's on the list.",
+                       'timestamp': 817,
+                       'timestamp_seconds': 817,
+                       'timestamp_label': '[00:13:37]',
+                       'url': 'https://www.youtube.com/watch?v=afV63okbAMs&t=817s',
+                       'markdown': '[00:13:37](https://www.youtube.com/watch?v=afV63okbAMs&t=817s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q1.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'afV63okbAMs',
+                       'title': 'Full 2027 Freight Broker Training (Start to First Load)',
+                       'channel': 'Matt Krause',
+                       'author': 'Matt Krause',
+                       'text': 'Double brokering is the number one thing that kills new freight brokers.',
+                       'tip': 'Double brokering is the number one thing that kills new freight brokers.',
+                       'timestamp': 1698,
+                       'timestamp_seconds': 1698,
+                       'timestamp_label': '[00:28:18]',
+                       'url': 'https://www.youtube.com/watch?v=afV63okbAMs&t=1698s',
+                       'markdown': '[00:28:18](https://www.youtube.com/watch?v=afV63okbAMs&t=1698s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q1.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'M6mVy3VEVoY',
+                       'title': 'Freight Broker Secrets REVEALED: Victor Mason’s Blueprint for Work From '
+                                'Home Trucking Success',
+                       'channel': 'TunedinTony',
+                       'author': 'TunedinTony',
+                       'text': 'A small broker carrying $100K in liability can be wiped out by a $500,000 '
+                               'to $700,000 mistake.',
+                       'tip': 'A small broker carrying $100K in liability can be wiped out by a $500,000 '
+                              'to $700,000 mistake.',
+                       'timestamp': 2233,
+                       'timestamp_seconds': 2233,
+                       'timestamp_label': '[00:37:13]',
+                       'url': 'https://www.youtube.com/watch?v=M6mVy3VEVoY&t=2233s',
+                       'markdown': '[00:37:13](https://www.youtube.com/watch?v=M6mVy3VEVoY&t=2233s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q1.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'xahcxGx0b30',
+                       'title': 'How to Become a Freight Broker in 2026 What I Wish I Knew After 9 Months '
+                                'of Rejection',
+                       'channel': 'Drew Taylor',
+                       'author': 'Drew Taylor',
+                       'text': 'You just need like five great clients.',
+                       'tip': 'You just need like five great clients.',
+                       'timestamp': 377,
+                       'timestamp_seconds': 377,
+                       'timestamp_label': '[00:06:17]',
+                       'url': 'https://www.youtube.com/watch?v=xahcxGx0b30&t=377s',
+                       'markdown': '[00:06:17](https://www.youtube.com/watch?v=xahcxGx0b30&t=377s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q1.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'An8HIad4rIg',
+                       'title': 'The Economics of Owning a Freight Brokerage',
+                       'channel': 'MillionsExplained',
+                       'author': 'MillionsExplained',
+                       'text': 'A brokerage can double its volume, book record margins, and run out of '
+                               'money in the same quarter.',
+                       'tip': 'A brokerage can double its volume, book record margins, and run out of '
+                              'money in the same quarter.',
+                       'timestamp': 287,
+                       'timestamp_seconds': 287,
+                       'timestamp_label': '[00:04:47]',
+                       'url': 'https://www.youtube.com/watch?v=An8HIad4rIg&t=287s',
+                       'markdown': '[00:04:47](https://www.youtube.com/watch?v=An8HIad4rIg&t=287s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q1.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'XtDq2J8HLqY',
+                       'title': 'Freight Brokerage Business Planning',
+                       'channel': 'Freight 360',
+                       'author': 'Freight 360',
+                       'text': 'With the ABC Z approach, plan only a few quarters out, or 12 months, '
+                               'because brokerage opportunities are unpredictable even to customers.',
+                       'tip': 'With the ABC Z approach, plan only a few quarters out, or 12 months, '
+                              'because brokerage opportunities are unpredictable even to customers.',
+                       'timestamp': 152,
+                       'timestamp_seconds': 152,
+                       'timestamp_label': '[00:02:32]',
+                       'url': 'https://www.youtube.com/watch?v=XtDq2J8HLqY&t=152s',
+                       'markdown': '[00:02:32](https://www.youtube.com/watch?v=XtDq2J8HLqY&t=152s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q1.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': '9Yk3-F4z_xs',
+                       'title': 'Why Start A Freight Broker Business vs Other Business Models 🔥💰',
+                       'channel': 'FreightBrokers',
+                       'author': 'FreightBrokers',
+                       'text': 'One shipment a week at $200 profit is over $10,000 a year in recurring '
+                               'revenue.',
+                       'tip': 'One shipment a week at $200 profit is over $10,000 a year in recurring '
+                              'revenue.',
+                       'timestamp': 87,
+                       'timestamp_seconds': 87,
+                       'timestamp_label': '[00:01:27]',
+                       'url': 'https://www.youtube.com/watch?v=9Yk3-F4z_xs&t=87s',
+                       'markdown': '[00:01:27](https://www.youtube.com/watch?v=9Yk3-F4z_xs&t=87s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q1.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'i2KiR_LCj-Q',
+                       'title': 'Freight Broker Bootcamp Reviews (Dennis Brown) | Can you make money with '
+                                'this?',
+                       'channel': 'Review By Maverick',
+                       'author': 'Review By Maverick',
+                       'text': 'Expect six months to a year before you see results.',
+                       'tip': 'Expect six months to a year before you see results.',
+                       'timestamp': 491,
+                       'timestamp_seconds': 491,
+                       'timestamp_label': '[00:08:11]',
+                       'url': 'https://www.youtube.com/watch?v=i2KiR_LCj-Q&t=491s',
+                       'markdown': '[00:08:11](https://www.youtube.com/watch?v=i2KiR_LCj-Q&t=491s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q1.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'Huke-ZINzYA',
+                       'title': 'Freight Broker Training - How to Become A Freight Broker in 7 Simple '
+                                'Steps [Step by Step]',
+                       'channel': 'FreightBrokers',
+                       'author': 'FreightBrokers',
+                       'text': 'Shippers pay in 45 to 60 days while carriers want about 30 days or sooner, '
+                               'so use factoring for one to two years and then move to a bank line.',
+                       'tip': 'Shippers pay in 45 to 60 days while carriers want about 30 days or sooner, '
+                              'so use factoring for one to two years and then move to a bank line.',
+                       'timestamp': 488,
+                       'timestamp_seconds': 488,
+                       'timestamp_label': '[00:08:08]',
+                       'url': 'https://www.youtube.com/watch?v=Huke-ZINzYA&t=488s',
+                       'markdown': '[00:08:08](https://www.youtube.com/watch?v=Huke-ZINzYA&t=488s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q1.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'EhqxL4P0ZTc',
+                       'title': 'Freight Broker Boot Camp Dennis Brown reviews SCAM OR LEGIT?',
+                       'channel': 'Valerie Robfogel',
+                       'author': 'Valerie Robfogel',
+                       'text': "Success didn't happen overnight.",
+                       'tip': "Success didn't happen overnight.",
+                       'timestamp': 212,
+                       'timestamp_seconds': 212,
+                       'timestamp_label': '[00:03:32]',
+                       'url': 'https://www.youtube.com/watch?v=EhqxL4P0ZTc&t=212s',
+                       'markdown': '[00:03:32](https://www.youtube.com/watch?v=EhqxL4P0ZTc&t=212s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q1.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'zALRluYUGLI',
+                       'title': 'An Exciting Overview Of AscendTMS In Just 3 Minutes!',
+                       'channel': 'AscendTMS - The Free (and Best) TMS Software',
+                       'author': 'AscendTMS - The Free (and Best) TMS Software',
+                       'text': 'Brokers get a one-click load posting button that posts to all connected '
+                               'load boards.',
+                       'tip': 'Brokers get a one-click load posting button that posts to all connected '
+                              'load boards.',
+                       'timestamp': 81,
+                       'timestamp_seconds': 81,
+                       'timestamp_label': '[00:01:21]',
+                       'url': 'https://www.youtube.com/watch?v=zALRluYUGLI&t=81s',
+                       'markdown': '[00:01:21](https://www.youtube.com/watch?v=zALRluYUGLI&t=81s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q1.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'QYAwiBYhoVk',
+                       'title': 'What is Rose Rocket? - Transportation Management System',
+                       'channel': 'Rose Rocket',
+                       'author': 'Rose Rocket',
+                       'text': 'The order bot scans broker rate confirmations to book orders in seconds.',
+                       'tip': 'The order bot scans broker rate confirmations to book orders in seconds.',
+                       'timestamp': 59,
+                       'timestamp_seconds': 59,
+                       'timestamp_label': '[00:00:59]',
+                       'url': 'https://www.youtube.com/watch?v=QYAwiBYhoVk&t=59s',
+                       'markdown': '[00:00:59](https://www.youtube.com/watch?v=QYAwiBYhoVk&t=59s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q1.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'bYzHDrJqRgg',
+                       'title': 'What is a TMS (transportation management system)?',
+                       'channel': 'Rose Rocket',
+                       'author': 'Rose Rocket',
+                       'text': "Without data, you're flying blind.",
+                       'tip': "Without data, you're flying blind.",
+                       'timestamp': 222,
+                       'timestamp_seconds': 222,
+                       'timestamp_label': '[00:03:42]',
+                       'url': 'https://www.youtube.com/watch?v=bYzHDrJqRgg&t=222s',
+                       'markdown': '[00:03:42](https://www.youtube.com/watch?v=bYzHDrJqRgg&t=222s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q1.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'Q6QrQJDEvDc',
+                       'title': 'How To Onboard Yourself With AscendTMS!',
+                       'channel': 'AscendTMS - The Free (and Best) TMS Software',
+                       'author': 'AscendTMS - The Free (and Best) TMS Software',
+                       'text': 'Free live training runs daily at 2pm EST and is unlimited for life.',
+                       'tip': 'Free live training runs daily at 2pm EST and is unlimited for life.',
+                       'timestamp': 147,
+                       'timestamp_seconds': 147,
+                       'timestamp_label': '[00:02:27]',
+                       'url': 'https://www.youtube.com/watch?v=Q6QrQJDEvDc&t=147s',
+                       'markdown': '[00:02:27](https://www.youtube.com/watch?v=Q6QrQJDEvDc&t=147s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q1.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'VD-td9ERDAU',
+                       'title': 'How Much Freight Brokers ACTUALLY Make in 2027 (Owner Math)',
+                       'channel': 'Matt Krause',
+                       'author': 'Matt Krause',
+                       'text': 'A large award worth a few hundred thousand dollars per month was walked '
+                               'away from because no one would fund the payment terms.',
+                       'tip': 'A large award worth a few hundred thousand dollars per month was walked '
+                              'away from because no one would fund the payment terms.',
+                       'timestamp': 607,
+                       'timestamp_seconds': 607,
+                       'timestamp_label': '[00:10:07]',
+                       'url': 'https://www.youtube.com/watch?v=VD-td9ERDAU&t=607s',
+                       'markdown': '[00:10:07](https://www.youtube.com/watch?v=VD-td9ERDAU&t=607s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q1.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': '29d2gRCN8Ng',
+                       'title': 'The Economics of Owning a Freight Brokerage',
+                       'channel': 'The Finance Pro',
+                       'author': 'The Finance Pro',
+                       'text': 'A freight brokerage looks like a logistics company, but it behaves a lot '
+                               'more like a small bank with a phone.',
+                       'tip': 'A freight brokerage looks like a logistics company, but it behaves a lot '
+                              'more like a small bank with a phone.',
+                       'timestamp': 975,
+                       'timestamp_seconds': 975,
+                       'timestamp_label': '[00:16:15]',
+                       'url': 'https://www.youtube.com/watch?v=29d2gRCN8Ng&t=975s',
+                       'markdown': '[00:16:15](https://www.youtube.com/watch?v=29d2gRCN8Ng&t=975s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q1.'}]}

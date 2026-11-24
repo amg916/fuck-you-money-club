@@ -1,626 +1,850 @@
 from __future__ import annotations
 
-CHAPTER_9 = {
-    "id": "Q9",
-    "chapter_id": "Q9",
-    "chapter_number": 9,
-    "question_number": 9,
-    "slug": "freight-brokerage-contracts-statutory-guardrails-licensing-outreach",
-    "question_prompt": "Which federal/state statutes, licensing boundaries, contract clauses, and compliant outreach scripts govern freight brokerage?",
-    "kicker": "Q9 / THE BIG MONEY PLAYBOOKS",
-    "title": "Contracts, Statutory Guardrails, Licensing & Outreach Scripts",
-    "subtitle": "FMCSA Authority, BMC-84/BMC-85 Security, Carrier Identity Controls, Contract Allocation, and Shipper Outreach",
-    "layout_template": "legal_compliance_notes",
-    "reading_time_minutes": 14,
-    "executive_summary": (
-        "Candidate #12, Freight Brokerage, ranks #19 with a 85/100 Money-to-Manpower Score. "
-        "Its eight mapped plays connect niche prospecting, shipper qualification, contracting, "
-        "carrier verification, load matching, shipment tracking, invoice reconciliation, and "
-        "float management. This chapter converts those plays into FMCSA licensing controls, "
-        "enforceable operating boundaries, fraud-resistant agreements, and usable outreach scripts. "
-        "Conservative, Base, and Scaled annual owner profits remain $30,000, $165,000, and "
-        "$400,000 against $1,000,000, $3,000,000, and $5,000,000 gross shipper billings. "
-        "Carrier payments remain embedded in that scorecard revenue basis. A three-employee, "
-        "two-contractor pod must distinguish brokerage from carriage, protect payment instructions, "
-        "document rate authority, and reject unsupported promises before accepting freight. "
-        "The scaled case adds one employee and one contractor, not permission to relax controls."
-    ),
-    "key_metrics": [
-        {
-            "label": "Conservative",
-            "value": "$1,000,000",
-            "context": "Annual gross shipper billings including carrier costs; accounting presentation can differ",
-            "note": "3% net margin; $30,000 annual owner net profit; 3 FT + 2 C",
-        },
-        {
-            "label": "Base",
-            "value": "$3,000,000",
-            "context": "Annual gross shipper billings including carrier costs; accounting presentation can differ",
-            "note": "5.5% net margin; $165,000 annual owner net profit; 3 FT + 2 C",
-        },
-        {
-            "label": "Scaled",
-            "value": "$5,000,000",
-            "context": "Annual gross shipper billings including carrier costs; accounting presentation can differ",
-            "note": "8% net margin; $400,000 annual owner net profit; 4 FT + 3 C",
-        },
-    ],
-    "sections": [
-        {
-            "heading": "1. Establish the broker boundary before offering capacity",
-            "epistemic_status": "operating_framework",
-            "paragraphs": [
-                (
-                    "Organize Candidate #12 around eight operating plays: niche prospecting, shipper qualification, "
-                    "contracting, carrier verification, load matching, shipment tracking, invoice reconciliation, and "
-                    "float management. This chapter uses that mapping to assign obligations rather than creating "
-                    "eight separate departments. In the three-full-time, two-contractor pod, the commercial lead "
-                    "owns prospecting, qualification, and customer terms; the carrier operations lead owns verification, "
-                    "matching, and tracking; the finance lead owns reconciliation and liquidity. One contractor "
-                    "supports documented after-hours tracking, while the other supplies scoped legal or accounting "
-                    "support without controlling dispatch or bank changes. The commercial lead cross-checks sensitive "
-                    "payment changes so finance never approves its own beneficiary edits. Under 49 U.S.C. 13102(2) "
-                    "and 49 CFR 371.2, brokerage means arranging transportation by motor carrier for compensation. "
-                    "A dispatch-service label does not settle the classification; actual discretion, customer relationships, "
-                    "and allocation of freight matter. Sell access to vetted carriers, not transportation performed "
-                    "by a fleet the business does not operate. Preserve broker identity in proposals, signatures, "
-                    "invoices, and website claims. If the business accepts responsibility as a carrier, a broker "
-                    "registration and a carefully worded footer will not necessarily preserve the intended liability boundary."
-                ),
-                (
-                    "Before arranging regulated interstate property transportation, obtain FMCSA broker registration "
-                    "under 49 U.S.C. 13904, file process-agent designations through BOC-3, and maintain the "
-                    "$75,000 financial security required by 49 U.S.C. 13906(b) and 49 CFR 387.307. "
-                    "BMC-84 is the surety-bond filing; BMC-85 is the trust-fund filing. A bond's annual premium "
-                    "is not its penal amount, and a trust's posted security is not freely spendable operating "
-                    "cash. Neither instrument replaces cargo coverage or a customer credit limit. Check authority "
-                    "and financial filings in FMCSA Licensing and Insurance before launch and after every "
-                    "provider, ownership, or entity change. The financial-responsibility amendments with January 16, "
-                    "2026 compliance dates address eligible trust assets, trustee qualifications, security depletion, "
-                    "and suspension procedures. Use the current regulatory text and provider documentation rather "
-                    "than an old onboarding checklist. Assign finance a daily notice queue, a backup recipient, "
-                    "and a written escalation route for bond claims or reduced security. Stop new tenders "
-                    "when authority is inactive; do not interpret a paid premium receipt as proof of active "
-                    "registration. Separately reconcile legal name, principal address, tax identity, and contracting entity "
-                    "across FMCSA records, the bank, and signed agreements before enabling production billing."
-                ),
-                (
-                    "Build a lane-and-commodity rules sheet because federal broker authority is not a universal "
-                    "permission slip. A movement wholly inside one state can still form part of interstate "
-                    "commerce; document the shipment's actual transportation chain before classifying it. Check state "
-                    "entity qualification, tax nexus, intrastate operating requirements where applicable, and industry-specific rules "
-                    "rather than assuming every destination creates the same filing duty. California's Business and "
-                    "Professions Code section 17538.45 adds commercial-email exposure, while states also differ on "
-                    "telephone solicitation, recording, and privacy. Household-goods brokerage invokes distinct requirements under "
-                    "49 CFR part 371, subpart B; exclude that service unless the operating model is "
-                    "deliberately built for it. Food loads require role analysis under 21 CFR part 1, "
-                    "subpart O: a broker arranging food transportation can fall within the shipper definition "
-                    "and must allocate applicable sanitary responsibilities in writing. Hazardous materials require classification "
-                    "and function-specific analysis under 49 CFR parts 171 through 180, not a generic carrier "
-                    "checkbox. For cross-border or government freight, identify customs, operating-authority, and procurement responsibilities "
-                    "before quoting. Maintain a prohibited-load list for the pod so an after-hours contractor "
-                    "cannot casually accept household goods, temperature-sensitive food, or hazardous materials outside the approved service scope."
-                ),
-            ],
-            "table": {
-                "caption": "Federal Authority and Sector Boundaries for the Five-Person Brokerage Pod",
-                "headers": [
-                    "Rule and service boundary requiring an owner",
-                    "Evidence retained before the first affected tender",
-                    "Named owner and repeatable operating review",
-                    "Failure response protecting the actual service boundary",
-                ],
-                "rows": [
-                    [
-                        "Interstate property brokerage registration under 49 U.S.C. 13904",
-                        "Active FMCSA registration matching the signed contracting entity",
-                        "Commercial lead checks launch readiness and entity changes",
-                        "Decline new brokerage tenders while registration remains inactive",
-                    ],
-                    [
-                        "Financial security under 49 CFR 387.307 and federal statute",
-                        "Effective BMC-84 or BMC-85 filing and provider correspondence",
-                        "Finance lead monitors notices and current security requirements",
-                        "Escalate depleted security immediately and respect suspension instructions",
-                    ],
-                    [
-                        "Process-agent designation requirements under 49 CFR part 366",
-                        "BOC-3 filing with correct entity and agent details",
-                        "Commercial lead maintains service contacts and renewal reminders",
-                        "Route served documents immediately rather than ignoring unfamiliar correspondence",
-                    ],
-                    [
-                        "Broker transaction records under 49 CFR 371.3 requirements",
-                        "Transaction ledger retaining required identifiers, compensation, and payment information",
-                        "Finance lead retains records for at least three years",
-                        "Preserve party review rights and resolve missing transaction fields",
-                    ],
-                    [
-                        "Food transportation responsibilities under 21 CFR part 1",
-                        "Written sanitary specifications and allocated shipper responsibilities where applicable",
-                        "Operations lead checks commodity requirements before offering capacity",
-                        "Reject unsuitable equipment and document temperature exceptions before loading",
-                    ],
-                    [
-                        "Household goods and hazardous materials require separate scope analysis",
-                        "Service exclusions plus specialist review before expanding accepted commodities",
-                        "Commercial lead controls changes to the permitted service catalog",
-                        "Decline unsupported shipments instead of improvising regulated service capabilities",
-                    ],
-                ],
-            },
-            "callout": {
-                "kind": "OPERATOR GATE",
-                "title": "Four checks before the first live customer tender",
-                "body": "Attach evidence to the account record; a completed checklist without supporting records does not establish readiness.",
-                "items": [
-                    "Confirm active broker authority, effective $75,000 security, and BOC-3 records against the exact contracting entity.",
-                    "Classify the lane, commodity, and actual service role; document exclusions and applicable sector responsibilities.",
-                    "Execute shipper and carrier agreements with an explicit document hierarchy and authorized signatory records.",
-                    "Test independent carrier callbacks, beneficiary-change verification, customer credit limits, and after-hours escalation ownership.",
-                ],
-            },
-        },
-        {
-            "heading": "2. Contract for the role performed, the fee earned, and the loss allocated",
-            "epistemic_status": "operating_framework",
-            "paragraphs": [
-                (
-                    "Use separate shipper-broker and broker-carrier agreements, then connect each load through a "
-                    "written tender and rate confirmation. State the hierarchy among the master agreement, tender, "
-                    "rate confirmation, bill of lading, and customer portal terms; otherwise an uploaded document "
-                    "can silently defeat negotiated economics. The shipper agreement should describe arranging transportation "
-                    "by independently authorized carriers, the commodities and territories accepted, the customer's accurate "
-                    "description duties, and the process for obtaining exceptional services. Define the fee trigger "
-                    "through observable events: agreed transportation charges after the contracted service, documented detention "
-                    "after free time, and cancellation charges after a specified commitment point. Record who "
-                    "may authorize accessorials and which evidence proves waiting time. Set quote expiration, fuel "
-                    "adjustment mechanics, tender acceptance, payment terms, credit limits, and procedures for disputed line "
-                    "items. Avoid giving one dispatcher unlimited authority to amend a customer's master contract. "
-                    "A narrow anti-circumvention clause can protect introduced relationships for a defined period, with "
-                    "documented preexisting-account exceptions and remedies tied to demonstrable loss. Have the drafter "
-                    "evaluate enforceability under the chosen state's law; a punitive liquidated-damages formula can "
-                    "undermine collection. Preserve every accepted version and signatory trail in the transportation "
-                    "management system, including portal amendments that sales staff encounter during onboarding."
-                ),
-                (
-                    "Allocate liability without pretending contract language eliminates transportation law. The Carmack framework "
-                    "in 49 U.S.C. 14706 generally governs qualifying interstate motor-carrier cargo liability; "
-                    "a broker's own negligence, contractual undertakings, and potential carrier status require separate "
-                    "analysis. Federal preemption under 49 U.S.C. 14501(c) has produced differing judicial "
-                    "treatment of broker negligence claims, including safety-exception questions, so do not budget "
-                    "as though every claim disappears. Distinguish cargo value from brokerage compensation when negotiating "
-                    "a liability cap. Define exclusions, indemnity triggers, defense control, notice obligations, and any "
-                    "carveouts for fraud, deliberate misconduct, or confidentiality breaches. A certificate of insurance "
-                    "summarizes coverage; it does not amend exclusions or prove that a particular commodity, "
-                    "theft scenario, or subcontracted movement is covered. Obtain relevant policy evidence through "
-                    "verified insurance contacts and identify contingent cargo or errors-and-omissions coverage as separate "
-                    "products with separate conditions. Cargo claims need a docket rather than an inbox: "
-                    "49 CFR part 370 addresses carrier claim processing, and section 14706 limits how "
-                    "short contractual claim and suit periods may be. Photograph seals and damage, preserve "
-                    "temperature records, request mitigation instructions, and distinguish a delivery exception from a "
-                    "complete written monetary claim. Never promise automatic reimbursement merely to close a sales conversation."
-                ),
-                (
-                    "The carrier agreement should prohibit unauthorized rebrokering, identify the performing motor carrier, "
-                    "require accurate equipment and driver information, and specify an emergency substitution process. "
-                    "Do not confuse legitimate leased owner-operators with unauthorized brokerage; verify whose operating "
-                    "authority covers the movement and who controls performance. Require prompt notice of authority "
-                    "changes, insurance cancellation, cargo incidents, and conflicting payment demands. State how factoring "
-                    "notices and assignments are authenticated, while recognizing that UCC section 9-406 can "
-                    "affect discharge after an effective assignment notification. Payment to yesterday's bank account "
-                    "may not settle today's obligation. Specify collection costs, interest where enforceable, dispute "
-                    "venue or arbitration mechanics, governing law, service methods, and treatment of undisputed charges "
-                    "during a dispute. For IP and data, retain ownership of internal pricing models and "
-                    "workflows while granting only the licenses needed to use customer shipment data. Define "
-                    "access controls, subcontractor access, retention, return or deletion, incident notification, and permitted "
-                    "analytics. Do not claim ownership of every customer's shipment history as the price "
-                    "of obtaining tracking. Require written change control for data exports and integrations. "
-                    "The commercial lead maintains the clause matrix; the support contractor resolves deviations, "
-                    "and operations receives a short account-specific exception sheet rather than an unread agreement archive."
-                ),
-            ],
-            "table": {
-                "caption": "Six Contract Clause Packages Connecting Commercial Promises to Operational Evidence",
-                "headers": [
-                    "Clause package and specific commercial drafting objective",
-                    "Shipper agreement treatment supporting a collectible receivable",
-                    "Carrier agreement treatment supporting verified transportation performance",
-                    "Stored evidence and practical enforcement failure mode",
-                ],
-                "rows": [
-                    [
-                        "Scope and document hierarchy preserve the intended brokerage role",
-                        "Identify arranged transportation and resolve conflicting portal terms explicitly",
-                        "Identify performing authority and prohibit unauthorized onward brokerage",
-                        "Keep accepted versions because unsigned rate changes invite disputes",
-                    ],
-                    [
-                        "Fee triggers convert completed work into objectively billable events",
-                        "Define delivery charges, cancellation timing, and authorized accessorial approvals",
-                        "Match purchased services, free time, and required detention evidence",
-                        "Retain timestamps and approvals rather than relying on dispatcher recollection",
-                    ],
-                    [
-                        "Anti-circumvention protects documented introductions without assuming universal enforceability",
-                        "Define protected introductions, duration, and existing relationship exceptions",
-                        "Specify restricted solicitation conduct and commercially defensible remedies",
-                        "Archive introduction records because broad unsupported penalties weaken recovery",
-                    ],
-                    [
-                        "Liability allocation distinguishes cargo exposure from brokerage service compensation",
-                        "Negotiate caps, exclusions, indemnities, and declared high-value shipment treatment",
-                        "Confirm cargo responsibilities and relevant policy exclusions before tendering",
-                        "Preserve coverage evidence because certificates alone do not amend policies",
-                    ],
-                    [
-                        "Dispute resolution and assignment procedures protect payment discharge",
-                        "Specify venue, governing law, notices, and undisputed payment obligations",
-                        "Authenticate factoring assignments and define conflicting payment demand escalation",
-                        "Store notices and callbacks before releasing funds to changed beneficiaries",
-                    ],
-                    [
-                        "IP and data terms limit access without obstructing delivery",
-                        "Define shipment-data permissions, retention duties, and incident notification obligations",
-                        "Restrict shipment-data reuse and require controlled subcontractor access",
-                        "Log exports and access changes to investigate improper disclosure",
-                    ],
-                ],
-            },
-        },
-        {
-            "heading": "3. Make carrier identity and payment timing part of the contract system",
-            "epistemic_status": "illustrative_model",
-            "paragraphs": [
-                (
-                    "Carrier verification is a repeatable evidence process, not a vendor badge. Use Highway "
-                    "or RMIS to organize onboarding signals, then reconcile the legal entity, authority status, "
-                    "insurance evidence, contact history, and shipment particulars against independent sources. FMCSA "
-                    "SAFER provides useful identity and safety information; Licensing and Insurance supplies relevant "
-                    "authority and filing records. Neither makes an identity thief disappear. Call a previously "
-                    "validated number when an email requests a new bank account, dispatch contact, or pickup "
-                    "substitution. Establish the initial trusted contact through independent corroboration rather than copying "
-                    "the number from the suspicious message. Flag sudden domain changes, unrelated beneficiary names, "
-                    "implausible lane pricing, duplicated equipment details, and instructions to hide the broker's "
-                    "identity. A clean authority record does not prove that the person writing from "
-                    "a lookalike domain controls that carrier. At pickup, reconcile the dispatch record with "
-                    "the performing carrier, tractor identifiers, driver contact, seal instructions, and the shipper's "
-                    "release process. Give the warehouse a verified callback route before loading. When identities "
-                    "conflict, stop release and investigate; a time-sensitive appointment is exactly when fraudsters "
-                    "benefit from rushed exceptions. Keep the evidence trail factual and access-controlled rather "
-                    "than circulating accusations through shared industry chats or unrestricted customer email threads."
-                ),
-                (
-                    "Use the canonical scorecard without substituting freight spread for gross billings. Conservative "
-                    "is $1,000,000 multiplied by 3%, producing $30,000 annual owner net profit; Base "
-                    "is $3,000,000 multiplied by 5.5%, producing $165,000; Scaled is $5,000,000 multiplied "
-                    "by 8%, producing $400,000. Their implied total annual costs are $970,000, $2,835,000, "
-                    "and $4,600,000 respectively. Carrier costs sit inside those totals, not underneath an "
-                    "additional invented profit layer. Gross shipper billings are the scorecard basis; financial-statement "
-                    "presentation may differ under the applicable principal-versus-agent analysis. To illustrate liquidity only, "
-                    "assume Base carrier purchases equal 85% of billings, customers pay in 45 days, "
-                    "carriers receive payment in 21 days, and volumes are even across a 365-day "
-                    "year. The simplified carrier-cost funding bridge is $2,550,000 multiplied by 24 divided "
-                    "by 365, approximately $167,671. This is neither additional revenue nor a complete "
-                    "working-capital forecast: payroll, taxes, disputes, seasonality, and security collateral still require modeling. "
-                    "The chapter's 85% purchase assumption does not replace a canonical scenario input. "
-                    "Against the $15,000–$80,000 startup-capital range, it demonstrates why a profitable Base "
-                    "book can exhaust available cash. Finance should size customer limits from committed liquidity "
-                    "and payment behavior, not merely from annual sales ambition."
-                ),
-                (
-                    "Turn credit terms into dispatch controls by measuring exposure before each accepted tender. "
-                    "Include unpaid invoices, delivered but unbilled loads, accepted shipments, and expected accessorials "
-                    "rather than checking only the accounting receivables report. Invoice reconciliation should match the "
-                    "customer tender, carrier rate confirmation, proof of delivery, and accessorial approvals before "
-                    "billing and payment. Retain the transaction fields required by 49 CFR 371.3 "
-                    "for at least three years and preserve the transaction parties' review rights; do "
-                    "not promise blanket secrecy over records the rule makes reviewable. Maintain a separate "
-                    "claims register so a cargo dispute does not silently become a customer credit "
-                    "extension. A $20,000 unrecovered customer loss consumes about 12.1% of Base annual "
-                    "owner profit, before collection expense, without changing booked shipment volume. This makes "
-                    "collections discipline as important as load matching automation. In the five-person pod, finance "
-                    "prepares beneficiary changes, the commercial lead independently verifies them, and operations cannot "
-                    "override credit holds to protect a commission. The tracking contractor records exceptions but "
-                    "cannot release payments. At Scaled, four full-time employees and three contractors support "
-                    "greater throughput; retain the same separation of duties and review exception rates before "
-                    "adding customers. Capacity growth should follow verified collections, not a growing queue of unpaid invoices."
-                ),
-            ],
-            "table": {
-                "caption": "Carrier Fraud, Claims, and Float Controls That Preserve the Canonical Profit Cases",
-                "headers": [
-                    "Observed event requiring a specific operational response",
-                    "Independent evidence needed before releasing freight or money",
-                    "Responsible pod member and required second reviewer",
-                    "Economic consequence and preserved investigation record",
-                ],
-                "rows": [
-                    [
-                        "Established carrier requests a new bank beneficiary by email",
-                        "Validate assignment documents and call an independently established contact",
-                        "Finance prepares changes while commercial independently verifies beneficiary legitimacy",
-                        "Duplicate payment exposure remains documented until discharge is established",
-                    ],
-                    [
-                        "Pickup driver presents an unexpected performing carrier identity",
-                        "Reconcile equipment, dispatch authorization, operating authority, and warehouse observations",
-                        "Operations stops release and contacts the verified carrier representative",
-                        "Preserve pickup evidence before freight disappears into unauthorized custody",
-                    ],
-                    [
-                        "Insurance certificate omits relevant commodity or theft coverage details",
-                        "Obtain relevant policy evidence through independently verified insurance contacts",
-                        "Operations reviews coverage fit with scoped specialist support",
-                        "Record exclusions before accepting cargo values beyond supported protection",
-                    ],
-                    [
-                        "Base customers pay later than contracted carrier settlement dates",
-                        "Model actual purchase costs and daily settlement timing separately",
-                        "Finance owns liquidity forecasts and commercial enforces customer limits",
-                        "Illustrative twenty-four-day carrier bridge requires approximately $167,671 funding",
-                    ],
-                    [
-                        "Customer disputes invoices after multiple additional tenders are accepted",
-                        "Combine receivables, unbilled deliveries, and committed freight exposure",
-                        "Finance calculates exposure while commercial approves documented credit exceptions",
-                        "A $20,000 unrecovered loss consumes approximately 12.1% of Base profit",
-                    ],
-                    [
-                        "Delivered shipment has damage notation and incomplete supporting documents",
-                        "Collect photographs, seal history, temperature records, and written claim details",
-                        "Operations preserves evidence while finance separately tracks disputed balances",
-                        "Keep claim deadlines visible without automatically withholding unrelated payments",
-                    ],
-                ],
-            },
-            "callout": {
-                "kind": "INSIDER PRO-TIPS",
-                "title": "Four veteran controls that survive a busy dispatch desk",
-                "body": "Automate routine matching and tracking, but route identity, assignment, and credit exceptions to named people.",
-                "items": [
-                    "Store the trusted callback source separately from incoming dispatch emails; otherwise an attacker can replace both the instruction and its supposed verification.",
-                    "Send warehouses the expected performing carrier and a verified exception contact before pickup, not after a suspicious truck has departed.",
-                    "Use account-specific detention and accessorial rules in the TMS so dispatchers collect the evidence required for that customer's actual contract.",
-                    "Review delivered-but-unbilled freight every morning; missing proof of delivery lengthens the cash cycle even when the customer's stated payment term looks acceptable.",
-                ],
-            },
-            "sop_steps": [
-                {
-                    "step": 1,
-                    "title": "Validate authority and the accepted load scope",
-                    "action": "Check broker readiness, carrier authority, commodity restrictions, and customer credit availability.",
-                    "detail": "Save dated records and applicable account exceptions before accepting the tender into the TMS.",
-                },
-                {
-                    "step": 2,
-                    "title": "Bind identity to the physical pickup",
-                    "action": "Reconcile the carrier, dispatch contact, equipment, driver, and warehouse release instructions.",
-                    "detail": "Investigate substitutions through independently verified contacts before authorizing release of the shipment.",
-                },
-                {
-                    "step": 3,
-                    "title": "Reconcile performance and payment rights",
-                    "action": "Match rates, delivery evidence, accessorial approvals, and effective assignment notices.",
-                    "detail": "Require a second person to verify beneficiary changes and maintain separate claim and collection records.",
-                },
-                {
-                    "step": 4,
-                    "title": "Close the transaction and update exposure",
-                    "action": "Issue accurate invoices, schedule verified payments, and refresh the liquidity forecast.",
-                    "detail": "Retain required brokerage records for at least three years and honor longer applicable preservation obligations.",
-                },
-            ],
-        },
-        {
-            "heading": "4. Use outreach that identifies the broker and discovers operating constraints",
-            "epistemic_status": "operating_framework",
-            "paragraphs": [
-                (
-                    "Start niche prospecting with individually researched business contacts and accurate service claims, "
-                    "not purchased mobile-number blasts. CAN-SPAM, 15 U.S.C. 7704, covers commercial business "
-                    "email as well as consumer email: use truthful routing information and subjects, identify "
-                    "the solicitation as required, include a valid physical postal address, provide a functioning "
-                    "opt-out, and honor it within ten business days. Keep the opt-out mechanism available "
-                    "for at least thirty days after sending. Suppression records must survive CRM imports "
-                    "and agency changes. Use this email verbatim after replacing the braced fields with "
-                    "verified facts: 'Subject: Capacity discussion for {origin} to {destination}. Hello {contact_name}, "
-                    "I am {sender_name} with {broker_legal_name}, an FMCSA-authorized property broker, MC {mc_number}. "
-                    "We arrange transportation through independently authorized motor carriers. I am contacting you "
-                    "about {specific_lane_or_commodity}; we have not assumed your current volumes or service problems. "
-                    "Would a ten-minute discussion about equipment, pickup windows, and payment requirements be useful? "
-                    "This is a commercial solicitation. Our postal address is {postal_address}. Reply unsubscribe "
-                    "to stop marketing emails.' Do not use the authorization sentence until registration is "
-                    "active. The commercial lead verifies every personalized assertion, including claimed carrier availability, "
-                    "before the first message leaves the CRM."
-                ),
-                (
-                    "Treat telephone and text channels separately from email. The TCPA, 47 U.S.C. "
-                    "227, and 47 CFR 64.1200 impose requirements that depend on technology, destination, "
-                    "message content, and consent; a freight-related pitch is not automatically exempt because "
-                    "someone works for a business. A manually placed live call differs from an "
-                    "artificial-voice campaign, but federal and state do-not-call rules, company-specific suppression, and state "
-                    "solicitation restrictions still require review. The FTC Telemarketing Sales Rule also prohibits "
-                    "specified deceptive and abusive practices in business-to-business telemarketing; do not treat that "
-                    "label as permission to misrepresent capacity. Keep automated promotional texts and prerecorded "
-                    "or artificial-voice outreach disabled until the intended campaign's requirements are documented. For "
-                    "a live call, say: 'Hello, this is {sender_name} at {broker_legal_name}, a freight "
-                    "broker. This is a sales call about transportation purchasing. Is this a suitable "
-                    "business contact, and may I take thirty seconds to explain the lane we "
-                    "serve?' If declined, say: 'Understood. I will mark this contact for no further "
-                    "sales calls from us.' Record that instruction immediately. Do not record calls "
-                    "by default; analyze applicable recording laws and obtain required agreement before recording. "
-                    "Keep routing logs and permissions without collecting unnecessary personal information."
-                ),
-                (
-                    "Discovery should uncover constraints that determine contract scope and cash exposure. Use this "
-                    "script: 'Which legal entity tenders and pays for freight? Which origin, destination, "
-                    "commodity, cargo value, equipment, and weekly volume should we evaluate? Is the shipment "
-                    "part of an interstate movement? Are there food-sanitation, hazardous-material, temperature, seal, or "
-                    "appointment requirements? Who approves detention and other accessorials? What documents start your "
-                    "payment clock, and what invoice disputes typically delay settlement? Who can sign the "
-                    "transportation agreement and approve credit terms?' Then define the boundary: 'We arrange "
-                    "carriage through independently authorized carriers. We will confirm availability, scope, charges, and "
-                    "responsibilities in writing before accepting a tender. We do not promise a specific "
-                    "truck or delivery outcome until the relevant commitment is established.' Close with: "
-                    "'May I send the proposed service scope and a checklist of the documents "
-                    "needed to evaluate one trial lane?' This advances qualification and contracting without "
-                    "manufacturing capacity or implying insurance covers every loss. Store answers in structured "
-                    "fields accessible to operations and finance, then suppress unrelated marketing use where "
-                    "permissions or applicable law require it. Review each week's rejected leads for scope, "
-                    "credit, or service-fit problems. Candidate #12 wins through collectible, supportable shipments, not "
-                    "a larger prospect list that the five-person pod cannot responsibly serve."
-                ),
-            ],
-            "table": {
-                "caption": "Outreach Channel Controls and Discovery Evidence for a Niche Freight Brokerage",
-                "headers": [
-                    "Contact situation and permitted operating objective",
-                    "Required message content or preliminary factual review",
-                    "CRM evidence retained by the commercial lead",
-                    "Failure response preventing repeated unsupported outreach",
-                ],
-                "rows": [
-                    [
-                        "Individually researched commercial email introducing a specific freight lane",
-                        "Use truthful identity, solicitation disclosure, postal address, and opt-out",
-                        "Store message version, source context, send date, and suppression status",
-                        "Honor opt-outs within ten business days and prevent reimport",
-                    ],
-                    [
-                        "Manually placed live sales call to a business contact",
-                        "Review applicable calling restrictions and identify the sales purpose",
-                        "Log called destination, routing context, outcome, and requested suppression",
-                        "Stop the pitch and apply company-specific suppression when requested",
-                    ],
-                    [
-                        "Automated promotional texts proposed for carrier or shipper acquisition",
-                        "Assess technology, recipient category, consent requirements, and state restrictions",
-                        "Retain campaign-specific authorization evidence and the approved message scope",
-                        "Keep sending disabled when required permissions cannot be established",
-                    ],
-                    [
-                        "Discovery call involving shipment values and customer payment procedures",
-                        "Ask about commodities, transport chain, documentation, and authorized signatories",
-                        "Record structured service requirements and actual customer credit expectations",
-                        "Decline unsupported commodities and avoid implying unavailable carrier capacity",
-                    ],
-                    [
-                        "Call recording requested for training or operational dispute evidence",
-                        "Analyze applicable recording law and obtain required participant agreement",
-                        "Document permission, access restrictions, retention schedule, and recording purpose",
-                        "Continue without recording when required agreement has not been obtained",
-                    ],
-                    [
-                        "Prospect asks whether cargo insurance guarantees full reimbursement",
-                        "Explain applicable coverage review and avoid unconditional payment promises",
-                        "Record declared cargo value and route specific coverage questions",
-                        "Obtain policy-specific evidence before committing to exceptional shipment exposure",
-                    ],
-                ],
-            },
-        },
-    ],
-    "pull_quote": "A profitable freight broker verifies who moves the load, who owes the money, and which promise the contract actually supports.",
-    "diagram_id": "diag-05",
-    "action_checklist": [
-        "Document all eight plays and assign the commercial, operations, and finance owners within the 3 FT + 2 C pod.",
-        "Verify active FMCSA broker registration, BOC-3, and effective $75,000 financial security against the current legal entity and regulatory text.",
-        "Execute shipper and carrier agreements covering scope, fee triggers, anti-circumvention, liability allocation, disputes, assignments, and IP/data rights.",
-        "Configure Highway or RMIS workflows with independent identity checks, warehouse release controls, and two-person beneficiary-change verification.",
-        "Build customer exposure limits and a daily liquidity forecast that separates gross billings, carrier purchases, claims, and actual collections.",
-        "Deploy the email, live-call, and discovery scripts only after inserting verified facts and testing suppression, recordkeeping, and escalation procedures.",
-    ],
-    "statutory_citations": [
-        {
-            "title": "49 U.S.C. 13102 — Transportation definitions",
-            "url": "https://www.law.cornell.edu/uscode/text/49/13102",
-            "relevance": "Defines broker and motor-carrier roles used to classify the services actually performed.",
-        },
-        {
-            "title": "49 U.S.C. 13904 — Registration of brokers",
-            "url": "https://www.law.cornell.edu/uscode/text/49/13904",
-            "relevance": "Provides the federal registration framework for transportation brokerage.",
-        },
-        {
-            "title": "49 U.S.C. 13906(b) — Broker financial security",
-            "url": "https://www.law.cornell.edu/uscode/text/49/13906",
-            "relevance": "Establishes the $75,000 broker bond or trust security requirement and related protections.",
-        },
-        {
-            "title": "49 CFR 387.307 — Property broker financial security requirements",
-            "url": "https://www.ecfr.gov/current/title-49/section-387.307",
-            "relevance": "Governs broker security filings, trust requirements, and financial-responsibility procedures requiring current-text review.",
-        },
-        {
-            "title": "49 CFR part 366 — Designation of process agents",
-            "url": "https://www.ecfr.gov/current/title-49/subtitle-B/chapter-III/subchapter-B/part-366",
-            "relevance": "Supports BOC-3 process-agent designation and maintenance of service-of-process arrangements.",
-        },
-        {
-            "title": "49 CFR 371.2 and 371.3 — Broker definitions and transaction records",
-            "url": "https://www.ecfr.gov/current/title-49/subtitle-B/chapter-III/subchapter-B/part-371",
-            "relevance": "Defines brokerage boundaries, required transaction records, three-year retention, party review rights, and household-goods broker requirements.",
-        },
-        {
-            "title": "21 CFR part 1, subpart O — Sanitary transportation of human and animal food",
-            "url": "https://www.ecfr.gov/current/title-21/chapter-I/subchapter-A/part-1/subpart-O",
-            "relevance": "Defines covered transportation roles and sanitary duties, including circumstances where a broker acts as a shipper.",
-        },
-        {
-            "title": "49 CFR 171.2 — Hazardous materials transportation obligations",
-            "url": "https://www.ecfr.gov/current/title-49/section-171.2",
-            "relevance": "Requires function-specific analysis before performing regulated hazardous-material transportation activities.",
-        },
-        {
-            "title": "49 U.S.C. 14706 — Liability of carriers under receipts and bills of lading",
-            "url": "https://www.law.cornell.edu/uscode/text/49/14706",
-            "relevance": "Establishes the Carmack cargo-liability framework and limits on shortening claim and suit periods.",
-        },
-        {
-            "title": "49 CFR part 370 — Freight loss and damage claim processing",
-            "url": "https://www.ecfr.gov/current/title-49/subtitle-B/chapter-III/subchapter-B/part-370",
-            "relevance": "Provides carrier claim-filing and processing requirements used to structure evidence preservation and claim calendars.",
-        },
-        {
-            "title": "49 U.S.C. 14501(c) — Federal preemption concerning motor carriers and brokers",
-            "url": "https://www.law.cornell.edu/uscode/text/49/14501",
-            "relevance": "Frames preemption and exceptions relevant to state-law broker claims without resolving every claim categorically.",
-        },
-        {
-            "title": "New York UCC 9-406 — Discharge of an account debtor after assignment",
-            "url": "https://www.nysenate.gov/legislation/laws/UCC/9-406",
-            "relevance": "Illustrates an enacted state assignment rule affecting payment discharge; apply the governing jurisdiction's enacted text.",
-        },
-        {
-            "title": "15 U.S.C. 7704 — Requirements for commercial electronic mail",
-            "url": "https://www.law.cornell.edu/uscode/text/15/7704",
-            "relevance": "Controls sender accuracy, solicitation identification, postal addresses, opt-out availability, and timely suppression.",
-        },
-        {
-            "title": "47 U.S.C. 227 — Restrictions on telephone equipment use",
-            "url": "https://www.law.cornell.edu/uscode/text/47/227",
-            "relevance": "Provides the statutory framework for covered automated calls, artificial or prerecorded voice calls, and related outreach restrictions.",
-        },
-        {
-            "title": "47 CFR 64.1200 — Telephone solicitation and related restrictions",
-            "url": "https://www.ecfr.gov/current/title-47/section-64.1200",
-            "relevance": "Supplies detailed calling, consent, identification, and do-not-call requirements applicable to covered campaigns.",
-        },
-        {
-            "title": "16 CFR part 310 — Telemarketing Sales Rule",
-            "url": "https://www.ecfr.gov/current/title-16/chapter-I/subchapter-C/part-310",
-            "relevance": "Governs covered telemarketing conduct, including specified deceptive and abusive practices in business-to-business calls.",
-        },
-        {
-            "title": "California Business and Professions Code 17538.45 — Commercial email restrictions",
-            "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=17538.45.&lawCode=BPC",
-            "relevance": "Adds state-law exposure for specified misleading commercial-email practices.",
-        },
-        {
-            "title": "California Penal Code 632 — Confidential communications recording",
-            "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=632.&lawCode=PEN",
-            "relevance": "Illustrates why recording permissions require state-specific analysis before capturing confidential calls.",
-        },
-    ],
-}
+CHAPTER_9 = {'id': 'Q9',
+ 'chapter_id': 'Q9',
+ 'chapter_number': 9,
+ 'question_number': 9,
+ 'slug': 'equipment-niches-van-reefer-flatbed-heavy-haul-drayage',
+ 'question_prompt': 'How do dry van, reefer, flatbed, oversize, and drayage/intermodal freight differ, and '
+                    'how do I source loads in each?',
+ 'kicker': 'Q9 / THE BIG MONEY PLAYBOOKS',
+ 'title': 'Equipment Niches: Van, Reefer, Flatbed, Heavy Haul and Drayage',
+ 'subtitle': 'Reefer basics for new brokers, booking differences by trailer type, oversize/heavy-haul pay, '
+             'container drayage from port pickup to empty return, intermodal lane bidding, and load-board '
+             'search walkthroughs',
+ 'layout_template': 'tool_resource_directory',
+ 'reading_time_minutes': 15,
+ 'executive_summary': 'Operators working van, reefer, flatbed, heavy haul and drayage agree that dry van '
+                      'is the weakest seat and that margin sits in equipment and paperwork most operators '
+                      'avoid. Chief Carriers reports a 15-truck heavy-haul carrier near $8 million in '
+                      'revenue, almost double a regular flatbed operation. Reefer and flatbed are priced '
+                      'like van but booked off tighter checklists covering commodity, temperature, '
+                      'dimensions and securement. Load-board operators grade posts on true rate over all '
+                      'miles, deadhead and broker pay history, with Cole Fairbrook calling $2.35 a mile a '
+                      'loss. Drayage runs on SCAC, UIIA, TWIC, last free dates and empty returns, and one '
+                      'live intermodal bid landed at $1,450 on 600 round-trip miles plus accessorials. '
+                      'Disagreements cover what a SCAC costs and whether brokers strictly need one, '
+                      "LoadMatch's value, and whether to bid high or anchor to recent runs.",
+ 'key_metrics': [{'label': 'Heavy-haul carrier revenue on 15 trucks',
+                  'metric': 'Heavy-haul carrier revenue on 15 trucks',
+                  'value': 'About $8 million in one year',
+                  'confidence': 'attributed_practitioner_claim',
+                  'context': 'Owner who grew from one night-shift truck to 15 trucks; Chief Carriers says '
+                             'that is almost double what a regular flatbed carrier does',
+                  'source': 'Chief Carriers ([7kg1eMOTev8 @ 00:06:08])'},
+                 {'label': 'Live intermodal bid, Houston port to Wylie TX',
+                  'metric': 'Live intermodal bid, Houston port to Wylie TX',
+                  'value': '$1,450 linehaul on 600 round-trip miles',
+                  'confidence': 'attributed_practitioner_claim',
+                  'context': 'Market math of 600 x $2.80 = $1,680 judged too high; bid anchored to a '
+                             'nearby Grapevine run at about $1,400 less than two weeks earlier',
+                  'source': 'Dispatching & Intermodal Training ([SvfUq9Udy60 @ 00:06:30])'},
+                 {'label': 'CMA reefer demurrage exposure, NY/NJ',
+                  'metric': 'CMA reefer demurrage exposure, NY/NJ',
+                  'value': 'About $13,000 over 14 days',
+                  'confidence': 'attributed_practitioner_claim',
+                  'context': '3 free days, then $690/day, then $895, then $1,040 per day on a reefer '
+                             'container',
+                  'source': 'Victor Mason ([o2G4zRoNHt4 @ 01:16:57])'},
+                 {'label': 'Dry van break-even floor',
+                  'metric': 'Dry van break-even floor',
+                  'value': '$2.35/mi is pretty much a loss; must be over 250',
+                  'confidence': 'attributed_practitioner_claim',
+                  'context': 'Rate floor applied while screening DAT and Truckstop posts out of '
+                             'Birmingham; 263 called barely above break-even',
+                  'source': 'Cole Fairbrook ([bEWh0t-c_5o @ 00:20:05])'}],
+ 'sections': [{'heading': 'Section 1: The Practitioner Consensus',
+               'paragraphs': ['Across the van, reefer, flatbed and specialized desks, the practitioners '
+                              'converge on one point: plain dry van is the weakest place to stand, and '
+                              'margin lives in equipment that fewer operators can run. Chief Carriers '
+                              "opens with 'the riches are in the niches' and reports oversized and heavy "
+                              'haul thriving while van, reefer and flatbed sit flat, with infrastructure, '
+                              'manufacturing, agriculture and construction driving demand [7kg1eMOTev8 @ '
+                              '00:00:13]. Few equipped carriers translate into pricing power, and the work '
+                              'is often project-based one-offs with no standard price. AFT Dispatch puts '
+                              'numbers on the van weakness: van rejection ran just over 3% amid '
+                              'overcapacity, the lowest performer since May 2023, while flatbed averaged '
+                              'over 10% rejection in 2023 and hit 20% three times, and reefer ran 6% with '
+                              "holiday peaks [Gx_gladG4ps @ 00:06:00]. Bobby Loads' caller, running three "
+                              'trucks split across flatbed, reefer and van, says the move if starting over '
+                              'would be to avoid dry van entirely [jxL6kaRxoEo @ 00:00:00]. The same view '
+                              'surfaces on the load-board side: Cole Fairbrook quotes DAT per-mile '
+                              'averages without fuel surcharge at flatbed 279, reefer 264 and dry van 228, '
+                              'so van sits at the bottom of the national rate stack before a single phone '
+                              'call is made [bEWh0t-c_5o @ 00:02:24].',
+                              'The second consensus point is that each trailer type is sold with the same '
+                              'pricing logic but booked with a different checklist. Brandon Scott, who '
+                              'started in reefer with no experience, says reefer is priced the same way as '
+                              'van or flatbed, reefer fuel does not need to be factored precisely, and the '
+                              "marketplace 'will correct your price' once the number goes out [xPxwiwivMXE "
+                              '@ 00:03:33]. No dedicated reefer network is required; good-paying freight '
+                              'posted on a load board draws carriers, though scarce lanes may get no '
+                              'calls, and the driver sets and maintains the unit while the broker only '
+                              'supplies the temperature [xPxwiwivMXE @ 00:05:05]. Never Stop Trucking '
+                              'turns that into a booking discipline. On flatbed, confirm trailer length, '
+                              'spread-axle weight distribution, length, width, height and state-by-state '
+                              'overhang rules, with roughly 13 feet 5 inches to 13 feet 6 inches as the '
+                              'ceiling including deck height, plus straps, chains and tarps [K5sqFMIL3IQ @ '
+                              '00:00:45]. On reefer, confirm the exact commodity, because some drivers '
+                              'refuse meat, fish or watermelons, along with temperature, pre-cool, '
+                              'continuous mode, air chute and e-tracks, and expect long dwell, overnight '
+                              'appointments and multi-stop runs in exchange for higher pay [K5sqFMIL3IQ @ '
+                              '00:06:20]. Dry van still needs weight, pallet count and packaging '
+                              'confirmed, with straps on board [K5sqFMIL3IQ @ 00:10:41].',
+                              'Drayage is where every speaker agrees the paperwork is the moat. '
+                              'FreightBrokers defines it as moving 10, 20 or 40-foot containers to or from '
+                              'a port or rail terminal and lists the baseline: a SCAC code from nmfta.org '
+                              'for both brokers and carriers at about $80, the UIIA agreement for carriers '
+                              'but not brokers, a TWIC card for port drivers, and fees on any delay in '
+                              'pickup, delivery or container return that truckload never charges '
+                              '[N1uEW-kxNvE @ 00:02:16]. Freightskills confirms brokers technically need '
+                              'no license to contract a dray carrier, still recommends the four-letter '
+                              'NMFTA SCAC at about $70, and stresses that UIIA is port-specific with no '
+                              'reciprocity, so a carrier approved for the California ports might not be '
+                              'able to go to Chicago, and New Jersey works the same way [o6WTbGsyLqg @ '
+                              '00:10:07]. CONGO EXPRESS gives the carrier-side build order: authority, '
+                              'UIIA-friendly insurance, SCAC, UIIA, then LoadMatch [vSgjLSdmTKc @ '
+                              '00:07:31]. Drayage Specialist frames why the niche matters: dray is the '
+                              'short-distance link between ships or rail and warehouses, it prevents port '
+                              'bottlenecks and supports just-in-time delivery, and specialist carriers who '
+                              'know port operations and permits are the ones who get it done [sv8u2e9X6Oc '
+                              '@ 00:01:16]. Freightskills adds that every truckload customer has drayage '
+                              'at some point, which makes it an upsell on existing accounts [o6WTbGsyLqg @ '
+                              '00:03:09].'],
+               'table': {'caption': 'Where the practitioners agree across van, reefer, flatbed, heavy haul '
+                                    'and drayage',
+                         'headers': ['Niche Or Topic',
+                                     'Consensus Position',
+                                     'Why It Matters To A Broker',
+                                     'Expert Source'],
+                         'rows': [['Heavy haul and oversized freight niche',
+                                   'Thriving while van, reefer and flatbed sit flat, driven by '
+                                   'infrastructure and construction',
+                                   'Few equipped carriers create pricing power on project-based one-off '
+                                   'moves with no standard price',
+                                   'Chief Carriers ([7kg1eMOTev8 @ 00:02:10])'],
+                                  ['Dry van market position in 2024',
+                                   'Overcapacity held rejection just over 3 percent, the lowest performer '
+                                   'since May 2023',
+                                   'Thinnest margin of the three core trailers, so niche equipment carries '
+                                   'the upside',
+                                   'AFT Dispatch ([Gx_gladG4ps @ 00:06:00])'],
+                                  ['Flatbed contract market direction',
+                                   'Tightening, with 2023 rejection over 10 percent and three spikes to 20 '
+                                   'percent',
+                                   'Expect improvement from late February or early March plus bigger price '
+                                   'swings',
+                                   'AFT Dispatch ([Gx_gladG4ps @ 00:01:39])'],
+                                  ['Reefer pricing for new brokers',
+                                   'Priced the same way as van or flatbed; the marketplace corrects a '
+                                   'wrong number',
+                                   'No reefer network needed; post good-paying freight and supply only the '
+                                   'temperature',
+                                   'Brandon Scott ([xPxwiwivMXE @ 00:03:33])'],
+                                  ['Reefer booking questions before tendering',
+                                   'Confirm exact commodity, temperature, pre-cool, continuous mode, air '
+                                   'chute and e-tracks',
+                                   'Some drivers refuse meat, fish or watermelons; long dwell and '
+                                   'overnight appointments are normal',
+                                   'Never Stop Trucking ([K5sqFMIL3IQ @ 00:06:20])'],
+                                  ['Drayage credentials for brokers and carriers',
+                                   'SCAC for both sides, UIIA for carriers only, TWIC cards for port '
+                                   'drivers',
+                                   'Delays in pickup, delivery or container return incur fees that '
+                                   'truckload never charges',
+                                   'FreightBrokers ([N1uEW-kxNvE @ 00:02:16])'],
+                                  ['Drayage carrier build sequence',
+                                   'Authority, UIIA-friendly insurance, SCAC, UIIA, then a LoadMatch '
+                                   'listing, in that order',
+                                   'Posting truck capacity on LoadMatch brings 200 to 300 broker emails to '
+                                   'the carrier',
+                                   'CONGO EXPRESS ([vSgjLSdmTKc @ 00:07:31])']]}},
+              {'heading': 'Section 2: Exact Street Mechanics, Tools & Numbers',
+               'paragraphs': ['On the load boards, the mechanics are arithmetic plus speed. Real Trucking '
+                              'Money runs both DAT and Truckstop because good loads book in minutes, '
+                              'searches a 100-mile radius by equipment, and grades every post on three '
+                              'numbers: true rate, meaning total pay over all miles including deadhead, '
+                              'the deadhead itself, and broker pay history, where 3 days at $2.80 beats 45 '
+                              'days at $3.10 [Xi2gMYEX18k @ 00:04:39]. Dispatch Desk USA shows the math: '
+                              '$1,600 for 400 loaded miles is $4 a mile, but adding 100 deadhead miles '
+                              'drops it to $3.20 per all miles, which then gets compared against a '
+                              'cost-plus-profit floor [w4fpPCLZG_I @ 00:04:29]. Cole Fairbrook sets the '
+                              "floor bluntly: $2.35 a mile is 'pretty much a loss,' a truck 'really got to "
+                              "be over the 250 mark,' 263 is barely above break-even, and a Tampa load at "
+                              "1.88 means 'paying the broker' [bEWh0t-c_5o @ 00:20:05]. Fairbrook filters "
+                              'Truckstop at a $3 minimum and a 250 to 500-mile length of haul, prices '
+                              'deadhead into the counter, and uses the paid Load Hunter Chrome extension, '
+                              'whose RPM Plus folds deadhead in and turned a 394 post into 376 '
+                              '[bEWh0t-c_5o @ 00:13:40]. Dispatch Desk USA adds that DAT wins on van and '
+                              'reefer volume while Truckstop is stronger in flatbed and open deck, so the '
+                              'trailer type decides which board gets checked first [w4fpPCLZG_I @ '
+                              '00:01:31].',
+                              'Dispatching & Intermodal Training bid a Houston port to Wylie, Texas lane '
+                              'live, and the sequence is replicable. Mileage comes from Google Maps by zip '
+                              'code, with a check on whether the carrier has an EZ tag for tolls; the '
+                              '299-mile estimate rounds to 300, and because dray miles are doubled for the '
+                              'round trip, the quote is built on 600 miles with no backhaul needed '
+                              '[SvfUq9Udy60 @ 00:03:31]. No target rate came with the request, so new '
+                              'dispatchers should ask the broker for one. Market sat near $2.80 a mile, '
+                              "carriers want about $3, which is 'hard to get,' and the stated rule is to "
+                              'bid high because the broker will negotiate down. Yet 600 times 2.80 '
+                              'produced $1,680 linehaul, which the speaker judged too high and likely to '
+                              'be overlooked [SvfUq9Udy60 @ 00:05:40]. The final bid was $1,450, anchored '
+                              'to a nearby Grapevine run at about $1,400 less than two weeks earlier '
+                              '[SvfUq9Udy60 @ 00:06:30]. Accessorials then go on top: chassis at about $25 '
+                              'a day doubled to $50, storage at truck-parking rate times two for $50, an '
+                              'overweight fee even on a declared-legal load, $125 pre-pull, and $60 an '
+                              'hour detention after 2 hours [SvfUq9Udy60 @ 00:08:00]. Freightskills '
+                              'explains why those lines matter: carriers borrow the chassis and box from '
+                              'the steamship line and port, carry the fee liability, and pass it to the '
+                              'broker [o6WTbGsyLqg @ 00:08:43].',
+                              'For import boxes, Drayage Academy lays out a 12-step workflow that starts '
+                              'with the delivery order, covering number, container, steamship line, '
+                              'weight, size, type, terminal and delivery location, then holds, fees and '
+                              'gate PIN, then confirming that customs, the steamship line and the terminal '
+                              'have all released the box [fhPReUtDXkI @ 00:01:54]. The last free date is '
+                              "the hinge, because the carrier is liable if it misses an agreed pickup: 'So "
+                              "don't miss your LFD' [fhPReUtDXkI @ 00:04:54]. The back half covers chassis "
+                              'inspection and the EIR, container and seal verification, the out-gate EIR, '
+                              'logged appointment times for detention, the signed delivery order, the '
+                              'empty-return location from the steamship line, and the in-gate EIR proving '
+                              'the empty was accepted [fhPReUtDXkI @ 00:08:18]. On exports, Victor Mason '
+                              "reads the booking as 'a reservation of space' on a specific vessel, "
+                              'identifies lines by prefix, CMAU for CMA, 038BM for MSC and ONEYU for ONE, '
+                              'and tracks ERD as the opening of the receiving window, cargo cutoff as the '
+                              'last receiving day, and doc cutoff as the customs deadline [o2G4zRoNHt4 @ '
+                              "00:12:10]. Mason's prospecting method is to drive a 3 to 5-mile radius "
+                              'around the port listing businesses with containers parked outside, while '
+                              'Freightskills uses Import Yeti as a free lead source that likely needs no '
+                              'account [o2G4zRoNHt4 @ 00:33:03] [o6WTbGsyLqg @ 00:05:11].'],
+               'table': {'caption': 'Street numbers and tools the practitioners use to price and book '
+                                    'niche freight',
+                         'headers': ['Tool Or Number',
+                                     'Exact Mechanic',
+                                     'How Operators Use It',
+                                     'Expert Source'],
+                         'rows': [['True rate per all miles',
+                                   '$1,600 over 400 loaded plus 100 deadhead miles equals $3.20 per mile',
+                                   'Compare the all-miles figure against your cost-plus-profit floor '
+                                   'before calling the broker',
+                                   'Dispatch Desk USA ([w4fpPCLZG_I @ 00:04:50])'],
+                                  ['Dry van break-even floor',
+                                   '$2.35 a mile is pretty much a loss; trucks must clear the 250 mark',
+                                   'Counter anything near 263 or below; a 1.88 load means paying the '
+                                   'broker',
+                                   'Cole Fairbrook ([bEWh0t-c_5o @ 00:20:22])'],
+                                  ['Load Hunter RPM Plus extension',
+                                   'Paid Chrome extension folds deadhead into the rate, turning 394 into '
+                                   '376',
+                                   'Read the deadhead-adjusted number instead of the posted rate before '
+                                   'negotiating up',
+                                   'Cole Fairbrook ([bEWh0t-c_5o @ 00:13:40])'],
+                                  ['Truckstop subscription tiers and pricing',
+                                   'Basic $42 per user monthly, Advanced $135, Pro $159, plus $42 '
+                                   'application fee',
+                                   'Application fee credits to the first month; Rate Insights sits on the '
+                                   'Pro plan',
+                                   'Dispatch Desk USA ([w4fpPCLZG_I @ 00:00:49])'],
+                                  ['Drayage round-trip mileage build',
+                                   'Google Maps by zip code, 299 rounds to 300, doubled to 600 miles',
+                                   'Quote the round trip so the carrier needs no backhaul on the lane',
+                                   'Dispatching & Intermodal Training ([SvfUq9Udy60 @ 00:03:31])'],
+                                  ['Drayage accessorial stack on the quote',
+                                   'Chassis $50, storage $50, pre-pull $125, detention $60 per hour after '
+                                   '2 hours',
+                                   'Add an overweight fee even when the load is declared legal weight',
+                                   'Dispatching & Intermodal Training ([SvfUq9Udy60 @ 00:08:00])'],
+                                  ['LoadMatch drayage board subscription',
+                                   'About $600 per year or about $150 per three months of access',
+                                   'Post chassis and power-only capacity and let 200 to 300 brokers email '
+                                   'in',
+                                   'CONGO EXPRESS ([vSgjLSdmTKc @ 00:03:57])']]},
+               'callout': {'kind': 'INSIDER PRO-TIPS',
+                           'title': 'Desk-Level Edges From The Load Boards And The Port',
+                           'body': 'Small moves the practitioners use to find, price and pitch niche '
+                                   'freight faster than the next desk.',
+                           'items': ['Call the newest postings first, and read the posting comments, which '
+                                     'hide costs such as tarps, lumpers and appointments [Dispatch Desk '
+                                     'USA — w4fpPCLZG_I @ 00:03:35].',
+                                     "Let the broker quote first, ask for $3.10, then go quiet: 'Silence "
+                                     "is your friend on the phone,' and sometimes 10% is sitting there "
+                                     'that was not offered up front [Real Trucking Money — Xi2gMYEX18k @ '
+                                     '00:06:28].',
+                                     '53-foot trailers are scarce, so brokers raise rates to cover them, '
+                                     'while 48-foot trailers are more versatile; on short hauls cut the '
+                                     'deadhead filter to 75 miles [Cole Fairbrook — bEWh0t-c_5o @ '
+                                     '00:28:15].',
+                                     "On drayage sales calls, say you have 'capacity,' never 'empties' "
+                                     '[Victor Mason — o2G4zRoNHt4 @ 01:14:06].']},
+               'sop_steps': [{'step': 1,
+                              'title': 'Pull the free market read',
+                              'action': 'Check the weekly national report and state-level loads in versus '
+                                        'loads out before choosing lanes.',
+                              'detail': 'Use dat.com, Resources, Blogs for the free weekly report and the '
+                                        'Dean Croke video, then read the DAT state dashboard, where '
+                                        'Alabama showed 392 loads in against 2,063 out and Texas had fewer '
+                                        'than half of 3,500 deliveries reloading [Cole Fairbrook — '
+                                        'bEWh0t-c_5o @ 00:00:49].'},
+                             {'step': 2,
+                              'title': 'Screen both boards every morning',
+                              'action': 'Spend 15 minutes on DAT and 15 on Truckstop with tight filters on '
+                                        'radius, equipment and pickup date.',
+                              'detail': 'A good load is posted within the hour, above the lane average, '
+                                        'with a reasonable window and short deadhead; a $1.80 post on a '
+                                        '$2.50-average lane or a post sitting 6 hours unbooked is a red '
+                                        'flag [Real Trucking Money — Xi2gMYEX18k @ 00:03:09].'},
+                             {'step': 3,
+                              'title': 'Price on all miles and verify the broker',
+                              'action': 'Convert every offer to rate per all miles, check pay history and '
+                                        'authority, and lock the rate in writing.',
+                              'detail': 'Verify MC authority on FMCSA SAFER even for Book It Now loads, '
+                                        'get the rate confirmation in writing, and treat rates far above '
+                                        'market, vague postings and bad factorability as red flags '
+                                        '[Dispatch Desk USA — w4fpPCLZG_I @ 00:05:31].'},
+                             {'step': 4,
+                              'title': 'Quote and run the dray move',
+                              'action': 'Build the round-trip linehaul, stack accessorials, then manage '
+                                        'LFD, EIRs and the empty return.',
+                              'detail': 'Anchor linehaul to recent nearby runs, as with the $1,450 Wylie '
+                                        'bid [Dispatching & Intermodal Training — SvfUq9Udy60 @ 00:06:30], '
+                                        'then confirm the LFD and get the empty-return location from the '
+                                        'steamship line, because the empty does not always go back to the '
+                                        'terminal where it was picked up [Drayage Academy — fhPReUtDXkI @ '
+                                        '00:08:18].'}]},
+              {'title': 'Section 3: Where Practitioners Disagree & Alternative Playbooks',
+               'paragraphs': ['The sharpest split is over whether dry van is worth running at all. Bobby '
+                              'Loads, fielding a caller with three trucks spread across flatbed, reefer '
+                              'and van, says that if starting over they would stay away from dry van '
+                              '[jxL6kaRxoEo @ 00:00:00]. Yet the same channel reports its own van '
+                              'averaging 240 a mile, up from 210, and credits non-domiciled drivers '
+                              'leaving the market for the bump [jxL6kaRxoEo @ 00:04:54]. AFT Dispatch '
+                              'frames van as the weakest segment on paper: tender rejection just over 3%, '
+                              'overcapacity, and the lowest performer since May 2023 [Gx_gladG4ps @ '
+                              '00:06:00]. AFT then shows a van booking for Reggie at 545 a mile on short '
+                              'runs and 402 on the week, so a sharp desk can still beat a soft segment, a '
+                              "point Thomas sums up as 'all an averages game.' Brandon Scott pushes back "
+                              'on the idea that reefer is a separate science: reefer gets priced exactly '
+                              'the way van or flatbed does, reefer fuel does not need precise math, and '
+                              "the broker should take a number to the marketplace, which 'will correct "
+                              "your price' [xPxwiwivMXE @ 00:03:33]. For an operator, segment averages set "
+                              'the backdrop, but lane selection and booking discipline decide whether a '
+                              'given equipment type pays.',
+                              'How much a broker must know about the reefer box itself is where Brandon '
+                              'Scott and Never Stop Trucking split hardest. Brandon Scott, whose first '
+                              'freight was reefer with no prior experience, says no dedicated reefer '
+                              'network is needed: post good-paying freight on a load board, and the driver '
+                              'sets and maintains the unit while the broker only supplies the temperature '
+                              '[xPxwiwivMXE @ 00:05:05]. Ennis at Never Stop Trucking runs a far heavier '
+                              'checklist: confirm the exact commodity because some drivers refuse meat, '
+                              'fish or watermelons, then confirm temperature, pre-cool, continuous run, '
+                              'air chute and e-tracks, and expect long dwell times, overnight appointments '
+                              'and multi-stop runs in exchange for higher pay [K5sqFMIL3IQ @ 00:06:20]. '
+                              'Ennis also warns that temperature trackers can produce a rejected load and '
+                              'an insurance claim. On damage, Brandon Scott argues reefer carries no '
+                              'special curse: most damage comes from forklifts during loading and '
+                              'unloading, a shipper may simply write off damaged boxes, and risk follows '
+                              'the commodity, such as potatoes, rather than the trailer type [xPxwiwivMXE '
+                              '@ 00:02:01]. Bobby Loads adds a seasonal twist that blurs the line '
+                              'entirely: Christmas-tree freight that ships dry flips to reefer once '
+                              'freezes hit, so the equipment a lane demands can change in the middle of a '
+                              'season [jxL6kaRxoEo @ 00:02:04].',
+                              'Drayage practitioners split on paperwork, carrier sourcing and pricing '
+                              'posture. FreightBrokers tells brokers and carriers alike to get a SCAC code '
+                              'through nmfta.org for about an $80 fee [N1uEW-kxNvE @ 00:02:16], while '
+                              'Freightskills states that brokers technically need no license to contract a '
+                              'drayage carrier, yet still recommends the four-letter NMFTA SCAC at about '
+                              '$70 [o6WTbGsyLqg @ 00:07:47]. On sourcing, CONGO EXPRESS calls '
+                              "loadmatch.com 'the best kept secret,' reports 200 to 300 broker emails "
+                              'after posting truck capacity, and pays about $600 a year or about $150 per '
+                              'three months [vSgjLSdmTKc @ 00:00:30]. Freightskills, claiming no '
+                              'affiliation, calls the same site dated, noting carrier names are free while '
+                              'contacts sit behind a paid tier. Pricing posture diverges too. Dispatching '
+                              "& Intermodal Training says carriers want about $3 a mile, which is 'hard to "
+                              "get,' and advises bidding high because the broker will negotiate down. Yet "
+                              'on a Houston-port-to-Wylie lane, the speaker pulled 299 miles from Google '
+                              'Maps by zip code, rounded to 300, doubled it to 600 for the round trip, '
+                              'priced it at $2.80 for $1,680, judged that too high for the broker to take '
+                              'seriously, and bid $1,450 off a nearby Grapevine run near $1,400 '
+                              '[SvfUq9Udy60 @ 00:06:30].'],
+               'table': {'caption': 'Side-by-side playbooks where equipment-niche practitioners take '
+                                    'opposing positions',
+                         'headers': ['Decision Point', 'Playbook A', 'Playbook B', 'Expert Source'],
+                         'rows': [['Whether dry van is still worth running',
+                                   'Bobby Loads would avoid dry van if starting over and leans toward '
+                                   'reefer or flatbed',
+                                   'AFT Dispatch booked van at 545 per mile on short runs and 402 on the '
+                                   'week despite overcapacity',
+                                   'Bobby Loads ([jxL6kaRxoEo @ 00:00:00]); AFT Dispatch ([Gx_gladG4ps @ '
+                                   '00:07:49])'],
+                                  ['How much reefer equipment knowledge a broker needs',
+                                   'Brandon Scott says the driver sets the unit, the broker only gives the '
+                                   'temperature, and no reefer network is needed',
+                                   'Never Stop Trucking confirms commodity, temperature, pre-cool, '
+                                   'continuous run, air chute and e-tracks on every load',
+                                   'Brandon Scott ([xPxwiwivMXE @ 00:05:05]); Never Stop Trucking '
+                                   '([K5sqFMIL3IQ @ 00:06:20])'],
+                                  ['Which load board to trust as the primary board',
+                                   'Cole Fairbrook finds DAT lane averages extremely accurate and doubts '
+                                   'how Truckstop builds its average',
+                                   'Dispatch Desk USA leans on Truckstop for flatbed, open deck, Book It '
+                                   'Now and days-to-pay data',
+                                   'Cole Fairbrook ([bEWh0t-c_5o @ 00:10:37]); Dispatch Desk USA '
+                                   '([w4fpPCLZG_I @ 00:00:49])'],
+                                  ['Negotiation posture on posted freight',
+                                   'Real Trucking Money lets the broker quote first, then asks for $3.10 '
+                                   'and uses silence on the phone',
+                                   'Dispatch Desk USA says a Book It Now load cannot be negotiated, so '
+                                   'verify authority and book it',
+                                   'Real Trucking Money ([Xi2gMYEX18k @ 00:06:13]); Dispatch Desk USA '
+                                   '([w4fpPCLZG_I @ 00:05:31])'],
+                                  ['Whether a drayage broker needs a SCAC code',
+                                   'FreightBrokers says both brokers and carriers need a SCAC from '
+                                   'nmfta.org for about $80',
+                                   'Freightskills says brokers need no license but should still get the '
+                                   'four-letter SCAC for about $70',
+                                   'FreightBrokers ([N1uEW-kxNvE @ 00:02:16]); Freightskills ([o6WTbGsyLqg '
+                                   '@ 00:07:47])'],
+                                  ['Value of loadmatch.com for drayage capacity',
+                                   'CONGO EXPRESS calls it the best kept secret and gets 200 to 300 broker '
+                                   'emails after posting capacity',
+                                   'Freightskills calls the same site dated, with carrier contacts locked '
+                                   'behind a paid tier',
+                                   'CONGO EXPRESS ([vSgjLSdmTKc @ 00:02:40]); Freightskills ([o6WTbGsyLqg '
+                                   '@ 00:06:46])'],
+                                  ['Which specialized niche to build toward',
+                                   'Chief Carriers says heavy haul is steadier with less undercutting and '
+                                   'project-based pricing power',
+                                   'Drayage Specialist says intermodal fits medium-to-long distances and '
+                                   'dry or bulk goods',
+                                   'Chief Carriers ([7kg1eMOTev8 @ 00:09:22]); Drayage Specialist '
+                                   '([7hSE1PjbOkI @ 00:04:04])']]}},
+              {'title': 'Section 4: Firsthand Failure Modes, Traps & Economics Checks',
+               'paragraphs': ['Load-board traps hit operators who read posted numbers at face value. Cole '
+                              'Fairbrook warns that brokers double- and triple-post loads, inflating '
+                              'apparent volume [bEWh0t-c_5o @ 00:03:05], spots a $15,000 post for 472 '
+                              'miles that is probably a typo for $1,500, and sets hard floors: $2.35 a '
+                              "mile is 'pretty much a loss,' the target has to be over the 250 mark, and "
+                              "Tampa at 1.88 means 'paying the broker' [bEWh0t-c_5o @ 00:20:05]. Real "
+                              'Trucking Money flags a $1.80 post on a $2.50-average lane as a cheap-broker '
+                              'signal, treats $1,200 for 700 miles as under $2 a mile, and says a post '
+                              'sitting six hours unbooked should raise questions [Xi2gMYEX18k @ 00:02:31]. '
+                              'The same channel ranks pay history over headline rate: three days to pay at '
+                              "$2.80 beats 45 days at $3.10, because 'cash flow keeps your truck moving.' "
+                              'Dispatch Desk USA warns that posting comments hide tarps, lumpers and '
+                              "appointments, that 'a posting you cannot run is not a load,' and that even "
+                              'Book It Now loads need an MC authority check on FMCSA SAFER first, plus a '
+                              'written rate confirmation and a hard rule to never pay anyone to book a '
+                              'load [w4fpPCLZG_I @ 00:03:35].',
+                              'Drayage failures are measured in fees that do not exist in truckload. '
+                              'FreightBrokers lists delays at pickup, delivery or container return as the '
+                              'core cost difference from truckload freight [N1uEW-kxNvE @ 00:05:48]. '
+                              'Victor Mason describes a Los Angeles carrier ingating a container on the '
+                              'wrong booking; a dray out runs $500 to $4,000 and up to about $5,000, and '
+                              'because that box sat on top it cost about $700, which Mason deducted from '
+                              "the carrier's invoice [o2G4zRoNHt4 @ 00:07:39]. On CMA reefer boxes in "
+                              'NY/NJ, Mason quotes 3 free days, then $690 a day, then $895, then $1,040, '
+                              'reaching about $13,000 over 14 days, and recalls a customer paying about '
+                              '$30k a month in demurrage who shut that division down. Keisha at Drayage '
+                              'Academy opens with the three classic losses, false port trips, unpaid '
+                              "demurrage and returns to the wrong location, then hammers two rules: 'don't "
+                              "miss your LFD,' since the carrier is liable for a missed agreed pickup, and "
+                              "'do not assume the empty container goes back to the same terminal where you "
+                              "picked it up' [fhPReUtDXkI @ 00:08:18]. Freightskills adds that holding a "
+                              "UIIA 'is not the only part,' and brokers who skip due diligence put "
+                              'themselves in danger [o6WTbGsyLqg @ 00:06:13].',
+                              'Lane and equipment traps punish operators who chase headline rates. Cole '
+                              "Fairbrook's West Coast check found Ogden to Seattle posted at $2,000 "
+                              'against a $2,400 average with only seven loads, and a Portland-to-Denver '
+                              'round trip near $8,500 whose return option was a single load from an '
+                              'unapproved broker [bEWh0t-c_5o @ 00:42:32]; the same speaker warns that van '
+                              'freight hides catches like round trips, 17 drops and 48-hour drop trailers. '
+                              'Bobby Loads avoids California unless the load is something like 3,000 miles '
+                              'for $11K, calling it saturated with undercutting, and notes Southeast '
+                              'flatbed rates stay low because brokers price in the Florida-to-Georgia '
+                              'deadhead [jxL6kaRxoEo @ 00:03:43]. On open deck, Ennis at Never Stop '
+                              'Trucking warns that flatbed loads need frequent securement checks because '
+                              "falling cargo 'can kill someone' [K5sqFMIL3IQ @ 00:10:23]. Andrew Winkler "
+                              'at Chief Carriers lists the heavy-haul bottlenecks: pilot cars, routing, '
+                              'limited operating hours and no moving after dark, and relays that the '
+                              'hardest move the featured owner faced was not a heavy piece but a delicate '
+                              'fiberglass or carbon-fiber load on a stretch trailer [7kg1eMOTev8 @ '
+                              '00:04:02]. That owner reached 15 trucks and about $8 million in revenue, '
+                              'which Winkler calls almost double what a regular flatbed carrier does.'],
+               'table': {'caption': 'Firsthand traps with the dollar math practitioners attached to them',
+                         'headers': ['Trap',
+                                     'What Happened Or Was Measured',
+                                     'Economics Check',
+                                     'Expert Source'],
+                         'rows': [['Booking freight below the operating floor',
+                                   'Cole Fairbrook calls $2.35 per mile pretty much a loss and Tampa at '
+                                   '1.88 paying the broker',
+                                   'Target over the 250 mark; 263 per mile is barely above break-even',
+                                   'Cole Fairbrook ([bEWh0t-c_5o @ 00:20:05])'],
+                                  ['Ignoring deadhead in the posted rate',
+                                   'Load Hunter RPM Plus drops a 394 load to 376 once deadhead miles are '
+                                   'counted',
+                                   'Dispatch Desk USA math: $1,600 over 500 all miles is $3.20, not the $4 '
+                                   'loaded figure',
+                                   'Cole Fairbrook ([bEWh0t-c_5o @ 00:13:40]); Dispatch Desk USA '
+                                   '([w4fpPCLZG_I @ 00:04:29])'],
+                                  ['Chasing a higher rate from a slow-paying broker',
+                                   'Real Trucking Money ranks broker pay history as one of three core '
+                                   'numbers on every load',
+                                   'Three days to pay at $2.80 beats 45 days to pay at $3.10 for cash flow',
+                                   'Real Trucking Money ([Xi2gMYEX18k @ 00:05:17])'],
+                                  ['Ingating a container on the wrong booking number',
+                                   'A Los Angeles carrier ingated a box on the wrong booking and routed it '
+                                   'toward the wrong vessel',
+                                   'Dray out runs $500 to $4,000; this one cost about $700, deducted from '
+                                   'the carrier invoice',
+                                   'Victor Mason ([o2G4zRoNHt4 @ 00:09:47])'],
+                                  ['Letting reefer containers sit past free time',
+                                   'CMA reefer in NY/NJ: 3 free days, then $690, $895 and $1,040 per day',
+                                   'About $13,000 over 14 days; one customer paying about $30k monthly '
+                                   'shut that division',
+                                   'Victor Mason ([o2G4zRoNHt4 @ 01:16:14])'],
+                                  ['Missing the LFD or returning the empty to the wrong place',
+                                   'The carrier is liable for a missed agreed pickup, and the empty may go '
+                                   'to a different terminal',
+                                   'Get the return location from the steamship line and keep the in-gate '
+                                   'EIR as proof',
+                                   'Drayage Academy ([fhPReUtDXkI @ 00:04:15])'],
+                                  ['Assuming one UIIA agreement covers every port',
+                                   'Freightskills says UIIA is port-specific; a California agreement may '
+                                   'not get a carrier into Chicago',
+                                   'Confirm the carrier holds SCAC, UIIA, insurance and TWIC for that '
+                                   'specific port',
+                                   'Freightskills ([o6WTbGsyLqg @ 00:10:23])']]},
+               'callout': {'kind': 'OPERATOR GATE',
+                           'title': 'Four Gates Before Any Equipment-Niche Load Moves',
+                           'body': 'Each gate below comes from a loss, near-miss or hard floor a '
+                                   'practitioner reported. Clear all four before the rate confirmation is '
+                                   'signed or the truck rolls to the port.',
+                           'items': ['Run the all-miles rate including deadhead and walk away below the '
+                                     '250 mark, since $2.35 per mile is pretty much a loss [Cole Fairbrook '
+                                     '— bEWh0t-c_5o @ 00:20:22].',
+                                     'Verify MC authority on FMCSA SAFER and broker pay history before '
+                                     'booking, even on Book It Now loads, and never pay anyone to book a '
+                                     'load [Dispatch Desk USA — w4fpPCLZG_I @ 00:05:31].',
+                                     'Confirm the container is released, the LFD, holds and fees, and the '
+                                     'empty-return location from the steamship line before dispatching a '
+                                     'pickup [Drayage Academy — fhPReUtDXkI @ 00:04:15].',
+                                     'Match the booking number to the reserved vessel before ingate, '
+                                     'because the wrong booking triggers a dray out of $500 to $4,000 '
+                                     '[Victor Mason — o2G4zRoNHt4 @ 00:06:02].']}}],
+ 'pull_quote': '"You get opportunity in [dray] just because other people don\'t know how to do it." — '
+               'Victor Mason (o2G4zRoNHt4 @ 00:30:53)',
+ 'diagram_id': 'diag-05',
+ 'action_checklist': ['Spend 15 minutes on both DAT and Truckstop every morning, searching a 100-mile '
+                      'radius by exact equipment, because good loads book in minutes [Real Trucking Money '
+                      '— Xi2gMYEX18k @ 00:03:29].',
+                      'Compute the true rate as total pay divided by all miles including deadhead, and '
+                      'compare it to your cost-plus-profit floor before calling [Dispatch Desk USA — '
+                      'w4fpPCLZG_I @ 00:04:29].',
+                      'Price deadhead into the rate and negotiate the broker up toward the DAT lane '
+                      'average instead of accepting the posted number [Cole Fairbrook — bEWh0t-c_5o @ '
+                      '00:23:27].',
+                      'On flatbed, confirm trailer length, spread-axle weight distribution, dimensions, '
+                      'state overhang rules, and straps, chains and tarps before booking [Never Stop '
+                      'Trucking — K5sqFMIL3IQ @ 00:00:45].',
+                      'Quote intermodal by doubling zip-code miles for the round trip, then add chassis at '
+                      '$50, storage at $50, an overweight fee, $125 pre-pull and $60 per hour detention '
+                      'after 2 hours [Dispatching & Intermodal Training — SvfUq9Udy60 @ 00:08:00].',
+                      'Prospect drayage shippers with free Import Yeti leads and by driving a 3-5 mile '
+                      'radius around the port listing businesses with containers outside [Freightskills — '
+                      'o6WTbGsyLqg @ 00:05:11] [Victor Mason — o2G4zRoNHt4 @ 00:33:03].'],
+ 'statutory_citations': [{'title': 'Victor Mason — Mastering Drayage: A Step by Step Guide for Beginning '
+                                   'Freight Brokers [01:16:14]',
+                          'url': 'https://www.youtube.com/watch?v=o2G4zRoNHt4&t=4574s',
+                          'relevance': 'Primary practitioner testimony on booking numbers, dray-out costs, '
+                                       'reefer demurrage schedules and drayage prospecting math.'},
+                         {'title': 'Drayage Academy — Import Containers Explained: From Port Pickup to '
+                                   'Empty Return #drayage #portlife #owneroperators [00:01:54]',
+                          'url': 'https://www.youtube.com/watch?v=fhPReUtDXkI&t=114s',
+                          'relevance': 'Primary practitioner testimony on the 12-step import container '
+                                       'workflow, LFD liability and empty-return verification.'},
+                         {'title': 'Cole Fairbrook — LoadBoard Video September 23 2026 Truck-Stop VS DAT '
+                                   '[00:10:37]',
+                          'url': 'https://www.youtube.com/watch?v=bEWh0t-c_5o&t=637s',
+                          'relevance': 'Primary practitioner testimony on DAT versus Truckstop rate '
+                                       'accuracy, per-mile floors and West Coast lane traps.'},
+                         {'title': 'Dispatching & Intermodal Training — Freight Dispatcher | Bidding '
+                                   'Intermodal Lane LIVE [00:06:30]',
+                          'url': 'https://www.youtube.com/watch?v=SvfUq9Udy60&t=390s',
+                          'relevance': 'Primary practitioner testimony on live intermodal lane bidding, '
+                                       'round-trip mileage math and accessorial pricing.'}],
+ 'source_citations': [{'source_type': 'video_pro_tip',
+                       'video_id': 'bEWh0t-c_5o',
+                       'title': 'LoadBoard Video September 23 2026 Truck-Stop VS DAT',
+                       'channel': 'Cole Fairbrook',
+                       'author': 'Cole Fairbrook',
+                       'text': "I found DAT's number here to be extremely accurate.",
+                       'tip': "I found DAT's number here to be extremely accurate.",
+                       'timestamp': 637,
+                       'timestamp_seconds': 637,
+                       'timestamp_label': '[00:10:37]',
+                       'url': 'https://www.youtube.com/watch?v=bEWh0t-c_5o&t=637s',
+                       'markdown': '[00:10:37](https://www.youtube.com/watch?v=bEWh0t-c_5o&t=637s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q9.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'xPxwiwivMXE',
+                       'title': 'REEFER Freight: What Newbie Freight Brokers Need To Know',
+                       'channel': 'Brandon Scott',
+                       'author': 'Brandon Scott',
+                       'text': 'Take your number to the marketplace, and the marketplace will correct your '
+                               'price.',
+                       'tip': 'Take your number to the marketplace, and the marketplace will correct your '
+                              'price.',
+                       'timestamp': 213,
+                       'timestamp_seconds': 213,
+                       'timestamp_label': '[00:03:33]',
+                       'url': 'https://www.youtube.com/watch?v=xPxwiwivMXE&t=213s',
+                       'markdown': '[00:03:33](https://www.youtube.com/watch?v=xPxwiwivMXE&t=213s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q9.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': '7kg1eMOTev8',
+                       'title': 'Unlocking Higher Pay in Oversized Freight',
+                       'channel': 'Chief Carriers',
+                       'author': 'Chief Carriers',
+                       'text': 'So, he said 15 trucks last year, he was right at $8 million in revenue.',
+                       'tip': "When you do the math, that's almost double what a regular flatbed carrier "
+                              'does.',
+                       'timestamp': 368,
+                       'timestamp_seconds': 368,
+                       'timestamp_label': '[00:06:08]',
+                       'url': 'https://www.youtube.com/watch?v=7kg1eMOTev8&t=368s',
+                       'markdown': '[00:06:08](https://www.youtube.com/watch?v=7kg1eMOTev8&t=368s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q9.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'jxL6kaRxoEo',
+                       'title': 'Why I’m Done With Dry Van: Reefer vs Flatbed in 2026',
+                       'channel': 'Bobby Loads',
+                       'author': 'Bobby Loads',
+                       'text': "I avoid California unless it's something like 3,000 miles for $11K, "
+                               "because it's saturated and everybody is undercutting.",
+                       'tip': "I avoid California unless it's something like 3,000 miles for $11K, because "
+                              "it's saturated and everybody is undercutting.",
+                       'timestamp': 223,
+                       'timestamp_seconds': 223,
+                       'timestamp_label': '[00:03:43]',
+                       'url': 'https://www.youtube.com/watch?v=jxL6kaRxoEo&t=223s',
+                       'markdown': '[00:03:43](https://www.youtube.com/watch?v=jxL6kaRxoEo&t=223s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q9.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'Gx_gladG4ps',
+                       'title': "2024 Freight Market: We're Looking at Flatbeds, Vans, and Reefers",
+                       'channel': 'AFT Dispatch',
+                       'author': 'AFT Dispatch',
+                       'text': 'The contract-to-spot differential right now is 14.8%.',
+                       'tip': 'The contract-to-spot differential right now is 14.8%.',
+                       'timestamp': 413,
+                       'timestamp_seconds': 413,
+                       'timestamp_label': '[00:06:53]',
+                       'url': 'https://www.youtube.com/watch?v=Gx_gladG4ps&t=413s',
+                       'markdown': '[00:06:53](https://www.youtube.com/watch?v=Gx_gladG4ps&t=413s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q9.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'K5sqFMIL3IQ',
+                       'title': 'Booking reefer loads vs. flatbed loads vs. dry van loads',
+                       'channel': 'Never Stop Trucking',
+                       'author': 'Never Stop Trucking',
+                       'text': 'Check your flatbed securement often, because cargo falling off that '
+                               'trailer can kill someone.',
+                       'tip': 'Check your flatbed securement often, because cargo falling off that trailer '
+                              'can kill someone.',
+                       'timestamp': 623,
+                       'timestamp_seconds': 623,
+                       'timestamp_label': '[00:10:23]',
+                       'url': 'https://www.youtube.com/watch?v=K5sqFMIL3IQ&t=623s',
+                       'markdown': '[00:10:23](https://www.youtube.com/watch?v=K5sqFMIL3IQ&t=623s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q9.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'N1uEW-kxNvE',
+                       'title': 'What is Drayage? 4 Tips Every Freight Broker Must Know About the Drayage '
+                                'Freight Niche!',
+                       'channel': 'FreightBrokers',
+                       'author': 'FreightBrokers',
+                       'text': 'Delays in pickup, delivery or returning the container incur fees, which is '
+                               'different from truckload.',
+                       'tip': 'Delays in pickup, delivery or returning the container incur fees, which is '
+                              'different from truckload.',
+                       'timestamp': 348,
+                       'timestamp_seconds': 348,
+                       'timestamp_label': '[00:05:48]',
+                       'url': 'https://www.youtube.com/watch?v=N1uEW-kxNvE&t=348s',
+                       'markdown': '[00:05:48](https://www.youtube.com/watch?v=N1uEW-kxNvE&t=348s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q9.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'fhPReUtDXkI',
+                       'title': 'Import Containers Explained: From Port Pickup to Empty Return #drayage '
+                                '#portlife #owneroperators',
+                       'channel': 'Drayage Academy',
+                       'author': 'Drayage Academy',
+                       'text': "So don't miss your LFD.",
+                       'tip': "So don't miss your LFD.",
+                       'timestamp': 294,
+                       'timestamp_seconds': 294,
+                       'timestamp_label': '[00:04:54]',
+                       'url': 'https://www.youtube.com/watch?v=fhPReUtDXkI&t=294s',
+                       'markdown': '[00:04:54](https://www.youtube.com/watch?v=fhPReUtDXkI&t=294s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q9.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'fhPReUtDXkI',
+                       'title': 'Import Containers Explained: From Port Pickup to Empty Return #drayage '
+                                '#portlife #owneroperators',
+                       'channel': 'Drayage Academy',
+                       'author': 'Drayage Academy',
+                       'text': 'Do not assume the empty container goes back to the same terminal where you '
+                               'picked it up.',
+                       'tip': 'Do not assume the empty container goes back to the same terminal where you '
+                              'picked it up.',
+                       'timestamp': 498,
+                       'timestamp_seconds': 498,
+                       'timestamp_label': '[00:08:18]',
+                       'url': 'https://www.youtube.com/watch?v=fhPReUtDXkI&t=498s',
+                       'markdown': '[00:08:18](https://www.youtube.com/watch?v=fhPReUtDXkI&t=498s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q9.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'sv8u2e9X6Oc',
+                       'title': 'What Is Drayage? Understanding Its Importance in Shipping and Logistics',
+                       'channel': 'Drayage Specialist',
+                       'author': 'Drayage Specialist',
+                       'text': 'Specialist drayage carriers understand port operations and the permits '
+                               'involved.',
+                       'tip': 'Specialist drayage carriers understand port operations and the permits '
+                              'involved.',
+                       'timestamp': 76,
+                       'timestamp_seconds': 76,
+                       'timestamp_label': '[00:01:16]',
+                       'url': 'https://www.youtube.com/watch?v=sv8u2e9X6Oc&t=76s',
+                       'markdown': '[00:01:16](https://www.youtube.com/watch?v=sv8u2e9X6Oc&t=76s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q9.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'vSgjLSdmTKc',
+                       'title': 'How to find drayage / intermodal loads',
+                       'channel': 'CONGO EXPRESS',
+                       'author': 'CONGO EXPRESS',
+                       'text': 'LoadMatch is the best kept secret for finding drayage and intermodal '
+                               'loads.',
+                       'tip': 'LoadMatch is the best kept secret for finding drayage and intermodal loads.',
+                       'timestamp': 30,
+                       'timestamp_seconds': 30,
+                       'timestamp_label': '[00:00:30]',
+                       'url': 'https://www.youtube.com/watch?v=vSgjLSdmTKc&t=30s',
+                       'markdown': '[00:00:30](https://www.youtube.com/watch?v=vSgjLSdmTKc&t=30s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q9.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': '7hSE1PjbOkI',
+                       'title': 'Intermodal Transportation Simplified: How It Works and Why It Matters',
+                       'channel': 'Drayage Specialist',
+                       'author': 'Drayage Specialist',
+                       'text': 'Choose intermodal for medium-to-long distances and for dry or bulk goods.',
+                       'tip': 'Choose intermodal for medium-to-long distances and for dry or bulk goods.',
+                       'timestamp': 244,
+                       'timestamp_seconds': 244,
+                       'timestamp_label': '[00:04:04]',
+                       'url': 'https://www.youtube.com/watch?v=7hSE1PjbOkI&t=244s',
+                       'markdown': '[00:04:04](https://www.youtube.com/watch?v=7hSE1PjbOkI&t=244s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q9.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'SvfUq9Udy60',
+                       'title': 'Freight Dispatcher | Bidding Intermodal Lane LIVE',
+                       'channel': 'Dispatching & Intermodal Training',
+                       'author': 'Dispatching & Intermodal Training',
+                       'text': 'Okay, so 300 times 2 is 600.',
+                       'tip': 'Even if we were going to go by the 288, I will still just round it to 300.',
+                       'timestamp': 211,
+                       'timestamp_seconds': 211,
+                       'timestamp_label': '[00:03:31]',
+                       'url': 'https://www.youtube.com/watch?v=SvfUq9Udy60&t=211s',
+                       'markdown': '[00:03:31](https://www.youtube.com/watch?v=SvfUq9Udy60&t=211s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q9.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'o6WTbGsyLqg',
+                       'title': 'What is Container Drayage | Freight Broker Edition',
+                       'channel': 'Freightskills',
+                       'author': 'Freightskills',
+                       'text': 'Now for the good news is as a broker there are technically no licenses you '
+                               'need in order to contract a carrier to do it.',
+                       'tip': 'Now for the good news is as a broker there are technically no licenses you '
+                              'need in order to contract a carrier to do it.',
+                       'timestamp': 467,
+                       'timestamp_seconds': 467,
+                       'timestamp_label': '[00:07:47]',
+                       'url': 'https://www.youtube.com/watch?v=o6WTbGsyLqg&t=467s',
+                       'markdown': '[00:07:47](https://www.youtube.com/watch?v=o6WTbGsyLqg&t=467s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q9.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'o2G4zRoNHt4',
+                       'title': 'Mastering Drayage: A Step by Step Guide for Beginning Freight Brokers',
+                       'channel': 'Victor Mason',
+                       'author': 'Victor Mason',
+                       'text': 'You would always say that you have capacity.',
+                       'tip': 'You would always say that you have capacity.',
+                       'timestamp': 4446,
+                       'timestamp_seconds': 4446,
+                       'timestamp_label': '[01:14:06]',
+                       'url': 'https://www.youtube.com/watch?v=o2G4zRoNHt4&t=4446s',
+                       'markdown': '[01:14:06](https://www.youtube.com/watch?v=o2G4zRoNHt4&t=4446s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q9.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'o2G4zRoNHt4',
+                       'title': 'Mastering Drayage: A Step by Step Guide for Beginning Freight Brokers',
+                       'channel': 'Victor Mason',
+                       'author': 'Victor Mason',
+                       'text': "You get opportunity in dray just because other people don't know how to do "
+                               'it.',
+                       'tip': "You get opportunity in dray just because other people don't know how to do "
+                              'it.',
+                       'timestamp': 1853,
+                       'timestamp_seconds': 1853,
+                       'timestamp_label': '[00:30:53]',
+                       'url': 'https://www.youtube.com/watch?v=o2G4zRoNHt4&t=1853s',
+                       'markdown': '[00:30:53](https://www.youtube.com/watch?v=o2G4zRoNHt4&t=1853s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q9.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'Xi2gMYEX18k',
+                       'title': 'How I Find $3,200/Day Loads on DAT (Full Walkthrough)',
+                       'channel': 'Real Trucking Money',
+                       'author': 'Real Trucking Money',
+                       'text': "Someone's trying to move freight cheap and cheap freight means cheap "
+                               'brokers.',
+                       'tip': "Someone's trying to move freight cheap and cheap freight means cheap "
+                              'brokers.',
+                       'timestamp': 151,
+                       'timestamp_seconds': 151,
+                       'timestamp_label': '[00:02:31]',
+                       'url': 'https://www.youtube.com/watch?v=Xi2gMYEX18k&t=151s',
+                       'markdown': '[00:02:31](https://www.youtube.com/watch?v=Xi2gMYEX18k&t=151s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q9.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'w4fpPCLZG_I',
+                       'title': 'Truckstop Load Board Tutorial: Find the Loads DAT Misses in 2026',
+                       'channel': 'Dispatch Desk USA',
+                       'author': 'Dispatch Desk USA',
+                       'text': 'Never pay anyone to book a load.',
+                       'tip': 'Never pay anyone to book a load.',
+                       'timestamp': 438,
+                       'timestamp_seconds': 438,
+                       'timestamp_label': '[00:07:18]',
+                       'url': 'https://www.youtube.com/watch?v=w4fpPCLZG_I&t=438s',
+                       'markdown': '[00:07:18](https://www.youtube.com/watch?v=w4fpPCLZG_I&t=438s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q9.'}]}

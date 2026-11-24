@@ -1,650 +1,802 @@
 from __future__ import annotations
 
-CHAPTER_2 = {
-    "id": "Q2",
-    "chapter_id": "Q2",
-    "chapter_number": 2,
-    "question_number": 2,
-    "slug": "who-pays-why-they-pay-and-payment-rail-mechanics",
-    "question_prompt": "Who writes the check in automated e-commerce, what acute financial or statutory pain forces them to pay, and how do funds clear cleanly without circumvention or non-payment?",
-    "kicker": "Q2 / THE BIG MONEY PLAYBOOKS",
-    "title": "Who Pays, Why They Pay & How the Payment Rail Works",
-    "subtitle": "Underwrite Buyer Authority, Shopify and ACH Settlement, Authorized Allocations, and 3PL Release Controls Under 16 CFR Part 435",
-    "layout_template": "executive_summary",
-    "reading_time_minutes": 14,
-    "executive_summary": (
-        "Candidate #28, Automated E-Commerce, ranks #21 with a Money-to-Manpower Score of "
-        "85/100. Its 18 mapped plays are opportunities to underwrite, not permission to bypass "
-        "purchase restrictions. Consumers pay for authentic inventory, delivery certainty, and "
-        "convenience; wholesale buyers pay for documented supply and resale margin. The operator "
-        "earns retail sales net of refunds, not processor float, sales taxes, or financed principal. "
-        "Conservative annual owner profit is $12,500 on $250,000 revenue; Base is $129,375 on "
-        "$1,125,000; Scaled is $360,000 on $2,000,000. This chapter connects purchasing authority, "
-        "eight settlement structures, contribution math, and enforceable payment records. The "
-        "practical edge is a lean authorized-dealer operation that releases inventory against "
-        "verified payment, preserves dispute evidence, and turns fulfilled orders into measurable "
-        "retention without manufacturing demand or evading allocation rules."
-    ),
-    "key_metrics": [
-        {
-            "label": "Conservative",
-            "value": "$250,000",
-            "context": "Annual retail sales net of refunds; goods, fulfillment, and advertising included in margin",
-            "note": "5% net margin; $12,500 annual owner net profit; 2 FT + 3 C",
-        },
-        {
-            "label": "Base",
-            "value": "$1,125,000",
-            "context": "Annual retail sales net of refunds; goods, fulfillment, and advertising included in margin",
-            "note": "11.5% net margin; $129,375 annual owner net profit; 2 FT + 3 C",
-        },
-        {
-            "label": "Scaled",
-            "value": "$2,000,000",
-            "context": "Annual retail sales net of refunds; goods, fulfillment, and advertising included in margin",
-            "note": "18% net margin; $360,000 annual owner net profit; 3 FT + 4 C",
-        },
-    ],
-    "sections": [
-        {
-            "heading": "1. Identify the Actual Buyer, Their Budget Authority, and the Promise Being Purchased",
-            "epistemic_status": "operating_framework",
-            "paragraphs": [
-                (
-                    "The check writer is usually the end customer, but the economic buyer changes with "
-                    "the channel. A household buying a replacement appliance accessory values verified "
-                    "compatibility and arrival before another service visit. A collector values provenance "
-                    "and a permitted allocation. A purchasing manager buying twenty replacement units "
-                    "values an approved invoice, predictable replenishment, and a supplier who answers "
-                    "when a shipment fails. None is compelled by statute to buy your product. Product "
-                    "safety, truthful delivery promises, and refund obligations instead constrain what "
-                    "the merchant may sell and retain. Separate the user's enthusiasm from the payer's "
-                    "authority: a social follower cannot authorize a corporate purchase, and an employee "
-                    "requesting a quote may lack procurement approval. Record the purchaser, billing "
-                    "entity, authorized signer, purchase order, delivery recipient, and payment method "
-                    "before reserving scarce stock. For direct consumers, express the promise through "
-                    "accurate product pages, stock status, delivery windows, and visible return terms. "
-                    "For businesses, convert that promise into an accepted quote with quantities, "
-                    "substitution rules, shipping responsibility, and a named dispute contact. Payment "
-                    "willingness rises when uncertainty falls; a countdown timer cannot replace "
-                    "documented inventory or valid purchasing authority. An authorized dealer should "
-                    "also identify which manufacturer warranty actually follows the sale."
-                ),
-                (
-                    "Budget authority and fund-release authority are different controls. A wholesale buyer "
-                    "may approve a $12,000 order while accounts payable releases funds only after vendor "
-                    "onboarding and purchase-order matching. An escrow agent releases money under agreed "
-                    "instructions, not because the sales representative requests it. A marketplace can "
-                    "collect the customer's payment yet retain a reserve or delay the seller's payout. "
-                    "Build a buyer file that distinguishes spending approval, payment initiation, release "
-                    "conditions, and dispute authority. Start unfamiliar business buyers with prepaid "
-                    "orders; evaluate credit only when repeat volume justifies exposure. Verify the legal "
-                    "entity through the relevant state registry, confirm the business address, and call "
-                    "a purchasing contact using an independently sourced number. Obtain trade references "
-                    "and, where available, review Dun & Bradstreet or Experian business reports with "
-                    "appropriate access. A score does not authenticate a particular invoice. Require "
-                    "independent callback verification for changed bank details and unusual delivery "
-                    "instructions. If a buyer requests thirty-day terms on $12,000 of goods with a "
-                    "$3,000 contribution, losing one invoice consumes four successful orders' contribution. "
-                    "That comparison should determine the initial credit limit more than the buyer's "
-                    "projected annual spend. Suspend incremental exposure when an agreed invoice "
-                    "becomes overdue, while handling existing contractual obligations separately."
-                ),
-                (
-                    "The mapped play verified_fan_ticketing_and_drop_allocation_farming must be evaluated "
-                    "as an authorization problem before it becomes an inventory model. Do not implement "
-                    "synthetic identities, proxy rotation, account-limit evasion, or payment-identity "
-                    "masking to defeat release rules. For covered event tickets, 15 U.S.C. § 45c "
-                    "prohibits specified circumvention of ticket controls and certain downstream sales; "
-                    "collectible releases also carry their own purchase and transfer conditions. The "
-                    "workable adaptation is a genuine buyer consortium only where the issuer expressly "
-                    "permits coordinated purchasing and subsequent transfer. Each participant uses their "
-                    "own accurate identity and payment authority; differing addresses or bank issuers "
-                    "do not legitimize a prohibited scheme. Underwrite a permitted collectible batch "
-                    "of twenty units costing $200 each, with a documented wholesale commitment at "
-                    "$240 per unit. Sales of $4,800 less $4,000 inventory, $240 fulfillment, and "
-                    "$144 processing leave $416 before overhead and returns. A $400 cancellation "
-                    "loss nearly erases that contribution. Obtain enforceable buyer commitments, "
-                    "check issuer restrictions, and avoid promising inventory before allocation. "
-                    "If coordinated purchasing or resale is barred, fall back to authorized dealer "
-                    "replenishment or abandon the release. Pre-selling does not cure an unauthorized "
-                    "acquisition method or a shipping promise you cannot substantiate."
-                ),
-            ],
-            "table": {
-                "caption": "Buyer Psychology, Spending Authority, and Evidence Required Before Inventory Commitment",
-                "headers": [
-                    "Economic buyer and urgent purchasing need",
-                    "Who can authorize and release funds",
-                    "Evidence supporting an executable sales promise",
-                    "Failure response protecting cash and relationships",
-                ],
-                "rows": [
-                    [
-                        "Household buyer replacing a failed essential accessory",
-                        "Named cardholder authorizes payment through hosted checkout",
-                        "Compatibility record and available inventory support promised delivery",
-                        "Offer a documented alternative or promptly process refund",
-                    ],
-                    [
-                        "Collector seeking authentic merchandise through permitted release channels",
-                        "Actual purchaser pays within published allocation restrictions",
-                        "Issuer terms and provenance establish permissible acquisition path",
-                        "Decline restricted aggregation and source authorized dealer inventory",
-                    ],
-                    [
-                        "Corporate purchasing manager replenishing approved maintenance stock",
-                        "Authorized buyer approves purchase order before payable release",
-                        "Accepted quote matches purchasing entity and delivery destination",
-                        "Require prepayment until references support a limited exposure",
-                    ],
-                    [
-                        "Wholesale reseller protecting margin on committed downstream orders",
-                        "Contract signer commits while treasury independently initiates settlement",
-                        "Resale terms identify quantities and cancellation cost allocation",
-                        "Reduce reserved quantity when verified funding remains insufficient",
-                    ],
-                    [
-                        "Marketplace shopper prioritizing familiar checkout and delivery protection",
-                        "Customer authorizes charge while platform controls seller payout",
-                        "Platform order identifier links delivery and refund evidence",
-                        "Keep transaction inside permitted platform communication and payment",
-                    ],
-                    [
-                        "Recurring customer avoiding another inconvenient household supply interruption",
-                        "Subscriber authorizes clearly disclosed recurring payment arrangement",
-                        "Enrollment record captures price frequency and cancellation instructions",
-                        "Stop future charges promptly after effective cancellation request",
-                    ],
-                ],
-            },
-            "callout": {
-                "kind": "OPERATOR GATE",
-                "title": "Verify Authority Before Reserving Stock or Extending Exposure",
-                "body": (
-                    "Run these four checks before the first wholesale shipment, recurring enrollment, "
-                    "or allocation-dependent purchase."
-                ),
-                "items": [
-                    "Match the purchasing entity, authorized signer, invoice recipient, and independently verified payment contact.",
-                    "Confirm dealer authorization, issuer purchase limits, permitted transfers, product safety documentation, and warranty treatment.",
-                    "Calculate maximum cash exposure across unpaid invoices, supplier deposits, processor reserves, and pending refunds.",
-                    "Test the promised ship date against available inventory and record the delay-notice and refund procedure required by 16 CFR Part 435.",
-                ],
-            },
-        },
-        {
-            "heading": "2. Choose the Settlement Structure and Trace Every Dollar to Its Owner",
-            "epistemic_status": "operating_framework",
-            "paragraphs": [
-                (
-                    "Treat the eight structures below as a settlement comparison, not eight interchangeable "
-                    "payment networks. Wire and ACH move bank funds; platform checkout orchestrates "
-                    "payment acceptance; escrow and milestone holds condition release; retainers are "
-                    "commercial deposits; factoring finances receivables; statutory disbursement follows "
-                    "a specific legal entitlement. Ordinary online retail does not acquire a statutory "
-                    "escrow entitlement merely because a customer prepaid. For a representative checkout, "
-                    "the customer pays $100 merchandise plus $8 tax. Assuming an illustrative $3.43 "
-                    "processing charge and no reserve, the bank receives $104.57. Record $100 retail "
-                    "revenue, $8 tax liability, and $3.43 processing expense rather than calling the "
-                    "entire deposit revenue. If the processor withholds $10, the payout becomes $94.57 "
-                    "and the recoverable reserve remains an asset, subject to collectability review. "
-                    "Recognition also depends on performance: an unfulfilled advance can remain a "
-                    "customer-deposit liability rather than earned sales. Reconcile gross charge, tax, "
-                    "refund, fee, reserve movement, and bank payout using stable transaction identifiers. "
-                    "Shopify Payments, Stripe, Amazon settlement reports, and bank feeds expose different "
-                    "views of the same event. The ledger must explain each difference rather than "
-                    "forcing the bank total to equal the storefront sales dashboard. Marketplace "
-                    "tax collection must be mapped separately to prevent duplicate liabilities."
-                ),
-                (
-                    "For card checkout, distinguish authorization, capture, payout, and final economic "
-                    "exposure. Authorization can expire; capture can precede shipment; payout can "
-                    "still be followed by a dispute or reserve adjustment. Configure capture timing "
-                    "against processor rules and realistic fulfillment timing, not a universal assumption "
-                    "that every authorization lasts a fixed number of days. For ACH, verify account "
-                    "ownership through an approved provider, obtain the applicable authorization, and "
-                    "retain the mandate. ACH credits and debits have different fraud and return "
-                    "patterns. A pending debit is not cash, and consumer electronic-transfer disputes "
-                    "can invoke extended error-resolution rights under 12 CFR § 1005.11. For wires, "
-                    "authenticate instructions outside the email thread and never accept a screenshot "
-                    "as evidence of credited funds. UCC Article 4A and applicable bank agreements "
-                    "shape payment-order rights; a received wire does not erase underlying fraud "
-                    "or contractual claims. Use escrow for unusually large transactions when both "
-                    "parties can define inspection and release precisely. Confirm the provider's "
-                    "authority to serve the transaction and its actual fee schedule. Keep cardholder "
-                    "data within hosted payment components, apply appropriate PCI DSS controls, "
-                    "and reconcile using tokens and transaction references rather than exporting "
-                    "sensitive payment details into warehouse notes."
-                ),
-                (
-                    "The fulfillment control should release an order only after its designated payment "
-                    "and fraud conditions are satisfied. This is not identical to waiting for every "
-                    "card payout: a low-risk $45 repeat purchase may ship after validated capture, "
-                    "while a $9,000 first-time wholesale order may require verified credited funds. "
-                    "Implement the distinction in Shopify Flow or an order-management system, with "
-                    "an explicit hold status passed to the 3PL. Replayed webhooks must not create "
-                    "duplicate releases or refunds; use provider event identifiers, order-state checks, "
-                    "and idempotent actions. Staff should be able to explain why an order remains "
-                    "held without exposing sensitive fraud rules. Refund to the original payment "
-                    "method through the original transaction wherever supported; investigate requests "
-                    "to send the refund to a different bank account. For a partial shipment, allocate "
-                    "tax, discounts, shipping charges, and refundable amounts consistently across "
-                    "line items. Chargeback evidence should connect checkout acceptance, item description, "
-                    "customer communication, tracking, delivery, and refund history. Evidence improves "
-                    "the defense but does not assure recovery. Reconcile daily and review aged "
-                    "holds weekly so a supposedly automated process does not strand customer "
-                    "money or inventory. Define ownership for every exception: finance owns "
-                    "settlement differences, operations owns shipment failures, and support owns "
-                    "customer notification."
-                ),
-            ],
-            "table": {
-                "caption": "Eight Payment and Settlement Structures: Authority, Economics, and Release Evidence",
-                "headers": [
-                    "Rail or commercial settlement structure",
-                    "Control over payment and release authority",
-                    "Illustrative cost or working capital mechanics",
-                    "Evidence and fallback before goods leave",
-                ],
-                "rows": [
-                    [
-                        "Bank wire for a verified wholesale inventory purchase",
-                        "Buyer authorizes bank instruction; beneficiary bank confirms credit",
-                        "Assumed $25 wire charge equals 0.25% on $10,000",
-                        "Confirm credited funds and independently authenticate changed instructions",
-                    ],
-                    [
-                        "Independent escrow for a high value merchandise transaction",
-                        "Escrow provider releases under mutually accepted written conditions",
-                        "Assumed 1% fee consumes $100 of $10,000 proceeds",
-                        "Define inspection deadline and dispute procedure before funding",
-                    ],
-                    [
-                        "ACH transfer for established domestic commercial buyer relationships",
-                        "Originator initiates under applicable authority and bank rules",
-                        "Assumed $5 fee equals 0.05% on $10,000 payment",
-                        "Verify account authority and model return exposure separately",
-                    ],
-                    [
-                        "Retainer style advance deposit for an agreed inventory reservation",
-                        "Contract defines merchant custody and when deposit becomes earned",
-                        "Thirty percent deposit funds $3,000 against $10,000 order",
-                        "Specify cancellation treatment without overstating forfeiture enforceability",
-                    ],
-                    [
-                        "Statutory disbursement only where an identified law applies",
-                        "Legally designated administrator pays the established entitled recipient",
-                        "Exclude expected statutory proceeds from ordinary retail cash forecasts",
-                        "Require governing authority and entitlement documentation before reliance",
-                    ],
-                    [
-                        "Platform checkout using an approved merchant payment integration",
-                        "Customer authorizes charge; processor controls payout and reserve",
-                        "Illustrative 2.9% plus $0.30 costs $3.20 on $100",
-                        "Retain capture reference and follow platform dispute procedures",
-                    ],
-                    [
-                        "Factoring of an eligible commercial wholesale trade receivable",
-                        "Factor advances funds after underwriting buyer and assigned invoice",
-                        "Eighty percent advance provides $8,000 against $10,000 invoice",
-                        "Model recourse fees and assignment notices before accepting funding",
-                    ],
-                    [
-                        "Milestone holds for an expressly contracted staged wholesale delivery",
-                        "Contract identifies payer and evidence required at each release",
-                        "Twenty percent hold retains $2,000 until agreed acceptance",
-                        "Use objective inspection deadlines and documented shortage remedies",
-                    ],
-                ],
-            },
-            "sop_steps": [
-                {
-                    "step": 1,
-                    "title": "Classify the transaction",
-                    "action": "Assign consumer, wholesale, recurring, marketplace, or permitted allocation status before payment acceptance.",
-                    "detail": "Attach the payer, promised performance, tax treatment, payment authority, and applicable cancellation terms to the order record.",
-                },
-                {
-                    "step": 2,
-                    "title": "Verify the payment event",
-                    "action": "Validate provider-originated payment status and apply the order's documented risk rule.",
-                    "detail": "Check event authenticity, transaction identifiers, credited funds where required, and duplicate-event handling before changing fulfillment status.",
-                },
-                {
-                    "step": 3,
-                    "title": "Release and preserve evidence",
-                    "action": "Send one authorized release instruction to the 3PL and collect packing and carrier records.",
-                    "detail": "Record serial numbers where useful, the shipped items, shipment timing, tracking, and any split-shipment allocation.",
-                },
-                {
-                    "step": 4,
-                    "title": "Reconcile through closure",
-                    "action": "Match sales, taxes, fees, reserves, refunds, disputes, and bank payouts to the ledger.",
-                    "detail": "Assign unresolved differences to named owners and retain an exception record until the financial and customer obligations are resolved.",
-                },
-            ],
-        },
-        {
-            "heading": "3. Protect Contribution Before Buying Traffic, Inventory, or Growth",
-            "epistemic_status": "illustrative_model",
-            "paragraphs": [
-                (
-                    "The canonical scorecard calls its revenue column gross revenue, but its economic "
-                    "basis is retail sales net of refunds. Keep that definition throughout underwriting. "
-                    "Conservative revenue of $250,000 at 5% produces $12,500 annual owner net profit; "
-                    "Base revenue of $1,125,000 at 11.5% produces $129,375; Scaled revenue of "
-                    "$2,000,000 at 18% produces $360,000. These cases use 2 FT plus 3 C, "
-                    "2 FT plus 3 C, and 3 FT plus 4 C respectively. They are not customer "
-                    "GMV passing through an agency, nor a percentage fee on someone else's sales. "
-                    "An illustrative Base bridge uses 9,000 completed orders averaging $125 recognized "
-                    "revenue after refunds. Per order, allocate $50 goods, $12 fulfillment, $4 "
-                    "payment expense, $25 acquisition, and $3 return-handling expense. The resulting "
-                    "$31 contribution produces $279,000 annually. Subtract $149,625 of remaining "
-                    "operating costs to reach exactly $129,375. The return-handling allowance covers "
-                    "incremental processing and related costs, not a second deduction for refunds "
-                    "already removed from revenue. Validate whether returned inventory can be resold "
-                    "and record write-downs in the appropriate expense category. The bridge is an "
-                    "illustration, not a claim that every product, processor, or shipping zone shares "
-                    "those unit costs."
-                ),
-                (
-                    "The mapped play viral_distribution_loops belongs inside contribution accounting, "
-                    "not outside it as supposedly free traffic. Build a useful compatibility selector "
-                    "or replenishment calculator that generates a shareable result without exposing "
-                    "customer information. Produce native short-form variants from verified product "
-                    "demonstrations, and connect each variant to a landing page with attributable "
-                    "orders. An illustrative $400 content batch plus $200 of redeemed referral "
-                    "credits costs $600. If it produces 100 incremental completed orders, acquisition "
-                    "cost is $6 each. At the Base model's $56 contribution before acquisition, "
-                    "those orders contribute $5,000 after the $600 campaign cost, before fixed "
-                    "overhead. That is a campaign test, not an automatic revision of the canonical "
-                    "annual margin. Use holdout audiences or geographic comparisons to estimate "
-                    "incrementality; a referral code can relabel customers who would already buy. "
-                    "Unlock a reward only after the qualifying order survives the specified return "
-                    "period, with clear terms and controls against self-referral abuse. Disclose "
-                    "material connections under 16 CFR Part 255. If reach deteriorates, rotate "
-                    "native creative formats, avoid engagement bait, and invite viewers into "
-                    "permissioned email or SMS channels. Apply channel-specific enrollment and "
-                    "opt-out requirements rather than importing every social contact into a "
-                    "marketing list."
-                ),
-                (
-                    "Fee protection in retail means protecting earned selling proceeds, not inventing "
-                    "a commission entitlement over every downstream relationship. Put shipping charges, "
-                    "discount conditions, restocking charges where permitted, and business reservation "
-                    "terms in the accepted offer before payment. Do not impose hidden charges after "
-                    "checkout or rely on a blanket waiver to defeat consumer rights. In authorized "
-                    "dealer supply agreements, define territory, permitted channels, warranty responsibility, "
-                    "returns, and remedies for unfulfilled purchase commitments. If a genuine introduction "
-                    "service is separately sold, obtain a written scope and fee trigger rather than "
-                    "quietly taking a percentage of the retail transaction. Payment-platform restrictions "
-                    "also matter: do not move marketplace customers off-platform to avoid fees where "
-                    "the agreement prohibits it. Measure the actual cost of compliant checkout against "
-                    "the conversion and dispute support it provides. At Base volume, a $5 increase "
-                    "in acquisition cost across 9,000 orders reduces profit by $45,000 to $84,375, "
-                    "holding other inputs constant. A $2 fulfillment increase removes another $18,000. "
-                    "Those sensitivities explain why apparently minor leakage can erase the "
-                    "specialist operator's advantage. Respond by narrowing weak SKUs, renegotiating "
-                    "verified shipping costs, improving repeat purchase, or reducing traffic spend; "
-                    "do not conceal leakage by relabeling customer taxes or supplier credit as revenue."
-                ),
-            ],
-            "table": {
-                "caption": "Canonical Profit Reconciliation and Explicitly Illustrative Unit Economics",
-                "headers": [
-                    "Scenario or operating model being measured",
-                    "Recognized revenue and measured cost basis",
-                    "Contribution or owner profit arithmetic shown",
-                    "Decision rule preserving the canonical comparison",
-                ],
-                "rows": [
-                    [
-                        "Conservative annual operation staffed by 2 FT plus 3 C",
-                        "Recognize $250,000 retail revenue after customer refund deductions",
-                        "$250,000 multiplied by 5% equals $12,500 owner profit",
-                        "Include goods fulfillment advertising and remaining operating expenses",
-                    ],
-                    [
-                        "Base annual operation staffed by 2 FT plus 3 C",
-                        "Recognize $1,125,000 retail revenue after customer refund deductions",
-                        "$1,125,000 multiplied by 11.5% equals $129,375 owner profit",
-                        "Use this exact profit when comparing candidate scorecards",
-                    ],
-                    [
-                        "Scaled annual operation staffed by 3 FT plus 4 C",
-                        "Recognize $2,000,000 retail revenue after customer refund deductions",
-                        "$2,000,000 multiplied by 18% equals $360,000 owner profit",
-                        "Retain seven people in the scaled staffing comparison",
-                    ],
-                    [
-                        "Illustrative Base bridge using 9,000 completed customer orders",
-                        "$125 revenue less $94 variable expenses leaves $31",
-                        "$279,000 contribution less $149,625 overhead equals $129,375 profit",
-                        "Do not deduct refunded revenue twice within returns allowances",
-                    ],
-                    [
-                        "Illustrative referral campaign generating 100 incremental completed orders",
-                        "$400 production plus $200 redeemed credits equals $600",
-                        "$5,600 contribution before acquisition less $600 equals $5,000",
-                        "Verify incrementality before replacing paid acquisition budget assumptions",
-                    ],
-                    [
-                        "Permitted collectible batch supported by genuine wholesale commitments",
-                        "$4,800 sales less inventory fulfillment and processing expenses",
-                        "$4,800 less $4,384 variable costs leaves $416 contribution",
-                        "Reject restricted acquisition regardless of attractive resale premiums",
-                    ],
-                ],
-            },
-            "callout": {
-                "kind": "INSIDER PRO-TIPS",
-                "title": "Keep Automation Attached to Verifiable Economics",
-                "body": (
-                    "Experienced operators improve settlement visibility and contribution before "
-                    "adding another acquisition channel or fulfillment integration."
-                ),
-                "items": [
-                    "Export processor balance transactions alongside payouts; a bank deposit alone cannot explain reserves, chargebacks, and fees.",
-                    "Tag referral credits by campaign and release them after the stated qualifying period so returns do not manufacture acquisition wins.",
-                    "Ask the 3PL for actual billed dimensions by SKU; packaging changes can quietly move profitable products into expensive dimensional-weight tiers.",
-                    "Keep allocation-dependent inventory outside available-to-promise stock until acquisition and transfer rights are documented and the units are genuinely secured.",
-                ],
-            },
-        },
-        {
-            "heading": "4. Screen Counterparties, Resolve Exceptions, and Build Retention Without Cash Illusions",
-            "epistemic_status": "operating_framework",
-            "paragraphs": [
-                (
-                    "Counterparty screening extends upstream because supplier failure can turn captured "
-                    "customer funds into refund obligations overnight. Verify the distributor's legal "
-                    "entity, brand authorization, bank beneficiary, shipping origin, and product "
-                    "documentation before a large deposit. Independently confirm purported dealer "
-                    "status with the manufacturer when the purchase is material. Match customs "
-                    "classification, origin, valuation, and duty assumptions to the actual goods; "
-                    "19 U.S.C. § 1484 places entry responsibilities on the importer of record. "
-                    "Product safety records must fit the category, including required testing or "
-                    "certification where applicable. A generic laboratory logo is not sufficient. "
-                    "Under 15 U.S.C. § 2064(b), covered businesses can have reporting duties "
-                    "when they obtain specified information about product hazards or noncompliance. "
-                    "Create a stop-sale and customer-contact workflow that does not wait for "
-                    "the advertising team to finish a campaign. For a new supplier, use a "
-                    "small inspected batch and staged commercial payments with objective acceptance "
-                    "criteria. Check whether the 3PL can quarantine affected lots and retrieve "
-                    "shipment histories. A low purchase price cannot compensate for inventory "
-                    "that must be recalled or cannot lawfully be sold. Document alternative "
-                    "authorized supply before promising replenishment, and avoid concentrating the "
-                    "entire working-capital reserve in one unverified release."
-                ),
-                (
-                    "A credible shipping promise is a cash-control instrument. Under 16 CFR Part 435, "
-                    "covered sellers need a reasonable basis for the stated shipping time; absent "
-                    "a stated time, the rule generally uses thirty days. When shipment cannot "
-                    "meet the applicable deadline, follow the rule's delay-consent and cancellation "
-                    "procedures rather than silently extending an order. Connect inventory alerts "
-                    "to customer notices, not just an internal Slack channel. Returns tracking "
-                    "should identify received merchandise, condition, refund status, and inventory "
-                    "disposition separately. A warehouse scan is not the same event as a processor "
-                    "refund, and a refund does not establish that returned stock is saleable. "
-                    "Maintain a daily exception queue for missed ship dates, negative available "
-                    "inventory, unresolved payment disputes, and refunds awaiting execution. On "
-                    "recurring offers, 15 U.S.C. § 8403 requires clear disclosure of material "
-                    "terms, express informed consent, and a simple mechanism to stop recurring "
-                    "charges for covered online negative-option transactions. Check applicable "
-                    "state automatic-renewal requirements as well. Retention should result from "
-                    "reliable replenishment and useful reminders, not obstacles to cancellation. "
-                    "A canceled subscriber who receives prompt, accurate service may return; "
-                    "a disputed renewal creates processing expense, support work, and potential "
-                    "reserve pressure beyond the lost sale."
-                ),
-                (
-                    "Close the operating loop with a weekly cash-exposure report that a small team "
-                    "can actually maintain. Separate unrestricted bank cash, processor reserves, "
-                    "customer advances, sales-tax liabilities, supplier deposits, inventory, trade "
-                    "receivables, and outstanding refunds. At the illustrative Base bridge, goods "
-                    "cost $450,000 annually; thirty days of that cost is approximately $36,986 "
-                    "using a 365-day year. Seven days of Base revenue is approximately $21,575. "
-                    "If that revenue is awaiting payout while inventory is prepaid, the two "
-                    "balances together tie up about $58,561 before taxes, operating cash, or "
-                    "refund buffers. This is a liquidity illustration, not an added expense "
-                    "or a change to $129,375 annual profit. The stated startup capital range "
-                    "of $15,000–$80,000 and monthly operating-expense range of $4,000–$25,000 "
-                    "must therefore be evaluated against the actual cash cycle and cost "
-                    "classification. Do not subtract a broad operating-expense estimate again "
-                    "after the scorecard margin already includes those costs. Assign finance "
-                    "to settlement reconciliation, operations to order routing and inventory "
-                    "alerts, and support to returns tracking. Review exception aging, contribution "
-                    "by SKU, repeat-order quality, and supplier concentration together. Scale "
-                    "only when the next inventory commitment can survive a delayed payout "
-                    "and a realistic refund spike."
-                ),
-            ],
-            "table": {
-                "caption": "Counterparty Forensics and Cash Exceptions for a Lean Authorized-Dealer Operation",
-                "headers": [
-                    "Observed exception requiring a named owner",
-                    "Primary evidence and independent verification method",
-                    "Exposure calculation or operational decision rule",
-                    "Fallback preserving customer obligations and available cash",
-                ],
-                "rows": [
-                    [
-                        "Supplier requests urgent payment to a changed beneficiary",
-                        "Finance calls established supplier contact using independently verified number",
-                        "Hold new transfer until beneficiary change is authenticated",
-                        "Use previously verified instructions only after supplier reconfirmation",
-                    ],
-                    [
-                        "Wholesale buyer requests credit beyond demonstrated purchase history",
-                        "Review trade references entity records and authorized purchasing contact",
-                        "Cap aggregate unpaid exposure against affordable default loss",
-                        "Offer prepaid smaller shipments instead of unsupported credit",
-                    ],
-                    [
-                        "Processor payout arrives below the expected settlement amount",
-                        "Match balance transactions reserves refunds fees and dispute adjustments",
-                        "Reconcile each difference without treating reserves as immediate expense",
-                        "Preserve refund liquidity and escalate unexplained aged differences",
-                    ],
-                    [
-                        "Available inventory becomes negative before promised shipment date",
-                        "Compare inventory reservations purchase receipts and warehouse physical counts",
-                        "Identify affected orders and applicable shipping notice deadlines",
-                        "Seek permitted delay consent or execute required refunds",
-                    ],
-                    [
-                        "Customer reports a possible product hazard after delivery",
-                        "Collect lot identifiers incident details and supplier safety records",
-                        "Assess applicable reporting duties and quarantine implicated inventory promptly",
-                        "Stop affected sales and follow documented customer remediation",
-                    ],
-                    [
-                        "Recurring customer cancels while another charge remains scheduled",
-                        "Compare cancellation timestamp enrollment terms and payment scheduler state",
-                        "Stop future charges and assess any required refund",
-                        "Confirm cancellation clearly and repair failed scheduler synchronization",
-                    ],
-                ],
-            },
-        },
-    ],
-    "pull_quote": "A sale becomes durable profit only when authority, delivery, settlement, and contribution all reconcile.",
-    "diagram_id": "diag-04",
-    "action_checklist": [
-        "Map each channel's economic buyer, authorized payer, payment initiator, release controller, and dispute contact before reserving inventory.",
-        "Configure a payment-to-3PL release workflow with verified provider events, idempotent actions, risk-specific holds, and tested refund handling.",
-        "Reconcile the three canonical cases exactly: $12,500, $129,375, and $360,000 annual owner profit on retail revenue net of refunds.",
-        "Build the $125 Base order bridge and test acquisition, fulfillment, return-handling, and payout-delay sensitivities without double-counting expenses.",
-        "Pilot viral_distribution_loops with attributable completed orders and restrict allocation activity to documented issuer-authorized purchasing and transfer.",
-        "Run a weekly cash and exception review covering reserves, taxes, customer advances, supplier deposits, overdue receivables, shipping delays, and refunds.",
-    ],
-    "statutory_citations": [
-        {
-            "title": "16 CFR Part 435 — Mail, Internet, or Telephone Order Merchandise Rule",
-            "url": "https://www.ecfr.gov/current/title-16/chapter-I/subchapter-D/part-435",
-            "relevance": (
-                "Establishes shipping-representation, delay-consent, cancellation, and refund "
-                "requirements for covered merchandise orders."
-            ),
-        },
-        {
-            "title": "15 U.S.C. § 45c — Unfair and deceptive acts and practices relating to circumvention of ticket access control measures",
-            "url": "https://www.law.cornell.edu/uscode/text/15/45c",
-            "relevance": (
-                "Prohibits specified circumvention of ticket purchasing controls and certain "
-                "sales of tickets obtained through that circumvention; informs rejection of "
-                "account-limit evasion in covered ticket transactions."
-            ),
-        },
-        {
-            "title": "12 CFR § 1005.11 — Procedures for resolving errors",
-            "url": "https://www.ecfr.gov/current/title-12/chapter-X/part-1005/subpart-A/section-1005.11",
-            "relevance": (
-                "Defines consumer electronic-fund-transfer error-resolution requirements; "
-                "consumer ACH exposure cannot be assessed solely from an initial settlement event."
-            ),
-        },
-        {
-            "title": "16 CFR Part 255 — Guides Concerning the Use of Endorsements and Testimonials in Advertising",
-            "url": "https://www.ecfr.gov/current/title-16/chapter-I/subchapter-B/part-255",
-            "relevance": (
-                "Provides FTC interpretive guidance on endorsements and material connections, "
-                "including referral incentives and compensated product promotion."
-            ),
-        },
-        {
-            "title": "15 U.S.C. § 8403 — Negative option marketing on the Internet",
-            "url": "https://www.law.cornell.edu/uscode/text/15/8403",
-            "relevance": (
-                "Requires disclosure of material terms, express informed consent, and simple "
-                "mechanisms to stop recurring charges in covered online negative-option transactions."
-            ),
-        },
-        {
-            "title": "19 U.S.C. § 1484 — Entry of merchandise",
-            "url": "https://www.law.cornell.edu/uscode/text/19/1484",
-            "relevance": (
-                "Addresses importer-of-record entry responsibilities and reasonable care in "
-                "providing information needed for classification, valuation, and duty assessment."
-            ),
-        },
-        {
-            "title": "15 U.S.C. § 2064 — Substantial product hazards",
-            "url": "https://www.law.cornell.edu/uscode/text/15/2064",
-            "relevance": (
-                "Includes reporting duties for manufacturers, distributors, and retailers "
-                "when specified product-hazard or noncompliance information is obtained."
-            ),
-        },
-        {
-            "title": "California Commercial Code § 11202 — Authorized and verified payment orders",
-            "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?lawCode=COM&sectionNum=11202.",
-            "relevance": (
-                "A state enactment within the UCC Article 4A framework addressing authorization "
-                "and verification of payment orders; relevant when California law governs "
-                "the commercial funds transfer."
-            ),
-        },
-    ],
-}
+CHAPTER_2 = {'id': 'Q2',
+ 'chapter_id': 'Q2',
+ 'chapter_number': 2,
+ 'question_number': 2,
+ 'slug': 'opening-supplier-accounts-high-ticket-brands-amazon-wholesale-distributors',
+ 'question_prompt': 'How do I find, contact, and get approved by US brands, suppliers, and distributors '
+                    'for high-ticket dropshipping and Amazon wholesale?',
+ 'kicker': 'Q2 / THE BIG MONEY PLAYBOOKS',
+ 'title': 'Opening Supplier Accounts: High-Ticket Brands and Amazon Wholesale Distributors',
+ 'subtitle': 'US supplier research and outreach, approval tactics and dealer applications, handling '
+             'suppliers with no price lists, distributor vs. brand-direct buying, finding authorized '
+             'distributors, live distributor calls, and getting past "we don\'t sell to Amazon sellers"',
+ 'layout_template': 'executive_summary',
+ 'reading_time_minutes': 15,
+ 'executive_summary': 'Practitioners converge on one playbook: register a real business, find brands '
+                      'through search strings, retailer catalogs and distributor rosters, then win '
+                      'accounts with persistent, relationship-first outreach. Ecommerce Paradise reports '
+                      '30-50% acceptance when applying to 10-20 brands at once, and a day-8 phone call '
+                      'converting at 3x the rate of a second email. Marcus Lam sets a $500 profit floor '
+                      'per sale against a $100-200 cost to get each sale, while Daniel Boufford pegs '
+                      'distributor markups at 20-50%. Pedro Bermudez and Sertac Altun filter for small, '
+                      'under-served brands: under 50 people, or under $200K a month. The fault lines are '
+                      'sharp. Thomas Sleeth promises brands he will never list on Amazon, while Brad '
+                      "Sherman tells them on purpose. David Scheuer's coach starts with distributors, "
+                      'while Pedro calls them crowded.',
+ 'key_metrics': [{'label': 'Supplier Acceptance Rate on Batch Applications',
+                  'metric': 'Supplier Acceptance Rate on Batch Applications',
+                  'value': '30-50% acceptance when applying to 10-20 brands at once',
+                  'confidence': 'attributed_practitioner_claim',
+                  'context': 'Expected approval ratio when a new high-ticket store applies to many brands '
+                             'in parallel',
+                  'source': 'Ecommerce Paradise | High Ticket Dropshipping ([hHXf1_WdANY @ 00:17:39])'},
+                 {'label': 'Minimum Profit Per High-Ticket Sale',
+                  'metric': 'Minimum Profit Per High-Ticket Sale',
+                  'value': 'At least $500 profit per sale',
+                  'confidence': 'attributed_practitioner_claim',
+                  'context': 'Floor set because getting a single sale costs $100-200',
+                  'source': 'Marcus Lam | High Ticket Dropshipping (AI) ([g_OL9gG7q_I @ 00:01:43])'},
+                 {'label': 'Distributor Markup Over Brand Direct',
+                  'metric': 'Distributor Markup Over Brand Direct',
+                  'value': '20-50% markup',
+                  'confidence': 'attributed_practitioner_claim',
+                  'context': 'Distributor accounts are easier to open, but their markup leaves profit '
+                             'dependent on negotiating price down',
+                  'source': 'Daniel Boufford ([jYFh4ucNZuw @ 00:00:15])'},
+                 {'label': 'Day-8 Phone Call Conversion Lift',
+                  'metric': 'Day-8 Phone Call Conversion Lift',
+                  'value': '3x the conversion of a second email',
+                  'confidence': 'attributed_practitioner_claim',
+                  'context': 'Measured inside a GMass follow-up cadence of day 1, day 4, call on day 8, '
+                             'LinkedIn on day 12, final email on day 18',
+                  'source': 'Ecommerce Paradise | High Ticket Dropshipping ([hHXf1_WdANY @ 00:12:28])'}],
+ 'sections': [{'heading': 'Section 1: The Practitioner Consensus',
+               'paragraphs': ['Every high-ticket operator on the roster lands on the same baseline: buy '
+                              'from domestic, authorized brand suppliers, not overseas catalogs. Ecommerce '
+                              'Paradise contrasts China shipping of four to six weeks, no dealer or '
+                              'warranty support, and thin margins against US suppliers that ship in one to '
+                              'five days, with custom or back-ordered pieces stretching to two to six '
+                              'weeks. He pegs high-ticket goods at $500 to $10,000+ carrying 10 to 30 '
+                              'percent margins [hHXf1_WdANY @ 00:03:23]. Marcus Lam says his old '
+                              'low-ticket stack of AliExpress, CJ, AutoDS and Facebook ads bled money to '
+                              'chargebacks and refunds. He says the authorized-dealer model works because '
+                              'the brand lets you list its products, you email the supplier once a sale '
+                              'lands, and they ship for you [r2ydHddjtIw @ 00:16:19]. Thomas Sleeth scopes '
+                              'his approvals the same way: domestic, reputable brand suppliers only, never '
+                              'Chinese ones [HMXZkRAYR5Y @ 00:00:29]. The money in a single ticket is the '
+                              'draw. Lam reports some of his best orders netting $3,000, $4,000, even '
+                              '$5,000 profit. He sets a floor of at least $500 profit per sale because '
+                              'getting a single sale costs him $100 to $200 [g_OL9gG7q_I @ 00:02:01]. That '
+                              'floor shapes every supplier decision that follows.',
+                              'The second point of agreement is that suppliers screen for a real business '
+                              'before they open an account. Ecommerce Paradise forms the LLC in South '
+                              'Dakota rather than Wyoming, which he says makes seller permits hard to get. '
+                              'He then stacks an EIN and a multi-state seller permit, noting that economic '
+                              'nexus sits around $100k per state [hHXf1_WdANY @ 00:14:13]. Pedro Bermudez '
+                              'says you need an LLC, a reseller permit and a domain email before reaching '
+                              'out, and he attaches the reseller certificate to the first message '
+                              '[nm9aWWMYnEg @ 00:06:29]. Marcus Lam lists a resale certificate and tax ID '
+                              'as the entry ticket for Wayfair-sourced brands, and refuses to leave a card '
+                              'on file for a prepaid account [r2ydHddjtIw @ 00:17:59]. William Rivera puts '
+                              'the cost floor in plain numbers: a Georgia LLC runs about $200, and the '
+                              'reseller permit is free in that state [KImeudrcJTU @ 00:03:48]. The '
+                              'high-ticket and Amazon wholesale camps follow the same sequence. Entity, '
+                              'tax registration, resale certificate and a professional domain front are in '
+                              'place before the first call, email or dealer application goes out. That way '
+                              'the supplier sees a functioning retailer on the other end of the '
+                              'conversation and has fewer reasons to stall or decline the request.',
+                              'The third consensus point is that the supplier list is built from search '
+                              "strings and competitor footprints, not bought. Marcus Lam searches '[brand] "
+                              "become a dealer', 'distributor application' or 'wholesale program', or goes "
+                              'to trade shows [r2ydHddjtIw @ 00:16:19]. On the Amazon side, David '
+                              "Scheuer's coach Asher runs '[brand] distributor' and '[brand] wholesale', "
+                              'skipping the sponsored results [HqGwAnGaUf8 @ 00:04:43]. Thomas of Amazon '
+                              "Wholesale uses the same '[brand] wholesale' search and adds 'Distributors' "
+                              'when the first pass fails [48JkrcvKaVs @ 00:00:14]. Marvin works the '
+                              "brand's own footer, hunting for Resellers, Contact Us or FAQ pages and "
+                              "searching them for 'wholesale' or 'distributor'. Funko, for example, sells "
+                              'direct only to sellers with a brick-and-mortar store or an active selling '
+                              'site and a 50k calendar-year minimum. Otherwise it points buyers to '
+                              'Alliance Entertainment, Diamond Comic Distributors and E distribution '
+                              '[fHLUiiiopmw @ 00:03:09]. The shared rule is that the brand usually tells '
+                              'you who is authorized. A dealer page, a footer link, a wholesale program '
+                              'page or a published distributor roster is the starting point. Each name '
+                              'found becomes a lead to call, email or apply to directly, instead of '
+                              'guessing at the supply chain.'],
+               'table': {'caption': 'Where the practitioners agree on supplier-account fundamentals',
+                         'headers': ['Consensus Point',
+                                     'What Practitioners Report',
+                                     'Operator Implication',
+                                     'Expert Source'],
+                         'rows': [['Domestic suppliers beat overseas catalogs on speed',
+                                   'US suppliers ship in 1-5 days versus 4-6 weeks from China',
+                                   'Source authorized US brands with domestic warehouses and dealer '
+                                   'support',
+                                   'Ecommerce Paradise | High Ticket Dropshipping ([hHXf1_WdANY @ '
+                                   '00:02:43])'],
+                                  ['Every high-ticket order must clear a profit floor',
+                                   'At least $500 profit per sale because a sale costs $100-200',
+                                   'Reject products whose margin cannot absorb the cost of getting a sale',
+                                   'Marcus Lam | High Ticket Dropshipping (AI) ([g_OL9gG7q_I @ 00:01:43])'],
+                                  ['Legal paperwork comes before any supplier outreach',
+                                   'An LLC, a reseller permit and a domain email are required first',
+                                   'Assemble entity, permit and professional email before contacting any '
+                                   'brand',
+                                   'Pedro Bermudez ([nm9aWWMYnEg @ 00:06:29])'],
+                                  ["The brand's own site names its authorized distributors",
+                                   'Funko lists Alliance Entertainment, Diamond Comic Distributors and E '
+                                   'distribution as sources',
+                                   'Read reseller, FAQ and contact pages to find the authorized supply '
+                                   'chain',
+                                   'Marvin ([fHLUiiiopmw @ 00:03:39])'],
+                                  ['Simple Google search strings surface wholesale programs fast',
+                                   "Search '[brand] wholesale', skip sponsored ads, then add "
+                                   "'Distributors' if needed",
+                                   'Run the same search pattern on every brand on your list',
+                                   'Thomas | Amazon Wholesale ([48JkrcvKaVs @ 00:00:30])'],
+                                  ['Accounts now open through relationships rather than credentials alone',
+                                   'Amazon wholesale is a relationship-driven game; brands no longer open '
+                                   'accounts easily',
+                                   'Ask questions and build trust on calls instead of pitching hard',
+                                   'Brad Sherman | OperationAMZ ([G9hSjTySxP0 @ 00:03:40])'],
+                                  ['Supplier cost, not product selection, decides final profit',
+                                   'Sellers have a supplier problem, not a sourcing problem, because '
+                                   'almost everything sells',
+                                   'Focus energy on getting better supplier access and lower buy cost',
+                                   'Third-Party Profits ([1lcG6ji-5ls @ 00:00:32])']]}},
+              {'heading': 'Section 2: Exact Street Mechanics, Tools & Numbers',
+               'paragraphs': ["Marcus Lam's high-ticket sourcing loop starts on retailer catalogs. He "
+                              "pulls the brands BBQGuys carries, then searches '[brand] dealer program', "
+                              'using Napoleon as the example. On Wayfair he filters to $4,000+ items, '
+                              'reasoning that every Wayfair brand already drop-ships. When a brand has no '
+                              'dealer page, he drops its phone number into a sheet and calls, as he did '
+                              'with Just Right [g_OL9gG7q_I @ 00:04:24]. Trevor Zheng runs Google '
+                              "Shopping's brand filter on a category like fireplaces, logs every brand in "
+                              "a spreadsheet and checks the Contact Us page. He then uses Apollo's free "
+                              'plan or LinkedIn to reach a head of e-commerce or a VP [v64Z-O_YyTY @ '
+                              '00:03:18]. His four filters are branded demand checked in Ubersuggest, MAP, '
+                              'a high price point, and 5 to 10+ sellers per listing. He confirms MAP by '
+                              'seeing whether sellers cluster at one price, such as $2,255 [v64Z-O_YyTY @ '
+                              '00:09:37]. Ecommerce Paradise then vets the survivors. He wants a margin of '
+                              'at least 10 percent and ideally 30+, US warehouses and a MAP policy. His '
+                              'red flags are minimum orders of $5,000+, drop-ship fees over $15 per order '
+                              'when $5 to $10 is normal, and no other retailers visible online '
+                              '[hHXf1_WdANY @ 00:09:24].',
+                              'On the Amazon wholesale side, the numbers get more granular. Pedro Bermudez '
+                              'runs a 30-second filter on each brand: is it in retail, is the Amazon '
+                              'listing sloppy, does the site carry wholesale language, and is the company '
+                              "under 50 people, which he calls 'really your zone' [nm9aWWMYnEg @ "
+                              '00:05:23]. His Helium 10 Black Box settings are 3+ sellers, $5k+ revenue, '
+                              '10 to 200 reviews and exactly one image. Those settings surfaced a Loctite '
+                              'product moving 300+ units a month [nm9aWWMYnEg @ 00:10:32]. Sertac Altun '
+                              'inverts the search in Smart Scout. His filters are Sports & Outdoors, max '
+                              '$200K a month, an average of 3 sellers, a US dominant seller, and an Amazon '
+                              'in-stock rate under 50 percent, with private label and agency excluded. '
+                              'That returned 157 brands [B-HQodfgIG4 @ 00:04:24]. William Rivera goes '
+                              "local with Google Maps searches for '[Amazon category] distributors'. He "
+                              'expects about 80 percent of results to be a poor fit, and points to PJ '
+                              'Distributors, which carries Dove and Pringles, as a hit [KImeudrcJTU @ '
+                              '00:02:06]. The common output is a short list of under-served brands and '
+                              'suppliers worth calling. It favors listings with room for another seller '
+                              'over a giant spreadsheet of every product on the platform.',
+                              "Outreach is where the scripts get specific. Brad Sherman's seven-step call "
+                              "opens with name, company, location and 'opening a wholesale account', then "
+                              "confirms 'am I speaking with the right person' and uses tactical empathy. "
+                              "Next it frames the business as an 'e-commerce company... stock and ship' to "
+                              'head off the drop-shipping objection before it surfaces [G9hSjTySxP0 @ '
+                              "00:10:57]. He then states 'we do sell on Amazon' and, without pausing, asks "
+                              'the buyer about their own e-commerce strategy. Ecommerce Paradise automates '
+                              'the chase in GMass: follow-up on day 1, then day 4, a phone call on day 8, '
+                              'LinkedIn on day 12 and a final email on day 18. He reports that the day-8 '
+                              'call converts at 3x the rate of a second email [hHXf1_WdANY @ 00:12:28]. '
+                              'Marvin builds a list of about 50 suppliers, emails all of them, then phones '
+                              'after a few days to a week, since calls get him the best response rate '
+                              '[fHLUiiiopmw @ 00:18:51]. Once an account opens, Daniel Boufford places a '
+                              'break-even $2,000 to $5,000 order to prove he is real, because about '
+                              'two-thirds of new accounts never order. He then uses volume, such as a '
+                              'pallet, to win $1 off per unit [jYFh4ucNZuw @ 00:01:17].'],
+               'table': {'caption': 'Exact tools, filters and numbers used to find and open supplier '
+                                    'accounts',
+                         'headers': ['Mechanic',
+                                     'Exact Setting or Number',
+                                     'How It Is Used',
+                                     'Expert Source'],
+                         'rows': [['Wayfair price filter for drop-ship-ready high-ticket brands',
+                                   'Filter to $4,000+ items because every Wayfair brand already drop-ships',
+                                   "Harvest brand names, then search each '[brand] dealer program'",
+                                   'Marcus Lam | High Ticket Dropshipping (AI) ([g_OL9gG7q_I @ 00:06:42])'],
+                                  ['Google Shopping brand filter plus a decision-maker lookup',
+                                   "Log brands in a spreadsheet, then use Apollo's free plan or LinkedIn",
+                                   'Reach the head of e-commerce or a VP instead of a general inbox',
+                                   'Trevor Zheng | High Ticket Dropshipping ([v64Z-O_YyTY @ 00:03:18])'],
+                                  ['Supplier red-flag screen applied before signing any agreement',
+                                   '$5,000+ minimum orders or drop-ship fees above $15 per order',
+                                   'Skip suppliers that break these limits or show no other retailers '
+                                   'online',
+                                   'Ecommerce Paradise | High Ticket Dropshipping ([hHXf1_WdANY @ '
+                                   '00:09:24])'],
+                                  ['Helium 10 Black Box product filter for wholesale targets',
+                                   '3+ sellers, $5k+ revenue, 10-200 reviews, exactly one image',
+                                   'Find weak listings such as a Loctite item selling 300+ units monthly',
+                                   'Pedro Bermudez ([nm9aWWMYnEg @ 00:10:32])'],
+                                  ['Smart Scout brand filter for small under-served Amazon brands',
+                                   'Max $200K monthly, average 3 sellers, Amazon in-stock rate under 50%',
+                                   'Produced 157 Sports & Outdoors brands to contact directly',
+                                   'Sertac Altun ([B-HQodfgIG4 @ 00:04:24])'],
+                                  ['Supplier Map years-in-business filter for authorized distributors',
+                                   'Set years in business to 20-50 and 50+',
+                                   'Older companies are more likely to be authorized, so call them first',
+                                   'Third-Party Profits ([1lcG6ji-5ls @ 00:01:18])']]},
+               'callout': {'kind': 'INSIDER PRO-TIPS',
+                           'title': 'Shortcuts practitioners use to get the right contact and the right '
+                                    'account',
+                           'body': 'These are the small moves the speakers credit with saving time on '
+                                   'research or turning a cold contact into an open account.',
+                           'items': ["On Alani Nu's retail-inquiry form, select 'distributor'. The 'who "
+                                     "are you currently purchasing from' field then lists the brand's "
+                                     'authorized distributors, and you Google each one, such as NYB '
+                                     'Distributors [Thomas | Amazon Wholesale — 48JkrcvKaVs @ 00:00:46].',
+                                     "Don't restrict Supplier Map searches to your local area. The map "
+                                     'plots headquarters, and suppliers may run warehouses nationwide '
+                                     '[Third-Party Profits — 1lcG6ji-5ls @ 00:02:07].',
+                                     "With brands that say an easy 'yes', don't pitch exclusivity; just "
+                                     'get the price list. The middle, unsure-sounding brands become the '
+                                     'best accounts and lead to exclusives [Brad Sherman | OperationAMZ — '
+                                     'G9hSjTySxP0 @ 00:24:44].',
+                                     'Contact the owner or sales director, never info@, and open with just '
+                                     '2-3 SKUs [Pedro Bermudez — nm9aWWMYnEg @ 00:09:04].']},
+               'sop_steps': [{'step': 1,
+                              'title': 'Stand up the business paperwork',
+                              'action': 'Form the LLC, get the reseller permit and set up a domain email '
+                                        'before any outreach.',
+                              'detail': 'A Georgia LLC runs about $200 and the reseller permit there is '
+                                        'free [William Rivera — KImeudrcJTU @ 00:03:48]. Pedro requires an '
+                                        'LLC, a reseller permit and a domain email before reaching out '
+                                        '[Pedro Bermudez — nm9aWWMYnEg @ 00:06:29].'},
+                             {'step': 2,
+                              'title': 'Build the brand lead sheet',
+                              'action': "Use Google Shopping's brand filter in your niche and log every "
+                                        'brand and its contact page.',
+                              'detail': 'Filter Google Shopping by brand (fireplaces example), record each '
+                                        'brand in a spreadsheet, check the Contact Us page, then find '
+                                        "decision makers via Apollo's free plan or LinkedIn [Trevor Zheng "
+                                        '| High Ticket Dropshipping — v64Z-O_YyTY @ 00:00:58].'},
+                             {'step': 3,
+                              'title': 'Vet margin and red flags',
+                              'action': 'Keep suppliers with 10%+ margin, US warehouses and MAP, and cut '
+                                        'the rest.',
+                              'detail': 'Skip suppliers under 10-15% margin. Red flags are $5,000+ '
+                                        'minimums, drop-ship fees over $15 per order, and no other '
+                                        'retailers online [Ecommerce Paradise | High Ticket Dropshipping — '
+                                        'hHXf1_WdANY @ 00:09:24].'},
+                             {'step': 4,
+                              'title': 'Run the call script and follow-up cadence',
+                              'action': 'Call with a question-led script, then chase non-responders on a '
+                                        'fixed multi-touch schedule.',
+                              'detail': "Frame the business as an 'e-commerce company... stock and ship' "
+                                        '[Brad Sherman | OperationAMZ — G9hSjTySxP0 @ 00:10:57]. Follow up '
+                                        'on day 1, day 4, call on day 8, LinkedIn on day 12 and send a '
+                                        'final email on day 18 [Ecommerce Paradise | High Ticket '
+                                        'Dropshipping — hHXf1_WdANY @ 00:12:28].'}]},
+              {'heading': 'Section 3: Where Practitioners Disagree & Alternative Playbooks',
+               'paragraphs': ['The first fork is how operators define a deal worth chasing. Trevor of '
+                              'Ecommerce Paradise sets the floor as a percentage: a supplier must clear at '
+                              'least 10 percent margin, ideally 30 percent or more, and anything under 10 '
+                              'to 15 percent gets skipped [hHXf1_WdANY @ 00:08:03]. Marcus Lam sets his '
+                              'floor in dollars instead, a hard $500 profit per sale, because getting that '
+                              'sale costs him $100 to $200, and he points to single orders that netted '
+                              '$3,000, $4,000, even $5,000 in profit [g_OL9gG7q_I @ 00:01:43]. Sertac '
+                              'Altun runs much thinner unit economics on Amazon wholesale brand direct: a '
+                              '$300 cost item clearing $114 per unit, where ten units a month adds roughly '
+                              '$1,100, and a 20 percent share of a $146K-per-month brand lands around $28K '
+                              'revenue and $3K to $5K profit [B-HQodfgIG4 @ 00:08:55]. Joe and Mike of '
+                              'Build Assets Online add a filter on top: if you are not making sales yet, '
+                              'skip quote-only suppliers with no price list and pick suppliers with price '
+                              'lists and MAP, because roughly one sale comes out of every twenty quotes '
+                              'and a solo operator should not take that on [ocjVuvj0QJg @ 00:04:14]. The '
+                              'split is clean: high-ticket dropshippers chase fat dollar margin per order, '
+                              'while wholesale sellers accept smaller per-unit profit and scale through '
+                              'units and share.',
+                              'The loudest split is whether to say the word Amazon on first contact. '
+                              'Marvin tells students to call themselves a retailer, never an Amazon '
+                              'seller, and says naming a specific product in outreach would separate you '
+                              'from about 99 percent of the pack [fHLUiiiopmw @ 00:24:00]. Coach Asher on '
+                              'the I Am David Scheuer channel agrees on staying quiet: do not mention '
+                              'Amazon at the start of the conversation [HqGwAnGaUf8 @ 00:08:45]. Brad '
+                              'Sherman of OperationAMZ deliberately goes the other way. His seven-step '
+                              "call opens with name, company, location, and 'opening a wholesale account,' "
+                              "checks that he has the right person, and uses tactical empathy with 'I'm "
+                              "sure you get a lot of calls.' Step six is pure honesty, 'we do sell on "
+                              "Amazon,' followed without a pause by the diversion question 'Can you tell "
+                              "me more about your e-commerce strategy?' He calls the 'not taking Amazon "
+                              "sellers' line 'smoke and mirrors' [G9hSjTySxP0 @ 00:14:32]. Thomas Sleeth, "
+                              'working high-ticket dropshipping rather than FBA, removes the question '
+                              'entirely: he promises suppliers he will sell only on his own site, not '
+                              'Amazon or eBay, and stacks that with paying upfront and owning support, '
+                              'disputes, refunds, and chargebacks so the brand has even less reason to say '
+                              'no [HMXZkRAYR5Y @ 00:06:40].',
+                              'On distributors versus brand direct, the speakers split three ways. Pedro '
+                              "Bermudez calls distributor accounts crowded, with '11 sellers, same "
+                              "product,' and pushes toward small brands instead, using company size as his "
+                              "filter: 'Under 50 people is really your zone.' His 30-second filter also "
+                              'asks whether the brand is in retail, whether its Amazon listing is sloppy, '
+                              'and whether its site uses wholesale language [nm9aWWMYnEg @ 00:00:24]. '
+                              "Daniel Boufford sits in the middle. Distributor accounts are 'actually a "
+                              "lower barrier to entry,' but distributors mark up 20 to 50 percent, so "
+                              'profit depends on negotiating price down; he still prefers brand direct '
+                              'long term for better pricing and authorization, even though brands may '
+                              'expect content, ads, and SEO work from you [jYFh4ucNZuw @ 00:03:58]. MAP is '
+                              'the second fault line. Trevor Zheng ranks a MAP policy among his four '
+                              'supplier criteria, verifies it by checking whether sellers cluster at one '
+                              'price such as $2,255, reports anyone undercutting it, and wants competition '
+                              'of 5 to 10-plus sellers per listing; he tells first-timers to call MAP '
+                              'brands first and move fast [v64Z-O_YyTY @ 00:09:37]. William Rivera scripts '
+                              'the MAP question into his calls too, but says most suppliers he reaches do '
+                              'not have a MAP policy at all [KImeudrcJTU @ 00:05:07].'],
+               'table': {'caption': 'Side-by-side playbooks where Chapter Q2 practitioners take opposite '
+                                    'positions',
+                         'headers': ['Decision Point', 'Playbook A', 'Playbook B', 'Expert Source'],
+                         'rows': [['Minimum margin before a supplier is worth signing',
+                                   'At least 10 percent, ideally 30 percent-plus; skip anything under 10 '
+                                   'to 15 percent',
+                                   'Hard $500 profit per sale because each sale costs $100 to $200 to get',
+                                   'Ecommerce Paradise | High Ticket Dropshipping ([hHXf1_WdANY @ '
+                                   '00:08:03]) vs Marcus Lam | High Ticket Dropshipping (AI) ([g_OL9gG7q_I '
+                                   '@ 00:01:43])'],
+                                  ['Whether to mention Amazon on first contact',
+                                   'Call yourself a retailer, never an Amazon seller, and stay quiet about '
+                                   'Amazon early',
+                                   "Say 'we do sell on Amazon' then immediately divert to their e-commerce "
+                                   'strategy',
+                                   'Marvin ([fHLUiiiopmw @ 00:24:00]) vs Brad Sherman | OperationAMZ '
+                                   '([G9hSjTySxP0 @ 00:14:32])'],
+                                  ['Which account type to attack first as a beginner',
+                                   'Start with distributors because brands may refuse or never answer you',
+                                   'Distributors are crowded, with eleven sellers fighting over the same '
+                                   'product',
+                                   'I Am David Scheuer ([HqGwAnGaUf8 @ 00:03:26]) vs Pedro Bermudez '
+                                   '([nm9aWWMYnEg @ 00:00:24])'],
+                                  ['Long-term account type for wholesale profit and authorization',
+                                   'Distributors: lower barrier to entry but a 20 to 50 percent markup to '
+                                   'negotiate down',
+                                   'Brand direct: better pricing and authorization, but brands may expect '
+                                   'content, ads, and SEO',
+                                   'Daniel Boufford ([jYFh4ucNZuw @ 00:03:58])'],
+                                  ['How much weight a MAP policy should carry',
+                                   'Essential criterion; verify sellers cluster at one price like $2,255 '
+                                   'and report undercutters',
+                                   'Ask about MAP on the call, though most suppliers contacted do not have '
+                                   'one',
+                                   'Trevor Zheng | High Ticket Dropshipping ([v64Z-O_YyTY @ 00:09:37]) vs '
+                                   'William Rivera ([KImeudrcJTU @ 00:05:07])'],
+                                  ['Sales channel you promise the supplier you will use',
+                                   'Sell only on your own site, never Amazon or eBay, and pay upfront with '
+                                   'no terms',
+                                   'Sell on Amazon through brand direct while presenting yourself as a '
+                                   'distributor or dealer',
+                                   'Thomas Sleeth ([HMXZkRAYR5Y @ 00:06:40]) vs Sertac Altun ([B-HQodfgIG4 '
+                                   '@ 00:07:36])'],
+                                  ['Geographic scope when searching for distributors on maps',
+                                   'Search Google Maps for local category distributors because local '
+                                   'results mean less competition',
+                                   'Do not stick to your local area; maps plot headquarters while '
+                                   'warehouses run nationwide',
+                                   'William Rivera ([KImeudrcJTU @ 00:01:28]) vs Third-Party Profits '
+                                   '([1lcG6ji-5ls @ 00:02:07])']]}},
+              {'heading': 'Section 4: Firsthand Failure Modes, Traps & Economics Checks',
+               'paragraphs': ['The fastest way to lose money is to pay a supplier that does not exist. '
+                              'Marvin walked through a fake distributor whose facility photo actually '
+                              'belonged to a gym, whose Google Maps pin showed an unfinished building, and '
+                              'whose site had been live for about a month [fHLUiiiopmw @ 00:16:57]. His '
+                              'vetting order runs name brands you can confirm on Amazon, the About Us '
+                              'page, the address on Google Maps, social media, Trustpilot and BBB, whether '
+                              'the outfit is retail, liquidation, or returns, and whether it is US-based, '
+                              'with vetting continuing after the first orders. Pedro Bermudez flags a '
+                              'second trap aimed at beginners: pre-made lists of Amazon products are a '
+                              'scam, and if the brand already sells well on Amazon itself, walk away '
+                              '[nm9aWWMYnEg @ 00:06:03]. Third-Party Profits uses age as a legitimacy '
+                              'proxy, filtering for 20 to 50 and 50-plus years in business because older '
+                              'companies are more likely to be authorized, and treats retail partners like '
+                              'Rite Aid, Target, and Family Dollar as the mark of a qualified distributor '
+                              '[1lcG6ji-5ls @ 00:01:18]. Ecommerce Paradise adds dropship red flags: '
+                              'minimums of $5,000 or more, drop-ship fees above $15 per order when $5 to '
+                              '$10 is normal, and no other retailers visible online [hHXf1_WdANY @ '
+                              '00:09:24].',
+                              'Distributor accounts carry their own economics trap. Daniel Boufford says '
+                              'about two-thirds of new accounts never place an order, so he places a '
+                              'break-even order of $2,000 to $5,000 to prove he is real, then uses volume '
+                              'to pull price down, such as a pallet buy for $1 off per unit. He also warns '
+                              'that Amazon may reject distributor invoices, which puts account health at '
+                              'risk, and that some brands only sell through distributors [jYFh4ucNZuw @ '
+                              '00:01:46]. Strictly Commerce showed real distributor onboarding on a live '
+                              'call: a customer setup packet goes to credit, the minimum is about $3,500, '
+                              "Joe's catalog order came to roughly $7K, the catalog updates every Monday, "
+                              'expiration dates run six to nine months out, and credit approval takes 24 '
+                              "to 36 hours [fOjBryou0Do @ 00:01:45]. Marvin's fix for thin distributor "
+                              'lists is to run them through Scan Unlimited and negotiate specifically on '
+                              'items sitting near break-even [fHLUiiiopmw @ 00:04:05]. Brad Sherman warns '
+                              'against burning leverage on easy accounts: brands that say yes immediately '
+                              'are often unprofitable, so do not pitch exclusivity there, just get the '
+                              'price list, and save the exclusive push for the middle, unsure brands that '
+                              'become the best accounts [G9hSjTySxP0 @ 00:24:44].',
+                              'On the dropshipping side, the failures come from the model and the '
+                              "paperwork. Marcus Lam's earlier low-ticket run with AliExpress, CJ, AutoDS, "
+                              'and Facebook ads lost money to chargebacks and refunds, which pushed him to '
+                              'authorized-dealer high-ticket products and Google ads instead of Facebook '
+                              '[r2ydHddjtIw @ 00:05:01]. Build Assets Online once hid the add-to-cart '
+                              "button and ran 'call for price' on quote-only items; they describe it as "
+                              "possibly breaking Google's rules and say it was not worth it. Google "
+                              'Shopping will not run without a price, so their workaround is a ballpark '
+                              'price or text ads pointing to a get-a-quote lead form [ocjVuvj0QJg @ '
+                              '00:03:03]. Ecommerce Paradise reports that most suppliers need two to four '
+                              'touches before they respond and want to see a real site before signing you '
+                              'up. His cadence is GMass emails on day 1 and day 4, a phone call on day 8, '
+                              'LinkedIn on day 12, and a final email on day 18, with the day-8 call '
+                              'converting at three times the rate of a second email. He applies to 10 to '
+                              '20 brands at once expecting 30 to 50 percent acceptance, and forms the LLC '
+                              'in South Dakota rather than Wyoming, which is hard for seller permits '
+                              '[hHXf1_WdANY @ 00:12:15].'],
+               'table': {'caption': 'Firsthand failure modes and the economics check each practitioner '
+                                    'applies',
+                         'headers': ['Failure Mode',
+                                     'What Happened or Was Warned',
+                                     'Economics Check',
+                                     'Expert Source'],
+                         'rows': [['Paying a fake wholesale distributor website',
+                                   'Facility photo was a gym, Google Maps showed an unfinished building, '
+                                   'site live about a month',
+                                   'Verify address, About Us, Trustpilot, BBB, and confirmable name brands '
+                                   'before any order',
+                                   'Marvin ([fHLUiiiopmw @ 00:16:57])'],
+                                  ['Opening distributor accounts that never convert into orders',
+                                   'About two-thirds of new distributor accounts never place a single '
+                                   'order',
+                                   'Place a break-even $2,000 to $5,000 order, then negotiate pallet '
+                                   'pricing like $1 off',
+                                   'Daniel Boufford ([jYFh4ucNZuw @ 00:01:46])'],
+                                  ['Relying on distributor invoices for Amazon account health',
+                                   'Amazon may reject distributor invoices and some brands only sell '
+                                   'through distributors',
+                                   'Weigh brand direct for authorization and better pricing over the long '
+                                   'term',
+                                   'Daniel Boufford ([jYFh4ucNZuw @ 00:02:13])'],
+                                  ['Buying pre-made Amazon product lists from sellers',
+                                   'Pre-made ASIN lists are a scam; walk away from brands already selling '
+                                   'well on Amazon',
+                                   'Build your own with Black Box: 3-plus sellers, $5k-plus revenue, 10 to '
+                                   '200 reviews',
+                                   'Pedro Bermudez ([nm9aWWMYnEg @ 00:06:03])'],
+                                  ['Running low-ticket dropshipping on Facebook ads',
+                                   'AliExpress, CJ, and AutoDS products lost money to chargebacks and '
+                                   'refunds',
+                                   'Move to authorized-dealer items like $2,000 retail on $1,400 cost for '
+                                   '$600 profit',
+                                   'Marcus Lam | High Ticket Dropshipping (AI) ([r2ydHddjtIw @ 00:05:01])'],
+                                  ['Hiding add-to-cart behind call-for-price listings',
+                                   "Possibly breaking Google's rules and judged not worth it by the "
+                                   'operators',
+                                   'About one sale per twenty quotes, so skip quote-only suppliers before '
+                                   'first sales',
+                                   'Build Assets Online ([ocjVuvj0QJg @ 00:03:03])'],
+                                  ['Signing dropship suppliers with bad terms',
+                                   'Minimum orders of $5,000-plus and drop-ship fees over $15 per order',
+                                   'Normal drop-ship fee is $5 to $10; skip suppliers under 10 to 15 '
+                                   'percent margin',
+                                   'Ecommerce Paradise | High Ticket Dropshipping ([hHXf1_WdANY @ '
+                                   '00:09:24])']]},
+               'callout': {'kind': 'OPERATOR GATE',
+                           'title': 'Four Checks Before Money or Inventory Moves',
+                           'body': 'Every item below comes from a loss, scam, or reversal the '
+                                   'practitioners hit or watched students hit. Clear all four before the '
+                                   'first purchase order or the first ad dollar.',
+                           'items': ['Confirm the supplier exists: check the address on Google Maps, the '
+                                     'About Us page, social media, Trustpilot, and BBB before paying, '
+                                     'because a fake distributor used a gym photo and an unfinished '
+                                     'building [Marvin — fHLUiiiopmw @ 00:12:24].',
+                                     'Reject dropship suppliers with $5,000-plus minimums, drop-ship fees '
+                                     'over $15 per order, no other online retailers, or margin under 10 to '
+                                     '15 percent [Ecommerce Paradise | High Ticket Dropshipping — '
+                                     'hHXf1_WdANY @ 00:09:24].',
+                                     'Never buy pre-made ASIN lists, and walk away from any brand that '
+                                     'already sells well on Amazon itself [Pedro Bermudez — nm9aWWMYnEg @ '
+                                     '00:06:03].',
+                                     'Before building on a distributor account, know that Amazon may '
+                                     'reject distributor invoices and put account health at risk, and that '
+                                     'some brands only sell through distributors [Daniel Boufford — '
+                                     'jYFh4ucNZuw @ 00:02:13].']}}],
+ 'pull_quote': '"So when we talk about this, Amazon wholesale is a relationship-driven game." — Brad '
+               'Sherman | OperationAMZ (G9hSjTySxP0 @ 00:03:40).',
+ 'diagram_id': 'diag-04',
+ 'action_checklist': ['Before reaching out to any supplier, have an LLC, a reseller permit, and a domain '
+                      'email in place, then attach the reseller certificate and ask about MOQ and MAP up '
+                      'front [Pedro Bermudez — nm9aWWMYnEg @ 00:06:29].',
+                      'Use the Google Shopping brand filter to log brands in a spreadsheet, then use '
+                      "Apollo's free plan or LinkedIn to find the head of e-commerce or a VP [Trevor Zheng "
+                      '| High Ticket Dropshipping — v64Z-O_YyTY @ 00:03:18].',
+                      "On a brand's retail-inquiry form, select distributor so the 'who are you currently "
+                      "purchasing from' field reveals the authorized distributors, then Google each one "
+                      '[Thomas | Amazon Wholesale — 48JkrcvKaVs @ 00:00:46].',
+                      'Build a list of about 50 suppliers, email all of them with short tailored messages, '
+                      'then phone after a few days to a week [Marvin — fHLUiiiopmw @ 00:18:51].',
+                      "Run the seven-step call: name, company, location, 'opening a wholesale account,' "
+                      "right-person check, tactical empathy, 'stock and ship,' own website, honesty, then "
+                      'the e-commerce strategy question [Brad Sherman | OperationAMZ — G9hSjTySxP0 @ '
+                      '00:06:55].',
+                      'Log every supplier lead with contact date, follow-up date, notes, priority, and '
+                      'company type and status in a leads CRM [Third-Party Profits — 1lcG6ji-5ls @ '
+                      '00:04:13].'],
+ 'statutory_citations': [{'title': 'Brad Sherman | OperationAMZ — How to Contact Amazon FBA Wholesale '
+                                   'Suppliers in 30 minutes [00:03:40]',
+                          'url': 'https://www.youtube.com/watch?v=G9hSjTySxP0&t=220s',
+                          'relevance': 'Primary practitioner testimony on relationship-driven wholesale '
+                                       'outreach and the seven-step call script.'},
+                         {'title': 'Ecommerce Paradise | High Ticket Dropshipping — How to Find USA '
+                                   'High-Ticket Dropshipping Suppliers in 2026 [00:12:15]',
+                          'url': 'https://www.youtube.com/watch?v=hHXf1_WdANY&t=735s',
+                          'relevance': 'Primary practitioner testimony on supplier follow-up cadence, '
+                                       'vetting red flags, and approval rates.'},
+                         {'title': 'Daniel Boufford — The Truth About Distributors vs Brand Direct (Amazon '
+                                   'Wholesale) [00:00:15]',
+                          'url': 'https://www.youtube.com/watch?v=jYFh4ucNZuw&t=15s',
+                          'relevance': 'Primary practitioner testimony on distributor markups, dead '
+                                       'accounts, and invoice risk versus brand direct.'},
+                         {'title': 'Marcus Lam | High Ticket Dropshipping (AI) — How to Dropship as an '
+                                   'Authorized Dealer in 2026 | High Ticket Dropshipping [00:16:19]',
+                          'url': 'https://www.youtube.com/watch?v=r2ydHddjtIw&t=979s',
+                          'relevance': 'Primary practitioner testimony on the authorized-dealer dropship '
+                                       'model and dealer program sourcing.'}],
+ 'source_citations': [{'source_type': 'video_pro_tip',
+                       'video_id': 'hHXf1_WdANY',
+                       'title': 'How to Find USA High-Ticket Dropshipping Suppliers in 2026',
+                       'channel': 'Ecommerce Paradise | High Ticket Dropshipping',
+                       'author': 'Ecommerce Paradise | High Ticket Dropshipping',
+                       'text': 'Most suppliers need two to four touches before they respond.',
+                       'tip': 'Most suppliers need two to four touches before they respond.',
+                       'timestamp': 735,
+                       'timestamp_seconds': 735,
+                       'timestamp_label': '[00:12:15]',
+                       'url': 'https://www.youtube.com/watch?v=hHXf1_WdANY&t=735s',
+                       'markdown': '[00:12:15](https://www.youtube.com/watch?v=hHXf1_WdANY&t=735s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q2.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'g_OL9gG7q_I',
+                       'title': 'How to Find USA Suppliers for High Ticket Dropshipping',
+                       'channel': 'Marcus Lam | High Ticket Dropshipping (AI)',
+                       'author': 'Marcus Lam | High Ticket Dropshipping (AI)',
+                       'text': "Some of the best margins I've had were 3,000, 4,000, even $5,000 profit in "
+                               'just one single order.',
+                       'tip': "Some of the best margins I've had were 3,000, 4,000, even $5,000 profit in "
+                              'just one single order.',
+                       'timestamp': 121,
+                       'timestamp_seconds': 121,
+                       'timestamp_label': '[00:02:01]',
+                       'url': 'https://www.youtube.com/watch?v=g_OL9gG7q_I&t=121s',
+                       'markdown': '[00:02:01](https://www.youtube.com/watch?v=g_OL9gG7q_I&t=121s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q2.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'ocjVuvj0QJg',
+                       'title': 'High Ticket Dropshipping Suppliers with No Price Lists - What to Do',
+                       'channel': 'Build Assets Online',
+                       'author': 'Build Assets Online',
+                       'text': 'It works out to about one sale for every twenty quotes, so do not take '
+                               'this on as a solo operator.',
+                       'tip': 'It works out to about one sale for every twenty quotes, so do not take this '
+                              'on as a solo operator.',
+                       'timestamp': 254,
+                       'timestamp_seconds': 254,
+                       'timestamp_label': '[00:04:14]',
+                       'url': 'https://www.youtube.com/watch?v=ocjVuvj0QJg&t=254s',
+                       'markdown': '[00:04:14](https://www.youtube.com/watch?v=ocjVuvj0QJg&t=254s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q2.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'r2ydHddjtIw',
+                       'title': 'How to Dropship as an Authorized Dealer in 2026 | High Ticket '
+                                'Dropshipping',
+                       'channel': 'Marcus Lam | High Ticket Dropshipping (AI)',
+                       'author': 'Marcus Lam | High Ticket Dropshipping (AI)',
+                       'text': 'The brands will let you list their products and then once you get the '
+                               'sale, you send an email to your supplier and then they will ship for you.',
+                       'tip': 'The brands will let you list their products and then once you get the sale, '
+                              'you send an email to your supplier and then they will ship for you.',
+                       'timestamp': 979,
+                       'timestamp_seconds': 979,
+                       'timestamp_label': '[00:16:19]',
+                       'url': 'https://www.youtube.com/watch?v=r2ydHddjtIw&t=979s',
+                       'markdown': '[00:16:19](https://www.youtube.com/watch?v=r2ydHddjtIw&t=979s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q2.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'v64Z-O_YyTY',
+                       'title': 'How To ACTUALLY Find Shopify Dropshipping Suppliers (USA High Ticket '
+                                'Suppliers)',
+                       'channel': 'Trevor Zheng | High Ticket Dropshipping',
+                       'author': 'Trevor Zheng | High Ticket Dropshipping',
+                       'text': 'If it is your first time, call the brands that have a MAP policy first and '
+                               'focus on speed.',
+                       'tip': 'If it is your first time, call the brands that have a MAP policy first and '
+                              'focus on speed.',
+                       'timestamp': 746,
+                       'timestamp_seconds': 746,
+                       'timestamp_label': '[00:12:26]',
+                       'url': 'https://www.youtube.com/watch?v=v64Z-O_YyTY&t=746s',
+                       'markdown': '[00:12:26](https://www.youtube.com/watch?v=v64Z-O_YyTY&t=746s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q2.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'nm9aWWMYnEg',
+                       'title': 'How to Find Amazon Wholesale and Brand Suppliers That Actually Make You '
+                                'Money Faster',
+                       'channel': 'Pedro Bermudez',
+                       'author': 'Pedro Bermudez',
+                       'text': 'Under 50 people is really your zone.',
+                       'tip': 'Under 50 people is really your zone.',
+                       'timestamp': 323,
+                       'timestamp_seconds': 323,
+                       'timestamp_label': '[00:05:23]',
+                       'url': 'https://www.youtube.com/watch?v=nm9aWWMYnEg&t=323s',
+                       'markdown': '[00:05:23](https://www.youtube.com/watch?v=nm9aWWMYnEg&t=323s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q2.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'jYFh4ucNZuw',
+                       'title': 'The Truth About Distributors vs Brand Direct (Amazon Wholesale)',
+                       'channel': 'Daniel Boufford',
+                       'author': 'Daniel Boufford',
+                       'text': "Usually, it's actually a lower barrier to entry to open those types of "
+                               'accounts.',
+                       'tip': "Usually, it's actually a lower barrier to entry to open those types of "
+                              'accounts.',
+                       'timestamp': 15,
+                       'timestamp_seconds': 15,
+                       'timestamp_label': '[00:00:15]',
+                       'url': 'https://www.youtube.com/watch?v=jYFh4ucNZuw&t=15s',
+                       'markdown': '[00:00:15](https://www.youtube.com/watch?v=jYFh4ucNZuw&t=15s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q2.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'HqGwAnGaUf8',
+                       'title': 'How to contact brands and distributors for your Amazon wholesale '
+                                'business!',
+                       'channel': 'I Am David Scheuer',
+                       'author': 'I Am David Scheuer',
+                       'text': 'Do not mention Amazon at the start of the conversation.',
+                       'tip': 'Do not mention Amazon at the start of the conversation.',
+                       'timestamp': 525,
+                       'timestamp_seconds': 525,
+                       'timestamp_label': '[00:08:45]',
+                       'url': 'https://www.youtube.com/watch?v=HqGwAnGaUf8&t=525s',
+                       'markdown': '[00:08:45](https://www.youtube.com/watch?v=HqGwAnGaUf8&t=525s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q2.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'KImeudrcJTU',
+                       'title': 'How To Find Amazon Wholesale Suppliers In 5 Minutes',
+                       'channel': 'William Rivera',
+                       'author': 'William Rivera',
+                       'text': 'About 80 percent of the results you find are not going to be a fit.',
+                       'tip': 'About 80 percent of the results you find are not going to be a fit.',
+                       'timestamp': 126,
+                       'timestamp_seconds': 126,
+                       'timestamp_label': '[00:02:06]',
+                       'url': 'https://www.youtube.com/watch?v=KImeudrcJTU&t=126s',
+                       'markdown': '[00:02:06](https://www.youtube.com/watch?v=KImeudrcJTU&t=126s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q2.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'fOjBryou0Do',
+                       'title': 'Talking to Wholesale Distributors for Amazon FBA (LIVE Call) | Road to '
+                                '$1M',
+                       'channel': 'Strictly Commerce',
+                       'author': 'Strictly Commerce',
+                       'text': 'The minimum is about $3,500, and the catalog order came out to roughly '
+                               '$7,000.',
+                       'tip': 'The minimum is about $3,500, and the catalog order came out to roughly '
+                              '$7,000.',
+                       'timestamp': 86,
+                       'timestamp_seconds': 86,
+                       'timestamp_label': '[00:01:26]',
+                       'url': 'https://www.youtube.com/watch?v=fOjBryou0Do&t=86s',
+                       'markdown': '[00:01:26](https://www.youtube.com/watch?v=fOjBryou0Do&t=86s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q2.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'fHLUiiiopmw',
+                       'title': 'Amazon Wholesale || How To Find Wholesale Suppliers For Amazon FBA',
+                       'channel': 'Marvin',
+                       'author': 'Marvin',
+                       'text': 'Present yourself as a retailer, never as an Amazon seller.',
+                       'tip': 'Present yourself as a retailer, never as an Amazon seller.',
+                       'timestamp': 1440,
+                       'timestamp_seconds': 1440,
+                       'timestamp_label': '[00:24:00]',
+                       'url': 'https://www.youtube.com/watch?v=fHLUiiiopmw&t=1440s',
+                       'markdown': '[00:24:00](https://www.youtube.com/watch?v=fHLUiiiopmw&t=1440s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q2.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': '1lcG6ji-5ls',
+                       'title': 'How to Find Amazon Wholesale Suppliers That Actually Make You Money | '
+                                'Third-Party Profits Tutorial',
+                       'channel': 'Third-Party Profits',
+                       'author': 'Third-Party Profits',
+                       'text': "So, if you're struggling to find profit products, it's not a product "
+                               "issue, it's a access issue, it's a cost issue.",
+                       'tip': "So, if you're struggling to find profit products, it's not a product issue, "
+                              "it's a access issue, it's a cost issue.",
+                       'timestamp': 63,
+                       'timestamp_seconds': 63,
+                       'timestamp_label': '[00:01:03]',
+                       'url': 'https://www.youtube.com/watch?v=1lcG6ji-5ls&t=63s',
+                       'markdown': '[00:01:03](https://www.youtube.com/watch?v=1lcG6ji-5ls&t=63s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q2.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'G9hSjTySxP0',
+                       'title': 'How to Contact Amazon FBA Wholesale Suppliers in 30 minutes',
+                       'channel': 'Brad Sherman | OperationAMZ',
+                       'author': 'Brad Sherman | OperationAMZ',
+                       'text': 'So when we talk about this, Amazon wholesale is a relationship-driven '
+                               'game.',
+                       'tip': 'So when we talk about this, Amazon wholesale is a relationship-driven game.',
+                       'timestamp': 220,
+                       'timestamp_seconds': 220,
+                       'timestamp_label': '[00:03:40]',
+                       'url': 'https://www.youtube.com/watch?v=G9hSjTySxP0&t=220s',
+                       'markdown': '[00:03:40](https://www.youtube.com/watch?v=G9hSjTySxP0&t=220s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q2.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'B-HQodfgIG4',
+                       'title': 'Amazon FBA Wholesale Brand direct for Beginners: The Easiest Way to Start '
+                                'in 2027',
+                       'channel': 'Sertac Altun',
+                       'author': 'Sertac Altun',
+                       'text': 'You need to understand your only goal in this business is just to open up '
+                               'wholesale accounts and not worry about anything else.',
+                       'tip': 'You need to understand your only goal in this business is just to open up '
+                              'wholesale accounts and not worry about anything else.',
+                       'timestamp': 509,
+                       'timestamp_seconds': 509,
+                       'timestamp_label': '[00:08:29]',
+                       'url': 'https://www.youtube.com/watch?v=B-HQodfgIG4&t=509s',
+                       'markdown': '[00:08:29](https://www.youtube.com/watch?v=B-HQodfgIG4&t=509s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q2.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': '48JkrcvKaVs',
+                       'title': 'This is how you find brands authorized distributors to buy and sell their '
+                                'products on Amazon',
+                       'channel': 'Thomas | Amazon Wholesale',
+                       'author': 'Thomas | Amazon Wholesale',
+                       'text': 'Select distributor on the retail inquiry form and the who are you '
+                               'currently purchasing from field shows you the authorized distributors.',
+                       'tip': 'Select distributor on the retail inquiry form and the who are you currently '
+                              'purchasing from field shows you the authorized distributors.',
+                       'timestamp': 46,
+                       'timestamp_seconds': 46,
+                       'timestamp_label': '[00:00:46]',
+                       'url': 'https://www.youtube.com/watch?v=48JkrcvKaVs&t=46s',
+                       'markdown': '[00:00:46](https://www.youtube.com/watch?v=48JkrcvKaVs&t=46s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q2.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'HMXZkRAYR5Y',
+                       'title': 'How I Get Approved by High Ticket Dropshipping Suppliers',
+                       'channel': 'Thomas Sleeth',
+                       'author': 'Thomas Sleeth',
+                       'text': 'And again, this just gives them even less of a reason that they can say no '
+                               'to you.',
+                       'tip': 'And again, this just gives them even less of a reason that they can say no '
+                              'to you.',
+                       'timestamp': 170,
+                       'timestamp_seconds': 170,
+                       'timestamp_label': '[00:02:50]',
+                       'url': 'https://www.youtube.com/watch?v=HMXZkRAYR5Y&t=170s',
+                       'markdown': '[00:02:50](https://www.youtube.com/watch?v=HMXZkRAYR5Y&t=170s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q2.'}]}

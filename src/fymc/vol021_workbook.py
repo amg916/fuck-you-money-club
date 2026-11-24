@@ -1,2121 +1,876 @@
 from __future__ import annotations
 
-
 def build_volume_021_workbook() -> dict:
-    def field(name: str, input_type: str, prompt: str, example: str) -> dict:
-        return {
-            "name": name,
-            "type": input_type,
-            "prompt": prompt,
-            "example": example,
-        }
-
-    return {
-        "workbook_id": "wb-021-automated-e-commerce",
-        "volume_id": "vol-021-automated-e-commerce",
-        "title": "Automated E-Commerce — Operator Companion Workbook",
-        "subtitle": (
-            "6 Printable Operator Worksheets for Authorized-Dealer Underwriting, "
-            "3PL Execution, Contribution Margins, Working Capital, Product Safety, "
-            "Automated Retention, and Small-Team Launch Control"
-        ),
-        "worksheets": [
-            {
-                "worksheet_id": "ws-01",
-                "number": 1,
-                "title": "Opportunity Underwriting and Counterparty Qualification",
-                "purpose": (
-                    "Select an authorized-dealer retail opportunity whose assortment, "
-                    "supplier permissions, fulfillment requirements, and acquisition "
-                    "economics support a lean operating team. Establish evidence for "
-                    "every material assumption before inventory commitments, separating "
-                    "supplier claims from independently verified demand and executable terms."
-                ),
-                "chapter_ref": "Q1, Q2, Q6",
-                "instructions": [
-                    (
-                        "Define one customer problem and one tightly bounded assortment. "
-                        "Collect current supplier price sheets, channel permissions, "
-                        "competitor delivered prices, and product specifications. Record "
-                        "document dates so an attractive historical margin cannot silently "
-                        "become the purchasing assumption."
-                    ),
-                    (
-                        "Interview the supplier and proposed 3PL separately. Compare "
-                        "their inventory identifiers, packaging requirements, return "
-                        "procedures, and shipping commitments. Require written answers "
-                        "where a mismatch could create stranded inventory, customer "
-                        "refunds, or manual intervention during the first month."
-                    ),
-                    (
-                        "Calculate a delivered-order contribution using actual product, "
-                        "freight, fulfillment, processing, and advertising quotes. Keep "
-                        "sales taxes outside revenue. Identify whether every quotation "
-                        "includes surcharges, minimum charges, storage, receiving, and "
-                        "peak-period changes before treating the model as executable."
-                    ),
-                    (
-                        "Test demand with authorized creative and a bounded acquisition "
-                        "budget rather than buying the entire supplier catalog. Separate "
-                        "paid customer acquisition from repeat purchasing, and document "
-                        "the evidence needed before replenishment or an expanded "
-                        "assortment becomes justified."
-                    ),
-                    (
-                        "Assign one owner to each unresolved counterparty issue and "
-                        "give that issue a dated resolution requirement. Reject "
-                        "opportunities where distribution rights, safety records, "
-                        "inventory availability, or positive contribution depend on "
-                        "verbal assurances that purchasing cannot enforce."
-                    ),
-                ],
-                "fields": [
-                    field(
-                        "Customer problem and initial assortment boundary",
-                        "textarea",
-                        (
-                            "Describe the buyer, purchase occasion, product exclusions, "
-                            "and initial assortment size. Explain why these boundaries "
-                            "reduce fulfillment complexity while preserving enough "
-                            "delivered-order contribution to support acquisition and "
-                            "customer service without speculative repeat purchases."
-                        ),
-                        (
-                            "Launch eight authorized home-organization accessories for "
-                            "apartment residents buying coordinated storage sets. Exclude "
-                            "electrical items, children's products, food-contact products, "
-                            "and oversized cartons during the pilot. Target an $80 "
-                            "billed order with one standardized packing configuration; "
-                            "validate demand using 200 shipped orders before expanding "
-                            "the catalog."
-                        ),
-                    ),
-                    field(
-                        "Canonical opportunity classification and operating constraints",
-                        "textarea",
-                        (
-                            "Record the candidate identity, ranking, score breakdown, "
-                            "capital boundaries, staffing expectations, and expected "
-                            "time to initial sales. Explain which constraints the "
-                            "proposed assortment satisfies and which require direct "
-                            "supplier or labor-market validation."
-                        ),
-                        (
-                            "Candidate #28, Automated E-Commerce, ranks #21 of 29 "
-                            "and scores 85/100: revenue potential 23, margin potential 22, team efficiency 16, startup accessibility 12, and automation potential 12. This Elite Small-Team Cash Machine permits $15,000–$80,000 startup capital, "
-                            "$4,000–$25,000 monthly opex, and 2–6 months to the "
-                            "first deal; validate the proposed $145,000 funding plan."
-                        ),
-                    ),
-                    field(
-                        "Supplier identity and authorized-dealer evidence",
-                        "textarea",
-                        (
-                            "Identify the contracting entity, payment beneficiary, "
-                            "brand authorization, permitted territories, and approved "
-                            "sales channels. Specify how purchasing verifies documents "
-                            "independently and blocks payments when bank details or "
-                            "distribution permissions change unexpectedly."
-                        ),
-                        (
-                            "Obtain the manufacturer's signed dealer agreement naming "
-                            "the operating entity and its Shopify storefront. Confirm "
-                            "authorization through a published manufacturer telephone "
-                            "number, not the salesperson's email signature. Permit "
-                            "domestic direct-to-consumer sales only; prohibit marketplace "
-                            "listings until written channel permission and warranty "
-                            "coverage are documented."
-                        ),
-                    ),
-                    field(
-                        "Demand evidence and competitive delivered-price comparison",
-                        "textarea",
-                        (
-                            "Record comparable delivered prices, availability, review "
-                            "patterns, and customer objections using dated observations. "
-                            "Distinguish actual purchase evidence from search interest "
-                            "or supplier projections, and specify the minimum pilot "
-                            "sample needed before increasing inventory exposure."
-                        ),
-                        (
-                            "Capture ten competing bundles priced from $76 to $89 "
-                            "including standard delivery. Interview twelve target buyers "
-                            "and classify objections by dimensions, durability, and "
-                            "delivery timing. Release a $2,400 advertising pilot targeting "
-                            "200 shipped orders; favorable click-through rates alone "
-                            "do not authorize the next purchase order."
-                        ),
-                    ),
-                    field(
-                        "Landed product cost and supplier commercial terms",
-                        "textarea",
-                        (
-                            "Break the landed cost into supplier price, inbound freight, "
-                            "duties where applicable, inspection, and receiving. Record "
-                            "minimum quantities, deposit requirements, ownership transfer, "
-                            "and the exact evidence supporting any assumed duty rate "
-                            "or payment extension."
-                        ),
-                        (
-                            "Underwrite $28 landed cost per shipped-order equivalent: "
-                            "$24 merchandise, $2 inbound freight, $1 duty provision, "
-                            "and $1 inspection plus receiving. The duty provision "
-                            "remains provisional until classification review. A "
-                            "2,400-equivalent purchase requires $67,200; do not assume "
-                            "supplier credit before a signed payment schedule exists."
-                        ),
-                    ),
-                    field(
-                        "3PL capacity and service-level qualification",
-                        "textarea",
-                        (
-                            "Specify fulfillment capacity, receiving turnaround, cutoff "
-                            "times, carton limits, inventory accuracy, and exception "
-                            "ownership. Require a quotation showing which activities "
-                            "are included in fulfillment and which remain separately "
-                            "billable during normal and peak operations."
-                        ),
-                        (
-                            "The pilot requires weekday dispatch within one business "
-                            "day, receiving within two business days, and photographed "
-                            "damage exceptions. Model $9 fulfillment and $7 outbound "
-                            "shipping per order. Obtain separate storage and peak "
-                            "schedules; require capacity for 100 daily orders before "
-                            "expanding beyond the initial assortment."
-                        ),
-                    ),
-                    field(
-                        "Channel restrictions and advertising asset permissions",
-                        "textarea",
-                        (
-                            "List permitted domains, marketplaces, geographic audiences, "
-                            "creative assets, and promotional restrictions. Connect each "
-                            "restriction to a storefront or advertising control so "
-                            "merchandising cannot publish an offer that exceeds the "
-                            "signed distribution and intellectual-property permissions."
-                        ),
-                        (
-                            "The agreement permits the retailer's own domain and "
-                            "manufacturer-supplied lifestyle images, but excludes "
-                            "third-party marketplaces and international shipping. "
-                            "Shopify Markets remains domestic-only. Store the current "
-                            "advertised-price policy with the agreement, and review "
-                            "its scope before coupons or promotional creative "
-                            "are scheduled for publication."
-                        ),
-                    ),
-                    field(
-                        "Product safety and traceability qualification",
-                        "textarea",
-                        (
-                            "Identify applicable product rules, test documents, "
-                            "certification duties, lot identifiers, and recall contacts. "
-                            "Determine whether the business acts as importer or "
-                            "domestic reseller, because responsibility cannot be "
-                            "assigned solely from the supplier's marketing description."
-                        ),
-                        (
-                            "Require material specifications, lot codes, and a named "
-                            "manufacturer safety contact for all eight SKUs. Assess "
-                            "whether any applicable consumer-product rule triggers "
-                            "certification under 15 U.S.C. 2063. Warehouse receiving "
-                            "must preserve lot identity; missing required certificates "
-                            "or unreadable lot codes place the affected stock "
-                            "in quarantine."
-                        ),
-                    ),
-                    field(
-                        "Concentration exposure and substitute supply",
-                        "textarea",
-                        (
-                            "Measure dependence on individual suppliers, products, "
-                            "advertising platforms, and fulfillment locations. Describe "
-                            "a substitute that preserves authorization and customer "
-                            "expectations, including the transition cost and maximum "
-                            "time the business can tolerate interrupted supply."
-                        ),
-                        (
-                            "The largest supplier represents 70% of planned sales, "
-                            "so maintain a second authorized assortment rather than "
-                            "silently substituting look-alike products. Allow ten "
-                            "business days for new listing and warehouse checks. "
-                            "If available coverage falls below fourteen days, "
-                            "reduce promotion before promising delivery against "
-                            "unconfirmed inbound inventory."
-                        ),
-                    ),
-                    field(
-                        "Underwriting decision and evidence expiration",
-                        "textarea",
-                        (
-                            "State the decision, maximum initial exposure, evidence "
-                            "still required, and conditions that invalidate the "
-                            "decision. Give each condition a named operating role "
-                            "and review date rather than relying on a general "
-                            "statement of acceptable risk."
-                        ),
-                        (
-                            "Authorize a 200-order pilot only after dealer rights, "
-                            "product-rule assessment, and 3PL test shipments pass. "
-                            "Cap advertising at $2,400 and inventory commitments "
-                            "at the signed purchase authorization. The merchandising "
-                            "lead rechecks quotes after thirty days; a landed "
-                            "cost above $28 requires a revised contribution calculation."
-                        ),
-                    ),
-                ],
-                "completion_gate": (
-                    "The operating lead signs a dated evidence register covering "
-                    "dealer rights, product traceability, executable fulfillment "
-                    "quotes, pilot economics, and funding capacity; unresolved "
-                    "safety or authorization issues prevent inventory release."
-                ),
-            },
-            {
-                "worksheet_id": "ws-02",
-                "number": 2,
-                "title": "Unit Economics, Defect Reserve, and Working-Capital Float",
-                "purpose": (
-                    "Translate the canonical revenue scenarios into order-level "
-                    "economics, explicit refund treatment, incremental defect costs, "
-                    "and a funded cash cycle. Separate recognized retail revenue "
-                    "from customer collections, tax liabilities, inventory purchases, "
-                    "and processor balances so apparent growth cannot conceal "
-                    "cash exhaustion."
-                ),
-                "chapter_ref": "Q3, Q4",
-                "instructions": [
-                    (
-                        "Enter the three canonical scenarios before constructing "
-                        "a bottom-up model. Preserve their revenue, margin, profit, "
-                        "and staffing totals exactly. Treat the scenario revenue "
-                        "figures as retail sales after refunds, regardless of "
-                        "a source heading describing gross revenue."
-                    ),
-                    (
-                        "Reconcile billed merchandise sales to refunds and recognized "
-                        "revenue, then divide by shipped orders using one consistent "
-                        "denominator. Exclude sales taxes from revenue and record "
-                        "whether shipping charges, discounts, and recovered returned "
-                        "inventory are included in each calculation."
-                    ),
-                    (
-                        "Calculate pre-advertising and post-advertising contribution "
-                        "separately. Keep original product costs, customer refunds, "
-                        "incremental defect handling, and replacement shipments "
-                        "distinct. Explain every reserve assumption using observed "
-                        "cohorts or a clearly bounded pilot estimate that can "
-                        "later be replaced."
-                    ),
-                    (
-                        "Build a dated cash schedule for deposits, balances, "
-                        "advertising invoices, settlement delays, refunds, and "
-                        "payroll. Do not count a supplier deposit and the full "
-                        "invoice as separate inventory costs, or treat an "
-                        "unsettled processor balance as available bank cash."
-                    ),
-                    (
-                        "Stress advertising costs, return rates, and supplier "
-                        "lead times independently before combining them. Label "
-                        "these as operating sensitivities rather than replacing "
-                        "canonical scenarios. Assign specific spending or "
-                        "replenishment actions to each cash and contribution "
-                        "threshold that the stress test breaches."
-                    ),
-                ],
-                "fields": [
-                    field(
-                        "Canonical scenario reconciliation",
-                        "textarea",
-                        (
-                            "Record annual revenue, net margin, annual owner net "
-                            "profit, total modeled expense, and team size for "
-                            "each canonical scenario. Explain the revenue basis "
-                            "so underlying customer collections cannot be mistaken "
-                            "for recognized operator revenue."
-                        ),
-                        (
-                            "Conservative: $250,000 revenue, 5%, $12,500 profit, "
-                            "$237,500 expenses, 2 FT + 3 C. Base: $1,125,000, "
-                            "11.5%, $129,375, $995,625, 2 FT + 3 C. Scaled: "
-                            "$2,000,000, 18%, $360,000, $1,640,000, 3 FT + "
-                            "4 C. Revenue means retail sales net of refunds; "
-                            "goods, fulfillment, and advertising remain expenses."
-                        ),
-                    ),
-                    field(
-                        "Billed sales to recognized retail revenue bridge",
-                        "textarea",
-                        (
-                            "Specify shipped orders, billed merchandise value, "
-                            "discount treatment, refund dollars, and resulting "
-                            "recognized sales. Distinguish refund dollars from "
-                            "returned-order counts, since partial refunds make "
-                            "those percentages different and require separate "
-                            "operating evidence."
-                        ),
-                        (
-                            "Base uses 15,000 shipped orders at $80 billed "
-                            "merchandise value after discounts: $1,200,000. Deduct "
-                            "$75,000 refunds to recognize $1,125,000, or $75 "
-                            "per shipped order. The refund-dollar ratio is "
-                            "6.25%; it does not establish a 6.25% physical "
-                            "return rate. Sales taxes are excluded throughout."
-                        ),
-                    ),
-                    field(
-                        "Delivered-order cost stack",
-                        "textarea",
-                        (
-                            "Enter per-order landed goods, fulfillment, shipping, "
-                            "processing, and incremental support or defect costs. "
-                            "Multiply each by the same shipped-order count and "
-                            "explain how recoverable returns and original payment "
-                            "fees are treated without double counting."
-                        ),
-                        (
-                            "Per shipped order, use $28 goods, $9 fulfillment, "
-                            "$7 shipping, $2.50 processing, and $1.50 incremental "
-                            "defect/support allowance: $48 total. Annual costs "
-                            "are $420,000, $135,000, $105,000, $37,500, and "
-                            "$22,500. Assume no returned-inventory recovery credit; "
-                            "processing includes retained fees on refunded orders."
-                        ),
-                    ),
-                    field(
-                        "Contribution, acquisition cost, and revenue attribution",
-                        "textarea",
-                        (
-                            "Calculate contribution before advertising, advertising "
-                            "per shipped order, customer acquisition cost, and "
-                            "contribution after advertising. Use customer-level "
-                            "deduplication so repeat orders do not artificially "
-                            "lower the reported acquisition cost for genuinely "
-                            "new purchasers."
-                        ),
-                        (
-                            "Recognized revenue of $75 less $48 variable "
-                            "cost produces $27 pre-ad contribution. Annual "
-                            "advertising of $180,000 equals $12 per shipped "
-                            "order, leaving $15 contribution. With 12,000 "
-                            "new customers and 3,000 repeat orders, acquisition "
-                            "cost is $15 per new customer, not $12."
-                        ),
-                    ),
-                    field(
-                        "Refund scrub and incremental defect allowance",
-                        "textarea",
-                        (
-                            "Define the data scrub for refunds, duplicate "
-                            "credits, chargebacks, and defect cases. Allocate "
-                            "the incremental allowance only to expenses not "
-                            "already recognized in refunds or original product "
-                            "cost, and establish a monthly true-up method."
-                        ),
-                        (
-                            "Split $22,500 into $13,500 incremental defect "
-                            "handling and $9,000 variable support. The defect "
-                            "estimate represents 450 incidents at $30 "
-                            "incremental cost, separate from $75,000 customer "
-                            "refunds. Deduplicate by order, refund identifier, "
-                            "and claim identifier; compare the allowance with "
-                            "actual replacement and handling costs monthly."
-                        ),
-                    ),
-                    field(
-                        "Fixed operating expense and owner-profit bridge",
-                        "textarea",
-                        (
-                            "List annual fixed expenses and identify compensation "
-                            "assumptions that require local wage and contractor "
-                            "quotes. Reconcile contribution to owner profit "
-                            "without treating inventory purchases, owner drawings, "
-                            "or processor transfers as additional operating "
-                            "expenses."
-                        ),
-                        (
-                            "Annual post-ad contribution is $225,000. Deduct "
-                            "$95,625 fixed opex, or $7,968.75 monthly, to "
-                            "reach $129,375. Illustrative allocation: $72,000 "
-                            "loaded compensation for two full-time roles, "
-                            "$12,000 across three specialist contractors, "
-                            "and $11,625 software/insurance. Validate these "
-                            "quotes; variable support costs remain separate."
-                        ),
-                    ),
-                    field(
-                        "Inventory coverage and reorder calculation",
-                        "textarea",
-                        (
-                            "Calculate daily demand, supplier lead time, "
-                            "safety coverage, reorder point, and inventory "
-                            "position. Distinguish units physically available "
-                            "from inbound stock, and inspect arrival dates "
-                            "before assuming the reorder calculation prevents "
-                            "a near-term stockout."
-                        ),
-                        (
-                            "At 15,000 order-equivalents annually, demand "
-                            "averages 41.0959 daily. A 35-day lead time "
-                            "plus 14 safety days requires a 2,014-equivalent "
-                            "reorder point after rounding up. With 1,700 "
-                            "on hand, 400 inbound, and 100 allocated, "
-                            "position is 2,000; inspect inbound dates and "
-                            "replenish in permitted case multiples."
-                        ),
-                    ),
-                    field(
-                        "Startup cash sources and uses",
-                        "textarea",
-                        (
-                            "Build a fully reconciled opening cash allocation "
-                            "including inventory, acquisition spend, fixed "
-                            "overhead, settlement exposure, refund liquidity, "
-                            "and an uncommitted buffer. Explain which amounts "
-                            "are liquidity allocations rather than additional "
-                            "expenses in the annual profit model."
-                        ),
-                        (
-                            "Fund $145,000: $67,200 inventory, $30,000 "
-                            "advertising runway, $15,937.50 fixed overhead "
-                            "runway, $18,750 processor-delay cushion, $6,250 "
-                            "refund liquidity, and $6,862.50 unrestricted "
-                            "buffer. These allocations sum exactly to "
-                            "$145,000. The processor cushion is a stress "
-                            "assumption, while refund liquidity funds refunds "
-                            "already included in the revenue bridge."
-                        ),
-                    ),
-                    field(
-                        "Advertising inflation and profitability sensitivity",
-                        "textarea",
-                        (
-                            "Stress acquisition spending while holding "
-                            "recognized sales and other costs constant "
-                            "to isolate exposure. Calculate the revised "
-                            "profit, margin, and spending threshold, then "
-                            "specify the intervention rather than presenting "
-                            "the stressed outcome as a canonical scenario."
-                        ),
-                        (
-                            "A 25% advertising increase raises spend from "
-                            "$180,000 to $225,000 and reduces Base profit "
-                            "to $84,375, or 7.5% of $1,125,000 revenue. "
-                            "Break-even advertising is $405,000 pre-ad "
-                            "contribution less $95,625 fixed opex, equaling "
-                            "$309,375. Begin corrective action well before "
-                            "that ceiling."
-                        ),
-                    ),
-                    field(
-                        "Cash review cadence and funding intervention",
-                        "textarea",
-                        (
-                            "Define the cash forecast horizon, minimum "
-                            "available balance, processor-delay trigger, "
-                            "and purchasing intervention. Separate recognized "
-                            "profit from cash available for commitments, "
-                            "and state who can reduce discretionary spending "
-                            "when expected settlement dates move."
-                        ),
-                        (
-                            "Refresh a thirteen-week forecast every Monday "
-                            "using bank cash and dated settlements. Treat "
-                            "$18,750 as the modeled processor-delay "
-                            "exposure, not spendable cash. If projected "
-                            "unrestricted liquidity drops below $6,862.50, "
-                            "the operating lead freezes assortment expansion "
-                            "and reduces advertising before issuing another "
-                            "noncancelable purchase commitment."
-                        ),
-                    ),
-                ],
-                "completion_gate": (
-                    "All three canonical scenarios reconcile exactly, the Base "
-                    "order model reaches $129,375, and the cash schedule "
-                    "separates expense recognition from settlement timing with "
-                    "funded inventory, refund, and interruption exposure."
-                ),
-            },
-            {
-                "worksheet_id": "ws-03",
-                "number": 3,
-                "title": "Execution, Ledger, and Technical QA Pre-Flight",
-                "purpose": (
-                    "Prove that storefront, payment processor, warehouse, carrier, "
-                    "returns workflow, and accounting ledger exchange complete "
-                    "and deduplicated records. Use controlled test orders and "
-                    "reconciliation evidence to prevent overselling, duplicate "
-                    "fulfillment, unsupported refunds, incorrect tax treatment, "
-                    "and silent integration failures."
-                ),
-                "chapter_ref": "Q7, Q8",
-                "instructions": [
-                    (
-                        "Map each event from checkout through settlement "
-                        "and returns to its authoritative system. Assign "
-                        "stable identifiers before building integrations, "
-                        "and document which system may change order, "
-                        "inventory, payment, and refund states when records "
-                        "arrive late or out of sequence."
-                    ),
-                    (
-                        "Run controlled orders covering payment capture, "
-                        "warehouse rejection, partial shipment, cancellation, "
-                        "return, and refund. Record expected results "
-                        "before execution. Use sandbox transactions where "
-                        "supported and explicitly identify the small "
-                        "live transactions needed to validate physical "
-                        "warehouse and carrier behavior."
-                    ),
-                    (
-                        "Reconcile orders to processor transactions and "
-                        "processor transactions to bank deposits separately. "
-                        "Account for settlement timing, refunds, fees, "
-                        "and withheld balances. A matching deposit "
-                        "total does not prove every underlying order "
-                        "was captured or refunded correctly."
-                    ),
-                    (
-                        "Test duplicate events, delayed events, expired "
-                        "credentials, and temporary downstream outages. "
-                        "Require bounded retries and a visible exception "
-                        "queue. Demonstrate that replay restores missing "
-                        "work without issuing a second shipment, a "
-                        "second refund, or a duplicate ledger entry."
-                    ),
-                    (
-                        "Retain an evidence packet containing test "
-                        "identifiers, screenshots, payload summaries, "
-                        "ledger results, and exception resolutions. "
-                        "Restrict access to customer information and "
-                        "credentials, and have someone other than "
-                        "the integration builder verify the final "
-                        "reconciliation before pilot traffic begins."
-                    ),
-                ],
-                "fields": [
-                    field(
-                        "Authoritative systems and event ownership",
-                        "textarea",
-                        (
-                            "Map order creation, payment capture, allocation, "
-                            "shipment, return receipt, refund, and accounting "
-                            "posting to their authoritative systems. Specify "
-                            "how conflicting updates are resolved and "
-                            "which identifiers connect the complete transaction "
-                            "across systems."
-                        ),
-                        (
-                            "Shopify owns the commercial order; the "
-                            "processor owns capture and settlement; the "
-                            "3PL owns physical receipt and shipment; "
-                            "QuickBooks Online holds accounting entries. "
-                            "Persist order ID, payment ID, fulfillment "
-                            "ID, return ID, and ledger batch ID. "
-                            "A carrier scan cannot independently mark "
-                            "an uncaptured order as paid."
-                        ),
-                    ),
-                    field(
-                        "SKU, bundle, and lot master validation",
-                        "textarea",
-                        (
-                            "Define identifiers, units of measure, bundle "
-                            "components, carton dimensions, and lot capture "
-                            "requirements. Explain how the system prevents "
-                            "a sellable bundle from consuming the wrong "
-                            "component quantities or losing the traceability "
-                            "needed for a targeted recall."
-                        ),
-                        (
-                            "Bundle SET-04 consumes two BIN-02 units "
-                            "and one DIV-01 unit. Store component "
-                            "barcodes and actual packed dimensions in "
-                            "the warehouse master. A ten-bundle test "
-                            "must decrement twenty bins and ten "
-                            "dividers, preserve component lot records, "
-                            "and produce a carrier label consistent "
-                            "with the measured carton."
-                        ),
-                    ),
-                    field(
-                        "Payment capture and fulfillment release controls",
-                        "textarea",
-                        (
-                            "Specify the payment state required before "
-                            "warehouse release, treatment of manual "
-                            "payment review, and cancellation timing. "
-                            "Identify how release decisions are recorded "
-                            "so customer support can distinguish pending "
-                            "payment from a genuine warehouse delay."
-                        ),
-                        (
-                            "Release prepaid orders only after confirmed "
-                            "capture and completed payment review. Keep "
-                            "authorized-but-uncaptured orders outside the "
-                            "3PL dispatch queue. A cancellation received "
-                            "after pick confirmation creates a warehouse "
-                            "intercept request; support promises cancellation "
-                            "only after the warehouse confirms the "
-                            "parcel has not left its control."
-                        ),
-                    ),
-                    field(
-                        "Routing idempotency and retry behavior",
-                        "textarea",
-                        (
-                            "Define the idempotency key, durable state "
-                            "record, retry schedule, and exception "
-                            "destination for order routing. Address "
-                            "the ambiguous case where a warehouse "
-                            "accepts an order but the integration "
-                            "times out before receiving confirmation."
-                        ),
-                        (
-                            "Use order ID plus fulfillment version "
-                            "as the routing key and enforce a "
-                            "unique durable record. Retry transient "
-                            "failures after one, five, and fifteen "
-                            "minutes. After a timeout, query the "
-                            "3PL using the merchant reference before "
-                            "resubmission; unresolved results enter a "
-                            "staffed exception queue."
-                        ),
-                    ),
-                    field(
-                        "Inventory synchronization and oversell prevention",
-                        "textarea",
-                        (
-                            "Specify available-to-promise logic, reservation "
-                            "timing, warehouse synchronization frequency, "
-                            "and stale-feed behavior. Separate quarantined, "
-                            "allocated, inbound, and physically available "
-                            "inventory so a delayed update cannot "
-                            "create unsupported customer delivery promises."
-                        ),
-                        (
-                            "Available-to-promise equals sellable on-hand "
-                            "stock less open reservations and the "
-                            "configured channel buffer. Exclude inbound "
-                            "and quarantined units. Refresh every "
-                            "fifteen minutes and alert after thirty "
-                            "minutes without a successful update. "
-                            "Disable affected product promotion when "
-                            "stock confidence falls below the "
-                            "documented operating threshold."
-                        ),
-                    ),
-                    field(
-                        "Shipment promises and carrier evidence",
-                        "textarea",
-                        (
-                            "Record the promised shipping window, "
-                            "warehouse cutoff, label-generation state, "
-                            "carrier acceptance evidence, and delay "
-                            "notification procedure. Explain how "
-                            "customer-facing status avoids treating "
-                            "a printed shipping label as proof "
-                            "that physical dispatch occurred."
-                        ),
-                        (
-                            "A weekday order captured before 1 p.m. "
-                            "local warehouse time targets next-business-day "
-                            "dispatch. Label creation updates the "
-                            "order to packed, while carrier acceptance "
-                            "marks it shipped. If the promised "
-                            "shipping window cannot be met, trigger "
-                            "the delay process required by 16 CFR "
-                            "Part 435."
-                        ),
-                    ),
-                    field(
-                        "Returns inspection and refund authorization",
-                        "textarea",
-                        (
-                            "Define return authorization, inspection "
-                            "grades, inventory disposition, refund "
-                            "limits, and evidence requirements. "
-                            "Describe how partial refunds and "
-                            "replacement shipments connect to the "
-                            "original order without issuing duplicate "
-                            "customer credits or restoring unsafe "
-                            "goods to stock."
-                        ),
-                        (
-                            "Return R-104 references order O-104 "
-                            "and the original capture. The 3PL "
-                            "records unopened, opened-resellable, damaged, "
-                            "or quarantine disposition with photographs. "
-                            "Support checks previous refunds before "
-                            "issuing a $40 partial credit against "
-                            "an $80 merchandise charge. Safety "
-                            "complaints bypass normal restocking and "
-                            "enter product review."
-                        ),
-                    ),
-                    field(
-                        "Order-to-ledger accounting test",
-                        "textarea",
-                        (
-                            "Describe a complete accounting test "
-                            "covering merchandise sales, sales tax "
-                            "liability, processor clearing, fees, "
-                            "inventory relief, and refunds. State "
-                            "recognition timing and keep supporting "
-                            "operating allocations separate from "
-                            "entries justified by actual transactions."
-                        ),
-                        (
-                            "For an $80 order plus $6 tax, "
-                            "record $86 processor receivable, $80 "
-                            "sales, and $6 tax payable at the "
-                            "documented recognition point. A $2.50 "
-                            "fee leaves $83.50 settlement. Record "
-                            "$28 goods expense and inventory relief "
-                            "separately; refunds reverse the applicable "
-                            "sales and tax amounts."
-                        ),
-                    ),
-                    field(
-                        "Processor settlement and refund reconciliation",
-                        "textarea",
-                        (
-                            "Specify reconciliation frequency, matching "
-                            "keys, acceptable timing differences, "
-                            "and escalation thresholds. Include "
-                            "captured transactions, processor fees, "
-                            "refunds, disputes, withheld balances, "
-                            "and bank receipts so an apparently "
-                            "balanced summary cannot conceal "
-                            "unmatched customer activity."
-                        ),
-                        (
-                            "Daily, match capture and refund IDs "
-                            "to processor activity, then match "
-                            "settlement IDs to bank deposits. "
-                            "For ten $86 captures, $25 fees, "
-                            "and one $86 full refund, expected "
-                            "settlement is $749 if no other "
-                            "adjustments apply. Escalate unexplained "
-                            "differences above $10 or older "
-                            "than two business days."
-                        ),
-                    ),
-                    field(
-                        "Access, backup, and release evidence",
-                        "textarea",
-                        (
-                            "Record role permissions, authentication "
-                            "requirements, credential storage, backup "
-                            "scope, and evidence from recovery "
-                            "testing. Identify independent review "
-                            "of refunds and payout changes "
-                            "without giving every contractor "
-                            "administrative access to customer "
-                            "and settlement data."
-                        ),
-                        (
-                            "Require multifactor authentication for "
-                            "storefront, processor, warehouse, and "
-                            "ledger administrators. Support receives "
-                            "limited refund permissions; payout "
-                            "changes require independent confirmation "
-                            "using a previously verified contact. "
-                            "Export configuration and reconciliation "
-                            "records weekly, then restore a test "
-                            "mapping before release. Store secrets "
-                            "outside source files and shared "
-                            "spreadsheets."
-                        ),
-                    ),
-                ],
-                "completion_gate": (
-                    "Controlled tests pass for routing, payment, inventory, "
-                    "shipment, return, and reconciliation; replay creates "
-                    "no duplicate effects, and an independent reviewer "
-                    "signs the evidence packet with every critical "
-                    "exception resolved."
-                ),
-            },
-            {
-                "worksheet_id": "ws-04",
-                "number": 4,
-                "title": "Statutory, Contract, and Outreach Requirements Audit",
-                "purpose": (
-                    "Convert product, import, tax, privacy, advertising, and "
-                    "consumer-protection requirements into evidence-backed "
-                    "operating tasks. Assign responsibility by actual business "
-                    "role and jurisdiction, preserve contractual remedies, "
-                    "and ensure promotional promises match the inventory, "
-                    "shipping, warranty, and refund processes the team "
-                    "can execute."
-                ),
-                "chapter_ref": "Q5, Q9",
-                "instructions": [
-                    (
-                        "Identify selling jurisdictions, inventory locations, "
-                        "product categories, importer responsibilities, "
-                        "and customer-data flows before selecting "
-                        "requirements. Record the applicable authority "
-                        "and operational consequence for each "
-                        "finding rather than copying a general "
-                        "checklist that ignores the actual "
-                        "business model."
-                    ),
-                    (
-                        "Obtain signed supplier and warehouse "
-                        "agreements, then extract clauses governing "
-                        "authorization, inspection, loss, recalls, "
-                        "insurance, data access, and termination. "
-                        "Flag gaps with the responsible "
-                        "contract owner and document the "
-                        "replacement language or commercial "
-                        "concession needed before commitments."
-                    ),
-                    (
-                        "Verify that product pages, advertisements, "
-                        "checkout disclosures, shipping promises, "
-                        "return instructions, and customer messages "
-                        "describe the same offer. Require "
-                        "substantiation for measurable claims "
-                        "and preserve the evidence version "
-                        "used when each material promotion "
-                        "was published."
-                    ),
-                    (
-                        "Separate transactional service messages "
-                        "from marketing email and text "
-                        "campaigns. Check recipient records, "
-                        "suppression behavior, vendor permissions, "
-                        "and applicable channel rules before "
-                        "sending. A completed purchase does "
-                        "not automatically establish every "
-                        "permission needed for unrelated "
-                        "promotional outreach."
-                    ),
-                    (
-                        "Schedule recurring reviews for tax "
-                        "thresholds, safety incidents, advertising "
-                        "claims, contract renewals, and privacy "
-                        "requests. Retain enough evidence "
-                        "to reconstruct decisions without "
-                        "keeping customer data indefinitely, "
-                        "and assign a backup owner "
-                        "for time-sensitive reporting and "
-                        "response duties."
-                    ),
-                ],
-                "fields": [
-                    field(
-                        "Business registrations and jurisdiction map",
-                        "textarea",
-                        (
-                            "List the operating entity, storefront "
-                            "markets, warehouse locations, product-specific "
-                            "licenses, and local registration "
-                            "requirements. Distinguish entity formation "
-                            "from permission to collect sales "
-                            "tax or conduct regulated product "
-                            "sales in each relevant jurisdiction."
-                        ),
-                        (
-                            "The retailer forms its operating "
-                            "entity, obtains an EIN, and "
-                            "checks city business-license requirements "
-                            "before opening accounts. A Nevada "
-                            "3PL creates a separate physical-presence "
-                            "tax review. Initial products exclude "
-                            "regulated food, cosmetics, and medical "
-                            "claims; adding those categories "
-                            "requires a fresh product-specific "
-                            "requirements assessment."
-                        ),
-                    ),
-                    field(
-                        "Consumer-product rules and incident escalation",
-                        "textarea",
-                        (
-                            "Identify applicable safety standards, "
-                            "certification duties, incident reporting, "
-                            "and recall execution responsibilities. "
-                            "Record the factual trigger for "
-                            "escalation and the evidence required "
-                            "to determine whether a reported "
-                            "defect presents a substantial "
-                            "product hazard."
-                        ),
-                        (
-                            "Maintain the rule assessment and "
-                            "required certificates under 15 "
-                            "U.S.C. 2063 for applicable products. "
-                            "Route injury, breakage, and "
-                            "hazard allegations immediately to "
-                            "the safety owner for assessment "
-                            "under 15 U.S.C. 2064(b) and "
-                            "16 CFR Part 1115. Preserve "
-                            "complaints, lot records, photographs, "
-                            "and shipment history while "
-                            "affected goods remain quarantined."
-                        ),
-                    ),
-                    field(
-                        "Import classification and entry records",
-                        "textarea",
-                        (
-                            "Determine the importer of record, "
-                            "tariff classification, customs value, "
-                            "origin marking, additional duties, "
-                            "and entry-document owner. State "
-                            "how a customs broker's work "
-                            "is checked and how corrected "
-                            "duty assumptions reach the "
-                            "landed-cost model."
-                        ),
-                        (
-                            "Before a direct import, obtain "
-                            "a broker-reviewed classification "
-                            "and origin analysis rather "
-                            "than accepting the supplier's "
-                            "invoice description. Apply "
-                            "reasonable-care duties under "
-                            "19 U.S.C. 1484. Retain "
-                            "covered entry records under "
-                            "19 U.S.C. 1508 and "
-                            "19 CFR 163.4, generally "
-                            "five years subject to "
-                            "record-specific rules."
-                        ),
-                    ),
-                    field(
-                        "Sales-tax nexus, registration, and reconciliation",
-                        "textarea",
-                        (
-                            "Document physical-presence exposure, "
-                            "economic-nexus monitoring, marketplace "
-                            "collection treatment, resale documentation, "
-                            "and filing ownership. Connect "
-                            "the jurisdiction register to "
-                            "actual sales and inventory "
-                            "records rather than assuming "
-                            "storefront tax settings establish "
-                            "registration status."
-                        ),
-                        (
-                            "Review warehouse inventory for "
-                            "physical nexus before launch. "
-                            "Track California delivered tangible "
-                            "personal-property sales against "
-                            "the $500,000 economic-nexus "
-                            "test in Revenue and "
-                            "Taxation Code 6203(c)(4), "
-                            "including applicable related-person "
-                            "sales and current or "
-                            "preceding calendar-year measures. "
-                            "Reconcile collected tax to "
-                            "returns and remittances monthly."
-                        ),
-                    ),
-                    field(
-                        "Shipping, refunds, warranties, and customer promises",
-                        "textarea",
-                        (
-                            "Audit advertised shipment timing, "
-                            "delay notices, cancellation options, "
-                            "refund procedures, and warranty "
-                            "availability. Specify the actual "
-                            "workflow supporting each promise "
-                            "and identify product claims "
-                            "that require additional evidence "
-                            "before publication."
-                        ),
-                        (
-                            "Apply 16 CFR Part 435 "
-                            "to shipment representations, "
-                            "delay handling, and required "
-                            "refunds. Publish the actual "
-                            "return window and exclusions "
-                            "before purchase. Where covered "
-                            "written consumer warranties "
-                            "apply, assess 15 U.S.C. "
-                            "2301–2312 and 16 CFR "
-                            "Part 702 pre-sale availability "
-                            "requirements rather than promising "
-                            "an unsupported lifetime remedy."
-                        ),
-                    ),
-                    field(
-                        "Supplier remedies and warehouse loss allocation",
-                        "textarea",
-                        (
-                            "Extract terms for title, "
-                            "risk of loss, inspection, "
-                            "defect notice, indemnity, insurance, "
-                            "warehouse claims, and termination. "
-                            "Explain how state enactments "
-                            "and signed contractual changes "
-                            "affect the default rules "
-                            "used in procurement and "
-                            "receiving procedures."
-                        ),
-                        (
-                            "Review the governing state's "
-                            "UCC 2-509 risk-of-loss "
-                            "rules and UCC 2-607 "
-                            "notice obligations alongside "
-                            "the signed contract. Require "
-                            "a documented receiving inspection "
-                            "and prompt defect notice. "
-                            "Reject a warehouse liability "
-                            "cap tied only to "
-                            "storage fees unless insurance "
-                            "and pricing adequately address "
-                            "the resulting inventory exposure."
-                        ),
-                    ),
-                    field(
-                        "Privacy inventory and customer-rights workflow",
-                        "textarea",
-                        (
-                            "Map customer identifiers, order "
-                            "history, advertising audiences, "
-                            "support records, processors, "
-                            "retention periods, and access "
-                            "permissions. Determine which "
-                            "privacy statutes apply and "
-                            "document request verification, "
-                            "deletion exceptions, and vendor "
-                            "coordination for the actual "
-                            "data flows."
-                        ),
-                        (
-                            "Inventory Shopify, the processor, "
-                            "Klaviyo, the 3PL, and "
-                            "support exports. Assess "
-                            "applicability under California "
-                            "Civil Code 1798.100 et "
-                            "seq. and other relevant "
-                            "state laws. Test a "
-                            "verified deletion request "
-                            "across vendors while preserving "
-                            "transaction records required "
-                            "for tax obligations, fraud "
-                            "resolution, and outstanding "
-                            "customer remedies."
-                        ),
-                    ),
-                    field(
-                        "Commercial email and marketing text controls",
-                        "textarea",
-                        (
-                            "Separate email and text "
-                            "requirements, permission evidence, "
-                            "sender identification, suppression, "
-                            "and vendor responsibility. "
-                            "Describe how opt-outs "
-                            "propagate across tools and "
-                            "how the team prevents "
-                            "purchased or scraped contact "
-                            "lists from entering automated "
-                            "promotional sequences."
-                        ),
-                        (
-                            "Commercial email follows "
-                            "15 U.S.C. 7704, "
-                            "including accurate headers, "
-                            "a postal address, and "
-                            "opt-out processing within "
-                            "ten business days. "
-                            "Marketing texts receive "
-                            "a separate review under "
-                            "47 U.S.C. 227 and "
-                            "47 CFR 64.1200. "
-                            "Do not infer text "
-                            "permission from a shipping "
-                            "telephone number."
-                        ),
-                    ),
-                    field(
-                        "Advertising substantiation, reviews, and endorsements",
-                        "textarea",
-                        (
-                            "List measurable claims, comparison "
-                            "claims, review incentives, "
-                            "affiliate relationships, and "
-                            "creative evidence. Explain "
-                            "how the retailer detects "
-                            "fabricated testimonials, discloses "
-                            "material connections, and "
-                            "prevents contractors from "
-                            "publishing unsupported performance "
-                            "or safety representations."
-                        ),
-                        (
-                            "A claim that a "
-                            "divider supports twenty "
-                            "pounds requires suitable "
-                            "test evidence before "
-                            "publication. Review claims "
-                            "under 15 U.S.C. 45, "
-                            "endorsements under 16 "
-                            "CFR Part 255, and "
-                            "review practices under "
-                            "16 CFR Part 465. "
-                            "Never condition a review "
-                            "reward on positive "
-                            "sentiment."
-                        ),
-                    ),
-                    field(
-                        "Requirements register and recurring evidence review",
-                        "textarea",
-                        (
-                            "Assign an owner, backup, "
-                            "review frequency, evidence "
-                            "location, and escalation "
-                            "trigger for every material "
-                            "requirement. Distinguish routine "
-                            "monthly monitoring from "
-                            "incident-driven duties that "
-                            "cannot wait for the "
-                            "next scheduled management "
-                            "meeting."
-                        ),
-                        (
-                            "The operating lead reviews "
-                            "tax exposure monthly; "
-                            "the merchandising lead "
-                            "reviews supplier permissions "
-                            "quarterly; the safety "
-                            "owner reviews incidents "
-                            "immediately. Store signed "
-                            "agreements, current insurance "
-                            "evidence, product assessments, "
-                            "and campaign substantiation "
-                            "in a versioned register. "
-                            "Any new warehouse, "
-                            "jurisdiction, or product "
-                            "category triggers reassessment."
-                        ),
-                    ),
-                ],
-                "completion_gate": (
-                    "Every applicable requirement has an accountable owner, "
-                    "supporting evidence, and an executable operating control; "
-                    "product claims, distribution permissions, shipping promises, "
-                    "tax settings, and outreach practices match the "
-                    "documented business scope."
-                ),
-            },
-            {
-                "worksheet_id": "ws-05",
-                "number": 5,
-                "title": "Automation, Growth Flywheel, and Risk Fallback Tracker",
-                "purpose": (
-                    "Automate repeatable order routing, inventory alerts, returns "
-                    "tracking, and permission-based retention while preserving "
-                    "human control over material exceptions. Tie growth "
-                    "decisions to realized contribution and available stock, "
-                    "then rehearse fallbacks for advertising inflation, "
-                    "integration outages, product incidents, and supplier "
-                    "interruptions."
-                ),
-                "chapter_ref": "Q6, Q10",
-                "instructions": [
-                    (
-                        "Select automations by transaction "
-                        "volume, error cost, and "
-                        "reversibility rather than "
-                        "novelty. Document the trigger, "
-                        "required evidence, action, "
-                        "owner, and fallback for "
-                        "each workflow. Begin "
-                        "with order routing, "
-                        "inventory alerts, and "
-                        "returns tracking before "
-                        "expanding into promotional "
-                        "optimization."
-                    ),
-                    (
-                        "Make contribution and stock "
-                        "availability prerequisites for "
-                        "growth recommendations. Keep "
-                        "platform-attributed revenue separate "
-                        "from ledger-recognized sales, "
-                        "and use customer-level "
-                        "cohorts to distinguish "
-                        "new acquisition from "
-                        "repeat purchasing that "
-                        "would have occurred "
-                        "without additional promotional "
-                        "spend."
-                    ),
-                    (
-                        "Build retention sequences "
-                        "around useful post-purchase "
-                        "information, compatible accessories, "
-                        "and genuine replacement "
-                        "needs. Apply marketing "
-                        "eligibility and suppression "
-                        "before sending. Test "
-                        "incremental contribution using "
-                        "a holdout rather "
-                        "than crediting every "
-                        "subsequent purchase to "
-                        "the latest message."
-                    ),
-                    (
-                        "Set bounded automation "
-                        "permissions and create "
-                        "visible exception queues "
-                        "for safety complaints, "
-                        "large refunds, low "
-                        "stock, failed settlements, "
-                        "and unusual spend. "
-                        "Require independent verification "
-                        "before changes that "
-                        "move payouts or "
-                        "materially increase purchasing "
-                        "and advertising commitments."
-                    ),
-                    (
-                        "Rehearse each fallback "
-                        "using realistic outage "
-                        "and demand conditions. "
-                        "Record the recovery "
-                        "time, maximum transaction "
-                        "backlog, customer communication "
-                        "method, and reconciliation "
-                        "steps. Resume automation "
-                        "only after duplicate "
-                        "prevention and inventory "
-                        "accuracy have been "
-                        "verified against authoritative "
-                        "records."
-                    ),
-                ],
-                "fields": [
-                    field(
-                        "Automation inventory and operating ownership",
-                        "textarea",
-                        (
-                            "List the initial automated "
-                            "workflows with their "
-                            "triggers, authoritative inputs, "
-                            "actions, business owners, "
-                            "and measurable success "
-                            "criteria. Explain which "
-                            "decisions remain manual "
-                            "because a mistaken "
-                            "action would create "
-                            "material cash, customer, "
-                            "or product exposure."
-                        ),
-                        (
-                            "Shopify Flow tags "
-                            "captured orders for "
-                            "routing; the warehouse "
-                            "connector submits approved "
-                            "fulfillments; an inventory "
-                            "job flags coverage "
-                            "below fourteen days; "
-                            "returns tracking links "
-                            "receipt and refund "
-                            "events. The operating "
-                            "lead owns exceptions. "
-                            "Automation may recommend "
-                            "reorders but cannot "
-                            "issue noncancelable supplier "
-                            "commitments independently."
-                        ),
-                    ),
-                    field(
-                        "Permission boundaries and operational observability",
-                        "textarea",
-                        (
-                            "Specify service-account permissions, "
-                            "event logging, alert "
-                            "delivery, error classification, "
-                            "and exception ownership. "
-                            "Describe what evidence "
-                            "an operator sees "
-                            "before deciding whether "
-                            "an automated action "
-                            "succeeded, failed safely, "
-                            "or requires a "
-                            "controlled replay."
-                        ),
-                        (
-                            "The routing credential "
-                            "can create fulfillments "
-                            "but cannot change "
-                            "payout details or "
-                            "issue refunds. Log "
-                            "event ID, order "
-                            "ID, attempted action, "
-                            "response category, and "
-                            "retry count. Send "
-                            "persistent failures to "
-                            "the staffed support "
-                            "queue after fifteen "
-                            "minutes, excluding payment "
-                            "credentials and unnecessary "
-                            "customer details."
-                        ),
-                    ),
-                    field(
-                        "Paid acquisition contribution controls",
-                        "textarea",
-                        (
-                            "Define spend pacing, "
-                            "new-customer acquisition cost, "
-                            "blended advertising per "
-                            "order, refund-adjusted revenue, "
-                            "and the minimum "
-                            "sample for intervention. "
-                            "Ensure campaign decisions "
-                            "consider inventory coverage "
-                            "and the lag "
-                            "between purchase, refund, "
-                            "and settlement."
-                        ),
-                        (
-                            "Base targets $15 "
-                            "new-customer acquisition "
-                            "cost and $12 "
-                            "advertising per shipped "
-                            "order across the "
-                            "annual mix. Flag "
-                            "a seven-day blended "
-                            "cost above $15 "
-                            "after at least "
-                            "100 shipped orders. "
-                            "The growth owner "
-                            "checks refund-adjusted contribution "
-                            "and available inventory "
-                            "before reducing or "
-                            "reallocating spend."
-                        ),
-                    ),
-                    field(
-                        "Post-purchase education and retention sequence",
-                        "textarea",
-                        (
-                            "Design a retention "
-                            "sequence with audience "
-                            "eligibility, timing, useful "
-                            "content, compatible offers, "
-                            "and suppression conditions. "
-                            "Separate essential service "
-                            "communications from marketing "
-                            "and explain how "
-                            "open support issues "
-                            "or unresolved returns "
-                            "change the sequence."
-                        ),
-                        (
-                            "Send delivery and "
-                            "care information through "
-                            "the service workflow. "
-                            "For marketing-eligible customers, "
-                            "Klaviyo offers a "
-                            "compatible divider on "
-                            "day twenty-one, with "
-                            "a randomized holdout. "
-                            "Suppress promotional messages "
-                            "during open defect "
-                            "cases and after "
-                            "opt-out. Never describe "
-                            "a durable organizer "
-                            "as requiring artificial "
-                            "monthly replacement."
-                        ),
-                    ),
-                    field(
-                        "Retention incrementality and contribution measurement",
-                        "textarea",
-                        (
-                            "Define the eligible "
-                            "cohort, randomized holdout, "
-                            "measurement window, contribution "
-                            "basis, and campaign "
-                            "costs. Calculate incremental "
-                            "orders rather than "
-                            "attributed orders, and "
-                            "identify when the "
-                            "sample is too "
-                            "small to justify "
-                            "a confident expansion."
-                        ),
-                        (
-                            "Split 1,000 eligible "
-                            "customers into 500 "
-                            "messaged and 500 "
-                            "holdout customers. Over "
-                            "thirty days, observe "
-                            "35 versus 25 "
-                            "orders: ten incremental "
-                            "orders. At $27 "
-                            "pre-ad contribution, "
-                            "incremental contribution "
-                            "is $270 before "
-                            "messaging costs and "
-                            "offer-specific discounts. "
-                            "Repeat the test "
-                            "before assuming statistical "
-                            "reliability."
-                        ),
-                    ),
-                    field(
-                        "Inventory alerts and replenishment fallback",
-                        "textarea",
-                        (
-                            "Specify coverage thresholds, "
-                            "demand windows, inbound "
-                            "confidence, promotional suppression, "
-                            "and purchase-review ownership. "
-                            "Explain how the "
-                            "workflow responds to "
-                            "a delayed supplier "
-                            "shipment without replacing "
-                            "confirmed stock with "
-                            "an optimistic arrival "
-                            "estimate."
-                        ),
-                        (
-                            "Alert at twenty-one "
-                            "days of available "
-                            "coverage and escalate "
-                            "below fourteen. Use "
-                            "confirmed inbound dates "
-                            "separately from physical "
-                            "stock. If a "
-                            "35-day supplier lead "
-                            "time extends to "
-                            "fifty days, reduce "
-                            "affected advertising, "
-                            "update delivery promises, "
-                            "and review authorized "
-                            "substitute products "
-                            "before issuing another "
-                            "purchase order."
-                        ),
-                    ),
-                    field(
-                        "Returns intelligence and defect escalation",
-                        "textarea",
-                        (
-                            "Define structured return "
-                            "reasons, lot-level "
-                            "aggregation, incremental-cost "
-                            "tracking, and escalation "
-                            "criteria. Separate routine "
-                            "preference returns from "
-                            "potential safety issues, "
-                            "and ensure urgent "
-                            "incident assessment does "
-                            "not depend on "
-                            "reaching a numerical "
-                            "complaint threshold."
-                        ),
-                        (
-                            "Classify fit, expectation, "
-                            "transit damage, breakage, "
-                            "and alleged injury "
-                            "separately. Three similar "
-                            "breakage reports from "
-                            "one lot within "
-                            "seven days trigger "
-                            "a quality investigation. "
-                            "Any injury or "
-                            "credible hazard allegation "
-                            "triggers immediate safety "
-                            "review regardless of "
-                            "count. Compare incremental "
-                            "handling costs with "
-                            "the $13,500 annual "
-                            "defect allowance."
-                        ),
-                    ),
-                    field(
-                        "Warehouse integration outage recovery",
-                        "textarea",
-                        (
-                            "Document outage detection, "
-                            "manual processing limits, "
-                            "customer communication, secure "
-                            "data transfer, and "
-                            "post-recovery reconciliation. "
-                            "Explain how operators "
-                            "avoid processing an "
-                            "order both manually "
-                            "and automatically when "
-                            "the integration resumes "
-                            "after a prolonged "
-                            "interruption."
-                        ),
-                        (
-                            "After thirty minutes "
-                            "without successful routing, "
-                            "freeze automatic replay "
-                            "and inspect warehouse "
-                            "merchant references. "
-                            "Process at most "
-                            "fifty urgent orders "
-                            "through the authorized "
-                            "3PL portal, recording "
-                            "manual fulfillment IDs. "
-                            "Before restart, reconcile "
-                            "every manual order "
-                            "and mark completed "
-                            "actions so queued "
-                            "events cannot create "
-                            "duplicate shipments."
-                        ),
-                    ),
-                    field(
-                        "Product incident and recall operating fallback",
-                        "textarea",
-                        (
-                            "Describe the immediate "
-                            "response to a "
-                            "credible product hazard, "
-                            "including inventory isolation, "
-                            "sales suspension, lot "
-                            "tracing, evidence preservation, "
-                            "reporting assessment, and "
-                            "customer communication. "
-                            "Identify who coordinates "
-                            "suppliers, warehouse personnel, "
-                            "insurers, and regulatory "
-                            "response duties."
-                        ),
-                        (
-                            "The safety owner "
-                            "isolates affected lots "
-                            "in the 3PL, "
-                            "suspends related listings "
-                            "and promotions, and "
-                            "exports order-to-lot "
-                            "traceability. Preserve "
-                            "the original complaint "
-                            "and photographs. "
-                            "Assess reporting under "
-                            "15 U.S.C. 2064(b) "
-                            "promptly; coordinate "
-                            "remedy instructions "
-                            "with the responsible "
-                            "manufacturer and applicable "
-                            "authorities rather than "
-                            "deleting adverse reviews."
-                        ),
-                    ),
-                    field(
-                        "Weekly automation value and risk review",
-                        "textarea",
-                        (
-                            "Measure transaction coverage, "
-                            "manual touch time, "
-                            "exception age, duplicate "
-                            "effects, prevented errors, "
-                            "and maintenance effort. "
-                            "State the conditions "
-                            "under which a "
-                            "workflow is simplified, "
-                            "disabled, or reassigned "
-                            "because its operational "
-                            "risk exceeds its "
-                            "labor savings."
-                        ),
-                        (
-                            "Across 300 weekly "
-                            "orders, routing handles "
-                            "285 without intervention "
-                            "and fifteen require "
-                            "six minutes each. "
-                            "Manual routing time "
-                            "is ninety minutes; "
-                            "compare it with "
-                            "the measured prior "
-                            "baseline. Any duplicate "
-                            "shipment disables the "
-                            "faulty workflow until "
-                            "its idempotency defect "
-                            "is corrected and "
-                            "replay tests pass."
-                        ),
-                    ),
-                ],
-                "completion_gate": (
-                    "The three core automations demonstrate measurable "
-                    "labor savings, bounded permissions, visible exceptions, "
-                    "and rehearsed recovery; growth and retention "
-                    "decisions use recognized contribution, valid recipient "
-                    "eligibility, and confirmed inventory."
-                ),
-            },
-            {
-                "worksheet_id": "ws-06",
-                "number": 6,
-                "title": "30-Day Launch Sprint, Pod Scorecard, and Exit Ledger",
-                "purpose": (
-                    "Execute a bounded thirty-day validation sprint with "
-                    "named owners, measurable evidence, cash limits, "
-                    "and explicit continuation criteria. Connect daily "
-                    "service performance to canonical annual economics "
-                    "while building transferable records, assignable "
-                    "commercial relationships, and a documented decision "
-                    "to scale, repair, or exit."
-                ),
-                "chapter_ref": "Q11, Q12",
-                "instructions": [
-                    (
-                        "Treat the thirty-day "
-                        "sprint as a "
-                        "controlled validation period "
-                        "after necessary setup, "
-                        "not a promise "
-                        "that a new "
-                        "business reaches revenue "
-                        "within thirty days. "
-                        "Preserve the canonical "
-                        "two-to-six-month first-deal "
-                        "expectation when scheduling "
-                        "supplier, storefront, and "
-                        "warehouse preparation."
-                    ),
-                    (
-                        "Assign every milestone "
-                        "to one accountable "
-                        "role, a concrete "
-                        "deliverable, and a "
-                        "dated review. Reserve "
-                        "capacity for exceptions "
-                        "and customer support "
-                        "rather than treating "
-                        "all available hours "
-                        "as growth work. "
-                        "Track contractor scope "
-                        "and operating access "
-                        "alongside deliverables."
-                    ),
-                    (
-                        "Use one weekly "
-                        "scorecard combining contribution, "
-                        "cash, acquisition, inventory, "
-                        "shipping, defects, and "
-                        "manual workload. "
-                        "Define each denominator "
-                        "and data source "
-                        "before launch so "
-                        "marketing, operations, and "
-                        "bookkeeping cannot present "
-                        "conflicting versions of "
-                        "the same business "
-                        "performance."
-                    ),
-                    (
-                        "Compare pilot results "
-                        "with the order-level "
-                        "Base assumptions without "
-                        "annualizing immature refund "
-                        "cohorts or a "
-                        "short advertising promotion. "
-                        "Show actual fixed "
-                        "expense absorption and "
-                        "the cash required "
-                        "for the next "
-                        "inventory cycle before "
-                        "authorizing a larger "
-                        "operating commitment."
-                    ),
-                    (
-                        "Prepare an exit-ready "
-                        "record set from "
-                        "the first month: "
-                        "contracts, inventory aging, "
-                        "reconciled books, customer "
-                        "obligations, access records, "
-                        "and operating procedures. "
-                        "Document transfer restrictions "
-                        "and retained liabilities "
-                        "so a future "
-                        "buyer or successor "
-                        "can assess continuity "
-                        "without unsupported valuation "
-                        "claims."
-                    ),
-                ],
-                "fields": [
-                    field(
-                        "Sprint scope, prerequisites, and capital boundary",
-                        "textarea",
-                        (
-                            "Define the sprint "
-                            "start condition, customer "
-                            "scope, order target, "
-                            "spending limits, and "
-                            "excluded activities. "
-                            "Distinguish the validation "
-                            "window from the "
-                            "full startup timeline "
-                            "and identify prerequisites "
-                            "that must already "
-                            "be complete."
-                        ),
-                        (
-                            "Start the thirty-day "
-                            "pilot after dealer "
-                            "authorization, product review, "
-                            "warehouse receipt, and "
-                            "technical testing. "
-                            "Target 200 shipped "
-                            "orders across eight "
-                            "SKUs with $2,400 "
-                            "advertising. The broader "
-                            "startup plan allows "
-                            "2–6 months to "
-                            "the first deal "
-                            "and $145,000 funding; "
-                            "the sprint excludes "
-                            "international expansion "
-                            "and new product "
-                            "categories."
-                        ),
-                    ),
-                    field(
-                        "Days one through seven execution evidence",
-                        "textarea",
-                        (
-                            "List first-week activities "
-                            "that establish reliable "
-                            "order processing, customer "
-                            "communication, and accounting "
-                            "visibility. Specify "
-                            "deliverables, responsible roles, "
-                            "and stopping conditions "
-                            "before acquisition volume "
-                            "increases beyond the "
-                            "team's demonstrated support "
-                            "and fulfillment capacity."
-                        ),
-                        (
-                            "The operating lead "
-                            "completes six controlled "
-                            "order paths, verifies "
-                            "lot capture, and "
-                            "reconciles processor activity. "
-                            "The merchandising lead "
-                            "checks all eight "
-                            "listings against supplier "
-                            "permissions. Release "
-                            "limited traffic only "
-                            "after duplicate-event "
-                            "tests pass. Any "
-                            "unresolved payment, "
-                            "safety, or inventory "
-                            "mapping defect stops "
-                            "further traffic expansion."
-                        ),
-                    ),
-                    field(
-                        "Days eight through fourteen acquisition validation",
-                        "textarea",
-                        (
-                            "Define the first "
-                            "paid acquisition review, "
-                            "minimum evidence sample, "
-                            "creative comparison, and "
-                            "budget boundaries. "
-                            "Explain how observed "
-                            "conversion, new-customer "
-                            "cost, refund exposure, "
-                            "and available stock "
-                            "determine whether the "
-                            "next test proceeds."
-                        ),
-                        (
-                            "Allocate up to "
-                            "$800 of the "
-                            "$2,400 pilot budget "
-                            "to two authorized "
-                            "creative variants. "
-                            "Compare shipped-order "
-                            "contribution and distinct "
-                            "new customers, not "
-                            "clicks alone. "
-                            "Do not declare "
-                            "a winning variant "
-                            "from five purchases. "
-                            "Pause any promotion "
-                            "whose delivery promise "
-                            "exceeds confirmed stock "
-                            "or warehouse capacity."
-                        ),
-                    ),
-                    field(
-                        "Days fifteen through twenty-one retention and returns",
-                        "textarea",
-                        (
-                            "Specify the mid-sprint "
-                            "review of delivery "
-                            "evidence, support reasons, "
-                            "returns, retention eligibility, "
-                            "and supplier performance. "
-                            "Identify which observations "
-                            "are mature enough "
-                            "for decisions and "
-                            "which require continued "
-                            "cohort tracking beyond "
-                            "the sprint."
-                        ),
-                        (
-                            "Review carrier acceptance "
-                            "and customer contacts "
-                            "for the first "
-                            "100 shipped orders. "
-                            "Inspect every defect "
-                            "case and correct "
-                            "packaging issues before "
-                            "replenishment. Launch "
-                            "eligible post-purchase "
-                            "education, but keep "
-                            "retention uplift provisional: "
-                            "a twenty-one-day "
-                            "window cannot establish "
-                            "a durable annual "
-                            "repeat-order share "
-                            "or fully matured "
-                            "refund rate."
-                        ),
-                    ),
-                    field(
-                        "Days twenty-two through thirty close and decision",
-                        "textarea",
-                        (
-                            "Define the month-end "
-                            "close package, pilot "
-                            "profit calculation, unresolved "
-                            "cohort estimates, and "
-                            "decision meeting. "
-                            "Reconcile actual activity "
-                            "before comparing it "
-                            "with the model, "
-                            "and identify the "
-                            "specific evidence needed "
-                            "for continuation or "
-                            "corrective work."
-                        ),
-                        (
-                            "At 200 orders, "
-                            "the modeled bridge "
-                            "is $16,000 billings "
-                            "less $1,000 refunds, "
-                            "yielding $15,000 sales. "
-                            "Deduct $9,600 variable "
-                            "costs and $2,400 "
-                            "advertising for $3,000 "
-                            "contribution. With "
-                            "$7,968.75 monthly fixed "
-                            "opex, pilot operating "
-                            "loss is $4,968.75. "
-                            "Replace estimates with "
-                            "actuals as refund "
-                            "cohorts mature."
-                        ),
-                    ),
-                    field(
-                        "Pod staffing, capacity, and contractor responsibilities",
-                        "textarea",
-                        (
-                            "Allocate full-time and "
-                            "contractor responsibilities, escalation "
-                            "coverage, workload limits, "
-                            "and compensation assumptions. "
-                            "Explain which functions "
-                            "are provided through "
-                            "variable fulfillment or "
-                            "support expense so "
-                            "the staffing model "
-                            "does not omit "
-                            "essential operating labor."
-                        ),
-                        (
-                            "Base uses two "
-                            "full-time roles covering "
-                            "operations and merchandising, "
-                            "plus three contractors "
-                            "covering growth, integrations, "
-                            "and bookkeeping. "
-                            "The 3PL provides "
-                            "variable fulfillment; "
-                            "the $9,000 variable "
-                            "support allowance remains "
-                            "separate. Verify "
-                            "the $72,000 loaded "
-                            "salary and $12,000 "
-                            "contractor assumptions "
-                            "against actual quotes. "
-                            "Scaled staffing is "
-                            "3 FT + 4 C."
-                        ),
-                    ),
-                    field(
-                        "Weekly KPI definitions and intervention thresholds",
-                        "textarea",
-                        (
-                            "Define the scorecard's "
-                            "numerators, denominators, reporting "
-                            "windows, and authoritative "
-                            "sources. Include contribution, "
-                            "cash, dispatch reliability, "
-                            "inventory coverage, defects, "
-                            "and manual touches; "
-                            "assign an intervention "
-                            "to each threshold "
-                            "rather than merely "
-                            "coloring weak metrics."
-                        ),
-                        (
-                            "Track recognized sales "
-                            "per shipped order "
-                            "against $75 and "
-                            "post-ad contribution "
-                            "against $15. "
-                            "Calculate on-time "
-                            "dispatch as qualifying "
-                            "orders accepted by "
-                            "the carrier within "
-                            "the promised window "
-                            "divided by qualifying "
-                            "orders. Escalate "
-                            "coverage below fourteen "
-                            "days, any safety "
-                            "incident, and unreconciled "
-                            "settlements older than "
-                            "two business days."
-                        ),
-                    ),
-                    field(
-                        "Annual scenario bridge and scale prerequisites",
-                        "textarea",
-                        (
-                            "Connect observed order "
-                            "economics to the "
-                            "canonical annual outcomes "
-                            "without implying the "
-                            "pilot proves annual "
-                            "demand. State the "
-                            "additional evidence needed "
-                            "for higher margins, "
-                            "supplier capacity, repeat "
-                            "sales, cash availability, "
-                            "and the larger "
-                            "staffing configuration."
-                        ),
-                        (
-                            "Base requires 15,000 "
-                            "annual shipped orders "
-                            "at $75 recognized "
-                            "sales, $15 post-ad "
-                            "contribution, and "
-                            "$95,625 fixed opex "
-                            "to produce $129,375. "
-                            "Scaled remains "
-                            "$2,000,000 revenue "
-                            "and $360,000 profit "
-                            "at 18%, with "
-                            "3 FT + 4 C; "
-                            "prove the required "
-                            "cost improvements rather "
-                            "than applying Base "
-                            "unit costs unchanged."
-                        ),
-                    ),
-                    field(
-                        "Exit-readiness records and transfer restrictions",
-                        "textarea",
-                        (
-                            "List the records "
-                            "a successor needs "
-                            "to verify earnings, "
-                            "inventory quality, customer "
-                            "obligations, operating access, "
-                            "and commercial continuity. "
-                            "Identify agreements requiring "
-                            "assignment consent and "
-                            "data-transfer restrictions "
-                            "before describing the "
-                            "business as independently "
-                            "transferable."
-                        ),
-                        (
-                            "Maintain monthly reconciled "
-                            "books, SKU-level "
-                            "inventory aging, supplier "
-                            "authorizations, warehouse "
-                            "agreements, incident records, "
-                            "and documented workflows. "
-                            "Flag dealer-contract "
-                            "assignment clauses and "
-                            "processor underwriting "
-                            "requirements. Transfer "
-                            "administrative access "
-                            "through authorized "
-                            "account procedures, "
-                            "not shared passwords. "
-                            "Exclude customer data "
-                            "from buyer previews "
-                            "unless the proposed "
-                            "disclosure is authorized."
-                        ),
-                    ),
-                    field(
-                        "Continue, repair, or exit decision ledger",
-                        "textarea",
-                        (
-                            "Record the final "
-                            "decision, supporting evidence, "
-                            "remaining uncertainties, maximum "
-                            "next-period commitment, and "
-                            "responsible owners. "
-                            "Define how customer "
-                            "orders, refunds, inventory, "
-                            "and supplier obligations "
-                            "will be handled "
-                            "if the business "
-                            "pauses or winds "
-                            "down."
-                        ),
-                        (
-                            "Continue only with "
-                            "positive measured order "
-                            "contribution, reliable "
-                            "dispatch, funded "
-                            "replenishment, and "
-                            "resolved material incidents. "
-                            "Repair weak creative "
-                            "or packaging through "
-                            "bounded tests before "
-                            "adding SKUs. "
-                            "If exiting, stop "
-                            "new promotions, fulfill "
-                            "or properly cancel "
-                            "open orders, reserve "
-                            "refund liquidity, and "
-                            "liquidate inventory only "
-                            "through permitted "
-                            "channels."
-                        ),
-                    ),
-                ],
-                "completion_gate": (
-                    "The thirty-day close reconciles cash and operating "
-                    "results, the pod owns every continuing obligation, "
-                    "and a signed decision ledger authorizes only "
-                    "the next funded commitment while preserving "
-                    "customer remedies and transferable operating evidence."
-                ),
-            },
-        ],
-    }
+    return {'workbook_id': 'wb-021-automated-e-commerce',
+ 'volume_id': 'vol-021-automated-e-commerce',
+ 'title': 'Automated E-Commerce — Practitioner Testimony Operator Workbook',
+ 'subtitle': 'Worksheets for choosing a $1,000-plus evergreen niche, opening vetted authorized-dealer '
+             'supplier accounts, building true landed cost and contribution margin, shortening the cash '
+             'conversion cycle, and mapping sales tax nexus before any spend is scaled.',
+ 'worksheets': [{'worksheet_id': 'ws-01',
+                 'number': 1,
+                 'title': 'High-Ticket Niche, Brand, and Supplier Account Plan',
+                 'purpose': 'Select a $1,000-plus evergreen niche, prove demand and competitor depth, '
+                            'screen brands for MAP discipline and big-box conflict, and open enough vetted '
+                            "supplier accounts that no single brand controls the store's revenue.",
+                 'chapter_ref': 'Q1-Q2',
+                 'instructions': ['Work the fields in order; the niche and demand checks must pass before '
+                                  'any supplier outreach begins.',
+                                  'Use real search tools such as WordStream, Semrush, Similarweb, and Shop '
+                                  'Hunter, and paste the actual figures rather than guesses.',
+                                  "Treat every brand sold by Best Buy, Home Depot, Lowe's, or Walmart, or "
+                                  'lacking strict MAP, as rejected unless written evidence overturns it.',
+                                  'Run income math at both 0.5% and 1% conversion and apply a 15-20% net '
+                                  'margin, never the gross margin quoted by the supplier.',
+                                  'Log every supplier contact by name, date, and touch number so the day-8 '
+                                  'call and later follow-ups happen on schedule.'],
+                 'fields': [{'name': 'niche_price_floor',
+                             'type': 'text',
+                             'prompt': 'List three candidate niches and, for each, the typical retail '
+                                       'price of the core product. Mark any niche that is seasonal or '
+                                       'whose core items fall under $1,000, and state whether you will '
+                                       'drop it or keep it with written justification.',
+                             'example': 'Saunas and massage chairs both sit inside the $3,000-$6,000 AOV '
+                                        'band, while a third candidate sells mostly in winter. The winter '
+                                        "niche is dropped under 'Drop anything that is seasonal or under "
+                                        "$1,000' [built with ali — Mf4bZiQ2-Fc @ 00:16:02]. Saunas stay, "
+                                        "mirroring Brook Hiddink's sauna and massage chair store that "
+                                        'reached about $4.7M in 16 months [Theo Clarke Podcast — '
+                                        '8V2vAoy6GNA @ 00:03:41].'},
+                            {'name': 'demand_validation',
+                             'type': 'textarea',
+                             'prompt': 'For your lead niche, record the search volume and keyword '
+                                       'difficulty you pulled from WordStream or Semrush, whether the '
+                                       'trend line is evergreen, and the exact bottom-of-funnel search '
+                                       'phrases you would bid on first in Google Shopping.',
+                             'example': 'Semrush shows strong volume and low difficulty, matching the rule '
+                                        "'You need high search volume plus low keyword difficulty' [Joe "
+                                        'Verschoor — uxvzRhKmdXU @ 00:04:18]. The trend line holds flat '
+                                        'year-round, so it passes the evergreen check. First bids go to '
+                                        "model-plus-size phrases, because 'Samsung TV 36 in' converts "
+                                        "before 'living room TV' ever will [Peak Flow Media — YmrOjrklnxM "
+                                        '@ 00:10:02].'},
+                            {'name': 'competitor_benchmark',
+                             'type': 'textarea',
+                             'prompt': "Search 'buy [brand] [product]' in the Shopping tab and list every "
+                                       'dealer you find. Strike out anyone with a physical showroom or '
+                                       "'appointment required', then name the online-only stores left and "
+                                       'estimate their traffic using Similarweb and Shop Hunter.',
+                             'example': "Seven dealers appear; three show 'appointment required' and are "
+                                        "struck. The four left include names ending in 'Heaven' and "
+                                        "'Supplies', the real benchmarks [built with ali — pbk_t9e4Xpo @ "
+                                        '00:11:56]. Two are untracked in Shop Hunter, a strong signal '
+                                        'because many high-ticket shops run on WordPress sites that spy '
+                                        'tools cannot read [WatchMeDropship — xJp0s6G8Hew @ 00:04:30].'},
+                            {'name': 'big_box_and_map_check',
+                             'type': 'textarea',
+                             'prompt': 'For each brand on your shortlist, record whether Best Buy, Home '
+                                       "Depot, Lowe's, or Walmart sells it, then compare the identical "
+                                       'model and size across five sellers to confirm the brand enforces '
+                                       'strict MAP pricing in practice.',
+                             'example': 'Brand A appears at Home Depot, so it is cut, since big-box '
+                                        'retailers undercut dealers and outbid them on ads [Asonjf — '
+                                        'r79NEO4JF2M @ 00:05:34]. Brand B shows the same model and size at '
+                                        'one price across five sellers, so MAP holds, with about 90% '
+                                        'compliance at best [built with ali — pbk_t9e4Xpo @ 00:21:56].'},
+                            {'name': 'income_math',
+                             'type': 'textarea',
+                             'prompt': 'Write your realistic monthly income math: target revenue, assumed '
+                                       'average order value, conversion rate, and resulting net profit. '
+                                       'Run the numbers at both 0.5% and 1% conversion, and apply a net '
+                                       'margin you can defend after every operating cost.',
+                             'example': "At a $1,200 AOV like Kenny's store, 9,000 sessions at 2% produced "
+                                        '199 orders and about $207,953 on $4,376.72 of ads [Asonjf — '
+                                        '91zki-xXArY @ 00:37:42]. The plan models 0.5% and 1% instead, '
+                                        "then applies 15-20% net, since 'it's realistic to aim for 15 to "
+                                        "20% net margins' [Joe Verschoor — 5jY7d_1m1t0 @ 00:06:13]."},
+                            {'name': 'dispute_exposure',
+                             'type': 'textarea',
+                             'prompt': 'For each brand, estimate the dollars you would lose to one '
+                                       'chargeback, a restocking fee, return shipping, and labor-warranty '
+                                       "claims on a single order. Subtract that exposure from the brand's "
+                                       'margin before deciding whether the listing still earns its place.',
+                             'example': 'A massage chair brand with a 20% margin carries return freight '
+                                        'and labor-warranty claims the dealer absorbs. After pricing one '
+                                        'chargeback and one restocking event per batch of sales, the '
+                                        "effective margin shrinks, because 'high ticket disputes can "
+                                        "really eat away at your margins and your cash flow' [Ecommerce "
+                                        'Paradise | High Ticket Dropshipping — EaAeDMJIPLQ @ 00:02:06].'},
+                            {'name': 'supplier_vetting',
+                             'type': 'textarea',
+                             'prompt': 'Before applying or paying any supplier, verify it exists: check '
+                                       'the address on Google Maps, the About Us page, social accounts, '
+                                       'Trustpilot, and BBB. Then record minimum orders, drop-ship fees '
+                                       'per order, other online retailers carried, and dealer margin.',
+                             'example': "One 'distributor' used a gym photo and an unfinished building as "
+                                        'its address, so it was rejected [Marvin — fHLUiiiopmw @ '
+                                        '00:12:24]. A second supplier passed the checks but required a '
+                                        '$5,000 minimum and a $20 drop-ship fee per order, which fails the '
+                                        '$5,000-plus and over-$15 limits [Ecommerce Paradise | High Ticket '
+                                        'Dropshipping — hHXf1_WdANY @ 00:09:24].'},
+                            {'name': 'outreach_cadence',
+                             'type': 'textarea',
+                             'prompt': 'Plan your batch outreach to 10-20 brands at once. Name the contact '
+                                       'for each, ideally the owner or sales director rather than info@, '
+                                       'and lay out the follow-up sequence by day, including where the '
+                                       'phone call lands.',
+                             'example': 'Fifteen brands get applications in one week, expecting 30-50% '
+                                        'acceptance [Ecommerce Paradise | High Ticket Dropshipping — '
+                                        'hHXf1_WdANY @ 00:17:39]. The GMass cadence runs email day 1, '
+                                        'email day 4, phone call day 8, LinkedIn day 12, final email day '
+                                        '18, because the day-8 call converts at 3x a second email '
+                                        '[Ecommerce Paradise | High Ticket Dropshipping — hHXf1_WdANY @ '
+                                        '00:12:28].'},
+                            {'name': 'profit_floor_and_price_list',
+                             'type': 'textarea',
+                             'prompt': 'Once a brand approves you, request its Excel sheet with MAP, '
+                                       'dealer cost, and market price. Calculate profit per order for the '
+                                       'top three to five sellers, and flag any SKU earning less than your '
+                                       'minimum profit per sale.',
+                             'example': "The supplier's sheet lists MAP, dealer cost and market price "
+                                        '[Marcus Lam | High Ticket Dropshipping (AI) — ic0HLQbBhQA @ '
+                                        '00:11:13]. Against a $100-200 cost to get each sale, any SKU '
+                                        'earning under $500 profit per order is flagged [Marcus Lam | High '
+                                        'Ticket Dropshipping (AI) — g_OL9gG7q_I @ 00:01:43].'},
+                            {'name': 'supplier_concentration',
+                             'type': 'textarea',
+                             'prompt': 'List every approved brand and its expected share of store revenue. '
+                                       'Identify whether any single supplier would exceed roughly half of '
+                                       'sales, and name the next two brands you will add under your broad '
+                                       'store name to dilute that dependence.',
+                             'example': 'One sauna brand projects 55% of revenue, the same trap Brook '
+                                        'Hiddink hit when a top supplier at about half of sales closed its '
+                                        'dealer program in June 2023 [Theo Clarke Podcast — 8V2vAoy6GNA @ '
+                                        '00:27:19]. Two massage chair brands are added under the broad '
+                                        'store name, pulling the lead brand below half.'}],
+                 'completion_gate': 'Complete when at least one evergreen niche above $1,000 passes the '
+                                    'demand and competitor checks, three or more vetted brands with strict '
+                                    'MAP and at least $500 profit per sale are approved, and no single '
+                                    'supplier exceeds half of projected revenue.'},
+                {'worksheet_id': 'ws-02',
+                 'number': 2,
+                 'title': 'Landed Cost and Contribution Margin Ledger',
+                 'purpose': 'Replace the supplier invoice with a true landed cost per unit, then carry '
+                            'that figure into a full contribution margin, a target CAC, a break-even '
+                            'point, and a promotion model that cannot quietly lose money.',
+                 'chapter_ref': 'Q3-Q4',
+                 'instructions': ['Start from units actually received, not units ordered, and spread '
+                                  'freight, duty, insurance, and fees across that count.',
+                                  'Insist that invoices list goods value separately from freight and '
+                                  'insurance, and record whether the destination values imports on FOB or '
+                                  'CIF terms.',
+                                  "Book estimated duty at receipt and correct it against the broker's "
+                                  'bill; never leave margin reports running on factory cost.',
+                                  'Keep ad spend alone for ROAS, but load full marketing costs, processing '
+                                  'fees, and hidden per-order charges into contribution margin.',
+                                  'Model each promotion as percent-off and as two-for-one, and pause any '
+                                  'SKU whose first-order contribution margin to CAC ratio sits below one.'],
+                 'fields': [{'name': 'landed_cost_per_unit',
+                             'type': 'textarea',
+                             'prompt': 'Build the landed cost for one purchase order: goods value, '
+                                       'freight, insurance, duty, taxes, broker and port fees, and final '
+                                       'delivery. Divide the total by units actually received, and record '
+                                       "the gap between landed cost and the supplier's quoted unit price.",
+                             'example': '$10,000 of product plus $1,200 freight, $500 duty and $300 fees '
+                                        "totals $12,000 across 1,000 units, so 'the true cost becomes $12 "
+                                        "per unit instead of the $10 supplier price' [Intel by CandiMentor "
+                                        '— CvHvBnjwlJg @ 00:05:57]. That $2 gap, a 20% jump, goes into '
+                                        'every margin calculation instead of the invoice figure.'},
+                            {'name': 'duty_stack',
+                             'type': 'textarea',
+                             'prompt': 'For each imported SKU, list every duty layer that applies: the '
+                                       'normal rate plus any Section 301 or other added tariffs. Note '
+                                       'whether the duty is charged on goods value only, and flag any SKU '
+                                       'containing steel, aluminum or copper.',
+                             'example': 'Chinese plastic bins stack a 3.4% normal rate, 7.5% original '
+                                        'Section 301 and 12.5% newer Section 301 into 23.4%, or $2,340 on '
+                                        '$10,000 of goods [Trade Counsel — -WXoF_u08g0 @ 00:01:56]. A '
+                                        'shelving SKU with steel brackets is flagged and its duty '
+                                        'rechecked on full customs value, not just metal share '
+                                        '[CFOmarketIQ — nUu4s78pX8E @ 00:03:32].'},
+                            {'name': 'invoice_and_valuation',
+                             'type': 'textarea',
+                             'prompt': 'Record how your supplier invoice and bill of lading separate goods '
+                                       'price from freight and insurance, whether your destination values '
+                                       'imports on FOB or CIF terms, and whether any quote you received is '
+                                       'DDP or export pricing.',
+                             'example': 'The factory first sent one bundled figure, which risks freight '
+                                        'landing in dutiable value for a US import, so the invoice was '
+                                        'reissued with goods listed separately [New York SBDC — '
+                                        'LBisYGOUrx0 @ 00:50:28]. For a CIF-valuation destination, import '
+                                        'VAT runs on CIF value plus duty, not the invoice price alone '
+                                        '[Witners Shipping — 8I51jDAoe-E @ 00:02:06].'},
+                            {'name': 'duty_capitalization',
+                             'type': 'textarea',
+                             'prompt': 'Explain how estimated duty enters your stock cost at receipt and '
+                                       "how you correct it when the customs broker's bill arrives. Record "
+                                       'the open entries your broker lists and any protest deadlines on '
+                                       'entries already final.',
+                             'example': 'Jewelry pieces enter stock with estimated duty at receipt, then '
+                                        "get corrected when the broker's bill lands weeks later; otherwise "
+                                        "'every margin report looks better than the truth' [SKUio — "
+                                        'DFZ8XDRkuCE @ 00:00:20]. The broker confirms which entries remain '
+                                        'open after the Supreme Court ruling; final entries carry roughly '
+                                        'six months to protest [CFOmarketIQ — nUu4s78pX8E @ 00:02:43].'},
+                            {'name': 'contribution_margin_build',
+                             'type': 'textarea',
+                             'prompt': 'Calculate contribution margin per order: net revenue minus '
+                                       'product, fulfillment, payment processing, and full marketing '
+                                       'costs. Give marketing its own line, including agency fees, '
+                                       'influencer and affiliate payouts, and email and SMS tools, '
+                                       'separate from the ad spend used for ROAS.',
+                             'example': 'ROAS uses ad spend alone, while contribution margin carries '
+                                        'influencer payouts, agency fees and email and SMS tools [Bloom '
+                                        'Analytics — mWL3C_COYk8 @ 00:01:53]. Processing is audited too: '
+                                        'running another merchant on top of Shopify means paying both sets '
+                                        'of fees, up to 5 or 6 percent for smaller retailers [Matt Byrne — '
+                                        'sR1NjOCbwOA @ 00:11:22].'},
+                            {'name': 'hidden_costs',
+                             'type': 'textarea',
+                             'prompt': 'List every hidden cost that belongs in your daily contribution '
+                                       'calculation, sorted into three buckets: percentage of sales such '
+                                       'as royalties or revenue shares, dollars per order such as pick '
+                                       'fees, and monthly fixed amounts such as agency retainers.',
+                             'example': 'A royalty enters as a percentage of sales, the $2 pick fee as a '
+                                        'dollar figure per order, and the agency and influencer fees as '
+                                        'monthly costs [Common Thread Collective — b4ddPmPdQcY @ '
+                                        "00:04:08]. Each line is negotiated, since knocking 'a couple "
+                                        "dollars out' of one expense 'might be the difference between an "
+                                        "extra five dollars per order' [Eric Andrews — 8xfPvprL5qE @ "
+                                        '00:12:53].'},
+                            {'name': 'target_cac',
+                             'type': 'textarea',
+                             'prompt': 'Derive your target customer acquisition cost from first-order '
+                                       'contribution profit minus the net profit you want to keep. Then '
+                                       'state your contribution-margin-to-CAC ratio and confirm whether '
+                                       'the first order breaks even or better before any lifetime value is '
+                                       'counted.',
+                             'example': 'First-order contribution of $53 minus a $20 net target leaves a '
+                                        '$33 target CAC, a ratio near 1.6. Eric Andrews plans 1.5 at the '
+                                        'idea phase and better than 1.0 on the first order [Eric Andrews — '
+                                        "gG33a-ErNRQ @ 00:13:30], because then 'all of the subsequent "
+                                        "orders... will be pure profit' [Eric Andrews Clips — LKEn47f67vQ "
+                                        '@ 00:01:31].'},
+                            {'name': 'break_even',
+                             'type': 'textarea',
+                             'prompt': 'Divide your fixed costs by your contribution margin ratio to find '
+                                       'break-even revenue. Record your gross margin against a 60% target '
+                                       'and your break-even ROAS, and note whether contribution margin is '
+                                       'above zero at all.',
+                             'example': '$300,000 of fixed costs divided by a 30% contribution margin '
+                                        'ratio puts break-even at $1,000,000 in revenue [LedgerGurus: '
+                                        'Ecommerce Accounting Experts — e5r7-KT6mQ0 @ 00:02:28]. Gross '
+                                        'margin is checked against a 60% KPI, and break-even ROAS against '
+                                        'a 1.3 target, with 1.84 called tough to scale [Mark Builds Brands '
+                                        'Highlights — eTADhJ3N_oo @ 00:03:21].'},
+                            {'name': 'promo_model',
+                             'type': 'textarea',
+                             'prompt': 'Model your biggest planned promotion twice, once as a straight '
+                                       'percentage discount and once as a two-for-one offer. For each '
+                                       'version, record contribution margin per order, subtract CAC, and '
+                                       'kill any version whose result goes negative before launch.',
+                             'example': 'A brand lost $500,000 running 50% off sitewide one Black Friday '
+                                        '[Eric Andrews — t2H3gJHuw6k @ 00:00:00]. Re-run as two-for-one, '
+                                        'contribution margin rises from $29 to $69 per order, leaving $36 '
+                                        "after CAC [Eric Andrews — t2H3gJHuw6k @ 00:08:56], because 'an "
+                                        "extra unit only costs you $21' [Eric Andrews — t2H3gJHuw6k @ "
+                                        '00:07:15].'},
+                            {'name': 'margin_waterfall_decision',
+                             'type': 'textarea',
+                             'prompt': 'Draw your per-unit waterfall from sale price down to profit after '
+                                       'freight, duty, fees, fulfillment and acquisition. Name every step '
+                                       'where money disappears, then decide whether this SKU should be '
+                                       'scaled, repriced, re-sourced, or paused until unit economics are '
+                                       'fixed.',
+                             'example': 'A 250 sale ending at 50 means tracing every rectangle until the '
+                                        'missing 200 is found [John Galt Finance — 8RBtd8u_F-I @ '
+                                        '00:09:01]. With a first-order ratio below one on a '
+                                        "single-purchase product, 'this business should not be scaling "
+                                        "until it can fix its unit economics' [Eric Andrews — gG33a-ErNRQ "
+                                        '@ 00:15:10], so the SKU pauses for repricing.'}],
+                 'completion_gate': 'Complete when every active SKU has a reconciled landed cost, a '
+                                    'contribution margin above zero after full marketing costs, a '
+                                    'first-order contribution-margin-to-CAC ratio of at least 1.0, and a '
+                                    'promotion version whose contribution margin minus CAC stays '
+                                    'positive.'},
+                {'worksheet_id': 'ws-03',
+                 'number': 3,
+                 'title': 'Cash Conversion Cycle and Sales Tax Nexus Control Sheet',
+                 'purpose': 'Measure how many days and dollars stay locked between paying suppliers and '
+                            'collecting from customers, shorten that cycle through better terms, and map '
+                            'every state where economic or physical nexus requires registration, '
+                            'collection, and filing.',
+                 'chapter_ref': 'Q5-Q6',
+                 'instructions': ['Compute inventory, sales, and payable days from actual period-end '
+                                  'dates, and base payable days on purchases rather than cost of goods '
+                                  'sold when inventory is growing.',
+                                  'Translate cycle days into working capital dollars and annual interest '
+                                  'so every terms negotiation carries a price.',
+                                  'Confirm cash covers the full cycle before any overseas order with zero '
+                                  'payable days, and never let an early-payment discount lapse.',
+                                  'Map nexus from both sales thresholds and physical presence, including '
+                                  'FBA, 3PL, employees, 1099 workers, reps, and offices.',
+                                  'Keep collection switched off in every state until its permit is issued, '
+                                  "and set reminders ahead of each platform's filing cutoff."],
+                 'fields': [{'name': 'ccc_calculation',
+                             'type': 'textarea',
+                             'prompt': 'Calculate your cash conversion cycle as inventory days plus sales '
+                                       'days minus payable days. Show each component, the exact period-end '
+                                       'dates you used, and whether your payables figure is based on '
+                                       'purchases or on cost of goods sold.',
+                             'example': 'Day counts come from subtracting period-end dates in Excel with '
+                                        'anchored cells, not hard-coded values [Mergers & Inquisitions / '
+                                        'Breaking Into Wall Street — rNjMWAOJHwM @ 00:05:07]. Payables use '
+                                        'purchases, because a cost-of-goods-sold proxy produced 29.65 '
+                                        'days, overstating payment days and shortening the cycle when '
+                                        'inventory rose [Understanding Accounting — GtIbksKcl3Q @ '
+                                        '01:06:52].'},
+                            {'name': 'cycle_benchmark',
+                             'type': 'text',
+                             'prompt': 'Compare your cycle against what e-commerce brands typically carry '
+                                       'and against negative-cycle operators such as Amazon. Write down '
+                                       'how many days of inventory you hold today and whether slow supply '
+                                       'chains or wholesale terms are stretching your cycle.',
+                             'example': 'E-commerce cycles typically run at least 90 days, with some '
+                                        'brands carrying 180 to 240 days of inventory [LedgerGurus: '
+                                        'Ecommerce Accounting Experts — F-Y1cubdesE @ 00:04:57]. This '
+                                        'store holds about 150 inventory days because overseas shipping is '
+                                        'slow, far from the near-zero or negative cycles that Dell, '
+                                        'Costco, Procter & Gamble, and Amazon run.'},
+                            {'name': 'working_capital_dollars',
+                             'type': 'textarea',
+                             'prompt': 'Convert your cycle days into dollars: multiply average daily cost '
+                                       'of goods sold by cycle days to find working capital tied up, then '
+                                       'multiply by your cost of debt to price the annual interest that '
+                                       'cycle costs you.',
+                             'example': 'A 65-day cycle times average daily cost of goods sold locks up '
+                                        "$59 million of working capital, and at 7% that is 'four million "
+                                        "dollars a year just to pay the interest' [InstructorTom — "
+                                        'Ju1MGgf9RUw @ 00:03:50]. The same math at store scale shows why '
+                                        "'businesses... definitely fail because they don't have enough "
+                                        "cash' [LedgerGurus: Ecommerce Accounting Experts — F-Y1cubdesE @ "
+                                        '00:07:52].'},
+                            {'name': 'supplier_terms',
+                             'type': 'textarea',
+                             'prompt': "List each supplier's payment trigger and terms. Note whether you "
+                                       'pay on order, on shipment, or on arrival, any early-payment '
+                                       'discount offered, and whether you would accept a slightly higher '
+                                       'unit price in exchange for longer terms.',
+                             'example': "Kurtis Hanni's client moved to a supplier that billed only once "
+                                        'goods reached the warehouse and were sellable, handing back 15 '
+                                        'days of credit [Kurtis Hanni — 0WBeNhRVKHY @ 00:11:08]. A 2/10 '
+                                        'net 30 discount is always taken, because letting it lapse to hold '
+                                        'cash 20 extra days costs 37.2% annualized [One Minute Finance — '
+                                        '7yuWFm95LDw @ 00:07:28].'},
+                            {'name': 'cash_before_order',
+                             'type': 'textarea',
+                             'prompt': 'Before placing your next overseas order, total the cash that must '
+                                       'go out before the first dollar returns. Include deposits, freight, '
+                                       'duty, and the full days until customers pay, and confirm cash on '
+                                       'hand covers the entire cycle.',
+                             'example': 'The 230-day client with zero payable days needed $235,000 out '
+                                        'before a dollar returned [Kurtis Hanni — 0WBeNhRVKHY @ 00:09:32]. '
+                                        'Cutting shipping from 185 to 15 days and billing on arrival '
+                                        'brought the cycle to 45 days, required cash to $67,000, and cash '
+                                        'positive into month two [Kurtis Hanni — 0WBeNhRVKHY @ 00:11:29].'},
+                            {'name': 'wholesale_terms_and_exit',
+                             'type': 'textarea',
+                             'prompt': 'If you are considering net 60 wholesale terms or a future sale of '
+                                       'the business, model the receivables jump, the extra inventory '
+                                       'build, and your 12- to 24-month average working capital, noting '
+                                       'any excess capital to withdraw beforehand.',
+                             'example': 'A new big-wholesaler deal on net 60 lets days sales outstanding '
+                                        "'grow tremendously', showing revenue without the cash "
+                                        '[LedgerGurus: Ecommerce Accounting Experts — F-Y1cubdesE @ '
+                                        '00:06:05]. Ahead of any sale, the 12- to 24-month average working '
+                                        'capital is computed and excess pulled out, or the buyer '
+                                        'negotiates to keep it [Brent Freeman  - The CBB Group — '
+                                        'KSfESWIcDGI @ 00:09:41].'},
+                            {'name': 'nexus_map',
+                             'type': 'textarea',
+                             'prompt': 'List every state where you exceed $100,000 in sales or 200 '
+                                       'transactions, then add every state with an employee, 1099 worker, '
+                                       'rep, office, or Amazon or 3PL inventory location. Note states like '
+                                       'California, New York and Texas with higher thresholds.',
+                             'example': "Since June 2018, most states use '$100,000 in sales or 200 "
+                                        "transactions,' while California, New York and Texas set higher "
+                                        'bars [Cherry Bekaert — rUvJ4UwGqiA @ 00:01:00]. The map adds two '
+                                        'states holding FBA inventory and one where a 1099 sales rep '
+                                        'lives, since each creates physical nexus [Cherry Bekaert — '
+                                        'rUvJ4UwGqiA @ 00:00:24].'},
+                            {'name': 'marketplace_vs_direct',
+                             'type': 'textarea',
+                             'prompt': 'Split your sales by channel, including your own Shopify '
+                                       'storefront. Mark which channels collect tax for you as marketplace '
+                                       'facilitators and which leave the obligation with you, and confirm '
+                                       'no state has collection switched on before its permit is issued.',
+                             'example': 'Amazon, Walmart and Etsy sales are marketplace-collected, since '
+                                        "'a major marketplace like Amazon is already taking care of sales "
+                                        "tax for you', but Shopify is not a facilitator [Avalara — "
+                                        'QiT660QtcXA @ 00:01:18]. Collection stays off in each new state '
+                                        'until the permit arrives, because collecting unregistered creates '
+                                        'personal officer liability [Avalara — EtT3YoVfP0c @ 00:19:36].'},
+                            {'name': 'tax_engine_choice',
+                             'type': 'textarea',
+                             'prompt': 'Choose your calculation and filing stack for the next year. Record '
+                                       'the monthly subscription, per-filing or per-return cost, whether '
+                                       'one tool handles both engine and filing, and which questions you '
+                                       'will ask in negotiation, such as SST CSP enrollment.',
+                             'example': 'TaxJar starts near $20 a month with AutoFile at about $30 to $35 '
+                                        'per filing [Arthur Glinkin — 1Cr_iHc8p4s @ 00:07:44], and runs as '
+                                        'both engine and filer since its returns cannot be adjusted '
+                                        '[LedgerGurus: Ecommerce Accounting Experts — 1L7s6llWlRo @ '
+                                        "00:14:42]. Avalara's $10k to $30k engine waits until revenue "
+                                        'passes $5M.'},
+                            {'name': 'filing_calendar',
+                             'type': 'textarea',
+                             'prompt': "Build your monthly filing calendar. Note each platform's "
+                                       'return-approval cutoff, which report serves as your source of '
+                                       'truth when ledgers disagree, any prepayment discount you can take, '
+                                       'and whether your provider offers hands-on audit defense.',
+                             'example': "Returns are approved before TaxJar's 5th-of-month deadline, while "
+                                        'Avalara auto-files after the 11th at 5 PM ET [LedgerGurus: '
+                                        'Ecommerce Accounting Experts — -DhtTN5_Rh4 @ 00:12:28]. The '
+                                        'Detailed Sales Tax Analysis report beats QuickBooks Online when '
+                                        'they disagree [Arthur Glinkin — 1Cr_iHc8p4s @ 00:09:04], and '
+                                        'Texas prepayments earn a 1.25% discount [Avalara — EtT3YoVfP0c @ '
+                                        '00:49:10].'}],
+                 'completion_gate': 'Complete when the cycle is calculated in both days and dollars, cash '
+                                    "on hand covers the next order's full cycle, every nexus state is "
+                                    'registered before collection begins, and a filing calendar naming the '
+                                    'tool, cutoff, and source-of-truth report is in place.'},
+                {'worksheet_id': 'ws-04',
+                 'number': 4,
+                 'title': 'Fulfillment Partner Selection and Back-Office Automation Plan',
+                 'purpose': 'Decide whether and when to hand fulfillment to a 3PL, price the true invoice '
+                            'rather than the headline pick rate, prove inventory sync before volume flows, '
+                            'and chain the post-order back office together without falling for '
+                            'done-for-you automation schemes or leaving product liability gaps.',
+                 'chapter_ref': 'Q7-Q8',
+                 'instructions': ['Pull the last 90 days of order data, including items per order, weekly '
+                                  'packing hours, and shipping cost per order, before filling in any '
+                                  'field.',
+                                  'Request written quotes from at least three 3PLs and itemize every fee '
+                                  'line, not just the advertised pick and pack rate.',
+                                  'Run the timed test orders, the five-order sync trace, and the phased '
+                                  'transfer before moving full inventory or full order volume.',
+                                  'Document every automation step with its tool, trigger, and '
+                                  'duplicate-prevention test, so a re-run never creates duplicate '
+                                  'customers, invoices, or stock changes.',
+                                  'Screen every automation seller and insurance policy with the checks '
+                                  'listed below, and sign nothing until the completion gate is met.'],
+                 'fields': [{'name': 'self_fulfillment_ceiling',
+                             'type': 'text',
+                             'prompt': 'Record your current monthly order count and weekly hours spent '
+                                       'packing. Compare both numbers against the self-fulfillment ceiling '
+                                       'of roughly 100 to 500 orders a month or 15 to 20 weekly packing '
+                                       'hours, and state whether you have crossed it.',
+                             'example': 'We ship about 320 orders a month and spend roughly 18 hours a '
+                                        'week packing in the garage, which puts us inside the ceiling band '
+                                        'on both measures. Smart Capital prices pick and pack at $2 to $5 '
+                                        'plus about $1 per extra item, so we are now requesting quotes '
+                                        '[Smart Capital — 8R8um_CLrWI @ 00:33:10].'},
+                            {'name': 'per_order_cost_model',
+                             'type': 'textarea',
+                             'prompt': 'Build a side-by-side per-order cost model comparing '
+                                       'self-fulfillment against a 3PL quote. Include your own time valued '
+                                       'at an hourly rate, packaging, postage, pick and pack fees, and '
+                                       'per-item charges, then state the per-order difference in dollars.',
+                             'example': "Using Olivia's spreadsheet logic for 300 one-item orders a month "
+                                        'at a $40 average price, self-fulfillment lands near $15.50 per '
+                                        'order once about $6 of owner time at $20 an hour is included, '
+                                        'against about $12 through a 3PL. That gap of roughly $3.50 per '
+                                        'order funds the switch [Smart Capital — 8R8um_CLrWI @ 00:33:10].'},
+                            {'name': 'true_invoice_profile',
+                             'type': 'textarea',
+                             'prompt': 'List every fee line a candidate 3PL could bill against your real '
+                                       'order profile: multi-line orders, bundles, inserts, returns, bin '
+                                       'and pallet storage, receiving, account minimums, and manual edits. '
+                                       'Note which fees the headline pick rate hides.',
+                             'example': 'Our average basket holds three items, bundles ship with a printed '
+                                        'insert, and about one order in ten needs a manual edit. Quote B '
+                                        'beat everyone on pick and pack by a dollar, but its storage, '
+                                        'receiving and returns fees recovered that dollar and more. We '
+                                        'priced the whole invoice, not the headline rate [SHIPHYPE '
+                                        'Fulfillment — CB8e30IUILU @ 00:00:40].'},
+                            {'name': 'multi_item_fit_check',
+                             'type': 'text',
+                             'prompt': 'Calculate your average items per order and the per-item pick fee '
+                                       'each 3PL charges. Decide whether multi-item baskets make '
+                                       'outsourced fulfillment cost prohibitive for your store, the way '
+                                       'one merino apparel brand concluded, and record the decision.',
+                             'example': 'Unbound Merino co-founder Dan rejected 3PLs because the average '
+                                        'order carries three or more items, and paying for every item '
+                                        'picked made outsourcing too expensive. Our basket averages 1.2 '
+                                        'items, so at $2 to $5 plus about $1 per extra item the math still '
+                                        'favors the 3PL. Decision: outsource, recheck quarterly [Learn '
+                                        'With Shopify — 088tKYu7kKY @ 00:08:16].'},
+                            {'name': 'delivery_speed_test',
+                             'type': 'textarea',
+                             'prompt': 'Describe the delivery speed test you ran before signing. Record '
+                                       'the dates and arrival times of a $10 test order to your own '
+                                       'address and one to a friend in another region, and confirm the '
+                                       'coverage map and cutoff time are written into the agreement.',
+                             'example': 'Two $10 orders went out on a Monday: one to our office, one to a '
+                                        'friend three time zones away. The local parcel arrived Wednesday '
+                                        'and the distant one Friday, slower than the sales call promised. '
+                                        'We asked for the coverage map and the 2 p.m. cutoff in the '
+                                        'service agreement, not just an email [Smart Capital — 8R8um_CLrWI '
+                                        '@ 00:15:15].'},
+                            {'name': 'phased_inventory_transfer',
+                             'type': 'textarea',
+                             'prompt': 'Plan your phased inventory transfer to the new 3PL. State what '
+                                       'share of stock moves first, how many weeks you will run it, which '
+                                       'delivery-time and error-rate figures you will measure, and what '
+                                       'result releases the remaining inventory.',
+                             'example': 'We will ship about a third of our 1,800 units in the first '
+                                        'inbound, roughly 600, and run live orders against it for three '
+                                        'weeks. We will track average delivery days by region and the '
+                                        'mis-pick rate. If both hold to quoted levels, the remaining 1,200 '
+                                        'units move in week four [Smart Capital — 8R8um_CLrWI @ '
+                                        '00:19:08].'},
+                            {'name': 'sku_sync_trace',
+                             'type': 'textarea',
+                             'prompt': 'Document your SKU sync test between the store and the warehouse '
+                                       'system. Place five test orders with different products, quantities '
+                                       'and one out-of-region address, trace each from store to doorstep, '
+                                       'and list every SKU mismatch you found and fixed.',
+                             'example': 'Five test orders surfaced two silent failures. Our store listed '
+                                        "'Navy-M' while the warehouse used 'NVY-MED', and a gift bundle "
+                                        'sat as one SKU in Shopify but two SKUs in the warehouse. Neither '
+                                        'threw an error; both simply never released to pick. We renamed '
+                                        'the size code and split the bundle mapping [Smart Capital — '
+                                        '8R8um_CLrWI @ 00:22:52].'},
+                            {'name': 'order_to_ledger_chain',
+                             'type': 'textarea',
+                             'prompt': 'Map the automation chain that runs after a paid order. List each '
+                                       'step from the Shopify order to customer record, sales order, '
+                                       'invoice, task card and team alert, name the tool handling it, and '
+                                       'describe your duplicate-prevention acceptance test.',
+                             'example': 'A scheduled Claude prompt reads each paid Shopify order, creates '
+                                        'the customer and sales order in Zoho Books, raises the invoice, '
+                                        'opens a Trello card and pings Slack. Because Zoho Books updates '
+                                        'both ledger and stock, we skip a separate inventory link. '
+                                        'Acceptance test: re-run an already-processed order and confirm '
+                                        'zero duplicate customers or invoices [Fazil Automates — '
+                                        '4OmfNbuCmDQ @ 00:04:06].'},
+                            {'name': 'inventory_forecast_inputs',
+                             'type': 'textarea',
+                             'prompt': 'For each top SKU, record the forecasting inputs your planning tool '
+                                       'needs: supplier, lead time, days of cover, safety stock, and ABC '
+                                       'grade. Note how you removed stockout days from the base period '
+                                       'before projecting growth from past sales.',
+                             'example': 'SKU A-101 is an A-grade item from our main vendor with a 45-day '
+                                        'lead time, 60 days of cover and 14 days of safety stock. It sold '
+                                        'out for 11 days in March, so we cut those days from the base '
+                                        'period before projecting growth, otherwise the forecast would '
+                                        'understate true demand [Davie Fogarty — 313GvO3pScc @ 00:47:48].'},
+                            {'name': 'automation_vendor_and_liability_screen',
+                             'type': 'textarea',
+                             'prompt': 'Screen every automation seller and insurance policy before '
+                                       "committing money. Record the result of searching each seller's "
+                                       "name plus 'FTC', any upfront fees or income claims, and whether "
+                                       'your product liability policy, not just general liability, '
+                                       'excludes any states.',
+                             'example': 'A done-for-you Walmart pitch asked $50K upfront against a '
+                                        'projected $100K a year, plus inventory and a 70/30 split. '
+                                        "Searching the company name plus 'FTC' was our walk-away trigger. "
+                                        'Separately, the cheapest product liability quote excluded New '
+                                        'York and Colorado, two highly litigious states, so we paid more '
+                                        'for full coverage [Coffeezilla — fPLMdewUMQw @ 00:02:25].'}],
+                 'completion_gate': 'Worksheet 4 is complete when the per-order cost comparison, '
+                                    'full-invoice fee list, two timed test orders, five traced sync '
+                                    'orders, phased transfer plan, duplicate-safe automation chain, and '
+                                    'written product liability coverage are all recorded, and no '
+                                    'automation seller under consideration has failed the FTC search.'},
+                {'worksheet_id': 'ws-05',
+                 'number': 5,
+                 'title': 'Returns, Chargebacks, and Retention Systems',
+                 'purpose': 'Turn returns and chargebacks into a budgeted, documented line item, route '
+                            'support tickets between AI and humans with hard rules, price AI support '
+                            'honestly, and build post-purchase and subscription flows that chase the '
+                            'profitable second order.',
+                 'chapter_ref': 'Q9-Q10',
+                 'instructions': ['Publish the return policy before the first sale and keep a dated copy '
+                                  'of every version that goes live.',
+                                  'Size the returns reserve from your real 90-day data where available, '
+                                  'and fund it weekly into a separate account.',
+                                  'Build the chargeback evidence pack as a reusable template so every '
+                                  'dispute is filed inside the evidence window.',
+                                  'Write AI routing rules as hard rules, not suggestions, and test them '
+                                  'against past tickets before launch.',
+                                  'Build post-purchase flows in Klaviyo with cancel and refund filters in '
+                                  'place before turning any flow live.'],
+                 'fields': [{'name': 'return_policy_terms',
+                             'type': 'textarea',
+                             'prompt': 'Write the plain-language return policy you will publish before the '
+                                       'first sale. State the return window in days, who pays return '
+                                       'shipping, which items qualify, and the refund forms you accept, '
+                                       'such as store credit, exchange, or original payment.',
+                             'example': 'Our policy offers a 30-day window from delivery, buyer-paid '
+                                        'return shipping on change-of-mind returns, and free exchanges on '
+                                        'wrong sizes. Refunds go to store credit first, then the original '
+                                        'payment method on request, because store credit is usually much '
+                                        'faster to settle. The policy is live on the footer page before '
+                                        'launch day [Tutorial Stack — YnEcCYA-UDs @ 00:02:51].'},
+                            {'name': 'returns_reserve_sizing',
+                             'type': 'textarea',
+                             'prompt': 'Size your weekly per-order returns reserve. Use 90 days of real '
+                                       'return data if you have it, or the planning benchmark for your '
+                                       'category, then show the reserve per order in dollars and the '
+                                       'weekly amount you will set aside.',
+                             'example': 'We sell apparel online, so we plan on 20% returns rather than the '
+                                        '19.3% all-category average. At a $60 average order and an '
+                                        'estimated $15 net loss per returned order, the reserve is $3 per '
+                                        'order. At 250 orders a week, we move $750 into a separate returns '
+                                        'account every Monday [Dropshipping Deep Dive — 1L4TNDjsICQ @ '
+                                        '00:27:46].'},
+                            {'name': 'refund_without_return_rules',
+                             'type': 'textarea',
+                             'prompt': 'Set your refund-without-return rules by item value. Define the '
+                                       'dollar threshold below which you refund and let the customer keep '
+                                       'the item, and the partial-refund offer you make on higher-value '
+                                       'items the supplier will not take back.',
+                             'example': 'Items under $20 get an immediate refund with no return, because '
+                                        'reverse shipping costs more than the product and return friction '
+                                        'is not justified. Above $20, where the supplier refuses returns, '
+                                        'we offer 50% back with no shipping required, since most customers '
+                                        'prefer some money now over packaging and a post office trip '
+                                        '[Shopify Mastery — EjZsqaOIDsc @ 00:07:07].'},
+                            {'name': 'supplier_damage_window',
+                             'type': 'text',
+                             'prompt': "Record each supplier's damage-dispute window and photo "
+                                       'requirements. Note how many days after customer receipt you have '
+                                       'to file, any longer window for electronics, and the internal alert '
+                                       'that ensures a damaged-item claim is filed before the window '
+                                       'closes.',
+                             'example': 'CJ allows 3 days from customer receipt to dispute damage, or 7 '
+                                        'days for electronics. Miss it and we carry the entire cost '
+                                        'instead of sharing it with the supplier. Our help desk tags any '
+                                        "'damaged' ticket urgent and requests customer photos the same "
+                                        'day, so the claim reaches CJ inside 48 hours [Dropshipping Deep '
+                                        'Dive — 1L4TNDjsICQ @ 00:13:07].'},
+                            {'name': 'chargeback_evidence_pack',
+                             'type': 'textarea',
+                             'prompt': 'Assemble your standard chargeback evidence pack. List every '
+                                       'document you will attach to a dispute, where each one is pulled '
+                                       'from, how long the pack takes to build, and how you confirm '
+                                       'tracking was visible to buyer and payment provider.',
+                             'example': 'Each dispute pack holds the Shopify order export, supplier '
+                                        'tracking, a carrier delivery screenshot, the Stripe or PayPal '
+                                        'transaction record, and copies of every customer email, which '
+                                        'takes about 10 to 15 minutes. Shopify Payments charges $15 per '
+                                        'chargeback and pulls the disputed amount from the next payout, so '
+                                        'we file inside the evidence window [Flying Start Online — '
+                                        'rhATJAycfEU @ 00:13:15].'},
+                            {'name': 'ai_ticket_routing_rules',
+                             'type': 'textarea',
+                             'prompt': 'Define which ticket types your AI agent may resolve alone and '
+                                       'which must hard-route to a human. Include order-status questions, '
+                                       'damaged or wrong items, address changes, refunds above your dollar '
+                                       'limit, angry customers, and chargeback threats, with one routing '
+                                       'reason for each.',
+                             'example': "The AI answers 'where is my order' tickets by sending the "
+                                        'tracking link, never a promised delivery date, because Shopify '
+                                        'holds the tracking number rather than the latest carrier scan. '
+                                        'Delivered-not-received, damaged or wrong items, address changes, '
+                                        'cancellations, anger and chargebacks all route to a human, and '
+                                        'refunds over $75 enter a manager approval queue [Macha — '
+                                        'VsY0GsB1UI0 @ 00:05:00].'},
+                            {'name': 'ai_pricing_breakeven',
+                             'type': 'textarea',
+                             'prompt': 'Model the monthly cost of AI support under per-resolution pricing '
+                                       'and flat pricing. Use your real ticket volume and an honest '
+                                       'resolution-rate estimate, then state the resolution rate at which '
+                                       'each pricing model becomes the cheaper option.',
+                             'example': 'We receive about 750 tickets a month. Gorgias AI Agent bills $1 '
+                                        'per automated interaction on monthly billing, or $0.90 annual, so '
+                                        'the AI part of the bill grows with every resolution. Macha starts '
+                                        'at $299 for 750 tickets and breaks even against Gorgias only near '
+                                        '50% resolution, so our pilot must prove that rate first [Macha — '
+                                        'iqOjQraqwcM @ 00:05:42].'},
+                            {'name': 'post_purchase_flow_design',
+                             'type': 'textarea',
+                             'prompt': 'Design your Klaviyo post-purchase flow step by step. Give the '
+                                       'delay before each email, its purpose, any offer and its expiry, '
+                                       'when the review request fires, and the filters that keep cancelled '
+                                       'or refunded buyers out of the sequence.',
+                             'example': 'Email one is a thank-you after order. Email two carries a '
+                                        'cross-sell offer that lasts three days, followed by a 24-hour '
+                                        'last chance. The review request waits until the product has been '
+                                        'in hand about 7 to 10 days after delivery. Flow filters require '
+                                        'canceled zero and refunded zero since starting [Tarun Brar - eCom '
+                                        'Email Marketing — coevagBV6wU @ 00:15:48].'},
+                            {'name': 'second_order_window',
+                             'type': 'text',
+                             'prompt': "Set the target window for each customer's second purchase and the "
+                                       'touchpoints that drive it. State the number of days, the profit '
+                                       'difference between first and second orders in your store, and the '
+                                       'share of revenue email should carry.',
+                             'example': 'Loyalty runs much higher when a buyer purchases again within 30 '
+                                        'to 60 days, so our replenishment and cross-sell emails all land '
+                                        'inside day 45. At a 3x ROAS our first order leaves about $26, '
+                                        'while the second order earns about $60. We target email at 35 to '
+                                        '50 percent of attributed revenue [Derek Stroh — cerX0RFHJ0c @ '
+                                        '00:09:35].'},
+                            {'name': 'subscription_retention_plan',
+                             'type': 'textarea',
+                             'prompt': 'If you sell replenishable products, outline your subscription '
+                                       'retention plan. Describe the subscription platform, the flows that '
+                                       'fire around renewal and cancellation, and the three-month '
+                                       'milestone you will track, since early tenure strongly predicts '
+                                       'longer customer life.',
+                             'example': 'We pair Recharge with Klaviyo, modeled on the Scooch result where '
+                                        'churn fell 33%, subscriber LTV tripled and ad spend dropped 48% '
+                                        'while revenue slipped 5%. Our flows remind subscribers before '
+                                        'renewal and offer a skip before cancellation. We track the share '
+                                        'reaching month three, because customers kept three months tend to '
+                                        'stay longer [Milan Raviji│Klaviyo & Email Marketing — 6xiaPZPDBCQ '
+                                        '@ 00:06:42].'}],
+                 'completion_gate': 'Worksheet 5 is complete when the return policy is live, the weekly '
+                                    'returns reserve is funded, every supplier damage window is logged, '
+                                    'the chargeback evidence template exists, AI routing rules and the '
+                                    'pricing break-even are documented, and every post-purchase flow '
+                                    'excludes canceled and refunded buyers.'},
+                {'worksheet_id': 'ws-06',
+                 'number': 6,
+                 'title': 'Shopping Feed Optimization and Scaling Gates',
+                 'purpose': 'Treat the product feed as the targeting layer for Shopping and Performance '
+                            'Max, protect the account from suspensions and lost product history, then lift '
+                            'conversion and scale spend only when breakeven ROAS, CAC payback, and '
+                            'fulfillment capacity say the math works.',
+                 'chapter_ref': 'Q11-Q12',
+                 'instructions': ['Export your Merchant Center feed and search terms report before editing '
+                                  'any title, price, or identifier.',
+                                  'Make one change per SKU at a time and give each test one to two weeks '
+                                  'with enough budget to read the result.',
+                                  'Lock product IDs and confirm sale prices match the live site before '
+                                  'every sync or app migration.',
+                                  'Measure conversion rate and page load speed before running any other '
+                                  'conversion experiment.',
+                                  'Do not raise ad budgets until breakeven ROAS, CAC payback, and '
+                                  'fulfillment surge capacity are written down and pass.'],
+                 'fields': [{'name': 'title_rewrite_plan',
+                             'type': 'textarea',
+                             'prompt': 'Rewrite the Shopping titles for your top five products. For each, '
+                                       'record the current title, the converting search term pulled from '
+                                       'your search terms report, and the new title that front-loads that '
+                                       'term while using most of the 150 characters.',
+                             'example': "Home Reserve retitled its 'Alley sofa' listing to a kid and pet "
+                                        'friendly washable sectional sofa and saw a 10x jump in clicks and '
+                                        "impressions, with sales rising. Our 'Nordic Parka' becomes 'Men's "
+                                        "Waterproof Insulated Winter Jacket - Nordic Parka', matching the "
+                                        'search term that already converts, with size and color filling '
+                                        'the remaining characters [Grow My Ads — hY8ZBC3A4uQ @ 00:10:45].'},
+                            {'name': 'feed_attribute_integrity',
+                             'type': 'textarea',
+                             'prompt': 'Audit the feed attributes that must match your live site exactly: '
+                                       'price, sale price, and availability. Record how often you check '
+                                       'them, which tool syncs the catalog, and where edits must be made '
+                                       'so the next sync does not overwrite them.',
+                             'example': 'We add a sale price to every product because the green sale price '
+                                        'boosts clicks, but a mismatch with the website gets the product '
+                                        'suspended. DataFeedWatch runs our catalog, so edits happen inside '
+                                        'the app, since manual Merchant Center changes get overridden on '
+                                        'the next sync. Prices are checked against the live site every '
+                                        'Monday [Max Crakanthorp — H4yH9xs030Q @ 00:13:46].'},
+                            {'name': 'product_id_and_identifier_lock',
+                             'type': 'text',
+                             'prompt': 'List the product IDs you have locked before any feed cleanup or '
+                                       'app migration, and record the identifier plan for products without '
+                                       'a GTIN, including the unique MPN format you will assign so Google '
+                                       'keeps learning about each product.',
+                             'example': 'Before moving from the native channel to a feed app, we exported '
+                                        'every product ID and mapped the app to reuse them, because a '
+                                        'changed ID creates a new product for Google and performance '
+                                        'drops. Our house-made accessories have no GTIN, so each gets a '
+                                        'unique MPN in the format BRAND-CATEGORY-0001 rather than a blank '
+                                        'identifier [KeyCommerce — S1NhYxaPnic @ 00:06:21].'},
+                            {'name': 'custom_label_segments',
+                             'type': 'textarea',
+                             'prompt': 'Define the custom labels you will apply to segment the catalog for '
+                                       "bidding. Specify each label's values for margin tier, price "
+                                       'bucket, and season, the tool that writes them, and any bucket that '
+                                       'deserves its own target ROAS.',
+                             'example': 'Custom label 0 holds margin tier: high above 30%, mid at 15 to '
+                                        '30%, low below 15%. Label 1 holds price buckets from 100 to '
+                                        '10,000, with a 2,000-plus bucket carrying its own tROAS. Label 2 '
+                                        'marks winter, summer or evergreen. A Google Sheets supplemental '
+                                        'feed writes all three [Tim Sutton | Google Ads | Launchpresso — '
+                                        'APb0cOGKROE @ 00:05:06].'},
+                            {'name': 'merchant_center_approval_checklist',
+                             'type': 'text',
+                             'prompt': 'Confirm every store page and business detail Merchant Center '
+                                       'reviews before approval. Record the live URL for contact, refund, '
+                                       'shipping, privacy and terms pages, where business details appear, '
+                                       'and any promotion end times set to avoid early cutoffs.',
+                             'example': 'Contact, refund, shipping, privacy and terms pages are all linked '
+                                        'in the footer, and our business address and phone number show on '
+                                        'the contact page, because a perfect feed alone does not guarantee '
+                                        'approval. Our Black Friday promotion ends at 11:59 p.m., since '
+                                        'Google ends promotions at midnight the day before [Wixpa Google '
+                                        'Shopping Feed — RHJvGN_6sf0 @ 00:04:47].'},
+                            {'name': 'title_test_discipline',
+                             'type': 'text',
+                             'prompt': 'Plan a controlled title test. Name the SKU, the single change you '
+                                       'will make, the test length in weeks, the daily budget behind it, '
+                                       'and the metrics you will read, including CTR, CPC, conversion '
+                                       'rate, and ROAS, before calling a winner.',
+                             'example': 'We will change only the title on our best-selling jacket SKU and '
+                                        'hold everything else steady for two weeks. Because $40 to $50 a '
+                                        'day is not enough data, the test runs at $150 a day. We compare '
+                                        'CTR, CPC, conversion rate and ROAS against the prior two weeks '
+                                        'before deciding [Ecom Chris — d9kULGtUBD4 @ 00:28:56].'},
+                            {'name': 'conversion_baseline_and_speed',
+                             'type': 'textarea',
+                             'prompt': 'Record your current store conversion rate against the 1 to 3% '
+                                       'average and the 6 to 8% top tier. Then log your mobile page load '
+                                       'time, the largest speed drag found, and the estimated conversion '
+                                       'loss from each second of delay.',
+                             'example': 'Our store converts at 1.4%, inside the 1 to 3% band but far from '
+                                        'the 6 to 8% top tier. Product pages load in 4.2 seconds, mostly '
+                                        'from oversized high-resolution images. At a 7% conversion loss '
+                                        'per second of delay, compressing images with Tiny Image Optimizer '
+                                        'comes before any other CRO test [Chase Chappell — daDsoHXE52A @ '
+                                        '00:01:49].'},
+                            {'name': 'breakeven_roas_by_budget',
+                             'type': 'textarea',
+                             'prompt': 'Calculate breakeven ROAS for three planned monthly ad budgets '
+                                       'using your fixed costs and variable margin. Show the arithmetic '
+                                       'for each level, then state which budget you will fund and the MER '
+                                       'you will watch instead of pixel attribution.',
+                             'example': "In Callinan's model, breakeven ROAS runs 22 at $10k of spend, 6 "
+                                        'at $50k and 4 at $100k, because fixed costs spread across more '
+                                        'contribution as spend rises. Our version uses $40k of fixed costs '
+                                        'and a 40% variable margin. We will fund the middle budget and '
+                                        'judge it on blended MER, not pixel-reported ROAS [Adam Callinan — '
+                                        'VCXWZQgbKXw @ 00:25:39].'},
+                            {'name': 'cac_payback_gate',
+                             'type': 'text',
+                             'prompt': 'Calculate CAC payback in days for your current acquisition '
+                                       'channels. State whether it falls inside the 30 to 60 day window, '
+                                       'and if it runs six months or longer, name the working capital '
+                                       'source that will finance growth.',
+                             'example': 'Our blended CAC is $48 and each first order contributes $30 '
+                                        'before acquisition cost, so $18 remains unrecovered until the '
+                                        'second order, which typically lands around day 50. That places '
+                                        'payback at roughly 50 days, inside the 30 to 60 day window, so we '
+                                        'can scale without lining up outside working capital first '
+                                        '[Leading Social — KpmUvCBEKK4 @ 00:01:48].'},
+                            {'name': 'scaling_readiness_gate',
+                             'type': 'textarea',
+                             'prompt': 'Before increasing spend, record your scaling readiness: months of '
+                                       'flat revenue, MER trend, fulfillment capacity for surge volume '
+                                       'including separate picking and packing checks, and whether you '
+                                       'will scale in-house or bring in an agency, with your reasoning.',
+                             'example': 'Revenue has sat near $80k a month for three months while MER '
+                                        'keeps rising, the signal to bring in an agency instead of forcing '
+                                        'more self-run spend. Our 3PL has confirmed a separate picker and '
+                                        'packer for the holiday surge, giving two points of verification. '
+                                        'We will pull back 5% of marketing spend in cyber [Growth '
+                                        'Manifesto Podcast — 7v_KO8bj_G0 @ 00:29:01].'}],
+                 'completion_gate': 'Worksheet 6 is complete when the top five titles are rewritten around '
+                                    'converting search terms, price and product ID integrity checks are '
+                                    'scheduled, custom labels are live, approval pages are confirmed, a '
+                                    'controlled title test is planned, and breakeven ROAS, CAC payback, '
+                                    'and surge fulfillment capacity all pass before any budget increase.'}]}

@@ -9,49 +9,49 @@
       "RESALE"
     ],
     "deck": [
-      "SANITIZE EPHI. BENCH-TEST BIOMED.",
-      "RESELL WITH DOCUMENTATION."
+      "BIOMED-CHECKED SURPLUS GEAR, ELECTRICAL SAFETY BENCH TESTS, AND PRE-SHIP QA PROOF WITHIN ORIGINAL MANUFACTURER SPECIFICATIONS",
+      "REFURBISHING, AUCTION, RENTAL, AND CROSS-BORDER RESALE OPERATIONS BUILT AROUND QMSR, 510(K), AND RECALL OBLIGATIONS"
     ],
-    "lead": "Acquiring, Bench-Testing & Remarketing Diagnostic, Surgical, Dental & Veterinary Devices Across Domestic & Export Channels",
-    "summary": "Distinguish lawful servicing from FDA remanufacturing, wipe patient storage media to NIST 800-88 standards, and protect rigging margins.",
+    "lead": "Practitioners who buy surplus hospital gear cheap, biomed-check and document it, then resell or rerent it show how garage operations, auction houses, and third-party biomeds turn the gap between OEM pricing and the secondary market into a business.",
+    "summary": "All 12 chapters synthesize 192 verbatim YouTube practitioner testimonies on medical equipment resale, from sourcing, servicing, and bench testing through FDA regulation, imaging, lasers, clinic buyers, and sales careers. Every claim, metric, pro-tip, and operator gate carries timestamped inline attribution to the practitioner and video it came from.",
     "chapters": [
-      "Business model & revenue boundaries",
-      "Decision-makers & payment rails",
-      "Unit economics & margin waterfall",
-      "Startup capital & lean stack",
-      "Beginner traps & failure modes",
-      "Sourcing & first deals",
-      "End-to-end operating blueprint",
-      "Public records, APIs & tooling",
-      "Contracts, statutes & scripts",
-      "Automation & distribution loops",
-      "Small-team pod & exit valuation",
-      "First 30-day launch sprint"
+      "The Used Medical Equipment Resale Business",
+      "Sourcing, Shipping, and Selling Across Borders",
+      "Servicing, Remanufacturing, and the Third-Party Biomed Business",
+      "On the Bench: Electrical Safety Testing and Troubleshooting",
+      "21 CFR 820: From QSR to QMSR",
+      "FDA Device Regulation Fundamentals",
+      "Building the 510(k) Submission",
+      "Recalls, Removals, and the MAUDE Database",
+      "Imaging Equipment: MRI, CT, and X-Ray",
+      "Medical and Aesthetic Lasers",
+      "Clinic Buyers: Veterinary, Dental, and Ambulatory Surgery",
+      "Selling Medical Equipment: Sales Careers and Industry Economics"
     ],
     "flow": [
       [
         "SOURCE",
-        "Mine high-intent deal triggers"
-      ],
-      [
-        "UNDERWRITE",
-        "Screen margin, float & rules"
-      ],
-      [
-        "ENGAGE",
-        "Execute mandate or pre-sell"
-      ],
-      [
-        "DELIVER",
-        "Run standardized SOP & ledger"
+        "Buy surplus hospital gear cheap through liquidations, auctions, and manufacturer trade-in programs, hunting high-demand SKUs and pricing used units on eBay or DotMed against OEM repair quotes."
       ],
       [
         "VERIFY",
-        "Audit quality, scrubs & statutes"
+        "Never ship on a power-on check alone; recheck every unit with a biomed team or sell it explicitly as is."
       ],
       [
-        "COMPOUND",
-        "Reconcile cash & scale pod"
+        "SANITIZE",
+        "Confirm HIPAA data removal and internal decontamination with the refurbisher before payment or resale."
+      ],
+      [
+        "DOCUMENT",
+        "Write condition limits and clear pictures into the listing and provide an unedited functionality video plus pre-ship QA results within original manufacturer specifications."
+      ],
+      [
+        "SHIP",
+        "Use air-ride, climate-controlled freight with a carrier that has moved medical loads and carries insurance matched to the freight value."
+      ],
+      [
+        "RESELL",
+        "Sell through showrooms, auctions, and online marketplaces, or bill 13-month Medicare rentals and rerent returned units to the next patient."
       ]
     ]
   },
@@ -59,10 +59,10 @@
   "book_series": "THE BIG MONEY PLAYBOOKS",
   "tagline": "Big Money. Small Teams. No Bullshit.",
   "title": "MEDICAL EQUIPMENT RESALE",
-  "subtitle": "The Complete Playbook for Medical Equipment Resale: $250,000–$1,800,000 USD in Annual Gross Resale Proceeds, Built Around a 1 FT + 3 C Four-Person Pod and Scaling to Six People",
+  "subtitle": "Buy Hospital Surplus, Biomed-Check Every Unit, Resell or Rerent It: Medicare Rentals, Cross-Border Refurbishing, Third-Party Service, Bench Safety Testing, QMSR and 510(k) Readiness, Helium-Safe Imaging Resale, Sterile-Processing Buyers, and Referral-Driven Device Sales",
   "chapter_count": 12,
-  "total_word_count": 75959,
-  "expert_youtube_link_count": 180,
+  "total_word_count": 72927,
+  "expert_youtube_link_count": 210,
   "min_expert_youtube_links_required": 150,
   "target_expert_youtube_links": "150-200+",
   "min_expert_youtube_links_per_chapter": 12,
@@ -77,5 +77,5 @@
   "publication_status": "approved_master",
   "public_deploy_approved": false,
   "paid_sales_approved": false,
-  "updated_at": "2026-11-23T22:48:01Z"
+  "updated_at": "2026-11-24T21:35:15Z"
 }

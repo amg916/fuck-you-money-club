@@ -8,49 +8,49 @@
       "BROKERAGE"
     ],
     "deck": [
-      "VERIFY CARRIER IDENTITY. PROTECT NET SPREAD.",
-      "CONTROL RECEIVABLE FLOAT."
+      "HOW 192 PRACTITIONERS LAUNCH AN MC AUTHORITY, POST THE $75,000 BOND AND PROSPECT NICHE SHIPPERS",
+      "HOW THEY VET CARRIERS, PRICE THE SPREAD, FUND THE FLOAT AND DEFEND AGAINST DOUBLE BROKERING"
     ],
-    "lead": "Specialized Reefer, Flatbed, Oversize & Drayage Freight Brokerage Built on Verified Carrier Vetting and Shipper Credit Limits",
-    "summary": "Protect thin gross-to-net spreads with 49 CFR 371 compliance, ELD/VIN anti-fraud checks, and disciplined quick-pay vs receivable float.",
+    "lead": "Freight brokerage operators describe the business as a spread trade financed like a bank: contract the shipper's rate, buy the truck cheaper, and fund the gap between quick-paying carriers and slow-paying shippers.",
+    "summary": "All 12 chapters synthesize 192 verbatim YouTube practitioner testimonies, from authority filing and the $75,000 surety bond to cold calling, accessorials, double brokering and cargo claims. Every metric, pro-tip, operator gate and quote carries timestamped inline attribution to the practitioner and video it came from.",
     "chapters": [
-      "Business model & revenue boundaries",
-      "Decision-makers & payment rails",
-      "Unit economics & margin waterfall",
-      "Startup capital & lean stack",
-      "Beginner traps & failure modes",
-      "Sourcing & first deals",
-      "End-to-end operating blueprint",
-      "Public records, APIs & tooling",
-      "Contracts, statutes & scripts",
-      "Automation & distribution loops",
-      "Small-team pod & exit valuation",
-      "First 30-day launch sprint"
+      "The Business Case and Launch Roadmap",
+      "Broker Authority, Registration and the Transparency Fight",
+      "The $75,000 Surety Bond",
+      "Freight Agent vs. Freight Broker",
+      "Finding and Winning Shippers",
+      "Cold Calling That Books Freight",
+      "Quote to Cash: Pricing, Load Operations and Payment",
+      "Reading the Freight Market",
+      "Equipment Niches: Van, Reefer, Flatbed, Heavy Haul and Drayage",
+      "Accessorials: Detention, Layover and TONU",
+      "Double Brokering and Freight Fraud Defense",
+      "Cargo Liability, Insurance and Claims"
     ],
     "flow": [
       [
-        "SOURCE",
-        "Mine high-intent deal triggers"
+        "AUTHORITY",
+        "Apply through FMCSA's registration system, pay $300 per authority type, file a BOC-3 process agent covering every operating state, then check SAFER for the MC number about 24 hours later."
       ],
       [
-        "UNDERWRITE",
-        "Screen margin, float & rules"
+        "SECURITY",
+        "Post $75,000 via a BMC-84 surety bond or BMC-85 trust; credit-based premiums run $900 to $9,000, and a shortfall gets 7 business days to restore before suspension."
       ],
       [
-        "ENGAGE",
-        "Execute mandate or pre-sell"
+        "PROSPECT",
+        "Pick a narrow niche like steel, lumber or machinery, scout shippers with satellite recon and help-wanted pages, and star 50 rows before dialing toward five great clients."
       ],
       [
-        "DELIVER",
-        "Run standardized SOP & ledger"
+        "VET CARRIER",
+        "Require a clean SAFER snapshot: authorized status, matching phone, more than zero trucks and a known authority grant date, while screening for double-brokering red flags."
       ],
       [
-        "VERIFY",
-        "Audit quality, scrubs & statutes"
+        "PRICE AND POST",
+        "Contract the shipper rate, buy the truck cheaper at roughly $100 to $600 per load, and post loads with driver candy: light, no tarp, quick pay and price shown."
       ],
       [
-        "COMPOUND",
-        "Reconcile cash & scale pod"
+        "FUND THE FLOAT",
+        "Line up funding before volume, since 10 loads a week puts a new desk $40,000 out of pocket by week four, and know break-even loads before the owner earns anything."
       ]
     ]
   },
@@ -58,10 +58,10 @@
   "book_series": "THE BIG MONEY PLAYBOOKS",
   "tagline": "Big Money. Small Teams. No Bullshit.",
   "title": "FREIGHT BROKERAGE",
-  "subtitle": "The Complete Playbook for $1,000,000–$5,000,000 USD in Annual Gross Shipper Billings: Build a 3 FT + 2 C (5 People) Freight Brokerage Pod and Scale to Seven",
+  "subtitle": "Niche into steel, lumber and machinery, post the $75,000 bond at a negotiated premium, win five great shippers with relentless touches, price from the truck up, lock accessorials into the rate con, and fence out double brokers before the cargo goes dark",
   "chapter_count": 12,
-  "total_word_count": 75196,
-  "expert_youtube_link_count": 180,
+  "total_word_count": 72899,
+  "expert_youtube_link_count": 209,
   "min_expert_youtube_links_required": 150,
   "target_expert_youtube_links": "150-200+",
   "min_expert_youtube_links_per_chapter": 12,
@@ -76,5 +76,5 @@
   "publication_status": "approved_master",
   "public_deploy_approved": false,
   "paid_sales_approved": false,
-  "updated_at": "2026-11-23T22:48:02Z"
+  "updated_at": "2026-11-24T21:35:15Z"
 }

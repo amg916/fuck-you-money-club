@@ -1,684 +1,817 @@
 from __future__ import annotations
 
-CHAPTER_2 = {
-    "id": "Q2",
-    "chapter_id": "Q2",
-    "chapter_number": 2,
-    "question_number": 2,
-    "slug": "who-pays-freight-brokerage-payment-rails",
-    "question_prompt": "Who writes the check in freight brokerage, what acute financial or statutory pain forces them to pay, and how do funds clear cleanly without circumvention or non-payment?",
-    "kicker": "Q2 / THE BIG MONEY PLAYBOOKS",
-    "title": "Who Pays, Why They Pay & How the Payment Rail Works",
-    "subtitle": "Shipper Credit, FMCSA Broker Security, Highway/RMIS Identity Checks, UCC Assignment Notices & Carrier-Payment Float",
-    "layout_template": "executive_summary",
-    "reading_time_minutes": 14,
-    "executive_summary": (
-        "Candidate #12, Freight Brokerage, holds Rank #19 with a 85/100 Money-to-Manpower "
-        "Score because reliable capacity monetizes urgent shipper problems but consumes "
-        "working capital and exception-handling labor. The payer is usually a shipper's "
-        "accounts-payable function; the transportation buyer creates demand but may lack "
-        "authority to release money. This chapter maps eight operating plays: niche "
-        "capacity recovery, recurring lane procurement, dedicated capacity retainers, "
-        "accessorial recovery, carrier quick pay, receivables factoring, protected platform "
-        "settlement, and objective directory-badge acquisition. Each connects a buyer, "
-        "documented obligation, collection rail, and failure fallback. Canonical annual "
-        "owner profits are $30,000 Conservative, $165,000 Base, and $400,000 Scaled. "
-        "Those outcomes use gross shipper billings including carrier costs, not a fictional "
-        "commission applied again to freight volume."
-    ),
-    "key_metrics": [
-        {
-            "label": "Conservative",
-            "value": "$1,000,000",
-            "context": "Annual gross shipper billings including carrier costs",
-            "note": "3% net margin; $30,000 annual owner net profit; 3 FT + 2 C",
-        },
-        {
-            "label": "Base",
-            "value": "$3,000,000",
-            "context": "Annual gross shipper billings including carrier costs",
-            "note": "5.5% net margin; $165,000 annual owner net profit; 3 FT + 2 C",
-        },
-        {
-            "label": "Scaled",
-            "value": "$5,000,000",
-            "context": "Annual gross shipper billings including carrier costs",
-            "note": "8% net margin; $400,000 annual owner net profit; 4 FT + 3 C",
-        },
-    ],
-    "sections": [
-        {
-            "heading": "1. Identify the economic buyer, authorized payer, and eight monetization plays",
-            "epistemic_status": "operating_framework",
-            "paragraphs": [
-                (
-                    "The transportation manager buys recovery from an operational failure; accounts payable "
-                    "releases funds against an accepted obligation. A manufacturer facing a stopped production "
-                    "line may rationally approve a $2,000 truck rather than absorb $12,000 of hourly downtime, "
-                    "but urgency does not establish purchasing authority. Record the contracting shipper's "
-                    "legal entity, transportation contact, purchase-order owner, invoice portal, remittance "
-                    "contact, and person authorized to approve detention or revised rates. A warehouse "
-                    "supervisor who requests another truck may control neither the freight budget nor the "
-                    "customer's credit. Verify whether the payer is the manufacturer, distributor, consignee, "
-                    "or another intermediary before accepting the tender. Procurement wants defensible rates; "
-                    "operations wants coverage and credible arrival times; treasury wants predictable exposure; "
-                    "accounts payable wants matching documents. Sell each constituency its own measurable "
-                    "outcome without presenting a badge as evidence of financial strength. An ordinary "
-                    "freight invoice is a contractual payment obligation, not an automatically protected "
-                    "statutory disbursement. FMCSA broker authority and financial security address market "
-                    "participation and specified claims, not the shipper's ability to pay your invoice. "
-                    "Ask for the customer's actual freight-payment instructions during onboarding, then "
-                    "test a sample invoice before the first high-value load creates an avoidable rejection."
-                ),
-                (
-                    "The eight plays below are this chapter's operating map, not eight additive forecasts. "
-                    "Niche capacity recovery earns a $300 gross spread when a verified carrier accepts "
-                    "$1,700 against a $2,000 shipper rate; if coverage fails, offer a documented alternative "
-                    "or decline before promising pickup. Recurring lane procurement converts twenty such "
-                    "loads into $40,000 monthly billings and $6,000 gross spread before overhead; if "
-                    "carrier acceptance deteriorates, reprice the lane rather than subsidize every tender. "
-                    "Dedicated capacity retainers can collect a $5,000 monthly reservation payment credited "
-                    "against actual invoices; if capacity is unavailable, apply the contract's refund or "
-                    "substitution rule rather than count both the deposit and freight as separate revenue. "
-                    "Accessorial recovery bills three documented detention hours at $75, producing $225 "
-                    "of additional shipper charges; a $180 carrier obligation leaves $45 before handling "
-                    "costs. Without timestamps and agreed terms, escalate the dispute and pay the carrier "
-                    "according to its own agreement. These buyers pay for continuity, fewer exceptions, "
-                    "and reliable documentation, not for the broker's software stack. Establish the "
-                    "authorized approver for each charge category because a valid linehaul purchase "
-                    "order may expressly exclude detention, lumper services, redelivery, or equipment "
-                    "changes made after dispatch."
-                ),
-                (
-                    "Carrier quick pay exchanges an optional discount for earlier settlement: a carrier "
-                    "accepting 2% off a $1,700 payable receives $1,666, leaving $34 before financing and "
-                    "processing costs. If liquidity tightens, suspend new offers while honoring existing "
-                    "commitments. Receivables factoring accelerates a $2,000 eligible invoice through an "
-                    "illustrative 90% advance of $1,800; a $40 fee leaves $160 reserve release after "
-                    "collection, subject to the agreement. If the factor rejects the debtor, stop extending "
-                    "unfunded credit. Protected platform settlement attaches payment instructions and "
-                    "delivery evidence to checkout; a 2.9% plus $0.30 illustrative processing charge "
-                    "costs $58.30 on $2,000, so switch eligible repeat customers to verified ACH when "
-                    "economics demand it. The eighth play, ego_bait_directory_badge_arbitrage, publishes "
-                    "data-scored state and city rankings such as Top 15 Verified Specialists in Columbus "
-                    "and gives winners free embeddable Top Rated badges. Ten Featured placements at "
-                    "$499 monthly generate $4,990 of separate advertising billings, within the "
-                    "$299–$799 price band. Pursue hundreds of earned referring links without promising "
-                    "that result. Freeze objective scores between documented review cycles, label paid "
-                    "positions Sponsored / Featured, and use branded anchors. If rankings lose "
-                    "credibility, halt sales and audit scoring; directory receipts stay outside the "
-                    "canonical freight scenarios."
-                ),
-            ],
-            "table": {
-                "caption": "Eight payment and settlement rails: actual authority, clearance mechanics, and failure response",
-                "headers": [
-                    "Rail and appropriate freight use",
-                    "Who can authorize the payment",
-                    "What establishes receipt or release",
-                    "Failure mode and operational fallback",
-                ],
-                "rows": [
-                    [
-                        "Wire funds a first urgent shipment before carrier commitment",
-                        "Verified shipper treasury staff approve the beneficiary and amount",
-                        "Broker confirms bank credit against independently validated beneficiary instructions",
-                        "Spoofed instructions trigger callback verification before dispatch or refunds",
-                    ],
-                    [
-                        "Escrow supports negotiated high-value moves with objective release conditions",
-                        "Named parties authorize an independent provider under written instructions",
-                        "Provider releases documented amounts after specified delivery evidence arrives",
-                        "Ambiguous acceptance language requires revised instructions before accepting freight",
-                    ],
-                    [
-                        "ACH handles recurring shipper invoices and routine carrier disbursements",
-                        "Authorized treasury users originate credits or expressly permitted debits",
-                        "Bank posting and applicable return exposure are reconciled separately",
-                        "Returned entries freeze incremental credit pending a verified replacement payment",
-                    ],
-                    [
-                        "Retainers reserve dedicated capacity and fund agreed invoice credits",
-                        "Contracting customer's authorized buyer approves reservation and credit mechanics",
-                        "Cash receipt enters a deposit ledger until contractual application",
-                        "Unavailable capacity activates documented substitution or refund obligations promptly",
-                    ],
-                    [
-                        "Statutory disbursement applies only under an identified governing program",
-                        "Named administrator or authorized government payment official controls release",
-                        "Applicable award or program documents establish entitlement and payment conditions",
-                        "Absent an identified authority use ordinary contract collection instead",
-                    ],
-                    [
-                        "Platform checkout collects prepaid freight through a selected processor",
-                        "Verified business payer authorizes the transaction within processor requirements",
-                        "Processor settlement is reconciled with reserves and dispute exposure",
-                        "Chargebacks require evidence packages and may justify alternate collection",
-                    ],
-                    [
-                        "Factoring converts eligible freight receivables into contracted cash advances",
-                        "Broker assigns receivables while factor approves debtor and eligibility",
-                        "Advance arrives first and reserve releases after debtor collection",
-                        "Recourse events require repurchase liquidity or an alternate funding source",
-                    ],
-                    [
-                        "Milestone holds divide payment across agreed shipment evidence events",
-                        "Contract signatories approve amounts and measurable release evidence beforehand",
-                        "Specified pickup or delivery proof unlocks the corresponding payment",
-                        "Customer holds never automatically extend independent carrier payment terms",
-                    ],
-                ],
-            },
-            "callout": {
-                "kind": "INSIDER PRO-TIPS",
-                "title": "Sell certainty to operations and clean evidence to accounts payable",
-                "body": (
-                    "The highest-value freight relationship combines a reachable operational buyer "
-                    "with an invoice package that the payer can accept without manual rescue."
-                ),
-                "items": [
-                    "Request one previously accepted, redacted invoice package from the shipper and reproduce its reference-field structure before dispatch.",
-                    "Ask Highway/RMIS users to record the identity evidence behind a match; a favorable screen alone does not authenticate dispatch instructions.",
-                    "Negotiate detention evidence and authorized approvers with the transportation buyer before the first crowded receiving appointment.",
-                    "Give directory winners a free branded badge without requiring a backlink; mark paid links appropriately and keep sponsorship outside the ranking score.",
-                ],
-            },
-        },
-        {
-            "heading": "2. Underwrite the shipper and reconcile spread, profit, and cash exposure",
-            "epistemic_status": "illustrative_model",
-            "paragraphs": [
-                (
-                    "Credit screening starts with the entity obligated on the contract, not the logo "
-                    "on a trailer or a buyer's email signature. Match the legal name and address "
-                    "against state business records, obtain a signed credit application, and collect "
-                    "trade references with recent freight exposure. Use Dun & Bradstreet or Experian "
-                    "Business as evidence inputs rather than automatic decision engines. Review payment "
-                    "trends, disputed invoices, liens where accessible, concentration, and whether a "
-                    "parent company actually guarantees the subsidiary. Ask references about the largest "
-                    "balance carried and the oldest unpaid invoice; a customer that reliably pays "
-                    "$500 bills has not demonstrated capacity for $100,000 weekly freight. Establish "
-                    "a documented credit limit and terms before tender acceptance. Include delivered "
-                    "but unbilled loads and accepted future tenders in the exposure view so dispatch "
-                    "cannot conceal risk by delaying invoicing. For a new $20,000 limit, five "
-                    "$2,000 unpaid loads plus six accepted $2,000 loads already create $22,000 of "
-                    "committed exposure. Require a deposit, reduce accepted volume, or obtain an "
-                    "approved limit increase before taking another shipment. Validate deposits with "
-                    "treasury rather than screenshots. Reassess limits after missed promises, abrupt "
-                    "ownership changes, unusual destination changes, or a sudden increase in volume "
-                    "that exceeds the customer's established trading pattern."
-                ),
-                (
-                    "The canonical scorecard uses gross shipper billings including carrier costs: "
-                    "$1,000,000 Conservative, $3,000,000 Base, and $5,000,000 Scaled. Owner net profit "
-                    "is respectively $30,000 at 3%, $165,000 at 5.5%, and $400,000 at 8%. "
-                    "Conservative and Base each use 3 FT plus 2 C; Scaled uses 4 FT "
-                    "plus 3 C, seven people. One illustrative reconciliation assumes carrier purchases "
-                    "equal 85% of billings in every case. That produces gross spreads of "
-                    "$150,000, $450,000, and $750,000. Subtracting operating costs of $120,000, "
-                    "$285,000, and $350,000 yields exactly the three canonical profits. These purchase "
-                    "and cost assumptions explain the arithmetic; they are not additional scorecard "
-                    "inputs or promises about achievable lane pricing. Their monthly operating costs "
-                    "are $10,000, $23,750, and approximately $29,167, inside the stated "
-                    "$6,000–$30,000 range. Assign dispatch, sales, insurance, software, collection "
-                    "losses, and funding expense inside those envelopes instead of adding them "
-                    "after declaring profit. An illustrative $60,000 bad-debt loss would reduce "
-                    "Base profit to $105,000 unless offset elsewhere. Do not multiply the "
-                    "$3,000,000 billings by a brokerage commission and still call the result "
-                    "the canonical revenue. Financial-statement presentation may differ with the "
-                    "principal-versus-agent assessment, but the operating scorecard's denominator "
-                    "must remain consistent."
-                ),
-                (
-                    "Float can defeat a profitable broker because carrier obligations mature before "
-                    "shipper collections. Under a simplified thirty-day-month Base model, monthly "
-                    "shipper billings are $250,000 and carrier purchases are $212,500. At "
-                    "forty-five collection days, average receivables are $375,000; at fifteen "
-                    "carrier-payment days, average payables are $106,250. The receivables-minus-payables "
-                    "requirement is therefore $268,750 before payroll, reserves, deposits, or disputed "
-                    "claims. Funding only thirty days of carrier purchases gives $212,500 and "
-                    "misses $56,250 of margin embedded in outstanding receivables. Actual timing "
-                    "depends on invoice acceptance and shipment seasonality, so build a weekly "
-                    "thirteen-week cash forecast from individual maturities. The stated "
-                    "$15,000–$80,000 startup capital range does not automatically fund the full "
-                    "Base steady state under these terms. Shorter shipper terms, deposits, a "
-                    "committed working-capital facility, or lower accepted volume must close the "
-                    "gap. If an eligible $2,000 invoice is factored for a $40 fee, its "
-                    "$300 gross spread falls to $260 before other expenses. A carrier quick-pay "
-                    "discount cannot be assumed to offset that fee on every shipment. Stress "
-                    "the forecast with a major customer's fifteen-day delay and a factor reserve "
-                    "increase occurring together; these risks correlate when the same debtor "
-                    "starts disputing freight."
-                ),
-            ],
-            "table": {
-                "caption": "Counterparty underwriting and liquidity evidence that change dispatch decisions",
-                "headers": [
-                    "Exposure or underwriting test",
-                    "Evidence required before extending terms",
-                    "Concrete calculation or operating threshold",
-                    "Action when the evidence deteriorates",
-                ],
-                "rows": [
-                    [
-                        "Contracting subsidiary carries the obligation rather than its parent",
-                        "Executed agreement names the debtor and any enforceable guarantor",
-                        "Credit limit follows debtor resources rather than group branding",
-                        "Require deposits when the subsidiary cannot support requested exposure",
-                    ],
-                    [
-                        "Trade references establish demonstrated payment capacity for freight purchases",
-                        "References disclose recent high balances and actual payment timing",
-                        "Compare requested weekly freight with previously supported balances directly",
-                        "Start with smaller limits until collections establish reliable behavior",
-                    ],
-                    [
-                        "Accepted tenders consume credit before delivery and invoice issuance",
-                        "TMS combines open invoices with unbilled and committed loads",
-                        "Ten thousand unpaid plus twelve thousand committed exceeds twenty thousand",
-                        "Reduce new tenders or collect deposits before additional dispatch",
-                    ],
-                    [
-                        "Base working capital depends on actual collection and payment timing",
-                        "Invoice acceptance dates and carrier maturities feed weekly forecasts",
-                        "Three hundred seventy-five thousand receivables less 106,250 payables requires 268,750",
-                        "Secure funding or reduce volume before carrier obligations mature",
-                    ],
-                    [
-                        "Factoring fees reduce shipment contribution rather than creating revenue",
-                        "Executed factor schedule identifies fees reserves and recourse triggers",
-                        "Two thousand billed less seventeen hundred purchased leaves three hundred",
-                        "Subtract forty dollars factoring expense before allocating remaining contribution",
-                    ],
-                    [
-                        "Customer concentration can turn one dispute into a liquidity event",
-                        "Receivables aging identifies debtor families and correlated payment dependencies",
-                        "Model fifteen additional collection days for the largest debtor",
-                        "Reserve cash and diversify tenders before concentration becomes critical",
-                    ],
-                ],
-            },
-        },
-        {
-            "heading": "3. Bind the payment obligation and defeat diversion without overclaiming protection",
-            "epistemic_status": "operating_framework",
-            "paragraphs": [
-                (
-                    "A workable payment chain starts with the shipper-broker agreement, the accepted "
-                    "load tender, the broker-carrier agreement, and a matching rate confirmation. "
-                    "The documents should identify who purchases transportation, who performs it, "
-                    "the equipment and route, the linehaul price, approved accessorial rules, "
-                    "payment timing, and permitted assignment. A signed rate confirmation does "
-                    "not cure an unauthorized shipper tender or a carrier identity mismatch. "
-                    "For interstate property brokerage, verify FMCSA authority and required "
-                    "$75,000 BMC-84 surety bond or BMC-85 trust security under 49 U.S.C. "
-                    "13906(b) and 49 CFR 387.307. A bond is neither operating cash "
-                    "nor cargo insurance, and its premium is not the same as funding "
-                    "a trust. Current financial-responsibility rules include consequences when "
-                    "available security falls below the required amount; monitor provider notices "
-                    "and restoration requirements rather than assuming an annual renewal completes "
-                    "the job. Preserve the transaction records required by 49 CFR 371.3 "
-                    "for three years, including compensation and freight-charge information, and "
-                    "support transaction parties' applicable review rights. Confidentiality clauses "
-                    "must not be written as if they erase those rights. Separate the "
-                    "commercial spread calculation from customer-facing claims about statutory "
-                    "protection; being registered does not eliminate fraud, credit loss, or "
-                    "disputes over performance."
-                ),
-                (
-                    "Use Highway or RMIS to collect carrier evidence, then independently resolve "
-                    "high-risk changes through FMCSA Licensing and Insurance records, SAFER data, "
-                    "and callbacks to established contacts. A fraudster may control a convincing "
-                    "email thread while borrowing another carrier's authority number. Confirm "
-                    "dispatch identity, insurance through a verified source, equipment suitability, "
-                    "and whether the entity accepting the load will actually transport it. "
-                    "Prohibit unauthorized rebrokering in the carrier agreement and obtain "
-                    "shipping-site confirmation of the arriving carrier and equipment when risk "
-                    "warrants it. A bank account change receives a separate callback to a "
-                    "previously verified number, dual staff review, and a logged effective date. "
-                    "Do not use the phone number supplied in the change request as "
-                    "independent verification. Carrier factoring creates another diversion point: "
-                    "match the assignment notice to the carrier, invoice scope, factor, and "
-                    "payment instructions. UCC 9-406 addresses when notice redirects an account "
-                    "debtor's discharge obligation and provides a mechanism to request reasonable "
-                    "proof of assignment; apply the governing state's enacted version and "
-                    "relevant exceptions. Never pay a second purported assignee merely because "
-                    "its notice arrived later. Resolve competing claims through documented "
-                    "releases or appropriate process while maintaining a clear record of "
-                    "the underlying payable."
-                ),
-                (
-                    "Fee protection comes primarily from evidence and enforceable commercial terms, "
-                    "not a threatening footer. Define introduced customer accounts, the protected "
-                    "service scope, a reasonable period, and the calculation of any agreed "
-                    "remedy in a narrowly drafted non-circumvention provision. Avoid claiming "
-                    "ownership of every future shipment between two businesses. State-law "
-                    "enforceability varies, and an excessive charge framed as liquidated "
-                    "damages may fail as a penalty. Protect margin operationally through "
-                    "responsive service, consolidated billing, documented carrier relationships, "
-                    "and account-specific shipment history. When a $2,000 shipper invoice "
-                    "is disputed but the $1,700 carrier obligation is due, the broker "
-                    "cannot assume a customer hold changes carrier terms. Separate cargo "
-                    "claims from freight payment unless applicable agreements and law "
-                    "support the proposed setoff. For covered interstate motor-carrier cargo "
-                    "claims, 49 U.S.C. 14706 establishes the carrier-liability framework and "
-                    "limits contractual claim and suit periods; broker liability requires "
-                    "its own factual and contractual analysis. Preserve pickup exceptions, "
-                    "delivery notations, photographs, seal records, and claim correspondence. "
-                    "For government freight, identify the actual contracting entity and "
-                    "applicable payment provisions instead of applying FAR 52.232-25 to "
-                    "every shipment touching a public facility. A government customer's "
-                    "payment clause also does not automatically make the broker's "
-                    "carrier payable a government disbursement."
-                ),
-            ],
-            "table": {
-                "caption": "Freight-payment failure forensics and specific evidence-preservation responses",
-                "headers": [
-                    "Failure signal observed during the shipment",
-                    "Evidence that resolves the disputed identity or obligation",
-                    "Immediate containment action before money leaves",
-                    "Payment treatment after the facts are established",
-                ],
-                "rows": [
-                    [
-                        "Dispatcher changes carrier identity after accepting the rate confirmation",
-                        "Verified carrier contact confirms dispatch and actual equipment assignment",
-                        "Pause release and independently validate any proposed substitution",
-                        "Pay only the established contractual beneficiary under verified instructions",
-                    ],
-                    [
-                        "Carrier requests a different bank immediately before scheduled settlement",
-                        "Previously established contact validates account ownership through independent callback",
-                        "Separate bank maintenance authority from payment batch release authority",
-                        "Resume payment after evidence and dual review establish legitimacy",
-                    ],
-                    [
-                        "Two factoring companies demand the same carrier invoice payment",
-                        "Assignment notices releases and reasonable proof establish competing claims",
-                        "Escalate the conflict without selecting whichever caller sounds urgent",
-                        "Document a resolved entitlement before discharging the affected payable",
-                    ],
-                    [
-                        "Shipper rejects detention because receiving staff lacked spending authority",
-                        "Rate terms approved contact and timestamp evidence establish entitlement",
-                        "Route the evidence package to the actual authorized approver",
-                        "Honor separate carrier obligations while pursuing the disputed charge",
-                    ],
-                    [
-                        "Cargo damage allegation arrives alongside a full freight-payment deduction",
-                        "Delivery records claim documents and contract terms define separate issues",
-                        "Record the deduction without automatically admitting liability or setoff",
-                        "Reconcile freight and claim balances according to applicable obligations",
-                    ],
-                    [
-                        "Introduced customer begins placing identical loads directly with carrier",
-                        "Account history signed terms and shipment evidence establish protected scope",
-                        "Preserve records and pursue a proportionate commercial resolution first",
-                        "Seek only supported remedies rather than inventing punitive invoices",
-                    ],
-                ],
-            },
-            "callout": {
-                "kind": "OPERATOR GATE",
-                "title": "Four pre-flight checks before accepting funded freight",
-                "body": (
-                    "These checks establish a real debtor, a real carrier, a collectible obligation, "
-                    "and enough liquidity to meet the separate carrier promise."
-                ),
-                "items": [
-                    "Confirm active broker authority and required financial security through official records, and resolve any provider or agency notice affecting availability.",
-                    "Match the shipper's legal entity, authorized tender contact, approved credit limit, and invoice submission instructions before consuming credit.",
-                    "Validate carrier identity, operating authority, relevant insurance evidence, and actual dispatch contact; independently resolve rebrokering or account-change signals.",
-                    "Forecast the carrier due date against verified cash and committed funding, including factor reserves, disputed invoices, and all already accepted tenders.",
-                ],
-            },
-        },
-        {
-            "heading": "4. Run a documented settlement desk and escalate exceptions before they age",
-            "epistemic_status": "operating_framework",
-            "paragraphs": [
-                (
-                    "Build one settlement record per load that connects the customer invoice to "
-                    "the carrier payable without pretending they are the same obligation. "
-                    "Capture the shipper entity, purchase order, tender acceptance, rate "
-                    "confirmation, carrier identity, bill of lading, proof of delivery, "
-                    "accessorial approvals, invoice submission receipt, and both payment "
-                    "instructions. A TMS such as Rose Rocket or McLeod can hold the "
-                    "operating record while QuickBooks or another ledger holds posted "
-                    "receivables and payables; integrations need explicit reconciliation "
-                    "ownership. Invoice immediately after required evidence arrives, then "
-                    "verify acceptance in the customer's portal. Sending a PDF to a "
-                    "transportation contact does not establish accounts-payable acceptance. "
-                    "Track service date, invoice date, acceptance date, contractual due "
-                    "date, and actual receipt separately so collection delays become "
-                    "diagnosable. On the carrier side, distinguish the original invoice "
-                    "from an assigned receivable and preserve quick-pay elections. Each "
-                    "payment batch should show the verified beneficiary, invoice allocation, "
-                    "discount, fee, and bank reference. Resolve unapplied cash daily rather "
-                    "than letting a customer appear overdue after paying. If a shipper "
-                    "remits $9,800 against five $2,000 invoices, post the $200 shortfall "
-                    "to the identified dispute instead of distributing unexplained "
-                    "write-offs across all five loads."
-                ),
-                (
-                    "Select the rail according to credit exposure and transaction economics, "
-                    "not the word instant in a vendor interface. A domestic wire "
-                    "can suit a first urgent move, but validate beneficiary instructions "
-                    "and bank receipt; a transfer screenshot is not money. ACH credits "
-                    "often suit established business customers, while ACH debits require "
-                    "valid authorization and procedures consistent with applicable bank "
-                    "and network rules. Posting does not eliminate every return, "
-                    "reversal, or fraud risk. Card-funded checkout can speed collection "
-                    "while introducing chargebacks, reserves, and processor restrictions; "
-                    "verify that the processor supports the actual freight business "
-                    "model. A payment link is not escrow. Genuine escrow requires "
-                    "an appropriate provider and written release conditions, and a "
-                    "broker must not market ordinary pooled operating cash as "
-                    "protected third-party custody. Retainers and milestone holds "
-                    "need separate deposit and application records so the same "
-                    "cash is not recognized twice. For factoring, reconcile face "
-                    "value, advance, reserve, fees, and final release to the "
-                    "specific invoice. The shipper receives one authoritative "
-                    "remittance instruction set, updated through authenticated "
-                    "channels. When switching factors, confirm releases and "
-                    "assignment transitions before directing customers to a "
-                    "new account; otherwise a successful bank transfer can "
-                    "still leave the original obligation unresolved."
-                ),
-                (
-                    "Run a daily exceptions meeting around dollars at risk, not the "
-                    "number of emails sent. Prioritize imminent carrier maturities, "
-                    "rejected customer invoices, unverified bank changes, unresolved "
-                    "assignment notices, and customers approaching credit limits. "
-                    "Give each exception one owner, a next action, and a "
-                    "dated evidence requirement. At the first missed contractual "
-                    "due date, ask accounts payable for the specific rejection "
-                    "or scheduled payment reference; at a broken payment "
-                    "promise, recalculate exposure and restrict additional "
-                    "unsecured tenders under the account's credit policy. "
-                    "Escalation should preserve service continuity where "
-                    "funded alternatives exist, including deposits or "
-                    "customer-arranged transportation, without abandoning "
-                    "accepted obligations. Measure invoice acceptance lag, "
-                    "collection days, carrier on-time payment, dispute "
-                    "age, fraud losses, and gross spread after funding "
-                    "cost. Reconcile weekly management totals to the "
-                    "canonical scenario rather than celebrating higher "
-                    "billings bought with lower contribution. Keep "
-                    "directory advertising in its own ledger and "
-                    "report sponsored placement retention separately "
-                    "from freight customer retention. Automation should "
-                    "match loads, ingest tracking, and reconcile "
-                    "invoices; humans resolve identity conflicts and "
-                    "credit exceptions. The owner should be able "
-                    "to trace any reported dollar of profit "
-                    "back to a load, its carrier cost, "
-                    "its funding burden, and its collectible "
-                    "customer balance."
-                ),
-            ],
-            "table": {
-                "caption": "Settlement desk controls from accepted tender through final cash reconciliation",
-                "headers": [
-                    "Control point within the payment lifecycle",
-                    "Record or system evidence maintained by the owner",
-                    "Daily operating action with a concrete result",
-                    "Escalation when the expected evidence is missing",
-                ],
-                "rows": [
-                    [
-                        "Tender acceptance consumes approved customer credit before dispatch begins",
-                        "TMS records customer entity authorized buyer and committed exposure",
-                        "Compare the next shipment against remaining approved credit capacity",
-                        "Obtain a deposit or reduce commitments before accepting freight",
-                    ],
-                    [
-                        "Delivery completion starts the customer invoice evidence assembly process",
-                        "Signed delivery proof and approved accessorial evidence accompany billing",
-                        "Submit a complete package using the customer's accepted channel",
-                        "Assign missing documents to dispatch with a specific recovery deadline",
-                    ],
-                    [
-                        "Invoice acceptance separates successful submission from a rejected document",
-                        "Portal receipt or payer confirmation establishes the acceptance event",
-                        "Correct reference errors before they extend the collection cycle",
-                        "Escalate unresolved portal rejection to the authorized customer contact",
-                    ],
-                    [
-                        "Carrier maturity remains visible independently of customer collection status",
-                        "Payables schedule includes assignment instructions and elected payment terms",
-                        "Fund verified obligations using cash or committed available liquidity",
-                        "Escalate shortages before due dates rather than silently extending terms",
-                    ],
-                    [
-                        "Bank settlement allocates actual receipts to specific outstanding invoices",
-                        "Bank references remittance detail and ledger postings establish allocation",
-                        "Clear unapplied receipts and identify every short payment explicitly",
-                        "Request missing remittance detail before opening unnecessary collection disputes",
-                    ],
-                    [
-                        "Weekly contribution review reconciles billings carrier costs and financing",
-                        "Shipment ledger identifies discounts processing charges reserves and losses",
-                        "Explain deviations from the selected canonical annual profit scenario",
-                        "Reprice weak lanes or reduce exposure before expanding volume",
-                    ],
-                ],
-            },
-            "sop_steps": [
-                {
-                    "step": 1,
-                    "title": "Establish both payment promises",
-                    "action": "Record the authorized shipper obligation and the separate carrier obligation before dispatch.",
-                    "detail": (
-                        "Link the accepted tender, approved credit exposure, verified carrier, "
-                        "rate confirmation, payment terms, and authenticated beneficiary records."
-                    ),
-                },
-                {
-                    "step": 2,
-                    "title": "Submit a collectible invoice",
-                    "action": "Assemble delivery evidence and obtain confirmation that the customer accepted the invoice.",
-                    "detail": (
-                        "Include purchase-order references and approved accessorial support; log "
-                        "submission, acceptance, rejection, correction, and contractual due dates separately."
-                    ),
-                },
-                {
-                    "step": 3,
-                    "title": "Release verified carrier funds",
-                    "action": "Pay the established beneficiary on the agreed schedule using reviewed payment batches.",
-                    "detail": (
-                        "Resolve bank changes and assignment conflicts independently; reconcile "
-                        "quick-pay discounts and do not substitute customer collection timing for carrier terms."
-                    ),
-                },
-                {
-                    "step": 4,
-                    "title": "Close the settlement loop",
-                    "action": "Allocate receipts, resolve deductions, and reconcile shipment contribution to the ledger.",
-                    "detail": (
-                        "Track factor reserves and fees through final release, retain transaction "
-                        "records, and update customer credit exposure before accepting additional loads."
-                    ),
-                },
-            ],
-        },
-    ],
-    "pull_quote": "A freight spread becomes profit only when the shipper's collectible promise survives the carrier's earlier payday.",
-    "diagram_id": "diag-04",
-    "action_checklist": [
-        "Build an account map naming the contracting shipper, transportation buyer, purchase-order authority, accessorial approver, accounts-payable contact, and treasury contact.",
-        "Set a debtor-specific credit limit that includes open receivables, delivered unbilled loads, and accepted future tenders before dispatch consumes capacity.",
-        "Verify broker financial security and carrier identity through official records plus independent callbacks, using Highway/RMIS evidence as supporting inputs.",
-        "Model thirteen weeks of carrier maturities, customer receipts, factor reserves, and operating costs; close the illustrated Base working-capital gap before scaling.",
-        "Create authenticated payment instructions and an assignment-notice register, with independent review of bank changes and documented resolution of competing claims.",
-        "Separate directory advertising from freight economics, preserve objective ranking scores, label sponsored placements, and reconcile freight results to the three canonical scenarios.",
-    ],
-    "statutory_citations": [
-        {
-            "title": "49 U.S.C. 13904 — Registration of brokers",
-            "url": "https://www.law.cornell.edu/uscode/text/49/13904",
-            "relevance": (
-                "Establishes the federal broker-registration framework relevant to arranging "
-                "covered transportation rather than operating as an unregistered intermediary."
-            ),
-        },
-        {
-            "title": "49 U.S.C. 13906(b) — Broker financial security",
-            "url": "https://www.law.cornell.edu/uscode/text/49/13906",
-            "relevance": (
-                "Establishes the $75,000 financial-security requirement for covered brokers; "
-                "that security is distinct from operating liquidity and cargo insurance."
-            ),
-        },
-        {
-            "title": "49 CFR 387.307 — Property broker surety bond or trust fund",
-            "url": "https://www.ecfr.gov/current/title-49/section-387.307",
-            "relevance": (
-                "Governs required broker financial security, including relevant trust, "
-                "availability, deficiency, and authority-related requirements."
-            ),
-        },
-        {
-            "title": "49 CFR 371.3 — Records to be kept by brokers",
-            "url": "https://www.ecfr.gov/current/title-49/section-371.3",
-            "relevance": (
-                "Requires specified brokerage transaction records, three-year retention, "
-                "and transaction parties' rights to review the relevant record."
-            ),
-        },
-        {
-            "title": "UCC 9-406 — Discharge of account debtor and notification of assignment",
-            "url": "https://www.law.cornell.edu/ucc/9/9-406",
-            "relevance": (
-                "Provides model statutory rules for assignment notices and reasonable proof "
-                "of assignment; the governing state's enacted text controls carrier-factor payments."
-            ),
-        },
-        {
-            "title": "49 U.S.C. 14706 — Liability of carriers under receipts and bills of lading",
-            "url": "https://www.law.cornell.edu/uscode/text/49/14706",
-            "relevance": (
-                "Supplies the covered interstate motor-carrier cargo-liability framework and "
-                "limits contractual periods for presenting claims and filing suit."
-            ),
-        },
-        {
-            "title": "48 CFR 52.232-25 — Prompt Payment",
-            "url": "https://www.ecfr.gov/current/title-48/section-52.232-25",
-            "relevance": (
-                "Defines payment administration where this federal contract clause applies; "
-                "its terms should not be generalized to every publicly connected shipment."
-            ),
-        },
-        {
-            "title": "15 U.S.C. 45 — Unfair or deceptive acts or practices",
-            "url": "https://www.law.cornell.edu/uscode/text/15/45",
-            "relevance": (
-                "Supports truthful directory rankings, accurate badge claims, and clear "
-                "separation between objective scoring and paid featured placements."
-            ),
-        },
-    ],
-}
+CHAPTER_2 = {'id': 'Q2',
+ 'chapter_id': 'Q2',
+ 'chapter_number': 2,
+ 'question_number': 2,
+ 'slug': 'broker-authority-registration-transparency-fight',
+ 'question_prompt': 'How do I obtain broker operating authority under the new FMCSA system, and what do '
+                    'insurance minimums and the 49 CFR 371.3 transparency rule require of me?',
+ 'kicker': 'Q2 / THE BIG MONEY PLAYBOOKS',
+ 'title': 'Broker Authority, Registration and the Transparency Fight',
+ 'subtitle': 'FMCSA authority types, the MC application step by step, the new registration system, 49 CFR '
+             '371 financial-responsibility minimums, 49 CFR 371.3 transaction records, enforcement '
+             'disputes, and the FMCSA transparency proposal from broker and carrier perspectives',
+ 'layout_template': 'executive_summary',
+ 'reading_time_minutes': 15,
+ 'executive_summary': "Practitioners agree the MC number is the entry ticket: apply through FMCSA's "
+                      'registration system, pay $300 per authority type, post $75,000 in security via a '
+                      'BMC-84 surety bond or BMC-85 trust, and file a BOC-3 process agent. Since January '
+                      '16, 2026, security dropping below $75,000 can trigger suspension, with 7 business '
+                      'days to restore it. Bond premiums run $900 to $9,000 based on owner credit. On 49 '
+                      'CFR 371.3, carriers and a state DOT cop agree the records rule is weakly enforced '
+                      "and routinely waived; FMCSA's proposal would require electronic, itemized records "
+                      'within 48 hours. Freight 360, ET Transport and Freight Master Resources push back '
+                      'with margin figures of roughly 8 to 15%, while CDL Shorty and Trucking Justice '
+                      'argue carriers should demand the records.',
+ 'key_metrics': [{'label': 'Broker financial security minimum',
+                  'metric': 'Broker financial security minimum',
+                  'value': '$75,000 surety bond or trust fund agreement',
+                  'confidence': 'attributed_practitioner_claim',
+                  'context': 'FMCSA states brokers and freight forwarders must have either a surety bond '
+                             'filed by an insurance company or a trust fund agreement filed by a financial '
+                             'institution in the amount of $75,000.',
+                  'source': 'FMCSA ([qJ2zB-OEb8o @ 00:08:35])'},
+                 {'label': 'Application fee per authority type',
+                  'metric': 'Application fee per authority type',
+                  'value': '$300 per authority type',
+                  'confidence': 'attributed_practitioner_claim',
+                  'context': 'Fee paid when registering in MOTIS, which replaced the old FMCSA sites in '
+                             'May 2026; applying is not the same as being approved.',
+                  'source': 'The Broker Intellect ([5TtQ4-VoZuI @ 00:02:25])'},
+                 {'label': 'Surety bond premium range',
+                  'metric': 'Surety bond premium range',
+                  'value': '$900 to $9,000',
+                  'confidence': 'attributed_practitioner_claim',
+                  'context': 'Credit-based bond premiums Oscar has seen; every owner signs and the bond '
+                             'works like a fronted loan that is owed back.',
+                  'source': 'Truckers Authority ([jyVHYDl8PgQ @ 00:17:24])'},
+                 {'label': 'Proposed transaction records turnaround',
+                  'metric': 'Proposed transaction records turnaround',
+                  'value': '48 hours',
+                  'confidence': 'attributed_practitioner_claim',
+                  'context': 'The proposal suggested brokers provide requested transaction records within '
+                             '48 hours, electronically; nothing has officially changed and it is not a '
+                             'final rule.',
+                  'source': 'thatDOTcop ([9gNEc3GjPKA @ 00:06:41])'}],
+ 'sections': [{'heading': 'Section 1: The Practitioner Consensus',
+               'paragraphs': ['Every filing-side practitioner opens with the same baseline: no MC number, '
+                              'no brokering. FMCSA REGISTRATION dot com states flatly that “the very first '
+                              'thing that you should do is apply for broker authority via the FMCSA” '
+                              'through the URS, and that the MC number becomes your unique identifier as a '
+                              'freight broker [_6EAOmYcoCY @ 00:01:31] [HPAThSeqX3c @ 00:01:14]. The same '
+                              'channel frames authority as the line between a licensed operator and “just '
+                              'another person with a phone,” adding that many shippers only work with '
+                              "authorized brokers [XvoPUTkM1io @ 00:00:17]. FMCSA's own explainer defines "
+                              'the role tightly: a broker arranges transport and never takes possession of '
+                              'or responsibility for the cargo, and the agency splits authority into '
+                              'Property (except household goods) and Household Goods, while it does not '
+                              'regulate brokers of passenger transportation [qJ2zB-OEb8o @ 00:00:58]. Its '
+                              'worked example is Company X arranging a Vermont-to-Massachusetts load, '
+                              'which requires Broker of Property authority. A freight forwarder is a '
+                              'different animal: it assembles, consolidates and break-bulks shipments and '
+                              'takes responsibility for the freight. Operating without the right '
+                              'authority, the agency warns, risks significant fines. The bottom line '
+                              'across these sources is identical: get the authority, match it to what you '
+                              'actually do, and treat the docket number as your credential with shippers.',
+                              "The financial floor is the second point of agreement. FMCSA's explainer "
+                              'says brokers and forwarders “must have either a surety bond filed by an '
+                              'insurance company Or a trust fund agreement filed by a financial '
+                              'institution in the amount of $75,000” [qJ2zB-OEb8o @ 00:08:35]. A3E '
+                              'ECOSYSTEM lists the same $75,000 for brokers and freight forwarders and '
+                              'stresses that authority stays valid only while evidence is on file, warning '
+                              'that a short or illiquid trust fails and that “the assets must liquidate to '
+                              'cash within seven calendar days” [b64rVWfkAsc @ 00:02:46] [b64rVWfkAsc @ '
+                              '00:06:01]. The Broker Intellect adds the newest teeth: “Since January 16th, '
+                              '2026, if your security drops below 75,000, the FMCSA can suspend your '
+                              'authority,” with 7 business days to restore it [5TtQ4-VoZuI @ 00:03:57]. On '
+                              'the process agent, everyone points to the BOC-3: FMCSA requires it through '
+                              'a blanket company, The Broker Intellect says a blanket company handles it '
+                              'in about 10 minutes, and FMCSA REGISTRATION dot com calls the process agent '
+                              '“often overlooked,” with omission causing delays or rejection [XvoPUTkM1io '
+                              '@ 00:01:04]. The fee lands at $300 per authority type across the filing '
+                              'channels, and applying is not the same as being approved.',
+                              'On 49 CFR 371.3, carriers, cops and brokers agree on the core facts even '
+                              'while fighting over the outcome. CDL Shorty reads the record list straight '
+                              'off the rule: consignor name and address, carrier name, address and '
+                              'registration number, BOL or freight bill number, broker compensation and '
+                              "the payer's name, plus the line that “each party… has the right to review "
+                              'the record” [_uTvz6Ay4oQ @ 00:01:04]. thatDOTcop, a state DOT officer, says '
+                              'the rule is “not enforced heavily” and reports waivers and outright '
+                              'refusals to provide records [9gNEc3GjPKA @ 00:03:10]. Broker counsel in the '
+                              'Trucking Justice exchange effectively concedes the point, citing a '
+                              'confidentiality clause and saying it knows of no change in enforcement, '
+                              'which the carrier reads as brokers “banking on the lack of enforcement by '
+                              'the FMCSA” [GjctUTtklxE @ 00:01:40]. Matt Krause dates the current push to '
+                              'the May 2020 OOIDA and SBTC petition over waiver clauses [WsoJiATaDqk @ '
+                              '00:00:52]. The proposed overhaul everyone describes has the same four '
+                              'pieces: electronic records, itemized charges, claims and dates, release on '
+                              'request, and a 48-hour clock. As thatDOTcop puts it, “nothing has '
+                              'officially changed yet, and this is not a final rule.”'],
+               'table': {'caption': 'Where the practitioners line up on broker authority and the records '
+                                    'rule',
+                         'headers': ['Consensus Point',
+                                     'What Practitioners Say',
+                                     'Operator Implication',
+                                     'Expert Source'],
+                         'rows': [['MC number is mandatory before any brokering activity',
+                                   'You need an MC number before doing any broker services, applied for '
+                                   'through URS',
+                                   'Do not quote or book a single load until the MC is active',
+                                   'FMCSA REGISTRATION dot com ([_6EAOmYcoCY @ 00:00:00])'],
+                                  ['A broker never takes possession of or responsibility for cargo',
+                                   'Broker arranges transport; a forwarder assembles, consolidates, '
+                                   'break-bulks and takes responsibility for freight',
+                                   'File for Property broker authority unless you actually consolidate or '
+                                   'take responsibility for freight',
+                                   'FMCSA ([qJ2zB-OEb8o @ 00:00:58])'],
+                                  ['A $75,000 financial security floor applies to every broker',
+                                   'Surety bond filed by an insurance company or trust fund agreement '
+                                   'filed by a financial institution',
+                                   'Budget the bond premium or a liquid trust before you submit the '
+                                   'application',
+                                   'FMCSA ([qJ2zB-OEb8o @ 00:08:35])'],
+                                  ['A security shortfall now carries real suspension risk',
+                                   'Since January 16, 2026, security below $75,000 lets FMCSA suspend '
+                                   'authority',
+                                   'Restore any shortfall within 7 business days or expect the authority '
+                                   'to be suspended',
+                                   'The Broker Intellect ([5TtQ4-VoZuI @ 00:03:57])'],
+                                  ['The BOC-3 process agent filing is required and often missed',
+                                   'A process agent is needed in every operating state; omission causes '
+                                   'delays or rejection',
+                                   'Buy a blanket company BOC-3 filing on day one of the application',
+                                   'FMCSA REGISTRATION dot com ([XvoPUTkM1io @ 00:01:04])'],
+                                  ['The 371.3 records rule exists but enforcement is weak',
+                                   'Rule is not enforced heavily; brokers use waivers and refuse records '
+                                   'requests',
+                                   'Expect pushback and confidentiality clauses whenever a carrier '
+                                   'requests transaction records',
+                                   'thatDOTcop ([9gNEc3GjPKA @ 00:03:10])']]}},
+              {'heading': 'Section 2: Exact Street Mechanics, Tools & Numbers',
+               'paragraphs': ['The filing sequence the practitioners teach is concrete. The Broker '
+                              'Intellect walks a fictional new broker, Maya, through seven steps: spend '
+                              'time first at a brokerage or as an agent (“the cheapest mistake insurance '
+                              'there is”), form an LLC or corporation with an accountant, check the name, '
+                              'pull an EIN, and keep a separate bank account “not even once” mixed with '
+                              'personal funds [5TtQ4-VoZuI @ 00:00:37]. Registration now runs through '
+                              'MOTIS, which replaced the old sites in May 2026; sign in with login.gov on '
+                              'a long-lived email, and pay $300 per authority type [5TtQ4-VoZuI @ '
+                              '00:02:25]. Oscar at Truckers Authority adds the screen-level detail: save '
+                              'your credentials because an unsubmitted application is lost without them, '
+                              'pick both email and mail for contact, avoid stacking DBAs, and never use a '
+                              'PO box as the physical address [jyVHYDl8PgQ @ 00:04:52]. On the '
+                              'authority-type screen, answer “yes” for property broker, general freight, '
+                              'and “no” for transport, IEP and freight forwarder [jyVHYDl8PgQ @ 00:14:04]. '
+                              'Get the EIN right because it retrieves your PIN, and expect heavy '
+                              "solicitation in the first month. Oscar's tell for a botched filing: the fee "
+                              'is $300 per authority, and if you paid $0 you only got a DOT number '
+                              '[jyVHYDl8PgQ @ 00:27:37].',
+                              'Bond pricing is credit-driven. Oscar says the surety bond is credit-based, '
+                              'every owner signs, and it works like a fronted loan that is “owed back,” '
+                              'with premiums seen running “anywhere from like 900 dollars to 9 000” '
+                              '[jyVHYDl8PgQ @ 00:17:24]. The Broker Intellect confirms the BMC-84 premium '
+                              'is based on credit and offers the BMC-85 trust as the alternative '
+                              '[5TtQ4-VoZuI @ 00:03:38]. FMCSA REGISTRATION dot com notes that once you '
+                              'apply, you have six months to finish the requirements, with insurance and '
+                              'the bond filed on BMC-84 and some new brokers taking the Trust Fund '
+                              'Agreement route on BMC-85 [_6EAOmYcoCY @ 00:01:49]. After the money is '
+                              'posted, Oscar says the MC docket appears in SAFER under Licensing & '
+                              'Insurance after about 24 hours [jyVHYDl8PgQ @ 00:31:57]. UCR is a separate '
+                              'step outside MOTIS: $55 for 2027 if you run no trucks, opening October 1st '
+                              '[5TtQ4-VoZuI @ 00:05:00]. Before the first load, that same seven-step plan '
+                              'calls for attorney-reviewed shipper and carrier agreements, a TMS, a load '
+                              'board, rigorous carrier vetting, and contingent cargo plus general '
+                              "liability coverage. FMCSA's own explainer warns that applicants must verify "
+                              'their filings themselves, since delays can lead to dismissal and a lost fee '
+                              '[qJ2zB-OEb8o @ 00:10:09].',
+                              'The transparency fight runs on margin math, and the numbers are specific. '
+                              'Tim at Freight Master Resources cites DAT margins of 15.14% on flatbed, '
+                              '13.82% on reefer and 13.01% on van, with under-250-mile hauls at 15.2% and '
+                              "over-1,000-mile hauls at 11.7% [dFv317bclEU @ 00:02:50]. Tim's agent "
+                              'example: $1,000 from the shipper and $900 to the carrier is a 10% margin, '
+                              'and the agent keeps 50–70% of that $100; C.H. Robinson ran $386M on $3.1B, '
+                              'about 12.45%, versus about 14% the prior year [dFv317bclEU @ 00:09:48]. '
+                              'Freight 360 puts average margin near 14%, or 15.3% in a FreightWaves study, '
+                              'not 40%, and notes brokers sometimes eat 40% losses strategically '
+                              '[U9PKl6-ulL4 @ 00:24:56]. thatDOTcop frames the gap carriers see: a $4,000 '
+                              'shipper rate against $2,400 to the carrier leaves $1,600 that covers staff, '
+                              'insurance, technology and risk, and a second example shows $1,900 offered '
+                              'versus $3,700 paid by the shipper [9gNEc3GjPKA @ 00:02:15]. The proposed '
+                              'rule would force electronic, itemized records of payments, charges, '
+                              "shipment description, dates and claims within 48 hours. Tim's street "
+                              'negotiating line is blunt: “Brokers make as much… as you let them,” and Tim '
+                              'gives about $100 more when carriers push back.'],
+               'table': {'caption': 'Filing costs, vetting tools and margin benchmarks the practitioners '
+                                    'actually quote',
+                         'headers': ['Mechanic or Tool',
+                                     'Exact Number or Step',
+                                     'How Operators Use It',
+                                     'Expert Source'],
+                         'rows': [['Application fee charged per authority type',
+                                   '$300 per authority; paying $0 means you only received a DOT number',
+                                   'Check the payment receipt to confirm broker authority was actually '
+                                   'filed',
+                                   'Truckers Authority ([jyVHYDl8PgQ @ 00:27:37])'],
+                                  ['BMC-84 surety bond premium pricing',
+                                   'Credit-based, every owner signs, premiums seen from $900 to $9,000',
+                                   "Clean up every owner's credit before shopping bond quotes",
+                                   'Truckers Authority ([jyVHYDl8PgQ @ 00:17:24])'],
+                                  ['BMC-85 trust fund liquidity requirement',
+                                   'Trust assets must liquidate to cash within seven calendar days',
+                                   'Hold only liquid assets in the trust or it fails outright',
+                                   'A3E ECOSYSTEM ([b64rVWfkAsc @ 00:06:01])'],
+                                  ['UCR registration for brokers without trucks',
+                                   '$55 for 2027, separate from MOTIS, filing opens October 1st',
+                                   'Calendar the UCR filing separately from the authority application',
+                                   'The Broker Intellect ([5TtQ4-VoZuI @ 00:05:00])'],
+                                  ['Free Load Connect plus eCapital Chrome extension',
+                                   'Shows authority, cargo insurance, bond, credit limit, 60 and 90 day '
+                                   'days-to-pay, risk level, credit score',
+                                   'Hover over a DAT load, click the globe, open the broker report',
+                                   'ET Transport ([UF-qDT9q1Bs @ 00:04:57])'],
+                                  ['DAT broker margin benchmarks by equipment type',
+                                   'Flatbed 15.14%, reefer 13.82%, van 13.01% per DAT data',
+                                   'Benchmark your own spread against the market averages before quoting',
+                                   'Freight Master Resources ([dFv317bclEU @ 00:02:50])'],
+                                  ['Double-brokering red flags on posted loads',
+                                   'A $4,000 post on a $2,700 lane, no setup packet, sloppy rate '
+                                   'confirmation',
+                                   'Walk away from any post that matches this exact pattern',
+                                   'Freight Master Resources ([dFv317bclEU @ 00:15:20])']]},
+               'callout': {'kind': 'INSIDER PRO-TIPS',
+                           'title': 'Filing and vetting moves the practitioners swear by',
+                           'body': 'Small details in the application and the vetting stack decide whether '
+                                   'the authority sticks and whether the first loads get paid.',
+                           'items': ['Disclose any prior DOT within 3 years because FMCSA links you by '
+                                     'email, phone and tax ID; to keep a trucking company and brokerage '
+                                     'separate, use a different address, phone, email and owner [Truckers '
+                                     'Authority — jyVHYDl8PgQ @ 00:17:57]',
+                                     'Sign into MOTIS with login.gov on a long-lived email, and remember '
+                                     'applying is not the same as being approved [The Broker Intellect — '
+                                     '5TtQ4-VoZuI @ 00:02:25]',
+                                     'Install the free Load Connect plus eCapital extension: add it, '
+                                     'connect Google or Outlook email, open DAT, hover over a load, click '
+                                     'the globe, then open the broker report [ET Transport — UF-qDT9q1Bs @ '
+                                     '00:06:07]',
+                                     'Carriers can also hold broker authority, which gives them “a second '
+                                     'source of consistent revenue” [FMCSA REGISTRATION dot com — '
+                                     '_6EAOmYcoCY @ 00:00:35]']},
+               'sop_steps': [{'step': 1,
+                              'title': 'Learn the trade and build the entity',
+                              'action': 'Work at a brokerage or as an agent first, then form an LLC or '
+                                        'corporation with an EIN and a separate bank account.',
+                              'detail': 'Maya spent one year as an agent, “the cheapest mistake insurance '
+                                        'there is”; form the entity with an accountant, check the name, '
+                                        'get an EIN and never mix personal funds “not even once” [The '
+                                        'Broker Intellect — 5TtQ4-VoZuI @ 00:00:37]'},
+                             {'step': 2,
+                              'title': 'File the authority application correctly',
+                              'action': 'Register, answer the authority-type screen precisely and pay $300 '
+                                        'per authority.',
+                              'detail': 'Answer “yes” for property broker, general freight and “no” for '
+                                        'transport, IEP and freight forwarder; save credentials, use a '
+                                        'physical address (not a PO box) and get the EIN right to retrieve '
+                                        'your PIN [Truckers Authority — jyVHYDl8PgQ @ 00:14:04]'},
+                             {'step': 3,
+                              'title': 'Post $75,000 security and the BOC-3',
+                              'action': 'File a BMC-84 surety bond or BMC-85 trust, then have a blanket '
+                                        'company file the BOC-3.',
+                              'detail': 'The BMC-84 premium is credit-based and the BMC-85 trust is the '
+                                        'alternative; a blanket company handles the BOC-3 in about 10 '
+                                        'minutes [The Broker Intellect — 5TtQ4-VoZuI @ 00:03:38]'},
+                             {'step': 4,
+                              'title': 'Verify the docket and finish UCR',
+                              'action': 'Confirm the MC shows in SAFER, register for UCR separately and '
+                                        'stand up the operating stack.',
+                              'detail': 'The MC/docket number appears in SAFER under Licensing & Insurance '
+                                        'after about 24 hours; UCR runs $55 for 2027 with no trucks and is '
+                                        'separate from MOTIS [Truckers Authority — jyVHYDl8PgQ @ '
+                                        '00:31:57]'}]},
+              {'heading': 'Section 3: Where Practitioners Disagree & Alternative Playbooks',
+               'paragraphs': ['CDL Shorty treats 49 CFR 371.3 as leverage carriers already hold. Brokers '
+                              "must record the consignor, the carrier's name, address and registration "
+                              'number, the BOL or freight bill number, broker compensation and the name of '
+                              'the payer, and each party has the right to review that record; the '
+                              "channel's position is that brokers cannot say no without facing a lawsuit, "
+                              'so the play is carrier unity [_uTvz6Ay4oQ @ 00:02:10]. Nate Cross of '
+                              'Freight 360 argues from the broker chair that the rule dates from over 40 '
+                              'years ago, when carriers paid brokers a commission, and that today the '
+                              'broker margin is simply the spread between the shipper rate and the carrier '
+                              'rate [_7T74xDXmPk @ 00:01:54]. The Episode 272 panel pushes harder: before '
+                              '1980 rates were federally published, carriers once paid roughly 10% '
+                              'commission, and the two-transaction model made the rule so outdated that '
+                              'Freight 360 wants it totally stripped [U9PKl6-ulL4 @ 00:15:15]. Cross '
+                              'frames rate discovery like buying a car: dealers never disclose their cost, '
+                              'carriers already have rating tools the way buyers have Kelley Blue Book, '
+                              "and that's capitalism [_7T74xDXmPk @ 00:02:26]. The fork for an operator is "
+                              'stark: one camp tells drivers at the truck stop to start asking, the other '
+                              "says relationships beat opening someone's books.",
+                              'The second fault line is the size of the spread itself. CDL Shorty draws a '
+                              'hard line: brokers should only be taking 10%, and anything in the 15 to 60% '
+                              'band is shady [_uTvz6Ay4oQ @ 00:05:11]. Tim at Freight Master Resources, '
+                              'who brokers loads, reads DAT margin data that lands between those poles: '
+                              'flatbed 15.14%, reefer 13.82%, van 13.01%, with hauls under 250 miles at '
+                              '15.2% and runs over 1,000 miles at 11.7% [dFv317bclEU @ 00:02:50]. Freight '
+                              '360 pegs the average at about 14%, or 15.3% in a FreightWaves study, '
+                              'insists it is nowhere near 40%, and points out that brokers sometimes take '
+                              '40% losses strategically, which a margin snapshot on one load never shows '
+                              '[U9PKl6-ulL4 @ 00:24:56]. thatDOTcop puts numbers on the outrage carriers '
+                              'feel, describing $1,900 offered to the truck on one load against $3,700 '
+                              'paid by the shipper, while conceding that margins swing by lane, customer '
+                              'and urgency and that brokers carry staff, insurance, technology and risk '
+                              'costs out of that gap [9gNEc3GjPKA @ 00:10:17]. For an operator the '
+                              'practical read is that both sides are quoting real figures; the '
+                              'disagreement is whether a single fat load or a blended annual average is '
+                              'the honest unit of measure.',
+                              'The alternative playbooks split on what a carrier should do instead of '
+                              'chasing records. Matt Krause argues transparency will not get small '
+                              'carriers to shippers, because shippers want a single point of contact and '
+                              'brokers are the ones bundling inconsistent lanes [WsoJiATaDqk @ 00:04:52]. '
+                              'Ronin of ET Transport, who runs more than 100 power units, is indifferent '
+                              'if a broker bills $1,400 on a $1,000 load, notes that any broker marking up '
+                              '30 to 40% invites carriers to go direct to the shipper, and warns that '
+                              'forced disclosure invites back-solicitation, where a rival simply says '
+                              'offer him $200 less to win the shipper [UF-qDT9q1Bs @ 00:03:26]. Tim of '
+                              'Freight Master Resources teaches negotiation as the real lever: brokers '
+                              'make as much as you let them, Tim gives about $100 more when a carrier '
+                              'negotiates, and one driver Tim cites gets $1 to $1.50 above DAT '
+                              '[dFv317bclEU @ 00:26:17]. Nate Cross of Freight 360 takes a middle road, '
+                              "arguing relationships matter more than opening someone's books and that the "
+                              'rule needs a refresh built on modern technology instead of paper-era '
+                              'mechanics [_7T74xDXmPk @ 00:04:16]. Every voice here steers carriers away '
+                              'from the records request as the primary pricing lever, and toward '
+                              'negotiation, direct shipper pursuit or relationship capital instead.'],
+               'table': {'caption': 'Transparency and authority fault lines: aggressive carrier play '
+                                    'versus broker-side or alternative play',
+                         'headers': ['Fault Line',
+                                     'Pro-Disclosure / Aggressive Play',
+                                     'Broker-Side / Alternative Play',
+                                     'Expert Source'],
+                         'rows': [['Does the 371.3 records rule still bind brokers today?',
+                                   'Each party has the right to review the record; brokers cannot say no '
+                                   'without facing a lawsuit.',
+                                   'Rule dates from over 40 years ago when carriers paid brokers '
+                                   'commission; strip it.',
+                                   'CDL Shorty ([_uTvz6Ay4oQ @ 00:02:10]) vs Freight 360 ([_7T74xDXmPk @ '
+                                   '00:01:54])'],
+                                  ['Are waiver clauses in broker-carrier agreements actually valid?',
+                                   'Carrier says FMCSA acknowledging waivers is not a statement of their '
+                                   'legality at all.',
+                                   'Broker counsel cites the confidentiality clause and knows of no change '
+                                   'in enforcement.',
+                                   'Trucking Justice - Pontificator ([GjctUTtklxE @ 00:00:51])'],
+                                  ['What counts as a fair broker margin on a load?',
+                                   'Brokers should only take 10%; anything from 15 to 60% is shady.',
+                                   'Average sits near 14%, or 15.3% in a FreightWaves study, not 40%.',
+                                   'CDL Shorty ([_uTvz6Ay4oQ @ 00:05:11]) vs Freight 360 ([U9PKl6-ulL4 @ '
+                                   '00:24:56])'],
+                                  ['Does the DAT margin data tell the whole story?',
+                                   'DAT sample is 500,000 shipments from 521 brokers, said to cover only '
+                                   'about 20%.',
+                                   'DAT shows flatbed 15.14%, reefer 13.82% and van 13.01% average '
+                                   'margins.',
+                                   'Freight Master Resources ([dFv317bclEU @ 00:21:26])'],
+                                  ['Will transparency open shipper doors for small carriers?',
+                                   'OOIDA and SBTC petitioned FMCSA in May 2020 over broker waiver '
+                                   'clauses.',
+                                   'Shippers want a single point of contact and brokers bundle '
+                                   'inconsistent lanes together.',
+                                   'Matt Krause ([WsoJiATaDqk @ 00:04:52])'],
+                                  ['Records request or straight rate negotiation as carrier leverage?',
+                                   'Request itemized electronic records within 48 hours under the proposed '
+                                   'rule changes.',
+                                   'Brokers make as much as you let them; negotiating earns about $100 '
+                                   'more.',
+                                   'Freight Master Resources ([dFv317bclEU @ 00:26:17])'],
+                                  ['Should the FMCSA spend its effort on broker transparency?',
+                                   'Brokers bank on non-enforcement, and opacity can conceal double '
+                                   'brokering on loads.',
+                                   'FMCSA should focus on safety and fraud; under 10% of carriers have '
+                                   'ratings.',
+                                   'Trucking Justice - Pontificator ([GjctUTtklxE @ 00:01:40]) vs Freight '
+                                   '360 ([U9PKl6-ulL4 @ 00:19:12])']]}},
+              {'heading': 'Section 4: Firsthand Failure Modes, Traps & Economics Checks',
+               'paragraphs': ['The registration failures practitioners report are clerical, and they are '
+                              'expensive. Oscar of Truckers Authority warns that an unsubmitted '
+                              'application is simply lost if you lose the saved credentials, that a PO box '
+                              'works for mailing but never for the physical address, and that the first '
+                              'month brings heavy solicitation [jyVHYDl8PgQ @ 00:04:52]. The bigger trap '
+                              'is history: any prior DOT within 3 years must be disclosed because the '
+                              'FMCSA links applicants by email, phone and tax ID, and anyone splitting a '
+                              'trucking company from a brokerage needs a different address, phone, email '
+                              'and owner; false statements carry fines up to $250,000 and 5 years in jail '
+                              "[jyVHYDl8PgQ @ 00:17:57]. The FMCSA's own official video puts the burden "
+                              'squarely on the applicant: verify your own filings, because delays can lead '
+                              'to dismissal and a lost fee [qJ2zB-OEb8o @ 00:10:09]. FMCSA REGISTRATION '
+                              'dot com flags an often overlooked omission, the process agent required in '
+                              'every operating state, which causes delays or outright rejection when '
+                              'skipped, and adds that errors anywhere in the paperwork cause delays or '
+                              'denial [XvoPUTkM1io @ 00:01:04]. Every one of these is a self-inflicted '
+                              'wound that can cost the application fee entirely before a single load '
+                              'moves.',
+                              'Security is where authority quietly dies after approval. The Broker '
+                              'Intellect reports that since January 16th, 2026, if security drops below '
+                              '$75,000 the FMCSA can suspend authority, with 7 business days to restore it '
+                              'under the new rule [5TtQ4-VoZuI @ 00:03:57]. A3E ECOSYSTEM adds the BMC-85 '
+                              'failure mode: a short or illiquid trust fails, the assets must liquidate to '
+                              'cash within seven calendar days, and missing evidence on file exposes the '
+                              'registration, since authority stays valid only while that evidence is filed '
+                              '[b64rVWfkAsc @ 00:06:01]. The two clocks are distinct, business days to '
+                              'restore the balance and calendar days for trust assets to turn into cash, '
+                              'and both run against the operator. Oscar of Truckers Authority explains why '
+                              'the bond is not free money: it is credit-based, every owner signs, it works '
+                              'like a fronted loan that is owed back, and premiums run anywhere from $900 '
+                              'to $9,000 [jyVHYDl8PgQ @ 00:16:54]. Matt Krause traces the timeline that '
+                              'created this exposure, with the broker financial-responsibility provisions '
+                              'pushed from January 2025 to January 2026 to line up with a new registration '
+                              'system [WsoJiATaDqk @ 00:04:11]. The economics check is simple: weak credit '
+                              'inflates the premium, and a thin trust invites suspension.',
+                              'The transparency fight carries its own firsthand costs for carriers who '
+                              'push. Vitaly of AFT Dispatch reports that carriers who ask for records get '
+                              'hung up on, told the load is covered, or put in a black book [a4BwE6nAs9k @ '
+                              '00:03:07]. Trucking Justice - Pontificator shows how broker counsel '
+                              'escalates even a narrow request for proof of payment: invoke the '
+                              'confidentiality clause in the broker-carrier agreement, state no known '
+                              'change in enforcement, then allege the request is meant to tortiously '
+                              'interfere with the customer relationship [GjctUTtklxE @ 00:01:07]. On the '
+                              'broker side, Tim of Freight Master Resources lost $300 on a single load '
+                              'where the shipper paid $1,700 and the carrier got $2,000, and argues the '
+                              'proposed 48-hour rule does not help the current load while it destroys a '
+                              'relationship [dFv317bclEU @ 00:19:45]. Freight 360 runs the enforcement '
+                              'math that explains broker confidence: of 3,211 FMCSA enforcement cases, 386 '
+                              'involved carriers and just 5 involved brokers, and the proposal targets 32 '
+                              'complaints against roughly 80,000 fraud complaints [U9PKl6-ulL4 @ '
+                              '00:49:52]. The economics check cuts both ways: a carrier risks the '
+                              'relationship by asking, a broker points to losing loads like that $300 hit, '
+                              'and enforcement against brokers stays thin.'],
+               'table': {'caption': 'Firsthand traps in broker registration, security and the records '
+                                    'fight',
+                         'headers': ['Trap',
+                                     'What Went Wrong Firsthand',
+                                     'Economics / Fix Reported',
+                                     'Expert Source'],
+                         'rows': [['Lost login credentials during the online application',
+                                   'An unsubmitted application is lost entirely if you lose the saved '
+                                   'credentials.',
+                                   'Save credentials at the start and choose both email and mail contact.',
+                                   'Truckers Authority ([jyVHYDl8PgQ @ 00:04:52])'],
+                                  ['Broker security dips below the $75,000 floor',
+                                   'Since January 16th, 2026 the FMCSA can suspend authority when security '
+                                   'drops.',
+                                   'Restore the security within 7 business days under the new rule.',
+                                   'The Broker Intellect ([5TtQ4-VoZuI @ 00:03:57])'],
+                                  ['Short or illiquid BMC-85 trust fund agreement',
+                                   'A short or illiquid trust fails, and missing evidence exposes the '
+                                   'registration.',
+                                   'Trust assets must liquidate to cash within seven calendar days.',
+                                   'A3E ECOSYSTEM ([b64rVWfkAsc @ 00:06:22])'],
+                                  ['Undisclosed prior DOT number within three years',
+                                   'FMCSA links applicants to prior DOT numbers by email, phone and tax '
+                                   'ID.',
+                                   'Disclose it; separate brokerage with different address, phone, email '
+                                   'and owner.',
+                                   'Truckers Authority ([jyVHYDl8PgQ @ 00:17:57])'],
+                                  ['Filings never verified by the applicant after submission',
+                                   'Delays in completing filings can lead to dismissal and a lost fee.',
+                                   'Applicants must verify their own filings rather than assume they '
+                                   'posted.',
+                                   'FMCSA ([qJ2zB-OEb8o @ 00:10:09])'],
+                                  ['Negative-margin load on contract freight pricing',
+                                   'Tim lost $300 on a load: shipper paid $1,700, carrier got $2,000.',
+                                   'Contract margins run average, above average or negative; broker '
+                                   'absorbs via cash flow.',
+                                   'Freight Master Resources ([dFv317bclEU @ 00:19:45]) and Freight 360 '
+                                   '([_7T74xDXmPk @ 00:03:43])'],
+                                  ['Carrier requesting records gets frozen out by brokers',
+                                   'Carriers who ask report hang-ups, covered loads and a black book '
+                                   'listing.',
+                                   'Request only proof of payment, meaning amount, date and source, to '
+                                   'narrow it.',
+                                   'AFT Dispatch ([a4BwE6nAs9k @ 00:03:07]) and Trucking Justice - '
+                                   'Pontificator ([GjctUTtklxE @ 00:00:16])']]},
+               'callout': {'kind': 'OPERATOR GATE',
+                           'title': 'Clear These Four Before the First Load Moves',
+                           'body': 'Four pitfalls practitioners hit firsthand, each one able to stall, '
+                                   'void or expose a brokerage before it earns a dollar.',
+                           'items': ['Confirm a process agent covers every operating state before filing; '
+                                     'this is often overlooked and omitting it causes delays or rejection '
+                                     '[FMCSA REGISTRATION dot com — XvoPUTkM1io @ 00:01:04].',
+                                     'Confirm you paid $300 per authority, because paying $0 means you '
+                                     'only got a DOT number, then check SAFER under Licensing & Insurance '
+                                     'for the MC number about 24 hours later [Truckers Authority — '
+                                     'jyVHYDl8PgQ @ 00:27:37].',
+                                     'Track the bond or trust against the $75,000 floor, since the FMCSA '
+                                     'can suspend authority when security drops below it [The Broker '
+                                     'Intellect — 5TtQ4-VoZuI @ 00:03:57].',
+                                     'Screen for double-brokering red flags: a $4,000 post on a $2,700 '
+                                     'lane, no setup packet and a sloppy rate confirmation [Freight Master '
+                                     'Resources — dFv317bclEU @ 00:15:20].']}}],
+ 'pull_quote': 'They also backwardly admit that they are banking on the lack of enforcement by the FMCSA. '
+               'Attributed to Trucking Justice - Pontificator (GjctUTtklxE @ 00:01:40).',
+ 'diagram_id': 'diag-04',
+ 'action_checklist': ['Work at a brokerage or as an agent before launching, the way Maya spent one year as '
+                      'an agent, because it is the cheapest mistake insurance there is [The Broker '
+                      'Intellect — 5TtQ4-VoZuI @ 00:00:37].',
+                      'Form an LLC or corporation with an accountant, check the name, get an EIN and open '
+                      'a separate bank account never mixed with personal funds [The Broker Intellect — '
+                      '5TtQ4-VoZuI @ 00:01:29].',
+                      'On the application answer yes for property broker, general freight, and no for '
+                      'transport, IEP and freight forwarder [Truckers Authority — jyVHYDl8PgQ @ 00:14:04].',
+                      'Post the $75,000 security as a BMC-84 surety bond or BMC-85 trust, budgeting $900 '
+                      'to $9,000 for a credit-based bond that every owner signs [Truckers Authority — '
+                      'jyVHYDl8PgQ @ 00:16:54].',
+                      'File the BOC-3 through a blanket company in about 10 minutes and register UCR '
+                      'separately, $55 for 2027 with no trucks, opening October 1st [The Broker Intellect '
+                      '— 5TtQ4-VoZuI @ 00:05:00].',
+                      'Install the free Load Connect plus eCapital Chrome extension, connect Google or '
+                      'Outlook email, open DAT, hover a load, click the globe and pull the broker report '
+                      '[ET Transport — UF-qDT9q1Bs @ 00:06:07].'],
+ 'statutory_citations': [{'title': 'Trucking Justice - Pontificator — Broker Attorney Claims FMCSA Doesn’t '
+                                   'Enforce 49 CFR §371.3 [00:01:40]',
+                          'url': 'https://www.youtube.com/watch?v=GjctUTtklxE&t=100s',
+                          'relevance': 'Primary practitioner testimony on broker counsel refusing a '
+                                       'records request and carriers calling out reliance on '
+                                       'non-enforcement.'},
+                         {'title': 'thatDOTcop — FMCSA Is Finally Taking On Broker Transparency [00:06:41]',
+                          'url': 'https://www.youtube.com/watch?v=9gNEc3GjPKA&t=401s',
+                          'relevance': 'Primary practitioner testimony on the proposal for electronic '
+                                       'transaction records delivered within 48 hours.'},
+                         {'title': 'The Broker Intellect — How to Become a Freight Broker in 2027 (7 '
+                                   'Steps, New FMCSA System) [00:03:57]',
+                          'url': 'https://www.youtube.com/watch?v=5TtQ4-VoZuI&t=237s',
+                          'relevance': 'Primary practitioner testimony on suspension risk when broker '
+                                       'security drops below $75,000.'},
+                         {'title': 'FMCSA — Defining FMCSA Operating Authority Types for Freight '
+                                   'Forwarders and Brokers (FMCSA OFFICIAL VIDEO) [00:08:35]',
+                          'url': 'https://www.youtube.com/watch?v=qJ2zB-OEb8o&t=515s',
+                          'relevance': 'Primary practitioner testimony on the $75,000 surety bond or trust '
+                                       'fund requirement for brokers.'}],
+ 'source_citations': [{'source_type': 'video_pro_tip',
+                       'video_id': 'HPAThSeqX3c',
+                       'title': 'Apply for Freight Broker Authority | Easy Steps To Get Your Freight '
+                                'Broker License',
+                       'channel': 'FMCSA REGISTRATION dot com',
+                       'author': 'FMCSA REGISTRATION dot com',
+                       'text': 'The current fee for obtaining freight broker authority is three hundred '
+                               'dollars.',
+                       'tip': 'The current fee for obtaining freight broker authority is three hundred '
+                              'dollars.',
+                       'timestamp': 57,
+                       'timestamp_seconds': 57,
+                       'timestamp_label': '[00:00:57]',
+                       'url': 'https://www.youtube.com/watch?v=HPAThSeqX3c&t=57s',
+                       'markdown': '[00:00:57](https://www.youtube.com/watch?v=HPAThSeqX3c&t=57s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q2.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': '_6EAOmYcoCY',
+                       'title': 'Broker Authority | Learn about Freight Broker authority Success',
+                       'channel': 'FMCSA REGISTRATION dot com',
+                       'author': 'FMCSA REGISTRATION dot com',
+                       'text': 'The very first thing that you should do is apply for broker authority via '
+                               'the FMCSA.',
+                       'tip': 'The very first thing that you should do is apply for broker authority via '
+                              'the FMCSA.',
+                       'timestamp': 91,
+                       'timestamp_seconds': 91,
+                       'timestamp_label': '[00:01:31]',
+                       'url': 'https://www.youtube.com/watch?v=_6EAOmYcoCY&t=91s',
+                       'markdown': '[00:01:31](https://www.youtube.com/watch?v=_6EAOmYcoCY&t=91s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q2.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': '_uTvz6Ay4oQ',
+                       'title': '49 CFR 371.3 this is a law that all freight brokers are scared of. Let’s '
+                                'educate all truckers',
+                       'channel': 'CDL Shorty',
+                       'author': 'CDL Shorty',
+                       'text': 'Each party has the right to review the record.',
+                       'tip': 'Each party has the right to review the record.',
+                       'timestamp': 107,
+                       'timestamp_seconds': 107,
+                       'timestamp_label': '[00:01:47]',
+                       'url': 'https://www.youtube.com/watch?v=_uTvz6Ay4oQ&t=107s',
+                       'markdown': '[00:01:47](https://www.youtube.com/watch?v=_uTvz6Ay4oQ&t=107s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q2.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'GjctUTtklxE',
+                       'title': 'Broker Attorney Claims FMCSA Doesn’t Enforce 49 CFR §371.3',
+                       'channel': 'Trucking Justice - Pontificator',
+                       'author': 'Trucking Justice - Pontificator',
+                       'text': 'They also backwardly admit that they are banking on the lack of '
+                               'enforcement by the FMCSA.',
+                       'tip': 'They also backwardly admit that they are banking on the lack of enforcement '
+                              'by the FMCSA.',
+                       'timestamp': 100,
+                       'timestamp_seconds': 100,
+                       'timestamp_label': '[00:01:40]',
+                       'url': 'https://www.youtube.com/watch?v=GjctUTtklxE&t=100s',
+                       'markdown': '[00:01:40](https://www.youtube.com/watch?v=GjctUTtklxE&t=100s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q2.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': '_7T74xDXmPk',
+                       'title': "Let's Talk About CFR 371.3c and Why It's Time for a Refresh",
+                       'channel': 'Freight 360',
+                       'author': 'Freight 360',
+                       'text': "Relationships matter more than opening someone's books, and the rule "
+                               'should be updated to use modern technology.',
+                       'tip': "Relationships matter more than opening someone's books, and the rule should "
+                              'be updated to use modern technology.',
+                       'timestamp': 256,
+                       'timestamp_seconds': 256,
+                       'timestamp_label': '[00:04:16]',
+                       'url': 'https://www.youtube.com/watch?v=_7T74xDXmPk&t=256s',
+                       'markdown': '[00:04:16](https://www.youtube.com/watch?v=_7T74xDXmPk&t=256s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q2.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'a4BwE6nAs9k',
+                       'title': 'Broker Transparency - Opening up Broker Transaction Records to American '
+                                'Trucking Companies',
+                       'channel': 'AFT Dispatch',
+                       'author': 'AFT Dispatch',
+                       'text': 'Carriers who ask for records report being hung up on, told the load is '
+                               'covered, or put in a black book.',
+                       'tip': 'Carriers who ask for records report being hung up on, told the load is '
+                              'covered, or put in a black book.',
+                       'timestamp': 187,
+                       'timestamp_seconds': 187,
+                       'timestamp_label': '[00:03:07]',
+                       'url': 'https://www.youtube.com/watch?v=a4BwE6nAs9k&t=187s',
+                       'markdown': '[00:03:07](https://www.youtube.com/watch?v=a4BwE6nAs9k&t=187s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q2.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': '9gNEc3GjPKA',
+                       'title': 'FMCSA Is Finally Taking On Broker Transparency',
+                       'channel': 'thatDOTcop',
+                       'author': 'thatDOTcop',
+                       'text': 'So, nothing has officially changed yet, and this is not a final rule.',
+                       'tip': 'So, nothing has officially changed yet, and this is not a final rule.',
+                       'timestamp': 307,
+                       'timestamp_seconds': 307,
+                       'timestamp_label': '[00:05:07]',
+                       'url': 'https://www.youtube.com/watch?v=9gNEc3GjPKA&t=307s',
+                       'markdown': '[00:05:07](https://www.youtube.com/watch?v=9gNEc3GjPKA&t=307s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q2.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': '9gNEc3GjPKA',
+                       'title': 'FMCSA Is Finally Taking On Broker Transparency',
+                       'channel': 'thatDOTcop',
+                       'author': 'thatDOTcop',
+                       'text': 'The proposal suggested that brokers provide requested transaction records '
+                               'within 48 hours.',
+                       'tip': 'The proposal suggested that brokers provide requested transaction records '
+                              'within 48 hours.',
+                       'timestamp': 401,
+                       'timestamp_seconds': 401,
+                       'timestamp_label': '[00:06:41]',
+                       'url': 'https://www.youtube.com/watch?v=9gNEc3GjPKA&t=401s',
+                       'markdown': '[00:06:41](https://www.youtube.com/watch?v=9gNEc3GjPKA&t=401s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q2.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'b64rVWfkAsc',
+                       'title': '49 CFR 371: Broker Authority Insurance Minimums',
+                       'channel': 'A3E ECOSYSTEM',
+                       'author': 'A3E ECOSYSTEM',
+                       'text': 'The assets must liquidate to cash within seven calendar days.',
+                       'tip': 'The assets must liquidate to cash within seven calendar days.',
+                       'timestamp': 361,
+                       'timestamp_seconds': 361,
+                       'timestamp_label': '[00:06:01]',
+                       'url': 'https://www.youtube.com/watch?v=b64rVWfkAsc&t=361s',
+                       'markdown': '[00:06:01](https://www.youtube.com/watch?v=b64rVWfkAsc&t=361s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q2.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'dFv317bclEU',
+                       'title': 'Freight Broker Transparency   FMCSA Proposes New Rules',
+                       'channel': 'Freight Master Resources',
+                       'author': 'Freight Master Resources',
+                       'text': 'Brokers make as much as you let them.',
+                       'tip': 'Brokers make as much as you let them.',
+                       'timestamp': 1577,
+                       'timestamp_seconds': 1577,
+                       'timestamp_label': '[00:26:17]',
+                       'url': 'https://www.youtube.com/watch?v=dFv317bclEU&t=1577s',
+                       'markdown': '[00:26:17](https://www.youtube.com/watch?v=dFv317bclEU&t=1577s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q2.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'WsoJiATaDqk',
+                       'title': 'FMCSA vs. Broker Transparency: Are Carriers Being Left in the Cold?',
+                       'channel': 'Matt Krause',
+                       'author': 'Matt Krause',
+                       'text': 'Transparency will not get small carriers to shippers, who want a single '
+                               'point of contact.',
+                       'tip': 'Transparency will not get small carriers to shippers, who want a single '
+                              'point of contact.',
+                       'timestamp': 292,
+                       'timestamp_seconds': 292,
+                       'timestamp_label': '[00:04:52]',
+                       'url': 'https://www.youtube.com/watch?v=WsoJiATaDqk&t=292s',
+                       'markdown': '[00:04:52](https://www.youtube.com/watch?v=WsoJiATaDqk&t=292s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q2.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'U9PKl6-ulL4',
+                       'title': 'The Truth Behind Broker Transparency | Episode 272',
+                       'channel': 'Freight 360',
+                       'author': 'Freight 360',
+                       'text': 'Largest brokerages, if you take the top 20 and add them all together, '
+                               "they're still too small to influence the market.",
+                       'tip': 'Largest brokerages, if you take the top 20 and add them all together, '
+                              "they're still too small to influence the market.",
+                       'timestamp': 1610,
+                       'timestamp_seconds': 1610,
+                       'timestamp_label': '[00:26:50]',
+                       'url': 'https://www.youtube.com/watch?v=U9PKl6-ulL4&t=1610s',
+                       'markdown': '[00:26:50](https://www.youtube.com/watch?v=U9PKl6-ulL4&t=1610s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q2.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'UF-qDT9q1Bs',
+                       'title': 'Is FREIGHT BROKER TRANSPARENCY a Waste of Time?',
+                       'channel': 'ET Transport',
+                       'author': 'ET Transport',
+                       'text': "Margins are not as much as people think they are, yes they're 8%, 10%, "
+                               '15%.',
+                       'tip': "Margins are not as much as people think they are, yes they're 8%, 10%, 15%.",
+                       'timestamp': 144,
+                       'timestamp_seconds': 144,
+                       'timestamp_label': '[00:02:24]',
+                       'url': 'https://www.youtube.com/watch?v=UF-qDT9q1Bs&t=144s',
+                       'markdown': '[00:02:24](https://www.youtube.com/watch?v=UF-qDT9q1Bs&t=144s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q2.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'qJ2zB-OEb8o',
+                       'title': 'Defining FMCSA Operating Authority Types for Freight Forwarders and '
+                                'Brokers (FMCSA OFFICIAL VIDEO)',
+                       'channel': 'FMCSA',
+                       'author': 'FMCSA',
+                       'text': 'Brokers must have either a surety bond filed by an insurance company or a '
+                               'trust fund agreement filed by a financial institution in the amount of '
+                               '$75,000.',
+                       'tip': 'Brokers must have either a surety bond filed by an insurance company or a '
+                              'trust fund agreement filed by a financial institution in the amount of '
+                              '$75,000.',
+                       'timestamp': 515,
+                       'timestamp_seconds': 515,
+                       'timestamp_label': '[00:08:35]',
+                       'url': 'https://www.youtube.com/watch?v=qJ2zB-OEb8o&t=515s',
+                       'markdown': '[00:08:35](https://www.youtube.com/watch?v=qJ2zB-OEb8o&t=515s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q2.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': '5TtQ4-VoZuI',
+                       'title': 'How to Become a Freight Broker in 2027 (7 Steps, New FMCSA System)',
+                       'channel': 'The Broker Intellect',
+                       'author': 'The Broker Intellect',
+                       'text': 'Since January 16th, 2026, if your security drops below 75,000, the FMCSA '
+                               'can suspend your authority.',
+                       'tip': 'Since January 16th, 2026, if your security drops below 75,000, the FMCSA '
+                              'can suspend your authority.',
+                       'timestamp': 237,
+                       'timestamp_seconds': 237,
+                       'timestamp_label': '[00:03:57]',
+                       'url': 'https://www.youtube.com/watch?v=5TtQ4-VoZuI&t=237s',
+                       'markdown': '[00:03:57](https://www.youtube.com/watch?v=5TtQ4-VoZuI&t=237s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q2.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'XvoPUTkM1io',
+                       'title': 'Broker Authority Explained: Your Legal Ticket to Freight Profits!',
+                       'channel': 'FMCSA REGISTRATION dot com',
+                       'author': 'FMCSA REGISTRATION dot com',
+                       'text': 'Think of it as your official ticket to operate legally in the freight '
+                               'world.',
+                       'tip': 'Think of it as your official ticket to operate legally in the freight '
+                              'world.',
+                       'timestamp': 17,
+                       'timestamp_seconds': 17,
+                       'timestamp_label': '[00:00:17]',
+                       'url': 'https://www.youtube.com/watch?v=XvoPUTkM1io&t=17s',
+                       'markdown': '[00:00:17](https://www.youtube.com/watch?v=XvoPUTkM1io&t=17s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q2.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'jyVHYDl8PgQ',
+                       'title': 'How To Get Your Freight Broker Authority: Freight Broker MC Application '
+                                'Step-By-Step',
+                       'channel': 'Truckers Authority',
+                       'author': 'Truckers Authority',
+                       'text': "I've seen them anywhere from like 900 dollars to 9,000.",
+                       'tip': "I've seen them anywhere from like 900 dollars to 9,000.",
+                       'timestamp': 1044,
+                       'timestamp_seconds': 1044,
+                       'timestamp_label': '[00:17:24]',
+                       'url': 'https://www.youtube.com/watch?v=jyVHYDl8PgQ&t=1044s',
+                       'markdown': '[00:17:24](https://www.youtube.com/watch?v=jyVHYDl8PgQ&t=1044s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q2.'}]}

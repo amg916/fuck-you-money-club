@@ -1,629 +1,824 @@
 from __future__ import annotations
 
-CHAPTER_10 = {
-    "id": "Q10",
-    "chapter_id": "Q10",
-    "chapter_number": 10,
-    "question_number": 10,
-    "slug": "automation-ai-leverage-scalable-distribution-flywheels",
-    "question_prompt": "How does a 2 FT + 3 C (5 people) automated e-commerce team automate 70%+ of repetitive research, qualification, fulfillment, and traffic/deal acquisition while keeping human-in-the-loop QA?",
-    "kicker": "Q10 / THE BIG MONEY PLAYBOOKS",
-    "title": "Automation, AI Leverage & Scalable Distribution Flywheels",
-    "subtitle": "Python Webhooks, Shopify-to-3PL Routing, Inventory Reservations, Returns Ledgers, and Pinterest Retention Loops Under FTC and Product-Safety Rules",
-    "layout_template": "case_study_walkthrough",
-    "reading_time_minutes": 14,
-    "executive_summary": (
-        "Candidate #28, Automated E-Commerce, ranks #21 with a 85/100 Money-to-Manpower "
-        "Score: an Elite Small-Team Cash Machine built around authorized inventory, reliable "
-        "fulfillment, and retained contribution. This chapter maps 18 operating plays into "
-        "a Python, webhook, and bounded-LLM architecture that targets 70%+ repetitive-work "
-        "automation without delegating consequential decisions. A two-employee, "
-        "three-contractor team owns exceptions, supplier evidence, and customer remedies; "
-        "software handles reconciled events and reversible drafts. Canonical annual owner "
-        "profits remain $12,500 Conservative, $129,375 Base, and $360,000 Scaled. The "
-        "distribution design connects visual-search assets, permissioned retention, and "
-        "measured acquisition to SKU availability. Every automation carries a unit-cost "
-        "budget, review trigger, replay procedure, and contribution test before additional "
-        "traffic or order volume is purchased."
-    ),
-    "key_metrics": [
-        {
-            "label": "Conservative",
-            "value": "$250,000",
-            "context": "Annual retail sales net of refunds; not marketplace throughput",
-            "note": "5% net margin; $12,500 annual owner net profit; 2 FT + 3 C",
-        },
-        {
-            "label": "Base",
-            "value": "$1,125,000",
-            "context": "Annual retail sales net of refunds; goods, fulfillment, and advertising included in margin",
-            "note": "11.5% net margin; $129,375 annual owner net profit; 2 FT + 3 C",
-        },
-        {
-            "label": "Scaled",
-            "value": "$2,000,000",
-            "context": "Annual retail sales net of refunds; separate from customer payment volume",
-            "note": "18% net margin; $360,000 annual owner net profit; 3 FT + 4 C",
-        },
-    ],
-    "sections": [
-        {
-            "heading": "1. Map eighteen bounded plays before connecting an LLM to operations",
-            "epistemic_status": "operating_framework",
-            "paragraphs": [
-                (
-                    "Start with an event ledger, not an autonomous shopping agent. For an "
-                    "authorized-dealer store using Shopify and a contracted 3PL such as "
-                    "ShipBob, the commerce platform records orders, the warehouse records "
-                    "physical movements, and the accounting ledger records recognized sales "
-                    "and expenses. A Python receiver verifies each provider's documented "
-                    "webhook signature against the original request bytes, durably stores "
-                    "the event, and returns promptly. A separate worker retrieves current "
-                    "order state before proposing a transition. Persist provider, event "
-                    "identifier, resource identifier, received time, schema version, and "
-                    "processing outcome. Use a database uniqueness constraint for duplicate "
-                    "delivery and an order-level lock for conflicting updates; webhook arrival "
-                    "order is not business chronology. One employee owns merchandising and "
-                    "contribution, while the other owns operations and customer remedies. "
-                    "Three contractors cover integration maintenance, creative production, "
-                    "and scheduled support. Contractors receive narrowly scoped accounts "
-                    "rather than shared administrator credentials. Establish named backup "
-                    "coverage for absences and weekend delivery incidents. This arrangement "
-                    "makes five people accountable for an observable operating system, rather "
-                    "than expecting automation to compensate for missing ownership or unclear "
-                    "warehouse responsibilities. Document provider outages and escalation "
-                    "contacts alongside the event schema before processing live orders."
-                ),
-                (
-                    "Map eighteen plays to that ledger as bounded workflows, not eighteen "
-                    "independent agents. Plays one through six are supplier-document intake, "
-                    "dealer-authorization checking, landed-cost extraction, catalog "
-                    "normalization, claim-evidence retrieval, and contribution screening. "
-                    "Plays seven through twelve are paid-order validation, warehouse routing, "
-                    "inventory reservation, replenishment alerts, shipment reconciliation, "
-                    "and return-status tracking. Plays thirteen through eighteen are the "
-                    "named pinterest_flipboard_visual_serp_arbitrage workflow, "
-                    "permissioned lifecycle email, customer-referral distribution, supplier "
-                    "and publisher outreach, creative-variant drafting, and cohort payback "
-                    "reporting. These are chapter-level workflow mappings; only the supplied "
-                    "visual-distribution play carries its external play identifier. An LLM "
-                    "may extract a supplier's minimum order quantity, but arithmetic code "
-                    "must calculate landed unit cost and a person must validate dealer rights. "
-                    "A retrieved document can support a product claim only when its SKU, "
-                    "revision, and issuer match the listing. Treat supplier PDFs, reviews, "
-                    "and inbound messages as untrusted data, never instructions for tool "
-                    "execution. Each play receives an input contract, output schema, review "
-                    "condition, and reversible fallback. The orchestration layer rejects "
-                    "extra fields and never accepts model-generated credentials, payment "
-                    "destinations, or executable commands. Keep the matrix below in the "
-                    "operations runbook and assign every workflow a primary owner."
-                ),
-                (
-                    "Measure the automation target against work actually performed. In an "
-                    "illustrative weekly baseline, 1,000 repetitive tasks require six minutes "
-                    "each, or 6,000 minutes. Suppose deterministic checks complete 740 tasks "
-                    "without intervention and route 260 tasks to people. Review a ten-percent "
-                    "sample of the completed population: 74 checks at two minutes consume "
-                    "148 additional minutes. If exception work still averages six minutes, "
-                    "total human effort becomes 1,560 plus 148, or 1,708 minutes. The observed "
-                    "reduction is 71.53%, while straight-through completion is 74%; report "
-                    "both measures because they answer different questions. Include "
-                    "reopened tickets, contractor debugging, and reconciliation effort in "
-                    "the next measurement rather than hiding them outside the denominator. "
-                    "Stratify samples by supplier, SKU risk, warehouse, and new versus repeat "
-                    "customer. Review every adverse product-safety signal and every proposed "
-                    "change to a consequential product claim regardless of sampling rate. "
-                    "A system that saves keystrokes but increases refunds has failed the "
-                    "business test. Publish weekly minutes saved beside exception age, "
-                    "duplicate shipments, inventory divergence, and contribution per retained "
-                    "order. Expand automation only when these measures remain stable across "
-                    "normal demand and at least one deliberately simulated integration failure."
-                ),
-            ],
-            "table": {
-                "caption": "Eighteen-Play Ownership and Evidence Matrix for a Five-Person Store",
-                "headers": [
-                    "Mapped workflow bundle",
-                    "Machine-owned bounded work",
-                    "Required human evidence review",
-                    "Failure fallback and accountable owner",
-                ],
-                "rows": [
-                    [
-                        "Plays one through three: supplier intake, authorization, landed costs",
-                        "Extract supplier fields and recompute documented landed unit costs",
-                        "Merchandising employee verifies dealer rights and current supplier terms",
-                        "Quarantine incomplete supplier records until merchandising resolves missing evidence",
-                    ],
-                    [
-                        "Plays four through six: catalog normalization, claims, contribution screening",
-                        "Normalize attributes and calculate contribution using approved cost inputs",
-                        "Merchandising employee checks claim sources and contribution threshold exceptions",
-                        "Retain prior listing version and suppress unsupported new claims",
-                    ],
-                    [
-                        "Plays seven through nine: payment checks, routing, inventory reservation",
-                        "Validate captured status and reserve stock before warehouse submission",
-                        "Operations employee reviews address changes and conflicting order states",
-                        "Hold affected orders while operations reconciles warehouse availability manually",
-                    ],
-                    [
-                        "Plays ten through twelve: replenishment, shipment reconciliation, return tracking",
-                        "Compare inventory coverage and reconcile shipment and return events",
-                        "Operations employee reviews shortages, damaged goods, and disputed remedies",
-                        "Create timestamped exception tickets with warehouse escalation contact details",
-                    ],
-                    [
-                        "Plays thirteen through fifteen: visual distribution, lifecycle email, referrals",
-                        "Prepare sourced visuals and schedule permissioned customer communication sequences",
-                        "Creative contractor checks product claims, disclosures, and available inventory",
-                        "Pause affected messages while retaining existing customer suppression records",
-                    ],
-                    [
-                        "Plays sixteen through eighteen: outreach, creative variants, cohort reporting",
-                        "Draft relevant outreach and reconcile acquisition cohorts to retained sales",
-                        "Merchandising employee authorizes spend changes after contribution evidence review",
-                        "Restore prior campaign settings and investigate attribution discrepancies separately",
-                    ],
-                ],
-            },
-            "callout": {
-                "kind": "INSIDER PRO-TIPS",
-                "title": "Build the controls that experienced store operators actually use",
-                "body": "Prefer small, inspectable state transitions over impressive demonstrations that conceal warehouse or accounting exceptions.",
-                "items": [
-                    "Store supplier authorization expiry beside each SKU and alert before renewal; never let a successful purchase order stand in for dealer permission.",
-                    "Save warehouse acceptance identifiers on the order record; a successful HTTP response without business acceptance does not prove fulfillment started.",
-                    "Sample newly introduced supplier documents more heavily than stable feeds; extraction accuracy often breaks on revised freight tables and carton quantities.",
-                    "Use a synthetic internal order in a test environment to rehearse cancellation, partial shipment, and return events before changing production routing.",
-                ],
-            },
-        },
-        {
-            "heading": "2. Engineer order, inventory, and return state machines with recovery paths",
-            "epistemic_status": "operating_framework",
-            "paragraphs": [
-                (
-                    "Implement order routing as a state machine with explicit transitions: "
-                    "payment verified, stock reserved, warehouse submission pending, "
-                    "warehouse accepted, shipped, and reconciled. Separate cancellation and "
-                    "partial-shipment branches instead of encoding them as free-text notes. "
-                    "Python can validate webhook payloads with json, verify compatible HMAC "
-                    "schemes with hmac and hashlib, and use decimal for monetary calculations. "
-                    "Follow each provider's exact signing specification rather than assuming "
-                    "one universal signature format. Persist an outbound command before "
-                    "sending it, attach the provider-supported idempotency key, and record "
-                    "the response identifier. Where an endpoint lacks idempotency support, "
-                    "query remote state before retrying an ambiguous submission. A timeout "
-                    "after transmission is an uncertain outcome, not permission to ship "
-                    "again. Retry transient failures with capped exponential backoff and "
-                    "jitter; route exhausted attempts to a durable exception queue. Reconcile "
-                    "warehouse acceptances against open commerce orders on a scheduled basis "
-                    "so missed webhooks cannot strand purchases indefinitely. Use SQLite "
-                    "only for a suitably constrained single-worker deployment; concurrent "
-                    "reservations need a transactional datastore designed for that workload. "
-                    "Never log complete customer addresses or payment details merely to make "
-                    "debugging convenient. Retain correlation identifiers and redact payload "
-                    "fields according to operational need."
-                ),
-                (
-                    "Inventory alerts must distinguish physical stock, available stock, "
-                    "reservations, quarantined returns, and inbound purchases. For an "
-                    "illustrative SKU selling twelve units daily with a twenty-day supplier "
-                    "lead time and sixty safety units, the reorder point is 300 units: "
-                    "twelve multiplied by twenty, plus sixty. An inventory position of 260 "
-                    "therefore triggers investigation, not an automatic purchase commitment. "
-                    "Inventory position includes credible inbound quantities and subtracts "
-                    "backorders; storefront availability excludes unreceived goods unless "
-                    "the store deliberately offers an accurately described preorder. If "
-                    "daily demand rises to eighteen units, the same assumptions produce "
-                    "a 420-unit reorder point. Recompute after promotions and supplier "
-                    "delays rather than treating historical averages as permanent. Reserve "
-                    "units atomically when an order becomes eligible, release reservations "
-                    "through explicit cancellation transitions, and give stale reservations "
-                    "a reconciliation process. A feed older than its documented freshness "
-                    "limit should reduce offered availability or pause affected listings. "
-                    "Keep a buffer for multi-channel contention when warehouse updates lag. "
-                    "If Shopify and the 3PL disagree, the operations employee resolves the "
-                    "physical count before replenishment software increases advertising. "
-                    "The fallback is a smaller honest assortment, not a queue of paid orders "
-                    "that the warehouse cannot fulfill."
-                ),
-                (
-                    "Returns tracking needs its own event history: requested, authorized, "
-                    "label issued, carrier scanned, warehouse received, inspected, remedy "
-                    "authorized, and ledger posted. A carrier scan establishes movement, "
-                    "not resale condition. Route refunds through explicit amount limits and "
-                    "approved policy rules; require human review for disputed liability, "
-                    "high-value exceptions, repeated serial-number mismatches, and any "
-                    "product-safety allegation. An LLM can summarize a customer's account "
-                    "and retrieve policy text, but it cannot decide whether an injured "
-                    "customer deserves a remedy or whether a defect requires reporting. "
-                    "Under 15 U.S.C. 2064(b), covered manufacturers, importers, distributors, "
-                    "and retailers must immediately inform the CPSC when the statutory "
-                    "reporting criteria are met, subject to the statute's conditions. "
-                    "Preserve incident evidence and escalate promptly to the responsible "
-                    "human; do not wait for a weekly dashboard. Separately, 16 CFR Part "
-                    "435 governs shipment representations and required delay or refund "
-                    "procedures for covered orders. Automate deadline alerts and customer "
-                    "communication drafts, while keeping responsibility for accurate "
-                    "promises explicit. Quarantine returned units until inspection supports "
-                    "restocking. Reconcile refunds to both the payment processor and the "
-                    "sales ledger, keeping restocking losses, reverse freight, and recovery "
-                    "value visible instead of burying them inside an aggregate refund count."
-                ),
-            ],
-            "table": {
-                "caption": "Webhook and Warehouse Failure-Recovery Matrix",
-                "headers": [
-                    "Failure observed in production",
-                    "Deterministic detection and immediate containment",
-                    "Human resolution and evidence required",
-                    "Safe replay or fallback procedure",
-                ],
-                "rows": [
-                    [
-                        "Duplicate paid-order webhook arrives after successful warehouse submission",
-                        "Unique event constraint rejects duplicate processing before command creation",
-                        "Operations checks existing warehouse acceptance only when states disagree",
-                        "Replay reconciliation without issuing another physical fulfillment command",
-                    ],
-                    [
-                        "Warehouse submission times out before remote acceptance becomes visible",
-                        "Mark command outcome uncertain and suppress immediate blind retries",
-                        "Operations retrieves remote order using stable merchant order reference",
-                        "Resubmit only after remote absence is established through documented procedure",
-                    ],
-                    [
-                        "Inventory feed exceeds its documented freshness and reconciliation interval",
-                        "Reduce sellable quantities and pause traffic to affected products",
-                        "Operations confirms physical availability with warehouse contact and timestamp",
-                        "Restore listing quantities after reconciled stock passes reservation checks",
-                    ],
-                    [
-                        "Supplier delay pushes promised shipment date beyond current capability",
-                        "Create deadline alert and draft accurate delay communication immediately",
-                        "Operations applies required customer options under applicable shipping rules",
-                        "Record customer response and execute shipment or refund accordingly",
-                    ],
-                    [
-                        "Returned item carries damage or a reported safety concern",
-                        "Quarantine inventory and preserve customer report with restricted access",
-                        "Responsible employee evaluates reporting duties and customer remedy promptly",
-                        "Keep item unavailable until documented disposition authorizes further handling",
-                    ],
-                    [
-                        "Refund exists at processor but sales ledger lacks matching entry",
-                        "Reconciliation flags unmatched amount using currency and transaction identifiers",
-                        "Bookkeeping owner verifies settlement timing and original retained sales",
-                        "Post missing ledger adjustment without issuing a second refund",
-                    ],
-                ],
-            },
-            "sop_steps": [
-                {
-                    "step": 1,
-                    "title": "Capture and authenticate the event",
-                    "action": "Verify the documented signature, persist the event, and acknowledge durable receipt.",
-                    "detail": "Record a deduplication key and correlation identifier; reject invalid signatures without exposing payload data in error messages.",
-                },
-                {
-                    "step": 2,
-                    "title": "Evaluate the current business state",
-                    "action": "Fetch current order, payment, reservation, and warehouse status before constructing a command.",
-                    "detail": "Apply deterministic money and inventory rules; route conflicting states to the operations employee rather than asking a model to guess.",
-                },
-                {
-                    "step": 3,
-                    "title": "Execute one bounded transition",
-                    "action": "Persist the outbound command and send it with provider-supported duplicate protection.",
-                    "detail": "Treat timeouts as uncertain outcomes, check remote state, and require human review for consequential exceptions.",
-                },
-                {
-                    "step": 4,
-                    "title": "Reconcile and close the evidence trail",
-                    "action": "Match remote acceptance, shipment, refund, or stock movement to the local ledger.",
-                    "detail": "Close the task only after the expected business effect is confirmed; retain unresolved work in an owned, timestamped queue.",
-                },
-            ],
-        },
-        {
-            "heading": "3. Turn visual discovery into stocked-product and owned-audience loops",
-            "epistemic_status": "illustrative_model",
-            "paragraphs": [
-                (
-                    "Deploy pinterest_flipboard_visual_serp_arbitrage as a measured TRACK_2 "
-                    "distribution experiment, not a promise of effortless traffic. Build "
-                    "original data-infographic pins, comparison charts, and visual checklists "
-                    "for real home and DIY buying questions, then route each asset to a "
-                    "distinct, substantive guide. A storage-capacity chart might compare "
-                    "usable dimensions, installation constraints, and verified material "
-                    "specifications before linking to stocked products. Pinterest search "
-                    "and Flipboard discovery can keep useful assets circulating over a "
-                    "six-to-eighteen-month testing horizon, but longevity varies and neither "
-                    "platform guarantees indexing or reach. This reduces dependence on "
-                    "Google search traffic; it does not remove platform-algorithm risk. "
-                    "Use approved publishing interfaces, respect official API rate limits, "
-                    "and use manual scheduling when authorized automation access is "
-                    "unavailable. Never replace an unavailable endpoint with account "
-                    "automation that violates platform rules. Capture permissioned email "
-                    "subscriptions through a useful digest or optional lead quiz. AdX or "
-                    "Mediavine can be a separate publisher monetization branch when their "
-                    "current eligibility and contractual requirements are met, but their "
-                    "receipts are outside this retail scorecard unless separately modeled. "
-                    "Prioritize guide usefulness and retained retail contribution over raw "
-                    "impression counts. Assign editorial ownership before publishing any "
-                    "programmatically generated comparison."
-                ),
-                (
-                    "Underwrite the loop with explicit assumptions. Suppose forty monthly "
-                    "visual assets cost $300 in creative review and production, and the "
-                    "associated guides attract 5,000 incremental sessions. At a 1.2% "
-                    "purchase rate, sixty retained orders generate $6,000 of net sales at "
-                    "$100 each. An illustrative order contributes $42 before acquisition: "
-                    "$100 less $38 goods, $12 fulfillment, $3 payment costs, and $5 expected "
-                    "reverse-logistics and inventory-loss expense. The last allowance is "
-                    "an operating cost, not another subtraction of already excluded sales "
-                    "refunds. Sixty orders therefore provide $2,520 before acquisition; "
-                    "subtracting $300 leaves $2,220 before shared overhead and other channel "
-                    "costs. This is a test calculation, not additional canonical profit. "
-                    "A 3% to 5% email capture rate yields 150 to 250 subscribers from those "
-                    "sessions, provided the offer and permission flow genuinely support "
-                    "that result. Attribute subsequent purchases by cohort and avoid "
-                    "counting the same order as both visual-channel and email-channel "
-                    "incremental revenue. If traffic halves, retain the cost base in the "
-                    "calculation and reassess payback. If stock becomes constrained, route "
-                    "guides toward genuinely available alternatives or a clearly described "
-                    "restock digest rather than advertising an immediately purchasable item."
-                ),
-                (
-                    "Complete the flywheel with lifecycle messages, referrals, and selective "
-                    "outreach that reuse verified information rather than multiplying "
-                    "unsupported claims. After delivery, send product-specific setup "
-                    "instructions; after a realistic usage interval, request an honest "
-                    "review without conditioning rewards on positive sentiment. Offer "
-                    "referral benefits with clear terms and model their cost before "
-                    "activation. Paid endorsements and material connections require "
-                    "appropriate disclosure under the FTC framework, while 16 CFR Part "
-                    "465 prohibits specified deceptive review and testimonial practices. "
-                    "For commercial email, implement accurate headers, required sender "
-                    "information, working opt-outs, and suppression handling under 15 "
-                    "U.S.C. 7704. Treat outreach to relevant publishers or authorized "
-                    "suppliers as a small researched queue, not a scraped bulk-email "
-                    "operation. An LLM drafts messages from approved facts; a person "
-                    "reviews initial campaigns, recipient relevance, and consequential "
-                    "claims. Use customer data only for documented purposes and honor "
-                    "applicable privacy requests, including California requirements when "
-                    "the business falls within their scope. Maintain deletion and "
-                    "suppression workflows across the commerce platform, email provider, "
-                    "and analytics exports. A weekly holdout cohort helps distinguish "
-                    "genuine incremental retention from purchases that would have occurred "
-                    "anyway. Stop distributing a creative when returns or support contacts "
-                    "reveal that its promise misrepresents the product."
-                ),
-            ],
-            "table": {
-                "caption": "Visual Discovery, Retention, and Outreach Contribution Tests",
-                "headers": [
-                    "Distribution experiment and production unit",
-                    "Explicit measurement and illustrative unit math",
-                    "Human review before consequential publication",
-                    "Risk fallback preserving customer and channel value",
-                ],
-                "rows": [
-                    [
-                        "Publish forty original Pinterest and Flipboard visuals each month",
-                        "Budget three hundred dollars across forty reviewed creative assets",
-                        "Creative reviewer checks source evidence and distinct destination usefulness",
-                        "Reduce publishing frequency when official rate limits constrain throughput",
-                    ],
-                    [
-                        "Route visual assets to substantive stocked-product comparison guides",
-                        "Five thousand sessions at 1.2% produce sixty retained orders",
-                        "Merchandising verifies comparison accuracy and available product replacement options",
-                        "Pause purchase promotion when inventory freshness fails established limits",
-                    ],
-                    [
-                        "Offer an optional digest or relevant lead qualification quiz",
-                        "Three to five percent capture yields 150 to 250 subscribers",
-                        "Operations checks collection purpose and accurate subscription permission records",
-                        "Retain useful public guides when visitors decline email subscription",
-                    ],
-                    [
-                        "Deliver product-specific post-purchase setup and replenishment messages",
-                        "Compare retained contribution against a randomly selected eligible holdout",
-                        "Support reviewer checks timing, product suitability, and suppression behavior",
-                        "Disable mistaken sequence while preserving transactional order communications",
-                    ],
-                    [
-                        "Test customer referrals using clearly stated reward economics",
-                        "Deduct both referral rewards and associated processing costs per order",
-                        "Merchandising reviews self-referral patterns and disclosed incentive language",
-                        "Suspend reward issuance for disputed cases pending documented review",
-                    ],
-                    [
-                        "Send researched supplier and publisher outreach in small batches",
-                        "Track qualified replies and retained contribution per reviewed outreach hour",
-                        "Employee verifies recipient relevance and every proposed commercial claim",
-                        "Stop messaging suppressed recipients and replace weak targeting with research",
-                    ],
-                ],
-            },
-            "callout": {
-                "kind": "OPERATOR GATE",
-                "title": "Verify four conditions before expanding automated distribution",
-                "body": "A larger audience magnifies inventory, claim, and measurement mistakes; verify these conditions before raising publication volume or spend.",
-                "items": [
-                    "Confirm dealer authorization, source-backed specifications, and warehouse availability for every promoted SKU; archive the checked evidence and timestamp.",
-                    "Verify platform access permissions, current rate limits, destination quality, and a manual publishing fallback for Pinterest and Flipboard.",
-                    "Test subscription capture, opt-out propagation, referral disclosures, and deletion routing with controlled test accounts before activating customer sequences.",
-                    "Reconcile retained orders and channel costs to the ledger, then confirm that the holdout-adjusted contribution meets the documented acquisition ceiling.",
-                ],
-            },
-        },
-        {
-            "heading": "4. Price every automated run and scale only reconciled contribution",
-            "epistemic_status": "illustrative_model",
-            "paragraphs": [
-                (
-                    "Cost each automation at the run level before celebrating low token "
-                    "prices. Consider an illustrative document-classification run using "
-                    "1,200 input tokens and 200 output tokens. At assumed planning rates "
-                    "of $0.50 per million input tokens and $2.00 per million output tokens, "
-                    "model usage costs $0.001. Add $0.0008 for execution and queue handling "
-                    "and $0.0007 for storage and logging: the machine cost is $0.0025 per "
-                    "run, or $25 for 10,000 runs. These are budget assumptions, not a "
-                    "vendor quotation. If one percent of runs require three minutes of "
-                    "review at $25 per hour, one hundred reviews cost $125. The combined "
-                    "variable cost becomes $150, or $0.015 per run, before fixed subscriptions "
-                    "and engineering maintenance. Measure retries and rejected outputs "
-                    "because they still consume resources. Cache approved supplier facts "
-                    "by document revision, shorten prompts to relevant excerpts, and use "
-                    "deterministic parsing wherever formats are stable. Send only necessary "
-                    "customer information to a model provider under appropriate data "
-                    "handling terms. Compare this classifier's review rate with its own "
-                    "task mix; it does not replace the earlier whole-operation labor "
-                    "baseline. Purchase model capacity only after measuring recovered "
-                    "staff time and defect costs."
-                ),
-                (
-                    "Reconcile automation economics to the canonical cases without "
-                    "manufacturing a fourth scenario. Conservative retail sales are "
-                    "$250,000 at a 5% net margin, producing $12,500 annual owner net "
-                    "profit with two full-time employees and three contractors. Base "
-                    "sales are $1,125,000 at 11.5%, producing $129,375 with the same "
-                    "headcount. Scaled sales are $2,000,000 at 18%, producing $360,000 "
-                    "with three employees and four contractors. The corresponding "
-                    "all-in expense envelopes are $237,500, $995,625, and $1,640,000. "
-                    "Treat the scorecard's revenue figures as retail sales net of "
-                    "refunds, not payment-processor throughput, underlying marketplace "
-                    "volume, or collected sales tax. Goods, fulfillment, advertising, "
-                    "labor, software, and other operating expenses must fit inside "
-                    "those envelopes. Do not add modeled time savings to profit unless "
-                    "they produce an actual expense reduction or supported incremental "
-                    "contribution. At the illustrative $100 retained order value, the "
-                    "cases imply 2,500, 11,250, and 20,000 retained annual orders; these "
-                    "are workload translations, not revised revenue forecasts. The "
-                    "startup capital range of $15,000 to $80,000 and monthly operating "
-                    "range of $4,000 to $25,000 do not replace the complete annual "
-                    "expense model. Inventory purchases and settlement delays also "
-                    "require a separate cash schedule even when reported profit rises."
-                ),
-                (
-                    "Scale by constraint, not by dashboard enthusiasm. If an illustrative "
-                    "$100 order produces $42 before acquisition and paid acquisition costs "
-                    "$24, it leaves $18 before shared overhead. A twenty-five-percent "
-                    "increase in acquisition cost raises that charge to $30 and reduces "
-                    "the remaining contribution to $12, a one-third decline. An inventory "
-                    "shortage can erase more value through canceled orders, expedited "
-                    "freight, and support time, so link campaign ceilings to dependable "
-                    "stock coverage. Establish per-workflow kill switches that stop new "
-                    "commands while allowing status reads, reconciliation, and customer "
-                    "support to continue. Keep a last-known-good configuration, versioned "
-                    "prompts, reproducible test payloads, and documented manual queues. "
-                    "Run a monthly recovery exercise covering duplicate webhooks, "
-                    "warehouse downtime, an incorrect return classification, and an "
-                    "overstated creative claim. Inspect both technical recovery time "
-                    "and affected customer outcomes. The scaled seven-person team "
-                    "should absorb verified exception volume and channel complexity, "
-                    "not conceal automation fragility through overtime. Review the "
-                    "contribution ledger, unresolved incidents, and cash commitments "
-                    "before raising spend. If evidence deteriorates, freeze the "
-                    "affected workflow, preserve its audit trail, and restore the "
-                    "narrower reliable process. Sustainable leverage comes from "
-                    "repeatable decisions whose costs and consequences remain visible "
-                    "after the original builder stops watching."
-                ),
-            ],
-            "table": {
-                "caption": "Canonical Profit Reconciliation and Automation Cost Controls",
-                "headers": [
-                    "Case or operating control",
-                    "Revenue or measured cost basis",
-                    "Reconciled outcome and staffing implication",
-                    "Decision rule and failure fallback",
-                ],
-                "rows": [
-                    [
-                        "Conservative annual operating case with five people",
-                        "Recognize $250,000 retail sales after subtracting actual customer refunds",
-                        "Five percent margin produces $12,500 profit with 2 FT and 3 C",
-                        "Keep all annual expenses within the $237,500 modeled envelope",
-                    ],
-                    [
-                        "Base annual operating case with five people",
-                        "Recognize $1,125,000 retail sales after subtracting actual customer refunds",
-                        "11.5% margin produces $129,375 profit with 2 FT and 3 C",
-                        "Reconcile all annual expenses against the $995,625 modeled envelope",
-                    ],
-                    [
-                        "Scaled annual operating case with seven people",
-                        "Recognize $2,000,000 retail sales after subtracting actual customer refunds",
-                        "Eighteen percent margin produces $360,000 profit with 3 FT and 4 C",
-                        "Keep all annual expenses within the $1,640,000 modeled envelope",
-                    ],
-                    [
-                        "Illustrative classifier workload before fixed engineering and subscription costs",
-                        "Ten thousand machine runs at $0.0025 each cost twenty-five dollars",
-                        "One hundred three-minute reviews add $125 of direct review labor",
-                        "Compare $150 combined variable cost against measured task value recovered",
-                    ],
-                    [
-                        "Illustrative paid-acquisition sensitivity for one retained hundred-dollar order",
-                        "Pre-acquisition contribution equals forty-two dollars after listed variable costs",
-                        "Acquisition rising from $24 to $30 reduces remaining contribution by one-third",
-                        "Lower campaign ceilings when verified contribution falls below operating requirements",
-                    ],
-                    [
-                        "Monthly recovery exercise covering warehouse and model classification failures",
-                        "Measure customer impact and staff minutes alongside technical restoration time",
-                        "Assign primary and backup owners for every consequential exception queue",
-                        "Disable new affected commands while preserving reconciliation and customer support",
-                    ],
-                ],
-            },
-        },
-    ],
-    "pull_quote": "Automate the repeatable transition, keep a human accountable for the consequence, and scale only the contribution you can reconcile.",
-    "diagram_id": "diag-02",
-    "action_checklist": [
-        "Assign primary and backup owners to all eighteen workflows, then document their inputs, permitted outputs, review triggers, and reversible fallbacks.",
-        "Implement signed-webhook verification, durable event storage, duplicate protection, and order-level concurrency controls before connecting live warehouse commands.",
-        "Create stock-reservation, shipment, and return state machines; test uncertain warehouse submissions and refund reconciliation without duplicating physical or monetary actions.",
-        "Publish a reviewed Pinterest and Flipboard pilot using distinct sourced guides, platform-authorized scheduling, stocked products, and permissioned digest capture.",
-        "Measure straight-through completion and human minutes saved separately, including sample reviews, reopened work, maintenance, and consequential exceptions.",
-        "Reconcile retained sales, all-in expenses, automation costs, and cash commitments to the three canonical scenarios before expanding acquisition spend or staffing.",
-    ],
-    "statutory_citations": [
-        {
-            "title": "16 CFR Part 435 — Mail, Internet, or Telephone Order Merchandise Rule",
-            "url": "https://www.ecfr.gov/current/title-16/chapter-I/subchapter-D/part-435",
-            "relevance": "Connect shipment representations, delay notices, customer options, and required refunds to order-state deadlines and owned exception queues.",
-        },
-        {
-            "title": "15 U.S.C. 2064(b) — Reporting of Potential Product Hazards",
-            "url": "https://www.law.cornell.edu/uscode/text/15/2064",
-            "relevance": "Escalate qualifying product-safety information promptly for evaluation of immediate CPSC reporting duties applicable to covered supply-chain businesses.",
-        },
-        {
-            "title": "15 U.S.C. 7704 — Requirements for Commercial Electronic Mail",
-            "url": "https://www.law.cornell.edu/uscode/text/15/7704",
-            "relevance": "Implement accurate commercial email identification, required sender information, working opt-out mechanisms, and timely suppression handling.",
-        },
-        {
-            "title": "16 CFR Part 255 — Guides Concerning Endorsements and Testimonials in Advertising",
-            "url": "https://www.ecfr.gov/current/title-16/chapter-I/subchapter-B/part-255",
-            "relevance": "Review endorsements, material connections, and incentive disclosures before publishing referral content or creator-supported product recommendations.",
-        },
-        {
-            "title": "16 CFR Part 465 — Rule on the Use of Consumer Reviews and Testimonials",
-            "url": "https://www.ecfr.gov/current/title-16/chapter-I/subchapter-D/part-465",
-            "relevance": "Prevent prohibited review fabrication, sentiment-conditioned review purchases, and other specified deceptive review practices in automated retention campaigns.",
-        },
-        {
-            "title": "California Civil Code Section 1798.100 — Consumer Privacy Collection and Use Requirements",
-            "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=1798.100.&lawCode=CIV",
-            "relevance": "For businesses within statutory scope, connect personal-information collection notices and purpose limitations to quizzes, email capture, analytics, and service-provider handling.",
-        },
-    ],
-}
+CHAPTER_10 = {'id': 'Q10',
+ 'chapter_id': 'Q10',
+ 'chapter_number': 10,
+ 'question_number': 10,
+ 'slug': 'automated-support-and-retention',
+ 'question_prompt': 'How do I automate customer support and turn first-time buyers into repeat subscribers '
+                    'with email and SMS?',
+ 'kicker': 'Q10 / THE BIG MONEY PLAYBOOKS',
+ 'title': 'Automated Support and Retention',
+ 'subtitle': 'Gorgias help desk and AI Agent setup, pricing, and alternatives, AI handling of "where is my '
+             'order" and damaged-item tickets, Klaviyo email and SMS flows, post-purchase thank-you flows, '
+             'Recharge subscription flows, and a case study that tripled email revenue',
+ 'layout_template': 'expert_commentary',
+ 'reading_time_minutes': 15,
+ 'executive_summary': 'Support and retention operators agree on one split: AI handles order-status '
+                      'tickets, humans own refunds and exceptions, and Klaviyo post-purchase flows chase '
+                      'the second order, where the profit lives. Macha prices Gorgias AI Agent at $0.90 '
+                      'annual or $1 monthly per automated interaction, with $1.50 over the allowance, and '
+                      "shows the bill climbing as the resolution rate rises. Macha's own agent starts at "
+                      '$299 for 750 tickets and breaks even against Gorgias only near 50% resolution. Amol '
+                      'Walunj sends refunds over $75 to a manager queue. Tarun Brar shows a 3x ROAS first '
+                      'order leaving $26 while the second order earns $60. Derek Stroh targets a '
+                      'repurchase inside 30 to 60 days. The practitioners split on per-resolution versus '
+                      'flat pricing, on 10-minute versus 20-minute delays behind Shopify emails, and on '
+                      'how early to fire offers and review requests.',
+ 'key_metrics': [{'label': 'Gorgias AI Agent Price Per Automated Interaction',
+                  'metric': 'Gorgias AI Agent Price Per Automated Interaction',
+                  'value': '$0.90 annual billing / $1 monthly billing / $1.50 over the plan allowance',
+                  'confidence': 'attributed_practitioner_claim',
+                  'context': "Macha's pricing breakdown of Gorgias AI Agent, checked 20 Nov 2026. Flow "
+                             'resolutions draw on the same allowance as AI resolutions.',
+                  'source': 'Macha ([7Ac3MIM55Yc @ 00:00:00])'},
+                 {'label': 'Post-Purchase Flow Open Rate Benchmark',
+                  'metric': 'Post-Purchase Flow Open Rate Benchmark',
+                  'value': 'Over 50% average; 74% for the top 10% of senders',
+                  'confidence': 'attributed_practitioner_claim',
+                  'context': 'Tarun Brar calls post-purchase the highest-engagement flow. Placed-order '
+                             'rate is 0.4% on average and 2% for the top 10%.',
+                  'source': 'Tarun Brar - eCom Email Marketing ([coevagBV6wU @ 00:02:13])'},
+                 {'label': 'Scooch Subscription Retention Result',
+                  'metric': 'Scooch Subscription Retention Result',
+                  'value': 'Churn down 33%, subscriber LTV tripled, ad spend down 48%',
+                  'confidence': 'attributed_practitioner_claim',
+                  'context': "Milan Raviji's Recharge plus Klaviyo client result. They report revenue fell "
+                             'only 5% while ad spend dropped 48%.',
+                  'source': 'Milan Raviji│Klaviyo & Email Marketing ([6xiaPZPDBCQ @ 00:00:39])'},
+                 {'label': 'Second-Order Loyalty Window',
+                  'metric': 'Second-Order Loyalty Window',
+                  'value': 'Repeat purchase inside the first 30 to 60 days',
+                  'confidence': 'attributed_practitioner_claim',
+                  'context': 'Derek Stroh reports that loyalty is much higher when the buyer purchases '
+                             'again within 30 to 60 days of the first order.',
+                  'source': 'Derek Stroh ([cerX0RFHJ0c @ 00:09:35])'}],
+ 'sections': [{'title': 'The Practitioner Consensus',
+               'paragraphs': ["Every support operator here starts automation with the same ticket: 'where "
+                              "is my order.' Macha's agent reads the ticket, pulls the order from Shopify "
+                              'and checks that the order email matches the person asking. It then answers '
+                              'with one of three states: shipped (with carrier, tracking number and link), '
+                              'not shipped yet, or late. Anything outside the rules goes to the team with '
+                              "an internal note [VsY0GsB1UI0 @ 00:00:00]. Amol Walunj's Cevanos demo "
+                              'applies a stricter identity check. A one-time code goes to the account '
+                              'email before any refund moves, and order 1016 ($149, paid and fulfilled) '
+                              "comes straight from Shopify through the connector: 'That last line comes "
+                              "from Savano's, not the AI' [QZz9_VSA1lA @ 00:01:31]. Brandon Amoroso shows "
+                              'Gorgias already covering self-service without AI. Customers can track, '
+                              'cancel, return or report an issue after looking up the order by email code '
+                              'or order number [Pwv-LlhTPwo @ 00:04:59]. All three follow the same rule: '
+                              'the bot answers status questions and a human owns money and exceptions. '
+                              'Macha always routes these to people: delivered-not-received, damaged or '
+                              'wrong items, address changes, cancelled or refunded orders, anger and '
+                              'chargeback threats. The agent issues no refund or reship unless the written '
+                              'rules allow it [VsY0GsB1UI0 @ 00:05:00].',
+                              'On retention, the speakers agree on one claim: the money is in order two, '
+                              "not order one. Tarun Brar opens with 'Most of your profit doesn't come from "
+                              "the first order' and backs it with funnel math. 400 visitors converting at "
+                              '3% give 12 buyers, and a 20-25% return rate gives roughly 3 repeat buyers '
+                              '[coevagBV6wU @ 00:00:00]. Gavin Hewitson states the same point plainly: the '
+                              'second order is typically more profitable because you are not spending as '
+                              'much on advertising to get the buyer across the line [Cu4iN3jgMwI @ '
+                              '00:13:16]. Derek Stroh puts a clock on it. If a buyer purchases again '
+                              'inside the first 30 to 60 days, loyalty runs much higher than if that '
+                              'repeat never happens. Their stated goals are higher AOV and LTV and less '
+                              'reliance on cold traffic [cerX0RFHJ0c @ 00:09:35]. Milan Raviji applies the '
+                              'same logic to subscriptions. Churn falls sharply after the third box, and '
+                              "'if you keep a customer for 3 months, the likelihood that they stay for "
+                              "longer is extraordinarily high' [6xiaPZPDBCQ @ 00:06:42]. The shared "
+                              'message from all four is that the window right after checkout drives '
+                              'profit. Brands that send a generic thank-you there, or nothing, give up the '
+                              'cheapest revenue in the business and keep paying full acquisition cost for '
+                              'every future sale.',
+                              'The baseline post-purchase build is nearly identical across the Klaviyo '
+                              'practitioners. Derek Stroh triggers on Placed Order and filters out '
+                              'canceled and refunded orders. They then split by product, category, desired '
+                              'outcome, order value and quantity, so each buyer gets usage and cross-sell '
+                              'content that fits [cerX0RFHJ0c @ 00:05:22]. Gavin Hewitson adds a 20-minute '
+                              'delay so the Shopify or WooCommerce confirmation lands first, which keeps '
+                              'the two messages from clashing and makes the flow look more human. They '
+                              'also run a second flow off Fulfilled Order because fulfillment timing is '
+                              'more accurate [Cu4iN3jgMwI @ 00:03:49]. Emiel Dingemans uses a 10-minute '
+                              "wait for the same reason, since the buyer receives Shopify's transactional "
+                              'email in that gap. They then split on two or more placed orders and rejoin '
+                              'the paths afterward [6OklvvWTGmw @ 00:34:33]. Tarun Brar splits new versus '
+                              'returning buyers and routes VIPs with more than 3 orders, or the top '
+                              "10-15%. They insist on a review request 'no matter what', sent after "
+                              'delivery rather than at checkout [coevagBV6wU @ 00:12:12]. Gavin and Emiel '
+                              'both send plain-text founder emails that do not sell, and both say replies '
+                              'to those emails help deliverability and make the brand feel human.'],
+               'table': {'caption': 'Where support and retention operators agree on automation baselines',
+                         'headers': ['Consensus Point',
+                                     'How Operators Execute It',
+                                     'Why It Pays Off',
+                                     'Expert Source'],
+                         'rows': [["Automate 'where is my order' tickets first",
+                                   'Agent pulls the Shopify order, verifies the email, then replies '
+                                   'shipped, not shipped, or late',
+                                   'Highest-volume repetitive category, answerable directly from Shopify '
+                                   'order data',
+                                   'Macha ([VsY0GsB1UI0 @ 00:00:00])'],
+                                  ['Humans own refunds, damage claims and chargeback threats',
+                                   'Delivered-not-received, wrong items, address changes and angry '
+                                   'customers always go to staff',
+                                   'Agent never refunds or reships unless the written rules explicitly '
+                                   'allow it',
+                                   'Macha ([VsY0GsB1UI0 @ 00:05:00])'],
+                                  ['Verify identity before any money moves',
+                                   'One-time code sent to the account email before the agent processes any '
+                                   'refund',
+                                   'Stops refunds to the wrong person and keeps a clean audit trail',
+                                   'Amol Walunj ([QZz9_VSA1lA @ 00:01:31])'],
+                                  ['The second order carries the real profit',
+                                   'Post-purchase flows push repeat buyers without paying ad spend to '
+                                   'close them',
+                                   'Second order is typically more profitable because acquisition cost is '
+                                   'not repeated',
+                                   'Gavin Hewitson ([Cu4iN3jgMwI @ 00:13:16])'],
+                                  ['Win the repeat purchase within 30 to 60 days',
+                                   'Sequence education, cross-sell and an expiring offer inside that first '
+                                   'two-month window',
+                                   'Buyers who reorder early show much higher loyalty than those who never '
+                                   'return',
+                                   'Derek Stroh ([cerX0RFHJ0c @ 00:09:35])'],
+                                  ["Delay flow emails behind Shopify's transactional email",
+                                   'Wait 10 to 20 minutes after Placed Order before the first flow email '
+                                   'fires',
+                                   'Avoids doubled-up messages in the inbox and makes the brand look human',
+                                   'Emiel Dingemans | eCommerce Retention Marketing ([6OklvvWTGmw @ '
+                                   '00:34:33])'],
+                                  ['Ask for reviews only after delivery',
+                                   'Send the review request seven to ten days after the product arrives',
+                                   'Buyers can only review a product they have actually used',
+                                   'Tarun Brar - eCom Email Marketing ([coevagBV6wU @ 00:12:12])']]}},
+              {'title': 'Exact Street Mechanics, Tools & Numbers',
+               'paragraphs': ['The AI agent bill is where operators either get burned or win, and Macha, '
+                              'which sells a competing agent, runs the numbers in public. Gorgias AI Agent '
+                              'costs $0.90 per automated interaction on annual billing or $1 monthly. The '
+                              '$550 Pro plan bundles $360 of helpdesk (2,000 tickets) with $190 of AI (190 '
+                              'interactions). Overage runs $1.50, and any ticket a human replies to within '
+                              '72 hours bills as a normal ticket instead [eusN-cV9bSQ @ 00:02:55]. At 30% '
+                              "resolution, Macha's worked math lands at $715 total for 1,000 tickets and "
+                              '$2,885 for 5,000. At 5,000 tickets, the AI line jumps from about $2,000 to '
+                              "$3,485 if resolution climbs to 50%, because 'the AI part of the bill grows "
+                              "with every resolution' [7Ac3MIM55Yc @ 00:05:06]. Macha prices its own agent "
+                              'at $299 for 750 tickets (about $0.40 each), $599 for 1,500 and $3,999 for '
+                              '10,000, with no setup fee and $50 of free usage [VsY0GsB1UI0 @ 00:05:47]. '
+                              'Its six-tool comparison models a 1,000-ticket month with 300 resolutions. '
+                              'Siena lands highest at $1,020, Fini costs $267 at $0.89 per resolution, and '
+                              'My Ask AI is lowest at $199. Macha concedes it only breaks even with '
+                              'Gorgias near 50% resolution [iqOjQraqwcM @ 00:05:42].',
+                              "The 'where is my order' playbook is scripted rule by rule. Macha's agent "
+                              "uses the Shopify 'Get order' tool on an order number, or searches by email "
+                              'when no number is given. It follows an existing Gorgias macro and tags '
+                              'tickets wismo and AI draft. It never guesses a delivery date, because '
+                              'Shopify stores the tracking number, not the latest carrier scan '
+                              '[VsY0GsB1UI0 @ 00:03:22]. Edge cases have fixed responses. An unfulfilled '
+                              "order under a 2-business-day policy gets 'should leave by Thursday.' A "
+                              'fulfilled order with no tracking number gets told it shipped while the '
+                              'ticket goes to HIGH priority. An order unfulfilled after 3 business days '
+                              'gets an apology, assignment to the fulfilment team and no new date. An '
+                              'email mismatch gets nothing until the customer supplies the order number '
+                              "and checkout email [VsY0GsB1UI0 @ 00:03:42]. Amol Walunj's Cevanos build "
+                              'sends any refund over $75 to a manager approval queue. When a replacement '
+                              'must ship, it opens a Gorgias ticket with the order and refund details. It '
+                              'refuses duplicate refunds by policy, with the reason on record [QZz9_VSA1lA '
+                              '@ 00:02:09]. Brandon Amoroso adds plain Gorgias rules on top. A Shopify '
+                              "last order above $1,000 gets tagged 'high value order', assigned to an "
+                              'agent, auto-replied or flagged to the owner [Pwv-LlhTPwo @ 00:07:28].',
+                              "Tarun Brar's unit economics justify the retention build. A $100 AOV at 60% "
+                              'margin leaves $60 gross profit. A 3x ROAS means about $33 CAC, leaving only '
+                              '$26 on order one, while the second order earns the full $60 and lifetime '
+                              'runs about $86 [coevagBV6wU @ 00:03:22]. Their sequence front-loads the '
+                              'first 7-10 days of a 30-45-day flow and sends the cross-sell 5 days after '
+                              'delivery. New buyers get a flash offer around day 45 (30 days for protein, '
+                              '2-3 months for skincare). Photo reviews earn a $20 voucher and video '
+                              "reviews $50. Gavin Hewitson turns off Shopify's own shipping email and "
+                              'applies for transactional status so E1 lands in Updates rather than '
+                              'Promotions. They assume 4-day transit, send E1B 6 days out and offer 10-15% '
+                              'on the second order [Cu4iN3jgMwI @ 00:07:12]. Milan Raviji escalates '
+                              'card-decline messaging with each decline and treats the 4th decline as a '
+                              'churned customer. A free pouch in box 2 targets products with high '
+                              'month-one churn [6xiaPZPDBCQ @ 00:11:45]. Emiel Dingemans closes the loop '
+                              'with a sunset flow. Anyone inactive for 120 days who has received at least '
+                              '8 emails gets one plain-text email at 7am local time. Five days later they '
+                              'are set to unengaged and suppressed [6OklvvWTGmw @ 00:41:03].'],
+               'table': {'caption': 'Tools, prices and unit economics quoted by support and retention '
+                                    'operators',
+                         'headers': ['Lever or Tool',
+                                     'Exact Number Quoted',
+                                     'How Operators Use It',
+                                     'Expert Source'],
+                         'rows': [['Gorgias AI Agent per-interaction billing',
+                                   '$0.90 annual or $1 monthly; $1.50 per interaction over allowance',
+                                   'Each automated interaction also counts as a helpdesk ticket; human '
+                                   'replies within 72 hours bill as normal tickets',
+                                   'Macha ([eusN-cV9bSQ @ 00:02:55])'],
+                                  ['Gorgias helpdesk plan tiers with AI allowance',
+                                   'Starter $40, Basic $90, Pro $550, Advanced $1,430 monthly',
+                                   'Pro includes 2,000 tickets and 190 AI interactions; Advanced includes '
+                                   '5,000 and 530',
+                                   'Macha ([7Ac3MIM55Yc @ 00:03:22])'],
+                                  ['Macha agent flat ticket bundles',
+                                   '$299 for 750, $599 for 1,500, $3,999 for 10,000 tickets',
+                                   'Runs in safe mode until about nine in ten drafts are approved',
+                                   'Macha ([VsY0GsB1UI0 @ 00:05:47])'],
+                                  ['Fini per-resolution pricing with no minimum',
+                                   '$0.89 per resolution, about $267 for 300 resolutions',
+                                   'Implementation included, but the bill grows as the AI resolves more '
+                                   'tickets',
+                                   'Macha ([iqOjQraqwcM @ 00:03:11])'],
+                                  ['Cevanos refund approval threshold',
+                                   'Any refund above $75 goes to a manager approval queue',
+                                   'The manager records a reason and approves; duplicate refunds are '
+                                   'refused by policy',
+                                   'Amol Walunj ([QZz9_VSA1lA @ 00:02:09])'],
+                                  ['Post-purchase first-order unit economics',
+                                   '$100 AOV, 60% margin, 3x ROAS leaves about $26 profit',
+                                   'The second order earns the full $60 gross profit, so the flow pays for '
+                                   'itself',
+                                   'Tarun Brar - eCom Email Marketing ([coevagBV6wU @ 00:03:37])'],
+                                  ['Post-purchase flow performance benchmarks',
+                                   'Open over 50% average, 74% top 10%; placed order 0.4% to 2%',
+                                   'Use these numbers to judge whether the flow is underperforming before '
+                                   'rebuilding',
+                                   'Tarun Brar - eCom Email Marketing ([coevagBV6wU @ 00:02:13])']]},
+               'callout': {'kind': 'INSIDER PRO-TIPS',
+                           'title': 'Small settings that change the bill and the inbox',
+                           'body': 'Four adjustments the practitioners make that cut AI cost, protect '
+                                   'deliverability and keep offers urgent.',
+                           'items': ['Never let the agent quote a delivery date. Shopify holds the '
+                                     'tracking number, not the latest carrier scan, so point the customer '
+                                     'to the tracking link [Macha — VsY0GsB1UI0 @ 00:03:22].',
+                                     'Model your own resolution rate before signing up for per-resolution '
+                                     'pricing. With Fini and similar tools, the bill grows as the AI '
+                                     'resolves more tickets [Macha — iqOjQraqwcM @ 00:03:11].',
+                                     "Turn off Shopify's shipping email and apply for transactional status "
+                                     "in Klaviyo so the email lands in Updates, not Promotions: 'You get "
+                                     "better deliverability if it ends up here' [Gavin Hewitson — "
+                                     'Cu4iN3jgMwI @ 00:07:54].',
+                                     "Cap flash offers in the post-purchase flow: 'You don't want these "
+                                     "offers to last more than 3 to 4 days,' followed by a 24-hour last "
+                                     'chance [Tarun Brar - eCom Email Marketing — coevagBV6wU @ '
+                                     '00:15:48].']},
+               'sop_steps': [{'step': 1,
+                              'title': 'Connect and scope the order-status agent',
+                              'action': 'Authorize the agent from the Gorgias app store with read and '
+                                        'write access to customers and tickets, then point it at Shopify '
+                                        'order lookup.',
+                              'detail': 'Gorgias shows the requested scopes at authorization [Amol Walunj '
+                                        "— QZz9_VSA1lA @ 00:00:18]. The agent uses the Shopify 'Get order' "
+                                        'tool or searches by email, follows an existing macro and tags '
+                                        'tickets wismo and AI draft [Macha — VsY0GsB1UI0 @ 00:01:58].'},
+                             {'step': 2,
+                              'title': 'Run safe mode until drafts clear the bar',
+                              'action': 'Keep the agent drafting rather than sending until about nine in '
+                                        'ten drafts are approved, then take the first category live.',
+                              'detail': "'Before launch, we agree the bar with your team, usually about "
+                                        "nine in ten drafts approved.' Setup is a 20-minute call, and the "
+                                        'first category goes live within a week [Macha — VsY0GsB1UI0 @ '
+                                        '00:06:31].'},
+                             {'step': 3,
+                              'title': 'Build the post-purchase flow from the template',
+                              'action': "Open Flows, click Create flow, search 'post purchase', pick the "
+                                        'template for your integration and add cancel and refund filters.',
+                              'detail': "Search 'post purchase' in the template bar and pick the Shopify, "
+                                        'WooCommerce or BigCommerce variant [TUTOR BASE — qaQ0aFPTDKA @ '
+                                        '00:00:55]. Trigger on Placed Order with canceled = 0 and refunded '
+                                        '= 0 filters [Derek Stroh — cerX0RFHJ0c @ 00:05:22].'},
+                             {'step': 4,
+                              'title': 'Add the second-order incentive and the review request',
+                              'action': 'Split on placed order = 1, wait four days, offer 10-15% on the '
+                                        'second order, and send the review ask after delivery.',
+                              'detail': 'Use a placed order = 1 split, a 4-day delay and a 10-15% '
+                                        'second-order incentive [Gavin Hewitson — Cu4iN3jgMwI @ 00:12:37]. '
+                                        'Wait until after delivery to ask for a review [Tarun Brar - eCom '
+                                        'Email Marketing — coevagBV6wU @ 00:12:12].'}]},
+              {'heading': 'Section 3: Where Practitioners Disagree & Alternative Playbooks',
+               'paragraphs': ['The sharpest split in AI support is how the bill scales with volume. '
+                              'Gorgias AI Agent charges $0.90 per automated interaction on annual billing '
+                              "and $1 monthly, each one also counted as a helpdesk ticket, and Macha's "
+                              'review notes the Pro plan includes only 190 interactions before overage '
+                              'jumps to $1.50, while scoring Gorgias 62/100 against its own 92 '
+                              "[eusN-cV9bSQ @ 00:02:55]. In Macha's six-tool shootout at 1,000 tickets "
+                              'with 300 resolved, Gorgias lands at $355 for the AI layer, Siena at $1,020 '
+                              'on a $750 monthly platform fee, Fini at $267 on $0.89 per resolution with '
+                              'no minimum, and My Ask AI at $199 for 1,000 tickets with white-glove setup '
+                              'from $999 a month [iqOjQraqwcM @ 00:03:11]. Macha sells flat tiers instead, '
+                              'and at 1,000 tickets its own product needs the $599 plan, so it scores '
+                              'itself 3 on cost and concedes it breaks even against Gorgias only when it '
+                              'resolves close to half of all tickets [iqOjQraqwcM @ 00:05:42]. At 5,000 '
+                              'tickets the comparison flips: Macha puts its own price at $1,999, level '
+                              "with Gorgias at 30% resolution and lower above it, while Gorgias's bill at "
+                              'that volume runs $2,885 total at 30% and the AI portion alone climbs toward '
+                              '$3,485 at 50% [7Ac3MIM55Yc @ 00:06:32]. The operator call is simple: pick '
+                              "the pricing model that matches your real resolution rate, not the vendor's "
+                              'headline automation claim.',
+                              'The second disagreement is who signs off before a customer sees an AI '
+                              'answer. Macha runs every new client through a 20-minute call and then safe '
+                              'mode, holding drafts until the team approves about nine in ten, with the '
+                              'first category live within a week and no setup fee [VsY0GsB1UI0 @ '
+                              "00:06:31]. Macha's review of Gorgias AI Agent 3.0 flags the opposite "
+                              'design: Playground testing is unbilled and a second AI model checks answers '
+                              'before sending, but there is no step for the team to approve drafts before '
+                              'customers see them [eusN-cV9bSQ @ 00:02:35]. Amol Walunj demos a third '
+                              'playbook in Cevanos where the gate is a hard dollar policy rather than '
+                              'draft review: the agent sends a one-time code to the account email before '
+                              'any refund, and any refund over $75 lands in an approval queue where a '
+                              'manager enters a reason and approves; a duplicate refund gets refused by '
+                              'policy, not by AI judgement, with the reason on record [QZz9_VSA1lA @ '
+                              '00:02:09]. Brandon Amoroso skips AI for routing altogether, building native '
+                              'Gorgias rules that tag a Shopify last order over $1,000 as a high value '
+                              'order, assign an agent, fire an auto-reply, or alert the owner directly, '
+                              'and argues the helpdesk drastically reduces hours on its own [Pwv-LlhTPwo @ '
+                              '00:07:28].',
+                              'Retention builders split on how the post-purchase flow is wired and when '
+                              'money goes on the table. Gavin Hewitson runs two flows: one on Placed Order '
+                              'with 20-minute-delayed, text-only founder emails that are not designed to '
+                              'sell, and one on Fulfilled Order because fulfillment timing is more '
+                              'accurate, then drops a 10 to 15% second-order incentive after a 4-day delay '
+                              'and gives the else path the same offer [Cu4iN3jgMwI @ 00:12:37]. Emiel '
+                              "Dingemans runs a single Placed Order flow, waits 10 minutes so Shopify's "
+                              'transactional email lands first, splits on placed order of two or more, '
+                              'rejoins the paths, and sends a founder check-in at about two weeks because '
+                              'replies help deliverability [6OklvvWTGmw @ 00:34:33]. Tarun Brar holds the '
+                              'money much longer: education at plus 3 days, cross-sell 5 days after '
+                              'delivery, then a flash offer for new buyers only around day 45, stretched '
+                              'to 2 to 3 months for skincare and cut to 30 days for protein, with offers '
+                              'capped at 3 to 4 days [coevagBV6wU @ 00:10:02]. Derek Stroh runs eight '
+                              'emails, lands 10% off at E5, and fires an expiring custom code at E7 that '
+                              'cannot be found on Reddit, because a repurchase inside 30 to 60 days makes '
+                              'loyalty much higher [cerX0RFHJ0c @ 00:09:48].'],
+               'table': {'caption': 'Competing playbooks for AI support and retention flows, side by side',
+                         'headers': ['Decision Point',
+                                     'Playbook A',
+                                     'Playbook B',
+                                     'Operator Read',
+                                     'Expert Source'],
+                         'rows': [['AI support pricing model at 1,000 tickets',
+                                   'Gorgias per-interaction billing: $190 for 190 included plus 110 at '
+                                   '$1.50 equals $355',
+                                   'Macha flat tier: 1,000 tickets requires the $599 plan, scored 3 on '
+                                   'cost',
+                                   'Macha only breaks even against Gorgias near 50% resolution at this '
+                                   'volume',
+                                   'Macha ([iqOjQraqwcM @ 00:05:42])'],
+                                  ['AI support pricing model at 5,000 tickets',
+                                   'Gorgias runs $2,885 total at 30% resolution, AI part rising with '
+                                   'resolutions',
+                                   'Macha prices 5,000 tickets at $1,999 regardless of resolution rate '
+                                   'achieved',
+                                   'Level with Gorgias at 30% resolution and cheaper at every rate above '
+                                   'it',
+                                   'Macha ([7Ac3MIM55Yc @ 00:06:32])'],
+                                  ['Human sign-off before AI answers reach customers',
+                                   'Safe mode holds drafts until roughly nine in ten get team approval',
+                                   'Gorgias 3.0 uses a second AI model check with no team draft approval',
+                                   'Choose draft review when brand voice risk outweighs speed to launch',
+                                   'Macha ([eusN-cV9bSQ @ 00:02:35])'],
+                                  ['Refund control inside an AI support agent',
+                                   'Hard policy gate: any refund over $75 routes to a manager approval '
+                                   'queue',
+                                   'One-time code to the account email before any refund gets processed',
+                                   'Duplicate refunds refused by written policy, not AI judgement, with '
+                                   'reason logged',
+                                   'Amol Walunj ([QZz9_VSA1lA @ 00:02:09])'],
+                                  ['Post-purchase flow trigger architecture and confirmation timing',
+                                   'Two flows on Placed Order and Fulfilled Order with 20-minute founder '
+                                   'email delay',
+                                   'One Placed Order flow, 10-minute wait, split on two-plus orders, then '
+                                   'rejoin',
+                                   'Fulfilled Order timing is more accurate for shipping and cross-sell '
+                                   'sends',
+                                   'Gavin Hewitson ([Cu4iN3jgMwI @ 00:12:37])'],
+                                  ['When to put the second-order discount in front of buyers',
+                                   '10 to 15% second-order incentive after a 4-day delay on first orders',
+                                   'Flash offer for new buyers only near day 45, adjusted by product '
+                                   'category',
+                                   "Match the offer window to the product's real usage and repurchase "
+                                   'cycle',
+                                   'Tarun Brar - eCom Email Marketing ([coevagBV6wU @ 00:10:02])'],
+                                  ['Email revenue share target and SMS lift claims',
+                                   'Host benchmark says email should drive 35 to 50% of attributed revenue',
+                                   'Theo Clough targets 30 to 40% of revenue and claims $36 back per $1',
+                                   'Guest brand sat at only 10 to 15%, showing the gap left on the table',
+                                   'Carbon Box Media ([wFXlLgdV31A @ 00:05:47])']]}},
+              {'heading': 'Section 4: Firsthand Failure Modes, Traps & Economics Checks',
+               'paragraphs': ['The WISMO failures are data failures before they are AI failures. Macha '
+                              'warns that Gorgias macros read only the most recent order, so a customer '
+                              'with several open orders can get the wrong answer from a macro-driven reply '
+                              '[VsY0GsB1UI0 @ 00:00:38]. Shopify stores the tracking number, not the '
+                              'latest carrier scan, so the agent points to the tracking link and never '
+                              'guesses a delivery date; email mismatch is the privacy trap, where the '
+                              'agent shares nothing and asks for the order number and checkout email '
+                              'instead [VsY0GsB1UI0 @ 00:03:22]. Macha also flags that past tickets are '
+                              'not a knowledge source in Gorgias AI Agent, and that Flow resolutions '
+                              'quietly draw on the same allowance as AI resolutions, so scripted '
+                              'automation eats the same budget [7Ac3MIM55Yc @ 00:02:16]. Amol Walunj shows '
+                              'the hard action ceiling in a live demo: the Cevanos agent cannot ship a '
+                              'replacement, so it opens a Gorgias ticket carrying the order and refund '
+                              "details for a human to execute [QZz9_VSA1lA @ 00:02:54]. Macha's "
+                              'always-human list covers delivered-not-received, damaged or wrong items, '
+                              'address changes, cancelled or refunded orders, anger and chargeback '
+                              'threats, with no refund or reship issued unless the written rules '
+                              'explicitly allow it.',
+                              "The economics trap is that AI support pricing punishes success. Macha's own "
+                              'review boils its Gorgias criticism down to two lines, you do the work and '
+                              'price grows with success, and spells out that the $550 Pro plan splits into '
+                              '$360 helpdesk for 2,000 tickets and $190 AI for 190 interactions, with '
+                              '$1.50 per interaction past that, while a human reply inside 72 hours gets '
+                              'billed as a normal ticket instead [eusN-cV9bSQ @ 00:04:06]. Worked at 30% '
+                              'resolution, 1,000 tickets runs $715 total and 5,000 tickets runs $2,885; '
+                              'push resolution to 50% and the AI part climbs from about $2,000 to $3,485, '
+                              'because the AI part of the bill grows with every resolution [7Ac3MIM55Yc @ '
+                              "00:05:06]. Macha hangs the same warning on Fini's $0.89 per resolution with "
+                              'no minimum: model your own resolution rate first before signing anything '
+                              '[iqOjQraqwcM @ 00:03:11]. Subscription retention carries its own brutal '
+                              'math: Milan Raviji reports paid-ad subscriber acquisition costing 4 to 5 '
+                              'times more than one-time buyers, 80% cancelling in month one, and the '
+                              'Scooch rebuild cutting ad spend 48% while revenue fell only 5% [6xiaPZPDBCQ '
+                              '@ 00:12:48]. Payment failure sits on the churn list too, with the fourth '
+                              'card decline treated as a churned customer.',
+                              'Retention flows break on timing, triggers and lazy copy. Derek Stroh lists '
+                              'the killers he sees in audits: generic thanks, review, buy-more series, '
+                              'promo overload, no education, review requests fired before delivery, no '
+                              'split between first-time, repeat and VIP buyers, and a first offer bigger '
+                              'than the second [cerX0RFHJ0c @ 00:11:51]. Emiel Dingemans calls out the '
+                              'common build error of a cart flow that actually runs on a checkout trigger, '
+                              'insisting the cart abandonment flow and the checkout abandonment flow are '
+                              'two separate flows that both need to be live, built on the newer Shopify '
+                              "Added to Cart trigger [6OklvvWTGmw @ 00:21:34]. Gavin Hewitson's fix for "
+                              'clashing confirmations is a 20-minute delay so the Shopify or Woo email '
+                              "lands first, plus switching off Shopify's own shipping email and applying "
+                              'for transactional status so the notice lands in Updates instead of '
+                              'Promotions for better deliverability [Cu4iN3jgMwI @ 00:07:54]. On SMS, '
+                              'Tarun Brar warns that order phone numbers do not count as consent, US '
+                              'abandoned checkout gets one text only, and if SMS costs exceed revenue the '
+                              'move is to shrink segments to recent clickers rather than quitting the '
+                              'channel [JT1uQ-EOyhM @ 00:14:04].'],
+               'table': {'caption': 'Firsthand traps in AI support and retention flows, with the '
+                                    'practitioner fix',
+                         'headers': ['Failure Mode', 'What Breaks', 'Practitioner Fix', 'Expert Source'],
+                         'rows': [['Gorgias macros answering order status questions',
+                                   'Macros only read the most recent order, missing other open orders',
+                                   'Agent pulls the order via Shopify Get order and lists each open order '
+                                   'by number',
+                                   'Macha ([VsY0GsB1UI0 @ 00:00:38])'],
+                                  ['Per-resolution AI billing as automation improves',
+                                   'The AI part of the bill grows with every single resolution',
+                                   'Model your real resolution rate before choosing per-resolution or flat '
+                                   'pricing',
+                                   'Macha ([7Ac3MIM55Yc @ 00:05:06])'],
+                                  ['Review requests sent right after the order is placed',
+                                   'Buyers get asked to review a product they have not received',
+                                   'Wait until after delivery, roughly 7 to 10 days with product in hand',
+                                   'Tarun Brar - eCom Email Marketing ([coevagBV6wU @ 00:12:12])'],
+                                  ['Cart flow secretly built on a checkout trigger',
+                                   'Cart abandoners never enter a flow built for their stage',
+                                   'Run separate cart and checkout flows, cart on Shopify Added to Cart',
+                                   'Emiel Dingemans | eCommerce Retention Marketing ([6OklvvWTGmw @ '
+                                   '00:21:34])'],
+                                  ['Welcome flow with 12-hour delays and smart sending left on',
+                                   'Sequence fires too tightly and subscribers silently skip flow emails',
+                                   'Use 1-day delays and turn smart sending off inside the welcome flow',
+                                   'Theo Clough | Email Marketing ([AZHCdf0AuwM @ 00:11:25])'],
+                                  ['Subscription card declines treated as a billing afterthought',
+                                   'Payment failure quietly becomes one of the five churn reasons',
+                                   'Escalate messaging by decline count and treat the fourth decline as '
+                                   'churned',
+                                   'Milan Raviji│Klaviyo & Email Marketing ([6xiaPZPDBCQ @ 00:11:45])'],
+                                  ['Running retention on Shopify Email and judging it by opens',
+                                   'Machine opens after iOS 14 make open rate an unreliable success metric',
+                                   'Move to Klaviyo or Omnisend and measure flows on clicks instead of '
+                                   'opens',
+                                   'Carbon Box Media ([wFXlLgdV31A @ 00:06:02])']]},
+               'callout': {'kind': 'OPERATOR GATE',
+                           'title': 'Four checks before AI support and retention flows go live',
+                           'body': 'Every item below comes from a pitfall a practitioner hit or flagged '
+                                   'directly. Clear all four before turning on automated replies or the '
+                                   'post-purchase sequence.',
+                           'items': ['Hard-route delivered-not-received, damaged or wrong items, address '
+                                     'changes, cancelled or refunded orders, anger and chargebacks to a '
+                                     'human, and block any refund or reship the rules do not allow [Macha '
+                                     '— VsY0GsB1UI0 @ 00:05:00].',
+                                     'Model your own resolution rate before signing a per-resolution AI '
+                                     'contract, because the bill grows as the AI resolves more tickets '
+                                     '[Macha — iqOjQraqwcM @ 00:03:11].',
+                                     'Hold every review request until after delivery, with the product in '
+                                     'hand roughly 7 to 10 days [Tarun Brar - eCom Email Marketing — '
+                                     'coevagBV6wU @ 00:12:12].',
+                                     'Filter post-purchase flows to canceled 0 and refunded 0 since '
+                                     'starting so refunded buyers never get thank-you or cross-sell sends '
+                                     '[Gavin Hewitson — Cu4iN3jgMwI @ 00:05:58].']}}],
+ 'pull_quote': '"The AI part of the bill grows with every resolution." — Macha (7Ac3MIM55Yc @ 00:05:06).',
+ 'diagram_id': 'diag-02',
+ 'action_checklist': ['Launch the AI agent in safe mode and agree the bar with the team before going live, '
+                      'usually about nine in ten drafts approved, with the first category live within a '
+                      'week [Macha — VsY0GsB1UI0 @ 00:06:31].',
+                      'Gate refunds by policy: send a one-time code to the account email before any refund '
+                      'and route every refund over $75 to a manager approval queue [Amol Walunj — '
+                      'QZz9_VSA1lA @ 00:02:09].',
+                      'Build a Gorgias rule that tags any Shopify last order over $1,000 as a high value '
+                      'order, assigns an agent, and alerts you [Brandon Amoroso — Pwv-LlhTPwo @ 00:07:28].',
+                      "Trigger the post-purchase flow on Placed Order, wait about 10 minutes for Shopify's "
+                      'transactional email, then split on placed order of two or more [Emiel Dingemans | '
+                      'eCommerce Retention Marketing — 6OklvvWTGmw @ 00:34:33].',
+                      'Add a surprise-and-delight free pouch in box 2 for products with high month-one '
+                      'churn, and offer pause, then a discount, then a win-back flow for customers with '
+                      'too much product [Milan Raviji│Klaviyo & Email Marketing — 6xiaPZPDBCQ @ 00:05:27].',
+                      'Add SMS to post-purchase, replenishment and birthday flows to build loyalty '
+                      'alongside email [Klaviyo — zfCLuKMRGEE @ 00:02:56].'],
+ 'statutory_citations': [{'title': 'Macha — Gorgias AI explained (2026): AI Agent, automation and cost '
+                                   '[00:05:06]',
+                          'url': 'https://www.youtube.com/watch?v=7Ac3MIM55Yc&t=306s',
+                          'relevance': 'Primary practitioner testimony on Gorgias AI Agent plan tiers and '
+                                       'how the AI bill scales with resolution rate.'},
+                         {'title': 'Macha — AI for "where is my order" tickets in Gorgias [00:06:31]',
+                          'url': 'https://www.youtube.com/watch?v=VsY0GsB1UI0&t=391s',
+                          'relevance': 'Primary practitioner testimony on WISMO automation rules, human '
+                                       'handover cases, and safe-mode launch.'},
+                         {'title': 'Tarun Brar - eCom Email Marketing — Klaviyo Tutorial: How to Setup the '
+                                   'Post-Purchase Flow 2025 (Step by Step) [00:10:02]',
+                          'url': 'https://www.youtube.com/watch?v=coevagBV6wU&t=602s',
+                          'relevance': 'Primary practitioner testimony on post-purchase unit economics, '
+                                       'flow structure, and review timing.'},
+                         {'title': 'Milan Raviji│Klaviyo & Email Marketing — Recharge Subscription Flows '
+                                   'Tutorial For 2026 (Full Strategy) [00:06:42]',
+                          'url': 'https://www.youtube.com/watch?v=6xiaPZPDBCQ&t=402s',
+                          'relevance': 'Primary practitioner testimony on subscription churn reasons and '
+                                       'retention flows.'}],
+ 'source_citations': [{'source_type': 'video_pro_tip',
+                       'video_id': 'VsY0GsB1UI0',
+                       'title': 'AI for "where is my order" tickets in Gorgias',
+                       'channel': 'Macha',
+                       'author': 'Macha',
+                       'text': 'Before launch, we agree the bar with your team, usually about nine in ten '
+                               'drafts approved.',
+                       'tip': 'Before launch, we agree the bar with your team, usually about nine in ten '
+                              'drafts approved.',
+                       'timestamp': 391,
+                       'timestamp_seconds': 391,
+                       'timestamp_label': '[00:06:31]',
+                       'url': 'https://www.youtube.com/watch?v=VsY0GsB1UI0&t=391s',
+                       'markdown': '[00:06:31](https://www.youtube.com/watch?v=VsY0GsB1UI0&t=391s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q10.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'QZz9_VSA1lA',
+                       'title': 'How to Automate Gorgias Customer Support with Cevanos AI | Live Demo',
+                       'channel': 'Amol Walunj',
+                       'author': 'Amol Walunj',
+                       'text': 'Any refund over $75 goes to a person through an approval queue.',
+                       'tip': 'Any refund over $75 goes to a person through an approval queue.',
+                       'timestamp': 129,
+                       'timestamp_seconds': 129,
+                       'timestamp_label': '[00:02:09]',
+                       'url': 'https://www.youtube.com/watch?v=QZz9_VSA1lA&t=129s',
+                       'markdown': '[00:02:09](https://www.youtube.com/watch?v=QZz9_VSA1lA&t=129s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q10.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'eusN-cV9bSQ',
+                       'title': 'Gorgias AI Agent review (2026): AI Agent 3.0, price and setup, scored',
+                       'channel': 'Macha',
+                       'author': 'Macha',
+                       'text': 'Our own review comes down to three points.',
+                       'tip': 'Our own review comes down to three points.',
+                       'timestamp': 246,
+                       'timestamp_seconds': 246,
+                       'timestamp_label': '[00:04:06]',
+                       'url': 'https://www.youtube.com/watch?v=eusN-cV9bSQ&t=246s',
+                       'markdown': '[00:04:06](https://www.youtube.com/watch?v=eusN-cV9bSQ&t=246s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q10.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'iqOjQraqwcM',
+                       'title': 'Best AI agent for Gorgias and Shopify support (2026)',
+                       'channel': 'Macha',
+                       'author': 'Macha',
+                       'text': "Against Gorgias's AI Agent, Macha breaks even only when it resolves close "
+                               'to half your tickets.',
+                       'tip': "Against Gorgias's AI Agent, Macha breaks even only when it resolves close "
+                              'to half your tickets.',
+                       'timestamp': 342,
+                       'timestamp_seconds': 342,
+                       'timestamp_label': '[00:05:42]',
+                       'url': 'https://www.youtube.com/watch?v=iqOjQraqwcM&t=342s',
+                       'markdown': '[00:05:42](https://www.youtube.com/watch?v=iqOjQraqwcM&t=342s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q10.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': '7Ac3MIM55Yc',
+                       'title': 'Gorgias AI explained (2026): AI Agent, automation and cost',
+                       'channel': 'Macha',
+                       'author': 'Macha',
+                       'text': 'The AI part of the bill grows with every resolution.',
+                       'tip': 'The AI part of the bill grows with every resolution.',
+                       'timestamp': 306,
+                       'timestamp_seconds': 306,
+                       'timestamp_label': '[00:05:06]',
+                       'url': 'https://www.youtube.com/watch?v=7Ac3MIM55Yc&t=306s',
+                       'markdown': '[00:05:06](https://www.youtube.com/watch?v=7Ac3MIM55Yc&t=306s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q10.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'Pwv-LlhTPwo',
+                       'title': "Gorgias Overview & Demo | Shopify's #1 Customer Service App",
+                       'channel': 'Brandon Amoroso',
+                       'author': 'Brandon Amoroso',
+                       'text': 'Gorgias drastically reduces the number of hours spent on customer support.',
+                       'tip': 'Gorgias drastically reduces the number of hours spent on customer support.',
+                       'timestamp': 556,
+                       'timestamp_seconds': 556,
+                       'timestamp_label': '[00:09:16]',
+                       'url': 'https://www.youtube.com/watch?v=Pwv-LlhTPwo&t=556s',
+                       'markdown': '[00:09:16](https://www.youtube.com/watch?v=Pwv-LlhTPwo&t=556s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q10.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': '6xiaPZPDBCQ',
+                       'title': 'Recharge Subscription Flows Tutorial For 2026 (Full Strategy)',
+                       'channel': 'Milan Raviji│Klaviyo & Email Marketing',
+                       'author': 'Milan Raviji│Klaviyo & Email Marketing',
+                       'text': 'If you keep a customer for 3 months, the likelihood that they stay for '
+                               'longer is extraordinarily high.',
+                       'tip': 'If you keep a customer for 3 months, the likelihood that they stay for '
+                              'longer is extraordinarily high.',
+                       'timestamp': 402,
+                       'timestamp_seconds': 402,
+                       'timestamp_label': '[00:06:42]',
+                       'url': 'https://www.youtube.com/watch?v=6xiaPZPDBCQ&t=402s',
+                       'markdown': '[00:06:42](https://www.youtube.com/watch?v=6xiaPZPDBCQ&t=402s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q10.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'wFXlLgdV31A',
+                       'title': 'How to 3x Your Email Revenue (Shopify Brand Case Study) | Lifecycle Talks',
+                       'channel': 'Carbon Box Media',
+                       'author': 'Carbon Box Media',
+                       'text': 'Email should be somewhere between 35 and 50 percent of your attributed '
+                               'revenue.',
+                       'tip': 'Email should be somewhere between 35 and 50 percent of your attributed '
+                              'revenue.',
+                       'timestamp': 347,
+                       'timestamp_seconds': 347,
+                       'timestamp_label': '[00:05:47]',
+                       'url': 'https://www.youtube.com/watch?v=wFXlLgdV31A&t=347s',
+                       'markdown': '[00:05:47](https://www.youtube.com/watch?v=wFXlLgdV31A&t=347s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q10.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'JT1uQ-EOyhM',
+                       'title': 'Klaviyo SMS Marketing Tutorial: Step-by-Step for Beginners',
+                       'channel': 'Tarun Brar - eCom Email Marketing',
+                       'author': 'Tarun Brar - eCom Email Marketing',
+                       'text': "It's basically 14 times higher than email.",
+                       'tip': "It's basically 14 times higher than email.",
+                       'timestamp': 124,
+                       'timestamp_seconds': 124,
+                       'timestamp_label': '[00:02:04]',
+                       'url': 'https://www.youtube.com/watch?v=JT1uQ-EOyhM&t=124s',
+                       'markdown': '[00:02:04](https://www.youtube.com/watch?v=JT1uQ-EOyhM&t=124s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q10.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'AZHCdf0AuwM',
+                       'title': 'Klaviyo Email Marketing For Beginners In (2026 Q4 Tutorial)',
+                       'channel': 'Theo Clough | Email Marketing',
+                       'author': 'Theo Clough | Email Marketing',
+                       'text': 'So, the profitability is like no other and that is why email is your '
+                               'highest ROI platform.',
+                       'tip': 'So, the profitability is like no other and that is why email is your '
+                              'highest ROI platform.',
+                       'timestamp': 68,
+                       'timestamp_seconds': 68,
+                       'timestamp_label': '[00:01:08]',
+                       'url': 'https://www.youtube.com/watch?v=AZHCdf0AuwM&t=68s',
+                       'markdown': '[00:01:08](https://www.youtube.com/watch?v=AZHCdf0AuwM&t=68s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q10.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'cerX0RFHJ0c',
+                       'title': 'Klaviyo Post Purchase Thank You Flow Strategies',
+                       'channel': 'Derek Stroh',
+                       'author': 'Derek Stroh',
+                       'text': 'So, what we found is that if we can get someone to purchase again in the '
+                               'first 30 to 60 days, people are going to come back and loyalty is going to '
+                               "be much higher than if we can't do that.",
+                       'tip': 'So, what we found is that if we can get someone to purchase again in the '
+                              'first 30 to 60 days, people are going to come back and loyalty is going to '
+                              "be much higher than if we can't do that.",
+                       'timestamp': 575,
+                       'timestamp_seconds': 575,
+                       'timestamp_label': '[00:09:35]',
+                       'url': 'https://www.youtube.com/watch?v=cerX0RFHJ0c&t=575s',
+                       'markdown': '[00:09:35](https://www.youtube.com/watch?v=cerX0RFHJ0c&t=575s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q10.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'coevagBV6wU',
+                       'title': 'Klaviyo Tutorial: How to Setup the Post-Purchase Flow 2025 (Step by Step)',
+                       'channel': 'Tarun Brar - eCom Email Marketing',
+                       'author': 'Tarun Brar - eCom Email Marketing',
+                       'text': 'For example, we want to wait until after delivery to ask for review.',
+                       'tip': 'For example, we want to wait until after delivery to ask for review.',
+                       'timestamp': 732,
+                       'timestamp_seconds': 732,
+                       'timestamp_label': '[00:12:12]',
+                       'url': 'https://www.youtube.com/watch?v=coevagBV6wU&t=732s',
+                       'markdown': '[00:12:12](https://www.youtube.com/watch?v=coevagBV6wU&t=732s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q10.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'zfCLuKMRGEE',
+                       'title': 'Klaviyo SMS & Email Integration: Boost Conversions & Engagement | Klaviyo '
+                                'Academy',
+                       'channel': 'Klaviyo',
+                       'author': 'Klaviyo',
+                       'text': 'Try adding SMS to the following flows, post purchase, replenishment and '
+                               'birthday flows.',
+                       'tip': 'Try adding SMS to the following flows, post purchase, replenishment and '
+                              'birthday flows.',
+                       'timestamp': 176,
+                       'timestamp_seconds': 176,
+                       'timestamp_label': '[00:02:56]',
+                       'url': 'https://www.youtube.com/watch?v=zfCLuKMRGEE&t=176s',
+                       'markdown': '[00:02:56](https://www.youtube.com/watch?v=zfCLuKMRGEE&t=176s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q10.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'qaQ0aFPTDKA',
+                       'title': 'How to Set Up Post Purchase Flow in Klaviyo 2026 (Quick Guide)',
+                       'channel': 'TUTOR BASE',
+                       'author': 'TUTOR BASE',
+                       'text': 'In this bar, type the words post purchase.',
+                       'tip': 'In this bar, type the words post purchase.',
+                       'timestamp': 55,
+                       'timestamp_seconds': 55,
+                       'timestamp_label': '[00:00:55]',
+                       'url': 'https://www.youtube.com/watch?v=qaQ0aFPTDKA&t=55s',
+                       'markdown': '[00:00:55](https://www.youtube.com/watch?v=qaQ0aFPTDKA&t=55s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q10.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'Cu4iN3jgMwI',
+                       'title': 'Klaviyo Post Purchase Flow Tutorial | Shopify Thank You Flow Setup',
+                       'channel': 'Gavin Hewitson',
+                       'author': 'Gavin Hewitson',
+                       'text': "Keep in mind, the second order is typically more profitable because you're "
+                               'not spending as much money on advertising to get them across the line.',
+                       'tip': "Keep in mind, the second order is typically more profitable because you're "
+                              'not spending as much money on advertising to get them across the line.',
+                       'timestamp': 796,
+                       'timestamp_seconds': 796,
+                       'timestamp_label': '[00:13:16]',
+                       'url': 'https://www.youtube.com/watch?v=Cu4iN3jgMwI&t=796s',
+                       'markdown': '[00:13:16](https://www.youtube.com/watch?v=Cu4iN3jgMwI&t=796s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q10.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'Cu4iN3jgMwI',
+                       'title': 'Klaviyo Post Purchase Flow Tutorial | Shopify Thank You Flow Setup',
+                       'channel': 'Gavin Hewitson',
+                       'author': 'Gavin Hewitson',
+                       'text': 'You get better deliverability if it ends up here.',
+                       'tip': 'You get better deliverability if it ends up here.',
+                       'timestamp': 474,
+                       'timestamp_seconds': 474,
+                       'timestamp_label': '[00:07:54]',
+                       'url': 'https://www.youtube.com/watch?v=Cu4iN3jgMwI&t=474s',
+                       'markdown': '[00:07:54](https://www.youtube.com/watch?v=Cu4iN3jgMwI&t=474s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q10.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': '6OklvvWTGmw',
+                       'title': 'Klaviyo Flows Tutorial For Beginners (2025 Full Course for Shopify)',
+                       'channel': 'Emiel Dingemans | eCommerce Retention Marketing',
+                       'author': 'Emiel Dingemans | eCommerce Retention Marketing',
+                       'text': 'This flow is important because right after buying people are still in '
+                               'buying mode as we call it.',
+                       'tip': 'This flow is important because right after buying people are still in '
+                              'buying mode as we call it.',
+                       'timestamp': 1688,
+                       'timestamp_seconds': 1688,
+                       'timestamp_label': '[00:28:08]',
+                       'url': 'https://www.youtube.com/watch?v=6OklvvWTGmw&t=1688s',
+                       'markdown': '[00:28:08](https://www.youtube.com/watch?v=6OklvvWTGmw&t=1688s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q10.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': '6OklvvWTGmw',
+                       'title': 'Klaviyo Flows Tutorial For Beginners (2025 Full Course for Shopify)',
+                       'channel': 'Emiel Dingemans | eCommerce Retention Marketing',
+                       'author': 'Emiel Dingemans | eCommerce Retention Marketing',
+                       'text': 'Between those 10 minutes they will receive a transactional email from '
+                               'Shopify.',
+                       'tip': 'Between those 10 minutes they will receive a transactional email from '
+                              'Shopify.',
+                       'timestamp': 2073,
+                       'timestamp_seconds': 2073,
+                       'timestamp_label': '[00:34:33]',
+                       'url': 'https://www.youtube.com/watch?v=6OklvvWTGmw&t=2073s',
+                       'markdown': '[00:34:33](https://www.youtube.com/watch?v=6OklvvWTGmw&t=2073s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q10.'}]}

@@ -1,726 +1,832 @@
 from __future__ import annotations
 
-CHAPTER_5 = {
-    "id": "Q5",
-    "chapter_id": "Q5",
-    "chapter_number": 5,
-    "question_number": 5,
-    "slug": "beginner-traps-clawbacks-asymmetric-failure-modes",
-    "question_prompt": "What kills 80% of newcomers in medical equipment resale, and what forensic metrics detect margin leaks, regulatory landmines, or platform bans before they wipe out capital?",
-    "kicker": "Q5 / THE BIG MONEY PLAYBOOKS",
-    "title": "Beginner Traps, Clawbacks & Asymmetric Failure Modes",
-    "subtitle": "Serial-Level Cost Forensics, Biomed Acceptance, FDA Servicing Boundaries, HIPAA Media Controls, and Payment-Reversal Containment",
-    "layout_template": "expert_insights",
-    "reading_time_minutes": 14,
-    "executive_summary": (
-        "Candidate #14, Medical Equipment Resale, ranks #20 with a 85/100 "
-        "Money-to-Manpower Score: attractive spreads conceal capital-intensive, "
-        "labor-intensive failure paths. This chapter maps three operator plays: "
-        "diagnostic-system refurbishment, surgical-equipment resale, and "
-        "veterinary/aesthetic specialty resale. The canonical annual owner profits "
-        "are $25,000 Conservative, $164,000 Base, and $396,000 Scaled, on gross "
-        "equipment resale proceeds rather than customer treatment revenue. A "
-        "1 FT + 3 C pod must defend those outcomes through serial-specific "
-        "ownership evidence, biomed release records, supportability checks, and "
-        "cash reserves for reversals. The question's 80% framing is not a measured "
-        "failure rate. The actionable issue is loss concentration: one contaminated "
-        "shipment, locked software entitlement, concealed lien, or unrecoverable "
-        "refund can erase many successful trades."
-    ),
-    "key_metrics": [
-        {
-            "label": "Conservative",
-            "value": "$250,000",
-            "context": "Annual gross equipment resale proceeds; acquisition and refurbishment included in margin",
-            "note": "10% net margin; $25,000 annual owner net profit; 1 FT + 3 C",
-        },
-        {
-            "label": "Base",
-            "value": "$1,025,000",
-            "context": "Annual gross equipment resale proceeds; acquisition and refurbishment included in margin",
-            "note": "16.0% net margin; $164,000 annual owner net profit; 1 FT + 3 C",
-        },
-        {
-            "label": "Scaled",
-            "value": "$1,800,000",
-            "context": "Annual gross equipment resale proceeds; acquisition and refurbishment included in margin",
-            "note": "22% net margin; $396,000 annual owner net profit; 1 FT + 3 C",
-        },
-    ],
-    "sections": [
-        {
-            "heading": "1. Reject the Cheap Serial That Cannot Become a Deliverable Device",
-            "epistemic_status": "operating_framework",
-            "paragraphs": [
-                (
-                    "Treat the three mapped plays as different inspection businesses, "
-                    "not interchangeable inventory categories. Play one, diagnostic-system "
-                    "refurbishment, depends on probe integrity, image quality, software "
-                    "entitlements, and compatible workstations. Play two, surgical-equipment "
-                    "resale, depends on electrical safety, accessories, sterilization "
-                    "compatibility, and documented functional performance. Play three, "
-                    "veterinary/aesthetic specialty resale, depends on intended use, "
-                    "consumable availability, operator requirements, and the actual "
-                    "configuration being offered. Assign the two full-time staff to "
-                    "commercial ownership and operations ownership; retain four contractors "
-                    "for biomed testing, device-specific service, controlled logistics, "
-                    "and bookkeeping with records administration. These are capacity "
-                    "assignments, not six interchangeable repair technicians. Obtain "
-                    "specialist counsel or privacy support when a case requires it, "
-                    "and count that external expense inside operating costs. Before "
-                    "bidding, the commercial lead must identify a plausible buyer "
-                    "and the operations lead must identify a supportable release "
-                    "path. A low auction price without those two facts is a "
-                    "speculative parts position. The stated $20,000–$95,000 startup "
-                    "capital range does not make every lot affordable: quarantine, "
-                    "freight, repairs, and refunds compete for the same cash. "
-                    "An acquisition that consumes both purchasing liquidity and "
-                    "the refund reserve must be declined regardless of apparent spread."
-                ),
-                (
-                    "The first cluster of fatal traps is documentary: buying leased "
-                    "equipment from someone without disposition authority, accepting a "
-                    "serial number that differs from the invoice, overlooking a "
-                    "secured creditor, and assuming possession conveys transferable "
-                    "software. Request the seller's legal identity, equipment schedule, "
-                    "serial photographs, ownership representation, and any required "
-                    "lender or lessor release. UCC searches are jurisdiction-dependent "
-                    "and do not independently prove clean ownership; counsel should "
-                    "resolve conflicting records before funds leave escrow. Under "
-                    "UCC section 9-315, security interests can continue in collateral "
-                    "after disposition, subject to authorization and applicable "
-                    "exceptions. A marketplace receipt does not resolve that issue. "
-                    "Next, send the exact model, serial, software version, options "
-                    "list, and destination country to the manufacturer or authorized "
-                    "service organization. Obtain written answers about license "
-                    "transfer, parts access, installation, and support expiration. "
-                    "An ultrasound system with disabled options is not equivalent "
-                    "to the demonstration configuration. A laser console without "
-                    "usable handpieces can have negative recovery value after "
-                    "removal costs. Record unresolved ownership or entitlement "
-                    "questions as a purchase hold, not a discount negotiation. "
-                    "The four-person pod cannot economically litigate title while "
-                    "simultaneously rebuilding a service ecosystem for orphaned equipment."
-                ),
-                (
-                    "The next traps hide inside apparently functional hardware: a "
-                    "probe passes a brief scan but fails intermittently, a battery "
-                    "holds charge only during the demonstration, a surgical unit "
-                    "lacks the correct return-electrode accessories, or an aesthetic "
-                    "handpiece reaches its usage limit immediately after delivery. "
-                    "Replace the seller's generic demonstration with an agreed "
-                    "acceptance protocol tied to model-specific service documentation. "
-                    "For diagnostic systems, capture phantom images, probe-channel "
-                    "findings, error logs, storage behavior, and installed options. "
-                    "For surgical systems, retain measured outputs and electrical "
-                    "safety results using appropriate calibrated analyzers, such "
-                    "as a Fluke Biomedical platform selected by the technician. "
-                    "For specialty systems, establish consumable authentication, "
-                    "remaining supported life, cooling performance, and applicable "
-                    "laser controls. Never infer test adequacy from a calibration "
-                    "sticker alone. Search FDA recalls by manufacturer, model, "
-                    "and affected serial range, then obtain evidence that applicable "
-                    "corrections were completed. Set an internal circuit-breaker: "
-                    "any unresolved safety defect, altered identification plate, "
-                    "or missing critical accessory blocks listing. Require an "
-                    "independent service quotation when expected repairs exceed "
-                    "15% of expected selling price. That threshold is a purchasing "
-                    "policy, not a statutory tolerance or permission to sell "
-                    "a device with a known defect."
-                ),
-            ],
-            "table": {
-                "caption": "Acquisition Traps and Serial-Specific Evidence Across the Three Plays",
-                "headers": [
-                    "Trap and exposed operator play",
-                    "Evidence required before committing acquisition cash",
-                    "Early warning that overrides apparent discount",
-                    "Named owner and immediate containment action",
-                ],
-                "rows": [
-                    [
-                        "Diagnostic systems offered with borrowed demonstration software options",
-                        "Written entitlement transfer terms tied to exact device serial",
-                        "Seller refuses manufacturer confirmation or excludes installed options",
-                        "Commercial lead pauses bidding until transferable configuration is priced",
-                    ],
-                    [
-                        "Surgical equipment removed from facilities under active lease",
-                        "Lessor disposition authorization and serial-specific release of ownership",
-                        "Invoice seller differs from documented equipment owner",
-                        "Commercial lead requires ownership resolution before releasing purchase funds",
-                    ],
-                    [
-                        "Diagnostic probes hide intermittent cable and element failures",
-                        "Recorded phantom tests and qualified technician inspection findings",
-                        "Image artifacts recur after cable movement or warmup",
-                        "Biomed contractor quarantines probe and prices documented replacement",
-                    ],
-                    [
-                        "Surgical generators arrive without compatible safety-critical accessory sets",
-                        "Model-specific accessory inventory with functional and safety results",
-                        "Supplier substitutes connectors without documented compatibility evidence",
-                        "Operations lead blocks release until tested configuration is complete",
-                    ],
-                    [
-                        "Aesthetic handpieces exhaust supported pulses immediately after delivery",
-                        "Authenticated usage counters and written consumable replacement availability",
-                        "Counter history conflicts with service records or wear",
-                        "Device specialist calculates replacement economics before purchase authorization",
-                    ],
-                    [
-                        "Veterinary conversions assume human-device support transfers without restrictions",
-                        "Written support scope for intended species and configuration",
-                        "Manufacturer declines service for the proposed changed application",
-                        "Commercial lead rejects unsupported claims and revises sale scope",
-                    ],
-                ],
-            },
-            "callout": {
-                "kind": "INSIDER PRO-TIPS",
-                "title": "Buy the Evidence Package Before Buying the Machine",
-                "body": (
-                    "Veteran buyers price the supportable configuration, not the "
-                    "most flattering demonstration or the seller's original invoice."
-                ),
-                "items": [
-                    "Ask the service provider to quote against the actual serial before auction day; an attractive model family can contain unsupported revisions.",
-                    "Photograph every probe, handpiece, footswitch, and license screen during inspection, then attach that configuration schedule to the purchase agreement.",
-                    "Reserve qualified biomed bench time before arranging removal; idle inventory often begins with an unavailable technician rather than a difficult repair.",
-                    "Request both a repair quotation and an evidenced parts-recovery quotation so the downside case includes disposal, handling, and time to cash.",
-                ],
-            },
-        },
-        {
-            "heading": "2. Separate Routine Servicing from Product, Privacy, and Contamination Exposure",
-            "epistemic_status": "operating_framework",
-            "paragraphs": [
-                (
-                    "The most expensive regulatory trap is describing a material "
-                    "device change as routine refurbishment. FDA distinguishes "
-                    "servicing from remanufacturing based on the activities performed "
-                    "and their effects, not the invoice label. Under 21 CFR "
-                    "820.3, a remanufacturer includes a person whose work significantly "
-                    "changes a finished device's performance or safety specifications "
-                    "or intended use. Changing energy output, substituting critical "
-                    "components, rewriting control software, or marketing a new "
-                    "clinical application requires a documented assessment before "
-                    "work proceeds. The Quality Management System Regulation became "
-                    "effective February 2, 2026; determine applicable manufacturer "
-                    "requirements, registration, listing, premarket obligations, and "
-                    "quality-system duties for the actual role and device. Do "
-                    "not assume ordinary resale itself creates every manufacturer "
-                    "obligation, and do not assume a reseller label removes "
-                    "obligations created by the work. The biomed contractor records "
-                    "the proposed change; the operations lead holds the serial "
-                    "until qualified regulatory review establishes the path. "
-                    "This boundary matters particularly for surgical output stages "
-                    "and aesthetic energy devices. Veterinary-only devices require "
-                    "their own intended-use analysis rather than automatic import "
-                    "of every human-device rule. A conversion between applications "
-                    "must never be justified solely by a buyer's willingness "
-                    "to accept the hardware."
-                ),
-                (
-                    "A second asymmetric loss begins when used equipment arrives "
-                    "with patient data. Ultrasound archives, DICOM workstations, "
-                    "service logs, removable media, and network settings can retain "
-                    "identifiers even after the visible patient list is deleted. "
-                    "Establish whether the reseller receives protected health "
-                    "information as a business associate, whether an agreement "
-                    "is required, and which party performs sanitization before "
-                    "transfer. HIPAA applicability depends on the entities and "
-                    "activities involved; possession of any used device does "
-                    "not automatically establish covered-entity status. For regulated "
-                    "electronic information, 45 CFR 164.310(d) addresses device "
-                    "and media controls, including disposal and media reuse. "
-                    "Use a documented sanitization method appropriate to the "
-                    "media and device, informed by NIST SP 800-88, then "
-                    "verify the result without browsing clinical records unnecessarily. "
-                    "Factory reset is evidence only when its scope and "
-                    "effectiveness are established. If storage cannot be sanitized "
-                    "without disabling licensed functions, obtain manufacturer-supported "
-                    "replacement or another validated route. Isolate the device "
-                    "from production networks, restrict access, and retain a "
-                    "media disposition record linked to the equipment serial. "
-                    "Any suspected disclosure triggers containment and the applicable "
-                    "incident process, not deletion of logs or quiet forwarding "
-                    "of the device to the next buyer."
-                ),
-                (
-                    "Contamination and labeling failures can convert a profitable "
-                    "trade into an injury claim long after payment clears. "
-                    "Require a device-specific decontamination record from the "
-                    "releasing facility, then verify the process is appropriate "
-                    "for the surfaces, channels, and accessories present. A "
-                    "wiped exterior does not establish that an internal fluid "
-                    "path is safe. Used invasive accessories, single-use components, "
-                    "and instruments needing specialized reprocessing demand separate "
-                    "assessment; FDA requirements applicable to reprocessors are "
-                    "not bypassed by calling an item refurbished. Worker "
-                    "exposure to blood or other potentially infectious materials "
-                    "also invokes the applicable OSHA controls under 29 CFR "
-                    "1910.1030. Keep dirty intake physically separated from cleared "
-                    "inventory and use trained contractors for work outside "
-                    "the pod's demonstrated capability. Prescription-device distribution "
-                    "requires attention to 21 CFR 801.109 and applicable "
-                    "state requirements; aesthetic buyers are not interchangeable "
-                    "with authorized clinical purchasers. X-ray equipment additionally "
-                    "requires device-specific radiation and destination-state review. "
-                    "For every play, verify state dealer, installer, facility, "
-                    "or operator requirements where relevant rather than searching "
-                    "for one universal resale license. A missing decontamination "
-                    "record, contradictory intended-use label, or unresolved recall "
-                    "removes the serial from sale until documented resolution, "
-                    "even when the buyer requests immediate shipment."
-                ),
-            ],
-            "table": {
-                "caption": "Device, Data, and Worker-Safety Holds with Concrete Release Evidence",
-                "headers": [
-                    "Exposure requiring a separate operating decision",
-                    "Applicable authority or technical evidence source",
-                    "Release evidence retained against the equipment serial",
-                    "Circuit-breaker applied by the operations lead",
-                ],
-                "rows": [
-                    [
-                        "Refurbishment changes energy output or intended clinical application",
-                        "21 CFR 820.3 definitions and applicable manufacturer requirements",
-                        "Documented activity assessment and completed applicable regulatory pathway",
-                        "Stop modification and listing until role obligations are resolved",
-                    ],
-                    [
-                        "Diagnostic storage retains patient studies after superficial reset",
-                        "45 CFR 164.310(d) device and media control requirements",
-                        "Verified sanitization record covering internal and removable storage",
-                        "Isolate equipment and restrict access pending validated sanitization",
-                    ],
-                    [
-                        "Surgical accessories contain inaccessible residues from prior procedures",
-                        "Manufacturer reprocessing instructions and applicable FDA reprocessor requirements",
-                        "Qualified cleaning verification and accessory-specific disposition records",
-                        "Separate contaminated intake from every cleared shipping area",
-                    ],
-                    [
-                        "Workers handle equipment with foreseeable blood exposure risks",
-                        "29 CFR 1910.1030 bloodborne pathogens exposure control requirements",
-                        "Training records and task-specific protective handling procedures",
-                        "Suspend exposed handling until required controls are available",
-                    ],
-                    [
-                        "Prescription equipment is marketed to an unsuitable purchaser",
-                        "21 CFR 801.109 and destination-specific professional practice requirements",
-                        "Buyer qualification evidence and appropriate prescription-device sale documentation",
-                        "Reject unsupported consumer claims and pause buyer fulfillment",
-                    ],
-                    [
-                        "Affected recalled serial lacks evidence of completed correction",
-                        "FDA recall records and manufacturer serial-specific correction instructions",
-                        "Completed correction record matching affected model and serial",
-                        "Block publication and shipment until safety disposition is documented",
-                    ],
-                ],
-            },
-            "callout": {
-                "kind": "OPERATOR GATE",
-                "title": "Four Independent Checks Before a Serial Becomes Saleable",
-                "body": (
-                    "The operations lead records each result separately. A clean "
-                    "commercial file cannot substitute for a clean technical file."
-                ),
-                "items": [
-                    "Verify seller authority, serial identity, applicable creditor releases, and transferable software rights before committing acquisition funds.",
-                    "Verify calibrated test evidence, required accessories, recall disposition, and manufacturer-supported configuration before making performance claims.",
-                    "Verify decontamination, media sanitization, controlled custody, and any required information-handling agreement before releasing equipment from quarantine.",
-                    "Verify activity classification, device-specific distribution requirements, buyer qualifications, and destination-state obligations before accepting a binding delivery commitment.",
-                ],
-            },
-        },
-        {
-            "heading": "3. Reconstruct True Unit Economics Before Refunds Consume the Pod",
-            "epistemic_status": "illustrative_model",
-            "paragraphs": [
-                (
-                    "The canonical scorecard recognizes gross equipment resale proceeds, "
-                    "not customer procedure revenue, treatment volume, or auction "
-                    "catalog value. Conservative revenue of $250,000 at 10% "
-                    "produces $25,000 annual owner net profit and implies "
-                    "$225,000 total costs. Base revenue of $1,025,000 at "
-                    "16.0% produces $164,000 and implies $861,000 total costs. "
-                    "Scaled revenue of $1,800,000 at 22% produces $396,000 "
-                    "and implies $1,404,000 total costs. The first two "
-                    "cases use 1 FT + 3 C; Scaled uses "
-                    "1 FT + 3 C, eight people. These are "
-                    "scenario targets, not evidence that actual wages, throughput, "
-                    "or warranty experience already fit. Build a serial-level "
-                    "cost ledger in QuickBooks Online or Xero, with an "
-                    "inventory register linking each posting to the physical "
-                    "asset. Include buyer premiums, removal labor, freight, storage, "
-                    "repair parts, contractor testing, sales fees, and expected "
-                    "return exposure. Reconcile inventory accounting with the "
-                    "bookkeeper so purchasing cash outflow is not confused "
-                    "with immediate cost of goods sold. The stated "
-                    "$4,000–$18,000 monthly operating-expense range is planning "
-                    "context, not a second deduction from published net "
-                    "profit; actual recurring expenses must fit inside the "
-                    "total-cost envelope for the selected case."
-                ),
-                (
-                    "Consider an illustrative $40,000 diagnostic-system sale, separate "
-                    "from the canonical annual cases. An $18,000 hammer "
-                    "price plus $2,700 buyer premium, $1,600 removal and "
-                    "inbound transport, $3,200 refurbishment, $600 testing and "
-                    "sanitization, $1,400 outbound crating and freight, $1,200 "
-                    "selling and payment costs, and $1,500 expected warranty "
-                    "and return allowance totals $30,200. The resulting "
-                    "$9,800 contribution is 24.5% before allocated recurring "
-                    "overhead, not the owner's annual net margin. An "
-                    "incremental $6,000 probe failure outside that allowance "
-                    "reduces contribution to $3,800. At the unchanged "
-                    "$164,000 Base profit target, an additional unrecovered "
-                    "$16,400 loss consumes 10% of annual owner profit; "
-                    "that sensitivity does not replace the canonical scenario. "
-                    "Other leaks include nonrefundable auction premiums after "
-                    "rescission, undisclosed loading charges, storage while a "
-                    "site awaits installation, payment processing retained after "
-                    "a refund, and missing accessories discovered during "
-                    "commissioning. Obtain actual vendor terms rather than "
-                    "assuming every processor keeps the same fees. Quote "
-                    "installation separately when necessary, but track it "
-                    "within the agreed revenue and cost treatment. A "
-                    "shipping charge collected from the buyer does not "
-                    "eliminate freight risk or establish delivery acceptance."
-                ),
-                (
-                    "Clawback exposure begins before a refund appears in "
-                    "the bank feed. Card disputes, marketplace buyer "
-                    "protection, negotiated returns, warranty repairs, and "
-                    "secured-creditor recovery follow different rules and "
-                    "can overlap. Stripe or PayPal dispute deadlines "
-                    "come from the actual account notice; eBay "
-                    "return obligations come from the listing, transaction, "
-                    "and current platform terms. Capture the serial, "
-                    "tested configuration, condition disclosures, delivery evidence, "
-                    "and acceptance record without assuming a signature "
-                    "eliminates every remedy. A contract cannot make "
-                    "a materially misleading listing accurate. Maintain "
-                    "separate cash and expense views: an estimated "
-                    "warranty provision is not cash reserved for "
-                    "a full refund. As an internal liquidity "
-                    "policy, retain enough immediately available cash "
-                    "for the largest open refundable transaction, "
-                    "estimated recovery transport, and eight weeks "
-                    "of fixed operating costs; avoid double-counting "
-                    "restricted processor balances as available money. "
-                    "If that reserve falls short, stop new "
-                    "purchases before seeking more sales. For "
-                    "the four-person pod, inspect every first "
-                    "return from a new model family. "
-                    "Two same-cause failures within ten deliveries "
-                    "trigger a model-family hold and root-cause "
-                    "review. Small samples require investigation, "
-                    "not comforting portfolio averages that conceal "
-                    "one defective batch or one weak contractor."
-                ),
-            ],
-            "table": {
-                "caption": "Internal Forensic Thresholds for Margin, Cash, and Inventory Deterioration",
-                "headers": [
-                    "Metric calculated from serial-level operating records",
-                    "Explicit internal threshold requiring immediate owner review",
-                    "Likely mechanism behind the observed deterioration",
-                    "Circuit-breaker and responsible pod role assignment",
-                ],
-                "rows": [
-                    [
-                        "Forecast contribution less latest fully costed contribution",
-                        "Deterioration exceeds five percentage points on any serial",
-                        "Repair scope expanded while selling price remained fixed",
-                        "Bookkeeping contractor refreshes estimate before further purchase commitments",
-                    ],
-                    [
-                        "Actual repair cost divided by expected selling price",
-                        "Expected repairs exceed fifteen percent before acquisition commitment",
-                        "Hidden subsystem failures undermine the original refurbishment budget",
-                        "Device specialist obtains independent quotation and revised recovery case",
-                    ],
-                    [
-                        "Days since receipt without a completed release package",
-                        "Any serial remains unreleased after thirty calendar days",
-                        "Parts delays or missing records consume scarce working cash",
-                        "Operations lead assigns resolution date or initiates controlled exit",
-                    ],
-                    [
-                        "Days since release without credible buyer inspection activity",
-                        "Sixty days without inspection triggers documented pricing review",
-                        "Unsupported options or weak demand prevent inventory conversion",
-                        "Commercial lead compares evidenced bids and reduces purchase exposure",
-                    ],
-                    [
-                        "Repeated failure count within each model-family delivery cohort",
-                        "Two matching failures appear within ten completed deliveries",
-                        "Shared component defect or deficient contractor testing escapes detection",
-                        "Biomed contractor stops family releases pending documented corrective work",
-                    ],
-                    [
-                        "Available unrestricted cash against defined refund reserve requirement",
-                        "Cash falls below largest refund plus recovery and overhead",
-                        "Processor holds and inventory purchases conceal near-term repayment exposure",
-                        "Commercial lead freezes purchasing while bookkeeper rebuilds cash coverage",
-                    ],
-                ],
-            },
-        },
-        {
-            "heading": "4. Stop Platform Shortcuts and Turn Every Exception into a Controlled Decision",
-            "epistemic_status": "operating_framework",
-            "paragraphs": [
-                (
-                    "Naive shortcuts destroy marketplace access because they "
-                    "replace verifiable condition with an invented story. "
-                    "Relabeling a prescription device as a consumer "
-                    "wellness accessory, presenting servicing as FDA "
-                    "approval, concealing serial labels in photographs, "
-                    "reusing another seller's test certificate, or "
-                    "claiming a factory warranty without transfer "
-                    "confirmation creates a mismatch that complaints "
-                    "and document reviews can expose. Shipping "
-                    "a different serial than the invoiced "
-                    "unit makes otherwise valid testing records "
-                    "irrelevant. Review eBay's current medical-device "
-                    "policy and each payment provider's current "
-                    "restricted-business rules before listing a new "
-                    "category. Keep the review date, relevant "
-                    "policy excerpt, and account correspondence in "
-                    "the listing file. A listing accepted "
-                    "by software is not evidence that "
-                    "the category or claim is permitted. "
-                    "If a restriction arrives, stop affected "
-                    "listings, preserve records, resolve open "
-                    "customer obligations, and use the documented "
-                    "appeal process. Do not create substitute "
-                    "accounts, borrow identities, split restricted "
-                    "transactions, or disguise product descriptions "
-                    "to bypass review. Platform suspension can "
-                    "freeze both distribution and settlement "
-                    "cash, which is why the reserve "
-                    "calculation excludes balances the operator "
-                    "cannot immediately withdraw and why "
-                    "the commercial lead owns policy monitoring."
-                ),
-                (
-                    "Design telemetry around scarce attention rather "
-                    "than dashboard decoration. Use Airtable or "
-                    "a controlled spreadsheet for inventory states: "
-                    "received, quarantined, testing, released, listed, "
-                    "reserved, shipped, accepted, and returned. "
-                    "Each transition requires a named owner, "
-                    "timestamp, and linked evidence; inventory "
-                    "tracking is the first automation lever. "
-                    "Service-history indexing is the second: "
-                    "store repair reports, recall checks, "
-                    "configuration photographs, and test outputs "
-                    "under the serial, then extract dates "
-                    "and model identifiers for search. "
-                    "OCR can suggest fields but cannot "
-                    "certify a test or resolve conflicting "
-                    "serials. Alert immediately on duplicate "
-                    "serials, missing release documents, changed "
-                    "bank instructions, and mismatched shipping "
-                    "labels. Require an independently verified "
-                    "callback for seller payment changes. "
-                    "Route seven-day stagnant test queues "
-                    "to the operations lead and "
-                    "unanswered buyer defects after one "
-                    "business day to the commercial "
-                    "lead. These are internal service "
-                    "targets, not statutory response periods. "
-                    "Hold a weekly thirty-minute exception "
-                    "review covering only blocked cash, "
-                    "safety holds, disputed transactions, and "
-                    "aging inventory. Contractors update evidence "
-                    "before the meeting so the two "
-                    "full-time staff make decisions rather "
-                    "than reconstructing six separate inboxes "
-                    "while another shipment misses its "
-                    "promised installation window."
-                ),
-                (
-                    "When a serious complaint arrives, protect "
-                    "the customer and the evidence simultaneously. "
-                    "Record the serial, event description, "
-                    "configuration, delivery date, and immediate "
-                    "risk; communicate appropriate isolation or "
-                    "cessation instructions through qualified personnel "
-                    "when safety may be affected. "
-                    "Do not diagnose an injury "
-                    "through a sales chat or "
-                    "promise that resetting an alarm "
-                    "makes the device safe. Preserve "
-                    "the listing, communications, service files, "
-                    "and applicable logs, and notify "
-                    "the insurer under the actual "
-                    "policy's timing requirements. Determine whether "
-                    "the business's role creates reporting "
-                    "duties under 21 CFR Part "
-                    "803 or correction/removal duties under "
-                    "Part 806; those duties are "
-                    "not identical for ordinary distributors, "
-                    "importers, manufacturers, and user facilities. "
-                    "Use a qualified reviewer and "
-                    "the applicable deadlines, not the "
-                    "weekly meeting schedule. Expand the "
-                    "hold to related serials when "
-                    "a shared component or procedure "
-                    "is implicated. Resume sales only "
-                    "after documented disposition and corrective "
-                    "work establish a supportable release "
-                    "basis. Scaling to 3 FT "
-                    "+ 5 C should add "
-                    "measurable inspection and service capacity, "
-                    "not merely more inventory. The "
-                    "durable advantage across all three "
-                    "plays is reliable evidence per "
-                    "serial, collected before cash and "
-                    "custody become difficult to reverse."
-                ),
-            ],
-            "table": {
-                "caption": "Platform, Fraud, and Incident Signals That Require Immediate Containment",
-                "headers": [
-                    "Observable signal in the commercial operating system",
-                    "Evidence reviewed before taking any corrective action",
-                    "Immediate containment assigned to a named owner",
-                    "Documented condition required before normal work resumes",
-                ],
-                "rows": [
-                    [
-                        "Marketplace requests documents supporting a restricted medical-device listing",
-                        "Current category policy and original serial-specific listing evidence",
-                        "Commercial lead pauses affected listings and preserves correspondence",
-                        "Platform review resolved and listing claims independently substantiated",
-                    ],
-                    [
-                        "Seller changes receiving bank shortly before scheduled payment",
-                        "Existing verified contact records and independently confirmed instructions",
-                        "Commercial lead stops transfer pending trusted-channel callback verification",
-                        "Verified payee details match documented seller authority records",
-                    ],
-                    [
-                        "Shipping serial differs from invoice or release certificate",
-                        "Physical label photographs and linked biomed release package",
-                        "Operations lead stops carrier handoff and corrects allocation",
-                        "Invoice shipment and test evidence identify identical equipment",
-                    ],
-                    [
-                        "Buyer reports injury or potentially dangerous device behavior",
-                        "Event account device configuration and relevant service history",
-                        "Operations lead initiates safety containment and qualified reporting assessment",
-                        "Documented safety disposition supports any further equipment release",
-                    ],
-                    [
-                        "Processor places settlement funds into a restricted reserve",
-                        "Account notice balance availability and open refund exposure",
-                        "Bookkeeping contractor removes restricted funds from available cash",
-                        "Purchasing resumes only after unrestricted reserve coverage is restored",
-                    ],
-                    [
-                        "Two contractors submit conflicting results for identical serial",
-                        "Original measurements analyzer calibration and test configuration records",
-                        "Biomed contractor repeats disputed tests under controlled conditions",
-                        "Operations lead accepts reconciled evidence and closes discrepancy",
-                    ],
-                ],
-            },
-            "sop_steps": [
-                {
-                    "step": 1,
-                    "title": "Open the exception against the physical serial",
-                    "action": "Record the issue, affected buyer or seller, responsible owner, and immediate cash or safety exposure.",
-                    "detail": "Link original photographs, payment records, service reports, and communications; preserve originals and record later corrections separately.",
-                },
-                {
-                    "step": 2,
-                    "title": "Contain custody, claims, and new commitments",
-                    "action": "Pause affected listings, shipments, modifications, or payments according to the actual failure mechanism.",
-                    "detail": "Keep unrelated supported inventory moving, but extend the hold when shared components, contractors, or procedures create a credible common cause.",
-                },
-                {
-                    "step": 3,
-                    "title": "Quantify recovery and fulfill applicable duties",
-                    "action": "Price repair, refund, recovery freight, parts recovery, and disposal while assigning required notices and reporting reviews.",
-                    "detail": "The bookkeeping contractor updates cash coverage; the appropriate technical or regulatory specialist determines evidence and timing requirements.",
-                },
-                {
-                    "step": 4,
-                    "title": "Close with evidence and revise the purchasing rule",
-                    "action": "Document final disposition, realized loss, root cause, and the specific control preventing recurrence.",
-                    "detail": "The operations lead authorizes technical release and the commercial lead confirms accurate listing terms; neither replaces required external determinations.",
-                },
-            ],
-        },
-    ],
-    "pull_quote": "A cheap device becomes valuable only when its ownership, performance, support, and refund exposure are all provable.",
-    "diagram_id": "diag-05",
-    "action_checklist": [
-        "Map every active serial to diagnostic refurbishment, surgical resale, or veterinary/aesthetic specialty resale, with separate technical acceptance criteria.",
-        "Create one evidence package per serial covering ownership, software rights, recall disposition, decontamination, sanitization, and biomed release.",
-        "Reconcile serial-level costs to the canonical $25,000, $164,000, and $396,000 annual owner-profit cases without deducting operating expenses twice.",
-        "Calculate unrestricted refund coverage weekly and stop acquisitions whenever available cash falls below the documented reserve requirement.",
-        "Configure inventory alerts for duplicate serials, missing release records, seven-day test stagnation, thirty-day unreleased stock, and repeated model-family defects.",
-        "Run a simulated platform restriction and serious-device-complaint exercise, assigning evidence preservation, customer communication, reporting assessment, and purchasing containment.",
-    ],
-    "statutory_citations": [
-        {
-            "title": "21 CFR 820.3 — Definitions under the Quality Management System Regulation",
-            "url": "https://www.ecfr.gov/current/title-21/chapter-I/subchapter-H/part-820/section-820.3",
-            "relevance": "Supports assessment of when changes to finished devices constitute remanufacturing rather than ordinary servicing.",
-        },
-        {
-            "title": "21 CFR Part 807 — Establishment Registration and Device Listing",
-            "url": "https://www.ecfr.gov/current/title-21/chapter-I/subchapter-H/part-807",
-            "relevance": "Determine registration, listing, exemption, and premarket notification requirements from actual activities and device circumstances.",
-        },
-        {
-            "title": "45 CFR 164.310(d) — Device and Media Controls",
-            "url": "https://www.ecfr.gov/current/title-45/subtitle-A/subchapter-C/part-164/subpart-C/section-164.310",
-            "relevance": "For entities subject to the HIPAA Security Rule, governs handling of hardware and electronic media, including disposal and reuse controls.",
-        },
-        {
-            "title": "45 CFR 164.504(e) — Business Associate Contracts",
-            "url": "https://www.ecfr.gov/current/title-45/subtitle-A/subchapter-C/part-164/subpart-E/section-164.504",
-            "relevance": "Assess required business associate arrangements when services involve protected health information on acquired or serviced equipment.",
-        },
-        {
-            "title": "29 CFR 1910.1030 — Bloodborne Pathogens",
-            "url": "https://www.ecfr.gov/current/title-29/subtitle-B/chapter-XVII/part-1910/subpart-Z/section-1910.1030",
-            "relevance": "Requires applicable exposure controls for workers with occupational exposure to blood or other potentially infectious materials.",
-        },
-        {
-            "title": "21 CFR 801.109 — Prescription Devices",
-            "url": "https://www.ecfr.gov/current/title-21/chapter-I/subchapter-H/part-801/subpart-D/section-801.109",
-            "relevance": "Provides prescription-device labeling exemption conditions relevant to distribution, labeling, and purchaser qualification workflows.",
-        },
-        {
-            "title": "21 CFR Part 803 — Medical Device Reporting",
-            "url": "https://www.ecfr.gov/current/title-21/chapter-I/subchapter-H/part-803",
-            "relevance": "Determine event reporting and recordkeeping duties according to the entity's actual role, including manufacturer, importer, or user facility.",
-        },
-        {
-            "title": "21 CFR Part 806 — Medical Devices; Reports of Corrections and Removals",
-            "url": "https://www.ecfr.gov/current/title-21/chapter-I/subchapter-H/part-806",
-            "relevance": "Assess applicable manufacturer and importer reporting and recordkeeping duties when correcting or removing distributed devices.",
-        },
-        {
-            "title": "UCC Section 9-315 — Secured Party's Rights on Disposition of Collateral",
-            "url": "https://www.law.cornell.edu/ucc/9/9-315",
-            "relevance": "Explains continued security interests after disposition, subject to exceptions; verify the governing state's enacted text and transaction-specific releases.",
-        },
-        {
-            "title": "21 U.S.C. 331 — Prohibited Acts",
-            "url": "https://www.law.cornell.edu/uscode/text/21/331",
-            "relevance": "Addresses prohibited acts involving adulterated or misbranded devices, supporting accurate labeling and controlled distribution practices.",
-        },
-    ],
-}
+CHAPTER_5 = {'id': 'Q5',
+ 'chapter_id': 'Q5',
+ 'chapter_number': 5,
+ 'question_number': 5,
+ 'slug': '21-cfr-820-qsr-to-qmsr-operator-dossier',
+ 'question_prompt': "What does FDA's quality system regulation require, and what changed when the QSR "
+                    'became the QMSR in February 2026?',
+ 'kicker': 'Q5 / THE BIG MONEY PLAYBOOKS',
+ 'title': '21 CFR 820: From QSR to QMSR',
+ 'subtitle': 'GMP for medical devices, ISO 13485 incorporation by reference, the February 2, 2026 '
+             'transition, what inspectors now look for, risk management under the QMSR, legal and '
+             'liability implications, and certification readiness',
+ 'layout_template': 'case_study',
+ 'reading_time_minutes': 15,
+ 'executive_summary': 'Practitioners agree the QSR is dead as of February 2, 2026: the QMSR incorporates '
+                      'ISO 13485:2016 by reference, keeps FDA add-ons for UDI, tracking, MDR and '
+                      'corrections, and makes risk the thread investigators pull. Certification buys no '
+                      'inspection exemption, and management review, internal audit and supplier audit '
+                      'records are now reviewable. Coverage follows activity, reaching relabelers, '
+                      'repackagers and sterilizers. Street mechanics: QSIT is replaced by CP 7382.850 with '
+                      'Model 1 and Model 2 inspections; the DMR, DHF and DHR collapse into the medical '
+                      'device file; standards cost a few hundred dollars, cheaper via Estonia; Matrix '
+                      'Quality starts at 10,000 euros a year; Kellerman budgets a 21-day habit window. '
+                      "Disagreements: Medical Device Academy rejects FDA's projected savings, Henry "
+                      "opposes dropping 'establish,' and Kellerman still sells certification as a "
+                      'marketing calling card while Henry says it means nothing to FDA.',
+ 'key_metrics': [{'label': 'QMSR Hard-Switch Effective Date',
+                  'metric': 'QMSR Hard-Switch Effective Date',
+                  'value': 'February 2, 2026',
+                  'confidence': 'attributed_practitioner_claim',
+                  'context': 'Final rule issued February 2024 with a two-year transition; the QSR governs '
+                             'until the deadline and the QMSR governs from that day forward.',
+                  'source': 'AMORIT EDUCATION ([PhHUunSO_iQ @ 00:01:02])'},
+                 {'label': 'Software Mentions in the Legacy QSR',
+                  'metric': 'Software Mentions in the Legacy QSR',
+                  'value': '7 mentions (2 definitions, 2 design, 2 process validation, 1 DMR)',
+                  'confidence': 'attributed_practitioner_claim',
+                  'context': "Medical Device Academy's count of how rarely the 26-year-old QSR addresses "
+                             'software, used to argue the rewrite is a full reboot rather than a patch.',
+                  'source': 'Medical Device Academy ([jUg2UuY-OlQ @ 00:03:08])'},
+                 {'label': 'Matrix Quality eQMS Entry Price',
+                  'metric': 'Matrix Quality eQMS Entry Price',
+                  'value': 'From 10,000 euros per year; live in 2 to 6 weeks; teams of 20 to 1,000',
+                  'confidence': 'attributed_practitioner_claim',
+                  'context': "Matrix One's quoted pricing and deployment window for its QMSR-oriented "
+                             'quality platform.',
+                  'source': 'Matrix One ([b_a74PE0Cn0 @ 00:04:06])'},
+                 {'label': 'Post-Rollout Habit Monitoring Window',
+                  'metric': 'Post-Rollout Habit Monitoring Window',
+                  'value': 'About 21 days',
+                  'confidence': 'attributed_practitioner_claim',
+                  'context': "Kellerman Consulting's monitoring period after revising documents and "
+                             'training staff, based on how long the consultant says a new habit takes to '
+                             'form.',
+                  'source': 'Kellerman Consulting ([jUOtQFk5I3Q @ 00:30:08])'}],
+ 'sections': [{'title': 'Section 1: The Practitioner Consensus: Hard Switch, ISO 13485 Spine, Risk '
+                        'Everywhere',
+               'paragraphs': ['Every practitioner on this beat agrees on the calendar and the '
+                              'architecture. AMORIT EDUCATION lays out the clock: final rule in February '
+                              '2024, a two-year transition, and a hard deadline of February 2, 2026, with '
+                              'ISO 13485:2016 incorporated by reference so the standard itself becomes '
+                              'binding and FDA-specific requirements stack on top [PhHUunSO_iQ @ '
+                              '00:01:02]. Eric Henry of King & Spalding, a 35-year veteran speaking on '
+                              'Greenlight Guru, calls it a hard switch: the old QSR governs until February '
+                              '1, 2026 and the QMSR governs the next day, after the proposed one-year '
+                              'transition was stretched to two while some commenters pushed for four '
+                              '[yW4-Hn0IXI8 @ 00:18:49]. Regulatory Compliance Associates frames the '
+                              'result as the best of both worlds, because pieces of Part 820 survive: '
+                              'clause 7.5.8 gets supplemented with Part 830 for UDI and clause 7.5.9 with '
+                              'Part 821 for tracking, which is exactly why certifying to ISO 13485 alone '
+                              'does not close the file [cNSAixRUu9Q @ 00:01:57]. Medical Device Academy '
+                              'supplies the backstory operators need when someone asks why the rewrite '
+                              'happened at all: the regulation dates to December 1978, added design '
+                              'controls in 1990, became the QSR in 1996, and has barely moved since, with '
+                              'only a wording swap as the recent edit and software mentioned just seven '
+                              'times [yX4mpyZCfjY @ 00:03:46].',
+                              'The second point of agreement is blunt: a certificate on the wall does not '
+                              'buy a pass. AMORIT EDUCATION warns that neither MDSAP nor ISO certification '
+                              'exempts a firm from FDA inspection, and that management review and supplier '
+                              'audit records are now open to investigators [PhHUunSO_iQ @ 00:02:50]. Henry '
+                              'goes further, stating that ISO 13485 certification really does not mean '
+                              'anything to FDA, and flagging that management review minutes, internal '
+                              'audit reports and supplier audit reports all move into the reviewable pile '
+                              '[Cv26iLHCawk @ 01:03:00]. Denise Holiday of Capwell Consulting, an ISO '
+                              '13485 auditor and expert witness speaking on Medmarc, confirms both points '
+                              'from the far side of the deadline: no certification is required, '
+                              'certification exempts nobody, and scope follows what an organization '
+                              'actually does rather than how big it is [L11OFtMOx3E @ 00:07:32]. For '
+                              'anyone handling equipment downstream of the original factory, US '
+                              'Regulations Explained draws the coverage line: finished-device makers, '
+                              'sterilizers, relabelers and repackagers sit inside Part 820, while '
+                              'component makers supplying something like a screw or a microchip are not '
+                              'directly covered [3Qz3714kmCM @ 00:01:18]. Those four voices converge on '
+                              'one operating rule: map your actual activities against the regulation, '
+                              'because the badge on your letterhead will not shield the shop floor when an '
+                              'investigator walks in.',
+                              'The third consensus thread is risk, and it changes how every process gets '
+                              'read. Holiday notes that under the old QSR the word risk appeared only in '
+                              "820.30, while under the QMSR it is embedded system-wide; in Holiday's "
+                              "phrasing, risk is no longer a document [L11OFtMOx3E @ 00:16:35]. FDA's own "
+                              'Tanya Wilbon of CDRH DICE treats risk management as something that '
+                              'permeates the entire quality management system and states that the response '
+                              'must match the risk level, whether that means a customer notice, a field '
+                              'safety notice, a recall or a CAPA [QFNSAlfJaic @ 00:19:34]. The downside of '
+                              'getting it wrong is uniform across speakers, and it is severe. US '
+                              'Regulations Explained spells out that a noncompliant device is treated as '
+                              'adulterated, meaning it can be stopped at the border, and that warning '
+                              'letters, fines and detentions can land on both firms and individuals, all '
+                              'justified by the core rationale of patient safety [3Qz3714kmCM @ 00:04:18]. '
+                              'Henry adds the definitional trap that catches newcomers: adulterated means '
+                              'failing to meet regulatory requirements, not physical contamination, so a '
+                              'perfectly clean device sitting on a shelf with a broken paper trail still '
+                              "qualifies as adulterated in FDA's eyes [Cv26iLHCawk @ 00:08:04]."],
+               'table': {'caption': 'Where the practitioners line up on the QSR-to-QMSR switch',
+                         'headers': ['Consensus Point', 'What the Practitioners Report', 'Expert Source'],
+                         'rows': [['Hard switch date with no overlap period',
+                                   'The QSR governs through February 1, 2026 and the QMSR governs from '
+                                   'February 2, 2026, after a two-year transition.',
+                                   'Greenlight Guru ([yW4-Hn0IXI8 @ 00:18:49])'],
+                                  ['ISO 13485:2016 incorporated by reference into binding law',
+                                   'A hybrid model makes the standard binding and layers FDA-specific '
+                                   'requirements on top of it.',
+                                   'AMORIT EDUCATION ([PhHUunSO_iQ @ 00:01:18])'],
+                                  ['FDA add-ons survive beside the ISO standard',
+                                   'Clause 7.5.8 is supplemented with Part 830 for UDI and clause 7.5.9 '
+                                   'with Part 821 for tracking.',
+                                   'Regulatory Compliance Associates ([cNSAixRUu9Q @ 00:01:57])'],
+                                  ['Certification gives no shield against FDA inspection',
+                                   'No ISO certification is required, and holding one does not exempt a '
+                                   'firm from inspection.',
+                                   'Medmarc ([L11OFtMOx3E @ 00:13:12])'],
+                                  ['Coverage line for relabelers, repackagers and sterilizers',
+                                   'Finished-device makers, sterilizers, relabelers and repackagers are '
+                                   'covered; screw or microchip component makers are not directly covered.',
+                                   'US Regulations Explained ([3Qz3714kmCM @ 00:01:18])'],
+                                  ['Formerly shielded records now open to investigators',
+                                   'Management review minutes, internal audit reports and supplier audit '
+                                   'reports become reviewable under the new rule.',
+                                   'Greenlight Guru ([Cv26iLHCawk @ 00:52:03])'],
+                                  ['Noncompliance makes the device legally adulterated',
+                                   'Adulterated devices can be stopped at the border, with warning '
+                                   'letters, fines and detentions against firms and individuals.',
+                                   'US Regulations Explained ([3Qz3714kmCM @ 00:04:18])']]}},
+              {'title': 'Section 2: Exact Street Mechanics, Tools & Numbers',
+               'paragraphs': ['The inspection engine has been swapped out entirely. Matrix One reports '
+                              'that from February 2, 2026 the QSIT technique is retired and CP 7382.850 '
+                              'governs, covering six QMS areas plus four other requirements (MDR, '
+                              'corrections and removals, tracking and UDI), with Model 1 routine '
+                              'inspections sampling at least one element per area and Model 2 baseline or '
+                              'PMA preapproval visits running a fixed minimum set that includes software '
+                              'validation [b_a74PE0Cn0 @ 00:01:28]. Regulatory Compliance Associates '
+                              'describes the program as a total product life cycle approach that pulls '
+                              'complaints, MDRs, recalls, servicing and supplier data into one view, with '
+                              'investigators using risk-based sampling and expecting a living dynamic '
+                              'system [cNSAixRUu9Q @ 00:02:49]. Holiday explains how that plays on the '
+                              'floor: there is no fixed order of areas, the inspector starts with your '
+                              'risk documentation, and threads get followed from one process into the '
+                              'next, so the inspection follows the quality system instead of forcing the '
+                              'quality system to follow the inspection [L11OFtMOx3E @ 00:29:51]. QT9 '
+                              'Software adds that inspectors now test leadership decisions against risk '
+                              'and chase risk threads across records, which is exactly where siloed '
+                              'spreadsheets hurt, and that management review records get pulled when '
+                              'signals warrant it rather than on every visit [2VNYkzxS9nA @ 00:09:09].',
+                              'The document stack needs relabeling and rewiring before an investigator '
+                              'ever arrives. Henry walks through the structural swaps: the DMR, DHF and '
+                              'DHR give way to the medical device file, and the word establish is replaced '
+                              'by documented, so a procedure that merely exists on a server is not the '
+                              "same as one that is documented and implemented; in Henry's words, just "
+                              'releasing a document is never enough [Cv26iLHCawk @ 00:25:32]. In the 2024 '
+                              'Greenlight Guru session Henry pairs that with a practical fix: build a '
+                              'glossary that maps legacy terms to the new ones, hand it to an auditor or '
+                              "investigator, and expect to be fine [yW4-Hn0IXI8 @ 01:25:07]. Holiday's "
+                              "cleanup list is more aggressive. Strip any 'do not show to FDA' language "
+                              'out of procedures, redact only with counsel, and stop treating CAPA volume '
+                              'as something to suppress; one client set an objective of fewer CAPAs, which '
+                              'Holiday calls the opposite of a quality objective, countering that CAPAs '
+                              'are your defense [L11OFtMOx3E @ 00:21:58]. Regulatory Compliance Associates '
+                              'adds the terminology sweep: update references to ISO 9001 clause 3 '
+                              'terminology, carry the Class I design-control exemptions forward, and keep '
+                              'any Class I device previously required to hold a design file inside that '
+                              'requirement [cNSAixRUu9Q @ 00:01:16].',
+                              'The cost and tooling numbers are concrete. Henry puts purchased copies of '
+                              'the incorporated standards at a few hundred dollars and notes that the free '
+                              'ANSI incorporation-by-reference copy is view-only [Cv26iLHCawk @ 00:48:58]. '
+                              'On software, QT9 Software insists the eQMS is something you validate '
+                              'yourself under clause 4.1.6, and pitches spiderweb linkages between records '
+                              'so that impact assessments run automatically when a change touches one '
+                              'node, replacing manual cross-checking across disconnected files '
+                              '[2VNYkzxS9nA @ 00:06:06]. Matrix One prices its Matrix Quality platform '
+                              'from 10,000 euros per year, quoting go-live in two to six weeks for teams '
+                              'of 20 to 1,000 people [b_a74PE0Cn0 @ 00:04:06]. On the people side, '
+                              'Kellerman Consulting sequences implementation as a gap analysis against '
+                              'both the QSR and ISO 13485, then document revisions and staff training, '
+                              "then a monitoring period of about 21 days, because in that consultant's "
+                              'experience change is hard and it takes roughly 21 days for something to '
+                              'become a habit [jUOtQFk5I3Q @ 00:30:08]. The operator read: budget money '
+                              'for standards and software, but budget calendar time for the habit window '
+                              'too, because a procedure nobody follows becomes the exact thread an '
+                              'investigator pulls on the next visit.'],
+               'table': {'caption': 'Hard numbers, programs and tools the practitioners quote',
+                         'headers': ['Mechanic or Tool', 'Exact Number or Detail', 'Expert Source'],
+                         'rows': [['Inspection program replacing the retired QSIT technique',
+                                   'CP 7382.850 governs from February 2, 2026; CPs 7382.845 and 7383.001 '
+                                   'are also retired.',
+                                   'Matrix One ([b_a74PE0Cn0 @ 00:00:00])'],
+                                  ['Model 1 routine versus Model 2 baseline inspections',
+                                   'Model 1 samples at least one element per area; Model 2 runs a fixed '
+                                   'minimum set including software validation.',
+                                   'Matrix One ([b_a74PE0Cn0 @ 00:01:44])'],
+                                  ['Where FDA 483 citations are clustering right now',
+                                   "Holiday's review of six months of 483s showed ISO 13485 clause 7.1 "
+                                   'leading by a wide margin.',
+                                   'Medmarc ([L11OFtMOx3E @ 00:32:18])'],
+                                  ['Cost of buying the incorporated ISO standards',
+                                   'Purchased standards run a few hundred dollars; the free ANSI copy is '
+                                   'view-only.',
+                                   'Greenlight Guru ([Cv26iLHCawk @ 00:48:58])'],
+                                  ['Commercial eQMS pricing and deployment window quoted',
+                                   'Matrix Quality starts from 10,000 euros per year, goes live in 2 to 6 '
+                                   'weeks, targets teams of 20 to 1,000.',
+                                   'Matrix One ([b_a74PE0Cn0 @ 00:04:06])'],
+                                  ['Share of actions that end up as corrective',
+                                   'Henry estimates about 99 percent of actions become corrective actions '
+                                   'under the new structure.',
+                                   'Greenlight Guru ([yW4-Hn0IXI8 @ 00:57:44])'],
+                                  ['Customer survey response rate for feedback loops',
+                                   'Only about one in ten customers responds to surveys, used alongside '
+                                   'complaints and audits.',
+                                   'Kellerman Consulting ([jUOtQFk5I3Q @ 00:31:17])']]},
+               'callout': {'kind': 'INSIDER PRO-TIPS',
+                           'title': 'Four moves that tighten a QMSR file fast',
+                           'body': 'Field moves the speakers hand out for buying standards cheaply, '
+                                   'reading the rule the way investigators will, and closing the gaps that '
+                                   'show up on 483s.',
+                           'items': ['Buy the standards from Estonia: Henry flags that the free ANSI '
+                                     "portal is view-only and that Estonia's standards are cheaper "
+                                     '[Greenlight Guru — yW4-Hn0IXI8 @ 00:44:59]',
+                                     'Read the preamble, not just the regulation: Henry warns its language '
+                                     'will be copied straight into 483s and PMA deficiency letters '
+                                     '[Greenlight Guru — yW4-Hn0IXI8 @ 00:25:20]',
+                                     'Keep a human in the loop on automated label checks: Henry says they '
+                                     'still need a statistically significant human sample [Greenlight Guru '
+                                     '— yW4-Hn0IXI8 @ 01:00:32]',
+                                     "Justify every blank or 'N/A' field in complaint records instead of "
+                                     'leaving it unexplained [Medmarc — L11OFtMOx3E @ 00:25:44]']},
+               'sop_steps': [{'step': 1,
+                              'title': 'Run the gap analysis',
+                              'action': 'Compare current procedures against the QSR, ISO 13485 and the '
+                                        'FDA-specific add-ons.',
+                              'detail': "AMORIT EDUCATION's four-step plan opens with gap analysis, then "
+                                        'document updates, risk-driven internal audits and stronger risk '
+                                        'management [AMORIT EDUCATION — PhHUunSO_iQ @ 00:05:13]'},
+                             {'step': 2,
+                              'title': 'Sweep every use of risk',
+                              'action': 'Search the standard for each mention of risk and attach a '
+                                        'documented risk-based approach to each clause.',
+                              'detail': "Holiday's method: search the standard for every use of 'risk' and "
+                                        'confirm a documented risk-based approach supports each clause '
+                                        '[Medmarc — L11OFtMOx3E @ 00:38:56]'},
+                             {'step': 3,
+                              'title': 'Rewrite references and terminology',
+                              'action': 'Replace QSR references with QMSR references and apply ISO 9000 '
+                                        'clause 3 terms consistently.',
+                              'detail': 'Holiday recommends swapping QSR references for QMSR references, '
+                                        'followed by consistent ISO 9000 clause 3 terminology [Medmarc — '
+                                        'L11OFtMOx3E @ 00:37:10]'},
+                             {'step': 4,
+                              'title': 'Train on risk first, then monitor',
+                              'action': 'Train staff on the risk-based approach before process changes, '
+                                        'then hold a monitoring period.',
+                              'detail': 'QT9 Software says to train first on the risk-based approach; '
+                                        'Kellerman follows rollout with roughly 21 days of monitoring [QT9 '
+                                        'Software — 2VNYkzxS9nA @ 00:02:03]'}]},
+              {'id': 'q05-section-3',
+               'heading': 'Where Practitioners Disagree & Alternative Playbooks',
+               'paragraphs': ['The sharpest split is over what an ISO 13485 certificate actually buys you. '
+                              'Eric Henry of King & Spalding, speaking on Greenlight Guru, puts it '
+                              "bluntly: being certified 'really doesn't mean anything to the FDA' "
+                              '[Cv26iLHCawk @ 01:03:00]. AMORIT EDUCATION lands in the same place, warning '
+                              'that neither an MDSAP nor an ISO certificate earns a pass on an FDA '
+                              'inspection [PhHUunSO_iQ @ 00:02:50]. Denise Holiday of Capwell Consulting '
+                              'tells Medmarc viewers that the QMSR requires no certification at all and '
+                              'that holding one exempts nobody from inspection [L11OFtMOx3E @ 00:13:12]. '
+                              'Kellerman Consulting runs the opposite commercial playbook. Its speaker '
+                              "concedes certification is voluntary, yet pitches it as a marketing 'calling "
+                              "card' and a competitive advantage, noting that FDA dislikes companies "
+                              'advertising that they are FDA-audited while a certificate can be promoted '
+                              'within logo rules [jUOtQFk5I3Q @ 00:13:53]. The two camps are not arguing '
+                              'about the law, because every one of these speakers agrees certification is '
+                              'voluntary. They are arguing about where the certificate earns its keep. '
+                              'Kellerman books it as a sales asset that opens doors with buyers and '
+                              'customers. Henry, AMORIT and Holiday book it at zero on inspection day, '
+                              'which means the FDA-facing system has to stand on its own records, risk '
+                              'files and CAPA trail whether or not a certificate hangs on the wall.',
+                              'The second fight is about how much work the switch really is and who pays '
+                              'for it. Medical Device Academy rejects the projected savings outright: '
+                              'firms already run a single QMS, a consultant can finish the gap analysis in '
+                              "'a few hours,' and the real cost lands on FDA, which must retrain its own "
+                              'inspectors [jUg2UuY-OlQ @ 00:01:10]. Eric Henry sat in the one-year camp on '
+                              "the transition period, arguing the job 'can be done in a year, especially "
+                              "if you've already got a 13485 program in place' [Cv26iLHCawk @ 00:46:10]. "
+                              'Industry pushed the other way, asking for two years, with one organization '
+                              'asking for four, and in the final rule FDA extended the proposed one year '
+                              'to two, landing the effective date on February 2, 2026 [yW4-Hn0IXI8 @ '
+                              '00:17:29]. Regulatory Compliance Associates splits the market by starting '
+                              'point rather than by calendar: shops already following ISO 13485 face '
+                              'little change, while shops that only ever complied with Part 820 face '
+                              'significant change [cNSAixRUu9Q @ 00:04:06]. Read together, these four '
+                              'speakers price the transition by legacy system rather than by the '
+                              'regulation itself. A shop already running 13485 is looking at hours of gap '
+                              "analysis and a one-year job by Henry's estimate, while a Part 820-only shop "
+                              'is staring at what RCA calls significant change across its whole quality '
+                              'system.',
+                              'The third split runs through the rule text itself. On risk management, '
+                              "FDA's Tanya Wilbon walks through Comment 9: FDA does not incorporate ISO "
+                              '14971, and under Comment 32 the ISO 13485 clause 0.2 definition of risk is '
+                              'treated as sufficient [QFNSAlfJaic @ 00:03:43]. Eric Henry refuses to let '
+                              "operators read that as daylight. Henry's warning is not to use the "
+                              'non-incorporation as a loophole, because FDA has recognized ISO 14971 since '
+                              '2007 and rates it above the P1/P2 risk structure of ICH Q9 [yW4-Hn0IXI8 @ '
+                              '01:02:09]. Denise Holiday confirms 14971 is not incorporated by reference, '
+                              'yet Holiday and Henry both push operators to adopt it anyway [L11OFtMOx3E @ '
+                              '00:18:21]. Henry also breaks with FDA on vocabulary. The rule swaps the '
+                              "word 'establish' for 'documented,' and Henry disagrees with the deletion, "
+                              "fearing companies will slip on the 'implement' half of the old requirement "
+                              '[yW4-Hn0IXI8 @ 00:36:01]. That leaves two playbooks on the table. The '
+                              'minimalist reads the rule literally, leans on clause 0.2, and writes '
+                              'procedures that are documented on paper. The Henry and Holiday playbook '
+                              'runs a full 14971 risk process anyway and proves implementation with '
+                              "records, rather than trusting the word 'documented' to carry an "
+                              'investigator through a risk-driven inspection that now starts with the risk '
+                              'file.'],
+               'table': {'caption': 'QSR to QMSR: Where the Practitioners Split and the Competing '
+                                    'Playbooks',
+                         'headers': ['Contested Point',
+                                     'Camp A Position',
+                                     'Camp B Position',
+                                     'Expert Source'],
+                         'rows': [['Value of holding an ISO 13485 certificate',
+                                   'Henry says certification really does not mean anything to the FDA at '
+                                   'inspection',
+                                   'Kellerman sells certification as a marketing calling card and '
+                                   'competitive advantage with buyers',
+                                   'Greenlight Guru ([Cv26iLHCawk @ 01:03:00]); Kellerman Consulting '
+                                   '([jUOtQFk5I3Q @ 00:13:53])'],
+                                  ['Whether MDSAP or ISO certificates shield you from FDA',
+                                   'AMORIT and Holiday say no certificate earns any pass on FDA '
+                                   'inspections',
+                                   'Kellerman agrees certification is voluntary but notes supply chains '
+                                   'still pressure suppliers toward it',
+                                   'AMORIT EDUCATION ([PhHUunSO_iQ @ 00:02:50]); Medmarc ([L11OFtMOx3E @ '
+                                   '00:13:12])'],
+                                  ['Right length of the transition period before enforcement',
+                                   'Henry sat in the one-year camp, saying a 13485 shop can finish within '
+                                   'a year',
+                                   'Industry asked for two years, one organization asked four, and FDA '
+                                   'granted two',
+                                   'Greenlight Guru ([Cv26iLHCawk @ 00:46:10]); Greenlight Guru '
+                                   '([yW4-Hn0IXI8 @ 00:17:29])'],
+                                  ['Real cost and savings of harmonizing to ISO 13485',
+                                   'Medical Device Academy rejects projected savings; consultant gap '
+                                   'analysis takes only a few hours',
+                                   'RCA says firms that complied only with Part 820 face significant '
+                                   'change',
+                                   'Medical Device Academy ([jUg2UuY-OlQ @ 00:01:10]); Regulatory '
+                                   'Compliance Associates ([cNSAixRUu9Q @ 00:04:06])'],
+                                  ['What replaces the QSIT inspection technique after the switch',
+                                   'Henry in 2024 said QSIT was only likely to be replaced and rollout '
+                                   'would stay murky',
+                                   'Holiday and Matrix One report compliance program 7382.850 now governs '
+                                   'risk-driven inspections',
+                                   'Greenlight Guru ([Cv26iLHCawk @ 00:37:56]); Medmarc ([L11OFtMOx3E @ '
+                                   '00:28:08]); Matrix One ([b_a74PE0Cn0 @ 00:00:00])'],
+                                  ['Treating ISO 14971 non-incorporation as optional risk work',
+                                   'FDA Comment 9 says ISO 14971 is not incorporated and clause 0.2 '
+                                   'suffices',
+                                   'Henry warns against using it as a loophole since FDA recognized 14971 '
+                                   'in 2007',
+                                   'U.S. Food and Drug Administration ([QFNSAlfJaic @ 00:03:43]); '
+                                   'Greenlight Guru ([yW4-Hn0IXI8 @ 01:02:09])'],
+                                  ['How much MDSAP audit work carries into FDA inspections',
+                                   'Henry says MDSAP audit policy is feeding the design of the new '
+                                   'inspection program',
+                                   'Matrix One says FDA investigators do not follow MDSAP audit plans '
+                                   'during visits',
+                                   'Greenlight Guru ([Cv26iLHCawk @ 01:15:12]); Matrix One ([b_a74PE0Cn0 @ '
+                                   '00:02:59])']]}},
+              {'id': 'q05-section-4',
+               'heading': 'Firsthand Failure Modes, Traps & Economics Checks',
+               'paragraphs': ['The biggest trap under the QMSR is the paper you assumed FDA would never '
+                              'read. Eric Henry spells it out on Greenlight Guru: management review, '
+                              "internal audit and supplier audit records become reviewable, and 'that "
+                              "restriction is gone' [yW4-Hn0IXI8 @ 01:16:18]. Matrix One adds the "
+                              'retroactive sting: investigators can review records created before February '
+                              '2026, ISO certificates buy no exemption, and investigators do not follow '
+                              'MDSAP audit plans [b_a74PE0Cn0 @ 00:02:59]. Henry had already raised '
+                              "concern about 'shadow documents' and possible statutory conflicts once "
+                              'these records open up [Cv26iLHCawk @ 00:54:21]. Denise Holiday has seen the '
+                              "rot firsthand inside client procedures: language reading 'do not show to "
+                              "FDA' that has to be stripped out, and one client that set an objective of "
+                              'fewer CAPAs, which Holiday calls the opposite of a quality objective '
+                              "[L11OFtMOx3E @ 00:21:58]. Holiday's counter-rules are short. CAPAs are your "
+                              'defense, and redaction happens only with counsel. The economics check is '
+                              'simple and unforgiving. Every management review minute and supplier audit '
+                              'report on file, including records written before the deadline, is now '
+                              'potential inspection evidence, so the write-up discipline you apply to '
+                              'those records today decides what an investigator reads tomorrow, and a '
+                              'deliberately thin CAPA trail is a liability Holiday has watched clients '
+                              'build for themselves.',
+                              'The second failure mode is a stale or siloed risk file, because under the '
+                              'new inspection model it is the map the investigator walks. Holiday puts it '
+                              "flatly: risk documentation is 'becoming the road map of the inspection,' "
+                              "and 'the inspector will start with your risk documentation' [L11OFtMOx3E @ "
+                              "00:29:51]. Matrix One issues the same order in fewer words: 'Keep your risk "
+                              "management file current, because it steers the visit' [b_a74PE0Cn0 @ "
+                              '00:03:23]. QT9 Software describes inspectors testing leadership decisions '
+                              'against risk and following risk threads from one process into the next, and '
+                              'warns that siloed spreadsheets hurt a company once that thread-pulling '
+                              "starts [2VNYkzxS9nA @ 00:09:09]. FDA's own Tanya Wilbon shows what keeps "
+                              'the file alive between visits: under clause 8.2, a rise in complaints must '
+                              'trigger an update to the risk management file [QFNSAlfJaic @ 00:18:51]. The '
+                              'trap is treating the risk file as a design-phase artifact that gets signed '
+                              'once and shelved. Operators who feed complaint and post-market data back '
+                              'into the file can walk an investigator down a coherent thread from '
+                              'complaint to risk to CAPA. Operators who do not are handing the '
+                              'investigator an outdated document at the exact spot where Holiday says the '
+                              'inspection begins, and every downstream process then gets judged against '
+                              'it.',
+                              'The third cluster of traps sits at the edges of the operation, where '
+                              'suppliers and automation do work the manufacturer still owns. Eric Henry '
+                              'notes that under Comment 2, FDA keeps enforcement discretion over component '
+                              "makers but 'strongly encourage[s]' QMSR use, and warns that the pressure "
+                              "will land anyway through customers' purchasing controls [yW4-Hn0IXI8 @ "
+                              '00:31:19]. Denise Holiday reports that FDA is now focusing on supplier '
+                              'process control, using validated injection molding as the example '
+                              '[L11OFtMOx3E @ 00:34:10], and closes the outsourcing escape hatch: the '
+                              'legal manufacturer stays ultimately responsible even when a contract '
+                              "manufacturer does the work, because 'they are responsible for everything' "
+                              '[L11OFtMOx3E @ 00:45:12]. Automation carries its own version of the same '
+                              'trap. Henry insists automated label checks still need a statistically '
+                              'significant human sample before anyone leans on the machine [yW4-Hn0IXI8 @ '
+                              '01:00:32]. The economics check across all three warnings is identical. '
+                              'Outsourcing a process, buying parts from a component shop, or installing an '
+                              'automated inspection step shifts the labor but not the liability. Each of '
+                              'those handoffs needs a documented control, a sampling plan or a supplier '
+                              'audit that will hold up in front of an investigator who now has the right '
+                              'to read your supplier audit reports directly.'],
+               'table': {'caption': 'Firsthand QMSR Traps, What Gets Exposed, and the Fix Practitioners '
+                                    'Teach',
+                         'headers': ['Trap', 'What Gets Exposed', 'Operator Fix Taught', 'Expert Source'],
+                         'rows': [["Procedures saying 'do not show to FDA' plus fewer-CAPA objectives",
+                                   'Management review and audit records are inspectable, so hidden '
+                                   'language and CAPA suppression get read',
+                                   'Strip the language, drop fewer-CAPA targets, redact only with counsel, '
+                                   'treat CAPAs as defense',
+                                   'Medmarc ([L11OFtMOx3E @ 00:21:58]); Medmarc ([L11OFtMOx3E @ '
+                                   '00:22:46])'],
+                                  ['Letting the risk management file go stale after design',
+                                   'Risk files steer the inspection, so an outdated file is where the '
+                                   'investigator starts',
+                                   'Keep the file current and update it whenever complaints rise under '
+                                   'clause 8.2',
+                                   'Matrix One ([b_a74PE0Cn0 @ 00:03:23]); U.S. Food and Drug '
+                                   'Administration ([QFNSAlfJaic @ 00:18:51])'],
+                                  ['Running quality data in siloed, disconnected spreadsheets',
+                                   'Inspectors follow risk threads and test leadership decisions against '
+                                   'risk across every process',
+                                   'Link records with what QT9 calls spiderweb linkages so impact '
+                                   'assessment runs automatically',
+                                   'QT9 Software ([2VNYkzxS9nA @ 00:09:09]); QT9 Software ([2VNYkzxS9nA @ '
+                                   '00:06:20])'],
+                                  ['Fully automated label checks with no human in loop',
+                                   'Both Henry and Holiday say automated label inspection still requires '
+                                   'human oversight',
+                                   'Pull a statistically significant human sample and document that '
+                                   'oversight on every run',
+                                   'Greenlight Guru ([yW4-Hn0IXI8 @ 01:00:32]); Medmarc ([L11OFtMOx3E @ '
+                                   '00:27:28])'],
+                                  ['Blank or N/A fields scattered through complaint records',
+                                   'Holiday flags empty or N/A complaint fields as needing a written '
+                                   'justification',
+                                   'Justify every blank and harmonize complaint units under one designated '
+                                   'coordinating unit',
+                                   'Medmarc ([L11OFtMOx3E @ 00:25:44]); Greenlight Guru ([yW4-Hn0IXI8 @ '
+                                   '00:55:24])'],
+                                  ['Assuming paperwork gaps are not product problems',
+                                   'Noncompliant devices are adulterated, legally unfit for sale, '
+                                   'stoppable at the border',
+                                   'Henry stresses adulterated means failing regulatory requirements, not '
+                                   'contamination, so close paper gaps',
+                                   'US Regulations Explained ([3Qz3714kmCM @ 00:04:18]); Greenlight Guru '
+                                   '([Cv26iLHCawk @ 00:08:04])'],
+                                  ['Overpaying for standards and buying an eQMS blind',
+                                   'Free ANSI copy is view-only; Matrix Quality eQMS starts from €10,000 '
+                                   'per year',
+                                   "Henry's tip is Estonia for cheaper standards; QT9 says validate the "
+                                   'eQMS yourself under 4.1.6',
+                                   'Greenlight Guru ([yW4-Hn0IXI8 @ 00:44:43]); Matrix One ([b_a74PE0Cn0 @ '
+                                   '00:04:06]); QT9 Software ([2VNYkzxS9nA @ 00:06:06])']]},
+               'callout': {'kind': 'OPERATOR GATE',
+                           'title': 'Four Checks Before the Investigator Pulls the First Thread',
+                           'body': 'Practitioners report the same pressure points again and again: records '
+                                   'FDA can now read, a risk file that steers the visit, automation '
+                                   'without human eyes, and suppliers whose work you still own. Clear each '
+                                   'one before the next inspection.',
+                           'items': ["Sweep procedures for 'do not show to FDA' language and kill any "
+                                     'fewer-CAPA objective, because management review and audit records '
+                                     'are now open to inspection [Medmarc — L11OFtMOx3E @ 00:21:58].',
+                                     'Confirm the risk management file is current and reflects the latest '
+                                     'complaint trends, because it steers the visit [Matrix One — '
+                                     'b_a74PE0Cn0 @ 00:03:23].',
+                                     'Verify every automated label check is backed by a statistically '
+                                     'significant human sample [Greenlight Guru — yW4-Hn0IXI8 @ 01:00:32].',
+                                     'Tier supplier oversight by risk, treating a contract sterilizer '
+                                     'differently from an off-the-shelf supplier, since the legal '
+                                     'manufacturer stays responsible for everything [U.S. Food and Drug '
+                                     'Administration — QFNSAlfJaic @ 00:15:43].']}}],
+ 'pull_quote': '"In other words, risk is no longer a document." — attributed to Medmarc (L11OFtMOx3E @ '
+               '00:16:35).',
+ 'diagram_id': 'diag-05',
+ 'action_checklist': ['Run a gap analysis of your current system against both the QSR and ISO 13485 before '
+                      'revising anything [Kellerman Consulting — jUOtQFk5I3Q @ 00:28:55].',
+                      'Replace every QSR reference in procedures with QMSR references and use ISO 9000 '
+                      'clause 3 terms consistently [Medmarc — L11OFtMOx3E @ 00:37:10].',
+                      'Map legacy terms such as DHF, DMR and DHR to their new equivalents in a glossary '
+                      'you can hand to an investigator [Greenlight Guru — yW4-Hn0IXI8 @ 01:25:07].',
+                      "Search the standard for every use of 'risk' and confirm a documented risk-based "
+                      'approach supports each clause [Medmarc — L11OFtMOx3E @ 00:38:56].',
+                      'Supplement ISO 13485 clause 7.5.8 with Part 830 UDI and clause 7.5.9 with Part 821 '
+                      'tracking requirements [Regulatory Compliance Associates — cNSAixRUu9Q @ 00:01:57].',
+                      'Train staff on the revised documents, then run a monitoring period of about 21 days '
+                      'while the new habits set [Kellerman Consulting — jUOtQFk5I3Q @ 00:30:08].'],
+ 'statutory_citations': [{'title': 'Greenlight Guru — QSR to QMSR: The Rewrite of 21 CFR Part 820 & Key '
+                                   'Considerations for FDA Compliance [01:03:00]',
+                          'url': 'https://www.youtube.com/watch?v=Cv26iLHCawk&t=3780s',
+                          'relevance': 'Primary practitioner testimony on ISO 13485 certification carrying '
+                                       "no weight with FDA and on the rule's structure and rollout."},
+                         {'title': 'Greenlight Guru — QMSR Final Rule: Meeting FDA’s New Requirements '
+                                   '[01:16:18]',
+                          'url': 'https://www.youtube.com/watch?v=yW4-Hn0IXI8&t=4578s',
+                          'relevance': 'Primary practitioner testimony on management review, internal '
+                                       'audit and supplier audit records becoming reviewable.'},
+                         {'title': 'Medmarc — FDA QSR to QMSR Regulatory, Legal, and Risk Implications for '
+                                   'Industry [00:29:51]',
+                          'url': 'https://www.youtube.com/watch?v=L11OFtMOx3E&t=1791s',
+                          'relevance': 'Primary practitioner testimony on risk documentation becoming the '
+                                       'road map of the inspection.'},
+                         {'title': 'U.S. Food and Drug Administration — Medical Device Quality Management '
+                                   'System Regulation Risk Management [00:19:34]',
+                          'url': 'https://www.youtube.com/watch?v=QFNSAlfJaic&t=1174s',
+                          'relevance': 'Primary practitioner testimony on matching the response to the '
+                                       'risk level across QMS clauses.'}],
+ 'source_citations': [{'source_type': 'video_pro_tip',
+                       'video_id': 'Yi4V4HzJx-I',
+                       'title': 'What is 21 CFR Part 820? How does this impact your Medical Device in US.',
+                       'channel': 'Matrix One',
+                       'author': 'Matrix One',
+                       'text': "Since December 1978, it's aimed to ensure that medical devices in the "
+                               'United States are safe, effective, and compliant.',
+                       'tip': "Since December 1978, it's aimed to ensure that medical devices in the "
+                              'United States are safe, effective, and compliant.',
+                       'timestamp': 48,
+                       'timestamp_seconds': 48,
+                       'timestamp_label': '[00:00:48]',
+                       'url': 'https://www.youtube.com/watch?v=Yi4V4HzJx-I&t=48s',
+                       'markdown': '[00:00:48](https://www.youtube.com/watch?v=Yi4V4HzJx-I&t=48s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q5.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'yX4mpyZCfjY',
+                       'title': 'What is 21 CFR 820?',
+                       'channel': 'Medical Device Academy',
+                       'author': 'Medical Device Academy',
+                       'text': 'The regulation has gaps: no post-market surveillance, only a single '
+                               'mention of risk, and seven mentions of software.',
+                       'tip': 'The regulation has gaps: no post-market surveillance, only a single mention '
+                              'of risk, and seven mentions of software.',
+                       'timestamp': 284,
+                       'timestamp_seconds': 284,
+                       'timestamp_label': '[00:04:44]',
+                       'url': 'https://www.youtube.com/watch?v=yX4mpyZCfjY&t=284s',
+                       'markdown': '[00:04:44](https://www.youtube.com/watch?v=yX4mpyZCfjY&t=284s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q5.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'PhHUunSO_iQ',
+                       'title': 'QSR to QMSR: What Changes Before Feb 2, 2026 (FDA Medical Devices)',
+                       'channel': 'AMORIT EDUCATION',
+                       'author': 'AMORIT EDUCATION',
+                       'text': 'An MDSAP or ISO certificate gives you no pass on FDA inspections.',
+                       'tip': 'An MDSAP or ISO certificate gives you no pass on FDA inspections.',
+                       'timestamp': 170,
+                       'timestamp_seconds': 170,
+                       'timestamp_label': '[00:02:50]',
+                       'url': 'https://www.youtube.com/watch?v=PhHUunSO_iQ&t=170s',
+                       'markdown': '[00:02:50](https://www.youtube.com/watch?v=PhHUunSO_iQ&t=170s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q5.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': '3Qz3714kmCM',
+                       'title': '⚙️ (FDA) 21 CFR Part 820 Explained: Medical Device Quality System '
+                                'Compliance',
+                       'channel': 'US Regulations Explained',
+                       'author': 'US Regulations Explained',
+                       'text': 'Well, it means the FDA considers that device legally unfit for sale in the '
+                               'United States.',
+                       'tip': 'Well, it means the FDA considers that device legally unfit for sale in the '
+                              'United States.',
+                       'timestamp': 274,
+                       'timestamp_seconds': 274,
+                       'timestamp_label': '[00:04:34]',
+                       'url': 'https://www.youtube.com/watch?v=3Qz3714kmCM&t=274s',
+                       'markdown': '[00:04:34](https://www.youtube.com/watch?v=3Qz3714kmCM&t=274s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q5.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'cNSAixRUu9Q',
+                       'title': 'FDA’s New QMSR Final Rule: What Medical Device Manufacturers Need to Know '
+                                '(2026)',
+                       'channel': 'Regulatory Compliance Associates',
+                       'author': 'Regulatory Compliance Associates',
+                       'text': 'Firms already following ISO 13485 face little change, while firms that '
+                               'complied only with Part 820 face significant change.',
+                       'tip': 'Firms already following ISO 13485 face little change, while firms that '
+                              'complied only with Part 820 face significant change.',
+                       'timestamp': 246,
+                       'timestamp_seconds': 246,
+                       'timestamp_label': '[00:04:06]',
+                       'url': 'https://www.youtube.com/watch?v=cNSAixRUu9Q&t=246s',
+                       'markdown': '[00:04:06](https://www.youtube.com/watch?v=cNSAixRUu9Q&t=246s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q5.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'qs1HLi9K5XU',
+                       'title': 'GMP for Medical Devices Overview ( FDA 21 CFR 820 )',
+                       'channel': 'CALISO9000',
+                       'author': 'CALISO9000',
+                       'text': 'Subpart C design controls cover Class II and III and some Class I devices, '
+                               'and failure risks a warning letter or a plant shutdown.',
+                       'tip': 'Subpart C design controls cover Class II and III and some Class I devices, '
+                              'and failure risks a warning letter or a plant shutdown.',
+                       'timestamp': 105,
+                       'timestamp_seconds': 105,
+                       'timestamp_label': '[00:01:45]',
+                       'url': 'https://www.youtube.com/watch?v=qs1HLi9K5XU&t=105s',
+                       'markdown': '[00:01:45](https://www.youtube.com/watch?v=qs1HLi9K5XU&t=105s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q5.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'DWOABbtgSgI',
+                       'title': 'FDA QMSR: What it Means for Your Quality Management System',
+                       'channel': 'Software Connect',
+                       'author': 'Software Connect',
+                       'text': 'The new framework sets up risk management as the link that ties the '
+                               'various QM areas together.',
+                       'tip': 'The new framework sets up risk management as the link that ties the various '
+                              'QM areas together.',
+                       'timestamp': 264,
+                       'timestamp_seconds': 264,
+                       'timestamp_label': '[00:04:24]',
+                       'url': 'https://www.youtube.com/watch?v=DWOABbtgSgI&t=264s',
+                       'markdown': '[00:04:24](https://www.youtube.com/watch?v=DWOABbtgSgI&t=264s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q5.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'Dbp4lOgGoT8',
+                       'title': 'GMP for Medical Devices Overview  FDA 21 CFR 820',
+                       'channel': 'Center for Health Information and Decision Systems',
+                       'author': 'Center for Health Information and Decision Systems',
+                       'text': 'The FDA good manufacturing practice for medical devices is described as '
+                               'the equivalent of ISO 13485 2003.',
+                       'tip': 'The FDA good manufacturing practice for medical devices is described as the '
+                              'equivalent of ISO 13485 2003.',
+                       'timestamp': 40,
+                       'timestamp_seconds': 40,
+                       'timestamp_label': '[00:00:40]',
+                       'url': 'https://www.youtube.com/watch?v=Dbp4lOgGoT8&t=40s',
+                       'markdown': '[00:00:40](https://www.youtube.com/watch?v=Dbp4lOgGoT8&t=40s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q5.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'jUg2UuY-OlQ',
+                       'title': 'Why does 21 CFR 820 need to be modernized to ISO 13485?',
+                       'channel': 'Medical Device Academy',
+                       'author': 'Medical Device Academy',
+                       'text': 'This is not a patch, it is a full reboot.',
+                       'tip': 'This is not a patch, it is a full reboot.',
+                       'timestamp': 423,
+                       'timestamp_seconds': 423,
+                       'timestamp_label': '[00:07:03]',
+                       'url': 'https://www.youtube.com/watch?v=jUg2UuY-OlQ&t=423s',
+                       'markdown': '[00:07:03](https://www.youtube.com/watch?v=jUg2UuY-OlQ&t=423s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q5.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'b_a74PE0Cn0',
+                       'title': 'QMSR Is Now in Force: What FDA Inspectors Look For Now | Matrix Quality',
+                       'channel': 'Matrix One',
+                       'author': 'Matrix One',
+                       'text': 'Keep your risk management file current, because it steers the visit.',
+                       'tip': 'Keep your risk management file current, because it steers the visit.',
+                       'timestamp': 203,
+                       'timestamp_seconds': 203,
+                       'timestamp_label': '[00:03:23]',
+                       'url': 'https://www.youtube.com/watch?v=b_a74PE0Cn0&t=203s',
+                       'markdown': '[00:03:23](https://www.youtube.com/watch?v=b_a74PE0Cn0&t=203s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q5.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': '2VNYkzxS9nA',
+                       'title': 'FDA QMSR Compliance Calls for a New Mindset | FDA 21 CFR Part 820 '
+                                'Evolution PART 2',
+                       'channel': 'QT9 Software',
+                       'author': 'QT9 Software',
+                       'text': 'You will need to consistently monitor it for areas of improvement.',
+                       'tip': 'You will need to consistently monitor it for areas of improvement.',
+                       'timestamp': 1012,
+                       'timestamp_seconds': 1012,
+                       'timestamp_label': '[00:16:52]',
+                       'url': 'https://www.youtube.com/watch?v=2VNYkzxS9nA&t=1012s',
+                       'markdown': '[00:16:52](https://www.youtube.com/watch?v=2VNYkzxS9nA&t=1012s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q5.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'Cv26iLHCawk',
+                       'title': 'QSR to QMSR: The Rewrite of 21 CFR Part 820 & Key Considerations for FDA '
+                                'Compliance',
+                       'channel': 'Greenlight Guru',
+                       'author': 'Greenlight Guru',
+                       'text': "If you are ISO 13485 certified, that really doesn't mean anything to the "
+                               'FDA.',
+                       'tip': "If you are ISO 13485 certified, that really doesn't mean anything to the "
+                              'FDA.',
+                       'timestamp': 3780,
+                       'timestamp_seconds': 3780,
+                       'timestamp_label': '[01:03:00]',
+                       'url': 'https://www.youtube.com/watch?v=Cv26iLHCawk&t=3780s',
+                       'markdown': '[01:03:00](https://www.youtube.com/watch?v=Cv26iLHCawk&t=3780s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q5.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'Cv26iLHCawk',
+                       'title': 'QSR to QMSR: The Rewrite of 21 CFR Part 820 & Key Considerations for FDA '
+                                'Compliance',
+                       'channel': 'Greenlight Guru',
+                       'author': 'Greenlight Guru',
+                       'text': "So just releasing a document's never enough.",
+                       'tip': "So just releasing a document's never enough.",
+                       'timestamp': 1516,
+                       'timestamp_seconds': 1516,
+                       'timestamp_label': '[00:25:16]',
+                       'url': 'https://www.youtube.com/watch?v=Cv26iLHCawk&t=1516s',
+                       'markdown': '[00:25:16](https://www.youtube.com/watch?v=Cv26iLHCawk&t=1516s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q5.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'QFNSAlfJaic',
+                       'title': 'Medical Device Quality Management System Regulation Risk Management',
+                       'channel': 'U.S. Food and Drug Administration',
+                       'author': 'U.S. Food and Drug Administration',
+                       'text': 'The response must match the risk level.',
+                       'tip': 'The response must match the risk level.',
+                       'timestamp': 1174,
+                       'timestamp_seconds': 1174,
+                       'timestamp_label': '[00:19:34]',
+                       'url': 'https://www.youtube.com/watch?v=QFNSAlfJaic&t=1174s',
+                       'markdown': '[00:19:34](https://www.youtube.com/watch?v=QFNSAlfJaic&t=1174s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q5.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'jUOtQFk5I3Q',
+                       'title': 'ISO 13485 Certification and FDA QMSR Readiness for the Medical Device '
+                                'Industry',
+                       'channel': 'Kellerman Consulting',
+                       'author': 'Kellerman Consulting',
+                       'text': "I've learned over the years that it takes about 21 days for something to "
+                               'become a habit.',
+                       'tip': "I've learned over the years that it takes about 21 days for something to "
+                              'become a habit.',
+                       'timestamp': 1808,
+                       'timestamp_seconds': 1808,
+                       'timestamp_label': '[00:30:08]',
+                       'url': 'https://www.youtube.com/watch?v=jUOtQFk5I3Q&t=1808s',
+                       'markdown': '[00:30:08](https://www.youtube.com/watch?v=jUOtQFk5I3Q&t=1808s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q5.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'yW4-Hn0IXI8',
+                       'title': 'QMSR Final Rule: Meeting FDA’s New Requirements',
+                       'channel': 'Greenlight Guru',
+                       'author': 'Greenlight Guru',
+                       'text': 'That restriction is gone, and management review, internal audit and '
+                               'supplier audit records become reviewable.',
+                       'tip': 'That restriction is gone, and management review, internal audit and '
+                              'supplier audit records become reviewable.',
+                       'timestamp': 4578,
+                       'timestamp_seconds': 4578,
+                       'timestamp_label': '[01:16:18]',
+                       'url': 'https://www.youtube.com/watch?v=yW4-Hn0IXI8&t=4578s',
+                       'markdown': '[01:16:18](https://www.youtube.com/watch?v=yW4-Hn0IXI8&t=4578s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q5.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'L11OFtMOx3E',
+                       'title': 'FDA QSR to QMSR Regulatory, Legal, and Risk Implications for Industry',
+                       'channel': 'Medmarc',
+                       'author': 'Medmarc',
+                       'text': 'So the inspector will start with your risk documentation.',
+                       'tip': 'So the inspector will start with your risk documentation.',
+                       'timestamp': 1791,
+                       'timestamp_seconds': 1791,
+                       'timestamp_label': '[00:29:51]',
+                       'url': 'https://www.youtube.com/watch?v=L11OFtMOx3E&t=1791s',
+                       'markdown': '[00:29:51](https://www.youtube.com/watch?v=L11OFtMOx3E&t=1791s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q5.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'L11OFtMOx3E',
+                       'title': 'FDA QSR to QMSR Regulatory, Legal, and Risk Implications for Industry',
+                       'channel': 'Medmarc',
+                       'author': 'Medmarc',
+                       'text': 'In other words, risk is no longer a document.',
+                       'tip': 'In other words, risk is no longer a document.',
+                       'timestamp': 995,
+                       'timestamp_seconds': 995,
+                       'timestamp_label': '[00:16:35]',
+                       'url': 'https://www.youtube.com/watch?v=L11OFtMOx3E&t=995s',
+                       'markdown': '[00:16:35](https://www.youtube.com/watch?v=L11OFtMOx3E&t=995s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q5.'}]}

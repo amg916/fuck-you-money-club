@@ -1,1105 +1,887 @@
 from __future__ import annotations
 
-CHAPTER_7 = {
-    "id": "Q7",
-    "chapter_id": "Q7",
-    "chapter_number": 7,
-    "question_number": 7,
-    "slug": "automated-e-commerce-operating-process-production-blueprint-90-day-cohort",
-    "question_prompt": "How does an operator execute automated e-commerce end-to-end from intake to reconciled cash, backed by an auditable technical/ledger blueprint and a worked 90-day cohort walk?",
-    "kicker": "Q7 / THE BIG MONEY PLAYBOOKS",
-    "title": "The Complete Operating Process, Production Blueprint & 90-Day Cohort Walk",
-    "subtitle": "Authorized-Dealer Intake, 3PL Routing, SQLite Event Controls, FTC Shipping Duties, and a Cash-Reconciled Retail Cohort",
-    "layout_template": "research_exhibit",
-    "reading_time_minutes": 14,
-    "executive_summary": (
-        "Candidate #28, Automated E-Commerce, ranks #21 with a 85/100 "
-        "Money-to-Manpower Score across 18 mapped plays. Execution depends on "
-        "authorized inventory, contribution-positive acquisition, deterministic order "
-        "routing, and settlement evidence—not unattended storefront software. This "
-        "chapter connects sixteen retail workstreams with two adjacent mapped plays, "
-        "then supplies a six-module SQLite reference and a worked three-month cash "
-        "bridge. Annual owner profit remains $12,500 Conservative, $129,375 Base, "
-        "and $360,000 Scaled. The Base walk produces $93,750 monthly recognized "
-        "retail revenue and $10,781.25 monthly profit while exposing processor "
-        "settlement lag, inventory funding, returns, and fixed overhead. Operators "
-        "can reproduce the ledger checks, assign exception ownership, and distinguish "
-        "earned profit from immediately spendable cash."
-    ),
-    "key_metrics": [
-        {
-            "label": "Conservative",
-            "value": "$250,000",
-            "context": "Annual recognized retail sales net of refunds",
-            "note": "5% net margin; $12,500 annual owner profit; 2 FT + 3 C",
-        },
-        {
-            "label": "Base",
-            "value": "$1,125,000",
-            "context": "Annual recognized retail sales net of refunds",
-            "note": "11.5% net margin; $129,375 annual owner profit; 2 FT + 3 C",
-        },
-        {
-            "label": "Scaled",
-            "value": "$2,000,000",
-            "context": "Annual recognized retail sales net of refunds",
-            "note": "18% net margin; $360,000 annual owner profit; 3 FT + 4 C",
-        },
-    ],
-    "sections": [
-        {
-            "heading": "1. Qualify inventory, underwrite contribution, and release only executable orders",
-            "epistemic_status": "operating_framework",
-            "paragraphs": [
-                (
-                    "Start with an authorized-dealer packet, not an advertising campaign. "
-                    "The operator records supplier identity, resale authorization, permitted "
-                    "channels, warranty responsibility, landed unit cost, carton dimensions, "
-                    "lead time, and the exact product identifiers accepted by the warehouse. "
-                    "Match the purchase order, supplier invoice, and receiving report before "
-                    "making stock available. Product images and descriptions require usable "
-                    "rights; a distributor invoice alone does not establish every marketing "
-                    "permission. For imported goods, assign importer-of-record responsibility "
-                    "and classify duties before underwriting margin under 19 U.S.C. 1484. "
-                    "For consumer products, identify applicable testing, certification, "
-                    "traceability, and reporting duties rather than assuming the supplier "
-                    "absorbs them. Section 15(b) of the Consumer Product Safety Act, "
-                    "15 U.S.C. 2064(b), creates reporting obligations when the statutory "
-                    "conditions are met. Quarantine a suspect lot, preserve customer and "
-                    "shipment identifiers, and give one named employee authority to stop "
-                    "sales. This chapter organizes sixteen retail workstreams plus the "
-                    "two specified adjacent plays into eighteen operating lanes; it does "
-                    "not manufacture additional catalog identifiers. The storefront owns "
-                    "retail revenue only when it sells goods as principal; marketplace "
-                    "volume or a partner merchant's turnover is not operator revenue."
-                ),
-                (
-                    "Underwrite each SKU through a contribution worksheet that reconciles "
-                    "to the ledger. In the Base illustration, 1,000 fulfilled orders at "
-                    "$100 create $100,000 before refunds. Refunds of $6,250 leave $93,750 "
-                    "recognized retail revenue. Product cost is $37,500, fulfillment is "
-                    "$7,500, advertising is $18,750, and processor expense is $3,000, "
-                    "leaving $27,000 before $16,218.75 fixed operating expense. That "
-                    "produces $10,781.25 monthly owner profit, exactly 11.5% of revenue. "
-                    "The $18.75 advertising allowance per fulfilled order is a blended "
-                    "operating assumption, not permission to buy every incremental order "
-                    "at that price. Segment new-customer acquisition from repeat orders "
-                    "and evaluate refunds by original acquisition cohort. At the stated "
-                    "mix, pre-advertising contribution is $45.75 per fulfilled order; "
-                    "additional acquisition spend consumes that contribution dollar for "
-                    "dollar before overhead changes. Shopify or WooCommerce can capture "
-                    "orders, while a 3PL performs physical execution, but neither dashboard "
-                    "replaces this calculation. If a carrier surcharge or advertising "
-                    "auction destroys the SKU's allowance, suppress that SKU's campaign, "
-                    "revise its offer, or stop replenishment. Do not disguise an operating "
-                    "loss with projected repeat purchases that have not occurred."
-                ),
-                (
-                    "Translate the worksheet into explicit release criteria. Intake checks "
-                    "price version, available stock, destination serviceability, dealer "
-                    "restrictions, and payment evidence before any warehouse instruction. "
-                    "Use integer cents and stable storefront order identifiers; a repeated "
-                    "webhook must retrieve the existing order rather than reserve another "
-                    "unit. Separate available inventory from quarantine, damaged stock, "
-                    "and inbound purchase orders. A reorder alert should compare usable "
-                    "stock with lead-time demand plus safety stock, not merely announce "
-                    "that a shelf is nearly empty. At thirty daily units, twenty days "
-                    "of replenishment lead time, and ten days of buffer, the reorder "
-                    "point is 900 usable units. Demand volatility, supplier reliability, "
-                    "and carton economics determine whether that buffer is adequate. "
-                    "The 3PL must return accepted quantities, shipment identifiers, and "
-                    "delivery exceptions that can be joined to the original order. "
-                    "Under 16 CFR 435.2, shipping representations require an appropriate "
-                    "basis, and delays require the prescribed customer options and "
-                    "refund handling. A stockout therefore triggers customer communication "
-                    "and a recorded disposition, not an indefinite payment hold. The "
-                    "matrix assigns paired workstreams so the two-person core team "
-                    "can delegate specialist work without surrendering exception ownership."
-                ),
-            ],
-            "table": {
-                "caption": "Sixteen Retail Workstreams Paired into Eight Evidence-Producing Operating Lanes",
-                "headers": [
-                    "Paired operating workstreams",
-                    "Required evidence and system record",
-                    "Release condition and accountable operator",
-                    "Failure response and economic consequence",
-                ],
-                "rows": [
-                    [
-                        "Dealer authorization and supplier intake establish selling rights",
-                        "Store signed channel permissions beside supplier identity and invoices",
-                        "Merchandising owner confirms authorized products before catalog publication",
-                        "Suspend unsupported listings before advertising creates stranded customer orders",
-                    ],
-                    [
-                        "Product safety and import classification establish landed obligations",
-                        "Link lot records, applicable certificates, tariff classification, and entry evidence",
-                        "Operations owner verifies required documentation before releasing received inventory",
-                        "Quarantine affected lots and calculate duty corrections before repricing",
-                    ],
-                    [
-                        "Catalog quality and accessibility testing improve executable customer journeys",
-                        "Version product claims, image rights, semantic labels, and keyboard evidence",
-                        "Storefront owner tests product selection through completed checkout manually",
-                        "Repair broken templates rather than buying traffic into unusable pages",
-                    ],
-                    [
-                        "Inventory availability and replenishment planning prevent oversold physical stock",
-                        "Join warehouse receipts, reservation counts, lead times, and reorder calculations",
-                        "Operations owner reserves usable stock inside the intake transaction",
-                        "Pause affected advertisements and resolve delayed orders with recorded options",
-                    ],
-                    [
-                        "Checkout integrity and tax determination separate liabilities from revenue",
-                        "Retain price version, destination treatment, payment reference, and tax calculation",
-                        "Payment owner matches captured amount against the accepted order",
-                        "Reject mismatched captures and investigate without releasing warehouse instructions",
-                    ],
-                    [
-                        "Order routing and shipment verification connect promises to execution",
-                        "Persist immutable routing payloads and warehouse acceptance reference identifiers",
-                        "Operations owner releases only captured orders with available reserved units",
-                        "Retry using stable provider keys or move unsupported integrations offline",
-                    ],
-                    [
-                        "Returns disposition and retention segmentation protect realized customer value",
-                        "Attach refund reasons, recoverable inventory decisions, and channel preferences",
-                        "Support owner separates damage, remorse, fraud, and delivery failures",
-                        "Suppress unsuitable offers and quarantine returns requiring product inspection",
-                    ],
-                    [
-                        "Settlement matching and cohort review distinguish earnings from liquidity",
-                        "Reconcile order journals, processor balances, bank deposits, and advertising invoices",
-                        "Bookkeeping owner signs the cash bridge before increasing acquisition budgets",
-                        "Freeze budget expansion when unexplained clearing balances exceed documented timing",
-                    ],
-                ],
-            },
-            "callout": {
-                "kind": "OPERATOR GATE",
-                "title": "Four pre-flight checks before paid acquisition",
-                "body": (
-                    "The operator records evidence for each check before making the "
-                    "offer purchasable or increasing its acquisition budget."
-                ),
-                "items": [
-                    "Verify dealer permissions, applicable product evidence, landed costs, and lot traceability against the exact sellable SKU.",
-                    "Run a duplicate-order test and a competing-order stock test; neither may create a second reservation for the same accepted order.",
-                    "Match a captured payment, warehouse acceptance, refund, processor settlement, and bank deposit using persistent identifiers.",
-                    "Confirm shipping promises, delay handling, subscription terms where applicable, keyboard checkout, and customer-support ownership using recorded test cases.",
-                ],
-            },
-            "sop_steps": [
-                {
-                    "step": 1,
-                    "title": "Receive and qualify",
-                    "action": "Create the supplier, SKU, cost, and inventory evidence packet.",
-                    "detail": "Separate usable inventory from quarantine and reconcile the receiving report to the supplier invoice before storefront availability changes.",
-                },
-                {
-                    "step": 2,
-                    "title": "Accept and verify",
-                    "action": "Reserve stock atomically and authenticate the captured-payment event.",
-                    "detail": "Compare integer cents, merchant account, order reference, and capture identifier before creating the warehouse outbox record.",
-                },
-                {
-                    "step": 3,
-                    "title": "Route and fulfill",
-                    "action": "Submit the immutable shipment request with its persistent idempotency key.",
-                    "detail": "Store warehouse acceptance, then recognize sales and product cost at the documented shipment or delivery recognition point.",
-                },
-                {
-                    "step": 4,
-                    "title": "Refund and reconcile",
-                    "action": "Post verified refund, fee, and deposit events before reviewing cohort performance.",
-                    "detail": "Resolve clearing differences, update return disposition, and compare realized contribution against the original acquisition allowance.",
-                },
-            ],
-        },
-        {
-            "heading": "2. Implement the six-module ledger and an idempotent order workflow",
-            "epistemic_status": "operating_framework",
-            "paragraphs": [
-                (
-                    "The reference below is a deliberately narrow, executable single-SKU "
-                    "order kernel, not an entire storefront connector. Save the SQL "
-                    "cells as schema.sql and reconcile.sql, then concatenate the Python "
-                    "cells in order into reference.py in the same directory. Run "
-                    "python reference.py to execute the temporary-database checks. All "
-                    "amounts are integer cents, every journal row contains equal debit "
-                    "and credit amounts, and every external event has a unique operation "
-                    "key. SQLite BEGIN IMMEDIATE serializes competing writers before "
-                    "stock reservation or state changes; conditional updates enforce "
-                    "availability within that same transaction. Reusing an order key "
-                    "with different commercial terms raises an error instead of silently "
-                    "changing history. The schema assumes a single merchant ledger "
-                    "and a durable local filesystem suitable for SQLite locking. "
-                    "Use PostgreSQL with equivalent uniqueness and row-locking behavior "
-                    "when deployment requires multiple database hosts; do not put this "
-                    "SQLite file on an unreliable shared drive. Back up the database "
-                    "and test restoration before accepting live orders. Application "
-                    "access is the supported write path, and direct database edits "
-                    "are prohibited operationally. These boundaries matter: database "
-                    "constraints cannot authenticate an untrusted processor message or "
-                    "prove that a physical shipment actually arrived."
-                ),
-                (
-                    "Verification means matching authenticated provider evidence to "
-                    "the order, not trusting a browser redirect. The payment adapter "
-                    "must verify the provider signature, merchant account, currency, "
-                    "captured status, amount, and order reference before calling verify. "
-                    "The internal held state is an inventory reservation; it is not "
-                    "escrow and does not authorize custody services. A captured payment "
-                    "debits processor clearing and credits deferred sales until fulfillment "
-                    "meets the documented recognition policy. This example recognizes "
-                    "at confirmed delivery. Production orders need taxes, discounts, "
-                    "multiple lines, partial shipments, cancellations, and jurisdiction-specific "
-                    "handling added as explicit events, not hidden mutations. The outbox "
-                    "separates committed intent from external network execution. Concurrent "
-                    "workers can submit the same immutable request, but they must "
-                    "use the same provider key, and the provider must guarantee "
-                    "idempotent creation with stable response identity throughout the "
-                    "retry window. A local transaction alone cannot prevent duplicate "
-                    "remote shipments after a timeout. If an integration lacks that "
-                    "contract, disable automatic submission and use a controlled "
-                    "search-and-reconcile queue. Early delivery notifications remain "
-                    "in the adapter's durable retry inbox until warehouse acceptance "
-                    "has been recorded; they never force the order backward."
-                ),
-                (
-                    "Reconciliation starts with separate asset, liability, revenue, "
-                    "and expense balances. Captures increase processor clearing; refunds, "
-                    "fees, and bank settlements reduce it. Delivery releases deferred "
-                    "sales and posts product cost against inventory. The order view "
-                    "therefore reports recognized sales separately from bank cash, "
-                    "while the trial-balance view includes inventory funding, advertising, "
-                    "fulfillment expense, overhead, and owner capital when those "
-                    "events are posted. A batch payout must be allocated from "
-                    "processor detail rather than posted as unexplained revenue. "
-                    "Sales taxes belong in a payable account, not in sales; "
-                    "the cohort excludes tax flows to keep its retail comparison "
-                    "clean. The reference rejects refund totals above delivered order "
-                    "value and rejects changed payloads under reused journal keys. "
-                    "Its concurrent tests exercise repeated intake, repeated capture, "
-                    "competing outbox workers, repeated delivery, and repeated refunds. "
-                    "Before deployment, add authenticated adapter tests, crash injection "
-                    "between provider response and local acknowledgment, backup recovery, "
-                    "and expired-provider-key behavior. Never describe these checks "
-                    "as proof against every infrastructure failure. Within the stated "
-                    "database and provider contracts, stock changes and local postings "
-                    "are serialized and remote retries preserve one shipment identity. "
-                    "A failed invariant stops routing while an operator resolves "
-                    "the evidence gap."
-                ),
-            ],
-            "table": {
-                "caption": "6-Module Production Engineering / SQLite Ledger & Idempotent Workflow Reference Table",
-                "headers": [
-                    "Module and executable file placement",
-                    "Copy-pasteable schema or reference implementation",
-                    "Concurrency and evidence contract",
-                    "Operational extension before live customer use",
-                ],
-                "rows": [
-                    [
-                        "Module 1: Save this database definition as schema.sql",
-                        '''PRAGMA journal_mode=WAL;
-PRAGMA foreign_keys=ON;
-CREATE TABLE stock (
-    sku TEXT PRIMARY KEY,
-    available INTEGER NOT NULL CHECK (available >= 0),
-    unit_cost INTEGER NOT NULL CHECK (unit_cost >= 0)
-);
-CREATE TABLE orders (
-    id INTEGER PRIMARY KEY,
-    external_key TEXT NOT NULL UNIQUE,
-    payload TEXT NOT NULL,
-    sku TEXT NOT NULL REFERENCES stock(sku),
-    qty INTEGER NOT NULL CHECK (qty > 0),
-    gross INTEGER NOT NULL CHECK (gross > 0),
-    cost INTEGER NOT NULL CHECK (cost >= 0),
-    state TEXT NOT NULL CHECK (
-        state IN ('held', 'paid', 'shipped', 'fulfilled')
-    ),
-    capture_ref TEXT UNIQUE
-);
-CREATE TABLE accounts (
-    name TEXT PRIMARY KEY
-);
-INSERT INTO accounts(name) VALUES
-    ('cash'), ('processor'), ('deferred'), ('sales'),
-    ('returns'), ('fees'), ('inventory'), ('cogs'),
-    ('fulfillment'), ('advertising'), ('overhead'),
-    ('equity'), ('tax_payable');
-CREATE TABLE journal (
-    id INTEGER PRIMARY KEY,
-    op_key TEXT NOT NULL UNIQUE,
-    order_id INTEGER REFERENCES orders(id),
-    debit TEXT NOT NULL REFERENCES accounts(name),
-    credit TEXT NOT NULL REFERENCES accounts(name),
-    cents INTEGER NOT NULL CHECK (cents > 0),
-    created_at TEXT NOT NULL DEFAULT CURRENT_TIMESTAMP,
-    CHECK (debit <> credit)
-);
-CREATE TABLE outbox (
-    id INTEGER PRIMARY KEY,
-    order_id INTEGER NOT NULL UNIQUE REFERENCES orders(id),
-    provider_key TEXT NOT NULL UNIQUE,
-    body TEXT NOT NULL,
-    status TEXT NOT NULL DEFAULT 'pending'
-        CHECK (status IN ('pending', 'done')),
-    receipt TEXT UNIQUE,
-    CHECK (
-        (status = 'pending' AND receipt IS NULL)
-        OR (status = 'done' AND receipt IS NOT NULL)
-    )
-);
-CREATE INDEX journal_order_lookup ON journal(order_id);
-CREATE INDEX pending_outbox_lookup ON outbox(status, id);''',
-                        "Unique order, capture, operation, and provider keys prevent duplicate local identities; inventory checks reject negative available quantities.",
-                        "Add explicit line items, currencies, tax liabilities, reservation expiry, reversals, and durable authenticated incoming-event storage before broader deployment.",
-                    ],
-                    [
-                        "Module 2: Begin reference.py with intake, scoring, and posting primitives",
-                        '''from __future__ import annotations
-
-import json
-import sqlite3
-from contextlib import contextmanager
-
-
-def connect(path):
-    connection = sqlite3.connect(
-        str(path), timeout=30, isolation_level=None
-    )
-    connection.execute("PRAGMA foreign_keys=ON")
-    connection.execute("PRAGMA busy_timeout=30000")
-    connection.execute("PRAGMA synchronous=FULL")
-    return connection
-
-
-@contextmanager
-def atomic(path):
-    connection = connect(path)
-    try:
-        connection.execute("BEGIN IMMEDIATE")
-        yield connection
-        connection.commit()
-    except BaseException:
-        connection.rollback()
-        raise
-    finally:
-        connection.close()
-
-
-def positive_int(value):
-    if type(value) is not int or value <= 0:
-        raise ValueError("Expected a positive integer")
-
-
-def book(connection, key, order_id, debit, credit, cents):
-    positive_int(cents)
-    if not isinstance(key, str) or not key:
-        raise ValueError("A persistent operation key is required")
-    expected = (order_id, debit, credit, cents)
-    existing = connection.execute(
-        "SELECT order_id, debit, credit, cents "
-        "FROM journal WHERE op_key = ?", (key,)
-    ).fetchone()
-    if existing is not None:
-        if existing != expected:
-            raise ValueError("Operation key payload changed")
-        return
-    connection.execute(
-        "INSERT INTO journal "
-        "(op_key, order_id, debit, credit, cents) "
-        "VALUES (?, ?, ?, ?, ?)",
-        (key, order_id, debit, credit, cents),
-    )
-
-
-def record(path, key, order_id, debit, credit, cents):
-    with atomic(path) as connection:
-        book(connection, key, order_id, debit, credit, cents)
-
-
-def score(gross, refunds, goods, fulfillment, ads, fees):
-    values = (gross, refunds, goods, fulfillment, ads, fees)
-    if any(type(value) is not int or value < 0 for value in values):
-        raise ValueError("Scoring inputs must be nonnegative cents")
-    net_sales = gross - refunds
-    if net_sales <= 0:
-        raise ValueError("Expected positive net retail sales")
-    contribution = net_sales - goods - fulfillment - ads - fees
-    return {
-        "net_sales": net_sales,
-        "contribution": contribution,
-        "contribution_basis_points": contribution * 10000 // net_sales,
-    }
-
-
-def intake(path, external_key, sku, qty, unit_price):
-    positive_int(qty)
-    positive_int(unit_price)
-    if not isinstance(external_key, str) or not external_key:
-        raise ValueError("A storefront order key is required")
-    payload = json.dumps(
-        {"sku": sku, "qty": qty, "unit_price": unit_price},
-        sort_keys=True, separators=(",", ":"),
-    )
-    with atomic(path) as connection:
-        existing = connection.execute(
-            "SELECT id, payload FROM orders WHERE external_key = ?",
-            (external_key,),
-        ).fetchone()
-        if existing is not None:
-            if existing[1] != payload:
-                raise ValueError("Order key payload changed")
-            return existing[0]
-        stock = connection.execute(
-            "SELECT unit_cost FROM stock WHERE sku = ?", (sku,)
-        ).fetchone()
-        if stock is None:
-            raise ValueError("SKU has no receiving record")
-        changed = connection.execute(
-            "UPDATE stock SET available = available - ? "
-            "WHERE sku = ? AND available >= ?",
-            (qty, sku, qty),
-        ).rowcount
-        if changed != 1:
-            raise ValueError("Insufficient usable inventory")
-        cursor = connection.execute(
-            "INSERT INTO orders "
-            "(external_key, payload, sku, qty, gross, cost, state) "
-            "VALUES (?, ?, ?, ?, ?, ?, 'held')",
-            (
-                external_key, payload, sku, qty,
-                qty * unit_price, qty * stock[0],
-            ),
-        )
-        return cursor.lastrowid''',
-                        "BEGIN IMMEDIATE encloses duplicate detection, stock reservation, order creation, and balanced journal writes within serialized transactions.",
-                        "Use score outputs with documented refund assumptions; authenticate commercial inputs and restrict direct database access to controlled maintenance.",
-                    ],
-                    [
-                        "Module 3: Append verified-payment, delivery, and refund state transitions",
-                        '''def verify(path, order_id, capture_ref, captured_cents):
-    positive_int(captured_cents)
-    if not isinstance(capture_ref, str) or not capture_ref:
-        raise ValueError("A verified capture reference is required")
-    with atomic(path) as connection:
-        order = connection.execute(
-            "SELECT external_key, sku, qty, gross, state, capture_ref "
-            "FROM orders WHERE id = ?", (order_id,)
-        ).fetchone()
-        if order is None or order[3] != captured_cents:
-            raise ValueError("Capture does not match accepted order")
-        external_key, sku, qty, gross, state, previous = order
-        if state != "held":
-            if previous != capture_ref:
-                raise ValueError("Order already has another capture")
-            book(
-                connection, "capture:" + capture_ref, order_id,
-                "processor", "deferred", gross,
-            )
-            return
-        connection.execute(
-            "UPDATE orders SET state = 'paid', capture_ref = ? "
-            "WHERE id = ? AND state = 'held'",
-            (capture_ref, order_id),
-        )
-        book(
-            connection, "capture:" + capture_ref, order_id,
-            "processor", "deferred", gross,
-        )
-        body = json.dumps(
-            {"order_key": external_key, "sku": sku, "qty": qty},
-            sort_keys=True, separators=(",", ":"),
-        )
-        connection.execute(
-            "INSERT INTO outbox(order_id, provider_key, body) "
-            "VALUES (?, ?, ?)",
-            (order_id, "ship:" + external_key, body),
-        )
-
-
-def deliver(path, order_id):
-    with atomic(path) as connection:
-        order = connection.execute(
-            "SELECT state, gross, cost FROM orders WHERE id = ?",
-            (order_id,),
-        ).fetchone()
-        if order is None or order[0] not in ("shipped", "fulfilled"):
-            raise ValueError("Retry after warehouse acceptance is recorded")
-        book(
-            connection, "sale:" + str(order_id), order_id,
-            "deferred", "sales", order[1],
-        )
-        if order[2]:
-            book(
-                connection, "cost:" + str(order_id), order_id,
-                "cogs", "inventory", order[2],
-            )
-        connection.execute(
-            "UPDATE orders SET state = 'fulfilled' "
-            "WHERE id = ? AND state = 'shipped'", (order_id,)
-        )
-
-
-def refund(path, order_id, refund_ref, cents):
-    positive_int(cents)
-    if not isinstance(refund_ref, str) or not refund_ref:
-        raise ValueError("A verified refund reference is required")
-    key = "refund:" + refund_ref
-    with atomic(path) as connection:
-        existing = connection.execute(
-            "SELECT id FROM journal WHERE op_key = ?", (key,)
-        ).fetchone()
-        if existing is not None:
-            book(connection, key, order_id, "returns", "processor", cents)
-            return
-        order = connection.execute(
-            "SELECT state, gross FROM orders WHERE id = ?", (order_id,)
-        ).fetchone()
-        if order is None or order[0] != "fulfilled":
-            raise ValueError("This refund path requires fulfilled goods")
-        refunded = connection.execute(
-            "SELECT COALESCE(SUM(cents), 0) FROM journal "
-            "WHERE order_id = ? AND debit = 'returns'",
-            (order_id,),
-        ).fetchone()[0]
-        if refunded + cents > order[1]:
-            raise ValueError("Refund exceeds delivered order value")
-        book(connection, key, order_id, "returns", "processor", cents)''',
-                        "Capture references remain unique, state changes never move backward, and refund limits are checked under the same write lock as posting.",
-                        "Call only after authenticated evidence; add separate pre-delivery cancellation and reserved-stock release events rather than misusing delivered-goods refunds.",
-                    ],
-                    [
-                        "Module 4: Append idempotent shipment submission with immutable outbox requests",
-                        '''def dispatch_one(path, send):
-    connection = connect(path)
-    try:
-        job = connection.execute(
-            "SELECT id, order_id, provider_key, body FROM outbox "
-            "WHERE status = 'pending' ORDER BY id LIMIT 1"
-        ).fetchone()
-    finally:
-        connection.close()
-    if job is None:
-        return False
-    job_id, order_id, provider_key, body = job
-    receipt = send(body, idempotency_key=provider_key)
-    if not isinstance(receipt, str) or not receipt:
-        raise ValueError("Provider must return a stable shipment identifier")
-    with atomic(path) as connection:
-        current = connection.execute(
-            "SELECT status, receipt FROM outbox WHERE id = ?", (job_id,)
-        ).fetchone()
-        if current[0] == "done":
-            if current[1] != receipt:
-                raise ValueError("Provider broke stable idempotency identity")
-            return True
-        connection.execute(
-            "UPDATE outbox SET status = 'done', receipt = ? "
-            "WHERE id = ? AND status = 'pending'",
-            (receipt, job_id),
-        )
-        connection.execute(
-            "UPDATE orders SET state = 'shipped' "
-            "WHERE id = ? AND state = 'paid'", (order_id,)
-        )
-    return True''',
-                        "Duplicate workers may contact the provider, but stable remote idempotency prevents duplicate shipment creation and local acknowledgment remains atomic.",
-                        "Supply an authenticated adapter with documented key retention; preserve timed-out jobs and stop automatic retries before that retention window expires.",
-                    ],
-                    [
-                        "Module 5: Save these reconciliation definitions as reconcile.sql",
-                        '''CREATE VIEW order_reconciliation AS
-SELECT
-    o.id AS order_id,
-    o.external_key,
-    o.state,
-    o.gross AS accepted_gross_cents,
-    COALESCE(SUM(CASE
-        WHEN j.credit = 'sales' THEN j.cents
-        WHEN j.debit = 'returns' THEN -j.cents
-        ELSE 0 END), 0) AS net_sales_cents,
-    COALESCE(SUM(CASE
-        WHEN j.debit = 'processor' THEN j.cents
-        WHEN j.credit = 'processor' THEN -j.cents
-        ELSE 0 END), 0) AS processor_balance_cents,
-    COALESCE(SUM(CASE
-        WHEN j.credit = 'deferred' THEN j.cents
-        WHEN j.debit = 'deferred' THEN -j.cents
-        ELSE 0 END), 0) AS deferred_balance_cents,
-    COALESCE(SUM(CASE
-        WHEN j.debit = 'cash' THEN j.cents
-        WHEN j.credit = 'cash' THEN -j.cents
-        ELSE 0 END), 0) AS bank_cash_cents,
-    COALESCE(SUM(CASE
-        WHEN j.debit = 'fees' THEN j.cents
-        WHEN j.credit = 'fees' THEN -j.cents
-        ELSE 0 END), 0) AS processor_fee_cents
-FROM orders AS o
-LEFT JOIN journal AS j ON j.order_id = o.id
-GROUP BY o.id, o.external_key, o.state, o.gross;
-
-CREATE VIEW trial_balance AS
-SELECT account, SUM(signed_cents) AS debit_balance_cents
-FROM (
-    SELECT debit AS account, cents AS signed_cents FROM journal
-    UNION ALL
-    SELECT credit AS account, -cents AS signed_cents FROM journal
-)
-GROUP BY account;''',
-                        "Views distinguish recognized sales, deferred sales, processor receivables, and bank movement without counting settlements as new retail revenue.",
-                        "Allocate payout batches to order-level lines; post overhead without order identifiers and reconcile tax liabilities outside the simplified retail cohort.",
-                    ],
-                    [
-                        "Module 6: Append reproducible concurrency checks and ledger assertions",
-                        '''def run_checks():
-    from concurrent.futures import ThreadPoolExecutor
-    from pathlib import Path
-    from tempfile import TemporaryDirectory
-
-    def check(condition, message):
-        if not condition:
-            raise AssertionError(message)
-
-    folder = Path(__file__).resolve().parent
-    with TemporaryDirectory() as temporary:
-        path = Path(temporary) / "ledger.sqlite"
-        connection = connect(path)
-        try:
-            connection.executescript(
-                (folder / "schema.sql").read_text(encoding="utf-8")
-            )
-            connection.executescript(
-                (folder / "reconcile.sql").read_text(encoding="utf-8")
-            )
-            connection.execute(
-                "INSERT INTO stock(sku, available, unit_cost) "
-                "VALUES ('DEMO-SKU', 1, 3750)"
-            )
-        finally:
-            connection.close()
-
-        record(path, "opening-inventory", None, "inventory", "equity", 3750)
-
-        with ThreadPoolExecutor(max_workers=8) as pool:
-            ids = list(pool.map(
-                lambda unused: intake(
-                    path, "store-a:1001", "DEMO-SKU", 1, 10000
-                ),
-                range(16),
-            ))
-        check(len(set(ids)) == 1, "Duplicate intake created extra orders")
-        order_id = ids[0]
-
-        try:
-            intake(path, "store-a:1001", "DEMO-SKU", 1, 11000)
-        except ValueError:
-            pass
-        else:
-            raise AssertionError("Changed order payload was accepted")
-
-        try:
-            intake(path, "store-a:1002", "DEMO-SKU", 1, 10000)
-        except ValueError:
-            pass
-        else:
-            raise AssertionError("Unavailable stock was sold")
-
-        with ThreadPoolExecutor(max_workers=8) as pool:
-            list(pool.map(
-                lambda unused: verify(path, order_id, "capture-1001", 10000),
-                range(16),
-            ))
-
-        def send(body, idempotency_key):
-            check(json.loads(body)["qty"] == 1, "Shipment quantity changed")
-            return "receipt:" + idempotency_key
-
-        with ThreadPoolExecutor(max_workers=8) as pool:
-            list(pool.map(
-                lambda unused: dispatch_one(path, send), range(16)
-            ))
-        with ThreadPoolExecutor(max_workers=8) as pool:
-            list(pool.map(
-                lambda unused: deliver(path, order_id), range(16)
-            ))
-        with ThreadPoolExecutor(max_workers=8) as pool:
-            list(pool.map(
-                lambda unused: refund(path, order_id, "refund-1001", 500),
-                range(16),
-            ))
-
-        record(path, "fee-1001", order_id, "fees", "processor", 300)
-        record(path, "payout-1001", order_id, "cash", "processor", 9200)
-        connection = connect(path)
-        try:
-            row = connection.execute(
-                "SELECT net_sales_cents, processor_balance_cents, "
-                "deferred_balance_cents, bank_cash_cents "
-                "FROM order_reconciliation WHERE order_id = ?",
-                (order_id,),
-            ).fetchone()
-            check(row == (9500, 0, 0, 9200), "Order cash bridge failed")
-            check(
-                connection.execute(
-                    "SELECT available FROM stock WHERE sku = 'DEMO-SKU'"
-                ).fetchone()[0] == 0,
-                "Reservation count changed under repeated intake",
-            )
-            check(
-                connection.execute(
-                    "SELECT COUNT(*) FROM orders"
-                ).fetchone()[0] == 1,
-                "Rejected orders left durable records",
-            )
-            check(
-                connection.execute(
-                    "SELECT COUNT(*) FROM outbox WHERE status = 'done'"
-                ).fetchone()[0] == 1,
-                "Shipment acknowledgment count is incorrect",
-            )
-            check(
-                connection.execute(
-                    "SELECT SUM(debit_balance_cents) FROM trial_balance"
-                ).fetchone()[0] == 0,
-                "Trial balance does not sum to zero",
-            )
-        finally:
-            connection.close()
-
-        result = score(
-            10000000, 625000, 3750000, 750000, 1875000, 300000
-        )
-        check(result["net_sales"] == 9375000, "Base sales mismatch")
-        check(result["contribution"] == 2700000, "Base contribution mismatch")
-    print("Reference concurrency and ledger checks passed")
-
-
-if __name__ == "__main__":
-    run_checks()''',
-                        "The supplied checks exercise repeated concurrent events and verify one reservation, one order, one shipment acknowledgment, and a cleared processor balance.",
-                        "Execute locally before adaptation; these supplied checks have not been run here and do not exercise a live warehouse or payment provider.",
-                    ],
-                ],
-            },
-        },
-        {
-            "heading": "3. Walk three acquisition cohorts from accepted orders to reconciled cash",
-            "epistemic_status": "illustrative_model",
-            "paragraphs": [
-                (
-                    "The Worked 90-Day Cohort Walk models three identical monthly "
-                    "acquisition cohorts, not a claim that a new store reaches "
-                    "steady volume immediately. Each month starts with 5,000 qualified "
-                    "visits and 1,050 submitted orders. Fifty fail pre-capture checks "
-                    "for address, inventory, payment, or duplicate-order reasons, leaving "
-                    "1,000 captured and delivered orders at $100 each. The model "
-                    "assumes delivery and refund recognition occur within the acquisition "
-                    "month. Fifty orders receive full $100 refunds and twenty-five "
-                    "different orders receive $50 partial refunds, producing $6,250 "
-                    "total refunds. There are 950 orders retaining some revenue, "
-                    "including the twenty-five partially refunded orders, and $93,750 "
-                    "net retail sales. Refunded products have zero recovery value "
-                    "in this example, so product cost remains $37,500 for all "
-                    "1,000 shipped units. No separate chargeback loss is assumed; "
-                    "adding chargebacks requires reducing profit or offsetting another "
-                    "documented cost. The fifty pre-capture scrubs create neither "
-                    "sales nor processor receipts. Acquisition spending covers the "
-                    "whole traffic cohort, including failed submissions and subsequent "
-                    "refunds. These definitions prevent a common reporting error: "
-                    "dividing advertising by only successful retained customers while "
-                    "quietly removing the acquisition costs of everyone else."
-                ),
-                (
-                    "Processor cash follows a different clock from revenue. After "
-                    "$6,250 refunds and $3,000 processor expense, each cohort yields "
-                    "$90,750 net settlement entitlement. Assume 80% reaches the bank "
-                    "during its acquisition month and 20% reaches the bank the "
-                    "following month. This is a stress assumption for settlement "
-                    "timing, not a statement about any provider's standard schedule. "
-                    "Current-month cash is therefore $72,600, with $18,150 carried "
-                    "as a processor receivable. Nonprocessor cash spending is "
-                    "$79,968.75 each month: $37,500 inventory replacement, $7,500 "
-                    "fulfillment, $18,750 advertising, and $16,218.75 fixed overhead. "
-                    "The first month consumes $7,368.75 cash despite earning "
-                    "$10,781.25. Months two and three each receive $90,750 "
-                    "because the prior cohort's deferred settlement joins current "
-                    "receipts, producing $10,781.25 monthly operating cash. The "
-                    "operator funds $90,000 before day one: $60,000 bank cash "
-                    "and $30,000 opening inventory. Frequent replenishment keeps "
-                    "inventory at $30,000 while monthly purchases equal recognized "
-                    "product cost. This requires workable supplier lead times and "
-                    "warehouse receiving capacity. If purchases must precede sales "
-                    "by several months, increase working capital explicitly instead "
-                    "of treating the opening inventory assumption as universal."
-                ),
-                (
-                    "At day ninety, cumulative operating cash flow is $14,193.75, "
-                    "and bank cash is $74,193.75 after adding the opening "
-                    "$60,000. The balance sheet also holds $18,150 processor "
-                    "receivable and $30,000 inventory. Together those assets equal "
-                    "$122,343.75: the original $90,000 owner capital plus "
-                    "$32,343.75 cumulative owner profit. There are no supplier "
-                    "payables, debt, tax balances, or owner distributions in "
-                    "this illustration. Fixed overhead contains the modeled staffing, "
-                    "contractors, software, insurance, and administrative allocation; "
-                    "those costs must not be deducted a second time. Twelve "
-                    "identical operating months produce $1,125,000 recognized "
-                    "retail revenue and $129,375 owner profit, matching the "
-                    "Base scorecard exactly. The first-year cash result still "
-                    "differs because the final cohort retains its $18,150 "
-                    "receivable until the next month. Conservative remains "
-                    "$250,000 revenue at 5%, or $12,500 profit, with "
-                    "2 FT + 3 C; Scaled remains $2,000,000 at 18%, "
-                    "or $360,000, with 3 FT + 4 C. Those are separate "
-                    "annual scenarios, not interpolated outcomes from this cohort. "
-                    "Compare actual weekly settlements, refunds, purchase commitments, "
-                    "and acquisition costs against this bridge before increasing "
-                    "the next cohort's budget."
-                ),
-            ],
-            "table": {
-                "caption": "Worked 90-Day Cohort Walk",
-                "headers": [
-                    "Cohort or reconciliation checkpoint",
-                    "Traffic, scrubs, losses, and recognized retail sales",
-                    "Cash timing, operating costs, and earned profit",
-                    "Cumulative cash flow and balance-sheet evidence",
-                ],
-                "rows": [
-                    [
-                        "Month 1 cohort establishes the first settlement receivable",
-                        "5,000 visits; 1,050 submissions; 50 pre-capture scrubs; 1,000 delivered orders; $6,250 refunds; $93,750 net sales.",
-                        "$72,600 bank receipts; $79,968.75 nonprocessor spending; $16,218.75 fixed overhead included; $10,781.25 earned profit.",
-                        "Operating cash flow totals negative $7,368.75; bank cash reaches $52,631.25; processor receivable equals $18,150.",
-                    ],
-                    [
-                        "Month 2 cohort collects its predecessor's deferred settlement",
-                        "Another 5,000 visits yield 1,000 delivered orders after 50 scrubs; identical refunds leave another $93,750 net sales.",
-                        "$72,600 current receipts plus $18,150 prior receipts equal $90,750; nonprocessor spending remains $79,968.75.",
-                        "Monthly cash flow equals $10,781.25; cumulative cash flow reaches $3,412.50; bank cash reaches $63,412.50.",
-                    ],
-                    [
-                        "Month 3 cohort completes the ninety-day operating bridge",
-                        "A third 1,000-order delivered cohort produces $93,750 net sales; cumulative refunds equal $18,750 across three cohorts.",
-                        "$90,750 bank receipts less $79,968.75 spending produces $10,781.25 cash; cumulative earned profit equals $32,343.75.",
-                        "Cumulative cash flow reaches $14,193.75; bank cash equals $74,193.75; month-three processor receivable remains $18,150.",
-                    ],
-                    [
-                        "Monthly expense bridge includes every modeled operating category",
-                        "$100,000 delivered gross sales minus $6,250 refunds equals $93,750 recognized retail revenue before operating expenses.",
-                        "$37,500 goods; $7,500 fulfillment; $18,750 advertising; $3,000 processor fees; $16,218.75 overhead; total expense $82,968.75.",
-                        "$93,750 revenue minus $82,968.75 expense equals $10,781.25 profit; processor fees are withheld rather than paid twice.",
-                    ],
-                    [
-                        "Opening funding and closing assets reconcile owner capital",
-                        "$90,000 opening owner capital purchases $30,000 inventory and leaves $60,000 available bank cash before acquisition begins.",
-                        "Monthly replacement purchases equal consumed inventory cost; ending inventory remains $30,000 without supplier credit or debt.",
-                        "$74,193.75 bank plus $18,150 receivable plus $30,000 inventory equals $90,000 capital plus $32,343.75 profit.",
-                    ],
-                    [
-                        "Annual Base run rate matches the canonical scorecard",
-                        "Twelve monthly cohorts recognize $1,125,000 retail revenue after $75,000 refunds against $1,200,000 delivered gross sales.",
-                        "Annual expenses equal $995,625; annual owner profit equals $129,375; net margin equals exactly 11.5%.",
-                        "With unchanged timing, first-year operating cash equals $111,225; the remaining $18,150 profit resides in processor receivables.",
-                    ],
-                ],
-            },
-        },
-        {
-            "heading": "4. Operate the two adjacent plays without corrupting the retail model",
-            "epistemic_status": "operating_framework",
-            "paragraphs": [
-                (
-                    "The mapped play ssl_ada_wcag_compliance_scanner_outbound belongs "
-                    "beside storefront quality control, but its service revenue stays "
-                    "outside the retail Base case. Run headless Axe-core checks "
-                    "only on owned or authorized domains, supplement them with "
-                    "keyboard and screen-reader testing, and preserve the tested "
-                    "URL, template version, viewport, rule version, DOM location, "
-                    "and reproducible failure. Public PACER filings can reveal "
-                    "industry patterns; verify the actual docket and distinguish "
-                    "an allegation from an adjudicated finding before describing "
-                    "it to a merchant. Do not imply that a filing "
-                    "predicts a particular merchant's liability. Title III's "
-                    "42 U.S.C. 12182 is relevant, while website coverage "
-                    "and remedies depend on applicable law and jurisdiction. "
-                    "WCAG audit results are engineering evidence, not automatic "
-                    "legal conclusions. Illustratively, forty authorized domain "
-                    "reviews at 1.5 labor hours and $60 per hour cost "
-                    "$3,600. Six remediation retainers at $900 generate $5,400; "
-                    "after another $300 tooling allocation, that leaves $1,500 "
-                    "before other overhead. The fallback is concrete HTML or "
-                    "Liquid template repair, verified focus behavior, labeled "
-                    "controls, and manual assistive-technology retesting. Never sell "
-                    "a single JavaScript snippet as protection against lawsuits "
-                    "or replace recorded code fixes with a decorative overlay."
-                ),
-                (
-                    "The mapped play web2app_quiz_subscription_billing_bypass requires "
-                    "equally careful revenue separation. Use a transparent web "
-                    "quiz to explain an actual subscription offer and route "
-                    "customers to external checkout only where current platform "
-                    "rules, regional terms, and product category permit it. "
-                    "An entitlement service should bind the successful purchase "
-                    "to the correct customer account, process refunds and "
-                    "cancellations, and reconcile access state against verified "
-                    "billing events. Do not grant access from an editable "
-                    "return URL. Compare actual fees instead of assuming a "
-                    "universal 30% saving: one hundred monthly subscribers at "
-                    "$20 produce $2,000 before refunds. A hypothetical 15% "
-                    "store charge costs $300; a hypothetical web processor "
-                    "charge of 2.9% plus $0.30 per payment costs $88, "
-                    "creating a $212 initial difference. Additional support "
-                    "of $120 and $80 incremental churn cost leave only "
-                    "$12 before any applicable platform charges or taxes. "
-                    "Those assumptions require validation for the actual region "
-                    "and agreement. Under 15 U.S.C. 8403, covered online "
-                    "negative-option transactions require clear material terms, "
-                    "express informed agreement before charging, and a simple "
-                    "mechanism to stop recurring charges. The fallback is "
-                    "approved in-app billing with simpler disclosures and "
-                    "cancellation, not disguised links or concealed renewal terms."
-                ),
-                (
-                    "Close the operating loop with weekly evidence reviews "
-                    "rather than a larger dashboard collection. The merchandising "
-                    "owner reviews supplier exceptions and SKU contribution; "
-                    "the operations owner reviews stock reservations, warehouse "
-                    "acceptance, delivery failures, and product complaints. "
-                    "Contract specialists handle bookkeeping, creative production, "
-                    "or technical remediation under explicit task boundaries. "
-                    "For the Base team's 2 FT + 3 C, contractor "
-                    "headcount does not imply three additional full-time salaries; "
-                    "the actual hours and rates must fit the modeled "
-                    "overhead and other expense categories. Retention automation "
-                    "should follow verified fulfillment, product suitability, "
-                    "customer preferences, and observed purchase intervals. "
-                    "Suppress review requests after unresolved damage claims, "
-                    "stop replenishment reminders for recalled lots, and "
-                    "separate transactional shipping messages from promotional "
-                    "campaigns. Track refund-adjusted contribution by acquisition "
-                    "month before crediting retention with an economic lift. "
-                    "Applicable privacy rules depend on jurisdiction, covered "
-                    "data, and statutory thresholds; collect only operationally "
-                    "necessary fields and restrict access by role. If "
-                    "advertising prices rise 20% while volume stays fixed, "
-                    "the monthly $18,750 allowance becomes $22,500 and "
-                    "profit falls $3,750 to $7,031.25. Respond with "
-                    "offer repair, channel changes, or lower spend rather "
-                    "than editing the scorecard. Automation earns expansion "
-                    "only when exceptions remain visible and cash reconciles."
-                ),
-            ],
-            "table": {
-                "caption": "Adjacent-Play Economics and Retail Exception Fallbacks",
-                "headers": [
-                    "Play or operating risk under review",
-                    "Concrete unit economics and measurement boundary",
-                    "Evidence required before automated execution",
-                    "Fallback that preserves customer and ledger integrity",
-                ],
-                "rows": [
-                    [
-                        "ssl_ada_wcag_compliance_scanner_outbound connects authorized audits with code remediation",
-                        "Forty reviews cost $3,600 labor; six $900 retainers less $300 tooling leave $1,500 before remaining overhead.",
-                        "Retain domain authorization, reproducible DOM findings, manual tests, and accurately characterized public court records.",
-                        "Deliver verified HTML or Liquid repairs; never represent snippets or automated scans as lawsuit prevention.",
-                    ],
-                    [
-                        "web2app_quiz_subscription_billing_bypass compares permitted checkout routes by actual region",
-                        "$2,000 monthly subscriptions yield a hypothetical $212 fee difference; $200 support and churn costs leave $12.",
-                        "Verify current regional platform terms, authenticated billing events, subscription disclosures, and matching customer entitlements.",
-                        "Use approved in-app billing where required and simplify renewal communication, cancellation, and refund-driven access changes.",
-                    ],
-                    [
-                        "Advertising inflation compresses contribution before overhead can adjust",
-                        "A 20% increase on $18,750 advertising adds $3,750 expense and reduces monthly profit to $7,031.25.",
-                        "Reconcile channel invoices with cohort orders and refund-adjusted contribution before accepting attributed dashboard returns.",
-                        "Reduce acquisition exposure, improve offers, and protect cash rather than assuming future repeat purchases recover losses.",
-                    ],
-                    [
-                        "Inventory shortages create customer promises without executable warehouse capacity",
-                        "Thirty daily units across twenty lead-time days plus ten buffer days require a 900-unit reorder point.",
-                        "Compare usable units, committed reservations, confirmed inbound receipts, and supplier performance before publishing availability.",
-                        "Pause affected campaigns and apply documented shipping-delay options instead of silently extending delivery promises.",
-                    ],
-                    [
-                        "Product complaints require lot-level containment and reporting assessment",
-                        "One affected lot can expose every associated order; reserve replacement and refund capacity before restarting sales.",
-                        "Link complaint details, lot identifiers, supplier evidence, incident timing, and applicable reporting criteria for review.",
-                        "Quarantine stock, preserve customer traceability, assess statutory reporting duties, and stop inappropriate retention messages.",
-                    ],
-                    [
-                        "Retention automation can overstate value when refunds remain unresolved",
-                        "Measure repeat-order contribution after goods, fulfillment, advertising, fees, and refunds rather than counting message-attributed gross sales.",
-                        "Use verified fulfillment, customer preferences, product suitability, and resolved support cases before triggering promotional journeys.",
-                        "Suppress unsuitable campaigns, honor applicable opt-outs, and keep transactional shipment communications separate from promotional sequences.",
-                    ],
-                ],
-            },
-            "callout": {
-                "kind": "INSIDER PRO-TIPS",
-                "title": "Four practices that keep automation economically honest",
-                "body": (
-                    "Experienced operators shorten the evidence path between a "
-                    "customer event, a physical action, and a reconciled ledger entry."
-                ),
-                "items": [
-                    "Reserve merchant-qualified order keys permanently; provider retries must reuse the original immutable payload and key rather than generate a fresh shipment request.",
-                    "Audit refunded cohorts using original advertising spend; removing failed customers from the denominator must never remove their acquisition costs.",
-                    "Maintain separate service and subscription ledgers for the two adjacent plays so their illustrative margins cannot inflate canonical retail owner profit.",
-                    "Keep a timed settlement bridge beside the contribution report; the Base walk earns $32,343.75 in ninety days but generates only $14,193.75 operating cash.",
-                ],
-            },
-        },
-    ],
-    "pull_quote": "An automated store is controlled only when every promised unit, posted dollar, and bank deposit can be traced to the same durable evidence.",
-    "diagram_id": "diag-01",
-    "action_checklist": [
-        "Assemble one authorized-dealer SKU packet with landed cost, channel permissions, product evidence, receiving records, and a documented shipping promise.",
-        "Save the six reference modules, run their local concurrency checks, and add authenticated provider adapters before connecting customer traffic.",
-        "Test repeated captures, duplicate routing attempts, early delivery events, refunds, and processor payouts against persistent order and operation keys.",
-        "Reproduce the $93,750 monthly Base revenue, $82,968.75 expense, and $10,781.25 profit bridge without counting processor settlements as additional sales.",
-        "Fund and monitor the opening $60,000 cash plus $30,000 inventory assumption, replacing it with actual supplier lead-time and settlement requirements.",
-        "Keep accessibility-service and subscription-play economics separate while documenting lawful outreach, permitted billing routes, customer disclosures, and measurable fallback actions.",
-    ],
-    "statutory_citations": [
-        {
-            "title": "16 CFR 435.2 — Mail, Internet, or Telephone Order Merchandise Rule",
-            "url": "https://www.ecfr.gov/current/title-16/chapter-I/subchapter-D/part-435/section-435.2",
-            "relevance": "Supports substantiated shipping representations, prescribed delay handling, customer cancellation options, and timely refund procedures.",
-        },
-        {
-            "title": "15 U.S.C. 2064(b) — Consumer product hazard reporting",
-            "url": "https://www.law.cornell.edu/uscode/text/15/2064",
-            "relevance": "Connects manufacturer, distributor, and retailer reporting duties to qualifying information about consumer product defects, hazards, and statutory nonconformity.",
-        },
-        {
-            "title": "19 U.S.C. 1484 — Entry of merchandise",
-            "url": "https://www.law.cornell.edu/uscode/text/19/1484",
-            "relevance": "Anchors importer-of-record entry responsibilities and reasonable-care duties affecting product classification, value, and import documentation.",
-        },
-        {
-            "title": "42 U.S.C. 12182 — Prohibition of discrimination by public accommodations",
-            "url": "https://www.law.cornell.edu/uscode/text/42/12182",
-            "relevance": "Provides the Title III statutory reference for accessibility analysis while requiring attention to applicable jurisdiction and the distinction between engineering findings and legal conclusions.",
-        },
-        {
-            "title": "15 U.S.C. 8403 — Negative option marketing on the Internet",
-            "url": "https://www.law.cornell.edu/uscode/text/15/8403",
-            "relevance": "Requires clear material disclosures, express informed agreement before covered recurring charges, and simple mechanisms to stop those charges.",
-        },
-        {
-            "title": "15 U.S.C. 45 — Unfair methods of competition and unfair or deceptive acts or practices",
-            "url": "https://www.law.cornell.edu/uscode/text/15/45",
-            "relevance": "Supports accurate product claims, truthful subscription offers, and evidence-based descriptions of accessibility remediation rather than unsupported protective promises.",
-        },
-    ],
-}
+CHAPTER_7 = {'id': 'Q7',
+ 'chapter_id': 'Q7',
+ 'chapter_number': 7,
+ 'question_number': 7,
+ 'slug': 'outsourced-fulfillment-inside-the-3pl',
+ 'question_prompt': 'When should I hand fulfillment to a 3PL, and what happens inside the warehouse from '
+                    'receiving to shipping?',
+ 'kicker': 'Q7 / THE BIG MONEY PLAYBOOKS',
+ 'title': 'Outsourced Fulfillment: Inside the 3PL',
+ 'subtitle': 'Receiving, picking, packing, and shipping walkthroughs, apparel and B2B/B2C fulfillment, 3PL '
+             'onboarding steps, 2-day shipping networks, outgrowing your own warehouse, inventory-sync and '
+             'order-edit exceptions, and throughput case studies',
+ 'layout_template': 'thirty_day_roadmap',
+ 'reading_time_minutes': 15,
+ 'executive_summary': 'Operators agree on one loop: pre-declared inbound, scanned receiving, bin-level '
+                      'storage, scan-verified pick and pack, and labeled outbound with tracking pushed '
+                      'back. They also agree on one failure point, which is SKU-level inventory sync. '
+                      'Radial cites about four weeks to onboard, including one to two weeks of system '
+                      'setup. Smart Capital puts the self-fulfillment ceiling at roughly 100 to 500 orders '
+                      'a month or 15 to 20 weekly packing hours. It prices pick and pack at $2 to $5 plus '
+                      'about $1 per extra item, and models $15.50 per self-shipped order versus about $12 '
+                      'through a 3PL. ShipWise and CartonCloud operators credit software with faster '
+                      'go-lives, rate-shopping rules, four fewer full-time staff, and up to 20% lower '
+                      'overhead. Unbound Merino co-founder Dan rejects 3PLs because multi-item baskets '
+                      'make per-item fees cost prohibitive. SHIPHYPE warns that headline pick fees hide '
+                      'the real invoice.',
+ 'key_metrics': [{'label': 'Realistic 3PL Onboarding Timeline',
+                  'metric': 'Realistic 3PL Onboarding Timeline',
+                  'value': 'About 4 weeks (best case a few days; system setup 1 to 2 weeks)',
+                  'confidence': 'attributed_practitioner_claim',
+                  'context': 'Anthony from Radial gave this timeline for a brand moving from a known '
+                             'platform with default fields. The time beyond system setup goes to getting '
+                             'goods to the dock, receiving them, and finishing setup.',
+                  'source': 'WorkflowLife ([etEhM2kyodk @ 00:05:39])'},
+                 {'label': 'Per-Order Cost: Garage vs 3PL',
+                  'metric': 'Per-Order Cost: Garage vs 3PL',
+                  'value': 'About $15.50 self-fulfilled vs about $12 through a 3PL',
+                  'confidence': 'attributed_practitioner_claim',
+                  'context': "Olivia's spreadsheet uses a seller shipping 300 one-item orders a month at a "
+                             '$40 average price. The self-fulfilled figure includes about $6 per order of '
+                             "the seller's time, valued at $20 an hour.",
+                  'source': 'Smart Capital ([8R8um_CLrWI @ 00:33:10])'},
+                 {'label': 'WMS Switch Overhead Reduction',
+                  'metric': 'WMS Switch Overhead Reduction',
+                  'value': 'Up to 20% lower overhead and about 4 fewer full-time equivalents',
+                  'confidence': 'attributed_practitioner_claim',
+                  'context': 'A 40-client B2C and food 3PL replaced manual sales and purchase order entry '
+                             'with CartonCloud. The operator says this turned an unprofitable operation '
+                             'into a profitable one.',
+                  'source': 'CartonCloud ([EYQU96qv5rk @ 00:01:06])'},
+                 {'label': 'Shipping Software Cutover Speed',
+                  'metric': 'Shipping Software Cutover Speed',
+                  'value': 'About 95% of production live in 2 days; old TMS off in 5 business days',
+                  'confidence': 'attributed_practitioner_claim',
+                  'context': 'The ShipWise client ships roughly 55,000 to 60,000 direct-to-consumer orders '
+                             'a month across three buildings. This is how fast they moved onto rule-based '
+                             'rate shopping.',
+                  'source': 'ShipWise ([PTU-PzhQg_4 @ 00:01:55])'}],
+ 'sections': [{'heading': 'Section 1: The Practitioner Consensus',
+               'paragraphs': ['Every operator describes the same physical loop, and they agree on it '
+                              'almost completely. Inventory lands at a dock, gets counted and logged, sits '
+                              'in a mapped location, and leaves as a labeled parcel while tracking flows '
+                              'back to the storefront. Monopoly lays out the chain from ocean freight '
+                              'through customs to a 3PL dock. There, teams unload pallets, inspect '
+                              'products, verify quantities, and digitally record inbound stock before a '
+                              'warehouse management system takes over location tracking [SeloMfYsYk0 @ '
+                              '00:00:55]. ShipBob frames the same core as picking, packing, and shipping, '
+                              "with the brand's store wired into the 3PL's technology so orders sync "
+                              'without anyone handling them [zldfAGyfsfA @ 00:00:20]. Michael at ShipSage '
+                              'breaks the loop into six steps: receiving, storage, order intake, picking, '
+                              'packing, and shipping. Michael insists the merchant declare sizes, styles, '
+                              'quantities, and colors before a single carton arrives [eRxb-KV0R4E @ '
+                              '00:00:13]. Relay Distro walks the floor in the same order. Freight shows up '
+                              'either fully palletized or loose, and loose goods need more receiving work '
+                              'in the system before anything is sellable [6LI3_5-zPpY @ 00:00:00]. All '
+                              'four share the same baseline prerequisite: a 3PL is only as good as its '
+                              'inbound data and the receiving discipline that feeds everything downstream.',
+                              'The second point of agreement is that the software connection, not the '
+                              'forklift, decides whether outsourcing works. Anthony from Radial says the '
+                              'hardest part of serving many brands is keeping one platform that can plug '
+                              'into different web stores, ERPs, custom integrations, and protocols. The '
+                              "next challenge is turning each brand's quirks into repeatable operational "
+                              'flows [etEhM2kyodk @ 00:04:23]. SHIPHYPE Fulfillment goes further and calls '
+                              'order import the easy part. The failures start when inventory sync, order '
+                              'edits, and warehouse exceptions collide. If stock only updates in batches, '
+                              'Shopify keeps selling units the warehouse can no longer pick [CB8e30IUILU @ '
+                              '00:00:00]. Olivia at Smart Capital gives the same warning with numbers. A '
+                              'once-a-day sync can let a store sell 10 units of a product that only has '
+                              'five left, and five customers get cancellation emails instead of packages '
+                              "[8R8um_CLrWI @ 00:25:01]. ShipSage's answer is integration breadth: it "
+                              'connects to more than 100 marketplaces, including Shopify, TikTok Shop, '
+                              'Etsy, and Amazon. That keeps stock synced so nobody oversells a size that '
+                              'already ran out [eRxb-KV0R4E @ 00:00:51]. Every camp treats real-time '
+                              'SKU-level sync as the minimum requirement. Anything slower is a built-in '
+                              'source of overselling.',
+                              'Practitioners also agree on two habits: scan everything, and place '
+                              'inventory close to the buyer. Barry, co-founder of ShipSage, runs about '
+                              '8,000 bin boxes on four levels in the Ontario, California building. The '
+                              'team scans three barcodes on every pick: the item, the bin, and the '
+                              'shipping label. The goal is to eliminate wrong-size errors that damage '
+                              'apparel reviews [-xS69Ouj3nM @ 00:00:24]. Relay Distro calls its version a '
+                              'double confirmation. The picker scans an item into the tote and the packer '
+                              'scans it again. Goods pulled from the automation system get a final scan on '
+                              'top of the one made at put-away [6LI3_5-zPpY @ 00:02:01]. On speed, '
+                              "Olivia's zone math shows a single California garage shipping to New York "
+                              'pays long-distance rates and waits 4 to 5 days by ground. An Ohio '
+                              'warehouse, by contrast, sits within two days of most of the East '
+                              '[8R8um_CLrWI @ 00:08:09]. ShipBob makes the same argument for its network '
+                              'of dozens of fulfillment centers. It says distributed inventory cuts both '
+                              'transit times and shipping costs [zldfAGyfsfA @ 00:02:07]. The shared logic '
+                              'is simple. Every touch gets a scan and every SKU gets a fixed location. The '
+                              'average shipping distance is where the cost savings and the delivery '
+                              'promise come from.'],
+               'table': {'caption': 'Where the 3PL operators line up: the baseline every practitioner '
+                                    'treats as non-negotiable',
+                         'headers': ['Consensus Point',
+                                     'What Practitioners Report',
+                                     'Operator Implication',
+                                     'Expert Source'],
+                         'rows': [['Declare every inbound carton before it ships to the warehouse',
+                                   'Merchant pre-declares sizes, styles, quantities, and colors; a DWS '
+                                   'machine measures, weighs, and scans every package on arrival',
+                                   'Damaged or short stock gets flagged right away instead of showing up '
+                                   'later as oversold orders',
+                                   'ShipSage ([eRxb-KV0R4E @ 00:00:13])'],
+                                  ['Run one integration platform for many different brands',
+                                   'Radial keeps a single platform that connects into different web '
+                                   'stores, ERPs, custom integrations, and protocols',
+                                   'Brand launches become repeatable and can be done with quality and '
+                                   'speed even when each brand is unique',
+                                   'WorkflowLife ([etEhM2kyodk @ 00:04:23])'],
+                                  ['SKU-level inventory sync must keep up on peak days',
+                                   'When inventory only updates in batches, Shopify keeps selling units '
+                                   'the warehouse no longer has available to pick',
+                                   'Ask how fast SKU-level updates land during peak, not just whether '
+                                   'orders import cleanly',
+                                   'SHIPHYPE Fulfillment ([CB8e30IUILU @ 00:00:00])'],
+                                  ['Scan three barcodes on every single pick',
+                                   'Item, bin, and shipping label are all scanned across roughly 8,000 bin '
+                                   'boxes on four levels in Ontario, California',
+                                   'Wrong-size and wrong-color picks get caught before they turn into bad '
+                                   'customer reviews for apparel brands',
+                                   'ShipSage ([-xS69Ouj3nM @ 00:00:24])'],
+                                  ['Confirm each item twice between shelf and box',
+                                   'Picker scans the item into the tote, packer scans it again, and '
+                                   'automation adds a scan at put-away and retrieval',
+                                   'Two independent checks catch picking mistakes before the label prints '
+                                   'and the carrier takes the parcel',
+                                   'Relay Distro ([6LI3_5-zPpY @ 00:02:01])'],
+                                  ['Distribute inventory across regional fulfillment centers near buyers',
+                                   'A network of dozens of fulfillment centers lets brands place inventory '
+                                   'strategically closer to end customers',
+                                   'Brands get shorter transit times and lower shipping costs on the '
+                                   'average order across the whole country',
+                                   'ShipBob ([zldfAGyfsfA @ 00:02:07])'],
+                                  ['Outsource fulfillment so the brand can focus on selling',
+                                   'Instead of building an expensive private supply chain, businesses hand '
+                                   'fulfillment to 3PLs and focus on marketing and sales',
+                                   'Founder hours move from packing boxes to growth work like products, '
+                                   'listings, and customer acquisition',
+                                   'Monopoly ([SeloMfYsYk0 @ 00:00:36])']]}},
+              {'heading': 'Section 2: Exact Street Mechanics, Tools & Numbers',
+               'paragraphs': ['Olivia at Smart Capital gives the clearest trigger points. Somewhere '
+                              'between roughly 100 and 500 orders a month, packing stops fitting around '
+                              'the day and becomes the day. Ten orders a day takes about an hour. Thirty a '
+                              'day takes three to four hours, and mistakes start creeping in. Fifty a day '
+                              "eats most working hours [8R8um_CLrWI @ 00:05:27]. Olivia's spreadsheet "
+                              'models a seller moving 300 one-item orders a month at a $40 average price. '
+                              'Self-fulfillment comes to about $15.50 per order: $1.50 of packaging, about '
+                              "$8 of shipping, and roughly $6 of the seller's time at $20 an hour. The 3PL "
+                              'version comes to about $12: $3 pick and pack, $1 packaging, $7 shipping, '
+                              'and about $1 of storage, minimums, and software spread across orders '
+                              '[8R8um_CLrWI @ 00:33:10]. Dan, co-founder of Unbound Merino, finds the math '
+                              'runs the other way for multi-item baskets. With three or more items in the '
+                              'average order, per-item pick and pack charges make 3PLs cost prohibitive '
+                              'for that business [088tKYu7kKY @ 00:07:07]. SHIPHYPE Fulfillment agrees '
+                              'that the headline pick fee never shows the real invoice. Multi-line orders, '
+                              'bundles, inserts, returns, pallet and bin storage, and manual edits all '
+                              'change the number [CB8e30IUILU @ 00:26:00]. The rule that follows is to '
+                              'model your own order profile, not the headline rate.',
+                              'Onboarding follows a fixed sequence across the shops. Chris at Einstein '
+                              'Fulfillment lays out five steps. First is discovery and planning, ending in '
+                              'a custom proposal with prices, services, and timelines. Second is system '
+                              'integration for Shopify, Amazon, WooCommerce, or custom builds. Third is '
+                              'inbound prep, where every item is inspected, scanned, and logged into bins, '
+                              'pallets, racks, and zones. Fourth is custom fulfillment training for '
+                              'kitting, gift wrap, and inserts. Fifth is go-live, with a portal '
+                              "walkthrough and test orders [7Xr-2wI5LJo @ 00:00:00]. Corrina, ShipSage's "
+                              "customer success manager, overlaps the steps to save time. Corrina's team "
+                              'runs marketplace integrations for Amazon, Shopify, and eBay while the first '
+                              'inbound is still in transit, so orders can go live the moment stock hits '
+                              'the warehouse [5V9d55NqxRw @ 00:00:38]. Anthony from Radial puts a clock on '
+                              'it: a few days in the best case and about four weeks realistically. System '
+                              'setup takes one to two weeks, and the rest goes to getting goods to the '
+                              'dock and received [etEhM2kyodk @ 00:05:39]. Olivia adds the catalog rule '
+                              'that makes or breaks go-live. The SKU in Shopify must match the SKU in the '
+                              'warehouse system character for character. Otherwise the connection fails '
+                              'silently, and the failure shows up as an order that never ships '
+                              '[8R8um_CLrWI @ 00:22:03].',
+                              'Inside the warehouse, the tools that make the biggest difference are '
+                              'rate-shopping engines, modern WMS platforms, and goods-to-person '
+                              'automation. The ShipWise client runs roughly 55,000 to 60,000 '
+                              'direct-to-consumer shipments a month across three buildings totaling about '
+                              '400,000 square feet. Its operator says one person rating 3,000 shipments in '
+                              'a day cannot get every one right. Business rules now pick the cheapest rate '
+                              'and the best service, and staff just scan and ship [PTU-PzhQg_4 @ '
+                              '00:02:48]. The same operator reports about 95% of production running within '
+                              'two days and the old TMS fully switched off in five business days '
+                              '[PTU-PzhQg_4 @ 00:01:55]. A CartonCloud warehouse had grown to 40 clients '
+                              'and was picking 16 hours a day. It replaced manual sales and purchase order '
+                              'entry, cut about four full-time equivalents, and reduced overhead by as '
+                              'much as 20%. The operator says that turned an unprofitable operation into a '
+                              'profitable one [EYQU96qv5rk @ 00:01:06]. Ben Pu, founder of ShipSage, is '
+                              'going further. ShipSage is building an AS/RS goods-to-person system at its '
+                              'Chicago facility, an in-house pick-to-light system for tote picking, and a '
+                              'put-to-wall inbound sort that feeds the AS/RS bins [CVklpdSeqOA @ '
+                              '00:02:13]. The common thread is taking judgment calls off the floor so '
+                              'throughput can grow without adding staff.'],
+               'table': {'caption': 'The numbers, tools, and service levels practitioners actually quote '
+                                    'on the floor',
+                         'headers': ['Mechanic',
+                                     'Number or Tool Quoted',
+                                     'How Operators Use It',
+                                     'Expert Source'],
+                         'rows': [['Self-fulfillment ceiling and time audit',
+                                   'Roughly 100 to 500 orders a month, or more than about 15 to 20 packing '
+                                   'hours a week',
+                                   'Log every packing, labeling, carrier, and where-is-my-order hour for '
+                                   'one week before deciding to move',
+                                   'Smart Capital ([8R8um_CLrWI @ 00:06:54])'],
+                                  ['Pick and pack fee on published rate cards',
+                                   'Roughly $2 to $5 for the first item, often around $1 for each extra '
+                                   'item',
+                                   'Ask what counts as a standard pick and request a sample invoice built '
+                                   'on your real products',
+                                   'Smart Capital ([8R8um_CLrWI @ 00:29:14])'],
+                                  ['Storage rate and inventory turn check',
+                                   'About 45 cents to $1 or more per cubic foot monthly, or $15 to $40 per '
+                                   'pallet',
+                                   'A product turning fewer than about four times a year gets discounted, '
+                                   'bundled, or pulled back home',
+                                   'Smart Capital ([8R8um_CLrWI @ 00:30:19])'],
+                                  ['Onboarding and system setup window',
+                                   'A few days best case, about four weeks realistic, one to two weeks of '
+                                   'system setup',
+                                   'Plan the inbound transfer and receiving time on top of integration '
+                                   'work, then expect hypercare smoothing',
+                                   'WorkflowLife ([etEhM2kyodk @ 00:05:39])'],
+                                  ['Cutoff time and receiving service level',
+                                   '2pm order cutoff, receiving completed under 48 hours, brands shipping '
+                                   'a thousand plus orders monthly',
+                                   'Check where the cutoff sits relative to order release, because edits '
+                                   'after release become manual exceptions',
+                                   'SHIPHYPE Fulfillment ([CB8e30IUILU @ 00:00:40])'],
+                                  ['Rule-based rate shopping at scale',
+                                   'ShipWise rules engine rating 3,000 shipments in one day across unique '
+                                   'weights, dimensions, and SLAs',
+                                   "Write each client's business rules once so staff only scan and ship "
+                                   'the cheapest correct service',
+                                   'ShipWise ([PTU-PzhQg_4 @ 00:03:01])'],
+                                  ['Outbound DWS verification before carrier handoff',
+                                   'Dimension, weight, and scan check on every package with a stated 99.9% '
+                                   'accuracy rate',
+                                   'Confirm size, weight, and carrier option on the way out, then push '
+                                   'tracking automatically to the store',
+                                   'ShipSage ([eRxb-KV0R4E @ 00:02:07])']]},
+               'callout': {'kind': 'INSIDER PRO-TIPS',
+                           'title': 'Moves practitioners use before and after signing',
+                           'body': 'These are low-cost tests and setup choices that operators use to '
+                                   "verify a 3PL's claims and protect margin before committing the full "
+                                   'catalog.',
+                           'items': ['Send a $10 test order to your own address and another to a friend in '
+                                     'a different region, then time both. Olivia says that tells you more '
+                                     'about real delivery speed than any sales call [Smart Capital — '
+                                     '8R8um_CLrWI @ 00:15:15].',
+                                     'Never send your whole inventory in the first shipment. Ship about a '
+                                     'third, run it for two or three weeks, measure delivery times and '
+                                     'error rate, then move the rest [Smart Capital — 8R8um_CLrWI @ '
+                                     '00:19:08].',
+                                     "Push the warehouse's real rates to the Shopify front end so handling "
+                                     'and pick-pack markup are covered automatically, instead of guessing '
+                                     'at handling charges in the back end [ShipWise — PTU-PzhQg_4 @ '
+                                     '00:03:38].',
+                                     "If you have outgrown your own warehouse, you don't have to close it. "
+                                     'Ben Pu proposes keeping it as one distribution node orchestrated by '
+                                     "ShipSage's WMS, with the 3PL network handling the overflow volume "
+                                     '[ShipSage — CVklpdSeqOA @ 00:01:08].']},
+               'sop_steps': [{'step': 1,
+                              'title': 'Run the garage ceiling audit',
+                              'action': 'Measure hours, space, shipping zones, and mistake rate before '
+                                        'requesting quotes.',
+                              'detail': 'Log one week of packing, labeling, carrier runs, and '
+                                        'where-is-my-order replies. More than about 15 to 20 hours means a '
+                                        'fulfillment problem, not a sales problem. Move when three of the '
+                                        'four signals are flashing, and stay put under about 50 orders a '
+                                        'month [Smart Capital — 8R8um_CLrWI @ 00:06:54].'},
+                             {'step': 2,
+                              'title': 'Vet with the two-day test and live walkthrough',
+                              'action': 'Demand coverage, cutoff, and floor proof in writing before '
+                                        'signing.',
+                              'detail': 'Ask what percentage of US addresses the 3PL reaches in two days '
+                                        'by ground. A strong answer sounds like about 90% from Ohio and '
+                                        'Nevada with a 2pm Eastern cutoff. Then take a live video tour '
+                                        'checking labeled bins, scanners, and security, and call three '
+                                        'current clients [Smart Capital — 8R8um_CLrWI @ 00:14:26].'},
+                             {'step': 3,
+                              'title': 'Integrate and lock the catalog',
+                              'action': 'Connect the store and match every SKU and barcode before stock '
+                                        'moves.',
+                              'detail': "Have the 3PL's tech team integrate Shopify, Amazon, WooCommerce, "
+                                        'or a custom system so orders flow and inventory stays synced '
+                                        '[Einstein Fulfillment — 7Xr-2wI5LJo @ 00:00:33]. Then place five '
+                                        'test orders with different products, quantities, and one '
+                                        'out-of-region address, and trace each from store to doorstep '
+                                        '[Smart Capital — 8R8um_CLrWI @ 00:24:30].'},
+                             {'step': 4,
+                              'title': 'Go live and smooth out in hypercare',
+                              'action': 'Walk the client portal, run test orders, and budget a few days of '
+                                        'adjustment.',
+                              'detail': 'Finish with a portal walkthrough, support handoff, and test '
+                                        'orders to confirm the setup [Einstein Fulfillment — 7Xr-2wI5LJo @ '
+                                        '00:01:15]. Expect a gap between what was planned and what happens '
+                                        'in production. Radial covers it with hypercare, which usually '
+                                        'takes a few days [WorkflowLife — etEhM2kyodk @ 00:07:06].'}]},
+              {'heading': 'Section 3: Where Practitioners Disagree & Alternative Playbooks',
+               'paragraphs': ['The sharpest split is whether to hand fulfillment off at all. Smart '
+                              "Capital's Olivia draws the line at volume and hours. Somewhere between "
+                              'roughly 100 and 500 orders a month, packing becomes the day itself. If a '
+                              'one-week time audit shows more than 15 to 20 hours a week of packing, '
+                              'labeling, carrier runs and where-is-my-order replies, the business has a '
+                              'fulfillment problem, not a sales problem [8R8um_CLrWI @ 00:06:54]. Her '
+                              'illustrative 300-order spreadsheet puts self-fulfilled cost near $15.50 per '
+                              'order against roughly $12 through a 3PL, and the seller gets three hours a '
+                              'day back [8R8um_CLrWI @ 00:33:51]. Dan from Unbound Merino, speaking on '
+                              'Learn With Shopify, deliberately runs the opposite playbook. His average '
+                              'order carries three or more items, and a 3PL bills the pick and pack fee '
+                              'for every item pulled off the shelf, so the math makes 3PLs cost '
+                              'prohibitive for his shop. He concedes that single-item packages likely ship '
+                              'cheaper through one [088tKYu7kKY @ 00:08:16]. He also keeps fulfillment '
+                              'in-house to protect the unboxing, including notes and gifts in packages for '
+                              "loyal customers. ShipSage's Michael counters that a 3PL folds, bags and "
+                              'packs in your mailer with inserts, stickers, thank-you cards and tissue, '
+                              'following your instructions on every order [eRxb-KV0R4E @ 00:01:45].',
+                              "Network shape is the second fault line. Radial's Anthony says most of his "
+                              'clients pick one location for cost reasons, the one that can centrally '
+                              'serve. He says that even though Radial, now Paxson, runs 21 US fulfillment '
+                              'locations and 30 internationally. His bet is that predictive placement '
+                              'across multiple pockets beats tying up one big warehouse [etEhM2kyodk @ '
+                              '00:12:13]. Smart Capital argues the other way: a 3PL with warehouses in two '
+                              'or three regions starts the package a few hundred miles from the buyer. A '
+                              'strong answer to her two-day test sounds like Ohio plus Nevada reaching '
+                              'about 90% of US addresses by ground, with a 2:00 p.m. Eastern cutoff '
+                              '[8R8um_CLrWI @ 00:14:58]. ShipSage founder Ben Pu pitches a third road to '
+                              'sellers who outgrew their own building. Instead of closing it or opening '
+                              'more sites, they keep it as one distribution node orchestrated by ShipSage '
+                              'WMS, alongside the ShipSage network [CVklpdSeqOA @ 00:01:30]. On Amazon, '
+                              'Olivia weighs FBA, which carries the Prime badge but also aged-stock '
+                              'surcharges, against one shared 3PL pool without Prime. Some sellers split '
+                              'the difference: fast movers go to FBA for Amazon orders while the same SKUs '
+                              'sit at the 3PL for Shopify, and stock levels are rebalanced weekly '
+                              '[8R8um_CLrWI @ 00:27:35].',
+                              "Go-live speed is where sales promises diverge most. Radial's Anthony puts "
+                              'the best case at a few days but calls about 4 weeks the realistic '
+                              'expectation. System setup alone runs 1 to 2 weeks, goods may be '
+                              'mid-transfer from another fulfillment center, and receiving still has to '
+                              'happen before the first order drops [etEhM2kyodk @ 00:05:39]. ShipSage '
+                              'Customer Success Manager Corrina frames it as client-paced: go live in a '
+                              'week or take it one step at a time. Her team wires Amazon, Shopify and eBay '
+                              'integrations into the OMS while the first inbound is still on its way, so '
+                              'orders flow the moment stock lands [5V9d55NqxRw @ 00:01:18]. The ShipWise '
+                              '3PL customer moves 55,000 to 60,000 direct-to-consumer shipments a month. '
+                              'After switching shipping software, it had 95% of production working within '
+                              '2 days and its old TMS fully switched off in five business days '
+                              "[PTU-PzhQg_4 @ 00:01:55]. Smart Capital's Olivia counsels a slower tempo on "
+                              'the inventory side. She says never to send the whole catalog in the first '
+                              'shipment: push roughly a third, run it two or three weeks, measure delivery '
+                              'times and error rate, and only then move the rest [8R8um_CLrWI @ 00:19:08]. '
+                              'Software speed and stock speed are separate dials.'],
+               'table': {'caption': 'Competing 3PL playbooks taught side by side by working operators',
+                         'headers': ['Decision Point', 'Playbook A', 'Playbook B', 'Expert Source'],
+                         'rows': [['Outsource fulfillment or keep shipping in-house',
+                                   'Move once orders hit roughly 100 to 500 monthly and packing tops 15 to '
+                                   '20 weekly hours',
+                                   'Keep in-house when average orders carry three-plus items billed per '
+                                   'pick and branded notes matter',
+                                   'Smart Capital ([8R8um_CLrWI @ 00:06:54]); Learn With Shopify '
+                                   '([088tKYu7kKY @ 00:08:16])'],
+                                  ['Single warehouse versus a distributed regional network',
+                                   'Most Radial clients choose one central location for cost reasons and '
+                                   'accept longer zones',
+                                   'Two or three regional warehouses that can reach about 90% of US '
+                                   'addresses in two days by ground',
+                                   'WorkflowLife ([etEhM2kyodk @ 00:12:13]); Smart Capital ([8R8um_CLrWI @ '
+                                   '00:14:58])'],
+                                  ["What to do with a seller's own outgrown warehouse",
+                                   'Close the building and move all volume into a 3PL, or open more owned '
+                                   'sites',
+                                   'Keep the building as a distribution node orchestrated by ShipSage WMS '
+                                   'inside the wider network',
+                                   'ShipSage ([CVklpdSeqOA @ 00:01:30])'],
+                                  ['Amazon orders through FBA or an independent 3PL',
+                                   'FBA wins the Prime badge but charges rising fees on aged, unsold stock',
+                                   'One independent 3PL pool across Shopify, TikTok Shop and retail, '
+                                   'usually with lower storage fees',
+                                   'Smart Capital ([8R8um_CLrWI @ 00:27:03]); Monopoly ([SeloMfYsYk0 @ '
+                                   '00:02:30])'],
+                                  ['Picking floor technology and labor model',
+                                   'Manual cart runs through pick bins, with every item scanned twice for '
+                                   'double confirmation',
+                                   'AS/RS goods-to-person robotics plus in-house pick-to-light and '
+                                   'put-to-wall builds that cut reliance on labor',
+                                   'Relay Distro ([6LI3_5-zPpY @ 00:02:18]); ShipSage ([CVklpdSeqOA @ '
+                                   '00:02:34])'],
+                                  ['How the store connects to the warehouse system',
+                                   'Native Shopify app or ShipStation-style middleware for most sellers, '
+                                   'with direct API once channels multiply',
+                                   "The 3PL plugs into the client's existing ERP and order management "
+                                   'systems instead of forcing new tools',
+                                   'Smart Capital ([8R8um_CLrWI @ 00:21:16]); CTLGlobalSolutions '
+                                   '([i9PB8pM9lZ4 @ 00:00:50])'],
+                                  ['Who sets shipping cost and delivery promise at checkout',
+                                   'The merchant picks flat rate, free shipping, or bakes shipping into '
+                                   'product price',
+                                   'Warehouse rates, SLAs and carrier delivery dates pushed straight onto '
+                                   'the Shopify front end',
+                                   'ShipWise ([PTU-PzhQg_4 @ 00:03:38]); Perseuss LLC ([VD9O6JRw54A @ '
+                                   '00:04:14])']]}},
+              {'heading': 'Section 4: Firsthand Failure Modes, Traps & Economics Checks',
+               'paragraphs': ['Most outsourced fulfillment breaks after the order import, not at it. '
+                              'SHIPHYPE Fulfillment says order import is the easy part. The damage starts '
+                              'when inventory updates in batches instead of at the SKU level, so on peak '
+                              'days Shopify keeps selling units the warehouse no longer has available to '
+                              'pick [CB8e30IUILU @ 00:00:12]. Smart Capital puts numbers on the gap. If '
+                              'sync runs once a day instead of continuously, the store can sell 10 units '
+                              'of a product that has five left, and five customers get a cancellation '
+                              'email instead of a package [8R8um_CLrWI @ 00:25:18]. The product catalog is '
+                              'a silent killer. A size spelled differently, a missing color code, or a '
+                              'bundle listed as one SKU in the store and two in the warehouse makes the '
+                              'connection fail silently. The failure surfaces only as an order that never '
+                              "ships. Olivia's rule is one SKU, one product everywhere, confirmed on both "
+                              "sides before any unit moves [8R8um_CLrWI @ 00:22:52]. Radial's Anthony "
+                              'flags the upstream version: some clients do not hand over accurate data up '
+                              'front, including SKU count, space needs and the next few months of growth. '
+                              'What gets reported during solutioning then shifts once the account hits '
+                              'production, which usually costs a few days of hypercare smoothing '
+                              '[etEhM2kyodk @ 00:06:24].',
+                              'The fee sheet is the second trap. SHIPHYPE Fulfillment warns that a pick '
+                              'fee does not tell you what Shopify fulfillment will actually cost. '
+                              'Multi-line orders, bundles, inserts, returns, pallet storage, bin storage '
+                              'and manual order edits all change the invoice, so the team prices off the '
+                              'order profile rather than the advertised pick and pack rate [CB8e30IUILU @ '
+                              '00:00:40]. Monopoly makes the same point from the storage side. A low '
+                              'storage rate can be misleading, because picking fees, packaging markups, '
+                              'shipping charges and account minimums determine the true fulfillment cost '
+                              "[SeloMfYsYk0 @ 00:03:59]. Smart Capital's Olivia adds that a 3PL quoting a "
+                              'pick and pack fee a dollar under everyone else usually claws that dollar '
+                              'back in storage, receiving or returns. Storage bills also count packaging '
+                              'and the shelf space around a product, and long-term surcharges hit stock '
+                              'unsold for 6 months or a year. Any product turning fewer than about four '
+                              'times a year is paying more in storage than it earns in margin [8R8um_CLrWI '
+                              '@ 00:34:41]. The sellers who regret the move, she says, went too early and '
+                              'signed a long contract. They then paid monthly minimums and storage on '
+                              'inventory that was not selling fast enough to justify them [8R8um_CLrWI @ '
+                              '00:11:24].',
+                              'Manual exception work is the third bottleneck, and the operators who lived '
+                              "it are blunt. CartonCloud's 3PL client grew to 40 clients, including "
+                              'supermarkets, while picking and packing 16 hours a day. Staff were manually '
+                              'importing sales orders and purchase orders and could not keep up. After '
+                              'automating, the business cut about four full-time-equivalent heads, reduced '
+                              'overhead by as much as 20 percent, and turned a money-losing operation into '
+                              'a profitable one [EYQU96qv5rk @ 00:00:17]. The ShipWise customer explains '
+                              'why manual handling fails at scale. At 3,000 shipments in a day, one person '
+                              'choosing carrier, weight, dimensions and per-client SLA by hand cannot get '
+                              'every package right. Business rules now make those choices, and staff just '
+                              "scan and ship [PTU-PzhQg_4 @ 00:03:01]. Radial's Anthony describes the "
+                              'customer-care version of the same failure. A brand asks to cancel, change '
+                              'or expedite an order, the request sits in an email, and nobody is available '
+                              'to research it. By the time someone checks, it is past the point where '
+                              'intervention was possible [etEhM2kyodk @ 00:09:06]. Dan of Unbound Merino '
+                              'owns his own self-shipping misfires: countless mistakes, from undercharging '
+                              'on expensive shipping to not knowing overseas transit times. That is why he '
+                              'would now run trial packages with real labels before shipping real product '
+                              '[088tKYu7kKY @ 00:05:52].'],
+               'table': {'caption': 'Failure modes operators hit firsthand and the fix each one teaches',
+                         'headers': ['Failure Mode',
+                                     'What Happened Or Was Measured',
+                                     'Operator Fix Taught',
+                                     'Expert Source'],
+                         'rows': [['Self-shipped order stalls on a garage shelf',
+                                   'A $40 two-day order still read label created on Thursday, was '
+                                   'cancelled Friday, and drew a one-star review',
+                                   'Ship same day from a warehouse near the customer instead of packing '
+                                   'between emails',
+                                   'Smart Capital ([8R8um_CLrWI @ 00:00:00])'],
+                                  ['Batch inventory sync oversells during peak days',
+                                   'Shopify kept selling units the warehouse no longer had available to '
+                                   'pick',
+                                   'Demand SKU-level inventory updates fast enough to hold up on peak days',
+                                   'SHIPHYPE Fulfillment ([CB8e30IUILU @ 00:00:12])'],
+                                  ['Order edits after release into the pick queue',
+                                   'Edits, address changes and holds usually required manual intervention '
+                                   'and became exception work',
+                                   'Check where the cutoff sits relative to order release, for example a '
+                                   '2pm cutoff',
+                                   'SHIPHYPE Fulfillment ([CB8e30IUILU @ 00:00:26])'],
+                                  ['Parcels loaded onto the wrong carrier truck',
+                                   'Separate trucks arrive for USPS, UPS and Amazon parcels, and '
+                                   'duplicated tracking numbers or orders slip through',
+                                   'A dedicated validator confirms each parcel is unique, paid and sorted '
+                                   'onto the correct pallet',
+                                   'Perseuss LLC ([VD9O6JRw54A @ 00:03:35])'],
+                                  ['Wrong size or color shipped on apparel orders',
+                                   'Mis-picks on large size-and-color catalogs damage customer reviews',
+                                   'Scan item, bin and shipping label at pick, then run a final DWS check '
+                                   'rated at 99.9% accuracy',
+                                   'ShipSage ([-xS69Ouj3nM @ 00:00:46]); ShipSage ([eRxb-KV0R4E @ '
+                                   '00:02:07])'],
+                                  ['Regional stockout inside a multi-warehouse network',
+                                   'The east warehouse sat empty while the west still held 100 units, so '
+                                   'eastern buyers got slow shipping or cancellations',
+                                   'Set a transfer rule and run a weekly 15-minute Monday review of each '
+                                   "warehouse's numbers",
+                                   'Smart Capital ([8R8um_CLrWI @ 00:38:15])'],
+                                  ['Holiday carrier cutoff missed by a single day',
+                                   'A 3PL that misses the ground cutoff by one day misses Christmas '
+                                   'entirely',
+                                   'Get the peak calendar in writing: order cutoffs, receiving deadlines '
+                                   'and peak surcharges',
+                                   'Smart Capital ([8R8um_CLrWI @ 00:37:44])']]},
+               'callout': {'kind': 'OPERATOR GATE',
+                           'title': 'Four Checks Before Any Inventory Moves',
+                           'body': 'These are the four tests operators used to catch sync gaps, fake '
+                                   'two-day claims and fee creep before they hit live customers.',
+                           'items': ['Send a $10 test order to your own address and to a friend in another '
+                                     'region, and time both. Get the coverage map and the cutoff time '
+                                     'written into the service agreement, not just an email [Smart Capital '
+                                     '— 8R8um_CLrWI @ 00:15:15].',
+                                     'Price your actual order profile, including multi-line orders, '
+                                     'bundles, inserts, returns, bin and pallet storage, and manual edits, '
+                                     'rather than the advertised pick and pack rate [SHIPHYPE Fulfillment '
+                                     '— CB8e30IUILU @ 00:00:40].',
+                                     'Place five test orders with different products, quantities and one '
+                                     'out-of-region address, and trace each from store to doorstep before '
+                                     'trusting the sync [Smart Capital — 8R8um_CLrWI @ 00:24:30].',
+                                     'At go-live, walk through the client portal and run test orders to '
+                                     'confirm everything is set up correctly before real volume flows '
+                                     '[Einstein Fulfillment — 7Xr-2wI5LJo @ 00:01:15].']}}],
+ 'pull_quote': '"Compare the total cost per order across three quotes, not the headline fee on any one of '
+               'them. The cheapest total wins. The cheapest headline usually does not." — Smart Capital '
+               '(8R8um_CLrWI @ 00:34:41)',
+ 'diagram_id': 'diag-01',
+ 'action_checklist': ['Run a one-week time audit of packing, labeling, carrier runs and where-is-my-order '
+                      'replies. Past 15 to 20 hours a week, treat it as a fulfillment problem, not a sales '
+                      'problem [Smart Capital — 8R8um_CLrWI @ 00:06:54].',
+                      'Pull the last three months of orders, map where customers actually live, and '
+                      'shortlist 3PLs with warehouses in those regions [Smart Capital — 8R8um_CLrWI @ '
+                      '00:13:23].',
+                      'Before stock arrives, send the 3PL the exact inbound list by size, style, quantity '
+                      'and color, so damaged or short units get flagged right away [ShipSage — eRxb-KV0R4E '
+                      '@ 00:00:13].',
+                      'Hand over accurate SKU counts, space needs and growth projections up front, so the '
+                      '3PL can model the account correctly [WorkflowLife — etEhM2kyodk @ 00:06:24].',
+                      'Match every SKU and barcode character for character between the store and the 3PL '
+                      'system before any product ships to the warehouse [Smart Capital — 8R8um_CLrWI @ '
+                      '00:22:03].',
+                      'Run the one-order cost test on three quotes, adding receiving, storage, pick and '
+                      'pack, shipping and the monthly minimum spread across orders [Smart Capital — '
+                      '8R8um_CLrWI @ 00:32:26].'],
+ 'statutory_citations': [{'title': 'Smart Capital — How to Automate E-Commerce Fulfillment: Best US 3PL '
+                                   'Partners for 2-Day Shipping 2026 [00:34:41]',
+                          'url': 'https://www.youtube.com/watch?v=8R8um_CLrWI&t=2081s',
+                          'relevance': 'Primary practitioner testimony on total cost per order versus '
+                                       'headline pick and pack fees.'},
+                         {'title': 'SHIPHYPE Fulfillment — Shopify 3PL: The Fulfillment Problem Brands '
+                                   'Often Miss [00:00:00]',
+                          'url': 'https://www.youtube.com/watch?v=CB8e30IUILU&t=0s',
+                          'relevance': 'Primary practitioner testimony on inventory sync, order edit '
+                                       'exceptions and order-profile pricing.'},
+                         {'title': 'WorkflowLife — What Happens After You Click Buy? | Inside 3PL with '
+                                   'Radial [00:05:39]',
+                          'url': 'https://www.youtube.com/watch?v=etEhM2kyodk&t=339s',
+                          'relevance': 'Primary practitioner testimony on realistic 3PL onboarding '
+                                       'timelines and client data accuracy.'},
+                         {'title': 'Learn With Shopify — Ecommerce Shipping and Fulfillment: A Complete '
+                                   'Guide [00:08:16]',
+                          'url': 'https://www.youtube.com/watch?v=088tKYu7kKY&t=496s',
+                          'relevance': 'Primary practitioner testimony on why multi-item orders make '
+                                       'per-item 3PL pick fees cost prohibitive.'}],
+ 'source_citations': [{'source_type': 'video_pro_tip',
+                       'video_id': 'etEhM2kyodk',
+                       'title': 'What Happens After You Click Buy? | Inside 3PL with Radial',
+                       'channel': 'WorkflowLife',
+                       'author': 'WorkflowLife',
+                       'text': 'Best case, we can do it in a few days. I think a realistic expectation is '
+                               'about 4 weeks.',
+                       'tip': 'Best case, we can do it in a few days. I think a realistic expectation is '
+                              'about 4 weeks.',
+                       'timestamp': 339,
+                       'timestamp_seconds': 339,
+                       'timestamp_label': '[00:05:39]',
+                       'url': 'https://www.youtube.com/watch?v=etEhM2kyodk&t=339s',
+                       'markdown': '[00:05:39](https://www.youtube.com/watch?v=etEhM2kyodk&t=339s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q7.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'eRxb-KV0R4E',
+                       'title': 'How Shopify & TikTok Shop Clothing Brands Ship Thousands of Orders Daily '
+                                '| Inside an Apparel 3PL',
+                       'channel': 'ShipSage',
+                       'author': 'ShipSage',
+                       'text': 'Our team goes to each bin and scans every item. Wrong size or wrong color? '
+                               'The scan catches it before it even leaves the shelf.',
+                       'tip': 'Our team goes to each bin and scans every item. Wrong size or wrong color? '
+                              'The scan catches it before it even leaves the shelf.',
+                       'timestamp': 87,
+                       'timestamp_seconds': 87,
+                       'timestamp_label': '[00:01:27]',
+                       'url': 'https://www.youtube.com/watch?v=eRxb-KV0R4E&t=87s',
+                       'markdown': '[00:01:27](https://www.youtube.com/watch?v=eRxb-KV0R4E&t=87s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q7.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': '8R8um_CLrWI',
+                       'title': 'How to Automate E-Commerce Fulfillment: Best US 3PL Partners for 2-Day '
+                                'Shipping 2026',
+                       'channel': 'Smart Capital',
+                       'author': 'Smart Capital',
+                       'text': 'A 3PL that quotes a pick and pack fee a dollar below everyone else usually '
+                               'recovers that dollar in storage, receiving, or returns fees.',
+                       'tip': 'A 3PL that quotes a pick and pack fee a dollar below everyone else usually '
+                              'recovers that dollar in storage, receiving, or returns fees.',
+                       'timestamp': 2066,
+                       'timestamp_seconds': 2066,
+                       'timestamp_label': '[00:34:26]',
+                       'url': 'https://www.youtube.com/watch?v=8R8um_CLrWI&t=2066s',
+                       'markdown': '[00:34:26](https://www.youtube.com/watch?v=8R8um_CLrWI&t=2066s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q7.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': '8R8um_CLrWI',
+                       'title': 'How to Automate E-Commerce Fulfillment: Best US 3PL Partners for 2-Day '
+                                'Shipping 2026',
+                       'channel': 'Smart Capital',
+                       'author': 'Smart Capital',
+                       'text': 'Where they do not match, a size spelled differently, a color code missing, '
+                               'a bundle listed as one SKU in the store and two SKUs in the warehouse, the '
+                               'connection will fail silently.',
+                       'tip': 'Where they do not match, a size spelled differently, a color code missing, '
+                              'a bundle listed as one SKU in the store and two SKUs in the warehouse, the '
+                              'connection will fail silently.',
+                       'timestamp': 1372,
+                       'timestamp_seconds': 1372,
+                       'timestamp_label': '[00:22:52]',
+                       'url': 'https://www.youtube.com/watch?v=8R8um_CLrWI&t=1372s',
+                       'markdown': '[00:22:52](https://www.youtube.com/watch?v=8R8um_CLrWI&t=1372s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q7.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': '7Xr-2wI5LJo',
+                       'title': 'How a 3PL Onboards New Clients',
+                       'channel': 'Einstein Fulfillment',
+                       'author': 'Einstein Fulfillment',
+                       'text': "In this final phase, we'll walk you through your client portal, provide "
+                               'support to your team, and run test orders to ensure everything will set up '
+                               'correctly.',
+                       'tip': "In this final phase, we'll walk you through your client portal, provide "
+                              'support to your team, and run test orders to ensure everything will set up '
+                              'correctly.',
+                       'timestamp': 75,
+                       'timestamp_seconds': 75,
+                       'timestamp_label': '[00:01:15]',
+                       'url': 'https://www.youtube.com/watch?v=7Xr-2wI5LJo&t=75s',
+                       'markdown': '[00:01:15](https://www.youtube.com/watch?v=7Xr-2wI5LJo&t=75s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q7.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'i9PB8pM9lZ4',
+                       'title': '3PL Fulfillment Built for Scaling Brands | CTL',
+                       'channel': 'CTLGlobalSolutions',
+                       'author': 'CTLGlobalSolutions',
+                       'text': "If we see something that's trending in a certain way, we find a solution "
+                               "and we bring it to them. We don't wait for them to come to us.",
+                       'tip': "If we see something that's trending in a certain way, we find a solution "
+                              "and we bring it to them. We don't wait for them to come to us.",
+                       'timestamp': 68,
+                       'timestamp_seconds': 68,
+                       'timestamp_label': '[00:01:08]',
+                       'url': 'https://www.youtube.com/watch?v=i9PB8pM9lZ4&t=68s',
+                       'markdown': '[00:01:08](https://www.youtube.com/watch?v=i9PB8pM9lZ4&t=68s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q7.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'SeloMfYsYk0',
+                       'title': 'What Is 3PL Logistics? The Hidden System Powering E-Commerce #3plservices '
+                                '#fulfillment',
+                       'channel': 'Monopoly',
+                       'author': 'Monopoly',
+                       'text': 'A low storage rate can be misleading. Picking fees, packaging markups, '
+                               'shipping charges, and account minimums determine the true fulfillment '
+                               'cost.',
+                       'tip': 'A low storage rate can be misleading. Picking fees, packaging markups, '
+                              'shipping charges, and account minimums determine the true fulfillment cost.',
+                       'timestamp': 239,
+                       'timestamp_seconds': 239,
+                       'timestamp_label': '[00:03:59]',
+                       'url': 'https://www.youtube.com/watch?v=SeloMfYsYk0&t=239s',
+                       'markdown': '[00:03:59](https://www.youtube.com/watch?v=SeloMfYsYk0&t=239s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q7.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': '088tKYu7kKY',
+                       'title': 'Ecommerce Shipping and Fulfillment: A Complete Guide',
+                       'channel': 'Learn With Shopify',
+                       'author': 'Learn With Shopify',
+                       'text': 'Our average order has three or more items in a box, and given that you '
+                               "need to pay for each item that's picked and packed into an order, the "
+                               'shipping cost in our case is too high for 3PLs to make any sense.',
+                       'tip': 'Our average order has three or more items in a box, and given that you need '
+                              "to pay for each item that's picked and packed into an order, the shipping "
+                              'cost in our case is too high for 3PLs to make any sense.',
+                       'timestamp': 496,
+                       'timestamp_seconds': 496,
+                       'timestamp_label': '[00:08:16]',
+                       'url': 'https://www.youtube.com/watch?v=088tKYu7kKY&t=496s',
+                       'markdown': '[00:08:16](https://www.youtube.com/watch?v=088tKYu7kKY&t=496s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q7.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'VD9O6JRw54A',
+                       'title': '3PL Explained: Real Warehouse Walkthrough (For Shopify Brands)',
+                       'channel': 'Perseuss LLC',
+                       'author': 'Perseuss LLC',
+                       'text': "We have to make sure that every parcel, there's no duplicated tracking "
+                               "number, there's no duplicated order, and every order is paid, and it's "
+                               'sorted.',
+                       'tip': "We have to make sure that every parcel, there's no duplicated tracking "
+                              "number, there's no duplicated order, and every order is paid, and it's "
+                              'sorted.',
+                       'timestamp': 215,
+                       'timestamp_seconds': 215,
+                       'timestamp_label': '[00:03:35]',
+                       'url': 'https://www.youtube.com/watch?v=VD9O6JRw54A&t=215s',
+                       'markdown': '[00:03:35](https://www.youtube.com/watch?v=VD9O6JRw54A&t=215s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q7.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'CVklpdSeqOA',
+                       'title': 'E-Commerce Fulfillment | When You Outgrow Your Warehouse | 3PL Updates in '
+                                'US | ShipSage',
+                       'channel': 'ShipSage',
+                       'author': 'ShipSage',
+                       'text': 'There is a third way. They can keep their warehouse, and they can also, at '
+                               'the same time, utilize ShipSage WMS software to orchestrate all the orders '
+                               'for them.',
+                       'tip': 'There is a third way. They can keep their warehouse, and they can also, at '
+                              'the same time, utilize ShipSage WMS software to orchestrate all the orders '
+                              'for them.',
+                       'timestamp': 68,
+                       'timestamp_seconds': 68,
+                       'timestamp_label': '[00:01:08]',
+                       'url': 'https://www.youtube.com/watch?v=CVklpdSeqOA&t=68s',
+                       'markdown': '[00:01:08](https://www.youtube.com/watch?v=CVklpdSeqOA&t=68s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q7.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'zldfAGyfsfA',
+                       'title': 'How Ecommerce Fulfillment Works | Behind-The-Scenes of Order Fulfillment',
+                       'channel': 'ShipBob',
+                       'author': 'ShipBob',
+                       'text': 'ShipBob has a network of dozens of fulfillment centers around the world, '
+                               'which allows e-commerce brands to strategically distribute their inventory '
+                               'to be closer to end customers.',
+                       'tip': 'ShipBob has a network of dozens of fulfillment centers around the world, '
+                              'which allows e-commerce brands to strategically distribute their inventory '
+                              'to be closer to end customers.',
+                       'timestamp': 127,
+                       'timestamp_seconds': 127,
+                       'timestamp_label': '[00:02:07]',
+                       'url': 'https://www.youtube.com/watch?v=zldfAGyfsfA&t=127s',
+                       'markdown': '[00:02:07](https://www.youtube.com/watch?v=zldfAGyfsfA&t=127s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q7.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'PTU-PzhQg_4',
+                       'title': 'How this 3PL doubled their daily throughput | SKU Distribution | Case '
+                                'Study',
+                       'channel': 'ShipWise',
+                       'author': 'ShipWise',
+                       'text': 'Within 2 days I think 95% of our production was already up and working, '
+                               'and in five business days we had fully switched off our old TMS.',
+                       'tip': 'Within 2 days I think 95% of our production was already up and working, and '
+                              'in five business days we had fully switched off our old TMS.',
+                       'timestamp': 115,
+                       'timestamp_seconds': 115,
+                       'timestamp_label': '[00:01:55]',
+                       'url': 'https://www.youtube.com/watch?v=PTU-PzhQg_4&t=115s',
+                       'markdown': '[00:01:55](https://www.youtube.com/watch?v=PTU-PzhQg_4&t=115s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q7.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'EYQU96qv5rk',
+                       'title': '3PL warehouse B2C x CartonCloud case study',
+                       'channel': 'CartonCloud',
+                       'author': 'CartonCloud',
+                       'text': "We've turned an unprofitable operation into a profitable one and we've "
+                               'probably had a reduction of four full-time equivalent in terms of head '
+                               'count.',
+                       'tip': "We've turned an unprofitable operation into a profitable one and we've "
+                              'probably had a reduction of four full-time equivalent in terms of head '
+                              'count.',
+                       'timestamp': 66,
+                       'timestamp_seconds': 66,
+                       'timestamp_label': '[00:01:06]',
+                       'url': 'https://www.youtube.com/watch?v=EYQU96qv5rk&t=66s',
+                       'markdown': '[00:01:06](https://www.youtube.com/watch?v=EYQU96qv5rk&t=66s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q7.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'CB8e30IUILU',
+                       'title': 'Shopify 3PL: The Fulfillment Problem Brands Often Miss',
+                       'channel': 'SHIPHYPE Fulfillment',
+                       'author': 'SHIPHYPE Fulfillment',
+                       'text': 'Most Shopify 3PL problems do not start when the order imports. Order '
+                               'import is the easy part.',
+                       'tip': 'Most Shopify 3PL problems do not start when the order imports. Order import '
+                              'is the easy part.',
+                       'timestamp': 0,
+                       'timestamp_seconds': 0,
+                       'timestamp_label': '[00:00:00]',
+                       'url': 'https://www.youtube.com/watch?v=CB8e30IUILU&t=0s',
+                       'markdown': '[00:00:00](https://www.youtube.com/watch?v=CB8e30IUILU&t=0s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q7.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': '6LI3_5-zPpY',
+                       'title': 'How a 3PL Works [E-commerce Fulfillment Process Explained]',
+                       'channel': 'Relay Distro',
+                       'author': 'Relay Distro',
+                       'text': 'When a picker grabs an item, they scan it into their tote, and when they '
+                               "pack the cart, they're also scanning it again to pack it, so it's a double "
+                               'confirmation.',
+                       'tip': 'When a picker grabs an item, they scan it into their tote, and when they '
+                              "pack the cart, they're also scanning it again to pack it, so it's a double "
+                              'confirmation.',
+                       'timestamp': 121,
+                       'timestamp_seconds': 121,
+                       'timestamp_label': '[00:02:01]',
+                       'url': 'https://www.youtube.com/watch?v=6LI3_5-zPpY&t=121s',
+                       'markdown': '[00:02:01](https://www.youtube.com/watch?v=6LI3_5-zPpY&t=121s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q7.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': '-xS69Ouj3nM',
+                       'title': 'How ShipSage Masters B2B & B2C Apparel Fulfillment | 3PL for Brands | '
+                                'Facility Tour',
+                       'channel': 'ShipSage',
+                       'author': 'ShipSage',
+                       'text': 'During picking, we scan three barcodes, the item, the bin, the shipping '
+                               'labels.',
+                       'tip': 'During picking, we scan three barcodes, the item, the bin, the shipping '
+                              'labels.',
+                       'timestamp': 24,
+                       'timestamp_seconds': 24,
+                       'timestamp_label': '[00:00:24]',
+                       'url': 'https://www.youtube.com/watch?v=-xS69Ouj3nM&t=24s',
+                       'markdown': '[00:00:24](https://www.youtube.com/watch?v=-xS69Ouj3nM&t=24s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q7.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': '5V9d55NqxRw',
+                       'title': '3PL Customer Onboarding Steps | Easy E-Commerce Fulfillment | Seamless '
+                                'Process with ShipSage',
+                       'channel': 'ShipSage',
+                       'author': 'ShipSage',
+                       'text': 'If you want to go live in a week, or you want to take one step at a time, '
+                               'we are here with you, and we move at your pace.',
+                       'tip': 'If you want to go live in a week, or you want to take one step at a time, '
+                              'we are here with you, and we move at your pace.',
+                       'timestamp': 78,
+                       'timestamp_seconds': 78,
+                       'timestamp_label': '[00:01:18]',
+                       'url': 'https://www.youtube.com/watch?v=5V9d55NqxRw&t=78s',
+                       'markdown': '[00:01:18](https://www.youtube.com/watch?v=5V9d55NqxRw&t=78s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q7.'}]}
