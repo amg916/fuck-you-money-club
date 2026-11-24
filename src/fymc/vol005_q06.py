@@ -1,180 +1,972 @@
+from __future__ import annotations
+
 CHAPTER_6 = {
-    "id": "Q6", "chapter_id": "Q6", "chapter_number": 6, "question_number": 6,
-    "slug": "sourcing-high-intent-buyer-queries-and-offer-winners",
-    "question_prompt": "How do I find winning offers and buyers ready to act?",
+    "id": "Q6",
+    "chapter_id": "Q6",
+    "chapter_number": 6,
+    "question_number": 6,
+    "slug": "ai-era-seo-geo-high-ticket-affiliate-growth",
+    "question_prompt": "What do these 16 videos teach about buying and growing an AI affiliate website for high-ticket SaaS commissions; AI-driven SEO strategies; critiques of topical authority; moving beyond affiliate SEO; ranking on Google in the AI era; SEO and GEO checklists; AEO comparison pages; GEO fundamentals, workshops, and playbooks for visibility in ChatGPT, Claude, Gemini, and Perplexity; ZeroRank AI as an alternative to Profound; and using case studies and testimonials to improve high-ticket affiliate sales?",
     "kicker": "Q6 / THE BIG MONEY PLAYBOOKS",
-    "title": "Finding Your First Winning Offers & Bottom-of-Funnel Buyer Intent",
-    "subtitle": 'Ad-Library Spend-Velocity Mining, "[Incumbent] Pricing / Cancel / Alternative" Query Interception, Programmatic XML Job Feeds & Private CPA Bump Scripts',
-    "layout_template": "step_by_step_workflow", "reading_time_minutes": 14,
-    "executive_summary": "Buy evidence of intent, not cheap visits. Candidate #24 ranks #02 with 92/100 and 35 mapped operator plays; this chapter turns three plays into a repeatable offer test. Start with pricing, comparison, migration, and verified hiring queries. Use persistent ads to select experiments, never to infer profit. Secure written traffic terms, publish useful comparison pages, and reconcile clicks to accepted commissions after reversals. A seven day test can reject bad economics; it cannot prove lifetime performance. Negotiate a private payout increase only with documented lead quality. Keep merchant sales, affiliate earnings, operating costs, and owner profit in separate ledger columns.",
+    "title": "AI-Era SEO, GEO & High-Ticket Affiliate Growth",
+    "subtitle": "Buying and growing AI affiliate websites, adapting Google SEO strategies, and building visibility across ChatGPT, Claude, Gemini, and Perplexity through SEO, GEO, and AEO.",
+    "layout_template": "step_by_step_blueprint",
+    "reading_time_minutes": 15,
+    "executive_summary": (
+        "Practitioners converge on buyer-specific answers, visible product evidence, sound SEO foundations, "
+        "and mentions beyond the operator's website. Ecom Chief pitches recurring SaaS referrals at "
+        "20–50% commissions; Rob Hoffman reports roughly ten qualified weekly demos from comparison pages. "
+        "The execution runs through competitor research, attribute-specific comparisons, current prices, "
+        "screenshots, testimonials, crawl access, and repeated checks across AI engines. Berlin presenters "
+        "report approximately 800 citations five days after placing external content. The disagreements "
+        "matter: CXL advocates hundreds or thousands of comparison combinations, while Kasra Dash rejects "
+        "generic content scale. Craig Campbell has left Amazon affiliate sites for other cash-flow models. "
+        "Chipp discusses manufactured third-party mentions; Da Hoang favors journalist-led digital PR. "
+        "Their scoreboards also differ, from answer inclusion to qualified leads and sales."
+    ),
     "key_metrics": [
-        {"label": "Informational EPC", "value": "$0.05", "context": "Illustrative weak traffic", "note": "Not a market benchmark"},
-        {"label": "Commercial response", "value": "6%-16%", "context": "Modeled click-to-lead/trial", "note": "Not accepted-sale conversion"},
-        {"label": "Ad persistence", "value": ">=30 days", "context": "Observed activity proxy", "note": "Neither spend nor profit proof"}
+        {
+            "label": "AI SaaS affiliate commission range",
+            "metric": "AI SaaS affiliate commission range",
+            "value": "20–50%; $50–$500 per sale",
+            "confidence": "attributed_practitioner_claim",
+            "context": (
+                "Ecom Chief describes B2B SaaS affiliate economics and says subscription referrals "
+                "can pay a monthly share for the user's lifetime."
+            ),
+            "source": "Ecom Chief ([iVK1QrJwylk @ 00:01:09])",
+        },
+        {
+            "label": "Comparison-page qualified demos",
+            "metric": "Comparison-page qualified demos",
+            "value": "Roughly 10 qualified demos every week",
+            "confidence": "attributed_practitioner_claim",
+            "context": (
+                "Rob Hoffman reports this result for Team Town's comparison pages and says "
+                "the team tracks performance using GA4."
+            ),
+            "source": "Rob Hoffman ([mPeQxVCunPU @ 00:32:55])",
+        },
+        {
+            "label": "External-source citation test",
+            "metric": "External-source citation test",
+            "value": "Approximately 800 citations after 5 days",
+            "confidence": "attributed_practitioner_claim",
+            "context": (
+                "The Berlin presenters placed content on a domain not previously used as a "
+                "source for their 143-prompt panel; durability remained under testing."
+            ),
+            "source": "E-commerce Berlin Expo ([ELiV_0RMFr4 @ 00:19:12])",
+        },
+        {
+            "label": "ZeroRank AI engine coverage",
+            "metric": "ZeroRank AI engine coverage",
+            "value": "17 AI engines",
+            "confidence": "attributed_practitioner_claim",
+            "context": (
+                "The reviewer describes visibility tracking across seventeen engines, naming "
+                "ChatGPT, Claude, Gemini, Perplexity, Google AI Overviews, Grok, and Bing Copilot."
+            ),
+            "source": "🔥 TOP Digital Products 🔥 ([J_fDLt9cLEg @ 00:02:35])",
+        },
     ],
     "sections": [
         {
-            "heading": "1. Qualify intent before buying a click",
-            "epistemic_status": "operating_framework",
+            "id": "practitioner-consensus",
+            "title": "The Practitioner Consensus",
             "paragraphs": [
-                "Start with the buyer's next costly decision, not a topic with a large search count. A reader asking what CRM means may be months from a purchase; a team asking for a pricing calculator needs a bill they can defend this week. Treat the $0.05 EPC for broad informational visits as an illustrative warning, not a universal rate. EPC here means earned affiliate commissions after reversals divided by tracked outbound affiliate clicks. Paid search uses a different denominator: purchased visits to your page. Record both counts so a high outbound EPC cannot hide a page that sends almost no visitors to the merchant. Build a short list of offers around one buyer task, one geography, and one purchase window. Then check whether each program pays for a lead, a trial, an accepted application, or a completed sale before comparing payouts."
+                (
+                    "The shared starting point is a buyer making a specific decision, not a publishing "
+                    "calendar demanding another generic article. Ecom Chief describes AI affiliate properties "
+                    "as sites that compare tools, review them, and teach professional use cases. The "
+                    "commercial attraction is the speaker's stated 20–50% SaaS commission range, rather "
+                    "than the 3% physical-product referral model discussed earlier. Rob Hoffman attacks "
+                    "the same decision stage through competitor alternatives: the searcher already wants "
+                    "the category and needs a better fit on price, features, service, or use case. "
+                    "Their work begins with people comparing options, rather than everyone broadly "
+                    "interested in a topic. Kasra Dash calls the corresponding content shift entity "
+                    "attribution: attach the brand to a precise customer and situation, such as a CRM "
+                    "for accountants, instead of repeating generic CRM advantages. The baseline is "
+                    "specificity that helps someone choose. Hoffman wants the operator to know why a "
+                    "competitor's customer would switch; Dash wants real prices, specifications, and "
+                    "customers on the page. Ecom Chief adds ongoing review updates as features and "
+                    "pricing change. These are distinct commercial models, but all three put the "
+                    "product, the buyer's circumstances, and the buying decision ahead of broad "
+                    "informational traffic. Ecom Chief [iVK1QrJwylk @ 00:01:09]; Rob Hoffman "
+                    "[mPeQxVCunPU @ 00:03:41]; Kasra Dash [qP0qmnleojY @ 00:06:53]."
+                ),
+                (
+                    "GEO does not erase the working website underneath the answer. Vendasta describes "
+                    "the new objective as becoming a source inside generated answers, while retaining "
+                    "a fast, mobile-friendly site, useful headings, structure, and authority. Marouane "
+                    "RHAFLI makes the same sequencing explicit: good GEO starts with good SEO, and "
+                    "a slow site, weak content, or an untrusted brand gives AI little reason to "
+                    "recommend the business. Their practical instructions converge on clear questions, "
+                    "substantial answers, FAQ sections, and structured content rather than thin pages. "
+                    "Rank Math SEO turns that foundation toward revenue-producing assets: SaaS pricing "
+                    "pages, product features, case studies, industry pages, and competitor alternatives. "
+                    "Jack asks operators to inspect those important pages before publishing more. The "
+                    "page must explain what the customer receives, how the offering differs, and "
+                    "what existing customers say, rather than relying on an interchangeable claim "
+                    "of greater experience. Relevant internal links connect the decision to pricing, "
+                    "related services, or the booking step. The three approaches preserve traditional "
+                    "site work while changing what the content must accomplish: answer full questions "
+                    "and make the offer understandable. RHAFLI also extends the brand outside the "
+                    "website through video, social platforms, interviews, and guest articles. Vendasta "
+                    "[VGI3TKBcH6A @ 00:02:14]; Marouane RHAFLI [H3cOFc-TX8I @ 00:03:11]; "
+                    "Rank Math SEO [wO28FZWmVwE @ 00:01:13]."
+                ),
+                (
+                    "Trust is built across the places buyers and answer engines already inspect. "
+                    "Ahrefs describes a headphone purchase that moved from Google listicles to Reddit, "
+                    "YouTube, and Amazon reviews; the presenter then describes AI assistants researching "
+                    "across comparable sources. The operating instruction is to reverse-engineer the "
+                    "actual cited domains and pages in the niche, not assume every famous platform "
+                    "matters equally. Affiliate Funnel Maps supplies the sales-page counterpart: "
+                    "detailed customer stories backed by data, and genuine testimonials connecting "
+                    "a specific pain point to the product's resolution. Those assets belong prominently "
+                    "on sales pages, inside email campaigns, and across social channels. Digital Niche "
+                    "Agency calls the broader objective an evidence trail for a decision the audience "
+                    "is already trying to make. The agency describes its own continuing output of "
+                    "podcasts, webinars, articles, and appearances as part of that trail, rather than "
+                    "a single content trick. These speakers make proof and distribution complementary "
+                    "jobs. Ahrefs seeks relevant third-party reviews and mentions; Affiliate Funnel "
+                    "Maps puts recognizable customer outcomes near the purchase decision; DNA connects "
+                    "claims, sources, and audience questions. The measurement stays attached to those "
+                    "jobs: useful citations and brand presence on one side, conversion rates, "
+                    "click-through rates, and customer feedback on the other. Ahrefs "
+                    "[tiW6xRYSXmM @ 00:00:50]; Affiliate Funnel Maps [odLdYx_tsk8 @ 00:01:54]; "
+                    "Digital Niche Agency [ClT7JBQFJGA @ 00:08:31]."
+                ),
             ],
             "table": {
-                "caption": "12-Signal High-Intent Buyer Query & Spend-Velocity Qualification Matrix",
-                "headers": ["Commercial Signal", "Observable Verification Evidence", "Operator Action & Page Format"],
+                "caption": "The shared foundations, expressed as concrete operating work.",
+                "headers": [
+                    "Operator move",
+                    "Execution and commercial purpose",
+                    "Expert Source",
+                ],
                 "rows": [
-                    ["1. `[Vendor] pricing calculator`", "Tiered per-seat, usage, or state add-on fees hidden behind sales calls", "Build interactive 12-month total-cost calculator with dated fee sources"],
-                    ["2. `[Vendor A] vs [Vendor B]`", "High commercial CPC ($12-$38+) & active dual-vendor search autocomplete", "Publish side-by-side workflow test matrix + clear 'Best For / Avoid If' split"],
-                    ["3. `How to migrate from [Incumbent]`", "Contract renewal cliff, CSV/API export pain, or price-hike backlash", "Offer step-by-step migration checklist + concierge setup bonus offer"],
-                    ["4. `Cancel [Incumbent] contract`", "Acute churn intent documented in G2/Reddit renewal complaints", "Give exact honest cancellation steps first, then rank vetted replacements"],
-                    ["5. `[Incumbent] alternative for [Niche]`", "Missing vertical compliance, integration, or seat-minimum gap", "Route to specialized challenger SaaS paying $300-$1,200+ qualified CPA"],
-                    ["6. `CDL Class A sign-on bonus [Metro]`", "Verified carrier XML feed with active DOT hiring & bonus terms", "Enrich authorized XML feed with `JobPosting` schema & license-class filter"],
-                    ["7. `ICU / OR travel-nurse stipend [State]`", "Authorized healthcare staffing feed with dated weekly stipend breakdown", "Route verified RNs to staffing partner CPA ($25-$85 qualified application)"],
-                    ["8. Meta Ad Library >=30d run", "Same advertiser running >=5 creative variants continuously >=30 days", "Log angle & bridge structure as test candidate (activity proxy, not profit proof)"],
-                    ["9. Google Ads Transparency continuity", "Verified B2B/call advertiser bidding across Tier-1 US states >=45 days", "Confirm commercial keyword economics & inspect landing-page qualification"],
-                    ["10. TikTok / YouTube ad iteration", "Fresh hook variants pointing to identical quiz or calculator bridge", "Adapt problem-hook structure into organic YouTube comparison walkthrough"],
-                    ["11. PartnerStack / Impact marketplace rank", "Active VIP payout tiers, <15% historical reversal rate & responsive AM", "Apply with live comparison hub URL and request S2S webhook sandbox"],
-                    ["12. Live merchant sales-team SLA", "Mystery-shopped demo calendar shows <24h AE slot availability", "Approve for primary traffic slot (slow AE calendars kill B2B conversion)"]
-                ]
-            }
+                    [
+                        "Build tool comparisons around professional uses and purchase decisions.",
+                        "Ecom Chief describes reviews, comparisons, and professional use cases as the affiliate property's core work.",
+                        "Ecom Chief ([iVK1QrJwylk @ 00:01:09])",
+                    ],
+                    [
+                        "Reach customers already rejecting or reconsidering a known competitor.",
+                        "Alternatives queries introduce the offer while the buyer is actively deciding which product to use.",
+                        "Rob Hoffman ([mPeQxVCunPU @ 00:03:01])",
+                    ],
+                    [
+                        "Attach the brand to an identifiable buyer and situation.",
+                        "Write down actual buyers, their distinguishing problems, budgets, and circumstances before choosing attribute pages.",
+                        "Kasra Dash ([qP0qmnleojY @ 00:06:12])",
+                    ],
+                    [
+                        "Keep the website foundations while answering complete customer questions.",
+                        "Fast mobile pages, headings, structure, authority, and clear human answers remain part of Vendasta's GEO approach.",
+                        "Vendasta ([VGI3TKBcH6A @ 00:02:14])",
+                    ],
+                    [
+                        "Prioritize the pages directly involved in revenue and sales.",
+                        "For SaaS, inspect pricing, product features, case studies, industry pages, and competitor alternatives first.",
+                        "Rank Math SEO ([wO28FZWmVwE @ 00:01:13])",
+                    ],
+                    [
+                        "Make customer proof visible throughout the actual purchase journey.",
+                        "Place case studies on sales pages, reuse them in emails, and share them across social platforms.",
+                        "Affiliate Funnel Maps ([odLdYx_tsk8 @ 00:01:54])",
+                    ],
+                ],
+            },
         },
         {
-            "heading": "2. Mine activity, then build a useful destination",
-            "epistemic_status": "operating_framework",
+            "id": "street-mechanics",
+            "title": "Exact Street Mechanics, Tools & Numbers",
             "paragraphs": [
-                "The play ad_library_spend_velocity_arbitrage is a research filter, not access to a competitor's bank account. Keep a dated log of ads found in Meta, Google Ads Transparency Center, and TikTok Creative Center. Track advertiser identity, first observed date, last observed date, offer wording, creative changes, destination, and region. Repeated observations spanning at least thirty days support an activity hypothesis. They do not establish continuous delivery, actual spend velocity, accepted lead quality, or profit. Some libraries expose only selected material, and absence is not proof that an advertiser stopped spending. Rank patterns by persistence and relevance to your chosen buyer task, then test your own unit EPC. A strong incumbent may have better retention, private payouts, or direct sales economics that you cannot copy. Borrow the research question, not their creative, customer claims, identity, or assumed cost structure."
+                (
+                    "Hoffman's research sequence is concrete. Ask Claude for a competitor list, make "
+                    "it easy to copy into Ahrefs, append 'alternatives' to each name, and paste the "
+                    "list into Keywords Explorer. Open Matching Terms and compare search volume with "
+                    "keyword difficulty, then inspect the domain ratings of the pages already "
+                    "ranking. A low difficulty number alone does not settle the choice. Next, search "
+                    "the alternatives term and inspect Reddit complaints for the reason someone "
+                    "might move: Hoffman shows an Asana customer unhappy with pricing tiers and "
+                    "limits, then identifies a nonprofit-specific angle. Marouane RHAFLI's parallel "
+                    "workflow starts in Semrush Keyword Magic with a broad seed and filters for "
+                    "volume, difficulty, questions, and intent. Dash adds the attribute pass: list "
+                    "actual buyers, list what distinguishes their problems and budgets, search those "
+                    "combinations, and build a page with real values. Together, these are research "
+                    "routes the speakers teach, not a requirement to use every tool. Hoffman then "
+                    "builds alternatives, own-brand comparisons, competitor-versus-competitor pages "
+                    "with the brand added, and competitor reviews. Relevant pages interlink, while "
+                    "a deeper comparison receives its own space instead of overwhelming an "
+                    "alternatives roundup. The chosen page starts with a buyer's reason to switch, "
+                    "not simply the largest competitor name available. Rob Hoffman "
+                    "[mPeQxVCunPU @ 00:07:13]; Marouane RHAFLI [H3cOFc-TX8I @ 00:01:11]; "
+                    "Kasra Dash [qP0qmnleojY @ 00:06:12]."
+                ),
+                (
+                    "Build the comparison from observable differences. Hoffman pays for competitors' "
+                    "cheapest plans, or uses free plans, then captures screenshots and walkthroughs. "
+                    "The page compares pricing, contracts, turnaround times, and features, shows "
+                    "recency, and identifies the author. CXL takes the targeting deeper: two-way "
+                    "and three-way comparisons can include an ideal customer profile and a specific "
+                    "feature, such as Asana versus ClickUp time tracking for SEO agencies. A "
+                    "spreadsheet generates those combinations; the speaker also recommends month "
+                    "and year in comparison titles and a dynamic monthly date. Chipp focuses on "
+                    "the extractable passage within the page: roughly 150 words, self-contained "
+                    "and factually dense, without vague references that require surrounding text. "
+                    "That is a passage recommendation, not a demand that the entire article be "
+                    "150 words. Da Hoang's Lumina V8 playbook uses a different page opening: an "
+                    "answer under 50 words, followed by a data table, a technical-director quote, "
+                    "a test-drive video, maintenance costs, and five FAQs. The plan assigns AI "
+                    "outlines, translations, and table code while people supply experiential "
+                    "writing. Each speaker specifies a different content component, but all make "
+                    "the deciding information easy to find rather than burying it in a generic "
+                    "wall of prose. Rob Hoffman [mPeQxVCunPU @ 00:20:18]; CXL "
+                    "[ioLcYsLyaII @ 00:02:42]; Chipp [Pw5w2kXNRyw @ 00:24:06]; "
+                    "Da Hoang [44ifmL6JCs8 @ 00:01:00]."
+                ),
+                (
+                    "Run visibility research against actual questions and sources. Digital Niche "
+                    "Agency builds a revenue-weighted prompt panel across discovery, education, "
+                    "comparison, verification, objections, and action, then scores value, evidence, "
+                    "gap, and ability to win. The Berlin team starts narrower: 143 prompts across "
+                    "shoe glue, fabric glue, and textile glue, tested across ChatGPT, Gemini, "
+                    "Perplexity, and AI Mode. They also describe an Excel starting point that "
+                    "records questions, models, mentions, and cited domains before repeated tests. "
+                    "The ZeroRank AI reviewer demonstrates auto-suggested prompts, prompt research, "
+                    "tracking, and recommendations split into off-page discussions and on-page "
+                    "content work. Their Pokémon-card example produces 41 ideas for United States "
+                    "English, while the platform is described as tracking seventeen engines. "
+                    "Ecom Chief supplies the affiliate growth sequence around that content business: "
+                    "refresh reviews, segment email by audience needs, recommend new tools and "
+                    "training, add paid directories or agency consulting referrals, and expand "
+                    "onto YouTube with embedded tutorials. The acquisition example starts at "
+                    "$95,000 and $2,400 monthly profit; after a year of video, expanded tool "
+                    "coverage, and an email course, the speaker reports 73% more traffic and "
+                    "$4,800 monthly profit. Those numbers belong to Ecom Chief's example. Digital "
+                    "Niche Agency [ClT7JBQFJGA @ 00:20:32]; E-commerce Berlin Expo "
+                    "[ELiV_0RMFr4 @ 00:15:44]; 🔥 TOP Digital Products 🔥 "
+                    "[J_fDLt9cLEg @ 00:01:48]; Ecom Chief [iVK1QrJwylk @ 00:02:47]."
+                ),
             ],
+            "table": {
+                "caption": "Exact tool paths, formats, and numbers taught by the speakers.",
+                "headers": [
+                    "Operator move",
+                    "Execution and reported numbers",
+                    "Expert Source",
+                ],
+                "rows": [
+                    [
+                        "Generate competitor alternatives terms before opening the keyword explorer.",
+                        "Use Claude for the list, paste into Ahrefs Keywords Explorer, then inspect Matching Terms and competing domains.",
+                        "Rob Hoffman ([mPeQxVCunPU @ 00:07:13])",
+                    ],
+                    [
+                        "Expand comparisons by customer profile and the specific feature.",
+                        "CXL proposes Asana versus ClickUp time tracking for SEO agencies and a spreadsheet-generated comparison matrix.",
+                        "CXL ([ioLcYsLyaII @ 00:02:42])",
+                    ],
+                    [
+                        "Score commercially meaningful prompts before deciding what to publish.",
+                        "DNA uses value, evidence, gap, and win ratings from one to five to prioritize content work.",
+                        "Digital Niche Agency ([ClT7JBQFJGA @ 00:22:44])",
+                    ],
+                    [
+                        "Use prompt research to uncover questions and tracking opportunities.",
+                        "The ZeroRank demonstration returns forty-one Pokémon-card ideas for United States English and displays associated trends.",
+                        "🔥 TOP Digital Products 🔥 ([J_fDLt9cLEg @ 00:01:48])",
+                    ],
+                    [
+                        "Put a short numerical answer above the supporting evidence.",
+                        "Da Hoang's plan uses an opening under fifty words, then tables, human proof, costs, and FAQs.",
+                        "Da Hoang ([44ifmL6JCs8 @ 00:01:00])",
+                    ],
+                    [
+                        "Grow an acquired property through video and email assets.",
+                        "Ecom Chief's example reports monthly profit rising from $2,400 to $4,800 after twelve months of expansion.",
+                        "Ecom Chief ([iVK1QrJwylk @ 00:03:03])",
+                    ],
+                ],
+            },
             "callout": {
                 "kind": "INSIDER PRO-TIPS",
-                "title": "BOFU Query Mining & Private Payout-Bump Secrets",
-                "body": "Top B2B affiliates win approvals and private rate tiers faster by reversing how beginners approach partner managers:",
+                "title": "Small execution details the practitioners actually use",
+                "body": "Use the specific page, passage, and distribution moves described by each operator.",
                 "items": [
-                    "Ship One Working Comparison Calculator BEFORE Applying to Tier-1 Programs: Enterprise SaaS managers reject 80% of blank 'I run SEO/ads' applications; applying with a live, fast, FTC-disclosed calculator URL wins instant approval and Slack access.",
-                    "Target 'Zero-Volume' High-ACV Integration Queries (`[CRM] + [ERP] sync cost`): Keyword tools report '0-10/mo' on B2B integration queries where 8 monthly clicks yield two $1,000 closed-won deals—mine Google Search Console & sales-call FAQs instead.",
-                    "Ask for a '30-Day Volume-Tier Step-Up' Instead of an Unconditional Bump: Managers rarely grant a blind +30% CPA hike on Day 1, but routinely sign 'Default $500 CPA; steps retroactively to $650 CPA in any calendar month with >=10 qualified demos.'",
-                    "Mystery-Shop the Merchant's Demo Funnel Before Spending Paid Dollars: Book a disclosed test walkthrough or inspect their calendar—if the merchant's form errors on mobile or offers no AE slots for 9 days, your EPC will crater regardless of payout size.",
-                ]
-            }
-        }
+                    (
+                        "Keep the competitor-versus-competitor phrase intact in the slug, title tag, "
+                        "and H1, then add your brand as the third option, as Hoffman did with "
+                        "Wix versus GoDaddy versus Kajabi. [Rob Hoffman — mPeQxVCunPU @ 00:16:16]"
+                    ),
+                    (
+                        "Build comparison combinations around both the customer profile and the "
+                        "feature, rather than stopping at two product names. "
+                        "[CXL — ioLcYsLyaII @ 00:02:42]"
+                    ),
+                    (
+                        "Write self-contained passages without vague references such as 'that' "
+                        "when the thing being referenced is absent from the passage. "
+                        "[Chipp — Pw5w2kXNRyw @ 00:24:37]"
+                    ),
+                    (
+                        "Inspect which third-party sources are gaining citations in your category "
+                        "and move outreach toward them; trendos shows its running-shoe source mix "
+                        "changing from June into July. [trendos — WBhqyUPJOro @ 00:05:04]"
+                    ),
+                ],
+            },
+            "sop_steps": [
+                {
+                    "step": 1,
+                    "title": "Find the switching reason",
+                    "action": "Research competitor alternatives and the complaints behind them.",
+                    "detail": (
+                        "Generate competitor terms with Claude, inspect them in Ahrefs, and read "
+                        "Reddit discussions for pricing, service, or feature frustrations that "
+                        "the offer addresses. [Rob Hoffman — mPeQxVCunPU @ 00:12:33]"
+                    ),
+                },
+                {
+                    "step": 2,
+                    "title": "Build the decision page",
+                    "action": "Show actual products, differences, and customer outcomes.",
+                    "detail": (
+                        "Use product access to create screenshots and walkthroughs, then place "
+                        "genuine testimonials that connect a customer's challenge with its "
+                        "resolution. [Rob Hoffman — mPeQxVCunPU @ 00:20:18] "
+                        "[Affiliate Funnel Maps — odLdYx_tsk8 @ 00:01:16]"
+                    ),
+                },
+                {
+                    "step": 3,
+                    "title": "Map the sources and distribute",
+                    "action": "Identify cited pages before seeking external mentions.",
+                    "detail": (
+                        "In Ahrefs Brand Radar, inspect cited pages and filter queries for best, "
+                        "top, versus, review, or alternative; contact relevant authors about "
+                        "reviewing the product. [Ahrefs — tiW6xRYSXmM @ 00:03:25]"
+                    ),
+                },
+                {
+                    "step": 4,
+                    "title": "Repeat the tests and track the next action",
+                    "action": "Measure AI answers separately from resulting commercial activity.",
+                    "detail": (
+                        "Keep ChatGPT and Claude as separate test environments, inspect citation "
+                        "and answer differences, and track demos or other conversions in GA4 "
+                        "or the CRM. [Digital Niche Agency — ClT7JBQFJGA @ 00:35:31] "
+                        "[Rob Hoffman — mPeQxVCunPU @ 00:32:55]"
+                    ),
+                },
+            ],
+        },
+        {
+            "id": "disagreements",
+            "title": "Where Practitioners Disagree & Alternative Playbooks",
+            "paragraphs": [
+                (
+                    "Content scale is the sharpest tactical split. CXL explicitly says AI makes "
+                    "hundreds or thousands of comparison combinations possible and describes "
+                    "two-way, three-way, customer-profile, feature, and alternatives variants. The "
+                    "speaker reports success with Mapton and relays a reader's message about "
+                    "winning citations even for competitor information. Dash attacks the old "
+                    "topical-authority pattern of thousands of generic pages that anyone could "
+                    "write, pointing to sites that lost substantial Google traffic. Their prescribed "
+                    "replacement is fewer pages connecting brands to specific attributes with "
+                    "real values. Hoffman takes a selective publishing route: build a comparison "
+                    "cluster, but do not publish all four page types immediately; start where "
+                    "searches are most relevant to the desired customers. The approaches overlap "
+                    "on specificity, but not on the amount or timing of production. CXL also "
+                    "pushes month-and-year titles and a date that changes monthly. Hoffman "
+                    "emphasizes showing how current the pricing and features actually are. "
+                    "Dash's rejection is directed at interchangeable information, while CXL's "
+                    "expansion is directed at customer and feature combinations. An operator "
+                    "following one playbook is therefore making a different production choice "
+                    "from the operator who begins with Hoffman's most relevant comparison "
+                    "and develops the cluster from there. CXL [ioLcYsLyaII @ 00:03:04]; "
+                    "Kasra Dash [qP0qmnleojY @ 00:08:09]; Rob Hoffman "
+                    "[mPeQxVCunPU @ 00:18:46]."
+                ),
+                (
+                    "The money model is not unanimous either. Ecom Chief recommends buying a "
+                    "revenue-producing AI affiliate property instead of enduring a new site's "
+                    "zero-revenue startup period. The pitch combines recurring commissions, "
+                    "35–50 times monthly-profit valuations, and a stated five-to-fifteen-hour "
+                    "weekly maintenance range, followed by active growth work. Craig Campbell, "
+                    "interviewed on SEO Jesus, says the content-heavy Amazon affiliate model "
+                    "became nonprofitable for them as updates and commission cuts accumulated. "
+                    "Their own ecommerce sites now provide the principal cash flow, while "
+                    "brand deals are intermittent extras. For someone seeking income quickly, "
+                    "Campbell recommends productized services such as content, links, or "
+                    "listicles rather than rebuilding their ecommerce learning curve or "
+                    "waiting years for a personal brand. Chipp supplies a service-business "
+                    "workflow: quick audit, report, proposal, then monthly comparison. Scott "
+                    "describes providers charging $2,000 monthly for an audit, quarterly "
+                    "reports, and instructions, with separate execution-heavy service levels. "
+                    "The workshop also mentions a 20% Chipp affiliate program. These are "
+                    "alternative ways to monetize the same shift toward AI discovery, not "
+                    "one combined income result. Ecom Chief sells the acquisition route; "
+                    "Campbell prefers owned commerce and services; Chipp teaches selling "
+                    "audits and implementation alongside software referrals. Ecom Chief "
+                    "[iVK1QrJwylk @ 00:01:28]; SEO Jesus [fFkytpd4J_Q @ 00:02:17]; "
+                    "Chipp [Pw5w2kXNRyw @ 00:55:15]."
+                ),
+                (
+                    "External authority has competing playbooks, and the speakers do not "
+                    "describe the same relationship with paid or manufactured exposure. Chipp "
+                    "discusses people creating multiple sites that talk about their own "
+                    "product, making AI treat the product as authoritative where topic "
+                    "coverage is shallow. Scott compares it with interlinked travel-credit-card "
+                    "pages and describes a current window for that behavior. Da Hoang's "
+                    "Lumina V8 plan explicitly rejects bought guest posts and forum links. "
+                    "Its alternative is a data-led pitch to fifty journalists, built around "
+                    "cabin-noise evidence, with a person taking over after a journalist "
+                    "replies. The Berlin team reports a third route: identify the source "
+                    "ecosystem, approach an external domain, and publish useful content "
+                    "there. Their selected domain had not previously appeared for the "
+                    "143-prompt panel; they report approximately 800 citations after five "
+                    "days, while continuing to test how long the effect lasts. The "
+                    "scoreboard also varies. Vendasta argues that being summarized can "
+                    "provide influence even without visible credit, whereas Chipp's stated "
+                    "GEO goal is inclusion with a citation link. The differences are "
+                    "operational: manufactured mentions, publisher outreach, journalist-led "
+                    "PR, and unlinked answer influence are not interchangeable descriptions "
+                    "of a single tactic or outcome. Chipp [Pw5w2kXNRyw @ 00:32:56]; "
+                    "Da Hoang [44ifmL6JCs8 @ 00:02:21]; E-commerce Berlin Expo "
+                    "[ELiV_0RMFr4 @ 00:18:48]; Vendasta [VGI3TKBcH6A @ 00:03:30]."
+                ),
+            ],
+            "table": {
+                "caption": "Different playbooks, kept distinct rather than blended into one rule.",
+                "headers": [
+                    "Decision being contested",
+                    "Contrasting practitioner approaches",
+                    "Expert Source",
+                ],
+                "rows": [
+                    [
+                        "Choose how widely and quickly to expand comparison coverage.",
+                        "CXL proposes hundreds or thousands of combinations; Hoffman starts with the searches most relevant to customers.",
+                        "CXL ([ioLcYsLyaII @ 00:03:04]); Rob Hoffman ([mPeQxVCunPU @ 00:19:00])",
+                    ],
+                    [
+                        "Decide whether authority requires volume or fewer specific pages.",
+                        "Dash rejects generic publishing scale; CXL expands around specific customer profiles and individual product features.",
+                        "Kasra Dash ([qP0qmnleojY @ 00:08:09]); CXL ([ioLcYsLyaII @ 00:02:21])",
+                    ],
+                    [
+                        "Select an asset acquisition route or a service business.",
+                        "Ecom Chief pitches buying existing affiliate revenue; Campbell recommends productized services for faster initial income.",
+                        "Ecom Chief ([iVK1QrJwylk @ 00:03:56]); SEO Jesus ([fFkytpd4J_Q @ 00:10:08])",
+                    ],
+                    [
+                        "Choose between manufactured mentions and a journalist-led authority campaign.",
+                        "Chipp describes multiple self-promoting sites; Da Hoang's plan rejects bought guest posts and forum links.",
+                        "Chipp ([Pw5w2kXNRyw @ 00:32:56]); Da Hoang ([44ifmL6JCs8 @ 00:02:21])",
+                    ],
+                    [
+                        "Decide whether answer inclusion needs an explicit citation link.",
+                        "Vendasta values influence without visible credit; Chipp describes the desired outcome as citation with a link.",
+                        "Vendasta ([VGI3TKBcH6A @ 00:03:49]); Chipp ([Pw5w2kXNRyw @ 00:06:57])",
+                    ],
+                    [
+                        "Pick the audience and platform before allocating distribution effort.",
+                        "Chipp suggests platform focus by audience; trendos shifts outreach as the category's cited sources change.",
+                        "Chipp ([Pw5w2kXNRyw @ 00:18:42]); trendos ([WBhqyUPJOro @ 00:05:04])",
+                    ],
+                ],
+            },
+        },
+        {
+            "id": "failure-modes",
+            "title": "Firsthand Failure Modes, Traps & Economics Checks",
+            "paragraphs": [
+                (
+                    "Campbell's golf-site mistake is the cleanest economics check: the SEO worked, "
+                    "but the average order value was only twenty dollars. Content and links "
+                    "still cost money, and Campbell says those costs would have been the "
+                    "same for a much higher-priced product. The missing calculation was "
+                    "commercial, not a ranking trick. Their ecommerce history adds concrete "
+                    "operational failures: women's clothing produced return rates around "
+                    "50%, and the ecigarette niche created advertising restrictions they "
+                    "had not properly considered. Digital downloads and a dropshipped "
+                    "offering were later choices shaped by those experiences. Hoffman "
+                    "describes the parallel measurement trap in lead generation: a ranking "
+                    "page can attract hundreds of readers without a signup, while a "
+                    "small audience can produce a valuable customer. Their branding-agency "
+                    "example includes a single $100,000 contract. Affiliate Funnel Maps "
+                    "therefore measures case studies through conversion rates, click-through "
+                    "rates, and customer feedback rather than merely counting published "
+                    "testimonials. Across these accounts, the observed failure is treating "
+                    "the visible marketing activity as the business result. Campbell had "
+                    "search success without attractive product economics; Hoffman wants "
+                    "the action after the visit; Affiliate Funnel Maps checks whether "
+                    "proof assets actually persuade buyers and what customers say needs "
+                    "improvement. SEO Jesus [fFkytpd4J_Q @ 00:07:28]; Rob Hoffman "
+                    "[mPeQxVCunPU @ 00:30:23]; Affiliate Funnel Maps [odLdYx_tsk8 @ 00:02:33]."
+                ),
+                (
+                    "Technical invisibility can precede every content argument. Chipp's Scott "
+                    "shows the audit of Chipp itself receiving a D and says the findings "
+                    "led to tasks to unblock the site on Cloudflare. A workshop participant "
+                    "also reports a client site scoring 32 out of 100, despite already "
+                    "having a website built. Digital Niche Agency's response is to inspect "
+                    "access before rewriting: the live URL should return 200, have the "
+                    "correct canonical, be indexable and internally linked, and expose "
+                    "the complete answer in the rendered page. The agency checks for "
+                    "login, consent, CDN, and firewall obstructions, then reviews live "
+                    "robots rules and relevant logs. Rank Math SEO identifies a different "
+                    "blocker that page optimization cannot conceal: public complaints "
+                    "about unreliable products or rude, slow support. Jack recommends "
+                    "asking reliability questions across Google and AI tools, noting "
+                    "the referenced sources, and addressing the underlying operational "
+                    "issues. The firsthand aircon example shows how the presenter "
+                    "actually discovered a provider through explanatory TikTok videos, "
+                    "not the business profile. The reported rating moved from about "
+                    "3.9 to 4.6 after sustained effort. The practical checks therefore "
+                    "reach beyond writing: can the content be retrieved, and does the "
+                    "customer experience support the claims? Chipp [Pw5w2kXNRyw @ 00:36:30]; "
+                    "Digital Niche Agency [ClT7JBQFJGA @ 00:38:45]; "
+                    "Rank Math SEO [wO28FZWmVwE @ 00:07:56]."
+                ),
+                (
+                    "Do not mistake a visibility snapshot for a stable position. The Berlin "
+                    "presenters report website traffic falling by around 40% and describe "
+                    "their move toward repeated AI visibility testing. Their external "
+                    "placement produced citations quickly, but they were still investigating "
+                    "whether those citations persisted for months. They also discuss "
+                    "incorrect payment information appearing in AI answers and note "
+                    "that manual prompting can reflect the person asking. trendos "
+                    "makes the variability explicit: the same question can name different "
+                    "brands across repeated runs, and the sources dominating a category "
+                    "can shift from month to month. Its running-shoe example shows "
+                    "YouTube fading while review sites gain ground. Ahrefs adds another "
+                    "boundary: 86% of top cited sources are unique to each AI assistant "
+                    "in its research, and a mention on a prominent domain does not "
+                    "automatically produce AI Overview inclusion. The response taught "
+                    "by these speakers is repeated, category-specific investigation "
+                    "rather than one universal placement list. Berlin starts with core "
+                    "categories and expands after learning from them; trendos monitors "
+                    "where source trust moves; Ahrefs drills from domains into the "
+                    "particular pages being cited. Visibility, source selection, accuracy, "
+                    "and durable commercial results remain separate observations in "
+                    "these operating accounts. E-commerce Berlin Expo [ELiV_0RMFr4 @ 00:07:36]; "
+                    "trendos [WBhqyUPJOro @ 00:02:31]; Ahrefs [tiW6xRYSXmM @ 00:01:33]."
+                ),
+            ],
+            "table": {
+                "caption": "Reported mistakes and the checks the speakers attach to them.",
+                "headers": [
+                    "Failure or operational trap",
+                    "Practitioner experience and corresponding check",
+                    "Expert Source",
+                ],
+                "rows": [
+                    [
+                        "Search rankings worked but the underlying order value disappointed.",
+                        "Campbell's golf affiliate purchase had twenty-dollar average orders while content and link costs still applied.",
+                        "SEO Jesus ([fFkytpd4J_Q @ 00:07:28])",
+                    ],
+                    [
+                        "Product handling and returns undermined an attractive ecommerce idea.",
+                        "Campbell reports approximately fifty-percent women's-clothing returns and later favors models shaped by those painful experiences.",
+                        "SEO Jesus ([fFkytpd4J_Q @ 00:06:32])",
+                    ],
+                    [
+                        "The operator's own platform had an AI access problem.",
+                        "Chipp's audit returned a D, and Scott assigned work to unblock the site using Cloudflare.",
+                        "Chipp ([Pw5w2kXNRyw @ 00:36:30])",
+                    ],
+                    [
+                        "Published content could remain inaccessible despite further editorial work.",
+                        "DNA checks live status, canonical, indexability, rendered answers, and access obstructions before rewriting the page.",
+                        "Digital Niche Agency ([ClT7JBQFJGA @ 00:38:45])",
+                    ],
+                    [
+                        "A rapid citation gain left its longer-term durability unresolved.",
+                        "Berlin's team reports five-day gains while continuing to test whether placements sustain citations over subsequent months.",
+                        "E-commerce Berlin Expo ([ELiV_0RMFr4 @ 00:19:31])",
+                    ],
+                    [
+                        "Traffic and apparent rankings concealed the absence of customers.",
+                        "Hoffman tracks the next commercial action and reports Team Town's qualified demos using GA4.",
+                        "Rob Hoffman ([mPeQxVCunPU @ 00:32:55])",
+                    ],
+                ],
+            },
+            "callout": {
+                "kind": "OPERATOR GATE",
+                "title": "Four checks before calling the growth engine healthy",
+                "body": "Use the practitioners' own failures and diagnostic routines to judge the work.",
+                "items": [
+                    (
+                        "Check order value and margin against the content and link work: Campbell "
+                        "ranked the golf site successfully but regretted its twenty-dollar "
+                        "average order value. [SEO Jesus — fFkytpd4J_Q @ 00:07:28]"
+                    ),
+                    (
+                        "Test the live page's status, canonical, indexability, rendered answer, "
+                        "and access obstructions before commissioning another rewrite. "
+                        "[Digital Niche Agency — ClT7JBQFJGA @ 00:38:45]"
+                    ),
+                    (
+                        "Ask reliability and complaint questions across AI tools, inspect the "
+                        "sources, and fix recurring product or support problems rather than "
+                        "only polishing the page. [Rank Math SEO — wO28FZWmVwE @ 00:08:28]"
+                    ),
+                    (
+                        "Repeat citation checks after a placement instead of treating the first "
+                        "five days as proof of durability; the Berlin team kept testing that "
+                        "exact question. [E-commerce Berlin Expo — ELiV_0RMFr4 @ 00:19:31]"
+                    ),
+                ],
+            },
+        },
     ],
-    "pull_quote": "A winning offer is not the largest payout on a spreadsheet; it is the one whose accepted commissions survive the full cost of reaching the buyer.",
-    "diagram_id": "diag-02-click-to-commission-funnel",
+    "pull_quote": (
+        "\"It is about getting conversions and customers.\" — Rob Hoffman "
+        "(mPeQxVCunPU @ 00:11:25)."
+    ),
+    "diagram_id": "diag-02",
     "action_checklist": [
-        "Map ten buyer queries to one payable event each.",
-        "Log dated ad observations without inventing spend estimates.",
-        "Request written traffic, attribution, and reversal terms.",
-        "Publish one dated comparison with a nearby affiliate disclosure.",
-        "Validate live feed jobs and remove closed listings.",
-        "Cap a seven day test and reconcile accepted commissions by cohort."
+        (
+            "List actual buyer groups, distinguish their problems and budgets, search those "
+            "combinations, and build attribute pages with real prices and specifications. "
+            "[Kasra Dash — qP0qmnleojY @ 00:06:12]"
+        ),
+        (
+            "Research competitor alternatives with Claude and Ahrefs, then inspect competing "
+            "domain ratings instead of relying only on keyword difficulty. "
+            "[Rob Hoffman — mPeQxVCunPU @ 00:07:13]"
+        ),
+        (
+            "Put genuine pain-point-and-resolution testimonials on sales pages and reuse the "
+            "customer proof in email and social distribution. "
+            "[Affiliate Funnel Maps — odLdYx_tsk8 @ 00:01:54]"
+        ),
+        (
+            "Audit AI brand visibility and review ZeroRank's off-page discussion opportunities "
+            "and on-page content recommendations as separate work queues. "
+            "[🔥 TOP Digital Products 🔥 — J_fDLt9cLEg @ 00:03:19]"
+        ),
+        (
+            "Refresh tool reviews, segment email by customer needs, and embed YouTube tutorials "
+            "back into relevant affiliate articles. [Ecom Chief — iVK1QrJwylk @ 00:02:04] "
+            "[Ecom Chief — iVK1QrJwylk @ 00:02:34]"
+        ),
+        (
+            "Track AI answers repeatedly, monitor which sources drive mentions, and measure "
+            "the resulting demos or customer actions rather than traffic alone. "
+            "[trendos — WBhqyUPJOro @ 00:06:14] "
+            "[Rob Hoffman — mPeQxVCunPU @ 00:32:55]"
+        ),
     ],
     "statutory_citations": [
-        {"title": "15 U.S.C. section 1125(a)", "url": "https://www.law.cornell.edu/uscode/text/15/1125", "relevance": "False association and misleading commercial representations; nominative use is not blanket permission."},
-        {"title": "16 CFR Part 255", "url": "https://www.ecfr.gov/current/title-16/chapter-I/subchapter-B/part-255", "relevance": "FTC endorsement guides address material connections and truthful endorsements."},
-        {"title": "15 U.S.C. section 45", "url": "https://www.law.cornell.edu/uscode/text/15/45", "relevance": "Prohibits unfair or deceptive acts or practices in commerce."}
-    ]
+        {
+            "title": (
+                "Ecom Chief — How to Buy and Grow an AI Affiliate Website in 2026 "
+                "(High-Ticket SaaS Commissions) [00:01:09]"
+            ),
+            "url": "https://www.youtube.com/watch?v=iVK1QrJwylk&t=69s",
+            "relevance": (
+                "Primary practitioner testimony on AI affiliate properties, professional "
+                "use cases, and the stated SaaS commission range."
+            ),
+        },
+        {
+            "title": (
+                "Rob Hoffman — Copy This Al SEO Strategy, It'll Blow Up Your Business "
+                "[00:20:18]"
+            ),
+            "url": "https://www.youtube.com/watch?v=mPeQxVCunPU&t=1218s",
+            "relevance": (
+                "Primary practitioner testimony on using competitor products to produce "
+                "specific, demonstrable comparison content."
+            ),
+        },
+        {
+            "title": (
+                "SEO Jesus — I Quit Affiliate SEO After 10 Years - Here's What I'm "
+                "Doing Instead [00:07:28]"
+            ),
+            "url": "https://www.youtube.com/watch?v=fFkytpd4J_Q&t=448s",
+            "relevance": (
+                "Primary practitioner testimony from Craig Campbell on a successful "
+                "SEO execution undermined by low average order value."
+            ),
+        },
+        {
+            "title": (
+                "E-commerce Berlin Expo — Generative Engine Optimization: How to Build "
+                "Visibility in AI Searches like ChatGPT and Perplexity [00:19:12]"
+            ),
+            "url": "https://www.youtube.com/watch?v=ELiV_0RMFr4&t=1152s",
+            "relevance": (
+                "Primary practitioner testimony on the reported citation response "
+                "following an external content placement."
+            ),
+        },
+    ],
+    "source_citations": [
+        {
+            "source_type": "video_pro_tip",
+            "video_id": "iVK1QrJwylk",
+            "title": "How to Buy and Grow an AI Affiliate Website in 2026 (High-Ticket SaaS Commissions)",
+            "channel": "Ecom Chief",
+            "author": "Ecom Chief",
+            "text": "By continuously updating tool reviews to reflect new features and pricing, you capture high intent search traffic as the fast-moving AI market evolves.",
+            "tip": "By continuously updating tool reviews to reflect new features and pricing, you capture high intent search traffic as the fast-moving AI market evolves.",
+            "timestamp": 124,
+            "timestamp_seconds": 124,
+            "timestamp_label": "[00:02:04]",
+            "url": "https://www.youtube.com/watch?v=iVK1QrJwylk&t=124s",
+            "markdown": "[00:02:04](https://www.youtube.com/watch?v=iVK1QrJwylk&t=124s)",
+            "epistemic_status": "attributed_practitioner_claim",
+            "relevance": "Verbatim practitioner testimony from Chapter Q6.",
+        },
+        {
+            "source_type": "video_pro_tip",
+            "video_id": "mPeQxVCunPU",
+            "title": "Copy This Al SEO Strategy, It'll Blow Up Your Business",
+            "channel": "Rob Hoffman",
+            "author": "Rob Hoffman",
+            "text": "It is about getting conversions and customers.",
+            "tip": "It is about getting conversions and customers.",
+            "timestamp": 685,
+            "timestamp_seconds": 685,
+            "timestamp_label": "[00:11:25]",
+            "url": "https://www.youtube.com/watch?v=mPeQxVCunPU&t=685s",
+            "markdown": "[00:11:25](https://www.youtube.com/watch?v=mPeQxVCunPU&t=685s)",
+            "epistemic_status": "attributed_practitioner_claim",
+            "relevance": "Verbatim practitioner testimony from Chapter Q6.",
+        },
+        {
+            "source_type": "video_pro_tip",
+            "video_id": "qP0qmnleojY",
+            "title": "Topical Authority Is Getting Sites CRUSHED (Do This Instead)",
+            "channel": "Kasra Dash",
+            "author": "Kasra Dash",
+            "text": "Build one page per attribute with real values on it. Real prices, real specs, real customers, not a wall of text that anyone could write.",
+            "tip": "Build one page per attribute with real values on it. Real prices, real specs, real customers, not a wall of text that anyone could write.",
+            "timestamp": 413,
+            "timestamp_seconds": 413,
+            "timestamp_label": "[00:06:53]",
+            "url": "https://www.youtube.com/watch?v=qP0qmnleojY&t=413s",
+            "markdown": "[00:06:53](https://www.youtube.com/watch?v=qP0qmnleojY&t=413s)",
+            "epistemic_status": "attributed_practitioner_claim",
+            "relevance": "Verbatim practitioner testimony from Chapter Q6.",
+        },
+        {
+            "source_type": "video_pro_tip",
+            "video_id": "fFkytpd4J_Q",
+            "title": "I Quit Affiliate SEO After 10 Years - Here's What I'm Doing Instead",
+            "channel": "SEO Jesus",
+            "author": "SEO Jesus",
+            "text": "I was successful with the SEO side, but the average order value on that product was 20 bucks.",
+            "tip": "I was successful with the SEO side, but the average order value on that product was 20 bucks.",
+            "timestamp": 448,
+            "timestamp_seconds": 448,
+            "timestamp_label": "[00:07:28]",
+            "url": "https://www.youtube.com/watch?v=fFkytpd4J_Q&t=448s",
+            "markdown": "[00:07:28](https://www.youtube.com/watch?v=fFkytpd4J_Q&t=448s)",
+            "epistemic_status": "attributed_practitioner_claim",
+            "relevance": "Verbatim practitioner testimony from Chapter Q6.",
+        },
+        {
+            "source_type": "video_pro_tip",
+            "video_id": "wO28FZWmVwE",
+            "title": "The 2027 SEO & GEO Checklist (What Your Site Might Be Missing)",
+            "channel": "Rank Math SEO",
+            "author": "Rank Math SEO",
+            "text": "Basically, whatever pages that bring you sales and revenue are the important pages.",
+            "tip": "Basically, whatever pages that bring you sales and revenue are the important pages.",
+            "timestamp": 73,
+            "timestamp_seconds": 73,
+            "timestamp_label": "[00:01:13]",
+            "url": "https://www.youtube.com/watch?v=wO28FZWmVwE&t=73s",
+            "markdown": "[00:01:13](https://www.youtube.com/watch?v=wO28FZWmVwE&t=73s)",
+            "epistemic_status": "attributed_practitioner_claim",
+            "relevance": "Verbatim practitioner testimony from Chapter Q6.",
+        },
+        {
+            "source_type": "video_pro_tip",
+            "video_id": "ioLcYsLyaII",
+            "title": "How to build AEO Comparison Pages For AI Dominance",
+            "channel": "CXL",
+            "author": "CXL",
+            "text": "The end goal here is to actually create comparison pages on specific features and specific ICPs.",
+            "tip": "The end goal here is to actually create comparison pages on specific features and specific ICPs.",
+            "timestamp": 141,
+            "timestamp_seconds": 141,
+            "timestamp_label": "[00:02:21]",
+            "url": "https://www.youtube.com/watch?v=ioLcYsLyaII&t=141s",
+            "markdown": "[00:02:21](https://www.youtube.com/watch?v=ioLcYsLyaII&t=141s)",
+            "epistemic_status": "attributed_practitioner_claim",
+            "relevance": "Verbatim practitioner testimony from Chapter Q6.",
+        },
+        {
+            "source_type": "video_pro_tip",
+            "video_id": "tiW6xRYSXmM",
+            "title": "SEO in 2026: How I'd Rank in Google in the AI Era",
+            "channel": "Ahrefs",
+            "author": "Ahrefs",
+            "text": "Add a filter where the query contains words like best, top, versus, review, or alternative.",
+            "tip": "Add a filter where the query contains words like best, top, versus, review, or alternative.",
+            "timestamp": 205,
+            "timestamp_seconds": 205,
+            "timestamp_label": "[00:03:25]",
+            "url": "https://www.youtube.com/watch?v=tiW6xRYSXmM&t=205s",
+            "markdown": "[00:03:25](https://www.youtube.com/watch?v=tiW6xRYSXmM&t=205s)",
+            "epistemic_status": "attributed_practitioner_claim",
+            "relevance": "Verbatim practitioner testimony from Chapter Q6.",
+        },
+        {
+            "source_type": "video_pro_tip",
+            "video_id": "J_fDLt9cLEg",
+            "title": "Profound Alternative: ZeroRank AI Review & Comparison 2026",
+            "channel": "🔥 TOP Digital Products 🔥",
+            "author": "🔥 TOP Digital Products 🔥",
+            "text": "There's visibility and tracking across actually 17 different AI engines.",
+            "tip": "There's visibility and tracking across actually 17 different AI engines.",
+            "timestamp": 155,
+            "timestamp_seconds": 155,
+            "timestamp_label": "[00:02:35]",
+            "url": "https://www.youtube.com/watch?v=J_fDLt9cLEg&t=155s",
+            "markdown": "[00:02:35](https://www.youtube.com/watch?v=J_fDLt9cLEg&t=155s)",
+            "epistemic_status": "attributed_practitioner_claim",
+            "relevance": "Verbatim practitioner testimony from Chapter Q6.",
+        },
+        {
+            "source_type": "video_pro_tip",
+            "video_id": "ClT7JBQFJGA",
+            "title": "How to Rank on ChatGPT and Claude | Generative Engine Optimization (GEO) Webinar",
+            "channel": "Digital Niche Agency",
+            "author": "Digital Niche Agency",
+            "text": "Build the clearest evidence trail for a specific decision your audience is already trying to make.",
+            "tip": "Build the clearest evidence trail for a specific decision your audience is already trying to make.",
+            "timestamp": 511,
+            "timestamp_seconds": 511,
+            "timestamp_label": "[00:08:31]",
+            "url": "https://www.youtube.com/watch?v=ClT7JBQFJGA&t=511s",
+            "markdown": "[00:08:31](https://www.youtube.com/watch?v=ClT7JBQFJGA&t=511s)",
+            "epistemic_status": "attributed_practitioner_claim",
+            "relevance": "Verbatim practitioner testimony from Chapter Q6.",
+        },
+        {
+            "source_type": "video_pro_tip",
+            "video_id": "ELiV_0RMFr4",
+            "title": "Generative Engine Optimization: How to Build Visibility in AI Searches like ChatGPT and Perplexity",
+            "channel": "E-commerce Berlin Expo",
+            "author": "E-commerce Berlin Expo",
+            "text": "We chose a domain and we reached out. We built up content on there.",
+            "tip": "We chose a domain and we reached out. We built up content on there.",
+            "timestamp": 1128,
+            "timestamp_seconds": 1128,
+            "timestamp_label": "[00:18:48]",
+            "url": "https://www.youtube.com/watch?v=ELiV_0RMFr4&t=1128s",
+            "markdown": "[00:18:48](https://www.youtube.com/watch?v=ELiV_0RMFr4&t=1128s)",
+            "epistemic_status": "attributed_practitioner_claim",
+            "relevance": "Verbatim practitioner testimony from Chapter Q6.",
+        },
+        {
+            "source_type": "video_pro_tip",
+            "video_id": "VGI3TKBcH6A",
+            "title": "Generative Engine Optimization (GEO) Explained Like You're 5",
+            "channel": "Vendasta",
+            "author": "Vendasta",
+            "text": "You're trying to become part of the answer itself.",
+            "tip": "You're trying to become part of the answer itself.",
+            "timestamp": 96,
+            "timestamp_seconds": 96,
+            "timestamp_label": "[00:01:36]",
+            "url": "https://www.youtube.com/watch?v=VGI3TKBcH6A&t=96s",
+            "markdown": "[00:01:36](https://www.youtube.com/watch?v=VGI3TKBcH6A&t=96s)",
+            "epistemic_status": "attributed_practitioner_claim",
+            "relevance": "Verbatim practitioner testimony from Chapter Q6.",
+        },
+        {
+            "source_type": "video_pro_tip",
+            "video_id": "H3cOFc-TX8I",
+            "title": "How to Rank in AI Search Engines Using GEO - SEO course EP 11",
+            "channel": "Marouane RHAFLI",
+            "author": "Marouane RHAFLI",
+            "text": "Create content that genuinely answers people's questions. Cover your topic in depth instead of writing dozens of thin articles.",
+            "tip": "Create content that genuinely answers people's questions. Cover your topic in depth instead of writing dozens of thin articles.",
+            "timestamp": 228,
+            "timestamp_seconds": 228,
+            "timestamp_label": "[00:03:48]",
+            "url": "https://www.youtube.com/watch?v=H3cOFc-TX8I&t=228s",
+            "markdown": "[00:03:48](https://www.youtube.com/watch?v=H3cOFc-TX8I&t=228s)",
+            "epistemic_status": "attributed_practitioner_claim",
+            "relevance": "Verbatim practitioner testimony from Chapter Q6.",
+        },
+        {
+            "source_type": "video_pro_tip",
+            "video_id": "odLdYx_tsk8",
+            "title": "How to Use Case Studies and Testimonials to Boost High Ticket Affiliate Sales",
+            "channel": "Affiliate Funnel Maps",
+            "author": "Affiliate Funnel Maps",
+            "text": "Tracking key metrics such as conversion rates, click-through rates, and customer feedback is essential.",
+            "tip": "Tracking key metrics such as conversion rates, click-through rates, and customer feedback is essential.",
+            "timestamp": 153,
+            "timestamp_seconds": 153,
+            "timestamp_label": "[00:02:33]",
+            "url": "https://www.youtube.com/watch?v=odLdYx_tsk8&t=153s",
+            "markdown": "[00:02:33](https://www.youtube.com/watch?v=odLdYx_tsk8&t=153s)",
+            "epistemic_status": "attributed_practitioner_claim",
+            "relevance": "Verbatim practitioner testimony from Chapter Q6.",
+        },
+        {
+            "source_type": "video_pro_tip",
+            "video_id": "WBhqyUPJOro",
+            "title": "What Is GEO? Generative Engine Optimization & How to Rank in AI Search",
+            "channel": "trendos",
+            "author": "trendos",
+            "text": "Think of it as a probability, not a leaderboard position.",
+            "tip": "Think of it as a probability, not a leaderboard position.",
+            "timestamp": 168,
+            "timestamp_seconds": 168,
+            "timestamp_label": "[00:02:48]",
+            "url": "https://www.youtube.com/watch?v=WBhqyUPJOro&t=168s",
+            "markdown": "[00:02:48](https://www.youtube.com/watch?v=WBhqyUPJOro&t=168s)",
+            "epistemic_status": "attributed_practitioner_claim",
+            "relevance": "Verbatim practitioner testimony from Chapter Q6.",
+        },
+        {
+            "source_type": "video_pro_tip",
+            "video_id": "Pw5w2kXNRyw",
+            "title": "GEO - AI SEO Workshop - Rank on ChatGPT, Claude, Google Gemini, Perplexity with Full Playbook",
+            "channel": "Chipp",
+            "author": "Chipp",
+            "text": "Your entire blog post doesn't have to be 150 words, but you want to have 150-word paragraphs in there that are self-contained enough to get pulled in.",
+            "tip": "Your entire blog post doesn't have to be 150 words, but you want to have 150-word paragraphs in there that are self-contained enough to get pulled in.",
+            "timestamp": 1446,
+            "timestamp_seconds": 1446,
+            "timestamp_label": "[00:24:06]",
+            "url": "https://www.youtube.com/watch?v=Pw5w2kXNRyw&t=1446s",
+            "markdown": "[00:24:06](https://www.youtube.com/watch?v=Pw5w2kXNRyw&t=1446s)",
+            "epistemic_status": "attributed_practitioner_claim",
+            "relevance": "Verbatim practitioner testimony from Chapter Q6.",
+        },
+        {
+            "source_type": "video_pro_tip",
+            "video_id": "44ifmL6JCs8",
+            "title": "Generative Engine Optimization: The 5-Part GEO Playbook",
+            "channel": "Da Hoang",
+            "author": "Da Hoang",
+            "text": "Map the questions. Answer first. Make it machine-readable. Earn the mentions. Track your share of AI voice.",
+            "tip": "Map the questions. Answer first. Make it machine-readable. Earn the mentions. Track your share of AI voice.",
+            "timestamp": 222,
+            "timestamp_seconds": 222,
+            "timestamp_label": "[00:03:42]",
+            "url": "https://www.youtube.com/watch?v=44ifmL6JCs8&t=222s",
+            "markdown": "[00:03:42](https://www.youtube.com/watch?v=44ifmL6JCs8&t=222s)",
+            "epistemic_status": "attributed_practitioner_claim",
+            "relevance": "Verbatim practitioner testimony from Chapter Q6.",
+        },
+    ],
 }
-
-CHAPTER_6["sections"][0]["paragraphs"].append(
-    "Make qualification mechanical enough that a contractor can repeat it without inventing demand. For each query, record the implied purchase, the obstacle preventing action, the page needed to remove that obstacle, and the program that can legitimately fulfill it. A comparison deserves measured differences; a migration deserves an export checklist, implementation effort, and known limitations. Cancellation deserves the actual cancellation instructions before any alternative recommendation. Use the twelve signals as evidence categories rather than a magical weighted score. Several signals may describe the same underlying demand and should not be counted as independent confirmations. Reject an offer when its geography, audience restrictions, or payable event does not match the query. Save the rejection reason. That small discipline prevents a later researcher from reviving a large advertised payout whose terms make your intended traffic worthless in practice."
-)
-CHAPTER_6["sections"].append({
-    "heading": "3. Secure terms and negotiate from accepted cohorts",
-    "epistemic_status": "operating_framework",
-    "paragraphs": [
-        "An affiliate manager needs a distribution plan they can evaluate, not a promise of unlimited traffic. Send the exact page concept, intended search themes, audience location, acquisition channel, and a sample disclosure. Ask whether paid search, competitor keywords, brand bidding, bridge pages, and recruiting traffic are permitted separately; permission for one does not establish permission for another. Request the payable event definition, attribution window, duplicate rules, existing customer exclusions, reversal reasons, reporting delay, and payment schedule. Save the written answer beside the offer record. A recruiting offer may require a completed qualified application rather than a form submission, while software may pay only after a trial becomes a paying account. Compare those events before ranking commissions. If the manager cannot explain acceptance, run no financial forecast that quietly treats every submitted lead as earned revenue or available operating cash.",
-        "Use a private twenty five percent CPA increase as a negotiated change in price, not a substitute for fixing traffic quality. First reconcile a mature cohort: clicks, submitted events, accepted events, rejected events, reversals, and paid commissions. Ask the manager to confirm downstream quality without requesting personal applicant or customer records. Then propose a bounded test with a named effective date, eligible channel, volume range, and review date. Clarify whether the increase applies prospectively, retroactively, or only above a threshold. A move from $100 to $125 is a twenty five percent increase; an extra twenty five percentage points of revenue share is a different deal. Do not count the higher rate until it is confirmed in writing and appears correctly in reporting. Retain the original rate as the downside case when deciding whether additional traffic is affordable.",
-        "The outreach scripts below are templates with explicit placeholders, not invented performance evidence. Replace every bracket with a verified fact or leave the claim out. A new publisher can sell a narrow, useful execution plan without pretending to have existing volume. An established publisher should distinguish submitted leads from accepted payable events and identify the cohort's maturity date. Refusal is useful information: ask whether the constraint is quality, channel policy, economics, or capacity, then adapt only where your operation can actually improve. Never imply that a competitor has offered a higher rate unless that offer exists. Maintain a second suitable merchant so a rate negotiation does not turn your editorial recommendation into hostage bargaining. The buyer still needs the best fit for their task, even when the merchant paying the most is not that fit."
-    ],
-    "table": {
-        "caption": "Verbatim Affiliate Manager Approval & Private 25%-CPA-Bump Negotiation Scripts",
-        "headers": ["Scenario", "Copy-Pasteable Partner-Manager Outreach Script", "Required Written Record"],
-        "rows": [
-            ["1. Initial B2B Program Approval", "Hi [Name] — we operate [Domain], an independent B2B fee calculator & migration desk for [10-150 seat buyers]. Live sample: [URL]. We drive US commercial comparison search + screen-recorded YouTube walkthroughs (zero coupon toolbars, zero unauthorized TM bidding). Could you approve Partner ID [#] and confirm S2S postback support (`ps_xid`/`subId1`) plus any CRM-dedupe exclusions?", "Written channel approval, S2S parameter spec & CRM-dedupe rules"],
-            ["2. Competitor-Comparison Search Clearance", "Hi [Name] — before we launch exact-match Google/Bing campaigns on `[Incumbent] pricing calculator` and `[Incumbent] vs [Your Brand]` routing through our disclosed comparison matrix at [URL], please confirm in writing: (a) non-brand & competitor comparison search is permitted, and (b) whether you offer a written TM+ co-bidding schedule or require `[Your Brand]` in account-level negatives.", "Signed keyword scope or written negative-keyword confirmation"],
-            ["3. Authorized XML Job-Feed Onboarding", "Hi [Name] — we enrich direct employer XML feeds on [Domain] with verified salary, shift, and bonus-eligibility tables for [CDL / RN segment]. May we ingest feed [URL] refreshing every [6h], and please confirm the exact billable CPA event (completed application vs verified interview), duplicate window, and closed-requisition suppression SLA.", "Written XML republication license, billable event & dedupe window"],
-            ["4. Mature-Cohort 25% Private CPA Bump", "Hi [Name] — our [Dates] cohort delivered [18] accepted [SQL demos / funded accounts] with only [1] duplicate scrub ([94.7%] acceptance) from our switching calculator. At our current [$400] CPA, paid search bids cap out at Position 3. Can we step to a private [$500] CPA (+25%) effective [Date] so we can move to top-of-page share and target [35+] accepted accounts/month?", "Updated IO / PartnerStack tier confirmation with effective date"],
-            ["5. Volume-Tiered Step-Up Counteroffer", "Understood if flat [$500] requires VP sign-off—would you approve a 30-day performance tier: [$400] baseline on conversions 1-9, stepping to [$500] (retroactive across the month's accepted cohort) whenever we clear >=10 accepted conversions with >=85% post-lock retention? Happy to share weekly subID quality readouts.", "Written volume-tier schedule specifying retroactive vs marginal math"]
-        ]
-    },
-    "sop_steps": [
-        {"step": 1, "title": "Specify", "action": "Send the acquisition plan.", "detail": "Name pages, channels, geography, and payable event."},
-        {"step": 2, "title": "Document", "action": "Save written terms.", "detail": "Include attribution, exclusions, reversals, and payment timing."},
-        {"step": 3, "title": "Reconcile", "action": "Match mature cohort totals.", "detail": "Separate submitted, accepted, reversed, and paid events."},
-        {"step": 4, "title": "Negotiate", "action": "Propose a bounded 25% CPA test.", "detail": "Confirm effective dates and eligible traffic before forecasting."}
-    ]
-})
-
-CHAPTER_6["sections"][0]["paragraphs"].append(
-    "Model six to sixteen percent click to lead or trial as an experiment range for commercial investigation traffic, not a forecast inherited from the category. Define the click as an outbound affiliate click before comparing cohorts. At one hundred outbound clicks, that range implies six to sixteen submissions, not six to sixteen commissions. Approval, activation, purchase, and retention may still intervene. Track a separate bridge page outbound rate so the purchased visit economics remain visible. The best starting query is therefore not necessarily the one with the highest response rate: it is the one with affordable acquisition, a relevant offer, an observable payable event, and tolerable reversal exposure. Choose two tightly related query clusters for the first test. Keep device, geography, and landing page consistent enough that a difference in results can guide a real operating decision."
-)
-CHAPTER_6["sections"][1]["paragraphs"].extend([
-    "The play competitor_intent_comparison_hijacking means earning attention with a better answer, not impersonating an incumbent. Build a dated calculator for [Software] pricing calculator, a substantiated [Vendor] vs [Vendor] comparison, or a practical guide for how to switch from [Incumbent]. Show seat counts, currency, billing cycle, mandatory fees, and the date each price was checked. Distinguish published terms from estimates and link the underlying merchant pages. Explain migration limitations instead of implying every workflow transfers automatically. Use competitor names only as needed to identify the comparison, avoid confusing branding, and never imply sponsorship. Nominative fair use is context dependent, not an automatic shield; section 1125(a) addresses false association and misleading representations. Put a clear affiliate relationship disclosure near the recommendation, consistent with the endorsement guides, rather than hiding the financial connection in a remote page footer.",
-    "For job_board_xml_feed_programmatic_arbitrage, start with legitimate employer feeds and explicit republication rights. Preserve employer identifiers and stable job IDs; enrich salary, location, shift, licensing, and bonus eligibility only from reliable authorized data. A CDL sign on bonus may require a specific license class, driving history, and repayment commitment. A travel nurse bonus may depend on specialty, contract duration, start date, and completed hours. State those conditions without turning maximum possible compensation into a universal salary promise. Refresh on the employer's schedule, display verification dates, deduplicate listings, and remove closed jobs promptly. If a feed fails, suspend uncertain inventory rather than silently treating yesterday's vacancy as live. Unique useful context can improve the application experience; thousands of thin pages cannot repair inaccurate inventory. Section 45 makes deceptive commercial claims relevant to this model even when the misleading data originated upstream."
-])
-CHAPTER_6["sections"].append({
-    "heading": "4. Run a bounded search and bridge page experiment",
-    "epistemic_status": "illustrative_model",
-    "paragraphs": [
-        "Give the first seven days a narrow job: verify tracking, measure intent, and reject obvious mismatches. They are not enough to establish mature earnings when acceptance takes weeks. Set an affordable loss limit before launch and stop purchasing traffic when that limit is reached, even if the account has not produced a statistically satisfying story. Use exact and phrase matching initially, inspect actual search terms, and exclude irrelevant research, unsupported locations, and unavailable services. Keep one main buyer action on the bridge page alongside the comparison information required to make it useful. Tag each query cluster and page version with program supported subidentifiers. Do not place personal information in tracking parameters. Compare purchased visits, outbound clicks, submitted events, and accepted events daily, preserving the cohort's original acquisition date rather than moving old conversions into today's apparent performance.",
-        "Diagnose the weakest transition before changing the payout assumption. Cheap visits with few outbound clicks usually indicate a mismatch between the query and the page's answer. Strong outbound activity with few submissions can indicate merchant friction or an unsuitable offer. Many submissions with low acceptance suggest qualification problems, duplicate users, or a misunderstood payable event. None of these diagnoses is certain from a tiny sample, so inspect the actual page and terms before declaring a cause. Pause a broken destination immediately; otherwise change one meaningful variable per new cohort. Keep a simple reconciliation sheet that separates pending amounts from earned commissions and cash received. A delayed report is not evidence of zero eventual value, but pending amounts cannot fund today's advertising bill. The operator's advantage is a disciplined feedback loop, not the willingness to keep spending until a favorable dashboard appears."
-    ],
-    "callout": {
-        "kind": "OPERATOR GATE", "title": "Spend only against observable economics",
-        "body": "Resume a paused experiment only after its specific failure is corrected; do not manufacture certainty from a small cohort.",
-        "items": ["Tracking resolves to the correct offer.", "Traffic permissions cover the actual channel.", "Inventory and comparison claims remain current.", "Loss limit and pending commission exposure are recorded."]
-    },
-    "table": {
-        "caption": "Forensic Sourcing & Bridge-Funnel Failure Patterns",
-        "headers": ["Naive Beginner Trap", "Forensic Detection Metric", "Durable Operator Fallback"],
-        "rows": [
-            ["Treating 30-day competitor Ad Library longevity as guaranteed profit", "Zero internal post-scrub Net EPC cohort data in your own account", "Run a hard-capped $300-$500 exact-match validation test before cloning"],
-            ["Counting free-trial or raw lead submissions as earned commission revenue", "Accepted-and-settled conversions divided by raw submitted trials/leads", "Underwrite media bids strictly on post-lock merchant-accepted events"],
-            ["Chasing $0.08 curiosity clicks that bounce off B2B pricing bridges", "Settled net commission per purchased landing visit (`Net EPV`)", "Buy narrower `[Vendor] pricing` / `alternative` intent and align bridge copy"],
-            ["Publishing 50,000 stale or duplicate XML job-board pages for volume", "Expired-listing bounce rate and Google Search Console excluded-URL ratio", "Sync authorized employer feeds hourly, deduplicate IDs, and 410 closed roles"],
-            ["Routing 100% of clicks to the highest-headline-CPA unvetted merchant", "Fully loaded cohort contribution after 60-day scrubs and payment lag", "Split-test 2 vetted merchants on identical traffic and route by settled Net EPC"]
-        ]
-    }
-})
-
-CHAPTER_6["sections"][3]["paragraphs"].append(
-    "Read the scorecard as a sequence of evidence collection, not seven promises of success. On the first day, verify links and program reporting using permitted test methods; do not submit fake customer applications. During the next days, inspect query relevance, page behavior, and merchant transitions. By the seventh day, decide whether to stop, repair, or wait for acceptance data before extending spend. The table's example counts describe a single hypothetical cohort whose economics become known only after maturation. If actual acceptance remains pending, label the financial cells pending instead of filling them with the modeled numbers. Keep screenshots or exports of reporting totals with timestamps so later reversals can be reconciled. A winning first week may simply be eliminating an unsuitable offer cheaply while preserving a usable page and a clean measurement process for the next experiment."
-)
-CHAPTER_6["sections"].append({
-    "heading": "5. Translate validated demand into owner economics",
-    "epistemic_status": "illustrative_model",
-    "paragraphs": [
-        "Consider an illustrative cohort of one thousand paid search visits bought at fifty cents each. Half click through to the merchant, producing five hundred outbound affiliate clicks. Ten percent submit a lead or trial, inside the modeled six to sixteen percent range, so submissions total fifty. Suppose twenty ultimately qualify for a $100 commission, and two subsequently reverse. Earned commissions net of reversals equal $1,800, or $3.60 per outbound click and $1.80 per purchased visit. Traffic costs $500; allocated content, tooling, and labor cost another $700. The resulting $600 contribution is not automatically owner profit because unallocated overhead and financing costs may remain. Merchant GMV is neither $1,800 nor inferable from the CPA alone. Record it separately only when the merchant supplies attributable transaction value. This example demonstrates the arithmetic, not a measured campaign result or an attainable acquisition price.",
-        "A confirmed move from $100 to $125 CPA would raise the same eighteen retained payable events from $1,800 to $2,250, adding $450 before additional costs. It does not improve the page's response rate or erase rejected leads. Keep volume, acceptance, and reversals constant when isolating the payout effect; then model those assumptions separately when considering expansion. At $1,200 of cohort costs, the original eighteen events require $66.67 each to break even before any remaining overhead. A higher bid can quickly consume the negotiated benefit. Set the next cohort's budget from conservative accepted economics rather than the largest visible payout. Maintain working capital for the gap between paying for traffic and receiving commissions. A merchant can report an earned balance while withholding cash until a threshold, payment date, or review period, so the cash forecast needs its own dated schedule.",
-        "Candidate #24's annual scenarios are targets for operating design, not extrapolations from one seven day experiment. Conservative means $50,000 gross earned commissions net of reversals at twenty percent margin, leaving $10,000 owner net profit with one full time operator and two contractors. Base means $325,000 at thirty five percent, leaving $113,750 with the same staffing labels. Scaled means $600,000 at fifty percent, leaving $300,000 with two full time operators and three contractors. FT and C are staffing descriptors, not salary assumptions; the table's cost envelopes must fund actual traffic, content, tooling, labor, and overhead. State whether owner compensation and taxes are included before treating the residual as spendable income. Increase capacity only after mature cohorts support those envelopes and supplier concentration is manageable. Merchant sales volume remains separate in every scenario, regardless of how impressive the referred purchase totals look."
-    ],
-    "table": {
-        "caption": "7-Day Paid-Search & Bridge-Page Validation Scorecard",
-        "headers": ["Day / Window", "Validation Milestone", "Illustrative Cohort Telemetry", "Mandatory Operator Gate Decision"],
-        "rows": [
-            ["Day 1", "S2S `click_id` & written terms check", "Synthetic round-trip verified; $500 hard spend cap armed", "Block live media spend until `sub1` echoes in partner portal"],
-            ["Day 2", "Search-term intent & negative audit", "2 exact BOFU `[Vendor] pricing` / `vs` clusters inspected", "Add negative keywords for `login`, `jobs`, `free`, and `support`"],
-            ["Day 3", "Bridge calculator outbound CTR check", "500 outbound `/go/` clicks from 1,000 visits (50% CTR)", "Rewrite above-the-fold comparison hook if outbound CTR <25%"],
-            ["Day 4", "Merchant trial / demo submission rate", "50 merchant signups from 500 outbound clicks (10% CVR)", "Log as provisional pipeline only; never book trials as revenue"],
-            ["Day 5", "Lock-window & scrub queue inspection", "50 signups held in 30-day partner qualification review", "Freeze cohort acquisition date; do not blend into newer clicks"],
-            ["Day 6", "Pricing table & disclosure freshness check", "Vendor seat tiers, fee dates, and 16 CFR 255 bar audited", "Patch any vendor price change within 24h and log version hash"],
-            ["Day 7", "Pilot cap reached — hold for settlement", "$500 media cap hit; awaiting merchant billing validation", "Pause expansion until lock window closes rather than guessing"],
-            ["Post-Lock (Day 37)", "Net accepted events minus reversals", "20 approved minus 2 reversals = 18 net ($1,800 earned)", "Verified $3.60 outbound Net EPC ($1.80 Net EPV per visit)"],
-            ["Cohort P&L Close", "Media + allocated content/ops bridge", "$500 Google Ads + $700 content/QA/tools = $1,200 total cost", "+$600 net cohort contribution (33.3% pre-overhead margin)"],
-            ["Written +25% Bump", "18 retained events repriced at $125 CPA", "$2,250 net earned; +$1,050 contribution at constant volume", "Authorize +20% weekly budget step-up with 2nd fallback offer"]
-        ]
-    }
-})
-CHAPTER_6["sections"][4]["tables"] = [
-    CHAPTER_6["sections"][4].pop("table"),
-    {
-        "caption": "Candidate #24 Annual Operating Envelopes (Merchant GMV Excluded Off-Ledger)",
-        "headers": ["Scenario", "Gross Earned Commissions (Net)", "All-In Cost Envelope", "Margin", "Owner Net Profit", "Staffing", "Primary Demand & Portfolio Rule"],
-        "rows": [
-            ["Conservative", "$50,000", "$40,000", "20%", "$10,000", "1 FT + 2 C", "1 narrow BOFU niche; 3 competing offers; prove settled Net EPC"],
-            ["Base", "$325,000", "$211,250", "35%", "$113,750", "1 FT + 2 C", "25+ BOFU comparison assets + YouTube + private CPA bumps; <=25% cap"],
-            ["Scaled", "$600,000", "$300,000", "50%", "$300,000", "2 FT + 3 C", "Compounding recurring SaaS book + owned newsletter capture across 3-5 hubs"]
-        ]
-    },
-]
-CHAPTER_6["statutory_citations"][0]["url"] = "https://uscode.house.gov/view.xhtml?req=granuleid:USC-prelim-title15-section1125&num=0&edition=prelim"
-CHAPTER_6["statutory_citations"][2]["url"] = "https://uscode.house.gov/view.xhtml?req=granuleid:USC-prelim-title15-section45&num=0&edition=prelim"

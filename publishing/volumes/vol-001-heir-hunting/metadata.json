@@ -8,49 +8,49 @@
       "HUNTING"
     ],
     "deck": [
-      "FIND THE ASSET. TRACE THE HEIR.",
-      "UNDERSTAND THE PROCESS."
+      "TEST FAMILY LINKS, IDENTITIES, AND POSSIBLE PRIOR HEIRS",
+      "BUILD SOURCED FAMILY TREES AND DOCUMENTED BENEFICIARY SEARCHES"
     ],
-    "lead": "A field manual for the intersection of unclaimed assets, family research, and careful casework.",
-    "summary": "From the first lead to a documented claim: a practical editorial framework for understanding the business without confusing practitioner experience with legal authority.",
+    "lead": "Follow practitioners as they trace living relatives through family trees, newspapers, and vital records, test competing identities, and document the kinship behind inheritance searches.",
+    "summary": "All 12 chapters synthesize 192 verbatim YouTube practitioner testimonies with timestamped inline attribution. Practitioners describe relationship checks, missing-beneficiary searches, research documentation, fee arrangements, and cases where newly discovered wills or closer relatives changed the outcome.",
     "chapters": [
-      "The business model",
-      "Jurisdiction & compliance",
-      "Finding unclaimed assets",
-      "Qualifying a lead",
-      "Genealogy & heir tracing",
-      "Evidence & documentation",
-      "Ethical first contact",
-      "Agreements & fee limits",
-      "Building the claim file",
-      "Submission & follow-up",
-      "Payment & case closure",
-      "Systems for a small team"
+      "The Heir-Hunting Profession: Services, Fees, and Cases",
+      "Tracing Descendants Through Family Trees, Newspapers, and Vital Records",
+      "Find Probate Files Beyond the Name Index",
+      "Read Wills, Estate Files, and Probate Procedures",
+      "Resolve Conflicting Evidence and Uncertain Identities",
+      "Genealogical Sources, Research Documentation, and Digital Record Tools",
+      "Prepare Deceased-Owner and Unclaimed-Property Claims",
+      "Surplus & Unclaimed Funds Recovery: County Expertise, State Registration & Business Operations",
+      "Source Probate Leads and Build Outreach",
+      "Find Missing Owners and Work Curative-Title Deals",
+      "Heirs' Property, Tangled Title, and Ownership Checks",
+      "Property Data, Ownership Research & Genealogy"
     ],
     "flow": [
       [
-        "DISCOVER",
-        "Source an asset lead"
+        "ASSESS THE CASE",
+        "Run preliminary research to assess the fit with your skills; check available funds and other claimants before extending fieldwork."
       ],
       [
-        "SCREEN",
-        "Verify local rules"
+        "GATHER FAMILY EVIDENCE",
+        "Start with known relationships, existing sources, family photographs, and inherited papers; search locality-specific catalogs, newspapers, and vital records."
       ],
       [
-        "RESEARCH",
-        "Trace & verify heirs"
+        "TRACE EACH GENERATION",
+        "Build sourced parent-child links and follow whole families, including siblings and unmarried relatives; read multiple obituary versions for additional leads."
       ],
       [
-        "ENGAGE",
-        "Contact & agree terms"
+        "TEST IDENTITY AND KINSHIP",
+        "Distinguish same-named households and biological, foster, step, and half relationships; use PBI’s two-source relationship check and second-reviewer approach."
       ],
       [
-        "DOCUMENT",
-        "Prepare & file claim"
+        "CHECK ENTITLEMENT AND CONTACT",
+        "Investigate wills and possible closer relatives before treating a wider family as entitled; pursue contact through existing numbers, relatives, and field visits, and verify suspicious letters independently."
       ],
       [
-        "RESOLVE",
-        "Track, reconcile, close"
+        "DOCUMENT THE SEARCH",
+        "Record sources, negative findings, unresolved relationships, and contact efforts; use reusable report and citation templates to prepare documented findings."
       ]
     ]
   },
@@ -58,10 +58,10 @@
   "book_series": "THE BIG MONEY PLAYBOOKS",
   "tagline": "Big Money. Small Teams. No Bullshit.",
   "title": "HEIR HUNTING",
-  "subtitle": "The Complete Playbook for Finding Missing Heirs, Researching Unclaimed Estates & Building a Probate Research Business",
+  "subtitle": "Trace the Family, Prove the Heir, Verify the Assets — Documented Kinship, Probate Discovery, Recovery Claims, and Curative Title",
   "chapter_count": 12,
-  "total_word_count": 48637,
-  "expert_youtube_link_count": 201,
+  "total_word_count": 67398,
+  "expert_youtube_link_count": 192,
   "min_expert_youtube_links_required": 150,
   "target_expert_youtube_links": "150-200+",
   "min_expert_youtube_links_per_chapter": 12,
@@ -76,5 +76,5 @@
   "publication_status": "approved_master",
   "public_deploy_approved": false,
   "paid_sales_approved": false,
-  "updated_at": "2026-11-23T22:47:57Z"
+  "updated_at": "2026-11-24T15:53:32Z"
 }

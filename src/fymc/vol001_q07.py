@@ -1,0 +1,1057 @@
+from __future__ import annotations
+
+CHAPTER_7 = {
+    "id": "Q7",
+    "chapter_id": "Q7",
+    "chapter_number": 7,
+    "question_number": 7,
+    "slug": "prepare-deceased-owner-and-unclaimed-property-claims",
+    "question_prompt": "How do I work deceased-owner and unclaimed-property claims, assemble the requested documents, and follow the state claim processes demonstrated in these videos?",
+    "kicker": "Q7 / THE BIG MONEY PLAYBOOKS",
+    "title": "Prepare Deceased-Owner and Unclaimed-Property Claims",
+    "subtitle": "California investigations, Probate Code 13101 declarations, tables of heirship, client document collection, Michigan and Pennsylvania filing tutorials, Ohio documentation and deadline guidance, and California surplus-claim case studies",
+    "layout_template": "thirty_day_roadmap",
+    "reading_time_minutes": 15,
+    "executive_summary": (
+        "Eric Richardson, David Church, and state claims teams converge on document-driven recovery: "
+        "identify the owner, establish the claimant's relationship, collect the requested evidence, and "
+        "finish submission rather than stopping at a search result. Richardson reports a $210,404.44 "
+        "California heir recovery at a 25% success fee after nine months. California's declaration and "
+        "heirship tutorials explain distinct forms; Michigan, Pennsylvania, and Ohio demonstrate their "
+        "own filing sequences. The alternatives matter: Church favors complete document bundles, while "
+        "Ohio invites claimants to submit available evidence and work with examiners. A California "
+        "investigator questions the economics of a 10% recovery business. Ohio's February 2026 webinar "
+        "also replaces the older forever-holding message with HB 96 deadline guidance and a higher "
+        "notarization threshold."
+    ),
+    "key_metrics": [
+        {
+            "label": "California mortgage-heir recovery",
+            "metric": "California mortgage-heir recovery",
+            "value": "$210,404.44",
+            "confidence": "attributed_practitioner_claim",
+            "context": (
+                "Eric Richardson reports this exact recovery and a 25% success fee, "
+                "describing the fee as over $52,000."
+            ),
+            "source": "Money Making Juggernaut ([MiiGrCZZAZk @ 00:05:06])",
+        },
+        {
+            "label": "California investigator fee ceiling",
+            "metric": "California investigator fee ceiling",
+            "value": "Up to 10%",
+            "confidence": "attributed_practitioner_claim",
+            "context": (
+                "The investigator describes this fee for California Controller-held unclaimed "
+                "property, with roughly three or four paperwork pages and about six months of waiting."
+            ),
+            "source": "Security and Investigations Leadership Channel ([nI1xm6ZA2qo @ 00:01:43])",
+        },
+        {
+            "label": "Ohio updated notarization threshold",
+            "metric": "Ohio updated notarization threshold",
+            "value": "Over $3,000 total claimed",
+            "confidence": "attributed_practitioner_claim",
+            "context": (
+                "Ohio's February 2026 webinar says the notarization threshold was increased "
+                "and applies to the total amount being claimed."
+            ),
+            "source": "ohiocommerce ([8nmo4S1v3Co @ 00:07:17])",
+        },
+        {
+            "label": "Ohio February 2026 processing queue",
+            "metric": "Ohio February 2026 processing queue",
+            "value": "48,000 claims",
+            "confidence": "attributed_practitioner_claim",
+            "context": (
+                "The presenters report this waiting queue after describing an increase "
+                "of over 400% in people reaching out and starting claims."
+            ),
+            "source": "ohiocommerce ([8nmo4S1v3Co @ 00:10:52])",
+        },
+    ],
+    "sections": [
+        {
+            "id": "practitioner-consensus",
+            "title": "The Practitioner Consensus",
+            "paragraphs": [
+                (
+                    "The common starting point is not a surname match; it is evidence connecting a person "
+                    "to the money. Eric Richardson starts deceased-owner work by verifying death, then "
+                    "searching for an obituary and matching its relatives against skip-tracing results "
+                    "when several people share a name. Their example of a generic John Smith search is "
+                    "explicitly a reason to cross-reference rather than grab the first obituary. The "
+                    "California investigator describes the same identity problem from a failed recovery: "
+                    "a client could establish their identity but could not establish that they had worked "
+                    "for the employer associated with the funds, and eventually abandoned the claim. "
+                    "Ohio's documentation team draws the same distinction between knowing someone's name "
+                    "and establishing ownership. The team asks for identification plus a reported address "
+                    "or business relationship, explaining that holders sometimes supply an address rather "
+                    "than a Social Security number. For a deceased relative, Ohio still wants evidence "
+                    "that the deceased person owned the funds before moving to the claimant's relationship. "
+                    "Richardson's obituary work, the investigator's employment problem, and Ohio's ownership "
+                    "documents therefore address different parts of the same identification job: the "
+                    "deceased owner, the particular asset, and the person seeking payment. "
+                    "[l8J2d1WwudY @ 00:06:03] [nI1xm6ZA2qo @ 00:06:21] "
+                    "[dFKMkAIKskU @ 00:00:21] [dFKMkAIKskU @ 00:04:44]"
+                ),
+                (
+                    "Family reconstruction is another point of agreement, but the speakers make it concrete "
+                    "rather than treating 'heir' as a sufficient description. Richardson asks the contact's "
+                    "relationship to the deceased owner, whether the owner had children, whether a spouse "
+                    "survives, whether siblings or parents are alive, and whether a will exists. They also "
+                    "ask whether an estate representative has already been appointed; an existing probate "
+                    "process changes what must be assembled next. California's Table of Heirship tutorial "
+                    "describes a specific use: an owner who died intestate, without a will, trust, or other "
+                    "estate plan, where probate was not required. The form records spouses, children, "
+                    "grandchildren, parents, siblings, nieces, and nephews, including living and deceased "
+                    "relatives. Its child and grandchild entries connect each person to a parent rather "
+                    "than leaving a flat list of names. The California investigator explains why missing "
+                    "relatives are not an abstract concern: family members had hired them while knowing "
+                    "about other surviving relatives and wanted the investigation to make their own "
+                    "position appear researched. Richardson's family questions and California's structured "
+                    "table both expose relationships that a single enthusiastic contact may not volunteer. "
+                    "The investigator's response was to ask about other entitled relatives and seek a "
+                    "notarized statement when appropriate. [l8J2d1WwudY @ 00:18:01] "
+                    "[cMCrrRkehJk @ 00:00:19] [nI1xm6ZA2qo @ 00:02:26] "
+                    "[nI1xm6ZA2qo @ 00:03:50]"
+                ),
+                (
+                    "The filing consensus is equally practical: obtain the instructions for the actual "
+                    "claim, then deliver the evidence those instructions request. Richardson rejects the "
+                    "idea that a purchased generic surplus packet works everywhere. Their document lesson "
+                    "distinguishes tax overages from mortgage surplus, emailed copies from mailed originals, "
+                    "and counties with claim forms from counties requiring a motion. David Church reaches "
+                    "the same document-first position through client collection: after receiving papers "
+                    "piecemeal through mail and email, they began sending a checklist and coordinating "
+                    "collection with the notary. State portals reinforce the need to finish the paperwork "
+                    "after selecting property. Michael Curtis walks through Michigan's claimant relationship "
+                    "selection and required contact fields, warning that omitted required information "
+                    "prevents submission. Pennsylvania Treasury then adds a separate branch: some online "
+                    "claims can proceed without a paper claim form, but a presented PDF means a paper form "
+                    "is required and must be completed, signed, and uploaded or mailed. These are not "
+                    "interchangeable packets. Richardson's county instructions define the surplus submission, "
+                    "Church's checklist organizes the client's return, and the Michigan and Pennsylvania "
+                    "screens determine what their particular state filing still needs. Selecting a property "
+                    "is only one part of the work each speaker demonstrates. "
+                    "[MVCNlj7HQBQ @ 00:01:52] [1AMk1-SB5ic @ 00:00:27] "
+                    "[Fn04U_Yfuzg @ 00:03:44] [eRjGqaIOHWI @ 00:05:44]"
+                ),
+            ],
+            "table": {
+                "caption": "The evidence and relationship checks the speakers repeatedly put before payment.",
+                "headers": [
+                    "Claim Preparation Issue",
+                    "Practitioner Method and Baseline Requirement",
+                    "Expert Source",
+                ],
+                "rows": [
+                    [
+                        "A deceased owner's common name produces several possible obituary matches",
+                        "Match relatives from the obituary against relatives returned by skip tracing.",
+                        "Money Making Juggernaut ([l8J2d1WwudY @ 00:06:40])",
+                    ],
+                    [
+                        "The claimant can prove identity but not the underlying employment relationship",
+                        "The investigator reports abandonment after the client could not prove employment.",
+                        "Security and Investigations Leadership Channel ([nI1xm6ZA2qo @ 00:06:21])",
+                    ],
+                    [
+                        "An intestate owner's family must be described beyond the first contact",
+                        "California's table records the deceased owner's family for determining funds distribution.",
+                        "California State Controller's Office ([cMCrrRkehJk @ 00:00:19])",
+                    ],
+                    [
+                        "A surplus packet must fit the county and the foreclosure type",
+                        "Retrieve that county's claim form and instructions before preparing the submission.",
+                        "Money Making Juggernaut ([MVCNlj7HQBQ @ 00:02:42])",
+                    ],
+                    [
+                        "Client documents arrive separately and become difficult to organize into claims",
+                        "Church sends a checklist and has the notary collect the requested documents.",
+                        "Surplus Institute / David Church / Unclaimed Funds ([1AMk1-SB5ic @ 00:00:27])",
+                    ],
+                    [
+                        "An online filing produces a PDF rather than eliminating paper requirements",
+                        "Complete and sign the generated Pennsylvania form, then upload or mail it.",
+                        "PA Treasury Department ([eRjGqaIOHWI @ 00:06:02])",
+                    ],
+                ],
+            },
+        },
+        {
+            "id": "street-mechanics",
+            "title": "Exact Street Mechanics, Tools & Numbers",
+            "paragraphs": [
+                (
+                    "California's two heir forms have different instructions, including different handling "
+                    "of property identifiers. For the Declaration Under Probate Code 13101, the Controller's "
+                    "Office directs the claimant to enter the deceased owner's name, place of death, and "
+                    "date of death from the death certificate. Section 3 distinguishes the absence of "
+                    "California estate proceedings and appointed representatives from written consent by "
+                    "the personal representative. Section 5 requires every Property ID being claimed; "
+                    "an attached list is allowed, but a Claim ID is not acceptable there. Section 6 "
+                    "distinguishes a beneficiary or direct relative from someone acting in a listed "
+                    "representative capacity. The claimant signs, prints their name, and dates the "
+                    "declaration; the tutorial says no notary is required. The Table of Heirship, by "
+                    "contrast, asks for one Property ID when multiple properties are involved, followed "
+                    "by the family entries; additional names can go on another table. Emend The Mass "
+                    "Media Group demonstrates the surrounding portal sequence: choose the claimant "
+                    "relationship, enter contact information, answer the finder question, sign electronically, "
+                    "and upload documents. Their demonstration ends with a documentation confirmation and "
+                    "a separate status lookup using the Claim ID. The forms' Property IDs and the "
+                    "portal's tracking identifier serve different tasks. [1ahhduhMdd0 @ 00:00:35] "
+                    "[1ahhduhMdd0 @ 00:01:25] [cMCrrRkehJk @ 00:00:42] "
+                    "[ijLtjR0tTd8 @ 00:10:45]"
+                ),
+                (
+                    "Richardson's document lesson separates authority to act from proof that the funds "
+                    "belong to the client. Their authority stack starts with a signed contingency "
+                    "agreement, then an assignment of interest or limited power of attorney, with the "
+                    "property address and case number included where requested. They also describe a "
+                    "free-self-claim disclosure and payment directional letter. The ownership stack "
+                    "includes a certified recorded deed, current government photo identification, "
+                    "documents connecting changed names, the county's current claim form, and potentially "
+                    "a W-9. Richardson also identifies the sale date, sale amount, case number, and "
+                    "proof that surplus exists as the anchors of the file. For deceased-owner work, "
+                    "their lesson adds a death certificate and evidence of heirship or estate authority. "
+                    "Church supplies the collection mechanics: send the actual checklist, tell the "
+                    "notary what to collect, and return the package in a FedEx envelope rather than "
+                    "letting separate pieces drift through different channels. Richardson's earlier "
+                    "deceased-claims training demonstrates Vital Check for a missing death certificate, "
+                    "using the death location and date and keeping the family member available for "
+                    "identity questions. They report certificate costs around $10 to $30, sometimes "
+                    "$50, rather than presenting document retrieval as costless. "
+                    "[MVCNlj7HQBQ @ 00:05:12] [MVCNlj7HQBQ @ 00:08:19] "
+                    "[1AMk1-SB5ic @ 00:00:56] [l8J2d1WwudY @ 00:24:10]"
+                ),
+                (
+                    "The state demonstrations make submission a sequence of screens and decisions, not "
+                    "a single search. Curtis starts Michigan with a last-name search, selects a property, "
+                    "chooses the claimant relationship, and fills the required contact and identifying "
+                    "fields before previewing and submitting the claim. Pennsylvania Treasury starts "
+                    "with a last or company name containing at least two characters and suggests a "
+                    "last name plus first initial for a broader search. Its direct-deposit route adds "
+                    "account registration, email confirmation, and login. The presenter says a Social "
+                    "Security number is required for ACH and that omitting it removes eligibility "
+                    "for automated approval. The bank section asks for routing number, account number, "
+                    "and checking or savings selection. Ohio's live demonstration then shows the "
+                    "post-search work: the confirmation creates a claim form, the email supplies the "
+                    "Claim ID, and the claimant uses that identifier for document upload and status "
+                    "checks. Marlene Chukes says the uploader accepts five documents and can be used "
+                    "again, or scans can be combined. Ohio's February 2026 webinar asks for unexpired "
+                    "identification, Social Security evidence, proof of the reported address, and a "
+                    "W-9; the address is not automatically the claimant's current residence. "
+                    "[Fn04U_Yfuzg @ 00:03:44] [eRjGqaIOHWI @ 00:01:06] "
+                    "[o1cc3hUtIv4 @ 00:09:10] [8nmo4S1v3Co @ 00:19:31]"
+                ),
+            ],
+            "table": {
+                "caption": "Form fields, submission routes, and reported recovery economics.",
+                "headers": [
+                    "Task or Reported Deal",
+                    "Exact Execution Detail or Stated Number",
+                    "Expert Source",
+                ],
+                "rows": [
+                    [
+                        "Populate California declaration Section 5 with the correct property identifiers",
+                        "List every Property ID; attach a list rather than substituting the Claim ID.",
+                        "California State Controller's Office ([1ahhduhMdd0 @ 00:01:25])",
+                    ],
+                    [
+                        "Record the family on California's separate Table of Heirship form",
+                        "Use one Property ID for multiple properties and record the deceased owner's name.",
+                        "California State Controller's Office ([cMCrrRkehJk @ 00:00:42])",
+                    ],
+                    [
+                        "Complete the California portal's document submission and retain its confirmation",
+                        "Submit uploaded files, receive the documentation identifier, and then check claim status.",
+                        "Emend The Mass Media Group ([ijLtjR0tTd8 @ 00:15:22])",
+                    ],
+                    [
+                        "Assemble the client's requested papers into a coordinated return package",
+                        "Church asks the notary to gather everything and send a FedEx envelope.",
+                        "Surplus Institute / David Church / Unclaimed Funds ([1AMk1-SB5ic @ 00:00:56])",
+                    ],
+                    [
+                        "Richardson's California mortgage-heir case produced a specific recovered principal amount",
+                        "They report $210,404.44 recovered and a 25% success fee exceeding $52,000.",
+                        "Money Making Juggernaut ([MiiGrCZZAZk @ 00:05:06])",
+                    ],
+                    [
+                        "Richardson's Amador tax-sale case used county instructions and a different fee",
+                        "They report $25,898 received from the county and a 30% success fee.",
+                        "Money Making Juggernaut ([4-lZwuXtY6Y @ 00:00:00]; [4-lZwuXtY6Y @ 00:00:37])",
+                    ],
+                ],
+            },
+            "callout": {
+                "kind": "INSIDER PRO-TIPS",
+                "title": "Small document details the speakers make explicit",
+                "body": (
+                    "Use the speakers' form-specific distinctions, collection methods, and upload "
+                    "habits rather than treating every claim as the same packet."
+                ),
+                "items": [
+                    (
+                        "Keep California's identifiers straight: declaration Section 5 takes Property "
+                        "IDs, not the Claim ID, and an attached property list is allowed. "
+                        "[California State Controller's Office — 1ahhduhMdd0 @ 00:01:25]"
+                    ),
+                    (
+                        "Ask the notary to collect every item on the client checklist and return the "
+                        "documents together in a FedEx envelope, as Church does. "
+                        "[Surplus Institute / David Church / Unclaimed Funds — 1AMk1-SB5ic @ 00:00:56]"
+                    ),
+                    (
+                        "Label files before uploading: Ohio's claimant demonstration points out that "
+                        "the uploader asks the claimant to identify each document. "
+                        "[ohiocommerce — 8nmo4S1v3Co @ 00:24:48]"
+                    ),
+                    (
+                        "For a difficult old-address connection, Ohio suggests a BMV transcript, "
+                        "a relevant hospital bill, or a credit report showing address history. "
+                        "[ohiocommerce — dFKMkAIKskU @ 00:03:15]"
+                    ),
+                ],
+            },
+            "sop_steps": [
+                {
+                    "step": 1,
+                    "title": "Identify the owner and reconstruct the family",
+                    "action": "Match death research to the owner, then ask the family questions.",
+                    "detail": (
+                        "Richardson cross-references obituary relatives with skip-tracing relatives "
+                        "and asks about children, surviving spouses, siblings, parents, and a will. "
+                        "[Money Making Juggernaut — l8J2d1WwudY @ 00:06:40] "
+                        "[Money Making Juggernaut — l8J2d1WwudY @ 00:18:01]"
+                    ),
+                },
+                {
+                    "step": 2,
+                    "title": "Obtain the actual claim instructions",
+                    "action": "Retrieve the county instructions or follow the state's claim-specific requirements.",
+                    "detail": (
+                        "Richardson starts with the county's form and instructions and calls the "
+                        "clerk when they cannot be found online. Pennsylvania says generated forms "
+                        "can have different requirements depending on claim type and relationship. "
+                        "[Money Making Juggernaut — MVCNlj7HQBQ @ 00:02:42] "
+                        "[PA Treasury Department — eRjGqaIOHWI @ 00:05:44]"
+                    ),
+                },
+                {
+                    "step": 3,
+                    "title": "Collect the requested evidence together",
+                    "action": "Send a checklist and coordinate the client's document return.",
+                    "detail": (
+                        "Church uses a written checklist and the notary to gather the requested "
+                        "documents in one return package. Ohio's February 2026 checklist names "
+                        "identification, Social Security proof, reported-address proof, and a W-9. "
+                        "[Surplus Institute / David Church / Unclaimed Funds — 1AMk1-SB5ic @ 00:00:39] "
+                        "[ohiocommerce — 8nmo4S1v3Co @ 00:19:31]"
+                    ),
+                },
+                {
+                    "step": 4,
+                    "title": "Submit documents and track the claim",
+                    "action": "Finish the document submission and retain the correct tracking identifier.",
+                    "detail": (
+                        "Ohio requires the correct Claim ID for upload and asks for it twice. "
+                        "Pennsylvania's status lookup uses the ZIP code and Claim ID; signed PDF "
+                        "forms can also be uploaded through its status page. "
+                        "[ohiocommerce — o1cc3hUtIv4 @ 00:11:50] "
+                        "[PA Treasury Department — eRjGqaIOHWI @ 00:06:21]"
+                    ),
+                },
+            ],
+        },
+        {
+            "id": "disagreements-and-alternatives",
+            "title": "Where Practitioners Disagree & Alternative Playbooks",
+            "paragraphs": [
+                (
+                    "The sharpest change is inside Ohio's own guidance. In the older webinar, the "
+                    "presenters say state unclaimed funds remain available forever and reject the "
+                    "suggestion that they eventually move beyond the owner's reach. In the February "
+                    "2026 webinar, Susie Wagner instead describes House Bill 96, says everyone has "
+                    "until 2036, and explains a ten-year period from the reported date, labeled the "
+                    "receive date on the claim form, unless a valid claim has been made. Those "
+                    "messages are materially different; the newer presentation supplies the deadline "
+                    "discussion rather than repeating the older forever language. Notarization also "
+                    "changes: the older webinar describes a threshold over $1,000, while the newer "
+                    "presentation says the total must exceed $3,000. Pennsylvania presents another "
+                    "distinct route rather than an Ohio-style requirement: eligible online claims "
+                    "can avoid a paper claim form, and claimants can choose direct deposit. Its "
+                    "presenter still tells claimants to complete a PDF when one appears. The useful "
+                    "comparison is therefore specific: Ohio changed its stated holding period and "
+                    "notary threshold, while Pennsylvania demonstrates a payment and paperwork branch "
+                    "that depends on eligibility and the screens returned for the claim. Neither "
+                    "presentation describes a universal state filing package. [GrE0UUh_3BI @ 00:21:32] "
+                    "[GrE0UUh_3BI @ 00:29:55] [8nmo4S1v3Co @ 00:07:17] "
+                    "[eRjGqaIOHWI @ 00:00:26]"
+                ),
+                (
+                    "Deceased-owner routing produces a different contrast. Sean Buju of SurplusFundsRiches "
+                    "pushes deed-first investigation instead of immediately chasing an extended family. "
+                    "Their worked example uses Barry and Elizabeth Hurley, joint tenants with "
+                    "survivorship, and compares the death date with the foreclosure date. In Buju's "
+                    "example, a foreclosure before Barry's death leaves heirship work for Barry's "
+                    "portion; a foreclosure after the death lets Elizabeth claim the whole surplus. "
+                    "Buju also makes broad claims about community-property states and directs attention "
+                    "to the administrator when a trust owns the property. Richardson's deceased-claims "
+                    "lesson instead starts with death verification, an obituary, and family questions, "
+                    "then distinguishes full probate, summary administration, and an affidavit of "
+                    "heirship according to the surplus, existing estate documents, and the holder's "
+                    "requirements. Their California mortgage case followed the probate route: the "
+                    "client had no will, trust, or established probate, so the team opened probate "
+                    "and reported a nine-month recovery. These are alternative investigative sequences "
+                    "and different case facts, not two accounts of the same payout. California's "
+                    "Controller tutorial adds another distinct path: the 13101 declaration is used "
+                    "where probate was not required or where the personal representative has provided "
+                    "written consent for the claimant to receive the property. "
+                    "[1N1Z99kUvRw @ 00:03:38] [l8J2d1WwudY @ 00:23:11] "
+                    "[MiiGrCZZAZk @ 00:01:32] [1ahhduhMdd0 @ 00:00:14]"
+                ),
+                (
+                    "Collection strategy and business economics also split. Church wants the whole client "
+                    "package returned together because incomplete files were difficult to put back into "
+                    "their system. They will accept most of the documents when necessary, but explicitly "
+                    "say not to make that the habit. Ohio's older webinar is more willing to start "
+                    "with what a claimant has: send the core identification and tax documents, and "
+                    "a processor can request additional evidence or help investigate an old address. "
+                    "The California investigator questions whether paid searches and postage make sense "
+                    "for their own business when recovery fees are capped at the 10% they describe. "
+                    "They compare hours spent hunting high-value accounts with their stated $70 hourly "
+                    "rate and conclude that other paid work is preferable for them, while acknowledging "
+                    "that other investigators make a living from recovery. Richardson takes the opposite "
+                    "commercial position on their mortgage-heir case: a 25% fee on roughly $210,000 "
+                    "was worth a nine-month wait. Their Amador tax-sale case used a 30% fee and was "
+                    "filed with only a month remaining in the period they describe. The speakers are "
+                    "discussing different funds, fee structures, collection systems, and waiting periods; "
+                    "their reported percentages are not interchangeable pricing instructions. "
+                    "[1AMk1-SB5ic @ 00:01:08] [GrE0UUh_3BI @ 00:11:55] "
+                    "[nI1xm6ZA2qo @ 00:07:49] [MiiGrCZZAZk @ 00:01:13]"
+                ),
+            ],
+            "table": {
+                "caption": "Keep each alternative attached to the process and circumstances its speaker describes.",
+                "headers": [
+                    "Decision or Point of Contrast",
+                    "Side-by-Side Practitioner Positions",
+                    "Expert Source",
+                ],
+                "rows": [
+                    [
+                        "Ohio's stated availability period changes between the two webinar presentations",
+                        "The older webinar says forever; February 2026 introduces HB 96 and ten-year guidance.",
+                        "ohiocommerce ([GrE0UUh_3BI @ 00:21:32]; [8nmo4S1v3Co @ 00:09:15])",
+                    ],
+                    [
+                        "Ohio's notarization threshold also changes between the older and newer presentations",
+                        "The older figure is over $1,000; February 2026 says over $3,000 total.",
+                        "ohiocommerce ([GrE0UUh_3BI @ 00:29:55]; [8nmo4S1v3Co @ 00:07:17])",
+                    ],
+                    [
+                        "The investigator and surplus operator describe different California fee economics",
+                        "The investigator describes up to 10%; Richardson's mortgage-heir contract was 25%.",
+                        "Security and Investigations Leadership Channel ([nI1xm6ZA2qo @ 00:01:43]); Money Making Juggernaut ([MiiGrCZZAZk @ 00:00:52])",
+                    ],
+                    [
+                        "Document collection can prioritize a complete bundle or examiner-assisted completion",
+                        "Church avoids fragmented returns; Ohio invites core documents and subsequent processor questions.",
+                        "Surplus Institute / David Church / Unclaimed Funds ([1AMk1-SB5ic @ 00:01:08]); ohiocommerce ([GrE0UUh_3BI @ 00:11:55])",
+                    ],
+                    [
+                        "A survivorship example and an actual probate recovery follow different routes",
+                        "Buju compares death and foreclosure dates; Richardson reports opening probate for their client.",
+                        "SurplusFundsRiches ([1N1Z99kUvRw @ 00:04:16]); Money Making Juggernaut ([MiiGrCZZAZk @ 00:01:32])",
+                    ],
+                    [
+                        "Notarization instructions differ between the declaration and the investigator's statement",
+                        "California requires no notary on its declaration; the investigator seeks a notarized family statement.",
+                        "California State Controller's Office ([1ahhduhMdd0 @ 00:02:45]); Security and Investigations Leadership Channel ([nI1xm6ZA2qo @ 00:03:50])",
+                    ],
+                ],
+            },
+        },
+        {
+            "id": "failure-modes",
+            "title": "Firsthand Failure Modes, Traps & Economics Checks",
+            "paragraphs": [
+                (
+                    "Church's collection bottleneck was self-created and specific: they initially told clients "
+                    "to send one document and find the others later, then accumulated papers arriving "
+                    "through different channels. They describe roughly twenty documents and the resulting "
+                    "sorting process as chaos. Their fix was the checklist and coordinated notary return, "
+                    "not simply more reminders after the file became incomplete. Richardson describes "
+                    "another firsthand correction from an early Florida case. They prepared a summary "
+                    "administration themselves, submitted it, and received a judge's response advising "
+                    "legal counsel without identifying the errors. Richardson subsequently favors having "
+                    "the attorney handle that work, while still describing situations where holder "
+                    "instructions permit direct filing. Their newer document lesson adds a reported "
+                    "student bottleneck: Christian's $138,000 deal remained stalled for more than a "
+                    "year because a death certificate was missing. That is Richardson's account of "
+                    "a student's case, not Richardson's own recovery. Ohio's documentation team describes "
+                    "the same operational drag from the examiner's side: missing documents require "
+                    "emails, calls, or letters, and that communication extends processing. Across these "
+                    "accounts, the delay has an identifiable source: fragmented collection, an unsuccessful "
+                    "filing attempt, or absent evidence. The reported remedy addresses that missing "
+                    "piece rather than promising that every claim will pay quickly. "
+                    "[1AMk1-SB5ic @ 00:00:13] [l8J2d1WwudY @ 00:21:30] "
+                    "[MVCNlj7HQBQ @ 00:12:31] [dFKMkAIKskU @ 00:06:22]"
+                ),
+                (
+                    "The California investigator's firsthand losses are often losses of progress rather "
+                    "than a stated dollar expense. They describe paying for database searches and "
+                    "postage, finding a residence associated with a $5,000 opportunity, and standing "
+                    "outside while occupants looked through the window but did not open the door. "
+                    "Even after contact, asking a stranger for identifying information introduced another "
+                    "trust problem. Their employment-proof case then stalled despite identity evidence "
+                    "and guidance, with approximately $3,000 or $4,000 at issue. Richardson's California "
+                    "mortgage case provides a contrasting outreach outcome, not a universal response "
+                    "rate. The first contact received no response; a Thanksgiving follow-up produced "
+                    "engagement, the team requested an email address, and the client received proof "
+                    "and an explanation of the process. The client then asked how to establish the "
+                    "parent-child relationship and discussed signing electronically from Oregon. The "
+                    "contract was signed in December, and Richardson reports payment in September. "
+                    "The case therefore separates winning the client's confidence from finishing the "
+                    "recovery. A responsive client and a signed contract did not eliminate the probate "
+                    "wait, just as locating the investigator's household did not produce a conversation. "
+                    "Both operators describe work between finding money and receiving payment. "
+                    "[nI1xm6ZA2qo @ 00:04:47] [nI1xm6ZA2qo @ 00:06:21] "
+                    "[MiiGrCZZAZk @ 00:02:44] [MiiGrCZZAZk @ 00:04:06]"
+                ),
+                (
+                    "Ohio's live demonstration exposes smaller failures that can stop an otherwise ordinary "
+                    "submission. Chukes leaves a digit out of the Social Security number, corrects it "
+                    "after the form refuses to advance, and then corrects the electronic-signature "
+                    "name. Later, they warn that an incorrect Claim ID can attach documents to the "
+                    "wrong claim, leaving the intended claim unprocessable. Their separate documentation "
+                    "discussion says old addresses can be difficult and suggests looking for historical "
+                    "records rather than relying on the current address. Ohio's February 2026 webinar "
+                    "also reports a workload bottleneck: 48,000 claims waiting after an increase of "
+                    "over 400% in people reaching out and starting claims, even while the new system "
+                    "streamlines many submissions. Richardson's Amador case adds a different time "
+                    "constraint. They found the lead with only one month remaining in the filing "
+                    "period they describe, obtained the county instructions, submitted the claim, "
+                    "and followed up. Richardson recalls filing in late June, a check cut around "
+                    "August 28, and receipt around September 13. Those dates are presented as "
+                    "recollections, not a fixed payment schedule. The operating checks are concrete: "
+                    "correct the fields, use the right identifier, supply the historical connection, "
+                    "and distinguish a filing deadline from the subsequent processing wait. "
+                    "[o1cc3hUtIv4 @ 00:07:13] [o1cc3hUtIv4 @ 00:11:50] "
+                    "[8nmo4S1v3Co @ 00:10:34] [4-lZwuXtY6Y @ 00:03:15]"
+                ),
+            ],
+            "table": {
+                "caption": "Reported breakdowns, their consequences, and the speaker's operational response.",
+                "headers": [
+                    "Experienced or Reported Breakdown",
+                    "Consequence and Practitioner Response",
+                    "Expert Source",
+                ],
+                "rows": [
+                    [
+                        "Church receives separate client papers through both mail and email",
+                        "They describe chaos and replace fragmented returns with a checklist and notary collection.",
+                        "Surplus Institute / David Church / Unclaimed Funds ([1AMk1-SB5ic @ 00:00:27])",
+                    ],
+                    [
+                        "Richardson submits an early Florida summary administration prepared without an attorney",
+                        "The judge advises legal counsel without explaining mistakes; Richardson favors attorney preparation afterward.",
+                        "Money Making Juggernaut ([l8J2d1WwudY @ 00:21:30])",
+                    ],
+                    [
+                        "Richardson reports a student's missing death certificate on a substantial claim",
+                        "Christian's $138,000 deal remains stalled for over a year in Richardson's account.",
+                        "Money Making Juggernaut ([MVCNlj7HQBQ @ 00:12:31])",
+                    ],
+                    [
+                        "The investigator reaches a household but cannot secure a conversation",
+                        "Occupants do not open the door despite the reported $5,000 recovery opportunity.",
+                        "Security and Investigations Leadership Channel ([nI1xm6ZA2qo @ 00:05:25])",
+                    ],
+                    [
+                        "Ohio's presenter enters incomplete identifying information during the live claim demonstration",
+                        "The missing Social Security digit must be corrected before the demonstration advances.",
+                        "ohiocommerce ([o1cc3hUtIv4 @ 00:07:13])",
+                    ],
+                    [
+                        "Ohio's team faces a larger queue despite its newer streamlined system",
+                        "The February 2026 presenters report 48,000 waiting claims and additional hiring.",
+                        "ohiocommerce ([8nmo4S1v3Co @ 00:10:52])",
+                    ],
+                ],
+            },
+            "callout": {
+                "kind": "OPERATOR GATE",
+                "title": "Four checks tied to reported breakdowns",
+                "body": (
+                    "Check the missing evidence, identifiers, deadlines, and economics named by "
+                    "the speakers before treating a signed client as a completed recovery."
+                ),
+                "items": [
+                    (
+                        "Confirm the death certificate is actually in the file: Richardson reports "
+                        "Christian's $138,000 deal stalled for over a year without it. "
+                        "[Money Making Juggernaut — MVCNlj7HQBQ @ 00:12:31]"
+                    ),
+                    (
+                        "Match the Ohio upload to the exact Claim ID and reenter it correctly; "
+                        "Chukes warns that the wrong number can send documents to another claim. "
+                        "[ohiocommerce — o1cc3hUtIv4 @ 00:11:50]"
+                    ),
+                    (
+                        "Use the newer Ohio deadline discussion rather than the older forever "
+                        "message: the February 2026 presenters discuss HB 96, 2036, and the "
+                        "receive date on the form. "
+                        "[ohiocommerce — 8nmo4S1v3Co @ 00:09:15]"
+                    ),
+                    (
+                        "Compare search time with the fee available: the California investigator "
+                        "questions spending one to three hours hunting accounts when their other "
+                        "work pays a stated $70 per hour. "
+                        "[Security and Investigations Leadership Channel — nI1xm6ZA2qo @ 00:07:49]"
+                    ),
+                ],
+            },
+        },
+    ],
+    "pull_quote": (
+        '"Proof builds trust." — Money Making Juggernaut '
+        "(MiiGrCZZAZk @ 00:03:33)."
+    ),
+    "diagram_id": "diag-01",
+    "action_checklist": [
+        (
+            "Cross-reference an obituary's relatives against skip-tracing relatives when a "
+            "common name produces multiple possible deceased owners. "
+            "[Money Making Juggernaut — l8J2d1WwudY @ 00:06:40]"
+        ),
+        (
+            "Read the deed and compare the death date with the foreclosure date when "
+            "investigating the survivorship route described by Buju. "
+            "[SurplusFundsRiches — 1N1Z99kUvRw @ 00:04:16]"
+        ),
+        (
+            "For California's applicable heir forms, enter Property IDs as instructed and "
+            "complete the family table with living and deceased relatives. "
+            "[California State Controller's Office — 1ahhduhMdd0 @ 00:01:25] "
+            "[California State Controller's Office — cMCrrRkehJk @ 00:01:27]"
+        ),
+        (
+            "Send the client the requested-document checklist and coordinate one return "
+            "package with the notary rather than routinely collecting fragments. "
+            "[Surplus Institute / David Church / Unclaimed Funds — 1AMk1-SB5ic @ 00:00:56]"
+        ),
+        (
+            "Complete Michigan's required claimant fields; in Pennsylvania, complete and "
+            "sign the PDF claim form if the filing process presents one. "
+            "[Michael Curtis — Fn04U_Yfuzg @ 00:04:07] "
+            "[PA Treasury Department — eRjGqaIOHWI @ 00:06:02]"
+        ),
+        (
+            "For Ohio, gather proof of the reported address, use the correct Claim ID "
+            "for upload, and check status after submitting the required documents. "
+            "[ohiocommerce — 8nmo4S1v3Co @ 00:19:52] "
+            "[ohiocommerce — o1cc3hUtIv4 @ 00:11:50]"
+        ),
+    ],
+    "statutory_citations": [
+        {
+            "title": (
+                "California State Controller's Office — "
+                "Declaration Under Probate Code 13101 Tutorial [00:01:25]"
+            ),
+            "url": "https://www.youtube.com/watch?v=1ahhduhMdd0&t=85s",
+            "relevance": (
+                "Primary agency testimony on the declaration's Property ID entries "
+                "and its claimant-capacity selections."
+            ),
+        },
+        {
+            "title": (
+                "California State Controller's Office — "
+                "Table of Heirship Tutorial [00:00:19]"
+            ),
+            "url": "https://www.youtube.com/watch?v=cMCrrRkehJk&t=19s",
+            "relevance": (
+                "Primary agency testimony on the circumstances for using the table "
+                "and its role in describing the deceased owner's family."
+            ),
+        },
+        {
+            "title": (
+                "ohiocommerce — Ohio Unclaimed Funds: How to Claim Your Cash in 3 Steps "
+                "(HB 96 Deadline Explained) Webinar 2-5-2026 [00:09:15]"
+            ),
+            "url": "https://www.youtube.com/watch?v=8nmo4S1v3Co&t=555s",
+            "relevance": (
+                "Primary agency testimony on HB 96, the stated 2036 horizon, "
+                "and the ten-year period tied to a reported date."
+            ),
+        },
+        {
+            "title": (
+                "PA Treasury Department — How To File a Claim - "
+                "PA Treasury Unclaimed Property Tutorial [00:04:28]"
+            ),
+            "url": "https://www.youtube.com/watch?v=eRjGqaIOHWI&t=268s",
+            "relevance": (
+                "Primary agency testimony that Pennsylvania requires paid finders "
+                "to become registered finders."
+            ),
+        },
+    ],
+    "source_citations": [
+        {
+            "source_type": "video_pro_tip",
+            "video_id": "l8J2d1WwudY",
+            "title": "How To Work Deceased Claims - Step-By-Step (Surplus Funds Recovery)",
+            "channel": "Money Making Juggernaut",
+            "author": "Money Making Juggernaut",
+            "text": (
+                "You need to know the full name of the person who passed away, "
+                "the date of the death, and the place of the death."
+            ),
+            "tip": (
+                "You need to know the full name of the person who passed away, "
+                "the date of the death, and the place of the death."
+            ),
+            "timestamp": 555,
+            "timestamp_seconds": 555,
+            "timestamp_label": "[00:09:15]",
+            "url": "https://www.youtube.com/watch?v=l8J2d1WwudY&t=555s",
+            "markdown": "[00:09:15](https://www.youtube.com/watch?v=l8J2d1WwudY&t=555s)",
+            "epistemic_status": "attributed_practitioner_claim",
+            "relevance": "Practitioner testimony on the deceased-owner information to collect.",
+        },
+        {
+            "source_type": "video_pro_tip",
+            "video_id": "nI1xm6ZA2qo",
+            "title": (
+                "✅ 💰 CALIFORNIA Unclaimed Property Investigations - "
+                "Tips from a Licensed Private Investigator!"
+            ),
+            "channel": "Security and Investigations Leadership Channel",
+            "author": "Security and Investigations Leadership Channel",
+            "text": "You can charge a fee up to 10 percent.",
+            "tip": "You can charge a fee up to 10 percent.",
+            "timestamp": 103,
+            "timestamp_seconds": 103,
+            "timestamp_label": "[00:01:43]",
+            "url": "https://www.youtube.com/watch?v=nI1xm6ZA2qo&t=103s",
+            "markdown": "[00:01:43](https://www.youtube.com/watch?v=nI1xm6ZA2qo&t=103s)",
+            "epistemic_status": "attributed_practitioner_claim",
+            "relevance": (
+                "Practitioner testimony on the fee described for California "
+                "Controller-held unclaimed-property investigations."
+            ),
+        },
+        {
+            "source_type": "video_pro_tip",
+            "video_id": "1ahhduhMdd0",
+            "title": "Declaration Under Probate Code 13101 Tutorial",
+            "channel": "California State Controller's Office",
+            "author": "California State Controller's Office",
+            "text": "In section 5, list all of the Property ID Numbers you are claiming.",
+            "tip": "In section 5, list all of the Property ID Numbers you are claiming.",
+            "timestamp": 85,
+            "timestamp_seconds": 85,
+            "timestamp_label": "[00:01:25]",
+            "url": "https://www.youtube.com/watch?v=1ahhduhMdd0&t=85s",
+            "markdown": "[00:01:25](https://www.youtube.com/watch?v=1ahhduhMdd0&t=85s)",
+            "epistemic_status": "attributed_practitioner_claim",
+            "relevance": "Agency testimony on completing the declaration's property-identification section.",
+        },
+        {
+            "source_type": "video_pro_tip",
+            "video_id": "cMCrrRkehJk",
+            "title": "Table of Heirship Tutorial",
+            "channel": "California State Controller's Office",
+            "author": "California State Controller's Office",
+            "text": (
+                "The Table of Heirship Form is used for Heir claims, where the owner "
+                "passed intestate, with no Will, Trust, or other Estate Plan, "
+                "and Probate was not required."
+            ),
+            "tip": (
+                "The Table of Heirship Form is used for Heir claims, where the owner "
+                "passed intestate, with no Will, Trust, or other Estate Plan, "
+                "and Probate was not required."
+            ),
+            "timestamp": 19,
+            "timestamp_seconds": 19,
+            "timestamp_label": "[00:00:19]",
+            "url": "https://www.youtube.com/watch?v=cMCrrRkehJk&t=19s",
+            "markdown": "[00:00:19](https://www.youtube.com/watch?v=cMCrrRkehJk&t=19s)",
+            "epistemic_status": "attributed_practitioner_claim",
+            "relevance": "Agency testimony on when the California Table of Heirship is used.",
+        },
+        {
+            "source_type": "video_pro_tip",
+            "video_id": "MiiGrCZZAZk",
+            "title": "$200,000 California Foreclosure Heir Claim Case Study",
+            "channel": "Money Making Juggernaut",
+            "author": "Money Making Juggernaut",
+            "text": "What was recovered? $210,404.44 to be exact.",
+            "tip": "What was recovered? $210,404.44 to be exact.",
+            "timestamp": 306,
+            "timestamp_seconds": 306,
+            "timestamp_label": "[00:05:06]",
+            "url": "https://www.youtube.com/watch?v=MiiGrCZZAZk&t=306s",
+            "markdown": "[00:05:06](https://www.youtube.com/watch?v=MiiGrCZZAZk&t=306s)",
+            "epistemic_status": "attributed_practitioner_claim",
+            "relevance": "Richardson's testimony on the exact amount of the California mortgage-heir recovery.",
+        },
+        {
+            "source_type": "video_pro_tip",
+            "video_id": "4-lZwuXtY6Y",
+            "title": "Amador county Tax Sale Surplus Funds Case Study",
+            "channel": "Money Making Juggernaut",
+            "author": "Money Making Juggernaut",
+            "text": (
+                "We were able to get $25,898 on this claim. "
+                "As you can see here, we got paid directly from the county."
+            ),
+            "tip": (
+                "We were able to get $25,898 on this claim. "
+                "As you can see here, we got paid directly from the county."
+            ),
+            "timestamp": 0,
+            "timestamp_seconds": 0,
+            "timestamp_label": "[00:00:00]",
+            "url": "https://www.youtube.com/watch?v=4-lZwuXtY6Y&t=0s",
+            "markdown": "[00:00:00](https://www.youtube.com/watch?v=4-lZwuXtY6Y&t=0s)",
+            "epistemic_status": "attributed_practitioner_claim",
+            "relevance": "Richardson's testimony on the reported Amador County tax-sale payment.",
+        },
+        {
+            "source_type": "video_pro_tip",
+            "video_id": "MVCNlj7HQBQ",
+            "title": "Surplus Funds Recovery: COMPLETE Document List (2026 UPDATE)",
+            "channel": "Money Making Juggernaut",
+            "author": "Money Making Juggernaut",
+            "text": (
+                "My student, Christian, sat stuck in stalemate for over a year "
+                "on a $138,000 deal all because of one missing death certificate."
+            ),
+            "tip": (
+                "My student, Christian, sat stuck in stalemate for over a year "
+                "on a $138,000 deal all because of one missing death certificate."
+            ),
+            "timestamp": 751,
+            "timestamp_seconds": 751,
+            "timestamp_label": "[00:12:31]",
+            "url": "https://www.youtube.com/watch?v=MVCNlj7HQBQ&t=751s",
+            "markdown": "[00:12:31](https://www.youtube.com/watch?v=MVCNlj7HQBQ&t=751s)",
+            "epistemic_status": "attributed_practitioner_claim",
+            "relevance": "Richardson's report of a student's missing-document bottleneck.",
+        },
+        {
+            "source_type": "video_pro_tip",
+            "video_id": "1N1Z99kUvRw",
+            "title": "Surplus Funds: Owner Died - STILL CLAIM!",
+            "channel": "SurplusFundsRiches",
+            "author": "SurplusFundsRiches",
+            "text": (
+                "If the property was foreclosed on February 28th and Barry died March 1st, "
+                "Barry's ownership hadn't passed at the time of the foreclosure to Elizabeth."
+            ),
+            "tip": (
+                "If the property was foreclosed on February 28th and Barry died March 1st, "
+                "Barry's ownership hadn't passed at the time of the foreclosure to Elizabeth."
+            ),
+            "timestamp": 256,
+            "timestamp_seconds": 256,
+            "timestamp_label": "[00:04:16]",
+            "url": "https://www.youtube.com/watch?v=1N1Z99kUvRw&t=256s",
+            "markdown": "[00:04:16](https://www.youtube.com/watch?v=1N1Z99kUvRw&t=256s)",
+            "epistemic_status": "attributed_practitioner_claim",
+            "relevance": "Buju's worked example comparing the foreclosure date with the death date.",
+        },
+        {
+            "source_type": "video_pro_tip",
+            "video_id": "ijLtjR0tTd8",
+            "title": "CA Unclaimed Property - Are you missing out? - Tutorial",
+            "channel": "Emend The Mass Media Group",
+            "author": "Emend The Mass Media Group",
+            "text": (
+                "Once it's been submitted and all the files have been uploaded successfully, "
+                "you'll get a claim documentation ID saying that it has processed."
+            ),
+            "tip": (
+                "Once it's been submitted and all the files have been uploaded successfully, "
+                "you'll get a claim documentation ID saying that it has processed."
+            ),
+            "timestamp": 922,
+            "timestamp_seconds": 922,
+            "timestamp_label": "[00:15:22]",
+            "url": "https://www.youtube.com/watch?v=ijLtjR0tTd8&t=922s",
+            "markdown": "[00:15:22](https://www.youtube.com/watch?v=ijLtjR0tTd8&t=922s)",
+            "epistemic_status": "attributed_practitioner_claim",
+            "relevance": "Tutorial testimony on California's document-upload confirmation.",
+        },
+        {
+            "source_type": "video_pro_tip",
+            "video_id": "Fn04U_Yfuzg",
+            "title": "Michigan Unclaimed Property - This is How You Make an Unclaimed Property Claim",
+            "channel": "Michael Curtis",
+            "author": "Michael Curtis",
+            "text": (
+                "If you don't fill it out, the claim form will not get submitted, "
+                "so you must fill everything out clearly."
+            ),
+            "tip": (
+                "If you don't fill it out, the claim form will not get submitted, "
+                "so you must fill everything out clearly."
+            ),
+            "timestamp": 270,
+            "timestamp_seconds": 270,
+            "timestamp_label": "[00:04:30]",
+            "url": "https://www.youtube.com/watch?v=Fn04U_Yfuzg&t=270s",
+            "markdown": "[00:04:30](https://www.youtube.com/watch?v=Fn04U_Yfuzg&t=270s)",
+            "epistemic_status": "attributed_practitioner_claim",
+            "relevance": "Curtis's testimony on completing Michigan's required claimant fields.",
+        },
+        {
+            "source_type": "video_pro_tip",
+            "video_id": "1AMk1-SB5ic",
+            "title": (
+                "Unclaimed Funds: How to Get Your Client's Documents in Order"
+                "⚡️Unclaimed fund Client Document finding"
+            ),
+            "channel": "Surplus Institute / David Church / Unclaimed Funds",
+            "author": "Surplus Institute / David Church / Unclaimed Funds",
+            "text": (
+                "I communicate with the notary and I ask the notary to make sure "
+                "they get all those documents and send it in a FedEx envelope."
+            ),
+            "tip": (
+                "I communicate with the notary and I ask the notary to make sure "
+                "they get all those documents and send it in a FedEx envelope."
+            ),
+            "timestamp": 56,
+            "timestamp_seconds": 56,
+            "timestamp_label": "[00:00:56]",
+            "url": "https://www.youtube.com/watch?v=1AMk1-SB5ic&t=56s",
+            "markdown": "[00:00:56](https://www.youtube.com/watch?v=1AMk1-SB5ic&t=56s)",
+            "epistemic_status": "attributed_practitioner_claim",
+            "relevance": "Church's testimony on collecting client documents in one coordinated return.",
+        },
+        {
+            "source_type": "video_pro_tip",
+            "video_id": "GrE0UUh_3BI",
+            "title": "Claiming your Unclaimed Funds",
+            "channel": "ohiocommerce",
+            "author": "ohiocommerce",
+            "text": "We keep unclaimed funds forever, so they never go away.",
+            "tip": "We keep unclaimed funds forever, so they never go away.",
+            "timestamp": 1292,
+            "timestamp_seconds": 1292,
+            "timestamp_label": "[00:21:32]",
+            "url": "https://www.youtube.com/watch?v=GrE0UUh_3BI&t=1292s",
+            "markdown": "[00:21:32](https://www.youtube.com/watch?v=GrE0UUh_3BI&t=1292s)",
+            "epistemic_status": "attributed_practitioner_claim",
+            "relevance": (
+                "Older Ohio agency testimony contrasted with the February 2026 "
+                "webinar's HB 96 deadline discussion."
+            ),
+        },
+        {
+            "source_type": "video_pro_tip",
+            "video_id": "eRjGqaIOHWI",
+            "title": "How To File a Claim - PA Treasury Unclaimed Property Tutorial",
+            "channel": "PA Treasury Department",
+            "author": "PA Treasury Department",
+            "text": (
+                "If you're presented with the ability to generate a PDF of your claim form, "
+                "then a paper claim form is required."
+            ),
+            "tip": (
+                "If you're presented with the ability to generate a PDF of your claim form, "
+                "then a paper claim form is required."
+            ),
+            "timestamp": 344,
+            "timestamp_seconds": 344,
+            "timestamp_label": "[00:05:44]",
+            "url": "https://www.youtube.com/watch?v=eRjGqaIOHWI&t=344s",
+            "markdown": "[00:05:44](https://www.youtube.com/watch?v=eRjGqaIOHWI&t=344s)",
+            "epistemic_status": "attributed_practitioner_claim",
+            "relevance": "Pennsylvania agency testimony on the conditional PDF claim-form requirement.",
+        },
+        {
+            "source_type": "video_pro_tip",
+            "video_id": "8nmo4S1v3Co",
+            "title": (
+                "Ohio Unclaimed Funds: How to Claim Your Cash in 3 Steps "
+                "(HB 96 Deadline Explained) Webinar 2-5-2026"
+            ),
+            "channel": "ohiocommerce",
+            "author": "ohiocommerce",
+            "text": (
+                "Everyone has until 2036 to claim their money. Unclaimed properties "
+                "that are reported to us will escheat to the state 10 years after it was reported."
+            ),
+            "tip": (
+                "Everyone has until 2036 to claim their money. Unclaimed properties "
+                "that are reported to us will escheat to the state 10 years after it was reported."
+            ),
+            "timestamp": 555,
+            "timestamp_seconds": 555,
+            "timestamp_label": "[00:09:15]",
+            "url": "https://www.youtube.com/watch?v=8nmo4S1v3Co&t=555s",
+            "markdown": "[00:09:15](https://www.youtube.com/watch?v=8nmo4S1v3Co&t=555s)",
+            "epistemic_status": "attributed_practitioner_claim",
+            "relevance": (
+                "February 2026 Ohio agency deadline testimony, followed by its explanation "
+                "of valid claims and the receive date on the form."
+            ),
+        },
+        {
+            "source_type": "video_pro_tip",
+            "video_id": "o1cc3hUtIv4",
+            "title": "Watch our Demo on How to Claim Your Ohio Unclaimed Funds",
+            "channel": "ohiocommerce",
+            "author": "ohiocommerce",
+            "text": (
+                "Make sure it is the correct Claim ID number. Otherwise, your documentation "
+                "may get uploaded to the wrong claim and then we won't be able to process your claim."
+            ),
+            "tip": (
+                "Make sure it is the correct Claim ID number. Otherwise, your documentation "
+                "may get uploaded to the wrong claim and then we won't be able to process your claim."
+            ),
+            "timestamp": 710,
+            "timestamp_seconds": 710,
+            "timestamp_label": "[00:11:50]",
+            "url": "https://www.youtube.com/watch?v=o1cc3hUtIv4&t=710s",
+            "markdown": "[00:11:50](https://www.youtube.com/watch?v=o1cc3hUtIv4&t=710s)",
+            "epistemic_status": "attributed_practitioner_claim",
+            "relevance": "Ohio live-demonstration testimony on matching uploaded documents to the intended claim.",
+        },
+        {
+            "source_type": "video_pro_tip",
+            "video_id": "dFKMkAIKskU",
+            "title": "What Documentation is Needed for Unclaimed Funds",
+            "channel": "ohiocommerce",
+            "author": "ohiocommerce",
+            "text": (
+                "How about possibly contacting one of the three major credit bureaus "
+                "and finding out if you can get your credit report?"
+            )[:-1] + ".",
+            "tip": (
+                "Possibly contact one of the three major credit bureaus "
+                "and find out if you can get your credit report."
+            ),
+            "timestamp": 195,
+            "timestamp_seconds": 195,
+            "timestamp_label": "[00:03:15]",
+            "url": "https://www.youtube.com/watch?v=dFKMkAIKskU&t=195s",
+            "markdown": "[00:03:15](https://www.youtube.com/watch?v=dFKMkAIKskU&t=195s)",
+            "epistemic_status": "attributed_practitioner_claim",
+            "relevance": "Ohio agency testimony on finding evidence connecting a claimant to an old address.",
+        },
+    ],
+}

@@ -1,0 +1,1122 @@
+from __future__ import annotations
+
+CHAPTER_8 = {
+    "id": "Q8",
+    "chapter_id": "Q8",
+    "chapter_number": 8,
+    "question_number": 8,
+    "slug": "surplus-unclaimed-funds-county-expertise-registration-operations",
+    "question_prompt": "How do these videos explain developing surplus-funds expertise in one county, registering to work state unclaimed funds in California, Delaware, and New Mexico, understanding contracts, making and managing cold calls while employed full time, distinguishing objections from complaints, handling canceled deals, building a nationwide notary team, avoiding virtual-assistant hiring mistakes, and choosing technology and free software—and what family-history story does the Heir Hunters episode explore about domestic service at a world-famous university?",
+    "kicker": "Q8 / THE BIG MONEY PLAYBOOKS",
+    "title": "Surplus & Unclaimed Funds Recovery: County Expertise, State Registration & Business Operations",
+    "subtitle": "Building expertise in one county; property-locator registration in California, Delaware, and New Mexico; contracts, cold-call scripts and basics, objections versus complaints, calling around a full-time job, canceled deals, nationwide notary teams, virtual-assistant hiring mistakes, and paid or free business software—plus an heir-hunting family-history episode involving domestic service at a world-famous university.",
+    "layout_template": "legal_compliance_callout",
+    "reading_time_minutes": 15,
+    "executive_summary": (
+        "Eric Richardson and David Wilkerson put jurisdiction knowledge, understandable paperwork, "
+        "organized follow-up, and calm conversations ahead of elaborate branding. Richardson builds "
+        "county expertise around sale results, claim instructions, existing claims, and liens; "
+        "Wilkerson explains distinct California, Delaware, and New Mexico operating requirements. "
+        "Their execution includes number validation, proof packets, CRM reminders, local notary "
+        "coverage, and measured assistant performance. Wilkerson reports a 10% Delaware commission "
+        "cap, recommends weekly notary recruiting, and evaluates cancellations against an eight-week "
+        "sales average. Their approaches differ on first-call objectives, fee presentation, and "
+        "how quickly to invest in software. Heir Hunters adds the competitive Norman Hunt search, "
+        "Cambridge college-servant history, and Mary Jean Gurnie's labor-intensive estate: 15 heirs "
+        "sharing an estate valued at £13,000."
+    ),
+    "key_metrics": [
+        {
+            "label": "Delaware commission cap",
+            "metric": "Delaware commission cap",
+            "value": "10%",
+            "confidence": "attributed_practitioner_claim",
+            "context": (
+                "David Wilkerson reports this cap in the Delaware walkthrough and says "
+                "bulk-lead availability matters more to their own market evaluation."
+            ),
+            "source": "Surplus Funds 101 ([TTfaOSBvLDc @ 00:05:14])",
+        },
+        {
+            "label": "Recurring notary recruitment",
+            "metric": "Recurring notary recruitment",
+            "value": "15 to 30 minutes once a week",
+            "confidence": "attributed_practitioner_claim",
+            "context": (
+                "David Wilkerson recommends a recurring Google Calendar event with "
+                "notifications and reminders to keep finding replacement notaries."
+            ),
+            "source": "Surplus Funds 101 ([Qn63DtrxFts @ 00:02:01])",
+        },
+        {
+            "label": "Cancellation review baseline",
+            "metric": "Cancellation review baseline",
+            "value": "Eight-week sales average",
+            "confidence": "attributed_practitioner_claim",
+            "context": (
+                "David Wilkerson compares a bad week with historical performance "
+                "before changing the script, and flags three or four bad weeks for investigation."
+            ),
+            "source": "Surplus Funds 101 ([foMCyYJ4LgY @ 00:08:17])",
+        },
+        {
+            "label": "Mary Jean Gurnie estate outcome",
+            "metric": "Mary Jean Gurnie estate outcome",
+            "value": "£13,000 estate; 15 heirs",
+            "confidence": "attributed_practitioner_claim",
+            "context": (
+                "Fraser and Fraser located the heirs on the maternal side; Gareth "
+                "Langford described the estate value as disappointing after extensive work."
+            ),
+            "source": "Heir Hunters ([rvjn6936-aM @ 00:32:51])",
+        },
+    ],
+    "sections": [
+        {
+            "id": "practitioner-consensus",
+            "title": "The Practitioner Consensus",
+            "paragraphs": [
+                (
+                    "Eric Richardson's starting point is one county, understood well enough to explain "
+                    "its sales and claims without improvising. Find the upcoming sale schedule, learn "
+                    "where results appear, and ask the county directly when the website does not "
+                    "supply the list. Richardson names tax sales, sheriff sales, and foreclosures as "
+                    "places to begin, then distinguishes county-hosted results from outsourced auction "
+                    "results. The sale record is also something concrete to show a previous owner "
+                    "when explaining why surplus exists [FNbqvZGEzeE @ 00:00:38]. David Wilkerson "
+                    "takes the same specialization approach to prospecting: choose one niche and "
+                    "one state rather than spreading personal bandwidth across numerous states and "
+                    "different recovery businesses [XHOqG0CY1KA @ 00:13:10]. Wilkerson's Delaware "
+                    "discussion makes market knowledge part of the sales conversation. Knowing the "
+                    "process helps the investigator understand the claimant's account of where money "
+                    "came from and communicate expertise rather than simply announce it "
+                    "[TTfaOSBvLDc @ 00:03:51]. Richardson adds the work beginners often skip: "
+                    "check whether another claim has already been filed and whether liens affect "
+                    "the surplus. For judicial cases, Richardson describes using the foreclosure "
+                    "case number; for nonjudicial cases, contact the trustee. These are specific "
+                    "research tasks, not substitutes for learning the county's actual claim process "
+                    "[FNbqvZGEzeE @ 00:02:48]."
+                ),
+                (
+                    "The paperwork consensus is equally concrete: learn what the receiving office "
+                    "requires before presenting yourself as the person who can complete the recovery. "
+                    "Richardson tells operators to read the county's claim instructions and claim "
+                    "form, checking whether supporting documents include a deed, driver's license, "
+                    "or utility bill. If instructions are missing, email the county; Richardson "
+                    "explicitly describes the county as a party the business must work with "
+                    "[FNbqvZGEzeE @ 00:01:53]. Wilkerson separates two research jobs in California: "
+                    "establish whether registration is required, then establish how the state wants "
+                    "a valid claim package assembled. California requires registration in that "
+                    "walkthrough, while Wilkerson says some other states do not "
+                    "[_8vyoTSh7Rs @ 00:02:58]. For the claimant agreement, Wilkerson records "
+                    "property descriptions, account identification numbers, individual amounts, and "
+                    "a total when several accounts are involved. The claimant's current address "
+                    "matters because an old address can send the check to the wrong place and "
+                    "delay invoicing [ _RTcaTMOwlY @ 00:10:38]".replace(
+                        "[ _RTcaTMOwlY", "[_RTcaTMOwlY"
+                    )
+                    + ". Simplicity does not mean replacing paperwork the state supplies. "
+                    "Wilkerson's instruction is to use state-drafted agreements when offered, "
+                    "reserving the simplified proprietary agreement for states requiring the "
+                    "investigator to provide one. The practical emphasis is an understandable "
+                    "agreement inside the state's stated process, with accurate account and contact "
+                    "information carried through the transaction [_RTcaTMOwlY @ 00:04:43]."
+                ),
+                (
+                    "Heir Hunters follows a different recovery job through Norman Hunt's family, "
+                    "with records revealing both potential beneficiaries and the working lives of "
+                    "earlier generations. Ryan Gregory investigates Norman's uncle Frederick and "
+                    "finds a university connection in the 1911 census: Frederick worked as the "
+                    "vice-chancellor's clerk at Cambridge. The episode describes copying indexes "
+                    "for the registrary and meeting the chancellor arriving by train "
+                    "[rvjn6936-aM @ 00:09:33]. Frederick followed parents Walter and Fanny into "
+                    "university employment. Their 1901 census entries identify them as college "
+                    "servants, and Fanny had been a bedmaker. The historian describes expectations "
+                    "that bedmakers be married, with some colleges imposing a minimum age around "
+                    "50 and discouraging glamorous applicants [rvjn6936-aM @ 00:10:45]. Walter's "
+                    "work as a male college servant could include waking students, bringing meals, "
+                    "carrying coal, and carrying hot water. The episode also describes poorer "
+                    "students working as servants, staff pensions before state pensions, support "
+                    "during illness, and arrangements under which a new cook contributed wages "
+                    "toward a predecessor's retirement [rvjn6936-aM @ 00:11:44]. Richardson's "
+                    "county workflow remains a separate records exercise: use the recorder search "
+                    "for liens and NETR for links to county records, appraisers, and maps. Each "
+                    "practitioner names the records used rather than treating a promising lead "
+                    "as completed research [FNbqvZGEzeE @ 00:03:43]."
+                ),
+            ],
+            "table": {
+                "caption": "The foundational work practitioners put ahead of signing a claimant.",
+                "headers": [
+                    "Operator task and working scope",
+                    "Practitioner instruction and reason for doing the work",
+                    "Expert Source",
+                ],
+                "rows": [
+                    [
+                        "Learn the sale calendar and locate the county's published results",
+                        "Find tax, sheriff, or foreclosure sales, then email or call when the list is missing.",
+                        "Money Making Juggernaut ([FNbqvZGEzeE @ 00:00:38])",
+                    ],
+                    [
+                        "Read the claim form before offering to complete someone else's recovery",
+                        "Identify supporting documents and understand the instructions rather than asking a claimant to trust unfamiliar paperwork.",
+                        "Money Making Juggernaut ([FNbqvZGEzeE @ 00:01:53])",
+                    ],
+                    [
+                        "Check existing claims through the process Richardson describes for foreclosure",
+                        "Use the case number for judicial proceedings; contact the trustee when investigating a nonjudicial foreclosure.",
+                        "Money Making Juggernaut ([FNbqvZGEzeE @ 00:03:02])",
+                    ],
+                    [
+                        "Investigate property liens before treating the advertised surplus as available",
+                        "Richardson warns that liens can reduce the surplus or wipe it out entirely, then directs operators to recorder searches.",
+                        "Money Making Juggernaut ([FNbqvZGEzeE @ 00:03:30])",
+                    ],
+                    [
+                        "Keep the initial recovery business focused on one manageable specialty",
+                        "Wilkerson recommends one niche in one state instead of scattering attention across multiple states and recovery categories.",
+                        "Surplus Funds 101 ([XHOqG0CY1KA @ 00:13:10])",
+                    ],
+                    [
+                        "Follow Norman Hunt's family records into Cambridge university employment",
+                        "Frederick's clerk work followed Walter and Fanny's college service; the episode identifies Fanny as a bedmaker.",
+                        "Heir Hunters ([rvjn6936-aM @ 00:10:45])",
+                    ],
+                ],
+            },
+        },
+        {
+            "id": "street-mechanics-tools-numbers",
+            "title": "Exact Street Mechanics, Tools & Numbers",
+            "paragraphs": [
+                (
+                    "Wilkerson's California registration example starts with an ordinary letter "
+                    "prepared in Google Docs. Include the date, personal name, business name and "
+                    "tax identification when registering through a business, address, telephone "
+                    "number, and email. Wilkerson says an individual can work in their own name "
+                    "there, and stresses using an address where incoming mail is accessible. "
+                    "Request acknowledgment, print, sign, date, and send the identification "
+                    "documents described in the walkthrough [_8vyoTSh7Rs @ 00:06:19]. Delaware "
+                    "has a different operating profile: Wilkerson reports a 10% commission cap, "
+                    "a 24-month period before a locator can assist, payment directly to the "
+                    "claimant, and subsequent invoicing by the locator. The walkthrough also "
+                    "describes digital submission of claim packages [TTfaOSBvLDc @ 00:05:14]. "
+                    "For New Mexico, Wilkerson reports a 48-month holding period but also reads "
+                    "an exception involving an attorney's letter. Their attempt to clarify that "
+                    "exception by contacting the department had not resolved whether a power "
+                    "of attorney would work [6yIKsJMj6Gk @ 00:05:30]. New Mexico also means "
+                    "manual searching and aggregation rather than the bulk leads Wilkerson "
+                    "wants for scrubbing, skip tracing, and dialing. The state supplies a "
+                    "disclosure agreement while requiring the investigator to provide a "
+                    "claimant agreement. Those are separate documents in Wilkerson's description, "
+                    "not interchangeable versions of the same form [6yIKsJMj6Gk @ 00:06:41]."
+                ),
+                (
+                    "Richardson's contact workflow begins by sorting numbers rather than expecting "
+                    "the first skip-trace result to be correct. Dial every listed number, cross "
+                    "out disconnected lines, and text the remaining live numbers, 'Hello, is "
+                    "this John?' Remove wrong numbers, then work the identified contact through "
+                    "a call, voicemail, and text. The voicemail names the caller, company, and "
+                    "property address without discussing money; Richardson also applies the "
+                    "system to relatives appearing in the skip trace [DMdtmrWAO6c @ 00:03:05]. "
+                    "On the live call, verify the first name, introduce yourself and the "
+                    "company, identify the property, and ask whether the person owned it. "
+                    "Anchor the foreclosure event, then ask whether anyone has contacted them "
+                    "about surplus funds. Richardson's first-call objective is an email or "
+                    "mailing address for proof, not an immediate close [DMdtmrWAO6c @ 00:06:34]. "
+                    "After sending the email, text that it has arrived and follow up within "
+                    "10 minutes to walk through it while the conversation is still fresh "
+                    "[DMdtmrWAO6c @ 00:09:03]. Wilkerson supplies the listening mechanics: "
+                    "lead with questions, let the claimant do most of the speaking, and use "
+                    "prompts such as 'Why?', 'How come?', and 'What else?' Their purpose is "
+                    "to learn the claimant's situation and retain useful details for later "
+                    "conversations, rather than deliver an uninterrupted sales speech "
+                    "[XHOqG0CY1KA @ 00:03:43]."
+                ),
+                (
+                    "Wilkerson's basic CRM routine is deliberately manual: take handwritten notes "
+                    "during the call, stop the dialer afterward, enter the information, and "
+                    "create a follow-up timer. Their aggressive scheduling preference is to "
+                    "halve the callback interval requested by the lead; a requested week "
+                    "becomes a shorter follow-up interval in their system "
+                    "[ApkuK7OOL9w @ 00:02:37]. For software, Wilkerson names HubSpot and "
+                    "Salesforce as accessible starting options, says they offer free versions, "
+                    "and reports personally using upgraded HubSpot. Conversation logs make "
+                    "it easier to return to a customer's history and maintain a consultative "
+                    "conversation [Gk0D4wVEXmc @ 00:04:05]. The paid email example is "
+                    "G-Suite at roughly $12 monthly, with Wilkerson describing approximately "
+                    "$50 total for four seats in that discussion. The same presentation "
+                    "recommends a quiet work area and basic note-taking supplies, not a "
+                    "complicated office buildout [ES6y4iF-bBM @ 00:05:39]. For signing "
+                    "coverage, Wilkerson uses Las Vegas as the working example: organize "
+                    "lead ZIP codes, divide the metro north-to-south and east-to-west, "
+                    "and recruit notaries within the resulting four quadrants. Travel time "
+                    "affects their quotes, and nearby coverage shortens the gap between a "
+                    "claimant saying yes and signing. If local contacts cannot respond, "
+                    "Wilkerson calls other notaries already in the network "
+                    "[Qn63DtrxFts @ 00:00:33]."
+                ),
+            ],
+            "table": {
+                "caption": "Specific operating instructions, tools, and amounts attributed to the practitioners.",
+                "headers": [
+                    "Execution component and concrete working detail",
+                    "Exact mechanic, tool choice, or numerical example",
+                    "Expert Source",
+                ],
+                "rows": [
+                    [
+                        "Use the California registration letter and identification mailing described",
+                        "Wilkerson prints and signs the letter, supplies a driver's-license copy, and follows the state's mailing instructions.",
+                        "Surplus Funds 101 ([_8vyoTSh7Rs @ 00:07:29])",
+                    ],
+                    [
+                        "Build a Delaware package around the paperwork supplied by the state",
+                        "Use the drafted paperwork; Wilkerson describes digital upload and a bulk-data request route alongside manual searching.",
+                        "Surplus Funds 101 ([TTfaOSBvLDc @ 00:07:42])",
+                    ],
+                    [
+                        "Assemble New Mexico leads manually and keep both agreement types",
+                        "Wilkerson describes manual aggregation, a state-drafted disclosure agreement, and a claimant agreement supplied by the investigator.",
+                        "Surplus Funds 101 ([6yIKsJMj6Gk @ 00:06:41])",
+                    ],
+                    [
+                        "Complete claimant fields and obtain usable copies of identification",
+                        "Record the current address and preferred contact details; Wilkerson demonstrates iPhone Notes document scanning for missing scanner equipment.",
+                        "Surplus Funds 101 ([_RTcaTMOwlY @ 00:13:27])",
+                    ],
+                    [
+                        "Choose named skip-tracing options according to Wilkerson's stated preferences",
+                        "Wilkerson lists True People Search, Been Verified, and Batch Leads, identifying Batch Leads as their favorite of those three.",
+                        "Surplus Funds 101 ([ApkuK7OOL9w @ 00:04:45])",
+                    ],
+                    [
+                        "Separate business calling from the operator's personal telephone number",
+                        "Wilkerson names free Google Voice and describes rented area-specific numbers costing approximately one to three dollars monthly.",
+                        "Surplus Funds 101 ([ApkuK7OOL9w @ 00:05:01])",
+                    ],
+                    [
+                        "Track outbound activity without buying another specialized reporting platform",
+                        "Use Google Sheets for dials, talk time, appointments, generated leads, lead incubation time, and signed contracts.",
+                        "Surplus Funds 101 ([XHOqG0CY1KA @ 00:12:03])",
+                    ],
+                    [
+                        "Keep replenishing the notary roster instead of relying on one contact",
+                        "Schedule 15 to 30 minutes weekly in Google Calendar, with notifications and reminders for recruiting replacement notaries.",
+                        "Surplus Funds 101 ([Qn63DtrxFts @ 00:02:01])",
+                    ],
+                ],
+            },
+            "callout": {
+                "kind": "INSIDER PRO-TIPS",
+                "title": "Small execution details the practitioners deliberately use",
+                "body": (
+                    "Richardson emphasizes proof delivery and rehearsal; Wilkerson emphasizes "
+                    "quick document collection and nearby signing coverage."
+                ),
+                "items": [
+                    (
+                        "Keep money out of Richardson's voicemail: leave your name, company, "
+                        "property address, and callback request, then pair the voicemail with "
+                        "a call and text. [Money Making Juggernaut — DMdtmrWAO6c @ 00:03:51]"
+                    ),
+                    (
+                        "Rehearse with ChatGPT or Claude acting as a skeptical homeowner before "
+                        "calling real leads; Richardson specifically asks the AI to give hard "
+                        "rebuttals. [Money Making Juggernaut — DMdtmrWAO6c @ 00:15:41]"
+                    ),
+                    (
+                        "When the claimant says they lack a scanner, Wilkerson walks them through "
+                        "the iPhone Notes camera menu and Scan Documents, then has them email "
+                        "the document. [Surplus Funds 101 — _RTcaTMOwlY @ 00:13:44]"
+                    ),
+                    (
+                        "Recruit three or four notaries in each town quadrant rather than "
+                        "depending on a single person who may no longer take weekday work. "
+                        "[Surplus Funds 101 — Qn63DtrxFts @ 00:03:07]"
+                    ),
+                ],
+            },
+            "sop_steps": [
+                {
+                    "step": 1,
+                    "title": "Map the county and its claim process",
+                    "action": (
+                        "Find upcoming sales, sale results, claim instructions, and the claim form."
+                    ),
+                    "detail": (
+                        "Richardson checks the county first, then asks directly when information "
+                        "is missing; their sequence continues into existing claims, liens, fee "
+                        "limits, waiting periods, and deceased-claim requirements. "
+                        "[Money Making Juggernaut — FNbqvZGEzeE @ 00:00:38]"
+                    ),
+                },
+                {
+                    "step": 2,
+                    "title": "Follow the selected state's document route",
+                    "action": (
+                        "Read the registration instructions and establish the required claim-package contents."
+                    ),
+                    "detail": (
+                        "Wilkerson treats registration and valid package assembly as distinct "
+                        "research questions, then uses California's handbook to work through "
+                        "the registration requirements. "
+                        "[Surplus Funds 101 — _8vyoTSh7Rs @ 00:02:58]"
+                    ),
+                },
+                {
+                    "step": 3,
+                    "title": "Validate contacts and send the proof",
+                    "action": (
+                        "Sort the skip-trace numbers, run call-voicemail-text follow-up, and obtain an email or mailing address."
+                    ),
+                    "detail": (
+                        "Richardson removes disconnected and wrong numbers before concentrating "
+                        "follow-up on the identified contact; the live-call objective is delivering "
+                        "proof rather than forcing the first-call signature. "
+                        "[Money Making Juggernaut — DMdtmrWAO6c @ 00:03:05] "
+                        "[Money Making Juggernaut — DMdtmrWAO6c @ 00:07:39]"
+                    ),
+                },
+                {
+                    "step": 4,
+                    "title": "Record the conversation and arrange signing coverage",
+                    "action": (
+                        "Enter notes, set the follow-up timer, and use the notary roster for the claimant's area."
+                    ),
+                    "detail": (
+                        "Wilkerson stops dialing to enter notes into the CRM and maintains "
+                        "quadrant-based notary relationships to shorten the wait between agreement "
+                        "and signing. [Surplus Funds 101 — ApkuK7OOL9w @ 00:02:37] "
+                        "[Surplus Funds 101 — Qn63DtrxFts @ 00:00:33]"
+                    ),
+                },
+            ],
+        },
+        {
+            "id": "disagreements-alternative-playbooks",
+            "title": "Where Practitioners Disagree & Alternative Playbooks",
+            "paragraphs": [
+                (
+                    "Fee presentation is a sharp contrast between Richardson's telephone advice "
+                    "and Wilkerson's written agreement demonstration. Richardson tells callers "
+                    "to discuss the percentage rather than the dollar fee. Their example is "
+                    "25%, described as covering the legal claim, filing fees, and attorneys; "
+                    "Richardson argues that naming a dollar amount makes the claimant fixate "
+                    "on what the operator receives instead of the recovery "
+                    "[DMdtmrWAO6c @ 00:12:40]. Wilkerson's agreement demonstration explicitly "
+                    "shows the arithmetic. For five hypothetical accounts totaling $10,000, "
+                    "the example multiplies by 20% and writes $2,000 as the operator's "
+                    "compensation. Wilkerson says to use the state's cap or the amount "
+                    "the claimant agreed to pay, and the demonstration includes a 180-day "
+                    "agreement period [_RTcaTMOwlY @ 00:14:33]. Their Delaware walkthrough "
+                    "reports a 10% cap and treats the ability to obtain bulk leads as "
+                    "more important to market selection than the percentage alone "
+                    "[TTfaOSBvLDc @ 00:05:14]. Their New Mexico walkthrough reports no "
+                    "commission cap, but Wilkerson personally suggests not exceeding 40% "
+                    "or 50%, describing concern about how an excessive amount might be "
+                    "viewed if a dispute reached court. That is Wilkerson's stated "
+                    "business preference, distinct from the reported absence of a cap. "
+                    "The two speakers therefore present different fee examples, different "
+                    "presentation tactics, and different state-specific conditions "
+                    "[6yIKsJMj6Gk @ 00:03:26]."
+                ),
+                (
+                    "Richardson offers direct, balanced, and mysterious call styles rather than "
+                    "one compulsory opener. The direct version goes straight to business; "
+                    "the balanced version adds one 'How are you doing?' before moving "
+                    "into the property. The mysterious version withholds the amount, describes "
+                    "an open claim, and asks permission to investigate further. Richardson "
+                    "says that version can produce signed agreements faster but also "
+                    "creates more skepticism [DMdtmrWAO6c @ 00:08:28]. Their standard "
+                    "first-call destination remains permission to send information: obtain "
+                    "an email address or, for someone without email, a mailing address "
+                    "for a physical packet [DMdtmrWAO6c @ 00:07:39]. Wilkerson's closing "
+                    "discussion advances to an appointment choice after summarizing the "
+                    "conversation and explaining the contract and notary process: ask "
+                    "whether Monday afternoon or Monday night works better. That is "
+                    "a signing-oriented close rather than Richardson's initial proof-delivery "
+                    "objective [XHOqG0CY1KA @ 00:10:50]. Wilkerson also teaches a staged "
+                    "response to complaints: initially ignore a passing complaint, mildly "
+                    "address a repeated one, and fully resolve it when raised a third "
+                    "time. At that point, Wilkerson treats it as an actual objection. "
+                    "The distinction is explicit in their teaching: a casual expression "
+                    "of dislike does not automatically mean the claimant cannot or will "
+                    "not proceed [t4w_wFimZ9A @ 00:05:24]."
+                ),
+                (
+                    "Wilkerson's software advice contains two operating paths rather than a "
+                    "single spending rule. Their selection criteria are reliability first, "
+                    "ease of use second, and value relative to price third. Clear "
+                    "telephone audio, saved CRM entries, and a platform assistants can "
+                    "learn matter more to Wilkerson than unused features "
+                    "[Gk0D4wVEXmc @ 00:02:07]. Yet the basic manual workflow is not "
+                    "how Wilkerson runs the more developed operation: they describe "
+                    "automation pushing dialer information into the CRM and argue that "
+                    "people willing to invest in time-saving tools get results faster. "
+                    "Their claim that fully manual operators can take 20 times longer "
+                    "to reach a first deal is part of that argument, not a reported "
+                    "comparison table [ApkuK7OOL9w @ 00:03:27]. Richardson draws a "
+                    "different automation boundary: use AI for preparation and follow-up, "
+                    "while retaining human conversations for trust-building with homeowners "
+                    "[DMdtmrWAO6c @ 00:15:21]. Wilkerson's own scheduling alternative "
+                    "came from working in door-to-door sales while starting asset recovery. "
+                    "Only Saturdays and Sundays were available; after initially expecting "
+                    "poor availability, Wilkerson came to favor weekend calling, especially "
+                    "Sunday. The full-time-job playbook is to fit prospecting around the "
+                    "available schedule and keep making calls, not wait until employment "
+                    "or family obligations disappear [JmuqGo9wYkg @ 00:00:50]."
+                ),
+            ],
+            "table": {
+                "caption": "Differences in tactics, market conditions, and operator preferences.",
+                "headers": [
+                    "Decision where the approaches genuinely differ",
+                    "Side-by-side practitioner positions and stated trade-offs",
+                    "Expert Source",
+                ],
+                "rows": [
+                    [
+                        "Present the fee as a percentage or show the dollar calculation",
+                        "Richardson favors percentage-only telephone discussion; Wilkerson's agreement example explicitly displays $10,000 multiplied by 20%, producing $2,000.",
+                        "Money Making Juggernaut ([DMdtmrWAO6c @ 00:12:40]); Surplus Funds 101 ([_RTcaTMOwlY @ 00:14:33])",
+                    ],
+                    [
+                        "Choose direct disclosure or Richardson's more mysterious opening style",
+                        "Richardson says withholding the amount and describing an open claim can accelerate signatures while increasing skepticism.",
+                        "Money Making Juggernaut ([DMdtmrWAO6c @ 00:08:28])",
+                    ],
+                    [
+                        "Use proof delivery or a signing appointment as the immediate destination",
+                        "Richardson seeks an email or mailing address first; Wilkerson describes offering two appointment times after explaining signing.",
+                        "Money Making Juggernaut ([DMdtmrWAO6c @ 00:07:39]); Surplus Funds 101 ([XHOqG0CY1KA @ 00:10:50])",
+                    ],
+                    [
+                        "Compare Delaware's stated commission ceiling with New Mexico's reported flexibility",
+                        "Wilkerson reports Delaware at 10%, New Mexico without a cap, and a personal New Mexico preference against exceeding 40% or 50%.",
+                        "Surplus Funds 101 ([TTfaOSBvLDc @ 00:05:14]); Surplus Funds 101 ([6yIKsJMj6Gk @ 00:03:26])",
+                    ],
+                    [
+                        "Begin with free infrastructure or pay for more operating leverage",
+                        "Wilkerson offers free starting platforms but personally uses upgraded HubSpot and advocates paying for tools that save time.",
+                        "Surplus Funds 101 ([Gk0D4wVEXmc @ 00:04:05]); Surplus Funds 101 ([ApkuK7OOL9w @ 00:03:27])",
+                    ],
+                    [
+                        "Treat weekend availability as a restriction or a usable prospecting window",
+                        "Wilkerson initially doubted weekend calling while employed elsewhere, then described Saturday and especially Sunday contact rates favorably.",
+                        "Surplus Funds 101 ([JmuqGo9wYkg @ 00:01:27])",
+                    ],
+                    [
+                        "Use AI as a rehearsal partner rather than the homeowner's caller",
+                        "Richardson rejects robot-voice trust building, recommending AI preparation, practice objections, and analysis while preserving human conversations.",
+                        "Money Making Juggernaut ([DMdtmrWAO6c @ 00:15:07])",
+                    ],
+                ],
+            },
+        },
+        {
+            "id": "failure-modes-economics-checks",
+            "title": "Firsthand Failure Modes, Traps & Economics Checks",
+            "paragraphs": [
+                (
+                    "Wilkerson's contract simplification came from losing an actual real-estate "
+                    "opportunity, not merely preferring short documents. An apparently receptive "
+                    "owner had a small house on a large lot in an attractive area. "
+                    "Wilkerson arrived with the eight-page RE21 purchase agreement, watched "
+                    "the owner's demeanor change, and left without the transaction. The "
+                    "following day's conversation centered on frightening fine print and "
+                    "possible adverse outcomes. That experience prompted the search for "
+                    "a simpler agreement [_RTcaTMOwlY @ 00:01:54]. Their CRM insistence "
+                    "has another firsthand origin: sticky notes everywhere, difficulty "
+                    "tracking conversations, and lost deals and money through disorganization "
+                    "[ES6y4iF-bBM @ 00:01:40]. Wilkerson also identifies a personal "
+                    "telephone weakness: a naturally loud, raspy voice became louder "
+                    "with excitement and could be perceived as aggressive even without "
+                    "that intention. Their adjustment is a calm, light tone rather "
+                    "than pushing harder [XHOqG0CY1KA @ 00:06:35]. Richardson describes "
+                    "the corresponding rebuttal trap: when someone suspects a scam, "
+                    "stacking explanations, promises, or a lower fee can make the "
+                    "caller sound less credible. Their response is a short answer "
+                    "and proof, not an increasingly elaborate speech. Richardson particularly "
+                    "warns that long explanations confuse older clients, after which "
+                    "they may hang up and block the number "
+                    "[DMdtmrWAO6c @ 00:11:16]."
+                ),
+                (
+                    "Wilkerson treats cancellations as a production issue to examine, not "
+                    "automatic proof that the business has failed. Their teaching comparison "
+                    "includes a low-output person with no cancellations, a stronger middle "
+                    "performer with one cancellation, and a high-output person with 12 "
+                    "apparent wins but 10 cancellations. These are explicitly scenarios; "
+                    "Wilkerson criticizes the last pattern because the sales conversation "
+                    "may not explain the process and terms thoroughly enough "
+                    "[foMCyYJ4LgY @ 00:03:13]. For actual management decisions, Wilkerson "
+                    "compares a disappointing week against an eight-week sales average "
+                    "and looks for a specific problem when three or four bad weeks "
+                    "persist, rather than constantly rewriting the script "
+                    "[foMCyYJ4LgY @ 00:08:17]. Hiring brings a related measurement "
+                    "problem. Wilkerson requires a video reading of the script, multiple "
+                    "interviews, workstation pictures, and evidence of a workable internet "
+                    "connection instead of hiring the first applicant "
+                    "[ASO1JUOWTjA @ 00:02:12]. They also warn against firing an "
+                    "assistant after only a week or two without knowing personal or "
+                    "assistant KPIs. Weekly reviews cover calls, conversations, and "
+                    "average call length, while training helps the assistant learn "
+                    "the operator's system. Wilkerson points out that a premature "
+                    "dismissal may occur before leads even receive their second "
+                    "or third contact [ASO1JUOWTjA @ 00:06:17]."
+                ),
+                (
+                    "Heir Hunters supplies both research reversals and disappointing economics. "
+                    "In Norman Hunt's case, a possible daughter named Pamela initially "
+                    "looked plausible because the area and mother's maiden name matched. "
+                    "Amy questioned the connection, and the team found another Hunt "
+                    "marriage to a Margaret with the same maiden name. Matching those "
+                    "surface details had not established the correct family "
+                    "[rvjn6936-aM @ 00:06:36]. Even reaching the right heirs did "
+                    "not immediately secure payment-producing work. Peter and Mary had "
+                    "heard from several firms, and Tom Smith left the visit without "
+                    "signed agreements because they wanted the weekend to consider "
+                    "the information [rvjn6936-aM @ 00:39:12]. They subsequently retained "
+                    "Finders, with Ryan reporting at least two competing companies. "
+                    "The maternal heirs were identified, but paternal lines remained "
+                    "outstanding; the team's result was not a completed declaration "
+                    "that no other heirs existed [rvjn6936-aM @ 00:41:43]. Mary "
+                    "Jean Gurnie's case produced a different reality check. Fraser "
+                    "and Fraser found 15 heirs on the maternal side, yet the "
+                    "estate was worth £13,000. Gareth Langford called the value "
+                    "disappointing after the amount of work, while still describing "
+                    "finding everyone as a good result. Research success and a "
+                    "large estate value were plainly different outcomes in that "
+                    "case [rvjn6936-aM @ 00:32:51]."
+                ),
+            ],
+            "table": {
+                "caption": "Experienced setbacks, stated warning signs, and unresolved operating details.",
+                "headers": [
+                    "Failure mode or bottleneck the practitioner identifies",
+                    "Reported experience, response, or economic distinction",
+                    "Expert Source",
+                ],
+                "rows": [
+                    [
+                        "An apparently receptive seller becomes frightened by complicated paperwork",
+                        "Wilkerson lost the transaction after presenting an eight-page agreement and subsequently sought a simpler document structure.",
+                        "Surplus Funds 101 ([_RTcaTMOwlY @ 00:02:14])",
+                    ],
+                    [
+                        "Sticky-note customer management causes actual missed business and lost money",
+                        "Wilkerson reports personal losses from disorganization and identifies CRM software as something they would not cancel.",
+                        "Surplus Funds 101 ([ES6y4iF-bBM @ 00:01:16])",
+                    ],
+                    [
+                        "A regular notary can stop offering the weekday availability needed",
+                        "Wilkerson called a notary who had taken a day job after real-estate work declined and could only offer weekends.",
+                        "Surplus Funds 101 ([Qn63DtrxFts @ 00:02:34])",
+                    ],
+                    [
+                        "Another investigator's signed agreement becomes an actual obstacle to proceeding",
+                        "Wilkerson ended a call after learning the claimant had signed elsewhere and invited later contact if recovery failed.",
+                        "Surplus Funds 101 ([t4w_wFimZ9A @ 00:04:00])",
+                    ],
+                    [
+                        "High apparent sales with repeated cancellations can conceal weak explanations",
+                        "Wilkerson's illustrative high-cancellation scenario prompts scrutiny of transparency, agreement terms, and resistance arising before the notary arrives.",
+                        "Surplus Funds 101 ([foMCyYJ4LgY @ 00:06:03])",
+                    ],
+                    [
+                        "New Mexico's stated holding-period exception remained unclear after attempted contact",
+                        "Wilkerson reported an attorney-letter exception but had not clarified whether a power-of-attorney form could satisfy it.",
+                        "Surplus Funds 101 ([6yIKsJMj6Gk @ 00:05:30])",
+                    ],
+                    [
+                        "Foreign birth initially points researchers toward an unnecessary overseas search",
+                        "Gareth Langford stood down the American agent after discovering that Mary Jean's family records were principally in England.",
+                        "Heir Hunters ([rvjn6936-aM @ 00:20:08])",
+                    ],
+                    [
+                        "Extensive successful genealogy still produces an estate value below expectations",
+                        "Fraser and Fraser located 15 heirs, but Gareth Langford described the £13,000 estate value as disappointing.",
+                        "Heir Hunters ([rvjn6936-aM @ 00:32:51])",
+                    ],
+                ],
+            },
+            "callout": {
+                "kind": "OPERATOR GATE",
+                "title": "Checks tied to the practitioners' actual bottlenecks",
+                "body": (
+                    "Richardson checks claims and liens; Wilkerson checks lead ownership, "
+                    "staff performance, and signing coverage before treating activity as progress."
+                ),
+                "items": [
+                    (
+                        "Check whether a claim is already filed and whether liens reduce or "
+                        "eliminate the surplus; Richardson says beginners often omit this "
+                        "research. [Money Making Juggernaut — FNbqvZGEzeE @ 00:02:48]"
+                    ),
+                    (
+                        "Distinguish a dislike of home visits from a signed agreement with "
+                        "another investigator: Wilkerson treats the former as a complaint "
+                        "and ended the conversation over the latter. "
+                        "[Surplus Funds 101 — t4w_wFimZ9A @ 00:02:54] "
+                        "[Surplus Funds 101 — t4w_wFimZ9A @ 00:04:00]"
+                    ),
+                    (
+                        "Establish personal and assistant KPIs before judging the assistant's "
+                        "results; Wilkerson warns that firing after a week or two may precede "
+                        "the second or third lead contact. "
+                        "[Surplus Funds 101 — ASO1JUOWTjA @ 00:06:17]"
+                    ),
+                    (
+                        "Keep recruiting notaries even when the roster appears covered: "
+                        "Wilkerson's existing contact had taken a day job and was available "
+                        "only on weekends. [Surplus Funds 101 — Qn63DtrxFts @ 00:02:34]"
+                    ),
+                ],
+            },
+        },
+    ],
+    "pull_quote": (
+        "'A cold call is not a friendship, and it's also not a lecture. It should be a doorway.' "
+        "— Money Making Juggernaut (DMdtmrWAO6c @ 00:06:19)."
+    ),
+    "diagram_id": "diag-04",
+    "action_checklist": [
+        (
+            "Build the county research file: sale dates, result locations, claim instructions, "
+            "claim form, existing-claim checks, and lien research. "
+            "[Money Making Juggernaut — FNbqvZGEzeE @ 00:00:38]"
+        ),
+        (
+            "Work through California's registration instructions and distinguish that letter "
+            "from the supporting documents needed for a completed claimant package. "
+            "[Surplus Funds 101 — _8vyoTSh7Rs @ 00:02:58]"
+        ),
+        (
+            "Compare Delaware's drafted paperwork and upload route with New Mexico's "
+            "manual lead collection, state disclosure, and investigator-supplied agreement. "
+            "[Surplus Funds 101 — TTfaOSBvLDc @ 00:07:42] "
+            "[Surplus Funds 101 — 6yIKsJMj6Gk @ 00:06:41]"
+        ),
+        (
+            "Validate every skip-trace number, remove dead and wrong numbers, and work "
+            "the remaining contact through Richardson's call, voicemail, and text sequence. "
+            "[Money Making Juggernaut — DMdtmrWAO6c @ 00:03:05]"
+        ),
+        (
+            "Fit calling around employment, record conversations in the CRM, and keep "
+            "follow-up appointments instead of waiting for an entirely free schedule. "
+            "[Surplus Funds 101 — JmuqGo9wYkg @ 00:03:06] "
+            "[Surplus Funds 101 — ApkuK7OOL9w @ 00:02:37]"
+        ),
+        (
+            "Divide the working metro into notary quadrants, schedule weekly recruiting, "
+            "review assistant KPIs, and compare cancellation changes with the eight-week "
+            "sales average. [Surplus Funds 101 — Qn63DtrxFts @ 00:00:33] "
+            "[Surplus Funds 101 — Qn63DtrxFts @ 00:02:01] "
+            "[Surplus Funds 101 — ASO1JUOWTjA @ 00:07:09] "
+            "[Surplus Funds 101 — foMCyYJ4LgY @ 00:08:17]"
+        ),
+    ],
+    "statutory_citations": [
+        {
+            "title": (
+                "Money Making Juggernaut — How To Become a Surplus Funds Expert "
+                "FOR 1 COUNTY (Asset Recovery Business) [00:04:15]"
+            ),
+            "url": "https://www.youtube.com/watch?v=FNbqvZGEzeE&t=255s",
+            "relevance": (
+                "Primary practitioner testimony on checking fee caps, waiting periods, "
+                "third-party participation, and deceased-claim requirements."
+            ),
+        },
+        {
+            "title": (
+                "Surplus Funds 101 — State Funds California: Registration Process & "
+                "Requirements To Work Unclaimed Funds. [00:02:58]"
+            ),
+            "url": "https://www.youtube.com/watch?v=_8vyoTSh7Rs&t=178s",
+            "relevance": (
+                "Primary practitioner testimony distinguishing registration research "
+                "from valid claim-package assembly in California."
+            ),
+        },
+        {
+            "title": (
+                "Surplus Funds 101 — State Funds Tutorial Delaware: Registering As A "
+                "Property Locator For The State Of Delaware. [00:05:14]"
+            ),
+            "url": "https://www.youtube.com/watch?v=TTfaOSBvLDc&t=314s",
+            "relevance": (
+                "Primary practitioner testimony on Delaware's reported commission "
+                "cap, holding period, payment destination, and invoicing workflow."
+            ),
+        },
+        {
+            "title": (
+                "Surplus Funds 101 — State Funds Tutorial New Mexico: How To Register "
+                "As A Property Locator In The State Of New Mexico. [00:05:30]"
+            ),
+            "url": "https://www.youtube.com/watch?v=6yIKsJMj6Gk&t=330s",
+            "relevance": (
+                "Primary practitioner testimony on the reported holding period and "
+                "Wilkerson's unresolved question about the attorney-letter exception."
+            ),
+        },
+    ],
+    "source_citations": [
+        {
+            "source_type": "video_pro_tip",
+            "video_id": "FNbqvZGEzeE",
+            "title": "How To Become a Surplus Funds Expert FOR 1 COUNTY (Asset Recovery Business)",
+            "channel": "Money Making Juggernaut",
+            "author": "Money Making Juggernaut",
+            "text": (
+                "Your first step is going to be understanding their sales information. "
+                "We should know when they are having their upcoming sales and also how "
+                "we can get the sales results."
+            ),
+            "tip": (
+                "Your first step is going to be understanding their sales information. "
+                "We should know when they are having their upcoming sales and also how "
+                "we can get the sales results."
+            ),
+            "timestamp": 38,
+            "timestamp_seconds": 38,
+            "timestamp_label": "[00:00:38]",
+            "url": "https://www.youtube.com/watch?v=FNbqvZGEzeE&t=38s",
+            "markdown": "[00:00:38](https://www.youtube.com/watch?v=FNbqvZGEzeE&t=38s)",
+            "epistemic_status": "attributed_practitioner_claim",
+            "relevance": "Verbatim practitioner testimony on county sales research for Chapter Q8.",
+        },
+        {
+            "source_type": "video_pro_tip",
+            "video_id": "rvjn6936-aM",
+            "title": "Domestic Service at a World-Famous University | Heir Hunters S9 Ep18 #FamilyHistory",
+            "channel": "Heir Hunters",
+            "author": "Heir Hunters",
+            "text": (
+                "In total, they were able to find 15 heirs to Jean's estate, all from "
+                "her mother's side of the family. The value of the estate was £13,000."
+            ),
+            "tip": (
+                "In total, they were able to find 15 heirs to Jean's estate, all from "
+                "her mother's side of the family. The value of the estate was £13,000."
+            ),
+            "timestamp": 1971,
+            "timestamp_seconds": 1971,
+            "timestamp_label": "[00:32:51]",
+            "url": "https://www.youtube.com/watch?v=rvjn6936-aM&t=1971s",
+            "markdown": "[00:32:51](https://www.youtube.com/watch?v=rvjn6936-aM&t=1971s)",
+            "epistemic_status": "attributed_practitioner_claim",
+            "relevance": "Verbatim estate-outcome testimony from the Heir Hunters episode in Chapter Q8.",
+        },
+        {
+            "source_type": "video_pro_tip",
+            "video_id": "DMdtmrWAO6c",
+            "title": "Surplus Funds Recovery Cold Calling - STEP-BY-STEP SCRIPT",
+            "channel": "Money Making Juggernaut",
+            "author": "Money Making Juggernaut",
+            "text": (
+                "You are not trying to close on call one. You are trying to send proof."
+            ),
+            "tip": (
+                "You are not trying to close on call one. You are trying to send proof."
+            ),
+            "timestamp": 459,
+            "timestamp_seconds": 459,
+            "timestamp_label": "[00:07:39]",
+            "url": "https://www.youtube.com/watch?v=DMdtmrWAO6c&t=459s",
+            "markdown": "[00:07:39](https://www.youtube.com/watch?v=DMdtmrWAO6c&t=459s)",
+            "epistemic_status": "attributed_practitioner_claim",
+            "relevance": "Verbatim practitioner testimony on the first-call objective in Chapter Q8.",
+        },
+        {
+            "source_type": "video_pro_tip",
+            "video_id": "Qn63DtrxFts",
+            "title": "How to Build a Nationwide Notary Team (Step-by-Step)",
+            "channel": "Surplus Funds 101",
+            "author": "Surplus Funds 101",
+            "text": (
+                "What I would suggest doing is creating an event on your Google "
+                "Calendar once a week where you spend 15 to 30 minutes just finding new notaries."
+            ),
+            "tip": (
+                "What I would suggest doing is creating an event on your Google "
+                "Calendar once a week where you spend 15 to 30 minutes just finding new notaries."
+            ),
+            "timestamp": 121,
+            "timestamp_seconds": 121,
+            "timestamp_label": "[00:02:01]",
+            "url": "https://www.youtube.com/watch?v=Qn63DtrxFts&t=121s",
+            "markdown": "[00:02:01](https://www.youtube.com/watch?v=Qn63DtrxFts&t=121s)",
+            "epistemic_status": "attributed_practitioner_claim",
+            "relevance": "Verbatim practitioner testimony on recurring notary recruitment in Chapter Q8.",
+        },
+        {
+            "source_type": "video_pro_tip",
+            "video_id": "_RTcaTMOwlY",
+            "title": "Mastering Unclaimed Funds Contracts: A Complete Beginners Guide",
+            "channel": "Surplus Funds 101",
+            "author": "Surplus Funds 101",
+            "text": (
+                "If they give you any agreements at all or offer them that they've "
+                "pre-drafted, don't use something like this. Always do exactly what "
+                "the state departments outline and what they give you."
+            ),
+            "tip": (
+                "If they give you any agreements at all or offer them that they've "
+                "pre-drafted, don't use something like this. Always do exactly what "
+                "the state departments outline and what they give you."
+            ),
+            "timestamp": 283,
+            "timestamp_seconds": 283,
+            "timestamp_label": "[00:04:43]",
+            "url": "https://www.youtube.com/watch?v=_RTcaTMOwlY&t=283s",
+            "markdown": "[00:04:43](https://www.youtube.com/watch?v=_RTcaTMOwlY&t=283s)",
+            "epistemic_status": "attributed_practitioner_claim",
+            "relevance": "Practitioner testimony on using state-drafted agreements in Chapter Q8.",
+        },
+        {
+            "source_type": "video_pro_tip",
+            "video_id": "_8vyoTSh7Rs",
+            "title": "State Funds California: Registration Process & Requirements To Work Unclaimed Funds.",
+            "channel": "Surplus Funds 101",
+            "author": "Surplus Funds 101",
+            "text": (
+                "Number one is the instructions to register, if you even need to. "
+                "Some states don't require it. California does."
+            ),
+            "tip": (
+                "Number one is the instructions to register, if you even need to. "
+                "Some states don't require it. California does."
+            ),
+            "timestamp": 178,
+            "timestamp_seconds": 178,
+            "timestamp_label": "[00:02:58]",
+            "url": "https://www.youtube.com/watch?v=_8vyoTSh7Rs&t=178s",
+            "markdown": "[00:02:58](https://www.youtube.com/watch?v=_8vyoTSh7Rs&t=178s)",
+            "epistemic_status": "attributed_practitioner_claim",
+            "relevance": "Practitioner testimony on California registration research in Chapter Q8.",
+        },
+        {
+            "source_type": "video_pro_tip",
+            "video_id": "TTfaOSBvLDc",
+            "title": "State Funds Tutorial Delaware: Registering As A Property Locator For The State Of Delaware.",
+            "channel": "Surplus Funds 101",
+            "author": "Surplus Funds 101",
+            "text": (
+                "The state has a 10% commission cap. The commission cap, at least "
+                "for me, isn't nearly as important as this bottom part, getting bulk leads."
+            ),
+            "tip": (
+                "The state has a 10% commission cap. The commission cap, at least "
+                "for me, isn't nearly as important as this bottom part, getting bulk leads."
+            ),
+            "timestamp": 314,
+            "timestamp_seconds": 314,
+            "timestamp_label": "[00:05:14]",
+            "url": "https://www.youtube.com/watch?v=TTfaOSBvLDc&t=314s",
+            "markdown": "[00:05:14](https://www.youtube.com/watch?v=TTfaOSBvLDc&t=314s)",
+            "epistemic_status": "attributed_practitioner_claim",
+            "relevance": "Practitioner testimony on Delaware commission and lead-access considerations in Chapter Q8.",
+        },
+        {
+            "source_type": "video_pro_tip",
+            "video_id": "6yIKsJMj6Gk",
+            "title": "State Funds Tutorial New Mexico: How To Register As A Property Locator In The State Of New Mexico.",
+            "channel": "Surplus Funds 101",
+            "author": "Surplus Funds 101",
+            "text": (
+                "The state of New Mexico does not offer bulk leads."
+            ),
+            "tip": (
+                "The state of New Mexico does not offer bulk leads."
+            ),
+            "timestamp": 381,
+            "timestamp_seconds": 381,
+            "timestamp_label": "[00:06:21]",
+            "url": "https://www.youtube.com/watch?v=6yIKsJMj6Gk&t=381s",
+            "markdown": "[00:06:21](https://www.youtube.com/watch?v=6yIKsJMj6Gk&t=381s)",
+            "epistemic_status": "attributed_practitioner_claim",
+            "relevance": "Practitioner testimony on New Mexico lead availability in Chapter Q8.",
+        },
+        {
+            "source_type": "video_pro_tip",
+            "video_id": "ApkuK7OOL9w",
+            "title": "State Funds Tutorial Top 4 Tech Tools Needed For Your State Funds Business",
+            "channel": "Surplus Funds 101",
+            "author": "Surplus Funds 101",
+            "text": (
+                "While you're speaking to somebody on the phone, you take manual "
+                "notes of the conversation with a pen and a pencil."
+            ),
+            "tip": (
+                "While you're speaking to somebody on the phone, you take manual "
+                "notes of the conversation with a pen and a pencil."
+            ),
+            "timestamp": 157,
+            "timestamp_seconds": 157,
+            "timestamp_label": "[00:02:37]",
+            "url": "https://www.youtube.com/watch?v=ApkuK7OOL9w&t=157s",
+            "markdown": "[00:02:37](https://www.youtube.com/watch?v=ApkuK7OOL9w&t=157s)",
+            "epistemic_status": "attributed_practitioner_claim",
+            "relevance": "Verbatim practitioner testimony on the manual CRM workflow in Chapter Q8.",
+        },
+        {
+            "source_type": "video_pro_tip",
+            "video_id": "ASO1JUOWTjA",
+            "title": "State Funds Tutorial Virtual Assistants: Top 3 Hiring Mistakes While Growing Your Surplus Business",
+            "channel": "Surplus Funds 101",
+            "author": "Surplus Funds 101",
+            "text": (
+                "If you don't know your own numbers, how could you even have a "
+                "baseline where you can judge somebody else's performance off of it?"
+            ),
+            "tip": (
+                "If you don't know your own numbers, you don't have a baseline "
+                "where you can judge somebody else's performance."
+            ),
+            "timestamp": 377,
+            "timestamp_seconds": 377,
+            "timestamp_label": "[00:06:17]",
+            "url": "https://www.youtube.com/watch?v=ASO1JUOWTjA&t=377s",
+            "markdown": "[00:06:17](https://www.youtube.com/watch?v=ASO1JUOWTjA&t=377s)",
+            "epistemic_status": "attributed_practitioner_claim",
+            "relevance": "Practitioner testimony on personal KPI baselines before evaluating assistants in Chapter Q8.",
+        },
+        {
+            "source_type": "video_pro_tip",
+            "video_id": "ES6y4iF-bBM",
+            "title": "State Funds Tutorial: 5 Tech Tools For Your State Funds Business",
+            "channel": "Surplus Funds 101",
+            "author": "Surplus Funds 101",
+            "text": (
+                "I had sticky notes everywhere and it was hard to track things "
+                "and be organized, and I lost a lot of deals."
+            ),
+            "tip": (
+                "I had sticky notes everywhere and it was hard to track things "
+                "and be organized, and I lost a lot of deals."
+            ),
+            "timestamp": 100,
+            "timestamp_seconds": 100,
+            "timestamp_label": "[00:01:40]",
+            "url": "https://www.youtube.com/watch?v=ES6y4iF-bBM&t=100s",
+            "markdown": "[00:01:40](https://www.youtube.com/watch?v=ES6y4iF-bBM&t=100s)",
+            "epistemic_status": "attributed_practitioner_claim",
+            "relevance": "Practitioner testimony on firsthand disorganization losses in Chapter Q8.",
+        },
+        {
+            "source_type": "video_pro_tip",
+            "video_id": "t4w_wFimZ9A",
+            "title": "State Funds Tutorial: Cold Calling Objections vs. Complaints. Surplus Funds 101",
+            "channel": "Surplus Funds 101",
+            "author": "Surplus Funds 101",
+            "text": (
+                "They just stated that they don't want somebody coming over to "
+                "their house, not that they didn't want to work with you."
+            ),
+            "tip": (
+                "They just stated that they don't want somebody coming over to "
+                "their house, not that they didn't want to work with you."
+            ),
+            "timestamp": 174,
+            "timestamp_seconds": 174,
+            "timestamp_label": "[00:02:54]",
+            "url": "https://www.youtube.com/watch?v=t4w_wFimZ9A&t=174s",
+            "markdown": "[00:02:54](https://www.youtube.com/watch?v=t4w_wFimZ9A&t=174s)",
+            "epistemic_status": "attributed_practitioner_claim",
+            "relevance": "Practitioner testimony distinguishing a complaint from refusal in Chapter Q8.",
+        },
+        {
+            "source_type": "video_pro_tip",
+            "video_id": "JmuqGo9wYkg",
+            "title": "State Funds Tutorial: How To Make Cold Calls If You Have A Full Time Job.",
+            "channel": "Surplus Funds 101",
+            "author": "Surplus Funds 101",
+            "text": (
+                "It's okay to start off small and not go take over the world "
+                "right out of the gates. Just make a couple phone calls every "
+                "single day and just keep at it."
+            ),
+            "tip": (
+                "It's okay to start off small and not go take over the world "
+                "right out of the gates. Just make a couple phone calls every "
+                "single day and just keep at it."
+            ),
+            "timestamp": 186,
+            "timestamp_seconds": 186,
+            "timestamp_label": "[00:03:06]",
+            "url": "https://www.youtube.com/watch?v=JmuqGo9wYkg&t=186s",
+            "markdown": "[00:03:06](https://www.youtube.com/watch?v=JmuqGo9wYkg&t=186s)",
+            "epistemic_status": "attributed_practitioner_claim",
+            "relevance": "Practitioner testimony on prospecting around a full-time schedule in Chapter Q8.",
+        },
+        {
+            "source_type": "video_pro_tip",
+            "video_id": "foMCyYJ4LgY",
+            "title": "State Funds Tutorial: What To Do When A Deal Cancels While Working Your State Funds Business.",
+            "channel": "Surplus Funds 101",
+            "author": "Surplus Funds 101",
+            "text": (
+                "Just focus on your eight-week sales average and your KPIs."
+            ),
+            "tip": (
+                "Just focus on your eight-week sales average and your KPIs."
+            ),
+            "timestamp": 541,
+            "timestamp_seconds": 541,
+            "timestamp_label": "[00:09:01]",
+            "url": "https://www.youtube.com/watch?v=foMCyYJ4LgY&t=541s",
+            "markdown": "[00:09:01](https://www.youtube.com/watch?v=foMCyYJ4LgY&t=541s)",
+            "epistemic_status": "attributed_practitioner_claim",
+            "relevance": "Practitioner testimony on evaluating cancellations against historical performance in Chapter Q8.",
+        },
+        {
+            "source_type": "video_pro_tip",
+            "video_id": "Gk0D4wVEXmc",
+            "title": "Surplus Funds 101 Tutorial: Top 4 FREE Software Platforms For Your State Funds Business",
+            "channel": "Surplus Funds 101",
+            "author": "Surplus Funds 101",
+            "text": (
+                "HubSpot or Salesforce is what I've found to be the easiest for most "
+                "people. I use HubSpot, I have the upgrade version of it."
+            ),
+            "tip": (
+                "HubSpot or Salesforce is what I've found to be the easiest for most "
+                "people. I use HubSpot, I have the upgrade version of it."
+            ),
+            "timestamp": 245,
+            "timestamp_seconds": 245,
+            "timestamp_label": "[00:04:05]",
+            "url": "https://www.youtube.com/watch?v=Gk0D4wVEXmc&t=245s",
+            "markdown": "[00:04:05](https://www.youtube.com/watch?v=Gk0D4wVEXmc&t=245s)",
+            "epistemic_status": "attributed_practitioner_claim",
+            "relevance": "Verbatim practitioner testimony on CRM selection in Chapter Q8.",
+        },
+        {
+            "source_type": "video_pro_tip",
+            "video_id": "XHOqG0CY1KA",
+            "title": "Unclaimed Funds Tutorial: Cold Calling Basics For Your Unclaimed Funds Business. state funds.",
+            "channel": "Surplus Funds 101",
+            "author": "Surplus Funds 101",
+            "text": (
+                "One of the easiest ways to track your KPIs, and it's free, "
+                "is just from Google Sheets."
+            ),
+            "tip": (
+                "One of the easiest ways to track your KPIs, and it's free, "
+                "is just from Google Sheets."
+            ),
+            "timestamp": 723,
+            "timestamp_seconds": 723,
+            "timestamp_label": "[00:12:03]",
+            "url": "https://www.youtube.com/watch?v=XHOqG0CY1KA&t=723s",
+            "markdown": "[00:12:03](https://www.youtube.com/watch?v=XHOqG0CY1KA&t=723s)",
+            "epistemic_status": "attributed_practitioner_claim",
+            "relevance": "Verbatim practitioner testimony on free KPI tracking in Chapter Q8.",
+        },
+    ],
+}

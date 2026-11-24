@@ -1,308 +1,333 @@
 {
   "diagrams": [
     {
-      "diagram_id": "diag-01-micro-saas-wedge-workflow",
-      "chart_type": "process_flow",
-      "title": "From B2B pain signal to sticky recurring MRR",
-      "subtitle": "Five-stage vertical AI micro-SaaS execution loop",
+      "diagram_id": "diag-01-problem-to-paid-commitment",
       "chapter_number": 1,
-      "epistemic_tag": "operating_framework",
-      "assumptions_note": "Numeric values indicate engineering and GTM sequence, not guaranteed retention.",
-      "caption": "Anchor the software around a system-of-work bottleneck and proprietary context rather than an exposed single-prompt wrapper.",
+      "title": "From a Recurring Problem to a Paid Commitment",
+      "subtitle": "Find existing demand, understand the work, identify distribution, and make a delivery promise you can honor.",
+      "caption": "Rob Walling, Greg Isenberg, Fomin Unscripted, and founders featured on Starter Story describe complementary problem-selection checks.",
+      "assumptions_note": "These checks combine Rob Walling's outside validation, Greg Isenberg's task mapping, Fomin Unscripted's distribution-first approach, and Starter Story cases; they are not one founder's reported sequence.",
+      "note": "Gil's Starter Story account reports $20,000 from 50 lifetime licenses before building Subscribr, with delivery promised in 60 days and refund access for two weeks after delivery.",
+      "chart_type": "process_flow",
       "stages": [
         {
-          "label": "Isolate B2B wedge",
+          "step": "01",
+          "label": "Find repeated pain",
           "value": "Step 1",
-          "numeric_value": 1.0,
-          "detail": "Mine technographic churn, G2 1-star complaints, and compliance defects; secure paid pilot LOIs first."
+          "detail": "Rob Walling recommends identifying the problem rather than pitching the idea. Abhishek, on Starter Story, looks for dissatisfaction with established tools."
         },
         {
-          "label": "Ingest domain context",
+          "step": "02",
+          "label": "Validate beyond work",
           "value": "Step 2",
-          "numeric_value": 2.0,
-          "detail": "Normalize public registries or tenant documents behind Postgres Row-Level Security and pgvector."
+          "detail": "Rob Walling warns that an employer can be uniquely dysfunctional. Check that outside customers share the pain."
         },
         {
-          "label": "Route & cache tokens",
+          "step": "03",
+          "label": "Separate judgment from mechanics",
           "value": "Step 3",
-          "numeric_value": 3.0,
-          "detail": "Dispatch 85% routine tasks to small models, 15% synthesis to frontier models, with semantic caching."
+          "detail": "Greg Isenberg documents each task precisely and separates judgment from mechanical work before automation."
         },
         {
-          "label": "Deliver <5m value",
+          "step": "04",
+          "label": "Name the acquisition channel",
           "value": "Step 4",
-          "numeric_value": 4.0,
-          "detail": "Ship a pre-loaded diagnostic artifact or workflow copilot output in the user's first session."
+          "detail": "Fomin Unscripted identifies where customers will come from before building. Brett Malinowski describes demonstrating the customer's desired outcome in content."
         },
         {
-          "label": "Expand NRR",
+          "step": "05",
+          "label": "Price the delivery commitment",
           "value": "Step 5",
-          "numeric_value": 5.0,
-          "detail": "Compound revenue via metered workflow credits, team seats, embedded VCC rails, and smart dunning."
+          "detail": "Gil's Subscribr pre-sale includes delivery and refund commitments. Screenshot One's founder, on Starter Story, raises prices and reduces free usage after the early $7 offer leaves almost zero margins."
         }
       ]
     },
     {
-      "diagram_id": "diag-02-scanner-to-mrr-funnel",
-      "chart_type": "funnel",
-      "title": "Diagnostic scanner outbound to retained B2B logos",
-      "subtitle": "Illustrative cohort of 1,000 scanned B2B domains",
+      "diagram_id": "diag-02-cloud-credit-package-ladder",
       "chapter_number": 6,
-      "epistemic_tag": "illustrative_model",
-      "assumptions_note": "Invented nested cohort counts illustrating outbound/PLG conversion math; actual rates vary by vertical.",
-      "caption": "Automated compliance, technographic, and migration scanners convert cold outbound into concrete product demos.",
+      "title": "Cloud Credit Packages Have Different Entry Conditions",
+      "subtitle": "Separate reported package amounts from eligibility, coverage periods, and the recurring bill.",
+      "caption": "XRaise describes Google startup coverage and AWS Activate packages with different qualification routes.",
+      "assumptions_note": "The XRaise amounts are independent package references arranged by size, not successive funnel populations. No applicant conversion rates or guaranteed awards are reported.",
+      "note": "XRaise recommends checking the AWS credit expiration date and setting a budget alert. Trapture Explains emphasizes that credits are temporary while the monthly bill remains.",
+      "chart_type": "funnel",
       "stages": [
         {
-          "label": "Domains scanned",
-          "value": "1,000",
-          "numeric_value": 1000.0,
-          "detail": "Automated WCAG, SSL, DNS technographic, or incumbent-pricing scans across qualified B2B domains."
+          "label": "Google AI first-year ceiling",
+          "value": 250000,
+          "display": "Up to $250,000",
+          "conversion": "Not a conversion rate",
+          "detail": "XRaise describes first-year coverage of 100% of usage up to this amount for AI startups; qualification is separate from the headline ceiling."
         },
         {
-          "label": "Verified defect hits",
-          "value": "340",
-          "numeric_value": 340.0,
-          "detail": "Prospects with a documented compliance gap, renewal window, or broken workflow."
+          "label": "AWS Portfolio ceiling",
+          "value": 200000,
+          "display": "Up to $200,000",
+          "conversion": "Not a conversion rate",
+          "detail": "XRaise describes the provider-linked Activate Portfolio route, requiring an Activate provider Org ID."
         },
         {
-          "label": "Interactive trials",
-          "value": "68",
-          "numeric_value": 68.0,
-          "detail": "Decision-makers inspecting their pre-populated diagnostic workspace or calculator."
+          "label": "Google first-year standard ceiling",
+          "value": 100000,
+          "display": "Up to $100,000",
+          "conversion": "Not a conversion rate",
+          "detail": "XRaise describes first-year coverage of 100% of usage up to this standard amount, distinct from the AI ceiling."
         },
         {
-          "label": "Paying MRR logos",
-          "value": "19",
-          "numeric_value": 19.0,
-          "detail": "Self-serve or founder-assisted conversions onto a $149-$299/mo hybrid subscription."
+          "label": "Selected AWS Founders awards",
+          "value": 5000,
+          "display": "Up to $5,000",
+          "conversion": "Not a conversion rate",
+          "detail": "XRaise reports selected Founders awards up to this amount; this is not an automatic upgrade."
         },
         {
-          "label": "Expanded annual logos",
-          "value": "11",
-          "numeric_value": 11.0,
-          "detail": "Accounts upgrading to annual prepay, extra seats, or higher metered credit tiers."
+          "label": "AWS Founders starting package",
+          "value": 1000,
+          "display": "$1,000",
+          "conversion": "Not a conversion rate",
+          "detail": "XRaise describes Founders as the direct route for self-funded startups."
         }
       ]
     },
     {
-      "diagram_id": "diag-03-mrr-to-net-margin-waterfall",
-      "chart_type": "waterfall",
-      "title": "Monthly ARPU to net owner operating margin",
-      "subtitle": "Illustrative $150/mo B2B account on unsubsidized compute",
+      "diagram_id": "diag-03-launch-price-and-cost-reference",
       "chapter_number": 3,
-      "epistemic_tag": "illustrative_model",
-      "assumptions_note": "USD per $150 monthly subscription receipt; opening and closing bars are totals, middle bars are deductions.",
-      "caption": "Even after startup cloud credits expire, model routing and semantic caching preserve >80% SaaS gross margin and 30%-45% net margin.",
-      "stages": [
+      "title": "Monthly Prices and Gateway Cost References",
+      "subtitle": "Keep customer plan prices separate from infrastructure expense and model-spend crossover estimates.",
+      "caption": "Mikey No Code demonstrates invoice-converter prices, The Bridge Dev demonstrates a subscription with overages, and Bryan Software presents gateway community math.",
+      "assumptions_note": "All six bars are independent monthly dollar references from Mikey No Code, The Bridge Dev, or Bryan Software. They are standalone totals, not deductions or a reconciled profit bridge.",
+      "note": "Bryan Software explicitly distinguishes the approximate gateway crossover from an audited figure. Mikey No Code tests checkout, free-limit enforcement, and the paid-plan update after publishing.",
+      "chart_type": "waterfall",
+      "bars": [
         {
-          "label": "Monthly ARPU",
-          "value": "$150.00",
-          "numeric_value": 150.0,
-          "detail": "Hybrid $99 base workspace plus $51 average metered workflow and seat expansion."
+          "label": "Bridge subscription base",
+          "value": 9,
+          "display": "$9/month plus metered overages",
+          "kind": "total"
         },
         {
-          "label": "LLM & vector compute",
-          "value": "-$14.50",
-          "numeric_value": -14.5,
-          "detail": "Unsubsidized tiered model inference, embeddings, and managed Postgres/queue allocation."
+          "label": "Invoice Starter",
+          "value": 19,
+          "display": "$19/month for 50 invoices",
+          "kind": "total"
         },
         {
-          "label": "Billing & tax rail",
-          "value": "-$7.50",
-          "numeric_value": -7.5,
-          "detail": "Stripe Billing + Tax or Merchant-of-Record processing and failed-card retry overhead."
+          "label": "Invoice Pro",
+          "value": 49,
+          "display": "$49/month for 500 invoices",
+          "kind": "total"
         },
         {
-          "label": "Churn & refund drag",
-          "value": "-$9.00",
-          "numeric_value": -9.0,
-          "detail": "Amortized involuntary/voluntary churn and prorated ROSCA cancellation credits."
+          "label": "Invoice Team",
+          "value": 99,
+          "display": "$99/month with unlimited usage and priority support",
+          "kind": "total"
         },
         {
-          "label": "Contractor & GTM pod",
-          "value": "-$51.50",
-          "numeric_value": -51.5,
-          "detail": "Allocated part-time engineering, support automation, and acquisition spend at scale."
+          "label": "Gateway infrastructure estimate",
+          "value": 200,
+          "display": "Roughly $200/month infrastructure",
+          "kind": "total"
         },
         {
-          "label": "Owner net contribution",
-          "value": "$67.50",
-          "numeric_value": 67.5,
-          "detail": "45% scaled small-team owner margin before personal income taxes and R&D tax timing."
+          "label": "Gateway model-spend crossover",
+          "value": 3600,
+          "display": "About $3,600/month in model spend",
+          "kind": "total"
         }
       ]
     },
     {
-      "diagram_id": "diag-04-billing-rail-take-rates",
-      "chart_type": "horizontal_bars",
-      "title": "Effective take-rate across SaaS billing architectures",
-      "subtitle": "Illustrative % fee on a $150/mo B2B subscription",
+      "diagram_id": "diag-04-vertical-ai-evidence",
       "chapter_number": 2,
-      "epistemic_tag": "illustrative_model",
-      "assumptions_note": "Percent of a $150 SaaS charge; excludes state CPA filing fees if managing multi-jurisdiction sales tax directly.",
-      "caption": "Match the billing rail to buyer geography: MoR eliminates global VAT filings early, while Stripe Billing + ACH optimizes high-ACV B2B.",
-      "stages": [
+      "title": "Specialization Requires More Than a Wrapper",
+      "subtitle": "Founder objectives, contract values, savings, prompt chains, and evaluation depth describe different parts of vertical AI.",
+      "caption": "Rob Walling, Bessemer Venture Partners, Jamie Cuffe on Sequoia Capital, and Y Combinator supply these distinct reference points.",
+      "assumptions_note": "Units differ and bar lengths must not be read as a common ranking. For ranges reported by Rob Walling, Jamie Cuffe, and Jake Heller, typical repeats the lower endpoint solely as a plot marker; no central estimate is asserted.",
+      "note": "Rob Walling's ARR range is an objective, not an outcome guarantee. Bessemer's ACV comparison and Jamie Cuffe's customer savings have different denominators. Y Combinator's evaluation example concerns a specific marketplace setting.",
+      "chart_type": "horizontal_bars",
+      "unit": "Separate source units shown in each display; not comparable",
+      "bars": [
         {
-          "label": "Stripe ACH / Wire",
-          "value": "0.8% / $1.20",
-          "numeric_value": 0.8,
-          "detail": "Capped ACH debit ideal for $1,500-$5,000 annual B2B prepay invoices."
+          "label": "Walling vertical SaaS objective",
+          "min": 2,
+          "max": 20,
+          "typical": 2,
+          "display": "$2–20 million ARR objective"
         },
         {
-          "label": "Stripe Card + Tax",
-          "value": "3.6% / $5.40",
-          "numeric_value": 3.6,
-          "detail": "2.9% + $0.30 card processing plus ~0.5% Stripe Tax calculation; seller remits state/VAT returns."
+          "label": "Bessemer contract comparison",
+          "min": 80,
+          "max": 80,
+          "typical": 80,
+          "display": "Around 80% of existing software ACVs"
         },
         {
-          "label": "MoR (Paddle / LS)",
-          "value": "5.3% / $8.00",
-          "numeric_value": 5.3,
-          "detail": "5% + $0.50 Merchant-of-Record fee absorbing global SaaS VAT, US Wayfair nexus, and chargebacks."
+          "label": "Pace customer cost savings",
+          "min": 50,
+          "max": 75,
+          "typical": 50,
+          "display": "50–75% for some insurance customers"
         },
         {
-          "label": "App Store In-App",
-          "value": "30.0% / $45.00",
-          "numeric_value": 30.0,
-          "detail": "Default mobile store cut (15% Small Business tier) avoided via Web2App external web checkout."
+          "label": "Heller prompt-chain depth",
+          "min": 12,
+          "max": 24,
+          "typical": 12,
+          "display": "A dozen or two dozen individual prompts"
+        },
+        {
+          "label": "Gig ML marketplace evaluation",
+          "min": 10000,
+          "max": 10000,
+          "typical": 10000,
+          "display": "10,000 tailored test cases"
         }
       ]
     },
     {
-      "diagram_id": "diag-05-token-and-churn-guardrail-tree",
-      "chart_type": "decision_tree",
-      "title": "Inference cost, security & involuntary-churn guardrails",
-      "subtitle": "Mandatory production checks before opening public signups",
+      "diagram_id": "diag-05-cache-and-routing-gates",
       "chapter_number": 5,
-      "epistemic_tag": "operating_framework",
-      "assumptions_note": "Numbers identify engineering gates; enforce in middleware before any upstream LLM call.",
-      "caption": "Prevent weekend token-bill blowups and cross-tenant leaks through hard Redis budgets, RLS isolation, ZDR endpoints, and smart dunning.",
-      "stages": [
+      "title": "Reduce AI Cost Without Losing Correctness",
+      "subtitle": "Preserve reusable input, expire changing answers, evaluate routing, and inspect the actual operating result.",
+      "caption": "IBM Technology, Mastra, Learn with Vichu, AmanAI Lab, Hunter Sneed, and Morning Maker Show with Sandra and Dan describe the checks behind cost optimization.",
+      "assumptions_note": "Mastra's 90% cached-input discount is not a whole-bill reduction. Hunter Sneed's roughly 50% saving belongs to an eight-task demonstration, not every routed workload.",
+      "note": "Hunter Sneed includes routing costs and observes variable tier selection on borderline requests. Sandra on Morning Maker Show reports a launch-morning functionality failure that could otherwise be mistaken for weak demand.",
+      "chart_type": "decision_tree",
+      "nodes": [
         {
-          "label": "Tenant RLS & cap?",
-          "value": "Node 1",
-          "numeric_value": 1.0,
-          "detail": "Enforce Postgres tenant_id RLS and hard daily/monthly Redis token ceilings before inference."
+          "gate": "G1",
+          "question": "Does the reusable prompt prefix stay identical?",
+          "pass_next": "G2",
+          "fail_action": "Follow Mastra by moving changing memory after stable knowledge. Follow Learn with Vichu by keeping tool names, order, schemas, and JSON ordering stable."
         },
         {
-          "label": "Cache or small model?",
-          "value": "Node 2",
-          "numeric_value": 2.0,
-          "detail": "Serve repeat queries from cache and route structured extraction to low-cost models first."
+          "gate": "G2",
+          "question": "Can a cached answer remain valid until it expires?",
+          "pass_next": "G3",
+          "fail_action": "Follow AmanAI Lab by checking expiration for changing answers rather than retaining stale balances indefinitely."
         },
         {
-          "label": "ZDR & eval pass?",
-          "value": "Node 3",
-          "numeric_value": 3.0,
-          "detail": "Call Zero-Data-Retention enterprise endpoints and block deploys that regress golden evals."
+          "gate": "G3",
+          "question": "Do routed outputs meet quality needs after classifier and retry costs are included?",
+          "pass_next": "G4",
+          "fail_action": "Re-evaluate model choices and borderline requests as Hunter Sneed recommends; attribute usage by user, tenant, workload, or department."
         },
         {
-          "label": "Smart dunning live?",
-          "value": "Node 4",
-          "numeric_value": 4.0,
-          "detail": "Run card-updater, pre-expiry alerts, and multi-day retry cadences to cut involuntary churn."
+          "gate": "G4",
+          "question": "Do memory behavior, core functionality, and checkout survive the change?",
+          "pass_next": "Monitor attributable spending and retained usage, following Hunter Sneed and The Startup Podcast.",
+          "fail_action": "Benchmark memory behavior as IBM Technology recommends and repair functionality before interpreting missing sales, as Sandra's launch experience illustrates."
         }
       ]
     },
     {
-      "diagram_id": "diag-06-three-person-saas-pod",
-      "chart_type": "org_architecture",
-      "title": "One full-time founder, two specialized contractors",
-      "subtitle": "Illustrative 3-person ($375k ARR Base Case) SaaS pod",
+      "diagram_id": "diag-06-buyer-discovery-operating-map",
       "chapter_number": 11,
-      "epistemic_tag": "operating_framework",
-      "assumptions_note": "Numeric values are role identifiers; Scaled ($700k ARR) scenario expands to 2 FT + 3 C.",
-      "caption": "Keep headcount ultra-lean by automating CI evals, onboarding, and Tier-1 docs deflection before hiring full-time staff.",
-      "stages": [
+      "title": "Organize Discovery Around Buyer Decisions",
+      "subtitle": "Connect customer language, comparison content, indexing, and attribution to qualified demand.",
+      "caption": "Federico Jorge on UserActive, Rob Hoffman, Micael Coutinho, and Paul Ogonowski describe complementary discovery functions.",
+      "assumptions_note": "These are operating responsibilities, not a reported staffing chart. Federico Jorge, Rob Hoffman, Micael Coutinho, and Paul Ogonowski do not establish a shared team size or hiring plan.",
+      "note": "Rob Hoffman reports roughly 10 qualified weekly demos from comparison pages. Paul Ogonowski contrasts 2% of visits attributed to AI in analytics with 23% of new signups reporting AI discovery; the populations differ.",
+      "chart_type": "org_architecture",
+      "center": {
+        "role": "Buyer discovery and qualified pipeline",
+        "headcount": "Not specified",
+        "focus": "Judge discovery by qualified demand rather than traffic alone, as Rob Hoffman and Loopex Digital emphasize."
+      },
+      "spokes": [
         {
-          "label": "Founder / product lead",
-          "value": "1 FT",
-          "numeric_value": 1.0,
-          "detail": "Owns customer discovery, core architecture, pricing, enterprise trust, and capital allocation."
+          "role": "Customer-language research",
+          "type": "Research responsibility",
+          "kpi": "Buyer questions and wording captured from recorded, transcribed customer conversations, following Federico Jorge on UserActive."
         },
         {
-          "label": "Full-stack & eval dev",
-          "value": "1 C",
-          "numeric_value": 2.0,
-          "detail": "Maintains connectors, RLS migrations, golden-dataset evals, and companion extension releases."
+          "role": "Comparison content",
+          "type": "Publishing responsibility",
+          "kpi": "Qualified demos associated with comparison pages, tracked through GA4 in Rob Hoffman's account."
         },
         {
-          "label": "Growth & CS specialist",
-          "value": "1 C",
-          "numeric_value": 3.0,
-          "detail": "Runs diagnostic-scanner outbound, comparison calculators, onboarding calls, and churn-save reviews."
+          "role": "Search indexing",
+          "type": "Maintenance responsibility",
+          "kpi": "Google and Bing indexing checked weekly, with missing pages investigated and improved, following Micael Coutinho."
+        },
+        {
+          "role": "Discovery attribution",
+          "type": "Measurement responsibility",
+          "kpi": "New-signup discovery answers and the questions asked of AI assistants, following Paul Ogonowski."
         }
       ]
     },
     {
-      "diagram_id": "diag-07-startup-runway-stack",
-      "chart_type": "stacked_comparison",
-      "title": "Disciplined $15,000 bootstrapped AI micro-SaaS budget",
-      "subtitle": "Illustrative launch stack paired with cloud/LLM credit grants",
+      "diagram_id": "diag-07-launch-and-isolation-observations",
       "chapter_number": 4,
-      "epistemic_tag": "illustrative_model",
-      "assumptions_note": "USD cash outlay; excludes non-cash AWS/GCP/Azure/LLM startup credits that subsidize early compute.",
-      "caption": "Cloud credit grants subsidize inference COGS, not founder runway; keep >=50% of cash in liquid reserve until MRR covers fixed opex.",
-      "stages": [
+      "title": "Launch Attention and Tenant Isolation Are Separate Tests",
+      "subtitle": "Audience response does not establish authorization safety, and a concurrency exercise does not establish market demand.",
+      "caption": "Jack Smith reports Product Hunt launch observations; Alex Rusin reports a configuration-specific Prisma concurrency test.",
+      "assumptions_note": "Each low and high repeats the same reported observation, not an estimated range. Jack Smith's upvotes, video audience, and hours cannot be added to Alex Rusin's request count or interpreted as shares of a common total.",
+      "note": "Alex Rusin limits the no-contamination result to the tested configuration and failure mode. Past The Diagram recommends testing isolation through the actual application role rather than relying on a privileged owner's apparent success.",
+      "chart_type": "stacked_comparison",
+      "total_range": "No additive total; separate observations in upvotes, video views, hours, and concurrent requests",
+      "buckets": [
         {
-          "label": "Entity, IP & DPA setup",
-          "value": "$1,500",
-          "numeric_value": 1500.0,
-          "detail": "LLC/C-corp formation, banking, contractor IP assignment templates, and baseline privacy/DPA docs."
+          "label": "Product Hunt launch result",
+          "low": 17,
+          "high": 17,
+          "notes": "17 upvotes reported by Jack Smith, used as the benchmark to beat on the next attempt."
         },
         {
-          "label": "Core infra & telemetry",
-          "value": "$1,500",
-          "numeric_value": 1500.0,
-          "detail": "Domains, managed Postgres/auth/observability tiers, and golden-eval testing harness."
+          "label": "Bespoke launch video audience",
+          "low": 2,
+          "high": 2,
+          "notes": "Two views reported by Jack Smith after hours of production; they preferred reallocating effort toward more engaging outbound content."
         },
         {
-          "label": "Scanner & GTM pilots",
-          "value": "$4,000",
-          "numeric_value": 4000.0,
-          "detail": "Technographic/WCAG scanner infra, comparison-page assets, and bounded paid-search intent tests."
+          "label": "Hidden-vote opening period",
+          "low": 4,
+          "high": 4,
+          "notes": "Jack Smith describes the first four hours with hidden vote totals and randomized product ordering."
         },
         {
-          "label": "Liquid runway reserve",
-          "value": "$8,000",
-          "numeric_value": 8000.0,
-          "detail": "Untouched cash buffer protecting against slow B2B sales cycles and credit-grant expiration."
+          "label": "Prisma concurrency exercise",
+          "low": 800,
+          "high": 800,
+          "notes": "Alex Rusin reports 800 concurrent requests with no contamination in the tested configuration."
         }
       ]
     },
     {
-      "diagram_id": "diag-08-thirty-day-mvp-roadmap",
-      "chart_type": "timeline_roadmap",
-      "title": "Thirty days from buyer interviews to first 10 MRR logos",
-      "subtitle": "Four weekly validation, multi-tenant build, outbound & retention gates",
+      "diagram_id": "diag-08-retention-and-payment-recovery-roadmap",
       "chapter_number": 12,
-      "epistemic_tag": "operating_framework",
-      "assumptions_note": "Numeric values are milestone end-days; full 2-9 month ramp applies to stabilized recurring cohorts.",
-      "caption": "Never spend three months coding in isolation: validate paid pilot commitments in Week 1 and ship a metered multi-tenant wedge by Day 14.",
-      "stages": [
+      "title": "Separate Cancellation Causes and Recover Failed Payments",
+      "subtitle": "Diagnose churn, validate first value, configure payment recovery, and inspect cohort economics.",
+      "caption": "RonBuilds, Hormozi on Business Beast Mode, Freemius, Dodo Payments, Recurly, Gravy, and Ask a VC supply the operating checks.",
+      "assumptions_note": "Week headings are planning slots, not a shared implementation schedule reported by these practitioners. Recurly's recovery windows and Gravy's 30-day claim remain separate observations, not weekly performance promises.",
+      "note": "Recurly reports median recovery of 47% for 1–7-day windows and 57.7% for 15–21-day windows. Gravy reports average recovery of 51% within 30 days. Neither establishes a universal recovery target or a like-for-like vendor comparison.",
+      "chart_type": "timeline_roadmap",
+      "weeks": [
         {
-          "label": "Validate & pre-sell",
-          "value": "Days 1-7",
-          "numeric_value": 7.0,
-          "detail": "Mine G2/technographic pain, interview 15 buyers, demo clickable scan, and lock >=3 paid pilot LOIs."
+          "week": "Week 1",
+          "title": "Separate voluntary and involuntary churn",
+          "deliverable": "A cohort breakdown separating deliberate cancellations from failed-payment losses, following RonBuilds.",
+          "gate": "Keep gross losses visible even when expansion improves net churn, as Ask a VC recommends."
         },
         {
-          "label": "Ship metered MVP",
-          "value": "Days 8-14",
-          "numeric_value": 14.0,
-          "detail": "Deploy Postgres RLS, ZDR model router, Redis token caps, semantic cache, and Stripe hybrid billing."
+          "week": "Week 2",
+          "title": "Validate the first-value event",
+          "deliverable": "An activation check and hands-on onboarding approach grounded in RonBuilds and Hormozi on Business Beast Mode.",
+          "gate": "Confirm that the proposed activation event distinguishes retained users from departing users; RonBuilds warns that a universally completed event is not enough."
         },
         {
-          "label": "Launch scanner GTM",
-          "value": "Days 15-21",
-          "numeric_value": 21.0,
-          "detail": "Activate pilot logos in <5 minutes, run WCAG/churn-scanner outbound, and publish vs-incumbent pages."
+          "week": "Week 3",
+          "title": "Configure retries and payment updates",
+          "deliverable": "Retries, reminders, and an easy card-update path as Freemius describes, with Dodo Payments distinguishing fixable failures from stolen-card failures.",
+          "gate": "Inspect payment-status conditions and unsuccessful branches as Ecom Mastery recommends. Recurly advises experimenting with recovery windows for the business."
         },
         {
-          "label": "Audit NRR & scale",
-          "value": "Days 22-30",
-          "numeric_value": 30.0,
-          "detail": "Audit unsubsidized token margin per tenant, enable smart dunning, and apply Day-30 Kill/Scale rules."
+          "week": "Week 4",
+          "title": "Evaluate recovered value and follow-up cost",
+          "deliverable": "A recovery assessment that considers Gravy's dedicated human follow-up approach alongside automated recovery.",
+          "gate": "Check cohort value before personalized price offers and keep retargeting cost below customer value, following RonBuilds."
         }
       ]
     }

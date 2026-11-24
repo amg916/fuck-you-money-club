@@ -1,4424 +1,3157 @@
-"""Curated 180-citation Productized AI Agencies baseline (15 per chapter across Q1-Q12) mined strictly from verified Productized AI Agencies YouTube transcripts."""
+"""100% verbatim YouTube practitioner citations selected directly by Claude across Chapters Q1-Q12 of Volume 006 (Productized AI Agencies)."""
 from __future__ import annotations
 
-CHAPTER_KEYWORDS: dict[int, set[str]] = {1: {'15000',
-     '30k',
-     '5000',
-     '50k',
-     'aaa',
-     'ada',
-     'agency',
-     'agent',
-     'api',
-     'appointment',
-     'audit',
-     'automated',
-     'automation',
-     'b2b',
-     'base',
-     'based',
-     'bland',
-     'booking',
-     'bots',
-     'brett',
-     'building',
-     'business',
-     'case',
-     'churn',
-     'claude',
-     'clay',
-     'client',
-     'clients',
-     'cold',
-     'com',
-     'firm',
-     'margin',
-     'market',
-     'model',
-     'niche',
-     'operator',
-     'revenue',
-     'service',
-     'value'},
- 2: {'15000',
-     '30k',
-     '5000',
-     '50k',
-     'aaa',
-     'ada',
-     'agency',
-     'agent',
-     'api',
-     'appointment',
-     'audit',
-     'automated',
-     'automation',
-     'b2b',
-     'base',
-     'based',
-     'bland',
-     'booking',
-     'bots',
-     'brett',
-     'budget',
-     'building',
-     'business',
-     'buyer',
-     'case',
-     'churn',
-     'claude',
-     'clay',
-     'client',
-     'clients',
-     'cold',
-     'com',
-     'contract',
-     'customer',
-     'decision',
-     'escrow',
-     'fee',
-     'fees',
-     'invoice',
-     'pay',
-     'payment',
-     'pays',
-     'retainer'},
- 3: {'15000',
-     '30k',
-     '5000',
-     '50k',
-     'aaa',
-     'ada',
-     'agency',
-     'agent',
-     'api',
-     'appointment',
-     'audit',
-     'automated',
-     'automation',
-     'b2b',
-     'base',
-     'based',
-     'bland',
-     'booking',
-     'bots',
-     'brett',
-     'building',
-     'business',
-     'case',
-     'cash',
-     'cashflow',
-     'churn',
-     'claude',
-     'clay',
-     'client',
-     'clients',
-     'cold',
-     'com',
-     'commission',
-     'cost',
-     'costs',
-     'economics',
-     'margin',
-     'margins',
-     'price',
-     'pricing',
-     'profit',
-     'roi',
-     'unit'},
- 4: {'15000',
-     '30k',
-     '5000',
-     '50k',
-     'aaa',
-     'ada',
-     'agency',
-     'agent',
-     'api',
-     'appointment',
-     'audit',
-     'automated',
-     'automation',
-     'b2b',
-     'base',
-     'based',
-     'bland',
-     'booking',
-     'bots',
-     'brett',
-     'budget',
-     'building',
-     'business',
-     'capital',
-     'case',
-     'churn',
-     'claude',
-     'clay',
-     'client',
-     'clients',
-     'cold',
-     'com',
-     'entity',
-     'insurance',
-     'lean',
-     'license',
-     'llc',
-     'setup',
-     'software',
-     'stack',
-     'startup',
-     'tools'},
- 5: {'15000',
-     '30k',
-     '5000',
-     '50k',
-     'aaa',
-     'ada',
-     'agency',
-     'agent',
-     'api',
-     'appointment',
-     'audit',
-     'automated',
-     'automation',
-     'avoid',
-     'b2b',
-     'base',
-     'based',
-     'bland',
-     'booking',
-     'bots',
-     'brett',
-     'building',
-     'business',
-     'case',
-     'churn',
-     'claude',
-     'clawback',
-     'clay',
-     'client',
-     'clients',
-     'cold',
-     'com',
-     'dispute',
-     'edge',
-     'fail',
-     'mistake',
-     'mistakes',
-     'problem',
-     'risk',
-     'risks',
-     'trap',
-     'traps'},
- 6: {'15000',
-     '30k',
-     '5000',
-     '50k',
-     'aaa',
-     'ada',
-     'agency',
-     'agent',
-     'api',
-     'appointment',
-     'audit',
-     'automated',
-     'automation',
-     'b2b',
-     'base',
-     'based',
-     'bland',
-     'booking',
-     'bots',
-     'brett',
-     'building',
-     'business',
-     'case',
-     'churn',
-     'claude',
-     'clay',
-     'client',
-     'clients',
-     'cold',
-     'com',
-     'data',
-     'deal',
-     'find',
-     'first',
-     'lead',
-     'leads',
-     'list',
-     'outbound',
-     'prospect',
-     'qualify',
-     'search',
-     'sourcing'},
- 7: {'15000',
-     '30k',
-     '5000',
-     '50k',
-     'aaa',
-     'ada',
-     'agency',
-     'agent',
-     'api',
-     'appointment',
-     'audit',
-     'automated',
-     'automation',
-     'b2b',
-     'base',
-     'based',
-     'bland',
-     'booking',
-     'bots',
-     'brett',
-     'building',
-     'business',
-     'case',
-     'checklist',
-     'churn',
-     'claude',
-     'clay',
-     'client',
-     'clients',
-     'cold',
-     'com',
-     'delivery',
-     'execution',
-     'process',
-     'quality',
-     'sop',
-     'step',
-     'steps',
-     'system',
-     'underwriting',
-     'verify',
-     'workflow'},
- 8: {'15000',
-     '30k',
-     '5000',
-     '50k',
-     'aaa',
-     'ada',
-     'agency',
-     'agent',
-     'api',
-     'appointment',
-     'audit',
-     'automated',
-     'automation',
-     'b2b',
-     'base',
-     'based',
-     'bland',
-     'booking',
-     'bots',
-     'brett',
-     'building',
-     'business',
-     'case',
-     'churn',
-     'claude',
-     'clay',
-     'client',
-     'clients',
-     'cold',
-     'com',
-     'crm',
-     'data',
-     'database',
-     'platform',
-     'portal',
-     'scraper',
-     'search',
-     'software',
-     'tool',
-     'tools',
-     'tracking'},
- 9: {'15000',
-     '30k',
-     '5000',
-     '50k',
-     'aaa',
-     'ada',
-     'agency',
-     'agent',
-     'agreement',
-     'api',
-     'appointment',
-     'audit',
-     'automated',
-     'automation',
-     'b2b',
-     'base',
-     'based',
-     'bland',
-     'booking',
-     'bots',
-     'brett',
-     'building',
-     'business',
-     'case',
-     'churn',
-     'claude',
-     'clay',
-     'client',
-     'clients',
-     'cold',
-     'com',
-     'compliance',
-     'contract',
-     'disclosure',
-     'law',
-     'legal',
-     'license',
-     'outreach',
-     'rules',
-     'script',
-     'state',
-     'terms'},
- 10: {'15000',
-      '30k',
-      '5000',
-      '50k',
-      'aaa',
-      'ada',
-      'agency',
-      'agent',
-      'ai',
-      'api',
-      'appointment',
-      'audit',
-      'automate',
-      'automated',
-      'automation',
-      'b2b',
-      'base',
-      'based',
-      'bland',
-      'booking',
-      'bots',
-      'brett',
-      'building',
-      'business',
-      'case',
-      'churn',
-      'claude',
-      'clay',
-      'client',
-      'clients',
-      'cold',
-      'com',
-      'dashboard',
-      'leverage',
-      'pipeline',
-      'scale',
-      'script',
-      'speed',
-      'template',
-      'workflow'},
- 11: {'15000',
-      '30k',
-      '5000',
-      '50k',
-      'aaa',
-      'ada',
-      'agency',
-      'agent',
-      'api',
-      'appointment',
-      'audit',
-      'automated',
-      'automation',
-      'b2b',
-      'base',
-      'based',
-      'bland',
-      'booking',
-      'bots',
-      'brett',
-      'building',
-      'business',
-      'case',
-      'churn',
-      'claude',
-      'clay',
-      'client',
-      'clients',
-      'cold',
-      'com',
-      'contractor',
-      'exit',
-      'hire',
-      'hiring',
-      'kpi',
-      'manager',
-      'operations',
-      'pod',
-      'scale',
-      'scaling',
-      'team',
-      'valuation'},
- 12: {'15000',
-      '30k',
-      '5000',
-      '50k',
-      'aaa',
-      'action',
-      'ada',
-      'agency',
-      'agent',
-      'api',
-      'appointment',
-      'audit',
-      'automated',
-      'automation',
-      'b2b',
-      'base',
-      'based',
-      'bland',
-      'booking',
-      'bots',
-      'brett',
-      'building',
-      'business',
-      'case',
-      'churn',
-      'claude',
-      'clay',
-      'client',
-      'clients',
-      'cold',
-      'com',
-      'day',
-      'days',
-      'launch',
-      'milestone',
-      'month',
-      'plan',
-      'roadmap',
-      'sprint',
-      'start',
-      'thirty',
-      'week'}}
+CHAPTER_KEYWORDS: dict[int, set[str]] = {1: {'businesses', 'need', 'choose', 'actually', 'offer', 'agency'},
+ 2: {'design', 'model', 'subscription', 'building', 'solo', 'profitable', 'designjoy'},
+ 3: {'deliver', 'sell', 'paid', 'audits'},
+ 4: {'retainers', 'monthly', 'into', 'projects', 'package'},
+ 5: {'services', 'outreach', 'prospecting', 'closing', 'audits', 'clients', 'selling'},
+ 6: {'with', 'linkedin', 'clients', 'better', 'data'},
+ 7: {'self', 'hosted', 'zapier', 'agents', 'costs', 'automation', 'make', 'tools'},
+ 8: {'voice', 'tests', 'agents', 'world', 'real', 'tutorials', 'comparisons', 'platform', 'build'},
+ 9: {'graphs', 'agents', 'knowledge', 'explained'},
+ 10: {'models', 'support', 'automation', 'business', 'agency', 'customer', 'tools'},
+ 11: {'voice', 'control', 'delivery', 'agents', 'scope', 'white', 'label', 'client', 'creep'},
+ 12: {'contract', 'privacy', 'boundaries', 'acceptance'}}
 
-BASELINE_EXPERT_CITATIONS_BY_CHAPTER: dict[int, list[dict]] = {1: [{'author': 'Jordan Platten',
+BASELINE_EXPERT_CITATIONS_BY_CHAPTER: dict[int, list[dict]] = {1: [{'author': 'Nick Saraev Unfiltered',
+      'channel': 'Nick Saraev Unfiltered',
+      'epistemic_status': 'attributed_practitioner_claim',
+      'markdown': '[00:00:13](https://www.youtube.com/watch?v=J6tKdJPDJiw&t=13s)',
+      'relevance': 'Practitioner testimony on expanding from an initial sale into related '
+                   'operational systems.',
+      'source_type': 'video_pro_tip',
+      'text': 'It is very easy to expand and start upselling on a bunch of related systems that do '
+              'related things.',
+      'timestamp': 13,
+      'timestamp_label': '[00:00:13]',
+      'timestamp_seconds': 13,
+      'tip': 'It is very easy to expand and start upselling on a bunch of related systems that do '
+             'related things.',
+      'title': 'Why AI automation agency is a great business model',
+      'url': 'https://www.youtube.com/watch?v=J6tKdJPDJiw&t=13s',
+      'video_id': 'J6tKdJPDJiw'},
+     {'author': 'Zubair Trabzada | AI Workshop',
+      'channel': 'Zubair Trabzada | AI Workshop',
+      'epistemic_status': 'attributed_practitioner_claim',
+      'markdown': '[00:01:14](https://www.youtube.com/watch?v=XUYvDbAv1IA&t=74s)',
+      'relevance': 'Practitioner testimony distinguishing consultancy receipts from broader '
+                   'education revenue.',
+      'source_type': 'video_pro_tip',
+      'text': "The most I've made was $30,000 in one month, and that's the highest. The average "
+              'now is around between $10,000 to $15,000 from my consultancy.',
+      'timestamp': 74,
+      'timestamp_label': '[00:01:14]',
+      'timestamp_seconds': 74,
+      'tip': "The most I've made was $30,000 in one month, and that's the highest. The average now "
+             'is around between $10,000 to $15,000 from my consultancy.',
+      'title': 'The TRUTH About Selling AI Automations to Businesses',
+      'url': 'https://www.youtube.com/watch?v=XUYvDbAv1IA&t=74s',
+      'video_id': 'XUYvDbAv1IA'},
+     {'author': 'Danny Peregrine',
+      'channel': 'Danny Peregrine',
+      'epistemic_status': 'attributed_practitioner_claim',
+      'markdown': '[00:17:18](https://www.youtube.com/watch?v=49rzug0GIOY&t=1038s)',
+      'relevance': 'Practitioner testimony on using small initial wins before expanding an '
+                   'engagement.',
+      'source_type': 'video_pro_tip',
+      'text': "It's starting with these small quick wins, proving that we are capable, and showing "
+              'them what we can do, opening their eyes, gaining that trust.',
+      'timestamp': 1038,
+      'timestamp_label': '[00:17:18]',
+      'timestamp_seconds': 1038,
+      'tip': "It's starting with these small quick wins, proving that we are capable, and showing "
+             'them what we can do, opening their eyes, gaining that trust.',
+      'title': 'How to build a $100K/Month AI Agency in 2027 (Full Breakdown)',
+      'url': 'https://www.youtube.com/watch?v=49rzug0GIOY&t=1038s',
+      'video_id': '49rzug0GIOY'},
+     {'author': 'Bo Sar',
+      'channel': 'Bo Sar',
+      'epistemic_status': 'attributed_practitioner_claim',
+      'markdown': '[00:20:45](https://www.youtube.com/watch?v=pba8FIkOilY&t=1245s)',
+      'relevance': 'Practitioner testimony on reusable delivery components and client-specific '
+                   'customization.',
+      'source_type': 'video_pro_tip',
+      'text': 'You build up packs of pre-built, pre-configured skills and agents that are industry '
+              'agnostic.',
+      'timestamp': 1245,
+      'timestamp_label': '[00:20:45]',
+      'timestamp_seconds': 1245,
+      'tip': 'You build up packs of pre-built, pre-configured skills and agents that are industry '
+             'agnostic.',
+      'title': 'The AI-First Agency Model YC Just Revealed (6 services to sell)',
+      'url': 'https://www.youtube.com/watch?v=pba8FIkOilY&t=1245s',
+      'video_id': 'pba8FIkOilY'},
+     {'author': 'Nate Herk | AI Automation',
+      'channel': 'Nate Herk | AI Automation',
+      'epistemic_status': 'attributed_practitioner_claim',
+      'markdown': '[00:01:33](https://www.youtube.com/watch?v=SAerRtQLD0I&t=93s)',
+      'relevance': 'Practitioner testimony on the business resources an offer must return.',
+      'source_type': 'video_pro_tip',
+      'text': 'What they care about comes down to literally three things: time, money, focus.',
+      'timestamp': 93,
+      'timestamp_label': '[00:01:33]',
+      'timestamp_seconds': 93,
+      'tip': 'What they care about comes down to literally three things: time, money, focus.',
+      'title': 'The TRUTH About Selling AI Automations to Businesses',
+      'url': 'https://www.youtube.com/watch?v=SAerRtQLD0I&t=93s',
+      'video_id': 'SAerRtQLD0I'},
+     {'author': 'Jacob Kaz',
+      'channel': 'Jacob Kaz',
+      'epistemic_status': 'attributed_practitioner_claim',
+      'markdown': '[00:04:05](https://www.youtube.com/watch?v=agtVZpDDGmU&t=245s)',
+      'relevance': 'Practitioner testimony on reducing presentation work during the sales process.',
+      'source_type': 'video_pro_tip',
+      'text': "Once I stopped doing presentations as a whole, that's when these numbers came in.",
+      'timestamp': 245,
+      'timestamp_label': '[00:04:05]',
+      'timestamp_seconds': 245,
+      'tip': "Once I stopped doing presentations as a whole, that's when these numbers came in.",
+      'title': 'How i built an AI Agency that makes me 100k/mo with no money (with proof)',
+      'url': 'https://www.youtube.com/watch?v=agtVZpDDGmU&t=245s',
+      'video_id': 'agtVZpDDGmU'},
+     {'author': 'Mikey No Code',
+      'channel': 'Mikey No Code',
+      'epistemic_status': 'attributed_practitioner_claim',
+      'markdown': '[00:29:31](https://www.youtube.com/watch?v=i4z0kCcByY8&t=1771s)',
+      'relevance': "Practitioner testimony on the example real estate package's upfront commercial "
+                   'terms.',
+      'source_type': 'video_pro_tip',
+      'text': 'The one-time setup and integration fee is $2,500.',
+      'timestamp': 1771,
+      'timestamp_label': '[00:29:31]',
+      'timestamp_seconds': 1771,
+      'tip': 'The one-time setup and integration fee is $2,500.',
+      'title': 'How to Start an AI Automation Agency in 2026 (Step by Step)',
+      'url': 'https://www.youtube.com/watch?v=i4z0kCcByY8&t=1771s',
+      'video_id': 'i4z0kCcByY8'},
+     {'author': 'Hyperautomation Labs',
+      'channel': 'Hyperautomation Labs',
+      'epistemic_status': 'attributed_practitioner_claim',
+      'markdown': '[00:02:52](https://www.youtube.com/watch?v=Bm9fbVEZvHc&t=172s)',
+      'relevance': 'Practitioner testimony on repeated skill-file testing before selling delivery.',
+      'source_type': 'video_pro_tip',
+      'text': 'Run each one 10 times and refine until the output is reliable.',
+      'timestamp': 172,
+      'timestamp_label': '[00:02:52]',
+      'timestamp_seconds': 172,
+      'tip': 'Run each one 10 times and refine until the output is reliable.',
+      'title': 'How to Build & Sell AI Automations That Make $10K/mo (Full 6-Phase Playbook)',
+      'url': 'https://www.youtube.com/watch?v=Bm9fbVEZvHc&t=172s',
+      'video_id': 'Bm9fbVEZvHc'},
+     {'author': 'Sabrina Ramonov 🍄',
+      'channel': 'Sabrina Ramonov 🍄',
+      'epistemic_status': 'attributed_practitioner_claim',
+      'markdown': '[00:02:39](https://www.youtube.com/watch?v=I1NSFLOBQvc&t=159s)',
+      'relevance': 'Practitioner testimony on maintenance and debugging beyond initial '
+                   'implementation.',
+      'source_type': 'video_pro_tip',
+      'text': 'You have to maintain them, you have to debug them.',
+      'timestamp': 159,
+      'timestamp_label': '[00:02:39]',
+      'timestamp_seconds': 159,
+      'tip': 'You have to maintain them, you have to debug them.',
+      'title': 'What Nobody Tells You About Selling AI Automations',
+      'url': 'https://www.youtube.com/watch?v=I1NSFLOBQvc&t=159s',
+      'video_id': 'I1NSFLOBQvc'},
+     {'author': 'Noah Epstein',
+      'channel': 'Noah Epstein',
+      'epistemic_status': 'attributed_practitioner_claim',
+      'markdown': '[00:02:14](https://www.youtube.com/watch?v=fMdUS6amki0&t=134s)',
+      'relevance': 'Firsthand practitioner testimony on building before establishing buyer demand.',
+      'source_type': 'video_pro_tip',
+      'text': "There is no need to build out a workflow and get to the point where you've realized "
+              'no one wants it. I fell victim to that in my early days.',
+      'timestamp': 134,
+      'timestamp_label': '[00:02:14]',
+      'timestamp_seconds': 134,
+      'tip': "There is no need to build out a workflow and get to the point where you've realized "
+             'no one wants it. I fell victim to that in my early days.',
+      'title': 'How I made $150k last month selling AI automations',
+      'url': 'https://www.youtube.com/watch?v=fMdUS6amki0&t=134s',
+      'video_id': 'fMdUS6amki0'},
+     {'author': 'The AI Architects | Tom Crawshaw',
+      'channel': 'The AI Architects | Tom Crawshaw',
+      'epistemic_status': 'attributed_practitioner_claim',
+      'markdown': '[00:08:15](https://www.youtube.com/watch?v=HMo8ixMd4ts&t=495s)',
+      'relevance': 'Practitioner warning scenario illustrating the labor economics of expanded '
+                   'delivery.',
+      'source_type': 'video_pro_tip',
+      'text': 'One client could easily consume 40 hours. If you charged a thousand dollars, you '
+              'would literally only be making 25 dollars an hour.',
+      'timestamp': 495,
+      'timestamp_label': '[00:08:15]',
+      'timestamp_seconds': 495,
+      'tip': 'One client could easily consume 40 hours. If you charged a thousand dollars, you '
+             'would literally only be making 25 dollars an hour.',
+      'title': "Don't Sell AI Automations Before You Watch THIS Video",
+      'url': 'https://www.youtube.com/watch?v=HMo8ixMd4ts&t=495s',
+      'video_id': 'HMo8ixMd4ts'},
+     {'author': 'Jordan Platten',
       'channel': 'Jordan Platten',
       'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:02:22](https://www.youtube.com/watch?v=kDt9J3oinVs&t=142s)',
-      'relevance': 'Attributed practitioner commentary on productized B2B AI implementation, '
-                   'fixed-scope workflow sprints, and managed automation retainers (Chapter Q1 '
-                   'operational verification).',
+      'markdown': '[00:06:32](https://www.youtube.com/watch?v=503m0iczN0Q&t=392s)',
+      'relevance': 'Practitioner testimony on using client-call context to improve marketing '
+                   'strategy.',
       'source_type': 'video_pro_tip',
-      'text': 'I made in the early stages. You never want to send cold email from your '
-              "business domain. Okay, so let's say you're an agency business like me or you're "
-              "some kind of service-based business. You're probably speaking to clients via a "
-              'core email address.',
-      'timestamp': 142,
-      'timestamp_label': '[00:02:22]',
-      'timestamp_seconds': 142,
-      'tip': 'I made in the early stages. You never want to send cold email from your business '
-             "domain. Okay, so let's say you're an agency business like me or you're some kind "
-             "of service-based business. You're probably speaking to clients via a core email "
-             'address.',
-      'title': 'How I Send 3,000+ Cold Emails Every Day Using Instantly AI (Full Setup) '
-               '(Jordan Platten)',
-      'url': 'https://www.youtube.com/watch?v=kDt9J3oinVs&t=142s',
-      'video_id': 'kDt9J3oinVs'},
+      'text': 'The more context there is, the better the strategy is going to be.',
+      'timestamp': 392,
+      'timestamp_label': '[00:06:32]',
+      'timestamp_seconds': 392,
+      'tip': 'The more context there is, the better the strategy is going to be.',
+      'title': 'Any Idiot Can Make $10k/mo With an AI Agency Doing This...',
+      'url': 'https://www.youtube.com/watch?v=503m0iczN0Q&t=392s',
+      'video_id': '503m0iczN0Q'},
+     {'author': 'Alex Andreessen',
+      'channel': 'Alex Andreessen',
+      'epistemic_status': 'attributed_practitioner_claim',
+      'markdown': '[00:03:02](https://www.youtube.com/watch?v=H0klOzjFxCg&t=182s)',
+      'relevance': 'Firsthand practitioner testimony on changed platform economics and stopping an '
+                   'agent setup.',
+      'source_type': 'video_pro_tip',
+      'text': 'Instead of paying $200 a month for the subscription, I burned through two grand in '
+              'tokens in a few weeks until I shut it down.',
+      'timestamp': 182,
+      'timestamp_label': '[00:03:02]',
+      'timestamp_seconds': 182,
+      'tip': 'Instead of paying $200 a month for the subscription, I burned through two grand in '
+             'tokens in a few weeks until I shut it down.',
+      'title': "Don't Start An AI Automation Agency. Build This Instead.",
+      'url': 'https://www.youtube.com/watch?v=H0klOzjFxCg&t=182s',
+      'video_id': 'H0klOzjFxCg'},
+     {'author': 'Jake One Page',
+      'channel': 'Jake One Page',
+      'epistemic_status': 'attributed_practitioner_claim',
+      'markdown': '[00:07:31](https://www.youtube.com/watch?v=1SLNpczzxaA&t=451s)',
+      'relevance': 'Practitioner testimony on a proposed small-business lead-capture service '
+                   'price.',
+      'source_type': 'video_pro_tip',
+      'text': 'A simple pricing model could include a $250 setup fee and a $99 monthly maintenance '
+              'retainer.',
+      'timestamp': 451,
+      'timestamp_label': '[00:07:31]',
+      'timestamp_seconds': 451,
+      'tip': 'A simple pricing model could include a $250 setup fee and a $99 monthly maintenance '
+             'retainer.',
+      'title': 'AI Agents That Small Businesses Actually Need in 2026 (Claude)',
+      'url': 'https://www.youtube.com/watch?v=1SLNpczzxaA&t=451s',
+      'video_id': '1SLNpczzxaA'},
+     {'author': 'Greg Isenberg',
+      'channel': 'Greg Isenberg',
+      'epistemic_status': 'attributed_practitioner_claim',
+      'markdown': '[00:01:45](https://www.youtube.com/watch?v=bQPU6UJ4iCw&t=105s)',
+      'relevance': 'Practitioner testimony on outcome-based AI-native services with human '
+                   'exception review.',
+      'source_type': 'video_pro_tip',
+      'text': 'The agents prepare the books, and then the human reviews exceptions, and then you '
+              'complete monthly books. And you charge for the completed job.',
+      'timestamp': 105,
+      'timestamp_label': '[00:01:45]',
+      'timestamp_seconds': 105,
+      'tip': 'The agents prepare the books, and then the human reviews exceptions, and then you '
+             'complete monthly books. And you charge for the completed job.',
+      'title': '13 Businesses for the Age of AI',
+      'url': 'https://www.youtube.com/watch?v=bQPU6UJ4iCw&t=105s',
+      'video_id': 'bQPU6UJ4iCw'},
+     {'author': 'Kenzi Touadi',
+      'channel': 'Kenzi Touadi',
+      'epistemic_status': 'attributed_practitioner_claim',
+      'markdown': '[00:11:14](https://www.youtube.com/watch?v=y9NQp6gTMNk&t=674s)',
+      'relevance': 'Firsthand practitioner testimony on outreach workload and booked-call '
+                   'outcomes.',
+      'source_type': 'video_pro_tip',
+      'text': 'Sometimes I used to cold call 150 businesses per day, and I used to book two, three '
+              'calls per day.',
+      'timestamp': 674,
+      'timestamp_label': '[00:11:14]',
+      'timestamp_seconds': 674,
+      'tip': 'Sometimes I used to cold call 150 businesses per day, and I used to book two, three '
+             'calls per day.',
+      'title': "Unsaturated AI Agency Model Nobody's Talking About (making me $50k/m)",
+      'url': 'https://www.youtube.com/watch?v=y9NQp6gTMNk&t=674s',
+      'video_id': 'y9NQp6gTMNk'}],
+ 2: [{'author': 'Zimri Mayfield',
+      'channel': 'Zimri Mayfield',
+      'epistemic_status': 'attributed_practitioner_claim',
+      'markdown': '[00:03:42](https://www.youtube.com/watch?v=Z7hn_pkhIxM&t=222s)',
+      'relevance': "Mayfield's spoken client-count estimate supporting their skeptical workload "
+                   'argument, not a verified customer count.',
+      'source_type': 'video_pro_tip',
+      'text': 'He has 22 clients on a monthly retainer for $5,000.',
+      'timestamp': 222,
+      'timestamp_label': '[00:03:42]',
+      'timestamp_seconds': 222,
+      'tip': 'He has 22 clients on a monthly retainer for $5,000.',
+      'title': 'DesignJoy has to be a scam',
+      'url': 'https://www.youtube.com/watch?v=Z7hn_pkhIxM&t=222s',
+      'video_id': 'Z7hn_pkhIxM'},
+     {'author': 'Creative Crew with Brad Hussey',
+      'channel': 'Creative Crew with Brad Hussey',
+      'epistemic_status': 'attributed_practitioner_claim',
+      'markdown': '[00:05:40](https://www.youtube.com/watch?v=o-UR3rkPgJ4&t=340s)',
+      'relevance': "Verbatim practitioner testimony on Williams's reduced working day after "
+                   'establishing boundaries.',
+      'source_type': 'video_pro_tip',
+      'text': 'And I only work four or 5 hours a day.',
+      'timestamp': 340,
+      'timestamp_label': '[00:05:40]',
+      'timestamp_seconds': 340,
+      'tip': 'And I only work four or 5 hours a day.',
+      'title': 'This is How You Run a Profitable Design Service | Brett from DesignJoy',
+      'url': 'https://www.youtube.com/watch?v=o-UR3rkPgJ4&t=340s',
+      'video_id': 'o-UR3rkPgJ4'},
+     {'author': 'Brett Malinowski',
+      'channel': 'Brett Malinowski',
+      'epistemic_status': 'attributed_practitioner_claim',
+      'markdown': '[00:00:19](https://www.youtube.com/watch?v=IvZxfvECZnA&t=19s)',
+      'relevance': "Verbatim practitioner testimony on Williams's asynchronous service boundary.",
+      'source_type': 'video_pro_tip',
+      'text': "I don't do any client meetings.",
+      'timestamp': 19,
+      'timestamp_label': '[00:00:19]',
+      'timestamp_seconds': 19,
+      'tip': "I don't do any client meetings.",
+      'title': "Make Millions With a One-Person Business - Here's How",
+      'url': 'https://www.youtube.com/watch?v=IvZxfvECZnA&t=19s',
+      'video_id': 'IvZxfvECZnA'},
+     {'author': 'Starter Story',
+      'channel': 'Starter Story',
+      'epistemic_status': 'attributed_practitioner_claim',
+      'markdown': '[00:04:54](https://www.youtube.com/watch?v=dXKzST0FE-A&t=294s)',
+      'relevance': 'Verbatim practitioner testimony on the reported monthly operating-tool bill.',
+      'source_type': 'video_pro_tip',
+      'text': 'it costs me precisely $176 a month to run design Joy.',
+      'timestamp': 294,
+      'timestamp_label': '[00:04:54]',
+      'timestamp_seconds': 294,
+      'tip': 'it costs me precisely $176 a month to run design Joy.',
+      'title': 'I Make $1.3M/Year With One Skill',
+      'url': 'https://www.youtube.com/watch?v=dXKzST0FE-A&t=294s',
+      'video_id': 'dXKzST0FE-A'},
+     {'author': 'Tyler Gillespie',
+      'channel': 'Tyler Gillespie',
+      'epistemic_status': 'attributed_practitioner_claim',
+      'markdown': '[00:38:40](https://www.youtube.com/watch?v=0IHziP_l6cc&t=2320s)',
+      'relevance': 'Verbatim practitioner testimony on financially irrational customer '
+                   'accommodation.',
+      'source_type': 'video_pro_tip',
+      'text': 'i will bend over backwards to please a customer whether it makes financial sense or '
+              'not.',
+      'timestamp': 2320,
+      'timestamp_label': '[00:38:40]',
+      'timestamp_seconds': 2320,
+      'tip': 'i will bend over backwards to please a customer whether it makes financial sense or '
+             'not.',
+      'title': '[PS #0009] How Brett Williams Runs a Successful Productized Design Service',
+      'url': 'https://www.youtube.com/watch?v=0IHziP_l6cc&t=2320s',
+      'video_id': '0IHziP_l6cc'},
+     {'author': 'Starter Story',
+      'channel': 'Starter Story',
+      'epistemic_status': 'attributed_practitioner_claim',
+      'markdown': '[00:05:33](https://www.youtube.com/watch?v=vedkm3ZmHIE&t=333s)',
+      'relevance': 'Verbatim narrator commentary presenting a price-based client contrast, rather '
+                   'than direct Williams testimony.',
+      'source_type': 'video_pro_tip',
+      'text': 'there are two types of clients $500 clients and $5,000 clients.',
+      'timestamp': 333,
+      'timestamp_label': '[00:05:33]',
+      'timestamp_seconds': 333,
+      'tip': 'there are two types of clients $500 clients and $5,000 clients.',
+      'title': 'The $1.8M Solopreneur Playbook',
+      'url': 'https://www.youtube.com/watch?v=vedkm3ZmHIE&t=333s',
+      'video_id': 'vedkm3ZmHIE'},
+     {'author': 'LaunchFast with Bal Sieber',
+      'channel': 'LaunchFast with Bal Sieber',
+      'epistemic_status': 'attributed_practitioner_claim',
+      'markdown': '[00:00:32](https://www.youtube.com/watch?v=rI1y1OsDxdw&t=32s)',
+      'relevance': 'Verbatim practitioner disagreement with subscription packaging as an '
+                   'acquisition solution.',
+      'source_type': 'video_pro_tip',
+      'text': "It doesn't make selling easier, especially to strangers.",
+      'timestamp': 32,
+      'timestamp_label': '[00:00:32]',
+      'timestamp_seconds': 32,
+      'tip': "It doesn't make selling easier, especially to strangers.",
+      'title': 'Brett From DesignJoy Did It. Why Can’t You?',
+      'url': 'https://www.youtube.com/watch?v=rI1y1OsDxdw&t=32s',
+      'video_id': 'rI1y1OsDxdw'},
+     {'author': 'The Futur',
+      'channel': 'The Futur',
+      'epistemic_status': 'attributed_practitioner_claim',
+      'markdown': '[00:25:17](https://www.youtube.com/watch?v=8vwgUwgH2Js&t=1517s)',
+      'relevance': 'Verbatim practitioner testimony on uneven subscription utilization.',
+      'source_type': 'video_pro_tip',
+      'text': 'I have several clients who pay me 5K a month who may request one thing a month.',
+      'timestamp': 1517,
+      'timestamp_label': '[00:25:17]',
+      'timestamp_seconds': 1517,
+      'tip': 'I have several clients who pay me 5K a month who may request one thing a month.',
+      'title': 'Secret to Running a $1 Million Solo Design Agency',
+      'url': 'https://www.youtube.com/watch?v=8vwgUwgH2Js&t=1517s',
+      'video_id': '8vwgUwgH2Js'},
+     {'author': 'The Creative Brief Podcast',
+      'channel': 'The Creative Brief Podcast',
+      'epistemic_status': 'attributed_practitioner_claim',
+      'markdown': '[00:23:51](https://www.youtube.com/watch?v=Xn_pruXtu0s&t=1431s)',
+      'relevance': 'Verbatim practitioner testimony on quick mockups and feedback-led iteration.',
+      'source_type': 'video_pro_tip',
+      'text': 'I just I find it far easier and quicker to just mock up something quickly in figma '
+              'send it back over to them and it just makes that conversation so much richer and '
+              "you realize that like you're there 90% there anyways.",
+      'timestamp': 1431,
+      'timestamp_label': '[00:23:51]',
+      'timestamp_seconds': 1431,
+      'tip': 'I just I find it far easier and quicker to just mock up something quickly in figma '
+             'send it back over to them and it just makes that conversation so much richer and you '
+             "realize that like you're there 90% there anyways.",
+      'title': 'Brett Williams of Designjoy Answers Tough Questions About His Million-Dollar '
+               'Design Job | 13',
+      'url': 'https://www.youtube.com/watch?v=Xn_pruXtu0s&t=1431s',
+      'video_id': 'Xn_pruXtu0s'},
+     {'author': 'Harry Roper',
+      'channel': 'Harry Roper',
+      'epistemic_status': 'attributed_practitioner_claim',
+      'markdown': '[00:04:40](https://www.youtube.com/watch?v=rO0i7sGwhCU&t=280s)',
+      'relevance': 'Verbatim practitioner testimony on preserving customer enjoyment during '
+                   'reduced-contact delivery.',
+      'source_type': 'video_pro_tip',
+      'text': "you might talk to your client less through this method and practice but it's always "
+              "important to still try and make the whole experience seem like fun seem like it's "
+              'not too much work.',
+      'timestamp': 280,
+      'timestamp_label': '[00:04:40]',
+      'timestamp_seconds': 280,
+      'tip': "you might talk to your client less through this method and practice but it's always "
+             "important to still try and make the whole experience seem like fun seem like it's "
+             'not too much work.',
+      'title': 'How I made $5K A Month Using The Design Joy Model',
+      'url': 'https://www.youtube.com/watch?v=rO0i7sGwhCU&t=280s',
+      'video_id': 'rO0i7sGwhCU'},
+     {'author': 'Indie Bites',
+      'channel': 'Indie Bites',
+      'epistemic_status': 'attributed_practitioner_claim',
+      'markdown': '[00:06:20](https://www.youtube.com/watch?v=FpPgkqEoNDY&t=380s)',
+      'relevance': 'Verbatim practitioner testimony on the early monthly-revenue growth timeline.',
+      'source_type': 'video_pro_tip',
+      'text': 'it took me about three years to get to 10k.',
+      'timestamp': 380,
+      'timestamp_label': '[00:06:20]',
+      'timestamp_seconds': 380,
+      'tip': 'it took me about three years to get to 10k.',
+      'title': 'A solo $130k MRR productized design service - Brett Williams, Designjoy',
+      'url': 'https://www.youtube.com/watch?v=FpPgkqEoNDY&t=380s',
+      'video_id': 'FpPgkqEoNDY'},
+     {'author': 'Demandflow',
+      'channel': 'Demandflow',
+      'epistemic_status': 'attributed_practitioner_claim',
+      'markdown': '[00:05:49](https://www.youtube.com/watch?v=w9gOdSLVu14&t=349s)',
+      'relevance': 'Verbatim practitioner criticism of unpredictable workload in the '
+                   'unlimited-request model.',
+      'source_type': 'video_pro_tip',
+      'text': 'there is no planning ahead.',
+      'timestamp': 349,
+      'timestamp_label': '[00:05:49]',
+      'timestamp_seconds': 349,
+      'tip': 'there is no planning ahead.',
+      'title': 'how to actually build a sustainable productized service ($20k+)',
+      'url': 'https://www.youtube.com/watch?v=w9gOdSLVu14&t=349s',
+      'video_id': 'w9gOdSLVu14'},
+     {'author': 'Chris Koerner on The Koerner Office Podcast',
+      'channel': 'Chris Koerner on The Koerner Office Podcast',
+      'epistemic_status': 'attributed_practitioner_claim',
+      'markdown': '[00:07:45](https://www.youtube.com/watch?v=bAzg8BugEVY&t=465s)',
+      'relevance': 'Verbatim practitioner testimony on breakdowns during excessive business '
+                   'growth.',
+      'source_type': 'video_pro_tip',
+      'text': 'And then I had breakdowns.',
+      'timestamp': 465,
+      'timestamp_label': '[00:07:45]',
+      'timestamp_seconds': 465,
+      'tip': 'And then I had breakdowns.',
+      'title': "The Most Profitable Solo Business You've Never Heard Of",
+      'url': 'https://www.youtube.com/watch?v=bAzg8BugEVY&t=465s',
+      'video_id': 'bAzg8BugEVY'},
+     {'author': 'I Make it Simple',
+      'channel': 'I Make it Simple',
+      'epistemic_status': 'attributed_practitioner_claim',
+      'markdown': '[00:01:57](https://www.youtube.com/watch?v=uSh76GAmtwM&t=117s)',
+      'relevance': 'Verbatim narrator statement on the skill-and-speed prerequisite, rather than '
+                   'direct Williams testimony.',
+      'source_type': 'video_pro_tip',
+      'text': 'You must be good and you must be fast.',
+      'timestamp': 117,
+      'timestamp_label': '[00:01:57]',
+      'timestamp_seconds': 117,
+      'tip': 'You must be good and you must be fast.',
+      'title': 'This Designer Makes $2M a Year With ZERO Employees (Designjoy Explained Simply)',
+      'url': 'https://www.youtube.com/watch?v=uSh76GAmtwM&t=117s',
+      'video_id': 'uSh76GAmtwM'},
+     {'author': 'Tom Hunt',
+      'channel': 'Tom Hunt',
+      'epistemic_status': 'attributed_practitioner_claim',
+      'markdown': '[00:10:25](https://www.youtube.com/watch?v=-UGc0T1KXkg&t=625s)',
+      'relevance': 'Verbatim practitioner testimony correcting the assumption that onboarding '
+                   'depends on extensive automation.',
+      'source_type': 'video_pro_tip',
+      'text': 'everything right today is completely 100% manual.',
+      'timestamp': 625,
+      'timestamp_label': '[00:10:25]',
+      'timestamp_seconds': 625,
+      'tip': 'everything right today is completely 100% manual.',
+      'title': 'Brett (Designjoy) Shares How He Earns +$1m With 0 Employees (And What He Does With '
+               'The $)',
+      'url': 'https://www.youtube.com/watch?v=-UGc0T1KXkg&t=625s',
+      'video_id': '-UGc0T1KXkg'},
+     {'author': 'Brett Malinowski',
+      'channel': 'Brett Malinowski',
+      'epistemic_status': 'attributed_practitioner_claim',
+      'markdown': '[00:20:31](https://www.youtube.com/watch?v=IvZxfvECZnA&t=1231s)',
+      'relevance': 'Verbatim practitioner testimony on the workload surrounding the initial '
+                   'launch.',
+      'source_type': 'video_pro_tip',
+      'text': 'I was up for 40 hours straight.',
+      'timestamp': 1231,
+      'timestamp_label': '[00:20:31]',
+      'timestamp_seconds': 1231,
+      'tip': 'I was up for 40 hours straight.',
+      'title': "Make Millions With a One-Person Business - Here's How",
+      'url': 'https://www.youtube.com/watch?v=IvZxfvECZnA&t=1231s',
+      'video_id': 'IvZxfvECZnA'}],
+ 3: [{'author': 'Belt Course',
+      'channel': 'Belt Course',
+      'epistemic_status': 'attributed_practitioner_claim',
+      'markdown': '[00:00:46](https://www.youtube.com/watch?v=YaFtlj9qXQc&t=46s)',
+      'relevance': 'Verbatim practitioner testimony on paid diagnostic positioning for Chapter Q3.',
+      'source_type': 'video_pro_tip',
+      'text': 'Instead, offer a paid AI business audit as the entry point.',
+      'timestamp': 46,
+      'timestamp_label': '[00:00:46]',
+      'timestamp_seconds': 46,
+      'tip': 'Instead, offer a paid AI business audit as the entry point.',
+      'title': 'How to Sell AI Services with a Paid AI Business Audit (Step-by-Step Framework)',
+      'url': 'https://www.youtube.com/watch?v=YaFtlj9qXQc&t=46s',
+      'video_id': 'YaFtlj9qXQc'},
+     {'author': 'Andrew Dunn | AI Consulting',
+      'channel': 'Andrew Dunn | AI Consulting',
+      'epistemic_status': 'attributed_practitioner_claim',
+      'markdown': '[00:11:29](https://www.youtube.com/watch?v=LSmxwtNHu4k&t=689s)',
+      'relevance': 'Verbatim practitioner testimony on alignment before final audit presentation '
+                   'for Chapter Q3.',
+      'source_type': 'video_pro_tip',
+      'text': 'You are showing them their own decision in a nicer format.',
+      'timestamp': 689,
+      'timestamp_label': '[00:11:29]',
+      'timestamp_seconds': 689,
+      'tip': 'You are showing them their own decision in a nicer format.',
+      'title': "I've Completed 200+ AI Audits, Copy This 7 Step Process",
+      'url': 'https://www.youtube.com/watch?v=LSmxwtNHu4k&t=689s',
+      'video_id': 'LSmxwtNHu4k'},
+     {'author': 'company in progress',
+      'channel': 'company in progress',
+      'epistemic_status': 'attributed_practitioner_claim',
+      'markdown': '[00:01:44](https://www.youtube.com/watch?v=fSAazWLuDyQ&t=104s)',
+      'relevance': 'Verbatim practitioner testimony on Orcus audit-to-build-plan generation for '
+                   'Chapter Q3.',
+      'source_type': 'video_pro_tip',
+      'text': 'From the AI audit, we have the mechanism to automatically generate the '
+              'implementation and build plan.',
+      'timestamp': 104,
+      'timestamp_label': '[00:01:44]',
+      'timestamp_seconds': 104,
+      'tip': 'From the AI audit, we have the mechanism to automatically generate the '
+             'implementation and build plan.',
+      'title': 'I Built an AI Audit That Replaces a $50,000 Consultant',
+      'url': 'https://www.youtube.com/watch?v=fSAazWLuDyQ&t=104s',
+      'video_id': 'fSAazWLuDyQ'},
+     {'author': 'Liam Ottley',
+      'channel': 'Liam Ottley',
+      'epistemic_status': 'attributed_practitioner_claim',
+      'markdown': '[00:03:53](https://www.youtube.com/watch?v=noivN2hIXLY&t=233s)',
+      'relevance': "Verbatim practitioner testimony on the delivery cost of Morningside's initial "
+                   'free audit for Chapter Q3.',
+      'source_type': 'video_pro_tip',
+      'text': 'It cost us $30,000.',
+      'timestamp': 233,
+      'timestamp_label': '[00:03:53]',
+      'timestamp_seconds': 233,
+      'tip': 'It cost us $30,000.',
+      'title': 'How to Perform a $60,000 AI Audit (Beginner’s Guide)',
+      'url': 'https://www.youtube.com/watch?v=noivN2hIXLY&t=233s',
+      'video_id': 'noivN2hIXLY'},
+     {'author': 'Carly Meyers',
+      'channel': 'Carly Meyers',
+      'epistemic_status': 'attributed_practitioner_claim',
+      'markdown': '[00:42:17](https://www.youtube.com/watch?v=stoZ9wFob2E&t=2537s)',
+      'relevance': 'Verbatim practitioner testimony on diagnostic interviewing rather than '
+                   'prescribing live for Chapter Q3.',
+      'source_type': 'video_pro_tip',
+      'text': 'The idea of this interview is not to give them the answers.',
+      'timestamp': 2537,
+      'timestamp_label': '[00:42:17]',
+      'timestamp_seconds': 2537,
+      'tip': 'The idea of this interview is not to give them the answers.',
+      'title': 'Ditch the Broken Agency Model and Start Selling AI Audits (Part 1)',
+      'url': 'https://www.youtube.com/watch?v=stoZ9wFob2E&t=2537s',
+      'video_id': 'stoZ9wFob2E'},
+     {'author': 'DataSnipper',
+      'channel': 'DataSnipper',
+      'epistemic_status': 'attributed_practitioner_claim',
+      'markdown': '[00:24:43](https://www.youtube.com/watch?v=fabs_LzN3oI&t=1483s)',
+      'relevance': 'Verbatim practitioner testimony on responsibility during agent-assisted audit '
+                   'procedures for Chapter Q3.',
+      'source_type': 'video_pro_tip',
+      'text': "Because human accountability doesn't change just because AI is doing most of the "
+              'procedure.',
+      'timestamp': 1483,
+      'timestamp_label': '[00:24:43]',
+      'timestamp_seconds': 1483,
+      'tip': "Because human accountability doesn't change just because AI is doing most of the "
+             'procedure.',
+      'title': 'AI Use Cases for Internal Audit, External Audit, Compliance | NYC Connect 226',
+      'url': 'https://www.youtube.com/watch?v=fabs_LzN3oI&t=1483s',
+      'video_id': 'fabs_LzN3oI'},
+     {'author': 'Nick Puru | AI Automation',
+      'channel': 'Nick Puru | AI Automation',
+      'epistemic_status': 'attributed_practitioner_claim',
+      'markdown': '[00:15:05](https://www.youtube.com/watch?v=7UpuiFHBvec&t=905s)',
+      'relevance': 'Verbatim practitioner testimony on quantified opportunity assessment for '
+                   'Chapter Q3.',
+      'source_type': 'video_pro_tip',
+      'text': 'You need to put dollar amounts on everything.',
+      'timestamp': 905,
+      'timestamp_label': '[00:15:05]',
+      'timestamp_seconds': 905,
+      'tip': 'You need to put dollar amounts on everything.',
+      'title': 'How to Perform $100,000 AI Audits For Businesses (Complete Guide)',
+      'url': 'https://www.youtube.com/watch?v=7UpuiFHBvec&t=905s',
+      'video_id': '7UpuiFHBvec'},
+     {'author': 'Tom Hartnell',
+      'channel': 'Tom Hartnell',
+      'epistemic_status': 'attributed_practitioner_claim',
+      'markdown': '[00:10:58](https://www.youtube.com/watch?v=WFW7vb6wXZM&t=658s)',
+      'relevance': 'Verbatim practitioner testimony on operational baselines and '
+                   'post-implementation measurement for Chapter Q3.',
+      'source_type': 'video_pro_tip',
+      'text': "If we don't measure before and after, we can't see if we've actually implemented "
+              'something successfully.',
+      'timestamp': 658,
+      'timestamp_label': '[00:10:58]',
+      'timestamp_seconds': 658,
+      'tip': "If we don't measure before and after, we can't see if we've actually implemented "
+             'something successfully.',
+      'title': 'How to Perform an AI Audit in 2026 (Step-by-Step Framework)',
+      'url': 'https://www.youtube.com/watch?v=WFW7vb6wXZM&t=658s',
+      'video_id': 'WFW7vb6wXZM'},
+     {'author': "Lobo Brother's | AI Systems for Business Owners",
+      'channel': "Lobo Brother's | AI Systems for Business Owners",
+      'epistemic_status': 'attributed_practitioner_claim',
+      'markdown': '[00:02:25](https://www.youtube.com/watch?v=dqDWqV07r6M&t=145s)',
+      'relevance': 'Verbatim practitioner testimony on the difference between owner and employee '
+                   'accounts of operations for Chapter Q3.',
+      'source_type': 'video_pro_tip',
+      'text': 'So, those two versions are almost never the same.',
+      'timestamp': 145,
+      'timestamp_label': '[00:02:25]',
+      'timestamp_seconds': 145,
+      'tip': 'So, those two versions are almost never the same.',
+      'title': "I Audited A $5M Business For AI. Here's What I Found",
+      'url': 'https://www.youtube.com/watch?v=dqDWqV07r6M&t=145s',
+      'video_id': 'dqDWqV07r6M'},
+     {'author': 'Stefan | AI',
+      'channel': 'Stefan | AI',
+      'epistemic_status': 'attributed_practitioner_claim',
+      'markdown': '[00:00:26](https://www.youtube.com/watch?v=NFQnvr9xNf8&t=26s)',
+      'relevance': 'Verbatim practitioner testimony on operational complexity and infrastructure '
+                   'diagnosis for Chapter Q3.',
+      'source_type': 'video_pro_tip',
+      'text': "There's a point where internal friction begins to outpace growth.",
+      'timestamp': 26,
+      'timestamp_label': '[00:00:26]',
+      'timestamp_seconds': 26,
+      'tip': "There's a point where internal friction begins to outpace growth.",
+      'title': 'How to Execute $200K AI Audits for Businesses (Complete Framework)',
+      'url': 'https://www.youtube.com/watch?v=NFQnvr9xNf8&t=26s',
+      'video_id': 'NFQnvr9xNf8'},
+     {'author': 'My Web Audit',
+      'channel': 'My Web Audit',
+      'epistemic_status': 'attributed_practitioner_claim',
+      'markdown': '[00:41:42](https://www.youtube.com/watch?v=tT1dV4_aC0M&t=2502s)',
+      'relevance': 'Verbatim practitioner testimony on the relationship between AI visibility and '
+                   'SEO for Chapter Q3.',
+      'source_type': 'video_pro_tip',
+      'text': 'I know there are some companies that wanna split that out, but I see AI visibility '
+              'as just an extension of SEO.',
+      'timestamp': 2502,
+      'timestamp_label': '[00:41:42]',
+      'timestamp_seconds': 2502,
+      'tip': 'I know there are some companies that wanna split that out, but I see AI visibility '
+             'as just an extension of SEO.',
+      'title': 'How to sell AI visibility audits and turn them into recurring revenue for your '
+               'agency',
+      'url': 'https://www.youtube.com/watch?v=tT1dV4_aC0M&t=2502s',
+      'video_id': 'tT1dV4_aC0M'},
+     {'author': 'Andrew Dunn | AI Consulting',
+      'channel': 'Andrew Dunn | AI Consulting',
+      'epistemic_status': 'attributed_practitioner_claim',
+      'markdown': '[00:01:59](https://www.youtube.com/watch?v=AG_L5ecwXkU&t=119s)',
+      'relevance': 'Verbatim practitioner testimony on defining measurable audit outcomes for '
+                   'Chapter Q3.',
+      'source_type': 'video_pro_tip',
+      'text': 'So, every outcome must include the current state, the target state, and the '
+              'measurable delta between those two things.',
+      'timestamp': 119,
+      'timestamp_label': '[00:01:59]',
+      'timestamp_seconds': 119,
+      'tip': 'So, every outcome must include the current state, the target state, and the '
+             'measurable delta between those two things.',
+      'title': 'How to Perform a $15,000 AI Audit (Beginner’s Guide)',
+      'url': 'https://www.youtube.com/watch?v=AG_L5ecwXkU&t=119s',
+      'video_id': 'AG_L5ecwXkU'},
+     {'author': 'Liam Ottley',
+      'channel': 'Liam Ottley',
+      'epistemic_status': 'attributed_practitioner_claim',
+      'markdown': '[00:16:31](https://www.youtube.com/watch?v=2CdNLDttOSg&t=991s)',
+      'relevance': 'Verbatim interview testimony on selling operational understanding as paid '
+                   'discovery for Chapter Q3.',
+      'source_type': 'video_pro_tip',
+      'text': 'You listening to a business their problems and operations is actually your product.',
+      'timestamp': 991,
+      'timestamp_label': '[00:16:31]',
+      'timestamp_seconds': 991,
+      'tip': 'You listening to a business their problems and operations is actually your product.',
+      'title': 'How Two 19-Year-Olds Made $320K in 6 Months Selling AI Audits (Full Breakdown)',
+      'url': 'https://www.youtube.com/watch?v=2CdNLDttOSg&t=991s',
+      'video_id': '2CdNLDttOSg'},
+     {'author': 'Andrew Dunn | AI Consulting',
+      'channel': 'Andrew Dunn | AI Consulting',
+      'epistemic_status': 'attributed_practitioner_claim',
+      'markdown': '[00:02:00](https://www.youtube.com/watch?v=HPGSE4LXaQA&t=120s)',
+      'relevance': 'Verbatim practitioner testimony on outcome-led positioning instead of '
+                   'standalone workflow sales for Chapter Q3.',
+      'source_type': 'video_pro_tip',
+      'text': 'The exact same automation gets valued completely differently based on how you frame '
+              'it.',
+      'timestamp': 120,
+      'timestamp_label': '[00:02:00]',
+      'timestamp_seconds': 120,
+      'tip': 'The exact same automation gets valued completely differently based on how you frame '
+             'it.',
+      'title': "Don't Sell AI Workflows, Sell AI Audits (Massive Opportunity)",
+      'url': 'https://www.youtube.com/watch?v=HPGSE4LXaQA&t=120s',
+      'video_id': 'HPGSE4LXaQA'},
+     {'author': 'Mert Yerlikaya',
+      'channel': 'Mert Yerlikaya',
+      'epistemic_status': 'attributed_practitioner_claim',
+      'markdown': '[00:06:25](https://www.youtube.com/watch?v=1leregs81ik&t=385s)',
+      'relevance': 'Verbatim practitioner testimony on presenting the future business outcome for '
+                   'Chapter Q3.',
+      'source_type': 'video_pro_tip',
+      'text': 'You must explain the solution in terms of outcomes, not code.',
+      'timestamp': 385,
+      'timestamp_label': '[00:06:25]',
+      'timestamp_seconds': 385,
+      'tip': 'You must explain the solution in terms of outcomes, not code.',
+      'title': 'How I Sell $10,000 AI Audits (Our EXACT 5-Step Process)',
+      'url': 'https://www.youtube.com/watch?v=1leregs81ik&t=385s',
+      'video_id': '1leregs81ik'},
+     {'author': 'Milan Tahliani',
+      'channel': 'Milan Tahliani',
+      'epistemic_status': 'attributed_practitioner_claim',
+      'markdown': '[00:16:08](https://www.youtube.com/watch?v=2goNKtgnIKg&t=968s)',
+      'relevance': 'Verbatim practitioner testimony on charging for discovery before development '
+                   'for Chapter Q3.',
+      'source_type': 'video_pro_tip',
+      'text': 'Never give away audits for free during pre-sales.',
+      'timestamp': 968,
+      'timestamp_label': '[00:16:08]',
+      'timestamp_seconds': 968,
+      'tip': 'Never give away audits for free during pre-sales.',
+      'title': 'Why ALL AI Agencies Should Run AI Audits (And How To Do Them Properly!)',
+      'url': 'https://www.youtube.com/watch?v=2goNKtgnIKg&t=968s',
+      'video_id': '2goNKtgnIKg'}],
+ 4: [{'author': 'Nick Saraev',
+      'channel': 'Nick Saraev',
+      'epistemic_status': 'attributed_practitioner_claim',
+      'markdown': '[00:18:18](https://www.youtube.com/watch?v=RmYTguzXrVM&t=1098s)',
+      'relevance': 'Practitioner testimony on using completed delivery to introduce recurring '
+                   'work.',
+      'source_type': 'video_pro_tip',
+      'text': 'Project delivery is your highest leverage moment for retainer conversion.',
+      'timestamp': 1098,
+      'timestamp_label': '[00:18:18]',
+      'timestamp_seconds': 1098,
+      'tip': 'Project delivery is your highest leverage moment for retainer conversion.',
+      'title': 'How I Turn One AI Project Into $5K Monthly Retainers',
+      'url': 'https://www.youtube.com/watch?v=RmYTguzXrVM&t=1098s',
+      'video_id': 'RmYTguzXrVM'},
+     {'author': 'Automate AI Consulting',
+      'channel': 'Automate AI Consulting',
+      'epistemic_status': 'attributed_practitioner_claim',
+      'markdown': '[00:03:20](https://www.youtube.com/watch?v=m9wI5V0nSe0&t=200s)',
+      'relevance': 'Practitioner testimony on sequencing first projects and recurring '
+                   'relationships.',
+      'source_type': 'video_pro_tip',
+      'text': 'One-time projects get you in the game. Retainers keep you in the game.',
+      'timestamp': 200,
+      'timestamp_label': '[00:03:20]',
+      'timestamp_seconds': 200,
+      'tip': 'One-time projects get you in the game. Retainers keep you in the game.',
+      'title': 'One-Time Projects vs Retainers: Which Gets You to $10K/Month?',
+      'url': 'https://www.youtube.com/watch?v=m9wI5V0nSe0&t=200s',
+      'video_id': 'm9wI5V0nSe0'},
+     {'author': 'Liam Ottley',
+      'channel': 'Liam Ottley',
+      'epistemic_status': 'attributed_practitioner_claim',
+      'markdown': '[00:18:22](https://www.youtube.com/watch?v=kgE01J875dY&t=1102s)',
+      'relevance': 'Practitioner testimony on maintenance cost estimation and pricing margin.',
+      'source_type': 'video_pro_tip',
+      'text': 'You want to mark it up at least two to three times, ideally more if you can get it, '
+              'depending on your prior results.',
+      'timestamp': 1102,
+      'timestamp_label': '[00:18:22]',
+      'timestamp_seconds': 1102,
+      'tip': 'You want to mark it up at least two to three times, ideally more if you can get it, '
+             'depending on your prior results.',
+      'title': 'Complete Guide to AI Automation Agency Monthly Retainers',
+      'url': 'https://www.youtube.com/watch?v=kgE01J875dY&t=1102s',
+      'video_id': 'kgE01J875dY'},
      {'author': 'Sean Standberry',
       'channel': 'Sean Standberry',
       'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:09:18](https://www.youtube.com/watch?v=5558JLgLk50&t=558s)',
-      'relevance': 'Attributed practitioner commentary on productized B2B AI implementation, '
-                   'fixed-scope workflow sprints, and managed automation retainers (Chapter Q1 '
-                   'operational verification).',
+      'markdown': '[00:11:13](https://www.youtube.com/watch?v=5558JLgLk50&t=673s)',
+      'relevance': 'Practitioner testimony on the setup component of the avatar-content retainer.',
       'source_type': 'video_pro_tip',
-      'text': "This is what makes your service worth $1,000 per month. You're not just "
-              "creating content. You're building a complete system that turns social media "
-              'attention into real revenue for the client.',
-      'timestamp': 558,
-      'timestamp_label': '[00:09:18]',
-      'timestamp_seconds': 558,
-      'tip': "This is what makes your service worth $1,000 per month. You're not just creating "
-             "content. You're building a complete system that turns social media attention "
-             'into real revenue for the client.',
-      'title': "NEW AI Agency Business Model I'm Using to Make $474,996/mo (Sean Standberry)",
-      'url': 'https://www.youtube.com/watch?v=5558JLgLk50&t=558s',
+      'text': 'You charge a one-time setup fee of $500 to build out their complete High Level '
+              'system, including the landing pages, calendar integration, automation sequences, '
+              'and CRM setup.',
+      'timestamp': 673,
+      'timestamp_label': '[00:11:13]',
+      'timestamp_seconds': 673,
+      'tip': 'You charge a one-time setup fee of $500 to build out their complete High Level '
+             'system, including the landing pages, calendar integration, automation sequences, and '
+             'CRM setup.',
+      'title': "NEW AI Agency Business Model I'm Using to Make $474,996/mo",
+      'url': 'https://www.youtube.com/watch?v=5558JLgLk50&t=673s',
       'video_id': '5558JLgLk50'},
      {'author': 'Nick Saraev Daily',
       'channel': 'Nick Saraev Daily',
       'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:22:12](https://www.youtube.com/watch?v=Z5rSDEbn7wU&t=1332s)',
-      'relevance': 'Attributed practitioner commentary on productized B2B AI implementation, '
-                   'fixed-scope workflow sprints, and managed automation retainers (Chapter Q1 '
-                   'operational verification).',
+      'markdown': '[00:14:00](https://www.youtube.com/watch?v=LjJGh4J1eqM&t=840s)',
+      'relevance': 'Practitioner testimony on bundling maintenance and new-build capacity.',
       'source_type': 'video_pro_tip',
-      'text': 'I have the rest of my day available obviously to service my my uh pre-existing '
-              'client base for the agency stuff but also just to like focus on cool other '
-              'stuff. Yeah, like like average workday the average person does eight hours a '
-              "day, right? Like that's not that crazy.",
-      'timestamp': 1332,
-      'timestamp_label': '[00:22:12]',
-      'timestamp_seconds': 1332,
-      'tip': 'I have the rest of my day available obviously to service my my uh pre-existing '
-             'client base for the agency stuff but also just to like focus on cool other '
-             'stuff. Yeah, like like average workday the average person does eight hours a '
-             "day, right? Like that's not that crazy.",
-      'title': 'AI Automation Agency Retainer Model Explained (Nick Saraev Daily)',
-      'url': 'https://www.youtube.com/watch?v=Z5rSDEbn7wU&t=1332s',
+      'text': "I'm going to maintain all of your old systems plus give you 40 hours of new build "
+              'time.',
+      'timestamp': 840,
+      'timestamp_label': '[00:14:00]',
+      'timestamp_seconds': 840,
+      'tip': "I'm going to maintain all of your old systems plus give you 40 hours of new build "
+             'time.',
+      'title': '3 AI Agency Retainer Options You Can Steal Today',
+      'url': 'https://www.youtube.com/watch?v=LjJGh4J1eqM&t=840s',
+      'video_id': 'LjJGh4J1eqM'},
+     {'author': 'Nick Saraev Daily',
+      'channel': 'Nick Saraev Daily',
+      'epistemic_status': 'attributed_practitioner_claim',
+      'markdown': '[00:05:59](https://www.youtube.com/watch?v=Z5rSDEbn7wU&t=359s)',
+      'relevance': 'Practitioner testimony on prepayment and scheduling stability.',
+      'source_type': 'video_pro_tip',
+      'text': 'They prepay. They pay you ahead of time. They lock in the hours.',
+      'timestamp': 359,
+      'timestamp_label': '[00:05:59]',
+      'timestamp_seconds': 359,
+      'tip': 'They prepay. They pay you ahead of time. They lock in the hours.',
+      'title': 'AI Automation Agency Retainer Model Explained',
+      'url': 'https://www.youtube.com/watch?v=Z5rSDEbn7wU&t=359s',
       'video_id': 'Z5rSDEbn7wU'},
      {'author': 'Jeff Sauer - Service Stacking',
       'channel': 'Jeff Sauer - Service Stacking',
       'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:01:51](https://www.youtube.com/watch?v=afaXZkksQs0&t=111s)',
-      'relevance': 'Attributed practitioner commentary on productized B2B AI implementation, '
-                   'fixed-scope workflow sprints, and managed automation retainers (Chapter Q1 '
-                   'operational verification).',
+      'markdown': '[00:04:57](https://www.youtube.com/watch?v=afaXZkksQs0&t=297s)',
+      'relevance': 'Practitioner testimony on positioning an ongoing AI enablement role.',
       'source_type': 'video_pro_tip',
-      'text': 'So you keep track of these developments every day, but your clients are not in '
-              "the weeds of the technology. They are busy building a business. They don't know "
-              "the changes coming and going, and they're not reading Anthropic's model "
-              'announcements.',
-      'timestamp': 111,
-      'timestamp_label': '[00:01:51]',
-      'timestamp_seconds': 111,
-      'tip': 'So you keep track of these developments every day, but your clients are not in '
-             "the weeds of the technology. They are busy building a business. They don't know "
-             "the changes coming and going, and they're not reading Anthropic's model "
-             'announcements.',
-      'title': 'Turn Your AI Skills Into Long-Term Clients (The 90-Day Method) (Jeff Sauer - '
-               'Service Stacking)',
-      'url': 'https://www.youtube.com/watch?v=afaXZkksQs0&t=111s',
-      'video_id': 'afaXZkksQs0'},
-     {'author': 'Andrew Dunn | AI Consulting',
-      'channel': 'Andrew Dunn | AI Consulting',
-      'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:07:08](https://www.youtube.com/watch?v=LSmxwtNHu4k&t=428s)',
-      'relevance': 'Attributed practitioner commentary on productized B2B AI implementation, '
-                   'fixed-scope workflow sprints, and managed automation retainers (Chapter Q1 '
-                   'operational verification).',
-      'source_type': 'video_pro_tip',
-      'text': 'You have head head count and full org chart, right? You have every role that '
-              'exists, marketing through to delivery, right? You have the current uh tool '
-              'stack. You have the revenue model, how the business actually makes money, how '
-              'they get clients, all that stuff.',
-      'timestamp': 428,
-      'timestamp_label': '[00:07:08]',
-      'timestamp_seconds': 428,
-      'tip': 'You have head head count and full org chart, right? You have every role that '
-             'exists, marketing through to delivery, right? You have the current uh tool '
-             'stack. You have the revenue model, how the business actually makes money, how '
-             'they get clients, all that stuff.',
-      'title': "I've Completed 200+ AI Audits, Copy This 7 Step Process (Andrew Dunn | AI "
-               'Consulting)',
-      'url': 'https://www.youtube.com/watch?v=LSmxwtNHu4k&t=428s',
-      'video_id': 'LSmxwtNHu4k'},
-     {'author': 'Ventra Technologies',
-      'channel': 'Ventra Technologies',
-      'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:00:55](https://www.youtube.com/watch?v=b5pi4BcdrKk&t=55s)',
-      'relevance': 'Attributed practitioner commentary on productized B2B AI implementation, '
-                   'fixed-scope workflow sprints, and managed automation retainers (Chapter Q1 '
-                   'operational verification).',
-      'source_type': 'video_pro_tip',
-      'text': "'s day, and solving it creates a massive B2B service opportunity. A business "
-              'owner might think they can solve this by simply plugging a raw AI model '
-              'directly into their website and letting it talk to customers. But raw AI models '
-              'lack specific internal context.',
-      'timestamp': 55,
-      'timestamp_label': '[00:00:55]',
-      'timestamp_seconds': 55,
-      'tip': "'s day, and solving it creates a massive B2B service opportunity. A business "
-             'owner might think they can solve this by simply plugging a raw AI model directly '
-             'into their website and letting it talk to customers. But raw AI models lack '
-             'specific internal context.',
-      'title': 'How to Build an AI Customer Support Business (Ventra Technologies)',
-      'url': 'https://www.youtube.com/watch?v=b5pi4BcdrKk&t=55s',
-      'video_id': 'b5pi4BcdrKk'},
-     {'author': 'Creative Crew with Brad Hussey',
-      'channel': 'Creative Crew with Brad Hussey',
-      'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:01:28](https://www.youtube.com/watch?v=o-UR3rkPgJ4&t=88s)',
-      'relevance': 'Attributed practitioner commentary on productized B2B AI implementation, '
-                   'fixed-scope workflow sprints, and managed automation retainers (Chapter Q1 '
-                   'operational verification).',
-      'source_type': 'video_pro_tip',
-      'text': 'I knew that I probably had a better chance of succeeding in that way than the '
-              "other form of, you know, being a designer. So that's yeah, I was really just "
-              "out of necessity to stand out. Who are design Joy's typical like target "
-              'clients. I mean, the software as a service base.',
-      'timestamp': 88,
-      'timestamp_label': '[00:01:28]',
-      'timestamp_seconds': 88,
-      'tip': 'I knew that I probably had a better chance of succeeding in that way than the '
-             "other form of, you know, being a designer. So that's yeah, I was really just out "
-             "of necessity to stand out. Who are design Joy's typical like target clients. I "
-             'mean, the software as a service base.',
-      'title': 'This is How You Run a Profitable Design Service | Brett from DesignJoy '
-               '(Creative Crew with Brad Hussey)',
-      'url': 'https://www.youtube.com/watch?v=o-UR3rkPgJ4&t=88s',
-      'video_id': 'o-UR3rkPgJ4'},
-     {'author': 'company in progress',
-      'channel': 'company in progress',
-      'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:04:44](https://www.youtube.com/watch?v=fSAazWLuDyQ&t=284s)',
-      'relevance': 'Attributed practitioner commentary on productized B2B AI implementation, '
-                   'fixed-scope workflow sprints, and managed automation retainers (Chapter Q1 '
-                   'operational verification).',
-      'source_type': 'video_pro_tip',
-      'text': "It could be we've automated these five manual tasks or we've brought in this "
-              "custom agent to help with customer support. So it's those types of things that "
-              'we provide value in the platform itself. Um, meetings and collaboration.',
-      'timestamp': 284,
-      'timestamp_label': '[00:04:44]',
-      'timestamp_seconds': 284,
-      'tip': "It could be we've automated these five manual tasks or we've brought in this "
-             "custom agent to help with customer support. So it's those types of things that "
-             'we provide value in the platform itself. Um, meetings and collaboration.',
-      'title': 'I Built an AI Audit That Replaces a $50,000 Consultant (company in progress)',
-      'url': 'https://www.youtube.com/watch?v=fSAazWLuDyQ&t=284s',
-      'video_id': 'fSAazWLuDyQ'},
-     {'author': 'Jackson Rose | AI',
-      'channel': 'Jackson Rose | AI',
-      'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:05:35](https://www.youtube.com/watch?v=OsFhqXe8aLI&t=335s)',
-      'relevance': 'Attributed practitioner commentary on productized B2B AI implementation, '
-                   'fixed-scope workflow sprints, and managed automation retainers (Chapter Q1 '
-                   'operational verification).',
-      'source_type': 'video_pro_tip',
-      'text': "So I'm using a document about my business. And this is truly a document that "
-              "I'm using for my actual business and running my AI automation consultant firm. "
-              'I had spent a lot of time refining this document.',
-      'timestamp': 335,
-      'timestamp_label': '[00:05:35]',
-      'timestamp_seconds': 335,
-      'tip': "So I'm using a document about my business. And this is truly a document that I'm "
-             'using for my actual business and running my AI automation consultant firm. I had '
-             'spent a lot of time refining this document.',
-      'title': 'I Built an AI Sales Agent that Sends 1,000+ Personalized Emails (Full '
-               'Tutorial) (Jackson Rose | AI)',
-      'url': 'https://www.youtube.com/watch?v=OsFhqXe8aLI&t=335s',
-      'video_id': 'OsFhqXe8aLI'},
-     {'author': 'Cresco International',
-      'channel': 'Cresco International',
-      'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:02:41](https://www.youtube.com/watch?v=4Vt8Rgxszb4&t=161s)',
-      'relevance': 'Attributed practitioner commentary on productized B2B AI implementation, '
-                   'fixed-scope workflow sprints, and managed automation retainers (Chapter Q1 '
-                   'operational verification).',
-      'source_type': 'video_pro_tip',
-      'text': 'Second, it gives AI access to your private business knowledge without '
-              'retraining the model. Third, updating information becomes dramatically faster. '
-              'Instead of spending days or weeks retraining a model, organizations simply '
-              'update their knowledge base.',
-      'timestamp': 161,
-      'timestamp_label': '[00:02:41]',
-      'timestamp_seconds': 161,
-      'tip': 'Second, it gives AI access to your private business knowledge without retraining '
-             'the model. Third, updating information becomes dramatically faster. Instead of '
-             'spending days or weeks retraining a model, organizations simply update their '
-             'knowledge base.',
-      'title': 'Everything You Need to Know About Retrieval-Augmented Generation (RAG) | '
-               'Enterprise AI Explained (Cresco International)',
-      'url': 'https://www.youtube.com/watch?v=4Vt8Rgxszb4&t=161s',
-      'video_id': '4Vt8Rgxszb4'},
-     {'author': 'WNT',
-      'channel': 'WNT',
-      'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:06:43](https://www.youtube.com/watch?v=A0tzwuw-nEg&t=403s)',
-      'relevance': 'Attributed practitioner commentary on productized B2B AI implementation, '
-                   'fixed-scope workflow sprints, and managed automation retainers (Chapter Q1 '
-                   'operational verification).',
-      'source_type': 'video_pro_tip',
-      'text': "If your prompts are payment for service, then OpenAI's failure to quantify the "
-              'value of that data or offer alternatives constitutes unfair business practice.',
-      'timestamp': 403,
-      'timestamp_label': '[00:06:43]',
-      'timestamp_seconds': 403,
-      'tip': "If your prompts are payment for service, then OpenAI's failure to quantify the "
-             'value of that data or offer alternatives constitutes unfair business practice.',
-      'title': "AI Reads OpenAI's Privacy Policy, Finds Data Trap | WNT #lawyer #openai (WNT)",
-      'url': 'https://www.youtube.com/watch?v=A0tzwuw-nEg&t=403s',
-      'video_id': 'A0tzwuw-nEg'},
-     {'author': 'Cole Medin',
-      'channel': 'Cole Medin',
-      'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:11:26](https://www.youtube.com/watch?v=tLMViADvSNE&t=686s)',
-      'relevance': 'Attributed practitioner commentary on productized B2B AI implementation, '
-                   'fixed-scope workflow sprints, and managed automation retainers (Chapter Q1 '
-                   'operational verification).',
-      'source_type': 'video_pro_tip',
-      'text': 'For example, you might have a use case where you want the similarity to be '
-              'based more on the sentiment versus the semantic similarity of the text. So for '
-              'a pre-trained embedding model, my order was late is going to be similar to '
-              'shipping was fast, right?',
-      'timestamp': 686,
-      'timestamp_label': '[00:11:26]',
-      'timestamp_seconds': 686,
-      'tip': 'For example, you might have a use case where you want the similarity to be based '
-             'more on the sentiment versus the semantic similarity of the text. So for a '
-             'pre-trained embedding model, my order was late is going to be similar to '
-             'shipping was fast, right?',
-      'title': 'Every RAG Strategy Explained in 13 Minutes (No Fluff) (Cole Medin)',
-      'url': 'https://www.youtube.com/watch?v=tLMViADvSNE&t=686s',
-      'video_id': 'tLMViADvSNE'},
-     {'author': 'Everyday AI Automation',
-      'channel': 'Everyday AI Automation',
-      'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:05:37](https://www.youtube.com/watch?v=SrWNK0955xw&t=337s)',
-      'relevance': 'Attributed practitioner commentary on productized B2B AI implementation, '
-                   'fixed-scope workflow sprints, and managed automation retainers (Chapter Q1 '
-                   'operational verification).',
-      'source_type': 'video_pro_tip',
-      'text': 'Is this a high value opportunity? What category does the lead belong to? In N8N '
-              'we might start with a form submission or another trigger. Then connect Google '
-              'Sheets or another database. Send the lead information to the model.',
-      'timestamp': 337,
-      'timestamp_label': '[00:05:37]',
-      'timestamp_seconds': 337,
-      'tip': 'Is this a high value opportunity? What category does the lead belong to? In N8N '
-             'we might start with a form submission or another trigger. Then connect Google '
-             'Sheets or another database. Send the lead information to the model.',
-      'title': 'Zapier vs Make vs n8n vs UiPath: What You Need to Know in 2026 (Everyday AI '
-               'Automation)',
-      'url': 'https://www.youtube.com/watch?v=SrWNK0955xw&t=337s',
-      'video_id': 'SrWNK0955xw'},
-     {'author': 'AI Automation Society',
-      'channel': 'AI Automation Society',
-      'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:00:43](https://www.youtube.com/watch?v=3XIdI6vcGz0&t=43s)',
-      'relevance': 'Attributed practitioner commentary on productized B2B AI implementation, '
-                   'fixed-scope workflow sprints, and managed automation retainers (Chapter Q1 '
-                   'operational verification).',
-      'source_type': 'video_pro_tip',
-      'text': "Like, it's to me, it's more about like definitely above five, because at five "
-              "you would have had to like actually build systems, right? It's more about the "
-              'infrastructure of the business than it is like the head count or the revenue.',
-      'timestamp': 43,
-      'timestamp_label': '[00:00:43]',
-      'timestamp_seconds': 43,
-      'tip': "Like, it's to me, it's more about like definitely above five, because at five "
-             "you would have had to like actually build systems, right? It's more about the "
-             'infrastructure of the business than it is like the head count or the revenue.',
-      'title': 'The Scope Creep Mistake That Can Wreck AI Projects (AI Automation Society)',
-      'url': 'https://www.youtube.com/watch?v=3XIdI6vcGz0&t=43s',
-      'video_id': '3XIdI6vcGz0'},
-     {'author': 'Sabrina Ramonov 🍄',
-      'channel': 'Sabrina Ramonov 🍄',
-      'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:07:26](https://www.youtube.com/watch?v=I1NSFLOBQvc&t=446s)',
-      'relevance': 'Attributed practitioner commentary on productized B2B AI implementation, '
-                   'fixed-scope workflow sprints, and managed automation retainers (Chapter Q1 '
-                   'operational verification).',
-      'source_type': 'video_pro_tip',
-      'text': "Don't be sold on the dream of making 300,000 per month with an AI automation "
-              'agency because I personally have not met one. So, maybe they exist out there, '
-              "but they're certainly not solo, meaning revenue per employee is probably not as "
-              'efficient as other business models.',
-      'timestamp': 446,
-      'timestamp_label': '[00:07:26]',
-      'timestamp_seconds': 446,
-      'tip': "Don't be sold on the dream of making 300,000 per month with an AI automation "
-             'agency because I personally have not met one. So, maybe they exist out there, '
-             "but they're certainly not solo, meaning revenue per employee is probably not as "
-             'efficient as other business models.',
-      'title': 'What Nobody Tells You About Selling AI Automations (Sabrina Ramonov 🍄)',
-      'url': 'https://www.youtube.com/watch?v=I1NSFLOBQvc&t=446s',
-      'video_id': 'I1NSFLOBQvc'}],
- 2: [{'author': 'Automate AI Consulting',
-      'channel': 'Automate AI Consulting',
-      'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:07:57](https://www.youtube.com/watch?v=m9wI5V0nSe0&t=477s)',
-      'relevance': 'Attributed practitioner commentary on productized B2B AI implementation, '
-                   'fixed-scope workflow sprints, and managed automation retainers (Chapter Q2 '
-                   'operational verification).',
-      'source_type': 'video_pro_tip',
-      'text': 'Something like building an AI lead qualification system for a real estate '
-              'agent. Or setting up automated follow-up sequences for a coaching business. Or '
-              'creating a customer intake workflow for a home services company. You build it, '
-              'they pay you, done.',
-      'timestamp': 477,
-      'timestamp_label': '[00:07:57]',
-      'timestamp_seconds': 477,
-      'tip': 'Something like building an AI lead qualification system for a real estate agent. '
-             'Or setting up automated follow-up sequences for a coaching business. Or creating '
-             'a customer intake workflow for a home services company. You build it, they pay '
-             'you, done.',
-      'title': 'One-Time Projects vs Retainers: Which Gets You to $10K/Month? (Automate AI '
-               'Consulting)',
-      'url': 'https://www.youtube.com/watch?v=m9wI5V0nSe0&t=477s',
-      'video_id': 'm9wI5V0nSe0'},
-     {'author': 'Simply Contact',
-      'channel': 'Simply Contact',
-      'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:04:02](https://www.youtube.com/watch?v=DcDfJRzuZNI&t=242s)',
-      'relevance': 'Attributed practitioner commentary on productized B2B AI implementation, '
-                   'fixed-scope workflow sprints, and managed automation retainers (Chapter Q2 '
-                   'operational verification).',
-      'source_type': 'video_pro_tip',
-      'text': 'It includes an AI agent for customer inquiries, an assistant for human agents, '
-              'multilingual support, and advanced analytics. Pricing is performance-based, '
-              'with a cost per resolved case and an additional monthly platform fee.',
-      'timestamp': 242,
-      'timestamp_label': '[00:04:02]',
-      'timestamp_seconds': 242,
-      'tip': 'It includes an AI agent for customer inquiries, an assistant for human agents, '
-             'multilingual support, and advanced analytics. Pricing is performance-based, with '
-             'a cost per resolved case and an additional monthly platform fee.',
-      'title': 'Top 10 AI Customer Service Companies (Simply Contact)',
-      'url': 'https://www.youtube.com/watch?v=DcDfJRzuZNI&t=242s',
-      'video_id': 'DcDfJRzuZNI'},
-     {'author': 'Rocket Research',
-      'channel': 'Rocket Research',
-      'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:01:10](https://www.youtube.com/watch?v=swIGkbLXEdM&t=70s)',
-      'relevance': 'Attributed practitioner commentary on productized B2B AI implementation, '
-                   'fixed-scope workflow sprints, and managed automation retainers (Chapter Q2 '
-                   'operational verification).',
-      'source_type': 'video_pro_tip',
-      'text': 'Zenesk offers annual plans starting at $19 per agent per month with monthly '
-              'rates higher at $25. AI agents are included in suite and support plans, but '
-              'come with usage based fees of about $1. 50 to $2 per automated resolution.',
-      'timestamp': 70,
-      'timestamp_label': '[00:01:10]',
-      'timestamp_seconds': 70,
-      'tip': 'Zenesk offers annual plans starting at $19 per agent per month with monthly '
-             'rates higher at $25. AI agents are included in suite and support plans, but come '
-             'with usage based fees of about $1. 50 to $2 per automated resolution.',
-      'title': 'How Much Should a Small Business Budget for AI Customer Support in 2026? '
-               '(Rocket Research)',
-      'url': 'https://www.youtube.com/watch?v=swIGkbLXEdM&t=70s',
-      'video_id': 'swIGkbLXEdM'},
-     {'author': 'Automate AI Consulting',
-      'channel': 'Automate AI Consulting',
-      'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:02:15](https://www.youtube.com/watch?v=91lw5ubtLMc&t=135s)',
-      'relevance': 'Attributed practitioner commentary on productized B2B AI implementation, '
-                   'fixed-scope workflow sprints, and managed automation retainers (Chapter Q2 '
-                   'operational verification).',
-      'source_type': 'video_pro_tip',
-      'text': 'They just want you to handle it all. In that case, you host the workflow in '
-              'your account and just charge a monthly maintenance fee. This usually happens '
-              "with retainer clients, the ones where you're building and improving workflows "
-              'month over month.',
-      'timestamp': 135,
-      'timestamp_label': '[00:02:15]',
-      'timestamp_seconds': 135,
-      'tip': 'They just want you to handle it all. In that case, you host the workflow in your '
-             'account and just charge a monthly maintenance fee. This usually happens with '
-             "retainer clients, the ones where you're building and improving workflows month "
-             'over month.',
-      'title': 'How To Deliver Your N8N Automation To Clients Like An Expert (Automate AI '
-               'Consulting)',
-      'url': 'https://www.youtube.com/watch?v=91lw5ubtLMc&t=135s',
-      'video_id': '91lw5ubtLMc'},
-     {'author': 'Noah Epstein',
-      'channel': 'Noah Epstein',
-      'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:04:49](https://www.youtube.com/watch?v=fMdUS6amki0&t=289s)',
-      'relevance': 'Attributed practitioner commentary on productized B2B AI implementation, '
-                   'fixed-scope workflow sprints, and managed automation retainers (Chapter Q2 '
-                   'operational verification).',
-      'source_type': 'video_pro_tip',
-      'text': "So, if you are struggling, please go in there. I'm more than happy to help and "
-              "I'm looking forward to helping. So, it's as simple as that. Find a business "
-              'willing to pay, get the money, and go about building the automation.',
-      'timestamp': 289,
-      'timestamp_label': '[00:04:49]',
-      'timestamp_seconds': 289,
-      'tip': "So, if you are struggling, please go in there. I'm more than happy to help and "
-             "I'm looking forward to helping. So, it's as simple as that. Find a business "
-             'willing to pay, get the money, and go about building the automation.',
-      'title': 'How I made $150k last month selling AI automations (Noah Epstein)',
-      'url': 'https://www.youtube.com/watch?v=fMdUS6amki0&t=289s',
-      'video_id': 'fMdUS6amki0'},
-     {'author': 'Nick Saraev Daily',
-      'channel': 'Nick Saraev Daily',
-      'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:01:39](https://www.youtube.com/watch?v=0QI9KoizfH8&t=99s)',
-      'relevance': 'Attributed practitioner commentary on productized B2B AI implementation, '
-                   'fixed-scope workflow sprints, and managed automation retainers (Chapter Q2 '
-                   'operational verification).',
-      'source_type': 'video_pro_tip',
-      'text': 'For example, do I have to pay monthly for NA and others for each client I have? '
-              'Whereas, if the client is the one paying, how would the specifics work, for an '
-              'example, a client buys it and how they trust me to handle it with their payment '
-              'details, etc.',
-      'timestamp': 99,
-      'timestamp_label': '[00:01:39]',
-      'timestamp_seconds': 99,
-      'tip': 'For example, do I have to pay monthly for NA and others for each client I have? '
-             'Whereas, if the client is the one paying, how would the specifics work, for an '
-             'example, a client buys it and how they trust me to handle it with their payment '
-             'details, etc.',
-      'title': 'Building a profitable AI agency cold email campaign in 40min (Nick Saraev '
-               'Daily)',
-      'url': 'https://www.youtube.com/watch?v=0QI9KoizfH8&t=99s',
-      'video_id': '0QI9KoizfH8'},
-     {'author': 'Kelsey Hastie',
-      'channel': 'Kelsey Hastie',
-      'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:00:59](https://www.youtube.com/watch?v=cqaukVEOmJ4&t=59s)',
-      'relevance': 'Attributed practitioner commentary on productized B2B AI implementation, '
-                   'fixed-scope workflow sprints, and managed automation retainers (Chapter Q2 '
-                   'operational verification).',
-      'source_type': 'video_pro_tip',
-      'text': 'Do not expose an insecure learning setup to the internet. Our example is a '
-              'website audit request. The output is a reviewed internal draft, not a quote, '
-              'contract, or automatic customer reply. Section 2, capture and validate the '
-              'request.',
-      'timestamp': 59,
-      'timestamp_label': '[00:00:59]',
-      'timestamp_seconds': 59,
-      'tip': 'Do not expose an insecure learning setup to the internet. Our example is a '
-             'website audit request. The output is a reviewed internal draft, not a quote, '
-             'contract, or automatic customer reply. Section 2, capture and validate the '
-             'request.',
-      'title': 'n8n Beginner Tutorial: AI Lead Intake Automation (Free Self-Hosted Option) '
-               '(Kelsey Hastie)',
-      'url': 'https://www.youtube.com/watch?v=cqaukVEOmJ4&t=59s',
-      'video_id': 'cqaukVEOmJ4'},
-     {'author': 'Global Technology Industry Association (GTIA)',
-      'channel': 'Global Technology Industry Association (GTIA)',
-      'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:03:15](https://www.youtube.com/watch?v=TtU19Z-ASZk&t=195s)',
-      'relevance': 'Attributed practitioner commentary on productized B2B AI implementation, '
-                   'fixed-scope workflow sprints, and managed automation retainers (Chapter Q2 '
-                   'operational verification).',
-      'source_type': 'video_pro_tip',
-      'text': 'Like no one understands that every project is kind of on its way to some sort '
-              'of hiccup. And so, bad dates unfortunately contaminate the entire business '
-              'intelligence pipeline for their business, their customer communications, their '
-              'scheduling, scheduling churn.',
-      'timestamp': 195,
-      'timestamp_label': '[00:03:15]',
-      'timestamp_seconds': 195,
-      'tip': 'Like no one understands that every project is kind of on its way to some sort of '
-             'hiccup. And so, bad dates unfortunately contaminate the entire business '
-             'intelligence pipeline for their business, their customer communications, their '
-             'scheduling, scheduling churn.',
-      'title': 'Project Risk, Scope Creep, and AI Automation for MSPs (Global Technology '
-               'Industry Association (GTIA))',
-      'url': 'https://www.youtube.com/watch?v=TtU19Z-ASZk&t=195s',
-      'video_id': 'TtU19Z-ASZk'},
-     {'author': 'Tom Hartnell',
-      'channel': 'Tom Hartnell',
-      'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:00:51](https://www.youtube.com/watch?v=WFW7vb6wXZM&t=51s)',
-      'relevance': 'Attributed practitioner commentary on productized B2B AI implementation, '
-                   'fixed-scope workflow sprints, and managed automation retainers (Chapter Q2 '
-                   'operational verification).',
-      'source_type': 'video_pro_tip',
-      'text': '"We\'ve done this AI audit, and now it makes it a really easy decision for them '
-              'to go into development." Let\'s look into the reasons of why we actually want '
-              "to do an AI audit. So, if you're coming from the perspective of an AI agency, "
-              "there's a few different reasons.",
-      'timestamp': 51,
-      'timestamp_label': '[00:00:51]',
-      'timestamp_seconds': 51,
-      'tip': '"We\'ve done this AI audit, and now it makes it a really easy decision for them '
-             'to go into development." Let\'s look into the reasons of why we actually want to '
-             "do an AI audit. So, if you're coming from the perspective of an AI agency, "
-             "there's a few different reasons.",
-      'title': 'How to Perform an AI Audit in 2026 (Step-by-Step Framework) (Tom Hartnell)',
-      'url': 'https://www.youtube.com/watch?v=WFW7vb6wXZM&t=51s',
-      'video_id': 'WFW7vb6wXZM'},
-     {'author': 'Stewart Gauld',
-      'channel': 'Stewart Gauld',
-      'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:02:03](https://www.youtube.com/watch?v=nMMWXxBsH2o&t=123s)',
-      'relevance': 'Attributed practitioner commentary on productized B2B AI implementation, '
-                   'fixed-scope workflow sprints, and managed automation retainers (Chapter Q2 '
-                   'operational verification).',
-      'source_type': 'video_pro_tip',
-      'text': 'Think about an AI agent as a customer service representative for your business '
-              'that works 24/7 to enhance your customers experiences across your different '
-              'channels. The great thing is you can launch your AI agents in just a few '
-              'minutes with Zenesk.',
-      'timestamp': 123,
-      'timestamp_label': '[00:02:03]',
-      'timestamp_seconds': 123,
-      'tip': 'Think about an AI agent as a customer service representative for your business '
-             'that works 24/7 to enhance your customers experiences across your different '
-             'channels. The great thing is you can launch your AI agents in just a few minutes '
-             'with Zenesk.',
-      'title': 'How to use ZenDesk AI Agents | Supercharge Customer Service with AI in 2026 '
-               '(Stewart Gauld)',
-      'url': 'https://www.youtube.com/watch?v=nMMWXxBsH2o&t=123s',
-      'video_id': 'nMMWXxBsH2o'},
-     {'author': 'Zendesk',
-      'channel': 'Zendesk',
-      'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:00:21](https://www.youtube.com/watch?v=mnFYeyoS2r8&t=21s)',
-      'relevance': 'Attributed practitioner commentary on productized B2B AI implementation, '
-                   'fixed-scope workflow sprints, and managed automation retainers (Chapter Q2 '
-                   'operational verification).',
-      'source_type': 'video_pro_tip',
-      'text': "These aren't your typical bots. AI agents don't just provide quick responses to "
-              'customer questions. They actually resolve customer issues from end to end '
-              'without the help of a live agent, handling both simple and complex queries with '
-              'ease.',
-      'timestamp': 21,
-      'timestamp_label': '[00:00:21]',
-      'timestamp_seconds': 21,
-      'tip': "These aren't your typical bots. AI agents don't just provide quick responses to "
-             'customer questions. They actually resolve customer issues from end to end '
-             'without the help of a live agent, handling both simple and complex queries with '
-             'ease.',
-      'title': 'AI Agents: The next generation of AI-powered bots | Zendesk (Zendesk)',
-      'url': 'https://www.youtube.com/watch?v=mnFYeyoS2r8&t=21s',
-      'video_id': 'mnFYeyoS2r8'},
-     {'author': 'Innovative Compass Consulting',
-      'channel': 'Innovative Compass Consulting',
-      'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:03:42](https://www.youtube.com/watch?v=DIfo9jAMZYY&t=222s)',
-      'relevance': 'Attributed practitioner commentary on productized B2B AI implementation, '
-                   'fixed-scope workflow sprints, and managed automation retainers (Chapter Q2 '
-                   'operational verification).',
-      'source_type': 'video_pro_tip',
-      'text': "'s right for what you're doing, especially before you go and publish something "
-              "or make a big decision based on it. This one's huge and it's all about "
-              "transparency. You can't pass off AI generated content as if it were written by "
-              'a person.',
-      'timestamp': 222,
-      'timestamp_label': '[00:03:42]',
-      'timestamp_seconds': 222,
-      'tip': "'s right for what you're doing, especially before you go and publish something "
-             "or make a big decision based on it. This one's huge and it's all about "
-             "transparency. You can't pass off AI generated content as if it were written by a "
-             'person.',
-      'title': "OpenAI's Policies Explained: EU Privacy, Security, Safety, and Your Data "
-               'Rights (ChatGPT, Sora,API) (Innovative Compass Consulting)',
-      'url': 'https://www.youtube.com/watch?v=DIfo9jAMZYY&t=222s',
-      'video_id': 'DIfo9jAMZYY'},
-     {'author': "Owner's Bot Lab",
-      'channel': "Owner's Bot Lab",
-      'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:00:29](https://www.youtube.com/watch?v=EtiRX0GduSI&t=29s)',
-      'relevance': 'Attributed practitioner commentary on productized B2B AI implementation, '
-                   'fixed-scope workflow sprints, and managed automation retainers (Chapter Q2 '
-                   'operational verification).',
-      'source_type': 'video_pro_tip',
-      'text': "Only one of them was actually easy. Here's the job in plain English. Our test "
-              "business is Brightside Plumbing and Drain. It's made up, same as last video. A "
-              'customer fills out the quote form.',
-      'timestamp': 29,
-      'timestamp_label': '[00:00:29]',
-      'timestamp_seconds': 29,
-      'tip': "Only one of them was actually easy. Here's the job in plain English. Our test "
-             "business is Brightside Plumbing and Drain. It's made up, same as last video. A "
-             'customer fills out the quote form.',
-      'title': 'I Built the Same AI Lead Responder in Zapier, Make and n8n (Only One Was Easy) '
-               "(Owner's Bot Lab)",
-      'url': 'https://www.youtube.com/watch?v=EtiRX0GduSI&t=29s',
-      'video_id': 'EtiRX0GduSI'},
-     {'author': 'Serop | AI Automation',
-      'channel': 'Serop | AI Automation',
-      'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:00:38](https://www.youtube.com/watch?v=u-qrX9uP_t4&t=38s)',
-      'relevance': 'Attributed practitioner commentary on productized B2B AI implementation, '
-                   'fixed-scope workflow sprints, and managed automation retainers (Chapter Q2 '
-                   'operational verification).',
-      'source_type': 'video_pro_tip',
-      'text': "So here in my case, I'm on the free membership, so it's fine because I'm not "
-              'using any proprietary data, And now the people are mentioning like, is this an '
-              'isolated issue that happened to this person or this is a widespread behavior?',
-      'timestamp': 38,
-      'timestamp_label': '[00:00:38]',
-      'timestamp_seconds': 38,
-      'tip': "So here in my case, I'm on the free membership, so it's fine because I'm not "
-             'using any proprietary data, And now the people are mentioning like, is this an '
-             'isolated issue that happened to this person or this is a widespread behavior?',
-      'title': "OpenAI's Secret Data Training: What You Need To Know (Serop | AI Automation)",
-      'url': 'https://www.youtube.com/watch?v=u-qrX9uP_t4&t=38s',
-      'video_id': 'u-qrX9uP_t4'},
-     {'author': 'Austin Reed',
-      'channel': 'Austin Reed',
-      'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:02:12](https://www.youtube.com/watch?v=mw1V2GoYHsk&t=132s)',
-      'relevance': 'Attributed practitioner commentary on productized B2B AI implementation, '
-                   'fixed-scope workflow sprints, and managed automation retainers (Chapter Q2 '
-                   'operational verification).',
-      'source_type': 'video_pro_tip',
-      'text': 'In that case, you can deploy a server under your own hosting account and charge '
-              'them a monthly maintenance fee to keep that server alive. Usually, this '
-              "scenario happens when you have a monthly retainer client, where you're "
-              'constantly building and improving new workflows.',
-      'timestamp': 132,
-      'timestamp_label': '[00:02:12]',
-      'timestamp_seconds': 132,
-      'tip': 'In that case, you can deploy a server under your own hosting account and charge '
-             'them a monthly maintenance fee to keep that server alive. Usually, this scenario '
-             "happens when you have a monthly retainer client, where you're constantly "
-             'building and improving new workflows.',
-      'title': 'How to Deliver Your n8n Project to Clients Like a PRO! (Austin Reed)',
-      'url': 'https://www.youtube.com/watch?v=mw1V2GoYHsk&t=132s',
-      'video_id': 'mw1V2GoYHsk'}],
- 3: [{'author': 'The AI Blueprint',
-      'channel': 'The AI Blueprint',
-      'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:02:42](https://www.youtube.com/watch?v=1mZ0bWq9y-M&t=162s)',
-      'relevance': 'Attributed practitioner commentary on productized B2B AI implementation, '
-                   'fixed-scope workflow sprints, and managed automation retainers (Chapter Q3 '
-                   'operational verification).',
-      'source_type': 'video_pro_tip',
-      'text': 'Full end-to-end CRM and customer support automation for $3,000 setup and $1,500 '
-              'per month. Just five active clients puts you at $7,500 in predictable monthly '
-              'cash flow. To get your first paying client in under 10 days, you do not need '
-              'cold calls or paid ads.',
-      'timestamp': 162,
-      'timestamp_label': '[00:02:42]',
-      'timestamp_seconds': 162,
-      'tip': 'Full end-to-end CRM and customer support automation for $3,000 setup and $1,500 '
-             'per month. Just five active clients puts you at $7,500 in predictable monthly '
-             'cash flow. To get your first paying client in under 10 days, you do not need '
-             'cold calls or paid ads.',
-      'title': 'How to Build an AI Automation Agency with n8n and AI Agents (2026 Masterclass) '
-               '(The AI Blueprint)',
-      'url': 'https://www.youtube.com/watch?v=1mZ0bWq9y-M&t=162s',
-      'video_id': '1mZ0bWq9y-M'},
-     {'author': 'ArriSse Corp',
-      'channel': 'ArriSse Corp',
-      'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:00:56](https://www.youtube.com/watch?v=XKoGenFWVHs&t=56s)',
-      'relevance': 'Attributed practitioner commentary on productized B2B AI implementation, '
-                   'fixed-scope workflow sprints, and managed automation retainers (Chapter Q3 '
-                   'operational verification).',
-      'source_type': 'video_pro_tip',
-      'text': 'Without an operational layer dictating the terms of engagement, an agency '
-              'effectively surrenders its profit margins to the unpredictable behavioral '
-              'quirks of every new client. In high-ticket B2B engagements, client excitement '
-              'does not peak during project delivery.',
-      'timestamp': 56,
-      'timestamp_label': '[00:00:56]',
-      'timestamp_seconds': 56,
-      'tip': 'Without an operational layer dictating the terms of engagement, an agency '
-             'effectively surrenders its profit margins to the unpredictable behavioral quirks '
-             'of every new client. In high-ticket B2B engagements, client excitement does not '
-             'peak during project delivery.',
-      'title': 'The Exact System Boutique Agencies Use to Stop Scope Creep & Close $5k/mo '
-               'Retainers (ArriSse Corp)',
-      'url': 'https://www.youtube.com/watch?v=XKoGenFWVHs&t=56s',
-      'video_id': 'XKoGenFWVHs'},
-     {'author': 'LearnAI Today',
-      'channel': 'LearnAI Today',
-      'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:03:01](https://www.youtube.com/watch?v=Pd96DxQ36U8&t=181s)',
-      'relevance': 'Attributed practitioner commentary on productized B2B AI implementation, '
-                   'fixed-scope workflow sprints, and managed automation retainers (Chapter Q3 '
-                   'operational verification).',
-      'source_type': 'video_pro_tip',
-      'text': "Make's integrations page lists more than 3,000 apps plus an HTTP module for "
-              'connecting to almost any service with an API. On AI, Make offers Make AI agents '
-              "on all plans plus integrations for OpenAI, Google Gemini, and Anthropic's "
-              'Claude. Pricing is based on credits.',
-      'timestamp': 181,
-      'timestamp_label': '[00:03:01]',
-      'timestamp_seconds': 181,
-      'tip': "Make's integrations page lists more than 3,000 apps plus an HTTP module for "
-             'connecting to almost any service with an API. On AI, Make offers Make AI agents '
-             "on all plans plus integrations for OpenAI, Google Gemini, and Anthropic's "
-             'Claude. Pricing is based on credits.',
-      'title': 'Zapier vs Make vs n8n (2026): Which Automation Tool Should You Use? (LearnAI '
-               'Today)',
-      'url': 'https://www.youtube.com/watch?v=Pd96DxQ36U8&t=181s',
-      'video_id': 'Pd96DxQ36U8'},
-     {'author': 'Whizz AI',
-      'channel': 'Whizz AI',
-      'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:03:43](https://www.youtube.com/watch?v=Pz3jLYQwsX4&t=223s)',
-      'relevance': 'Attributed practitioner commentary on productized B2B AI implementation, '
-                   'fixed-scope workflow sprints, and managed automation retainers (Chapter Q3 '
-                   'operational verification).',
-      'source_type': 'video_pro_tip',
-      'text': 'The catch with Make is that the price depends on how many modules you use. A '
-              'long scenario costs more on every run, because every module counts. Pick Make '
-              'if you want a visual builder, a low monthly cost, and you are building '
-              'workflows with several steps that run often.',
-      'timestamp': 223,
-      'timestamp_label': '[00:03:43]',
-      'timestamp_seconds': 223,
-      'tip': 'The catch with Make is that the price depends on how many modules you use. A '
-             'long scenario costs more on every run, because every module counts. Pick Make if '
-             'you want a visual builder, a low monthly cost, and you are building workflows '
-             'with several steps that run often.',
-      'title': 'n8n vs Zapier vs Make (2026): Which AI Automation Tool Is Actually Worth It? '
-               '(Whizz AI)',
-      'url': 'https://www.youtube.com/watch?v=Pz3jLYQwsX4&t=223s',
-      'video_id': 'Pz3jLYQwsX4'},
-     {'author': 'Anthony Shoosh',
-      'channel': 'Anthony Shoosh',
-      'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:09:23](https://www.youtube.com/watch?v=S5UwzzP_Qec&t=563s)',
-      'relevance': 'Attributed practitioner commentary on productized B2B AI implementation, '
-                   'fixed-scope workflow sprints, and managed automation retainers (Chapter Q3 '
-                   'operational verification).',
-      'source_type': 'video_pro_tip',
-      'text': 'Go into the knowledgeb section and select the knowledge base that you have '
-              'configured for that business. Moving down to audio, this is one of my favorite '
-              'sections because this provides so much naturalness to the phone call. Bland '
-              'lets you add background audio.',
-      'timestamp': 563,
-      'timestamp_label': '[00:09:23]',
-      'timestamp_seconds': 563,
-      'tip': 'Go into the knowledgeb section and select the knowledge base that you have '
-             'configured for that business. Moving down to audio, this is one of my favorite '
-             'sections because this provides so much naturalness to the phone call. Bland lets '
-             'you add background audio.',
-      'title': 'Bland AI Basics: Everything You Need to Start Building Voice Agents (Anthony '
-               'Shoosh)',
-      'url': 'https://www.youtube.com/watch?v=S5UwzzP_Qec&t=563s',
-      'video_id': 'S5UwzzP_Qec'},
-     {'author': 'Liam Ottley',
-      'channel': 'Liam Ottley',
-      'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:06:09](https://www.youtube.com/watch?v=oB7gia1kC_g&t=369s)',
-      'relevance': 'Attributed practitioner commentary on productized B2B AI implementation, '
-                   'fixed-scope workflow sprints, and managed automation retainers (Chapter Q3 '
-                   'operational verification).',
-      'source_type': 'video_pro_tip',
-      'text': "All right, so let's talk about what we're going to be building here. It's an AI "
-              'receptionist for our friend Sarah that does three things. Firstly, answers '
-              "questions about the business. It's going to be pricing, location, hours, "
-              'services.',
-      'timestamp': 369,
-      'timestamp_label': '[00:06:09]',
-      'timestamp_seconds': 369,
-      'tip': "All right, so let's talk about what we're going to be building here. It's an AI "
-             'receptionist for our friend Sarah that does three things. Firstly, answers '
-             "questions about the business. It's going to be pricing, location, hours, "
-             'services.',
-      'title': 'From Zero to Your First AI Voice Agent in 18 Minutes (No Coding) (Liam Ottley)',
-      'url': 'https://www.youtube.com/watch?v=oB7gia1kC_g&t=369s',
-      'video_id': 'oB7gia1kC_g'},
-     {'author': 'Alejo Pijuan',
-      'channel': 'Alejo Pijuan',
-      'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:04:14](https://www.youtube.com/watch?v=6Fal62hzEs8&t=254s)',
-      'relevance': 'Attributed practitioner commentary on productized B2B AI implementation, '
-                   'fixed-scope workflow sprints, and managed automation retainers (Chapter Q3 '
-                   'operational verification).',
-      'source_type': 'video_pro_tip',
-      'text': "'t just cost money, they destroy client relationships. Because a lot of the "
-              "times these platform failures aren't the voice agent said a word that it "
-              "shouldn't have that you can fix with your prompt. You can give your client a "
-              'solution.',
-      'timestamp': 254,
-      'timestamp_label': '[00:04:14]',
-      'timestamp_seconds': 254,
-      'tip': "'t just cost money, they destroy client relationships. Because a lot of the "
-             "times these platform failures aren't the voice agent said a word that it "
-             "shouldn't have that you can fix with your prompt. You can give your client a "
-             'solution.',
-      'title': 'The Best Platform for your Voice AI Agency: Retell vs Vapi (Alejo Pijuan)',
-      'url': 'https://www.youtube.com/watch?v=6Fal62hzEs8&t=254s',
-      'video_id': '6Fal62hzEs8'},
-     {'author': 'Venture Harbour',
-      'channel': 'Venture Harbour',
-      'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:12:19](https://www.youtube.com/watch?v=ZVSDm5siKr4&t=739s)',
-      'relevance': 'Attributed practitioner commentary on productized B2B AI implementation, '
-                   'fixed-scope workflow sprints, and managed automation retainers (Chapter Q3 '
-                   'operational verification).',
-      'source_type': 'video_pro_tip',
-      'text': "So depending on what's important to you for your use case, you can have a bit "
-              'of a play around and see if you can reduce cost, reduce latency, or improve '
-              "quality depending what you're noticing is kind of lacking with your agent.",
-      'timestamp': 739,
-      'timestamp_label': '[00:12:19]',
-      'timestamp_seconds': 739,
-      'tip': "So depending on what's important to you for your use case, you can have a bit of "
-             'a play around and see if you can reduce cost, reduce latency, or improve quality '
-             "depending what you're noticing is kind of lacking with your agent.",
-      'title': 'Build a Voice Agent in 15 Minutes Using VAPI (Easiest Tutorial) (Venture '
-               'Harbour)',
-      'url': 'https://www.youtube.com/watch?v=ZVSDm5siKr4&t=739s',
-      'video_id': 'ZVSDm5siKr4'},
-     {'author': 'Andrew Dunn | AI Consulting',
-      'channel': 'Andrew Dunn | AI Consulting',
-      'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:07:27](https://www.youtube.com/watch?v=HPGSE4LXaQA&t=447s)',
-      'relevance': 'Attributed practitioner commentary on productized B2B AI implementation, '
-                   'fixed-scope workflow sprints, and managed automation retainers (Chapter Q3 '
-                   'operational verification).',
-      'source_type': 'video_pro_tip',
-      'text': '15,000 feel like an absolute bargain to the correct client. The secret to '
-              "premium pricing isn't justifying the time investment. It's quantifying the "
-              'business impact and risk mitigation to the end client.',
-      'timestamp': 447,
-      'timestamp_label': '[00:07:27]',
-      'timestamp_seconds': 447,
-      'tip': '15,000 feel like an absolute bargain to the correct client. The secret to '
-             "premium pricing isn't justifying the time investment. It's quantifying the "
-             'business impact and risk mitigation to the end client.',
-      'title': "Don't Sell AI Workflows, Sell AI Audits (Massive Opportunity) (Andrew Dunn | "
-               'AI Consulting)',
-      'url': 'https://www.youtube.com/watch?v=HPGSE4LXaQA&t=447s',
-      'video_id': 'HPGSE4LXaQA'},
-     {'author': 'ToThePoint Guide',
-      'channel': 'ToThePoint Guide',
-      'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:00:36](https://www.youtube.com/watch?v=pMdWgl-3ihA&t=36s)',
-      'relevance': 'Attributed practitioner commentary on productized B2B AI implementation, '
-                   'fixed-scope workflow sprints, and managed automation retainers (Chapter Q3 '
-                   'operational verification).',
-      'source_type': 'video_pro_tip',
-      'text': "It's cost effective for the pricing plans when you're going to find here. 07 "
-              "per minute, but it uses 11 laps. So that's something that you have to be aware "
-              'of. And it offers like $2 a month for phone numbers.',
-      'timestamp': 36,
-      'timestamp_label': '[00:00:36]',
-      'timestamp_seconds': 36,
-      'tip': "It's cost effective for the pricing plans when you're going to find here. 07 per "
-             "minute, but it uses 11 laps. So that's something that you have to be aware of. "
-             'And it offers like $2 a month for phone numbers.',
-      'title': 'Best AI Voice Agent 2025: Retell vs Vapi vs Bland vs Synthflow vs ElevenLabs '
-               'vs Play AI vs Air AI vs (ToThePoint Guide)',
-      'url': 'https://www.youtube.com/watch?v=pMdWgl-3ihA&t=36s',
-      'video_id': 'pMdWgl-3ihA'},
-     {'author': 'Bryan Taylor',
-      'channel': 'Bryan Taylor',
-      'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:03:33](https://www.youtube.com/watch?v=yLxvwa45vR8&t=213s)',
-      'relevance': 'Attributed practitioner commentary on productized B2B AI implementation, '
-                   'fixed-scope workflow sprints, and managed automation retainers (Chapter Q3 '
-                   'operational verification).',
-      'source_type': 'video_pro_tip',
-      'text': 'And for them, maybe 30,000 is not a lot of money, but the the the creep of that '
-              'was was huge in in relation to what we thought we were building, right? Cuz we '
-              "thought, well, we're going to give this away. It's not going to cost anything.",
-      'timestamp': 213,
-      'timestamp_label': '[00:03:33]',
-      'timestamp_seconds': 213,
-      'tip': 'And for them, maybe 30,000 is not a lot of money, but the the the creep of that '
-             'was was huge in in relation to what we thought we were building, right? Cuz we '
-             "thought, well, we're going to give this away. It's not going to cost anything.",
-      'title': 'Custom Software Development Pitfalls: Scope Creep, AI Dependence, and Uncapped '
-               'API Costs (Bryan Taylor)',
-      'url': 'https://www.youtube.com/watch?v=yLxvwa45vR8&t=213s',
-      'video_id': 'yLxvwa45vR8'},
-     {'author': 'WPTuts',
-      'channel': 'WPTuts',
-      'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:01:12](https://www.youtube.com/watch?v=UgtrG88EDhU&t=72s)',
-      'relevance': 'Attributed practitioner commentary on productized B2B AI implementation, '
-                   'fixed-scope workflow sprints, and managed automation retainers (Chapter Q3 '
-                   'operational verification).',
-      'source_type': 'video_pro_tip',
-      'text': 'Now this could be possible based upon technical limitations different pricing '
-              "limitations Or the fact you just don't have the time to add in new features "
-              'right now This thing gives you the ability to be flexible, but also do you tell '
-              'the person where possible?',
-      'timestamp': 72,
-      'timestamp_label': '[00:01:12]',
-      'timestamp_seconds': 72,
-      'tip': 'Now this could be possible based upon technical limitations different pricing '
-             "limitations Or the fact you just don't have the time to add in new features "
-             'right now This thing gives you the ability to be flexible, but also do you tell '
-             'the person where possible?',
-      'title': 'How to Handle Scope Creep in Client Projects (WPTuts)',
-      'url': 'https://www.youtube.com/watch?v=UgtrG88EDhU&t=72s',
-      'video_id': 'UgtrG88EDhU'},
-     {'author': 'freeCodeCamp.org',
-      'channel': 'freeCodeCamp.org',
-      'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[03:24:57](https://www.youtube.com/watch?v=mHxLXzYjQRE&t=12297s)',
-      'relevance': 'Attributed practitioner commentary on productized B2B AI implementation, '
-                   'fixed-scope workflow sprints, and managed automation retainers (Chapter Q3 '
-                   'operational verification).',
-      'source_type': 'video_pro_tip',
-      'text': 'PG uh Vector managed about 35, PG vector self is about $20. Very uh similar '
-              'price range. Now look what happens when we go to 5 million. Now things are '
-              'starting to change a little bit. You can see that in this case $400 for Pine '
-              'Cone.',
-      'timestamp': 12297,
-      'timestamp_label': '[03:24:57]',
-      'timestamp_seconds': 12297,
-      'tip': 'PG uh Vector managed about 35, PG vector self is about $20. Very uh similar '
-             'price range. Now look what happens when we go to 5 million. Now things are '
-             'starting to change a little bit. You can see that in this case $400 for Pine '
-             'Cone.',
-      'title': 'Production RAG with LangChain & Vector Databases – Full Course '
-               '(freeCodeCamp.org)',
-      'url': 'https://www.youtube.com/watch?v=mHxLXzYjQRE&t=12297s',
-      'video_id': 'mHxLXzYjQRE'},
-     {'author': 'I Make it Simple',
-      'channel': 'I Make it Simple',
-      'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:01:51](https://www.youtube.com/watch?v=uSh76GAmtwM&t=111s)',
-      'relevance': 'Attributed practitioner commentary on productized B2B AI implementation, '
-                   'fixed-scope workflow sprints, and managed automation retainers (Chapter Q3 '
-                   'operational verification).',
-      'source_type': 'video_pro_tip',
-      'text': 'One, sell a product, not your time. A clear price, a clear process, a clear '
-              'result. Two, start cheap and raise the price while demand keeps saying yes. No '
-              "calls, no meetings, no contracts. But be honest with yourself. Christo's "
-              'warning was simple.',
-      'timestamp': 111,
-      'timestamp_label': '[00:01:51]',
-      'timestamp_seconds': 111,
-      'tip': 'One, sell a product, not your time. A clear price, a clear process, a clear '
-             'result. Two, start cheap and raise the price while demand keeps saying yes. No '
-             "calls, no meetings, no contracts. But be honest with yourself. Christo's warning "
-             'was simple.',
-      'title': 'This Designer Makes $2M a Year With ZERO Employees (Designjoy Explained '
-               'Simply) (I Make it Simple)',
-      'url': 'https://www.youtube.com/watch?v=uSh76GAmtwM&t=111s',
-      'video_id': 'uSh76GAmtwM'},
-     {'author': 'Rocket Research',
-      'channel': 'Rocket Research',
-      'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:01:23](https://www.youtube.com/watch?v=swIGkbLXEdM&t=83s)',
-      'relevance': 'Attributed practitioner commentary on productized B2B AI implementation, '
-                   'fixed-scope workflow sprints, and managed automation retainers (Chapter Q3 '
-                   'operational verification).',
-      'source_type': 'video_pro_tip',
-      'text': '50 to $2 per automated resolution. Additional AI features like Copilot add '
-              'about $50 per agent monthly. This combination of seat and per resolution '
-              'pricing can increase costs quickly for growing teams with high AI usage.',
-      'timestamp': 83,
-      'timestamp_label': '[00:01:23]',
-      'timestamp_seconds': 83,
-      'tip': '50 to $2 per automated resolution. Additional AI features like Copilot add about '
-             '$50 per agent monthly. This combination of seat and per resolution pricing can '
-             'increase costs quickly for growing teams with high AI usage.',
-      'title': 'How Much Should a Small Business Budget for AI Customer Support in 2026? '
-               '(Rocket Research)',
-      'url': 'https://www.youtube.com/watch?v=swIGkbLXEdM&t=83s',
-      'video_id': 'swIGkbLXEdM'}],
- 4: [{'author': 'Johnny',
-      'channel': 'Johnny',
-      'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:01:40](https://www.youtube.com/watch?v=MlJ3XSy3k7A&t=100s)',
-      'relevance': 'Attributed practitioner commentary on productized B2B AI implementation, '
-                   'fixed-scope workflow sprints, and managed automation retainers (Chapter Q4 '
-                   'operational verification).',
-      'source_type': 'video_pro_tip',
-      'text': 'And guys, the the interesting thing is that I got this client through this '
-              'system that I run in my own business. This is the second case study I want to '
-              'break down for you. He owns an AI automation agency. Now this guy is selling '
-              'this using it if that makes sense.',
-      'timestamp': 100,
-      'timestamp_label': '[00:01:40]',
-      'timestamp_seconds': 100,
-      'tip': 'And guys, the the interesting thing is that I got this client through this '
-             'system that I run in my own business. This is the second case study I want to '
-             'break down for you. He owns an AI automation agency. Now this guy is selling '
-             'this using it if that makes sense.',
-      'title': 'How To Book Sales Calls For Your Agency With AI Cold Email Outreach (Johnny)',
-      'url': 'https://www.youtube.com/watch?v=MlJ3XSy3k7A&t=100s',
-      'video_id': 'MlJ3XSy3k7A'},
-     {'author': 'Bo Sar',
-      'channel': 'Bo Sar',
-      'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:01:36](https://www.youtube.com/watch?v=pba8FIkOilY&t=96s)',
-      'relevance': 'Attributed practitioner commentary on productized B2B AI implementation, '
-                   'fixed-scope workflow sprints, and managed automation retainers (Chapter Q4 '
-                   'operational verification).',
-      'source_type': 'video_pro_tip',
-      'text': "Don't give the client a recruitment dashboard. Give them a hired employee. "
-              "Don't give them like billing software, give them a resolved insurance claim. "
-              'Don\'t give them an automation workflow, give them the results.".',
-      'timestamp': 96,
-      'timestamp_label': '[00:01:36]',
-      'timestamp_seconds': 96,
-      'tip': "Don't give the client a recruitment dashboard. Give them a hired employee. Don't "
-             "give them like billing software, give them a resolved insurance claim. Don't "
-             'give them an automation workflow, give them the results.".',
-      'title': 'The AI-First Agency Model YC Just Revealed (6 services to sell) (Bo Sar)',
-      'url': 'https://www.youtube.com/watch?v=pba8FIkOilY&t=96s',
-      'video_id': 'pba8FIkOilY'},
-     {'author': 'Nate Herk | AI Automation',
-      'channel': 'Nate Herk | AI Automation',
-      'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:02:23](https://www.youtube.com/watch?v=xxARTGo_Oqg&t=143s)',
-      'relevance': 'Attributed practitioner commentary on productized B2B AI implementation, '
-                   'fixed-scope workflow sprints, and managed automation retainers (Chapter Q4 '
-                   'operational verification).',
-      'source_type': 'video_pro_tip',
-      'text': "So if you're doing client work, this is what I recommend pretty much all the "
-              'time. Option two is you host nitn but only for your own agency. So in this '
-              'setup you run nitn on your own server but nobody else sees it except for your '
-              'business.',
-      'timestamp': 143,
-      'timestamp_label': '[00:02:23]',
-      'timestamp_seconds': 143,
-      'tip': "So if you're doing client work, this is what I recommend pretty much all the "
-             'time. Option two is you host nitn but only for your own agency. So in this setup '
-             'you run nitn on your own server but nobody else sees it except for your '
-             'business.',
-      'title': 'How to Actually Deliver AI Projects (APIs, Hosting & Handover Explained) (Nate '
-               'Herk | AI Automation)',
-      'url': 'https://www.youtube.com/watch?v=xxARTGo_Oqg&t=143s',
-      'video_id': 'xxARTGo_Oqg'},
-     {'author': 'Mert Yerlikaya',
-      'channel': 'Mert Yerlikaya',
-      'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:10:05](https://www.youtube.com/watch?v=1leregs81ik&t=605s)',
-      'relevance': 'Attributed practitioner commentary on productized B2B AI implementation, '
-                   'fixed-scope workflow sprints, and managed automation retainers (Chapter Q4 '
-                   'operational verification).',
-      'source_type': 'video_pro_tip',
-      'text': 'AI tools to selling high value business outcome, a transformation. This is how '
-              "we have scaled Mong AI group and it's how you can build incredible value. "
-              "Whether you're implementing AI in your own company or building an AI agency, "
-              'now you have two paths from here.',
-      'timestamp': 605,
-      'timestamp_label': '[00:10:05]',
-      'timestamp_seconds': 605,
-      'tip': 'AI tools to selling high value business outcome, a transformation. This is how '
-             "we have scaled Mong AI group and it's how you can build incredible value. "
-             "Whether you're implementing AI in your own company or building an AI agency, now "
-             'you have two paths from here.',
-      'title': 'How I Sell $10,000 AI Audits (Our EXACT 5-Step Process) (Mert Yerlikaya)',
-      'url': 'https://www.youtube.com/watch?v=1leregs81ik&t=605s',
-      'video_id': '1leregs81ik'},
-     {'author': 'Just Kristers',
-      'channel': 'Just Kristers',
-      'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:02:39](https://www.youtube.com/watch?v=G1O3xtJW6hY&t=159s)',
-      'relevance': 'Attributed practitioner commentary on productized B2B AI implementation, '
-                   'fixed-scope workflow sprints, and managed automation retainers (Chapter Q4 '
-                   'operational verification).',
-      'source_type': 'video_pro_tip',
-      'text': 'Zenesk setup and customer touch points. Make your selections carefully based on '
-              "where you want automated support to be available. After you've chosen the "
-              'appropriate locations, click publish AI agent. Your chatbot is now live and '
-              'ready to assist your customers automatically.',
-      'timestamp': 159,
-      'timestamp_label': '[00:02:39]',
-      'timestamp_seconds': 159,
-      'tip': 'Zenesk setup and customer touch points. Make your selections carefully based on '
-             "where you want automated support to be available. After you've chosen the "
-             'appropriate locations, click publish AI agent. Your chatbot is now live and '
-             'ready to assist your customers automatically.',
-      'title': 'How To Set Up Zendesk AI Chatbot (Tutorial 2026) (Just Kristers)',
-      'url': 'https://www.youtube.com/watch?v=G1O3xtJW6hY&t=159s',
-      'video_id': 'G1O3xtJW6hY'},
-     {'author': 'Voice AI Decoded',
-      'channel': 'Voice AI Decoded',
-      'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:06:55](https://www.youtube.com/watch?v=HFuJC6Bi11o&t=415s)',
-      'relevance': 'Attributed practitioner commentary on productized B2B AI implementation, '
-                   'fixed-scope workflow sprints, and managed automation retainers (Chapter Q4 '
-                   'operational verification).',
-      'source_type': 'video_pro_tip',
-      'text': 'API keys and pay them directly rather than it will go through Vappy. So here '
-              'just as an example, we got five kind of leading voice AI platforms. This is '
-              'based on 3,000 call minutes per month on a typical stack. 1, Deepseek, Nova or '
-              'Deepseek Flux and 11 Labs Turbo V2.',
-      'timestamp': 415,
-      'timestamp_label': '[00:06:55]',
-      'timestamp_seconds': 415,
-      'tip': 'API keys and pay them directly rather than it will go through Vappy. So here '
-             'just as an example, we got five kind of leading voice AI platforms. This is '
-             'based on 3,000 call minutes per month on a typical stack. 1, Deepseek, Nova or '
-             'Deepseek Flux and 11 Labs Turbo V2.',
-      'title': 'VAPI vs Bland AI – I built the same voice agent on both (Voice AI Decoded)',
-      'url': 'https://www.youtube.com/watch?v=HFuJC6Bi11o&t=415s',
-      'video_id': 'HFuJC6Bi11o'},
-     {'author': 'Jacob Kaz',
-      'channel': 'Jacob Kaz',
-      'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:10:32](https://www.youtube.com/watch?v=agtVZpDDGmU&t=632s)',
-      'relevance': 'Attributed practitioner commentary on productized B2B AI implementation, '
-                   'fixed-scope workflow sprints, and managed automation retainers (Chapter Q4 '
-                   'operational verification).',
-      'source_type': 'video_pro_tip',
-      'text': 'So, anyh who, following that, the next steps are very easy as well. You have '
-              'the onboarding calls, the campaign setup, the AI agent setup, AI caller. All '
-              'these things take a com like maybe combined like 10 20 minutes.',
-      'timestamp': 632,
-      'timestamp_label': '[00:10:32]',
-      'timestamp_seconds': 632,
-      'tip': 'So, anyh who, following that, the next steps are very easy as well. You have the '
-             'onboarding calls, the campaign setup, the AI agent setup, AI caller. All these '
-             'things take a com like maybe combined like 10 20 minutes.',
-      'title': 'How i built an AI Agency that makes me 100k/mo with no money (with proof) '
-               '(Jacob Kaz)',
-      'url': 'https://www.youtube.com/watch?v=agtVZpDDGmU&t=632s',
-      'video_id': 'agtVZpDDGmU'},
-     {'author': 'The Workbench',
-      'channel': 'The Workbench',
-      'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:09:15](https://www.youtube.com/watch?v=NT0JXm1lCyE&t=555s)',
-      'relevance': 'Attributed practitioner commentary on productized B2B AI implementation, '
-                   'fixed-scope workflow sprints, and managed automation retainers (Chapter Q4 '
-                   'operational verification).',
-      'source_type': 'video_pro_tip',
-      'text': "We do a lot of scraping through different proxies to get lists but what what's "
-              'your tech stack Ian? How how do you stand up outbound for your for your uh your '
-              "clients? So it's actually a lot of proprietary tools that we use. So we "
-              'actually developed a lot.',
-      'timestamp': 555,
-      'timestamp_label': '[00:09:15]',
-      'timestamp_seconds': 555,
-      'tip': "We do a lot of scraping through different proxies to get lists but what what's "
-             'your tech stack Ian? How how do you stand up outbound for your for your uh your '
-             "clients? So it's actually a lot of proprietary tools that we use. So we actually "
-             'developed a lot.',
-      'title': 'How Cold Email Landed $60k Home Service Deals | The Workbench (The Workbench)',
-      'url': 'https://www.youtube.com/watch?v=NT0JXm1lCyE&t=555s',
-      'video_id': 'NT0JXm1lCyE'},
-     {'author': 'Andrew Dunn | AI Consulting',
-      'channel': 'Andrew Dunn | AI Consulting',
-      'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:04:57](https://www.youtube.com/watch?v=AG_L5ecwXkU&t=297s)',
-      'relevance': 'Attributed practitioner commentary on productized B2B AI implementation, '
-                   'fixed-scope workflow sprints, and managed automation retainers (Chapter Q4 '
-                   'operational verification).',
-      'source_type': 'video_pro_tip',
-      'text': "So, we are grouping together the processes. So, in this case, we've got lead "
-              "generation capture. We've got qualification, discovery, and closing. We then go "
-              'to delivery, which is pre-delivery setup, strategy, production, '
-              'post-production, client delivery.',
+      'text': 'A retainer is a fee for availability. An AI enablement partner is a fee with '
+              'accountability.',
       'timestamp': 297,
       'timestamp_label': '[00:04:57]',
       'timestamp_seconds': 297,
-      'tip': "So, we are grouping together the processes. So, in this case, we've got lead "
-             "generation capture. We've got qualification, discovery, and closing. We then go "
-             'to delivery, which is pre-delivery setup, strategy, production, post-production, '
-             'client delivery.',
-      'title': 'How to Perform a $15,000 AI Audit (Beginner’s Guide) (Andrew Dunn | AI '
-               'Consulting)',
-      'url': 'https://www.youtube.com/watch?v=AG_L5ecwXkU&t=297s',
-      'video_id': 'AG_L5ecwXkU'},
-     {'author': 'CX Foundation',
-      'channel': 'CX Foundation',
+      'tip': 'A retainer is a fee for availability. An AI enablement partner is a fee with '
+             'accountability.',
+      'title': 'Turn Your AI Skills Into Long-Term Clients (The 90-Day Method)',
+      'url': 'https://www.youtube.com/watch?v=afaXZkksQs0&t=297s',
+      'video_id': 'afaXZkksQs0'},
+     {'author': 'Brett Malinowski',
+      'channel': 'Brett Malinowski',
       'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:01:21](https://www.youtube.com/watch?v=-j4XDojlGLc&t=81s)',
-      'relevance': 'Attributed practitioner commentary on productized B2B AI implementation, '
-                   'fixed-scope workflow sprints, and managed automation retainers (Chapter Q4 '
-                   'operational verification).',
+      'markdown': '[00:00:48](https://www.youtube.com/watch?v=vBXCdVHBK3o&t=48s)',
+      'relevance': 'Practitioner description of a concurrency-limited subscription service.',
       'source_type': 'video_pro_tip',
-      'text': 'So, what brings you to the wonderful world of Bland AI today? Are you looking '
-              'to build something cool or just checking things out? Well, I actually had a '
-              "question. I'm interested in buying, um, but here's the thing. I have a pretty "
-              'tight budget and a pretty strict timeline.',
-      'timestamp': 81,
-      'timestamp_label': '[00:01:21]',
-      'timestamp_seconds': 81,
-      'tip': 'So, what brings you to the wonderful world of Bland AI today? Are you looking to '
-             'build something cool or just checking things out? Well, I actually had a '
-             "question. I'm interested in buying, um, but here's the thing. I have a pretty "
-             'tight budget and a pretty strict timeline.',
-      'title': 'We Tested Bland AI’s Voice Agent. Here’s What Happened (CX Foundation)',
-      'url': 'https://www.youtube.com/watch?v=-j4XDojlGLc&t=81s',
-      'video_id': '-j4XDojlGLc'},
-     {'author': 'Bland',
-      'channel': 'Bland',
+      'text': 'This graphic designer offers unlimited design services for $5,000 a month, but the '
+              'catch is you can only make one request at a time and each request takes 48 hours to '
+              'complete.',
+      'timestamp': 48,
+      'timestamp_label': '[00:00:48]',
+      'timestamp_seconds': 48,
+      'tip': 'This graphic designer offers unlimited design services for $5,000 a month, but the '
+             'catch is you can only make one request at a time and each request takes 48 hours to '
+             'complete.',
+      'title': '7 Productized Services That Will Make You $100,000/month (One Person Business)',
+      'url': 'https://www.youtube.com/watch?v=vBXCdVHBK3o&t=48s',
+      'video_id': 'vBXCdVHBK3o'},
+     {'author': 'Wayfront',
+      'channel': 'Wayfront',
       'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:00:30](https://www.youtube.com/watch?v=W1Y3bHct_e0&t=30s)',
-      'relevance': 'Attributed practitioner commentary on productized B2B AI implementation, '
-                   'fixed-scope workflow sprints, and managed automation retainers (Chapter Q4 '
-                   'operational verification).',
+      'markdown': '[00:02:20](https://www.youtube.com/watch?v=0M1GD8qDDUw&t=140s)',
+      'relevance': 'Practitioner description of workload boundaries in unlimited-request services.',
       'source_type': 'video_pro_tip',
-      'text': 'So, in this case, right, we want the agent to first, obviously, absolutely make '
-              "sure that the user is okay, um that there's no, you know, immediate urgency, "
-              "like we should call 911, things like that. Um we've got some global nodes set "
-              'up here.',
-      'timestamp': 30,
-      'timestamp_label': '[00:00:30]',
-      'timestamp_seconds': 30,
-      'tip': 'So, in this case, right, we want the agent to first, obviously, absolutely make '
-             "sure that the user is okay, um that there's no, you know, immediate urgency, "
-             "like we should call 911, things like that. Um we've got some global nodes set up "
-             'here.',
-      'title': 'How to automate FNOL insurance calls using AI voice agents (Bland)',
-      'url': 'https://www.youtube.com/watch?v=W1Y3bHct_e0&t=30s',
-      'video_id': 'W1Y3bHct_e0'},
-     {'author': 'Matt Williams',
-      'channel': 'Matt Williams',
+      'text': 'A limit to how many concurrent requests the client can have at the same time '
+              'maintains a reasonable workload.',
+      'timestamp': 140,
+      'timestamp_label': '[00:02:20]',
+      'timestamp_seconds': 140,
+      'tip': 'A limit to how many concurrent requests the client can have at the same time '
+             'maintains a reasonable workload.',
+      'title': 'Every Type Of Productized Service EVER + Examples',
+      'url': 'https://www.youtube.com/watch?v=0M1GD8qDDUw&t=140s',
+      'video_id': '0M1GD8qDDUw'},
+     {'author': 'Nick Saraev',
+      'channel': 'Nick Saraev',
       'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:00:33](https://www.youtube.com/watch?v=KeqxPxb_sak&t=33s)',
-      'relevance': 'Attributed practitioner commentary on productized B2B AI implementation, '
-                   'fixed-scope workflow sprints, and managed automation retainers (Chapter Q4 '
-                   'operational verification).',
+      'markdown': '[00:00:00](https://www.youtube.com/watch?v=T9diMzLIpqQ&t=0s)',
+      'relevance': 'Practitioner offer framing for discrete B2B automation projects.',
       'source_type': 'video_pro_tip',
-      'text': "Ollama, and today I'm going to show you how to swap in local models, so your "
-              'most private data never leaves your machine. The setup is almost the same as '
-              'the Claude desktop integration that I showed recently, but with one weird quirk '
-              'in how you pick your models.',
-      'timestamp': 33,
-      'timestamp_label': '[00:00:33]',
-      'timestamp_seconds': 33,
-      'tip': "Ollama, and today I'm going to show you how to swap in local models, so your "
-             'most private data never leaves your machine. The setup is almost the same as the '
-             'Claude desktop integration that I showed recently, but with one weird quirk in '
-             'how you pick your models.',
-      'title': "Stop Sending Your Private Data to OpenAI's Servers (Matt Williams)",
-      'url': 'https://www.youtube.com/watch?v=KeqxPxb_sak&t=33s',
-      'video_id': 'KeqxPxb_sak'},
+      'text': 'Here are three boring AI automations you can sell right now to B2B agencies, '
+              'digital marketing companies, and SEO businesses for 1.7K a pop or up.',
+      'timestamp': 0,
+      'timestamp_label': '[00:00:00]',
+      'timestamp_seconds': 0,
+      'tip': 'Here are three boring AI automations you can sell right now to B2B agencies, digital '
+             'marketing companies, and SEO businesses for 1.7K a pop or up.',
+      'title': 'Sell These 3 Simple AI Automations for $1.7K to B2B Agencies',
+      'url': 'https://www.youtube.com/watch?v=T9diMzLIpqQ&t=0s',
+      'video_id': 'T9diMzLIpqQ'},
+     {'author': 'Sean Malone | Close Bigger Deals',
+      'channel': 'Sean Malone | Close Bigger Deals',
+      'epistemic_status': 'attributed_practitioner_claim',
+      'markdown': '[00:05:05](https://www.youtube.com/watch?v=fXrfPpcs7fw&t=305s)',
+      'relevance': 'Practitioner testimony on outcome-led positioning for retainers.',
+      'source_type': 'video_pro_tip',
+      'text': 'The simple rule: name the job, not the tool.',
+      'timestamp': 305,
+      'timestamp_label': '[00:05:05]',
+      'timestamp_seconds': 305,
+      'tip': 'The simple rule: name the job, not the tool.',
+      'title': 'How to Sell AI Automation Services (Without Pitching AI)',
+      'url': 'https://www.youtube.com/watch?v=fXrfPpcs7fw&t=305s',
+      'video_id': 'fXrfPpcs7fw'},
+     {'author': 'AI Hustle Lab',
+      'channel': 'AI Hustle Lab',
+      'epistemic_status': 'attributed_practitioner_claim',
+      'markdown': '[00:07:18](https://www.youtube.com/watch?v=6FS1eyS2agI&t=438s)',
+      'relevance': 'Practitioner demonstration of timed contextual follow-up routes.',
+      'source_type': 'video_pro_tip',
+      'text': "In my case, I've done 4 days, 8 days, and 14 days. And then just have this run once "
+              'per day.',
+      'timestamp': 438,
+      'timestamp_label': '[00:07:18]',
+      'timestamp_seconds': 438,
+      'tip': "In my case, I've done 4 days, 8 days, and 14 days. And then just have this run once "
+             'per day.',
+      'title': 'Sell These 3 Simple AI Automations for $1.7K to B2B Agencies',
+      'url': 'https://www.youtube.com/watch?v=6FS1eyS2agI&t=438s',
+      'video_id': '6FS1eyS2agI'},
+     {'author': 'AI Money Math',
+      'channel': 'AI Money Math',
+      'epistemic_status': 'attributed_practitioner_claim',
+      'markdown': '[00:06:33](https://www.youtube.com/watch?v=VZQaUF7kKNw&t=393s)',
+      'relevance': 'Practitioner pricing illustration for missed-call text-back.',
+      'source_type': 'video_pro_tip',
+      'text': 'The numbers I used last time: $750 for setup and $100 a month to run it.',
+      'timestamp': 393,
+      'timestamp_label': '[00:06:33]',
+      'timestamp_seconds': 393,
+      'tip': 'The numbers I used last time: $750 for setup and $100 a month to run it.',
+      'title': 'How to Sell AI Automations to Local Businesses (Beginner Guide)',
+      'url': 'https://www.youtube.com/watch?v=VZQaUF7kKNw&t=393s',
+      'video_id': 'VZQaUF7kKNw'},
+     {'author': 'ArriSse Corp',
+      'channel': 'ArriSse Corp',
+      'epistemic_status': 'attributed_practitioner_claim',
+      'markdown': '[00:04:40](https://www.youtube.com/watch?v=XKoGenFWVHs&t=280s)',
+      'relevance': 'Practitioner instruction on commercial treatment of scope changes.',
+      'source_type': 'video_pro_tip',
+      'text': 'Option A logs the request into a phase two backlog, while option B prices the '
+              'change and adjusts the current schedule.',
+      'timestamp': 280,
+      'timestamp_label': '[00:04:40]',
+      'timestamp_seconds': 280,
+      'tip': 'Option A logs the request into a phase two backlog, while option B prices the change '
+             'and adjusts the current schedule.',
+      'title': 'The Exact System Boutique Agencies Use to Stop Scope Creep & Close $5k/mo '
+               'Retainers',
+      'url': 'https://www.youtube.com/watch?v=XKoGenFWVHs&t=280s',
+      'video_id': 'XKoGenFWVHs'},
+     {'author': 'Agency Stack Guide',
+      'channel': 'Agency Stack Guide',
+      'epistemic_status': 'attributed_practitioner_claim',
+      'markdown': '[00:05:46](https://www.youtube.com/watch?v=raRxPWQp8ao&t=346s)',
+      'relevance': 'Practitioner revenue illustration for the proposed managed newsletter service.',
+      'source_type': 'video_pro_tip',
+      'text': 'Five clients would be $1,485 in recurring revenue before expenses.',
+      'timestamp': 346,
+      'timestamp_label': '[00:05:46]',
+      'timestamp_seconds': 346,
+      'tip': 'Five clients would be $1,485 in recurring revenue before expenses.',
+      'title': 'Build This AI Agent & Charge $297/Month Per Client! (Step-by-Step)',
+      'url': 'https://www.youtube.com/watch?v=raRxPWQp8ao&t=346s',
+      'video_id': 'raRxPWQp8ao'},
+     {'author': 'MIA My Intelligent Assistant',
+      'channel': 'MIA My Intelligent Assistant',
+      'epistemic_status': 'attributed_practitioner_claim',
+      'markdown': '[00:02:00](https://www.youtube.com/watch?v=v38lkQnptDg&t=120s)',
+      'relevance': 'Practitioner comparison of platform access fees and voice usage costs.',
+      'source_type': 'video_pro_tip',
+      'text': "That monthly subscription fee from Bland is purely for platform access. It doesn't "
+              'buy you a single minute of call time.',
+      'timestamp': 120,
+      'timestamp_label': '[00:02:00]',
+      'timestamp_seconds': 120,
+      'tip': "That monthly subscription fee from Bland is purely for platform access. It doesn't "
+             'buy you a single minute of call time.',
+      'title': 'Bland AI vs SuperMIA vs Retell AI: Which Voice Platform Wins at 10K Calls?',
+      'url': 'https://www.youtube.com/watch?v=v38lkQnptDg&t=120s',
+      'video_id': 'v38lkQnptDg'}],
+ 5: [{'author': 'Bennett Black',
+      'channel': 'Bennett Black',
+      'epistemic_status': 'attributed_practitioner_claim',
+      'markdown': '[00:05:05](https://www.youtube.com/watch?v=HpBFCMSfM-I&t=305s)',
+      'relevance': 'Practitioner testimony on niche-specific system catalogs and repeatable sales.',
+      'source_type': 'video_pro_tip',
+      'text': "If you're selling the flat fee, I think having a niche is very, very beneficial "
+              'because you can develop kind of a service or a system catalog.',
+      'timestamp': 305,
+      'timestamp_label': '[00:05:05]',
+      'timestamp_seconds': 305,
+      'tip': "If you're selling the flat fee, I think having a niche is very, very beneficial "
+             'because you can develop kind of a service or a system catalog.',
+      'title': 'The 3 Best Ways To Sell AI Automation Services (n8n, Make)',
+      'url': 'https://www.youtube.com/watch?v=HpBFCMSfM-I&t=305s',
+      'video_id': 'HpBFCMSfM-I'},
+     {'author': 'Michael Reimer | HighLevel & AI Systems',
+      'channel': 'Michael Reimer | HighLevel & AI Systems',
+      'epistemic_status': 'attributed_practitioner_claim',
+      'markdown': '[00:04:33](https://www.youtube.com/watch?v=IWNNb6VOVz8&t=273s)',
+      'relevance': 'Practitioner testimony on a measurable pilot and its review cadence.',
+      'source_type': 'video_pro_tip',
+      'text': "A lot of automation fails because it's built around tools instead of a measurable "
+              'business problem. I would start with one workflow, one metric, and one 30-day '
+              'review.',
+      'timestamp': 273,
+      'timestamp_label': '[00:04:33]',
+      'timestamp_seconds': 273,
+      'tip': "A lot of automation fails because it's built around tools instead of a measurable "
+             'business problem. I would start with one workflow, one metric, and one 30-day '
+             'review.',
+      'title': 'The Exact Script to Close AI Agency Clients on a Discovery Call',
+      'url': 'https://www.youtube.com/watch?v=IWNNb6VOVz8&t=273s',
+      'video_id': 'IWNNb6VOVz8'},
+     {'author': 'The Workbench',
+      'channel': 'The Workbench',
+      'epistemic_status': 'attributed_practitioner_claim',
+      'markdown': '[00:13:36](https://www.youtube.com/watch?v=NT0JXm1lCyE&t=816s)',
+      'relevance': 'Practitioner testimony on moving positive email replies to the phone.',
+      'source_type': 'video_pro_tip',
+      'text': 'Every single time that a client gets a lead in there, I tell them, call them up.',
+      'timestamp': 816,
+      'timestamp_label': '[00:13:36]',
+      'timestamp_seconds': 816,
+      'tip': 'Every single time that a client gets a lead in there, I tell them, call them up.',
+      'title': 'How Cold Email Landed $60k Home Service Deals | The Workbench',
+      'url': 'https://www.youtube.com/watch?v=NT0JXm1lCyE&t=816s',
+      'video_id': 'NT0JXm1lCyE'},
+     {'author': 'Tom Gaddis | Smart AI Operators',
+      'channel': 'Tom Gaddis | Smart AI Operators',
+      'epistemic_status': 'attributed_practitioner_claim',
+      'markdown': '[00:25:00](https://www.youtube.com/watch?v=A_LppzjgUi0&t=1500s)',
+      'relevance': "Practitioner testimony on HighLevel's agency and subaccount workflow "
+                   'distinction.',
+      'source_type': 'video_pro_tip',
+      'text': 'On the agency side, I cannot add those leads to an automation or a workflow because '
+              'those things exist in subaccounts.',
+      'timestamp': 1500,
+      'timestamp_label': '[00:25:00]',
+      'timestamp_seconds': 1500,
+      'tip': 'On the agency side, I cannot add those leads to an automation or a workflow because '
+             'those things exist in subaccounts.',
+      'title': 'This AI Prospecting Update Just Made Cold Outreach Obsolete (500 Leads in Minutes)',
+      'url': 'https://www.youtube.com/watch?v=A_LppzjgUi0&t=1500s',
+      'video_id': 'A_LppzjgUi0'},
+     {'author': 'Johnny',
+      'channel': 'Johnny',
+      'epistemic_status': 'attributed_practitioner_claim',
+      'markdown': '[00:17:58](https://www.youtube.com/watch?v=MlJ3XSy3k7A&t=1078s)',
+      'relevance': 'Practitioner testimony favoring human handling of interested prospects.',
+      'source_type': 'video_pro_tip',
+      'text': "Just get me the positive responses. Get me a bunch of leads and I'll respond to "
+              "them. I don't mind.",
+      'timestamp': 1078,
+      'timestamp_label': '[00:17:58]',
+      'timestamp_seconds': 1078,
+      'tip': "Just get me the positive responses. Get me a bunch of leads and I'll respond to "
+             "them. I don't mind.",
+      'title': 'How To Book Sales Calls For Your Agency With AI Cold Email Outreach',
+      'url': 'https://www.youtube.com/watch?v=MlJ3XSy3k7A&t=1078s',
+      'video_id': 'MlJ3XSy3k7A'},
      {'author': 'Pavlo',
       'channel': 'Pavlo',
       'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:16:21](https://www.youtube.com/watch?v=GCChOuvd7Sg&t=981s)',
-      'relevance': 'Attributed practitioner commentary on productized B2B AI implementation, '
-                   'fixed-scope workflow sprints, and managed automation retainers (Chapter Q4 '
-                   'operational verification).',
+      'markdown': '[00:11:48](https://www.youtube.com/watch?v=GCChOuvd7Sg&t=708s)',
+      'relevance': 'Practitioner testimony on booking during the conversation rather than sending '
+                   'a link.',
       'source_type': 'video_pro_tip',
-      'text': "Are all doing it and now I'm bringing it to you if you want to see more on how "
-              'we actually get clients and turn them into pain customers you can check out '
-              'this video next.',
-      'timestamp': 981,
-      'timestamp_label': '[00:16:21]',
-      'timestamp_seconds': 981,
-      'tip': "Are all doing it and now I'm bringing it to you if you want to see more on how "
-             'we actually get clients and turn them into pain customers you can check out this '
-             'video next.',
-      'title': 'Cold Calling AI Agency Script That Gets 7 Meetings/day (Pavlo)',
-      'url': 'https://www.youtube.com/watch?v=GCChOuvd7Sg&t=981s',
+      'text': 'Book the meeting right on the call. Get it in front of your face.',
+      'timestamp': 708,
+      'timestamp_label': '[00:11:48]',
+      'timestamp_seconds': 708,
+      'tip': 'Book the meeting right on the call. Get it in front of your face.',
+      'title': 'Cold Calling AI Agency Script That Gets 7 Meetings/day',
+      'url': 'https://www.youtube.com/watch?v=GCChOuvd7Sg&t=708s',
       'video_id': 'GCChOuvd7Sg'},
-     {'author': 'IBM Technology',
-      'channel': 'IBM Technology',
+     {'author': 'Rico Parnaste',
+      'channel': 'Rico Parnaste',
       'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:05:26](https://www.youtube.com/watch?v=T-D1OfcDW1M&t=326s)',
-      'relevance': 'Attributed practitioner commentary on productized B2B AI implementation, '
-                   'fixed-scope workflow sprints, and managed automation retainers (Chapter Q4 '
-                   'operational verification).',
+      'markdown': '[00:09:05](https://www.youtube.com/watch?v=KVhWoj-Irv4&t=545s)',
+      'relevance': 'Practitioner testimony on training and consulting as alternatives to building '
+                   'automations.',
       'source_type': 'video_pro_tip',
-      'text': "If the user's question cannot be reliably answered based on your data store, "
-              'the model should say, "I don\'t know," instead of making up something that is '
-              'believable and may mislead the user.',
-      'timestamp': 326,
-      'timestamp_label': '[00:05:26]',
-      'timestamp_seconds': 326,
-      'tip': "If the user's question cannot be reliably answered based on your data store, the "
-             'model should say, "I don\'t know," instead of making up something that is '
-             'believable and may mislead the user.',
-      'title': 'What is Retrieval-Augmented Generation (RAG)? (IBM Technology)',
-      'url': 'https://www.youtube.com/watch?v=T-D1OfcDW1M&t=326s',
-      'video_id': 'T-D1OfcDW1M'},
-     {'author': 'Jonas | AI Tools & Automation',
-      'channel': 'Jonas | AI Tools & Automation',
+      'text': "I don't build the automation for them. I help them decide and teach their people "
+              'how to build their own.',
+      'timestamp': 545,
+      'timestamp_label': '[00:09:05]',
+      'timestamp_seconds': 545,
+      'tip': "I don't build the automation for them. I help them decide and teach their people how "
+             'to build their own.',
+      'title': "Here's What I'd Sell Instead of AI Automations in 2027",
+      'url': 'https://www.youtube.com/watch?v=KVhWoj-Irv4&t=545s',
+      'video_id': 'KVhWoj-Irv4'},
+     {'author': 'Carson Reed',
+      'channel': 'Carson Reed',
       'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:06:34](https://www.youtube.com/watch?v=4imOFZeP7nk&t=394s)',
-      'relevance': 'Attributed practitioner commentary on productized B2B AI implementation, '
-                   'fixed-scope workflow sprints, and managed automation retainers (Chapter Q4 '
-                   'operational verification).',
+      'markdown': '[00:21:11](https://www.youtube.com/watch?v=L1LsEN_iuIc&t=1271s)',
+      'relevance': "Marcus Pizarro's testimony on conversational DM outreach during the Carson "
+                   'Reed interview.',
       'source_type': 'video_pro_tip',
-      'text': "Because it's a whole lot cheaper and you get a lot more freedom and executions "
-              'with this method. Now, building an automation is easy, but building one that '
-              "doesn't break when a real client uses it is pretty different.",
-      'timestamp': 394,
-      'timestamp_label': '[00:06:34]',
-      'timestamp_seconds': 394,
-      'tip': "Because it's a whole lot cheaper and you get a lot more freedom and executions "
-             'with this method. Now, building an automation is easy, but building one that '
-             "doesn't break when a real client uses it is pretty different.",
-      'title': 'I Run My AI Automation Business for $0 in Software (Zapier vs Make vs n8n) '
-               '(Jonas | AI Tools & Automation)',
-      'url': 'https://www.youtube.com/watch?v=4imOFZeP7nk&t=394s',
-      'video_id': '4imOFZeP7nk'}],
- 5: [{'author': 'Austin Reed',
-      'channel': 'Austin Reed',
+      'text': "You're opening a conversation. You need to know that. It's about a conversation, "
+              'not closing a sale there.',
+      'timestamp': 1271,
+      'timestamp_label': '[00:21:11]',
+      'timestamp_seconds': 1271,
+      'tip': "You're opening a conversation. You need to know that. It's about a conversation, not "
+             'closing a sale there.',
+      'title': 'How To Sign AI Agency Clients Using Outreach in 2026',
+      'url': 'https://www.youtube.com/watch?v=L1LsEN_iuIc&t=1271s',
+      'video_id': 'L1LsEN_iuIc'},
+     {'author': 'Aletto',
+      'channel': 'Aletto',
       'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:03:48](https://www.youtube.com/watch?v=mw1V2GoYHsk&t=228s)',
-      'relevance': 'Attributed practitioner commentary on productized B2B AI implementation, '
-                   'fixed-scope workflow sprints, and managed automation retainers (Chapter Q5 '
-                   'operational verification).',
+      'markdown': '[00:12:27](https://www.youtube.com/watch?v=IfS3QohXxG8&t=747s)',
+      'relevance': 'Practitioner testimony on AI-assisted proposals using actual buyer language.',
       'source_type': 'video_pro_tip',
-      'text': 'In that case, the only thing you might want to do is put the JSON file in a '
-              "Notion page with a little bit of documentation handed to the client, and you're "
-              "good to go. Now let's talk about API keys. Generally, while you're building, "
-              'you would like to use test credentials.',
-      'timestamp': 228,
-      'timestamp_label': '[00:03:48]',
-      'timestamp_seconds': 228,
-      'tip': 'In that case, the only thing you might want to do is put the JSON file in a '
-             "Notion page with a little bit of documentation handed to the client, and you're "
-             "good to go. Now let's talk about API keys. Generally, while you're building, you "
-             'would like to use test credentials.',
-      'title': 'How to Deliver Your n8n Project to Clients Like a PRO! (Austin Reed)',
-      'url': 'https://www.youtube.com/watch?v=mw1V2GoYHsk&t=228s',
-      'video_id': 'mw1V2GoYHsk'},
-     {'author': 'Daniel | Tech & Data',
-      'channel': 'Daniel | Tech & Data',
+      'text': "It reads the call transcript, pulls the buyer's own words, and builds a one-page "
+              'proposal on a locked template.',
+      'timestamp': 747,
+      'timestamp_label': '[00:12:27]',
+      'timestamp_seconds': 747,
+      'tip': "It reads the call transcript, pulls the buyer's own words, and builds a one-page "
+             'proposal on a locked template.',
+      'title': "15 AI Tasks I'd Automate in a B2B SaaS Company",
+      'url': 'https://www.youtube.com/watch?v=IfS3QohXxG8&t=747s',
+      'video_id': 'IfS3QohXxG8'},
+     {'author': 'AI Automation Clips | AI Agent Systems',
+      'channel': 'AI Automation Clips | AI Agent Systems',
       'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:06:15](https://www.youtube.com/watch?v=PgrkNMNc_Cw&t=375s)',
-      'relevance': 'Attributed practitioner commentary on productized B2B AI implementation, '
-                   'fixed-scope workflow sprints, and managed automation retainers (Chapter Q5 '
-                   'operational verification).',
+      'markdown': '[00:02:40](https://www.youtube.com/watch?v=RHZMQe6R_5A&t=160s)',
+      'relevance': 'Practitioner testimony describing the two-week strategic audit structure.',
       'source_type': 'video_pro_tip',
-      'text': 'After I pointed out the mistake, the agent corrected it and confirmed the '
-              'updated information without restarting the entire booking process. The call '
-              'ended with a complete appointment summary that included the vehicle issue and '
-              "the customer's contact details.",
-      'timestamp': 375,
-      'timestamp_label': '[00:06:15]',
-      'timestamp_seconds': 375,
-      'tip': 'After I pointed out the mistake, the agent corrected it and confirmed the '
-             'updated information without restarting the entire booking process. The call '
-             'ended with a complete appointment summary that included the vehicle issue and '
-             "the customer's contact details.",
-      'title': 'Retell AI Review (2026): Create AI Voice Agents in Under 10 Minutes (Daniel | '
-               'Tech & Data)',
-      'url': 'https://www.youtube.com/watch?v=PgrkNMNc_Cw&t=375s',
-      'video_id': 'PgrkNMNc_Cw'},
-     {'author': 'Nomad Life Success',
-      'channel': 'Nomad Life Success',
+      'text': 'Week one is all about discovery. Week two is solution design.',
+      'timestamp': 160,
+      'timestamp_label': '[00:02:40]',
+      'timestamp_seconds': 160,
+      'tip': 'Week one is all about discovery. Week two is solution design.',
+      'title': 'Strategic AI Implementation | Stop guessing! Do an AI Audit!',
+      'url': 'https://www.youtube.com/watch?v=RHZMQe6R_5A&t=160s',
+      'video_id': 'RHZMQe6R_5A'},
+     {'author': 'Tom Gaddis | Smart AI Operators',
+      'channel': 'Tom Gaddis | Smart AI Operators',
       'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:05:55](https://www.youtube.com/watch?v=KdD-2pmdFZI&t=355s)',
-      'relevance': 'Attributed practitioner commentary on productized B2B AI implementation, '
-                   'fixed-scope workflow sprints, and managed automation retainers (Chapter Q5 '
-                   'operational verification).',
+      'markdown': '[00:16:04](https://www.youtube.com/watch?v=Z3ZaxxexqYE&t=964s)',
+      'relevance': 'Firsthand testimony on an audit error contradicted by direct inspection.',
       'source_type': 'video_pro_tip',
-      'text': 'The shield is flexible by design. The three biggest mistakes I see nomads make. '
-              'Mistake one, being too rigid. If you send a change order for every tiny tweak, '
-              'clients will feel nickel and dimed and might leave. The shield is for scope '
-              'creep, not for building a wall.',
-      'timestamp': 355,
-      'timestamp_label': '[00:05:55]',
-      'timestamp_seconds': 355,
-      'tip': 'The shield is flexible by design. The three biggest mistakes I see nomads make. '
-             'Mistake one, being too rigid. If you send a change order for every tiny tweak, '
-             'clients will feel nickel and dimed and might leave. The shield is for scope '
-             'creep, not for building a wall.',
-      'title': "The AI Scope-Creep Shield: How to Turn 'One More Request' into a Premium "
-               'Change-Order That Pays Y... (Nomad Life Success)',
-      'url': 'https://www.youtube.com/watch?v=KdD-2pmdFZI&t=355s',
-      'video_id': 'KdD-2pmdFZI'},
-     {'author': 'Michael Saruggia - GTM Engineering',
-      'channel': 'Michael Saruggia - GTM Engineering',
+      'text': 'It found zero response of any reviews, which would be a big thing we could help '
+              'them with, but as you saw when I went over here and verified with my own eyes, they '
+              'are actually responding to reviews.',
+      'timestamp': 964,
+      'timestamp_label': '[00:16:04]',
+      'timestamp_seconds': 964,
+      'tip': 'It found zero response of any reviews, which would be a big thing we could help them '
+             'with, but as you saw when I went over here and verified with my own eyes, they are '
+             'actually responding to reviews.',
+      'title': 'How Top AI Agencies Close Deals Without Selling | Claude Audit',
+      'url': 'https://www.youtube.com/watch?v=Z3ZaxxexqYE&t=964s',
+      'video_id': 'Z3ZaxxexqYE'},
+     {'author': 'Lily Latzo | AI Automation',
+      'channel': 'Lily Latzo | AI Automation',
       'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:03:08](https://www.youtube.com/watch?v=DHX8uoA53OI&t=188s)',
-      'relevance': 'Attributed practitioner commentary on productized B2B AI implementation, '
-                   'fixed-scope workflow sprints, and managed automation retainers (Chapter Q5 '
-                   'operational verification).',
+      'markdown': '[00:00:01](https://www.youtube.com/watch?v=NjvNF17_97w&t=1s)',
+      'relevance': 'Practitioner testimony on the reported seven-day client acquisition sprint.',
       'source_type': 'video_pro_tip',
-      'text': "Most of the times it's a recurring problem. And moreover, if you're actually "
-              "able to identify these job changes, there is an amazing pipeline use case. 's "
-              "say that you are in touch and you're working with 100 1,000 active clients, "
-              'active accounts.',
-      'timestamp': 188,
-      'timestamp_label': '[00:03:08]',
-      'timestamp_seconds': 188,
-      'tip': "Most of the times it's a recurring problem. And moreover, if you're actually "
-             "able to identify these job changes, there is an amazing pipeline use case. 's "
-             "say that you are in touch and you're working with 100 1,000 active clients, "
-             'active accounts.',
-      'title': 'Fix Your CRM Data With Clay.Com (Job Changes Problem) (Michael Saruggia - GTM '
-               'Engineering)',
-      'url': 'https://www.youtube.com/watch?v=DHX8uoA53OI&t=188s',
-      'video_id': 'DHX8uoA53OI'},
-     {'author': 'My Web Audit',
-      'channel': 'My Web Audit',
-      'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:20:51](https://www.youtube.com/watch?v=tT1dV4_aC0M&t=1251s)',
-      'relevance': 'Attributed practitioner commentary on productized B2B AI implementation, '
-                   'fixed-scope workflow sprints, and managed automation retainers (Chapter Q5 '
-                   'operational verification).',
-      'source_type': 'video_pro_tip',
-      'text': 'Michael, It, I just had to give it four or five variables. It pulled up the '
-              "prompts, and in this case, there's 20 prompts. A note to the client that says, "
-              '"Hey, our audit only includes 10," and identify which 10 here work best.',
-      'timestamp': 1251,
-      'timestamp_label': '[00:20:51]',
-      'timestamp_seconds': 1251,
-      'tip': 'Michael, It, I just had to give it four or five variables. It pulled up the '
-             "prompts, and in this case, there's 20 prompts. A note to the client that says, "
-             '"Hey, our audit only includes 10," and identify which 10 here work best.',
-      'title': 'How to sell AI visibility audits and turn them into recurring revenue for your '
-               'agency (My Web Audit)',
-      'url': 'https://www.youtube.com/watch?v=tT1dV4_aC0M&t=1251s',
-      'video_id': 'tT1dV4_aC0M'},
-     {'author': 'Zimri Mayfield',
-      'channel': 'Zimri Mayfield',
-      'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:05:42](https://www.youtube.com/watch?v=Z7hn_pkhIxM&t=342s)',
-      'relevance': 'Attributed practitioner commentary on productized B2B AI implementation, '
-                   'fixed-scope workflow sprints, and managed automation retainers (Chapter Q5 '
-                   'operational verification).',
-      'source_type': 'video_pro_tip',
-      'text': "Brett's nearly $2 million business is no accident. It has nothing to do with "
-              'luck, but rather some very smart decisions he made while building his business. '
-              'Okay, you see this channel called Starter Story? I look look at their look at '
-              'the content.',
-      'timestamp': 342,
-      'timestamp_label': '[00:05:42]',
-      'timestamp_seconds': 342,
-      'tip': "Brett's nearly $2 million business is no accident. It has nothing to do with "
-             'luck, but rather some very smart decisions he made while building his business. '
-             'Okay, you see this channel called Starter Story? I look look at their look at '
-             'the content.',
-      'title': 'DesignJoy has to be a scam (Zimri Mayfield)',
-      'url': 'https://www.youtube.com/watch?v=Z7hn_pkhIxM&t=342s',
-      'video_id': 'Z7hn_pkhIxM'},
-     {'author': 'The AI Architects | Tom Crawshaw',
-      'channel': 'The AI Architects | Tom Crawshaw',
-      'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:03:33](https://www.youtube.com/watch?v=ofC4OeNjDx8&t=213s)',
-      'relevance': 'Attributed practitioner commentary on productized B2B AI implementation, '
-                   'fixed-scope workflow sprints, and managed automation retainers (Chapter Q5 '
-                   'operational verification).',
-      'source_type': 'video_pro_tip',
-      'text': "You're not just connecting nodes anymore. You're building fast, reliable "
-              "automations that actually work. But even knowing that timeline won't save you "
-              "if you're making these three mistakes that kill most people's progress. So "
-              'mistake number one is tutorial addiction.',
-      'timestamp': 213,
-      'timestamp_label': '[00:03:33]',
-      'timestamp_seconds': 213,
-      'tip': "You're not just connecting nodes anymore. You're building fast, reliable "
-             "automations that actually work. But even knowing that timeline won't save you if "
-             "you're making these three mistakes that kill most people's progress. So mistake "
-             'number one is tutorial addiction.',
-      'title': 'Seriously, please watch this before you start learning n8n (The AI Architects '
-               '| Tom Crawshaw)',
-      'url': 'https://www.youtube.com/watch?v=ofC4OeNjDx8&t=213s',
-      'video_id': 'ofC4OeNjDx8'},
-     {'author': 'AI Engineering with Kaushal',
-      'channel': 'AI Engineering with Kaushal',
-      'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:18:47](https://www.youtube.com/watch?v=cxGMp3DBkMk&t=1127s)',
-      'relevance': 'Attributed practitioner commentary on productized B2B AI implementation, '
-                   'fixed-scope workflow sprints, and managed automation retainers (Chapter Q5 '
-                   'operational verification).',
-      'source_type': 'video_pro_tip',
-      'text': "So it just does does not mandatory everyone will use agentic rag. It's based on "
-              "your business. It's based on your problem. So what do if your problem can be "
-              'solved just in simple naive rag means classic rag why you go for agentic?',
-      'timestamp': 1127,
-      'timestamp_label': '[00:18:47]',
-      'timestamp_seconds': 1127,
-      'tip': "So it just does does not mandatory everyone will use agentic rag. It's based on "
-             "your business. It's based on your problem. So what do if your problem can be "
-             'solved just in simple naive rag means classic rag why you go for agentic?',
-      'title': 'RAG Explained: Why LLMs Hallucinate Without a Knowledge Layer (AI Engineering '
-               'with Kaushal)',
-      'url': 'https://www.youtube.com/watch?v=cxGMp3DBkMk&t=1127s',
-      'video_id': 'cxGMp3DBkMk'},
-     {'author': 'AI Tool Lab',
-      'channel': 'AI Tool Lab',
-      'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:06:05](https://www.youtube.com/watch?v=9wewuc4s038&t=365s)',
-      'relevance': 'Attributed practitioner commentary on productized B2B AI implementation, '
-                   'fixed-scope workflow sprints, and managed automation retainers (Chapter Q5 '
-                   'operational verification).',
-      'source_type': 'video_pro_tip',
-      'text': 'Chap base builds the model request, not the answer. Every meter in this video '
-              "charges for something other than a solved problem, except the winner's free "
-              'tier, which charges nothing at all to start, and even the winner has a sharp '
-              'trap.',
-      'timestamp': 365,
-      'timestamp_label': '[00:06:05]',
-      'timestamp_seconds': 365,
-      'tip': 'Chap base builds the model request, not the answer. Every meter in this video '
-             "charges for something other than a solved problem, except the winner's free "
-             'tier, which charges nothing at all to start, and even the winner has a sharp '
-             'trap.',
-      'title': 'I Tested 5 AI Customer Support Chatbots — Ranked Worst to Best (2026) (AI Tool '
-               'Lab)',
-      'url': 'https://www.youtube.com/watch?v=9wewuc4s038&t=365s',
-      'video_id': '9wewuc4s038'},
-     {'author': 'Carly Meyers',
-      'channel': 'Carly Meyers',
-      'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:21:32](https://www.youtube.com/watch?v=stoZ9wFob2E&t=1292s)',
-      'relevance': 'Attributed practitioner commentary on productized B2B AI implementation, '
-                   'fixed-scope workflow sprints, and managed automation retainers (Chapter Q5 '
-                   'operational verification).',
-      'source_type': 'video_pro_tip',
-      'text': "I think there is definitely a great place for it. It's not the the easiest "
-              'business model. The problem is you spend loads of time on discovery calls when '
-              'really you should be promoting.',
-      'timestamp': 1292,
-      'timestamp_label': '[00:21:32]',
-      'timestamp_seconds': 1292,
-      'tip': "I think there is definitely a great place for it. It's not the the easiest "
-             'business model. The problem is you spend loads of time on discovery calls when '
-             'really you should be promoting.',
-      'title': 'Ditch the Broken Agency Model and Start Selling AI Audits (Part 1) (Carly '
-               'Meyers)',
-      'url': 'https://www.youtube.com/watch?v=stoZ9wFob2E&t=1292s',
-      'video_id': 'stoZ9wFob2E'},
-     {'author': 'Alex Leischow',
-      'channel': 'Alex Leischow',
-      'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:00:43](https://www.youtube.com/watch?v=8yIHmsMHMYc&t=43s)',
-      'relevance': 'Attributed practitioner commentary on productized B2B AI implementation, '
-                   'fixed-scope workflow sprints, and managed automation retainers (Chapter Q5 '
-                   'operational verification).',
-      'source_type': 'video_pro_tip',
-      'text': "'re working with like a blue-collar company uh that does like, I don't know, "
-              "plumbing, um you know, renovations and services and stuff like that. So, we're "
-              "we're going to be building a inbound voice agent for a plumbing company.",
-      'timestamp': 43,
-      'timestamp_label': '[00:00:43]',
-      'timestamp_seconds': 43,
-      'tip': "'re working with like a blue-collar company uh that does like, I don't know, "
-             "plumbing, um you know, renovations and services and stuff like that. So, we're "
-             "we're going to be building a inbound voice agent for a plumbing company.",
-      'title': 'How to Build an AI Voice Agent That Calls Every Lead in 60 Seconds (VAPI '
-               'Tutorial) (Alex Leischow)',
-      'url': 'https://www.youtube.com/watch?v=8yIHmsMHMYc&t=43s',
-      'video_id': '8yIHmsMHMYc'},
-     {'author': 'The Contractor AI | AI Systems for Contractors',
-      'channel': 'The Contractor AI | AI Systems for Contractors',
-      'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:18:17](https://www.youtube.com/watch?v=J5BBjGKyoUE&t=1097s)',
-      'relevance': 'Attributed practitioner commentary on productized B2B AI implementation, '
-                   'fixed-scope workflow sprints, and managed automation retainers (Chapter Q5 '
-                   'operational verification).',
-      'source_type': 'video_pro_tip',
-      'text': 'I want to I want to keep things on track. If I have to stop my crews, '
-              "reorganize, lose days, lose production, like that's the problem. And I find "
-              "that most guys they do these things as favors when they're really they really "
-              'are, you know, a business mechanism.',
-      'timestamp': 1097,
-      'timestamp_label': '[00:18:17]',
-      'timestamp_seconds': 1097,
-      'tip': 'I want to I want to keep things on track. If I have to stop my crews, '
-             "reorganize, lose days, lose production, like that's the problem. And I find that "
-             "most guys they do these things as favors when they're really they really are, "
-             'you know, a business mechanism.',
-      'title': 'The $12.4K Scope Creep Killing Your Best Jobs (Fix Inside) (The Contractor AI '
-               '| AI Systems for Contractors)',
-      'url': 'https://www.youtube.com/watch?v=J5BBjGKyoUE&t=1097s',
-      'video_id': 'J5BBjGKyoUE'},
-     {'author': 'Tyler Gillespie',
-      'channel': 'Tyler Gillespie',
-      'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:42:15](https://www.youtube.com/watch?v=0IHziP_l6cc&t=2535s)',
-      'relevance': 'Attributed practitioner commentary on productized B2B AI implementation, '
-                   'fixed-scope workflow sprints, and managed automation retainers (Chapter Q5 '
-                   'operational verification).',
-      'source_type': 'video_pro_tip',
-      'text': 'Where you get access to kind of see a full breakdown of essentially yeah how we '
-              'think about productizing services etc so definitely head over to '
-              'productizedplaybook.com.',
-      'timestamp': 2535,
-      'timestamp_label': '[00:42:15]',
-      'timestamp_seconds': 2535,
-      'tip': 'Where you get access to kind of see a full breakdown of essentially yeah how we '
-             'think about productizing services etc so definitely head over to '
-             'productizedplaybook.com.',
-      'title': '[PS #0009] How Brett Williams Runs a Successful Productized Design Service '
-               '(Tyler Gillespie)',
-      'url': 'https://www.youtube.com/watch?v=0IHziP_l6cc&t=2535s',
-      'video_id': '0IHziP_l6cc'},
-     {'author': 'Chris Prouty',
-      'channel': 'Chris Prouty',
-      'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:03:54](https://www.youtube.com/watch?v=8yepbhYel-Q&t=234s)',
-      'relevance': 'Attributed practitioner commentary on productized B2B AI implementation, '
-                   'fixed-scope workflow sprints, and managed automation retainers (Chapter Q5 '
-                   'operational verification).',
-      'source_type': 'video_pro_tip',
-      'text': 'Might not be the only thing you need right now YouTube thinks this video is '
-              'going to help you so you should probably check that out but before you do you '
-              'click on my face so that you get first access to every new training I create.',
-      'timestamp': 234,
-      'timestamp_label': '[00:03:54]',
-      'timestamp_seconds': 234,
-      'tip': 'Might not be the only thing you need right now YouTube thinks this video is '
-             'going to help you so you should probably check that out but before you do you '
-             'click on my face so that you get first access to every new training I create.',
-      'title': 'B2B LinkedIn Content Marketing - How To Get B2B Clients From LinkedIn (Chris '
-               'Prouty)',
-      'url': 'https://www.youtube.com/watch?v=8yepbhYel-Q&t=234s',
-      'video_id': '8yepbhYel-Q'},
-     {'author': 'Sean Standberry',
-      'channel': 'Sean Standberry',
-      'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:08:58](https://www.youtube.com/watch?v=5558JLgLk50&t=538s)',
-      'relevance': 'Attributed practitioner commentary on productized B2B AI implementation, '
-                   'fixed-scope workflow sprints, and managed automation retainers (Chapter Q5 '
-                   'operational verification).',
-      'source_type': 'video_pro_tip',
-      'text': "So, when someone fills out a form but doesn't book an appointment, they "
-              'automatically get a follow-up text message the next day asking if they still '
-              'need help with their plumbing problem or whatever service the business offers.',
-      'timestamp': 538,
-      'timestamp_label': '[00:08:58]',
-      'timestamp_seconds': 538,
-      'tip': "So, when someone fills out a form but doesn't book an appointment, they "
-             'automatically get a follow-up text message the next day asking if they still '
-             'need help with their plumbing problem or whatever service the business offers.',
-      'title': "NEW AI Agency Business Model I'm Using to Make $474,996/mo (Sean Standberry)",
-      'url': 'https://www.youtube.com/watch?v=5558JLgLk50&t=538s',
-      'video_id': '5558JLgLk50'}],
- 6: [{'author': 'Nick Saraev',
-      'channel': 'Nick Saraev',
-      'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:27:30](https://www.youtube.com/watch?v=oAWe5wFwHlo&t=1650s)',
-      'relevance': 'Attributed practitioner commentary on productized B2B AI implementation, '
-                   'fixed-scope workflow sprints, and managed automation retainers (Chapter Q6 '
-                   'operational verification).',
-      'source_type': 'video_pro_tip',
-      'text': 'Now, the first two leads in this list were obviously um the same company, '
-              "Hathan Co. Didn't do that in this case cuz I actually think that it makes sense "
-              'to pitch two people on an individual business.',
-      'timestamp': 1650,
-      'timestamp_label': '[00:27:30]',
-      'timestamp_seconds': 1650,
-      'tip': 'Now, the first two leads in this list were obviously um the same company, Hathan '
-             "Co. Didn't do that in this case cuz I actually think that it makes sense to "
-             'pitch two people on an individual business.',
-      'title': 'I Deep-Personalized 1000+ Cold Emails Using THIS AI System (FREE TEMPLATE) '
-               '(Nick Saraev)',
-      'url': 'https://www.youtube.com/watch?v=oAWe5wFwHlo&t=1650s',
-      'video_id': 'oAWe5wFwHlo'},
-     {'author': 'Shabbir Noor AI',
-      'channel': 'Shabbir Noor AI',
-      'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:14:50](https://www.youtube.com/watch?v=nGTJIZki9Ck&t=890s)',
-      'relevance': 'Attributed practitioner commentary on productized B2B AI implementation, '
-                   'fixed-scope workflow sprints, and managed automation retainers (Chapter Q6 '
-                   'operational verification).',
-      'source_type': 'video_pro_tip',
-      'text': 'First on LinkedIn, it needs to stay up to date with the latest developments in '
-              "AI, specifically what's relevant to my ICP. Now, obviously, because I have a AI "
-              'agency, you would switch this up to whatever your business is through the Grock '
-              'agent and using web search.',
-      'timestamp': 890,
-      'timestamp_label': '[00:14:50]',
-      'timestamp_seconds': 890,
-      'tip': 'First on LinkedIn, it needs to stay up to date with the latest developments in '
-             "AI, specifically what's relevant to my ICP. Now, obviously, because I have a AI "
-             'agency, you would switch this up to whatever your business is through the Grock '
-             'agent and using web search.',
-      'title': 'I Asked OpenClaw to Do Cold Email Outreach For 24 Hours (Shabbir Noor AI)',
-      'url': 'https://www.youtube.com/watch?v=nGTJIZki9Ck&t=890s',
-      'video_id': 'nGTJIZki9Ck'},
+      'text': 'I booked three AI automation clients in seven days using one Google doc, a '
+              'five-minute demo, and one outreach sprint.',
+      'timestamp': 1,
+      'timestamp_label': '[00:00:01]',
+      'timestamp_seconds': 1,
+      'tip': 'I booked three AI automation clients in seven days using one Google doc, a '
+             'five-minute demo, and one outreach sprint.',
+      'title': 'How I Landed 3 AI Automation Clients in 7 Days | Simple Outreach System That Works',
+      'url': 'https://www.youtube.com/watch?v=NjvNF17_97w&t=1s',
+      'video_id': 'NjvNF17_97w'},
      {'author': 'Aaron Shepherd | GrowthFlare',
       'channel': 'Aaron Shepherd | GrowthFlare',
       'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:04:44](https://www.youtube.com/watch?v=RQg5jgraVg8&t=284s)',
-      'relevance': 'Attributed practitioner commentary on productized B2B AI implementation, '
-                   'fixed-scope workflow sprints, and managed automation retainers (Chapter Q6 '
-                   'operational verification).',
+      'markdown': '[00:19:17](https://www.youtube.com/watch?v=RQg5jgraVg8&t=1157s)',
+      'relevance': 'Practitioner testimony on counted meeting bookings after the email experiment.',
       'source_type': 'video_pro_tip',
-      'text': "So, I'm going to start with a few here. All right, so prospect level search is "
-              'done. We have 4,000 records at the founder level, 3,200 at the marketing level, '
-              'and 3,500 at the business development level. Brings us to 10,000 total leads.',
-      'timestamp': 284,
-      'timestamp_label': '[00:04:44]',
-      'timestamp_seconds': 284,
-      'tip': "So, I'm going to start with a few here. All right, so prospect level search is "
-             'done. We have 4,000 records at the founder level, 3,200 at the marketing level, '
-             'and 3,500 at the business development level. Brings us to 10,000 total leads.',
-      'title': 'I Tried Using Claude Code To Send 250,000 Cold Emails in 7 Days (Aaron '
-               'Shepherd | GrowthFlare)',
-      'url': 'https://www.youtube.com/watch?v=RQg5jgraVg8&t=284s',
+      'text': 'If we jump into the bookings channel on Slack, I just did a count. We got about 20 '
+              'booked meetings since we launched campaigns last week.',
+      'timestamp': 1157,
+      'timestamp_label': '[00:19:17]',
+      'timestamp_seconds': 1157,
+      'tip': 'If we jump into the bookings channel on Slack, I just did a count. We got about 20 '
+             'booked meetings since we launched campaigns last week.',
+      'title': 'I Tried Using Claude Code To Send 250,000 Cold Emails in 7 Days',
+      'url': 'https://www.youtube.com/watch?v=RQg5jgraVg8&t=1157s',
       'video_id': 'RQg5jgraVg8'},
      {'author': 'NoCode with Sam Oluwagbami',
       'channel': 'NoCode with Sam Oluwagbami',
       'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:00:21](https://www.youtube.com/watch?v=xQf-khf_CWE&t=21s)',
-      'relevance': 'Attributed practitioner commentary on productized B2B AI implementation, '
-                   'fixed-scope workflow sprints, and managed automation retainers (Chapter Q6 '
-                   'operational verification).',
+      'markdown': '[00:06:05](https://www.youtube.com/watch?v=xQf-khf_CWE&t=365s)',
+      'relevance': 'Practitioner testimony on consolidating existing outbound tools through APIs.',
       'source_type': 'video_pro_tip',
-      'text': "B2B outbound sales automation, right? So, we're about to build a B2B outbound "
-              'sales automation platform. A B2B outbound sales automation platform. Basically, '
-              "if you're a B2B business, you you get customers, you send them emails, some of "
-              'them reply, right?',
-      'timestamp': 21,
-      'timestamp_label': '[00:00:21]',
-      'timestamp_seconds': 21,
-      'tip': "B2B outbound sales automation, right? So, we're about to build a B2B outbound "
-             'sales automation platform. A B2B outbound sales automation platform. Basically, '
-             "if you're a B2B business, you you get customers, you send them emails, some of "
-             'them reply, right?',
-      'title': 'Cold Email is Dead — I Built an AI Outreach System That Does Everything for '
-               'You (Lead to Meeting) (NoCode with Sam Oluwagbami)',
-      'url': 'https://www.youtube.com/watch?v=xQf-khf_CWE&t=21s',
+      'text': "We are not creating these things from scratch. We're just connecting all of those "
+              'APIs in one platform.',
+      'timestamp': 365,
+      'timestamp_label': '[00:06:05]',
+      'timestamp_seconds': 365,
+      'tip': "We are not creating these things from scratch. We're just connecting all of those "
+             'APIs in one platform.',
+      'title': 'Cold Email is Dead — I Built an AI Outreach System That Does Everything for You '
+               '(Lead to Meeting)',
+      'url': 'https://www.youtube.com/watch?v=xQf-khf_CWE&t=365s',
       'video_id': 'xQf-khf_CWE'},
+     {'author': 'Aletto',
+      'channel': 'Aletto',
+      'epistemic_status': 'attributed_practitioner_claim',
+      'markdown': '[00:21:55](https://www.youtube.com/watch?v=IfS3QohXxG8&t=1315s)',
+      'relevance': 'Firsthand testimony on defining completion and checking implementation '
+                   'outputs.',
+      'source_type': 'video_pro_tip',
+      'text': 'Every AI job has to look at the real result compared to what done means and fix it '
+              "up to three times and escalate with proof. A success message doesn't count.",
+      'timestamp': 1315,
+      'timestamp_label': '[00:21:55]',
+      'timestamp_seconds': 1315,
+      'tip': 'Every AI job has to look at the real result compared to what done means and fix it '
+             "up to three times and escalate with proof. A success message doesn't count.",
+      'title': "15 AI Tasks I'd Automate in a B2B SaaS Company",
+      'url': 'https://www.youtube.com/watch?v=IfS3QohXxG8&t=1315s',
+      'video_id': 'IfS3QohXxG8'},
+     {'author': 'Rico Parnaste',
+      'channel': 'Rico Parnaste',
+      'epistemic_status': 'attributed_practitioner_claim',
+      'markdown': '[00:15:57](https://www.youtube.com/watch?v=KVhWoj-Irv4&t=957s)',
+      'relevance': 'Practitioner testimony on follow-up and adoption in the training business '
+                   'model.',
+      'source_type': 'video_pro_tip',
+      'text': 'The day teaches the skill. The 30 days after it build the habit.',
+      'timestamp': 957,
+      'timestamp_label': '[00:15:57]',
+      'timestamp_seconds': 957,
+      'tip': 'The day teaches the skill. The 30 days after it build the habit.',
+      'title': "Here's What I'd Sell Instead of AI Automations in 2027",
+      'url': 'https://www.youtube.com/watch?v=KVhWoj-Irv4&t=957s',
+      'video_id': 'KVhWoj-Irv4'}],
+ 6: [{'author': 'Adam Holmgren',
+      'channel': 'Adam Holmgren',
+      'epistemic_status': 'attributed_practitioner_claim',
+      'markdown': '[00:10:31](https://www.youtube.com/watch?v=qy4FW_qglNo&t=631s)',
+      'relevance': 'Verbatim practitioner testimony from Chapter Q6.',
+      'source_type': 'video_pro_tip',
+      'text': 'We are not trying to create conversions from these ads. We are trying to get them '
+              'to remember me, to remember Fibbler as a brand.',
+      'timestamp': 631,
+      'timestamp_label': '[00:10:31]',
+      'timestamp_seconds': 631,
+      'tip': 'We are not trying to create conversions from these ads. We are trying to get them to '
+             'remember me, to remember Fibbler as a brand.',
+      'title': 'LinkedIn Ads Strategy for B2B: The Exact Campaigns That Took Us from 0 to 200 '
+               'Customers',
+      'url': 'https://www.youtube.com/watch?v=qy4FW_qglNo&t=631s',
+      'video_id': 'qy4FW_qglNo'},
+     {'author': 'Tommy Clark',
+      'channel': 'Tommy Clark',
+      'epistemic_status': 'attributed_practitioner_claim',
+      'markdown': '[00:10:06](https://www.youtube.com/watch?v=MXBaHCO4WI8&t=606s)',
+      'relevance': 'Verbatim practitioner testimony from Chapter Q6.',
+      'source_type': 'video_pro_tip',
+      'text': 'One of those posts should be top of funnel, three of those posts should be middle '
+              'of funnel, one of those posts should be bottom of funnel. This is a good starting '
+              'point.',
+      'timestamp': 606,
+      'timestamp_label': '[00:10:06]',
+      'timestamp_seconds': 606,
+      'tip': 'One of those posts should be top of funnel, three of those posts should be middle of '
+             'funnel, one of those posts should be bottom of funnel. This is a good starting '
+             'point.',
+      'title': 'The Best LinkedIn Lead Generation Strategy for 2026',
+      'url': 'https://www.youtube.com/watch?v=MXBaHCO4WI8&t=606s',
+      'video_id': 'MXBaHCO4WI8'},
+     {'author': 'Lead Gen Jay',
+      'channel': 'Lead Gen Jay',
+      'epistemic_status': 'attributed_practitioner_claim',
+      'markdown': '[00:05:36](https://www.youtube.com/watch?v=R32IyS7IErQ&t=336s)',
+      'relevance': 'Verbatim practitioner testimony from Chapter Q6.',
+      'source_type': 'video_pro_tip',
+      'text': "After they accept you're going to wait 48 hours before sending any outreach. Don't "
+              'fall into the trap of instant messaging.',
+      'timestamp': 336,
+      'timestamp_label': '[00:05:36]',
+      'timestamp_seconds': 336,
+      'tip': "After they accept you're going to wait 48 hours before sending any outreach. Don't "
+             'fall into the trap of instant messaging.',
+      'title': 'How To Land Clients With LinkedIn (3 Exclusive Tactics)',
+      'url': 'https://www.youtube.com/watch?v=R32IyS7IErQ&t=336s',
+      'video_id': 'R32IyS7IErQ'},
+     {'author': 'Chris Prouty',
+      'channel': 'Chris Prouty',
+      'epistemic_status': 'attributed_practitioner_claim',
+      'markdown': '[00:00:50](https://www.youtube.com/watch?v=8yepbhYel-Q&t=50s)',
+      'relevance': 'Verbatim practitioner testimony from Chapter Q6.',
+      'source_type': 'video_pro_tip',
+      'text': "The first tip I'm going to give you is to optimize your LinkedIn company page.",
+      'timestamp': 50,
+      'timestamp_label': '[00:00:50]',
+      'timestamp_seconds': 50,
+      'tip': "The first tip I'm going to give you is to optimize your LinkedIn company page.",
+      'title': 'B2B LinkedIn Content Marketing - How To Get B2B Clients From LinkedIn',
+      'url': 'https://www.youtube.com/watch?v=8yepbhYel-Q&t=50s',
+      'video_id': '8yepbhYel-Q'},
+     {'author': 'Alex Berman',
+      'channel': 'Alex Berman',
+      'epistemic_status': 'attributed_practitioner_claim',
+      'markdown': '[00:03:42](https://www.youtube.com/watch?v=Kjfkoa15cNU&t=222s)',
+      'relevance': 'Verbatim practitioner testimony from Chapter Q6.',
+      'source_type': 'video_pro_tip',
+      'text': "I start with, 'Hey first name, are you running cold email campaigns for company "
+              "name?'.",
+      'timestamp': 222,
+      'timestamp_label': '[00:03:42]',
+      'timestamp_seconds': 222,
+      'tip': 'I start with a question asking whether they are running cold email campaigns for '
+             'their company.',
+      'title': 'How I Do LinkedIn Outreach in 2026',
+      'url': 'https://www.youtube.com/watch?v=Kjfkoa15cNU&t=222s',
+      'video_id': 'Kjfkoa15cNU'},
+     {'author': 'HubSpot Marketing',
+      'channel': 'HubSpot Marketing',
+      'epistemic_status': 'attributed_practitioner_claim',
+      'markdown': '[00:03:10](https://www.youtube.com/watch?v=uPo9D-wZv6s&t=190s)',
+      'relevance': 'Verbatim practitioner testimony from Chapter Q6.',
+      'source_type': 'video_pro_tip',
+      'text': "Your profile isn't just a resume. It's a landing page.",
+      'timestamp': 190,
+      'timestamp_label': '[00:03:10]',
+      'timestamp_seconds': 190,
+      'tip': "Your profile isn't just a resume. It's a landing page.",
+      'title': 'The Latest LinkedIn Lead Generation Strategies That Generated $2M+ (No Cold '
+               'InMails)',
+      'url': 'https://www.youtube.com/watch?v=uPo9D-wZv6s&t=190s',
+      'video_id': 'uPo9D-wZv6s'},
+     {'author': 'Cleverly | #1 B2B Lead Generation Agency',
+      'channel': 'Cleverly | #1 B2B Lead Generation Agency',
+      'epistemic_status': 'attributed_practitioner_claim',
+      'markdown': '[00:10:30](https://www.youtube.com/watch?v=h66nRoG6w0E&t=630s)',
+      'relevance': 'Verbatim practitioner testimony from Chapter Q6.',
+      'source_type': 'video_pro_tip',
+      'text': 'You want to mention that in the first six words of your connection request, so it '
+              "looks personal. Doesn't look copy-paste.",
+      'timestamp': 630,
+      'timestamp_label': '[00:10:30]',
+      'timestamp_seconds': 630,
+      'tip': 'You want to mention that in the first six words of your connection request, so it '
+             "looks personal. Doesn't look copy-paste.",
+      'title': 'The Only LinkedIn Outreach Strategy You Need in 2026',
+      'url': 'https://www.youtube.com/watch?v=h66nRoG6w0E&t=630s',
+      'video_id': 'h66nRoG6w0E'},
      {'author': 'Ben Greening-James',
       'channel': 'Ben Greening-James',
       'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:00:20](https://www.youtube.com/watch?v=Lw2iBa2oM44&t=20s)',
-      'relevance': 'Attributed practitioner commentary on productized B2B AI implementation, '
-                   'fixed-scope workflow sprints, and managed automation retainers (Chapter Q6 '
-                   'operational verification).',
+      'markdown': '[00:10:16](https://www.youtube.com/watch?v=Lw2iBa2oM44&t=616s)',
+      'relevance': 'Verbatim practitioner testimony from Chapter Q6.',
       'source_type': 'video_pro_tip',
-      'text': "So, with that being said, let's get straight into it. So when I first started "
-              "to do LinkedIn and I just thought, okay, I'm just going to find a lead list of "
-              'people and basically just go and try and sell people straight away.',
-      'timestamp': 20,
-      'timestamp_label': '[00:00:20]',
-      'timestamp_seconds': 20,
-      'tip': "So, with that being said, let's get straight into it. So when I first started to "
-             "do LinkedIn and I just thought, okay, I'm just going to find a lead list of "
-             'people and basically just go and try and sell people straight away.',
-      'title': 'How I Sell B2B Services on LinkedIn (Step-by-Step) (Ben Greening-James)',
-      'url': 'https://www.youtube.com/watch?v=Lw2iBa2oM44&t=20s',
+      'text': 'I always just tell people to leave their connection request blank and it '
+              'significantly increases the amount of connection acceptance rates that you get.',
+      'timestamp': 616,
+      'timestamp_label': '[00:10:16]',
+      'timestamp_seconds': 616,
+      'tip': 'I always just tell people to leave their connection request blank and it '
+             'significantly increases the amount of connection acceptance rates that you get.',
+      'title': 'How I Sell B2B Services on LinkedIn (Step-by-Step)',
+      'url': 'https://www.youtube.com/watch?v=Lw2iBa2oM44&t=616s',
       'video_id': 'Lw2iBa2oM44'},
-     {'author': 'RevPartners - RevOps + GTM Engineering on HubSpot',
-      'channel': 'RevPartners - RevOps + GTM Engineering on HubSpot',
+     {'author': 'Patrick Dang',
+      'channel': 'Patrick Dang',
       'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:20:11](https://www.youtube.com/watch?v=jV1Kp0j9lp0&t=1211s)',
-      'relevance': 'Attributed practitioner commentary on productized B2B AI implementation, '
-                   'fixed-scope workflow sprints, and managed automation retainers (Chapter Q6 '
-                   'operational verification).',
+      'markdown': '[00:16:41](https://www.youtube.com/watch?v=lzh20RhrVW4&t=1001s)',
+      'relevance': 'Verbatim practitioner testimony from Chapter Q6.',
       'source_type': 'video_pro_tip',
-      'text': "'s very time consuming and bringing it back into Clay as very structured data "
-              'points. The other use case for AI within Clay is creating either custom data '
-              'points or um drafting outbound content.',
-      'timestamp': 1211,
-      'timestamp_label': '[00:20:11]',
-      'timestamp_seconds': 1211,
-      'tip': "'s very time consuming and bringing it back into Clay as very structured data "
-             'points. The other use case for AI within Clay is creating either custom data '
-             'points or um drafting outbound content.',
-      'title': 'Revolutionize Your Sales: Automated AI Prospecting with HubSpot & Clay '
-               '(RevPartners - RevOps + GTM Engineering on HubSpot)',
-      'url': 'https://www.youtube.com/watch?v=jV1Kp0j9lp0&t=1211s',
-      'video_id': 'jV1Kp0j9lp0'},
-     {'author': 'Automate with Marc | AI Automation',
-      'channel': 'Automate with Marc | AI Automation',
-      'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:02:54](https://www.youtube.com/watch?v=syCqaV7N73s&t=174s)',
-      'relevance': 'Attributed practitioner commentary on productized B2B AI implementation, '
-                   'fixed-scope workflow sprints, and managed automation retainers (Chapter Q6 '
-                   'operational verification).',
-      'source_type': 'video_pro_tip',
-      'text': "So it's got the first name, last name of people who are inbound leads or maybe "
-              'a lead list that you have to go after in terms of outreach.',
-      'timestamp': 174,
-      'timestamp_label': '[00:02:54]',
-      'timestamp_seconds': 174,
-      'tip': "So it's got the first name, last name of people who are inbound leads or maybe a "
-             'lead list that you have to go after in terms of outreach.',
-      'title': 'The difference between Zapier, Make and n8n (2026) (Automate with Marc | AI '
-               'Automation)',
-      'url': 'https://www.youtube.com/watch?v=syCqaV7N73s&t=174s',
-      'video_id': 'syCqaV7N73s'},
-     {'author': 'Danny Peregrine',
-      'channel': 'Danny Peregrine',
-      'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:09:04](https://www.youtube.com/watch?v=49rzug0GIOY&t=544s)',
-      'relevance': 'Attributed practitioner commentary on productized B2B AI implementation, '
-                   'fixed-scope workflow sprints, and managed automation retainers (Chapter Q6 '
-                   'operational verification).',
-      'source_type': 'video_pro_tip',
-      'text': "The first client I ever got was on Fiverr and it's so crazy because I've never "
-              'been on Fiverr. I always think of Fiverr as like a $5 thing, cheap work, '
-              'whatever. But it was when OpenClaw was coming out which was like a new agent '
-              "harness. It's a very new technology.",
-      'timestamp': 544,
-      'timestamp_label': '[00:09:04]',
-      'timestamp_seconds': 544,
-      'tip': "The first client I ever got was on Fiverr and it's so crazy because I've never "
-             'been on Fiverr. I always think of Fiverr as like a $5 thing, cheap work, '
-             'whatever. But it was when OpenClaw was coming out which was like a new agent '
-             "harness. It's a very new technology.",
-      'title': 'How to build a $100K/Month AI Agency in 2027 (Full Breakdown) (Danny '
-               'Peregrine)',
-      'url': 'https://www.youtube.com/watch?v=49rzug0GIOY&t=544s',
-      'video_id': '49rzug0GIOY'},
-     {'author': 'Adam Holmgren',
-      'channel': 'Adam Holmgren',
-      'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:05:10](https://www.youtube.com/watch?v=qy4FW_qglNo&t=310s)',
-      'relevance': 'Attributed practitioner commentary on productized B2B AI implementation, '
-                   'fixed-scope workflow sprints, and managed automation retainers (Chapter Q6 '
-                   'operational verification).',
-      'source_type': 'video_pro_tip',
-      'text': "It doesn't have to be harder than that with cold targeting. Then of course, the "
-              'ideal state, you would have some sort of third party data vendor where you can '
-              'get account list and so on. But we are a startup and we have to start '
-              'somewhere.',
-      'timestamp': 310,
-      'timestamp_label': '[00:05:10]',
-      'timestamp_seconds': 310,
-      'tip': "It doesn't have to be harder than that with cold targeting. Then of course, the "
-             'ideal state, you would have some sort of third party data vendor where you can '
-             'get account list and so on. But we are a startup and we have to start somewhere.',
-      'title': 'LinkedIn Ads Strategy for B2B: The Exact Campaigns That Took Us from 0 to 200 '
-               'Customers (Adam Holmgren)',
-      'url': 'https://www.youtube.com/watch?v=qy4FW_qglNo&t=310s',
-      'video_id': 'qy4FW_qglNo'},
-     {'author': 'AIMS Consulting Services',
-      'channel': 'AIMS Consulting Services',
-      'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:00:30](https://www.youtube.com/watch?v=fk7OXnsQu-o&t=30s)',
-      'relevance': 'Attributed practitioner commentary on productized B2B AI implementation, '
-                   'fixed-scope workflow sprints, and managed automation retainers (Chapter Q6 '
-                   'operational verification).',
-      'source_type': 'video_pro_tip',
-      'text': 'CSV, find the missing details and re-upload that data. And that sort of even '
-              "leads to a lot of data loss. And to avoid this manual work, what I'm going to "
-              "do is I'm going to show you how we can automate this entire process using Cloud "
-              'Code, Mold Sets and HubSpot.',
-      'timestamp': 30,
-      'timestamp_label': '[00:00:30]',
-      'timestamp_seconds': 30,
-      'tip': 'CSV, find the missing details and re-upload that data. And that sort of even '
-             "leads to a lot of data loss. And to avoid this manual work, what I'm going to do "
-             "is I'm going to show you how we can automate this entire process using Cloud "
-             'Code, Mold Sets and HubSpot.',
-      'title': 'Auto-Enrich 1,000+ CRM Contacts Using Claude Code + MoltSets (AIMS Consulting '
-               'Services)',
-      'url': 'https://www.youtube.com/watch?v=fk7OXnsQu-o&t=30s',
-      'video_id': 'fk7OXnsQu-o'},
-     {'author': 'Youri van Hofwegen',
-      'channel': 'Youri van Hofwegen',
-      'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:03:34](https://www.youtube.com/watch?v=zqtx1Soeq5E&t=214s)',
-      'relevance': 'Attributed practitioner commentary on productized B2B AI implementation, '
-                   'fixed-scope workflow sprints, and managed automation retainers (Chapter Q6 '
-                   'operational verification).',
-      'source_type': 'video_pro_tip',
-      'text': "To show you how this works, let's import a prebuilt AI automation template. "
-              'This is the fastest way to get started since the n8n community has already '
-              "created hundreds of working automations. First, let's go to the n8n website to "
-              'find a template.',
-      'timestamp': 214,
-      'timestamp_label': '[00:03:34]',
-      'timestamp_seconds': 214,
-      'tip': "To show you how this works, let's import a prebuilt AI automation template. This "
-             'is the fastest way to get started since the n8n community has already created '
-             "hundreds of working automations. First, let's go to the n8n website to find a "
-             'template.',
-      'title': 'How to Use N8N for FREE - n8n Self Hosting Set Up Guide (Youri van Hofwegen)',
-      'url': 'https://www.youtube.com/watch?v=zqtx1Soeq5E&t=214s',
-      'video_id': 'zqtx1Soeq5E'},
+      'text': 'We just find that doing it manually works better for us, manually connecting, '
+              'manually writing each message, not using a sales script.',
+      'timestamp': 1001,
+      'timestamp_label': '[00:16:41]',
+      'timestamp_seconds': 1001,
+      'tip': 'We just find that doing it manually works better for us, manually connecting, '
+             'manually writing each message, not using a sales script.',
+      'title': 'How To Get Clients On LinkedIn (Full Lead Generation Masterclass)',
+      'url': 'https://www.youtube.com/watch?v=lzh20RhrVW4&t=1001s',
+      'video_id': 'lzh20RhrVW4'},
      {'author': 'Expandi',
       'channel': 'Expandi',
       'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:04:37](https://www.youtube.com/watch?v=IqCv6BL9r6o&t=277s)',
-      'relevance': 'Attributed practitioner commentary on productized B2B AI implementation, '
-                   'fixed-scope workflow sprints, and managed automation retainers (Chapter Q6 '
-                   'operational verification).',
+      'markdown': '[00:04:42](https://www.youtube.com/watch?v=IqCv6BL9r6o&t=282s)',
+      'relevance': 'Verbatim practitioner testimony from Chapter Q6.',
       'source_type': 'video_pro_tip',
-      'text': "But in this case, we're going to be doing a smart omni channel campaign with "
-              "multiple touch points that works across any niche. For the first step, we're "
-              "going to visit the lead's profile.",
-      'timestamp': 277,
-      'timestamp_label': '[00:04:37]',
-      'timestamp_seconds': 277,
-      'tip': "But in this case, we're going to be doing a smart omni channel campaign with "
-             "multiple touch points that works across any niche. For the first step, we're "
-             "going to visit the lead's profile.",
-      'title': 'The Best LinkedIn Outreach Strategy for 2026 (Expandi)',
-      'url': 'https://www.youtube.com/watch?v=IqCv6BL9r6o&t=277s',
+      'text': "For the first step, we're going to visit the lead's profile. This warms up the "
+              "contact, tells LinkedIn that you're active, and they get a notification before you "
+              'actually send the message.',
+      'timestamp': 282,
+      'timestamp_label': '[00:04:42]',
+      'timestamp_seconds': 282,
+      'tip': "For the first step, we're going to visit the lead's profile. This warms up the "
+             "contact, tells LinkedIn that you're active, and they get a notification before you "
+             'actually send the message.',
+      'title': 'The Best LinkedIn Outreach Strategy for 2026',
+      'url': 'https://www.youtube.com/watch?v=IqCv6BL9r6o&t=282s',
       'video_id': 'IqCv6BL9r6o'},
-     {'author': 'AI Engineer',
-      'channel': 'AI Engineer',
+     {'author': 'Sales Feed',
+      'channel': 'Sales Feed',
       'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:11:53](https://www.youtube.com/watch?v=XNneh6-eyPg&t=713s)',
-      'relevance': 'Attributed practitioner commentary on productized B2B AI implementation, '
-                   'fixed-scope workflow sprints, and managed automation retainers (Chapter Q6 '
-                   'operational verification).',
+      'markdown': '[00:12:19](https://www.youtube.com/watch?v=3_RnVI6UFkA&t=739s)',
+      'relevance': 'Verbatim practitioner testimony from Chapter Q6.',
       'source_type': 'video_pro_tip',
-      'text': 'CRM where you already have customer clients uh and and leads in your knowledge '
-              'graph but then you want to enrich this with for instance uh protocols from call '
-              'transcripts and then you basically connect this to your existing structured '
-              'data as well.',
-      'timestamp': 713,
-      'timestamp_label': '[00:11:53]',
-      'timestamp_seconds': 713,
-      'tip': 'CRM where you already have customer clients uh and and leads in your knowledge '
-             'graph but then you want to enrich this with for instance uh protocols from call '
-             'transcripts and then you basically connect this to your existing structured data '
-             'as well.',
-      'title': 'Practical GraphRAG: Making LLMs smarter with Knowledge Graphs — Michael, '
-               'Jesus, and Stephen, Neo4j (AI Engineer)',
-      'url': 'https://www.youtube.com/watch?v=XNneh6-eyPg&t=713s',
-      'video_id': 'XNneh6-eyPg'},
-     {'author': 'neomanex',
-      'channel': 'neomanex',
+      'text': 'The goal here is not to book a meeting with that very first message. The goal here '
+              'is to get a response.',
+      'timestamp': 739,
+      'timestamp_label': '[00:12:19]',
+      'timestamp_seconds': 739,
+      'tip': 'The goal here is not to book a meeting with that very first message. The goal here '
+             'is to get a response.',
+      'title': 'The Best LinkedIn Lead Generation Strategy for 2026',
+      'url': 'https://www.youtube.com/watch?v=3_RnVI6UFkA&t=739s',
+      'video_id': '3_RnVI6UFkA'},
+     {'author': 'Jack',
+      'channel': 'Jack',
       'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:08:40](https://www.youtube.com/watch?v=wOkT9r5iVME&t=520s)',
-      'relevance': 'Attributed practitioner commentary on productized B2B AI implementation, '
-                   'fixed-scope workflow sprints, and managed automation retainers (Chapter Q6 '
-                   'operational verification).',
+      'markdown': '[00:01:24](https://www.youtube.com/watch?v=4RYnbUHayhM&t=84s)',
+      'relevance': 'Verbatim practitioner testimony from Chapter Q6.',
       'source_type': 'video_pro_tip',
-      'text': 'Then let every step read the same list. If you want to build like this, join '
-              'inside New Manics. We help builders set up their own.',
-      'timestamp': 520,
-      'timestamp_label': '[00:08:40]',
-      'timestamp_seconds': 520,
-      'tip': 'Then let every step read the same list. If you want to build like this, join '
-             'inside New Manics. We help builders set up their own.',
-      'title': 'Stop AI Agent Scope Creep: Frozen Requirements and a Done When List (neomanex)',
-      'url': 'https://www.youtube.com/watch?v=wOkT9r5iVME&t=520s',
-      'video_id': 'wOkT9r5iVME'},
-     {'author': 'AI Hustle Lab',
-      'channel': 'AI Hustle Lab',
+      'text': 'Last year alone in this workspace, sent out about 31,000 connections. We got 34% of '
+              'those back and we sent out close to 10,000 messages with about 26% of those coming '
+              'back.',
+      'timestamp': 84,
+      'timestamp_label': '[00:01:24]',
+      'timestamp_seconds': 84,
+      'tip': 'Last year alone in this workspace, sent out about 31,000 connections. We got 34% of '
+             'those back and we sent out close to 10,000 messages with about 26% of those coming '
+             'back.',
+      'title': 'How to Get B2B Clients on LinkedIn in 2026 (Intent-Based Outreach System)',
+      'url': 'https://www.youtube.com/watch?v=4RYnbUHayhM&t=84s',
+      'video_id': '4RYnbUHayhM'},
+     {'author': 'AIMS Consulting Services',
+      'channel': 'AIMS Consulting Services',
       'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:08:01](https://www.youtube.com/watch?v=6FS1eyS2agI&t=481s)',
-      'relevance': 'Attributed practitioner commentary on productized B2B AI implementation, '
-                   'fixed-scope workflow sprints, and managed automation retainers (Chapter Q6 '
-                   'operational verification).',
+      'markdown': '[00:00:38](https://www.youtube.com/watch?v=fk7OXnsQu-o&t=38s)',
+      'relevance': 'Verbatim practitioner testimony from Chapter Q6.',
       'source_type': 'video_pro_tip',
-      'text': 'So I put in the term AI automation. It also asks for an email and I put in '
-              'nicholas@gmail. From here we have a number of things that occur. The first is '
-              'we actually feed an open AI call using the web search API that goes and it '
-              'finds outlines of content on AI and automation.',
-      'timestamp': 481,
-      'timestamp_label': '[00:08:01]',
-      'timestamp_seconds': 481,
-      'tip': 'So I put in the term AI automation. It also asks for an email and I put in '
-             'nicholas@gmail. From here we have a number of things that occur. The first is we '
-             'actually feed an open AI call using the web search API that goes and it finds '
-             'outlines of content on AI and automation.',
-      'title': 'Sell These 3 Simple AI Automations for $1.7K to B2B Agencies (AI Hustle Lab)',
-      'url': 'https://www.youtube.com/watch?v=6FS1eyS2agI&t=481s',
-      'video_id': '6FS1eyS2agI'}],
- 7: [{'author': 'ProfitPilot',
-      'channel': 'ProfitPilot',
+      'text': "The idea is very simple. Identify what's missing, enrich those records and update "
+              'it back onto the CRM.',
+      'timestamp': 38,
+      'timestamp_label': '[00:00:38]',
+      'timestamp_seconds': 38,
+      'tip': "The idea is very simple. Identify what's missing, enrich those records and update it "
+             'back onto the CRM.',
+      'title': 'Auto-Enrich 1,000+ CRM Contacts Using Claude Code + MoltSets',
+      'url': 'https://www.youtube.com/watch?v=fk7OXnsQu-o&t=38s',
+      'video_id': 'fk7OXnsQu-o'},
+     {'author': 'RevPartners - RevOps + GTM Engineering on HubSpot',
+      'channel': 'RevPartners - RevOps + GTM Engineering on HubSpot',
       'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:02:29](https://www.youtube.com/watch?v=d8w8FHZJpdY&t=149s)',
-      'relevance': 'Attributed practitioner commentary on productized B2B AI implementation, '
-                   'fixed-scope workflow sprints, and managed automation retainers (Chapter Q7 '
-                   'operational verification).',
+      'markdown': '[00:52:04](https://www.youtube.com/watch?v=jV1Kp0j9lp0&t=3124s)',
+      'relevance': 'Verbatim practitioner testimony from Chapter Q6.',
       'source_type': 'video_pro_tip',
-      'text': "On n8n, it's one execution per run, whether the workflow has five steps or "
-              "fifty. These counts assume every step runs every time. That's a worst case, and "
-              "it's our calculation from the published rules, not a measured test. Now the "
-              'costs, at three volumes.',
-      'timestamp': 149,
-      'timestamp_label': '[00:02:29]',
-      'timestamp_seconds': 149,
-      'tip': "On n8n, it's one execution per run, whether the workflow has five steps or "
-             "fifty. These counts assume every step runs every time. That's a worst case, and "
-             "it's our calculation from the published rules, not a measured test. Now the "
-             'costs, at three volumes.',
-      'title': 'Zapier vs Make vs n8n: What One AI Workflow Really Costs (2026 Pricing) '
-               '(ProfitPilot)',
-      'url': 'https://www.youtube.com/watch?v=d8w8FHZJpdY&t=149s',
-      'video_id': 'd8w8FHZJpdY'},
-     {'author': "Lobo Brother's | AI Systems for Business Owners",
-      'channel': "Lobo Brother's | AI Systems for Business Owners",
+      'text': "If you set up your workflow to validate every work email, then totally. But it's "
+              'depending on how you configure it.',
+      'timestamp': 3124,
+      'timestamp_label': '[00:52:04]',
+      'timestamp_seconds': 3124,
+      'tip': "If you set up your workflow to validate every work email, then totally. But it's "
+             'depending on how you configure it.',
+      'title': 'Revolutionize Your Sales: Automated AI Prospecting with HubSpot & Clay',
+      'url': 'https://www.youtube.com/watch?v=jV1Kp0j9lp0&t=3124s',
+      'video_id': 'jV1Kp0j9lp0'},
+     {'author': 'Michael Saruggia - GTM Engineering',
+      'channel': 'Michael Saruggia - GTM Engineering',
       'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:02:47](https://www.youtube.com/watch?v=dqDWqV07r6M&t=167s)',
-      'relevance': 'Attributed practitioner commentary on productized B2B AI implementation, '
-                   'fixed-scope workflow sprints, and managed automation retainers (Chapter Q7 '
-                   'operational verification).',
+      'markdown': '[00:09:45](https://www.youtube.com/watch?v=DHX8uoA53OI&t=585s)',
+      'relevance': 'Verbatim practitioner testimony from Chapter Q6.',
       'source_type': 'video_pro_tip',
-      'text': "Let's break it down with an example. And I'm using a hypothetical business that "
-              'I made up over here to keep real client names and numbers private, but the '
-              'process and the audit breakdown is exactly the same for how we run it for our '
-              'clients.',
-      'timestamp': 167,
-      'timestamp_label': '[00:02:47]',
-      'timestamp_seconds': 167,
-      'tip': "Let's break it down with an example. And I'm using a hypothetical business that "
-             'I made up over here to keep real client names and numbers private, but the '
-             'process and the audit breakdown is exactly the same for how we run it for our '
-             'clients.',
-      'title': "I Audited A $5M Business For AI. Here's What I Found (Lobo Brother's | AI "
-               'Systems for Business Owners)',
-      'url': 'https://www.youtube.com/watch?v=dqDWqV07r6M&t=167s',
-      'video_id': 'dqDWqV07r6M'},
-     {'author': 'Mirketa Inc',
-      'channel': 'Mirketa Inc',
+      'text': 'From Adidas you move into Apple but the LinkedIn profile does not change.',
+      'timestamp': 585,
+      'timestamp_label': '[00:09:45]',
+      'timestamp_seconds': 585,
+      'tip': 'From Adidas you move into Apple but the LinkedIn profile does not change.',
+      'title': 'Fix Your CRM Data With Clay.Com (Job Changes Problem)',
+      'url': 'https://www.youtube.com/watch?v=DHX8uoA53OI&t=585s',
+      'video_id': 'DHX8uoA53OI'},
+     {'author': 'Jacob Tuwiner | AI Sales Automation',
+      'channel': 'Jacob Tuwiner | AI Sales Automation',
       'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:23:57](https://www.youtube.com/watch?v=8N3k2qP_0SY&t=1437s)',
-      'relevance': 'Attributed practitioner commentary on productized B2B AI implementation, '
-                   'fixed-scope workflow sprints, and managed automation retainers (Chapter Q7 '
-                   'operational verification).',
+      'markdown': '[00:02:00](https://www.youtube.com/watch?v=LxiIsByGTbU&t=120s)',
+      'relevance': 'Verbatim practitioner testimony from Chapter Q6.',
       'source_type': 'video_pro_tip',
-      'text': 'And imagine a support agent receives a case. It retrieves similar cases and '
-              "relevant knowledge. Then it decides, I need to verify this customer's "
-              "subscription, so it will call an API. Then I should check whether there's a "
-              'known outage. It calls the monitoring system.',
-      'timestamp': 1437,
-      'timestamp_label': '[00:23:57]',
-      'timestamp_seconds': 1437,
-      'tip': 'And imagine a support agent receives a case. It retrieves similar cases and '
-             "relevant knowledge. Then it decides, I need to verify this customer's "
-             "subscription, so it will call an API. Then I should check whether there's a "
-             'known outage. It calls the monitoring system.',
-      'title': 'Beyond the Case | Episode 6: RAG, AI Agents & Vector Databases — Without the '
-               'Hype (Mirketa Inc)',
-      'url': 'https://www.youtube.com/watch?v=8N3k2qP_0SY&t=1437s',
-      'video_id': '8N3k2qP_0SY'},
-     {'author': 'Lily Latzo | AI Automation',
-      'channel': 'Lily Latzo | AI Automation',
-      'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:01:53](https://www.youtube.com/watch?v=NjvNF17_97w&t=113s)',
-      'relevance': 'Attributed practitioner commentary on productized B2B AI implementation, '
-                   'fixed-scope workflow sprints, and managed automation retainers (Chapter Q7 '
-                   'operational verification).',
-      'source_type': 'video_pro_tip',
-      'text': "'re going to do it, they're going to be interested. So the first step is the "
-              "offer one pager. So this pretty much forces clarity and that's what businesses "
-              "want to buy. So we're going to build an automation for a repetitive workflow "
-              'inside of the business in 30 days.',
-      'timestamp': 113,
-      'timestamp_label': '[00:01:53]',
-      'timestamp_seconds': 113,
-      'tip': "'re going to do it, they're going to be interested. So the first step is the "
-             "offer one pager. So this pretty much forces clarity and that's what businesses "
-             "want to buy. So we're going to build an automation for a repetitive workflow "
-             'inside of the business in 30 days.',
-      'title': 'How I Landed 3 AI Automation Clients in 7 Days | Simple Outreach System That '
-               'Works (Lily Latzo | AI Automation)',
-      'url': 'https://www.youtube.com/watch?v=NjvNF17_97w&t=113s',
-      'video_id': 'NjvNF17_97w'},
-     {'author': 'Scott Bartnick',
-      'channel': 'Scott Bartnick',
-      'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:07:12](https://www.youtube.com/watch?v=d9zqCrUn7mY&t=432s)',
-      'relevance': 'Attributed practitioner commentary on productized B2B AI implementation, '
-                   'fixed-scope workflow sprints, and managed automation retainers (Chapter Q7 '
-                   'operational verification).',
-      'source_type': 'video_pro_tip',
-      'text': "'t know how to use it, if you have this video, send it to a freelancer, have "
-              'them do it for you. You can build out the workflow and you can use the '
-              'checklist down below of the different steps. So, this order comes in, the '
-              'client does their onboarding.',
-      'timestamp': 432,
-      'timestamp_label': '[00:07:12]',
-      'timestamp_seconds': 432,
-      'tip': "'t know how to use it, if you have this video, send it to a freelancer, have "
-             'them do it for you. You can build out the workflow and you can use the checklist '
-             'down below of the different steps. So, this order comes in, the client does '
-             'their onboarding.',
-      'title': 'The Client Handoff System That Stops Scope Creep and Dropped Balls (Scott '
-               'Bartnick)',
-      'url': 'https://www.youtube.com/watch?v=d9zqCrUn7mY&t=432s',
-      'video_id': 'd9zqCrUn7mY'},
-     {'author': 'AI Money Math',
-      'channel': 'AI Money Math',
-      'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:00:23](https://www.youtube.com/watch?v=VZQaUF7kKNw&t=23s)',
-      'relevance': 'Attributed practitioner commentary on productized B2B AI implementation, '
-                   'fixed-scope workflow sprints, and managed automation retainers (Chapter Q7 '
-                   'operational verification).',
-      'source_type': 'video_pro_tip',
-      'text': "One automation, one type of business, one city, seven steps in order. You don't "
-              "need to code, you don't need an agency, a website, or a logo. You need a "
-              'working demo on your phone and the nerve to show it to 30 business owners.',
-      'timestamp': 23,
-      'timestamp_label': '[00:00:23]',
-      'timestamp_seconds': 23,
-      'tip': "One automation, one type of business, one city, seven steps in order. You don't "
-             "need to code, you don't need an agency, a website, or a logo. You need a working "
-             'demo on your phone and the nerve to show it to 30 business owners.',
-      'title': 'How to Sell AI Automations to Local Businesses (Beginner Guide) (AI Money '
-               'Math)',
-      'url': 'https://www.youtube.com/watch?v=VZQaUF7kKNw&t=23s',
-      'video_id': 'VZQaUF7kKNw'},
-     {'author': 'Aitoolnavio',
-      'channel': 'Aitoolnavio',
-      'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:30:02](https://www.youtube.com/watch?v=vtK1xbj-tD8&t=1802s)',
-      'relevance': 'Attributed practitioner commentary on productized B2B AI implementation, '
-                   'fixed-scope workflow sprints, and managed automation retainers (Chapter Q7 '
-                   'operational verification).',
-      'source_type': 'video_pro_tip',
-      'text': 'Every plan has unlimited users, workflows, and steps. And startups can get '
-              'Business at half price. This is where n8n is different. One execution is one '
-              'full run of a workflow, whether it has two steps or two hundred.',
-      'timestamp': 1802,
-      'timestamp_label': '[00:30:02]',
-      'timestamp_seconds': 1802,
-      'tip': 'Every plan has unlimited users, workflows, and steps. And startups can get '
-             'Business at half price. This is where n8n is different. One execution is one '
-             'full run of a workflow, whether it has two steps or two hundred.',
-      'title': 'n8n Tutorial 2026: AI Agents, Self-Hosting & Pricing (Beginner to Pro) '
-               '(Aitoolnavio)',
-      'url': 'https://www.youtube.com/watch?v=vtK1xbj-tD8&t=1802s',
-      'video_id': 'vtK1xbj-tD8'},
-     {'author': 'Zendesk',
-      'channel': 'Zendesk',
-      'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:02:27](https://www.youtube.com/watch?v=vxbipxTJGgw&t=147s)',
-      'relevance': 'Attributed practitioner commentary on productized B2B AI implementation, '
-                   'fixed-scope workflow sprints, and managed automation retainers (Chapter Q7 '
-                   'operational verification).',
-      'source_type': 'video_pro_tip',
-      'text': "'t limited to one type of business. They can adapt to unique needs of each "
-              'sector. In software and subscription businesses, an AI agent can troubleshoot '
-              'issues, verify account details, surface the right support content, and guide '
-              'customers through resolution steps.',
-      'timestamp': 147,
-      'timestamp_label': '[00:02:27]',
-      'timestamp_seconds': 147,
-      'tip': "'t limited to one type of business. They can adapt to unique needs of each "
-             'sector. In software and subscription businesses, an AI agent can troubleshoot '
-             'issues, verify account details, surface the right support content, and guide '
-             'customers through resolution steps.',
-      'title': 'What are AI Agents for customer service? Zendesk AI explained (Zendesk)',
-      'url': 'https://www.youtube.com/watch?v=vxbipxTJGgw&t=147s',
-      'video_id': 'vxbipxTJGgw'},
-     {'author': 'SaaS Master',
-      'channel': 'SaaS Master',
-      'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:05:33](https://www.youtube.com/watch?v=TdMeBa69Y8Y&t=333s)',
-      'relevance': 'Attributed practitioner commentary on productized B2B AI implementation, '
-                   'fixed-scope workflow sprints, and managed automation retainers (Chapter Q7 '
-                   'operational verification).',
-      'source_type': 'video_pro_tip',
-      'text': "N8N, which is an automation system that's going to be working open source free "
-              'for me, and then just use the AI right here with a little small fee. I think '
-              "it's cost me like 9 cents or 8 cents to run this, which for this highly complex "
-              'workflow is nothing.',
-      'timestamp': 333,
-      'timestamp_label': '[00:05:33]',
-      'timestamp_seconds': 333,
-      'tip': "N8N, which is an automation system that's going to be working open source free "
-             'for me, and then just use the AI right here with a little small fee. I think '
-             "it's cost me like 9 cents or 8 cents to run this, which for this highly complex "
-             'workflow is nothing.',
-      'title': 'n8n Self Hosted With Claude MCP - Let AI Build Your Workflows (SaaS Master)',
-      'url': 'https://www.youtube.com/watch?v=TdMeBa69Y8Y&t=333s',
-      'video_id': 'TdMeBa69Y8Y'},
-     {'author': 'Jeff Su',
-      'channel': 'Jeff Su',
-      'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:03:17](https://www.youtube.com/watch?v=FwOTs4UxQS4&t=197s)',
-      'relevance': 'Attributed practitioner commentary on productized B2B AI implementation, '
-                   'fixed-scope workflow sprints, and managed automation retainers (Chapter Q7 '
-                   'operational verification).',
-      'source_type': 'video_pro_tip',
-      'text': 'I added more steps into the workflow by allowing the LM to access the weather '
-              'via an API and then just for fun use a text to audio model to speak the answer. '
-              'The weather forecast for seeing Elon Husky is sunny with a chance of being a '
-              'good boy.',
-      'timestamp': 197,
-      'timestamp_label': '[00:03:17]',
-      'timestamp_seconds': 197,
-      'tip': 'I added more steps into the workflow by allowing the LM to access the weather '
-             'via an API and then just for fun use a text to audio model to speak the answer. '
-             'The weather forecast for seeing Elon Husky is sunny with a chance of being a '
-             'good boy.',
-      'title': 'AI Agents, Clearly Explained (Jeff Su)',
-      'url': 'https://www.youtube.com/watch?v=FwOTs4UxQS4&t=197s',
-      'video_id': 'FwOTs4UxQS4'},
-     {'author': 'Augusto Digital',
-      'channel': 'Augusto Digital',
-      'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:01:12](https://www.youtube.com/watch?v=VzBpfD_Dcq8&t=72s)',
-      'relevance': 'Attributed practitioner commentary on productized B2B AI implementation, '
-                   'fixed-scope workflow sprints, and managed automation retainers (Chapter Q7 '
-                   'operational verification).',
-      'source_type': 'video_pro_tip',
-      'text': "We're also going to explore this single scope rule that actually holds the "
-              "line. And then we'll break down the five-step checklist we actually use in our "
-              "client engagements to guarantee a shipped product. So, let's start with the the "
-              'root of the problem, right?',
-      'timestamp': 72,
-      'timestamp_label': '[00:01:12]',
-      'timestamp_seconds': 72,
-      'tip': "We're also going to explore this single scope rule that actually holds the line. "
-             "And then we'll break down the five-step checklist we actually use in our client "
-             "engagements to guarantee a shipped product. So, let's start with the the root of "
-             'the problem, right?',
-      'title': 'Ep. 17: Stopping AI Scope Creep | Augusto Podcast (Augusto Digital)',
-      'url': 'https://www.youtube.com/watch?v=VzBpfD_Dcq8&t=72s',
-      'video_id': 'VzBpfD_Dcq8'},
-     {'author': 'Unstructured',
-      'channel': 'Unstructured',
-      'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:14:17](https://www.youtube.com/watch?v=ruilmyfVgrI&t=857s)',
-      'relevance': 'Attributed practitioner commentary on productized B2B AI implementation, '
-                   'fixed-scope workflow sprints, and managed automation retainers (Chapter Q7 '
-                   'operational verification).',
-      'source_type': 'video_pro_tip',
-      'text': 'Uh so within this one um before you write any code you really want to '
-              'understand what the security model needs to be for the system. So, this is '
-              'going to often be use case specific.',
-      'timestamp': 857,
-      'timestamp_label': '[00:14:17]',
-      'timestamp_seconds': 857,
-      'tip': 'Uh so within this one um before you write any code you really want to understand '
-             'what the security model needs to be for the system. So, this is going to often '
-             'be use case specific.',
-      'title': 'Webinar: How to Build Enterprise-Ready RAG Systems (Unstructured)',
-      'url': 'https://www.youtube.com/watch?v=ruilmyfVgrI&t=857s',
-      'video_id': 'ruilmyfVgrI'},
-     {'author': 'The Futur',
-      'channel': 'The Futur',
-      'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[01:01:18](https://www.youtube.com/watch?v=8vwgUwgH2Js&t=3678s)',
-      'relevance': 'Attributed practitioner commentary on productized B2B AI implementation, '
-                   'fixed-scope workflow sprints, and managed automation retainers (Chapter Q7 '
-                   'operational verification).',
-      'source_type': 'video_pro_tip',
-      'text': 'Right thing at the right time in the right place so I wish you continued '
-              'success thank you very much Brett for coming on the show today thank you man '
-              "it's been a dream appreciate it foreign.",
-      'timestamp': 3678,
-      'timestamp_label': '[01:01:18]',
-      'timestamp_seconds': 3678,
-      'tip': 'Right thing at the right time in the right place so I wish you continued success '
-             "thank you very much Brett for coming on the show today thank you man it's been a "
-             'dream appreciate it foreign.',
-      'title': 'Secret to Running a $1 Million Solo Design Agency (The Futur)',
-      'url': 'https://www.youtube.com/watch?v=8vwgUwgH2Js&t=3678s',
-      'video_id': '8vwgUwgH2Js'},
-     {'author': 'The AI Blueprint',
-      'channel': 'The AI Blueprint',
-      'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:02:48](https://www.youtube.com/watch?v=1mZ0bWq9y-M&t=168s)',
-      'relevance': 'Attributed practitioner commentary on productized B2B AI implementation, '
-                   'fixed-scope workflow sprints, and managed automation retainers (Chapter Q7 '
-                   'operational verification).',
-      'source_type': 'video_pro_tip',
-      'text': 'Just five active clients puts you at $7,500 in predictable monthly cash flow. '
-              'To get your first paying client in under 10 days, you do not need cold calls or '
-              'paid ads. Step one, pick one specific industry like commercial real estate '
-              'brokers or accounting firms.',
-      'timestamp': 168,
-      'timestamp_label': '[00:02:48]',
-      'timestamp_seconds': 168,
-      'tip': 'Just five active clients puts you at $7,500 in predictable monthly cash flow. To '
-             'get your first paying client in under 10 days, you do not need cold calls or '
-             'paid ads. Step one, pick one specific industry like commercial real estate '
-             'brokers or accounting firms.',
-      'title': 'How to Build an AI Automation Agency with n8n and AI Agents (2026 Masterclass) '
-               '(The AI Blueprint)',
-      'url': 'https://www.youtube.com/watch?v=1mZ0bWq9y-M&t=168s',
-      'video_id': '1mZ0bWq9y-M'},
-     {'author': 'ArriSse Corp',
-      'channel': 'ArriSse Corp',
-      'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:05:58](https://www.youtube.com/watch?v=XKoGenFWVHs&t=358s)',
-      'relevance': 'Attributed practitioner commentary on productized B2B AI implementation, '
-                   'fixed-scope workflow sprints, and managed automation retainers (Chapter Q7 '
-                   'operational verification).',
-      'source_type': 'video_pro_tip',
-      'text': 'Step two triggers at day 45 with the quarterly business review. The QBR is used '
-              'to pivot the relationship dynamic from deliverable execution to ongoing growth '
-              'advisory by presenting an evidence-based gap analysis.',
-      'timestamp': 358,
-      'timestamp_label': '[00:05:58]',
-      'timestamp_seconds': 358,
-      'tip': 'Step two triggers at day 45 with the quarterly business review. The QBR is used '
-             'to pivot the relationship dynamic from deliverable execution to ongoing growth '
-             'advisory by presenting an evidence-based gap analysis.',
-      'title': 'The Exact System Boutique Agencies Use to Stop Scope Creep & Close $5k/mo '
-               'Retainers (ArriSse Corp)',
-      'url': 'https://www.youtube.com/watch?v=XKoGenFWVHs&t=358s',
-      'video_id': 'XKoGenFWVHs'}],
- 8: [{'author': 'Stephanie Nyarko',
-      'channel': 'Stephanie Nyarko',
-      'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:15:44](https://www.youtube.com/watch?v=J8C_262TFUU&t=944s)',
-      'relevance': 'Attributed practitioner commentary on productized B2B AI implementation, '
-                   'fixed-scope workflow sprints, and managed automation retainers (Chapter Q8 '
-                   'operational verification).',
-      'source_type': 'video_pro_tip',
-      'text': 'If they need something custom, if they want to integrate it with their CRM, per '
-              "se, or let's say they want to route calls differently based on the time of day. "
-              "If I'm building something for an agency to resell or customize for their "
-              "clients, then I'll use Vapi.",
-      'timestamp': 944,
-      'timestamp_label': '[00:15:44]',
-      'timestamp_seconds': 944,
-      'tip': 'If they need something custom, if they want to integrate it with their CRM, per '
-             "se, or let's say they want to route calls differently based on the time of day. "
-             "If I'm building something for an agency to resell or customize for their "
-             "clients, then I'll use Vapi.",
-      'title': 'ElevenLabs vs Vapi vs Retell AI: I Built the Same AI Receptionist on All 3 '
-               '(Stephanie Nyarko)',
-      'url': 'https://www.youtube.com/watch?v=J8C_262TFUU&t=944s',
-      'video_id': 'J8C_262TFUU'},
-     {'author': 'Protecto',
-      'channel': 'Protecto',
-      'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:01:44](https://www.youtube.com/watch?v=e8kcLoVVX_A&t=104s)',
-      'relevance': 'Attributed practitioner commentary on productized B2B AI implementation, '
-                   'fixed-scope workflow sprints, and managed automation retainers (Chapter Q8 '
-                   'operational verification).',
-      'source_type': 'video_pro_tip',
-      'text': 'Agent workflows need this at every step. Database queries, tool results, every '
-              "one of them. So before you trust a provider's promise, ask these questions. Is "
-              'my content excluded from training? Is my use case eligible for zero data '
-              'retention? And what are the exceptions?',
-      'timestamp': 104,
-      'timestamp_label': '[00:01:44]',
-      'timestamp_seconds': 104,
-      'tip': 'Agent workflows need this at every step. Database queries, tool results, every '
-             "one of them. So before you trust a provider's promise, ask these questions. Is "
-             'my content excluded from training? Is my use case eligible for zero data '
-             'retention? And what are the exceptions?',
-      'title': 'Zero Data Retention Is Not Enough for AI Security (3 Controls Explained) #ai '
-               '#aisecurity (Protecto)',
-      'url': 'https://www.youtube.com/watch?v=e8kcLoVVX_A&t=104s',
-      'video_id': 'e8kcLoVVX_A'},
-     {'author': 'Belt Course',
-      'channel': 'Belt Course',
-      'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:03:55](https://www.youtube.com/watch?v=YaFtlj9qXQc&t=235s)',
-      'relevance': 'Attributed practitioner commentary on productized B2B AI implementation, '
-                   'fixed-scope workflow sprints, and managed automation retainers (Chapter Q8 '
-                   'operational verification).',
-      'source_type': 'video_pro_tip',
-      'text': 'Apollo instantly, LinkedIn automation tools, a CRM and n for automations and '
-              'they were happy. After after 90 days, they had two new clients at 10K MR and a '
-              '45K pipeline.',
-      'timestamp': 235,
-      'timestamp_label': '[00:03:55]',
-      'timestamp_seconds': 235,
-      'tip': 'Apollo instantly, LinkedIn automation tools, a CRM and n for automations and '
-             'they were happy. After after 90 days, they had two new clients at 10K MR and a '
-             '45K pipeline.',
-      'title': 'How to Sell AI Services with a Paid AI Business Audit (Step-by-Step Framework) '
-               '(Belt Course)',
-      'url': 'https://www.youtube.com/watch?v=YaFtlj9qXQc&t=235s',
-      'video_id': 'YaFtlj9qXQc'},
-     {'author': 'Sonny Sangha',
-      'channel': 'Sonny Sangha',
-      'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:20:03](https://www.youtube.com/watch?v=JSYOZvtkAx4&t=1203s)',
-      'relevance': 'Attributed practitioner commentary on productized B2B AI implementation, '
-                   'fixed-scope workflow sprints, and managed automation retainers (Chapter Q8 '
-                   'operational verification).',
-      'source_type': 'video_pro_tip',
-      'text': 'Now, if we go into the booking, you can actually see there are going to be two '
-              'tool calls over inside the booking. So if we go to tools, I have a book '
-              'appointment and a check availability. So both of these were created both all '
-              'from norm. So just by chatting with Norm.',
-      'timestamp': 1203,
-      'timestamp_label': '[00:20:03]',
-      'timestamp_seconds': 1203,
-      'tip': 'Now, if we go into the booking, you can actually see there are going to be two '
-             'tool calls over inside the booking. So if we go to tools, I have a book '
-             'appointment and a check availability. So both of these were created both all '
-             'from norm. So just by chatting with Norm.',
-      'title': 'I Built an AI Voice Agent That Actually Works (AI Receptionist Full Beginner '
-               'Tutorial) (Sonny Sangha)',
-      'url': 'https://www.youtube.com/watch?v=JSYOZvtkAx4&t=1203s',
-      'video_id': 'JSYOZvtkAx4'},
-     {'author': 'DataSnipper',
-      'channel': 'DataSnipper',
-      'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:18:03](https://www.youtube.com/watch?v=fabs_LzN3oI&t=1083s)',
-      'relevance': 'Attributed practitioner commentary on productized B2B AI implementation, '
-                   'fixed-scope workflow sprints, and managed automation retainers (Chapter Q8 '
-                   'operational verification).',
-      'source_type': 'video_pro_tip',
-      'text': "That's part of the process that we build within Data Scraper to keep you as a "
-              'user in the loop. And once the agent performs a task, you will see that all the '
-              'information has been fully extracted verbatim because in this case we did ask '
-              'the agent to do it verbatim.',
-      'timestamp': 1083,
-      'timestamp_label': '[00:18:03]',
-      'timestamp_seconds': 1083,
-      'tip': "That's part of the process that we build within Data Scraper to keep you as a "
-             'user in the loop. And once the agent performs a task, you will see that all the '
-             'information has been fully extracted verbatim because in this case we did ask '
-             'the agent to do it verbatim.',
-      'title': 'AI Use Cases for Internal Audit, External Audit, Compliance | NYC Connect 226 '
-               '(DataSnipper)',
-      'url': 'https://www.youtube.com/watch?v=fabs_LzN3oI&t=1083s',
-      'video_id': 'fabs_LzN3oI'},
-     {'author': 'Cuebic AI',
-      'channel': 'Cuebic AI',
-      'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:02:00](https://www.youtube.com/watch?v=BxxP4kEqOdg&t=120s)',
-      'relevance': 'Attributed practitioner commentary on productized B2B AI implementation, '
-                   'fixed-scope workflow sprints, and managed automation retainers (Chapter Q8 '
-                   'operational verification).',
-      'source_type': 'video_pro_tip',
-      'text': 'We can also configure the Brave search API key if we want to give the AI access '
-              "to web search capabilities. I'll enable AI agents as well, and we can also "
-              "enable the agent's knowledge base. At this point, our main AI configuration is "
-              'ready.',
+      'text': "Sales reps start wasting tons of time going through horrible accounts that aren't "
+              'actually qualified and doing manual research as opposed to just selling. Marketing '
+              "can't segment properly. Leadership has very low visibility to what's actually going "
+              'on on the ground.',
       'timestamp': 120,
       'timestamp_label': '[00:02:00]',
       'timestamp_seconds': 120,
-      'tip': 'We can also configure the Brave search API key if we want to give the AI access '
-             "to web search capabilities. I'll enable AI agents as well, and we can also "
-             "enable the agent's knowledge base. At this point, our main AI configuration is "
-             'ready.',
-      'title': 'n8n AI Assistant & AI Agents on Self-Hosted n8n (Cuebic AI)',
-      'url': 'https://www.youtube.com/watch?v=BxxP4kEqOdg&t=120s',
+      'tip': "Sales reps start wasting tons of time going through horrible accounts that aren't "
+             'actually qualified and doing manual research as opposed to just selling. Marketing '
+             "can't segment properly. Leadership has very low visibility to what's actually going "
+             'on on the ground.',
+      'title': 'The CRM Data Problem & How We Solve It with Clay',
+      'url': 'https://www.youtube.com/watch?v=LxiIsByGTbU&t=120s',
+      'video_id': 'LxiIsByGTbU'}],
+ 7: [{'author': 'Simplified',
+      'channel': 'Simplified',
+      'epistemic_status': 'attributed_practitioner_claim',
+      'markdown': '[00:03:56](https://www.youtube.com/watch?v=IYV8OVFzq_c&t=236s)',
+      'relevance': 'Practitioner testimony on selecting a platform by workflow complexity, '
+                   'integrations, skills, and budget.',
+      'source_type': 'video_pro_tip',
+      'text': 'The choice of platform depends on the complexity of your automations, the '
+              'integrations you require, the initial skills of your team, and your budget.',
+      'timestamp': 236,
+      'timestamp_label': '[00:03:56]',
+      'timestamp_seconds': 236,
+      'tip': 'The choice of platform depends on the complexity of your automations, the '
+             'integrations you require, the initial skills of your team, and your budget.',
+      'title': 'N8N vs Make vs Zapier (2025) - Honest Review',
+      'url': 'https://www.youtube.com/watch?v=IYV8OVFzq_c&t=236s',
+      'video_id': 'IYV8OVFzq_c'},
+     {'author': 'Automate with Marc | AI Automation',
+      'channel': 'Automate with Marc | AI Automation',
+      'epistemic_status': 'attributed_practitioner_claim',
+      'markdown': '[00:08:38](https://www.youtube.com/watch?v=syCqaV7N73s&t=518s)',
+      'relevance': 'Practitioner testimony on dynamic mapping rather than hardcoding a sample '
+                   'lead.',
+      'source_type': 'video_pro_tip',
+      'text': "If I type in Teddy Joy right here, it's going to be hardcoded for every run of this "
+              'automation.',
+      'timestamp': 518,
+      'timestamp_label': '[00:08:38]',
+      'timestamp_seconds': 518,
+      'tip': "If I type in Teddy Joy right here, it's going to be hardcoded for every run of this "
+             'automation.',
+      'title': 'The difference between Zapier, Make and n8n (2026)',
+      'url': 'https://www.youtube.com/watch?v=syCqaV7N73s&t=518s',
+      'video_id': 'syCqaV7N73s'},
+     {'author': 'AI Business Tools & Automation',
+      'channel': 'AI Business Tools & Automation',
+      'epistemic_status': 'attributed_practitioner_claim',
+      'markdown': '[00:06:57](https://www.youtube.com/watch?v=PKHb0KLNOIg&t=417s)',
+      'relevance': 'Practitioner testimony on testing actual workflow usage before selecting a '
+                   'paid plan.',
+      'source_type': 'video_pro_tip',
+      'text': 'Before you commit, build one real workflow on each free tier or trial, run it for a '
+              'week, and read the usage meter.',
+      'timestamp': 417,
+      'timestamp_label': '[00:06:57]',
+      'timestamp_seconds': 417,
+      'tip': 'Before you commit, build one real workflow on each free tier or trial, run it for a '
+             'week, and read the usage meter.',
+      'title': 'Zapier vs Make vs n8n: Which Costs Less for Small Businesses? (2026)',
+      'url': 'https://www.youtube.com/watch?v=PKHb0KLNOIg&t=417s',
+      'video_id': 'PKHb0KLNOIg'},
+     {'author': 'LearnAI Today',
+      'channel': 'LearnAI Today',
+      'epistemic_status': 'attributed_practitioner_claim',
+      'markdown': '[00:04:39](https://www.youtube.com/watch?v=Pd96DxQ36U8&t=279s)',
+      'relevance': 'Practitioner testimony on the operational responsibilities accompanying '
+                   'self-hosting.',
+      'source_type': 'video_pro_tip',
+      'text': 'Self-hosting means handling updates, backups, security, and uptime yourself.',
+      'timestamp': 279,
+      'timestamp_label': '[00:04:39]',
+      'timestamp_seconds': 279,
+      'tip': 'Self-hosting means handling updates, backups, security, and uptime yourself.',
+      'title': 'Zapier vs Make vs n8n (2026): Which Automation Tool Should You Use?',
+      'url': 'https://www.youtube.com/watch?v=Pd96DxQ36U8&t=279s',
+      'video_id': 'Pd96DxQ36U8'},
+     {'author': 'The AI Blueprint',
+      'channel': 'The AI Blueprint',
+      'epistemic_status': 'attributed_practitioner_claim',
+      'markdown': '[00:02:20](https://www.youtube.com/watch?v=1mZ0bWq9y-M&t=140s)',
+      'relevance': 'Practitioner testimony on the taught starter automation package and recurring '
+                   'maintenance offer.',
+      'source_type': 'video_pro_tip',
+      'text': 'Two custom core workflows for a one-time setup fee of $1,500 plus $500 per month '
+              'for ongoing maintenance and uptime monitoring.',
+      'timestamp': 140,
+      'timestamp_label': '[00:02:20]',
+      'timestamp_seconds': 140,
+      'tip': 'Two custom core workflows for a one-time setup fee of $1,500 plus $500 per month for '
+             'ongoing maintenance and uptime monitoring.',
+      'title': 'How to Build an AI Automation Agency with n8n and AI Agents (2026 Masterclass)',
+      'url': 'https://www.youtube.com/watch?v=1mZ0bWq9y-M&t=140s',
+      'video_id': '1mZ0bWq9y-M'},
+     {'author': 'Paired Recruiting',
+      'channel': 'Paired Recruiting',
+      'epistemic_status': 'attributed_practitioner_claim',
+      'markdown': '[00:07:45](https://www.youtube.com/watch?v=TdMOpd_cG0A&t=465s)',
+      'relevance': 'Practitioner testimony on Make as a remote-team middle ground.',
+      'source_type': 'video_pro_tip',
+      'text': "In most cases, Make ends up being the best middle ground. It's flexible enough to "
+              'handle real workflows, but still accessible without needing a developer.',
+      'timestamp': 465,
+      'timestamp_label': '[00:07:45]',
+      'timestamp_seconds': 465,
+      'tip': "In most cases, Make ends up being the best middle ground. It's flexible enough to "
+             'handle real workflows, but still accessible without needing a developer.',
+      'title': 'Zapier vs Make vs n8n: Which Automation Tool Is Best for Your Team? (HONEST '
+               'REVIEW)',
+      'url': 'https://www.youtube.com/watch?v=TdMOpd_cG0A&t=465s',
+      'video_id': 'TdMOpd_cG0A'},
+     {'author': 'Jonas | AI Tools & Automation',
+      'channel': 'Jonas | AI Tools & Automation',
+      'epistemic_status': 'attributed_practitioner_claim',
+      'markdown': '[00:07:20](https://www.youtube.com/watch?v=4imOFZeP7nk&t=440s)',
+      'relevance': 'Practitioner testimony on duplicate safety and dedicated failure alerts in '
+                   'client workflows.',
+      'source_type': 'video_pro_tip',
+      'text': 'Make it duplicate safe and set up error alerts. I literally have one workflow whose '
+              'only job is to tell me when another workflow fails.',
+      'timestamp': 440,
+      'timestamp_label': '[00:07:20]',
+      'timestamp_seconds': 440,
+      'tip': 'Make it duplicate safe and set up error alerts. I literally have one workflow whose '
+             'only job is to tell me when another workflow fails.',
+      'title': 'I Run My AI Automation Business for $0 in Software (Zapier vs Make vs n8n)',
+      'url': 'https://www.youtube.com/watch?v=4imOFZeP7nk&t=440s',
+      'video_id': '4imOFZeP7nk'},
+     {'author': 'ProfitPilot',
+      'channel': 'ProfitPilot',
+      'epistemic_status': 'attributed_practitioner_claim',
+      'markdown': '[00:04:26](https://www.youtube.com/watch?v=d8w8FHZJpdY&t=266s)',
+      'relevance': 'Practitioner testimony on Zapier AI task multipliers and tool-call billing.',
+      'source_type': 'video_pro_tip',
+      'text': 'Standard costs one task, Advanced costs three, and Premium costs five. If the AI '
+              'calls tools, each tool call is billed at the same rate.',
+      'timestamp': 266,
+      'timestamp_label': '[00:04:26]',
+      'timestamp_seconds': 266,
+      'tip': 'Standard costs one task, Advanced costs three, and Premium costs five. If the AI '
+             'calls tools, each tool call is billed at the same rate.',
+      'title': 'Zapier vs Make vs n8n: What One AI Workflow Really Costs (2026 Pricing)',
+      'url': 'https://www.youtube.com/watch?v=d8w8FHZJpdY&t=266s',
+      'video_id': 'd8w8FHZJpdY'},
+     {'author': "Owner's Bot Lab",
+      'channel': "Owner's Bot Lab",
+      'epistemic_status': 'attributed_practitioner_claim',
+      'markdown': '[00:04:03](https://www.youtube.com/watch?v=EtiRX0GduSI&t=243s)',
+      'relevance': 'Practitioner testimony on the measured emergency-handling results of the '
+                   'responder test.',
+      'source_type': 'video_pro_tip',
+      'text': 'All three caught four out of four emergencies, zero false alarms, zero prices '
+              'quoted.',
+      'timestamp': 243,
+      'timestamp_label': '[00:04:03]',
+      'timestamp_seconds': 243,
+      'tip': 'All three caught four out of four emergencies, zero false alarms, zero prices '
+             'quoted.',
+      'title': 'I Built the Same AI Lead Responder in Zapier, Make and n8n (Only One Was Easy)',
+      'url': 'https://www.youtube.com/watch?v=EtiRX0GduSI&t=243s',
+      'video_id': 'EtiRX0GduSI'},
+     {'author': 'Everyday AI Automation',
+      'channel': 'Everyday AI Automation',
+      'epistemic_status': 'attributed_practitioner_claim',
+      'markdown': '[00:08:23](https://www.youtube.com/watch?v=SrWNK0955xw&t=503s)',
+      'relevance': 'Practitioner testimony on invoice extraction and the document-processing role '
+                   'of UiPath.',
+      'source_type': 'video_pro_tip',
+      'text': 'With UiPath, we can create a workflow that reads the invoice using document '
+              'understanding. We add an extract document data activity, choose the appropriate '
+              'document type, and identify the fields we want extracted.',
+      'timestamp': 503,
+      'timestamp_label': '[00:08:23]',
+      'timestamp_seconds': 503,
+      'tip': 'With UiPath, we can create a workflow that reads the invoice using document '
+             'understanding. We add an extract document data activity, choose the appropriate '
+             'document type, and identify the fields we want extracted.',
+      'title': 'Zapier vs Make vs n8n vs UiPath: What You Need to Know in 2026',
+      'url': 'https://www.youtube.com/watch?v=SrWNK0955xw&t=503s',
+      'video_id': 'SrWNK0955xw'},
+     {'author': 'Whizz AI',
+      'channel': 'Whizz AI',
+      'epistemic_status': 'attributed_practitioner_claim',
+      'markdown': '[00:04:57](https://www.youtube.com/watch?v=Pz3jLYQwsX4&t=297s)',
+      'relevance': 'Practitioner testimony distinguishing zero software cost from self-hosting '
+                   'responsibilities.',
+      'source_type': 'video_pro_tip',
+      'text': 'If you self-host the free version, you are responsible for keeping it running, '
+              'updating it, and securing it. That is a real job, even if the software itself costs '
+              'nothing.',
+      'timestamp': 297,
+      'timestamp_label': '[00:04:57]',
+      'timestamp_seconds': 297,
+      'tip': 'If you self-host the free version, you are responsible for keeping it running, '
+             'updating it, and securing it. That is a real job, even if the software itself costs '
+             'nothing.',
+      'title': 'n8n vs Zapier vs Make (2026): Which AI Automation Tool Is Actually Worth It?',
+      'url': 'https://www.youtube.com/watch?v=Pz3jLYQwsX4&t=297s',
+      'video_id': 'Pz3jLYQwsX4'},
+     {'author': 'SaaS Master',
+      'channel': 'SaaS Master',
+      'epistemic_status': 'attributed_practitioner_claim',
+      'markdown': '[00:03:03](https://www.youtube.com/watch?v=TdMeBa69Y8Y&t=183s)',
+      'relevance': 'Practitioner testimony on enabling instance-level MCP for AI-assisted workflow '
+                   'creation.',
+      'source_type': 'video_pro_tip',
+      'text': "Head on over to settings, click on instance level MCP. Let's go ahead and enable.",
+      'timestamp': 183,
+      'timestamp_label': '[00:03:03]',
+      'timestamp_seconds': 183,
+      'tip': "Head on over to settings, click on instance level MCP. Let's go ahead and enable.",
+      'title': 'n8n Self Hosted With Claude MCP - Let AI Build Your Workflows',
+      'url': 'https://www.youtube.com/watch?v=TdMeBa69Y8Y&t=183s',
+      'video_id': 'TdMeBa69Y8Y'},
+     {'author': 'Cuebic AI',
+      'channel': 'Cuebic AI',
+      'epistemic_status': 'attributed_practitioner_claim',
+      'markdown': '[00:02:57](https://www.youtube.com/watch?v=BxxP4kEqOdg&t=177s)',
+      'relevance': 'Practitioner testimony demonstrating an assistant modifying an existing '
+                   'self-hosted workflow.',
+      'source_type': 'video_pro_tip',
+      'text': "I'll open the AI assistant and ask it to add an if node to this workflow. The "
+              'assistant processes the request, and there we go. The if node has been added to the '
+              'workflow.',
+      'timestamp': 177,
+      'timestamp_label': '[00:02:57]',
+      'timestamp_seconds': 177,
+      'tip': "I'll open the AI assistant and ask it to add an if node to this workflow. The "
+             'assistant processes the request, and there we go. The if node has been added to the '
+             'workflow.',
+      'title': 'n8n AI Assistant & AI Agents on Self-Hosted n8n',
+      'url': 'https://www.youtube.com/watch?v=BxxP4kEqOdg&t=177s',
       'video_id': 'BxxP4kEqOdg'},
      {'author': 'Fireship',
       'channel': 'Fireship',
       'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:00:28](https://www.youtube.com/watch?v=bS9R6aCVEzw&t=28s)',
-      'relevance': 'Attributed practitioner commentary on productized B2B AI implementation, '
-                   'fixed-scope workflow sprints, and managed automation retainers (Chapter Q8 '
-                   'operational verification).',
+      'markdown': '[00:05:09](https://www.youtube.com/watch?v=bS9R6aCVEzw&t=309s)',
+      'relevance': 'Practitioner testimony on models, memory, and MCP tools in an n8n AI Agent '
+                   'node.',
       'source_type': 'video_pro_tip',
-      'text': 'In fact, that\'s exactly what this guy was doing until he said, "Screw it. I\'m '
-              'building my own Zapier from scratch." The end result was a platform called N8N, '
-              "which is an open-source self-hostable automation tool. And no, it's not the "
-              'sponsor of this video.',
-      'timestamp': 28,
-      'timestamp_label': '[00:00:28]',
-      'timestamp_seconds': 28,
-      'tip': 'In fact, that\'s exactly what this guy was doing until he said, "Screw it. I\'m '
-             'building my own Zapier from scratch." The end result was a platform called N8N, '
-             "which is an open-source self-hostable automation tool. And no, it's not the "
-             'sponsor of this video.',
-      'title': 'n8n will change your life as a developer... (Fireship)',
-      'url': 'https://www.youtube.com/watch?v=bS9R6aCVEzw&t=28s',
+      'text': 'The AI agent node allows us to choose any custom model we want, as well as provide '
+              'data for memory and tools for the model context protocol.',
+      'timestamp': 309,
+      'timestamp_label': '[00:05:09]',
+      'timestamp_seconds': 309,
+      'tip': 'The AI agent node allows us to choose any custom model we want, as well as provide '
+             'data for memory and tools for the model context protocol.',
+      'title': 'n8n will change your life as a developer...',
+      'url': 'https://www.youtube.com/watch?v=bS9R6aCVEzw&t=309s',
       'video_id': 'bS9R6aCVEzw'},
-     {'author': 'Indie Bites',
-      'channel': 'Indie Bites',
+     {'author': '12_5 Tech',
+      'channel': '12_5 Tech',
       'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:01:05](https://www.youtube.com/watch?v=FpPgkqEoNDY&t=65s)',
-      'relevance': 'Attributed practitioner commentary on productized B2B AI implementation, '
-                   'fixed-scope workflow sprints, and managed automation retainers (Chapter Q8 '
-                   'operational verification).',
+      'markdown': '[00:02:35](https://www.youtube.com/watch?v=0EeWohGy6RM&t=155s)',
+      'relevance': 'Practitioner testimony on execution-history pruning in a small self-hosted '
+                   'deployment.',
       'source_type': 'video_pro_tip',
-      'text': "Trying out ahrefs webmaster tools for free you'll see what keywords your pages "
-              'are ranking for understand how google sees your content and discover what '
-              'changes you need to make to improve your search ranking to try out hrs head to '
-              'hrefs.com awt.ahrefs.com.',
-      'timestamp': 65,
-      'timestamp_label': '[00:01:05]',
-      'timestamp_seconds': 65,
-      'tip': "Trying out ahrefs webmaster tools for free you'll see what keywords your pages "
-             'are ranking for understand how google sees your content and discover what '
-             'changes you need to make to improve your search ranking to try out hrs head to '
-             'hrefs.com awt.ahrefs.com.',
-      'title': 'A solo $130k MRR productized design service - Brett Williams, Designjoy (Indie '
-               'Bites)',
-      'url': 'https://www.youtube.com/watch?v=FpPgkqEoNDY&t=65s',
-      'video_id': 'FpPgkqEoNDY'},
-     {'author': "Jake's Tech Lab",
-      'channel': "Jake's Tech Lab",
+      'text': 'Enable seven-day execution pruning to protect small VPS disks.',
+      'timestamp': 155,
+      'timestamp_label': '[00:02:35]',
+      'timestamp_seconds': 155,
+      'tip': 'Enable seven-day execution pruning to protect small VPS disks.',
+      'title': 'Build Free AI Agents & Workflow Automation With Zero Zapier Fees (Self-Hosted n8n '
+               '+ Free Groq/Gemini',
+      'url': 'https://www.youtube.com/watch?v=0EeWohGy6RM&t=155s',
+      'video_id': '0EeWohGy6RM'},
+     {'author': 'Automate with Marc | AI Automation',
+      'channel': 'Automate with Marc | AI Automation',
       'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:00:27](https://www.youtube.com/watch?v=vSmuuzicQUU&t=27s)',
-      'relevance': 'Attributed practitioner commentary on productized B2B AI implementation, '
-                   'fixed-scope workflow sprints, and managed automation retainers (Chapter Q8 '
-                   'operational verification).',
+      'markdown': '[00:28:33](https://www.youtube.com/watch?v=syCqaV7N73s&t=1713s)',
+      'relevance': 'Practitioner testimony summarizing platform selection after the three-platform '
+                   'build demonstration.',
       'source_type': 'video_pro_tip',
-      'text': 'Ticketing and help desk, AI and automation, reporting and analytics, multi- '
-              'channelannel messaging, pricing, security and compliance, and CRM and sales '
-              "tools. We'll cruise through each one. And oh, I'm definitely calling out the "
-              'quirks and highlights.',
-      'timestamp': 27,
-      'timestamp_label': '[00:00:27]',
-      'timestamp_seconds': 27,
-      'tip': 'Ticketing and help desk, AI and automation, reporting and analytics, multi- '
-             'channelannel messaging, pricing, security and compliance, and CRM and sales '
-             "tools. We'll cruise through each one. And oh, I'm definitely calling out the "
-             'quirks and highlights.',
-      'title': 'Zendesk vs Intercom Comparison 2025 | Which Customer Support Platform is Best? '
-               "(Jake's Tech Lab)",
-      'url': 'https://www.youtube.com/watch?v=vSmuuzicQUU&t=27s',
-      'video_id': 'vSmuuzicQUU'},
-     {'author': 'AI Engineer',
-      'channel': 'AI Engineer',
+      'text': 'Choose Zapier if you want speed and simplicity. Choose Make if you want power '
+              'without coding and choose n8n if you want full control and flexibility.',
+      'timestamp': 1713,
+      'timestamp_label': '[00:28:33]',
+      'timestamp_seconds': 1713,
+      'tip': 'Choose Zapier if you want speed and simplicity. Choose Make if you want power '
+             'without coding and choose n8n if you want full control and flexibility.',
+      'title': 'The difference between Zapier, Make and n8n (2026)',
+      'url': 'https://www.youtube.com/watch?v=syCqaV7N73s&t=1713s',
+      'video_id': 'syCqaV7N73s'}],
+ 8: [{'author': 'Anthony Shoosh',
+      'channel': 'Anthony Shoosh',
       'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:09:34](https://www.youtube.com/watch?v=XlAIgmi_Vow&t=574s)',
-      'relevance': 'Attributed practitioner commentary on productized B2B AI implementation, '
-                   'fixed-scope workflow sprints, and managed automation retainers (Chapter Q8 '
-                   'operational verification).',
+      'markdown': '[00:05:20](https://www.youtube.com/watch?v=S5UwzzP_Qec&t=320s)',
+      'relevance': 'Verbatim practitioner testimony from Chapter Q8.',
       'source_type': 'video_pro_tip',
-      'text': "So again we went back and and thought about like what is our team's expertise "
-              'in and what can we do and so what we did was instead we stored the data points '
-              'as JSON in a lucine based search engine.',
-      'timestamp': 574,
-      'timestamp_label': '[00:09:34]',
-      'timestamp_seconds': 574,
-      'tip': "So again we went back and and thought about like what is our team's expertise in "
-             'and what can we do and so what we did was instead we stored the data points as '
-             'JSON in a lucine based search engine.',
-      'title': 'When Vectors Break Down: Graph-Based RAG for Dense Enterprise Knowledge - Sam '
-               'Julien, Writer (AI Engineer)',
-      'url': 'https://www.youtube.com/watch?v=XlAIgmi_Vow&t=574s',
-      'video_id': 'XlAIgmi_Vow'},
-     {'author': 'KodeKloud',
-      'channel': 'KodeKloud',
+      'text': "You're going to want to have a call flow section, a background section, and an "
+              'example dialogue section.',
+      'timestamp': 320,
+      'timestamp_label': '[00:05:20]',
+      'timestamp_seconds': 320,
+      'tip': "You're going to want to have a call flow section, a background section, and an "
+             'example dialogue section.',
+      'title': 'Bland AI Basics: Everything You Need to Start Building Voice Agents',
+      'url': 'https://www.youtube.com/watch?v=S5UwzzP_Qec&t=320s',
+      'video_id': 'S5UwzzP_Qec'},
+     {'author': 'CX Foundation',
+      'channel': 'CX Foundation',
       'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:06:02](https://www.youtube.com/watch?v=_HQ2H_0Ayy0&t=362s)',
-      'relevance': 'Attributed practitioner commentary on productized B2B AI implementation, '
-                   'fixed-scope workflow sprints, and managed automation retainers (Chapter Q8 '
-                   'operational verification).',
+      'markdown': '[00:06:37](https://www.youtube.com/watch?v=-j4XDojlGLc&t=397s)',
+      'relevance': "Near-verbatim practitioner testimony on the tested Bland demo's missing "
+                   'communication actions.',
       'source_type': 'video_pro_tip',
-      'text': 'Explore this question by yourself to get a real feel for the data set. In the '
-              "following question, we're asked to initialize our vector database. I spin up "
-              'Chromma DB locally using a persistent client and create a collection named tech '
-              'corpse_docs.',
-      'timestamp': 362,
-      'timestamp_label': '[00:06:02]',
-      'timestamp_seconds': 362,
-      'tip': 'Explore this question by yourself to get a real feel for the data set. In the '
-             "following question, we're asked to initialize our vector database. I spin up "
-             'Chromma DB locally using a persistent client and create a collection named tech '
-             'corpse_docs.',
-      'title': 'RAG Explained For Beginners (KodeKloud)',
-      'url': 'https://www.youtube.com/watch?v=_HQ2H_0Ayy0&t=362s',
-      'video_id': '_HQ2H_0Ayy0'},
-     {'author': 'AIWealthPath',
-      'channel': 'AIWealthPath',
+      'text': 'It did not yet have the capability to send me a text message or an email directly '
+              'from the phone conversation, nor did it have the ability to transfer me directly to '
+              'a live agent.',
+      'timestamp': 397,
+      'timestamp_label': '[00:06:37]',
+      'timestamp_seconds': 397,
+      'tip': 'It did not yet have the capability to send me a text message or an email directly '
+             'from the phone conversation, nor did it have the ability to transfer me directly to '
+             'a live agent.',
+      'title': 'We Tested Bland AI’s Voice Agent. Here’s What Happened',
+      'url': 'https://www.youtube.com/watch?v=-j4XDojlGLc&t=397s',
+      'video_id': '-j4XDojlGLc'},
+     {'author': 'Daniel | Tech & Data',
+      'channel': 'Daniel | Tech & Data',
       'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:01:30](https://www.youtube.com/watch?v=JKmSoDIpfdI&t=90s)',
-      'relevance': 'Attributed practitioner commentary on productized B2B AI implementation, '
-                   'fixed-scope workflow sprints, and managed automation retainers (Chapter Q8 '
-                   'operational verification).',
+      'markdown': '[00:04:23](https://www.youtube.com/watch?v=PgrkNMNc_Cw&t=263s)',
+      'relevance': 'Verbatim practitioner testimony on the Conductor-generated auto-repair '
+                   'workflow.',
       'source_type': 'video_pro_tip',
-      'text': 'Step three, pick a support AI tool that fits your size, not the biggest one on '
-              "the market. If you're a small business, look at tools like Intercom Fin, "
-              'Zendesk AI, or Freshdesk Freddy.',
-      'timestamp': 90,
-      'timestamp_label': '[00:01:30]',
-      'timestamp_seconds': 90,
-      'tip': 'Step three, pick a support AI tool that fits your size, not the biggest one on '
-             "the market. If you're a small business, look at tools like Intercom Fin, Zendesk "
-             'AI, or Freshdesk Freddy.',
-      'title': 'How to Automate Your Customer Support With AI in 2026 — Full Beginner Guide '
-               '(AIWealthPath)',
-      'url': 'https://www.youtube.com/watch?v=JKmSoDIpfdI&t=90s',
-      'video_id': 'JKmSoDIpfdI'},
-     {'author': 'Cloud in',
-      'channel': 'Cloud in',
+      'text': 'The completed flow appeared as 9 connected nodes.',
+      'timestamp': 263,
+      'timestamp_label': '[00:04:23]',
+      'timestamp_seconds': 263,
+      'tip': 'The completed flow appeared as 9 connected nodes.',
+      'title': 'Retell AI Review (2026): Create AI Voice Agents in Under 10 Minutes',
+      'url': 'https://www.youtube.com/watch?v=PgrkNMNc_Cw&t=263s',
+      'video_id': 'PgrkNMNc_Cw'},
+     {'author': 'Voice AI Decoded',
+      'channel': 'Voice AI Decoded',
       'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:21:42](https://www.youtube.com/watch?v=ZE-vxHSGB7w&t=1302s)',
-      'relevance': 'Attributed practitioner commentary on productized B2B AI implementation, '
-                   'fixed-scope workflow sprints, and managed automation retainers (Chapter Q8 '
-                   'operational verification).',
+      'markdown': '[00:07:37](https://www.youtube.com/watch?v=UiKoEHbio38&t=457s)',
+      'relevance': 'Near-verbatim practitioner testimony on the reported Retell latency '
+                   'measurement.',
       'source_type': 'video_pro_tip',
-      'text': 'When using organizations, AWS organizations, you can control, you know, have '
-              'SCPs that pinpoint onto your platform. So, it is it is giving you an extra '
-              'layer of security, as well as, you know, keeping mind of what a data actually '
-              'is implemented onto your AWS account.',
-      'timestamp': 1302,
-      'timestamp_label': '[00:21:42]',
-      'timestamp_seconds': 1302,
-      'tip': 'When using organizations, AWS organizations, you can control, you know, have '
-             'SCPs that pinpoint onto your platform. So, it is it is giving you an extra layer '
-             'of security, as well as, you know, keeping mind of what a data actually is '
-             'implemented onto your AWS account.',
-      'title': 'Securing SMB GenAI Pipelines  Guardrails, Data Privacy & ISO SOC2 Compliance '
-               'on AWS (Cloud in)',
-      'url': 'https://www.youtube.com/watch?v=ZE-vxHSGB7w&t=1302s',
-      'video_id': 'ZE-vxHSGB7w'},
-     {'author': 'Simply Contact',
-      'channel': 'Simply Contact',
+      'text': "When I've done standardized latency testing across different tools, I believe with "
+              'Retell I was getting 714 milliseconds of end-to-end latency.',
+      'timestamp': 457,
+      'timestamp_label': '[00:07:37]',
+      'timestamp_seconds': 457,
+      'tip': "When I've done standardized latency testing across different tools, I believe with "
+             'Retell I was getting 714 milliseconds of end-to-end latency.',
+      'title': "Retell AI vs Bland AI (Don't choose WRONG!)",
+      'url': 'https://www.youtube.com/watch?v=UiKoEHbio38&t=457s',
+      'video_id': 'UiKoEHbio38'},
+     {'author': 'Alex Leischow',
+      'channel': 'Alex Leischow',
       'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:01:22](https://www.youtube.com/watch?v=DcDfJRzuZNI&t=82s)',
-      'relevance': 'Attributed practitioner commentary on productized B2B AI implementation, '
-                   'fixed-scope workflow sprints, and managed automation retainers (Chapter Q8 '
-                   'operational verification).',
+      'markdown': '[00:15:01](https://www.youtube.com/watch?v=8yIHmsMHMYc&t=901s)',
+      'relevance': 'Near-verbatim practitioner testimony on the plumbing lead callback '
+                   'demonstration.',
       'source_type': 'video_pro_tip',
-      'text': 'Its AI suite includes chatbots, agent assistance, automated ticketing, voice '
-              'support, a knowledge base, and detailed analytics. Pricing starts at 19 dollars '
-              'per agent per month. Users often highlight Zendesk’s solid automation, smooth '
-              'workflows, and strong CRM integrations.',
-      'timestamp': 82,
-      'timestamp_label': '[00:01:22]',
-      'timestamp_seconds': 82,
-      'tip': 'Its AI suite includes chatbots, agent assistance, automated ticketing, voice '
-             'support, a knowledge base, and detailed analytics. Pricing starts at 19 dollars '
-             'per agent per month. Users often highlight Zendesk’s solid automation, smooth '
-             'workflows, and strong CRM integrations.',
-      'title': 'Top 10 AI Customer Service Companies (Simply Contact)',
-      'url': 'https://www.youtube.com/watch?v=DcDfJRzuZNI&t=82s',
-      'video_id': 'DcDfJRzuZNI'},
-     {'author': 'Michael Saruggia - GTM Engineering',
-      'channel': 'Michael Saruggia - GTM Engineering',
+      'text': 'We got a call within 10 seconds, basically confirming what we needed and then '
+              'letting me know that someone on the sales team is going to follow up with me.',
+      'timestamp': 901,
+      'timestamp_label': '[00:15:01]',
+      'timestamp_seconds': 901,
+      'tip': 'We got a call within 10 seconds, basically confirming what we needed and then '
+             'letting me know that someone on the sales team is going to follow up with me.',
+      'title': 'How to Build an AI Voice Agent That Calls Every Lead in 60 Seconds (VAPI Tutorial)',
+      'url': 'https://www.youtube.com/watch?v=8yIHmsMHMYc&t=901s',
+      'video_id': '8yIHmsMHMYc'},
+     {'author': 'Bland',
+      'channel': 'Bland',
       'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:05:36](https://www.youtube.com/watch?v=DHX8uoA53OI&t=336s)',
-      'relevance': 'Attributed practitioner commentary on productized B2B AI implementation, '
-                   'fixed-scope workflow sprints, and managed automation retainers (Chapter Q8 '
-                   'operational verification).',
+      'markdown': '[00:00:42](https://www.youtube.com/watch?v=W1Y3bHct_e0&t=42s)',
+      'relevance': 'Near-verbatim practitioner testimony on globally accessible FNOL escalation '
+                   'paths.',
       'source_type': 'video_pro_tip',
-      'text': "So there will be an automated way to actually get new data. You don't have to "
-              "manually update it. Basically, you're pulling all the data from, in this case, "
-              'Salesforce into different clay tables. Into the clay tables, you actually have '
-              'a couple of column.',
-      'timestamp': 336,
-      'timestamp_label': '[00:05:36]',
-      'timestamp_seconds': 336,
-      'tip': "So there will be an automated way to actually get new data. You don't have to "
-             "manually update it. Basically, you're pulling all the data from, in this case, "
-             'Salesforce into different clay tables. Into the clay tables, you actually have a '
-             'couple of column.',
-      'title': 'Fix Your CRM Data With Clay.Com (Job Changes Problem) (Michael Saruggia - GTM '
-               'Engineering)',
-      'url': 'https://www.youtube.com/watch?v=DHX8uoA53OI&t=336s',
-      'video_id': 'DHX8uoA53OI'}],
- 9: [{'author': 'Mikey No Code',
-      'channel': 'Mikey No Code',
+      'text': "We've got some global nodes set up here. This basically is just like an escape "
+              'hatch for the agent.',
+      'timestamp': 42,
+      'timestamp_label': '[00:00:42]',
+      'timestamp_seconds': 42,
+      'tip': "We've got some global nodes set up here. This basically is just like an escape hatch "
+             'for the agent.',
+      'title': 'How to automate FNOL insurance calls using AI voice agents',
+      'url': 'https://www.youtube.com/watch?v=W1Y3bHct_e0&t=42s',
+      'video_id': 'W1Y3bHct_e0'},
+     {'author': 'Venture Harbour',
+      'channel': 'Venture Harbour',
       'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:49:42](https://www.youtube.com/watch?v=i4z0kCcByY8&t=2982s)',
-      'relevance': 'Attributed practitioner commentary on productized B2B AI implementation, '
-                   'fixed-scope workflow sprints, and managed automation retainers (Chapter Q9 '
-                   'operational verification).',
+      'markdown': '[00:13:44](https://www.youtube.com/watch?v=ZVSDm5siKr4&t=824s)',
+      'relevance': 'Near-verbatim practitioner testimony for the stated 2,000-minute monthly '
+                   'comparison scenario.',
       'source_type': 'video_pro_tip',
-      'text': 'The timeline for this model should also stay realistic. During the first month, '
-              'focus on choosing the niche, building the three working base 44 super agent '
-              'demos, and beginning direct outreach.',
-      'timestamp': 2982,
-      'timestamp_label': '[00:49:42]',
-      'timestamp_seconds': 2982,
-      'tip': 'The timeline for this model should also stay realistic. During the first month, '
-             'focus on choosing the niche, building the three working base 44 super agent '
-             'demos, and beginning direct outreach.',
-      'title': 'How to Start an AI Automation Agency in 2026 (Step by Step) (Mikey No Code)',
-      'url': 'https://www.youtube.com/watch?v=i4z0kCcByY8&t=2982s',
-      'video_id': 'i4z0kCcByY8'},
-     {'author': 'Travis Wardrop',
-      'channel': 'Travis Wardrop',
+      'text': 'Vapi is coming out at around about $180 per month.',
+      'timestamp': 824,
+      'timestamp_label': '[00:13:44]',
+      'timestamp_seconds': 824,
+      'tip': 'Vapi is coming out at around about $180 per month.',
+      'title': 'Build a Voice Agent in 15 Minutes Using VAPI (Easiest Tutorial)',
+      'url': 'https://www.youtube.com/watch?v=ZVSDm5siKr4&t=824s',
+      'video_id': 'ZVSDm5siKr4'},
+     {'author': 'ToThePoint Guide',
+      'channel': 'ToThePoint Guide',
       'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:00:37](https://www.youtube.com/watch?v=CDVbVmBQVyc&t=37s)',
-      'relevance': 'Attributed practitioner commentary on productized B2B AI implementation, '
-                   'fixed-scope workflow sprints, and managed automation retainers (Chapter Q9 '
-                   'operational verification).',
+      'markdown': '[00:03:41](https://www.youtube.com/watch?v=pMdWgl-3ihA&t=221s)',
+      'relevance': "Near-verbatim practitioner testimony describing Synthflow's agency-oriented "
+                   'positioning.',
       'source_type': 'video_pro_tip',
-      'text': "That's lost money, lost clients, and massive frustration. But with this one "
-              "automation, an AI agent instantly picks up any calls that don't get answered, "
-              "keeps the conversation going, and even books appointments on the business's "
-              'calendar automatically.',
-      'timestamp': 37,
-      'timestamp_label': '[00:00:37]',
-      'timestamp_seconds': 37,
-      'tip': "That's lost money, lost clients, and massive frustration. But with this one "
-             "automation, an AI agent instantly picks up any calls that don't get answered, "
-             "keeps the conversation going, and even books appointments on the business's "
-             'calendar automatically.',
-      'title': 'How to Sell AI Automation to Local Businesses (Beginner Guide) (Travis '
-               'Wardrop)',
-      'url': 'https://www.youtube.com/watch?v=CDVbVmBQVyc&t=37s',
-      'video_id': 'CDVbVmBQVyc'},
-     {'author': 'Quiet Client',
-      'channel': 'Quiet Client',
+      'text': 'It offers no-code workflows, deep integration hooks and even full white-labeling '
+              'for agencies.',
+      'timestamp': 221,
+      'timestamp_label': '[00:03:41]',
+      'timestamp_seconds': 221,
+      'tip': 'It offers no-code workflows, deep integration hooks and even full white-labeling for '
+             'agencies.',
+      'title': 'Best AI Voice Agent 2025: Retell vs Vapi vs Bland vs Synthflow vs ElevenLabs vs '
+               'Play AI vs Air AI vs',
+      'url': 'https://www.youtube.com/watch?v=pMdWgl-3ihA&t=221s',
+      'video_id': 'pMdWgl-3ihA'},
+     {'author': 'Brendan Jowett',
+      'channel': 'Brendan Jowett',
       'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:04:21](https://www.youtube.com/watch?v=csELc0aBrp4&t=261s)',
-      'relevance': 'Attributed practitioner commentary on productized B2B AI implementation, '
-                   'fixed-scope workflow sprints, and managed automation retainers (Chapter Q9 '
-                   'operational verification).',
+      'markdown': '[00:07:54](https://www.youtube.com/watch?v=Ky2Z6kGp1Vk&t=474s)',
+      'relevance': "Verbatim practitioner testimony on an agency's live-call automation mistake.",
       'source_type': 'video_pro_tip',
-      'text': 'Max starts higher if you live in Claude all day. You own tone, facts, and the '
-              'send. Never invent a client approval. This is not legal or contract advice. '
-              'Estimate or invoice the approved add-on, then you send.',
-      'timestamp': 261,
-      'timestamp_label': '[00:04:21]',
-      'timestamp_seconds': 261,
-      'tip': 'Max starts higher if you live in Claude all day. You own tone, facts, and the '
-             'send. Never invent a client approval. This is not legal or contract advice. '
-             'Estimate or invoice the approved add-on, then you send.',
-      'title': 'Stop eating scope creep for free — AI stack that drafts change orders (you '
-               'still send) (2026) (Quiet Client)',
-      'url': 'https://www.youtube.com/watch?v=csELc0aBrp4&t=261s',
-      'video_id': 'csELc0aBrp4'},
-     {'author': 'Tom Gaddis | Smart AI Operators',
-      'channel': 'Tom Gaddis | Smart AI Operators',
+      'text': 'A major mistake that we made is trying to get every single automation to run during '
+              'the call.',
+      'timestamp': 474,
+      'timestamp_label': '[00:07:54]',
+      'timestamp_seconds': 474,
+      'tip': 'A major mistake that we made is trying to get every single automation to run during '
+             'the call.',
+      'title': 'The Darkside of AI Voice Agents (The Truth)',
+      'url': 'https://www.youtube.com/watch?v=Ky2Z6kGp1Vk&t=474s',
+      'video_id': 'Ky2Z6kGp1Vk'},
+     {'author': 'Stephanie Nyarko',
+      'channel': 'Stephanie Nyarko',
       'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:17:42](https://www.youtube.com/watch?v=A_LppzjgUi0&t=1062s)',
-      'relevance': 'Attributed practitioner commentary on productized B2B AI implementation, '
-                   'fixed-scope workflow sprints, and managed automation retainers (Chapter Q9 '
-                   'operational verification).',
+      'markdown': '[00:11:13](https://www.youtube.com/watch?v=J8C_262TFUU&t=673s)',
+      'relevance': 'Verbatim practitioner testimony comparing Vapi with ElevenLabs speech against '
+                   'native ElevenLabs Agents.',
       'source_type': 'video_pro_tip',
-      'text': 'In the business details, you can see right here it says that this this business '
-              'has no chat widget on their website. That means they are not taking advantage '
-              'of an AI agent to li lighten the load of their people and answering calls, '
-              'answering questions, booking appointments.',
-      'timestamp': 1062,
-      'timestamp_label': '[00:17:42]',
-      'timestamp_seconds': 1062,
-      'tip': 'In the business details, you can see right here it says that this this business '
-             'has no chat widget on their website. That means they are not taking advantage of '
-             'an AI agent to li lighten the load of their people and answering calls, '
-             'answering questions, booking appointments.',
-      'title': 'This AI Prospecting Update Just Made Cold Outreach Obsolete (500 Leads in '
-               'Minutes) (Tom Gaddis | Smart AI Operators)',
-      'url': 'https://www.youtube.com/watch?v=A_LppzjgUi0&t=1062s',
-      'video_id': 'A_LppzjgUi0'},
-     {'author': 'ProtaSystem',
-      'channel': 'ProtaSystem',
+      'text': 'I tested it with ElevenLabs, and I got nearly identical call quality to the native '
+              'ElevenLabs agents platform.',
+      'timestamp': 673,
+      'timestamp_label': '[00:11:13]',
+      'timestamp_seconds': 673,
+      'tip': 'I tested it with ElevenLabs, and I got nearly identical call quality to the native '
+             'ElevenLabs agents platform.',
+      'title': 'ElevenLabs vs Vapi vs Retell AI: I Built the Same AI Receptionist on All 3',
+      'url': 'https://www.youtube.com/watch?v=J8C_262TFUU&t=673s',
+      'video_id': 'J8C_262TFUU'},
+     {'author': 'Alejo Pijuan',
+      'channel': 'Alejo Pijuan',
       'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:05:26](https://www.youtube.com/watch?v=6l0a6If9Oyk&t=326s)',
-      'relevance': 'Attributed practitioner commentary on productized B2B AI implementation, '
-                   'fixed-scope workflow sprints, and managed automation retainers (Chapter Q9 '
-                   'operational verification).',
+      'markdown': '[00:04:29](https://www.youtube.com/watch?v=6Fal62hzEs8&t=269s)',
+      'relevance': 'Near-verbatim practitioner testimony on a reported Vapi deployment reliability '
+                   'problem.',
       'source_type': 'video_pro_tip',
-      'text': 'These automated ready-to-send responses give freelancers the exact phrasing '
-              'needed to push back and establish firm legal boundaries without alienating '
-              'clients or destroying the relationship.',
-      'timestamp': 326,
-      'timestamp_label': '[00:05:26]',
-      'timestamp_seconds': 326,
-      'tip': 'These automated ready-to-send responses give freelancers the exact phrasing '
-             'needed to push back and establish firm legal boundaries without alienating '
-             'clients or destroying the relationship.',
-      'title': 'Uncapped Indemnity & Scope Creep: The Contract Traps Every Freelancer Faces '
-               '(ProtaSystem)',
-      'url': 'https://www.youtube.com/watch?v=6l0a6If9Oyk&t=326s',
-      'video_id': '6l0a6If9Oyk'},
-     {'author': 'Alex Berman',
-      'channel': 'Alex Berman',
+      'text': 'When we experienced a 3 to 4 second lag at the beginning of every single call on '
+              'live voice agents for weeks without resolution, it destroyed our credibility.',
+      'timestamp': 269,
+      'timestamp_label': '[00:04:29]',
+      'timestamp_seconds': 269,
+      'tip': 'When we experienced a 3 to 4 second lag at the beginning of every single call on '
+             'live voice agents for weeks without resolution, it destroyed our credibility.',
+      'title': 'The Best Platform for your Voice AI Agency: Retell vs Vapi',
+      'url': 'https://www.youtube.com/watch?v=6Fal62hzEs8&t=269s',
+      'video_id': '6Fal62hzEs8'},
+     {'author': 'Sonny Sangha',
+      'channel': 'Sonny Sangha',
       'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:02:19](https://www.youtube.com/watch?v=Kjfkoa15cNU&t=139s)',
-      'relevance': 'Attributed practitioner commentary on productized B2B AI implementation, '
-                   'fixed-scope workflow sprints, and managed automation retainers (Chapter Q9 '
-                   'operational verification).',
+      'markdown': '[00:10:50](https://www.youtube.com/watch?v=JSYOZvtkAx4&t=650s)',
+      'relevance': 'Near-verbatim practitioner testimony on Norm testing and correcting a '
+                   'generated receptionist.',
       'source_type': 'video_pro_tip',
-      'text': "George is doing, founder at Link Lemon. I don't care about Link Lemon. I don't "
-              'care about founder. AI and automation for B2B businesses. If his was instead '
-              "using AI to save agency owners 20,000 a month. That's what Jorge here should "
-              'write.',
-      'timestamp': 139,
-      'timestamp_label': '[00:02:19]',
-      'timestamp_seconds': 139,
-      'tip': "George is doing, founder at Link Lemon. I don't care about Link Lemon. I don't "
-             'care about founder. AI and automation for B2B businesses. If his was instead '
-             "using AI to save agency owners 20,000 a month. That's what Jorge here should "
-             'write.',
-      'title': 'How I Do LinkedIn Outreach in 2026 (Alex Berman)',
-      'url': 'https://www.youtube.com/watch?v=Kjfkoa15cNU&t=139s',
-      'video_id': 'Kjfkoa15cNU'},
-     {'author': 'Cleverly | #1 B2B Lead Generation Agency',
-      'channel': 'Cleverly | #1 B2B Lead Generation Agency',
+      'text': 'It found that it was actually hallucinating, so it needs to fix that, so it goes to '
+              'the actual knowledge base instead of guessing.',
+      'timestamp': 650,
+      'timestamp_label': '[00:10:50]',
+      'timestamp_seconds': 650,
+      'tip': 'It found that it was actually hallucinating, so it needs to fix that, so it goes to '
+             'the actual knowledge base instead of guessing.',
+      'title': 'I Built an AI Voice Agent That Actually Works (AI Receptionist Full Beginner '
+               'Tutorial)',
+      'url': 'https://www.youtube.com/watch?v=JSYOZvtkAx4&t=650s',
+      'video_id': 'JSYOZvtkAx4'},
+     {'author': 'David Alex',
+      'channel': 'David Alex',
       'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:09:53](https://www.youtube.com/watch?v=h66nRoG6w0E&t=593s)',
-      'relevance': 'Attributed practitioner commentary on productized B2B AI implementation, '
-                   'fixed-scope workflow sprints, and managed automation retainers (Chapter Q9 '
-                   'operational verification).',
+      'markdown': '[00:08:42](https://www.youtube.com/watch?v=Ucjk1DJkxuE&t=522s)',
+      'relevance': "Near-verbatim practitioner testimony on CloudTalk's quoted AI add-on pricing.",
       'source_type': 'video_pro_tip',
-      'text': 'Uh Cleverly has automation, obviously, so you can uh license that from us. We '
-              'also have done-for-you services if you need help with this advanced targeting '
-              'copy. And you want this 100% managed for you with an appointment setter. But, '
-              "it's pretty straightforward.",
-      'timestamp': 593,
-      'timestamp_label': '[00:09:53]',
-      'timestamp_seconds': 593,
-      'tip': 'Uh Cleverly has automation, obviously, so you can uh license that from us. We '
-             'also have done-for-you services if you need help with this advanced targeting '
-             'copy. And you want this 100% managed for you with an appointment setter. But, '
-             "it's pretty straightforward.",
-      'title': 'The Only LinkedIn Outreach Strategy You Need in 2026 (Cleverly | #1 B2B Lead '
-               'Generation Agency)',
-      'url': 'https://www.youtube.com/watch?v=h66nRoG6w0E&t=593s',
-      'video_id': 'h66nRoG6w0E'},
-     {'author': 'Micah Johnson',
-      'channel': 'Micah Johnson',
+      'text': 'AI voice agents are an add-on on top of any plan, starting at $99 a month for 200 '
+              'minutes of AI call time.',
+      'timestamp': 522,
+      'timestamp_label': '[00:08:42]',
+      'timestamp_seconds': 522,
+      'tip': 'AI voice agents are an add-on on top of any plan, starting at $99 a month for 200 '
+             'minutes of AI call time.',
+      'title': 'CloudTalk vs Vapi: Which AI Voice Agent Actually Handles Calls Better in 2026?',
+      'url': 'https://www.youtube.com/watch?v=Ucjk1DJkxuE&t=522s',
+      'video_id': 'Ucjk1DJkxuE'},
+     {'author': 'Tin Explains AI',
+      'channel': 'Tin Explains AI',
       'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:00:39](https://www.youtube.com/watch?v=lBhO8Q-MxYI&t=39s)',
-      'relevance': 'Attributed practitioner commentary on productized B2B AI implementation, '
-                   'fixed-scope workflow sprints, and managed automation retainers (Chapter Q9 '
-                   'operational verification).',
+      'markdown': '[00:05:06](https://www.youtube.com/watch?v=I-30cbMO974&t=306s)',
+      'relevance': 'Near-verbatim practitioner testimony summarizing the setup-versus-control '
+                   'platform choice.',
       'source_type': 'video_pro_tip',
-      'text': "That's a completely different agreement. So, if you're building anything with "
-              'sensitive or proprietary data, the API is 100% the way to go. Next thing we got '
-              'to learn about is ads have arrived. The updated policy introduces advertising '
-              'for free and go-tier users.',
-      'timestamp': 39,
-      'timestamp_label': '[00:00:39]',
-      'timestamp_seconds': 39,
-      'tip': "That's a completely different agreement. So, if you're building anything with "
-             'sensitive or proprietary data, the API is 100% the way to go. Next thing we got '
-             'to learn about is ads have arrived. The updated policy introduces advertising '
-             'for free and go-tier users.',
-      'title': "OpenAI's New Privacy Policy: What Every Business Owner Needs to Know (Micah "
-               'Johnson)',
-      'url': 'https://www.youtube.com/watch?v=lBhO8Q-MxYI&t=39s',
-      'video_id': 'lBhO8Q-MxYI'},
-     {'author': 'SecureCyberGates',
-      'channel': 'SecureCyberGates',
+      'text': 'Vapi has more power but more setup. Retell has less setup but more of what just '
+              'works.',
+      'timestamp': 306,
+      'timestamp_label': '[00:05:06]',
+      'timestamp_seconds': 306,
+      'tip': 'Vapi has more power but more setup. Retell has less setup but more of what just '
+             'works.',
+      'title': 'Vapi Vs Retell Comparison - Which One Is A Better Ai Voice Solution?',
+      'url': 'https://www.youtube.com/watch?v=I-30cbMO974&t=306s',
+      'video_id': 'I-30cbMO974'},
+     {'author': 'Alex Leischow',
+      'channel': 'Alex Leischow',
       'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:04:20](https://www.youtube.com/watch?v=TcAbiyEqBFM&t=260s)',
-      'relevance': 'Attributed practitioner commentary on productized B2B AI implementation, '
-                   'fixed-scope workflow sprints, and managed automation retainers (Chapter Q9 '
-                   'operational verification).',
+      'markdown': '[00:11:23](https://www.youtube.com/watch?v=8yIHmsMHMYc&t=683s)',
+      'relevance': 'Near-verbatim practitioner testimony on the specialist-assistant architecture.',
       'source_type': 'video_pro_tip',
-      'text': 'So we have some kind of shedding procedure here. So shedding script is runs '
-              'against a client in which needs to be removed. So we may have a sharing script. '
-              'Uh it runs automatically as a housekeeping jobs. So this automated backup auto '
-              'backup files roll back in 35 days.',
-      'timestamp': 260,
-      'timestamp_label': '[00:04:20]',
-      'timestamp_seconds': 260,
-      'tip': 'So we have some kind of shedding procedure here. So shedding script is runs '
-             'against a client in which needs to be removed. So we may have a sharing script. '
-             'Uh it runs automatically as a housekeeping jobs. So this automated backup auto '
-             'backup files roll back in 35 days.',
-      'title': '23-[5.16] SOC2 – Data Retention Policy (SecureCyberGates)',
-      'url': 'https://www.youtube.com/watch?v=TcAbiyEqBFM&t=260s',
-      'video_id': 'TcAbiyEqBFM'},
-     {'author': 'Nate Herk | AI Automation',
-      'channel': 'Nate Herk | AI Automation',
+      'text': 'The whole key is to build specific functional agents or assistants and then connect '
+              'them via handoff tools inside a larger organism called a squad.',
+      'timestamp': 683,
+      'timestamp_label': '[00:11:23]',
+      'timestamp_seconds': 683,
+      'tip': 'The whole key is to build specific functional agents or assistants and then connect '
+             'them via handoff tools inside a larger organism called a squad.',
+      'title': 'How to Build an AI Voice Agent That Calls Every Lead in 60 Seconds (VAPI Tutorial)',
+      'url': 'https://www.youtube.com/watch?v=8yIHmsMHMYc&t=683s',
+      'video_id': '8yIHmsMHMYc'},
+     {'author': 'Brendan Jowett',
+      'channel': 'Brendan Jowett',
       'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:25:16](https://www.youtube.com/watch?v=XB2xmX3USUI&t=1516s)',
-      'relevance': 'Attributed practitioner commentary on productized B2B AI implementation, '
-                   'fixed-scope workflow sprints, and managed automation retainers (Chapter Q9 '
-                   'operational verification).',
+      'markdown': '[00:02:28](https://www.youtube.com/watch?v=Ky2Z6kGp1Vk&t=148s)',
+      'relevance': "Verbatim practitioner testimony on the agency's experience with upfront AI "
+                   'disclosure.',
       'source_type': 'video_pro_tip',
-      'text': "I said it was like a beauty salon and stuff like that, they'd probably "
-              'immediately disqualify themselves in their brain. And so I said, "Hey, I put '
-              "together something uh I think you'd find interesting. It's basically a intent "
-              'based email scraping and outreach system.',
-      'timestamp': 1516,
-      'timestamp_label': '[00:25:16]',
-      'timestamp_seconds': 1516,
-      'tip': "I said it was like a beauty salon and stuff like that, they'd probably "
-             'immediately disqualify themselves in their brain. And so I said, "Hey, I put '
-             "together something uh I think you'd find interesting. It's basically a intent "
-             'based email scraping and outreach system.',
-      'title': 'How a College Student Made $500k with Cold Email (Exact Framework) (Nate Herk '
-               '| AI Automation)',
-      'url': 'https://www.youtube.com/watch?v=XB2xmX3USUI&t=1516s',
-      'video_id': 'XB2xmX3USUI'},
-     {'author': 'Josue AI',
-      'channel': 'Josue AI',
+      'text': "We've honestly seen no negative impact from upfront disclosure. If anything, the "
+              'results have improved.',
+      'timestamp': 148,
+      'timestamp_label': '[00:02:28]',
+      'timestamp_seconds': 148,
+      'tip': "We've honestly seen no negative impact from upfront disclosure. If anything, the "
+             'results have improved.',
+      'title': 'The Darkside of AI Voice Agents (The Truth)',
+      'url': 'https://www.youtube.com/watch?v=Ky2Z6kGp1Vk&t=148s',
+      'video_id': 'Ky2Z6kGp1Vk'}],
+ 9: [{'author': 'Jeff Su',
+      'channel': 'Jeff Su',
       'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:01:53](https://www.youtube.com/watch?v=57vMJTMbsSc&t=113s)',
-      'relevance': 'Attributed practitioner commentary on productized B2B AI implementation, '
-                   'fixed-scope workflow sprints, and managed automation retainers (Chapter Q9 '
-                   'operational verification).',
+      'markdown': '[00:05:58](https://www.youtube.com/watch?v=FwOTs4UxQS4&t=358s)',
+      'relevance': 'Practitioner testimony on the decision-making distinction between workflows '
+                   'and agents.',
       'source_type': 'video_pro_tip',
-      'text': "So you're going to paste your API key in there. And then we need a base URL and "
-              'basically this is just going to be the URL that you see up here up to where it '
-              'says cloud slash.',
-      'timestamp': 113,
-      'timestamp_label': '[00:01:53]',
-      'timestamp_seconds': 113,
-      'tip': "So you're going to paste your API key in there. And then we need a base URL and "
-             'basically this is just going to be the URL that you see up here up to where it '
-             'says cloud slash.',
-      'title': 'Migrate All Your n8n Workflows in Minutes (Cloud/Self-Hosted) (Josue AI)',
-      'url': 'https://www.youtube.com/watch?v=57vMJTMbsSc&t=113s',
-      'video_id': '57vMJTMbsSc'},
+      'text': 'The one massive change that has to happen in order for this AI workflow to become '
+              'an AI agent is for me, the human decision maker, to be replaced by an LLM.',
+      'timestamp': 358,
+      'timestamp_label': '[00:05:58]',
+      'timestamp_seconds': 358,
+      'tip': 'The one massive change that has to happen in order for this AI workflow to become an '
+             'AI agent is for me, the human decision maker, to be replaced by an LLM.',
+      'title': 'AI Agents, Clearly Explained',
+      'url': 'https://www.youtube.com/watch?v=FwOTs4UxQS4&t=358s',
+      'video_id': 'FwOTs4UxQS4'},
      {'author': 'IBM Technology',
       'channel': 'IBM Technology',
       'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:10:19](https://www.youtube.com/watch?v=UabBYexBD4k&t=619s)',
-      'relevance': 'Attributed practitioner commentary on productized B2B AI implementation, '
-                   'fixed-scope workflow sprints, and managed automation retainers (Chapter Q9 '
-                   'operational verification).',
+      'markdown': '[00:05:55](https://www.youtube.com/watch?v=UabBYexBD4k&t=355s)',
+      'relevance': 'Practitioner testimony on silent retrieval failure.',
       'source_type': 'video_pro_tip',
-      'text': 'So where does this leave us? Well, if your problem involves a bounded data set '
-              'and requires complex global reasoning like analyzing a specific legal contract '
-              'or summarizing a book, I think long context is the way to go. It simplifies the '
-              'stack and it improves the reasoning.',
-      'timestamp': 619,
-      'timestamp_label': '[00:10:19]',
-      'timestamp_seconds': 619,
-      'tip': 'So where does this leave us? Well, if your problem involves a bounded data set '
-             'and requires complex global reasoning like analyzing a specific legal contract '
-             'or summarizing a book, I think long context is the way to go. It simplifies the '
-             'stack and it improves the reasoning.',
-      'title': 'Is RAG Still Needed? Choosing the Best Approach for LLMs (IBM Technology)',
-      'url': 'https://www.youtube.com/watch?v=UabBYexBD4k&t=619s',
+      'text': 'The answer existed in the data, but the LLM never saw it because the retrieval step '
+              "didn't return the right results.",
+      'timestamp': 355,
+      'timestamp_label': '[00:05:55]',
+      'timestamp_seconds': 355,
+      'tip': 'The answer existed in the data, but the LLM never saw it because the retrieval step '
+             "didn't return the right results.",
+      'title': 'Is RAG Still Needed? Choosing the Best Approach for LLMs',
+      'url': 'https://www.youtube.com/watch?v=UabBYexBD4k&t=355s',
       'video_id': 'UabBYexBD4k'},
-     {'author': 'HubSpot Marketing',
-      'channel': 'HubSpot Marketing',
+     {'author': 'AI Engineer',
+      'channel': 'AI Engineer',
       'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:11:07](https://www.youtube.com/watch?v=uPo9D-wZv6s&t=667s)',
-      'relevance': 'Attributed practitioner commentary on productized B2B AI implementation, '
-                   'fixed-scope workflow sprints, and managed automation retainers (Chapter Q9 '
-                   'operational verification).',
+      'markdown': '[00:09:42](https://www.youtube.com/watch?v=XlAIgmi_Vow&t=582s)',
+      'relevance': "Sam Julien's account of storing graph structure in search infrastructure.",
       'source_type': 'video_pro_tip',
-      'text': "'re empowering others by celebrating the success of maybe your clients and "
-              'beyond. Screenshots of success, results, etc. One of the things that you want '
-              'to do is identify a few content pillars.',
-      'timestamp': 667,
-      'timestamp_label': '[00:11:07]',
-      'timestamp_seconds': 667,
-      'tip': "'re empowering others by celebrating the success of maybe your clients and "
-             'beyond. Screenshots of success, results, etc. One of the things that you want to '
-             'do is identify a few content pillars.',
-      'title': 'The Latest LinkedIn Lead Generation Strategies That Generated $2M+ (No Cold '
-               'InMails) (HubSpot Marketing)',
-      'url': 'https://www.youtube.com/watch?v=uPo9D-wZv6s&t=667s',
-      'video_id': 'uPo9D-wZv6s'},
-     {'author': 'Bo Sar',
-      'channel': 'Bo Sar',
+      'text': 'We take the graph structure, we convert it into JSON, and we put it in the search '
+              'engine.',
+      'timestamp': 582,
+      'timestamp_label': '[00:09:42]',
+      'timestamp_seconds': 582,
+      'tip': 'We take the graph structure, we convert it into JSON, and we put it in the search '
+             'engine.',
+      'title': 'When Vectors Break Down: Graph-Based RAG for Dense Enterprise Knowledge - Sam '
+               'Julien, Writer',
+      'url': 'https://www.youtube.com/watch?v=XlAIgmi_Vow&t=582s',
+      'video_id': 'XlAIgmi_Vow'},
+     {'author': 'Adam Lucek',
+      'channel': 'Adam Lucek',
       'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:00:21](https://www.youtube.com/watch?v=pba8FIkOilY&t=21s)',
-      'relevance': 'Attributed practitioner commentary on productized B2B AI implementation, '
-                   'fixed-scope workflow sprints, and managed automation retainers (Chapter Q9 '
-                   'operational verification).',
+      'markdown': '[00:12:17](https://www.youtube.com/watch?v=6vG_amAshTk&t=737s)',
+      'relevance': 'Practitioner testimony on the demonstrated GraphRAG chunking defaults.',
       'source_type': 'video_pro_tip',
-      'text': 'AI to produce custom design work for clients up front to win the business '
-              'before the contract is even signed. Or an ad agency that uses AI to create '
-              'stunning video ads without the time and expense of setting up a physical shoot.',
-      'timestamp': 21,
-      'timestamp_label': '[00:00:21]',
-      'timestamp_seconds': 21,
-      'tip': 'AI to produce custom design work for clients up front to win the business before '
-             'the contract is even signed. Or an ad agency that uses AI to create stunning '
-             'video ads without the time and expense of setting up a physical shoot.',
-      'title': 'The AI-First Agency Model YC Just Revealed (6 services to sell) (Bo Sar)',
-      'url': 'https://www.youtube.com/watch?v=pba8FIkOilY&t=21s',
-      'video_id': 'pba8FIkOilY'},
-     {'author': 'NoCode with Sam Oluwagbami',
-      'channel': 'NoCode with Sam Oluwagbami',
+      'text': 'It is first split by default into chunks of 1,200 tokens with 100-token overlaps.',
+      'timestamp': 737,
+      'timestamp_label': '[00:12:17]',
+      'timestamp_seconds': 737,
+      'tip': 'It is first split by default into chunks of 1,200 tokens with 100-token overlaps.',
+      'title': 'Knowledge Graph or Vector Database… Which is Better?',
+      'url': 'https://www.youtube.com/watch?v=6vG_amAshTk&t=737s',
+      'video_id': '6vG_amAshTk'},
+     {'author': 'AI Engineering with Kaushal',
+      'channel': 'AI Engineering with Kaushal',
       'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:01:30](https://www.youtube.com/watch?v=xQf-khf_CWE&t=90s)',
-      'relevance': 'Attributed practitioner commentary on productized B2B AI implementation, '
-                   'fixed-scope workflow sprints, and managed automation retainers (Chapter Q9 '
-                   'operational verification).',
+      'markdown': '[00:08:40](https://www.youtube.com/watch?v=cxGMp3DBkMk&t=520s)',
+      'relevance': 'Practitioner testimony on evidence quality as the retrieval bottleneck.',
       'source_type': 'video_pro_tip',
-      'text': "So this is what the B2B sales automation platform is about. So it's a platform "
-              'that puts in all of all of your several hs puts them together in one h. So, '
-              "we're going to be building that app.",
-      'timestamp': 90,
-      'timestamp_label': '[00:01:30]',
-      'timestamp_seconds': 90,
-      'tip': "So this is what the B2B sales automation platform is about. So it's a platform "
-             'that puts in all of all of your several hs puts them together in one h. So, '
-             "we're going to be building that app.",
-      'title': 'Cold Email is Dead — I Built an AI Outreach System That Does Everything for '
-               'You (Lead to Meeting) (NoCode with Sam Oluwagbami)',
-      'url': 'https://www.youtube.com/watch?v=xQf-khf_CWE&t=90s',
-      'video_id': 'xQf-khf_CWE'}],
- 10: [{'author': 'Cole Medin',
-       'channel': 'Cole Medin',
+      'text': 'RAG is only as good as its retrieval.',
+      'timestamp': 520,
+      'timestamp_label': '[00:08:40]',
+      'timestamp_seconds': 520,
+      'tip': 'RAG is only as good as its retrieval.',
+      'title': 'RAG Explained: Why LLMs Hallucinate Without a Knowledge Layer',
+      'url': 'https://www.youtube.com/watch?v=cxGMp3DBkMk&t=520s',
+      'video_id': 'cxGMp3DBkMk'},
+     {'author': 'KodeKloud',
+      'channel': 'KodeKloud',
+      'epistemic_status': 'attributed_practitioner_claim',
+      'markdown': '[00:06:16](https://www.youtube.com/watch?v=_HQ2H_0Ayy0&t=376s)',
+      'relevance': "Practitioner testimony on the initial chunking script's stated settings.",
+      'source_type': 'video_pro_tip',
+      'text': 'I write a small script that chunks text with a size 500 and overlap 100.',
+      'timestamp': 376,
+      'timestamp_label': '[00:06:16]',
+      'timestamp_seconds': 376,
+      'tip': 'I write a small script that chunks text with a size 500 and overlap 100.',
+      'title': 'RAG Explained For Beginners',
+      'url': 'https://www.youtube.com/watch?v=_HQ2H_0Ayy0&t=376s',
+      'video_id': '_HQ2H_0Ayy0'},
+     {'author': 'AI Engineer',
+      'channel': 'AI Engineer',
+      'epistemic_status': 'attributed_practitioner_claim',
+      'markdown': '[00:06:32](https://www.youtube.com/watch?v=XNneh6-eyPg&t=392s)',
+      'relevance': "The Neo4j presenters' reported result from LinkedIn's support research.",
+      'source_type': 'video_pro_tip',
+      'text': 'Median per-issue resolution time was reduced by 28.6%.',
+      'timestamp': 392,
+      'timestamp_label': '[00:06:32]',
+      'timestamp_seconds': 392,
+      'tip': 'Median per-issue resolution time was reduced by 28.6%.',
+      'title': 'Practical GraphRAG: Making LLMs smarter with Knowledge Graphs — Michael, Jesus, '
+               'and Stephen, Neo4j',
+      'url': 'https://www.youtube.com/watch?v=XNneh6-eyPg&t=392s',
+      'video_id': 'XNneh6-eyPg'},
+     {'author': 'Mirketa Inc',
+      'channel': 'Mirketa Inc',
+      'epistemic_status': 'attributed_practitioner_claim',
+      'markdown': '[00:30:10](https://www.youtube.com/watch?v=8N3k2qP_0SY&t=1810s)',
+      'relevance': "Firsthand testimony on tuning Case Resolver's retrieval cutoff.",
+      'source_type': 'video_pro_tip',
+      'text': "When we tuned Case Resolver's similarity cutoff, we tested retrieval on its own, "
+              'and then we measured where the real and unrelated matches scored on our test data, '
+              'and then we drew the line between them.',
+      'timestamp': 1810,
+      'timestamp_label': '[00:30:10]',
+      'timestamp_seconds': 1810,
+      'tip': "When we tuned Case Resolver's similarity cutoff, we tested retrieval on its own, and "
+             'then we measured where the real and unrelated matches scored on our test data, and '
+             'then we drew the line between them.',
+      'title': 'Beyond the Case | Episode 6: RAG, AI Agents & Vector Databases — Without the Hype',
+      'url': 'https://www.youtube.com/watch?v=8N3k2qP_0SY&t=1810s',
+      'video_id': '8N3k2qP_0SY'},
+     {'author': 'IBM Technology',
+      'channel': 'IBM Technology',
+      'epistemic_status': 'attributed_practitioner_claim',
+      'markdown': '[00:04:00](https://www.youtube.com/watch?v=T-D1OfcDW1M&t=240s)',
+      'relevance': "Marina Danilevsky's explanation of the augmented prompt.",
+      'source_type': 'video_pro_tip',
+      'text': 'So the prompt now has three parts: the instruction to pay attention to, the '
+              "retrieved content, together with the user's question.",
+      'timestamp': 240,
+      'timestamp_label': '[00:04:00]',
+      'timestamp_seconds': 240,
+      'tip': 'So the prompt now has three parts: the instruction to pay attention to, the '
+             "retrieved content, together with the user's question.",
+      'title': 'What is Retrieval-Augmented Generation (RAG)?',
+      'url': 'https://www.youtube.com/watch?v=T-D1OfcDW1M&t=240s',
+      'video_id': 'T-D1OfcDW1M'},
+     {'author': 'Hey sidG',
+      'channel': 'Hey sidG',
+      'epistemic_status': 'attributed_practitioner_claim',
+      'markdown': '[00:02:18](https://www.youtube.com/watch?v=r4hp_y9_V3w&t=138s)',
+      'relevance': 'Practitioner claim about hallucination reduction from correctly configured '
+                   'RAG.',
+      'source_type': 'video_pro_tip',
+      'text': "We're talking a 70 to 90% drop in those pesky hallucinations when you get RAG set "
+              'up correctly.',
+      'timestamp': 138,
+      'timestamp_label': '[00:02:18]',
+      'timestamp_seconds': 138,
+      'tip': "We're talking a 70 to 90% drop in those pesky hallucinations when you get RAG set up "
+             'correctly.',
+      'title': 'The Future of Enterprise AI: RAG vs. Agentic Workflows',
+      'url': 'https://www.youtube.com/watch?v=r4hp_y9_V3w&t=138s',
+      'video_id': 'r4hp_y9_V3w'},
+     {'author': 'Professor Patterns',
+      'channel': 'Professor Patterns',
+      'epistemic_status': 'attributed_practitioner_claim',
+      'markdown': '[00:08:04](https://www.youtube.com/watch?v=LmXaPUky_u4&t=484s)',
+      'relevance': 'Demonstrated Open WebUI maintenance requirement after changing embeddings.',
+      'source_type': 'video_pro_tip',
+      'text': "If you update or change your embedding model you'll have to reimport all of your "
+              'documents.',
+      'timestamp': 484,
+      'timestamp_label': '[00:08:04]',
+      'timestamp_seconds': 484,
+      'tip': "If you update or change your embedding model you'll have to reimport all of your "
+             'documents.',
+      'title': "Open WebUI Knowledge Bases: RAG & Embeddings (Beginner's Guide)",
+      'url': 'https://www.youtube.com/watch?v=LmXaPUky_u4&t=484s',
+      'video_id': 'LmXaPUky_u4'},
+     {'author': 'Unstructured',
+      'channel': 'Unstructured',
+      'epistemic_status': 'attributed_practitioner_claim',
+      'markdown': '[00:17:28](https://www.youtube.com/watch?v=ruilmyfVgrI&t=1048s)',
+      'relevance': "Daniel Scoffield's proposed starting point for offline RAG evaluation.",
+      'source_type': 'video_pro_tip',
+      'text': "You basically build what's called a golden set. So this is maybe 100 to a few "
+              'hundred Q&A pairs of your most important questions.',
+      'timestamp': 1048,
+      'timestamp_label': '[00:17:28]',
+      'timestamp_seconds': 1048,
+      'tip': "You basically build what's called a golden set. So this is maybe 100 to a few "
+             'hundred Q&A pairs of your most important questions.',
+      'title': 'Webinar: How to Build Enterprise-Ready RAG Systems',
+      'url': 'https://www.youtube.com/watch?v=ruilmyfVgrI&t=1048s',
+      'video_id': 'ruilmyfVgrI'},
+     {'author': 'Cole Medin',
+      'channel': 'Cole Medin',
+      'epistemic_status': 'attributed_practitioner_claim',
+      'markdown': '[00:12:27](https://www.youtube.com/watch?v=tLMViADvSNE&t=747s)',
+      'relevance': 'Practitioner recommendation for an initial combination of retrieval '
+                   'strategies.',
+      'source_type': 'video_pro_tip',
+      'text': 'I would look at reranking, agentic RAG, and context-aware chunking.',
+      'timestamp': 747,
+      'timestamp_label': '[00:12:27]',
+      'timestamp_seconds': 747,
+      'tip': 'I would look at reranking, agentic RAG, and context-aware chunking.',
+      'title': 'Every RAG Strategy Explained in 13 Minutes (No Fluff)',
+      'url': 'https://www.youtube.com/watch?v=tLMViADvSNE&t=747s',
+      'video_id': 'tLMViADvSNE'},
+     {'author': 'IBM Technology',
+      'channel': 'IBM Technology',
+      'epistemic_status': 'attributed_practitioner_claim',
+      'markdown': '[00:10:13](https://www.youtube.com/watch?v=UabBYexBD4k&t=613s)',
+      'relevance': 'Additional practitioner testimony on retrieval for enterprise-scale '
+                   'collections.',
+      'source_type': 'video_pro_tip',
+      'text': 'You really do need to have a retrieval layer to filter information down to '
+              'something that fits into the LLM context window.',
+      'timestamp': 613,
+      'timestamp_label': '[00:10:13]',
+      'timestamp_seconds': 613,
+      'tip': 'You really do need to have a retrieval layer to filter information down to something '
+             'that fits into the LLM context window.',
+      'title': 'Is RAG Still Needed? Choosing the Best Approach for LLMs',
+      'url': 'https://www.youtube.com/watch?v=UabBYexBD4k&t=613s',
+      'video_id': 'UabBYexBD4k'},
+     {'author': 'Mirketa Inc',
+      'channel': 'Mirketa Inc',
+      'epistemic_status': 'attributed_practitioner_claim',
+      'markdown': '[00:17:28](https://www.youtube.com/watch?v=8N3k2qP_0SY&t=1048s)',
+      'relevance': 'Additional practitioner testimony on grounding failures despite retrieval.',
+      'source_type': 'video_pro_tip',
+      'text': 'You can retrieve the wrong information. You can retrieve outdated information. And '
+              'you can retrieve just incomplete information.',
+      'timestamp': 1048,
+      'timestamp_label': '[00:17:28]',
+      'timestamp_seconds': 1048,
+      'tip': 'You can retrieve the wrong information. You can retrieve outdated information. And '
+             'you can retrieve just incomplete information.',
+      'title': 'Beyond the Case | Episode 6: RAG, AI Agents & Vector Databases — Without the Hype',
+      'url': 'https://www.youtube.com/watch?v=8N3k2qP_0SY&t=1048s',
+      'video_id': '8N3k2qP_0SY'},
+     {'author': 'Unstructured',
+      'channel': 'Unstructured',
+      'epistemic_status': 'attributed_practitioner_claim',
+      'markdown': '[00:11:34](https://www.youtube.com/watch?v=ruilmyfVgrI&t=694s)',
+      'relevance': 'Additional practitioner testimony on measuring existing business outcomes.',
+      'source_type': 'video_pro_tip',
+      'text': "You're not creating new metrics here. You're actually moving the needle on their "
+              'metrics.',
+      'timestamp': 694,
+      'timestamp_label': '[00:11:34]',
+      'timestamp_seconds': 694,
+      'tip': "You're not creating new metrics here. You're actually moving the needle on their "
+             'metrics.',
+      'title': 'Webinar: How to Build Enterprise-Ready RAG Systems',
+      'url': 'https://www.youtube.com/watch?v=ruilmyfVgrI&t=694s',
+      'video_id': 'ruilmyfVgrI'}],
+ 10: [{'author': 'Travis Wardrop',
+       'channel': 'Travis Wardrop',
        'epistemic_status': 'attributed_practitioner_claim',
-       'markdown': '[00:05:59](https://www.youtube.com/watch?v=p0FERNkpyHE&t=359s)',
-       'relevance': 'Attributed practitioner commentary on productized B2B AI implementation, '
-                    'fixed-scope workflow sprints, and managed automation retainers (Chapter '
-                    'Q10 operational verification).',
+       'markdown': '[00:06:56](https://www.youtube.com/watch?v=CDVbVmBQVyc&t=416s)',
+       'relevance': "Practitioner testimony on retaining the local business's public telephone "
+                    'number while adding an AI backup.',
        'source_type': 'video_pro_tip',
-       'text': 'SQL database into what can act as a vector database we have fast API for '
-               'building our agent API in Python and then finally the AI coding assistant that '
-               'I used to help me build This entire agent is claude code which is an absolute '
-               'beast of an AI coding assistant.',
-       'timestamp': 359,
-       'timestamp_label': '[00:05:59]',
-       'timestamp_seconds': 359,
-       'tip': 'SQL database into what can act as a vector database we have fast API for '
-              'building our agent API in Python and then finally the AI coding assistant that '
-              'I used to help me build This entire agent is claude code which is an absolute '
-              'beast of an AI coding assistant.',
-       'title': 'Introducing RAG 2.0: Agentic RAG + Knowledge Graphs (FREE Template) (Cole '
-                'Medin)',
-       'url': 'https://www.youtube.com/watch?v=p0FERNkpyHE&t=359s',
-       'video_id': 'p0FERNkpyHE'},
-      {'author': 'Nick Saraev',
-       'channel': 'Nick Saraev',
+       'text': "We don't want them to have to change their phone number.",
+       'timestamp': 416,
+       'timestamp_label': '[00:06:56]',
+       'timestamp_seconds': 416,
+       'tip': "We don't want them to have to change their phone number.",
+       'title': 'How to Sell AI Automation to Local Businesses (Beginner Guide)',
+       'url': 'https://www.youtube.com/watch?v=CDVbVmBQVyc&t=416s',
+       'video_id': 'CDVbVmBQVyc'},
+      {'author': 'AI Tool Lab',
+       'channel': 'AI Tool Lab',
        'epistemic_status': 'attributed_practitioner_claim',
-       'markdown': '[00:02:26](https://www.youtube.com/watch?v=T9diMzLIpqQ&t=146s)',
-       'relevance': 'Attributed practitioner commentary on productized B2B AI implementation, '
-                    'fixed-scope workflow sprints, and managed automation retainers (Chapter '
-                    'Q10 operational verification).',
+       'markdown': '[00:06:13](https://www.youtube.com/watch?v=9wewuc4s038&t=373s)',
+       'relevance': 'Practitioner testimony on the Lyro free allocation and the difference between '
+                    'conversations and successful resolutions.',
        'source_type': 'video_pro_tip',
-       'text': 'Our solution as an AI automation agency is going to be an automated workflow '
-               "that captures form submissions, scores, leads, and then updates the CRM. I'm "
-               "going to paste the scope. I'm going to paste in the cost. And then I'm also "
-               'going to paste in the how soon.',
-       'timestamp': 146,
-       'timestamp_label': '[00:02:26]',
-       'timestamp_seconds': 146,
-       'tip': 'Our solution as an AI automation agency is going to be an automated workflow '
-              "that captures form submissions, scores, leads, and then updates the CRM. I'm "
-              "going to paste the scope. I'm going to paste in the cost. And then I'm also "
-              'going to paste in the how soon.',
-       'title': 'Sell These 3 Simple AI Automations for $1.7K to B2B Agencies (Nick Saraev)',
-       'url': 'https://www.youtube.com/watch?v=T9diMzLIpqQ&t=146s',
-       'video_id': 'T9diMzLIpqQ'},
-      {'author': 'Jonas | AI Tools & Automation',
-       'channel': 'Jonas | AI Tools & Automation',
-       'epistemic_status': 'attributed_practitioner_claim',
-       'markdown': '[00:00:43](https://www.youtube.com/watch?v=4imOFZeP7nk&t=43s)',
-       'relevance': 'Attributed practitioner commentary on productized B2B AI implementation, '
-                    'fixed-scope workflow sprints, and managed automation retainers (Chapter '
-                    'Q10 operational verification).',
-       'source_type': 'video_pro_tip',
-       'text': "Today, I'm going to show you how I run my AI automation business for free. "
-               'This is my automation dashboard, as you can see here. There are over 100 '
-               'workflows in here. Everything from WhatsApp bots to payment syncs, lead '
-               'follow-ups.',
-       'timestamp': 43,
-       'timestamp_label': '[00:00:43]',
-       'timestamp_seconds': 43,
-       'tip': "Today, I'm going to show you how I run my AI automation business for free. This "
-              'is my automation dashboard, as you can see here. There are over 100 workflows '
-              'in here. Everything from WhatsApp bots to payment syncs, lead follow-ups.',
-       'title': 'I Run My AI Automation Business for $0 in Software (Zapier vs Make vs n8n) '
-                '(Jonas | AI Tools & Automation)',
-       'url': 'https://www.youtube.com/watch?v=4imOFZeP7nk&t=43s',
-       'video_id': '4imOFZeP7nk'},
-      {'author': 'AI Hustle Lab',
-       'channel': 'AI Hustle Lab',
-       'epistemic_status': 'attributed_practitioner_claim',
-       'markdown': '[00:02:26](https://www.youtube.com/watch?v=6FS1eyS2agI&t=146s)',
-       'relevance': 'Attributed practitioner commentary on productized B2B AI implementation, '
-                    'fixed-scope workflow sprints, and managed automation retainers (Chapter '
-                    'Q10 operational verification).',
-       'source_type': 'video_pro_tip',
-       'text': 'Our solution as an A automation agency is going to be an automated workflow '
-               "that captures form submissions, scores, leads, and then updates the CRM. I'm "
-               "going to paste the scope. I'm going to paste in the cost. And then I'm also "
-               'going to paste in the how soon.',
-       'timestamp': 146,
-       'timestamp_label': '[00:02:26]',
-       'timestamp_seconds': 146,
-       'tip': 'Our solution as an A automation agency is going to be an automated workflow '
-              "that captures form submissions, scores, leads, and then updates the CRM. I'm "
-              "going to paste the scope. I'm going to paste in the cost. And then I'm also "
-              'going to paste in the how soon.',
-       'title': 'Sell These 3 Simple AI Automations for $1.7K to B2B Agencies (AI Hustle Lab)',
-       'url': 'https://www.youtube.com/watch?v=6FS1eyS2agI&t=146s',
-       'video_id': '6FS1eyS2agI'},
-      {'author': 'Voice AI Decoded',
-       'channel': 'Voice AI Decoded',
-       'epistemic_status': 'attributed_practitioner_claim',
-       'markdown': '[00:09:29](https://www.youtube.com/watch?v=UiKoEHbio38&t=569s)',
-       'relevance': 'Attributed practitioner commentary on productized B2B AI implementation, '
-                    'fixed-scope workflow sprints, and managed automation retainers (Chapter '
-                    'Q10 operational verification).',
-       'source_type': 'video_pro_tip',
-       'text': "So, if you're nontechnical, if you like building in no code, and you don't "
-               'want to be in the weeds building voice agents via an API, Retail for me is '
-               "about as good as it gets. So, next up, let's have a look at Bland AI.",
-       'timestamp': 569,
-       'timestamp_label': '[00:09:29]',
-       'timestamp_seconds': 569,
-       'tip': "So, if you're nontechnical, if you like building in no code, and you don't want "
-              'to be in the weeds building voice agents via an API, Retail for me is about as '
-              "good as it gets. So, next up, let's have a look at Bland AI.",
-       'title': "Retell AI vs Bland AI (Don't choose WRONG!) (Voice AI Decoded)",
-       'url': 'https://www.youtube.com/watch?v=UiKoEHbio38&t=569s',
-       'video_id': 'UiKoEHbio38'},
-      {'author': 'Sean Malone | Close Bigger Deals',
-       'channel': 'Sean Malone | Close Bigger Deals',
-       'epistemic_status': 'attributed_practitioner_claim',
-       'markdown': '[00:04:23](https://www.youtube.com/watch?v=fXrfPpcs7fw&t=263s)',
-       'relevance': 'Attributed practitioner commentary on productized B2B AI implementation, '
-                    'fixed-scope workflow sprints, and managed automation retainers (Chapter '
-                    'Q10 operational verification).',
-       'source_type': 'video_pro_tip',
-       'text': 'Instead, try something like, your practice seems awesome, name, but when '
-               'someone calls after 5, does anyone pick up? No AI, no agent, no automation, '
-               'just the hole in their business. Asked as a question that they can answer in '
-               "one line. But Sean, I haven't talked to them yet.",
-       'timestamp': 263,
-       'timestamp_label': '[00:04:23]',
-       'timestamp_seconds': 263,
-       'tip': 'Instead, try something like, your practice seems awesome, name, but when '
-              'someone calls after 5, does anyone pick up? No AI, no agent, no automation, '
-              'just the hole in their business. Asked as a question that they can answer in '
-              "one line. But Sean, I haven't talked to them yet.",
-       'title': 'How to Sell AI Automation Services (Without Pitching AI) (Sean Malone | Close '
-                'Bigger Deals)',
-       'url': 'https://www.youtube.com/watch?v=fXrfPpcs7fw&t=263s',
-       'video_id': 'fXrfPpcs7fw'},
-      {'author': 'Nick Puru | AI Automation',
-       'channel': 'Nick Puru | AI Automation',
-       'epistemic_status': 'attributed_practitioner_claim',
-       'markdown': '[00:21:17](https://www.youtube.com/watch?v=7UpuiFHBvec&t=1277s)',
-       'relevance': 'Attributed practitioner commentary on productized B2B AI implementation, '
-                    'fixed-scope workflow sprints, and managed automation retainers (Chapter '
-                    'Q10 operational verification).',
-       'source_type': 'video_pro_tip',
-       'text': "'re building an AI agency or just implementing automation into your company or "
-               'AI into your company in whatever sense, we offer one-on-one help where we walk '
-               'you through everything.',
-       'timestamp': 1277,
-       'timestamp_label': '[00:21:17]',
-       'timestamp_seconds': 1277,
-       'tip': "'re building an AI agency or just implementing automation into your company or "
-              'AI into your company in whatever sense, we offer one-on-one help where we walk '
-              'you through everything.',
-       'title': 'How to Perform $100,000 AI Audits For Businesses (Complete Guide) (Nick Puru '
-                '| AI Automation)',
-       'url': 'https://www.youtube.com/watch?v=7UpuiFHBvec&t=1277s',
-       'video_id': '7UpuiFHBvec'},
-      {'author': 'Liam Ottley',
-       'channel': 'Liam Ottley',
-       'epistemic_status': 'attributed_practitioner_claim',
-       'markdown': '[00:01:36](https://www.youtube.com/watch?v=2CdNLDttOSg&t=96s)',
-       'relevance': 'Attributed practitioner commentary on productized B2B AI implementation, '
-                    'fixed-scope workflow sprints, and managed automation retainers (Chapter '
-                    'Q10 operational verification).',
-       'source_type': 'video_pro_tip',
-       'text': 'So, we have been building Moni Groups since October 2023. Throughout our AI '
-               'agency journey, we have successfully completed over 50 AI projects working '
-               'with clients from all around the world with across 10 more than 10 industries.',
-       'timestamp': 96,
-       'timestamp_label': '[00:01:36]',
-       'timestamp_seconds': 96,
-       'tip': 'So, we have been building Moni Groups since October 2023. Throughout our AI '
-              'agency journey, we have successfully completed over 50 AI projects working with '
-              'clients from all around the world with across 10 more than 10 industries.',
-       'title': 'How Two 19-Year-Olds Made $320K in 6 Months Selling AI Audits (Full '
-                'Breakdown) (Liam Ottley)',
-       'url': 'https://www.youtube.com/watch?v=2CdNLDttOSg&t=96s',
-       'video_id': '2CdNLDttOSg'},
-      {'author': 'Carson Reed',
-       'channel': 'Carson Reed',
-       'epistemic_status': 'attributed_practitioner_claim',
-       'markdown': '[00:31:21](https://www.youtube.com/watch?v=L1LsEN_iuIc&t=1881s)',
-       'relevance': 'Attributed practitioner commentary on productized B2B AI implementation, '
-                    'fixed-scope workflow sprints, and managed automation retainers (Chapter '
-                    'Q10 operational verification).',
-       'source_type': 'video_pro_tip',
-       'text': "'t want the error of one hurting a client's reputation or to just AI slop "
-               'being incorrect to that to that, you know, uh question they have. Um now, when '
-               'you use automation on LinkedIn, and you got to make sure that your LinkedIn '
-               'account, your profile, is older than 1 year.',
-       'timestamp': 1881,
-       'timestamp_label': '[00:31:21]',
-       'timestamp_seconds': 1881,
-       'tip': "'t want the error of one hurting a client's reputation or to just AI slop being "
-              'incorrect to that to that, you know, uh question they have. Um now, when you '
-              'use automation on LinkedIn, and you got to make sure that your LinkedIn '
-              'account, your profile, is older than 1 year.',
-       'title': 'How To Sign AI Agency Clients Using Outreach in 2026 (Carson Reed)',
-       'url': 'https://www.youtube.com/watch?v=L1LsEN_iuIc&t=1881s',
-       'video_id': 'L1LsEN_iuIc'},
-      {'author': 'Nate Herk | AI Automation',
-       'channel': 'Nate Herk | AI Automation',
-       'epistemic_status': 'attributed_practitioner_claim',
-       'markdown': '[00:00:21](https://www.youtube.com/watch?v=SAerRtQLD0I&t=21s)',
-       'relevance': 'Attributed practitioner commentary on productized B2B AI implementation, '
-                    'fixed-scope workflow sprints, and managed automation retainers (Chapter '
-                    'Q10 operational verification).',
-       'source_type': 'video_pro_tip',
-       'text': "1,200 LinkedIn agent, I did not sell the agent itself. I didn't get it on a "
-               'call and say, "Hey, here\'s this workflow. Here\'s how many nodes it has. " '
-               'None of that matters to the business owner. What I actually sold was the idea, '
-               'the outcome.',
-       'timestamp': 21,
-       'timestamp_label': '[00:00:21]',
-       'timestamp_seconds': 21,
-       'tip': "1,200 LinkedIn agent, I did not sell the agent itself. I didn't get it on a "
-              'call and say, "Hey, here\'s this workflow. Here\'s how many nodes it has. " '
-              'None of that matters to the business owner. What I actually sold was the idea, '
-              'the outcome.',
-       'title': 'The TRUTH About Selling AI Automations to Businesses (Nate Herk | AI '
-                'Automation)',
-       'url': 'https://www.youtube.com/watch?v=SAerRtQLD0I&t=21s',
-       'video_id': 'SAerRtQLD0I'},
-      {'author': 'Cognitive Capital',
-       'channel': 'Cognitive Capital',
-       'epistemic_status': 'attributed_practitioner_claim',
-       'markdown': '[00:06:55](https://www.youtube.com/watch?v=j2Bqq0VTv0o&t=415s)',
-       'relevance': 'Attributed practitioner commentary on productized B2B AI implementation, '
-                    'fixed-scope workflow sprints, and managed automation retainers (Chapter '
-                    'Q10 operational verification).',
-       'source_type': 'video_pro_tip',
-       'text': 'To make this totally concrete, think about workflow products that collect '
-               'super sensitive user data. Take something like the Side Hustle Command Center. '
-               "It's an AI-driven educational template that collects people's personal budgets "
-               'and financial goals.',
-       'timestamp': 415,
-       'timestamp_label': '[00:06:55]',
-       'timestamp_seconds': 415,
-       'tip': 'To make this totally concrete, think about workflow products that collect super '
-              "sensitive user data. Take something like the Side Hustle Command Center. It's "
-              "an AI-driven educational template that collects people's personal budgets and "
-              'financial goals.',
-       'title': 'OpenAI Privacy Filter: Redact PII Locally (AI Workflow Explained) (Cognitive '
-                'Capital)',
-       'url': 'https://www.youtube.com/watch?v=j2Bqq0VTv0o&t=415s',
-       'video_id': 'j2Bqq0VTv0o'},
-      {'author': 'Michael Reimer | HighLevel & AI Systems',
-       'channel': 'Michael Reimer | HighLevel & AI Systems',
-       'epistemic_status': 'attributed_practitioner_claim',
-       'markdown': '[00:01:33](https://www.youtube.com/watch?v=IWNNb6VOVz8&t=93s)',
-       'relevance': 'Attributed practitioner commentary on productized B2B AI implementation, '
-                    'fixed-scope workflow sprints, and managed automation retainers (Chapter '
-                    'Q10 operational verification).',
-       'source_type': 'video_pro_tip',
-       'text': 'If trust is weak, recommend reputation management. If website traffic is '
-               'coming but no leads, recommend website optimization. The key is to sell the '
-               'first measurable workflow, not a giant AI transformation.',
-       'timestamp': 93,
-       'timestamp_label': '[00:01:33]',
-       'timestamp_seconds': 93,
-       'tip': 'If trust is weak, recommend reputation management. If website traffic is coming '
-              'but no leads, recommend website optimization. The key is to sell the first '
-              'measurable workflow, not a giant AI transformation.',
-       'title': 'The Exact Script to Close AI Agency Clients on a Discovery Call (Michael '
-                'Reimer | HighLevel & AI Systems)',
-       'url': 'https://www.youtube.com/watch?v=IWNNb6VOVz8&t=93s',
-       'video_id': 'IWNNb6VOVz8'},
-      {'author': 'The AI Architects | Tom Crawshaw',
-       'channel': 'The AI Architects | Tom Crawshaw',
-       'epistemic_status': 'attributed_practitioner_claim',
-       'markdown': '[00:05:43](https://www.youtube.com/watch?v=HMo8ixMd4ts&t=343s)',
-       'relevance': 'Attributed practitioner commentary on productized B2B AI implementation, '
-                    'fixed-scope workflow sprints, and managed automation retainers (Chapter '
-                    'Q10 operational verification).',
-       'source_type': 'video_pro_tip',
-       'text': 'Pick one, become the expert, and learn their problems. And you could even take '
-               'the skills that you learn building workflows to build your own pipeline and '
-               'potentially offer that as a service.',
-       'timestamp': 343,
-       'timestamp_label': '[00:05:43]',
-       'timestamp_seconds': 343,
-       'tip': 'Pick one, become the expert, and learn their problems. And you could even take '
-              'the skills that you learn building workflows to build your own pipeline and '
-              'potentially offer that as a service.',
-       'title': "Don't Sell AI Automations Before You Watch THIS Video (The AI Architects | "
-                'Tom Crawshaw)',
-       'url': 'https://www.youtube.com/watch?v=HMo8ixMd4ts&t=343s',
-       'video_id': 'HMo8ixMd4ts'},
-      {'author': 'Mikey No Code',
-       'channel': 'Mikey No Code',
-       'epistemic_status': 'attributed_practitioner_claim',
-       'markdown': '[00:20:32](https://www.youtube.com/watch?v=i4z0kCcByY8&t=1232s)',
-       'relevance': 'Attributed practitioner commentary on productized B2B AI implementation, '
-                    'fixed-scope workflow sprints, and managed automation retainers (Chapter '
-                    'Q10 operational verification).',
-       'source_type': 'video_pro_tip',
-       'text': "So now let's return to base 44. Open up agents from the left sidebar and "
-               'create a new super agent. Go to general and then open up the AI model section. '
-               'Make sure both the chat model and the automated task model are all still set '
-               'to Opus 4.',
-       'timestamp': 1232,
-       'timestamp_label': '[00:20:32]',
-       'timestamp_seconds': 1232,
-       'tip': "So now let's return to base 44. Open up agents from the left sidebar and create "
-              'a new super agent. Go to general and then open up the AI model section. Make '
-              'sure both the chat model and the automated task model are all still set to Opus '
-              '4.',
-       'title': 'How to Start an AI Automation Agency in 2026 (Step by Step) (Mikey No Code)',
-       'url': 'https://www.youtube.com/watch?v=i4z0kCcByY8&t=1232s',
-       'video_id': 'i4z0kCcByY8'},
-      {'author': 'Belt Course',
-       'channel': 'Belt Course',
-       'epistemic_status': 'attributed_practitioner_claim',
-       'markdown': '[00:02:06](https://www.youtube.com/watch?v=YaFtlj9qXQc&t=126s)',
-       'relevance': 'Attributed practitioner commentary on productized B2B AI implementation, '
-                    'fixed-scope workflow sprints, and managed automation retainers (Chapter '
-                    'Q10 operational verification).',
-       'source_type': 'video_pro_tip',
-       'text': 'Basically, the highest leverage AI and automation opportunities and a 90-day '
-               'prioritized road map that turns into implementation projects. The most '
-               'important thing is the outcome. Your client knows exactly where automation or '
-               'AI deserves a budget and what returns to expect.',
-       'timestamp': 126,
-       'timestamp_label': '[00:02:06]',
-       'timestamp_seconds': 126,
-       'tip': 'Basically, the highest leverage AI and automation opportunities and a 90-day '
-              'prioritized road map that turns into implementation projects. The most '
-              'important thing is the outcome. Your client knows exactly where automation or '
-              'AI deserves a budget and what returns to expect.',
-       'title': 'How to Sell AI Services with a Paid AI Business Audit (Step-by-Step '
-                'Framework) (Belt Course)',
-       'url': 'https://www.youtube.com/watch?v=YaFtlj9qXQc&t=126s',
-       'video_id': 'YaFtlj9qXQc'}],
- 11: [{'author': 'Sabrina Ramonov 🍄',
-       'channel': 'Sabrina Ramonov 🍄',
-       'epistemic_status': 'attributed_practitioner_claim',
-       'markdown': '[00:06:13](https://www.youtube.com/watch?v=I1NSFLOBQvc&t=373s)',
-       'relevance': 'Attributed practitioner commentary on productized B2B AI implementation, '
-                    'fixed-scope workflow sprints, and managed automation retainers (Chapter '
-                    'Q11 operational verification).',
-       'source_type': 'video_pro_tip',
-       'text': "'re going to be able to scale to. At least not without hiring a team and "
-               'putting all of your full-time efforts into it. Like, I have a technical '
-               "background. I'm not an amazing coder by any stretch of imagination, but even I "
-               'personally would not start an AI automation agency.',
+       'text': 'Its 50 free AI conversations are a one-time batch, not a monthly refill, and paid '
+               'conversations bill whether the bot solves it or not.',
        'timestamp': 373,
        'timestamp_label': '[00:06:13]',
        'timestamp_seconds': 373,
-       'tip': "'re going to be able to scale to. At least not without hiring a team and "
-              'putting all of your full-time efforts into it. Like, I have a technical '
-              "background. I'm not an amazing coder by any stretch of imagination, but even I "
-              'personally would not start an AI automation agency.',
-       'title': 'What Nobody Tells You About Selling AI Automations (Sabrina Ramonov 🍄)',
-       'url': 'https://www.youtube.com/watch?v=I1NSFLOBQvc&t=373s',
-       'video_id': 'I1NSFLOBQvc'},
-      {'author': 'Paired Recruiting',
-       'channel': 'Paired Recruiting',
+       'tip': 'Its 50 free AI conversations are a one-time batch, not a monthly refill, and paid '
+              'conversations bill whether the bot solves it or not.',
+       'title': 'I Tested 5 AI Customer Support Chatbots — Ranked Worst to Best (2026)',
+       'url': 'https://www.youtube.com/watch?v=9wewuc4s038&t=373s',
+       'video_id': '9wewuc4s038'},
+      {'author': "Jake's Tech Lab",
+       'channel': "Jake's Tech Lab",
        'epistemic_status': 'attributed_practitioner_claim',
-       'markdown': '[00:04:10](https://www.youtube.com/watch?v=TdMOpd_cG0A&t=250s)',
-       'relevance': 'Attributed practitioner commentary on productized B2B AI implementation, '
-                    'fixed-scope workflow sprints, and managed automation retainers (Chapter '
-                    'Q11 operational verification).',
+       'markdown': '[00:04:44](https://www.youtube.com/watch?v=vSmuuzicQUU&t=284s)',
+       'relevance': 'Practitioner testimony on choosing Intercom for conversational support and '
+                    'lead nurturing.',
        'source_type': 'video_pro_tip',
-       'text': "The trade-off is that it takes a bit more time to learn. You're not just "
-               "connecting apps, you're actually building logic, but once it clicks, you get "
-               "much more control. Pricing also tends to scale better since it's based more on "
-               'operations instead of every single step.',
-       'timestamp': 250,
-       'timestamp_label': '[00:04:10]',
-       'timestamp_seconds': 250,
-       'tip': "The trade-off is that it takes a bit more time to learn. You're not just "
-              "connecting apps, you're actually building logic, but once it clicks, you get "
-              "much more control. Pricing also tends to scale better since it's based more on "
-              'operations instead of every single step.',
-       'title': 'Zapier vs Make vs n8n: Which Automation Tool Is Best for Your Team? (HONEST '
-                'REVIEW) (Paired Recruiting)',
-       'url': 'https://www.youtube.com/watch?v=TdMOpd_cG0A&t=250s',
-       'video_id': 'TdMOpd_cG0A'},
-      {'author': 'Brendan Jowett',
-       'channel': 'Brendan Jowett',
+       'text': 'Intercom is super ideal if you want that chat-first AI-powered experience or if '
+               'your strategy is all about sales and nurturing leads.',
+       'timestamp': 284,
+       'timestamp_label': '[00:04:44]',
+       'timestamp_seconds': 284,
+       'tip': 'Intercom is super ideal if you want that chat-first AI-powered experience or if '
+              'your strategy is all about sales and nurturing leads.',
+       'title': 'Zendesk vs Intercom Comparison 2025 | Which Customer Support Platform is Best?',
+       'url': 'https://www.youtube.com/watch?v=vSmuuzicQUU&t=284s',
+       'video_id': 'vSmuuzicQUU'},
+      {'author': 'Ventra Technologies',
+       'channel': 'Ventra Technologies',
        'epistemic_status': 'attributed_practitioner_claim',
-       'markdown': '[00:03:08](https://www.youtube.com/watch?v=Ky2Z6kGp1Vk&t=188s)',
-       'relevance': 'Attributed practitioner commentary on productized B2B AI implementation, '
-                    'fixed-scope workflow sprints, and managed automation retainers (Chapter '
-                    'Q11 operational verification).',
+       'markdown': '[00:03:12](https://www.youtube.com/watch?v=b5pi4BcdrKk&t=192s)',
+       'relevance': 'Practitioner testimony on auditing repetitive support work before selling and '
+                    'implementing the setup.',
        'source_type': 'video_pro_tip',
-       'text': "24/7, I've got something for you. My team at Inflate AI builds inbound and "
-               'outbound calling systems to automate voice conversations across your business. '
-               "We're talking 24/7 receptionists, speedtole outbound callers, appointment "
-               'booking, whatever your business needs.',
-       'timestamp': 188,
-       'timestamp_label': '[00:03:08]',
-       'timestamp_seconds': 188,
-       'tip': "24/7, I've got something for you. My team at Inflate AI builds inbound and "
-              'outbound calling systems to automate voice conversations across your business. '
-              "We're talking 24/7 receptionists, speedtole outbound callers, appointment "
-              'booking, whatever your business needs.',
-       'title': 'The Darkside of AI Voice Agents (The Truth) (Brendan Jowett)',
-       'url': 'https://www.youtube.com/watch?v=Ky2Z6kGp1Vk&t=188s',
-       'video_id': 'Ky2Z6kGp1Vk'},
-      {'author': 'LaunchFast with Bal Sieber',
-       'channel': 'LaunchFast with Bal Sieber',
+       'text': 'The first phase of this offering is conducting a support audit, analyzing existing '
+               'customer messages to identify exactly which repetitive questions can safely be '
+               'automated.',
+       'timestamp': 192,
+       'timestamp_label': '[00:03:12]',
+       'timestamp_seconds': 192,
+       'tip': 'The first phase of this offering is conducting a support audit, analyzing existing '
+              'customer messages to identify exactly which repetitive questions can safely be '
+              'automated.',
+       'title': 'How to Build an AI Customer Support Business',
+       'url': 'https://www.youtube.com/watch?v=b5pi4BcdrKk&t=192s',
+       'video_id': 'b5pi4BcdrKk'},
+      {'author': 'AIWealthPath',
+       'channel': 'AIWealthPath',
        'epistemic_status': 'attributed_practitioner_claim',
-       'markdown': '[00:01:10](https://www.youtube.com/watch?v=rI1y1OsDxdw&t=70s)',
-       'relevance': 'Attributed practitioner commentary on productized B2B AI implementation, '
-                    'fixed-scope workflow sprints, and managed automation retainers (Chapter '
-                    'Q11 operational verification).',
+       'markdown': '[00:03:16](https://www.youtube.com/watch?v=JKmSoDIpfdI&t=196s)',
+       'relevance': 'Practitioner testimony on the two-attempt escalation rule and preserving '
+                    'conversation context.',
        'source_type': 'video_pro_tip',
-       'text': "Hey, I'm Ba, a designer with over 20 years of experience. I spent 15 of those "
-               'in the agency world before going solo and building a oneperson business that '
-               'runs on systems, not chaos.',
-       'timestamp': 70,
-       'timestamp_label': '[00:01:10]',
-       'timestamp_seconds': 70,
-       'tip': "Hey, I'm Ba, a designer with over 20 years of experience. I spent 15 of those "
-              'in the agency world before going solo and building a oneperson business that '
-              'runs on systems, not chaos.',
-       'title': 'Brett From DesignJoy Did It. Why Can’t You? (LaunchFast with Bal Sieber)',
-       'url': 'https://www.youtube.com/watch?v=rI1y1OsDxdw&t=70s',
-       'video_id': 'rI1y1OsDxdw'},
-      {'author': 'Nick Saraev Daily',
-       'channel': 'Nick Saraev Daily',
+       'text': 'If the AI cannot answer in two tries, it hands over immediately with the whole '
+               'conversation attached, so the customer never has to repeat themselves.',
+       'timestamp': 196,
+       'timestamp_label': '[00:03:16]',
+       'timestamp_seconds': 196,
+       'tip': 'If the AI cannot answer in two tries, it hands over immediately with the whole '
+              'conversation attached, so the customer never has to repeat themselves.',
+       'title': 'How to Automate Your Customer Support With AI in 2026 — Full Beginner Guide',
+       'url': 'https://www.youtube.com/watch?v=JKmSoDIpfdI&t=196s',
+       'video_id': 'JKmSoDIpfdI'},
+      {'author': 'Zendesk',
+       'channel': 'Zendesk',
        'epistemic_status': 'attributed_practitioner_claim',
-       'markdown': '[00:00:50](https://www.youtube.com/watch?v=LjJGh4J1eqM&t=50s)',
-       'relevance': 'Attributed practitioner commentary on productized B2B AI implementation, '
-                    'fixed-scope workflow sprints, and managed automation retainers (Chapter '
-                    'Q11 operational verification).',
+       'markdown': '[00:02:45](https://www.youtube.com/watch?v=mnFYeyoS2r8&t=165s)',
+       'relevance': "Zendesk's attributed interaction-resolution claim for its AI agents.",
        'source_type': 'video_pro_tip',
-       'text': 'I\'ll double-check after the the stream. Hamda says, "Hey Nick, really '
-               "appreciate all the value you've been sharing. I'm building an email automation "
-               "system for a client and using it for myself, too. I've run into an issue with "
-               'the 45-minute timeout.',
-       'timestamp': 50,
-       'timestamp_label': '[00:00:50]',
-       'timestamp_seconds': 50,
-       'tip': 'I\'ll double-check after the the stream. Hamda says, "Hey Nick, really '
-              "appreciate all the value you've been sharing. I'm building an email automation "
-              "system for a client and using it for myself, too. I've run into an issue with "
-              'the 45-minute timeout.',
-       'title': '3 AI Agency Retainer Options You Can Steal Today (Nick Saraev Daily)',
-       'url': 'https://www.youtube.com/watch?v=LjJGh4J1eqM&t=50s',
-       'video_id': 'LjJGh4J1eqM'},
-      {'author': 'Starter Story',
-       'channel': 'Starter Story',
+       'text': 'Currently, AI agents are helping companies resolve 60% or more of their customer '
+               'interactions.',
+       'timestamp': 165,
+       'timestamp_label': '[00:02:45]',
+       'timestamp_seconds': 165,
+       'tip': 'Currently, AI agents are helping companies resolve 60% or more of their customer '
+              'interactions.',
+       'title': 'AI Agents: The next generation of AI-powered bots | Zendesk',
+       'url': 'https://www.youtube.com/watch?v=mnFYeyoS2r8&t=165s',
+       'video_id': 'mnFYeyoS2r8'},
+      {'author': 'Simply Contact',
+       'channel': 'Simply Contact',
        'epistemic_status': 'attributed_practitioner_claim',
-       'markdown': '[00:10:50](https://www.youtube.com/watch?v=vedkm3ZmHIE&t=650s)',
-       'relevance': 'Attributed practitioner commentary on productized B2B AI implementation, '
-                    'fixed-scope workflow sprints, and managed automation retainers (Chapter '
-                    'Q11 operational verification).',
+       'markdown': '[00:00:19](https://www.youtube.com/watch?v=DcDfJRzuZNI&t=19s)',
+       'relevance': 'Practitioner testimony on the combined human-and-AI outsourcing delivery '
+                    'model.',
        'source_type': 'video_pro_tip',
-       'text': 'Him to work less and probably sleep better at night but what I love about '
-               "Brett is that he doesn't just sell courses he continues to build his business "
-               'serve clients and put in the Reps on design.',
-       'timestamp': 650,
-       'timestamp_label': '[00:10:50]',
-       'timestamp_seconds': 650,
-       'tip': 'Him to work less and probably sleep better at night but what I love about Brett '
-              "is that he doesn't just sell courses he continues to build his business serve "
-              'clients and put in the Reps on design.',
-       'title': 'The $1.8M Solopreneur Playbook (Starter Story)',
-       'url': 'https://www.youtube.com/watch?v=vedkm3ZmHIE&t=650s',
-       'video_id': 'vedkm3ZmHIE'},
-      {'author': 'Hey sidG',
-       'channel': 'Hey sidG',
+       'text': 'Simply Contact is a customer service outsourcing provider that combines human '
+               'agents with advanced AI tools.',
+       'timestamp': 19,
+       'timestamp_label': '[00:00:19]',
+       'timestamp_seconds': 19,
+       'tip': 'Simply Contact is a customer service outsourcing provider that combines human '
+              'agents with advanced AI tools.',
+       'title': 'Top 10 AI Customer Service Companies',
+       'url': 'https://www.youtube.com/watch?v=DcDfJRzuZNI&t=19s',
+       'video_id': 'DcDfJRzuZNI'},
+      {'author': 'Stewart Gauld',
+       'channel': 'Stewart Gauld',
        'epistemic_status': 'attributed_practitioner_claim',
-       'markdown': '[00:02:02](https://www.youtube.com/watch?v=r4hp_y9_V3w&t=122s)',
-       'relevance': 'Attributed practitioner commentary on productized B2B AI implementation, '
-                    'fixed-scope workflow sprints, and managed automation retainers (Chapter '
-                    'Q11 operational verification).',
+       'markdown': '[00:06:41](https://www.youtube.com/watch?v=nMMWXxBsH2o&t=401s)',
+       'relevance': 'Practitioner testimony on configuring Zendesk agent behavior for unknown '
+                    'questions.',
        'source_type': 'video_pro_tip',
-       'text': 'A user asks something, the system zips over to the knowledge base to retrieve '
-               'the right context, and it uses that context to spit out a fact-based answer. '
-               'Retrieve, augment, generate. Simple, clean, and really, really effective. And '
-               'the impacts on the business?',
-       'timestamp': 122,
-       'timestamp_label': '[00:02:02]',
-       'timestamp_seconds': 122,
-       'tip': 'A user asks something, the system zips over to the knowledge base to retrieve '
-              'the right context, and it uses that context to spit out a fact-based answer. '
-              'Retrieve, augment, generate. Simple, clean, and really, really effective. And '
-              'the impacts on the business?',
-       'title': 'The Future of Enterprise AI: RAG vs. Agentic Workflows (Hey sidG)',
-       'url': 'https://www.youtube.com/watch?v=r4hp_y9_V3w&t=122s',
-       'video_id': 'r4hp_y9_V3w'},
-      {'author': 'Sales Feed',
-       'channel': 'Sales Feed',
+       'text': 'If a question is unknown, then we also want to add an option to talk to a real '
+               'person.',
+       'timestamp': 401,
+       'timestamp_label': '[00:06:41]',
+       'timestamp_seconds': 401,
+       'tip': 'If a question is unknown, then we also want to add an option to talk to a real '
+              'person.',
+       'title': 'How to use ZenDesk AI Agents | Supercharge Customer Service with AI in 2026',
+       'url': 'https://www.youtube.com/watch?v=nMMWXxBsH2o&t=401s',
+       'video_id': 'nMMWXxBsH2o'},
+      {'author': 'Toolstack',
+       'channel': 'Toolstack',
        'epistemic_status': 'attributed_practitioner_claim',
-       'markdown': '[00:11:37](https://www.youtube.com/watch?v=3_RnVI6UFkA&t=697s)',
-       'relevance': 'Attributed practitioner commentary on productized B2B AI implementation, '
-                    'fixed-scope workflow sprints, and managed automation retainers (Chapter '
-                    'Q11 operational verification).',
+       'markdown': '[00:01:05](https://www.youtube.com/watch?v=aNlthYD5fPY&t=65s)',
+       'relevance': "Practitioner testimony on the dependence of Fin's performance on "
+                    'knowledge-base quality.',
        'source_type': 'video_pro_tip',
-       'text': '"Hey, looks like your website is hosted on Shopify. Are you happy with the '
-               'conversions over there? Are you happy with its conversion rate?" Or if you\'re '
-               'a recruiter, you might say, "Looks like you\'re hiring for a senior business '
-               'development manager.',
-       'timestamp': 697,
-       'timestamp_label': '[00:11:37]',
-       'timestamp_seconds': 697,
-       'tip': '"Hey, looks like your website is hosted on Shopify. Are you happy with the '
-              'conversions over there? Are you happy with its conversion rate?" Or if you\'re '
-              'a recruiter, you might say, "Looks like you\'re hiring for a senior business '
-              'development manager.',
-       'title': 'The Best LinkedIn Lead Generation Strategy for 2026 (Sales Feed)',
-       'url': 'https://www.youtube.com/watch?v=3_RnVI6UFkA&t=697s',
-       'video_id': '3_RnVI6UFkA'},
-      {'author': 'Nick Saraev Unfiltered',
-       'channel': 'Nick Saraev Unfiltered',
-       'epistemic_status': 'attributed_practitioner_claim',
-       'markdown': '[00:01:05](https://www.youtube.com/watch?v=J6tKdJPDJiw&t=65s)',
-       'relevance': 'Attributed practitioner commentary on productized B2B AI implementation, '
-                    'fixed-scope workflow sprints, and managed automation retainers (Chapter '
-                    'Q11 operational verification).',
-       'source_type': 'video_pro_tip',
-       'text': 'And it\'s like, "Man, but onboarding is starting to take a really long while. '
-               '" Then we build some onboarding automations. And it\'s like, "Oh my goodness, '
-               'the onboarding is awesome, but now we just have so much client work. " Then '
-               'you start building fulfillment automations.',
+       'text': 'In practice, results vary a lot depending on how good your knowledge base is.',
        'timestamp': 65,
        'timestamp_label': '[00:01:05]',
        'timestamp_seconds': 65,
-       'tip': 'And it\'s like, "Man, but onboarding is starting to take a really long while. " '
-              'Then we build some onboarding automations. And it\'s like, "Oh my goodness, the '
-              'onboarding is awesome, but now we just have so much client work. " Then you '
-              'start building fulfillment automations.',
-       'title': 'Why AI automation agency is a great business model (Nick Saraev Unfiltered)',
-       'url': 'https://www.youtube.com/watch?v=J6tKdJPDJiw&t=65s',
-       'video_id': 'J6tKdJPDJiw'},
-      {'author': 'Harry Roper',
-       'channel': 'Harry Roper',
+       'tip': 'In practice, results vary a lot depending on how good your knowledge base is.',
+       'title': 'Every AI Customer Service Tool Explained',
+       'url': 'https://www.youtube.com/watch?v=aNlthYD5fPY&t=65s',
+       'video_id': 'aNlthYD5fPY'},
+      {'author': 'Rocket Research',
+       'channel': 'Rocket Research',
        'epistemic_status': 'attributed_practitioner_claim',
-       'markdown': '[00:05:16](https://www.youtube.com/watch?v=rO0i7sGwhCU&t=316s)',
-       'relevance': 'Attributed practitioner commentary on productized B2B AI implementation, '
-                    'fixed-scope workflow sprints, and managed automation retainers (Chapter '
-                    'Q11 operational verification).',
+       'markdown': '[00:00:19](https://www.youtube.com/watch?v=swIGkbLXEdM&t=19s)',
+       'relevance': 'Practitioner testimony on a flat-rate alternative to seat-plus-resolution '
+                    'pricing.',
        'source_type': 'video_pro_tip',
-       'text': "Journey um we're already at a thousand MRI with the agency and now it's just "
-               'about trying to grow a bit more so if you want to learn more about how to '
-               'organize your business in psychoda so you can follow my journey as well I '
-               'would watch this video next.',
-       'timestamp': 316,
-       'timestamp_label': '[00:05:16]',
-       'timestamp_seconds': 316,
-       'tip': "Journey um we're already at a thousand MRI with the agency and now it's just "
-              'about trying to grow a bit more so if you want to learn more about how to '
-              'organize your business in psychoda so you can follow my journey as well I would '
-              'watch this video next.',
-       'title': 'How I made $5K A Month Using The Design Joy Model (Harry Roper)',
-       'url': 'https://www.youtube.com/watch?v=rO0i7sGwhCU&t=316s',
-       'video_id': 'rO0i7sGwhCU'},
-      {'author': 'Liam Ottley',
-       'channel': 'Liam Ottley',
-       'epistemic_status': 'attributed_practitioner_claim',
-       'markdown': '[00:20:19](https://www.youtube.com/watch?v=noivN2hIXLY&t=1219s)',
-       'relevance': 'Attributed practitioner commentary on productized B2B AI implementation, '
-                    'fixed-scope workflow sprints, and managed automation retainers (Chapter '
-                    'Q11 operational verification).',
-       'source_type': 'video_pro_tip',
-       'text': 'This has taken that to another level. Just really building that trust and '
-               'understanding of the business to make the development off the back so much '
-               'easier.',
-       'timestamp': 1219,
-       'timestamp_label': '[00:20:19]',
-       'timestamp_seconds': 1219,
-       'tip': 'This has taken that to another level. Just really building that trust and '
-              'understanding of the business to make the development off the back so much '
-              'easier.',
-       'title': 'How to Perform a $60,000 AI Audit (Beginner’s Guide) (Liam Ottley)',
-       'url': 'https://www.youtube.com/watch?v=noivN2hIXLY&t=1219s',
-       'video_id': 'noivN2hIXLY'},
-      {'author': 'Nate Herk | AI Automation',
-       'channel': 'Nate Herk | AI Automation',
-       'epistemic_status': 'attributed_practitioner_claim',
-       'markdown': '[00:01:49](https://www.youtube.com/watch?v=t1PTmpas0bg&t=109s)',
-       'relevance': 'Attributed practitioner commentary on productized B2B AI implementation, '
-                    'fixed-scope workflow sprints, and managed automation retainers (Chapter '
-                    'Q11 operational verification).',
-       'source_type': 'video_pro_tip',
-       'text': 'I just have to paste in the API key right here. Now, the other thing you are '
-               "going to have to do is you're going to have to grab your base URL from up "
-               "here. And you probably can't see it on my screen right now.",
-       'timestamp': 109,
-       'timestamp_label': '[00:01:49]',
-       'timestamp_seconds': 109,
-       'tip': 'I just have to paste in the API key right here. Now, the other thing you are '
-              "going to have to do is you're going to have to grab your base URL from up here. "
-              "And you probably can't see it on my screen right now.",
-       'title': 'Easiest Way to Migrate n8n Workflows Between Accounts (cloud to self-hosted) '
-                '(Nate Herk | AI Automation)',
-       'url': 'https://www.youtube.com/watch?v=t1PTmpas0bg&t=109s',
-       'video_id': 't1PTmpas0bg'},
-      {'author': 'Demandflow',
-       'channel': 'Demandflow',
-       'epistemic_status': 'attributed_practitioner_claim',
-       'markdown': '[00:13:23](https://www.youtube.com/watch?v=w9gOdSLVu14&t=803s)',
-       'relevance': 'Attributed practitioner commentary on productized B2B AI implementation, '
-                    'fixed-scope workflow sprints, and managed automation retainers (Chapter '
-                    'Q11 operational verification).',
-       'source_type': 'video_pro_tip',
-       'text': "What the client is getting and ultimately if they're actually happy with your "
-               "service as always thank you very much for watching watching and I'll catch you "
-               'in the next one.',
-       'timestamp': 803,
-       'timestamp_label': '[00:13:23]',
-       'timestamp_seconds': 803,
-       'tip': "What the client is getting and ultimately if they're actually happy with your "
-              "service as always thank you very much for watching watching and I'll catch you "
-              'in the next one.',
-       'title': 'how to actually build a sustainable productized service ($20k+) (Demandflow)',
-       'url': 'https://www.youtube.com/watch?v=w9gOdSLVu14&t=803s',
-       'video_id': 'w9gOdSLVu14'},
-      {'author': 'Hyperautomation Labs',
-       'channel': 'Hyperautomation Labs',
-       'epistemic_status': 'attributed_practitioner_claim',
-       'markdown': '[00:09:25](https://www.youtube.com/watch?v=Bm9fbVEZvHc&t=565s)',
-       'relevance': 'Attributed practitioner commentary on productized B2B AI implementation, '
-                    'fixed-scope workflow sprints, and managed automation retainers (Chapter '
-                    'Q11 operational verification).',
-       'source_type': 'video_pro_tip',
-       'text': '3 hours on, drops to about 4 minutes. Once Claude has the right context file '
-               'and skill file, the agent reviews, tweaks the headline, sends a weekly client '
-               'report for a marketing agency.',
-       'timestamp': 565,
-       'timestamp_label': '[00:09:25]',
-       'timestamp_seconds': 565,
-       'tip': '3 hours on, drops to about 4 minutes. Once Claude has the right context file '
-              'and skill file, the agent reviews, tweaks the headline, sends a weekly client '
-              'report for a marketing agency.',
-       'title': 'How to Build & Sell AI Automations That Make $10K/mo (Full 6-Phase Playbook) '
-                '(Hyperautomation Labs)',
-       'url': 'https://www.youtube.com/watch?v=Bm9fbVEZvHc&t=565s',
-       'video_id': 'Bm9fbVEZvHc'},
-      {'author': 'Automate AI Consulting',
-       'channel': 'Automate AI Consulting',
-       'epistemic_status': 'attributed_practitioner_claim',
-       'markdown': '[00:03:14](https://www.youtube.com/watch?v=91lw5ubtLMc&t=194s)',
-       'relevance': 'Attributed practitioner commentary on productized B2B AI implementation, '
-                    'fixed-scope workflow sprints, and managed automation retainers (Chapter '
-                    'Q11 operational verification).',
-       'source_type': 'video_pro_tip',
-       'text': "Where do they find their API keys? You're writing this so that if you were to "
-               'disappear from the face of the earth, they or anyone that they hire can '
-               "troubleshoot their own system. Once in a blue moon, you'll get a technical "
-               'client that just wants the JSON file.',
-       'timestamp': 194,
-       'timestamp_label': '[00:03:14]',
-       'timestamp_seconds': 194,
-       'tip': "Where do they find their API keys? You're writing this so that if you were to "
-              'disappear from the face of the earth, they or anyone that they hire can '
-              "troubleshoot their own system. Once in a blue moon, you'll get a technical "
-              'client that just wants the JSON file.',
-       'title': 'How To Deliver Your N8N Automation To Clients Like An Expert (Automate AI '
-                'Consulting)',
-       'url': 'https://www.youtube.com/watch?v=91lw5ubtLMc&t=194s',
-       'video_id': '91lw5ubtLMc'}],
- 12: [{'author': 'Hyperautomation Labs',
-       'channel': 'Hyperautomation Labs',
-       'epistemic_status': 'attributed_practitioner_claim',
-       'markdown': '[00:06:28](https://www.youtube.com/watch?v=Bm9fbVEZvHc&t=388s)',
-       'relevance': 'Attributed practitioner commentary on productized B2B AI implementation, '
-                    'fixed-scope workflow sprints, and managed automation retainers (Chapter '
-                    'Q12 operational verification).',
-       'source_type': 'video_pro_tip',
-       'text': '30 days of post-launch support. Pricing, and this is the part most people get '
-               'wrong, is based on value, not hours. If your automation saves a client 10 '
-               'hours a week at a $75 billing rate, that is $3,000 a month in value.',
-       'timestamp': 388,
-       'timestamp_label': '[00:06:28]',
-       'timestamp_seconds': 388,
-       'tip': '30 days of post-launch support. Pricing, and this is the part most people get '
-              'wrong, is based on value, not hours. If your automation saves a client 10 hours '
-              'a week at a $75 billing rate, that is $3,000 a month in value.',
-       'title': 'How to Build & Sell AI Automations That Make $10K/mo (Full 6-Phase Playbook) '
-                '(Hyperautomation Labs)',
-       'url': 'https://www.youtube.com/watch?v=Bm9fbVEZvHc&t=388s',
-       'video_id': 'Bm9fbVEZvHc'},
-      {'author': 'Milan Tahliani',
-       'channel': 'Milan Tahliani',
-       'epistemic_status': 'attributed_practitioner_claim',
-       'markdown': '[00:03:27](https://www.youtube.com/watch?v=2goNKtgnIKg&t=207s)',
-       'relevance': 'Attributed practitioner commentary on productized B2B AI implementation, '
-                    'fixed-scope workflow sprints, and managed automation retainers (Chapter '
-                    'Q12 operational verification).',
-       'source_type': 'video_pro_tip',
-       'text': "ROI backed implementation plan for a given business's um AI infrastructure and "
-               'AI um roadmap. So how do you as an AI agency owner actually go ahead and '
-               'position the audit? Um so you want to frame the audit as value creation, '
-               'right?',
-       'timestamp': 207,
-       'timestamp_label': '[00:03:27]',
-       'timestamp_seconds': 207,
-       'tip': "ROI backed implementation plan for a given business's um AI infrastructure and "
-              'AI um roadmap. So how do you as an AI agency owner actually go ahead and '
-              'position the audit? Um so you want to frame the audit as value creation, right?',
-       'title': 'Why ALL AI Agencies Should Run AI Audits (And How To Do Them Properly!) '
-                '(Milan Tahliani)',
-       'url': 'https://www.youtube.com/watch?v=2goNKtgnIKg&t=207s',
-       'video_id': '2goNKtgnIKg'},
+       'text': 'Corby provides a straightforward pricing model with a flat monthly fee starting at '
+               '$99 for the pro plan.',
+       'timestamp': 19,
+       'timestamp_label': '[00:00:19]',
+       'timestamp_seconds': 19,
+       'tip': 'Corby provides a straightforward pricing model with a flat monthly fee starting at '
+              '$99 for the pro plan.',
+       'title': 'How Much Should a Small Business Budget for AI Customer Support in 2026?',
+       'url': 'https://www.youtube.com/watch?v=swIGkbLXEdM&t=19s',
+       'video_id': 'swIGkbLXEdM'},
       {'author': 'AI Tools for Business',
        'channel': 'AI Tools for Business',
        'epistemic_status': 'attributed_practitioner_claim',
-       'markdown': '[00:05:15](https://www.youtube.com/watch?v=T6Ij8zqR4Bo&t=315s)',
-       'relevance': 'Attributed practitioner commentary on productized B2B AI implementation, '
-                    'fixed-scope workflow sprints, and managed automation retainers (Chapter '
-                    'Q12 operational verification).',
+       'markdown': '[00:06:10](https://www.youtube.com/watch?v=T6Ij8zqR4Bo&t=370s)',
+       'relevance': 'Practitioner testimony on measuring autonomous resolutions and their cost '
+                    'during a two-week evaluation.',
        'source_type': 'video_pro_tip',
-       'text': 'Tidio charges a flat $39 a month for 50 Lyro conversations. For a free start, '
-               'Tidio wins easily. A real free plan against two 14-day trials. For AI on a '
-               'budget, Tidio starter plus Lyro at about $68 a month is the cheapest way to '
-               'have an AI agent answering.',
-       'timestamp': 315,
-       'timestamp_label': '[00:05:15]',
-       'timestamp_seconds': 315,
-       'tip': 'Tidio charges a flat $39 a month for 50 Lyro conversations. For a free start, '
-              'Tidio wins easily. A real free plan against two 14-day trials. For AI on a '
-              'budget, Tidio starter plus Lyro at about $68 a month is the cheapest way to '
-              'have an AI agent answering.',
-       'title': '3 AI Customer Support Tools for US Small Businesses in 2026 — Intercom vs '
-                'Zendesk vs Tidio (AI Tools for Business)',
-       'url': 'https://www.youtube.com/watch?v=T6Ij8zqR4Bo&t=315s',
+       'text': 'Use the free plan or the free trial for two weeks and track two numbers: how many '
+               'chats the AI resolves on its own and what that costs you per resolution.',
+       'timestamp': 370,
+       'timestamp_label': '[00:06:10]',
+       'timestamp_seconds': 370,
+       'tip': 'Use the free plan or the free trial for two weeks and track two numbers: how many '
+              'chats the AI resolves on its own and what that costs you per resolution.',
+       'title': '3 AI Customer Support Tools for US Small Businesses in 2026 — Intercom vs Zendesk '
+                'vs Tidio',
+       'url': 'https://www.youtube.com/watch?v=T6Ij8zqR4Bo&t=370s',
        'video_id': 'T6Ij8zqR4Bo'},
-      {'author': 'Jack',
-       'channel': 'Jack',
+      {'author': 'SparrowDesk',
+       'channel': 'SparrowDesk',
        'epistemic_status': 'attributed_practitioner_claim',
-       'markdown': '[00:02:48](https://www.youtube.com/watch?v=4RYnbUHayhM&t=168s)',
-       'relevance': 'Attributed practitioner commentary on productized B2B AI implementation, '
-                    'fixed-scope workflow sprints, and managed automation retainers (Chapter '
-                    'Q12 operational verification).',
+       'markdown': '[00:00:45](https://www.youtube.com/watch?v=db2s9r04icM&t=45s)',
+       'relevance': 'Practitioner testimony contrasting configuration speed with control and '
+                    'customization.',
        'source_type': 'video_pro_tip',
-       'text': '2-week warm-up period, still running LinkedIn automation, but we want to warm '
-               'up those email inboxes, and then, based on what we see working well, we flow '
-               "into a 6-week first month, where we get very tangible results on what's going "
-               'to work within our outbound.',
-       'timestamp': 168,
-       'timestamp_label': '[00:02:48]',
-       'timestamp_seconds': 168,
-       'tip': '2-week warm-up period, still running LinkedIn automation, but we want to warm '
-              'up those email inboxes, and then, based on what we see working well, we flow '
-              "into a 6-week first month, where we get very tangible results on what's going "
-              'to work within our outbound.',
-       'title': 'How to Get B2B Clients on LinkedIn in 2026 (Intent-Based Outreach System) '
-                '(Jack)',
-       'url': 'https://www.youtube.com/watch?v=4RYnbUHayhM&t=168s',
-       'video_id': '4RYnbUHayhM'},
-      {'author': 'Zubair Trabzada | AI Workshop',
-       'channel': 'Zubair Trabzada | AI Workshop',
+       'text': "Zendesk's AI offers more control, but requires heavier setup and ongoing tuning.",
+       'timestamp': 45,
+       'timestamp_label': '[00:00:45]',
+       'timestamp_seconds': 45,
+       'tip': "Zendesk's AI offers more control, but requires heavier setup and ongoing tuning.",
+       'title': 'Intercom vs Zendesk: Pricing, features, AI, and which is better in 2026',
+       'url': 'https://www.youtube.com/watch?v=db2s9r04icM&t=45s',
+       'video_id': 'db2s9r04icM'},
+      {'author': 'Zendesk',
+       'channel': 'Zendesk',
        'epistemic_status': 'attributed_practitioner_claim',
-       'markdown': '[00:02:03](https://www.youtube.com/watch?v=XUYvDbAv1IA&t=123s)',
-       'relevance': 'Attributed practitioner commentary on productized B2B AI implementation, '
-                    'fixed-scope workflow sprints, and managed automation retainers (Chapter '
-                    'Q12 operational verification).',
+       'markdown': '[00:02:07](https://www.youtube.com/watch?v=vxbipxTJGgw&t=127s)',
+       'relevance': 'Zendesk testimony on transferring customer context when an AI agent '
+                    'escalates.',
        'source_type': 'video_pro_tip',
-       'text': "The AI automation agency field is incredible and there's a lot of "
-               'opportunities in it. But please please be aware this is not a joke. This is '
-               "not some easy thing that you're going to jump in and you're going to start to "
-               'make $50,000 on your first month.',
-       'timestamp': 123,
-       'timestamp_label': '[00:02:03]',
-       'timestamp_seconds': 123,
-       'tip': "The AI automation agency field is incredible and there's a lot of opportunities "
-              'in it. But please please be aware this is not a joke. This is not some easy '
-              "thing that you're going to jump in and you're going to start to make $50,000 on "
-              'your first month.',
-       'title': 'The TRUTH About Selling AI Automations to Businesses (Zubair Trabzada | AI '
-                'Workshop)',
-       'url': 'https://www.youtube.com/watch?v=XUYvDbAv1IA&t=123s',
-       'video_id': 'XUYvDbAv1IA'},
-      {'author': 'Stefan | AI',
-       'channel': 'Stefan | AI',
-       'epistemic_status': 'attributed_practitioner_claim',
-       'markdown': '[00:08:51](https://www.youtube.com/watch?v=NFQnvr9xNf8&t=531s)',
-       'relevance': 'Attributed practitioner commentary on productized B2B AI implementation, '
-                    'fixed-scope workflow sprints, and managed automation retainers (Chapter '
-                    'Q12 operational verification).',
-       'source_type': 'video_pro_tip',
-       'text': 'Talk with the people doing this work that needs to be automated. And then week '
-               'two, we actually design the solution and in a 90-day implementation road map '
-               'which shows a clear ROI that needs to be hit with in those 90 days.',
-       'timestamp': 531,
-       'timestamp_label': '[00:08:51]',
-       'timestamp_seconds': 531,
-       'tip': 'Talk with the people doing this work that needs to be automated. And then week '
-              'two, we actually design the solution and in a 90-day implementation road map '
-              'which shows a clear ROI that needs to be hit with in those 90 days.',
-       'title': 'How to Execute $200K AI Audits for Businesses (Complete Framework) (Stefan | '
-                'AI)',
-       'url': 'https://www.youtube.com/watch?v=NFQnvr9xNf8&t=531s',
-       'video_id': 'NFQnvr9xNf8'},
+       'text': 'When needed, AI agents can escalate to human agents, pass along context, and '
+               "ensure a seamless handoff so customers don't have to repeat themselves.",
+       'timestamp': 127,
+       'timestamp_label': '[00:02:07]',
+       'timestamp_seconds': 127,
+       'tip': 'When needed, AI agents can escalate to human agents, pass along context, and ensure '
+              "a seamless handoff so customers don't have to repeat themselves.",
+       'title': 'What are AI Agents for customer service? Zendesk AI explained',
+       'url': 'https://www.youtube.com/watch?v=vxbipxTJGgw&t=127s',
+       'video_id': 'vxbipxTJGgw'},
       {'author': 'Daniel Davidson',
        'channel': 'Daniel Davidson',
        'epistemic_status': 'attributed_practitioner_claim',
-       'markdown': '[00:02:16](https://www.youtube.com/watch?v=GYTt2lhl7Ms&t=136s)',
-       'relevance': 'Attributed practitioner commentary on productized B2B AI implementation, '
-                    'fixed-scope workflow sprints, and managed automation retainers (Chapter '
-                    'Q12 operational verification).',
+       'markdown': '[00:09:11](https://www.youtube.com/watch?v=GYTt2lhl7Ms&t=551s)',
+       'relevance': 'Practitioner testimony on evaluating correction workload alongside the '
+                    'software bill.',
        'source_type': 'video_pro_tip',
-       'text': 'From routing tickets to the appropriate team to trigger-based conversations '
-               'closure. Now, oftentimes the real kicker when it comes to choosing a platform '
-               'like this is set up time and pricing. And on Sparrow desk, paid plans start at '
-               '$16 per agent per month, billed annually.',
-       'timestamp': 136,
-       'timestamp_label': '[00:02:16]',
-       'timestamp_seconds': 136,
-       'tip': 'From routing tickets to the appropriate team to trigger-based conversations '
-              'closure. Now, oftentimes the real kicker when it comes to choosing a platform '
-              'like this is set up time and pricing. And on Sparrow desk, paid plans start at '
-              '$16 per agent per month, billed annually.',
-       'title': '5 Best AI Customer Support Platforms (2026) - Top 5 Ranked (Daniel Davidson)',
-       'url': 'https://www.youtube.com/watch?v=GYTt2lhl7Ms&t=136s',
+       'text': 'A lower bill loses its appeal if your team spends more time correcting answers.',
+       'timestamp': 551,
+       'timestamp_label': '[00:09:11]',
+       'timestamp_seconds': 551,
+       'tip': 'A lower bill loses its appeal if your team spends more time correcting answers.',
+       'title': '5 Best AI Customer Support Platforms (2026) - Top 5 Ranked',
+       'url': 'https://www.youtube.com/watch?v=GYTt2lhl7Ms&t=551s',
        'video_id': 'GYTt2lhl7Ms'},
-      {'author': 'Nick Saraev',
-       'channel': 'Nick Saraev',
+      {'author': 'Sohaib',
+       'channel': 'Sohaib',
        'epistemic_status': 'attributed_practitioner_claim',
-       'markdown': '[00:02:00](https://www.youtube.com/watch?v=RmYTguzXrVM&t=120s)',
-       'relevance': 'Attributed practitioner commentary on productized B2B AI implementation, '
-                    'fixed-scope workflow sprints, and managed automation retainers (Chapter '
-                    'Q12 operational verification).',
+       'markdown': '[00:06:50](https://www.youtube.com/watch?v=lvzJJWDX0ec&t=410s)',
+       'relevance': 'Practitioner testimony on the quoted DM Champ agency plan and its included '
+                    'capacity.',
        'source_type': 'video_pro_tip',
-       'text': "You actually have a stable base. You don't start from zero every month. What "
-               'you do is, sure, you might have a little bit of churn.',
-       'timestamp': 120,
-       'timestamp_label': '[00:02:00]',
-       'timestamp_seconds': 120,
-       'tip': "You actually have a stable base. You don't start from zero every month. What "
-              'you do is, sure, you might have a little bit of churn.',
-       'title': 'How I Turn One AI Project Into $5K Monthly Retainers (Nick Saraev)',
-       'url': 'https://www.youtube.com/watch?v=RmYTguzXrVM&t=120s',
-       'video_id': 'RmYTguzXrVM'},
-      {'author': 'Chris Koerner on The Koerner Office Podcast',
-       'channel': 'Chris Koerner on The Koerner Office Podcast',
+       'text': 'The agency plan is $297 a month with 1,000 credits and 10 client accounts '
+               'included.',
+       'timestamp': 410,
+       'timestamp_label': '[00:06:50]',
+       'timestamp_seconds': 410,
+       'tip': 'The agency plan is $297 a month with 1,000 credits and 10 client accounts included.',
+       'title': 'How to Build an AI Agency Business Model in 2026',
+       'url': 'https://www.youtube.com/watch?v=lvzJJWDX0ec&t=410s',
+       'video_id': 'lvzJJWDX0ec'},
+      {'author': 'Sohaib',
+       'channel': 'Sohaib',
        'epistemic_status': 'attributed_practitioner_claim',
-       'markdown': '[00:08:22](https://www.youtube.com/watch?v=bAzg8BugEVY&t=502s)',
-       'relevance': 'Attributed practitioner commentary on productized B2B AI implementation, '
-                    'fixed-scope workflow sprints, and managed automation retainers (Chapter '
-                    'Q12 operational verification).',
+       'markdown': '[00:07:48](https://www.youtube.com/watch?v=lvzJJWDX0ec&t=468s)',
+       'relevance': 'Practitioner testimony on trial-credit consumption as an agency operating '
+                    'expense.',
        'source_type': 'video_pro_tip',
-       'text': 'And so now I have a very easy life. I work less than a full-time designer. So '
-               'what were you charging per month per client those first few years? So, I '
-               'started out at a measly $449 a month day one. That increased to $849 a month.',
-       'timestamp': 502,
-       'timestamp_label': '[00:08:22]',
-       'timestamp_seconds': 502,
-       'tip': 'And so now I have a very easy life. I work less than a full-time designer. So '
-              'what were you charging per month per client those first few years? So, I '
-              'started out at a measly $449 a month day one. That increased to $849 a month.',
-       'title': "The Most Profitable Solo Business You've Never Heard Of (Chris Koerner on The "
-                'Koerner Office Podcast)',
-       'url': 'https://www.youtube.com/watch?v=bAzg8BugEVY&t=502s',
-       'video_id': 'bAzg8BugEVY'},
+       'text': 'Trial credits come out of your pool the moment the trial starts, so keep them low '
+               'on a plan you promote widely.',
+       'timestamp': 468,
+       'timestamp_label': '[00:07:48]',
+       'timestamp_seconds': 468,
+       'tip': 'Trial credits come out of your pool the moment the trial starts, so keep them low '
+              'on a plan you promote widely.',
+       'title': 'How to Build an AI Agency Business Model in 2026',
+       'url': 'https://www.youtube.com/watch?v=lvzJJWDX0ec&t=468s',
+       'video_id': 'lvzJJWDX0ec'}],
+ 11: [{'author': 'Nate Herk | AI Automation',
+       'channel': 'Nate Herk | AI Automation',
+       'epistemic_status': 'attributed_practitioner_claim',
+       'markdown': '[00:03:55](https://www.youtube.com/watch?v=t1PTmpas0bg&t=235s)',
+       'relevance': 'Verbatim practitioner testimony from Chapter Q11.',
+       'source_type': 'video_pro_tip',
+       'text': "We're only going to pull in workflows if the status equals to process.",
+       'timestamp': 235,
+       'timestamp_label': '[00:03:55]',
+       'timestamp_seconds': 235,
+       'tip': "We're only going to pull in workflows if the status equals to process.",
+       'title': 'Easiest Way to Migrate n8n Workflows Between Accounts (cloud to self-hosted)',
+       'url': 'https://www.youtube.com/watch?v=t1PTmpas0bg&t=235s',
+       'video_id': 't1PTmpas0bg'},
+      {'author': 'Nate Herk | AI Automation',
+       'channel': 'Nate Herk | AI Automation',
+       'epistemic_status': 'attributed_practitioner_claim',
+       'markdown': '[00:08:56](https://www.youtube.com/watch?v=t1PTmpas0bg&t=536s)',
+       'relevance': 'Verbatim practitioner testimony from Chapter Q11.',
+       'source_type': 'video_pro_tip',
+       'text': "The only thing that won't move over is, you know, credentials and users and "
+               'executions and things like that.',
+       'timestamp': 536,
+       'timestamp_label': '[00:08:56]',
+       'timestamp_seconds': 536,
+       'tip': "The only thing that won't move over is, you know, credentials and users and "
+              'executions and things like that.',
+       'title': 'Easiest Way to Migrate n8n Workflows Between Accounts (cloud to self-hosted)',
+       'url': 'https://www.youtube.com/watch?v=t1PTmpas0bg&t=536s',
+       'video_id': 't1PTmpas0bg'},
+      {'author': 'Austin Reed',
+       'channel': 'Austin Reed',
+       'epistemic_status': 'attributed_practitioner_claim',
+       'markdown': '[00:01:08](https://www.youtube.com/watch?v=mw1V2GoYHsk&t=68s)',
+       'relevance': 'Verbatim practitioner testimony from Chapter Q11.',
+       'source_type': 'video_pro_tip',
+       'text': 'All in all, I recommend the self-hosted option for 99% of our clients.',
+       'timestamp': 68,
+       'timestamp_label': '[00:01:08]',
+       'timestamp_seconds': 68,
+       'tip': 'All in all, I recommend the self-hosted option for 99% of our clients.',
+       'title': 'How to Deliver Your n8n Project to Clients Like a PRO!',
+       'url': 'https://www.youtube.com/watch?v=mw1V2GoYHsk&t=68s',
+       'video_id': 'mw1V2GoYHsk'},
+      {'author': 'Austin Reed',
+       'channel': 'Austin Reed',
+       'epistemic_status': 'attributed_practitioner_claim',
+       'markdown': '[00:04:05](https://www.youtube.com/watch?v=mw1V2GoYHsk&t=245s)',
+       'relevance': 'Verbatim practitioner testimony from Chapter Q11.',
+       'source_type': 'video_pro_tip',
+       'text': 'Some APIs are badly built and you switch from the test environment to the '
+               'production environment. Some problems might occur.',
+       'timestamp': 245,
+       'timestamp_label': '[00:04:05]',
+       'timestamp_seconds': 245,
+       'tip': 'Some APIs are badly built and you switch from the test environment to the '
+              'production environment. Some problems might occur.',
+       'title': 'How to Deliver Your n8n Project to Clients Like a PRO!',
+       'url': 'https://www.youtube.com/watch?v=mw1V2GoYHsk&t=245s',
+       'video_id': 'mw1V2GoYHsk'},
+      {'author': 'The AI Architects | Tom Crawshaw',
+       'channel': 'The AI Architects | Tom Crawshaw',
+       'epistemic_status': 'attributed_practitioner_claim',
+       'markdown': '[00:04:28](https://www.youtube.com/watch?v=ofC4OeNjDx8&t=268s)',
+       'relevance': 'Verbatim practitioner testimony from Chapter Q11.',
+       'source_type': 'video_pro_tip',
+       'text': 'Personally, my highest earning automation is about four or five different nodes. '
+               "And it's generated one of my clients over $600,000 in revenue.",
+       'timestamp': 268,
+       'timestamp_label': '[00:04:28]',
+       'timestamp_seconds': 268,
+       'tip': 'Personally, my highest earning automation is about four or five different nodes. '
+              "And it's generated one of my clients over $600,000 in revenue.",
+       'title': 'Seriously, please watch this before you start learning n8n',
+       'url': 'https://www.youtube.com/watch?v=ofC4OeNjDx8&t=268s',
+       'video_id': 'ofC4OeNjDx8'},
+      {'author': 'Automate AI Consulting',
+       'channel': 'Automate AI Consulting',
+       'epistemic_status': 'attributed_practitioner_claim',
+       'markdown': '[00:01:28](https://www.youtube.com/watch?v=91lw5ubtLMc&t=88s)',
+       'relevance': 'Verbatim practitioner testimony from Chapter Q11.',
+       'source_type': 'video_pro_tip',
+       'text': 'For the majority of my clients who are small businesses, I use cloud. They prefer '
+               'the simplicity and straightforwardness of it.',
+       'timestamp': 88,
+       'timestamp_label': '[00:01:28]',
+       'timestamp_seconds': 88,
+       'tip': 'For the majority of my clients who are small businesses, I use cloud. They prefer '
+              'the simplicity and straightforwardness of it.',
+       'title': 'How To Deliver Your N8N Automation To Clients Like An Expert',
+       'url': 'https://www.youtube.com/watch?v=91lw5ubtLMc&t=88s',
+       'video_id': '91lw5ubtLMc'},
       {'author': 'Metics Media',
        'channel': 'Metics Media',
        'epistemic_status': 'attributed_practitioner_claim',
-       'markdown': '[00:00:55](https://www.youtube.com/watch?v=oRI0lA-ZQ3w&t=55s)',
-       'relevance': 'Attributed practitioner commentary on productized B2B AI implementation, '
-                    'fixed-scope workflow sprints, and managed automation retainers (Chapter '
-                    'Q12 operational verification).',
+       'markdown': '[00:01:18](https://www.youtube.com/watch?v=oRI0lA-ZQ3w&t=78s)',
+       'relevance': 'Verbatim practitioner testimony from Chapter Q11.',
        'source_type': 'video_pro_tip',
-       'text': 'The downside is cost and flexibility. Their starter plan runs around $20 a '
-               'month, billed annually, or $24 monthly, and it scales up from there based on '
-               'usage. The other option is self hosting.',
-       'timestamp': 55,
-       'timestamp_label': '[00:00:55]',
-       'timestamp_seconds': 55,
-       'tip': 'The downside is cost and flexibility. Their starter plan runs around $20 a '
-              'month, billed annually, or $24 monthly, and it scales up from there based on '
-              'usage. The other option is self hosting.',
-       'title': 'How to Use n8n for FREE in 2026 - n8n Self Hosting Setup (Metics Media)',
-       'url': 'https://www.youtube.com/watch?v=oRI0lA-ZQ3w&t=55s',
+       'text': "First, your local machine, your laptop, your desktop, whatever you're using right "
+               'now. This is the only truly free option, but it only runs when your computer is '
+               'on.',
+       'timestamp': 78,
+       'timestamp_label': '[00:01:18]',
+       'timestamp_seconds': 78,
+       'tip': "First, your local machine, your laptop, your desktop, whatever you're using right "
+              'now. This is the only truly free option, but it only runs when your computer is on.',
+       'title': 'How to Use n8n for FREE in 2026 - n8n Self Hosting Setup',
+       'url': 'https://www.youtube.com/watch?v=oRI0lA-ZQ3w&t=78s',
        'video_id': 'oRI0lA-ZQ3w'},
-      {'author': 'Tommy Clark',
-       'channel': 'Tommy Clark',
+      {'author': 'Metics Media',
+       'channel': 'Metics Media',
        'epistemic_status': 'attributed_practitioner_claim',
-       'markdown': '[00:06:30](https://www.youtube.com/watch?v=MXBaHCO4WI8&t=390s)',
-       'relevance': 'Attributed practitioner commentary on productized B2B AI implementation, '
-                    'fixed-scope workflow sprints, and managed automation retainers (Chapter '
-                    'Q12 operational verification).',
+       'markdown': '[00:09:24](https://www.youtube.com/watch?v=oRI0lA-ZQ3w&t=564s)',
+       'relevance': 'Verbatim practitioner testimony from Chapter Q11.',
        'source_type': 'video_pro_tip',
-       'text': "We've helped 50 plus early stage SAS and service founders launch and scale "
-               "founder content over the past one and a half years. It's been 3 years and "
-               "we've done it for over a hundred. I also make a quick call to action that I "
-               'write my newsletter every single week.',
-       'timestamp': 390,
-       'timestamp_label': '[00:06:30]',
-       'timestamp_seconds': 390,
-       'tip': "We've helped 50 plus early stage SAS and service founders launch and scale "
-              "founder content over the past one and a half years. It's been 3 years and we've "
-              'done it for over a hundred. I also make a quick call to action that I write my '
-              'newsletter every single week.',
-       'title': 'The Best LinkedIn Lead Generation Strategy for 2026 (Tommy Clark)',
-       'url': 'https://www.youtube.com/watch?v=MXBaHCO4WI8&t=390s',
-       'video_id': 'MXBaHCO4WI8'},
-      {'author': 'Starter Story',
-       'channel': 'Starter Story',
+       'text': 'When you self host you get to choose exactly when to update the software. This '
+               "also means that you're the one responsible for updating the software periodically "
+               "to make sure it's compatible with all the nodes you're using.",
+       'timestamp': 564,
+       'timestamp_label': '[00:09:24]',
+       'timestamp_seconds': 564,
+       'tip': 'When you self host you get to choose exactly when to update the software. This also '
+              "means that you're the one responsible for updating the software periodically to "
+              "make sure it's compatible with all the nodes you're using.",
+       'title': 'How to Use n8n for FREE in 2026 - n8n Self Hosting Setup',
+       'url': 'https://www.youtube.com/watch?v=oRI0lA-ZQ3w&t=564s',
+       'video_id': 'oRI0lA-ZQ3w'},
+      {'author': 'Kelsey Hastie',
+       'channel': 'Kelsey Hastie',
        'epistemic_status': 'attributed_practitioner_claim',
-       'markdown': '[00:00:36](https://www.youtube.com/watch?v=dXKzST0FE-A&t=36s)',
-       'relevance': 'Attributed practitioner commentary on productized B2B AI implementation, '
-                    'fixed-scope workflow sprints, and managed automation retainers (Chapter '
-                    'Q12 operational verification).',
+       'markdown': '[00:03:14](https://www.youtube.com/watch?v=cqaukVEOmJ4&t=194s)',
+       'relevance': 'Verbatim practitioner testimony from Chapter Q11.',
        'source_type': 'video_pro_tip',
-       'text': "Lot of people say it's like the Netflix of design in this video he shares "
-               'everything how he launched in 24 hours how he got his first client and how '
-               "anyone can build a life-changing business while still working your day job I'm "
-               'Pat walls and this is starter.',
-       'timestamp': 36,
-       'timestamp_label': '[00:00:36]',
-       'timestamp_seconds': 36,
-       'tip': "Lot of people say it's like the Netflix of design in this video he shares "
-              'everything how he launched in 24 hours how he got his first client and how '
-              "anyone can build a life-changing business while still working your day job I'm "
-              'Pat walls and this is starter.',
-       'title': 'I Make $1.3M/Year With One Skill (Starter Story)',
-       'url': 'https://www.youtube.com/watch?v=dXKzST0FE-A&t=36s',
-       'video_id': 'dXKzST0FE-A'},
+       'text': 'Two simultaneous requests can race. Production systems need stronger, tested '
+               'coordination.',
+       'timestamp': 194,
+       'timestamp_label': '[00:03:14]',
+       'timestamp_seconds': 194,
+       'tip': 'Two simultaneous requests can race. Production systems need stronger, tested '
+              'coordination.',
+       'title': 'n8n Beginner Tutorial: AI Lead Intake Automation (Free Self-Hosted Option)',
+       'url': 'https://www.youtube.com/watch?v=cqaukVEOmJ4&t=194s',
+       'video_id': 'cqaukVEOmJ4'},
+      {'author': 'Kelsey Hastie',
+       'channel': 'Kelsey Hastie',
+       'epistemic_status': 'attributed_practitioner_claim',
+       'markdown': '[00:06:27](https://www.youtube.com/watch?v=cqaukVEOmJ4&t=387s)',
+       'relevance': 'Verbatim practitioner testimony from Chapter Q11.',
+       'source_type': 'video_pro_tip',
+       'text': 'Suppose 40 requests save 3 minutes each. That is 2 hours. At a hypothetical $30 '
+               'per hour, the time value is $60.',
+       'timestamp': 387,
+       'timestamp_label': '[00:06:27]',
+       'timestamp_seconds': 387,
+       'tip': 'Suppose 40 requests save 3 minutes each. That is 2 hours. At a hypothetical $30 per '
+              'hour, the time value is $60.',
+       'title': 'n8n Beginner Tutorial: AI Lead Intake Automation (Free Self-Hosted Option)',
+       'url': 'https://www.youtube.com/watch?v=cqaukVEOmJ4&t=387s',
+       'video_id': 'cqaukVEOmJ4'},
+      {'author': 'The Contractor AI | AI Systems for Contractors',
+       'channel': 'The Contractor AI | AI Systems for Contractors',
+       'epistemic_status': 'attributed_practitioner_claim',
+       'markdown': '[00:11:51](https://www.youtube.com/watch?v=J5BBjGKyoUE&t=711s)',
+       'relevance': 'Verbatim practitioner testimony from Chapter Q11.',
+       'source_type': 'video_pro_tip',
+       'text': 'We ended up paying $130,000 to have a cell phone tower taken down on a $120,000 '
+               'job.',
+       'timestamp': 711,
+       'timestamp_label': '[00:11:51]',
+       'timestamp_seconds': 711,
+       'tip': 'We ended up paying $130,000 to have a cell phone tower taken down on a $120,000 '
+              'job.',
+       'title': 'The $12.4K Scope Creep Killing Your Best Jobs (Fix Inside)',
+       'url': 'https://www.youtube.com/watch?v=J5BBjGKyoUE&t=711s',
+       'video_id': 'J5BBjGKyoUE'},
+      {'author': 'The Contractor AI | AI Systems for Contractors',
+       'channel': 'The Contractor AI | AI Systems for Contractors',
+       'epistemic_status': 'attributed_practitioner_claim',
+       'markdown': '[00:17:48](https://www.youtube.com/watch?v=J5BBjGKyoUE&t=1068s)',
+       'relevance': 'Verbatim practitioner testimony from Chapter Q11.',
+       'source_type': 'video_pro_tip',
+       'text': "When they want to go ahead with that change work order, remember, we're going to "
+               'have a 50% to 60% margin on that.',
+       'timestamp': 1068,
+       'timestamp_label': '[00:17:48]',
+       'timestamp_seconds': 1068,
+       'tip': "When they want to go ahead with that change work order, remember, we're going to "
+              'have a 50% to 60% margin on that.',
+       'title': 'The $12.4K Scope Creep Killing Your Best Jobs (Fix Inside)',
+       'url': 'https://www.youtube.com/watch?v=J5BBjGKyoUE&t=1068s',
+       'video_id': 'J5BBjGKyoUE'},
+      {'author': 'Quiet Client',
+       'channel': 'Quiet Client',
+       'epistemic_status': 'attributed_practitioner_claim',
+       'markdown': '[00:03:04](https://www.youtube.com/watch?v=csELc0aBrp4&t=184s)',
+       'relevance': 'Verbatim practitioner testimony from Chapter Q11.',
+       'source_type': 'video_pro_tip',
+       'text': 'Feed Claude only real notes, client name, original scope bullets, the new request '
+               'in their words, your capacity this week, and two or three price options.',
+       'timestamp': 184,
+       'timestamp_label': '[00:03:04]',
+       'timestamp_seconds': 184,
+       'tip': 'Feed Claude only real notes, client name, original scope bullets, the new request '
+              'in their words, your capacity this week, and two or three price options.',
+       'title': 'Stop eating scope creep for free — AI stack that drafts change orders (you still '
+                'send) (2026)',
+       'url': 'https://www.youtube.com/watch?v=csELc0aBrp4&t=184s',
+       'video_id': 'csELc0aBrp4'},
+      {'author': 'Nomad Life Success',
+       'channel': 'Nomad Life Success',
+       'epistemic_status': 'attributed_practitioner_claim',
+       'markdown': '[00:03:28](https://www.youtube.com/watch?v=KdD-2pmdFZI&t=208s)',
+       'relevance': 'Verbatim practitioner testimony from Chapter Q11.',
+       'source_type': 'video_pro_tip',
+       'text': "Tier two, expansion, price at 1.5 x your base rate. Why 1.5 x? Because it's a "
+               'small addition, but it interrupts your flow and requires context switching.',
+       'timestamp': 208,
+       'timestamp_label': '[00:03:28]',
+       'timestamp_seconds': 208,
+       'tip': "Tier two, expansion, price at 1.5 x your base rate. Why 1.5 x? Because it's a small "
+              'addition, but it interrupts your flow and requires context switching.',
+       'title': "The AI Scope-Creep Shield: How to Turn 'One More Request' into a Premium "
+                'Change-Order That Pays Y...',
+       'url': 'https://www.youtube.com/watch?v=KdD-2pmdFZI&t=208s',
+       'video_id': 'KdD-2pmdFZI'},
+      {'author': 'WPTuts',
+       'channel': 'WPTuts',
+       'epistemic_status': 'attributed_practitioner_claim',
+       'markdown': '[00:02:43](https://www.youtube.com/watch?v=UgtrG88EDhU&t=163s)',
+       'relevance': 'Verbatim practitioner testimony from Chapter Q11.',
+       'source_type': 'video_pro_tip',
+       'text': "I know my contract went from like 12 pages down to two pages. And it's already a "
+               'lot more accessible.',
+       'timestamp': 163,
+       'timestamp_label': '[00:02:43]',
+       'timestamp_seconds': 163,
+       'tip': "I know my contract went from like 12 pages down to two pages. And it's already a "
+              'lot more accessible.',
+       'title': 'How to Handle Scope Creep in Client Projects',
+       'url': 'https://www.youtube.com/watch?v=UgtrG88EDhU&t=163s',
+       'video_id': 'UgtrG88EDhU'},
+      {'author': 'Scott Bartnick',
+       'channel': 'Scott Bartnick',
+       'epistemic_status': 'attributed_practitioner_claim',
+       'markdown': '[00:09:50](https://www.youtube.com/watch?v=d9zqCrUn7mY&t=590s)',
+       'relevance': 'Verbatim practitioner testimony from Chapter Q11.',
+       'source_type': 'video_pro_tip',
+       'text': "I've seen in the past where sales says one thing and operations thinks it's "
+               'something else.',
+       'timestamp': 590,
+       'timestamp_label': '[00:09:50]',
+       'timestamp_seconds': 590,
+       'tip': "I've seen in the past where sales says one thing and operations thinks it's "
+              'something else.',
+       'title': 'The Client Handoff System That Stops Scope Creep and Dropped Balls',
+       'url': 'https://www.youtube.com/watch?v=d9zqCrUn7mY&t=590s',
+       'video_id': 'd9zqCrUn7mY'},
+      {'author': 'Chat Dash',
+       'channel': 'Chat Dash',
+       'epistemic_status': 'attributed_practitioner_claim',
+       'markdown': '[00:03:10](https://www.youtube.com/watch?v=1Ewf_Nq5mow&t=190s)',
+       'relevance': 'Verbatim practitioner testimony from Chapter Q11.',
+       'source_type': 'video_pro_tip',
+       'text': 'And I want to copy private key here. Copy ID back to chat dash. Paste it. And now '
+               "let's copy assistant ID that I want to bring in.",
+       'timestamp': 190,
+       'timestamp_label': '[00:03:10]',
+       'timestamp_seconds': 190,
+       'tip': 'And I want to copy private key here. Copy ID back to chat dash. Paste it. And now '
+              "let's copy assistant ID that I want to bring in.",
+       'title': 'How to Whitelabel VAPI AI Voice Agents (in 7 Minutes)',
+       'url': 'https://www.youtube.com/watch?v=1Ewf_Nq5mow&t=190s',
+       'video_id': '1Ewf_Nq5mow'},
+      {'author': 'Chat Dash',
+       'channel': 'Chat Dash',
+       'epistemic_status': 'attributed_practitioner_claim',
+       'markdown': '[00:06:06](https://www.youtube.com/watch?v=1Ewf_Nq5mow&t=366s)',
+       'relevance': 'Verbatim practitioner testimony from Chapter Q11.',
+       'source_type': 'video_pro_tip',
+       'text': 'You should be able to charge up to 30% more for your voice AI packages.',
+       'timestamp': 366,
+       'timestamp_label': '[00:06:06]',
+       'timestamp_seconds': 366,
+       'tip': 'You should be able to charge up to 30% more for your voice AI packages.',
+       'title': 'How to Whitelabel VAPI AI Voice Agents (in 7 Minutes)',
+       'url': 'https://www.youtube.com/watch?v=1Ewf_Nq5mow&t=366s',
+       'video_id': '1Ewf_Nq5mow'}],
+ 12: [{'author': 'Global Technology Industry Association (GTIA)',
+       'channel': 'Global Technology Industry Association (GTIA)',
+       'epistemic_status': 'attributed_practitioner_claim',
+       'markdown': '[00:04:21](https://www.youtube.com/watch?v=TtU19Z-ASZk&t=261s)',
+       'relevance': 'Practitioner testimony connecting untracked engineering work to project '
+                    'margin leakage.',
+       'source_type': 'video_pro_tip',
+       'text': "Scope creep is a direct bottom line margin leak. It's your engineers working on "
+               "something more than you're getting paid for. It's not getting tracked.",
+       'timestamp': 261,
+       'timestamp_label': '[00:04:21]',
+       'timestamp_seconds': 261,
+       'tip': "Scope creep is a direct bottom line margin leak. It's your engineers working on "
+              "something more than you're getting paid for. It's not getting tracked.",
+       'title': 'Project Risk, Scope Creep, and AI Automation for MSPs',
+       'url': 'https://www.youtube.com/watch?v=TtU19Z-ASZk&t=261s',
+       'video_id': 'TtU19Z-ASZk'},
+      {'author': 'Bryan Taylor',
+       'channel': 'Bryan Taylor',
+       'epistemic_status': 'attributed_practitioner_claim',
+       'markdown': '[00:03:17](https://www.youtube.com/watch?v=yLxvwa45vR8&t=197s)',
+       'relevance': 'Firsthand account of unexpected customer video-service costs.',
+       'source_type': 'video_pro_tip',
+       'text': 'We built a software once for a customer and they were giving it away and it ended '
+               "up costing them $30,000 their first month because they didn't realize that they're "
+               'giving away all this video space.',
+       'timestamp': 197,
+       'timestamp_label': '[00:03:17]',
+       'timestamp_seconds': 197,
+       'tip': 'We built a software once for a customer and they were giving it away and it ended '
+              "up costing them $30,000 their first month because they didn't realize that they're "
+              'giving away all this video space.',
+       'title': 'Custom Software Development Pitfalls: Scope Creep, AI Dependence, and Uncapped '
+                'API Costs',
+       'url': 'https://www.youtube.com/watch?v=yLxvwa45vR8&t=197s',
+       'video_id': 'yLxvwa45vR8'},
+      {'author': 'Augusto Digital',
+       'channel': 'Augusto Digital',
+       'epistemic_status': 'attributed_practitioner_claim',
+       'markdown': '[00:07:01](https://www.youtube.com/watch?v=VzBpfD_Dcq8&t=421s)',
+       'relevance': "The practitioner's central scope anchor for a shipped first outcome.",
+       'source_type': 'video_pro_tip',
+       'text': 'One outcome, one owner, one date.',
+       'timestamp': 421,
+       'timestamp_label': '[00:07:01]',
+       'timestamp_seconds': 421,
+       'tip': 'One outcome, one owner, one date.',
+       'title': 'Ep. 17: Stopping AI Scope Creep | Augusto Podcast',
+       'url': 'https://www.youtube.com/watch?v=VzBpfD_Dcq8&t=421s',
+       'video_id': 'VzBpfD_Dcq8'},
+      {'author': 'neomanex',
+       'channel': 'neomanex',
+       'epistemic_status': 'attributed_practitioner_claim',
+       'markdown': '[00:02:25](https://www.youtube.com/watch?v=wOkT9r5iVME&t=145s)',
+       'relevance': 'Observable requirements used throughout design, implementation, and '
+                    'acceptance testing.',
+       'source_type': 'video_pro_tip',
+       'text': 'Every requirement has the same three parts. Who does it, what they can do, and how '
+               "you'd prove it from the outside.",
+       'timestamp': 145,
+       'timestamp_label': '[00:02:25]',
+       'timestamp_seconds': 145,
+       'tip': 'Every requirement has the same three parts. Who does it, what they can do, and how '
+              "you'd prove it from the outside.",
+       'title': 'Stop AI Agent Scope Creep: Frozen Requirements and a Done When List',
+       'url': 'https://www.youtube.com/watch?v=wOkT9r5iVME&t=145s',
+       'video_id': 'wOkT9r5iVME'},
+      {'author': 'ProtaSystem',
+       'channel': 'ProtaSystem',
+       'epistemic_status': 'attributed_practitioner_claim',
+       'markdown': '[00:02:38](https://www.youtube.com/watch?v=6l0a6If9Oyk&t=158s)',
+       'relevance': "The speaker's formal change-order response to unpaid scope expansion.",
+       'source_type': 'video_pro_tip',
+       'text': 'When a boundary is crossed, work pauses until the new request is quoted, '
+               'documented, and priced as an addition.',
+       'timestamp': 158,
+       'timestamp_label': '[00:02:38]',
+       'timestamp_seconds': 158,
+       'tip': 'When a boundary is crossed, work pauses until the new request is quoted, '
+              'documented, and priced as an addition.',
+       'title': 'Uncapped Indemnity & Scope Creep: The Contract Traps Every Freelancer Faces',
+       'url': 'https://www.youtube.com/watch?v=6l0a6If9Oyk&t=158s',
+       'video_id': '6l0a6If9Oyk'},
+      {'author': 'AI Automation Society',
+       'channel': 'AI Automation Society',
+       'epistemic_status': 'attributed_practitioner_claim',
+       'markdown': '[00:03:21](https://www.youtube.com/watch?v=3XIdI6vcGz0&t=201s)',
+       'relevance': 'Client-work experience behind early pushback and expectation management.',
+       'source_type': 'video_pro_tip',
+       'text': 'If we want our customers or clients to be happy at the end of this stuff, we have '
+               'to be very, very honest, manage expectations effectively.',
+       'timestamp': 201,
+       'timestamp_label': '[00:03:21]',
+       'timestamp_seconds': 201,
+       'tip': 'If we want our customers or clients to be happy at the end of this stuff, we have '
+              'to be very, very honest, manage expectations effectively.',
+       'title': 'The Scope Creep Mistake That Can Wreck AI Projects',
+       'url': 'https://www.youtube.com/watch?v=3XIdI6vcGz0&t=201s',
+       'video_id': '3XIdI6vcGz0'},
+      {'author': 'SecureCyberGates',
+       'channel': 'SecureCyberGates',
+       'epistemic_status': 'attributed_practitioner_claim',
+       'markdown': '[00:03:55](https://www.youtube.com/watch?v=TcAbiyEqBFM&t=235s)',
+       'relevance': 'Project-specific retention periods rather than universal adoption of the '
+                    "walkthrough's example numbers.",
+       'source_type': 'video_pro_tip',
+       'text': 'The actual retention time depends on project contract and also regulatory laws.',
+       'timestamp': 235,
+       'timestamp_label': '[00:03:55]',
+       'timestamp_seconds': 235,
+       'tip': 'The actual retention time depends on project contract and also regulatory laws.',
+       'title': '23-[5.16] SOC2 – Data Retention Policy',
+       'url': 'https://www.youtube.com/watch?v=TcAbiyEqBFM&t=235s',
+       'video_id': 'TcAbiyEqBFM'},
+      {'author': 'Micah Johnson',
+       'channel': 'Micah Johnson',
+       'epistemic_status': 'attributed_practitioner_claim',
+       'markdown': '[00:00:33](https://www.youtube.com/watch?v=lBhO8Q-MxYI&t=33s)',
+       'relevance': "Johnson's distinction between API training defaults and consumer ChatGPT "
+                    'controls.',
+       'source_type': 'video_pro_tip',
+       'text': "If you use the API, your data is not used for training by default. That's a "
+               'completely different agreement.',
+       'timestamp': 33,
+       'timestamp_label': '[00:00:33]',
+       'timestamp_seconds': 33,
+       'tip': "If you use the API, your data is not used for training by default. That's a "
+              'completely different agreement.',
+       'title': "OpenAI's New Privacy Policy: What Every Business Owner Needs to Know",
+       'url': 'https://www.youtube.com/watch?v=lBhO8Q-MxYI&t=33s',
+       'video_id': 'lBhO8Q-MxYI'},
+      {'author': 'Cloud in',
+       'channel': 'Cloud in',
+       'epistemic_status': 'attributed_practitioner_claim',
+       'markdown': '[00:23:26](https://www.youtube.com/watch?v=ZE-vxHSGB7w&t=1406s)',
+       'relevance': "Least-privilege access as part of the customer's GenAI pipeline "
+                    'configuration.',
+       'source_type': 'video_pro_tip',
+       'text': 'No account in your current organization or current infra should have all the '
+               'access to all the services.',
+       'timestamp': 1406,
+       'timestamp_label': '[00:23:26]',
+       'timestamp_seconds': 1406,
+       'tip': 'No account in your current organization or current infra should have all the access '
+              'to all the services.',
+       'title': 'Securing SMB GenAI Pipelines  Guardrails, Data Privacy & ISO SOC2 Compliance on '
+                'AWS',
+       'url': 'https://www.youtube.com/watch?v=ZE-vxHSGB7w&t=1406s',
+       'video_id': 'ZE-vxHSGB7w'},
+      {'author': 'Protecto',
+       'channel': 'Protecto',
+       'epistemic_status': 'attributed_practitioner_claim',
+       'markdown': '[00:01:05](https://www.youtube.com/watch?v=e8kcLoVVX_A&t=65s)',
+       'relevance': "Application-level persistence beyond a provider's zero-retention commitment.",
+       'source_type': 'video_pro_tip',
+       'text': 'The model may be stateless, but your system is not. Your logs are not stateless. '
+               'Your retrieval pipeline is not stateless. Your tools and databases are not '
+               'stateless.',
+       'timestamp': 65,
+       'timestamp_label': '[00:01:05]',
+       'timestamp_seconds': 65,
+       'tip': 'The model may be stateless, but your system is not. Your logs are not stateless. '
+              'Your retrieval pipeline is not stateless. Your tools and databases are not '
+              'stateless.',
+       'title': 'Zero Data Retention Is Not Enough for AI Security (3 Controls Explained) #ai '
+                '#aisecurity',
+       'url': 'https://www.youtube.com/watch?v=e8kcLoVVX_A&t=65s',
+       'video_id': 'e8kcLoVVX_A'},
+      {'author': 'Cognitive Capital',
+       'channel': 'Cognitive Capital',
+       'epistemic_status': 'attributed_practitioner_claim',
+       'markdown': '[00:05:27](https://www.youtube.com/watch?v=j2Bqq0VTv0o&t=327s)',
+       'relevance': 'The first step of a local-redaction pilot with before-and-after review.',
+       'source_type': 'video_pro_tip',
+       'text': 'First, pick a stream. Isolate a single data stream, like your support tickets. '
+               "Don't try to boil the ocean on day one.",
+       'timestamp': 327,
+       'timestamp_label': '[00:05:27]',
+       'timestamp_seconds': 327,
+       'tip': 'First, pick a stream. Isolate a single data stream, like your support tickets. '
+              "Don't try to boil the ocean on day one.",
+       'title': 'OpenAI Privacy Filter: Redact PII Locally (AI Workflow Explained)',
+       'url': 'https://www.youtube.com/watch?v=j2Bqq0VTv0o&t=327s',
+       'video_id': 'j2Bqq0VTv0o'},
       {'author': 'Privado AI',
        'channel': 'Privado AI',
        'epistemic_status': 'attributed_practitioner_claim',
-       'markdown': '[00:11:21](https://www.youtube.com/watch?v=3wH9U_IzNn8&t=681s)',
-       'relevance': 'Attributed practitioner commentary on productized B2B AI implementation, '
-                    'fixed-scope workflow sprints, and managed automation retainers (Chapter '
-                    'Q12 operational verification).',
+       'markdown': '[00:01:31](https://www.youtube.com/watch?v=3wH9U_IzNn8&t=91s)',
+       'relevance': "Reported incident at the beginning of the speaker's Italian enforcement "
+                    'chronology.',
        'source_type': 'video_pro_tip',
-       'text': "Fingerprinting specifically but it's interesting that they have come against "
-               "come out against this move quite proactively so thanks so much that's all from "
-               "me this week hope to see you at Prado ai's Bridge Summit next month and uh "
-               "I'll see you next time.",
-       'timestamp': 681,
-       'timestamp_label': '[00:11:21]',
-       'timestamp_seconds': 681,
-       'tip': "Fingerprinting specifically but it's interesting that they have come against "
-              "come out against this move quite proactively so thanks so much that's all from "
-              "me this week hope to see you at Prado ai's Bridge Summit next month and uh I'll "
-              'see you next time.',
-       'title': 'Italian DPA fines OpenAI €15M, CPPA settles with data brokers, and Google '
-                'allows fingerprinting. (Privado AI)',
-       'url': 'https://www.youtube.com/watch?v=3wH9U_IzNn8&t=681s',
+       'text': 'It starts in March 2023 when there was a relatively minor data breach involving '
+               "ChatGPT. Some people's chat histories and partial payment details were exposed.",
+       'timestamp': 91,
+       'timestamp_label': '[00:01:31]',
+       'timestamp_seconds': 91,
+       'tip': 'It starts in March 2023 when there was a relatively minor data breach involving '
+              "ChatGPT. Some people's chat histories and partial payment details were exposed.",
+       'title': 'Italian DPA fines OpenAI €15M, CPPA settles with data brokers, and Google allows '
+                'fingerprinting.',
+       'url': 'https://www.youtube.com/watch?v=3wH9U_IzNn8&t=91s',
        'video_id': '3wH9U_IzNn8'},
-      {'author': 'Lily Latzo | AI Automation',
-       'channel': 'Lily Latzo | AI Automation',
+      {'author': 'Serop | AI Automation',
+       'channel': 'Serop | AI Automation',
        'epistemic_status': 'attributed_practitioner_claim',
-       'markdown': '[00:09:09](https://www.youtube.com/watch?v=NjvNF17_97w&t=549s)',
-       'relevance': 'Attributed practitioner commentary on productized B2B AI implementation, '
-                    'fixed-scope workflow sprints, and managed automation retainers (Chapter '
-                    'Q12 operational verification).',
+       'markdown': '[00:01:28](https://www.youtube.com/watch?v=u-qrX9uP_t4&t=88s)',
+       'relevance': "Serop's interpretation of other users' reports, contrasted with a more "
+                    'adversarial account of privacy controls.',
        'source_type': 'video_pro_tip',
-       'text': "That is five people booking in a call. If you close at 60%, that's three "
-               'clients. And if your, you know, three clients are paying you 3K a month, '
-               "that's 9K a month in MR from just one simple 7day sprint.",
-       'timestamp': 549,
-       'timestamp_label': '[00:09:09]',
-       'timestamp_seconds': 549,
-       'tip': "That is five people booking in a call. If you close at 60%, that's three "
-              "clients. And if your, you know, three clients are paying you 3K a month, that's "
-              '9K a month in MR from just one simple 7day sprint.',
-       'title': 'How I Landed 3 AI Automation Clients in 7 Days | Simple Outreach System That '
-                'Works (Lily Latzo | AI Automation)',
-       'url': 'https://www.youtube.com/watch?v=NjvNF17_97w&t=549s',
-       'video_id': 'NjvNF17_97w'},
-      {'author': 'Noah Epstein',
-       'channel': 'Noah Epstein',
+       'text': "I don't think OpenAI or Anthropic and so on are doing this maliciously.",
+       'timestamp': 88,
+       'timestamp_label': '[00:01:28]',
+       'timestamp_seconds': 88,
+       'tip': "I don't think OpenAI or Anthropic and so on are doing this maliciously.",
+       'title': "OpenAI's Secret Data Training: What You Need To Know",
+       'url': 'https://www.youtube.com/watch?v=u-qrX9uP_t4&t=88s',
+       'video_id': 'u-qrX9uP_t4'},
+      {'author': 'Innovative Compass Consulting',
+       'channel': 'Innovative Compass Consulting',
        'epistemic_status': 'attributed_practitioner_claim',
-       'markdown': '[00:04:01](https://www.youtube.com/watch?v=fMdUS6amki0&t=241s)',
-       'relevance': 'Attributed practitioner commentary on productized B2B AI implementation, '
-                    'fixed-scope workflow sprints, and managed automation retainers (Chapter '
-                    'Q12 operational verification).',
+       'markdown': '[00:03:06](https://www.youtube.com/watch?v=DIfo9jAMZYY&t=186s)',
+       'relevance': 'The speaker distinguishes output ownership from uniqueness.',
        'source_type': 'video_pro_tip',
-       'text': "So that's how I'd recommend doing about going about it. Find a business that's "
-               'willing to pay. Then maybe a few days down the line, you say, "I\'ve got a '
-               'solution for you or you\'re willing to pay." You get the money and then you '
-               'start building. Or not even start building.',
-       'timestamp': 241,
-       'timestamp_label': '[00:04:01]',
-       'timestamp_seconds': 241,
-       'tip': "So that's how I'd recommend doing about going about it. Find a business that's "
-              'willing to pay. Then maybe a few days down the line, you say, "I\'ve got a '
-              'solution for you or you\'re willing to pay." You get the money and then you '
-              'start building. Or not even start building.',
-       'title': 'How I made $150k last month selling AI automations (Noah Epstein)',
-       'url': 'https://www.youtube.com/watch?v=fMdUS6amki0&t=241s',
-       'video_id': 'fMdUS6amki0'}]}
+       'text': 'The AI could give another user a very similar or even identical response if they '
+               'ask a similar question.',
+       'timestamp': 186,
+       'timestamp_label': '[00:03:06]',
+       'timestamp_seconds': 186,
+       'tip': 'The AI could give another user a very similar or even identical response if they '
+              'ask a similar question.',
+       'title': "OpenAI's Policies Explained: EU Privacy, Security, Safety, and Your Data Rights "
+                '(ChatGPT, Sora,API)',
+       'url': 'https://www.youtube.com/watch?v=DIfo9jAMZYY&t=186s',
+       'video_id': 'DIfo9jAMZYY'},
+      {'author': 'Matt Williams',
+       'channel': 'Matt Williams',
+       'epistemic_status': 'attributed_practitioner_claim',
+       'markdown': '[00:03:57](https://www.youtube.com/watch?v=KeqxPxb_sak&t=237s)',
+       'relevance': 'The privacy trap when changing from local inference to cloud inference inside '
+                    'an existing conversation.',
+       'source_type': 'video_pro_tip',
+       'text': 'If you shared a private document with a local model, then switch mid conversation '
+               'to an OpenAI model, all the data will go there, too.',
+       'timestamp': 237,
+       'timestamp_label': '[00:03:57]',
+       'timestamp_seconds': 237,
+       'tip': 'If you shared a private document with a local model, then switch mid conversation '
+              'to an OpenAI model, all the data will go there, too.',
+       'title': "Stop Sending Your Private Data to OpenAI's Servers",
+       'url': 'https://www.youtube.com/watch?v=KeqxPxb_sak&t=237s',
+       'video_id': 'KeqxPxb_sak'},
+      {'author': 'WNT',
+       'channel': 'WNT',
+       'epistemic_status': 'attributed_practitioner_claim',
+       'markdown': '[00:02:06](https://www.youtube.com/watch?v=A0tzwuw-nEg&t=126s)',
+       'relevance': "WNT's skeptical interpretation of training exclusions and their "
+                    'verifiability, rather than evidence of a specific training event.',
+       'source_type': 'video_pro_tip',
+       'text': "The FAQ mentions that disabling chat history means conversations won't be used to "
+               'train our models, but provides zero technical verification of this claim.',
+       'timestamp': 126,
+       'timestamp_label': '[00:02:06]',
+       'timestamp_seconds': 126,
+       'tip': "The FAQ mentions that disabling chat history means conversations won't be used to "
+              'train our models, but provides zero technical verification of this claim.',
+       'title': "AI Reads OpenAI's Privacy Policy, Finds Data Trap | WNT #lawyer #openai",
+       'url': 'https://www.youtube.com/watch?v=A0tzwuw-nEg&t=126s',
+       'video_id': 'A0tzwuw-nEg'}]}

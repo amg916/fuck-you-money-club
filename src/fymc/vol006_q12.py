@@ -5,632 +5,901 @@ CHAPTER_12 = {
     "chapter_id": "Q12",
     "chapter_number": 12,
     "question_number": 12,
-    "slug": "first-30-day-launch-sprint-kill-fix-scale-gates",
-    "question_prompt": "What is the exact Day-1-to-Day-30 execution schedule for launching productized ai agencies, and what quantitative thresholds govern Kill, Fix, or Scale decisions at Day 30/60/90?",
+    "slug": "set-privacy-contract-and-acceptance-boundaries",
+    "question_prompt": "Which data-handling, requirements, contractual, and cost risks must be addressed before an AI client project is treated as complete?",
     "kicker": "Q12 / THE BIG MONEY PLAYBOOKS",
-    "title": "The First 30-Day Launch Sprint & Kill / Fix / Scale Gates",
-    "subtitle": "A Five-Person Sprint for Fixed-Scope AI Implementations: Authorized Access, Paid Pilots, Evaluation Evidence, and Day-30/60/90 Cash Decisions",
-    "layout_template": "thirty_day_plan",
-    "reading_time_minutes": 14,
+    "title": "Set Privacy, Contract, and Acceptance Boundaries",
+    "subtitle": "Data-retention policies, OpenAI privacy and training settings, local PII redaction, AWS guardrails, frozen requirements, scope creep, indemnity clauses, and uncapped API costs.",
+    "layout_template": "action_worksheet_summary",
+    "reading_time_minutes": 15,
     "executive_summary": (
-        "Candidate #29, Productized AI Agencies, holds Rank #08 with an 89/100 "
-        "Money-to-Manpower Score and 23 mapped plays. Launch through one narrow "
-        "workflow, one paid implementation offer, and one measurable acceptance "
-        "contract rather than a catalog of custom agents. This sprint assigns "
-        "commercial and technical ownership across two full-time operators and "
-        "three contractors, caps initial cash exposure at $7,500, and converts "
-        "daily evidence into explicit Day-30/60/90 decisions. The canonical "
-        "annual owner-profit cases remain $20,000 Conservative, $165,000 Base, "
-        "and $400,000 Scaled; client savings never become agency revenue. "
-        "Scale requires paid demand, repeatable delivery, safe exception handling, "
-        "and positive project economics. Fix weak evidence with a bounded "
-        "experiment; kill an exhausted offer rather than financing indefinite customization."
+        "The operators converge on explicit boundaries: define the shipped outcome, make requirements observable, "
+        "separate extra work from the original fee, and control sensitive data before sending it onward. "
+        "Augusto Digital reports shipping a human-reviewed quoting workflow in six weeks; neomanex reports "
+        "36 requirements passing after five testing rounds. Bryan Taylor's customer incurred $30,000 in "
+        "first-month costs after giving away video storage and usage. Privacy approaches diverge: Micah "
+        "Johnson favors the API for sensitive business work, Matt Williams demonstrates local Ollama models, "
+        "and Protecto separates training, retention, and residency rather than treating any one promise as "
+        "complete protection. ProtaSystem presses for priced change orders and an aggregate liability cap. "
+        "SecureCyberGates makes retention and deletion verification explicit, while Cognitive Capital emphasizes "
+        "testing redaction against actual business data."
     ),
     "key_metrics": [
         {
-            "label": "Conservative",
-            "value": "$100,000",
-            "context": "Annual implementation fees and support retainers; excludes client revenue.",
-            "note": "20% net margin; $20,000 annual owner net profit; 2 FT + 3 C.",
+            "label": "First-month video-service cost",
+            "metric": "First-month video-service cost",
+            "value": "$30,000",
+            "confidence": "attributed_practitioner_claim",
+            "context": (
+                "Bryan Taylor reports that a customer giving away video space incurred this cost in the "
+                "first month; uploads, viewing, storage, and bandwidth drove usage beyond expectations."
+            ),
+            "source": "Bryan Taylor ([yLxvwa45vR8 @ 00:03:17])",
         },
         {
-            "label": "Base",
-            "value": "$550,000",
-            "context": "Annual implementation fees and support retainers; excludes client revenue.",
-            "note": "30.0% net margin; $165,000 annual owner net profit; 2 FT + 3 C.",
+            "label": "Frozen requirements passing",
+            "metric": "Frozen requirements passing",
+            "value": "36 out of 36 in round five",
+            "confidence": "attributed_practitioner_claim",
+            "context": (
+                "neomanex reports this result after repeated fixes and testing. A subsequent done-when "
+                "review still found four gaps, including two requiring the owner's decision."
+            ),
+            "source": "neomanex ([wOkT9r5iVME @ 00:07:01])",
         },
         {
-            "label": "Scaled",
-            "value": "$1,000,000",
-            "context": "Annual implementation fees and support retainers; excludes client revenue.",
-            "note": "40% net margin; $400,000 annual owner net profit; 3 FT + 4 C.",
+            "label": "Human-reviewed quoting launch",
+            "metric": "Human-reviewed quoting launch",
+            "value": "6 weeks",
+            "confidence": "attributed_practitioner_claim",
+            "context": (
+                "Augusto Digital says its quoting team hit the six-week date by moving live pricing "
+                "lookups and other additions to version two."
+            ),
+            "source": "Augusto Digital ([VzBpfD_Dcq8 @ 00:08:05])",
+        },
+        {
+            "label": "Example deletion review interval",
+            "metric": "Example deletion review interval",
+            "value": "35 days",
+            "confidence": "attributed_practitioner_claim",
+            "context": (
+                "SecureCyberGates describes an example backup and snapshot deletion process followed by "
+                "ticket review and support verification; the speaker says the number can be defined "
+                "in the project contract."
+            ),
+            "source": "SecureCyberGates ([TcAbiyEqBFM @ 00:04:39])",
         },
     ],
     "sections": [
         {
-            "heading": "1. Days 1–7: Sell One Authorized Workflow Before Building a Platform",
-            "epistemic_status": "operating_framework",
+            "id": "practitioner-consensus",
+            "title": "The Practitioner Consensus",
             "paragraphs": [
                 (
-                    "Start with a single operational buyer and an observable queue: for example, "
-                    "a B2B distributor whose service team manually classifies inbound order-status "
-                    "requests. Sell classification, retrieval from approved order records, and a "
-                    "draft response for staff review; exclude payment changes, credit decisions, "
-                    "and unattended customer messages. The offer is a fixed-scope implementation, "
-                    "not ownership of the client's entire AI roadmap. Assign the first full-time "
-                    "operator to interviews, proposals, collections, and account decisions. Assign "
-                    "the second to architecture, integration, release control, and technical support. "
-                    "The three contractors cover workflow integration, independent evaluation, and "
-                    "security or data-contract review under explicit hour limits. These are "
-                    "specialist roles, not three additional full-time delivery seats. Candidate "
-                    "#29's 23 mapped plays belong in a coverage ledger with an owner, evidence "
-                    "link, estimated hours, and current disposition. Use the 23 local execution "
-                    "slots below to organize that ledger; they are working assignments, not "
-                    "claimed source titles for the mapped plays. Preserve original play identifiers "
-                    "when transferring the ledger into the broader manuscript or operating system. "
-                    "This prevents a large play catalog from becoming an accidental promise to "
-                    "deliver 23 separate services during the launch month."
+                    "Start with a finish line the client can recognize, not a growing collection of AI features. "
+                    "Augusto Digital calls its anchor 'one outcome, one owner, one date.' Its quoting engagement "
+                    "was not a general sales platform: the mandate was a draft quote for every incoming request, "
+                    "reviewed by a human, live in six weeks. Live pricing and historical customer information "
+                    "went onto the version-two list instead of moving the launch. Bryan Taylor starts at the "
+                    "same business end: outline the goal, work backward to the functions required, and keep "
+                    "returning to that mission while building. The warning is concrete: tangents leave more "
+                    "software to maintain than the original task required. AI Automation Society adds the client "
+                    "relationship behind that discipline. Its speakers describe pushing customers toward basic "
+                    "data movement and synchronization without AI when those automations offered the quickest "
+                    "return. They also describe customers who insisted on their original document and threatened "
+                    "to find another vendor. Their response after repeated disappointing engagements was more "
+                    "honest expectation management, not endless extra work to make the customer happy. The "
+                    "shared operating position is narrow delivery with an explicit business purpose, rather "
+                    "than accepting every request because it sounds technically possible. "
+                    "[VzBpfD_Dcq8 @ 00:07:01] [yLxvwa45vR8 @ 00:01:33] [3XIdI6vcGz0 @ 00:01:54]"
                 ),
                 (
-                    "Days 1 through 3 establish the commercial boundary before production access. "
-                    "P01 is buyer selection, P02 is workflow baseline, and P03 is the fixed-scope "
-                    "offer. Require a buyer to identify weekly ticket volume, current handling "
-                    "time, responsible staff, and the consequence of a wrong answer. Measure a "
-                    "sample of at least 30 historical tickets with timestamps rather than accepting "
-                    "an executive's rough savings estimate. A buyer reporting 500 monthly tickets "
-                    "at eight minutes each has approximately 66.7 monthly handling hours; reducing "
-                    "that workload does not create 66.7 hours of agency revenue. State the "
-                    "deliverable as one queue, two approved connectors, one escalation destination, "
-                    "and a defined evaluation set. Price the initial illustrative pilot at $7,500, "
-                    "with $3,750 due at signing and $3,750 after documented acceptance. Specify "
-                    "what happens when client credentials or representative examples arrive late: "
-                    "the delivery clock pauses rather than silently consuming the pod's capacity. "
-                    "Define change requests by connector count, output type, and exception category. "
-                    "A new CRM, another language, or automatic sending becomes a separately "
-                    "estimated change, not an informal favor absorbed by the technical operator."
+                    "Treat training permission, retention, and processing location as separate conversations. "
+                    "Protecto names three controls: no training determines whether content trains models; zero "
+                    "data retention concerns covered content after processing; residency concerns where storage "
+                    "or processing happens. None substitutes for the others, and provider commitments vary by "
+                    "service, endpoint, and feature. Micah Johnson makes the product distinction operational: "
+                    "consumer ChatGPT training can be switched off under settings and data controls, while the "
+                    "API does not use submitted data for training by default under the agreement Johnson "
+                    "describes. Johnson also says deleted conversations normally enter a thirty-day removal "
+                    "window with legal and safety exceptions, and business administrators can access conversation "
+                    "content. Cloud in places another boundary around the customer's own implementation. AWS "
+                    "secures the cloud infrastructure, while the customer configures data access, IAM roles, "
+                    "guardrails, networking, encryption keys, and MFA. These speakers do not describe a single "
+                    "privacy switch that finishes the job. Protecto explicitly includes the application's logs, "
+                    "retrieval pipeline, tools, and databases in the problem, even when a model is stateless. "
+                    "Its preferred first move is data minimization: replace sensitive values before the model "
+                    "call and restore them only for authorized recipients. The banking example removes real "
+                    "names and account numbers when analysis does not need them. "
+                    "[e8kcLoVVX_A @ 00:00:17] [lBhO8Q-MxYI @ 00:00:33] [ZE-vxHSGB7w @ 00:12:13]"
                 ),
                 (
-                    "Days 4 through 7 complete P04 access authorization, P05 data and IP terms, "
-                    "and P06 qualification. Obtain written permission from the client resource "
-                    "owner identifying systems, environments, permitted operations, and access expiry. "
-                    "Use a dedicated HubSpot sandbox or Microsoft 365 test mailbox where available; "
-                    "never ask a salesperson to share their personal administrator password. "
-                    "Computer access outside authorization can implicate 18 U.S.C. § 1030(a)(2)(C), "
-                    "so record the actual authorization boundary rather than treating possession "
-                    "of a token as permission. Contract language should distinguish client inputs, "
-                    "agency reusable components, third-party dependencies, and commissioned deliverables. "
-                    "An intended copyright ownership transfer requires a signed writing under "
-                    "17 U.S.C. § 204(a). For covered California personal information, evaluate "
-                    "the applicable service-provider or contractor terms under California Civil "
-                    "Code § 1798.100(d). Build the first 60-account prospect list around one "
-                    "workflow and buying role. Target 12 completed discovery meetings by Day 30, "
-                    "but do not equate outreach activity with validated demand. Each meeting "
-                    "must record urgency, an accountable budget holder, accessible source data, "
-                    "and an agreed next action before it enters the qualified pipeline."
+                    "Make the commercial promise as explicit as the technical promise. ProtaSystem contrasts "
+                    "a vague 'website redesign' with six pages and two revision rounds, then describes how "
+                    "informal messages and fear of a poor rating turn small favors into unpaid delivery. Its "
+                    "mechanism is a work pause when the boundary is crossed, followed by a quoted, documented, "
+                    "priced addition. GTIA's Mike Sencka describes the same margin leak from the project "
+                    "management side: engineers work beyond what the customer is paying for, and the extra "
+                    "work goes untracked. Sencka wants overages identified while the job is active, when managers "
+                    "can still discuss the expanded scope and negotiate with the customer. ProtaSystem also "
+                    "targets uncapped indemnification and proposes an aggregate liability cap tied to the "
+                    "amount actually paid to the contractor. Innovative Compass Consulting contributes a "
+                    "different boundary around AI deliverables: it describes output ownership under OpenAI's "
+                    "terms, but says another user may receive similar or identical output. It also places "
+                    "fact-checking responsibility on the user before publication or a major decision. Those "
+                    "are distinct issues in the speakers' accounts: what the client bought, what additional "
+                    "work costs, what liability the agreement assigns, and what the generated output actually "
+                    "establishes. Neither ownership language nor a successful generation removes the need to "
+                    "review what is being delivered. "
+                    "[6l0a6If9Oyk @ 00:01:46] [TtU19Z-ASZk @ 00:04:21] [DIfo9jAMZYY @ 00:02:52]"
                 ),
             ],
             "table": {
-                "caption": "Days 1–7: Buyer, Scope, and Authorization Evidence",
-                "headers": [
-                    "Daily execution window and accountable owner",
-                    "Required operator action and local play slot",
-                    "Evidence delivered before the work advances",
-                    "Failure response protecting the five-person pod",
-                ],
+                "caption": "Baseline boundaries the speakers put around delivery, data, and payment.",
+                "headers": ["Boundary", "Practitioner mechanics", "Expert Source"],
                 "rows": [
                     [
-                        "Day 1 assigns buyer selection to commercial ownership.",
-                        "P01 selects one vertical, buyer, and recurring queue.",
-                        "One-page segment brief names sixty reachable target accounts.",
-                        "Reject segments requiring several unrelated workflows immediately.",
+                        "Define the first shipped outcome before expanding the feature list.",
+                        "Augusto Digital fixes one outcome, one owner, and one date, then places additional requests on a version-two list.",
+                        "Augusto Digital ([VzBpfD_Dcq8 @ 00:07:01])",
                     ],
                     [
-                        "Day 2 pairs commercial discovery with technical measurement.",
-                        "P02 times thirty historical tickets using authorized samples.",
-                        "Baseline worksheet records volume, handling time, and exceptions.",
-                        "Replace unsupported savings claims with observed ticket measurements.",
+                        "Keep the business mission visible throughout the actual software build.",
+                        "Taylor says to outline the goal and required functions, then avoid tangents that increase maintenance and technical debt.",
+                        "Bryan Taylor ([yLxvwa45vR8 @ 00:01:33])",
                     ],
                     [
-                        "Day 3 gives commercial ownership the offer boundary.",
-                        "P03 prices one queue and two approved connectors.",
-                        "Signed-ready proposal defines acceptance, exclusions, and payment milestones.",
-                        "Remove extra connectors before quoting additional delivery commitments.",
+                        "Distinguish training permission from retention duration and processing location.",
+                        "Protecto separates the three controls and says commitments must be checked against the service, endpoint, and feature actually used.",
+                        "Protecto ([e8kcLoVVX_A @ 00:00:17])",
                     ],
                     [
-                        "Day 4 gives technical ownership the access inventory.",
-                        "P04 requests scoped test accounts from resource owners.",
-                        "Authorization record names systems, operations, expiry, and revocation.",
-                        "Stop integration work when access authority remains unresolved.",
+                        "Separate cloud infrastructure protection from customer-controlled access and configuration.",
+                        "Cloud in assigns IAM roles, user access, guardrails, network configuration, key handling, and MFA to the customer's responsibilities.",
+                        "Cloud in ([ZE-vxHSGB7w @ 00:12:13])",
                     ],
                     [
-                        "Day 5 schedules specialist review under capped hours.",
-                        "P05 documents processing purposes and deliverable ownership terms.",
-                        "Contract schedule separates client inputs from reusable components.",
-                        "Keep personal information outside prototypes until terms settle.",
+                        "Replace vague deliverables with a bounded quantity and revision allowance.",
+                        "ProtaSystem uses six pages with two revision rounds as the concrete alternative to an open-ended website redesign promise.",
+                        "ProtaSystem ([6l0a6If9Oyk @ 00:01:46])",
                     ],
                     [
-                        "Day 6 assigns commercial ownership the qualification script.",
-                        "P06 tests urgency, budget ownership, data access, and timing.",
-                        "CRM records attach buyer answers and agreed next actions.",
-                        "Exclude curiosity calls from the qualified meeting denominator.",
+                        "Keep output ownership separate from uniqueness and factual review.",
+                        "Innovative Compass Consulting says similar prompts can produce similar or identical outputs and users must check accuracy before consequential use.",
+                        "Innovative Compass Consulting ([DIfo9jAMZYY @ 00:02:52])",
                     ],
-                    [
-                        "Day 7 brings both operators into scope review.",
-                        "Reconcile six completed slots against the mapped-play ledger.",
-                        "Week-one packet links scope, baseline, authorization, and prospect evidence.",
-                        "Carry unresolved evidence explicitly without expanding the service catalog.",
-                    ],
-                ],
-            },
-            "callout": {
-                "kind": "OPERATOR GATE",
-                "title": "Four Checks Before Any Client-System Connection",
-                "body": (
-                    "The technical owner records evidence for each check. A failed check "
-                    "blocks the affected connection while sales and synthetic-data work continue."
-                ),
-                "items": [
-                    "Resource-owner authorization names the exact environment, permitted reads or writes, expiry date, and emergency revocation contact.",
-                    "The processing schedule records permitted data fields, retention periods, subprocessors, and deletion responsibility before personal information enters the workflow.",
-                    "The acceptance contract identifies the evaluation set, consequential-decision reviewer, payment milestones, and signed ownership provisions.",
-                    "A tested kill switch disables outbound actions, revokes connector tokens, and returns unresolved work to the client's existing human queue.",
                 ],
             },
         },
         {
-            "heading": "2. Days 8–14: Build the Smallest Measurable Implementation",
-            "epistemic_status": "operating_framework",
+            "id": "street-mechanics-tools-numbers",
+            "title": "Exact Street Mechanics, Tools & Numbers",
             "paragraphs": [
                 (
-                    "Week two turns buyer evidence into six more local execution slots: P07 "
-                    "process mapping, P08 connector design, P09 reference implementation, P10 "
-                    "evaluation construction, P11 exception routing, and P12 proposal closure. "
-                    "Map the present workflow before inserting a model: intake, identity lookup, "
-                    "record retrieval, draft generation, staff review, and final disposition. "
-                    "Use n8n or a small Python service when those tools fit the client's "
-                    "environment; select one orchestration path instead of supporting both during "
-                    "the pilot. Keep deterministic rules outside the model: allowed account IDs, "
-                    "field permissions, retry counts, and destination addresses belong in ordinary "
-                    "code. The model should return a constrained classification and structured "
-                    "draft, not executable instructions. Treat incoming email text and retrieved "
-                    "documents as untrusted content. A message telling the agent to reveal "
-                    "credentials must remain data, even when it resembles an internal instruction. "
-                    "Store credentials in the client's approved secret manager, separate development "
-                    "and production identities, and record connector permissions in the deployment "
-                    "manifest. On Day 10, demonstrate a synthetic ticket flowing through the "
-                    "entire route, including an intentional failure that lands in the human "
-                    "queue without sending a customer message."
+                    "neomanex turns a broad initiative into requirements that can fail in public view. Its "
+                    "runner initiative had sixteen requirements; the first plan took thirteen and split them "
+                    "into thirty-six. Each line specifies who acts, what they can do, and how someone proves "
+                    "it from outside the code. One broad promise about a disappearing runner becomes separate "
+                    "checks for a lost runner, a preempted machine, duplicate execution, and retry behavior. "
+                    "The run must end within three minutes with the appropriate reason; retry means exactly "
+                    "one additional attempt, not an unbounded loop. The owner reads every line, makes the "
+                    "decisions, and freezes the requirements. Beside them sit a won't-do list and a done-when "
+                    "list with one box per requirement. Every design component must point back to a requirement "
+                    "or be cut. Test journeys quote their requirements word for word. Augusto Digital handles "
+                    "a less deterministic acceptance problem by defining the human workflow rather than "
+                    "demanding perfect AI output. Its example is a draft with an eighty-five-percent confidence "
+                    "score that an operator can review and approve in under two minutes. That example is "
+                    "an acceptance definition, not a reported accuracy result. The measurable workflow and "
+                    "hard date are agreed with the project owner before coding begins. "
+                    "[wOkT9r5iVME @ 00:01:20] [wOkT9r5iVME @ 00:04:42] [VzBpfD_Dcq8 @ 00:11:30]"
                 ),
                 (
-                    "Build a frozen acceptance set of at least 100 representative cases for "
-                    "each workflow before tuning prompts against it. Reserve those cases from "
-                    "development examples, label the expected routing and factual requirements, "
-                    "and include ambiguous requests, missing records, duplicate events, hostile "
-                    "instructions, and cross-account lookup attempts. The launch threshold is "
-                    "at least 95 passing cases out of 100, zero critical data-boundary or "
-                    "unauthorized-action failures, and human review of every consequential decision. "
-                    "A case passes only when all mandatory checks pass; averaging a correct "
-                    "classification with an invented order status hides a real defect. Record "
-                    "the model identifier, prompt version, connector version, source-record "
-                    "timestamp, latency, and measured cost with every evaluation run. Use pytest "
-                    "for deterministic assertions and an independent contractor's rubric for "
-                    "response quality. An automated grader can triage cases but cannot certify "
-                    "its own unsupported answers. Repeat the acceptance suite after any model, "
-                    "prompt, retrieval, or permissions change. These results support a narrow "
-                    "claim about tested conditions, not universal reliability. Under Section 5 "
-                    "of the FTC Act, 15 U.S.C. § 45, performance claims must avoid deceptive "
-                    "representations; maintain the evidence supporting each published number."
+                    "Cognitive Capital's local-redaction pilot starts with one stream, such as support tickets. "
+                    "Run the filter, inspect before-and-after differences, choose conditional or absolute "
+                    "masking, and put the filter before the vector database. Its wider placement is ingestion, "
+                    "logging, and retrieval: mask before long-term storage and embeddings, scrub prompts and "
+                    "responses before observability records are written, and filter retrieved passages before "
+                    "sending them back to an LLM. The safe-ingest example stores masked text in the vector "
+                    "database while keeping an encrypted reference pointer to the original in a tightly "
+                    "restricted traditional database. Protecto extends the same protection-layer pattern "
+                    "through agent workflows, explicitly including database queries and tool results rather "
+                    "than only the first prompt. Cloud in supplies an AWS implementation vocabulary: S3, "
+                    "Bedrock knowledge bases, Lambda orchestration, Cognito, IAM, KMS, CloudWatch, and CloudTrail. "
+                    "Its emphasis is scoped access to particular models and sources, logs showing who accessed "
+                    "what, and evidence of configuration and testing. Cloud in also recommends short log "
+                    "retention, S3 lifecycle rules, private access, and isolation between environments. These "
+                    "are the speakers' concrete placements and controls: redaction before durable copies, "
+                    "another check at retrieval, restricted access to originals, and activity records the "
+                    "operations team can inspect when something goes wrong. "
+                    "[j2Bqq0VTv0o @ 00:05:27] [e8kcLoVVX_A @ 00:01:38] [ZE-vxHSGB7w @ 00:17:03]"
                 ),
                 (
-                    "The commercial operator continues discovery while the technical operator "
-                    "protects build capacity. Submit four qualified proposals by Day 30, each "
-                    "with the same scope boundary and a buyer-specific baseline attachment. "
-                    "Do not discount away uncertainty: offer paid discovery when connector "
-                    "feasibility remains unresolved, and count that as discovery revenue rather "
-                    "than a completed implementation. For the $7,500 pilot, budget 45 direct "
-                    "delivery hours at an illustrative loaded rate of $80, $300 of runtime "
-                    "and tooling, and $350 of warranty allowance. Total direct cost is $4,250; "
-                    "project contribution is $3,250, or approximately 43.3%. This is contribution "
-                    "before shared overhead, selling costs, and the full owner-profit calculation. "
-                    "Track both operators' delivery time even when they defer cash compensation. "
-                    "A pilot apparently producing 70% contribution because founder hours are "
-                    "missing is a pricing error. On Day 14, require a working demonstration, "
-                    "versioned evaluation results, and either a signed funded pilot or a "
-                    "documented next buying event. The scorecard's one-to-four-month first-deal "
-                    "window means an unsigned proposal at two weeks is evidence to manage, "
-                    "not automatic proof that the opportunity has failed."
+                    "SecureCyberGates starts retention with the project and the data category, not a universal "
+                    "number. The walkthrough describes clients choosing archive periods and repeatedly says "
+                    "actual periods depend on the project contract and applicable requirements. Its examples "
+                    "include two years online plus five additional archival years, but a later category "
+                    "list uses different periods for logs, archives, employee records, and communications. "
+                    "The deletion procedure is more specific: raise a ticket, run the shredding work, allow "
+                    "the example backup cycle to roll through thirty-five days, delete manual snapshots, "
+                    "and return the ticket to support for verification. The speaker explicitly allows the "
+                    "contract to define that interval. Bryan Taylor puts comparable visibility around cost: "
+                    "build reporting and an admin tool early, rather than discovering consumption after a "
+                    "customer has used a free service heavily. Taylor names SendGrid and Twilio while warning "
+                    "against uncontrolled automated outreach and unexpected usage charges. ProtaSystem puts "
+                    "the same specificity into commercial paperwork: quote extra work before continuing, "
+                    "and negotiate a liability cap based on the amount paid. It also describes Claus Radar "
+                    "as scanning for net-ninety terms, early IP handovers, and uncapped liabilities, then "
+                    "drafting plain-English counterproposals. Those are the promoted tool's described "
+                    "functions, not a demonstrated contract-review result. "
+                    "[TcAbiyEqBFM @ 00:03:55] [yLxvwa45vR8 @ 00:03:04] [6l0a6If9Oyk @ 00:04:59]"
                 ),
             ],
             "table": {
-                "caption": "Days 8–14: Workflow Engineering and Paid-Pilot Preparation",
-                "headers": [
-                    "Daily execution window and accountable owner",
-                    "Required build activity and local play slot",
-                    "Concrete evidence retained in the delivery packet",
-                    "Failure response before additional engineering hours accrue",
-                ],
+                "caption": "Specific execution patterns, tools, and numbers without turning examples into universal defaults.",
+                "headers": ["Execution target", "Exact practitioner method", "Expert Source"],
                 "rows": [
                     [
-                        "Day 8 gives technical ownership the process map.",
-                        "P07 maps intake through review and final disposition.",
-                        "Workflow diagram names every system and exception destination.",
-                        "Remove steps whose business owner cannot explain necessity.",
+                        "Translate a broad runner promise into separately observable acceptance checks.",
+                        "neomanex specifies a three-minute ending, a visible reason, one recorded attempt, and exactly one retry when retry is enabled.",
+                        "neomanex ([wOkT9r5iVME @ 00:01:42])",
                     ],
                     [
-                        "Day 9 pairs integration contractor with technical ownership.",
-                        "P08 implements scoped retrieval and deterministic permission checks.",
-                        "Connector tests prove allowed access and denied cross-account access.",
-                        "Replace broad permissions before connecting representative client records.",
+                        "Freeze the requirement list before downstream design and test work.",
+                        "The owner controls changes; the won't-do list excludes migration during a run and more than one retry for that plan.",
+                        "neomanex ([wOkT9r5iVME @ 00:04:04])",
                     ],
                     [
-                        "Day 10 assigns the reference build to technical ownership.",
-                        "P09 demonstrates synthetic intake through reviewed draft creation.",
-                        "Recorded walkthrough includes duplicate delivery and retrieval failure.",
-                        "Keep outbound messaging disabled until acceptance evidence exists.",
+                        "Try local masking on one selected stream before wider deployment.",
+                        "Cognitive Capital selects support tickets, reviews masking differences, chooses the masking policy, and inserts the filter before the vector database.",
+                        "Cognitive Capital ([j2Bqq0VTv0o @ 00:05:27])",
                     ],
                     [
-                        "Day 11 assigns independent evaluation to the testing contractor.",
-                        "P10 freezes one hundred cases separate from development examples.",
-                        "Versioned rubric defines factual correctness and critical failures.",
-                        "Rebuild biased samples before reporting aggregate pass rates.",
+                        "Retain an operational trail showing model access and user activity.",
+                        "Cloud in calls for CloudWatch alarms and CloudTrail so the team can trace who supplied data and how a model was used.",
+                        "Cloud in ([ZE-vxHSGB7w @ 00:26:15])",
                     ],
                     [
-                        "Day 12 pairs technical ownership with client queue management.",
-                        "P11 sends ambiguity and access failures to human review.",
-                        "Exception tests show complete context without unnecessary personal fields.",
-                        "Block unattended actions when routing or ownership breaks.",
+                        "Keep deletion work open until backup handling and verification finish.",
+                        "SecureCyberGates describes a thirty-five-day example followed by review and support verification, with the interval defined through the project contract.",
+                        "SecureCyberGates ([TcAbiyEqBFM @ 00:04:39])",
                     ],
                     [
-                        "Day 13 assigns proposal closure to commercial ownership.",
-                        "P12 requests signature and the first payment milestone.",
-                        "Proposal links measurable acceptance to the client's baseline.",
-                        "Sell bounded discovery when unresolved feasibility prevents fixed pricing.",
-                    ],
-                    [
-                        "Day 14 brings both operators into evidence review.",
-                        "Reconcile twelve execution slots and refresh remaining hour estimates.",
-                        "Review packet contains demo, evaluation, budget, and buyer timeline.",
-                        "Pause speculative features while the commercial operator resolves demand.",
+                        "Quote expanded work separately before continuing beyond the agreed boundary.",
+                        "ProtaSystem pauses work, documents the new request, and prices the addition instead of allowing continuous unpaid revisions under the original fee.",
+                        "ProtaSystem ([6l0a6If9Oyk @ 00:02:38])",
                     ],
                 ],
             },
             "callout": {
                 "kind": "INSIDER PRO-TIPS",
-                "title": "Four Ways Experienced Operators Protect Contribution",
-                "body": (
-                    "The best launch shortcuts reduce uncertainty without hiding delivery cost "
-                    "or transferring an uncontrolled failure to the client."
-                ),
+                "title": "Small wording and placement choices that change the result",
+                "body": "Use the speakers' concrete refinements rather than broad promises.",
                 "items": [
-                    "Capture connector setup as a reusable checklist, but keep credentials and client-specific identifiers outside the reusable package.",
-                    "Include deliberate missing-record cases in the sales demonstration; a clean human handoff often sells reliability better than a polished best-case answer.",
-                    "Make the client nominate one acceptance reviewer and a two-business-day review window, with explicit escalation rather than presumed acceptance.",
-                    "Quote the retainer against included review hours, runtime allowance, and response windows; price additional queues as separate implementations.",
-                ],
-            },
-        },
-        {
-            "heading": "3. Days 15–21: Deliver Evidence Within a Measured Cash and Capacity Envelope",
-            "epistemic_status": "illustrative_model",
-            "paragraphs": [
-                (
-                    "Week three covers P13 deployment preparation, P14 staged release, P15 "
-                    "usage monitoring, P16 quality monitoring, P17 acceptance, and P18 support "
-                    "packaging. Begin with read-only access and staff-visible drafts. Enable "
-                    "writes only when the contract expressly includes them, the resource owner "
-                    "authorizes them, and idempotency tests show retries cannot create duplicate "
-                    "actions. Use a unique event key and durable processing record rather than "
-                    "trusting a webhook provider to deliver each message once. Log request IDs, "
-                    "status transitions, costs, and error categories while excluding unnecessary "
-                    "message content. Configure Sentry or the client's existing observability "
-                    "stack to alert on repeated connector failures and dead-letter queue growth. "
-                    "On Day 18, reconcile production samples against the frozen rubric, then "
-                    "investigate discrepancies between test and live traffic. On Day 19, "
-                    "demonstrate credential revocation and restoration of the original human "
-                    "workflow. Acceptance requires the client's named reviewer to confirm scope "
-                    "completion and unresolved exceptions in writing. A successful internal demo "
-                    "is not client acceptance, and an issued invoice is not collected cash. "
-                    "These distinctions keep the sprint board honest when technical progress "
-                    "moves faster than procurement, customer review, or payment processing."
-                ),
-                (
-                    "Set the first-month gross cash-spend ceiling at $7,500 before committing "
-                    "contractor work. Allocate $2,500 to overhead, $2,500 to specialist payments, "
-                    "$750 to software and API usage, $750 to acquisition activity, and $1,000 "
-                    "to contingency. These envelopes sum exactly to the ceiling; using the "
-                    "contingency requires removing the amount from its remaining balance. "
-                    "Maintain a separate accrued-cost ledger because deferred operator compensation "
-                    "does not disappear economically. For planning, add a $5,000 founder-labor "
-                    "charge if that labor is unpaid during launch, producing $12,500 of "
-                    "modeled first-month cost before any further accruals. Do not add that "
-                    "charge twice when allocating delivery labor into project contribution. "
-                    "Cap the two full-time operators at 240 combined planned hours for the "
-                    "month: 160 for delivery and 80 for sales, administration, and support. "
-                    "Cap contractor usage at 60 combined hours, with actual rates reconciled "
-                    "to the $2,500 envelope before booking. If specialist rates consume the "
-                    "cash allowance earlier, cash controls the limit. Reserve at least 40 "
-                    "delivery hours for defects and handover. Run one live implementation "
-                    "at a time during launch rather than converting theoretical hours into "
-                    "overlapping customer promises."
-                ),
-                (
-                    "Keep sprint economics separate from the canonical annual scenarios. "
-                    "Conservative remains $100,000 revenue less $80,000 total costs, producing "
-                    "$20,000 owner net profit at 20% margin with 2 FT + 3 C. "
-                    "Base remains $550,000 less $385,000, producing $165,000 at 30.0% with "
-                    "the same pod. Scaled remains $1,000,000 less $600,000, producing $400,000 "
-                    "at 40% with 3 FT + 4 C. Illustrative revenue bridges are eight "
-                    "$7,500 implementations plus forty $1,000 support-months; forty $10,000 "
-                    "implementations plus one hundred $1,500 support-months; and sixty "
-                    "$12,500 implementations plus one hundred twenty-five $2,000 support-months, "
-                    "respectively. These equal the three revenue totals but do not establish "
-                    "that launch capacity can deliver them. The Base bridge requires material "
-                    "reuse and shorter implementation cycles before forty annual projects fit. "
-                    "Support-months count active billable months, not distinct clients or "
-                    "unearned annual contract value. The published $2,500–$18,000 monthly opex "
-                    "range is not a substitute for each scenario's total annual costs. "
-                    "Include delivery labor, contractors, acquisition, support, and other operating "
-                    "expenses in the reconciliation. None of the bridges recognizes client "
-                    "sales, order value, or estimated labor savings as agency revenue."
-                ),
-            ],
-            "table": {
-                "caption": "Days 15–21: Controlled Delivery, Acceptance, and Support Handover",
-                "headers": [
-                    "Daily execution window and accountable owner",
-                    "Required delivery activity and local play slot",
-                    "Acceptance evidence or measurable operating constraint",
-                    "Failure response preserving cash and customer operations",
-                ],
-                "rows": [
-                    [
-                        "Day 15 gives technical ownership the deployment manifest.",
-                        "P13 versions prompts, dependencies, permissions, and rollback instructions.",
-                        "Manifest identifies the exact approved release and responsible operator.",
-                        "Reject releases whose deployed versions cannot be reconstructed.",
-                    ],
-                    [
-                        "Day 16 pairs integration contractor with technical ownership.",
-                        "P14 starts read-only traffic with staff-reviewed draft outputs.",
-                        "Idempotency tests prove retries cannot duplicate permitted actions.",
-                        "Return events to the original queue after unsafe behavior.",
-                    ],
-                    [
-                        "Day 17 assigns usage review to technical ownership.",
-                        "P15 measures runtime spend, event volume, and connector errors.",
-                        "Daily report compares actual consumption with the signed allowance.",
-                        "Throttle nonessential processing before usage exceeds purchased capacity.",
-                    ],
-                    [
-                        "Day 18 assigns production sampling to independent evaluation.",
-                        "P16 checks live cases against frozen acceptance criteria.",
-                        "Evidence records factual errors, escalations, and critical boundary failures.",
-                        "Disable the affected workflow immediately after critical failures.",
-                    ],
-                    [
-                        "Day 19 pairs client ownership with technical recovery testing.",
-                        "Exercise rollback and credential revocation before requesting acceptance.",
-                        "Recovery record proves the original human queue still functions.",
-                        "Repair recovery procedures before authorizing further production traffic.",
-                    ],
-                    [
-                        "Day 20 assigns acceptance collection to commercial ownership.",
-                        "P17 obtains written review and issues the acceptance invoice.",
-                        "Acceptance packet links scope completion to actual evaluation results.",
-                        "Log disputed requirements separately instead of hiding extra work.",
-                    ],
-                    [
-                        "Day 21 assigns support packaging to both operators.",
-                        "P18 prices monitoring, included hours, and incident response windows.",
-                        "Retainer schedule distinguishes recurring service from new implementation work.",
-                        "Decline unlimited support language that defeats capacity planning.",
-                    ],
+                    (
+                        "Replace 'once more' with 'exactly one more attempt' where that is the intended retry "
+                        "behavior. neomanex caught a design that otherwise could retry forever. "
+                        "[neomanex — wOkT9r5iVME @ 00:05:45]"
+                    ),
+                    (
+                        "Put the requester's name beside each not-yet idea. Augusto Digital uses that "
+                        "visible credit to acknowledge the idea without moving it into the current build. "
+                        "[Augusto Digital — VzBpfD_Dcq8 @ 00:10:27]"
+                    ),
+                    (
+                        "Scrub observability records as well as incoming documents. Cognitive Capital "
+                        "specifically targets raw prompts and responses before they become permanent logs. "
+                        "[Cognitive Capital — j2Bqq0VTv0o @ 00:03:38]"
+                    ),
+                    (
+                        "When a sensitive local-model conversation needs a cloud model, start a new chat. "
+                        "Williams warns that switching the existing conversation also sends its data onward. "
+                        "[Matt Williams — KeqxPxb_sak @ 00:03:57]"
+                    ),
                 ],
             },
             "sop_steps": [
                 {
                     "step": 1,
-                    "title": "Freeze the release candidate",
-                    "action": "Record the model, prompts, connectors, permissions, and evaluation version.",
-                    "detail": "The technical operator signs the manifest; the testing contractor verifies that the evaluated version matches the proposed deployment.",
+                    "title": "Fix the first outcome and its owner",
+                    "action": "Write the measurable workflow and launch date; open the not-yet list.",
+                    "detail": (
+                        "Augusto Digital defines one outcome, one owner, and one date, then records "
+                        "out-of-scope requests visibly with their requesters' names. "
+                        "[Augusto Digital — VzBpfD_Dcq8 @ 00:07:01] "
+                        "[Augusto Digital — VzBpfD_Dcq8 @ 00:10:27]"
+                    ),
                 },
                 {
                     "step": 2,
-                    "title": "Run acceptance and recovery tests",
-                    "action": "Execute at least one hundred held-out cases and demonstrate rollback.",
-                    "detail": "Require at least 95% case-level passing results, zero critical failures, and a working human destination for every blocked action.",
+                    "title": "Freeze observable requirements",
+                    "action": "Write who, what, and externally visible proof for each requirement.",
+                    "detail": (
+                        "Follow neomanex's frozen list, explicit exclusions, and one done-when box per "
+                        "requirement; have test journeys quote the requirements they check. "
+                        "[neomanex — wOkT9r5iVME @ 00:02:25] "
+                        "[neomanex — wOkT9r5iVME @ 00:06:03]"
+                    ),
                 },
                 {
                     "step": 3,
-                    "title": "Release through the authorized boundary",
-                    "action": "Start with reviewed drafts and observe live exceptions before expanding traffic.",
-                    "detail": "Use resource-owner-approved credentials, retain event identifiers, and disable the affected path whenever an access boundary fails.",
+                    "title": "Separate provider promises and minimize inputs",
+                    "action": "Check training, retention, residency, and the sensitive fields actually needed.",
+                    "detail": (
+                        "Protecto checks the actual service, endpoint, and feature, including retention "
+                        "exceptions and abuse monitoring, then tokenizes sensitive values before model calls. "
+                        "[Protecto — e8kcLoVVX_A @ 00:00:50] "
+                        "[Protecto — e8kcLoVVX_A @ 00:01:54]"
+                    ),
                 },
                 {
                     "step": 4,
-                    "title": "Close acceptance and reconcile economics",
-                    "action": "Collect written acceptance, invoice the milestone, and post actual delivery costs.",
-                    "detail": "Separate invoiced revenue, collected cash, deferred obligations, and remaining support commitments before publishing project contribution.",
+                    "title": "Test shipped behavior and verify deletion work",
+                    "action": "Run requirement journeys and finish the deletion ticket's verification.",
+                    "detail": (
+                        "neomanex runs tests on the shipped system and follows with a separate done-when "
+                        "review. SecureCyberGates sends completed shredding work back to support to verify "
+                        "deletion after the example backup interval. "
+                        "[neomanex — wOkT9r5iVME @ 00:07:21] "
+                        "[SecureCyberGates — TcAbiyEqBFM @ 00:05:06]"
+                    ),
                 },
             ],
         },
         {
-            "heading": "4. Days 22–30: Close the Evidence Ledger and Apply Kill, Fix, or Scale",
-            "epistemic_status": "operating_framework",
+            "id": "disagreements-alternative-playbooks",
+            "title": "Where Practitioners Disagree & Alternative Playbooks",
             "paragraphs": [
                 (
-                    "Week four completes P19 incident rehearsal, P20 economic reconciliation, "
-                    "P21 proof packaging, P22 renewal and referral development, and P23 "
-                    "portfolio decisions. Day 22 runs an incident exercise covering leaked "
-                    "credentials, wrong-account retrieval, and an unavailable connector. Day "
-                    "23 reconciles recorded hours, runtime charges, warranty usage, invoices, "
-                    "and collections. Day 24 prepares a case study limited to measured "
-                    "results and obtains explicit permission before publishing client identifiers "
-                    "or operational details. Day 25 presents a bounded support retainer and "
-                    "asks for a referral only after acceptance. Day 26 reviews all 23 "
-                    "ledger slots, distinguishing completed evidence from deferred work. Day "
-                    "27 has the independent tester challenge the latest release with new "
-                    "adversarial cases without replacing the frozen acceptance benchmark. Day "
-                    "28 refreshes the cash forecast and remaining delivery commitments. Day "
-                    "29 writes a one-page decision memo with raw denominators, failed "
-                    "criteria, and one recommended action. Day 30 is the decision meeting, "
-                    "not a ceremonial launch announcement. Both full-time operators sign "
-                    "the memo, assign the next experiment or capacity increase, and preserve "
-                    "the underlying evidence. Contractors contribute their findings but do "
-                    "not create open-ended work commitments for the next month."
+                    "The clearest architectural split is where sensitive work should run. Micah Johnson "
+                    "recommends the API rather than consumer ChatGPT for proprietary business data, pointing "
+                    "to the different training default. Matt Williams instead demonstrates replacing the "
+                    "model behind the ChatGPT desktop interface with local Ollama models. In the Mac setup, "
+                    "Williams enables the ChatGPT integration in Ollama, restarts ChatGPT, adds local models, "
+                    "and restarts again so they appear in the picker. The practical proof is disconnecting "
+                    "the network and continuing to chat. Williams keeps cloud models for public research "
+                    "and low-stakes brainstorming, while recommending local inference for material whose "
+                    "disclosure would hurt. Serop describes a third route observed among European businesses: "
+                    "use models through an existing cloud relationship with European hosting, rather than "
+                    "contracting directly with the model company. Serop also discusses privately hosted "
+                    "open-source models, but stresses investment cost, setup, and security responsibilities. "
+                    "Williams is more upbeat about everyday local performance, while still noting slower "
+                    "first loads and a per-user setup that does not automatically cover a team. These are "
+                    "different operating choices, not one unanimous deployment recipe. Johnson prioritizes "
+                    "the API agreement, Serop discusses hosting and existing contracts, and Williams "
+                    "demonstrates keeping inference on the user's own hardware. "
+                    "[lBhO8Q-MxYI @ 00:03:41] [KeqxPxb_sak @ 00:06:39] [u-qrX9uP_t4 @ 00:03:13]"
                 ),
                 (
-                    "Apply the decision matrix in order: any applicable Kill condition "
-                    "overrides Scale; Scale requires every listed commercial condition plus "
-                    "the common delivery controls; all remaining cases are Fix. Kill "
-                    "normally means stop selling the tested offer or segment, not delete "
-                    "customer records or abandon contracted support. A critical security "
-                    "failure triggers immediate suspension of the affected workflow regardless "
-                    "of meeting date; resume only after remediation and independent retesting. "
-                    "Common Scale controls are at least 95% passing cases on each workflow's "
-                    "minimum 100-case acceptance set, zero unresolved critical failures, "
-                    "at least 40% aggregate implementation contribution, rework no greater "
-                    "than 10% of direct delivery hours, and at least 90% on-time accepted "
-                    "deliveries. With fewer than ten deliveries, require every delivery "
-                    "on time. Count rework as correcting defective agreed functionality, "
-                    "not separately purchased changes. Require collection of at least 95% "
-                    "of amounts currently due, no overdue critical incident, and no pilot "
-                    "above 45 direct delivery hours. Treat these thresholds as operating "
-                    "choices, not scorecard-derived promises. In particular, Day-30 Scale "
-                    "is an ambitious evidence threshold within a business whose first "
-                    "deal may reasonably take four months."
+                    "The speakers also differ sharply over how much confidence to place in privacy controls. "
+                    "Johnson presents the training toggle as a useful action and distinguishes the API's "
+                    "default from the consumer product. WNT takes a much more adversarial reading: it "
+                    "criticizes overlapping policy documents, questions the absence of technical verification "
+                    "for training exclusions, and argues that memory, metadata, and anonymized aggregate "
+                    "data leave users with less control than the interface suggests. WNT acknowledges "
+                    "the stated promise that history-disabled conversations will not train models, then "
+                    "challenges the trust required to accept it. Its suggestion that the retention window "
+                    "could permit extraction is a critical interpretation, not a reported observation of "
+                    "that extraction. Serop is explicit about a different evidentiary footing: the video "
+                    "discusses other users' posts claiming training settings had switched back on. Serop "
+                    "does not conclude malicious intent and instead suggests frequent product updates may "
+                    "reset configuration. The practical response offered is to recheck the setting after "
+                    "updates and minimize shared information. Preserve that disagreement: WNT attacks the "
+                    "credibility of the policy structure, Serop proposes a configuration-failure explanation, "
+                    "and Johnson teaches the available controls. Their accounts do not establish that a "
+                    "specific opted-out client conversation was actually used for training. "
+                    "[lBhO8Q-MxYI @ 00:00:17] [A0tzwuw-nEg @ 00:02:06] [u-qrX9uP_t4 @ 00:01:28]"
                 ),
                 (
-                    "Keep cumulative gross spending within $7,500 by Day 30, $20,000 "
-                    "by Day 60, and $35,000 by Day 90, while limiting cumulative "
-                    "unrecovered launch cash to $7,500 throughout. Calculate unrecovered cash "
-                    "as cumulative cash outflows minus cumulative client collections; protect "
-                    "tax reserves and any refundable balances separately. Additional spending "
-                    "after Day 30 must fit both the gross ceiling and that net-exposure "
-                    "limit, so optimistic receivables cannot fund hiring. A Fix decision "
-                    "authorizes one fourteen-day experiment with a named owner, a single "
-                    "variable, and at most $1,500 inside the existing ceilings. Test a "
-                    "narrower buyer, simpler connector, revised price, or stronger exception "
-                    "route; do not change everything simultaneously. Scale first means "
-                    "repeating the accepted package, not adding employees. Increase concurrent "
-                    "implementations from one to two only after three consecutive accepted "
-                    "projects meet the common controls and planned utilization stays below "
-                    "75% of available delivery hours. A $1,500 monthly retainer with $600 "
-                    "direct service cost contributes $900 before overhead; reserve those "
-                    "service hours before selling another sprint. Move toward the canonical "
-                    "3 FT + 4 C scaled team only when contracted work and collected "
-                    "cash support the added capacity."
+                    "Scope changes have competing operational treatments rather than a single response. "
+                    "ProtaSystem pauses work at the boundary and prices the requested addition through a "
+                    "formal change order. Augusto Digital often refuses to pull the addition into version "
+                    "one at all: the request enters a named not-yet list, and scope is reviewed on a "
+                    "ninety-day rhythm instead of at every demo. Its quoted first win used human review, "
+                    "while pricing integrations waited for a later version funded by the first deployment's "
+                    "return. The difference matters in the speakers' mechanics: one process commercializes "
+                    "extra work when the boundary is crossed, while the other protects sequencing and the "
+                    "launch date even when an idea is attractive. AI Automation Society complicates both "
+                    "approaches with its firsthand account of customer expectations. Some clients welcomed "
+                    "the suggestion to start with basic non-AI automation; others demanded execution of "
+                    "their original wish list. The speakers say merely performing the written scope could "
+                    "still leave customers without value, followed by pressure for more work. Their response "
+                    "is to push back earlier and explain what has failed in previous engagements. Augusto "
+                    "Digital likewise casts the external partner as the person willing to carry the "
+                    "uncomfortable version-two conversation. None of these accounts endorses quietly "
+                    "absorbing every addition to avoid disagreement. "
+                    "[6l0a6If9Oyk @ 00:02:38] [VzBpfD_Dcq8 @ 00:14:48] [3XIdI6vcGz0 @ 00:02:21]"
                 ),
             ],
             "table": {
-                "caption": "Day-30/60/90 Decision Matrix: Kill Takes Precedence, Scale Requires All Common Controls",
-                "headers": [
-                    "Checkpoint and decision with explicit precedence rules",
-                    "Quantitative evidence required for the commercial decision",
-                    "Delivery and cash interpretation governing the decision",
-                    "Immediate action assigned to the accountable operators",
-                ],
+                "caption": "Different playbooks, with the disagreement or tradeoff left visible.",
+                "headers": ["Decision under discussion", "Contrasting practitioner approaches", "Expert Source"],
                 "rows": [
                     [
-                        "Day 30 Kill stops the tested buyer-offer combination.",
-                        "After sixty contacted accounts and twelve qualified meetings, fewer than three buyers verify urgent pain.",
-                        "An exhausted spend ceiling without funded recovery also stops new launch commitments.",
-                        "Commercial ownership archives objections and selects a different narrowly defined problem.",
+                        "Choose between provider-managed API use and local model inference.",
+                        "Johnson favors the API agreement for sensitive work; Williams recommends local Ollama models for information whose exposure would hurt.",
+                        "Micah Johnson ([lBhO8Q-MxYI @ 00:03:41]); Matt Williams ([KeqxPxb_sak @ 00:07:54])",
                     ],
                     [
-                        "Day 30 Fix applies when neither Kill nor Scale qualifies.",
-                        "Insufficient meeting samples or unsigned pilots remain bounded learning problems.",
-                        "Continue only inside the cash ceiling and authorized system boundaries.",
-                        "Run one fourteen-day experiment costing no more than fifteen hundred dollars.",
+                        "Decide whether local deployment fits an individual or organizational workload.",
+                        "Williams demonstrates a per-user desktop integration; Serop discusses company-owned servers and emphasizes significant investment and correct security setup.",
+                        "Matt Williams ([KeqxPxb_sak @ 00:06:57]); Serop | AI Automation ([u-qrX9uP_t4 @ 00:05:28])",
                     ],
                     [
-                        "Day 30 Scale permits another instance of the accepted package.",
-                        "Require twelve qualified meetings, four proposals, and one paid accepted implementation.",
-                        "Require every common delivery control and all currently applicable cash limits.",
-                        "Repeat the same package sequentially without increasing headcount or concurrency.",
+                        "Distinguish skeptical policy interpretation from reports of settings changing.",
+                        "WNT questions verifiability of exclusions; Serop discusses other users' reports and suggests product updates rather than intentional misconduct.",
+                        "WNT ([A0tzwuw-nEg @ 00:02:06]); Serop | AI Automation ([u-qrX9uP_t4 @ 00:01:28])",
                     ],
                     [
-                        "Day 60 Kill stops an offer after adequate commercial testing.",
-                        "Eight qualified proposals yield zero paid implementations despite one completed commercial fix experiment.",
-                        "Unfunded spending beyond either cash limit stops further discretionary commitments.",
-                        "Close the offer experiment while honoring existing discovery and support obligations.",
+                        "Decide whether an additional request becomes paid work or later scope.",
+                        "ProtaSystem pauses for a priced change order; Augusto Digital protects the first launch by placing additions on the future roadmap.",
+                        "ProtaSystem ([6l0a6If9Oyk @ 00:02:38]); Augusto Digital ([VzBpfD_Dcq8 @ 00:10:10])",
                     ],
                     [
-                        "Day 60 Fix applies when neither Kill nor Scale qualifies.",
-                        "Some paid demand exists but repeat purchase or delivery evidence remains insufficient.",
-                        "Failed common controls require repair before additional implementation concurrency.",
-                        "Assign one bottleneck owner and preserve the original measurement denominators.",
+                        "Separate a vendor's training commitment from complete application privacy.",
+                        "Johnson emphasizes the API's training default; Protecto says training, retention, residency, and the application's own stores remain separate questions.",
+                        "Micah Johnson ([lBhO8Q-MxYI @ 00:00:33]); Protecto ([e8kcLoVVX_A @ 00:00:17])",
                     ],
                     [
-                        "Day 60 Scale permits controlled repetition within pod capacity.",
-                        "Require twenty meetings, eight proposals, two paid accepted implementations, and one active retainer.",
-                        "Proposal conversion must reach twenty percent and all common controls must pass.",
-                        "Book only capacity-backed work and reserve recurring support hours first.",
-                    ],
-                    [
-                        "Day 90 Kill stops persistently weak demand or structurally poor delivery.",
-                        "Twelve proposals produce fewer than two paid implementations, or three completed projects remain below twenty-five percent contribution after repair.",
-                        "Compute contribution across the completed cohort including recorded founder delivery labor.",
-                        "Retire the offer or reprice and rescope it as a new experiment.",
-                    ],
-                    [
-                        "Day 90 Fix applies when neither Kill nor Scale qualifies.",
-                        "Demand exceeds Kill thresholds but repeatable delivery or retained demand remains weak.",
-                        "Permit another experiment only with remaining funded cash and explicit scope.",
-                        "Reduce scope or improve pricing without disguising defects as additional features.",
-                    ],
-                    [
-                        "Day 90 Scale advances repeatability rather than automatic team expansion.",
-                        "Require thirty meetings, twelve proposals, four paid accepted implementations, and two active retainers.",
-                        "Require twenty percent conversion, every common control, and funded delivery capacity.",
-                        "Allow two concurrent implementations only after three consecutive qualifying project completions.",
+                        "Handle customers who want AI features before basic operational fixes.",
+                        "AI Automation Society reports both trust-building acceptance and resistance; Augusto Digital gives the external partner responsibility for protecting launch scope.",
+                        "AI Automation Society ([3XIdI6vcGz0 @ 00:01:54]); Augusto Digital ([VzBpfD_Dcq8 @ 00:16:33])",
                     ],
                 ],
             },
         },
+        {
+            "id": "failure-modes-economics-checks",
+            "title": "Firsthand Failure Modes, Traps & Economics Checks",
+            "paragraphs": [
+                (
+                    "Taylor's strongest cost warning is an actual customer build, not the hypothetical "
+                    "overnight calling bill discussed earlier in the conversation. The customer gave away "
+                    "video space and incurred thirty thousand dollars in the first month. Uploading, storing, "
+                    "and watching the videos drove bandwidth and storage usage far beyond what the team "
+                    "thought it was building. Taylor says those costs were higher at the time and are "
+                    "lower now, but keeps the lesson focused on reporting and administrative visibility. "
+                    "The example does not establish a current hosting price or an AI token rate. GTIA's "
+                    "Sencka describes a second economic leak: inaccurate project dates contaminate scheduling, "
+                    "business intelligence, and customer communication, while untracked scope turns engineering "
+                    "hours into unpaid work. The bathroom-renovation example is an analogy about timing, "
+                    "not an MSP invoice case: an extra charge discussed during the job is a different "
+                    "conversation from a surprise bill four months after completion. Sencka's answer is "
+                    "continuous project observation so managers can identify overages early and negotiate "
+                    "while the customer relationship and active work still provide context. Together, the "
+                    "accounts keep two costs visible without conflating them: metered consumption can "
+                    "explode under a free offer, and delivery labor can leak when extra scope is "
+                    "neither tracked nor discussed promptly. "
+                    "[yLxvwa45vR8 @ 00:03:17] [TtU19Z-ASZk @ 00:03:20] [TtU19Z-ASZk @ 00:04:37]"
+                ),
+                (
+                    "neomanex's runner build shows why implementation and acceptance are not interchangeable. "
+                    "Testing agents ran twenty-five checks on a real cluster and saved two hundred eighty "
+                    "screenshots. Eight checks failed in the first round. One requirement said the run "
+                    "detail page must name its runner; the information existed in code and could be "
+                    "requested through the API, but it was absent from the page. The tester failed it "
+                    "because the requirement named what the user must see. Fixes and retests moved through "
+                    "eight, three, one, and one failures before the fifth round reached thirty-six "
+                    "requirements passing. Even then, a separate agent walking the done-when list found "
+                    "four gaps: two needed fixes and two went to the owner for a decision. Augusto "
+                    "Digital reports a different firsthand bottleneck: scope creep appeared in five "
+                    "meetings across six weeks of one engagement, driven by enthusiasm after a successful "
+                    "demo. Its speakers also recount a developer describing ninety percent of a drifting "
+                    "project's code as brittle workarounds; that number belongs to the developer's account, "
+                    "not an audit by the hosts. Augusto's recovery method is a two-week rumble: halt "
+                    "peripheral development, resequence the work into a build-ready first win, and push "
+                    "the remainder onto a structured future roadmap. "
+                    "[wOkT9r5iVME @ 00:06:21] [wOkT9r5iVME @ 00:07:21] [VzBpfD_Dcq8 @ 00:01:32] [VzBpfD_Dcq8 @ 00:17:38]"
+                ),
+                (
+                    "Privacy failures do not all begin at the model provider. Williams identifies a "
+                    "specific trap in the local-model workflow: switching an existing sensitive conversation "
+                    "to an OpenAI model sends that conversation's data there too. The demonstrated local "
+                    "setup also operates per user, so it does not silently extend protection across a "
+                    "company. Cognitive Capital focuses on mundane leakage through support tickets, API "
+                    "keys, observability logs, and embedded text. Its benchmark discussion explicitly rejects "
+                    "the shortcut from a strong published score to domain accuracy: false negatives miss "
+                    "secrets, while excessive redaction can destroy useful downstream analysis. Its checks "
+                    "include reviewing masking differences and planting partial addresses, unusual nicknames, "
+                    "and implied identities in test data. Privado AI supplies a reported enforcement history "
+                    "rather than a firsthand agency incident. The account begins with a March 2023 breach "
+                    "exposing some chat histories and partial payment details, then describes an Italian "
+                    "processing restriction and a later fifteen-million-euro fine involving several privacy "
+                    "issues. The speaker says some issues were partially or fully resolved while others "
+                    "remained, and describes further demands concerning information, policy, and age checks. "
+                    "Keep the reported chain intact: it was not presented as a fine for one agency's "
+                    "missing redaction filter. Each speaker identifies a different failure surface and "
+                    "a different kind of evidence. "
+                    "[KeqxPxb_sak @ 00:03:57] [j2Bqq0VTv0o @ 00:02:22] [3wH9U_IzNn8 @ 00:01:31]"
+                ),
+            ],
+            "table": {
+                "caption": "Observed failures, reported incidents, and clearly identified illustrative traps.",
+                "headers": ["Failure or economic exposure", "What the speaker actually reports", "Expert Source"],
+                "rows": [
+                    [
+                        "A free video offer generated substantial paid infrastructure consumption.",
+                        "Taylor's customer incurred thirty thousand dollars in the first month through storage, bandwidth, uploads, and viewing beyond the expected usage.",
+                        "Bryan Taylor ([yLxvwa45vR8 @ 00:03:17])",
+                    ],
+                    [
+                        "Correct backend data failed the explicitly promised user-visible requirement.",
+                        "neomanex's tester could retrieve runner information through the API, but failed the check because the promised page did not display it.",
+                        "neomanex ([wOkT9r5iVME @ 00:06:42])",
+                    ],
+                    [
+                        "Passing the main testing rounds did not finish every acceptance decision.",
+                        "A separate done-when review found four gaps after the testing result: two required fixes and two required the owner's decision.",
+                        "neomanex ([wOkT9r5iVME @ 00:07:21])",
+                    ],
+                    [
+                        "Successful demos triggered repeated scope discussions within one active engagement.",
+                        "Augusto Digital reports five scope-creep meetings across six weeks, with stakeholders responding to success by requesting additional capabilities.",
+                        "Augusto Digital ([VzBpfD_Dcq8 @ 00:01:32])",
+                    ],
+                    [
+                        "Changing models inside a sensitive chat changes where its data goes.",
+                        "Williams warns that switching from a local model to an OpenAI model sends the existing conversation data onward; a new chat avoids that carryover.",
+                        "Matt Williams ([KeqxPxb_sak @ 00:03:57])",
+                    ],
+                    [
+                        "A reported privacy incident expanded into a broader enforcement history.",
+                        "Privado AI recounts exposed histories and partial payment details, a temporary Italian processing restriction, and later action involving multiple privacy issues.",
+                        "Privado AI ([3wH9U_IzNn8 @ 00:01:31])",
+                    ],
+                ],
+            },
+            "callout": {
+                "kind": "OPERATOR GATE",
+                "title": "Checks tied to the failures the speakers describe",
+                "body": "Use these checks before calling the corresponding work finished.",
+                "items": [
+                    (
+                        "Can each promised screen or state be observed in the shipped product? neomanex "
+                        "failed a runner-name requirement even though the value existed in code and the API. "
+                        "[neomanex — wOkT9r5iVME @ 00:06:42]"
+                    ),
+                    (
+                        "Is consumption visible through reporting and an admin tool? Taylor puts those "
+                        "early in the build and recounts the customer's thirty-thousand-dollar video bill. "
+                        "[Bryan Taylor — yLxvwa45vR8 @ 00:03:04]"
+                    ),
+                    (
+                        "Has the agreement bounded extra work and liability? ProtaSystem calls for a "
+                        "priced change-order pause and an aggregate cap tied to the amount actually paid. "
+                        "[ProtaSystem — 6l0a6If9Oyk @ 00:02:38] "
+                        "[ProtaSystem — 6l0a6If9Oyk @ 00:03:49]"
+                    ),
+                    (
+                        "Have training, retention eligibility, exceptions, abuse monitoring, storage "
+                        "location, inference location, and necessary sensitive fields been checked separately? "
+                        "[Protecto — e8kcLoVVX_A @ 00:01:54]"
+                    ),
+                ],
+            },
+        },
     ],
-    "pull_quote": "Scale the workflow whose evidence survives review, not the demo whose defects require the founder.",
+    "pull_quote": (
+        "'One outcome, one owner, one date.' — Augusto Digital "
+        "(VzBpfD_Dcq8 @ 00:07:01)."
+    ),
     "diagram_id": "diag-08",
     "action_checklist": [
-        "Create a 23-slot execution ledger linked to the mapped-play identifiers, with one accountable owner and one evidence artifact per slot.",
-        "Approve the $7,500 launch cash envelope and record founder labor separately before purchasing tools or booking contractor hours.",
-        "Issue a one-queue, two-connector pilot proposal with explicit authorization, processing terms, acceptance tests, and two payment milestones.",
-        "Freeze at least one hundred representative acceptance cases per workflow and test escalation, idempotency, access boundaries, and rollback.",
-        "Complete the Day-22-to-Day-29 incident, economics, publication-permission, retainer, and decision-memo work before the Day-30 meeting.",
-        "Apply Kill precedence, verify every Scale control, and fund any fourteen-day Fix experiment inside the existing cash and capacity limits.",
+        (
+            "Define the human-reviewed first outcome, assign its owner and date, and put additional "
+            "requests on a visible not-yet list. "
+            "[Augusto Digital — VzBpfD_Dcq8 @ 00:07:01] "
+            "[Augusto Digital — VzBpfD_Dcq8 @ 00:10:27]"
+        ),
+        (
+            "Freeze requirements written as who, what, and observable proof; add explicit exclusions "
+            "and a done-when box for every requirement. "
+            "[neomanex — wOkT9r5iVME @ 00:02:25] "
+            "[neomanex — wOkT9r5iVME @ 00:04:04]"
+        ),
+        (
+            "Specify bounded deliverables and revisions, pause for priced additions, and negotiate "
+            "an aggregate liability cap tied to payment received. "
+            "[ProtaSystem — 6l0a6If9Oyk @ 00:01:46] "
+            "[ProtaSystem — 6l0a6If9Oyk @ 00:03:49]"
+        ),
+        (
+            "Check the training setting and product agreement; recheck settings after updates "
+            "rather than assuming an earlier selection remains unchanged. "
+            "[Micah Johnson — lBhO8Q-MxYI @ 00:00:17] "
+            "[Serop | AI Automation — u-qrX9uP_t4 @ 00:01:47]"
+        ),
+        (
+            "Pilot local masking on one stream, inspect the differences, and scrub ingestion, "
+            "logging, and retrieved passages before their next use. "
+            "[Cognitive Capital — j2Bqq0VTv0o @ 00:03:05] "
+            "[Cognitive Capital — j2Bqq0VTv0o @ 00:05:27]"
+        ),
+        (
+            "Build usage reporting early and complete deletion work through the contract-defined "
+            "backup interval and support verification. "
+            "[Bryan Taylor — yLxvwa45vR8 @ 00:03:04] "
+            "[SecureCyberGates — TcAbiyEqBFM @ 00:04:39]"
+        ),
     ],
     "statutory_citations": [
         {
-            "title": "18 U.S.C. § 1030(a)(2)(C) — Unauthorized Access to a Protected Computer",
-            "url": "https://www.law.cornell.edu/uscode/text/18/1030",
-            "relevance": (
-                "Define and document client-system authorization before retrieving information; "
-                "a working credential does not establish the scope of permitted access."
-            ),
+            "title": "Protecto — Zero Data Retention Is Not Enough for AI Security (3 Controls Explained) #ai #aisecurity [00:00:17]",
+            "url": "https://www.youtube.com/watch?v=e8kcLoVVX_A&t=17s",
+            "relevance": "Primary practitioner testimony separating no training, zero data retention, and data residency.",
         },
         {
-            "title": "15 U.S.C. § 45(a) — Unfair or Deceptive Acts or Practices",
-            "url": "https://www.law.cornell.edu/uscode/text/15/45",
-            "relevance": (
-                "Preserve evidence for AI performance and savings claims, identify test conditions, "
-                "and avoid presenting a narrow pilot result as universal operating reliability."
-            ),
+            "title": "neomanex — Stop AI Agent Scope Creep: Frozen Requirements and a Done When List [00:06:42]",
+            "url": "https://www.youtube.com/watch?v=wOkT9r5iVME&t=402s",
+            "relevance": "Primary practitioner testimony on a shipped interface failing an observable requirement despite backend implementation.",
         },
         {
-            "title": "17 U.S.C. § 204(a) — Execution of Transfers of Copyright Ownership",
-            "url": "https://www.law.cornell.edu/uscode/text/17/204",
-            "relevance": (
-                "Use signed written provisions for intended copyright ownership transfers "
-                "and distinguish transferred deliverables from licensed reusable components."
-            ),
+            "title": "ProtaSystem — Uncapped Indemnity & Scope Creep: The Contract Traps Every Freelancer Faces [00:03:49]",
+            "url": "https://www.youtube.com/watch?v=6l0a6If9Oyk&t=229s",
+            "relevance": "Primary practitioner testimony advocating an aggregate liability cap tied to the amount actually paid.",
         },
         {
-            "title": "California Civil Code § 1798.100(d) — Contracts Governing Personal Information Disclosures",
-            "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?lawCode=CIV&sectionNum=1798.100.",
-            "relevance": (
-                "Where applicable, document limited processing purposes, required privacy protections, "
-                "and the contractual rights and obligations governing service providers or contractors."
-            ),
+            "title": "Bryan Taylor — Custom Software Development Pitfalls: Scope Creep, AI Dependence, and Uncapped API Costs [00:03:17]",
+            "url": "https://www.youtube.com/watch?v=yLxvwa45vR8&t=197s",
+            "relevance": "Primary practitioner testimony on a customer's first-month video-service consumption costs.",
+        },
+    ],
+    "source_citations": [
+        {
+            "source_type": "video_pro_tip",
+            "video_id": "TtU19Z-ASZk",
+            "title": "Project Risk, Scope Creep, and AI Automation for MSPs",
+            "channel": "Global Technology Industry Association (GTIA)",
+            "author": "Global Technology Industry Association (GTIA)",
+            "text": "Scope creep is a direct bottom line margin leak. It's your engineers working on something more than you're getting paid for. It's not getting tracked.",
+            "tip": "Scope creep is a direct bottom line margin leak. It's your engineers working on something more than you're getting paid for. It's not getting tracked.",
+            "timestamp": 261,
+            "timestamp_seconds": 261,
+            "timestamp_label": "[00:04:21]",
+            "url": "https://www.youtube.com/watch?v=TtU19Z-ASZk&t=261s",
+            "markdown": "[00:04:21](https://www.youtube.com/watch?v=TtU19Z-ASZk&t=261s)",
+            "epistemic_status": "attributed_practitioner_claim",
+            "relevance": "Practitioner testimony connecting untracked engineering work to project margin leakage.",
+        },
+        {
+            "source_type": "video_pro_tip",
+            "video_id": "yLxvwa45vR8",
+            "title": "Custom Software Development Pitfalls: Scope Creep, AI Dependence, and Uncapped API Costs",
+            "channel": "Bryan Taylor",
+            "author": "Bryan Taylor",
+            "text": "We built a software once for a customer and they were giving it away and it ended up costing them $30,000 their first month because they didn't realize that they're giving away all this video space.",
+            "tip": "We built a software once for a customer and they were giving it away and it ended up costing them $30,000 their first month because they didn't realize that they're giving away all this video space.",
+            "timestamp": 197,
+            "timestamp_seconds": 197,
+            "timestamp_label": "[00:03:17]",
+            "url": "https://www.youtube.com/watch?v=yLxvwa45vR8&t=197s",
+            "markdown": "[00:03:17](https://www.youtube.com/watch?v=yLxvwa45vR8&t=197s)",
+            "epistemic_status": "attributed_practitioner_claim",
+            "relevance": "Firsthand account of unexpected customer video-service costs.",
+        },
+        {
+            "source_type": "video_pro_tip",
+            "video_id": "VzBpfD_Dcq8",
+            "title": "Ep. 17: Stopping AI Scope Creep | Augusto Podcast",
+            "channel": "Augusto Digital",
+            "author": "Augusto Digital",
+            "text": "One outcome, one owner, one date.",
+            "tip": "One outcome, one owner, one date.",
+            "timestamp": 421,
+            "timestamp_seconds": 421,
+            "timestamp_label": "[00:07:01]",
+            "url": "https://www.youtube.com/watch?v=VzBpfD_Dcq8&t=421s",
+            "markdown": "[00:07:01](https://www.youtube.com/watch?v=VzBpfD_Dcq8&t=421s)",
+            "epistemic_status": "attributed_practitioner_claim",
+            "relevance": "The practitioner's central scope anchor for a shipped first outcome.",
+        },
+        {
+            "source_type": "video_pro_tip",
+            "video_id": "wOkT9r5iVME",
+            "title": "Stop AI Agent Scope Creep: Frozen Requirements and a Done When List",
+            "channel": "neomanex",
+            "author": "neomanex",
+            "text": "Every requirement has the same three parts. Who does it, what they can do, and how you'd prove it from the outside.",
+            "tip": "Every requirement has the same three parts. Who does it, what they can do, and how you'd prove it from the outside.",
+            "timestamp": 145,
+            "timestamp_seconds": 145,
+            "timestamp_label": "[00:02:25]",
+            "url": "https://www.youtube.com/watch?v=wOkT9r5iVME&t=145s",
+            "markdown": "[00:02:25](https://www.youtube.com/watch?v=wOkT9r5iVME&t=145s)",
+            "epistemic_status": "attributed_practitioner_claim",
+            "relevance": "Observable requirements used throughout design, implementation, and acceptance testing.",
+        },
+        {
+            "source_type": "video_pro_tip",
+            "video_id": "6l0a6If9Oyk",
+            "title": "Uncapped Indemnity & Scope Creep: The Contract Traps Every Freelancer Faces",
+            "channel": "ProtaSystem",
+            "author": "ProtaSystem",
+            "text": "When a boundary is crossed, work pauses until the new request is quoted, documented, and priced as an addition.",
+            "tip": "When a boundary is crossed, work pauses until the new request is quoted, documented, and priced as an addition.",
+            "timestamp": 158,
+            "timestamp_seconds": 158,
+            "timestamp_label": "[00:02:38]",
+            "url": "https://www.youtube.com/watch?v=6l0a6If9Oyk&t=158s",
+            "markdown": "[00:02:38](https://www.youtube.com/watch?v=6l0a6If9Oyk&t=158s)",
+            "epistemic_status": "attributed_practitioner_claim",
+            "relevance": "The speaker's formal change-order response to unpaid scope expansion.",
+        },
+        {
+            "source_type": "video_pro_tip",
+            "video_id": "3XIdI6vcGz0",
+            "title": "The Scope Creep Mistake That Can Wreck AI Projects",
+            "channel": "AI Automation Society",
+            "author": "AI Automation Society",
+            "text": "If we want our customers or clients to be happy at the end of this stuff, we have to be very, very honest, manage expectations effectively.",
+            "tip": "If we want our customers or clients to be happy at the end of this stuff, we have to be very, very honest, manage expectations effectively.",
+            "timestamp": 201,
+            "timestamp_seconds": 201,
+            "timestamp_label": "[00:03:21]",
+            "url": "https://www.youtube.com/watch?v=3XIdI6vcGz0&t=201s",
+            "markdown": "[00:03:21](https://www.youtube.com/watch?v=3XIdI6vcGz0&t=201s)",
+            "epistemic_status": "attributed_practitioner_claim",
+            "relevance": "Client-work experience behind early pushback and expectation management.",
+        },
+        {
+            "source_type": "video_pro_tip",
+            "video_id": "TcAbiyEqBFM",
+            "title": "23-[5.16] SOC2 – Data Retention Policy",
+            "channel": "SecureCyberGates",
+            "author": "SecureCyberGates",
+            "text": "The actual retention time depends on project contract and also regulatory laws.",
+            "tip": "The actual retention time depends on project contract and also regulatory laws.",
+            "timestamp": 235,
+            "timestamp_seconds": 235,
+            "timestamp_label": "[00:03:55]",
+            "url": "https://www.youtube.com/watch?v=TcAbiyEqBFM&t=235s",
+            "markdown": "[00:03:55](https://www.youtube.com/watch?v=TcAbiyEqBFM&t=235s)",
+            "epistemic_status": "attributed_practitioner_claim",
+            "relevance": "Project-specific retention periods rather than universal adoption of the walkthrough's example numbers.",
+        },
+        {
+            "source_type": "video_pro_tip",
+            "video_id": "lBhO8Q-MxYI",
+            "title": "OpenAI's New Privacy Policy: What Every Business Owner Needs to Know",
+            "channel": "Micah Johnson",
+            "author": "Micah Johnson",
+            "text": "If you use the API, your data is not used for training by default. That's a completely different agreement.",
+            "tip": "If you use the API, your data is not used for training by default. That's a completely different agreement.",
+            "timestamp": 33,
+            "timestamp_seconds": 33,
+            "timestamp_label": "[00:00:33]",
+            "url": "https://www.youtube.com/watch?v=lBhO8Q-MxYI&t=33s",
+            "markdown": "[00:00:33](https://www.youtube.com/watch?v=lBhO8Q-MxYI&t=33s)",
+            "epistemic_status": "attributed_practitioner_claim",
+            "relevance": "Johnson's distinction between API training defaults and consumer ChatGPT controls.",
+        },
+        {
+            "source_type": "video_pro_tip",
+            "video_id": "ZE-vxHSGB7w",
+            "title": "Securing SMB GenAI Pipelines  Guardrails, Data Privacy & ISO SOC2 Compliance on AWS",
+            "channel": "Cloud in",
+            "author": "Cloud in",
+            "text": "No account in your current organization or current infra should have all the access to all the services.",
+            "tip": "No account in your current organization or current infra should have all the access to all the services.",
+            "timestamp": 1406,
+            "timestamp_seconds": 1406,
+            "timestamp_label": "[00:23:26]",
+            "url": "https://www.youtube.com/watch?v=ZE-vxHSGB7w&t=1406s",
+            "markdown": "[00:23:26](https://www.youtube.com/watch?v=ZE-vxHSGB7w&t=1406s)",
+            "epistemic_status": "attributed_practitioner_claim",
+            "relevance": "Least-privilege access as part of the customer's GenAI pipeline configuration.",
+        },
+        {
+            "source_type": "video_pro_tip",
+            "video_id": "e8kcLoVVX_A",
+            "title": "Zero Data Retention Is Not Enough for AI Security (3 Controls Explained) #ai #aisecurity",
+            "channel": "Protecto",
+            "author": "Protecto",
+            "text": "The model may be stateless, but your system is not. Your logs are not stateless. Your retrieval pipeline is not stateless. Your tools and databases are not stateless.",
+            "tip": "The model may be stateless, but your system is not. Your logs are not stateless. Your retrieval pipeline is not stateless. Your tools and databases are not stateless.",
+            "timestamp": 65,
+            "timestamp_seconds": 65,
+            "timestamp_label": "[00:01:05]",
+            "url": "https://www.youtube.com/watch?v=e8kcLoVVX_A&t=65s",
+            "markdown": "[00:01:05](https://www.youtube.com/watch?v=e8kcLoVVX_A&t=65s)",
+            "epistemic_status": "attributed_practitioner_claim",
+            "relevance": "Application-level persistence beyond a provider's zero-retention commitment.",
+        },
+        {
+            "source_type": "video_pro_tip",
+            "video_id": "j2Bqq0VTv0o",
+            "title": "OpenAI Privacy Filter: Redact PII Locally (AI Workflow Explained)",
+            "channel": "Cognitive Capital",
+            "author": "Cognitive Capital",
+            "text": "First, pick a stream. Isolate a single data stream, like your support tickets. Don't try to boil the ocean on day one.",
+            "tip": "First, pick a stream. Isolate a single data stream, like your support tickets. Don't try to boil the ocean on day one.",
+            "timestamp": 327,
+            "timestamp_seconds": 327,
+            "timestamp_label": "[00:05:27]",
+            "url": "https://www.youtube.com/watch?v=j2Bqq0VTv0o&t=327s",
+            "markdown": "[00:05:27](https://www.youtube.com/watch?v=j2Bqq0VTv0o&t=327s)",
+            "epistemic_status": "attributed_practitioner_claim",
+            "relevance": "The first step of a local-redaction pilot with before-and-after review.",
+        },
+        {
+            "source_type": "video_pro_tip",
+            "video_id": "3wH9U_IzNn8",
+            "title": "Italian DPA fines OpenAI €15M, CPPA settles with data brokers, and Google allows fingerprinting.",
+            "channel": "Privado AI",
+            "author": "Privado AI",
+            "text": "It starts in March 2023 when there was a relatively minor data breach involving ChatGPT. Some people's chat histories and partial payment details were exposed.",
+            "tip": "It starts in March 2023 when there was a relatively minor data breach involving ChatGPT. Some people's chat histories and partial payment details were exposed.",
+            "timestamp": 91,
+            "timestamp_seconds": 91,
+            "timestamp_label": "[00:01:31]",
+            "url": "https://www.youtube.com/watch?v=3wH9U_IzNn8&t=91s",
+            "markdown": "[00:01:31](https://www.youtube.com/watch?v=3wH9U_IzNn8&t=91s)",
+            "epistemic_status": "attributed_practitioner_claim",
+            "relevance": "Reported incident at the beginning of the speaker's Italian enforcement chronology.",
+        },
+        {
+            "source_type": "video_pro_tip",
+            "video_id": "u-qrX9uP_t4",
+            "title": "OpenAI's Secret Data Training: What You Need To Know",
+            "channel": "Serop | AI Automation",
+            "author": "Serop | AI Automation",
+            "text": "I don't think OpenAI or Anthropic and so on are doing this maliciously.",
+            "tip": "I don't think OpenAI or Anthropic and so on are doing this maliciously.",
+            "timestamp": 88,
+            "timestamp_seconds": 88,
+            "timestamp_label": "[00:01:28]",
+            "url": "https://www.youtube.com/watch?v=u-qrX9uP_t4&t=88s",
+            "markdown": "[00:01:28](https://www.youtube.com/watch?v=u-qrX9uP_t4&t=88s)",
+            "epistemic_status": "attributed_practitioner_claim",
+            "relevance": "Serop's interpretation of other users' reports, contrasted with a more adversarial account of privacy controls.",
+        },
+        {
+            "source_type": "video_pro_tip",
+            "video_id": "DIfo9jAMZYY",
+            "title": "OpenAI's Policies Explained: EU Privacy, Security, Safety, and Your Data Rights (ChatGPT, Sora,API)",
+            "channel": "Innovative Compass Consulting",
+            "author": "Innovative Compass Consulting",
+            "text": "The AI could give another user a very similar or even identical response if they ask a similar question.",
+            "tip": "The AI could give another user a very similar or even identical response if they ask a similar question.",
+            "timestamp": 186,
+            "timestamp_seconds": 186,
+            "timestamp_label": "[00:03:06]",
+            "url": "https://www.youtube.com/watch?v=DIfo9jAMZYY&t=186s",
+            "markdown": "[00:03:06](https://www.youtube.com/watch?v=DIfo9jAMZYY&t=186s)",
+            "epistemic_status": "attributed_practitioner_claim",
+            "relevance": "The speaker distinguishes output ownership from uniqueness.",
+        },
+        {
+            "source_type": "video_pro_tip",
+            "video_id": "KeqxPxb_sak",
+            "title": "Stop Sending Your Private Data to OpenAI's Servers",
+            "channel": "Matt Williams",
+            "author": "Matt Williams",
+            "text": "If you shared a private document with a local model, then switch mid conversation to an OpenAI model, all the data will go there, too.",
+            "tip": "If you shared a private document with a local model, then switch mid conversation to an OpenAI model, all the data will go there, too.",
+            "timestamp": 237,
+            "timestamp_seconds": 237,
+            "timestamp_label": "[00:03:57]",
+            "url": "https://www.youtube.com/watch?v=KeqxPxb_sak&t=237s",
+            "markdown": "[00:03:57](https://www.youtube.com/watch?v=KeqxPxb_sak&t=237s)",
+            "epistemic_status": "attributed_practitioner_claim",
+            "relevance": "The privacy trap when changing from local inference to cloud inference inside an existing conversation.",
+        },
+        {
+            "source_type": "video_pro_tip",
+            "video_id": "A0tzwuw-nEg",
+            "title": "AI Reads OpenAI's Privacy Policy, Finds Data Trap | WNT #lawyer #openai",
+            "channel": "WNT",
+            "author": "WNT",
+            "text": "The FAQ mentions that disabling chat history means conversations won't be used to train our models, but provides zero technical verification of this claim.",
+            "tip": "The FAQ mentions that disabling chat history means conversations won't be used to train our models, but provides zero technical verification of this claim.",
+            "timestamp": 126,
+            "timestamp_seconds": 126,
+            "timestamp_label": "[00:02:06]",
+            "url": "https://www.youtube.com/watch?v=A0tzwuw-nEg&t=126s",
+            "markdown": "[00:02:06](https://www.youtube.com/watch?v=A0tzwuw-nEg&t=126s)",
+            "epistemic_status": "attributed_practitioner_claim",
+            "relevance": "WNT's skeptical interpretation of training exclusions and their verifiability, rather than evidence of a specific training event.",
         },
     ],
 }

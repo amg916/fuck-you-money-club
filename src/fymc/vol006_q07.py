@@ -5,995 +5,915 @@ CHAPTER_7 = {
     "chapter_id": "Q7",
     "chapter_number": 7,
     "question_number": 7,
-    "slug": "productized-ai-agencies-complete-operating-process",
-    "question_prompt": "How does an operator execute productized ai agencies end-to-end from intake to reconciled cash, backed by an auditable technical/ledger blueprint and a worked 90-day cohort walk?",
+    "slug": "zapier-make-n8n-ai-automation-costs-self-hosted-agents",
+    "question_prompt": "How do Zapier, Make and n8n compare on usability, small-business and per-workflow costs, team needs and building the same AI lead responder? Where does UiPath fit, and how can self-hosted n8n, Claude MCP, AI assistants and Groq/Gemini support AI agents, workflow creation and an AI automation agency while reducing software fees?",
     "kicker": "Q7 / THE BIG MONEY PLAYBOOKS",
-    "title": "The Complete Operating Process, Production Blueprint & 90-Day Cohort Walk",
-    "subtitle": "Fixed-Scope AI Sprints, SEC EDGAR Triggers, SQLite Idempotency, Human Verification, and Cash-to-Ledger Reconciliation",
-    "layout_template": "research_exhibit",
-    "reading_time_minutes": 14,
+    "title": "Zapier vs Make vs n8n: AI Automation Tools, Costs & Self-Hosted Agents",
+    "subtitle": "2025–2026 comparisons of pricing, ease of use, team fit and developer workflows, plus UiPath, AI lead responders, automation agencies and self-hosted n8n with Claude MCP, AI assistants and Groq/Gemini.",
+    "layout_template": "thirty_day_roadmap",
+    "reading_time_minutes": 15,
     "executive_summary": (
-        "Candidate #29, Productized AI Agencies, holds Rank #08 with an 89/100 "
-        "Money-to-Manpower Score across 23 mapped plays. This chapter turns that "
-        "position into an executable operating system: permissioned intake, bounded "
-        "workflow delivery, evidence-backed acceptance, immutable posting keys, and "
-        "bank reconciliation. Annual owner profit remains $20,000 Conservative, "
-        "$165,000 Base, and $400,000 Scaled; client sales attributed to automation "
-        "never enter agency revenue. A six-module SQLite reference separates internal "
-        "release controls from actual custody of funds. The worked cohort produces "
-        "$137,500 quarterly revenue and $41,250 profit while explaining why collections "
-        "initially trail earnings. EDGAR triggers and platform-authority work become "
-        "measurable acquisition experiments, with explicit fallbacks when evidence, "
-        "permissions, or platform rules prevent execution."
+        "Practitioners broadly agree: Zapier gets simple automations running fastest, Make exposes branching "
+        "visually, and n8n gives technical operators deeper control and self-hosting. The economics turn on "
+        "tasks, credits, and complete workflow executions—not just the advertised subscription. ProfitPilot "
+        "prices a four-action lead workflow at $49 on Zapier, $9 on Make, and €20 on n8n Cloud for "
+        "500 monthly leads under stated billing assumptions. Owner's Bot Lab nevertheless ranks n8n first "
+        "in its responder test, while Paired Recruiting favors Make for remote teams. Jonas runs client "
+        "workflows on free n8n software but pays for hosting. SaaS Master and Cuebic AI demonstrate "
+        "AI-assisted workflow creation; the operational catches are credentials, silent failures, duplicate "
+        "messages, maintenance, and model charges."
     ),
     "key_metrics": [
         {
-            "label": "Conservative",
-            "value": "$100,000",
-            "context": "Annual implementation fees and support retainers only",
-            "note": "20% net margin; $20,000 annual owner net profit; 2 FT + 3 C",
+            "label": "Four-action workflow at 500 monthly leads",
+            "metric": "Four-action workflow at 500 monthly leads",
+            "value": "Zapier $49; Make $9; n8n Cloud €20 per month",
+            "confidence": "attributed_practitioner_claim",
+            "context": (
+                "ProfitPilot's annual-billing calculation uses 2,000 Zapier tasks, about 2,500 Make credits, "
+                "and 500 n8n executions. It assumes Standard-tier Zapier AI and excludes separate model costs."
+            ),
+            "source": "ProfitPilot ([d8w8FHZJpdY @ 00:03:09])",
         },
         {
-            "label": "Base",
-            "value": "$550,000",
-            "context": "Annual implementation fees and support retainers only",
-            "note": "30.0% net margin; $165,000 annual owner net profit; 2 FT + 3 C",
+            "label": "Lead-responder stress test",
+            "metric": "Lead-responder stress test",
+            "value": "20 leads; 4 emergencies; zero false alarms; zero prices quoted",
+            "confidence": "attributed_practitioner_claim",
+            "context": (
+                "Owner's Bot Lab reports these results across all three tools. Make repeated the customer's "
+                "50% discount wording, producing a stricter final score of 19 out of 20 for Make."
+            ),
+            "source": "Owner's Bot Lab ([EtiRX0GduSI @ 00:04:03])",
         },
         {
-            "label": "Scaled",
-            "value": "$1,000,000",
-            "context": "Annual implementation fees and support retainers only",
-            "note": "40% net margin; $400,000 annual owner net profit; 3 FT + 4 C",
+            "label": "Client payment workflow complexity",
+            "metric": "Client payment workflow complexity",
+            "value": "67 steps counted as one n8n execution",
+            "confidence": "attributed_practitioner_claim",
+            "context": (
+                "Jonas describes a Stripe payment workflow that updates a CRM, creates a project, and handles "
+                "failed payments within a dashboard containing over 100 workflows."
+            ),
+            "source": "Jonas | AI Tools & Automation ([4imOFZeP7nk @ 00:05:15])",
+        },
+        {
+            "label": "Starter automation pack",
+            "metric": "Starter automation pack",
+            "value": "$1,500 setup plus $500 monthly",
+            "confidence": "attributed_practitioner_claim",
+            "context": (
+                "The AI Blueprint teaches this price for two custom core workflows with ongoing maintenance "
+                "and uptime monitoring; it is the proposed starter offer, not a reported client receipt."
+            ),
+            "source": "The AI Blueprint ([1mZ0bWq9y-M @ 00:02:20])",
         },
     ],
     "sections": [
         {
-            "heading": "1. Convert permissioned signals into bounded, priced work",
-            "epistemic_status": "operating_framework",
+            "id": "practitioner-consensus",
+            "title": "The Practitioner Consensus",
             "paragraphs": [
                 (
-                    "Start with one saleable workflow, not an unrestricted promise to "
-                    "install AI throughout a company. A suitable first product is a "
-                    "ten-business-day inbound-request classification sprint: connect one "
-                    "authorized mailbox, map six request classes, draft responses without "
-                    "sending them, and deliver a reviewed exception queue. Quote $10,000 "
-                    "for implementation and offer $1,250 monthly support with a stated "
-                    "volume allowance, response window, and change budget. Collect half "
-                    "the implementation fee at signing and invoice the remainder at "
-                    "acceptance on thirty-day terms. The statement of work names the "
-                    "client owner, permitted systems, approved data fields, retention "
-                    "period, IP allocation, and measurable acceptance tests. Authorization "
-                    "must identify actual accounts and actions; possession of an API "
-                    "token alone does not establish permission under 18 U.S.C. § 1030. "
-                    "Score each intake against workflow repetition, observable ground "
-                    "truth, recoverable errors, and available reviewers. Reject projects "
-                    "requiring autonomous consequential decisions or unrestricted access. "
-                    "A signed change order, rather than an informal chat message, changes "
-                    "the connector count or output authority. This boundary makes "
-                    "discovery, engineering, invoicing, and later dispute resolution refer "
-                    "to the same deliverable, while preserving enough implementation "
-                    "margin to fund competent human review."
+                    "The common starting point is a broken handoff, not an AI agent looking for something to do. "
+                    "Erin at Paired Recruiting describes remote teams losing time because a form arrives, a lead "
+                    "sits unseen, or the next person never learns that work is ready. Their basic automation "
+                    "moves a submission into a CRM, notifies the team, and creates a task without someone "
+                    "coordinating every transfer. LearnAI Today describes the same operating pattern through "
+                    "inquiries, welcome emails, and invoice entry: identify the trigger, apply the rules, and "
+                    "perform the action. Jonas reduces the architecture to two parts, triggers and actions, "
+                    "including triggers that come from another automation. That agreement matters for the "
+                    "productized offer: the deliverable is an operating process, not merely a connection between "
+                    "two logos. Paired's examples extend into onboarding, documents, content status updates, and "
+                    "internal coordination. Jonas sells chatbots, lead follow-ups, and payment syncs built from "
+                    "that same pattern. The tools differ in how builders express the sequence, but the underlying "
+                    "job remains moving information and starting the next useful action without repeated manual "
+                    "checking. Paired's instruction is to start with one process, get it working, and build from "
+                    "there. Paired Recruiting [TdMOpd_cG0A @ 00:00:44]; LearnAI Today "
+                    "[Pd96DxQ36U8 @ 00:00:37]; Jonas [4imOFZeP7nk @ 00:01:07]."
                 ),
                 (
-                    "Run sec_edgar_8k_vendor_trigger_arbitrage as a narrow research feed, "
-                    "not a claim that a filing proves purchase intent. Inspect SEC "
-                    "Form 8-K Items 5.02, 1.01, and 2.01 for leadership changes, material "
-                    "agreements, and completed acquisitions; inspect Form D notices for "
-                    "potentially relevant capital raises. Form D describes an exempt "
-                    "offering and does not establish that every offered dollar has "
-                    "closed. Use the SEC current-filings feed and documented submissions "
-                    "JSON, retaining accession numbers, acceptance timestamps, and source "
-                    "links. At an illustrative 120 detected events, forty percent passing "
-                    "entity and workflow checks yields forty-eight candidates; twelve "
-                    "discovery calls and three $10,000 projects produce $30,000 booked "
-                    "implementation fees, not $30,000 collected immediately. A reviewer "
-                    "can prepare relevant executive outreach within an hour of detection "
-                    "when business hours and contact permissions permit. Do not promise "
-                    "to beat every commercial database. Enforce a shared five-request-"
-                    "per-second token bucket, a descriptive contact-bearing user agent, "
-                    "conditional requests, and backoff. Mirror available SEC nightly bulk "
-                    "ZIP archives for historical lookbacks; use supported indexes for "
-                    "datasets without such archives. During blocking or feed failure, "
-                    "pause fresh triggers and work the verified backlog rather than "
-                    "increasing request pressure."
+                    "The usability consensus is unusually consistent. Simplified positions Zapier as the starting "
+                    "point for nontechnical users, Make as the stronger visual environment for advanced scenarios, "
+                    "and n8n as the more developer-oriented choice. Marc reaches the same conclusion after "
+                    "building a sales email workflow on all three: Zapier is quickest, Make is close behind, "
+                    "and n8n requires more familiarity before the workflow comes together. Importantly, Marc "
+                    "builds those examples without writing code; n8n's technical positioning does not mean every "
+                    "workflow requires programming. LearnAI Today explains the distinction through the editors: "
+                    "Zapier stacks actions in a top-to-bottom list, Make maps modules across a canvas, and n8n "
+                    "combines a visual node editor with code where built-in nodes fall short. Team fit therefore "
+                    "stays central to each recommendation. Marc favors Zapier for owners and marketing or "
+                    "operations teams minimizing build time, Make for advanced no-code builders, and n8n for "
+                    "technical teams wanting infrastructure control. Simplified also includes integration needs, "
+                    "workflow complexity, budget, and existing team skills in the decision. None of these "
+                    "comparisons makes the most technically elaborate platform the automatic winner for a simple "
+                    "handoff. The recurring trade is speed and managed convenience against visual flexibility "
+                    "and deeper control. Simplified [IYV8OVFzq_c @ 00:00:46]; Automate with Marc "
+                    "[syCqaV7N73s @ 00:28:03]; LearnAI Today [Pd96DxQ36U8 @ 00:03:34]."
                 ),
                 (
-                    "Treat platform_privilege_tier_account_arbitrage as a tightly bounded "
-                    "reputation-operations experiment, not inventory of accounts to rent "
-                    "or sell. Google Local Guides, Wikipedia editing permissions, Product "
-                    "Hunt participation, and verified-review labels represent different "
-                    "programs; none establishes a reliable multiplier on commercial "
-                    "ranking. Sell research, correction preparation, and documented "
-                    "monitoring instead of access to privileged identities. An illustrative "
-                    "$1,250 retainer can allocate three analyst hours at $60, one reviewer "
-                    "hour at $90, and $80 of tooling: $350 direct delivery cost before "
-                    "shared overhead. Do not add that illustration to the cohort revenue "
-                    "unless it is one of the ten contracted support accounts. Submit "
-                    "only verifiable, secondary-source-backed edits where the platform "
-                    "permits them; disclose paid relationships where required. Keep Local "
-                    "Guide activity within the account holder's genuine metropolitan "
-                    "knowledge and exclude paid participation where program rules forbid "
-                    "it. Never manufacture customer experiences or buy sentiment-conditioned "
-                    "reviews; 16 CFR Part 465 supplies concrete prohibitions. For a "
-                    "conflicted Wikipedia topic, prepare a sourced talk-page request "
-                    "rather than covertly editing promotional claims. The fallback is "
-                    "an owner-controlled correction packet and monitoring report. Measure "
-                    "accepted factual corrections and response time, not unverifiable "
-                    "algorithmic influence or promised revenue attribution."
+                    "The billing consensus starts with what gets counted. ProfitPilot identifies a Zapier task "
+                    "as a successful action, excludes triggers and built-in tools such as Filter, Paths, and "
+                    "Formatter, and counts most Make modules as credits, including the trigger. Routers and "
+                    "error handlers are exceptions in that Make comparison. One n8n execution is a complete "
+                    "workflow run rather than a charge for each individual step. AI Business Tools & Automation "
+                    "uses a five-action lead workflow to show why those definitions matter: 500 leads become "
+                    "about 2,500 tasks, 3,000 credits, or 500 executions under its assumptions. Whizz AI agrees "
+                    "that Make often offers the low-cost visual route for a small business, while n8n appeals "
+                    "to operators avoiding per-step charging and seeking control. Self-hosting changes who runs "
+                    "the software, not whether operational work exists. Whizz explicitly assigns updates, "
+                    "security, and continued operation to the self-hosting team. ProfitPilot also separates "
+                    "model costs from the platform figures. The baseline comparison is consequently a named "
+                    "workflow at a named volume, with its actual billing unit and AI configuration visible. "
+                    "AI Business Tools & Automation tells buyers to build a real workflow, run it for a week, "
+                    "and read the usage meter rather than choose from headline prices alone. ProfitPilot "
+                    "[d8w8FHZJpdY @ 00:00:46]; AI Business Tools & Automation "
+                    "[PKHb0KLNOIg @ 00:00:54]; Whizz AI [Pz3jLYQwsX4 @ 00:04:57]."
                 ),
             ],
             "table": {
-                "caption": "Permissioned Acquisition and Fixed-Scope Intake Decision Matrix",
-                "headers": [
-                    "Operating lane and accountable owner",
-                    "Required source evidence and authorization",
-                    "Unit economics or measurable decision rule",
-                    "Failure response and retained audit evidence",
-                ],
+                "caption": "The shared operating baseline before choosing an automation platform",
+                "headers": ["Operating decision", "Practitioner mechanics and team fit", "Expert Source"],
                 "rows": [
                     [
-                        "EDGAR event analyst screens a single defined industry",
-                        "Retain accession number, filing timestamp, entity match, and source URL",
-                        "One hundred twenty events yield forty-eight verified candidates under stated assumptions",
-                        "Pause blocked requests and use supported historical indexes with dated snapshots",
+                        "Begin with a handoff that currently requires repeated manual coordination",
+                        "Paired describes form submission, CRM entry, notification, and task creation as one connected process rather than four separate manual obligations.",
+                        "Paired Recruiting ([TdMOpd_cG0A @ 00:01:44])",
                     ],
                     [
-                        "Discovery owner qualifies one recoverable workflow per prospect",
-                        "Record transaction volume, current handling time, and available human reviewer",
-                        "Twelve completed discovery calls support three signed projects in the illustration",
-                        "Park weak evidence cases without charging implementation fees or creating invoices",
+                        "Use Zapier when getting a simple workflow running is the priority",
+                        "Marc calls Zapier fast and beginner-friendly for business owners and nontechnical teams that want to spend little time building.",
+                        "Automate with Marc | AI Automation ([syCqaV7N73s @ 00:00:42])",
                     ],
                     [
-                        "Platform research analyst prepares factual correction packets only",
-                        "Capture independent secondary sources and applicable paid-participation restrictions",
-                        "One monthly account pays $1,250 against $350 illustrated direct delivery cost",
-                        "Use owner-controlled correction requests when platform participation would be prohibited",
+                        "Use Make when the team needs visible branching and data movement",
+                        "LearnAI Today explains routers, iterators, filters, and inspection of module data as the strengths of Make's visual scenario builder.",
+                        "LearnAI Today ([Pd96DxQ36U8 @ 00:02:42])",
                     ],
                     [
-                        "Delivery lead defines one connector and six request classes",
-                        "Signed scope lists permitted fields, output authority, and acceptance evidence",
-                        "Charge $10,000 implementation with a fifty-percent signing collection milestone",
-                        "Price additional connectors separately before changing the committed delivery scope",
+                        "Use n8n when technical control and flexible workflow building matter",
+                        "Simplified highlights data transformation, multiple triggers, and developer-friendly customization rather than treating every platform as interchangeable.",
+                        "Simplified ([IYV8OVFzq_c @ 00:02:58])",
                     ],
                     [
-                        "Client system owner grants restricted integration access explicitly",
-                        "Document named service identity, permitted operations, expiration, and revocation owner",
-                        "Use read-only access until specific write operations receive documented authorization",
-                        "Disable the integration when permission expires or the responsible owner changes",
+                        "Count billable work rather than comparing subscription headlines in isolation",
+                        "ProfitPilot distinguishes successful Zapier actions, most Make modules including triggers, and one complete workflow execution for n8n.",
+                        "ProfitPilot ([d8w8FHZJpdY @ 00:00:46])",
                     ],
                     [
-                        "Commercial owner sets retainer capacity and support response windows",
-                        "Service schedule names included runs, escalation contacts, and change allowance",
-                        "Ten active support accounts at $1,250 generate $12,500 monthly revenue",
-                        "Queue excess changes for separately priced work rather than absorbing unlimited requests",
+                        "Separate free self-hosted software from the job of keeping it operating",
+                        "Whizz AI says self-hosting places continued operation, updates, and security with the operator even when the software itself costs nothing.",
+                        "Whizz AI ([Pz3jLYQwsX4 @ 00:04:57])",
+                    ],
+                ],
+            },
+        },
+        {
+            "id": "exact-street-mechanics",
+            "title": "Exact Street Mechanics, Tools & Numbers",
+            "paragraphs": [
+                (
+                    "Marc's repeatable lead-writer build starts with a Google Sheet containing first name, last "
+                    "name, company, phone, and email. A newly added row triggers the AI writer, and Gmail sends "
+                    "the result. In Zapier, select Google Sheets, choose the new-row event, connect the account, "
+                    "select the spreadsheet and worksheet, and test the incoming record. The AI step uses a "
+                    "custom prompt with dynamically mapped lead fields, a concise email under 150 words, and "
+                    "separate email-subject and email-body outputs. Map those outputs into Gmail rather than "
+                    "copying a sample lead's details into fixed text. Marc's Make version watches new rows, "
+                    "connects OpenAI through an API key, selects GPT 4.1 mini, maps the lead fields, and sends "
+                    "the result through Gmail. Its subject is fixed rather than generated separately. The "
+                    "n8n version uses a row-added trigger, an AI Agent with an attached chat model, expression "
+                    "mapping, and Gmail. Owner's Bot Lab shows why output structure matters: its responder "
+                    "needs separate emergency status, summary, and reply fields, and Zapier supplied those "
+                    "separately while Make needed another component and n8n used copied code. Marc's simple "
+                    "writer and that emergency responder share mapping mechanics without being identical builds. "
+                    "Automate with Marc [syCqaV7N73s @ 00:07:35]; Owner's Bot Lab "
+                    "[EtiRX0GduSI @ 00:01:30]."
+                ),
+                (
+                    "SaaS Master's self-hosted route begins in a VPS dashboard, opens Docker Manager, and uses "
+                    "Compose's one-click deployment to select n8n with the AI Assistant. After creating the "
+                    "instance account, the next connection is instance-level MCP: enable it in n8n settings, "
+                    "copy the connection URL, and add a custom connector in Claude. A new chat can then "
+                    "brainstorm and build workflows against that connection. Their working example is Fresh "
+                    "Product Radar, which examines GitHub, Hugging Face, and Product Hunt, uses an AI step, "
+                    "and continues into filters, Google Sheets, and email. Cuebic AI demonstrates a different "
+                    "configuration route inside its instance dashboard. Enable the AI assistant, choose "
+                    "OpenRouter, provide its API key, select the model, optionally add Brave search, enable "
+                    "agents and the knowledge base, then apply the changes. After reloading the workspace, "
+                    "Cuebic first checks that the assistant responds and then asks it to add an if node "
+                    "to an existing workflow. The demonstration distinguishes an assistant that changes "
+                    "workflow structure from an agent configured with channels, tools, skills, subagents, "
+                    "schedules, a model, and instructions. These are two demonstrated paths to AI-assisted "
+                    "building on self-hosted n8n, not a requirement to connect every node manually. SaaS Master "
+                    "[TdMeBa69Y8Y @ 00:02:03]; Cuebic AI [BxxP4kEqOdg @ 00:01:39]."
+                ),
+                (
+                    "12_5 Tech teaches the self-hosted agent as four connected blocks: a Gmail, Telegram, or "
+                    "webhook trigger; an AI Agent node with memory and tools; a Groq model or Gemini Flash; "
+                    "and actions in Slack, Sheets, or Gmail. Its deployment instructions emphasize Docker "
+                    "Compose, a pinned image, port 5678, a fixed encryption key, persistent workflow data, "
+                    "and seven-day execution pruning. The operational point is specific: recreating the "
+                    "container without the fixed key can break saved API credentials, while unpruned execution "
+                    "logs can fill a small VPS disk. Fireship demonstrates another route using a prebuilt "
+                    "Ubuntu VPS template, then either importing JSON workflows or creating a trigger and "
+                    "adding conditional logic, API calls, and an AI Agent. Their agent example draws on "
+                    "earlier workflow data and can attach a model, memory, and MCP tools. Jonas supplies "
+                    "the practical transition from local experimentation to ongoing client service: running "
+                    "on a laptop is useful for testing, but shutting that computer down stops the app. "
+                    "They move it to a small server costing around €6 monthly. Free community software "
+                    "and an always-running deployment are separate parts of these operators' setups. 12_5 Tech "
+                    "[0EeWohGy6RM @ 00:00:39]; Fireship [bS9R6aCVEzw @ 00:02:44]; Jonas "
+                    "[4imOFZeP7nk @ 00:04:34]."
+                ),
+                (
+                    "The AI Blueprint packages the build around business outcomes: saving time, cutting payroll "
+                    "costs, or generating customer revenue. Its lead-intelligence architecture captures a website "
+                    "submission with a webhook, uses an HTTP node and Crawl4AI to extract company information, "
+                    "passes that material into an AI Agent for pain-point analysis and a proposal outline, "
+                    "then syncs the result into HubSpot or Notion and notifies sales in Slack. The taught "
+                    "starter offer is two custom core workflows for $1,500 setup and $500 monthly maintenance "
+                    "and uptime monitoring. Its larger offer is $3,000 setup plus $1,500 monthly for end-to-end "
+                    "CRM and support automation. Acquisition is equally concrete: choose an industry, record "
+                    "a three-minute demonstration of its weekly bottleneck, contact 20 LinkedIn decision "
+                    "makers, and offer a seven-day installation trial. Jonas describes sellable work they "
+                    "have actually built: Instagram and WhatsApp chatbots, follow-ups, payment syncs, lead "
+                    "research, and ongoing upkeep. Paired Recruiting supplies the corresponding team bottleneck: "
+                    "after choosing a capable tool, someone still has to build, maintain, fix, and improve "
+                    "the workflows. Those maintenance responsibilities are explicitly part of the service "
+                    "rather than an afterthought to the initial automation delivery. The AI Blueprint "
+                    "[1mZ0bWq9y-M @ 00:01:42]; Jonas [4imOFZeP7nk @ 00:07:48]; Paired Recruiting "
+                    "[TdMOpd_cG0A @ 00:08:14]."
+                ),
+            ],
+            "table": {
+                "caption": "Exact builds, billing assumptions, and service packages taught by practitioners",
+                "headers": ["Build or economic comparison", "Exact mechanics and attributed figures", "Expert Source"],
+                "rows": [
+                    [
+                        "Build the three-stage sales writer with dynamic lead fields",
+                        "Marc connects a new Google Sheets row to an AI writer and Gmail, keeping generated subject and body separate in Zapier.",
+                        "Automate with Marc | AI Automation ([syCqaV7N73s @ 00:09:44])",
+                    ],
+                    [
+                        "Price ProfitPilot's four-action lead workflow at 500 monthly leads",
+                        "Annual-billing examples are $49 for 2,000 Zapier tasks, $9 for about 2,500 Make credits, and €20 for n8n Starter.",
+                        "ProfitPilot ([d8w8FHZJpdY @ 00:03:09])",
+                    ],
+                    [
+                        "Keep the five-action pricing example separate from the four-action example",
+                        "AI Business Tools & Automation counts 2,500 Zapier tasks at 500 leads, exceeding its stated 2,000-task tier and reaching the $89 tier.",
+                        "AI Business Tools & Automation ([PKHb0KLNOIg @ 00:01:31])",
+                    ],
+                    [
+                        "Connect a self-hosted n8n instance to Claude through MCP",
+                        "SaaS Master enables instance-level MCP, copies the connection URL, and adds a custom connector before requesting workflow creation in chat.",
+                        "SaaS Master ([TdMeBa69Y8Y @ 00:03:03])",
+                    ],
+                    [
+                        "Configure an assistant and test a concrete workflow modification",
+                        "Cuebic AI enables provider-backed AI features, reloads n8n, and asks the assistant to add an if node to an existing workflow.",
+                        "Cuebic AI ([BxxP4kEqOdg @ 00:02:57])",
+                    ],
+                    [
+                        "Package two core workflows with recurring maintenance and uptime work",
+                        "The AI Blueprint teaches $1,500 setup plus $500 monthly for the starter pack, alongside a larger CRM and support automation offer.",
+                        "The AI Blueprint ([1mZ0bWq9y-M @ 00:02:20])",
                     ],
                 ],
             },
             "callout": {
                 "kind": "INSIDER PRO-TIPS",
-                "title": "Protect margin before the first connector is installed",
-                "body": (
-                    "The strongest leverage comes from cleaner acceptance boundaries "
-                    "and reusable evidence, not from granting a model more authority."
-                ),
+                "title": "Small configuration choices that change the build",
+                "body": "Use the specific shortcuts and structural choices these builders demonstrate.",
                 "items": [
-                    "Deduplicate EDGAR signals by accession number and prospect entity before counting leads; one acquisition can produce several related filings.",
-                    "Replay the same frozen evaluation set before and after every prompt change, and preserve the reviewed failure cases as permanent regression fixtures.",
-                    "Put the retainer's included change hours beside its usage allowance so a low-token client cannot consume unlimited engineering time.",
-                    "Deliver platform correction packets with source excerpts and conflict disclosures; charge for defensible work rather than account status or ranking promises.",
-                ],
-            },
-        },
-        {
-            "heading": "2. Build an auditable six-module production and ledger spine",
-            "epistemic_status": "operating_framework",
-            "paragraphs": [
-                (
-                    "Use the six fragments below as one sequential Python reference "
-                    "script; every dependency is standard library and every monetary "
-                    "amount is an integer number of cents. The reference deliberately "
-                    "covers a local control plane rather than pretending to deploy "
-                    "connectors, store credentials, or operate a payment institution. "
-                    "SQLite serializes writers through BEGIN IMMEDIATE, with foreign "
-                    "keys, durable commits, and database-enforced business uniqueness. "
-                    "Give each concurrent worker its own connection to the same local "
-                    "database file; never put that file on an unreliable shared network "
-                    "filesystem. A lock timeout fails the whole transaction so the caller "
-                    "can retry the same business key. Canonical payload comparison rejects "
-                    "a reused key carrying changed facts. One project identifier represents "
-                    "one billable milestone; recurring service requires a new identifier "
-                    "containing its service month. Application code is the exclusive "
-                    "writer, and deployment permissions prevent casual ledger edits. "
-                    "These assumptions remove check-then-write races within the reference's "
-                    "transaction boundary. They do not make an external email, payment, "
-                    "or CRM call atomic with SQLite. Production connector workers must "
-                    "use provider-supported idempotency and status lookup, or stop an "
-                    "ambiguous action for human resolution instead of blindly repeating it."
-                ),
-                (
-                    "The verification and escrow state machine uses received, verified, "
-                    "reserved, released, and rejected states. Here reserved means an "
-                    "internal capacity allocation, not money held for another party; "
-                    "there is no escrow bank account, custody service, or automatic "
-                    "funds transfer. If a customer requires actual escrow, integrate "
-                    "the separately contracted provider and reconcile its statements "
-                    "without relabeling internal flags as safeguarded funds. Verification "
-                    "requires an evidence reference, and each transition records its "
-                    "expected prior state atomically. Release follows documented customer "
-                    "acceptance and enables invoice posting. A same-key retry returns "
-                    "the original transition result, while a different transition against "
-                    "an obsolete state fails. Release also creates a unique outbox notice "
-                    "inside the transaction. That notice is an inert work item, not "
-                    "permission to send anything externally. Keep model execution outside "
-                    "ledger transactions: store evaluation artifacts separately and "
-                    "reference their hashes or controlled locations. Never place raw "
-                    "mailbox content, secrets, or model prompts containing personal data "
-                    "inside accounting descriptions. Separate the engineer proposing a "
-                    "release from the reviewer accepting its evidence in the surrounding "
-                    "application, because the small reference demonstrates state integrity "
-                    "rather than a complete identity and permissions service."
-                ),
-                (
-                    "Posting recognizes implementation revenue only after the defined "
-                    "milestone has been delivered and accepted; support revenue follows "
-                    "the service period. The invoice journal debits receivables and "
-                    "credits fee revenue. A bank-backed collection debits cash and "
-                    "credits that project's receivables, while a paid operating cost "
-                    "debits expense and credits cash. Unique bank identifiers prevent "
-                    "the same imported transaction from funding two postings, and an "
-                    "atomic outstanding-balance check prevents concurrent overcollection. "
-                    "This compact model accepts only exact, gross, single-project "
-                    "receipts and individually paid costs. Split settlements, processor "
-                    "fees, refunds, taxes, pre-delivery deposits, and currency conversion "
-                    "require explicit additional posting types; reject them rather than "
-                    "forcing them into receipt or cost. In the cohort, signing deposits "
-                    "arrive before acceptance but every project is accepted within its "
-                    "month, so monthly reporting has no remaining deposit liability. "
-                    "A live daily ledger must still add a customer-deposit liability "
-                    "account before recording those earlier deposits. Reconcile imported "
-                    "bank activity to posted cash and investigate every unmatched row. "
-                    "The supplied tests prove selected invariants and retry behavior; "
-                    "they are executable examples, not evidence that an installation "
-                    "has already passed a deployment test."
-                ),
-            ],
-            "table": {
-                "caption": "Production Engineering / SQLite Ledger & Idempotent Workflow Reference Table",
-                "headers": [
-                    "Module and copy-paste assembly order",
-                    "Executable Python fragment for the sequential reference script",
-                    "Atomic invariant and supported operating boundary",
-                    "Failure recovery and required production extension",
-                ],
-                "rows": [
-                    [
-                        "Module one establishes the durable schema and transaction boundary",
-                        '''import json
-import sqlite3
-from contextlib import contextmanager
-
-SCHEMA = """
-CREATE TABLE IF NOT EXISTS project (
-    project_id TEXT PRIMARY KEY,
-    client_id TEXT NOT NULL,
-    intake_json TEXT NOT NULL,
-    score INTEGER NOT NULL CHECK(score BETWEEN 0 AND 100),
-    state TEXT NOT NULL CHECK(
-        state IN ('received','verified','reserved','released','rejected')
-    )
-);
-CREATE TABLE IF NOT EXISTS transition_event (
-    event_key TEXT PRIMARY KEY,
-    project_id TEXT NOT NULL REFERENCES project(project_id),
-    payload_json TEXT NOT NULL,
-    result_state TEXT NOT NULL
-);
-CREATE TABLE IF NOT EXISTS outbox (
-    message_key TEXT PRIMARY KEY,
-    project_id TEXT NOT NULL REFERENCES project(project_id),
-    payload_json TEXT NOT NULL,
-    status TEXT NOT NULL DEFAULT 'pending'
-        CHECK(status IN ('pending','acknowledged')),
-    UNIQUE(project_id, message_key)
-);
-CREATE TABLE IF NOT EXISTS bank_row (
-    bank_id TEXT PRIMARY KEY,
-    booked_day TEXT NOT NULL,
-    amount_cents INTEGER NOT NULL CHECK(amount_cents != 0)
-);
-CREATE TABLE IF NOT EXISTS journal (
-    journal_id INTEGER PRIMARY KEY,
-    kind TEXT NOT NULL CHECK(kind IN ('invoice','receipt','cost')),
-    scope_id TEXT NOT NULL,
-    project_id TEXT REFERENCES project(project_id),
-    booked_day TEXT NOT NULL,
-    amount_cents INTEGER NOT NULL CHECK(amount_cents > 0),
-    bank_id TEXT UNIQUE REFERENCES bank_row(bank_id),
-    payload_json TEXT NOT NULL,
-    UNIQUE(kind, scope_id),
-    CHECK(
-        (kind = 'invoice' AND bank_id IS NULL AND project_id IS NOT NULL)
-        OR
-        (kind = 'receipt' AND bank_id IS NOT NULL AND project_id IS NOT NULL)
-        OR
-        (kind = 'cost' AND bank_id IS NOT NULL AND project_id IS NULL)
-    )
-);
-CREATE TABLE IF NOT EXISTS journal_line (
-    journal_id INTEGER NOT NULL REFERENCES journal(journal_id),
-    account TEXT NOT NULL CHECK(
-        account IN ('cash','receivable','fee_revenue','expense')
-    ),
-    signed_cents INTEGER NOT NULL CHECK(signed_cents != 0),
-    PRIMARY KEY(journal_id, account)
-);
-"""
-
-def canonical(value):
-    return json.dumps(
-        value, sort_keys=True, separators=(',', ':'), ensure_ascii=True
-    )
-
-def connect(path):
-    db = sqlite3.connect(path, timeout=30, isolation_level=None)
-    db.execute('PRAGMA foreign_keys = ON')
-    db.execute('PRAGMA journal_mode = WAL')
-    db.execute('PRAGMA synchronous = FULL')
-    db.executescript(SCHEMA)
-    return db
-
-@contextmanager
-def atomic(db):
-    db.execute('BEGIN IMMEDIATE')
-    try:
-        yield
-        db.execute('COMMIT')
-    except BaseException:
-        if db.in_transaction:
-            db.execute('ROLLBACK')
-        raise
-''',
-                        "All related mutations share one writer transaction and database-enforced business uniqueness",
-                        "Retry lock failures with unchanged keys; restrict direct database writes to this application",
-                    ],
-                    [
-                        "Module two normalizes intake and records deterministic qualification scores",
-                        '''def intake(db, project_id, client_id, facts):
-    fields = ('authorized', 'repeatable', 'reviewer', 'recoverable')
-    if not project_id or not client_id:
-        raise ValueError('Project and client identifiers are required')
-    if set(facts) != set(fields):
-        raise ValueError('Supply exactly the four qualification facts')
-    if any(type(facts[name]) is not bool for name in fields):
-        raise ValueError('Qualification facts must be boolean values')
-    payload = canonical({'client_id': client_id, 'facts': facts})
-    score = sum(25 for name in fields if facts[name])
-    state = 'received' if facts['authorized'] and score >= 75 else 'rejected'
-    with atomic(db):
-        prior = db.execute(
-            'SELECT intake_json, score, state FROM project WHERE project_id=?',
-            (project_id,)
-        ).fetchone()
-        if prior:
-            if prior[0] != payload:
-                raise ValueError('Project key reused with changed intake')
-            return prior[1], prior[2]
-        db.execute(
-            'INSERT INTO project VALUES (?, ?, ?, ?, ?)',
-            (project_id, client_id, payload, score, state)
-        )
-    return score, state
-''',
-                        "A repeated project key cannot silently replace authorization facts or qualification evidence",
-                        "Create a separately identified milestone for changed scope instead of mutating accepted intake",
-                    ],
-                    [
-                        "Module three verifies evidence and reserves internal delivery capacity",
-                        '''def transition(db, event_key, project_id, expected, target, evidence):
-    allowed = {
-        'received': {'verified', 'rejected'},
-        'verified': {'reserved', 'rejected'},
-        'reserved': {'released', 'rejected'},
-    }
-    if not event_key or not evidence.strip():
-        raise ValueError('Transition key and evidence reference are required')
-    payload = canonical({
-        'project_id': project_id, 'expected': expected,
-        'target': target, 'evidence': evidence
-    })
-    with atomic(db):
-        prior = db.execute(
-            'SELECT payload_json, result_state FROM transition_event '
-            'WHERE event_key=?', (event_key,)
-        ).fetchone()
-        if prior:
-            if prior[0] != payload:
-                raise ValueError('Transition key reused with changed facts')
-            return prior[1]
-        current = db.execute(
-            'SELECT state FROM project WHERE project_id=?', (project_id,)
-        ).fetchone()
-        if not current or current[0] != expected:
-            raise ValueError('Expected project state does not match')
-        if target not in allowed.get(expected, set()):
-            raise ValueError('Requested state transition is prohibited')
-        db.execute(
-            'UPDATE project SET state=? WHERE project_id=?',
-            (target, project_id)
-        )
-        db.execute(
-            'INSERT INTO transition_event VALUES (?, ?, ?, ?)',
-            (event_key, project_id, payload, target)
-        )
-        if target == 'released':
-            db.execute(
-                'INSERT INTO outbox(message_key, project_id, payload_json) '
-                'VALUES (?, ?, ?)',
-                ('release:' + project_id, project_id, payload)
-            )
-    return target
-''',
-                        "Expected-state checks and unique release notices commit together without concurrent state races",
-                        "Reserved means internal capacity only; external delivery needs separate authorized idempotent workers",
-                    ],
-                    [
-                        "Module four posts balanced journals against immutable business identifiers",
-                        '''from datetime import date
-
-def post(db, kind, scope_id, day, amount_cents, project_id=None, bank_id=None):
-    date.fromisoformat(day)
-    if type(amount_cents) is not int or amount_cents <= 0:
-        raise ValueError('Use a positive integer amount in cents')
-    if not scope_id or kind not in ('invoice', 'receipt', 'cost'):
-        raise ValueError('Supply a supported kind and stable business identifier')
-    if kind == 'invoice':
-        if not project_id or scope_id != project_id or bank_id is not None:
-            raise ValueError('Invoice scope must equal its released milestone')
-    elif kind == 'receipt':
-        if not project_id or not bank_id or scope_id != bank_id:
-            raise ValueError('Receipt scope must equal its imported bank identifier')
-    elif project_id is not None or not bank_id:
-        raise ValueError('Paid cost needs a vendor invoice key and bank identifier')
-    payload = canonical({
-        'kind': kind, 'scope_id': scope_id, 'day': day,
-        'amount_cents': amount_cents, 'project_id': project_id,
-        'bank_id': bank_id
-    })
-    with atomic(db):
-        prior = db.execute(
-            'SELECT journal_id, payload_json FROM journal '
-            'WHERE kind=? AND scope_id=?', (kind, scope_id)
-        ).fetchone()
-        if prior:
-            if prior[1] != payload:
-                raise ValueError('Posting key reused with changed facts')
-            return prior[0]
-        if kind == 'invoice':
-            state = db.execute(
-                'SELECT state FROM project WHERE project_id=?', (project_id,)
-            ).fetchone()
-            if not state or state[0] != 'released':
-                raise ValueError('Invoice requires a released milestone')
-            accounts = ('receivable', 'fee_revenue')
-        else:
-            bank = db.execute(
-                'SELECT amount_cents, booked_day FROM bank_row WHERE bank_id=?',
-                (bank_id,)
-            ).fetchone()
-            expected = amount_cents if kind == 'receipt' else -amount_cents
-            if bank != (expected, day):
-                raise ValueError('Bank amount or booking date does not match')
-            accounts = ('cash', 'receivable') if kind == 'receipt' else (
-                'expense', 'cash'
-            )
-        if kind == 'receipt':
-            balance = db.execute(
-                "SELECT COALESCE(SUM(l.signed_cents),0) "
-                "FROM journal j JOIN journal_line l USING(journal_id) "
-                "WHERE j.project_id=? AND l.account='receivable'",
-                (project_id,)
-            ).fetchone()[0]
-            if amount_cents > balance:
-                raise ValueError('Receipt exceeds outstanding project receivable')
-        cursor = db.execute(
-            'INSERT INTO journal(kind,scope_id,project_id,booked_day,'
-            'amount_cents,bank_id,payload_json) VALUES (?,?,?,?,?,?,?)',
-            (kind, scope_id, project_id, day, amount_cents, bank_id, payload)
-        )
-        journal_id = cursor.lastrowid
-        db.executemany(
-            'INSERT INTO journal_line VALUES (?, ?, ?)',
-            [
-                (journal_id, accounts[0], amount_cents),
-                (journal_id, accounts[1], -amount_cents),
-            ]
-        )
-    return journal_id
-''',
-                        "Balanced pairs, unique bank consumption, and receivable checks execute within one transaction",
-                        "Reject deposits, split settlements, refunds, and fee-netted payouts until explicit posting types exist",
-                    ],
-                    [
-                        "Module five imports bank evidence and exposes monthly reconciliation views",
-                        '''def import_bank(db, bank_id, day, amount_cents):
-    date.fromisoformat(day)
-    if not bank_id or type(amount_cents) is not int or amount_cents == 0:
-        raise ValueError('Bank identifier and nonzero integer cents are required')
-    with atomic(db):
-        prior = db.execute(
-            'SELECT booked_day, amount_cents FROM bank_row WHERE bank_id=?',
-            (bank_id,)
-        ).fetchone()
-        if prior:
-            if prior != (day, amount_cents):
-                raise ValueError('Bank identifier reused with changed statement data')
-            return
-        db.execute(
-            'INSERT INTO bank_row VALUES (?, ?, ?)',
-            (bank_id, day, amount_cents)
-        )
-
-REPORTS = """
-CREATE VIEW IF NOT EXISTS monthly_close AS
-SELECT substr(j.booked_day,1,7) AS month,
-       SUM(CASE WHEN l.account='fee_revenue'
-                THEN -l.signed_cents ELSE 0 END) AS revenue_cents,
-       SUM(CASE WHEN l.account='expense'
-                THEN l.signed_cents ELSE 0 END) AS expense_cents,
-       SUM(CASE WHEN l.account='cash'
-                THEN l.signed_cents ELSE 0 END) AS cash_delta_cents,
-       SUM(CASE WHEN l.account='receivable'
-                THEN l.signed_cents ELSE 0 END) AS receivable_delta_cents
-FROM journal j JOIN journal_line l USING(journal_id)
-GROUP BY substr(j.booked_day,1,7);
-
-CREATE VIEW IF NOT EXISTS bank_reconciliation AS
-SELECT b.bank_id, b.booked_day, b.amount_cents,
-       COALESCE(SUM(CASE WHEN l.account='cash'
-                         THEN l.signed_cents ELSE 0 END),0) AS posted_cents,
-       b.amount_cents -
-       COALESCE(SUM(CASE WHEN l.account='cash'
-                         THEN l.signed_cents ELSE 0 END),0) AS difference_cents
-FROM bank_row b
-LEFT JOIN journal j ON j.bank_id=b.bank_id
-LEFT JOIN journal_line l ON l.journal_id=j.journal_id
-GROUP BY b.bank_id, b.booked_day, b.amount_cents;
-"""
-
-def install_reports(db):
-    db.executescript(REPORTS)
-''',
-                        "Imported statement rows retain their original identifiers and expose every unmatched cash movement",
-                        "Namespace bank identifiers by institution and account; verify statement completeness independently of matching",
-                    ],
-                    [
-                        "Module six exercises replay safety, balanced entries, and bank matching",
-                        '''def require(condition, message):
-    if not condition:
-        raise AssertionError(message)
-
-def expect_value_error(action):
-    try:
-        action()
-    except ValueError:
-        return
-    raise AssertionError('Expected the operation to reject conflicting evidence')
-
-def self_test():
-    db = connect(':memory:')
-    install_reports(db)
-    facts = {
-        'authorized': True, 'repeatable': True,
-        'reviewer': True, 'recoverable': True
-    }
-    intake(db, 'p1', 'client-1', facts)
-    for key, before, after in (
-        ('t1', 'received', 'verified'),
-        ('t2', 'verified', 'reserved'),
-        ('t3', 'reserved', 'released'),
-    ):
-        transition(db, key, 'p1', before, after, 'evidence:' + key)
-    transition(db, 't3', 'p1', 'reserved', 'released', 'evidence:t3')
-    first = post(db, 'invoice', 'p1', '2026-01-10', 1000000, 'p1')
-    again = post(db, 'invoice', 'p1', '2026-01-10', 1000000, 'p1')
-    require(first == again, 'Invoice replay created another posting')
-    expect_value_error(
-        lambda: post(db, 'invoice', 'p1', '2026-01-10', 1100000, 'p1')
-    )
-    import_bank(db, 'acct1:receipt1', '2026-01-15', 500000)
-    post(db, 'receipt', 'acct1:receipt1', '2026-01-15',
-         500000, 'p1', 'acct1:receipt1')
-    import_bank(db, 'acct1:cost1', '2026-01-20', -350000)
-    post(db, 'cost', 'vendor:invoice1', '2026-01-20',
-         350000, bank_id='acct1:cost1')
-    import_bank(db, 'acct1:excess', '2026-01-21', 600000)
-    expect_value_error(
-        lambda: post(db, 'receipt', 'acct1:excess', '2026-01-21',
-                     600000, 'p1', 'acct1:excess')
-    )
-    require(
-        db.execute(
-            'SELECT COUNT(*) FROM journal WHERE bank_id=?',
-            ('acct1:excess',)
-        ).fetchone()[0] == 0,
-        'Rejected receipt left a partial journal'
-    )
-    require(
-        db.execute(
-            'SELECT COUNT(*) FROM bank_reconciliation '
-            'WHERE difference_cents != 0'
-        ).fetchone()[0] == 1,
-        'Unmatched bank evidence disappeared'
-    )
-    require(
-        not db.execute(
-            'SELECT journal_id FROM journal_line GROUP BY journal_id '
-            'HAVING SUM(signed_cents) != 0'
-        ).fetchall(),
-        'A journal is unbalanced'
-    )
-    require(
-        db.execute(
-            'SELECT revenue_cents, expense_cents, cash_delta_cents, '
-            'receivable_delta_cents FROM monthly_close'
-        ).fetchone() == (1000000, 350000, 150000, 500000),
-        'Monthly close failed its expected accounting identity'
-    )
-    require(
-        db.execute('SELECT COUNT(*) FROM outbox').fetchone()[0] == 1,
-        'Release retry duplicated an outbox notice'
-    )
-    db.close()
-
-if __name__ == '__main__':
-    self_test()
-    print('Reference checks passed')
-''',
-                        "Tests verify immutable retries, atomic rejection, balanced journals, and visible unmatched bank evidence",
-                        "Run separately against file-backed concurrent connections and crash injection before authorizing production writes",
-                    ],
-                ],
-            },
-            "callout": {
-                "kind": "OPERATOR GATE",
-                "title": "Four required checks before production writes",
-                "body": (
-                    "The reference is intentionally narrower than a deployed agency "
-                    "platform. Release production permissions only after these checks "
-                    "have recorded owners and reproducible evidence."
-                ),
-                "items": [
-                    "Verify that client authorization identifies every connector, data field, write operation, service identity, and revocation owner.",
-                    "Run two independent file-backed SQLite connections against identical and conflicting business keys; confirm one posting, explicit conflict rejection, and no partial journals.",
-                    "Demonstrate external-provider idempotency or a manual ambiguous-result queue; never infer successful delivery from an expired worker lease.",
-                    "Add and test customer-deposit liabilities, required refunds, processor clearing, and tax handling before accepting transactions outside the reference's supported posting types.",
-                ],
-            },
-        },
-        {
-            "heading": "3. Walk a mature ninety-day cohort from lead scrubs to cash",
-            "epistemic_status": "illustrative_model",
-            "paragraphs": [
-                (
-                    "The Worked 90-Day Cohort Walk is a mature-quarter operating "
-                    "illustration, not a cold-start forecast. Enter Month 1 with ten "
-                    "active support accounts, $20,000 opening cash, and no opening "
-                    "receivables, payables, or customer deposits. Opening cash is "
-                    "working capital, not quarterly revenue. The support accounts "
-                    "remain active throughout the quarter and pay $1,250 each monthly "
-                    "for services delivered in that month. Sign and accept three "
-                    "$10,000 implementation projects in Month 1, three in Month 2, "
-                    "and four in Month 3. Each implementation pays $5,000 at signing "
-                    "and its remaining $5,000 in the following month. Completion "
-                    "within the signing month makes implementation revenue $30,000, "
-                    "$30,000, and $40,000; support adds $12,500 each month. Total "
-                    "recognized fees are therefore $42,500, $42,500, and $52,500. "
-                    "These assumptions require real reviewer capacity and timely "
-                    "acceptance, not merely an invoice date. An incomplete project "
-                    "keeps its appropriate deposit liability and recognition treatment "
-                    "until delivery evidence supports the accounting conclusion. "
-                    "Client revenue, client payroll savings, and the face value of "
-                    "capital raises remain outside every agency revenue line. "
-                    "New implementations do not automatically become additional "
-                    "retainers during this worked quarter."
-                ),
-                (
-                    "Track acquisition cohorts separately from invoice cohorts so "
-                    "scrubbed leads cannot inflate conversion. Month 1 begins with "
-                    "sixty raw leads, removes twelve duplicates or unsuitable "
-                    "prospects, and advances twelve of forty-eight qualified records "
-                    "to discovery. Three sign and nine discovery opportunities "
-                    "close lost; thirty-six qualified records remain unadvanced. "
-                    "Month 2 starts with sixty-four raw records, scrubs sixteen, "
-                    "and repeats the twelve-call, three-win result. Month 3 starts "
-                    "with eighty raw records, scrubs sixteen, and converts sixteen "
-                    "discovery calls into four wins and twelve losses. Across "
-                    "the quarter, 204 raw records minus forty-four scrubs produce "
-                    "160 qualified records; forty discovery calls produce ten "
-                    "wins, thirty discovery losses, and 120 qualified records "
-                    "that did not advance. These are distinct people or entities "
-                    "under a documented deduplication rule, not repeated feed "
-                    "events. Closed-lost means an acquisition outcome, not an "
-                    "accounting write-off. The illustration assumes zero refunds "
-                    "and zero bad debt, so any actual credit loss requires "
-                    "a separate variance. Record loss reasons such as absent "
-                    "reviewer capacity, unclear access authority, poor workflow "
-                    "repeatability, or unacceptable scope before purchasing more "
-                    "lead volume to conceal a delivery-fit problem."
-                ),
-                (
-                    "Cash receipts equal $27,500 in Month 1, $42,500 in Month 2, "
-                    "and $47,500 in Month 3. Month 1 collects current signing "
-                    "payments and support; subsequent months also collect the "
-                    "prior implementation cohort's balances. Paid operating costs "
-                    "are $29,750, $29,750, and $36,750, totaling $96,250. Budget "
-                    "$24,500 monthly for loaded delivery compensation, shared "
-                    "tools, and overhead, plus variable costs of $5,250, $5,250, "
-                    "and $12,250. Contractor participation is fractional and "
-                    "scheduled, not three assumed full-time salaries hidden "
-                    "outside expenses. Quarterly profit is $137,500 minus "
-                    "$96,250, or $41,250 at thirty percent. Cumulative operating "
-                    "cash flow is negative $2,250, then positive $10,500, then "
-                    "positive $21,250. Closing cash reaches $41,250 after adding "
-                    "the $20,000 opening balance, while closing receivables are "
-                    "$20,000 from Month 3 implementation balances. Thus $21,250 "
-                    "cash generation plus $20,000 receivables growth equals "
-                    "$41,250 profit. Multiplying quarterly revenue, expense, and "
-                    "profit by four gives the canonical Base $550,000, $385,000, "
-                    "and $165,000. Do not multiply the initial collection lag "
-                    "by four: later quarters collect opening receivables, and "
-                    "steady-state cash depends on receivables movement rather "
-                    "than a permanently repeated startup deficit."
-                ),
-            ],
-            "table": {
-                "caption": "Worked 90-Day Cohort Walk",
-                "headers": [
-                    "Cohort period and lead disposition",
-                    "Delivered work and recognized agency revenue",
-                    "Collection timing and paid operating expense",
-                    "Profit, cumulative operating cash, and closing balances",
-                ],
-                "rows": [
-                    [
-                        "Month 1: sixty raw leads; twelve scrubbed; twelve discoveries; three wins; nine losses; thirty-six unadvanced",
-                        "Three accepted implementations earn $30,000; ten support accounts earn $12,500; total revenue equals $42,500",
-                        "Collect $15,000 signing payments plus $12,500 support; pay $29,750 operating expense during the month",
-                        "Profit equals $12,750; cumulative operating cash is negative $2,250; cash closes $17,750; receivables close $15,000",
-                    ],
-                    [
-                        "Month 2: sixty-four raw leads; sixteen scrubbed; twelve discoveries; three wins; nine losses; thirty-six unadvanced",
-                        "Three accepted implementations earn $30,000; unchanged support earns $12,500; total recognized revenue equals $42,500",
-                        "Collect $15,000 prior balances, $15,000 current signing payments, and $12,500 support; pay $29,750 operating expense",
-                        "Profit equals $12,750; cumulative operating cash reaches $10,500; cash closes $30,500; receivables remain $15,000",
-                    ],
-                    [
-                        "Month 3: eighty raw leads; sixteen scrubbed; sixteen discoveries; four wins; twelve losses; forty-eight unadvanced",
-                        "Four accepted implementations earn $40,000; unchanged support earns $12,500; total recognized revenue equals $52,500",
-                        "Collect $15,000 prior balances, $20,000 current signing payments, and $12,500 support; pay $36,750 operating expense",
-                        "Profit equals $15,750; cumulative operating cash reaches $21,250; cash closes $41,250; receivables rise to $20,000",
-                    ],
-                    [
-                        "Quarter totals: 204 raw records; forty-four scrubs; forty discoveries; ten wins; thirty discovery losses; 120 unadvanced",
-                        "Ten implementations earn $100,000; thirty support account-months earn $37,500; quarterly revenue totals $137,500",
-                        "Customer cash totals $117,500; paid expense totals $96,250; refunds and credit losses are explicitly zero",
-                        "Quarter profit totals $41,250; operating cash totals $21,250; the $20,000 difference equals receivables growth",
-                    ],
-                    [
-                        "Opening position assumes an established support book rather than an agency starting without customers",
-                        "Ten existing support accounts provide service demand; opening cash contributes zero recognized quarterly revenue",
-                        "Opening cash equals $20,000; opening receivables, payables, and customer-deposit liabilities each equal zero",
-                        "Month 1 needs $2,250 from opening liquidity; minimum modeled month-end cash remains positive at $17,750",
-                    ],
-                    [
-                        "Annual bridge repeats delivery economics while separately forecasting collection timing and opening receivable settlements",
-                        "Four quarters produce $550,000 revenue from $400,000 implementations and $150,000 support service fees",
-                        "Four quarters produce $385,000 expense; payment timing requires its own rolling bank and receivables forecast",
-                        "Canonical Base profit equals $165,000 at 30.0% margin with two full-time staff and three contractors",
-                    ],
+                    (
+                        "Map first name, last name, company, and email dynamically. Marc explains that typing "
+                        "the example person's name directly would repeat it on every run. "
+                        "[Automate with Marc | AI Automation — syCqaV7N73s @ 00:08:38]"
+                    ),
+                    (
+                        "Keep most processing in ordinary workflow steps and call the model where needed. "
+                        "SaaS Master places a DeepSeek step inside Product Radar and estimates roughly "
+                        "eight or nine cents to run that complex workflow. "
+                        "[SaaS Master — TdMeBa69Y8Y @ 00:04:50]"
+                    ),
+                    (
+                        "Label workflows prod, test, and draft. Jonas uses those labels to keep a dashboard "
+                        "of over 100 workflows organized. "
+                        "[Jonas | AI Tools & Automation — 4imOFZeP7nk @ 00:06:53]"
+                    ),
+                    (
+                        "Use an existing workflow to test the assistant's editing ability. Cuebic AI asks "
+                        "for an if node and shows it being added to the open workflow. "
+                        "[Cuebic AI — BxxP4kEqOdg @ 00:02:57]"
+                    ),
                 ],
             },
             "sop_steps": [
                 {
                     "step": 1,
-                    "title": "Freeze each monthly acquisition cohort",
-                    "action": "Deduplicate leads, record scrubs, and assign discovery outcomes before reporting conversions.",
-                    "detail": "Keep unadvanced qualified records separate from discovery losses and retain the original source event identifiers.",
+                    "title": "Define the handoff and connect the trigger",
+                    "action": "Create the lead sheet and test the incoming row.",
+                    "detail": (
+                        "Marc uses first name, last name, company, phone, and email columns, selects the "
+                        "new-row event, chooses the spreadsheet and worksheet, and checks the fetched "
+                        "record before continuing. "
+                        "[Automate with Marc | AI Automation — syCqaV7N73s @ 00:05:02]"
+                    ),
                 },
                 {
                     "step": 2,
-                    "title": "Tie delivery recognition to acceptance",
-                    "action": "Match each implementation invoice to a released milestone and each support invoice to its service month.",
-                    "detail": "Use deposit liabilities before delivery; move amounts into earned fees only under the documented recognition policy.",
+                    "title": "Generate and map the response",
+                    "action": "Feed dynamic lead fields into the AI writer and map its output into Gmail.",
+                    "detail": (
+                        "Marc requests an engaging email under 150 words and defines separate subject "
+                        "and body outputs in Zapier so the following Gmail step can receive each "
+                        "field directly. "
+                        "[Automate with Marc | AI Automation — syCqaV7N73s @ 00:09:08]"
+                    ),
                 },
                 {
                     "step": 3,
-                    "title": "Reconcile collections and paid operating costs",
-                    "action": "Match bank identifiers to posting keys and investigate every unmatched or fee-netted transfer.",
-                    "detail": "Reconcile opening cash plus receipts minus payments to the closing statement balance independently of revenue reporting.",
+                    "title": "Configure the self-hosted agent environment",
+                    "action": "Deploy with Compose and preserve credentials and workflow data.",
+                    "detail": (
+                        "12_5 Tech teaches a pinned deployment, a fixed backed-up encryption key, "
+                        "persistent data, seven-day execution pruning, and Groq, Gemini, or local "
+                        "Ollama credentials connected to the AI Agent node. "
+                        "[12_5 Tech — 0EeWohGy6RM @ 00:02:15]"
+                    ),
                 },
                 {
                     "step": 4,
-                    "title": "Publish the profit-to-cash bridge",
-                    "action": "Explain receivables, deposits, payables, refunds, and other working-capital movements before annualizing results.",
-                    "detail": "For this illustration, show $41,250 profit minus $20,000 receivables growth equals $21,250 operating cash generation.",
+                    "title": "Test delivery and read real usage",
+                    "action": "Run the workflow against your own destination and inspect its usage meter.",
+                    "detail": (
+                        "Jonas tests messaging workflows on their own phone before client delivery. "
+                        "AI Business Tools & Automation recommends running one real workflow for "
+                        "a week on each free tier or trial and reading the usage meter. "
+                        "[Jonas | AI Tools & Automation — 4imOFZeP7nk @ 00:07:08] "
+                        "[AI Business Tools & Automation — PKHb0KLNOIg @ 00:06:57]"
+                    ),
                 },
             ],
         },
         {
-            "heading": "4. Run delivery, exception recovery, and the recurring close",
-            "epistemic_status": "operating_framework",
+            "id": "disagreements-alternative-playbooks",
+            "title": "Where Practitioners Disagree & Alternative Playbooks",
             "paragraphs": [
                 (
-                    "Operate the production sprint through visible evidence checkpoints. "
-                    "On days one and two, the delivery lead confirms access, "
-                    "exports a minimal permitted sample, and freezes a labeled "
-                    "evaluation set. On days three through five, the engineer "
-                    "builds the connector, deterministic preprocessing, model adapter, "
-                    "and exception routing behind a disabled write capability. "
-                    "On days six through eight, a reviewer measures class-level "
-                    "precision, missed urgent cases, unsupported statements, and "
-                    "required abstentions against the frozen set. On days nine "
-                    "and ten, the client reviews representative outputs and "
-                    "accepts the bounded workflow or receives an explicit defect "
-                    "list. Use Git for versioned configuration, SQLite for the "
-                    "reference control ledger, and the client's approved secrets "
-                    "manager for credentials. Pin model identifiers and record "
-                    "provider request identifiers without copying sensitive request "
-                    "bodies into general logs. A contractual test might require "
-                    "ninety-eight correct routes among one hundred labeled "
-                    "routine cases and zero unauthorized sends; that is a "
-                    "specific acceptance sample, not a universal accuracy claim. "
-                    "Measure risky classes separately because aggregate accuracy "
-                    "can conceal every urgent message being misrouted. Failed "
-                    "tests keep write operations disabled and send cases to "
-                    "the existing human workflow rather than quietly relaxing "
-                    "the acceptance threshold."
+                    "Make wins the broad remote-team recommendation but loses the most frustrating build in "
+                    "Owner's Bot Lab's responder test. Erin at Paired Recruiting calls Make the usual middle "
+                    "ground once teams need real branching without a developer. Owner's Bot Lab instead "
+                    "reports lagging text entry, an extra component to separate AI output, and a spreadsheet "
+                    "lookup failure caused by a missing character in the ID. Its n8n build reached a first "
+                    "working run in about ten minutes, the only clean timing, while Zapier was the smoothest "
+                    "of the two builds without a clean time. The final scores were Make 76, Zapier 84, "
+                    "and n8n 94. Those results sit beside the builder's stated conditions: Make came first, "
+                    "n8n second, Zapier third; the n8n setup was pasted in; and part of its parsing used "
+                    "copied code. Marc's independently built sales writer still ends with Zapier quickest, "
+                    "Make close behind, and n8n taking more familiarity. The disagreement is therefore real "
+                    "but specific: a remote-team recommendation, a timed responder exercise, and a simpler "
+                    "email-writer comparison emphasize different experiences. Owner's Bot Lab itself still "
+                    "recommends Zapier for getting something working tonight and n8n for technical operators "
+                    "or adding more automations. Paired Recruiting [TdMOpd_cG0A @ 00:07:45]; "
+                    "Owner's Bot Lab [EtiRX0GduSI @ 00:05:22]; Automate with Marc "
+                    "[syCqaV7N73s @ 00:28:03]."
                 ),
                 (
-                    "Run managed support as an exception service with explicit "
-                    "capacity. Each morning, inspect failed runs, unreviewed "
-                    "outputs, connector authorization changes, spend anomalies, "
-                    "and aging receivables. Each week, replay regression fixtures, "
-                    "sample apparently successful outputs, and compare actual "
-                    "review minutes against the retainer budget. Successful "
-                    "HTTP responses do not prove useful work: an empty "
-                    "extraction or confidently wrong category can pass transport "
-                    "checks. A provider timeout after a requested external "
-                    "action is an ambiguous result, so query the provider "
-                    "using the original idempotency key before retrying. If "
-                    "the provider cannot establish the outcome, quarantine "
-                    "the task for manual resolution. A worker lease is "
-                    "only a scheduling mechanism; its expiration does not "
-                    "prove the previous worker failed before acting. For "
-                    "data exposure, disable affected credentials, preserve "
-                    "access logs, identify impacted fields and clients, and "
-                    "execute the applicable incident process. Keep model inputs "
-                    "separate by client, restrict retrieval indexes by tenant, "
-                    "and test cross-client access denial using synthetic "
-                    "fixtures. Record recurring defects as priced engineering "
-                    "changes when they exceed the agreed support allowance. "
-                    "The fallback to human handling must remain usable "
-                    "throughout an outage, with named owners and a visible "
-                    "queue rather than an unmonitored mailbox."
+                    "The pricing differences also need their original workflow attached. ProfitPilot's 500-lead "
+                    "example has four actions, Standard-tier Zapier AI, and annual billing: $49 for Zapier, "
+                    "$9 for Make, and €20 for n8n. AI Business Tools & Automation adds a fifth action "
+                    "and reaches 2,500 Zapier tasks, placing its example in the stated $89 tier. It also "
+                    "reports Make starting figures of $9 and about $12, explaining that country and region "
+                    "affect the displayed price. Owner's Bot Lab quotes its responder at $49 annually billed "
+                    "or $73.50 month-to-month on Zapier, and $12 or $16 on Make, with n8n around €20 "
+                    "under annual billing. These are not identical baskets of work or identical purchase "
+                    "conditions. Licensing language differs too. Fireship describes n8n as an open-source "
+                    "alternative to Zapier, whereas AI Business Tools & Automation explicitly identifies "
+                    "the Sustainable Use License as fair-code, permits internal business or personal use, "
+                    "and describes limits on commercial redistribution plus paid enterprise features. The "
+                    "useful side-by-side keeps those statements attributed instead of turning every mention "
+                    "of free software into the same offer. ProfitPilot's lowest-price result belongs to its "
+                    "chosen workflow and volumes; the responder's easiest billing result belongs to "
+                    "Owner's Bot Lab's test. ProfitPilot [d8w8FHZJpdY @ 00:03:09]; AI Business Tools "
+                    "& Automation [PKHb0KLNOIg @ 00:03:43]; Owner's Bot Lab "
+                    "[EtiRX0GduSI @ 00:04:42]; Fireship [bS9R6aCVEzw @ 00:00:56]."
                 ),
                 (
-                    "Close the business with the same rigor used to release "
-                    "software. Reconcile bank statements, invoice aging, customer "
-                    "deposits, vendor obligations, and delivered service periods "
-                    "before publishing a margin. Keep implementation fees and "
-                    "support retainers in separate revenue accounts so project "
-                    "volume cannot hide a deteriorating recurring book. FTC "
-                    "Act Section 5, 15 U.S.C. § 45, makes deceptive commercial "
-                    "claims an operating risk: support performance statements "
-                    "with dated measurements, denominators, and relevant limits. "
-                    "When endorsements are used, evaluate material-connection "
-                    "disclosures under 16 CFR § 255.5 and review practices "
-                    "under Part 465. Scale only when measured delivery hours, "
-                    "review capacity, and exception rates support the next "
-                    "cohort. The scorecard remains three separate cases: "
-                    "$100,000 revenue with $80,000 costs produces $20,000 "
-                    "Conservative profit; $550,000 with $385,000 costs produces "
-                    "$165,000 Base profit; $1,000,000 with $600,000 costs "
-                    "produces $400,000 Scaled profit. Conservative and Base "
-                    "use two full-time staff plus three contractors; Scaled "
-                    "uses three full-time staff plus four contractors. "
-                    "These are annual scenario economics, not automatic "
-                    "outcomes of installing the reference script. Maintain "
-                    "loaded labor and contractor expense inside the model, "
-                    "and investigate cash shortfalls separately from genuine "
-                    "erosion in delivery margin."
+                    "UiPath enters when the job involves documents and interfaces rather than only cloud-app "
+                    "handoffs. Everyday AI Automation describes invoice processing they have personally worked "
+                    "with: use document understanding and an extract-document-data activity, identify vendor, "
+                    "invoice number, date, purchase order, and total, then write those values into Excel or "
+                    "Google Sheets. The next stage can open a browser application, locate fields, type the "
+                    "values, and click through the process. They sometimes stop before final submission "
+                    "for human review. Their Make example similarly creates a Gmail draft after an OpenAI "
+                    "response, whereas Marc's three-platform demonstration sends the email automatically "
+                    "and separately discusses adding a person or research agent later. That is an alternative "
+                    "operating design, not a dispute about whether email can be automated. LearnAI Today "
+                    "also rejects an exclusive platform choice: some teams prototype in Zapier and move "
+                    "heavier workloads to Make or n8n. Everyday AI Automation's broader framework is to "
+                    "identify the trigger, incoming information, decisions, systems, repetitive manual work, "
+                    "and useful AI role before selecting technology. UiPath therefore has a distinct place "
+                    "alongside the three API-oriented builders when the actual work includes reading "
+                    "documents, navigating browsers, and entering data through application interfaces. "
+                    "Everyday AI Automation [SrWNK0955xw @ 00:08:03]; Automate with Marc "
+                    "[syCqaV7N73s @ 00:03:27]; LearnAI Today [Pd96DxQ36U8 @ 00:07:24]."
                 ),
             ],
             "table": {
-                "caption": "Delivery Evidence, Failure Recovery, and Monthly Close Control Matrix",
-                "headers": [
-                    "Control owner and operating cadence",
-                    "Required measurement or retained operating artifact",
-                    "Failure threshold and immediate recovery action",
-                    "Commercial and accounting consequence to document",
-                ],
+                "caption": "Contrasts that should remain separate rather than becoming one universal ranking",
+                "headers": ["Competing recommendation or result", "What each practitioner actually emphasizes", "Expert Source"],
                 "rows": [
                     [
-                        "Delivery engineer checks connector access before every deployment",
-                        "Retain restricted service identity, permitted operations, and successful revocation test",
-                        "Expired authorization disables connector execution and routes work to the human owner",
-                        "Pause affected delivery milestones and revise schedules without recognizing undelivered implementation revenue",
+                        "Make is the remote-team middle ground but not every builder's easiest experience",
+                        "Paired favors accessible branching for teams; Owner's Bot Lab calls Make its most frustrating responder build and scores it below Zapier and n8n.",
+                        "Paired Recruiting ([TdMOpd_cG0A @ 00:07:45]); Owner's Bot Lab ([EtiRX0GduSI @ 00:05:22])",
                     ],
                     [
-                        "Independent reviewer evaluates frozen fixtures before client acceptance",
-                        "Record class-level outcomes, abstentions, risky-case failures, and unauthorized action counts",
-                        "Any unauthorized send blocks write capability and triggers investigation of the action path",
-                        "Track remediation hours against project margin rather than concealing them inside support retainers",
+                        "Zapier finishes quickest for Marc while n8n earns the only clean responder timing",
+                        "Marc builds a simple sales writer without code; Owner's Bot Lab reports about ten minutes for n8n after pasting setup and using copied parsing code.",
+                        "Automate with Marc | AI Automation ([syCqaV7N73s @ 00:28:03]); Owner's Bot Lab ([EtiRX0GduSI @ 00:02:28])",
                     ],
                     [
-                        "Support operator reviews ambiguous external actions every business morning",
-                        "Preserve provider request identifiers, original idempotency keys, and status lookup responses",
-                        "Unresolved outcomes enter manual review instead of automatic repeated external execution",
-                        "Document client service impact and any contractually owed adjustment through authorized billing processes",
+                        "Two 500-lead examples produce different Zapier task tiers and prices",
+                        "ProfitPilot counts four actions and 2,000 tasks; AI Business Tools & Automation counts five actions and 2,500 tasks, crossing its stated tier boundary.",
+                        "ProfitPilot ([d8w8FHZJpdY @ 00:03:09]); AI Business Tools & Automation ([PKHb0KLNOIg @ 00:01:50])",
                     ],
                     [
-                        "Security owner investigates tenant isolation and credential incidents immediately",
-                        "Retain access logs, affected data categories, revoked credentials, and response timeline",
-                        "Suspected cross-client exposure disables affected retrieval and connector paths pending containment",
-                        "Assign incident costs and required client communications without exposing another customer's records",
+                        "Integration counts differ across the comparison speakers and their stated figures",
+                        "Simplified reports Make around 1,500-plus, Zapier 6,000-plus, and n8n 1,000-plus; LearnAI Today reports more than 3,000, 9,000, and 2,000 respectively.",
+                        "Simplified ([IYV8OVFzq_c @ 00:02:03]); LearnAI Today ([Pd96DxQ36U8 @ 00:05:15])",
                     ],
                     [
-                        "Bookkeeper reconciles statement completeness and journal matches at monthly close",
-                        "Match opening balance, all bank movements, closing balance, and invoice aging independently",
-                        "Any unexplained difference remains an open exception with an accountable resolution owner",
-                        "Publish profit separately from operating cash and identify working-capital movements explicitly",
+                        "A generated response can become a draft or an automatically sent message",
+                        "Everyday AI Automation maps the response into a Gmail draft for review; Marc's introductory writer sends automatically and discusses additional components separately.",
+                        "Everyday AI Automation ([SrWNK0955xw @ 00:04:03]); Automate with Marc | AI Automation ([syCqaV7N73s @ 00:03:27])",
                     ],
                     [
-                        "Commercial lead reviews claims and staffing capacity before expanding the cohort",
-                        "Retain performance denominators, endorsement disclosures, delivery hours, and contractor capacity commitments",
-                        "Unsupported claims are withdrawn and overloaded cohorts are rescheduled before additional commitments",
-                        "Preserve canonical scenario margins while separately reporting actual results and measured variances",
+                        "UiPath handles interface-based work that differs from ordinary application handoffs",
+                        "Everyday AI Automation describes extracting invoice fields, writing them into spreadsheets, and using browser typing activities when the next application requires interface interaction.",
+                        "Everyday AI Automation ([SrWNK0955xw @ 00:08:23])",
                     ],
                 ],
             },
         },
+        {
+            "id": "failure-modes-economics-checks",
+            "title": "Firsthand Failure Modes, Traps & Economics Checks",
+            "paragraphs": [
+                (
+                    "Owner's Bot Lab's build exposes small failures that an attractive workflow diagram does "
+                    "not show. Leaving one character out of the spreadsheet ID cost about five minutes "
+                    "in Make. An n8n test fetched every row rather than one. Zapier's emergency-email field "
+                    "duplicated content and had to be rebuilt, and accidentally running a test twice sent "
+                    "the customer two replies. The later 20-lead exercise included fourteen ordinary jobs, "
+                    "four emergencies, a blank message, and an attempt to obtain a 50% discount. All three "
+                    "caught the four emergencies without false alarms or quoted prices, but Make repeated "
+                    "the discount wording and received the builder's stricter 19-out-of-20 score. Changing "
+                    "a spreadsheet column then left a summary blank in one tested setup, and none of "
+                    "the tools emailed a failure alert. Jonas addresses those same operational categories "
+                    "with duplicate-safe workflows, testing on their own phone, and a separate workflow "
+                    "whose sole job is announcing another workflow's failure. Their hourly connection check "
+                    "looks for WhatsApp disconnections and node problems because connections can fail quietly. "
+                    "The firsthand lesson is not that a successful run proves ongoing reliability: the "
+                    "builders explicitly test destinations, bad inputs, duplicated runs, and broken "
+                    "connections. Owner's Bot Lab [EtiRX0GduSI @ 00:01:51]; Jonas "
+                    "[4imOFZeP7nk @ 00:07:08]."
+                ),
+                (
+                    "Marc hits a concrete credential failure while testing n8n's AI Agent: authorization fails, "
+                    "they suspect a revoked API key, switch to another account, and get an output. Their "
+                    "Make build also carries a procedural warning to save each module's edits, and the "
+                    "received email works even though its formatting could be better. Those are different "
+                    "checks: a valid connection, retained configuration, and acceptable output. Jonas adds "
+                    "the hosting failure that local experiments conceal: the application stops when the "
+                    "computer shuts down. Their production choice is a small server, not a permanently "
+                    "assumed laptop session. 12_5 Tech calls out two further self-hosted failure mechanisms: "
+                    "saved credentials breaking when a recreated container lacks the fixed encryption key, "
+                    "and execution logs filling a small VPS disk without pruning. Its recap calls for "
+                    "backing up the key and enabling seven-day pruning. LearnAI Today assigns updates, "
+                    "backups, security, and uptime to the self-hosting operator, while distinguishing n8n "
+                    "Cloud as the managed alternative. The operating burden survives the removal of a "
+                    "software subscription. These speakers name specific work—credential repair, module "
+                    "saving, output inspection, server continuity, and upkeep—rather than treating a free "
+                    "installation as a finished client service. Automate with Marc "
+                    "[syCqaV7N73s @ 00:25:05]; Jonas [4imOFZeP7nk @ 00:04:34]; 12_5 Tech "
+                    "[0EeWohGy6RM @ 00:01:15]; LearnAI Today [Pd96DxQ36U8 @ 00:04:39]."
+                ),
+                (
+                    "ProfitPilot's sharpest economics check is the AI dropdown, not the subscription headline. "
+                    "It reports Standard AI by Zapier at one task, Advanced at three, and Premium at five, "
+                    "with new paid-plan AI steps defaulting to Premium. In its four-action example, that "
+                    "changes each run from four tasks to eight and the 500-lead monthly figure from $49 "
+                    "to $89. A Premium AI step making two tool calls reaches fifteen tasks for that "
+                    "step alone. ProfitPilot says to test output before switching tiers, and also notes "
+                    "that Make AI features can consume multiple credits and an external OpenAI key brings "
+                    "token charges. Its 2,000-lead Make example reaches exactly 10,000 credits, leaving "
+                    "no headroom; extra credits are described as costing 25% more. AI Business Tools & "
+                    "Automation adds that exhausted Make credits stop scenarios and queue incoming webhooks "
+                    "up to the plan's storage limit. Jonas's zero-software-cost business still uses a "
+                    "server around €6 monthly, while SaaS Master's Product Radar still uses a paid AI "
+                    "API step despite self-hosting. Keep the speakers' categories intact: free software, "
+                    "hosting expenditure, metered workflow usage, model charges, and ongoing maintenance "
+                    "are not interchangeable figures. ProfitPilot [d8w8FHZJpdY @ 00:04:26]; "
+                    "AI Business Tools & Automation [PKHb0KLNOIg @ 00:04:03]; Jonas "
+                    "[4imOFZeP7nk @ 00:05:01]; SaaS Master [TdMeBa69Y8Y @ 00:05:41]."
+                ),
+            ],
+            "table": {
+                "caption": "Observed breakages and practitioner-reported billing traps",
+                "headers": ["Failure or economic trap", "Observed effect and practitioner response", "Expert Source"],
+                "rows": [
+                    [
+                        "A single missing spreadsheet identifier character stalled the Make responder",
+                        "Owner's Bot Lab reports about five minutes lost before locating the missing character and getting the spreadsheet step to work.",
+                        "Owner's Bot Lab ([EtiRX0GduSI @ 00:01:51])",
+                    ],
+                    [
+                        "Running the same test twice sent the customer duplicate replies",
+                        "Owner's Bot Lab reports the accidental duplicate; Jonas separately teaches duplicate-safe design and testing only against their own destination before delivery.",
+                        "Owner's Bot Lab ([EtiRX0GduSI @ 00:03:25]); Jonas | AI Tools & Automation ([4imOFZeP7nk @ 00:07:20])",
+                    ],
+                    [
+                        "An AI Agent test failed because its authorization did not work",
+                        "Marc suspects a revoked API key, selects another connected account, reruns the node, and receives the generated email output.",
+                        "Automate with Marc | AI Automation ([syCqaV7N73s @ 00:25:05])",
+                    ],
+                    [
+                        "A recreated container can lose access to saved API credentials",
+                        "12_5 Tech attributes this failure to losing the fixed encryption key and calls for backing it up alongside persistent deployment configuration.",
+                        "12_5 Tech ([0EeWohGy6RM @ 00:01:15])",
+                    ],
+                    [
+                        "Premium AI billing changes the cost of an otherwise unchanged Zapier workflow",
+                        "ProfitPilot reports eight instead of four tasks per run and a $49-to-$89 monthly change at 500 leads in its calculation.",
+                        "ProfitPilot ([d8w8FHZJpdY @ 00:04:49])",
+                    ],
+                    [
+                        "Free software still leaves a server and ongoing repair responsibilities",
+                        "Jonas pays around €6 monthly for hosting and sells maintenance because client automations need someone available to fix failures.",
+                        "Jonas | AI Tools & Automation ([4imOFZeP7nk @ 00:05:01]); Jonas | AI Tools & Automation ([4imOFZeP7nk @ 00:08:56])",
+                    ],
+                ],
+            },
+            "callout": {
+                "kind": "OPERATOR GATE",
+                "title": "The checks these operators perform before calling a workflow dependable",
+                "body": "Check the destination, the failure path, the retained credentials, and the billing configuration.",
+                "items": [
+                    (
+                        "Run normal, emergency, blank-message, and discount-manipulation cases; inspect actual "
+                        "emails and spreadsheet fields. Owner's Bot Lab's stress test found repeated discount "
+                        "wording, and its column-change test exposed a blank summary without an emailed alert. "
+                        "[Owner's Bot Lab — EtiRX0GduSI @ 00:03:44] "
+                        "[Owner's Bot Lab — EtiRX0GduSI @ 00:04:25]"
+                    ),
+                    (
+                        "Make the workflow duplicate-safe, add a separate failure-notification workflow, "
+                        "and check connections. Jonas reports hourly checks because connections disconnect quietly. "
+                        "[Jonas | AI Tools & Automation — 4imOFZeP7nk @ 00:07:20] "
+                        "[Jonas | AI Tools & Automation — 4imOFZeP7nk @ 00:07:34]"
+                    ),
+                    (
+                        "Preserve and back up the fixed encryption key, retain workflow data, and prune "
+                        "execution history after seven days in the deployment taught by 12_5 Tech. "
+                        "[12_5 Tech — 0EeWohGy6RM @ 00:02:15] "
+                        "[12_5 Tech — 0EeWohGy6RM @ 00:02:35]"
+                    ),
+                    (
+                        "Inspect every Zapier AI tier and count modules or executions against actual monthly "
+                        "runs. ProfitPilot says to choose the smallest plan that still leaves headroom. "
+                        "[ProfitPilot — d8w8FHZJpdY @ 00:04:26] "
+                        "[ProfitPilot — d8w8FHZJpdY @ 00:06:39]"
+                    ),
+                ],
+            },
+        },
     ],
-    "pull_quote": "A workflow is finished when its outputs are accepted, its exceptions are owned, and its cash reconciles.",
+    "pull_quote": (
+        '"Most remote teams don\'t have a tool problem, they have a time problem." '
+        "— Paired Recruiting (TdMOpd_cG0A @ 00:00:00)."
+    ),
     "diagram_id": "diag-01",
     "action_checklist": [
-        "Define one $10,000 implementation milestone with named connectors, human reviewers, acceptance fixtures, and separately priced scope changes.",
-        "Instrument both mapped acquisition plays with source evidence, deduplication keys, platform restrictions, and measured discovery-to-contract outcomes.",
-        "Assemble the six reference fragments in order and run their checks, then add file-backed concurrency, crash-recovery, and access-control tests.",
-        "Extend the ledger for customer-deposit liabilities and every required settlement type before collecting or posting unsupported transactions.",
-        "Rebuild the ninety-day cohort using actual lead dispositions, delivered milestones, bank collections, paid costs, and receivables movement.",
-        "Publish a monthly revenue-to-profit-to-cash bridge that preserves the canonical Conservative, Base, and Scaled scenario distinctions.",
+        (
+            "Choose one repetitive process and identify its trigger, incoming information, decisions, "
+            "systems, and useful AI role before selecting a platform. "
+            "[Everyday AI Automation — SrWNK0955xw @ 00:11:46] "
+            "[Paired Recruiting — TdMOpd_cG0A @ 00:08:58]"
+        ),
+        (
+            "Build the lead writer with dynamically mapped contact fields, then inspect the generated "
+            "subject and body before mapping them into Gmail. "
+            "[Automate with Marc | AI Automation — syCqaV7N73s @ 00:08:38] "
+            "[Automate with Marc | AI Automation — syCqaV7N73s @ 00:09:44]"
+        ),
+        (
+            "Calculate tasks, credits, or executions for the actual workflow and volume; inspect the "
+            "Zapier AI tier and read the usage meter after a week of real testing. "
+            "[ProfitPilot — d8w8FHZJpdY @ 00:06:39] "
+            "[AI Business Tools & Automation — PKHb0KLNOIg @ 00:06:57]"
+        ),
+        (
+            "For self-hosted agents, preserve the encryption key and workflow data, enable seven-day "
+            "pruning, and connect the chosen Groq, Gemini, or local Ollama credentials. "
+            "[12_5 Tech — 0EeWohGy6RM @ 00:02:15] "
+            "[12_5 Tech — 0EeWohGy6RM @ 00:02:35]"
+        ),
+        (
+            "Connect instance-level MCP to Claude or configure the dashboard assistant, then test a "
+            "specific creation or editing request against the n8n workspace. "
+            "[SaaS Master — TdMeBa69Y8Y @ 00:03:03] "
+            "[Cuebic AI — BxxP4kEqOdg @ 00:02:57]"
+        ),
+        (
+            "Package a specific business bottleneck with maintenance, demonstrate it in a three-minute "
+            "screen capture, and use the taught targeted outreach and seven-day trial offer. "
+            "[The AI Blueprint — 1mZ0bWq9y-M @ 00:02:20] "
+            "[The AI Blueprint — 1mZ0bWq9y-M @ 00:02:58] "
+            "[The AI Blueprint — 1mZ0bWq9y-M @ 00:03:16]"
+        ),
     ],
     "statutory_citations": [
         {
-            "title": "18 U.S.C. § 1030 — Fraud and related activity in connection with computers",
-            "url": "https://www.law.cornell.edu/uscode/text/18/1030",
-            "relevance": "Define and document authorized client-system access, permitted operations, and revocation rather than treating credential possession as unrestricted permission.",
+            "title": "Automate with Marc | AI Automation — The difference between Zapier, Make and n8n (2026) [00:02:33]",
+            "url": "https://www.youtube.com/watch?v=syCqaV7N73s&t=153s",
+            "relevance": "Primary practitioner testimony on building the same Google Sheets, AI writer, and email workflow across three platforms.",
         },
         {
-            "title": "17 CFR § 249.308 — Form 8-K",
-            "url": "https://www.ecfr.gov/current/title-17/section-249.308",
-            "relevance": "Identifies the current-report form underlying the specified leadership-change, material-agreement, and completed-acquisition trigger workflow.",
+            "title": "ProfitPilot — Zapier vs Make vs n8n: What One AI Workflow Really Costs (2026 Pricing) [00:04:26]",
+            "url": "https://www.youtube.com/watch?v=d8w8FHZJpdY&t=266s",
+            "relevance": "Primary practitioner testimony on AI task multipliers, billing assumptions, and the cost of the same lead workflow.",
         },
         {
-            "title": "17 CFR § 230.503 — Filing of notice of sales",
-            "url": "https://www.ecfr.gov/current/title-17/section-230.503",
-            "relevance": "Establishes the Form D notice requirement for specified Regulation D offerings; a notice must not be represented as proof that the full offering amount was raised.",
+            "title": "Owner's Bot Lab — I Built the Same AI Lead Responder in Zapier, Make and n8n (Only One Was Easy) [00:03:44]",
+            "url": "https://www.youtube.com/watch?v=EtiRX0GduSI&t=224s",
+            "relevance": "Primary practitioner testimony on responder stress tests, emergencies, blank messages, and attempted discount manipulation.",
         },
         {
-            "title": "15 U.S.C. § 45 — Unfair methods of competition and unfair or deceptive acts or practices",
-            "url": "https://www.law.cornell.edu/uscode/text/15/45",
-            "relevance": "Supports evidence-backed marketing of workflow accuracy, business outcomes, and claimed platform influence instead of unsupported commercial representations.",
+            "title": "Jonas | AI Tools & Automation — I Run My AI Automation Business for $0 in Software (Zapier vs Make vs n8n) [00:06:39]",
+            "url": "https://www.youtube.com/watch?v=4imOFZeP7nk&t=399s",
+            "relevance": "Primary practitioner testimony on client workflow labels, testing, duplicate safety, error alerts, and connection monitoring.",
+        },
+    ],
+    "source_citations": [
+        {
+            "source_type": "video_pro_tip",
+            "video_id": "IYV8OVFzq_c",
+            "title": "N8N vs Make vs Zapier (2025) - Honest Review",
+            "channel": "Simplified",
+            "author": "Simplified",
+            "text": "The choice of platform depends on the complexity of your automations, the integrations you require, the initial skills of your team, and your budget.",
+            "tip": "The choice of platform depends on the complexity of your automations, the integrations you require, the initial skills of your team, and your budget.",
+            "timestamp": 236,
+            "timestamp_seconds": 236,
+            "timestamp_label": "[00:03:56]",
+            "url": "https://www.youtube.com/watch?v=IYV8OVFzq_c&t=236s",
+            "markdown": "[00:03:56](https://www.youtube.com/watch?v=IYV8OVFzq_c&t=236s)",
+            "epistemic_status": "attributed_practitioner_claim",
+            "relevance": "Practitioner testimony on selecting a platform by workflow complexity, integrations, skills, and budget.",
         },
         {
-            "title": "16 CFR Part 465 — Trade Regulation Rule on the Use of Consumer Reviews and Testimonials",
-            "url": "https://www.ecfr.gov/current/title-16/chapter-I/subchapter-D/part-465",
-            "relevance": "Constrains fake reviews, sentiment-conditioned review purchases, specified undisclosed insider reviews, and other prohibited review practices.",
+            "source_type": "video_pro_tip",
+            "video_id": "syCqaV7N73s",
+            "title": "The difference between Zapier, Make and n8n (2026)",
+            "channel": "Automate with Marc | AI Automation",
+            "author": "Automate with Marc | AI Automation",
+            "text": "If I type in Teddy Joy right here, it's going to be hardcoded for every run of this automation.",
+            "tip": "If I type in Teddy Joy right here, it's going to be hardcoded for every run of this automation.",
+            "timestamp": 518,
+            "timestamp_seconds": 518,
+            "timestamp_label": "[00:08:38]",
+            "url": "https://www.youtube.com/watch?v=syCqaV7N73s&t=518s",
+            "markdown": "[00:08:38](https://www.youtube.com/watch?v=syCqaV7N73s&t=518s)",
+            "epistemic_status": "attributed_practitioner_claim",
+            "relevance": "Practitioner testimony on dynamic mapping rather than hardcoding a sample lead.",
         },
         {
-            "title": "16 CFR § 255.5 — Disclosure of material connections",
-            "url": "https://www.ecfr.gov/current/title-16/section-255.5",
-            "relevance": "Explains disclosure expectations for material connections between endorsers and sellers when agency work includes endorsements or testimonials.",
+            "source_type": "video_pro_tip",
+            "video_id": "PKHb0KLNOIg",
+            "title": "Zapier vs Make vs n8n: Which Costs Less for Small Businesses? (2026)",
+            "channel": "AI Business Tools & Automation",
+            "author": "AI Business Tools & Automation",
+            "text": "Before you commit, build one real workflow on each free tier or trial, run it for a week, and read the usage meter.",
+            "tip": "Before you commit, build one real workflow on each free tier or trial, run it for a week, and read the usage meter.",
+            "timestamp": 417,
+            "timestamp_seconds": 417,
+            "timestamp_label": "[00:06:57]",
+            "url": "https://www.youtube.com/watch?v=PKHb0KLNOIg&t=417s",
+            "markdown": "[00:06:57](https://www.youtube.com/watch?v=PKHb0KLNOIg&t=417s)",
+            "epistemic_status": "attributed_practitioner_claim",
+            "relevance": "Practitioner testimony on testing actual workflow usage before selecting a paid plan.",
+        },
+        {
+            "source_type": "video_pro_tip",
+            "video_id": "Pd96DxQ36U8",
+            "title": "Zapier vs Make vs n8n (2026): Which Automation Tool Should You Use?",
+            "channel": "LearnAI Today",
+            "author": "LearnAI Today",
+            "text": "Self-hosting means handling updates, backups, security, and uptime yourself.",
+            "tip": "Self-hosting means handling updates, backups, security, and uptime yourself.",
+            "timestamp": 279,
+            "timestamp_seconds": 279,
+            "timestamp_label": "[00:04:39]",
+            "url": "https://www.youtube.com/watch?v=Pd96DxQ36U8&t=279s",
+            "markdown": "[00:04:39](https://www.youtube.com/watch?v=Pd96DxQ36U8&t=279s)",
+            "epistemic_status": "attributed_practitioner_claim",
+            "relevance": "Practitioner testimony on the operational responsibilities accompanying self-hosting.",
+        },
+        {
+            "source_type": "video_pro_tip",
+            "video_id": "1mZ0bWq9y-M",
+            "title": "How to Build an AI Automation Agency with n8n and AI Agents (2026 Masterclass)",
+            "channel": "The AI Blueprint",
+            "author": "The AI Blueprint",
+            "text": "Two custom core workflows for a one-time setup fee of $1,500 plus $500 per month for ongoing maintenance and uptime monitoring.",
+            "tip": "Two custom core workflows for a one-time setup fee of $1,500 plus $500 per month for ongoing maintenance and uptime monitoring.",
+            "timestamp": 140,
+            "timestamp_seconds": 140,
+            "timestamp_label": "[00:02:20]",
+            "url": "https://www.youtube.com/watch?v=1mZ0bWq9y-M&t=140s",
+            "markdown": "[00:02:20](https://www.youtube.com/watch?v=1mZ0bWq9y-M&t=140s)",
+            "epistemic_status": "attributed_practitioner_claim",
+            "relevance": "Practitioner testimony on the taught starter automation package and recurring maintenance offer.",
+        },
+        {
+            "source_type": "video_pro_tip",
+            "video_id": "TdMOpd_cG0A",
+            "title": "Zapier vs Make vs n8n: Which Automation Tool Is Best for Your Team? (HONEST REVIEW)",
+            "channel": "Paired Recruiting",
+            "author": "Paired Recruiting",
+            "text": "In most cases, Make ends up being the best middle ground. It's flexible enough to handle real workflows, but still accessible without needing a developer.",
+            "tip": "In most cases, Make ends up being the best middle ground. It's flexible enough to handle real workflows, but still accessible without needing a developer.",
+            "timestamp": 465,
+            "timestamp_seconds": 465,
+            "timestamp_label": "[00:07:45]",
+            "url": "https://www.youtube.com/watch?v=TdMOpd_cG0A&t=465s",
+            "markdown": "[00:07:45](https://www.youtube.com/watch?v=TdMOpd_cG0A&t=465s)",
+            "epistemic_status": "attributed_practitioner_claim",
+            "relevance": "Practitioner testimony on Make as a remote-team middle ground.",
+        },
+        {
+            "source_type": "video_pro_tip",
+            "video_id": "4imOFZeP7nk",
+            "title": "I Run My AI Automation Business for $0 in Software (Zapier vs Make vs n8n)",
+            "channel": "Jonas | AI Tools & Automation",
+            "author": "Jonas | AI Tools & Automation",
+            "text": "Make it duplicate safe and set up error alerts. I literally have one workflow whose only job is to tell me when another workflow fails.",
+            "tip": "Make it duplicate safe and set up error alerts. I literally have one workflow whose only job is to tell me when another workflow fails.",
+            "timestamp": 440,
+            "timestamp_seconds": 440,
+            "timestamp_label": "[00:07:20]",
+            "url": "https://www.youtube.com/watch?v=4imOFZeP7nk&t=440s",
+            "markdown": "[00:07:20](https://www.youtube.com/watch?v=4imOFZeP7nk&t=440s)",
+            "epistemic_status": "attributed_practitioner_claim",
+            "relevance": "Practitioner testimony on duplicate safety and dedicated failure alerts in client workflows.",
+        },
+        {
+            "source_type": "video_pro_tip",
+            "video_id": "d8w8FHZJpdY",
+            "title": "Zapier vs Make vs n8n: What One AI Workflow Really Costs (2026 Pricing)",
+            "channel": "ProfitPilot",
+            "author": "ProfitPilot",
+            "text": "Standard costs one task, Advanced costs three, and Premium costs five. If the AI calls tools, each tool call is billed at the same rate.",
+            "tip": "Standard costs one task, Advanced costs three, and Premium costs five. If the AI calls tools, each tool call is billed at the same rate.",
+            "timestamp": 266,
+            "timestamp_seconds": 266,
+            "timestamp_label": "[00:04:26]",
+            "url": "https://www.youtube.com/watch?v=d8w8FHZJpdY&t=266s",
+            "markdown": "[00:04:26](https://www.youtube.com/watch?v=d8w8FHZJpdY&t=266s)",
+            "epistemic_status": "attributed_practitioner_claim",
+            "relevance": "Practitioner testimony on Zapier AI task multipliers and tool-call billing.",
+        },
+        {
+            "source_type": "video_pro_tip",
+            "video_id": "EtiRX0GduSI",
+            "title": "I Built the Same AI Lead Responder in Zapier, Make and n8n (Only One Was Easy)",
+            "channel": "Owner's Bot Lab",
+            "author": "Owner's Bot Lab",
+            "text": "All three caught four out of four emergencies, zero false alarms, zero prices quoted.",
+            "tip": "All three caught four out of four emergencies, zero false alarms, zero prices quoted.",
+            "timestamp": 243,
+            "timestamp_seconds": 243,
+            "timestamp_label": "[00:04:03]",
+            "url": "https://www.youtube.com/watch?v=EtiRX0GduSI&t=243s",
+            "markdown": "[00:04:03](https://www.youtube.com/watch?v=EtiRX0GduSI&t=243s)",
+            "epistemic_status": "attributed_practitioner_claim",
+            "relevance": "Practitioner testimony on the measured emergency-handling results of the responder test.",
+        },
+        {
+            "source_type": "video_pro_tip",
+            "video_id": "SrWNK0955xw",
+            "title": "Zapier vs Make vs n8n vs UiPath: What You Need to Know in 2026",
+            "channel": "Everyday AI Automation",
+            "author": "Everyday AI Automation",
+            "text": "With UiPath, we can create a workflow that reads the invoice using document understanding. We add an extract document data activity, choose the appropriate document type, and identify the fields we want extracted.",
+            "tip": "With UiPath, we can create a workflow that reads the invoice using document understanding. We add an extract document data activity, choose the appropriate document type, and identify the fields we want extracted.",
+            "timestamp": 503,
+            "timestamp_seconds": 503,
+            "timestamp_label": "[00:08:23]",
+            "url": "https://www.youtube.com/watch?v=SrWNK0955xw&t=503s",
+            "markdown": "[00:08:23](https://www.youtube.com/watch?v=SrWNK0955xw&t=503s)",
+            "epistemic_status": "attributed_practitioner_claim",
+            "relevance": "Practitioner testimony on invoice extraction and the document-processing role of UiPath.",
+        },
+        {
+            "source_type": "video_pro_tip",
+            "video_id": "Pz3jLYQwsX4",
+            "title": "n8n vs Zapier vs Make (2026): Which AI Automation Tool Is Actually Worth It?",
+            "channel": "Whizz AI",
+            "author": "Whizz AI",
+            "text": "If you self-host the free version, you are responsible for keeping it running, updating it, and securing it. That is a real job, even if the software itself costs nothing.",
+            "tip": "If you self-host the free version, you are responsible for keeping it running, updating it, and securing it. That is a real job, even if the software itself costs nothing.",
+            "timestamp": 297,
+            "timestamp_seconds": 297,
+            "timestamp_label": "[00:04:57]",
+            "url": "https://www.youtube.com/watch?v=Pz3jLYQwsX4&t=297s",
+            "markdown": "[00:04:57](https://www.youtube.com/watch?v=Pz3jLYQwsX4&t=297s)",
+            "epistemic_status": "attributed_practitioner_claim",
+            "relevance": "Practitioner testimony distinguishing zero software cost from self-hosting responsibilities.",
+        },
+        {
+            "source_type": "video_pro_tip",
+            "video_id": "TdMeBa69Y8Y",
+            "title": "n8n Self Hosted With Claude MCP - Let AI Build Your Workflows",
+            "channel": "SaaS Master",
+            "author": "SaaS Master",
+            "text": "Head on over to settings, click on instance level MCP. Let's go ahead and enable.",
+            "tip": "Head on over to settings, click on instance level MCP. Let's go ahead and enable.",
+            "timestamp": 183,
+            "timestamp_seconds": 183,
+            "timestamp_label": "[00:03:03]",
+            "url": "https://www.youtube.com/watch?v=TdMeBa69Y8Y&t=183s",
+            "markdown": "[00:03:03](https://www.youtube.com/watch?v=TdMeBa69Y8Y&t=183s)",
+            "epistemic_status": "attributed_practitioner_claim",
+            "relevance": "Practitioner testimony on enabling instance-level MCP for AI-assisted workflow creation.",
+        },
+        {
+            "source_type": "video_pro_tip",
+            "video_id": "BxxP4kEqOdg",
+            "title": "n8n AI Assistant & AI Agents on Self-Hosted n8n",
+            "channel": "Cuebic AI",
+            "author": "Cuebic AI",
+            "text": "I'll open the AI assistant and ask it to add an if node to this workflow. The assistant processes the request, and there we go. The if node has been added to the workflow.",
+            "tip": "I'll open the AI assistant and ask it to add an if node to this workflow. The assistant processes the request, and there we go. The if node has been added to the workflow.",
+            "timestamp": 177,
+            "timestamp_seconds": 177,
+            "timestamp_label": "[00:02:57]",
+            "url": "https://www.youtube.com/watch?v=BxxP4kEqOdg&t=177s",
+            "markdown": "[00:02:57](https://www.youtube.com/watch?v=BxxP4kEqOdg&t=177s)",
+            "epistemic_status": "attributed_practitioner_claim",
+            "relevance": "Practitioner testimony demonstrating an assistant modifying an existing self-hosted workflow.",
+        },
+        {
+            "source_type": "video_pro_tip",
+            "video_id": "bS9R6aCVEzw",
+            "title": "n8n will change your life as a developer...",
+            "channel": "Fireship",
+            "author": "Fireship",
+            "text": "The AI agent node allows us to choose any custom model we want, as well as provide data for memory and tools for the model context protocol.",
+            "tip": "The AI agent node allows us to choose any custom model we want, as well as provide data for memory and tools for the model context protocol.",
+            "timestamp": 309,
+            "timestamp_seconds": 309,
+            "timestamp_label": "[00:05:09]",
+            "url": "https://www.youtube.com/watch?v=bS9R6aCVEzw&t=309s",
+            "markdown": "[00:05:09](https://www.youtube.com/watch?v=bS9R6aCVEzw&t=309s)",
+            "epistemic_status": "attributed_practitioner_claim",
+            "relevance": "Practitioner testimony on models, memory, and MCP tools in an n8n AI Agent node.",
+        },
+        {
+            "source_type": "video_pro_tip",
+            "video_id": "0EeWohGy6RM",
+            "title": "Build Free AI Agents & Workflow Automation With Zero Zapier Fees (Self-Hosted n8n + Free Groq/Gemini",
+            "channel": "12_5 Tech",
+            "author": "12_5 Tech",
+            "text": "Enable seven-day execution pruning to protect small VPS disks.",
+            "tip": "Enable seven-day execution pruning to protect small VPS disks.",
+            "timestamp": 155,
+            "timestamp_seconds": 155,
+            "timestamp_label": "[00:02:35]",
+            "url": "https://www.youtube.com/watch?v=0EeWohGy6RM&t=155s",
+            "markdown": "[00:02:35](https://www.youtube.com/watch?v=0EeWohGy6RM&t=155s)",
+            "epistemic_status": "attributed_practitioner_claim",
+            "relevance": "Practitioner testimony on execution-history pruning in a small self-hosted deployment.",
+        },
+        {
+            "source_type": "video_pro_tip",
+            "video_id": "syCqaV7N73s",
+            "title": "The difference between Zapier, Make and n8n (2026)",
+            "channel": "Automate with Marc | AI Automation",
+            "author": "Automate with Marc | AI Automation",
+            "text": "Choose Zapier if you want speed and simplicity. Choose Make if you want power without coding and choose n8n if you want full control and flexibility.",
+            "tip": "Choose Zapier if you want speed and simplicity. Choose Make if you want power without coding and choose n8n if you want full control and flexibility.",
+            "timestamp": 1713,
+            "timestamp_seconds": 1713,
+            "timestamp_label": "[00:28:33]",
+            "url": "https://www.youtube.com/watch?v=syCqaV7N73s&t=1713s",
+            "markdown": "[00:28:33](https://www.youtube.com/watch?v=syCqaV7N73s&t=1713s)",
+            "epistemic_status": "attributed_practitioner_claim",
+            "relevance": "Practitioner testimony summarizing platform selection after the three-platform build demonstration.",
         },
     ],
 }

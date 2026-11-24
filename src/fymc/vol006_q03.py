@@ -5,729 +5,840 @@ CHAPTER_3 = {
     "chapter_id": "Q3",
     "chapter_number": 3,
     "question_number": 3,
-    "slug": "unit-economics-margin-waterfall-working-capital-float",
-    "question_prompt": "What are the real unit economics, gross-to-net margin deductions, scrub/reversal reserves, and working-capital float requirements for productized ai agencies?",
+    "slug": "sell-and-deliver-paid-ai-audits",
+    "question_prompt": "How do practitioners sell and perform paid AI audits, map business opportunities, and distinguish opportunity assessments from visibility and compliance-related audit work?",
     "kicker": "Q3 / THE BIG MONEY PLAYBOOKS",
-    "title": "Unit Economics, Margin Waterfall & Working-Capital Float",
-    "subtitle": "Sprint Cohorts, Contractor Accruals, Processor Holds, Cloud-Credit Expiry, and Claim Controls under 15 U.S.C. 45",
-    "layout_template": "financial_breakdown",
-    "reading_time_minutes": 14,
+    "title": "Sell and Deliver Paid AI Audits",
+    "subtitle": "Opportunity-assessment frameworks, workflow mapping, audit sales processes and case studies, AI visibility audits, and Excel agents for audit and compliance.",
+    "layout_template": "financial_analysis",
+    "reading_time_minutes": 15,
     "executive_summary": (
-        "Candidate #29, Productized AI Agencies, ranks #08 with an 89/100 "
-        "Money-to-Manpower Score across 23 mapped plays. Its canonical annual "
-        "owner profits are $20,000 Conservative, $165,000 Base, and $400,000 "
-        "Scaled, earned on implementation fees and support retainers rather "
-        "than client sales attributed to automation. This chapter converts "
-        "those totals into acquired-client cohorts, a seven-deduction margin "
-        "waterfall, explicit remediation allowances, and settlement-delay cash "
-        "requirements. Comparison-page acquisition, startup compute credits, "
-        "and authorized advertising rebates receive separate economic tests. "
-        "The operating discipline is simple: price human review, accrue "
-        "contractors before paying distributions, distinguish deposits from "
-        "earned fees, and fund delayed collections without depending on "
-        "promotional credits or client advertising principal."
+        "Across these sixteen practitioner accounts, the recurring offer is paid diagnosis before development: "
+        "interview the people doing the work, map expensive friction, rank feasible improvements, and present "
+        "a priced roadmap. Antonio sells a $1,500–$3,000 bronze audit; Andrew Dunn describes $5,000–$15,000 "
+        "engagements and a fourteen-day delivery process. Liam Ottley reports progressing from a free audit "
+        "that cost $30,000 to a $60,000 engagement. Agreement ends at packaging: Carly Meyers permits "
+        "audit-only delivery and referrals, while Dunn emphasizes implementation and recurring support. "
+        "Human interviews compete with Orcus self-service intake; custom infrastructure competes with "
+        "ready-made tools and non-AI integrations. Clifford Almeida sells visibility assessments around "
+        "buyer prompts, whereas DataSnipper demonstrates evidence-based Excel procedures. Scheduling, "
+        "adoption, weak discovery, inconsistent economics, and unreliable inputs remain recurring operational checks."
     ),
     "key_metrics": [
         {
-            "label": "Conservative",
-            "value": "$100,000",
-            "context": "Annual implementation fees and support retainers; excludes client sales",
-            "note": "20% net margin; $20,000 annual owner net profit; 2 FT + 3 C",
+            "label": "Bronze entry-audit price",
+            "metric": "Bronze entry-audit price",
+            "value": "$1,500–$3,000",
+            "confidence": "attributed_practitioner_claim",
+            "context": "Antonio describes an intentionally small, fast-to-deliver bronze AI business audit.",
+            "source": "Belt Course ([YaFtlj9qXQc @ 00:04:30])",
         },
         {
-            "label": "Base",
-            "value": "$550,000",
-            "context": "Annual implementation fees and support retainers; excludes client sales",
-            "note": "30.0% net margin; $165,000 annual owner net profit; 2 FT + 3 C",
+            "label": "Standard audit delivery cycle",
+            "metric": "Standard audit delivery cycle",
+            "value": "14 days",
+            "confidence": "attributed_practitioner_claim",
+            "context": "Andrew Dunn describes fourteen steps across seven phases, normally running from signing through audit delivery in fourteen days.",
+            "source": "Andrew Dunn | AI Consulting ([LSmxwtNHu4k @ 00:00:19])",
         },
         {
-            "label": "Scaled",
-            "value": "$1,000,000",
-            "context": "Annual implementation fees and support retainers; excludes client sales",
-            "note": "40% net margin; $400,000 annual owner net profit; 3 FT + 4 C",
+            "label": "First free audit delivery cost",
+            "metric": "First free audit delivery cost",
+            "value": "$30,000",
+            "confidence": "attributed_practitioner_claim",
+            "context": "Liam Ottley reports Morningside's cost of delivering its initial free steel-company audit; this is delivery expenditure, not an audit fee.",
+            "source": "Liam Ottley ([noivN2hIXLY @ 00:03:53])",
+        },
+        {
+            "label": "Existing-client visibility-audit test",
+            "metric": "Existing-client visibility-audit test",
+            "value": "5 personalized emails → 2 paid audits",
+            "confidence": "attributed_practitioner_claim",
+            "context": "Clifford Almeida reports selling two audits to website-care clients with less than thirty minutes of total effort and subsequent ongoing work.",
+            "source": "My Web Audit ([tT1dV4_aC0M @ 00:00:00])",
         },
     ],
     "sections": [
         {
-            "heading": "1. Reconcile every earned fee through the owner-profit waterfall",
-            "epistemic_status": "illustrative_model",
+            "id": "practitioner-consensus",
+            "title": "The Practitioner Consensus",
             "paragraphs": [
                 (
-                    "Start with earned implementation fees and earned support retainers, "
-                    "not proposals signed, deposits received, client advertising spend, "
-                    "or revenue a client attributes to an automation. The illustrative "
-                    "Conservative cohort delivers eight $10,000 sprints and forty "
-                    "$500 support account-months, producing $100,000. Base delivers "
-                    "twenty $20,000 sprints and one hundred $1,500 account-months, "
-                    "producing $550,000. Scaled delivers twenty-five $28,000 sprints "
-                    "and one hundred fifty $2,000 account-months, producing $1,000,000. "
-                    "These are annual production mixes, not assumptions that every "
-                    "new customer purchases twelve months of support. Tie each "
-                    "account-month to a named customer, service period, and supported "
-                    "workflow. Stripe receipts, QuickBooks invoices, and bank deposits "
-                    "must reconcile through a separate schedule of receivables, "
-                    "customer advances, taxes collected, and earned fees. A $10,000 "
-                    "deposit against an unfinished $20,000 sprint creates cash and "
-                    "an obligation; it does not create completed delivery. Define "
-                    "acceptance evidence in the statement of work: approved test "
-                    "cases, connector permissions, deployment records, and the "
-                    "customer's designated reviewer. Store those artifacts beside "
-                    "the invoice identifier so a disputed milestone can be traced "
-                    "without reconstructing Slack conversations. The scorecard "
-                    "revenue totals remain fixed throughout this chapter."
+                    "Sell the diagnosis before selling the machine. Antonio's starting problem is familiar: "
+                    "friendly calls, interested prospects, and no clear next step. Their paid business audit "
+                    "replaces that drift with a visual roadmap of high-leverage opportunities, expected returns, "
+                    "recommended projects, and the next ninety days. The intentionally small offer is not a "
+                    "hundred-page collection of unused ideas; the client helps build the recommendations and "
+                    "understands what comes next [YaFtlj9qXQc @ 00:02:04]. Andrew Dunn makes the commercial "
+                    "argument more aggressively: clients cannot visualize a workflow and care about results. "
+                    "Their strategic offer investigates operational pain, maps processes, projects ROI, and "
+                    "puts tools and timelines inside a transformation plan. A lead chatbot becomes one "
+                    "component of a broader lead-generation and nurturing project rather than the whole "
+                    "sale [HPGSE4LXaQA @ 00:04:05]. Stefan starts from the same business problem but describes "
+                    "it as a complexity ceiling: buried leads, fragmented data, and specialists acting as "
+                    "digital glue. Their sequence is problem, cost, operating logic, then technology. A "
+                    "generic tool added to a broken workflow can become another tab instead of removing "
+                    "work [NFQnvr9xNf8 @ 00:00:26]. These offers sell an explanation of where effort and "
+                    "money disappear, followed by a concrete path to change—not an isolated automation demo."
                 ),
                 (
-                    "The waterfall below supplies explicit planning allocations that "
-                    "reconcile exactly to the canonical profit cases; those allocations "
-                    "are assumptions, not additional scorecard facts. Contractor "
-                    "delivery, model and hosting consumption, internal quality review, "
-                    "and remediation provision constitute direct service costs. "
-                    "Subtracting them leaves $52,000, $306,000, and $600,000 of "
-                    "service contribution. Acquisition, payment collection, and "
-                    "fixed operating costs then leave $20,000, $165,000, and "
-                    "$400,000 for the owner. Contractor delivery excludes employees "
-                    "already allocated to quality review or overhead. Acquisition "
-                    "includes attributed sales labor and commissions, preventing "
-                    "apparently inexpensive organic leads from hiding founder time. "
-                    "Payment costs use a two-percent blended planning assumption "
-                    "across payment methods, rather than asserting any processor's "
-                    "current tariff. Track remediation provisions separately from "
-                    "cash earmarked for refunds: moving money between bank accounts "
-                    "does not create another expense. The modeled provision covers "
-                    "expected service recovery and delivery rework. Actual fee "
-                    "reversals require separate treatment and may reduce reported "
-                    "revenue; they cannot be silently absorbed while preserving "
-                    "both the original revenue and profit. Release unused provisions "
-                    "only against documented closure of the underlying service "
-                    "obligation, never merely to improve a monthly margin."
+                    "The recurring discovery move is to compare management's intended operation with the "
+                    "employee's actual day. Lobo Brother's separates leadership and frontline interviews "
+                    "because those accounts are rarely identical. Leaders identify expensive bottlenecks "
+                    "and failed attempts; employees explain repetitive work, hidden failures, and broken "
+                    "handoffs. Their interviewer frames automation around removing paperwork, re-entry, "
+                    "and chasing rather than replacing jobs, because replacement fears can suppress "
+                    "truthful answers [dqDWqV07r6M @ 00:03:21]. Nick Puru pushes beyond job descriptions: "
+                    "ask what happened yesterday. In their sales example, representatives spent the "
+                    "morning assembling lists, checking LinkedIn and Salesforce, removing duplicates, "
+                    "and copying fields. Map that sequence with its time, tools, handoffs, and blockages "
+                    "before deciding what to automate [7UpuiFHBvec @ 00:04:19]. Tom Hartnell adds the "
+                    "measurement discipline: establish time, cost, volume, error rate, and speed before "
+                    "implementation, while documenting the existing technology the solution must fit. "
+                    "Their CV-screening example starts with three hours per role across eight monthly "
+                    "roles, making the baseline twenty-four hours per month [WFW7vb6wXZM @ 00:04:23]. "
+                    "The shared prerequisite is access to people who perform the work and can describe "
+                    "its actual sequence. The roadmap follows that operational account, rather than "
+                    "assuming that an executive's first requested tool identifies the real constraint."
                 ),
                 (
-                    "The staffing labels remain exactly 2 FT + 3 C, 2 FT + 3 C, "
-                    "and 3 FT + 4 C, but a roster is not a payroll budget. "
-                    "Conservative economics are especially fragile: only $26,000 "
-                    "sits in the combined quality-review and fixed-overhead lines, "
-                    "before separating software, insurance, administration, and "
-                    "non-owner employee compensation. That cannot establish the "
-                    "affordability of two market-rate technical salaries. Preserve "
-                    "the canonical scenario while explicitly flagging this capacity "
-                    "constraint rather than presenting unsupported hiring economics. "
-                    "For this model, owner distributions are the residual, with no "
-                    "additional replacement salary imputed for the owner; personal "
-                    "income taxes are outside the operating bridge. Actual employee "
-                    "wages, employer costs, entity-level taxes where applicable, "
-                    "and business insurance must fit their assigned expense lines "
-                    "or reduce the residual. Under 29 U.S.C. 206 and 207, covered "
-                    "nonexempt employees require applicable minimum wages and "
-                    "overtime; state requirements may be higher. Contractor labels "
-                    "also need classification review under the applicable rules. "
-                    "If replacing owner delivery requires another $80,000 annually, "
-                    "economic residuals become negative $60,000, positive $85,000, "
-                    "and positive $320,000. That sensitivity is distinct from "
-                    "the unchanged canonical owner-profit figures."
+                    "Paid discovery is also a boundary around presales labor. Milan Tahliani describes "
+                    "process mapping, infrastructure investigation, integration analysis, and recommendations "
+                    "as consulting that should already be paid. Their audit produces an ROI-backed roadmap "
+                    "before development, with the relationship positioned around strategic partnership "
+                    "rather than an open-ended developer role [2goNKtgnIKg @ 00:01:54]. In Liam Ottley's "
+                    "conversation with the Monk founders, Ali initially resisted charging $1,000 for an "
+                    "hour-long strategy call; a prospect accepted immediately. The founders describe paid "
+                    "discovery as a way to avoid long conversations with nonbuyers, educate skeptical "
+                    "owners, and establish paid trust before larger implementation commitments. They "
+                    "report roughly 83% audit-to-development conversion and explain that audit cash "
+                    "supports a growing delivery team while larger projects take time to close "
+                    "[2CdNLDttOSg @ 00:11:36]. Carly Meyers agrees that clarity is a saleable deliverable "
+                    "but does not require the consultant to perform implementation. Their sequence runs "
+                    "from content and DM qualification into paid interviews, a report, ROI, and a "
+                    "recommended project; execution can stay internal, move to a commission-paying "
+                    "partner, or remain with the client [stoZ9wFob2E @ 00:24:45]. The common commercial "
+                    "unit is a bounded diagnostic with a useful decision at the end. The follow-on "
+                    "business can be development, advice, referrals, or software access."
                 ),
             ],
             "table": {
-                "caption": "Annual Earned-Fee Waterfall with Explicit Planning Deductions",
+                "caption": "Shared operating principles and the practitioners' concrete versions of them.",
                 "headers": [
-                    "Revenue bridge or operating deduction",
-                    "Conservative annual allocation and operating interpretation",
-                    "Base annual allocation and operating interpretation",
-                    "Scaled annual allocation and operating interpretation",
+                    "Operator decision",
+                    "Practitioner execution",
+                    "Expert Source",
                 ],
                 "rows": [
                     [
-                        "Recognized implementation and support fees entering the bridge",
-                        "$100,000 from eight sprints plus forty support account-months",
-                        "$550,000 from twenty sprints plus one hundred support account-months",
-                        "$1,000,000 from twenty-five sprints plus one hundred fifty support account-months",
+                        "Replace friendly exploratory conversations with a clearly paid diagnostic",
+                        "Antonio delivers a collaborative visual roadmap with expected returns, recommended projects, and next steps over ninety days.",
+                        "Belt Course ([YaFtlj9qXQc @ 00:02:04])",
                     ],
                     [
-                        "Deduct contractor delivery labor accrued against accepted work",
-                        "$30,000 contractor delivery allocation, averaging $3,750 per acquired client",
-                        "$145,000 contractor delivery allocation, averaging $7,250 per acquired client",
-                        "$240,000 contractor delivery allocation, averaging $9,600 per acquired client",
+                        "Investigate actual daily work before choosing the automation stack",
+                        "Puru asks what happened yesterday and records task sequence, tools, elapsed time, handoffs, and operational blockages.",
+                        "Nick Puru | AI Automation ([7UpuiFHBvec @ 00:04:19])",
                     ],
                     [
-                        "Deduct paid model consumption, hosting, storage, and observability",
-                        "$5,000 normalized compute expense before temporary promotional benefits",
-                        "$27,500 normalized compute expense before temporary promotional benefits",
-                        "$40,000 normalized compute expense before temporary promotional benefits",
+                        "Separate executive assumptions from the frontline account of operations",
+                        "Lobo Brother's interviews leadership and employees separately, seeking hidden failures and framing automation around removing administrative work.",
+                        "Lobo Brother's | AI Systems for Business Owners ([dqDWqV07r6M @ 00:03:21])",
                     ],
                     [
-                        "Deduct internal delivery review without duplicating contractor invoices",
-                        "$8,000 allocated review expense, separate from contractor delivery",
-                        "$55,000 allocated review expense, separate from contractor delivery",
-                        "$100,000 allocated review expense, separate from contractor delivery",
+                        "Establish operational measurements before claiming that implementation created value",
+                        "Hartnell records time, cost, volume, error rate, and speed so the business can compare performance before and after implementation.",
+                        "Tom Hartnell ([WFW7vb6wXZM @ 00:03:34])",
                     ],
                     [
-                        "Deduct expected remediation provision for service recovery work",
-                        "$5,000 modeled remediation expense equals five percent of fees",
-                        "$16,500 modeled remediation expense equals three percent of fees",
-                        "$20,000 modeled remediation expense equals two percent of fees",
+                        "Charge for process mapping instead of donating substantial presales",
+                        "Tahliani treats discovery, infrastructure investigation, integration analysis, and roadmap recommendations as consulting work that should be paid.",
+                        "Milan Tahliani ([2goNKtgnIKg @ 00:01:54])",
                     ],
                     [
-                        "Calculate service contribution after four direct delivery deductions",
-                        "$52,000 remaining contribution equals 52.0% of earned fees",
-                        "$306,000 remaining contribution equals approximately 55.64% of earned fees",
-                        "$600,000 remaining contribution equals 60.0% of earned fees",
-                    ],
-                    [
-                        "Deduct fully attributed customer acquisition and sales expense",
-                        "$12,000 acquisition allocation across eight newly acquired sprint clients",
-                        "$55,000 acquisition allocation across twenty newly acquired sprint clients",
-                        "$80,000 acquisition allocation across twenty-five newly acquired sprint clients",
-                    ],
-                    [
-                        "Deduct blended processing and payment collection operating costs",
-                        "$2,000 collection expense assumes two percent of earned fees",
-                        "$11,000 collection expense assumes two percent of earned fees",
-                        "$20,000 collection expense assumes two percent of earned fees",
-                    ],
-                    [
-                        "Deduct fixed overhead and otherwise unallocated operating expenses",
-                        "$18,000 overhead ceiling requires explicit payroll feasibility review",
-                        "$75,000 overhead ceiling includes otherwise unallocated operating expenses",
-                        "$100,000 overhead ceiling includes otherwise unallocated operating expenses",
-                    ],
-                    [
-                        "Reconcile seven deductions before declaring the owner residual",
-                        "$80,000 total modeled deductions reconcile to twenty-percent margin",
-                        "$385,000 total modeled deductions reconcile to thirty-percent margin",
-                        "$600,000 total modeled deductions reconcile to forty-percent margin",
-                    ],
-                    [
-                        "Retain canonical annual owner net profit after deductions",
-                        "$20,000 owner residual preserves the Conservative scorecard exactly",
-                        "$165,000 owner residual preserves the Base scorecard exactly",
-                        "$400,000 owner residual preserves the Scaled scorecard exactly",
-                    ],
-                    [
-                        "Allocate annual owner residual across newly acquired clients",
-                        "$2,500 allocated profit per client across eight acquisitions",
-                        "$8,250 allocated profit per client across twenty acquisitions",
-                        "$16,000 allocated profit per client across twenty-five acquisitions",
+                        "Keep the audit valuable even without personally delivering implementation",
+                        "Meyers offers internal execution, partner referral for commission, or client implementation after the paid report and recommended project.",
+                        "Carly Meyers ([stoZ9wFob2E @ 00:24:45])",
                     ],
                 ],
             },
         },
         {
-            "heading": "2. Price acquired-client cohorts and scrub disputed delivery before distribution",
-            "epistemic_status": "illustrative_model",
+            "id": "street-mechanics",
+            "title": "Exact Street Mechanics, Tools & Numbers",
             "paragraphs": [
                 (
-                    "Use an acquired-client cohort as the commercial unit, with "
-                    "one sprint per newly acquired customer in this illustration. "
-                    "Divide annual recognized fees by eight, twenty, or twenty-five "
-                    "customers to obtain $12,500, $27,500, and $40,000 of "
-                    "recognized fees per acquired client. These figures include "
-                    "the year's associated support production, not a forecast "
-                    "of lifetime value. Contractor allowances become $3,750, "
-                    "$7,250, and $9,600 per client. At an illustrative blended "
-                    "$100 contractor hour, those allowances purchase 37.5, 72.5, "
-                    "and 96 hours across implementation and support. Instrument "
-                    "delivery with Harvest or Toggl project codes that distinguish "
-                    "connector installation, evaluation-set creation, deployment, "
-                    "support, and rework. A Base implementation consuming ninety "
-                    "contractor hours already exceeds its entire cohort allowance "
-                    "by $1,750 before support begins. Trigger a written scope "
-                    "amendment when the customer requests another data source, "
-                    "permission model, or consequential decision workflow. The "
-                    "fallback is a narrower supported workflow with an explicit "
-                    "manual queue, not unpaid engineering disguised as customer "
-                    "success. Track support account-months separately from active "
-                    "logos: one hundred Base account-months average five per "
-                    "acquired client, but individual customers may start later "
-                    "or receive different service durations."
+                    "Start the sale with qualification, then put the delivery calendar in place before "
+                    "interviews scatter. Andrew Dunn uses budget, authority, need, and timing, followed by "
+                    "signed scope, cleared money, and scheduled onboarding. Their smaller local audits may "
+                    "close in one call, while larger engagements need several conversations and multiple "
+                    "decision-makers. Leadership onboarding identifies the sponsor, organization chart, "
+                    "roles, headcount, tools, revenue model, acquisition process, and perceived pain. Book "
+                    "the final presentation immediately and gather interviewees to schedule discovery "
+                    "together [LSmxwtNHu4k @ 00:06:31]. Carly Meyers makes payment trigger the welcome "
+                    "email, calendar booking, intake questions, and follow-up automation. Their intake "
+                    "asks about revenue, team, and frustrations; interview count influences the fee. "
+                    "The delivery promise is clarity, with internal fulfillment, outsourcing, or advisory "
+                    "chosen according to the consultant's preferred working model [stoZ9wFob2E @ 01:06:44]. "
+                    "Liam Ottley's beginner assessment gives a concrete smaller-business scope: two "
+                    "weeks, $5,000–$10,000, three to five key people, potentially ten to fifteen "
+                    "interviews lasting thirty to forty-five minutes. Week one produces interview "
+                    "summaries, process diagrams, and a pain inventory; week two assesses solutions "
+                    "and validates recommendations [noivN2hIXLY @ 00:19:07]. This is scheduled discovery "
+                    "with named participants and outputs, not a promise to inspect every employee or "
+                    "solve every department before presenting a first decision."
                 ),
                 (
-                    "The mapped play competitor_intent_comparison_hijacking belongs "
-                    "inside acquisition economics, not inside a promised conversion "
-                    "multiple. Build text-only comparison matrices, timestamped "
-                    "public-price citations, fee calculators, and migration guides "
-                    "for genuine competitor pricing, cancellation, and comparison "
-                    "queries. Define the proposed 10-18% conversion range as "
-                    "qualified landing visitors becoming booked discovery calls; "
-                    "it is a test assumption, not evidence of visitor-to-customer "
-                    "performance. With 1,000 qualified visitors, a twelve-percent "
-                    "booking rate, and a twenty-percent booked-call close rate, "
-                    "the funnel produces twenty-four customers. A $24,000 campaign "
-                    "therefore costs $1,000 per acquired customer before any "
-                    "omitted sales expense. At ten percent booking and fifteen "
-                    "percent closing, the same spend produces fifteen customers "
-                    "and $1,600 CAC. The canonical cohort budgets remain $1,500, "
-                    "$2,750, and $3,200 blended CAC, leaving room for other "
-                    "channels and sales effort. Assess nominative use under "
-                    "applicable trademark doctrine; 15 U.S.C. 1125 still addresses "
-                    "confusing affiliation and misleading commercial claims. "
-                    "The fallback is narrow, factual reference using brand names "
-                    "only, no copied logos or implied endorsement, and removal "
-                    "of unsupported comparisons. Measure paid invoices by source "
-                    "rather than rewarding a page for unqualified form submissions."
+                    "Turn the interviews into task-level maps, then test each proposed intervention. "
+                    "Andrew Dunn maps acquisition, delivery, and support, marking time, quality, and "
+                    "risk sinks. Their sales example distinguishes strategic targeting from repetitive "
+                    "prospecting: people retain the targeting judgment while search, HubSpot checks, "
+                    "data entry, and sequences are candidates for automation. A broad request such as "
+                    "follow-up becomes opening the CRM, filtering leads, checking fit, reading the "
+                    "submission, drafting, sending, and setting the next action [AG_L5ecwXkU @ 00:03:52]. "
+                    "Nick Puru then applies structured inputs, predictable outputs, rule-based decisions, "
+                    "and sufficient repetition as feasibility filters. Missing context, strategic "
+                    "judgment, conflict resolution, and uneconomic rare tasks do not fit the same "
+                    "automation pattern. Their tenant example puts routine questions into twelve "
+                    "categories while leaving exceptions with people [7UpuiFHBvec @ 00:09:11]. Carly "
+                    "Meyers records interviews with Fathom or Fireflies and feeds the transcripts into "
+                    "a ChatGPT custom GPT. They call the first output a starting point, roughly sixty "
+                    "percent of the work, then challenge it and apply personal judgment. Subscription "
+                    "spreadsheets and High Level documentation can inform the analysis, while Gamma "
+                    "turns vetted copy into a branded report [stoZ9wFob2E @ 00:46:37]. The software "
+                    "accelerates synthesis; the practitioner still chooses which recommendations survive."
                 ),
                 (
-                    "Scrub the delivery ledger weekly before treating booked margin "
-                    "as distributable cash. Match each sprint to acceptance "
-                    "evidence, outstanding defect tickets, contractor accruals, "
-                    "disputed invoices, and the remaining support obligation. "
-                    "A remediation provision should reflect expected extra labor "
-                    "and approved service recovery, while a processor hold "
-                    "belongs in restricted settlement cash and an unearned "
-                    "deposit remains a customer obligation. These are different "
-                    "balances with different release events. At Base, the "
-                    "$16,500 provision can absorb eleven incidents costing "
-                    "$1,500 each, or another documented combination; it cannot "
-                    "simultaneously fund those incidents and eleven fee refunds "
-                    "without another charge. If management instead grants "
-                    "$10,000 of fee credits with no offsetting expense reduction, "
-                    "reported net fees fall to $540,000 and owner profit to "
-                    "$155,000 under this sensitivity. Do not relabel that result "
-                    "as the canonical Base case. Retain the original invoice, "
-                    "credit memo, customer correspondence, and incident root "
-                    "cause in one case record. Repeated failures on a document "
-                    "extractor should tighten schema validation and exception "
-                    "routing before another sale, while repeated access-related "
-                    "failures should change onboarding evidence and permission "
-                    "testing rather than merely enlarging the reserve."
+                    "Package the recommendation as a decision, not a tour of technical components. "
+                    "Mert Yerlikaya's five-slide report opens with scope and objectives, then shows an "
+                    "impact-versus-effort matrix, a phased roadmap, current-and-future workflow deep "
+                    "dives, and an ROI summary. The financial slide names the solution, one-time "
+                    "implementation cost, annualized savings, and payback. Their sales-research example "
+                    "describes qualified prospects ready each morning, checked against Salesforce, "
+                    "rather than leading with API or model terminology [1leregs81ik @ 00:07:31]. "
+                    "Andrew Dunn adds an alignment stage before polishing the final deck. During "
+                    "days eight through eleven, a feasibility call and a simple bullet list test "
+                    "whether the client actually wants the proposed priorities. If sales matters "
+                    "more than marketing, revise the plan before the presentation. The final deck "
+                    "then reflects an already-discussed decision instead of trying to persuade the "
+                    "client of unfamiliar findings [LSmxwtNHu4k @ 00:10:24]. Tom Hartnell sequences "
+                    "implementation around confidence: quick wins during the first one to two months, "
+                    "additional wins and larger projects around months two through five, and "
+                    "transformative projects after confidence exists [WFW7vb6wXZM @ 00:06:08]. Their "
+                    "shared delivery mechanic is a ranked opportunity inventory with an intelligible "
+                    "starting point, a visible later phase, and business measurements attached to "
+                    "the work the client is being asked to buy."
                 ),
             ],
             "table": {
-                "caption": "Cohort Pricing, Capacity, and Scrub Rules by Scenario",
+                "caption": "Execution details, quoted commercial scopes, and deliverable mechanics.",
                 "headers": [
-                    "Cohort measure and allocation rule",
-                    "Conservative operating unit and economic consequence",
-                    "Base operating unit and economic consequence",
-                    "Scaled operating unit and economic consequence",
+                    "Execution component",
+                    "Exact method or stated commercial scope",
+                    "Expert Source",
                 ],
                 "rows": [
                     [
-                        "Implementation production recognized only after the relevant delivery",
-                        "Eight $10,000 sprints create $80,000 of implementation fees",
-                        "Twenty $20,000 sprints create $400,000 of implementation fees",
-                        "Twenty-five $28,000 sprints create $700,000 of implementation fees",
+                        "Sell a tightly bounded bronze audit before broader implementation",
+                        "Antonio quotes $1,500–$3,000 for the intentionally small bronze offer, with deeper audit tiers available for broader requirements.",
+                        "Belt Course ([YaFtlj9qXQc @ 00:04:30])",
                     ],
                     [
-                        "Support production measured through delivered customer service periods",
-                        "Forty $500 account-months create $20,000 of support fees",
-                        "One hundred $1,500 account-months create $150,000 of support fees",
-                        "One hundred fifty $2,000 account-months create $300,000 of support fees",
+                        "Use leadership onboarding to organize access and delivery dates",
+                        "Dunn identifies the sponsor, roles, tools, revenue model, and pain, then books the final presentation and coordinates interviews.",
+                        "Andrew Dunn | AI Consulting ([LSmxwtNHu4k @ 00:06:31])",
                     ],
                     [
-                        "Annual recognized fees allocated across newly acquired customers",
-                        "$12,500 per customer combines implementation and annual support allocation",
-                        "$27,500 per customer combines implementation and annual support allocation",
-                        "$40,000 per customer combines implementation and annual support allocation",
+                        "Offer a smaller assessment with a defined interview footprint",
+                        "Ottley describes a two-week, $5,000–$10,000 assessment involving three to five key people and thirty-to-forty-five-minute interviews.",
+                        "Liam Ottley ([noivN2hIXLY @ 00:19:07])",
                     ],
                     [
-                        "Contractor capacity using an illustrative one-hundred-dollar hourly rate",
-                        "37.5 hours per customer must cover implementation and support",
-                        "72.5 hours per customer must cover implementation and support",
-                        "96 hours per customer must cover implementation and support",
+                        "Calculate labor waste using the practitioner's four stated inputs",
+                        "Puru uses daily time multiplied by people, annual working days, and loaded hourly cost; their SDR example totals $166,400 annually.",
+                        "Nick Puru | AI Automation ([7UpuiFHBvec @ 00:15:05])",
                     ],
                     [
-                        "Fully attributed acquisition allowance per newly acquired customer",
-                        "$1,500 per acquisition includes attributed selling and marketing expense",
-                        "$2,750 per acquisition includes attributed selling and marketing expense",
-                        "$3,200 per acquisition includes attributed selling and marketing expense",
+                        "Convert vetted interview analysis into separate report and presentation",
+                        "Meyers uses Gamma App for the branded report and sends that report separately from the slides used during the debrief.",
+                        "Carly Meyers ([stoZ9wFob2E @ 00:58:20])",
                     ],
                     [
-                        "Remediation provision allocated without duplicating actual incident charges",
-                        "$625 per customer supports documented recovery work and rework",
-                        "$825 per customer supports documented recovery work and rework",
-                        "$800 per customer supports documented recovery work and rework",
+                        "Present the buying decision through five focused business slides",
+                        "Yerlikaya presents scope, opportunity matrix, roadmap, opportunity deep dives, and ROI covering implementation cost, annualized savings, and payback.",
+                        "Mert Yerlikaya ([1leregs81ik @ 00:07:31])",
                     ],
                 ],
             },
             "callout": {
                 "kind": "INSIDER PRO-TIPS",
-                "title": "Four controls that protect actual cohort margin",
-                "body": (
-                    "Make pricing, attribution, and incident evidence operational "
-                    "before adding another workflow template."
-                ),
+                "title": "Small delivery moves that the practitioners emphasize",
+                "body": "Schedule access early, inspect actual work, validate priorities, and sell the business outcome.",
                 "items": [
-                    "Tag every API request and contractor time entry with customer, sprint, and workflow identifiers so support consumption cannot disappear into shared overhead.",
-                    "Archive each competitor pricing source with its capture date; rerun comparison calculators after a pricing change and suspend unsupported pages immediately.",
-                    "Use a retainer entitlement ledger for supported connectors, monthly review hours, and exception volume; price expansions before accepting their delivery work.",
-                    "Attach provision releases to closed incident records and completed service obligations; never count a bank-reserve transfer as an additional expense.",
-                ],
-            },
-        },
-        {
-            "heading": "3. Fund collection delays without mistaking credits or client principal for cash earnings",
-            "epistemic_status": "illustrative_model",
-            "paragraphs": [
-                (
-                    "Model liquidity by calendar date, not by annual margin. "
-                    "Here DSO means invoice issuance to customer payment, and "
-                    "the additional lock means customer payment to unrestricted "
-                    "bank availability; this definition prevents double-counting "
-                    "processor settlement days. Assume DSO of thirty, forty-five, "
-                    "and sixty days, followed by locks of seven, seven, and "
-                    "fourteen days. Funding the full annual expense budgets "
-                    "over those combined delays requires approximately $8,110, "
-                    "$54,849, and $121,644, using expense divided by 365 "
-                    "times thirty-seven, fifty-two, or seventy-four days. This "
-                    "conservative liquidity proxy treats the remediation allowance "
-                    "as future cash spending; it does not claim the provision "
-                    "is a cash payment when booked. Adding illustrative next-payroll "
-                    "and incident buffers of $10,000, $25,000, and $40,000 "
-                    "produces $18,110, $79,849, and $161,644 liquidity targets. "
-                    "Actual weekly forecasts must replace this steady-state "
-                    "proxy when milestones cluster. Negotiate a fifty-percent "
-                    "sprint deposit, invoice the balance against objective "
-                    "acceptance, and bill support in advance where contracts "
-                    "permit. Subtract only available cash after covering its "
-                    "associated obligations, not every dollar called a deposit. "
-                    "The $5,000-$60,000 startup capital range is therefore not "
-                    "automatically sufficient for Base or Scaled collection delays."
-                ),
-                (
-                    "The mapped play cloud_ai_startup_credit_aggregation_arbitrage "
-                    "must preserve genuine eligibility and separate normalized "
-                    "economics from temporary cash relief. The mapped "
-                    "$50,000-$350,000 credit thesis describes nominal promotional "
-                    "capacity, not cash, recognized agency revenue, or an "
-                    "entitlement to stack programs. Review current AWS Activate, "
-                    "Azure Founders Hub, Google Cloud for Startups, Cloudflare, "
-                    "OpenAI, and Anthropic program terms before applying; "
-                    "availability, eligible services, affiliations, and expiry "
-                    "differ. Delaware or Wyoming incorporation does not itself "
-                    "establish eligibility. Each applicant must represent a "
-                    "genuine standalone product and accurately disclose ownership "
-                    "and previous benefits. Do not create duplicate applicants "
-                    "to bypass program limits or resell raw API credentials. "
-                    "If confirmed credits offset $22,000 of Base's $27,500 "
-                    "normalized compute budget, current cash payments fall "
-                    "to $5,500, but the recurring scorecard still carries "
-                    "$27,500. Maintain a paid-price shadow ledger and a "
-                    "runway alarm ninety days before expiry. Benchmark a "
-                    "permitted Llama or DeepSeek deployment through vLLM as "
-                    "a fallback, including hardware, staffing, licensing, and "
-                    "quality costs. Shadow traffic and regression tests must "
-                    "precede migration; local hosting alone does not establish "
-                    "uninterrupted service or equivalent outputs."
-                ),
-                (
-                    "The mapped play agency_ad_spend_card_multiplier_rebate_cycling "
-                    "is acceptable only for genuine client-authorized advertising "
-                    "purchases under eligible payment arrangements and explicit "
-                    "reward-allocation terms. Treat the client's $100,000 media "
-                    "budget as principal handled for that client where the "
-                    "agency acts as agent, not as implementation revenue. "
-                    "Suppose an eligible arrangement yields a 1.5% reward, "
-                    "charges a two-percent processing cost, and requires "
-                    "thirty days of borrowing at twenty-percent annual interest. "
-                    "Rewards equal $1,500, processing costs equal $2,000, "
-                    "and simple interest equals approximately $1,644, leaving "
-                    "negative $2,144 before administration and any client "
-                    "pass-through obligation. A higher card limit does not "
-                    "repair this negative contribution. Recognize an agency "
-                    "benefit only when earned, contractually retained, and "
-                    "measured net of associated costs; the canonical scenarios "
-                    "include no incremental reward income. Never manufacture "
-                    "transactions, circulate funds, or increase advertising "
-                    "merely to qualify for rewards. Client-direct billing is "
-                    "the first fallback; prefunded approved agency terms are "
-                    "the second. Keep advertising principal and its settlement "
-                    "forecast separate from operating liquidity, because a "
-                    "disputed media invoice can otherwise consume the cash "
-                    "reserved for contractors and customer remediation."
-                ),
-            ],
-            "table": {
-                "caption": "Cash Availability, Settlement Locks, and Noncash Benefit Controls",
-                "headers": [
-                    "Liquidity exposure requiring an explicit operating assumption",
-                    "Calculation or balance supporting the operating decision",
-                    "Required evidence before treating funds as available",
-                    "Fallback when the expected funding source fails",
-                ],
-                "rows": [
-                    [
-                        "Conservative collection delay plus additional processor settlement lock",
-                        "$80,000 divided by 365 times 37 requires approximately $8,110",
-                        "Invoice aging and bank settlement exports substantiate actual availability",
-                        "Maintain approximately $18,110 including the separate $10,000 incident buffer",
-                    ],
-                    [
-                        "Base collection delay plus additional processor settlement lock",
-                        "$385,000 divided by 365 times 52 requires approximately $54,849",
-                        "Customer payment dates remain separate from unrestricted settlement dates",
-                        "Maintain approximately $79,849 including the separate $25,000 incident buffer",
-                    ],
-                    [
-                        "Scaled collection delay plus additional processor settlement lock",
-                        "$600,000 divided by 365 times 74 requires approximately $121,644",
-                        "Weekly treasury schedule includes contractor runs and customer disputes",
-                        "Maintain approximately $161,644 including the separate $40,000 incident buffer",
-                    ],
-                    [
-                        "Earned promotional compute benefits with limited eligible service coverage",
-                        "$22,000 eligible Base credits leave $5,500 current compute payments",
-                        "Provider award, service eligibility, remaining balance, and expiry reconcile",
-                        "Restore the full $27,500 paid-price budget before credits expire",
-                    ],
-                    [
-                        "Authorized advertising rewards after processing and borrowing deductions",
-                        "$1,500 rewards less $2,000 processing less $1,644 interest",
-                        "Client contract and issuer terms establish retained economic benefit",
-                        "Use client-direct payment rather than accepting negative $2,144 contribution",
-                    ],
-                    [
-                        "Customer deposits collected before completed delivery and fee recognition",
-                        "Three Base half-sprint deposits create $30,000 cash with obligations",
-                        "Service commitments and refund exposure determine genuinely available balances",
-                        "Do not subtract all deposits from the liquidity target automatically",
-                    ],
-                ],
-            },
-        },
-        {
-            "heading": "4. Stress the waterfall and close cash before committing the next sprint",
-            "epistemic_status": "operating_framework",
-            "paragraphs": [
-                (
-                    "Run sensitivity tests on separate tabs so the canonical "
-                    "scorecard never mutates into a more flattering forecast. "
-                    "A twenty-percent contractor overrun reduces annual profit "
-                    "by $6,000, $29,000, and $48,000, leaving $14,000, "
-                    "$136,000, and $352,000. A fifty-percent increase in "
-                    "normalized compute expense leaves $17,500, $151,250, "
-                    "and $380,000. A twenty-five-percent acquisition overspend "
-                    "leaves $17,000, $151,250, and $380,000, assuming the "
-                    "same customer count and production. Raising remediation "
-                    "cost by two percentage points of revenue leaves "
-                    "$18,000, $154,000, and $380,000. Combining those four "
-                    "shocks leaves only $6,500, $97,500, and $292,000. "
-                    "These calculations hold revenue constant and assume no "
-                    "overlapping charges; a lost customer or fee reversal "
-                    "requires a separate revenue bridge. Collection delays "
-                    "also remain separate: fifteen additional days require "
-                    "approximately $3,288, $15,822, and $24,658 more cash "
-                    "at baseline expense rates, without automatically changing "
-                    "profit. Interest changes profit only when borrowing is "
-                    "actually modeled. If Base DSO reaches ninety days "
-                    "while its seven-day lock persists, operating float "
-                    "becomes approximately $102,315 before the $25,000 buffer. "
-                    "Sales growth cannot cure that funding gap unless "
-                    "collection terms or available capital improve."
-                ),
-                (
-                    "Make access authorization and output quality measurable "
-                    "cost controls. Before estimating delivery hours, identify "
-                    "the client's system owner, permitted datasets, service "
-                    "accounts, retention requirements, and restrictions on "
-                    "subprocessors. Where California Civil Code 1798.100(d) "
-                    "applies, the relevant service-provider or contractor "
-                    "contract must address specified processing purposes and "
-                    "the required privacy obligations. Price those duties "
-                    "rather than attaching them after a fixed-fee sale. "
-                    "Use scoped OAuth permissions, a secrets manager, "
-                    "redacted operational logs, and per-customer storage "
-                    "boundaries; retain approval evidence without copying "
-                    "credentials into project documents. Consequential "
-                    "decisions require an assigned human reviewer and "
-                    "a funded exception queue. A loan application "
-                    "summarizer should route uncertain extraction to "
-                    "review rather than silently deciding eligibility. "
-                    "Measure field-level errors against a maintained "
-                    "evaluation set and charge expected review minutes "
-                    "to the delivery budget. Performance advertising "
-                    "also has an economic control: 15 U.S.C. 45 "
-                    "prohibits deceptive practices, so claims about saved "
-                    "hours or increased conversions need retained "
-                    "measurement evidence. If evidence weakens, narrow "
-                    "the claim and adjust the forecast. A fabricated "
-                    "efficiency claim can generate both acquisition "
-                    "waste and expensive remediation."
-                ),
-                (
-                    "Close the operating ledger every Friday and authorize "
-                    "owner distributions only against reconciled cash and "
-                    "remaining obligations. Begin with customer-level earned "
-                    "fees, then accrue completed contractor work even "
-                    "when an invoice has not arrived. Import usage "
-                    "charges, reconcile settlement holds, inspect overdue "
-                    "receivables, and update the remediation schedule. "
-                    "Maintain separate views for recognized operating "
-                    "profit, unrestricted bank cash, and forward cash "
-                    "commitments; none substitutes for another. The "
-                    "published $2,500-$18,000 monthly opex range should "
-                    "not be read as total spending at every scale: "
-                    "this waterfall implies average total deductions "
-                    "of approximately $6,667, $32,083, and $50,000 "
-                    "monthly, including variable delivery and reserves. "
-                    "For Base, the $75,000 annual fixed-overhead line "
-                    "averages $6,250 monthly, while the total expense "
-                    "load is much larger. Build a thirteen-week "
-                    "forecast with signed sprint starts, expected "
-                    "milestone acceptance dates, actual contractor "
-                    "payment terms, payroll dates, and service-credit "
-                    "expiry. Keep owner withdrawals outside operating "
-                    "expenses and display them as cash distributions. "
-                    "When the forecast breaches the required buffer, "
-                    "collect overdue invoices, renegotiate prospective "
-                    "terms, or defer new delivery commitments. Do "
-                    "not repair the spreadsheet by recognizing "
-                    "unearned deposits or borrowing client advertising "
-                    "principal."
-                ),
-            ],
-            "table": {
-                "caption": "Independent Downside Tests against the Unchanged Canonical Cases",
-                "headers": [
-                    "Stress assumption and controlled calculation basis",
-                    "Conservative resulting profit or incremental cash requirement",
-                    "Base resulting profit or incremental cash requirement",
-                    "Scaled resulting profit or incremental cash requirement",
-                ],
-                "rows": [
-                    [
-                        "Contractor expense increases twenty percent with unchanged earned fees",
-                        "$14,000 remaining profit after $6,000 additional contractor expense",
-                        "$136,000 remaining profit after $29,000 additional contractor expense",
-                        "$352,000 remaining profit after $48,000 additional contractor expense",
-                    ],
-                    [
-                        "Normalized compute expense increases fifty percent without promotional relief",
-                        "$17,500 remaining profit after $2,500 additional compute expense",
-                        "$151,250 remaining profit after $13,750 additional compute expense",
-                        "$380,000 remaining profit after $20,000 additional compute expense",
-                    ],
-                    [
-                        "Acquisition spending increases twenty-five percent with unchanged acquired customers",
-                        "$17,000 remaining profit after $3,000 additional acquisition expense",
-                        "$151,250 remaining profit after $13,750 additional acquisition expense",
-                        "$380,000 remaining profit after $20,000 additional acquisition expense",
-                    ],
-                    [
-                        "Remediation expense increases by two percentage points of revenue",
-                        "$18,000 remaining profit after $2,000 additional remediation expense",
-                        "$154,000 remaining profit after $11,000 additional remediation expense",
-                        "$380,000 remaining profit after $20,000 additional remediation expense",
-                    ],
-                    [
-                        "Combine preceding four expense shocks without duplicating their deductions",
-                        "$6,500 remaining profit after $13,500 combined additional expenses",
-                        "$97,500 remaining profit after $67,500 combined additional expenses",
-                        "$292,000 remaining profit after $108,000 combined additional expenses",
-                    ],
-                    [
-                        "Customer payment arrives fifteen days later at baseline expense rates",
-                        "$3,288 additional liquidity required before any borrowing interest",
-                        "$15,822 additional liquidity required before any borrowing interest",
-                        "$24,658 additional liquidity required before any borrowing interest",
-                    ],
-                ],
-            },
-            "callout": {
-                "kind": "OPERATOR GATE",
-                "title": "Verify capacity, authority, cash, and claims before scheduling delivery",
-                "body": (
-                    "Commit the next fixed-scope sprint only after all four "
-                    "checks have named owners and retained evidence."
-                ),
-                "items": [
-                    "Verify the statement of work identifies authorized systems, acceptance tests, data-processing terms, IP ownership, and the person responsible for consequential output review.",
-                    "Verify contractor hours, employee compensation, support commitments, and incident allowances fit the quoted cohort budget without assuming unpaid expansion work.",
-                    "Verify the thirteen-week forecast survives actual DSO, processor locks, payroll, and credit expiry while excluding client advertising principal from operating cash.",
-                    "Verify comparison claims, promotional-credit applications, and retained advertising rewards match source evidence, provider terms, and the customer's written agreement.",
+                    "Book the final presentation during onboarding and schedule interviewees together; Dunn reports audits waiting three weeks for one missing person. [Andrew Dunn | AI Consulting — LSmxwtNHu4k @ 00:06:31]",
+                    "Ask employees to screen-share their real steps and explain handoffs; Meyers finds actual work can contradict the written SOP. [Carly Meyers — stoZ9wFob2E @ 00:42:17]",
+                    "Use a bullet-list feasibility conversation before producing the finished deck; revise priorities while the plan is still easy to change. [Andrew Dunn | AI Consulting — LSmxwtNHu4k @ 00:10:24]",
+                    "Describe the future as qualified prospects ready each morning and research time returned to representatives, not as an explanation of APIs and language models. [Mert Yerlikaya — 1leregs81ik @ 00:06:25]",
                 ],
             },
             "sop_steps": [
                 {
                     "step": 1,
-                    "title": "Reconcile earned production",
-                    "action": "Match every recognized sprint and support account-month to its delivery record.",
-                    "detail": (
-                        "Tie acceptance evidence and service periods to invoice "
-                        "identifiers; separate advances, taxes, and client principal."
-                    ),
+                    "title": "Qualify, collect payment, and schedule",
+                    "action": "Confirm the commercial scope and organize leadership onboarding.",
+                    "detail": "Use budget, authority, need, and timing; secure signed scope and cleared money, identify the sponsor and organization, and book the final presentation while coordinating interviews. [Andrew Dunn | AI Consulting — LSmxwtNHu4k @ 00:05:27]",
                 },
                 {
                     "step": 2,
-                    "title": "Accrue the entire delivery obligation",
-                    "action": "Book completed contractor work, usage, review labor, and incident exposure.",
-                    "detail": (
-                        "Check that contractor invoices, employee allocations, "
-                        "and remediation charges do not duplicate one another."
-                    ),
+                    "title": "Interview and map actual work",
+                    "action": "Reconstruct the sequence behind the expensive bottleneck.",
+                    "detail": "Interview leadership and contributors, ask what happened yesterday, and map task time, software, handoffs, and blockages rather than accepting a generic description of the role. [Nick Puru | AI Automation — 7UpuiFHBvec @ 00:04:19]",
                 },
                 {
                     "step": 3,
-                    "title": "Refresh unrestricted cash availability",
-                    "action": "Rebuild the thirteen-week forecast using payment and settlement dates.",
-                    "detail": (
-                        "Show processor holds, payroll runs, customer obligations, "
-                        "compute-credit expiry, and available funding separately."
-                    ),
+                    "title": "Test feasibility and rank opportunities",
+                    "action": "Separate repeatable automation from judgment and low-value work.",
+                    "detail": "Check structured inputs, predictable outputs, rules, and repetition; place opportunities into quick wins, big swings, nice-to-haves, or high-difficulty work to deprioritize. [Andrew Dunn | AI Consulting — AG_L5ecwXkU @ 00:07:55]",
                 },
                 {
                     "step": 4,
-                    "title": "Authorize commitments from the stressed residual",
-                    "action": "Compare the combined downside case with cash buffers before distributing earnings.",
-                    "detail": (
-                        "Document the distribution amount, remaining obligations, "
-                        "next delivery commitments, and corrective action for any shortfall."
-                    ),
+                    "title": "Validate and present the business case",
+                    "action": "Resolve priorities before presenting the roadmap and implementation scope.",
+                    "detail": "Run the feasibility discussion before polishing the deck, then present the phased roadmap and implementation scope with the deposit request during the closing delivery phase. [Andrew Dunn | AI Consulting — LSmxwtNHu4k @ 00:10:24] [Andrew Dunn | AI Consulting — LSmxwtNHu4k @ 00:11:46]",
                 },
             ],
         },
+        {
+            "id": "alternative-playbooks",
+            "title": "Where Practitioners Disagree & Alternative Playbooks",
+            "paragraphs": [
+                (
+                    "There is no single audit size or mandatory route into the business. Carly Meyers "
+                    "promises clarity within five days and lets beginners start with roughly five free "
+                    "business audits, then $200 or $500 engagements before progressing toward "
+                    "$5,000–$10,000. Interview count and client size shape the package, and implementation "
+                    "can be outsourced or omitted from the consultant's own workload "
+                    "[stoZ9wFob2E @ 01:06:44]. Milan Tahliani takes the opposite presales position: never "
+                    "give away audits. Their earlier paid engagements were $1,000–$5,000 for one or two "
+                    "weeks maximum, while later pure-strategy work reached upwards of $25,000. They "
+                    "prefer flat fees tied to checkable deliverables but accept hourly work when "
+                    "the client prefers it and profitability remains intact [2goNKtgnIKg @ 00:10:58]. "
+                    "Liam Ottley's enterprise progression is different again: an initial free "
+                    "eight-week audit cost Morningside $30,000, the next engagement charged $30,000 "
+                    "over six weeks, and a subsequent engagement charged $60,000 over four weeks. "
+                    "Their smaller-business beta wanted immediate tools and ROI; larger organizations "
+                    "needed education, alignment, cultural planning, and accommodation of legacy "
+                    "systems [noivN2hIXLY @ 00:12:56]. Ottley does not present the enterprise engagement "
+                    "as effortless beginner work. The differences concern experience, organizational "
+                    "access, deliverables, and whether the initial audit is a learning investment "
+                    "or a paid standalone service."
+                ),
+                (
+                    "Automation inside the audit is another dividing line. Andrew Dunn rejects AI-voice "
+                    "substitutes for discovery interviews, arguing that they reduce effectiveness and "
+                    "the fees the consultant can command. Their analysis phase can still use AI: "
+                    "Consultics reportedly compresses production of maps, matrices, ROI models, and "
+                    "an initial deck to thirty to forty-five minutes [LSmxwtNHu4k @ 00:09:03]. The "
+                    "company in progress practitioner deliberately offers both self-service and "
+                    "consultant-led Orcus audits. A thirty-eight-question intake accepts uploads, "
+                    "transcripts, or spoken answers, then generates findings and opportunities. The "
+                    "speaker nevertheless says interviews create a more personalized, detailed plan "
+                    "than automatic generation [fSAazWLuDyQ @ 00:03:44]. Tool selection also separates "
+                    "the playbooks. Stefan emphasizes logic-first operational infrastructure rather "
+                    "than generic tools dropped into a fragmented business [NFQnvr9xNf8 @ 00:01:07]. "
+                    "Lobo Brother's evaluates employee adoption difficulty, not merely developer "
+                    "build difficulty, and uses a different traffic-light meaning: red can designate "
+                    "valuable structural work for later, rather than a low-value project to reject "
+                    "[dqDWqV07r6M @ 00:06:37]. Their green projects must justify investment before "
+                    "expensive builds proceed. These distinctions change the interview format, the "
+                    "implementation architecture, and the meaning of a roadmap label; identical "
+                    "colors or the shared word audit do not make the operating methods interchangeable."
+                ),
+                (
+                    "Visibility audits and finance procedures have different objects of inspection from "
+                    "an operational opportunity assessment. Clifford Almeida sells a $299–$999 visibility "
+                    "audit into a prioritized ninety-day plan, productized implementation, and monthly "
+                    "retainer. The work examines buyer-intent prompts across selected AI platforms: "
+                    "mentions, competing recommendations, cited sources, content, and technical "
+                    "foundations. Their generator creates twenty prompts, and the client selects, "
+                    "edits, or replaces ten before paying, preventing later arguments about whether "
+                    "the questions resemble real customer searches [tT1dV4_aC0M @ 00:19:56]. "
+                    "DataSnipper instead demonstrates Excel agents performing revenue testing, "
+                    "accounts-payable approval checks, control-report extraction, and bank "
+                    "reconciliation. The system uses documents, spreadsheet templates, specialized "
+                    "agent roles, and evidence snips; it is not simply a chatbot placed inside Excel. "
+                    "Planning mode helps organize work before execution, and existing document-reading "
+                    "and snipping capabilities remain available [fabs_LzN3oI @ 00:00:00]. Tom Hartnell's "
+                    "opportunity audit has a third deliverable: a prioritized inventory of workflow "
+                    "improvements followed by phased implementation. Their North Star Recruitment "
+                    "example is explicitly fictional, using screening, job-ad generation, scheduling, "
+                    "and candidate matching to demonstrate prioritization [WFW7vb6wXZM @ 00:07:17]. "
+                    "Almeida measures visibility around chosen prompts; DataSnipper inspects evidence "
+                    "against specified procedures; Hartnell maps where a business might improve. "
+                    "Each practitioner names a different decision the client or operator is trying to make."
+                ),
+            ],
+            "table": {
+                "caption": "Alternative offers and genuine differences in method, not a blended universal package.",
+                "headers": [
+                    "Choice that changes the engagement",
+                    "Practitioner position and contrasting mechanics",
+                    "Expert Source",
+                ],
+                "rows": [
+                    [
+                        "Use free practice audits or charge from the beginning",
+                        "Meyers allows roughly five free beginner audits; Tahliani says never give away audits during presales and favors paid discovery.",
+                        "Carly Meyers ([stoZ9wFob2E @ 01:06:44]); Milan Tahliani ([2goNKtgnIKg @ 00:16:08])",
+                    ],
+                    [
+                        "Preserve human interviews or offer automated self-service intake instead",
+                        "Dunn rejects AI-voice discovery substitutes; Orcus offers self-service while acknowledging that consultant-led interviews produce more personalized plans.",
+                        "Andrew Dunn | AI Consulting ([LSmxwtNHu4k @ 00:09:03]); company in progress ([fSAazWLuDyQ @ 00:03:44])",
+                    ],
+                    [
+                        "Choose ready-made tools or begin from custom operational infrastructure",
+                        "Ottley allows ready-made software to outperform custom builds; Stefan emphasizes operational logic before selecting technology for the bottleneck.",
+                        "Liam Ottley ([noivN2hIXLY @ 00:14:44]); Stefan | AI ([NFQnvr9xNf8 @ 00:01:07])",
+                    ],
+                    [
+                        "Evaluate adoption burden rather than assuming technical difficulty dominates",
+                        "Lobo Brother's scores employee adoption effort and reserves red for later structural work; Puru's money pits mean high difficulty with low value.",
+                        "Lobo Brother's | AI Systems for Business Owners ([dqDWqV07r6M @ 00:06:37]); Nick Puru | AI Automation ([7UpuiFHBvec @ 00:12:14])",
+                    ],
+                    [
+                        "Sell visibility research around questions that the buyer recognizes",
+                        "Almeida lets clients choose ten prompts before payment, then examines mentions, competitors, citations, content intelligence, and technical foundations.",
+                        "My Web Audit ([tT1dV4_aC0M @ 00:19:56])",
+                    ],
+                    [
+                        "Distinguish discovering automation opportunities from performing financial audit procedures",
+                        "DataSnipper demonstrates evidence-linked Excel procedures, while Hartnell's business audit produces a ranked opportunity inventory and implementation roadmap.",
+                        "DataSnipper ([fabs_LzN3oI @ 00:04:08]); Tom Hartnell ([WFW7vb6wXZM @ 00:00:00])",
+                    ],
+                ],
+            },
+        },
+        {
+            "id": "failure-modes",
+            "title": "Firsthand Failure Modes, Traps & Economics Checks",
+            "paragraphs": [
+                (
+                    "The expensive failure is often the selling model before it is the software. "
+                    "Milan Tahliani reports probably millions of dollars lost, unpaid work, and "
+                    "scope creep before adopting paid audits. Their corrective sequence limits "
+                    "unpaid presales, sells the diagnostic, presents findings, and then proposes "
+                    "development. A prospect refusing payment can indicate poor qualification, "
+                    "but Tahliani also tells the agency to inspect its own value and framing "
+                    "rather than automatically blaming the prospect [2goNKtgnIKg @ 00:09:22]. Carly "
+                    "Meyers describes an agency created by customer demand that eventually produced "
+                    "burnout and holiday interruptions. The two clients they wanted to retain "
+                    "had both completed audits, prompting the return to diagnostic selling "
+                    "[stoZ9wFob2E @ 00:13:56]. The Monk founders report twelve months of trending "
+                    "chatbots, cold outreach, volatile income, and little progress before "
+                    "repositioning around audits. Copied agency demos and no-code posts generated "
+                    "almost no buyer meetings; their later content emphasized distinctive "
+                    "identity, business problems, and outcomes [2CdNLDttOSg @ 00:28:37]. Andrew Dunn "
+                    "identifies a less glamorous bottleneck: poor scheduling can leave an audit "
+                    "waiting three weeks for one person, while replacement fears undermine "
+                    "cooperation and adoption [LSmxwtNHu4k @ 00:06:31]. These accounts locate "
+                    "friction in unpaid diagnosis, unclear boundaries, weak positioning, interview "
+                    "access, and employee expectations—not simply in the difficulty of building an agent."
+                ),
+                (
+                    "Keep sale prices, estimated benefits, pipeline, and delivered results in their "
+                    "original categories. Liam Ottley's free steel-company audit created fifteen "
+                    "opportunities and roughly $250,000 US of development pipeline. Their recommendation "
+                    "subset paired implementation cost with estimated savings and redeployed capacity; "
+                    "pipeline is not the same figure as collected implementation revenue "
+                    "[noivN2hIXLY @ 00:09:37]. Mert Yerlikaya's SDR example states two hours per "
+                    "representative daily, eight representatives, sixteen daily hours, $40 loaded "
+                    "hourly cost, $3,200 weekly cost, and over $166,000 annually. The same explanation "
+                    "also says eight hundred weekly hours, which conflicts with its stated weekly "
+                    "dollar total. Keep that mismatch visible rather than presenting all the "
+                    "figures as one reconciled calculation [1leregs81ik @ 00:05:28]. Nick Puru "
+                    "reports $215,500 impact, 166% first-year ROI, and 9.2-month payback for a "
+                    "property-management implementation, alongside figures whose units and totals "
+                    "are not consistently reconciled [7UpuiFHBvec @ 00:15:05]. Lobo Brother's "
+                    "Coastal Comfort portfolio is explicitly hypothetical: its hours, savings, "
+                    "recurring revenue, and $96,000 build cost illustrate an investment comparison "
+                    "rather than a realized client outcome [dqDWqV07r6M @ 00:10:47]. Each example "
+                    "has a stated role in the sale. Historical audit fees, projected implementation "
+                    "value, and modeled operating improvements are different entries in that business case."
+                ),
+                (
+                    "Production shortcuts still leave inspection work. The Orcus presenter questions "
+                    "an automatically generated quoting-engine timeline instead of accepting the "
+                    "estimate untouched. Their commercial description also contains conflicting "
+                    "self-service prices: an early $995 becomes repeated $9.95 references later, "
+                    "alongside $299 for platform access without a stated billing interval "
+                    "[fSAazWLuDyQ @ 00:15:25]. DataSnipper says its demonstrations assume data "
+                    "preparation has already happened: incoming listings may be incomplete or "
+                    "irrelevant, and documents must be reconciled before procedures. Operators "
+                    "can inspect evidence snips, interrupt execution, and review workpapers. "
+                    "The bank-reconciliation timing is described as twenty minutes and later "
+                    "fifteen, against an earlier two-hour task; the presenter emphasizes "
+                    "correctness, traceability, and unchanged human accountability "
+                    "[fabs_LzN3oI @ 00:24:43]. Clifford Almeida treats visibility scores as "
+                    "prompt-dependent baselines, not universal commercial targets. Changing a "
+                    "few words can substantially change results, and AI-assisted discovery may "
+                    "later appear as direct or branded organic traffic. Their reporting tracks "
+                    "visibility, clicks, and leads over time rather than promising a fixed "
+                    "lead uplift [tT1dV4_aC0M @ 00:45:36]. Almeida also reports that weak fresh "
+                    "content can briefly rank and then disappear within seven to fourteen days. "
+                    "Their response is stronger competitive content analysis and ongoing Client "
+                    "Reports, not rerunning the initial audit every month."
+                ),
+            ],
+            "table": {
+                "caption": "Reported losses, operational checks, and financial distinctions that affect delivery.",
+                "headers": [
+                    "Failure or economics check",
+                    "What the practitioner actually reports",
+                    "Expert Source",
+                ],
+                "rows": [
+                    [
+                        "Unpaid discovery can become expensive work before any development",
+                        "Tahliani reports probably millions lost alongside scope creep and unpaid work before adopting paid audits and bounded presales.",
+                        "Milan Tahliani ([2goNKtgnIKg @ 00:00:00])",
+                    ],
+                    [
+                        "A missing interview participant can derail the promised schedule",
+                        "Dunn reports waiting three weeks for one person and recommends setting expectations, coordinating interviews, and booking the final presentation early.",
+                        "Andrew Dunn | AI Consulting ([LSmxwtNHu4k @ 00:06:31])",
+                    ],
+                    [
+                        "A free first engagement still carries real delivery expenditure",
+                        "Ottley says the initial eight-week steel-company audit was free to the client but cost Morningside $30,000 to deliver.",
+                        "Liam Ottley ([noivN2hIXLY @ 00:03:53])",
+                    ],
+                    [
+                        "Conflicting weekly units should remain visible in the calculation",
+                        "Yerlikaya states sixteen daily hours, eight hundred weekly hours, $40 hourly cost, and $3,200 weekly cost without reconciling those figures.",
+                        "Mert Yerlikaya ([1leregs81ik @ 00:05:28])",
+                    ],
+                    [
+                        "Different spoken self-service prices cannot become one confirmed offer",
+                        "Orcus is initially described at $995 and later repeatedly at $9.95, with an additional $299 platform figure lacking a stated interval.",
+                        "company in progress ([fSAazWLuDyQ @ 00:03:05]); company in progress ([fSAazWLuDyQ @ 00:15:25])",
+                    ],
+                    [
+                        "Agent speed does not remove evidence preparation and review",
+                        "DataSnipper assumes preprocessing, exposes supporting evidence, and describes both twenty-minute and fifteen-minute bank reconciliation while retaining human accountability.",
+                        "DataSnipper ([fabs_LzN3oI @ 00:02:21]); DataSnipper ([fabs_LzN3oI @ 00:24:43])",
+                    ],
+                    [
+                        "Visibility movement must be interpreted through prompts and attribution",
+                        "Almeida says prompt wording can change results drastically and AI-assisted discovery may surface later as direct or branded organic traffic.",
+                        "My Web Audit ([tT1dV4_aC0M @ 00:45:36])",
+                    ],
+                ],
+            },
+            "callout": {
+                "kind": "OPERATOR GATE",
+                "title": "Checks before calling the diagnostic complete",
+                "body": "Use the practitioners' own delivery checks: access, validated priorities, usable evidence, and continued measurement.",
+                "items": [
+                    "Confirm interview access and expectations at onboarding; do not let the audit wait indefinitely for one participant while the final presentation remains unscheduled. [Andrew Dunn | AI Consulting — LSmxwtNHu4k @ 00:06:31]",
+                    "Challenge generated recommendations instead of shipping the first GPT output; Meyers describes that initial analysis as only about sixty percent of the work. [Carly Meyers — stoZ9wFob2E @ 00:46:37]",
+                    "Reconcile incomplete listings and supporting documents before running financial procedures, then inspect the resulting evidence and workpapers. [DataSnipper — fabs_LzN3oI @ 00:02:21] [DataSnipper — fabs_LzN3oI @ 00:07:21]",
+                    "Continue visibility work through Client Reports and MCP rather than rerunning the original audit monthly; track visibility, clicks, and leads instead of relying on a score alone. [My Web Audit — tT1dV4_aC0M @ 00:49:39]",
+                ],
+            },
+        },
     ],
-    "pull_quote": "A sprint earns its margin only when delivery is accrued, disputes are funded, and the cash is free of customer obligations.",
+    "pull_quote": (
+        "\"You are showing them their own decision in a nicer format.\" "
+        "— Andrew Dunn | AI Consulting (LSmxwtNHu4k @ 00:11:29)."
+    ),
     "diagram_id": "diag-03",
     "action_checklist": [
-        "Build the eight-, twenty-, and twenty-five-client cohort schedules and reconcile their sprint fees and support account-months to the three canonical revenue totals.",
-        "Implement the seven-deduction waterfall with separate contractor, compute, review, remediation, acquisition, collection, and fixed-overhead accounts.",
-        "Instrument customer-level usage and labor, then enforce the 37.5-, 72.5-, and 96-hour illustrative contractor allowances through written scope amendments.",
-        "Create distinct ledgers for service remediation, fee reversals, unearned deposits, settlement holds, and client advertising principal.",
-        "Fund the scenario-specific liquidity target from genuinely available resources and rerun the forecast with fifteen additional collection days and expired compute credits.",
-        "Retain comparison-page evidence, verified startup-credit terms, authorized advertising arrangements, and access permissions before accepting the next fixed-scope sprint.",
+        "Package a paid diagnostic with explicit outputs before proposing implementation; Antonio's entry offer is a collaborative visual roadmap rather than a long list of unused ideas. [Belt Course — YaFtlj9qXQc @ 00:02:04]",
+        "Run an introductory sales conversation without giving away the full diagnosis; the Monk founders use paid discovery to qualify commitment and align success metrics. [Liam Ottley — 2CdNLDttOSg @ 00:18:54]",
+        "Interview leadership and frontline staff separately, asking for concrete daily walkthroughs and the administrative work they want removed. [Lobo Brother's | AI Systems for Business Owners — dqDWqV07r6M @ 00:03:21]",
+        "Map the workflow, price the inefficiency, and describe the future outcome before presenting scope, matrix, roadmap, deep dives, and ROI. [Mert Yerlikaya — 1leregs81ik @ 00:07:31]",
+        "For a visibility offer, generate twenty candidate prompts and let the client select, edit, or replace ten before paying for the audit. [My Web Audit — tT1dV4_aC0M @ 00:19:56]",
+        "For Excel-based audit procedures, prepare the input listings and documents, specify the procedure, and review evidence-linked outputs rather than treating execution speed as the only result. [DataSnipper — fabs_LzN3oI @ 00:02:21] [DataSnipper — fabs_LzN3oI @ 00:24:43]",
     ],
     "statutory_citations": [
         {
-            "title": "15 U.S.C. 1125(a) — False designations and misleading commercial representations",
-            "url": "https://www.law.cornell.edu/uscode/text/15/1125",
-            "relevance": (
-                "Comparison pages must avoid misleading affiliation and false "
-                "commercial representations; nominative-use analysis depends on "
-                "applicable doctrine rather than a blanket statutory exemption."
-            ),
+            "title": "Belt Course — How to Sell AI Services with a Paid AI Business Audit (Step-by-Step Framework) [00:04:30]",
+            "url": "https://www.youtube.com/watch?v=YaFtlj9qXQc&t=270s",
+            "relevance": "Primary practitioner testimony on the intentionally small $1,500–$3,000 bronze audit entry offer.",
         },
         {
-            "title": "15 U.S.C. 45(a) — Unfair or deceptive acts or practices",
-            "url": "https://www.law.cornell.edu/uscode/text/15/45",
-            "relevance": (
-                "Retain evidence supporting advertised savings, conversion "
-                "improvements, and automation performance, and revise claims "
-                "when their factual basis changes."
-            ),
+            "title": "Andrew Dunn | AI Consulting — I've Completed 200+ AI Audits, Copy This 7 Step Process [00:10:24]",
+            "url": "https://www.youtube.com/watch?v=LSmxwtNHu4k&t=624s",
+            "relevance": "Primary practitioner testimony on validating feasibility and client priorities before polishing the final presentation.",
         },
         {
-            "title": "29 U.S.C. 206 — Minimum wage requirements",
-            "url": "https://www.law.cornell.edu/uscode/text/29/206",
-            "relevance": (
-                "Payroll feasibility must include applicable wage requirements "
-                "for covered workers rather than assuming scorecard headcount "
-                "can be supported by any arbitrary labor allocation."
-            ),
+            "title": "My Web Audit — How to sell AI visibility audits and turn them into recurring revenue for your agency [00:19:56]",
+            "url": "https://www.youtube.com/watch?v=tT1dV4_aC0M&t=1196s",
+            "relevance": "Primary practitioner testimony on collaborative prompt selection and the visibility-audit sales process.",
         },
         {
-            "title": "29 U.S.C. 207 — Maximum hours and overtime compensation",
-            "url": "https://www.law.cornell.edu/uscode/text/29/207",
-            "relevance": (
-                "Price applicable overtime for covered nonexempt employees "
-                "when delivery overruns or support incidents extend working hours."
-            ),
+            "title": "DataSnipper — AI Use Cases for Internal Audit, External Audit, Compliance | NYC Connect 226 [00:24:43]",
+            "url": "https://www.youtube.com/watch?v=fabs_LzN3oI&t=1483s",
+            "relevance": "Primary practitioner testimony on correctness, traceability, and human accountability when agents perform audit procedures.",
+        },
+    ],
+    "source_citations": [
+        {
+            "source_type": "video_pro_tip",
+            "video_id": "YaFtlj9qXQc",
+            "title": "How to Sell AI Services with a Paid AI Business Audit (Step-by-Step Framework)",
+            "channel": "Belt Course",
+            "author": "Belt Course",
+            "text": "Instead, offer a paid AI business audit as the entry point.",
+            "tip": "Instead, offer a paid AI business audit as the entry point.",
+            "timestamp": 46,
+            "timestamp_seconds": 46,
+            "timestamp_label": "[00:00:46]",
+            "url": "https://www.youtube.com/watch?v=YaFtlj9qXQc&t=46s",
+            "markdown": "[00:00:46](https://www.youtube.com/watch?v=YaFtlj9qXQc&t=46s)",
+            "epistemic_status": "attributed_practitioner_claim",
+            "relevance": "Verbatim practitioner testimony on paid diagnostic positioning for Chapter Q3.",
         },
         {
-            "title": "California Civil Code 1798.100(d) — Personal-information processing contracts",
-            "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=1798.100.&lawCode=CIV",
-            "relevance": (
-                "Where applicable, contracts governing disclosure to service "
-                "providers and contractors must specify processing purposes "
-                "and required privacy obligations, which affect scope and cost."
-            ),
+            "source_type": "video_pro_tip",
+            "video_id": "LSmxwtNHu4k",
+            "title": "I've Completed 200+ AI Audits, Copy This 7 Step Process",
+            "channel": "Andrew Dunn | AI Consulting",
+            "author": "Andrew Dunn | AI Consulting",
+            "text": "You are showing them their own decision in a nicer format.",
+            "tip": "You are showing them their own decision in a nicer format.",
+            "timestamp": 689,
+            "timestamp_seconds": 689,
+            "timestamp_label": "[00:11:29]",
+            "url": "https://www.youtube.com/watch?v=LSmxwtNHu4k&t=689s",
+            "markdown": "[00:11:29](https://www.youtube.com/watch?v=LSmxwtNHu4k&t=689s)",
+            "epistemic_status": "attributed_practitioner_claim",
+            "relevance": "Verbatim practitioner testimony on alignment before final audit presentation for Chapter Q3.",
+        },
+        {
+            "source_type": "video_pro_tip",
+            "video_id": "fSAazWLuDyQ",
+            "title": "I Built an AI Audit That Replaces a $50,000 Consultant",
+            "channel": "company in progress",
+            "author": "company in progress",
+            "text": "From the AI audit, we have the mechanism to automatically generate the implementation and build plan.",
+            "tip": "From the AI audit, we have the mechanism to automatically generate the implementation and build plan.",
+            "timestamp": 104,
+            "timestamp_seconds": 104,
+            "timestamp_label": "[00:01:44]",
+            "url": "https://www.youtube.com/watch?v=fSAazWLuDyQ&t=104s",
+            "markdown": "[00:01:44](https://www.youtube.com/watch?v=fSAazWLuDyQ&t=104s)",
+            "epistemic_status": "attributed_practitioner_claim",
+            "relevance": "Verbatim practitioner testimony on Orcus audit-to-build-plan generation for Chapter Q3.",
+        },
+        {
+            "source_type": "video_pro_tip",
+            "video_id": "noivN2hIXLY",
+            "title": "How to Perform a $60,000 AI Audit (Beginner’s Guide)",
+            "channel": "Liam Ottley",
+            "author": "Liam Ottley",
+            "text": "It cost us $30,000.",
+            "tip": "It cost us $30,000.",
+            "timestamp": 233,
+            "timestamp_seconds": 233,
+            "timestamp_label": "[00:03:53]",
+            "url": "https://www.youtube.com/watch?v=noivN2hIXLY&t=233s",
+            "markdown": "[00:03:53](https://www.youtube.com/watch?v=noivN2hIXLY&t=233s)",
+            "epistemic_status": "attributed_practitioner_claim",
+            "relevance": "Verbatim practitioner testimony on the delivery cost of Morningside's initial free audit for Chapter Q3.",
+        },
+        {
+            "source_type": "video_pro_tip",
+            "video_id": "stoZ9wFob2E",
+            "title": "Ditch the Broken Agency Model and Start Selling AI Audits (Part 1)",
+            "channel": "Carly Meyers",
+            "author": "Carly Meyers",
+            "text": "The idea of this interview is not to give them the answers.",
+            "tip": "The idea of this interview is not to give them the answers.",
+            "timestamp": 2537,
+            "timestamp_seconds": 2537,
+            "timestamp_label": "[00:42:17]",
+            "url": "https://www.youtube.com/watch?v=stoZ9wFob2E&t=2537s",
+            "markdown": "[00:42:17](https://www.youtube.com/watch?v=stoZ9wFob2E&t=2537s)",
+            "epistemic_status": "attributed_practitioner_claim",
+            "relevance": "Verbatim practitioner testimony on diagnostic interviewing rather than prescribing live for Chapter Q3.",
+        },
+        {
+            "source_type": "video_pro_tip",
+            "video_id": "fabs_LzN3oI",
+            "title": "AI Use Cases for Internal Audit, External Audit, Compliance | NYC Connect 226",
+            "channel": "DataSnipper",
+            "author": "DataSnipper",
+            "text": "Because human accountability doesn't change just because AI is doing most of the procedure.",
+            "tip": "Because human accountability doesn't change just because AI is doing most of the procedure.",
+            "timestamp": 1483,
+            "timestamp_seconds": 1483,
+            "timestamp_label": "[00:24:43]",
+            "url": "https://www.youtube.com/watch?v=fabs_LzN3oI&t=1483s",
+            "markdown": "[00:24:43](https://www.youtube.com/watch?v=fabs_LzN3oI&t=1483s)",
+            "epistemic_status": "attributed_practitioner_claim",
+            "relevance": "Verbatim practitioner testimony on responsibility during agent-assisted audit procedures for Chapter Q3.",
+        },
+        {
+            "source_type": "video_pro_tip",
+            "video_id": "7UpuiFHBvec",
+            "title": "How to Perform $100,000 AI Audits For Businesses (Complete Guide)",
+            "channel": "Nick Puru | AI Automation",
+            "author": "Nick Puru | AI Automation",
+            "text": "You need to put dollar amounts on everything.",
+            "tip": "You need to put dollar amounts on everything.",
+            "timestamp": 905,
+            "timestamp_seconds": 905,
+            "timestamp_label": "[00:15:05]",
+            "url": "https://www.youtube.com/watch?v=7UpuiFHBvec&t=905s",
+            "markdown": "[00:15:05](https://www.youtube.com/watch?v=7UpuiFHBvec&t=905s)",
+            "epistemic_status": "attributed_practitioner_claim",
+            "relevance": "Verbatim practitioner testimony on quantified opportunity assessment for Chapter Q3.",
+        },
+        {
+            "source_type": "video_pro_tip",
+            "video_id": "WFW7vb6wXZM",
+            "title": "How to Perform an AI Audit in 2026 (Step-by-Step Framework)",
+            "channel": "Tom Hartnell",
+            "author": "Tom Hartnell",
+            "text": "If we don't measure before and after, we can't see if we've actually implemented something successfully.",
+            "tip": "If we don't measure before and after, we can't see if we've actually implemented something successfully.",
+            "timestamp": 658,
+            "timestamp_seconds": 658,
+            "timestamp_label": "[00:10:58]",
+            "url": "https://www.youtube.com/watch?v=WFW7vb6wXZM&t=658s",
+            "markdown": "[00:10:58](https://www.youtube.com/watch?v=WFW7vb6wXZM&t=658s)",
+            "epistemic_status": "attributed_practitioner_claim",
+            "relevance": "Verbatim practitioner testimony on operational baselines and post-implementation measurement for Chapter Q3.",
+        },
+        {
+            "source_type": "video_pro_tip",
+            "video_id": "dqDWqV07r6M",
+            "title": "I Audited A $5M Business For AI. Here's What I Found",
+            "channel": "Lobo Brother's | AI Systems for Business Owners",
+            "author": "Lobo Brother's | AI Systems for Business Owners",
+            "text": "So, those two versions are almost never the same.",
+            "tip": "So, those two versions are almost never the same.",
+            "timestamp": 145,
+            "timestamp_seconds": 145,
+            "timestamp_label": "[00:02:25]",
+            "url": "https://www.youtube.com/watch?v=dqDWqV07r6M&t=145s",
+            "markdown": "[00:02:25](https://www.youtube.com/watch?v=dqDWqV07r6M&t=145s)",
+            "epistemic_status": "attributed_practitioner_claim",
+            "relevance": "Verbatim practitioner testimony on the difference between owner and employee accounts of operations for Chapter Q3.",
+        },
+        {
+            "source_type": "video_pro_tip",
+            "video_id": "NFQnvr9xNf8",
+            "title": "How to Execute $200K AI Audits for Businesses (Complete Framework)",
+            "channel": "Stefan | AI",
+            "author": "Stefan | AI",
+            "text": "There's a point where internal friction begins to outpace growth.",
+            "tip": "There's a point where internal friction begins to outpace growth.",
+            "timestamp": 26,
+            "timestamp_seconds": 26,
+            "timestamp_label": "[00:00:26]",
+            "url": "https://www.youtube.com/watch?v=NFQnvr9xNf8&t=26s",
+            "markdown": "[00:00:26](https://www.youtube.com/watch?v=NFQnvr9xNf8&t=26s)",
+            "epistemic_status": "attributed_practitioner_claim",
+            "relevance": "Verbatim practitioner testimony on operational complexity and infrastructure diagnosis for Chapter Q3.",
+        },
+        {
+            "source_type": "video_pro_tip",
+            "video_id": "tT1dV4_aC0M",
+            "title": "How to sell AI visibility audits and turn them into recurring revenue for your agency",
+            "channel": "My Web Audit",
+            "author": "My Web Audit",
+            "text": "I know there are some companies that wanna split that out, but I see AI visibility as just an extension of SEO.",
+            "tip": "I know there are some companies that wanna split that out, but I see AI visibility as just an extension of SEO.",
+            "timestamp": 2502,
+            "timestamp_seconds": 2502,
+            "timestamp_label": "[00:41:42]",
+            "url": "https://www.youtube.com/watch?v=tT1dV4_aC0M&t=2502s",
+            "markdown": "[00:41:42](https://www.youtube.com/watch?v=tT1dV4_aC0M&t=2502s)",
+            "epistemic_status": "attributed_practitioner_claim",
+            "relevance": "Verbatim practitioner testimony on the relationship between AI visibility and SEO for Chapter Q3.",
+        },
+        {
+            "source_type": "video_pro_tip",
+            "video_id": "AG_L5ecwXkU",
+            "title": "How to Perform a $15,000 AI Audit (Beginner’s Guide)",
+            "channel": "Andrew Dunn | AI Consulting",
+            "author": "Andrew Dunn | AI Consulting",
+            "text": "So, every outcome must include the current state, the target state, and the measurable delta between those two things.",
+            "tip": "So, every outcome must include the current state, the target state, and the measurable delta between those two things.",
+            "timestamp": 119,
+            "timestamp_seconds": 119,
+            "timestamp_label": "[00:01:59]",
+            "url": "https://www.youtube.com/watch?v=AG_L5ecwXkU&t=119s",
+            "markdown": "[00:01:59](https://www.youtube.com/watch?v=AG_L5ecwXkU&t=119s)",
+            "epistemic_status": "attributed_practitioner_claim",
+            "relevance": "Verbatim practitioner testimony on defining measurable audit outcomes for Chapter Q3.",
+        },
+        {
+            "source_type": "video_pro_tip",
+            "video_id": "2CdNLDttOSg",
+            "title": "How Two 19-Year-Olds Made $320K in 6 Months Selling AI Audits (Full Breakdown)",
+            "channel": "Liam Ottley",
+            "author": "Liam Ottley",
+            "text": "You listening to a business their problems and operations is actually your product.",
+            "tip": "You listening to a business their problems and operations is actually your product.",
+            "timestamp": 991,
+            "timestamp_seconds": 991,
+            "timestamp_label": "[00:16:31]",
+            "url": "https://www.youtube.com/watch?v=2CdNLDttOSg&t=991s",
+            "markdown": "[00:16:31](https://www.youtube.com/watch?v=2CdNLDttOSg&t=991s)",
+            "epistemic_status": "attributed_practitioner_claim",
+            "relevance": "Verbatim interview testimony on selling operational understanding as paid discovery for Chapter Q3.",
+        },
+        {
+            "source_type": "video_pro_tip",
+            "video_id": "HPGSE4LXaQA",
+            "title": "Don't Sell AI Workflows, Sell AI Audits (Massive Opportunity)",
+            "channel": "Andrew Dunn | AI Consulting",
+            "author": "Andrew Dunn | AI Consulting",
+            "text": "The exact same automation gets valued completely differently based on how you frame it.",
+            "tip": "The exact same automation gets valued completely differently based on how you frame it.",
+            "timestamp": 120,
+            "timestamp_seconds": 120,
+            "timestamp_label": "[00:02:00]",
+            "url": "https://www.youtube.com/watch?v=HPGSE4LXaQA&t=120s",
+            "markdown": "[00:02:00](https://www.youtube.com/watch?v=HPGSE4LXaQA&t=120s)",
+            "epistemic_status": "attributed_practitioner_claim",
+            "relevance": "Verbatim practitioner testimony on outcome-led positioning instead of standalone workflow sales for Chapter Q3.",
+        },
+        {
+            "source_type": "video_pro_tip",
+            "video_id": "1leregs81ik",
+            "title": "How I Sell $10,000 AI Audits (Our EXACT 5-Step Process)",
+            "channel": "Mert Yerlikaya",
+            "author": "Mert Yerlikaya",
+            "text": "You must explain the solution in terms of outcomes, not code.",
+            "tip": "You must explain the solution in terms of outcomes, not code.",
+            "timestamp": 385,
+            "timestamp_seconds": 385,
+            "timestamp_label": "[00:06:25]",
+            "url": "https://www.youtube.com/watch?v=1leregs81ik&t=385s",
+            "markdown": "[00:06:25](https://www.youtube.com/watch?v=1leregs81ik&t=385s)",
+            "epistemic_status": "attributed_practitioner_claim",
+            "relevance": "Verbatim practitioner testimony on presenting the future business outcome for Chapter Q3.",
+        },
+        {
+            "source_type": "video_pro_tip",
+            "video_id": "2goNKtgnIKg",
+            "title": "Why ALL AI Agencies Should Run AI Audits (And How To Do Them Properly!)",
+            "channel": "Milan Tahliani",
+            "author": "Milan Tahliani",
+            "text": "Never give away audits for free during pre-sales.",
+            "tip": "Never give away audits for free during pre-sales.",
+            "timestamp": 968,
+            "timestamp_seconds": 968,
+            "timestamp_label": "[00:16:08]",
+            "url": "https://www.youtube.com/watch?v=2goNKtgnIKg&t=968s",
+            "markdown": "[00:16:08](https://www.youtube.com/watch?v=2goNKtgnIKg&t=968s)",
+            "epistemic_status": "attributed_practitioner_claim",
+            "relevance": "Verbatim practitioner testimony on charging for discovery before development for Chapter Q3.",
         },
     ],
 }

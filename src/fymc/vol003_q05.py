@@ -1,152 +1,841 @@
-"""Volume 003: Digital Product Empire, chapter Q5."""
+from __future__ import annotations
 
 CHAPTER_5 = {
     "id": "Q5",
     "chapter_id": "Q5",
     "chapter_number": 5,
     "question_number": 5,
-    "slug": "experienced-operator-edge-vs-rookie-traps",
-    "question_prompt": "Q5: What Experienced Operators Know That Beginners Miss",
+    "slug": "payments-sales-tax-and-merchant-of-record-choices",
+    "question_prompt": "How do I compare payment processors and merchants of record, configure tax collection, and assess the migration risks discussed in these videos?",
     "kicker": "Q5 / THE BIG MONEY PLAYBOOKS",
-    "title": "What Experienced Operators Know That Beginners Miss",
-    "subtitle": "Stripe Dispute Ratios (<0.75%), Visa CE 3.0 Evidence Logs, Sales-Tax Nexus Traps, Group-Buy Piracy & Non-Buyer Traffic Monetization",
-    "layout_template": "expert_insights",
-    "reading_time_minutes": 14,
-    "executive_summary": "Experienced digital product operators protect the payment rail before buying more traffic. They distinguish historical dispute thresholds from current network rules, preserve usable transaction evidence, and map sales-tax exposure before payouts become spending money. They sell a bounded pilot before recording forty hours, investigate leaked files without accusing customers from weak matches, and give informational visitors an honest second destination. This chapter turns five rookie traps into measurable operating routines. Its three small-team scenarios separate gross billings from net contribution, include labor and loss allowances, and treat search-feed income and copyright recoveries as contingent additions rather than rescue assumptions.",
+    "title": "Payments, Sales Tax, and Merchant-of-Record Choices",
+    "subtitle": "Stripe Checkout and Managed Payments, Stripe Tax activation, Paddle and FastSpring comparisons, Lemon Squeezy reviews, and reported migration and license-key gaps",
+    "layout_template": "case_study",
+    "reading_time_minutes": 15,
+    "executive_summary": (
+        "The practitioners agree on the central trade: standard Stripe buys control, while a merchant of record takes over tax work for a higher fee. "
+        "HelperMan values the administrative relief after using both Lemon Squeezy and Paddle; SoloBuild compares their 5% plus 50-cent base pricing with Stripe's layered charges. "
+        "OCH Platform demonstrates separate Stripe Tax activation, and Stephen S. demonstrates Managed Payments checkout setup with a tax-classification requirement. "
+        "The disagreements concern coverage, total fees, product fit, and migration timing. "
+        "TechWealth Hub champions selective Managed Payments, while Captain Vova identifies coverage limits in the version they discuss. "
+        "Folioquest, heyymilian, and Gaurav Tiwari report Lemon Squeezy's March 31, 2027 shutdown; Gaurav prioritizes license keys, eligibility, and replacement links over promotional pricing."
+    ),
     "key_metrics": [
         {
-            "label": "Internal dispute ceiling",
-            "value": "<0.75%",
-            "context": "Early intervention target, not a universal Stripe or Visa safe harbor",
-            "note": "Investigate at 0.50%; reconcile current regional network counts and formulas separately."
+            "label": "Paddle pay-as-you-go base fee",
+            "metric": "Paddle pay-as-you-go base fee",
+            "value": "5% plus $0.50 per checkout transaction",
+            "confidence": "attributed_practitioner_claim",
+            "context": (
+                "SoloBuild says this plan has no monthly fee and includes tax handling, "
+                "fraud protection, subscriptions, and customer billing support."
+            ),
+            "source": "SoloBuild ([i05UCC3UvNY @ 00:05:19])",
         },
         {
-            "label": "Base quarterly contribution",
-            "value": "$159,375",
-            "context": "$425,000 gross billings less $265,625 modeled operating deductions",
-            "note": "37.5% net contribution before income tax; includes allocated labor, excludes sales tax."
+            "label": "Managed Payments domestic-card estimate",
+            "metric": "Managed Payments domestic-card estimate",
+            "value": "6.4% plus $0.30",
+            "confidence": "attributed_practitioner_claim",
+            "context": (
+                "heyymilian adds the stated standard domestic-card processing fee "
+                "and Managed Payments surcharge, explicitly describing the result as their arithmetic."
+            ),
+            "source": "heyymilian ([0R3CB1EcgKA @ 00:05:11])",
         },
         {
-            "label": "Illustrative non-buyers",
-            "value": "97%",
-            "context": "97,000 non-purchasing sessions from 100,000 sessions at 3% conversion",
-            "note": "Only a measured subset qualifies for an optional, provider-approved search-feed route."
-        }
+            "label": "Paddle payout minimum",
+            "metric": "Paddle payout minimum",
+            "value": "$100 minimum; monthly payout sent by the fifteenth",
+            "confidence": "attributed_practitioner_claim",
+            "context": (
+                "SoloBuild says the balance converts on the first and Paddle sends payment "
+                "by the fifteenth when the minimum has been reached."
+            ),
+            "source": "SoloBuild ([i05UCC3UvNY @ 00:05:36])",
+        },
+        {
+            "label": "Reported Lemon Squeezy processing cutoff",
+            "metric": "Reported Lemon Squeezy processing cutoff",
+            "value": "March 31, 2027, including subscription renewals",
+            "confidence": "attributed_practitioner_claim",
+            "context": (
+                "heyymilian reports that Lemon Squeezy's migration page gives this final "
+                "processing date and says extensions will not be offered."
+            ),
+            "source": "heyymilian ([0R3CB1EcgKA @ 00:00:00])",
+        },
     ],
     "sections": [
         {
-            "heading": "Trap 1: Treating the payment rail as an unlimited utility",
-            "epistemic_status": "operating_framework",
+            "id": "practitioner-consensus",
+            "title": "The Practitioner Consensus",
             "paragraphs": [
-                "A rookie watches revenue while the processor watches disputed transactions. Set an internal intervention level at 0.50% and a working ceiling below 0.75%, but never label either a universal Stripe allowance. The often repeated VDMP figures were historical Visa early warning at 0.75% with 75 disputes and standard monitoring at 0.90% with 100 disputes. Visa replaced that framework with VAMP; current regional thresholds, minimum counts, and fraud reporting change the calculation. Stripe can also intervene under its own risk assessment before a network threshold is reached. Keep a dated copy of the applicable processor rules and reconcile the network report rather than guessing from the storefront conversion report. Thirty disputes against 4,000 transactions produce 0.75% in a simple same-period ratio; that arithmetic alone does not establish entry into a specific monitoring program.",
-                "Build an evidence ledger before the first promotion. Link the payment identifier to the customer account, checkout description, policy version, receipt, login timestamps, IP address, device identifier where appropriately collected, entitlement issuance, and successful download events. Keep the product version and server response so a request for a broken file is not mislabeled delivery. Visa Compelling Evidence 3.0 is a specific eligibility route, not a magic name for screenshots. Its standard historical pattern requires two qualifying prior transactions on the same payment credential, generally 120 to 365 days before the disputed transaction, with prescribed matching data, including an IP address or device identifier. Confirm eligibility and required fields in Stripe's current submission workflow. A first-time buyer usually lacks that history; preserve ordinary delivery evidence without claiming CE 3.0 qualification from one login.",
-                "Route complaints by cause before arguing about intent. A duplicate charge, inaccessible download, or missed delivery belongs in a service correction queue; a documented unauthorized-payment allegation belongs in the relevant fraud workflow. State the purchased item, amount, date, delivery event, and remedy in one concise support response. Under 15 U.S.C. section 1666, qualifying billing-error notices trigger creditor procedures; this is not a merchant promise that every refund request has the same statutory deadline. Distinguish the customer's issuer rights from your published refund terms. Refund legitimate failures promptly, but reconcile an already disputed payment before issuing another credit. Winning a dispute does not generally erase its monitoring count. Review complaints by product, affiliate, and acquisition source every week, and reduce the misleading source rather than merely improving the evidence submitted after damage occurs."
+                (
+                    "Choose who carries the tax work before choosing the checkout skin. Tutorly separates standard Stripe Checkout from Paddle and Lemon Squeezy: "
+                    "Stripe processes the payment, while the other two become the legal seller and manage the associated tax responsibilities. The distinction matters "
+                    "because Tutorly's list of payment operations includes subscriptions, refunds, invoices, and obligations across countries, not merely a successful card charge. "
+                    "Their pitch for Stripe is customization and control; their pitch for a merchant of record is removing the administrative work that grows with international "
+                    "customers [IfaCBBIoVK0 @ 00:00:32]. SoloBuild makes the same distinction but adds a specific boundary around Stripe Tax: calculation and collection do not "
+                    "automatically include registration and filing. They place those services in Tax Complete, starting at $90 a month, and describe Managed Payments as Stripe's "
+                    "handled-for-you alternative [i05UCC3UvNY @ 00:01:53]. Hayes Tutorials lands on the same operational split: Stripe fits developers with tax handling already "
+                    "in place, Paddle fits B2B companies, and Lemon Squeezy fits independent creators. Their recommendation is not that every seller needs the same platform. "
+                    "It is that existing tax capability, customer type, and the desire to delegate determine which platform removes useful work. Across these comparisons, "
+                    "the cheapest processing headline and the smallest administrative workload are different purchasing decisions [mEXMrWuZFRQ @ 00:01:11]."
+                ),
+                (
+                    "The appeal of delegation is concrete in HelperMan's accounts of using both platforms for around six months. With Lemon Squeezy, they describe quick "
+                    "setup for digital products, subscriptions, and software without a complicated back end. The interface makes products, customers, subscriptions, and "
+                    "payouts straightforward to manage, while the merchant-of-record arrangement removes tax and payment administration. Their enthusiasm is specifically "
+                    "for solo founders and small creators who want to start selling rather than build payment infrastructure [IA4eosnOzIE @ 00:00:17]. With Paddle, HelperMan "
+                    "highlights recurring billing, upgrades, downgrades, and customer payment handling. They also describe the checkout as designed for online software "
+                    "rather than general retail. These are working conveniences, not a claim that outsourcing produces unlimited control: the same review says the additional "
+                    "services cost more than traditional processing and leave the seller with less direct control over payment and customer processes [o3KRrFnoAgM @ 00:00:48]. "
+                    "Calderon Bridger frames the choice as time versus money and, more sharply, one frustration versus another. Running the tax side yourself creates one "
+                    "kind of stress; accepting another platform's limits creates a different kind. Their conclusion is to match the tool to technical patience and the "
+                    "freedom the business actually wants. That matches HelperMan's experience: simplicity is valuable precisely because someone else controls part of "
+                    "the operation [k-wa2TZefr4 @ 00:02:30]."
+                ),
+                (
+                    "The bundled features explain why equal base fees do not make two platforms interchangeable. How2Genius describes Paddle as a combined checkout, "
+                    "payment, subscription, and tax system: it calculates sales tax, collects payment, and remits taxes for sales in the US, Canada, and other countries. "
+                    "Their practical attraction is a single platform instead of several tools, with one-time purchases, subscriptions, trials, and coupon codes supporting "
+                    "different product models [Y5VXhUB7aNM @ 00:00:18]. houdztech emphasizes the software-business side of that bundle: revenue recovery, subscription analytics "
+                    "through ProfitWell, dunning, and hybrid models combining self-served subscriptions with sales-led invoicing. In the same comparison, Lemon Squeezy is "
+                    "positioned around a simpler interface, email marketing, affiliates, and a no-code storefront rather than the same enterprise-oriented depth "
+                    "[Qq-EyvVj7IM @ 00:02:30]. Hayes Tutorials identifies license keys, affiliate networks, and email marketing as Lemon Squeezy's creator-oriented tools "
+                    "[mEXMrWuZFRQ @ 00:00:52]. Tutorly explains the operational benefit: an independent developer selling apps, plugins, or templates can manage sales, "
+                    "licensing, and basic marketing together instead of connecting multiple services. Their recommendation distinguishes established B2B software from "
+                    "smaller creator businesses. The shared baseline is therefore not merely outsourced tax. It is a payment arrangement whose billing, delivery, and "
+                    "marketing features fit the product being sold and the customers buying it [IfaCBBIoVK0 @ 00:03:01]."
+                ),
             ],
             "table": {
-                "caption": "Five forensic checks that expose fragile digital-product revenue",
-                "headers": ["Naive Trap", "Detection Metric", "Durable Operator Fallback"],
+                "caption": "The shared decision framework: responsibility first, then the work each bundle removes.",
+                "headers": [
+                    "Operating situation",
+                    "Practitioner-described fit",
+                    "Expert Source",
+                ],
                 "rows": [
-                    ["Scale through payment warnings", "Disputes, fraud reports, and network-specific ratios by source", "Repair claims and delivery; preserve eligible CE 3.0 evidence"],
-                    ["Assume Stripe settles sales tax", "State threshold proximity and unregistered taxable exposure", "Maintain nexus ledger or contract with a suitable merchant of record"],
-                    ["Record forty hours before selling", "Paid pilot deposits and contribution per delivery hour", "Sell one bounded outcome with a clear delivery date"],
-                    ["Accuse every pHash match of piracy", "Human-confirmed unauthorized copies divided by candidate matches", "Corroborate ownership and URL evidence before a targeted notice"],
-                    ["Discard every non-buying visitor", "Incremental net yield and lost product contribution per eligible session", "Test an optional approved search route against a holdout"]
-                ]
-            }
+                    [
+                        "A developer already handles taxes and wants a customizable payment experience.",
+                        "Hayes positions standard Stripe Checkout around lower starting fees and developer control.",
+                        "Hayes Tutorials ([mEXMrWuZFRQ @ 00:00:14])",
+                    ],
+                    [
+                        "A solo creator wants products and subscriptions running without a complicated backend.",
+                        "HelperMan describes Lemon Squeezy setup and administration as straightforward during their use.",
+                        "HelperMan ([IA4eosnOzIE @ 00:00:17])",
+                    ],
+                    [
+                        "A software seller wants recurring billing changes handled within the payment platform.",
+                        "HelperMan praises Paddle's management of recurring charges, upgrades, downgrades, and customer payments.",
+                        "HelperMan ([o3KRrFnoAgM @ 00:00:48])",
+                    ],
+                    [
+                        "A B2B software business needs enterprise contracts and more complex billing arrangements.",
+                        "Tutorly identifies Paddle's enterprise contracts, subscription adjustments, and wire transfers as useful.",
+                        "Tutorly ([IfaCBBIoVK0 @ 00:02:28])",
+                    ],
+                    [
+                        "A creator wants licensing and basic marketing alongside the payment collection system.",
+                        "Hayes identifies Lemon Squeezy's built-in license keys, affiliate networks, and email marketing.",
+                        "Hayes Tutorials ([mEXMrWuZFRQ @ 00:00:52])",
+                    ],
+                    [
+                        "A founder must choose between tax administration and another platform's operational limits.",
+                        "Calderon describes distinct frustrations from personal tax responsibility and restricted platform control.",
+                        "Calderon Bridger ([k-wa2TZefr4 @ 00:02:30])",
+                    ],
+                ],
+            },
         },
         {
-            "heading": "Trap 2: Confusing payment processing with sales-tax responsibility",
-            "epistemic_status": "operating_framework",
+            "id": "street-mechanics",
+            "title": "Exact Street Mechanics, Tools & Numbers",
             "paragraphs": [
-                "Stripe processing does not automatically make Stripe the merchant of record for your direct sales. In the ordinary self-clearing arrangement, your business remains the seller responsible for determining registrations, taxable products, collection, and remittance. South Dakota v. Wayfair, 585 U.S. 162 (2018), rejected the physical-presence rule; it did not enact one national economic-nexus threshold. The South Dakota law examined in the decision used more than $100,000 in sales or 200 or more transactions. Do not copy those historical numbers into every state: transaction-count tests have been removed in multiple jurisdictions, including South Dakota, and thresholds, measurement periods, and included sales differ. A cheap template can cross a surviving transaction threshold without producing meaningful profit. Physical presence can also create obligations below economic thresholds, so record team and business locations alongside customer destinations.",
-                "Maintain one dated jurisdiction worksheet with customer location evidence, gross sales, taxable sales, transaction count where applicable, measurement window, threshold source, registration status, and filing cadence. Separate downloadable templates, recorded education, live instruction, memberships, and software because product classification can change the answer. Track exempt and marketplace sales according to each state's threshold rules instead of deleting them automatically. Run monthly reviews and internal alerts at 80% of the applicable threshold; that percentage is a planning buffer, not statutory relief. If sales are accelerating, review weekly and establish the collection start date from the governing rule. Reconcile collected tax as a liability, not revenue. A $100 sale plus $8 collected tax creates $100 of product billings and $8 owed onward, not $108 available to cover advertising or owner distributions next week.",
-                "Compare a merchant of record with direct processing on responsibilities and contribution, not the advertised fee alone. Obtain the contract identifying the actual seller, covered countries, supported product categories, refund allocation, dispute handling, tax remittance, payout timing, and reserve rights. A tax calculation tool is not necessarily registration or filing, and none of those services automatically creates an MoR relationship. Moving future sales to an MoR does not erase historical liabilities from direct sales. Model the extra provider charge against avoided filing expense, staff time, and operational mistakes, while keeping income tax and entity obligations separate. For international sales, assess destination VAT or GST independently of United States state nexus. The experienced operator can explain who owes each tax on each channel and show a reconciled ledger rather than pointing at a processor logo."
+                (
+                    "Build the price comparison from the layers the speakers actually name. SoloBuild quotes standard Stripe domestic US cards at 2.9% plus 30 cents, "
+                    "with 1.5% added for international cards and another 1% for currency conversion. They also name a $15 dispute charge and free standard payouts. "
+                    "Their subscription comparison adds the no-code Stripe Tax charge of 0.5% where registered and Stripe Billing at 0.7% of billing volume, producing "
+                    "their rough 4.1% plus 30-cent US subscription estimate [i05UCC3UvNY @ 00:02:42]. Tutorly quotes Paddle's base at 5% plus 50 cents and presents it "
+                    "as payment for the merchant-of-record arrangement, not just another card-processing rate [IfaCBBIoVK0 @ 00:02:12]. SoloBuild then models forty monthly "
+                    "sales of a $50 product on US cards: approximately $80 for standard Stripe with Stripe Tax, $120 for Lemon Squeezy or Paddle, and $140 for Managed "
+                    "Payments. They call the approximately $40 monthly handoff gap worth comparing with filing time and accountant costs [i05UCC3UvNY @ 00:06:42]. "
+                    "heyymilian separately calculates 6.4% plus 30 cents for Managed Payments and 3.4% plus 30 cents for a build using Tax Basic. Those figures concern "
+                    "their stated domestic-card comparison; SoloBuild's subscription stack includes the separately named Billing layer [0R3CB1EcgKA @ 00:05:11]."
+                ),
+                (
+                    "OCH Platform's activation sequence is specific: first have a connected, active Stripe account, then activate Stripe Tax in the Stripe dashboard. "
+                    "Activating Stripe itself is not enough. Inside the course platform, open the admin section, choose integrations, find Stripe Tax, and toggle it on. "
+                    "Next choose tax behavior: inclusive puts tax inside the displayed price, while exclusive adds it on top at checkout. The speaker also describes "
+                    "tax ID collection for business buyers, allowing the checkout to request a business name and tax ID. After configuring those options, hit activate "
+                    "and inspect the checkout page [H8_HQ-GZOwc @ 00:00:17]. The operational boundary appears in the same walkthrough: customers must enter an address "
+                    "so tax can be calculated, and tax will not appear on checkout pages or invoices unless the seller is registered in the specific tax jurisdiction. "
+                    "The visible checkout result therefore depends on more than finding the toggle in the integrations screen [H8_HQ-GZOwc @ 00:01:26]. SoloBuild's "
+                    "distinction completes this workflow without turning the switch into a different service: Stripe Tax can calculate and collect while the standard "
+                    "Stripe seller remains responsible for the tax side. Their Tax Complete discussion separately names registration and filing and its $90 monthly "
+                    "starting price. The activation demonstration and the responsibility comparison describe different parts of the same operating choice [i05UCC3UvNY @ 00:01:53]."
+                ),
+                (
+                    "Stephen S. demonstrates Managed Payments from an existing Astro application rather than an empty product catalog. Their site already has pricing, "
+                    "but its buttons do not yet open checkout. They install the Stripe Payments power in the IDE, authenticate the Stripe MCP against their sandbox "
+                    "account, and ask the tool to create products and pricing matching the website. Their prompt also adds Managed Payments requirements because the "
+                    "feature is newer. The resulting setup contains free, pro, and enterprise prices [F-WZgXuQIuQ @ 00:00:29]. The checkout uses a Managed Payments "
+                    "preview API version, subscription mode, and Managed Payments enabled. After setting the environment variable, Stephen opens the pro checkout. "
+                    "The first attempt also requires account setup and the correct product tax classification; their example is software as a service for personal "
+                    "use. Stephen explicitly says backend webhooks are not connected yet and describes associating a user object with checkout so subscription webhook "
+                    "records can later be linked [F-WZgXuQIuQ @ 00:03:38]. TechWealth Hub gives the short version: enable Managed Payments in the checkout session "
+                    "and Stripe takes the merchant-of-record role. Their demonstration shows a $29 monthly checkout marked sold through Link. Stephen's account "
+                    "supplies the setup work and unfinished backend boundary behind that compact enablement pitch [KRdWGDk-GkY @ 00:01:33]."
+                ),
             ],
+            "table": {
+                "caption": "Quoted pricing layers and demonstrated configuration steps, kept in their stated contexts.",
+                "headers": [
+                    "Layer or operation",
+                    "Exact reported number or execution detail",
+                    "Expert Source",
+                ],
+                "rows": [
+                    [
+                        "Standard Stripe processing for the domestic US card case SoloBuild describes.",
+                        "The stated base is 2.9% plus 30 cents before the separately named additions.",
+                        "SoloBuild ([i05UCC3UvNY @ 00:02:42])",
+                    ],
+                    [
+                        "Tax and recurring-billing additions in SoloBuild's standard Stripe subscription comparison.",
+                        "No-code Tax adds 0.5%; Billing adds 0.7% of the stated billing volume.",
+                        "SoloBuild ([i05UCC3UvNY @ 00:03:08])",
+                    ],
+                    [
+                        "Managed Payments surcharge rather than the complete underlying Stripe processing charge.",
+                        "SoloBuild reports an additional 3.5% per successful transaction on top of standard fees.",
+                        "SoloBuild ([i05UCC3UvNY @ 00:05:58])",
+                    ],
+                    [
+                        "Course-platform configuration after connecting and activating the seller's existing Stripe account.",
+                        "Activate Stripe Tax in Stripe, then enable its integration inside the course platform.",
+                        "OCH Platform ([H8_HQ-GZOwc @ 00:00:17])",
+                    ],
+                    [
+                        "Customer information and registration conditions for the demonstrated course checkout tax display.",
+                        "Buyers provide addresses, and tax display depends on registration in that specific jurisdiction.",
+                        "OCH Platform ([H8_HQ-GZOwc @ 00:01:26])",
+                    ],
+                    [
+                        "The first Managed Payments checkout attempt in Stephen's existing application demonstration.",
+                        "Account setup required the correct tax classification before the checkout API would work.",
+                        "Stephen S. ([F-WZgXuQIuQ @ 00:03:38])",
+                    ],
+                ],
+            },
+            "callout": {
+                "kind": "INSIDER PRO-TIPS",
+                "title": "Use the details hidden behind the headline rate",
+                "body": (
+                    "The speakers' useful shortcuts concern the work included, the setup "
+                    "that remains, and the dependencies that survive a platform change."
+                ),
+                "items": [
+                    (
+                        "Price your own filing time and accountant costs against the handoff premium: "
+                        "SoloBuild's forty-sales example puts the Stripe-with-Tax versus Lemon Squeezy/Paddle "
+                        "gap at about $40 monthly, or $480 yearly. "
+                        "[SoloBuild — i05UCC3UvNY @ 00:07:02]"
+                    ),
+                    (
+                        "For products under $10, use Paddle's custom-pricing conversation rather than "
+                        "assuming its quoted pay-as-you-go rate is the only arrangement. "
+                        "[SoloBuild — i05UCC3UvNY @ 00:05:19]"
+                    ),
+                    (
+                        "Do not treat an active Stripe connection as Stripe Tax activation: turn on "
+                        "Stripe Tax in the dashboard and then its course-platform integration. "
+                        "[OCH Platform — H8_HQ-GZOwc @ 00:00:17]"
+                    ),
+                    (
+                        "Let existing license keys drive the migration decision before fees, and keep "
+                        "the customer list, license server, and checkout links in your own hands. "
+                        "[Gaurav Tiwari — cNc29NtuCYU @ 00:04:07]"
+                    ),
+                ],
+            },
+            "sop_steps": [
+                {
+                    "step": 1,
+                    "title": "Choose the responsibility model",
+                    "action": "Start with buyer geography, tax workload, and the extras the business needs.",
+                    "detail": (
+                        "SoloBuild orders the decision around where buyers live, how much tax paperwork "
+                        "the seller will own, and whether storefront, affiliate, or billing-support features "
+                        "matter. Their standard Stripe recommendation differs from their international "
+                        "merchant-of-record recommendation. [SoloBuild — i05UCC3UvNY @ 00:07:44]"
+                    ),
+                },
+                {
+                    "step": 2,
+                    "title": "Activate the demonstrated Stripe Tax path",
+                    "action": "Enable Stripe Tax and configure the course-platform integration.",
+                    "detail": (
+                        "With Stripe connected and active, enable Stripe Tax in its dashboard; open course "
+                        "admin integrations, choose inclusive or exclusive behavior, enable tax ID collection "
+                        "if needed, activate, and inspect checkout. OCH also says tax display requires registration "
+                        "in the applicable jurisdiction. [OCH Platform — H8_HQ-GZOwc @ 00:01:26] "
+                        "[OCH Platform — H8_HQ-GZOwc @ 00:01:44]"
+                    ),
+                },
+                {
+                    "step": 3,
+                    "title": "Wire the demonstrated Managed Payments checkout",
+                    "action": "Use existing application pricing to create products, prices, and checkout.",
+                    "detail": (
+                        "Stephen installs the Stripe power, authenticates its MCP connection to their account, "
+                        "and asks the IDE to build the pricing and subscription structure already displayed "
+                        "on the website. Their demonstration requires product tax classification and leaves "
+                        "backend webhook connections unfinished. [Stephen S. — F-WZgXuQIuQ @ 00:04:20] "
+                        "[Stephen S. — F-WZgXuQIuQ @ 00:03:38]"
+                    ),
+                },
+                {
+                    "step": 4,
+                    "title": "Execute Gaurav's migration order",
+                    "action": "Export, stop new PayPal subscriptions, test the replacement, replace links, and notify buyers.",
+                    "detail": (
+                        "Gaurav's sequence is to export customers, orders, subscriptions, and license keys; "
+                        "turn PayPal off at checkout so new subscribers can migrate; set up the new provider "
+                        "in test mode; replace every link; and email customers about the new card-statement name. "
+                        "[Gaurav Tiwari — cNc29NtuCYU @ 00:03:50]"
+                    ),
+                },
+            ],
+        },
+        {
+            "id": "disagreements-alternatives",
+            "title": "Where Practitioners Disagree & Alternative Playbooks",
+            "paragraphs": [
+                (
+                    "Managed Payments receives very different verdicts because the speakers describe different availability and coverage claims. TechWealth Hub presents it "
+                    "as available in public preview, with full merchant-of-record support and selective use by transaction. Their recommendation is enthusiastic: an existing "
+                    "Stripe user can add the role without moving to another platform, while a new software business can start with Stripe and enable it where needed "
+                    "[KRdWGDk-GkY @ 00:04:13]. Captain Vova describes a narrower offering: Europe, the US, Canada, and the UK are covered in the documentation they discuss, "
+                    "while Australia, India, and other locations remain outside that tax coverage. They explicitly reject treating that version as full global sales-tax "
+                    "coverage [5zGuxRrg_O0 @ 00:00:45]. heyymilian discusses another boundary: the seller must be based in a supported location, and the supported product "
+                    "categories are digital products rather than physical goods, professional services, or live in-person events. That is a business-eligibility question, "
+                    "not the same question as where buyers are taxed [0R3CB1EcgKA @ 00:02:54]. Tutorly's alternative framework stays centered on business fit: standard "
+                    "Stripe for control and existing tax handling, Paddle for B2B, and Lemon Squeezy for creators. These accounts do not support treating a broad launch "
+                    "pitch as a universal answer about every seller, product, and market [IfaCBBIoVK0 @ 00:03:32]."
+                ),
+                (
+                    "The fee accounts also disagree, and the disagreement changes what a comparison means. Yumi Kato Reviews first quotes Lemon Squeezy at 5% plus "
+                    "50 cents, then says adding Stripe processing puts a referenced table near 7.9% plus a flat charge. They additionally report that Lemon Squeezy "
+                    "refunds its platform fee when a buyer receives a refund [jwFYqAi_nQY @ 00:00:47]. SoloBuild describes a different structure: the 5% plus 50-cent "
+                    "transaction rate, with named extras of 1.5% for international transactions, 1.5% for PayPal, and 0.5% for subscription payments. They also distinguish "
+                    "payout costs, describing free US bank payouts and 1% for bank accounts outside the US [i05UCC3UvNY @ 00:03:53]. heyymilian's November 23, 2026 "
+                    "price capture likewise starts Lemon Squeezy at 5% plus 50 cents with small additional fees in edge cases, while explicitly describing Managed "
+                    "Payments as a surcharge in addition to processing. Their migration promotion is another separate price, not the permanent standard rate "
+                    "[0R3CB1EcgKA @ 00:04:18]. HelperMan offers the useful business test without settling those conflicting totals: decide whether simpler administration "
+                    "and tax handling are worth the extra fees for the actual business model. Their positive six-month verdict still leaves growing businesses wanting "
+                    "more advanced control. A favorable simplicity review and an attractive headline rate are not the same evaluation [IA4eosnOzIE @ 00:01:52]."
+                ),
+                (
+                    "Alternative playbooks turn on the feature that cannot disappear during the move. How2Genius prefers Paddle for quick setup and easy subscriptions, "
+                    "but describes FastSpring as the stronger customization route: branded storefronts and checkout, upsells, bundles, localized pricing, flexible billing, "
+                    "and international payment support. Their comparison does not reduce international selling to a tax toggle; it includes the selling experience and "
+                    "the tools around it [Y5VXhUB7aNM @ 00:02:11]. Gaurav Tiwari starts elsewhere when existing customers already hold license keys. They put Dodo "
+                    "Payments first for importing active Lemon Squeezy keys alongside products, customers, and coupons, quoting 4% plus 40 cents, PayPal support, and "
+                    "acceptance of businesses in India. The tradeoff is explicit: imported keys lose their activations, and the migration tool is still in beta. "
+                    "Their lower-flat-fee alternative is Creem at 3.9% plus 40 cents without an international-card extra [cNc29NtuCYU @ 00:02:14]. Gaurav then attaches "
+                    "the missing pieces: Creem has no PayPal and does not move active subscriptions; Polar's free plan matches Lemon Squeezy's rate, while its $20 "
+                    "plan drops to 3.8% plus 40 cents; Paddle supports PayPal but has no license keys. For WordPress products they name Freemius for licensing and "
+                    "updates, while explicitly saying they have not sold through it themselves [cNc29NtuCYU @ 00:02:50]."
+                ),
+            ],
+            "table": {
+                "caption": "Keep conflicting claims and alternative feature bundles separate rather than merging them.",
+                "headers": [
+                    "Position or alternative",
+                    "Contrasting claim or attached limitation",
+                    "Expert Source",
+                ],
+                "rows": [
+                    [
+                        "TechWealth Hub promotes selective Managed Payments with broad merchant-of-record support in public preview.",
+                        "Captain Vova describes limited geographic tax coverage in the version they discuss.",
+                        "TechWealth Hub ([KRdWGDk-GkY @ 00:04:13]); Captain Vova (Vova Feldman) ([5zGuxRrg_O0 @ 00:00:45])",
+                    ],
+                    [
+                        "Yumi adds Stripe processing and describes a Lemon Squeezy total near 7.9%.",
+                        "SoloBuild instead quotes the base and explicitly named international, PayPal, and subscription additions.",
+                        "Yumi Kato Reviews ([jwFYqAi_nQY @ 00:00:47]); SoloBuild ([i05UCC3UvNY @ 00:03:53])",
+                    ],
+                    [
+                        "How2Genius favors Paddle for quick setup and straightforward subscription and tax administration.",
+                        "FastSpring receives their recommendation for greater checkout control, pricing flexibility, and international expansion.",
+                        "How2Genius ([Y5VXhUB7aNM @ 00:03:07])",
+                    ],
+                    [
+                        "Gaurav prioritizes Dodo when customers already possess active Lemon Squeezy license keys.",
+                        "They report imported keys lose activations and the migration tool remains in beta.",
+                        "Gaurav Tiwari ([cNc29NtuCYU @ 00:02:14]); Gaurav Tiwari ([cNc29NtuCYU @ 00:02:30])",
+                    ],
+                    [
+                        "Gaurav quotes Creem at 3.9% plus 40 cents without an international-card extra.",
+                        "Their comparison also says Creem lacks PayPal and cannot move active subscriptions.",
+                        "Gaurav Tiwari ([cNc29NtuCYU @ 00:02:30]); Gaurav Tiwari ([cNc29NtuCYU @ 00:02:50])",
+                    ],
+                    [
+                        "Tutorly presents Paddle's enterprise contracts and wire transfers as useful B2B capabilities.",
+                        "How2Genius emphasizes FastSpring's branded storefronts, bundles, upsells, and localized pricing capabilities instead.",
+                        "Tutorly ([IfaCBBIoVK0 @ 00:02:28]); How2Genius ([Y5VXhUB7aNM @ 00:02:11])",
+                    ],
+                ],
+            },
+        },
+        {
+            "id": "failure-modes",
+            "title": "Firsthand Failure Modes, Traps & Economics Checks",
+            "paragraphs": [
+                (
+                    "The strongest firsthand constraints concern access and operating control, not a reported windfall. HelperMan says Paddle account approvals and reviews "
+                    "can take time, particularly for new businesses or unusual models. Their advice after using it is to understand how the merchant-of-record model "
+                    "changes payments, taxes, and customer billing before choosing it. They still value the service, but their experience does not describe immediate "
+                    "entry or unrestricted control [o3KRrFnoAgM @ 00:01:38]. Gaurav Tiwari identifies a direct migration blocker: they sell plugins from India, and say "
+                    "the Managed Payments replacement is not available to their business there. Their $99-sale comparison also reverses the initial price advantage: "
+                    "they quote $5.45 for Lemon Squeezy, $4.66 on Stripe's migration rate, and $6.64 after that rate expires on December 1, 2027 "
+                    "[cNc29NtuCYU @ 00:01:33]. Gaurav's own checkout experience is different: they sell plugins through FluentCart and also name Easy Digital Downloads "
+                    "and their own Core Forms. None of those, they say, imports from Lemon Squeezy, leaving a manual move [cNc29NtuCYU @ 00:03:31]. Yumi's "
+                    "suspension example is not their own operating loss: they recount another seller's sudden high-risk suspension after a month and slow support. "
+                    "That distinction keeps a reported customer complaint separate from HelperMan's use and Gaurav's business situation [jwFYqAi_nQY @ 00:01:39]."
+                ),
+                (
+                    "The shutdown reports agree on the hard endpoint but disagree on one tooling date. Folioquest reports March 31, 2027 as the shutdown date, with "
+                    "new signups closed and no deadline extensions. Their account makes active subscriptions part of the cutoff rather than an exception that can "
+                    "continue indefinitely [M61DsgB51BI @ 00:00:18]. heyymilian reports November 16, 2026 for the end of new users and stores, December 6 for eligible "
+                    "Managed Payments migration tooling, and mid-January 2027 as the recommended latest start because the process can take up to eight weeks "
+                    "[0R3CB1EcgKA @ 00:01:28]. Gaurav gives December 2 for that tooling opening and the same mid-January start recommendation. Their operational "
+                    "argument is that a February start leaves no time to fix a failed import; this is a planning warning, not a claim that they personally suffered "
+                    "that failed import [cNc29NtuCYU @ 00:00:19]. Folioquest also gives December 2 and describes moving catalogs, webhooks, and live subscriptions "
+                    "as a four-to-eight-week process. The useful agreement is the size of the migration job and the need to begin well before the final processing "
+                    "date. The disagreement remains December 2 versus December 6; neither date changes these speakers' shared mid-January recommendation or their "
+                    "reported March endpoint [M61DsgB51BI @ 00:01:36]."
+                ),
+                (
+                    "The handoff fails as a like-for-like replacement wherever payment migration is mistaken for product delivery. Gaurav says the official tooling "
+                    "moves products, customers, and card subscriptions, with customers receiving at least fourteen days' notice. They also say Managed Payments "
+                    "does not provide license keys, file delivery, or affiliates; PayPal subscriptions cannot move, affected subscribers must buy again, and checkout "
+                    "links, buttons, and webhooks require manual replacement rather than automatic redirects [cNc29NtuCYU @ 00:00:55]. heyymilian independently "
+                    "identifies missing storefronts, digital fulfillment, license keys, download links, and affiliates. Their conclusion is that sellers of files or "
+                    "license keys still need a fulfillment tool even when choosing Managed Payments rather than taking tax responsibility themselves "
+                    "[0R3CB1EcgKA @ 00:02:37]. Gaurav's execution order responds directly: export customers, orders, subscriptions, and keys; turn off PayPal for "
+                    "new checkout subscriptions; configure the new provider in test mode; replace every link; then tell customers the new name that will appear "
+                    "on card statements [cNc29NtuCYU @ 00:03:50]. Stephen's demonstration supplies a smaller version of the same unfinished-work problem: "
+                    "opening checkout did not mean backend webhooks were connected. They explicitly left those connections out and described linking a user object "
+                    "to later subscription records. A working payment page was the demonstrated result, not a completed subscription backend [F-WZgXuQIuQ @ 00:03:53]."
+                ),
+            ],
+            "table": {
+                "caption": "Firsthand constraints, reported complaints, and migration dependencies with their attribution intact.",
+                "headers": [
+                    "Failure mode or economic trap",
+                    "Practitioner experience or specific reported boundary",
+                    "Expert Source",
+                ],
+                "rows": [
+                    [
+                        "A newer business expects Paddle account access without waiting for its reviews.",
+                        "HelperMan says approvals and reviews can take time, especially for unusual business models.",
+                        "HelperMan ([o3KRrFnoAgM @ 00:01:38])",
+                    ],
+                    [
+                        "A seller assumes the recommended Stripe replacement accepts their business registration location.",
+                        "Gaurav says their India-based plugin business cannot use that Managed Payments migration path.",
+                        "Gaurav Tiwari ([cNc29NtuCYU @ 00:01:33])",
+                    ],
+                    [
+                        "A favorable migration promotion is treated as the permanent cost of each sale.",
+                        "Gaurav quotes $4.66 initially and $6.64 afterward on the same $99 sale.",
+                        "Gaurav Tiwari ([cNc29NtuCYU @ 00:01:33])",
+                    ],
+                    [
+                        "A seller relies on one uncontested date for the opening of migration tooling.",
+                        "Folioquest reports December 2, while heyymilian reports December 6 for eligible stores.",
+                        "Folioquest ([M61DsgB51BI @ 00:01:36]); heyymilian ([0R3CB1EcgKA @ 00:01:28])",
+                    ],
+                    [
+                        "A business expects existing PayPal subscribers and checkout links to transfer automatically.",
+                        "Gaurav says PayPal subscribers must buy again and links require manual replacement.",
+                        "Gaurav Tiwari ([cNc29NtuCYU @ 00:00:55])",
+                    ],
+                    [
+                        "A successful checkout demonstration is mistaken for completed backend subscription record handling.",
+                        "Stephen explicitly says webhooks are not connected and discusses later user-record association.",
+                        "Stephen S. ([F-WZgXuQIuQ @ 00:03:53]); Stephen S. ([F-WZgXuQIuQ @ 00:04:38])",
+                    ],
+                ],
+            },
             "callout": {
                 "kind": "OPERATOR GATE",
-                "title": "Every sales channel needs a named seller and a tax owner",
-                "body": "Before increasing a channel's acquisition budget, make its tax accounting reproducible from orders through remittance.",
+                "title": "Check the dependencies the practitioners say can break the move",
+                "body": (
+                    "These checks follow the reported eligibility, timing, fulfillment, "
+                    "and payout constraints rather than the appearance of the checkout page."
+                ),
                 "items": [
-                    "Document the seller of record from the executed provider contract.",
-                    "Date each jurisdiction's threshold, product classification, and measurement window.",
-                    "Separate customer tax collections from product billings and cash available to spend.",
-                    "Assign historical direct-sale exposure separately from future MoR transactions."
-                ]
-            }
+                    (
+                        "Check seller-location eligibility before treating Managed Payments as the destination: "
+                        "Gaurav says their India-based plugin business is excluded from that path. "
+                        "[Gaurav Tiwari — cNc29NtuCYU @ 00:01:33]"
+                    ),
+                    (
+                        "Plan around the recommended mid-January migration start rather than the last processing "
+                        "day: Gaurav warns that starting in February leaves no time to fix a failed import. "
+                        "[Gaurav Tiwari — cNc29NtuCYU @ 00:00:19]"
+                    ),
+                    (
+                        "Account for file delivery, license keys, download links, storefronts, and affiliates "
+                        "separately; heyymilian says Managed Payments does not include those Lemon Squeezy functions. "
+                        "[heyymilian — 0R3CB1EcgKA @ 00:02:21] "
+                        "[heyymilian — 0R3CB1EcgKA @ 00:02:37]"
+                    ),
+                    (
+                        "Include payout timing and minimum balance in the platform comparison: SoloBuild describes "
+                        "Paddle's monthly schedule, payment by the fifteenth, and $100 minimum. "
+                        "[SoloBuild — i05UCC3UvNY @ 00:05:36]"
+                    ),
+                ],
+            },
         },
-        {
-            "heading": "Trap 3: Recording forty hours before proving one paid outcome",
-            "epistemic_status": "illustrative_model",
-            "paragraphs": [
-                "Forty hours of finished video can conceal zero evidence of demand. Sell a narrowly scoped pilot first: one customer type, one deliverable, one measurable use case, and one published delivery date. Show a sample worksheet and describe exactly what exists today versus what the pilot will produce. For example, offer twenty seats at $150 for a live implementation session and a reusable template, giving $3,000 gross billings if all seats sell. State the cancellation and refund treatment before taking payment, and reserve enough cash to refund undelivered work. Ten enthusiastic interviews are useful discovery but not ten orders. Record objections, refunds, attendance, and completed customer outcomes. Decide whether to expand from observed delivery economics and repeat purchase intent, not from compliments about the course outline or the number of slides already written.",
-                "Use the following scenarios as quarterly illustrations for one full-time operator and three scoped contractors, written as 1 FT + 3 C. Contractor hours vary; three contractors do not imply three additional full-time salaries. Conservative billings of $50,000 less $40,000 of modeled costs leave $10,000 net contribution, or 20%. Base billings of $425,000 less $265,625 leave $159,375, or 37.5%. Scaled billings of $800,000 less $360,000 leave $440,000, or 55%. Gross billings exclude collected sales tax but precede refunds. Cost deductions include acquisition, allocated operator compensation, contractor delivery, payment charges, refunds, dispute losses, and operating tools. Net contribution here is the remaining operating contribution before income tax, financing, and exceptional capital expenditure, not personal take-home pay. Do not present these target margins as observed industry averages or assume scale automatically produces them.",
-                "Make the labor assumption testable before expanding the curriculum. In the conservative quarter, allocate $15,000 to the full-time operator and $7,000 across tightly scoped contractor assignments; if that compensation cannot secure the required work, the modeled margin is unattainable. At a $250 average order value, the base case needs 1,700 orders, and its $110,000 acquisition allowance implies $64.71 blended acquisition cost per order. That allowance includes affiliate commissions and acquisition creative, not just media. Its $55,625 residual cost bucket must absorb refunds, payment fees, losses, hosting, and administration without double counting labor. Record support minutes per order and contractor turnaround time during the pilot. If support rises with every sale, simplify the deliverable before raising spend. Higher gross billings attached to an unstaffed service obligation are deferred workload, not operating leverage."
-            ],
-            "table": {
-                "caption": "Illustrative quarterly economics: 1 FT + 3 C, with labor explicitly charged",
-                "headers": ["Quarterly line item", "Conservative", "Base", "Scaled"],
-                "rows": [
-                    ["Gross product billings, excluding sales tax", "$50,000", "$425,000", "$800,000"],
-                    ["Acquisition and affiliate costs", "$10,000", "$110,000", "$160,000"],
-                    ["Operator compensation and contractor labor", "$22,000", "$100,000", "$130,000"],
-                    ["Refunds, fees, losses, tools, and administration", "$8,000", "$55,625", "$70,000"],
-                    ["Total modeled deductions", "$40,000", "$265,625", "$360,000"],
-                    ["Net operating contribution before income tax", "$10,000", "$159,375", "$440,000"],
-                    ["Net contribution / gross billings", "20%", "37.5%", "55%"]
-                ]
-            }
-        },
-        {
-            "heading": "Trap 4: Fighting group-buy piracy with accusations instead of evidence",
-            "epistemic_status": "operating_framework",
-            "paragraphs": [
-                "Telegram and Discord group-buy leaks turn one purchased archive into many unauthorized copies, but a leak is not automatically proof of which customer distributed it. Implement copyright_phash_reverse_image_statutory_settlement as an evidence and recovery workflow, not a settlement factory. Issue a canary PDF with an unobtrusive per-order identifier and retain a private JSON manifest containing order reference, asset version, issuance time, and cryptographic file digest. Keep customer identities out of public watermarks and shared enforcement packets unless genuinely necessary. Fingerprint representative page images with pHash to discover visually similar copies after recompression or modest edits. A perceptual hash identifies candidates, not authorship or infringement, and a cryptographic hash identifies exact bytes rather than visually similar pages. Preserve the original source files and contractor rights assignments so ownership is demonstrable before any notice leaves the business.",
-                "Monitor public listings and material you are authorized to access; do not infiltrate private accounts or buy stolen credentials to investigate a leak. For each candidate, preserve the exact URL, capture date, visible file sample, matched pages, ownership record, and relevant license terms. Have a human compare the substance because shared stock imagery, legitimate quotations, and independently created layouts produce false positives. Under 17 U.S.C. section 512(c)(3), send the hosting provider's designated agent a notice containing the required signature, work identification, material location, contact details, good-faith statement, and accuracy and authority statement under penalty of perjury. Consider authorized use and fair use before asserting infringement. Section 512 provides a notice-and-takedown framework; it does not award an automatic statutory settlement. Misrepresentations can create liability under section 512(f), making indiscriminate notices a poor recovery strategy.",
-                "Separate the leak decision from the refund decision. First verify whether a customer's access failed or the product materially differed from its description; remedy that issue under the actual facts. Independently determine whether the leaked artifact matches an issued copy and whether account compromise, contractor access, or a platform exposure explains the distribution. A canary match alone should not trigger public accusations. Revoke a confirmed exposed download token, preserve legitimate purchaser access through a replacement, and keep the customer service record separate from the infringement file. If a counter-notice arrives, track the statutory process, including the provider's restoration timetable and any required court action. Registration timing and other requirements affect possible copyright damages outside section 512. Budget enforcement against demonstrable avoided loss and collected recovery, never presumed sales multiplied by every observed unauthorized download."
-            ],
-            "sop_steps": [
-                {"step": 1, "title": "Fingerprint issuance", "action": "Create a canary PDF and private JSON manifest.", "detail": "Link an opaque order token to asset version, issuance time, and exact-file digest."},
-                {"step": 2, "title": "Find candidates", "action": "Compare authorized captures using pHash and page samples.", "detail": "Record locations and timestamps; treat similarity as a review queue, not proof."},
-                {"step": 3, "title": "Corroborate", "action": "Check ownership, license scope, fair use, and alternate leak sources.", "detail": "Separate service complaints, compromised access, and unauthorized redistribution."},
-                {"step": 4, "title": "Notify precisely", "action": "Send a complete section 512(c)(3) notice for confirmed hosted material.", "detail": "Use the designated agent and exact locations; calendar counter-notice handling."},
-                {"step": 5, "title": "Reconcile recovery", "action": "Track removal, recurrence, labor expense, and actual receipts.", "detail": "Replace exposed access tokens without treating speculative damages as revenue."}
-            ]
-        },
-        {
-            "heading": "Trap 5: Discarding non-buyers instead of measuring their next useful action",
-            "epistemic_status": "illustrative_model",
-            "paragraphs": [
-                "A storefront converting 3% of sessions leaves 97% without an immediate purchase, not 97% worthless people. Some visitors want a definition, local availability, a cheaper alternative, or information in another language. Segment by observed intent and country-level commercial fit rather than treating all international visitors as low quality. The tier1_search_feed_afd_rsoc_arbitrage play can route suitable informational demand to Related Search on Content, or RSOC, when an approved provider explicitly permits the site, traffic source, geography, and implementation. It does not authorize arbitrary search-feed access, and approval for one feed product does not authorize another. Keep the original article genuinely useful and make related searches optional, descriptive destinations. Never disguise search advertising as the product download, promise unavailable offers, force redirects, incentivize clicks, or fabricate search queries to increase paid interaction counts artificially.",
-                "Work the denominator before celebrating extra revenue. From 100,000 monthly sessions at 3% product conversion, 97,000 sessions are non-buying. Suppose only 20,000 meet the provider's eligibility rules and the visitor's informational intent. If 15% voluntarily use related search, that creates 3,000 search sessions. At an illustrative realized net publisher yield of $0.12 per search session, revenue is $360, not $11,640 applied to every non-buyer. Subtract $80 in incremental content and monitoring expense and a measured $90 reduction in product contribution to leave $190 incremental contribution. The yield is an assumption to replace with settled reports, not a quoted provider rate. Invalid-traffic deductions, revenue share, currency conversion, and payment delays can change receipts. Do not purchase an entire new traffic campaign using this tiny residual contribution as its acquisition budget justification.",
-                "Run a holdout test so search revenue cannot hide cannibalized product sales. Randomly assign eligible sessions to the useful article with or without the permitted related-search placement, and compare total settled contribution per session over a window long enough to capture delayed purchases and reversals. Keep newsletter subscriptions and returning buyers observable without exporting payment or identity data into feed parameters. Where the feed is unavailable, use a relevant free resource, a permission-based email sequence, or a clearly identified affiliate option supported by its own economics. Assign the full-time operator the weekly contribution reconciliation, with contractors owning content, technical delivery, and customer support within scoped hours. The experienced edge is five connected ledgers: payments, taxes, paid demand, asset evidence, and traffic yield. Each explains why money remained after costs rather than merely why gross billings increased."
-            ]
-        }
     ],
-    "pull_quote": "The experienced operator does not monetize every click or fight every refund; they preserve the payment rail and measure what remains after delivery.",
-    "diagram_id": "diag-05-piracy-refund-triage-tree",
+    "pull_quote": (
+        "\"The real question isn't who renders the form, it's who carries the tax.\" "
+        "— heyymilian (0R3CB1EcgKA @ 00:06:01)."
+    ),
+    "diagram_id": "diag-05",
     "action_checklist": [
-        "Export payment, dispute, and fraud counts; document current regional formulas and investigate sources approaching the internal 0.50% intervention level.",
-        "Attach checkout versions, login/IP/device records, entitlement events, and download outcomes to payment identifiers; test one eligible evidence packet.",
-        "Build a dated state nexus worksheet and verify seller-of-record responsibilities for every checkout channel, including historical direct sales.",
-        "Offer a twenty-seat paid pilot with a sample, delivery date, refund treatment, and a labor budget before recording the full course.",
-        "Issue canary PDFs and private JSON manifests; review one pHash candidate manually and prepare a complete notice only for corroborated infringement.",
-        "Define an eligible informational-traffic cohort, confirm RSOC provider permission, and compare settled incremental contribution against a randomized holdout."
+        (
+            "Begin with buyer geography, decide how much tax paperwork to own, and then compare "
+            "the storefront, affiliate, and billing-support extras. "
+            "[SoloBuild — i05UCC3UvNY @ 00:07:44]"
+        ),
+        (
+            "Compare the handoff premium with accountant costs and personal registration and filing time, "
+            "rather than comparing processing percentages alone. "
+            "[SoloBuild — i05UCC3UvNY @ 00:07:25]"
+        ),
+        (
+            "For the demonstrated course setup, activate Stripe Tax in Stripe and the course platform, "
+            "choose tax behavior, enable tax ID collection if needed, and inspect checkout. "
+            "[OCH Platform — H8_HQ-GZOwc @ 00:01:44]"
+        ),
+        (
+            "Complete the product tax classification required by the Managed Payments setup, and keep "
+            "Stephen's unfinished backend webhook connection separate from the working checkout demonstration. "
+            "[Stephen S. — F-WZgXuQIuQ @ 00:03:38] "
+            "[Stephen S. — F-WZgXuQIuQ @ 00:03:53]"
+        ),
+        (
+            "Export customers, orders, subscriptions, and license keys; stop new PayPal subscriptions; "
+            "set the replacement up in test mode; replace links; and notify buyers about the statement name. "
+            "[Gaurav Tiwari — cNc29NtuCYU @ 00:03:50]"
+        ),
+        (
+            "Choose the migration path around existing license keys before fees, and retain control "
+            "of the customer list, license server, and checkout links. "
+            "[Gaurav Tiwari — cNc29NtuCYU @ 00:04:07]"
+        ),
     ],
     "statutory_citations": [
         {
-            "title": "South Dakota v. Wayfair, 585 U.S. 162 (2018)",
-            "url": "https://www.supremecourt.gov/opinions/17pdf/17-494_j4el.pdf",
-            "relevance": "Rejects the physical-presence requirement for sales-tax nexus; the decision's historical South Dakota thresholds are not uniform current state rules."
+            "title": "SoloBuild — Stripe vs Lemon Squeezy vs Paddle (2026): Which Should You Use? [00:01:53]",
+            "url": "https://www.youtube.com/watch?v=i05UCC3UvNY&t=113s",
+            "relevance": (
+                "Primary practitioner testimony distinguishing standard Stripe tax responsibility, "
+                "Stripe Tax calculation and collection, and Tax Complete registration and filing."
+            ),
         },
         {
-            "title": "17 U.S.C. section 512",
-            "url": "https://uscode.house.gov/view.xhtml?req=granuleid:USC-prelim-title17-section512&num=0&edition=prelim",
-            "relevance": "Section 512(c)(3) specifies takedown-notice elements, subsection (g) addresses counter-notices and restoration, and subsection (f) addresses misrepresentations."
+            "title": "OCH Platform — How to Enable Stripe Tax to Handle Sales Tax Automatically [00:01:26]",
+            "url": "https://www.youtube.com/watch?v=H8_HQ-GZOwc&t=86s",
+            "relevance": (
+                "Primary practitioner testimony on address collection and the registration condition "
+                "for tax appearing on checkout pages and invoices."
+            ),
         },
         {
-            "title": "15 U.S.C. section 1666",
-            "url": "https://uscode.house.gov/view.xhtml?req=granuleid:USC-prelim-title15-section1666&num=0&edition=prelim",
-            "relevance": "Establishes creditor duties for qualifying billing-error notices; distinguish statutory issuer procedures from merchant refund policies and network evidence rules."
-        }
-    ]
+            "title": "Stephen S. — Stripe's Merchant of Record (MoR) Solution: Adding Managed Payments to an Existing App  #mcp [00:03:38]",
+            "url": "https://www.youtube.com/watch?v=F-WZgXuQIuQ&t=218s",
+            "relevance": (
+                "Primary practitioner testimony from the checkout demonstration about account setup "
+                "and the product tax classification needed for Managed Payments."
+            ),
+        },
+        {
+            "title": "Gaurav Tiwari — Lemon Squeezy Is Shutting Down, and Stripe's Fix Leaves Out License Keys [00:03:50]",
+            "url": "https://www.youtube.com/watch?v=cNc29NtuCYU&t=230s",
+            "relevance": (
+                "Primary practitioner testimony giving the export, PayPal, test-mode, replacement-link, "
+                "and customer-notification migration sequence."
+            ),
+        },
+    ],
+    "source_citations": [
+        {
+            "source_type": "video_pro_tip",
+            "video_id": "IA4eosnOzIE",
+            "title": "Lemon Squeezy for Merchant of Record Honest Review - Watch Before Using",
+            "channel": "HelperMan",
+            "author": "HelperMan",
+            "text": "One thing I'd strongly recommend is making sure the simplicity and tax handling are actually worth the extra fees for your business model.",
+            "tip": "One thing I'd strongly recommend is making sure the simplicity and tax handling are actually worth the extra fees for your business model.",
+            "timestamp": 112,
+            "timestamp_seconds": 112,
+            "timestamp_label": "[00:01:52]",
+            "url": "https://www.youtube.com/watch?v=IA4eosnOzIE&t=112s",
+            "markdown": "[00:01:52](https://www.youtube.com/watch?v=IA4eosnOzIE&t=112s)",
+            "epistemic_status": "attributed_practitioner_claim",
+            "relevance": "Practitioner testimony on comparing administrative simplicity with the additional merchant-of-record fee.",
+        },
+        {
+            "source_type": "video_pro_tip",
+            "video_id": "M61DsgB51BI",
+            "title": "Lemon Squeezy Winds Down After Stripe Acquisition",
+            "channel": "Folioquest",
+            "author": "Folioquest",
+            "text": "Automated data exports and migration tools open on December 2nd, 2026. Because moving catalogs, webhooks, and live subscriptions can take four to eight weeks, Lemon Squeezy urges sellers to begin by mid-January.",
+            "tip": "Automated data exports and migration tools open on December 2nd, 2026. Because moving catalogs, webhooks, and live subscriptions can take four to eight weeks, Lemon Squeezy urges sellers to begin by mid-January.",
+            "timestamp": 96,
+            "timestamp_seconds": 96,
+            "timestamp_label": "[00:01:36]",
+            "url": "https://www.youtube.com/watch?v=M61DsgB51BI&t=96s",
+            "markdown": "[00:01:36](https://www.youtube.com/watch?v=M61DsgB51BI&t=96s)",
+            "epistemic_status": "attributed_practitioner_claim",
+            "relevance": "Practitioner report of migration timing, with a tooling date that differs from heyymilian's account.",
+        },
+        {
+            "source_type": "video_pro_tip",
+            "video_id": "o3KRrFnoAgM",
+            "title": "Paddle for Merchant of Record Honest Review - Watch Before Using",
+            "channel": "HelperMan",
+            "author": "HelperMan",
+            "text": "I also noticed that account approvals and compliance reviews can sometimes take time, especially for newer businesses or unusual business models.",
+            "tip": "I also noticed that account approvals and compliance reviews can sometimes take time, especially for newer businesses or unusual business models.",
+            "timestamp": 98,
+            "timestamp_seconds": 98,
+            "timestamp_label": "[00:01:38]",
+            "url": "https://www.youtube.com/watch?v=o3KRrFnoAgM&t=98s",
+            "markdown": "[00:01:38](https://www.youtube.com/watch?v=o3KRrFnoAgM&t=98s)",
+            "epistemic_status": "attributed_practitioner_claim",
+            "relevance": "Firsthand practitioner observation about Paddle review timing and the importance of understanding its operating model.",
+        },
+        {
+            "source_type": "video_pro_tip",
+            "video_id": "5zGuxRrg_O0",
+            "title": "Stripe Managed Payments: The Threat to Paddle and the Future of MoR",
+            "channel": "Captain Vova (Vova Feldman)",
+            "author": "Captain Vova (Vova Feldman)",
+            "text": "The current downside in comparing Managed Payments to other Merchant of Records is there's no full global tax compliance yet.",
+            "tip": "The current downside in comparing Managed Payments to other Merchant of Records is there's no full global tax compliance yet.",
+            "timestamp": 45,
+            "timestamp_seconds": 45,
+            "timestamp_label": "[00:00:45]",
+            "url": "https://www.youtube.com/watch?v=5zGuxRrg_O0&t=45s",
+            "markdown": "[00:00:45](https://www.youtube.com/watch?v=5zGuxRrg_O0&t=45s)",
+            "epistemic_status": "attributed_practitioner_claim",
+            "relevance": "Practitioner description of geographic tax-coverage limits in the Managed Payments offering they discuss.",
+        },
+        {
+            "source_type": "video_pro_tip",
+            "video_id": "KRdWGDk-GkY",
+            "title": "Stripe Just KILLED Paddle and Gumroad (Managed Payments)",
+            "channel": "TechWealth Hub",
+            "author": "TechWealth Hub",
+            "text": "Stripe managed payments can be applied selectively by transaction, by market, or by product line.",
+            "tip": "Stripe managed payments can be applied selectively by transaction, by market, or by product line.",
+            "timestamp": 163,
+            "timestamp_seconds": 163,
+            "timestamp_label": "[00:02:43]",
+            "url": "https://www.youtube.com/watch?v=KRdWGDk-GkY&t=163s",
+            "markdown": "[00:02:43](https://www.youtube.com/watch?v=KRdWGDk-GkY&t=163s)",
+            "epistemic_status": "attributed_practitioner_claim",
+            "relevance": "Practitioner description of selective Managed Payments use rather than a platform-wide all-or-nothing switch.",
+        },
+        {
+            "source_type": "video_pro_tip",
+            "video_id": "i05UCC3UvNY",
+            "title": "Stripe vs Lemon Squeezy vs Paddle (2026): Which Should You Use?",
+            "channel": "SoloBuild",
+            "author": "SoloBuild",
+            "text": "Count your accountant fees and your own time for registering and filing. If they add up to more than that, the handed-off option is the cheaper one.",
+            "tip": "Count your accountant fees and your own time for registering and filing. If they add up to more than that, the handed-off option is the cheaper one.",
+            "timestamp": 445,
+            "timestamp_seconds": 445,
+            "timestamp_label": "[00:07:25]",
+            "url": "https://www.youtube.com/watch?v=i05UCC3UvNY&t=445s",
+            "markdown": "[00:07:25](https://www.youtube.com/watch?v=i05UCC3UvNY&t=445s)",
+            "epistemic_status": "attributed_practitioner_claim",
+            "relevance": "Practitioner economic comparison including tax-administration time rather than processing fees alone.",
+        },
+        {
+            "source_type": "video_pro_tip",
+            "video_id": "IfaCBBIoVK0",
+            "title": "Lemon Squeezy Vs Stripe Checkout Vs Paddle (2026) Which One Is Better?",
+            "channel": "Tutorly",
+            "author": "Tutorly",
+            "text": "Stripe Checkout is a standard payment processor, while Paddle and Lemon Squeezy act as a merchant of record. A merchant of record means the platform becomes the legal seller of your product.",
+            "tip": "Stripe Checkout is a standard payment processor, while Paddle and Lemon Squeezy act as a merchant of record. A merchant of record means the platform becomes the legal seller of your product.",
+            "timestamp": 32,
+            "timestamp_seconds": 32,
+            "timestamp_label": "[00:00:32]",
+            "url": "https://www.youtube.com/watch?v=IfaCBBIoVK0&t=32s",
+            "markdown": "[00:00:32](https://www.youtube.com/watch?v=IfaCBBIoVK0&t=32s)",
+            "epistemic_status": "attributed_practitioner_claim",
+            "relevance": "Practitioner explanation of the legal-seller distinction underlying the checkout comparison.",
+        },
+        {
+            "source_type": "video_pro_tip",
+            "video_id": "Y5VXhUB7aNM",
+            "title": "NEW* Paddle vs FastSpring — Best Checkout & Tax for Digital Products",
+            "channel": "How2Genius",
+            "author": "How2Genius",
+            "text": "FastSpring stands out for its robust customization. You can create fully branded storefronts and checkout experiences, including upsells, bundles, and localized pricing.",
+            "tip": "FastSpring stands out for its robust customization. You can create fully branded storefronts and checkout experiences, including upsells, bundles, and localized pricing.",
+            "timestamp": 131,
+            "timestamp_seconds": 131,
+            "timestamp_label": "[00:02:11]",
+            "url": "https://www.youtube.com/watch?v=Y5VXhUB7aNM&t=131s",
+            "markdown": "[00:02:11](https://www.youtube.com/watch?v=Y5VXhUB7aNM&t=131s)",
+            "epistemic_status": "attributed_practitioner_claim",
+            "relevance": "Practitioner comparison of FastSpring's customization features with Paddle's simpler setup positioning.",
+        },
+        {
+            "source_type": "video_pro_tip",
+            "video_id": "Qq-EyvVj7IM",
+            "title": "Paddle vs LemonSqueezy (2026) | Which One is Better?",
+            "channel": "houdztech",
+            "author": "houdztech",
+            "text": "Lemon Squeezy is designed for simplicity. The UI is clean, modern, and genuinely easy to navigate. Setup takes 15 to 30 minutes.",
+            "tip": "Lemon Squeezy is designed for simplicity. The UI is clean, modern, and genuinely easy to navigate. Setup takes 15 to 30 minutes.",
+            "timestamp": 164,
+            "timestamp_seconds": 164,
+            "timestamp_label": "[00:02:44]",
+            "url": "https://www.youtube.com/watch?v=Qq-EyvVj7IM&t=164s",
+            "markdown": "[00:02:44](https://www.youtube.com/watch?v=Qq-EyvVj7IM&t=164s)",
+            "epistemic_status": "attributed_practitioner_claim",
+            "relevance": "Practitioner positioning of Lemon Squeezy's setup and interface for independent makers and small teams.",
+        },
+        {
+            "source_type": "video_pro_tip",
+            "video_id": "F-WZgXuQIuQ",
+            "title": "Stripe's Merchant of Record (MoR) Solution: Adding Managed Payments to an Existing App  #mcp",
+            "channel": "Stephen S.",
+            "author": "Stephen S.",
+            "text": "I had to go in and specify the correct tax classification. So in this case, software as a service personal use for these products.",
+            "tip": "I had to go in and specify the correct tax classification. So in this case, software as a service personal use for these products.",
+            "timestamp": 218,
+            "timestamp_seconds": 218,
+            "timestamp_label": "[00:03:38]",
+            "url": "https://www.youtube.com/watch?v=F-WZgXuQIuQ&t=218s",
+            "markdown": "[00:03:38](https://www.youtube.com/watch?v=F-WZgXuQIuQ&t=218s)",
+            "epistemic_status": "attributed_practitioner_claim",
+            "relevance": "Firsthand setup requirement encountered while opening Managed Payments checkout in an existing application.",
+        },
+        {
+            "source_type": "video_pro_tip",
+            "video_id": "mEXMrWuZFRQ",
+            "title": "Stripe Checkout vs Paddle vs Lemon Squeezy: Payment Platform Comparison",
+            "channel": "Hayes Tutorials",
+            "author": "Hayes Tutorials",
+            "text": "Choose Stripe if you already handle taxes or sell locally. Choose Paddle if you sell to businesses. Choose Lemon Squeezy if you sell to consumers.",
+            "tip": "Choose Stripe if you already handle taxes or sell locally. Choose Paddle if you sell to businesses. Choose Lemon Squeezy if you sell to consumers.",
+            "timestamp": 90,
+            "timestamp_seconds": 90,
+            "timestamp_label": "[00:01:30]",
+            "url": "https://www.youtube.com/watch?v=mEXMrWuZFRQ&t=90s",
+            "markdown": "[00:01:30](https://www.youtube.com/watch?v=mEXMrWuZFRQ&t=90s)",
+            "epistemic_status": "attributed_practitioner_claim",
+            "relevance": "Practitioner recommendation organized around tax capability and business-versus-consumer customers.",
+        },
+        {
+            "source_type": "video_pro_tip",
+            "video_id": "jwFYqAi_nQY",
+            "title": "Lemon Squeezy Review: Is the Merchant of Record Deal Worth It? (2026)",
+            "channel": "Yumi Kato Reviews",
+            "author": "Yumi Kato Reviews",
+            "text": "Add Stripe's processing, and that table puts the total near 7.9% plus a flat charge per transaction.",
+            "tip": "Add Stripe's processing, and that table puts the total near 7.9% plus a flat charge per transaction.",
+            "timestamp": 47,
+            "timestamp_seconds": 47,
+            "timestamp_label": "[00:00:47]",
+            "url": "https://www.youtube.com/watch?v=jwFYqAi_nQY&t=47s",
+            "markdown": "[00:00:47](https://www.youtube.com/watch?v=jwFYqAi_nQY&t=47s)",
+            "epistemic_status": "attributed_practitioner_claim",
+            "relevance": "Practitioner fee claim contrasted with SoloBuild's and heyymilian's base-plus-specific-additions descriptions.",
+        },
+        {
+            "source_type": "video_pro_tip",
+            "video_id": "k-wa2TZefr4",
+            "title": "Lemon Squeezy vs Stripe Merchant Platform Review 2026: Payouts & Features",
+            "channel": "Calderon Bridger",
+            "author": "Calderon Bridger",
+            "text": "There is a specific kind of stress that comes with managing your own tax liability. There is also a specific kind of frustration that comes with being limited by someone else's platform.",
+            "tip": "There is a specific kind of stress that comes with managing your own tax liability. There is also a specific kind of frustration that comes with being limited by someone else's platform.",
+            "timestamp": 150,
+            "timestamp_seconds": 150,
+            "timestamp_label": "[00:02:30]",
+            "url": "https://www.youtube.com/watch?v=k-wa2TZefr4&t=150s",
+            "markdown": "[00:02:30](https://www.youtube.com/watch?v=k-wa2TZefr4&t=150s)",
+            "epistemic_status": "attributed_practitioner_claim",
+            "relevance": "Practitioner framing of the trade between tax responsibility and platform restrictions.",
+        },
+        {
+            "source_type": "video_pro_tip",
+            "video_id": "H8_HQ-GZOwc",
+            "title": "How to Enable Stripe Tax to Handle Sales Tax Automatically",
+            "channel": "OCH Platform",
+            "author": "OCH Platform",
+            "text": "Tax won't show up on checkout pages or invoices unless you're registered in that specific tax jurisdiction.",
+            "tip": "Tax won't show up on checkout pages or invoices unless you're registered in that specific tax jurisdiction.",
+            "timestamp": 86,
+            "timestamp_seconds": 86,
+            "timestamp_label": "[00:01:26]",
+            "url": "https://www.youtube.com/watch?v=H8_HQ-GZOwc&t=86s",
+            "markdown": "[00:01:26](https://www.youtube.com/watch?v=H8_HQ-GZOwc&t=86s)",
+            "epistemic_status": "attributed_practitioner_claim",
+            "relevance": "Practitioner-stated registration condition in the Stripe Tax activation walkthrough.",
+        },
+        {
+            "source_type": "video_pro_tip",
+            "video_id": "0R3CB1EcgKA",
+            "title": "Lemon Squeezy is closing. Can you just run your own checkout?",
+            "channel": "heyymilian",
+            "author": "heyymilian",
+            "text": "Digital fulfillment not included. Managed payments doesn't deliver files, license keys, or download links. Affiliates not included either.",
+            "tip": "Digital fulfillment not included. Managed payments doesn't deliver files, license keys, or download links. Affiliates not included either.",
+            "timestamp": 157,
+            "timestamp_seconds": 157,
+            "timestamp_label": "[00:02:37]",
+            "url": "https://www.youtube.com/watch?v=0R3CB1EcgKA&t=157s",
+            "markdown": "[00:02:37](https://www.youtube.com/watch?v=0R3CB1EcgKA&t=157s)",
+            "epistemic_status": "attributed_practitioner_claim",
+            "relevance": "Practitioner identification of fulfillment and affiliate gaps in the Managed Payments replacement.",
+        },
+        {
+            "source_type": "video_pro_tip",
+            "video_id": "cNc29NtuCYU",
+            "title": "Lemon Squeezy Is Shutting Down, and Stripe's Fix Leaves Out License Keys",
+            "channel": "Gaurav Tiwari",
+            "author": "Gaurav Tiwari",
+            "text": "Export everything now: customers, orders, subscriptions, and license keys. Turn PayPal off at checkout so new subscribers can migrate. Set up the new provider in test mode. Replace every link. Then email your customers and tell them the new name on their card statement.",
+            "tip": "Export everything now: customers, orders, subscriptions, and license keys. Turn PayPal off at checkout so new subscribers can migrate. Set up the new provider in test mode. Replace every link. Then email your customers and tell them the new name on their card statement.",
+            "timestamp": 230,
+            "timestamp_seconds": 230,
+            "timestamp_label": "[00:03:50]",
+            "url": "https://www.youtube.com/watch?v=cNc29NtuCYU&t=230s",
+            "markdown": "[00:03:50](https://www.youtube.com/watch?v=cNc29NtuCYU&t=230s)",
+            "epistemic_status": "attributed_practitioner_claim",
+            "relevance": "Practitioner migration sequence covering exports, payment-method handling, testing, replacement links, and customer communication.",
+        },
+    ],
 }

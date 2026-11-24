@@ -29,14 +29,14 @@
     "08_phone_tablet_mockup",
     "09_series_collection_mockup",
     "10_social_promo_pack",
-    "diag-01-end-to-end-workflow",
-    "diag-02-deal-funnel",
-    "diag-03-fee-waterfall",
-    "diag-04-jurisdiction-fee-caps",
-    "diag-05-lien-priority-tree",
-    "diag-06-small-team-org",
-    "diag-07-startup-budget-stack",
-    "diag-08-30-day-roadmap"
+    "diag-01-find-verify-contact-document-track",
+    "diag-02-overseas-recovery-balance",
+    "diag-03-sale-minus-debt-examples",
+    "diag-04-reported-operating-expenses",
+    "diag-05-mortgage-surplus-qualification",
+    "diag-06-fund-specific-recovery-responsibilities",
+    "diag-07-competing-debt-allocation",
+    "diag-08-repeatable-recovery-milestones"
   ],
   "cover_graphic_ids": [
     "cover_front",
@@ -54,14 +54,14 @@
     "10_social_promo_pack"
   ],
   "diagram_graphic_ids": [
-    "diag-01-end-to-end-workflow",
-    "diag-02-deal-funnel",
-    "diag-03-fee-waterfall",
-    "diag-04-jurisdiction-fee-caps",
-    "diag-05-lien-priority-tree",
-    "diag-06-small-team-org",
-    "diag-07-startup-budget-stack",
-    "diag-08-30-day-roadmap"
+    "diag-01-find-verify-contact-document-track",
+    "diag-02-overseas-recovery-balance",
+    "diag-03-sale-minus-debt-examples",
+    "diag-04-reported-operating-expenses",
+    "diag-05-mortgage-surplus-qualification",
+    "diag-06-fund-specific-recovery-responsibilities",
+    "diag-07-competing-debt-allocation",
+    "diag-08-repeatable-recovery-milestones"
   ],
   "allowed_statuses": [
     "approved",
@@ -486,11 +486,11 @@
         "reviewed_at": null
       }
     },
-    "diag-01-end-to-end-workflow": {
+    "diag-01-find-verify-contact-document-track": {
       "concept_a": {
-        "graphic_id": "diag-01-end-to-end-workflow",
+        "graphic_id": "diag-01-find-verify-contact-document-track",
         "graphic_type": "diagram",
-        "label": "From sale record to reconciled recovery",
+        "label": "From Auction Record to Recovery Claim",
         "concept_id": "concept_a",
         "concept_label": "Concept A — Black & Gold Executive",
         "status": "pending_review",
@@ -498,9 +498,9 @@
         "reviewed_at": null
       },
       "concept_b": {
-        "graphic_id": "diag-01-end-to-end-workflow",
+        "graphic_id": "diag-01-find-verify-contact-document-track",
         "graphic_type": "diagram",
-        "label": "From sale record to reconciled recovery",
+        "label": "From Auction Record to Recovery Claim",
         "concept_id": "concept_b",
         "concept_label": "Concept B — Bold Editorial",
         "status": "pending_review",
@@ -508,9 +508,9 @@
         "reviewed_at": null
       },
       "concept_c": {
-        "graphic_id": "diag-01-end-to-end-workflow",
+        "graphic_id": "diag-01-find-verify-contact-document-track",
         "graphic_type": "diagram",
-        "label": "From sale record to reconciled recovery",
+        "label": "From Auction Record to Recovery Claim",
         "concept_id": "concept_c",
         "concept_label": "Concept C — Modern Wealth Intelligence",
         "status": "pending_review",
@@ -518,11 +518,11 @@
         "reviewed_at": null
       }
     },
-    "diag-02-deal-funnel": {
+    "diag-02-overseas-recovery-balance": {
       "concept_a": {
-        "graphic_id": "diag-02-deal-funnel",
+        "graphic_id": "diag-02-overseas-recovery-balance",
         "graphic_type": "diagram",
-        "label": "Screen for recoverable value, not list size",
+        "label": "An Overseas Recovery Through Contact and Paperwork",
         "concept_id": "concept_a",
         "concept_label": "Concept A — Black & Gold Executive",
         "status": "pending_review",
@@ -530,9 +530,9 @@
         "reviewed_at": null
       },
       "concept_b": {
-        "graphic_id": "diag-02-deal-funnel",
+        "graphic_id": "diag-02-overseas-recovery-balance",
         "graphic_type": "diagram",
-        "label": "Screen for recoverable value, not list size",
+        "label": "An Overseas Recovery Through Contact and Paperwork",
         "concept_id": "concept_b",
         "concept_label": "Concept B — Bold Editorial",
         "status": "pending_review",
@@ -540,9 +540,9 @@
         "reviewed_at": null
       },
       "concept_c": {
-        "graphic_id": "diag-02-deal-funnel",
+        "graphic_id": "diag-02-overseas-recovery-balance",
         "graphic_type": "diagram",
-        "label": "Screen for recoverable value, not list size",
+        "label": "An Overseas Recovery Through Contact and Paperwork",
         "concept_id": "concept_c",
         "concept_label": "Concept C — Modern Wealth Intelligence",
         "status": "pending_review",
@@ -550,11 +550,11 @@
         "reviewed_at": null
       }
     },
-    "diag-03-fee-waterfall": {
+    "diag-03-sale-minus-debt-examples": {
       "concept_a": {
-        "graphic_id": "diag-03-fee-waterfall",
+        "graphic_id": "diag-03-sale-minus-debt-examples",
         "graphic_type": "diagram",
-        "label": "Collected fee to case contribution",
+        "label": "Reconstruct the Surplus Before Pursuing It",
         "concept_id": "concept_a",
         "concept_label": "Concept A — Black & Gold Executive",
         "status": "pending_review",
@@ -562,9 +562,9 @@
         "reviewed_at": null
       },
       "concept_b": {
-        "graphic_id": "diag-03-fee-waterfall",
+        "graphic_id": "diag-03-sale-minus-debt-examples",
         "graphic_type": "diagram",
-        "label": "Collected fee to case contribution",
+        "label": "Reconstruct the Surplus Before Pursuing It",
         "concept_id": "concept_b",
         "concept_label": "Concept B — Bold Editorial",
         "status": "pending_review",
@@ -572,9 +572,9 @@
         "reviewed_at": null
       },
       "concept_c": {
-        "graphic_id": "diag-03-fee-waterfall",
+        "graphic_id": "diag-03-sale-minus-debt-examples",
         "graphic_type": "diagram",
-        "label": "Collected fee to case contribution",
+        "label": "Reconstruct the Surplus Before Pursuing It",
         "concept_id": "concept_c",
         "concept_label": "Concept C — Modern Wealth Intelligence",
         "status": "pending_review",
@@ -582,11 +582,11 @@
         "reviewed_at": null
       }
     },
-    "diag-04-jurisdiction-fee-caps": {
+    "diag-04-reported-operating-expenses": {
       "concept_a": {
-        "graphic_id": "diag-04-jurisdiction-fee-caps",
+        "graphic_id": "diag-04-reported-operating-expenses",
         "graphic_type": "diagram",
-        "label": "Test fee sensitivity before choosing a market",
+        "label": "Keep Operating Costs Separate From Recovery Volume",
         "concept_id": "concept_a",
         "concept_label": "Concept A — Black & Gold Executive",
         "status": "pending_review",
@@ -594,9 +594,9 @@
         "reviewed_at": null
       },
       "concept_b": {
-        "graphic_id": "diag-04-jurisdiction-fee-caps",
+        "graphic_id": "diag-04-reported-operating-expenses",
         "graphic_type": "diagram",
-        "label": "Test fee sensitivity before choosing a market",
+        "label": "Keep Operating Costs Separate From Recovery Volume",
         "concept_id": "concept_b",
         "concept_label": "Concept B — Bold Editorial",
         "status": "pending_review",
@@ -604,9 +604,9 @@
         "reviewed_at": null
       },
       "concept_c": {
-        "graphic_id": "diag-04-jurisdiction-fee-caps",
+        "graphic_id": "diag-04-reported-operating-expenses",
         "graphic_type": "diagram",
-        "label": "Test fee sensitivity before choosing a market",
+        "label": "Keep Operating Costs Separate From Recovery Volume",
         "concept_id": "concept_c",
         "concept_label": "Concept C — Modern Wealth Intelligence",
         "status": "pending_review",
@@ -614,11 +614,11 @@
         "reviewed_at": null
       }
     },
-    "diag-05-lien-priority-tree": {
+    "diag-05-mortgage-surplus-qualification": {
       "concept_a": {
-        "graphic_id": "diag-05-lien-priority-tree",
+        "graphic_id": "diag-05-mortgage-surplus-qualification",
         "graphic_type": "diagram",
-        "label": "Resolve priority before pricing a claim",
+        "label": "Qualify the Mortgage-Foreclosure Claim",
         "concept_id": "concept_a",
         "concept_label": "Concept A — Black & Gold Executive",
         "status": "pending_review",
@@ -626,9 +626,9 @@
         "reviewed_at": null
       },
       "concept_b": {
-        "graphic_id": "diag-05-lien-priority-tree",
+        "graphic_id": "diag-05-mortgage-surplus-qualification",
         "graphic_type": "diagram",
-        "label": "Resolve priority before pricing a claim",
+        "label": "Qualify the Mortgage-Foreclosure Claim",
         "concept_id": "concept_b",
         "concept_label": "Concept B — Bold Editorial",
         "status": "pending_review",
@@ -636,9 +636,9 @@
         "reviewed_at": null
       },
       "concept_c": {
-        "graphic_id": "diag-05-lien-priority-tree",
+        "graphic_id": "diag-05-mortgage-surplus-qualification",
         "graphic_type": "diagram",
-        "label": "Resolve priority before pricing a claim",
+        "label": "Qualify the Mortgage-Foreclosure Claim",
         "concept_id": "concept_c",
         "concept_label": "Concept C — Modern Wealth Intelligence",
         "status": "pending_review",
@@ -646,11 +646,11 @@
         "reviewed_at": null
       }
     },
-    "diag-06-small-team-org": {
+    "diag-06-fund-specific-recovery-responsibilities": {
       "concept_a": {
-        "graphic_id": "diag-06-small-team-org",
+        "graphic_id": "diag-06-fund-specific-recovery-responsibilities",
         "graphic_type": "diagram",
-        "label": "Two full-time operators, two contract specialists",
+        "label": "One Recovery Operation, Distinct Claim Routes",
         "concept_id": "concept_a",
         "concept_label": "Concept A — Black & Gold Executive",
         "status": "pending_review",
@@ -658,9 +658,9 @@
         "reviewed_at": null
       },
       "concept_b": {
-        "graphic_id": "diag-06-small-team-org",
+        "graphic_id": "diag-06-fund-specific-recovery-responsibilities",
         "graphic_type": "diagram",
-        "label": "Two full-time operators, two contract specialists",
+        "label": "One Recovery Operation, Distinct Claim Routes",
         "concept_id": "concept_b",
         "concept_label": "Concept B — Bold Editorial",
         "status": "pending_review",
@@ -668,9 +668,9 @@
         "reviewed_at": null
       },
       "concept_c": {
-        "graphic_id": "diag-06-small-team-org",
+        "graphic_id": "diag-06-fund-specific-recovery-responsibilities",
         "graphic_type": "diagram",
-        "label": "Two full-time operators, two contract specialists",
+        "label": "One Recovery Operation, Distinct Claim Routes",
         "concept_id": "concept_c",
         "concept_label": "Concept C — Modern Wealth Intelligence",
         "status": "pending_review",
@@ -678,11 +678,11 @@
         "reviewed_at": null
       }
     },
-    "diag-07-startup-budget-stack": {
+    "diag-07-competing-debt-allocation": {
       "concept_a": {
-        "graphic_id": "diag-07-startup-budget-stack",
+        "graphic_id": "diag-07-competing-debt-allocation",
         "graphic_type": "diagram",
-        "label": "Fund the work before the first distribution",
+        "label": "The Listed Surplus Is Not the Owner's Remainder",
         "concept_id": "concept_a",
         "concept_label": "Concept A — Black & Gold Executive",
         "status": "pending_review",
@@ -690,9 +690,9 @@
         "reviewed_at": null
       },
       "concept_b": {
-        "graphic_id": "diag-07-startup-budget-stack",
+        "graphic_id": "diag-07-competing-debt-allocation",
         "graphic_type": "diagram",
-        "label": "Fund the work before the first distribution",
+        "label": "The Listed Surplus Is Not the Owner's Remainder",
         "concept_id": "concept_b",
         "concept_label": "Concept B — Bold Editorial",
         "status": "pending_review",
@@ -700,9 +700,9 @@
         "reviewed_at": null
       },
       "concept_c": {
-        "graphic_id": "diag-07-startup-budget-stack",
+        "graphic_id": "diag-07-competing-debt-allocation",
         "graphic_type": "diagram",
-        "label": "Fund the work before the first distribution",
+        "label": "The Listed Surplus Is Not the Owner's Remainder",
         "concept_id": "concept_c",
         "concept_label": "Concept C — Modern Wealth Intelligence",
         "status": "pending_review",
@@ -710,11 +710,11 @@
         "reviewed_at": null
       }
     },
-    "diag-08-30-day-roadmap": {
+    "diag-08-repeatable-recovery-milestones": {
       "concept_a": {
-        "graphic_id": "diag-08-30-day-roadmap",
+        "graphic_id": "diag-08-repeatable-recovery-milestones",
         "graphic_type": "diagram",
-        "label": "Thirty days to a reviewable recovery operation",
+        "label": "Build the Pipeline Around Verified Milestones",
         "concept_id": "concept_a",
         "concept_label": "Concept A — Black & Gold Executive",
         "status": "pending_review",
@@ -722,9 +722,9 @@
         "reviewed_at": null
       },
       "concept_b": {
-        "graphic_id": "diag-08-30-day-roadmap",
+        "graphic_id": "diag-08-repeatable-recovery-milestones",
         "graphic_type": "diagram",
-        "label": "Thirty days to a reviewable recovery operation",
+        "label": "Build the Pipeline Around Verified Milestones",
         "concept_id": "concept_b",
         "concept_label": "Concept B — Bold Editorial",
         "status": "pending_review",
@@ -732,9 +732,9 @@
         "reviewed_at": null
       },
       "concept_c": {
-        "graphic_id": "diag-08-30-day-roadmap",
+        "graphic_id": "diag-08-repeatable-recovery-milestones",
         "graphic_type": "diagram",
-        "label": "Thirty days to a reviewable recovery operation",
+        "label": "Build the Pipeline Around Verified Milestones",
         "concept_id": "concept_c",
         "concept_label": "Concept C — Modern Wealth Intelligence",
         "status": "pending_review",
@@ -743,5 +743,5 @@
       }
     }
   },
-  "updated_at": "2026-11-23T22:47:58Z"
+  "updated_at": "2026-11-24T15:53:32Z"
 }

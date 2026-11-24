@@ -1,0 +1,961 @@
+from __future__ import annotations
+
+CHAPTER_2 = {
+    "id": "Q2",
+    "chapter_id": "Q2",
+    "chapter_number": 2,
+    "question_number": 2,
+    "slug": "starting-and-growing-a-surplus-funds-recovery-business",
+    "question_prompt": "How can a beginner start a tax overage or surplus funds recovery business with little or no money, understand realistic earnings and overlooked challenges, handle claims when an owner has died, and learn from partnerships, mentorship programs, and reported first-deal and first-year results?",
+    "kicker": "Q2 / THE BIG MONEY PLAYBOOKS",
+    "title": "Starting and Growing a Surplus Funds Recovery Business",
+    "subtitle": "Beginner guides to tax overages and surplus funds recovery, starting with little or no money, realistic earning potential, reported deal results, deceased-owner claims, partnerships, and mentorship.",
+    "layout_template": "executive_summary",
+    "reading_time_minutes": 15,
+    "executive_summary": (
+        "Alfred Taren, Eric Richardson, and Nakia describe the same operating chain: "
+        "find surplus, locate the entitled person, earn their trust, and move the claim. "
+        "Richardson teaches free county lists and free skip tracing, with contingency fees "
+        "commonly described as 15%–30%. Sean reports roughly $300,000 recovered and $80,000 "
+        "in fees across 12 deals; Matthew reports eight contracts and approximately $60,000 "
+        "expected, not collected. Their playbooks diverge on preparation, marketing, staffing, "
+        "and payment control. BizMove builds around AI and a website; Taren puts calls ahead "
+        "of branding. Deceased-owner work ranges from deed-and-death-date analysis to attorney-led "
+        "probate. Anthony's missing-ID problem, Fullmer's late-arriving first-year income, "
+        "and Shawn Bougie's 46-email probate case show why signed agreements, recovery totals, "
+        "and spendable earnings are different milestones."
+    ),
+    "key_metrics": [
+        {
+            "label": "Sean's recovered funds and success fees",
+            "metric": "Sean's recovered funds and success fees",
+            "value": "About $300,000 recovered; $80,000 in success fees; 12 deals",
+            "confidence": "attributed_practitioner_claim",
+            "context": (
+                "Sean reports these results while working part-time, off and on for "
+                "approximately a year and a half. Recovery volume is separate from their fee."
+            ),
+            "source": "Money Making Juggernaut ([1uIxpXmBzuU @ 00:04:24])",
+        },
+        {
+            "label": "Matthew's early contracted pipeline",
+            "metric": "Matthew's early contracted pipeline",
+            "value": "Eight under contract; roughly $60,000 expected",
+            "confidence": "attributed_practitioner_claim",
+            "context": (
+                "Matthew describes eight agreements under contract by late July after "
+                "starting active work in May, with roughly $60,000 expected if the deals "
+                "come through. This is an expectation rather than reported cash received."
+            ),
+            "source": "Nick Fullmer- Overage Syndicate ([vd__NHmQYgM @ 00:03:28])",
+        },
+        {
+            "label": "Christopher's first-year success fees",
+            "metric": "Christopher's first-year success fees",
+            "value": "Over six figures",
+            "confidence": "attributed_practitioner_claim",
+            "context": (
+                "Christopher reports a first year exceeding six figures, identified in "
+                "the conversation as success fees. They also describe 25 years of sales "
+                "experience and substantial prior marketing experience."
+            ),
+            "source": "Money Making Juggernaut ([uhyVFTeepew @ 00:00:33])",
+        },
+        {
+            "label": "Researcher partner's projected probate payout",
+            "metric": "Researcher partner's projected probate payout",
+            "value": "40% of net; approximately $14,000 or more expected",
+            "confidence": "attributed_practitioner_claim",
+            "context": (
+                "Shawn Bougie estimates the researcher's share on a recovery slightly "
+                "above $100,000. Attorney charges and the final net were still being "
+                "settled; the researcher percentage applies to net, not the recovery check."
+            ),
+            "source": "SurplusFundsRiches ([fzvvdAGwCBM @ 00:01:45])",
+        },
+    ],
+    "sections": [
+        {
+            "id": "practitioner-consensus",
+            "title": "The Practitioner Consensus",
+            "paragraphs": [
+                (
+                    "The common business is a locating-and-filing service, not a property purchase. "
+                    "Alfred Taren divides each deal into research, conversation, and filing: identify "
+                    "the sale, confirm the surplus, find the person, earn enough trust to help, and "
+                    "move the paperwork. They call the conversation the business because research "
+                    "and filing can be systematized or handed off. Taren also separates foreclosure "
+                    "and tax-sale surplus from forgotten bank accounts and utility deposits held "
+                    "as state unclaimed property [8-8koApqnYA @ 00:01:59]. BizMove describes tax "
+                    "overages as sale proceeds above taxes and fees, with the recovery service "
+                    "locating, notifying, and assisting former owners for a fee "
+                    "[01plOr9pFjQ @ 00:00:22]. Surplus Funds Academy adds the distribution side: "
+                    "identify cases through foreclosure records and court documents, pursue the "
+                    "claim process, then distribute funds to the entitled parties, which can include "
+                    "former owners, lienholders, or other creditors [8Rn25K08ct4 @ 00:01:26]. "
+                    "Nakia's working sequence is equally direct: find the money, inform the former "
+                    "owner, assemble what the claim requires, and retain the contingency fee for "
+                    "that service. Their own research uses a paid platform, but their explanation "
+                    "places the service in the research, contact, and assistance rather than in "
+                    "owning the underlying property [c50hZiiw2FU @ 00:03:57]."
+                ),
+                (
+                    "A beginner does not have to buy a national lead package before making contact. "
+                    "Eric Richardson's zero-dollar route starts with county websites, searching "
+                    "surplus funds, excess funds, and excess proceeds lists, then calling or emailing "
+                    "counties when necessary. They acknowledge that not every county supplies a "
+                    "free list and that free skip tracing is not always the most efficient route. "
+                    "TruePeopleSearch supplies possible phone numbers, emails, and addresses; the "
+                    "next task is to explain the service accurately by phone "
+                    "[sK5PqCLSzzg @ 00:00:40]. Taren starts with a few counties, the actual county "
+                    "claim forms, and enough confirmed properties to understand the process. Their "
+                    "starter list is only 20–30 names, followed by an opening that sounds natural "
+                    "rather than robotic [8-8koApqnYA @ 00:08:00]. Richardson's separate no-money "
+                    "walkthrough specifies matching the former owner's name and city before "
+                    "searching, including checking whether a county lists last names first. It "
+                    "then moves through outreach, an agreed percentage, notarized documents, and "
+                    "mailing [1fbTnvEjC7M @ 00:02:24]. Both routes put public records and actual "
+                    "contact ahead of an elaborate operation. Richardson permits pen-and-paper "
+                    "tracking while recommending a CRM; Taren postpones the LLC until there are "
+                    "live prospects and money on the way rather than making entity formation the "
+                    "first productive milestone."
+                ),
+                (
+                    "Repeated contact and a working claim pipeline recur more consistently than "
+                    "any single software choice. Matthew tells Nick Fullmer that their minimum "
+                    "target is one contract sent each week, with additional contracts pursued even "
+                    "after that target is reached. Their working sequence is phone call, text, "
+                    "letter, then another pass, organized through sections in Evernote. They "
+                    "describe concentrated work blocks rather than treating occasional outreach "
+                    "as a complete business [vd__NHmQYgM @ 00:13:03]. Christopher likewise puts "
+                    "the conversation at the center, reporting a target of at least 100 calls "
+                    "daily while admitting that trustee and attorney work sometimes interrupts "
+                    "it. One claim above $200,000 came through a relative and a returned voicemail; "
+                    "discarding those indirect contacts would have discarded the connection "
+                    "[uhyVFTeepew @ 00:02:57]. Nakia identifies a different version of the same "
+                    "stoppage: people spend hours, days, and months consuming information without "
+                    "starting. Their remedy is a plan, accountability, and a clear next step "
+                    "[c50hZiiw2FU @ 00:00:42]. Richardson adds that waiting for the first payment "
+                    "before pursuing another claim stops the pipeline from developing. Court "
+                    "schedules can leave the first month, or even the next, at zero despite work "
+                    "having been completed. Their instruction is to keep stacking claims every "
+                    "week while earlier files move through the system [lFoZDRAGylo @ 00:01:49]."
+                ),
+            ],
+            "table": {
+                "caption": "The shared operating chain, with each practitioner's particular emphasis.",
+                "headers": ["Operating component", "Practitioner instruction", "Expert Source"],
+                "rows": [
+                    [
+                        "Separate surplus recovery from buying or selling the foreclosed property.",
+                        "Taren describes research, conversation, and filing as the three deal components.",
+                        "Alfred Taren ([8-8koApqnYA @ 00:01:59])",
+                    ],
+                    [
+                        "Understand how the tax sale creates excess proceeds before approaching owners.",
+                        "BizMove describes proceeds exceeding taxes and fees, followed by owner assistance.",
+                        "BizMove ([01plOr9pFjQ @ 00:00:22])",
+                    ],
+                    [
+                        "Identify the entitled parties rather than assuming every dollar belongs to owners.",
+                        "Distribution can include former owners, lienholders, and other creditors after approval.",
+                        "Surplus Funds Academy ([8Rn25K08ct4 @ 00:01:46])",
+                    ],
+                    [
+                        "Begin with public county information before paying for additional research infrastructure.",
+                        "Richardson searches free lists and requests information directly from county offices.",
+                        "Money Making Juggernaut ([sK5PqCLSzzg @ 00:00:40])",
+                    ],
+                    [
+                        "Build a repeatable contact process instead of depending on isolated outreach.",
+                        "Matthew repeats calls, texts, and letters while organizing files through Evernote.",
+                        "Nick Fullmer- Overage Syndicate ([vd__NHmQYgM @ 00:14:56])",
+                    ],
+                    [
+                        "Keep new claims moving while earlier claims await their actual payouts.",
+                        "Richardson says court timing can leave completed work unpaid for months.",
+                        "Money Making Juggernaut ([lFoZDRAGylo @ 00:01:49])",
+                    ],
+                ],
+            },
+        },
+        {
+            "id": "street-mechanics",
+            "title": "Exact Street Mechanics, Tools & Numbers",
+            "paragraphs": [
+                (
+                    "Start the research at the county and carry it through to entitlement, not "
+                    "just a promising sale price. Richardson searches surplus funds list, overbid "
+                    "list, overage list, and excess proceeds list; their ChatGPT instruction asks "
+                    "for links to counties with lists rather than merely county names. They also "
+                    "track auctions and request sale results or funds held in the court registry "
+                    "[R8B06ovsDXI @ 00:20:59]. BizMove proposes Octoparse or ParseHub for collecting "
+                    "owner information, sale dates, and surplus amounts, and gives a ChatGPT "
+                    "prompt for a Python script extracting names and amounts from a tax-sale PDF "
+                    "[01plOr9pFjQ @ 00:02:35]. Richardson's validation sequence then checks that "
+                    "the sale actually closed to a third-party bidder, checks judicial dockets "
+                    "for an existing claim, and searches for liens, second mortgages, or home "
+                    "equity lines. They distinguish Propwire's mortgage information from fuller "
+                    "lien reports and describe county-recorder searches under individual or entity "
+                    "names, not addresses [R8B06ovsDXI @ 00:26:24]. Taren pairs this work with "
+                    "reading the county's own filing instructions, especially notarization and "
+                    "original-document requirements [8-8koApqnYA @ 00:08:00]. Richardson also "
+                    "warns against treating every opening bid as the actual debt: the surplus "
+                    "calculation depends on confirming what was owed, and nonjudicial cases "
+                    "require contact with the trustee rather than assuming the county holds "
+                    "the necessary records."
+                ),
+                (
+                    "The outreach mechanics are specific enough to run without inventing a polished "
+                    "sales performance. Richardson's webinar favors bullet points: introduce "
+                    "yourself and the company, verify the former owner, ask whether they know "
+                    "about the auction and surplus, explain what happened, describe contingency "
+                    "payment, and send proof. Their packet includes company details, supporting "
+                    "evidence, the agreement, a limited power of attorney, payment directions, "
+                    "and identification, with notarization arranged for the documents "
+                    "[lLLfdrFLXFA @ 00:10:12]. Christopher opens differently: 'Hey Eric, hey, "
+                    "it's Chris,' then starts a conversation instead of leading with a company "
+                    "or service pitch. They emphasize questions about the person's situation "
+                    "[uhyVFTeepew @ 00:11:32]. Sean's Florida operation takes existing surplus "
+                    "leads into Excel, then Google Sheets, skip traces with services such as "
+                    "Skip Matrix or Skip Genie, and follows calls with voicemail, text, and "
+                    "mail. They print letters personally and describe reaching heirs before "
+                    "connecting them with their attorney [1uIxpXmBzuU @ 00:06:43]. BizMove offers "
+                    "another administrative stack: HubSpot CRM or Zoho CRM for contacts, follow-ups, "
+                    "and pipelines, plus AI-drafted follow-up messages [01plOr9pFjQ @ 00:04:32]. "
+                    "These are different implementations of the contact-and-follow-up work the "
+                    "speakers describe, from Sean's manually printed letters to Christopher's "
+                    "phone-first conversations and Richardson's evidence-backed introductory packet."
+                ),
+                (
+                    "Price the fee and the work separately, as Richardson does in their $100,000 "
+                    "surplus illustration. A 30% success fee produces $30,000 before notary, "
+                    "filing, attorney, and mailing expenses. Their stated ranges are approximately "
+                    "$75–$100 for the notary, $75–$350 for filing, usually $1,500–$5,000 for "
+                    "attorney work depending on the case, and $50–$100 for FedEx. Attorneys "
+                    "may instead charge a third of the operator's fee or another negotiated "
+                    "structure [R8B06ovsDXI @ 00:17:03]. Shawn Bougie's probate recovery shows "
+                    "a different expense profile: a check slightly above $100,000, an owner "
+                    "share they recall agreeing at 50%, anticipated attorney costs of $10,000–$15,000, "
+                    "and estimated profit of $35,000–$40,000 before the researcher's share "
+                    "[fzvvdAGwCBM @ 00:01:11]. Payment routing is another explicit operating "
+                    "choice. Richardson describes assignment of interest, a payment-direction "
+                    "letter, or an attorney receiving and distributing funds. Where payment "
+                    "must go to the claimant, they describe an attorney escrow service taking "
+                    "$1,000 from the claim [R8B06ovsDXI @ 00:42:26]. Their earlier zero-money "
+                    "route instead has the claimant receive the check and pay a subsequent "
+                    "invoice through PayPal, with Richardson explicitly acknowledging the "
+                    "trust involved [1fbTnvEjC7M @ 00:05:27]. The fee agreement, expense "
+                    "allocation, and actual recipient of the check are separate parts of "
+                    "their deal structure."
+                ),
+            ],
+            "table": {
+                "caption": "Exact tools, amounts, and sequences taught by the operators.",
+                "headers": ["Execution point", "Named mechanism or number", "Expert Source"],
+                "rows": [
+                    [
+                        "Ask the search assistant for usable county links, not just county names.",
+                        "Richardson's prompt is: Give me links to counties that have surplus funds lists.",
+                        "Money Making Juggernaut ([R8B06ovsDXI @ 00:21:44])",
+                    ],
+                    [
+                        "Collect auction data before building the owner's contact and claim file.",
+                        "BizMove names Octoparse and ParseHub for owner, sale-date, and amount extraction.",
+                        "BizMove ([01plOr9pFjQ @ 00:02:54])",
+                    ],
+                    [
+                        "Match the owner's identity before treating free search results as useful contacts.",
+                        "Check name spelling, first-name order, last-name order, and a matching city.",
+                        "Money Making Juggernaut ([1fbTnvEjC7M @ 00:02:24])",
+                    ],
+                    [
+                        "Keep the opening conversational while asking about the person's actual situation.",
+                        "Christopher opens like a friend rather than pitching the company immediately.",
+                        "Money Making Juggernaut ([uhyVFTeepew @ 00:11:32])",
+                    ],
+                    [
+                        "Track the small claim expenses separately from the percentage success fee.",
+                        "Richardson quotes notary costs of $75–$100 and filing costs of $75–$350.",
+                        "Money Making Juggernaut ([R8B06ovsDXI @ 00:18:10])",
+                    ],
+                    [
+                        "Determine how the holder releases payment before relying on client invoicing.",
+                        "Richardson describes attorney escrow costing $1,000 when payment goes to claimants.",
+                        "Money Making Juggernaut ([R8B06ovsDXI @ 00:43:39])",
+                    ],
+                ],
+            },
+            "callout": {
+                "kind": "INSIDER PRO-TIPS",
+                "title": "Small moves the practitioners actually use",
+                "body": "Keep the research, contact, and payment details attached to the individual case.",
+                "items": [
+                    (
+                        "Search both 'surplus funds list' and 'excess proceeds list' with the "
+                        "county name; Taren says county terminology determines which search "
+                        "finds the list. [Alfred Taren — 8-8koApqnYA @ 00:08:18]"
+                    ),
+                    (
+                        "Richardson tests returned phone numbers through iMessage and WhatsApp "
+                        "as clues to whether a number is active before continuing outreach. "
+                        "[Money Making Juggernaut — R8B06ovsDXI @ 00:32:47]"
+                    ),
+                    (
+                        "Matthew moves each file through Evernote sections so a returned call "
+                        "can be matched to prior calls, texts, and letters immediately. "
+                        "[Nick Fullmer- Overage Syndicate — vd__NHmQYgM @ 00:14:56]"
+                    ),
+                    (
+                        "Anthony reached the auction buyer after owner and neighbor searches "
+                        "failed; that buyer confirmed the former owner was still at the house "
+                        "and helped make the visit possible. "
+                        "[Money Making Juggernaut — gB8lD75eL5I @ 00:06:31]"
+                    ),
+                ],
+            },
+            "sop_steps": [
+                {
+                    "step": 1,
+                    "title": "Choose counties and read the actual claim instructions",
+                    "action": "Pull county lists and the matching claim forms.",
+                    "detail": (
+                        "Follow Taren's first-month sequence: select a few counties, read the "
+                        "county forms including notarization and originals, confirm several "
+                        "surpluses, and build a short list of 20–30 names. "
+                        "[Alfred Taren — 8-8koApqnYA @ 00:08:00]"
+                    ),
+                },
+                {
+                    "step": 2,
+                    "title": "Validate the sale, competing claims, and entitlement",
+                    "action": "Research the file before committing to claimant outreach.",
+                    "detail": (
+                        "Richardson checks the third-party sale, an existing claim where "
+                        "judicial dockets allow it, and liens or additional mortgages. "
+                        "Their nonjudicial route contacts the trustee about sale costs, "
+                        "commission, and accrued interest. "
+                        "[Money Making Juggernaut — R8B06ovsDXI @ 00:26:24] "
+                        "[Money Making Juggernaut — R8B06ovsDXI @ 00:29:22]"
+                    ),
+                },
+                {
+                    "step": 3,
+                    "title": "Locate the person and run the contact sequence",
+                    "action": "Skip trace, call, follow up, and send the supporting proof.",
+                    "detail": (
+                        "Use Richardson's conversational bullets: introduction, identity "
+                        "verification, awareness of the auction and surplus, explanation, "
+                        "contingency terms, and proof. Sean follows unsuccessful calls with "
+                        "voicemail, text, and mail rather than relying on one channel. "
+                        "[Money Making Juggernaut — lLLfdrFLXFA @ 00:10:12] "
+                        "[Money Making Juggernaut — 1uIxpXmBzuU @ 00:07:24]"
+                    ),
+                },
+                {
+                    "step": 4,
+                    "title": "Complete the packet and establish payment routing",
+                    "action": "Arrange the documents, notarization, filing route, and payout structure.",
+                    "detail": (
+                        "Richardson describes an agreement, identification, payment directions, "
+                        "and notarization, then distinguishes direct payment arrangements from "
+                        "attorney receipt and distribution. For their attorney route, the "
+                        "client and attorney have a separate engagement for filing and receiving "
+                        "the funds. "
+                        "[Money Making Juggernaut — lLLfdrFLXFA @ 00:12:06] "
+                        "[Money Making Juggernaut — R8B06ovsDXI @ 00:38:21]"
+                    ),
+                },
+            ],
+        },
+        {
+            "id": "disagreements-and-alternatives",
+            "title": "Where Practitioners Disagree & Alternative Playbooks",
+            "paragraphs": [
+                (
+                    "The launch order is a genuine disagreement. BizMove calls a professional "
+                    "website critical and proposes Wix ADI or Bookmark, AI-generated homepage "
+                    "copy, CRM automation, and a marketing plan as parts of the startup sequence "
+                    "[01plOr9pFjQ @ 00:03:52]. Taren attacks the familiar LLC, EIN, bank account, "
+                    "website, logo, and CRM checklist when it delays finding leads and making "
+                    "calls. Their claimed credibility comes from knowing the property, sale "
+                    "date, amount, and holder of funds, not the logo "
+                    "[8-8koApqnYA @ 00:05:10]. Nakia's mentorship pitch addresses the gap between "
+                    "information and execution through a 90-day, one-on-one action plan, process "
+                    "work, and building toward the participant's first $10,000 "
+                    "[c50hZiiw2FU @ 00:09:26]. Richardson offers a different support structure: "
+                    "self-directed course materials, a 90-day group program described as 12 weeks "
+                    "with four meetings weekly, and a business-setup option involving a team, "
+                    "CRM, virtual assistant, and CRM manager [lLLfdrFLXFA @ 00:17:11]. These "
+                    "speakers are not prescribing the same amount of infrastructure before "
+                    "outreach. Taren says the first call needs neither a website nor employees; "
+                    "BizMove makes online presentation part of the launch. Nakia emphasizes "
+                    "accountability and next actions, while Richardson's options range from "
+                    "learning independently to managing a prepared system and closing clients. "
+                    "The stated programs differ in delivery as well as in how much operating "
+                    "work remains with the beginner."
+                ),
+                (
+                    "Marketing choices also differ in the practitioners' own results. Richardson "
+                    "ranks texting and calling highly, supports mailers, and calls door knocking "
+                    "'undefeated,' recommending a company flyer, surplus details, supporting state "
+                    "law, and an agreement for the visit [R8B06ovsDXI @ 00:34:20]. Matthew says "
+                    "email has not worked for them and reminds them of scam pitches; their "
+                    "sequence is phone, text, letter, repeated through their Evernote workflow "
+                    "[vd__NHmQYgM @ 00:14:20]. Christopher reports postcard-generated inbound "
+                    "calls and says in-person marketing is not advantageous for their operation: "
+                    "they prefer making calls, including into other states, to driving between "
+                    "prospects [uhyVFTeepew @ 00:10:22]. Anthony's first California deal went "
+                    "the other way. After failed phone searches, social searches, neighbor "
+                    "contacts, and overnight letters, they located the auction buyer and drove "
+                    "to meet the former owner. Anthony reports a surplus of roughly $192,000 "
+                    "and a signed 35% fee after the in-person conversation "
+                    "[gB8lD75eL5I @ 00:05:20]. Anthony later describes calls, voicemail, text, "
+                    "and email as their regular approach rather than routine mailers. Door "
+                    "knocking was decisive in that difficult first case, while Christopher "
+                    "deliberately runs a phone-centered operation. Matthew's rejection of email "
+                    "is their reported experience, not the same ranking Richardson gives the "
+                    "channel or the sequence Anthony continues to use."
+                ),
+                (
+                    "Deceased-owner files create another fork rather than one universal probate "
+                    "workflow. SurplusFundsRiches teaches reading the deed before chasing heirs, "
+                    "then comparing death and foreclosure dates. In their Barry-and-Elizabeth "
+                    "example, death before foreclosure transfers the interest under the stated "
+                    "survivorship arrangement, whereas death after foreclosure leaves an heirship "
+                    "issue for Barry's share [1N1Z99kUvRw @ 00:03:38]. Sean deliberately works "
+                    "leftover Florida claims that other operators avoid, often involving probate "
+                    "or someone outside the country. Their operation contacts heirs and uses "
+                    "an attorney found after calling approximately 12 attorneys about contingent "
+                    "work [1uIxpXmBzuU @ 00:08:56]. Bougie's partnership example shows a more "
+                    "layered probate structure: a local frontline attorney, a central attorney, "
+                    "a case manager, and a researcher receiving a share of net rather than "
+                    "the whole fee [fzvvdAGwCBM @ 00:00:18]. Matthew offers a different salvage "
+                    "route when a homeowner lead stalls: identify a judgment creditor and "
+                    "contract with that creditor as claimant. Fullmer reports actually recovering "
+                    "money through a defunct company's surviving connection after researching "
+                    "an old recorded judgment [vd__NHmQYgM @ 00:08:39]. The alternatives are "
+                    "therefore deed-based entitlement research, attorney-led heir claims, "
+                    "researcher partnerships, and creditor recovery. Matthew specifically "
+                    "distinguishes contracting with the creditor from taking assignment of "
+                    "the judgment, which they describe as potentially complex for someone "
+                    "unfamiliar with judgment work."
+                ),
+            ],
+            "table": {
+                "caption": "Contrasts that change the operator's actual workflow.",
+                "headers": ["Decision", "Contrasting practitioner playbooks", "Expert Source"],
+                "rows": [
+                    [
+                        "Decide whether online presentation comes before the first live prospect conversations.",
+                        "BizMove calls a website critical; Taren puts property knowledge and calls first.",
+                        "BizMove ([01plOr9pFjQ @ 00:03:52]); Alfred Taren ([8-8koApqnYA @ 00:05:10])",
+                    ],
+                    [
+                        "Choose whether early support means individual planning or scheduled group instruction.",
+                        "Nakia offers 90-day individual mentorship; Richardson describes four weekly group meetings.",
+                        "Hutch & Holmes ([c50hZiiw2FU @ 00:09:26]); Money Making Juggernaut ([lLLfdrFLXFA @ 00:17:43])",
+                    ],
+                    [
+                        "Distinguish a contingency recovery engagement from a separately priced preparation service.",
+                        "Richardson teaches no-upfront recovery fees elsewhere but proposes $150–$350 upfront packet preparation.",
+                        "Money Making Juggernaut ([lLLfdrFLXFA @ 00:11:03]); Money Making Juggernaut ([lFoZDRAGylo @ 00:06:18])",
+                    ],
+                    [
+                        "Compare manual starter dialing with the operators using automated outreach systems.",
+                        "Overage Acquisition recommends DNC scrubbing and manual dialing; Richardson promotes CRM outreach.",
+                        "Overage Acquisition ([bpxSOg1_xbE @ 00:01:32]); Money Making Juggernaut ([R8B06ovsDXI @ 00:34:20])",
+                    ],
+                    [
+                        "Choose a deceased-owner route based on the deed and the case work.",
+                        "SurplusFundsRiches examines survivorship dates; Sean routes their heir cases through an attorney.",
+                        "SurplusFundsRiches ([1N1Z99kUvRw @ 00:03:38]); Money Making Juggernaut ([1uIxpXmBzuU @ 00:08:56])",
+                    ],
+                    [
+                        "Revisit a stalled homeowner file through the parties holding recorded judgments.",
+                        "Matthew proposes creditor agreements; Fullmer reports completing a recovery through that alternative.",
+                        "Nick Fullmer- Overage Syndicate ([vd__NHmQYgM @ 00:08:39]); Nick Fullmer- Overage Syndicate ([vd__NHmQYgM @ 00:10:27])",
+                    ],
+                ],
+            },
+        },
+        {
+            "id": "failure-modes",
+            "title": "Firsthand Failure Modes, Traps & Economics Checks",
+            "paragraphs": [
+                (
+                    "Signed contracts and impressive recovery checks do not erase the payment "
+                    "gap. Fullmer recalls nearly returning to corrections work during their "
+                    "first year, despite eventually making about $118,000. They say 75% of "
+                    "that income arrived in the final quarter, and describe waits of three, "
+                    "four, or five months after signing. Matthew's approximately $60,000 is "
+                    "an expected result on contracted work, while their other businesses "
+                    "and investments provide an existing paycheck [vd__NHmQYgM @ 00:20:58]. "
+                    "Richardson similarly warns that working in July does not mean receiving "
+                    "payment in July. Their illustrative beginner economics use $5,000 for "
+                    "60 hours, roughly $83 an hour, alongside an explicit warning that a "
+                    "specific monthly payment cannot be promised from court-driven timing "
+                    "[lFoZDRAGylo @ 00:01:02]. Anthony describes California tax-sale waiting "
+                    "as a year followed by additional months, depending on when the client "
+                    "is signed and when the sale occurred; that delay motivates interest "
+                    "in other states [gB8lD75eL5I @ 00:12:25]. Bougie's probate example "
+                    "also remains an estimate at the partner-payment stage: the check has "
+                    "reached the frontline attorney, but final attorney charges and net "
+                    "profit are not yet settled [fzvvdAGwCBM @ 00:01:29]. Each account "
+                    "distinguishes work completed, funds recovered, fee calculation, and "
+                    "actual cash received rather than treating a signed agreement as "
+                    "immediate income."
+                ),
+                (
+                    "Anthony's first deal was not just finding a large number and collecting "
+                    "a signature. They could not find a working owner number, received no "
+                    "response from neighbors, and got nowhere with overnight letters. The "
+                    "auction buyer supplied the breakthrough, but the in-person visit "
+                    "uncovered another obstruction: the claimant had no ID, and the property "
+                    "had no phone service. Anthony drove back toward the freeway to arrange "
+                    "a notary, then later worked through the claimant's mother and sister "
+                    "to obtain identification. They paid for the sister's assistance and "
+                    "DMV paperwork before submission approximately a month and a half "
+                    "later [gB8lD75eL5I @ 00:09:40]. Matthew reports an agreement that had "
+                    "to be withdrawn because the claimant had forgotten another person "
+                    "was already working the case [vd__NHmQYgM @ 00:04:06]. Overage "
+                    "Acquisition describes that same duplicate-claim trap as wasted time, "
+                    "wasted budget, and an angry client; their check is the county's online "
+                    "portal or a call to the office before proceeding "
+                    "[bpxSOg1_xbE @ 00:02:05]. Richardson adds sale-status reversals: a "
+                    "bidder can fail to finish paying, a sale can be vacated, or bankruptcy "
+                    "can intervene after an initially attractive result "
+                    "[R8B06ovsDXI @ 00:26:24]. These operators describe missing documents, "
+                    "unreachable people, existing engagements, and changing sale status "
+                    "as concrete reasons a promising file does not immediately become "
+                    "a payable claim."
+                ),
+                (
+                    "Growth exposes coordination work that the headline deal count leaves "
+                    "out. Sean reports about $300,000 recovered, $80,000 in success fees, "
+                    "and five to six hours of direct work per claim, but also says the "
+                    "business ran off and on for roughly a year and a half and that they "
+                    "hired a VA around active-duty scheduling constraints "
+                    "[1uIxpXmBzuU @ 00:04:24]. Richardson's later earnings overview describes "
+                    "that same success story as operating without employees, so the "
+                    "interview's staffing account and the later solo-business description "
+                    "do not match [lFoZDRAGylo @ 00:10:40]. Christopher supplies a "
+                    "different scaling sequence: admin first, then research capacity, "
+                    "then a case manager handling clients, notaries, and attorneys, before "
+                    "expanding sales. They explicitly reject pushing 100 deals through "
+                    "a broken process that fails to update claimants or follow trustees "
+                    "[uhyVFTeepew @ 00:08:05]. Bougie shows the coordination in one "
+                    "probate recovery: 46 back-and-forth emails involving the estate "
+                    "administrator, case management, updates, attorney liaison, and "
+                    "frontline attorney [fzvvdAGwCBM @ 00:00:35]. Sean's quoted claim "
+                    "hours, Christopher's division of work, and Bougie's email trail "
+                    "describe different operating arrangements. Christopher also admits "
+                    "that testing technology slowed their start; their growth account "
+                    "puts a functioning research and follow-up process before adding "
+                    "more salespeople to the front of it."
+                ),
+            ],
+            "table": {
+                "caption": "Reported reversals and the checks practitioners connect to them.",
+                "headers": ["Failure or bottleneck", "Reported consequence and response", "Expert Source"],
+                "rows": [
+                    [
+                        "First-year revenue arrived much later than the signed contracts suggested.",
+                        "Fullmer reports 75% of approximately $118,000 arriving in the final quarter.",
+                        "Nick Fullmer- Overage Syndicate ([vd__NHmQYgM @ 00:23:28])",
+                    ],
+                    [
+                        "A claimant forgot another operator was already working on the same recovery.",
+                        "Matthew says their agreement had to be withdrawn after that discovery.",
+                        "Nick Fullmer- Overage Syndicate ([vd__NHmQYgM @ 00:04:06])",
+                    ],
+                    [
+                        "The first large claimant lacked identification despite agreeing to the recovery service.",
+                        "Anthony worked through family, funded DMV paperwork, and delayed submission until identification arrived.",
+                        "Money Making Juggernaut ([gB8lD75eL5I @ 00:10:44])",
+                    ],
+                    [
+                        "An apparently successful auction result did not establish a permanently valid lead.",
+                        "Richardson describes bankruptcy, unpaid bidder deposits, canceled sales, and vacated sales.",
+                        "Money Making Juggernaut ([R8B06ovsDXI @ 00:26:24])",
+                    ],
+                    [
+                        "Probate recovery required repeated coordination across several people rather than one filing.",
+                        "Bougie shows 46 emails and still estimates the final attorney expense.",
+                        "SurplusFundsRiches ([fzvvdAGwCBM @ 00:00:35])",
+                    ],
+                    [
+                        "More sales could overwhelm an operation without consistent research and claimant updates.",
+                        "Christopher prioritizes the research team and front-end process before expanding sales.",
+                        "Money Making Juggernaut ([uhyVFTeepew @ 00:08:05])",
+                    ],
+                ],
+            },
+            "callout": {
+                "kind": "OPERATOR GATE",
+                "title": "Checks drawn from the practitioners' actual sticking points",
+                "body": "Use the file facts and expense structure the speakers check before counting the recovery as income.",
+                "items": [
+                    (
+                        "Check for an existing claim before signing the owner: Matthew withdrew "
+                        "a deal after discovering another person was already working it, and "
+                        "Overage Acquisition recommends checking the portal or county office. "
+                        "[Nick Fullmer- Overage Syndicate — vd__NHmQYgM @ 00:04:06] "
+                        "[Overage Acquisition — bpxSOg1_xbE @ 00:02:05]"
+                    ),
+                    (
+                        "Read the county's originals and notarization requirements and establish "
+                        "whether identification is available; Anthony's missing-ID case required "
+                        "family assistance and DMV paperwork before submission. "
+                        "[Alfred Taren — 8-8koApqnYA @ 00:08:00] "
+                        "[Money Making Juggernaut — gB8lD75eL5I @ 00:10:44]"
+                    ),
+                    (
+                        "For a deceased owner, read the deed and compare the death date with "
+                        "the foreclosure date; SurplusFundsRiches uses that sequence to distinguish "
+                        "their survivorship example from an heirship case. "
+                        "[SurplusFundsRiches — 1N1Z99kUvRw @ 00:03:38]"
+                    ),
+                    (
+                        "Separate the recovery check, owner allocation, attorney expense, and "
+                        "researcher share. Bougie's approximately $14,000 partner estimate is "
+                        "based on a share of net while final charges remain unsettled. "
+                        "[SurplusFundsRiches — fzvvdAGwCBM @ 00:01:29]"
+                    ),
+                ],
+            },
+        },
+    ],
+    "pull_quote": (
+        "\"Doing the business is better than preparing for the business.\" "
+        "— Alfred Taren (8-8koApqnYA @ 00:05:58)."
+    ),
+    "diagram_id": "diag-04",
+    "action_checklist": [
+        (
+            "Pick a few counties, download their actual forms, and search both surplus funds "
+            "and excess proceeds terminology before building a 20–30-name starter list. "
+            "[Alfred Taren — 8-8koApqnYA @ 00:08:00]"
+        ),
+        (
+            "Research the tax-foreclosure and mortgage-foreclosure claim processes separately "
+            "from the claimant's point of view, using Nakia's county-and-state prompt. "
+            "[Hutch & Holmes — c50hZiiw2FU @ 00:07:28]"
+        ),
+        (
+            "Confirm the completed third-party sale, check judicial dockets for existing "
+            "claims, and research liens or additional mortgages before pursuing the file. "
+            "[Money Making Juggernaut — R8B06ovsDXI @ 00:26:24]"
+        ),
+        (
+            "Match names and cities before free skip tracing, then run a documented "
+            "call-text-letter follow-up sequence rather than abandoning the first unanswered call. "
+            "[Money Making Juggernaut — 1fbTnvEjC7M @ 00:02:24] "
+            "[Nick Fullmer- Overage Syndicate — vd__NHmQYgM @ 00:14:56]"
+        ),
+        (
+            "Read the deed and compare death and foreclosure dates on deceased-owner files; "
+            "for the probate route Sean uses, locate heirs and connect them with the attorney. "
+            "[SurplusFundsRiches — 1N1Z99kUvRw @ 00:03:38] "
+            "[Money Making Juggernaut — 1uIxpXmBzuU @ 00:07:51]"
+        ),
+        (
+            "Establish how payment will be released, identify the fee and expense allocation, "
+            "and continue adding claims while existing files wait through the payout process. "
+            "[Money Making Juggernaut — R8B06ovsDXI @ 00:43:39] "
+            "[Money Making Juggernaut — lFoZDRAGylo @ 00:01:49]"
+        ),
+    ],
+    "statutory_citations": [
+        {
+            "title": "Alfred Taren — How to Start a Surplus Funds Business in 2026 (Step by Step) [00:08:00]",
+            "url": "https://www.youtube.com/watch?v=8-8koApqnYA&t=480s",
+            "relevance": (
+                "Primary practitioner testimony on first-month county selection, claim "
+                "forms, notarization, originals, and building a starter prospect list."
+            ),
+        },
+        {
+            "title": "Money Making Juggernaut — How to start a Surplus Funds Business (45 min raw free game) [00:26:24]",
+            "url": "https://www.youtube.com/watch?v=R8B06ovsDXI&t=1584s",
+            "relevance": (
+                "Primary practitioner testimony on sale validation, existing claims, "
+                "lien research, and the distinction between judicial and nonjudicial files."
+            ),
+        },
+        {
+            "title": "SurplusFundsRiches — Surplus Funds: Owner Died - STILL CLAIM! [00:03:38]",
+            "url": "https://www.youtube.com/watch?v=1N1Z99kUvRw&t=218s",
+            "relevance": (
+                "Primary practitioner testimony on reading deeds and comparing death "
+                "and foreclosure dates in the speaker's survivorship example."
+            ),
+        },
+        {
+            "title": "Nick Fullmer- Overage Syndicate — 8 Surplus Funds Deals Within 3 Months of Starting The Business [00:23:28]",
+            "url": "https://www.youtube.com/watch?v=vd__NHmQYgM&t=1408s",
+            "relevance": (
+                "Primary practitioner testimony on the delay between signing a claim "
+                "and receiving income, including Fullmer's first-year cash-flow experience."
+            ),
+        },
+    ],
+    "source_citations": [
+        {
+            "source_type": "video_pro_tip",
+            "video_id": "01plOr9pFjQ",
+            "title": "How to Start a Tax Overage Business | Complete and Easy to Follow Guide",
+            "channel": "BizMove",
+            "author": "BizMove",
+            "text": "Your business depends on accurate data about tax sales and surplus funds.",
+            "tip": "Your business depends on accurate data about tax sales and surplus funds.",
+            "timestamp": 155,
+            "timestamp_seconds": 155,
+            "timestamp_label": "[00:02:35]",
+            "url": "https://www.youtube.com/watch?v=01plOr9pFjQ&t=155s",
+            "markdown": "[00:02:35](https://www.youtube.com/watch?v=01plOr9pFjQ&t=155s)",
+            "epistemic_status": "attributed_practitioner_claim",
+            "relevance": "Verbatim practitioner testimony from Chapter Q2.",
+        },
+        {
+            "source_type": "video_pro_tip",
+            "video_id": "1fbTnvEjC7M",
+            "title": "How to get started in Tax Overages with NO MONEY",
+            "channel": "Money Making Juggernaut",
+            "author": "Money Making Juggernaut",
+            "text": "The easiest way to skip trace them for free is truepeoplesearch.com.",
+            "tip": "The easiest way to skip trace them for free is truepeoplesearch.com.",
+            "timestamp": 144,
+            "timestamp_seconds": 144,
+            "timestamp_label": "[00:02:24]",
+            "url": "https://www.youtube.com/watch?v=1fbTnvEjC7M&t=144s",
+            "markdown": "[00:02:24](https://www.youtube.com/watch?v=1fbTnvEjC7M&t=144s)",
+            "epistemic_status": "attributed_practitioner_claim",
+            "relevance": "Verbatim practitioner testimony from Chapter Q2.",
+        },
+        {
+            "source_type": "video_pro_tip",
+            "video_id": "R8B06ovsDXI",
+            "title": "How to start a Surplus Funds Business (45 min raw free game)",
+            "channel": "Money Making Juggernaut",
+            "author": "Money Making Juggernaut",
+            "text": "First, we need to confirm it's sold to a third party.",
+            "tip": "First, we need to confirm it's sold to a third party.",
+            "timestamp": 1603,
+            "timestamp_seconds": 1603,
+            "timestamp_label": "[00:26:43]",
+            "url": "https://www.youtube.com/watch?v=R8B06ovsDXI&t=1603s",
+            "markdown": "[00:26:43](https://www.youtube.com/watch?v=R8B06ovsDXI&t=1603s)",
+            "epistemic_status": "attributed_practitioner_claim",
+            "relevance": "Verbatim practitioner testimony from Chapter Q2.",
+        },
+        {
+            "source_type": "video_pro_tip",
+            "video_id": "8-8koApqnYA",
+            "title": "How to Start a Surplus Funds Business in 2026 (Step by Step)",
+            "channel": "Alfred Taren",
+            "author": "Alfred Taren",
+            "text": "Doing the business is better than preparing for the business.",
+            "tip": "Doing the business is better than preparing for the business.",
+            "timestamp": 358,
+            "timestamp_seconds": 358,
+            "timestamp_label": "[00:05:58]",
+            "url": "https://www.youtube.com/watch?v=8-8koApqnYA&t=358s",
+            "markdown": "[00:05:58](https://www.youtube.com/watch?v=8-8koApqnYA&t=358s)",
+            "epistemic_status": "attributed_practitioner_claim",
+            "relevance": "Verbatim practitioner testimony from Chapter Q2.",
+        },
+        {
+            "source_type": "video_pro_tip",
+            "video_id": "vd__NHmQYgM",
+            "title": "8 Surplus Funds Deals Within 3 Months of Starting The Business",
+            "channel": "Nick Fullmer- Overage Syndicate",
+            "author": "Nick Fullmer- Overage Syndicate",
+            "text": "In this business for me, it's get a contract out every week, at a minimum.",
+            "tip": "In this business for me, it's get a contract out every week, at a minimum.",
+            "timestamp": 783,
+            "timestamp_seconds": 783,
+            "timestamp_label": "[00:13:03]",
+            "url": "https://www.youtube.com/watch?v=vd__NHmQYgM&t=783s",
+            "markdown": "[00:13:03](https://www.youtube.com/watch?v=vd__NHmQYgM&t=783s)",
+            "epistemic_status": "attributed_practitioner_claim",
+            "relevance": "Verbatim practitioner testimony from Chapter Q2.",
+        },
+        {
+            "source_type": "video_pro_tip",
+            "video_id": "lFoZDRAGylo",
+            "title": "How Much Money Can You *REALISTICALLY* Make With Surplus Funds Recovery",
+            "channel": "Money Making Juggernaut",
+            "author": "Money Making Juggernaut",
+            "text": "If you want to get paid consistently, you need to stack up your pipeline and put in the work every single week.",
+            "tip": "If you want to get paid consistently, you need to stack up your pipeline and put in the work every single week.",
+            "timestamp": 109,
+            "timestamp_seconds": 109,
+            "timestamp_label": "[00:01:49]",
+            "url": "https://www.youtube.com/watch?v=lFoZDRAGylo&t=109s",
+            "markdown": "[00:01:49](https://www.youtube.com/watch?v=lFoZDRAGylo&t=109s)",
+            "epistemic_status": "attributed_practitioner_claim",
+            "relevance": "Verbatim practitioner testimony from Chapter Q2.",
+        },
+        {
+            "source_type": "video_pro_tip",
+            "video_id": "bpxSOg1_xbE",
+            "title": "Top 5 Things Nobody Tells You About the Surplus Funds Recovery Business",
+            "channel": "Overage Acquisition",
+            "author": "Overage Acquisition",
+            "text": "Before working on any case, verify that no one else has already filed a claim for the surplus funds.",
+            "tip": "Before working on any case, verify that no one else has already filed a claim for the surplus funds.",
+            "timestamp": 125,
+            "timestamp_seconds": 125,
+            "timestamp_label": "[00:02:05]",
+            "url": "https://www.youtube.com/watch?v=bpxSOg1_xbE&t=125s",
+            "markdown": "[00:02:05](https://www.youtube.com/watch?v=bpxSOg1_xbE&t=125s)",
+            "epistemic_status": "attributed_practitioner_claim",
+            "relevance": "Verbatim practitioner testimony from Chapter Q2.",
+        },
+        {
+            "source_type": "video_pro_tip",
+            "video_id": "gB8lD75eL5I",
+            "title": "Beginner Made $67k On His 1st Surplus Funds Recovery Deal (Tax Deed Surplus)",
+            "channel": "Money Making Juggernaut",
+            "author": "Money Making Juggernaut",
+            "text": "I ended up talking to her, just being very friendly with her and being honest, and she signed with me at 35%.",
+            "tip": "I ended up talking to her, just being very friendly with her and being honest, and she signed with me at 35%.",
+            "timestamp": 527,
+            "timestamp_seconds": 527,
+            "timestamp_label": "[00:08:47]",
+            "url": "https://www.youtube.com/watch?v=gB8lD75eL5I&t=527s",
+            "markdown": "[00:08:47](https://www.youtube.com/watch?v=gB8lD75eL5I&t=527s)",
+            "epistemic_status": "attributed_practitioner_claim",
+            "relevance": "Verbatim practitioner testimony from Chapter Q2.",
+        },
+        {
+            "source_type": "video_pro_tip",
+            "video_id": "1N1Z99kUvRw",
+            "title": "Surplus Funds: Owner Died - STILL CLAIM!",
+            "channel": "SurplusFundsRiches",
+            "author": "SurplusFundsRiches",
+            "text": "With joint tenants with the right survivorship, the number one factor is the date of death.",
+            "tip": "With joint tenants with the right survivorship, the number one factor is the date of death.",
+            "timestamp": 218,
+            "timestamp_seconds": 218,
+            "timestamp_label": "[00:03:38]",
+            "url": "https://www.youtube.com/watch?v=1N1Z99kUvRw&t=218s",
+            "markdown": "[00:03:38](https://www.youtube.com/watch?v=1N1Z99kUvRw&t=218s)",
+            "epistemic_status": "attributed_practitioner_claim",
+            "relevance": "Verbatim practitioner testimony from Chapter Q2.",
+        },
+        {
+            "source_type": "video_pro_tip",
+            "video_id": "1uIxpXmBzuU",
+            "title": "He Did 12 Deals in 70 Hours ($300k in Surplus Funds Recovery)",
+            "channel": "Money Making Juggernaut",
+            "author": "Money Making Juggernaut",
+            "text": "Overall, total for everything about $300,000. But ours personally, like success fee or recovery fee, $80,000.",
+            "tip": "Overall, total for everything about $300,000. But ours personally, like success fee or recovery fee, $80,000.",
+            "timestamp": 264,
+            "timestamp_seconds": 264,
+            "timestamp_label": "[00:04:24]",
+            "url": "https://www.youtube.com/watch?v=1uIxpXmBzuU&t=264s",
+            "markdown": "[00:04:24](https://www.youtube.com/watch?v=1uIxpXmBzuU&t=264s)",
+            "epistemic_status": "attributed_practitioner_claim",
+            "relevance": "Verbatim practitioner testimony from Chapter Q2.",
+        },
+        {
+            "source_type": "video_pro_tip",
+            "video_id": "sK5PqCLSzzg",
+            "title": "How To Start Asset Recovery Business With $0 (Surplus Funds Recovery)",
+            "channel": "Money Making Juggernaut",
+            "author": "Money Making Juggernaut",
+            "text": "Anytime you're getting something for free, you're not sacrificing money, you're sacrificing your intelligence and your time.",
+            "tip": "Anytime you're getting something for free, you're not sacrificing money, you're sacrificing your intelligence and your time.",
+            "timestamp": 236,
+            "timestamp_seconds": 236,
+            "timestamp_label": "[00:03:56]",
+            "url": "https://www.youtube.com/watch?v=sK5PqCLSzzg&t=236s",
+            "markdown": "[00:03:56](https://www.youtube.com/watch?v=sK5PqCLSzzg&t=236s)",
+            "epistemic_status": "attributed_practitioner_claim",
+            "relevance": "Verbatim practitioner testimony from Chapter Q2.",
+        },
+        {
+            "source_type": "video_pro_tip",
+            "video_id": "8Rn25K08ct4",
+            "title": "💰 60-Day Mentorship Surplus Fund Recovery - WWW.SURPLUSCOURSES.COM - Rob Coles 💰",
+            "channel": "Surplus Funds Academy",
+            "author": "Surplus Funds Academy",
+            "text": "The first step in surplus funds recovery is identifying cases where surplus funds exist.",
+            "tip": "The first step in surplus funds recovery is identifying cases where surplus funds exist.",
+            "timestamp": 86,
+            "timestamp_seconds": 86,
+            "timestamp_label": "[00:01:26]",
+            "url": "https://www.youtube.com/watch?v=8Rn25K08ct4&t=86s",
+            "markdown": "[00:01:26](https://www.youtube.com/watch?v=8Rn25K08ct4&t=86s)",
+            "epistemic_status": "attributed_practitioner_claim",
+            "relevance": "Verbatim practitioner testimony from Chapter Q2.",
+        },
+        {
+            "source_type": "video_pro_tip",
+            "video_id": "fzvvdAGwCBM",
+            "title": "Surplus Funds: $100K: Partner $14K+",
+            "channel": "SurplusFundsRiches",
+            "author": "SurplusFundsRiches",
+            "text": "Our researcher partner will make 40% of whatever the net was. I'm assuming that's going to be around 14 grand.",
+            "tip": "Our researcher partner will make 40% of whatever the net was. I'm assuming that's going to be around 14 grand.",
+            "timestamp": 105,
+            "timestamp_seconds": 105,
+            "timestamp_label": "[00:01:45]",
+            "url": "https://www.youtube.com/watch?v=fzvvdAGwCBM&t=105s",
+            "markdown": "[00:01:45](https://www.youtube.com/watch?v=fzvvdAGwCBM&t=105s)",
+            "epistemic_status": "attributed_practitioner_claim",
+            "relevance": "Verbatim practitioner testimony from Chapter Q2.",
+        },
+        {
+            "source_type": "video_pro_tip",
+            "video_id": "uhyVFTeepew",
+            "title": "He Made $100k+ In His 1st Year With a Surplus Funds Recovery Business",
+            "channel": "Money Making Juggernaut",
+            "author": "Money Making Juggernaut",
+            "text": "First year, I don't know how many deals, but we did over six figures.",
+            "tip": "First year, I don't know how many deals, but we did over six figures.",
+            "timestamp": 33,
+            "timestamp_seconds": 33,
+            "timestamp_label": "[00:00:33]",
+            "url": "https://www.youtube.com/watch?v=uhyVFTeepew&t=33s",
+            "markdown": "[00:00:33](https://www.youtube.com/watch?v=uhyVFTeepew&t=33s)",
+            "epistemic_status": "attributed_practitioner_claim",
+            "relevance": "Verbatim practitioner testimony from Chapter Q2.",
+        },
+        {
+            "source_type": "video_pro_tip",
+            "video_id": "lLLfdrFLXFA",
+            "title": "This Little-Known Real Estate STRATEGY Can Make You Rich! (Surplus Funds Recovery Training)",
+            "channel": "Money Making Juggernaut",
+            "author": "Money Making Juggernaut",
+            "text": "We do not just skip trace, get back phone numbers, and that's it. We must look up family members, friends, neighbors, search on social media, a Google search.",
+            "tip": "We do not just skip trace, get back phone numbers, and that's it. We must look up family members, friends, neighbors, search on social media, a Google search.",
+            "timestamp": 593,
+            "timestamp_seconds": 593,
+            "timestamp_label": "[00:09:53]",
+            "url": "https://www.youtube.com/watch?v=lLLfdrFLXFA&t=593s",
+            "markdown": "[00:09:53](https://www.youtube.com/watch?v=lLLfdrFLXFA&t=593s)",
+            "epistemic_status": "attributed_practitioner_claim",
+            "relevance": "Verbatim practitioner testimony from Chapter Q2.",
+        },
+        {
+            "source_type": "video_pro_tip",
+            "video_id": "c50hZiiw2FU",
+            "title": "How to Start an Asset Recovery Business | Surplus Funds & 90-Day Business Mentorship",
+            "channel": "Hutch & Holmes",
+            "author": "Hutch & Holmes",
+            "text": "You do need a plan, and you do need accountability, but the most important part is you need someone to simply just tell you here is the next step.",
+            "tip": "You do need a plan, and you do need accountability, but the most important part is you need someone to simply just tell you here is the next step.",
+            "timestamp": 87,
+            "timestamp_seconds": 87,
+            "timestamp_label": "[00:01:27]",
+            "url": "https://www.youtube.com/watch?v=c50hZiiw2FU&t=87s",
+            "markdown": "[00:01:27](https://www.youtube.com/watch?v=c50hZiiw2FU&t=87s)",
+            "epistemic_status": "attributed_practitioner_claim",
+            "relevance": "Verbatim practitioner testimony from Chapter Q2.",
+        },
+    ],
+}

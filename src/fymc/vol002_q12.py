@@ -1,0 +1,884 @@
+from __future__ import annotations
+
+CHAPTER_12 = {
+    "id": "Q12",
+    "chapter_id": "Q12",
+    "chapter_number": 12,
+    "question_number": 12,
+    "slug": "build-a-repeatable-recovery-operation",
+    "question_prompt": "How do I turn individual recoveries into a repeatable operation while addressing payout delays, support needs, and recurring business failures?",
+    "kicker": "Q12 / THE BIG MONEY PLAYBOOKS",
+    "title": "Build a Repeatable Recovery Operation",
+    "subtitle": "CRM workflows, Surplus Rocket, automation, attorney recruitment and partnerships, payout speed, market saturation, and practitioner lessons on failure.",
+    "layout_template": "action_worksheet_summary",
+    "reading_time_minutes": 15,
+    "executive_summary": (
+        "Eric Richardson, Spencer Vann, and Unclaimed CEO put repeatable execution ahead of random list hunting: "
+        "choose a market, verify the opportunity, prepare the conversation, and follow up. Surplus Funds List "
+        "demonstrates a CRM connecting outreach, documents, tasks, and claimant updates; Surplus Systems adds "
+        "checklists and recurring support. Jordan Tejeda Marketing shows Surplus Rocket screening 2,165 leads "
+        "down to 254 viable opportunities and routing signed cases into attorney processing. Payout timing "
+        "remains separate from signing: Richardson describes waiting periods, trustee variation, and a pipeline "
+        "cushion before leaving employment. The disagreements are operationally substantial. Sean Bougie rejects "
+        "texting while Richardson uses automated follow-up; Unclaimed CEO avoids attorneys while other operators "
+        "build around them. Full Circle reports AI mistakes and attorney delays despite extensive automation."
+    ),
+    "key_metrics": [
+        {
+            "label": "Surplus Rocket lead screening",
+            "metric": "Surplus Rocket lead screening",
+            "value": "2,165 processed; 254 viable; $20,000 threshold",
+            "confidence": "attributed_practitioner_claim",
+            "context": (
+                "Jordan's dashboard showed these counts for the preceding 30 days. "
+                "Jordan described the threshold as leaving room for attorney compensation, "
+                "operator compensation, and the claimant's share."
+            ),
+            "source": "Jordan Tejeda Marketing ([-bhX4mtOKPs @ 00:01:09])",
+        },
+        {
+            "label": "Florida payout timing",
+            "metric": "Florida payout timing",
+            "value": "30 to 45 days",
+            "confidence": "attributed_practitioner_claim",
+            "context": (
+                "Richardson described this timing for Florida tax-sale claims after the "
+                "120-day period and separately for Florida mortgage foreclosures."
+            ),
+            "source": "Money Making Juggernaut ([9Tua3eW94Og @ 00:02:29])",
+        },
+        {
+            "label": "Living-case JV example remainder",
+            "metric": "Living-case JV example remainder",
+            "value": "$5,250 from a $10,000 fee",
+            "confidence": "attributed_practitioner_claim",
+            "context": (
+                "Jordan's worked example subtracts $2,500 for the lawyer, leaving $7,500, "
+                "then allocates $2,250 to the closer and $5,250 to the appointment-setting partner."
+            ),
+            "source": "Jordan Tejeda Marketing ([-bhX4mtOKPs @ 00:26:24])",
+        },
+        {
+            "label": "Surplus Systems live support",
+            "metric": "Surplus Systems live support",
+            "value": "Four live Q&A calls every week",
+            "confidence": "attributed_practitioner_claim",
+            "context": (
+                "Charlie describes Monday and Thursday sessions with Charlie and Tuesday "
+                "and Wednesday technical sessions, alongside individual technical help."
+            ),
+            "source": "Surplus Systems ([fsPM6ribYtI @ 00:02:03])",
+        },
+    ],
+    "sections": [
+        {
+            "id": "practitioner-consensus",
+            "title": "The Practitioner Consensus",
+            "paragraphs": [
+                (
+                    "The repeatable operation starts with a work pattern, not another random search for a surplus list. "
+                    "Eric Richardson tells operators to identify their states and counties, learn when those places hold "
+                    "sales, track results, organize the opportunities in a spreadsheet, and send the records for skip "
+                    "tracing. The record includes the owner's name, property address, amount owed, sale amount, potential "
+                    "surplus, parcel number, and case number. Richardson also wants a repeatable closing sequence: obtain "
+                    "the email address, send sale proof and company information, and follow up rather than treating one "
+                    "conversation as the finish line [k9f1r7jg4nA @ 00:01:43]. Spencer Vann arrives at the same demand "
+                    "for deliberate execution through a student's stalled start. The student moved between tax, state, "
+                    "and mortgage funds, then changed locations; months passed without settling on a niche and location. "
+                    "Vann says to pick both and complete a couple of deals before reconsidering the choice "
+                    "[OvHZIY5JYBY @ 00:02:52]. Unclaimed CEO adds preparation to that routine. Joe describes coaching "
+                    "people who locate a name and amount, then immediately start dialing to hit a hundred-person target. "
+                    "Joe objects that those callers have not prepared the details needed for the person to know, like, "
+                    "and trust them [c56x3h_z_XE @ 00:01:04]."
+                ),
+                (
+                    "The speakers also converge on checking whether the apparent opportunity can actually pay. Sean "
+                    "Bougie says a tax list can carry an outdated tax-office name rather than the last owner entitled "
+                    "to the funds. Bougie also says mortgages, equity lines, and liens can stand ahead of the former "
+                    "owner, so a list and a phone number are not the whole business. Bougie's research partner submits "
+                    "the list and debt research on a worksheet before the processing team takes over "
+                    "[Y7MXP9nRGuA @ 00:02:02]. Richardson attacks a related shortcut: assuming the difference between "
+                    "the winning bid and opening bid establishes a surplus. An opening bid may instead reflect part "
+                    "of an appraised value or an amount chosen by a trustee. Richardson tells operators to check "
+                    "the amount owed and include additional fees and interest when examining mortgage foreclosures "
+                    "[pZt-fAltsNk @ 00:00:53]. Jordan Tejeda Marketing shows how much filtering Surplus Rocket performs "
+                    "before a lead reaches the calling queue: 2,165 processed leads became 254 viable leads over "
+                    "30 days, with a $20,000 surplus threshold. Jordan explains that the threshold accommodates "
+                    "attorney compensation, operator compensation, and fairness to the claimant after fees. The "
+                    "dashboard distinguishes processed leads from the smaller set Jordan considers worth pursuing "
+                    "[-bhX4mtOKPs @ 00:01:09]."
+                ),
+                (
+                    "Support and handoffs are part of the operating system, not just something purchased when a "
+                    "file becomes difficult. Charlie's Surplus Systems walkthrough lays out a seven-day action plan "
+                    "covering business setup, lists, surplus verification, owner and lien verification, skip tracing, "
+                    "contact, follow-up, and paperwork. Operators can activate an SOP as a dedicated checklist and "
+                    "return to it under their saved checklists. Charlie describes adding new SOPs when users ask "
+                    "how to perform a task that is not already covered [fsPM6ribYtI @ 00:02:36]. Surplus Funds List "
+                    "puts the handoff inside a case record: schedule the homeowner's requested callback, update the "
+                    "client portal, generate signature documents, print details for an attorney, and upload documents "
+                    "received from the homeowner. The caller can see loan and lien information while speaking "
+                    "[lOnYUxDdOdI @ 00:04:10]. Full Circle's office-hours host describes the people behind a larger "
+                    "operation: five assistants, ten AI agents, and five callers, with FollowUpBoss used to keep "
+                    "track of the work. The host calls that CRM expensive but emphasizes having something manageable "
+                    "for calls and records. These operators describe specific places for tasks, documents, questions, "
+                    "and team activity rather than leaving the whole recovery in one person's memory "
+                    "[c2vik3KCA5g @ 00:38:45]."
+                ),
+            ],
+            "table": {
+                "caption": "The recurring operating practices practitioners actually describe",
+                "headers": ["Operating practice", "Practitioner execution", "Expert Source"],
+                "rows": [
+                    [
+                        "Replace random list hunting with a known auction calendar",
+                        "Richardson tracks chosen counties, sale frequency, results, and weekly opportunities before organizing the records and sending them for skip tracing.",
+                        "Money Making Juggernaut ([k9f1r7jg4nA @ 00:01:43])",
+                    ],
+                    [
+                        "Choose one niche and location before repeatedly changing direction",
+                        "Vann describes a student losing months to switching and recommends completing a couple of deals before reconsidering the initial choice.",
+                        "Spencer Vann ([OvHZIY5JYBY @ 00:02:52])",
+                    ],
+                    [
+                        "Prepare claimant details before chasing a daily dialing target",
+                        "Joe challenges callers who know only the amount and location of money but have not prepared the information needed to establish trust.",
+                        "Unclaimed CEO ([c56x3h_z_XE @ 00:01:04])",
+                    ],
+                    [
+                        "Check ownership and debt before treating a list as payable",
+                        "Bougie says tax-office names can be outdated and other debts can take priority, making ownership and debt research necessary work.",
+                        "SurplusFundsRiches ([Y7MXP9nRGuA @ 00:02:02])",
+                    ],
+                    [
+                        "Give unfinished research and paperwork a persistent checklist home",
+                        "Charlie demonstrates dedicated SOP checklists that remain available under the user's checklist area so work can be resumed and completed.",
+                        "Surplus Systems ([fsPM6ribYtI @ 00:02:36])",
+                    ],
+                    [
+                        "Keep claimant updates and attorney documents attached to the case",
+                        "The CRM walkthrough connects scheduled follow-up, client-portal status, generated signature documents, attorney printouts, and uploaded homeowner paperwork within case work.",
+                        "Surplus Funds List ([lOnYUxDdOdI @ 00:04:10])",
+                    ],
+                ],
+            },
+        },
+        {
+            "id": "street-mechanics",
+            "title": "Exact Street Mechanics, Tools & Numbers",
+            "paragraphs": [
+                (
+                    "Surplus Funds List demonstrates the daily CRM loop from intake through follow-up. Import outside "
+                    "leads into the workspace or select database leads and add them without downloading and reimporting "
+                    "files. Filter by sale type, source, status, state, county, stage, tags, proceeds, and sale date. "
+                    "The dashboard separates new leads, contacted leads, documents sent, signed cases, and claims filed; "
+                    "it also summarizes team calls and messages. Estimated revenue uses the cases being worked and "
+                    "the fees charged on them [lOnYUxDdOdI @ 00:01:06]. During outreach, the case view supplies "
+                    "homeowner details and contacts. The walkthrough shows removing numbers marked do-not-call before "
+                    "dialing, then using case-linked calling, text, email, and physical-letter options. A requested "
+                    "callback becomes a scheduled follow-up rather than an informal promise "
+                    "[lOnYUxDdOdI @ 00:03:15]. Charlie supplies the support layer for operators who cannot yet run "
+                    "those tools confidently: a fast-track trainer, help articles with videos, live chat, individual "
+                    "coaching, and a 60-minute technical call described as carrying no additional charge. Four weekly "
+                    "Q&A sessions cover technical and business questions. Charlie also offers trained virtual "
+                    "assistants, with preparation in the overage business and professional phone conversations, "
+                    "rather than describing the hire as an unexplained shortcut [fsPM6ribYtI @ 00:00:31]."
+                ),
+                (
+                    "Jordan's Surplus Rocket routine begins with vetted leads sorted newest first. Call-round tags "
+                    "record how many outreach rounds a lead has received, while the lead's serial number retrieves "
+                    "a record after newer opportunities bury it. A one-to-five-star score represents the platform's "
+                    "assessment of complexity and recovery speed. The record distinguishes living and deceased "
+                    "owners, single and multiple owners, and judicial and non-judicial recoveries "
+                    "[-bhX4mtOKPs @ 00:03:09]. Once Jordan closes a case, the claims portal carries it through case "
+                    "review, pending documents, pending filing, claim submission, response, release, funds received, "
+                    "and completion. Jordan's Alaska entity example required identification front and back plus "
+                    "the signed service agreement before attorney submission. The law firm sends updates every "
+                    "30 days to the claimant and Jordan, with the JV partner included when applicable "
+                    "[-bhX4mtOKPs @ 00:13:01]. Richardson's scaling training assigns the surrounding work to "
+                    "specific roles: researchers find opportunities and contact information, callers work the "
+                    "phones, a closer supplies a second voice, and an organizer maintains PDFs, documents, county "
+                    "follow-up, and outstanding issues. Richardson names virtualstaff.ph for research assistants "
+                    "at $4 to $5 an hour and Fiverr for cold-caller recruitment. The team must learn the work, "
+                    "not merely receive access to the software [Hzupqw4cjhI @ 00:12:32]."
+                ),
+                (
+                    "Attorney recruitment has a concrete pitch in Richardson's playbook. Search for a surplus funds "
+                    "attorney, real estate attorney, or foreclosure attorney in the claim's state. Richardson also "
+                    "names Free Consultation Attorney and lawyer.com as places to upload a case so attorneys can "
+                    "respond. The upload should identify the property, amount owed, judgment or delinquent taxes, "
+                    "sale amount, equity, and whether the claimant is the former owner or an heir. The value "
+                    "proposition is that the recovery business markets, contracts with clients, checks liens and "
+                    "ownership, supplies contact details, and brings continuing business "
+                    "[zrj6RA8N9HA @ 00:02:26]. Charlie complements that approach with attorney resources by state "
+                    "and a flat-fee negotiation walkthrough, including how to open the discussion and respond "
+                    "to a high quote [fsPM6ribYtI @ 00:04:44]. Jordan offers a different handoff: book an appointment "
+                    "with one of three closers, transfer claimant details and relevant notes, and let the closer "
+                    "handle closing and processing. In Jordan's $10,000 living-case fee example, the lawyer receives "
+                    "$2,500; the remaining $7,500 is divided into $2,250 for the closer and $5,250 for the partner. "
+                    "Jordan separately describes lawyer shares of 25% for living cases and 30% for deceased cases "
+                    "[-bhX4mtOKPs @ 00:17:21] [-bhX4mtOKPs @ 00:26:24]."
+                ),
+            ],
+            "table": {
+                "caption": "Execution surfaces, handoffs, and stated operating numbers",
+                "headers": ["Work surface or handoff", "Exact demonstrated mechanism", "Expert Source"],
+                "rows": [
+                    [
+                        "Bring fresh database records directly into the working pipeline",
+                        "Select the new database leads and import them into the workspace without a download-and-reupload cycle; the new indicator identifies recent updates.",
+                        "Surplus Funds List ([lOnYUxDdOdI @ 00:02:37])",
+                    ],
+                    [
+                        "Generate signature paperwork using a configured case-linked document template",
+                        "The assistant asks for the contract template, capacity, and charged percentage before sending paperwork; the walkthrough says templates must already be configured.",
+                        "Surplus Funds List ([lOnYUxDdOdI @ 00:11:20])",
+                    ],
+                    [
+                        "Sort vetted opportunities and preserve the history of outreach rounds",
+                        "Jordan uses newest-first vetted leads, call-round tags, and the individual serial number to find records as newly produced leads accumulate.",
+                        "Jordan Tejeda Marketing ([-bhX4mtOKPs @ 00:03:09])",
+                    ],
+                    [
+                        "Complete the living-case documents before selecting an attorney network",
+                        "Jordan's displayed case required identification front and back and the signed agreement; completed checklist items enabled submission and attorney selection.",
+                        "Jordan Tejeda Marketing ([-bhX4mtOKPs @ 00:15:14])",
+                    ],
+                    [
+                        "Explain the completed research and continuing business an attorney receives",
+                        "Richardson's partnership pitch includes contracted clients, lien checks, deed confirmation, claimant contact details, and continuing tracking of foreclosure sales.",
+                        "Money Making Juggernaut ([zrj6RA8N9HA @ 00:03:52])",
+                    ],
+                    [
+                        "Keep the living-case JV waterfall in the stated order",
+                        "Jordan takes $2,500 from a $10,000 fee for the lawyer, then allocates $2,250 to the closer and $5,250 to the partner.",
+                        "Jordan Tejeda Marketing ([-bhX4mtOKPs @ 00:26:24])",
+                    ],
+                ],
+            },
+            "callout": {
+                "kind": "INSIDER PRO-TIPS",
+                "title": "Small mechanisms that keep the file moving",
+                "body": "Practitioners name specific fixes for response speed, paperwork friction, outreach preparation, and staff follow-through.",
+                "items": [
+                    (
+                        "Turn replies into immediate calls: Richardson says Ken used a CRM push alert so a text reply "
+                        "buzzed the phone immediately, then called right away; Ken closed 23 deals in six months. "
+                        "[Money Making Juggernaut — DK8BPV7WVvI @ 00:09:57]"
+                    ),
+                    (
+                        "Put the agreement and a stamped return envelope inside the mailer. Richardson describes "
+                        "Philip receiving a signed agreement back on a Pennsylvania tax-sale recovery using that package. "
+                        "[Money Making Juggernaut — DK8BPV7WVvI @ 00:09:18]"
+                    ),
+                    (
+                        "Use recorded wins and losses for practice. Jordan's Thursday sessions combine mock calls "
+                        "with recordings of calls Jordan closed and calls Jordan did not close. "
+                        "[Jordan Tejeda Marketing — -bhX4mtOKPs @ 00:22:57]"
+                    ),
+                    (
+                        "Give the virtual assistant a daily operating reference. Charlie supplies hiring questions, "
+                        "performance-tracking resources, and a master SOP describing the coach's and assistant's work. "
+                        "[Surplus Systems — fsPM6ribYtI @ 00:07:57]"
+                    ),
+                ],
+            },
+            "sop_steps": [
+                {
+                    "step": 1,
+                    "title": "Establish the recurring lead intake",
+                    "action": "Choose the counties and states, track sales, and organize the case details.",
+                    "detail": (
+                        "Richardson's sequence records owner, property, debt, sale amount, potential surplus, parcel "
+                        "number, and case number before structured skip tracing. "
+                        "[Money Making Juggernaut — k9f1r7jg4nA @ 00:03:13]"
+                    ),
+                },
+                {
+                    "step": 2,
+                    "title": "Work and update the case record",
+                    "action": "Use the case view for outreach, callbacks, documents, and claimant status.",
+                    "detail": (
+                        "Surplus Funds List shows scheduled callbacks, client-portal progress, document generation, "
+                        "attorney printouts, and uploaded homeowner documents within the case workflow. "
+                        "[Surplus Funds List — lOnYUxDdOdI @ 00:04:10]"
+                    ),
+                },
+                {
+                    "step": 3,
+                    "title": "Prepare the processing handoff",
+                    "action": "Complete the required case documents and select the attorney network.",
+                    "detail": (
+                        "Jordan's living-case example needs front-and-back identification and the signed service "
+                        "agreement; the completed checklist enables attorney submission and review. "
+                        "[Jordan Tejeda Marketing — -bhX4mtOKPs @ 00:15:14]"
+                    ),
+                },
+                {
+                    "step": 4,
+                    "title": "Maintain the file after signature",
+                    "action": "Assign someone to documents, county follow-up, and unresolved issues.",
+                    "detail": (
+                        "Richardson's organizer keeps claim PDFs and documents together, follows up with the county, "
+                        "tracks remaining time, and identifies issues while other team members research and call. "
+                        "[Money Making Juggernaut — Hzupqw4cjhI @ 00:17:05]"
+                    ),
+                },
+            ],
+        },
+        {
+            "id": "disagreements",
+            "title": "Where Practitioners Disagree & Alternative Playbooks",
+            "paragraphs": [
+                (
+                    "Texting produces a direct disagreement. Sean Bougie says operators need mail as well as calls "
+                    "and flatly says texting does not work. Bougie also rejects withholding the source of the money "
+                    "until a contingency agreement is signed, arguing that secrecy sounds like an inheritance scam "
+                    "and breeds distrust. Bougie instead explains what created the funds, uses attorneys, and offers "
+                    "good-faith money at signing as part of the firm's approach [Y7MXP9nRGuA @ 00:03:09]. Richardson "
+                    "describes the opposite experience with text follow-up. Using Excess Equity CRM, Richardson "
+                    "runs an initial email and text, waits a day, follows up, waits another day, and continues "
+                    "to a final reach-out. Richardson says most responses come on the second or third text, "
+                    "not necessarily the first [pZt-fAltsNk @ 00:02:36]. The disagreement also reaches purchased "
+                    "lead supply. Bougie criticizes lists distributed to hundreds of people as worthless, while "
+                    "Jordan openly promotes a shared lead platform and says there is enough business for everyone "
+                    "[-bhX4mtOKPs @ 00:09:01]. Richardson's saturation argument emphasizes organized auction "
+                    "tracking, a defined marketing plan, and follow-up; Richardson even describes successful "
+                    "operators contacting ghosting prospects from other phone numbers. That is Richardson's "
+                    "aggressive follow-up account, alongside Bougie's preference for calls, mail, disclosure, "
+                    "and upfront good-faith money [7REA1e46Yvo @ 00:03:52]."
+                ),
+                (
+                    "Geographic breadth splits the playbooks just as clearly. Richardson's scaling training asks "
+                    "whether the business will work one state or the nation, then invites operators to pursue "
+                    "tax overages, mortgage overages, and state unclaimed funds. The next step is assembling "
+                    "researchers, callers, closers, and organizational support so one person's capacity does not "
+                    "limit the whole operation [Hzupqw4cjhI @ 00:01:41]. Jordan presents an attorney network covering "
+                    "45 states and a mortgage-foreclosure platform that supplies vetted, skip-traced opportunities. "
+                    "Jordan's own routine is newest-first vetted leads, not a single-state restriction "
+                    "[-bhX4mtOKPs @ 00:01:28]. Vann goes the other way for beginners: pick one niche and one "
+                    "geographic location, with state funds recommended as the easiest starting point. Vann's "
+                    "student example shows repeated switching consuming months before any settled execution "
+                    "[OvHZIY5JYBY @ 00:02:52]. Joe likewise tells operators not to bounce from state to state. "
+                    "Learn the chosen state's rules and work there; if the process is too daunting, make an "
+                    "actual move rather than continuing to bounce. Joe allows that beginners may initially "
+                    "test different places, but argues that one state can keep an operator busy for years. "
+                    "The contrast is between Richardson's multi-market staffing plan, Jordan's network-supported "
+                    "coverage, and Vann's and Joe's insistence on concentrated early execution "
+                    "[c56x3h_z_XE @ 00:03:18]."
+                ),
+                (
+                    "Attorney use and partnership scope are not interchangeable offers. Richardson calls attorneys "
+                    "valuable for deceased-owner claims, probate or summary administration, interpleader, counties "
+                    "that resist third-party companies, and claimant confidence. Richardson prefers a contingent "
+                    "arrangement but acknowledges that an unfamiliar attorney may request an upfront retainer "
+                    "[zrj6RA8N9HA @ 00:00:39]. Joe explicitly avoids attorneys and multiple-owner recoveries. Joe "
+                    "describes past attorney relationships as unpleasant, with attorneys either collecting "
+                    "payment for signing and submitting documents or trying to take over. Joe prefers recoveries "
+                    "completed with their own team [c56x3h_z_XE @ 00:06:30]. Bougie's partnership starts earlier "
+                    "in the process than a signed-client handoff: the partner obtains the list, researches "
+                    "debt, and submits a worksheet; Bougie's team locates people, calls and mails, negotiates, "
+                    "and hires the attorney and notary. Bougie contrasts that with programs requiring the partner "
+                    "to locate, contact, and contract the claimant before processing begins "
+                    "[Y7MXP9nRGuA @ 00:03:44]. Foreclosure Recovery Inc pitches attorneys a different role "
+                    "entirely: introduce former clients while the company verifies eligibility, files claims, "
+                    "and manages correspondence. The company advertises a 10% referral fee, typically $800 "
+                    "to $8,500 per case, with no upfront cost or ongoing work. Those are the company's stated "
+                    "referral economics, not Jordan's closer-and-lawyer split [pBzLGn7xg9U @ 00:00:31]."
+                ),
+            ],
+            "table": {
+                "caption": "Different operators choose different channels, scope, and division of labor",
+                "headers": ["Decision where approaches separate", "Contrasting practitioner positions", "Expert Source"],
+                "rows": [
+                    [
+                        "Choose whether texts belong inside the recurring outreach sequence",
+                        "Bougie says texting does not work; Richardson reports responses to second or third texts in an automated, day-separated follow-up sequence.",
+                        "SurplusFundsRiches ([Y7MXP9nRGuA @ 00:03:44]); Money Making Juggernaut ([pZt-fAltsNk @ 00:02:36])",
+                    ],
+                    [
+                        "Decide whether broadly shared lead lists fit the business",
+                        "Bougie attacks lists circulated to hundreds of partners; Jordan promotes Surplus Rocket while arguing there is enough business for everyone.",
+                        "SurplusFundsRiches ([Y7MXP9nRGuA @ 00:04:16]); Jordan Tejeda Marketing ([-bhX4mtOKPs @ 00:09:01])",
+                    ],
+                    [
+                        "Select concentrated early execution or a multi-market staffing plan",
+                        "Vann recommends one niche and location before changing direction; Richardson describes building a team to pursue multiple states and fund types.",
+                        "Spencer Vann ([OvHZIY5JYBY @ 00:04:14]); Money Making Juggernaut ([Hzupqw4cjhI @ 00:01:41])",
+                    ],
+                    [
+                        "Choose attorney-supported complexity or the simpler files Joe prefers",
+                        "Richardson uses attorneys for deceased claims and interpleader; Joe avoids attorneys and multiple-owner cases after disliking earlier attorney relationships.",
+                        "Money Making Juggernaut ([zrj6RA8N9HA @ 00:00:39]); Unclaimed CEO ([c56x3h_z_XE @ 00:06:30])",
+                    ],
+                    [
+                        "Distinguish researched-lead partnerships from appointment-setting and closing partnerships",
+                        "Bougie takes list and debt research before locating claimants; Jordan's JV route has partners book claimant appointments for a designated closer.",
+                        "SurplusFundsRiches ([Y7MXP9nRGuA @ 00:03:44]); Jordan Tejeda Marketing ([-bhX4mtOKPs @ 00:19:09])",
+                    ],
+                    [
+                        "Keep attorney introductions separate from Jordan's fee-sharing calculation",
+                        "Foreclosure Recovery Inc advertises a 10% referral fee for introductions; Jordan's example pays a lawyer first and splits the remainder with a closer.",
+                        "Foreclosure Recovery Inc ([pBzLGn7xg9U @ 00:00:31]); Jordan Tejeda Marketing ([-bhX4mtOKPs @ 00:26:24])",
+                    ],
+                ],
+            },
+        },
+        {
+            "id": "failure-modes",
+            "title": "Firsthand Failure Modes, Traps & Economics Checks",
+            "paragraphs": [
+                (
+                    "Payout expectations can break the operation even after the client signs. Richardson says not "
+                    "to leave employment immediately: counties do not pay overnight, and the student-lessons "
+                    "playbook recommends building about six months of deals in the pipeline first. That discussion "
+                    "describes a usual 30-to-90-day wait after filing [DK8BPV7WVvI @ 00:01:47]. Richardson's faster-payment "
+                    "discussion separates fund types and waiting periods. Florida tax-sale claims are described "
+                    "as paying in roughly 30 to 45 days after the initial 120-day period; Florida mortgage "
+                    "foreclosures are described without that same waiting period. Richardson recounts both "
+                    "fast and slow Texas recoveries depending on the trustee, and says probate or restoring "
+                    "a dissolved company can add work before payment [9Tua3eW94Og @ 00:02:29]. Foreclosure "
+                    "Recovery Inc advertises an average twelve-week recovery timeline for its service "
+                    "[pBzLGn7xg9U @ 00:01:11]. Jordan's economics example is about dividing an eventual fee: "
+                    "$10,000 becomes $5,250 for the partner after the stated lawyer and closer deductions. "
+                    "Jordan also presents a $3,000 upfront annual promotional offer and a $450 monthly "
+                    "plan reduced to $350 for the first three months through the described promotion. "
+                    "Jordan pitches those costs against a future recovery, while Richardson's examples "
+                    "describe why getting the recovery money can take time [-bhX4mtOKPs @ 00:26:09]."
+                ),
+                (
+                    "Automation has firsthand failure reports, not only enthusiastic demonstrations. Full Circle's "
+                    "host says ChatGPT is not an asset-recovery expert out of the box and that the team's AI "
+                    "hallucinates on small details. One example is an agent inventing a rule against quoting "
+                    "the available amount because the person was deceased. The team builds its own rules and "
+                    "SOPs into agents, combines models, and still repeatedly corrects the results "
+                    "[c2vik3KCA5g @ 00:01:19]. Joe takes a much more enthusiastic position, calling AI a "
+                    "personal assistant for writing, understanding laws, and structuring the business, and "
+                    "describes expanding the AI section of their course [c56x3h_z_XE @ 00:11:17]. Jordan "
+                    "demonstrates an industry-specific assistant answering a Texas divorce question. Jordan "
+                    "already knew the answer depended on title and the divorce decree, then suggests using "
+                    "the assistant's answer in an email or during a call [-bhX4mtOKPs @ 00:10:08]. The "
+                    "Full Circle host also describes a separate verification workload that persists "
+                    "alongside automation: scheduling the claimant and notary while checking everything "
+                    "learned from the client. Every case sent to the attorney carries a retainer in that "
+                    "operation, including a bad case. The host therefore insists on verifying information "
+                    "before sending it, because the retainer is still paid when the underlying case is "
+                    "wrong [c2vik3KCA5g @ 00:33:15]."
+                ),
+                (
+                    "The recurring failures are often ordinary execution failures with expensive consequences. "
+                    "Richardson says the phone still produces a racing heart, then describes making calls "
+                    "around a financial-adviser job and trying to contact 100 to 200 phone numbers each day. "
+                    "Richardson's response to fear is preparation and repetition, not waiting to feel "
+                    "fearless [TJMvg6ZeN5Y @ 00:00:47]. Joe describes a similar problem from earlier "
+                    "door-to-door knife selling: anticipating rejection killed their drive before the "
+                    "conversation. For recovery calls, Joe practiced with their spouse about 22 times "
+                    "rather than taking an unfamiliar script straight to strangers "
+                    "[c56x3h_z_XE @ 00:02:05]. Full Circle reports another bottleneck after substantial "
+                    "preparation: an attorney receives detailed materials but wants to study an unfamiliar "
+                    "argument independently, and the situation stretches into three weeks. The same host "
+                    "recounts being hung up on while proposing foreclosure help to an owner with two "
+                    "properties, substantial equity, and liens; the owner would not engage "
+                    "[c2vik3KCA5g @ 00:25:39]. Vann's student who kept changing niches supplies the opposite "
+                    "failure pattern: lots of learning and switching, but months without a settled market. "
+                    "Vann's correction is to focus long enough to complete deals. These accounts describe "
+                    "fear, resistance, unfinished learning, and slow handoffs inside real operations, "
+                    "rather than attributing every stalled file to market saturation "
+                    "[OvHZIY5JYBY @ 00:02:52]."
+                ),
+            ],
+            "table": {
+                "caption": "Reported bottlenecks and the operating responses practitioners describe",
+                "headers": ["Failure or economics check", "Reported experience and response", "Expert Source"],
+                "rows": [
+                    [
+                        "Do not replace current income before the recovery pipeline develops",
+                        "Richardson says payouts usually take 30 to 90 days after filing and recommends about six months of deals before leaving employment.",
+                        "Money Making Juggernaut ([DK8BPV7WVvI @ 00:01:47])",
+                    ],
+                    [
+                        "Separate fund-specific waiting periods from a fast-payment sales pitch",
+                        "Richardson reports Florida timing after applicable waiting periods and recounts Texas cases paying at different speeds depending on the trustee involved.",
+                        "Money Making Juggernaut ([9Tua3eW94Og @ 00:02:29])",
+                    ],
+                    [
+                        "Account for a retainer even when a submitted case fails",
+                        "Full Circle's host says every submitted case carries an attorney retainer, so incorrect client information still creates a paid attorney expense.",
+                        "Surplus Funds Secrets ([c2vik3KCA5g @ 00:33:59])",
+                    ],
+                    [
+                        "Watch for invented AI rules inside an otherwise automated workflow",
+                        "Full Circle reports an agent refusing to quote an amount because the claimant was deceased, despite extensive internal rules and repeated corrections.",
+                        "Surplus Funds Secrets ([c2vik3KCA5g @ 00:02:18])",
+                    ],
+                    [
+                        "Expect attorney research to remain a source of handoff delay",
+                        "Full Circle describes an attorney independently studying an unfamiliar matter despite receiving prepared materials, with the discussion reaching three weeks.",
+                        "Surplus Funds Secrets ([c2vik3KCA5g @ 00:29:18])",
+                    ],
+                    [
+                        "Agree how the operator gets paid when the client receives funds",
+                        "Richardson recounts a client paying through Zelle with a $5,000 limit, making payment take multiple days, and recommends discussing the method beforehand.",
+                        "Money Making Juggernaut ([DK8BPV7WVvI @ 00:16:27])",
+                    ],
+                ],
+            },
+            "callout": {
+                "kind": "OPERATOR GATE",
+                "title": "Checks drawn from the failures operators describe",
+                "body": "Use the practitioners' own recurring checks before treating a file, handoff, or payout as finished.",
+                "items": [
+                    (
+                        "Verify the actual debt rather than equating the opening bid with everything owed. "
+                        "Richardson describes operators signing clients and filing before discovering no surplus exists. "
+                        "[Money Making Juggernaut — pZt-fAltsNk @ 00:00:53]"
+                    ),
+                    (
+                        "Ask about second mortgages and liens while qualifying the claimant. Richardson identifies "
+                        "those omitted questions as a reason an apparent recovery cannot proceed for the former owner. "
+                        "[Money Making Juggernaut — pZt-fAltsNk @ 00:01:52]"
+                    ),
+                    (
+                        "Check the client's information before the paid attorney handoff. Full Circle's host "
+                        "pays a retainer even on a bad case and verifies what the team learns from the claimant. "
+                        "[Surplus Funds Secrets — c2vik3KCA5g @ 00:33:15]"
+                    ),
+                    (
+                        "Check whether preparation has turned into endless switching. Vann's student lost months "
+                        "moving between niches and locations; Vann says to complete a couple of deals before changing. "
+                        "[Spencer Vann — OvHZIY5JYBY @ 00:02:52]"
+                    ),
+                ],
+            },
+        },
+    ],
+    "pull_quote": (
+        "\"Remember guys, we can't control the outcome. We can only control the output.\" "
+        "— Money Making Juggernaut (TJMvg6ZeN5Y @ 00:05:00)."
+    ),
+    "diagram_id": "diag-08",
+    "action_checklist": [
+        (
+            "Choose the working counties and states, record their foreclosure schedules, and organize "
+            "sale results for recurring lead intake. "
+            "[Money Making Juggernaut — k9f1r7jg4nA @ 00:01:43]"
+        ),
+        (
+            "Use the research checklist to verify the surplus, determine the owner, check liens, "
+            "skip trace, make contact, and carry follow-up into paperwork. "
+            "[Surplus Systems — fsPM6ribYtI @ 00:02:36]"
+        ),
+        (
+            "Put callbacks, claimant status, signature documents, and returned paperwork into the "
+            "case workflow instead of handling each as a separate memory task. "
+            "[Surplus Funds List — lOnYUxDdOdI @ 00:04:10]"
+        ),
+        (
+            "Recruit an attorney with a concrete value pitch: contracted clients, lien research, "
+            "deed confirmation, claimant details, and continuing foreclosure opportunities. "
+            "[Money Making Juggernaut — zrj6RA8N9HA @ 00:03:52]"
+        ),
+        (
+            "If using Jordan's JV route, book the closer, transfer the claimant details, and include "
+            "relevant family or case notes before the appointment. "
+            "[Jordan Tejeda Marketing — -bhX4mtOKPs @ 00:19:09]"
+        ),
+        (
+            "Discuss how the operator will receive payment before a county check goes directly "
+            "to the client, including the possibility of payments arriving in pieces. "
+            "[Money Making Juggernaut — DK8BPV7WVvI @ 00:16:27]"
+        ),
+    ],
+    "statutory_citations": [
+        {
+            "title": (
+                "Surplus Funds List — How to Run a Surplus Funds Business with One CRM: "
+                "Full 2026 Walkthrough [00:04:10]"
+            ),
+            "url": "https://www.youtube.com/watch?v=lOnYUxDdOdI&t=250s",
+            "relevance": "Primary practitioner testimony on case-linked callbacks, claimant updates, documents, and attorney handoffs.",
+        },
+        {
+            "title": (
+                "Jordan Tejeda Marketing — How I Started A Asset Recovery Business & Scaled It "
+                "To Over 100K In The 1st Year/ Surplus Rocket!!! [00:26:24]"
+            ),
+            "url": "https://www.youtube.com/watch?v=-bhX4mtOKPs&t=1584s",
+            "relevance": "Primary practitioner testimony on the worked living-case lawyer and closer fee waterfall.",
+        },
+        {
+            "title": (
+                "Money Making Juggernaut — How To Get Paid FAST in Surplus Funds Recovery "
+                "(Asset Recovery Business) [00:02:29]"
+            ),
+            "url": "https://www.youtube.com/watch?v=9Tua3eW94Og&t=149s",
+            "relevance": "Primary practitioner testimony on payout timing and the distinction between tax and mortgage recoveries.",
+        },
+        {
+            "title": (
+                "Surplus Funds Secrets — Full Circle Asset Recovery LIVE | "
+                "Surplus Funds Office Hours & Q&A [00:33:59]"
+            ),
+            "url": "https://www.youtube.com/watch?v=c2vik3KCA5g&t=2039s",
+            "relevance": "Primary practitioner testimony on case verification and attorney retainers paid even on bad cases.",
+        },
+    ],
+    "source_citations": [
+        {
+            "source_type": "video_pro_tip",
+            "video_id": "DK8BPV7WVvI",
+            "title": "Give Me 17 Minutes, I’ll Give You 10,000 Hours of Surplus Funds Knowledge",
+            "channel": "Money Making Juggernaut",
+            "author": "Money Making Juggernaut",
+            "text": "If you want to do this full-time, don't quit your job yet. Counties don't pay overnight.",
+            "tip": "If you want to do this full-time, don't quit your job yet. Counties don't pay overnight.",
+            "timestamp": 107,
+            "timestamp_seconds": 107,
+            "timestamp_label": "[00:01:47]",
+            "url": "https://www.youtube.com/watch?v=DK8BPV7WVvI&t=107s",
+            "markdown": "[00:01:47](https://www.youtube.com/watch?v=DK8BPV7WVvI&t=107s)",
+            "epistemic_status": "attributed_practitioner_claim",
+            "relevance": "Verbatim practitioner testimony from Chapter Q12.",
+        },
+        {
+            "source_type": "video_pro_tip",
+            "video_id": "lOnYUxDdOdI",
+            "title": "How to Run a Surplus Funds Business with One CRM: Full 2026 Walkthrough",
+            "channel": "Surplus Funds List",
+            "author": "Surplus Funds List",
+            "text": "You can also update the status on the client portal so the homeowner can go on your site and search for the case.",
+            "tip": "You can also update the status on the client portal so the homeowner can go on your site and search for the case.",
+            "timestamp": 250,
+            "timestamp_seconds": 250,
+            "timestamp_label": "[00:04:10]",
+            "url": "https://www.youtube.com/watch?v=lOnYUxDdOdI&t=250s",
+            "markdown": "[00:04:10](https://www.youtube.com/watch?v=lOnYUxDdOdI&t=250s)",
+            "epistemic_status": "attributed_practitioner_claim",
+            "relevance": "Verbatim practitioner testimony from Chapter Q12.",
+        },
+        {
+            "source_type": "video_pro_tip",
+            "video_id": "9Tua3eW94Og",
+            "title": "How To Get Paid FAST in Surplus Funds Recovery (Asset Recovery Business)",
+            "channel": "Money Making Juggernaut",
+            "author": "Money Making Juggernaut",
+            "text": "Typically you can look to receive a check within 30 to 45 days after that initial period is done.",
+            "tip": "Typically you can look to receive a check within 30 to 45 days after that initial period is done.",
+            "timestamp": 149,
+            "timestamp_seconds": 149,
+            "timestamp_label": "[00:02:29]",
+            "url": "https://www.youtube.com/watch?v=9Tua3eW94Og&t=149s",
+            "markdown": "[00:02:29](https://www.youtube.com/watch?v=9Tua3eW94Og&t=149s)",
+            "epistemic_status": "attributed_practitioner_claim",
+            "relevance": "Verbatim practitioner testimony from Chapter Q12.",
+        },
+        {
+            "source_type": "video_pro_tip",
+            "video_id": "Y7MXP9nRGuA",
+            "title": "Surplus Funds: What They're Not Telling You     #surplusfunds #taxoverages",
+            "channel": "SurplusFundsRiches",
+            "author": "SurplusFundsRiches",
+            "text": "We tell them what created the funds and how we bring value to the table.",
+            "tip": "We tell them what created the funds and how we bring value to the table.",
+            "timestamp": 189,
+            "timestamp_seconds": 189,
+            "timestamp_label": "[00:03:09]",
+            "url": "https://www.youtube.com/watch?v=Y7MXP9nRGuA&t=189s",
+            "markdown": "[00:03:09](https://www.youtube.com/watch?v=Y7MXP9nRGuA&t=189s)",
+            "epistemic_status": "attributed_practitioner_claim",
+            "relevance": "Verbatim practitioner testimony from Chapter Q12.",
+        },
+        {
+            "source_type": "video_pro_tip",
+            "video_id": "zrj6RA8N9HA",
+            "title": "3 WAYS To Find A Surplus Funds Attorney FAST (Asset Recovery Business)",
+            "channel": "Money Making Juggernaut",
+            "author": "Money Making Juggernaut",
+            "text": "Go ahead and Google surplus funds attorney and the state that you're working.",
+            "tip": "Go ahead and Google surplus funds attorney and the state that you're working.",
+            "timestamp": 146,
+            "timestamp_seconds": 146,
+            "timestamp_label": "[00:02:26]",
+            "url": "https://www.youtube.com/watch?v=zrj6RA8N9HA&t=146s",
+            "markdown": "[00:02:26](https://www.youtube.com/watch?v=zrj6RA8N9HA&t=146s)",
+            "epistemic_status": "attributed_practitioner_claim",
+            "relevance": "Verbatim practitioner testimony from Chapter Q12.",
+        },
+        {
+            "source_type": "video_pro_tip",
+            "video_id": "c2vik3KCA5g",
+            "title": "Full Circle Asset Recovery LIVE | Surplus Funds Office Hours & Q&A",
+            "channel": "Surplus Funds Secrets",
+            "author": "Surplus Funds Secrets",
+            "text": "It doesn't matter if I've sent my attorney a bad case, he's still getting paid that retainer.",
+            "tip": "It doesn't matter if I've sent my attorney a bad case, he's still getting paid that retainer.",
+            "timestamp": 2060,
+            "timestamp_seconds": 2060,
+            "timestamp_label": "[00:34:20]",
+            "url": "https://www.youtube.com/watch?v=c2vik3KCA5g&t=2060s",
+            "markdown": "[00:34:20](https://www.youtube.com/watch?v=c2vik3KCA5g&t=2060s)",
+            "epistemic_status": "attributed_practitioner_claim",
+            "relevance": "Verbatim practitioner testimony from Chapter Q12.",
+        },
+        {
+            "source_type": "video_pro_tip",
+            "video_id": "pBzLGn7xg9U",
+            "title": "Attorney Partnership: Earn Passive Revenue from Surplus Fund Recoveries",
+            "channel": "Foreclosure Recovery Inc",
+            "author": "Foreclosure Recovery Inc",
+            "text": "When funds are recovered, you receive a 10% referral fee, typically $800 to $8,500 per case.",
+            "tip": "When funds are recovered, you receive a 10% referral fee, typically $800 to $8,500 per case.",
+            "timestamp": 31,
+            "timestamp_seconds": 31,
+            "timestamp_label": "[00:00:31]",
+            "url": "https://www.youtube.com/watch?v=pBzLGn7xg9U&t=31s",
+            "markdown": "[00:00:31](https://www.youtube.com/watch?v=pBzLGn7xg9U&t=31s)",
+            "epistemic_status": "attributed_practitioner_claim",
+            "relevance": "Verbatim practitioner testimony from Chapter Q12.",
+        },
+        {
+            "source_type": "video_pro_tip",
+            "video_id": "TJMvg6ZeN5Y",
+            "title": "Why 95% Of People FAIL at the Surplus Funds Recovery Business",
+            "channel": "Money Making Juggernaut",
+            "author": "Money Making Juggernaut",
+            "text": "Remember guys, we can't control the outcome. We can only control the output.",
+            "tip": "Remember guys, we can't control the outcome. We can only control the output.",
+            "timestamp": 300,
+            "timestamp_seconds": 300,
+            "timestamp_label": "[00:05:00]",
+            "url": "https://www.youtube.com/watch?v=TJMvg6ZeN5Y&t=300s",
+            "markdown": "[00:05:00](https://www.youtube.com/watch?v=TJMvg6ZeN5Y&t=300s)",
+            "epistemic_status": "attributed_practitioner_claim",
+            "relevance": "Verbatim practitioner testimony from Chapter Q12.",
+        },
+        {
+            "source_type": "video_pro_tip",
+            "video_id": "-bhX4mtOKPs",
+            "title": "How I Started A Asset Recovery Business & Scaled It To Over 100K In The 1st Year/ Surplus Rocket!!!",
+            "channel": "Jordan Tejeda Marketing",
+            "author": "Jordan Tejeda Marketing",
+            "text": "The lawyer gets $2,500, leaves us with $7,500. It's a 70-30% split for JV partnering.",
+            "tip": "The lawyer gets $2,500, leaves us with $7,500. It's a 70-30% split for JV partnering.",
+            "timestamp": 1584,
+            "timestamp_seconds": 1584,
+            "timestamp_label": "[00:26:24]",
+            "url": "https://www.youtube.com/watch?v=-bhX4mtOKPs&t=1584s",
+            "markdown": "[00:26:24](https://www.youtube.com/watch?v=-bhX4mtOKPs&t=1584s)",
+            "epistemic_status": "attributed_practitioner_claim",
+            "relevance": "Verbatim practitioner testimony from Chapter Q12.",
+        },
+        {
+            "source_type": "video_pro_tip",
+            "video_id": "fsPM6ribYtI",
+            "title": "Surplus Funds Recovery Business: Training, Tools & Support Included",
+            "channel": "Surplus Systems",
+            "author": "Surplus Systems",
+            "text": "We do four live Q&A calls every single week.",
+            "tip": "We do four live Q&A calls every single week.",
+            "timestamp": 123,
+            "timestamp_seconds": 123,
+            "timestamp_label": "[00:02:03]",
+            "url": "https://www.youtube.com/watch?v=fsPM6ribYtI&t=123s",
+            "markdown": "[00:02:03](https://www.youtube.com/watch?v=fsPM6ribYtI&t=123s)",
+            "epistemic_status": "attributed_practitioner_claim",
+            "relevance": "Verbatim practitioner testimony from Chapter Q12.",
+        },
+        {
+            "source_type": "video_pro_tip",
+            "video_id": "7REA1e46Yvo",
+            "title": "How Saturated Is The Surplus Funds Recovery Business Model?",
+            "channel": "Money Making Juggernaut",
+            "author": "Money Making Juggernaut",
+            "text": "Those who succeed are well organized. They have a consistent tracking on auction results.",
+            "tip": "Those who succeed are well organized. They have a consistent tracking on auction results.",
+            "timestamp": 232,
+            "timestamp_seconds": 232,
+            "timestamp_label": "[00:03:52]",
+            "url": "https://www.youtube.com/watch?v=7REA1e46Yvo&t=232s",
+            "markdown": "[00:03:52](https://www.youtube.com/watch?v=7REA1e46Yvo&t=232s)",
+            "epistemic_status": "attributed_practitioner_claim",
+            "relevance": "Verbatim practitioner testimony from Chapter Q12.",
+        },
+        {
+            "source_type": "video_pro_tip",
+            "video_id": "k9f1r7jg4nA",
+            "title": "My FAIL-PROOF Surplus Funds Recovery System (Close More Deals)",
+            "channel": "Money Making Juggernaut",
+            "author": "Money Making Juggernaut",
+            "text": "Every single week, every single month, you should know exactly what counties, exactly what states you're working.",
+            "tip": "Every single week, every single month, you should know exactly what counties, exactly what states you're working.",
+            "timestamp": 103,
+            "timestamp_seconds": 103,
+            "timestamp_label": "[00:01:43]",
+            "url": "https://www.youtube.com/watch?v=k9f1r7jg4nA&t=103s",
+            "markdown": "[00:01:43](https://www.youtube.com/watch?v=k9f1r7jg4nA&t=103s)",
+            "epistemic_status": "attributed_practitioner_claim",
+            "relevance": "Verbatim practitioner testimony from Chapter Q12.",
+        },
+        {
+            "source_type": "video_pro_tip",
+            "video_id": "Hzupqw4cjhI",
+            "title": "Surplus Funds Recovery: Scaling & Automation [Full Training]",
+            "channel": "Money Making Juggernaut",
+            "author": "Money Making Juggernaut",
+            "text": "You got to get your team together. You have to be able to identify their roles.",
+            "tip": "You got to get your team together. You have to be able to identify their roles.",
+            "timestamp": 1061,
+            "timestamp_seconds": 1061,
+            "timestamp_label": "[00:17:41]",
+            "url": "https://www.youtube.com/watch?v=Hzupqw4cjhI&t=1061s",
+            "markdown": "[00:17:41](https://www.youtube.com/watch?v=Hzupqw4cjhI&t=1061s)",
+            "epistemic_status": "attributed_practitioner_claim",
+            "relevance": "Verbatim practitioner testimony from Chapter Q12.",
+        },
+        {
+            "source_type": "video_pro_tip",
+            "video_id": "pZt-fAltsNk",
+            "title": "AVOID These 5 Common Surplus Funds Recovery MISTAKES",
+            "channel": "Money Making Juggernaut",
+            "author": "Money Making Juggernaut",
+            "text": "Most clients respond to typically that second or third text.",
+            "tip": "Most clients respond to typically that second or third text.",
+            "timestamp": 171,
+            "timestamp_seconds": 171,
+            "timestamp_label": "[00:02:51]",
+            "url": "https://www.youtube.com/watch?v=pZt-fAltsNk&t=171s",
+            "markdown": "[00:02:51](https://www.youtube.com/watch?v=pZt-fAltsNk&t=171s)",
+            "epistemic_status": "attributed_practitioner_claim",
+            "relevance": "Verbatim practitioner testimony from Chapter Q12.",
+        },
+        {
+            "source_type": "video_pro_tip",
+            "video_id": "OvHZIY5JYBY",
+            "title": "Why most people fail at Surplus Funds and Overages",
+            "channel": "Spencer Vann",
+            "author": "Spencer Vann",
+            "text": "Step number one is have focus. Pick a niche and pick a geographic location.",
+            "tip": "Step number one is have focus. Pick a niche and pick a geographic location.",
+            "timestamp": 267,
+            "timestamp_seconds": 267,
+            "timestamp_label": "[00:04:27]",
+            "url": "https://www.youtube.com/watch?v=OvHZIY5JYBY&t=267s",
+            "markdown": "[00:04:27](https://www.youtube.com/watch?v=OvHZIY5JYBY&t=267s)",
+            "epistemic_status": "attributed_practitioner_claim",
+            "relevance": "Verbatim practitioner testimony from Chapter Q12.",
+        },
+        {
+            "source_type": "video_pro_tip",
+            "video_id": "c56x3h_z_XE",
+            "title": "Why 90% of People Fail in the Tax Surplus Industry (And How to Avoid It)",
+            "channel": "Unclaimed CEO",
+            "author": "Unclaimed CEO",
+            "text": "Do not bounce around from state to state to state. If you decide you are going to abandon a state, then just be done with it.",
+            "tip": "Do not bounce around from state to state to state. If you decide you are going to abandon a state, then just be done with it.",
+            "timestamp": 215,
+            "timestamp_seconds": 215,
+            "timestamp_label": "[00:03:35]",
+            "url": "https://www.youtube.com/watch?v=c56x3h_z_XE&t=215s",
+            "markdown": "[00:03:35](https://www.youtube.com/watch?v=c56x3h_z_XE&t=215s)",
+            "epistemic_status": "attributed_practitioner_claim",
+            "relevance": "Verbatim practitioner testimony from Chapter Q12.",
+        },
+    ],
+}

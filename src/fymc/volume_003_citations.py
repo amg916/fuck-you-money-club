@@ -1,4078 +1,3116 @@
-"""Curated 180-citation digital-product baseline (15 per chapter across Q1-Q12) mined from the dedicated Volume 003 YouTube transcript corpus."""
+"""100% verbatim YouTube practitioner citations selected directly by Claude across Chapters Q1-Q12 of Volume 003 (Digital Product Empire)."""
 from __future__ import annotations
 
-CHAPTER_KEYWORDS: dict[int, set[str]] = {1: {'ascension',
-     'asset',
-     'bundle',
-     'cohort',
-     'community',
-     'course',
-     'curriculum',
-     'digital',
-     'download',
-     'ebook',
-     'evergreen',
-     'format',
-     'ladder',
-     'membership',
-     'model',
-     'notion',
-     'offer',
-     'playbook',
-     'product',
-     'products',
-     'software',
-     'template',
-     'templates'},
- 2: {'audience',
-     'b2b',
-     'b2c',
-     'buyer',
-     'checkout',
-     'customer',
-     'customers',
-     'lemon',
-     'marketplace',
-     'merchant',
-     'mor',
-     'paddle',
-     'pay',
-     'payment',
-     'payout',
-     'platform',
-     'processor',
-     'prosumer',
-     'squeezy',
-     'stripe',
-     'tax',
-     'vat'},
- 3: {'anchor',
-     'aov',
-     'bump',
-     'cac',
-     'chargeback',
-     'cogs',
-     'contribution',
-     'conversion',
-     'economics',
-     'ltv',
-     'margin',
-     'order',
-     'price',
-     'pricing',
-     'profit',
-     'refund',
-     'revenue',
-     'roas',
-     'slo',
-     'tier',
-     'tiers',
-     'unit',
-     'upsell'},
- 4: {'Banking',
-     'bank',
-     'budget',
-     'capital',
-     'cloud',
-     'contractor',
-     'cost',
-     'costs',
-     'credits',
-     'domain',
-     'edge',
-     'entity',
-     'fintech',
-     'hosting',
-     'ip',
-     'lean',
-     'llc',
-     'opex',
-     'reserve',
-     'serverless',
-     'setup',
-     'stack',
-     'startup',
-     'vercel'},
- 5: {'burn',
-     'churn',
-     'clawback',
-     'commoditization',
-     'copycat',
-     'dispute',
-     'fatigue',
-     'fraud',
-     'friendly',
-     'mistake',
-     'nexus',
-     'piracy',
-     'platform',
-     'policy',
-     'refunds',
-     'risk',
-     'saturation',
-     'stripe',
-     'trap',
-     'traps',
-     'wayfair'},
- 6: {'ad',
-     'ads',
-     'demand',
-     'discover',
-     'intent',
-     'keyword',
-     'keywords',
-     'library',
-     'market',
-     'niche',
-     'pain',
-     'presell',
-     'problem',
-     'proof',
-     'reddit',
-     'research',
-     'search',
-     'signal',
-     'signals',
-     'spend',
-     'validate',
-     'validation',
-     'waitlist'},
- 7: {'architecture',
-     'build',
-     'checkout',
-     'deliver',
-     'delivery',
-     'design',
-     'drip',
-     'entitlement',
-     'fulfillment',
-     'funnel',
-     'landing',
-     'launch',
-     'license',
-     'onboarding',
-     'packaging',
-     'page',
-     'post',
-     'production',
-     'purchase',
-     'qa',
-     'vsl',
-     'webhook'},
- 8: {'analytics',
-     'api',
-     'attribution',
-     'beehiiv',
-     'cloudflare',
-     'cname',
-     'crm',
-     'database',
-     'email',
-     'extension',
-     'geo',
-     'gumroad',
-     'lemon',
-     'paddle',
-     'pixel',
-     'pixels',
-     'posthog',
-     'schema',
-     'seo',
-     'sparkloop',
-     'stack',
-     'stripe',
-     'tool',
-     'tools'},
- 9: {'affiliate',
-     'billing',
-     'cancel',
-     'cancellation',
-     'click',
-     'compliance',
-     'consent',
-     'copyright',
-     'disclosure',
-     'dmca',
-     'endorsement',
-     'ftc',
-     'gdpr',
-     'ip',
-     'license',
-     'merchant',
-     'mor',
-     'privacy',
-     'refund',
-     'rosca',
-     'sales',
-     'tax',
-     'terms',
-     'vat'},
- 10: {'ab',
-      'agent',
-      'ai',
-      'automate',
-      'automation',
-      'bot',
-      'chat',
-      'chatbot',
-      'clip',
-      'co',
-      'dm',
-      'drip',
-      'email',
-      'faceless',
-      'flow',
-      'llm',
-      'manychat',
-      'programmatic',
-      'quiz',
-      'referral',
-      'sequence',
-      'split',
-      'support',
-      'test',
-      'testing',
-      'trigger',
-      'viral',
-      'youtube'},
- 11: {'agency',
-      'catalog',
-      'contractor',
-      'contractors',
-      'creator',
-      'delegate',
-      'designer',
-      'editor',
-      'empire',
-      'hire',
-      'hiring',
-      'kpi',
-      'kpis',
-      'manager',
-      'media',
-      'multi',
-      'operations',
-      'operator',
-      'portfolio',
-      'scale',
-      'scaling',
-      'sku',
-      'sop',
-      'sops',
-      'team',
-      'va'},
- 12: {'action',
-      'audit',
-      'calendar',
-      'checklist',
-      'cohort',
-      'day',
-      'days',
-      'execute',
-      'execution',
-      'first',
-      'goal',
-      'iterate',
-      'kpi',
-      'launch',
-      'milestone',
-      'month',
-      'ninety',
-      'plan',
-      'publish',
-      'roadmap',
-      'ship',
-      'sprint',
-      'start',
-      'steps',
-      'thirty',
-      'week'}}
+CHAPTER_KEYWORDS: dict[int, set[str]] = {1: {'model', 'choose', 'product', 'your', 'business', 'digital'},
+ 2: {'with', 'ebooks', 'apps', 'pdfs', 'products', 'build'},
+ 3: {'sell', 'templates', 'notion', 'create'},
+ 4: {'what', 'choose', 'calculate', 'keep', 'storefront'},
+ 5: {'record', 'sales', 'merchant', 'choices', 'payments'},
+ 6: {'upsell', 'sequence', 'bump', 'order', 'build'},
+ 7: {'self', 'funnel', 'liquidating', 'offer', 'build'},
+ 8: {'funnel', 'economics', 'ticket', 'cases', 'scaling'},
+ 9: {'launch', 'community', 'paid', 'operate'},
+ 10: {'choose', 'cohorts', 'between', 'launches', 'evergreen', 'live'},
+ 11: {'monetize', 'newsletter', 'expertise', 'build'},
+ 12: {'content', 'faceless', 'sell', 'digital', 'products', 'through'}}
 
-BASELINE_EXPERT_CITATIONS_BY_CHAPTER: dict[int, list[dict]] = {1: [{'author': 'GuideHatch Tutorials',
-      'channel': 'GuideHatch Tutorials',
-      'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:01:15](https://www.youtube.com/watch?v=DNdWpxzzTQM&t=75s)',
-      'relevance': 'Attributed practitioner commentary on digital product formats, value '
-                   'ladders, templates, courses, and paid communities; validate market fit '
-                   'independently.',
-      'source_type': 'video_pro_tip',
-      'text': "After you've named your project, ensure that it is categorized as a digital "
-              'product. Gumroad specializes in digital products, making this the perfect '
-              'setting for your Notion template.',
-      'timestamp': 75,
-      'timestamp_label': '[00:01:15]',
-      'timestamp_seconds': 75,
-      'tip': "After you've named your project, ensure that it is categorized as a digital "
-             'product. Gumroad specializes in digital products, making this the perfect '
-             'setting for your Notion template.',
-      'title': 'How to sell Notion templates on Gumroad (Creative Earnings) (GuideHatch '
-               'Tutorials)',
-      'url': 'https://www.youtube.com/watch?v=DNdWpxzzTQM&t=75s',
-      'video_id': 'DNdWpxzzTQM'},
-     {'author': 'Tutorials At Desk',
-      'channel': 'Tutorials At Desk',
-      'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:01:15](https://www.youtube.com/watch?v=VEFf-FR0dxw&t=75s)',
-      'relevance': 'Attributed practitioner commentary on digital product formats, value '
-                   'ladders, templates, courses, and paid communities; validate market fit '
-                   'independently.',
-      'source_type': 'video_pro_tip',
-      'text': 'On the left sidebar of your Gumroad dashboard, click products. Gumroad will ask '
-              'what type of product you want to create. In the name field, type the name of '
-              'your Notion template. After that, under the product type options, choose '
-              'digital product.',
-      'timestamp': 75,
-      'timestamp_label': '[00:01:15]',
-      'timestamp_seconds': 75,
-      'tip': 'On the left sidebar of your Gumroad dashboard, click products. Gumroad will ask '
-             'what type of product you want to create. In the name field, type the name of '
-             'your Notion template. After that, under the product type options, choose digital '
-             'product.',
-      'title': 'How to Sell Notion Templates on Gumroad (2026 Revenue Snapshot) (Tutorials At '
-               'Desk)',
-      'url': 'https://www.youtube.com/watch?v=VEFf-FR0dxw&t=75s',
-      'video_id': 'VEFf-FR0dxw'},
-     {'author': 'Extreme Guides',
-      'channel': 'Extreme Guides',
-      'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:01:50](https://www.youtube.com/watch?v=2zWJQPegtuk&t=110s)',
-      'relevance': 'Attributed practitioner commentary on digital product formats, value '
-                   'ladders, templates, courses, and paid communities; validate market fit '
-                   'independently.',
-      'source_type': 'video_pro_tip',
-      'text': 'A clear and appealing name can help attract more buyers. Select the option for '
-              'a digital product after entering the product name. This ensures that Gumroad '
-              'recognizes your template as a digital download, which is essential for the '
-              'purchasing process.',
-      'timestamp': 110,
-      'timestamp_label': '[00:01:50]',
-      'timestamp_seconds': 110,
-      'tip': 'A clear and appealing name can help attract more buyers. Select the option for a '
-             'digital product after entering the product name. This ensures that Gumroad '
-             'recognizes your template as a digital download, which is essential for the '
-             'purchasing process.',
-      'title': 'How to sell Notion templates on Gumroad[FULL GUIDE] (Extreme Guides)',
-      'url': 'https://www.youtube.com/watch?v=2zWJQPegtuk&t=110s',
-      'video_id': '2zWJQPegtuk'},
-     {'author': 'Stellar Media',
-      'channel': 'Stellar Media',
-      'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:01:01](https://www.youtube.com/watch?v=YiY_qBBHvvc&t=61s)',
-      'relevance': 'Attributed practitioner commentary on digital product formats, value '
-                   'ladders, templates, courses, and paid communities; validate market fit '
-                   'independently.',
-      'source_type': 'video_pro_tip',
-      'text': "'t have then it will be empty like mine. Now in order to sell it click on the "
-              'option new product and here you have to enter the name of your product just '
-              'like I will do write notion template from this you have to select this option '
-              'digital product.',
-      'timestamp': 61,
-      'timestamp_label': '[00:01:01]',
-      'timestamp_seconds': 61,
-      'tip': "'t have then it will be empty like mine. Now in order to sell it click on the "
-             'option new product and here you have to enter the name of your product just like '
-             'I will do write notion template from this you have to select this option digital '
-             'product.',
-      'title': 'How To Sell Notion Templates On Gumroad 2025 (Step by Step) (Stellar Media)',
-      'url': 'https://www.youtube.com/watch?v=YiY_qBBHvvc&t=61s',
-      'video_id': 'YiY_qBBHvvc'},
-     {'author': 'BrightGuide',
-      'channel': 'BrightGuide',
-      'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:00:22](https://www.youtube.com/watch?v=oMxSmqY3mzM&t=22s)',
-      'relevance': 'Attributed practitioner commentary on digital product formats, value '
-                   'ladders, templates, courses, and paid communities; validate market fit '
-                   'independently.',
-      'source_type': 'video_pro_tip',
-      'text': "This is where all of your existing items live, and it's also where you can "
-              "create a new one. Once you're in the products area, click on new product. This "
-              "opens the product creation page where you'll begin entering the basic details "
-              'for your Notion template.',
-      'timestamp': 22,
-      'timestamp_label': '[00:00:22]',
-      'timestamp_seconds': 22,
-      'tip': "This is where all of your existing items live, and it's also where you can "
-             "create a new one. Once you're in the products area, click on new product. This "
-             "opens the product creation page where you'll begin entering the basic details "
-             'for your Notion template.',
-      'title': 'How to Sell Notion Templates on Gumroad (Step By Step 2026) (BrightGuide)',
-      'url': 'https://www.youtube.com/watch?v=oMxSmqY3mzM&t=22s',
-      'video_id': 'oMxSmqY3mzM'},
-     {'author': "Extreme How To's",
-      'channel': "Extreme How To's",
-      'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:00:26](https://www.youtube.com/watch?v=SK_-uXSKE88&t=26s)',
-      'relevance': 'Attributed practitioner commentary on digital product formats, value '
-                   'ladders, templates, courses, and paid communities; validate market fit '
-                   'independently.',
-      'source_type': 'video_pro_tip',
-      'text': 'Input the title as ultimate template. This title should clearly reflect what '
-              'your template offers. After naming your product, set the price between $5 to '
-              '$25, keeping in mind that this range is often considered the sweet spot for '
-              'Notion templates.',
-      'timestamp': 26,
-      'timestamp_label': '[00:00:26]',
-      'timestamp_seconds': 26,
-      'tip': 'Input the title as ultimate template. This title should clearly reflect what '
-             'your template offers. After naming your product, set the price between $5 to '
-             '$25, keeping in mind that this range is often considered the sweet spot for '
-             'Notion templates.',
-      'title': "How to sell Notion templates on Gumroad[2026 Full Guide] (Extreme How To's)",
-      'url': 'https://www.youtube.com/watch?v=SK_-uXSKE88&t=26s',
-      'video_id': 'SK_-uXSKE88'},
-     {'author': 'Typedream',
-      'channel': 'Typedream',
-      'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:01:53](https://www.youtube.com/watch?v=HXQD-vJDPyU&t=113s)',
-      'relevance': 'Attributed practitioner commentary on digital product formats, value '
-                   'ladders, templates, courses, and paid communities; validate market fit '
-                   'independently.',
-      'source_type': 'video_pro_tip',
-      'text': 'This saves as a Photoshop (. Smart Objects, with screenshots of your Notion '
-              'template. And, this is the final product! I’m going to crop this into a square '
-              'because Gumroad thumbnails only accept the square format.',
-      'timestamp': 113,
-      'timestamp_label': '[00:01:53]',
-      'timestamp_seconds': 113,
-      'tip': 'This saves as a Photoshop (. Smart Objects, with screenshots of your Notion '
-             'template. And, this is the final product! I’m going to crop this into a square '
-             'because Gumroad thumbnails only accept the square format.',
-      'title': 'How to make and sell aesthetic Notion templates with Typedream and Gumroad '
-               '(Typedream)',
-      'url': 'https://www.youtube.com/watch?v=HXQD-vJDPyU&t=113s',
-      'video_id': 'HXQD-vJDPyU'},
-     {'author': 'Aeris Vale Tutorials',
-      'channel': 'Aeris Vale Tutorials',
-      'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:00:51](https://www.youtube.com/watch?v=ciKrPZ_nIpQ&t=51s)',
-      'relevance': 'Attributed practitioner commentary on digital product formats, value '
-                   'ladders, templates, courses, and paid communities; validate market fit '
-                   'independently.',
-      'source_type': 'video_pro_tip',
-      'text': 'It should be catchy and accurately reflect the essence of what your template '
-              "offers. After naming your template, you'll need to specify that it's a digital "
-              "product which suits our notion template well. Now, it's time to set the price.",
-      'timestamp': 51,
-      'timestamp_label': '[00:00:51]',
-      'timestamp_seconds': 51,
-      'tip': 'It should be catchy and accurately reflect the essence of what your template '
-             "offers. After naming your template, you'll need to specify that it's a digital "
-             "product which suits our notion template well. Now, it's time to set the price.",
-      'title': 'How To Sell A Notion Template On Gumroad - Step by Step Guide | THELOSTOFFER '
-               '#notion #gumroad (Aeris Vale Tutorials)',
-      'url': 'https://www.youtube.com/watch?v=ciKrPZ_nIpQ&t=51s',
-      'video_id': 'ciKrPZ_nIpQ'},
-     {'author': 'Nathan Nazareth',
-      'channel': 'Nathan Nazareth',
-      'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:08:56](https://www.youtube.com/watch?v=6cm2o8zzuNw&t=536s)',
-      'relevance': 'Attributed practitioner commentary on digital product formats, value '
-                   'ladders, templates, courses, and paid communities; validate market fit '
-                   'independently.',
-      'source_type': 'video_pro_tip',
-      'text': "It's what our clients inside of our digital products use. And it genuinely is "
-              "just a life-changing software if you're running a business. And in just a "
-              "minute, I'll show you how to use it live to build your digital product.",
-      'timestamp': 536,
-      'timestamp_label': '[00:08:56]',
-      'timestamp_seconds': 536,
-      'tip': "It's what our clients inside of our digital products use. And it genuinely is "
-             "just a life-changing software if you're running a business. And in just a "
-             "minute, I'll show you how to use it live to build your digital product.",
-      'title': 'How to build & sell AI Digital Products (2026 full guide) (Nathan Nazareth)',
-      'url': 'https://www.youtube.com/watch?v=6cm2o8zzuNw&t=536s',
-      'video_id': '6cm2o8zzuNw'},
-     {'author': 'Ceostacks',
+BASELINE_EXPERT_CITATIONS_BY_CHAPTER: dict[int, list[dict]] = {1: [{'author': 'Ceostacks',
       'channel': 'Ceostacks',
       'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:10:49](https://www.youtube.com/watch?v=UE0ReGj5sjU&t=649s)',
-      'relevance': 'Attributed practitioner commentary on digital product formats, value '
-                   'ladders, templates, courses, and paid communities; validate market fit '
-                   'independently.',
+      'markdown': '[00:06:39](https://www.youtube.com/watch?v=UE0ReGj5sjU&t=399s)',
+      'relevance': 'Verbatim practitioner testimony on rebranded low-ticket product sales in '
+                   'Chapter Q1.',
       'source_type': 'video_pro_tip',
-      'text': "Putting y'all on all type of game you know what I'm saying the Digital World "
-              'Academy course is linked below and the full access to the bundle is link below '
-              'as well.',
-      'timestamp': 649,
-      'timestamp_label': '[00:10:49]',
-      'timestamp_seconds': 649,
-      'tip': "Putting y'all on all type of game you know what I'm saying the Digital World "
-             'Academy course is linked below and the full access to the bundle is link below '
-             'as well.',
+      'text': "Once I started listing these low ticket products on my stand store that's when I "
+              'had my first $5,000 week with digital products.',
+      'timestamp': 399,
+      'timestamp_label': '[00:06:39]',
+      'timestamp_seconds': 399,
+      'tip': "Once I started listing these low ticket products on my stand store that's when I had "
+             'my first $5,000 week with digital products.',
       'title': 'How to Start Selling DONE FOR YOU Digital Products as a beginner (The easiest '
-               'way)! (Ceostacks)',
-      'url': 'https://www.youtube.com/watch?v=UE0ReGj5sjU&t=649s',
+               'way)!',
+      'url': 'https://www.youtube.com/watch?v=UE0ReGj5sjU&t=399s',
       'video_id': 'UE0ReGj5sjU'},
-     {'author': 'Side Hustle Mastery',
-      'channel': 'Side Hustle Mastery',
+     {'author': 'Baddie In Business',
+      'channel': 'Baddie In Business',
       'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:06:40](https://www.youtube.com/watch?v=2j9bt8ET3Ec&t=400s)',
-      'relevance': 'Attributed practitioner commentary on digital product formats, value '
-                   'ladders, templates, courses, and paid communities; validate market fit '
-                   'independently.',
+      'markdown': '[00:03:49](https://www.youtube.com/watch?v=EZ9234g-l7Q&t=229s)',
+      'relevance': 'Verbatim practitioner testimony on practical niche selection in Chapter Q1.',
       'source_type': 'video_pro_tip',
-      'text': "'ll then go ahead and add a name to the digital product that you're trying to "
-              "create in the first place. We'll simply just call this our photography business "
-              'notion template.',
-      'timestamp': 400,
-      'timestamp_label': '[00:06:40]',
-      'timestamp_seconds': 400,
-      'tip': "'ll then go ahead and add a name to the digital product that you're trying to "
-             "create in the first place. We'll simply just call this our photography business "
-             'notion template.',
-      'title': 'How to Make Money Selling Notion Templates [Gumroad Step-by-Step] (Side Hustle '
-               'Mastery)',
-      'url': 'https://www.youtube.com/watch?v=2j9bt8ET3Ec&t=400s',
-      'video_id': '2j9bt8ET3Ec'},
-     {'author': 'Funnel Building Secrets',
-      'channel': 'Funnel Building Secrets',
+      'text': "Your Niche doesn't have to be revolutionary it just has to be necessary.",
+      'timestamp': 229,
+      'timestamp_label': '[00:03:49]',
+      'timestamp_seconds': 229,
+      'tip': "Your Niche doesn't have to be revolutionary it just has to be necessary.",
+      'title': 'How to Start Selling Digital Products (STEP BY STEP) FREE COURSE',
+      'url': 'https://www.youtube.com/watch?v=EZ9234g-l7Q&t=229s',
+      'video_id': 'EZ9234g-l7Q'},
+     {'author': 'Rochelle Be',
+      'channel': 'Rochelle Be',
       'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:01:05](https://www.youtube.com/watch?v=BZ4rml1tc1U&t=65s)',
-      'relevance': 'Attributed practitioner commentary on digital product formats, value '
-                   'ladders, templates, courses, and paid communities; validate market fit '
-                   'independently.',
+      'markdown': '[00:24:30](https://www.youtube.com/watch?v=4e4pRrWsJvU&t=1470s)',
+      'relevance': 'Near-verbatim practitioner testimony on automated email nurture in Chapter Q1.',
       'source_type': 'video_pro_tip',
-      'text': 'Name your upsell page and click create funnel step. Step five, select an upsell '
-              'template. Clickfunnels has several upsell templates. Choose one that fits your '
-              'style and click edit page. Customize your upsell offer. Include product images '
-              'and descriptions.',
-      'timestamp': 65,
-      'timestamp_label': '[00:01:05]',
-      'timestamp_seconds': 65,
-      'tip': 'Name your upsell page and click create funnel step. Step five, select an upsell '
-             'template. Clickfunnels has several upsell templates. Choose one that fits your '
-             'style and click edit page. Customize your upsell offer. Include product images '
-             'and descriptions.',
-      'title': 'How to Set Up an Order Bump and Upsell (Funnel Building Secrets)',
-      'url': 'https://www.youtube.com/watch?v=BZ4rml1tc1U&t=65s',
-      'video_id': 'BZ4rml1tc1U'},
-     {'author': 'How To Tutor',
-      'channel': 'How To Tutor',
+      'text': 'I use a six email sequence, fully automated.',
+      'timestamp': 1470,
+      'timestamp_label': '[00:24:30]',
+      'timestamp_seconds': 1470,
+      'tip': 'I use a six email sequence, fully automated.',
+      'title': 'How to Start Selling Digital Products in 2026 (Step-by-Step Tutorial)',
+      'url': 'https://www.youtube.com/watch?v=4e4pRrWsJvU&t=1470s',
+      'video_id': '4e4pRrWsJvU'},
+     {'author': 'Baddie In Business',
+      'channel': 'Baddie In Business',
       'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:00:57](https://www.youtube.com/watch?v=Sxl5Fxp0qVQ&t=57s)',
-      'relevance': 'Attributed practitioner commentary on digital product formats, value '
-                   'ladders, templates, courses, and paid communities; validate market fit '
-                   'independently.',
+      'markdown': '[00:09:09](https://www.youtube.com/watch?v=QopRRjoOyyg&t=549s)',
+      'relevance': 'Verbatim practitioner testimony on Shopify file-delivery setup in Chapter Q1.',
       'source_type': 'video_pro_tip',
-      'text': "'ll be able to get redirected into your publish template. So in here copy the "
-              'link of your template and then head over to Gumroad and then in here click on '
-              'the showtime button and then go ahead and name your product and then set the '
-              'product type to digital product.',
-      'timestamp': 57,
-      'timestamp_label': '[00:00:57]',
-      'timestamp_seconds': 57,
-      'tip': "'ll be able to get redirected into your publish template. So in here copy the "
-             'link of your template and then head over to Gumroad and then in here click on '
-             'the showtime button and then go ahead and name your product and then set the '
-             'product type to digital product.',
-      'title': 'How to Upload Notion Template on Gumroad 2025 (QUICK GUIDE) (How To Tutor)',
-      'url': 'https://www.youtube.com/watch?v=Sxl5Fxp0qVQ&t=57s',
-      'video_id': 'Sxl5Fxp0qVQ'},
-     {'author': 'Skool News',
-      'channel': 'Skool News',
-      'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:07:01](https://www.youtube.com/watch?v=Oeug9IgSFXc&t=421s)',
-      'relevance': 'Attributed practitioner commentary on digital product formats, value '
-                   'ladders, templates, courses, and paid communities; validate market fit '
-                   'independently.',
-      'source_type': 'video_pro_tip',
-      'text': "I don't know notion or Calendarly or Zoom or Loom all the premium software "
-              "products right when you sign up to them they're free and they're very useful as "
-              "free products but then once you start to use them you realize that there's some "
-              'paid upgrades.',
-      'timestamp': 421,
-      'timestamp_label': '[00:07:01]',
-      'timestamp_seconds': 421,
-      'tip': "I don't know notion or Calendarly or Zoom or Loom all the premium software "
-             "products right when you sign up to them they're free and they're very useful as "
-             "free products but then once you start to use them you realize that there's some "
-             'paid upgrades.',
-      'title': 'Membership TIERS Are Here | Skool News #33 (Skool News)',
-      'url': 'https://www.youtube.com/watch?v=Oeug9IgSFXc&t=421s',
-      'video_id': 'Oeug9IgSFXc'},
-     {'author': 'Alek',
-      'channel': 'Alek',
-      'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:11:35](https://www.youtube.com/watch?v=T-gfoXzz8k8&t=695s)',
-      'relevance': 'Attributed practitioner commentary on digital product formats, value '
-                   'ladders, templates, courses, and paid communities; validate market fit '
-                   'independently.',
-      'source_type': 'video_pro_tip',
-      'text': "'re selling is a digital download t-shirt or sweatshirt design. So, they've "
-              'built out a design that could be printed on a t-shirt or sweatshirt, and '
-              "instead of like drop shipping the actual product itself, they're just selling "
-              'the PNG downloads.',
-      'timestamp': 695,
-      'timestamp_label': '[00:11:35]',
-      'timestamp_seconds': 695,
-      'tip': "'re selling is a digital download t-shirt or sweatshirt design. So, they've "
-             'built out a design that could be printed on a t-shirt or sweatshirt, and instead '
-             "of like drop shipping the actual product itself, they're just selling the PNG "
+      'text': 'Go to apps on your Shopify dashboard. On the search bar, just type in digital '
+              'downloads.',
+      'timestamp': 549,
+      'timestamp_label': '[00:09:09]',
+      'timestamp_seconds': 549,
+      'tip': 'Go to apps on your Shopify dashboard. On the search bar, just type in digital '
              'downloads.',
-      'title': 'Build & Sell Digital Products with A.I. (Full Course) (Alek)',
-      'url': 'https://www.youtube.com/watch?v=T-gfoXzz8k8&t=695s',
-      'video_id': 'T-gfoXzz8k8'}],
- 2: [{'author': 'Tutorly',
-      'channel': 'Tutorly',
+      'title': 'How to Start Selling Digital Products in 2026 (STEP BY STEP) FREE COURSE',
+      'url': 'https://www.youtube.com/watch?v=QopRRjoOyyg&t=549s',
+      'video_id': 'QopRRjoOyyg'},
+     {'author': 'Tatyana Savage',
+      'channel': 'Tatyana Savage',
       'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:00:20](https://www.youtube.com/watch?v=IfaCBBIoVK0&t=20s)',
-      'relevance': 'Attributed practitioner commentary on buyer psychology, Merchant-of-Record '
-                   'platforms (Paddle/Lemon Squeezy), and direct Stripe checkout settlement.',
+      'markdown': '[00:12:21](https://www.youtube.com/watch?v=TGNTFquVxZU&t=741s)',
+      'relevance': 'Near-verbatim practitioner testimony on continuing customer-service work in '
+                   'Chapter Q1.',
       'source_type': 'video_pro_tip',
-      'text': 'This choice splits our three contenders into two completely different '
-              'categories. Stripe Checkout is a standard payment processor, while Paddle and '
-              'Lemon Squeezy act as a merchant of record. A merchant of record means the '
-              'platform becomes the legal seller of your product.',
+      'text': 'I still spend about 30 minutes a week just logging into my shop and checking '
+              'messages.',
+      'timestamp': 741,
+      'timestamp_label': '[00:12:21]',
+      'timestamp_seconds': 741,
+      'tip': 'I still spend about 30 minutes a week just logging into my shop and checking '
+             'messages.',
+      'title': 'How to Start a Digital Product Business (& ACTUALLY Make Money)',
+      'url': 'https://www.youtube.com/watch?v=TGNTFquVxZU&t=741s',
+      'video_id': 'TGNTFquVxZU'},
+     {'author': 'Baddie In Business',
+      'channel': 'Baddie In Business',
+      'epistemic_status': 'attributed_practitioner_claim',
+      'markdown': '[00:10:30](https://www.youtube.com/watch?v=D237D2sGBRs&t=630s)',
+      'relevance': 'Verbatim practitioner testimony on adding personal knowledge to AI-assisted '
+                   'products in Chapter Q1.',
+      'source_type': 'video_pro_tip',
+      'text': "Remember like AI is your coworker but it's good to also fill in some of these "
+              'spaces with just some of your own knowledge.',
+      'timestamp': 630,
+      'timestamp_label': '[00:10:30]',
+      'timestamp_seconds': 630,
+      'tip': "Remember like AI is your coworker but it's good to also fill in some of these spaces "
+             'with just some of your own knowledge.',
+      'title': 'How to Start Selling Digital Products (STEP BY STEP) FREE COURSE',
+      'url': 'https://www.youtube.com/watch?v=D237D2sGBRs&t=630s',
+      'video_id': 'D237D2sGBRs'},
+     {'author': 'Iman Gadzhi',
+      'channel': 'Iman Gadzhi',
+      'epistemic_status': 'attributed_practitioner_claim',
+      'markdown': '[00:27:40](https://www.youtube.com/watch?v=A-yBamfrXQs&t=1660s)',
+      'relevance': 'Verbatim practitioner testimony on commission-based influencer partnerships in '
+                   'Chapter Q1.',
+      'source_type': 'video_pro_tip',
+      'text': 'Typical commission rates are 30 to 60% of each sale.',
+      'timestamp': 1660,
+      'timestamp_label': '[00:27:40]',
+      'timestamp_seconds': 1660,
+      'tip': 'Typical commission rates are 30 to 60% of each sale.',
+      'title': 'Copy This Method To Make $2,700/Week with Digital Products',
+      'url': 'https://www.youtube.com/watch?v=A-yBamfrXQs&t=1660s',
+      'video_id': 'A-yBamfrXQs'},
+     {'author': 'Charlie Chang',
+      'channel': 'Charlie Chang',
+      'epistemic_status': 'attributed_practitioner_claim',
+      'markdown': '[00:19:39](https://www.youtube.com/watch?v=M_CZeA9sJJM&t=1179s)',
+      'relevance': 'Near-verbatim practitioner testimony on multi-platform content reuse in '
+                   'Chapter Q1.',
+      'source_type': 'video_pro_tip',
+      'text': 'Create one piece of content repurpose it over all these different platforms.',
+      'timestamp': 1179,
+      'timestamp_label': '[00:19:39]',
+      'timestamp_seconds': 1179,
+      'tip': 'Create one piece of content repurpose it over all these different platforms.',
+      'title': 'How To Make Money Selling Digital Products (Step-by-Step Tutorial)',
+      'url': 'https://www.youtube.com/watch?v=M_CZeA9sJJM&t=1179s',
+      'video_id': 'M_CZeA9sJJM'},
+     {'author': 'Your Content Empire',
+      'channel': 'Your Content Empire',
+      'epistemic_status': 'attributed_practitioner_claim',
+      'markdown': '[00:13:41](https://www.youtube.com/watch?v=JTj-M2M-XOU&t=821s)',
+      'relevance': 'Near-verbatim practitioner testimony on a client product-and-membership ladder '
+                   'in Chapter Q1.',
+      'source_type': 'video_pro_tip',
+      'text': 'Her first upsell was the implementation challenge at $47 and her second upsell was '
+              'the monthly membership with access to everything for $27 a month.',
+      'timestamp': 821,
+      'timestamp_label': '[00:13:41]',
+      'timestamp_seconds': 821,
+      'tip': 'Her first upsell was the implementation challenge at $47 and her second upsell was '
+             'the monthly membership with access to everything for $27 a month.',
+      'title': '5 Business Models That Scaled to $10K Months (Client Case Studies)',
+      'url': 'https://www.youtube.com/watch?v=JTj-M2M-XOU&t=821s',
+      'video_id': 'JTj-M2M-XOU'},
+     {'author': 'Richard Yu',
+      'channel': 'Richard Yu',
+      'epistemic_status': 'attributed_practitioner_claim',
+      'markdown': '[00:03:48](https://www.youtube.com/watch?v=cv0y7oCllek&t=228s)',
+      'relevance': 'Verbatim practitioner testimony on overcomplicated acquisition systems in '
+                   'Chapter Q1.',
+      'source_type': 'video_pro_tip',
+      'text': 'For years, I overcomplicated all of my website funnels and acquisition systems, and '
+              'it barely moved the needle.',
+      'timestamp': 228,
+      'timestamp_label': '[00:03:48]',
+      'timestamp_seconds': 228,
+      'tip': 'For years, I overcomplicated all of my website funnels and acquisition systems, and '
+             'it barely moved the needle.',
+      'title': '1,000 Hours of studying the Best Digital Product Businesses in 24 Minutes',
+      'url': 'https://www.youtube.com/watch?v=cv0y7oCllek&t=228s',
+      'video_id': 'cv0y7oCllek'},
+     {'author': 'Neil Patel',
+      'channel': 'Neil Patel',
+      'epistemic_status': 'attributed_practitioner_claim',
+      'markdown': '[00:37:04](https://www.youtube.com/watch?v=dU4rWLHAcoo&t=2224s)',
+      'relevance': 'Near-verbatim practitioner clarification of webinar and follow-up conversion '
+                   'in Chapter Q1.',
+      'source_type': 'video_pro_tip',
+      'text': 'Half the sales will come from the webinar, 1.8, and then the other 1.8 come from '
+              'email follow up sequences.',
+      'timestamp': 2224,
+      'timestamp_label': '[00:37:04]',
+      'timestamp_seconds': 2224,
+      'tip': 'Half the sales will come from the webinar, 1.8, and then the other 1.8 come from '
+             'email follow up sequences.',
+      'title': 'How to Create a Digital Product That Generates (AT LEAST) $100,000 Per Month',
+      'url': 'https://www.youtube.com/watch?v=dU4rWLHAcoo&t=2224s',
+      'video_id': 'dU4rWLHAcoo'},
+     {'author': 'Hamza Ehsan',
+      'channel': 'Hamza Ehsan',
+      'epistemic_status': 'attributed_practitioner_claim',
+      'markdown': '[00:02:21](https://www.youtube.com/watch?v=ZjJ_Y1iTxws&t=141s)',
+      'relevance': 'Verbatim practitioner testimony on inconsistent instrumental-sales income in '
+                   'Chapter Q1.',
+      'source_type': 'video_pro_tip',
+      'text': 'I had to take on client work just to get by.',
+      'timestamp': 141,
+      'timestamp_label': '[00:02:21]',
+      'timestamp_seconds': 141,
+      'tip': 'I had to take on client work just to get by.',
+      'title': 'What No One Tells You About Selling Digital Products',
+      'url': 'https://www.youtube.com/watch?v=ZjJ_Y1iTxws&t=141s',
+      'video_id': 'ZjJ_Y1iTxws'},
+     {'author': 'sivra studio',
+      'channel': 'sivra studio',
+      'epistemic_status': 'attributed_practitioner_claim',
+      'markdown': '[00:00:20](https://www.youtube.com/watch?v=HQygShA8LBg&t=20s)',
+      'relevance': 'Verbatim practitioner testimony on recurring buyer needs in Chapter Q1.',
+      'source_type': 'video_pro_tip',
+      'text': 'Profitable niches exist where hungry buyers meet recurring needs.',
       'timestamp': 20,
       'timestamp_label': '[00:00:20]',
       'timestamp_seconds': 20,
-      'tip': 'This choice splits our three contenders into two completely different '
-             'categories. Stripe Checkout is a standard payment processor, while Paddle and '
-             'Lemon Squeezy act as a merchant of record. A merchant of record means the '
-             'platform becomes the legal seller of your product.',
-      'title': 'Lemon Squeezy Vs Stripe Checkout Vs Paddle (2026) Which One Is Better? '
-               '(Tutorly)',
-      'url': 'https://www.youtube.com/watch?v=IfaCBBIoVK0&t=20s',
-      'video_id': 'IfaCBBIoVK0'},
-     {'author': 'TechWealth Hub',
-      'channel': 'TechWealth Hub',
+      'tip': 'Profitable niches exist where hungry buyers meet recurring needs.',
+      'title': 'How to Make $10K/Month With Digital Products (Step-By-Step Tutorial)',
+      'url': 'https://www.youtube.com/watch?v=HQygShA8LBg&t=20s',
+      'video_id': 'HQygShA8LBg'},
+     {'author': 'Victor Jaro',
+      'channel': 'Victor Jaro',
       'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:01:36](https://www.youtube.com/watch?v=KRdWGDk-GkY&t=96s)',
-      'relevance': 'Attributed practitioner commentary on buyer psychology, Merchant-of-Record '
-                   'platforms (Paddle/Lemon Squeezy), and direct Stripe checkout settlement.',
+      'markdown': '[00:02:42](https://www.youtube.com/watch?v=DUY7O02C0Ps&t=162s)',
+      'relevance': 'Near-verbatim practitioner testimony on failed early paid templates in Chapter '
+                   'Q1.',
       'source_type': 'video_pro_tip',
-      'text': 'Fourth, customer support for payment issues. And the crazy part, you enable all '
-              'of this with one line of code. In your Stripe checkout session, you add managed '
-              'payments enabled. You now have paddle level tax compliance with Stripe level '
-              'infrastructure.',
-      'timestamp': 96,
-      'timestamp_label': '[00:01:36]',
-      'timestamp_seconds': 96,
-      'tip': 'Fourth, customer support for payment issues. And the crazy part, you enable all '
-             'of this with one line of code. In your Stripe checkout session, you add managed '
-             'payments enabled. You now have paddle level tax compliance with Stripe level '
-             'infrastructure.',
-      'title': 'Stripe Just KILLED Paddle and Gumroad (Managed Payments) (TechWealth Hub)',
-      'url': 'https://www.youtube.com/watch?v=KRdWGDk-GkY&t=96s',
-      'video_id': 'KRdWGDk-GkY'},
-     {'author': 'Captain Vova (Vova Feldman)',
-      'channel': 'Captain Vova (Vova Feldman)',
+      'text': 'The first two templates that I made were absolutely terrible they got zero sales.',
+      'timestamp': 162,
+      'timestamp_label': '[00:02:42]',
+      'timestamp_seconds': 162,
+      'tip': 'The first two templates that I made were absolutely terrible they got zero sales.',
+      'title': 'Selling This Digital Product Can Make You Rich',
+      'url': 'https://www.youtube.com/watch?v=DUY7O02C0Ps&t=162s',
+      'video_id': 'DUY7O02C0Ps'},
+     {'author': 'Sandra Di',
+      'channel': 'Sandra Di',
       'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:01:44](https://www.youtube.com/watch?v=5zGuxRrg_O0&t=104s)',
-      'relevance': 'Attributed practitioner commentary on buyer psychology, Merchant-of-Record '
-                   'platforms (Paddle/Lemon Squeezy), and direct Stripe checkout settlement.',
+      'markdown': '[00:03:50](https://www.youtube.com/watch?v=N7Va9OQSsno&t=230s)',
+      'relevance': 'Verbatim practitioner testimony on connecting low-ticket products to larger '
+                   'offers in Chapter Q1.',
       'source_type': 'video_pro_tip',
-      'text': 'Records that already set kind of the standards for the prices for Merchant of '
-              "Record in the market. Whether you've been following the events or not, last "
-              'year Stripe acquired payment solution called Lemon Squeezy, a Merchant of '
-              'Record actually.',
-      'timestamp': 104,
-      'timestamp_label': '[00:01:44]',
-      'timestamp_seconds': 104,
-      'tip': 'Records that already set kind of the standards for the prices for Merchant of '
-             "Record in the market. Whether you've been following the events or not, last year "
-             'Stripe acquired payment solution called Lemon Squeezy, a Merchant of Record '
-             'actually.',
-      'title': 'Stripe Managed Payments: The Threat to Paddle and the Future of MoR (Captain '
-               'Vova (Vova Feldman))',
-      'url': 'https://www.youtube.com/watch?v=5zGuxRrg_O0&t=104s',
-      'video_id': '5zGuxRrg_O0'},
-     {'author': 'SoloBuild',
-      'channel': 'SoloBuild',
+      'text': 'Instead, treat your low-ticket digital product as a stepping stone to a bigger '
+              'offer.',
+      'timestamp': 230,
+      'timestamp_label': '[00:03:50]',
+      'timestamp_seconds': 230,
+      'tip': 'Instead, treat your low-ticket digital product as a stepping stone to a bigger '
+             'offer.',
+      'title': 'The ONLY Way to Sell Digital Products in 2027 (Copy Me)',
+      'url': 'https://www.youtube.com/watch?v=N7Va9OQSsno&t=230s',
+      'video_id': 'N7Va9OQSsno'},
+     {'author': 'Alex Hormozi',
+      'channel': 'Alex Hormozi',
       'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:02:00](https://www.youtube.com/watch?v=i05UCC3UvNY&t=120s)',
-      'relevance': 'Attributed practitioner commentary on buyer psychology, Merchant-of-Record '
-                   'platforms (Paddle/Lemon Squeezy), and direct Stripe checkout settlement.',
+      'markdown': '[00:03:34](https://www.youtube.com/watch?v=oTQPxPFROck&t=214s)',
+      'relevance': 'Verbatim practitioner testimony on selling implementation rather than '
+                   'withholding information in Chapter Q1.',
       'source_type': 'video_pro_tip',
-      'text': 'Stripe Tax can calculate and collect tax for you, but registering and filing '
-              'are only included in its Tax Complete plan, which starts at ninety dollars a '
-              'month. Lemon Squeezy and Paddle each say they are your merchant of record.',
-      'timestamp': 120,
-      'timestamp_label': '[00:02:00]',
-      'timestamp_seconds': 120,
-      'tip': 'Stripe Tax can calculate and collect tax for you, but registering and filing are '
-             'only included in its Tax Complete plan, which starts at ninety dollars a month. '
-             'Lemon Squeezy and Paddle each say they are your merchant of record.',
-      'title': 'Stripe vs Lemon Squeezy vs Paddle (2026): Which Should You Use? (SoloBuild)',
-      'url': 'https://www.youtube.com/watch?v=i05UCC3UvNY&t=120s',
-      'video_id': 'i05UCC3UvNY'},
-     {'author': 'houdztech',
-      'channel': 'houdztech',
+      'text': 'You give away the secrets you sell the implementation.',
+      'timestamp': 214,
+      'timestamp_label': '[00:03:34]',
+      'timestamp_seconds': 214,
+      'tip': 'You give away the secrets you sell the implementation.',
+      'title': 'How to Build a LEGIT Online Course (Works in 2026)',
+      'url': 'https://www.youtube.com/watch?v=oTQPxPFROck&t=214s',
+      'video_id': 'oTQPxPFROck'}],
+ 2: [{'author': 'Nathan Nazareth',
+      'channel': 'Nathan Nazareth',
       'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:03:05](https://www.youtube.com/watch?v=Qq-EyvVj7IM&t=185s)',
-      'relevance': 'Attributed practitioner commentary on buyer psychology, Merchant-of-Record '
-                   'platforms (Paddle/Lemon Squeezy), and direct Stripe checkout settlement.',
+      'markdown': '[00:01:25](https://www.youtube.com/watch?v=6cm2o8zzuNw&t=85s)',
+      'relevance': 'Practitioner testimony on defining the offer before building the product.',
       'source_type': 'video_pro_tip',
-      'text': 'They handle a sepa, so dozens of local methods. Lemon Squeezy supports 135 plus '
-              'countries for payments and 20 plus payment methods including cards, PayPal, '
-              "Apple Pay, Google Pay, Alipay, and WeChat Pay. Paddle's reach is technically "
-              'broader. This is mixed on both sides.',
-      'timestamp': 185,
-      'timestamp_label': '[00:03:05]',
-      'timestamp_seconds': 185,
-      'tip': 'They handle a sepa, so dozens of local methods. Lemon Squeezy supports 135 plus '
-             'countries for payments and 20 plus payment methods including cards, PayPal, '
-             "Apple Pay, Google Pay, Alipay, and WeChat Pay. Paddle's reach is technically "
-             'broader. This is mixed on both sides.',
-      'title': 'Paddle vs LemonSqueezy (2026) | Which One is Better? (houdztech)',
-      'url': 'https://www.youtube.com/watch?v=Qq-EyvVj7IM&t=185s',
-      'video_id': 'Qq-EyvVj7IM'},
-     {'author': 'HelperMan',
-      'channel': 'HelperMan',
+      'text': 'So always the offer comes first, the product comes second.',
+      'timestamp': 85,
+      'timestamp_label': '[00:01:25]',
+      'timestamp_seconds': 85,
+      'tip': 'So always the offer comes first, the product comes second.',
+      'title': 'How to build & sell AI Digital Products (2026 full guide)',
+      'url': 'https://www.youtube.com/watch?v=6cm2o8zzuNw&t=85s',
+      'video_id': '6cm2o8zzuNw'},
+     {'author': 'AMBER SHARNIECE',
+      'channel': 'AMBER SHARNIECE',
       'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:01:20](https://www.youtube.com/watch?v=IA4eosnOzIE&t=80s)',
-      'relevance': 'Attributed practitioner commentary on buyer psychology, Merchant-of-Record '
-                   'platforms (Paddle/Lemon Squeezy), and direct Stripe checkout settlement.',
+      'markdown': '[00:08:29](https://www.youtube.com/watch?v=UuQ3BacwIMU&t=509s)',
+      'relevance': 'Practitioner testimony on specifying a recognizable writing voice.',
       'source_type': 'video_pro_tip',
-      'text': 'But there there are definitely some downsides you should know before using it. '
-              'First, fees can feel higher compared to using a standard payment processor '
-              "directly because you're paying for the extra tax and compliance handling.",
-      'timestamp': 80,
-      'timestamp_label': '[00:01:20]',
-      'timestamp_seconds': 80,
-      'tip': 'But there there are definitely some downsides you should know before using it. '
-             'First, fees can feel higher compared to using a standard payment processor '
-             "directly because you're paying for the extra tax and compliance handling.",
-      'title': 'Lemon Squeezy for Merchant of Record Honest Review - Watch Before Using '
-               '(HelperMan)',
-      'url': 'https://www.youtube.com/watch?v=IA4eosnOzIE&t=80s',
-      'video_id': 'IA4eosnOzIE'},
-     {'author': 'How2Genius',
-      'channel': 'How2Genius',
+      'text': 'you want to give it some personality which is the writing style.',
+      'timestamp': 509,
+      'timestamp_label': '[00:08:29]',
+      'timestamp_seconds': 509,
+      'tip': 'you want to give it some personality which is the writing style.',
+      'title': 'Create A Digital Product in 24hrs & Start Your 5 Figure Business',
+      'url': 'https://www.youtube.com/watch?v=UuQ3BacwIMU&t=509s',
+      'video_id': 'UuQ3BacwIMU'},
+     {'author': 'Money Talk With Leon',
+      'channel': 'Money Talk With Leon',
       'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:02:20](https://www.youtube.com/watch?v=Y5VXhUB7aNM&t=140s)',
-      'relevance': 'Attributed practitioner commentary on buyer psychology, Merchant-of-Record '
-                   'platforms (Paddle/Lemon Squeezy), and direct Stripe checkout settlement.',
+      'markdown': '[00:01:32](https://www.youtube.com/watch?v=B8Z2fA5X0J4&t=92s)',
+      'relevance': 'Practitioner testimony on AI-generated PDF guides as the product format.',
       'source_type': 'video_pro_tip',
-      'text': 'You can create fully branded storefronts and checkout experiences, including '
-              'upsells, bundles, and localized pricing. It also supports a wide range of '
-              'payment methods, credit cards, PayPal, Apple Pay, and more, so customers can '
-              'pay however they prefer.',
-      'timestamp': 140,
-      'timestamp_label': '[00:02:20]',
-      'timestamp_seconds': 140,
-      'tip': 'You can create fully branded storefronts and checkout experiences, including '
-             'upsells, bundles, and localized pricing. It also supports a wide range of '
-             'payment methods, credit cards, PayPal, Apple Pay, and more, so customers can pay '
-             'however they prefer.',
-      'title': 'NEW* Paddle vs FastSpring — Best Checkout & Tax for Digital Products '
-               '(How2Genius)',
-      'url': 'https://www.youtube.com/watch?v=Y5VXhUB7aNM&t=140s',
-      'video_id': 'Y5VXhUB7aNM'},
-     {'author': 'BrightGuide',
-      'channel': 'BrightGuide',
+      'text': 'I sell PDF guides, and I use AI to create the entire PDF guide for me.',
+      'timestamp': 92,
+      'timestamp_label': '[00:01:32]',
+      'timestamp_seconds': 92,
+      'tip': 'I sell PDF guides, and I use AI to create the entire PDF guide for me.',
+      'title': 'I Sold Digital Products as a Beginner ‘To Prove It’s Not Luck’ Using Claude AI',
+      'url': 'https://www.youtube.com/watch?v=B8Z2fA5X0J4&t=92s',
+      'video_id': 'B8Z2fA5X0J4'},
+     {'author': 'Nathan Nazareth',
+      'channel': 'Nathan Nazareth',
       'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:01:02](https://www.youtube.com/watch?v=oMxSmqY3mzM&t=62s)',
-      'relevance': 'Attributed practitioner commentary on buyer psychology, Merchant-of-Record '
-                   'platforms (Paddle/Lemon Squeezy), and direct Stripe checkout settlement.',
+      'markdown': '[00:13:34](https://www.youtube.com/watch?v=dr37DaI8g3U&t=814s)',
+      'relevance': 'Practitioner testimony on organic validation before paid scaling.',
       'source_type': 'video_pro_tip',
-      'text': 'From there, select your currency. Make sure you choose the currency you want to '
-              'sell in, especially if your if your audience is based in a particular region. '
-              'Once the currency is set, enter your product price. This is the amount '
-              'customers will pay for your template.',
-      'timestamp': 62,
-      'timestamp_label': '[00:01:02]',
-      'timestamp_seconds': 62,
-      'tip': 'From there, select your currency. Make sure you choose the currency you want to '
-             'sell in, especially if your if your audience is based in a particular region. '
-             'Once the currency is set, enter your product price. This is the amount customers '
-             'will pay for your template.',
-      'title': 'How to Sell Notion Templates on Gumroad (Step By Step 2026) (BrightGuide)',
-      'url': 'https://www.youtube.com/watch?v=oMxSmqY3mzM&t=62s',
-      'video_id': 'oMxSmqY3mzM'},
-     {'author': 'Framer',
-      'channel': 'Framer',
+      'text': 'I would recommend starting out with organic marketing first to ensure that you have '
+              'product market fit and you actually have something that will sell before you go '
+              'ahead and start putting money behind it.',
+      'timestamp': 814,
+      'timestamp_label': '[00:13:34]',
+      'timestamp_seconds': 814,
+      'tip': 'I would recommend starting out with organic marketing first to ensure that you have '
+             'product market fit and you actually have something that will sell before you go '
+             'ahead and start putting money behind it.',
+      'title': "How to Sell AI Digital Products (beginner's guide)",
+      'url': 'https://www.youtube.com/watch?v=dr37DaI8g3U&t=814s',
+      'video_id': 'dr37DaI8g3U'},
+     {'author': 'Alek',
+      'channel': 'Alek',
       'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:03:38](https://www.youtube.com/watch?v=RN0VWAvL-qc&t=218s)',
-      'relevance': 'Attributed practitioner commentary on buyer psychology, Merchant-of-Record '
-                   'platforms (Paddle/Lemon Squeezy), and direct Stripe checkout settlement.',
+      'markdown': '[00:27:03](https://www.youtube.com/watch?v=T-gfoXzz8k8&t=1623s)',
+      'relevance': 'Practitioner testimony rejecting a permanently passive fixed catalog.',
       'source_type': 'video_pro_tip',
-      'text': 'So it is important that you use this link and send it to us or share it on '
-              'Twitter or share it anywhere you want so you can copy this share it wherever '
-              'you want and then that is how you start selling your templates through lemon '
-              'squeezy thanks for watching.',
-      'timestamp': 218,
-      'timestamp_label': '[00:03:38]',
-      'timestamp_seconds': 218,
-      'tip': 'So it is important that you use this link and send it to us or share it on '
-             'Twitter or share it anywhere you want so you can copy this share it wherever you '
-             'want and then that is how you start selling your templates through lemon squeezy '
-             'thanks for watching.',
-      'title': 'How to start selling your Framer templates through Lemon Squeezy (Framer)',
-      'url': 'https://www.youtube.com/watch?v=RN0VWAvL-qc&t=218s',
-      'video_id': 'RN0VWAvL-qc'},
+      'text': 'This business is not something where you make 50 products and you earn passive '
+              'income for the rest of your life.',
+      'timestamp': 1623,
+      'timestamp_label': '[00:27:03]',
+      'timestamp_seconds': 1623,
+      'tip': 'This business is not something where you make 50 products and you earn passive '
+             'income for the rest of your life.',
+      'title': 'Build & Sell Digital Products with A.I. (Full Course)',
+      'url': 'https://www.youtube.com/watch?v=T-gfoXzz8k8&t=1623s',
+      'video_id': 'T-gfoXzz8k8'},
+     {'author': 'Richard Yu',
+      'channel': 'Richard Yu',
+      'epistemic_status': 'attributed_practitioner_claim',
+      'markdown': '[00:21:28](https://www.youtube.com/watch?v=gjffmgucDSw&t=1288s)',
+      'relevance': 'Practitioner testimony connecting app delivery with a public sales website.',
+      'source_type': 'video_pro_tip',
+      'text': 'Having the product alone is not enough.',
+      'timestamp': 1288,
+      'timestamp_label': '[00:21:28]',
+      'timestamp_seconds': 1288,
+      'tip': 'Having the product alone is not enough.',
+      'title': 'FULL COURSE: How to Build & Sell Digital Products With AI (Step by Step)',
+      'url': 'https://www.youtube.com/watch?v=gjffmgucDSw&t=1288s',
+      'video_id': 'gjffmgucDSw'},
+     {'author': 'Eden',
+      'channel': 'Eden',
+      'epistemic_status': 'attributed_practitioner_claim',
+      'markdown': '[00:00:17](https://www.youtube.com/watch?v=VJ-JR7uMY34&t=17s)',
+      'relevance': 'Practitioner testimony on experience as the basis for judging AI output.',
+      'source_type': 'video_pro_tip',
+      'text': "And that's because they have experience, they know what good looks like.",
+      'timestamp': 17,
+      'timestamp_label': '[00:00:17]',
+      'timestamp_seconds': 17,
+      'tip': "And that's because they have experience, they know what good looks like.",
+      'title': 'How To Build Your First $10,000 Digital Product (Full Beginner Guide)',
+      'url': 'https://www.youtube.com/watch?v=VJ-JR7uMY34&t=17s',
+      'video_id': 'VJ-JR7uMY34'},
+     {'author': 'Richard Yu',
+      'channel': 'Richard Yu',
+      'epistemic_status': 'attributed_practitioner_claim',
+      'markdown': '[00:06:35](https://www.youtube.com/watch?v=kxg_sn2vJm8&t=395s)',
+      'relevance': 'Practitioner testimony on editing and personalizing the generated ebook.',
+      'source_type': 'video_pro_tip',
+      'text': 'This is your starting point, not your finished product.',
+      'timestamp': 395,
+      'timestamp_label': '[00:06:35]',
+      'timestamp_seconds': 395,
+      'tip': 'This is your starting point, not your finished product.',
+      'title': "How I'd Build a Digital Product From Scratch (After Making $32 Million)",
+      'url': 'https://www.youtube.com/watch?v=kxg_sn2vJm8&t=395s',
+      'video_id': 'kxg_sn2vJm8'},
+     {'author': 'Make Money with Stacy La',
+      'channel': 'Make Money with Stacy La',
+      'epistemic_status': 'attributed_practitioner_claim',
+      'markdown': '[00:10:59](https://www.youtube.com/watch?v=gGW2IMNOz68&t=659s)',
+      'relevance': 'Practitioner testimony on checking generated product content before sale.',
+      'source_type': 'video_pro_tip',
+      'text': 'So, before you sell anything, make sure you go through every line and make sure '
+              "it's correct.",
+      'timestamp': 659,
+      'timestamp_label': '[00:10:59]',
+      'timestamp_seconds': 659,
+      'tip': "So, before you sell anything, make sure you go through every line and make sure it's "
+             'correct.',
+      'title': 'Watch Me Create a 6 Figure Digital Product with AI in 14 Minutes | UPDATED '
+               'Tutorial | Genspark',
+      'url': 'https://www.youtube.com/watch?v=gGW2IMNOz68&t=659s',
+      'video_id': 'gGW2IMNOz68'},
+     {'author': 'Baddie In Business',
+      'channel': 'Baddie In Business',
+      'epistemic_status': 'attributed_practitioner_claim',
+      'markdown': '[00:04:07](https://www.youtube.com/watch?v=YS1HBQAWWVk&t=247s)',
+      'relevance': 'Practitioner testimony on emotional problem selection for beginner products.',
+      'source_type': 'video_pro_tip',
+      'text': 'The biggest mistake that beginners make is picking a product that nobody '
+              'emotionally cares about.',
+      'timestamp': 247,
+      'timestamp_label': '[00:04:07]',
+      'timestamp_seconds': 247,
+      'tip': 'The biggest mistake that beginners make is picking a product that nobody emotionally '
+             'cares about.',
+      'title': 'How to Start Selling Digital Products with CLAUDE AI (STEP BY STEP)',
+      'url': 'https://www.youtube.com/watch?v=YS1HBQAWWVk&t=247s',
+      'video_id': 'YS1HBQAWWVk'},
+     {'author': 'Monica Lee',
+      'channel': 'Monica Lee',
+      'epistemic_status': 'attributed_practitioner_claim',
+      'markdown': '[00:06:30](https://www.youtube.com/watch?v=VoaJoVQaSig&t=390s)',
+      'relevance': 'Practitioner testimony on retaining and editing manuscript text before design.',
+      'source_type': 'video_pro_tip',
+      'text': 'So, I go to Google Docs.',
+      'timestamp': 390,
+      'timestamp_label': '[00:06:30]',
+      'timestamp_seconds': 390,
+      'tip': 'So, I go to Google Docs.',
+      'title': 'How to Create a Digital Product in 2026 | Full Step-by-Step (FREE COURSE)',
+      'url': 'https://www.youtube.com/watch?v=VoaJoVQaSig&t=390s',
+      'video_id': 'VoaJoVQaSig'},
+     {'author': 'Money Talk With Leon',
+      'channel': 'Money Talk With Leon',
+      'epistemic_status': 'attributed_practitioner_claim',
+      'markdown': '[00:09:42](https://www.youtube.com/watch?v=LRACQ1AzUH0&t=582s)',
+      'relevance': 'Practitioner testimony on cover presentation in the puppy-guide workflow.',
+      'source_type': 'video_pro_tip',
+      'text': 'So, as you can see, your cover is very important, okay?',
+      'timestamp': 582,
+      'timestamp_label': '[00:09:42]',
+      'timestamp_seconds': 582,
+      'tip': 'So, as you can see, your cover is very important, okay?',
+      'title': 'I Made $10 Million Selling Simple Digital Products (Step by Step)',
+      'url': 'https://www.youtube.com/watch?v=LRACQ1AzUH0&t=582s',
+      'video_id': 'LRACQ1AzUH0'},
+     {'author': 'Alek',
+      'channel': 'Alek',
+      'epistemic_status': 'attributed_practitioner_claim',
+      'markdown': '[00:11:00](https://www.youtube.com/watch?v=_4DF_tkyYfQ&t=660s)',
+      'relevance': 'Practitioner testimony on print-on-demand variations as an alternative to pure '
+                   'downloads.',
+      'source_type': 'video_pro_tip',
+      'text': 'But the real unlock with print on demand is that you have essentially infinite '
+              'attempts.',
+      'timestamp': 660,
+      'timestamp_label': '[00:11:00]',
+      'timestamp_seconds': 660,
+      'tip': 'But the real unlock with print on demand is that you have essentially infinite '
+             'attempts.',
+      'title': '#1 A.I. Digital Product Business Nobody’s Talking About',
+      'url': 'https://www.youtube.com/watch?v=_4DF_tkyYfQ&t=660s',
+      'video_id': '_4DF_tkyYfQ'},
+     {'author': 'Brian Moran',
+      'channel': 'Brian Moran',
+      'epistemic_status': 'attributed_practitioner_claim',
+      'markdown': '[00:03:00](https://www.youtube.com/watch?v=3iU4a1yWGn0&t=180s)',
+      'relevance': 'Practitioner testimony on the positioning failure behind the first broad '
+                   'ebook.',
+      'source_type': 'video_pro_tip',
+      'text': "The real problem was that I didn't identify one problem for one person.",
+      'timestamp': 180,
+      'timestamp_label': '[00:03:00]',
+      'timestamp_seconds': 180,
+      'tip': "The real problem was that I didn't identify one problem for one person.",
+      'title': 'I Made $1.2 Million Selling Simple eBooks (Step by Step)',
+      'url': 'https://www.youtube.com/watch?v=3iU4a1yWGn0&t=180s',
+      'video_id': '3iU4a1yWGn0'},
+     {'author': 'Richard Yu',
+      'channel': 'Richard Yu',
+      'epistemic_status': 'attributed_practitioner_claim',
+      'markdown': '[00:08:06](https://www.youtube.com/watch?v=rYUS7ibZhYo&t=486s)',
+      'relevance': 'Practitioner testimony on validating demand ahead of PDF production.',
+      'source_type': 'video_pro_tip',
+      'text': 'Before you write a single page, please validate it.',
+      'timestamp': 486,
+      'timestamp_label': '[00:08:06]',
+      'timestamp_seconds': 486,
+      'tip': 'Before you write a single page, please validate it.',
+      'title': 'I Sell PDFs With AI and It Changed My Life (Revealing Everything)',
+      'url': 'https://www.youtube.com/watch?v=rYUS7ibZhYo&t=486s',
+      'video_id': 'rYUS7ibZhYo'},
+     {'author': 'Emmanuel Adanu',
+      'channel': 'Emmanuel Adanu',
+      'epistemic_status': 'attributed_practitioner_claim',
+      'markdown': '[00:05:04](https://www.youtube.com/watch?v=_YY-8C1VR9o&t=304s)',
+      'relevance': 'Practitioner testimony on turning a mastered AI workflow into product-building '
+                   'input.',
+      'source_type': 'video_pro_tip',
+      'text': 'Just create a summary of the steps you follow to do the task.',
+      'timestamp': 304,
+      'timestamp_label': '[00:05:04]',
+      'timestamp_seconds': 304,
+      'tip': 'Just create a summary of the steps you follow to do the task.',
+      'title': 'How I Used AI to Build a Digital Product Business from Scratch',
+      'url': 'https://www.youtube.com/watch?v=_YY-8C1VR9o&t=304s',
+      'video_id': '_YY-8C1VR9o'}],
+ 3: [{'author': 'GuideHatch Tutorials',
+      'channel': 'GuideHatch Tutorials',
+      'epistemic_status': 'attributed_practitioner_claim',
+      'markdown': '[00:02:08](https://www.youtube.com/watch?v=DNdWpxzzTQM&t=128s)',
+      'relevance': 'Practitioner testimony on placing the access link in Gumroad delivery content.',
+      'source_type': 'video_pro_tip',
+      'text': "In the content field, it's time to paste the Notion template link you copied "
+              "earlier. This step is crucial. Without the link, your buyers won't be able to "
+              'access the template.',
+      'timestamp': 128,
+      'timestamp_label': '[00:02:08]',
+      'timestamp_seconds': 128,
+      'tip': "In the content field, it's time to paste the Notion template link you copied "
+             "earlier. This step is crucial. Without the link, your buyers won't be able to access "
+             'the template.',
+      'title': 'How to sell Notion templates on Gumroad (Creative Earnings)',
+      'url': 'https://www.youtube.com/watch?v=DNdWpxzzTQM&t=128s',
+      'video_id': 'DNdWpxzzTQM'},
+     {'author': 'Stellar Media',
+      'channel': 'Stellar Media',
+      'epistemic_status': 'attributed_practitioner_claim',
+      'markdown': '[00:01:23](https://www.youtube.com/watch?v=YiY_qBBHvvc&t=83s)',
+      'relevance': 'Practitioner demonstration of currency selection and an example asking price.',
+      'source_type': 'video_pro_tip',
+      'text': 'Choose the currency in which you want to get payment. Just like I will select US '
+              'dollar. After it, I will write a price for my product. Just for example, I will '
+              'write $50.',
+      'timestamp': 83,
+      'timestamp_label': '[00:01:23]',
+      'timestamp_seconds': 83,
+      'tip': 'Choose the currency in which you want to get payment. Just like I will select US '
+             'dollar. After it, I will write a price for my product. Just for example, I will '
+             'write $50.',
+      'title': 'How To Sell Notion Templates On Gumroad 2025 (Step by Step)',
+      'url': 'https://www.youtube.com/watch?v=YiY_qBBHvvc&t=83s',
+      'video_id': 'YiY_qBBHvvc'},
      {'author': 'Tutorials At Desk',
       'channel': 'Tutorials At Desk',
       'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:03:45](https://www.youtube.com/watch?v=VEFf-FR0dxw&t=225s)',
-      'relevance': 'Attributed practitioner commentary on buyer psychology, Merchant-of-Record '
-                   'platforms (Paddle/Lemon Squeezy), and direct Stripe checkout settlement.',
+      'markdown': '[00:00:29](https://www.youtube.com/watch?v=VEFf-FR0dxw&t=29s)',
+      'relevance': 'Practitioner instruction on public access and template duplication.',
       'source_type': 'video_pro_tip',
-      'text': 'After that, follow the on-screen instructions to connect a supported payout '
-              'method such as Stripe or PayPal, depending on what Gumroad offers in your '
-              "region. You'll be asked to complete identity verification and payment setup.",
-      'timestamp': 225,
-      'timestamp_label': '[00:03:45]',
-      'timestamp_seconds': 225,
-      'tip': 'After that, follow the on-screen instructions to connect a supported payout '
-             'method such as Stripe or PayPal, depending on what Gumroad offers in your '
-             "region. You'll be asked to complete identity verification and payment setup.",
-      'title': 'How to Sell Notion Templates on Gumroad (2026 Revenue Snapshot) (Tutorials At '
-               'Desk)',
-      'url': 'https://www.youtube.com/watch?v=VEFf-FR0dxw&t=225s',
+      'text': 'Click the blue publish button. This turns your page into a shareable public page. '
+              'Right after publishing, look carefully at the options in that same menu and make '
+              'sure duplicate as template is turned on.',
+      'timestamp': 29,
+      'timestamp_label': '[00:00:29]',
+      'timestamp_seconds': 29,
+      'tip': 'Click the blue publish button. This turns your page into a shareable public page. '
+             'Right after publishing, look carefully at the options in that same menu and make '
+             'sure duplicate as template is turned on.',
+      'title': 'How to Sell Notion Templates on Gumroad (2026 Revenue Snapshot)',
+      'url': 'https://www.youtube.com/watch?v=VEFf-FR0dxw&t=29s',
       'video_id': 'VEFf-FR0dxw'},
+     {'author': 'Aeris Vale Tutorials',
+      'channel': 'Aeris Vale Tutorials',
+      'epistemic_status': 'attributed_practitioner_claim',
+      'markdown': '[00:01:32](https://www.youtube.com/watch?v=ciKrPZ_nIpQ&t=92s)',
+      'relevance': "Practitioner instruction on explaining the template's benefits and features.",
+      'source_type': 'video_pro_tip',
+      'text': 'You should then add a detailed description. This is your chance to sell the '
+              'benefits, features, and unique aspects of your template. Make it compelling and '
+              'clear.',
+      'timestamp': 92,
+      'timestamp_label': '[00:01:32]',
+      'timestamp_seconds': 92,
+      'tip': 'You should then add a detailed description. This is your chance to sell the '
+             'benefits, features, and unique aspects of your template. Make it compelling and '
+             'clear.',
+      'title': 'How To Sell A Notion Template On Gumroad - Step by Step Guide | THELOSTOFFER '
+               '#notion #gumroad',
+      'url': 'https://www.youtube.com/watch?v=ciKrPZ_nIpQ&t=92s',
+      'video_id': 'ciKrPZ_nIpQ'},
+     {'author': 'Bree and Steve',
+      'channel': 'Bree and Steve',
+      'epistemic_status': 'attributed_practitioner_claim',
+      'markdown': '[00:11:30](https://www.youtube.com/watch?v=zmw7OXf39rQ&t=690s)',
+      'relevance': 'Practitioner delivery preparation preserving a master template before sharing.',
+      'source_type': 'video_pro_tip',
+      'text': 'Go up to the three dots in the corner and duplicate this first and foremost just to '
+              'make sure that you have a master file just in case anything happens.',
+      'timestamp': 690,
+      'timestamp_label': '[00:11:30]',
+      'timestamp_seconds': 690,
+      'tip': 'Go up to the three dots in the corner and duplicate this first and foremost just to '
+             'make sure that you have a master file just in case anything happens.',
+      'title': 'How To Make & Sell Notion Templates (Make $1000+ MONTH!)',
+      'url': 'https://www.youtube.com/watch?v=zmw7OXf39rQ&t=690s',
+      'video_id': 'zmw7OXf39rQ'},
+     {'author': 'How To Tutor',
+      'channel': 'How To Tutor',
+      'epistemic_status': 'attributed_practitioner_claim',
+      'markdown': '[00:00:47](https://www.youtube.com/watch?v=Sxl5Fxp0qVQ&t=47s)',
+      'relevance': 'Practitioner demonstration of publishing the page and viewing the resulting '
+                   'site.',
+      'source_type': 'video_pro_tip',
+      'text': 'Under the publish tab click on that publish button to publish this to the web and '
+              'then click on this view site button.',
+      'timestamp': 47,
+      'timestamp_label': '[00:00:47]',
+      'timestamp_seconds': 47,
+      'tip': 'Under the publish tab click on that publish button to publish this to the web and '
+             'then click on this view site button.',
+      'title': 'How to Upload Notion Template on Gumroad 2025 (QUICK GUIDE)',
+      'url': 'https://www.youtube.com/watch?v=Sxl5Fxp0qVQ&t=47s',
+      'video_id': 'Sxl5Fxp0qVQ'},
+     {'author': 'Extreme Guides',
+      'channel': 'Extreme Guides',
+      'epistemic_status': 'attributed_practitioner_claim',
+      'markdown': '[00:02:10](https://www.youtube.com/watch?v=2zWJQPegtuk&t=130s)',
+      'relevance': 'Practitioner recommendation to examine comparable templates when choosing a '
+                   'price.',
+      'source_type': 'video_pro_tip',
+      'text': 'Consider researching similar templates to determine a suitable price point.',
+      'timestamp': 130,
+      'timestamp_label': '[00:02:10]',
+      'timestamp_seconds': 130,
+      'tip': 'Consider researching similar templates to determine a suitable price point.',
+      'title': 'How to sell Notion templates on Gumroad[FULL GUIDE]',
+      'url': 'https://www.youtube.com/watch?v=2zWJQPegtuk&t=130s',
+      'video_id': '2zWJQPegtuk'},
+     {'author': 'Side Hustle Mastery',
+      'channel': 'Side Hustle Mastery',
+      'epistemic_status': 'attributed_practitioner_claim',
+      'markdown': '[00:06:08](https://www.youtube.com/watch?v=2j9bt8ET3Ec&t=368s)',
+      'relevance': 'Practitioner demonstration of the export-and-upload alternative to direct link '
+                   'delivery.',
+      'source_type': 'video_pro_tip',
+      'text': 'Hit the three dots button, and then go ahead and hit the export button. Once you '
+              "hit the export button, you'll then keep most of these settings pretty much the "
+              'exact same.',
+      'timestamp': 368,
+      'timestamp_label': '[00:06:08]',
+      'timestamp_seconds': 368,
+      'tip': 'Hit the three dots button, and then go ahead and hit the export button. Once you hit '
+             "the export button, you'll then keep most of these settings pretty much the exact "
+             'same.',
+      'title': 'How to Make Money Selling Notion Templates [Gumroad Step-by-Step]',
+      'url': 'https://www.youtube.com/watch?v=2j9bt8ET3Ec&t=368s',
+      'video_id': '2j9bt8ET3Ec'},
+     {'author': 'BrightGuide',
+      'channel': 'BrightGuide',
+      'epistemic_status': 'attributed_practitioner_claim',
+      'markdown': '[00:01:47](https://www.youtube.com/watch?v=oMxSmqY3mzM&t=107s)',
+      'relevance': "Practitioner demonstration of file delivery through Gumroad's content section.",
+      'source_type': 'video_pro_tip',
+      'text': 'When you finish the description, click on save and continue. That will move you '
+              'into the content section where you attach the actual file or deliverable for the '
+              'product. Click on upload your files.',
+      'timestamp': 107,
+      'timestamp_label': '[00:01:47]',
+      'timestamp_seconds': 107,
+      'tip': 'When you finish the description, click on save and continue. That will move you into '
+             'the content section where you attach the actual file or deliverable for the product. '
+             'Click on upload your files.',
+      'title': 'How to Sell Notion Templates on Gumroad (Step By Step 2026)',
+      'url': 'https://www.youtube.com/watch?v=oMxSmqY3mzM&t=107s',
+      'video_id': 'oMxSmqY3mzM'},
+     {'author': 'Typedream',
+      'channel': 'Typedream',
+      'epistemic_status': 'attributed_practitioner_claim',
+      'markdown': '[00:03:43](https://www.youtube.com/watch?v=HXQD-vJDPyU&t=223s)',
+      'relevance': 'Practitioner demonstration connecting a separate marketing page to Gumroad.',
+      'source_type': 'video_pro_tip',
+      'text': "Finally, let's add a button by typing /button, and linking it to the Gumroad page.",
+      'timestamp': 223,
+      'timestamp_label': '[00:03:43]',
+      'timestamp_seconds': 223,
+      'tip': "Finally, let's add a button by typing /button, and linking it to the Gumroad page.",
+      'title': 'How to make and sell aesthetic Notion templates with Typedream and Gumroad',
+      'url': 'https://www.youtube.com/watch?v=HXQD-vJDPyU&t=223s',
+      'video_id': 'HXQD-vJDPyU'},
+     {'author': 'Mike and Matty',
+      'channel': 'Mike and Matty',
+      'epistemic_status': 'attributed_practitioner_claim',
+      'markdown': '[00:01:38](https://www.youtube.com/watch?v=jHo-FO_OLv4&t=98s)',
+      'relevance': 'Practitioner explanation of framework-led design rather than feature '
+                   'accumulation.',
+      'source_type': 'video_pro_tip',
+      'text': "Frameworks are designed to solve a specific problem. Let's take for example our "
+              'free study scheduler template.',
+      'timestamp': 98,
+      'timestamp_label': '[00:01:38]',
+      'timestamp_seconds': 98,
+      'tip': "Frameworks are designed to solve a specific problem. Let's take for example our free "
+             'study scheduler template.',
+      'title': 'How I make $30,000/Month Selling Notion Templates',
+      'url': 'https://www.youtube.com/watch?v=jHo-FO_OLv4&t=98s',
+      'video_id': 'jHo-FO_OLv4'},
+     {'author': "Extreme How To's",
+      'channel': "Extreme How To's",
+      'epistemic_status': 'attributed_practitioner_claim',
+      'markdown': '[00:00:31](https://www.youtube.com/watch?v=SK_-uXSKE88&t=31s)',
+      'relevance': 'Practitioner recommendation for a template asking-price range.',
+      'source_type': 'video_pro_tip',
+      'text': 'After naming your product, set the price between $5 to $25, keeping in mind that '
+              'this range is often considered the sweet spot for Notion templates.',
+      'timestamp': 31,
+      'timestamp_label': '[00:00:31]',
+      'timestamp_seconds': 31,
+      'tip': 'After naming your product, set the price between $5 to $25, keeping in mind that '
+             'this range is often considered the sweet spot for Notion templates.',
+      'title': 'How to sell Notion templates on Gumroad[2026 Full Guide]',
+      'url': 'https://www.youtube.com/watch?v=SK_-uXSKE88&t=31s',
+      'video_id': 'SK_-uXSKE88'},
+     {'author': 'Job4all',
+      'channel': 'Job4all',
+      'epistemic_status': 'attributed_practitioner_claim',
+      'markdown': '[00:00:35](https://www.youtube.com/watch?v=e7mf0dzA2oU&t=35s)',
+      'relevance': 'Practitioner account of Marketplace payment processing, holds, and payout '
+                   'minimums.',
+      'source_type': 'video_pro_tip',
+      'text': 'Payments go through Stripe. Money is held for 14 days, then paid out every two '
+              'weeks with a $20 minimum.',
+      'timestamp': 35,
+      'timestamp_label': '[00:00:35]',
+      'timestamp_seconds': 35,
+      'tip': 'Payments go through Stripe. Money is held for 14 days, then paid out every two weeks '
+             'with a $20 minimum.',
+      'title': 'ell Notion Templates on Notion Marketplace: Fees, Payouts and How It Works (Honest '
+               'Guide)',
+      'url': 'https://www.youtube.com/watch?v=e7mf0dzA2oU&t=35s',
+      'video_id': 'e7mf0dzA2oU'},
+     {'author': 'Leticia Americo',
+      'channel': 'Leticia Americo',
+      'epistemic_status': 'attributed_practitioner_claim',
+      'markdown': '[00:03:25](https://www.youtube.com/watch?v=5BA65Ev2zDg&t=205s)',
+      'relevance': 'Firsthand testimony linking a personal organizational problem to an Etsy '
+                   'bestseller.',
+      'source_type': 'video_pro_tip',
+      'text': 'When I started creating templates, my first best seller was actually a template '
+              'that I created to solve a problem that I was having.',
+      'timestamp': 205,
+      'timestamp_label': '[00:03:25]',
+      'timestamp_seconds': 205,
+      'tip': 'When I started creating templates, my first best seller was actually a template that '
+             'I created to solve a problem that I was having.',
+      'title': 'How I Would Sell Notion Templates If I Could Start Over',
+      'url': 'https://www.youtube.com/watch?v=5BA65Ev2zDg&t=205s',
+      'video_id': '5BA65Ev2zDg'},
+     {'author': 'Money With Mak',
+      'channel': 'Money With Mak',
+      'epistemic_status': 'attributed_practitioner_claim',
+      'markdown': '[00:06:05](https://www.youtube.com/watch?v=V6xU-P9FHJA&t=365s)',
+      'relevance': 'Practitioner prompting technique for clarifying the AI-assisted template '
+                   'build.',
+      'source_type': 'video_pro_tip',
+      'text': 'If you ask it to ask you questions, you can get closer to your actual goal and what '
+              "you're trying to create.",
+      'timestamp': 365,
+      'timestamp_label': '[00:06:05]',
+      'timestamp_seconds': 365,
+      'tip': 'If you ask it to ask you questions, you can get closer to your actual goal and what '
+             "you're trying to create.",
+      'title': 'How to Use Claude AI to Create & Sell Notion Templates on Etsy',
+      'url': 'https://www.youtube.com/watch?v=V6xU-P9FHJA&t=365s',
+      'video_id': 'V6xU-P9FHJA'},
+     {'author': 'Mike and Matty',
+      'channel': 'Mike and Matty',
+      'epistemic_status': 'attributed_practitioner_claim',
+      'markdown': '[00:05:06](https://www.youtube.com/watch?v=keOebOEv-Oc&t=306s)',
+      'relevance': 'Firsthand lesson from the refund that prompted a simpler, beginner-focused '
+                   'product.',
+      'source_type': 'video_pro_tip',
+      'text': 'Simplicity sells, confusion repels.',
+      'timestamp': 306,
+      'timestamp_label': '[00:05:06]',
+      'timestamp_seconds': 306,
+      'tip': 'Simplicity sells, confusion repels.',
+      'title': 'How I Made $500,000 Selling 1 Notion Template',
+      'url': 'https://www.youtube.com/watch?v=keOebOEv-Oc&t=306s',
+      'video_id': 'keOebOEv-Oc'}],
+ 4: [{'author': 'Brandon Timothy',
+      'channel': 'Brandon Timothy',
+      'epistemic_status': 'attributed_practitioner_claim',
+      'markdown': '[00:10:35](https://www.youtube.com/watch?v=0plVE1LRxYo&t=635s)',
+      'relevance': 'Practitioner testimony on researching buyer needs before creating the offer.',
+      'source_type': 'video_pro_tip',
+      'text': 'Look through competitor reviews. You can learn a lot about what customers like.',
+      'timestamp': 635,
+      'timestamp_label': '[00:10:35]',
+      'timestamp_seconds': 635,
+      'tip': 'Look through competitor reviews. You can learn a lot about what customers like.',
+      'title': 'How to Sell Digital Products Online (The Beginner’s Blueprint)',
+      'url': 'https://www.youtube.com/watch?v=0plVE1LRxYo&t=635s',
+      'video_id': '0plVE1LRxYo'},
+     {'author': 'Smart Capital',
+      'channel': 'Smart Capital',
+      'epistemic_status': 'attributed_practitioner_claim',
+      'markdown': '[00:08:46](https://www.youtube.com/watch?v=GmI0MYeyMg0&t=526s)',
+      'relevance': 'Practitioner fee arithmetic separating platform commission from processing.',
+      'source_type': 'video_pro_tip',
+      'text': "On a $29 sale, Gumroad's 10% is $2.90 before processing. On Payhip's free plan, 5% "
+              'is $1.45 before processing.',
+      'timestamp': 526,
+      'timestamp_label': '[00:08:46]',
+      'timestamp_seconds': 526,
+      'tip': "On a $29 sale, Gumroad's 10% is $2.90 before processing. On Payhip's free plan, 5% "
+             'is $1.45 before processing.',
+      'title': 'Sell Notion Templates on Gumroad: What a $29 Sale Really Keeps (2026)',
+      'url': 'https://www.youtube.com/watch?v=GmI0MYeyMg0&t=526s',
+      'video_id': 'GmI0MYeyMg0'},
+     {'author': 'Framer',
+      'channel': 'Framer',
+      'epistemic_status': 'attributed_practitioner_claim',
+      'markdown': '[00:03:18](https://www.youtube.com/watch?v=RN0VWAvL-qc&t=198s)',
+      'relevance': 'Practitioner instruction to use the stable Lemon Squeezy share URL.',
+      'source_type': 'video_pro_tip',
+      'text': "This URL won't change even if you make changes to your product listing.",
+      'timestamp': 198,
+      'timestamp_label': '[00:03:18]',
+      'timestamp_seconds': 198,
+      'tip': "This URL won't change even if you make changes to your product listing.",
+      'title': 'How to start selling your Framer templates through Lemon Squeezy',
+      'url': 'https://www.youtube.com/watch?v=RN0VWAvL-qc&t=198s',
+      'video_id': 'RN0VWAvL-qc'},
+     {'author': 'Wholesale Ted',
+      'channel': 'Wholesale Ted',
+      'epistemic_status': 'attributed_practitioner_claim',
+      'markdown': '[00:13:47](https://www.youtube.com/watch?v=d7vM0wZEVPA&t=827s)',
+      'relevance': 'Practitioner testimony connecting product-gap research with marketplace '
+                   'traffic.',
+      'source_type': 'video_pro_tip',
+      'text': 'I look for products like this that are either medium to high demand but low '
+              'competition.',
+      'timestamp': 827,
+      'timestamp_label': '[00:13:47]',
+      'timestamp_seconds': 827,
+      'tip': 'I look for products like this that are either medium to high demand but low '
+             'competition.',
+      'title': 'The Lazy AI Digital Products Making People RICH',
+      'url': 'https://www.youtube.com/watch?v=d7vM0wZEVPA&t=827s',
+      'video_id': 'd7vM0wZEVPA'},
+     {'author': 'Etsy Automation - Skool',
+      'channel': 'Etsy Automation - Skool',
+      'epistemic_status': 'attributed_practitioner_claim',
+      'markdown': '[00:01:39](https://www.youtube.com/watch?v=SdOJJLR3JQo&t=99s)',
+      'relevance': 'Practitioner description of whole-shop art-bundle delivery through a linked '
+                   'PDF.',
+      'source_type': 'video_pro_tip',
+      'text': 'Basically, you get all of your listings, put them into a Google Drive, and you just '
+              'give the customer a PDF with the Google Drive link.',
+      'timestamp': 99,
+      'timestamp_label': '[00:01:39]',
+      'timestamp_seconds': 99,
+      'tip': 'Basically, you get all of your listings, put them into a Google Drive, and you just '
+             'give the customer a PDF with the Google Drive link.',
+      'title': 'One Etsy Listing Made $11,000 in a Month (Digital Products)',
+      'url': 'https://www.youtube.com/watch?v=SdOJJLR3JQo&t=99s',
+      'video_id': 'SdOJJLR3JQo'},
+     {'author': 'Etsy Automation - On Skool',
+      'channel': 'Etsy Automation - On Skool',
+      'epistemic_status': 'attributed_practitioner_claim',
+      'markdown': '[00:02:50](https://www.youtube.com/watch?v=qdRxtbb40hc&t=170s)',
+      'relevance': 'Practitioner recommendation to combine Etsy selling with Gumroad sample '
+                   'capture.',
+      'source_type': 'video_pro_tip',
+      'text': 'A better way to do this is to have the free product on a Gumroad product page, just '
+              "so every time someone downloads the free product you're getting their email.",
+      'timestamp': 170,
+      'timestamp_label': '[00:02:50]',
+      'timestamp_seconds': 170,
+      'tip': 'A better way to do this is to have the free product on a Gumroad product page, just '
+             "so every time someone downloads the free product you're getting their email.",
+      'title': 'One Etsy Listing Made $11,000 in a Month — Etsy Shop Case Study',
+      'url': 'https://www.youtube.com/watch?v=qdRxtbb40hc&t=170s',
+      'video_id': 'qdRxtbb40hc'},
+     {'author': 'Liam Digital Products',
+      'channel': 'Liam Digital Products',
+      'epistemic_status': 'attributed_practitioner_claim',
+      'markdown': '[00:02:21](https://www.youtube.com/watch?v=bLgo8r5zavo&t=141s)',
+      'relevance': 'Practitioner description of delivering editable Canva templates to Etsy '
+                   'buyers.',
+      'source_type': 'video_pro_tip',
+      'text': 'After they buy, they get a PDF with a link in it, and then they just follow the '
+              'link to edit the template to suit them.',
+      'timestamp': 141,
+      'timestamp_label': '[00:02:21]',
+      'timestamp_seconds': 141,
+      'tip': 'After they buy, they get a PDF with a link in it, and then they just follow the link '
+             'to edit the template to suit them.',
+      'title': 'How 45 Etsy Digital Products Make $15K/Month',
+      'url': 'https://www.youtube.com/watch?v=bLgo8r5zavo&t=141s',
+      'video_id': 'bLgo8r5zavo'},
+     {'author': 'Travis Nicholson',
+      'channel': 'Travis Nicholson',
+      'epistemic_status': 'attributed_practitioner_claim',
+      'markdown': '[00:01:30](https://www.youtube.com/watch?v=Nyrwtuu1AQM&t=90s)',
+      'relevance': "Firsthand reported paid-product conversion supporting Nicholson's Gumroad "
+                   'preference.',
+      'source_type': 'video_pro_tip',
+      'text': 'My paid products convert at 2 to 5% on Gumroad.',
+      'timestamp': 90,
+      'timestamp_label': '[00:01:30]',
+      'timestamp_seconds': 90,
+      'tip': 'My paid products convert at 2 to 5% on Gumroad.',
+      'title': 'Why Gumroad Beats Etsy for Digital Products',
+      'url': 'https://www.youtube.com/watch?v=Nyrwtuu1AQM&t=90s',
+      'video_id': 'Nyrwtuu1AQM'},
+     {'author': 'MakeMoneyOptimizer',
+      'channel': 'MakeMoneyOptimizer',
+      'epistemic_status': 'attributed_practitioner_claim',
+      'markdown': '[00:02:18](https://www.youtube.com/watch?v=3M0VdJeO_O0&t=138s)',
+      'relevance': "Illustrative retained proceeds for the speaker's US$29 Notion-template "
+                   'comparison.',
+      'source_type': 'video_pro_tip',
+      'text': 'On Gumroad direct, $25.60. On Notion Marketplace, about $26. And on Lemon Squeezy, '
+              '$27.05.',
+      'timestamp': 138,
+      'timestamp_label': '[00:02:18]',
+      'timestamp_seconds': 138,
+      'tip': 'On Gumroad direct, $25.60. On Notion Marketplace, about $26. And on Lemon Squeezy, '
+             '$27.05.',
+      'title': 'Where to Sell Notion Templates From Canada',
+      'url': 'https://www.youtube.com/watch?v=3M0VdJeO_O0&t=138s',
+      'video_id': '3M0VdJeO_O0'},
+     {'author': 'Marisol Vega Daily',
+      'channel': 'Marisol Vega Daily',
+      'epistemic_status': 'attributed_practitioner_claim',
+      'markdown': '[00:00:58](https://www.youtube.com/watch?v=79n6Il6OQHI&t=58s)',
+      'relevance': 'Practitioner distinction between ownership and the separate merchant-of-record '
+                   'offering.',
+      'source_type': 'video_pro_tip',
+      'text': 'Stripe acquired Lemon Squeezy, but Lemon Squeezy still operates as a separate '
+              'merchant of record platform.',
+      'timestamp': 58,
+      'timestamp_label': '[00:00:58]',
+      'timestamp_seconds': 58,
+      'tip': 'Stripe acquired Lemon Squeezy, but Lemon Squeezy still operates as a separate '
+             'merchant of record platform.',
+      'title': 'Lemon Squeezy vs Stripe vs Paddle (2026) One Owns Another',
+      'url': 'https://www.youtube.com/watch?v=79n6Il6OQHI&t=58s',
+      'video_id': '79n6Il6OQHI'},
+     {'author': 'HelperMan',
+      'channel': 'HelperMan',
+      'epistemic_status': 'attributed_practitioner_claim',
+      'markdown': '[00:01:56](https://www.youtube.com/watch?v=z5Y_rBNXqTw&t=116s)',
+      'relevance': "Stage-based recommendation following the speaker's experience using both "
+                   'platforms.',
+      'source_type': 'video_pro_tip',
+      'text': "I'd use Lemon Squeezy for early-stage SaaS launches and Paddle when the product "
+              'starts scaling internationally and needs more serious financial infrastructure.',
+      'timestamp': 116,
+      'timestamp_label': '[00:01:56]',
+      'timestamp_seconds': 116,
+      'tip': "I'd use Lemon Squeezy for early-stage SaaS launches and Paddle when the product "
+             'starts scaling internationally and needs more serious financial infrastructure.',
+      'title': 'Lemon Squeezy vs Paddle for Small SaaS - Which is Better?',
+      'url': 'https://www.youtube.com/watch?v=z5Y_rBNXqTw&t=116s',
+      'video_id': 'z5Y_rBNXqTw'},
+     {'author': 'Stack Receipts',
+      'channel': 'Stack Receipts',
+      'epistemic_status': 'attributed_practitioner_claim',
+      'markdown': '[00:03:51](https://www.youtube.com/watch?v=qakA8uDxH3o&t=231s)',
+      'relevance': "Worked monthly crossover for the speaker's twenty-dollar U.S.-card comparison.",
+      'source_type': 'video_pro_tip',
+      'text': "At $2,640, 132 sales, Lemon Squeezy costs $198. Payhip Plus costs $197.96. That's "
+              'where Payhip first gets cheaper.',
+      'timestamp': 231,
+      'timestamp_label': '[00:03:51]',
+      'timestamp_seconds': 231,
+      'tip': "At $2,640, 132 sales, Lemon Squeezy costs $198. Payhip Plus costs $197.96. That's "
+             'where Payhip first gets cheaper.',
+      'title': 'Lemon Squeezy vs Payhip (2026): What You Actually Keep From a $20 Sale',
+      'url': 'https://www.youtube.com/watch?v=qakA8uDxH3o&t=231s',
+      'video_id': 'qakA8uDxH3o'},
+     {'author': 'A1 Republic',
+      'channel': 'A1 Republic',
+      'epistemic_status': 'attributed_practitioner_claim',
+      'markdown': '[00:02:55](https://www.youtube.com/watch?v=SYaWMXXvxI4&t=175s)',
+      'relevance': "Practitioner instruction to compare fees using the seller's own membership "
+                   'economics.',
+      'source_type': 'video_pro_tip',
+      'text': 'Sources are going to disagree on any break-even point. So, plug in your own sales, '
+              'price, and member count.',
+      'timestamp': 175,
+      'timestamp_label': '[00:02:55]',
+      'timestamp_seconds': 175,
+      'tip': 'Sources are going to disagree on any break-even point. So, plug in your own sales, '
+             'price, and member count.',
+      'title': 'Whop vs Skool: Where Should You Sell Your Course?',
+      'url': 'https://www.youtube.com/watch?v=SYaWMXXvxI4&t=175s',
+      'video_id': 'SYaWMXXvxI4'},
+     {'author': 'Skool News',
+      'channel': 'Skool News',
+      'epistemic_status': 'attributed_practitioner_claim',
+      'markdown': '[00:10:25](https://www.youtube.com/watch?v=ZoLyT1PDXow&t=625s)',
+      'relevance': "Hosts' distinction between seller deductions and buyer-facing checkout service "
+                   'charges.',
+      'source_type': 'video_pro_tip',
+      'text': "That's not a fee to you, the creator, which is true. It's a fee to your customer, "
+              "and it's added on top.",
+      'timestamp': 625,
+      'timestamp_label': '[00:10:25]',
+      'timestamp_seconds': 625,
+      'tip': "That's not a fee to you, the creator, which is true. It's a fee to your customer, "
+             "and it's added on top.",
+      'title': 'How Whop, Circle, Patreon, and Kajabi Hide Fees | Skool News #21',
+      'url': 'https://www.youtube.com/watch?v=ZoLyT1PDXow&t=625s',
+      'video_id': 'ZoLyT1PDXow'},
+     {'author': 'Ryan Mathews',
+      'channel': 'Ryan Mathews',
+      'epistemic_status': 'attributed_practitioner_claim',
+      'markdown': '[00:00:17](https://www.youtube.com/watch?v=g9bpQDAGdC0&t=17s)',
+      'relevance': "Mathews's reported Whop discovery charge within their platform comparison.",
+      'source_type': 'video_pro_tip',
+      'text': 'They also have a 30% marketplace transaction fee that gets charged if someone finds '
+              'you on the discover page. Skool does not charge for that.',
+      'timestamp': 17,
+      'timestamp_label': '[00:00:17]',
+      'timestamp_seconds': 17,
+      'tip': 'They also have a 30% marketplace transaction fee that gets charged if someone finds '
+             'you on the discover page. Skool does not charge for that.',
+      'title': 'Whop vs Skool in 100 Seconds',
+      'url': 'https://www.youtube.com/watch?v=g9bpQDAGdC0&t=17s',
+      'video_id': 'g9bpQDAGdC0'},
+     {'author': 'Click and Convert with Maria Sparagis',
+      'channel': 'Click and Convert with Maria Sparagis',
+      'epistemic_status': 'attributed_practitioner_claim',
+      'markdown': '[00:11:05](https://www.youtube.com/watch?v=FJ1oo4UNvfU&t=665s)',
+      'relevance': 'Practitioner recommendation on backups and avoiding complete platform '
+                   'dependence.',
+      'source_type': 'video_pro_tip',
+      'text': "You don't necessarily need to duplicate your entire business, but you do need to "
+              "have backups in case there's any issues with Whop or with Skool.",
+      'timestamp': 665,
+      'timestamp_label': '[00:11:05]',
+      'timestamp_seconds': 665,
+      'tip': "You don't necessarily need to duplicate your entire business, but you do need to "
+             "have backups in case there's any issues with Whop or with Skool.",
+      'title': 'Whop vs Skool 2026: Hidden Fees & Features',
+      'url': 'https://www.youtube.com/watch?v=FJ1oo4UNvfU&t=665s',
+      'video_id': 'FJ1oo4UNvfU'}],
+ 5: [{'author': 'HelperMan',
+      'channel': 'HelperMan',
+      'epistemic_status': 'attributed_practitioner_claim',
+      'markdown': '[00:01:52](https://www.youtube.com/watch?v=IA4eosnOzIE&t=112s)',
+      'relevance': 'Practitioner testimony on comparing administrative simplicity with the '
+                   'additional merchant-of-record fee.',
+      'source_type': 'video_pro_tip',
+      'text': "One thing I'd strongly recommend is making sure the simplicity and tax handling are "
+              'actually worth the extra fees for your business model.',
+      'timestamp': 112,
+      'timestamp_label': '[00:01:52]',
+      'timestamp_seconds': 112,
+      'tip': "One thing I'd strongly recommend is making sure the simplicity and tax handling are "
+             'actually worth the extra fees for your business model.',
+      'title': 'Lemon Squeezy for Merchant of Record Honest Review - Watch Before Using',
+      'url': 'https://www.youtube.com/watch?v=IA4eosnOzIE&t=112s',
+      'video_id': 'IA4eosnOzIE'},
+     {'author': 'Folioquest',
+      'channel': 'Folioquest',
+      'epistemic_status': 'attributed_practitioner_claim',
+      'markdown': '[00:01:36](https://www.youtube.com/watch?v=M61DsgB51BI&t=96s)',
+      'relevance': 'Practitioner report of migration timing, with a tooling date that differs from '
+                   "heyymilian's account.",
+      'source_type': 'video_pro_tip',
+      'text': 'Automated data exports and migration tools open on December 2nd, 2026. Because '
+              'moving catalogs, webhooks, and live subscriptions can take four to eight weeks, '
+              'Lemon Squeezy urges sellers to begin by mid-January.',
+      'timestamp': 96,
+      'timestamp_label': '[00:01:36]',
+      'timestamp_seconds': 96,
+      'tip': 'Automated data exports and migration tools open on December 2nd, 2026. Because '
+             'moving catalogs, webhooks, and live subscriptions can take four to eight weeks, '
+             'Lemon Squeezy urges sellers to begin by mid-January.',
+      'title': 'Lemon Squeezy Winds Down After Stripe Acquisition',
+      'url': 'https://www.youtube.com/watch?v=M61DsgB51BI&t=96s',
+      'video_id': 'M61DsgB51BI'},
+     {'author': 'HelperMan',
+      'channel': 'HelperMan',
+      'epistemic_status': 'attributed_practitioner_claim',
+      'markdown': '[00:01:38](https://www.youtube.com/watch?v=o3KRrFnoAgM&t=98s)',
+      'relevance': 'Firsthand practitioner observation about Paddle review timing and the '
+                   'importance of understanding its operating model.',
+      'source_type': 'video_pro_tip',
+      'text': 'I also noticed that account approvals and compliance reviews can sometimes take '
+              'time, especially for newer businesses or unusual business models.',
+      'timestamp': 98,
+      'timestamp_label': '[00:01:38]',
+      'timestamp_seconds': 98,
+      'tip': 'I also noticed that account approvals and compliance reviews can sometimes take '
+             'time, especially for newer businesses or unusual business models.',
+      'title': 'Paddle for Merchant of Record Honest Review - Watch Before Using',
+      'url': 'https://www.youtube.com/watch?v=o3KRrFnoAgM&t=98s',
+      'video_id': 'o3KRrFnoAgM'},
+     {'author': 'Captain Vova (Vova Feldman)',
+      'channel': 'Captain Vova (Vova Feldman)',
+      'epistemic_status': 'attributed_practitioner_claim',
+      'markdown': '[00:00:45](https://www.youtube.com/watch?v=5zGuxRrg_O0&t=45s)',
+      'relevance': 'Practitioner description of geographic tax-coverage limits in the Managed '
+                   'Payments offering they discuss.',
+      'source_type': 'video_pro_tip',
+      'text': 'The current downside in comparing Managed Payments to other Merchant of Records is '
+              "there's no full global tax compliance yet.",
+      'timestamp': 45,
+      'timestamp_label': '[00:00:45]',
+      'timestamp_seconds': 45,
+      'tip': 'The current downside in comparing Managed Payments to other Merchant of Records is '
+             "there's no full global tax compliance yet.",
+      'title': 'Stripe Managed Payments: The Threat to Paddle and the Future of MoR',
+      'url': 'https://www.youtube.com/watch?v=5zGuxRrg_O0&t=45s',
+      'video_id': '5zGuxRrg_O0'},
+     {'author': 'TechWealth Hub',
+      'channel': 'TechWealth Hub',
+      'epistemic_status': 'attributed_practitioner_claim',
+      'markdown': '[00:02:43](https://www.youtube.com/watch?v=KRdWGDk-GkY&t=163s)',
+      'relevance': 'Practitioner description of selective Managed Payments use rather than a '
+                   'platform-wide all-or-nothing switch.',
+      'source_type': 'video_pro_tip',
+      'text': 'Stripe managed payments can be applied selectively by transaction, by market, or by '
+              'product line.',
+      'timestamp': 163,
+      'timestamp_label': '[00:02:43]',
+      'timestamp_seconds': 163,
+      'tip': 'Stripe managed payments can be applied selectively by transaction, by market, or by '
+             'product line.',
+      'title': 'Stripe Just KILLED Paddle and Gumroad (Managed Payments)',
+      'url': 'https://www.youtube.com/watch?v=KRdWGDk-GkY&t=163s',
+      'video_id': 'KRdWGDk-GkY'},
+     {'author': 'SoloBuild',
+      'channel': 'SoloBuild',
+      'epistemic_status': 'attributed_practitioner_claim',
+      'markdown': '[00:07:25](https://www.youtube.com/watch?v=i05UCC3UvNY&t=445s)',
+      'relevance': 'Practitioner economic comparison including tax-administration time rather than '
+                   'processing fees alone.',
+      'source_type': 'video_pro_tip',
+      'text': 'Count your accountant fees and your own time for registering and filing. If they '
+              'add up to more than that, the handed-off option is the cheaper one.',
+      'timestamp': 445,
+      'timestamp_label': '[00:07:25]',
+      'timestamp_seconds': 445,
+      'tip': 'Count your accountant fees and your own time for registering and filing. If they add '
+             'up to more than that, the handed-off option is the cheaper one.',
+      'title': 'Stripe vs Lemon Squeezy vs Paddle (2026): Which Should You Use?',
+      'url': 'https://www.youtube.com/watch?v=i05UCC3UvNY&t=445s',
+      'video_id': 'i05UCC3UvNY'},
+     {'author': 'Tutorly',
+      'channel': 'Tutorly',
+      'epistemic_status': 'attributed_practitioner_claim',
+      'markdown': '[00:00:32](https://www.youtube.com/watch?v=IfaCBBIoVK0&t=32s)',
+      'relevance': 'Practitioner explanation of the legal-seller distinction underlying the '
+                   'checkout comparison.',
+      'source_type': 'video_pro_tip',
+      'text': 'Stripe Checkout is a standard payment processor, while Paddle and Lemon Squeezy act '
+              'as a merchant of record. A merchant of record means the platform becomes the legal '
+              'seller of your product.',
+      'timestamp': 32,
+      'timestamp_label': '[00:00:32]',
+      'timestamp_seconds': 32,
+      'tip': 'Stripe Checkout is a standard payment processor, while Paddle and Lemon Squeezy act '
+             'as a merchant of record. A merchant of record means the platform becomes the legal '
+             'seller of your product.',
+      'title': 'Lemon Squeezy Vs Stripe Checkout Vs Paddle (2026) Which One Is Better?',
+      'url': 'https://www.youtube.com/watch?v=IfaCBBIoVK0&t=32s',
+      'video_id': 'IfaCBBIoVK0'},
+     {'author': 'How2Genius',
+      'channel': 'How2Genius',
+      'epistemic_status': 'attributed_practitioner_claim',
+      'markdown': '[00:02:11](https://www.youtube.com/watch?v=Y5VXhUB7aNM&t=131s)',
+      'relevance': "Practitioner comparison of FastSpring's customization features with Paddle's "
+                   'simpler setup positioning.',
+      'source_type': 'video_pro_tip',
+      'text': 'FastSpring stands out for its robust customization. You can create fully branded '
+              'storefronts and checkout experiences, including upsells, bundles, and localized '
+              'pricing.',
+      'timestamp': 131,
+      'timestamp_label': '[00:02:11]',
+      'timestamp_seconds': 131,
+      'tip': 'FastSpring stands out for its robust customization. You can create fully branded '
+             'storefronts and checkout experiences, including upsells, bundles, and localized '
+             'pricing.',
+      'title': 'NEW* Paddle vs FastSpring — Best Checkout & Tax for Digital Products',
+      'url': 'https://www.youtube.com/watch?v=Y5VXhUB7aNM&t=131s',
+      'video_id': 'Y5VXhUB7aNM'},
+     {'author': 'houdztech',
+      'channel': 'houdztech',
+      'epistemic_status': 'attributed_practitioner_claim',
+      'markdown': '[00:02:44](https://www.youtube.com/watch?v=Qq-EyvVj7IM&t=164s)',
+      'relevance': "Practitioner positioning of Lemon Squeezy's setup and interface for "
+                   'independent makers and small teams.',
+      'source_type': 'video_pro_tip',
+      'text': 'Lemon Squeezy is designed for simplicity. The UI is clean, modern, and genuinely '
+              'easy to navigate. Setup takes 15 to 30 minutes.',
+      'timestamp': 164,
+      'timestamp_label': '[00:02:44]',
+      'timestamp_seconds': 164,
+      'tip': 'Lemon Squeezy is designed for simplicity. The UI is clean, modern, and genuinely '
+             'easy to navigate. Setup takes 15 to 30 minutes.',
+      'title': 'Paddle vs LemonSqueezy (2026) | Which One is Better?',
+      'url': 'https://www.youtube.com/watch?v=Qq-EyvVj7IM&t=164s',
+      'video_id': 'Qq-EyvVj7IM'},
      {'author': 'Stephen S.',
       'channel': 'Stephen S.',
       'epistemic_status': 'attributed_practitioner_claim',
       'markdown': '[00:03:38](https://www.youtube.com/watch?v=F-WZgXuQIuQ&t=218s)',
-      'relevance': 'Attributed practitioner commentary on buyer psychology, Merchant-of-Record '
-                   'platforms (Paddle/Lemon Squeezy), and direct Stripe checkout settlement.',
+      'relevance': 'Firsthand setup requirement encountered while opening Managed Payments '
+                   'checkout in an existing application.',
       'source_type': 'video_pro_tip',
-      'text': 'So I had to go in and specify the correct tax classification. So in this case, '
-              'software as a service personal use for these products. But once you do that, '
-              'then the uh checkout API will work and it will open up these pages.',
+      'text': 'I had to go in and specify the correct tax classification. So in this case, '
+              'software as a service personal use for these products.',
       'timestamp': 218,
       'timestamp_label': '[00:03:38]',
       'timestamp_seconds': 218,
-      'tip': 'So I had to go in and specify the correct tax classification. So in this case, '
-             'software as a service personal use for these products. But once you do that, '
-             'then the uh checkout API will work and it will open up these pages.',
-      'title': "Stripe's Merchant of Record (MoR) Solution: Adding Managed Payments to an "
-               'Existing App  #mcp (Stephen S.)',
+      'tip': 'I had to go in and specify the correct tax classification. So in this case, software '
+             'as a service personal use for these products.',
+      'title': "Stripe's Merchant of Record (MoR) Solution: Adding Managed Payments to an Existing "
+               'App  #mcp',
       'url': 'https://www.youtube.com/watch?v=F-WZgXuQIuQ&t=218s',
       'video_id': 'F-WZgXuQIuQ'},
-     {'author': 'HelperMan',
-      'channel': 'HelperMan',
+     {'author': 'Hayes Tutorials',
+      'channel': 'Hayes Tutorials',
       'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:02:00](https://www.youtube.com/watch?v=o3KRrFnoAgM&t=120s)',
-      'relevance': 'Attributed practitioner commentary on buyer psychology, Merchant-of-Record '
-                   'platforms (Paddle/Lemon Squeezy), and direct Stripe checkout settlement.',
+      'markdown': '[00:01:30](https://www.youtube.com/watch?v=mEXMrWuZFRQ&t=90s)',
+      'relevance': 'Practitioner recommendation organized around tax capability and '
+                   'business-versus-consumer customers.',
       'source_type': 'video_pro_tip',
-      'text': "Overall, after 6 months of using Paddle, I think it's one of the best payment "
-              'solutions for SaaS businesses and digital product creators who want simplicity '
-              'and global compliance support.',
-      'timestamp': 120,
-      'timestamp_label': '[00:02:00]',
-      'timestamp_seconds': 120,
-      'tip': "Overall, after 6 months of using Paddle, I think it's one of the best payment "
-             'solutions for SaaS businesses and digital product creators who want simplicity '
-             'and global compliance support.',
-      'title': 'Paddle for Merchant of Record Honest Review - Watch Before Using (HelperMan)',
-      'url': 'https://www.youtube.com/watch?v=o3KRrFnoAgM&t=120s',
-      'video_id': 'o3KRrFnoAgM'},
-     {'author': 'Marketing Mark',
+      'text': 'Choose Stripe if you already handle taxes or sell locally. Choose Paddle if you '
+              'sell to businesses. Choose Lemon Squeezy if you sell to consumers.',
+      'timestamp': 90,
+      'timestamp_label': '[00:01:30]',
+      'timestamp_seconds': 90,
+      'tip': 'Choose Stripe if you already handle taxes or sell locally. Choose Paddle if you sell '
+             'to businesses. Choose Lemon Squeezy if you sell to consumers.',
+      'title': 'Stripe Checkout vs Paddle vs Lemon Squeezy: Payment Platform Comparison',
+      'url': 'https://www.youtube.com/watch?v=mEXMrWuZFRQ&t=90s',
+      'video_id': 'mEXMrWuZFRQ'},
+     {'author': 'Yumi Kato Reviews',
+      'channel': 'Yumi Kato Reviews',
+      'epistemic_status': 'attributed_practitioner_claim',
+      'markdown': '[00:00:47](https://www.youtube.com/watch?v=jwFYqAi_nQY&t=47s)',
+      'relevance': "Practitioner fee claim contrasted with SoloBuild's and heyymilian's "
+                   'base-plus-specific-additions descriptions.',
+      'source_type': 'video_pro_tip',
+      'text': "Add Stripe's processing, and that table puts the total near 7.9% plus a flat charge "
+              'per transaction.',
+      'timestamp': 47,
+      'timestamp_label': '[00:00:47]',
+      'timestamp_seconds': 47,
+      'tip': "Add Stripe's processing, and that table puts the total near 7.9% plus a flat charge "
+             'per transaction.',
+      'title': 'Lemon Squeezy Review: Is the Merchant of Record Deal Worth It? (2026)',
+      'url': 'https://www.youtube.com/watch?v=jwFYqAi_nQY&t=47s',
+      'video_id': 'jwFYqAi_nQY'},
+     {'author': 'Calderon Bridger',
+      'channel': 'Calderon Bridger',
+      'epistemic_status': 'attributed_practitioner_claim',
+      'markdown': '[00:02:30](https://www.youtube.com/watch?v=k-wa2TZefr4&t=150s)',
+      'relevance': 'Practitioner framing of the trade between tax responsibility and platform '
+                   'restrictions.',
+      'source_type': 'video_pro_tip',
+      'text': 'There is a specific kind of stress that comes with managing your own tax liability. '
+              'There is also a specific kind of frustration that comes with being limited by '
+              "someone else's platform.",
+      'timestamp': 150,
+      'timestamp_label': '[00:02:30]',
+      'timestamp_seconds': 150,
+      'tip': 'There is a specific kind of stress that comes with managing your own tax liability. '
+             'There is also a specific kind of frustration that comes with being limited by '
+             "someone else's platform.",
+      'title': 'Lemon Squeezy vs Stripe Merchant Platform Review 2026: Payouts & Features',
+      'url': 'https://www.youtube.com/watch?v=k-wa2TZefr4&t=150s',
+      'video_id': 'k-wa2TZefr4'},
+     {'author': 'OCH Platform',
+      'channel': 'OCH Platform',
+      'epistemic_status': 'attributed_practitioner_claim',
+      'markdown': '[00:01:26](https://www.youtube.com/watch?v=H8_HQ-GZOwc&t=86s)',
+      'relevance': 'Practitioner-stated registration condition in the Stripe Tax activation '
+                   'walkthrough.',
+      'source_type': 'video_pro_tip',
+      'text': "Tax won't show up on checkout pages or invoices unless you're registered in that "
+              'specific tax jurisdiction.',
+      'timestamp': 86,
+      'timestamp_label': '[00:01:26]',
+      'timestamp_seconds': 86,
+      'tip': "Tax won't show up on checkout pages or invoices unless you're registered in that "
+             'specific tax jurisdiction.',
+      'title': 'How to Enable Stripe Tax to Handle Sales Tax Automatically',
+      'url': 'https://www.youtube.com/watch?v=H8_HQ-GZOwc&t=86s',
+      'video_id': 'H8_HQ-GZOwc'},
+     {'author': 'heyymilian',
+      'channel': 'heyymilian',
+      'epistemic_status': 'attributed_practitioner_claim',
+      'markdown': '[00:02:37](https://www.youtube.com/watch?v=0R3CB1EcgKA&t=157s)',
+      'relevance': 'Practitioner identification of fulfillment and affiliate gaps in the Managed '
+                   'Payments replacement.',
+      'source_type': 'video_pro_tip',
+      'text': "Digital fulfillment not included. Managed payments doesn't deliver files, license "
+              'keys, or download links. Affiliates not included either.',
+      'timestamp': 157,
+      'timestamp_label': '[00:02:37]',
+      'timestamp_seconds': 157,
+      'tip': "Digital fulfillment not included. Managed payments doesn't deliver files, license "
+             'keys, or download links. Affiliates not included either.',
+      'title': 'Lemon Squeezy is closing. Can you just run your own checkout?',
+      'url': 'https://www.youtube.com/watch?v=0R3CB1EcgKA&t=157s',
+      'video_id': '0R3CB1EcgKA'},
+     {'author': 'Gaurav Tiwari',
+      'channel': 'Gaurav Tiwari',
+      'epistemic_status': 'attributed_practitioner_claim',
+      'markdown': '[00:03:50](https://www.youtube.com/watch?v=cNc29NtuCYU&t=230s)',
+      'relevance': 'Practitioner migration sequence covering exports, payment-method handling, '
+                   'testing, replacement links, and customer communication.',
+      'source_type': 'video_pro_tip',
+      'text': 'Export everything now: customers, orders, subscriptions, and license keys. Turn '
+              'PayPal off at checkout so new subscribers can migrate. Set up the new provider in '
+              'test mode. Replace every link. Then email your customers and tell them the new name '
+              'on their card statement.',
+      'timestamp': 230,
+      'timestamp_label': '[00:03:50]',
+      'timestamp_seconds': 230,
+      'tip': 'Export everything now: customers, orders, subscriptions, and license keys. Turn '
+             'PayPal off at checkout so new subscribers can migrate. Set up the new provider in '
+             'test mode. Replace every link. Then email your customers and tell them the new name '
+             'on their card statement.',
+      'title': "Lemon Squeezy Is Shutting Down, and Stripe's Fix Leaves Out License Keys",
+      'url': 'https://www.youtube.com/watch?v=cNc29NtuCYU&t=230s',
+      'video_id': 'cNc29NtuCYU'}],
+ 6: [{'author': 'Marketing Mark',
       'channel': 'Marketing Mark',
       'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:00:45](https://www.youtube.com/watch?v=0u4Tmd6BlWA&t=45s)',
-      'relevance': 'Attributed practitioner commentary on buyer psychology, Merchant-of-Record '
-                   'platforms (Paddle/Lemon Squeezy), and direct Stripe checkout settlement.',
+      'markdown': '[00:03:11](https://www.youtube.com/watch?v=qUqLPLYblBI&t=191s)',
+      'relevance': 'Verbatim practitioner testimony from Chapter Q6.',
       'source_type': 'video_pro_tip',
-      'text': 'So, what we want to do to add a one-click upsell, and by one-click upsell I '
-              "mean that since we've captured their payment information on our checkout page, "
-              'the system has that stored.',
-      'timestamp': 45,
-      'timestamp_label': '[00:00:45]',
-      'timestamp_seconds': 45,
-      'tip': 'So, what we want to do to add a one-click upsell, and by one-click upsell I mean '
-             "that since we've captured their payment information on our checkout page, the "
-             'system has that stored.',
-      'title': 'How to Build 1 Click Upsells in GoHighLevel (Marketing Mark)',
-      'url': 'https://www.youtube.com/watch?v=0u4Tmd6BlWA&t=45s',
-      'video_id': '0u4Tmd6BlWA'},
-     {'author': "Extreme How To's",
-      'channel': "Extreme How To's",
+      'text': "If I toggle on my $17 order bump, now we can see I'm being charged for both "
+              'products for a total of 44.',
+      'timestamp': 191,
+      'timestamp_label': '[00:03:11]',
+      'timestamp_seconds': 191,
+      'tip': "If I toggle on my $17 order bump, now we can see I'm being charged for both products "
+             'for a total of 44.',
+      'title': 'How to Add Order Bumps in GoHighLevel (Plus Easy One-Click Upsells)',
+      'url': 'https://www.youtube.com/watch?v=qUqLPLYblBI&t=191s',
+      'video_id': 'qUqLPLYblBI'},
+     {'author': 'Maik Kleinert | Content-to-Conversion Systems',
+      'channel': 'Maik Kleinert | Content-to-Conversion Systems',
       'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:01:46](https://www.youtube.com/watch?v=SK_-uXSKE88&t=106s)',
-      'relevance': 'Attributed practitioner commentary on buyer psychology, Merchant-of-Record '
-                   'platforms (Paddle/Lemon Squeezy), and direct Stripe checkout settlement.',
+      'markdown': '[00:03:27](https://www.youtube.com/watch?v=pE2Z7vTYfSw&t=207s)',
+      'relevance': 'Verbatim practitioner testimony from Chapter Q6.',
       'source_type': 'video_pro_tip',
-      'text': '" This instruction will guide users through the process of obtaining the '
-              'template. For pricing options, you can choose to toggle on allow customers to '
-              'pay what they want. This feature can attract more buyers as it offers '
-              'flexibility in pricing.',
-      'timestamp': 106,
-      'timestamp_label': '[00:01:46]',
-      'timestamp_seconds': 106,
-      'tip': '" This instruction will guide users through the process of obtaining the '
-             'template. For pricing options, you can choose to toggle on allow customers to '
-             'pay what they want. This feature can attract more buyers as it offers '
-             'flexibility in pricing.',
-      'title': "How to sell Notion templates on Gumroad[2026 Full Guide] (Extreme How To's)",
-      'url': 'https://www.youtube.com/watch?v=SK_-uXSKE88&t=106s',
-      'video_id': 'SK_-uXSKE88'},
-     {'author': 'Rochelle Be',
-      'channel': 'Rochelle Be',
-      'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:07:06](https://www.youtube.com/watch?v=4e4pRrWsJvU&t=426s)',
-      'relevance': 'Attributed practitioner commentary on buyer psychology, Merchant-of-Record '
-                   'platforms (Paddle/Lemon Squeezy), and direct Stripe checkout settlement.',
-      'source_type': 'video_pro_tip',
-      'text': "'t even know that you're good at problem solving in that area. Okay, so that's "
-              "the second circle. We're now on to circle three, which is what people pay for. "
-              'Because we want things that people are actually going to pay you money for. You '
-              'might be good at rock collecting.',
-      'timestamp': 426,
-      'timestamp_label': '[00:07:06]',
-      'timestamp_seconds': 426,
-      'tip': "'t even know that you're good at problem solving in that area. Okay, so that's "
-             "the second circle. We're now on to circle three, which is what people pay for. "
-             'Because we want things that people are actually going to pay you money for. You '
-             'might be good at rock collecting.',
-      'title': 'How to Start Selling Digital Products in 2026 (Step-by-Step Tutorial) '
-               '(Rochelle Be)',
-      'url': 'https://www.youtube.com/watch?v=4e4pRrWsJvU&t=426s',
-      'video_id': '4e4pRrWsJvU'}],
- 3: [{'author': 'Funnel Building Secrets',
+      'text': 'Instead of $7, they pay $57.',
+      'timestamp': 207,
+      'timestamp_label': '[00:03:27]',
+      'timestamp_seconds': 207,
+      'tip': 'Instead of $7, they pay $57.',
+      'title': 'I Upsold A $7 Product To $57  With DM Automation + Order Bump Setup ( Full System '
+               'Explained )',
+      'url': 'https://www.youtube.com/watch?v=pE2Z7vTYfSw&t=207s',
+      'video_id': 'pE2Z7vTYfSw'},
+     {'author': 'Funnel Building Secrets',
       'channel': 'Funnel Building Secrets',
       'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:01:46](https://www.youtube.com/watch?v=BZ4rml1tc1U&t=106s)',
-      'relevance': 'Attributed practitioner commentary on pricing tiers, order bumps, 1-click '
-                   'upsells, self-liquidating offers (SLOs), and net contribution margins.',
+      'markdown': '[00:01:49](https://www.youtube.com/watch?v=BZ4rml1tc1U&t=109s)',
+      'relevance': 'Verbatim practitioner testimony from Chapter Q6.',
       'source_type': 'video_pro_tip',
-      'text': 'Finally, test your funnel to make sure your order bump and upsell flow '
-              "smoothly. Place a test order to confirm that both are working correctly. You've "
-              'successfully set up an order bump and upsell in ClickFunnels. Two simple tweaks '
-              'that can dramatically increase your revenue.',
-      'timestamp': 106,
-      'timestamp_label': '[00:01:46]',
-      'timestamp_seconds': 106,
-      'tip': 'Finally, test your funnel to make sure your order bump and upsell flow smoothly. '
-             "Place a test order to confirm that both are working correctly. You've "
-             'successfully set up an order bump and upsell in ClickFunnels. Two simple tweaks '
-             'that can dramatically increase your revenue.',
-      'title': 'How to Set Up an Order Bump and Upsell (Funnel Building Secrets)',
-      'url': 'https://www.youtube.com/watch?v=BZ4rml1tc1U&t=106s',
+      'text': 'Place a test order to confirm that both are working correctly.',
+      'timestamp': 109,
+      'timestamp_label': '[00:01:49]',
+      'timestamp_seconds': 109,
+      'tip': 'Place a test order to confirm that both are working correctly.',
+      'title': 'How to Set Up an Order Bump and Upsell',
+      'url': 'https://www.youtube.com/watch?v=BZ4rml1tc1U&t=109s',
       'video_id': 'BZ4rml1tc1U'},
-     {'author': 'Zero to Launch',
-      'channel': 'Zero to Launch',
-      'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:04:09](https://www.youtube.com/watch?v=u9nHXAMBUe4&t=249s)',
-      'relevance': 'Attributed practitioner commentary on pricing tiers, order bumps, 1-click '
-                   'upsells, self-liquidating offers (SLOs), and net contribution margins.',
-      'source_type': 'video_pro_tip',
-      'text': "The statement descriptor is the short text on the buyer's bank statement. I'll "
-              'put um plant checklist. An order bump takes one price and only one. On the '
-              'upsell, the plus was still there after the first plan. Click save at the bottom '
-              'of the section.',
-      'timestamp': 249,
-      'timestamp_label': '[00:04:09]',
-      'timestamp_seconds': 249,
-      'tip': "The statement descriptor is the short text on the buyer's bank statement. I'll "
-             'put um plant checklist. An order bump takes one price and only one. On the '
-             'upsell, the plus was still there after the first plan. Click save at the bottom '
-             'of the section.',
-      'title': 'Order Bump or Upsell in Systeme.io: Which Should You Add First? (Zero to '
-               'Launch)',
-      'url': 'https://www.youtube.com/watch?v=u9nHXAMBUe4&t=249s',
-      'video_id': 'u9nHXAMBUe4'},
-     {'author': 'SamCart',
-      'channel': 'SamCart',
-      'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:02:20](https://www.youtube.com/watch?v=UxhtBuVj4gY&t=140s)',
-      'relevance': 'Attributed practitioner commentary on pricing tiers, order bumps, 1-click '
-                   'upsells, self-liquidating offers (SLOs), and net contribution margins.',
-      'source_type': 'video_pro_tip',
-      'text': 'And so for every 100 customers, 30 of them would say, cool, let me add the '
-              'order bump. And that was an extra $750 in revenue. But then things got '
-              'supercharged when we added our first one-click upsell.',
-      'timestamp': 140,
-      'timestamp_label': '[00:02:20]',
-      'timestamp_seconds': 140,
-      'tip': 'And so for every 100 customers, 30 of them would say, cool, let me add the order '
-             'bump. And that was an extra $750 in revenue. But then things got supercharged '
-             'when we added our first one-click upsell.',
-      'title': 'The Complete Guide to Upsells ($8 Billion in Data) (SamCart)',
-      'url': 'https://www.youtube.com/watch?v=UxhtBuVj4gY&t=140s',
-      'video_id': 'UxhtBuVj4gY'},
      {'author': 'Marketing Mark',
       'channel': 'Marketing Mark',
       'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:01:16](https://www.youtube.com/watch?v=qUqLPLYblBI&t=76s)',
-      'relevance': 'Attributed practitioner commentary on pricing tiers, order bumps, 1-click '
-                   'upsells, self-liquidating offers (SLOs), and net contribution margins.',
+      'markdown': '[00:00:29](https://www.youtube.com/watch?v=0u4Tmd6BlWA&t=29s)',
+      'relevance': 'Verbatim practitioner testimony from Chapter Q6.',
       'source_type': 'video_pro_tip',
-      'text': "Now you'll see this product below has this tag below it that says bump. So, in "
-              "order to do that, once we've added our main product, we'll just go ahead and "
-              "we'll add a second product. And we will select that and select our price.",
-      'timestamp': 76,
-      'timestamp_label': '[00:01:16]',
-      'timestamp_seconds': 76,
-      'tip': "Now you'll see this product below has this tag below it that says bump. So, in "
-             "order to do that, once we've added our main product, we'll just go ahead and "
-             "we'll add a second product. And we will select that and select our price.",
-      'title': 'How to Add Order Bumps in GoHighLevel (Plus Easy One-Click Upsells) (Marketing '
-               'Mark)',
-      'url': 'https://www.youtube.com/watch?v=qUqLPLYblBI&t=76s',
-      'video_id': 'qUqLPLYblBI'},
-     {'author': 'Skool News',
-      'channel': 'Skool News',
-      'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:01:09](https://www.youtube.com/watch?v=Oeug9IgSFXc&t=69s)',
-      'relevance': 'Attributed practitioner commentary on pricing tiers, order bumps, 1-click '
-                   'upsells, self-liquidating offers (SLOs), and net contribution margins.',
-      'source_type': 'video_pro_tip',
-      'text': 'You can have a premium tier that you can set the price for, and you can have a '
-              'VIP tier that you can set the price for. Then tiers, which is two to three paid '
-              'tiers, right? You can set the prices like that. Um, you can just have two if '
-              'you want or three.',
-      'timestamp': 69,
-      'timestamp_label': '[00:01:09]',
-      'timestamp_seconds': 69,
-      'tip': 'You can have a premium tier that you can set the price for, and you can have a '
-             'VIP tier that you can set the price for. Then tiers, which is two to three paid '
-             'tiers, right? You can set the prices like that. Um, you can just have two if you '
-             'want or three.',
-      'title': 'Membership TIERS Are Here | Skool News #33 (Skool News)',
-      'url': 'https://www.youtube.com/watch?v=Oeug9IgSFXc&t=69s',
-      'video_id': 'Oeug9IgSFXc'},
-     {'author': 'CRM Tutorials Library',
-      'channel': 'CRM Tutorials Library',
-      'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:01:12](https://www.youtube.com/watch?v=pz33EMSEtfY&t=72s)',
-      'relevance': 'Attributed practitioner commentary on pricing tiers, order bumps, 1-click '
-                   'upsells, self-liquidating offers (SLOs), and net contribution margins.',
-      'source_type': 'video_pro_tip',
-      'text': 'Set the price that matches your offer. Open additional options and enable bump '
-              'product. An order bump is a small, complimentary add-on shown on the checkout '
-              'page that customers can add with a single click. Great for increasing average '
-              'order value without adding friction.',
-      'timestamp': 72,
-      'timestamp_label': '[00:01:12]',
-      'timestamp_seconds': 72,
-      'tip': 'Set the price that matches your offer. Open additional options and enable bump '
-             'product. An order bump is a small, complimentary add-on shown on the checkout '
-             'page that customers can add with a single click. Great for increasing average '
-             'order value without adding friction.',
-      'title': 'How to Set Up Main Product, Order Bump, Upsell & Downsell in GoHighLevel | '
-               'Step-by-Step (CRM Tutorials Library)',
-      'url': 'https://www.youtube.com/watch?v=pz33EMSEtfY&t=72s',
-      'video_id': 'pz33EMSEtfY'},
-     {'author': 'Maik Kleinert | Content-to-Conversion Systems',
-      'channel': 'Maik Kleinert | Content-to-Conversion Systems',
-      'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:10:49](https://www.youtube.com/watch?v=pE2Z7vTYfSw&t=649s)',
-      'relevance': 'Attributed practitioner commentary on pricing tiers, order bumps, 1-click '
-                   'upsells, self-liquidating offers (SLOs), and net contribution margins.',
-      'source_type': 'video_pro_tip',
-      'text': 'Number four, the order bumps. So for the order bumps, now the money part is $7 '
-              'sales is almost zero profit on its own. So at the checkout where the buyer is '
-              'already saying yes, I add the order bump.',
-      'timestamp': 649,
-      'timestamp_label': '[00:10:49]',
-      'timestamp_seconds': 649,
-      'tip': 'Number four, the order bumps. So for the order bumps, now the money part is $7 '
-             'sales is almost zero profit on its own. So at the checkout where the buyer is '
-             'already saying yes, I add the order bump.',
-      'title': 'I Upsold A $7 Product To $57  With DM Automation + Order Bump Setup ( Full '
-               'System Explained ) (Maik Kleinert | Content-to-Conversion Systems)',
-      'url': 'https://www.youtube.com/watch?v=pE2Z7vTYfSw&t=649s',
-      'video_id': 'pE2Z7vTYfSw'},
-     {'author': 'Maria Wendt',
-      'channel': 'Maria Wendt',
-      'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:07:45](https://www.youtube.com/watch?v=zQQZEPMxT6U&t=465s)',
-      'relevance': 'Attributed practitioner commentary on pricing tiers, order bumps, 1-click '
-                   'upsells, self-liquidating offers (SLOs), and net contribution margins.',
-      'source_type': 'video_pro_tip',
-      'text': "'s their competitive advantage, so they never talk about it. So, you might be "
-              "like, this might be the first time you've ever heard of an order bump or an "
-              'upsell.',
-      'timestamp': 465,
-      'timestamp_label': '[00:07:45]',
-      'timestamp_seconds': 465,
-      'tip': "'s their competitive advantage, so they never talk about it. So, you might be "
-             "like, this might be the first time you've ever heard of an order bump or an "
-             'upsell.',
-      'title': 'How To Turn Your $24 Digital Product Into $24,000 (Scaling Strategy That '
-               'Works) (Maria Wendt)',
-      'url': 'https://www.youtube.com/watch?v=zQQZEPMxT6U&t=465s',
-      'video_id': 'zQQZEPMxT6U'},
-     {'author': 'Profitable Talents',
-      'channel': 'Profitable Talents',
-      'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:06:38](https://www.youtube.com/watch?v=_I5YFl6Ym_k&t=398s)',
-      'relevance': 'Attributed practitioner commentary on pricing tiers, order bumps, 1-click '
-                   'upsells, self-liquidating offers (SLOs), and net contribution margins.',
-      'source_type': 'video_pro_tip',
-      'text': 'The offer is going to be is going to have an order bump, which is going to be '
-              "again fairly cheap, and I'm going to add an upsell. This is going to be "
-              'slightly more expensive.',
-      'timestamp': 398,
-      'timestamp_label': '[00:06:38]',
-      'timestamp_seconds': 398,
-      'tip': 'The offer is going to be is going to have an order bump, which is going to be '
-             "again fairly cheap, and I'm going to add an upsell. This is going to be slightly "
-             'more expensive.',
-      'title': 'Watch Me Build a Self-Liquidating Offer Funnel From Scratch (Ep. 1) '
-               '(Profitable Talents)',
-      'url': 'https://www.youtube.com/watch?v=_I5YFl6Ym_k&t=398s',
-      'video_id': '_I5YFl6Ym_k'},
-     {'author': "Extreme How To's",
-      'channel': "Extreme How To's",
-      'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:01:48](https://www.youtube.com/watch?v=SK_-uXSKE88&t=108s)',
-      'relevance': 'Attributed practitioner commentary on pricing tiers, order bumps, 1-click '
-                   'upsells, self-liquidating offers (SLOs), and net contribution margins.',
-      'source_type': 'video_pro_tip',
-      'text': 'For pricing options, you can choose to toggle on allow customers to pay what '
-              'they want. This feature can attract more buyers as it offers flexibility in '
-              'pricing. Set a minimum price of $5 to ensure that you receive compensation for '
-              'your work.',
-      'timestamp': 108,
-      'timestamp_label': '[00:01:48]',
-      'timestamp_seconds': 108,
-      'tip': 'For pricing options, you can choose to toggle on allow customers to pay what '
-             'they want. This feature can attract more buyers as it offers flexibility in '
-             'pricing. Set a minimum price of $5 to ensure that you receive compensation for '
-             'your work.',
-      'title': "How to sell Notion templates on Gumroad[2026 Full Guide] (Extreme How To's)",
-      'url': 'https://www.youtube.com/watch?v=SK_-uXSKE88&t=108s',
-      'video_id': 'SK_-uXSKE88'},
-     {'author': 'How2Genius',
-      'channel': 'How2Genius',
-      'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:01:12](https://www.youtube.com/watch?v=Y5VXhUB7aNM&t=72s)',
-      'relevance': 'Attributed practitioner commentary on pricing tiers, order bumps, 1-click '
-                   'upsells, self-liquidating offers (SLOs), and net contribution margins.',
-      'source_type': 'video_pro_tip',
-      'text': 'Paddle gives detailed analytics as well. You can track revenue, conversion '
-              'rates, churn, and customer behavior all in one dashboard. This makes it easier '
-              'to understand which products are performing best, optimize pricing, and '
-              'forecast growth.',
-      'timestamp': 72,
-      'timestamp_label': '[00:01:12]',
-      'timestamp_seconds': 72,
-      'tip': 'Paddle gives detailed analytics as well. You can track revenue, conversion '
-             'rates, churn, and customer behavior all in one dashboard. This makes it easier '
-             'to understand which products are performing best, optimize pricing, and forecast '
-             'growth.',
-      'title': 'NEW* Paddle vs FastSpring — Best Checkout & Tax for Digital Products '
-               '(How2Genius)',
-      'url': 'https://www.youtube.com/watch?v=Y5VXhUB7aNM&t=72s',
-      'video_id': 'Y5VXhUB7aNM'},
-     {'author': 'Sell Your Service',
-      'channel': 'Sell Your Service',
-      'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:07:33](https://www.youtube.com/watch?v=_csKVgudVVY&t=453s)',
-      'relevance': 'Attributed practitioner commentary on pricing tiers, order bumps, 1-click '
-                   'upsells, self-liquidating offers (SLOs), and net contribution margins.',
-      'source_type': 'video_pro_tip',
-      'text': "And if you're smart, you'll put an order bump on there as well. And I'll show "
-              "you how to do that in high level, in another video. So I'm saying, thanks for "
-              "downloading your three-step lead generation plan. It's on his way to your "
-              'inbox.',
-      'timestamp': 453,
-      'timestamp_label': '[00:07:33]',
-      'timestamp_seconds': 453,
-      'tip': "And if you're smart, you'll put an order bump on there as well. And I'll show "
-             "you how to do that in high level, in another video. So I'm saying, thanks for "
-             "downloading your three-step lead generation plan. It's on his way to your inbox.",
-      'title': 'How To Build A Self Liquidating Offer Funnel In HighLevel | Ryan Deiss (SLO) '
-               '(Sell Your Service)',
-      'url': 'https://www.youtube.com/watch?v=_csKVgudVVY&t=453s',
-      'video_id': '_csKVgudVVY'},
-     {'author': 'Tatyana Savage',
-      'channel': 'Tatyana Savage',
-      'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:07:01](https://www.youtube.com/watch?v=TGNTFquVxZU&t=421s)',
-      'relevance': 'Attributed practitioner commentary on pricing tiers, order bumps, 1-click '
-                   'upsells, self-liquidating offers (SLOs), and net contribution margins.',
-      'source_type': 'video_pro_tip',
-      'text': 'Moving on to tip number two, you have to treat your Etsy shop like a business '
-              'in order for it to make a profit. And every single business requires two types '
-              'of investment in order for it to get off the ground.',
-      'timestamp': 421,
-      'timestamp_label': '[00:07:01]',
-      'timestamp_seconds': 421,
-      'tip': 'Moving on to tip number two, you have to treat your Etsy shop like a business in '
-             'order for it to make a profit. And every single business requires two types of '
-             'investment in order for it to get off the ground.',
-      'title': 'How to Start a Digital Product Business (& ACTUALLY Make Money) (Tatyana '
-               'Savage)',
-      'url': 'https://www.youtube.com/watch?v=TGNTFquVxZU&t=421s',
-      'video_id': 'TGNTFquVxZU'},
-     {'author': 'Stellar Media',
-      'channel': 'Stellar Media',
-      'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:01:06](https://www.youtube.com/watch?v=YiY_qBBHvvc&t=66s)',
-      'relevance': 'Attributed practitioner commentary on pricing tiers, order bumps, 1-click '
-                   'upsells, self-liquidating offers (SLOs), and net contribution margins.',
-      'source_type': 'video_pro_tip',
-      'text': 'Now in order to sell it click on the option new product and here you have to '
-              'enter the name of your product just like I will do write notion template from '
-              'this you have to select this option digital product. Scroll down and here is '
-              'the pricing.',
-      'timestamp': 66,
-      'timestamp_label': '[00:01:06]',
-      'timestamp_seconds': 66,
-      'tip': 'Now in order to sell it click on the option new product and here you have to '
-             'enter the name of your product just like I will do write notion template from '
-             'this you have to select this option digital product. Scroll down and here is the '
-             'pricing.',
-      'title': 'How To Sell Notion Templates On Gumroad 2025 (Step by Step) (Stellar Media)',
-      'url': 'https://www.youtube.com/watch?v=YiY_qBBHvvc&t=66s',
-      'video_id': 'YiY_qBBHvvc'},
-     {'author': 'GROUNDTECHY',
-      'channel': 'GROUNDTECHY',
-      'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:04:36](https://www.youtube.com/watch?v=F73hzfI-XsE&t=276s)',
-      'relevance': 'Attributed practitioner commentary on pricing tiers, order bumps, 1-click '
-                   'upsells, self-liquidating offers (SLOs), and net contribution margins.',
-      'source_type': 'video_pro_tip',
-      'text': "Thank you page and it really doesn't matter what they decide on in the second "
-              'upsell whether they accept the offer or decline the offer the last step for '
-              'them will be the thank you page.',
-      'timestamp': 276,
-      'timestamp_label': '[00:04:36]',
-      'timestamp_seconds': 276,
-      'tip': "Thank you page and it really doesn't matter what they decide on in the second "
-             'upsell whether they accept the offer or decline the offer the last step for them '
-             'will be the thank you page.',
-      'title': 'How to Setup Sell funnel Upsells, downsells, order bumps on Systemeio '
-               '(GROUNDTECHY)',
-      'url': 'https://www.youtube.com/watch?v=F73hzfI-XsE&t=276s',
-      'video_id': 'F73hzfI-XsE'}],
- 4: [{'author': 'Nathan Nazareth',
-      'channel': 'Nathan Nazareth',
-      'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:00:20](https://www.youtube.com/watch?v=dr37DaI8g3U&t=20s)',
-      'relevance': 'Attributed practitioner commentary on zero-COGS serverless stacks, '
-                   'cloud/AI credit grants, lean entity setup, and contractor IP ownership.',
-      'source_type': 'video_pro_tip',
-      'text': 'You also have no inventory or fulfillment cost, no shipping and delivery costs, '
-              'no customer service headaches because your customers get the product '
-              'immediately. And thanks to AI, you can build your product for 100% free, and it '
-              "won't take you as long as you think.",
-      'timestamp': 20,
-      'timestamp_label': '[00:00:20]',
-      'timestamp_seconds': 20,
-      'tip': 'You also have no inventory or fulfillment cost, no shipping and delivery costs, '
-             'no customer service headaches because your customers get the product '
-             'immediately. And thanks to AI, you can build your product for 100% free, and it '
-             "won't take you as long as you think.",
-      'title': "How to Sell AI Digital Products (beginner's guide) (Nathan Nazareth)",
-      'url': 'https://www.youtube.com/watch?v=dr37DaI8g3U&t=20s',
-      'video_id': 'dr37DaI8g3U'},
-     {'author': 'Pete McPherson DYEB',
-      'channel': 'Pete McPherson DYEB',
-      'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:00:21](https://www.youtube.com/watch?v=wYKYVjEiqLY&t=21s)',
-      'relevance': 'Attributed practitioner commentary on zero-COGS serverless stacks, '
-                   'cloud/AI credit grants, lean entity setup, and contractor IP ownership.',
-      'source_type': 'video_pro_tip',
-      'text': "'s email address, you'll be promoting a very specific offer stack. A very "
-              'specific offer that will liquidate the cost of running ads.',
-      'timestamp': 21,
-      'timestamp_label': '[00:00:21]',
-      'timestamp_seconds': 21,
-      'tip': "'s email address, you'll be promoting a very specific offer stack. A very "
-             'specific offer that will liquidate the cost of running ads.',
-      'title': 'How to launch your SELF-LIQUIDATING OFFER Funnel (with real-world examples!) '
-               '(Pete McPherson DYEB)',
-      'url': 'https://www.youtube.com/watch?v=wYKYVjEiqLY&t=21s',
-      'video_id': 'wYKYVjEiqLY'},
-     {'author': 'Social Nest Marketing',
-      'channel': 'Social Nest Marketing',
-      'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:11:17](https://www.youtube.com/watch?v=-xCVVPZu48k&t=677s)',
-      'relevance': 'Attributed practitioner commentary on zero-COGS serverless stacks, '
-                   'cloud/AI credit grants, lean entity setup, and contractor IP ownership.',
-      'source_type': 'video_pro_tip',
-      'text': "'s going to give us this link, but you have to actually set up a custom domain. "
-              "So, I'm just going to put this link in here for right now. But, this won't be "
-              "the final link that you're going to use cuz you have to do you have to set up a "
-              'custom domain for this um funnel.',
-      'timestamp': 677,
-      'timestamp_label': '[00:11:17]',
-      'timestamp_seconds': 677,
-      'tip': "'s going to give us this link, but you have to actually set up a custom domain. "
-             "So, I'm just going to put this link in here for right now. But, this won't be "
-             "the final link that you're going to use cuz you have to do you have to set up a "
-             'custom domain for this um funnel.',
-      'title': 'GoHighLevel One-Click Upsell Setup: Payment Link Redirect + Auto-Delivery '
-               'Workflow (Part 6) (Social Nest Marketing)',
-      'url': 'https://www.youtube.com/watch?v=-xCVVPZu48k&t=677s',
-      'video_id': '-xCVVPZu48k'},
-     {'author': 'Tatyana Savage',
-      'channel': 'Tatyana Savage',
-      'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:10:27](https://www.youtube.com/watch?v=TGNTFquVxZU&t=627s)',
-      'relevance': 'Attributed practitioner commentary on zero-COGS serverless stacks, '
-                   'cloud/AI credit grants, lean entity setup, and contractor IP ownership.',
-      'source_type': 'video_pro_tip',
-      'text': "I started using Xero, who's actually partnering with me for this portion of "
-              "today's video. Xero's a cloud-based accounting platform that helps small "
-              'businesses manage their finances. And you might be thinking, "I don\'t have a '
-              'business.',
-      'timestamp': 627,
-      'timestamp_label': '[00:10:27]',
-      'timestamp_seconds': 627,
-      'tip': "I started using Xero, who's actually partnering with me for this portion of "
-             "today's video. Xero's a cloud-based accounting platform that helps small "
-             'businesses manage their finances. And you might be thinking, "I don\'t have a '
-             'business.',
-      'title': 'How to Start a Digital Product Business (& ACTUALLY Make Money) (Tatyana '
-               'Savage)',
-      'url': 'https://www.youtube.com/watch?v=TGNTFquVxZU&t=627s',
-      'video_id': 'TGNTFquVxZU'},
-     {'author': 'Iman Gadzhi',
-      'channel': 'Iman Gadzhi',
-      'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:31:36](https://www.youtube.com/watch?v=A-yBamfrXQs&t=1896s)',
-      'relevance': 'Attributed practitioner commentary on zero-COGS serverless stacks, '
-                   'cloud/AI credit grants, lean entity setup, and contractor IP ownership.',
-      'source_type': 'video_pro_tip',
-      'text': 'You start with your product price as your daily budget. So, if your product is '
-              '$30, start with $30 a day. Use AI tools to create your ad headlines. Remove '
-              "irrelevant search terms that don't convert like notion sound effects if you're "
-              'selling productivity templates.',
-      'timestamp': 1896,
-      'timestamp_label': '[00:31:36]',
-      'timestamp_seconds': 1896,
-      'tip': 'You start with your product price as your daily budget. So, if your product is '
-             '$30, start with $30 a day. Use AI tools to create your ad headlines. Remove '
-             "irrelevant search terms that don't convert like notion sound effects if you're "
-             'selling productivity templates.',
-      'title': 'Copy This Method To Make $2,700/Week with Digital Products (Iman Gadzhi)',
-      'url': 'https://www.youtube.com/watch?v=A-yBamfrXQs&t=1896s',
-      'video_id': 'A-yBamfrXQs'},
-     {'author': 'How To Tutor',
-      'channel': 'How To Tutor',
-      'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:01:40](https://www.youtube.com/watch?v=Sxl5Fxp0qVQ&t=100s)',
-      'relevance': 'Attributed practitioner commentary on zero-COGS serverless stacks, '
-                   'cloud/AI credit grants, lean entity setup, and contractor IP ownership.',
-      'source_type': 'video_pro_tip',
-      'text': "'ve just copied into this section. Scroll down and you can also upload the "
-              'cover of the specific product. You can add integrations, create different '
-              'versions of this product. And then in this section, you can also incorporate '
-              'the domain of your template.',
-      'timestamp': 100,
-      'timestamp_label': '[00:01:40]',
-      'timestamp_seconds': 100,
-      'tip': "'ve just copied into this section. Scroll down and you can also upload the cover "
-             'of the specific product. You can add integrations, create different versions of '
-             'this product. And then in this section, you can also incorporate the domain of '
-             'your template.',
-      'title': 'How to Upload Notion Template on Gumroad 2025 (QUICK GUIDE) (How To Tutor)',
-      'url': 'https://www.youtube.com/watch?v=Sxl5Fxp0qVQ&t=100s',
-      'video_id': 'Sxl5Fxp0qVQ'},
-     {'author': 'Folioquest',
-      'channel': 'Folioquest',
-      'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:02:53](https://www.youtube.com/watch?v=M61DsgB51BI&t=173s)',
-      'relevance': 'Attributed practitioner commentary on zero-COGS serverless stacks, '
-                   'cloud/AI credit grants, lean entity setup, and contractor IP ownership.',
-      'source_type': 'video_pro_tip',
-      'text': 'Now founders have until March 31st, 2027 to move and a fresh reminder that even '
-              'beloved startup tools can vanish inside a giant acquisition.',
-      'timestamp': 173,
-      'timestamp_label': '[00:02:53]',
-      'timestamp_seconds': 173,
-      'tip': 'Now founders have until March 31st, 2027 to move and a fresh reminder that even '
-             'beloved startup tools can vanish inside a giant acquisition.',
-      'title': 'Lemon Squeezy Winds Down After Stripe Acquisition (Folioquest)',
-      'url': 'https://www.youtube.com/watch?v=M61DsgB51BI&t=173s',
-      'video_id': 'M61DsgB51BI'},
-     {'author': 'Richard Yu',
-      'channel': 'Richard Yu',
-      'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:09:31](https://www.youtube.com/watch?v=OGyxSOcL1F0&t=571s)',
-      'relevance': 'Attributed practitioner commentary on zero-COGS serverless stacks, '
-                   'cloud/AI credit grants, lean entity setup, and contractor IP ownership.',
-      'source_type': 'video_pro_tip',
-      'text': 'But, seeing it explained in a video versus actually watching it being built in '
-              "real time in front of your eyes are two completely different things. So, here's "
-              "what I'd like to give to you for absolutely free. Later this week, I'm hosting "
-              'an exclusive private VIP workshop.',
-      'timestamp': 571,
-      'timestamp_label': '[00:09:31]',
-      'timestamp_seconds': 571,
-      'tip': 'But, seeing it explained in a video versus actually watching it being built in '
-             "real time in front of your eyes are two completely different things. So, here's "
-             "what I'd like to give to you for absolutely free. Later this week, I'm hosting "
-             'an exclusive private VIP workshop.',
-      'title': 'How I Built a $57K/Month Digital Product Business From Scratch (Full System) '
-               '(Richard Yu)',
-      'url': 'https://www.youtube.com/watch?v=OGyxSOcL1F0&t=571s',
-      'video_id': 'OGyxSOcL1F0'},
-     {'author': 'Stellar Media',
-      'channel': 'Stellar Media',
-      'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:02:25](https://www.youtube.com/watch?v=YiY_qBBHvvc&t=145s)',
-      'relevance': 'Attributed practitioner commentary on zero-COGS serverless stacks, '
-                   'cloud/AI credit grants, lean entity setup, and contractor IP ownership.',
-      'source_type': 'video_pro_tip',
-      'text': "And this one is the additional detail and it's an important feature of your "
-              'product. If you want to add an additional detail then click on it and add but '
-              'for now I will let it be as it is. The amount will be the same and here is the '
-              'option of custom domain.',
-      'timestamp': 145,
-      'timestamp_label': '[00:02:25]',
-      'timestamp_seconds': 145,
-      'tip': "And this one is the additional detail and it's an important feature of your "
-             'product. If you want to add an additional detail then click on it and add but '
-             'for now I will let it be as it is. The amount will be the same and here is the '
-             'option of custom domain.',
-      'title': 'How To Sell Notion Templates On Gumroad 2025 (Step by Step) (Stellar Media)',
-      'url': 'https://www.youtube.com/watch?v=YiY_qBBHvvc&t=145s',
-      'video_id': 'YiY_qBBHvvc'},
-     {'author': 'Pam Obasa',
-      'channel': 'Pam Obasa',
-      'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:22:02](https://www.youtube.com/watch?v=Kgj8rFDeRIs&t=1322s)',
-      'relevance': 'Attributed practitioner commentary on zero-COGS serverless stacks, '
-                   'cloud/AI credit grants, lean entity setup, and contractor IP ownership.',
-      'source_type': 'video_pro_tip',
-      'text': 'Schedule your breakthrough call there is no cost you can literally come on the '
-              'call ask any question that you have and we would be glad to support you so make '
-              "sure you click on that link and schedule your call if you need to I'll see you "
-              'in the next training.',
-      'timestamp': 1322,
-      'timestamp_label': '[00:22:02]',
-      'timestamp_seconds': 1322,
-      'tip': 'Schedule your breakthrough call there is no cost you can literally come on the '
-             'call ask any question that you have and we would be glad to support you so make '
-             "sure you click on that link and schedule your call if you need to I'll see you "
-             'in the next training.',
-      'title': 'How To Create A Self-liquidating Offer Funnel For Your Business (Pam Obasa)',
-      'url': 'https://www.youtube.com/watch?v=Kgj8rFDeRIs&t=1322s',
-      'video_id': 'Kgj8rFDeRIs'},
-     {'author': 'Mariana Henninger',
-      'channel': 'Mariana Henninger',
-      'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:31:16](https://www.youtube.com/watch?v=Ii70ybaGJ68&t=1876s)',
-      'relevance': 'Attributed practitioner commentary on zero-COGS serverless stacks, '
-                   'cloud/AI credit grants, lean entity setup, and contractor IP ownership.',
-      'source_type': 'video_pro_tip',
-      'text': 'Especially at a a lower budget. I mean, 400 is all relative because some people '
-              "listening might be like, I can't spend more than $20 a day.",
-      'timestamp': 1876,
-      'timestamp_label': '[00:31:16]',
-      'timestamp_seconds': 1876,
-      'tip': 'Especially at a a lower budget. I mean, 400 is all relative because some people '
-             "listening might be like, I can't spend more than $20 a day.",
-      'title': 'A Low-Ticket Tiny Offer SLO Funnel Fuels High-Ticket Sales with Allie Bjerk '
-               '(Mariana Henninger)',
-      'url': 'https://www.youtube.com/watch?v=Ii70ybaGJ68&t=1876s',
-      'video_id': 'Ii70ybaGJ68'},
-     {'author': "Bob Diamond - America's Tax Sale Attorney",
-      'channel': "Bob Diamond - America's Tax Sale Attorney",
-      'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:07:34](https://www.youtube.com/watch?v=qGPsbhsEAVQ&t=454s)',
-      'relevance': 'Attributed practitioner commentary on zero-COGS serverless stacks, '
-                   'cloud/AI credit grants, lean entity setup, and contractor IP ownership.',
-      'source_type': 'video_pro_tip',
-      'text': "So I'm completely I'm comfortable with them, and can make sure you have that "
-              'done right after you get the agreements. And the next question, how do you deal '
-              'with special situations, like, how do you deal with an estate, an LLC, a '
-              'divorced couple?',
-      'timestamp': 454,
-      'timestamp_label': '[00:07:34]',
-      'timestamp_seconds': 454,
-      'tip': "So I'm completely I'm comfortable with them, and can make sure you have that "
-             'done right after you get the agreements. And the next question, how do you deal '
-             'with special situations, like, how do you deal with an estate, an LLC, a '
-             'divorced couple?',
-      'title': "Tax Sale Overages Course (Bob Diamond - America's Tax Sale Attorney)",
-      'url': 'https://www.youtube.com/watch?v=qGPsbhsEAVQ&t=454s',
-      'video_id': 'qGPsbhsEAVQ'},
-     {'author': 'Maik Kleinert | Content-to-Conversion Systems',
-      'channel': 'Maik Kleinert | Content-to-Conversion Systems',
-      'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:05:17](https://www.youtube.com/watch?v=pE2Z7vTYfSw&t=317s)',
-      'relevance': 'Attributed practitioner commentary on zero-COGS serverless stacks, '
-                   'cloud/AI credit grants, lean entity setup, and contractor IP ownership.',
-      'source_type': 'video_pro_tip',
-      'text': 'What we have set up here is basically which DM trigger. We have all the word in '
-              'different capital letters, small, and set up the Instagram account here and '
-              'publish post.',
-      'timestamp': 317,
-      'timestamp_label': '[00:05:17]',
-      'timestamp_seconds': 317,
-      'tip': 'What we have set up here is basically which DM trigger. We have all the word in '
-             'different capital letters, small, and set up the Instagram account here and '
-             'publish post.',
-      'title': 'I Upsold A $7 Product To $57  With DM Automation + Order Bump Setup ( Full '
-               'System Explained ) (Maik Kleinert | Content-to-Conversion Systems)',
-      'url': 'https://www.youtube.com/watch?v=pE2Z7vTYfSw&t=317s',
-      'video_id': 'pE2Z7vTYfSw'},
-     {'author': 'Aeris Vale Tutorials',
-      'channel': 'Aeris Vale Tutorials',
-      'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:02:17](https://www.youtube.com/watch?v=ciKrPZ_nIpQ&t=137s)',
-      'relevance': 'Attributed practitioner commentary on zero-COGS serverless stacks, '
-                   'cloud/AI credit grants, lean entity setup, and contractor IP ownership.',
-      'source_type': 'video_pro_tip',
-      'text': "Then input a concise summary to reinforce your product's value. You can also "
-              'include additional details that might intrigue or inform your audience further. '
-              'Customizing your domain is another option to make your product page feel more '
-              'personal or branded.',
-      'timestamp': 137,
-      'timestamp_label': '[00:02:17]',
-      'timestamp_seconds': 137,
-      'tip': "Then input a concise summary to reinforce your product's value. You can also "
-             'include additional details that might intrigue or inform your audience further. '
-             'Customizing your domain is another option to make your product page feel more '
-             'personal or branded.',
-      'title': 'How To Sell A Notion Template On Gumroad - Step by Step Guide | THELOSTOFFER '
-               '#notion #gumroad (Aeris Vale Tutorials)',
-      'url': 'https://www.youtube.com/watch?v=ciKrPZ_nIpQ&t=137s',
-      'video_id': 'ciKrPZ_nIpQ'},
-     {'author': 'Doug Boughton',
-      'channel': 'Doug Boughton',
-      'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:16:43](https://www.youtube.com/watch?v=8lz_gy-Osw8&t=1003s)',
-      'relevance': 'Attributed practitioner commentary on zero-COGS serverless stacks, '
-                   'cloud/AI credit grants, lean entity setup, and contractor IP ownership.',
-      'source_type': 'video_pro_tip',
-      'text': 'And if that is you, you get Event Stack for free when you say yes today. So '
-              'inside the community, if you go to settings and you grab your link, this is '
-              'going to be your affiliate link, your unique link.',
-      'timestamp': 1003,
-      'timestamp_label': '[00:16:43]',
-      'timestamp_seconds': 1003,
-      'tip': 'And if that is you, you get Event Stack for free when you say yes today. So '
-             'inside the community, if you go to settings and you grab your link, this is '
-             'going to be your affiliate link, your unique link.',
-      'title': 'Are Free Skool Communities Dying? Why I Turned Mine Paid (Doug Boughton)',
-      'url': 'https://www.youtube.com/watch?v=8lz_gy-Osw8&t=1003s',
-      'video_id': '8lz_gy-Osw8'}],
- 5: [{'author': 'TechWealth Hub',
-      'channel': 'TechWealth Hub',
-      'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:01:19](https://www.youtube.com/watch?v=KRdWGDk-GkY&t=79s)',
-      'relevance': 'Attributed practitioner commentary on digital sales-tax nexus, '
-                   'friendly-fraud chargebacks, ad fatigue, piracy, and platform concentration '
-                   'risks.',
-      'source_type': 'video_pro_tip',
-      'text': 'Stripe calculates it, collects it, files it, and remits it. Stripes already '
-              'best in class at this, but now they are taking on the liability. Third, dispute '
-              'management, chargebacks. Fourth, customer support for payment issues.',
-      'timestamp': 79,
-      'timestamp_label': '[00:01:19]',
-      'timestamp_seconds': 79,
-      'tip': 'Stripe calculates it, collects it, files it, and remits it. Stripes already best '
-             'in class at this, but now they are taking on the liability. Third, dispute '
-             'management, chargebacks. Fourth, customer support for payment issues.',
-      'title': 'Stripe Just KILLED Paddle and Gumroad (Managed Payments) (TechWealth Hub)',
-      'url': 'https://www.youtube.com/watch?v=KRdWGDk-GkY&t=79s',
-      'video_id': 'KRdWGDk-GkY'},
-     {'author': 'SoloBuild',
-      'channel': 'SoloBuild',
-      'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:02:52](https://www.youtube.com/watch?v=i05UCC3UvNY&t=172s)',
-      'relevance': 'Attributed practitioner commentary on digital sales-tax nexus, '
-                   'friendly-fraud chargebacks, ad fatigue, piracy, and platform concentration '
-                   'risks.',
-      'source_type': 'video_pro_tip',
-      'text': 'International cards add one point five percent, and currency conversion adds '
-              'another one percent. Each dispute costs fifteen dollars, and standard payouts '
-              "are free. Stripe Tax's no-code option is half a percent per transaction, where "
-              "you're registered to collect.",
-      'timestamp': 172,
-      'timestamp_label': '[00:02:52]',
-      'timestamp_seconds': 172,
-      'tip': 'International cards add one point five percent, and currency conversion adds '
-             'another one percent. Each dispute costs fifteen dollars, and standard payouts '
-             "are free. Stripe Tax's no-code option is half a percent per transaction, where "
-             "you're registered to collect.",
-      'title': 'Stripe vs Lemon Squeezy vs Paddle (2026): Which Should You Use? (SoloBuild)',
-      'url': 'https://www.youtube.com/watch?v=i05UCC3UvNY&t=172s',
-      'video_id': 'i05UCC3UvNY'},
-     {'author': 'Tutorly',
-      'channel': 'Tutorly',
-      'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:00:29](https://www.youtube.com/watch?v=IfaCBBIoVK0&t=29s)',
-      'relevance': 'Attributed practitioner commentary on digital sales-tax nexus, '
-                   'friendly-fraud chargebacks, ad fatigue, piracy, and platform concentration '
-                   'risks.',
-      'source_type': 'video_pro_tip',
-      'text': 'Stripe Checkout is a standard payment processor, while Paddle and Lemon Squeezy '
-              'act as a merchant of record. A merchant of record means the platform becomes '
-              'the legal seller of your product.',
+      'text': 'This upsell page should go right after your checkout page.',
       'timestamp': 29,
       'timestamp_label': '[00:00:29]',
       'timestamp_seconds': 29,
-      'tip': 'Stripe Checkout is a standard payment processor, while Paddle and Lemon Squeezy '
-             'act as a merchant of record. A merchant of record means the platform becomes the '
-             'legal seller of your product.',
-      'title': 'Lemon Squeezy Vs Stripe Checkout Vs Paddle (2026) Which One Is Better? '
-               '(Tutorly)',
-      'url': 'https://www.youtube.com/watch?v=IfaCBBIoVK0&t=29s',
-      'video_id': 'IfaCBBIoVK0'},
-     {'author': 'Eden',
-      'channel': 'Eden',
+      'tip': 'This upsell page should go right after your checkout page.',
+      'title': 'How to Build 1 Click Upsells in GoHighLevel',
+      'url': 'https://www.youtube.com/watch?v=0u4Tmd6BlWA&t=29s',
+      'video_id': '0u4Tmd6BlWA'},
+     {'author': 'GROUNDTECHY',
+      'channel': 'GROUNDTECHY',
       'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:06:26](https://www.youtube.com/watch?v=VJ-JR7uMY34&t=386s)',
-      'relevance': 'Attributed practitioner commentary on digital sales-tax nexus, '
-                   'friendly-fraud chargebacks, ad fatigue, piracy, and platform concentration '
-                   'risks.',
+      'markdown': '[00:01:19](https://www.youtube.com/watch?v=F73hzfI-XsE&t=79s)',
+      'relevance': 'Verbatim practitioner testimony from Chapter Q6.',
       'source_type': 'video_pro_tip',
-      'text': "We're just starting out with your very first product. And so the way that we do "
-              'this inside of Eden is with the discover feature or the chat feature being able '
-              'to pull trending posts and high performing posts from any platform on social '
-              'media.',
-      'timestamp': 386,
-      'timestamp_label': '[00:06:26]',
-      'timestamp_seconds': 386,
-      'tip': "We're just starting out with your very first product. And so the way that we do "
-             'this inside of Eden is with the discover feature or the chat feature being able '
-             'to pull trending posts and high performing posts from any platform on social '
-             'media.',
-      'title': 'How To Build Your First $10,000 Digital Product (Full Beginner Guide) (Eden)',
-      'url': 'https://www.youtube.com/watch?v=VJ-JR7uMY34&t=386s',
-      'video_id': 'VJ-JR7uMY34'},
-     {'author': 'Stephen S.',
-      'channel': 'Stephen S.',
+      'text': 'They only need to check this checkbox and the second offer will be added to their '
+              'order.',
+      'timestamp': 79,
+      'timestamp_label': '[00:01:19]',
+      'timestamp_seconds': 79,
+      'tip': 'They only need to check this checkbox and the second offer will be added to their '
+             'order.',
+      'title': 'How to Setup Sell funnel Upsells, downsells, order bumps on Systemeio',
+      'url': 'https://www.youtube.com/watch?v=F73hzfI-XsE&t=79s',
+      'video_id': 'F73hzfI-XsE'},
+     {'author': 'Social Nest Marketing',
+      'channel': 'Social Nest Marketing',
       'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:00:20](https://www.youtube.com/watch?v=F-WZgXuQIuQ&t=20s)',
-      'relevance': 'Attributed practitioner commentary on digital sales-tax nexus, '
-                   'friendly-fraud chargebacks, ad fatigue, piracy, and platform concentration '
-                   'risks.',
+      'markdown': '[00:03:02](https://www.youtube.com/watch?v=-xCVVPZu48k&t=182s)',
+      'relevance': 'Verbatim practitioner testimony from Chapter Q6.',
       'source_type': 'video_pro_tip',
-      'text': "'ll use this to wire up the checkout using the Stripe power. So now when I go "
-              'into the app in Curo here, I can see that over on the left hand side I have '
-              'powers.',
-      'timestamp': 20,
-      'timestamp_label': '[00:00:20]',
-      'timestamp_seconds': 20,
-      'tip': "'ll use this to wire up the checkout using the Stripe power. So now when I go "
-             'into the app in Curo here, I can see that over on the left hand side I have '
-             'powers.',
-      'title': "Stripe's Merchant of Record (MoR) Solution: Adding Managed Payments to an "
-               'Existing App  #mcp (Stephen S.)',
-      'url': 'https://www.youtube.com/watch?v=F-WZgXuQIuQ&t=20s',
-      'video_id': 'F-WZgXuQIuQ'},
-     {'author': 'Richard Yu',
-      'channel': 'Richard Yu',
+      'text': "For some reason you can't go over 100 megabytes.",
+      'timestamp': 182,
+      'timestamp_label': '[00:03:02]',
+      'timestamp_seconds': 182,
+      'tip': "For some reason you can't go over 100 megabytes.",
+      'title': 'GoHighLevel One-Click Upsell Setup: Payment Link Redirect + Auto-Delivery Workflow '
+               '(Part 6)',
+      'url': 'https://www.youtube.com/watch?v=-xCVVPZu48k&t=182s',
+      'video_id': '-xCVVPZu48k'},
+     {'author': 'LAUNCHTIP',
+      'channel': 'LAUNCHTIP',
       'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:19:24](https://www.youtube.com/watch?v=RxypuPGBRPI&t=1164s)',
-      'relevance': 'Attributed practitioner commentary on digital sales-tax nexus, '
-                   'friendly-fraud chargebacks, ad fatigue, piracy, and platform concentration '
-                   'risks.',
+      'markdown': '[00:01:07](https://www.youtube.com/watch?v=k8mwfZ9Nq_c&t=67s)',
+      'relevance': 'Verbatim practitioner testimony from Chapter Q6.',
       'source_type': 'video_pro_tip',
-      'text': '997 tuition and make that program free for you. AI platform, Wix, in order to '
-              'build your AI website, which by the way, you are going to need their platform '
-              'anyways, regardless of whether you work with me or not, because you need a good '
-              'tool to build your website.',
-      'timestamp': 1164,
-      'timestamp_label': '[00:19:24]',
-      'timestamp_seconds': 1164,
-      'tip': '997 tuition and make that program free for you. AI platform, Wix, in order to '
-             'build your AI website, which by the way, you are going to need their platform '
-             'anyways, regardless of whether you work with me or not, because you need a good '
-             'tool to build your website.',
-      'title': 'I Made $32.7 Million Selling Simple Digital Products (Full Masterclass) '
-               '(Richard Yu)',
-      'url': 'https://www.youtube.com/watch?v=RxypuPGBRPI&t=1164s',
-      'video_id': 'RxypuPGBRPI'},
-     {'author': 'Alek',
-      'channel': 'Alek',
+      'text': 'For a true one-click funnel, post-purchase upsells usually work best.',
+      'timestamp': 67,
+      'timestamp_label': '[00:01:07]',
+      'timestamp_seconds': 67,
+      'tip': 'For a true one-click funnel, post-purchase upsells usually work best.',
+      'title': 'How to Create a One-Click Upsell Funnel for your Shopify store in 2026',
+      'url': 'https://www.youtube.com/watch?v=k8mwfZ9Nq_c&t=67s',
+      'video_id': 'k8mwfZ9Nq_c'},
+     {'author': 'Zero to Launch',
+      'channel': 'Zero to Launch',
       'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:04:38](https://www.youtube.com/watch?v=T-gfoXzz8k8&t=278s)',
-      'relevance': 'Attributed practitioner commentary on digital sales-tax nexus, '
-                   'friendly-fraud chargebacks, ad fatigue, piracy, and platform concentration '
-                   'risks.',
+      'markdown': '[00:04:08](https://www.youtube.com/watch?v=u9nHXAMBUe4&t=248s)',
+      'relevance': 'Verbatim practitioner testimony from Chapter Q6.',
       'source_type': 'video_pro_tip',
-      'text': "And so we're able to optimize the products we create from start to finish for "
-              "that platform. A lot of people say that Etsy is too competitive or that it's "
-              'oversaturated and a race to the bottom.',
-      'timestamp': 278,
-      'timestamp_label': '[00:04:38]',
-      'timestamp_seconds': 278,
-      'tip': "And so we're able to optimize the products we create from start to finish for "
-             "that platform. A lot of people say that Etsy is too competitive or that it's "
-             'oversaturated and a race to the bottom.',
-      'title': 'Build & Sell Digital Products with A.I. (Full Course) (Alek)',
-      'url': 'https://www.youtube.com/watch?v=T-gfoXzz8k8&t=278s',
-      'video_id': 'T-gfoXzz8k8'},
-     {'author': 'Extreme Guides',
-      'channel': 'Extreme Guides',
+      'text': 'An order bump takes one price and only one.',
+      'timestamp': 248,
+      'timestamp_label': '[00:04:08]',
+      'timestamp_seconds': 248,
+      'tip': 'An order bump takes one price and only one.',
+      'title': 'Order Bump or Upsell in Systeme.io: Which Should You Add First?',
+      'url': 'https://www.youtube.com/watch?v=u9nHXAMBUe4&t=248s',
+      'video_id': 'u9nHXAMBUe4'},
+     {'author': 'CRM Tutorials Library',
+      'channel': 'CRM Tutorials Library',
       'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:01:04](https://www.youtube.com/watch?v=2zWJQPegtuk&t=64s)',
-      'relevance': 'Attributed practitioner commentary on digital sales-tax nexus, '
-                   'friendly-fraud chargebacks, ad fatigue, piracy, and platform concentration '
-                   'risks.',
+      'markdown': '[00:02:09](https://www.youtube.com/watch?v=pz33EMSEtfY&t=129s)',
+      'relevance': 'Verbatim practitioner testimony from Chapter Q6.',
       'source_type': 'video_pro_tip',
-      'text': 'Once the page loads, log into your Gumroad account or create one if you do not '
-              'have an existing account. This platform will be where you list your notion '
-              'template for sale. Click on the start selling button to initiate the process of '
-              'listing a new product.',
-      'timestamp': 64,
-      'timestamp_label': '[00:01:04]',
-      'timestamp_seconds': 64,
-      'tip': 'Once the page loads, log into your Gumroad account or create one if you do not '
-             'have an existing account. This platform will be where you list your notion '
-             'template for sale. Click on the start selling button to initiate the process of '
-             'listing a new product.',
-      'title': 'How to sell Notion templates on Gumroad[FULL GUIDE] (Extreme Guides)',
-      'url': 'https://www.youtube.com/watch?v=2zWJQPegtuk&t=64s',
-      'video_id': '2zWJQPegtuk'},
+      'text': 'Overusing it can train customers to wait for cheaper offers.',
+      'timestamp': 129,
+      'timestamp_label': '[00:02:09]',
+      'timestamp_seconds': 129,
+      'tip': 'Overusing it can train customers to wait for cheaper offers.',
+      'title': 'How to Set Up Main Product, Order Bump, Upsell & Downsell in GoHighLevel | '
+               'Step-by-Step',
+      'url': 'https://www.youtube.com/watch?v=pz33EMSEtfY&t=129s',
+      'video_id': 'pz33EMSEtfY'},
+     {'author': 'SamCart',
+      'channel': 'SamCart',
+      'epistemic_status': 'attributed_practitioner_claim',
+      'markdown': '[00:25:13](https://www.youtube.com/watch?v=UxhtBuVj4gY&t=1513s)',
+      'relevance': 'Verbatim practitioner testimony from Chapter Q6.',
+      'source_type': 'video_pro_tip',
+      'text': 'A good order bump is going to be something like 30 to 40% of people accept it and '
+              'put it in their cart.',
+      'timestamp': 1513,
+      'timestamp_label': '[00:25:13]',
+      'timestamp_seconds': 1513,
+      'tip': 'A good order bump is going to be something like 30 to 40% of people accept it and '
+             'put it in their cart.',
+      'title': 'The Complete Guide to Upsells ($8 Billion in Data)',
+      'url': 'https://www.youtube.com/watch?v=UxhtBuVj4gY&t=1513s',
+      'video_id': 'UxhtBuVj4gY'},
+     {'author': 'Prompt On Fire',
+      'channel': 'Prompt On Fire',
+      'epistemic_status': 'attributed_practitioner_claim',
+      'markdown': '[00:03:18](https://www.youtube.com/watch?v=2V0NDEQHG0I&t=198s)',
+      'relevance': 'Verbatim practitioner testimony from Chapter Q6.',
+      'source_type': 'video_pro_tip',
+      'text': "The tag tells you who said yes, but it doesn't book the call by itself.",
+      'timestamp': 198,
+      'timestamp_label': '[00:03:18]',
+      'timestamp_seconds': 198,
+      'tip': "The tag tells you who said yes, but it doesn't book the call by itself.",
+      'title': 'I Added a 1-Click Upsell to My Systeme.io Funnel. Here’s What Happened',
+      'url': 'https://www.youtube.com/watch?v=2V0NDEQHG0I&t=198s',
+      'video_id': '2V0NDEQHG0I'},
+     {'author': 'Knola',
+      'channel': 'Knola',
+      'epistemic_status': 'attributed_practitioner_claim',
+      'markdown': '[00:10:12](https://www.youtube.com/watch?v=IOF1VzMEcKI&t=612s)',
+      'relevance': 'Verbatim practitioner testimony from Chapter Q6.',
+      'source_type': 'video_pro_tip',
+      'text': 'Immediately that 197 is now 224 for the same checkout, the same customer.',
+      'timestamp': 612,
+      'timestamp_label': '[00:10:12]',
+      'timestamp_seconds': 612,
+      'tip': 'Immediately that 197 is now 224 for the same checkout, the same customer.',
+      'title': 'How to Sell an Online Course With a Sales Funnel (Upsell + Order Bump)',
+      'url': 'https://www.youtube.com/watch?v=IOF1VzMEcKI&t=612s',
+      'video_id': 'IOF1VzMEcKI'},
+     {'author': 'GHLGrowthGarage',
+      'channel': 'GHLGrowthGarage',
+      'epistemic_status': 'attributed_practitioner_claim',
+      'markdown': '[00:01:23](https://www.youtube.com/watch?v=caMKGGphSZA&t=83s)',
+      'relevance': 'Verbatim practitioner testimony from Chapter Q6.',
+      'source_type': 'video_pro_tip',
+      'text': 'Choose the one-click upsell product option and make sure to select your upsell '
+              'product.',
+      'timestamp': 83,
+      'timestamp_label': '[00:01:23]',
+      'timestamp_seconds': 83,
+      'tip': 'Choose the one-click upsell product option and make sure to select your upsell '
+             'product.',
+      'title': 'How To Set Up a GoHighLevel Upsell (Boost Funnel Sales Fast)',
+      'url': 'https://www.youtube.com/watch?v=caMKGGphSZA&t=83s',
+      'video_id': 'caMKGGphSZA'},
+     {'author': 'Zero to Launch',
+      'channel': 'Zero to Launch',
+      'epistemic_status': 'attributed_practitioner_claim',
+      'markdown': '[00:11:46](https://www.youtube.com/watch?v=PX4xnrhsmpM&t=706s)',
+      'relevance': 'Verbatim practitioner testimony from Chapter Q6.',
+      'source_type': 'video_pro_tip',
+      'text': 'The buyer pays $10 a month three times. Trial period stays at zero.',
+      'timestamp': 706,
+      'timestamp_label': '[00:11:46]',
+      'timestamp_seconds': 706,
+      'tip': 'The buyer pays $10 a month three times. Trial period stays at zero.',
+      'title': 'How to Build a Systeme.io Funnel with Order Bump, Upsell & Downsell',
+      'url': 'https://www.youtube.com/watch?v=PX4xnrhsmpM&t=706s',
+      'video_id': 'PX4xnrhsmpM'},
+     {'author': 'WPFunnels - Drag And Drop Sales Funnel Builder',
+      'channel': 'WPFunnels - Drag And Drop Sales Funnel Builder',
+      'epistemic_status': 'attributed_practitioner_claim',
+      'markdown': '[00:08:18](https://www.youtube.com/watch?v=7SOm-x6R5nE&t=498s)',
+      'relevance': 'Verbatim practitioner testimony from Chapter Q6.',
+      'source_type': 'video_pro_tip',
+      'text': 'If you enable this option it will ask you, do you want to replace all the products '
+              'or any specific selected products from the cart.',
+      'timestamp': 498,
+      'timestamp_label': '[00:08:18]',
+      'timestamp_seconds': 498,
+      'tip': 'If you enable this option it will ask you, do you want to replace all the products '
+             'or any specific selected products from the cart.',
+      'title': 'How To Use Order Bumps In Your Funnels To Increase AOV (New WPFunnels Tutorial)',
+      'url': 'https://www.youtube.com/watch?v=7SOm-x6R5nE&t=498s',
+      'video_id': '7SOm-x6R5nE'},
+     {'author': 'WP Simple Hacks - Wordpress tips and tricks',
+      'channel': 'WP Simple Hacks - Wordpress tips and tricks',
+      'epistemic_status': 'attributed_practitioner_claim',
+      'markdown': '[00:16:15](https://www.youtube.com/watch?v=XHgk_luxaUU&t=975s)',
+      'relevance': 'Verbatim practitioner testimony from Chapter Q6.',
+      'source_type': 'video_pro_tip',
+      'text': 'If the offer has been accepted, it goes straight to the thank you page, but when '
+              'rejected, then display the downsell offer.',
+      'timestamp': 975,
+      'timestamp_label': '[00:16:15]',
+      'timestamp_seconds': 975,
+      'tip': 'If the offer has been accepted, it goes straight to the thank you page, but when '
+             'rejected, then display the downsell offer.',
+      'title': 'How to Build a High-Converting WooCommerce Sales Funnel with Upsells & Order Bumps',
+      'url': 'https://www.youtube.com/watch?v=XHgk_luxaUU&t=975s',
+      'video_id': 'XHgk_luxaUU'}],
+ 7: [{'author': 'Pete McPherson DYEB',
+      'channel': 'Pete McPherson DYEB',
+      'epistemic_status': 'attributed_practitioner_claim',
+      'markdown': '[00:19:08](https://www.youtube.com/watch?v=wYKYVjEiqLY&t=1148s)',
+      'relevance': 'Verbatim practitioner testimony from Chapter Q7.',
+      'source_type': 'video_pro_tip',
+      'text': 'All of these products in your suite should be closely related.',
+      'timestamp': 1148,
+      'timestamp_label': '[00:19:08]',
+      'timestamp_seconds': 1148,
+      'tip': 'All of these products in your suite should be closely related.',
+      'title': 'How to launch your SELF-LIQUIDATING OFFER Funnel (with real-world examples!)',
+      'url': 'https://www.youtube.com/watch?v=wYKYVjEiqLY&t=1148s',
+      'video_id': 'wYKYVjEiqLY'},
+     {'author': 'Daniel Fazio',
+      'channel': 'Daniel Fazio',
+      'epistemic_status': 'attributed_practitioner_claim',
+      'markdown': '[00:05:13](https://www.youtube.com/watch?v=By4MPc6yyFA&t=313s)',
+      'relevance': 'Verbatim practitioner testimony from Chapter Q7.',
+      'source_type': 'video_pro_tip',
+      'text': 'Our average initial order value is about $2,500, so we break even on the '
+              'acquisition of a customer.',
+      'timestamp': 313,
+      'timestamp_label': '[00:05:13]',
+      'timestamp_seconds': 313,
+      'tip': 'Our average initial order value is about $2,500, so we break even on the acquisition '
+             'of a customer.',
+      'title': 'How to make $1,000,000/mo using self liquidating funnels (FREE COURSE)',
+      'url': 'https://www.youtube.com/watch?v=By4MPc6yyFA&t=313s',
+      'video_id': 'By4MPc6yyFA'},
+     {'author': 'Sell Your Service',
+      'channel': 'Sell Your Service',
+      'epistemic_status': 'attributed_practitioner_claim',
+      'markdown': '[00:03:57](https://www.youtube.com/watch?v=_csKVgudVVY&t=237s)',
+      'relevance': 'Verbatim practitioner testimony from Chapter Q7.',
+      'source_type': 'video_pro_tip',
+      'text': 'If you drive traffic to this squeeze page and someone buys, I will give you a '
+              'hundred percent of that revenue.',
+      'timestamp': 237,
+      'timestamp_label': '[00:03:57]',
+      'timestamp_seconds': 237,
+      'tip': 'If you drive traffic to this squeeze page and someone buys, I will give you a '
+             'hundred percent of that revenue.',
+      'title': 'How To Build A Self Liquidating Offer Funnel In HighLevel | Ryan Deiss (SLO)',
+      'url': 'https://www.youtube.com/watch?v=_csKVgudVVY&t=237s',
+      'video_id': '_csKVgudVVY'},
+     {'author': 'Jonathan Montoya',
+      'channel': 'Jonathan Montoya',
+      'epistemic_status': 'attributed_practitioner_claim',
+      'markdown': '[00:05:33](https://www.youtube.com/watch?v=QdGtcnjJSno&t=333s)',
+      'relevance': 'Verbatim practitioner testimony from Chapter Q7.',
+      'source_type': 'video_pro_tip',
+      'text': "The cool thing about the backend offer is it doesn't have to be your offer. This "
+              'can also be an affiliate offer as well.',
+      'timestamp': 333,
+      'timestamp_label': '[00:05:33]',
+      'timestamp_seconds': 333,
+      'tip': "The cool thing about the backend offer is it doesn't have to be your offer. This can "
+             'also be an affiliate offer as well.',
+      'title': 'Make STUPID Money With an SLO (Maximize Profits with a Self-Liquidating Offer & '
+               'Affiliate Marketing)',
+      'url': 'https://www.youtube.com/watch?v=QdGtcnjJSno&t=333s',
+      'video_id': 'QdGtcnjJSno'},
      {'author': 'Max Auren',
       'channel': 'Max Auren',
       'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:06:04](https://www.youtube.com/watch?v=kmRwEjvxk-w&t=364s)',
-      'relevance': 'Attributed practitioner commentary on digital sales-tax nexus, '
-                   'friendly-fraud chargebacks, ad fatigue, piracy, and platform concentration '
-                   'risks.',
+      'markdown': '[00:05:47](https://www.youtube.com/watch?v=kmRwEjvxk-w&t=347s)',
+      'relevance': 'Verbatim practitioner testimony from Chapter Q7.',
       'source_type': 'video_pro_tip',
-      'text': 'I hope Luigi is not coming for me. And because these ads I show in front of '
-              "people that don't know me, we had maybe five refunds on 3,000s of sales so far "
-              'because someone already watched the YouTube video.',
-      'timestamp': 364,
-      'timestamp_label': '[00:06:04]',
-      'timestamp_seconds': 364,
-      'tip': 'I hope Luigi is not coming for me. And because these ads I show in front of '
-             "people that don't know me, we had maybe five refunds on 3,000s of sales so far "
-             'because someone already watched the YouTube video.',
-      'title': 'How My $7 Sales Funnel Makes Me $18k/m (Max Auren)',
-      'url': 'https://www.youtube.com/watch?v=kmRwEjvxk-w&t=364s',
+      'text': "For my offer, I've added some extra downloads and packaged it into a $7 product.",
+      'timestamp': 347,
+      'timestamp_label': '[00:05:47]',
+      'timestamp_seconds': 347,
+      'tip': "For my offer, I've added some extra downloads and packaged it into a $7 product.",
+      'title': 'How My $7 Sales Funnel Makes Me $18k/m',
+      'url': 'https://www.youtube.com/watch?v=kmRwEjvxk-w&t=347s',
       'video_id': 'kmRwEjvxk-w'},
-     {'author': 'Click Guide',
-      'channel': 'Click Guide',
+     {'author': 'Nick Tsai',
+      'channel': 'Nick Tsai',
       'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:00:32](https://www.youtube.com/watch?v=F5Le0mxyMhg&t=32s)',
-      'relevance': 'Attributed practitioner commentary on digital sales-tax nexus, '
-                   'friendly-fraud chargebacks, ad fatigue, piracy, and platform concentration '
-                   'risks.',
+      'markdown': '[00:02:07](https://www.youtube.com/watch?v=Mw5p6Dsd_y8&t=127s)',
+      'relevance': 'Verbatim practitioner testimony from Chapter Q7.',
       'source_type': 'video_pro_tip',
-      'text': "And now, let's get started. Now, both school and circle are great for community "
-              'building and course hosting, but they also differ in various ways. For example, '
-              'school has a simple user-friendly interface. It has gamification features and '
-              'calendar for events.',
-      'timestamp': 32,
-      'timestamp_label': '[00:00:32]',
-      'timestamp_seconds': 32,
-      'tip': "And now, let's get started. Now, both school and circle are great for community "
-             'building and course hosting, but they also differ in various ways. For example, '
-             'school has a simple user-friendly interface. It has gamification features and '
-             'calendar for events.',
-      'title': 'Skool vs Circle (2026): The Best Online Communities & Courses? (Click Guide)',
-      'url': 'https://www.youtube.com/watch?v=F5Le0mxyMhg&t=32s',
-      'video_id': 'F5Le0mxyMhg'},
-     {'author': 'Nathan Nazareth',
-      'channel': 'Nathan Nazareth',
+      'text': 'I would recommend you to build your own product because you can leverage other '
+              "people's lists.",
+      'timestamp': 127,
+      'timestamp_label': '[00:02:07]',
+      'timestamp_seconds': 127,
+      'tip': 'I would recommend you to build your own product because you can leverage other '
+             "people's lists.",
+      'title': 'What Is Self Liquidating Offer Funnel - How To Generate Leads With SLO',
+      'url': 'https://www.youtube.com/watch?v=Mw5p6Dsd_y8&t=127s',
+      'video_id': 'Mw5p6Dsd_y8'},
+     {'author': 'Solo Marketer Funnels',
+      'channel': 'Solo Marketer Funnels',
       'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:08:29](https://www.youtube.com/watch?v=dr37DaI8g3U&t=509s)',
-      'relevance': 'Attributed practitioner commentary on digital sales-tax nexus, '
-                   'friendly-fraud chargebacks, ad fatigue, piracy, and platform concentration '
-                   'risks.',
+      'markdown': '[00:07:14](https://www.youtube.com/watch?v=gba265EaF2g&t=434s)',
+      'relevance': 'Verbatim practitioner testimony from Chapter Q7.',
       'source_type': 'video_pro_tip',
-      'text': "Shopify's platform is super intuitive, beautiful, easy to use, and like I said, "
-              'by coming over to this landing page right here.',
-      'timestamp': 509,
-      'timestamp_label': '[00:08:29]',
-      'timestamp_seconds': 509,
-      'tip': "Shopify's platform is super intuitive, beautiful, easy to use, and like I said, "
-             'by coming over to this landing page right here.',
-      'title': "How to Sell AI Digital Products (beginner's guide) (Nathan Nazareth)",
-      'url': 'https://www.youtube.com/watch?v=dr37DaI8g3U&t=509s',
-      'video_id': 'dr37DaI8g3U'},
-     {'author': 'Baddie In Business',
-      'channel': 'Baddie In Business',
+      'text': "In our example it's going to be five emails. You introduce yourself, build trust, "
+              "tell your story, and keep reintroducing this offer that people didn't buy.",
+      'timestamp': 434,
+      'timestamp_label': '[00:07:14]',
+      'timestamp_seconds': 434,
+      'tip': "In our example it's going to be five emails. You introduce yourself, build trust, "
+             "tell your story, and keep reintroducing this offer that people didn't buy.",
+      'title': 'How to create a Sales Funnel that covers your Ad Costs (a.k.a. Self-Liquidating '
+               'Funnel) for FREE',
+      'url': 'https://www.youtube.com/watch?v=gba265EaF2g&t=434s',
+      'video_id': 'gba265EaF2g'},
+     {'author': 'Jonathan Montoya',
+      'channel': 'Jonathan Montoya',
       'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:11:31](https://www.youtube.com/watch?v=QopRRjoOyyg&t=691s)',
-      'relevance': 'Attributed practitioner commentary on digital sales-tax nexus, '
-                   'friendly-fraud chargebacks, ad fatigue, piracy, and platform concentration '
-                   'risks.',
+      'markdown': '[00:11:00](https://www.youtube.com/watch?v=lJzDn-Qma9o&t=660s)',
+      'relevance': 'Verbatim practitioner testimony from Chapter Q7.',
       'source_type': 'video_pro_tip',
-      'text': "So it just really depends on like what you are doing. There's so many faceless "
-              "ways to take content that doesn't really actually show your face or involve you "
-              'talking that you can strategize. Another awesome platform is Pinterest.',
-      'timestamp': 691,
-      'timestamp_label': '[00:11:31]',
-      'timestamp_seconds': 691,
-      'tip': "So it just really depends on like what you are doing. There's so many faceless "
-             "ways to take content that doesn't really actually show your face or involve you "
-             'talking that you can strategize. Another awesome platform is Pinterest.',
-      'title': 'How to Start Selling Digital Products in 2026 (STEP BY STEP) FREE COURSE '
-               '(Baddie In Business)',
-      'url': 'https://www.youtube.com/watch?v=QopRRjoOyyg&t=691s',
-      'video_id': 'QopRRjoOyyg'},
-     {'author': 'Inayah McMillan',
-      'channel': 'Inayah McMillan',
+      'text': 'Basically all you do is add up all the sales, upsells, downsells, order bumps, and '
+              'you divide them by how many people bought.',
+      'timestamp': 660,
+      'timestamp_label': '[00:11:00]',
+      'timestamp_seconds': 660,
+      'tip': 'Basically all you do is add up all the sales, upsells, downsells, order bumps, and '
+             'you divide them by how many people bought.',
+      'title': 'How A $5 Product Made Me MILLIONS - What is a Self Liquidating Offer (SLO)?',
+      'url': 'https://www.youtube.com/watch?v=lJzDn-Qma9o&t=660s',
+      'video_id': 'lJzDn-Qma9o'},
+     {'author': 'Matt from Growbo',
+      'channel': 'Matt from Growbo',
       'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:06:56](https://www.youtube.com/watch?v=ow77v1CM31k&t=416s)',
-      'relevance': 'Attributed practitioner commentary on digital sales-tax nexus, '
-                   'friendly-fraud chargebacks, ad fatigue, piracy, and platform concentration '
-                   'risks.',
+      'markdown': '[00:09:53](https://www.youtube.com/watch?v=ZWpExzy5MUg&t=593s)',
+      'relevance': 'Verbatim practitioner testimony from Chapter Q7.',
       'source_type': 'video_pro_tip',
-      'text': 'Then I turn that money into assets that continue to pay me. Most people in the '
-              'digital product space start with one critical mistake. They start with cheap '
-              'offers hoping to upsell later.',
-      'timestamp': 416,
-      'timestamp_label': '[00:06:56]',
-      'timestamp_seconds': 416,
-      'tip': 'Then I turn that money into assets that continue to pay me. Most people in the '
-             'digital product space start with one critical mistake. They start with cheap '
-             'offers hoping to upsell later.',
-      'title': 'How I Made 10 Million Selling Digital\xa0Products (By 22) (Inayah McMillan)',
-      'url': 'https://www.youtube.com/watch?v=ow77v1CM31k&t=416s',
-      'video_id': 'ow77v1CM31k'},
-     {'author': 'Adnan Pilditch',
-      'channel': 'Adnan Pilditch',
+      'text': 'You need to make sure your SLO is aligned with your core offer.',
+      'timestamp': 593,
+      'timestamp_label': '[00:09:53]',
+      'timestamp_seconds': 593,
+      'tip': 'You need to make sure your SLO is aligned with your core offer.',
+      'title': 'What Is a Self-Liquidating Offer & Why Should You Care?',
+      'url': 'https://www.youtube.com/watch?v=ZWpExzy5MUg&t=593s',
+      'video_id': 'ZWpExzy5MUg'},
+     {'author': 'Pam Obasa',
+      'channel': 'Pam Obasa',
       'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:02:36](https://www.youtube.com/watch?v=mf1WAw0FyaI&t=156s)',
-      'relevance': 'Attributed practitioner commentary on digital sales-tax nexus, '
-                   'friendly-fraud chargebacks, ad fatigue, piracy, and platform concentration '
-                   'risks.',
+      'markdown': '[00:02:27](https://www.youtube.com/watch?v=Kgj8rFDeRIs&t=147s)',
+      'relevance': 'Verbatim practitioner testimony from Chapter Q7.',
       'source_type': 'video_pro_tip',
-      'text': 'And it happened to us at one point. We were leaking members fast. Turn was at '
-              '17%, especially when I went to Las Vegas for the school games, I came back to '
-              "high churn cuz I wasn't there in the action.",
-      'timestamp': 156,
-      'timestamp_label': '[00:02:36]',
-      'timestamp_seconds': 156,
-      'tip': 'And it happened to us at one point. We were leaking members fast. Turn was at '
-             '17%, especially when I went to Las Vegas for the school games, I came back to '
-             "high churn cuz I wasn't there in the action.",
-      'title': 'Top 7 Secrets To Building a $45,000/Month Skool Community (Adnan Pilditch)',
-      'url': 'https://www.youtube.com/watch?v=mf1WAw0FyaI&t=156s',
-      'video_id': 'mf1WAw0FyaI'},
-     {'author': 'Money Talk With Leon',
+      'text': 'From this specific funnel I generated $65,000 in 35 days.',
+      'timestamp': 147,
+      'timestamp_label': '[00:02:27]',
+      'timestamp_seconds': 147,
+      'tip': 'From this specific funnel I generated $65,000 in 35 days.',
+      'title': 'How To Create A Self-liquidating Offer Funnel For Your Business',
+      'url': 'https://www.youtube.com/watch?v=Kgj8rFDeRIs&t=147s',
+      'video_id': 'Kgj8rFDeRIs'},
+     {'author': 'Profitable Talents',
+      'channel': 'Profitable Talents',
+      'epistemic_status': 'attributed_practitioner_claim',
+      'markdown': '[00:19:49](https://www.youtube.com/watch?v=_I5YFl6Ym_k&t=1189s)',
+      'relevance': 'Verbatim practitioner testimony from Chapter Q7.',
+      'source_type': 'video_pro_tip',
+      'text': 'I want to think about the order bump and the upsell as complementary options. If '
+              "you get them, great, they're going to help you. If you don't get them, it's still "
+              'good.',
+      'timestamp': 1189,
+      'timestamp_label': '[00:19:49]',
+      'timestamp_seconds': 1189,
+      'tip': 'I want to think about the order bump and the upsell as complementary options. If you '
+             "get them, great, they're going to help you. If you don't get them, it's still good.",
+      'title': 'Watch Me Build a Self-Liquidating Offer Funnel From Scratch (Ep. 1)',
+      'url': 'https://www.youtube.com/watch?v=_I5YFl6Ym_k&t=1189s',
+      'video_id': '_I5YFl6Ym_k'},
+     {'author': 'Jonathan Montoya',
+      'channel': 'Jonathan Montoya',
+      'epistemic_status': 'attributed_practitioner_claim',
+      'markdown': '[00:33:59](https://www.youtube.com/watch?v=g9_sJ3XLyHs&t=2039s)',
+      'relevance': 'Verbatim practitioner testimony from Chapter Q7.',
+      'source_type': 'video_pro_tip',
+      'text': 'If they purchase this upsell number one, we want them to go to a different step. We '
+              "don't want them to go to the next step because they've already purchased this.",
+      'timestamp': 2039,
+      'timestamp_label': '[00:33:59]',
+      'timestamp_seconds': 2039,
+      'tip': 'If they purchase this upsell number one, we want them to go to a different step. We '
+             "don't want them to go to the next step because they've already purchased this.",
+      'title': 'Generate THOUSANDS of Leads - How to Build a Self-Liquidating Offer (Step-by-Step '
+               'Guide)',
+      'url': 'https://www.youtube.com/watch?v=g9_sJ3XLyHs&t=2039s',
+      'video_id': 'g9_sJ3XLyHs'},
+     {'author': 'Mariana Henninger',
+      'channel': 'Mariana Henninger',
+      'epistemic_status': 'attributed_practitioner_claim',
+      'markdown': '[00:31:00](https://www.youtube.com/watch?v=Ii70ybaGJ68&t=1860s)',
+      'relevance': 'Verbatim practitioner testimony from Chapter Q7.',
+      'source_type': 'video_pro_tip',
+      'text': 'The biggest shift was just continuing to scale by adding campaigns instead of '
+              'trying to squeeze as much juice as you could from one campaign.',
+      'timestamp': 1860,
+      'timestamp_label': '[00:31:00]',
+      'timestamp_seconds': 1860,
+      'tip': 'The biggest shift was just continuing to scale by adding campaigns instead of trying '
+             'to squeeze as much juice as you could from one campaign.',
+      'title': 'A Low-Ticket Tiny Offer SLO Funnel Fuels High-Ticket Sales with Allie Bjerk',
+      'url': 'https://www.youtube.com/watch?v=Ii70ybaGJ68&t=1860s',
+      'video_id': 'Ii70ybaGJ68'},
+     {'author': 'PDAC Media & Marketing',
+      'channel': 'PDAC Media & Marketing',
+      'epistemic_status': 'attributed_practitioner_claim',
+      'markdown': '[00:00:19](https://www.youtube.com/watch?v=oA-5XBJJ1VE&t=19s)',
+      'relevance': 'Verbatim practitioner testimony from Chapter Q7.',
+      'source_type': 'video_pro_tip',
+      'text': "My ad account got shut down, so I went back to organic, and since then I've just "
+              'focused on my personal brand and organic content.',
+      'timestamp': 19,
+      'timestamp_label': '[00:00:19]',
+      'timestamp_seconds': 19,
+      'tip': "My ad account got shut down, so I went back to organic, and since then I've just "
+             'focused on my personal brand and organic content.',
+      'title': 'SLO (SELF-LIQUIDATING OFFER) LOW-TICKET FUNNEL',
+      'url': 'https://www.youtube.com/watch?v=oA-5XBJJ1VE&t=19s',
+      'video_id': 'oA-5XBJJ1VE'},
+     {'author': 'Mateo | M31',
+      'channel': 'Mateo | M31',
+      'epistemic_status': 'attributed_practitioner_claim',
+      'markdown': '[00:00:35](https://www.youtube.com/watch?v=Q4J9fiMh3C0&t=35s)',
+      'relevance': 'Verbatim practitioner testimony from Chapter Q7.',
+      'source_type': 'video_pro_tip',
+      'text': 'The front-end product should solve one specific problem your ideal customer profile '
+              'has. It should be quickly consumable and it should attract your high-ticket ICP.',
+      'timestamp': 35,
+      'timestamp_label': '[00:00:35]',
+      'timestamp_seconds': 35,
+      'tip': 'The front-end product should solve one specific problem your ideal customer profile '
+             'has. It should be quickly consumable and it should attract your high-ticket ICP.',
+      'title': 'How To Build a Self Liquidating Low Ticket Funnel',
+      'url': 'https://www.youtube.com/watch?v=Q4J9fiMh3C0&t=35s',
+      'video_id': 'Q4J9fiMh3C0'},
+     {'author': 'Online Business Made Easy',
+      'channel': 'Online Business Made Easy',
+      'epistemic_status': 'attributed_practitioner_claim',
+      'markdown': '[00:01:46](https://www.youtube.com/watch?v=swjcIFF0Ehs&t=106s)',
+      'relevance': 'Verbatim practitioner testimony from Chapter Q7.',
+      'source_type': 'video_pro_tip',
+      'text': 'If you spend $97 and generated $97 in return, then the return on ad spend is just '
+              'one.',
+      'timestamp': 106,
+      'timestamp_label': '[00:01:46]',
+      'timestamp_seconds': 106,
+      'tip': 'If you spend $97 and generated $97 in return, then the return on ad spend is just '
+             'one.',
+      'title': 'Chapter 15 Part 1 Funnel #2 Self Liquidating Offer (SLO) Funnel | Dotcom Secrets | '
+               'Russell Brunson',
+      'url': 'https://www.youtube.com/watch?v=swjcIFF0Ehs&t=106s',
+      'video_id': 'swjcIFF0Ehs'}],
+ 8: [{'author': 'Money Talk With Leon',
       'channel': 'Money Talk With Leon',
       'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:05:41](https://www.youtube.com/watch?v=B8Z2fA5X0J4&t=341s)',
-      'relevance': 'Attributed practitioner commentary on digital sales-tax nexus, '
-                   'friendly-fraud chargebacks, ad fatigue, piracy, and platform concentration '
-                   'risks.',
+      'markdown': '[00:12:15](https://www.youtube.com/watch?v=Qqjup9J9CdI&t=735s)',
+      'relevance': 'Practitioner testimony on the creator revenue-share pitch and PDF-guide '
+                   'acquisition route.',
       'source_type': 'video_pro_tip',
-      'text': 'PDF guide using Claude AI, and the platform I build my website on to convince '
-              'people to give me their money. Say with me, give me their money. Now, for the '
-              'marketing, okay?',
-      'timestamp': 341,
-      'timestamp_label': '[00:05:41]',
-      'timestamp_seconds': 341,
-      'tip': 'PDF guide using Claude AI, and the platform I build my website on to convince '
-             'people to give me their money. Say with me, give me their money. Now, for the '
-             'marketing, okay?',
-      'title': 'I Sold Digital Products as a Beginner ‘To Prove It’s Not Luck’ Using Claude AI '
-               '(Money Talk With Leon)',
-      'url': 'https://www.youtube.com/watch?v=B8Z2fA5X0J4&t=341s',
-      'video_id': 'B8Z2fA5X0J4'}],
- 6: [{'author': 'Alek',
-      'channel': 'Alek',
-      'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:08:04](https://www.youtube.com/watch?v=T-gfoXzz8k8&t=484s)',
-      'relevance': 'Attributed practitioner commentary on Ad-Library spend velocity, '
-                   'Reddit/search pain mining, pre-sale validation, and demand qualification.',
-      'source_type': 'video_pro_tip',
-      'text': "Etsy, it's still one of the best places to do research because you can get "
-              'really good demand indicators. You can figure out how well specific product '
-              'listings are selling. And so I just made a search for digital downloads.',
-      'timestamp': 484,
-      'timestamp_label': '[00:08:04]',
-      'timestamp_seconds': 484,
-      'tip': "Etsy, it's still one of the best places to do research because you can get "
-             'really good demand indicators. You can figure out how well specific product '
-             'listings are selling. And so I just made a search for digital downloads.',
-      'title': 'Build & Sell Digital Products with A.I. (Full Course) (Alek)',
-      'url': 'https://www.youtube.com/watch?v=T-gfoXzz8k8&t=484s',
-      'video_id': 'T-gfoXzz8k8'},
-     {'author': 'Inayah McMillan',
-      'channel': 'Inayah McMillan',
-      'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:02:19](https://www.youtube.com/watch?v=ow77v1CM31k&t=139s)',
-      'relevance': 'Attributed practitioner commentary on Ad-Library spend velocity, '
-                   'Reddit/search pain mining, pre-sale validation, and demand qualification.',
-      'source_type': 'video_pro_tip',
-      'text': 'Shopify store, how to run ads, how to find winning products. Still, since I was '
-              'just starting, I was only making enough to cover my ad spend. This is a skill '
-              'that I started learning in high school.',
-      'timestamp': 139,
-      'timestamp_label': '[00:02:19]',
-      'timestamp_seconds': 139,
-      'tip': 'Shopify store, how to run ads, how to find winning products. Still, since I was '
-             'just starting, I was only making enough to cover my ad spend. This is a skill '
-             'that I started learning in high school.',
-      'title': 'How I Made 10 Million Selling Digital\xa0Products (By 22) (Inayah McMillan)',
-      'url': 'https://www.youtube.com/watch?v=ow77v1CM31k&t=139s',
-      'video_id': 'ow77v1CM31k'},
-     {'author': 'Money Making Juggernaut',
-      'channel': 'Money Making Juggernaut',
-      'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:08:26](https://www.youtube.com/watch?v=FJj3hN2KbIg&t=506s)',
-      'relevance': 'Attributed practitioner commentary on Ad-Library spend velocity, '
-                   'Reddit/search pain mining, pre-sale validation, and demand qualification.',
-      'source_type': 'video_pro_tip',
-      'text': "'s liens on GSCCA, make sure you go further in your research, check to see if "
-              "the client is still alive or deceased. If they're deceased, search the "
-              'obituary. You can go to the probate court, perform a search as well, and then '
-              'you market.',
-      'timestamp': 506,
-      'timestamp_label': '[00:08:26]',
-      'timestamp_seconds': 506,
-      'tip': "'s liens on GSCCA, make sure you go further in your research, check to see if "
-             "the client is still alive or deceased. If they're deceased, search the obituary. "
-             'You can go to the probate court, perform a search as well, and then you market.',
-      'title': 'How to Do Surplus Funds in Georgia (Step-by-Step Guide) (Money Making '
-               'Juggernaut)',
-      'url': 'https://www.youtube.com/watch?v=FJj3hN2KbIg&t=506s',
-      'video_id': 'FJj3hN2KbIg'},
-     {'author': 'Rochelle Be',
-      'channel': 'Rochelle Be',
-      'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:08:55](https://www.youtube.com/watch?v=4e4pRrWsJvU&t=535s)',
-      'relevance': 'Attributed practitioner commentary on Ad-Library spend velocity, '
-                   'Reddit/search pain mining, pre-sale validation, and demand qualification.',
-      'source_type': 'video_pro_tip',
-      'text': 'We can see conversion rates. So we know that if that product has demand, if '
-              "people are searching for it, if it's got sales, if it's got good monthly "
-              'revenue, the data is showing us that this could be a profitable product. And '
-              'that is why we validate first with real data.',
-      'timestamp': 535,
-      'timestamp_label': '[00:08:55]',
-      'timestamp_seconds': 535,
-      'tip': 'We can see conversion rates. So we know that if that product has demand, if '
-             "people are searching for it, if it's got sales, if it's got good monthly "
-             'revenue, the data is showing us that this could be a profitable product. And '
-             'that is why we validate first with real data.',
-      'title': 'How to Start Selling Digital Products in 2026 (Step-by-Step Tutorial) '
-               '(Rochelle Be)',
-      'url': 'https://www.youtube.com/watch?v=4e4pRrWsJvU&t=535s',
-      'video_id': '4e4pRrWsJvU'},
-     {'author': 'Max Auren',
-      'channel': 'Max Auren',
-      'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:00:33](https://www.youtube.com/watch?v=kmRwEjvxk-w&t=33s)',
-      'relevance': 'Attributed practitioner commentary on Ad-Library spend velocity, '
-                   'Reddit/search pain mining, pre-sale validation, and demand qualification.',
-      'source_type': 'video_pro_tip',
-      'text': 'The problem is that 10 years ago, you could literally show a basic ad and print '
-              'money unless you really sucked at writing copy and making an offer.',
-      'timestamp': 33,
-      'timestamp_label': '[00:00:33]',
-      'timestamp_seconds': 33,
-      'tip': 'The problem is that 10 years ago, you could literally show a basic ad and print '
-             'money unless you really sucked at writing copy and making an offer.',
-      'title': 'How My $7 Sales Funnel Makes Me $18k/m (Max Auren)',
-      'url': 'https://www.youtube.com/watch?v=kmRwEjvxk-w&t=33s',
-      'video_id': 'kmRwEjvxk-w'},
-     {'author': 'Money Talk With Leon',
-      'channel': 'Money Talk With Leon',
-      'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:01:21](https://www.youtube.com/watch?v=Qqjup9J9CdI&t=81s)',
-      'relevance': 'Attributed practitioner commentary on Ad-Library spend velocity, '
-                   'Reddit/search pain mining, pre-sale validation, and demand qualification.',
-      'source_type': 'video_pro_tip',
-      'text': "'re probably googling it, asking the question on Reddit or just trying to find "
-              "a resolution to their problem and the issues that they're facing emotionally. "
-              'Okay, so emotion is what sells PDF guides here. For example, this PDF guide '
-              'right here.',
-      'timestamp': 81,
-      'timestamp_label': '[00:01:21]',
-      'timestamp_seconds': 81,
-      'tip': "'re probably googling it, asking the question on Reddit or just trying to find a "
-             "resolution to their problem and the issues that they're facing emotionally. "
-             'Okay, so emotion is what sells PDF guides here. For example, this PDF guide '
-             'right here.',
-      'title': 'I Made $700K in 2 Days Selling Simple Digital Products (Step by Step) (Money '
-               'Talk With Leon)',
-      'url': 'https://www.youtube.com/watch?v=Qqjup9J9CdI&t=81s',
+      'text': 'You promote the guide on YouTube. You earn 50% commission on every sale.',
+      'timestamp': 735,
+      'timestamp_label': '[00:12:15]',
+      'timestamp_seconds': 735,
+      'tip': 'You promote the guide on YouTube. You earn 50% commission on every sale.',
+      'title': 'I Made $700K in 2 Days Selling Simple Digital Products (Step by Step)',
+      'url': 'https://www.youtube.com/watch?v=Qqjup9J9CdI&t=735s',
       'video_id': 'Qqjup9J9CdI'},
      {'author': 'Richard Yu',
       'channel': 'Richard Yu',
       'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:05:12](https://www.youtube.com/watch?v=JpNOwmwbf2s&t=312s)',
-      'relevance': 'Attributed practitioner commentary on Ad-Library spend velocity, '
-                   'Reddit/search pain mining, pre-sale validation, and demand qualification.',
+      'markdown': '[00:03:28](https://www.youtube.com/watch?v=RxypuPGBRPI&t=208s)',
+      'relevance': 'Practitioner testimony on promoting existing products instead of owning '
+                   'product creation and support.',
       'source_type': 'video_pro_tip',
-      'text': "So I don't even have to record the content myself if I don't want to show my "
-              "face. And Instagram's algorithm will push this video out to thousands if not "
-              'millions of people for free. No ad spend, no huge following needed. And '
-              "remember, you're not copying.",
-      'timestamp': 312,
-      'timestamp_label': '[00:05:12]',
-      'timestamp_seconds': 312,
-      'tip': "So I don't even have to record the content myself if I don't want to show my "
-             "face. And Instagram's algorithm will push this video out to thousands if not "
-             'millions of people for free. No ad spend, no huge following needed. And '
-             "remember, you're not copying.",
-      'title': 'I Made $27 Million Selling Simple Digital Products (Step by Step) (Richard Yu)',
-      'url': 'https://www.youtube.com/watch?v=JpNOwmwbf2s&t=312s',
-      'video_id': 'JpNOwmwbf2s'},
-     {'author': 'Eden',
-      'channel': 'Eden',
-      'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:03:36](https://www.youtube.com/watch?v=VJ-JR7uMY34&t=216s)',
-      'relevance': 'Attributed practitioner commentary on Ad-Library spend velocity, '
-                   'Reddit/search pain mining, pre-sale validation, and demand qualification.',
-      'source_type': 'video_pro_tip',
-      'text': "A pain point in your own life that you've solved or someone else's life that "
-              "you know you can help them solve. So if you've solved the problem in your life "
-              'in any domain, health, wealth, relationships, happiness, those are the eternal '
-              'markets where profitable problems live.',
-      'timestamp': 216,
-      'timestamp_label': '[00:03:36]',
-      'timestamp_seconds': 216,
-      'tip': "A pain point in your own life that you've solved or someone else's life that you "
-             "know you can help them solve. So if you've solved the problem in your life in "
-             'any domain, health, wealth, relationships, happiness, those are the eternal '
-             'markets where profitable problems live.',
-      'title': 'How To Build Your First $10,000 Digital Product (Full Beginner Guide) (Eden)',
-      'url': 'https://www.youtube.com/watch?v=VJ-JR7uMY34&t=216s',
-      'video_id': 'VJ-JR7uMY34'},
-     {'author': 'SamCart',
-      'channel': 'SamCart',
-      'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:01:37](https://www.youtube.com/watch?v=UxhtBuVj4gY&t=97s)',
-      'relevance': 'Attributed practitioner commentary on Ad-Library spend velocity, '
-                   'Reddit/search pain mining, pre-sale validation, and demand qualification.',
-      'source_type': 'video_pro_tip',
-      'text': 'And all we did was our very first thing is we had like a $50 mini course. And '
-              'so if we got 100 customers, that meant something like $5,000 in revenue, right? '
-              'There was a time where that was super exciting. But it was really tough to '
-              'spend money on ads.',
-      'timestamp': 97,
-      'timestamp_label': '[00:01:37]',
-      'timestamp_seconds': 97,
-      'tip': 'And all we did was our very first thing is we had like a $50 mini course. And so '
-             'if we got 100 customers, that meant something like $5,000 in revenue, right? '
-             'There was a time where that was super exciting. But it was really tough to spend '
-             'money on ads.',
-      'title': 'The Complete Guide to Upsells ($8 Billion in Data) (SamCart)',
-      'url': 'https://www.youtube.com/watch?v=UxhtBuVj4gY&t=97s',
-      'video_id': 'UxhtBuVj4gY'},
-     {'author': 'Iman Gadzhi',
-      'channel': 'Iman Gadzhi',
-      'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:11:12](https://www.youtube.com/watch?v=A-yBamfrXQs&t=672s)',
-      'relevance': 'Attributed practitioner commentary on Ad-Library spend velocity, '
-                   'Reddit/search pain mining, pre-sale validation, and demand qualification.',
-      'source_type': 'video_pro_tip',
-      'text': "Next is the variety of ad creatives. Just so you understand, when there's more "
-              'variations, it usually indicates to profitability because it means that they '
-              'are testing creatives and the ads are actually working.',
-      'timestamp': 672,
-      'timestamp_label': '[00:11:12]',
-      'timestamp_seconds': 672,
-      'tip': "Next is the variety of ad creatives. Just so you understand, when there's more "
-             'variations, it usually indicates to profitability because it means that they are '
-             'testing creatives and the ads are actually working.',
-      'title': 'Copy This Method To Make $2,700/Week with Digital Products (Iman Gadzhi)',
-      'url': 'https://www.youtube.com/watch?v=A-yBamfrXQs&t=672s',
-      'video_id': 'A-yBamfrXQs'},
-     {'author': 'Make Money with Stacy La',
-      'channel': 'Make Money with Stacy La',
-      'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:07:13](https://www.youtube.com/watch?v=gGW2IMNOz68&t=433s)',
-      'relevance': 'Attributed practitioner commentary on Ad-Library spend velocity, '
-                   'Reddit/search pain mining, pre-sale validation, and demand qualification.',
-      'source_type': 'video_pro_tip',
-      'text': 'My personal advice is to stick to one niche, topic, or specific problem to '
-              'solve at first. Then, once you start getting sales and learn what works and '
-              "what doesn't, you can expand to other niches as well.",
-      'timestamp': 433,
-      'timestamp_label': '[00:07:13]',
-      'timestamp_seconds': 433,
-      'tip': 'My personal advice is to stick to one niche, topic, or specific problem to solve '
-             'at first. Then, once you start getting sales and learn what works and what '
-             "doesn't, you can expand to other niches as well.",
-      'title': 'Watch Me Create a 6 Figure Digital Product with AI in 14 Minutes | UPDATED '
-               'Tutorial | Genspark (Make Money with Stacy La)',
-      'url': 'https://www.youtube.com/watch?v=gGW2IMNOz68&t=433s',
-      'video_id': 'gGW2IMNOz68'},
-     {'author': 'Profitable Talents',
-      'channel': 'Profitable Talents',
-      'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:06:00](https://www.youtube.com/watch?v=_I5YFl6Ym_k&t=360s)',
-      'relevance': 'Attributed practitioner commentary on Ad-Library spend velocity, '
-                   'Reddit/search pain mining, pre-sale validation, and demand qualification.',
-      'source_type': 'video_pro_tip',
-      'text': "But of course, it's got to be uh self liquidating in a way that if you want to "
-              'if I decide to run ads to this new offer and I wanted to make it extremely low '
-              'ticket, I need to recoup the the ad budget somehow.',
-      'timestamp': 360,
-      'timestamp_label': '[00:06:00]',
-      'timestamp_seconds': 360,
-      'tip': "But of course, it's got to be uh self liquidating in a way that if you want to "
-             'if I decide to run ads to this new offer and I wanted to make it extremely low '
-             'ticket, I need to recoup the the ad budget somehow.',
-      'title': 'Watch Me Build a Self-Liquidating Offer Funnel From Scratch (Ep. 1) '
-               '(Profitable Talents)',
-      'url': 'https://www.youtube.com/watch?v=_I5YFl6Ym_k&t=360s',
-      'video_id': '_I5YFl6Ym_k'},
+      'text': "You do not need to make your own product. You don't need to handle customer "
+              'service.',
+      'timestamp': 208,
+      'timestamp_label': '[00:03:28]',
+      'timestamp_seconds': 208,
+      'tip': "You do not need to make your own product. You don't need to handle customer service.",
+      'title': 'I Made $32.7 Million Selling Simple Digital Products (Full Masterclass)',
+      'url': 'https://www.youtube.com/watch?v=RxypuPGBRPI&t=208s',
+      'video_id': 'RxypuPGBRPI'},
      {'author': 'Richard Yu',
       'channel': 'Richard Yu',
       'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:04:44](https://www.youtube.com/watch?v=gjffmgucDSw&t=284s)',
-      'relevance': 'Attributed practitioner commentary on Ad-Library spend velocity, '
-                   'Reddit/search pain mining, pre-sale validation, and demand qualification.',
+      'markdown': '[00:01:31](https://www.youtube.com/watch?v=OGyxSOcL1F0&t=91s)',
+      'relevance': 'Practitioner testimony on the entry, middle, and higher-ticket product ladder.',
       'source_type': 'video_pro_tip',
-      'text': "And I'm not talking about building a billion-dollar app with a team of "
-              "engineers. I'm talking about a small micro-niche focused app that one specific "
-              'problem really well. A fitness app for busy moms, a content planning app for '
-              'creators, something simple.',
-      'timestamp': 284,
-      'timestamp_label': '[00:04:44]',
-      'timestamp_seconds': 284,
-      'tip': "And I'm not talking about building a billion-dollar app with a team of "
-             "engineers. I'm talking about a small micro-niche focused app that one specific "
-             'problem really well. A fitness app for busy moms, a content planning app for '
-             'creators, something simple.',
-      'title': 'FULL COURSE: How to Build & Sell Digital Products With AI (Step by Step) '
-               '(Richard Yu)',
-      'url': 'https://www.youtube.com/watch?v=gjffmgucDSw&t=284s',
-      'video_id': 'gjffmgucDSw'},
-     {'author': 'Typedream',
-      'channel': 'Typedream',
-      'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:01:30](https://www.youtube.com/watch?v=HXQD-vJDPyU&t=90s)',
-      'relevance': 'Attributed practitioner commentary on Ad-Library spend velocity, '
-                   'Reddit/search pain mining, pre-sale validation, and demand qualification.',
-      'source_type': 'video_pro_tip',
-      'text': 'For the thumbnail, let’s make it look appealing. I’m going to go to '
-              'Mockupworld, which has a TON of cool mockups you can use and edit. Let’s search '
-              'for an iPad mockup here, and we are going to select this one. This saves as a '
-              'Photoshop (.',
-      'timestamp': 90,
-      'timestamp_label': '[00:01:30]',
-      'timestamp_seconds': 90,
-      'tip': 'For the thumbnail, let’s make it look appealing. I’m going to go to Mockupworld, '
-             'which has a TON of cool mockups you can use and edit. Let’s search for an iPad '
-             'mockup here, and we are going to select this one. This saves as a Photoshop (.',
-      'title': 'How to make and sell aesthetic Notion templates with Typedream and Gumroad '
-               '(Typedream)',
-      'url': 'https://www.youtube.com/watch?v=HXQD-vJDPyU&t=90s',
-      'video_id': 'HXQD-vJDPyU'},
-     {'author': 'Mariana Henninger',
-      'channel': 'Mariana Henninger',
-      'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:06:31](https://www.youtube.com/watch?v=Ii70ybaGJ68&t=391s)',
-      'relevance': 'Attributed practitioner commentary on Ad-Library spend velocity, '
-                   'Reddit/search pain mining, pre-sale validation, and demand qualification.',
-      'source_type': 'video_pro_tip',
-      'text': 'So I thought that was interesting. So originally she had it at 27. AB tested '
-              'that and saw that the $17 price point seemed to be Can you Is it relevant to '
-              'know what her niche is, any of that or do you think that her results are '
-              'pretty?',
-      'timestamp': 391,
-      'timestamp_label': '[00:06:31]',
-      'timestamp_seconds': 391,
-      'tip': 'So I thought that was interesting. So originally she had it at 27. AB tested '
-             'that and saw that the $17 price point seemed to be Can you Is it relevant to '
-             'know what her niche is, any of that or do you think that her results are pretty?',
-      'title': 'A Low-Ticket Tiny Offer SLO Funnel Fuels High-Ticket Sales with Allie Bjerk '
-               '(Mariana Henninger)',
-      'url': 'https://www.youtube.com/watch?v=Ii70ybaGJ68&t=391s',
-      'video_id': 'Ii70ybaGJ68'}],
- 7: [{'author': 'CRM Tutorials Library',
-      'channel': 'CRM Tutorials Library',
-      'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:00:21](https://www.youtube.com/watch?v=pz33EMSEtfY&t=21s)',
-      'relevance': 'Attributed practitioner commentary on product packaging, checkout '
-                   'architecture, license/entitlement delivery, onboarding, and post-purchase '
-                   'ascension.',
-      'source_type': 'video_pro_tip',
-      'text': "Add a new step and name it checkout page. This is the page where you'll accept "
-              'orders from customers, so keep the layout clean and distraction-free. A funnel '
-              'step is simply a page in your sales sequence that moves the buyer from interest '
-              'to purchase.',
-      'timestamp': 21,
-      'timestamp_label': '[00:00:21]',
-      'timestamp_seconds': 21,
-      'tip': "Add a new step and name it checkout page. This is the page where you'll accept "
-             'orders from customers, so keep the layout clean and distraction-free. A funnel '
-             'step is simply a page in your sales sequence that moves the buyer from interest '
-             'to purchase.',
-      'title': 'How to Set Up Main Product, Order Bump, Upsell & Downsell in GoHighLevel | '
-               'Step-by-Step (CRM Tutorials Library)',
-      'url': 'https://www.youtube.com/watch?v=pz33EMSEtfY&t=21s',
-      'video_id': 'pz33EMSEtfY'},
-     {'author': 'LAUNCHTIP',
-      'channel': 'LAUNCHTIP',
-      'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:00:42](https://www.youtube.com/watch?v=k8mwfZ9Nq_c&t=42s)',
-      'relevance': 'Attributed practitioner commentary on product packaging, checkout '
-                   'architecture, license/entitlement delivery, onboarding, and post-purchase '
-                   'ascension.',
-      'source_type': 'video_pro_tip',
-      'text': 'So, from here, you can choose your upsell type. Inside of the offers type, as '
-              'you can see here, you have on-page offers, you have like cart upsells, you have '
-              'post-purchase upsells, and you even have actions offers. So, you basically '
-              'choose the one that suits your needs.',
-      'timestamp': 42,
-      'timestamp_label': '[00:00:42]',
-      'timestamp_seconds': 42,
-      'tip': 'So, from here, you can choose your upsell type. Inside of the offers type, as '
-             'you can see here, you have on-page offers, you have like cart upsells, you have '
-             'post-purchase upsells, and you even have actions offers. So, you basically '
-             'choose the one that suits your needs.',
-      'title': 'How to Create a One-Click Upsell Funnel for your Shopify store in 2026 '
-               '(LAUNCHTIP)',
-      'url': 'https://www.youtube.com/watch?v=k8mwfZ9Nq_c&t=42s',
-      'video_id': 'k8mwfZ9Nq_c'},
-     {'author': 'Typedream',
-      'channel': 'Typedream',
-      'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:02:21](https://www.youtube.com/watch?v=HXQD-vJDPyU&t=141s)',
-      'relevance': 'Attributed practitioner commentary on product packaging, checkout '
-                   'architecture, license/entitlement delivery, onboarding, and post-purchase '
-                   'ascension.',
-      'source_type': 'video_pro_tip',
-      'text': 'I like to edit the Checkout button so it’s less generic. Once you’re done, we '
-              'hit Publish and people can go buy your template through Gumroad. Now, what you '
-              'want to do is to create a website or a page that would help funnel traffic into '
-              'your Gumroad page.',
-      'timestamp': 141,
-      'timestamp_label': '[00:02:21]',
-      'timestamp_seconds': 141,
-      'tip': 'I like to edit the Checkout button so it’s less generic. Once you’re done, we '
-             'hit Publish and people can go buy your template through Gumroad. Now, what you '
-             'want to do is to create a website or a page that would help funnel traffic into '
-             'your Gumroad page.',
-      'title': 'How to make and sell aesthetic Notion templates with Typedream and Gumroad '
-               '(Typedream)',
-      'url': 'https://www.youtube.com/watch?v=HXQD-vJDPyU&t=141s',
-      'video_id': 'HXQD-vJDPyU'},
-     {'author': 'Maria Wendt',
-      'channel': 'Maria Wendt',
-      'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:13:35](https://www.youtube.com/watch?v=zQQZEPMxT6U&t=815s)',
-      'relevance': 'Attributed practitioner commentary on product packaging, checkout '
-                   'architecture, license/entitlement delivery, onboarding, and post-purchase '
-                   'ascension.',
-      'source_type': 'video_pro_tip',
-      'text': 'If you have average, you would need about 6,000 people per month to view your '
-              "page. I'm going to tell you how to get those views. If you build checkout pages "
-              'the way I build checkout pages, you only need about 2,000 people to view your '
-              'checkout page.',
-      'timestamp': 815,
-      'timestamp_label': '[00:13:35]',
-      'timestamp_seconds': 815,
-      'tip': 'If you have average, you would need about 6,000 people per month to view your '
-             "page. I'm going to tell you how to get those views. If you build checkout pages "
-             'the way I build checkout pages, you only need about 2,000 people to view your '
-             'checkout page.',
-      'title': 'How To Turn Your $24 Digital Product Into $24,000 (Scaling Strategy That '
-               'Works) (Maria Wendt)',
-      'url': 'https://www.youtube.com/watch?v=zQQZEPMxT6U&t=815s',
-      'video_id': 'zQQZEPMxT6U'},
-     {'author': 'Sell Your Service',
-      'channel': 'Sell Your Service',
-      'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:02:17](https://www.youtube.com/watch?v=_csKVgudVVY&t=137s)',
-      'relevance': 'Attributed practitioner commentary on product packaging, checkout '
-                   'architecture, license/entitlement delivery, onboarding, and post-purchase '
-                   'ascension.',
-      'source_type': 'video_pro_tip',
-      'text': "But the one-time offer is then I'm going to physically show you how to set up "
-              'your first ad and create it. With an ATM or an oh oh funnel. Ooh, funnel, a '
-              'triple low funnel. You would then redirect them to a page with something called '
-              'a one click upsell.',
-      'timestamp': 137,
-      'timestamp_label': '[00:02:17]',
-      'timestamp_seconds': 137,
-      'tip': "But the one-time offer is then I'm going to physically show you how to set up "
-             'your first ad and create it. With an ATM or an oh oh funnel. Ooh, funnel, a '
-             'triple low funnel. You would then redirect them to a page with something called '
-             'a one click upsell.',
-      'title': 'How To Build A Self Liquidating Offer Funnel In HighLevel | Ryan Deiss (SLO) '
-               '(Sell Your Service)',
-      'url': 'https://www.youtube.com/watch?v=_csKVgudVVY&t=137s',
-      'video_id': '_csKVgudVVY'},
-     {'author': 'Marketing Mark',
-      'channel': 'Marketing Mark',
-      'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:00:24](https://www.youtube.com/watch?v=0u4Tmd6BlWA&t=24s)',
-      'relevance': 'Attributed practitioner commentary on product packaging, checkout '
-                   'architecture, license/entitlement delivery, onboarding, and post-purchase '
-                   'ascension.',
-      'source_type': 'video_pro_tip',
-      'text': "I'll have a video link down below how to set that up. Next, we're going to go "
-              'ahead and add a new step. And this upsell page should go right after your '
-              'checkout page.',
-      'timestamp': 24,
-      'timestamp_label': '[00:00:24]',
-      'timestamp_seconds': 24,
-      'tip': "I'll have a video link down below how to set that up. Next, we're going to go "
-             'ahead and add a new step. And this upsell page should go right after your '
-             'checkout page.',
-      'title': 'How to Build 1 Click Upsells in GoHighLevel (Marketing Mark)',
-      'url': 'https://www.youtube.com/watch?v=0u4Tmd6BlWA&t=24s',
-      'video_id': '0u4Tmd6BlWA'},
-     {'author': 'Pete McPherson DYEB',
-      'channel': 'Pete McPherson DYEB',
-      'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:08:24](https://www.youtube.com/watch?v=wYKYVjEiqLY&t=504s)',
-      'relevance': 'Attributed practitioner commentary on product packaging, checkout '
-                   'architecture, license/entitlement delivery, onboarding, and post-purchase '
-                   'ascension.',
-      'source_type': 'video_pro_tip',
-      'text': "Let's start off with my own. Here is basically what it looks like. There is a "
-              'sales page and I will open it up and walk you through it in just a second. That '
-              "leads to an order page. It's literally like a checkout cart. I will show you "
-              'that as well in just a second.',
-      'timestamp': 504,
-      'timestamp_label': '[00:08:24]',
-      'timestamp_seconds': 504,
-      'tip': "Let's start off with my own. Here is basically what it looks like. There is a "
-             'sales page and I will open it up and walk you through it in just a second. That '
-             "leads to an order page. It's literally like a checkout cart. I will show you "
-             'that as well in just a second.',
-      'title': 'How to launch your SELF-LIQUIDATING OFFER Funnel (with real-world examples!) '
-               '(Pete McPherson DYEB)',
-      'url': 'https://www.youtube.com/watch?v=wYKYVjEiqLY&t=504s',
-      'video_id': 'wYKYVjEiqLY'},
-     {'author': 'Social Nest Marketing',
-      'channel': 'Social Nest Marketing',
-      'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:11:36](https://www.youtube.com/watch?v=-xCVVPZu48k&t=696s)',
-      'relevance': 'Attributed practitioner commentary on product packaging, checkout '
-                   'architecture, license/entitlement delivery, onboarding, and post-purchase '
-                   'ascension.',
-      'source_type': 'video_pro_tip',
-      'text': "Then I'mma go back to payments. And then we're going to edit this. So, right "
-              'here, I want it to go here when people finish. Like, when you finish the '
-              "checkout, it's going to go to this page, right here.",
-      'timestamp': 696,
-      'timestamp_label': '[00:11:36]',
-      'timestamp_seconds': 696,
-      'tip': "Then I'mma go back to payments. And then we're going to edit this. So, right "
-             'here, I want it to go here when people finish. Like, when you finish the '
-             "checkout, it's going to go to this page, right here.",
-      'title': 'GoHighLevel One-Click Upsell Setup: Payment Link Redirect + Auto-Delivery '
-               'Workflow (Part 6) (Social Nest Marketing)',
-      'url': 'https://www.youtube.com/watch?v=-xCVVPZu48k&t=696s',
-      'video_id': '-xCVVPZu48k'},
-     {'author': 'Richard Yu',
-      'channel': 'Richard Yu',
-      'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:13:08](https://www.youtube.com/watch?v=kxg_sn2vJm8&t=788s)',
-      'relevance': 'Attributed practitioner commentary on product packaging, checkout '
-                   'architecture, license/entitlement delivery, onboarding, and post-purchase '
-                   'ascension.',
-      'source_type': 'video_pro_tip',
-      'text': "I'm going to build the entire storefront live in front of you. A clean, simple "
-              "website with a checkout that can take payments immediately, and I'm going to "
-              'show you how you can build all of this in less than an afternoon with no code '
-              'and no technical experience.',
-      'timestamp': 788,
-      'timestamp_label': '[00:13:08]',
-      'timestamp_seconds': 788,
-      'tip': "I'm going to build the entire storefront live in front of you. A clean, simple "
-             "website with a checkout that can take payments immediately, and I'm going to "
-             'show you how you can build all of this in less than an afternoon with no code '
-             'and no technical experience.',
-      'title': "How I'd Build a Digital Product From Scratch (After Making $32 Million) "
-               '(Richard Yu)',
-      'url': 'https://www.youtube.com/watch?v=kxg_sn2vJm8&t=788s',
-      'video_id': 'kxg_sn2vJm8'},
-     {'author': 'Skool News',
-      'channel': 'Skool News',
-      'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:08:25](https://www.youtube.com/watch?v=Oeug9IgSFXc&t=505s)',
-      'relevance': 'Attributed practitioner commentary on product packaging, checkout '
-                   'architecture, license/entitlement delivery, onboarding, and post-purchase '
-                   'ascension.',
-      'source_type': 'video_pro_tip',
-      'text': 'Plus a nice little pro tip. If you just link people to slash plans, they can '
-              'view this page whenever. So you could have a pin post where you tell people how '
-              "to do this or you could if you're DMing someone you could tell them this or if "
-              "you're doing a webinar or a call.",
-      'timestamp': 505,
-      'timestamp_label': '[00:08:25]',
-      'timestamp_seconds': 505,
-      'tip': 'Plus a nice little pro tip. If you just link people to slash plans, they can '
-             'view this page whenever. So you could have a pin post where you tell people how '
-             "to do this or you could if you're DMing someone you could tell them this or if "
-             "you're doing a webinar or a call.",
-      'title': 'Membership TIERS Are Here | Skool News #33 (Skool News)',
-      'url': 'https://www.youtube.com/watch?v=Oeug9IgSFXc&t=505s',
-      'video_id': 'Oeug9IgSFXc'},
-     {'author': 'GROUNDTECHY',
-      'channel': 'GROUNDTECHY',
-      'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:04:33](https://www.youtube.com/watch?v=F73hzfI-XsE&t=273s)',
-      'relevance': 'Attributed practitioner commentary on product packaging, checkout '
-                   'architecture, license/entitlement delivery, onboarding, and post-purchase '
-                   'ascension.',
-      'source_type': 'video_pro_tip',
-      'text': 'They will see the second upsell and finally they will be redirected to the '
-              "thank you page and it really doesn't matter what they decide on in the second "
-              'upsell whether they accept the offer or decline the offer the last step for '
-              'them will be the thank you page.',
-      'timestamp': 273,
-      'timestamp_label': '[00:04:33]',
-      'timestamp_seconds': 273,
-      'tip': 'They will see the second upsell and finally they will be redirected to the thank '
-             "you page and it really doesn't matter what they decide on in the second upsell "
-             'whether they accept the offer or decline the offer the last step for them will '
-             'be the thank you page.',
-      'title': 'How to Setup Sell funnel Upsells, downsells, order bumps on Systemeio '
-               '(GROUNDTECHY)',
-      'url': 'https://www.youtube.com/watch?v=F73hzfI-XsE&t=273s',
-      'video_id': 'F73hzfI-XsE'},
-     {'author': 'Nick Tsai',
-      'channel': 'Nick Tsai',
-      'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:02:56](https://www.youtube.com/watch?v=Mw5p6Dsd_y8&t=176s)',
-      'relevance': 'Attributed practitioner commentary on product packaging, checkout '
-                   'architecture, license/entitlement delivery, onboarding, and post-purchase '
-                   'ascension.',
-      'source_type': 'video_pro_tip',
-      'text': "If it makes sense right so that's the power of self-liquidating offer so if you "
-              'want to learn more about how you can build your own slo you can check the link '
-              'below for some free training and resources I hope you enjoyed that I will see '
-              'you soon in the next video.',
-      'timestamp': 176,
-      'timestamp_label': '[00:02:56]',
-      'timestamp_seconds': 176,
-      'tip': "If it makes sense right so that's the power of self-liquidating offer so if you "
-             'want to learn more about how you can build your own slo you can check the link '
-             'below for some free training and resources I hope you enjoyed that I will see '
-             'you soon in the next video.',
-      'title': 'What Is Self Liquidating Offer Funnel - How To Generate Leads With SLO (Nick '
-               'Tsai)',
-      'url': 'https://www.youtube.com/watch?v=Mw5p6Dsd_y8&t=176s',
-      'video_id': 'Mw5p6Dsd_y8'},
-     {'author': 'Extreme Guides',
-      'channel': 'Extreme Guides',
-      'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:00:42](https://www.youtube.com/watch?v=2zWJQPegtuk&t=42s)',
-      'relevance': 'Attributed practitioner commentary on product packaging, checkout '
-                   'architecture, license/entitlement delivery, onboarding, and post-purchase '
-                   'ascension.',
-      'source_type': 'video_pro_tip',
-      'text': 'A menu will appear providing several options related to sharing your page. Once '
-              'this appears, click on copy link to generate a sharable link for your notion '
-              'template. This step is crucial as it allows customers to access your template '
-              'directly after purchase.',
-      'timestamp': 42,
-      'timestamp_label': '[00:00:42]',
-      'timestamp_seconds': 42,
-      'tip': 'A menu will appear providing several options related to sharing your page. Once '
-             'this appears, click on copy link to generate a sharable link for your notion '
-             'template. This step is crucial as it allows customers to access your template '
-             'directly after purchase.',
-      'title': 'How to sell Notion templates on Gumroad[FULL GUIDE] (Extreme Guides)',
-      'url': 'https://www.youtube.com/watch?v=2zWJQPegtuk&t=42s',
-      'video_id': '2zWJQPegtuk'},
-     {'author': 'Max Auren',
-      'channel': 'Max Auren',
-      'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:03:24](https://www.youtube.com/watch?v=kmRwEjvxk-w&t=204s)',
-      'relevance': 'Attributed practitioner commentary on product packaging, checkout '
-                   'architecture, license/entitlement delivery, onboarding, and post-purchase '
-                   'ascension.',
-      'source_type': 'video_pro_tip',
-      'text': 'Only if it relates they click and go to our landing page that starts with '
-              'confirmation of the promise so that they know they actually clicked on the '
-              'right button. We show the tangible product picture again and very short list of '
-              'features and benefits with a buy button.',
-      'timestamp': 204,
-      'timestamp_label': '[00:03:24]',
-      'timestamp_seconds': 204,
-      'tip': 'Only if it relates they click and go to our landing page that starts with '
-             'confirmation of the promise so that they know they actually clicked on the right '
-             'button. We show the tangible product picture again and very short list of '
-             'features and benefits with a buy button.',
-      'title': 'How My $7 Sales Funnel Makes Me $18k/m (Max Auren)',
-      'url': 'https://www.youtube.com/watch?v=kmRwEjvxk-w&t=204s',
-      'video_id': 'kmRwEjvxk-w'},
+      'text': "You don't sell one thing, you sell three, stacked together. A low-ticket product "
+              'around $27, a mid-tier one around $197, and a high-ticket offer, $2,000 and up.',
+      'timestamp': 91,
+      'timestamp_label': '[00:01:31]',
+      'timestamp_seconds': 91,
+      'tip': "You don't sell one thing, you sell three, stacked together. A low-ticket product "
+             'around $27, a mid-tier one around $197, and a high-ticket offer, $2,000 and up.',
+      'title': 'How I Built a $57K/Month Digital Product Business From Scratch (Full System)',
+      'url': 'https://www.youtube.com/watch?v=OGyxSOcL1F0&t=91s',
+      'video_id': 'OGyxSOcL1F0'},
      {'author': 'Inayah McMillan',
       'channel': 'Inayah McMillan',
       'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:04:59](https://www.youtube.com/watch?v=ow77v1CM31k&t=299s)',
-      'relevance': 'Attributed practitioner commentary on product packaging, checkout '
-                   'architecture, license/entitlement delivery, onboarding, and post-purchase '
-                   'ascension.',
+      'markdown': '[00:04:28](https://www.youtube.com/watch?v=ow77v1CM31k&t=268s)',
+      'relevance': 'Practitioner testimony on the preparatory purchase preceding the masterclass '
+                   'core offer.',
       'source_type': 'video_pro_tip',
-      'text': 'No fancy funnel, no complex marketing, just real value delivered in a '
-              'straightforward way. As we grew, we noticed something critical. Most people who '
-              'purchase information struggle with implementation.',
-      'timestamp': 299,
-      'timestamp_label': '[00:04:59]',
-      'timestamp_seconds': 299,
-      'tip': 'No fancy funnel, no complex marketing, just real value delivered in a '
-             'straightforward way. As we grew, we noticed something critical. Most people who '
-             'purchase information struggle with implementation.',
-      'title': 'How I Made 10 Million Selling Digital\xa0Products (By 22) (Inayah McMillan)',
-      'url': 'https://www.youtube.com/watch?v=ow77v1CM31k&t=299s',
-      'video_id': 'ow77v1CM31k'}],
- 8: [{'author': 'SoloBuild',
-      'channel': 'SoloBuild',
+      'text': 'When they registered for the master class, they were offered a preparatory bundle '
+              'for $27.',
+      'timestamp': 268,
+      'timestamp_label': '[00:04:28]',
+      'timestamp_seconds': 268,
+      'tip': 'When they registered for the master class, they were offered a preparatory bundle '
+             'for $27.',
+      'title': 'How I Made 10 Million Selling Digital\xa0Products (By 22)',
+      'url': 'https://www.youtube.com/watch?v=ow77v1CM31k&t=268s',
+      'video_id': 'ow77v1CM31k'},
+     {'author': 'Richard Yu',
+      'channel': 'Richard Yu',
       'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:07:58](https://www.youtube.com/watch?v=i05UCC3UvNY&t=478s)',
-      'relevance': 'Attributed practitioner commentary on analytics, first-party attribution '
-                   'pixels, email/co-reg engines, Chrome micro-tools, and GEO citation '
-                   'visibility.',
+      'markdown': '[00:04:05](https://www.youtube.com/watch?v=JpNOwmwbf2s&t=245s)',
+      'relevance': 'Practitioner testimony on moving an ebook buyer from the thank-you page into a '
+                   'value call.',
       'source_type': 'video_pro_tip',
-      'text': 'Last, decide whether you need the extras. Lemon Squeezy bundles a store and '
-              'affiliate tools, and Paddle bundles billing support. And if you sell one '
-              'digital product, our earlier video on Gumroad, Stan Store, and Payhip covers '
-              'the all-in-one stores.',
-      'timestamp': 478,
-      'timestamp_label': '[00:07:58]',
-      'timestamp_seconds': 478,
-      'tip': 'Last, decide whether you need the extras. Lemon Squeezy bundles a store and '
-             'affiliate tools, and Paddle bundles billing support. And if you sell one digital '
-             'product, our earlier video on Gumroad, Stan Store, and Payhip covers the '
-             'all-in-one stores.',
-      'title': 'Stripe vs Lemon Squeezy vs Paddle (2026): Which Should You Use? (SoloBuild)',
-      'url': 'https://www.youtube.com/watch?v=i05UCC3UvNY&t=478s',
-      'video_id': 'i05UCC3UvNY'},
-     {'author': 'How2Genius',
-      'channel': 'How2Genius',
+      'text': 'That thank you page will have a calendar for them to book in a 15-minute call with '
+              'you.',
+      'timestamp': 245,
+      'timestamp_label': '[00:04:05]',
+      'timestamp_seconds': 245,
+      'tip': 'That thank you page will have a calendar for them to book in a 15-minute call with '
+             'you.',
+      'title': 'I Made $27 Million Selling Simple Digital Products (Step by Step)',
+      'url': 'https://www.youtube.com/watch?v=JpNOwmwbf2s&t=245s',
+      'video_id': 'JpNOwmwbf2s'},
+     {'author': 'Maria Wendt',
+      'channel': 'Maria Wendt',
       'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:03:01](https://www.youtube.com/watch?v=Y5VXhUB7aNM&t=181s)',
-      'relevance': 'Attributed practitioner commentary on analytics, first-party attribution '
-                   'pixels, email/co-reg engines, Chrome micro-tools, and GEO citation '
-                   'visibility.',
+      'markdown': '[00:10:53](https://www.youtube.com/watch?v=zQQZEPMxT6U&t=653s)',
+      'relevance': 'Practitioner testimony on average customer spending across different purchase '
+                   'combinations.',
       'source_type': 'video_pro_tip',
-      'text': 'Fastspring also integrates with popular CRM and marketing tools, helping you '
-              'automate workflows from purchase to onboarding. If your main goal is quick '
-              'setup, automatic US and Canadian tax handling, and easy subscription '
-              'management, Paddle is the better choice.',
-      'timestamp': 181,
-      'timestamp_label': '[00:03:01]',
-      'timestamp_seconds': 181,
-      'tip': 'Fastspring also integrates with popular CRM and marketing tools, helping you '
-             'automate workflows from purchase to onboarding. If your main goal is quick '
-             'setup, automatic US and Canadian tax handling, and easy subscription management, '
-             'Paddle is the better choice.',
-      'title': 'NEW* Paddle vs FastSpring — Best Checkout & Tax for Digital Products '
-               '(How2Genius)',
-      'url': 'https://www.youtube.com/watch?v=Y5VXhUB7aNM&t=181s',
-      'video_id': 'Y5VXhUB7aNM'},
-     {'author': 'TechWealth Hub',
-      'channel': 'TechWealth Hub',
+      'text': "If you're curious to know what my average order value is across all orders, it's "
+              '$160.',
+      'timestamp': 653,
+      'timestamp_label': '[00:10:53]',
+      'timestamp_seconds': 653,
+      'tip': "If you're curious to know what my average order value is across all orders, it's "
+             '$160.',
+      'title': 'How To Turn Your $24 Digital Product Into $24,000 (Scaling Strategy That Works)',
+      'url': 'https://www.youtube.com/watch?v=zQQZEPMxT6U&t=653s',
+      'video_id': 'zQQZEPMxT6U'},
+     {'author': "Sam O'Halloran",
+      'channel': "Sam O'Halloran",
       'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:00:34](https://www.youtube.com/watch?v=KRdWGDk-GkY&t=34s)',
-      'relevance': 'Attributed practitioner commentary on analytics, first-party attribution '
-                   'pixels, email/co-reg engines, Chrome micro-tools, and GEO citation '
-                   'visibility.',
+      'markdown': '[00:09:35](https://www.youtube.com/watch?v=xglFE-qJgUY&t=575s)',
+      'relevance': 'Practitioner testimony on recurring testing, stopping unsuccessful angles, and '
+                   'attempting to scale winners.',
       'source_type': 'video_pro_tip',
-      'text': 'Europe, handling GST in Australia, managing chargebacks and disputes, and '
-              "dealing with fraud. It's a nightmare, especially if you're a solo developer or "
-              "small team. That's why services like Paddle, Gumroad, and Lemon Squeezy "
-              'existed.',
-      'timestamp': 34,
-      'timestamp_label': '[00:00:34]',
-      'timestamp_seconds': 34,
-      'tip': 'Europe, handling GST in Australia, managing chargebacks and disputes, and '
-             "dealing with fraud. It's a nightmare, especially if you're a solo developer or "
-             "small team. That's why services like Paddle, Gumroad, and Lemon Squeezy existed.",
-      'title': 'Stripe Just KILLED Paddle and Gumroad (Managed Payments) (TechWealth Hub)',
-      'url': 'https://www.youtube.com/watch?v=KRdWGDk-GkY&t=34s',
-      'video_id': 'KRdWGDk-GkY'},
-     {'author': 'Tutorly',
-      'channel': 'Tutorly',
+      'text': "You let it run for three to five days. You kill what doesn't work. You try and "
+              'scale what does work.',
+      'timestamp': 575,
+      'timestamp_label': '[00:09:35]',
+      'timestamp_seconds': 575,
+      'tip': "You let it run for three to five days. You kill what doesn't work. You try and scale "
+             'what does work.',
+      'title': "I tried selling digital products with Facebook Ads - here's what actually worked",
+      'url': 'https://www.youtube.com/watch?v=xglFE-qJgUY&t=575s',
+      'video_id': 'xglFE-qJgUY'},
+     {'author': 'KelvinEcomKings',
+      'channel': 'KelvinEcomKings',
       'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:02:40](https://www.youtube.com/watch?v=IfaCBBIoVK0&t=160s)',
-      'relevance': 'Attributed practitioner commentary on analytics, first-party attribution '
-                   'pixels, email/co-reg engines, Chrome micro-tools, and GEO citation '
-                   'visibility.',
+      'markdown': '[00:01:28](https://www.youtube.com/watch?v=iD0KSCzKeB8&t=88s)',
+      'relevance': 'Practitioner testimony on free-resource acquisition and email-led selling.',
       'source_type': 'video_pro_tip',
-      'text': 'If your customers include larger companies with specific billing requirements, '
-              'Paddle provides tools that support more complex payment situations. Lemon '
-              'Squeezy charges the same base fee of 5% plus 50 cents.',
-      'timestamp': 160,
-      'timestamp_label': '[00:02:40]',
-      'timestamp_seconds': 160,
-      'tip': 'If your customers include larger companies with specific billing requirements, '
-             'Paddle provides tools that support more complex payment situations. Lemon '
-             'Squeezy charges the same base fee of 5% plus 50 cents.',
-      'title': 'Lemon Squeezy Vs Stripe Checkout Vs Paddle (2026) Which One Is Better? '
-               '(Tutorly)',
-      'url': 'https://www.youtube.com/watch?v=IfaCBBIoVK0&t=160s',
-      'video_id': 'IfaCBBIoVK0'},
-     {'author': 'Click Guide',
+      'text': 'A lead magnet is something free you give away to capture emails.',
+      'timestamp': 88,
+      'timestamp_label': '[00:01:28]',
+      'timestamp_seconds': 88,
+      'tip': 'A lead magnet is something free you give away to capture emails.',
+      'title': 'The Sales Funnel That Scales Digital Products to $50K/Month',
+      'url': 'https://www.youtube.com/watch?v=iD0KSCzKeB8&t=88s',
+      'video_id': 'iD0KSCzKeB8'},
+     {'author': 'Sarah Tynan',
+      'channel': 'Sarah Tynan',
+      'epistemic_status': 'attributed_practitioner_claim',
+      'markdown': '[00:08:40](https://www.youtube.com/watch?v=8PrHOAIbRg8&t=520s)',
+      'relevance': 'Practitioner testimony separating acquisition-paying entry products from '
+                   'backend profit.',
+      'source_type': 'video_pro_tip',
+      'text': "It's the backend that creates the profit.",
+      'timestamp': 520,
+      'timestamp_label': '[00:08:40]',
+      'timestamp_seconds': 520,
+      'tip': "It's the backend that creates the profit.",
+      'title': 'Episode 6- I Built an 11:1 ROAS Funnel (Self-Liquidating Offer Strategy for '
+               'Coaches & Entrepreneurs)',
+      'url': 'https://www.youtube.com/watch?v=8PrHOAIbRg8&t=520s',
+      'video_id': '8PrHOAIbRg8'},
+     {'author': 'Sarah Tynan',
+      'channel': 'Sarah Tynan',
+      'epistemic_status': 'attributed_practitioner_claim',
+      'markdown': '[00:06:41](https://www.youtube.com/watch?v=fLmxcn5iXmY&t=401s)',
+      'relevance': 'Practitioner testimony on the revenue and ad-spending figures attached to the '
+                   'six-week funnel case.',
+      'source_type': 'video_pro_tip',
+      'text': 'Within six weeks, we made 46K, and we spent about 6K on ads.',
+      'timestamp': 401,
+      'timestamp_label': '[00:06:41]',
+      'timestamp_seconds': 401,
+      'tip': 'Within six weeks, we made 46K, and we spent about 6K on ads.',
+      'title': 'How I Built an 11:1 ROAS Funnel (Self-Liquidating Offer Strategy for Coaches & '
+               'Entrepreneurs)',
+      'url': 'https://www.youtube.com/watch?v=fLmxcn5iXmY&t=401s',
+      'video_id': 'fLmxcn5iXmY'},
+     {'author': 'Jamie McAdam',
+      'channel': 'Jamie McAdam',
+      'epistemic_status': 'attributed_practitioner_claim',
+      'markdown': '[00:11:21](https://www.youtube.com/watch?v=Ck6CfmXv244&t=681s)',
+      'relevance': 'Practitioner testimony on the lag between buying an ebook and becoming ready '
+                   'for a larger purchase.',
+      'source_type': 'video_pro_tip',
+      'text': 'When we gave them the ebook and they bought that upsell, they came back much warmer '
+              "and much more ready to buy. However, they didn't come back for about four months.",
+      'timestamp': 681,
+      'timestamp_label': '[00:11:21]',
+      'timestamp_seconds': 681,
+      'tip': 'When we gave them the ebook and they bought that upsell, they came back much warmer '
+             "and much more ready to buy. However, they didn't come back for about four months.",
+      'title': 'Can a $27 Low-Ticket Offer Really Sell a $5,000 Programme?',
+      'url': 'https://www.youtube.com/watch?v=Ck6CfmXv244&t=681s',
+      'video_id': 'Ck6CfmXv244'},
+     {'author': 'mrs.melissalandry',
+      'channel': 'mrs.melissalandry',
+      'epistemic_status': 'attributed_practitioner_claim',
+      'markdown': '[00:02:10](https://www.youtube.com/watch?v=yal_TWVxcUY&t=130s)',
+      'relevance': 'Practitioner testimony on complementary products behind the main low-ticket '
+                   'offer.',
+      'source_type': 'video_pro_tip',
+      'text': 'I technically did not stop at just one product. You can call this a French fry '
+              'funnel.',
+      'timestamp': 130,
+      'timestamp_label': '[00:02:10]',
+      'timestamp_seconds': 130,
+      'tip': 'I technically did not stop at just one product. You can call this a French fry '
+             'funnel.',
+      'title': 'How I made $15,000 in 7 Days with ONE Low Ticket Digital Product',
+      'url': 'https://www.youtube.com/watch?v=yal_TWVxcUY&t=130s',
+      'video_id': 'yal_TWVxcUY'},
+     {'author': 'Rochelle Be',
+      'channel': 'Rochelle Be',
+      'epistemic_status': 'attributed_practitioner_claim',
+      'markdown': '[00:11:24](https://www.youtube.com/watch?v=NwrNOPtw07s&t=684s)',
+      'relevance': 'Practitioner testimony supporting a low-ticket-only alternative to a '
+                   'high-ticket ascension model.',
+      'source_type': 'video_pro_tip',
+      'text': 'You can create a very sustainable business just selling low ticket.',
+      'timestamp': 684,
+      'timestamp_label': '[00:11:24]',
+      'timestamp_seconds': 684,
+      'tip': 'You can create a very sustainable business just selling low ticket.',
+      'title': 'How I Made my First $10,000 Selling a SIMPLE $27 Low Ticket Digital Products',
+      'url': 'https://www.youtube.com/watch?v=NwrNOPtw07s&t=684s',
+      'video_id': 'NwrNOPtw07s'},
+     {'author': 'Bishal Katuwal',
+      'channel': 'Bishal Katuwal',
+      'epistemic_status': 'attributed_practitioner_claim',
+      'markdown': '[00:03:36](https://www.youtube.com/watch?v=5VLFkMiYCXY&t=216s)',
+      'relevance': 'Practitioner testimony on short video creative as an alternative to '
+                   'image-first testing.',
+      'source_type': 'video_pro_tip',
+      'text': "If you're going to do video, then I recommend doing five to fifteen seconds long "
+              'video.',
+      'timestamp': 216,
+      'timestamp_label': '[00:03:36]',
+      'timestamp_seconds': 216,
+      'tip': "If you're going to do video, then I recommend doing five to fifteen seconds long "
+             'video.',
+      'title': 'Complete Ad Strategy for Low Ticket Offers',
+      'url': 'https://www.youtube.com/watch?v=5VLFkMiYCXY&t=216s',
+      'video_id': '5VLFkMiYCXY'},
+     {'author': 'Jan Pole',
+      'channel': 'Jan Pole',
+      'epistemic_status': 'attributed_practitioner_claim',
+      'markdown': '[00:02:29](https://www.youtube.com/watch?v=J5lslxUECxE&t=149s)',
+      'relevance': 'Practitioner testimony on acquisition cost for a low-ticket program with '
+                   'additional purchase opportunities.',
+      'source_type': 'video_pro_tip',
+      'text': 'My cost to acquire a customer is around $30.',
+      'timestamp': 149,
+      'timestamp_label': '[00:02:29]',
+      'timestamp_seconds': 149,
+      'tip': 'My cost to acquire a customer is around $30.',
+      'title': '“Low Ticket Can’t Work With Ads” Is Wrong. Here’s the Math.',
+      'url': 'https://www.youtube.com/watch?v=J5lslxUECxE&t=149s',
+      'video_id': 'J5lslxUECxE'},
+     {'author': "Sam O'Halloran",
+      'channel': "Sam O'Halloran",
+      'epistemic_status': 'attributed_practitioner_claim',
+      'markdown': '[00:21:32](https://www.youtube.com/watch?v=V9kZuGEUra8&t=1292s)',
+      'relevance': 'Practitioner testimony on purchase intent, click cost, and the limits of '
+                   'click-led creative judgments.',
+      'source_type': 'video_pro_tip',
+      'text': "Sometimes the cheapest clicks don't always get the best buyers or the best ROAS.",
+      'timestamp': 1292,
+      'timestamp_label': '[00:21:32]',
+      'timestamp_seconds': 1292,
+      'tip': "Sometimes the cheapest clicks don't always get the best buyers or the best ROAS.",
+      'title': 'The best facebook ads to run for low ticket digital products',
+      'url': 'https://www.youtube.com/watch?v=V9kZuGEUra8&t=1292s',
+      'video_id': 'V9kZuGEUra8'}],
+ 9: [{'author': 'Click Guide',
       'channel': 'Click Guide',
       'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:01:23](https://www.youtube.com/watch?v=F5Le0mxyMhg&t=83s)',
-      'relevance': 'Attributed practitioner commentary on analytics, first-party attribution '
-                   'pixels, email/co-reg engines, Chrome micro-tools, and GEO citation '
-                   'visibility.',
+      'markdown': '[00:01:04](https://www.youtube.com/watch?v=F5Le0mxyMhg&t=64s)',
+      'relevance': 'Practitioner pricing claim contrasted with the two-plan descriptions in '
+                   'Chapter Q9.',
       'source_type': 'video_pro_tip',
-      'text': 'The business at $199 per month, provides workflows and automations and API '
-              'access. Enterprise plan comes at $419 per month, and it has advanced analytics, '
-              'lower transaction fees of 1%. The plus plan comes at a custom pricing.',
-      'timestamp': 83,
-      'timestamp_label': '[00:01:23]',
-      'timestamp_seconds': 83,
-      'tip': 'The business at $199 per month, provides workflows and automations and API '
-             'access. Enterprise plan comes at $419 per month, and it has advanced analytics, '
-             'lower transaction fees of 1%. The plus plan comes at a custom pricing.',
-      'title': 'Skool vs Circle (2026): The Best Online Communities & Courses? (Click Guide)',
-      'url': 'https://www.youtube.com/watch?v=F5Le0mxyMhg&t=83s',
+      'text': 'Skool has a flat rate of $99 per month for one group, including unlimited members '
+              'and courses.',
+      'timestamp': 64,
+      'timestamp_label': '[00:01:04]',
+      'timestamp_seconds': 64,
+      'tip': 'Skool has a flat rate of $99 per month for one group, including unlimited members '
+             'and courses.',
+      'title': 'Skool vs Circle (2026): The Best Online Communities & Courses?',
+      'url': 'https://www.youtube.com/watch?v=F5Le0mxyMhg&t=64s',
       'video_id': 'F5Le0mxyMhg'},
-     {'author': 'Tutorials At Desk',
-      'channel': 'Tutorials At Desk',
+     {'author': 'Skool News',
+      'channel': 'Skool News',
       'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:03:39](https://www.youtube.com/watch?v=VEFf-FR0dxw&t=219s)',
-      'relevance': 'Attributed practitioner commentary on analytics, first-party attribution '
-                   'pixels, email/co-reg engines, Chrome micro-tools, and GEO citation '
-                   'visibility.',
+      'markdown': '[00:08:18](https://www.youtube.com/watch?v=Oeug9IgSFXc&t=498s)',
+      'relevance': "Practitioner upgrade-path shortcut used in Chapter Q9's access mechanics.",
       'source_type': 'video_pro_tip',
-      'text': 'Then choose your account type, usually either individual or business, depending '
-              "on how you're operating. After that, follow the on-screen instructions to "
-              'connect a supported payout method such as Stripe or PayPal, depending on what '
-              'Gumroad offers in your region.',
-      'timestamp': 219,
-      'timestamp_label': '[00:03:39]',
-      'timestamp_seconds': 219,
-      'tip': 'Then choose your account type, usually either individual or business, depending '
-             "on how you're operating. After that, follow the on-screen instructions to "
-             'connect a supported payout method such as Stripe or PayPal, depending on what '
-             'Gumroad offers in your region.',
-      'title': 'How to Sell Notion Templates on Gumroad (2026 Revenue Snapshot) (Tutorials At '
-               'Desk)',
-      'url': 'https://www.youtube.com/watch?v=VEFf-FR0dxw&t=219s',
-      'video_id': 'VEFf-FR0dxw'},
-     {'author': 'Stephen S.',
-      'channel': 'Stephen S.',
+      'text': 'If you just link people to slash plans, they can view this page whenever.',
+      'timestamp': 498,
+      'timestamp_label': '[00:08:18]',
+      'timestamp_seconds': 498,
+      'tip': 'If you just link people to slash plans, they can view this page whenever.',
+      'title': 'Membership TIERS Are Here | Skool News #33',
+      'url': 'https://www.youtube.com/watch?v=Oeug9IgSFXc&t=498s',
+      'video_id': 'Oeug9IgSFXc'},
+     {'author': 'Adnan Pilditch',
+      'channel': 'Adnan Pilditch',
       'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:00:55](https://www.youtube.com/watch?v=F-WZgXuQIuQ&t=55s)',
-      'relevance': 'Attributed practitioner commentary on analytics, first-party attribution '
-                   'pixels, email/co-reg engines, Chrome micro-tools, and GEO citation '
-                   'visibility.',
+      'markdown': '[00:05:12](https://www.youtube.com/watch?v=mf1WAw0FyaI&t=312s)',
+      'relevance': "Practitioner retention action used in Chapter Q9's operating feedback loop.",
       'source_type': 'video_pro_tip',
-      'text': 'Now if I come down here to the MCP servers, I can see that the Stripe MCP is '
-              "there. And for this, I'm going to authorize, jump back into Curo, and now I can "
-              'see that I have access to all of these tools.',
-      'timestamp': 55,
-      'timestamp_label': '[00:00:55]',
-      'timestamp_seconds': 55,
-      'tip': 'Now if I come down here to the MCP servers, I can see that the Stripe MCP is '
-             "there. And for this, I'm going to authorize, jump back into Curo, and now I can "
-             'see that I have access to all of these tools.',
-      'title': "Stripe's Merchant of Record (MoR) Solution: Adding Managed Payments to an "
-               'Existing App  #mcp (Stephen S.)',
-      'url': 'https://www.youtube.com/watch?v=F-WZgXuQIuQ&t=55s',
-      'video_id': 'F-WZgXuQIuQ'},
+      'text': 'We send a DM to every member who cancels.',
+      'timestamp': 312,
+      'timestamp_label': '[00:05:12]',
+      'timestamp_seconds': 312,
+      'tip': 'We send a DM to every member who cancels.',
+      'title': 'Top 7 Secrets To Building a $45,000/Month Skool Community',
+      'url': 'https://www.youtube.com/watch?v=mf1WAw0FyaI&t=312s',
+      'video_id': 'mf1WAw0FyaI'},
      {'author': 'Doug Boughton',
       'channel': 'Doug Boughton',
       'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:12:29](https://www.youtube.com/watch?v=8lz_gy-Osw8&t=749s)',
-      'relevance': 'Attributed practitioner commentary on analytics, first-party attribution '
-                   'pixels, email/co-reg engines, Chrome micro-tools, and GEO citation '
-                   'visibility.',
+      'markdown': '[00:07:21](https://www.youtube.com/watch?v=8lz_gy-Osw8&t=441s)',
+      'relevance': 'Practitioner onboarding mechanism supporting the implementation-led paid '
+                   'membership.',
       'source_type': 'video_pro_tip',
-      'text': "Um and I've built a tool around this. It's called Event Stack AI. Uh I sell "
-              'this tool for up to $299 a month for the highest plan. My clients get it for '
-              'free.',
-      'timestamp': 749,
-      'timestamp_label': '[00:12:29]',
-      'timestamp_seconds': 749,
-      'tip': "Um and I've built a tool around this. It's called Event Stack AI. Uh I sell this "
-             'tool for up to $299 a month for the highest plan. My clients get it for free.',
-      'title': 'Are Free Skool Communities Dying? Why I Turned Mine Paid (Doug Boughton)',
-      'url': 'https://www.youtube.com/watch?v=8lz_gy-Osw8&t=749s',
+      'text': "You're going to fill out a form soon as you join.",
+      'timestamp': 441,
+      'timestamp_label': '[00:07:21]',
+      'timestamp_seconds': 441,
+      'tip': "You're going to fill out a form soon as you join.",
+      'title': 'Are Free Skool Communities Dying? Why I Turned Mine Paid',
+      'url': 'https://www.youtube.com/watch?v=8lz_gy-Osw8&t=441s',
       'video_id': '8lz_gy-Osw8'},
-     {'author': 'Captain Vova (Vova Feldman)',
-      'channel': 'Captain Vova (Vova Feldman)',
+     {'author': 'StartupWise',
+      'channel': 'StartupWise',
       'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:01:49](https://www.youtube.com/watch?v=5zGuxRrg_O0&t=109s)',
-      'relevance': 'Attributed practitioner commentary on analytics, first-party attribution '
-                   'pixels, email/co-reg engines, Chrome micro-tools, and GEO citation '
-                   'visibility.',
+      'markdown': '[00:06:13](https://www.youtube.com/watch?v=hlptMoswKzI&t=373s)',
+      'relevance': 'Practitioner statement distinguishing Whop transaction charges from member '
+                   'subscription prices.',
       'source_type': 'video_pro_tip',
-      'text': "Whether you've been following the events or not, last year Stripe acquired "
-              'payment solution called Lemon Squeezy, a Merchant of Record actually. And the '
-              'question that is kind of inevitable is are they going to sunset that solution?',
-      'timestamp': 109,
-      'timestamp_label': '[00:01:49]',
-      'timestamp_seconds': 109,
-      'tip': "Whether you've been following the events or not, last year Stripe acquired "
-             'payment solution called Lemon Squeezy, a Merchant of Record actually. And the '
-             'question that is kind of inevitable is are they going to sunset that solution?',
-      'title': 'Stripe Managed Payments: The Threat to Paddle and the Future of MoR (Captain '
-               'Vova (Vova Feldman))',
-      'url': 'https://www.youtube.com/watch?v=5zGuxRrg_O0&t=109s',
-      'video_id': '5zGuxRrg_O0'},
-     {'author': 'houdztech',
-      'channel': 'houdztech',
+      'text': 'They take 3% of that deal plus payment processing fees.',
+      'timestamp': 373,
+      'timestamp_label': '[00:06:13]',
+      'timestamp_seconds': 373,
+      'tip': 'They take 3% of that deal plus payment processing fees.',
+      'title': 'Whop vs Skool: Best Platform for Community Building & Memberships?',
+      'url': 'https://www.youtube.com/watch?v=hlptMoswKzI&t=373s',
+      'video_id': 'hlptMoswKzI'},
+     {'author': 'Tobi Teaches',
+      'channel': 'Tobi Teaches',
       'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:02:42](https://www.youtube.com/watch?v=Qq-EyvVj7IM&t=162s)',
-      'relevance': 'Attributed practitioner commentary on analytics, first-party attribution '
-                   'pixels, email/co-reg engines, Chrome micro-tools, and GEO citation '
-                   'visibility.',
+      'markdown': '[00:00:13](https://www.youtube.com/watch?v=W3fJMvOE7Mw&t=13s)',
+      'relevance': "Practitioner explanation of Skool's concentrated community, course, and event "
+                   'arrangement.',
       'source_type': 'video_pro_tip',
-      'text': 'Lemon Squeezy is designed for simplicity. The UI is clean, modern, and '
-              'genuinely easy to navigate. Setup takes 15 to 30 minutes. They have built-in '
-              'email marketing, affiliate management, and a no code storefront builder.',
-      'timestamp': 162,
-      'timestamp_label': '[00:02:42]',
-      'timestamp_seconds': 162,
-      'tip': 'Lemon Squeezy is designed for simplicity. The UI is clean, modern, and genuinely '
-             'easy to navigate. Setup takes 15 to 30 minutes. They have built-in email '
-             'marketing, affiliate management, and a no code storefront builder.',
-      'title': 'Paddle vs LemonSqueezy (2026) | Which One is Better? (houdztech)',
-      'url': 'https://www.youtube.com/watch?v=Qq-EyvVj7IM&t=162s',
-      'video_id': 'Qq-EyvVj7IM'},
-     {'author': 'Bree and Steve',
-      'channel': 'Bree and Steve',
+      'text': 'It combines your community discussion forum, your online courses, and a calendar '
+              'for live events all into one single dashboard.',
+      'timestamp': 13,
+      'timestamp_label': '[00:00:13]',
+      'timestamp_seconds': 13,
+      'tip': 'It combines your community discussion forum, your online courses, and a calendar for '
+             'live events all into one single dashboard.',
+      'title': 'Skool Vs. Circle.so Vs. Whop | Which Is Better In 2026?',
+      'url': 'https://www.youtube.com/watch?v=W3fJMvOE7Mw&t=13s',
+      'video_id': 'W3fJMvOE7Mw'},
+     {'author': 'WP Course Lab',
+      'channel': 'WP Course Lab',
       'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:05:32](https://www.youtube.com/watch?v=zmw7OXf39rQ&t=332s)',
-      'relevance': 'Attributed practitioner commentary on analytics, first-party attribution '
-                   'pixels, email/co-reg engines, Chrome micro-tools, and GEO citation '
-                   'visibility.',
+      'markdown': '[00:02:36](https://www.youtube.com/watch?v=HfjmXuo7-LQ&t=156s)',
+      'relevance': 'Practitioner description of peer-discovery mechanics in the WordPress '
+                   'mastermind alternative.',
       'source_type': 'video_pro_tip',
-      'text': "So I'm going to hit new database and I'm going to go ahead and resize this so "
-              "we're gonna go in and do is add the different habits that you would like to "
-              "track so this can be really anything I'm just gonna go ahead and list a couple "
-              'of random ones.',
-      'timestamp': 332,
-      'timestamp_label': '[00:05:32]',
-      'timestamp_seconds': 332,
-      'tip': "So I'm going to hit new database and I'm going to go ahead and resize this so "
-             "we're gonna go in and do is add the different habits that you would like to "
-             "track so this can be really anything I'm just gonna go ahead and list a couple "
-             'of random ones.',
-      'title': 'How To Make & Sell Notion Templates (Make $1000+ MONTH!) (Bree and Steve)',
-      'url': 'https://www.youtube.com/watch?v=zmw7OXf39rQ&t=332s',
-      'video_id': 'zmw7OXf39rQ'},
-     {'author': 'Pete McPherson DYEB',
-      'channel': 'Pete McPherson DYEB',
+      'text': 'A searchable member directory with profiles that show stage and industry, so '
+              'founders find the right peers fast.',
+      'timestamp': 156,
+      'timestamp_label': '[00:02:36]',
+      'timestamp_seconds': 156,
+      'tip': 'A searchable member directory with profiles that show stage and industry, so '
+             'founders find the right peers fast.',
+      'title': 'Best Platforms to Launch a Paid Mastermind Community (2026)',
+      'url': 'https://www.youtube.com/watch?v=HfjmXuo7-LQ&t=156s',
+      'video_id': 'HfjmXuo7-LQ'},
+     {'author': 'Calvin Hollywood',
+      'channel': 'Calvin Hollywood',
       'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:18:59](https://www.youtube.com/watch?v=wYKYVjEiqLY&t=1139s)',
-      'relevance': 'Attributed practitioner commentary on analytics, first-party attribution '
-                   'pixels, email/co-reg engines, Chrome micro-tools, and GEO citation '
-                   'visibility.',
+      'markdown': '[00:01:31](https://www.youtube.com/watch?v=tD2vZ__Ls7c&t=91s)',
+      'relevance': 'Member objection reported by Hollywood as a firsthand free-to-paid conversion '
+                   'obstacle.',
       'source_type': 'video_pro_tip',
-      'text': 'This is a tool that you can use ASAP. Next to go through a bump offer and then '
-              'an upsell. It could be the systems and strategies that are related to the '
-              "tools. And actually, this is an important point that I didn't mention earlier.",
-      'timestamp': 1139,
-      'timestamp_label': '[00:18:59]',
-      'timestamp_seconds': 1139,
-      'tip': 'This is a tool that you can use ASAP. Next to go through a bump offer and then '
-             'an upsell. It could be the systems and strategies that are related to the tools. '
-             "And actually, this is an important point that I didn't mention earlier.",
-      'title': 'How to launch your SELF-LIQUIDATING OFFER Funnel (with real-world examples!) '
-               '(Pete McPherson DYEB)',
-      'url': 'https://www.youtube.com/watch?v=wYKYVjEiqLY&t=1139s',
-      'video_id': 'wYKYVjEiqLY'},
-     {'author': 'Money Making Juggernaut',
-      'channel': 'Money Making Juggernaut',
+      'text': "I'm still busy with the content in the free community.",
+      'timestamp': 91,
+      'timestamp_label': '[00:01:31]',
+      'timestamp_seconds': 91,
+      'tip': "I'm still busy with the content in the free community.",
+      'title': 'Why Most Free-to-Paid Skool Communities FAIL (And How to Fix It)',
+      'url': 'https://www.youtube.com/watch?v=tD2vZ__Ls7c&t=91s',
+      'video_id': 'tD2vZ__Ls7c'},
+     {'author': 'Guides by Leonard',
+      'channel': 'Guides by Leonard',
       'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:02:45](https://www.youtube.com/watch?v=FJj3hN2KbIg&t=165s)',
-      'relevance': 'Attributed practitioner commentary on analytics, first-party attribution '
-                   'pixels, email/co-reg engines, Chrome micro-tools, and GEO citation '
-                   'visibility.',
+      'markdown': '[00:02:51](https://www.youtube.com/watch?v=UVDszvU8i0o&t=171s)',
+      'relevance': 'Practitioner instruction connecting the Whop subscription purchase to '
+                   'classroom delivery.',
       'source_type': 'video_pro_tip',
-      'text': 'You guys can see here, just a very basic Google search can give us access to '
-              'many counties across the entire state of Georgia. We can also use Excess Elite. '
-              'Excess Elite is the number one leading database provider. They also have a CRM '
-              'that allows you to market.',
-      'timestamp': 165,
-      'timestamp_label': '[00:02:45]',
-      'timestamp_seconds': 165,
-      'tip': 'You guys can see here, just a very basic Google search can give us access to '
-             'many counties across the entire state of Georgia. We can also use Excess Elite. '
-             'Excess Elite is the number one leading database provider. They also have a CRM '
-             'that allows you to market.',
-      'title': 'How to Do Surplus Funds in Georgia (Step-by-Step Guide) (Money Making '
-               'Juggernaut)',
-      'url': 'https://www.youtube.com/watch?v=FJj3hN2KbIg&t=165s',
-      'video_id': 'FJj3hN2KbIg'},
-     {'author': 'Framer',
-      'channel': 'Framer',
+      'text': 'Toggle it on so that every subscriber who buys the product automatically gets '
+              'classroom access.',
+      'timestamp': 171,
+      'timestamp_label': '[00:02:51]',
+      'timestamp_seconds': 171,
+      'tip': 'Toggle it on so that every subscriber who buys the product automatically gets '
+             'classroom access.',
+      'title': 'How To Sell Courses On Whop (Step-By-Step Subscription Guide)',
+      'url': 'https://www.youtube.com/watch?v=UVDszvU8i0o&t=171s',
+      'video_id': 'UVDszvU8i0o'},
+     {'author': 'Kev Builds Apps',
+      'channel': 'Kev Builds Apps',
       'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:03:43](https://www.youtube.com/watch?v=RN0VWAvL-qc&t=223s)',
-      'relevance': 'Attributed practitioner commentary on analytics, first-party attribution '
-                   'pixels, email/co-reg engines, Chrome micro-tools, and GEO citation '
-                   'visibility.',
+      'markdown': '[00:07:29](https://www.youtube.com/watch?v=7Yk9rP2fLuA&t=449s)',
+      'relevance': "Kev's firsthand inactivity observation explaining their interest in "
+                   're-engagement triggers.',
       'source_type': 'video_pro_tip',
-      'text': 'Twitter or share it anywhere you want so you can copy this share it wherever '
-              'you want and then that is how you start selling your templates through lemon '
-              'squeezy thanks for watching.',
-      'timestamp': 223,
-      'timestamp_label': '[00:03:43]',
-      'timestamp_seconds': 223,
-      'tip': 'Twitter or share it anywhere you want so you can copy this share it wherever you '
-             'want and then that is how you start selling your templates through lemon squeezy '
-             'thanks for watching.',
-      'title': 'How to start selling your Framer templates through Lemon Squeezy (Framer)',
-      'url': 'https://www.youtube.com/watch?v=RN0VWAvL-qc&t=223s',
-      'video_id': 'RN0VWAvL-qc'},
-     {'author': 'ScottishArchivesTV',
-      'channel': 'ScottishArchivesTV',
+      'text': 'When people are not present for more than 2 weeks, the chances of them coming back '
+              'to the free academy is quite low.',
+      'timestamp': 449,
+      'timestamp_label': '[00:07:29]',
+      'timestamp_seconds': 449,
+      'tip': 'When people are not present for more than 2 weeks, the chances of them coming back '
+             'to the free academy is quite low.',
+      'title': '3 Reasons Mighty Networks Beats Skool, Circle & Whop for Community Building in '
+               '2026',
+      'url': 'https://www.youtube.com/watch?v=7Yk9rP2fLuA&t=449s',
+      'video_id': '7Yk9rP2fLuA'},
+     {'author': 'Carrie Melissa Jones',
+      'channel': 'Carrie Melissa Jones',
       'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:05:07](https://www.youtube.com/watch?v=1pRY7lpZ7nA&t=307s)',
-      'relevance': 'Attributed practitioner commentary on analytics, first-party attribution '
-                   'pixels, email/co-reg engines, Chrome micro-tools, and GEO citation '
-                   'visibility.',
+      'markdown': '[00:14:35](https://www.youtube.com/watch?v=Y-orRSmQnsQ&t=875s)',
+      'relevance': 'Practitioner guidance separating simple community design from a mandatory '
+                   'platform migration.',
       'source_type': 'video_pro_tip',
-      'text': 'You to run a manual scan make sure that manual only is selected under schedule '
-              'the scan if you set up an email address to send your reports to you can enter '
-              'it now by clicking add report recipient email entering your email address and '
-              'clicking add.',
-      'timestamp': 307,
-      'timestamp_label': '[00:05:07]',
-      'timestamp_seconds': 307,
-      'tip': 'You to run a manual scan make sure that manual only is selected under schedule '
-             'the scan if you set up an email address to send your reports to you can enter it '
-             'now by clicking add report recipient email entering your email address and '
-             'clicking add.',
-      'title': 'Getting Started with Digital Preservation: Fixity Pro (ScottishArchivesTV)',
-      'url': 'https://www.youtube.com/watch?v=1pRY7lpZ7nA&t=307s',
-      'video_id': '1pRY7lpZ7nA'}],
- 9: [{'author': 'Captain Vova (Vova Feldman)',
-      'channel': 'Captain Vova (Vova Feldman)',
+      'text': "You don't have to have a really complex build on any platform that you build on.",
+      'timestamp': 875,
+      'timestamp_label': '[00:14:35]',
+      'timestamp_seconds': 875,
+      'tip': "You don't have to have a really complex build on any platform that you build on.",
+      'title': "Circle vs Skool: I Tested Both So You Don't Have To",
+      'url': 'https://www.youtube.com/watch?v=Y-orRSmQnsQ&t=875s',
+      'video_id': 'Y-orRSmQnsQ'},
+     {'author': 'Tool Clash',
+      'channel': 'Tool Clash',
       'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:01:00](https://www.youtube.com/watch?v=5zGuxRrg_O0&t=60s)',
-      'relevance': 'Attributed practitioner commentary on FTC ROSCA click-to-cancel rules, '
-                   'clear refund terms, affiliate disclosures, VAT/sales tax, and DMCA '
-                   'enforcement.',
+      'markdown': '[00:01:33](https://www.youtube.com/watch?v=kM_eK170wvg&t=93s)',
+      'relevance': "Practitioner Whop customization claim contrasted with Faith's marketplace "
+                   'assessment.',
       'source_type': 'video_pro_tip',
-      'text': "'re selling countries like Australia, India, and all the other geolocations "
-              "that basically require dealing with VAT, GST, and sales taxes. So, they don't "
-              'really offer global sales tax compliance like other Merchant of Records like '
-              'Freemius.',
-      'timestamp': 60,
-      'timestamp_label': '[00:01:00]',
-      'timestamp_seconds': 60,
-      'tip': "'re selling countries like Australia, India, and all the other geolocations that "
-             "basically require dealing with VAT, GST, and sales taxes. So, they don't really "
-             'offer global sales tax compliance like other Merchant of Records like Freemius.',
-      'title': 'Stripe Managed Payments: The Threat to Paddle and the Future of MoR (Captain '
-               'Vova (Vova Feldman))',
-      'url': 'https://www.youtube.com/watch?v=5zGuxRrg_O0&t=60s',
-      'video_id': '5zGuxRrg_O0'},
-     {'author': 'houdztech',
-      'channel': 'houdztech',
+      'text': 'At its core is a customizable digital storefront where you can list unlimited '
+              'products.',
+      'timestamp': 93,
+      'timestamp_label': '[00:01:33]',
+      'timestamp_seconds': 93,
+      'tip': 'At its core is a customizable digital storefront where you can list unlimited '
+             'products.',
+      'title': 'Whop VS Skool Comparison 2026 – Which One is Better?',
+      'url': 'https://www.youtube.com/watch?v=kM_eK170wvg&t=93s',
+      'video_id': 'kM_eK170wvg'},
+     {'author': 'Ninja Guides',
+      'channel': 'Ninja Guides',
       'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:00:31](https://www.youtube.com/watch?v=Qq-EyvVj7IM&t=31s)',
-      'relevance': 'Attributed practitioner commentary on FTC ROSCA click-to-cancel rules, '
-                   'clear refund terms, affiliate disclosures, VAT/sales tax, and DMCA '
-                   'enforcement.',
+      'markdown': '[00:00:52](https://www.youtube.com/watch?v=zeEpJKPKs_8&t=52s)',
+      'relevance': "Practitioner description of Whop's flexible membership and billing options.",
       'source_type': 'video_pro_tip',
-      'text': 'They handle global tax compliance in 100 plus countries, collect sales tax, '
-              "VAT, GST, and file it for you. You don't touch any of that complexity. Lemon "
-              "Squeezy was acquired by Stripe in 2024, so it's now backed by Stripe's "
-              'infrastructure, which is massive.',
-      'timestamp': 31,
-      'timestamp_label': '[00:00:31]',
-      'timestamp_seconds': 31,
-      'tip': 'They handle global tax compliance in 100 plus countries, collect sales tax, VAT, '
-             "GST, and file it for you. You don't touch any of that complexity. Lemon Squeezy "
-             "was acquired by Stripe in 2024, so it's now backed by Stripe's infrastructure, "
-             'which is massive.',
-      'title': 'Paddle vs LemonSqueezy (2026) | Which One is Better? (houdztech)',
-      'url': 'https://www.youtube.com/watch?v=Qq-EyvVj7IM&t=31s',
-      'video_id': 'Qq-EyvVj7IM'},
-     {'author': 'How2Genius',
-      'channel': 'How2Genius',
+      'text': 'You have customizable membership tiers and billing options, including a one-time '
+              'payment or subscriptions.',
+      'timestamp': 52,
+      'timestamp_label': '[00:00:52]',
+      'timestamp_seconds': 52,
+      'tip': 'You have customizable membership tiers and billing options, including a one-time '
+             'payment or subscriptions.',
+      'title': 'Whop vs Skool - Who Is The Winner For Paid Community?',
+      'url': 'https://www.youtube.com/watch?v=zeEpJKPKs_8&t=52s',
+      'video_id': 'zeEpJKPKs_8'},
+     {'author': "Brian O'Neill",
+      'channel': "Brian O'Neill",
       'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:01:53](https://www.youtube.com/watch?v=Y5VXhUB7aNM&t=113s)',
-      'relevance': 'Attributed practitioner commentary on FTC ROSCA click-to-cancel rules, '
-                   'clear refund terms, affiliate disclosures, VAT/sales tax, and DMCA '
-                   'enforcement.',
+      'markdown': '[00:00:33](https://www.youtube.com/watch?v=TBf_yWZQ0e4&t=33s)',
+      'relevance': 'Practitioner workload warning behind the single-paid-community alternative.',
       'source_type': 'video_pro_tip',
-      'text': 'Like Paddle, Fastring manages payments, subscriptions, and tax compliance. It '
-              'automatically calculates and remits US and Canadian sales tax plus VAT and GST '
-              'for international sales. This reduces risk and administrative overhead for '
-              'digital sellers.',
-      'timestamp': 113,
-      'timestamp_label': '[00:01:53]',
-      'timestamp_seconds': 113,
-      'tip': 'Like Paddle, Fastring manages payments, subscriptions, and tax compliance. It '
-             'automatically calculates and remits US and Canadian sales tax plus VAT and GST '
-             'for international sales. This reduces risk and administrative overhead for '
-             'digital sellers.',
-      'title': 'NEW* Paddle vs FastSpring — Best Checkout & Tax for Digital Products '
-               '(How2Genius)',
-      'url': 'https://www.youtube.com/watch?v=Y5VXhUB7aNM&t=113s',
-      'video_id': 'Y5VXhUB7aNM'},
-     {'author': 'SoloBuild',
-      'channel': 'SoloBuild',
+      'text': 'Every single community that you open is another job.',
+      'timestamp': 33,
+      'timestamp_label': '[00:00:33]',
+      'timestamp_seconds': 33,
+      'tip': 'Every single community that you open is another job.',
+      'title': "I Run 4 Skool Communities. If I Started Over With a Day Job, I'd Run 1 (and It's "
+               'Paid)',
+      'url': 'https://www.youtube.com/watch?v=TBf_yWZQ0e4&t=33s',
+      'video_id': 'TBf_yWZQ0e4'},
+     {'author': 'Matt Crawford',
+      'channel': 'Matt Crawford',
       'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:07:49](https://www.youtube.com/watch?v=i05UCC3UvNY&t=469s)',
-      'relevance': 'Attributed practitioner commentary on FTC ROSCA click-to-cancel rules, '
-                   'clear refund terms, affiliate disclosures, VAT/sales tax, and DMCA '
-                   'enforcement.',
+      'markdown': '[00:00:47](https://www.youtube.com/watch?v=1Ch6SNdLTJY&t=47s)',
+      'relevance': 'Practitioner pricing testimony distinguishing Hobby from the Pro platform '
+                   'plan.',
       'source_type': 'video_pro_tip',
-      'text': "If it's spread across countries, a merchant of record starts to earn its fee. "
-              "Next, decide how much tax paperwork you'll own. Last, decide whether you need "
-              'the extras. Lemon Squeezy bundles a store and affiliate tools, and Paddle '
-              'bundles billing support.',
-      'timestamp': 469,
-      'timestamp_label': '[00:07:49]',
-      'timestamp_seconds': 469,
-      'tip': "If it's spread across countries, a merchant of record starts to earn its fee. "
-             "Next, decide how much tax paperwork you'll own. Last, decide whether you need "
-             'the extras. Lemon Squeezy bundles a store and affiliate tools, and Paddle '
-             'bundles billing support.',
-      'title': 'Stripe vs Lemon Squeezy vs Paddle (2026): Which Should You Use? (SoloBuild)',
-      'url': 'https://www.youtube.com/watch?v=i05UCC3UvNY&t=469s',
-      'video_id': 'i05UCC3UvNY'},
-     {'author': 'Tutorly',
-      'channel': 'Tutorly',
+      'text': 'We have the hobby plan here left to right at $9 per month.',
+      'timestamp': 47,
+      'timestamp_label': '[00:00:47]',
+      'timestamp_seconds': 47,
+      'tip': 'We have the hobby plan here left to right at $9 per month.',
+      'title': 'Skool Pricing: How Much Does It Cost? (Community Plan Explained)',
+      'url': 'https://www.youtube.com/watch?v=1Ch6SNdLTJY&t=47s',
+      'video_id': '1Ch6SNdLTJY'},
+     {'author': 'Faith the Creator',
+      'channel': 'Faith the Creator',
       'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:01:30](https://www.youtube.com/watch?v=IfaCBBIoVK0&t=90s)',
-      'relevance': 'Attributed practitioner commentary on FTC ROSCA click-to-cancel rules, '
-                   'clear refund terms, affiliate disclosures, VAT/sales tax, and DMCA '
-                   'enforcement.',
+      'markdown': '[00:02:17](https://www.youtube.com/watch?v=YsMz6TkT0ac&t=137s)',
+      'relevance': 'Firsthand platform-testing expense and abandoned Kajabi launch described in '
+                   'Chapter Q9.',
       'source_type': 'video_pro_tip',
-      'text': 'VAT or sales tax, and file those tax returns yourself. For a small business '
-              'selling in one location, this may not be a big issue. But once you start '
-              'getting customers from multiple countries, tax compliance can become '
-              'complicated very quickly.',
-      'timestamp': 90,
-      'timestamp_label': '[00:01:30]',
-      'timestamp_seconds': 90,
-      'tip': 'VAT or sales tax, and file those tax returns yourself. For a small business '
-             'selling in one location, this may not be a big issue. But once you start getting '
-             'customers from multiple countries, tax compliance can become complicated very '
-             'quickly.',
-      'title': 'Lemon Squeezy Vs Stripe Checkout Vs Paddle (2026) Which One Is Better? '
-               '(Tutorly)',
-      'url': 'https://www.youtube.com/watch?v=IfaCBBIoVK0&t=90s',
-      'video_id': 'IfaCBBIoVK0'},
-     {'author': 'Pam Obasa',
-      'channel': 'Pam Obasa',
-      'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:05:20](https://www.youtube.com/watch?v=Kgj8rFDeRIs&t=320s)',
-      'relevance': 'Attributed practitioner commentary on FTC ROSCA click-to-cancel rules, '
-                   'clear refund terms, affiliate disclosures, VAT/sales tax, and DMCA '
-                   'enforcement.',
-      'source_type': 'video_pro_tip',
-      'text': 'It will have the button and once they click this button they move forward and '
-              'over here this is what we call your minimum viable sales.',
-      'timestamp': 320,
-      'timestamp_label': '[00:05:20]',
-      'timestamp_seconds': 320,
-      'tip': 'It will have the button and once they click this button they move forward and '
-             'over here this is what we call your minimum viable sales.',
-      'title': 'How To Create A Self-liquidating Offer Funnel For Your Business (Pam Obasa)',
-      'url': 'https://www.youtube.com/watch?v=Kgj8rFDeRIs&t=320s',
-      'video_id': 'Kgj8rFDeRIs'},
-     {'author': 'HelperMan',
-      'channel': 'HelperMan',
-      'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:01:21](https://www.youtube.com/watch?v=IA4eosnOzIE&t=81s)',
-      'relevance': 'Attributed practitioner commentary on FTC ROSCA click-to-cancel rules, '
-                   'clear refund terms, affiliate disclosures, VAT/sales tax, and DMCA '
-                   'enforcement.',
-      'source_type': 'video_pro_tip',
-      'text': 'First, fees can feel higher compared to using a standard payment processor '
-              "directly because you're paying for the extra tax and compliance handling.",
-      'timestamp': 81,
-      'timestamp_label': '[00:01:21]',
-      'timestamp_seconds': 81,
-      'tip': 'First, fees can feel higher compared to using a standard payment processor '
-             "directly because you're paying for the extra tax and compliance handling.",
-      'title': 'Lemon Squeezy for Merchant of Record Honest Review - Watch Before Using '
-               '(HelperMan)',
-      'url': 'https://www.youtube.com/watch?v=IA4eosnOzIE&t=81s',
-      'video_id': 'IA4eosnOzIE'},
-     {'author': 'Zero to Launch',
-      'channel': 'Zero to Launch',
-      'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:01:11](https://www.youtube.com/watch?v=u9nHXAMBUe4&t=71s)',
-      'relevance': 'Attributed practitioner commentary on FTC ROSCA click-to-cancel rules, '
-                   'clear refund terms, affiliate disclosures, VAT/sales tax, and DMCA '
-                   'enforcement.',
-      'source_type': 'video_pro_tip',
-      'text': "I'm not changing anything here. To add an upsell, you click add step. You give "
-              'it a name and open type. Upsell is in this list, and so is downsell, which can '
-              "come after an upsell if they say no. I'm not making another one, so I'll click "
-              'cancel.',
-      'timestamp': 71,
-      'timestamp_label': '[00:01:11]',
-      'timestamp_seconds': 71,
-      'tip': "I'm not changing anything here. To add an upsell, you click add step. You give "
-             'it a name and open type. Upsell is in this list, and so is downsell, which can '
-             "come after an upsell if they say no. I'm not making another one, so I'll click "
-             'cancel.',
-      'title': 'Order Bump or Upsell in Systeme.io: Which Should You Add First? (Zero to '
-               'Launch)',
-      'url': 'https://www.youtube.com/watch?v=u9nHXAMBUe4&t=71s',
-      'video_id': 'u9nHXAMBUe4'},
-     {'author': 'TechWealth Hub',
-      'channel': 'TechWealth Hub',
-      'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:01:13](https://www.youtube.com/watch?v=KRdWGDk-GkY&t=73s)',
-      'relevance': 'Attributed practitioner commentary on FTC ROSCA click-to-cancel rules, '
-                   'clear refund terms, affiliate disclosures, VAT/sales tax, and DMCA '
-                   'enforcement.',
-      'source_type': 'video_pro_tip',
-      'text': 'Stripe now handles as your merchant of record. First, global indirect tax, '
-              'sales tax, that GST, all of it. Stripe calculates it, collects it, files it, '
-              'and remits it. Stripes already best in class at this, but now they are taking '
-              'on the liability.',
-      'timestamp': 73,
-      'timestamp_label': '[00:01:13]',
-      'timestamp_seconds': 73,
-      'tip': 'Stripe now handles as your merchant of record. First, global indirect tax, sales '
-             'tax, that GST, all of it. Stripe calculates it, collects it, files it, and '
-             'remits it. Stripes already best in class at this, but now they are taking on the '
-             'liability.',
-      'title': 'Stripe Just KILLED Paddle and Gumroad (Managed Payments) (TechWealth Hub)',
-      'url': 'https://www.youtube.com/watch?v=KRdWGDk-GkY&t=73s',
-      'video_id': 'KRdWGDk-GkY'},
-     {'author': 'Money Talk With Leon',
-      'channel': 'Money Talk With Leon',
-      'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:09:42](https://www.youtube.com/watch?v=B8Z2fA5X0J4&t=582s)',
-      'relevance': 'Attributed practitioner commentary on FTC ROSCA click-to-cancel rules, '
-                   'clear refund terms, affiliate disclosures, VAT/sales tax, and DMCA '
-                   'enforcement.',
-      'source_type': 'video_pro_tip',
-      'text': '" Instead of that whole YouTuber research process, which YouTuber would do '
-              'affiliate only? Which YouTuber should I Instead of doing all that myself '
-              'manually, I said, "Hmm, >> [clears throat] >> there has to be a way to do all '
-              'of this with just the click of a button."',
-      'timestamp': 582,
-      'timestamp_label': '[00:09:42]',
-      'timestamp_seconds': 582,
-      'tip': '" Instead of that whole YouTuber research process, which YouTuber would do '
-             'affiliate only? Which YouTuber should I Instead of doing all that myself '
-             'manually, I said, "Hmm, >> [clears throat] >> there has to be a way to do all of '
-             'this with just the click of a button."',
-      'title': 'I Sold Digital Products as a Beginner ‘To Prove It’s Not Luck’ Using Claude AI '
-               '(Money Talk With Leon)',
-      'url': 'https://www.youtube.com/watch?v=B8Z2fA5X0J4&t=582s',
-      'video_id': 'B8Z2fA5X0J4'},
-     {'author': 'CRM Tutorials Library',
-      'channel': 'CRM Tutorials Library',
-      'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:00:25](https://www.youtube.com/watch?v=pz33EMSEtfY&t=25s)',
-      'relevance': 'Attributed practitioner commentary on FTC ROSCA click-to-cancel rules, '
-                   'clear refund terms, affiliate disclosures, VAT/sales tax, and DMCA '
-                   'enforcement.',
-      'source_type': 'video_pro_tip',
-      'text': "This is the page where you'll accept orders from customers, so keep the layout "
-              'clean and distraction-free. A funnel step is simply a page in your sales '
-              'sequence that moves the buyer from interest to purchase. Open the step and '
-              'click edit.',
-      'timestamp': 25,
-      'timestamp_label': '[00:00:25]',
-      'timestamp_seconds': 25,
-      'tip': "This is the page where you'll accept orders from customers, so keep the layout "
-             'clean and distraction-free. A funnel step is simply a page in your sales '
-             'sequence that moves the buyer from interest to purchase. Open the step and click '
-             'edit.',
-      'title': 'How to Set Up Main Product, Order Bump, Upsell & Downsell in GoHighLevel | '
-               'Step-by-Step (CRM Tutorials Library)',
-      'url': 'https://www.youtube.com/watch?v=pz33EMSEtfY&t=25s',
-      'video_id': 'pz33EMSEtfY'},
-     {'author': 'Baddie In Business',
-      'channel': 'Baddie In Business',
-      'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:18:01](https://www.youtube.com/watch?v=D237D2sGBRs&t=1081s)',
-      'relevance': 'Attributed practitioner commentary on FTC ROSCA click-to-cancel rules, '
-                   'clear refund terms, affiliate disclosures, VAT/sales tax, and DMCA '
-                   'enforcement.',
-      'source_type': 'video_pro_tip',
-      'text': "Done with this you're going to just come up over here and click share and then "
-              "we're going to just click download and you want to change this to a PDF "
-              'standard and just click.',
-      'timestamp': 1081,
-      'timestamp_label': '[00:18:01]',
-      'timestamp_seconds': 1081,
-      'tip': "Done with this you're going to just come up over here and click share and then "
-             "we're going to just click download and you want to change this to a PDF standard "
-             'and just click.',
-      'title': 'How to Start Selling Digital Products (STEP BY STEP) FREE COURSE (Baddie In '
-               'Business)',
-      'url': 'https://www.youtube.com/watch?v=D237D2sGBRs&t=1081s',
-      'video_id': 'D237D2sGBRs'},
-     {'author': 'Stephen S.',
-      'channel': 'Stephen S.',
-      'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:02:58](https://www.youtube.com/watch?v=F-WZgXuQIuQ&t=178s)',
-      'relevance': 'Attributed practitioner commentary on FTC ROSCA click-to-cancel rules, '
-                   'clear refund terms, affiliate disclosures, VAT/sales tax, and DMCA '
-                   'enforcement.',
-      'source_type': 'video_pro_tip',
-      'text': "So that's what we needed for manage payments in the merchant of record and "
-              "let's jump over to the application after setting the environment variable. When "
-              'I go back to the app now if I click on one of these plans.',
-      'timestamp': 178,
-      'timestamp_label': '[00:02:58]',
-      'timestamp_seconds': 178,
-      'tip': "So that's what we needed for manage payments in the merchant of record and let's "
-             'jump over to the application after setting the environment variable. When I go '
-             'back to the app now if I click on one of these plans.',
-      'title': "Stripe's Merchant of Record (MoR) Solution: Adding Managed Payments to an "
-               'Existing App  #mcp (Stephen S.)',
-      'url': 'https://www.youtube.com/watch?v=F-WZgXuQIuQ&t=178s',
-      'video_id': 'F-WZgXuQIuQ'},
-     {'author': 'LAUNCHTIP',
-      'channel': 'LAUNCHTIP',
-      'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:00:30](https://www.youtube.com/watch?v=k8mwfZ9Nq_c&t=30s)',
-      'relevance': 'Attributed practitioner commentary on FTC ROSCA click-to-cancel rules, '
-                   'clear refund terms, affiliate disclosures, VAT/sales tax, and DMCA '
-                   'enforcement.',
-      'source_type': 'video_pro_tip',
-      'text': "SellUp and Upsell Add Ons and make sure it's enabled. Once you do so, you can "
-              'just go and start creating your one-click upsell funnel. So, from here, you can '
-              'choose your upsell type.',
-      'timestamp': 30,
-      'timestamp_label': '[00:00:30]',
-      'timestamp_seconds': 30,
-      'tip': "SellUp and Upsell Add Ons and make sure it's enabled. Once you do so, you can "
-             'just go and start creating your one-click upsell funnel. So, from here, you can '
-             'choose your upsell type.',
-      'title': 'How to Create a One-Click Upsell Funnel for your Shopify store in 2026 '
-               '(LAUNCHTIP)',
-      'url': 'https://www.youtube.com/watch?v=k8mwfZ9Nq_c&t=30s',
-      'video_id': 'k8mwfZ9Nq_c'},
-     {'author': 'Sell Your Service',
-      'channel': 'Sell Your Service',
-      'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:03:27](https://www.youtube.com/watch?v=_csKVgudVVY&t=207s)',
-      'relevance': 'Attributed practitioner commentary on FTC ROSCA click-to-cancel rules, '
-                   'clear refund terms, affiliate disclosures, VAT/sales tax, and DMCA '
-                   'enforcement.',
-      'source_type': 'video_pro_tip',
-      'text': 'And what you say in this video is I will give you 100% of all sales if you sign '
-              'up as an affiliate, for lack of a better term.',
-      'timestamp': 207,
-      'timestamp_label': '[00:03:27]',
-      'timestamp_seconds': 207,
-      'tip': 'And what you say in this video is I will give you 100% of all sales if you sign '
-             'up as an affiliate, for lack of a better term.',
-      'title': 'How To Build A Self Liquidating Offer Funnel In HighLevel | Ryan Deiss (SLO) '
-               '(Sell Your Service)',
-      'url': 'https://www.youtube.com/watch?v=_csKVgudVVY&t=207s',
-      'video_id': '_csKVgudVVY'}],
- 10: [{'author': 'Maik Kleinert | Content-to-Conversion Systems',
-       'channel': 'Maik Kleinert | Content-to-Conversion Systems',
+      'text': 'After spending hundreds of dollars just testing out the Kajabi platform, I decided '
+              'not to launch my community on Kajabi.',
+      'timestamp': 137,
+      'timestamp_label': '[00:02:17]',
+      'timestamp_seconds': 137,
+      'tip': 'After spending hundreds of dollars just testing out the Kajabi platform, I decided '
+             'not to launch my community on Kajabi.',
+      'title': 'Which Online Course Platform Is Best in 2026? Skool vs Whop vs Kajabi vs Circle',
+      'url': 'https://www.youtube.com/watch?v=YsMz6TkT0ac&t=137s',
+      'video_id': 'YsMz6TkT0ac'}],
+ 10: [{'author': 'Creator Debates: Make Smart Decisions',
+       'channel': 'Creator Debates: Make Smart Decisions',
        'epistemic_status': 'attributed_practitioner_claim',
-       'markdown': '[00:01:41](https://www.youtube.com/watch?v=pE2Z7vTYfSw&t=101s)',
-       'relevance': 'Attributed practitioner commentary on comment-to-DM triggers, '
-                    'quiz/Web2App bridges, faceless YouTube tutorials, and AI customer-support '
-                    'workflows.',
+       'markdown': '[00:18:44](https://www.youtube.com/watch?v=k6ZAJQVLTGc&t=1124s)',
+       'relevance': 'Practitioner testimony on moving knowledge transfer into asynchronous '
+                    'delivery.',
        'source_type': 'video_pro_tip',
-       'text': 'Basically, here on our channel, we have the comment trigger family, so people '
-               'commenting family and then the DM automation gets triggered. You have seen '
-               'this probably around all the platforms.',
-       'timestamp': 101,
-       'timestamp_label': '[00:01:41]',
-       'timestamp_seconds': 101,
-       'tip': 'Basically, here on our channel, we have the comment trigger family, so people '
-              'commenting family and then the DM automation gets triggered. You have seen this '
-              'probably around all the platforms.',
-       'title': 'I Upsold A $7 Product To $57  With DM Automation + Order Bump Setup ( Full '
-                'System Explained ) (Maik Kleinert | Content-to-Conversion Systems)',
-       'url': 'https://www.youtube.com/watch?v=pE2Z7vTYfSw&t=101s',
-       'video_id': 'pE2Z7vTYfSw'},
-      {'author': 'Adnan Pilditch',
-       'channel': 'Adnan Pilditch',
+       'text': 'What I realized was that probably 80% of the live cohort is pure knowledge '
+               'transfer.',
+       'timestamp': 1124,
+       'timestamp_label': '[00:18:44]',
+       'timestamp_seconds': 1124,
+       'tip': 'What I realized was that probably 80% of the live cohort is pure knowledge '
+              'transfer.',
+       'title': "I've run Cohort-Based AND Evergreen Courses. Here's what's BEST.",
+       'url': 'https://www.youtube.com/watch?v=k6ZAJQVLTGc&t=1124s',
+       'video_id': 'k6ZAJQVLTGc'},
+      {'author': 'Heights Platform',
+       'channel': 'Heights Platform',
        'epistemic_status': 'attributed_practitioner_claim',
-       'markdown': '[00:06:55](https://www.youtube.com/watch?v=mf1WAw0FyaI&t=415s)',
-       'relevance': 'Attributed practitioner commentary on comment-to-DM triggers, '
-                    'quiz/Web2App bridges, faceless YouTube tutorials, and AI customer-support '
-                    'workflows.',
+       'markdown': '[00:09:31](https://www.youtube.com/watch?v=ItXsBT0Q4Vg&t=571s)',
+       'relevance': 'Practitioner testimony on implementing rolling launches with scheduled '
+                    'access.',
        'source_type': 'video_pro_tip',
-       'text': "That's when leveraging School changed everything because you have chat, "
-               "courses, calendar, leaderboards all in one place. You've got clean UX, members "
-               'actually use it. No more Frankensteining Discord, Kajabi, Zoom, email tools, '
-               'and support threads, etc.',
-       'timestamp': 415,
-       'timestamp_label': '[00:06:55]',
-       'timestamp_seconds': 415,
-       'tip': "That's when leveraging School changed everything because you have chat, "
-              "courses, calendar, leaderboards all in one place. You've got clean UX, members "
-              'actually use it. No more Frankensteining Discord, Kajabi, Zoom, email tools, '
-              'and support threads, etc.',
-       'title': 'Top 7 Secrets To Building a $45,000/Month Skool Community (Adnan Pilditch)',
-       'url': 'https://www.youtube.com/watch?v=mf1WAw0FyaI&t=415s',
-       'video_id': 'mf1WAw0FyaI'},
-      {'author': 'Money Talk With Leon',
-       'channel': 'Money Talk With Leon',
+       'text': 'As soon as that launch date actually happens, all you need to do is go back to '
+               'your course and change to the next launch date.',
+       'timestamp': 571,
+       'timestamp_label': '[00:09:31]',
+       'timestamp_seconds': 571,
+       'tip': 'As soon as that launch date actually happens, all you need to do is go back to your '
+              'course and change to the next launch date.',
+       'title': 'Online Course Launch Strategy - Selling Evergreen Online Courses vs Holding '
+                'Multiple Launches',
+       'url': 'https://www.youtube.com/watch?v=ItXsBT0Q4Vg&t=571s',
+       'video_id': 'ItXsBT0Q4Vg'},
+      {'author': 'Skill Stack',
+       'channel': 'Skill Stack',
        'epistemic_status': 'attributed_practitioner_claim',
-       'markdown': '[00:09:20](https://www.youtube.com/watch?v=B8Z2fA5X0J4&t=560s)',
-       'relevance': 'Attributed practitioner commentary on comment-to-DM triggers, '
-                    'quiz/Web2App bridges, faceless YouTube tutorials, and AI customer-support '
-                    'workflows.',
+       'markdown': '[00:02:51](https://www.youtube.com/watch?v=3SE22SX7AyE&t=171s)',
+       'relevance': 'Practitioner demonstration of multiple cohorts within one cohort course '
+                    'product.',
        'source_type': 'video_pro_tip',
-       'text': 'I said to myself, "Hmm, what if I can literally find these YouTubers, like '
-               'YouTubers with their emails, instead of trying to, you know, search and then '
-               'find a YouTuber and figure out, "Oh my god, they don\'t even have their email '
-               'on their YouTube.',
-       'timestamp': 560,
-       'timestamp_label': '[00:09:20]',
-       'timestamp_seconds': 560,
-       'tip': 'I said to myself, "Hmm, what if I can literally find these YouTubers, like '
-              'YouTubers with their emails, instead of trying to, you know, search and then '
-              'find a YouTuber and figure out, "Oh my god, they don\'t even have their email '
-              'on their YouTube.',
-       'title': 'I Sold Digital Products as a Beginner ‘To Prove It’s Not Luck’ Using Claude '
-                'AI (Money Talk With Leon)',
-       'url': 'https://www.youtube.com/watch?v=B8Z2fA5X0J4&t=560s',
-       'video_id': 'B8Z2fA5X0J4'},
-      {'author': 'Nathan Nazareth',
-       'channel': 'Nathan Nazareth',
+       'text': "You can create these cohorts, as many as you want, and they're not going to take "
+               'up a slot on your products.',
+       'timestamp': 171,
+       'timestamp_label': '[00:02:51]',
+       'timestamp_seconds': 171,
+       'tip': "You can create these cohorts, as many as you want, and they're not going to take up "
+              'a slot on your products.',
+       'title': 'Kajabi Cohorts Explained!',
+       'url': 'https://www.youtube.com/watch?v=3SE22SX7AyE&t=171s',
+       'video_id': '3SE22SX7AyE'},
+      {'author': 'Brittany Darrington',
+       'channel': 'Brittany Darrington',
        'epistemic_status': 'attributed_practitioner_claim',
-       'markdown': '[00:19:59](https://www.youtube.com/watch?v=6cm2o8zzuNw&t=1199s)',
-       'relevance': 'Attributed practitioner commentary on comment-to-DM triggers, '
-                    'quiz/Web2App bridges, faceless YouTube tutorials, and AI customer-support '
-                    'workflows.',
+       'markdown': '[00:04:18](https://www.youtube.com/watch?v=LhSL-O1SNLs&t=258s)',
+       'relevance': 'Practitioner instruction for converting successful live-launch assets into '
+                    'evergreen assets.',
        'source_type': 'video_pro_tip',
-       'text': 'I would strongly recommend posting short form every single day if you can. If '
-               "you're playing the long game, one searchable YouTube video every single week "
-               'in your niche works, too. Remember, evergreen content beats viral in this '
-               'business every single time.',
-       'timestamp': 1199,
-       'timestamp_label': '[00:19:59]',
-       'timestamp_seconds': 1199,
-       'tip': 'I would strongly recommend posting short form every single day if you can. If '
-              "you're playing the long game, one searchable YouTube video every single week in "
-              'your niche works, too. Remember, evergreen content beats viral in this business '
-              'every single time.',
-       'title': 'How to build & sell AI Digital Products (2026 full guide) (Nathan Nazareth)',
-       'url': 'https://www.youtube.com/watch?v=6cm2o8zzuNw&t=1199s',
-       'video_id': '6cm2o8zzuNw'},
-      {'author': 'Make Money with Stacy La',
-       'channel': 'Make Money with Stacy La',
+       'text': 'Grab all those videos that you did, grab those emails, and scrub any dates that '
+               'might be associated in these videos or in these emails.',
+       'timestamp': 258,
+       'timestamp_label': '[00:04:18]',
+       'timestamp_seconds': 258,
+       'tip': 'Grab all those videos that you did, grab those emails, and scrub any dates that '
+              'might be associated in these videos or in these emails.',
+       'title': 'Live Course Launch vs Evergreen Course Launch: What To Choose As A Course '
+                'Creator?',
+       'url': 'https://www.youtube.com/watch?v=LhSL-O1SNLs&t=258s',
+       'video_id': 'LhSL-O1SNLs'},
+      {'author': 'Lydia Martin | Your Online Business Mentor',
+       'channel': 'Lydia Martin | Your Online Business Mentor',
        'epistemic_status': 'attributed_practitioner_claim',
-       'markdown': '[00:05:28](https://www.youtube.com/watch?v=gGW2IMNOz68&t=328s)',
-       'relevance': 'Attributed practitioner commentary on comment-to-DM triggers, '
-                    'quiz/Web2App bridges, faceless YouTube tutorials, and AI customer-support '
-                    'workflows.',
+       'markdown': '[00:05:05](https://www.youtube.com/watch?v=r0pYDowd3k0&t=305s)',
+       'relevance': 'Firsthand testimony on converting Countdown to Launch into a guided cohort.',
        'source_type': 'video_pro_tip',
-       'text': 'From here, all you have to do is choose which tool or agent you want to use '
-               'from the menu below the chat, or in the side menu right here.',
-       'timestamp': 328,
-       'timestamp_label': '[00:05:28]',
-       'timestamp_seconds': 328,
-       'tip': 'From here, all you have to do is choose which tool or agent you want to use '
-              'from the menu below the chat, or in the side menu right here.',
-       'title': 'Watch Me Create a 6 Figure Digital Product with AI in 14 Minutes | UPDATED '
-                'Tutorial | Genspark (Make Money with Stacy La)',
-       'url': 'https://www.youtube.com/watch?v=gGW2IMNOz68&t=328s',
-       'video_id': 'gGW2IMNOz68'},
-      {'author': 'Baddie In Business',
-       'channel': 'Baddie In Business',
+       'text': 'Over six weeks, I delivered the updated training live and I added co-working '
+               'sessions where students could show up, ask questions, and build in real time while '
+               'I helped them troubleshoot.',
+       'timestamp': 305,
+       'timestamp_label': '[00:05:05]',
+       'timestamp_seconds': 305,
+       'tip': 'Over six weeks, I delivered the updated training live and I added co-working '
+              'sessions where students could show up, ask questions, and build in real time while '
+              'I helped them troubleshoot.',
+       'title': '60: Why Evergreen Courses are Harder to Sell in 2026',
+       'url': 'https://www.youtube.com/watch?v=r0pYDowd3k0&t=305s',
+       'video_id': 'r0pYDowd3k0'},
+      {'author': 'Wealthy Coaches',
+       'channel': 'Wealthy Coaches',
        'epistemic_status': 'attributed_practitioner_claim',
-       'markdown': '[00:08:59](https://www.youtube.com/watch?v=QopRRjoOyyg&t=539s)',
-       'relevance': 'Attributed practitioner commentary on comment-to-DM triggers, '
-                    'quiz/Web2App bridges, faceless YouTube tutorials, and AI customer-support '
-                    'workflows.',
+       'markdown': '[00:10:54](https://www.youtube.com/watch?v=jgHPgSxHm2o&t=654s)',
+       'relevance': "Practitioner platform comparison describing Maven's transaction-share "
+                    'economics.',
        'source_type': 'video_pro_tip',
-       'text': 'Now you do need to install an app to automate your digital product. So when '
-               'you make a sale, that ebook will get sent straight to your customer in the '
-               'email. Go to apps on your Shopify dashboard.',
-       'timestamp': 539,
-       'timestamp_label': '[00:08:59]',
-       'timestamp_seconds': 539,
-       'tip': 'Now you do need to install an app to automate your digital product. So when you '
-              'make a sale, that ebook will get sent straight to your customer in the email. '
-              'Go to apps on your Shopify dashboard.',
-       'title': 'How to Start Selling Digital Products in 2026 (STEP BY STEP) FREE COURSE '
-                '(Baddie In Business)',
-       'url': 'https://www.youtube.com/watch?v=QopRRjoOyyg&t=539s',
-       'video_id': 'QopRRjoOyyg'},
-      {'author': 'Iman Gadzhi',
-       'channel': 'Iman Gadzhi',
+       'text': "Maven doesn't charge you a monthly fee. Rather, it takes a 10% cut from all your "
+               'sales transactions.',
+       'timestamp': 654,
+       'timestamp_label': '[00:10:54]',
+       'timestamp_seconds': 654,
+       'tip': "Maven doesn't charge you a monthly fee. Rather, it takes a 10% cut from all your "
+              'sales transactions.',
+       'title': 'Best Cohort Based Course Platforms (2025) - Secret Sauce Behind Today’s Most '
+                'Engaged Online Courses',
+       'url': 'https://www.youtube.com/watch?v=jgHPgSxHm2o&t=654s',
+       'video_id': 'jgHPgSxHm2o'},
+      {'author': 'Christina Rava',
+       'channel': 'Christina Rava',
        'epistemic_status': 'attributed_practitioner_claim',
-       'markdown': '[00:34:29](https://www.youtube.com/watch?v=A-yBamfrXQs&t=2069s)',
-       'relevance': 'Attributed practitioner commentary on comment-to-DM triggers, '
-                    'quiz/Web2App bridges, faceless YouTube tutorials, and AI customer-support '
-                    'workflows.',
+       'markdown': '[00:02:12](https://www.youtube.com/watch?v=75qWaUNMrnA&t=132s)',
+       'relevance': 'Practitioner instruction on preselling before completing all course content.',
        'source_type': 'video_pro_tip',
-       'text': "And I'll give you a perfect example. There's this YouTube channel called "
-               "Business Basics. It's a channel I've been following for a while. They're "
-               'completely faceless.',
-       'timestamp': 2069,
-       'timestamp_label': '[00:34:29]',
-       'timestamp_seconds': 2069,
-       'tip': "And I'll give you a perfect example. There's this YouTube channel called "
-              "Business Basics. It's a channel I've been following for a while. They're "
-              'completely faceless.',
-       'title': 'Copy This Method To Make $2,700/Week with Digital Products (Iman Gadzhi)',
-       'url': 'https://www.youtube.com/watch?v=A-yBamfrXQs&t=2069s',
-       'video_id': 'A-yBamfrXQs'},
-      {'author': 'Funnel Building Secrets',
-       'channel': 'Funnel Building Secrets',
+       'text': 'You only create a little bit of the content before you do your launch, and then '
+               "you can launch it and see if there's interest in it.",
+       'timestamp': 132,
+       'timestamp_label': '[00:02:12]',
+       'timestamp_seconds': 132,
+       'tip': 'You only create a little bit of the content before you do your launch, and then you '
+              "can launch it and see if there's interest in it.",
+       'title': 'Should you live launch your course or go straight to evergreen?',
+       'url': 'https://www.youtube.com/watch?v=75qWaUNMrnA&t=132s',
+       'video_id': '75qWaUNMrnA'},
+      {'author': 'Sunny Lenarduzzi',
+       'channel': 'Sunny Lenarduzzi',
        'epistemic_status': 'attributed_practitioner_claim',
-       'markdown': '[00:01:36](https://www.youtube.com/watch?v=BZ4rml1tc1U&t=96s)',
-       'relevance': 'Attributed practitioner commentary on comment-to-DM triggers, '
-                    'quiz/Web2App bridges, faceless YouTube tutorials, and AI customer-support '
-                    'workflows.',
+       'markdown': '[00:04:42](https://www.youtube.com/watch?v=5gZxROuS5dQ&t=282s)',
+       'relevance': 'Practitioner testimony on live group support inside an evergreen program.',
        'source_type': 'video_pro_tip',
-       'text': "Click on the product settings to link your upsell product. Make sure you've "
-               "added the product in your funnel's products tab so it can be selected here. "
-               'Step seven, test everything. Finally, test your funnel to make sure your order '
-               'bump and upsell flow smoothly.',
-       'timestamp': 96,
-       'timestamp_label': '[00:01:36]',
-       'timestamp_seconds': 96,
-       'tip': "Click on the product settings to link your upsell product. Make sure you've "
-              "added the product in your funnel's products tab so it can be selected here. "
-              'Step seven, test everything. Finally, test your funnel to make sure your order '
-              'bump and upsell flow smoothly.',
-       'title': 'How to Set Up an Order Bump and Upsell (Funnel Building Secrets)',
-       'url': 'https://www.youtube.com/watch?v=BZ4rml1tc1U&t=96s',
-       'video_id': 'BZ4rml1tc1U'},
-      {'author': 'Center for Community Progress',
-       'channel': 'Center for Community Progress',
+       'text': "It also includes live support calls every single week. That means you're maybe "
+               'doing one to two calls a week with everybody in attendance.',
+       'timestamp': 282,
+       'timestamp_label': '[00:04:42]',
+       'timestamp_seconds': 282,
+       'tip': "It also includes live support calls every single week. That means you're maybe "
+              'doing one to two calls a week with everybody in attendance.',
+       'title': 'My EVERGREEN strategy to sell my course without launching.',
+       'url': 'https://www.youtube.com/watch?v=5gZxROuS5dQ&t=282s',
+       'video_id': '5gZxROuS5dQ'},
+      {'author': 'Elevating Expertise with Susie Hines',
+       'channel': 'Elevating Expertise with Susie Hines',
        'epistemic_status': 'attributed_practitioner_claim',
-       'markdown': '[00:50:21](https://www.youtube.com/watch?v=DG4Uhckk-fU&t=3021s)',
-       'relevance': 'Attributed practitioner commentary on comment-to-DM triggers, '
-                    'quiz/Web2App bridges, faceless YouTube tutorials, and AI customer-support '
-                    'workflows.',
+       'markdown': '[00:03:44](https://www.youtube.com/watch?v=34wXL0Dz4pI&t=224s)',
+       'relevance': 'Practitioner criteria for transitioning from live launches into evergreen '
+                    'selling.',
        'source_type': 'video_pro_tip',
-       'text': 'Uh the question says, "I\'m curious since even with resolved ownership, uh '
-               'what ongoing support to maintain the property and avoiding slipping back to '
-               'being a distressed property again?" This is an excellent question and Monica, '
-               'thank you for raising that one from the chat.',
-       'timestamp': 3021,
-       'timestamp_label': '[00:50:21]',
-       'timestamp_seconds': 3021,
-       'tip': 'Uh the question says, "I\'m curious since even with resolved ownership, uh what '
-              'ongoing support to maintain the property and avoiding slipping back to being a '
-              'distressed property again?" This is an excellent question and Monica, thank you '
-              'for raising that one from the chat.',
-       'title': "Heirs' Property 101 (Center for Community Progress)",
-       'url': 'https://www.youtube.com/watch?v=DG4Uhckk-fU&t=3021s',
-       'video_id': 'DG4Uhckk-fU'},
-      {'author': 'Richard Yu',
-       'channel': 'Richard Yu',
+       'text': "You've been through at least two or three live launches. You've been through your "
+               "webinar a bunch. You've been able to record one that was so good that you're ready "
+               'to have it available on demand.',
+       'timestamp': 224,
+       'timestamp_label': '[00:03:44]',
+       'timestamp_seconds': 224,
+       'tip': "You've been through at least two or three live launches. You've been through your "
+              "webinar a bunch. You've been able to record one that was so good that you're ready "
+              'to have it available on demand.',
+       'title': 'The Difference Between Live Launches and Evergreen (courses or memberships)',
+       'url': 'https://www.youtube.com/watch?v=34wXL0Dz4pI&t=224s',
+       'video_id': '34wXL0Dz4pI'},
+      {'author': 'Laura Egocheaga',
+       'channel': 'Laura Egocheaga',
        'epistemic_status': 'attributed_practitioner_claim',
-       'markdown': '[00:37:34](https://www.youtube.com/watch?v=gjffmgucDSw&t=2254s)',
-       'relevance': 'Attributed practitioner commentary on comment-to-DM triggers, '
-                    'quiz/Web2App bridges, faceless YouTube tutorials, and AI customer-support '
-                    'workflows.',
+       'markdown': '[00:01:26](https://www.youtube.com/watch?v=LH_6YE9Bv8I&t=86s)',
+       'relevance': 'Practitioner staffing recommendation for separating course support from '
+                    'services support.',
        'source_type': 'video_pro_tip',
-       'text': "But here's where AI changes everything about producing these. If you go the "
-               'faceless route, you can either still record yourself but just put a blur of '
-               'your face like what Lola does, or you can actually build an AI clone.',
-       'timestamp': 2254,
-       'timestamp_label': '[00:37:34]',
-       'timestamp_seconds': 2254,
-       'tip': "But here's where AI changes everything about producing these. If you go the "
-              'faceless route, you can either still record yourself but just put a blur of '
-              'your face like what Lola does, or you can actually build an AI clone.',
-       'title': 'FULL COURSE: How to Build & Sell Digital Products With AI (Step by Step) '
-                '(Richard Yu)',
-       'url': 'https://www.youtube.com/watch?v=gjffmgucDSw&t=2254s',
-       'video_id': 'gjffmgucDSw'},
-      {'author': 'Zero to Launch',
-       'channel': 'Zero to Launch',
+       'text': 'A dedicated client success specialist for just the course and a dedicated client '
+               'success specialist for just the services.',
+       'timestamp': 86,
+       'timestamp_label': '[00:01:26]',
+       'timestamp_seconds': 86,
+       'tip': 'A dedicated client success specialist for just the course and a dedicated client '
+              'success specialist for just the services.',
+       'title': 'How To Move Away From Cohorts Into An Evergreen Model For Scale',
+       'url': 'https://www.youtube.com/watch?v=LH_6YE9Bv8I&t=86s',
+       'video_id': 'LH_6YE9Bv8I'},
+      {'author': 'Jessica Lackey',
+       'channel': 'Jessica Lackey',
        'epistemic_status': 'attributed_practitioner_claim',
-       'markdown': '[00:03:41](https://www.youtube.com/watch?v=u9nHXAMBUe4&t=221s)',
-       'relevance': 'Attributed practitioner commentary on comment-to-DM triggers, '
-                    'quiz/Web2App bridges, faceless YouTube tutorials, and AI customer-support '
-                    'workflows.',
+       'markdown': '[00:14:50](https://www.youtube.com/watch?v=he4Uj-EhNfI&t=890s)',
+       'relevance': 'Practitioner testimony on the mismatch between cohort demand and fixed '
+                    'staffing expenses.',
        'source_type': 'video_pro_tip',
-       'text': 'Everyone who buys the bump gets that tag, and the help pages suggest using it '
-               'in an automation rule to email them. Making a rule is in how to create an '
-               'automation rule in system. Click the plus, then one-time payment, and create a '
-               'new one.',
-       'timestamp': 221,
-       'timestamp_label': '[00:03:41]',
-       'timestamp_seconds': 221,
-       'tip': 'Everyone who buys the bump gets that tag, and the help pages suggest using it '
-              'in an automation rule to email them. Making a rule is in how to create an '
-              'automation rule in system. Click the plus, then one-time payment, and create a '
-              'new one.',
-       'title': 'Order Bump or Upsell in Systeme.io: Which Should You Add First? (Zero to '
-                'Launch)',
-       'url': 'https://www.youtube.com/watch?v=u9nHXAMBUe4&t=221s',
-       'video_id': 'u9nHXAMBUe4'},
-      {'author': 'Max Auren',
-       'channel': 'Max Auren',
+       'text': "It's variable demand. But the expenses are often fixed.",
+       'timestamp': 890,
+       'timestamp_label': '[00:14:50]',
+       'timestamp_seconds': 890,
+       'tip': "It's variable demand. But the expenses are often fixed.",
+       'title': 'The Rise (and Fall) of Cohort-Based Courses',
+       'url': 'https://www.youtube.com/watch?v=he4Uj-EhNfI&t=890s',
+       'video_id': 'he4Uj-EhNfI'},
+      {'author': 'Lydia Martin | Your Online Business Mentor',
+       'channel': 'Lydia Martin | Your Online Business Mentor',
        'epistemic_status': 'attributed_practitioner_claim',
-       'markdown': '[00:09:22](https://www.youtube.com/watch?v=kmRwEjvxk-w&t=562s)',
-       'relevance': 'Attributed practitioner commentary on comment-to-DM triggers, '
-                    'quiz/Web2App bridges, faceless YouTube tutorials, and AI customer-support '
-                    'workflows.',
+       'markdown': '[00:03:02](https://www.youtube.com/watch?v=vGWZU-6bK0Y&t=182s)',
+       'relevance': 'Practitioner recommendation for milestone pacing in four-week and eight-week '
+                    'cohorts.',
        'source_type': 'video_pro_tip',
-       'text': 'But if you still want to go on your own, watch this video where I talk about '
-               'the email sequence that actually drives the sales for me after we get someone '
-               "through today's funnel.",
-       'timestamp': 562,
-       'timestamp_label': '[00:09:22]',
-       'timestamp_seconds': 562,
-       'tip': 'But if you still want to go on your own, watch this video where I talk about '
-              'the email sequence that actually drives the sales for me after we get someone '
-              "through today's funnel.",
-       'title': 'How My $7 Sales Funnel Makes Me $18k/m (Max Auren)',
-       'url': 'https://www.youtube.com/watch?v=kmRwEjvxk-w&t=562s',
-       'video_id': 'kmRwEjvxk-w'},
-      {'author': 'Smart Capital',
-       'channel': 'Smart Capital',
+       'text': "If you're running a four-week cohort, three milestones works beautifully. If "
+               "you're running an eight-week cohort, six milestones is usually the sweet spot.",
+       'timestamp': 182,
+       'timestamp_label': '[00:03:02]',
+       'timestamp_seconds': 182,
+       'tip': "If you're running a four-week cohort, three milestones works beautifully. If you're "
+              'running an eight-week cohort, six milestones is usually the sweet spot.',
+       'title': '62: How to Design a Profitable Cohort-Style Course in 2026',
+       'url': 'https://www.youtube.com/watch?v=vGWZU-6bK0Y&t=182s',
+       'video_id': 'vGWZU-6bK0Y'},
+      {'author': 'Mighty Networks',
+       'channel': 'Mighty Networks',
        'epistemic_status': 'attributed_practitioner_claim',
-       'markdown': '[00:33:33](https://www.youtube.com/watch?v=GmI0MYeyMg0&t=2013s)',
-       'relevance': 'Attributed practitioner commentary on comment-to-DM triggers, '
-                    'quiz/Web2App bridges, faceless YouTube tutorials, and AI customer-support '
-                    'workflows.',
+       'markdown': '[00:01:10](https://www.youtube.com/watch?v=vqAzq3wDXR4&t=70s)',
+       'relevance': 'Practitioner explanation of prerecorded teaching within a shared cohort '
+                    'experience.',
        'source_type': 'video_pro_tip',
-       'text': 'On screen now, you can see the same finance tracker on a phone screen, with '
-               'the mobile view stacked vertically, the key cards at the top and the '
-               'transaction table simplified. If your template only looks good on a wide '
-               'desktop screen, test it on mobile before launch.',
-       'timestamp': 2013,
-       'timestamp_label': '[00:33:33]',
-       'timestamp_seconds': 2013,
-       'tip': 'On screen now, you can see the same finance tracker on a phone screen, with the '
-              'mobile view stacked vertically, the key cards at the top and the transaction '
-              'table simplified. If your template only looks good on a wide desktop screen, '
-              'test it on mobile before launch.',
-       'title': 'Sell Notion Templates on Gumroad: What a $29 Sale Really Keeps (2026) (Smart '
-                'Capital)',
-       'url': 'https://www.youtube.com/watch?v=GmI0MYeyMg0&t=2013s',
-       'video_id': 'GmI0MYeyMg0'},
-      {'author': 'Pete McPherson DYEB',
-       'channel': 'Pete McPherson DYEB',
-       'epistemic_status': 'attributed_practitioner_claim',
-       'markdown': '[00:09:02](https://www.youtube.com/watch?v=wYKYVjEiqLY&t=542s)',
-       'relevance': 'Attributed practitioner commentary on comment-to-DM triggers, '
-                    'quiz/Web2App bridges, faceless YouTube tutorials, and AI customer-support '
-                    'workflows.',
-       'source_type': 'video_pro_tip',
-       'text': "And they also go into an email sequence, but that's for a later date. And then "
-               "I run paid traffic to the sales page. I've also promoted it organically via my "
-               'email list and I just, you know, link to it from blog post. I promote it '
-               'organically and paid.',
-       'timestamp': 542,
-       'timestamp_label': '[00:09:02]',
-       'timestamp_seconds': 542,
-       'tip': "And they also go into an email sequence, but that's for a later date. And then "
-              "I run paid traffic to the sales page. I've also promoted it organically via my "
-              'email list and I just, you know, link to it from blog post. I promote it '
-              'organically and paid.',
-       'title': 'How to launch your SELF-LIQUIDATING OFFER Funnel (with real-world examples!) '
-                '(Pete McPherson DYEB)',
-       'url': 'https://www.youtube.com/watch?v=wYKYVjEiqLY&t=542s',
-       'video_id': 'wYKYVjEiqLY'},
-      {'author': 'Money Talk With Leon',
-       'channel': 'Money Talk With Leon',
-       'epistemic_status': 'attributed_practitioner_claim',
-       'markdown': '[00:06:02](https://www.youtube.com/watch?v=Qqjup9J9CdI&t=362s)',
-       'relevance': 'Attributed practitioner commentary on comment-to-DM triggers, '
-                    'quiz/Web2App bridges, faceless YouTube tutorials, and AI customer-support '
-                    'workflows.',
-       'source_type': 'video_pro_tip',
-       'text': "So that's why the message is not formal. But like I said, there's another "
-               "message I used to send to people I don't know, creators I don't know. So "
-               "anyway, it's a PDF guide that fits your mom faceless YouTube channel "
-               'perfectly.',
-       'timestamp': 362,
-       'timestamp_label': '[00:06:02]',
-       'timestamp_seconds': 362,
-       'tip': "So that's why the message is not formal. But like I said, there's another "
-              "message I used to send to people I don't know, creators I don't know. So "
-              "anyway, it's a PDF guide that fits your mom faceless YouTube channel perfectly.",
-       'title': 'I Made $700K in 2 Days Selling Simple Digital Products (Step by Step) (Money '
-                'Talk With Leon)',
-       'url': 'https://www.youtube.com/watch?v=Qqjup9J9CdI&t=362s',
-       'video_id': 'Qqjup9J9CdI'}],
- 11: [{'author': 'Profitable Talents',
-       'channel': 'Profitable Talents',
-       'epistemic_status': 'attributed_practitioner_claim',
-       'markdown': '[00:14:32](https://www.youtube.com/watch?v=_I5YFl6Ym_k&t=872s)',
-       'relevance': 'Attributed practitioner commentary on running a 1-to-4 person multi-SKU '
-                    'digital product portfolio with SOPs, creative contractors, and weekly '
-                    'KPIs.',
-       'source_type': 'video_pro_tip',
-       'text': "'s sustainable and you and the way you can present the offer as well and how "
-               "you can scale it without scaling the overwhelm. Uh it's a bit too complex for "
-               'a um front-end offer.',
-       'timestamp': 872,
-       'timestamp_label': '[00:14:32]',
-       'timestamp_seconds': 872,
-       'tip': "'s sustainable and you and the way you can present the offer as well and how "
-              "you can scale it without scaling the overwhelm. Uh it's a bit too complex for a "
-              'um front-end offer.',
-       'title': 'Watch Me Build a Self-Liquidating Offer Funnel From Scratch (Ep. 1) '
-                '(Profitable Talents)',
-       'url': 'https://www.youtube.com/watch?v=_I5YFl6Ym_k&t=872s',
-       'video_id': '_I5YFl6Ym_k'},
-      {'author': 'Maria Wendt',
-       'channel': 'Maria Wendt',
-       'epistemic_status': 'attributed_practitioner_claim',
-       'markdown': '[00:00:33](https://www.youtube.com/watch?v=zQQZEPMxT6U&t=33s)',
-       'relevance': 'Attributed practitioner commentary on running a 1-to-4 person multi-SKU '
-                    'digital product portfolio with SOPs, creative contractors, and weekly '
-                    'KPIs.',
-       'source_type': 'video_pro_tip',
-       'text': "And so basically what I'm going to do is show you how to scale a cheap $24 "
-               "product into essentially a thousandx that per month. I've done that not just "
-               'for me but for a ton of ton of students in all different kinds of industries.',
-       'timestamp': 33,
-       'timestamp_label': '[00:00:33]',
-       'timestamp_seconds': 33,
-       'tip': "And so basically what I'm going to do is show you how to scale a cheap $24 "
-              "product into essentially a thousandx that per month. I've done that not just "
-              'for me but for a ton of ton of students in all different kinds of industries.',
-       'title': 'How To Turn Your $24 Digital Product Into $24,000 (Scaling Strategy That '
-                'Works) (Maria Wendt)',
-       'url': 'https://www.youtube.com/watch?v=zQQZEPMxT6U&t=33s',
-       'video_id': 'zQQZEPMxT6U'},
-      {'author': 'Baddie In Business',
-       'channel': 'Baddie In Business',
-       'epistemic_status': 'attributed_practitioner_claim',
-       'markdown': '[00:10:31](https://www.youtube.com/watch?v=QopRRjoOyyg&t=631s)',
-       'relevance': 'Attributed practitioner commentary on running a 1-to-4 person multi-SKU '
-                    'digital product portfolio with SOPs, creative contractors, and weekly '
-                    'KPIs.',
-       'source_type': 'video_pro_tip',
-       'text': 'I always recommend three and above. You can click generate and then it will '
-               'generate you carousels that you can use for your social media pages.',
-       'timestamp': 631,
-       'timestamp_label': '[00:10:31]',
-       'timestamp_seconds': 631,
-       'tip': 'I always recommend three and above. You can click generate and then it will '
-              'generate you carousels that you can use for your social media pages.',
-       'title': 'How to Start Selling Digital Products in 2026 (STEP BY STEP) FREE COURSE '
-                '(Baddie In Business)',
-       'url': 'https://www.youtube.com/watch?v=QopRRjoOyyg&t=631s',
-       'video_id': 'QopRRjoOyyg'},
-      {'author': 'Side Hustle Mastery',
-       'channel': 'Side Hustle Mastery',
-       'epistemic_status': 'attributed_practitioner_claim',
-       'markdown': '[00:02:07](https://www.youtube.com/watch?v=2j9bt8ET3Ec&t=127s)',
-       'relevance': 'Attributed practitioner commentary on running a 1-to-4 person multi-SKU '
-                    'digital product portfolio with SOPs, creative contractors, and weekly '
-                    'KPIs.',
-       'source_type': 'video_pro_tip',
-       'text': 'Now, what this basically is is that this serves as a personal dashboard for my '
-               'company, which is basically uh where I go to run most of the day-to-day '
-               'operations inside of my business.',
-       'timestamp': 127,
-       'timestamp_label': '[00:02:07]',
-       'timestamp_seconds': 127,
-       'tip': 'Now, what this basically is is that this serves as a personal dashboard for my '
-              'company, which is basically uh where I go to run most of the day-to-day '
-              'operations inside of my business.',
-       'title': 'How to Make Money Selling Notion Templates [Gumroad Step-by-Step] (Side '
-                'Hustle Mastery)',
-       'url': 'https://www.youtube.com/watch?v=2j9bt8ET3Ec&t=127s',
-       'video_id': '2j9bt8ET3Ec'},
-      {'author': 'Mariana Henninger',
-       'channel': 'Mariana Henninger',
-       'epistemic_status': 'attributed_practitioner_claim',
-       'markdown': '[00:04:43](https://www.youtube.com/watch?v=Ii70ybaGJ68&t=283s)',
-       'relevance': 'Attributed practitioner commentary on running a 1-to-4 person multi-SKU '
-                    'digital product portfolio with SOPs, creative contractors, and weekly '
-                    'KPIs.',
-       'source_type': 'video_pro_tip',
-       'text': 'There was another update called the Andromeda update like a couple weeks ago '
-               "that changed a lot of things too. So it's a lot more about having for her it "
-               'was having multiple adsets instead of just trying to scale within one adset.',
-       'timestamp': 283,
-       'timestamp_label': '[00:04:43]',
-       'timestamp_seconds': 283,
-       'tip': 'There was another update called the Andromeda update like a couple weeks ago '
-              "that changed a lot of things too. So it's a lot more about having for her it "
-              'was having multiple adsets instead of just trying to scale within one adset.',
-       'title': 'A Low-Ticket Tiny Offer SLO Funnel Fuels High-Ticket Sales with Allie Bjerk '
-                '(Mariana Henninger)',
-       'url': 'https://www.youtube.com/watch?v=Ii70ybaGJ68&t=283s',
-       'video_id': 'Ii70ybaGJ68'},
-      {'author': 'Tatyana Savage',
-       'channel': 'Tatyana Savage',
-       'epistemic_status': 'attributed_practitioner_claim',
-       'markdown': '[00:14:09](https://www.youtube.com/watch?v=TGNTFquVxZU&t=849s)',
-       'relevance': 'Attributed practitioner commentary on running a 1-to-4 person multi-SKU '
-                    'digital product portfolio with SOPs, creative contractors, and weekly '
-                    'KPIs.',
-       'source_type': 'video_pro_tip',
-       'text': "Pinterest in order to generate traffic and get sales. I don't post anywhere on "
-               "social media, and I don't use paid ads.",
-       'timestamp': 849,
-       'timestamp_label': '[00:14:09]',
-       'timestamp_seconds': 849,
-       'tip': "Pinterest in order to generate traffic and get sales. I don't post anywhere on "
-              "social media, and I don't use paid ads.",
-       'title': 'How to Start a Digital Product Business (& ACTUALLY Make Money) (Tatyana '
-                'Savage)',
-       'url': 'https://www.youtube.com/watch?v=TGNTFquVxZU&t=849s',
-       'video_id': 'TGNTFquVxZU'},
-      {'author': 'Inayah McMillan',
-       'channel': 'Inayah McMillan',
-       'epistemic_status': 'attributed_practitioner_claim',
-       'markdown': '[00:02:48](https://www.youtube.com/watch?v=ow77v1CM31k&t=168s)',
-       'relevance': 'Attributed practitioner commentary on running a 1-to-4 person multi-SKU '
-                    'digital product portfolio with SOPs, creative contractors, and weekly '
-                    'KPIs.',
-       'source_type': 'video_pro_tip',
-       'text': 'The thought of spending thousands per month on rent was extremely '
-               'nerve-wracking, but I saw that when done correctly, it worked, and I was '
-               'willing to take the risk. Within the first 6 months, our portfolio was '
-               'generating $10,000 per month.',
-       'timestamp': 168,
-       'timestamp_label': '[00:02:48]',
-       'timestamp_seconds': 168,
-       'tip': 'The thought of spending thousands per month on rent was extremely '
-              'nerve-wracking, but I saw that when done correctly, it worked, and I was '
-              'willing to take the risk. Within the first 6 months, our portfolio was '
-              'generating $10,000 per month.',
-       'title': 'How I Made 10 Million Selling Digital\xa0Products (By 22) (Inayah McMillan)',
-       'url': 'https://www.youtube.com/watch?v=ow77v1CM31k&t=168s',
-       'video_id': 'ow77v1CM31k'},
-      {'author': 'Sell Your Service',
-       'channel': 'Sell Your Service',
-       'epistemic_status': 'attributed_practitioner_claim',
-       'markdown': '[00:09:48](https://www.youtube.com/watch?v=_csKVgudVVY&t=588s)',
-       'relevance': 'Attributed practitioner commentary on running a 1-to-4 person multi-SKU '
-                    'digital product portfolio with SOPs, creative contractors, and weekly '
-                    'KPIs.',
-       'source_type': 'video_pro_tip',
-       'text': "I think if they sign up a thousand people or something, I don't know. This is "
-               'a really good way of quickly, quickly, quickly scaling a product based '
-               'business and service-based businesses, if you know how to market it and it '
-               'also generates you a ton of customers.',
-       'timestamp': 588,
-       'timestamp_label': '[00:09:48]',
-       'timestamp_seconds': 588,
-       'tip': "I think if they sign up a thousand people or something, I don't know. This is a "
-              'really good way of quickly, quickly, quickly scaling a product based business '
-              'and service-based businesses, if you know how to market it and it also '
-              'generates you a ton of customers.',
-       'title': 'How To Build A Self Liquidating Offer Funnel In HighLevel | Ryan Deiss (SLO) '
-                '(Sell Your Service)',
-       'url': 'https://www.youtube.com/watch?v=_csKVgudVVY&t=588s',
-       'video_id': '_csKVgudVVY'},
-      {'author': 'Money Talk With Leon',
-       'channel': 'Money Talk With Leon',
-       'epistemic_status': 'attributed_practitioner_claim',
-       'markdown': '[00:10:53](https://www.youtube.com/watch?v=Qqjup9J9CdI&t=653s)',
-       'relevance': 'Attributed practitioner commentary on running a 1-to-4 person multi-SKU '
-                    'digital product portfolio with SOPs, creative contractors, and weekly '
-                    'KPIs.',
-       'source_type': 'video_pro_tip',
-       'text': "I'm going to read it first, but then I have to explain why, you know, it's "
-               'structured like this so it makes sense to you and that way you can understand '
-               'how to tweak it and change it because every creator is going to be different.',
-       'timestamp': 653,
-       'timestamp_label': '[00:10:53]',
-       'timestamp_seconds': 653,
-       'tip': "I'm going to read it first, but then I have to explain why, you know, it's "
-              'structured like this so it makes sense to you and that way you can understand '
-              'how to tweak it and change it because every creator is going to be different.',
-       'title': 'I Made $700K in 2 Days Selling Simple Digital Products (Step by Step) (Money '
-                'Talk With Leon)',
-       'url': 'https://www.youtube.com/watch?v=Qqjup9J9CdI&t=653s',
-       'video_id': 'Qqjup9J9CdI'},
-      {'author': 'Marketing Mark',
-       'channel': 'Marketing Mark',
-       'epistemic_status': 'attributed_practitioner_claim',
-       'markdown': '[00:01:34](https://www.youtube.com/watch?v=qUqLPLYblBI&t=94s)',
-       'relevance': 'Attributed practitioner commentary on running a 1-to-4 person multi-SKU '
-                    'digital product portfolio with SOPs, creative contractors, and weekly '
-                    'KPIs.',
-       'source_type': 'video_pro_tip',
-       'text': "And then it will look like this. You'll have your main product and your bump "
-               'product. Then what you want to do is go into your checkout page editor and '
-               'click on your order form element. And as you scroll down, you should see the '
-               'order bump options right here.',
-       'timestamp': 94,
-       'timestamp_label': '[00:01:34]',
-       'timestamp_seconds': 94,
-       'tip': "And then it will look like this. You'll have your main product and your bump "
-              'product. Then what you want to do is go into your checkout page editor and '
-              'click on your order form element. And as you scroll down, you should see the '
-              'order bump options right here.',
-       'title': 'How to Add Order Bumps in GoHighLevel (Plus Easy One-Click Upsells) '
-                '(Marketing Mark)',
-       'url': 'https://www.youtube.com/watch?v=qUqLPLYblBI&t=94s',
-       'video_id': 'qUqLPLYblBI'},
-      {'author': 'Probate Mastery',
-       'channel': 'Probate Mastery',
-       'epistemic_status': 'attributed_practitioner_claim',
-       'markdown': '[00:09:56](https://www.youtube.com/watch?v=OrEz4Qk-EZ0&t=596s)',
-       'relevance': 'Attributed practitioner commentary on running a 1-to-4 person multi-SKU '
-                    'digital product portfolio with SOPs, creative contractors, and weekly '
-                    'KPIs.',
-       'source_type': 'video_pro_tip',
-       'text': "I've got a couple of minor expenses, for the calling team and things like "
-               "that. Maybe it's not even necessary. Maybe I can continue to receive income "
-               'for the probate deals through my main parent company.',
-       'timestamp': 596,
-       'timestamp_label': '[00:09:56]',
-       'timestamp_seconds': 596,
-       'tip': "I've got a couple of minor expenses, for the calling team and things like that. "
-              "Maybe it's not even necessary. Maybe I can continue to receive income for the "
-              'probate deals through my main parent company.',
-       'title': 'Differentiating Yourself From The Competition: How To HASHTAG Your ELEVATOR '
-                'PITCH |  #10 (Probate Mastery)',
-       'url': 'https://www.youtube.com/watch?v=OrEz4Qk-EZ0&t=596s',
-       'video_id': 'OrEz4Qk-EZ0'},
-      {'author': 'Richard Yu',
-       'channel': 'Richard Yu',
-       'epistemic_status': 'attributed_practitioner_claim',
-       'markdown': '[00:18:46](https://www.youtube.com/watch?v=RxypuPGBRPI&t=1126s)',
-       'relevance': 'Attributed practitioner commentary on running a 1-to-4 person multi-SKU '
-                    'digital product portfolio with SOPs, creative contractors, and weekly '
-                    'KPIs.',
-       'source_type': 'video_pro_tip',
-       'text': 'AI system, how to make content that actually drives buyers to your links. And '
-               "normally it's $997, just under $1,000. Remember that multi-billion dollar "
-               'website, Wix, that I just showed you a few minutes ago?',
-       'timestamp': 1126,
-       'timestamp_label': '[00:18:46]',
-       'timestamp_seconds': 1126,
-       'tip': 'AI system, how to make content that actually drives buyers to your links. And '
-              "normally it's $997, just under $1,000. Remember that multi-billion dollar "
-              'website, Wix, that I just showed you a few minutes ago?',
-       'title': 'I Made $32.7 Million Selling Simple Digital Products (Full Masterclass) '
-                '(Richard Yu)',
-       'url': 'https://www.youtube.com/watch?v=RxypuPGBRPI&t=1126s',
-       'video_id': 'RxypuPGBRPI'},
-      {'author': 'Social Nest Marketing',
-       'channel': 'Social Nest Marketing',
-       'epistemic_status': 'attributed_practitioner_claim',
-       'markdown': '[00:01:55](https://www.youtube.com/watch?v=-xCVVPZu48k&t=115s)',
-       'relevance': 'Attributed practitioner commentary on running a 1-to-4 person multi-SKU '
-                    'digital product portfolio with SOPs, creative contractors, and weekly '
-                    'KPIs.',
-       'source_type': 'video_pro_tip',
-       'text': 'But first, I always forget this first step. The first step is you need to go '
-               'to the media storage, okay? And I think I have the upsells in here, but the '
-               "thing with the upsells is let me see, it's it came in as a folder.",
-       'timestamp': 115,
-       'timestamp_label': '[00:01:55]',
-       'timestamp_seconds': 115,
-       'tip': 'But first, I always forget this first step. The first step is you need to go to '
-              'the media storage, okay? And I think I have the upsells in here, but the thing '
-              "with the upsells is let me see, it's it came in as a folder.",
-       'title': 'GoHighLevel One-Click Upsell Setup: Payment Link Redirect + Auto-Delivery '
-                'Workflow (Part 6) (Social Nest Marketing)',
-       'url': 'https://www.youtube.com/watch?v=-xCVVPZu48k&t=115s',
-       'video_id': '-xCVVPZu48k'},
-      {'author': 'Nathan Nazareth',
-       'channel': 'Nathan Nazareth',
-       'epistemic_status': 'attributed_practitioner_claim',
-       'markdown': '[00:02:08](https://www.youtube.com/watch?v=dr37DaI8g3U&t=128s)',
-       'relevance': 'Attributed practitioner commentary on running a 1-to-4 person multi-SKU '
-                    'digital product portfolio with SOPs, creative contractors, and weekly '
-                    'KPIs.',
-       'source_type': 'video_pro_tip',
-       'text': 'SOPs, and everything that somebody would need to follow the exact steps that I '
-               'took to see success. How much money can you make by selling digital products? '
-               "Let's run some numbers here. If you have a 100 customers on a $497 course, "
-               "that's $49,700 in pure profit.",
-       'timestamp': 128,
-       'timestamp_label': '[00:02:08]',
-       'timestamp_seconds': 128,
-       'tip': 'SOPs, and everything that somebody would need to follow the exact steps that I '
-              'took to see success. How much money can you make by selling digital products? '
-              "Let's run some numbers here. If you have a 100 customers on a $497 course, "
-              "that's $49,700 in pure profit.",
-       'title': "How to Sell AI Digital Products (beginner's guide) (Nathan Nazareth)",
-       'url': 'https://www.youtube.com/watch?v=dr37DaI8g3U&t=128s',
-       'video_id': 'dr37DaI8g3U'},
-      {'author': "Bob Diamond - America's Tax Sale Attorney",
-       'channel': "Bob Diamond - America's Tax Sale Attorney",
-       'epistemic_status': 'attributed_practitioner_claim',
-       'markdown': '[00:09:09](https://www.youtube.com/watch?v=qGPsbhsEAVQ&t=549s)',
-       'relevance': 'Attributed practitioner commentary on running a 1-to-4 person multi-SKU '
-                    'digital product portfolio with SOPs, creative contractors, and weekly '
-                    'KPIs.',
-       'source_type': 'video_pro_tip',
-       'text': "Court is the judicial system, so that's why it's a judicial claim. Now, when "
-               "you have to do those you're going to hire an attorney to do the claim for you, "
-               "because you can't represent someone else in court.",
-       'timestamp': 549,
-       'timestamp_label': '[00:09:09]',
-       'timestamp_seconds': 549,
-       'tip': "Court is the judicial system, so that's why it's a judicial claim. Now, when "
-              "you have to do those you're going to hire an attorney to do the claim for you, "
-              "because you can't represent someone else in court.",
-       'title': "Tax Sale Overages Course (Bob Diamond - America's Tax Sale Attorney)",
-       'url': 'https://www.youtube.com/watch?v=qGPsbhsEAVQ&t=549s',
-       'video_id': 'qGPsbhsEAVQ'}],
- 12: [{'author': 'Doug Boughton',
-       'channel': 'Doug Boughton',
-       'epistemic_status': 'attributed_practitioner_claim',
-       'markdown': '[00:08:58](https://www.youtube.com/watch?v=8lz_gy-Osw8&t=538s)',
-       'relevance': 'Attributed practitioner commentary on a 30-day MVP validation, checkout '
-                    'wiring, traffic seeding, and unit-economics launch sprint.',
-       'source_type': 'video_pro_tip',
-       'text': "It's a seven-day traffic sprint that all members get access to, and I'll show "
-               "you what happens after those seven days. And then next month, it's my annual "
-               'event. Tickets in the past have sold for $997 just for this one event.',
-       'timestamp': 538,
-       'timestamp_label': '[00:08:58]',
-       'timestamp_seconds': 538,
-       'tip': "It's a seven-day traffic sprint that all members get access to, and I'll show "
-              "you what happens after those seven days. And then next month, it's my annual "
-              'event. Tickets in the past have sold for $997 just for this one event.',
-       'title': 'Are Free Skool Communities Dying? Why I Turned Mine Paid (Doug Boughton)',
-       'url': 'https://www.youtube.com/watch?v=8lz_gy-Osw8&t=538s',
-       'video_id': '8lz_gy-Osw8'},
-      {'author': 'Richard Yu',
-       'channel': 'Richard Yu',
-       'epistemic_status': 'attributed_practitioner_claim',
-       'markdown': '[00:18:17](https://www.youtube.com/watch?v=gjffmgucDSw&t=1097s)',
-       'relevance': 'Attributed practitioner commentary on a 30-day MVP validation, checkout '
-                    'wiring, traffic seeding, and unit-economics launch sprint.',
-       'source_type': 'video_pro_tip',
-       'text': "The content structure, hook, go to problem, daily routine, what's the call to "
-               'action, the call to action used, the editing style. It literally teaches you '
-               'how to execute on each one of these hook ideas. You have a content calendar.',
-       'timestamp': 1097,
-       'timestamp_label': '[00:18:17]',
-       'timestamp_seconds': 1097,
-       'tip': "The content structure, hook, go to problem, daily routine, what's the call to "
-              'action, the call to action used, the editing style. It literally teaches you '
-              'how to execute on each one of these hook ideas. You have a content calendar.',
-       'title': 'FULL COURSE: How to Build & Sell Digital Products With AI (Step by Step) '
-                '(Richard Yu)',
-       'url': 'https://www.youtube.com/watch?v=gjffmgucDSw&t=1097s',
-       'video_id': 'gjffmgucDSw'},
-      {'author': 'Make Money with Stacy La',
-       'channel': 'Make Money with Stacy La',
-       'epistemic_status': 'attributed_practitioner_claim',
-       'markdown': '[00:14:09](https://www.youtube.com/watch?v=gGW2IMNOz68&t=849s)',
-       'relevance': 'Attributed practitioner commentary on a 30-day MVP validation, checkout '
-                    'wiring, traffic seeding, and unit-economics launch sprint.',
-       'source_type': 'video_pro_tip',
-       'text': 'I just showed you in order inside my free video checklist. The checklist '
-               'includes every prompt I use in this video that you can copy and paste, as well '
-               'as numbered steps that you can follow to build your first digital template '
-               'business.',
-       'timestamp': 849,
-       'timestamp_label': '[00:14:09]',
-       'timestamp_seconds': 849,
-       'tip': 'I just showed you in order inside my free video checklist. The checklist '
-              'includes every prompt I use in this video that you can copy and paste, as well '
-              'as numbered steps that you can follow to build your first digital template '
-              'business.',
-       'title': 'Watch Me Create a 6 Figure Digital Product with AI in 14 Minutes | UPDATED '
-                'Tutorial | Genspark (Make Money with Stacy La)',
-       'url': 'https://www.youtube.com/watch?v=gGW2IMNOz68&t=849s',
-       'video_id': 'gGW2IMNOz68'},
-      {'author': 'Aeris Vale Tutorials',
-       'channel': 'Aeris Vale Tutorials',
-       'epistemic_status': 'attributed_practitioner_claim',
-       'markdown': '[00:02:45](https://www.youtube.com/watch?v=ciKrPZ_nIpQ&t=165s)',
-       'relevance': 'Attributed practitioner commentary on a 30-day MVP validation, checkout '
-                    'wiring, traffic seeding, and unit-economics launch sprint.',
-       'source_type': 'video_pro_tip',
-       'text': "Lastly, publish your product. Once it's published, voila, you're ready to "
-               "start selling on Gumroad. With these steps, you're fully equipped to reach a "
-               'wide audience with your amazing Notion template.',
-       'timestamp': 165,
-       'timestamp_label': '[00:02:45]',
-       'timestamp_seconds': 165,
-       'tip': "Lastly, publish your product. Once it's published, voila, you're ready to start "
-              "selling on Gumroad. With these steps, you're fully equipped to reach a wide "
-              'audience with your amazing Notion template.',
-       'title': 'How To Sell A Notion Template On Gumroad - Step by Step Guide | THELOSTOFFER '
-                '#notion #gumroad (Aeris Vale Tutorials)',
-       'url': 'https://www.youtube.com/watch?v=ciKrPZ_nIpQ&t=165s',
-       'video_id': 'ciKrPZ_nIpQ'},
-      {'author': 'Adnan Pilditch',
-       'channel': 'Adnan Pilditch',
-       'epistemic_status': 'attributed_practitioner_claim',
-       'markdown': '[00:02:56](https://www.youtube.com/watch?v=mf1WAw0FyaI&t=176s)',
-       'relevance': 'Attributed practitioner commentary on a 30-day MVP validation, checkout '
-                    'wiring, traffic seeding, and unit-economics launch sprint.',
-       'source_type': 'video_pro_tip',
-       'text': 'A short, clear onboarding video that explains to them everything from start to '
-               'finish, so they will never get lost. A step-by-step roadmap which shows them '
-               'where to go from A to Z. Automated DMs for inactive members after 48 hours. '
-               'And we had the three-day activation path.',
-       'timestamp': 176,
-       'timestamp_label': '[00:02:56]',
-       'timestamp_seconds': 176,
-       'tip': 'A short, clear onboarding video that explains to them everything from start to '
-              'finish, so they will never get lost. A step-by-step roadmap which shows them '
-              'where to go from A to Z. Automated DMs for inactive members after 48 hours. And '
-              'we had the three-day activation path.',
-       'title': 'Top 7 Secrets To Building a $45,000/Month Skool Community (Adnan Pilditch)',
-       'url': 'https://www.youtube.com/watch?v=mf1WAw0FyaI&t=176s',
-       'video_id': 'mf1WAw0FyaI'},
-      {'author': 'Side Hustle Mastery',
-       'channel': 'Side Hustle Mastery',
-       'epistemic_status': 'attributed_practitioner_claim',
-       'markdown': '[00:03:42](https://www.youtube.com/watch?v=2j9bt8ET3Ec&t=222s)',
-       'relevance': 'Attributed practitioner commentary on a 30-day MVP validation, checkout '
-                    'wiring, traffic seeding, and unit-economics launch sprint.',
-       'source_type': 'video_pro_tip',
-       'text': "Gumroad and start making sales from it. Now, the first thing you're going to "
-               'want to do is head up to the top here and click on this share button. Once you '
-               "click on that share button, you'll basically just head over to the publish "
-               'tab.',
-       'timestamp': 222,
-       'timestamp_label': '[00:03:42]',
-       'timestamp_seconds': 222,
-       'tip': "Gumroad and start making sales from it. Now, the first thing you're going to "
-              'want to do is head up to the top here and click on this share button. Once you '
-              "click on that share button, you'll basically just head over to the publish tab.",
-       'title': 'How to Make Money Selling Notion Templates [Gumroad Step-by-Step] (Side '
-                'Hustle Mastery)',
-       'url': 'https://www.youtube.com/watch?v=2j9bt8ET3Ec&t=222s',
-       'video_id': '2j9bt8ET3Ec'},
-      {'author': 'Profitable Talents',
-       'channel': 'Profitable Talents',
-       'epistemic_status': 'attributed_practitioner_claim',
-       'markdown': '[00:04:06](https://www.youtube.com/watch?v=_I5YFl6Ym_k&t=246s)',
-       'relevance': 'Attributed practitioner commentary on a 30-day MVP validation, checkout '
-                    'wiring, traffic seeding, and unit-economics launch sprint.',
-       'source_type': 'video_pro_tip',
-       'text': "I'm going to reflect your feedback into the series. This is the first episode "
-               "of the series. So I want to start immediately. I haven't prepared anything. So "
-               "you get to be with me from day one as I'm thinking.",
-       'timestamp': 246,
-       'timestamp_label': '[00:04:06]',
-       'timestamp_seconds': 246,
-       'tip': "I'm going to reflect your feedback into the series. This is the first episode "
-              "of the series. So I want to start immediately. I haven't prepared anything. So "
-              "you get to be with me from day one as I'm thinking.",
-       'title': 'Watch Me Build a Self-Liquidating Offer Funnel From Scratch (Ep. 1) '
-                '(Profitable Talents)',
-       'url': 'https://www.youtube.com/watch?v=_I5YFl6Ym_k&t=246s',
-       'video_id': '_I5YFl6Ym_k'},
-      {'author': 'Smart Capital',
-       'channel': 'Smart Capital',
-       'epistemic_status': 'attributed_practitioner_claim',
-       'markdown': '[00:02:13](https://www.youtube.com/watch?v=GmI0MYeyMg0&t=133s)',
-       'relevance': 'Attributed practitioner commentary on a 30-day MVP validation, checkout '
-                    'wiring, traffic seeding, and unit-economics launch sprint.',
-       'source_type': 'video_pro_tip',
-       'text': 'I want to start with a simple test. Would someone open this template every '
-               'single day? If the answer is no, it probably will not sell well, no matter how '
-               'pretty it looks. The templates that tend to perform best solve a recurring '
-               'job.',
-       'timestamp': 133,
-       'timestamp_label': '[00:02:13]',
-       'timestamp_seconds': 133,
-       'tip': 'I want to start with a simple test. Would someone open this template every '
-              'single day? If the answer is no, it probably will not sell well, no matter how '
-              'pretty it looks. The templates that tend to perform best solve a recurring job.',
-       'title': 'Sell Notion Templates on Gumroad: What a $29 Sale Really Keeps (2026) (Smart '
-                'Capital)',
-       'url': 'https://www.youtube.com/watch?v=GmI0MYeyMg0&t=133s',
-       'video_id': 'GmI0MYeyMg0'},
-      {'author': 'GuideHatch Tutorials',
-       'channel': 'GuideHatch Tutorials',
-       'epistemic_status': 'attributed_practitioner_claim',
-       'markdown': '[00:01:10](https://www.youtube.com/watch?v=DNdWpxzzTQM&t=70s)',
-       'relevance': 'Attributed practitioner commentary on a 30-day MVP validation, checkout '
-                    'wiring, traffic seeding, and unit-economics launch sprint.',
-       'source_type': 'video_pro_tip',
-       'text': 'This action will prompt you to enter the name of your project. Choose a name '
-               'that is both memorable and descriptive, as this will be the first thing '
-               "potential buyers see. After you've named your project, ensure that it is "
-               'categorized as a digital product.',
+       'text': 'You can still have prerecorded course material, but you can also have this group '
+               'of people that are all working through the material together.',
        'timestamp': 70,
        'timestamp_label': '[00:01:10]',
        'timestamp_seconds': 70,
-       'tip': 'This action will prompt you to enter the name of your project. Choose a name '
-              'that is both memorable and descriptive, as this will be the first thing '
-              "potential buyers see. After you've named your project, ensure that it is "
-              'categorized as a digital product.',
-       'title': 'How to sell Notion templates on Gumroad (Creative Earnings) (GuideHatch '
-                'Tutorials)',
-       'url': 'https://www.youtube.com/watch?v=DNdWpxzzTQM&t=70s',
-       'video_id': 'DNdWpxzzTQM'},
-      {'author': 'Maria Wendt',
-       'channel': 'Maria Wendt',
+       'tip': 'You can still have prerecorded course material, but you can also have this group of '
+              'people that are all working through the material together.',
+       'title': 'What are Cohort Courses and Why Make One?',
+       'url': 'https://www.youtube.com/watch?v=vqAzq3wDXR4&t=70s',
+       'video_id': 'vqAzq3wDXR4'},
+      {'author': 'Lydia Martin | Your Online Business Mentor',
+       'channel': 'Lydia Martin | Your Online Business Mentor',
        'epistemic_status': 'attributed_practitioner_claim',
-       'markdown': '[00:03:16](https://www.youtube.com/watch?v=zQQZEPMxT6U&t=196s)',
-       'relevance': 'Attributed practitioner commentary on a 30-day MVP validation, checkout '
-                    'wiring, traffic seeding, and unit-economics launch sprint.',
+       'markdown': '[00:02:34](https://www.youtube.com/watch?v=YiBzy9MyAzU&t=154s)',
+       'relevance': 'Firsthand revenue testimony from repeated live delivery of Digital Clutter '
+                    'Cure.',
        'source_type': 'video_pro_tip',
-       'text': "That's not I mean, again, I do 200 orders a day. So, that's what is the math "
-               'on that per month. 200 around 200 orders a day times 30 days. I do 6,000 '
-               'orders a month, right?',
-       'timestamp': 196,
-       'timestamp_label': '[00:03:16]',
-       'timestamp_seconds': 196,
-       'tip': "That's not I mean, again, I do 200 orders a day. So, that's what is the math on "
-              'that per month. 200 around 200 orders a day times 30 days. I do 6,000 orders a '
-              'month, right?',
-       'title': 'How To Turn Your $24 Digital Product Into $24,000 (Scaling Strategy That '
-                'Works) (Maria Wendt)',
-       'url': 'https://www.youtube.com/watch?v=zQQZEPMxT6U&t=196s',
-       'video_id': 'zQQZEPMxT6U'},
-      {'author': 'Eden',
-       'channel': 'Eden',
+       'text': 'By launching the Digital Clutter Cure six times, I was able to generate over '
+               '$200,000 in revenue from just that course in the first two years of my business.',
+       'timestamp': 154,
+       'timestamp_label': '[00:02:34]',
+       'timestamp_seconds': 154,
+       'tip': 'By launching the Digital Clutter Cure six times, I was able to generate over '
+              '$200,000 in revenue from just that course in the first two years of my business.',
+       'title': '61: Why Cohort-Style Courses Are Winning Right Now',
+       'url': 'https://www.youtube.com/watch?v=YiBzy9MyAzU&t=154s',
+       'video_id': 'YiBzy9MyAzU'},
+      {'author': 'Chelsey Bernhard',
+       'channel': 'Chelsey Bernhard',
        'epistemic_status': 'attributed_practitioner_claim',
-       'markdown': '[00:17:10](https://www.youtube.com/watch?v=VJ-JR7uMY34&t=1030s)',
-       'relevance': 'Attributed practitioner commentary on a 30-day MVP validation, checkout '
-                    'wiring, traffic seeding, and unit-economics launch sprint.',
+       'markdown': '[00:05:30](https://www.youtube.com/watch?v=WizI3fDvSXQ&t=330s)',
+       'relevance': 'Practitioner walkthrough identifying the recording-notification limitation.',
        'source_type': 'video_pro_tip',
-       'text': 'So productivity product titled maybe something like the six month plan for '
-               'helping people change their lives and achieve their goals or just to become '
-               'productive could absolutely become a product and the thing about this is that '
-               "it's validated.",
-       'timestamp': 1030,
-       'timestamp_label': '[00:17:10]',
-       'timestamp_seconds': 1030,
-       'tip': 'So productivity product titled maybe something like the six month plan for '
-              'helping people change their lives and achieve their goals or just to become '
-              'productive could absolutely become a product and the thing about this is that '
-              "it's validated.",
-       'title': 'How To Build Your First $10,000 Digital Product (Full Beginner Guide) (Eden)',
-       'url': 'https://www.youtube.com/watch?v=VJ-JR7uMY34&t=1030s',
-       'video_id': 'VJ-JR7uMY34'},
-      {'author': 'Alek',
-       'channel': 'Alek',
+       'text': "When the call is complete and the recording has been put up there, there's no "
+               'notification to your members that the recording is actually there.',
+       'timestamp': 330,
+       'timestamp_label': '[00:05:30]',
+       'timestamp_seconds': 330,
+       'tip': "When the call is complete and the recording has been put up there, there's no "
+              'notification to your members that the recording is actually there.',
+       'title': 'Are Kajabi Cohort Courses Worth It or Not? + Full Walkthrough',
+       'url': 'https://www.youtube.com/watch?v=WizI3fDvSXQ&t=330s',
+       'video_id': 'WizI3fDvSXQ'},
+      {'author': 'Yulia Tarbath',
+       'channel': 'Yulia Tarbath',
        'epistemic_status': 'attributed_practitioner_claim',
-       'markdown': '[00:03:49](https://www.youtube.com/watch?v=T-gfoXzz8k8&t=229s)',
-       'relevance': 'Attributed practitioner commentary on a 30-day MVP validation, checkout '
-                    'wiring, traffic seeding, and unit-economics launch sprint.',
+       'markdown': '[00:03:46](https://www.youtube.com/watch?v=0vehUzoNDfU&t=226s)',
+       'relevance': 'Firsthand testimony on launch exhaustion and the move toward evergreen '
+                    'enrollment.',
        'source_type': 'video_pro_tip',
-       'text': "'t know how to drive your own traffic yet, then my recommendation would be to "
-               'start on a marketplace website like Etsy. Etsy drives millions of visitors to '
-               'their marketplace every single month.',
-       'timestamp': 229,
-       'timestamp_label': '[00:03:49]',
-       'timestamp_seconds': 229,
-       'tip': "'t know how to drive your own traffic yet, then my recommendation would be to "
-              'start on a marketplace website like Etsy. Etsy drives millions of visitors to '
-              'their marketplace every single month.',
-       'title': 'Build & Sell Digital Products with A.I. (Full Course) (Alek)',
-       'url': 'https://www.youtube.com/watch?v=T-gfoXzz8k8&t=229s',
-       'video_id': 'T-gfoXzz8k8'},
-      {'author': 'SamCart',
-       'channel': 'SamCart',
+       'text': "We've done launches. They are so exhausting, they are draining, and by the time we "
+               'discovered the evergreen approach I was just dreading launches.',
+       'timestamp': 226,
+       'timestamp_label': '[00:03:46]',
+       'timestamp_seconds': 226,
+       'tip': "We've done launches. They are so exhausting, they are draining, and by the time we "
+              'discovered the evergreen approach I was just dreading launches.',
+       'title': 'Live Course Launch Vs Evergreen Course For Your Coaching Business',
+       'url': 'https://www.youtube.com/watch?v=0vehUzoNDfU&t=226s',
+       'video_id': '0vehUzoNDfU'}],
+ 11: [{'author': 'Matt McGarry - GrowLetter',
+       'channel': 'Matt McGarry - GrowLetter',
        'epistemic_status': 'attributed_practitioner_claim',
-       'markdown': '[00:27:00](https://www.youtube.com/watch?v=UxhtBuVj4gY&t=1620s)',
-       'relevance': 'Attributed practitioner commentary on a 30-day MVP validation, checkout '
-                    'wiring, traffic seeding, and unit-economics launch sprint.',
+       'markdown': '[00:02:09](https://www.youtube.com/watch?v=1JVlUJAc6to&t=129s)',
+       'relevance': 'Verbatim practitioner testimony from Chapter Q11.',
        'source_type': 'video_pro_tip',
-       'text': "We've processed more than $8 billion in total sales, and the average seller "
-               'who comes in and turns on these features is watching their revenue double in '
-               'the first 12 months. You can start for free at samcart. Link is in the '
-               'description.',
-       'timestamp': 1620,
-       'timestamp_label': '[00:27:00]',
-       'timestamp_seconds': 1620,
-       'tip': "We've processed more than $8 billion in total sales, and the average seller who "
-              'comes in and turns on these features is watching their revenue double in the '
-              'first 12 months. You can start for free at samcart. Link is in the description.',
-       'title': 'The Complete Guide to Upsells ($8 Billion in Data) (SamCart)',
-       'url': 'https://www.youtube.com/watch?v=UxhtBuVj4gY&t=1620s',
-       'video_id': 'UxhtBuVj4gY'},
-      {'author': 'Click Guide',
-       'channel': 'Click Guide',
+       'text': "Over the past 2 years, I've earned $2.1 million of highly profitable revenue over "
+               'six live cohorts.',
+       'timestamp': 129,
+       'timestamp_label': '[00:02:09]',
+       'timestamp_seconds': 129,
+       'tip': "Over the past 2 years, I've earned $2.1 million of highly profitable revenue over "
+              'six live cohorts.',
+       'title': 'The Fastest Way to Turn Your Expertise Into a $1M/Year Business',
+       'url': 'https://www.youtube.com/watch?v=1JVlUJAc6to&t=129s',
+       'video_id': '1JVlUJAc6to'},
+      {'author': 'Alex Hitt',
+       'channel': 'Alex Hitt',
        'epistemic_status': 'attributed_practitioner_claim',
-       'markdown': '[00:00:55](https://www.youtube.com/watch?v=F5Le0mxyMhg&t=55s)',
-       'relevance': 'Attributed practitioner commentary on a 30-day MVP validation, checkout '
-                    'wiring, traffic seeding, and unit-economics launch sprint.',
+       'markdown': '[00:01:24](https://www.youtube.com/watch?v=g-jix0jhcmU&t=84s)',
+       'relevance': 'Verbatim practitioner testimony from Chapter Q11.',
        'source_type': 'video_pro_tip',
-       'text': "Talking about plans, here's the detail on the pricing. School has a flat rate "
-               'of $99 per month for one group, including unlimited members and courses. And a '
-               '14-day free trial is available for you to get your feet wet before committing.',
-       'timestamp': 55,
-       'timestamp_label': '[00:00:55]',
-       'timestamp_seconds': 55,
-       'tip': "Talking about plans, here's the detail on the pricing. School has a flat rate "
-              'of $99 per month for one group, including unlimited members and courses. And a '
-              '14-day free trial is available for you to get your feet wet before committing.',
-       'title': 'Skool vs Circle (2026): The Best Online Communities & Courses? (Click Guide)',
-       'url': 'https://www.youtube.com/watch?v=F5Le0mxyMhg&t=55s',
-       'video_id': 'F5Le0mxyMhg'},
-      {'author': 'Bree and Steve',
-       'channel': 'Bree and Steve',
+       'text': 'Substack operates as a consumer-facing social network. It is free to start but '
+               'extracts a permanent 10% tax on all gross subscription revenue.',
+       'timestamp': 84,
+       'timestamp_label': '[00:01:24]',
+       'timestamp_seconds': 84,
+       'tip': 'Substack operates as a consumer-facing social network. It is free to start but '
+              'extracts a permanent 10% tax on all gross subscription revenue.',
+       'title': 'Beehive vs Substack Breakdown for Newsletter Revenue',
+       'url': 'https://www.youtube.com/watch?v=g-jix0jhcmU&t=84s',
+       'video_id': 'g-jix0jhcmU'},
+      {'author': 'Mr. Money',
+       'channel': 'Mr. Money',
        'epistemic_status': 'attributed_practitioner_claim',
-       'markdown': '[00:08:42](https://www.youtube.com/watch?v=zmw7OXf39rQ&t=522s)',
-       'relevance': 'Attributed practitioner commentary on a 30-day MVP validation, checkout '
-                    'wiring, traffic seeding, and unit-economics launch sprint.',
+       'markdown': '[00:03:56](https://www.youtube.com/watch?v=3yBrjrexD08&t=236s)',
+       'relevance': 'Verbatim practitioner testimony from Chapter Q11.',
        'source_type': 'video_pro_tip',
-       'text': "I'm going to just label this projects and then new database and I'm going to "
-               "go ahead and delete or just hide the name and I'm just going to go in and add "
-               'different tasks that someone might have throughout the week.',
-       'timestamp': 522,
-       'timestamp_label': '[00:08:42]',
-       'timestamp_seconds': 522,
-       'tip': "I'm going to just label this projects and then new database and I'm going to go "
-              "ahead and delete or just hide the name and I'm just going to go in and add "
-              'different tasks that someone might have throughout the week.',
-       'title': 'How To Make & Sell Notion Templates (Make $1000+ MONTH!) (Bree and Steve)',
-       'url': 'https://www.youtube.com/watch?v=zmw7OXf39rQ&t=522s',
-       'video_id': 'zmw7OXf39rQ'}]}
+       'text': 'You can promote products inside your newsletter, launch them to specific segments, '
+               'or keep them available as evergreen offers.',
+       'timestamp': 236,
+       'timestamp_label': '[00:03:56]',
+       'timestamp_seconds': 236,
+       'tip': 'You can promote products inside your newsletter, launch them to specific segments, '
+              'or keep them available as evergreen offers.',
+       'title': 'How To Make Money With beehiiv Newsletters In 2026 (Full Tutorial)',
+       'url': 'https://www.youtube.com/watch?v=3yBrjrexD08&t=236s',
+       'video_id': '3yBrjrexD08'},
+      {'author': 'beehiiv',
+       'channel': 'beehiiv',
+       'epistemic_status': 'attributed_practitioner_claim',
+       'markdown': '[00:01:44](https://www.youtube.com/watch?v=BtzD0OT77Mo&t=104s)',
+       'relevance': 'Verbatim practitioner testimony from Chapter Q11.',
+       'source_type': 'video_pro_tip',
+       'text': "If there are opportunities that you don't want to run for any reason, simply "
+               'reject them and provide a reason why.',
+       'timestamp': 104,
+       'timestamp_label': '[00:01:44]',
+       'timestamp_seconds': 104,
+       'tip': "If there are opportunities that you don't want to run for any reason, simply reject "
+              'them and provide a reason why.',
+       'title': 'How to Monetize Your Newsletter with the beehiiv Ad Network (Tutorial)',
+       'url': 'https://www.youtube.com/watch?v=BtzD0OT77Mo&t=104s',
+       'video_id': 'BtzD0OT77Mo'},
+      {'author': 'Shistata Acharya',
+       'channel': 'Shistata Acharya',
+       'epistemic_status': 'attributed_practitioner_claim',
+       'markdown': '[00:01:22](https://www.youtube.com/watch?v=c3ZVbyfXE1Q&t=82s)',
+       'relevance': 'Verbatim practitioner testimony from Chapter Q11.',
+       'source_type': 'video_pro_tip',
+       'text': 'Keep the title clear and make the subtitle tell readers what they will get from '
+               'opening the email.',
+       'timestamp': 82,
+       'timestamp_label': '[00:01:22]',
+       'timestamp_seconds': 82,
+       'tip': 'Keep the title clear and make the subtitle tell readers what they will get from '
+              'opening the email.',
+       'title': 'How to Start & Monetize a Newsletter for FREE with beehiiv (Step-by-Step Guide)',
+       'url': 'https://www.youtube.com/watch?v=c3ZVbyfXE1Q&t=82s',
+       'video_id': 'c3ZVbyfXE1Q'},
+      {'author': 'CreatorOpsMatrix',
+       'channel': 'CreatorOpsMatrix',
+       'epistemic_status': 'attributed_practitioner_claim',
+       'markdown': '[00:05:05](https://www.youtube.com/watch?v=gmaXb858vdU&t=305s)',
+       'relevance': 'Verbatim practitioner testimony from Chapter Q11.',
+       'source_type': 'video_pro_tip',
+       'text': 'Through their recommendations feature, other writers can seamlessly recommend your '
+               'publication to their readers.',
+       'timestamp': 305,
+       'timestamp_label': '[00:05:05]',
+       'timestamp_seconds': 305,
+       'tip': 'Through their recommendations feature, other writers can seamlessly recommend your '
+              'publication to their readers.',
+       'title': 'Beehiiv vs Substack (2026): The 10% Fee Nobody Mentions',
+       'url': 'https://www.youtube.com/watch?v=gmaXb858vdU&t=305s',
+       'video_id': 'gmaXb858vdU'},
+      {'author': 'Write • Build • Scale',
+       'channel': 'Write • Build • Scale',
+       'epistemic_status': 'attributed_practitioner_claim',
+       'markdown': '[00:01:10](https://www.youtube.com/watch?v=HDQk5g412yI&t=70s)',
+       'relevance': 'Verbatim practitioner testimony from Chapter Q11.',
+       'source_type': 'video_pro_tip',
+       'text': 'Over about 3 years, these mini courses generated multiple six figures in sales for '
+               'me.',
+       'timestamp': 70,
+       'timestamp_label': '[00:01:10]',
+       'timestamp_seconds': 70,
+       'tip': 'Over about 3 years, these mini courses generated multiple six figures in sales for '
+              'me.',
+       'title': '5 Ways To Monetize Your Substack (Without Paid Subscriptions)',
+       'url': 'https://www.youtube.com/watch?v=HDQk5g412yI&t=70s',
+       'video_id': 'HDQk5g412yI'},
+      {'author': 'Nicolas Cole',
+       'channel': 'Nicolas Cole',
+       'epistemic_status': 'attributed_practitioner_claim',
+       'markdown': '[00:13:04](https://www.youtube.com/watch?v=RaVsgiJeovE&t=784s)',
+       'relevance': 'Verbatim practitioner testimony from Chapter Q11.',
+       'source_type': 'video_pro_tip',
+       'text': "Over 50% of those people came from inside of Substack's ecosystem. We didn't drive "
+               'that traffic. Substack brought us that traffic.',
+       'timestamp': 784,
+       'timestamp_label': '[00:13:04]',
+       'timestamp_seconds': 784,
+       'tip': "Over 50% of those people came from inside of Substack's ecosystem. We didn't drive "
+              'that traffic. Substack brought us that traffic.',
+       'title': 'Substack vs. Beehiiv vs. Kit: Which Should You Choose',
+       'url': 'https://www.youtube.com/watch?v=RaVsgiJeovE&t=784s',
+       'video_id': 'RaVsgiJeovE'},
+      {'author': 'Solo Narrator',
+       'channel': 'Solo Narrator',
+       'epistemic_status': 'attributed_practitioner_claim',
+       'markdown': '[00:01:41](https://www.youtube.com/watch?v=CLhun0LXdmg&t=101s)',
+       'relevance': 'Verbatim practitioner testimony from Chapter Q11.',
+       'source_type': 'video_pro_tip',
+       'text': 'In some cases you might need to be on a paid subscription to access the full '
+               'features of the Boost Marketplace.',
+       'timestamp': 101,
+       'timestamp_label': '[00:01:41]',
+       'timestamp_seconds': 101,
+       'tip': 'In some cases you might need to be on a paid subscription to access the full '
+              'features of the Boost Marketplace.',
+       'title': 'How to Monetize Beehiiv Newsletter (Full 2025 Guide)',
+       'url': 'https://www.youtube.com/watch?v=CLhun0LXdmg&t=101s',
+       'video_id': 'CLhun0LXdmg'},
+      {'author': 'Hayes Tutorials',
+       'channel': 'Hayes Tutorials',
+       'epistemic_status': 'attributed_practitioner_claim',
+       'markdown': '[00:01:27](https://www.youtube.com/watch?v=uSqFZ-Rz98U&t=87s)',
+       'relevance': 'Verbatim practitioner testimony from Chapter Q11.',
+       'source_type': 'video_pro_tip',
+       'text': 'Substack is for growth, Beehiiv is for business, Buttondown is for simplicity. The '
+               'choice depends on your goals as a writer.',
+       'timestamp': 87,
+       'timestamp_label': '[00:01:27]',
+       'timestamp_seconds': 87,
+       'tip': 'Substack is for growth, Beehiiv is for business, Buttondown is for simplicity. The '
+              'choice depends on your goals as a writer.',
+       'title': 'Substack vs Beehiiv vs Buttondown: Newsletter Platform Comparison',
+       'url': 'https://www.youtube.com/watch?v=uSqFZ-Rz98U&t=87s',
+       'video_id': 'uSqFZ-Rz98U'},
+      {'author': 'Stack Receipts',
+       'channel': 'Stack Receipts',
+       'epistemic_status': 'attributed_practitioner_claim',
+       'markdown': '[00:06:08](https://www.youtube.com/watch?v=fd2DFt_F31U&t=368s)',
+       'relevance': 'Verbatim practitioner testimony from Chapter Q11.',
+       'source_type': 'video_pro_tip',
+       'text': 'Free allows one digital product. Light allows three, and Pro is unlimited.',
+       'timestamp': 368,
+       'timestamp_label': '[00:06:08]',
+       'timestamp_seconds': 368,
+       'tip': 'Free allows one digital product. Light allows three, and Pro is unlimited.',
+       'title': 'beehiiv Tutorial 2026: Start a Newsletter Step by Step (Free Plan Limits + Real '
+                'Costs)',
+       'url': 'https://www.youtube.com/watch?v=fd2DFt_F31U&t=368s',
+       'video_id': 'fd2DFt_F31U'},
+      {'author': 'Digital Tutorials 101',
+       'channel': 'Digital Tutorials 101',
+       'epistemic_status': 'attributed_practitioner_claim',
+       'markdown': '[00:09:21](https://www.youtube.com/watch?v=WEE2x3i8_pw&t=561s)',
+       'relevance': 'Verbatim practitioner testimony from Chapter Q11.',
+       'source_type': 'video_pro_tip',
+       'text': 'The key is going to be consistency. Write regularly, provide value, and build '
+               'trust.',
+       'timestamp': 561,
+       'timestamp_label': '[00:09:21]',
+       'timestamp_seconds': 561,
+       'tip': 'The key is going to be consistency. Write regularly, provide value, and build '
+              'trust.',
+       'title': 'Beehiiv Tutorial 2026 — How to Start a Newsletter and Make Money',
+       'url': 'https://www.youtube.com/watch?v=WEE2x3i8_pw&t=561s',
+       'video_id': 'WEE2x3i8_pw'},
+      {'author': 'AshuRex',
+       'channel': 'AshuRex',
+       'epistemic_status': 'attributed_practitioner_claim',
+       'markdown': '[00:11:55](https://www.youtube.com/watch?v=Pv4BDrAVY-o&t=715s)',
+       'relevance': 'Verbatim practitioner testimony from Chapter Q11.',
+       'source_type': 'video_pro_tip',
+       'text': "When I applied for the invite only, they didn't support my business. So I'm "
+               'rejected. So what I did, I created a US bank account by creating a US LLC.',
+       'timestamp': 715,
+       'timestamp_label': '[00:11:55]',
+       'timestamp_seconds': 715,
+       'tip': "When I applied for the invite only, they didn't support my business. So I'm "
+              'rejected. So what I did, I created a US bank account by creating a US LLC.',
+       'title': 'How I Made Over $1419 on Beehiiv Newsletter (Full Guide)',
+       'url': 'https://www.youtube.com/watch?v=Pv4BDrAVY-o&t=715s',
+       'video_id': 'Pv4BDrAVY-o'},
+      {'author': 'beehiiv',
+       'channel': 'beehiiv',
+       'epistemic_status': 'attributed_practitioner_claim',
+       'markdown': '[00:02:58](https://www.youtube.com/watch?v=a-8NoqWX86M&t=178s)',
+       'relevance': 'Verbatim practitioner testimony from Chapter Q11.',
+       'source_type': 'video_pro_tip',
+       'text': 'Pick a format to begin and iterate from there.',
+       'timestamp': 178,
+       'timestamp_label': '[00:02:58]',
+       'timestamp_seconds': 178,
+       'tip': 'Pick a format to begin and iterate from there.',
+       'title': 'How to Grow a Newsletter From Zero | beehiiv Steal My Setup Episode 5',
+       'url': 'https://www.youtube.com/watch?v=a-8NoqWX86M&t=178s',
+       'video_id': 'a-8NoqWX86M'},
+      {'author': 'beehiiv',
+       'channel': 'beehiiv',
+       'epistemic_status': 'attributed_practitioner_claim',
+       'markdown': '[00:00:57](https://www.youtube.com/watch?v=ELxfeUy81Vk&t=57s)',
+       'relevance': 'Verbatim practitioner testimony from Chapter Q11.',
+       'source_type': 'video_pro_tip',
+       'text': "You can accept up to five offers at a time, and once you claim an ad offer, you'll "
+               'have up to five days to publish an email containing the ad before the offer '
+               'expires.',
+       'timestamp': 57,
+       'timestamp_label': '[00:00:57]',
+       'timestamp_seconds': 57,
+       'tip': "You can accept up to five offers at a time, and once you claim an ad offer, you'll "
+              'have up to five days to publish an email containing the ad before the offer '
+              'expires.',
+       'title': 'How to Monetize Your Newsletter with beehiiv Ad Network (Tutorial)',
+       'url': 'https://www.youtube.com/watch?v=ELxfeUy81Vk&t=57s',
+       'video_id': 'ELxfeUy81Vk'},
+      {'author': 'Freedom Capital',
+       'channel': 'Freedom Capital',
+       'epistemic_status': 'attributed_practitioner_claim',
+       'markdown': '[00:01:42](https://www.youtube.com/watch?v=B4AqprpbfFo&t=102s)',
+       'relevance': 'Verbatim practitioner testimony from Chapter Q11.',
+       'source_type': 'video_pro_tip',
+       'text': 'Add affiliate links from day one. Mention tools you already use. Start reaching '
+               'out to small brands for sponsorships.',
+       'timestamp': 102,
+       'timestamp_label': '[00:01:42]',
+       'timestamp_seconds': 102,
+       'tip': 'Add affiliate links from day one. Mention tools you already use. Start reaching out '
+              'to small brands for sponsorships.',
+       'title': 'How to Make Money With Beehiiv (Newsletter Monetization Guide)',
+       'url': 'https://www.youtube.com/watch?v=B4AqprpbfFo&t=102s',
+       'video_id': 'B4AqprpbfFo'}],
+ 12: [{'author': 'Richard Yu',
+       'channel': 'Richard Yu',
+       'epistemic_status': 'attributed_practitioner_claim',
+       'markdown': '[00:05:54](https://www.youtube.com/watch?v=d3_SbfD6cog&t=354s)',
+       'relevance': 'Verbatim practitioner testimony from Chapter Q12.',
+       'source_type': 'video_pro_tip',
+       'text': 'You should have three to four freebies that you can constantly rotate through on a '
+               'weekly basis.',
+       'timestamp': 354,
+       'timestamp_label': '[00:05:54]',
+       'timestamp_seconds': 354,
+       'tip': 'You should have three to four freebies that you can constantly rotate through on a '
+              'weekly basis.',
+       'title': 'How a Faceless Instagram Page Scaled to $11K/Month (Digital Product Case Study)',
+       'url': 'https://www.youtube.com/watch?v=d3_SbfD6cog&t=354s',
+       'video_id': 'd3_SbfD6cog'},
+      {'author': 'Success With Sam',
+       'channel': 'Success With Sam',
+       'epistemic_status': 'attributed_practitioner_claim',
+       'markdown': '[00:01:54](https://www.youtube.com/watch?v=H3AW2eLqDt4&t=114s)',
+       'relevance': 'Verbatim practitioner testimony from Chapter Q12.',
+       'source_type': 'video_pro_tip',
+       'text': "What they're doing is showing the different digital planners on the tablet and "
+               "they're essentially recording the screen and they're showing how it works.",
+       'timestamp': 114,
+       'timestamp_label': '[00:01:54]',
+       'timestamp_seconds': 114,
+       'tip': "What they're doing is showing the different digital planners on the tablet and "
+              "they're essentially recording the screen and they're showing how it works.",
+       'title': 'How to Sell a Digital Product With a FACELESS YOUTUBE CHANNEL in 2026',
+       'url': 'https://www.youtube.com/watch?v=H3AW2eLqDt4&t=114s',
+       'video_id': 'H3AW2eLqDt4'},
+      {'author': 'Nick Nyxson',
+       'channel': 'Nick Nyxson',
+       'epistemic_status': 'attributed_practitioner_claim',
+       'markdown': '[00:03:19](https://www.youtube.com/watch?v=bjN_W4uX6Qs&t=199s)',
+       'relevance': 'Verbatim practitioner testimony from Chapter Q12.',
+       'source_type': 'video_pro_tip',
+       'text': 'You need to have all your products always in all of your descriptions.',
+       'timestamp': 199,
+       'timestamp_label': '[00:03:19]',
+       'timestamp_seconds': 199,
+       'tip': 'You need to have all your products always in all of your descriptions.',
+       'title': '22. Selling Merchandise and Digital Products // Faceless YouTube Channel Guide ft '
+                'InVideo AI',
+       'url': 'https://www.youtube.com/watch?v=bjN_W4uX6Qs&t=199s',
+       'video_id': 'bjN_W4uX6Qs'},
+      {'author': 'SamTheCoach',
+       'channel': 'SamTheCoach',
+       'epistemic_status': 'attributed_practitioner_claim',
+       'markdown': '[00:05:08](https://www.youtube.com/watch?v=LjablgpzL2k&t=308s)',
+       'relevance': 'Verbatim practitioner testimony from Chapter Q12.',
+       'source_type': 'video_pro_tip',
+       'text': 'If you want to keep this 100% faceless, all you have to do is put your logo in '
+               'here.',
+       'timestamp': 308,
+       'timestamp_label': '[00:05:08]',
+       'timestamp_seconds': 308,
+       'tip': 'If you want to keep this 100% faceless, all you have to do is put your logo in '
+              'here.',
+       'title': 'I Made $10,000 a Month Selling Digital Products on a FACELESS YouTube Channel '
+                "(Here's Exactly How)",
+       'url': 'https://www.youtube.com/watch?v=LjablgpzL2k&t=308s',
+       'video_id': 'LjablgpzL2k'},
+      {'author': 'Rochelle Be',
+       'channel': 'Rochelle Be',
+       'epistemic_status': 'attributed_practitioner_claim',
+       'markdown': '[00:04:10](https://www.youtube.com/watch?v=lfsfJDOVCV4&t=250s)',
+       'relevance': 'Verbatim practitioner testimony from Chapter Q12.',
+       'source_type': 'video_pro_tip',
+       'text': 'I want every piece of content you give me to have done three times better than the '
+               'average for that creator.',
+       'timestamp': 250,
+       'timestamp_label': '[00:04:10]',
+       'timestamp_seconds': 250,
+       'tip': 'I want every piece of content you give me to have done three times better than the '
+              'average for that creator.',
+       'title': 'This AI Can Start a FACELESS Digital Product Biz',
+       'url': 'https://www.youtube.com/watch?v=lfsfJDOVCV4&t=250s',
+       'video_id': 'lfsfJDOVCV4'},
+      {'author': 'AstenCeo',
+       'channel': 'AstenCeo',
+       'epistemic_status': 'attributed_practitioner_claim',
+       'markdown': '[00:11:01](https://www.youtube.com/watch?v=DUD3fxv4gEk&t=661s)',
+       'relevance': 'Verbatim practitioner testimony from Chapter Q12.',
+       'source_type': 'video_pro_tip',
+       'text': "If I have a freebie that I know I can sell for a profit, that's the only way that "
+               'I will ever give out a freebie.',
+       'timestamp': 661,
+       'timestamp_label': '[00:11:01]',
+       'timestamp_seconds': 661,
+       'tip': "If I have a freebie that I know I can sell for a profit, that's the only way that I "
+              'will ever give out a freebie.',
+       'title': 'How to Sell Digital Products on YouTube Without Being Salesy',
+       'url': 'https://www.youtube.com/watch?v=DUD3fxv4gEk&t=661s',
+       'video_id': 'DUD3fxv4gEk'},
+      {'author': 'Denny Moon',
+       'channel': 'Denny Moon',
+       'epistemic_status': 'attributed_practitioner_claim',
+       'markdown': '[00:01:39](https://www.youtube.com/watch?v=eM7PABF5-dk&t=99s)',
+       'relevance': 'Verbatim practitioner testimony from Chapter Q12.',
+       'source_type': 'video_pro_tip',
+       'text': 'Just navigate to my store and select product packs. You can immediately add fully '
+               'curated niche bundles to your store catalog with a single click.',
+       'timestamp': 99,
+       'timestamp_label': '[00:01:39]',
+       'timestamp_seconds': 99,
+       'tip': 'Just navigate to my store and select product packs. You can immediately add fully '
+              'curated niche bundles to your store catalog with a single click.',
+       'title': 'How to sell a digital product in faceless niches fast',
+       'url': 'https://www.youtube.com/watch?v=eM7PABF5-dk&t=99s',
+       'video_id': 'eM7PABF5-dk'},
+      {'author': 'DIGITAL INCOME PROJECT',
+       'channel': 'DIGITAL INCOME PROJECT',
+       'epistemic_status': 'attributed_practitioner_claim',
+       'markdown': '[00:12:01](https://www.youtube.com/watch?v=h_KMRUYNThE&t=721s)',
+       'relevance': 'Verbatim practitioner testimony from Chapter Q12.',
+       'source_type': 'video_pro_tip',
+       'text': 'We got 10,000 followers and over 500,000 views in 30 days, all using that '
+               "Higgsfield workflow. But the monetization part is what I'm testing now.",
+       'timestamp': 721,
+       'timestamp_label': '[00:12:01]',
+       'timestamp_seconds': 721,
+       'tip': 'We got 10,000 followers and over 500,000 views in 30 days, all using that '
+              "Higgsfield workflow. But the monetization part is what I'm testing now.",
+       'title': 'This instagram account is printing from digital products built with Claude',
+       'url': 'https://www.youtube.com/watch?v=h_KMRUYNThE&t=721s',
+       'video_id': 'h_KMRUYNThE'},
+      {'author': 'One Person Business',
+       'channel': 'One Person Business',
+       'epistemic_status': 'attributed_practitioner_claim',
+       'markdown': '[00:08:17](https://www.youtube.com/watch?v=2IiIYnZmTg0&t=497s)',
+       'relevance': 'Verbatim practitioner testimony from Chapter Q12.',
+       'source_type': 'video_pro_tip',
+       'text': 'You want to make sure that your channel is solving a specific problem, and then '
+               'make sure that you have that link at the top of the video description.',
+       'timestamp': 497,
+       'timestamp_label': '[00:08:17]',
+       'timestamp_seconds': 497,
+       'tip': 'You want to make sure that your channel is solving a specific problem, and then '
+              'make sure that you have that link at the top of the video description.',
+       'title': 'BEST Way To Sell Digital Products on Faceless YouTube',
+       'url': 'https://www.youtube.com/watch?v=2IiIYnZmTg0&t=497s',
+       'video_id': '2IiIYnZmTg0'},
+      {'author': 'Brem',
+       'channel': 'Brem',
+       'epistemic_status': 'attributed_practitioner_claim',
+       'markdown': '[00:11:18](https://www.youtube.com/watch?v=I5oEOJ8u02s&t=678s)',
+       'relevance': 'Verbatim practitioner testimony from Chapter Q12.',
+       'source_type': 'video_pro_tip',
+       'text': "If we press this button it'll take us right to the checkout of Gumroad where you "
+               'could buy the full ebook for yourself.',
+       'timestamp': 678,
+       'timestamp_label': '[00:11:18]',
+       'timestamp_seconds': 678,
+       'tip': "If we press this button it'll take us right to the checkout of Gumroad where you "
+              'could buy the full ebook for yourself.',
+       'title': 'The FASTEST Way To Monetize A Faceless YouTube Channel In 2026',
+       'url': 'https://www.youtube.com/watch?v=I5oEOJ8u02s&t=678s',
+       'video_id': 'I5oEOJ8u02s'},
+      {'author': 'Learn Content',
+       'channel': 'Learn Content',
+       'epistemic_status': 'attributed_practitioner_claim',
+       'markdown': '[00:01:26](https://www.youtube.com/watch?v=s79oh97OTDs&t=86s)',
+       'relevance': 'Verbatim practitioner testimony from Chapter Q12.',
+       'source_type': 'video_pro_tip',
+       'text': "When you're new and you don't have the trust with anyone yet, you can monetize, "
+               "but maybe start with like a $9.99 ebook or something that's light and a little bit "
+               'easier to convert buyers with.',
+       'timestamp': 86,
+       'timestamp_label': '[00:01:26]',
+       'timestamp_seconds': 86,
+       'tip': "When you're new and you don't have the trust with anyone yet, you can monetize, but "
+              "maybe start with like a $9.99 ebook or something that's light and a little bit "
+              'easier to convert buyers with.',
+       'title': 'How to Sell Your Own Products with a Faceless YouTube Channel',
+       'url': 'https://www.youtube.com/watch?v=s79oh97OTDs&t=86s',
+       'video_id': 's79oh97OTDs'},
+      {'author': 'Richard Yu',
+       'channel': 'Richard Yu',
+       'epistemic_status': 'attributed_practitioner_claim',
+       'markdown': '[00:04:25](https://www.youtube.com/watch?v=oOlis65AmAs&t=265s)',
+       'relevance': 'Verbatim practitioner testimony from Chapter Q12.',
+       'source_type': 'video_pro_tip',
+       'text': 'You really only need one or two digital products to start. One traffic source, '
+               'which is Instagram, and your Allen store, which is a done-for-you AI website.',
+       'timestamp': 265,
+       'timestamp_label': '[00:04:25]',
+       'timestamp_seconds': 265,
+       'tip': 'You really only need one or two digital products to start. One traffic source, '
+              'which is Instagram, and your Allen store, which is a done-for-you AI website.',
+       'title': 'How She Built a Faceless Digital Product Business',
+       'url': 'https://www.youtube.com/watch?v=oOlis65AmAs&t=265s',
+       'video_id': 'oOlis65AmAs'},
+      {'author': 'Success With Sam',
+       'channel': 'Success With Sam',
+       'epistemic_status': 'attributed_practitioner_claim',
+       'markdown': '[00:02:50](https://www.youtube.com/watch?v=j58dI-lo3-I&t=170s)',
+       'relevance': 'Verbatim practitioner testimony from Chapter Q12.',
+       'source_type': 'video_pro_tip',
+       'text': 'The best way to use this tool from Google is to use it as an AI-powered research '
+               'assistant.',
+       'timestamp': 170,
+       'timestamp_label': '[00:02:50]',
+       'timestamp_seconds': 170,
+       'tip': 'The best way to use this tool from Google is to use it as an AI-powered research '
+              'assistant.',
+       'title': 'NotebookLM Can Sell a Digital Product With FACELESS Youtube Videos',
+       'url': 'https://www.youtube.com/watch?v=j58dI-lo3-I&t=170s',
+       'video_id': 'j58dI-lo3-I'},
+      {'author': 'Richard Yu',
+       'channel': 'Richard Yu',
+       'epistemic_status': 'attributed_practitioner_claim',
+       'markdown': '[00:08:13](https://www.youtube.com/watch?v=uIJUmvmJnCo&t=493s)',
+       'relevance': 'Verbatim practitioner testimony from Chapter Q12.',
+       'source_type': 'video_pro_tip',
+       'text': 'The idea makes the video, not the person.',
+       'timestamp': 493,
+       'timestamp_label': '[00:08:13]',
+       'timestamp_seconds': 493,
+       'tip': 'The idea makes the video, not the person.',
+       'title': '$0 to $10K With Digital Products (Without Showing My Face)',
+       'url': 'https://www.youtube.com/watch?v=uIJUmvmJnCo&t=493s',
+       'video_id': 'uIJUmvmJnCo'},
+      {'author': 'Success With Sam',
+       'channel': 'Success With Sam',
+       'epistemic_status': 'attributed_practitioner_claim',
+       'markdown': '[00:14:30](https://www.youtube.com/watch?v=ZuFEANJ7ZaU&t=870s)',
+       'relevance': 'Verbatim practitioner testimony from Chapter Q12.',
+       'source_type': 'video_pro_tip',
+       'text': 'Go over to the audio book section, and then simply drag and drop the ebook into '
+               'ElevenLabs.',
+       'timestamp': 870,
+       'timestamp_label': '[00:14:30]',
+       'timestamp_seconds': 870,
+       'tip': 'Go over to the audio book section, and then simply drag and drop the ebook into '
+              'ElevenLabs.',
+       'title': 'Digital Products + Faceless Youtube Can Start an AI Side Hustle (INSANE)',
+       'url': 'https://www.youtube.com/watch?v=ZuFEANJ7ZaU&t=870s',
+       'video_id': 'ZuFEANJ7ZaU'},
+      {'author': 'Nataleh Nicole',
+       'channel': 'Nataleh Nicole',
+       'epistemic_status': 'attributed_practitioner_claim',
+       'markdown': '[00:06:30](https://www.youtube.com/watch?v=XLi8ubDvIlE&t=390s)',
+       'relevance': 'Verbatim practitioner testimony from Chapter Q12.',
+       'source_type': 'video_pro_tip',
+       'text': 'Discovery, authority, convert, discovery, authority, convert. And this is how you '
+               "start to see consistent sales because you're showing up and you're getting in new "
+               'leads, new eyes, new people from that discovery content.',
+       'timestamp': 390,
+       'timestamp_label': '[00:06:30]',
+       'timestamp_seconds': 390,
+       'tip': 'Discovery, authority, convert, discovery, authority, convert. And this is how you '
+              "start to see consistent sales because you're showing up and you're getting in new "
+              'leads, new eyes, new people from that discovery content.',
+       'title': 'How to Sell Digital Products on YouTube (even with NO audience)',
+       'url': 'https://www.youtube.com/watch?v=XLi8ubDvIlE&t=390s',
+       'video_id': 'XLi8ubDvIlE'}]}

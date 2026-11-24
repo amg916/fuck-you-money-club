@@ -9,49 +9,49 @@
       "AGENCIES"
     ],
     "deck": [
-      "FIX THE SCOPE. DEPLOY THE WORKFLOW.",
-      "LOCK IN THE RETAINER."
+      "BUILD PAID AUDITS, AUTOMATIONS, AND RECURRING SERVICE OFFERS",
+      "TEST VOICE AGENTS, RAG, AND CUSTOMER SUPPORT SYSTEMS"
     ],
-    "lead": "Fixed-Scope B2B AI Implementation Sprints, Human-in-the-Loop SLA Retainers & Scaling a $1.0M/yr 5-Person Delivery Pod",
-    "summary": "Replace custom-consulting scope creep with standardized B2B workflow sprints, client-owned inference credentials, and recurring maintenance retainers.",
+    "lead": "Turn business bottlenecks into scoped AI services through paid audits, productized delivery, practical agent tests, and monthly support with clear operating boundaries.",
+    "summary": "All 12 chapters synthesize 192 verbatim YouTube practitioner testimonies with timestamped inline attribution, covering offer selection, design subscriptions, paid audits, retainers, prospecting, and client delivery. Practitioners compare automation platforms, test voice agents and retrieval systems, build customer-support workflows, and examine the costs, scope limits, privacy controls, and human handoffs behind those services.",
     "chapters": [
-      "Business model & revenue boundaries",
-      "Decision-makers & payment rails",
-      "Unit economics & margin waterfall",
-      "Startup capital & lean stack",
-      "Beginner traps & failure modes",
-      "Sourcing & first deals",
-      "End-to-end operating blueprint",
-      "Public records, APIs & tooling",
-      "Contracts, statutes & scripts",
-      "Automation & distribution loops",
-      "Small-team pod & exit valuation",
-      "First 30-day launch sprint"
+      "Choose an AI Agency Offer Businesses Actually Need",
+      "The Designjoy Model: Building a Profitable Solo Design Subscription",
+      "Sell and Deliver Paid AI Audits",
+      "Package Projects into Monthly Retainers",
+      "Selling AI Services: Prospecting, Outreach, Audits & Closing Clients",
+      "Win B2B Clients with LinkedIn and Better CRM Data",
+      "Zapier vs Make vs n8n: AI Automation Tools, Costs & Self-Hosted Agents",
+      "AI Voice Agents: Build Tutorials, Platform Comparisons & Real-World Tests",
+      "AI Agents, RAG, and Knowledge Graphs Explained",
+      "AI Customer Support: Tools, Automation & Agency Business Models",
+      "n8n Client Delivery, Scope-Creep Control & White-Label AI Voice Agents",
+      "Set Privacy, Contract, and Acceptance Boundaries"
     ],
     "flow": [
       [
-        "SOURCE",
-        "Mine high-intent deal triggers"
+        "VALIDATE THE OFFER",
+        "Find a business willing to pay for a specific improvement in time, money, or focus; start with a small quick win rather than building workflows nobody wants."
       ],
       [
-        "UNDERWRITE",
-        "Screen margin, float & rules"
+        "PROSPECT WITH CONTEXT",
+        "Define the buyer, improve CRM data, and use referrals, LinkedIn, or targeted outreach to surface a concrete operational problem before pitching implementation."
       ],
       [
-        "ENGAGE",
-        "Execute mandate or pre-sell"
+        "AUDIT AND PRIORITIZE",
+        "Interview leaders and frontline staff, map the current workflow, confirm estimated savings with the client, and rank opportunities by impact and implementation effort."
       ],
       [
-        "DELIVER",
-        "Run standardized SOP & ledger"
+        "SCOPE AND BUILD",
+        "Agree on deliverables, connected tools, payment terms, usage limits, privacy requirements, and acceptance criteria; then build the smallest useful automation, voice agent, or support workflow."
       ],
       [
-        "VERIFY",
-        "Audit quality, scrubs & statutes"
+        "TEST AND HAND OVER",
+        "Test normal requests, interruptions, failures, retrieval quality, and human escalation; document the workflow and walk the client through credentials, operation, and recovery."
       ],
       [
-        "COMPOUND",
-        "Reconcile cash & scale pod"
+        "OPERATE AND RETAIN",
+        "Package monitoring, maintenance, or ongoing improvements into explicitly bounded monthly service; control request queues and capacity, separate running costs, and route new features through change approval."
       ]
     ]
   },
@@ -59,10 +59,10 @@
   "book_series": "THE BIG MONEY PLAYBOOKS",
   "tagline": "Big Money. Small Teams. No Bullshit.",
   "title": "PRODUCTIZED AI AGENCIES",
-  "subtitle": "The Complete Playbook for Productized AI Agencies: $100,000–$1,000,000 USD in Annual Implementation and Retainer Revenue, Built from a 2 FT + 3 C (5 People) Pod",
+  "subtitle": "Sell the Outcome, Charge for Diagnosis, Build Reliable Agents, and Earn Retainers with Clear Scope and Human Handoffs",
   "chapter_count": 12,
-  "total_word_count": 76030,
-  "expert_youtube_link_count": 180,
+  "total_word_count": 68259,
+  "expert_youtube_link_count": 194,
   "min_expert_youtube_links_required": 150,
   "target_expert_youtube_links": "150-200+",
   "min_expert_youtube_links_per_chapter": 12,
@@ -77,5 +77,5 @@
   "publication_status": "approved_master",
   "public_deploy_approved": false,
   "paid_sales_approved": false,
-  "updated_at": "2026-11-23T22:48:00Z"
+  "updated_at": "2026-11-24T15:53:32Z"
 }

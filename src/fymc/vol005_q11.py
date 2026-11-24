@@ -1,170 +1,1001 @@
+from __future__ import annotations
+
 CHAPTER_11 = {
-    "id": "Q11", "chapter_id": "Q11", "chapter_number": 11, "question_number": 11,
-    "slug": "scaling-a-three-to-five-person-affiliate-portfolio-and-exits",
-    "question_prompt": "How do you scale a lean affiliate portfolio and make it saleable?",
+    "id": "Q11",
+    "chapter_id": "Q11",
+    "chapter_number": 11,
+    "question_number": 11,
+    "slug": "newsletter-growth-email-offers-and-paid-recommendations",
+    "question_prompt": "How do I acquire newsletter subscribers, turn new readers into revenue, and assess referral programs, paid recommendations, email offers, and platform rejection risks?",
     "kicker": "Q11 / THE BIG MONEY PLAYBOOKS",
-    "title": "Small-Team Scaling: Running a $325k-$600k/yr 3-to-5 Person Portfolio",
-    "subtitle": "Pod Role Division, Single-Merchant Concentration Caps (<=25%), Automated Link-Health & EPC Alerting, and Engineering a 30x-45x Monthly Profit Exit",
-    "layout_template": "action_checklist", "reading_time_minutes": 14,
-    "executive_summary": "Candidate #24 ranks #02 at 92/100, with 35 mapped operator plays. Build three to five niche comparison sites as one business, not five jobs. A founder and two contractors own offers, content, and measurement at $325,000 of annual earned commissions. Add staff only when durable contribution pays for them. Separate merchant sales from affiliate income, settle reversals before claiming margin, and keep each merchant at or below 25% of revenue. An exit depends on transferable rights, clean records, and repeatable profit; a headline multiple cannot repair a portfolio that stops working when its founder leaves.",
+    "title": "Newsletter Growth, Email Offers, and Paid Recommendations",
+    "subtitle": "SparkLoop partner and referral programs, Facebook subscriber acquisition, signup-flow conversion, Beehiiv integration, local-newsletter case studies, email affiliate arbitrage, and SparkLoop and Kit rejection experiences.",
+    "layout_template": "chapter_opener",
+    "reading_time_minutes": 15,
+    "executive_summary": (
+        "Practitioners converge on relevant readers, strong editorial value, and acquisition "
+        "payback rather than raw subscriber totals. Louis Nicholls concentrates monetization "
+        "in signup flows and early emails; Office Party reports buying subscribers for less "
+        "than its SparkLoop earnings after expensive initial tests. Matt McGarry and Gunnar "
+        "Holm connect ad creative, landing-page promises, and downstream engagement. Marketing "
+        "Max reports moving landing-page conversion from 7% to 35%. Josh Spector sells outcomes "
+        "and expertise, while Geoff Sharpe and Ryan Sneddon demonstrate different local "
+        "membership and advertising models. Disagreements concern organic versus paid growth, "
+        "onboarding intensity, referral rewards, and page design. Colton Sakamoto demonstrates "
+        "Beehiiv installation, but Wanda Zelaya reports final rejection from paid recommendations. "
+        "Jen Ransom adds expensive affiliate training and offer-dependency risks."
+    ),
     "key_metrics": [
-        {"label": "Base", "value": "$113,750", "context": "$325,000 commissions x 35%", "note": "1 FT + 2 C; annual owner net profit"},
-        {"label": "Scaled", "value": "$300,000", "context": "$600,000 commissions x 50%", "note": "2 FT + 3 C; annual owner net profit"},
-        {"label": "Merchant cap", "value": "<=25%", "context": "Share of earned commissions", "note": "Aggregate common ownership"},
+        {
+            "label": "Marketing Max landing-page conversion",
+            "metric": "Marketing Max landing-page conversion",
+            "value": "7% to 35%",
+            "confidence": "attributed_practitioner_claim",
+            "context": (
+                "Max describes the improvement as five times more subscribers without "
+                "additional spending, following extensive landing-page testing."
+            ),
+            "source": "SparkLoop ([wW2Mpe3uxT8 @ 00:27:40])",
+        },
+        {
+            "label": "Office Party optimized acquisition cost",
+            "metric": "Office Party optimized acquisition cost",
+            "value": "$0.50–$1.50 per subscriber",
+            "confidence": "attributed_practitioner_claim",
+            "context": (
+                "Tyler Parker and Colton Sakamoto report this range after audience "
+                "and creative testing, with results varying by week and creative."
+            ),
+            "source": "SparkLoop ([6rbq9lhZYqY @ 00:14:09])",
+        },
+        {
+            "label": "Lookout membership revenue share",
+            "metric": "Lookout membership revenue share",
+            "value": "Approximately 75%",
+            "confidence": "attributed_practitioner_claim",
+            "context": (
+                "Geoff Sharpe describes membership as approximately three quarters "
+                "of Lookout revenue, alongside approximately one quarter advertising."
+            ),
+            "source": "SparkLoop ([7x3W0vKolWY @ 00:12:03])",
+        },
+        {
+            "label": "Naptown annual revenue distinction",
+            "metric": "Naptown annual revenue distinction",
+            "value": "$200,000 previous year; $350,000 interview-year target",
+            "confidence": "attributed_practitioner_claim",
+            "context": (
+                "Ryan Sneddon explicitly distinguishes achieved previous-year revenue "
+                "from the higher target discussed in the interview."
+            ),
+            "source": "SparkLoop ([55VTgJoSWco @ 00:37:00])",
+        },
     ],
     "sections": [
         {
-            "heading": "1. Give each role a measurable queue",
-            "epistemic_status": "illustrative_model",
+            "id": "practitioner-consensus",
+            "title": "The Practitioner Consensus",
             "paragraphs": [
-                "Run three to five niche comparison properties from one shared work queue. At Base, the founder owns cash, merchant terms, rankings, and the weekly choice of where effort goes. One contractor owns research and content updates; the other owns tracking, link checks, and payout records. These are roles with bounded hours, not two cheap substitutes for whole departments. Keep a register of more than forty active B2B and fintech merchant relationships, with an owner, rate, cap, payout date, and backup offer for each. Active means the terms still hold and the referral path works, not that an old logo sits on a page. Give every site a named lead but share the tools and templates. A fourth site earns its place only when existing pages no longer wait for repairs.",
-                "Set pay against a workload you can count. The Base model budgets $36,000 for the content contractor and $24,000 for the tracking contractor each year. That buys a defined scope at locally negotiated rates, not unlimited hours. The founder takes the residual owner profit rather than an extra salary hidden outside the model. At Scaled, retain the founder, hire an operations employee at $70,000 loaded annual cost, and use three contractors with a combined $90,000 budget. The new employee takes daily incidents and reconciliation; the third contractor supplies specialist research and editing. State worker status from the actual relationship and applicable rules, not a spreadsheet label. If required pay, benefits, taxes, or hours exceed these assumptions, change the forecast before adding a site. More people do not fix poor offer selection.",
-                "Track output that survives a cash review. The content lead reports corrected high value pages and qualified outbound clicks, not raw article count. The tracking lead reports unresolved broken paths and the share of paid commissions matched to a click cohort. The founder reports merchant concentration, settled earnings per click, and cash runway. At Scaled, the operations lead closes the weekly ledger and owns response time. Pair each task with a backup person and a short runbook so leave does not halt sales. Use one weekly meeting to pick five fixes, assign dates, and drop work with no clear value. Keep a separate record of founder hours. A buyer will price the work still required after closing, even when the seller has never put that work through a payroll account.",
+                (
+                    "Start with the reader and the business objective, not a subscriber trophy. "
+                    "Josh Spector asks whether the newsletter is supposed to produce clients, "
+                    "revenue, or reach, then chooses measurements accordingly. Replies matter "
+                    "because their substance reveals whether the right people care; an "
+                    "inflammatory response is not automatically useful engagement. Alex Brogan "
+                    "makes the same commercial distinction: establish the audience's job-to-be-done, "
+                    "get early feedback, and improve the product before spending heavily on "
+                    "acquisition. Their criticism of the AI-newsletter race is that chasing the "
+                    "largest list displaced quality and left many operators disappointed. "
+                    "Geoff Sharpe grounds that principle in local publishing. Lookout does not "
+                    "merely assemble five links or events; its writers explain what developments "
+                    "mean for their city, use recognizable structure and voice, and provide "
+                    "firsthand food coverage. Sharpe reports approximately 75% membership revenue "
+                    "and says good content is indispensable to that model. These operators "
+                    "agree on specific value, but express it through different products: "
+                    "Spector's expertise-driven business, Brogan's increasingly focused audience, "
+                    "and Lookout's deeper local reporting. Spector's target is becoming a "
+                    "reader's top-three-to-five favorite, not simply acquiring another address. "
+                    "The underlying priority is a publication people actually want to keep "
+                    "reading and a clear reason those readers matter commercially. "
+                    "[KrUPlyUxncE @ 00:10:01] [cGtTorgyz9I @ 00:13:15] "
+                    "[7x3W0vKolWY @ 00:12:03]"
+                ),
+                (
+                    "Cash recovery determines how quickly growth can repeat. Louis Nicholls "
+                    "distinguishes eventual lifetime value from the payback period: a reader "
+                    "worth $50 over three years still ties up acquisition money if the first "
+                    "dollar takes six months to return. Their illustration uses a 30-day "
+                    "interest-free credit-card window and recovering a $1 acquisition cost "
+                    "inside that window. Matt McGarry similarly contrasts seven-day recovery "
+                    "with waiting four months, then points to thank-you-page sales, welcome "
+                    "sequences, owned products, and additional publications as monetization "
+                    "routes. Gunnar Holm reports clients recovering 50–100% of acquisition "
+                    "spending through recommendations, against businesses otherwise waiting "
+                    "three to six months or sometimes a year. Office Party supplies a "
+                    "specific operating account: Tyler Parker and Colton Sakamoto started "
+                    "with approximately $1,000, initially paid $8–$9 per Facebook subscriber, "
+                    "and later reported spending less on acquisition than SparkLoop returned. "
+                    "They increased budgets gradually rather than presenting the initial "
+                    "campaign as immediately profitable. Nicholls prefers the phrase zero-day "
+                    "payback over negative CAC because the latter can shift costs between "
+                    "businesses. Across these accounts, recommendations are one recovery "
+                    "mechanism alongside offers and products, not a replacement for knowing "
+                    "when acquisition spending actually returns to the business. "
+                    "[SFCvA5RqbgU @ 00:06:43] [uVhFrwe935U @ 00:40:45] "
+                    "[XnLPTqyukUI @ 00:35:26] [6rbq9lhZYqY @ 00:09:54]"
+                ),
+                (
+                    "Useful readers, rather than the cheapest nominal addresses, are the "
+                    "shared acquisition standard. Nicholls illustrates the distinction with "
+                    "$10,000 spent on 10,000 supposed $1 subscribers: if only 5,000 engage, "
+                    "the useful-reader cost is $2. Their partner-program playbook defines "
+                    "geography, retention, opens, and clicks before paying, then observes "
+                    "subscribers for one or two weeks. Holm uses UTMs to follow campaign, "
+                    "ad-set, and individual-ad sources into opens, clicks, purchases, and "
+                    "community participation. A cheap broad audience can therefore lose "
+                    "to a more expensive audience once actual behavior is visible. "
+                    "Spector extends the argument beyond advertising metrics: a list "
+                    "designed to attract consulting customers should be judged by suitable "
+                    "customers, not merely total reach. In George Helgesen's interview, "
+                    "Nicholls describes Nathan May generating $1 million in service revenue "
+                    "from 1,000 newsletter subscribers through an agency relationship, "
+                    "not through selling newsletter advertising. Nicholls also recommends "
+                    "an owned, exportable email list alongside LinkedIn, where newsletter "
+                    "subscriber email addresses are unavailable to export. Their suggested "
+                    "relationship-building start is modest: publish twice monthly and "
+                    "personally invite one relevant person daily. The commercial goal "
+                    "sets the acquisition approach, the quality test, and the reason "
+                    "to maintain direct email distribution. "
+                    "[i_xgpz4ZZB8 @ 00:07:05] [XnLPTqyukUI @ 00:15:00] "
+                    "[KrUPlyUxncE @ 00:10:01] [pbmgkJeKEGc @ 00:22:19]"
+                ),
             ],
             "table": {
-                "caption": "3-Person Base Pod vs. 5-Person Scaled Pod Role, KPI & Compensation Table",
-                "headers": ["Pod Role & Classification", "Base ($325k) Annual Budget", "Scaled ($600k) Annual Budget", "Primary Weekly Ownership & Measurable KPI"],
+                "caption": "Shared operating principles, with the business context kept attached.",
+                "headers": ["Operating Principle", "Practitioner Application", "Expert Source"],
                 "rows": [
-                    ["Founder / Deal & Capital Lead (1 FT)", "Residual profit ($113,750)", "Residual profit ($300,000)", "Merchant underwriting, private CPA bumps, <=25% cap & Net-60 cash float"],
-                    ["Operations & Attribution Lead (0 -> 1 FT)", "Founder covers (~8 hrs/wk)", "$70,000 loaded salary", "Closes weekly S2S-to-ACH ledger, <2% unmatched clicks, runs paid-search caps"],
-                    ["B2B Comparison & Calculator Editor (1 C)", "$36,000 ($3,000/mo scope)", "$40,000 ($3,333/mo scope)", "4 substantiated BOFU guides/mo + 30-day pricing refreshes; qualified CTR >=45%"],
-                    ["YouTube Walkthrough & Link-QA Producer (1 C)", "$24,000 ($2,000/mo scope)", "$30,000 ($2,500/mo scope)", "2 screen-recorded demos/wk + zero broken `/go/` redirects or missing FTC bars"],
-                    ["Vertical Data & Substantiation Researcher (0 -> 1 C)", "Editor covers in Base", "$20,000 ($1,667/mo scope)", "Mystery-shops vendor fee schedules, archives R2 proofs & tracks GEO citations"],
+                    [
+                        "Choose the business objective before deciding which newsletter measurements deserve attention.",
+                        "Josh Spector evaluates suitable clients, revenue, reach, and the substance of reader replies.",
+                        "SparkLoop ([KrUPlyUxncE @ 00:10:01])",
+                    ],
+                    [
+                        "Establish the audience's job-to-be-done before spending heavily to enlarge the mailing list.",
+                        "Alex Brogan recommends early feedback and product iteration rather than vanity subscriber totals.",
+                        "SparkLoop ([cGtTorgyz9I @ 00:13:15])",
+                    ],
+                    [
+                        "Distinguish eventual lifetime revenue from the speed at which acquisition spending returns.",
+                        "Louis Nicholls uses a thirty-day recovery illustration to explain repeated acquisition spending.",
+                        "Local Media HQ ([SFCvA5RqbgU @ 00:06:43])",
+                    ],
+                    [
+                        "Price acquisition around engaged readers rather than celebrating cheap nominal email addresses.",
+                        "Louis illustrates ten thousand purchased addresses becoming only five thousand useful engaged readers.",
+                        "SparkLoop ([i_xgpz4ZZB8 @ 00:07:05])",
+                    ],
+                    [
+                        "Match recurring local membership revenue with reporting that readers cannot easily replace.",
+                        "Geoff Sharpe emphasizes deeper civic explanation, firsthand food coverage, and recognizable editorial value.",
+                        "SparkLoop ([7x3W0vKolWY @ 00:12:03])",
+                    ],
+                    [
+                        "Keep relationship-building email distribution alongside social channels that do not export subscriber addresses.",
+                        "Nicholls recommends adding an exportable list rather than necessarily abandoning useful LinkedIn activity.",
+                        "George Helgesen ([pbmgkJeKEGc @ 00:22:19])",
+                    ],
                 ],
             },
         },
         {
-            "heading": "2. Turn monitoring into weekly cash decisions",
-            "epistemic_status": "operating_framework",
+            "id": "street-mechanics",
+            "title": "Exact Street Mechanics, Tools & Numbers",
             "paragraphs": [
-                "Check high earning links hourly and the full inventory daily within merchant rate limits. Record the HTTP status, final host, redirect chain, offer identifier, and last good check. A successful response is not proof that an offer pays: a redirect can land on a generic page or strip the tracking tag. Test representative paths in a browser and use permitted test events where available; never create fake sales. Pull cap and offer status from supported feeds, or have the relationship owner confirm them when no feed exists. Send alerts to the person who can fix the fault, with the affected pages and prior daily earnings attached. Retry transient errors before waking someone. Escalate a sustained failure on a top page immediately; queue a low value stale link for the next work block.",
-                "Define earnings per click as earned commissions net of reversals divided by valid outbound clicks for the same cohort. Keep pending revenue separate until its return and payout window has matured. Compare each merchant with its own recent baseline and the same traffic source, device, and page intent. Otherwise a surge of weak visits looks like a broken offer. As an initial rule, inspect a drop above 25% after at least 200 clicks and a full conversion lag; these are starting thresholds, not statistical proof. Low volume offers need a longer window and manual review. Keep reversal rate, click volume, and effective commission rate beside EPC. A higher rate can mask worse conversion, and a strong early cohort can collapse after refunds. The alert should trigger an investigation, not an automatic ranking rewrite.",
-                "Use a weekly leaderboard to move a small share of effort, not to chase daily noise. Rank pages by settled contribution after their direct traffic and content costs, then review the underlying offer quality. Shift at most 10% of the next week's discretionary budget in one test and keep the prior version recorded. Treat the single merchant cap as a constraint: measure revenue share over both thirty and ninety days and aggregate related brands under common control. Begin building alternatives at 20% so a winning campaign does not force a rushed cut at 25%. Do not demote a better product solely to please the payout table. Publish selection criteria and distinguish sponsored placements. The durable fallback is another relevant merchant plus owned audience access, not more thin pages pointing to the same payer.",
+                (
+                    "Build the paid path as an ad, a matching landing page, and an "
+                    "immediate next step. McGarry recommends newsletter-benefit advertising "
+                    "rather than attracting people solely for a download; a lead magnet "
+                    "can sit on the page as a bonus. Their low-CPA creative often uses "
+                    "10–25-second, home-shot, iPhone-style testimonials, while memes and "
+                    "Notes-style images also work. Facebook Ad Library and TikTok Creative "
+                    "Center supply research examples. Holm starts with native-looking "
+                    "creative that calls out the intended reader, tests broad targeting, "
+                    "and adds UTMs before evaluating downstream behavior. Approximately "
+                    "$50 per campaign daily is their preferred starting pace, although "
+                    "$20–$50 or smaller budgets can work more slowly. When clicks are "
+                    "cheap but subscriber acquisition is poor, Holm checks whether the "
+                    "landing page repeats the ad's specific promise. Marketing Max attacks "
+                    "that same conversion bottleneck through extensive page testing: lead "
+                    "with 'You are about to get,' state an immediate benefit, add concise "
+                    "audience proof and clear bullets, and test 'Continue' against other "
+                    "button language. Max reports more than 200 variations and movement "
+                    "from roughly 7% to 35% conversion. Holm also stresses fast mobile "
+                    "loading, with approximately 80–90% of paid traffic arriving on mobile "
+                    "in their experience. "
+                    "[uVhFrwe935U @ 00:19:10] [XnLPTqyukUI @ 00:12:28] "
+                    "[XnLPTqyukUI @ 00:24:36] [wW2Mpe3uxT8 @ 00:23:13]"
+                ),
+                (
+                    "Use the signup moment for recommendations and useful offers, then "
+                    "continue the conversation by email. Nicholls describes three "
+                    "recommendation choices: cross-promote owned publications, exchange "
+                    "free recommendations, or earn paid referral revenue. Their onboarding "
+                    "sequence moves through recommendations, a short identity-and-intent "
+                    "profile, welcome offers, and a tease page that gives readers a "
+                    "reason to open the welcome email. In the local-business discussion, "
+                    "Nicholls prefers three to five offers over twenty labor-intensive "
+                    "partnerships, with claim/skip choices, known email addresses reused, "
+                    "and phone numbers collected only when needed. Send leads immediately "
+                    "while interest is fresh; invoice on an agreed cadence or charge a "
+                    "stored card promptly. For Beehiiv, Colton Sakamoto demonstrates "
+                    "selecting the platform in SparkLoop, copying the publication ID "
+                    "from Settings → Integrations, creating an API key, and connecting "
+                    "the account. The widget script goes into a Google Tag Manager "
+                    "Custom HTML tag with the spoken trigger 'all.' Copy the indicated "
+                    "Tag Manager identifier into Beehiiv's Settings → Website → Analytics "
+                    "Tag Manager pixel ID field, save, and test the widget. Nicholls "
+                    "separately specifies disabling a duplicative Beehiiv web signup flow "
+                    "without disabling welcome emails: those emails still belong in "
+                    "the primary ESP. "
+                    "[q1jLTPNMaCY @ 00:05:25] [SFCvA5RqbgU @ 00:39:30] "
+                    "[u87gia-3VVo @ 00:00:32] [q1jLTPNMaCY @ 00:21:32]"
+                ),
+                (
+                    "Build reader rewards and paid partnerships as different mechanisms. "
+                    "Nicholls's referral masterclass starts with easy sharing, a dedicated "
+                    "signup page, and a clear suggestion of whom to invite. Choose "
+                    "appealing rewards before thresholds: a digital trigger at one "
+                    "to three referrals, momentum rewards around two to ten or fifteen, "
+                    "and approximately three to six rewards overall. Put sharing "
+                    "links and one to three relevant destinations directly inside "
+                    "the issue; routing everyone through a hub adds friction. Explain "
+                    "the program three to eight days after signup, after readers "
+                    "have received ordinary issues. Their paid-partner playbook instead "
+                    "sets a payout from acceptable payback, defines geography and "
+                    "engagement, establishes total and per-partner budgets, and supplies "
+                    "a one-to-two-page recommendation kit. A $25,000 overall budget "
+                    "might allow $5,000 per partner, with exceptions for trusted "
+                    "performers. Office Party's Parker and Sakamoto make acquisition "
+                    "management a recurring operating task: weekly 30–60-minute meetings "
+                    "review Facebook spending, SparkLoop earnings, expected additions, "
+                    "and affordability. A Notion spreadsheet tracks creative, audience "
+                    "size, CPM, and CPA. They report optimized acquisition around "
+                    "$0.50–$1.50 depending on the week and creative, and an explicit "
+                    "agreement to reinvest all earnings into growth. Their review "
+                    "cadence avoids rebuilding strategy after one bad week. "
+                    "[ucyDCgyYRko @ 00:23:32] [i_xgpz4ZZB8 @ 00:17:12] "
+                    "[6rbq9lhZYqY @ 00:14:09] [6rbq9lhZYqY @ 00:19:17]"
+                ),
             ],
+            "table": {
+                "caption": "Concrete acquisition, onboarding, installation, and recommendation mechanics.",
+                "headers": ["Execution Point", "Exact Practitioner Method", "Expert Source"],
+                "rows": [
+                    [
+                        "Produce newsletter-benefit creative that resembles ordinary platform content rather than polished brand advertising.",
+                        "McGarry describes short iPhone-style videos, memes, Notes screenshots, and public advertising-library research.",
+                        "SparkLoop ([uVhFrwe935U @ 00:19:10])",
+                    ],
+                    [
+                        "Preserve the specific advertising promise when the prospective subscriber reaches the landing page.",
+                        "Holm builds dedicated pages for winning ads and compares subsequent acquisition costs with historical results.",
+                        "SparkLoop ([XnLPTqyukUI @ 00:24:36])",
+                    ],
+                    [
+                        "Connect the Beehiiv publication identifier and newly generated API key inside SparkLoop onboarding.",
+                        "Sakamoto copies the key immediately before leaving its screen, then connects the selected account.",
+                        "SparkLoop ([u87gia-3VVo @ 00:00:32])",
+                    ],
+                    [
+                        "Install the supplied widget script through a Google Tag Manager Custom HTML tag.",
+                        "Sakamoto then enters the indicated Tag Manager identifier in Beehiiv analytics and tests the widget.",
+                        "SparkLoop ([u87gia-3VVo @ 00:01:28])",
+                    ],
+                    [
+                        "Start local welcome monetization with a manageable selection of three to five useful offers.",
+                        "Nicholls recommends immediate lead delivery, reused email addresses, necessary qualifiers, and explicit collection arrangements.",
+                        "Local Media HQ ([SFCvA5RqbgU @ 00:39:30])",
+                    ],
+                    [
+                        "Set both overall partner spending limits and individual partner caps before expanding recruitment.",
+                        "Nicholls illustrates a twenty-five-thousand-dollar monthly budget with five-thousand-dollar limits for individual acquisition partners.",
+                        "SparkLoop ([i_xgpz4ZZB8 @ 00:17:12])",
+                    ],
+                ],
+            },
             "callout": {
                 "kind": "INSIDER PRO-TIPS",
-                "title": "Portfolio Operations & 30x-45x Brokerage Exit Secrets",
-                "body": "Operators who sell referral portfolios on Quiet Light, Empire Flippers, or FE International command top-quartile multiples by preparing four items 12 months early:",
+                "title": "Small changes the practitioners specifically teach",
+                "body": (
+                    "Focus on the invitation, the source context, the sharing friction, "
+                    "and the reader's next action."
+                ),
                 "items": [
-                    "Register PartnerStack, Impact & Everflow Accounts Under a Dedicated Asset LLC (Never Your Personal SSN): Selling an LLC-held media portfolio or executing pre-cleared partner-account assignments avoids freezing 40+ merchant links during escrow cutover.",
-                    "Give Contractors Scoped Role Seats (`Member`/`Analyst`), Never Master Payout Credentials: Buyers discount businesses where former writers or VAs ever held login access to change ACH bank routing or export raw click ledgers.",
-                    "Keep Paid Traffic & Organic Search P&Ls Separate in Monthly Accrual Books: Institutional buyers pay higher multiples (`36x-45x` monthly net) on diversified organic + recurring B2B SaaS cohorts than on pure paid-arbitrage treadmills.",
-                    "Document `<10 Hours/Week` Founder Maintenance With 90 Days of Contractor Runbook Logs: Proving your editor and tracking lead closed 12 consecutive weekly sprints without founder intervention adds 4x-8x monthly profit to buyer offers.",
-                ],
-            },
-        },
-        {
-            "heading": "3. Build the buyer's evidence before the sale",
-            "epistemic_status": "operating_framework",
-            "paragraphs": [
-                "Prepare one evidence folder per asset and a shared monthly profit bridge. Buyers considering listings through Quiet Light, Empire Flippers, or FE International will assess earnings quality, transfer risk, and the work needed to keep revenue flowing; each firm's process and valuation vary. Give a buyer read only exports that reconcile merchant statements to bank receipts and the ledger. Explain timing differences rather than forcing a cash deposit into the wrong month's earnings. Show twelve complete months, with longer history where available, and identify one time costs without casually removing recurring labor. Traffic reports should split search, email, referral, direct, and paid visits by property. A second domain is not diversification when both sites depend on the same search query cluster. Include stress tests for a lost merchant and a search traffic decline before someone else finds those exposures.",
-                "Treat PartnerStack, Impact, and Everflow access as a contractual dependency, not a transferable password. The publisher account, each merchant agreement, and tracking assets may follow different transfer rules. Ask the relevant parties whether assignment, buyer onboarding, fresh identifiers, or written consent is required. Store dated responses and a cutover plan with overlap reporting. Do not promise seamless transfer merely because a platform has a team access feature. For each high earning merchant, list the buyer requirements and the revenue at stake if onboarding fails. Model a transition reserve for delayed payouts, and decide in the transaction documents who owns pending commissions and later reversals. A test referral path on buyer credentials is stronger evidence than a screenshot of seller access. Remove personal banking and tax details from shared exports while preserving the financial reconciliation trail.",
-                "Make rights and trust inspectable at the page level. Under 17 U.S.C. section 204(a), a copyright ownership transfer generally needs a writing signed by the owner or authorized agent; a paid invoice alone does not establish the assignment. Keep signed contractor transfers linked to articles, graphics, code, and edits, and list third party licenses separately. Review material connection disclosures against 16 CFR Part 255: place clear affiliate explanations where readers encounter recommendations, not only in a distant policy page. Retain support for product claims and date sensitive rate comparisons. Disclose any historical private blog network activity or cookie stuffing rather than hiding it in an add back narrative. A clean history, documented rights, and reproducible selection standards reduce buyer uncertainty. They support negotiating strength but do not mechanically earn a particular multiple or eliminate diligence.",
-            ],
-            "table": {
-                "caption": "Affiliate & Media Portfolio Exit-Readiness Diligence Matrix",
-                "headers": ["Diligence Area", "Buyer Verification Artifact", "Multiple-Compressing Defect", "Top-Quartile (36x-45x) Condition"],
-                "rows": [
-                    ["1. Earnings Quality", "T12M accrual P&L bridged to PartnerStack/Impact CSVs & bank ACH wires", "Booking pending/unsettled dashboard commissions as revenue", "100% of T12M net commissions reconciled to cleared bank deposits"],
-                    ["2. Channel Diversity", "Read-only GSC, YouTube Studio, Plausible & ESP cohort exports", ">75% of commissions tied to 3 Google rankings", "Organic hub + YouTube + newsletter + exact search (no channel >50%)"],
-                    ["3. Merchant Concentration", "Trailing 30/90/365-day net revenue share per merchant parent", "Single vendor >40% of revenue or expiring promo rate", "Every merchant <=25% share + live tested Runner-Up on `/go/` router"],
-                    ["4. Network Transferability", "Written assignment / entity-change confirmation on top 10 programs", "Personal-name non-assignable accounts or unapproved sub-IDs", "Dedicated LLC accounts + pre-mapped escrow link/account cutover"],
-                    ["5. Attribution Plumbing", "Cloudflare Worker + D1 `click_ledger` repo & 30-min link watchdog", "Hardcoded raw affiliate URLs scattered across 200 HTML pages", "Centralized `/go/:slug` edge routing + automated cap/404 failover"],
-                    ["6. FTC & TCPA Hygiene", "Timestamped mobile/desktop 16 CFR 255 captures & TM+ riders", "Missing disclosures, unauthorized brand bidding, or unconsented leads", "Clean compliance vault + zero network warning or clawback notices"],
-                    ["7. SEO & Link Provenance", "Wayback history + Ahrefs referring-domain & anchor audit", "Rented PBN links, hacked drop-catch history, or cookie stuffing", "Clean generic domain + earned citations from original fee calculators"],
-                    ["8. Chain of IP Title", "Signed `17 U.S.C. 204(a)` agreements for every writer/editor/dev", "Upwork/freelancer invoices lacking written copyright assignment", "Complete asset-level IP ledger covering code, calculators & video"],
-                    ["9. Founder Independence", "12-week Asana/Linear sprint log + video SOP runbooks", "Founder personally filming every video & manually reconciling CSVs", "Pod runs weekly close in <10 founder hrs/wk; dual SDE/managed P&L"],
-                    ["10. Asset Purchase Tax Split", "Draft Form 8594 / `26 U.S.C. 197` intangible asset schedule", "Unallocated lump-sum price causing late escrow tax friction", "Clean schedule separating domain, content, code & non-compete"]
+                    (
+                        "Tease the next issue before publication so subscribing has an "
+                        "immediate reason; Spector allocates approximately two minutes "
+                        "of a short growth routine to advance promotion. "
+                        "[SparkLoop — KrUPlyUxncE @ 00:04:50]"
+                    ),
+                    (
+                        "Name the referring newsletter in a source-specific welcome "
+                        "email and repeat the benefits a landing-page visitor would "
+                        "already have seen. [SparkLoop — i_xgpz4ZZB8 @ 00:32:17]"
+                    ),
+                    (
+                        "Put referral links and concrete sharing destinations inside "
+                        "the newsletter instead of making readers visit a hub to "
+                        "discover how to share. [SparkLoop — ucyDCgyYRko @ 00:47:08]"
+                    ),
+                    (
+                        "Lead a direct-response sponsorship with the desired outcome "
+                        "and curiosity; Spector's one-sentence weekday placements "
+                        "reportedly produced five to ten times more clicks. "
+                        "[SparkLoop — KrUPlyUxncE @ 00:15:41]"
+                    ),
                 ],
             },
             "sop_steps": [
-                {"step": 1, "title": "Close", "action": "Reconcile monthly earnings.", "detail": "Bridge pending, reversals, receivables, and cash by merchant."},
-                {"step": 2, "title": "Trace", "action": "Map ownership and dependencies.", "detail": "Link every asset to rights, credentials, and merchant terms."},
-                {"step": 3, "title": "Test", "action": "Run a founder-absent week.", "detail": "The backup closes incidents and documents every escalation."},
-                {"step": 4, "title": "Transfer", "action": "Draft the buyer cutover sequence.", "detail": "Resolve onboarding, payout ownership, and reversal liability."},
-                {"step": 5, "title": "Price", "action": "Normalize trailing earnings.", "detail": "Show both owner-operated SDE and replacement-managed profit."},
+                {
+                    "step": 1,
+                    "title": "Define the qualified reader and acquisition budget",
+                    "action": "Specify payout, engagement requirements, geography, and spending limits.",
+                    "detail": (
+                        "Nicholls starts with subscriber value and acceptable payback, "
+                        "then applies criteria such as retention over fourteen days "
+                        "and two opens or two clicks in two weeks. Add total and "
+                        "per-partner caps. [SparkLoop — i_xgpz4ZZB8 @ 00:13:27]"
+                    ),
+                },
+                {
+                    "step": 2,
+                    "title": "Connect paid traffic to a matching page",
+                    "action": "Build native-looking creative, preserve its promise, and tag subscriber sources.",
+                    "detail": (
+                        "Holm tracks campaign, ad set, and individual ad with UTMs, "
+                        "then checks opens, clicks, purchases, and community joining. "
+                        "Use a dedicated page when a winning ad makes a specific "
+                        "promise. [SparkLoop — XnLPTqyukUI @ 00:15:00]"
+                    ),
+                },
+                {
+                    "step": 3,
+                    "title": "Connect Beehiiv and test the recommendation widget",
+                    "action": "Follow Sakamoto's publication-ID, API-key, and Tag Manager installation.",
+                    "detail": (
+                        "Connect Beehiiv using its publication ID and newly created "
+                        "API key; add the widget script as Custom HTML in Google "
+                        "Tag Manager, enter the indicated identifier in Beehiiv "
+                        "analytics, and verify the visible widget. "
+                        "[SparkLoop — u87gia-3VVo @ 00:00:32]"
+                    ),
+                },
+                {
+                    "step": 4,
+                    "title": "Review acquisition and earnings together",
+                    "action": "Maintain a weekly creative and economics review before increasing spending.",
+                    "detail": (
+                        "Parker and Sakamoto use weekly meetings and a Notion "
+                        "spreadsheet to review audiences, creative, CPM, CPA, "
+                        "Facebook spending, and SparkLoop earnings; they avoid "
+                        "changing strategy solely because of one weak week. "
+                        "[SparkLoop — 6rbq9lhZYqY @ 00:14:09]"
+                    ),
+                },
             ],
         },
         {
-            "heading": "4. Remove the risks that compress an exit multiple",
-            "epistemic_status": "illustrative_model",
+            "id": "disagreements-and-alternatives",
+            "title": "Where Practitioners Disagree & Alternative Playbooks",
             "paragraphs": [
-                "Use 30x to 45x average monthly trailing twelve month profit as an illustrative valuation band, not a broker quote. Divide annual normalized profit by twelve first. That band equals 2.5x to 3.75x annual seller discretionary earnings only when both calculations use the same earnings definition. Multiplying a whole year's profit by thirty is a costly unit error. SDE normally reflects the economic benefit available to one working owner after valid adjustments; it is not the same as profit after paying someone to replace that owner. Show both views rather than using the larger number without a label. Buyers may choose a lower multiple, require deferred consideration, or decline the asset altogether. Asking prices, completed sale prices, and cash received at closing are different numbers. Fees, taxes, working capital adjustments, and holdbacks further separate an advertised valuation from money available to the seller.",
-                "Premium positioning starts with fewer fragile assumptions, not a glossy sale deck. Five properties with independent audiences, useful original comparisons, and several viable merchants offer more resilience than five copies of one search play. But diversification also costs editorial hours and can reduce margins; measure contribution by property before adding another niche. Keep no single merchant above 25% of earned commissions and stress a complete loss of that payer without assuming immediate replacement revenue. Check whether apparently separate programs share a parent, payment processor, or acquisition channel. A buyer will also test whether the founder's reputation drives conversions that a replacement cannot reproduce. Build named editorial processes, preserve product research, and prove that other people can update the strongest pages. Do not buy irrelevant traffic merely to improve a source diversity chart. Stable qualified demand matters more than an attractive percentage split in a report.",
-                "Set an internal decision rule before spending on a fifth site or a second full time hire. Require three monthly closes with reconciled earned commissions, no overdue high value tracking incident, and a forecast that funds the hire through a realistic disruption. In this model, retain three months of Scaled operating costs, or $75,000, as a planning reserve; actual needs depend on payout delays and contractual commitments. Keep reserves distinct from expenses so the profit statement is not distorted. Also prepare the asset purchase allocation early. Section 197 generally provides fifteen year amortization for qualifying acquired intangibles, but domain names, content rights, software, and other assets require classification under the transaction's facts and applicable exceptions. Do not promise the buyer that every dollar receives identical treatment. A supported allocation and complete ownership records reduce late negotiation friction without substituting a tax assumption for operating value.",
+                (
+                    "Paid growth is not a unanimous starting prescription. McGarry "
+                    "usually wants content-market fit first, describing approximately "
+                    "1,000–10,000 subscribers and generally 5,000–10,000 before paid "
+                    "growth and monetization. Publishing on an appropriate social "
+                    "platform helps establish that demand, although fast monetization "
+                    "can justify earlier spending. Sharpe argues that funded operators "
+                    "with buying skill, strong editorial, and a revenue model should "
+                    "not automatically spend months on labor-intensive organic growth. "
+                    "Lookout reportedly acquired more than 90% of its audience through "
+                    "paid channels while maintaining 58%+ opens and 12% unique "
+                    "click-through. Sharpe would rather put a growth-worker-equivalent "
+                    "salary into Facebook acquisition than continually produce Reddit "
+                    "posts, tweets, or guest posts, but agrees that resource-poor "
+                    "operators need organic routes and unvalidated ideas should not "
+                    "be scaled. Brogan treats this as a resource-allocation choice: "
+                    "time, capital, skills, platform knowledge, goals, and horizon "
+                    "determine the channel. Manual cross-promotions were a poor use "
+                    "of their limited time, yet can suit time-rich publishers. "
+                    "Wanda Zelaya takes a firmer organic position after rejection "
+                    "from paid recommendations, welcoming reciprocal promotion and "
+                    "accepting slower growth. These are materially different operating "
+                    "preferences, not interchangeable claims that every newsletter "
+                    "must either buy readers immediately or avoid advertising entirely. "
+                    "[uVhFrwe935U @ 00:03:53] [7x3W0vKolWY @ 00:18:37] "
+                    "[cGtTorgyz9I @ 00:09:23] [bHypgQE6iLY @ 00:07:14]"
+                ),
+                (
+                    "Onboarding frequency and page design contain genuine tactical "
+                    "tension. Nicholls's revenue masterclass favors two to five emails "
+                    "during the first day or couple of days, including an offer "
+                    "after one or two hours and later reminders of recommendations "
+                    "or resources. They would rather lose an unsuitable reader "
+                    "than let a suitable reader forget the publication. McGarry "
+                    "does not think everyone needs seven emails in seven days; "
+                    "a weekly publication may need a three-to-five-part sequence, "
+                    "and editorial quality comes first. McGarry also suggests asking "
+                    "for roughly two inbox actions, such as replying or moving "
+                    "the message to primary. Nicholls rejects making primary-tab "
+                    "instructions the thank-you page's main job, preferring a "
+                    "mystery gift or resource that motivates an email click or "
+                    "reply. On landing pages, Holm recommends testimonials, writer "
+                    "introductions, example content, and faces when appropriate. "
+                    "Max reports improvement after removing sprawling explanations, "
+                    "schedules, testimonials, and logos in favor of immediate "
+                    "benefits, concise proof, and 'Continue.' Max explicitly says "
+                    "a visual change that helped their own page may not help "
+                    "another. Both page playbooks prioritize the reader's reason "
+                    "to act, but they do not prescribe the same collection of "
+                    "page elements or the same volume of explanatory material. "
+                    "[q1jLTPNMaCY @ 00:35:05] [uVhFrwe935U @ 00:46:01] "
+                    "[XnLPTqyukUI @ 00:24:36] [wW2Mpe3uxT8 @ 00:23:13]"
+                ),
+                (
+                    "Local newsletters also split on product, personality, and "
+                    "monetization. Lookout's Sharpe foregrounds deeper reporting, paid "
+                    "membership, and a transferable brand; Ryan Sneddon's Naptown "
+                    "Scoop is positive, activity-oriented, and heavily advertising-funded, "
+                    "with non-advertising revenue probably below 2%. Sneddon puts "
+                    "a recognizable person into the community, attends events, "
+                    "and reports continued weekly growth after stopping Facebook "
+                    "spending almost two years before the interview. Referrals "
+                    "account for approximately 20% of the list, but Sneddon "
+                    "does not know an equally fast replacement for Facebook "
+                    "when town-specific acquisition is required. Nicholls's "
+                    "partner-program masterclass agrees that geographically broad "
+                    "networks are weak acquisition sources for local publications; "
+                    "local businesses, readers, influencers, and ambassadors are "
+                    "better recruitment targets. The same local publication "
+                    "can still earn by recommending suitable national newsletters. "
+                    "Jen Ransom argues for a different business altogether: "
+                    "rank simple local lead-generation websites, describing "
+                    "three weeks to six months to rank and organic traffic "
+                    "without paid-ad expense. That contrasts with Ransom's "
+                    "description of email affiliate arbitrage, where bought "
+                    "traffic drives purchases of offers promoted by competing "
+                    "affiliates. Ransom favors the search-led alternative, whereas "
+                    "the newsletter operators build recurring editorial relationships "
+                    "and monetize through memberships, advertisers, referrals, "
+                    "and adjacent offers. Their products and acquisition constraints "
+                    "are different. "
+                    "[7x3W0vKolWY @ 00:29:41] [55VTgJoSWco @ 00:24:36] "
+                    "[i_xgpz4ZZB8 @ 00:24:00] [6sEWUIZ-3R0 @ 00:04:48]"
+                ),
             ],
+            "table": {
+                "caption": "Different choices remain attached to their audiences, resources, and reported results.",
+                "headers": ["Decision", "Competing Practitioner Playbooks", "Expert Source"],
+                "rows": [
+                    [
+                        "Choose when paid acquisition begins rather than treating one subscriber threshold as universal.",
+                        "McGarry generally validates content first; Sharpe favors earlier paid testing when resources and monetization exist.",
+                        "SparkLoop ([uVhFrwe935U @ 00:03:53]); SparkLoop ([7x3W0vKolWY @ 00:18:37])",
+                    ],
+                    [
+                        "Allocate scarce operating time between manual cross-promotions and lower-touch paid recommendation channels.",
+                        "Brogan found manual exchanges inefficient, while accepting their usefulness for time-rich and budget-poor publishers.",
+                        "SparkLoop ([cGtTorgyz9I @ 00:09:23])",
+                    ],
+                    [
+                        "Decide how much early email contact fits the publication's actual value and cadence.",
+                        "Nicholls favors several useful early messages; McGarry rejects unnecessary seven-in-seven-day sequences for every publication.",
+                        "SparkLoop ([q1jLTPNMaCY @ 00:39:42]); SparkLoop ([uVhFrwe935U @ 00:46:01])",
+                    ],
+                    [
+                        "Test landing-page explanation and proof instead of assuming every testimonial improves the conversion rate.",
+                        "Holm includes faces and testimonials; Max reports improvement after removing sprawling explanations and testimonial blocks.",
+                        "SparkLoop ([XnLPTqyukUI @ 00:24:36]); SparkLoop ([wW2Mpe3uxT8 @ 00:23:13])",
+                    ],
+                    [
+                        "Separate local audience acquisition from monetizing those readers through national newsletter recommendations.",
+                        "Nicholls recommends locally recruited acquisition partners while allowing relevant national newsletters to monetize local readers.",
+                        "SparkLoop ([i_xgpz4ZZB8 @ 00:24:00])",
+                    ],
+                    [
+                        "Choose between membership-led local reporting and a predominantly advertising-funded community publication.",
+                        "Sharpe reports approximately seventy-five-percent membership revenue; Sneddon reports non-advertising revenue probably below two percent.",
+                        "SparkLoop ([7x3W0vKolWY @ 00:12:03]); SparkLoop ([55VTgJoSWco @ 00:36:26])",
+                    ],
+                ],
+            },
+        },
+        {
+            "id": "failure-modes",
+            "title": "Firsthand Failure Modes, Traps & Economics Checks",
+            "paragraphs": [
+                (
+                    "Admission is a real operational bottleneck in Zelaya's account. "
+                    "After a couple of months on Kit and five weekly newsletters, "
+                    "Zelaya applied for paid recommendations, answered a follow-up "
+                    "request, and sent four editions when three were requested. "
+                    "They report a same-day rejection, followed by support declining "
+                    "to disclose specific criteria or internal decision processes. "
+                    "The reported response also said rejection was final and "
+                    "reapplication unavailable. Zelaya wanted a subscriber target, "
+                    "open-rate target, or other actionable improvement criterion "
+                    "and says earlier disclosure would have changed when they "
+                    "applied. Nicholls describes SparkLoop's network differently "
+                    "from the buyer's side: manual publisher vetting and restricted "
+                    "access are part of a quality cycle intended to attract "
+                    "better publishers and higher-paying buyers. Sakamoto's Beehiiv "
+                    "demonstration reaches a visible, working widget; its endpoint "
+                    "is installation and syncing, not a demonstrated referral "
+                    "payment. Zelaya still endorses free creator recommendations "
+                    "and remains complimentary about Kit while objecting to "
+                    "the application experience. Their separate story about "
+                    "someone spending over $20,000 on poor leads is secondhand, "
+                    "not Zelaya's own advertising loss. Keep that distinction "
+                    "attached to the complaint: the firsthand event is rejection "
+                    "and the support exchange, while the acquisition-quality "
+                    "accusation comes from another person's account. "
+                    "[bHypgQE6iLY @ 00:01:43] [pbmgkJeKEGc @ 00:11:58] "
+                    "[u87gia-3VVo @ 00:02:34] [bHypgQE6iLY @ 00:07:14]"
+                ),
+                (
+                    "Audience attention does not automatically become product sales. "
+                    "Max's $200 course sold to approximately three people despite "
+                    "roughly 50,000 social followers and a prelaunch campaign. "
+                    "That disappointment preceded the pivot to an advertising-funded "
+                    "newsletter and the reported $12,000–$25,000 monthly ad revenue "
+                    "at 10,000 subscribers. Max explicitly warns that those "
+                    "historical economics do not translate directly to the later "
+                    "325,000-reader audience. Spector reports another mismatch: "
+                    "conventional sponsor-network advertisements performed worse "
+                    "than their one-sentence weekday format, leading Spector "
+                    "to require the preferred format with sponsor approval "
+                    "and decline incompatible advertisers. The two accounts "
+                    "show failed offers and failed packaging, not merely a "
+                    "need for more addresses. Ransom adds a separate cost "
+                    "and dependency critique of affiliate arbitrage: stated "
+                    "training prices include $39,995 for six months, $49,995 "
+                    "for one year, and $99,995 for VIP, alongside a "
+                    "50/50 profit share for 24 months. Ransom also warns "
+                    "that affiliates can promote identical products, rivals "
+                    "may write stronger copy, parent companies can change "
+                    "contracts or discontinue offers, and links can be "
+                    "hijacked. Those are Ransom's reported risks, rather "
+                    "than losses Ransom personally demonstrates. Max and "
+                    "Spector's operational reversals remain concrete: change "
+                    "the revenue model or advertising presentation when the "
+                    "existing offer does not perform. "
+                    "[wW2Mpe3uxT8 @ 00:07:16] [KrUPlyUxncE @ 00:20:12] "
+                    "[6sEWUIZ-3R0 @ 00:01:08] [6sEWUIZ-3R0 @ 00:03:04]"
+                ),
+                (
+                    "Production and sales capacity can become tighter constraints "
+                    "than acquisition. Sneddon abandoned the ambition to personally "
+                    "build 100 publications after confronting the difficulty "
+                    "of finding deeply local operators; the revised plan "
+                    "emphasized teaching and roughly ten to twenty partnerships. "
+                    "Naptown's own workflow also exposed a verification failure: "
+                    "a Sunday-written Navy football schedule bypassed primary "
+                    "checking, reversed two venues, generated more than a "
+                    "dozen corrections, and required a next-day correction. "
+                    "The operating response is assigned stories, editing, "
+                    "source checks, ESP upload, and a final read-aloud review, "
+                    "not simply buying additional subscribers. Sharpe likewise "
+                    "says expansion depends on suitable journalist partners "
+                    "and adequate runway; finding the right people is "
+                    "difficult, and smaller markets can bring higher acquisition "
+                    "costs and slower revenue. Office Party encountered "
+                    "another ceiling: year-end advertiser budgets slowed demand, "
+                    "while twice-weekly publishing limited inventory. Parker "
+                    "and Sakamoto would explore owned products or services "
+                    "earlier, although their limited time makes service "
+                    "delivery unattractive. Sneddon's revenue distinction "
+                    "belongs in the same economics check: $350,000 was "
+                    "the interview-year target, while the previous year "
+                    "produced $200,000. The projected value of unsold "
+                    "inventory and possible events was not money already "
+                    "collected. These accounts place staffing, accuracy, "
+                    "sales work, and inventory alongside acquisition in "
+                    "the operating picture. "
+                    "[55VTgJoSWco @ 00:07:05] [55VTgJoSWco @ 00:32:00] "
+                    "[7x3W0vKolWY @ 00:29:41] [6rbq9lhZYqY @ 00:19:17]"
+                ),
+            ],
+            "table": {
+                "caption": "Reported failures, expensive dependencies, and distinctions that change the economics.",
+                "headers": ["Failure or Constraint", "Reported Experience and Response", "Expert Source"],
+                "rows": [
+                    [
+                        "A paid-recommendation application can fail before the publisher receives any recommendation earnings.",
+                        "Zelaya reports final rejection, unavailable reapplication, and no actionable subscriber or open-rate improvement target.",
+                        "Wanda Zelaya Real Estate Channel ([bHypgQE6iLY @ 00:01:43])",
+                    ],
+                    [
+                        "A working recommendation widget demonstrates installation rather than an actual paid referral transaction.",
+                        "Sakamoto ends by checking the tracking script and displaying the widget as evidence of syncing.",
+                        "SparkLoop ([u87gia-3VVo @ 00:02:34])",
+                    ],
+                    [
+                        "A substantial social following can still produce disappointing sales for a specific paid product.",
+                        "Max reports approximately three buyers for a two-hundred-dollar course before switching toward advertising-funded publishing.",
+                        "SparkLoop ([wW2Mpe3uxT8 @ 00:07:16])",
+                    ],
+                    [
+                        "Existing advertising inventory cannot prevent advertiser budget exhaustion or publishing-frequency limits on additional sales.",
+                        "Office Party encountered year-end demand weakness and would explore owned products earlier despite delivery constraints.",
+                        "SparkLoop ([6rbq9lhZYqY @ 00:19:17])",
+                    ],
+                    [
+                        "A story bypassing primary fact checking can create visible mistakes despite an established editorial workflow.",
+                        "Sneddon's reversed football venues generated numerous reader corrections and required a correction the following day.",
+                        "SparkLoop ([55VTgJoSWco @ 00:32:00])",
+                    ],
+                    [
+                        "Expensive affiliate training and dependence on outside offers are separate from owning an editorial product.",
+                        "Ransom lists substantial enrollment prices and warns about contract changes, discontinued products, competition, and hijacked links.",
+                        "Jen Ransom ([6sEWUIZ-3R0 @ 00:01:08]); Jen Ransom ([6sEWUIZ-3R0 @ 00:03:04])",
+                    ],
+                ],
+            },
             "callout": {
                 "kind": "OPERATOR GATE",
-                "title": "Buy capacity only after the work is repeatable",
-                "body": "These are internal capital-allocation tests, not extra steps for readers or customers.",
+                "title": "Checks tied to the practitioners' actual bottlenecks",
+                "body": (
+                    "Use the application experience, subscriber behavior, offer fit, "
+                    "and production record rather than headline growth alone."
+                ),
                 "items": [
-                    "Three reconciled monthly closes before expanding fixed commitments.",
-                    "A named backup can resolve incidents without founder access.",
-                    "Model the largest merchant disappearing for ninety days.",
-                    "Separate the cash reserve from operating expense and sale proceeds.",
-                ],
-            },
-            "table": {
-                "caption": "Forensic Scaling, Concentration & Exit Traps",
-                "headers": ["Naive Beginner Trap", "Forensic Detection Metric", "Durable Operator Fallback"],
-                "rows": [
-                    ["Mistaking 40 partner logos for diversification when 1 parent pays 65%", "Trailing-90-day settled commission share grouped by corporate parent", "Enforce a <=25% single-parent cap (`20%` early-warning alert) + warm #2 offer"],
-                    ["Assuming HTTP 200 on `/go/` links proves live affiliate attribution", "Hourly Playwright hop trace + partner `sub1` parameter echo check", "Alert on out-of-stock/paused landers and auto-failover to Secondary Offer"],
-                    ["Routing pod labor to highest pending EPC before lock windows close", "90-day cohort Net EPC after trial cancellations, scrubs, and refunds", "Score editorial and media priorities strictly on settled post-lock Net EPC"],
-                    ["Launching 5 sibling domains that rank for identical Google SERP queries", "Query-overlap and traffic-source correlation across owned properties", "Pair Google SEO with YouTube search, email capture, and paid BOFU hubs"],
-                    ["Hiring 6 cheap AI-slop writers instead of maintaining top 20 money pages", "Cleared net commission contribution per editorial + QA hour logged", "Refresh pricing, calculators, and CTR on top 20% earners before adding URLs"],
-                    ["Assuming affiliate portal logins automatically transfer in an asset sale", "Written partner network assignment consent and re-approval tracker", "Execute merchant-by-merchant transfer approvals prior to escrow release"],
-                    ["Presenting 45 hr/wk founder labor as zero-cost passive profit to buyers", "Logged weekly founder hours multiplied by market replacement rate", "Publish dual Seller Discretionary Earnings (SDE) and managed-EBITDA bridges"],
-                    ["Treating a headline `45x` monthly multiple as Day-1 wire cash at close", "Net closing wire after broker fee (8-12%), escrow holdback, and earnout", "Underwrite exit proceeds on Day-1 cash net of fees, taxes, and working capital"],
-                ],
-            },
-        },
-        {
-            "heading": "5. Prove the margin bridge and price the handover",
-            "epistemic_status": "illustrative_model",
-            "paragraphs": [
-                "Keep merchant gross merchandise value outside the affiliate income statement. For a simple illustration, $3,400,000 of referred merchant sales at a uniform 10% commission rate produces $340,000 of initial commission credits. If $15,000 of those credits reverse, gross earned commissions net of reversals are $325,000. This is the Base revenue line, not $3,400,000 and not the initial credits. Real B2B programs may pay fixed bounties, recurring commissions, or tiered rates, so this example is a bridge rather than a conversion forecast. Reconcile every program using its own terms. Deduct $211,250 of annual operating costs to leave $113,750 of owner net profit, a 35% margin. Outstanding earned receivables affect cash timing but should not be counted twice when paid. Track cash available for distributions separately from reported profit, especially when merchant payout windows stretch beyond a month or reserves remain tied up.",
-                "The Conservative case earns $50,000 after reversals and spends $40,000, leaving $10,000 at 20%. It still uses one founder and two contractors, but contractor scopes are much smaller: headcount describes people, not purchased full time capacity. Base buys broader coverage with $60,000 of contractor spend, $70,000 of traffic acquisition, $30,000 of additional production, $12,000 of tooling, and $39,250 of other operating costs. Additional production means distinct design, testing, and specialist work, not the same contractor hours counted twice. Scaled spends $300,000 against $600,000 of earned commissions and leaves $300,000 at 50%. That margin requires repeatable organic demand and controlled acquisition costs; it does not follow automatically from adding staff. The table makes the exact cost bridge explicit. Replace every allowance with actual invoices and loaded employment costs before treating the margin as a hiring budget rather than an editorial scenario.",
-                "At Base, average monthly owner profit is $9,479.17 before rounding, supporting an illustrative enterprise value of $284,375 to $426,562.50 at 30x to 45x. Scaled produces $25,000 per month and an illustrative $750,000 to $1,125,000 range. Those figures assume the stated owner profit is an acceptable normalized SDE proxy; they are not verified market offers. If Base needs a $60,000 annual founder replacement, managed profit falls to $53,750 before any other adjustments. Show that sensitivity to a passive buyer instead of hiding it in a multiple discussion. During the first thirty days, finish the merchant register, cost bridge, and rights inventory. Over the next sixty days, test backups and collect mature cohorts. Discuss a listing only after twelve clean months support the earnings story. An exit process should reveal an already transferable business, not become the project that finally builds one.",
-            ],
-            "table": {
-                "caption": "Worked Annual Unit Economics and Exit Blueprint: Candidate #24",
-                "headers": ["Line / Milestone", "Conservative", "Base", "Scaled", "SDE Normalization & Exit Diligence Rule"],
-                "rows": [
-                    ["Staffing", "1 FT + 2 C", "1 FT + 2 C", "2 FT + 3 C", "1 founder FT + contractors through Base; adds 1 loaded FT Managing Editor at Scaled"],
-                    ["Merchant GMV", "Off-ledger memo", "$3,400,000 illustrative", "Off-ledger memo", "Excluded from affiliate P&L; Base illustrates 10% commission on $3.4M B2B billings"],
-                    ["Initial commission credits", "$55,000 illustrative", "$340,000 illustrative", "$630,000 illustrative", "Gross network postbacks prior to lock-period cancellations and duplicate scrubs"],
-                    ["Reversals", "-$5,000 illustrative", "-$15,000 illustrative", "-$30,000 illustrative", "Contractual reversals netted against originating cohorts before booking revenue"],
-                    ["Gross earned commissions, net of reversals", "$50,000", "$325,000", "$600,000", "Buyer-verified T12 top-line revenue tied 1:1 to bank ACH remittance CSVs"],
-                    ["Contractor labor", "$12,000", "$60,000", "$90,000", "Scoped technical writers, video editors, and QA specialists under 17 U.S.C. 204(a) IP agreements"],
-                    ["Nonowner FT labor, loaded", "$0", "$0", "$70,000", "Full-time Managing Editor / Ops Lead hired at Scaled so founder hours drop <10 hr/wk"],
-                    ["Traffic acquisition", "$8,000", "$70,000", "$55,000", "Declines as % of revenue at Scaled as compounding SEO, YouTube, and recurring SaaS mature"],
-                    ["Additional production", "$6,000", "$30,000", "$25,000", "Original benchmark datasets, interactive calculators, and design plates"],
-                    ["Tooling", "$3,000", "$12,000", "$18,000", "Transferable Cloudflare/D1, S2S tracker, Ahrefs, Ringba, and uptime monitoring accounts"],
-                    ["Other operating costs", "$11,000", "$39,250", "$42,000", "Accounting, legal rider audits, entity maintenance, insurance, and admin"],
-                    ["Total operating costs", "$40,000", "$211,250", "$300,000", "Verified T12 operating expense ledger reconciled to bank/card statements"],
-                    ["Owner net profit before personal tax", "$10,000", "$113,750", "$300,000", "Normalized Seller Discretionary Earnings (SDE) basis before founder replacement adjustment"],
-                    ["Owner profit margin", "20%", "35%", "50%", "Operating margin on net earned commissions"],
-                    ["Average monthly owner profit", "$833.33", "$9,479.17", "$25,000", "Trailing-12-month monthly SDE average used by Quiet Light / Empire Flippers / FE International"],
-                    ["Illustrative 30x-45x value, unrounded profit basis", "$25,000-$37,500", "$284,375-$426,562.50", "$750,000-$1,125,000", "40x-45x requires <=25% partner cap, >=40% recurring SaaS share, and clean T12 proofs"],
-                    ["Operating milestone", "Prove one repeatable niche", "Run 3 properties with backups", "Run 3-5 properties without founder bottleneck", "Required operational maturity gate before engaging M&A brokerage"],
+                    (
+                        "Before applying for paid recommendations, resolve the "
+                        "requirements and reapplication question Zelaya says were "
+                        "not disclosed; they report that knowing the consequence "
+                        "would have led them to wait. "
+                        "[Wanda Zelaya Real Estate Channel — bHypgQE6iLY @ 00:02:53]"
+                    ),
+                    (
+                        "Review paid-source engagement over approximately thirty "
+                        "days, not three, and avoid conclusions from tiny samples; "
+                        "McGarry recommends source-level investigation before "
+                        "condemning an entire channel. "
+                        "[SparkLoop — uVhFrwe935U @ 00:26:10]"
+                    ),
+                    (
+                        "Do not offer coaching merely because its normal selling "
+                        "price is high: Nicholls says consulting rewards can "
+                        "cheapen the service and fail to motivate referrals. "
+                        "[SparkLoop — ucyDCgyYRko @ 00:43:09]"
+                    ),
+                    (
+                        "Keep dates, weekdays, venues, and source websites in the "
+                        "final editorial checks; Sneddon's unchecked football "
+                        "schedule reversed venues and required a correction. "
+                        "[SparkLoop — 55VTgJoSWco @ 00:32:00]"
+                    ),
                 ],
             },
         },
     ],
-    "pull_quote": "A buyer pays for profit that survives your absence, not forty logos, five domains, or a spreadsheet that calls pending commissions cash.",
-    "diagram_id": "diag-06-three-person-affiliate-pod",
+    "pull_quote": (
+        "\"a low CPA doesn't equal a high quality subscriber.\" "
+        "— Gunnar Holm, SparkLoop (XnLPTqyukUI @ 00:17:47)."
+    ),
+    "diagram_id": "diag-06",
     "action_checklist": [
-        "Assign each merchant a primary owner and backup.",
-        "Reconcile mature click cohorts to payouts and reversals.",
-        "Alert at 20% merchant share; enforce the 25% cap.",
-        "Test redirects and cap status on the top ten pages.",
-        "Collect signed contractor IP transfers and merchant transfer terms.",
-        "Build a twelve-month profit bridge with founder replacement costs.",
+        (
+            "Write the audience's job-to-be-done and collect early feedback before "
+            "putting heavy acquisition spending behind the publication. "
+            "[SparkLoop — cGtTorgyz9I @ 00:13:15]"
+        ),
+        (
+            "Tag campaigns, ad sets, and individual ads, then compare opens, clicks, "
+            "purchases, and community participation rather than CPA alone. "
+            "[SparkLoop — XnLPTqyukUI @ 00:15:00]"
+        ),
+        (
+            "Test the landing page's immediate benefit, concise proof, bullets, "
+            "and button wording instead of only replacing advertising creative. "
+            "[SparkLoop — wW2Mpe3uxT8 @ 00:23:13]"
+        ),
+        (
+            "Connect Beehiiv through the publication ID and API key, install the "
+            "widget through Tag Manager, and verify that the widget appears. "
+            "[SparkLoop — u87gia-3VVo @ 00:00:32]"
+        ),
+        (
+            "Start with three to five welcome offers, reuse known email addresses, "
+            "deliver claimed leads promptly, and arrange the collection cadence. "
+            "[Local Media HQ — SFCvA5RqbgU @ 00:39:30]"
+        ),
+        (
+            "Choose relevant referral rewards before thresholds and place concrete "
+            "sharing destinations directly in the newsletter rather than only "
+            "inside a separate referral hub. "
+            "[SparkLoop — ucyDCgyYRko @ 00:23:32] "
+            "[SparkLoop — ucyDCgyYRko @ 00:47:08]"
+        ),
     ],
     "statutory_citations": [
-        {"title": "17 U.S.C. section 204(a)", "url": "https://uscode.house.gov/view.xhtml?req=granuleid:USC-prelim-title17-section204&num=0&edition=prelim", "relevance": "Copyright transfers generally require a signed writing."},
-        {"title": "26 U.S.C. section 197", "url": "https://uscode.house.gov/view.xhtml?req=granuleid:USC-prelim-title26-section197&num=0&edition=prelim", "relevance": "Eligible acquired intangibles generally receive 15-year amortization; classification matters."},
-        {"title": "16 CFR Part 255", "url": "https://www.ecfr.gov/current/title-16/chapter-I/subchapter-B/part-255", "relevance": "FTC endorsement guides address truthful claims and material connections."},
+        {
+            "title": "Local Media HQ — How to Monetize Subscribers in the First 7 Days [00:06:43]",
+            "url": "https://www.youtube.com/watch?v=SFCvA5RqbgU&t=403s",
+            "relevance": "Primary practitioner testimony distinguishing acquisition payback from eventual lifetime value.",
+        },
+        {
+            "title": "SparkLoop — Explode Newsletter Growth with a Partner Program - newsletter growth masterclass [00:13:27]",
+            "url": "https://www.youtube.com/watch?v=i_xgpz4ZZB8&t=807s",
+            "relevance": "Primary practitioner testimony on subscriber qualification, payout selection, and partner-program economics.",
+        },
+        {
+            "title": "SparkLoop — How to Increase Newsletter Conversions From 7% to 35% | Marketing Max | Send & Grow 2.0 Ep. 7 [00:27:40]",
+            "url": "https://www.youtube.com/watch?v=wW2Mpe3uxT8&t=1660s",
+            "relevance": "Primary practitioner testimony on the reported landing-page conversion improvement.",
+        },
+        {
+            "title": "Wanda Zelaya Real Estate Channel — The DARK SIDE of Paid Recommendations: My Sparkloop & Kit Rejection Story [00:02:32]",
+            "url": "https://www.youtube.com/watch?v=bHypgQE6iLY&t=152s",
+            "relevance": "Primary practitioner testimony reporting final rejection and unavailable reapplication.",
+        },
+    ],
+    "source_citations": [
+        {
+            "source_type": "video_pro_tip",
+            "video_id": "6sEWUIZ-3R0",
+            "title": "The Cherrington Experience (Adam Cherrington): Is Affiliate Arbitrage The Best Way To Make Money?",
+            "channel": "Jen Ransom",
+            "author": "Jen Ransom",
+            "text": "your only job is to drive online traffic to your links.",
+            "tip": "your only job is to drive online traffic to your links.",
+            "timestamp": 184,
+            "timestamp_seconds": 184,
+            "timestamp_label": "[00:03:04]",
+            "url": "https://www.youtube.com/watch?v=6sEWUIZ-3R0&t=184s",
+            "markdown": "[00:03:04](https://www.youtube.com/watch?v=6sEWUIZ-3R0&t=184s)",
+            "epistemic_status": "attributed_practitioner_claim",
+            "relevance": "Practitioner testimony on traffic-driven affiliate offer mechanics.",
+        },
+        {
+            "source_type": "video_pro_tip",
+            "video_id": "SFCvA5RqbgU",
+            "title": "How to Monetize Subscribers in the First 7 Days",
+            "channel": "Local Media HQ",
+            "author": "Local Media HQ",
+            "text": "And that's called the payback period.",
+            "tip": "And that's called the payback period.",
+            "timestamp": 526,
+            "timestamp_seconds": 526,
+            "timestamp_label": "[00:08:46]",
+            "url": "https://www.youtube.com/watch?v=SFCvA5RqbgU&t=526s",
+            "markdown": "[00:08:46](https://www.youtube.com/watch?v=SFCvA5RqbgU&t=526s)",
+            "epistemic_status": "attributed_practitioner_claim",
+            "relevance": "Practitioner testimony on acquisition-cost recovery and reinvestment.",
+        },
+        {
+            "source_type": "video_pro_tip",
+            "video_id": "pbmgkJeKEGc",
+            "title": "$1M with 1,000 Subscribers, Acquisition, Free Traffic is OVER | Louis Nicholls, SparkLoop Co-Founder",
+            "channel": "George Helgesen",
+            "author": "George Helgesen",
+            "text": "If you just have your newsletter on LinkedIn, you don't have the email addresses.",
+            "tip": "If you just have your newsletter on LinkedIn, you don't have the email addresses.",
+            "timestamp": 1553,
+            "timestamp_seconds": 1553,
+            "timestamp_label": "[00:25:53]",
+            "url": "https://www.youtube.com/watch?v=pbmgkJeKEGc&t=1553s",
+            "markdown": "[00:25:53](https://www.youtube.com/watch?v=pbmgkJeKEGc&t=1553s)",
+            "epistemic_status": "attributed_practitioner_claim",
+            "relevance": "Practitioner testimony on exportable email distribution alongside social publishing.",
+        },
+        {
+            "source_type": "video_pro_tip",
+            "video_id": "uVhFrwe935U",
+            "title": "Newsletter Office Hours: How to grow your newsletter with Paid Ads in 2023",
+            "channel": "SparkLoop",
+            "author": "SparkLoop",
+            "text": "I would recommend like a 30-day period.",
+            "tip": "I would recommend like a 30-day period.",
+            "timestamp": 1638,
+            "timestamp_seconds": 1638,
+            "timestamp_label": "[00:27:18]",
+            "url": "https://www.youtube.com/watch?v=uVhFrwe935U&t=1638s",
+            "markdown": "[00:27:18](https://www.youtube.com/watch?v=uVhFrwe935U&t=1638s)",
+            "epistemic_status": "attributed_practitioner_claim",
+            "relevance": "Practitioner testimony on the evaluation period for paid-source engagement.",
+        },
+        {
+            "source_type": "video_pro_tip",
+            "video_id": "i_xgpz4ZZB8",
+            "title": "Explode Newsletter Growth with a Partner Program - newsletter growth masterclass",
+            "channel": "SparkLoop",
+            "author": "SparkLoop",
+            "text": "the first step is you figure out who is a good subscriber for your newsletter and how much is one of those subscribers worth to you.",
+            "tip": "the first step is you figure out who is a good subscriber for your newsletter and how much is one of those subscribers worth to you.",
+            "timestamp": 807,
+            "timestamp_seconds": 807,
+            "timestamp_label": "[00:13:27]",
+            "url": "https://www.youtube.com/watch?v=i_xgpz4ZZB8&t=807s",
+            "markdown": "[00:13:27](https://www.youtube.com/watch?v=i_xgpz4ZZB8&t=807s)",
+            "epistemic_status": "attributed_practitioner_claim",
+            "relevance": "Practitioner testimony on qualified subscribers and partner payout selection.",
+        },
+        {
+            "source_type": "video_pro_tip",
+            "video_id": "KrUPlyUxncE",
+            "title": "Coaching Session: Tips from a Newsletter Pro — with Josh Spector of For The Interested",
+            "channel": "SparkLoop",
+            "author": "SparkLoop",
+            "text": "There is always room for a quality newsletter that provides specific value to a specific audience.",
+            "tip": "There is always room for a quality newsletter that provides specific value to a specific audience.",
+            "timestamp": 2212,
+            "timestamp_seconds": 2212,
+            "timestamp_label": "[00:36:52]",
+            "url": "https://www.youtube.com/watch?v=KrUPlyUxncE&t=2212s",
+            "markdown": "[00:36:52](https://www.youtube.com/watch?v=KrUPlyUxncE&t=2212s)",
+            "epistemic_status": "attributed_practitioner_claim",
+            "relevance": "Practitioner testimony on audience specificity and newsletter value.",
+        },
+        {
+            "source_type": "video_pro_tip",
+            "video_id": "7x3W0vKolWY",
+            "title": "Building a local newsletter business you can scale — with Geoff Sharpe of Lookout Media",
+            "channel": "SparkLoop",
+            "author": "SparkLoop",
+            "text": "about 75% of our Revenue comes from memberships.",
+            "tip": "about 75% of our Revenue comes from memberships.",
+            "timestamp": 723,
+            "timestamp_seconds": 723,
+            "timestamp_label": "[00:12:03]",
+            "url": "https://www.youtube.com/watch?v=7x3W0vKolWY&t=723s",
+            "markdown": "[00:12:03](https://www.youtube.com/watch?v=7x3W0vKolWY&t=723s)",
+            "epistemic_status": "attributed_practitioner_claim",
+            "relevance": "Practitioner testimony on Lookout's membership-led revenue model.",
+        },
+        {
+            "source_type": "video_pro_tip",
+            "video_id": "ucyDCgyYRko",
+            "title": "Newsletter Masterclass: How to create the perfect newsletter referral program in 2023",
+            "channel": "SparkLoop",
+            "author": "SparkLoop",
+            "text": "it's better to have good rewards that don't fit into the structure than bad rewards that fit perfectly into this kind of framework.",
+            "tip": "it's better to have good rewards that don't fit into the structure than bad rewards that fit perfectly into this kind of framework.",
+            "timestamp": 1597,
+            "timestamp_seconds": 1597,
+            "timestamp_label": "[00:26:37]",
+            "url": "https://www.youtube.com/watch?v=ucyDCgyYRko&t=1597s",
+            "markdown": "[00:26:37](https://www.youtube.com/watch?v=ucyDCgyYRko&t=1597s)",
+            "epistemic_status": "attributed_practitioner_claim",
+            "relevance": "Practitioner testimony on choosing appealing referral rewards before imposing milestones.",
+        },
+        {
+            "source_type": "video_pro_tip",
+            "video_id": "XnLPTqyukUI",
+            "title": "How to use Facebook Ads to grow your newsletter — with Gunnar Holm of GrowJoy.co",
+            "channel": "SparkLoop",
+            "author": "SparkLoop",
+            "text": "a low CPA doesn't equal a high quality subscriber.",
+            "tip": "a low CPA doesn't equal a high quality subscriber.",
+            "timestamp": 1067,
+            "timestamp_seconds": 1067,
+            "timestamp_label": "[00:17:47]",
+            "url": "https://www.youtube.com/watch?v=XnLPTqyukUI&t=1067s",
+            "markdown": "[00:17:47](https://www.youtube.com/watch?v=XnLPTqyukUI&t=1067s)",
+            "epistemic_status": "attributed_practitioner_claim",
+            "relevance": "Practitioner testimony on measuring subscriber behavior beyond acquisition price.",
+        },
+        {
+            "source_type": "video_pro_tip",
+            "video_id": "55VTgJoSWco",
+            "title": "$350k with a local newsletter business — with Ryan Sneddon of Naptown Scoop",
+            "channel": "SparkLoop",
+            "author": "SparkLoop",
+            "text": "the 350 is the target for this year last year was 200.",
+            "tip": "the 350 is the target for this year last year was 200.",
+            "timestamp": 2220,
+            "timestamp_seconds": 2220,
+            "timestamp_label": "[00:37:00]",
+            "url": "https://www.youtube.com/watch?v=55VTgJoSWco&t=2220s",
+            "markdown": "[00:37:00](https://www.youtube.com/watch?v=55VTgJoSWco&t=2220s)",
+            "epistemic_status": "attributed_practitioner_claim",
+            "relevance": "Practitioner testimony distinguishing Naptown's revenue target from previous-year revenue.",
+        },
+        {
+            "source_type": "video_pro_tip",
+            "video_id": "q1jLTPNMaCY",
+            "title": "Free Newsletter Masterclass: Turn New Readers into Revenue",
+            "channel": "SparkLoop",
+            "author": "SparkLoop",
+            "text": "We don't send out the welcome emails on your behalf, so you definitely want those to to stay in place.",
+            "tip": "We don't send out the welcome emails on your behalf, so you definitely want those to to stay in place.",
+            "timestamp": 1314,
+            "timestamp_seconds": 1314,
+            "timestamp_label": "[00:21:54]",
+            "url": "https://www.youtube.com/watch?v=q1jLTPNMaCY&t=1314s",
+            "markdown": "[00:21:54](https://www.youtube.com/watch?v=q1jLTPNMaCY&t=1314s)",
+            "epistemic_status": "attributed_practitioner_claim",
+            "relevance": "Practitioner testimony separating web signup-flow configuration from ESP welcome emails.",
+        },
+        {
+            "source_type": "video_pro_tip",
+            "video_id": "cGtTorgyz9I",
+            "title": "How this newsletter growth expert scaled TWO newsletters to 50k+ subs — with Alex Brogan",
+            "channel": "SparkLoop",
+            "author": "SparkLoop",
+            "text": "ultimately reflecting on your unique resources is the most important way of approaching growth.",
+            "tip": "ultimately reflecting on your unique resources is the most important way of approaching growth.",
+            "timestamp": 714,
+            "timestamp_seconds": 714,
+            "timestamp_label": "[00:11:54]",
+            "url": "https://www.youtube.com/watch?v=cGtTorgyz9I&t=714s",
+            "markdown": "[00:11:54](https://www.youtube.com/watch?v=cGtTorgyz9I&t=714s)",
+            "epistemic_status": "attributed_practitioner_claim",
+            "relevance": "Practitioner testimony on choosing growth channels according to time, capital, and skills.",
+        },
+        {
+            "source_type": "video_pro_tip",
+            "video_id": "6rbq9lhZYqY",
+            "title": "How two friends joined forces to scale their newsletter — with Tyler Parker & Colton Sakamoto",
+            "channel": "SparkLoop",
+            "author": "SparkLoop",
+            "text": "we've basically agreed at the beginning to just reinvest everything into growth.",
+            "tip": "we've basically agreed at the beginning to just reinvest everything into growth.",
+            "timestamp": 1227,
+            "timestamp_seconds": 1227,
+            "timestamp_label": "[00:20:27]",
+            "url": "https://www.youtube.com/watch?v=6rbq9lhZYqY&t=1227s",
+            "markdown": "[00:20:27](https://www.youtube.com/watch?v=6rbq9lhZYqY&t=1227s)",
+            "epistemic_status": "attributed_practitioner_claim",
+            "relevance": "Practitioner testimony on Office Party's reinvestment agreement.",
+        },
+        {
+            "source_type": "video_pro_tip",
+            "video_id": "u87gia-3VVo",
+            "title": "Connecting SparkLoop to Beehiiv: Get paid to recommend top newsletters to your audience",
+            "channel": "SparkLoop",
+            "author": "SparkLoop",
+            "text": "we'll verify that our tracking script is working properly.",
+            "tip": "we'll verify that our tracking script is working properly.",
+            "timestamp": 154,
+            "timestamp_seconds": 154,
+            "timestamp_label": "[00:02:34]",
+            "url": "https://www.youtube.com/watch?v=u87gia-3VVo&t=154s",
+            "markdown": "[00:02:34](https://www.youtube.com/watch?v=u87gia-3VVo&t=154s)",
+            "epistemic_status": "attributed_practitioner_claim",
+            "relevance": "Practitioner demonstration of installation verification for the Beehiiv recommendation widget.",
+        },
+        {
+            "source_type": "video_pro_tip",
+            "video_id": "wW2Mpe3uxT8",
+            "title": "How to Increase Newsletter Conversions From 7% to 35% | Marketing Max | Send & Grow 2.0 Ep. 7",
+            "channel": "SparkLoop",
+            "author": "SparkLoop",
+            "text": "I literally went from 7 to 35%.",
+            "tip": "I literally went from 7 to 35%.",
+            "timestamp": 1660,
+            "timestamp_seconds": 1660,
+            "timestamp_label": "[00:27:40]",
+            "url": "https://www.youtube.com/watch?v=wW2Mpe3uxT8&t=1660s",
+            "markdown": "[00:27:40](https://www.youtube.com/watch?v=wW2Mpe3uxT8&t=1660s)",
+            "epistemic_status": "attributed_practitioner_claim",
+            "relevance": "Practitioner testimony on Marketing Max's landing-page conversion improvement.",
+        },
+        {
+            "source_type": "video_pro_tip",
+            "video_id": "bHypgQE6iLY",
+            "title": "The DARK SIDE of Paid Recommendations: My Sparkloop & Kit Rejection Story",
+            "channel": "Wanda Zelaya Real Estate Channel",
+            "author": "Wanda Zelaya Real Estate Channel",
+            "text": "as rejections are final you won't be able to apply again.",
+            "tip": "as rejections are final you won't be able to apply again.",
+            "timestamp": 152,
+            "timestamp_seconds": 152,
+            "timestamp_label": "[00:02:32]",
+            "url": "https://www.youtube.com/watch?v=bHypgQE6iLY&t=152s",
+            "markdown": "[00:02:32](https://www.youtube.com/watch?v=bHypgQE6iLY&t=152s)",
+            "epistemic_status": "attributed_practitioner_claim",
+            "relevance": "Zelaya's account of the support response concerning rejection and reapplication.",
+        },
     ],
 }

@@ -1,159 +1,1038 @@
+from __future__ import annotations
+
 CHAPTER_1 = {
-    "id": "Q1", "chapter_id": "Q1", "chapter_number": 1, "question_number": 1,
-    "slug": "what-is-high-ticket-affiliate-marketing",
-    "question_prompt": "What exactly is high-ticket affiliate marketing?",
+    "id": "Q1",
+    "chapter_id": "Q1",
+    "chapter_number": 1,
+    "question_number": 1,
+    "slug": "recurring-saas-high-ticket-affiliate-marketing",
+    "question_prompt": "What do these videos teach about finding recurring SaaS and B2B software affiliate programs, choosing high-ticket offers, working toward first commissions, applying beginner strategies and step-by-step systems, learning from affiliate case studies, evaluating done-for-you approaches, and avoiding mistakes that separate success from failure?",
     "kicker": "Q1 / THE BIG MONEY PLAYBOOKS",
-    "title": "What Exactly Is High-Ticket Affiliate Marketing?",
-    "subtitle": "Recurring B2B Software Shares, Stacked Fintech CPA Bounties, Qualified Ping-Post Lead Routing & Concierge Setup Funnels vs. Low-Margin Retail Links",
-    "layout_template": "opportunity_overview", "reading_time_minutes": 14,
-    "executive_summary": "High-ticket affiliate publishing earns fees for sending the right buyer to a merchant, not for owning the sale. Candidate #24 ranks #02 with an 92/100 score and 35 mapped operator plays. The durable version solves a costly buying problem, records the referral, and earns a contract-defined share or bounty. The fragile version rents cheap clicks and hopes a short tracking window survives. This chapter separates merchant sales from affiliate revenue, shows where reversals destroy apparent yield, and builds three annual profit cases. Start with one buyer problem, one verified offer, and one repeatable proof of value.",
+    "title": "Recurring SaaS & High-Ticket Affiliate Marketing",
+    "subtitle": "Finding SaaS and B2B software affiliate programs, understanding recurring commissions and high-ticket payouts, and exploring beginner tutorials, step-by-step blueprints, case studies, and done-for-you approaches.",
+    "layout_template": "opportunity_overview",
+    "reading_time_minutes": 15,
+    "executive_summary": (
+        "The central agreement is economic: improve commission per qualified customer, "
+        "match offers to a specific problem, and build trust before asking for the sale. "
+        "Michael Bashi favors useful subscription software; Adam Enfroy combines payout "
+        "math with platform fit; Brian Brewer demonstrates capture, introduction, and "
+        "automated selling. Their examples range from $25 monthly referral commissions "
+        "to Brewer's reported $44,000 launch. Execution splits sharply. Beach Bum "
+        "University prefers AI discovery, while SEO Jesus reverse-engineers competing "
+        "placements. Bashi rejects coaching funnels that Aaron Chen and Jackie Strohl "
+        "embrace. Done-for-you promoters package pages, emails, and closing support, "
+        "but still require audience acquisition. Cesar O. Vlogs reports a year to "
+        "their first commission; retention, refund windows, program eligibility, and "
+        "traffic costs complicate the headline payouts."
+    ),
     "key_metrics": [
-        {"label": "Conservative", "value": "$50,000", "context": "Annual commissions net of reversals", "note": "20% margin; $10,000 owner profit; 1 FT + 2 C"},
-        {"label": "Base", "value": "$325,000", "context": "Annual commissions net of reversals", "note": "35% margin; $113,750 owner profit; 1 FT + 2 C"},
-        {"label": "Scaled", "value": "$600,000", "context": "Annual commissions net of reversals", "note": "50% margin; $300,000 owner profit; 2 FT + 3 C"},
+        {
+            "label": "Recurring software illustration",
+            "metric": "Recurring software illustration",
+            "value": "$120 monthly; $1,440 annually per customer",
+            "confidence": "attributed_practitioner_claim",
+            "context": (
+                "Adam Enfroy illustrates a $300 monthly subscription paying 40% "
+                "recurring commission; the annual figure extends that monthly example."
+            ),
+            "source": "Adam Enfroy ([rv01CKLsaY0 @ 00:01:23])",
+        },
+        {
+            "label": "Aligned high-ticket launch",
+            "metric": "Aligned high-ticket launch",
+            "value": "44 buyers; $44,000 in ten days",
+            "confidence": "attributed_practitioner_claim",
+            "context": (
+                "Brian Brewer reports selling a $2,000 done-for-you print-on-demand "
+                "store paying $1,000 per referral, with a $22,000 check representing "
+                "half of the claimed launch earnings."
+            ),
+            "source": "Brian Brewer ([4hqxtfAXmWc @ 00:13:21])",
+        },
+        {
+            "label": "Funnel Freedom dashboard snapshot",
+            "metric": "Funnel Freedom dashboard snapshot",
+            "value": "142 referrals; 617 clicks; 22 customers; $872 unpaid",
+            "confidence": "attributed_practitioner_claim",
+            "context": (
+                "Cesar O. Vlogs reads these figures in one demonstration. Other "
+                "demonstrations contain different click and unpaid-earnings figures."
+            ),
+            "source": "Cesar O. Vlogs ([0BMb7aXEG78 @ 00:33:57])",
+        },
+        {
+            "label": "Recurring earnings after promotion stopped",
+            "metric": "Recurring earnings after promotion stopped",
+            "value": "$162 over the past 30 days",
+            "confidence": "attributed_practitioner_claim",
+            "context": (
+                "SEO Jesus reports this amount after approximately three months "
+                "without promotion and credits retained subscribers; an earlier "
+                "passage gives a different earnings figure."
+            ),
+            "source": "SEO Jesus ([lZmPGHIeaf0 @ 00:08:41])",
+        },
     ],
     "sections": [
         {
-            "heading": "1. Sell buyer certainty, not cheap clicks",
-            "epistemic_status": "operating_framework",
+            "id": "practitioner-consensus",
+            "title": "The Practitioner Consensus",
             "paragraphs": [
-                "High-ticket affiliate marketing is a referral business built around costly buyer decisions. You publish useful proof, help a buyer choose, and receive a fee when a merchant validates the agreed event. That event may be a paid software account, a funded business account, or a qualified phone transfer. You do not book the merchant's full sale as your revenue. A buyer spending $10,000 with a merchant creates $10,000 of referred gross merchandise value, or GMV. A ten percent referral fee creates $1,000 of provisional commission. If $100 is reversed, earned commission becomes $900 before your own costs. Paid traffic, research, staff time, hosting, and tools then reduce the money left for the owner. Keep those ledgers separate from the first week; a large sales screenshot is not proof of a profitable publishing firm.",
-                "The moat is a body of evidence that makes a hard purchase easier. Pick a buyer with a budget, a live need, and a deadline. A payroll switch guide for a growing firm is more useful than a list of fifty unrelated apps. Show the setup work, the true price at that firm's size, and the cases where the product fails. Link to the merchant only after the reader can judge fit. Build a named audience and an owned archive so a single search update cannot erase the whole pipeline. Your asset is trusted access to a specific buying moment, not a link that anyone can copy. If the partner cuts its rate, the same research should still help you serve that buyer through another suitable offer without changing your core promise.",
-                "Treat the headline payout as a claim to test, not a price you can bank. Twenty to forty percent recurring software shares can be useful, but the contract may limit eligible plans, months, countries, or accounts. A large one-time bounty can still lose money if the buyer must fund an account and most leads never do. Retail links paying one to four percent leave little room for hands-on help, especially where a program uses a twenty-four-hour tracking window. Those retail terms are an illustrative fragile case, not a rule for every store. Compare net fees per qualified visitor and cash delay, not just percent rates. A smaller fee with a clear buyer need, fewer reversals, and a reliable referral record can support more durable profit than a large but rarely earned reward.",
+                (
+                    "Start with what a customer is worth to the affiliate, not how easy "
+                    "the cheapest purchase looks. Michael Bashi uses a $25 water filter "
+                    "paying 10%: the affiliate receives $2.50 and needs 40 sales every "
+                    "day to reach $100. Their objection is the repeated acquisition "
+                    "burden, especially when advertising or content production consumes "
+                    "the payout [lh5ulbIfANU @ 00:04:08]. Adam Enfroy makes the same "
+                    "volume comparison with a $50 product paying 30%, versus a $2,000 "
+                    "product paying 25%: $15 requires 200 sales for $3,000, while $500 "
+                    "requires six. Enfroy explicitly says high ticket is not simply "
+                    "selecting the most expensive item; traffic requirements, conversion "
+                    "effort, and platform fit belong in the decision "
+                    "[rv01CKLsaY0 @ 00:00:00]. SEO Jesus likewise prioritizes revenue "
+                    "per sale and preferably a recurring element, naming software "
+                    "and sometimes supplements, while also allowing an expensive "
+                    "mattress to work at a modest percentage "
+                    "[lZmPGHIeaf0 @ 00:00:00]. The shared preference is therefore "
+                    "stronger customer economics, not one universal product category. "
+                    "Bashi wants digital subscriptions, Enfroy distinguishes multiple "
+                    "high-value categories, and SEO Jesus looks for both payout "
+                    "and repeat payments. Their starting question is the commission "
+                    "attached to a relevant purchase rather than raw product price "
+                    "or a large audience alone."
+                ),
+                (
+                    "The audience must have a problem the recommendation actually "
+                    "solves. Smart Capital describes B2B buyers researching, testing, "
+                    "and seeking manager approval before purchasing; the content has "
+                    "to serve that slower decision. Direct programs and networks "
+                    "such as PartnerStack, Impact, ShareASale, and CJ are entry "
+                    "routes, but applications can require an existing website or "
+                    "channel, audience information, and a promotion plan. A small, "
+                    "focused audience can outperform a large general audience "
+                    "[LBA0vmJPE5w @ 00:01:59]. Charlie Chang makes the distribution "
+                    "version of that point: 1,000 targeted views can outperform "
+                    "100,000 or 500,000 generic views. Their operating mix includes "
+                    "searchable articles, niche-specific social accounts, YouTube, "
+                    "and email, with attention generation harder than simply "
+                    "producing another piece of content "
+                    "[Gj4Zx6Vj7ko @ 00:13:26]. Rabbit Hole Radio's review playbook "
+                    "starts with the buyer's pain, then presents alternatives, "
+                    "specific firsthand quirks, genuine negatives, and explicit "
+                    "calls to action. It also identifies who should not buy: "
+                    "a three-client freelancer may not need software designed "
+                    "for a 50-client agency [vvzOZL0NXKI @ 00:23:49]. These "
+                    "recommendations put audience fit and decision support ahead "
+                    "of generic praise. The review needs to explain the purchase "
+                    "in the customer's situation, including the cheaper alternative "
+                    "or the case where the premium recommendation is excessive."
+                ),
+                (
+                    "Conversion is a sequence, not just a link dropped in front "
+                    "of strangers. Brian Brewer calls the sequence attract, introduce, "
+                    "sell, and defines marketing around the right product, message, "
+                    "person, and timing. Their examples attach the commission target "
+                    "to actual sales: three $1,000 commissions produce $3,000, while "
+                    "five each month imply $60,000 annually "
+                    "[4hqxtfAXmWc @ 00:02:16]. Cesar O. Vlogs turns the introduction "
+                    "into a capture page collecting name and email, with phone "
+                    "optional, followed by an email-access notice and a bridge "
+                    "page. The visitor receives something useful, such as an ebook "
+                    "or training, rather than being sent immediately to the "
+                    "merchant URL [0BMb7aXEG78 @ 00:12:59]. Jackie Strohl favors "
+                    "a free or low-ticket front door feeding a higher-priced "
+                    "backend sold by somebody else; the affiliate brings prospects "
+                    "into that system [JVbzH2BD68w @ 00:01:24]. Smart Affiliate "
+                    "packages the same division of labor as a turnkey system "
+                    "but still requires consistent short- or long-form content. "
+                    "Their recurring-income argument also depends on customers "
+                    "keeping eligible subscriptions active "
+                    "[WVmpPW1fJPQ @ 00:03:26]. Across these approaches, capture "
+                    "pages, bridge videos, and automated follow-up perform different "
+                    "parts of the sale. Automation handles an established sequence; "
+                    "the affiliate still supplies attention and a reason for the "
+                    "visitor to enter it."
+                ),
             ],
             "table": {
-                "caption": "5-Archetype Referral Publishing Moat & Clawback Comparison",
-                "headers": ["Archetype", "Illustrative Payout Structure", "Durable Competitive Moat", "Primary Scrub / Clawback Trigger"],
+                "caption": "The common operating foundation, with the differences in scope retained.",
+                "headers": [
+                    "Operating decision",
+                    "Practitioner instruction",
+                    "Expert Source",
+                ],
                 "rows": [
-                    ["Recurring B2B SaaS Partners", "20%-40% monthly/annual share (12m to active account life via PartnerStack/Impact)", "Interactive migration & seat-pricing calculators + switching SOPs", "Trial cancellation inside 30-60d lock, plan downgrade, or duplicate AE CRM lead"],
-                    ["B2B Fintech & LLC Bounty Stacks", "$300-$1,800+ sequential CPAs across formation, operating bank, spend card & payroll", "New-entity setup checklist + verified multi-vendor fee benchmarks", "Unfunded bank account (<$500-$1,000 initial deposit), freemail signup, or KYC rejection"],
-                    ["Inbound Pay-Per-Call & Ping-Post", "$75-$300 per >=90s connected call or exclusive auctioned commercial/home lead", "Hyper-local cost estimators, DNI Ringba switches & real-time buyer-cap routing", "Calls <90s, out-of-geo ZIPs, existing customer support inquiries, or duplicate 60d ANI"],
-                    ["Done-For-You Free-Setup Concierge", "$250-$900 stacked partner CPAs funding bounded 60-min CRM/hosting/store setup", "Turnkey pre-built templates + zero-upfront onboarding friction", "Unactivated trial churn before first merchant invoice or incentive-policy violation"],
-                    ["Consumer Retail Cookie Links", "1%-4% one-time cart share on 24h-7d browser cookie (Amazon Associates / retail)", "Thin unless paired with proprietary lab testing or owned newsletter", "24h cookie expiry, checkout coupon-extension poaching, and 15%-25% retail returns"],
+                    [
+                        "Begin with commission economics before chasing cheap product volume",
+                        "Bashi's $25 water filter pays $2.50 at 10%, requiring 40 daily sales to reach the stated $100 target.",
+                        "Michael Bashi ([lh5ulbIfANU @ 00:04:08])",
+                    ],
+                    [
+                        "Compare customer requirements rather than treating price as strategy",
+                        "Enfroy compares 200 sales paying $15 with six sales paying $500 to illustrate the same $3,000 monthly commission target.",
+                        "Adam Enfroy ([rv01CKLsaY0 @ 00:00:00])",
+                    ],
+                    [
+                        "Serve the slower research process behind business software purchases",
+                        "Smart Capital describes trials, internal approval, audience-focused applications, and content that helps buyers make a careful decision.",
+                        "Smart Capital ([LBA0vmJPE5w @ 00:01:59])",
+                    ],
+                    [
+                        "Acquire the right viewers instead of collecting unrelated attention",
+                        "Chang says 1,000 targeted views can outperform much larger generic audiences and recommends niche-specific distribution.",
+                        "Charlie Chang ([Gj4Zx6Vj7ko @ 00:13:26])",
+                    ],
+                    [
+                        "Give visitors a useful reason to share contact information",
+                        "Cesar demonstrates name-and-email capture, an access notice, and a bridge page introducing the next offer.",
+                        "Cesar O. Vlogs ([0BMb7aXEG78 @ 00:12:59])",
+                    ],
+                    [
+                        "Treat recurring payments as dependent on continuing customer subscriptions",
+                        "Beach Bum University says customers leave and recurring revenue grows when new signups exceed departures.",
+                        "Beach Bum University ([fMKmS-H3tBg @ 00:00:00])",
+                    ],
                 ],
             },
         },
         {
-            "heading": "2. Price the work behind each referral",
-            "epistemic_status": "illustrative_model",
+            "id": "exact-street-mechanics",
+            "title": "Exact Street Mechanics, Tools & Numbers",
             "paragraphs": [
-                "Build the funnel from accepted events back to visits. Suppose one thousand high-intent visits produce one hundred partner clicks, twenty trials, and eight paid accounts. At $500 per paid account, the screen may show $4,000 in fees. A ten percent reversal allowance leaves $3,600 of expected earned commissions, or $3.60 per visit. If traffic costs $2 per visit and content plus support costs $900, contribution is $700 before other fixed overhead. This is a planning model, not observed performance. Change the paid-account count from eight to four and expected earned commissions fall to $1,800 while those costs remain $2,900. The same funnel now loses $1,100. A landing page conversion gain is useful only when the added buyers also pass the merchant's rules and remain eligible through the full review period and payout cycle.",
-                "Recurring commissions require a cohort ledger rather than a lifetime-value slogan. Start each month's cohort with paid customers, eligible subscription revenue, your share, refunds, and churn. Ten customers each paying $200 monthly at a thirty percent share produce $600 for that month before reversals. Do not multiply by twelve unless retention and contract duration support that forecast. Expansion can raise the base; discounts and downgrades can lower it. Some programs stop paying after a year or exclude upgrades. Record the last eligible month and distinguish a forecast from an earned receivable. Match receipts to the original cohort so late reversals do not disappear inside a strong new month. That discipline also reveals whether setup help improves real retention or simply gets more weak accounts through the first paid billing date at your expense.",
-                "Cash timing can break a profitable publisher. A merchant may validate events at month end, hold disputed fees, and pay weeks later while your traffic bill is due now. Keep a separate view of provisional fees, validated receivables, cash received, and reserves for later clawbacks. Set a spend ceiling from available cash after payroll and the expected delay, not from the current dashboard balance. Ask whether the partner can offset reversals against future payouts and whether a negative balance survives termination. Avoid funding a second channel with cash you have not collected from the first. Contractor hours are real costs even when the founder does the work during a test. Log them at a stated rate so the next hire does not reveal that the celebrated margin was merely unpaid labor hidden in the model.",
+                (
+                    "Offer discovery has three concrete routes. Michael Bashi "
+                    "starts with existing professional work: an accountant or "
+                    "bookkeeper serving ten monthly clients searches for complementary "
+                    "software or asks AI, then evaluates usefulness, affordability, "
+                    "and willingness to use it rather than the highest percentage. "
+                    "Their Gemini examples include Flolu at 40% and Quaderno at "
+                    "30% recurring [lh5ulbIfANU @ 00:09:14]. Beach Bum University "
+                    "uses Vid IQ's new-chat interface with Max selected, then "
+                    "requests reputable email-marketing SaaS, review and comparison "
+                    "videos, tutorials, affiliate programs, payout terms, cookie "
+                    "periods, and signup opportunities. The prompt includes lead-magnet "
+                    "pages, bridge pages, and all-in-one platforms such as "
+                    "ClickFunnels and GoHigh Level [fMKmS-H3tBg @ 00:04:19]. "
+                    "SEO Jesus works backward from competitors: inspect LinkedIn "
+                    "Pulse or Medium in Ahrefs, filter keywords containing best "
+                    "OR review using any rule, select the United States, and "
+                    "examine recurring top-three recommendations. Hovering links "
+                    "can expose tracking strings, although the speaker also "
+                    "acknowledges redirects and sponsored placements "
+                    "[lZmPGHIeaf0 @ 00:01:36]. Bashi's route begins with clients "
+                    "already served; Beach Bum's begins with AI-assisted program "
+                    "and content research; SEO Jesus begins with visible commercial "
+                    "placements. Each identifies candidate offers through a "
+                    "specific audience or competitor context rather than an "
+                    "unqualified list of high commission percentages."
+                ),
+                (
+                    "Read the commission structure before choosing the content "
+                    "angle. Smart Capital's beginner inventory distinguishes Kinsta's "
+                    "reported $50–$500 referral payment plus 10% monthly recurring, "
+                    "WP Engine's $200 or first-month payment if greater, and "
+                    "HubSpot's 30% recurring for up to the first year. Their "
+                    "instruction is to check current terms before building "
+                    "content around a number [GCv_2yM5JtI @ 00:02:38]. Charlie "
+                    "Chang demonstrates the administration inside Impact: open "
+                    "Brands, Find Brands, filter by category or payout, read "
+                    "merchant terms, apply, complete the requested information, "
+                    "and create a tracking link after acceptance. The dashboard "
+                    "exposes clicks, actions, payouts, conversion rate, and earnings "
+                    "per click [Gj4Zx6Vj7ko @ 00:09:56]. Adam Enfroy supplies "
+                    "the recurring arithmetic: a $300 monthly subscription at "
+                    "40% pays $120 monthly, or $1,440 annually per customer. "
+                    "They report joining more than 287 software programs before "
+                    "concentrating on two or three [rv01CKLsaY0 @ 00:01:23]. "
+                    "The commercial choices are not interchangeable: a fixed "
+                    "bounty, a first-payment commission, a recurring payment "
+                    "limited to one year, and a continuing subscription share "
+                    "describe different arrangements. Chang's dashboard workflow "
+                    "makes applications and links operational, while Enfroy's "
+                    "narrower current focus contrasts with their earlier breadth."
+                ),
+                (
+                    "Build the path from attention to follow-up before sending "
+                    "visitors. Cesar O. Vlogs opens Funnel Freedom's Affiliate "
+                    "Link Settings, inserts the supporting offer links, and "
+                    "uses the Freedom Ascension or Mapping Your 9-to-5 Exit "
+                    "Strategy funnel. Its free-course opt-in, bridge page, and "
+                    "member modules replace the manual combination of ClickFunnels "
+                    "and GetResponse [0BMb7aXEG78 @ 00:28:28]. Smart Affiliate "
+                    "uses HBA's Affiliate tab, Start Here, and Affiliate Fast "
+                    "Start, then copies the hard-coded capture link also "
+                    "available under My Business and My Links. Name and email "
+                    "entry leads to Get Instant Access and the Triple Residual "
+                    "sales page; the dashboard displays clicks, unique clicks, "
+                    "and leads [WVmpPW1fJPQ @ 00:05:55]. Brian Brewer's "
+                    "high-ticket launch used a five-to-ten-minute video sales "
+                    "letter for a $2,000 done-for-you print-on-demand store "
+                    "paying $1,000 per referral. Existing email subscribers, "
+                    "new YouTube content, or advertisements could feed that "
+                    "website-hosted presentation, without individual telephone, "
+                    "Messenger, or email closing [4hqxtfAXmWc @ 00:13:21]. "
+                    "These are distinct implementations: Cesar supplies a "
+                    "course-centered introduction, HBA supplies combined product "
+                    "selling, and Brewer introduces a specific store-building "
+                    "solution. The common execution is an identifiable entry "
+                    "page followed by an explanation and a next action, "
+                    "rather than expecting an unexplained affiliate URL to "
+                    "carry the entire sale."
+                ),
             ],
+            "table": {
+                "caption": "Discovery, setup, and selling mechanics described by the practitioners.",
+                "headers": [
+                    "Execution point",
+                    "Exact workflow or stated economics",
+                    "Expert Source",
+                ],
+                "rows": [
+                    [
+                        "Run a targeted AI search for recurring software opportunities",
+                        "Open a new Vid IQ chat, select Max, and request relevant SaaS, affiliate terms, cookies, review videos, and signup links.",
+                        "Beach Bum University ([fMKmS-H3tBg @ 00:02:30]); Beach Bum University ([fMKmS-H3tBg @ 00:04:19])",
+                    ],
+                    [
+                        "Reverse engineer commercial pages already recommending profitable looking offers",
+                        "Use Ahrefs on LinkedIn Pulse or Medium, filter best OR review with any rule, and inspect repeated recommendations and tracking links.",
+                        "SEO Jesus ([lZmPGHIeaf0 @ 00:01:36])",
+                    ],
+                    [
+                        "Apply through the merchant discovery interface before generating links",
+                        "In Impact, use Brands, Find Brands, filters, merchant terms, Apply, the requested form, and Create Link after acceptance.",
+                        "Charlie Chang ([Gj4Zx6Vj7ko @ 00:09:56])",
+                    ],
+                    [
+                        "Replace the demonstrated placeholder delay before publishing email automation",
+                        "Cesar adds Send Message and Wait elements in GetResponse, replaces a 300-day placeholder with one day, then saves and publishes.",
+                        "Cesar O. Vlogs ([0BMb7aXEG78 @ 00:20:54])",
+                    ],
+                    [
+                        "Map a custom domain onto the turnkey capture destination",
+                        "Smart Affiliate uses Domain Scout, keeps capture-page mapping selected, and shows a domain priced at $12 per year.",
+                        "Smart Affiliate ([WVmpPW1fJPQ @ 00:12:13])",
+                    ],
+                    [
+                        "Trigger additional follow up after an interested subscriber clicks",
+                        "Brewer describes a secondary autoresponder campaign, reminders, objection handling, alternative long-form selling, and Facebook-pixel retargeting.",
+                        "Brian Brewer ([4hqxtfAXmWc @ 00:17:33])",
+                    ],
+                ],
+            },
             "callout": {
                 "kind": "INSIDER PRO-TIPS",
-                "title": "Field-Tested Offer Selection & Stacking Tactics",
-                "body": "Experienced referral publishers underwrite contract mechanics and ecosystem sequences before writing a single word of copy:",
+                "title": "Small execution details the practitioners actually use",
+                "body": (
+                    "Use the demonstrated settings, content distinctions, and "
+                    "diagnostic checks rather than treating every tool as interchangeable."
+                ),
                 "items": [
-                    "Audit 'Sunset Clauses' Before Promoting SaaS: Check whether '30% recurring' means lifetime of the active customer or caps at 12 months—a uncapped 20% B2B share beats a 12-month 35% share by Month 19 on sticky workflow software.",
-                    "Sequence Four Non-Competing Bounties on One Trigger Event: A single new-LLC founder legitimately needs registered-agent formation ($150-$300), business checking ($300-$400), corporate spend card ($400-$600), and multi-state payroll ($500-$750)—turning one comparison guide into a $1,350+ potential stack.",
-                    "Ask Partner Managers for 'Landing Page Direct-to-Calculator' Links: Default partner links dump traffic on generic homepages; request deep-link parameters to the merchant's pricing or interactive demo page to lift click-to-trial conversion 30%-60%.",
-                    "Check CRM Deduplication Windows Upfront: Enterprise B2B programs routinely scrub leads whose email domain touched an SDR within 90-180 days; model a 12%-18% CRM-dedupe haircut into day-one unit math.",
-                ],
-            },
-        },
-        {
-            "heading": "3. Match the offer rail to the buyer's job",
-            "epistemic_status": "illustrative_model",
-            "paragraphs": [
-                "Use the matrix as a research queue, not a directory of promised deals. Each payout band is an illustrative market range requiring live partner-contract verification. A listed share applies to eligible revenue, not automatically to the buyer's whole bill. Each rail describes a possible tracking method rather than a verified window. Get the actual duration, attribution priority, cross-device rules, and exclusions from each partner. Test a referral with permission and reconcile its event identifier before buying traffic. For ping-post, the ping offers limited lead attributes for a bid; the post delivers the lead to the selected buyer under agreed rules. Do not distribute the same exclusive lead to several buyers. A bid is not a payable event until acceptance, qualification, duplicate checks, and any dispute period are resolved under the buyer's contract.",
-                "The mapped play free_llc_fintech_bounty_stacking serves one founder across distinct eligible needs rather than multiplying rewards for the same event. In an illustrative cohort, forty formation referrals earn $300 each, twenty separately eligible funded accounts earn $400 each, and ten activated bookkeeping subscriptions earn $200 each. That is $22,000 provisional commission, not forty times the maximum advertised stack. Applying a fifteen percent blended reversal allowance leaves $18,700 before acquisition and service costs; use separate observed rates once data exists. Never assume all partners permit stacking, assisted onboarding, or incentives. Verify new-customer status and independent product suitability for each referral. Explain that a free formation service may still leave state fees, optional services, and ongoing obligations payable. Do not steer a founder into an unnecessary entity or financial product merely to unlock another fee.",
-                "For high_velocity_affiliate_funnels, velocity means shortening the path from a real buying question to a suitable offer, not pushing unqualified volume. Start with a comparison, a cost calculator, and a clear next step tied to one buyer segment. An illustrative one thousand visits generating sixty inbound calls, thirty-six qualified transfers, and thirty accepted payable calls at $150 yields $4,500 provisional fees. A ten percent subsequent reversal allowance leaves $4,050 earned, or $4.05 per visit before costs. Log why six qualified transfers were rejected rather than blending them into the later reversal rate. Check geography, business hours, service need, duplicates, and buyer capacity before routing. Set caps when a buyer cannot answer. A faster funnel that creates abandoned calls can lower realized yield while raising complaints and wasting the publisher's paid acquisition budget.",
-            ],
-            "table": {
-                "caption": "20-Category High-Ticket Recurring SaaS, Fintech & Ping-Post Offer Matrix — illustrative market ranges requiring live partner-contract verification; rails and windows vary by contract",
-                "headers": ["Offer Vertical & Representative Ecosystem", "Commission Structure", "Typical Payout Range", "Attribution Window / Rail", "Reversal / Clawback Trigger", "Buyer-Intent Entry Point"],
-                "rows": [
-                    ["B2B Sales CRM (HubSpot / Pipedrive / Close tier)", "Recurring or tiered CPA", "20%-30% (12m-lifetime) or $250-$1,000", "PartnerStack / Impact (90d ps_xid / irclickid)", "30-60d refund or existing AE CRM opportunity", "'[Incumbent] CRM seat cost calculator 25 reps'"],
-                    ["Email & Marketing Automation (ActiveCampaign / Kit / Klaviyo tier)", "Monthly recurring share", "20%-35% recurring on active subscriber tier", "PartnerStack / FirstPromoter (60-90d S2S)", "Trial churn, spam-policy ban, or chargeback", "'Migrate 50k subscribers from Mailchimp cost'"],
-                    ["Customer Support & Helpdesk (Gorgias / Intercom / Zendesk tier)", "Recurring or SQL+Won CPA", "20%-30% 12-24m share or $300-$1,200 CPA", "PartnerStack deal-reg + S2S webhook", "Cancellation before 2nd paid invoice", "'Best e-commerce helpdesk ticket-volume pricing'"],
-                    ["Work & Project OS (Monday / ClickUp / Smartsheet tier)", "Tiered seat CPA + share", "$100-$600 seat-tier CPA or 20%-25% 12m", "Impact.com / PartnerStack (45-90d window)", "Free-tier signup never upgrading to >=5 seats", "'Asana vs Monday enterprise seat calculator'"],
-                    ["Managed Cloud & WordPress Hosting (Kinsta / WP Engine / Cloudways)", "Hybrid CPA + recurring", "$150-$500 CPA + 5%-10% monthly residual", "Custom S2S / Impact (60-90d click_id)", "60-day money-back cancel or abuse suspension", "'High-traffic WooCommerce hosting migration speed'"],
-                    ["Compliance & SOC 2 Automation (Vanta / Drata / Sprinto tier)", "Qualified demo + closed-won", "$250-$500 SQL demo + $1,000-$2,500 won", "PartnerStack / direct partner portal S2S", "Company <10 staff, freemail, or open SDR lead", "'SOC 2 Type II software + auditor total cost'"],
-                    ["Cloud Backup & Disaster Recovery (Acronis /MSP backup tier)", "Recurring seat/TB share", "20%-30% recurring or $200-$800 B2B CPA", "Impact / Everflow S2S postback (60d)", "Trial expiry or annual prepay chargeback", "'Immutable M365 & Postgres backup pricing'"],
-                    ["Product & Attribution Analytics (PostHog / Amplitude /ClickFlare)", "Recurring revenue share", "20%-30% recurring across 12m-lifetime", "FirstPromoter / Everflow S2S sub1", "Free-tier stay or prorated billing credit", "'GA4 alternative B2B event volume calculator'"],
-                    ["SMB Cloud Accounting (QuickBooks / Xero / Puzzle tier)", "CPA per paid subscription", "$100-$350 CPA or 20%-30% 12m share", "CJ / Impact / PartnerStack (45-90d)", "Account closed inside 60d lock window", "'Switch mid-year from desktop to cloud accounting'"],
-                    ["Multi-State Payroll & EOR (Rippling / Gusto / Deel tier)", "Demo + funded-payroll CPA", "$300-$1,500 per first funded payroll run", "PartnerStack / Impact work-email S2S", "Zero W-2/1099 run within 90d or <3 headcount", "'Hiring first out-of-state employee payroll cost'"],
-                    ["B2B Fintech Operating Banking (Mercury / Relay / Novo tier)", "Funded-account CPA", "$200-$500 after minimum qualifying deposit", "PartnerStack / Impact S2S application ID", "KYC decline, sole-prop mismatch, or $0 deposit", "'Best zero-wire-fee LLC operating bank account'"],
-                    ["Payment Processing & ISO Orchestration (B2B MID / Payfac)", "Upfront + bps residual", "$300-$1,200 activation + 5-25 bps residual", "Direct ISO portal / Everflow S2S", "Zero settled volume, reserve freeze, or MATCH", "'High-volume B2B ACH & card interchange calculator'"],
-                    ["Corporate Spend Cards (Ramp / Brex / Divvy tier)", "Approved & spend-active CPA", "$350-$1,000 upon card approval + spend hurdle", "PartnerStack / Impact corporate-domain S2S", "Underwriting revenue-floor fail (<$25k cash)", "'Corporate card 1.5%+ cashback & ERP sync comparison'"],
-                    ["LLC Formation & Registered Agent (Northwest / Bizee tier)", "Order CPA or revshare", "$100-$300 per completed state filing order", "Impact / Awin / direct S2S subId1 (60d)", "State filing refund or duplicate entity order", "'State-by-state LLC filing + registered agent fee'"],
-                    ["Commercial Working Capital & Equipment Finance", "Funded-deal % or CPA", "$400-$2,500+ per funded commercial facility", "Everflow / direct lender portal lead ID", "Declined underwriting or unaccepted loan offer", "'Equipment financing APR vs Section 179 calculator'"],
-                    ["Residential & Commercial HVAC Replacement Calls", "Pay-Per-Call (>=90s)", "$75-$220 per qualified >=90s live transfer", "Ringba / Phonexa DNI pool + IVR filter", "<90s duration, renter/repair-only, or out-of-ZIP", "'Emergency 4-ton heat pump replacement cost [City]'"],
-                    ["Storm & Full-Roof Replacement Ping-Post Leads", "Exclusive / shared ping-post", "$65-$260 per accepted homeowner inspection lead", "Leadspedia / Boberdoo + TrustedForm cert", "Invalid phone, renter, mobile home, or 30d dupe", "'Hail damage roof replacement estimate calculator'"],
-                    ["Residential & Commercial Solar Installation Leads", "Ping-post + appointment CPA", "$80-$300 accepted lead ($1,000+ closed install)", "Boberdoo / Phonexa S2S + utility-bill screen", "Shade fail, <$150/mo utility bill, or TCPA gap", "'Net-metering solar payback & kWh roof calculator'"],
-                    ["Commercial Auto, Fleet & Cyber Insurance Calls", "Pay-Per-Call (>=90s-120s)", "$90-$275 per licensed-agent connected call", "Ringba real-time concurrency + ZIP router", "Personal-auto inquiry, lapsed DOT, or after-hours", "'New DOT authority commercial truck insurance quote'"],
-                    ["Business Fiber, Dedicated Internet & UCaaS VoIP", "Seat / circuit spiff + residual", "$250-$1,500+ circuit spiff or 12%-18% residual", "Master-agent (TSD) deal-reg + circuit ID", "Unserviceable building lit-fiber check or cancel", "'Dedicated 1Gbps DIA fiber availability & SLA cost'"],
+                    (
+                        "In Vid IQ, open a new chat and select Max rather than "
+                        "Regular or Deep Thinking for the offer-discovery exercise. "
+                        "[Beach Bum University — fMKmS-H3tBg @ 00:02:30]"
+                    ),
+                    (
+                        "In Ahrefs, search for best OR review with any rule; "
+                        "requiring both words misses the intended commercial queries. "
+                        "[SEO Jesus — lZmPGHIeaf0 @ 00:02:15]"
+                    ),
+                    (
+                        "Include value-only emails without links; Cesar labels "
+                        "one message explicitly as a value email rather than "
+                        "another promotion. [Cesar O. Vlogs — 0BMb7aXEG78 @ 00:22:50]"
+                    ),
+                    (
+                        "When Search Console shows impressions but almost no "
+                        "clicks, test the title and meta description rather "
+                        "than automatically rewriting the full article. "
+                        "[Rabbit Hole Radio — MIx20-uBG6s @ 00:39:40]"
+                    ),
                 ],
             },
             "sop_steps": [
-                {"step": 1, "title": "Define fit", "action": "Write buyer criteria.", "detail": "Budget, geography, need, and timing."},
-                {"step": 2, "title": "Verify terms", "action": "Save the current contract.", "detail": "Rates, windows, incentives, and reversals."},
-                {"step": 3, "title": "Instrument", "action": "Assign referral identifiers.", "detail": "Connect source to accepted event without unnecessary personal data."},
-                {"step": 4, "title": "Reconcile", "action": "Match payouts to cohorts.", "detail": "Resolve rejected events before increasing spend."},
+                {
+                    "step": 1,
+                    "title": "Choose a focused problem and trial three tools",
+                    "action": "Begin with one software niche and a small candidate set.",
+                    "detail": (
+                        "Smart Capital assigns days 1–14 to selecting a niche, "
+                        "identifying three tools, and using trials; days 15–30 "
+                        "cover applications and a first review. "
+                        "[Smart Capital — LBA0vmJPE5w @ 00:12:17]"
+                    ),
+                },
+                {
+                    "step": 2,
+                    "title": "Inspect terms and obtain the tracking link",
+                    "action": "Use the network's merchant application workflow.",
+                    "detail": (
+                        "In Impact, open Brands, Find Brands, apply category or "
+                        "payout filters, read merchant terms, submit the requested "
+                        "application, and use Create Link after acceptance. "
+                        "[Charlie Chang — Gj4Zx6Vj7ko @ 00:09:56]"
+                    ),
+                },
+                {
+                    "step": 3,
+                    "title": "Connect the capture and follow-up system",
+                    "action": "Populate the affiliate settings before generating traffic.",
+                    "detail": (
+                        "Cesar instructs affiliates to click Update Affiliate Links "
+                        "so course buttons and subsequently emailed landing pages "
+                        "use their links. [Cesar O. Vlogs — 0BMb7aXEG78 @ 00:44:43]"
+                    ),
+                },
+                {
+                    "step": 4,
+                    "title": "Publish buyer-intent content and improve the winners",
+                    "action": "Choose a sustainable platform and create the first ten pieces.",
+                    "detail": (
+                        "Enfroy recommends choosing a category and platform, "
+                        "researching programs, publishing ten buyer-intent pieces, "
+                        "analyzing results, and doubling down rather than scattering "
+                        "effort across niches and platforms. "
+                        "[Adam Enfroy — rv01CKLsaY0 @ 00:15:26]"
+                    ),
+                },
             ],
         },
         {
-            "heading": "4. Make concierge service earn its own margin",
-            "epistemic_status": "operating_framework",
+            "id": "disagreements-alternative-playbooks",
+            "title": "Where Practitioners Disagree & Alternative Playbooks",
             "paragraphs": [
-                "The mapped play free_trial_concierge_cpa_arbitrage trades useful setup work for a higher share of legitimate qualified accounts. It does not mean collecting fees for fabricated trials. Offer a defined service such as importing a clean contact file, configuring a booking page, or walking a buyer through an initial report. Keep the account in the buyer's name and avoid taking passwords or controlling funds. In an illustrative cohort, fifty assisted trials produce twenty qualifying paid accounts at $250 each. Ten percent reversals reduce $5,000 provisional fees to $4,500 earned commissions. At one hour of help per trial and $40 per hour, labor costs $2,000. Another $1,500 of acquisition leaves $1,000 before tools and overhead. If support time doubles, that contribution becomes negative. Define the free service boundary before offering it to anyone at scale.",
-                "Disclose the commercial relationship where the recommendation is made and before the reader acts on it. Plain wording can say: We may earn a commission if you buy through this link. For concierge offers, explain that partner compensation funds the stated setup service and identify costs the buyer still pays. The FTC Endorsement Guides address material connections and truthful endorsements; section 45 supplies the underlying prohibition on unfair or deceptive practices. Neither turns a weak product recommendation into a sound one merely because a disclosure exists. Show the basis of comparisons and do not claim firsthand testing you have not done. Date price checks and correct expired offers. Separate an editorial ranking from sponsorship and document why the recommended product fits the stated buyer rather than simply paying the largest available bounty.",
-                "Treat contact permission and routing quality as operating inputs, not paperwork added after a complaint. An inbound request does not automatically authorize every later marketing call or text. Section 64.1200 contains restrictions whose application depends on the call's purpose, technology, recipient, and consent; state rules may add obligations. Establish the applicable requirements before any outbound follow-up, honor revocations, and retain evidence of the permission actually obtained. Tell buyers who will receive their inquiry and do not sell it onward beyond the represented scope. Keep contact data out of broad analytics logs and limit retention to a defined business need. For recorded calls, evaluate recording requirements separately. The commercial test remains simple: can you explain why this person expected this provider to contact them about this exact need at this point in time?",
+                (
+                    "The largest offer disagreement is software retention versus "
+                    "high-ticket education and closing. Michael Bashi rejects "
+                    "courses, coaching, and telephone closing as an operating "
+                    "model, preferring useful web-based services with monthly "
+                    "commissions lasting while the referral remains a customer "
+                    "[lh5ulbIfANU @ 00:06:42]. Aaron Chen explicitly teaches "
+                    "the mechanisms Bashi avoids: a one-to-two-hour webinar, "
+                    "a book-a-call funnel beginning with a five-to-ten-minute "
+                    "video, or extended nurture before larger purchases. The "
+                    "call route can lead to a one-to-two-hour Zoom conversation "
+                    "for a $3,000–$20,000 program, compensating both affiliate "
+                    "and closer [HNlC0mNMS60 @ 00:05:18]. Jackie Strohl "
+                    "requires a value ladder with an accessible front end, "
+                    "higher-ticket backend products, another party doing the "
+                    "backend selling, and commissions on those later purchases "
+                    "[JVbzH2BD68w @ 00:02:55]. The Infamous Joel focuses "
+                    "instead on one offer paying preferably $1,000 or more, "
+                    "with $500 as their floor, and recommends staying with "
+                    "that offer until substantial earnings "
+                    "[YVPPIdIHYpo @ 00:08:02]. These positions should remain "
+                    "separate. Bashi wants continuing utility and subscriptions; "
+                    "Chen explains intensive selling mechanisms; Strohl wants "
+                    "delegated backend conversion; Joel prioritizes a large "
+                    "commission on a single concentrated offer. The speakers "
+                    "do not agree that the same offer structure suits "
+                    "every beginner or business."
+                ),
+                (
+                    "Physical products and marketplaces also divide the field. "
+                    "Charlie Chang recommends Amazon Associates as a practical "
+                    "program, lists category-dependent rates, and notes that "
+                    "other items purchased after the referral can also earn "
+                    "commissions. Their alternatives include Impact Radius, "
+                    "ShareASale, PartnerStack, and independent brand programs "
+                    "[Gj4Zx6Vj7ko @ 00:07:54]. Adam Enfroy makes a narrower "
+                    "physical-product case around expensive hobby and professional "
+                    "equipment: boats, RVs, outdoor equipment, and hot tubs. "
+                    "Their examples include $5,000 at 5% paying $250 and "
+                    "$15,000 at 8% paying $1,200, while acknowledging that "
+                    "these purchases do not supply recurring revenue "
+                    "[rv01CKLsaY0 @ 00:02:36]. Beach Bum University rejects "
+                    "ClickBank, JVZoo, and Warrior Plus, alleging a launch-day "
+                    "buying rush followed by weak support and high refunds, "
+                    "and prefers established SaaS already attracting promotion "
+                    "[fMKmS-H3tBg @ 00:08:35]. Cesar O. Vlogs nevertheless "
+                    "uses those marketplaces alongside Digistore24 and ShareASale, "
+                    "then checks MunchEye for launch dates, front-end prices, "
+                    "commissions, networks, niches, and JV pages "
+                    "[0BMb7aXEG78 @ 00:53:08]. Chang's broad starting point, "
+                    "Enfroy's expensive-goods filter, Beach Bum's established-software "
+                    "preference, and Cesar's launch calendar are distinct discovery "
+                    "and selection playbooks. Marketplace membership alone does "
+                    "not resolve the disagreement about support, product "
+                    "quality, or whether a launch fits an existing audience."
+                ),
+                (
+                    "Distribution sequencing and done-for-you economics introduce "
+                    "another split. Rabbit Hole Radio's first blueprint argues "
+                    "for one niche and platform until consistent revenue, "
+                    "followed by reinvestment and diversification "
+                    "[vvzOZL0NXKI @ 00:15:08]. Its deep dive instead "
+                    "recommends stacking YouTube, Pinterest infographics, and "
+                    "helpful Reddit participation while search rankings mature; "
+                    "it distinguishes a full useful answer from raw affiliate "
+                    "posting that can attract bans "
+                    "[MIx20-uBG6s @ 00:39:40]. MrOrangeDream's Exodus Elite "
+                    "presentation makes the purchased level central to payout "
+                    "eligibility. In their example, a $2,000 participant above "
+                    "a $100 participant receives a $1,900 differential when "
+                    "the latter sells G2000, while the lower-level participant "
+                    "receives $100. Upgrades also generate commissions, and "
+                    "upgrading requires the product-price difference plus the "
+                    "administration-fee difference [H5OtlkBchxU @ 00:07:15]. "
+                    "Smart Affiliate presents a different paid-tool arrangement: "
+                    "$10 monthly for the app and capture link, $25 monthly "
+                    "for the funnel builder, or a $35 monthly starter pack "
+                    "including a two-week Premium trial. They acknowledge free "
+                    "affiliate networks but argue the payment buys tools and "
+                    "education [WVmpPW1fJPQ @ 00:09:37]. One-platform sequencing "
+                    "and early traffic stacking are alternatives, just as "
+                    "level-dependent commissions and recurring tool subscriptions "
+                    "are different commercial commitments. Neither done-for-you "
+                    "presentation turns those commitments into the same "
+                    "compensation arrangement."
+                ),
             ],
-            "callout": {
-                "kind": "OPERATOR GATE", "title": "Buy more traffic only after settlement",
-                "body": "Use a completed payout cohort to test the offer's economics before expanding spend.",
-                "items": ["Partner explicitly permits assisted setup and the proposed incentive.", "Buyer sees the relationship and remaining fees before acting.", "Accepted-event yield covers service time, reversals, and acquisition.", "Routing and follow-up match the buyer's request and applicable calling rules."],
-            },
             "table": {
-                "caption": "Forensic Funnel & Ledger Failure Map",
-                "headers": ["Naive Beginner Trap", "Forensic Detection Metric", "Durable Operator Fallback"],
+                "caption": "Conflicting recommendations and alternative operating models, without forcing consensus.",
+                "headers": [
+                    "Point of disagreement",
+                    "Contrasting practitioner positions",
+                    "Expert Source",
+                ],
                 "rows": [
-                    ["Spending provisional network dashboard fees before ACH settlement", "Cleared ACH cash divided by provisional partner dashboard commissions", "Spend strictly against aged post-lock cohorts with 10-15% scrub reserves"],
-                    ["Assuming every LLC founder triggers all 4 fintech co-reg bounties", "Qualified funded events per 100 entity formations by partner tier", "Underwrite each banking, card, payroll, and tax offer independently"],
-                    ["Offering unbounded free setup concierge help for trial bounties", "Logged concierge support minutes divided by cleared commission dollars", "Scope one fixed 20-minute template install with written handoff boundary"],
-                    ["Routing pay-per-call traffic solely to the highest headline bid", "Billable >90s call acceptance rate multiplied by effective payout", "Weight buyer routing by real-time concurrency, hours, and scrub rate"],
-                    ["Booking referred merchant retail GMV as publisher top-line revenue", "Publisher commission-to-GMV ratio and separate receivable sub-ledgers", "Keep merchant GMV off the income statement; book net earned fees only"],
+                    [
+                        "Choose recurring software or use high ticket sales calls",
+                        "Bashi rejects coaching and telephone closing; Chen teaches webinar, booked-call, and longer nurture mechanisms for larger purchases.",
+                        "Michael Bashi ([lh5ulbIfANU @ 00:06:42]); Aaron Chen ([HNlC0mNMS60 @ 00:05:18])",
+                    ],
+                    [
+                        "Discover programs through familiar searches or replace discovery with AI",
+                        "Strohl recommends Google searches for niche plus affiliate programs; Beach Bum calls older discovery methods outdated and favors AI.",
+                        "Jackie Strohl ([JVbzH2BD68w @ 00:02:39]); Beach Bum University ([fMKmS-H3tBg @ 00:01:11])",
+                    ],
+                    [
+                        "Use digital launch marketplaces or avoid their alleged weaknesses",
+                        "Strohl recommends ClickBank, JVZoo, and Warrior Plus; Beach Bum criticizes those networks for alleged support and refund problems.",
+                        "Jackie Strohl ([JVbzH2BD68w @ 00:02:55]); Beach Bum University ([fMKmS-H3tBg @ 00:08:35])",
+                    ],
+                    [
+                        "Concentrate on one offer or build a connected product ecosystem",
+                        "Joel recommends one high-payout offer; Cesar counts 14 promotable products inside their demonstrated affiliate system.",
+                        "The Infamous Joel ([YVPPIdIHYpo @ 00:08:02]); Cesar O. Vlogs ([0BMb7aXEG78 @ 01:27:24])",
+                    ],
+                    [
+                        "Build one traffic channel first or stack distribution while waiting",
+                        "One Rabbit Hole episode advises singular focus before diversification; the deep dive adds YouTube, Pinterest, and Reddit while SEO develops.",
+                        "Rabbit Hole Radio ([vvzOZL0NXKI @ 00:15:08]); Rabbit Hole Radio ([MIx20-uBG6s @ 00:39:40])",
+                    ],
+                    [
+                        "Understand whether payouts depend on levels or subscribed tools",
+                        "MrOrangeDream explains purchased-level eligibility and differential roll-ups; Smart Affiliate describes monthly app, builder, and starter-pack pricing.",
+                        "MrOrangeDream ([H5OtlkBchxU @ 00:07:15]); Smart Affiliate ([WVmpPW1fJPQ @ 00:09:37])",
+                    ],
                 ],
             },
         },
         {
-            "heading": "5. Build the annual profit bridge before scaling",
-            "epistemic_status": "illustrative_model",
+            "id": "failure-modes-economics",
+            "title": "Firsthand Failure Modes, Traps & Economics Checks",
             "paragraphs": [
-                "Candidate #24's three annual scenarios describe publisher economics, not merchant sales volume. Gross earned commissions means affiliate revenue after reversals but before the publisher's operating costs in this model. The conservative case earns $50,000 and keeps twenty percent, or $10,000. The base earns $325,000 and keeps thirty-five percent, or $113,750. The scaled case earns $600,000 and keeps fifty percent, or $300,000. The table makes the implied cost envelope visible rather than assuming that margin appears automatically with volume. These are independent planning cases, not successive years or a forecast. A single blended commission rate cannot recover their referred GMV because recurring shares, fixed bounties, and calls use different denominators. Track merchant sales separately where available and leave unknown GMV unknown. Never manufacture a merchant revenue total by dividing all commissions by an arbitrary percentage.",
-                "Staffing labels describe capacity, not a promise that this budget buys several full salaries. FT means a full-time role; C means a contractor with a defined hours budget. In the conservative and base cases, the one full-time role is assumed to be the owner, whose compensation is the residual profit rather than an additional salary expense. The conservative case therefore pays that owner only $10,000 for the year and is not an attractive full-time livelihood. Contractor spend covers two limited scopes, not two full-time workers. The scaled case includes the owner plus one employee within its labor budget, with three contractors sharing the remaining allocation. If local compensation, payroll burdens, or workload exceed those assumptions, raise expenses and lower profit. Owner profit here is before owner-level income taxes, debt service, and discretionary distributions.",
-                "Run the first month as an evidence sequence. In week one, choose a narrow buyer segment, obtain current partner terms, and publish the comparison that answers its most expensive unresolved question. In week two, send a capped traffic sample and inspect the path from source to accepted event. In week three, review qualification failures and support minutes, then fix the largest source of waste. In week four, compare provisional fees with validated receivables; if settlement takes longer, keep the test capped until the first cash reconciliation arrives. Expansion requires positive contribution after reversals and service costs, not just rising clicks. Build a reserve sized to the actual payout delay and contractual clawback exposure. Add a second suitable partner only after the first operating loop works, reducing concentration without turning one well-served audience into a generic catalogue of unrelated offers.",
+                (
+                    "The clearest firsthand bottleneck is traffic that does not "
+                    "become profitable demand. Cesar O. Vlogs says their first "
+                    "affiliate commission took a year while they were uploading "
+                    "one video daily. Their warning distinguishes running "
+                    "advertisements from running profitable advertisements and "
+                    "describes affiliate marketing as simple to explain but "
+                    "not easy or instant [0BMb7aXEG78 @ 01:33:39]. Brian "
+                    "Brewer describes an earlier Amazon inventory commitment "
+                    "of $12,000, eight weeks of sourcing, another $2,000 "
+                    "in fees, competitors growing from three to approximately "
+                    "33, and placement on pages three or four "
+                    "[4hqxtfAXmWc @ 00:28:35]. Brewer also unlisted Shopify-related "
+                    "videos after Facebook advertising became expensive and "
+                    "Chinese suppliers increasingly shipped directly, despite "
+                    "those videos having accumulated substantial views "
+                    "[4hqxtfAXmWc @ 00:09:02]. Adam Enfroy's expectations "
+                    "likewise include front-loaded production and maintenance: "
+                    "blogs can require six to twelve months for consistent "
+                    "traffic, while their YouTube illustration uses one video "
+                    "weekly and 52 in a year [rv01CKLsaY0 @ 00:15:26]. "
+                    "Cesar's daily posting experience and Brewer's withdrawal "
+                    "from an earlier model are operational reversals, not "
+                    "just warnings about motivation. Consistency did not give "
+                    "Cesar an immediate commission, and prior views did not "
+                    "stop Brewer from abandoning an offer environment whose "
+                    "economics had changed."
+                ),
+                (
+                    "Recurring is only useful when customers remain. SEO Jesus "
+                    "reports $162 over the past 30 days after roughly three "
+                    "months without promotion, but also warns that many "
+                    "supposedly recurring software referrals produce only one "
+                    "month of commission because customers leave. Their stated "
+                    "selection factors include search demand, product development, "
+                    "retention, and geographic fit [lZmPGHIeaf0 @ 00:08:41]. "
+                    "Smart Capital makes the comparison explicit: a 50% "
+                    "commission on a tool that churns after one month can "
+                    "underperform 20% paid over three years. They also "
+                    "describe terms changing from 30% to 20%, or from "
+                    "lifetime recurring to one year, along with last-click "
+                    "and cookie losses and the danger of one program "
+                    "providing 90% of income [LBA0vmJPE5w @ 00:09:47]. "
+                    "Beach Bum University opens with the same retention "
+                    "condition: some customers leave, and growth requires "
+                    "signups to exceed departures [fMKmS-H3tBg @ 00:00:00]. "
+                    "Bashi's accumulation illustration adds two customers "
+                    "monthly at $25 each, reaching $150 after three months, "
+                    "$300 after six, and $600 after twelve "
+                    "[lh5ulbIfANU @ 00:12:46]. Read that progression alongside "
+                    "the other speakers' cancellation experience, rather than "
+                    "treating the recurring label as the whole economic "
+                    "story. Their accounts distinguish retained customers "
+                    "from initial referrals and continuing commission terms "
+                    "from a headline percentage advertised at signup."
+                ),
+                (
+                    "Keep payment demonstrations, product familiarity, and selling "
+                    "claims separate. The Infamous Joel describes only skimming "
+                    "the H2H webinar while distracted, even while presenting "
+                    "its approximate $500–$2,000 commissions and ready-made "
+                    "email swipes. That is a different level of product "
+                    "familiarity from the hands-on review workflows taught "
+                    "elsewhere [YVPPIdIHYpo @ 00:02:15]. MrOrangeDream asserts "
+                    "a 90% telephone-team conversion rate and points to "
+                    "Facebook-group commission posts, but does not give a "
+                    "denominator or measurement method for that percentage "
+                    "[H5OtlkBchxU @ 00:01:23]. Smart Affiliate shows an "
+                    "e-wallet containing $168, explains Thursday payments "
+                    "that may reach banks Friday, and walks through bank "
+                    "selection and a transaction PIN without completing the "
+                    "transfer [WVmpPW1fJPQ @ 00:14:09]. Smart Capital "
+                    "describes a different payment constraint: commissions "
+                    "often lock only after an approximately 30-day refund "
+                    "window, and refunds erase earnings. They also contrast "
+                    "a 90-day cookie with a 24-hour cookie "
+                    "[GCv_2yM5JtI @ 00:06:23]. Those accounts concern "
+                    "different stages and arrangements: promoted commission "
+                    "amounts, asserted conversion performance, displayed balances, "
+                    "withdrawal steps, and refund-adjusted payments. A high "
+                    "advertised payout does not describe all of them. "
+                    "The practitioners' own demonstrations leave these "
+                    "distinctions visible, particularly where a withdrawal "
+                    "stops before completion or a conversion percentage "
+                    "arrives without its underlying count."
+                ),
             ],
             "table": {
-                "caption": "Worked Annual Scenario P&L ($50k/$10k Conservative, $325k/$113.75k Base, $600k/$300k Scaled) — illustrative USD; costs are explicit planning allocations",
-                "headers": ["Annual P&L Line", "Conservative", "Base", "Scaled", "Operating Driver & Ledger Audit Rule"],
+                "caption": "Reported setbacks, commercial traps, and checks tied to specific practitioner accounts.",
+                "headers": [
+                    "Failure mode or bottleneck",
+                    "Reported experience or economics check",
+                    "Expert Source",
+                ],
                 "rows": [
-                    ["Referred merchant GMV", "Off-ledger memo", "Off-ledger memo", "Off-ledger memo", "Merchant sales volume excluded from affiliate revenue across CPA, rev-share, and call rails"],
-                    ["Provisional commissions", "$55,000", "$350,000", "$650,000", "Initial PartnerStack/Impact/Everflow postback credits prior to 30-to-90-day lock review"],
-                    ["Reversals / clawbacks", "($5,000)", "($25,000)", "($50,000)", "Modeled refund, duplicate-lead, trial-cancel, and chargeback deductions applied to cohort"],
-                    ["Gross earned commissions, net of reversals", "$50,000", "$325,000", "$600,000", "Recognized publisher top-line revenue after lock-window scrubs before operating expenses"],
-                    ["Traffic / distribution", "($12,000)", "($85,000)", "($90,000)", "Exact-match BOFU search, YouTube sponsorships, and newsletter co-reg spend"],
-                    ["Content production, external nonlabor costs", "($6,000)", "($25,000)", "($30,000)", "Sandbox test accounts, video editing assets, benchmark datasets, and design plates"],
-                    ["Tools / hosting", "($3,000)", "($12,000)", "($18,000)", "Cloudflare Workers/D1, ClickFlare/Everflow S2S tracker, Ringba, and SERP/Ahrefs seats"],
-                    ["Contractors / nonowner payroll including burdens", "($14,000)", "($65,000)", "($130,000)", "Scoped editorial/QA contractors in Conservative/Base; adds 1 loaded FT ops lead at Scaled"],
-                    ["Other operating overhead", "($5,000)", "($24,250)", "($32,000)", "Entity maintenance, CPA tax prep, contract legal review, insurance, and bank/wire fees"],
-                    ["Total operating costs", "($40,000)", "($211,250)", "($300,000)", "Hard annual opex ceiling required to hit each scenario margin target"],
-                    ["Net owner profit", "$10,000", "$113,750", "$300,000", "Pre-tax residual owner cash flow before personal income taxes or replacement founder wage"],
-                    ["Owner net margin", "20%", "35%", "50%", "Net owner profit divided by gross earned commissions net of reversals"],
-                    ["Staffing", "1 FT + 2 C", "1 FT + 2 C", "2 FT + 3 C", "Founder fills 1 FT role; C denotes part-time scoped specialists, not full-time salaries"],
+                    [
+                        "Daily publishing can still precede a long wait for commissions",
+                        "Cesar reports a year to their first commission while uploading one video daily and distinguishes advertising activity from profitable advertising.",
+                        "Cesar O. Vlogs ([0BMb7aXEG78 @ 01:33:39])",
+                    ],
+                    [
+                        "Inventory exposure can grow while competitors multiply during sourcing",
+                        "Brewer describes $12,000 inventory, eight weeks sourcing, $2,000 additional fees, and competitors increasing from three to approximately 33.",
+                        "Brian Brewer ([4hqxtfAXmWc @ 00:28:35])",
+                    ],
+                    [
+                        "Existing traffic does not protect an offer from changing economics",
+                        "Brewer unlisted Shopify-related videos after Facebook advertising became expensive and Chinese suppliers increasingly shipped directly.",
+                        "Brian Brewer ([4hqxtfAXmWc @ 00:09:02])",
+                    ],
+                    [
+                        "A recurring label can conceal customers leaving after one month",
+                        "SEO Jesus reports retained earnings after stopping promotion but warns many software referrals disappear after the first commission month.",
+                        "SEO Jesus ([lZmPGHIeaf0 @ 00:08:41])",
+                    ],
+                    [
+                        "Pending commissions can disappear during the merchant refund window",
+                        "Smart Capital says payments often lock after an approximately 30-day refund period and refunded purchases erase the associated earnings.",
+                        "Smart Capital ([GCv_2yM5JtI @ 00:06:23])",
+                    ],
+                    [
+                        "Displayed wallet funds are distinct from a completed bank withdrawal",
+                        "Smart Affiliate shows $168 and withdrawal controls, explains payment timing, and stops without completing the demonstrated transfer.",
+                        "Smart Affiliate ([WVmpPW1fJPQ @ 00:14:09])",
+                    ],
+                ],
+            },
+            "callout": {
+                "kind": "OPERATOR GATE",
+                "title": "Checks before treating the headline payout as working economics",
+                "body": (
+                    "Use the practitioners' own reported bottlenecks: acquisition "
+                    "effort, retention, attribution, refunds, and purchased-level eligibility."
+                ),
+                "items": [
+                    (
+                        "Account for content work and acquisition delay: Cesar "
+                        "reports one year to their first commission while "
+                        "publishing daily, and says running ads differs from "
+                        "running profitable ads. "
+                        "[Cesar O. Vlogs — 0BMb7aXEG78 @ 01:33:39]"
+                    ),
+                    (
+                        "Examine customer retention rather than selecting the "
+                        "largest recurring percentage; Smart Capital contrasts "
+                        "50% for one month with 20% over three years. "
+                        "[Smart Capital — LBA0vmJPE5w @ 00:09:47]"
+                    ),
+                    (
+                        "Read cookie and refund terms before counting earnings; "
+                        "Smart Capital says refunds erase commissions and "
+                        "contrasts 90-day attribution with 24 hours. "
+                        "[Smart Capital — GCv_2yM5JtI @ 00:06:23]"
+                    ),
+                    (
+                        "For Exodus Elite, identify the purchased level, "
+                        "differential roll-up, and upgrade administration-fee "
+                        "difference before assuming the full advertised payout "
+                        "belongs to the referring participant. "
+                        "[MrOrangeDream — H5OtlkBchxU @ 00:07:15]"
+                    ),
                 ],
             },
         },
     ],
-    "pull_quote": "The merchant owns the sale; you own the referral economics. Count only validated commissions, then subtract every dollar required to earn and retain them.",
-    "diagram_id": "diag-01-affiliate-funnel-to-commission-loop",
-    "action_checklist": ["Choose one funded buyer problem.", "Verify payout and reversal terms in writing.", "Publish one tested comparison with disclosures.", "Track clicks through validated commissions.", "Price traffic, support, and owner labor.", "Reconcile the first payout before raising spend."],
+    "pull_quote": (
+        "“Marketing is getting the right message about an excellent product "
+        "in front of the right people at the right time.” "
+        "— Brian Brewer (4hqxtfAXmWc @ 00:02:31)."
+    ),
+    "diagram_id": "diag-01",
+    "action_checklist": [
+        (
+            "Start with your existing professional work and clients; identify "
+            "complementary software they could use, then assess benefit, "
+            "affordability, and your willingness to use it. "
+            "[Michael Bashi — lh5ulbIfANU @ 00:09:14]"
+        ),
+        (
+            "Ask Vid IQ for reputable niche SaaS, review and comparison videos, "
+            "affiliate programs, payout terms, cookie periods, and signup links. "
+            "[Beach Bum University — fMKmS-H3tBg @ 00:04:19]"
+        ),
+        (
+            "Compare recurring duration, flat payouts, and cookie lengths, "
+            "and add programs gradually to a tracking spreadsheet. "
+            "[Charlie Chang — Gj4Zx6Vj7ko @ 00:11:15]"
+        ),
+        (
+            "Build a useful lead-magnet capture page, an email-access notice, "
+            "and a bridge page instead of sending every visitor directly "
+            "to the affiliate URL. "
+            "[Cesar O. Vlogs — 0BMb7aXEG78 @ 00:12:59]"
+        ),
+        (
+            "Publish honest reviews, A-versus-B comparisons, on-screen tutorials, "
+            "and winnable long-tail content for products you have used or "
+            "thoroughly tested. "
+            "[Smart Capital — GCv_2yM5JtI @ 00:06:41]"
+        ),
+        (
+            "Inspect buyer-intent search results for smaller ranking sites, "
+            "check program commissions and affiliate reviews, and look for "
+            "thin content you can improve. "
+            "[Adam Enfroy — rv01CKLsaY0 @ 00:10:53]"
+        ),
+    ],
     "statutory_citations": [
-        {"title": "16 CFR Part 255", "url": "https://www.ecfr.gov/current/title-16/chapter-I/subchapter-B/part-255", "relevance": "FTC Endorsement Guides; disclose material affiliate relationships."},
-        {"title": "15 U.S.C. section 45", "url": "https://uscode.house.gov/view.xhtml?req=granuleid:USC-prelim-title15-section45&num=0&edition=prelim", "relevance": "Prohibits unfair or deceptive acts or practices."},
-        {"title": "47 CFR section 64.1200", "url": "https://www.ecfr.gov/current/title-47/chapter-I/subchapter-B/part-64/subpart-L/section-64.1200", "relevance": "Calling restrictions relevant to outbound follow-up and lead routing."},
+        {
+            "title": "Michael Bashi — The Smartest Affiliate Business Model: Recurring SaaS Commissions [00:12:46]",
+            "url": "https://www.youtube.com/watch?v=lh5ulbIfANU&t=766s",
+            "relevance": (
+                "Primary practitioner testimony on referring existing clients "
+                "and illustrating monthly recurring commission accumulation."
+            ),
+        },
+        {
+            "title": "Brian Brewer — $50,000 Affiliate Marketing Case Study (High Ticket Blueprint) [00:13:21]",
+            "url": "https://www.youtube.com/watch?v=4hqxtfAXmWc&t=801s",
+            "relevance": (
+                "Primary practitioner testimony on the reported $44,000 launch, "
+                "$1,000 referral payouts, and a website-hosted video sales letter."
+            ),
+        },
+        {
+            "title": "Cesar O. Vlogs — High ticket affiliate marketing Ninja strategies for beginners 2024 [01:33:39]",
+            "url": "https://www.youtube.com/watch?v=0BMb7aXEG78&t=5619s",
+            "relevance": (
+                "Primary practitioner testimony on acquisition work, the year "
+                "to a first commission, and profitable versus merely active advertising."
+            ),
+        },
+        {
+            "title": "SEO Jesus — THIS Divides SUCCESS And FAILURE In Affiliate Marketing In 2024 [00:08:41]",
+            "url": "https://www.youtube.com/watch?v=lZmPGHIeaf0&t=521s",
+            "relevance": (
+                "Primary practitioner testimony on concentrated premium offers, "
+                "retained recurring earnings, and one-month customer churn."
+            ),
+        },
+    ],
+    "source_citations": [
+        {
+            "source_type": "video_pro_tip",
+            "video_id": "lh5ulbIfANU",
+            "title": "The Smartest Affiliate Business Model: Recurring SaaS Commissions",
+            "channel": "Michael Bashi",
+            "author": "Michael Bashi",
+            "text": "Make sure they pay out their affiliates, you in a recurring monthly model, not a one-time commission payout.",
+            "tip": "Make sure they pay out their affiliates, you in a recurring monthly model, not a one-time commission payout.",
+            "timestamp": 489,
+            "timestamp_seconds": 489,
+            "timestamp_label": "[00:08:09]",
+            "url": "https://www.youtube.com/watch?v=lh5ulbIfANU&t=489s",
+            "markdown": "[00:08:09](https://www.youtube.com/watch?v=lh5ulbIfANU&t=489s)",
+            "epistemic_status": "attributed_practitioner_claim",
+            "relevance": "Verbatim practitioner testimony from Chapter Q1.",
+        },
+        {
+            "source_type": "video_pro_tip",
+            "video_id": "fMKmS-H3tBg",
+            "title": "Best SaaS for Recurring Affiliate Commissions? Here's How to Find Them...",
+            "channel": "Beach Bum University",
+            "author": "Beach Bum University",
+            "text": "I want you to use max for this exercise.",
+            "tip": "I want you to use max for this exercise.",
+            "timestamp": 222,
+            "timestamp_seconds": 222,
+            "timestamp_label": "[00:03:42]",
+            "url": "https://www.youtube.com/watch?v=fMKmS-H3tBg&t=222s",
+            "markdown": "[00:03:42](https://www.youtube.com/watch?v=fMKmS-H3tBg&t=222s)",
+            "epistemic_status": "attributed_practitioner_claim",
+            "relevance": "Verbatim practitioner testimony from Chapter Q1.",
+        },
+        {
+            "source_type": "video_pro_tip",
+            "video_id": "LBA0vmJPE5w",
+            "title": "B2B Software Affiliate Programs: How to Earn Recurring Commissions in 2026",
+            "channel": "Smart Capital",
+            "author": "Smart Capital",
+            "text": "Trust is the whole business.",
+            "tip": "Trust is the whole business.",
+            "timestamp": 437,
+            "timestamp_seconds": 437,
+            "timestamp_label": "[00:07:17]",
+            "url": "https://www.youtube.com/watch?v=LBA0vmJPE5w&t=437s",
+            "markdown": "[00:07:17](https://www.youtube.com/watch?v=LBA0vmJPE5w&t=437s)",
+            "epistemic_status": "attributed_practitioner_claim",
+            "relevance": "Verbatim practitioner testimony from Chapter Q1.",
+        },
+        {
+            "source_type": "video_pro_tip",
+            "video_id": "0BMb7aXEG78",
+            "title": "High ticket affiliate marketing Ninja strategies for beginners 2024",
+            "channel": "Cesar O. Vlogs",
+            "author": "Cesar O. Vlogs",
+            "text": "This is a value email so it doesn't have any links.",
+            "tip": "This is a value email so it doesn't have any links.",
+            "timestamp": 1370,
+            "timestamp_seconds": 1370,
+            "timestamp_label": "[00:22:50]",
+            "url": "https://www.youtube.com/watch?v=0BMb7aXEG78&t=1370s",
+            "markdown": "[00:22:50](https://www.youtube.com/watch?v=0BMb7aXEG78&t=1370s)",
+            "epistemic_status": "attributed_practitioner_claim",
+            "relevance": "Verbatim practitioner testimony from Chapter Q1.",
+        },
+        {
+            "source_type": "video_pro_tip",
+            "video_id": "HNlC0mNMS60",
+            "title": "High-Ticket Affiliate Marketing Explained | How People Make $1k/Per Sale",
+            "channel": "Aaron Chen",
+            "author": "Aaron Chen",
+            "text": "Then they have to book a call with a sales rep.",
+            "tip": "Then they have to book a call with a sales rep.",
+            "timestamp": 347,
+            "timestamp_seconds": 347,
+            "timestamp_label": "[00:05:47]",
+            "url": "https://www.youtube.com/watch?v=HNlC0mNMS60&t=347s",
+            "markdown": "[00:05:47](https://www.youtube.com/watch?v=HNlC0mNMS60&t=347s)",
+            "epistemic_status": "attributed_practitioner_claim",
+            "relevance": "Verbatim practitioner testimony from Chapter Q1.",
+        },
+        {
+            "source_type": "video_pro_tip",
+            "video_id": "JVbzH2BD68w",
+            "title": "The Most profitable business model  - 4 steps to High ticket commissions",
+            "channel": "Jackie Strohl",
+            "author": "Jackie Strohl",
+            "text": "Number two Google your niche Plus affiliate programs.",
+            "tip": "Number two Google your niche Plus affiliate programs.",
+            "timestamp": 159,
+            "timestamp_seconds": 159,
+            "timestamp_label": "[00:02:39]",
+            "url": "https://www.youtube.com/watch?v=JVbzH2BD68w&t=159s",
+            "markdown": "[00:02:39](https://www.youtube.com/watch?v=JVbzH2BD68w&t=159s)",
+            "epistemic_status": "attributed_practitioner_claim",
+            "relevance": "Verbatim practitioner testimony from Chapter Q1.",
+        },
+        {
+            "source_type": "video_pro_tip",
+            "video_id": "rv01CKLsaY0",
+            "title": "How to ACTUALLY Make Your First $1,000 with High Ticket Affiliate Marketing... Works in 2026",
+            "channel": "Adam Enfroy",
+            "author": "Adam Enfroy",
+            "text": "The goal here is finding the intersection of decent search volume, good commissions, and competitive weaknesses you can exploit with better content.",
+            "tip": "The goal here is finding the intersection of decent search volume, good commissions, and competitive weaknesses you can exploit with better content.",
+            "timestamp": 766,
+            "timestamp_seconds": 766,
+            "timestamp_label": "[00:12:46]",
+            "url": "https://www.youtube.com/watch?v=rv01CKLsaY0&t=766s",
+            "markdown": "[00:12:46](https://www.youtube.com/watch?v=rv01CKLsaY0&t=766s)",
+            "epistemic_status": "attributed_practitioner_claim",
+            "relevance": "Verbatim practitioner testimony from Chapter Q1.",
+        },
+        {
+            "source_type": "video_pro_tip",
+            "video_id": "YVPPIdIHYpo",
+            "title": "20 High-Ticket Affiliate Programs to Find $1K Commissions",
+            "channel": "The Infamous Joel",
+            "author": "The Infamous Joel",
+            "text": "Just DM me the word list.",
+            "tip": "Just DM me the word list.",
+            "timestamp": 573,
+            "timestamp_seconds": 573,
+            "timestamp_label": "[00:09:33]",
+            "url": "https://www.youtube.com/watch?v=YVPPIdIHYpo&t=573s",
+            "markdown": "[00:09:33](https://www.youtube.com/watch?v=YVPPIdIHYpo&t=573s)",
+            "epistemic_status": "attributed_practitioner_claim",
+            "relevance": "Verbatim practitioner testimony from Chapter Q1.",
+        },
+        {
+            "source_type": "video_pro_tip",
+            "video_id": "4hqxtfAXmWc",
+            "title": "$50,000 Affiliate Marketing Case Study (High Ticket Blueprint)",
+            "channel": "Brian Brewer",
+            "author": "Brian Brewer",
+            "text": "Marketing is getting the right message about an excellent product in front of the right people at the right time.",
+            "tip": "Marketing is getting the right message about an excellent product in front of the right people at the right time.",
+            "timestamp": 151,
+            "timestamp_seconds": 151,
+            "timestamp_label": "[00:02:31]",
+            "url": "https://www.youtube.com/watch?v=4hqxtfAXmWc&t=151s",
+            "markdown": "[00:02:31](https://www.youtube.com/watch?v=4hqxtfAXmWc&t=151s)",
+            "epistemic_status": "attributed_practitioner_claim",
+            "relevance": "Verbatim practitioner testimony from Chapter Q1.",
+        },
+        {
+            "source_type": "video_pro_tip",
+            "video_id": "H5OtlkBchxU",
+            "title": "Best High Ticket Affiliate Program For Beginners 2026 ($1000/Day)",
+            "channel": "MrOrangeDream",
+            "author": "MrOrangeDream",
+            "text": "It's actually 100%, but 80% if you leverage the phone sales team.",
+            "tip": "It's actually 100%, but 80% if you leverage the phone sales team.",
+            "timestamp": 52,
+            "timestamp_seconds": 52,
+            "timestamp_label": "[00:00:52]",
+            "url": "https://www.youtube.com/watch?v=H5OtlkBchxU&t=52s",
+            "markdown": "[00:00:52](https://www.youtube.com/watch?v=H5OtlkBchxU&t=52s)",
+            "epistemic_status": "attributed_practitioner_claim",
+            "relevance": "Verbatim practitioner testimony from Chapter Q1.",
+        },
+        {
+            "source_type": "video_pro_tip",
+            "video_id": "Gj4Zx6Vj7ko",
+            "title": "The ONLY Affiliate Marketing Tutorial You Need: Ultimate Step-by-Step for Beginners",
+            "channel": "Charlie Chang",
+            "author": "Charlie Chang",
+            "text": "It's really not about the volume it's just about the right types of eyeballs.",
+            "tip": "It's really not about the volume it's just about the right types of eyeballs.",
+            "timestamp": 961,
+            "timestamp_seconds": 961,
+            "timestamp_label": "[00:16:01]",
+            "url": "https://www.youtube.com/watch?v=Gj4Zx6Vj7ko&t=961s",
+            "markdown": "[00:16:01](https://www.youtube.com/watch?v=Gj4Zx6Vj7ko&t=961s)",
+            "epistemic_status": "attributed_practitioner_claim",
+            "relevance": "Verbatim practitioner testimony from Chapter Q1.",
+        },
+        {
+            "source_type": "video_pro_tip",
+            "video_id": "vvzOZL0NXKI",
+            "title": "The 2026 High Ticket Affiliate Blueprint",
+            "channel": "Rabbit Hole Radio",
+            "author": "Rabbit Hole Radio",
+            "text": "You give them a tool, not just homework.",
+            "tip": "You give them a tool, not just homework.",
+            "timestamp": 1337,
+            "timestamp_seconds": 1337,
+            "timestamp_label": "[00:22:17]",
+            "url": "https://www.youtube.com/watch?v=vvzOZL0NXKI&t=1337s",
+            "markdown": "[00:22:17](https://www.youtube.com/watch?v=vvzOZL0NXKI&t=1337s)",
+            "epistemic_status": "attributed_practitioner_claim",
+            "relevance": "Verbatim practitioner testimony from Chapter Q1.",
+        },
+        {
+            "source_type": "video_pro_tip",
+            "video_id": "GCv_2yM5JtI",
+            "title": "High-Ticket Affiliate Marketing for Beginners: 5-Step System & Costly Mistakes",
+            "channel": "Smart Capital",
+            "author": "Smart Capital",
+            "text": "Fit beats payout every time.",
+            "tip": "Fit beats payout every time.",
+            "timestamp": 534,
+            "timestamp_seconds": 534,
+            "timestamp_label": "[00:08:54]",
+            "url": "https://www.youtube.com/watch?v=GCv_2yM5JtI&t=534s",
+            "markdown": "[00:08:54](https://www.youtube.com/watch?v=GCv_2yM5JtI&t=534s)",
+            "epistemic_status": "attributed_practitioner_claim",
+            "relevance": "Verbatim practitioner testimony from Chapter Q1.",
+        },
+        {
+            "source_type": "video_pro_tip",
+            "video_id": "WVmpPW1fJPQ",
+            "title": "Done-For-You Affiliate Marketing: Recurring + High Ticket",
+            "channel": "Smart Affiliate",
+            "author": "Smart Affiliate",
+            "text": "The system is the vehicle, but you still need to be the driver.",
+            "tip": "The system is the vehicle, but you still need to be the driver.",
+            "timestamp": 288,
+            "timestamp_seconds": 288,
+            "timestamp_label": "[00:04:48]",
+            "url": "https://www.youtube.com/watch?v=WVmpPW1fJPQ&t=288s",
+            "markdown": "[00:04:48](https://www.youtube.com/watch?v=WVmpPW1fJPQ&t=288s)",
+            "epistemic_status": "attributed_practitioner_claim",
+            "relevance": "Verbatim practitioner testimony from Chapter Q1.",
+        },
+        {
+            "source_type": "video_pro_tip",
+            "video_id": "MIx20-uBG6s",
+            "title": "2026 High Ticket Affiliate Marketing Blueprint [Deep Dive]",
+            "channel": "Rabbit Hole Radio",
+            "author": "Rabbit Hole Radio",
+            "text": "Restrict your primary recommendations to a tightly curated list of three to five optimal choices.",
+            "tip": "Restrict your primary recommendations to a tightly curated list of three to five optimal choices.",
+            "timestamp": 2053,
+            "timestamp_seconds": 2053,
+            "timestamp_label": "[00:34:13]",
+            "url": "https://www.youtube.com/watch?v=MIx20-uBG6s&t=2053s",
+            "markdown": "[00:34:13](https://www.youtube.com/watch?v=MIx20-uBG6s&t=2053s)",
+            "epistemic_status": "attributed_practitioner_claim",
+            "relevance": "Verbatim practitioner testimony from Chapter Q1.",
+        },
+        {
+            "source_type": "video_pro_tip",
+            "video_id": "lZmPGHIeaf0",
+            "title": "THIS Divides SUCCESS And FAILURE In Affiliate Marketing In 2024",
+            "channel": "SEO Jesus",
+            "author": "SEO Jesus",
+            "text": "We want to see best or review not only keywords containing best and review which don't exist.",
+            "tip": "We want to see best or review not only keywords containing best and review which don't exist.",
+            "timestamp": 135,
+            "timestamp_seconds": 135,
+            "timestamp_label": "[00:02:15]",
+            "url": "https://www.youtube.com/watch?v=lZmPGHIeaf0&t=135s",
+            "markdown": "[00:02:15](https://www.youtube.com/watch?v=lZmPGHIeaf0&t=135s)",
+            "epistemic_status": "attributed_practitioner_claim",
+            "relevance": "Verbatim practitioner testimony from Chapter Q1.",
+        },
     ],
 }

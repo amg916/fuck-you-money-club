@@ -1,0 +1,734 @@
+from __future__ import annotations
+
+CHAPTER_2 = {
+    "id": "Q2",
+    "chapter_id": "Q2",
+    "chapter_number": 2,
+    "question_number": 2,
+    "slug": "tracing-descendants-family-trees-newspapers-vital-records",
+    "question_prompt": "How can you build a family tree and trace an ancestor’s descendants, including relatives living after 1940, to resolve genealogy brick walls and find family members of a deceased person? Explore online newspaper sources; marriage-record searches on Ancestry, FamilySearch, and Delaware County, Pennsylvania’s Register of Wills resources; death certificates and the information they contain; overlooked death records and alternatives when no certificate is available; Social Security Death Index clues; and the Heir Hunters case involving discoveries in a retired postal worker’s flat.",
+    "kicker": "Q2 / THE BIG MONEY PLAYBOOKS",
+    "title": "Tracing Descendants Through Family Trees, Newspapers, and Vital Records",
+    "subtitle": "Beginning and post-1940 descendancy research, family-tree building, digital newspapers, marriage and death records, the Social Security Death Index, and finding relatives of deceased people—with Ancestry, FamilySearch, local record searches, and a Heir Hunters case.",
+    "layout_template": "executive_summary",
+    "reading_time_minutes": 15,
+    "executive_summary": (
+        "James Tanner and Christa Cowan start with documented relationships, then trace whole families rather than isolated surnames. "
+        "Joshua Taylor shows why siblings, unmarried relatives, inherited papers, and late-life households can unlock missing generations. "
+        "Connie Knox and Rachel Ezzell Berry turn marriage searches into locality-specific work; Helen Smith, Amy Cross, and Anne Mitchell extract leads from death records and their alternatives. "
+        "Fraser and Fraser begin with family knowledge and photographs. David Church starts with existing telephone numbers, relatives, and obituary searches. "
+        "Their approaches differ on research depth, stopping points, original-record purchases, and contact style. "
+        "The commercial stakes appear in Finders’ search of a retired postal worker’s flat: bank statements transformed the case, while an undiscovered will or half sibling could have overturned earlier work."
+    ),
+    "key_metrics": [
+        {
+            "label": "FamilySearch descendancy display",
+            "metric": "FamilySearch descendancy display",
+            "value": "Up to four generations",
+            "confidence": "attributed_practitioner_claim",
+            "context": "James Tanner demonstrates selecting up to four descendancy generations; fewer displayed generations can mean the descendants have not been entered.",
+            "source": "BYU Library Family History Center ([9Q4qYeK5DTg @ 00:30:15])",
+        },
+        {
+            "label": "Delaware County copy processing",
+            "metric": "Delaware County copy processing",
+            "value": "Approximately 14 days",
+            "confidence": "attributed_practitioner_claim",
+            "context": "Rachel Ezzell Berry describes normal processing before a requested marriage-record copy is emailed or mailed, depending on the requested copy.",
+            "source": "Rachel Ezzell Berry ([yFnDG9Lf6kc @ 00:06:51])",
+        },
+        {
+            "label": "Victor estate reported outcome",
+            "metric": "Victor estate reported outcome",
+            "value": "£900,000 shared by 16 heirs",
+            "confidence": "attributed_practitioner_claim",
+            "context": "Heir Hunters reports Nigel and 15 other heirs sharing Victor’s estate after the flat search revealed bank statements and no will was found.",
+            "source": "Heir Hunters ([E36sRJaPZRg @ 00:34:11])",
+        },
+        {
+            "label": "Deceased-person telephone failure",
+            "metric": "Deceased-person telephone failure",
+            "value": "90% of the time",
+            "confidence": "attributed_practitioner_claim",
+            "context": "David Church says the deceased person’s existing numbers usually do not work, despite successful calls answered by relatives.",
+            "source": "Surplus Institute / David Church / Unclaimed Funds ([eiQ53kxE6ZA @ 00:00:54])",
+        },
+    ],
+    "sections": [
+        {
+            "id": "practitioner-consensus",
+            "title": "The Practitioner Consensus",
+            "paragraphs": [
+                (
+                    "Start with the family you can actually connect, not the longest pedigree on the screen. "
+                    "Fraser and Fraser begin with a large sheet of paper, a family-tree template, and the researcher in the middle, working outward through parents, grandparents, aunts, and uncles. "
+                    "Their next move is conversation: ask parents and grandparents questions without leading the answers, then place photographs against the tree and inspect the backs for names, dates, and places. "
+                    "James Tanner adds the decisive test before descending from a chosen ancestor: inspect every intervening parent-child relationship for a historically valid source. "
+                    "A name, date, and birthplace already entered into FamilySearch do not supply that connection by themselves. "
+                    "Christa Cowan likewise starts with a solid paper trail, resolved conflicts, and correctly connected people. "
+                    "They converge on a practical beginning: identify the family, inspect the evidence already attached, and establish the relationship before extending it. "
+                    "Fraser and Fraser recommend software that redraws the tree when information changes, but explicitly reject buying the most expensive package simply because it is available. "
+                    "Tanner’s insistence on documentation and Cowan’s treatment of conflicting evidence make those early corrections part of the work, rather than a cleanup exercise after a large tree has already accumulated. "
+                    "[MdFDiQQXD3M @ 00:00:20] [9Q4qYeK5DTg @ 00:06:44] [rKKDh07PmVc @ 00:07:06]"
+                ),
+                (
+                    "Build families, not just a succession of parents. Cowan explains that a grandfather’s death certificate may omit a mother’s maiden name while a sibling’s certificate supplies it. "
+                    "The move is sideways before it is backward: connect siblings, assemble their records, and use the fuller family to resolve the missing relationship. "
+                    "Joshua Taylor takes the same idea beyond vital events. "
+                    "Education, occupation, travel, journals, correspondence, and the people supporting someone near the end of life can supply information that the direct ancestor never recorded. "
+                    "Taylor’s Milo Marsh disappeared from the expected Vermont and New York searches, then appeared with a spouse in Washington County, Rhode Island. "
+                    "Further research identified the household connection as Milo’s younger sister, Wealthy Marsh, whose married name was Clocker. "
+                    "That sibling connection helped Taylor work backward toward the parents. "
+                    "Tanner’s beginning descendancy method also starts with a documented ancestor and searches for additional children through birth records, church records, probate, wills, and land records. "
+                    "The shared mechanic is to follow the family’s records across relationships, rather than demand that one preferred document answer everything. "
+                    "An ancestor’s children, siblings, and in-laws are research subjects with their own papers and households, not merely extra names attached to a finished pedigree. "
+                    "[_q7yAh8Anok @ 00:01:15] [FA43rRoIJV8 @ 00:07:04] [TVIHQUFpkjk @ 00:30:37]"
+                ),
+                (
+                    "Treat each life event as an opening into additional records. Connie Knox searches both civil and religious marriage material, including licenses, registries, banns, bonds, and ceremony records. "
+                    "The value can extend beyond the couple: Knox found parents and grandparents in Danish parish registers, although translation was needed. "
+                    "Amy Cross makes the same point about death certificates. "
+                    "In the Tenny Alexander example, the certificate identifies the nursing home, usual residence, birth details, occupation, parents, informant, and burial information. "
+                    "Cross separates information supplied by the son from the death details supplied through the attending process; the son did not know the grandmother’s maiden name. "
+                    "Helen Smith then widens the search when no certificate is available: funeral directors, hospitals, inquests, police records, church burials, newspapers, wills, and household papers can all enter the investigation. "
+                    "None of these speakers treats a single index hit as the whole event. "
+                    "Knox wants the original marriage material because an index may expose only brief information. "
+                    "Cross reads the certificate for the next address or institution to investigate. "
+                    "Smith asks what happened around the death and who was involved. "
+                    "Together, those methods move the research from finding a date to finding the people, places, and surviving records associated with it. "
+                    "[JYf7R5lhBlU @ 00:00:59] [RM0PcAQiipM @ 00:01:17] [5sxGnXLZO6A @ 00:03:20]"
+                ),
+            ],
+            "table": {
+                "caption": "Shared starting practices before extending a descendant tree.",
+                "headers": ["Research starting point", "Practitioner execution", "Expert Source"],
+                "rows": [
+                    [
+                        "Map the relatives already known before chasing distant branches.",
+                        "Put yourself in the middle and work outward through parents, grandparents, aunts, and uncles.",
+                        "Fraser and Fraser ([MdFDiQQXD3M @ 00:00:20])",
+                    ],
+                    [
+                        "Check the relationship chain instead of trusting an impressive pedigree.",
+                        "Look for a valid sourced parent-child relationship at every generation connecting the chosen ancestor.",
+                        "BYU Library Family History Center ([9Q4qYeK5DTg @ 00:06:44])",
+                    ],
+                    [
+                        "Research siblings when a direct ancestor’s certificate omits information.",
+                        "A sibling’s death certificate may identify a mother’s maiden name missing from another certificate.",
+                        "Ancestry ([_q7yAh8Anok @ 00:01:15])",
+                    ],
+                    [
+                        "Follow late-life households when the expected geographical trail disappears.",
+                        "Taylor found Milo Marsh with a younger sister after broadening the search into Rhode Island.",
+                        "FamilySearch ([FA43rRoIJV8 @ 00:07:04])",
+                    ],
+                    [
+                        "Read marriage records for relationships beyond the two applicants.",
+                        "Knox found parents and grandparents in Danish parish registers and obtained translation to understand them.",
+                        "Genealogy TV ([JYf7R5lhBlU @ 00:01:40])",
+                    ],
+                    [
+                        "Separate the informant’s family knowledge from the recorded death details.",
+                        "Cross’s example identifies a son as informant who did not know the grandmother’s maiden name.",
+                        "Ancestry Aimee ([RM0PcAQiipM @ 00:02:12])",
+                    ],
+                ],
+            },
+        },
+        {
+            "id": "street-mechanics",
+            "title": "Exact Street Mechanics, Tools & Numbers",
+            "paragraphs": [
+                (
+                    "Tanner’s FamilySearch sequence is concrete: select a verified ancestor, open that person’s tree, change the view to descendancy, and select the number of generations to display. "
+                    "The display allows up to four; an apparently short result can mean nobody has entered the missing descendants. "
+                    "Inspect people with few sources, missing spouses, missing death dates, or unexplored children. "
+                    "Cowan adds an orderly traversal: work through the oldest child’s descendants, then return for the next child, using a Family Tree Maker bookmark or even a note to mark the stopping point. "
+                    "For newspapers, Tanner first identifies the event’s place and period, then finds the titles published there. "
+                    "Search Google and Wikipedia for newspaper titles and repositories, but search the newspaper databases themselves for people. "
+                    "His discovery query combines newspaper, digital, online, and the state name. "
+                    "OCR provides a shortcut through digitized pages; microfilm can require reading each page. "
+                    "Knowing the marriage date lets the search concentrate on the date and the weeks immediately around it. "
+                    "Cowan carries that locality work into newspaper family notices: wedding parties, visiting relatives, birth announcements, and obituaries can expose relationships that are not apparent from a pedigree screen alone. "
+                    "[9Q4qYeK5DTg @ 00:29:31] [_q7yAh8Anok @ 00:07:23] [1Ptl1u6wRoY @ 00:32:11] [rKKDh07PmVc @ 00:21:26]"
+                ),
+                (
+                    "For marriage searches, Knox starts with locality before surname. In Ancestry’s card catalog, drill through country, state, and the closest available locality to establish what records cover the question. "
+                    "On FamilySearch, use the Research Wiki and map by locality, then also search by surname because the results can differ. "
+                    "Inspect both pages of a register and identify witnesses rather than stopping at the couple’s names. "
+                    "Rachel Ezzell Berry supplies a separate, exact Delaware County workflow: choose Login as Guest, accept the displayed terms, select Search Public Records, and choose Marriage Names. "
+                    "Enter the surname first, or search the surname alone; entering the given name first can produce no result even when the record exists. "
+                    "Click the license-number hyperlink, then inspect marriage information and both applicant tabs. "
+                    "Berry distinguishes a searchable entry from an image: the service establishes custody and exposes details, but does not display the actual license for immediate printing. "
+                    "Custody depends on where the license was applied for, not residence or wedding location. "
+                    "A copy still requires an order; Berry describes approximately fourteen days of normal processing before email or postal delivery. "
+                    "Knox then uses the marriage date to search local newspapers for additional wedding information. "
+                    "[JYf7R5lhBlU @ 00:04:50] [yFnDG9Lf6kc @ 00:02:06] [yFnDG9Lf6kc @ 00:05:08] [JYf7R5lhBlU @ 00:09:53]"
+                ),
+                (
+                    "Read a death certificate all the way to its burial and undertaker fields. Cross demonstrates using an undertaker’s address in a city directory when the handwritten name is difficult to decipher. "
+                    "From there, identify the cemetery, contact its office, and ask about records even when no headstone appears online. "
+                    "If no cemetery office remains, Cross suggests contacting city hall; for a closed funeral home, investigate a successor business, historical society, genealogical society, or local library. "
+                    "Smith’s alternatives extend to memorial cards, family Bibles, newspaper notices, professional journals, and military records. "
+                    "Smith also distinguishes an exact death date from a range established by a will’s writing and probate. "
+                    "Anne Mitchell adds a specific Social Security Death Index reading task: record the name, birth and death dates, issuance place and year, and whether the entry says last residence or last benefit. "
+                    "Mitchell describes last benefit as usually paid to a qualifying survivor and last residence as the address the administration knew while paying benefits. "
+                    "Keep those field labels in the notes rather than treating both as the same location. "
+                    "Mitchell also points to ordering the original SS-5 application for a fee through the request instructions, rather than expecting Ancestry to hold that original application. "
+                    "[6TDebNoMsvQ @ 00:01:54] [6TDebNoMsvQ @ 00:05:30] [5sxGnXLZO6A @ 00:12:48] [Af6QVCj8Rcg @ 00:02:15]"
+                ),
+                (
+                    "Cowan’s post-1940 method begins by checking the Ancestry card catalog for the state and the available birth, marriage, and death collections. "
+                    "In the California example, a surname plus the mother’s maiden name produces four children, their birth dates, and birth counties. "
+                    "Obituaries then supply married names, spouses, children, and places where survivors lived. "
+                    "Search siblings and in-laws as well as parents, including notices before 1940 when older children had already left the household. "
+                    "Cowan takes a survivor’s name and town into the public records indexes, then uses names, locations, and family connections to investigate possible contacts. "
+                    "David Church approaches a deceased owner from the telephone end first. "
+                    "Try the existing numbers because a relative may have retained them; then work through listed relatives and children. "
+                    "Church reports calls answered by a deceased son’s father and a deceased mother’s daughter. "
+                    "If relatives are missing, search Legacy and Ancestry for an obituary that supplies a child’s name and city, then investigate that person. "
+                    "Church also contacts listed associates and describes an AI-assisted lead to a parsonage that led to a business partner. "
+                    "Cowan’s complementary contact method introduces the family-tree project and asks whether the recipient belongs to the identified family. "
+                    "[rKKDh07PmVc @ 00:13:46] [rKKDh07PmVc @ 00:17:53] [eiQ53kxE6ZA @ 00:00:26] [eiQ53kxE6ZA @ 00:02:59]"
+                ),
+            ],
+            "table": {
+                "caption": "Exact search operations, record handoffs, and contact sequences.",
+                "headers": ["Operation and entry point", "Execution and next record", "Expert Source"],
+                "rows": [
+                    [
+                        "Open the verified ancestor’s tree before choosing a descendant branch.",
+                        "Switch to descendancy and expand generations, then investigate missing spouses, children, dates, and sources.",
+                        "BYU Library Family History Center ([9Q4qYeK5DTg @ 00:29:31])",
+                    ],
+                    [
+                        "Discover newspaper repositories using geography rather than one ancestor’s name.",
+                        "Combine newspaper, digital, online, and the state name, then search the individual newspaper collections.",
+                        "BYU Library Family History Center ([1Ptl1u6wRoY @ 00:32:11])",
+                    ],
+                    [
+                        "Check marriage-register images beyond the first visible page of entries.",
+                        "Move one page right when appropriate and investigate witnesses who may be relatives or family friends.",
+                        "Genealogy TV ([JYf7R5lhBlU @ 00:07:29])",
+                    ],
+                    [
+                        "Search Delaware County marriage names with the surname entered first.",
+                        "Use the license-number link for details; the actual marriage-license image does not appear there.",
+                        "Rachel Ezzell Berry ([yFnDG9Lf6kc @ 00:03:32]); Rachel Ezzell Berry ([yFnDG9Lf6kc @ 00:06:01])",
+                    ],
+                    [
+                        "Preserve the Social Security Death Index’s distinct residence and benefit fields.",
+                        "Mitchell distinguishes a survivor’s last-benefit location from the deceased person’s last residence known to the administration.",
+                        "Ancestry ([Af6QVCj8Rcg @ 00:02:15])",
+                    ],
+                    [
+                        "Try existing telephone numbers before expanding into relatives and obituary searches.",
+                        "Church reports relatives sometimes retain the number, then uses obituary names and cities to find others.",
+                        "Surplus Institute / David Church / Unclaimed Funds ([eiQ53kxE6ZA @ 00:00:26]); Surplus Institute / David Church / Unclaimed Funds ([eiQ53kxE6ZA @ 00:03:13])",
+                    ],
+                ],
+            },
+            "callout": {
+                "kind": "INSIDER PRO-TIPS",
+                "title": "Small record details that open another branch",
+                "body": "Use the fields, pages, and household connections the practitioners actually follow.",
+                "items": [
+                    "Read every version of an obituary: Cowan finds short death notices, fuller notices, corrections, and newspaper-specific cuts among repeated entries. [Ancestry — _q7yAh8Anok @ 00:12:35]",
+                    "Inspect photograph backs for names, dates, and places; Fraser and Fraser say these can greatly reduce later death searches. [Fraser and Fraser — MdFDiQQXD3M @ 00:01:22]",
+                    "Read sources already attached before searching again: Tanner corrected Mary V to Mary A from existing census sources, after which a death-record hint appeared. [BYU Library Family History Center — TVIHQUFpkjk @ 00:45:24]",
+                    "Investigate an unmarried relative’s will: Taylor found Ezra Kingsley’s children through Olive Kingsley’s gifts of beads, books, buckles, and buttons. [FamilySearch — FA43rRoIJV8 @ 00:10:21]",
+                ],
+            },
+            "sop_steps": [
+                {
+                    "step": 1,
+                    "title": "Establish the starting family",
+                    "action": "Map known relatives and verify the relationship chain.",
+                    "detail": "Begin with family knowledge, interviews, and photographs, then inspect the sourced parent-child links before choosing the ancestor whose descendants will be traced. [Fraser and Fraser — MdFDiQQXD3M @ 00:00:20] [BYU Library Family History Center — 9Q4qYeK5DTg @ 00:06:44]",
+                },
+                {
+                    "step": 2,
+                    "title": "Work one descendant branch systematically",
+                    "action": "Expand the tree and preserve the stopping point.",
+                    "detail": "Use FamilySearch’s descendancy view to expose branches; work oldest child to youngest and keep a bookmark or note so the next session resumes at the right person. [BYU Library Family History Center — 9Q4qYeK5DTg @ 00:29:31] [Ancestry — _q7yAh8Anok @ 00:07:23]",
+                },
+                {
+                    "step": 3,
+                    "title": "Retrieve marriage and death evidence",
+                    "action": "Search by locality, inspect full records, and follow named institutions.",
+                    "detail": "Use locality-based marriage searches and inspect both register pages; read death certificates for the cemetery and undertaker, using city directories when an address is clearer than the business name. [Genealogy TV — JYf7R5lhBlU @ 00:04:50] [Ancestry Aimee — 6TDebNoMsvQ @ 00:01:54]",
+                },
+                {
+                    "step": 4,
+                    "title": "Extend the family into later records",
+                    "action": "Use obituaries, available indexes, and direct family contact.",
+                    "detail": "Collect survivors’ names and towns from obituaries, investigate them in public records, and introduce the family connection when making contact; Church also begins with retained telephone numbers and listed relatives. [Ancestry — rKKDh07PmVc @ 00:27:14] [Ancestry — rKKDh07PmVc @ 00:30:21] [Surplus Institute / David Church / Unclaimed Funds — eiQ53kxE6ZA @ 00:00:26]",
+                },
+            ],
+        },
+        {
+            "id": "alternative-playbooks",
+            "title": "Where Practitioners Disagree & Alternative Playbooks",
+            "paragraphs": [
+                (
+                    "The stopping point changes with the assignment. Tanner says that, in personal descendancy work, the usual stopping point is when children were born in the 1900s, partly because those people or their children may still be living. "
+                    "Tanner presents that as a personal allocation of research time, not an instruction everyone must adopt. "
+                    "Cowan’s post-1940 work deliberately continues toward living cousins, DNA connections, reunions, and family information. "
+                    "The differences are equally sharp around concentration. Tanner warns against spending decades fixated on one marriage record, person, or family while other research stops. "
+                    "Cowan instead stresses a focused ancestral couple and systematic work through each branch. "
+                    "Those are different controls on wasted effort: Tanner attacks obsession with a stalled question; Cowan attacks drifting wherever hints lead. "
+                    "Taylor supplies another important contrast with simply marking an unmarried, childless person as a finished branch. "
+                    "Olive Kingsley had no descendants, yet the will identified nieces and nephews. "
+                    "William H. Shoop’s institutional file contained a sister’s letter; tracing that sister’s descendants led to handwritten family birth information. "
+                    "For Taylor, a branch can end biologically while remaining productive as a source of evidence about other branches. "
+                    "The target determines whether the next task is another descendant, another record, or another relative’s papers. "
+                    "[9Q4qYeK5DTg @ 00:32:08] [_q7yAh8Anok @ 00:04:29] [9Q4qYeK5DTg @ 00:19:04] [FA43rRoIJV8 @ 00:16:06]"
+                ),
+                (
+                    "Original-record purchasing is another fork. Knox urges researchers who find an online entry to locate the original source because the original marriage record may contain information the index omits. "
+                    "Cowan says original records are routinely ordered for immediate ancestral research, but descendant projects expand so quickly that the benefit of each purchase needs consideration. "
+                    "Cross follows a cost-conscious acquisition sequence: Ancestry and FamilySearch first, including library access to Ancestry, then county or state ordering, and then consideration of VitalChek. "
+                    "Cross describes VitalChek as convenient and sometimes quicker, but more expensive, with expedited shipping adding further expense. "
+                    "The reported turnaround comparisons cut both ways: Cross encountered a state wait of six months against a county return within a month, but also saw the relationship reversed. "
+                    "For newspapers, Tanner usually begins with the free Chronicling America collection, while also describing subscription archives, state projects, university collections, and local holdings. "
+                    "Cowan uses Newspapers.com heavily for later family reconstruction. "
+                    "These are alternative access routes, not interchangeable collections. "
+                    "Tanner explicitly says a large page count is irrelevant when the collection lacks the required material, and local projects may hold newspapers absent from the large commercial sites. "
+                    "The purchasing decision therefore follows the record and its additional information, rather than the size or price of a platform alone. "
+                    "[JYf7R5lhBlU @ 00:09:17] [rKKDh07PmVc @ 00:15:55] [RM0PcAQiipM @ 00:05:47] [1Ptl1u6wRoY @ 00:34:01]"
+                ),
+                (
+                    "Contact style separates the family-history and recovery playbooks. Cowan uses a short relationship question: are you the granddaughter of the named person who married another named person? "
+                    "If so, Cowan offers to share information, sometimes stopping the opening message there. "
+                    "The broader approach is to make the tree findable, respond to contacts, and share without expecting anything back. "
+                    "Church leads with the deceased person’s name, property address, account type, and a callback number repeated in the message. "
+                    "The sample opening is, “This David Church, I’m calling about 123 Main Street,” followed by the account and owner. "
+                    "When someone refuses information, Church reports using a student’s pressure line: “Before you hang up the phone, I want to let you know that there’s money on the table.” "
+                    "Church continues that hanging up does a disservice to the family and claims the approach usually gets information or acceptance of contact details. "
+                    "Cowan explicitly recognizes that some recipients decline to share and treats that as their decision. "
+                    "Church also emails attention-getting subjects containing the name, account, and address, sometimes with an attachment of the message text. "
+                    "Despite those efforts, Church describes email as the weakest response channel, although it has produced a few warm leads. "
+                    "[rKKDh07PmVc @ 00:29:35] [_q7yAh8Anok @ 00:25:59] [eiQ53kxE6ZA @ 00:01:10] [eiQ53kxE6ZA @ 00:02:46]"
+                ),
+            ],
+            "table": {
+                "caption": "Different objectives produce different research and contact choices.",
+                "headers": ["Decision and practical contrast", "Practitioner approaches side by side", "Expert Source"],
+                "rows": [
+                    [
+                        "Stop at earlier descendants or deliberately continue toward living cousins.",
+                        "Tanner usually stops around children born in the 1900s; Cowan pursues later descendants for connections and DNA work.",
+                        "BYU Library Family History Center ([9Q4qYeK5DTg @ 00:32:08]); Ancestry ([rKKDh07PmVc @ 00:01:39])",
+                    ],
+                    [
+                        "Avoid a stalled obsession while keeping the active project focused.",
+                        "Tanner warns against fixation on one record; Cowan chooses an ancestral couple and works methodically through descendants.",
+                        "BYU Library Family History Center ([9Q4qYeK5DTg @ 00:19:04]); Ancestry ([_q7yAh8Anok @ 00:04:29])",
+                    ],
+                    [
+                        "Mark a biological endpoint without overlooking that relative’s surviving evidence.",
+                        "Cowan marks childless endpoints; Taylor finds nieces, nephews, and sibling connections through relatives without children.",
+                        "Ancestry ([_q7yAh8Anok @ 00:21:51]); FamilySearch ([FA43rRoIJV8 @ 00:11:53])",
+                    ],
+                    [
+                        "Pursue original records while considering the scale of descendant research.",
+                        "Knox seeks fuller original marriage information; Cowan weighs original-record benefits as descendant numbers grow rapidly.",
+                        "Genealogy TV ([JYf7R5lhBlU @ 00:09:17]); Ancestry ([rKKDh07PmVc @ 00:16:13])",
+                    ],
+                    [
+                        "Choose record delivery by access, expense, convenience, and actual turnaround.",
+                        "Cross checks existing collections and county or state options before considering more expensive VitalChek service.",
+                        "Ancestry Aimee ([RM0PcAQiipM @ 00:05:47]); Ancestry Aimee ([RM0PcAQiipM @ 00:08:03])",
+                    ],
+                    [
+                        "Offer a family connection or lead with the financial account.",
+                        "Cowan opens with kinship and sharing; Church names the account and uses a money-on-the-table response to resistance.",
+                        "Ancestry ([rKKDh07PmVc @ 00:30:21]); Surplus Institute / David Church / Unclaimed Funds ([eiQ53kxE6ZA @ 00:02:46])",
+                    ],
+                ],
+            },
+        },
+        {
+            "id": "failure-modes",
+            "title": "Firsthand Failure Modes, Traps & Economics Checks",
+            "paragraphs": [
+                (
+                    "A matching name can still attach the wrong family. Tanner describes two people in England with the same name, wives with the same name, and children whose names mostly matched. "
+                    "Location initially failed to separate them because they lived next door to each other. "
+                    "In another demonstration, Mary appeared as Mary V even though the attached census sources said Mary A. "
+                    "Correcting that reading exposed a death-record hint, a married surname, and the family attached to Isaac Cook. "
+                    "The Finders team encountered a different name problem in Victor’s maternal line: Amy Moyes identified four possible spellings of the grandmother’s surname, turning each potential record check into repeated work. "
+                    "On the separate Theodori case, Shannon Freeman faced a grandfather using several different names across records. "
+                    "A birth certificate helped establish the correct family before the tree could be extended with confidence. "
+                    "Cowan adds a relationship trap even when the names are correct: a recent obituary listed surviving children, but only three were biological children, one was a foster child, and four were stepchildren. "
+                    "A named surviving spouse also need not be the parent of every listed child. "
+                    "These are observed errors and ambiguities that changed the search, not merely untidy spelling to smooth over. "
+                    "[9Q4qYeK5DTg @ 00:43:27] [TVIHQUFpkjk @ 00:45:24] [E36sRJaPZRg @ 00:07:58] [rKKDh07PmVc @ 00:25:38]"
+                ),
+                (
+                    "A missing search result and a missing record are different problems. Berry demonstrates how given-name-first searching can hide an existing Delaware County marriage entry, while a recent marriage may still be awaiting entry. "
+                    "Cowan reports obituary links that stop working after newspapers remove online notices; the index can still identify the newspaper for a direct request or library search. "
+                    "Tanner encountered a cemetery employee who answered questions but volunteered nothing: obtaining the records required repeatedly asking for the next specific record type. "
+                    "In another burial problem, an ancestor’s cemetery date appeared decades later than the known death. "
+                    "City archive material showed an earlier church burial followed by removal to another cemetery when the original site was built over. "
+                    "Smith describes the reverse mismatch between stone and plot: William Busby’s wife was buried without having a name added to the stone, while Lieutenant Cassidy’s Brisbane memorial commemorated someone buried in South Africa. "
+                    "A headstone therefore did not settle either who occupied the plot or where the named person was buried. "
+                    "The practical responses are equally concrete: repeat the search in the system’s required format, follow the index to its publisher, request the separate cemetery records, and distinguish death, burial, removal, and memorial information. "
+                    "[yFnDG9Lf6kc @ 00:03:32] [rKKDh07PmVc @ 00:19:22] [70ya-VPbkBc @ 00:50:11] [5sxGnXLZO6A @ 00:07:02]"
+                ),
+                (
+                    "Victor’s case shows the economic exposure behind an expanding tree. Ryan Gregory and Amy Moyes worked a privately referred estate while assuming rivals might also have the lead. "
+                    "A second marriage by Victor’s father created a possible half-sibling branch that, in the team’s account, could displace the wider relatives already being pursued. "
+                    "They continued wider-family work while that question remained open; the later search found no additional children. "
+                    "The flat visit carried another reversal risk: finding a will could make months of work on the contacted relatives useless. "
+                    "Instead, the search revealed statements showing 220,000 in one account and 320,000 in another; the programme subsequently reported a £900,000 estate for Nigel and fifteen other heirs. "
+                    "The separate John Theodori case began with a council flat and uncertain assets. "
+                    "The team feared spending substantial resources only to find no distributable money, then discovered about £80,000 and intensified the Smith-side research. "
+                    "A repeated address finally unlocked that difficult family. "
+                    "Cross’s record-ordering comparisons add a smaller but real timing exposure: a state could take six months where a county took a month, with the opposite also observed. "
+                    "Cowan likewise makes original-record purchases selective when descendant numbers become large. "
+                    "Research effort, waiting time, and estate value did not move together automatically in these accounts. "
+                    "[E36sRJaPZRg @ 00:07:21] [E36sRJaPZRg @ 00:33:10] [RM0PcAQiipM @ 00:08:03] [rKKDh07PmVc @ 00:16:13]"
+                ),
+            ],
+            "table": {
+                "caption": "Observed bottlenecks and reversals that changed the work.",
+                "headers": ["Observed failure or exposure", "Practitioner response or reported result", "Expert Source"],
+                "rows": [
+                    [
+                        "Matching names and locations concealed two neighboring families from the researcher.",
+                        "Tanner eventually separated same-named people whose spouses and most children also shared matching names.",
+                        "BYU Library Family History Center ([9Q4qYeK5DTg @ 00:44:25])",
+                    ],
+                    [
+                        "A wrong middle initial obscured a married woman’s existing family.",
+                        "Reading attached census sources corrected Mary’s initial and led to the Cook family and duplicate records.",
+                        "BYU Library Family History Center ([TVIHQUFpkjk @ 00:45:24])",
+                    ],
+                    [
+                        "An online marriage search returned nothing despite a possible existing record.",
+                        "Berry recommends surname-first or surname-only searching and checking the county where the license application occurred.",
+                        "Rachel Ezzell Berry ([yFnDG9Lf6kc @ 00:04:38])",
+                    ],
+                    [
+                        "An apparent burial-date conflict actually reflected a later cemetery removal.",
+                        "Tanner found the earlier church burial in Philadelphia archive material explaining the move to Westminster Cemetery.",
+                        "BYU Library Family History Center ([70ya-VPbkBc @ 00:50:37])",
+                    ],
+                    [
+                        "Already-contacted wider relatives could lose their place in Victor’s case.",
+                        "The team investigated possible half siblings and searched the flat for a will while working at risk.",
+                        "Heir Hunters ([E36sRJaPZRg @ 00:24:13]); Heir Hunters ([E36sRJaPZRg @ 00:32:35])",
+                    ],
+                    [
+                        "The Smith surname and changing names made John’s maternal search disheartening.",
+                        "The team followed a recurring property address instead and reported finding nineteen additional heirs.",
+                        "Heir Hunters ([E36sRJaPZRg @ 00:41:42]); Heir Hunters ([E36sRJaPZRg @ 00:42:36])",
+                    ],
+                ],
+            },
+            "callout": {
+                "kind": "OPERATOR GATE",
+                "title": "Checks drawn from failures the practitioners actually encountered",
+                "body": "Use these checks before treating a branch, record, or commercial case as settled.",
+                "items": [
+                    "Check whether matching names conceal separate households; Tanner’s same-named people lived next door and had similarly named spouses and children. [BYU Library Family History Center — 9Q4qYeK5DTg @ 00:44:25]",
+                    "Separate biological, foster, step, and half relationships instead of converting an obituary’s family wording directly into parentage. [Ancestry — rKKDh07PmVc @ 00:25:38]",
+                    "Distinguish death, burial, and memorial evidence; Smith’s examples include an unnamed person in a plot and a named person buried elsewhere. [FamilySearch — 5sxGnXLZO6A @ 00:07:02]",
+                    "Keep Victor’s two reversals visible: possible half siblings threatened wider-family entitlement, and a will could overturn the contacted-heir work. [Heir Hunters — E36sRJaPZRg @ 00:24:13] [Heir Hunters — E36sRJaPZRg @ 00:32:35]",
+                ],
+            },
+        },
+    ],
+    "pull_quote": "“Even just because it’s carved in stone doesn’t make it fact.” — Christa Cowan, Ancestry (_q7yAh8Anok @ 00:05:53).",
+    "diagram_id": "diag-04",
+    "action_checklist": [
+        "Draw the known family, ask non-leading questions, and inspect photograph backs for names, dates, and places before expanding the search. [Fraser and Fraser — MdFDiQQXD3M @ 00:00:20] [Fraser and Fraser — MdFDiQQXD3M @ 00:01:02]",
+        "Choose a documented ancestor, verify the connecting relationships, and open FamilySearch’s descendancy view to inspect incomplete branches. [BYU Library Family History Center — 9Q4qYeK5DTg @ 00:06:44] [BYU Library Family History Center — 9Q4qYeK5DTg @ 00:29:31]",
+        "Search marriage collections by locality, inspect both register pages and witnesses, and use surname-first searching for Delaware County marriage entries. [Genealogy TV — JYf7R5lhBlU @ 00:04:50] [Genealogy TV — JYf7R5lhBlU @ 00:07:29] [Rachel Ezzell Berry — yFnDG9Lf6kc @ 00:03:32]",
+        "Read death certificates for the informant, cemetery, and undertaker, then pursue burial, funeral, probate, or household records when the certificate is absent or incomplete. [Ancestry Aimee — RM0PcAQiipM @ 00:02:12] [Ancestry Aimee — 6TDebNoMsvQ @ 00:01:22] [FamilySearch — 5sxGnXLZO6A @ 00:03:20]",
+        "Find newspapers for the event’s place and period, inspect obituary variants, and extend the search to siblings, in-laws, and regional newspapers. [BYU Library Family History Center — 1Ptl1u6wRoY @ 00:24:46] [Ancestry — _q7yAh8Anok @ 00:12:35] [Ancestry — rKKDh07PmVc @ 00:17:53]",
+        "Record positive and negative findings, mark the next branch to research, and use identified family connections when contacting relatives. [Ancestry — _q7yAh8Anok @ 00:20:38] [Ancestry — _q7yAh8Anok @ 00:07:54] [Ancestry — rKKDh07PmVc @ 00:30:21]",
+    ],
+    "statutory_citations": [
+        {
+            "title": "BYU Library Family History Center — Finding Your Ancestors' Descendants  - James Tanner (26 Feb 2023) [00:06:44]",
+            "url": "https://www.youtube.com/watch?v=9Q4qYeK5DTg&t=404s",
+            "relevance": "Primary practitioner testimony on verifying every parent-child relationship before extending a descendant tree.",
+        },
+        {
+            "title": "Ancestry — Post-1940 Descendancy Research | Ancestry [00:17:53]",
+            "url": "https://www.youtube.com/watch?v=rKKDh07PmVc&t=1073s",
+            "relevance": "Primary practitioner testimony on using sibling and in-law obituaries to reconstruct later family relationships.",
+        },
+        {
+            "title": "Rachel Ezzell Berry — DelcoPA ROW | Searching for the Existence of Marriage Records Online [00:05:08]",
+            "url": "https://www.youtube.com/watch?v=yFnDG9Lf6kc&t=308s",
+            "relevance": "Primary practitioner testimony distinguishing the county of license application from residence and wedding location.",
+        },
+        {
+            "title": "Heir Hunters — What They Found in a Retired Postal Worker's Flat | Heir Hunters S11 Ep7 [00:32:35]",
+            "url": "https://www.youtube.com/watch?v=E36sRJaPZRg&t=1955s",
+            "relevance": "Primary case testimony on the risk that a discovered will could overturn work identifying and contacting relatives.",
+        },
+    ],
+    "source_citations": [
+        {
+            "source_type": "video_pro_tip",
+            "video_id": "9Q4qYeK5DTg",
+            "title": "Finding Your Ancestors' Descendants  - James Tanner (26 Feb 2023)",
+            "channel": "BYU Library Family History Center",
+            "author": "BYU Library Family History Center",
+            "text": "In each case we look for a valid sourced parent-child relationship for each generation.",
+            "tip": "In each case we look for a valid sourced parent-child relationship for each generation.",
+            "timestamp": 404,
+            "timestamp_seconds": 404,
+            "timestamp_label": "[00:06:44]",
+            "url": "https://www.youtube.com/watch?v=9Q4qYeK5DTg&t=404s",
+            "markdown": "[00:06:44](https://www.youtube.com/watch?v=9Q4qYeK5DTg&t=404s)",
+            "epistemic_status": "attributed_practitioner_claim",
+            "relevance": "Verbatim practitioner testimony on verifying relationship links before descendant research.",
+        },
+        {
+            "source_type": "video_pro_tip",
+            "video_id": "1Ptl1u6wRoY",
+            "title": "Online Digital Newspaper Sources - James Tanner",
+            "channel": "BYU Library Family History Center",
+            "author": "BYU Library Family History Center",
+            "text": "You actually have to go to each individual catalog online.",
+            "tip": "You actually have to go to each individual catalog online.",
+            "timestamp": 308,
+            "timestamp_seconds": 308,
+            "timestamp_label": "[00:05:08]",
+            "url": "https://www.youtube.com/watch?v=1Ptl1u6wRoY&t=308s",
+            "markdown": "[00:05:08](https://www.youtube.com/watch?v=1Ptl1u6wRoY&t=308s)",
+            "epistemic_status": "attributed_practitioner_claim",
+            "relevance": "Practitioner testimony on searching newspaper repositories individually rather than relying only on a general web search.",
+        },
+        {
+            "source_type": "video_pro_tip",
+            "video_id": "TVIHQUFpkjk",
+            "title": "Basic Series: Part 3 - Beginning Descendancy Research - James Tanner",
+            "channel": "BYU Library Family History Center",
+            "author": "BYU Library Family History Center",
+            "text": "Please add in the sources and read them. Look at what the source said.",
+            "tip": "Please add in the sources and read them. Look at what the source said.",
+            "timestamp": 2857,
+            "timestamp_seconds": 2857,
+            "timestamp_label": "[00:47:37]",
+            "url": "https://www.youtube.com/watch?v=TVIHQUFpkjk&t=2857s",
+            "markdown": "[00:47:37](https://www.youtube.com/watch?v=TVIHQUFpkjk&t=2857s)",
+            "epistemic_status": "attributed_practitioner_claim",
+            "relevance": "Practitioner testimony following the correction of Mary’s initial and discovery of a married family.",
+        },
+        {
+            "source_type": "video_pro_tip",
+            "video_id": "_q7yAh8Anok",
+            "title": "Descendancy Research | Ancestry",
+            "channel": "Ancestry",
+            "author": "Ancestry",
+            "text": "Keep good notes, keep track of what you found, make notes about negative findings as well.",
+            "tip": "Keep good notes, keep track of what you found, make notes about negative findings as well.",
+            "timestamp": 1238,
+            "timestamp_seconds": 1238,
+            "timestamp_label": "[00:20:38]",
+            "url": "https://www.youtube.com/watch?v=_q7yAh8Anok&t=1238s",
+            "markdown": "[00:20:38](https://www.youtube.com/watch?v=_q7yAh8Anok&t=1238s)",
+            "epistemic_status": "attributed_practitioner_claim",
+            "relevance": "Practitioner testimony on preserving search progress and avoiding repeated unsuccessful searches.",
+        },
+        {
+            "source_type": "video_pro_tip",
+            "video_id": "rKKDh07PmVc",
+            "title": "Post-1940 Descendancy Research | Ancestry",
+            "channel": "Ancestry",
+            "author": "Ancestry",
+            "text": "Look for obituaries of siblings. Sometimes the obituaries of siblings in a family will list married names of sisters.",
+            "tip": "Look for obituaries of siblings. Sometimes the obituaries of siblings in a family will list married names of sisters.",
+            "timestamp": 1073,
+            "timestamp_seconds": 1073,
+            "timestamp_label": "[00:17:53]",
+            "url": "https://www.youtube.com/watch?v=rKKDh07PmVc&t=1073s",
+            "markdown": "[00:17:53](https://www.youtube.com/watch?v=rKKDh07PmVc&t=1073s)",
+            "epistemic_status": "attributed_practitioner_claim",
+            "relevance": "Practitioner testimony on reconstructing later descendants through sibling obituaries.",
+        },
+        {
+            "source_type": "video_pro_tip",
+            "video_id": "FA43rRoIJV8",
+            "title": "Tracing Descendants: An Essential Strategy to Solve Your Brickwall",
+            "channel": "FamilySearch",
+            "author": "FamilySearch",
+            "text": "It wasn't land, it wasn't vast amounts of property. It was a string of gold beads, some buttons and some books, but it was an essential step in solving this brick wall.",
+            "tip": "It wasn't land, it wasn't vast amounts of property. It was a string of gold beads, some buttons and some books, but it was an essential step in solving this brick wall.",
+            "timestamp": 676,
+            "timestamp_seconds": 676,
+            "timestamp_label": "[00:11:16]",
+            "url": "https://www.youtube.com/watch?v=FA43rRoIJV8&t=676s",
+            "markdown": "[00:11:16](https://www.youtube.com/watch?v=FA43rRoIJV8&t=676s)",
+            "epistemic_status": "attributed_practitioner_claim",
+            "relevance": "Practitioner testimony on family relationships identified through Olive Kingsley’s personal-property bequests.",
+        },
+        {
+            "source_type": "video_pro_tip",
+            "video_id": "MdFDiQQXD3M",
+            "title": "Part One • 10 Steps To Building Your Own Family Tree • Fraser and Fraser",
+            "channel": "Fraser and Fraser",
+            "author": "Fraser and Fraser",
+            "text": "Get the biggest piece of paper you can find and jot down all you know about your family in the form of the family tree.",
+            "tip": "Get the biggest piece of paper you can find and jot down all you know about your family in the form of the family tree.",
+            "timestamp": 20,
+            "timestamp_seconds": 20,
+            "timestamp_label": "[00:00:20]",
+            "url": "https://www.youtube.com/watch?v=MdFDiQQXD3M&t=20s",
+            "markdown": "[00:00:20](https://www.youtube.com/watch?v=MdFDiQQXD3M&t=20s)",
+            "epistemic_status": "attributed_practitioner_claim",
+            "relevance": "Practitioner testimony on mapping known relatives before further investigation.",
+        },
+        {
+            "source_type": "video_pro_tip",
+            "video_id": "70ya-VPbkBc",
+            "title": "Digging Deep into Death Records - James Tanner",
+            "channel": "BYU Library Family History Center",
+            "author": "BYU Library Family History Center",
+            "text": "I had to ask for every single record.",
+            "tip": "I had to ask for every single record.",
+            "timestamp": 940,
+            "timestamp_seconds": 940,
+            "timestamp_label": "[00:15:40]",
+            "url": "https://www.youtube.com/watch?v=70ya-VPbkBc&t=940s",
+            "markdown": "[00:15:40](https://www.youtube.com/watch?v=70ya-VPbkBc&t=940s)",
+            "epistemic_status": "attributed_practitioner_claim",
+            "relevance": "Firsthand testimony on obtaining separate cemetery records from an employee who did not volunteer additional holdings.",
+        },
+        {
+            "source_type": "video_pro_tip",
+            "video_id": "JYf7R5lhBlU",
+            "title": "Marriage Records for Family History: Where to find them on Ancestry.com & FamilySearch.org",
+            "channel": "Genealogy TV",
+            "author": "Genealogy TV",
+            "text": "Make sure that you are looking on both pages, especially in marriage registries.",
+            "tip": "Make sure that you are looking on both pages, especially in marriage registries.",
+            "timestamp": 449,
+            "timestamp_seconds": 449,
+            "timestamp_label": "[00:07:29]",
+            "url": "https://www.youtube.com/watch?v=JYf7R5lhBlU&t=449s",
+            "markdown": "[00:07:29](https://www.youtube.com/watch?v=JYf7R5lhBlU&t=449s)",
+            "epistemic_status": "attributed_practitioner_claim",
+            "relevance": "Practitioner testimony on reading complete marriage-register entries rather than one displayed page.",
+        },
+        {
+            "source_type": "video_pro_tip",
+            "video_id": "5sxGnXLZO6A",
+            "title": "No Death Certificate?",
+            "channel": "FamilySearch",
+            "author": "FamilySearch",
+            "text": "Not everyone in the plot is actually on the headstone.",
+            "tip": "Not everyone in the plot is actually on the headstone.",
+            "timestamp": 422,
+            "timestamp_seconds": 422,
+            "timestamp_label": "[00:07:02]",
+            "url": "https://www.youtube.com/watch?v=5sxGnXLZO6A&t=422s",
+            "markdown": "[00:07:02](https://www.youtube.com/watch?v=5sxGnXLZO6A&t=422s)",
+            "epistemic_status": "attributed_practitioner_claim",
+            "relevance": "Practitioner testimony on the difference between a headstone inscription and the people buried in a plot.",
+        },
+        {
+            "source_type": "video_pro_tip",
+            "video_id": "Af6QVCj8Rcg",
+            "title": "Social Security Death Index: Uncovering Hidden Clues | Ancestry",
+            "channel": "Ancestry",
+            "author": "Ancestry",
+            "text": "Some entries will have a last benefit. This benefit was usually paid to a qualifying survivor such as a spouse or child.",
+            "tip": "Some entries will have a last benefit. This benefit was usually paid to a qualifying survivor such as a spouse or child.",
+            "timestamp": 66,
+            "timestamp_seconds": 66,
+            "timestamp_label": "[00:01:06]",
+            "url": "https://www.youtube.com/watch?v=Af6QVCj8Rcg&t=66s",
+            "markdown": "[00:01:06](https://www.youtube.com/watch?v=Af6QVCj8Rcg&t=66s)",
+            "epistemic_status": "attributed_practitioner_claim",
+            "relevance": "Practitioner testimony distinguishing last-benefit information in the Social Security Death Index.",
+        },
+        {
+            "source_type": "video_pro_tip",
+            "video_id": "6TDebNoMsvQ",
+            "title": "What death records are you missing?",
+            "channel": "Ancestry Aimee",
+            "author": "Ancestry Aimee",
+            "text": "City directories can be really helpful when you're looking for mortuaries or undertakers.",
+            "tip": "City directories can be really helpful when you're looking for mortuaries or undertakers.",
+            "timestamp": 127,
+            "timestamp_seconds": 127,
+            "timestamp_label": "[00:02:07]",
+            "url": "https://www.youtube.com/watch?v=6TDebNoMsvQ&t=127s",
+            "markdown": "[00:02:07](https://www.youtube.com/watch?v=6TDebNoMsvQ&t=127s)",
+            "epistemic_status": "attributed_practitioner_claim",
+            "relevance": "Practitioner testimony on using business addresses and directories to extend death-record searches.",
+        },
+        {
+            "source_type": "video_pro_tip",
+            "video_id": "RM0PcAQiipM",
+            "title": "Where Can You Get a Death Certificate (& what information is in it)",
+            "channel": "Ancestry Aimee",
+            "author": "Ancestry Aimee",
+            "text": "These people are providing this information at a time of stress and it's not always right.",
+            "tip": "These people are providing this information at a time of stress and it's not always right.",
+            "timestamp": 152,
+            "timestamp_seconds": 152,
+            "timestamp_label": "[00:02:32]",
+            "url": "https://www.youtube.com/watch?v=RM0PcAQiipM&t=152s",
+            "markdown": "[00:02:32](https://www.youtube.com/watch?v=RM0PcAQiipM&t=152s)",
+            "epistemic_status": "attributed_practitioner_claim",
+            "relevance": "Practitioner testimony on assessing family information supplied by a death-certificate informant.",
+        },
+        {
+            "source_type": "video_pro_tip",
+            "video_id": "E36sRJaPZRg",
+            "title": "What They Found in a Retired Postal Worker's Flat | Heir Hunters S11 Ep7",
+            "channel": "Heir Hunters",
+            "author": "Heir Hunters",
+            "text": "We stopped looking for Smiths. We started looking for connections to the one property.",
+            "tip": "We stopped looking for Smiths. We started looking for connections to the one property.",
+            "timestamp": 2523,
+            "timestamp_seconds": 2523,
+            "timestamp_label": "[00:42:03]",
+            "url": "https://www.youtube.com/watch?v=E36sRJaPZRg&t=2523s",
+            "markdown": "[00:42:03](https://www.youtube.com/watch?v=E36sRJaPZRg&t=2523s)",
+            "epistemic_status": "attributed_practitioner_claim",
+            "relevance": "Firsthand case testimony on using a recurring property address to resolve a difficult common-surname family.",
+        },
+        {
+            "source_type": "video_pro_tip",
+            "video_id": "eiQ53kxE6ZA",
+            "title": "How To Find family members of a deceased person!",
+            "channel": "Surplus Institute / David Church / Unclaimed Funds",
+            "author": "Surplus Institute / David Church / Unclaimed Funds",
+            "text": "The first thing I do is I try the numbers on there just to see if a family member has kept the numbers.",
+            "tip": "The first thing I do is I try the numbers on there just to see if a family member has kept the numbers.",
+            "timestamp": 26,
+            "timestamp_seconds": 26,
+            "timestamp_label": "[00:00:26]",
+            "url": "https://www.youtube.com/watch?v=eiQ53kxE6ZA&t=26s",
+            "markdown": "[00:00:26](https://www.youtube.com/watch?v=eiQ53kxE6ZA&t=26s)",
+            "epistemic_status": "attributed_practitioner_claim",
+            "relevance": "Practitioner testimony on testing existing telephone numbers before expanding a deceased-person contact search.",
+        },
+        {
+            "source_type": "video_pro_tip",
+            "video_id": "yFnDG9Lf6kc",
+            "title": "DelcoPA ROW | Searching for the Existence of Marriage Records Online",
+            "channel": "Rachel Ezzell Berry",
+            "author": "Rachel Ezzell Berry",
+            "text": "When you search for your name make sure you put your last name in first. You can also search just for your last name.",
+            "tip": "When you search for your name make sure you put your last name in first. You can also search just for your last name.",
+            "timestamp": 212,
+            "timestamp_seconds": 212,
+            "timestamp_label": "[00:03:32]",
+            "url": "https://www.youtube.com/watch?v=yFnDG9Lf6kc&t=212s",
+            "markdown": "[00:03:32](https://www.youtube.com/watch?v=yFnDG9Lf6kc&t=212s)",
+            "epistemic_status": "attributed_practitioner_claim",
+            "relevance": "Practitioner testimony on the exact name-entry format for Delaware County’s marriage-record search.",
+        },
+    ],
+}

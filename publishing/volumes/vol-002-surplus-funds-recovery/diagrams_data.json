@@ -1,308 +1,333 @@
 {
   "diagrams": [
     {
-      "diagram_id": "diag-01-end-to-end-workflow",
-      "chart_type": "process_flow",
-      "title": "From sale record to reconciled recovery",
-      "subtitle": "Separate tax-sale and foreclosure procedures",
+      "diagram_id": "diag-01-find-verify-contact-document-track",
       "chapter_number": 1,
-      "epistemic_tag": "operating_framework",
-      "assumptions_note": "Numeric values indicate sequence, not duration or probability of recovery.",
-      "caption": "A posted surplus is an investigation starting point; verify custody, priority and entitlement before estimating a claimant's proceeds.",
+      "title": "From Auction Record to Recovery Claim",
+      "subtitle": "Connect the sale, the available funds, the entitled claimant, and the holding office's requirements.",
+      "caption": "Ted Thomas describes narrowing auction results to excess proceeds. Eric Richardson of Money Making Juggernaut emphasizes county procedures, while Bob Diamond emphasizes identity and agreements.",
+      "assumptions_note": "Richardson's accessible-county approach requires knowing the local claim process. Diamond's agreement examples are not universal filing requirements.",
+      "note": "SurplusFundsRiches warns that old balances may already be claimed. Diamond identifies signing the wrong person as a recurring failure.",
+      "chart_type": "process_flow",
       "stages": [
         {
-          "label": "Identify sale",
+          "step": "01",
+          "label": "Find sold-auction candidates",
           "value": "Step 1",
-          "numeric_value": 1.0,
-          "detail": "Record parcel, case number, sale date and whether the sale was tax-related or mortgage foreclosure."
+          "detail": "Ted Thomas starts with auction results and narrows to properties sold for more than the county originally asked."
         },
         {
-          "label": "Verify funds",
+          "step": "02",
+          "label": "Verify funds and competing debt",
           "value": "Step 2",
-          "numeric_value": 2.0,
-          "detail": "Reconcile the sale accounting with the current custodian ledger; exclude paid, transferred or duplicated balances."
+          "detail": "SurplusFundsRiches checks list age, continuing availability, ownership, and debt as they stood at the sale."
         },
         {
-          "label": "Resolve priority",
+          "step": "03",
+          "label": "Locate the entitled claimant",
           "value": "Step 3",
-          "numeric_value": 3.0,
-          "detail": "Trace title, lien claims and the claimant's identity; refer disputed ranking and entitlement to counsel."
+          "detail": "Richardson uses locating research and repeatable outreach. Diamond checks that the person is the intended claimant rather than a relative or namesake."
         },
         {
-          "label": "Document authority",
+          "step": "04",
+          "label": "Agree and assemble documents",
           "value": "Step 4",
-          "numeric_value": 4.0,
-          "detail": "Check deadlines and permitted compensation; assemble the signed engagement and evidence of representative authority."
+          "detail": "Diamond describes a fee agreement, power of attorney, assignment, and payment direction. Richardson first establishes how the selected county accepts claims."
         },
         {
-          "label": "Submit and reconcile",
+          "step": "05",
+          "label": "Submit and track the claim",
           "value": "Step 5",
-          "numeric_value": 5.0,
-          "detail": "Use the custodian or court procedure, track objections and reconcile distribution against collected fees."
+          "detail": "Richardson follows the county's filing route. Unclaimed CEO identifies the actual holding office and timing, while Diamond warns against discovering deadlines after signing."
         }
       ]
     },
     {
-      "diagram_id": "diag-02-deal-funnel",
-      "chart_type": "funnel",
-      "title": "Screen for recoverable value, not list size",
-      "subtitle": "Illustrative cohort of 200 sale records",
+      "diagram_id": "diag-02-overseas-recovery-balance",
       "chapter_number": 6,
-      "epistemic_tag": "illustrative_model",
-      "assumptions_note": "Invented nested cohort counts; no observed conversion rate or collection forecast is implied.",
-      "caption": "Keep a reason code for every rejected record and distinguish an engaged claimant from an actual cash collection.",
+      "title": "An Overseas Recovery Through Contact and Paperwork",
+      "subtitle": "Danielle reports $97,000 reduced to $87,000 before negotiating a 20% fee.",
+      "caption": "Danielle, appearing on Money Making Juggernaut, describes an overseas recovery using WhatsApp, Google Translate, and translated notarizations.",
+      "assumptions_note": "Danielle reports a balance reduction, not a lead-conversion funnel. The $87,000 repeated through contact, documentation, and agreement is the same after-tax reference balance, not a separately measured balance at each milestone.",
+      "note": "Danielle's 20% is a negotiated fee, not a conversion rate. The $87,000 is not the owner's net receipt after that fee. Contact and documentation milestones do not establish an exact chronology for every exchange.",
+      "chart_type": "funnel",
       "stages": [
         {
-          "label": "Sale records",
-          "value": "200",
-          "numeric_value": 200.0,
-          "detail": "Deduplicated case and parcel records from one defined acquisition period."
+          "label": "Initial reported funds",
+          "value": 97000,
+          "display": "$97,000",
+          "conversion": "Not a lead-conversion measure",
+          "detail": "Danielle identifies this amount before the reduction for back taxes."
         },
         {
-          "label": "Balance verified",
-          "value": "80",
-          "numeric_value": 80.0,
-          "detail": "Custodian confirmation supports a still-held balance rather than a stale auction-list amount."
+          "label": "After back taxes",
+          "value": 87000,
+          "display": "$87,000",
+          "conversion": "Back-tax adjustment",
+          "detail": "Danielle reports that back taxes reduced the funds to this amount before the fee discussion."
         },
         {
-          "label": "Net claim plausible",
-          "value": "32",
-          "numeric_value": 32.0,
-          "detail": "Preliminary lien and deadline screening leaves a potentially economic claimant share."
+          "label": "Overseas communication",
+          "value": 87000,
+          "display": "$87,000 reference balance",
+          "conversion": "No separate balance change reported",
+          "detail": "Danielle uses WhatsApp and Google Translate to communicate with the overseas owner. The amount remains a reference to the reported after-tax funds."
         },
         {
-          "label": "Claimants engaged",
-          "value": "8",
-          "numeric_value": 8.0,
-          "detail": "Eligible claimants choose assistance after receiving a clear scope and fee calculation."
+          "label": "Translated notarizations",
+          "value": 87000,
+          "display": "$87,000 reference balance",
+          "conversion": "No separate balance change reported",
+          "detail": "Translated notarizations support Danielle's recovery work. No separate documentation-stage balance is reported."
         },
         {
-          "label": "Fees collected",
-          "value": "3",
-          "numeric_value": 3.0,
-          "detail": "Resolved cases with cleared business receipts; pending matters remain outside this count."
+          "label": "Negotiated recovery agreement",
+          "value": 87000,
+          "display": "$87,000 before the recovery fee",
+          "conversion": "20% negotiated fee, not conversion",
+          "detail": "Danielle reports negotiating a 20% fee and completing the overseas recovery. This amount is not the operator's fee or the owner's net distribution."
         }
       ]
     },
     {
-      "diagram_id": "diag-03-fee-waterfall",
-      "chart_type": "waterfall",
-      "title": "Collected fee to case contribution",
-      "subtitle": "Keep the claimant distribution separate",
+      "diagram_id": "diag-03-sale-minus-debt-examples",
       "chapter_number": 3,
-      "epistemic_tag": "illustrative_model",
-      "assumptions_note": "USD; opening and closing bars are totals, intervening bars are signed deductions. Assume a permitted 10% fee on a $50,000 claimant recovery.",
-      "caption": "$5,000 collected less $600 records, $900 professional review and $1,000 acquisition allocation leaves $2,500 before overhead, owner compensation and tax.",
-      "stages": [
+      "title": "Reconstruct the Surplus Before Pursuing It",
+      "subtitle": "Separate sale proceeds from the debt being collected, then investigate whether additional deductions remain.",
+      "caption": "Nicole of Next Level VA reports the Tarrant reconstruction. Overage Acquisition supplies a separate introductory tax-sale illustration.",
+      "assumptions_note": "Nicole's Tarrant figures and Overage Acquisition's illustration are independent examples. Each sale total begins a separate calculation; neither result establishes a claimant's final payout.",
+      "note": "Nicole groups unpaid taxes, penalties, interest, and attorney fees in the reported deduction. Mark of Texas FundFinding warns that additional taxes can reduce preliminary proceeds.",
+      "chart_type": "waterfall",
+      "bars": [
         {
-          "label": "Collected fee",
-          "value": "$5,000",
-          "numeric_value": 5000.0,
-          "detail": "Opening total; assumes lawful compensation and actual receipt, not an unsigned prospective fee."
+          "label": "Tarrant sale price",
+          "value": 41000,
+          "display": "$41,000",
+          "kind": "total"
         },
         {
-          "label": "Evidence costs",
-          "value": "-$600",
-          "numeric_value": -600.0,
-          "detail": "Certified deeds, docket copies, identity documents and research labor paid by the business."
+          "label": "Tarrant taxes and charges",
+          "value": 13251.08,
+          "display": "-$13,251.08",
+          "kind": "deduction"
         },
         {
-          "label": "Professional review",
-          "value": "-$900",
-          "numeric_value": -900.0,
-          "detail": "Illustrative business-paid review cost; not a statutory deduction from claimant proceeds."
+          "label": "Tarrant reported surplus",
+          "value": 27748.92,
+          "display": "$27,748.92",
+          "kind": "result"
         },
         {
-          "label": "Acquisition allocation",
-          "value": "-$1,000",
-          "numeric_value": -1000.0,
-          "detail": "Includes outreach and screening expense for unsuccessful records in the same cohort."
+          "label": "Separate illustrated sale",
+          "value": 100000,
+          "display": "$100,000",
+          "kind": "total"
         },
         {
-          "label": "Case contribution",
-          "value": "$2,500",
-          "numeric_value": 2500.0,
-          "detail": "Closing total, not another movement; deduct fixed overhead before describing owner profit."
+          "label": "Illustrated back taxes",
+          "value": 10000,
+          "display": "-$10,000",
+          "kind": "deduction"
+        },
+        {
+          "label": "Illustrated overage",
+          "value": 90000,
+          "display": "$90,000",
+          "kind": "result"
         }
       ]
     },
     {
-      "diagram_id": "diag-04-jurisdiction-fee-caps",
-      "chart_type": "horizontal_bars",
-      "title": "Test fee sensitivity before choosing a market",
-      "subtitle": "Hypothetical ceilings, not a state-law comparison",
+      "diagram_id": "diag-04-reported-operating-expenses",
       "chapter_number": 2,
-      "epistemic_tag": "illustrative_model",
-      "assumptions_note": "Percent of a $50,000 claimant recovery. A-D are fictional jurisdictions; these values assert no actual statutory cap.",
-      "caption": "A percentage ceiling alone does not establish an enforceable agreement; claim type, timing, permitted services and the compensation base also matter.",
-      "stages": [
+      "title": "Keep Operating Costs Separate From Recovery Volume",
+      "subtitle": "Reported mailing, document, notarization, and judicial-work expenses have different purchase units.",
+      "caption": "Eric Richardson's student on Money Making Juggernaut reports mailing costs. Greg of Overage Acquisition reports a deed-copy cost, Nick Fullmer reports remote notarization, and Bob Diamond reports a judicial-work budget.",
+      "assumptions_note": "Each entry is a quoted point amount, so its bounds and reference value are identical. These are not market distributions or independently established typical prices. Approximate quotes remain approximate.",
+      "note": "Richardson's student's letter and campaign figures describe the same mailing economics at different quantities and must not be added together. Diamond's legal budget is not a list-purchase cost.",
+      "chart_type": "horizontal_bars",
+      "unit": "USD per stated purchase or budget",
+      "bars": [
         {
-          "label": "Hypothetical A",
-          "value": "5% / $2,500",
-          "numeric_value": 5.0,
-          "detail": "Assumed ceiling only; verify the governing sale procedure and any waiting period."
+          "label": "Student's single letter",
+          "min": 0.85,
+          "max": 0.85,
+          "typical": 0.85,
+          "display": "$0.85 per letter"
         },
         {
-          "label": "Hypothetical B",
-          "value": "10% / $5,000",
-          "numeric_value": 10.0,
-          "detail": "Assumed ceiling, not a recommendation to charge the maximum."
+          "label": "Student's mailing campaign",
+          "min": 850,
+          "max": 850,
+          "typical": 850,
+          "display": "$850 for 1,000 letters"
         },
         {
-          "label": "Hypothetical C",
-          "value": "15% / $7,500",
-          "numeric_value": 15.0,
-          "detail": "Assumed ceiling; reimbursed expenses may count toward allowed compensation."
+          "label": "Greg's online grant-deed copy",
+          "min": 4,
+          "max": 4,
+          "typical": 4,
+          "display": "About $4 per copy"
         },
         {
-          "label": "Hypothetical D",
-          "value": "20% / $10,000",
-          "numeric_value": 20.0,
-          "detail": "Assumed ceiling; legal representation and assignment restrictions remain separate questions."
+          "label": "Fullmer's remote notarization",
+          "min": 25,
+          "max": 25,
+          "typical": 25,
+          "display": "$25 for the reported affidavit notarization"
+        },
+        {
+          "label": "Diamond's judicial-work budget",
+          "min": 2500,
+          "max": 2500,
+          "typical": 2500,
+          "display": "$2,500 reported legal-work budget"
         }
       ]
     },
     {
-      "diagram_id": "diag-05-lien-priority-tree",
+      "diagram_id": "diag-05-mortgage-surplus-qualification",
+      "chapter_number": 5,
+      "title": "Qualify the Mortgage-Foreclosure Claim",
+      "subtitle": "A sale-price gap does not establish available funds, claimant priority, or a complete filing.",
+      "caption": "Eric Richardson of Money Making Juggernaut checks actual debt, trustee disbursements, and prior claims. Friscia & Associates describes service and authority checks for a New Jersey motion.",
+      "assumptions_note": "Richardson distinguishes county-held judicial funds from trustee-held nonjudicial funds. Friscia & Associates' motion requirements describe the New Jersey procedure discussed, not a universal filing packet.",
+      "note": "Sternberg Law Group distinguishes a third-party winning bid from a bank-owned outcome. Richardson warns that an opening bid may not represent the amount actually owed.",
       "chart_type": "decision_tree",
-      "title": "Resolve priority before pricing a claim",
-      "subtitle": "A triage tree, not an automatic payout formula",
-      "chapter_number": 7,
-      "epistemic_tag": "operating_framework",
-      "assumptions_note": "Numbers identify nodes; branch directions are in the details. Applicable law and court orders control entitlement and ranking.",
-      "caption": "Do not subtract every recorded lien mechanically: verify the sale type, lien status, priority, filed claims and the distribution procedure.",
-      "stages": [
+      "nodes": [
         {
-          "label": "Funds still held?",
-          "value": "Node 1",
-          "numeric_value": 1.0,
-          "detail": "Yes: continue to node 2. No: locate the transfer or distribution record before further acquisition spending."
+          "gate": "G1",
+          "question": "Did the sale produce a candidate after checking the final judgment or writ rather than only the opening bid?",
+          "pass_next": "G2",
+          "fail_action": "Retrieve the sale result and actual debt record. Do not treat a bank-owned outcome as proven surplus."
         },
         {
-          "label": "Claimant authority proven?",
-          "value": "Node 2",
-          "numeric_value": 2.0,
-          "detail": "Yes: continue to node 3. No: obtain identity, title or estate authority documents; do not assume a relative can sign."
+          "gate": "G2",
+          "question": "Does the holding office's disbursement breakdown establish that money remains after creditor payments?",
+          "pass_next": "G3",
+          "fail_action": "Request the trustee's disbursement history. Pause owner-recovery pursuit until remaining funds are established."
         },
         {
-          "label": "Competing claims resolved?",
-          "value": "Node 3",
-          "numeric_value": 3.0,
-          "detail": "Yes: continue to node 4. No: send the docket, title chain and lien instruments for professional priority analysis."
+          "gate": "G3",
+          "question": "Has prior contact and existing claim activity been checked?",
+          "pass_next": "G4",
+          "fail_action": "Ask the claimant about prior recovery contact and submitted claims, and resolve the existing-claim status."
         },
         {
-          "label": "Economic remainder?",
-          "value": "Node 4",
-          "numeric_value": 4.0,
-          "detail": "Positive documented remainder: prepare the permitted claim. Zero or uncertain remainder: close or hold with a recorded reason."
+          "gate": "G4",
+          "question": "Are ownership, authority, relevant liens, and the applicable filing requirements established?",
+          "pass_next": "Proceed through the applicable court or trustee claim route.",
+          "fail_action": "Resolve missing authority or filing defects. For Friscia's New Jersey motion, check party service, estate authority when needed, and agreement between the proposed order and court amounts."
         }
       ]
     },
     {
-      "diagram_id": "diag-06-small-team-org",
+      "diagram_id": "diag-06-fund-specific-recovery-responsibilities",
+      "chapter_number": 11,
+      "title": "One Recovery Operation, Distinct Claim Routes",
+      "subtitle": "Coordinate availability research, claimant authority, fund-specific documentation, and payment tracking.",
+      "caption": "Scott White begins with availability and entitlement. Eric Richardson of Money Making Juggernaut explains bankruptcy research and entity authority. David Wilkerson and Pierce Law Group describe state-funds agreement requirements.",
+      "assumptions_note": "These responsibilities do not establish a reported team size or require separate hires. Unclaimed CEO recommends proving the process repeatedly before delegating it to a virtual assistant.",
+      "note": "Richardson's bankruptcy guest distinguishes four filings from one payout. A filed or accepted case is not collected revenue, and state-property requirements do not substitute for court requirements.",
       "chart_type": "org_architecture",
-      "title": "Two full-time operators, two contract specialists",
-      "subtitle": "Illustrative base-team allocation",
-      "chapter_number": 9,
-      "epistemic_tag": "operating_framework",
-      "assumptions_note": "Numeric values are role identifiers, not employee counts or pay. The owner and coordinator are full-time; research and counsel are contract roles.",
-      "caption": "The owner manages case economics; the coordinator manages records and communication. Contract specialists retain responsibility for their assigned work.",
-      "stages": [
+      "center": {
+        "role": "Recovery operator",
+        "headcount": "Not specified",
+        "focus": "Match the fund type, money holder, entitled claimant, required agreement, and actual payment status."
+      },
+      "spokes": [
         {
-          "label": "Owner / case lead",
-          "value": "1 FT",
-          "numeric_value": 1.0,
-          "detail": "Owns market selection, budgets, engagements and cash reconciliation; supervises coordinator and research deliverables."
+          "role": "Availability and case research",
+          "type": "Research responsibility",
+          "kpi": "Availability, existing claims, payment history, and the origin of the funds checked before pursuit, following Scott White and Richardson."
         },
         {
-          "label": "Records / client coordinator",
-          "value": "1 FT",
-          "numeric_value": 2.0,
-          "detail": "Reports to owner; maintains custodian confirmations, deadline calendars and claimant document requests."
+          "role": "Claimant and entity authority",
+          "type": "Entitlement responsibility",
+          "kpi": "Authorized corporate signatory identified and entitlement supported, following Richardson's entity-research guidance."
         },
         {
-          "label": "Title / records researcher",
-          "value": "1 C",
-          "numeric_value": 3.0,
-          "detail": "Delivers sourced title and docket packets to the case lead; flags contradictions without deciding disputed entitlement."
+          "role": "Agreement and claim preparation",
+          "type": "Fund-specific documentation responsibility",
+          "kpi": "Applicable timing, fee, disclosure, and signature requirements checked, following Wilkerson and Pierce Law Group."
         },
         {
-          "label": "Independent counsel",
-          "value": "1 C",
-          "numeric_value": 4.0,
-          "detail": "Provides separately scoped professional review or representation; sales targets do not determine legal conclusions."
+          "role": "Submission and payment tracking",
+          "type": "Processing responsibility",
+          "kpi": "Filed, accepted, and paid cases tracked separately, following Richardson's bankruptcy case discussion."
         }
       ]
     },
     {
-      "diagram_id": "diag-07-startup-budget-stack",
-      "chart_type": "stacked_comparison",
-      "title": "Fund the work before the first distribution",
-      "subtitle": "Illustrative $10,000 business cash stack",
+      "diagram_id": "diag-07-competing-debt-allocation",
       "chapter_number": 4,
-      "epistemic_tag": "illustrative_model",
-      "assumptions_note": "USD; four additive components total $10,000 for one pilot scenario. Owner living expenses, income tax and ongoing salaries are excluded; obtain local quotes.",
-      "caption": "The cash reserve is unspent liquidity, not a fee expense. A startup allowance does not fund a two-person payroll indefinitely.",
-      "stages": [
+      "title": "The Listed Surplus Is Not the Owner's Remainder",
+      "subtitle": "Alfred Taren's worked example reduces $180,000 to $55,000 after competing debt.",
+      "caption": "Alfred Taren illustrates a $95,000 second mortgage, $8,000 HOA debt, and $22,000 judgment against a $180,000 listed surplus.",
+      "assumptions_note": "Taren gives fixed illustrative amounts, not low and high estimates. Equal bounds preserve those amounts without introducing an unsupported range.",
+      "note": "Taren advises checking what the actual case or sale file has already paid and keeping owner-facing amounts estimated. The $55,000 remainder is not a promised payment or a stated net amount after recovery fees.",
+      "chart_type": "stacked_comparison",
+      "total_range": "$180,000 illustrated listed surplus",
+      "buckets": [
         {
-          "label": "Setup and review",
-          "value": "$2,500",
-          "numeric_value": 2500.0,
-          "detail": "Formation, initial engagement review and insurance allowance; actual costs depend on services and jurisdiction."
+          "label": "Second mortgage",
+          "low": 95000,
+          "high": 95000,
+          "notes": "Taren's illustrated competing mortgage deduction."
         },
         {
-          "label": "Tools and records",
-          "value": "$1,000",
-          "numeric_value": 1000.0,
-          "detail": "Initial secure case system, records access and communication tools for a bounded pilot."
+          "label": "HOA debt",
+          "low": 8000,
+          "high": 8000,
+          "notes": "Taren's illustrated homeowners association deduction."
         },
         {
-          "label": "Pilot case work",
-          "value": "$1,500",
-          "numeric_value": 1500.0,
-          "detail": "Certified documents, postage and contract research across successful and rejected cases."
+          "label": "Judgment",
+          "low": 22000,
+          "high": 22000,
+          "notes": "Taren's illustrated judgment deduction."
         },
         {
-          "label": "Uncommitted reserve",
-          "value": "$5,000",
-          "numeric_value": 5000.0,
-          "detail": "Liquidity for delays and rework; keep separate from projected receivables and claimant funds."
+          "label": "Illustrated remainder",
+          "low": 55000,
+          "high": 55000,
+          "notes": "Taren's reported remainder after the listed deductions; not an established claimant payout."
         }
       ]
     },
     {
-      "diagram_id": "diag-08-30-day-roadmap",
-      "chart_type": "timeline_roadmap",
-      "title": "Thirty days to a reviewable recovery operation",
-      "subtitle": "Readiness milestones, not a payout schedule",
+      "diagram_id": "diag-08-repeatable-recovery-milestones",
       "chapter_number": 12,
-      "epistemic_tag": "operating_framework",
-      "assumptions_note": "Numeric values are milestone end-days. Ranges are operating targets, not statutory filing periods or expected collection dates.",
-      "caption": "The month should end with documented cases, actual spending and a decision on the next cohort; a pending distribution is not collected revenue.",
-      "stages": [
+      "title": "Build the Pipeline Around Verified Milestones",
+      "subtitle": "Choose a market, verify the opportunity, prepare the conversation, and maintain a documented handoff.",
+      "caption": "Eric Richardson of Money Making Juggernaut, Spencer Vann, Surplus Funds List, and Surplus Systems emphasize repeatable execution, follow-up, case status, and operating references.",
+      "assumptions_note": "The weekly cadence is a planning framework, not a four-week completion or payout schedule reported by these practitioners. Advance only when each verification gate is satisfied.",
+      "note": "Richardson cautions against leaving employment before the pipeline can support delayed payments. Full Circle on Surplus Funds Secrets checks client information before a paid attorney handoff because a bad case can still incur the retainer.",
+      "chart_type": "timeline_roadmap",
+      "weeks": [
         {
-          "label": "Select one lane",
-          "value": "Days 1-7",
-          "numeric_value": 7.0,
-          "detail": "Choose one county and sale type; identify the custodian, claim procedure, compensation rules and deadlines."
+          "week": "Week 1",
+          "title": "Commit to a market and process",
+          "deliverable": "A selected market and a repeatable operating reference, following Vann's focus guidance and Surplus Systems' master-SOP approach.",
+          "gate": "Avoid repeated niche switching before completing deals; Vann describes that pattern as a source of lost months."
         },
         {
-          "label": "Build the case desk",
-          "value": "Days 8-14",
-          "numeric_value": 14.0,
-          "detail": "Configure record provenance, duplicate checks, engagement documents, case budgets and a deadline calendar."
+          "week": "Week 2",
+          "title": "Qualify the recovery opportunity",
+          "deliverable": "A researched case with actual debt checked and questions about second mortgages and liens addressed, following Richardson.",
+          "gate": "Do not equate the opening bid with everything owed or proceed on an apparent surplus that has not been verified."
         },
         {
-          "label": "Screen a pilot cohort",
-          "value": "Days 15-21",
-          "numeric_value": 21.0,
-          "detail": "Verify balances, trace ownership and record rejection reasons before committing to expensive evidence work."
+          "week": "Week 3",
+          "title": "Practice contact and maintain follow-up",
+          "deliverable": "Call practice using recorded wins and losses, following Jordan Tejeda Marketing, with outreach and next actions tracked through the Surplus Funds List CRM approach.",
+          "gate": "Keep replies actionable and claimant status current. Richardson describes prompt calls after reply alerts; Surplus Funds List maintains claimant portal status."
         },
         {
-          "label": "Review and iterate",
-          "value": "Days 22-30",
-          "numeric_value": 30.0,
-          "detail": "Review evidence completeness, professional-review needs and cash runway; resize the next cohort using measured costs."
+          "week": "Week 4",
+          "title": "Verify the handoff and track progress",
+          "deliverable": "Checked client information, an applicable processing handoff, and ongoing tasks and claimant updates, following Full Circle and Surplus Funds List.",
+          "gate": "Check the case before incurring an attorney retainer. Maintain follow-up rather than treating a signed agreement as a completed recovery."
         }
       ]
     }

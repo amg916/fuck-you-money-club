@@ -1,0 +1,695 @@
+VOLUME_005_SUBTITLE: str = (
+    "Recurring SaaS, Buyer-Intent Content, and Trust-Building Funnels—"
+    "Scale Calls, Leads, Paid Traffic, and Email with Verified Tracking "
+    "and Clear Disclosures"
+)
+
+
+def build_volume_005_diagrams_data() -> list[dict]:
+    return [
+        {
+            "diagram_id": "diag-01-recurring-offer-to-trusted-referral",
+            "chapter_number": 1,
+            "title": "Choose the Offer, Build Trust, Earn the Referral",
+            "subtitle": (
+                "Match recurring economics to buyer intent before introducing "
+                "the affiliate offer."
+            ),
+            "caption": (
+                "Michael Bashi favors recurring software commissions; Adam "
+                "Enfroy connects search demand, commissions, and competitive "
+                "weaknesses; Brian Brewer demonstrates capture and introduction."
+            ),
+            "assumptions_note": (
+                "This sequence combines Michael Bashi, Adam Enfroy, Smart Capital, "
+                "Brian Brewer, and Cesar O. Vlogs. It is not a single campaign "
+                "with a shared earnings result or completion deadline."
+            ),
+            "note": (
+                "Cesar O. Vlogs reports a year to their first commission. "
+                "Smart Capital emphasizes retention, attribution windows, and "
+                "refund terms rather than the headline commission alone."
+            ),
+            "chart_type": "process_flow",
+            "stages": [
+                {
+                    "step": "01",
+                    "label": "Match a buyer problem",
+                    "value": "Step 1",
+                    "detail": (
+                        "Adam Enfroy looks for the intersection of search demand, "
+                        "good commissions, and weaknesses that better content "
+                        "can address."
+                    ),
+                },
+                {
+                    "step": "02",
+                    "label": "Inspect recurring economics",
+                    "value": "Step 2",
+                    "detail": (
+                        "Michael Bashi favors useful subscription software "
+                        "with recurring monthly affiliate payments."
+                    ),
+                },
+                {
+                    "step": "03",
+                    "label": "Check retention and terms",
+                    "value": "Step 3",
+                    "detail": (
+                        "Smart Capital compares customer retention and checks "
+                        "cookie windows and refunds before counting earnings."
+                    ),
+                },
+                {
+                    "step": "04",
+                    "label": "Capture and introduce",
+                    "value": "Step 4",
+                    "detail": (
+                        "Brian Brewer demonstrates lead capture, a personal "
+                        "introduction, and automated selling around an "
+                        "audience-aligned offer."
+                    ),
+                },
+                {
+                    "step": "05",
+                    "label": "Nurture with useful email",
+                    "value": "Step 5",
+                    "detail": (
+                        "Cesar O. Vlogs includes value-only emails without "
+                        "links rather than making every message a promotion."
+                    ),
+                },
+            ],
+        },
+        {
+            "diagram_id": "diag-02-ai-visibility-and-qualified-demand",
+            "chapter_number": 6,
+            "title": "AI Visibility Is Not a Customer Conversion Rate",
+            "subtitle": (
+                "Keep prompt coverage, citations, observation time, engine "
+                "coverage, and qualified demos distinct."
+            ),
+            "caption": (
+                "E-commerce Berlin Expo reports a citation experiment; "
+                "TOP Digital Products describes engine coverage; Rob Hoffman "
+                "reports qualified demos from comparison pages."
+            ),
+            "assumptions_note": (
+                "E-commerce Berlin Expo, TOP Digital Products, and Rob Hoffman "
+                "describe different measurements and operations. These are "
+                "independent checkpoints, not a decreasing cohort funnel; "
+                "no stage-to-stage conversion rate is established."
+            ),
+            "note": (
+                "The E-commerce Berlin Expo presenters continued testing "
+                "citation durability. Rob Hoffman's roughly ten weekly "
+                "qualified demos must not be attributed to their citation test "
+                "or to the tool covered by TOP Digital Products."
+            ),
+            "chart_type": "funnel",
+            "stages": [
+                {
+                    "label": "Tracked prompt panel",
+                    "value": 143,
+                    "display": "143 prompts",
+                    "conversion": "Not a conversion rate",
+                    "detail": (
+                        "E-commerce Berlin Expo describes a panel of 143 "
+                        "prompts for the external-source citation experiment."
+                    ),
+                },
+                {
+                    "label": "External-source citations",
+                    "value": 800,
+                    "display": "Approximately 800 citations",
+                    "conversion": "Citations are not unique prospects",
+                    "detail": (
+                        "E-commerce Berlin Expo reports approximately 800 "
+                        "citations after placing content on a domain not "
+                        "previously used as a source for the panel."
+                    ),
+                },
+                {
+                    "label": "Initial observation interval",
+                    "value": 5,
+                    "display": "5 days",
+                    "conversion": "Elapsed time, not cohort attrition",
+                    "detail": (
+                        "E-commerce Berlin Expo reports the initial citation "
+                        "result after five days, with durability still "
+                        "under examination."
+                    ),
+                },
+                {
+                    "label": "AI engine coverage",
+                    "value": 17,
+                    "display": "17 AI engines",
+                    "conversion": "Separate tool coverage measure",
+                    "detail": (
+                        "TOP Digital Products describes ZeroRank visibility "
+                        "tracking across seventeen AI engines."
+                    ),
+                },
+                {
+                    "label": "Qualified demo outcome",
+                    "value": 10,
+                    "display": "Roughly 10 qualified demos weekly",
+                    "conversion": "Separate comparison-page outcome",
+                    "detail": (
+                        "Rob Hoffman reports this weekly result for Team Town "
+                        "comparison pages and says the team uses GA4 "
+                        "to track performance."
+                    ),
+                },
+            ],
+        },
+        {
+            "diagram_id": "diag-03-entry-funnel-revenue-and-spend",
+            "chapter_number": 3,
+            "title": "Entry Revenue and Spend Without a False Profit Total",
+            "subtitle": (
+                "Separate Jay Neyer's annual paid-experience results from "
+                "Jamie McAdam's daily low-ticket test."
+            ),
+            "caption": (
+                "Jay Neyer reports birthday-booking and play-pass revenue; "
+                "Jamie McAdam recalls daily entry-funnel sales and advertising "
+                "spend from a separate test."
+            ),
+            "assumptions_note": (
+                "Jay Neyer's annual figures and Jamie McAdam's daily figures "
+                "are independent reported amounts. Every bar is a standalone "
+                "total, not a cumulative waterfall adjustment. The combined "
+                "paid-experience figure overlaps the component categories."
+            ),
+            "note": (
+                "Jay Neyer's 'over' amounts retain their reported thresholds. "
+                "Jamie McAdam's daily sales range does not establish high-ticket "
+                "purchases, complete operating costs, or net profit."
+            ),
+            "chart_type": "waterfall",
+            "bars": [
+                {
+                    "label": "Birthday booking revenue",
+                    "value": 120000,
+                    "display": "Over $120,000 in 365 days",
+                    "kind": "total",
+                },
+                {
+                    "label": "Play-pass revenue",
+                    "value": 90000,
+                    "display": "Over $90,000 in 365 days",
+                    "kind": "total",
+                },
+                {
+                    "label": "Combined paid-experience revenue",
+                    "value": 211000,
+                    "display": "Over $211,000 in 365 days",
+                    "kind": "total",
+                },
+                {
+                    "label": "Daily entry sales lower endpoint",
+                    "value": 150,
+                    "display": "$150 daily sales range endpoint",
+                    "kind": "total",
+                },
+                {
+                    "label": "Daily entry sales upper endpoint",
+                    "value": 200,
+                    "display": "$200 daily sales range endpoint",
+                    "kind": "total",
+                },
+                {
+                    "label": "Daily advertising spend",
+                    "value": 37,
+                    "display": "About $37 per day",
+                    "kind": "total",
+                },
+            ],
+        },
+        {
+            "diagram_id": "diag-04-program-duration-checkpoints",
+            "chapter_number": 2,
+            "title": "Read the Clock Behind the Commission",
+            "subtitle": (
+                "Attribution windows, withdrawal timing, and recurring "
+                "commission duration are different terms."
+            ),
+            "caption": (
+                "Kris the Entrepreneur describes cookie windows; Khris Steven "
+                "describes withdrawal timing; Adam Enfroy checks recurring "
+                "commission cutoffs."
+            ),
+            "assumptions_note": (
+                "Kris the Entrepreneur, Khris Steven, and Adam Enfroy provide "
+                "examples rather than a market-wide timing distribution. "
+                "Units remain explicit on each bar. The typical field uses a "
+                "reported value or range endpoint, not an estimated average."
+            ),
+            "note": (
+                "Khris Steven's two-to-five-business-day withdrawal statement "
+                "is not a cookie window. Adam Enfroy's twelve-month cutoff "
+                "check is not a promise of lifetime commissions."
+            ),
+            "chart_type": "horizontal_bars",
+            "unit": "Reported duration; days, business days, or months as labeled",
+            "bars": [
+                {
+                    "label": "Short cookie example",
+                    "min": 7,
+                    "max": 7,
+                    "typical": 7,
+                    "display": "7 days — Kris the Entrepreneur",
+                },
+                {
+                    "label": "Monthly cookie example",
+                    "min": 30,
+                    "max": 30,
+                    "typical": 30,
+                    "display": "30 days — Kris the Entrepreneur",
+                },
+                {
+                    "label": "Extended cookie example",
+                    "min": 90,
+                    "max": 90,
+                    "typical": 90,
+                    "display": "90 days — Kris the Entrepreneur",
+                },
+                {
+                    "label": "Withdrawal deposit estimate",
+                    "min": 2,
+                    "max": 5,
+                    "typical": 2,
+                    "display": "2–5 business days — Khris Steven",
+                },
+                {
+                    "label": "Recurring cutoff to inspect",
+                    "min": 12,
+                    "max": 12,
+                    "typical": 12,
+                    "display": "12 months — Adam Enfroy checks beyond this cutoff",
+                },
+            ],
+        },
+        {
+            "diagram_id": "diag-05-buyer-intent-publication-gates",
+            "chapter_number": 5,
+            "title": "Publish for the Buyer's Decision",
+            "subtitle": (
+                "Require genuine product fit, matching search intent, the "
+                "right next action, and checked facts."
+            ),
+            "caption": (
+                "Alex COLLINSEO, ToolTester Pro, Affiliate Marketing How To, "
+                "and The SEO Desk supply the publication checks."
+            ),
+            "assumptions_note": (
+                "These gates combine Alex COLLINSEO's fit test, ToolTester "
+                "Pro's search inspection, Affiliate Marketing How To's "
+                "intent-specific actions, and The SEO Desk's fact checks. "
+                "Passing them does not guarantee rankings or sales."
+            ),
+            "note": (
+                "The Grow and Convert Marketing Show defines its reported "
+                "alternative-content conversions as product-related actions "
+                "such as trial starts or demo requests, not newsletter signups."
+            ),
+            "chart_type": "decision_tree",
+            "nodes": [
+                {
+                    "gate": "G1",
+                    "question": (
+                        "Does the proposed alternative genuinely fit the "
+                        "searcher's request?"
+                    ),
+                    "pass_next": "G2",
+                    "fail_action": (
+                        "Pass on the stretched comparison, as Alex COLLINSEO "
+                        "recommends, rather than assuming ranking creates sales."
+                    ),
+                },
+                {
+                    "gate": "G2",
+                    "question": (
+                        "Do the live search results support the intended "
+                        "answer format and buyer decision?"
+                    ),
+                    "pass_next": "G3",
+                    "fail_action": (
+                        "Follow ToolTester Pro by inspecting the winning "
+                        "page's first screen, structure, and answer format, "
+                        "then searching the same term."
+                    ),
+                },
+                {
+                    "gate": "G3",
+                    "question": (
+                        "Does the next action match this intent group?"
+                    ),
+                    "pass_next": "G4",
+                    "fail_action": (
+                        "Follow Affiliate Marketing How To by separating "
+                        "affiliate-program invitations from pricing and "
+                        "trial offers."
+                    ),
+                },
+                {
+                    "gate": "G4",
+                    "question": (
+                        "Have changing prices, features, and other vulnerable "
+                        "facts actually been checked?"
+                    ),
+                    "pass_next": "Publish with a real last-check date",
+                    "fail_action": (
+                        "Follow The SEO Desk by keeping a short list of "
+                        "vulnerable facts and verifying them before assigning "
+                        "a last-check date."
+                    ),
+                },
+            ],
+        },
+        {
+            "diagram_id": "diag-06-newsletter-value-and-acquisition",
+            "chapter_number": 11,
+            "title": "Build Newsletter Growth Around Reader Value",
+            "subtitle": (
+                "Connect editorial quality, acquisition, onboarding, and "
+                "monetization without mistaking subscriber totals for value."
+            ),
+            "caption": (
+                "Josh Spector, Matt McGarry, Marketing Max, Louis Nicholls, "
+                "and Ryan Sneddon describe complementary newsletter functions "
+                "in SparkLoop interviews."
+            ),
+            "assumptions_note": (
+                "The functions synthesize SparkLoop interviews with different "
+                "operators, including Josh Spector and Matt McGarry. They do "
+                "not describe one employer's organization or establish "
+                "staffing requirements."
+            ),
+            "note": (
+                "Matt McGarry recommends approximately thirty days of "
+                "paid-source engagement assessment. Wanda Zelaya reports "
+                "rejection from paid recommendations, so access must not be "
+                "treated as automatic."
+            ),
+            "chart_type": "org_architecture",
+            "center": {
+                "role": "Newsletter publisher",
+                "headcount": "Not specified",
+                "focus": (
+                    "Josh Spector emphasizes specific value for a specific "
+                    "audience; SparkLoop's subscriber-value discussion begins "
+                    "with identifying a good reader and their economic value."
+                ),
+            },
+            "spokes": [
+                {
+                    "role": "Editorial quality",
+                    "type": "Operating function, not a staffing count",
+                    "kpi": (
+                        "Ryan Sneddon's final checks cover dates, weekdays, "
+                        "venues, and source websites."
+                    ),
+                },
+                {
+                    "role": "Paid acquisition",
+                    "type": "Operating function, not a staffing count",
+                    "kpi": (
+                        "Office Party reports $0.50–$1.50 per subscriber after "
+                        "testing; Matt McGarry examines downstream engagement "
+                        "by source over approximately thirty days."
+                    ),
+                },
+                {
+                    "role": "Landing page and welcome",
+                    "type": "Operating function, not a staffing count",
+                    "kpi": (
+                        "Marketing Max reports landing-page conversion moving "
+                        "from 7% to 35%; SparkLoop recommends source-specific "
+                        "welcome messages that repeat the reader benefits."
+                    ),
+                },
+                {
+                    "role": "Recommendations and sponsorship",
+                    "type": "Operating function, not a staffing count",
+                    "kpi": (
+                        "Louis Nicholls emphasizes signup and early-email "
+                        "monetization; Josh Spector reports five-to-ten-times "
+                        "more clicks from outcome-led sponsorship placements."
+                    ),
+                },
+            ],
+        },
+        {
+            "diagram_id": "diag-07-borrowed-authority-evidence-boundaries",
+            "chapter_number": 4,
+            "title": "Keep Borrowed-Authority Measurements Separate",
+            "subtitle": (
+                "Keyword positions, citation counts, referral visitors, and "
+                "guide reductions answer different questions."
+            ),
+            "caption": (
+                "Edward Sturm reports keyword contraction; CrowdReply reports "
+                "citations; Spencer on Niche Pursuits Podcast reports referral "
+                "traffic; Ahrefs describes Brian Powell's guide reduction."
+            ),
+            "assumptions_note": (
+                "Edward Sturm, CrowdReply, Niche Pursuits Podcast, and Ahrefs "
+                "describe independent cases. Low and high retain reported "
+                "endpoints, conflicting spoken counts, or subset-and-total "
+                "counts as explained per bucket; they are not additive "
+                "allocations or statistical confidence intervals."
+            ),
+            "note": (
+                "Rankso SEO separates discussion visibility, contribution "
+                "visibility, destination visits, and useful customer actions. "
+                "SERPSUPPORT warns that rented rankings can be taken away."
+            ),
+            "chart_type": "stacked_comparison",
+            "total_range": (
+                "No combined total — independent keyword, citation, visitor, "
+                "and guide counts"
+            ),
+            "buckets": [
+                {
+                    "label": "Top-three keyword contraction",
+                    "low": 3300,
+                    "high": 10400,
+                    "notes": (
+                        "Edward Sturm reports around 10,400 high-volume "
+                        "top-three keywords falling to 3,300 in one month. "
+                        "The endpoints describe a decline, not a forecast."
+                    ),
+                },
+                {
+                    "label": "Spoken citation counts",
+                    "low": 213,
+                    "high": 230,
+                    "notes": (
+                        "CrowdReply states 230 citations across five prompts "
+                        "and six AI models at the cited moment, then says "
+                        "213 later. These are differing spoken figures, "
+                        "not a measured uncertainty interval."
+                    ),
+                },
+                {
+                    "label": "Reddit subset and site total",
+                    "low": 10000,
+                    "high": 16000,
+                    "notes": (
+                        "Spencer on Niche Pursuits Podcast reports nearly "
+                        "10,000 Reddit visitors within 16,000 total visitors "
+                        "over approximately 28 days. The lower endpoint "
+                        "retains the rounded 'nearly' figure; the two counts "
+                        "overlap and must not be added."
+                    ),
+                },
+                {
+                    "label": "Affiliate guides removed",
+                    "low": 25,
+                    "high": 25,
+                    "notes": (
+                        "Ahrefs describes Brian Powell cutting about 25 "
+                        "guides while maintaining important pages. This is "
+                        "a portfolio reduction count, not a traffic total."
+                    ),
+                },
+            ],
+        },
+        {
+            "diagram_id": "diag-08-disclosure-and-claims-readiness",
+            "chapter_number": 12,
+            "title": "Make the Relationship Clear and the Claims Supportable",
+            "subtitle": (
+                "Sequence disclosure placement, presentation checks, claim "
+                "evidence, and brand-name advertising inspection."
+            ),
+            "caption": (
+                "Erika Kullberg, Michael Ostheimer, Carmen, Cohen at AM Days, "
+                "Gordon at Venable LLP, Analytics Playbook, and Grow My Ads "
+                "provide the readiness checks."
+            ),
+            "assumptions_note": (
+                "The weekly slots organize checks described by Erika Kullberg, "
+                "Michael Ostheimer, AM Days, Venable LLP, Analytics Playbook, "
+                "and Grow My Ads. They are planning slots, not practitioner "
+                "claims about task duration or a grace period for disclosure."
+            ),
+            "note": (
+                "Michael Ostheimer says disclosures must work on smartphones "
+                "and match visual or audible claims. Carmen says account-level "
+                "disclosure does not replace disclosure on individual posts."
+            ),
+            "chart_type": "timeline_roadmap",
+            "weeks": [
+                {
+                    "week": "Week 1",
+                    "title": "Place relationship explanations",
+                    "deliverable": (
+                        "Put commission language beside affiliate links, as "
+                        "Erika Kullberg demonstrates. Michael Ostheimer "
+                        "identifies 'paid link' as a compact option; Carmen "
+                        "also discloses on individual affiliate posts."
+                    ),
+                    "gate": (
+                        "The connection is visible beside the recommendation, "
+                        "not left solely to an account-level statement."
+                    ),
+                },
+                {
+                    "week": "Week 2",
+                    "title": "Check mobile and media presentation",
+                    "deliverable": (
+                        "Inspect the smartphone presentation and match visual "
+                        "and audible disclosures to the endorsement, following "
+                        "Michael Ostheimer. Identify each free-product "
+                        "connection as Erika Kullberg recommends."
+                    ),
+                    "gate": (
+                        "The disclosure remains clear on the phone and in "
+                        "the relevant visual or audio presentation."
+                    ),
+                },
+                {
+                    "week": "Week 3",
+                    "title": "Substantiate product and earnings claims",
+                    "deliverable": (
+                        "Check testimonials, before-and-after images, and "
+                        "product claims against supporting evidence, following "
+                        "Cohen at AM Days. Apply Gordon's Venable LLP warning "
+                        "about earnings-result tracking and easy-money claims."
+                    ),
+                    "gate": (
+                        "Do not rely on advertiser copy as proof; remove "
+                        "claims that everyone makes money or that the "
+                        "process is easy."
+                    ),
+                },
+                {
+                    "week": "Week 4",
+                    "title": "Inspect visible brand-name advertising",
+                    "deliverable": (
+                        "Follow Analytics Playbook by avoiding dynamic keyword "
+                        "insertion and disabling automatically created assets "
+                        "in competitor campaigns. Inspect dynamic search "
+                        "advertising for the name-insertion problem reported "
+                        "by Grow My Ads."
+                    ),
+                    "gate": (
+                        "Inspect actual visible copy for unintended competitor "
+                        "names rather than assuming keyword selection and "
+                        "published wording are the same."
+                    ),
+                },
+            ],
+        },
+    ]
+
+
+VOLUME_005_POSITIONING_ALTERNATIVES: list[dict] = [
+    {
+        "title": "The Recurring SaaS Affiliate Engine",
+        "subtitle": (
+            "Choose useful software, answer buyer comparisons, and nurture "
+            "referrals with retention-aware economics."
+        ),
+        "audience": (
+            "Content creators and software educators building recurring "
+            "affiliate income around specific buyer problems."
+        ),
+        "research_basis": (
+            "Michael Bashi favors recurring monthly software commissions. "
+            "Adam Enfroy combines search demand, commissions, and competitive "
+            "weaknesses. Smart Capital prioritizes retention, while Cesar O. "
+            "Vlogs demonstrates value-only email without promotional links."
+        ),
+        "sources": [
+            "https://www.youtube.com/watch?v=lh5ulbIfANU&t=489s",
+            "https://www.youtube.com/watch?v=rv01CKLsaY0&t=766s",
+            "https://www.youtube.com/watch?v=LBA0vmJPE5w&t=587s",
+            "https://www.youtube.com/watch?v=0BMb7aXEG78&t=1370s",
+        ],
+        "validation_status": (
+            "Grounded strictly in Vol. 005 YouTube practitioner transcripts."
+        ),
+    },
+    {
+        "title": "Buyer-Intent Content That Earns the Next Action",
+        "subtitle": (
+            "Build comparison pages and trust-building funnels, then measure "
+            "qualified demand rather than rankings alone."
+        ),
+        "audience": (
+            "SEO publishers, SaaS affiliates, and comparison-content operators "
+            "seeking buyer-specific trials, demos, and referrals."
+        ),
+        "research_basis": (
+            "Vasco Aires prioritizes buying intent over traffic. Grow and "
+            "Convert reports product-related conversion above 7.5% for the "
+            "evaluated alternatives posts. Rob Hoffman reports roughly ten "
+            "qualified weekly demos from comparison pages. Smart Capital "
+            "separates lead capture from bridge-video trust building."
+        ),
+        "sources": [
+            "https://www.youtube.com/watch?v=C2ne_saHpSs&t=1031s",
+            "https://www.youtube.com/watch?v=ZciLGXWg1uA&t=328s",
+            "https://www.youtube.com/watch?v=mPeQxVCunPU&t=1975s",
+            "https://www.youtube.com/watch?v=rO96TZ7xl6A&t=792s",
+        ],
+        "validation_status": (
+            "Grounded strictly in Vol. 005 YouTube practitioner transcripts."
+        ),
+    },
+    {
+        "title": "Qualified Calls, Sold Leads, and Accountable Acquisition",
+        "subtitle": (
+            "Start with buyer demand, test delivery and attribution, and "
+            "connect paid and email growth to payable outcomes."
+        ),
+        "audience": (
+            "Pay-per-call affiliates, lead intermediaries, and paid-acquisition "
+            "operators evaluating buyer capacity and acquisition payback."
+        ),
+        "research_basis": (
+            "WordsAtScale starts with categories buyers already purchase. "
+            "Rafael Hernandez emphasizes active buyer depth. Everflow checks "
+            "the transaction identifier in both directions. Aldo Gomes "
+            "reports payout versus acquisition cost, while Matt McGarry "
+            "examines paid-source newsletter engagement over approximately "
+            "thirty days. Erika Kullberg places commission language beside "
+            "affiliate links."
+        ),
+        "sources": [
+            "https://www.youtube.com/watch?v=DJFaYJ3O7aU&t=47s",
+            "https://www.youtube.com/watch?v=A_xXkLg_0xI&t=269s",
+            "https://www.youtube.com/watch?v=NSernIgs5XQ&t=866s",
+            "https://www.youtube.com/watch?v=rc7rwCDzbg4&t=0s",
+            "https://www.youtube.com/watch?v=uVhFrwe935U&t=1570s",
+            "https://www.youtube.com/watch?v=723U5nGxhTU&t=355s",
+        ],
+        "validation_status": (
+            "Grounded strictly in Vol. 005 YouTube practitioner transcripts."
+        ),
+    },
+]

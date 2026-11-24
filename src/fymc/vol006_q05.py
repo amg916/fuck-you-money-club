@@ -5,616 +5,1066 @@ CHAPTER_5 = {
     "chapter_id": "Q5",
     "chapter_number": 5,
     "question_number": 5,
-    "slug": "beginner-traps-clawbacks-asymmetric-failure-modes",
-    "question_prompt": "What kills 80% of newcomers in productized ai agencies, and what forensic metrics detect margin leaks, regulatory landmines, or platform bans before they wipe out capital?",
+    "slug": "selling-ai-services-prospecting-outreach-audits-closing",
+    "question_prompt": "How do these creators find prospects, book meetings through AI-assisted cold email and cold calling, run AI audits and discovery calls, and close AI service clients—and what do they suggest selling and implementing beyond standalone automations?",
     "kicker": "Q5 / THE BIG MONEY PLAYBOOKS",
-    "title": "Beginner Traps, Clawbacks & Asymmetric Failure Modes",
-    "subtitle": "Fixed-Scope Sprint Economics, API Circuit-Breakers, Affiliate Reversals, Identity-Resolution Controls, and FTC Exposure",
-    "layout_template": "expert_insights",
-    "reading_time_minutes": 14,
+    "title": "Selling AI Services: Prospecting, Outreach, Audits & Closing Clients",
+    "subtitle": "AI agency sales approaches spanning AI-powered prospecting, cold email and calling, lead-to-meeting outreach systems, discovery-call scripts, Claude-assisted audits, strategic implementation, B2B SaaS automation tasks, and alternatives to selling standalone automations.",
+    "layout_template": "case_study",
+    "reading_time_minutes": 15,
     "executive_summary": (
-        "Candidate #29, Productized AI Agencies, holds Rank #08 with an 89/100 "
-        "Money-to-Manpower Score across 23 mapped plays. The attractive economics "
-        "depend on selling bounded implementation work, not absorbing unlimited "
-        "integration debt or confusing customer sales with agency revenue. Canonical "
-        "annual owner profit is $20,000 Conservative, $165,000 Base, and $400,000 "
-        "Scaled. This chapter dissects scope creep, retry storms, defective outputs, "
-        "data exposure, disputed milestones, identity-resolution claims, and affiliate "
-        "bounty reversals. Treat the question's 80% figure as a rhetorical premise, "
-        "not a measured failure rate. Instrument contribution by workflow, reserve "
-        "against contractual reversals, and suspend unsafe actions before expanding "
-        "volume. The strongest agency keeps delivery evidence, authorization, and "
-        "cash realization attached to every promise."
+        "Sell the business problem before the AI. Michael Reimer diagnoses missed calls, "
+        "response delays, and customer value; Lily Latzo packages one workflow, a one-page "
+        "offer, and a five-minute demo. Ian Cushing turns local cold-email replies into "
+        "phone conversations, while Tom Gaddis opens relationships through directory listings "
+        "and audits. Johnny automates research and personalization but keeps appointment "
+        "setting human. Aaron Shepherd's volume experiment generated about 20 booked meetings "
+        "while missing its sending target after infrastructure problems. Practitioners split "
+        "over direct pitches versus conversation-first outreach, automated versus human replies, "
+        "and free versus paid entry offers. Beyond individual builds, Bennett Black sells "
+        "catalog systems and micro-SaaS, Rico Parnaste teaches team training, and Aletto "
+        "extends implementation into proposals, onboarding, reporting, and customer success."
     ),
     "key_metrics": [
         {
-            "label": "Conservative",
-            "value": "$100,000",
-            "context": "Annual implementation fees and support retainers; excludes client-attributed revenue",
-            "note": "20% net margin; $20,000 annual owner net profit; 2 FT + 3 C",
+            "label": "Lily's reported outreach sprint",
+            "metric": "Lily's reported outreach sprint",
+            "value": "3 AI automation clients in 7 days",
+            "confidence": "attributed_practitioner_claim",
+            "context": (
+                "Lily attributes this result to one Google document, a five-minute demo, "
+                "and one outreach sprint; the later response-rate and monthly-revenue "
+                "calculation is presented separately as illustrative sales math."
+            ),
+            "source": "Lily Latzo | AI Automation ([NjvNF17_97w @ 00:00:01])",
         },
         {
-            "label": "Base",
-            "value": "$550,000",
-            "context": "Annual implementation fees and support retainers; excludes client-attributed revenue",
-            "note": "30.0% net margin; $165,000 annual owner net profit; 2 FT + 3 C",
+            "label": "HousePro's typical local outbound volume",
+            "metric": "HousePro's typical local outbound volume",
+            "value": "2,000–4,000 emails monthly; 8–12 warm qualified billable leads",
+            "confidence": "attributed_practitioner_claim",
+            "context": (
+                "Ian Cushing describes average monthly sending per client and the "
+                "corresponding lead range, then explains that outcomes differ by market."
+            ),
+            "source": "The Workbench ([NT0JXm1lCyE @ 00:17:04])",
         },
         {
-            "label": "Scaled",
-            "value": "$1,000,000",
-            "context": "Annual implementation fees and support retainers; excludes client-attributed revenue",
-            "note": "40% net margin; $400,000 annual owner net profit; 3 FT + 4 C",
+            "label": "GrowthFlare's counted meeting outcome",
+            "metric": "GrowthFlare's counted meeting outcome",
+            "value": "About 20 booked meetings",
+            "confidence": "attributed_practitioner_claim",
+            "context": (
+                "Aaron counts bookings in Slack after the campaign launch. The roughly "
+                "three deals discussed afterward follow an assumed close-rate calculation, "
+                "not a separate count of completed sales."
+            ),
+            "source": "Aaron Shepherd | GrowthFlare ([RQg5jgraVg8 @ 00:19:17])",
+        },
+        {
+            "label": "Aletto's unconfirmed-call show-rate change",
+            "metric": "Aletto's unconfirmed-call show-rate change",
+            "value": "20% to 80%",
+            "confidence": "attributed_practitioner_claim",
+            "context": (
+                "Jake attributes this change to a human phone call the day before "
+                "the meeting and explicitly describes a small sample of unconfirmed calls."
+            ),
+            "source": "Aletto ([IfS3QohXxG8 @ 00:09:07])",
         },
     ],
     "sections": [
         {
-            "heading": "1. Price the exception queue before selling the sprint",
-            "epistemic_status": "illustrative_model",
+            "id": "practitioner-consensus",
+            "title": "The Practitioner Consensus",
             "paragraphs": [
                 (
-                    "The first fatal trap is selling an outcome while pricing only the happy-path "
-                    "installation. A fixed-scope CRM sprint needs a named source system, destination "
-                    "system, field map, exception policy, acceptance fixture, and support boundary. "
-                    "Without those artifacts, every malformed attachment becomes included customization "
-                    "and every vendor outage becomes your unpaid emergency. Consider an illustrative "
-                    "$12,000 implementation: 60 delivery hours at $70 cost $4,200, contractor testing "
-                    "costs $1,200, usage costs $300, and collection costs $360. Contribution before "
-                    "shared overhead is $5,940, or 49.5%. Another 30 unpriced hours consume $2,100, "
-                    "reducing contribution to $3,840, or 32%. That deterioration happens without losing "
-                    "a customer or changing the headline price. Record time against discovery, data "
-                    "repair, build, review, and warranty separately. Start a scope review when consumed "
-                    "hours exceed 80% of budget before acceptance fixtures pass; stop adding features "
-                    "when projected contribution falls below the contract's internal floor. These are "
-                    "illustrative intervention thresholds, not observed industry benchmarks. An exception "
-                    "queue with owners and aging beats a founder's memory. Put unsupported file types, "
-                    "historical backfills, additional business units, and new integrations into priced "
-                    "change orders before touching production. Attach each change to a revised delivery "
-                    "date and a customer-approved acceptance example."
+                    "The shared sales move is to make the existing business problem visible before "
+                    "introducing the machinery. Michael Reimer opens discovery as a friendly business "
+                    "checkup: where customers already try to reach the owner, where follow-up breaks "
+                    "down, and which measurable area deserves attention first. Their questions cover "
+                    "inbound calls, missed calls, customer value, response speed, old CRM contacts, "
+                    "reviews, website traffic, and resulting leads. The answers select the service: "
+                    "voice for missed calls, conversational AI for slow replies, reactivation for old "
+                    "contacts, reputation work for weak trust, or website optimization for traffic "
+                    "that produces no leads. Lily Latzo makes the same commercial distinction through "
+                    "an offer one-pager: businesses buy reduced costs, increased output, and saved "
+                    "time rather than AI as an abstract upgrade. Their package specifies a repetitive "
+                    "workflow, a metric, a demonstration, and a next step. AI Automation Clips gives "
+                    "the broader implementation version: examine business processes, identify real "
+                    "problems, and establish the financial case before development. Its audit moves "
+                    "through discovery, process analysis, opportunity identification, and a roadmap. "
+                    "Reimer's smaller starting point is one measurable workflow rather than an "
+                    "all-at-once transformation; Lily similarly packages one automation with its "
+                    "workflow design and documentation. "
+                    "Reimer [IWNNb6VOVz8 @ 00:00:30]; Lily [NjvNF17_97w @ 00:01:53]; "
+                    "AI Automation Clips [RHZMQe6R_5A @ 00:01:06]."
                 ),
                 (
-                    "The second trap is treating collections, recognized revenue, and owner profit "
-                    "as interchangeable. The canonical Conservative case is $100,000 revenue less "
-                    "$80,000 total modeled expense, leaving $20,000; Base is $550,000 less $385,000, "
-                    "leaving $165,000; Scaled is $1,000,000 less $600,000, leaving $400,000. Those "
-                    "are annual scenarios with 2 FT + 3 C, 2 FT + 3 C, and 3 FT + 4 C "
-                    "respectively, not promises about employment intensity or local wage sufficiency. "
-                    "Only implementation fees and support retainers belong in this revenue basis. "
-                    "Client merchandise sales, recovered invoices, loan principal, and attributed "
-                    "pipeline never become agency revenue merely because a dashboard displays them. "
-                    "An illustrative $15,000 unrecovered refund plus $10,000 remediation cost consumes "
-                    "$25,000, or 15.15% of Base owner profit, if neither loss was already modeled. "
-                    "Track deposits as contract liabilities until the applicable recognition conditions "
-                    "are met, and reconcile invoices, bank receipts, credits, and earned milestones "
-                    "weekly. A temporary reserve is a liquidity allocation, not automatically an "
-                    "additional expense. Avoid counting the same exposure once as a refund provision "
-                    "and again as a reduction to profit. Keep projected losses separate from realized "
-                    "cash movements so management can see both margin erosion and the next payroll "
-                    "requirement."
+                    "A defined buyer makes both prospecting and fulfillment more concrete. Bennett "
+                    "Black recommends a niche because an agency can build a system catalog, price "
+                    "repeatable deployments beforehand, and show buyers other systems already built "
+                    "for their industry. Small modifications become additional integration work "
+                    "instead of forcing every conversation into a completely new scope. Johnny "
+                    "targets businesses with the ability to carry a retainer, demonstrating managed "
+                    "service providers and IT companies with 10 to 100 employees. Their offer "
+                    "eventually shifted away from trying to charge substantial retainers to startups "
+                    "that could not afford them. Ian Cushing's local-business sourcing takes a "
+                    "different route because national databases can miss construction owners without "
+                    "LinkedIn profiles. HousePro scrapes Google Maps, searches state business entities, "
+                    "looks for the owner, and tries email variations to reach a named person instead "
+                    "of a generic sales address. Its cleaning campaigns target apartment complexes, "
+                    "realtors, retirement facilities, and commercial buildings rather than assuming "
+                    "home services means individual homeowners. Cushing describes the demand as "
+                    "existing already: the outreach puts a cleaning service in front of someone "
+                    "who needs cleaning. Black's catalog, Johnny's purchasing-power filter, and "
+                    "Cushing's local ownership research each start with a specific kind of buyer "
+                    "rather than a universal AI pitch. "
+                    "Black [HpBFCMSfM-I @ 00:05:05]; Johnny [MlJ3XSy3k7A @ 00:07:37]; "
+                    "Cushing [NT0JXm1lCyE @ 00:10:14]."
                 ),
                 (
-                    "The third trap is granting an unlimited warranty through casual sales language. "
-                    "Define a defect as failure against an agreed fixture on an identified version, "
-                    "not any disappointing commercial result. The fourth is offering unlimited support "
-                    "at a fixed retainer while ignoring incident frequency. A $2,000 monthly retainer "
-                    "with $200 usage, $150 monitoring allocation, and ten hours at $75 leaves $900 "
-                    "before shared overhead; twenty hours leave only $150. Alert when support exceeds "
-                    "twelve hours or projected contribution drops below 35%, then diagnose recurring "
-                    "defects before proposing a scope change. The fifth trap is relying on a signed "
-                    "proposal instead of delivery evidence when a cardholder disputes a charge. Keep "
-                    "the statement of work, milestone correspondence, access authorization, deployment "
-                    "record, fixture results, and acceptance receipt together. Stripe and other "
-                    "processors apply contract-specific dispute procedures; submitting evidence does "
-                    "not ensure recovery, and reversals can remove cash before adjudication finishes. "
-                    "Separate customer service credits from payment disputes in the ledger. Promise "
-                    "measured processing improvements only when baseline samples support the claim. "
-                    "Under 15 U.S.C. § 45, deceptive commercial claims create exposure even when the "
-                    "underlying automation runs correctly. Replace 'fully autonomous' with the actual "
-                    "review coverage, escalation time, and measured exception rate in the offer."
+                    "Automation earns its place by removing research and administrative work, while "
+                    "several operators keep the commercially sensitive conversation human. Johnny "
+                    "automates verification, lead research, subject lines, and icebreakers but "
+                    "personally handles the offer copy and positive replies. Their preference is "
+                    "explicit: produce interested prospects, then let someone strong at sales book "
+                    "the appointment. Marcus Pizarro, speaking with Carson Reed, similarly automates "
+                    "initial LinkedIn contact but manually answers prospects once they respond. "
+                    "Questions about cost or the catch require contextual replies; Marcus does not "
+                    "want an inaccurate automated answer damaging a client's reputation. Jake at "
+                    "Aletto extends that division across the sales operation. AI can initiate "
+                    "contact, research prospects, follow up, score recorded sales calls, and draft "
+                    "a proposal using the buyer's own words. Humans still close deals and conduct "
+                    "coaching conversations. Aletto's proposal workflow reads the call, fills a "
+                    "locked one-page template, and puts the result in front of a human to check; "
+                    "Jake says proposals go out within the next 20 minutes. The same operating "
+                    "pattern appears after booking: automated reminders support the appointment, "
+                    "but a human confirmation call creates a personal commitment. For these "
+                    "operators, the valuable output is a conversation that progresses, not merely "
+                    "a completed automation run or an inbox full of replies. "
+                    "Johnny [MlJ3XSy3k7A @ 00:17:58]; Marcus [L1LsEN_iuIc @ 00:31:05]; "
+                    "Aletto [IfS3QohXxG8 @ 00:12:14]."
                 ),
             ],
             "table": {
-                "caption": "Sprint Economics and Collection Failure Matrix",
-                "headers": [
-                    "Failure mechanism and concrete commercial exposure",
-                    "Forensic signal with an explicit denominator",
-                    "Intervention threshold for this operating model",
-                    "Operator response and retained evidence package",
-                ],
+                "caption": "The common commercial foundation, expressed through different agency offers.",
+                "headers": ["Operator Move", "Business Mechanic", "Expert Source"],
                 "rows": [
                     [
-                        "Unpriced historical backfills expand a supposedly fixed implementation boundary.",
-                        "Consumed delivery hours divided by the signed sprint budget.",
-                        "More than eighty percent consumed before acceptance fixtures pass.",
-                        "Freeze additions and obtain a priced, dated scope amendment.",
+                        "Begin discovery with the owner's existing customer-contact numbers.",
+                        "Use missed calls, response delays, and customer value to select the first workflow.",
+                        "Michael Reimer | HighLevel & AI Systems ([IWNNb6VOVz8 @ 00:01:00])",
                     ],
                     [
-                        "Support retainers absorb repeated customer requests without workload limits.",
-                        "Monthly support hours and contribution after directly attributable costs.",
-                        "Twelve support hours or contribution below thirty-five percent.",
-                        "Repair recurring causes and reprice demonstrably expanded service boundaries.",
+                        "Package one repetitive workflow into a clear offer document.",
+                        "Include workflow design, documentation, a prototype, integration, deployment, and team training.",
+                        "Lily Latzo | AI Automation ([NjvNF17_97w @ 00:02:37])",
                     ],
                     [
-                        "Processor disputes remove collected milestone cash during evidence review.",
-                        "Disputed dollars divided by trailing ninety-day collected service fees.",
-                        "Any dispute triggers evidence preservation and customer-specific exposure review.",
-                        "Submit contract, acceptance, access, and delivery records before deadlines.",
+                        "Build an industry catalog instead of repeatedly starting from scratch.",
+                        "Show buyers other systems already built for their industry and offer additional deployments.",
+                        "Bennett Black ([HpBFCMSfM-I @ 00:05:05])",
                     ],
                     [
-                        "Customer sales inflate agency dashboards without creating earned fees.",
-                        "Agency invoices reconciled against client sales attribution dashboard totals.",
-                        "Any client sales recorded as service revenue require correction.",
-                        "Maintain separate client outcome reporting and agency revenue ledgers.",
+                        "Find local business owners beyond the usual national databases.",
+                        "Combine Google Maps scraping, state entity searches, owner identification, and email variations.",
+                        "The Workbench ([NT0JXm1lCyE @ 00:10:14])",
                     ],
                     [
-                        "Warranty language converts new requirements into unpaid defect remediation.",
-                        "Warranty hours grouped by failed fixture and requested enhancement.",
-                        "Any enhancement classified as a defect requires scope review.",
-                        "Reference versioned acceptance fixtures and quote enhancements as changes.",
+                        "Use AI for sales preparation while people handle closing.",
+                        "Score calls against an internal rubric and give representatives feedback before their next meeting.",
+                        "Aletto ([IfS3QohXxG8 @ 00:10:48])",
                     ],
                     [
-                        "Deposits fund overhead before the corresponding delivery obligation ends.",
-                        "Unrestricted cash compared with remaining delivery costs and refunds.",
-                        "Cash below committed obligations triggers immediate discretionary spending suspension.",
-                        "Update a thirteen-week cash forecast using earned milestone dates.",
+                        "Start implementation planning with discovery rather than an attractive tool.",
+                        "Run discovery and process analysis before opportunity identification and the final implementation roadmap.",
+                        "AI Automation Clips | AI Agent Systems ([RHZMQe6R_5A @ 00:02:57])",
                     ],
                 ],
             },
         },
         {
-            "heading": "2. Contain defects, runaway usage, and unauthorized actions",
-            "epistemic_status": "operating_framework",
+            "id": "street-mechanics",
+            "title": "Exact Street Mechanics, Tools & Numbers",
             "paragraphs": [
                 (
-                    "The sixth trap is assuming a successful demonstration predicts production "
-                    "reliability. Build a versioned evaluation set from authorized, representative "
-                    "examples, including empty fields, contradictory attachments, duplicate requests, "
-                    "and adversarial instructions embedded in documents. Separate extraction accuracy "
-                    "from action accuracy: a correctly read invoice can still reach the wrong account. "
-                    "For an illustrative low-consequence drafting workflow, require at least 98% "
-                    "fixture accuracy and review all drafts during the first 100 live cases. For "
-                    "payments, employment, credit, healthcare, or other consequential decisions, "
-                    "retain qualified human review rather than extrapolating that threshold into "
-                    "permission for autonomous decisions. Measure errors against reviewed cases and "
-                    "report the review coverage beside the rate; five errors among 100 reviewed "
-                    "items cannot establish the rate among 10,000 unreviewed items. Langfuse or "
-                    "OpenTelemetry can record model version, prompt version, latency, usage, and "
-                    "review outcome, but redact payloads before exporting telemetry. Freeze a release "
-                    "when evaluation accuracy drops two percentage points from its accepted baseline "
-                    "or any cross-customer disclosure appears. Preserve the fixture that reproduced "
-                    "the failure. Model upgrades, OCR changes, retrieval tuning, and connector changes "
-                    "all require replay; changing only the prompt can still invalidate the signed "
-                    "acceptance test. Maintain a last-known-good version and test rollback before "
-                    "the customer needs it."
+                    "Tom Gaddis's local prospecting workflow starts inside HighLevel's agency "
+                    "dashboard: choose Prospecting, add a business category, set a location, and "
+                    "adjust the radius. Their demonstration searches plumbers in Las Vegas with a "
+                    "3.1-mile radius. The results expose website presence, Google Business Profile "
+                    "status, reviews, and other marketing signals. Premium bulk selection creates "
+                    "reports and contacts; using the connected subaccount makes those contacts "
+                    "available to workflows. Gaddis then uses Smart Directory AI to turn selected "
+                    "contacts into listings by adding the business tag. The opening conversation "
+                    "asks the owner to verify an existing free listing rather than buy an AI "
+                    "service. After a reply, Gaddis raises a specific gap, such as a missing chat "
+                    "widget, and proposes a strategy call. Cushing uses a more direct local "
+                    "approach: the first email usually asks whether an estimate would help or "
+                    "when someone can visit. A cleaning quote can start with square footage and "
+                    "bathroom count. Lily's research sheet instead records company name, decision "
+                    "maker, LinkedIn profile, a why-now signal, and outreach status. Hiring, layoffs, "
+                    "new locations, and backlogs provide the reason for contact. Each workflow "
+                    "arrives at a concrete opener: a listing to verify, an estimate to request, "
+                    "or a specific operational change to discuss. "
+                    "Gaddis [A_LppzjgUi0 @ 00:12:29]; Cushing [NT0JXm1lCyE @ 00:12:08]; "
+                    "Lily [NjvNF17_97w @ 00:06:19]."
                 ),
                 (
-                    "The seventh trap is allowing retry logic to multiply both API costs and external "
-                    "side effects. At 20,000 monthly jobs, three calls per job, and an illustrative "
-                    "$0.008 per call, model expense is $480. A defect that raises consumption to "
-                    "twelve calls costs $1,920, adding $1,440 without adding revenue. These blended "
-                    "rates are planning inputs, not a vendor price quotation. Track successful jobs, "
-                    "attempts, tokens, tool calls, and cost independently. Start investigation when "
-                    "attempts per successful job exceed 1.5 over 100 completed jobs; suspend automatic "
-                    "retries when the workflow exceeds twice its accepted unit-cost baseline. Use "
-                    "bounded exponential backoff, a dead-letter queue, and idempotency keys tied to "
-                    "the business event. A timeout after sending an invoice does not prove the send "
-                    "failed; inspect the destination's transaction record before replaying. In n8n, "
-                    "Make, or Zapier, enumerate every downstream write, not merely the visible model "
-                    "step. Configure per-customer quotas and concurrency limits so one malformed batch "
-                    "cannot drain the shared account. Separate read-only extraction credentials from "
-                    "write-capable credentials. A hard spending cap needs an operational fallback: "
-                    "queue requests, notify the service owner, and route urgent cases to the client's "
-                    "existing manual process without silently discarding records."
+                    "Johnny's email system combines Zapmail domains and mailboxes, ReachInbox "
+                    "campaigns, Apollo targeting, Google Sheets, and n8n workflows. They recommend "
+                    "three mailboxes per domain and describe at least a couple of weeks of warm-up. "
+                    "The processing workflow double-verifies addresses, then creates a personalized "
+                    "subject line and icebreaker using LinkedIn information. Johnny moved away "
+                    "from scraping whole websites because that was expensive at scale and often "
+                    "returned old information. Once processing finishes, an email notification "
+                    "signals that the enriched sheet is ready for campaign setup. Their approximate "
+                    "entry cost is $100 monthly for roughly 300 daily outreaches, while their own "
+                    "1,500-daily setup costs around $400 to $500 monthly with white-label expenses. "
+                    "Aaron Shepherd connects Claude Code to AI Arc for look-alike company research "
+                    "and prospect lists, then uses existing winning campaigns to inform offer "
+                    "and copy generation. Their personalization identifies the recipient's ideal "
+                    "customer and the service the recipient sells. Samuel Oluwagbami packages a "
+                    "different product around the same fragmented work: a Replit-built interface "
+                    "connecting lead enrichment, Gmail, sequences, reply categorization, and "
+                    "Google Calendar. Users can supply their own Apollo key, with lead totals, "
+                    "emails, replies, and bookings visible together. Samuel demonstrates the "
+                    "integration product; Johnny describes operating the outreach service. "
+                    "Johnny [MlJ3XSy3k7A @ 00:19:26]; Shepherd [RQg5jgraVg8 @ 00:08:33]; "
+                    "Oluwagbami [xQf-khf_CWE @ 00:06:05]."
                 ),
                 (
-                    "The eighth trap is treating customer documents as trusted instructions, and the "
-                    "ninth is using shared credentials because onboarding feels faster. Retrieved "
-                    "text is data, not authority to change recipients, export records, or call new "
-                    "tools. Restrict tool arguments to validated schemas and approved destinations; "
-                    "keep secrets outside prompts and give each tenant separate authorization "
-                    "boundaries. Use customer-owned OAuth applications where practical, short-lived "
-                    "tokens, documented scopes, and a tested revocation procedure. Written access "
-                    "authorization should identify systems, actions, dates, and the person able to "
-                    "withdraw permission. 18 U.S.C. § 1030 makes access boundaries consequential; "
-                    "a vague business relationship does not authorize entry into every connected "
-                    "system. Examine vendor retention, training-use settings, subprocessors, and "
-                    "regional routing before sending production data. Do not describe pseudonymous "
-                    "logs as anonymous when stable identifiers permit re-linking. Alert on any "
-                    "cross-tenant identifier, unexpected export destination, revoked token reuse, or "
-                    "new privileged scope. Immediately pause the affected route, revoke exposed "
-                    "credentials, preserve minimal incident evidence, and assess contractual and "
-                    "applicable statutory notification duties with the responsible team. Never erase "
-                    "logs simply to make an incident dashboard green. Recovery requires evidence "
-                    "that the boundary holds, followed by a limited replay of queued records with "
-                    "duplicate suppression and explicit customer communication."
+                    "The call sequence changes once interest exists. Pavlo wants the appointment "
+                    "booked during the phone conversation, not left to a link the prospect might "
+                    "never open. They offer a specific time, enter the person's name, email, and "
+                    "phone number, and position the meeting as a useful competitor breakdown. "
+                    "Their live demonstration can inspect competing websites or advertising rather "
+                    "than explain the entire technical system on the initial call. Reimer's "
+                    "discovery then connects the diagnosis to money: their example uses 30 missed "
+                    "calls monthly, five potential customers, and $1,500 per customer to describe "
+                    "$7,500 in potential monthly opportunity. Setup covers building, connections, "
+                    "messaging, routing, and launch; monthly management covers monitoring, reporting, "
+                    "and adjustments. When the owner hesitates, Reimer asks whether the issue is "
+                    "price, timing, or confidence. The close is one pillar, a measured launch, and "
+                    "a review before expansion. Lily puts the demonstration earlier: a five-minute "
+                    "Loom shows a lead arriving, being analyzed, categorized, and routed, then "
+                    "offers a 15-minute call to map next steps. Their reusable niche demo stays "
+                    "generic about the company while the outreach message remains specific. Pavlo "
+                    "books the screen-share first; Lily sends the demonstration first; Reimer "
+                    "uses the conversation to select the financially clearest starting workflow. "
+                    "Pavlo [GCChOuvd7Sg @ 00:11:48]; Reimer [IWNNb6VOVz8 @ 00:02:03]; "
+                    "Lily [NjvNF17_97w @ 00:05:18]."
                 ),
             ],
             "table": {
-                "caption": "Production Telemetry and Asymmetric-Loss Circuit-Breakers",
-                "headers": [
-                    "Production failure and the exposed customer asset",
-                    "Measured signal and required observation window",
-                    "Illustrative threshold that interrupts normal processing",
-                    "Containment response and safe service fallback",
-                ],
+                "caption": "Concrete execution sequences and the numbers attached to them.",
+                "headers": ["Execution Detail", "Tools, Script, or Economics", "Expert Source"],
                 "rows": [
                     [
-                        "Prompt changes degrade extraction while polished responses conceal mistakes.",
-                        "Versioned fixture accuracy compared with the accepted release baseline.",
-                        "Two percentage points deterioration pauses the proposed production release.",
-                        "Restore the previous version and replay the failing fixtures.",
+                        "Search locally and turn selected businesses into actionable contacts.",
+                        "Gaddis demonstrates Las Vegas plumbers, a 3.1-mile radius, and premium bulk prospect selection.",
+                        "Tom Gaddis | Smart AI Operators ([A_LppzjgUi0 @ 00:12:29])",
                     ],
                     [
-                        "Unbounded retries multiply model charges and duplicate external writes.",
-                        "Attempts per successful job across one hundred completed jobs.",
-                        "Above one point five starts immediate workflow failure investigation.",
-                        "Bound retries and inspect destination records before replaying writes.",
+                        "Use the subaccount when prospecting must trigger automated workflows.",
+                        "Agency-level contacts require moving into a subaccount; connected subaccount prospecting feeds workflows directly.",
+                        "Tom Gaddis | Smart AI Operators ([A_LppzjgUi0 @ 00:25:00])",
                     ],
                     [
-                        "A malformed batch consumes the entire shared API budget.",
-                        "Actual workflow cost per success against accepted unit economics.",
-                        "Twice the baseline suspends automatic processing for that workflow.",
-                        "Queue requests and activate the documented manual processing alternative.",
+                        "Keep list processing separate from the actual campaign launch.",
+                        "Johnny verifies addresses, generates subjects and icebreakers, then receives a campaign-readiness email notification.",
+                        "Johnny ([MlJ3XSy3k7A @ 00:13:21])",
                     ],
                     [
-                        "Retrieved documents redirect privileged tools toward unauthorized external destinations.",
-                        "Tool destinations and argument schemas checked before every execution.",
-                        "Any destination outside the authorized set blocks that action.",
-                        "Quarantine the request and require review without executing instructions.",
+                        "Calculate the opportunity before explaining setup and management fees.",
+                        "Reimer's example connects five potential customers worth $1,500 each to $7,500 monthly opportunity.",
+                        "Michael Reimer | HighLevel & AI Systems ([IWNNb6VOVz8 @ 00:02:03])",
                     ],
                     [
-                        "Shared credentials let one customer access another customer's records.",
-                        "Tenant identifiers checked at retrieval, storage, and action boundaries.",
-                        "Any cross-customer record immediately suspends the affected processing route.",
-                        "Revoke affected credentials and preserve evidence for incident assessment.",
+                        "Describe fixed-price delivery with separate responsibility for ongoing maintenance.",
+                        "Black illustrates $1,500 now and $1,500 on completion, with optional monthly error handling.",
+                        "Bennett Black ([HpBFCMSfM-I @ 00:00:15])",
                     ],
                     [
-                        "Telemetry exports copy sensitive source payloads into monitoring vendors.",
-                        "Exported field inventory checked against the approved logging schema.",
-                        "Any prohibited payload field blocks the corresponding telemetry export.",
-                        "Redact at source and retain only authorized diagnostic metadata.",
-                    ],
-                ],
-            },
-            "callout": {
-                "kind": "OPERATOR GATE",
-                "title": "Four verifications before a workflow touches production",
-                "body": (
-                    "The release owner records evidence for each check; a sales deadline "
-                    "does not substitute for a passing result."
-                ),
-                "items": [
-                    "Verify customer-authorized systems, OAuth scopes, tool destinations, and revocation ownership against the signed access record.",
-                    "Replay representative fixtures, duplicate events, and hostile document instructions; confirm consequential actions still require human review.",
-                    "Test the cost cutoff, dead-letter queue, idempotency behavior, and manual fallback using a controlled batch.",
-                    "Confirm tenant separation, approved data routing, telemetry redaction, and the ability to restore the last accepted release.",
-                ],
-            },
-            "sop_steps": [
-                {
-                    "step": 1,
-                    "title": "Classify and stop the harmful path",
-                    "action": "Pause the affected write route without disabling unrelated customer workflows.",
-                    "detail": "Record detection time, tenant, release version, and suspected impact; revoke credentials immediately when exposure is plausible.",
-                },
-                {
-                    "step": 2,
-                    "title": "Preserve bounded incident evidence",
-                    "action": "Capture relevant event identifiers, destination receipts, configuration changes, and usage totals.",
-                    "detail": "Restrict evidence access and avoid copying complete customer datasets into tickets or general-purpose chat tools.",
-                },
-                {
-                    "step": 3,
-                    "title": "Restore a verified processing boundary",
-                    "action": "Repair the cause or roll back, then replay the reproducing fixtures.",
-                    "detail": "Require tenant-isolation checks, duplicate suppression tests, and confirmation that the cost circuit-breaker still operates.",
-                },
-                {
-                    "step": 4,
-                    "title": "Reconcile and communicate recovery",
-                    "action": "Replay a small authorized batch and reconcile each external write before increasing volume.",
-                    "detail": "Notify the customer of confirmed impact, pending work, service credits where owed, and the prevention change with an accountable owner.",
-                },
-            ],
-        },
-        {
-            "heading": "3. Audit identity-resolution claims before accepting the data liability",
-            "epistemic_status": "illustrative_model",
-            "paragraphs": [
-                (
-                    "The tenth trap sits inside identity_graph_pixel_arbitrage: selling an identity "
-                    "vendor's advertised match rate as verified, permissioned customer intelligence. "
-                    "The mapped play describes first-party CNAME pixels, pre-click search or bidstream "
-                    "feeds, publisher co-op SHA-256 matching, and property or B2B graphs. Its 35–55% "
-                    "resolution range is a proposed marketing claim here, not established performance. "
-                    "At 10,000 eligible visits, that range implies 3,500–5,500 claimed matches, not "
-                    "3,500–5,500 accurate people who may lawfully receive every activation. IP "
-                    "addresses can represent households, offices, carriers, and VPN exits; device "
-                    "signals change; email hashes remain linkable identifiers. A CNAME changes DNS "
-                    "routing, not the substance of third-party collection. Do not build rainbow-table "
-                    "re-identification or assemble private home-address dossiers from visitor signals. "
-                    "Offer authorized first-party measurement and permissioned business-contact "
-                    "enrichment instead. Ask suppliers for field-level provenance, permitted purposes, "
-                    "retention limits, deletion propagation, and independently checkable accuracy "
-                    "samples. Reject vendors that substitute a broad 'public data' assertion for "
-                    "those records. Separate supplied identity, verified accuracy, permission for the "
-                    "specific use, and actual customer value into different dashboard columns. A high "
-                    "match count can coexist with zero usable activations and substantial complaint "
-                    "exposure. Price the audit and integration work, not the speculative value of "
-                    "discovering private individuals."
-                ),
-                (
-                    "For a safer illustrative cohort, suppose 10,000 visits produce 4,000 supplier "
-                    "matches, but only 2,000 records have adequate provenance and applicable permissions "
-                    "for the proposed activation. If validation rejects 8%, 1,840 records remain. "
-                    "A $1,500 monthly data fee plus $500 review labor produces $1.09 cost per usable "
-                    "record before media, postage, and agency overhead. Applying the denominator "
-                    "incorrectly to all 4,000 matches would advertise $0.50 and conceal more than "
-                    "half the unit cost. If 200 appropriately authorized mail pieces cost $1.20 "
-                    "each, the client incurs another $240; that postage is not agency service revenue. "
-                    "Measure delivered pieces, attributable responses, incremental conversions against "
-                    "a holdout, opt-outs, and identity complaints separately. Require a documented "
-                    "accuracy test before launch; suspend a cohort on any credible wrong-person "
-                    "sensitive disclosure. The proposed fallback of US-only edge geo-filtering helps "
-                    "limit routing but cannot establish residence or eliminate state privacy duties. "
-                    "Blocking consumer Gmail sends from the primary domain is sensible deliverability "
-                    "hygiene, but sending the same unwanted messages through disposable domains is "
-                    "not an acceptable substitute. Use customer-approved business outreach only when "
-                    "the source, intended use, suppression handling, and provider rules support it. "
-                    "If provenance cannot be demonstrated, discard the cohort and retain aggregate "
-                    "measurement."
-                ),
-                (
-                    "The eleventh trap is assuming that postal mail and hashed ad audiences erase "
-                    "privacy obligations. Physical mail falls outside the commercial-email rules "
-                    "of 15 U.S.C. § 7704, but that distinction does not authorize acquiring addresses "
-                    "or targeting people without regard to other applicable rules. SHA-256 audience "
-                    "uploads are still disclosures of linkable identifiers; hashing alone is not "
-                    "anonymization. California Civil Code § 1798.120 establishes opt-out rights for "
-                    "covered sales or sharing, and § 1798.135 specifies related implementation "
-                    "requirements. Determine the parties' actual roles and applicability before "
-                    "connecting a supplier, rather than assuming every agency qualifies as a "
-                    "restricted service provider. Honor applicable opt-out preference signals, "
-                    "customer suppression lists, purpose restrictions, and deletion instructions "
-                    "through downstream systems. Check current Google Customer Match and Meta "
-                    "Custom Audiences terms against the actual collection method; technical upload "
-                    "success does not establish permitted use. Never evade restrictions through "
-                    "account rotation, cloaking, falsified provenance, or replacement domains. An "
-                    "account suspension can interrupt unrelated client campaigns and destroy the "
-                    "retainer relationship. Keep each customer's advertising assets customer-owned "
-                    "and separately authorized. When a platform rejects the source, stop activation, "
-                    "preserve the rejection reason, and use approved first-party analytics or "
-                    "contextual advertising rather than attempting to disguise the dataset. Review "
-                    "supplier changes as new data sources, not routine maintenance."
-                ),
-            ],
-            "table": {
-                "caption": "Identity-Resolution Provenance, Activation, and Ban-Risk Matrix",
-                "headers": [
-                    "Mapped mechanism and misleading beginner assumption",
-                    "Evidence needed before any customer activation",
-                    "Early warning that invalidates the proposed use",
-                    "Risk fallback that preserves legitimate agency work",
-                ],
-                "rows": [
-                    [
-                        "First-party CNAME routing supposedly makes every downstream disclosure first-party.",
-                        "Actual recipients, collected fields, routing behavior, and contractual purposes.",
-                        "An undisclosed recipient or collection field appears during inspection.",
-                        "Disable the pixel and retain authorized aggregate first-party measurement.",
-                    ],
-                    [
-                        "A reported visitor match supposedly identifies one verified individual.",
-                        "Sampled accuracy results distinguishing households, businesses, and individual identities.",
-                        "Shared-network matches are presented as certain personal identity conclusions.",
-                        "Reject person-level claims and restrict reporting to supported aggregates.",
-                    ],
-                    [
-                        "SHA-256 matching supposedly converts personal identifiers into anonymous data.",
-                        "Source permissions, permitted linkage purposes, and downstream deletion capabilities.",
-                        "Supplier cannot trace identifiers to an authorized collection process.",
-                        "Reject the cohort instead of constructing re-identification lookup tables.",
-                    ],
-                    [
-                        "US-only edge filtering supposedly resolves every privacy jurisdiction question.",
-                        "Documented applicability analysis and handling of relevant state-level rights.",
-                        "Location uncertainty or unresolved opt-out instructions affect proposed records.",
-                        "Exclude affected records and keep processing within documented permissions.",
-                    ],
-                    [
-                        "Physical trigger mail supposedly eliminates duties surrounding address acquisition.",
-                        "Address provenance, permitted targeting purpose, and current suppression records.",
-                        "A recipient disputes identity accuracy or the underlying source.",
-                        "Suspend the cohort and investigate before any additional mailing.",
-                    ],
-                    [
-                        "Ad-audience upload success supposedly proves platform permission to activate.",
-                        "Current platform terms mapped to actual identifier collection methods.",
-                        "Source restrictions, upload rejection, or an account warning appears.",
-                        "Stop uploads and use approved contextual or first-party alternatives.",
-                    ],
-                ],
-            },
-        },
-        {
-            "heading": "4. Reserve for affiliate reversals and refuse the fake-activation shortcut",
-            "epistemic_status": "illustrative_model",
-            "paragraphs": [
-                (
-                    "The twelfth trap is financing delivery with affiliate balances that have not "
-                    "vested. free_trial_concierge_cpa_arbitrage proposes a free setup funded by "
-                    "three to five software registrations, with $300–$800 or more in stacked "
-                    "bounties and a 90-second template deployment. Treat every number as a "
-                    "hypothesis requiring current written program terms. Shopify, Webflow, "
-                    "GoHighLevel, Semrush, hosting providers, and email platforms do not share "
-                    "one qualifying-event definition or commission schedule. Some programs require "
-                    "paid conversions, retention periods, approved traffic, or other conditions; "
-                    "a free trial may earn nothing. Record the actual offer identifier, permitted "
-                    "promotion method, qualifying event, attribution window, reversal conditions, "
-                    "payout timing, and incentive restrictions before advertising. Suppose 100 "
-                    "qualified applicants create a provisional $400 each, or $40,000. If 25% "
-                    "reverse, collectible commissions are $30,000. Acquisition at $120 each, "
-                    "onboarding at $60 each, and $2,000 support consume $20,000, leaving $10,000 "
-                    "before shared overhead and tax treatment. That is an affiliate cohort model, "
-                    "not a replacement for the canonical agency scorecard. Keep affiliate receipts "
-                    "in a separate ledger; only genuine implementation fees and support retainers "
-                    "enter the chapter's stated agency revenue basis. Never merge provisional "
-                    "dashboard earnings into earned service invoices to make a weak sprint look "
-                    "profitable."
-                ),
-                (
-                    "The thirteenth trap is acquiring applicants who want a bounty-shaped gift "
-                    "rather than a working business system. Qualify active business status through "
-                    "proportionate evidence, confirm a real workflow need, and ensure the customer "
-                    "understands recurring charges, cancellation, account ownership, and required "
-                    "tools. A 90-second provisioning script measures machine execution, not "
-                    "discovery, DNS verification, consented number provisioning, CRM migration, "
-                    "testing, or support. Build daily-use value through a functioning pipeline, "
-                    "customer-controlled domain configuration, and useful notifications, not "
-                    "artificial switching barriers. The proposed 30–40% recurring revenue share "
-                    "is another offer-specific assumption. At an illustrative $100 monthly "
-                    "subscription, 30% pays $30; twenty minutes of support at $60 hourly consumes "
-                    "$20, leaving $10 before acquisition and overhead. At 40%, the same support "
-                    "leaves $20. Churn and unpaid invoices reduce those amounts further. Track "
-                    "day-seven successful workflow use, day-thirty paid retention, support minutes "
-                    "per retained account, and realized commission per applicant. Pause acquisition "
-                    "if mature-cohort collected commissions fall below fully loaded acquisition "
-                    "and fulfillment cost. Do not hide the dependency on paid software behind "
-                    "a '100% free' headline. 16 CFR § 251.1 addresses conditions attached to "
-                    "free offers, while 16 CFR § 255.5 addresses material connections in "
-                    "endorsements. Make the commercial relationship conspicuous at the recommendation."
-                ),
-                (
-                    "The fourteenth trap is manufacturing activations with self-referrals, fabricated "
-                    "businesses, duplicate accounts, misleading incentives, or automated signup "
-                    "abuse. Those shortcuts can trigger withheld balances, retroactive reversals, "
-                    "termination, and broader platform restrictions under program terms. They "
-                    "also destroy attribution evidence when genuine customers later dispute "
-                    "enrollment. Do not rotate identities or accounts to bypass enforcement. "
-                    "The working fallback is fewer qualified applicants, permitted promotion, "
-                    "clear affiliate disclosure, and a service the customer would actually use. "
-                    "Maintain a cohort ledger linking acquisition source, authorized signup, "
-                    "qualifying event, approval, payout, reversal, and support cost without "
-                    "collecting unnecessary identity documents. Reconcile supplier exports to "
-                    "bank receipts weekly. Treat a reversal rate above the contracted expectation "
-                    "as an investigation trigger; in this illustrative model, pause scaling "
-                    "above 15% after at least 50 resolved outcomes, so the 25% example would "
-                    "fail. Segment by traffic source before blaming the whole offer. Stress "
-                    "the reserve against both a 40% reversal case and a thirty-day payout "
-                    "delay: $40,000 provisional earnings become $24,000 collectible, leaving "
-                    "only $4,000 after the same $20,000 direct costs. Until the cash arrives, "
-                    "those costs still require funding. Size liquidity to obligations due "
-                    "during the delay and remove uncertain commissions from payroll coverage "
-                    "calculations."
-                ),
-            ],
-            "table": {
-                "caption": "Affiliate Cohort Forensics and Clawback Containment Matrix",
-                "headers": [
-                    "Affiliate failure mechanism and exposed balance",
-                    "Required measurement or current contractual evidence",
-                    "Illustrative warning threshold or decisive exception",
-                    "Operator circuit-breaker and legitimate commercial fallback",
-                ],
-                "rows": [
-                    [
-                        "Free-trial registrations are mistaken for approved payable commission events.",
-                        "Current offer terms and event-level qualification records from suppliers.",
-                        "Any mismatch between advertised trigger and actual payable event.",
-                        "Correct the offer and stop forecasting unpaid trial registrations.",
-                    ],
-                    [
-                        "Provisional affiliate balances fund payroll before reversals are resolved.",
-                        "Bank receipts separated from pending, approved, and reversed balances.",
-                        "Committed obligations exceed cash excluding uncertain affiliate commission balances.",
-                        "Retain liquidity and delay discretionary acquisition until receipts clear.",
-                    ],
-                    [
-                        "Low-intent applicants cancel immediately after receiving the advertised setup.",
-                        "Day-thirty paid retention grouped by acquisition source and offer.",
-                        "Mature collected commissions fall below acquisition and fulfillment costs.",
-                        "Pause that source and qualify demonstrable business workflow demand.",
-                    ],
-                    [
-                        "Reversal-heavy cohorts quietly consume delivery labor and advertising spend.",
-                        "Resolved reversals divided by at least fifty resolved cohort outcomes.",
-                        "Above fifteen percent pauses scaling under this illustrative policy.",
-                        "Investigate source quality and stress cash against forty-percent reversals.",
-                    ],
-                    [
-                        "Free messaging conceals software charges and affiliate compensation relationships.",
-                        "Landing-page conditions, subscription prices, cancellation terms, and connection disclosures.",
-                        "Any material required charge omitted from the customer-facing offer.",
-                        "Rewrite the offer before accepting additional applicants or registrations.",
-                    ],
-                    [
-                        "Fabricated activations expose all outstanding commissions to contractual recovery.",
-                        "Authorized genuine customer signups and permitted acquisition method records.",
-                        "Any self-referral abuse, duplicate fabrication, or misleading incentive appears.",
-                        "Stop the activity and resolve the issue through supplier channels.",
+                        "Sell a consolidated outreach interface without rebuilding every underlying service.",
+                        "Samuel connects Gmail, enrichment, sequences, and calendar functions inside the demonstrated Replit application.",
+                        "NoCode with Sam Oluwagbami ([xQf-khf_CWE @ 00:06:05])",
                     ],
                 ],
             },
             "callout": {
                 "kind": "INSIDER PRO-TIPS",
-                "title": "Protect the earned margin instead of polishing the headline",
-                "body": (
-                    "Experienced operators attach acquisition promises to delivery evidence "
-                    "and realized cash, then refuse volume that weakens either."
-                ),
+                "title": "Small moves that change the sales conversation",
+                "body": "These are specific practitioner moves, with their original operating context retained.",
                 "items": [
-                    "Version affiliate terms with each cohort's start date so a changed offer cannot silently rewrite your payout forecast.",
-                    "Log the first useful customer workflow separately from template deployment; a successful script is not successful onboarding.",
-                    "Sell an authorized data-provenance audit before any identity integration, and reject suppliers that cannot support field-level permitted uses.",
-                    "Maintain a customer-specific evidence bundle containing scope, fixtures, authorization, acceptance, incident history, and credit decisions for dispute response.",
+                    (
+                        "Reuse the same five-minute niche demo when the workflow problem is shared; "
+                        "keep company-specific research in the email or LinkedIn message instead of "
+                        "re-recording every demonstration. "
+                        "[Lily Latzo | AI Automation — NjvNF17_97w @ 00:07:55]"
+                    ),
+                    (
+                        "Call a positive local-service reply instead of sending a polished email flyer. "
+                        "Cushing opens by referencing the email exchange and asks when they can visit "
+                        "for a walkthrough. [The Workbench — NT0JXm1lCyE @ 00:13:36]"
+                    ),
+                    (
+                        "Gaddis used a missing analytics or advertising pixel as a foot-in-the-door "
+                        "offer: install it at no charge to start the business relationship. "
+                        "[Tom Gaddis | Smart AI Operators — A_LppzjgUi0 @ 00:18:43]"
+                    ),
+                    (
+                        "Use the buyer's own words in a locked one-page proposal template. Aletto "
+                        "has AI extract the call details, then a human checks the proposal before "
+                        "sending. [Aletto — IfS3QohXxG8 @ 00:12:27]"
+                    ),
+                ],
+            },
+            "sop_steps": [
+                {
+                    "step": 1,
+                    "title": "Define the workflow and build the offer page",
+                    "action": "Specify the repetitive task, delivery scope, metric, and next step.",
+                    "detail": (
+                        "Follow Lily's one-workflow package: map the workflow, build the prototype, "
+                        "integrate it, deploy it, train the team, and include documentation in "
+                        "the flat-fee scope. "
+                        "[Lily Latzo | AI Automation — NjvNF17_97w @ 00:02:37]"
+                    ),
+                },
+                {
+                    "step": 2,
+                    "title": "Build a prospect sheet with a reason to contact each buyer",
+                    "action": "Record the decision maker, profile, why-now signal, and outreach status.",
+                    "detail": (
+                        "Lily targets companies with 10 to 100 employees and looks for hiring, "
+                        "layoffs, new locations, or backlog issues before assembling the outreach list. "
+                        "[Lily Latzo | AI Automation — NjvNF17_97w @ 00:06:19]"
+                    ),
+                },
+                {
+                    "step": 3,
+                    "title": "Move a positive reply into a real conversation",
+                    "action": "Call the interested local prospect and ask for the next concrete appointment.",
+                    "detail": (
+                        "Cushing references the email exchange, then asks for a walkthrough time. "
+                        "Their point is that generating an interested reply and securing the paying "
+                        "job are separate stretches of work. "
+                        "[The Workbench — NT0JXm1lCyE @ 00:13:36]"
+                    ),
+                },
+                {
+                    "step": 4,
+                    "title": "Diagnose, price, and close the first measurable pilot",
+                    "action": "Match the largest visible gap to one workflow and schedule the review.",
+                    "detail": (
+                        "Reimer closes by recommending one pillar, building and launching it, "
+                        "measuring the response, and reviewing the numbers before expanding. "
+                        "[Michael Reimer | HighLevel & AI Systems — IWNNb6VOVz8 @ 00:05:03]"
+                    ),
+                },
+            ],
+        },
+        {
+            "id": "disagreements-alternative-playbooks",
+            "title": "Where Practitioners Disagree & Alternative Playbooks",
+            "paragraphs": [
+                (
+                    "Gaddis argues that conventional cold outreach is collapsing under repetitive "
+                    "AI pitches, yet their replacement still uses email alongside listings, texts, "
+                    "forms, and calls. The distinction is the opening offer: a business already "
+                    "featured on a community website has something concrete to inspect and verify. "
+                    "Their directory method tries to create a conversation before introducing "
+                    "recurring services. Shepherd takes the opposite position on scale. After "
+                    "infrastructure trouble and a missed sending target, they still call cold "
+                    "email far from dead and defend volume because it permits more campaigns "
+                    "and more chances for a strong segment to carry weaker ones. Their final "
+                    "update reports 98 interested responses and about 20 booked meetings. Cushing's "
+                    "local service model is smaller and more direct: typically 2,000 to 4,000 "
+                    "emails per client monthly for eight to twelve warm qualified billable leads. "
+                    "The first email often asks for an estimate opportunity rather than a "
+                    "relationship-building asset. Cushing also tests a demo link in the signature "
+                    "after domains and inboxes have aged for three to four months with strong "
+                    "deliverability, reporting bookings without replies. These are different "
+                    "operating bets: Gaddis sells through a community relationship, Shepherd "
+                    "through broad campaign testing, and Cushing through an immediate local "
+                    "service need followed by a phone call. "
+                    "Gaddis [A_LppzjgUi0 @ 00:29:39]; Shepherd [RQg5jgraVg8 @ 00:19:02]; "
+                    "Cushing [NT0JXm1lCyE @ 00:15:29]."
+                ),
+                (
+                    "The sharpest disagreement concerns how the first conversation is manufactured. "
+                    "Pavlo deliberately opens as though the connection broke up, asks whether the "
+                    "business is still open, and says it appeared closed. They explicitly say "
+                    "they do not know whether it is open or closed and use the line across "
+                    "the list; if challenged, they answer that they saw it somewhere on Google. "
+                    "Pavlo also says an AI employee or website has already been built, then "
+                    "explains that nothing is built beforehand. Interested website prospects "
+                    "receive a duplicated HighLevel site with their logo before the presentation. "
+                    "Marcus rejects the same customer-like ambiguity in DMs. They report that "
+                    "vague openings followed by a sudden pitch made prospects ignore or ghost "
+                    "them and their clients. Their replacement includes a short personalized "
+                    "hook, an honest bridge explaining the relevant work, and a question about "
+                    "the prospect's current acquisition approach. Lily's alternative is a "
+                    "demonstration-first message: identify the observed issue, share a five-minute "
+                    "walkthrough, and provide a calendar link. Pavlo's tactic depends on curiosity "
+                    "before explanation; Marcus makes commercial intent visible without dumping "
+                    "features; Lily supplies the demonstration before asking for the call. "
+                    "Their scripts should be read as contrasting approaches, not interchangeable "
+                    "versions of one shared opening. "
+                    "Pavlo [GCChOuvd7Sg @ 00:03:05]; Marcus [L1LsEN_iuIc @ 00:22:37]; "
+                    "Lily [NjvNF17_97w @ 00:07:38]."
+                ),
+                (
+                    "What gets sold after the meeting is equally unsettled. Black offers three "
+                    "structures: a flat-fee system with optional maintenance, a form-triggered "
+                    "micro-SaaS charging through credits or tokens, and an unlimited-project "
+                    "retainer. Their micro-SaaS example accepts information through a form, "
+                    "triggers an automation, creates a Drive folder, and shares the output "
+                    "without an onboarding call or custom project scope. Johnny distinguishes "
+                    "infrastructure licensing from a managed appointment-generation service. "
+                    "Licensing leaves the client operating tools and paying their costs; the "
+                    "managed service keeps the tooling with Johnny and delivers booked calls, "
+                    "notifications, weekly reports, and a weekly call. Rico Parnaste challenges "
+                    "the premise that companies mainly want someone else to build isolated "
+                    "automations. Their alternative teaches the team to use AI and build its "
+                    "own repetitive workflows through workshops, multiweek training, consulting, "
+                    "and a continuing retainer. The training product uses a repeatable program "
+                    "with each company's examples, then follows up to establish habits. Samuel "
+                    "offers another route: turn a client's desired outbound workflow into a "
+                    "subscription application integrating existing services. Its users bring "
+                    "their own enrichment credentials and operate through one interface. The "
+                    "commercial split is therefore not just setup versus monthly pricing: "
+                    "Black packages systems, Johnny operates acquisition, Rico transfers skills, "
+                    "and Samuel packages access to an integrated application. "
+                    "Black [HpBFCMSfM-I @ 00:02:04]; Johnny [MlJ3XSy3k7A @ 00:24:51]; "
+                    "Parnaste [KVhWoj-Irv4 @ 00:09:05]; Oluwagbami [xQf-khf_CWE @ 00:07:04]."
+                ),
+            ],
+            "table": {
+                "caption": "Alternative playbooks differ in entry offer, responsibility, and recurring value.",
+                "headers": ["Commercial Choice", "Practitioner Contrast", "Expert Source"],
+                "rows": [
+                    [
+                        "Open with a local directory listing rather than a service pitch.",
+                        "Gaddis asks businesses to verify their listing, then introduces a specific marketing gap.",
+                        "Tom Gaddis | Smart AI Operators ([A_LppzjgUi0 @ 00:35:32])",
+                    ],
+                    [
+                        "Use a direct estimate request when the service demand already exists.",
+                        "Cushing usually leads with an estimate, more information, or a proposed visit time.",
+                        "The Workbench ([NT0JXm1lCyE @ 00:12:08])",
+                    ],
+                    [
+                        "Create curiosity through a customer-like opening and a claimed completed build.",
+                        "Pavlo acknowledges using the closed-business line without knowing the actual business status.",
+                        "Pavlo ([GCChOuvd7Sg @ 00:03:05])",
+                    ],
+                    [
+                        "Explain the business reason for messaging without unloading the entire pitch.",
+                        "Marcus reports ghosting after vague openings and favors a transparent, niche-specific conversational bridge.",
+                        "Carson Reed ([L1LsEN_iuIc @ 00:22:37])",
+                    ],
+                    [
+                        "Sell workshops and ongoing team capability instead of individual automation builds.",
+                        "Rico's retainer includes office hours, update sessions, new-starter onboarding, and a named contact.",
+                        "Rico Parnaste ([KVhWoj-Irv4 @ 00:09:23])",
+                    ],
+                    [
+                        "Choose between client-operated infrastructure and a managed appointment-generation service.",
+                        "Johnny describes $1,000–$10,000 monthly managed retainers, with optional commission or a meeting fee.",
+                        "Johnny ([MlJ3XSy3k7A @ 00:24:51])",
+                    ],
+                ],
+            },
+        },
+        {
+            "id": "failure-modes-economics",
+            "title": "Firsthand Failure Modes, Traps & Economics Checks",
+            "paragraphs": [
+                (
+                    "Shepherd's experiment exposes the gap between planned volume and delivered "
+                    "campaign performance. The target was 250,000 emails, but the first update "
+                    "reported around 100,000 sends and a 0.36% reply rate. Shepherd traced the "
+                    "problem to widespread trouble affecting the .info domains used for most "
+                    "inboxes. The backup infrastructure used .info too, so the intended fallback "
+                    "did not solve the problem. Replacements required further warm-up, and the "
+                    "final update still missed the original target. Their later overall reply "
+                    "rate approached 0.66%, with better-targeted individual campaigns performing "
+                    "more strongly. The end report separates interested responses from actual "
+                    "bookings; the subsequent deal count is expressed through a close-rate "
+                    "calculation. Cushing reports a different failure of easy replication: "
+                    "pressure-washing campaigns launched the same week with almost identical "
+                    "targeting and scripts produced 15 leads in two weeks in Toronto but one "
+                    "in Fort Worth. Johnny's own cost lesson is to verify addresses even after "
+                    "using Apollo's verified filter. They target a bounce rate below 1% and "
+                    "describe skipped verification leading to damaged inboxes, replacement "
+                    "domains, and another warm-up cycle. The operators' numbers attach to "
+                    "specific infrastructure, markets, and campaign stages rather than a single "
+                    "universal email-to-client conversion figure. "
+                    "Shepherd [RQg5jgraVg8 @ 00:13:29]; Cushing [NT0JXm1lCyE @ 00:17:22]; "
+                    "Johnny [MlJ3XSy3k7A @ 00:09:50]."
+                ),
+                (
+                    "Gaddis catches an audit error while presenting the very workflow they sell. "
+                    "Claude reports no responses to a dentist's reviews, but Gaddis opens the "
+                    "Google Business Profile and sees that the business is responding. Claude "
+                    "had also explained that some profile information came from aggregated "
+                    "sources rather than a direct pull. Gaddis's instruction is to spend ten "
+                    "or fifteen minutes checking the audit, visiting the profile, and confirming "
+                    "the supposed opportunity before presenting it. Their own directory-software "
+                    "story contains another bottleneck: setup had taken so long that they "
+                    "struggled to reach the money-making work, especially when waiting for "
+                    "traffic. Aletto identifies a related implementation burden after noticing "
+                    "too much time spent checking AI's work. Jake's response is to define "
+                    "what done means, inspect the real result, let the system attempt fixes "
+                    "up to three times, and escalate with proof rather than accept a success "
+                    "message. Rico's training delivery adds a practical counterpart: survey "
+                    "participants before the workshop, verify accounts and equipment, and use "
+                    "real tasks. Their follow-up sends the recording and playbook within "
+                    "24 hours, checks progress after seven days, holds an office hour after "
+                    "fourteen days, and reviews results after thirty. The deliverable includes "
+                    "checking and adoption, not just generating an impressive-looking output. "
+                    "Gaddis [Z3ZaxxexqYE @ 00:16:04]; Aletto [IfS3QohXxG8 @ 00:21:25]; "
+                    "Parnaste [KVhWoj-Irv4 @ 00:15:23]."
+                ),
+                (
+                    "Johnny's appointment-setting purchase is a direct reversal of the fully "
+                    "automated sales promise. After spending multiple four figures on an AI "
+                    "appointment-setting license, they concluded that it handled much of the "
+                    "routine work but performed poorly on the smaller portion that mattered "
+                    "most. They prefer answering interested prospects themselves rather than "
+                    "sacrificing bookings to save a few hours. Their licensing model created "
+                    "another sales bottleneck: because clients had to operate the tools, "
+                    "discovery filled with questions about why each tool was needed instead "
+                    "of staying focused on booked calls. Marcus reports a parallel delegation "
+                    "problem: a virtual assistant duplicates the operator's existing process, "
+                    "including its failures. They recommend proving the process personally "
+                    "with at least two or three appointments weekly before delegation. Black "
+                    "adds the recurring-revenue check. An unlimited-project retainer requires "
+                    "constant communication, demonstrated progress, and clear delivery timing, "
+                    "while the client's list of worthwhile systems can eventually run out. "
+                    "They rank that arrangement below individually priced systems or packages. "
+                    "For flat-fee builds, Black has clients create their own automation "
+                    "accounts and API keys so usage belongs to the client's system; maintenance "
+                    "then pays for management rather than quietly absorbing execution costs. "
+                    "The recurring fee needs an ongoing job behind it, whether that job is "
+                    "management, delivery, or a continuing service. "
+                    "Johnny [MlJ3XSy3k7A @ 00:17:06]; Marcus [L1LsEN_iuIc @ 00:38:12]; "
+                    "Black [HpBFCMSfM-I @ 00:03:57]."
+                ),
+            ],
+            "table": {
+                "caption": "Failure checks tied to reported mistakes, reversals, and operating bottlenecks.",
+                "headers": ["Observed Trap", "Practitioner Response or Boundary", "Expert Source"],
+                "rows": [
+                    [
+                        "Both active and backup email infrastructure shared the same domain problem.",
+                        "Shepherd reports that the backups also used .info, preventing the expected simple replacement.",
+                        "Aaron Shepherd | GrowthFlare ([RQg5jgraVg8 @ 00:15:17])",
+                    ],
+                    [
+                        "Nearly identical campaigns produced sharply different outcomes across local markets.",
+                        "Cushing compares 15 Toronto leads with one Fort Worth lead over the same period.",
+                        "The Workbench ([NT0JXm1lCyE @ 00:17:22])",
+                    ],
+                    [
+                        "An AI audit identified a review-response gap that inspection contradicted.",
+                        "Gaddis checks the live Google Business Profile and finds the business answering reviews.",
+                        "Tom Gaddis | Smart AI Operators ([Z3ZaxxexqYE @ 00:16:04])",
+                    ],
+                    [
+                        "A paid appointment-setting bot disappointed on the conversations that mattered most.",
+                        "Johnny keeps positive-reply handling human after buying a license costing multiple four figures.",
+                        "Johnny ([MlJ3XSy3k7A @ 00:17:06])",
+                    ],
+                    [
+                        "Delegating an outreach process before it works reproduces the same failure.",
+                        "Marcus wants two or three weekly appointments from the operator's own efforts before delegation.",
+                        "Carson Reed ([L1LsEN_iuIc @ 00:38:12])",
+                    ],
+                    [
+                        "An unlimited-project retainer can exhaust the client's useful implementation backlog.",
+                        "Black emphasizes monthly justification and communication, while favoring individually priced systems or packages.",
+                        "Bennett Black ([HpBFCMSfM-I @ 00:04:15])",
+                    ],
+                ],
+            },
+            "callout": {
+                "kind": "OPERATOR GATE",
+                "title": "Checks before counting the next win",
+                "body": "Use the checks practitioners attached to their own delivery and sales problems.",
+                "items": [
+                    (
+                        "Open the actual business profile before presenting an audit gap. Gaddis "
+                        "found real review responses where Claude had reported none. "
+                        "[Tom Gaddis | Smart AI Operators — Z3ZaxxexqYE @ 00:16:04]"
+                    ),
+                    (
+                        "Keep interested replies, booked meetings, attended calls, and projected "
+                        "deals separate. Shepherd counted about 20 bookings, then described later "
+                        "outcomes through show-rate and close-rate assumptions. "
+                        "[Aaron Shepherd | GrowthFlare — RQg5jgraVg8 @ 00:19:17]"
+                    ),
+                    (
+                        "Prove the DM process before handing it to a virtual assistant. Marcus "
+                        "sets a personal baseline of two or three appointments weekly and says "
+                        "delegation otherwise duplicates failure. "
+                        "[Carson Reed — L1LsEN_iuIc @ 00:38:12]"
+                    ),
+                    (
+                        "Inspect the real result against a definition of done. Aletto allows up "
+                        "to three repair attempts, then escalates with proof; a success message "
+                        "alone does not count. [Aletto — IfS3QohXxG8 @ 00:21:55]"
+                    ),
                 ],
             },
         },
     ],
-    "pull_quote": "Your margin is only real when the workflow survives exceptions and the cash survives reversal.",
+    "pull_quote": (
+        "'Find the number, match the pillar, price against the value.' "
+        "— Michael Reimer | HighLevel & AI Systems "
+        "(IWNNb6VOVz8 @ 00:05:18)."
+    ),
     "diagram_id": "diag-05",
     "action_checklist": [
-        "Reconcile the $100,000, $550,000, and $1,000,000 service-revenue scenarios to $20,000, $165,000, and $400,000 owner profit without including client sales or affiliate balances.",
-        "Attach source systems, acceptance fixtures, exclusions, support limits, and priced change procedures to every fixed-scope sprint.",
-        "Implement tenant-scoped credentials, destination restrictions, duplicate suppression, per-workflow spending limits, and a tested manual fallback.",
-        "Audit identity suppliers for provenance, accuracy, permitted activation, suppression handling, and deletion propagation before accepting any customer data flow.",
-        "Create an affiliate cohort ledger separating provisional events, qualifying conversions, approvals, reversals, bank receipts, and fully loaded fulfillment costs.",
-        "Run a quarterly loss drill covering a disputed milestone, a cross-tenant disclosure, a retry storm, and a thirty-day affiliate payout delay.",
+        (
+            "Create a one-page offer for one repetitive workflow, including its design, "
+            "documentation, implementation, and team training. "
+            "[Lily Latzo | AI Automation — NjvNF17_97w @ 00:02:37]"
+        ),
+        (
+            "Build the local prospect list around business category and location, then "
+            "inspect website, profile, and review information for a concrete conversation starter. "
+            "[Tom Gaddis | Smart AI Operators — A_LppzjgUi0 @ 00:12:29]"
+        ),
+        (
+            "Record prospect names, profile links, pipeline status, and follow-up dates "
+            "in a sheet so interested conversations do not disappear between messages. "
+            "[Carson Reed — L1LsEN_iuIc @ 00:29:17]"
+        ),
+        (
+            "When a local-service prospect replies positively, call and ask for the "
+            "walkthrough or estimate appointment instead of relying only on another email. "
+            "[The Workbench — NT0JXm1lCyE @ 00:13:36]"
+        ),
+        (
+            "Run discovery around missed calls, customer value, response time, old leads, "
+            "reviews, and website conversion; recommend the first measurable workflow. "
+            "[Michael Reimer | HighLevel & AI Systems — IWNNb6VOVz8 @ 00:01:00]"
+        ),
+        (
+            "For a training engagement, deliver the recording and playbook, check task "
+            "adoption, hold the follow-up office hour, and review results after thirty days "
+            "before presenting the next workshop, program, or retainer. "
+            "[Rico Parnaste — KVhWoj-Irv4 @ 00:15:23]"
+        ),
     ],
     "statutory_citations": [
         {
-            "title": "15 U.S.C. § 45 — Unfair or deceptive acts or practices",
-            "url": "https://www.law.cornell.edu/uscode/text/15/45",
-            "relevance": "Supports scrutiny of unsupported automation performance claims, misleading identity-resolution promises, and deceptive customer acquisition representations.",
+            "title": (
+                "Michael Reimer | HighLevel & AI Systems — The Exact Script to Close "
+                "AI Agency Clients on a Discovery Call [00:01:00]"
+            ),
+            "url": "https://www.youtube.com/watch?v=IWNNb6VOVz8&t=60s",
+            "relevance": (
+                "Primary practitioner testimony on diagnostic discovery questions "
+                "and matching the first workflow to the owner's business problem."
+            ),
         },
         {
-            "title": "18 U.S.C. § 1030 — Fraud and related activity in connection with computers",
-            "url": "https://www.law.cornell.edu/uscode/text/18/1030",
-            "relevance": "Makes authorization boundaries material when accessing customer systems, invoking privileged integrations, or handling revoked access.",
+            "title": (
+                "The Workbench — How Cold Email Landed $60k Home Service Deals "
+                "| The Workbench [00:13:36]"
+            ),
+            "url": "https://www.youtube.com/watch?v=NT0JXm1lCyE&t=816s",
+            "relevance": (
+                "Primary practitioner testimony on converting positive local-service "
+                "email replies into phone conversations and walkthroughs."
+            ),
         },
         {
-            "title": "15 U.S.C. § 7704 — Requirements for transmission of messages",
-            "url": "https://www.law.cornell.edu/uscode/text/15/7704",
-            "relevance": "Establishes commercial-email requirements; its email-specific scope does not create permission to acquire or activate personal data through other channels.",
+            "title": (
+                "Tom Gaddis | Smart AI Operators — How Top AI Agencies Close Deals "
+                "Without Selling | Claude Audit [00:16:04]"
+            ),
+            "url": "https://www.youtube.com/watch?v=Z3ZaxxexqYE&t=964s",
+            "relevance": (
+                "Primary practitioner testimony on a live audit error discovered "
+                "by checking actual Google Business Profile review responses."
+            ),
         },
         {
-            "title": "California Civil Code § 1798.120 — Right to opt out of sale or sharing",
-            "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?lawCode=CIV&sectionNum=1798.120.",
-            "relevance": "Requires covered businesses to respect applicable consumer choices before selling or sharing personal information used in identity or audience workflows.",
+            "title": (
+                "Aaron Shepherd | GrowthFlare — I Tried Using Claude Code To Send "
+                "250,000 Cold Emails in 7 Days [00:19:17]"
+            ),
+            "url": "https://www.youtube.com/watch?v=RQg5jgraVg8&t=1157s",
+            "relevance": (
+                "Primary practitioner testimony on counted bookings and the "
+                "distinction between meeting outcomes and subsequent sales calculations."
+            ),
+        },
+    ],
+    "source_citations": [
+        {
+            "source_type": "video_pro_tip",
+            "video_id": "HpBFCMSfM-I",
+            "title": "The 3 Best Ways To Sell AI Automation Services (n8n, Make)",
+            "channel": "Bennett Black",
+            "author": "Bennett Black",
+            "text": (
+                "If you're selling the flat fee, I think having a niche is very, very "
+                "beneficial because you can develop kind of a service or a system catalog."
+            ),
+            "tip": (
+                "If you're selling the flat fee, I think having a niche is very, very "
+                "beneficial because you can develop kind of a service or a system catalog."
+            ),
+            "timestamp": 305,
+            "timestamp_seconds": 305,
+            "timestamp_label": "[00:05:05]",
+            "url": "https://www.youtube.com/watch?v=HpBFCMSfM-I&t=305s",
+            "markdown": "[00:05:05](https://www.youtube.com/watch?v=HpBFCMSfM-I&t=305s)",
+            "epistemic_status": "attributed_practitioner_claim",
+            "relevance": "Practitioner testimony on niche-specific system catalogs and repeatable sales.",
         },
         {
-            "title": "California Civil Code § 1798.135 — Implementation of opt-out rights",
-            "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?lawCode=CIV&sectionNum=1798.135.",
-            "relevance": "Provides concrete implementation requirements relevant to covered identity collection, audience activation, and downstream suppression operations.",
+            "source_type": "video_pro_tip",
+            "video_id": "IWNNb6VOVz8",
+            "title": "The Exact Script to Close AI Agency Clients on a Discovery Call",
+            "channel": "Michael Reimer | HighLevel & AI Systems",
+            "author": "Michael Reimer | HighLevel & AI Systems",
+            "text": (
+                "A lot of automation fails because it's built around tools instead of "
+                "a measurable business problem. I would start with one workflow, one "
+                "metric, and one 30-day review."
+            ),
+            "tip": (
+                "A lot of automation fails because it's built around tools instead of "
+                "a measurable business problem. I would start with one workflow, one "
+                "metric, and one 30-day review."
+            ),
+            "timestamp": 273,
+            "timestamp_seconds": 273,
+            "timestamp_label": "[00:04:33]",
+            "url": "https://www.youtube.com/watch?v=IWNNb6VOVz8&t=273s",
+            "markdown": "[00:04:33](https://www.youtube.com/watch?v=IWNNb6VOVz8&t=273s)",
+            "epistemic_status": "attributed_practitioner_claim",
+            "relevance": "Practitioner testimony on a measurable pilot and its review cadence.",
         },
         {
-            "title": "16 CFR § 251.1 — The guide concerning use of the word free",
-            "url": "https://www.ecfr.gov/current/title-16/chapter-I/subchapter-B/part-251/section-251.1",
-            "relevance": "Explains FTC guidance on free offers and disclosure of conditions, including required software subscriptions attached to free implementation promotions.",
+            "source_type": "video_pro_tip",
+            "video_id": "NT0JXm1lCyE",
+            "title": "How Cold Email Landed $60k Home Service Deals | The Workbench",
+            "channel": "The Workbench",
+            "author": "The Workbench",
+            "text": (
+                "Every single time that a client gets a lead in there, I tell them, call them up."
+            ),
+            "tip": (
+                "Every single time that a client gets a lead in there, I tell them, call them up."
+            ),
+            "timestamp": 816,
+            "timestamp_seconds": 816,
+            "timestamp_label": "[00:13:36]",
+            "url": "https://www.youtube.com/watch?v=NT0JXm1lCyE&t=816s",
+            "markdown": "[00:13:36](https://www.youtube.com/watch?v=NT0JXm1lCyE&t=816s)",
+            "epistemic_status": "attributed_practitioner_claim",
+            "relevance": "Practitioner testimony on moving positive email replies to the phone.",
         },
         {
-            "title": "16 CFR § 255.5 — Disclosure of material connections",
-            "url": "https://www.ecfr.gov/current/title-16/chapter-I/subchapter-B/part-255/section-255.5",
-            "relevance": "Explains FTC guidance on disclosing material connections when agency recommendations or endorsements generate affiliate compensation.",
+            "source_type": "video_pro_tip",
+            "video_id": "A_LppzjgUi0",
+            "title": (
+                "This AI Prospecting Update Just Made Cold Outreach Obsolete "
+                "(500 Leads in Minutes)"
+            ),
+            "channel": "Tom Gaddis | Smart AI Operators",
+            "author": "Tom Gaddis | Smart AI Operators",
+            "text": (
+                "On the agency side, I cannot add those leads to an automation or a "
+                "workflow because those things exist in subaccounts."
+            ),
+            "tip": (
+                "On the agency side, I cannot add those leads to an automation or a "
+                "workflow because those things exist in subaccounts."
+            ),
+            "timestamp": 1500,
+            "timestamp_seconds": 1500,
+            "timestamp_label": "[00:25:00]",
+            "url": "https://www.youtube.com/watch?v=A_LppzjgUi0&t=1500s",
+            "markdown": "[00:25:00](https://www.youtube.com/watch?v=A_LppzjgUi0&t=1500s)",
+            "epistemic_status": "attributed_practitioner_claim",
+            "relevance": "Practitioner testimony on HighLevel's agency and subaccount workflow distinction.",
+        },
+        {
+            "source_type": "video_pro_tip",
+            "video_id": "MlJ3XSy3k7A",
+            "title": "How To Book Sales Calls For Your Agency With AI Cold Email Outreach",
+            "channel": "Johnny",
+            "author": "Johnny",
+            "text": (
+                "Just get me the positive responses. Get me a bunch of leads and I'll "
+                "respond to them. I don't mind."
+            ),
+            "tip": (
+                "Just get me the positive responses. Get me a bunch of leads and I'll "
+                "respond to them. I don't mind."
+            ),
+            "timestamp": 1078,
+            "timestamp_seconds": 1078,
+            "timestamp_label": "[00:17:58]",
+            "url": "https://www.youtube.com/watch?v=MlJ3XSy3k7A&t=1078s",
+            "markdown": "[00:17:58](https://www.youtube.com/watch?v=MlJ3XSy3k7A&t=1078s)",
+            "epistemic_status": "attributed_practitioner_claim",
+            "relevance": "Practitioner testimony favoring human handling of interested prospects.",
+        },
+        {
+            "source_type": "video_pro_tip",
+            "video_id": "GCChOuvd7Sg",
+            "title": "Cold Calling AI Agency Script That Gets 7 Meetings/day",
+            "channel": "Pavlo",
+            "author": "Pavlo",
+            "text": (
+                "Book the meeting right on the call. Get it in front of your face."
+            ),
+            "tip": (
+                "Book the meeting right on the call. Get it in front of your face."
+            ),
+            "timestamp": 708,
+            "timestamp_seconds": 708,
+            "timestamp_label": "[00:11:48]",
+            "url": "https://www.youtube.com/watch?v=GCChOuvd7Sg&t=708s",
+            "markdown": "[00:11:48](https://www.youtube.com/watch?v=GCChOuvd7Sg&t=708s)",
+            "epistemic_status": "attributed_practitioner_claim",
+            "relevance": "Practitioner testimony on booking during the conversation rather than sending a link.",
+        },
+        {
+            "source_type": "video_pro_tip",
+            "video_id": "KVhWoj-Irv4",
+            "title": "Here's What I'd Sell Instead of AI Automations in 2027",
+            "channel": "Rico Parnaste",
+            "author": "Rico Parnaste",
+            "text": (
+                "I don't build the automation for them. I help them decide and teach "
+                "their people how to build their own."
+            ),
+            "tip": (
+                "I don't build the automation for them. I help them decide and teach "
+                "their people how to build their own."
+            ),
+            "timestamp": 545,
+            "timestamp_seconds": 545,
+            "timestamp_label": "[00:09:05]",
+            "url": "https://www.youtube.com/watch?v=KVhWoj-Irv4&t=545s",
+            "markdown": "[00:09:05](https://www.youtube.com/watch?v=KVhWoj-Irv4&t=545s)",
+            "epistemic_status": "attributed_practitioner_claim",
+            "relevance": "Practitioner testimony on training and consulting as alternatives to building automations.",
+        },
+        {
+            "source_type": "video_pro_tip",
+            "video_id": "L1LsEN_iuIc",
+            "title": "How To Sign AI Agency Clients Using Outreach in 2026",
+            "channel": "Carson Reed",
+            "author": "Carson Reed",
+            "text": (
+                "You're opening a conversation. You need to know that. It's about "
+                "a conversation, not closing a sale there."
+            ),
+            "tip": (
+                "You're opening a conversation. You need to know that. It's about "
+                "a conversation, not closing a sale there."
+            ),
+            "timestamp": 1271,
+            "timestamp_seconds": 1271,
+            "timestamp_label": "[00:21:11]",
+            "url": "https://www.youtube.com/watch?v=L1LsEN_iuIc&t=1271s",
+            "markdown": "[00:21:11](https://www.youtube.com/watch?v=L1LsEN_iuIc&t=1271s)",
+            "epistemic_status": "attributed_practitioner_claim",
+            "relevance": "Marcus Pizarro's testimony on conversational DM outreach during the Carson Reed interview.",
+        },
+        {
+            "source_type": "video_pro_tip",
+            "video_id": "IfS3QohXxG8",
+            "title": "15 AI Tasks I'd Automate in a B2B SaaS Company",
+            "channel": "Aletto",
+            "author": "Aletto",
+            "text": (
+                "It reads the call transcript, pulls the buyer's own words, and builds "
+                "a one-page proposal on a locked template."
+            ),
+            "tip": (
+                "It reads the call transcript, pulls the buyer's own words, and builds "
+                "a one-page proposal on a locked template."
+            ),
+            "timestamp": 747,
+            "timestamp_seconds": 747,
+            "timestamp_label": "[00:12:27]",
+            "url": "https://www.youtube.com/watch?v=IfS3QohXxG8&t=747s",
+            "markdown": "[00:12:27](https://www.youtube.com/watch?v=IfS3QohXxG8&t=747s)",
+            "epistemic_status": "attributed_practitioner_claim",
+            "relevance": "Practitioner testimony on AI-assisted proposals using actual buyer language.",
+        },
+        {
+            "source_type": "video_pro_tip",
+            "video_id": "RHZMQe6R_5A",
+            "title": "Strategic AI Implementation | Stop guessing! Do an AI Audit!",
+            "channel": "AI Automation Clips | AI Agent Systems",
+            "author": "AI Automation Clips | AI Agent Systems",
+            "text": (
+                "Week one is all about discovery. Week two is solution design."
+            ),
+            "tip": (
+                "Week one is all about discovery. Week two is solution design."
+            ),
+            "timestamp": 160,
+            "timestamp_seconds": 160,
+            "timestamp_label": "[00:02:40]",
+            "url": "https://www.youtube.com/watch?v=RHZMQe6R_5A&t=160s",
+            "markdown": "[00:02:40](https://www.youtube.com/watch?v=RHZMQe6R_5A&t=160s)",
+            "epistemic_status": "attributed_practitioner_claim",
+            "relevance": "Practitioner testimony describing the two-week strategic audit structure.",
+        },
+        {
+            "source_type": "video_pro_tip",
+            "video_id": "Z3ZaxxexqYE",
+            "title": "How Top AI Agencies Close Deals Without Selling | Claude Audit",
+            "channel": "Tom Gaddis | Smart AI Operators",
+            "author": "Tom Gaddis | Smart AI Operators",
+            "text": (
+                "It found zero response of any reviews, which would be a big thing "
+                "we could help them with, but as you saw when I went over here and "
+                "verified with my own eyes, they are actually responding to reviews."
+            ),
+            "tip": (
+                "It found zero response of any reviews, which would be a big thing "
+                "we could help them with, but as you saw when I went over here and "
+                "verified with my own eyes, they are actually responding to reviews."
+            ),
+            "timestamp": 964,
+            "timestamp_seconds": 964,
+            "timestamp_label": "[00:16:04]",
+            "url": "https://www.youtube.com/watch?v=Z3ZaxxexqYE&t=964s",
+            "markdown": "[00:16:04](https://www.youtube.com/watch?v=Z3ZaxxexqYE&t=964s)",
+            "epistemic_status": "attributed_practitioner_claim",
+            "relevance": "Firsthand testimony on an audit error contradicted by direct inspection.",
+        },
+        {
+            "source_type": "video_pro_tip",
+            "video_id": "NjvNF17_97w",
+            "title": (
+                "How I Landed 3 AI Automation Clients in 7 Days | "
+                "Simple Outreach System That Works"
+            ),
+            "channel": "Lily Latzo | AI Automation",
+            "author": "Lily Latzo | AI Automation",
+            "text": (
+                "I booked three AI automation clients in seven days using one Google "
+                "doc, a five-minute demo, and one outreach sprint."
+            ),
+            "tip": (
+                "I booked three AI automation clients in seven days using one Google "
+                "doc, a five-minute demo, and one outreach sprint."
+            ),
+            "timestamp": 1,
+            "timestamp_seconds": 1,
+            "timestamp_label": "[00:00:01]",
+            "url": "https://www.youtube.com/watch?v=NjvNF17_97w&t=1s",
+            "markdown": "[00:00:01](https://www.youtube.com/watch?v=NjvNF17_97w&t=1s)",
+            "epistemic_status": "attributed_practitioner_claim",
+            "relevance": "Practitioner testimony on the reported seven-day client acquisition sprint.",
+        },
+        {
+            "source_type": "video_pro_tip",
+            "video_id": "RQg5jgraVg8",
+            "title": "I Tried Using Claude Code To Send 250,000 Cold Emails in 7 Days",
+            "channel": "Aaron Shepherd | GrowthFlare",
+            "author": "Aaron Shepherd | GrowthFlare",
+            "text": (
+                "If we jump into the bookings channel on Slack, I just did a count. "
+                "We got about 20 booked meetings since we launched campaigns last week."
+            ),
+            "tip": (
+                "If we jump into the bookings channel on Slack, I just did a count. "
+                "We got about 20 booked meetings since we launched campaigns last week."
+            ),
+            "timestamp": 1157,
+            "timestamp_seconds": 1157,
+            "timestamp_label": "[00:19:17]",
+            "url": "https://www.youtube.com/watch?v=RQg5jgraVg8&t=1157s",
+            "markdown": "[00:19:17](https://www.youtube.com/watch?v=RQg5jgraVg8&t=1157s)",
+            "epistemic_status": "attributed_practitioner_claim",
+            "relevance": "Practitioner testimony on counted meeting bookings after the email experiment.",
+        },
+        {
+            "source_type": "video_pro_tip",
+            "video_id": "xQf-khf_CWE",
+            "title": (
+                "Cold Email is Dead — I Built an AI Outreach System That Does "
+                "Everything for You (Lead to Meeting)"
+            ),
+            "channel": "NoCode with Sam Oluwagbami",
+            "author": "NoCode with Sam Oluwagbami",
+            "text": (
+                "We are not creating these things from scratch. We're just connecting "
+                "all of those APIs in one platform."
+            ),
+            "tip": (
+                "We are not creating these things from scratch. We're just connecting "
+                "all of those APIs in one platform."
+            ),
+            "timestamp": 365,
+            "timestamp_seconds": 365,
+            "timestamp_label": "[00:06:05]",
+            "url": "https://www.youtube.com/watch?v=xQf-khf_CWE&t=365s",
+            "markdown": "[00:06:05](https://www.youtube.com/watch?v=xQf-khf_CWE&t=365s)",
+            "epistemic_status": "attributed_practitioner_claim",
+            "relevance": "Practitioner testimony on consolidating existing outbound tools through APIs.",
+        },
+        {
+            "source_type": "video_pro_tip",
+            "video_id": "IfS3QohXxG8",
+            "title": "15 AI Tasks I'd Automate in a B2B SaaS Company",
+            "channel": "Aletto",
+            "author": "Aletto",
+            "text": (
+                "Every AI job has to look at the real result compared to what done "
+                "means and fix it up to three times and escalate with proof. "
+                "A success message doesn't count."
+            ),
+            "tip": (
+                "Every AI job has to look at the real result compared to what done "
+                "means and fix it up to three times and escalate with proof. "
+                "A success message doesn't count."
+            ),
+            "timestamp": 1315,
+            "timestamp_seconds": 1315,
+            "timestamp_label": "[00:21:55]",
+            "url": "https://www.youtube.com/watch?v=IfS3QohXxG8&t=1315s",
+            "markdown": "[00:21:55](https://www.youtube.com/watch?v=IfS3QohXxG8&t=1315s)",
+            "epistemic_status": "attributed_practitioner_claim",
+            "relevance": "Firsthand testimony on defining completion and checking implementation outputs.",
+        },
+        {
+            "source_type": "video_pro_tip",
+            "video_id": "KVhWoj-Irv4",
+            "title": "Here's What I'd Sell Instead of AI Automations in 2027",
+            "channel": "Rico Parnaste",
+            "author": "Rico Parnaste",
+            "text": (
+                "The day teaches the skill. The 30 days after it build the habit."
+            ),
+            "tip": (
+                "The day teaches the skill. The 30 days after it build the habit."
+            ),
+            "timestamp": 957,
+            "timestamp_seconds": 957,
+            "timestamp_label": "[00:15:57]",
+            "url": "https://www.youtube.com/watch?v=KVhWoj-Irv4&t=957s",
+            "markdown": "[00:15:57](https://www.youtube.com/watch?v=KVhWoj-Irv4&t=957s)",
+            "epistemic_status": "attributed_practitioner_claim",
+            "relevance": "Practitioner testimony on follow-up and adoption in the training business model.",
         },
     ],
 }

@@ -5,676 +5,791 @@ CHAPTER_10 = {
     "chapter_id": "Q10",
     "chapter_number": 10,
     "question_number": 10,
-    "slug": "automation-ai-leverage-scalable-distribution-flywheels",
-    "question_prompt": "How does a 2 FT + 3 C (5 people) productized ai agencies team automate 70%+ of repetitive research, qualification, fulfillment, and traffic/deal acquisition while keeping human-in-the-loop QA?",
+    "slug": "ai-customer-support-tools-automation-agency-business-models",
+    "question_prompt": "How do AI customer support agents work, how do leading tools—including Zendesk, Intercom, and Tidio—compare on features, pricing, and AI capabilities, and how can beginners automate small-business support or build an agency selling these services to local businesses?",
     "kicker": "Q10 / THE BIG MONEY PLAYBOOKS",
-    "title": "Automation, AI Leverage & Scalable Distribution Flywheels",
-    "subtitle": "Signed Webhooks, Python Workers, Evidence-Bound LLMs, Authorized Marketplace Monitoring, and Merchant-Approved Payment Routing",
-    "layout_template": "case_study_walkthrough",
-    "reading_time_minutes": 14,
+    "title": "AI Customer Support: Tools, Automation & Agency Business Models",
+    "subtitle": "Beginner guides to AI customer service agents, platform rankings, Intercom vs Zendesk vs Tidio, small-business budgeting, and building and selling AI support services.",
+    "layout_template": "expert_commentary",
+    "reading_time_minutes": 15,
     "executive_summary": (
-        "Candidate #29, Productized AI Agencies, holds Rank #08 with an 89/100 "
-        "Money-to-Manpower Score. Across the volume's 23 mapped plays, the scalable "
-        "asset is a repeatable implementation system, not an unlimited custom-development "
-        "promise. This chapter builds signed intake webhooks, Python job workers, "
-        "evidence-bound LLM outputs, deployment checklists, and monitored distribution "
-        "loops around fixed-scope sprints and support retainers. Marketplace brand "
-        "protection and authorized payment orchestration provide demanding operating "
-        "examples. Target more than 70% automation of measured repetitive work while "
-        "retaining human review for consequential outputs. Canonical annual owner net "
-        "profit remains $20,000 Conservative, $165,000 Base, and $400,000 Scaled; "
-        "recognized revenue includes implementation fees and support retainers, "
-        "never client sales or merchant payment volume."
+        "The operators converge on a practical product: answer repetitive questions from business-specific knowledge, "
+        "connect the workflows that finish the job, and hand difficult conversations to people with context intact. "
+        "Travis Wardrop sells missed-call recovery at $300 monthly; Sohaib demonstrates branded messaging agents, "
+        "appointment booking, recurring plans, and credit markups. AIWealthPath starts with ten recurring questions "
+        "and a weekly twenty-minute review. Platform preferences split by workload: Zendesk for structured operations, "
+        "Intercom for conversational support, and Tidio for small stores. AI Tool Lab favors Tidio on small-store "
+        "economics, while Daniel Davidson favors SparrowDesk and Gorgias for different operating needs. The sharpest "
+        "disagreements concern billing: seats, outcomes, conversations, tickets, and credits do not describe the same "
+        "thing, and several speakers identify charges that survive an unsuccessful answer."
     ),
     "key_metrics": [
         {
-            "label": "Conservative",
-            "value": "$100,000",
-            "context": "Annual implementation-fee and support-retainer revenue only",
-            "note": "20% net margin; $20,000 annual owner net profit; 2 FT + 3 C",
+            "label": "Local automation monthly offer",
+            "metric": "Local automation monthly offer",
+            "value": "$300–$500 per client per month",
+            "confidence": "attributed_practitioner_claim",
+            "context": "Travis Wardrop presents this recurring price range for local-business AI solutions fulfilled through resold software.",
+            "source": "Travis Wardrop ([CDVbVmBQVyc @ 00:02:04])",
         },
         {
-            "label": "Base",
-            "value": "$550,000",
-            "context": "Annual implementation-fee and support-retainer revenue only",
-            "note": "30.0% net margin; $165,000 annual owner net profit; 2 FT + 3 C",
+            "label": "DM Champ agency entry plan",
+            "metric": "DM Champ agency entry plan",
+            "value": "$297 monthly; 1,000 credits; 10 client accounts",
+            "confidence": "attributed_practitioner_claim",
+            "context": "Sohaib states the agency plan's monthly price and included credits and accounts while explaining branded client delivery.",
+            "source": "Sohaib ([lvzJJWDX0ec @ 00:06:50])",
         },
         {
-            "label": "Scaled",
-            "value": "$1,000,000",
-            "context": "Annual implementation-fee and support-retainer revenue only",
-            "note": "40% net margin; $400,000 annual owner net profit; 3 FT + 4 C",
+            "label": "Weekly support review",
+            "metric": "Weekly support review",
+            "value": "20 minutes once a week",
+            "confidence": "attributed_practitioner_claim",
+            "context": "AIWealthPath recommends reviewing first-response speed, questions answered without people, and incorrect answers.",
+            "source": "AIWealthPath ([JKmSoDIpfdI @ 00:03:33])",
+        },
+        {
+            "label": "Zendesk interaction resolution claim",
+            "metric": "Zendesk interaction resolution claim",
+            "value": "60% or more",
+            "confidence": "attributed_practitioner_claim",
+            "context": "Zendesk says its AI agents are helping companies resolve this share of customer interactions.",
+            "source": "Zendesk ([mnFYeyoS2r8 @ 00:02:45])",
         },
     ],
     "sections": [
         {
-            "heading": "1. Turn the fixed-scope sprint into a measured automation system",
-            "epistemic_status": "operating_framework",
+            "id": "practitioner-consensus",
+            "title": "The Practitioner Consensus",
             "paragraphs": [
                 (
-                    "Start with a product boundary that the five-person team can defend: "
-                    "one intake source, one bounded transformation, one destination, and "
-                    "one measurable acceptance test per sprint. The delivery lead owns "
-                    "architecture and client acceptance; the operations lead owns intake, "
-                    "support, and account economics. Three contractors cover integration "
-                    "engineering, test execution, and domain review through explicit "
-                    "work packets rather than standing attendance requirements. Sell "
-                    "additional destinations, historical migrations, and new decision "
-                    "classes as separately priced changes. In the statement of work, "
-                    "name authorized systems, permitted data fields, service accounts, "
-                    "retention periods, model providers, output ownership, and incident "
-                    "contacts. Access must come from the client resource owner, not "
-                    "from instructions embedded in uploaded documents. Treat 18 U.S.C. "
-                    "1030 as a concrete reason to record access authorization and stop "
-                    "when that authorization expires. Build an inventory of every "
-                    "credential and external publication surface before connecting "
-                    "production. The deliverable is a repeatable workflow with an "
-                    "observable result, not a promise that an agent will navigate "
-                    "arbitrary business exceptions. A new client should require "
-                    "configuration and acceptance fixtures, while genuinely new "
-                    "business logic receives its own estimate and delivery window."
+                    "The common starting point is repetitive work, not a blank chatbot. Ventra Technologies describes "
+                    "a restaurant facing the same late-night WhatsApp questions about opening hours, delivery areas, "
+                    "and specials; its service begins with a support audit that identifies recurring conversations, "
+                    "then structures company information and configures the agent around that work "
+                    "[b5pi4BcdrKk @ 00:03:29]. AIWealthPath makes the intake concrete: open the inbox, WhatsApp, and "
+                    "comments, write down the ten questions that recur, and treat a question appearing three times "
+                    "weekly as an automation candidate [JKmSoDIpfdI @ 00:00:31]. The first knowledge document contains "
+                    "actual delivery times, delivery charges, return windows, refund rules, prices, hours, and contact "
+                    "details. Stewart Gauld builds the same foundation inside Zendesk by opening Knowledge, adding "
+                    "resources about the business and its products, and preparing the help center before creating "
+                    "an agent [nMMWXxBsH2o @ 00:02:18]. Toolstack gives the operational reason: Intercom Fin can "
+                    "handle a substantial share of questions when documentation is solid, but messy documentation "
+                    "produces confident half answers [aNlthYD5fPY @ 00:01:05]. These speakers put the business's "
+                    "answers upstream of the interface. The setup work includes organizing articles, supplying missing "
+                    "answers, and making information usable by both customers and the people handling support."
                 ),
                 (
-                    "Measure automation against labor-weighted repetitive work, not "
-                    "the number of boxes colored green in a workflow editor. Suppose "
-                    "the baseline contains 1,000 monthly repetitive hours: 200 in "
-                    "research, 150 in qualification, 450 in fulfillment, and 200 in "
-                    "distribution operations. A designed workflow leaves 50, 45, "
-                    "100, and 55 hours respectively, or 250 hours altogether. That "
-                    "removes 750 hours and achieves 75% automation of the defined "
-                    "baseline. If the new system also creates 80 hours of review "
-                    "and incident handling, remaining total effort is 330 hours "
-                    "and net labor reduction is 67%, not 75%. Both figures belong "
-                    "on the client dashboard, together with volume, error severity, "
-                    "and sampling coverage. Do not describe the illustrative 1,000 "
-                    "hours as the agency team's available capacity; it can represent "
-                    "work distributed across client organizations. Instrument each "
-                    "task with start time, completion time, reviewer minutes, "
-                    "rework cause, and a stable workflow version. Compare like "
-                    "cohorts before claiming savings. Randomly inspect apparently "
-                    "successful runs because exception-only sampling misses silent "
-                    "errors. Freeze the denominator for a reporting period so "
-                    "changing task definitions cannot manufacture an improvement "
-                    "that the customer's staff never experience."
+                    "The agent's job extends beyond retrieving a paragraph when the business connects an operational "
+                    "system. Ventra Technologies explains retrieval augmented generation as searching the organized "
+                    "knowledge base, extracting the relevant policy, and feeding it to the model before the answer. "
+                    "Its next layer uses APIs to retrieve live tracking information, with explicit instructions "
+                    "against invented refunds, allergy guesses, or exposed customer information "
+                    "[b5pi4BcdrKk @ 00:02:09]. Zendesk demonstrates the action layer through a gift return without "
+                    "a receipt: gather details, locate the order, confirm store credit, offer alternatives, process "
+                    "the exchange, issue a return label, and update the order system "
+                    "[mnFYeyoS2r8 @ 00:01:14]. Its separate explanation describes understanding intent and history, "
+                    "finding information, taking action, handing off with context, and learning from outcomes "
+                    "[vxbipxTJGgw @ 00:01:10]. AIWealthPath specifies a smaller business's escape route: every "
+                    "automated reply offers a person, and two unsuccessful attempts trigger an immediate handover "
+                    "with the entire conversation attached [JKmSoDIpfdI @ 00:03:16]. The shared operating pattern "
+                    "therefore includes both completed tasks and useful transfers. Customers should not repeat "
+                    "their story after escalation, while human staff handle the sensitive conversations that "
+                    "Ventra reserves for them. The business supplies policies and workflow connections; the agent "
+                    "uses those resources to answer, act, or transfer."
                 ),
                 (
-                    "Implement intake as a small Python HTTP service behind a "
-                    "managed TLS endpoint. Verify the provider's webhook signature "
-                    "against raw request bytes with hmac.compare_digest, validate "
-                    "timestamps, and reject replayed event identifiers. A successful "
-                    "response means durable receipt, not completed business work: "
-                    "persist the event and an outbox record atomically, then let "
-                    "workers deliver outbox messages to Amazon SQS. Use a unique "
-                    "constraint on tenant, source, and event identifier to collapse "
-                    "duplicates. Validate JSON field types, payload size, allowed "
-                    "destinations, and client entitlements before any model call. "
-                    "The LLM receives only the minimum necessary fields and returns "
-                    "a typed proposal with evidence references; deterministic "
-                    "Python validates the proposal before a separate executor "
-                    "considers side effects. Customer text is data, never authority "
-                    "to expand tool access. Keep secrets outside prompts and "
-                    "retrieve them through scoped service identities. Attach "
-                    "tenant identity at ingestion and enforce it again when "
-                    "reading evidence, writing outputs, and opening review queues. "
-                    "A dedicated client pause switch must stop new external "
-                    "actions without destroying queued evidence. This separation "
-                    "lets operators repair a connector without asking the model "
-                    "to improvise a recovery procedure inside a live account."
+                    "The agency offer is an operating outcome that the owner recognizes. Travis Wardrop pitches "
+                    "missed-call recovery rather than an abstract AI installation: if one recovered call becomes "
+                    "a customer worth a few hundred dollars, the owner has a straightforward reason to consider "
+                    "a monthly fee [CDVbVmBQVyc @ 00:05:19]. Sohaib uses the messaging equivalent, selling answered "
+                    "messages and booked appointments instead of the model behind them. The offer combines a "
+                    "setup charge, recurring operation, and a margin on replies; choosing one niche allows the "
+                    "agency to reuse an agent across similar clients [lvzJJWDX0ec @ 00:00:50]. Ventra Technologies "
+                    "defines the product as recovered human time and operational efficiency, with employees "
+                    "redirected toward sales, consultative support, and relationships rather than typing identical "
+                    "answers [b5pi4BcdrKk @ 00:04:03]. Simply Contact supplies a different delivery model: "
+                    "outsourced human agents combined with voicebots, chatbots, routing, translations, quality "
+                    "assurance, and omnichannel support, priced to project scope and support volume "
+                    "[DcDfJRzuZNI @ 00:00:19]. The common business objective is not restricted to a standalone "
+                    "widget. Wardrop sells a backup for unanswered telephone calls, Sohaib sells a branded "
+                    "front desk across messaging channels, Ventra sells integration work, and Simply Contact "
+                    "combines automation with a staffed support operation. Each describes reducing repetitive "
+                    "handling while keeping useful human involvement."
                 ),
             ],
             "table": {
-                "caption": "Six Control Surfaces for a Reusable Python and Webhook Delivery System",
-                "headers": [
-                    "Workflow surface and accountable owner",
-                    "Automated execution and required evidence",
-                    "Human intervention and release condition",
-                    "Failure containment and recovery behavior",
-                ],
+                "caption": "Shared operating foundations and the business work they support",
+                "headers": ["Foundation", "Practitioner operating instruction", "Expert Source"],
                 "rows": [
                     [
-                        "Operations lead collects the signed scope and system inventory.",
-                        "Intake validates authorized resources against the client's configured allowlist.",
-                        "Delivery lead resolves missing permissions before enabling any production connection.",
-                        "Incomplete authorization keeps the project in isolated fixture testing.",
+                        "Begin with repeated customer questions rather than an empty agent.",
+                        "Audit existing messages and identify repetitive work before configuring the support setup.",
+                        "Ventra Technologies ([b5pi4BcdrKk @ 00:03:29])",
                     ],
                     [
-                        "Integration contractor maintains webhook verification and durable event receipt.",
-                        "Signature checks bind raw payload bytes to the expected sender.",
-                        "Engineer investigates repeated signature failures using sanitized event metadata.",
-                        "Rejected events receive no downstream execution or credential access.",
+                        "Write business answers once with the actual operating details.",
+                        "Include delivery times, delivery costs, refund rules, prices, hours, and contact details.",
+                        "AIWealthPath ([JKmSoDIpfdI @ 00:01:04])",
                     ],
                     [
-                        "Delivery lead maintains tenant isolation throughout the processing pipeline.",
-                        "Every evidence read and output write checks tenant membership.",
-                        "Reviewer tests cross-tenant access attempts before approving the integration.",
-                        "Isolation failures disable affected connectors and preserve investigation records.",
+                        "Create the knowledge resources before building the customer-facing agent.",
+                        "Add product and business articles to Zendesk Knowledge and activate the help center.",
+                        "Stewart Gauld ([nMMWXxBsH2o @ 00:02:18])",
                     ],
                     [
-                        "Test contractor maintains acceptance fixtures and versioned model evaluations.",
-                        "Typed output validation checks required evidence and allowed field values.",
-                        "Domain reviewer resolves consequential ambiguities before external execution begins.",
-                        "Invalid proposals enter a review queue without touching destination systems.",
+                        "Connect operational systems when answering alone does not finish work.",
+                        "Zendesk's gift-return example locates an order and processes an exchange with backend updates.",
+                        "Zendesk ([mnFYeyoS2r8 @ 00:01:14])",
                     ],
                     [
-                        "Operations lead assigns exception ownership and business response deadlines.",
-                        "Queue metrics expose aging work by client and failure category.",
-                        "Account owner agrees revised timing when dependencies remain unavailable.",
-                        "Client pause controls stop side effects while retaining queued evidence.",
+                        "Make human escalation carry the conversation rather than restart it.",
+                        "After two unsuccessful answers, transfer immediately with the whole conversation attached.",
+                        "AIWealthPath ([JKmSoDIpfdI @ 00:03:16])",
                     ],
                     [
-                        "Delivery lead maintains the labor baseline and monthly measurement definitions.",
-                        "Task telemetry records reviewer effort alongside completed automation volumes.",
-                        "Client confirms comparable cohorts before savings claims enter marketing.",
-                        "Disputed measurements revert to documented observations rather than projected benefits.",
+                        "Sell the owner's desired result instead of the underlying model.",
+                        "Sohaib pitches messages answered and calls booked so leads do not wait until morning.",
+                        "Sohaib ([lvzJJWDX0ec @ 00:08:20])",
                     ],
                 ],
             },
-            "sop_steps": [
-                {
-                    "step": 1,
-                    "title": "Bind scope to authorized resources",
-                    "action": "Record client-approved systems, fields, identities, and permitted actions.",
-                    "detail": "Create separate fixture and production configurations; issue no production credential before the resource owner authorizes access.",
-                },
-                {
-                    "step": 2,
-                    "title": "Capture the manual baseline",
-                    "action": "Time representative research, qualification, fulfillment, and distribution tasks.",
-                    "detail": "Store task counts, handling minutes, error categories, and review effort so later automation percentages use a stable denominator.",
-                },
-                {
-                    "step": 3,
-                    "title": "Run deterministic and model evaluations",
-                    "action": "Replay normal, adversarial, duplicate, and dependency-failure fixtures.",
-                    "detail": "Require evidence-linked outputs, tenant isolation, bounded tool permissions, and explicit review routing for consequential actions.",
-                },
-                {
-                    "step": 4,
-                    "title": "Release a reversible production slice",
-                    "action": "Enable one client workflow with bounded volume and active monitoring.",
-                    "detail": "Check destination outcomes against receipts, rehearse the pause switch, and expand only after the accountable operator reviews observed results.",
-                },
-            ],
         },
         {
-            "heading": "2. Productize marketplace intelligence without manufacturing enforcement claims",
-            "epistemic_status": "illustrative_model",
+            "id": "street-mechanics",
+            "title": "Exact Street Mechanics, Tools & Numbers",
             "paragraphs": [
                 (
-                    "Use amazon_asin_hijack_brand_protection_trigger as a narrowly "
-                    "defined intelligence-and-case-preparation service, not an "
-                    "automatic accusation engine. Monitor Amazon, Walmart, and "
-                    "eBay offers through authorized marketplace APIs, licensed "
-                    "feeds, or expressly permitted collection methods. Buy Box "
-                    "and comparable winning-offer data availability varies by "
-                    "marketplace and account permission; unsupported fields must "
-                    "remain outside the contracted coverage. Capture product "
-                    "identifier, seller identity as represented by the platform, "
-                    "offer price, shipping charge, observation time, source "
-                    "reference, and collection method. Normalize comparable "
-                    "pack sizes before flagging undercutting. For 1,000 products "
-                    "observed four times daily across three marketplaces, the "
-                    "planning ceiling is 12,000 observations daily and 360,000 "
-                    "in a thirty-day month. At an illustrative licensed-feed "
-                    "cost of $0.002 per observation, acquisition costs $720 "
-                    "monthly before storage, review, and support. Confirm actual "
-                    "provider pricing and permitted refresh frequency before "
-                    "quoting. Deduplicate repeated offers into seller-product "
-                    "episodes rather than billing the reviewer for identical "
-                    "alerts. An observed lower price establishes a monitoring "
-                    "event; it does not establish counterfeiting, lost sales, "
-                    "or a legally actionable breach. Preserve that distinction "
-                    "in both the database schema and the customer-facing dossier."
+                    "Wardrop's voice build starts with Create Agent and Create Custom Agent, then a business name, "
+                    "a selected voice, and the opening message. Under agent goals, collect the caller's name, "
+                    "email, and inquiry; for the landscaping example, also collect the project address. Wardrop "
+                    "says a dentist would not necessarily need that address during the call "
+                    "[CDVbVmBQVyc @ 00:06:26]. Buy a backup number, which Wardrop prices at one dollar, and "
+                    "forward unanswered calls to it instead of changing the number already displayed on the "
+                    "business's website, Google listing, or truck. Create a knowledge base, choose Add Source "
+                    "and Web Crawler, paste the website, and extract its information. Add FAQs separately when "
+                    "the owner has answers or scripts missing from the site "
+                    "[CDVbVmBQVyc @ 00:07:57]. The final step is a real test call before deployment. "
+                    "AIWealthPath's written-support build follows a similarly narrow sequence: launch the five "
+                    "most common fixed-answer questions, test them in customers' own wording, and only then "
+                    "add the next five [JKmSoDIpfdI @ 00:02:09]. Sohaib demonstrates an appointment-oriented "
+                    "test by asking about a kitchen remodel with a $25,000 budget and requesting a designer "
+                    "call; the agent offers a design consultation instead of inventing a project price "
+                    "[lvzJJWDX0ec @ 00:02:57]. These are working demonstrations of collection, retrieval, and "
+                    "booking rather than a broad feature pitch."
                 ),
                 (
-                    "Build each dossier from evidence rather than persuasive "
-                    "model narration. Python joins observations to the client's "
-                    "authorized reseller roster, written distribution terms, "
-                    "lot records, and documented warranty conditions. The LLM "
-                    "summarizes the timeline and identifies missing evidence "
-                    "without deciding that a seller is unlawful. A human "
-                    "checks identity matching, product equivalence, policy "
-                    "applicability, and the proposed next action. A price "
-                    "difference of $12 across 200 offers indicates a $2,400 "
-                    "price-gap exposure calculation only if each offer "
-                    "represents one comparable unit; it is not realized "
-                    "revenue loss. Actual loss analysis needs transaction "
-                    "counts, attribution assumptions, and counterfactual "
-                    "evidence. Structure the lawful fallback around unilateral "
-                    "MAP policies where appropriate, documented warranty or "
-                    "packaging material differences, and supply-chain lot "
-                    "serialization. Under 15 U.S.C. 1, avoid facilitating "
-                    "agreements among competing resellers about prices, and "
-                    "evaluate applicable state restrictions separately. "
-                    "Trademark analysis under 15 U.S.C. 1114 and 1125 "
-                    "requires facts supporting the asserted claim; an "
-                    "unauthorized reseller label alone is insufficient. "
-                    "Never manufacture IP complaints. Route ambiguous cases "
-                    "to the brand's designated decision maker, suspend "
-                    "unsupported allegations, and retain the evidence "
-                    "supporting any authorized communication."
+                    "Gauld's Zendesk sequence makes the publishing work explicit. After adding knowledge resources, "
+                    "activate the help center through its general settings; then open AI Agents and select "
+                    "messaging rather than the separate email and web-form route. Create the agent, name it, "
+                    "choose its tone and brand, and test it before publication "
+                    "[nMMWXxBsH2o @ 00:05:09]. Advanced settings cover the avatar, persona, reply length, language, "
+                    "and connected channels. Under Behavior, add the greeting and the option to speak with a "
+                    "person when the answer is unknown. Gauld then adds channels such as Facebook Messenger, "
+                    "WhatsApp, and Instagram Direct, returns to the agent's brand-and-channels settings, and "
+                    "connects them. For the website, edit the messaging channel, copy the widget code, add it "
+                    "to the site, and enable automatic embedding in the help center "
+                    "[nMMWXxBsH2o @ 00:08:09]. Zendesk distinguishes the initial help-center connection from "
+                    "advanced actions, which use drag-and-drop conversation flows and selected backend systems "
+                    "[mnFYeyoS2r8 @ 00:02:09]. AIWealthPath adds the operating rhythm after launch: tag messages "
+                    "as urgent, refund, order problem, or ready to buy, putting urgent requests and buyers "
+                    "at the top of the queue [JKmSoDIpfdI @ 00:02:41]. This gives the owner both automated "
+                    "routine responses and a prioritized list of conversations needing attention."
                 ),
                 (
-                    "Package the commercial offer around monitoring coverage, "
-                    "review capacity, and response preparation. The mapped play's "
-                    "$2,500–$7,500 monthly enforcement-retainer range becomes an "
-                    "agency implementation and managed-support offer only when "
-                    "the contract specifies what the agency actually performs. "
-                    "At $5,000 monthly, one client produces $60,000 annual "
-                    "agency revenue; five full-year clients produce $300,000. "
-                    "That is the Base scenario's retainer component, not "
-                    "additional revenue layered over it. For an illustrative "
-                    "account, combine $720 data acquisition, eight reviewer "
-                    "hours at $60 for $480, and $300 of hosting and support "
-                    "allocation: $1,500 direct monthly cost leaves $3,500 "
-                    "before sales, management, and other shared expenses. "
-                    "Do not call that contribution owner profit. Create "
-                    "distribution through permissioned, redacted before-and-after "
-                    "dossiers, agency partnerships, and technical pages "
-                    "explaining evidence requirements for specific marketplaces. "
-                    "A referral request belongs after the client accepts a "
-                    "useful case outcome, not after every alert. Offer a "
-                    "bounded diagnostic using the prospect's supplied product "
-                    "list, then convert repeatable monitoring needs into "
-                    "a fixed-scope sprint. If source access disappears, "
-                    "reduce coverage explicitly, credit no invented observations, "
-                    "and offer client-supplied exports as the operational "
-                    "fallback until authorized collection resumes."
+                    "Sohaib's DM Champ agency build places each client in a separate account under the agency "
+                    "dashboard, with its own agents, contacts, and channels funded through a shared credit pool. "
+                    "White labeling adds the agency's domain, logo, colors, app name, and branded login experience; "
+                    "Sohaib says the platform supports up to three brands "
+                    "[lvzJJWDX0ec @ 00:03:31]. Manual credit mode leaves invoicing with the agency. Reselling "
+                    "mode uses the agency's Stripe or PayPal checkout, with example plans of 1,000 credits for "
+                    "$29 and 5,000 credits for $99. Plans also determine channels, agent counts, and team seats. "
+                    "Sohaib illustrates credit resale with 150 credits sold for $25 against a $15 cost, "
+                    "leaving $10, and separately describes charging half a credit for a reply that costs "
+                    "the agency a quarter credit [lvzJJWDX0ec @ 00:05:28]. Save the working agent as a snapshot, "
+                    "make it the default, and new accounts receive it paused until channels are connected. "
+                    "Wardrop's alternative is reselling prebuilt software under the agency's branding for "
+                    "$300–$500 monthly per client, with no software-company commission split "
+                    "[CDVbVmBQVyc @ 00:01:47]. Rocket Research frames the software purchasing decision around "
+                    "team size and AI conversation volume, contrasting fixed monthly pricing with seats "
+                    "plus usage [swIGkbLXEdM @ 00:02:32]."
                 ),
             ],
             "table": {
-                "caption": "Marketplace Evidence, Enforcement Boundaries, and Retainer Economics",
-                "headers": [
-                    "Operational signal and collection boundary",
-                    "Evidence transformation and concrete unit math",
-                    "Required review before consequential action",
-                    "Fallback when evidence or access fails",
-                ],
+                "caption": "Quoted commercial mechanics: keep the plan and its meter together",
+                "headers": ["Offer or platform", "Exact quoted commercial mechanic", "Expert Source"],
                 "rows": [
                     [
-                        "Amazon offer observations require permitted account access or licensed data.",
-                        "One thousand products across three marketplaces yield twelve thousand daily observations.",
-                        "Reviewer confirms that compared prices represent equivalent quantities and conditions.",
-                        "Unavailable marketplace coverage shifts to explicitly scoped client export processing.",
+                        "Wardrop's branded local-business automation offer uses a recurring client fee.",
+                        "The stated selling range is $300–$500 monthly per client for software-fulfilled AI solutions.",
+                        "Travis Wardrop ([CDVbVmBQVyc @ 00:02:04])",
                     ],
                     [
-                        "Walmart offer changes enter the same normalized product evidence model.",
-                        "Shipping charges and pack sizes remain separate auditable comparison fields.",
-                        "Reviewer checks seller matching before connecting observations to reseller records.",
-                        "Ambiguous seller identities stay unresolved internally without publishing an accusation.",
+                        "DM Champ's entry agency plan includes accounts and shared credits.",
+                        "Sohaib quotes $297 monthly with 1,000 credits and ten client accounts included.",
+                        "Sohaib ([lvzJJWDX0ec @ 00:06:50])",
                     ],
                     [
-                        "eBay listings require condition distinctions before entering comparable offer groups.",
-                        "Used inventory and bundles receive separate cohorts from new units.",
-                        "Domain specialist verifies category assumptions against the client's actual merchandise.",
-                        "Noncomparable listings leave the enforcement queue but retain source evidence.",
+                        "DM Champ's larger agency option changes account expansion economics.",
+                        "Agency Unlimited is $497 monthly with 2,500 credits; extra entry-plan clients cost $27 monthly.",
+                        "Sohaib ([lvzJJWDX0ec @ 00:07:10])",
                     ],
                     [
-                        "Repeated seller-product observations collapse into one reviewable evidence episode.",
-                        "Three hundred sixty thousand observations cost seven hundred twenty dollars illustratively.",
-                        "Account owner checks provider pricing and permitted collection frequency before quoting.",
-                        "Feed interruption triggers coverage notices rather than fabricated continuity claims.",
+                        "Intercom Essential seats and Fin outcomes are separate billed components.",
+                        "AI Tools for Business quotes $29 yearly-billed seats plus $0.99 per successful Fin outcome.",
+                        "AI Tools for Business ([T6Ij8zqR4Bo @ 00:01:13])",
                     ],
                     [
-                        "MAP alerts identify potential policy issues rather than automatic infringement.",
-                        "Twelve dollars across two hundred comparable units means price-gap exposure.",
-                        "Brand representative reviews applicable policy and substantiated material differences first.",
-                        "Unsupported allegations stop; lot tracing supports a factual supply-chain investigation.",
+                        "Tidio Starter and ongoing Lyro usage are separate purchased components.",
+                        "AI Tools for Business quotes approximately $68 combined: $29 Starter plus $39 Lyro.",
+                        "AI Tools for Business ([T6Ij8zqR4Bo @ 00:04:33])",
                     ],
                     [
-                        "Five full-year retainers at five thousand dollars form Base support revenue.",
-                        "Each account's fifteen hundred direct monthly cost leaves contribution before overhead.",
-                        "Finance owner reconciles shared costs before describing annual owner profit.",
-                        "Overloaded review capacity triggers scoped changes rather than unlimited enforcement promises.",
+                        "Corby's quoted flat-rate alternative removes the per-resolution charging structure.",
+                        "Rocket Research quotes $99 monthly with unlimited AI conversations, unlimited teammates, and no resolution fees.",
+                        "Rocket Research ([swIGkbLXEdM @ 00:00:19])",
                     ],
                 ],
             },
             "callout": {
                 "kind": "INSIDER PRO-TIPS",
-                "title": "Sell the evidence system, not the alert flood",
-                "body": "The strongest retainer preserves provenance, removes duplicate work, and makes the brand's next decision easier.",
+                "title": "Build the smallest working service, then make delivery repeatable",
+                "body": "These moves come directly from the operators' setup, testing, and client-delivery routines.",
                 "items": [
-                    "Fingerprint seller-product-price episodes so repeated observations update one case instead of generating hundreds of billable distractions.",
-                    "Keep source timestamps and observation hashes beside each generated sentence; reviewers should open the supporting record in one click.",
-                    "Separate observed price gaps, estimated exposure, and verified transactions into different fields so sales copy cannot silently merge them.",
-                    "Sell a documented source-outage mode using client exports before signing the retainer, including reduced refresh frequency and review capacity.",
+                    "Keep the local business's existing public phone number; forward unanswered calls to the new AI backup number instead. [Travis Wardrop — CDVbVmBQVyc @ 00:07:12]",
+                    "Use five fixed-answer questions first, test them in customer wording, and expand only after those answers work correctly. [AIWealthPath — JKmSoDIpfdI @ 00:02:09]",
+                    "Save the perfected niche agent as a default snapshot; new client accounts receive it paused until their channels are connected. [Sohaib — lvzJJWDX0ec @ 00:06:05]",
+                    "Use the client's website to generate a demo link so they can try the assistant on their own site without installing anything. [Sohaib — lvzJJWDX0ec @ 00:06:36]",
+                ],
+            },
+            "sop_steps": [
+                {
+                    "step": 1,
+                    "title": "Audit the repeated workload",
+                    "action": "Collect recurring questions and identify the routine conversations to automate.",
+                    "detail": "Analyze existing customer messages, then structure the company information that the support setup will need. [Ventra Technologies — b5pi4BcdrKk @ 00:03:29]",
+                },
+                {
+                    "step": 2,
+                    "title": "Build the knowledge and narrow the launch",
+                    "action": "Write complete answers and configure the first five fixed-answer questions.",
+                    "detail": "Test each question as a customer would ask it, checking that the reply is correct, friendly, and short before adding the next five. [AIWealthPath — JKmSoDIpfdI @ 00:02:09]",
+                },
+                {
+                    "step": 3,
+                    "title": "Test the agent and its human route",
+                    "action": "Configure behavior, add the person-contact option, and test before publishing.",
+                    "detail": "In Zendesk, add the option to talk to a real person for an unknown question, complete behavior settings, and test before selecting Publish AI Agent. [Stewart Gauld — nMMWXxBsH2o @ 00:06:41]",
+                },
+                {
+                    "step": 4,
+                    "title": "Review real support every week",
+                    "action": "Track first replies, autonomous answers, and mistakes; repair the knowledge document.",
+                    "detail": "Spend twenty minutes weekly reviewing the three measures, then fix the top three incorrect answers and test those questions again. [AIWealthPath — JKmSoDIpfdI @ 00:03:33]",
+                },
+            ],
+        },
+        {
+            "id": "disagreements-and-alternatives",
+            "title": "Where Practitioners Disagree & Alternative Playbooks",
+            "paragraphs": [
+                (
+                    "Zendesk and Intercom split the reviewers along workflow lines. Jake's Tech Lab gives Zendesk "
+                    "the advantage in ticketing, reporting, multichannel messaging, and security controls, while "
+                    "Intercom wins its comparison on AI, entry pricing, and CRM-oriented sales work "
+                    "[vSmuuzicQUU @ 00:04:09]. Jake describes Zendesk's deep reporting and larger integration "
+                    "catalog against Intercom's conversational analytics and chat-first engagement. SparrowDesk "
+                    "draws the same distinction as cases versus conversations: Zendesk emphasizes queues, "
+                    "service-level workflows, and complex escalations, while Intercom emphasizes fast messaging, "
+                    "product tours, and proactive nudges [db2s9r04icM @ 00:00:14]. Setup speed is where the "
+                    "accounts diverge. Zendesk says an agent can begin with a help-center connection and brand "
+                    "personality, then take on advanced actions through conversation flows "
+                    "[mnFYeyoS2r8 @ 00:01:50]. Daniel Davidson describes Zendesk implementations taking weeks "
+                    "or months when the business needs operational depth, multiple departments, custom databases, "
+                    "and extensive routing [GYTt2lhl7Ms @ 00:06:52]. The difference remains visible in the "
+                    "jobs each speaker describes: a connected knowledge agent on one side, and a complex "
+                    "support operation on the other. SparrowDesk favors Intercom for quick configuration "
+                    "and Zendesk for control with ongoing tuning. Jake's final recommendation is likewise "
+                    "workflow-specific: ticket-centered teams get Zendesk, while chat-first support and "
+                    "lead-nurturing teams get Intercom."
+                ),
+                (
+                    "The small-store rankings disagree even when the reviewers like the same answers. AI Tool "
+                    "Lab gives Intercom Fin the best answer quality in its four-message test: policy-following "
+                    "refund handling, actual tracking information, and a calm refusal of the fabricated-order "
+                    "discount demand. It still ranks Fin third because of billing, while Tidio Lyro wins "
+                    "the small-store comparison [9wewuc4s038 @ 00:03:18]. Daniel Davidson favors SparrowDesk "
+                    "for the balance of setup speed, autonomous support, copilot assistance, and workflow "
+                    "usability; for direct storefront control, Davidson points to Gorgias "
+                    "[GYTt2lhl7Ms @ 00:09:11]. AI Tool Lab places Gorgias fourth despite its fastest order "
+                    "answer, because an automated interaction also consumes a helpdesk ticket allowance "
+                    "[9wewuc4s038 @ 00:02:40]. AI Tools for Business divides its recommendations into Tidio "
+                    "for a free small-store start, Intercom for buyers willing to pay per outcome, and "
+                    "Zendesk for larger-scale suite requirements rather than one- or two-person teams "
+                    "[T6Ij8zqR4Bo @ 00:05:53]. These are different buying priorities, not a shared winner. "
+                    "One comparison rewards the smallest practical starting bill, another rewards an integrated "
+                    "agent-and-copilot workflow, and another rewards direct order operations. Davidson's Gorgias "
+                    "recommendation explicitly keeps ticket-volume costs in view, while AI Tool Lab makes "
+                    "those same costs the reason to rank it lower."
+                ),
+                (
+                    "The pricing accounts contain disagreements that should remain attached to their speakers. "
+                    "SparrowDesk calls Zendesk's per-agent pricing predictable and contrasts it with Intercom's "
+                    "seat-plus-usage growth [db2s9r04icM @ 00:01:02]. AI Tools for Business instead describes "
+                    "Zendesk's seat charge, small included AI allowance, and roughly $1.50–$2 automated-resolution "
+                    "overage; it also says the $19 Support Team tier lacks live chat and AI agents "
+                    "[T6Ij8zqR4Bo @ 00:02:32]. Rocket Research says AI agents are included in suite and support "
+                    "plans, quotes the $19 annual starting point, and separately identifies usage and Copilot "
+                    "charges [swIGkbLXEdM @ 00:01:10]. Those statements do not give the same account of "
+                    "entry-plan eligibility. Beyond that comparison, Toolstack recommends choosing around an "
+                    "existing ecosystem: HubSpot Breeze connects to CRM history but makes less sense as a "
+                    "reason to enter HubSpot solely for support [aNlthYD5fPY @ 00:03:03]. Toolstack similarly "
+                    "positions Freshdesk Freddy around triage and response assistance, Salesforce Einstein "
+                    "around enterprise CRM operations, and Zoho Desk Zia around the Zoho stack. The alternative "
+                    "playbook is therefore not always migration to a ranking winner. Toolstack repeatedly "
+                    "points to the support tools already connected to the company's customer information, "
+                    "while the pricing reviewers disagree over which headline plan actually delivers AI."
+                ),
+            ],
+            "table": {
+                "caption": "Contrasts that change the platform decision without forcing a universal winner",
+                "headers": ["Decision or contrast", "Side-by-side practitioner positions", "Expert Source"],
+                "rows": [
+                    [
+                        "Choose structured case handling or conversational engagement as the primary workflow.",
+                        "Jake favors Zendesk's ticketing depth; SparrowDesk contrasts its case structure with Intercom's messaging-first experience.",
+                        "Jake's Tech Lab ([vSmuuzicQUU @ 00:00:49]); SparrowDesk ([db2s9r04icM @ 00:00:14])",
+                    ],
+                    [
+                        "Separate an initial knowledge agent from a complex support implementation.",
+                        "Zendesk describes quick help-center setup; Davidson describes weeks or months for heavier Zendesk operations.",
+                        "Zendesk ([mnFYeyoS2r8 @ 00:01:50]); Daniel Davidson ([GYTt2lhl7Ms @ 00:06:52])",
+                    ],
+                    [
+                        "Distinguish the strongest tested answers from the preferred small-store bill.",
+                        "AI Tool Lab calls Fin the best answering bot but ranks Tidio first for small-store economics.",
+                        "AI Tool Lab ([9wewuc4s038 @ 00:03:18]); AI Tool Lab ([9wewuc4s038 @ 00:06:30])",
+                    ],
+                    [
+                        "Gorgias gains storefront control while retaining its ticket-volume cost exposure.",
+                        "Davidson recommends direct storefront control; AI Tool Lab penalizes the simultaneous AI and ticket meters.",
+                        "Daniel Davidson ([GYTt2lhl7Ms @ 00:09:11]); AI Tool Lab ([9wewuc4s038 @ 00:02:40])",
+                    ],
+                    [
+                        "Zendesk's predictable-seat description conflicts with the more detailed usage-billing account.",
+                        "SparrowDesk emphasizes predictable per-agent pricing; AI Tools for Business adds allowances and automated-resolution overages.",
+                        "SparrowDesk ([db2s9r04icM @ 00:01:02]); AI Tools for Business ([T6Ij8zqR4Bo @ 00:02:53])",
+                    ],
+                    [
+                        "Existing CRM integration supplies an alternative to switching for a standalone bot.",
+                        "Toolstack favors Breeze for existing HubSpot users; Simply Contact offers human-plus-AI outsourcing instead of software alone.",
+                        "Toolstack ([aNlthYD5fPY @ 00:03:03]); Simply Contact ([DcDfJRzuZNI @ 00:00:19])",
+                    ],
                 ],
             },
         },
         {
-            "heading": "3. Bound payment orchestration to approved merchants, routes, and responsibilities",
-            "epistemic_status": "operating_framework",
+            "id": "failure-modes-and-economics",
+            "title": "Firsthand Failure Modes, Traps & Economics Checks",
             "paragraphs": [
                 (
-                    "Treat high_risk_payfac_iso_mid_cascading_arbitrage as a demanding "
-                    "integration pattern, not permission to bypass underwriting. "
-                    "Its wholesale ISO and orchestration concept spans 25–60 "
-                    "domestic and offshore acquiring banks and high-risk "
-                    "merchant categories, including telehealth GLP-1s or peptides, "
-                    "nutra subscriptions, sweepstakes gaming, high-ticket coaching, "
-                    "and AI companions. Those labels establish neither legality "
-                    "nor processor eligibility. A category rejected by one "
-                    "provider may be accepted only by another provider that "
-                    "knowingly approves the actual business, geography, "
-                    "products, fulfillment, and descriptor. The productized "
-                    "agency should sell implementation and monitoring to "
-                    "authorized payment operators unless it separately holds "
-                    "the contracts and responsibilities required for another "
-                    "role. Collect each acquirer's written merchant approval, "
-                    "permitted transaction types, retry rules, settlement "
-                    "currency, and designated incident contact. Maintain "
-                    "a route registry that workers can read but an LLM "
-                    "cannot modify. New merchant identifiers require verified "
-                    "ownership and approved routing configuration. Offshore "
-                    "connectivity does not remove geographic, sanctions, "
-                    "consumer-protection, or product restrictions. When an "
-                    "approval is absent, the implementation stops at a "
-                    "sandbox demonstration rather than sending live "
-                    "transactions through an unrelated merchant account."
+                    "Wardrop's live call exposes a useful boundary: when asked how soon someone can visit "
+                    "to quote the landscaping work, the agent says it does not have that information and "
+                    "will have a team member follow up. It collects the project details rather than booking "
+                    "an unsupported visit [CDVbVmBQVyc @ 00:09:47]. Davidson reports a different firsthand "
+                    "test with Fin: responses stayed grounded in linked sources, remained neutral, and did "
+                    "not fabricate guarantees outside the agent's scope; requests beyond its ability moved "
+                    "to a human after confirmation [GYTt2lhl7Ms @ 00:03:55]. The broader failure warnings "
+                    "come from Ventra Technologies, which describes raw models inventing return policies, "
+                    "prices, and delivery areas without internal business context "
+                    "[b5pi4BcdrKk @ 00:01:04]. AIWealthPath names the operating mistakes that keep creating "
+                    "those problems: hiding the phone number or email, promising unavailable delivery, leaving "
+                    "old prices and policies unchecked, and automating the apology to an upset customer "
+                    "[JKmSoDIpfdI @ 00:04:08]. The demonstrated calls and the warnings point to concrete "
+                    "checks: what happens when availability is missing, whether a request exceeds scope, "
+                    "and whether a person remains reachable. Wardrop's agent did not know the visit schedule; "
+                    "the test showed that limitation directly. AIWealthPath's weekly review keeps the "
+                    "knowledge document current instead of treating installation as the last operating task."
                 ),
                 (
-                    "Expose the economics without confusing client payment "
-                    "volume with agency revenue. On $1,000,000 monthly merchant "
-                    "volume, a simplified 2.10% wholesale cost is $21,000. "
-                    "Merchant pricing of 5.50% produces $55,000 in charges "
-                    "and a $34,000 gross spread; 8.90% produces $89,000 "
-                    "and a $68,000 gross spread. These are payment-operator "
-                    "figures before additional network charges, refunds, "
-                    "losses, operating expenses, and contractual allocations, "
-                    "not this agency's recognized implementation revenue. "
-                    "A 10% rolling reserve withholds $100,000 of that "
-                    "month's eligible volume under the assumed reserve "
-                    "basis. Reserve balances remain restricted merchant "
-                    "funds or associated settlement obligations according "
-                    "to the actual arrangement, never free agency income. "
-                    "The agency instead might invoice a $25,000 deployment "
-                    "and $5,000 monthly support, already counted within "
-                    "the chapter's canonical revenue mixes. Build a "
-                    "merchant-level settlement ledger that distinguishes "
-                    "captured principal, processor fees, refunds, reserves, "
-                    "releases, and actual agency invoices. Reconcile provider "
-                    "statements against transaction identifiers daily. An "
-                    "unexplained difference triggers investigation and "
-                    "client notification, not an automatic balancing entry "
-                    "that hides the discrepancy or inflates reported "
-                    "service revenue."
+                    "AI Tool Lab's four-message exercise tests a wrong-size refund, order tracking, a worn "
+                    "item returned after thirty-five days, and a demand for fifty percent off backed by "
+                    "a nonexistent order. Its scoring includes answer quality, setup effort, free-tier "
+                    "value, and what a solved problem actually costs "
+                    "[9wewuc4s038 @ 00:00:39]. The billing findings are sharper than the ranking: Fin can "
+                    "count twenty-four hours of customer silence as an assumed resolution; Lyro charges "
+                    "for conversations it joins even if the problem remains unresolved; Gorgias consumes "
+                    "both AI and ticket allowances; and Chatbase credits vary with model choice and actions "
+                    "[9wewuc4s038 @ 00:05:36]. AI Tools for Business separately distinguishes Tidio's recurring "
+                    "free-plan conversation allowance from the fifty free Lyro conversations, which it "
+                    "describes as a one-time lifetime grant [T6Ij8zqR4Bo @ 00:04:13]. AI Tool Lab also makes "
+                    "that one-time Lyro warning, despite later using monthly free-plan wording. Davidson "
+                    "adds another meter distinction: Freshdesk's included Freddy sessions count conversations "
+                    "the AI touched, not necessarily conversations it resolved "
+                    "[GYTt2lhl7Ms @ 00:05:07]. None of those labels should be silently substituted for "
+                    "another. The reviewers distinguish a seat, a ticket, a session, a conversation, a "
+                    "credit, and an outcome precisely because the reported charges follow different events."
                 ),
                 (
-                    "Make payment routing deterministic and bounded. Tokenize "
-                    "card details through the authorized gateway; the agency "
-                    "workflow stores tokens and minimal transaction metadata, "
-                    "not raw card data in prompts or general logs. A "
-                    "decline classifier follows processor guidance: hard "
-                    "declines stop, while eligible soft declines receive "
-                    "only explicitly permitted retries on approved routes. "
-                    "Cascading must never disguise the merchant, evade "
-                    "issuer decisions, or send duplicate authorizations "
-                    "after a timeout without checking transaction status. "
-                    "For this mapped offer, require a documented 10% "
-                    "rolling reserve arrangement before enabling live "
-                    "routing, and enforce the contracted release schedule. "
-                    "Configure Verifi RDR pre-dispute refunds with merchant "
-                    "authorization, financial thresholds, and reconciliation; "
-                    "refund automation does not erase dispute obligations. "
-                    "Use supported 3DS2 step-up authentication for designated "
-                    "high-risk BIN and transaction cohorts, alongside broader "
-                    "fraud signals, and maintain recognizable merchant "
-                    "descriptors. Humans handle merchant onboarding, route "
-                    "changes, exceptional refunds, and consequential risk "
-                    "decisions. For covered recurring consumer electronic "
-                    "fund transfers, implement authorization and copy "
-                    "requirements under 12 CFR 1005.10(b); for covered "
-                    "online negative-option offers, address 15 U.S.C. "
-                    "8403. Provider outages fall back to a pending "
-                    "state or controlled stop, never blind multi-bank retries."
+                    "Sohaib identifies four agency-specific money leaks. Trial credits leave the agency pool "
+                    "when the trial starts, so widely promoted trials should keep the allocation low. An "
+                    "underfunded pool can block a new buyer's signup without charging them. A reselling "
+                    "client's monthly allowance should be zero, or usage can continue draining the agency "
+                    "pool after the client's purchased credits run out. Features enabled manually can disappear "
+                    "at renewal unless included in the client's plan "
+                    "[lvzJJWDX0ec @ 00:07:48]. Sohaib also quotes $27 for each extra client above the entry "
+                    "plan and says the $497 Unlimited plan becomes cheaper past about seventeen clients "
+                    "[lvzJJWDX0ec @ 00:07:10]. Deployment effort is another stated bottleneck: Gauld calls "
+                    "Zendesk potentially complicated, recommends it especially for businesses already using "
+                    "the suite, and says Jot Form is the platform they personally use to build AI agents "
+                    "[nMMWXxBsH2o @ 00:09:07]. AI Tools for Business supplies the final operating check: "
+                    "run the free plan or trial for two weeks, track autonomous resolutions and cost per "
+                    "resolution, and keep the tool if it saves an hour daily "
+                    "[T6Ij8zqR4Bo @ 00:06:10]. These checks cover the recurring service after the sale: "
+                    "credit availability, renewal behavior, account expansion, deployment complexity, and "
+                    "whether the agent is actually removing work from the owner."
                 ),
             ],
             "table": {
-                "caption": "Authorized Payment Routing and Settlement Failure-Recovery Matrix",
-                "headers": [
-                    "Payment control and accountable operator",
-                    "Deterministic automation and financial treatment",
-                    "Human review and evidence requirement",
-                    "Safe recovery when execution becomes uncertain",
-                ],
+                "caption": "Observed test behavior and explicitly reported operational traps",
+                "headers": ["Failure mode or test boundary", "Practitioner finding and concrete check", "Expert Source"],
                 "rows": [
                     [
-                        "Payment operator supplies merchant-specific acquiring approvals before production configuration begins.",
-                        "Route registry binds merchant identifiers to approved products and geographies.",
-                        "Reviewer verifies actual business activity against each signed acquiring agreement.",
-                        "Missing approval leaves the connector restricted to sandbox test transactions.",
+                        "The landscaping agent did not know when someone could visit.",
+                        "During Wardrop's test, it acknowledged missing availability and promised team follow-up instead of giving a time.",
+                        "Travis Wardrop ([CDVbVmBQVyc @ 00:09:47])",
                     ],
                     [
-                        "Gateway returns transaction identifiers and processor-specific decline classifications to workers.",
-                        "Hard declines stop while permitted soft retries use bounded schedules.",
-                        "Payments specialist reviews ambiguous response mappings before enabling retry behavior.",
-                        "Timeout recovery queries existing transaction status before attempting another authorization.",
+                        "Fin's bill can treat customer silence as an assumed resolution.",
+                        "AI Tool Lab says twenty-four hours without a customer response can trigger the $0.99 outcome charge.",
+                        "AI Tool Lab ([9wewuc4s038 @ 00:03:57])",
                     ],
                     [
-                        "Merchant pricing and wholesale costs remain distinct from agency service invoices.",
-                        "Million-dollar volume yields thirty-four to sixty-eight thousand illustrative gross spread.",
-                        "Finance reviewer verifies actual fees and losses before reporting payment economics.",
-                        "Unreconciled settlement differences enter investigation without invented balancing revenue entries.",
+                        "A Lyro conversation can cost money without resolving the customer's problem.",
+                        "AI Tool Lab says paid Lyro usage bills conversations joined rather than only successful resolutions.",
+                        "AI Tool Lab ([9wewuc4s038 @ 00:06:49])",
                     ],
                     [
-                        "Contracted ten-percent rolling reserves receive their own settlement ledger accounts.",
-                        "One million eligible dollars creates one hundred thousand dollars withheld.",
-                        "Account owner confirms reserve basis and release timing with the processor.",
-                        "Missing reserve documentation blocks live routing for this configured offer.",
+                        "The free Lyro allocation does not replenish like the general plan allowance.",
+                        "AI Tools for Business distinguishes fifty monthly free-plan conversations from the one-time fifty-conversation Lyro grant.",
+                        "AI Tools for Business ([T6Ij8zqR4Bo @ 00:04:13])",
                     ],
                     [
-                        "Verifi RDR rules operate under explicit merchant refund authority and limits.",
-                        "Refund events reconcile against original transactions and subsequent settlement statements.",
-                        "Exceptional refunds and disputed eligibility receive named human case ownership.",
-                        "Provider outages queue reconciliation work without silently suppressing dispute notifications.",
+                        "Agency trials and depleted shared credits can consume money or stop sales.",
+                        "Sohaib says trial credits debit immediately and an insufficient agency pool blocks new buyer signups.",
+                        "Sohaib ([lvzJJWDX0ec @ 00:07:48])",
                     ],
                     [
-                        "Supported 3DS2 authentication and transparent descriptors support approved merchant operations.",
-                        "Risk cohorts trigger configured authentication without changing merchant identity information.",
-                        "Reviewer confirms customer authorization requirements for each applicable payment arrangement.",
-                        "Unsupported authentication paths stop or use the processor's documented alternative.",
+                        "Manual client settings can create continued usage or disappear at renewal.",
+                        "Set reselling allowance to zero and place needed features in the plan rather than manual overrides.",
+                        "Sohaib ([lvzJJWDX0ec @ 00:08:03])",
                     ],
                 ],
             },
             "callout": {
                 "kind": "OPERATOR GATE",
-                "title": "Verify four conditions before payment-side production traffic",
-                "body": "Each condition needs an accountable reviewer and retained evidence; a successful API response proves none of them.",
+                "title": "Check the escape route, the meter, and the agency pool",
+                "body": "Use the speakers' specific operating checks before treating the service as ready to keep running.",
                 "items": [
-                    "Match the actual merchant, products, geography, descriptor, and transaction types to explicit acquirer approvals and authorized routing credentials.",
-                    "Confirm the mapped offer's contracted 10% rolling reserve, reserve basis, release schedule, and separate settlement-ledger treatment.",
-                    "Replay timeout, duplicate, hard-decline, refund, and provider-outage fixtures; verify no blind cascading or duplicate financial side effects.",
-                    "Verify merchant-authorized Verifi RDR thresholds, supported 3DS2 policies, applicable recurring-payment authorization records, and human exception ownership.",
-                ],
-            },
-        },
-        {
-            "heading": "4. Compound distribution while controlling run cost, review load, and owner profit",
-            "epistemic_status": "illustrative_model",
-            "paragraphs": [
-                (
-                    "Price automation from accepted work, not token invoices "
-                    "alone. Assume one model-assisted run uses 2,000 input "
-                    "tokens priced at $2.40 per million and 400 output "
-                    "tokens priced at $8.00 per million. These illustrative "
-                    "rates produce $0.0048 input cost and $0.0032 output "
-                    "cost. Add $0.002 orchestration, $0.005 evidence retrieval, "
-                    "and $0.005 storage and telemetry for $0.02 machine "
-                    "cost per attempted run. At 10,000 runs, machine "
-                    "spend is $200. Reviewing 200 sampled runs for "
-                    "two minutes each at $60 hourly costs $400; "
-                    "handling 50 additional exception runs for six "
-                    "minutes each costs $300. With $300 allocated "
-                    "platform overhead, total cost is $1,200, or "
-                    "$0.12 per attempted run. If only 9,500 runs "
-                    "meet acceptance criteria, cost per accepted run "
-                    "is approximately $0.1263. These review volumes "
-                    "illustrate low-consequence work only; consequential "
-                    "outputs require their designated human review "
-                    "even if that changes the economics. Set tenant "
-                    "spend limits, maximum retries, evidence-size limits, "
-                    "and review-queue capacity before increasing traffic. "
-                    "A cheaper model that doubles exception handling "
-                    "can be more expensive than a stronger model "
-                    "with stable structured outputs."
-                ),
-                (
-                    "Connect distribution to verified delivery artifacts. Publish "
-                    "programmatic pages only when each page contains useful "
-                    "connector-specific material: supported fields, setup steps, "
-                    "measured failure modes, and a real acceptance checklist. "
-                    "Use Google Search Console to track qualified organic "
-                    "visits, not just indexed URLs. Offer an optional "
-                    "shareable, redacted workflow health report that clients "
-                    "can forward to a peer; obtain permission before "
-                    "publishing any client name, metric, or configuration. "
-                    "For outbound, combine licensed business-contact data "
-                    "with a relevant diagnostic and honor suppression "
-                    "lists under 15 U.S.C. 7704. Avoid fake personalization "
-                    "or unsupported savings claims, which create risk "
-                    "under 15 U.S.C. 45. A planning funnel of 1,000 "
-                    "carefully selected monthly contacts, 4% positive "
-                    "responses, 50% meeting conversion, 40% proposal "
-                    "conversion, and 25% close conversion produces "
-                    "two expected wins, not two booked contracts. "
-                    "Record cohort dates and actual conversion counts "
-                    "in HubSpot, then reconcile won deals to delivery "
-                    "capacity. With $4,000 monthly acquisition spending, "
-                    "two wins imply $2,000 cash acquisition cost "
-                    "per win before unallocated labor. Do not "
-                    "annualize this funnel into the canonical scenarios; "
-                    "pause campaigns when support queues or implementation "
-                    "backlogs exceed the team's service commitments."
-                ),
-                (
-                    "Reconcile the operating plan to the scorecard every "
-                    "month. Conservative revenue can comprise four $15,000 "
-                    "sprints plus two retainers billed for ten months "
-                    "at $2,000 monthly: $60,000 plus $40,000 equals "
-                    "$100,000. Its $80,000 total expense envelope leaves "
-                    "$20,000 owner net profit at 20%. Base uses "
-                    "ten $25,000 sprints and five twelve-month $5,000 "
-                    "retainers: $250,000 plus $300,000 equals $550,000; "
-                    "$385,000 total expenses leave $165,000 at 30.0%. "
-                    "Scaled uses sixteen $25,000 sprints and ten "
-                    "twelve-month $5,000 retainers: $400,000 plus $600,000 "
-                    "equals $1,000,000; $600,000 total expenses leave "
-                    "$400,000 at 40%. Conservative and Base retain "
-                    "2 FT + 3 C; Scaled uses 3 FT + "
-                    "4 C. These rosters are canonical staffing "
-                    "assumptions, not evidence that local full-year "
-                    "compensation fits every expense envelope; validate "
-                    "paid hours, owner compensation treatment, and "
-                    "contractor utilization before committing. Count "
-                    "marketplace and payment examples within these "
-                    "totals rather than adding them again. Release "
-                    "new workflow versions through replay tests, "
-                    "shadow execution, and bounded live cohorts. "
-                    "Roll back model and prompt versions together, "
-                    "reconcile destination side effects, and replay "
-                    "only jobs whose idempotency protections survive "
-                    "the incident."
-                ),
-            ],
-            "table": {
-                "caption": "Run Economics, Acquisition Measurement, and Canonical Annual Profit Reconciliation",
-                "headers": [
-                    "Operating measure and explicit planning basis",
-                    "Calculation with clearly bounded financial meaning",
-                    "Review responsibility and acceptance evidence",
-                    "Failure response that preserves operating discipline",
-                ],
-                "rows": [
-                    [
-                        "Ten thousand attempted runs use illustrative model and infrastructure pricing.",
-                        "Two hundred machine dollars plus labor and overhead total twelve hundred.",
-                        "Operations lead checks actual invoices and reviewer minutes against assumptions.",
-                        "Rising exceptions reduce throughput until fixture analysis identifies the cause.",
-                    ],
-                    [
-                        "Nine thousand five hundred runs satisfy the defined acceptance criteria.",
-                        "Twelve hundred total dollars produce approximately thirteen cents per accepted run.",
-                        "Delivery lead verifies acceptance outcomes independently from successful API responses.",
-                        "Rejected outputs remain outside delivered-volume claims and enter classified remediation.",
-                    ],
-                    [
-                        "One thousand selected contacts feed an illustrative monthly outbound cohort.",
-                        "Sequential conversion assumptions yield two expected wins before observed outcome adjustments.",
-                        "Growth owner reconciles responses and signed contracts using dated CRM records.",
-                        "Queue overload pauses new campaigns rather than creating unsupported delivery promises.",
-                    ],
-                    [
-                        "Conservative combines four implementation sprints with twenty monthly retainer invoices.",
-                        "One hundred thousand revenue less eighty thousand expenses leaves twenty thousand.",
-                        "Finance owner validates twenty-percent margin within the canonical five-person roster.",
-                        "Compensation mismatches require an explicit operating-plan revision before staffing commitments.",
-                    ],
-                    [
-                        "Base combines ten implementation sprints with sixty monthly retainer invoices.",
-                        "Five hundred fifty thousand revenue leaves one hundred sixty-five thousand profit.",
-                        "Finance owner verifies three hundred eighty-five thousand total annual expenses.",
-                        "Scope growth receives separately priced changes rather than hidden margin erosion.",
-                    ],
-                    [
-                        "Scaled combines sixteen implementation sprints with one hundred twenty retainer invoices.",
-                        "One million revenue less six hundred thousand expenses leaves four hundred thousand.",
-                        "Delivery owner validates forty-percent margin with three employees and four contractors.",
-                        "Unstable releases revert together with prompts while destination effects undergo reconciliation.",
-                    ],
+                    "Confirm that customers can request a person and that two unsuccessful AI attempts trigger a transfer with the conversation attached. [AIWealthPath — JKmSoDIpfdI @ 00:03:16]",
+                    "Separate recurring free-plan conversations from the one-time fifty-conversation Lyro grant before budgeting continued AI use. [AI Tools for Business — T6Ij8zqR4Bo @ 00:04:13]",
+                    "Keep trial credit allocations low and the agency pool funded so trials do not consume excessive credits and new buyers are not blocked. [Sohaib — lvzJJWDX0ec @ 00:07:48]",
+                    "Set reselling clients' monthly allowance to zero and include required features in their plan so usage and renewals behave as intended. [Sohaib — lvzJJWDX0ec @ 00:08:03]",
                 ],
             },
         },
     ],
-    "pull_quote": "Automate the repetition, preserve the evidence, and make every consequential action belong to an accountable human.",
+    "pull_quote": (
+        "“Customers do not hate AI support, they hate being stuck with no way out.” "
+        "— AIWealthPath (JKmSoDIpfdI @ 00:03:33)."
+    ),
     "diagram_id": "diag-02",
     "action_checklist": [
-        "Inventory client-authorized systems, credential owners, allowed fields, external destinations, and pause controls before enabling production intake.",
-        "Measure repetitive labor by task category, preserve a stable denominator, and report new review effort separately from automated hours.",
-        "Implement signed webhooks, durable receipt, tenant-bound idempotency, typed model outputs, and deterministic side-effect execution.",
-        "Launch marketplace monitoring with authorized sources, evidence-linked dossiers, lawful policy boundaries, and a documented source-outage fallback.",
-        "Restrict payment integrations to approved merchants and routes; test reserves, refunds, authentication, settlement reconciliation, and uncertain transaction recovery.",
-        "Reconcile accepted-run cost, acquisition cohorts, staffing capacity, and the exact $20,000, $165,000, and $400,000 annual owner-profit cases monthly.",
+        "List the ten questions that recur across the inbox, WhatsApp, and comments before selecting the first automation workload. [AIWealthPath — JKmSoDIpfdI @ 00:00:31]",
+        "Write the actual delivery costs, delivery times, return window, refund rule, prices, hours, and contact details into one help document. [AIWealthPath — JKmSoDIpfdI @ 00:01:04]",
+        "For a missed-call offer, retain the business's public number and route unanswered calls to the new AI backup number. [Travis Wardrop — CDVbVmBQVyc @ 00:07:12]",
+        "Test the customer-facing agent and configure a real-person option for unknown questions before publishing it. [Stewart Gauld — nMMWXxBsH2o @ 00:06:41]",
+        "Package the working niche agent as a default snapshot and connect each new client's channels while the copied agent remains paused. [Sohaib — lvzJJWDX0ec @ 00:06:05]",
+        "Run a two-week trial and track autonomous resolutions plus cost per resolution; apply the speaker's hour-per-day time-saving check. [AI Tools for Business — T6Ij8zqR4Bo @ 00:06:10]",
     ],
     "statutory_citations": [
         {
-            "title": "18 U.S.C. 1030 — Fraud and related activity in connection with computers",
-            "url": "https://www.law.cornell.edu/uscode/text/18/1030",
-            "relevance": "Document authorized client-system access, enforce resource boundaries, and stop connections when authorization ends.",
+            "title": "Travis Wardrop — How to Sell AI Automation to Local Businesses (Beginner Guide) [00:07:57]",
+            "url": "https://www.youtube.com/watch?v=CDVbVmBQVyc&t=477s",
+            "relevance": "Primary practitioner testimony on creating the voice agent's knowledge base from a business website and supplementing it with FAQs.",
         },
         {
-            "title": "15 U.S.C. 1 — Trusts and combinations in restraint of trade",
-            "url": "https://www.law.cornell.edu/uscode/text/15/1",
-            "relevance": "Keep marketplace monitoring from facilitating coordinated reseller pricing; evaluate unilateral policies and applicable state requirements separately.",
+            "title": "AIWealthPath — How to Automate Your Customer Support With AI in 2026 — Full Beginner Guide [00:03:16]",
+            "url": "https://www.youtube.com/watch?v=JKmSoDIpfdI&t=196s",
+            "relevance": "Primary practitioner testimony on immediate human access and escalation after two unsuccessful AI attempts.",
         },
         {
-            "title": "15 U.S.C. 1114 — Trademark infringement remedies",
-            "url": "https://www.law.cornell.edu/uscode/text/15/1114",
-            "relevance": "Require factual support and qualified review before preparing trademark-based enforcement communications.",
+            "title": "AI Tool Lab — I Tested 5 AI Customer Support Chatbots — Ranked Worst to Best (2026) [00:05:36]",
+            "url": "https://www.youtube.com/watch?v=9wewuc4s038&t=336s",
+            "relevance": "Primary practitioner testimony distinguishing assumed resolutions, joined conversations, tickets, and model-request billing.",
         },
         {
-            "title": "15 U.S.C. 1125 — False designations of origin and false descriptions",
-            "url": "https://www.law.cornell.edu/uscode/text/15/1125",
-            "relevance": "Distinguish substantiated misleading representations from mere reseller status or observed price differences.",
+            "title": "Sohaib — How to Build an AI Agency Business Model in 2026 [00:07:48]",
+            "url": "https://www.youtube.com/watch?v=lvzJJWDX0ec&t=468s",
+            "relevance": "Primary practitioner testimony on agency trial-credit costs, shared-pool availability, client allowances, and renewal behavior.",
+        },
+    ],
+    "source_citations": [
+        {
+            "source_type": "video_pro_tip",
+            "video_id": "CDVbVmBQVyc",
+            "title": "How to Sell AI Automation to Local Businesses (Beginner Guide)",
+            "channel": "Travis Wardrop",
+            "author": "Travis Wardrop",
+            "text": "We don't want them to have to change their phone number.",
+            "tip": "We don't want them to have to change their phone number.",
+            "timestamp": 416,
+            "timestamp_seconds": 416,
+            "timestamp_label": "[00:06:56]",
+            "url": "https://www.youtube.com/watch?v=CDVbVmBQVyc&t=416s",
+            "markdown": "[00:06:56](https://www.youtube.com/watch?v=CDVbVmBQVyc&t=416s)",
+            "epistemic_status": "attributed_practitioner_claim",
+            "relevance": "Practitioner testimony on retaining the local business's public telephone number while adding an AI backup.",
         },
         {
-            "title": "12 CFR 1005.10(b) — Written authorization for preauthorized transfers",
-            "url": "https://www.ecfr.gov/current/title-12/chapter-X/part-1005/section-1005.10",
-            "relevance": "For covered recurring consumer electronic fund transfers, implement signed or similarly authenticated authorization and provide the consumer a copy.",
+            "source_type": "video_pro_tip",
+            "video_id": "9wewuc4s038",
+            "title": "I Tested 5 AI Customer Support Chatbots — Ranked Worst to Best (2026)",
+            "channel": "AI Tool Lab",
+            "author": "AI Tool Lab",
+            "text": "Its 50 free AI conversations are a one-time batch, not a monthly refill, and paid conversations bill whether the bot solves it or not.",
+            "tip": "Its 50 free AI conversations are a one-time batch, not a monthly refill, and paid conversations bill whether the bot solves it or not.",
+            "timestamp": 373,
+            "timestamp_seconds": 373,
+            "timestamp_label": "[00:06:13]",
+            "url": "https://www.youtube.com/watch?v=9wewuc4s038&t=373s",
+            "markdown": "[00:06:13](https://www.youtube.com/watch?v=9wewuc4s038&t=373s)",
+            "epistemic_status": "attributed_practitioner_claim",
+            "relevance": "Practitioner testimony on the Lyro free allocation and the difference between conversations and successful resolutions.",
         },
         {
-            "title": "15 U.S.C. 8403 — Negative option marketing on the Internet",
-            "url": "https://www.law.cornell.edu/uscode/text/15/8403",
-            "relevance": "For covered online negative-option offers, support material-term disclosure, express informed agreement, and simple mechanisms to stop recurring charges.",
+            "source_type": "video_pro_tip",
+            "video_id": "vSmuuzicQUU",
+            "title": "Zendesk vs Intercom Comparison 2025 | Which Customer Support Platform is Best?",
+            "channel": "Jake's Tech Lab",
+            "author": "Jake's Tech Lab",
+            "text": "Intercom is super ideal if you want that chat-first AI-powered experience or if your strategy is all about sales and nurturing leads.",
+            "tip": "Intercom is super ideal if you want that chat-first AI-powered experience or if your strategy is all about sales and nurturing leads.",
+            "timestamp": 284,
+            "timestamp_seconds": 284,
+            "timestamp_label": "[00:04:44]",
+            "url": "https://www.youtube.com/watch?v=vSmuuzicQUU&t=284s",
+            "markdown": "[00:04:44](https://www.youtube.com/watch?v=vSmuuzicQUU&t=284s)",
+            "epistemic_status": "attributed_practitioner_claim",
+            "relevance": "Practitioner testimony on choosing Intercom for conversational support and lead nurturing.",
         },
         {
-            "title": "15 U.S.C. 7704 — Requirements for transmission of messages",
-            "url": "https://www.law.cornell.edu/uscode/text/15/7704",
-            "relevance": "Commercial email operations need accurate routing and subject information, required sender disclosures, and effective opt-out handling.",
+            "source_type": "video_pro_tip",
+            "video_id": "b5pi4BcdrKk",
+            "title": "How to Build an AI Customer Support Business",
+            "channel": "Ventra Technologies",
+            "author": "Ventra Technologies",
+            "text": "The first phase of this offering is conducting a support audit, analyzing existing customer messages to identify exactly which repetitive questions can safely be automated.",
+            "tip": "The first phase of this offering is conducting a support audit, analyzing existing customer messages to identify exactly which repetitive questions can safely be automated.",
+            "timestamp": 192,
+            "timestamp_seconds": 192,
+            "timestamp_label": "[00:03:12]",
+            "url": "https://www.youtube.com/watch?v=b5pi4BcdrKk&t=192s",
+            "markdown": "[00:03:12](https://www.youtube.com/watch?v=b5pi4BcdrKk&t=192s)",
+            "epistemic_status": "attributed_practitioner_claim",
+            "relevance": "Practitioner testimony on auditing repetitive support work before selling and implementing the setup.",
         },
         {
-            "title": "15 U.S.C. 45 — Unfair methods of competition and unfair or deceptive acts",
-            "url": "https://www.law.cornell.edu/uscode/text/15/45",
-            "relevance": "Substantiate performance claims, describe monitoring coverage accurately, and distinguish measured customer outcomes from illustrative projections.",
+            "source_type": "video_pro_tip",
+            "video_id": "JKmSoDIpfdI",
+            "title": "How to Automate Your Customer Support With AI in 2026 — Full Beginner Guide",
+            "channel": "AIWealthPath",
+            "author": "AIWealthPath",
+            "text": "If the AI cannot answer in two tries, it hands over immediately with the whole conversation attached, so the customer never has to repeat themselves.",
+            "tip": "If the AI cannot answer in two tries, it hands over immediately with the whole conversation attached, so the customer never has to repeat themselves.",
+            "timestamp": 196,
+            "timestamp_seconds": 196,
+            "timestamp_label": "[00:03:16]",
+            "url": "https://www.youtube.com/watch?v=JKmSoDIpfdI&t=196s",
+            "markdown": "[00:03:16](https://www.youtube.com/watch?v=JKmSoDIpfdI&t=196s)",
+            "epistemic_status": "attributed_practitioner_claim",
+            "relevance": "Practitioner testimony on the two-attempt escalation rule and preserving conversation context.",
+        },
+        {
+            "source_type": "video_pro_tip",
+            "video_id": "mnFYeyoS2r8",
+            "title": "AI Agents: The next generation of AI-powered bots | Zendesk",
+            "channel": "Zendesk",
+            "author": "Zendesk",
+            "text": "Currently, AI agents are helping companies resolve 60% or more of their customer interactions.",
+            "tip": "Currently, AI agents are helping companies resolve 60% or more of their customer interactions.",
+            "timestamp": 165,
+            "timestamp_seconds": 165,
+            "timestamp_label": "[00:02:45]",
+            "url": "https://www.youtube.com/watch?v=mnFYeyoS2r8&t=165s",
+            "markdown": "[00:02:45](https://www.youtube.com/watch?v=mnFYeyoS2r8&t=165s)",
+            "epistemic_status": "attributed_practitioner_claim",
+            "relevance": "Zendesk's attributed interaction-resolution claim for its AI agents.",
+        },
+        {
+            "source_type": "video_pro_tip",
+            "video_id": "DcDfJRzuZNI",
+            "title": "Top 10 AI Customer Service Companies",
+            "channel": "Simply Contact",
+            "author": "Simply Contact",
+            "text": "Simply Contact is a customer service outsourcing provider that combines human agents with advanced AI tools.",
+            "tip": "Simply Contact is a customer service outsourcing provider that combines human agents with advanced AI tools.",
+            "timestamp": 19,
+            "timestamp_seconds": 19,
+            "timestamp_label": "[00:00:19]",
+            "url": "https://www.youtube.com/watch?v=DcDfJRzuZNI&t=19s",
+            "markdown": "[00:00:19](https://www.youtube.com/watch?v=DcDfJRzuZNI&t=19s)",
+            "epistemic_status": "attributed_practitioner_claim",
+            "relevance": "Practitioner testimony on the combined human-and-AI outsourcing delivery model.",
+        },
+        {
+            "source_type": "video_pro_tip",
+            "video_id": "nMMWXxBsH2o",
+            "title": "How to use ZenDesk AI Agents | Supercharge Customer Service with AI in 2026",
+            "channel": "Stewart Gauld",
+            "author": "Stewart Gauld",
+            "text": "If a question is unknown, then we also want to add an option to talk to a real person.",
+            "tip": "If a question is unknown, then we also want to add an option to talk to a real person.",
+            "timestamp": 401,
+            "timestamp_seconds": 401,
+            "timestamp_label": "[00:06:41]",
+            "url": "https://www.youtube.com/watch?v=nMMWXxBsH2o&t=401s",
+            "markdown": "[00:06:41](https://www.youtube.com/watch?v=nMMWXxBsH2o&t=401s)",
+            "epistemic_status": "attributed_practitioner_claim",
+            "relevance": "Practitioner testimony on configuring Zendesk agent behavior for unknown questions.",
+        },
+        {
+            "source_type": "video_pro_tip",
+            "video_id": "aNlthYD5fPY",
+            "title": "Every AI Customer Service Tool Explained",
+            "channel": "Toolstack",
+            "author": "Toolstack",
+            "text": "In practice, results vary a lot depending on how good your knowledge base is.",
+            "tip": "In practice, results vary a lot depending on how good your knowledge base is.",
+            "timestamp": 65,
+            "timestamp_seconds": 65,
+            "timestamp_label": "[00:01:05]",
+            "url": "https://www.youtube.com/watch?v=aNlthYD5fPY&t=65s",
+            "markdown": "[00:01:05](https://www.youtube.com/watch?v=aNlthYD5fPY&t=65s)",
+            "epistemic_status": "attributed_practitioner_claim",
+            "relevance": "Practitioner testimony on the dependence of Fin's performance on knowledge-base quality.",
+        },
+        {
+            "source_type": "video_pro_tip",
+            "video_id": "swIGkbLXEdM",
+            "title": "How Much Should a Small Business Budget for AI Customer Support in 2026?",
+            "channel": "Rocket Research",
+            "author": "Rocket Research",
+            "text": "Corby provides a straightforward pricing model with a flat monthly fee starting at $99 for the pro plan.",
+            "tip": "Corby provides a straightforward pricing model with a flat monthly fee starting at $99 for the pro plan.",
+            "timestamp": 19,
+            "timestamp_seconds": 19,
+            "timestamp_label": "[00:00:19]",
+            "url": "https://www.youtube.com/watch?v=swIGkbLXEdM&t=19s",
+            "markdown": "[00:00:19](https://www.youtube.com/watch?v=swIGkbLXEdM&t=19s)",
+            "epistemic_status": "attributed_practitioner_claim",
+            "relevance": "Practitioner testimony on a flat-rate alternative to seat-plus-resolution pricing.",
+        },
+        {
+            "source_type": "video_pro_tip",
+            "video_id": "T6Ij8zqR4Bo",
+            "title": "3 AI Customer Support Tools for US Small Businesses in 2026 — Intercom vs Zendesk vs Tidio",
+            "channel": "AI Tools for Business",
+            "author": "AI Tools for Business",
+            "text": "Use the free plan or the free trial for two weeks and track two numbers: how many chats the AI resolves on its own and what that costs you per resolution.",
+            "tip": "Use the free plan or the free trial for two weeks and track two numbers: how many chats the AI resolves on its own and what that costs you per resolution.",
+            "timestamp": 370,
+            "timestamp_seconds": 370,
+            "timestamp_label": "[00:06:10]",
+            "url": "https://www.youtube.com/watch?v=T6Ij8zqR4Bo&t=370s",
+            "markdown": "[00:06:10](https://www.youtube.com/watch?v=T6Ij8zqR4Bo&t=370s)",
+            "epistemic_status": "attributed_practitioner_claim",
+            "relevance": "Practitioner testimony on measuring autonomous resolutions and their cost during a two-week evaluation.",
+        },
+        {
+            "source_type": "video_pro_tip",
+            "video_id": "db2s9r04icM",
+            "title": "Intercom vs Zendesk: Pricing, features, AI, and which is better in 2026",
+            "channel": "SparrowDesk",
+            "author": "SparrowDesk",
+            "text": "Zendesk's AI offers more control, but requires heavier setup and ongoing tuning.",
+            "tip": "Zendesk's AI offers more control, but requires heavier setup and ongoing tuning.",
+            "timestamp": 45,
+            "timestamp_seconds": 45,
+            "timestamp_label": "[00:00:45]",
+            "url": "https://www.youtube.com/watch?v=db2s9r04icM&t=45s",
+            "markdown": "[00:00:45](https://www.youtube.com/watch?v=db2s9r04icM&t=45s)",
+            "epistemic_status": "attributed_practitioner_claim",
+            "relevance": "Practitioner testimony contrasting configuration speed with control and customization.",
+        },
+        {
+            "source_type": "video_pro_tip",
+            "video_id": "vxbipxTJGgw",
+            "title": "What are AI Agents for customer service? Zendesk AI explained",
+            "channel": "Zendesk",
+            "author": "Zendesk",
+            "text": "When needed, AI agents can escalate to human agents, pass along context, and ensure a seamless handoff so customers don't have to repeat themselves.",
+            "tip": "When needed, AI agents can escalate to human agents, pass along context, and ensure a seamless handoff so customers don't have to repeat themselves.",
+            "timestamp": 127,
+            "timestamp_seconds": 127,
+            "timestamp_label": "[00:02:07]",
+            "url": "https://www.youtube.com/watch?v=vxbipxTJGgw&t=127s",
+            "markdown": "[00:02:07](https://www.youtube.com/watch?v=vxbipxTJGgw&t=127s)",
+            "epistemic_status": "attributed_practitioner_claim",
+            "relevance": "Zendesk testimony on transferring customer context when an AI agent escalates.",
+        },
+        {
+            "source_type": "video_pro_tip",
+            "video_id": "GYTt2lhl7Ms",
+            "title": "5 Best AI Customer Support Platforms (2026) - Top 5 Ranked",
+            "channel": "Daniel Davidson",
+            "author": "Daniel Davidson",
+            "text": "A lower bill loses its appeal if your team spends more time correcting answers.",
+            "tip": "A lower bill loses its appeal if your team spends more time correcting answers.",
+            "timestamp": 551,
+            "timestamp_seconds": 551,
+            "timestamp_label": "[00:09:11]",
+            "url": "https://www.youtube.com/watch?v=GYTt2lhl7Ms&t=551s",
+            "markdown": "[00:09:11](https://www.youtube.com/watch?v=GYTt2lhl7Ms&t=551s)",
+            "epistemic_status": "attributed_practitioner_claim",
+            "relevance": "Practitioner testimony on evaluating correction workload alongside the software bill.",
+        },
+        {
+            "source_type": "video_pro_tip",
+            "video_id": "lvzJJWDX0ec",
+            "title": "How to Build an AI Agency Business Model in 2026",
+            "channel": "Sohaib",
+            "author": "Sohaib",
+            "text": "The agency plan is $297 a month with 1,000 credits and 10 client accounts included.",
+            "tip": "The agency plan is $297 a month with 1,000 credits and 10 client accounts included.",
+            "timestamp": 410,
+            "timestamp_seconds": 410,
+            "timestamp_label": "[00:06:50]",
+            "url": "https://www.youtube.com/watch?v=lvzJJWDX0ec&t=410s",
+            "markdown": "[00:06:50](https://www.youtube.com/watch?v=lvzJJWDX0ec&t=410s)",
+            "epistemic_status": "attributed_practitioner_claim",
+            "relevance": "Practitioner testimony on the quoted DM Champ agency plan and its included capacity.",
+        },
+        {
+            "source_type": "video_pro_tip",
+            "video_id": "lvzJJWDX0ec",
+            "title": "How to Build an AI Agency Business Model in 2026",
+            "channel": "Sohaib",
+            "author": "Sohaib",
+            "text": "Trial credits come out of your pool the moment the trial starts, so keep them low on a plan you promote widely.",
+            "tip": "Trial credits come out of your pool the moment the trial starts, so keep them low on a plan you promote widely.",
+            "timestamp": 468,
+            "timestamp_seconds": 468,
+            "timestamp_label": "[00:07:48]",
+            "url": "https://www.youtube.com/watch?v=lvzJJWDX0ec&t=468s",
+            "markdown": "[00:07:48](https://www.youtube.com/watch?v=lvzJJWDX0ec&t=468s)",
+            "epistemic_status": "attributed_practitioner_claim",
+            "relevance": "Practitioner testimony on trial-credit consumption as an agency operating expense.",
         },
     ],
 }

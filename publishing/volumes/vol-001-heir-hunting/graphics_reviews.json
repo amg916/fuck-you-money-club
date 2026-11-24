@@ -29,14 +29,14 @@
     "08_phone_tablet_mockup",
     "09_series_collection_mockup",
     "10_social_promo_pack",
-    "diag-01-end-to-end-workflow",
-    "diag-02-deal-funnel",
-    "diag-03-fee-waterfall",
-    "diag-04-jurisdiction-fee-caps",
-    "diag-05-kinship-decision-tree",
-    "diag-06-small-team-org",
-    "diag-07-startup-budget-stack",
-    "diag-08-30-day-roadmap"
+    "diag-01-document-the-right-family",
+    "diag-02-research-tool-benchmarks",
+    "diag-03-record-access-cost-reference",
+    "diag-04-family-research-counts",
+    "diag-05-resolve-identity-before-entitlement",
+    "diag-06-ownership-verification-coordination",
+    "diag-07-separate-document-and-cure-costs",
+    "diag-08-property-and-genealogy-work-plan"
   ],
   "cover_graphic_ids": [
     "cover_front",
@@ -54,14 +54,14 @@
     "10_social_promo_pack"
   ],
   "diagram_graphic_ids": [
-    "diag-01-end-to-end-workflow",
-    "diag-02-deal-funnel",
-    "diag-03-fee-waterfall",
-    "diag-04-jurisdiction-fee-caps",
-    "diag-05-kinship-decision-tree",
-    "diag-06-small-team-org",
-    "diag-07-startup-budget-stack",
-    "diag-08-30-day-roadmap"
+    "diag-01-document-the-right-family",
+    "diag-02-research-tool-benchmarks",
+    "diag-03-record-access-cost-reference",
+    "diag-04-family-research-counts",
+    "diag-05-resolve-identity-before-entitlement",
+    "diag-06-ownership-verification-coordination",
+    "diag-07-separate-document-and-cure-costs",
+    "diag-08-property-and-genealogy-work-plan"
   ],
   "allowed_statuses": [
     "approved",
@@ -486,11 +486,11 @@
         "reviewed_at": null
       }
     },
-    "diag-01-end-to-end-workflow": {
+    "diag-01-document-the-right-family": {
       "concept_a": {
-        "graphic_id": "diag-01-end-to-end-workflow",
+        "graphic_id": "diag-01-document-the-right-family",
         "graphic_type": "diagram",
-        "label": "From lead to documented recovery",
+        "label": "From Case Screening to Documented Kinship",
         "concept_id": "concept_a",
         "concept_label": "Concept A — Black & Gold Executive",
         "status": "pending_review",
@@ -498,9 +498,9 @@
         "reviewed_at": null
       },
       "concept_b": {
-        "graphic_id": "diag-01-end-to-end-workflow",
+        "graphic_id": "diag-01-document-the-right-family",
         "graphic_type": "diagram",
-        "label": "From lead to documented recovery",
+        "label": "From Case Screening to Documented Kinship",
         "concept_id": "concept_b",
         "concept_label": "Concept B — Bold Editorial",
         "status": "pending_review",
@@ -508,9 +508,9 @@
         "reviewed_at": null
       },
       "concept_c": {
-        "graphic_id": "diag-01-end-to-end-workflow",
+        "graphic_id": "diag-01-document-the-right-family",
         "graphic_type": "diagram",
-        "label": "From lead to documented recovery",
+        "label": "From Case Screening to Documented Kinship",
         "concept_id": "concept_c",
         "concept_label": "Concept C — Modern Wealth Intelligence",
         "status": "pending_review",
@@ -518,11 +518,11 @@
         "reviewed_at": null
       }
     },
-    "diag-02-deal-funnel": {
+    "diag-02-research-tool-benchmarks": {
       "concept_a": {
-        "graphic_id": "diag-02-deal-funnel",
+        "graphic_id": "diag-02-research-tool-benchmarks",
         "graphic_type": "diagram",
-        "label": "A qualification funnel worth measuring",
+        "label": "Research Settings Without Conversion Claims",
         "concept_id": "concept_a",
         "concept_label": "Concept A — Black & Gold Executive",
         "status": "pending_review",
@@ -530,9 +530,9 @@
         "reviewed_at": null
       },
       "concept_b": {
-        "graphic_id": "diag-02-deal-funnel",
+        "graphic_id": "diag-02-research-tool-benchmarks",
         "graphic_type": "diagram",
-        "label": "A qualification funnel worth measuring",
+        "label": "Research Settings Without Conversion Claims",
         "concept_id": "concept_b",
         "concept_label": "Concept B — Bold Editorial",
         "status": "pending_review",
@@ -540,9 +540,9 @@
         "reviewed_at": null
       },
       "concept_c": {
-        "graphic_id": "diag-02-deal-funnel",
+        "graphic_id": "diag-02-research-tool-benchmarks",
         "graphic_type": "diagram",
-        "label": "A qualification funnel worth measuring",
+        "label": "Research Settings Without Conversion Claims",
         "concept_id": "concept_c",
         "concept_label": "Concept C — Modern Wealth Intelligence",
         "status": "pending_review",
@@ -550,11 +550,11 @@
         "reviewed_at": null
       }
     },
-    "diag-03-fee-waterfall": {
+    "diag-03-record-access-cost-reference": {
       "concept_a": {
-        "graphic_id": "diag-03-fee-waterfall",
+        "graphic_id": "diag-03-record-access-cost-reference",
         "graphic_type": "diagram",
-        "label": "What remains of a collected fee",
+        "label": "Record Access and Escalation Costs",
         "concept_id": "concept_a",
         "concept_label": "Concept A — Black & Gold Executive",
         "status": "pending_review",
@@ -562,9 +562,9 @@
         "reviewed_at": null
       },
       "concept_b": {
-        "graphic_id": "diag-03-fee-waterfall",
+        "graphic_id": "diag-03-record-access-cost-reference",
         "graphic_type": "diagram",
-        "label": "What remains of a collected fee",
+        "label": "Record Access and Escalation Costs",
         "concept_id": "concept_b",
         "concept_label": "Concept B — Bold Editorial",
         "status": "pending_review",
@@ -572,9 +572,9 @@
         "reviewed_at": null
       },
       "concept_c": {
-        "graphic_id": "diag-03-fee-waterfall",
+        "graphic_id": "diag-03-record-access-cost-reference",
         "graphic_type": "diagram",
-        "label": "What remains of a collected fee",
+        "label": "Record Access and Escalation Costs",
         "concept_id": "concept_c",
         "concept_label": "Concept C — Modern Wealth Intelligence",
         "status": "pending_review",
@@ -582,11 +582,11 @@
         "reviewed_at": null
       }
     },
-    "diag-04-jurisdiction-fee-caps": {
+    "diag-04-family-research-counts": {
       "concept_a": {
-        "graphic_id": "diag-04-jurisdiction-fee-caps",
+        "graphic_id": "diag-04-family-research-counts",
         "graphic_type": "diagram",
-        "label": "Fee-cap sensitivity before choosing a market",
+        "label": "Family Research Counts Are Not Entitlement Proof",
         "concept_id": "concept_a",
         "concept_label": "Concept A — Black & Gold Executive",
         "status": "pending_review",
@@ -594,9 +594,9 @@
         "reviewed_at": null
       },
       "concept_b": {
-        "graphic_id": "diag-04-jurisdiction-fee-caps",
+        "graphic_id": "diag-04-family-research-counts",
         "graphic_type": "diagram",
-        "label": "Fee-cap sensitivity before choosing a market",
+        "label": "Family Research Counts Are Not Entitlement Proof",
         "concept_id": "concept_b",
         "concept_label": "Concept B — Bold Editorial",
         "status": "pending_review",
@@ -604,9 +604,9 @@
         "reviewed_at": null
       },
       "concept_c": {
-        "graphic_id": "diag-04-jurisdiction-fee-caps",
+        "graphic_id": "diag-04-family-research-counts",
         "graphic_type": "diagram",
-        "label": "Fee-cap sensitivity before choosing a market",
+        "label": "Family Research Counts Are Not Entitlement Proof",
         "concept_id": "concept_c",
         "concept_label": "Concept C — Modern Wealth Intelligence",
         "status": "pending_review",
@@ -614,11 +614,11 @@
         "reviewed_at": null
       }
     },
-    "diag-05-kinship-decision-tree": {
+    "diag-05-resolve-identity-before-entitlement": {
       "concept_a": {
-        "graphic_id": "diag-05-kinship-decision-tree",
+        "graphic_id": "diag-05-resolve-identity-before-entitlement",
         "graphic_type": "diagram",
-        "label": "Build proof before naming an heir",
+        "label": "Resolve Identity Before Asserting Entitlement",
         "concept_id": "concept_a",
         "concept_label": "Concept A — Black & Gold Executive",
         "status": "pending_review",
@@ -626,9 +626,9 @@
         "reviewed_at": null
       },
       "concept_b": {
-        "graphic_id": "diag-05-kinship-decision-tree",
+        "graphic_id": "diag-05-resolve-identity-before-entitlement",
         "graphic_type": "diagram",
-        "label": "Build proof before naming an heir",
+        "label": "Resolve Identity Before Asserting Entitlement",
         "concept_id": "concept_b",
         "concept_label": "Concept B — Bold Editorial",
         "status": "pending_review",
@@ -636,9 +636,9 @@
         "reviewed_at": null
       },
       "concept_c": {
-        "graphic_id": "diag-05-kinship-decision-tree",
+        "graphic_id": "diag-05-resolve-identity-before-entitlement",
         "graphic_type": "diagram",
-        "label": "Build proof before naming an heir",
+        "label": "Resolve Identity Before Asserting Entitlement",
         "concept_id": "concept_c",
         "concept_label": "Concept C — Modern Wealth Intelligence",
         "status": "pending_review",
@@ -646,11 +646,11 @@
         "reviewed_at": null
       }
     },
-    "diag-06-small-team-org": {
+    "diag-06-ownership-verification-coordination": {
       "concept_a": {
-        "graphic_id": "diag-06-small-team-org",
+        "graphic_id": "diag-06-ownership-verification-coordination",
         "graphic_type": "diagram",
-        "label": "Separate research, review and client care",
+        "label": "Coordinate Family, Title, Debt, and Probate Evidence",
         "concept_id": "concept_a",
         "concept_label": "Concept A — Black & Gold Executive",
         "status": "pending_review",
@@ -658,9 +658,9 @@
         "reviewed_at": null
       },
       "concept_b": {
-        "graphic_id": "diag-06-small-team-org",
+        "graphic_id": "diag-06-ownership-verification-coordination",
         "graphic_type": "diagram",
-        "label": "Separate research, review and client care",
+        "label": "Coordinate Family, Title, Debt, and Probate Evidence",
         "concept_id": "concept_b",
         "concept_label": "Concept B — Bold Editorial",
         "status": "pending_review",
@@ -668,9 +668,9 @@
         "reviewed_at": null
       },
       "concept_c": {
-        "graphic_id": "diag-06-small-team-org",
+        "graphic_id": "diag-06-ownership-verification-coordination",
         "graphic_type": "diagram",
-        "label": "Separate research, review and client care",
+        "label": "Coordinate Family, Title, Debt, and Probate Evidence",
         "concept_id": "concept_c",
         "concept_label": "Concept C — Modern Wealth Intelligence",
         "status": "pending_review",
@@ -678,11 +678,11 @@
         "reviewed_at": null
       }
     },
-    "diag-07-startup-budget-stack": {
+    "diag-07-separate-document-and-cure-costs": {
       "concept_a": {
-        "graphic_id": "diag-07-startup-budget-stack",
+        "graphic_id": "diag-07-separate-document-and-cure-costs",
         "graphic_type": "diagram",
-        "label": "A lean pilot's startup cash stack",
+        "label": "Separate Record Costs From Legal Cure Costs",
         "concept_id": "concept_a",
         "concept_label": "Concept A — Black & Gold Executive",
         "status": "pending_review",
@@ -690,9 +690,9 @@
         "reviewed_at": null
       },
       "concept_b": {
-        "graphic_id": "diag-07-startup-budget-stack",
+        "graphic_id": "diag-07-separate-document-and-cure-costs",
         "graphic_type": "diagram",
-        "label": "A lean pilot's startup cash stack",
+        "label": "Separate Record Costs From Legal Cure Costs",
         "concept_id": "concept_b",
         "concept_label": "Concept B — Bold Editorial",
         "status": "pending_review",
@@ -700,9 +700,9 @@
         "reviewed_at": null
       },
       "concept_c": {
-        "graphic_id": "diag-07-startup-budget-stack",
+        "graphic_id": "diag-07-separate-document-and-cure-costs",
         "graphic_type": "diagram",
-        "label": "A lean pilot's startup cash stack",
+        "label": "Separate Record Costs From Legal Cure Costs",
         "concept_id": "concept_c",
         "concept_label": "Concept C — Modern Wealth Intelligence",
         "status": "pending_review",
@@ -710,11 +710,11 @@
         "reviewed_at": null
       }
     },
-    "diag-08-30-day-roadmap": {
+    "diag-08-property-and-genealogy-work-plan": {
       "concept_a": {
-        "graphic_id": "diag-08-30-day-roadmap",
+        "graphic_id": "diag-08-property-and-genealogy-work-plan",
         "graphic_type": "diagram",
-        "label": "Thirty days to a controlled pilot",
+        "label": "Property Identification to Documented Case Assessment",
         "concept_id": "concept_a",
         "concept_label": "Concept A — Black & Gold Executive",
         "status": "pending_review",
@@ -722,9 +722,9 @@
         "reviewed_at": null
       },
       "concept_b": {
-        "graphic_id": "diag-08-30-day-roadmap",
+        "graphic_id": "diag-08-property-and-genealogy-work-plan",
         "graphic_type": "diagram",
-        "label": "Thirty days to a controlled pilot",
+        "label": "Property Identification to Documented Case Assessment",
         "concept_id": "concept_b",
         "concept_label": "Concept B — Bold Editorial",
         "status": "pending_review",
@@ -732,9 +732,9 @@
         "reviewed_at": null
       },
       "concept_c": {
-        "graphic_id": "diag-08-30-day-roadmap",
+        "graphic_id": "diag-08-property-and-genealogy-work-plan",
         "graphic_type": "diagram",
-        "label": "Thirty days to a controlled pilot",
+        "label": "Property Identification to Documented Case Assessment",
         "concept_id": "concept_c",
         "concept_label": "Concept C — Modern Wealth Intelligence",
         "status": "pending_review",
@@ -743,5 +743,5 @@
       }
     }
   },
-  "updated_at": "2026-11-23T22:47:57Z"
+  "updated_at": "2026-11-24T15:53:32Z"
 }

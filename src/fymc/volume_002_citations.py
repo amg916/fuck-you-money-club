@@ -1,4128 +1,3152 @@
-"""Curated 180-citation surplus-native baseline (15 per chapter across Q1-Q12) mined from the 261-video FYMC corpus (189 core + 72 dedicated surplus-recovery transcripts)."""
+"""100% verbatim YouTube practitioner citations selected directly by Claude across Chapters Q1-Q12 of Volume 002 (Surplus Funds Recovery)."""
 from __future__ import annotations
 
-CHAPTER_KEYWORDS: dict[int, set[str]] = {1: {'auction',
-     'constitutional',
-     'deed',
-     'equity',
-     'excess',
-     'fifth',
-     'foreclosure',
-     'hennepin',
-     'lane',
-     'lanes',
-     'mortgage',
-     'overage',
-     'overages',
-     'proceeds',
-     'surplus',
-     'takings',
-     'tax',
-     'trustee',
-     'tyler'},
- 2: {'balance',
-     'check',
-     'claimant',
-     'clerk',
-     'comptroller',
-     'county',
-     'court',
-     'custodian',
-     'disbursement',
-     'entitled',
-     'escrow',
-     'funds',
-     'holder',
-     'ledger',
-     'owner',
-     'registry',
-     'stale',
-     'treasurer',
-     'trustee',
-     'warrant'},
- 3: {'assignment',
-     'attorney',
-     'cap',
-     'caps',
-     'commission',
-     'contingency',
-     'economics',
-     'fee',
-     'fees',
-     'margin',
-     'percentage',
-     'profit',
-     'revenue',
-     'split',
-     'spread',
-     'statute'},
- 4: {'attorney',
-     'bank',
-     'bond',
-     'budget',
-     'business',
-     'capital',
-     'company',
-     'cost',
-     'costs',
-     'counsel',
-     'entity',
-     'expense',
-     'expenses',
-     'filing',
-     'firm',
-     'insurance',
-     'lawyer',
-     'lean',
-     'llc',
-     'notary',
-     'overhead',
-     'partner',
-     'pilot',
-     'reserve',
-     'retainer',
-     'setup',
-     'startup'},
- 5: {'bankruptcy',
-     'deceased',
-     'encumbrance',
-     'heirs',
-     'hoa',
-     'irs',
-     'judgment',
-     'junior',
-     'lien',
-     'liens',
-     'mortgage',
-     'priority',
-     'probate',
-     'redemption',
-     'senior',
-     'surviving',
-     'trap',
-     'upset',
-     'wipeout'},
- 6: {'auction',
-     'calendar',
-     'clerk',
-     'county',
-     'docket',
-     'filter',
-     'foia',
-     'lead',
-     'leads',
-     'list',
-     'lists',
-     'public',
-     'qualify',
-     'records',
-     'request',
-     'sourcing',
-     'sunshine',
-     'threshold'},
- 7: {'affidavit',
-     'attorney',
-     'chain',
-     'claim',
-     'counsel',
-     'deed',
-     'documents',
-     'dossier',
-     'encumbrance',
-     'exhibit',
-     'filing',
-     'heir',
-     'heirs',
-     'motion',
-     'order',
-     'packet',
-     'probate',
-     'proof',
-     'title',
-     'vesting'},
- 8: {'assessor',
-     'database',
-     'datatree',
-     'gis',
-     'locate',
-     'obituary',
-     'pacer',
-     'parcel',
-     'phone',
-     'portal',
-     'recorder',
-     'regrid',
-     'relatives',
-     'search',
-     'skip',
-     'stack',
-     'tlo',
-     'trace',
-     'tracing'},
- 9: {'agreement',
-     'attorney',
-     'call',
-     'calling',
-     'cold',
-     'compliance',
-     'contract',
-     'disclosure',
-     'letter',
-     'mail',
-     'objection',
-     'outreach',
-     'phone',
-     'power',
-     'rebuttal',
-     'scam',
-     'script',
-     'solicitation',
-     'statute',
-     'trust',
-     'waiting'},
- 10: {'alerts',
-      'automation',
-      'batch',
-      'case',
-      'crm',
-      'data',
-      'dataset',
-      'import',
-      'ocr',
-      'pdf',
-      'pipeline',
-      'process',
-      'scraper',
-      'scraping',
-      'sheet',
-      'software',
-      'spreadsheet',
-      'study',
-      'system',
-      'tracking',
-      'workflow'},
- 11: {'acquisition',
-      'caller',
-      'closing',
-      'counsel',
-      'delegate',
-      'desk',
-      'hire',
-      'hiring',
-      'kpi',
-      'manager',
-      'operations',
-      'researcher',
-      'role',
-      'scale',
-      'scaling',
-      'sop',
-      'team',
-      'training',
-      'va'},
- 12: {'action',
-      'audit',
-      'checklist',
-      'client',
-      'close',
-      'consistency',
-      'day',
-      'days',
-      'deal',
-      'discipline',
-      'execution',
-      'first',
-      'focus',
-      'goal',
-      'launch',
-      'mindset',
-      'month',
-      'ninety',
-      'plan',
-      'roadmap',
-      'start',
-      'steps',
-      'thirty',
-      'week'}}
+CHAPTER_KEYWORDS: dict[int, set[str]] = {1: {'works', 'surplus', 'recovery', 'business'},
+ 2: {'recovery', 'starting', 'surplus', 'business', 'funds', 'growing'},
+ 3: {'find', 'lists', 'your', 'free', 'build'},
+ 4: {'competing', 'verify', 'surplus', 'research', 'debt'},
+ 5: {'recovery', 'sale', 'foreclosures', 'sheriff', 'mortgage'},
+ 6: {'claimants', 'estate', 'heirs', 'cases', 'difficult'},
+ 7: {'claimants', 'distrust', 'address', 'reach'},
+ 8: {'scripts', 'surplus', 'call', 'live', 'examples', 'funds'},
+ 9: {'claim', 'submission', 'signed', 'from', 'agreement'},
+ 10: {'claim', 'state', 'payout', 'timing', 'risks', 'rules'},
+ 11: {'state', 'foreclosure', 'bankruptcy', 'funds', 'beyond'},
+ 12: {'operation', 'recovery', 'repeatable', 'build'}}
 
-BASELINE_EXPERT_CITATIONS_BY_CHAPTER: dict[int, list[dict]] = {1: [{'author': 'BizMove',
-      'channel': 'BizMove',
+BASELINE_EXPERT_CITATIONS_BY_CHAPTER: dict[int, list[dict]] = {1: [{'author': 'Ted Thomas',
+      'channel': 'Ted Thomas',
       'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:00:22](https://www.youtube.com/watch?v=01plOr9pFjQ&t=22s)',
-      'relevance': 'Attributed practitioner commentary on tax-sale overages, mortgage '
-                   'foreclosure excess proceeds, and post-Tyler statutory lanes; verify '
-                   'against governing state statute.',
+      'markdown': '[00:03:11](https://www.youtube.com/watch?v=p9uUtcmNpbk&t=191s)',
+      'relevance': 'Practitioner testimony on screening auction results for overages.',
       'source_type': 'video_pro_tip',
-      'text': 'Starting a tax overage business can be a lucrative venture if done correctly. '
-              'Tax overages, also called tax lien surplus or excess proceeds, arise when a '
-              'property is sold at a tax sale for more than the amount owed in taxes and fees.',
-      'timestamp': 22,
-      'timestamp_label': '[00:00:22]',
-      'timestamp_seconds': 22,
-      'tip': 'Starting a tax overage business can be a lucrative venture if done correctly. '
-             'Tax overages, also called tax lien surplus or excess proceeds, arise when a '
-             'property is sold at a tax sale for more than the amount owed in taxes and fees.',
-      'title': 'How to Start a Tax Overage Business | Complete and Easy to Follow Guide '
-               '(BizMove)',
-      'url': 'https://www.youtube.com/watch?v=01plOr9pFjQ&t=22s',
-      'video_id': '01plOr9pFjQ'},
-     {'author': 'Surplus Funds Secrets',
-      'channel': 'Surplus Funds Secrets',
+      'text': 'Start with a list of auctions; narrow the list to the properties that were sold for '
+              'more money than the county originally asked.',
+      'timestamp': 191,
+      'timestamp_label': '[00:03:11]',
+      'timestamp_seconds': 191,
+      'tip': 'Start with a list of auctions; narrow the list to the properties that were sold for '
+             'more money than the county originally asked.',
+      'title': 'How to Claim Tax Sale Overages (Step-by-Step Guide)',
+      'url': 'https://www.youtube.com/watch?v=p9uUtcmNpbk&t=191s',
+      'video_id': 'p9uUtcmNpbk'},
+     {'author': "Bob Diamond - America's Tax Sale Attorney",
+      'channel': "Bob Diamond - America's Tax Sale Attorney",
       'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:01:28](https://www.youtube.com/watch?v=v0-thxE7IK4&t=88s)',
-      'relevance': 'Attributed practitioner commentary on tax-sale overages, mortgage '
-                   'foreclosure excess proceeds, and post-Tyler statutory lanes; verify '
-                   'against governing state statute.',
+      'markdown': '[00:07:00](https://www.youtube.com/watch?v=qGPsbhsEAVQ&t=420s)',
+      'relevance': "Practitioner testimony on Diamond's agreement and document package.",
       'source_type': 'video_pro_tip',
-      'text': 'When a house goes through foreclosure and sells for more at the auction than '
-              'was owed on the debt, the extra money, called surplus funds or excess proceeds, '
-              'does not belong to the bank and does not belong to the county or the state.',
-      'timestamp': 88,
-      'timestamp_label': '[00:01:28]',
-      'timestamp_seconds': 88,
-      'tip': 'When a house goes through foreclosure and sells for more at the auction than was '
-             'owed on the debt, the extra money, called surplus funds or excess proceeds, does '
-             'not belong to the bank and does not belong to the county or the state.',
-      'title': 'How To Find Surplus Funds Lists In 2026 (For Free) (Surplus Funds Secrets)',
-      'url': 'https://www.youtube.com/watch?v=v0-thxE7IK4&t=88s',
-      'video_id': 'v0-thxE7IK4'},
-     {'author': 'Overage Acquisition',
-      'channel': 'Overage Acquisition',
+      'text': 'You need a fee agreement, a power of attorney, an assignment, a letter of direction '
+              'to the county.',
+      'timestamp': 420,
+      'timestamp_label': '[00:07:00]',
+      'timestamp_seconds': 420,
+      'tip': 'You need a fee agreement, a power of attorney, an assignment, a letter of direction '
+             'to the county.',
+      'title': 'Tax Sale Overages Course',
+      'url': 'https://www.youtube.com/watch?v=qGPsbhsEAVQ&t=420s',
+      'video_id': 'qGPsbhsEAVQ'},
+     {'author': "Bob Diamond - America's Tax Sale Attorney",
+      'channel': "Bob Diamond - America's Tax Sale Attorney",
       'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:00:58](https://www.youtube.com/watch?v=6UiKunbtUa0&t=58s)',
-      'relevance': 'Attributed practitioner commentary on tax-sale overages, mortgage '
-                   'foreclosure excess proceeds, and post-Tyler statutory lanes; verify '
-                   'against governing state statute.',
+      'markdown': '[00:04:52](https://www.youtube.com/watch?v=1Pp-cjYnY2k&t=292s)',
+      'relevance': 'Practitioner testimony on the initial county-list search.',
       'source_type': 'video_pro_tip',
-      'text': 'California, the overage is called excess proceeds, you know, and on the east '
-              "coast, it may be called surplus funds. So, there's different I've included in "
-              "this training, there's different words and names for overages, but if you use, "
-              "you know, different words, it's okay.",
-      'timestamp': 58,
-      'timestamp_label': '[00:00:58]',
-      'timestamp_seconds': 58,
-      'tip': 'California, the overage is called excess proceeds, you know, and on the east '
-             "coast, it may be called surplus funds. So, there's different I've included in "
-             "this training, there's different words and names for overages, but if you use, "
-             "you know, different words, it's okay.",
-      'title': 'How To Find Excess Proceeds List In 2025 (Proven Strategies) (Overage '
-               'Acquisition)',
-      'url': 'https://www.youtube.com/watch?v=6UiKunbtUa0&t=58s',
-      'video_id': '6UiKunbtUa0'},
+      'text': 'Start by doing a Google search: such-and-such county, such-and-such state, excess '
+              'funds list.',
+      'timestamp': 292,
+      'timestamp_label': '[00:04:52]',
+      'timestamp_seconds': 292,
+      'tip': 'Start by doing a Google search: such-and-such county, such-and-such state, excess '
+             'funds list.',
+      'title': 'How To Become A Surplus Funds Recovery Agent',
+      'url': 'https://www.youtube.com/watch?v=1Pp-cjYnY2k&t=292s',
+      'video_id': '1Pp-cjYnY2k'},
      {'author': 'Money Making Juggernaut',
       'channel': 'Money Making Juggernaut',
       'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:02:11](https://www.youtube.com/watch?v=MVCNlj7HQBQ&t=131s)',
-      'relevance': 'Attributed practitioner commentary on tax-sale overages, mortgage '
-                   'foreclosure excess proceeds, and post-Tyler statutory lanes; verify '
-                   'against governing state statute.',
+      'markdown': '[00:02:11](https://www.youtube.com/watch?v=_vsvjD8JvgU&t=131s)',
+      'relevance': 'Practitioner testimony on choosing an accessible starting county.',
       'source_type': 'video_pro_tip',
-      'text': 'A tax sale overage is not the same as a mortgage foreclosure surplus. One '
-              'county lets you email everything. The next one, they actually want originals. '
-              'They want the papers actually mailed in. And if you send a copy, it simply gets '
-              'rejected.',
+      'text': 'We have to work in a county in which we understand how they post their results, we '
+              'understand how to file a claim.',
       'timestamp': 131,
       'timestamp_label': '[00:02:11]',
       'timestamp_seconds': 131,
-      'tip': 'A tax sale overage is not the same as a mortgage foreclosure surplus. One county '
-             'lets you email everything. The next one, they actually want originals. They want '
-             'the papers actually mailed in. And if you send a copy, it simply gets rejected.',
-      'title': 'Surplus Funds Recovery: COMPLETE Document List (2026 UPDATE) (Money Making '
-               'Juggernaut)',
-      'url': 'https://www.youtube.com/watch?v=MVCNlj7HQBQ&t=131s',
-      'video_id': 'MVCNlj7HQBQ'},
-     {'author': 'Alfred Taren',
-      'channel': 'Alfred Taren',
-      'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:06:45](https://www.youtube.com/watch?v=CqlbwGPmv64&t=405s)',
-      'relevance': 'Attributed practitioner commentary on tax-sale overages, mortgage '
-                   'foreclosure excess proceeds, and post-Tyler statutory lanes; verify '
-                   'against governing state statute.',
-      'source_type': 'video_pro_tip',
-      'text': 'And it works the same way whether it was a mortgage foreclosure or a tax sale. '
-              'The numbers just come from different places. Know your numbers and the rules '
-              'before you dial. Open with the auction results, then pause. Walk through the '
-              'math and use words like possible.',
-      'timestamp': 405,
-      'timestamp_label': '[00:06:45]',
-      'timestamp_seconds': 405,
-      'tip': 'And it works the same way whether it was a mortgage foreclosure or a tax sale. '
-             'The numbers just come from different places. Know your numbers and the rules '
-             'before you dial. Open with the auction results, then pause. Walk through the '
-             'math and use words like possible.',
-      'title': 'Surplus Funds Cold Calling Script: How to Not Sound Like a Scam (Alfred Taren)',
-      'url': 'https://www.youtube.com/watch?v=CqlbwGPmv64&t=405s',
-      'video_id': 'CqlbwGPmv64'},
-     {'author': 'Consumer Action Law Group',
-      'channel': 'Consumer Action Law Group',
-      'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:02:43](https://www.youtube.com/watch?v=gUeG4eQdMy8&t=163s)',
-      'relevance': 'Attributed practitioner commentary on tax-sale overages, mortgage '
-                   'foreclosure excess proceeds, and post-Tyler statutory lanes; verify '
-                   'against governing state statute.',
-      'source_type': 'video_pro_tip',
-      'text': 'Done correctly if you call my firm we help by figuring out if there is a '
-              'surplus we research the title we look for sale proceeds we look for the trustee '
-              'and we can give you a time frame as to whether the funds have been deposited '
-              'with the court.',
-      'timestamp': 163,
-      'timestamp_label': '[00:02:43]',
-      'timestamp_seconds': 163,
-      'tip': 'Done correctly if you call my firm we help by figuring out if there is a surplus '
-             'we research the title we look for sale proceeds we look for the trustee and we '
-             'can give you a time frame as to whether the funds have been deposited with the '
-             'court.',
-      'title': 'How to Claim Surplus Funds from Foreclosure (Step by Step Tutorial) (Consumer '
-               'Action Law Group)',
-      'url': 'https://www.youtube.com/watch?v=gUeG4eQdMy8&t=163s',
-      'video_id': 'gUeG4eQdMy8'},
+      'tip': 'We have to work in a county in which we understand how they post their results, we '
+             'understand how to file a claim.',
+      'title': 'Surplus Funds Recovery Newbie? START HERE (Asset Recovery Business)',
+      'url': 'https://www.youtube.com/watch?v=_vsvjD8JvgU&t=131s',
+      'video_id': '_vsvjD8JvgU'},
      {'author': 'Ted Thomas',
       'channel': 'Ted Thomas',
       'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:09:25](https://www.youtube.com/watch?v=d5TLZqkPX14&t=565s)',
-      'relevance': 'Attributed practitioner commentary on tax-sale overages, mortgage '
-                   'foreclosure excess proceeds, and post-Tyler statutory lanes; verify '
-                   'against governing state statute.',
+      'markdown': '[00:13:26](https://www.youtube.com/watch?v=d5TLZqkPX14&t=806s)',
+      'relevance': "Practitioner testimony describing some finders' percentage arrangements.",
       'source_type': 'video_pro_tip',
-      'text': "All right, so now you know there's going to be an auction. So you could go to "
-              "the auction, so let's just go to the auction and have an example, okay? So, a "
-              "tax overage is what we're covering today, okay? You want to know how to claim "
-              'the money.',
-      'timestamp': 565,
-      'timestamp_label': '[00:09:25]',
-      'timestamp_seconds': 565,
-      'tip': "All right, so now you know there's going to be an auction. So you could go to "
-             "the auction, so let's just go to the auction and have an example, okay? So, a "
-             "tax overage is what we're covering today, okay? You want to know how to claim "
-             'the money.',
-      'title': 'How To Claim Tax Sale Overages (Ted Thomas)',
-      'url': 'https://www.youtube.com/watch?v=d5TLZqkPX14&t=565s',
+      'text': 'Some finders get 50% of that action.',
+      'timestamp': 806,
+      'timestamp_label': '[00:13:26]',
+      'timestamp_seconds': 806,
+      'tip': 'Some finders get 50% of that action.',
+      'title': 'How To Claim Tax Sale Overages',
+      'url': 'https://www.youtube.com/watch?v=d5TLZqkPX14&t=806s',
       'video_id': 'd5TLZqkPX14'},
      {'author': 'Tax Sale Academy',
       'channel': 'Tax Sale Academy',
       'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:02:48](https://www.youtube.com/watch?v=snu6i8Dp6h8&t=168s)',
-      'relevance': 'Attributed practitioner commentary on tax-sale overages, mortgage '
-                   'foreclosure excess proceeds, and post-Tyler statutory lanes; verify '
-                   'against governing state statute.',
+      'markdown': '[00:00:18](https://www.youtube.com/watch?v=snu6i8Dp6h8&t=18s)',
+      'relevance': 'Practitioner testimony defining excess proceeds and county charges.',
       'source_type': 'video_pro_tip',
-      'text': "Tight budget that's it for today folks for more information on tax on investing "
-              'or from profiting from these excess proceeds visit tax all academy.com again '
-              "that's tax all academy.com have wonderful day folks take care okay.",
-      'timestamp': 168,
-      'timestamp_label': '[00:02:48]',
-      'timestamp_seconds': 168,
-      'tip': "Tight budget that's it for today folks for more information on tax on investing "
-             'or from profiting from these excess proceeds visit tax all academy.com again '
-             "that's tax all academy.com have wonderful day folks take care okay.",
-      'title': 'Tax Sale Excess Proceeds (Tax Sale Academy)',
-      'url': 'https://www.youtube.com/watch?v=snu6i8Dp6h8&t=168s',
+      'text': 'Excess proceeds are the amount that is paid above and beyond what is going to be '
+              'owed to the county.',
+      'timestamp': 18,
+      'timestamp_label': '[00:00:18]',
+      'timestamp_seconds': 18,
+      'tip': 'Excess proceeds are the amount that is paid above and beyond what is going to be '
+             'owed to the county.',
+      'title': 'Tax Sale Excess Proceeds',
+      'url': 'https://www.youtube.com/watch?v=snu6i8Dp6h8&t=18s',
       'video_id': 'snu6i8Dp6h8'},
-     {'author': 'Tax Deed Surplus & Lien-Research Records',
-      'channel': 'Tax Deed Surplus & Lien-Research Records',
-      'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:00:51](https://www.youtube.com/watch?v=y94Ncg0WHn0&t=51s)',
-      'relevance': 'Attributed practitioner commentary on tax-sale overages, mortgage '
-                   'foreclosure excess proceeds, and post-Tyler statutory lanes; verify '
-                   'against governing state statute.',
-      'source_type': 'video_pro_tip',
-      'text': "So now that we have the tax deed date, we're going to put in May 18th. This "
-              'shows you all of the tax deed auctions from that date and everything going '
-              "forward. We're only looking for the ones that sold uh or went up for auction on "
-              'May 18th.',
-      'timestamp': 51,
-      'timestamp_label': '[00:00:51]',
-      'timestamp_seconds': 51,
-      'tip': "So now that we have the tax deed date, we're going to put in May 18th. This "
-             'shows you all of the tax deed auctions from that date and everything going '
-             "forward. We're only looking for the ones that sold uh or went up for auction on "
-             'May 18th.',
-      'title': 'Polk County Tax Deed Surplus (Tax Deed Surplus & Lien-Research Records)',
-      'url': 'https://www.youtube.com/watch?v=y94Ncg0WHn0&t=51s',
-      'video_id': 'y94Ncg0WHn0'},
-     {'author': 'Probate Mastery',
-      'channel': 'Probate Mastery',
-      'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:02:56](https://www.youtube.com/watch?v=T2gvkByDlFU&t=176s)',
-      'relevance': 'Attributed practitioner commentary on tax-sale overages, mortgage '
-                   'foreclosure excess proceeds, and post-Tyler statutory lanes; verify '
-                   'against governing state statute.',
-      'source_type': 'video_pro_tip',
-      'text': "So, I've gotten so involved in this piece of the business, I created a new "
-              'podcast called the reverse mortgage podcast cuz so many of them were reverse '
-              'mortgages were going into foreclosure. And they had some equity, maybe not a '
-              'lot.',
-      'timestamp': 176,
-      'timestamp_label': '[00:02:56]',
-      'timestamp_seconds': 176,
-      'tip': "So, I've gotten so involved in this piece of the business, I created a new "
-             'podcast called the reverse mortgage podcast cuz so many of them were reverse '
-             'mortgages were going into foreclosure. And they had some equity, maybe not a '
-             'lot.',
-      'title': '🚨 Probate Property Headed to Foreclosure Auction… Is It Worth Pursuing? '
-               '(Probate Mastery)',
-      'url': 'https://www.youtube.com/watch?v=T2gvkByDlFU&t=176s',
-      'video_id': 'T2gvkByDlFU'},
-     {'author': 'Attorney Jack',
-      'channel': 'Attorney Jack',
-      'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:02:29](https://www.youtube.com/watch?v=KKKIgl--DNo&t=149s)',
-      'relevance': 'Attributed practitioner commentary on tax-sale overages, mortgage '
-                   'foreclosure excess proceeds, and post-Tyler statutory lanes; verify '
-                   'against governing state statute.',
-      'source_type': 'video_pro_tip',
-      'text': 'Remember, there are many times that people paid their mortgage or their tax '
-              'liens for years, and then at the last minute due to some unfortunate situation '
-              'or a death, uh the these the mortgage or the taxes were not paid. But, the '
-              'equity is still there in the property.',
-      'timestamp': 149,
-      'timestamp_label': '[00:02:29]',
-      'timestamp_seconds': 149,
-      'tip': 'Remember, there are many times that people paid their mortgage or their tax '
-             'liens for years, and then at the last minute due to some unfortunate situation '
-             'or a death, uh the these the mortgage or the taxes were not paid. But, the '
-             'equity is still there in the property.',
-      'title': 'Foreclosure - Surplus Funds Recovery - Attorney Assistance (Attorney Jack)',
-      'url': 'https://www.youtube.com/watch?v=KKKIgl--DNo&t=149s',
-      'video_id': 'KKKIgl--DNo'},
-     {'author': 'Money Making Juggernaut',
-      'channel': 'Money Making Juggernaut',
-      'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:00:52](https://www.youtube.com/watch?v=0pjP-Sr15PA&t=52s)',
-      'relevance': 'Attributed practitioner commentary on tax-sale overages, mortgage '
-                   'foreclosure excess proceeds, and post-Tyler statutory lanes; verify '
-                   'against governing state statute.',
-      'source_type': 'video_pro_tip',
-      'text': 'Opening bid for a mortgage foreclosure sometimes can be 2/3 of the appraisal '
-              'amount or 2/3 of the final judgment amount. Sometimes, it could also just be a '
-              'dollar amount that a trustee or a non-judicial sale feels as deemable for the '
-              'foreclosure, for the actual auction.',
-      'timestamp': 52,
-      'timestamp_label': '[00:00:52]',
-      'timestamp_seconds': 52,
-      'tip': 'Opening bid for a mortgage foreclosure sometimes can be 2/3 of the appraisal '
-             'amount or 2/3 of the final judgment amount. Sometimes, it could also just be a '
-             'dollar amount that a trustee or a non-judicial sale feels as deemable for the '
-             'foreclosure, for the actual auction.',
-      'title': 'Are You Doing Mortgage Foreclosure Surplus Funds Recovery? (Money Making '
-               'Juggernaut)',
-      'url': 'https://www.youtube.com/watch?v=0pjP-Sr15PA&t=52s',
-      'video_id': '0pjP-Sr15PA'},
-     {'author': 'Nick Fullmer- Overage Syndicate',
-      'channel': 'Nick Fullmer- Overage Syndicate',
-      'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:01:30](https://www.youtube.com/watch?v=KOYBZFn2k7w&t=90s)',
-      'relevance': 'Attributed practitioner commentary on tax-sale overages, mortgage '
-                   'foreclosure excess proceeds, and post-Tyler statutory lanes; verify '
-                   'against governing state statute.',
-      'source_type': 'video_pro_tip',
-      'text': "In certain states, you're gonna wanna know who was on the mortgage as well, "
-              'because in some states, Minnesota for example, the law actually says that the '
-              'surplus belongs to the mortgager, not necessarily the person on the deed.',
-      'timestamp': 90,
-      'timestamp_label': '[00:01:30]',
-      'timestamp_seconds': 90,
-      'tip': "In certain states, you're gonna wanna know who was on the mortgage as well, "
-             'because in some states, Minnesota for example, the law actually says that the '
-             'surplus belongs to the mortgager, not necessarily the person on the deed.',
-      'title': 'Overages & Surplus Fund Debt & Title Research: Not As Easy As It Seems.  Two '
-               'tips To Help (Nick Fullmer- Overage Syndicate)',
-      'url': 'https://www.youtube.com/watch?v=KOYBZFn2k7w&t=90s',
-      'video_id': 'KOYBZFn2k7w'},
-     {'author': 'William Whitman, Esquire',
-      'channel': 'William Whitman, Esquire',
-      'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:02:43](https://www.youtube.com/watch?v=0xk7lNvAgn0&t=163s)',
-      'relevance': 'Attributed practitioner commentary on tax-sale overages, mortgage '
-                   'foreclosure excess proceeds, and post-Tyler statutory lanes; verify '
-                   'against governing state statute.',
-      'source_type': 'video_pro_tip',
-      'text': 'If I wanted to get further information on a company that was owed surplus funds '
-              'or excess proceeds searching at the state Secretary of State or Department of '
-              'Corporations or Revenue site for additional publicly available information.',
-      'timestamp': 163,
-      'timestamp_label': '[00:02:43]',
-      'timestamp_seconds': 163,
-      'tip': 'If I wanted to get further information on a company that was owed surplus funds '
-             'or excess proceeds searching at the state Secretary of State or Department of '
-             'Corporations or Revenue site for additional publicly available information.',
-      'title': 'Will Whitman, Esquire explains how to locate companies owed surplus funds '
-               '(William Whitman, Esquire)',
-      'url': 'https://www.youtube.com/watch?v=0xk7lNvAgn0&t=163s',
-      'video_id': '0xk7lNvAgn0'},
-     {'author': 'Surplus Funds Secrets',
-      'channel': 'Surplus Funds Secrets',
-      'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:02:03](https://www.youtube.com/watch?v=i7mng3-o1u0&t=123s)',
-      'relevance': 'Attributed practitioner commentary on tax-sale overages, mortgage '
-                   'foreclosure excess proceeds, and post-Tyler statutory lanes; verify '
-                   'against governing state statute.',
-      'source_type': 'video_pro_tip',
-      'text': "So, there's good language and there's bad language. Bad language, I'm calling "
-              "about a foreclosure. A better version would be, I'm calling regarding money "
-              'that be money that might be owed to your estate tied from a foreclosure tax '
-              'sale auction.',
-      'timestamp': 123,
-      'timestamp_label': '[00:02:03]',
-      'timestamp_seconds': 123,
-      'tip': "So, there's good language and there's bad language. Bad language, I'm calling "
-             "about a foreclosure. A better version would be, I'm calling regarding money that "
-             'be money that might be owed to your estate tied from a foreclosure tax sale '
-             'auction.',
-      'title': 'Avoid These Mistakes In Surplus Funds Cold Calling (Surplus Funds Secrets)',
-      'url': 'https://www.youtube.com/watch?v=i7mng3-o1u0&t=123s',
-      'video_id': 'i7mng3-o1u0'}],
- 2: [{'author': 'Dreams & Dollars: The Everyday Entrepreneur',
-      'channel': 'Dreams & Dollars: The Everyday Entrepreneur',
-      'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:03:32](https://www.youtube.com/watch?v=pSC1FfAjNuo&t=212s)',
-      'relevance': 'Attributed practitioner commentary on county custodians, clerk/treasurer '
-                   'ledgers, stale warrants, and balance verification; verify directly with '
-                   'custodian records.',
-      'source_type': 'video_pro_tip',
-      'text': 'Step six, file with the correct office court registry, trustee, or county '
-              'finance. Step seven, some areas require a brief hearing show up with originals '
-              'and a clear timeline. Step eight, receive funds via check or a once approved.',
-      'timestamp': 212,
-      'timestamp_label': '[00:03:32]',
-      'timestamp_seconds': 212,
-      'tip': 'Step six, file with the correct office court registry, trustee, or county '
-             'finance. Step seven, some areas require a brief hearing show up with originals '
-             'and a clear timeline. Step eight, receive funds via check or a once approved.',
-      'title': 'Beginners Guide to Surplus Funds: How to Claim Money After Foreclosure- '
-               'Step-by-Step Tutorial (Dreams & Dollars: The Everyday Entrepreneur)',
-      'url': 'https://www.youtube.com/watch?v=pSC1FfAjNuo&t=212s',
-      'video_id': 'pSC1FfAjNuo'},
-     {'author': 'Alfred Taren',
-      'channel': 'Alfred Taren',
-      'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:01:14](https://www.youtube.com/watch?v=8-8koApqnYA&t=74s)',
-      'relevance': 'Attributed practitioner commentary on county custodians, clerk/treasurer '
-                   'ledgers, stale warrants, and balance verification; verify directly with '
-                   'custodian records.',
-      'source_type': 'video_pro_tip',
-      'text': "Here's the whole business model in one breath. The owner loses a property at "
-              'foreclosure auction or tax sale. The property sells for more than what was '
-              'owed. The county, the court, or the trustee holds the difference. The former '
-              'owner is legally entitled to that money.',
-      'timestamp': 74,
-      'timestamp_label': '[00:01:14]',
-      'timestamp_seconds': 74,
-      'tip': "Here's the whole business model in one breath. The owner loses a property at "
-             'foreclosure auction or tax sale. The property sells for more than what was owed. '
-             'The county, the court, or the trustee holds the difference. The former owner is '
-             'legally entitled to that money.',
-      'title': 'How to Start a Surplus Funds Business in 2026 (Step by Step) (Alfred Taren)',
-      'url': 'https://www.youtube.com/watch?v=8-8koApqnYA&t=74s',
-      'video_id': '8-8koApqnYA'},
-     {'author': 'Surplus Funds Secrets',
-      'channel': 'Surplus Funds Secrets',
-      'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:02:43](https://www.youtube.com/watch?v=v0-thxE7IK4&t=163s)',
-      'relevance': 'Attributed practitioner commentary on county custodians, clerk/treasurer '
-                   'ledgers, stale warrants, and balance verification; verify directly with '
-                   'custodian records.',
-      'source_type': 'video_pro_tip',
-      'text': 'Mortgage foreclosures typically sit with the court. The clerk of courts runs '
-              'the foreclosure sales, and the extra funds typically land in the court '
-              'registry. Many clerks publish exactly what funds are left over. Type the county '
-              'name and surplus funds or excess proceeds.',
-      'timestamp': 163,
-      'timestamp_label': '[00:02:43]',
-      'timestamp_seconds': 163,
-      'tip': 'Mortgage foreclosures typically sit with the court. The clerk of courts runs the '
-             'foreclosure sales, and the extra funds typically land in the court registry. '
-             'Many clerks publish exactly what funds are left over. Type the county name and '
-             'surplus funds or excess proceeds.',
-      'title': 'How To Find Surplus Funds Lists In 2026 (For Free) (Surplus Funds Secrets)',
-      'url': 'https://www.youtube.com/watch?v=v0-thxE7IK4&t=163s',
-      'video_id': 'v0-thxE7IK4'},
      {'author': 'Overage Acquisition',
       'channel': 'Overage Acquisition',
       'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:04:44](https://www.youtube.com/watch?v=q2gk3WmK5xs&t=284s)',
-      'relevance': 'Attributed practitioner commentary on county custodians, clerk/treasurer '
-                   'ledgers, stale warrants, and balance verification; verify directly with '
-                   'custodian records.',
+      'markdown': '[00:04:46](https://www.youtube.com/watch?v=q2gk3WmK5xs&t=286s)',
+      'relevance': 'Practitioner testimony supporting evidence-led disclosure to prospective '
+                   'clients.',
       'source_type': 'video_pro_tip',
-      'text': "'re entitled to surplus funds and provide concrete proof. This includes sales "
-              'results from foreclosure auctions, county maintained lists of surplus funds, or '
-              "court documents confirming their entitlement. Don't just tell them they have "
-              'money.',
-      'timestamp': 284,
-      'timestamp_label': '[00:04:44]',
-      'timestamp_seconds': 284,
-      'tip': "'re entitled to surplus funds and provide concrete proof. This includes sales "
-             'results from foreclosure auctions, county maintained lists of surplus funds, or '
-             "court documents confirming their entitlement. Don't just tell them they have "
-             'money.',
-      'title': 'The Most Overlooked Surplus Funds Recovery Business You Can Start With $0 '
-               '(Overage Acquisition)',
-      'url': 'https://www.youtube.com/watch?v=q2gk3WmK5xs&t=284s',
+      'text': "Don't just tell them they have money. Show them the evidence.",
+      'timestamp': 286,
+      'timestamp_label': '[00:04:46]',
+      'timestamp_seconds': 286,
+      'tip': "Don't just tell them they have money. Show them the evidence.",
+      'title': 'The Most Overlooked Surplus Funds Recovery Business You Can Start With $0',
+      'url': 'https://www.youtube.com/watch?v=q2gk3WmK5xs&t=286s',
       'video_id': 'q2gk3WmK5xs'},
      {'author': 'Money Making Juggernaut',
       'channel': 'Money Making Juggernaut',
       'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:02:35](https://www.youtube.com/watch?v=0pjP-Sr15PA&t=155s)',
-      'relevance': 'Attributed practitioner commentary on county custodians, clerk/treasurer '
-                   'ledgers, stale warrants, and balance verification; verify directly with '
-                   'custodian records.',
+      'markdown': '[00:18:26](https://www.youtube.com/watch?v=vs2o6Zz48Oc&t=1106s)',
+      'relevance': "A student testimonial itemizing mail-campaign costs in Richardson's webinar.",
       'source_type': 'video_pro_tip',
-      'text': '" You want to see proof of that payment. You want to see disbursement history '
-              "because they have a superior lien or they're first entitled, doesn't mean that "
-              'the trustee did indeed hand over those surplus funds.',
-      'timestamp': 155,
-      'timestamp_label': '[00:02:35]',
-      'timestamp_seconds': 155,
-      'tip': '" You want to see proof of that payment. You want to see disbursement history '
-             "because they have a superior lien or they're first entitled, doesn't mean that "
-             'the trustee did indeed hand over those surplus funds.',
-      'title': 'Are You Doing Mortgage Foreclosure Surplus Funds Recovery? (Money Making '
-               'Juggernaut)',
-      'url': 'https://www.youtube.com/watch?v=0pjP-Sr15PA&t=155s',
-      'video_id': '0pjP-Sr15PA'},
-     {'author': 'Surplus_Prosperity',
-      'channel': 'Surplus_Prosperity',
+      'text': 'For every letter that I send out it costs me 85 cents.',
+      'timestamp': 1106,
+      'timestamp_label': '[00:18:26]',
+      'timestamp_seconds': 1106,
+      'tip': 'For every letter that I send out it costs me 85 cents.',
+      'title': 'How The Surplus Funds Recovery Business Works 🤑 [Step By Step Training]',
+      'url': 'https://www.youtube.com/watch?v=vs2o6Zz48Oc&t=1106s',
+      'video_id': 'vs2o6Zz48Oc'},
+     {'author': 'Spencer Vann',
+      'channel': 'Spencer Vann',
       'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:01:02](https://www.youtube.com/watch?v=MYo3k2Sxj1Q&t=62s)',
-      'relevance': 'Attributed practitioner commentary on county custodians, clerk/treasurer '
-                   'ledgers, stale warrants, and balance verification; verify directly with '
-                   'custodian records.',
+      'markdown': '[00:02:42](https://www.youtube.com/watch?v=GG8f_umaBfY&t=162s)',
+      'relevance': 'Practitioner testimony on data as one of three core operating functions.',
       'source_type': 'video_pro_tip',
-      'text': 'And the law in most states is very clear about who that money belongs to. It '
-              'belongs to the former owner. In this case, is likely you or a relative of '
-              'yours. The county or the court is holding it right now.',
-      'timestamp': 62,
-      'timestamp_label': '[00:01:02]',
-      'timestamp_seconds': 62,
-      'tip': 'And the law in most states is very clear about who that money belongs to. It '
-             'belongs to the former owner. In this case, is likely you or a relative of yours. '
-             'The county or the court is holding it right now.',
-      'title': 'What Are Surplus Funds? How to Claim Money Owed to You After Foreclosure or '
-               'Tax Sale (Surplus_Prosperity)',
-      'url': 'https://www.youtube.com/watch?v=MYo3k2Sxj1Q&t=62s',
-      'video_id': 'MYo3k2Sxj1Q'},
-     {'author': 'Consumer Action Law Group',
-      'channel': 'Consumer Action Law Group',
+      'text': 'You have to be able to get data, and filter data, and handle data efficiently.',
+      'timestamp': 162,
+      'timestamp_label': '[00:02:42]',
+      'timestamp_seconds': 162,
+      'tip': 'You have to be able to get data, and filter data, and handle data efficiently.',
+      'title': 'Ultimate Surplus Fund/Overage Guide ($0-$12k Surplus Fund/Overage Course Part 1)',
+      'url': 'https://www.youtube.com/watch?v=GG8f_umaBfY&t=162s',
+      'video_id': 'GG8f_umaBfY'},
+     {'author': 'SurplusFundsRiches',
+      'channel': 'SurplusFundsRiches',
       'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:02:46](https://www.youtube.com/watch?v=gUeG4eQdMy8&t=166s)',
-      'relevance': 'Attributed practitioner commentary on county custodians, clerk/treasurer '
-                   'ledgers, stale warrants, and balance verification; verify directly with '
-                   'custodian records.',
+      'markdown': '[00:18:37](https://www.youtube.com/watch?v=4W8c0I28pxQ&t=1117s)',
+      'relevance': 'Practitioner testimony on researching entitlement and competing debt.',
       'source_type': 'video_pro_tip',
-      'text': 'Help by figuring out if there is a surplus we research the title we look for '
-              'sale proceeds we look for the trustee and we can give you a time frame as to '
-              'whether the funds have been deposited with the court.',
-      'timestamp': 166,
-      'timestamp_label': '[00:02:46]',
-      'timestamp_seconds': 166,
-      'tip': 'Help by figuring out if there is a surplus we research the title we look for '
-             'sale proceeds we look for the trustee and we can give you a time frame as to '
-             'whether the funds have been deposited with the court.',
-      'title': 'How to Claim Surplus Funds from Foreclosure (Step by Step Tutorial) (Consumer '
-               'Action Law Group)',
-      'url': 'https://www.youtube.com/watch?v=gUeG4eQdMy8&t=166s',
-      'video_id': 'gUeG4eQdMy8'},
-     {'author': 'Alfred Taren',
-      'channel': 'Alfred Taren',
-      'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:07:03](https://www.youtube.com/watch?v=LdemHPCk0dk&t=423s)',
-      'relevance': 'Attributed practitioner commentary on county custodians, clerk/treasurer '
-                   'ledgers, stale warrants, and balance verification; verify directly with '
-                   'custodian records.',
-      'source_type': 'video_pro_tip',
-      'text': 'So check the foreclosure file, the county records, and a free property data '
-              'site like Propwire. Then ask the office and ask the owner of the house. And '
-              'treat it all as an estimate. Always say possible funds or estimated surplus. '
-              'Never promise them a number.',
-      'timestamp': 423,
-      'timestamp_label': '[00:07:03]',
-      'timestamp_seconds': 423,
-      'tip': 'So check the foreclosure file, the county records, and a free property data site '
-             'like Propwire. Then ask the office and ask the owner of the house. And treat it '
-             'all as an estimate. Always say possible funds or estimated surplus. Never '
-             'promise them a number.',
-      'title': 'How to Check for Liens Before You Call About Surplus Funds (Alfred Taren)',
-      'url': 'https://www.youtube.com/watch?v=LdemHPCk0dk&t=423s',
-      'video_id': 'LdemHPCk0dk'},
+      'text': 'You have to research the ownership and the debt as it stood the day of the sale.',
+      'timestamp': 1117,
+      'timestamp_label': '[00:18:37]',
+      'timestamp_seconds': 1117,
+      'tip': 'You have to research the ownership and the debt as it stood the day of the sale.',
+      'title': 'Free Surplus Funds Training - Indepth, full hour! SurplusFundsRiches',
+      'url': 'https://www.youtube.com/watch?v=4W8c0I28pxQ&t=1117s',
+      'video_id': '4W8c0I28pxQ'},
      {'author': "Bob Diamond - America's Tax Sale Attorney",
       'channel': "Bob Diamond - America's Tax Sale Attorney",
       'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:01:31](https://www.youtube.com/watch?v=lzU09FRqmhg&t=91s)',
-      'relevance': 'Attributed practitioner commentary on county custodians, clerk/treasurer '
-                   'ledgers, stale warrants, and balance verification; verify directly with '
-                   'custodian records.',
+      'markdown': '[00:07:31](https://www.youtube.com/watch?v=3GWaY7tvULM&t=451s)',
+      'relevance': 'Practitioner testimony on withholding the source before contracting.',
       'source_type': 'video_pro_tip',
-      'text': 'So the money gets deposited with the clerk of court, and generally, you can get '
-              "lists of monies on deposit. It's called the registry of court, just by "
-              "requesting it from the clerk of court, and you're going to see all kinds of "
-              'monies on deposit.',
-      'timestamp': 91,
-      'timestamp_label': '[00:01:31]',
-      'timestamp_seconds': 91,
-      'tip': 'So the money gets deposited with the clerk of court, and generally, you can get '
-             "lists of monies on deposit. It's called the registry of court, just by "
-             "requesting it from the clerk of court, and you're going to see all kinds of "
-             'monies on deposit.',
-      'title': "How To Claim Surplus Funds From Foreclosure (Bob Diamond - America's Tax Sale "
-               'Attorney)',
-      'url': 'https://www.youtube.com/watch?v=lzU09FRqmhg&t=91s',
-      'video_id': 'lzU09FRqmhg'},
-     {'author': 'Haynes Law Group',
-      'channel': 'Haynes Law Group',
+      'text': "When we call them, we don't tell them the source of the money.",
+      'timestamp': 451,
+      'timestamp_label': '[00:07:31]',
+      'timestamp_seconds': 451,
+      'tip': "When we call them, we don't tell them the source of the money.",
+      'title': 'Bob Diamond : How to Make Money With Tax Sale Overages In 2024',
+      'url': 'https://www.youtube.com/watch?v=3GWaY7tvULM&t=451s',
+      'video_id': '3GWaY7tvULM'},
+     {'author': 'Unclaimed CEO',
+      'channel': 'Unclaimed CEO',
       'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:00:25](https://www.youtube.com/watch?v=Uj-vrJWHKQo&t=25s)',
-      'relevance': 'Attributed practitioner commentary on county custodians, clerk/treasurer '
-                   'ledgers, stale warrants, and balance verification; verify directly with '
-                   'custodian records.',
+      'markdown': '[00:02:13](https://www.youtube.com/watch?v=ug2uUK_s2yk&t=133s)',
+      'relevance': 'Practitioner testimony explaining why mailed notices may not reach former '
+                   'owners.',
       'source_type': 'video_pro_tip',
-      'text': 'Florida statute 4532 subsection 1b to actually um be and so had a hearing last '
-              'week in front of um Broward County judge. Uh I represented the former owner of '
-              'a property. The surplus amount was about $252 uh,000. So significant the there '
-              'was a city lean against the property.',
-      'timestamp': 25,
-      'timestamp_label': '[00:00:25]',
-      'timestamp_seconds': 25,
-      'tip': 'Florida statute 4532 subsection 1b to actually um be and so had a hearing last '
-             'week in front of um Broward County judge. Uh I represented the former owner of a '
-             'property. The surplus amount was about $252 uh,000. So significant the there was '
-             'a city lean against the property.',
-      'title': 'Florida Foreclosure Surplus Funds Update: What is a Subordinate Lien Holder? '
-               '(Haynes Law Group)',
-      'url': 'https://www.youtube.com/watch?v=Uj-vrJWHKQo&t=25s',
-      'video_id': 'Uj-vrJWHKQo'},
+      'text': 'The last known address is the home that they got kicked out of.',
+      'timestamp': 133,
+      'timestamp_label': '[00:02:13]',
+      'timestamp_seconds': 133,
+      'tip': 'The last known address is the home that they got kicked out of.',
+      'title': 'The Surplus Funds Secret You NEED to Know Before Taking the Plunge',
+      'url': 'https://www.youtube.com/watch?v=ug2uUK_s2yk&t=133s',
+      'video_id': 'ug2uUK_s2yk'},
+     {'author': "Bob Diamond - America's Tax Sale Attorney",
+      'channel': "Bob Diamond - America's Tax Sale Attorney",
+      'epistemic_status': 'attributed_practitioner_claim',
+      'markdown': '[00:04:40](https://www.youtube.com/watch?v=eLVlXKRQOTI&t=280s)',
+      'relevance': 'Firsthand practitioner testimony on mistaken claimant identities.',
+      'source_type': 'video_pro_tip',
+      'text': 'We wanted this John P. Smith, but we got that John P. Smith.',
+      'timestamp': 280,
+      'timestamp_label': '[00:04:40]',
+      'timestamp_seconds': 280,
+      'tip': 'We wanted this John P. Smith, but we got that John P. Smith.',
+      'title': 'Foreclosure Overages For Dummies',
+      'url': 'https://www.youtube.com/watch?v=eLVlXKRQOTI&t=280s',
+      'video_id': 'eLVlXKRQOTI'},
+     {'author': 'overagesorg',
+      'channel': 'overagesorg',
+      'epistemic_status': 'attributed_practitioner_claim',
+      'markdown': '[00:00:00](https://www.youtube.com/watch?v=8Xmv6tj4900&t=0s)',
+      'relevance': 'Practitioner testimony outlining the records-to-owner service model.',
+      'source_type': 'video_pro_tip',
+      'text': 'First you find the records, then you find the owners, and then you offer to help '
+              'connect the owners with their money.',
+      'timestamp': 0,
+      'timestamp_label': '[00:00:00]',
+      'timestamp_seconds': 0,
+      'tip': 'First you find the records, then you find the owners, and then you offer to help '
+             'connect the owners with their money.',
+      'title': 'Government Tax Lien Foreclosure Overages Program',
+      'url': 'https://www.youtube.com/watch?v=8Xmv6tj4900&t=0s',
+      'video_id': '8Xmv6tj4900'},
+     {'author': 'overagesorg',
+      'channel': 'overagesorg',
+      'epistemic_status': 'attributed_practitioner_claim',
+      'markdown': '[00:00:31](https://www.youtube.com/watch?v=FOHcsz8xKFk&t=31s)',
+      'relevance': "Practitioner testimony describing the channel's advertised finder-fee range.",
+      'source_type': 'video_pro_tip',
+      'text': 'Find the records, find the owners, and get them under contract for a hefty 30 to '
+              '50% for your information and assistance in the form of a service fee.',
+      'timestamp': 31,
+      'timestamp_label': '[00:00:31]',
+      'timestamp_seconds': 31,
+      'tip': 'Find the records, find the owners, and get them under contract for a hefty 30 to 50% '
+             'for your information and assistance in the form of a service fee.',
+      'title': 'Unclaimed Funds From Government Tax Lien Foreclosure',
+      'url': 'https://www.youtube.com/watch?v=FOHcsz8xKFk&t=31s',
+      'video_id': 'FOHcsz8xKFk'},
+     {'author': 'Overage Acquisition',
+      'channel': 'Overage Acquisition',
+      'epistemic_status': 'attributed_practitioner_claim',
+      'markdown': '[00:00:50](https://www.youtube.com/watch?v=zed9ZTbgUfI&t=50s)',
+      'relevance': 'Practitioner testimony explaining the $100,000 sale and $10,000 tax example.',
+      'source_type': 'video_pro_tip',
+      'text': 'That additional $90,000, the difference between the sale price and the tax '
+              'liability, is called the overage.',
+      'timestamp': 50,
+      'timestamp_label': '[00:00:50]',
+      'timestamp_seconds': 50,
+      'tip': 'That additional $90,000, the difference between the sale price and the tax '
+             'liability, is called the overage.',
+      'title': 'Unclaimed Money You Can Legally Claim | Tax Overages Explained',
+      'url': 'https://www.youtube.com/watch?v=zed9ZTbgUfI&t=50s',
+      'video_id': 'zed9ZTbgUfI'},
+     {'author': 'SurplusFundsRiches',
+      'channel': 'SurplusFundsRiches',
+      'epistemic_status': 'attributed_practitioner_claim',
+      'markdown': '[00:42:21](https://www.youtube.com/watch?v=4W8c0I28pxQ&t=2541s)',
+      'relevance': 'Practitioner testimony on the upfront-payment structured-buyout alternative.',
+      'source_type': 'video_pro_tip',
+      'text': 'I give them 10% of the gross amount held by the court upfront within a week or two '
+              'after they sign my documents.',
+      'timestamp': 2541,
+      'timestamp_label': '[00:42:21]',
+      'timestamp_seconds': 2541,
+      'tip': 'I give them 10% of the gross amount held by the court upfront within a week or two '
+             'after they sign my documents.',
+      'title': 'Free Surplus Funds Training - Indepth, full hour! SurplusFundsRiches',
+      'url': 'https://www.youtube.com/watch?v=4W8c0I28pxQ&t=2541s',
+      'video_id': '4W8c0I28pxQ'},
+     {'author': 'SurplusFundsRiches',
+      'channel': 'SurplusFundsRiches',
+      'epistemic_status': 'attributed_practitioner_claim',
+      'markdown': '[00:56:02](https://www.youtube.com/watch?v=4W8c0I28pxQ&t=3362s)',
+      'relevance': 'Practitioner testimony on title-recheck spending before advancing good-faith '
+                   'money.',
+      'source_type': 'video_pro_tip',
+      'text': "I'd rather pay 150 upfront and find out that there is additional debt and I can't "
+              'work the deal.',
+      'timestamp': 3362,
+      'timestamp_label': '[00:56:02]',
+      'timestamp_seconds': 3362,
+      'tip': "I'd rather pay 150 upfront and find out that there is additional debt and I can't "
+             'work the deal.',
+      'title': 'Free Surplus Funds Training - Indepth, full hour! SurplusFundsRiches',
+      'url': 'https://www.youtube.com/watch?v=4W8c0I28pxQ&t=3362s',
+      'video_id': '4W8c0I28pxQ'}],
+ 2: [{'author': 'BizMove',
+      'channel': 'BizMove',
+      'epistemic_status': 'attributed_practitioner_claim',
+      'markdown': '[00:02:35](https://www.youtube.com/watch?v=01plOr9pFjQ&t=155s)',
+      'relevance': 'Verbatim practitioner testimony from Chapter Q2.',
+      'source_type': 'video_pro_tip',
+      'text': 'Your business depends on accurate data about tax sales and surplus funds.',
+      'timestamp': 155,
+      'timestamp_label': '[00:02:35]',
+      'timestamp_seconds': 155,
+      'tip': 'Your business depends on accurate data about tax sales and surplus funds.',
+      'title': 'How to Start a Tax Overage Business | Complete and Easy to Follow Guide',
+      'url': 'https://www.youtube.com/watch?v=01plOr9pFjQ&t=155s',
+      'video_id': '01plOr9pFjQ'},
      {'author': 'Money Making Juggernaut',
       'channel': 'Money Making Juggernaut',
       'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:06:08](https://www.youtube.com/watch?v=R8B06ovsDXI&t=368s)',
-      'relevance': 'Attributed practitioner commentary on county custodians, clerk/treasurer '
-                   'ledgers, stale warrants, and balance verification; verify directly with '
-                   'custodian records.',
+      'markdown': '[00:02:24](https://www.youtube.com/watch?v=1fbTnvEjC7M&t=144s)',
+      'relevance': 'Verbatim practitioner testimony from Chapter Q2.',
       'source_type': 'video_pro_tip',
-      'text': 'Judicial, this means that the county conducts the sale. So, this can be like '
-              'the sheriff or the clerk of courts. This means a trustee or a foreclosure '
-              'attorney. Well, whoever conducts the sale typically releases the funds.',
-      'timestamp': 368,
-      'timestamp_label': '[00:06:08]',
-      'timestamp_seconds': 368,
-      'tip': 'Judicial, this means that the county conducts the sale. So, this can be like the '
-             'sheriff or the clerk of courts. This means a trustee or a foreclosure attorney. '
-             'Well, whoever conducts the sale typically releases the funds.',
-      'title': 'How to start a Surplus Funds Business (45 min raw free game) (Money Making '
-               'Juggernaut)',
-      'url': 'https://www.youtube.com/watch?v=R8B06ovsDXI&t=368s',
+      'text': 'The easiest way to skip trace them for free is truepeoplesearch.com.',
+      'timestamp': 144,
+      'timestamp_label': '[00:02:24]',
+      'timestamp_seconds': 144,
+      'tip': 'The easiest way to skip trace them for free is truepeoplesearch.com.',
+      'title': 'How to get started in Tax Overages with NO MONEY',
+      'url': 'https://www.youtube.com/watch?v=1fbTnvEjC7M&t=144s',
+      'video_id': '1fbTnvEjC7M'},
+     {'author': 'Money Making Juggernaut',
+      'channel': 'Money Making Juggernaut',
+      'epistemic_status': 'attributed_practitioner_claim',
+      'markdown': '[00:26:43](https://www.youtube.com/watch?v=R8B06ovsDXI&t=1603s)',
+      'relevance': 'Verbatim practitioner testimony from Chapter Q2.',
+      'source_type': 'video_pro_tip',
+      'text': "First, we need to confirm it's sold to a third party.",
+      'timestamp': 1603,
+      'timestamp_label': '[00:26:43]',
+      'timestamp_seconds': 1603,
+      'tip': "First, we need to confirm it's sold to a third party.",
+      'title': 'How to start a Surplus Funds Business (45 min raw free game)',
+      'url': 'https://www.youtube.com/watch?v=R8B06ovsDXI&t=1603s',
       'video_id': 'R8B06ovsDXI'},
-     {'author': 'BizMove',
-      'channel': 'BizMove',
+     {'author': 'Alfred Taren',
+      'channel': 'Alfred Taren',
       'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:00:35](https://www.youtube.com/watch?v=01plOr9pFjQ&t=35s)',
-      'relevance': 'Attributed practitioner commentary on county custodians, clerk/treasurer '
-                   'ledgers, stale warrants, and balance verification; verify directly with '
-                   'custodian records.',
+      'markdown': '[00:05:58](https://www.youtube.com/watch?v=8-8koApqnYA&t=358s)',
+      'relevance': 'Verbatim practitioner testimony from Chapter Q2.',
       'source_type': 'video_pro_tip',
-      'text': 'The original property owner may be entitled to claim those surplus funds, and '
-              'your business can help locate, notify, and assist those owners in reclaiming '
-              'their money for a fee.',
-      'timestamp': 35,
-      'timestamp_label': '[00:00:35]',
-      'timestamp_seconds': 35,
-      'tip': 'The original property owner may be entitled to claim those surplus funds, and '
-             'your business can help locate, notify, and assist those owners in reclaiming '
-             'their money for a fee.',
-      'title': 'How to Start a Tax Overage Business | Complete and Easy to Follow Guide '
-               '(BizMove)',
-      'url': 'https://www.youtube.com/watch?v=01plOr9pFjQ&t=35s',
-      'video_id': '01plOr9pFjQ'},
-     {'author': 'AFX Research LLC',
-      'channel': 'AFX Research LLC',
+      'text': 'Doing the business is better than preparing for the business.',
+      'timestamp': 358,
+      'timestamp_label': '[00:05:58]',
+      'timestamp_seconds': 358,
+      'tip': 'Doing the business is better than preparing for the business.',
+      'title': 'How to Start a Surplus Funds Business in 2026 (Step by Step)',
+      'url': 'https://www.youtube.com/watch?v=8-8koApqnYA&t=358s',
+      'video_id': '8-8koApqnYA'},
+     {'author': 'Nick Fullmer- Overage Syndicate',
+      'channel': 'Nick Fullmer- Overage Syndicate',
       'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:01:26](https://www.youtube.com/watch?v=HPyO3dkjbCQ&t=86s)',
-      'relevance': 'Attributed practitioner commentary on county custodians, clerk/treasurer '
-                   'ledgers, stale warrants, and balance verification; verify directly with '
-                   'custodian records.',
+      'markdown': '[00:13:03](https://www.youtube.com/watch?v=vd__NHmQYgM&t=783s)',
+      'relevance': 'Verbatim practitioner testimony from Chapter Q2.',
       'source_type': 'video_pro_tip',
-      'text': 'Most counties have online databases you can search by address or owner name. '
-              'Harris County, Travis County, Dallas County — they all have public record '
-              'portals where this information lives. Next, check the County Tax '
-              "Assessor-Collector's website.",
+      'text': "In this business for me, it's get a contract out every week, at a minimum.",
+      'timestamp': 783,
+      'timestamp_label': '[00:13:03]',
+      'timestamp_seconds': 783,
+      'tip': "In this business for me, it's get a contract out every week, at a minimum.",
+      'title': '8 Surplus Funds Deals Within 3 Months of Starting The Business',
+      'url': 'https://www.youtube.com/watch?v=vd__NHmQYgM&t=783s',
+      'video_id': 'vd__NHmQYgM'},
+     {'author': 'Money Making Juggernaut',
+      'channel': 'Money Making Juggernaut',
+      'epistemic_status': 'attributed_practitioner_claim',
+      'markdown': '[00:01:49](https://www.youtube.com/watch?v=lFoZDRAGylo&t=109s)',
+      'relevance': 'Verbatim practitioner testimony from Chapter Q2.',
+      'source_type': 'video_pro_tip',
+      'text': 'If you want to get paid consistently, you need to stack up your pipeline and put in '
+              'the work every single week.',
+      'timestamp': 109,
+      'timestamp_label': '[00:01:49]',
+      'timestamp_seconds': 109,
+      'tip': 'If you want to get paid consistently, you need to stack up your pipeline and put in '
+             'the work every single week.',
+      'title': 'How Much Money Can You *REALISTICALLY* Make With Surplus Funds Recovery',
+      'url': 'https://www.youtube.com/watch?v=lFoZDRAGylo&t=109s',
+      'video_id': 'lFoZDRAGylo'},
+     {'author': 'Overage Acquisition',
+      'channel': 'Overage Acquisition',
+      'epistemic_status': 'attributed_practitioner_claim',
+      'markdown': '[00:02:05](https://www.youtube.com/watch?v=bpxSOg1_xbE&t=125s)',
+      'relevance': 'Verbatim practitioner testimony from Chapter Q2.',
+      'source_type': 'video_pro_tip',
+      'text': 'Before working on any case, verify that no one else has already filed a claim for '
+              'the surplus funds.',
+      'timestamp': 125,
+      'timestamp_label': '[00:02:05]',
+      'timestamp_seconds': 125,
+      'tip': 'Before working on any case, verify that no one else has already filed a claim for '
+             'the surplus funds.',
+      'title': 'Top 5 Things Nobody Tells You About the Surplus Funds Recovery Business',
+      'url': 'https://www.youtube.com/watch?v=bpxSOg1_xbE&t=125s',
+      'video_id': 'bpxSOg1_xbE'},
+     {'author': 'Money Making Juggernaut',
+      'channel': 'Money Making Juggernaut',
+      'epistemic_status': 'attributed_practitioner_claim',
+      'markdown': '[00:08:47](https://www.youtube.com/watch?v=gB8lD75eL5I&t=527s)',
+      'relevance': 'Verbatim practitioner testimony from Chapter Q2.',
+      'source_type': 'video_pro_tip',
+      'text': 'I ended up talking to her, just being very friendly with her and being honest, and '
+              'she signed with me at 35%.',
+      'timestamp': 527,
+      'timestamp_label': '[00:08:47]',
+      'timestamp_seconds': 527,
+      'tip': 'I ended up talking to her, just being very friendly with her and being honest, and '
+             'she signed with me at 35%.',
+      'title': 'Beginner Made $67k On His 1st Surplus Funds Recovery Deal (Tax Deed Surplus)',
+      'url': 'https://www.youtube.com/watch?v=gB8lD75eL5I&t=527s',
+      'video_id': 'gB8lD75eL5I'},
+     {'author': 'SurplusFundsRiches',
+      'channel': 'SurplusFundsRiches',
+      'epistemic_status': 'attributed_practitioner_claim',
+      'markdown': '[00:03:38](https://www.youtube.com/watch?v=1N1Z99kUvRw&t=218s)',
+      'relevance': 'Verbatim practitioner testimony from Chapter Q2.',
+      'source_type': 'video_pro_tip',
+      'text': 'With joint tenants with the right survivorship, the number one factor is the date '
+              'of death.',
+      'timestamp': 218,
+      'timestamp_label': '[00:03:38]',
+      'timestamp_seconds': 218,
+      'tip': 'With joint tenants with the right survivorship, the number one factor is the date of '
+             'death.',
+      'title': 'Surplus Funds: Owner Died - STILL CLAIM!',
+      'url': 'https://www.youtube.com/watch?v=1N1Z99kUvRw&t=218s',
+      'video_id': '1N1Z99kUvRw'},
+     {'author': 'Money Making Juggernaut',
+      'channel': 'Money Making Juggernaut',
+      'epistemic_status': 'attributed_practitioner_claim',
+      'markdown': '[00:04:24](https://www.youtube.com/watch?v=1uIxpXmBzuU&t=264s)',
+      'relevance': 'Verbatim practitioner testimony from Chapter Q2.',
+      'source_type': 'video_pro_tip',
+      'text': 'Overall, total for everything about $300,000. But ours personally, like success fee '
+              'or recovery fee, $80,000.',
+      'timestamp': 264,
+      'timestamp_label': '[00:04:24]',
+      'timestamp_seconds': 264,
+      'tip': 'Overall, total for everything about $300,000. But ours personally, like success fee '
+             'or recovery fee, $80,000.',
+      'title': 'He Did 12 Deals in 70 Hours ($300k in Surplus Funds Recovery)',
+      'url': 'https://www.youtube.com/watch?v=1uIxpXmBzuU&t=264s',
+      'video_id': '1uIxpXmBzuU'},
+     {'author': 'Money Making Juggernaut',
+      'channel': 'Money Making Juggernaut',
+      'epistemic_status': 'attributed_practitioner_claim',
+      'markdown': '[00:03:56](https://www.youtube.com/watch?v=sK5PqCLSzzg&t=236s)',
+      'relevance': 'Verbatim practitioner testimony from Chapter Q2.',
+      'source_type': 'video_pro_tip',
+      'text': "Anytime you're getting something for free, you're not sacrificing money, you're "
+              'sacrificing your intelligence and your time.',
+      'timestamp': 236,
+      'timestamp_label': '[00:03:56]',
+      'timestamp_seconds': 236,
+      'tip': "Anytime you're getting something for free, you're not sacrificing money, you're "
+             'sacrificing your intelligence and your time.',
+      'title': 'How To Start Asset Recovery Business With $0 (Surplus Funds Recovery)',
+      'url': 'https://www.youtube.com/watch?v=sK5PqCLSzzg&t=236s',
+      'video_id': 'sK5PqCLSzzg'},
+     {'author': 'Surplus Funds Academy',
+      'channel': 'Surplus Funds Academy',
+      'epistemic_status': 'attributed_practitioner_claim',
+      'markdown': '[00:01:26](https://www.youtube.com/watch?v=8Rn25K08ct4&t=86s)',
+      'relevance': 'Verbatim practitioner testimony from Chapter Q2.',
+      'source_type': 'video_pro_tip',
+      'text': 'The first step in surplus funds recovery is identifying cases where surplus funds '
+              'exist.',
       'timestamp': 86,
       'timestamp_label': '[00:01:26]',
       'timestamp_seconds': 86,
-      'tip': 'Most counties have online databases you can search by address or owner name. '
-             'Harris County, Travis County, Dallas County — they all have public record '
-             'portals where this information lives. Next, check the County Tax '
-             "Assessor-Collector's website.",
-      'title': 'HOW TO FIND LIENS & TITLE SEARCH IN TEXAS (AFX Research LLC)',
-      'url': 'https://www.youtube.com/watch?v=HPyO3dkjbCQ&t=86s',
-      'video_id': 'HPyO3dkjbCQ'},
-     {'author': 'ohiocommerce',
-      'channel': 'ohiocommerce',
+      'tip': 'The first step in surplus funds recovery is identifying cases where surplus funds '
+             'exist.',
+      'title': '💰 60-Day Mentorship Surplus Fund Recovery - WWW.SURPLUSCOURSES.COM - Rob Coles 💰',
+      'url': 'https://www.youtube.com/watch?v=8Rn25K08ct4&t=86s',
+      'video_id': '8Rn25K08ct4'},
+     {'author': 'SurplusFundsRiches',
+      'channel': 'SurplusFundsRiches',
       'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:01:28](https://www.youtube.com/watch?v=o1cc3hUtIv4&t=88s)',
-      'relevance': 'Attributed practitioner commentary on county custodians, clerk/treasurer '
-                   'ledgers, stale warrants, and balance verification; verify directly with '
-                   'custodian records.',
+      'markdown': '[00:01:45](https://www.youtube.com/watch?v=fzvvdAGwCBM&t=105s)',
+      'relevance': 'Verbatim practitioner testimony from Chapter Q2.',
       'source_type': 'video_pro_tip',
-      'text': "So first we're going to go to unclaimed funds. You don't want to forget that. "
-              "And please check our site often. So, there are several ways. If you're on our "
-              'site, you can go to how you claim funds.',
-      'timestamp': 88,
-      'timestamp_label': '[00:01:28]',
-      'timestamp_seconds': 88,
-      'tip': "So first we're going to go to unclaimed funds. You don't want to forget that. "
-             "And please check our site often. So, there are several ways. If you're on our "
-             'site, you can go to how you claim funds.',
-      'title': 'Watch our Demo on How to Claim Your Ohio Unclaimed Funds (ohiocommerce)',
-      'url': 'https://www.youtube.com/watch?v=o1cc3hUtIv4&t=88s',
-      'video_id': 'o1cc3hUtIv4'},
-     {'author': 'Lenny the Lawyer-Live',
-      'channel': 'Lenny the Lawyer-Live',
-      'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:04:43](https://www.youtube.com/watch?v=dn1b-e6bUyo&t=283s)',
-      'relevance': 'Attributed practitioner commentary on county custodians, clerk/treasurer '
-                   'ledgers, stale warrants, and balance verification; verify directly with '
-                   'custodian records.',
-      'source_type': 'video_pro_tip',
-      'text': "In the background you might have heard the cat he's not interested in surplus "
-              "funds he's just interested in food thank you for your time we value your time "
-              'we know your time is not replaceable but money is so bear that in mind.',
-      'timestamp': 283,
-      'timestamp_label': '[00:04:43]',
-      'timestamp_seconds': 283,
-      'tip': "In the background you might have heard the cat he's not interested in surplus "
-             "funds he's just interested in food thank you for your time we value your time we "
-             'know your time is not replaceable but money is so bear that in mind.',
-      'title': 'How Can You Get Surplus Funds After Your House is Sold at Foreclosure In 2023? '
-               '(Lenny the Lawyer-Live)',
-      'url': 'https://www.youtube.com/watch?v=dn1b-e6bUyo&t=283s',
-      'video_id': 'dn1b-e6bUyo'}],
- 3: [{'author': "Bob Diamond - America's Tax Sale Attorney",
-      'channel': "Bob Diamond - America's Tax Sale Attorney",
-      'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:06:57](https://www.youtube.com/watch?v=qGPsbhsEAVQ&t=417s)',
-      'relevance': 'Attributed practitioner commentary on contingency fee caps, assignment '
-                   'restrictions, and net recovery unit economics; verify statutory ceilings '
-                   'before contracting.',
-      'source_type': 'video_pro_tip',
-      'text': "I haven't done this business for a long time. I'm an attorney, so my documents "
-              'are very strong, but you need a fee agreement, a power of attorney, an '
-              'assignment, letter of direction to the county. You need a bunch of documents '
-              'like that, and a few others.',
-      'timestamp': 417,
-      'timestamp_label': '[00:06:57]',
-      'timestamp_seconds': 417,
-      'tip': "I haven't done this business for a long time. I'm an attorney, so my documents "
-             'are very strong, but you need a fee agreement, a power of attorney, an '
-             'assignment, letter of direction to the county. You need a bunch of documents '
-             'like that, and a few others.',
-      'title': "Tax Sale Overages Course (Bob Diamond - America's Tax Sale Attorney)",
-      'url': 'https://www.youtube.com/watch?v=qGPsbhsEAVQ&t=417s',
-      'video_id': 'qGPsbhsEAVQ'},
+      'text': "Our researcher partner will make 40% of whatever the net was. I'm assuming that's "
+              'going to be around 14 grand.',
+      'timestamp': 105,
+      'timestamp_label': '[00:01:45]',
+      'timestamp_seconds': 105,
+      'tip': "Our researcher partner will make 40% of whatever the net was. I'm assuming that's "
+             'going to be around 14 grand.',
+      'title': 'Surplus Funds: $100K: Partner $14K+',
+      'url': 'https://www.youtube.com/watch?v=fzvvdAGwCBM&t=105s',
+      'video_id': 'fzvvdAGwCBM'},
      {'author': 'Money Making Juggernaut',
       'channel': 'Money Making Juggernaut',
       'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:13:13](https://www.youtube.com/watch?v=DK8BPV7WVvI&t=793s)',
-      'relevance': 'Attributed practitioner commentary on contingency fee caps, assignment '
-                   'restrictions, and net recovery unit economics; verify statutory ceilings '
-                   'before contracting.',
+      'markdown': '[00:00:33](https://www.youtube.com/watch?v=uhyVFTeepew&t=33s)',
+      'relevance': 'Verbatim practitioner testimony from Chapter Q2.',
       'source_type': 'video_pro_tip',
-      'text': "My fee was $52,000 which was 25%. Tip 22, put the attorney fees on the client's "
-              'side of the math. Some claims need an attorney and that cost can eat into your '
-              "fee if you're not careful. Caesar Santos had his client agree to pay all "
-              "attorney fees out of the client's share.",
-      'timestamp': 793,
-      'timestamp_label': '[00:13:13]',
-      'timestamp_seconds': 793,
-      'tip': "My fee was $52,000 which was 25%. Tip 22, put the attorney fees on the client's "
-             'side of the math. Some claims need an attorney and that cost can eat into your '
-             "fee if you're not careful. Caesar Santos had his client agree to pay all "
-             "attorney fees out of the client's share.",
-      'title': 'Give Me 17 Minutes, I’ll Give You 10,000 Hours of Surplus Funds Knowledge '
-               '(Money Making Juggernaut)',
-      'url': 'https://www.youtube.com/watch?v=DK8BPV7WVvI&t=793s',
-      'video_id': 'DK8BPV7WVvI'},
-     {'author': 'Attorney Jack',
-      'channel': 'Attorney Jack',
+      'text': "First year, I don't know how many deals, but we did over six figures.",
+      'timestamp': 33,
+      'timestamp_label': '[00:00:33]',
+      'timestamp_seconds': 33,
+      'tip': "First year, I don't know how many deals, but we did over six figures.",
+      'title': 'He Made $100k+ In His 1st Year With a Surplus Funds Recovery Business',
+      'url': 'https://www.youtube.com/watch?v=uhyVFTeepew&t=33s',
+      'video_id': 'uhyVFTeepew'},
+     {'author': 'Money Making Juggernaut',
+      'channel': 'Money Making Juggernaut',
       'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:03:22](https://www.youtube.com/watch?v=KKKIgl--DNo&t=202s)',
-      'relevance': 'Attributed practitioner commentary on contingency fee caps, assignment '
-                   'restrictions, and net recovery unit economics; verify statutory ceilings '
-                   'before contracting.',
+      'markdown': '[00:09:53](https://www.youtube.com/watch?v=lLLfdrFLXFA&t=593s)',
+      'relevance': 'Verbatim practitioner testimony from Chapter Q2.',
       'source_type': 'video_pro_tip',
-      'text': 'There is absolutely no upfront money or cost for you. The law firm takes care '
-              'of any other attorney fees, clerk fees, or any type of assessments that may '
-              'need to be done to be able to access these funds.',
-      'timestamp': 202,
-      'timestamp_label': '[00:03:22]',
-      'timestamp_seconds': 202,
-      'tip': 'There is absolutely no upfront money or cost for you. The law firm takes care of '
-             'any other attorney fees, clerk fees, or any type of assessments that may need to '
-             'be done to be able to access these funds.',
-      'title': 'Foreclosure - Surplus Funds Recovery - Attorney Assistance (Attorney Jack)',
-      'url': 'https://www.youtube.com/watch?v=KKKIgl--DNo&t=202s',
-      'video_id': 'KKKIgl--DNo'},
+      'text': "We do not just skip trace, get back phone numbers, and that's it. We must look up "
+              'family members, friends, neighbors, search on social media, a Google search.',
+      'timestamp': 593,
+      'timestamp_label': '[00:09:53]',
+      'timestamp_seconds': 593,
+      'tip': "We do not just skip trace, get back phone numbers, and that's it. We must look up "
+             'family members, friends, neighbors, search on social media, a Google search.',
+      'title': 'This Little-Known Real Estate STRATEGY Can Make You Rich! (Surplus Funds Recovery '
+               'Training)',
+      'url': 'https://www.youtube.com/watch?v=lLLfdrFLXFA&t=593s',
+      'video_id': 'lLLfdrFLXFA'},
+     {'author': 'Hutch & Holmes',
+      'channel': 'Hutch & Holmes',
+      'epistemic_status': 'attributed_practitioner_claim',
+      'markdown': '[00:01:27](https://www.youtube.com/watch?v=c50hZiiw2FU&t=87s)',
+      'relevance': 'Verbatim practitioner testimony from Chapter Q2.',
+      'source_type': 'video_pro_tip',
+      'text': 'You do need a plan, and you do need accountability, but the most important part is '
+              'you need someone to simply just tell you here is the next step.',
+      'timestamp': 87,
+      'timestamp_label': '[00:01:27]',
+      'timestamp_seconds': 87,
+      'tip': 'You do need a plan, and you do need accountability, but the most important part is '
+             'you need someone to simply just tell you here is the next step.',
+      'title': 'How to Start an Asset Recovery Business | Surplus Funds & 90-Day Business '
+               'Mentorship',
+      'url': 'https://www.youtube.com/watch?v=c50hZiiw2FU&t=87s',
+      'video_id': 'c50hZiiw2FU'}],
+ 3: [{'author': 'Next Level VA',
+      'channel': 'Next Level VA',
+      'epistemic_status': 'attributed_practitioner_claim',
+      'markdown': '[00:15:20](https://www.youtube.com/watch?v=2e4YGOesnUY&t=920s)',
+      'relevance': 'Practitioner testimony on narrowing a search to downloadable county lists.',
+      'source_type': 'video_pro_tip',
+      'text': 'You can also try adding the word PDF at the end of your search term. This will help '
+              'narrow down your search even further.',
+      'timestamp': 920,
+      'timestamp_label': '[00:15:20]',
+      'timestamp_seconds': 920,
+      'tip': 'You can also try adding the word PDF at the end of your search term. This will help '
+             'narrow down your search even further.',
+      'title': 'Excess Proceeds List, Tax Sale Overages List, Surplus Funds List (Free resources + '
+               '10 examples)',
+      'url': 'https://www.youtube.com/watch?v=2e4YGOesnUY&t=920s',
+      'video_id': '2e4YGOesnUY'},
+     {'author': 'Overage Acquisition',
+      'channel': 'Overage Acquisition',
+      'epistemic_status': 'attributed_practitioner_claim',
+      'markdown': '[00:04:54](https://www.youtube.com/watch?v=6UiKunbtUa0&t=294s)',
+      'relevance': 'Practitioner testimony on using parcel identifiers to complete county leads.',
+      'source_type': 'video_pro_tip',
+      'text': 'The parcel number is your starting point in order to locate further information '
+              "such as an address or the most important information, the property owner's name.",
+      'timestamp': 294,
+      'timestamp_label': '[00:04:54]',
+      'timestamp_seconds': 294,
+      'tip': 'The parcel number is your starting point in order to locate further information such '
+             "as an address or the most important information, the property owner's name.",
+      'title': 'How To Find Excess Proceeds List In 2025 (Proven Strategies)',
+      'url': 'https://www.youtube.com/watch?v=6UiKunbtUa0&t=294s',
+      'video_id': '6UiKunbtUa0'},
+     {'author': "Bob Diamond - America's Tax Sale Attorney",
+      'channel': "Bob Diamond - America's Tax Sale Attorney",
+      'epistemic_status': 'attributed_practitioner_claim',
+      'markdown': '[00:01:24](https://www.youtube.com/watch?v=4O5XeYwMAts&t=84s)',
+      'relevance': 'Practitioner testimony identifying offices that hold overage lists.',
+      'source_type': 'video_pro_tip',
+      'text': 'These lists are typically held by the tax collector, the county treasurer or the '
+              'sheriff, or in a few states, they eventually make it up to the state level.',
+      'timestamp': 84,
+      'timestamp_label': '[00:01:24]',
+      'timestamp_seconds': 84,
+      'tip': 'These lists are typically held by the tax collector, the county treasurer or the '
+             'sheriff, or in a few states, they eventually make it up to the state level.',
+      'title': 'How To Find Tax Sale Overages',
+      'url': 'https://www.youtube.com/watch?v=4O5XeYwMAts&t=84s',
+      'video_id': '4O5XeYwMAts'},
+     {'author': 'Tax Deed Surplus & Lien-Research Records',
+      'channel': 'Tax Deed Surplus & Lien-Research Records',
+      'epistemic_status': 'attributed_practitioner_claim',
+      'markdown': '[00:01:30](https://www.youtube.com/watch?v=y94Ncg0WHn0&t=90s)',
+      'relevance': 'Practitioner testimony on filtering Polk sales and comparing auction bids.',
+      'source_type': 'video_pro_tip',
+      'text': "We're going to deselect all and just add sold. Now, we're going to go through the "
+              'base bid and highest bid columns and just look for amounts where the tax deed sold '
+              'for a lot more than the starting bid.',
+      'timestamp': 90,
+      'timestamp_label': '[00:01:30]',
+      'timestamp_seconds': 90,
+      'tip': "We're going to deselect all and just add sold. Now, we're going to go through the "
+             'base bid and highest bid columns and just look for amounts where the tax deed sold '
+             'for a lot more than the starting bid.',
+      'title': 'Polk County Tax Deed Surplus',
+      'url': 'https://www.youtube.com/watch?v=y94Ncg0WHn0&t=90s',
+      'video_id': 'y94Ncg0WHn0'},
+     {'author': 'Surplus Funds Secrets',
+      'channel': 'Surplus Funds Secrets',
+      'epistemic_status': 'attributed_practitioner_claim',
+      'markdown': '[00:04:18](https://www.youtube.com/watch?v=v0-thxE7IK4&t=258s)',
+      'relevance': 'Practitioner testimony on searching separately for tax and mortgage lists.',
+      'source_type': 'video_pro_tip',
+      'text': "The same county can have both lists, foreclosures and tax sales. They're in two "
+              'different corners and typically on two different websites.',
+      'timestamp': 258,
+      'timestamp_label': '[00:04:18]',
+      'timestamp_seconds': 258,
+      'tip': "The same county can have both lists, foreclosures and tax sales. They're in two "
+             'different corners and typically on two different websites.',
+      'title': 'How To Find Surplus Funds Lists In 2026 (For Free)',
+      'url': 'https://www.youtube.com/watch?v=v0-thxE7IK4&t=258s',
+      'video_id': 'v0-thxE7IK4'},
+     {'author': 'Alfred Taren',
+      'channel': 'Alfred Taren',
+      'epistemic_status': 'attributed_practitioner_claim',
+      'markdown': '[00:04:02](https://www.youtube.com/watch?v=YCb5jYZX_A8&t=242s)',
+      'relevance': 'Practitioner testimony distinguishing an auction spread from researched '
+                   'surplus.',
+      'source_type': 'video_pro_tip',
+      'text': "A big gap isn't surplus yet. The math is a starting point, not a conclusion. It "
+              "tells you which files to pull, but that's it.",
+      'timestamp': 242,
+      'timestamp_label': '[00:04:02]',
+      'timestamp_seconds': 242,
+      'tip': "A big gap isn't surplus yet. The math is a starting point, not a conclusion. It "
+             "tells you which files to pull, but that's it.",
+      'title': 'How to Find Surplus Funds Lists (Tax Sales and Foreclosures)',
+      'url': 'https://www.youtube.com/watch?v=YCb5jYZX_A8&t=242s',
+      'video_id': 'YCb5jYZX_A8'},
+     {'author': 'Overage Acquisition',
+      'channel': 'Overage Acquisition',
+      'epistemic_status': 'attributed_practitioner_claim',
+      'markdown': '[00:03:38](https://www.youtube.com/watch?v=Tv7CWg8qUb0&t=218s)',
+      'relevance': 'Practitioner testimony identifying the initial spreadsheet fields.',
+      'source_type': 'video_pro_tip',
+      'text': 'Once you get these lists, put them in a spreadsheet immediately. Track the case '
+              "number, amount, property address, and the previous owner's name.",
+      'timestamp': 218,
+      'timestamp_label': '[00:03:38]',
+      'timestamp_seconds': 218,
+      'tip': 'Once you get these lists, put them in a spreadsheet immediately. Track the case '
+             "number, amount, property address, and the previous owner's name.",
+      'title': 'How to Find FREE Surplus Funds Lists in 2026 (FULL GUIDE)',
+      'url': 'https://www.youtube.com/watch?v=Tv7CWg8qUb0&t=218s',
+      'video_id': 'Tv7CWg8qUb0'},
+     {'author': 'Nick Fullmer- Overage Syndicate',
+      'channel': 'Nick Fullmer- Overage Syndicate',
+      'epistemic_status': 'attributed_practitioner_claim',
+      'markdown': '[00:02:08](https://www.youtube.com/watch?v=HAQgKtwkxuE&t=128s)',
+      'relevance': 'Practitioner testimony on substituting sale results for a published overage '
+                   'list.',
+      'source_type': 'video_pro_tip',
+      'text': 'If you can at least get a list of the results of the tax sale, that is almost just '
+              'as good.',
+      'timestamp': 128,
+      'timestamp_label': '[00:02:08]',
+      'timestamp_seconds': 128,
+      'tip': 'If you can at least get a list of the results of the tax sale, that is almost just '
+             'as good.',
+      'title': 'Tax Sale Overage List- 4 Ways You Can Get An Excess or Surplus Funds List Today',
+      'url': 'https://www.youtube.com/watch?v=HAQgKtwkxuE&t=128s',
+      'video_id': 'HAQgKtwkxuE'},
+     {'author': 'Surplus Systems',
+      'channel': 'Surplus Systems',
+      'epistemic_status': 'attributed_practitioner_claim',
+      'markdown': '[00:01:18](https://www.youtube.com/watch?v=dbTumm7HvnE&t=78s)',
+      'relevance': 'Practitioner testimony on purchased-list convenience and remaining '
+                   'skip-tracing work.',
+      'source_type': 'video_pro_tip',
+      'text': 'There are quite a few different companies out there that put together these lists. '
+              'You pay a monthly subscription, they get you leads to your inbox. You just gotta '
+              'get them skip traced and get to work.',
+      'timestamp': 78,
+      'timestamp_label': '[00:01:18]',
+      'timestamp_seconds': 78,
+      'tip': 'There are quite a few different companies out there that put together these lists. '
+             'You pay a monthly subscription, they get you leads to your inbox. You just gotta get '
+             'them skip traced and get to work.',
+      'title': 'Unlocking Wealth: How to Find a Surplus Funds List || Surplus Systems',
+      'url': 'https://www.youtube.com/watch?v=dbTumm7HvnE&t=78s',
+      'video_id': 'dbTumm7HvnE'},
+     {'author': 'Tax Deed Surplus & Lien-Research Records',
+      'channel': 'Tax Deed Surplus & Lien-Research Records',
+      'epistemic_status': 'attributed_practitioner_claim',
+      'markdown': '[00:00:00](https://www.youtube.com/watch?v=CFpu36h1xpA&t=0s)',
+      'relevance': "Practitioner testimony identifying Sumter's downloadable surplus report.",
+      'source_type': 'video_pro_tip',
+      'text': 'All you need to do is click on the downloadable PDF for tax deed sales surplus.',
+      'timestamp': 0,
+      'timestamp_label': '[00:00:00]',
+      'timestamp_seconds': 0,
+      'tip': 'All you need to do is click on the downloadable PDF for tax deed sales surplus.',
+      'title': 'Locate Sumter County Tax Deed Surplus Records - Florida Overbids',
+      'url': 'https://www.youtube.com/watch?v=CFpu36h1xpA&t=0s',
+      'video_id': 'CFpu36h1xpA'},
+     {'author': 'Money Making Juggernaut',
+      'channel': 'Money Making Juggernaut',
+      'epistemic_status': 'attributed_practitioner_claim',
+      'markdown': '[00:03:31](https://www.youtube.com/watch?v=7oTjcr1c2u8&t=211s)',
+      'relevance': 'Practitioner testimony on requesting digital delivery rather than mailed paper '
+                   'copies.',
+      'source_type': 'video_pro_tip',
+      'text': 'Always ask them to email it to you or scan it and send a digital copy because if '
+              'you ask them to mail you a paper copy, some clerks will try to charge you a small '
+              'printing fee.',
+      'timestamp': 211,
+      'timestamp_label': '[00:03:31]',
+      'timestamp_seconds': 211,
+      'tip': 'Always ask them to email it to you or scan it and send a digital copy because if you '
+             'ask them to mail you a paper copy, some clerks will try to charge you a small '
+             'printing fee.',
+      'title': 'How to Find FREE Surplus Funds Lists in 2026 (FULL GUIDE)',
+      'url': 'https://www.youtube.com/watch?v=7oTjcr1c2u8&t=211s',
+      'video_id': '7oTjcr1c2u8'},
+     {'author': 'Tax Deed Surplus & Lien-Research Records',
+      'channel': 'Tax Deed Surplus & Lien-Research Records',
+      'epistemic_status': 'attributed_practitioner_claim',
+      'markdown': '[00:00:00](https://www.youtube.com/watch?v=SGYpi5oeqOc&t=0s)',
+      'relevance': 'Practitioner testimony on self-assembling Alachua leads from auction records.',
+      'source_type': 'video_pro_tip',
+      'text': 'This county does not provide a surplus list online, so you have to collect the '
+              'record yourself and determine if there is a surplus.',
+      'timestamp': 0,
+      'timestamp_label': '[00:00:00]',
+      'timestamp_seconds': 0,
+      'tip': 'This county does not provide a surplus list online, so you have to collect the '
+             'record yourself and determine if there is a surplus.',
+      'title': 'Locate Alachua County Tax Deed Surplus Records - Florida Overbids',
+      'url': 'https://www.youtube.com/watch?v=SGYpi5oeqOc&t=0s',
+      'video_id': 'SGYpi5oeqOc'},
+     {'author': 'Tax Deed Surplus & Lien-Research Records',
+      'channel': 'Tax Deed Surplus & Lien-Research Records',
+      'epistemic_status': 'attributed_practitioner_claim',
+      'markdown': '[00:00:44](https://www.youtube.com/watch?v=JP-3QXkQsUM&t=44s)',
+      'relevance': "Practitioner testimony explaining Marion's multiple notification-party result "
+                   'lines.',
+      'source_type': 'video_pro_tip',
+      'text': 'All of these will link to the same set of documents. You can click any one of them.',
+      'timestamp': 44,
+      'timestamp_label': '[00:00:44]',
+      'timestamp_seconds': 44,
+      'tip': 'All of these will link to the same set of documents. You can click any one of them.',
+      'title': 'Marion County Florida Surplus List',
+      'url': 'https://www.youtube.com/watch?v=JP-3QXkQsUM&t=44s',
+      'video_id': 'JP-3QXkQsUM'},
+     {'author': 'Texas FundFinding',
+      'channel': 'Texas FundFinding',
+      'epistemic_status': 'attributed_practitioner_claim',
+      'markdown': '[00:08:14](https://www.youtube.com/watch?v=8UHfSY8oKfQ&t=494s)',
+      'relevance': 'Practitioner testimony on reducing preliminary Texas proceeds for additional '
+                   'taxes.',
+      'source_type': 'video_pro_tip',
+      'text': 'I add any other taxes to the minimum bid, come up with total taxes, subtract total '
+              'taxes from what it sold for to get an excess proceeds amount.',
+      'timestamp': 494,
+      'timestamp_label': '[00:08:14]',
+      'timestamp_seconds': 494,
+      'tip': 'I add any other taxes to the minimum bid, come up with total taxes, subtract total '
+             'taxes from what it sold for to get an excess proceeds amount.',
+      'title': "TX County Won't Provide Excess Proceeds List? Make YOUR OWN!",
+      'url': 'https://www.youtube.com/watch?v=8UHfSY8oKfQ&t=494s',
+      'video_id': '8UHfSY8oKfQ'},
+     {'author': 'Money Making Juggernaut',
+      'channel': 'Money Making Juggernaut',
+      'epistemic_status': 'attributed_practitioner_claim',
+      'markdown': '[00:00:38](https://www.youtube.com/watch?v=FNbqvZGEzeE&t=38s)',
+      'relevance': 'Practitioner testimony on county specialization beginning with sales and '
+                   'results.',
+      'source_type': 'video_pro_tip',
+      'text': 'Your first step is going to be understanding their sales information. We should '
+              'know when they are having their upcoming sales and also how we can get the sales '
+              'results.',
+      'timestamp': 38,
+      'timestamp_label': '[00:00:38]',
+      'timestamp_seconds': 38,
+      'tip': 'Your first step is going to be understanding their sales information. We should know '
+             'when they are having their upcoming sales and also how we can get the sales results.',
+      'title': 'How To Become a Surplus Funds Expert FOR 1 COUNTY (Asset Recovery Business)',
+      'url': 'https://www.youtube.com/watch?v=FNbqvZGEzeE&t=38s',
+      'video_id': 'FNbqvZGEzeE'},
+     {'author': 'Foreclose Houston',
+      'channel': 'Foreclose Houston',
+      'epistemic_status': 'attributed_practitioner_claim',
+      'markdown': '[00:01:36](https://www.youtube.com/watch?v=1s34X61MrsA&t=96s)',
+      'relevance': 'Practitioner testimony on filtering mortgage-history records for potential '
+                   'excess proceeds.',
+      'source_type': 'video_pro_tip',
+      'text': "Since we're going to look for excess proceeds, we want to see everything that's "
+              'sold to third parties.',
+      'timestamp': 96,
+      'timestamp_label': '[00:01:36]',
+      'timestamp_seconds': 96,
+      'tip': "Since we're going to look for excess proceeds, we want to see everything that's sold "
+             'to third parties.',
+      'title': 'Excess Proceeds from a Mortgage Auction',
+      'url': 'https://www.youtube.com/watch?v=1s34X61MrsA&t=96s',
+      'video_id': '1s34X61MrsA'}],
+ 4: [{'author': 'AFX Research LLC',
+      'channel': 'AFX Research LLC',
+      'epistemic_status': 'attributed_practitioner_claim',
+      'markdown': '[00:02:44](https://www.youtube.com/watch?v=HPyO3dkjbCQ&t=164s)',
+      'relevance': 'Practitioner testimony on paid debts that still appear as unreleased liens.',
+      'source_type': 'video_pro_tip',
+      'text': 'First, contact the lienholder — sometimes a lien has been paid but never officially '
+              'released.',
+      'timestamp': 164,
+      'timestamp_label': '[00:02:44]',
+      'timestamp_seconds': 164,
+      'tip': 'First, contact the lienholder — sometimes a lien has been paid but never officially '
+             'released.',
+      'title': 'HOW TO FIND LIENS & TITLE SEARCH IN TEXAS',
+      'url': 'https://www.youtube.com/watch?v=HPyO3dkjbCQ&t=164s',
+      'video_id': 'HPyO3dkjbCQ'},
+     {'author': 'Private Investigator Videos',
+      'channel': 'Private Investigator Videos',
+      'epistemic_status': 'attributed_practitioner_claim',
+      'markdown': '[00:02:29](https://www.youtube.com/watch?v=GWuQIN0aSwQ&t=149s)',
+      'relevance': 'Practitioner testimony on using the official title abstract rather than verbal '
+                   'assurances.',
+      'source_type': 'video_pro_tip',
+      'text': "Take a look at that official title abstract, see what's really there; don't take "
+              'the word of the auction company or even the property owner.',
+      'timestamp': 149,
+      'timestamp_label': '[00:02:29]',
+      'timestamp_seconds': 149,
+      'tip': "Take a look at that official title abstract, see what's really there; don't take the "
+             'word of the auction company or even the property owner.',
+      'title': 'What liens remain on a title search after foreclosure?',
+      'url': 'https://www.youtube.com/watch?v=GWuQIN0aSwQ&t=149s',
+      'video_id': 'GWuQIN0aSwQ'},
+     {'author': 'Money Making Juggernaut',
+      'channel': 'Money Making Juggernaut',
+      'epistemic_status': 'attributed_practitioner_claim',
+      'markdown': '[00:00:39](https://www.youtube.com/watch?v=ZU8-PRxVeCg&t=39s)',
+      'relevance': 'Practitioner testimony on the civil-docket route for checking an existing '
+                   'surplus claim.',
+      'source_type': 'video_pro_tip',
+      'text': "You are going to be able to take the case number and you'll be able to search it "
+              "directly on the county's docket.",
+      'timestamp': 39,
+      'timestamp_label': '[00:00:39]',
+      'timestamp_seconds': 39,
+      'tip': "You are going to be able to take the case number and you'll be able to search it "
+             "directly on the county's docket.",
+      'title': 'How To Find If Surplus Fund Has Been CLAIMED Already (Excess Proceeds, Tax Deed '
+               'Overages etc)',
+      'url': 'https://www.youtube.com/watch?v=ZU8-PRxVeCg&t=39s',
+      'video_id': 'ZU8-PRxVeCg'},
+     {'author': 'Alfred Taren',
+      'channel': 'Alfred Taren',
+      'epistemic_status': 'attributed_practitioner_claim',
+      'markdown': '[00:07:15](https://www.youtube.com/watch?v=LdemHPCk0dk&t=435s)',
+      'relevance': 'Practitioner testimony on communicating an estimated rather than promised '
+                   'owner remainder.',
+      'source_type': 'video_pro_tip',
+      'text': 'Always say possible funds or estimated surplus. Never promise them a number.',
+      'timestamp': 435,
+      'timestamp_label': '[00:07:15]',
+      'timestamp_seconds': 435,
+      'tip': 'Always say possible funds or estimated surplus. Never promise them a number.',
+      'title': 'How to Check for Liens Before You Call About Surplus Funds',
+      'url': 'https://www.youtube.com/watch?v=LdemHPCk0dk&t=435s',
+      'video_id': 'LdemHPCk0dk'},
+     {'author': 'Rent Own Sell',
+      'channel': 'Rent Own Sell',
+      'epistemic_status': 'attributed_practitioner_claim',
+      'markdown': '[00:01:38](https://www.youtube.com/watch?v=VBvaq5etzV4&t=98s)',
+      'relevance': 'Practitioner testimony naming a paid third-party lien-search option.',
+      'source_type': 'video_pro_tip',
+      'text': "Third-party companies such as PropertyShark will research the property's address "
+              'for possible liens for a nominal fee.',
+      'timestamp': 98,
+      'timestamp_label': '[00:01:38]',
+      'timestamp_seconds': 98,
+      'tip': "Third-party companies such as PropertyShark will research the property's address for "
+             'possible liens for a nominal fee.',
+      'title': 'How to Check for Property Liens - Complete Guide',
+      'url': 'https://www.youtube.com/watch?v=VBvaq5etzV4&t=98s',
+      'video_id': 'VBvaq5etzV4'},
+     {'author': 'Dustin Hahn',
+      'channel': 'Dustin Hahn',
+      'epistemic_status': 'attributed_practitioner_claim',
+      'markdown': '[00:01:34](https://www.youtube.com/watch?v=6IAi_pcEgFY&t=94s)',
+      'relevance': 'Firsthand practitioner testimony about seller accounts that omit competing '
+                   'mortgage debt.',
+      'source_type': 'video_pro_tip',
+      'text': "I've also had people who have conveniently forgotten about their second mortgage on "
+              'their property.',
+      'timestamp': 94,
+      'timestamp_label': '[00:01:34]',
+      'timestamp_seconds': 94,
+      'tip': "I've also had people who have conveniently forgotten about their second mortgage on "
+             'their property.',
+      'title': 'The 2 Minute Wholesale Title Search Strategy',
+      'url': 'https://www.youtube.com/watch?v=6IAi_pcEgFY&t=94s',
+      'video_id': '6IAi_pcEgFY'},
+     {'author': 'Nick Fullmer- Overage Syndicate',
+      'channel': 'Nick Fullmer- Overage Syndicate',
+      'epistemic_status': 'attributed_practitioner_claim',
+      'markdown': '[00:03:25](https://www.youtube.com/watch?v=KOYBZFn2k7w&t=205s)',
+      'relevance': 'Practitioner testimony on resolving a recorded lien that lacks a stated '
+                   'amount.',
+      'source_type': 'video_pro_tip',
+      'text': 'Contact the entity that recorded the lien and ask them what the lien amount is and '
+              "if it's still outstanding.",
+      'timestamp': 205,
+      'timestamp_label': '[00:03:25]',
+      'timestamp_seconds': 205,
+      'tip': 'Contact the entity that recorded the lien and ask them what the lien amount is and '
+             "if it's still outstanding.",
+      'title': 'Overages & Surplus Fund Debt & Title Research: Not As Easy As It Seems.  Two tips '
+               'To Help',
+      'url': 'https://www.youtube.com/watch?v=KOYBZFn2k7w&t=205s',
+      'video_id': 'KOYBZFn2k7w'},
+     {'author': 'Alfred Taren',
+      'channel': 'Alfred Taren',
+      'epistemic_status': 'attributed_practitioner_claim',
+      'markdown': '[00:04:17](https://www.youtube.com/watch?v=SzfjJzM76ls&t=257s)',
+      'relevance': 'Practitioner testimony on checking the actual file instead of trusting the '
+                   'listed surplus.',
+      'source_type': 'video_pro_tip',
+      'text': "Look at the actual case or sale file and see what's already been paid.",
+      'timestamp': 257,
+      'timestamp_label': '[00:04:17]',
+      'timestamp_seconds': 257,
+      'tip': "Look at the actual case or sale file and see what's already been paid.",
+      'title': "Who Gets Surplus Funds After a Foreclosure or Tax Sale? (It's Not Who You Think).",
+      'url': 'https://www.youtube.com/watch?v=SzfjJzM76ls&t=257s',
+      'video_id': 'SzfjJzM76ls'},
+     {'author': 'Tax Deed Surplus & Lien-Research Records',
+      'channel': 'Tax Deed Surplus & Lien-Research Records',
+      'epistemic_status': 'attributed_practitioner_claim',
+      'markdown': '[00:03:10](https://www.youtube.com/watch?v=C9X-hGZ_2bI&t=190s)',
+      'relevance': "Demonstrated correction identifying Polk's notification-address document.",
+      'source_type': 'video_pro_tip',
+      'text': "I didn't want the NOA parties. I wanted the NOA parties labels. That gives you the "
+              'name and address of each person or company that needed to get a notification about '
+              'this tax deed sale.',
+      'timestamp': 190,
+      'timestamp_label': '[00:03:10]',
+      'timestamp_seconds': 190,
+      'tip': "I didn't want the NOA parties. I wanted the NOA parties labels. That gives you the "
+             'name and address of each person or company that needed to get a notification about '
+             'this tax deed sale.',
+      'title': 'Polk County - Locate all Info and Documents for Tax Deed Auction Excess Proceeds '
+               'Claims',
+      'url': 'https://www.youtube.com/watch?v=C9X-hGZ_2bI&t=190s',
+      'video_id': 'C9X-hGZ_2bI'},
+     {'author': 'Tax Deed Surplus & Lien-Research Records',
+      'channel': 'Tax Deed Surplus & Lien-Research Records',
+      'epistemic_status': 'attributed_practitioner_claim',
+      'markdown': '[00:01:14](https://www.youtube.com/watch?v=sschUpuRZoU&t=74s)',
+      'relevance': 'Demonstrated distinction between an original surplus letter and existing '
+                   'competing claims.',
+      'source_type': 'video_pro_tip',
+      'text': 'So that was the original surplus, but two claims have been put in from Royal '
+              'Properties and Miami Florida Home Solutions.',
+      'timestamp': 74,
+      'timestamp_label': '[00:01:14]',
+      'timestamp_seconds': 74,
+      'tip': 'So that was the original surplus, but two claims have been put in from Royal '
+             'Properties and Miami Florida Home Solutions.',
+      'title': 'Miami-Dade County - Locate all Info and Documents for Tax Deed Auction Excess '
+               'Proceeds Claims',
+      'url': 'https://www.youtube.com/watch?v=sschUpuRZoU&t=74s',
+      'video_id': 'sschUpuRZoU'},
+     {'author': 'Tax Deed Surplus & Lien-Research Records',
+      'channel': 'Tax Deed Surplus & Lien-Research Records',
+      'epistemic_status': 'attributed_practitioner_claim',
+      'markdown': '[00:01:41](https://www.youtube.com/watch?v=0bYWIHqHiOI&t=101s)',
+      'relevance': "Practitioner testimony on Volusia's combined PDF and placement of incoming "
+                   'claims.',
+      'source_type': 'video_pro_tip',
+      'text': 'They just give you one large PDF with everything, and even after surplus claims '
+              'come in they add those to it as well, which those would be added to the top.',
+      'timestamp': 101,
+      'timestamp_label': '[00:01:41]',
+      'timestamp_seconds': 101,
+      'tip': 'They just give you one large PDF with everything, and even after surplus claims come '
+             'in they add those to it as well, which those would be added to the top.',
+      'title': 'Volusia County FL: Locate the Documents (Tax Deed Auctions and Excess Proceeds)',
+      'url': 'https://www.youtube.com/watch?v=0bYWIHqHiOI&t=101s',
+      'video_id': '0bYWIHqHiOI'},
+     {'author': 'Tax Deed Surplus & Lien-Research Records',
+      'channel': 'Tax Deed Surplus & Lien-Research Records',
+      'epistemic_status': 'attributed_practitioner_claim',
+      'markdown': '[00:03:09](https://www.youtube.com/watch?v=bmmWj7_LTrw&t=189s)',
+      'relevance': "Practitioner testimony on finding submitted claims inside Citrus's updated "
+                   'document file.',
+      'source_type': 'video_pro_tip',
+      'text': "If you keep scrolling down past the blank ones you'll start seeing emails, letters, "
+              'filled out claim forms and all of the documents that the claimant has submitted.',
+      'timestamp': 189,
+      'timestamp_label': '[00:03:09]',
+      'timestamp_seconds': 189,
+      'tip': "If you keep scrolling down past the blank ones you'll start seeing emails, letters, "
+             'filled out claim forms and all of the documents that the claimant has submitted.',
+      'title': 'Citrus County FL: Locate the Documents (Tax Deed Auctions and Excess Proceeds)',
+      'url': 'https://www.youtube.com/watch?v=bmmWj7_LTrw&t=189s',
+      'video_id': 'bmmWj7_LTrw'},
+     {'author': 'Tax Deed Surplus & Lien-Research Records',
+      'channel': 'Tax Deed Surplus & Lien-Research Records',
+      'epistemic_status': 'attributed_practitioner_claim',
+      'markdown': '[00:01:57](https://www.youtube.com/watch?v=nfSp1p7EQWw&t=117s)',
+      'relevance': "Practitioner testimony on Leon's parties-tab alternative to a separate "
+                   'notification-address document.',
+      'source_type': 'video_pro_tip',
+      'text': "For the notification addresses, Leon County doesn't put a document in here with "
+              'that, but what you can do is create your own by looking at the parties tab on the '
+              'case.',
+      'timestamp': 117,
+      'timestamp_label': '[00:01:57]',
+      'timestamp_seconds': 117,
+      'tip': "For the notification addresses, Leon County doesn't put a document in here with "
+             'that, but what you can do is create your own by looking at the parties tab on the '
+             'case.',
+      'title': 'Leon County FL: Locate the Documents (Tax Deed Auctions and Excess Proceeds)',
+      'url': 'https://www.youtube.com/watch?v=nfSp1p7EQWw&t=117s',
+      'video_id': 'nfSp1p7EQWw'},
+     {'author': 'Tax Deed Surplus & Lien-Research Records',
+      'channel': 'Tax Deed Surplus & Lien-Research Records',
+      'epistemic_status': 'attributed_practitioner_claim',
+      'markdown': '[00:02:40](https://www.youtube.com/watch?v=6GqKOOHC8D8&t=160s)',
+      'relevance': "Practitioner testimony on Escambia's document order and the location of later "
+                   'surplus notices.',
+      'source_type': 'video_pro_tip',
+      'text': 'When Escambia does their documents, when a new one comes along they add it to the '
+              'end of this PDF.',
+      'timestamp': 160,
+      'timestamp_label': '[00:02:40]',
+      'timestamp_seconds': 160,
+      'tip': 'When Escambia does their documents, when a new one comes along they add it to the '
+             'end of this PDF.',
+      'title': 'Escambia County FL: Locate the Documents (Tax Deed Auctions and Excess Proceeds)',
+      'url': 'https://www.youtube.com/watch?v=6GqKOOHC8D8&t=160s',
+      'video_id': '6GqKOOHC8D8'},
+     {'author': 'Money Making Juggernaut',
+      'channel': 'Money Making Juggernaut',
+      'epistemic_status': 'attributed_practitioner_claim',
+      'markdown': '[00:02:04](https://www.youtube.com/watch?v=q95klfFm9mE&t=124s)',
+      'relevance': 'Practitioner testimony on searching county-recorded liens under the former '
+                   "owner's name.",
+      'source_type': 'video_pro_tip',
+      'text': "You're going to search that individual's name. These documents are registered and "
+              'recorded under their name.',
+      'timestamp': 124,
+      'timestamp_label': '[00:02:04]',
+      'timestamp_seconds': 124,
+      'tip': "You're going to search that individual's name. These documents are registered and "
+             'recorded under their name.',
+      'title': "2 Ways To Check If There's a Lien On a Property (For Surplus Funds Recovery)",
+      'url': 'https://www.youtube.com/watch?v=q95klfFm9mE&t=124s',
+      'video_id': 'q95klfFm9mE'},
+     {'author': 'SadeLegal Law Firm',
+      'channel': 'SadeLegal Law Firm',
+      'epistemic_status': 'attributed_practitioner_claim',
+      'markdown': '[00:05:33](https://www.youtube.com/watch?v=rNxycxH3ATc&t=333s)',
+      'relevance': 'Practitioner testimony on the owner-claim alternative discussed alongside '
+                   'continuing debt and procedural complexity.',
+      'source_type': 'video_pro_tip',
+      'text': 'You could do that and get away with it by claiming all of the excess proceeds as a '
+              'former owner as long as you follow all the notice requirements.',
+      'timestamp': 333,
+      'timestamp_label': '[00:05:33]',
+      'timestamp_seconds': 333,
+      'tip': 'You could do that and get away with it by claiming all of the excess proceeds as a '
+             'former owner as long as you follow all the notice requirements.',
+      'title': 'Junior Liens and Tax Foreclosure Overages / Excess Proceeds - '
+               'www.allthingsoverages.com',
+      'url': 'https://www.youtube.com/watch?v=rNxycxH3ATc&t=333s',
+      'video_id': 'rNxycxH3ATc'}],
+ 5: [{'author': 'Consumer Action Law Group',
+      'channel': 'Consumer Action Law Group',
+      'epistemic_status': 'attributed_practitioner_claim',
+      'markdown': '[00:01:24](https://www.youtube.com/watch?v=gUeG4eQdMy8&t=84s)',
+      'relevance': 'Verbatim practitioner testimony on ownership proof and funds verification for '
+                   'Chapter Q5.',
+      'source_type': 'video_pro_tip',
+      'text': 'Step one is to provide proof of ownership, which is done by giving title.',
+      'timestamp': 84,
+      'timestamp_label': '[00:01:24]',
+      'timestamp_seconds': 84,
+      'tip': 'Step one is to provide proof of ownership, which is done by giving title.',
+      'title': 'How to Claim Surplus Funds from Foreclosure (Step by Step Tutorial)',
+      'url': 'https://www.youtube.com/watch?v=gUeG4eQdMy8&t=84s',
+      'video_id': 'gUeG4eQdMy8'},
+     {'author': "Bob Diamond - America's Tax Sale Attorney",
+      'channel': "Bob Diamond - America's Tax Sale Attorney",
+      'epistemic_status': 'attributed_practitioner_claim',
+      'markdown': '[00:05:43](https://www.youtube.com/watch?v=lzU09FRqmhg&t=343s)',
+      'relevance': "Verbatim practitioner testimony on Diamond's reported fee range for Chapter "
+                   'Q5.',
+      'source_type': 'video_pro_tip',
+      'text': "We're charging 30 to 40% typically.",
+      'timestamp': 343,
+      'timestamp_label': '[00:05:43]',
+      'timestamp_seconds': 343,
+      'tip': "We're charging 30 to 40% typically.",
+      'title': 'How To Claim Surplus Funds From Foreclosure',
+      'url': 'https://www.youtube.com/watch?v=lzU09FRqmhg&t=343s',
+      'video_id': 'lzU09FRqmhg'},
+     {'author': 'Money Making Juggernaut',
+      'channel': 'Money Making Juggernaut',
+      'epistemic_status': 'attributed_practitioner_claim',
+      'markdown': '[00:00:39](https://www.youtube.com/watch?v=0pjP-Sr15PA&t=39s)',
+      'relevance': 'Verbatim practitioner testimony on the opening-bid trap for Chapter Q5.',
+      'source_type': 'video_pro_tip',
+      'text': "In mortgage foreclosures, the opening bid isn't always the amount that was owed.",
+      'timestamp': 39,
+      'timestamp_label': '[00:00:39]',
+      'timestamp_seconds': 39,
+      'tip': "In mortgage foreclosures, the opening bid isn't always the amount that was owed.",
+      'title': 'Are You Doing Mortgage Foreclosure Surplus Funds Recovery?',
+      'url': 'https://www.youtube.com/watch?v=0pjP-Sr15PA&t=39s',
+      'video_id': '0pjP-Sr15PA'},
+     {'author': 'Sternberg Law Group',
+      'channel': 'Sternberg Law Group',
+      'epistemic_status': 'attributed_practitioner_claim',
+      'markdown': '[00:01:57](https://www.youtube.com/watch?v=z6jQuGWdtDY&t=117s)',
+      'relevance': "Verbatim practitioner testimony on Sternberg's bank-owned-property distinction "
+                   'for Chapter Q5.',
+      'source_type': 'video_pro_tip',
+      'text': "If a bank owns your property after foreclosure, there's no surplus funds because "
+              'there was no winning bidder, no money changed hands.',
+      'timestamp': 117,
+      'timestamp_label': '[00:01:57]',
+      'timestamp_seconds': 117,
+      'tip': "If a bank owns your property after foreclosure, there's no surplus funds because "
+             'there was no winning bidder, no money changed hands.',
+      'title': 'Surplus Funds After Foreclosure Explained | What Homeowners Must Know | Sternberg '
+               'Law Group',
+      'url': 'https://www.youtube.com/watch?v=z6jQuGWdtDY&t=117s',
+      'video_id': 'z6jQuGWdtDY'},
+     {'author': 'Lenny the Lawyer-Live',
+      'channel': 'Lenny the Lawyer-Live',
+      'epistemic_status': 'attributed_practitioner_claim',
+      'markdown': '[00:02:37](https://www.youtube.com/watch?v=dn1b-e6bUyo&t=157s)',
+      'relevance': 'Verbatim practitioner testimony on competing-creditor exposure for Chapter Q5.',
+      'source_type': 'video_pro_tip',
+      'text': 'Surplus funds are not always going to be available just because your house sold '
+              'more than you owe the mortgage company or mortgage companies.',
+      'timestamp': 157,
+      'timestamp_label': '[00:02:37]',
+      'timestamp_seconds': 157,
+      'tip': 'Surplus funds are not always going to be available just because your house sold more '
+             'than you owe the mortgage company or mortgage companies.',
+      'title': 'How Can You Get Surplus Funds After Your House is Sold at Foreclosure In 2023?',
+      'url': 'https://www.youtube.com/watch?v=dn1b-e6bUyo&t=157s',
+      'video_id': 'dn1b-e6bUyo'},
+     {'author': 'Money Making Juggernaut',
+      'channel': 'Money Making Juggernaut',
+      'epistemic_status': 'attributed_practitioner_claim',
+      'markdown': '[00:03:09](https://www.youtube.com/watch?v=7AHHRIbWG80&t=189s)',
+      'relevance': 'Practitioner testimony reading the trustee-side distribution message in the '
+                   'Texas case for Chapter Q5.',
+      'source_type': 'video_pro_tip',
+      'text': 'I will get a check request in amount of 16,609.',
+      'timestamp': 189,
+      'timestamp_label': '[00:03:09]',
+      'timestamp_seconds': 189,
+      'tip': 'I will get a check request in amount of 16,609.',
+      'title': 'Surplus Funds Case Study Texas Mortgage Foreclosure',
+      'url': 'https://www.youtube.com/watch?v=7AHHRIbWG80&t=189s',
+      'video_id': '7AHHRIbWG80'},
+     {'author': 'Money Making Juggernaut',
+      'channel': 'Money Making Juggernaut',
+      'epistemic_status': 'attributed_practitioner_claim',
+      'markdown': '[00:02:36](https://www.youtube.com/watch?v=kYJAnAiPgvc&t=156s)',
+      'relevance': "Practitioner testimony on requesting the trustee's payment breakdown for "
+                   'Chapter Q5.',
+      'source_type': 'video_pro_tip',
+      'text': 'Can you guys send a breakdown on the disbursements after the sale?',
+      'timestamp': 156,
+      'timestamp_label': '[00:02:36]',
+      'timestamp_seconds': 156,
+      'tip': 'This will let us know exactly how much surplus funds are available because if there '
+             'was a second mortgage or any creditors, they should show the payouts to them.',
+      'title': 'Judicial VS Non-Judicial Mortgage Foreclosures (Surplus Funds Recovery)',
+      'url': 'https://www.youtube.com/watch?v=kYJAnAiPgvc&t=156s',
+      'video_id': 'kYJAnAiPgvc'},
+     {'author': 'Money Making Juggernaut',
+      'channel': 'Money Making Juggernaut',
+      'epistemic_status': 'attributed_practitioner_claim',
+      'markdown': '[00:09:08](https://www.youtube.com/watch?v=FJj3hN2KbIg&t=548s)',
+      'relevance': 'Verbatim practitioner testimony on the Georgia auction.com search workflow for '
+                   'Chapter Q5.',
+      'source_type': 'video_pro_tip',
+      'text': 'Very important that you click foreclosure homes and not bank-owned.',
+      'timestamp': 548,
+      'timestamp_label': '[00:09:08]',
+      'timestamp_seconds': 548,
+      'tip': 'Very important that you click foreclosure homes and not bank-owned.',
+      'title': 'How to Do Surplus Funds in Georgia (Step-by-Step Guide)',
+      'url': 'https://www.youtube.com/watch?v=FJj3hN2KbIg&t=548s',
+      'video_id': 'FJj3hN2KbIg'},
+     {'author': 'Hutch & Holmes',
+      'channel': 'Hutch & Holmes',
+      'epistemic_status': 'attributed_practitioner_claim',
+      'markdown': '[00:02:49](https://www.youtube.com/watch?v=L2oKpjOoh20&t=169s)',
+      'relevance': 'Verbatim practitioner testimony on defining the recovery service before lead '
+                   'acquisition for Chapter Q5.',
+      'source_type': 'video_pro_tip',
+      'text': 'Clarity first, leads second.',
+      'timestamp': 169,
+      'timestamp_label': '[00:02:49]',
+      'timestamp_seconds': 169,
+      'tip': 'Clarity first, leads second.',
+      'title': 'How to Recover Foreclosure Surplus Funds (3-Step System)',
+      'url': 'https://www.youtube.com/watch?v=L2oKpjOoh20&t=169s',
+      'video_id': 'L2oKpjOoh20'},
+     {'author': 'Money Making Juggernaut',
+      'channel': 'Money Making Juggernaut',
+      'epistemic_status': 'attributed_practitioner_claim',
+      'markdown': '[00:01:54](https://www.youtube.com/watch?v=XNxo6xvEJBg&t=114s)',
+      'relevance': "Practitioner testimony on PropertyRadar's trustee-identification role for "
+                   'Chapter Q5.',
+      'source_type': 'video_pro_tip',
+      'text': "The first benefit is you are able to see the trustee's information at any point.",
+      'timestamp': 114,
+      'timestamp_label': '[00:01:54]',
+      'timestamp_seconds': 114,
+      'tip': "The first benefit is you are able to see the trustee's information at any point.",
+      'title': 'Surplus Funds Recovery HACK For Non-Judicial Mortgage Foreclosures',
+      'url': 'https://www.youtube.com/watch?v=XNxo6xvEJBg&t=114s',
+      'video_id': 'XNxo6xvEJBg'},
+     {'author': 'County Assets Recovery',
+      'channel': 'County Assets Recovery',
+      'epistemic_status': 'attributed_practitioner_claim',
+      'markdown': '[00:01:03](https://www.youtube.com/watch?v=siNLN4gsAEA&t=63s)',
+      'relevance': 'Verbatim practitioner testimony on contingency-based recovery services for '
+                   'Chapter Q5.',
+      'source_type': 'video_pro_tip',
+      'text': 'We work on contingency, meaning our success is tied directly to yours.',
+      'timestamp': 63,
+      'timestamp_label': '[00:01:03]',
+      'timestamp_seconds': 63,
+      'tip': 'We work on contingency, meaning our success is tied directly to yours.',
+      'title': 'Help with Foreclosure Surplus Funds #foreclosurehelp, #surplusfunds , '
+               '#foreclosurelaw, #attorney',
+      'url': 'https://www.youtube.com/watch?v=siNLN4gsAEA&t=63s',
+      'video_id': 'siNLN4gsAEA'},
+     {'author': 'Money Making Juggernaut',
+      'channel': 'Money Making Juggernaut',
+      'epistemic_status': 'attributed_practitioner_claim',
+      'markdown': '[00:03:01](https://www.youtube.com/watch?v=ZJ74a_7vvzo&t=181s)',
+      'relevance': 'Practitioner testimony on distinguishing tax and mortgage sheriff-sale leads '
+                   'for Chapter Q5.',
+      'source_type': 'video_pro_tip',
+      'text': 'Sheriff sales can be either tax sales or mortgage foreclosures.',
+      'timestamp': 181,
+      'timestamp_label': '[00:03:01]',
+      'timestamp_seconds': 181,
+      'tip': 'Sheriff sales can be either tax sales or mortgage foreclosures.',
+      'title': 'Mortgage Foreclosures VS Tax Sale Overages - DIFFERENCES Explained (Asset Recovery '
+               'Business)',
+      'url': 'https://www.youtube.com/watch?v=ZJ74a_7vvzo&t=181s',
+      'video_id': 'ZJ74a_7vvzo'},
+     {'author': 'Surplus Institute / David Church / Unclaimed Funds',
+      'channel': 'Surplus Institute / David Church / Unclaimed Funds',
+      'epistemic_status': 'attributed_practitioner_claim',
+      'markdown': '[00:00:57](https://www.youtube.com/watch?v=k0pvzqTug-M&t=57s)',
+      'relevance': "Verbatim practitioner testimony on Church's reported recovery pricing for "
+                   'Chapter Q5.',
+      'source_type': 'video_pro_tip',
+      'text': 'Typically I do anywhere from 10 to 30% is my sliding scale.',
+      'timestamp': 57,
+      'timestamp_label': '[00:00:57]',
+      'timestamp_seconds': 57,
+      'tip': 'Typically I do anywhere from 10 to 30% is my sliding scale.',
+      'title': 'Delinquent Mortgages are on the Rise which will lead to Mortgage Surplus Funds | '
+               'Unclaimed funds',
+      'url': 'https://www.youtube.com/watch?v=k0pvzqTug-M&t=57s',
+      'video_id': 'k0pvzqTug-M'},
+     {'author': 'bid4assets',
+      'channel': 'bid4assets',
+      'epistemic_status': 'attributed_practitioner_claim',
+      'markdown': '[00:13:42](https://www.youtube.com/watch?v=1BmnpBQHhAY&t=822s)',
+      'relevance': 'Verbatim practitioner testimony on Philadelphia tax-auction settlement default '
+                   'for Chapter Q5.',
+      'source_type': 'video_pro_tip',
+      'text': 'You must have the funds available to meet the payment timelines outlined in them or '
+              'you will be in default and forfeit your deposit.',
+      'timestamp': 822,
+      'timestamp_label': '[00:13:42]',
+      'timestamp_seconds': 822,
+      'tip': 'You must have the funds available to meet the payment timelines outlined in them or '
+             'you will be in default and forfeit your deposit.',
+      'title': 'Bid4Assets Tutorial: Philadelphia County Tax Foreclosure Sale Buyer Guide',
+      'url': 'https://www.youtube.com/watch?v=1BmnpBQHhAY&t=822s',
+      'video_id': '1BmnpBQHhAY'},
+     {'author': 'Console Matison LLP',
+      'channel': 'Console Matison LLP',
+      'epistemic_status': 'attributed_practitioner_claim',
+      'markdown': '[00:04:57](https://www.youtube.com/watch?v=7eeXOhOafjc&t=297s)',
+      'relevance': "Verbatim practitioner testimony on the Philadelphia buyer's intervention route "
+                   'for Chapter Q5.',
+      'source_type': 'video_pro_tip',
+      'text': 'Under Pennsylvania Rule of Civil Procedure 2327, you could be entitled to intervene '
+              'in that court case that generated the sheriff sale and file a motion to complete '
+              'terms of sheriff sale.',
+      'timestamp': 297,
+      'timestamp_label': '[00:04:57]',
+      'timestamp_seconds': 297,
+      'tip': 'Under Pennsylvania Rule of Civil Procedure 2327, you could be entitled to intervene '
+             'in that court case that generated the sheriff sale and file a motion to complete '
+             'terms of sheriff sale.',
+      'title': 'Navigating Philadelphia Sheriff Sales',
+      'url': 'https://www.youtube.com/watch?v=7eeXOhOafjc&t=297s',
+      'video_id': '7eeXOhOafjc'},
+     {'author': 'Friscia & Associates, LLC',
+      'channel': 'Friscia & Associates, LLC',
+      'epistemic_status': 'attributed_practitioner_claim',
+      'markdown': '[00:01:05](https://www.youtube.com/watch?v=i8-qVMepHe8&t=65s)',
+      'relevance': 'Verbatim practitioner testimony on New Jersey custody and court-ordered '
+                   'payment for Chapter Q5.',
+      'source_type': 'video_pro_tip',
+      'text': 'The money is deposited with the court and held in the Superior Court Trust Fund '
+              'until a judge signs an order saying who gets paid.',
+      'timestamp': 65,
+      'timestamp_label': '[00:01:05]',
+      'timestamp_seconds': 65,
+      'tip': 'The money is deposited with the court and held in the Superior Court Trust Fund '
+             'until a judge signs an order saying who gets paid.',
+      'title': "Surplus Funds After a Sheriff's Sale in New Jersey: Who Gets the Money and How to "
+               'Claim It',
+      'url': 'https://www.youtube.com/watch?v=i8-qVMepHe8&t=65s',
+      'video_id': 'i8-qVMepHe8'}],
+ 6: [{'author': 'William Whitman, Esquire',
+      'channel': 'William Whitman, Esquire',
+      'epistemic_status': 'attributed_practitioner_claim',
+      'markdown': '[00:01:06](https://www.youtube.com/watch?v=0xk7lNvAgn0&t=66s)',
+      'relevance': 'Verbatim practitioner testimony from Chapter Q6.',
+      'source_type': 'video_pro_tip',
+      'text': "There's a free business search feature. It shows you the date it was filed, the "
+              'status as being active or inactive, what type of entity it is, where it was formed, '
+              'and an address.',
+      'timestamp': 66,
+      'timestamp_label': '[00:01:06]',
+      'timestamp_seconds': 66,
+      'tip': "There's a free business search feature. It shows you the date it was filed, the "
+             'status as being active or inactive, what type of entity it is, where it was formed, '
+             'and an address.',
+      'title': 'Will Whitman, Esquire explains how to locate companies owed surplus funds',
+      'url': 'https://www.youtube.com/watch?v=0xk7lNvAgn0&t=66s',
+      'video_id': '0xk7lNvAgn0'},
+     {'author': 'Pierce Law Group',
+      'channel': 'Pierce Law Group',
+      'epistemic_status': 'attributed_practitioner_claim',
+      'markdown': '[00:00:33](https://www.youtube.com/watch?v=ErS3fgilrDY&t=33s)',
+      'relevance': 'Verbatim practitioner testimony from Chapter Q6.',
+      'source_type': 'video_pro_tip',
+      'text': "In most cases, the estate's qualified personal representative is the right person "
+              'to claim those funds for the estate.',
+      'timestamp': 33,
+      'timestamp_label': '[00:00:33]',
+      'timestamp_seconds': 33,
+      'tip': "In most cases, the estate's qualified personal representative is the right person to "
+             'claim those funds for the estate.',
+      'title': 'How do I recover surplus funds after a reverse-mortgage foreclosure? | NC',
+      'url': 'https://www.youtube.com/watch?v=ErS3fgilrDY&t=33s',
+      'video_id': 'ErS3fgilrDY'},
+     {'author': 'Surplus Institute / David Church / Unclaimed Funds',
+      'channel': 'Surplus Institute / David Church / Unclaimed Funds',
+      'epistemic_status': 'attributed_practitioner_claim',
+      'markdown': '[00:06:30](https://www.youtube.com/watch?v=VGzK7EytsBw&t=390s)',
+      'relevance': 'Verbatim practitioner testimony from Chapter Q6.',
+      'source_type': 'video_pro_tip',
+      'text': "Most of my leads will happen somewhere between conversations four to ten. I've had "
+              'plenty of deals where the very first time I talk to them, I get the deal, I get the '
+              'contracts back.',
+      'timestamp': 390,
+      'timestamp_label': '[00:06:30]',
+      'timestamp_seconds': 390,
+      'tip': "Most of my leads will happen somewhere between conversations four to ten. I've had "
+             'plenty of deals where the very first time I talk to them, I get the deal, I get the '
+             'contracts back.',
+      'title': "Live cold call with deceased's son - send the contracts- now what? Surplus funds "
+               'business cold call',
+      'url': 'https://www.youtube.com/watch?v=VGzK7EytsBw&t=390s',
+      'video_id': 'VGzK7EytsBw'},
+     {'author': 'Overage Acquisition',
+      'channel': 'Overage Acquisition',
+      'epistemic_status': 'attributed_practitioner_claim',
+      'markdown': '[00:01:16](https://www.youtube.com/watch?v=6vsHnTS609Y&t=76s)',
+      'relevance': 'Verbatim practitioner testimony from Chapter Q6.',
+      'source_type': 'video_pro_tip',
+      'text': "Go to Google, type in the deceased owner's name, and add the word obituary. Funeral "
+              'home websites, legacy.com, and local newspaper archives.',
+      'timestamp': 76,
+      'timestamp_label': '[00:01:16]',
+      'timestamp_seconds': 76,
+      'tip': "Go to Google, type in the deceased owner's name, and add the word obituary. Funeral "
+             'home websites, legacy.com, and local newspaper archives.',
+      'title': 'Dealing with Deceased Owners: How to Find Heirs for Surplus Funds',
+      'url': 'https://www.youtube.com/watch?v=6vsHnTS609Y&t=76s',
+      'video_id': '6vsHnTS609Y'},
+     {'author': 'People Locator Skip Tracing',
+      'channel': 'People Locator Skip Tracing',
+      'epistemic_status': 'attributed_practitioner_claim',
+      'markdown': '[00:01:00](https://www.youtube.com/watch?v=mZfLBxhYGpw&t=60s)',
+      'relevance': 'Verbatim practitioner testimony from Chapter Q6.',
+      'source_type': 'video_pro_tip',
+      'text': 'For specific deceased relatives you suspect named you, check the probate court in '
+              'the county where they lived. Probate filings are public records. The will, if it '
+              'was filed, names beneficiaries explicitly.',
+      'timestamp': 60,
+      'timestamp_label': '[00:01:00]',
+      'timestamp_seconds': 60,
+      'tip': 'For specific deceased relatives you suspect named you, check the probate court in '
+             'the county where they lived. Probate filings are public records. The will, if it was '
+             'filed, names beneficiaries explicitly.',
+      'title': 'How to Find an Unclaimed Inheritance Owed to You',
+      'url': 'https://www.youtube.com/watch?v=mZfLBxhYGpw&t=60s',
+      'video_id': 'mZfLBxhYGpw'},
+     {'author': 'Surplus Institute / David Church / Unclaimed Funds',
+      'channel': 'Surplus Institute / David Church / Unclaimed Funds',
+      'epistemic_status': 'attributed_practitioner_claim',
+      'markdown': '[00:05:14](https://www.youtube.com/watch?v=hA6VJ_GqGyc&t=314s)',
+      'relevance': 'Verbatim practitioner testimony from Chapter Q6.',
+      'source_type': 'video_pro_tip',
+      'text': 'I have called the home they were in, maybe they were in a convalescent home, or '
+              "whoever had the funeral. I've had family members contact me.",
+      'timestamp': 314,
+      'timestamp_label': '[00:05:14]',
+      'timestamp_seconds': 314,
+      'tip': 'I have called the home they were in, maybe they were in a convalescent home, or '
+             "whoever had the funeral. I've had family members contact me.",
+      'title': 'Mastering Skip Tracing for Deceased Individuals: Strategies for Success '
+               '🕵️\u200d♂️⚡',
+      'url': 'https://www.youtube.com/watch?v=hA6VJ_GqGyc&t=314s',
+      'video_id': 'hA6VJ_GqGyc'},
+     {'author': 'Surplus Institute / David Church / Unclaimed Funds',
+      'channel': 'Surplus Institute / David Church / Unclaimed Funds',
+      'epistemic_status': 'attributed_practitioner_claim',
+      'markdown': '[00:03:59](https://www.youtube.com/watch?v=V_ycS3i_CMY&t=239s)',
+      'relevance': 'Verbatim practitioner testimony from Chapter Q6.',
+      'source_type': 'video_pro_tip',
+      'text': "I actually got a hold of him the other day and I said, what's holding me from "
+              "signing? He said, David, I'm not really computer literate. I really don't use a "
+              'computer a lot. I really like stuff old school.',
+      'timestamp': 239,
+      'timestamp_label': '[00:03:59]',
+      'timestamp_seconds': 239,
+      'tip': "I actually got a hold of him the other day and I said, what's holding me from "
+             "signing? He said, David, I'm not really computer literate. I really don't use a "
+             'computer a lot. I really like stuff old school.',
+      'title': '5k commission and skip tracing revealed | Surplus Funds Business in USA | '
+               'Unclaimed State Funds',
+      'url': 'https://www.youtube.com/watch?v=V_ycS3i_CMY&t=239s',
+      'video_id': 'V_ycS3i_CMY'},
+     {'author': 'Surplus Systems',
+      'channel': 'Surplus Systems',
+      'epistemic_status': 'attributed_practitioner_claim',
+      'markdown': '[00:00:49](https://www.youtube.com/watch?v=RPpdYzSL6jE&t=49s)',
+      'relevance': 'Verbatim practitioner testimony from Chapter Q6.',
+      'source_type': 'video_pro_tip',
+      'text': 'Before you spend money on skip tracing, go back to the original case, verify the '
+              'property, verify the ownership, verify the case, and verify who may actually have '
+              'the claim to the funds.',
+      'timestamp': 49,
+      'timestamp_label': '[00:00:49]',
+      'timestamp_seconds': 49,
+      'tip': 'Before you spend money on skip tracing, go back to the original case, verify the '
+             'property, verify the ownership, verify the case, and verify who may actually have '
+             'the claim to the funds.',
+      'title': "Can't Find Your Surplus Funds Lead? Do THIS",
+      'url': 'https://www.youtube.com/watch?v=RPpdYzSL6jE&t=49s',
+      'video_id': 'RPpdYzSL6jE'},
+     {'author': 'Surplus Institute / David Church / Unclaimed Funds',
+      'channel': 'Surplus Institute / David Church / Unclaimed Funds',
+      'epistemic_status': 'attributed_practitioner_claim',
+      'markdown': '[00:04:41](https://www.youtube.com/watch?v=j97Qb2R6Efc&t=281s)',
+      'relevance': 'Verbatim practitioner testimony from Chapter Q6.',
+      'source_type': 'video_pro_tip',
+      'text': 'A workaround might be letting them send that documentation directly themselves to '
+              'the county or the state. You get everything started and then you let them know what '
+              'they need to do there.',
+      'timestamp': 281,
+      'timestamp_label': '[00:04:41]',
+      'timestamp_seconds': 281,
+      'tip': 'A workaround might be letting them send that documentation directly themselves to '
+             'the county or the state. You get everything started and then you let them know what '
+             'they need to do there.',
+      'title': 'Cold Calling: Reaching heirs of deceased |  Unclaimed Money & Surplus Funds Guide"',
+      'url': 'https://www.youtube.com/watch?v=j97Qb2R6Efc&t=281s',
+      'video_id': 'j97Qb2R6Efc'},
+     {'author': 'Overage Acquisition',
+      'channel': 'Overage Acquisition',
+      'epistemic_status': 'attributed_practitioner_claim',
+      'markdown': '[00:06:08](https://www.youtube.com/watch?v=uw5ADHXVMX0&t=368s)',
+      'relevance': 'Verbatim practitioner testimony from Chapter Q6.',
+      'source_type': 'video_pro_tip',
+      'text': "When you're working a state, you always want to find out what is the dollar "
+              'threshold maximum in order to avoid probate.',
+      'timestamp': 368,
+      'timestamp_label': '[00:06:08]',
+      'timestamp_seconds': 368,
+      'tip': "When you're working a state, you always want to find out what is the dollar "
+             'threshold maximum in order to avoid probate.',
+      'title': 'How To Claim Surplus Funds For Legal Heirs (Without Any Probate)',
+      'url': 'https://www.youtube.com/watch?v=uw5ADHXVMX0&t=368s',
+      'video_id': 'uw5ADHXVMX0'},
+     {'author': 'Money Making Juggernaut',
+      'channel': 'Money Making Juggernaut',
+      'epistemic_status': 'attributed_practitioner_claim',
+      'markdown': '[00:02:19](https://www.youtube.com/watch?v=WEohyFOyk2M&t=139s)',
+      'relevance': 'Verbatim practitioner testimony from Chapter Q6.',
+      'source_type': 'video_pro_tip',
+      'text': 'I had to email him the documents. He printed them and then he notarized them, but '
+              'the notary came back in Spanish. The county told me that I have to translate those '
+              'notaries into English, so I had to send them to a Spanish translating company.',
+      'timestamp': 139,
+      'timestamp_label': '[00:02:19]',
+      'timestamp_seconds': 139,
+      'tip': 'I had to email him the documents. He printed them and then he notarized them, but '
+             'the notary came back in Spanish. The county told me that I have to translate those '
+             'notaries into English, so I had to send them to a Spanish translating company.',
+      'title': 'COMPLEX Overseas Surplus Funds Recovery Deal Made Her $17k',
+      'url': 'https://www.youtube.com/watch?v=WEohyFOyk2M&t=139s',
+      'video_id': 'WEohyFOyk2M'},
+     {'author': 'Overages Overflow',
+      'channel': 'Overages Overflow',
+      'epistemic_status': 'attributed_practitioner_claim',
+      'markdown': '[00:01:32](https://www.youtube.com/watch?v=XTbc1Dz6dxY&t=92s)',
+      'relevance': 'Verbatim practitioner testimony from Chapter Q6.',
+      'source_type': 'video_pro_tip',
+      'text': "A death certificate alone often isn't enough. Many offices want probate papers or a "
+              "court order before they release an heir's share.",
+      'timestamp': 92,
+      'timestamp_label': '[00:01:32]',
+      'timestamp_seconds': 92,
+      'tip': "A death certificate alone often isn't enough. Many offices want probate papers or a "
+             "court order before they release an heir's share.",
+      'title': 'Surplus Funds Deceased Owners How to Collect',
+      'url': 'https://www.youtube.com/watch?v=XTbc1Dz6dxY&t=92s',
+      'video_id': 'XTbc1Dz6dxY'},
+     {'author': "Bob Diamond - America's Tax Sale Attorney",
+      'channel': "Bob Diamond - America's Tax Sale Attorney",
+      'epistemic_status': 'attributed_practitioner_claim',
+      'markdown': '[00:00:13](https://www.youtube.com/watch?v=ohOWpmEzDmA&t=13s)',
+      'relevance': 'Verbatim practitioner testimony from Chapter Q6.',
+      'source_type': 'video_pro_tip',
+      'text': 'The heirs can continue working with you on the claim, but you have to figure out '
+              'who they are. Look through the skip-trace report.',
+      'timestamp': 13,
+      'timestamp_label': '[00:00:13]',
+      'timestamp_seconds': 13,
+      'tip': 'The heirs can continue working with you on the claim, but you have to figure out who '
+             'they are. Look through the skip-trace report.',
+      'title': 'Claimant DIED? How Do You CLAIM Overages? | Bob Diamond',
+      'url': 'https://www.youtube.com/watch?v=ohOWpmEzDmA&t=13s',
+      'video_id': 'ohOWpmEzDmA'},
+     {'author': 'Nick Fullmer- Overage Syndicate',
+      'channel': 'Nick Fullmer- Overage Syndicate',
+      'epistemic_status': 'attributed_practitioner_claim',
+      'markdown': '[00:04:27](https://www.youtube.com/watch?v=zUGQVkbDEzc&t=267s)',
+      'relevance': 'Verbatim practitioner testimony from Chapter Q6.',
+      'source_type': 'video_pro_tip',
+      'text': "Family trees can help you dissect a potential deal and see if it's worth going "
+              "after or if it's too complicated.",
+      'timestamp': 267,
+      'timestamp_label': '[00:04:27]',
+      'timestamp_seconds': 267,
+      'tip': "Family trees can help you dissect a potential deal and see if it's worth going after "
+             "or if it's too complicated.",
+      'title': 'Tips For Dealing With Deceased Claimants AKA Estate Cases',
+      'url': 'https://www.youtube.com/watch?v=zUGQVkbDEzc&t=267s',
+      'video_id': 'zUGQVkbDEzc'},
+     {'author': 'William Whitman, Esquire',
+      'channel': 'William Whitman, Esquire',
+      'epistemic_status': 'attributed_practitioner_claim',
+      'markdown': '[00:01:04](https://www.youtube.com/watch?v=JRxMS-A2mXQ&t=64s)',
+      'relevance': 'Verbatim practitioner testimony from Chapter Q6.',
+      'source_type': 'video_pro_tip',
+      'text': 'You would need two separate estates. Each of the decedents needs their own estate, '
+              'and each estate gets its own executor or administrator.',
+      'timestamp': 64,
+      'timestamp_label': '[00:01:04]',
+      'timestamp_seconds': 64,
+      'tip': 'You would need two separate estates. Each of the decedents needs their own estate, '
+             'and each estate gets its own executor or administrator.',
+      'title': 'How to claim surplus funds when the property owners are deceased',
+      'url': 'https://www.youtube.com/watch?v=JRxMS-A2mXQ&t=64s',
+      'video_id': 'JRxMS-A2mXQ'},
+     {'author': 'SurplusFundsRiches',
+      'channel': 'SurplusFundsRiches',
+      'epistemic_status': 'attributed_practitioner_claim',
+      'markdown': '[00:04:04](https://www.youtube.com/watch?v=EPNAIRsvIHQ&t=244s)',
+      'relevance': 'Verbatim practitioner testimony from Chapter Q6.',
+      'source_type': 'video_pro_tip',
+      'text': 'She said, I really appreciate you asking how to do this. Please make it out his '
+              "name, comma, estate. I've got that all set up. It shouldn't be an issue. I'll "
+              'handle the probate, the estate issues if they come up.',
+      'timestamp': 244,
+      'timestamp_label': '[00:04:04]',
+      'timestamp_seconds': 244,
+      'tip': 'She said, I really appreciate you asking how to do this. Please make it out his '
+             "name, comma, estate. I've got that all set up. It shouldn't be an issue. I'll handle "
+             'the probate, the estate issues if they come up.',
+      'title': 'Surplus Funds Retrieval - claimant died during process; how we handled it',
+      'url': 'https://www.youtube.com/watch?v=EPNAIRsvIHQ&t=244s',
+      'video_id': 'EPNAIRsvIHQ'}],
+ 7: [{'author': 'Money Making Juggernaut',
+      'channel': 'Money Making Juggernaut',
+      'epistemic_status': 'attributed_practitioner_claim',
+      'markdown': '[00:02:21](https://www.youtube.com/watch?v=Zh5fus4SGzc&t=141s)',
+      'relevance': 'Verbatim practitioner testimony from Chapter Q7.',
+      'source_type': 'video_pro_tip',
+      'text': "If they're on the DNC list, I'm not contacting them.",
+      'timestamp': 141,
+      'timestamp_label': '[00:02:21]',
+      'timestamp_seconds': 141,
+      'tip': "If they're on the DNC list, I'm not contacting them.",
+      'title': 'What Nobody Tells You About The Surplus Funds Recovery Business',
+      'url': 'https://www.youtube.com/watch?v=Zh5fus4SGzc&t=141s',
+      'video_id': 'Zh5fus4SGzc'},
      {'author': 'Surplus_Prosperity',
       'channel': 'Surplus_Prosperity',
       'epistemic_status': 'attributed_practitioner_claim',
       'markdown': '[00:02:45](https://www.youtube.com/watch?v=MYo3k2Sxj1Q&t=165s)',
-      'relevance': 'Attributed practitioner commentary on contingency fee caps, assignment '
-                   'restrictions, and net recovery unit economics; verify statutory ceilings '
-                   'before contracting.',
+      'relevance': 'Verbatim practitioner testimony from Chapter Q7.',
       'source_type': 'video_pro_tip',
-      'text': 'We handle the paperwork in the entire claim process. And we do all of it on a '
-              "contingency, meaning we don't charge you a single dollar upfront. If we find "
-              "funds and we recover them, we take a percentage. If we don't recover anything, "
-              'you owe us nothing.',
+      'text': "If we don't recover anything, you owe us nothing.",
       'timestamp': 165,
       'timestamp_label': '[00:02:45]',
       'timestamp_seconds': 165,
-      'tip': 'We handle the paperwork in the entire claim process. And we do all of it on a '
-             "contingency, meaning we don't charge you a single dollar upfront. If we find "
-             "funds and we recover them, we take a percentage. If we don't recover anything, "
-             'you owe us nothing.',
-      'title': 'What Are Surplus Funds? How to Claim Money Owed to You After Foreclosure or '
-               'Tax Sale (Surplus_Prosperity)',
+      'tip': "If we don't recover anything, you owe us nothing.",
+      'title': 'What Are Surplus Funds? How to Claim Money Owed to You After Foreclosure or Tax '
+               'Sale',
       'url': 'https://www.youtube.com/watch?v=MYo3k2Sxj1Q&t=165s',
       'video_id': 'MYo3k2Sxj1Q'},
-     {'author': 'Probate Mastery',
-      'channel': 'Probate Mastery',
-      'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:20:44](https://www.youtube.com/watch?v=AAF69oF79DU&t=1244s)',
-      'relevance': 'Attributed practitioner commentary on contingency fee caps, assignment '
-                   'restrictions, and net recovery unit economics; verify statutory ceilings '
-                   'before contracting.',
-      'source_type': 'video_pro_tip',
-      'text': 'What if you guys split the marketing campaign, you split the cost of the leads '
-              'and the marketing, and then you split the revenue off the deals? And you get in '
-              "that way, just set a proper expectation that I'm not asking you to be my "
-              'business partner.',
-      'timestamp': 1244,
-      'timestamp_label': '[00:20:44]',
-      'timestamp_seconds': 1244,
-      'tip': 'What if you guys split the marketing campaign, you split the cost of the leads '
-             'and the marketing, and then you split the revenue off the deals? And you get in '
-             "that way, just set a proper expectation that I'm not asking you to be my "
-             'business partner.',
-      'title': 'Sub-to strategy for probate investing | Probate foreclosures | Probate real '
-               'estate marketing tips (Probate Mastery)',
-      'url': 'https://www.youtube.com/watch?v=AAF69oF79DU&t=1244s',
-      'video_id': 'AAF69oF79DU'},
-     {'author': 'Hutch & Holmes',
-      'channel': 'Hutch & Holmes',
-      'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:02:14](https://www.youtube.com/watch?v=L2oKpjOoh20&t=134s)',
-      'relevance': 'Attributed practitioner commentary on contingency fee caps, assignment '
-                   'restrictions, and net recovery unit economics; verify statutory ceilings '
-                   'before contracting.',
-      'source_type': 'video_pro_tip',
-      'text': 'You need to know the laws and if there is anything that need you need to know '
-              'when it comes to those uh those types of uh documents. When is an attorney '
-              "going to be needed if at all? Okay, so here's your last assignment. Um choose "
-              'one state and research the process.',
-      'timestamp': 134,
-      'timestamp_label': '[00:02:14]',
-      'timestamp_seconds': 134,
-      'tip': 'You need to know the laws and if there is anything that need you need to know '
-             'when it comes to those uh those types of uh documents. When is an attorney going '
-             "to be needed if at all? Okay, so here's your last assignment. Um choose one "
-             'state and research the process.',
-      'title': 'How to Recover Foreclosure Surplus Funds (3-Step System) (Hutch & Holmes)',
-      'url': 'https://www.youtube.com/watch?v=L2oKpjOoh20&t=134s',
-      'video_id': 'L2oKpjOoh20'},
-     {'author': 'Dreams & Dollars: The Everyday Entrepreneur',
-      'channel': 'Dreams & Dollars: The Everyday Entrepreneur',
-      'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:04:51](https://www.youtube.com/watch?v=pSC1FfAjNuo&t=291s)',
-      'relevance': 'Attributed practitioner commentary on contingency fee caps, assignment '
-                   'restrictions, and net recovery unit economics; verify statutory ceilings '
-                   'before contracting.',
-      'source_type': 'video_pro_tip',
-      'text': 'Check the state business database and any attorney partnerships. Tip three, '
-              "understand the fee structure. Contingency means they're paid only if you are. "
-              'Tip four, read the contract fully, know the term, your rights, and how to '
-              'cancel.',
-      'timestamp': 291,
-      'timestamp_label': '[00:04:51]',
-      'timestamp_seconds': 291,
-      'tip': 'Check the state business database and any attorney partnerships. Tip three, '
-             "understand the fee structure. Contingency means they're paid only if you are. "
-             'Tip four, read the contract fully, know the term, your rights, and how to '
-             'cancel.',
-      'title': 'Beginners Guide to Surplus Funds: How to Claim Money After Foreclosure- '
-               'Step-by-Step Tutorial (Dreams & Dollars: The Everyday Entrepreneur)',
-      'url': 'https://www.youtube.com/watch?v=pSC1FfAjNuo&t=291s',
-      'video_id': 'pSC1FfAjNuo'},
-     {'author': 'Surplus Funds 101',
-      'channel': 'Surplus Funds 101',
-      'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:05:08](https://www.youtube.com/watch?v=TTfaOSBvLDc&t=308s)',
-      'relevance': 'Attributed practitioner commentary on contingency fee caps, assignment '
-                   'restrictions, and net recovery unit economics; verify statutory ceilings '
-                   'before contracting.',
-      'source_type': 'video_pro_tip',
-      'text': "Now, there's just some general information about the stars. Well, now the state "
-              "has a 10% commission cap, the commission cap, at least for me, isn't nearly as "
-              'important as this bottom part getting bulk leads because he has 10, 20%. There '
-              "are some states that they don't care.",
-      'timestamp': 308,
-      'timestamp_label': '[00:05:08]',
-      'timestamp_seconds': 308,
-      'tip': "Now, there's just some general information about the stars. Well, now the state "
-             "has a 10% commission cap, the commission cap, at least for me, isn't nearly as "
-             'important as this bottom part getting bulk leads because he has 10, 20%. There '
-             "are some states that they don't care.",
-      'title': 'State Funds Tutorial Delaware: Registering As A Property Locator For The State '
-               'Of Delaware. (Surplus Funds 101)',
-      'url': 'https://www.youtube.com/watch?v=TTfaOSBvLDc&t=308s',
-      'video_id': 'TTfaOSBvLDc'},
-     {'author': 'Emend The Mass Media Group',
-      'channel': 'Emend The Mass Media Group',
-      'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:13:09](https://www.youtube.com/watch?v=ijLtjR0tTd8&t=789s)',
-      'relevance': 'Attributed practitioner commentary on contingency fee caps, assignment '
-                   'restrictions, and net recovery unit economics; verify statutory ceilings '
-                   'before contracting.',
-      'source_type': 'video_pro_tip',
-      'text': 'Are you charging a fee to assist the owner with the claim or did you enter into '
-              'a contract with a professional finder? If yes, then you\'ll have that option. " '
-              "And once you put in all the applicable information, you're going to hit that "
-              'next button.',
-      'timestamp': 789,
-      'timestamp_label': '[00:13:09]',
-      'timestamp_seconds': 789,
-      'tip': 'Are you charging a fee to assist the owner with the claim or did you enter into '
-             'a contract with a professional finder? If yes, then you\'ll have that option. " '
-             "And once you put in all the applicable information, you're going to hit that "
-             'next button.',
-      'title': 'CA Unclaimed Property - Are you missing out? - Tutorial (Emend The Mass Media '
-               'Group)',
-      'url': 'https://www.youtube.com/watch?v=ijLtjR0tTd8&t=789s',
-      'video_id': 'ijLtjR0tTd8'},
-     {'author': 'Rent Own Sell',
-      'channel': 'Rent Own Sell',
-      'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:02:43](https://www.youtube.com/watch?v=VBvaq5etzV4&t=163s)',
-      'relevance': 'Attributed practitioner commentary on contingency fee caps, assignment '
-                   'restrictions, and net recovery unit economics; verify statutory ceilings '
-                   'before contracting.',
-      'source_type': 'video_pro_tip',
-      'text': "Like agent fees and possibly court costs furthermore if you're planning on "
-              "financing the purchase be aware that some lenders won't approve your loan "
-              'application until you can provide a clear title.',
-      'timestamp': 163,
-      'timestamp_label': '[00:02:43]',
-      'timestamp_seconds': 163,
-      'tip': "Like agent fees and possibly court costs furthermore if you're planning on "
-             "financing the purchase be aware that some lenders won't approve your loan "
-             'application until you can provide a clear title.',
-      'title': 'How to Check for Property Liens - Complete Guide (Rent Own Sell)',
-      'url': 'https://www.youtube.com/watch?v=VBvaq5etzV4&t=163s',
-      'video_id': 'VBvaq5etzV4'},
-     {'author': 'Nick Fullmer- Overage Syndicate',
-      'channel': 'Nick Fullmer- Overage Syndicate',
-      'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:26:20](https://www.youtube.com/watch?v=vd__NHmQYgM&t=1580s)',
-      'relevance': 'Attributed practitioner commentary on contingency fee caps, assignment '
-                   'restrictions, and net recovery unit economics; verify statutory ceilings '
-                   'before contracting.',
-      'source_type': 'video_pro_tip',
-      'text': '"I wasn\'t expecting a response." Now, I wanted to say that\'s why my fees are '
-              'are where they\'re at because you can get in touch with me. I just said, "Let '
-              'me look at the case again and I\'ll get back to you tomorrow." So, we were '
-              'texting this morning back and forth.',
-      'timestamp': 1580,
-      'timestamp_label': '[00:26:20]',
-      'timestamp_seconds': 1580,
-      'tip': '"I wasn\'t expecting a response." Now, I wanted to say that\'s why my fees are '
-             'are where they\'re at because you can get in touch with me. I just said, "Let me '
-             'look at the case again and I\'ll get back to you tomorrow." So, we were texting '
-             'this morning back and forth.',
-      'title': '8 Surplus Funds Deals Within 3 Months of Starting The Business (Nick Fullmer- '
-               'Overage Syndicate)',
-      'url': 'https://www.youtube.com/watch?v=vd__NHmQYgM&t=1580s',
-      'video_id': 'vd__NHmQYgM'},
-     {'author': 'Logan Fullmer',
-      'channel': 'Logan Fullmer',
-      'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:21:27](https://www.youtube.com/watch?v=GK-4kFznJlA&t=1287s)',
-      'relevance': 'Attributed practitioner commentary on contingency fee caps, assignment '
-                   'restrictions, and net recovery unit economics; verify statutory ceilings '
-                   'before contracting.',
-      'source_type': 'video_pro_tip',
-      'text': "I mentioned the the the vetted group of PIs that we're a part of. It's 800 uh "
-              'PIs spread out all over the United [clears throat] States. But, I I developed a '
-              'lot of relationships over 25 years as an FBI agent uh to include those in in '
-              'foreign areas.',
-      'timestamp': 1287,
-      'timestamp_label': '[00:21:27]',
-      'timestamp_seconds': 1287,
-      'tip': "I mentioned the the the vetted group of PIs that we're a part of. It's 800 uh "
-             'PIs spread out all over the United [clears throat] States. But, I I developed a '
-             'lot of relationships over 25 years as an FBI agent uh to include those in in '
-             'foreign areas.',
-      'title': 'How Ex-FBI Agents Skip Trace Anyone for Real Estate Deals (Logan Fullmer)',
-      'url': 'https://www.youtube.com/watch?v=GK-4kFznJlA&t=1287s',
-      'video_id': 'GK-4kFznJlA'},
-     {'author': 'Sternberg Law Group',
-      'channel': 'Sternberg Law Group',
-      'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:02:27](https://www.youtube.com/watch?v=z6jQuGWdtDY&t=147s)',
-      'relevance': 'Attributed practitioner commentary on contingency fee caps, assignment '
-                   'restrictions, and net recovery unit economics; verify statutory ceilings '
-                   'before contracting.',
-      'source_type': 'video_pro_tip',
-      'text': '550, you need to hire an attorney, you can call us, sternberglegalgroup. We '
-              'need to then go to the foreclosure trustee, and we need to work with them to '
-              'make sure all the liens are paid off, and that extra $200,000 is transferred to '
-              'you by way of a check.',
-      'timestamp': 147,
-      'timestamp_label': '[00:02:27]',
-      'timestamp_seconds': 147,
-      'tip': '550, you need to hire an attorney, you can call us, sternberglegalgroup. We need '
-             'to then go to the foreclosure trustee, and we need to work with them to make '
-             'sure all the liens are paid off, and that extra $200,000 is transferred to you '
-             'by way of a check.',
-      'title': 'Surplus Funds After Foreclosure Explained | What Homeowners Must Know | '
-               'Sternberg Law Group (Sternberg Law Group)',
-      'url': 'https://www.youtube.com/watch?v=z6jQuGWdtDY&t=147s',
-      'video_id': 'z6jQuGWdtDY'},
-     {'author': 'Haynes Law Group',
-      'channel': 'Haynes Law Group',
-      'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:02:06](https://www.youtube.com/watch?v=Uj-vrJWHKQo&t=126s)',
-      'relevance': 'Attributed practitioner commentary on contingency fee caps, assignment '
-                   'restrictions, and net recovery unit economics; verify statutory ceilings '
-                   'before contracting.',
-      'source_type': 'video_pro_tip',
-      'text': 'Again, Florida statute 4532 subsection 1B states a subordinate lean holder '
-              'means the holder of a subordinate lean shown on the face of the pleadings as an '
-              'incumbrance on the property.',
-      'timestamp': 126,
-      'timestamp_label': '[00:02:06]',
-      'timestamp_seconds': 126,
-      'tip': 'Again, Florida statute 4532 subsection 1B states a subordinate lean holder means '
-             'the holder of a subordinate lean shown on the face of the pleadings as an '
-             'incumbrance on the property.',
-      'title': 'Florida Foreclosure Surplus Funds Update: What is a Subordinate Lien Holder? '
-               '(Haynes Law Group)',
-      'url': 'https://www.youtube.com/watch?v=Uj-vrJWHKQo&t=126s',
-      'video_id': 'Uj-vrJWHKQo'},
-     {'author': "Bob Diamond - America's Tax Sale Attorney",
-      'channel': "Bob Diamond - America's Tax Sale Attorney",
-      'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:06:48](https://www.youtube.com/watch?v=1Pp-cjYnY2k&t=408s)',
-      'relevance': 'Attributed practitioner commentary on contingency fee caps, assignment '
-                   'restrictions, and net recovery unit economics; verify statutory ceilings '
-                   'before contracting.',
-      'source_type': 'video_pro_tip',
-      'text': "It's kind of like being a contingent-fee attorney without having to go to law "
-              'school, without having long lawsuits or anything like that. But you get paid '
-              'crazy money because you bring so much help to people.',
-      'timestamp': 408,
-      'timestamp_label': '[00:06:48]',
-      'timestamp_seconds': 408,
-      'tip': "It's kind of like being a contingent-fee attorney without having to go to law "
-             'school, without having long lawsuits or anything like that. But you get paid '
-             'crazy money because you bring so much help to people.',
-      'title': "How To Become A Surplus Funds Recovery Agent (Bob Diamond - America's Tax Sale "
-               'Attorney)',
-      'url': 'https://www.youtube.com/watch?v=1Pp-cjYnY2k&t=408s',
-      'video_id': '1Pp-cjYnY2k'}],
- 4: [{'author': 'Hutch & Holmes',
-      'channel': 'Hutch & Holmes',
-      'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:01:24](https://www.youtube.com/watch?v=L2oKpjOoh20&t=84s)',
-      'relevance': 'Attributed practitioner commentary on lean firm setup, startup capital, '
-                   'notary/records costs, and lawful attorney co-counsel structures; confirm '
-                   'state bar rules.',
-      'source_type': 'video_pro_tip',
-      'text': 'Uh but when notary is needed, which is pretty much required in this business, '
-              'the claimant can find their own notary or you may partner with a notary or do '
-              "what I suggest is become a notary. And when legal work is needed, that's when "
-              'you get the attorney involved.',
-      'timestamp': 84,
-      'timestamp_label': '[00:01:24]',
-      'timestamp_seconds': 84,
-      'tip': 'Uh but when notary is needed, which is pretty much required in this business, '
-             'the claimant can find their own notary or you may partner with a notary or do '
-             "what I suggest is become a notary. And when legal work is needed, that's when "
-             'you get the attorney involved.',
-      'title': 'How to Recover Foreclosure Surplus Funds (3-Step System) (Hutch & Holmes)',
-      'url': 'https://www.youtube.com/watch?v=L2oKpjOoh20&t=84s',
-      'video_id': 'L2oKpjOoh20'},
      {'author': 'Money Making Juggernaut',
       'channel': 'Money Making Juggernaut',
       'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:16:12](https://www.youtube.com/watch?v=R8B06ovsDXI&t=972s)',
-      'relevance': 'Attributed practitioner commentary on lean firm setup, startup capital, '
-                   'notary/records costs, and lawful attorney co-counsel structures; confirm '
-                   'state bar rules.',
+      'markdown': '[00:03:24](https://www.youtube.com/watch?v=JQrEcneXSbk&t=204s)',
+      'relevance': 'Verbatim practitioner testimony from Chapter Q7.',
       'source_type': 'video_pro_tip',
-      'text': "We're going to help them with the notary filing cost and we're going to help "
-              "them with what's called due diligence, which is essentially confirming "
-              "entitlement. So, we're going to gather all the documents that they're entitled.",
-      'timestamp': 972,
-      'timestamp_label': '[00:16:12]',
-      'timestamp_seconds': 972,
-      'tip': "We're going to help them with the notary filing cost and we're going to help "
-             "them with what's called due diligence, which is essentially confirming "
-             "entitlement. So, we're going to gather all the documents that they're entitled.",
-      'title': 'How to start a Surplus Funds Business (45 min raw free game) (Money Making '
-               'Juggernaut)',
-      'url': 'https://www.youtube.com/watch?v=R8B06ovsDXI&t=972s',
-      'video_id': 'R8B06ovsDXI'},
-     {'author': 'William Whitman, Esquire',
-      'channel': 'William Whitman, Esquire',
-      'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:00:52](https://www.youtube.com/watch?v=0xk7lNvAgn0&t=52s)',
-      'relevance': 'Attributed practitioner commentary on lean firm setup, startup capital, '
-                   'notary/records costs, and lawful attorney co-counsel structures; confirm '
-                   'state bar rules.',
-      'source_type': 'video_pro_tip',
-      'text': "Entity if that's where you were and that takes me to the Pennsylvania "
-              'Department of State there is a business entity search and on the business '
-              "filing Services page there's a free business search feature I search themein "
-              'properties.',
-      'timestamp': 52,
-      'timestamp_label': '[00:00:52]',
-      'timestamp_seconds': 52,
-      'tip': "Entity if that's where you were and that takes me to the Pennsylvania Department "
-             'of State there is a business entity search and on the business filing Services '
-             "page there's a free business search feature I search themein properties.",
-      'title': 'Will Whitman, Esquire explains how to locate companies owed surplus funds '
-               '(William Whitman, Esquire)',
-      'url': 'https://www.youtube.com/watch?v=0xk7lNvAgn0&t=52s',
-      'video_id': '0xk7lNvAgn0'},
-     {'author': "Bob Diamond - America's Tax Sale Attorney",
-      'channel': "Bob Diamond - America's Tax Sale Attorney",
-      'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:03:53](https://www.youtube.com/watch?v=4O5XeYwMAts&t=233s)',
-      'relevance': 'Attributed practitioner commentary on lean firm setup, startup capital, '
-                   'notary/records costs, and lawful attorney co-counsel structures; confirm '
-                   'state bar rules.',
-      'source_type': 'video_pro_tip',
-      'text': "Doesn't really have any cost to it. There's no cost to apply or anything. You "
-              "don't have to hire a lawyer, just fill in the form. Thankfully, that's the "
-              "majority of states, and that's generally the process. So it's one of the things "
-              'that makes this business so attractive.',
-      'timestamp': 233,
-      'timestamp_label': '[00:03:53]',
-      'timestamp_seconds': 233,
-      'tip': "Doesn't really have any cost to it. There's no cost to apply or anything. You "
-             "don't have to hire a lawyer, just fill in the form. Thankfully, that's the "
-             "majority of states, and that's generally the process. So it's one of the things "
-             'that makes this business so attractive.',
-      'title': "How To Find Tax Sale Overages (Bob Diamond - America's Tax Sale Attorney)",
-      'url': 'https://www.youtube.com/watch?v=4O5XeYwMAts&t=233s',
-      'video_id': '4O5XeYwMAts'},
-     {'author': 'Alfred Taren',
-      'channel': 'Alfred Taren',
-      'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:05:10](https://www.youtube.com/watch?v=8-8koApqnYA&t=310s)',
-      'relevance': 'Attributed practitioner commentary on lean firm setup, startup capital, '
-                   'notary/records costs, and lawful attorney co-counsel structures; confirm '
-                   'state bar rules.',
-      'source_type': 'video_pro_tip',
-      'text': 'When you search how to start this business, you get the same list every time. '
-              'Form an LLC, get an EIN, open a bank account, build a website, get a logo, a '
-              'CRM. Then, near the bottom, go find leads and make calls.',
-      'timestamp': 310,
-      'timestamp_label': '[00:05:10]',
-      'timestamp_seconds': 310,
-      'tip': 'When you search how to start this business, you get the same list every time. '
-             'Form an LLC, get an EIN, open a bank account, build a website, get a logo, a '
-             'CRM. Then, near the bottom, go find leads and make calls.',
-      'title': 'How to Start a Surplus Funds Business in 2026 (Step by Step) (Alfred Taren)',
-      'url': 'https://www.youtube.com/watch?v=8-8koApqnYA&t=310s',
-      'video_id': '8-8koApqnYA'},
-     {'author': 'Rent Own Sell',
-      'channel': 'Rent Own Sell',
-      'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:02:41](https://www.youtube.com/watch?v=VBvaq5etzV4&t=161s)',
-      'relevance': 'Attributed practitioner commentary on lean firm setup, startup capital, '
-                   'notary/records costs, and lawful attorney co-counsel structures; confirm '
-                   'state bar rules.',
-      'source_type': 'video_pro_tip',
-      'text': 'Shell out more money to cover expenses like agent fees and possibly court costs '
-              "furthermore if you're planning on financing the purchase be aware that some "
-              "lenders won't approve your loan application until you can provide a clear "
-              'title.',
-      'timestamp': 161,
-      'timestamp_label': '[00:02:41]',
-      'timestamp_seconds': 161,
-      'tip': 'Shell out more money to cover expenses like agent fees and possibly court costs '
-             "furthermore if you're planning on financing the purchase be aware that some "
-             "lenders won't approve your loan application until you can provide a clear title.",
-      'title': 'How to Check for Property Liens - Complete Guide (Rent Own Sell)',
-      'url': 'https://www.youtube.com/watch?v=VBvaq5etzV4&t=161s',
-      'video_id': 'VBvaq5etzV4'},
-     {'author': 'Overage Acquisition',
-      'channel': 'Overage Acquisition',
-      'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:02:48](https://www.youtube.com/watch?v=bpxSOg1_xbE&t=168s)',
-      'relevance': 'Attributed practitioner commentary on lean firm setup, startup capital, '
-                   'notary/records costs, and lawful attorney co-counsel structures; confirm '
-                   'state bar rules.',
-      'source_type': 'video_pro_tip',
-      'text': 'Additionally, understand that every state has its own rules about third-party '
-              'surplus funds recovery. In some states, non- attorneys are limited in what they '
-              'can do or they may need to work with a licensed attorney when filing claims.',
-      'timestamp': 168,
-      'timestamp_label': '[00:02:48]',
-      'timestamp_seconds': 168,
-      'tip': 'Additionally, understand that every state has its own rules about third-party '
-             'surplus funds recovery. In some states, non- attorneys are limited in what they '
-             'can do or they may need to work with a licensed attorney when filing claims.',
-      'title': 'Top 5 Things Nobody Tells You About the Surplus Funds Recovery Business '
-               '(Overage Acquisition)',
-      'url': 'https://www.youtube.com/watch?v=bpxSOg1_xbE&t=168s',
-      'video_id': 'bpxSOg1_xbE'},
+      'text': 'Call 150 to 200 leads per day just by effectively using the auto dialer.',
+      'timestamp': 204,
+      'timestamp_label': '[00:03:24]',
+      'timestamp_seconds': 204,
+      'tip': 'Call 150 to 200 leads per day just by effectively using the auto dialer.',
+      'title': 'How I Call 200 SURPLUS Funds LEADS In 2 HOURS! (Unclaimed Funds Cold Calling)',
+      'url': 'https://www.youtube.com/watch?v=JQrEcneXSbk&t=204s',
+      'video_id': 'JQrEcneXSbk'},
      {'author': 'Surplus Institute / David Church / Unclaimed Funds',
       'channel': 'Surplus Institute / David Church / Unclaimed Funds',
       'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:05:57](https://www.youtube.com/watch?v=xqpLsq3JVlU&t=357s)',
-      'relevance': 'Attributed practitioner commentary on lean firm setup, startup capital, '
-                   'notary/records costs, and lawful attorney co-counsel structures; confirm '
-                   'state bar rules.',
+      'markdown': '[00:05:17](https://www.youtube.com/watch?v=gApaLMe_Eec&t=317s)',
+      'relevance': 'Verbatim practitioner testimony from Chapter Q7.',
       'source_type': 'video_pro_tip',
-      'text': "What what you do is you just in fact I've had um documents notoriize. You just "
-              'find an notary in that country. You have to prove their dealings and you have '
-              'to prove that they did business in the United States.',
-      'timestamp': 357,
-      'timestamp_label': '[00:05:57]',
-      'timestamp_seconds': 357,
-      'tip': "What what you do is you just in fact I've had um documents notoriize. You just "
-             'find an notary in that country. You have to prove their dealings and you have to '
-             'prove that they did business in the United States.',
-      'title': 'Cold Calling for Surplus Funds: What Actually Works (Surplus Institute / David '
-               'Church / Unclaimed Funds)',
-      'url': 'https://www.youtube.com/watch?v=xqpLsq3JVlU&t=357s',
-      'video_id': 'xqpLsq3JVlU'},
-     {'author': 'Noble Notary & Legal Document Preparers',
-      'channel': 'Noble Notary & Legal Document Preparers',
+      'text': "I don't put them in my CRM if I don't make contact.",
+      'timestamp': 317,
+      'timestamp_label': '[00:05:17]',
+      'timestamp_seconds': 317,
+      'tip': "I don't put them in my CRM if I don't make contact.",
+      'title': 'How to Nail Cold Calling: 3 Killer Bonus Tips to Reach Your Leads | Surplus Funds '
+               'Cold Calling 2024',
+      'url': 'https://www.youtube.com/watch?v=gApaLMe_Eec&t=317s',
+      'video_id': 'gApaLMe_Eec'},
+     {'author': 'Surplus Institute / David Church / Unclaimed Funds',
+      'channel': 'Surplus Institute / David Church / Unclaimed Funds',
       'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:03:47](https://www.youtube.com/watch?v=DM0kjEZlbSk&t=227s)',
-      'relevance': 'Attributed practitioner commentary on lean firm setup, startup capital, '
-                   'notary/records costs, and lawful attorney co-counsel structures; confirm '
-                   'state bar rules.',
+      'markdown': '[00:03:07](https://www.youtube.com/watch?v=jNXoU7Ep1vY&t=187s)',
+      'relevance': 'Verbatim practitioner testimony from Chapter Q7.',
       'source_type': 'video_pro_tip',
-      'text': "If you check lean holder, you've got to break down the exact math for the "
-              "county. What was the original amount of the lean? What's the current amount "
-              'owed today? Are there specific attorney fees or interest or costs due?',
-      'timestamp': 227,
-      'timestamp_label': '[00:03:47]',
-      'timestamp_seconds': 227,
-      'tip': "If you check lean holder, you've got to break down the exact math for the "
-             "county. What was the original amount of the lean? What's the current amount owed "
-             'today? Are there specific attorney fees or interest or costs due?',
-      'title': 'Florida Tax Deed Surplus Claim Forms:  How to Claim Excess Funds (Noble Notary '
-               '& Legal Document Preparers)',
-      'url': 'https://www.youtube.com/watch?v=DM0kjEZlbSk&t=227s',
-      'video_id': 'DM0kjEZlbSk'},
-     {'author': 'Overage Acquisition',
-      'channel': 'Overage Acquisition',
+      'text': "You don't ever want to fabricate a false story. What you want to do is you want to "
+              'stick to true data.',
+      'timestamp': 187,
+      'timestamp_label': '[00:03:07]',
+      'timestamp_seconds': 187,
+      'tip': "You don't ever want to fabricate a false story. What you want to do is you want to "
+             'stick to true data.',
+      'title': 'Mastering Objection Handling: Proven Scripts for Overcoming Sales Challenges. '
+               '#surplus_funds',
+      'url': 'https://www.youtube.com/watch?v=jNXoU7Ep1vY&t=187s',
+      'video_id': 'jNXoU7Ep1vY'},
+     {'author': 'Surplus Funds 101',
+      'channel': 'Surplus Funds 101',
       'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:01:42](https://www.youtube.com/watch?v=q2gk3WmK5xs&t=102s)',
-      'relevance': 'Attributed practitioner commentary on lean firm setup, startup capital, '
-                   'notary/records costs, and lawful attorney co-counsel structures; confirm '
-                   'state bar rules.',
+      'markdown': '[00:01:42](https://www.youtube.com/watch?v=z_Y10SDCdp4&t=102s)',
+      'relevance': 'Verbatim practitioner testimony from Chapter Q7.',
       'source_type': 'video_pro_tip',
-      'text': 'Otherwise, you can hire a professional to help you with it. This LLC protects '
-              'your personal assets and makes your business legitimate, while the EIN acts as '
-              "your company's tax identification number.",
+      'text': 'Objections are usually buyer questions in disguise.',
       'timestamp': 102,
       'timestamp_label': '[00:01:42]',
       'timestamp_seconds': 102,
-      'tip': 'Otherwise, you can hire a professional to help you with it. This LLC protects '
-             'your personal assets and makes your business legitimate, while the EIN acts as '
-             "your company's tax identification number.",
-      'title': 'The Most Overlooked Surplus Funds Recovery Business You Can Start With $0 '
-               '(Overage Acquisition)',
-      'url': 'https://www.youtube.com/watch?v=q2gk3WmK5xs&t=102s',
-      'video_id': 'q2gk3WmK5xs'},
-     {'author': 'My Lawyer In Spain',
-      'channel': 'My Lawyer In Spain',
-      'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:26:44](https://www.youtube.com/watch?v=ywaYY4cPtAY&t=1604s)',
-      'relevance': 'Attributed practitioner commentary on lean firm setup, startup capital, '
-                   'notary/records costs, and lawful attorney co-counsel structures; confirm '
-                   'state bar rules.',
-      'source_type': 'video_pro_tip',
-      'text': 'Now we\'re going to use a firm that we\'re familiar with." As long as the firm '
-              'is legitimate and bonafidey. Um, then we would kind of recommend them to the '
-              'family. If it needs a lawyer in the UK or and Spain, we can assist with that as '
-              'well.',
-      'timestamp': 1604,
-      'timestamp_label': '[00:26:44]',
-      'timestamp_seconds': 1604,
-      'tip': 'Now we\'re going to use a firm that we\'re familiar with." As long as the firm '
-             'is legitimate and bonafidey. Um, then we would kind of recommend them to the '
-             'family. If it needs a lawyer in the UK or and Spain, we can assist with that as '
-             'well.',
-      'title': 'Unclaimed Estates & Abandoned Properties in Spain - tracing Heirs Worldwide '
-               '(My Lawyer In Spain)',
-      'url': 'https://www.youtube.com/watch?v=ywaYY4cPtAY&t=1604s',
-      'video_id': 'ywaYY4cPtAY'},
-     {'author': 'Private Investigator Videos',
-      'channel': 'Private Investigator Videos',
-      'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:02:34](https://www.youtube.com/watch?v=GWuQIN0aSwQ&t=154s)',
-      'relevance': 'Attributed practitioner commentary on lean firm setup, startup capital, '
-                   'notary/records costs, and lawful attorney co-counsel structures; confirm '
-                   'state bar rules.',
-      'source_type': 'video_pro_tip',
-      'text': "Don't take it the word of the auction company or even the property owner what's "
-              'on the property you want to know for sure based on an official certified title '
-              "abstract what's on the property what's not and then you can make your "
-              'decisions.',
-      'timestamp': 154,
-      'timestamp_label': '[00:02:34]',
-      'timestamp_seconds': 154,
-      'tip': "Don't take it the word of the auction company or even the property owner what's "
-             'on the property you want to know for sure based on an official certified title '
-             "abstract what's on the property what's not and then you can make your decisions.",
-      'title': 'What liens remain on a title search after foreclosure? (Private Investigator '
-               'Videos)',
-      'url': 'https://www.youtube.com/watch?v=GWuQIN0aSwQ&t=154s',
-      'video_id': 'GWuQIN0aSwQ'},
-     {'author': 'Courtney Fricke',
-      'channel': 'Courtney Fricke',
-      'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:13:20](https://www.youtube.com/watch?v=FgFrlIpbscs&t=800s)',
-      'relevance': 'Attributed practitioner commentary on lean firm setup, startup capital, '
-                   'notary/records costs, and lawful attorney co-counsel structures; confirm '
-                   'state bar rules.',
-      'source_type': 'video_pro_tip',
-      'text': "Now, the last one is relational abandonment, which could be the creditor's "
-              'relationship to this investment. It could be the defunct entity. So, their '
-              'relationship with that business is now abandoned. It could be the heirs '
-              'fighting.',
-      'timestamp': 800,
-      'timestamp_label': '[00:13:20]',
-      'timestamp_seconds': 800,
-      'tip': "Now, the last one is relational abandonment, which could be the creditor's "
-             'relationship to this investment. It could be the defunct entity. So, their '
-             'relationship with that business is now abandoned. It could be the heirs '
-             'fighting.',
-      'title': 'How to Find Curative Title Deals Nobody Else Is Chasing (Courtney Fricke)',
-      'url': 'https://www.youtube.com/watch?v=FgFrlIpbscs&t=800s',
-      'video_id': 'FgFrlIpbscs'},
-     {'author': 'Surplus Funds 101',
-      'channel': 'Surplus Funds 101',
-      'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:02:36](https://www.youtube.com/watch?v=Qn63DtrxFts&t=156s)',
-      'relevance': 'Attributed practitioner commentary on lean firm setup, startup capital, '
-                   'notary/records costs, and lawful attorney co-counsel structures; confirm '
-                   'state bar rules.',
-      'source_type': 'video_pro_tip',
-      'text': "'t want them to work anymore. Um a few weeks ago I called on a notary to do a "
-              'job and the notary specialized in working with real estate agents. And the '
-              'notary was like, "Hey, look, I had to get out of the business and take a day '
-              'job.',
-      'timestamp': 156,
-      'timestamp_label': '[00:02:36]',
-      'timestamp_seconds': 156,
-      'tip': "'t want them to work anymore. Um a few weeks ago I called on a notary to do a "
-             'job and the notary specialized in working with real estate agents. And the '
-             'notary was like, "Hey, look, I had to get out of the business and take a day '
-             'job.',
-      'title': 'How to Build a Nationwide Notary Team (Step-by-Step) (Surplus Funds 101)',
-      'url': 'https://www.youtube.com/watch?v=Qn63DtrxFts&t=156s',
-      'video_id': 'Qn63DtrxFts'},
-     {'author': 'Attorney Jack',
-      'channel': 'Attorney Jack',
-      'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:03:38](https://www.youtube.com/watch?v=KKKIgl--DNo&t=218s)',
-      'relevance': 'Attributed practitioner commentary on lean firm setup, startup capital, '
-                   'notary/records costs, and lawful attorney co-counsel structures; confirm '
-                   'state bar rules.',
-      'source_type': 'video_pro_tip',
-      'text': 'The law firm takes care of any other attorney fees, clerk fees, or any type of '
-              'assessments that may need to be done to be able to access these funds. Reach '
-              'out to us today if you or a family member has gone through a foreclosure in any '
-              'state in the United States.',
-      'timestamp': 218,
-      'timestamp_label': '[00:03:38]',
-      'timestamp_seconds': 218,
-      'tip': 'The law firm takes care of any other attorney fees, clerk fees, or any type of '
-             'assessments that may need to be done to be able to access these funds. Reach out '
-             'to us today if you or a family member has gone through a foreclosure in any '
-             'state in the United States.',
-      'title': 'Foreclosure - Surplus Funds Recovery - Attorney Assistance (Attorney Jack)',
-      'url': 'https://www.youtube.com/watch?v=KKKIgl--DNo&t=218s',
-      'video_id': 'KKKIgl--DNo'}],
- 5: [{'author': 'AFX Research LLC',
-      'channel': 'AFX Research LLC',
-      'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:00:53](https://www.youtube.com/watch?v=HPyO3dkjbCQ&t=53s)',
-      'relevance': 'Attributed practitioner commentary on surviving vs. wiped-out liens, '
-                   'junior encumbrance priority, upset-bid windows, and probate/bankruptcy '
-                   'traps; verify via title search.',
-      'source_type': 'video_pro_tip',
-      'text': "Mortgage liens are placed by lenders. Mechanic's liens are filed by contractors "
-              "who weren't paid for their work. Judgment liens come from court rulings against "
-              'the property owner. HOA liens can be filed for unpaid dues. And IRS liens cover '
-              'unpaid federal taxes.',
-      'timestamp': 53,
-      'timestamp_label': '[00:00:53]',
-      'timestamp_seconds': 53,
-      'tip': "Mortgage liens are placed by lenders. Mechanic's liens are filed by contractors "
-             "who weren't paid for their work. Judgment liens come from court rulings against "
-             'the property owner. HOA liens can be filed for unpaid dues. And IRS liens cover '
-             'unpaid federal taxes.',
-      'title': 'HOW TO FIND LIENS & TITLE SEARCH IN TEXAS (AFX Research LLC)',
-      'url': 'https://www.youtube.com/watch?v=HPyO3dkjbCQ&t=53s',
-      'video_id': 'HPyO3dkjbCQ'},
-     {'author': 'Noble Notary & Legal Document Preparers',
-      'channel': 'Noble Notary & Legal Document Preparers',
-      'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:02:06](https://www.youtube.com/watch?v=DM0kjEZlbSk&t=126s)',
-      'relevance': 'Attributed practitioner commentary on surviving vs. wiped-out liens, '
-                   'junior encumbrance priority, upset-bid windows, and probate/bankruptcy '
-                   'traps; verify via title search.',
-      'source_type': 'video_pro_tip',
-      'text': 'Second are the lean holders. So think mortgage lenders or an HOA that recorded '
-              'a lean or maybe someone who won a court judgment against the property. Third, '
-              'you have court-appointed personal representatives like probate administrators '
-              'handling an estate.',
-      'timestamp': 126,
-      'timestamp_label': '[00:02:06]',
-      'timestamp_seconds': 126,
-      'tip': 'Second are the lean holders. So think mortgage lenders or an HOA that recorded a '
-             'lean or maybe someone who won a court judgment against the property. Third, you '
-             'have court-appointed personal representatives like probate administrators '
-             'handling an estate.',
-      'title': 'Florida Tax Deed Surplus Claim Forms:  How to Claim Excess Funds (Noble Notary '
-               '& Legal Document Preparers)',
-      'url': 'https://www.youtube.com/watch?v=DM0kjEZlbSk&t=126s',
-      'video_id': 'DM0kjEZlbSk'},
-     {'author': 'Alfred Taren',
-      'channel': 'Alfred Taren',
-      'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:01:14](https://www.youtube.com/watch?v=LdemHPCk0dk&t=74s)',
-      'relevance': 'Attributed practitioner commentary on surviving vs. wiped-out liens, '
-                   'junior encumbrance priority, upset-bid windows, and probate/bankruptcy '
-                   'traps; verify via title search.',
-      'source_type': 'video_pro_tip',
-      'text': 'HOA liens, judgment liens, which is when somebody sued the owner and won, tax '
-              'liens from the IRS or state, and city liens like unpaid water bills or code '
-              "fines. Now here's where it gets interesting. The type of sale changes who gets "
-              'paid.',
-      'timestamp': 74,
-      'timestamp_label': '[00:01:14]',
-      'timestamp_seconds': 74,
-      'tip': 'HOA liens, judgment liens, which is when somebody sued the owner and won, tax '
-             'liens from the IRS or state, and city liens like unpaid water bills or code '
-             "fines. Now here's where it gets interesting. The type of sale changes who gets "
-             'paid.',
-      'title': 'How to Check for Liens Before You Call About Surplus Funds (Alfred Taren)',
-      'url': 'https://www.youtube.com/watch?v=LdemHPCk0dk&t=74s',
-      'video_id': 'LdemHPCk0dk'},
-     {'author': 'Ted Thomas',
-      'channel': 'Ted Thomas',
-      'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:03:15](https://www.youtube.com/watch?v=xtdWFaJY8Xc&t=195s)',
-      'relevance': 'Attributed practitioner commentary on surviving vs. wiped-out liens, '
-                   'junior encumbrance priority, upset-bid windows, and probate/bankruptcy '
-                   'traps; verify via title search.',
-      'source_type': 'video_pro_tip',
-      'text': "Now there's another lien that everybody's worried about, and that's the I-R-S "
-              'lien. That lien will remain on the property for 120 days, if the county has '
-              "notified the IRS that they're gonna have an auction. So most of the I-R-S liens "
-              'will fall off the property.',
-      'timestamp': 195,
-      'timestamp_label': '[00:03:15]',
-      'timestamp_seconds': 195,
-      'tip': "Now there's another lien that everybody's worried about, and that's the I-R-S "
-             'lien. That lien will remain on the property for 120 days, if the county has '
-             "notified the IRS that they're gonna have an auction. So most of the I-R-S liens "
-             'will fall off the property.',
-      'title': 'How To Do A Title Search On A Property Yourself Before You Bid At Tax Sale '
-               'Auctions (Ted Thomas)',
-      'url': 'https://www.youtube.com/watch?v=xtdWFaJY8Xc&t=195s',
-      'video_id': 'xtdWFaJY8Xc'},
+      'tip': 'Objections are usually buyer questions in disguise.',
+      'title': 'Handling objections & complaints in your Surplus Business. state funds',
+      'url': 'https://www.youtube.com/watch?v=z_Y10SDCdp4&t=102s',
+      'video_id': 'z_Y10SDCdp4'},
      {'author': 'Nick Fullmer- Overage Syndicate',
       'channel': 'Nick Fullmer- Overage Syndicate',
       'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:01:48](https://www.youtube.com/watch?v=KOYBZFn2k7w&t=108s)',
-      'relevance': 'Attributed practitioner commentary on surviving vs. wiped-out liens, '
-                   'junior encumbrance priority, upset-bid windows, and probate/bankruptcy '
-                   'traps; verify via title search.',
+      'markdown': '[00:04:18](https://www.youtube.com/watch?v=QDRGMRtpIOs&t=258s)',
+      'relevance': 'Verbatim practitioner testimony from Chapter Q7.',
       'source_type': 'video_pro_tip',
-      'text': 'Little details like that you need to be aware of. Now, this right here, we also '
-              'want to know what liens existed on the property at the time of the sale, '
-              'because lien holders have priority over homeowners.',
-      'timestamp': 108,
-      'timestamp_label': '[00:01:48]',
-      'timestamp_seconds': 108,
-      'tip': 'Little details like that you need to be aware of. Now, this right here, we also '
-             'want to know what liens existed on the property at the time of the sale, because '
-             'lien holders have priority over homeowners.',
-      'title': 'Overages & Surplus Fund Debt & Title Research: Not As Easy As It Seems.  Two '
-               'tips To Help (Nick Fullmer- Overage Syndicate)',
-      'url': 'https://www.youtube.com/watch?v=KOYBZFn2k7w&t=108s',
-      'video_id': 'KOYBZFn2k7w'},
+      'text': 'You find the former homeowner, reunite them with their funds, and you receive a '
+              'commission for your work.',
+      'timestamp': 258,
+      'timestamp_label': '[00:04:18]',
+      'timestamp_seconds': 258,
+      'tip': 'You find the former homeowner, reunite them with their funds, and you receive a '
+             'commission for your work.',
+      'title': 'Tax Sale Overages & Surplus Funds Is A Scam!',
+      'url': 'https://www.youtube.com/watch?v=QDRGMRtpIOs&t=258s',
+      'video_id': 'QDRGMRtpIOs'},
      {'author': 'Money Making Juggernaut',
       'channel': 'Money Making Juggernaut',
       'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:08:26](https://www.youtube.com/watch?v=FJj3hN2KbIg&t=506s)',
-      'relevance': 'Attributed practitioner commentary on surviving vs. wiped-out liens, '
-                   'junior encumbrance priority, upset-bid windows, and probate/bankruptcy '
-                   'traps; verify via title search.',
+      'markdown': '[00:01:37](https://www.youtube.com/watch?v=rJjMD-YvK30&t=97s)',
+      'relevance': 'Verbatim practitioner testimony from Chapter Q7.',
       'source_type': 'video_pro_tip',
-      'text': "'s liens on GSCCA, make sure you go further in your research, check to see if "
-              "the client is still alive or deceased. If they're deceased, search the "
-              'obituary. You can go to the probate court, perform a search as well, and then '
-              'you market.',
-      'timestamp': 506,
-      'timestamp_label': '[00:08:26]',
-      'timestamp_seconds': 506,
-      'tip': "'s liens on GSCCA, make sure you go further in your research, check to see if "
-             "the client is still alive or deceased. If they're deceased, search the obituary. "
-             'You can go to the probate court, perform a search as well, and then you market.',
-      'title': 'How to Do Surplus Funds in Georgia (Step-by-Step Guide) (Money Making '
-               'Juggernaut)',
-      'url': 'https://www.youtube.com/watch?v=FJj3hN2KbIg&t=506s',
-      'video_id': 'FJj3hN2KbIg'},
-     {'author': 'Sternberg Law Group',
-      'channel': 'Sternberg Law Group',
-      'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:02:23](https://www.youtube.com/watch?v=z6jQuGWdtDY&t=143s)',
-      'relevance': 'Attributed practitioner commentary on surviving vs. wiped-out liens, '
-                   'junior encumbrance priority, upset-bid windows, and probate/bankruptcy '
-                   'traps; verify via title search.',
-      'source_type': 'video_pro_tip',
-      'text': '750,000, the payoffs between the first mortgage and the second mortgage and '
-              'your tax lien was 550, you need to hire an attorney, you can call us, '
-              'sternberglegalgroup.',
-      'timestamp': 143,
-      'timestamp_label': '[00:02:23]',
-      'timestamp_seconds': 143,
-      'tip': '750,000, the payoffs between the first mortgage and the second mortgage and your '
-             'tax lien was 550, you need to hire an attorney, you can call us, '
-             'sternberglegalgroup.',
-      'title': 'Surplus Funds After Foreclosure Explained | What Homeowners Must Know | '
-               'Sternberg Law Group (Sternberg Law Group)',
-      'url': 'https://www.youtube.com/watch?v=z6jQuGWdtDY&t=143s',
-      'video_id': 'z6jQuGWdtDY'},
-     {'author': 'Attorney Jack',
-      'channel': 'Attorney Jack',
-      'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:02:22](https://www.youtube.com/watch?v=KKKIgl--DNo&t=142s)',
-      'relevance': 'Attributed practitioner commentary on surviving vs. wiped-out liens, '
-                   'junior encumbrance priority, upset-bid windows, and probate/bankruptcy '
-                   'traps; verify via title search.',
-      'source_type': 'video_pro_tip',
-      'text': 'Remember, there are many times that people paid their mortgage or their tax '
-              'liens for years, and then at the last minute due to some unfortunate situation '
-              'or a death, uh the these the mortgage or the taxes were not paid.',
-      'timestamp': 142,
-      'timestamp_label': '[00:02:22]',
-      'timestamp_seconds': 142,
-      'tip': 'Remember, there are many times that people paid their mortgage or their tax '
-             'liens for years, and then at the last minute due to some unfortunate situation '
-             'or a death, uh the these the mortgage or the taxes were not paid.',
-      'title': 'Foreclosure - Surplus Funds Recovery - Attorney Assistance (Attorney Jack)',
-      'url': 'https://www.youtube.com/watch?v=KKKIgl--DNo&t=142s',
-      'video_id': 'KKKIgl--DNo'},
-     {'author': 'Courtney Fricke',
-      'channel': 'Courtney Fricke',
-      'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:15:48](https://www.youtube.com/watch?v=5LDDkiUTmXI&t=948s)',
-      'relevance': 'Attributed practitioner commentary on surviving vs. wiped-out liens, '
-                   'junior encumbrance priority, upset-bid windows, and probate/bankruptcy '
-                   'traps; verify via title search.',
-      'source_type': 'video_pro_tip',
-      'text': "'s a chance that those liens might that mortgage might still be on those those "
-              "sold properties. Um so I love how you guys are thinking this doesn't make "
-              "sense. And this is where we talk about like how I've made so much money with "
-              'curiosity, right?',
-      'timestamp': 948,
-      'timestamp_label': '[00:15:48]',
-      'timestamp_seconds': 948,
-      'tip': "'s a chance that those liens might that mortgage might still be on those those "
-             "sold properties. Um so I love how you guys are thinking this doesn't make sense. "
-             "And this is where we talk about like how I've made so much money with curiosity, "
-             'right?',
-      'title': "How a Curative Title Investor Finds & Solves Deals Others Can't (Courtney "
-               'Fricke)',
-      'url': 'https://www.youtube.com/watch?v=5LDDkiUTmXI&t=948s',
-      'video_id': '5LDDkiUTmXI'},
-     {'author': "Bob Diamond - America's Tax Sale Attorney",
-      'channel': "Bob Diamond - America's Tax Sale Attorney",
-      'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:06:15](https://www.youtube.com/watch?v=1Pp-cjYnY2k&t=375s)',
-      'relevance': 'Attributed practitioner commentary on surviving vs. wiped-out liens, '
-                   'junior encumbrance priority, upset-bid windows, and probate/bankruptcy '
-                   'traps; verify via title search.',
-      'source_type': 'video_pro_tip',
-      'text': 'You might have the wrong person. Sometimes we get junior instead of senior — '
-              "that's our most common problem, where it's like, oh, we got the son instead of "
-              'the father. We gotta go get the father to sign up. You may have a competing '
-              'claimant.',
-      'timestamp': 375,
-      'timestamp_label': '[00:06:15]',
-      'timestamp_seconds': 375,
-      'tip': 'You might have the wrong person. Sometimes we get junior instead of senior — '
-             "that's our most common problem, where it's like, oh, we got the son instead of "
-             'the father. We gotta go get the father to sign up. You may have a competing '
-             'claimant.',
-      'title': "How To Become A Surplus Funds Recovery Agent (Bob Diamond - America's Tax Sale "
-               'Attorney)',
-      'url': 'https://www.youtube.com/watch?v=1Pp-cjYnY2k&t=375s',
-      'video_id': '1Pp-cjYnY2k'},
-     {'author': 'Courtney Fricke',
-      'channel': 'Courtney Fricke',
-      'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:11:49](https://www.youtube.com/watch?v=z6h2w5h7oTQ&t=709s)',
-      'relevance': 'Attributed practitioner commentary on surviving vs. wiped-out liens, '
-                   'junior encumbrance priority, upset-bid windows, and probate/bankruptcy '
-                   'traps; verify via title search.',
-      'source_type': 'video_pro_tip',
-      'text': '" Or you need um you know, the price you know, you have the price at at X '
-              "number, but they owe too much, you know, liens, judgments, whatever. Well, I'm "
-              "tracking down lien lien holders and creditors and I'm trying to do whatever I "
-              'can to to make the deal work.',
-      'timestamp': 709,
-      'timestamp_label': '[00:11:49]',
-      'timestamp_seconds': 709,
-      'tip': '" Or you need um you know, the price you know, you have the price at at X '
-             "number, but they owe too much, you know, liens, judgments, whatever. Well, I'm "
-             "tracking down lien lien holders and creditors and I'm trying to do whatever I "
-             'can to to make the deal work.',
-      'title': 'Before You Go From Wholesaling to Curative Title, Watch This (Courtney Fricke)',
-      'url': 'https://www.youtube.com/watch?v=z6h2w5h7oTQ&t=709s',
-      'video_id': 'z6h2w5h7oTQ'},
-     {'author': 'Money Making Juggernaut',
-      'channel': 'Money Making Juggernaut',
-      'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:11:36](https://www.youtube.com/watch?v=suJSu-vn6yI&t=696s)',
-      'relevance': 'Attributed practitioner commentary on surviving vs. wiped-out liens, '
-                   'junior encumbrance priority, upset-bid windows, and probate/bankruptcy '
-                   'traps; verify via title search.',
-      'source_type': 'video_pro_tip',
-      'text': "'ll either file the claim yourself or use an attorney. On mortgage foreclosures "
-              "that are judicial, and on probate cases where the owner is deceased, you'll "
-              'want to use an attorney. On tax sales where the county has a claim form online, '
-              'you can often file this by yourself.',
-      'timestamp': 696,
-      'timestamp_label': '[00:11:36]',
-      'timestamp_seconds': 696,
-      'tip': "'ll either file the claim yourself or use an attorney. On mortgage foreclosures "
-             "that are judicial, and on probate cases where the owner is deceased, you'll want "
-             'to use an attorney. On tax sales where the county has a claim form online, you '
-             'can often file this by yourself.',
-      'title': 'How to start a Surplus Funds Recovery Business in 2026 (for beginners) (Money '
-               'Making Juggernaut)',
-      'url': 'https://www.youtube.com/watch?v=suJSu-vn6yI&t=696s',
-      'video_id': 'suJSu-vn6yI'},
-     {'author': 'ohiocommerce',
-      'channel': 'ohiocommerce',
-      'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:05:44](https://www.youtube.com/watch?v=dFKMkAIKskU&t=344s)',
-      'relevance': 'Attributed practitioner commentary on surviving vs. wiped-out liens, '
-                   'junior encumbrance priority, upset-bid windows, and probate/bankruptcy '
-                   'traps; verify via title search.',
-      'source_type': 'video_pro_tip',
-      'text': 'Parent would be a NEX ofin a child would be a NEX ofin and a sibling um not in '
-              'that particular order but that is the four main major next of again anybody '
-              'beyond that may need to go to court to determine that they are the person that '
-              'can represent that deceased loved.',
-      'timestamp': 344,
-      'timestamp_label': '[00:05:44]',
-      'timestamp_seconds': 344,
-      'tip': 'Parent would be a NEX ofin a child would be a NEX ofin and a sibling um not in '
-             'that particular order but that is the four main major next of again anybody '
-             'beyond that may need to go to court to determine that they are the person that '
-             'can represent that deceased loved.',
-      'title': 'What Documentation is Needed for Unclaimed Funds (ohiocommerce)',
-      'url': 'https://www.youtube.com/watch?v=dFKMkAIKskU&t=344s',
-      'video_id': 'dFKMkAIKskU'},
-     {'author': 'Surplus Institute / David Church / Unclaimed Funds',
-      'channel': 'Surplus Institute / David Church / Unclaimed Funds',
-      'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:02:19](https://www.youtube.com/watch?v=ieI6zKICpKo&t=139s)',
-      'relevance': 'Attributed practitioner commentary on surviving vs. wiped-out liens, '
-                   'junior encumbrance priority, upset-bid windows, and probate/bankruptcy '
-                   'traps; verify via title search.',
-      'source_type': 'video_pro_tip',
-      'text': "'s going to help out a lot. The fact that it's a probate is going to be a pain "
-              "in the you know what, but we'll we'll we'll get that situated for you if you're "
-              "wanting us to do that. We'd gladly work with you on that. Go ahead and start "
-              'the paperwork then, okay?',
-      'timestamp': 139,
-      'timestamp_label': '[00:02:19]',
-      'timestamp_seconds': 139,
-      'tip': "'s going to help out a lot. The fact that it's a probate is going to be a pain "
-             "in the you know what, but we'll we'll we'll get that situated for you if you're "
-             "wanting us to do that. We'd gladly work with you on that. Go ahead and start the "
-             'paperwork then, okay?',
-      'title': '$16,000 Live Cold Calling Commission (Surplus Institute / David Church / '
-               'Unclaimed Funds)',
-      'url': 'https://www.youtube.com/watch?v=ieI6zKICpKo&t=139s',
-      'video_id': 'ieI6zKICpKo'},
+      'text': "Pressure doesn't work here. Proof does.",
+      'timestamp': 97,
+      'timestamp_label': '[00:01:37]',
+      'timestamp_seconds': 97,
+      'tip': "Pressure doesn't work here. Proof does.",
+      'title': '8 Surplus Funds Objections SCRIPTS You Need To Copy (Cold Calling Leads)',
+      'url': 'https://www.youtube.com/watch?v=rJjMD-YvK30&t=97s',
+      'video_id': 'rJjMD-YvK30'},
      {'author': 'Surplus Funds 101',
       'channel': 'Surplus Funds 101',
       'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:03:27](https://www.youtube.com/watch?v=smhFDkvMwkM&t=207s)',
-      'relevance': 'Attributed practitioner commentary on surviving vs. wiped-out liens, '
-                   'junior encumbrance priority, upset-bid windows, and probate/bankruptcy '
-                   'traps; verify via title search.',
+      'markdown': '[00:07:40](https://www.youtube.com/watch?v=-A2pNSevACs&t=460s)',
+      'relevance': 'Verbatim practitioner testimony from Chapter Q7.',
       'source_type': 'video_pro_tip',
-      'text': "'t seem like it'd be that big of a priority 'cause then it just problems, well, "
-              "how much is it? And just again, it's just one other thing to get some to the "
-              "next step. After they have acknowledged that, I'll say, Alright.",
-      'timestamp': 207,
-      'timestamp_label': '[00:03:27]',
-      'timestamp_seconds': 207,
-      'tip': "'t seem like it'd be that big of a priority 'cause then it just problems, well, "
-             "how much is it? And just again, it's just one other thing to get some to the "
-             "next step. After they have acknowledged that, I'll say, Alright.",
-      'title': 'Best Cold Calling Script For Surplus Funds. overage syndicate surplus funds '
-               'cold calling (Surplus Funds 101)',
-      'url': 'https://www.youtube.com/watch?v=smhFDkvMwkM&t=207s',
-      'video_id': 'smhFDkvMwkM'}],
- 6: [{'author': 'Alfred Taren',
-      'channel': 'Alfred Taren',
-      'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:05:12](https://www.youtube.com/watch?v=YCb5jYZX_A8&t=312s)',
-      'relevance': 'Attributed practitioner commentary on county surplus list sourcing, '
-                   'FOIA/public-records requests, and pre-outreach deal qualification '
-                   'thresholds.',
-      'source_type': 'video_pro_tip',
-      'text': 'Checking county lists, watching auction calendars, digging through court '
-              'records, checking liens, skip tracing, it can easily be 10 to 20 hours per week '
-              "or more. And that's before you've made a single call. Tax sales, the county "
-              'surplus list.',
-      'timestamp': 312,
-      'timestamp_label': '[00:05:12]',
-      'timestamp_seconds': 312,
-      'tip': 'Checking county lists, watching auction calendars, digging through court '
-             'records, checking liens, skip tracing, it can easily be 10 to 20 hours per week '
-             "or more. And that's before you've made a single call. Tax sales, the county "
-             'surplus list.',
-      'title': 'How to Find Surplus Funds Lists (Tax Sales and Foreclosures) (Alfred Taren)',
-      'url': 'https://www.youtube.com/watch?v=YCb5jYZX_A8&t=312s',
-      'video_id': 'YCb5jYZX_A8'},
-     {'author': 'Surplus Funds Secrets',
-      'channel': 'Surplus Funds Secrets',
-      'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:04:57](https://www.youtube.com/watch?v=v0-thxE7IK4&t=297s)',
-      'relevance': 'Attributed practitioner commentary on county surplus list sourcing, '
-                   'FOIA/public-records requests, and pre-outreach deal qualification '
-                   'thresholds.',
-      'source_type': 'video_pro_tip',
-      'text': "You just need to know how to get it and what to do. It's sitting there "
-              "somewhere in a case management system. Just nobody's asked for it. Every state "
-              'has public records law. Under that law, you can legally request this list and '
-              'the office generally has to respond.',
-      'timestamp': 297,
-      'timestamp_label': '[00:04:57]',
-      'timestamp_seconds': 297,
-      'tip': "You just need to know how to get it and what to do. It's sitting there somewhere "
-             "in a case management system. Just nobody's asked for it. Every state has public "
-             'records law. Under that law, you can legally request this list and the office '
-             'generally has to respond.',
-      'title': 'How To Find Surplus Funds Lists In 2026 (For Free) (Surplus Funds Secrets)',
-      'url': 'https://www.youtube.com/watch?v=v0-thxE7IK4&t=297s',
-      'video_id': 'v0-thxE7IK4'},
-     {'author': 'Courtney Fricke',
-      'channel': 'Courtney Fricke',
-      'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:08:26](https://www.youtube.com/watch?v=sf2hUucsNZ8&t=506s)',
-      'relevance': 'Attributed practitioner commentary on county surplus list sourcing, '
-                   'FOIA/public-records requests, and pre-outreach deal qualification '
-                   'thresholds.',
-      'source_type': 'video_pro_tip',
-      'text': 'Plenty of times people get sent the the um satisfaction for their mortgage in '
-              "the mail, but then they don't go bring it to the court the the public records "
-              'at the county clerk to then release the mortgage.',
-      'timestamp': 506,
-      'timestamp_label': '[00:08:26]',
-      'timestamp_seconds': 506,
-      'tip': 'Plenty of times people get sent the the um satisfaction for their mortgage in '
-             "the mail, but then they don't go bring it to the court the the public records at "
-             'the county clerk to then release the mortgage.',
-      'title': '5 Curative Title Terms Every Investor Should Understand (Courtney Fricke)',
-      'url': 'https://www.youtube.com/watch?v=sf2hUucsNZ8&t=506s',
-      'video_id': 'sf2hUucsNZ8'},
-     {'author': 'Ted Thomas',
-      'channel': 'Ted Thomas',
-      'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:04:56](https://www.youtube.com/watch?v=xtdWFaJY8Xc&t=296s)',
-      'relevance': 'Attributed practitioner commentary on county surplus list sourcing, '
-                   'FOIA/public-records requests, and pre-outreach deal qualification '
-                   'thresholds.',
-      'source_type': 'video_pro_tip',
-      'text': 'But you need to get some research done before you bid at a tax defaulted '
-              'auction. All of this is at the county records. The county records are the '
-              'public records.',
-      'timestamp': 296,
-      'timestamp_label': '[00:04:56]',
-      'timestamp_seconds': 296,
-      'tip': 'But you need to get some research done before you bid at a tax defaulted '
-             'auction. All of this is at the county records. The county records are the public '
-             'records.',
-      'title': 'How To Do A Title Search On A Property Yourself Before You Bid At Tax Sale '
-               'Auctions (Ted Thomas)',
-      'url': 'https://www.youtube.com/watch?v=xtdWFaJY8Xc&t=296s',
-      'video_id': 'xtdWFaJY8Xc'},
-     {'author': 'Tax Deed Surplus & Lien-Research Records',
-      'channel': 'Tax Deed Surplus & Lien-Research Records',
-      'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:00:26](https://www.youtube.com/watch?v=y94Ncg0WHn0&t=26s)',
-      'relevance': 'Attributed practitioner commentary on county surplus list sourcing, '
-                   'FOIA/public-records requests, and pre-outreach deal qualification '
-                   'thresholds.',
-      'source_type': 'video_pro_tip',
-      'text': 'You can also use our auction calendar which has of course Pulk County and all '
-              'the other counties and just do a search here for Pulk and that will show you '
-              'the next one coming up or the previous ones. So now that we have the tax deed '
-              "date, we're going to put in May 18th.",
-      'timestamp': 26,
-      'timestamp_label': '[00:00:26]',
-      'timestamp_seconds': 26,
-      'tip': 'You can also use our auction calendar which has of course Pulk County and all '
-             'the other counties and just do a search here for Pulk and that will show you the '
-             'next one coming up or the previous ones. So now that we have the tax deed date, '
-             "we're going to put in May 18th.",
-      'title': 'Polk County Tax Deed Surplus (Tax Deed Surplus & Lien-Research Records)',
-      'url': 'https://www.youtube.com/watch?v=y94Ncg0WHn0&t=26s',
-      'video_id': 'y94Ncg0WHn0'},
-     {'author': 'Noble Notary & Legal Document Preparers',
-      'channel': 'Noble Notary & Legal Document Preparers',
-      'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:04:33](https://www.youtube.com/watch?v=DM0kjEZlbSk&t=273s)',
-      'relevance': 'Attributed practitioner commentary on county surplus list sourcing, '
-                   'FOIA/public-records requests, and pre-outreach deal qualification '
-                   'thresholds.',
-      'source_type': 'video_pro_tip',
-      'text': 'The good news is you can usually find all of this by just searching your '
-              "county's online public records portal. Doing this tells the clerk exactly where "
-              'to look in their archives to verify your claim is 100% legitimate. Section '
-              'five, gathering supporting documentation.',
-      'timestamp': 273,
-      'timestamp_label': '[00:04:33]',
-      'timestamp_seconds': 273,
-      'tip': 'The good news is you can usually find all of this by just searching your '
-             "county's online public records portal. Doing this tells the clerk exactly where "
-             'to look in their archives to verify your claim is 100% legitimate. Section five, '
-             'gathering supporting documentation.',
-      'title': 'Florida Tax Deed Surplus Claim Forms:  How to Claim Excess Funds (Noble Notary '
-               '& Legal Document Preparers)',
-      'url': 'https://www.youtube.com/watch?v=DM0kjEZlbSk&t=273s',
-      'video_id': 'DM0kjEZlbSk'},
-     {'author': 'Overage Acquisition',
-      'channel': 'Overage Acquisition',
-      'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:06:34](https://www.youtube.com/watch?v=6UiKunbtUa0&t=394s)',
-      'relevance': 'Attributed practitioner commentary on county surplus list sourcing, '
-                   'FOIA/public-records requests, and pre-outreach deal qualification '
-                   'thresholds.',
-      'source_type': 'video_pro_tip',
-      'text': "Let's say we'll take Los Angeles County. And then when you click on Los Angeles "
-              "County, it'll take you to a page like this. What information you're looking for "
-              "is the auction folder right here. So click on that and it'll give you a list of "
-              'the properties that have been sold.',
-      'timestamp': 394,
-      'timestamp_label': '[00:06:34]',
-      'timestamp_seconds': 394,
-      'tip': "Let's say we'll take Los Angeles County. And then when you click on Los Angeles "
-             "County, it'll take you to a page like this. What information you're looking for "
-             "is the auction folder right here. So click on that and it'll give you a list of "
-             'the properties that have been sold.',
-      'title': 'How To Find Excess Proceeds List In 2025 (Proven Strategies) (Overage '
-               'Acquisition)',
-      'url': 'https://www.youtube.com/watch?v=6UiKunbtUa0&t=394s',
-      'video_id': '6UiKunbtUa0'},
-     {'author': 'Next Level VA',
-      'channel': 'Next Level VA',
-      'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:24:15](https://www.youtube.com/watch?v=2e4YGOesnUY&t=1455s)',
-      'relevance': 'Attributed practitioner commentary on county surplus list sourcing, '
-                   'FOIA/public-records requests, and pre-outreach deal qualification '
-                   'thresholds.',
-      'source_type': 'video_pro_tip',
-      'text': 'A list that results from a type of a sale that is referred to as an upset sale '
-              "it's called an upset sale because in this type of a sale the last highest "
-              'bidder at the auction can still get outbid by another investor during the upset '
-              'bid period which follows the sale.',
-      'timestamp': 1455,
-      'timestamp_label': '[00:24:15]',
-      'timestamp_seconds': 1455,
-      'tip': 'A list that results from a type of a sale that is referred to as an upset sale '
-             "it's called an upset sale because in this type of a sale the last highest bidder "
-             'at the auction can still get outbid by another investor during the upset bid '
-             'period which follows the sale.',
-      'title': 'Excess Proceeds List, Tax Sale Overages List, Surplus Funds List (Free '
-               'resources + 10 examples) (Next Level VA)',
-      'url': 'https://www.youtube.com/watch?v=2e4YGOesnUY&t=1455s',
-      'video_id': '2e4YGOesnUY'},
-     {'author': 'AFX Research LLC',
-      'channel': 'AFX Research LLC',
-      'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:01:17](https://www.youtube.com/watch?v=HPyO3dkjbCQ&t=77s)',
-      'relevance': 'Attributed practitioner commentary on county surplus list sourcing, '
-                   'FOIA/public-records requests, and pre-outreach deal qualification '
-                   'thresholds.',
-      'source_type': 'video_pro_tip',
-      'text': "Start with the County Clerk's Office. Every county in Texas maintains property "
-              'records — deeds, lien documents, easements, and the full chain of title. Most '
-              'counties have online databases you can search by address or owner name.',
-      'timestamp': 77,
-      'timestamp_label': '[00:01:17]',
-      'timestamp_seconds': 77,
-      'tip': "Start with the County Clerk's Office. Every county in Texas maintains property "
-             'records — deeds, lien documents, easements, and the full chain of title. Most '
-             'counties have online databases you can search by address or owner name.',
-      'title': 'HOW TO FIND LIENS & TITLE SEARCH IN TEXAS (AFX Research LLC)',
-      'url': 'https://www.youtube.com/watch?v=HPyO3dkjbCQ&t=77s',
-      'video_id': 'HPyO3dkjbCQ'},
-     {'author': 'Alfred Taren',
-      'channel': 'Alfred Taren',
-      'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:09:04](https://www.youtube.com/watch?v=8-8koApqnYA&t=544s)',
-      'relevance': 'Attributed practitioner commentary on county surplus list sourcing, '
-                   'FOIA/public-records requests, and pre-outreach deal qualification '
-                   'thresholds.',
-      'source_type': 'video_pro_tip',
-      'text': 'Volusia County, Florida is 24 pages of the same thing. Public, free, and most '
-              'people never open it. Something to be aware of though, not every county posts a '
-              'list. Harris County, Texas, publishes nothing. Their page says email the court '
-              'registry to request a listing.',
-      'timestamp': 544,
-      'timestamp_label': '[00:09:04]',
-      'timestamp_seconds': 544,
-      'tip': 'Volusia County, Florida is 24 pages of the same thing. Public, free, and most '
-             'people never open it. Something to be aware of though, not every county posts a '
-             'list. Harris County, Texas, publishes nothing. Their page says email the court '
-             'registry to request a listing.',
-      'title': 'How to Start a Surplus Funds Business in 2026 (Step by Step) (Alfred Taren)',
-      'url': 'https://www.youtube.com/watch?v=8-8koApqnYA&t=544s',
-      'video_id': '8-8koApqnYA'},
-     {'author': 'Surplus Funds 101',
-      'channel': 'Surplus Funds 101',
-      'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:07:55](https://www.youtube.com/watch?v=TTfaOSBvLDc&t=475s)',
-      'relevance': 'Attributed practitioner commentary on county surplus list sourcing, '
-                   'FOIA/public-records requests, and pre-outreach deal qualification '
-                   'thresholds.',
-      'source_type': 'video_pro_tip',
-      'text': "'t ever try to reinvent the rule book, you do everything exactly how they want, "
-              'and you should be good to go. The State does offer walk leads : Now on the wet. '
-              'On the website, it says you have to do a manual search, but you can send in a '
-              'FOIA request to get bulk data.',
-      'timestamp': 475,
-      'timestamp_label': '[00:07:55]',
-      'timestamp_seconds': 475,
-      'tip': "'t ever try to reinvent the rule book, you do everything exactly how they want, "
-             'and you should be good to go. The State does offer walk leads : Now on the wet. '
-             'On the website, it says you have to do a manual search, but you can send in a '
-             'FOIA request to get bulk data.',
-      'title': 'State Funds Tutorial Delaware: Registering As A Property Locator For The State '
-               'Of Delaware. (Surplus Funds 101)',
-      'url': 'https://www.youtube.com/watch?v=TTfaOSBvLDc&t=475s',
-      'video_id': 'TTfaOSBvLDc'},
-     {'author': 'Ted Thomas',
-      'channel': 'Ted Thomas',
-      'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:07:15](https://www.youtube.com/watch?v=d5TLZqkPX14&t=435s)',
-      'relevance': 'Attributed practitioner commentary on county surplus list sourcing, '
-                   'FOIA/public-records requests, and pre-outreach deal qualification '
-                   'thresholds.',
-      'source_type': 'video_pro_tip',
-      'text': 'On the auction list are properties that the property owner has forfeited. You '
-              "see, if you don't pay your property tax, you automatically forfeit your "
-              'privilege to have property in that county.',
-      'timestamp': 435,
-      'timestamp_label': '[00:07:15]',
-      'timestamp_seconds': 435,
-      'tip': 'On the auction list are properties that the property owner has forfeited. You '
-             "see, if you don't pay your property tax, you automatically forfeit your "
-             'privilege to have property in that county.',
-      'title': 'How To Claim Tax Sale Overages (Ted Thomas)',
-      'url': 'https://www.youtube.com/watch?v=d5TLZqkPX14&t=435s',
-      'video_id': 'd5TLZqkPX14'},
-     {'author': 'Money Making Juggernaut',
-      'channel': 'Money Making Juggernaut',
-      'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:02:04](https://www.youtube.com/watch?v=4-lZwuXtY6Y&t=124s)',
-      'relevance': 'Attributed practitioner commentary on county surplus list sourcing, '
-                   'FOIA/public-records requests, and pre-outreach deal qualification '
-                   'thresholds.',
-      'source_type': 'video_pro_tip',
-      'text': 'We were able to find that this property did sell for more, okay? The county '
-              'provides the excess proceeds list. Excess Elite provided the lead with all the '
-              'skip tracing, and then we were able to go in and perform our due diligence.',
-      'timestamp': 124,
-      'timestamp_label': '[00:02:04]',
-      'timestamp_seconds': 124,
-      'tip': 'We were able to find that this property did sell for more, okay? The county '
-             'provides the excess proceeds list. Excess Elite provided the lead with all the '
-             'skip tracing, and then we were able to go in and perform our due diligence.',
-      'title': 'Amador county Tax Sale Surplus Funds Case Study (Money Making Juggernaut)',
-      'url': 'https://www.youtube.com/watch?v=4-lZwuXtY6Y&t=124s',
-      'video_id': '4-lZwuXtY6Y'},
-     {'author': 'Courtney Fricke',
-      'channel': 'Courtney Fricke',
-      'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:15:09](https://www.youtube.com/watch?v=W-FX20iI9Jk&t=909s)',
-      'relevance': 'Attributed practitioner commentary on county surplus list sourcing, '
-                   'FOIA/public-records requests, and pre-outreach deal qualification '
-                   'thresholds.',
-      'source_type': 'video_pro_tip',
-      'text': 'And then I want you to look at when was the the last deed recorded. So, you '
-              'know, was it last year? And then I want you to look at that actual deed. This '
-              'is going to go into your clerk court, your public records.',
-      'timestamp': 909,
-      'timestamp_label': '[00:15:09]',
-      'timestamp_seconds': 909,
-      'tip': 'And then I want you to look at when was the the last deed recorded. So, you '
-             'know, was it last year? And then I want you to look at that actual deed. This is '
-             'going to go into your clerk court, your public records.',
-      'title': 'How to Get Your First Curative Title Deal: A Step-by-Step Guide (Courtney '
-               'Fricke)',
-      'url': 'https://www.youtube.com/watch?v=W-FX20iI9Jk&t=909s',
-      'video_id': 'W-FX20iI9Jk'},
-     {'author': 'Overage Acquisition',
-      'channel': 'Overage Acquisition',
-      'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:03:52](https://www.youtube.com/watch?v=q2gk3WmK5xs&t=232s)',
-      'relevance': 'Attributed practitioner commentary on county surplus list sourcing, '
-                   'FOIA/public-records requests, and pre-outreach deal qualification '
-                   'thresholds.',
-      'source_type': 'video_pro_tip',
-      'text': "Option B is manual lead generation. If you're starting out and can't spend much "
-              'money yet, this is your route. First of all, go to your browser and search for '
-              'the excess proceeds list for the respective county.',
-      'timestamp': 232,
-      'timestamp_label': '[00:03:52]',
-      'timestamp_seconds': 232,
-      'tip': "Option B is manual lead generation. If you're starting out and can't spend much "
-             'money yet, this is your route. First of all, go to your browser and search for '
-             'the excess proceeds list for the respective county.',
-      'title': 'The Most Overlooked Surplus Funds Recovery Business You Can Start With $0 '
-               '(Overage Acquisition)',
-      'url': 'https://www.youtube.com/watch?v=q2gk3WmK5xs&t=232s',
-      'video_id': 'q2gk3WmK5xs'}],
- 7: [{'author': 'Dreams & Dollars: The Everyday Entrepreneur',
-      'channel': 'Dreams & Dollars: The Everyday Entrepreneur',
-      'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:03:45](https://www.youtube.com/watch?v=pSC1FfAjNuo&t=225s)',
-      'relevance': 'Attributed practitioner commentary on title-chain verification, '
-                   'probate/heirship proof, claim dossiers, and judicial motion handoffs with '
-                   'licensed counsel.',
-      'source_type': 'video_pro_tip',
-      'text': 'Step eight, receive funds via check or a once approved. Pro tip, include a copy '
-              'of the deed or title report tying you to the property at the time of sale. If '
-              'the owner passed away, heirs may claim be ready to show probate or airship '
-              'documentation.',
-      'timestamp': 225,
-      'timestamp_label': '[00:03:45]',
-      'timestamp_seconds': 225,
-      'tip': 'Step eight, receive funds via check or a once approved. Pro tip, include a copy '
-             'of the deed or title report tying you to the property at the time of sale. If '
-             'the owner passed away, heirs may claim be ready to show probate or airship '
-             'documentation.',
-      'title': 'Beginners Guide to Surplus Funds: How to Claim Money After Foreclosure- '
-               'Step-by-Step Tutorial (Dreams & Dollars: The Everyday Entrepreneur)',
-      'url': 'https://www.youtube.com/watch?v=pSC1FfAjNuo&t=225s',
-      'video_id': 'pSC1FfAjNuo'},
-     {'author': 'Money Making Juggernaut',
-      'channel': 'Money Making Juggernaut',
-      'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:04:32](https://www.youtube.com/watch?v=7AHHRIbWG80&t=272s)',
-      'relevance': 'Attributed practitioner commentary on title-chain verification, '
-                   'probate/heirship proof, claim dossiers, and judicial motion handoffs with '
-                   'licensed counsel.',
-      'source_type': 'video_pro_tip',
-      'text': "So, this isn't a legal motion or filing. It's simply us representing the client "
-              "as a limited power of attorney. We're inquiring and confirming the surplus. "
-              "We're filling out the claim form, things of that nature, and we get paid for "
-              'our services.',
-      'timestamp': 272,
-      'timestamp_label': '[00:04:32]',
-      'timestamp_seconds': 272,
-      'tip': "So, this isn't a legal motion or filing. It's simply us representing the client "
-             "as a limited power of attorney. We're inquiring and confirming the surplus. "
-             "We're filling out the claim form, things of that nature, and we get paid for our "
-             'services.',
-      'title': 'Surplus Funds Case Study Texas Mortgage Foreclosure (Money Making Juggernaut)',
-      'url': 'https://www.youtube.com/watch?v=7AHHRIbWG80&t=272s',
-      'video_id': '7AHHRIbWG80'},
-     {'author': 'Noble Notary & Legal Document Preparers',
-      'channel': 'Noble Notary & Legal Document Preparers',
-      'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:03:54](https://www.youtube.com/watch?v=DM0kjEZlbSk&t=234s)',
-      'relevance': 'Attributed practitioner commentary on title-chain verification, '
-                   'probate/heirship proof, claim dossiers, and judicial motion handoffs with '
-                   'licensed counsel.',
-      'source_type': 'video_pro_tip',
-      'text': "What's the current amount owed today? Are there specific attorney fees or "
-              'interest or costs due? Now, on the flip side, if you check former title holder, '
-              'you need to state exactly how you acquired the property in the first place. Was '
-              'it a deed, a court judgment?',
-      'timestamp': 234,
-      'timestamp_label': '[00:03:54]',
-      'timestamp_seconds': 234,
-      'tip': "What's the current amount owed today? Are there specific attorney fees or "
-             'interest or costs due? Now, on the flip side, if you check former title holder, '
-             'you need to state exactly how you acquired the property in the first place. Was '
-             'it a deed, a court judgment?',
-      'title': 'Florida Tax Deed Surplus Claim Forms:  How to Claim Excess Funds (Noble Notary '
-               '& Legal Document Preparers)',
-      'url': 'https://www.youtube.com/watch?v=DM0kjEZlbSk&t=234s',
-      'video_id': 'DM0kjEZlbSk'},
-     {'author': 'Courtney Fricke',
-      'channel': 'Courtney Fricke',
-      'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:06:44](https://www.youtube.com/watch?v=W5g3Gia5jX4&t=404s)',
-      'relevance': 'Attributed practitioner commentary on title-chain verification, '
-                   'probate/heirship proof, claim dossiers, and judicial motion handoffs with '
-                   'licensed counsel.',
-      'source_type': 'video_pro_tip',
-      'text': 'I often want to provide a solution because plenty of times you have people in '
-              'the industry who either the person in industry themselves has given up on a '
-              "file or their client has given up. For example, maybe it's a probate attorney "
-              'who is dealing with fighting heirs.',
-      'timestamp': 404,
-      'timestamp_label': '[00:06:44]',
-      'timestamp_seconds': 404,
-      'tip': 'I often want to provide a solution because plenty of times you have people in '
-             'the industry who either the person in industry themselves has given up on a file '
-             "or their client has given up. For example, maybe it's a probate attorney who is "
-             'dealing with fighting heirs.',
-      'title': 'How I Actually Find Curative Title Leads (Courtney Fricke)',
-      'url': 'https://www.youtube.com/watch?v=W5g3Gia5jX4&t=404s',
-      'video_id': 'W5g3Gia5jX4'},
-     {'author': 'AFX Research LLC',
-      'channel': 'AFX Research LLC',
-      'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:01:13](https://www.youtube.com/watch?v=HPyO3dkjbCQ&t=73s)',
-      'relevance': 'Attributed practitioner commentary on title-chain verification, '
-                   'probate/heirship proof, claim dossiers, and judicial motion handoffs with '
-                   'licensed counsel.',
-      'source_type': 'video_pro_tip',
-      'text': 'So how do you find out if a property has liens in Texas? Start with the County '
-              "Clerk's Office. Every county in Texas maintains property records — deeds, lien "
-              'documents, easements, and the full chain of title.',
-      'timestamp': 73,
-      'timestamp_label': '[00:01:13]',
-      'timestamp_seconds': 73,
-      'tip': 'So how do you find out if a property has liens in Texas? Start with the County '
-             "Clerk's Office. Every county in Texas maintains property records — deeds, lien "
-             'documents, easements, and the full chain of title.',
-      'title': 'HOW TO FIND LIENS & TITLE SEARCH IN TEXAS (AFX Research LLC)',
-      'url': 'https://www.youtube.com/watch?v=HPyO3dkjbCQ&t=73s',
-      'video_id': 'HPyO3dkjbCQ'},
-     {'author': 'ohiocommerce',
-      'channel': 'ohiocommerce',
-      'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:14:07](https://www.youtube.com/watch?v=8nmo4S1v3Co&t=847s)',
-      'relevance': 'Attributed practitioner commentary on title-chain verification, '
-                   'probate/heirship proof, claim dossiers, and judicial motion handoffs with '
-                   'licensed counsel.',
-      'source_type': 'video_pro_tip',
-      'text': 'She forgot that she had to submit these documents to us. She got an email after '
-              '30 days. Our email said, "Hey, Maryanne, we need you to provide some documents '
-              'uh in order to complete your claim." And so Maryanne\'s story is to be '
-              'continued.',
-      'timestamp': 847,
-      'timestamp_label': '[00:14:07]',
-      'timestamp_seconds': 847,
-      'tip': 'She forgot that she had to submit these documents to us. She got an email after '
-             '30 days. Our email said, "Hey, Maryanne, we need you to provide some documents '
-             'uh in order to complete your claim." And so Maryanne\'s story is to be '
-             'continued.',
-      'title': 'Ohio Unclaimed Funds: How to Claim Your Cash in 3 Steps (HB 96 Deadline '
-               'Explained) Webinar 2-5-2026 (ohiocommerce)',
-      'url': 'https://www.youtube.com/watch?v=8nmo4S1v3Co&t=847s',
-      'video_id': '8nmo4S1v3Co'},
-     {'author': 'Probate Mastery',
-      'channel': 'Probate Mastery',
-      'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:04:37](https://www.youtube.com/watch?v=AAF69oF79DU&t=277s)',
-      'relevance': 'Attributed practitioner commentary on title-chain verification, '
-                   'probate/heirship proof, claim dossiers, and judicial motion handoffs with '
-                   'licensed counsel.',
-      'source_type': 'video_pro_tip',
-      'text': "Tenants in common or some other form of title. You may have probate step mom's "
-              "estate to get it to dad's estate and then probate that estate. So what her "
-              'attorney has told her is that there was rights of survivorship.',
-      'timestamp': 277,
-      'timestamp_label': '[00:04:37]',
-      'timestamp_seconds': 277,
-      'tip': "Tenants in common or some other form of title. You may have probate step mom's "
-             "estate to get it to dad's estate and then probate that estate. So what her "
-             'attorney has told her is that there was rights of survivorship.',
-      'title': 'Sub-to strategy for probate investing | Probate foreclosures | Probate real '
-               'estate marketing tips (Probate Mastery)',
-      'url': 'https://www.youtube.com/watch?v=AAF69oF79DU&t=277s',
-      'video_id': 'AAF69oF79DU'},
-     {'author': 'My Lawyer In Spain',
-      'channel': 'My Lawyer In Spain',
-      'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:14:12](https://www.youtube.com/watch?v=ywaYY4cPtAY&t=852s)',
-      'relevance': 'Attributed practitioner commentary on title-chain verification, '
-                   'probate/heirship proof, claim dossiers, and judicial motion handoffs with '
-                   'licensed counsel.',
-      'source_type': 'video_pro_tip',
-      'text': "They won't release it to the beneficiary or to the cousin but to the the "
-              "lawyer. You've got to prove that you've actually got a legal interest in the "
-              'case in order to to receive a copy of that will. Um, wills are private '
-              'documents here.',
-      'timestamp': 852,
-      'timestamp_label': '[00:14:12]',
-      'timestamp_seconds': 852,
-      'tip': "They won't release it to the beneficiary or to the cousin but to the the lawyer. "
-             "You've got to prove that you've actually got a legal interest in the case in "
-             'order to to receive a copy of that will. Um, wills are private documents here.',
-      'title': 'Unclaimed Estates & Abandoned Properties in Spain - tracing Heirs Worldwide '
-               '(My Lawyer In Spain)',
-      'url': 'https://www.youtube.com/watch?v=ywaYY4cPtAY&t=852s',
-      'video_id': 'ywaYY4cPtAY'},
-     {'author': 'Money Making Juggernaut',
-      'channel': 'Money Making Juggernaut',
-      'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:10:08](https://www.youtube.com/watch?v=MVCNlj7HQBQ&t=608s)',
-      'relevance': 'Attributed practitioner commentary on title-chain verification, '
-                   'probate/heirship proof, claim dossiers, and judicial motion handoffs with '
-                   'licensed counsel.',
-      'source_type': 'video_pro_tip',
-      'text': "'s how you actually claim surplus funds for heirs. For starters, you need the "
-              'death certificate. You can get that from county records, or you can use a '
-              '[snorts] site called VitalChek. You also need proof that your client is the '
-              'rightful heir.',
-      'timestamp': 608,
-      'timestamp_label': '[00:10:08]',
-      'timestamp_seconds': 608,
-      'tip': "'s how you actually claim surplus funds for heirs. For starters, you need the "
-             'death certificate. You can get that from county records, or you can use a '
-             '[snorts] site called VitalChek. You also need proof that your client is the '
-             'rightful heir.',
-      'title': 'Surplus Funds Recovery: COMPLETE Document List (2026 UPDATE) (Money Making '
-               'Juggernaut)',
-      'url': 'https://www.youtube.com/watch?v=MVCNlj7HQBQ&t=608s',
-      'video_id': 'MVCNlj7HQBQ'},
-     {'author': 'William Whitman, Esquire',
-      'channel': 'William Whitman, Esquire',
-      'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:01:25](https://www.youtube.com/watch?v=0xk7lNvAgn0&t=85s)',
-      'relevance': 'Attributed practitioner commentary on title-chain verification, '
-                   'probate/heirship proof, claim dossiers, and judicial motion handoffs with '
-                   'licensed counsel.',
-      'source_type': 'video_pro_tip',
-      'text': 'Entity it is where it was formed and an address so if we wanted to look at '
-              'additional information the actual file we could request those documents and we '
-              "could see what additional filings there were in this case there's only an "
-              'initial filing.',
-      'timestamp': 85,
-      'timestamp_label': '[00:01:25]',
-      'timestamp_seconds': 85,
-      'tip': 'Entity it is where it was formed and an address so if we wanted to look at '
-             'additional information the actual file we could request those documents and we '
-             "could see what additional filings there were in this case there's only an "
-             'initial filing.',
-      'title': 'Will Whitman, Esquire explains how to locate companies owed surplus funds '
-               '(William Whitman, Esquire)',
-      'url': 'https://www.youtube.com/watch?v=0xk7lNvAgn0&t=85s',
-      'video_id': '0xk7lNvAgn0'},
-     {'author': 'Surplus Funds Secrets',
-      'channel': 'Surplus Funds Secrets',
-      'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:06:40](https://www.youtube.com/watch?v=v0-thxE7IK4&t=400s)',
-      'relevance': 'Attributed practitioner commentary on title-chain verification, '
-                   'probate/heirship proof, claim dossiers, and judicial motion handoffs with '
-                   'licensed counsel.',
-      'source_type': 'video_pro_tip',
-      'text': 'Is there a filing deadline? Who has the legal right to claim these funds? Which '
-              'can get genuinely complicated when the original owner has passed away. Then, it '
-              'becomes a question about the heirs. This is where people get hurt.',
-      'timestamp': 400,
-      'timestamp_label': '[00:06:40]',
-      'timestamp_seconds': 400,
-      'tip': 'Is there a filing deadline? Who has the legal right to claim these funds? Which '
-             'can get genuinely complicated when the original owner has passed away. Then, it '
-             'becomes a question about the heirs. This is where people get hurt.',
-      'title': 'How To Find Surplus Funds Lists In 2026 (For Free) (Surplus Funds Secrets)',
-      'url': 'https://www.youtube.com/watch?v=v0-thxE7IK4&t=400s',
-      'video_id': 'v0-thxE7IK4'},
-     {'author': 'Courtney Fricke',
-      'channel': 'Courtney Fricke',
-      'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:11:21](https://www.youtube.com/watch?v=sf2hUucsNZ8&t=681s)',
-      'relevance': 'Attributed practitioner commentary on title-chain verification, '
-                   'probate/heirship proof, claim dossiers, and judicial motion handoffs with '
-                   'licensed counsel.',
-      'source_type': 'video_pro_tip',
-      'text': '" And the real opportunity is to figure out whether that problem can be solved. '
-              'And again, that involves understanding and skill. So, one of the documents that '
-              'frequently appears when ownership gets messy is a quick claim deed.',
-      'timestamp': 681,
-      'timestamp_label': '[00:11:21]',
-      'timestamp_seconds': 681,
-      'tip': '" And the real opportunity is to figure out whether that problem can be solved. '
-             'And again, that involves understanding and skill. So, one of the documents that '
-             'frequently appears when ownership gets messy is a quick claim deed.',
-      'title': '5 Curative Title Terms Every Investor Should Understand (Courtney Fricke)',
-      'url': 'https://www.youtube.com/watch?v=sf2hUucsNZ8&t=681s',
-      'video_id': 'sf2hUucsNZ8'},
-     {'author': 'Logan Fullmer',
-      'channel': 'Logan Fullmer',
-      'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:29:09](https://www.youtube.com/watch?v=onebNbNQSBM&t=1749s)',
-      'relevance': 'Attributed practitioner commentary on title-chain verification, '
-                   'probate/heirship proof, claim dossiers, and judicial motion handoffs with '
-                   'licensed counsel.',
-      'source_type': 'video_pro_tip',
-      'text': 'One of the reasons I dislike probate states more than I like affidavit of '
-              "heirship states is because there's a process you have to go through. If I make "
-              'an agreement with someone, it sounds crazy, but if I make an agreement at 8:00 '
-              'a. I can have them closed by 5:00 p.',
-      'timestamp': 1749,
-      'timestamp_label': '[00:29:09]',
-      'timestamp_seconds': 1749,
-      'tip': 'One of the reasons I dislike probate states more than I like affidavit of '
-             "heirship states is because there's a process you have to go through. If I make "
-             'an agreement with someone, it sounds crazy, but if I make an agreement at 8:00 '
-             'a. I can have them closed by 5:00 p.',
-      'title': 'Curative Title Explained by a Florida Probate Attorney (Logan Fullmer)',
-      'url': 'https://www.youtube.com/watch?v=onebNbNQSBM&t=1749s',
-      'video_id': 'onebNbNQSBM'},
-     {'author': 'claimtaxsaleoverages',
-      'channel': 'claimtaxsaleoverages',
-      'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:02:17](https://www.youtube.com/watch?v=e309errLsBw&t=137s)',
-      'relevance': 'Attributed practitioner commentary on title-chain verification, '
-                   'probate/heirship proof, claim dossiers, and judicial motion handoffs with '
-                   'licensed counsel.',
-      'source_type': 'video_pro_tip',
-      'text': 'Properties with unpaid taxes are sold to recover the owed amounts deadline for '
-              'reclaiming funds this refers to the specific time frame within which you must '
-              'file a claim to recover your overages if you miss this deadline you may forfeit '
-              'your right to reclaim the funds.',
-      'timestamp': 137,
-      'timestamp_label': '[00:02:17]',
-      'timestamp_seconds': 137,
-      'tip': 'Properties with unpaid taxes are sold to recover the owed amounts deadline for '
-             'reclaiming funds this refers to the specific time frame within which you must '
-             'file a claim to recover your overages if you miss this deadline you may forfeit '
-             'your right to reclaim the funds.',
-      'title': 'Claim Tax Sale Overages/Surplus Funds - Step-by-Step Guide '
-               '(claimtaxsaleoverages)',
-      'url': 'https://www.youtube.com/watch?v=e309errLsBw&t=137s',
-      'video_id': 'e309errLsBw'},
-     {'author': 'Tax Deed Surplus & Lien-Research Records',
-      'channel': 'Tax Deed Surplus & Lien-Research Records',
-      'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:02:10](https://www.youtube.com/watch?v=y94Ncg0WHn0&t=130s)',
-      'relevance': 'Attributed practitioner commentary on title-chain verification, '
-                   'probate/heirship proof, claim dossiers, and judicial motion handoffs with '
-                   'licensed counsel.',
-      'source_type': 'video_pro_tip',
-      'text': 'And also, this is the same page where you would do the taxdeed research where '
-              'you can see the documents for the sale. So for this one for example, I would '
-              'just click view and you can go through and and see all the documents from that '
-              'tax deed option.',
-      'timestamp': 130,
-      'timestamp_label': '[00:02:10]',
-      'timestamp_seconds': 130,
-      'tip': 'And also, this is the same page where you would do the taxdeed research where '
-             'you can see the documents for the sale. So for this one for example, I would '
-             'just click view and you can go through and and see all the documents from that '
-             'tax deed option.',
-      'title': 'Polk County Tax Deed Surplus (Tax Deed Surplus & Lien-Research Records)',
-      'url': 'https://www.youtube.com/watch?v=y94Ncg0WHn0&t=130s',
-      'video_id': 'y94Ncg0WHn0'}],
- 8: [{'author': 'Overage Acquisition',
-      'channel': 'Overage Acquisition',
-      'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:04:09](https://www.youtube.com/watch?v=q2gk3WmK5xs&t=249s)',
-      'relevance': 'Attributed practitioner commentary on skip-tracing stacks, '
-                   'recorder/assessor portals, PACER bankruptcy checks, and right-party '
-                   'contact verification.',
-      'source_type': 'video_pro_tip',
-      'text': 'To track these individuals from a parcel number, you would need skip tracing '
-              'tools like True People Search, been verified, and Intellius. If you want to '
-              'learn more about it, watch the video linked in the description.',
-      'timestamp': 249,
-      'timestamp_label': '[00:04:09]',
-      'timestamp_seconds': 249,
-      'tip': 'To track these individuals from a parcel number, you would need skip tracing '
-             'tools like True People Search, been verified, and Intellius. If you want to '
-             'learn more about it, watch the video linked in the description.',
-      'title': 'The Most Overlooked Surplus Funds Recovery Business You Can Start With $0 '
-               '(Overage Acquisition)',
-      'url': 'https://www.youtube.com/watch?v=q2gk3WmK5xs&t=249s',
-      'video_id': 'q2gk3WmK5xs'},
-     {'author': 'Money Making Juggernaut',
-      'channel': 'Money Making Juggernaut',
-      'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:07:06](https://www.youtube.com/watch?v=suJSu-vn6yI&t=426s)',
-      'relevance': 'Attributed practitioner commentary on skip-tracing stacks, '
-                   'recorder/assessor portals, PACER bankruptcy checks, and right-party '
-                   'contact verification.',
-      'source_type': 'video_pro_tip',
-      'text': 'The best option is to use Excess Leads, which is the best software in the game. '
-              'You can get daily leads across the entire country, both tax sales and mortgage '
-              'foreclosures, and every lead comes with skip trace phone numbers, DNC '
-              'compliance, relatives numbers, and emails.',
-      'timestamp': 426,
-      'timestamp_label': '[00:07:06]',
-      'timestamp_seconds': 426,
-      'tip': 'The best option is to use Excess Leads, which is the best software in the game. '
-             'You can get daily leads across the entire country, both tax sales and mortgage '
-             'foreclosures, and every lead comes with skip trace phone numbers, DNC '
-             'compliance, relatives numbers, and emails.',
-      'title': 'How to start a Surplus Funds Recovery Business in 2026 (for beginners) (Money '
-               'Making Juggernaut)',
-      'url': 'https://www.youtube.com/watch?v=suJSu-vn6yI&t=426s',
-      'video_id': 'suJSu-vn6yI'},
-     {'author': 'Nick Fullmer- Overage Syndicate',
-      'channel': 'Nick Fullmer- Overage Syndicate',
-      'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:05:23](https://www.youtube.com/watch?v=KOYBZFn2k7w&t=323s)',
-      'relevance': 'Attributed practitioner commentary on skip-tracing stacks, '
-                   'recorder/assessor portals, PACER bankruptcy checks, and right-party '
-                   'contact verification.',
-      'source_type': 'video_pro_tip',
-      'text': 'Third thing you could do is actually call the county recorder, give them the '
-              'property address, give them the parcel number, and see if they will do a due '
-              "diligence search for you. If it's just one case, just one-off case you're "
-              'looking at, they might do that for you as well.',
-      'timestamp': 323,
-      'timestamp_label': '[00:05:23]',
-      'timestamp_seconds': 323,
-      'tip': 'Third thing you could do is actually call the county recorder, give them the '
-             'property address, give them the parcel number, and see if they will do a due '
-             "diligence search for you. If it's just one case, just one-off case you're "
-             'looking at, they might do that for you as well.',
-      'title': 'Overages & Surplus Fund Debt & Title Research: Not As Easy As It Seems.  Two '
-               'tips To Help (Nick Fullmer- Overage Syndicate)',
-      'url': 'https://www.youtube.com/watch?v=KOYBZFn2k7w&t=323s',
-      'video_id': 'KOYBZFn2k7w'},
-     {'author': 'Logan Fullmer',
-      'channel': 'Logan Fullmer',
-      'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:18:51](https://www.youtube.com/watch?v=dJ-LTFmMsTg&t=1131s)',
-      'relevance': 'Attributed practitioner commentary on skip-tracing stacks, '
-                   'recorder/assessor portals, PACER bankruptcy checks, and right-party '
-                   'contact verification.',
-      'source_type': 'video_pro_tip',
-      'text': "I mean, you could skip trace anybody. We've got people that are doing um What "
-              'is it? Unclaimed funds, uh debt collection, some property managers that deal '
-              "with evictions, um just stuff Any It It's skip tracing skip tracing.",
-      'timestamp': 1131,
-      'timestamp_label': '[00:18:51]',
-      'timestamp_seconds': 1131,
-      'tip': "I mean, you could skip trace anybody. We've got people that are doing um What is "
-             'it? Unclaimed funds, uh debt collection, some property managers that deal with '
-             "evictions, um just stuff Any It It's skip tracing skip tracing.",
-      'title': "Skip Tracing for Curative Title: Find Owners Others Can't (Logan Fullmer)",
-      'url': 'https://www.youtube.com/watch?v=dJ-LTFmMsTg&t=1131s',
-      'video_id': 'dJ-LTFmMsTg'},
-     {'author': 'Money Making Juggernaut',
-      'channel': 'Money Making Juggernaut',
-      'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:04:10](https://www.youtube.com/watch?v=DMdtmrWAO6c&t=250s)',
-      'relevance': 'Attributed practitioner commentary on skip-tracing stacks, '
-                   'recorder/assessor portals, PACER bankruptcy checks, and right-party '
-                   'contact verification.',
-      'source_type': 'video_pro_tip',
-      'text': 'Think about your own phone. How many unknown calls do you answer on the first '
-              'try? So why would your client be any different? One call is not an attempt, but '
-              "three touches is a real attempt. And don't stop with the client. Your skip "
-              'trace also gives you a few relatives.',
-      'timestamp': 250,
-      'timestamp_label': '[00:04:10]',
-      'timestamp_seconds': 250,
-      'tip': 'Think about your own phone. How many unknown calls do you answer on the first '
-             'try? So why would your client be any different? One call is not an attempt, but '
-             "three touches is a real attempt. And don't stop with the client. Your skip trace "
-             'also gives you a few relatives.',
-      'title': 'Surplus Funds Recovery Cold Calling - STEP-BY-STEP SCRIPT (Money Making '
-               'Juggernaut)',
-      'url': 'https://www.youtube.com/watch?v=DMdtmrWAO6c&t=250s',
-      'video_id': 'DMdtmrWAO6c'},
-     {'author': 'Alfred Taren',
-      'channel': 'Alfred Taren',
-      'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:04:14](https://www.youtube.com/watch?v=YCb5jYZX_A8&t=254s)',
-      'relevance': 'Attributed practitioner commentary on skip-tracing stacks, '
-                   'recorder/assessor portals, PACER bankruptcy checks, and right-party '
-                   'contact verification.',
-      'source_type': 'video_pro_tip',
-      'text': 'From there, the real research starts. Court records, second mortgages, other '
-              "liens, back taxes, the cost of the sale, figuring out who's actually entitled "
-              "to what's left, then skip tracing to find a current phone number for the "
-              'homeowner or the heirs.',
-      'timestamp': 254,
-      'timestamp_label': '[00:04:14]',
-      'timestamp_seconds': 254,
-      'tip': 'From there, the real research starts. Court records, second mortgages, other '
-             "liens, back taxes, the cost of the sale, figuring out who's actually entitled to "
-             "what's left, then skip tracing to find a current phone number for the homeowner "
-             'or the heirs.',
-      'title': 'How to Find Surplus Funds Lists (Tax Sales and Foreclosures) (Alfred Taren)',
-      'url': 'https://www.youtube.com/watch?v=YCb5jYZX_A8&t=254s',
-      'video_id': 'YCb5jYZX_A8'},
-     {'author': 'Surplus Funds 101',
-      'channel': 'Surplus Funds 101',
-      'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:03:47](https://www.youtube.com/watch?v=h4Qz3EvAAnw&t=227s)',
-      'relevance': 'Attributed practitioner commentary on skip-tracing stacks, '
-                   'recorder/assessor portals, PACER bankruptcy checks, and right-party '
-                   'contact verification.',
-      'source_type': 'video_pro_tip',
-      'text': 'Skip trace those people and see if they have a relationship with the owner. '
-              "Depending on the skip tracing platform, you can even get somebody's driver's "
-              'license number and then you can send a sheriff to their property to do a quote '
-              'unquote welfare checkup.',
-      'timestamp': 227,
-      'timestamp_label': '[00:03:47]',
-      'timestamp_seconds': 227,
-      'tip': 'Skip trace those people and see if they have a relationship with the owner. '
-             "Depending on the skip tracing platform, you can even get somebody's driver's "
-             'license number and then you can send a sheriff to their property to do a quote '
-             'unquote welfare checkup.',
-      'title': 'Unclaimed Funds: Lead Sourcing Masterclass (Surplus Funds 101)',
-      'url': 'https://www.youtube.com/watch?v=h4Qz3EvAAnw&t=227s',
-      'video_id': 'h4Qz3EvAAnw'},
-     {'author': "Bob Diamond - America's Tax Sale Attorney",
-      'channel': "Bob Diamond - America's Tax Sale Attorney",
-      'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:03:25](https://www.youtube.com/watch?v=qGPsbhsEAVQ&t=205s)',
-      'relevance': 'Attributed practitioner commentary on skip-tracing stacks, '
-                   'recorder/assessor portals, PACER bankruptcy checks, and right-party '
-                   'contact verification.',
-      'source_type': 'video_pro_tip',
-      'text': "'s left over, like this list that has probably 50 leads on it, $3,341,087. Once "
-              'you get the list, then what you have to do is learn how to get the contact '
-              "information for the people. That's a process called skip tracing.",
-      'timestamp': 205,
-      'timestamp_label': '[00:03:25]',
-      'timestamp_seconds': 205,
-      'tip': "'s left over, like this list that has probably 50 leads on it, $3,341,087. Once "
-             'you get the list, then what you have to do is learn how to get the contact '
-             "information for the people. That's a process called skip tracing.",
-      'title': "Tax Sale Overages Course (Bob Diamond - America's Tax Sale Attorney)",
-      'url': 'https://www.youtube.com/watch?v=qGPsbhsEAVQ&t=205s',
-      'video_id': 'qGPsbhsEAVQ'},
-     {'author': 'Surplus Institute / David Church / Unclaimed Funds',
-      'channel': 'Surplus Institute / David Church / Unclaimed Funds',
-      'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:18:21](https://www.youtube.com/watch?v=xqpLsq3JVlU&t=1101s)',
-      'relevance': 'Attributed practitioner commentary on skip-tracing stacks, '
-                   'recorder/assessor portals, PACER bankruptcy checks, and right-party '
-                   'contact verification.',
-      'source_type': 'video_pro_tip',
-      'text': 'Landlines almost never work on any skip tracing service, but the older you get, '
-              'the more the landline will work. The guy is 76, so he probably does have a '
-              "couple of land. Um, it's po I'm sorry, let me say that again. It's possible "
-              'that his landline does work.',
-      'timestamp': 1101,
-      'timestamp_label': '[00:18:21]',
-      'timestamp_seconds': 1101,
-      'tip': 'Landlines almost never work on any skip tracing service, but the older you get, '
-             'the more the landline will work. The guy is 76, so he probably does have a '
-             "couple of land. Um, it's po I'm sorry, let me say that again. It's possible that "
-             'his landline does work.',
-      'title': 'Cold Calling for Surplus Funds: What Actually Works (Surplus Institute / David '
-               'Church / Unclaimed Funds)',
-      'url': 'https://www.youtube.com/watch?v=xqpLsq3JVlU&t=1101s',
-      'video_id': 'xqpLsq3JVlU'},
-     {'author': 'Surplus Funds List',
-      'channel': 'Surplus Funds List',
-      'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:04:10](https://www.youtube.com/watch?v=lOnYUxDdOdI&t=250s)',
-      'relevance': 'Attributed practitioner commentary on skip-tracing stacks, '
-                   'recorder/assessor portals, PACER bankruptcy checks, and right-party '
-                   'contact verification.',
-      'source_type': 'video_pro_tip',
-      'text': 'You can uh also update the status on the client portal so the homeowner can go '
-              'on your site and search for the case and they will see the detail as to what is '
-              'the progress on the case without waiting on you um to get them an update.',
-      'timestamp': 250,
-      'timestamp_label': '[00:04:10]',
-      'timestamp_seconds': 250,
-      'tip': 'You can uh also update the status on the client portal so the homeowner can go '
-             'on your site and search for the case and they will see the detail as to what is '
-             'the progress on the case without waiting on you um to get them an update.',
-      'title': 'How to Run a Surplus Funds Business with One CRM: Full 2026 Walkthrough '
-               '(Surplus Funds List)',
-      'url': 'https://www.youtube.com/watch?v=lOnYUxDdOdI&t=250s',
-      'video_id': 'lOnYUxDdOdI'},
-     {'author': 'Overage Acquisition',
-      'channel': 'Overage Acquisition',
-      'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:02:37](https://www.youtube.com/watch?v=bpxSOg1_xbE&t=157s)',
-      'relevance': 'Attributed practitioner commentary on skip-tracing stacks, '
-                   'recorder/assessor portals, PACER bankruptcy checks, and right-party '
-                   'contact verification.',
-      'source_type': 'video_pro_tip',
-      'text': 'So, always check if a claim has already been filed before. Some counties have '
-              'online portals where you can search by case number or property address, or you '
-              'can always make a phone call to the county office and verify.',
-      'timestamp': 157,
-      'timestamp_label': '[00:02:37]',
-      'timestamp_seconds': 157,
-      'tip': 'So, always check if a claim has already been filed before. Some counties have '
-             'online portals where you can search by case number or property address, or you '
-             'can always make a phone call to the county office and verify.',
-      'title': 'Top 5 Things Nobody Tells You About the Surplus Funds Recovery Business '
-               '(Overage Acquisition)',
-      'url': 'https://www.youtube.com/watch?v=bpxSOg1_xbE&t=157s',
-      'video_id': 'bpxSOg1_xbE'},
-     {'author': 'PA Treasury Department',
-      'channel': 'PA Treasury Department',
-      'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:07:33](https://www.youtube.com/watch?v=eRjGqaIOHWI&t=453s)',
-      'relevance': 'Attributed practitioner commentary on skip-tracing stacks, '
-                   'recorder/assessor portals, PACER bankruptcy checks, and right-party '
-                   'contact verification.',
-      'source_type': 'video_pro_tip',
-      'text': 'Email topmail patreasury.gov and our unclaimed property staff will be happy to '
-              "assist you if you'd like to search for unclaimed property in other states visit "
-              'missingmoney.com thank.',
-      'timestamp': 453,
-      'timestamp_label': '[00:07:33]',
-      'timestamp_seconds': 453,
-      'tip': 'Email topmail patreasury.gov and our unclaimed property staff will be happy to '
-             "assist you if you'd like to search for unclaimed property in other states visit "
-             'missingmoney.com thank.',
-      'title': 'How To File a Claim - PA Treasury Unclaimed Property Tutorial (PA Treasury '
-               'Department)',
-      'url': 'https://www.youtube.com/watch?v=eRjGqaIOHWI&t=453s',
-      'video_id': 'eRjGqaIOHWI'},
-     {'author': 'Alfred Taren',
-      'channel': 'Alfred Taren',
-      'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:09:18](https://www.youtube.com/watch?v=8-8koApqnYA&t=558s)',
-      'relevance': 'Attributed practitioner commentary on skip-tracing stacks, '
-                   'recorder/assessor portals, PACER bankruptcy checks, and right-party '
-                   'contact verification.',
-      'source_type': 'video_pro_tip',
-      'text': "Their page says email the court registry to request a listing. And there's a $5 "
-              'research fee to look up a case by phone. So once you have your list, you find '
-              "the people, you're gonna skip trace them, look for heirs where the owner has "
-              'passed and build a short list.',
-      'timestamp': 558,
-      'timestamp_label': '[00:09:18]',
-      'timestamp_seconds': 558,
-      'tip': "Their page says email the court registry to request a listing. And there's a $5 "
-             'research fee to look up a case by phone. So once you have your list, you find '
-             "the people, you're gonna skip trace them, look for heirs where the owner has "
-             'passed and build a short list.',
-      'title': 'How to Start a Surplus Funds Business in 2026 (Step by Step) (Alfred Taren)',
-      'url': 'https://www.youtube.com/watch?v=8-8koApqnYA&t=558s',
-      'video_id': '8-8koApqnYA'},
-     {'author': 'Logan Fullmer',
-      'channel': 'Logan Fullmer',
-      'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:04:43](https://www.youtube.com/watch?v=zMW-iFWYX9w&t=283s)',
-      'relevance': 'Attributed practitioner commentary on skip-tracing stacks, '
-                   'recorder/assessor portals, PACER bankruptcy checks, and right-party '
-                   'contact verification.',
-      'source_type': 'video_pro_tip',
-      'text': "And when you when a person thinks, I'm going to skip trace someone and say, all "
-              "right, I'm going to skip trace, I don't know, Aaron Rodgers. You go you put the "
-              'name in the first field. Aaron first name or last name last name first, '
-              'whatever.',
-      'timestamp': 283,
-      'timestamp_label': '[00:04:43]',
-      'timestamp_seconds': 283,
-      'tip': "And when you when a person thinks, I'm going to skip trace someone and say, all "
-             "right, I'm going to skip trace, I don't know, Aaron Rodgers. You go you put the "
-             'name in the first field. Aaron first name or last name last name first, '
-             'whatever.',
-      'title': 'Curative Title Research: How She Finds Missing Owners (Logan Fullmer)',
-      'url': 'https://www.youtube.com/watch?v=zMW-iFWYX9w&t=283s',
-      'video_id': 'zMW-iFWYX9w'},
-     {'author': 'Emend The Mass Media Group',
-      'channel': 'Emend The Mass Media Group',
-      'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:16:01](https://www.youtube.com/watch?v=ijLtjR0tTd8&t=961s)',
-      'relevance': 'Attributed practitioner commentary on skip-tracing stacks, '
-                   'recorder/assessor portals, PACER bankruptcy checks, and right-party '
-                   'contact verification.',
-      'source_type': 'video_pro_tip',
-      'text': "So, you're going to go ahead and select that or probably like push it or "
-              "something like that. So, you're going to push that option and it's going to "
-              'take you uh to a search page.',
-      'timestamp': 961,
-      'timestamp_label': '[00:16:01]',
-      'timestamp_seconds': 961,
-      'tip': "So, you're going to go ahead and select that or probably like push it or "
-             "something like that. So, you're going to push that option and it's going to take "
-             'you uh to a search page.',
-      'title': 'CA Unclaimed Property - Are you missing out? - Tutorial (Emend The Mass Media '
-               'Group)',
-      'url': 'https://www.youtube.com/watch?v=ijLtjR0tTd8&t=961s',
-      'video_id': 'ijLtjR0tTd8'}],
- 9: [{'author': 'Surplus Institute / David Church / Unclaimed Funds',
-      'channel': 'Surplus Institute / David Church / Unclaimed Funds',
-      'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:04:12](https://www.youtube.com/watch?v=alaKJIcbbLw&t=252s)',
-      'relevance': 'Attributed practitioner commentary on claimant outreach scripts, cold-call '
-                   'objection handling, direct-mail packets, and statutory solicitation '
-                   'disclosures.',
-      'source_type': 'video_pro_tip',
-      'text': "You've got to have your script down. The last thing, and the majority of my "
-              'business, if you really want to know, comes from people calling me back cuz '
-              "most people won't pick up their phone. And again, that's a common objection I "
-              'hear. So, I do leave a detailed message.',
-      'timestamp': 252,
-      'timestamp_label': '[00:04:12]',
-      'timestamp_seconds': 252,
-      'tip': "You've got to have your script down. The last thing, and the majority of my "
-             'business, if you really want to know, comes from people calling me back cuz most '
-             "people won't pick up their phone. And again, that's a common objection I hear. "
-             'So, I do leave a detailed message.',
-      'title': 'Cold Calling for Surplus Funds in 2025: The Script That Actually Works! '
-               '(Surplus Institute / David Church / Unclaimed Funds)',
-      'url': 'https://www.youtube.com/watch?v=alaKJIcbbLw&t=252s',
-      'video_id': 'alaKJIcbbLw'},
-     {'author': 'Surplus Funds 101',
-      'channel': 'Surplus Funds 101',
-      'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:04:02](https://www.youtube.com/watch?v=smhFDkvMwkM&t=242s)',
-      'relevance': 'Attributed practitioner commentary on claimant outreach scripts, cold-call '
-                   'objection handling, direct-mail packets, and statutory solicitation '
-                   'disclosures.',
-      'source_type': 'video_pro_tip',
-      'text': "And when is a good time for a Zoom or a phone call? 's something about being "
-              "able to see the other person you're talking to that just gives you an extra "
-              "level of credibility and trust, so I always shoot for a Zoom call, and that's "
-              'the second.',
-      'timestamp': 242,
-      'timestamp_label': '[00:04:02]',
-      'timestamp_seconds': 242,
-      'tip': "And when is a good time for a Zoom or a phone call? 's something about being "
-             "able to see the other person you're talking to that just gives you an extra "
-             "level of credibility and trust, so I always shoot for a Zoom call, and that's "
-             'the second.',
-      'title': 'Best Cold Calling Script For Surplus Funds. overage syndicate surplus funds '
-               'cold calling (Surplus Funds 101)',
-      'url': 'https://www.youtube.com/watch?v=smhFDkvMwkM&t=242s',
-      'video_id': 'smhFDkvMwkM'},
-     {'author': 'Money Making Juggernaut',
-      'channel': 'Money Making Juggernaut',
-      'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:02:43](https://www.youtube.com/watch?v=Zh5fus4SGzc&t=163s)',
-      'relevance': 'Attributed practitioner commentary on claimant outreach scripts, cold-call '
-                   'objection handling, direct-mail packets, and statutory solicitation '
-                   'disclosures.',
-      'source_type': 'video_pro_tip',
-      'text': "We do have a power dialer on XS Elite and that's when you're calling each "
-              "number one by one. So it's not just auto blast calling. Everybody is just "
-              "calling one by one so we're in compliance. So I had the attorney that "
-              'specializes in TCPA and DNC.',
-      'timestamp': 163,
-      'timestamp_label': '[00:02:43]',
-      'timestamp_seconds': 163,
-      'tip': "We do have a power dialer on XS Elite and that's when you're calling each number "
-             "one by one. So it's not just auto blast calling. Everybody is just calling one "
-             "by one so we're in compliance. So I had the attorney that specializes in TCPA "
-             'and DNC.',
-      'title': 'What Nobody Tells You About The Surplus Funds Recovery Business (Money Making '
-               'Juggernaut)',
-      'url': 'https://www.youtube.com/watch?v=Zh5fus4SGzc&t=163s',
-      'video_id': 'Zh5fus4SGzc'},
-     {'author': 'Alfred Taren',
-      'channel': 'Alfred Taren',
-      'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:01:10](https://www.youtube.com/watch?v=CqlbwGPmv64&t=70s)',
-      'relevance': 'Attributed practitioner commentary on claimant outreach scripts, cold-call '
-                   'objection handling, direct-mail packets, and statutory solicitation '
-                   'disclosures.',
-      'source_type': 'video_pro_tip',
-      'text': 'And if somebody asks you not to call again, make a note and just stop calling. '
-              "Don't use robocalls or autodialers on cell phones without the right permission. "
-              "And in some places, there's a waiting period after the sale before you're "
-              'allowed to contact the owner.',
-      'timestamp': 70,
-      'timestamp_label': '[00:01:10]',
-      'timestamp_seconds': 70,
-      'tip': 'And if somebody asks you not to call again, make a note and just stop calling. '
-             "Don't use robocalls or autodialers on cell phones without the right permission. "
-             "And in some places, there's a waiting period after the sale before you're "
-             'allowed to contact the owner.',
-      'title': 'Surplus Funds Cold Calling Script: How to Not Sound Like a Scam (Alfred Taren)',
-      'url': 'https://www.youtube.com/watch?v=CqlbwGPmv64&t=70s',
-      'video_id': 'CqlbwGPmv64'},
-     {'author': "Bob Diamond - America's Tax Sale Attorney",
-      'channel': "Bob Diamond - America's Tax Sale Attorney",
-      'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:05:28](https://www.youtube.com/watch?v=1Pp-cjYnY2k&t=328s)',
-      'relevance': 'Attributed practitioner commentary on claimant outreach scripts, cold-call '
-                   'objection handling, direct-mail packets, and statutory solicitation '
-                   'disclosures.',
-      'source_type': 'video_pro_tip',
-      'text': 'You get their contact information and you reach out to them. You might be '
-              'sending them a letter. You might be picking up the phone and calling them. You '
-              'might be sending them a message on Facebook. The ways that we can get '
-              'information these days — very easy.',
-      'timestamp': 328,
-      'timestamp_label': '[00:05:28]',
-      'timestamp_seconds': 328,
-      'tip': 'You get their contact information and you reach out to them. You might be '
-             'sending them a letter. You might be picking up the phone and calling them. You '
-             'might be sending them a message on Facebook. The ways that we can get '
-             'information these days — very easy.',
-      'title': "How To Become A Surplus Funds Recovery Agent (Bob Diamond - America's Tax Sale "
-               'Attorney)',
-      'url': 'https://www.youtube.com/watch?v=1Pp-cjYnY2k&t=328s',
-      'video_id': '1Pp-cjYnY2k'},
-     {'author': 'Logan Fullmer',
-      'channel': 'Logan Fullmer',
-      'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:43:53](https://www.youtube.com/watch?v=zMW-iFWYX9w&t=2633s)',
-      'relevance': 'Attributed practitioner commentary on claimant outreach scripts, cold-call '
-                   'objection handling, direct-mail packets, and statutory solicitation '
-                   'disclosures.',
-      'source_type': 'video_pro_tip',
-      'text': "And we didn't know, you know, any of this until now. So, then um we realized "
-              "Larry that the the dad's friend assigned their purchase agreement. I said, hey, "
-              'he only has limited power of attorney for the insurance claim, not to sign the '
-              'real the real estate.',
-      'timestamp': 2633,
-      'timestamp_label': '[00:43:53]',
-      'timestamp_seconds': 2633,
-      'tip': "And we didn't know, you know, any of this until now. So, then um we realized "
-             "Larry that the the dad's friend assigned their purchase agreement. I said, hey, "
-             'he only has limited power of attorney for the insurance claim, not to sign the '
-             'real the real estate.',
-      'title': 'Curative Title Research: How She Finds Missing Owners (Logan Fullmer)',
-      'url': 'https://www.youtube.com/watch?v=zMW-iFWYX9w&t=2633s',
-      'video_id': 'zMW-iFWYX9w'},
-     {'author': 'Dexter Brown',
-      'channel': 'Dexter Brown',
-      'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:07:14](https://www.youtube.com/watch?v=0FZrtOY2H5w&t=434s)',
-      'relevance': 'Attributed practitioner commentary on claimant outreach scripts, cold-call '
-                   'objection handling, direct-mail packets, and statutory solicitation '
-                   'disclosures.',
-      'source_type': 'video_pro_tip',
-      'text': 'You want to be a part of this you can just have discussion with them or we can '
-              "hop on the three-way phone call and I can kind of go over it again um but we'll "
-              'need them to sign for the small succession okay gotcha.',
-      'timestamp': 434,
-      'timestamp_label': '[00:07:14]',
-      'timestamp_seconds': 434,
-      'tip': 'You want to be a part of this you can just have discussion with them or we can '
-             "hop on the three-way phone call and I can kind of go over it again um but we'll "
-             'need them to sign for the small succession okay gotcha.',
-      'title': 'Live Call with client DEAL CLOSED | Surplus Funds Excess Funds Overages '
-               '(Dexter Brown)',
-      'url': 'https://www.youtube.com/watch?v=0FZrtOY2H5w&t=434s',
-      'video_id': '0FZrtOY2H5w'},
-     {'author': 'Surplus Funds Secrets',
-      'channel': 'Surplus Funds Secrets',
-      'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:00:28](https://www.youtube.com/watch?v=i7mng3-o1u0&t=28s)',
-      'relevance': 'Attributed practitioner commentary on claimant outreach scripts, cold-call '
-                   'objection handling, direct-mail packets, and statutory solicitation '
-                   'disclosures.',
-      'source_type': 'video_pro_tip',
-      'text': "Where are you calling from? Why wouldn't the county call me if there's money "
-              'for me? Why would there be money for me? " That\'s the psychology that they\'re '
-              "going to be dealing with right off the bat, especially if they don't know about "
-              'these funds.',
-      'timestamp': 28,
-      'timestamp_label': '[00:00:28]',
-      'timestamp_seconds': 28,
-      'tip': "Where are you calling from? Why wouldn't the county call me if there's money for "
-             'me? Why would there be money for me? " That\'s the psychology that they\'re '
-             "going to be dealing with right off the bat, especially if they don't know about "
-             'these funds.',
-      'title': 'Avoid These Mistakes In Surplus Funds Cold Calling (Surplus Funds Secrets)',
-      'url': 'https://www.youtube.com/watch?v=i7mng3-o1u0&t=28s',
-      'video_id': 'i7mng3-o1u0'},
-     {'author': 'Money Making Juggernaut',
-      'channel': 'Money Making Juggernaut',
-      'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:01:12](https://www.youtube.com/watch?v=DMdtmrWAO6c&t=72s)',
-      'relevance': 'Attributed practitioner commentary on claimant outreach scripts, cold-call '
-                   'objection handling, direct-mail packets, and statutory solicitation '
-                   'disclosures.',
-      'source_type': 'video_pro_tip',
-      'text': "I'm giving you my entire cold calling system. First, how to find the phone "
-              'numbers that actually work because most people fail before they even dial. '
-              'Second, the exact call flow that my team uses word for word. And third, how to '
-              'handle the rebuttals that kill most beginners.',
-      'timestamp': 72,
-      'timestamp_label': '[00:01:12]',
-      'timestamp_seconds': 72,
-      'tip': "I'm giving you my entire cold calling system. First, how to find the phone "
-             'numbers that actually work because most people fail before they even dial. '
-             'Second, the exact call flow that my team uses word for word. And third, how to '
-             'handle the rebuttals that kill most beginners.',
-      'title': 'Surplus Funds Recovery Cold Calling - STEP-BY-STEP SCRIPT (Money Making '
-               'Juggernaut)',
-      'url': 'https://www.youtube.com/watch?v=DMdtmrWAO6c&t=72s',
-      'video_id': 'DMdtmrWAO6c'},
-     {'author': 'Surplus Funds 101',
-      'channel': 'Surplus Funds 101',
-      'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:05:25](https://www.youtube.com/watch?v=_RTcaTMOwlY&t=325s)',
-      'relevance': 'Attributed practitioner commentary on claimant outreach scripts, cold-call '
-                   'objection handling, direct-mail packets, and statutory solicitation '
-                   'disclosures.',
-      'source_type': 'video_pro_tip',
-      'text': "'s kind of pull the curtain back a little bit more and look at this thing from "
-              "the 5,000-ft view, right? Contract that you're going to have people sign, we "
-              "call it an an agreement. A contract's a scary trigger word.",
-      'timestamp': 325,
-      'timestamp_label': '[00:05:25]',
-      'timestamp_seconds': 325,
-      'tip': "'s kind of pull the curtain back a little bit more and look at this thing from "
-             "the 5,000-ft view, right? Contract that you're going to have people sign, we "
-             "call it an an agreement. A contract's a scary trigger word.",
-      'title': 'Mastering Unclaimed Funds Contracts: A Complete Beginners Guide (Surplus Funds '
-               '101)',
-      'url': 'https://www.youtube.com/watch?v=_RTcaTMOwlY&t=325s',
-      'video_id': '_RTcaTMOwlY'},
-     {'author': 'Surplus Institute / David Church / Unclaimed Funds',
-      'channel': 'Surplus Institute / David Church / Unclaimed Funds',
-      'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:09:27](https://www.youtube.com/watch?v=MsxVzoHQCNk&t=567s)',
-      'relevance': 'Attributed practitioner commentary on claimant outreach scripts, cold-call '
-                   'objection handling, direct-mail packets, and statutory solicitation '
-                   'disclosures.',
-      'source_type': 'video_pro_tip',
-      'text': "Many you know how many claims are in here and and it's just it's really nice "
-              "plus I'm helping out a family which I love too so I'm helping someone I'm "
-              'getting help in the process and this is great this is the perfect phone call '
-              "I'm looking right now.",
-      'timestamp': 567,
-      'timestamp_label': '[00:09:27]',
-      'timestamp_seconds': 567,
-      'tip': "Many you know how many claims are in here and and it's just it's really nice "
-             "plus I'm helping out a family which I love too so I'm helping someone I'm "
-             "getting help in the process and this is great this is the perfect phone call I'm "
-             'looking right now.',
-      'title': 'Surplus Funds The PERFECT Cold Call! (Surplus Institute / David Church / '
-               'Unclaimed Funds)',
-      'url': 'https://www.youtube.com/watch?v=MsxVzoHQCNk&t=567s',
-      'video_id': 'MsxVzoHQCNk'},
+      'text': 'Read the script 10 times every day before you get on the phone.',
+      'timestamp': 460,
+      'timestamp_label': '[00:07:40]',
+      'timestamp_seconds': 460,
+      'tip': 'Read the script 10 times every day before you get on the phone.',
+      'title': 'Surplus Funds Cold Calling: What Making 400 Cold Calls A Day Has Taught Me About '
+               'Closing Deals.',
+      'url': 'https://www.youtube.com/watch?v=-A2pNSevACs&t=460s',
+      'video_id': '-A2pNSevACs'},
      {'author': 'SurplusFundsRiches',
       'channel': 'SurplusFundsRiches',
       'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:25:24](https://www.youtube.com/watch?v=4W8c0I28pxQ&t=1524s)',
-      'relevance': 'Attributed practitioner commentary on claimant outreach scripts, cold-call '
-                   'objection handling, direct-mail packets, and statutory solicitation '
-                   'disclosures.',
+      'markdown': '[00:03:10](https://www.youtube.com/watch?v=ujbTh1In_c4&t=190s)',
+      'relevance': 'Verbatim practitioner testimony from Chapter Q7.',
       'source_type': 'video_pro_tip',
-      'text': 'Usually use an attachment for that so now we know when I bought it now what '
-              "about debt well that's just as easy what we see next or rather same day is this "
-              'again we have a d this is called a deed of trust let me move this a little bit.',
-      'timestamp': 1524,
-      'timestamp_label': '[00:25:24]',
-      'timestamp_seconds': 1524,
-      'tip': 'Usually use an attachment for that so now we know when I bought it now what '
-             "about debt well that's just as easy what we see next or rather same day is this "
-             'again we have a d this is called a deed of trust let me move this a little bit.',
-      'title': 'Free Surplus Funds Training - Indepth, full hour! SurplusFundsRiches '
-               '(SurplusFundsRiches)',
-      'url': 'https://www.youtube.com/watch?v=4W8c0I28pxQ&t=1524s',
-      'video_id': '4W8c0I28pxQ'},
-     {'author': 'Nick Fullmer- Overage Syndicate',
-      'channel': 'Nick Fullmer- Overage Syndicate',
+      'text': 'It really, I would say, probably increases our hit rate by anywhere from 40 to 50 '
+              'percent.',
+      'timestamp': 190,
+      'timestamp_label': '[00:03:10]',
+      'timestamp_seconds': 190,
+      'tip': 'It really, I would say, probably increases our hit rate by anywhere from 40 to 50 '
+             'percent.',
+      'title': 'Surplus Funds - skip tracing claimants',
+      'url': 'https://www.youtube.com/watch?v=ujbTh1In_c4&t=190s',
+      'video_id': 'ujbTh1In_c4'},
+     {'author': 'Surplus Funds 101',
+      'channel': 'Surplus Funds 101',
       'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:02:53](https://www.youtube.com/watch?v=vd__NHmQYgM&t=173s)',
-      'relevance': 'Attributed practitioner commentary on claimant outreach scripts, cold-call '
-                   'objection handling, direct-mail packets, and statutory solicitation '
-                   'disclosures.',
+      'markdown': '[00:04:02](https://www.youtube.com/watch?v=xqXetexqH30&t=242s)',
+      'relevance': 'Verbatim practitioner testimony from Chapter Q7.',
       'source_type': 'video_pro_tip',
-      'text': "I think I've got eight under contract and like seven or eight contracts still "
-              "out waiting to come back in. Now, that's with going to Montana in June and then "
-              'my wife dragging me to Cape Cod in July for 10 days.',
-      'timestamp': 173,
-      'timestamp_label': '[00:02:53]',
-      'timestamp_seconds': 173,
-      'tip': "I think I've got eight under contract and like seven or eight contracts still "
-             "out waiting to come back in. Now, that's with going to Montana in June and then "
-             'my wife dragging me to Cape Cod in July for 10 days.',
-      'title': '8 Surplus Funds Deals Within 3 Months of Starting The Business (Nick Fullmer- '
-               'Overage Syndicate)',
-      'url': 'https://www.youtube.com/watch?v=vd__NHmQYgM&t=173s',
-      'video_id': 'vd__NHmQYgM'},
+      'text': "You're never going to pay for a duplicate lead.",
+      'timestamp': 242,
+      'timestamp_label': '[00:04:02]',
+      'timestamp_seconds': 242,
+      'tip': "You're never going to pay for a duplicate lead.",
+      'title': 'State Funds Business: Best Websites For Skip Tracing Claimant Information',
+      'url': 'https://www.youtube.com/watch?v=xqXetexqH30&t=242s',
+      'video_id': 'xqXetexqH30'},
+     {'author': 'SurplusFundsRiches',
+      'channel': 'SurplusFundsRiches',
+      'epistemic_status': 'attributed_practitioner_claim',
+      'markdown': '[00:00:30](https://www.youtube.com/watch?v=bt6FqwHwtBY&t=30s)',
+      'relevance': 'Verbatim practitioner testimony from Chapter Q7.',
+      'source_type': 'video_pro_tip',
+      'text': "Don't put in the middle name at first. Start with the first and last name.",
+      'timestamp': 30,
+      'timestamp_label': '[00:00:30]',
+      'timestamp_seconds': 30,
+      'tip': "Don't put in the middle name at first. Start with the first and last name.",
+      'title': 'Surplus Funds - skip tracing!',
+      'url': 'https://www.youtube.com/watch?v=bt6FqwHwtBY&t=30s',
+      'video_id': 'bt6FqwHwtBY'},
+     {'author': 'SurplusFundsRiches',
+      'channel': 'SurplusFundsRiches',
+      'epistemic_status': 'attributed_practitioner_claim',
+      'markdown': '[00:03:29](https://www.youtube.com/watch?v=L0EsEWU9jis&t=209s)',
+      'relevance': 'Verbatim practitioner testimony from Chapter Q7.',
+      'source_type': 'video_pro_tip',
+      'text': 'The deed will oftentimes reference who the buyer is and a mailing address for them.',
+      'timestamp': 209,
+      'timestamp_label': '[00:03:29]',
+      'timestamp_seconds': 209,
+      'tip': 'The deed will oftentimes reference who the buyer is and a mailing address for them.',
+      'title': 'Surplus Funds skiptracing: tips, who to use, stay legal!',
+      'url': 'https://www.youtube.com/watch?v=L0EsEWU9jis&t=209s',
+      'video_id': 'L0EsEWU9jis'},
+     {'author': 'Spencer Vann',
+      'channel': 'Spencer Vann',
+      'epistemic_status': 'attributed_practitioner_claim',
+      'markdown': '[00:01:52](https://www.youtube.com/watch?v=ZTs6XQ9lr-c&t=112s)',
+      'relevance': 'Verbatim practitioner testimony from Chapter Q7.',
+      'source_type': 'video_pro_tip',
+      'text': "Where you want to start with skip tracing really depends on where you're at in your "
+              'journey of entrepreneurship, whether you have more available capital or you have '
+              'more available time to put into it.',
+      'timestamp': 112,
+      'timestamp_label': '[00:01:52]',
+      'timestamp_seconds': 112,
+      'tip': "Where you want to start with skip tracing really depends on where you're at in your "
+             'journey of entrepreneurship, whether you have more available capital or you have '
+             'more available time to put into it.',
+      'title': 'Surplus Fund Skip Trace Sites (Best and Worst)',
+      'url': 'https://www.youtube.com/watch?v=ZTs6XQ9lr-c&t=112s',
+      'video_id': 'ZTs6XQ9lr-c'},
+     {'author': 'Unclaimed CEO',
+      'channel': 'Unclaimed CEO',
+      'epistemic_status': 'attributed_practitioner_claim',
+      'markdown': '[00:03:27](https://www.youtube.com/watch?v=WlbnzGtdoSY&t=207s)',
+      'relevance': 'Verbatim practitioner testimony from Chapter Q7.',
+      'source_type': 'video_pro_tip',
+      'text': 'Send holiday greeting cards and make sure that greeting card has a call to action.',
+      'timestamp': 207,
+      'timestamp_label': '[00:03:27]',
+      'timestamp_seconds': 207,
+      'tip': 'Send holiday greeting cards and make sure that greeting card has a call to action.',
+      'title': '5 Things To Do Instead Of Cold Calling | Tax Surplus | Unclaimed Funds',
+      'url': 'https://www.youtube.com/watch?v=WlbnzGtdoSY&t=207s',
+      'video_id': 'WlbnzGtdoSY'},
+     {'author': 'Caleb Luketic',
+      'channel': 'Caleb Luketic',
+      'epistemic_status': 'attributed_practitioner_claim',
+      'markdown': '[00:00:00](https://www.youtube.com/watch?v=oGjbQZW0yuA&t=0s)',
+      'relevance': 'Verbatim practitioner testimony from Chapter Q7.',
+      'source_type': 'video_pro_tip',
+      'text': "I'm generating pre-foreclosure leads from Facebook ads for between 25 and 40 "
+              'dollars a pop.',
+      'timestamp': 0,
+      'timestamp_label': '[00:00:00]',
+      'timestamp_seconds': 0,
+      'tip': "I'm generating pre-foreclosure leads from Facebook ads for between 25 and 40 dollars "
+             'a pop.',
+      'title': 'How To Get Cheap Pre-Foreclosure Motivated Seller Leads From Facebook Ads',
+      'url': 'https://www.youtube.com/watch?v=oGjbQZW0yuA&t=0s',
+      'video_id': 'oGjbQZW0yuA'}],
+ 8: [{'author': 'Money Making Juggernaut',
+      'channel': 'Money Making Juggernaut',
+      'epistemic_status': 'attributed_practitioner_claim',
+      'markdown': '[00:00:59](https://www.youtube.com/watch?v=JJObKyLY5YY&t=59s)',
+      'relevance': 'Verbatim practitioner testimony from Chapter Q8.',
+      'source_type': 'video_pro_tip',
+      'text': "You're going to have your intro, you're going to have your verification, you're "
+              "going to explain what happens, how you can help, then you're looking to get either "
+              'an email or mailing address.',
+      'timestamp': 59,
+      'timestamp_label': '[00:00:59]',
+      'timestamp_seconds': 59,
+      'tip': "You're going to have your intro, you're going to have your verification, you're "
+             "going to explain what happens, how you can help, then you're looking to get either "
+             'an email or mailing address.',
+      'title': 'Surplus Funds Cold Calling: The 4-Steps (1st Call)',
+      'url': 'https://www.youtube.com/watch?v=JJObKyLY5YY&t=59s',
+      'video_id': 'JJObKyLY5YY'},
+     {'author': 'Surplus Institute / David Church / Unclaimed Funds',
+      'channel': 'Surplus Institute / David Church / Unclaimed Funds',
+      'epistemic_status': 'attributed_practitioner_claim',
+      'markdown': '[00:12:27](https://www.youtube.com/watch?v=87zmv7-0D7s&t=747s)',
+      'relevance': 'Verbatim practitioner testimony from Chapter Q8.',
+      'source_type': 'video_pro_tip',
+      'text': "Did I get the deal? We're still working on this one. I don't know.",
+      'timestamp': 747,
+      'timestamp_label': '[00:12:27]',
+      'timestamp_seconds': 747,
+      'tip': "Did I get the deal? We're still working on this one. I don't know.",
+      'title': '$40K+ LIVE COLD CALL! #SurplusFunds #RealEstate #Overages',
+      'url': 'https://www.youtube.com/watch?v=87zmv7-0D7s&t=747s',
+      'video_id': '87zmv7-0D7s'},
+     {'author': 'Alfred Taren',
+      'channel': 'Alfred Taren',
+      'epistemic_status': 'attributed_practitioner_claim',
+      'markdown': '[00:02:01](https://www.youtube.com/watch?v=CqlbwGPmv64&t=121s)',
+      'relevance': 'Verbatim practitioner testimony from Chapter Q8.',
+      'source_type': 'video_pro_tip',
+      'text': "I'll wait for 3 to 5 seconds if I have to. Let them talk.",
+      'timestamp': 121,
+      'timestamp_label': '[00:02:01]',
+      'timestamp_seconds': 121,
+      'tip': "I'll wait for 3 to 5 seconds if I have to. Let them talk.",
+      'title': 'Surplus Funds Cold Calling Script: How to Not Sound Like a Scam',
+      'url': 'https://www.youtube.com/watch?v=CqlbwGPmv64&t=121s',
+      'video_id': 'CqlbwGPmv64'},
+     {'author': 'Surplus Institute / David Church / Unclaimed Funds',
+      'channel': 'Surplus Institute / David Church / Unclaimed Funds',
+      'epistemic_status': 'attributed_practitioner_claim',
+      'markdown': '[00:03:03](https://www.youtube.com/watch?v=alaKJIcbbLw&t=183s)',
+      'relevance': 'Verbatim practitioner testimony from Chapter Q8.',
+      'source_type': 'video_pro_tip',
+      'text': 'Your script you should know like the back of your hand, and you should say it to '
+              'yourself 20 times.',
+      'timestamp': 183,
+      'timestamp_label': '[00:03:03]',
+      'timestamp_seconds': 183,
+      'tip': 'Your script you should know like the back of your hand, and you should say it to '
+             'yourself 20 times.',
+      'title': 'Cold Calling for Surplus Funds in 2025: The Script That Actually Works!',
+      'url': 'https://www.youtube.com/watch?v=alaKJIcbbLw&t=183s',
+      'video_id': 'alaKJIcbbLw'},
      {'author': 'Surplus Funds Secrets',
       'channel': 'Surplus Funds Secrets',
       'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:00:58](https://www.youtube.com/watch?v=HtbOqZK2He8&t=58s)',
-      'relevance': 'Attributed practitioner commentary on claimant outreach scripts, cold-call '
-                   'objection handling, direct-mail packets, and statutory solicitation '
-                   'disclosures.',
+      'markdown': '[00:00:56](https://www.youtube.com/watch?v=HtbOqZK2He8&t=56s)',
+      'relevance': 'Verbatim practitioner testimony from Chapter Q8.',
       'source_type': 'video_pro_tip',
-      'text': 'Surplus funds, they need clarity first. "I\'m reaching out about funds that may '
-              'be owed to you or your family\'s estate. Is this a good time to talk?" '
-              "Immediately frames the call. There's a real job to the person calling these "
-              "individuals, and it's not sales right away.",
-      'timestamp': 58,
-      'timestamp_label': '[00:00:58]',
-      'timestamp_seconds': 58,
-      'tip': 'Surplus funds, they need clarity first. "I\'m reaching out about funds that may '
-             'be owed to you or your family\'s estate. Is this a good time to talk?" '
-             "Immediately frames the call. There's a real job to the person calling these "
-             "individuals, and it's not sales right away.",
-      'title': 'Why Most Surplus Funds Calls Fail (And What To Say Instead) (Surplus Funds '
-               'Secrets)',
-      'url': 'https://www.youtube.com/watch?v=HtbOqZK2He8&t=58s',
+      'text': "I'm reaching out about funds that may be owed to you or your family's estate. Is "
+              'this a good time to talk.',
+      'timestamp': 56,
+      'timestamp_label': '[00:00:56]',
+      'timestamp_seconds': 56,
+      'tip': "I'm reaching out about funds that may be owed to you or your family's estate. Is "
+             'this a good time to talk.',
+      'title': 'Why Most Surplus Funds Calls Fail (And What To Say Instead)',
+      'url': 'https://www.youtube.com/watch?v=HtbOqZK2He8&t=56s',
       'video_id': 'HtbOqZK2He8'},
-     {'author': 'Courtney Fricke',
-      'channel': 'Courtney Fricke',
+     {'author': 'Surplus Funds Secrets',
+      'channel': 'Surplus Funds Secrets',
       'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:02:22](https://www.youtube.com/watch?v=GH5TN_iIdMs&t=142s)',
-      'relevance': 'Attributed practitioner commentary on claimant outreach scripts, cold-call '
-                   'objection handling, direct-mail packets, and statutory solicitation '
-                   'disclosures.',
+      'markdown': '[00:02:54](https://www.youtube.com/watch?v=i7mng3-o1u0&t=174s)',
+      'relevance': 'Verbatim practitioner testimony from Chapter Q8.',
       'source_type': 'video_pro_tip',
-      'text': "And so many investors are like, wait, I've kind of heard that word before in my "
-              "contract where there's like that curative title phase. 's a part of like a an "
-              'extension deadline or whatever with your tit like with your uh purchase '
-              'agreement.',
-      'timestamp': 142,
-      'timestamp_label': '[00:02:22]',
-      'timestamp_seconds': 142,
-      'tip': "And so many investors are like, wait, I've kind of heard that word before in my "
-             "contract where there's like that curative title phase. 's a part of like a an "
-             'extension deadline or whatever with your tit like with your uh purchase '
-             'agreement.',
-      'title': 'Curative Title Explained: How Investors Make Money When Deals Can’t Close '
-               '(Courtney Fricke)',
-      'url': 'https://www.youtube.com/watch?v=GH5TN_iIdMs&t=142s',
-      'video_id': 'GH5TN_iIdMs'}],
- 10: [{'author': 'BizMove',
-       'channel': 'BizMove',
+      'text': 'We can provide a digital or in-person notary at your time and convenience and '
+              'location.',
+      'timestamp': 174,
+      'timestamp_label': '[00:02:54]',
+      'timestamp_seconds': 174,
+      'tip': 'We can provide a digital or in-person notary at your time and convenience and '
+             'location.',
+      'title': 'Avoid These Mistakes In Surplus Funds Cold Calling',
+      'url': 'https://www.youtube.com/watch?v=i7mng3-o1u0&t=174s',
+      'video_id': 'i7mng3-o1u0'},
+     {'author': 'Surplus Institute / David Church / Unclaimed Funds',
+      'channel': 'Surplus Institute / David Church / Unclaimed Funds',
+      'epistemic_status': 'attributed_practitioner_claim',
+      'markdown': '[00:15:33](https://www.youtube.com/watch?v=xqpLsq3JVlU&t=933s)',
+      'relevance': 'Verbatim practitioner testimony from Chapter Q8.',
+      'source_type': 'video_pro_tip',
+      'text': '80% of my deals happen from callbacks and they happen from follow-ups.',
+      'timestamp': 933,
+      'timestamp_label': '[00:15:33]',
+      'timestamp_seconds': 933,
+      'tip': '80% of my deals happen from callbacks and they happen from follow-ups.',
+      'title': 'Cold Calling for Surplus Funds: What Actually Works',
+      'url': 'https://www.youtube.com/watch?v=xqpLsq3JVlU&t=933s',
+      'video_id': 'xqpLsq3JVlU'},
+     {'author': 'Dexter Brown',
+      'channel': 'Dexter Brown',
+      'epistemic_status': 'attributed_practitioner_claim',
+      'markdown': '[00:04:49](https://www.youtube.com/watch?v=0FZrtOY2H5w&t=289s)',
+      'relevance': 'Verbatim practitioner testimony from Chapter Q8.',
+      'source_type': 'video_pro_tip',
+      'text': 'We get 30 and you get 70. 10 goes to our research team, 10 goes to our locator '
+              'team, and 10 goes to our legal team.',
+      'timestamp': 289,
+      'timestamp_label': '[00:04:49]',
+      'timestamp_seconds': 289,
+      'tip': 'We get 30 and you get 70. 10 goes to our research team, 10 goes to our locator team, '
+             'and 10 goes to our legal team.',
+      'title': 'Live Call with client DEAL CLOSED | Surplus Funds Excess Funds Overages',
+      'url': 'https://www.youtube.com/watch?v=0FZrtOY2H5w&t=289s',
+      'video_id': '0FZrtOY2H5w'},
+     {'author': 'Surplus Institute / David Church / Unclaimed Funds',
+      'channel': 'Surplus Institute / David Church / Unclaimed Funds',
+      'epistemic_status': 'attributed_practitioner_claim',
+      'markdown': '[00:00:31](https://www.youtube.com/watch?v=ieI6zKICpKo&t=31s)',
+      'relevance': 'Verbatim practitioner testimony from Chapter Q8.',
+      'source_type': 'video_pro_tip',
+      'text': "Literally, I'm starting off the week with $16,000 in verbal commissions. I will "
+              'have to get those contracts signed.',
+      'timestamp': 31,
+      'timestamp_label': '[00:00:31]',
+      'timestamp_seconds': 31,
+      'tip': "Literally, I'm starting off the week with $16,000 in verbal commissions. I will have "
+             'to get those contracts signed.',
+      'title': '$16,000 Live Cold Calling Commission',
+      'url': 'https://www.youtube.com/watch?v=ieI6zKICpKo&t=31s',
+      'video_id': 'ieI6zKICpKo'},
+     {'author': 'Surplus Institute / David Church / Unclaimed Funds',
+      'channel': 'Surplus Institute / David Church / Unclaimed Funds',
+      'epistemic_status': 'attributed_practitioner_claim',
+      'markdown': '[00:07:30](https://www.youtube.com/watch?v=MsxVzoHQCNk&t=450s)',
+      'relevance': 'Verbatim practitioner testimony from Chapter Q8.',
+      'source_type': 'video_pro_tip',
+      'text': 'One of the things I explained to her later on is the ten percent, it has to come '
+              'out of the funds.',
+      'timestamp': 450,
+      'timestamp_label': '[00:07:30]',
+      'timestamp_seconds': 450,
+      'tip': 'One of the things I explained to her later on is the ten percent, it has to come out '
+             'of the funds.',
+      'title': 'Surplus Funds The PERFECT Cold Call!',
+      'url': 'https://www.youtube.com/watch?v=MsxVzoHQCNk&t=450s',
+      'video_id': 'MsxVzoHQCNk'},
+     {'author': 'Surplus Funds 101',
+      'channel': 'Surplus Funds 101',
+      'epistemic_status': 'attributed_practitioner_claim',
+      'markdown': '[00:05:09](https://www.youtube.com/watch?v=smhFDkvMwkM&t=309s)',
+      'relevance': 'Verbatim practitioner testimony from Chapter Q8.',
+      'source_type': 'video_pro_tip',
+      'text': "A lot of these accounts that you guys are gonna get, they're not gonna come in on "
+              'the very first contact point. Most of them are gonna be contact point three to '
+              'five.',
+      'timestamp': 309,
+      'timestamp_label': '[00:05:09]',
+      'timestamp_seconds': 309,
+      'tip': "A lot of these accounts that you guys are gonna get, they're not gonna come in on "
+             'the very first contact point. Most of them are gonna be contact point three to five.',
+      'title': 'Best Cold Calling Script For Surplus Funds. overage syndicate surplus funds cold '
+               'calling',
+      'url': 'https://www.youtube.com/watch?v=smhFDkvMwkM&t=309s',
+      'video_id': 'smhFDkvMwkM'},
+     {'author': 'Spencer Vann',
+      'channel': 'Spencer Vann',
+      'epistemic_status': 'attributed_practitioner_claim',
+      'markdown': '[00:13:05](https://www.youtube.com/watch?v=ZEobF_ck678&t=785s)',
+      'relevance': 'Verbatim practitioner testimony from Chapter Q8.',
+      'source_type': 'video_pro_tip',
+      'text': 'Stay on topic, be the expert, be confident, and ask great questions.',
+      'timestamp': 785,
+      'timestamp_label': '[00:13:05]',
+      'timestamp_seconds': 785,
+      'tip': 'Stay on topic, be the expert, be confident, and ask great questions.',
+      'title': 'Surplus Fund Cold Calls: How to ACTUALLY close deals (99% have no clue)',
+      'url': 'https://www.youtube.com/watch?v=ZEobF_ck678&t=785s',
+      'video_id': 'ZEobF_ck678'},
+     {'author': 'Money Making Juggernaut',
+      'channel': 'Money Making Juggernaut',
+      'epistemic_status': 'attributed_practitioner_claim',
+      'markdown': '[00:06:19](https://www.youtube.com/watch?v=DMdtmrWAO6c&t=379s)',
+      'relevance': 'Verbatim practitioner testimony from Chapter Q8.',
+      'source_type': 'video_pro_tip',
+      'text': "A cold call is not a friendship, and it's also not a lecture. It should be a "
+              'doorway.',
+      'timestamp': 379,
+      'timestamp_label': '[00:06:19]',
+      'timestamp_seconds': 379,
+      'tip': "A cold call is not a friendship, and it's also not a lecture. It should be a "
+             'doorway.',
+      'title': 'Surplus Funds Recovery Cold Calling - STEP-BY-STEP SCRIPT',
+      'url': 'https://www.youtube.com/watch?v=DMdtmrWAO6c&t=379s',
+      'video_id': 'DMdtmrWAO6c'},
+     {'author': 'Spencer Vann',
+      'channel': 'Spencer Vann',
+      'epistemic_status': 'attributed_practitioner_claim',
+      'markdown': '[00:01:04](https://www.youtube.com/watch?v=JjEdRqLg0Ug&t=64s)',
+      'relevance': 'Verbatim practitioner testimony from Chapter Q8.',
+      'source_type': 'video_pro_tip',
+      'text': "One of the rules I always live by when I'm making cold calls is to always have your "
+              'script in front of you.',
+      'timestamp': 64,
+      'timestamp_label': '[00:01:04]',
+      'timestamp_seconds': 64,
+      'tip': "One of the rules I always live by when I'm making cold calls is to always have your "
+             'script in front of you.',
+      'title': 'COLD CALLING LIVE (Deal on the first Call!)',
+      'url': 'https://www.youtube.com/watch?v=JjEdRqLg0Ug&t=64s',
+      'video_id': 'JjEdRqLg0Ug'},
+     {'author': 'Money Making Juggernaut',
+      'channel': 'Money Making Juggernaut',
+      'epistemic_status': 'attributed_practitioner_claim',
+      'markdown': '[00:04:31](https://www.youtube.com/watch?v=MbdEoM3KDC0&t=271s)',
+      'relevance': 'Verbatim practitioner testimony from Chapter Q8.',
+      'source_type': 'video_pro_tip',
+      'text': "On average, after you send out the documents, you're going to have to follow up 3 "
+              'to 10 times before you actually get those signed documents back.',
+      'timestamp': 271,
+      'timestamp_label': '[00:04:31]',
+      'timestamp_seconds': 271,
+      'tip': "On average, after you send out the documents, you're going to have to follow up 3 to "
+             '10 times before you actually get those signed documents back.',
+      'title': 'How to cold call Surplus funds part 2!',
+      'url': 'https://www.youtube.com/watch?v=MbdEoM3KDC0&t=271s',
+      'video_id': 'MbdEoM3KDC0'},
+     {'author': "Bob Diamond - America's Tax Sale Attorney",
+      'channel': "Bob Diamond - America's Tax Sale Attorney",
+      'epistemic_status': 'attributed_practitioner_claim',
+      'markdown': '[00:01:18](https://www.youtube.com/watch?v=NOkg0U0k9Zs&t=78s)',
+      'relevance': 'Verbatim practitioner testimony from Chapter Q8.',
+      'source_type': 'video_pro_tip',
+      'text': "We've typically talked to them two or three times before they're signing up.",
+      'timestamp': 78,
+      'timestamp_label': '[00:01:18]',
+      'timestamp_seconds': 78,
+      'tip': "We've typically talked to them two or three times before they're signing up.",
+      'title': 'What Do You Say To A Person Owed An Overage? Learn From Bob Diamond',
+      'url': 'https://www.youtube.com/watch?v=NOkg0U0k9Zs&t=78s',
+      'video_id': 'NOkg0U0k9Zs'}],
+ 9: [{'author': "Bob Diamond - America's Tax Sale Attorney",
+      'channel': "Bob Diamond - America's Tax Sale Attorney",
+      'epistemic_status': 'attributed_practitioner_claim',
+      'markdown': '[00:02:41](https://www.youtube.com/watch?v=6ElvJMKfF9g&t=161s)',
+      'relevance': 'Practitioner testimony on administrative payment timing and the claim '
+                   'pipeline.',
+      'source_type': 'video_pro_tip',
+      'text': 'Typically, just allow yourself 3 to 5 months to get paid.',
+      'timestamp': 161,
+      'timestamp_label': '[00:02:41]',
+      'timestamp_seconds': 161,
+      'tip': 'Typically, just allow yourself 3 to 5 months to get paid.',
+      'title': 'How to Claim Tax Sale Overages',
+      'url': 'https://www.youtube.com/watch?v=6ElvJMKfF9g&t=161s',
+      'video_id': '6ElvJMKfF9g'},
+     {'author': 'claimtaxsaleoverages',
+      'channel': 'claimtaxsaleoverages',
+      'epistemic_status': 'attributed_practitioner_claim',
+      'markdown': '[00:02:25](https://www.youtube.com/watch?v=e309errLsBw&t=145s)',
+      'relevance': 'Practitioner testimony on the consequence of missing the reclaiming deadline.',
+      'source_type': 'video_pro_tip',
+      'text': 'If you miss this deadline, you may forfeit your right to reclaim the funds.',
+      'timestamp': 145,
+      'timestamp_label': '[00:02:25]',
+      'timestamp_seconds': 145,
+      'tip': 'If you miss this deadline, you may forfeit your right to reclaim the funds.',
+      'title': 'Claim Tax Sale Overages/Surplus Funds - Step-by-Step Guide',
+      'url': 'https://www.youtube.com/watch?v=e309errLsBw&t=145s',
+      'video_id': 'e309errLsBw'},
+     {'author': 'Money Making Juggernaut',
+      'channel': 'Money Making Juggernaut',
+      'epistemic_status': 'attributed_practitioner_claim',
+      'markdown': '[00:04:36](https://www.youtube.com/watch?v=F4T35UFWesQ&t=276s)',
+      'relevance': 'Practitioner testimony on the three-document attorney-free filing framework.',
+      'source_type': 'video_pro_tip',
+      'text': 'We need the agreement form, we need the claim form, and we need the payment '
+              'directional form.',
+      'timestamp': 276,
+      'timestamp_label': '[00:04:36]',
+      'timestamp_seconds': 276,
+      'tip': 'We need the agreement form, we need the claim form, and we need the payment '
+             'directional form.',
+      'title': 'How To File A Surplus Funds Claim WITHOUT an Attorney (3 Things)',
+      'url': 'https://www.youtube.com/watch?v=F4T35UFWesQ&t=276s',
+      'video_id': 'F4T35UFWesQ'},
+     {'author': 'Alfred Taren',
+      'channel': 'Alfred Taren',
+      'epistemic_status': 'attributed_practitioner_claim',
+      'markdown': '[00:00:46](https://www.youtube.com/watch?v=ouYE5P3UJdQ&t=46s)',
+      'relevance': 'Practitioner testimony on the three questions determining the claim procedure.',
+      'source_type': 'video_pro_tip',
+      'text': "Who's holding the money? What do they require to release it? And how long do you "
+              'have to file.',
+      'timestamp': 46,
+      'timestamp_label': '[00:00:46]',
+      'timestamp_seconds': 46,
+      'tip': "Who's holding the money? What do they require to release it? And how long do you "
+             'have to file.',
+      'title': 'Surplus Funds Claim Process Explained (What Nobody Tells You)',
+      'url': 'https://www.youtube.com/watch?v=ouYE5P3UJdQ&t=46s',
+      'video_id': 'ouYE5P3UJdQ'},
+     {'author': 'Noble Notary & Legal Document Preparers',
+      'channel': 'Noble Notary & Legal Document Preparers',
+      'epistemic_status': 'attributed_practitioner_claim',
+      'markdown': '[00:03:07](https://www.youtube.com/watch?v=DM0kjEZlbSk&t=187s)',
+      'relevance': 'Practitioner testimony on the exact sale identifiers entered on a Florida '
+                   'claim form.',
+      'source_type': 'video_pro_tip',
+      'text': 'You absolutely must enter the exact tax deed number, the parcel or real estate '
+              'number, and the specific date of sale.',
+      'timestamp': 187,
+      'timestamp_label': '[00:03:07]',
+      'timestamp_seconds': 187,
+      'tip': 'You absolutely must enter the exact tax deed number, the parcel or real estate '
+             'number, and the specific date of sale.',
+      'title': 'Florida Tax Deed Surplus Claim Forms:  How to Claim Excess Funds',
+      'url': 'https://www.youtube.com/watch?v=DM0kjEZlbSk&t=187s',
+      'video_id': 'DM0kjEZlbSk'},
+     {'author': 'Surplus Institute / David Church / Unclaimed Funds',
+      'channel': 'Surplus Institute / David Church / Unclaimed Funds',
+      'epistemic_status': 'attributed_practitioner_claim',
+      'markdown': '[00:02:46](https://www.youtube.com/watch?v=A47AbsTHlkY&t=166s)',
+      'relevance': 'Practitioner testimony on live agreement walkthroughs and concrete next-step '
+                   'instructions.',
+      'source_type': 'video_pro_tip',
+      'text': "You send it to them when they're at the computer. You read it with them, you go "
+              'over it with them.',
+      'timestamp': 166,
+      'timestamp_label': '[00:02:46]',
+      'timestamp_seconds': 166,
+      'tip': "You send it to them when they're at the computer. You read it with them, you go over "
+             'it with them.',
+      'title': 'State Funds + Surplus Funds Contracts Tutorial Breakdown',
+      'url': 'https://www.youtube.com/watch?v=A47AbsTHlkY&t=166s',
+      'video_id': 'A47AbsTHlkY'},
+     {'author': 'Sterling Funds Discovery',
+      'channel': 'Sterling Funds Discovery',
+      'epistemic_status': 'attributed_practitioner_claim',
+      'markdown': '[00:00:04](https://www.youtube.com/watch?v=KO0CEgjhd4Q&t=4s)',
+      'relevance': 'Practitioner testimony on county variation and claimant-specific filing '
+                   'complexity.',
+      'source_type': 'video_pro_tip',
+      'text': 'The process varies depending on each claimant situation, and the requirements for '
+              'filing a claim change from county to county.',
+      'timestamp': 4,
+      'timestamp_label': '[00:00:04]',
+      'timestamp_seconds': 4,
+      'tip': 'The process varies depending on each claimant situation, and the requirements for '
+             'filing a claim change from county to county.',
+      'title': 'What is the Tax Deed Surplus Claims Process?',
+      'url': 'https://www.youtube.com/watch?v=KO0CEgjhd4Q&t=4s',
+      'video_id': 'KO0CEgjhd4Q'},
+     {'author': 'Overage Acquisition',
+      'channel': 'Overage Acquisition',
+      'epistemic_status': 'attributed_practitioner_claim',
+      'markdown': '[00:02:33](https://www.youtube.com/watch?v=XWtB0RDJ1wE&t=153s)',
+      'relevance': 'Practitioner testimony on replacing a generic assignment with a '
+                   'county-required form.',
+      'source_type': 'video_pro_tip',
+      'text': 'I have my own assignment forms, but Los Angeles requires that they use their forms.',
+      'timestamp': 153,
+      'timestamp_label': '[00:02:33]',
+      'timestamp_seconds': 153,
+      'tip': 'I have my own assignment forms, but Los Angeles requires that they use their forms.',
+      'title': 'Surplus Funds Recovery: Top 3 Documents You Must Have (2025 Update)',
+      'url': 'https://www.youtube.com/watch?v=XWtB0RDJ1wE&t=153s',
+      'video_id': 'XWtB0RDJ1wE'},
+     {'author': 'SurplusFundsRiches',
+      'channel': 'SurplusFundsRiches',
+      'epistemic_status': 'attributed_practitioner_claim',
+      'markdown': '[00:02:46](https://www.youtube.com/watch?v=8d9ubOXmCPA&t=166s)',
+      'relevance': 'Practitioner testimony on mobile-notary return shipping and reducing client '
+                   'effort.',
+      'source_type': 'video_pro_tip',
+      'text': 'We send a label out, a preprinted label, actually email the label so the mobile '
+              'notary can print it out and send it back FedEx or UPS.',
+      'timestamp': 166,
+      'timestamp_label': '[00:02:46]',
+      'timestamp_seconds': 166,
+      'tip': 'We send a label out, a preprinted label, actually email the label so the mobile '
+             'notary can print it out and send it back FedEx or UPS.',
+      'title': 'Surplus Funds: Use Mobile Notary?',
+      'url': 'https://www.youtube.com/watch?v=8d9ubOXmCPA&t=166s',
+      'video_id': '8d9ubOXmCPA'},
+     {'author': 'Money Making Juggernaut',
+      'channel': 'Money Making Juggernaut',
+      'epistemic_status': 'attributed_practitioner_claim',
+      'markdown': '[00:02:04](https://www.youtube.com/watch?v=JLCbKq99rGE&t=124s)',
+      'relevance': 'Practitioner testimony on verifying original-document and submission '
+                   'requirements.',
+      'source_type': 'video_pro_tip',
+      'text': 'Verify how they accept their claims. Do they require originals? Very important that '
+              'you understand that.',
+      'timestamp': 124,
+      'timestamp_label': '[00:02:04]',
+      'timestamp_seconds': 124,
+      'tip': 'Verify how they accept their claims. Do they require originals? Very important that '
+             'you understand that.',
+      'title': "Surplus Funds Recovery: ALL THE DOCUMENTS You'll Need, Listed.",
+      'url': 'https://www.youtube.com/watch?v=JLCbKq99rGE&t=124s',
+      'video_id': 'JLCbKq99rGE'},
+     {'author': 'TSYon Notary Services -    Winners YOUniversity',
+      'channel': 'TSYon Notary Services -    Winners YOUniversity',
+      'epistemic_status': 'attributed_practitioner_claim',
+      'markdown': '[00:09:23](https://www.youtube.com/watch?v=EoPxW-Qz9Ck&t=563s)',
+      'relevance': 'Firsthand practitioner testimony on overlooked ink instructions and avoidable '
+                   'repeat signing.',
+      'source_type': 'video_pro_tip',
+      'text': "I wouldn't see that they wanted it in blue ink or in black ink, and I would sign it "
+              'in the opposite.',
+      'timestamp': 563,
+      'timestamp_label': '[00:09:23]',
+      'timestamp_seconds': 563,
+      'tip': "I wouldn't see that they wanted it in blue ink or in black ink, and I would sign it "
+             'in the opposite.',
+      'title': 'HOW TO NOTARIZE A SURPLUS FUNDS AFFIDAVIT',
+      'url': 'https://www.youtube.com/watch?v=EoPxW-Qz9Ck&t=563s',
+      'video_id': 'EoPxW-Qz9Ck'},
+     {'author': 'Overage Acquisition',
+      'channel': 'Overage Acquisition',
+      'epistemic_status': 'attributed_practitioner_claim',
+      'markdown': '[00:03:18](https://www.youtube.com/watch?v=X_Oq8vv4j_c&t=198s)',
+      'relevance': 'Practitioner testimony on tracked submission, claimant visibility, and county '
+                   'follow-up.',
+      'source_type': 'video_pro_tip',
+      'text': "I'm going to give the claimant a USPS tracking number showing that I sent the "
+              'claim.',
+      'timestamp': 198,
+      'timestamp_label': '[00:03:18]',
+      'timestamp_seconds': 198,
+      'tip': "I'm going to give the claimant a USPS tracking number showing that I sent the claim.",
+      'title': 'Got a Surplus Funds Contract? Here’s Your Next Move',
+      'url': 'https://www.youtube.com/watch?v=X_Oq8vv4j_c&t=198s',
+      'video_id': 'X_Oq8vv4j_c'},
+     {'author': 'Nick Fullmer- Overage Syndicate',
+      'channel': 'Nick Fullmer- Overage Syndicate',
+      'epistemic_status': 'attributed_practitioner_claim',
+      'markdown': '[00:02:50](https://www.youtube.com/watch?v=GjL_3X5KneE&t=170s)',
+      'relevance': 'Firsthand practitioner testimony on remote notarization cost and elapsed time.',
+      'source_type': 'video_pro_tip',
+      'text': 'It cost me 25 bucks to do, and it was less than 20 minutes.',
+      'timestamp': 170,
+      'timestamp_label': '[00:02:50]',
+      'timestamp_seconds': 170,
+      'tip': 'It cost me 25 bucks to do, and it was less than 20 minutes.',
+      'title': "Notary's & Surplus Funds, Necessary?",
+      'url': 'https://www.youtube.com/watch?v=GjL_3X5KneE&t=170s',
+      'video_id': 'GjL_3X5KneE'},
+     {'author': 'Surplus Systems',
+      'channel': 'Surplus Systems',
+      'epistemic_status': 'attributed_practitioner_claim',
+      'markdown': '[00:03:08](https://www.youtube.com/watch?v=TA1G1Ejrb0M&t=188s)',
+      'relevance': 'Practitioner testimony on documenting submissions and immediately updating the '
+                   'case tracker.',
+      'source_type': 'video_pro_tip',
+      'text': "Save receipts, tracking information when it's available. Record the date of each "
+              'important action. Keep copies of the submitted documents.',
+      'timestamp': 188,
+      'timestamp_label': '[00:03:08]',
+      'timestamp_seconds': 188,
+      'tip': "Save receipts, tracking information when it's available. Record the date of each "
+             'important action. Keep copies of the submitted documents.',
+      'title': 'What Happens After Someone Signs? | Surplus Funds Recovery',
+      'url': 'https://www.youtube.com/watch?v=TA1G1Ejrb0M&t=188s',
+      'video_id': 'TA1G1Ejrb0M'},
+     {'author': 'Money Making Juggernaut',
+      'channel': 'Money Making Juggernaut',
+      'epistemic_status': 'attributed_practitioner_claim',
+      'markdown': '[00:12:31](https://www.youtube.com/watch?v=MVCNlj7HQBQ&t=751s)',
+      'relevance': "Practitioner report of a student's prolonged claim bottleneck caused by "
+                   'missing deceased-owner evidence.',
+      'source_type': 'video_pro_tip',
+      'text': 'My student, Christian, sat stuck in stalemate for over a year on a $138,000 deal, '
+              'all because of one missing death certificate.',
+      'timestamp': 751,
+      'timestamp_label': '[00:12:31]',
+      'timestamp_seconds': 751,
+      'tip': 'My student, Christian, sat stuck in stalemate for over a year on a $138,000 deal, '
+             'all because of one missing death certificate.',
+      'title': 'Surplus Funds Recovery: COMPLETE Document List (2026 UPDATE)',
+      'url': 'https://www.youtube.com/watch?v=MVCNlj7HQBQ&t=751s',
+      'video_id': 'MVCNlj7HQBQ'},
+     {'author': 'Nick Fullmer- Overage Syndicate',
+      'channel': 'Nick Fullmer- Overage Syndicate',
+      'epistemic_status': 'attributed_practitioner_claim',
+      'markdown': '[00:02:54](https://www.youtube.com/watch?v=-KBy24CSPOw&t=174s)',
+      'relevance': 'Firsthand practitioner testimony on county-specific assignment language in a '
+                   'live filing.',
+      'source_type': 'video_pro_tip',
+      'text': 'They have a specific assignment form that we are using that has very specific '
+              'verbiage in it.',
+      'timestamp': 174,
+      'timestamp_label': '[00:02:54]',
+      'timestamp_seconds': 174,
+      'tip': 'They have a specific assignment form that we are using that has very specific '
+             'verbiage in it.',
+      'title': 'What Paperwork Do I File When Claiming Surplus Funds, Excess Proceeds, and Tax '
+               'Sale Overages',
+      'url': 'https://www.youtube.com/watch?v=-KBy24CSPOw&t=174s',
+      'video_id': '-KBy24CSPOw'}],
+ 10: [{'author': 'Attorney Jack',
+       'channel': 'Attorney Jack',
        'epistemic_status': 'attributed_practitioner_claim',
-       'markdown': '[00:03:00](https://www.youtube.com/watch?v=01plOr9pFjQ&t=180s)',
-       'relevance': 'Attributed practitioner commentary on county PDF ingestion, CRM pipeline '
-                    'tracking, deadline automation, and repeatable deal-desk operations.',
+       'markdown': '[00:01:03](https://www.youtube.com/watch?v=KKKIgl--DNo&t=63s)',
+       'relevance': 'Practitioner testimony on the auction spread and potential owner or heir '
+                    'recovery.',
        'source_type': 'video_pro_tip',
-       'text': 'If you want to generate custom queries or process large data files, tools like '
-               'ChatGPT can assist in writing scripts or parsing data. For example, prompt: '
-               '“Help me write a Python script to extract owner names and surplus amounts from '
-               'a tax sale results PDF.',
-       'timestamp': 180,
-       'timestamp_label': '[00:03:00]',
-       'timestamp_seconds': 180,
-       'tip': 'If you want to generate custom queries or process large data files, tools like '
-              'ChatGPT can assist in writing scripts or parsing data. For example, prompt: '
-              '“Help me write a Python script to extract owner names and surplus amounts from '
-              'a tax sale results PDF.',
-       'title': 'How to Start a Tax Overage Business | Complete and Easy to Follow Guide '
-                '(BizMove)',
-       'url': 'https://www.youtube.com/watch?v=01plOr9pFjQ&t=180s',
-       'video_id': '01plOr9pFjQ'},
-      {'author': 'Surplus Funds List',
-       'channel': 'Surplus Funds List',
+       'text': 'If the amount of the funds on the final bid of the auction are greater than what '
+               'was owed on the property, those excess funds are due back to the property owner or '
+               'their heirs.',
+       'timestamp': 63,
+       'timestamp_label': '[00:01:03]',
+       'timestamp_seconds': 63,
+       'tip': 'If the amount of the funds on the final bid of the auction are greater than what '
+              'was owed on the property, those excess funds are due back to the property owner or '
+              'their heirs.',
+       'title': 'Foreclosure - Surplus Funds Recovery - Attorney Assistance',
+       'url': 'https://www.youtube.com/watch?v=KKKIgl--DNo&t=63s',
+       'video_id': 'KKKIgl--DNo'},
+      {'author': 'Money Making Juggernaut',
+       'channel': 'Money Making Juggernaut',
        'epistemic_status': 'attributed_practitioner_claim',
-       'markdown': '[00:02:58](https://www.youtube.com/watch?v=lOnYUxDdOdI&t=178s)',
-       'relevance': 'Attributed practitioner commentary on county PDF ingestion, CRM pipeline '
-                    'tracking, deadline automation, and repeatable deal-desk operations.',
+       'markdown': '[00:03:37](https://www.youtube.com/watch?v=eLDEl33zxwY&t=217s)',
+       'relevance': 'Firsthand testimony on the Lee County filing and payment timeline.',
        'source_type': 'video_pro_tip',
-       'text': "That's all it takes to put the leads inside your workspace from our system. "
-               "You don't have to download, you don't have to import back.",
-       'timestamp': 178,
-       'timestamp_label': '[00:02:58]',
-       'timestamp_seconds': 178,
-       'tip': "That's all it takes to put the leads inside your workspace from our system. You "
-              "don't have to download, you don't have to import back.",
-       'title': 'How to Run a Surplus Funds Business with One CRM: Full 2026 Walkthrough '
-                '(Surplus Funds List)',
-       'url': 'https://www.youtube.com/watch?v=lOnYUxDdOdI&t=178s',
-       'video_id': 'lOnYUxDdOdI'},
+       'text': 'We ended up submitting the claim within the first month of the property being '
+               'foreclosed. In Florida they do have a 120-day rule before the county even reviews. '
+               '120 days went by, then after that it took us about four weeks to receive payment.',
+       'timestamp': 217,
+       'timestamp_label': '[00:03:37]',
+       'timestamp_seconds': 217,
+       'tip': 'We ended up submitting the claim within the first month of the property being '
+              'foreclosed. In Florida they do have a 120-day rule before the county even reviews. '
+              '120 days went by, then after that it took us about four weeks to receive payment.',
+       'title': 'Picking Up a Surplus Funds Recovery Check LIVE (tax deed surplus check)',
+       'url': 'https://www.youtube.com/watch?v=eLDEl33zxwY&t=217s',
+       'video_id': 'eLDEl33zxwY'},
       {'author': 'Dreams & Dollars: The Everyday Entrepreneur',
        'channel': 'Dreams & Dollars: The Everyday Entrepreneur',
        'epistemic_status': 'attributed_practitioner_claim',
        'markdown': '[00:01:56](https://www.youtube.com/watch?v=pSC1FfAjNuo&t=116s)',
-       'relevance': 'Attributed practitioner commentary on county PDF ingestion, CRM pipeline '
-                    'tracking, deadline automation, and repeatable deal-desk operations.',
+       'relevance': 'Practitioner instructions for recording the basic claim research fields.',
        'source_type': 'video_pro_tip',
-       'text': 'You can also call the county clerk or trustee handling the sale. Search for '
-               'reports of sale, case numbers, and any surplus notices tied to your address. '
-               'Create a simple tracking sheet. Sale price, debt, the calculated surplus, and '
+       'text': 'Create a simple tracking sheet. Sale price, debt, the calculated surplus, and '
                'filing deadlines.',
        'timestamp': 116,
        'timestamp_label': '[00:01:56]',
        'timestamp_seconds': 116,
-       'tip': 'You can also call the county clerk or trustee handling the sale. Search for '
-              'reports of sale, case numbers, and any surplus notices tied to your address. '
-              'Create a simple tracking sheet. Sale price, debt, the calculated surplus, and '
+       'tip': 'Create a simple tracking sheet. Sale price, debt, the calculated surplus, and '
               'filing deadlines.',
        'title': 'Beginners Guide to Surplus Funds: How to Claim Money After Foreclosure- '
-                'Step-by-Step Tutorial (Dreams & Dollars: The Everyday Entrepreneur)',
+                'Step-by-Step Tutorial',
        'url': 'https://www.youtube.com/watch?v=pSC1FfAjNuo&t=116s',
        'video_id': 'pSC1FfAjNuo'},
-      {'author': 'Surplus Funds 101',
-       'channel': 'Surplus Funds 101',
-       'epistemic_status': 'attributed_practitioner_claim',
-       'markdown': '[00:05:26](https://www.youtube.com/watch?v=h4Qz3EvAAnw&t=326s)',
-       'relevance': 'Attributed practitioner commentary on county PDF ingestion, CRM pipeline '
-                    'tracking, deadline automation, and repeatable deal-desk operations.',
-       'source_type': 'video_pro_tip',
-       'text': 'That same process doing it manually would take hours, probably days to do for '
-               'the exact same amount of data. And so, I just like the speed the bulk leads '
-               'give you. So those are the two big differences between the lead types.',
-       'timestamp': 326,
-       'timestamp_label': '[00:05:26]',
-       'timestamp_seconds': 326,
-       'tip': 'That same process doing it manually would take hours, probably days to do for '
-              'the exact same amount of data. And so, I just like the speed the bulk leads '
-              'give you. So those are the two big differences between the lead types.',
-       'title': 'Unclaimed Funds: Lead Sourcing Masterclass (Surplus Funds 101)',
-       'url': 'https://www.youtube.com/watch?v=h4Qz3EvAAnw&t=326s',
-       'video_id': 'h4Qz3EvAAnw'},
-      {'author': "Bob Diamond - America's Tax Sale Attorney",
-       'channel': "Bob Diamond - America's Tax Sale Attorney",
-       'epistemic_status': 'attributed_practitioner_claim',
-       'markdown': '[00:01:06](https://www.youtube.com/watch?v=4O5XeYwMAts&t=66s)',
-       'relevance': 'Attributed practitioner commentary on county PDF ingestion, CRM pipeline '
-                    'tracking, deadline automation, and repeatable deal-desk operations.',
-       'source_type': 'video_pro_tip',
-       'text': "You'll see all of those terms and just click on it. And typically there's "
-               'either a PDF document or an Excel spreadsheet where it lists all the monies '
-               "that they're holding, and that's the overages money.",
-       'timestamp': 66,
-       'timestamp_label': '[00:01:06]',
-       'timestamp_seconds': 66,
-       'tip': "You'll see all of those terms and just click on it. And typically there's "
-              'either a PDF document or an Excel spreadsheet where it lists all the monies '
-              "that they're holding, and that's the overages money.",
-       'title': "How To Find Tax Sale Overages (Bob Diamond - America's Tax Sale Attorney)",
-       'url': 'https://www.youtube.com/watch?v=4O5XeYwMAts&t=66s',
-       'video_id': '4O5XeYwMAts'},
       {'author': 'Haynes Law Group',
        'channel': 'Haynes Law Group',
        'epistemic_status': 'attributed_practitioner_claim',
-       'markdown': '[00:00:50](https://www.youtube.com/watch?v=Uj-vrJWHKQo&t=50s)',
-       'relevance': 'Attributed practitioner commentary on county PDF ingestion, CRM pipeline '
-                    'tracking, deadline automation, and repeatable deal-desk operations.',
+       'markdown': '[00:03:00](https://www.youtube.com/watch?v=Uj-vrJWHKQo&t=180s)',
+       'relevance': 'Firsthand testimony on the reported trial ruling concerning later city liens.',
        'source_type': 'video_pro_tip',
-       'text': 'Um this is an old case but the surplus was just like I stated litigated last '
-               "week and we so that was a you know we're in April of 2025. This is a case that "
-               'was filed in 2011. Um at the time the case was filed in 2011, the city had a '
-               'lean on the property.',
-       'timestamp': 50,
-       'timestamp_label': '[00:00:50]',
-       'timestamp_seconds': 50,
-       'tip': 'Um this is an old case but the surplus was just like I stated litigated last '
-              "week and we so that was a you know we're in April of 2025. This is a case that "
-              'was filed in 2011. Um at the time the case was filed in 2011, the city had a '
-              'lean on the property.',
-       'title': 'Florida Foreclosure Surplus Funds Update: What is a Subordinate Lien Holder? '
-                '(Haynes Law Group)',
-       'url': 'https://www.youtube.com/watch?v=Uj-vrJWHKQo&t=50s',
+       'text': 'Those liens that were filed after the complaint was filed were not shown to be '
+               'encumbrances on the face of the pleadings, the face of the complaint. The judge '
+               'agreed.',
+       'timestamp': 180,
+       'timestamp_label': '[00:03:00]',
+       'timestamp_seconds': 180,
+       'tip': 'Those liens that were filed after the complaint was filed were not shown to be '
+              'encumbrances on the face of the pleadings, the face of the complaint. The judge '
+              'agreed.',
+       'title': 'Florida Foreclosure Surplus Funds Update: What is a Subordinate Lien Holder?',
+       'url': 'https://www.youtube.com/watch?v=Uj-vrJWHKQo&t=180s',
        'video_id': 'Uj-vrJWHKQo'},
-      {'author': 'Nick Fullmer- Overage Syndicate',
-       'channel': 'Nick Fullmer- Overage Syndicate',
-       'epistemic_status': 'attributed_practitioner_claim',
-       'markdown': '[00:11:34](https://www.youtube.com/watch?v=vd__NHmQYgM&t=694s)',
-       'relevance': 'Attributed practitioner commentary on county PDF ingestion, CRM pipeline '
-                    'tracking, deadline automation, and repeatable deal-desk operations.',
-       'source_type': 'video_pro_tip',
-       'text': "And long story short, we ended up collecting on this lady's money. And, you "
-               'know, that was a great case because she left she left us like a nice review. '
-               'This was this was the review she left.',
-       'timestamp': 694,
-       'timestamp_label': '[00:11:34]',
-       'timestamp_seconds': 694,
-       'tip': "And long story short, we ended up collecting on this lady's money. And, you "
-              'know, that was a great case because she left she left us like a nice review. '
-              'This was this was the review she left.',
-       'title': '8 Surplus Funds Deals Within 3 Months of Starting The Business (Nick Fullmer- '
-                'Overage Syndicate)',
-       'url': 'https://www.youtube.com/watch?v=vd__NHmQYgM&t=694s',
-       'video_id': 'vd__NHmQYgM'},
-      {'author': 'Courtney Fricke',
-       'channel': 'Courtney Fricke',
-       'epistemic_status': 'attributed_practitioner_claim',
-       'markdown': '[00:00:54](https://www.youtube.com/watch?v=W5g3Gia5jX4&t=54s)',
-       'relevance': 'Attributed practitioner commentary on county PDF ingestion, CRM pipeline '
-                    'tracking, deadline automation, and repeatable deal-desk operations.',
-       'source_type': 'video_pro_tip',
-       'text': "'s talk about how deals come from one of three sources. So, the first source "
-               "is data list. And when I talk about a data list, I'm talking like a "
-               "spreadsheet of a lot of data that's, you know, you then have to sort through "
-               'and then start getting in touch with those owners.',
-       'timestamp': 54,
-       'timestamp_label': '[00:00:54]',
-       'timestamp_seconds': 54,
-       'tip': "'s talk about how deals come from one of three sources. So, the first source is "
-              "data list. And when I talk about a data list, I'm talking like a spreadsheet of "
-              "a lot of data that's, you know, you then have to sort through and then start "
-              'getting in touch with those owners.',
-       'title': 'How I Actually Find Curative Title Leads (Courtney Fricke)',
-       'url': 'https://www.youtube.com/watch?v=W5g3Gia5jX4&t=54s',
-       'video_id': 'W5g3Gia5jX4'},
       {'author': 'Surplus Funds Secrets',
        'channel': 'Surplus Funds Secrets',
        'epistemic_status': 'attributed_practitioner_claim',
-       'markdown': '[00:01:41](https://www.youtube.com/watch?v=HtbOqZK2He8&t=101s)',
-       'relevance': 'Attributed practitioner commentary on county PDF ingestion, CRM pipeline '
-                    'tracking, deadline automation, and repeatable deal-desk operations.',
+       'markdown': '[00:00:16](https://www.youtube.com/watch?v=uyZ7HIGnVzE&t=16s)',
+       'relevance': 'Practitioner reading of the Texas tax-sale fee restrictions.',
        'source_type': 'video_pro_tip',
-       'text': "If a person hears foreclosure right off the bat, they usually think that's a "
-               'bad thing. They think debt, case, courts, banks, nothing too positive for '
-               "them. They pretty much think you're calling to collect money.",
-       'timestamp': 101,
-       'timestamp_label': '[00:01:41]',
-       'timestamp_seconds': 101,
-       'tip': "If a person hears foreclosure right off the bat, they usually think that's a "
-              'bad thing. They think debt, case, courts, banks, nothing too positive for them. '
-              "They pretty much think you're calling to collect money.",
-       'title': 'Why Most Surplus Funds Calls Fail (And What To Say Instead) (Surplus Funds '
-                'Secrets)',
-       'url': 'https://www.youtube.com/watch?v=HtbOqZK2He8&t=101s',
-       'video_id': 'HtbOqZK2He8'},
-      {'author': 'ohiocommerce',
-       'channel': 'ohiocommerce',
+       'text': 'A fee charged by an attorney may not exceed 25% or $1,000, whichever is less. A '
+               'person who is a non-attorney may not charge a fee to obtain excess proceeds.',
+       'timestamp': 16,
+       'timestamp_label': '[00:00:16]',
+       'timestamp_seconds': 16,
+       'tip': 'A fee charged by an attorney may not exceed 25% or $1,000, whichever is less. A '
+              'person who is a non-attorney may not charge a fee to obtain excess proceeds.',
+       'title': 'How to Claim Excess Proceeds in Texas (2026) — Step by Step',
+       'url': 'https://www.youtube.com/watch?v=uyZ7HIGnVzE&t=16s',
+       'video_id': 'uyZ7HIGnVzE'},
+      {'author': 'Lindsay & Jed | Boring Income',
+       'channel': 'Lindsay & Jed | Boring Income',
        'epistemic_status': 'attributed_practitioner_claim',
-       'markdown': '[00:09:01](https://www.youtube.com/watch?v=8nmo4S1v3Co&t=541s)',
-       'relevance': 'Attributed practitioner commentary on county PDF ingestion, CRM pipeline '
-                    'tracking, deadline automation, and repeatable deal-desk operations.',
+       'markdown': '[00:00:53](https://www.youtube.com/watch?v=oDaFv9pjGCI&t=53s)',
+       'relevance': 'Practitioner timing warning about preparation and processing near a deadline.',
        'source_type': 'video_pro_tip',
-       'text': "'s been a great experience for everyone to be able to know where they are in "
-               'the process. And with our new system, we have a new law that happened last '
-               'year. You may have heard about it. And so what does that mean to you? This is '
-               'a very important slide.',
-       'timestamp': 541,
-       'timestamp_label': '[00:09:01]',
-       'timestamp_seconds': 541,
-       'tip': "'s been a great experience for everyone to be able to know where they are in "
-              'the process. And with our new system, we have a new law that happened last '
-              'year. You may have heard about it. And so what does that mean to you? This is a '
-              'very important slide.',
-       'title': 'Ohio Unclaimed Funds: How to Claim Your Cash in 3 Steps (HB 96 Deadline '
-                'Explained) Webinar 2-5-2026 (ohiocommerce)',
-       'url': 'https://www.youtube.com/watch?v=8nmo4S1v3Co&t=541s',
-       'video_id': '8nmo4S1v3Co'},
-      {'author': 'Dexter Brown',
-       'channel': 'Dexter Brown',
+       'text': "Don't just sit on it until there's like 30 or 60 days left because claims "
+               'typically take 30 to 90 days to process depending on how busy the state is.',
+       'timestamp': 53,
+       'timestamp_label': '[00:00:53]',
+       'timestamp_seconds': 53,
+       'tip': "Don't just sit on it until there's like 30 or 60 days left because claims typically "
+              'take 30 to 90 days to process depending on how busy the state is.',
+       'title': 'How to make thousands with surplus funds recovery',
+       'url': 'https://www.youtube.com/watch?v=oDaFv9pjGCI&t=53s',
+       'video_id': 'oDaFv9pjGCI'},
+      {'author': 'Attorney Jack',
+       'channel': 'Attorney Jack',
        'epistemic_status': 'attributed_practitioner_claim',
-       'markdown': '[00:05:48](https://www.youtube.com/watch?v=0FZrtOY2H5w&t=348s)',
-       'relevance': 'Attributed practitioner commentary on county PDF ingestion, CRM pipeline '
-                    'tracking, deadline automation, and repeatable deal-desk operations.',
+       'markdown': '[00:02:31](https://www.youtube.com/watch?v=qc33fVKUnTU&t=151s)',
+       'relevance': 'Practitioner position on attorney involvement and local procedural barriers.',
        'source_type': 'video_pro_tip',
-       'text': "Actually look into the case because they can't legally start pulling dockets "
-               "and all that stuff without you or some like a family member knowing so you'll "
-               'be assigned on to say hey I acknowledge.',
-       'timestamp': 348,
-       'timestamp_label': '[00:05:48]',
-       'timestamp_seconds': 348,
-       'tip': "Actually look into the case because they can't legally start pulling dockets "
-              "and all that stuff without you or some like a family member knowing so you'll "
-              'be assigned on to say hey I acknowledge.',
-       'title': 'Live Call with client DEAL CLOSED | Surplus Funds Excess Funds Overages '
-                '(Dexter Brown)',
-       'url': 'https://www.youtube.com/watch?v=0FZrtOY2H5w&t=348s',
-       'video_id': '0FZrtOY2H5w'},
-      {'author': 'Surplus Funds 101',
-       'channel': 'Surplus Funds 101',
-       'epistemic_status': 'attributed_practitioner_claim',
-       'markdown': '[00:00:54](https://www.youtube.com/watch?v=ES6y4iF-bBM&t=54s)',
-       'relevance': 'Attributed practitioner commentary on county PDF ingestion, CRM pipeline '
-                    'tracking, deadline automation, and repeatable deal-desk operations.',
-       'source_type': 'video_pro_tip',
-       'text': "You just go click on the link below and it's an instant download. 're just "
-               'getting started to run your state funds business, the : Very first thing you '
-               'guys is a CRM stands for customer relationship software for you guys that are '
-               'brand new.',
-       'timestamp': 54,
-       'timestamp_label': '[00:00:54]',
-       'timestamp_seconds': 54,
-       'tip': "You just go click on the link below and it's an instant download. 're just "
-              'getting started to run your state funds business, the : Very first thing you '
-              'guys is a CRM stands for customer relationship software for you guys that are '
-              'brand new.',
-       'title': 'State Funds Tutorial: 5 Tech Tools For Your State Funds Business (Surplus '
-                'Funds 101)',
-       'url': 'https://www.youtube.com/watch?v=ES6y4iF-bBM&t=54s',
-       'video_id': 'ES6y4iF-bBM'},
-      {'author': 'Alfred Taren',
-       'channel': 'Alfred Taren',
-       'epistemic_status': 'attributed_practitioner_claim',
-       'markdown': '[00:00:21](https://www.youtube.com/watch?v=ouYE5P3UJdQ&t=21s)',
-       'relevance': 'Attributed practitioner commentary on county PDF ingestion, CRM pipeline '
-                    'tracking, deadline automation, and repeatable deal-desk operations.',
-       'source_type': 'video_pro_tip',
-       'text': "For context, I've done this since 2013, over 2,000 cases completed, and I "
-               'delivered over a hundred million dollars to families across the country. First '
-               'thing to understand, there is no such thing as the surplus funds claims '
-               'process.',
-       'timestamp': 21,
-       'timestamp_label': '[00:00:21]',
-       'timestamp_seconds': 21,
-       'tip': "For context, I've done this since 2013, over 2,000 cases completed, and I "
-              'delivered over a hundred million dollars to families across the country. First '
-              'thing to understand, there is no such thing as the surplus funds claims '
-              'process.',
-       'title': 'Surplus Funds Claim Process Explained (What Nobody Tells You) (Alfred Taren)',
-       'url': 'https://www.youtube.com/watch?v=ouYE5P3UJdQ&t=21s',
-       'video_id': 'ouYE5P3UJdQ'},
-      {'author': 'Money Making Juggernaut',
-       'channel': 'Money Making Juggernaut',
-       'epistemic_status': 'attributed_practitioner_claim',
-       'markdown': '[00:01:51](https://www.youtube.com/watch?v=lFoZDRAGylo&t=111s)',
-       'relevance': 'Attributed practitioner commentary on county PDF ingestion, CRM pipeline '
-                    'tracking, deadline automation, and repeatable deal-desk operations.',
-       'source_type': 'video_pro_tip',
-       'text': 'If you want to get paid consistently, you need to stack up your pipeline and '
-               'put in the work every single week. Surplus funds recovery depends on the '
-               'schedule of the court system, and payout time frames can vary. And when it '
-               'takes too long, people panic.',
-       'timestamp': 111,
-       'timestamp_label': '[00:01:51]',
-       'timestamp_seconds': 111,
-       'tip': 'If you want to get paid consistently, you need to stack up your pipeline and '
-              'put in the work every single week. Surplus funds recovery depends on the '
-              'schedule of the court system, and payout time frames can vary. And when it '
-              'takes too long, people panic.',
-       'title': 'How Much Money Can You *REALISTICALLY* Make With Surplus Funds Recovery '
-                '(Money Making Juggernaut)',
-       'url': 'https://www.youtube.com/watch?v=lFoZDRAGylo&t=111s',
-       'video_id': 'lFoZDRAGylo'},
-      {'author': 'Hutch & Holmes',
-       'channel': 'Hutch & Holmes',
-       'epistemic_status': 'attributed_practitioner_claim',
-       'markdown': '[00:00:52](https://www.youtube.com/watch?v=L2oKpjOoh20&t=52s)',
-       'relevance': 'Attributed practitioner commentary on county PDF ingestion, CRM pipeline '
-                    'tracking, deadline automation, and repeatable deal-desk operations.',
-       'source_type': 'video_pro_tip',
-       'text': 'You inform the person of the information that you found and that money is owed '
-               'to them. And then you will assist them with the process based on what your '
-               "state will allow you to do. Now, if you're a notary, you may be able to "
-               'notarize certain documents.',
-       'timestamp': 52,
-       'timestamp_label': '[00:00:52]',
-       'timestamp_seconds': 52,
-       'tip': 'You inform the person of the information that you found and that money is owed '
-              'to them. And then you will assist them with the process based on what your '
-              "state will allow you to do. Now, if you're a notary, you may be able to "
-              'notarize certain documents.',
-       'title': 'How to Recover Foreclosure Surplus Funds (3-Step System) (Hutch & Holmes)',
-       'url': 'https://www.youtube.com/watch?v=L2oKpjOoh20&t=52s',
-       'video_id': 'L2oKpjOoh20'}],
- 11: [{'author': 'Surplus Funds 101',
-       'channel': 'Surplus Funds 101',
-       'epistemic_status': 'attributed_practitioner_claim',
-       'markdown': '[00:03:19](https://www.youtube.com/watch?v=ASO1JUOWTjA&t=199s)',
-       'relevance': 'Attributed practitioner commentary on small-team division of labor across '
-                    'research VAs, acquisition specialists, and state-licensed co-counsel.',
-       'source_type': 'video_pro_tip',
-       'text': "I hire them, so I don't have to fire them as quickly. Another thing is the VA "
-               "doesn't show you pictures of their workstation.",
-       'timestamp': 199,
-       'timestamp_label': '[00:03:19]',
-       'timestamp_seconds': 199,
-       'tip': "I hire them, so I don't have to fire them as quickly. Another thing is the VA "
-              "doesn't show you pictures of their workstation.",
-       'title': 'State Funds Tutorial Virtual Assistants: Top 3 Hiring Mistakes While Growing '
-                'Your Surplus Business (Surplus Funds 101)',
-       'url': 'https://www.youtube.com/watch?v=ASO1JUOWTjA&t=199s',
-       'video_id': 'ASO1JUOWTjA'},
-      {'author': 'ohiocommerce',
-       'channel': 'ohiocommerce',
-       'epistemic_status': 'attributed_practitioner_claim',
-       'markdown': '[00:10:56](https://www.youtube.com/watch?v=8nmo4S1v3Co&t=656s)',
-       'relevance': 'Attributed practitioner commentary on small-team division of labor across '
-                    'research VAs, acquisition specialists, and state-licensed co-counsel.',
-       'source_type': 'video_pro_tip',
-       'text': "So, right now we do have 48,000 claims waiting to be processed. So, it's "
-               'important for you to understand that we are hiring more team members '
-               "internally to take care of everyone's claim and get them reviewed.",
-       'timestamp': 656,
-       'timestamp_label': '[00:10:56]',
-       'timestamp_seconds': 656,
-       'tip': "So, right now we do have 48,000 claims waiting to be processed. So, it's "
-              'important for you to understand that we are hiring more team members internally '
-              "to take care of everyone's claim and get them reviewed.",
-       'title': 'Ohio Unclaimed Funds: How to Claim Your Cash in 3 Steps (HB 96 Deadline '
-                'Explained) Webinar 2-5-2026 (ohiocommerce)',
-       'url': 'https://www.youtube.com/watch?v=8nmo4S1v3Co&t=656s',
-       'video_id': '8nmo4S1v3Co'},
-      {'author': 'Courtney Fricke',
-       'channel': 'Courtney Fricke',
-       'epistemic_status': 'attributed_practitioner_claim',
-       'markdown': '[00:12:44](https://www.youtube.com/watch?v=2agNOU2taXA&t=764s)',
-       'relevance': 'Attributed practitioner commentary on small-team division of labor across '
-                    'research VAs, acquisition specialists, and state-licensed co-counsel.',
-       'source_type': 'video_pro_tip',
-       'text': "You know we're very tra my acquisition team very very common. Uh we we buy a "
-               'lot of inherited properties like a lot. Um it is a problem in New Orleans. We '
-               "do have a lot of like intergenerational transfers that don't happen legally.",
-       'timestamp': 764,
-       'timestamp_label': '[00:12:44]',
-       'timestamp_seconds': 764,
-       'tip': "You know we're very tra my acquisition team very very common. Uh we we buy a "
-              'lot of inherited properties like a lot. Um it is a problem in New Orleans. We '
-              "do have a lot of like intergenerational transfers that don't happen legally.",
-       'title': 'Curative Title for Wholesalers: How He Turned a Dead Lead Into a Deal '
-                '(Courtney Fricke)',
-       'url': 'https://www.youtube.com/watch?v=2agNOU2taXA&t=764s',
-       'video_id': '2agNOU2taXA'},
-      {'author': 'Sternberg Law Group',
-       'channel': 'Sternberg Law Group',
-       'epistemic_status': 'attributed_practitioner_claim',
-       'markdown': '[00:02:19](https://www.youtube.com/watch?v=z6jQuGWdtDY&t=139s)',
-       'relevance': 'Attributed practitioner commentary on small-team division of labor across '
-                    'research VAs, acquisition specialists, and state-licensed co-counsel.',
-       'source_type': 'video_pro_tip',
-       'text': 'So, if the amount was 750,000, the payoffs between the first mortgage and the '
-               'second mortgage and your tax lien was 550, you need to hire an attorney, you '
-               'can call us, sternberglegalgroup.',
-       'timestamp': 139,
-       'timestamp_label': '[00:02:19]',
-       'timestamp_seconds': 139,
-       'tip': 'So, if the amount was 750,000, the payoffs between the first mortgage and the '
-              'second mortgage and your tax lien was 550, you need to hire an attorney, you '
-              'can call us, sternberglegalgroup.',
-       'title': 'Surplus Funds After Foreclosure Explained | What Homeowners Must Know | '
-                'Sternberg Law Group (Sternberg Law Group)',
-       'url': 'https://www.youtube.com/watch?v=z6jQuGWdtDY&t=139s',
-       'video_id': 'z6jQuGWdtDY'},
-      {'author': 'Surplus Funds List',
-       'channel': 'Surplus Funds List',
-       'epistemic_status': 'attributed_practitioner_claim',
-       'markdown': '[00:05:33](https://www.youtube.com/watch?v=lOnYUxDdOdI&t=333s)',
-       'relevance': 'Attributed practitioner commentary on small-team division of labor across '
-                    'research VAs, acquisition specialists, and state-licensed co-counsel.',
-       'source_type': 'video_pro_tip',
-       'text': 'The desk uh allows you to organize your tasks that you need to perform '
-               'throughout your day, whether overdue today or a coming, you can move them from '
-               'stages.',
-       'timestamp': 333,
-       'timestamp_label': '[00:05:33]',
-       'timestamp_seconds': 333,
-       'tip': 'The desk uh allows you to organize your tasks that you need to perform '
-              'throughout your day, whether overdue today or a coming, you can move them from '
-              'stages.',
-       'title': 'How to Run a Surplus Funds Business with One CRM: Full 2026 Walkthrough '
-                '(Surplus Funds List)',
-       'url': 'https://www.youtube.com/watch?v=lOnYUxDdOdI&t=333s',
-       'video_id': 'lOnYUxDdOdI'},
-      {'author': 'Surplus Institute / David Church / Unclaimed Funds',
-       'channel': 'Surplus Institute / David Church / Unclaimed Funds',
-       'epistemic_status': 'attributed_practitioner_claim',
-       'markdown': '[00:03:01](https://www.youtube.com/watch?v=alaKJIcbbLw&t=181s)',
-       'relevance': 'Attributed practitioner commentary on small-team division of labor across '
-                    'research VAs, acquisition specialists, and state-licensed co-counsel.',
-       'source_type': 'video_pro_tip',
-       'text': 'And your script you should know like the back of your hand, and you should say '
-               'it to yourself 20 times. I always sell my phone number, my Google voice that I '
-               "use this day. I have it on my desk visible when I'm making calls cuz sometimes "
-               'I start giving my cell phone number.',
-       'timestamp': 181,
-       'timestamp_label': '[00:03:01]',
-       'timestamp_seconds': 181,
-       'tip': 'And your script you should know like the back of your hand, and you should say '
-              'it to yourself 20 times. I always sell my phone number, my Google voice that I '
-              "use this day. I have it on my desk visible when I'm making calls cuz sometimes "
-              'I start giving my cell phone number.',
-       'title': 'Cold Calling for Surplus Funds in 2025: The Script That Actually Works! '
-                '(Surplus Institute / David Church / Unclaimed Funds)',
-       'url': 'https://www.youtube.com/watch?v=alaKJIcbbLw&t=181s',
-       'video_id': 'alaKJIcbbLw'},
-      {'author': 'Logan Fullmer',
-       'channel': 'Logan Fullmer',
-       'epistemic_status': 'attributed_practitioner_claim',
-       'markdown': '[01:10:57](https://www.youtube.com/watch?v=onebNbNQSBM&t=4257s)',
-       'relevance': 'Attributed practitioner commentary on small-team division of labor across '
-                    'research VAs, acquisition specialists, and state-licensed co-counsel.',
-       'source_type': 'video_pro_tip',
-       'text': 'Brandon Schwab is a killer out there when it comes to all these deals. I mean, '
-               "he's been doing it at such a high volume. And and he understands that like "
-               'look, you just got to get the deals, you got to understand like who to look '
-               'for, have the team.',
-       'timestamp': 4257,
-       'timestamp_label': '[01:10:57]',
-       'timestamp_seconds': 4257,
-       'tip': 'Brandon Schwab is a killer out there when it comes to all these deals. I mean, '
-              "he's been doing it at such a high volume. And and he understands that like "
-              'look, you just got to get the deals, you got to understand like who to look '
-              'for, have the team.',
-       'title': 'Curative Title Explained by a Florida Probate Attorney (Logan Fullmer)',
-       'url': 'https://www.youtube.com/watch?v=onebNbNQSBM&t=4257s',
-       'video_id': 'onebNbNQSBM'},
-      {'author': 'Money Making Juggernaut',
-       'channel': 'Money Making Juggernaut',
-       'epistemic_status': 'attributed_practitioner_claim',
-       'markdown': '[00:23:18](https://www.youtube.com/watch?v=vs2o6Zz48Oc&t=1398s)',
-       'relevance': 'Attributed practitioner commentary on small-team division of labor across '
-                    'research VAs, acquisition specialists, and state-licensed co-counsel.',
-       'source_type': 'video_pro_tip',
-       'text': "Thinking about this saying hey it might be for you but if you don't take "
-               'action now the one-on-one training may not be something that you can access '
-               "later click that button and I'll see you guys on the other side.",
-       'timestamp': 1398,
-       'timestamp_label': '[00:23:18]',
-       'timestamp_seconds': 1398,
-       'tip': "Thinking about this saying hey it might be for you but if you don't take action "
-              'now the one-on-one training may not be something that you can access later '
-              "click that button and I'll see you guys on the other side.",
-       'title': 'How The Surplus Funds Recovery Business Works 🤑 [Step By Step Training] '
-                '(Money Making Juggernaut)',
-       'url': 'https://www.youtube.com/watch?v=vs2o6Zz48Oc&t=1398s',
-       'video_id': 'vs2o6Zz48Oc'},
-      {'author': 'BizMove',
-       'channel': 'BizMove',
-       'epistemic_status': 'attributed_practitioner_claim',
-       'markdown': '[00:07:07](https://www.youtube.com/watch?v=01plOr9pFjQ&t=427s)',
-       'relevance': 'Attributed practitioner commentary on small-team division of labor across '
-                    'research VAs, acquisition specialists, and state-licensed co-counsel.',
-       'source_type': 'video_pro_tip',
-       'text': 'AI SEO tools like Ubersuggest’s free tier to identify opportunities and '
-               'threats. Conclusion Starting a tax overage business can be complex, but '
-               'leveraging free AI tools can dramatically simplify research, marketing, '
-               'communication, and operations.',
-       'timestamp': 427,
-       'timestamp_label': '[00:07:07]',
-       'timestamp_seconds': 427,
-       'tip': 'AI SEO tools like Ubersuggest’s free tier to identify opportunities and '
-              'threats. Conclusion Starting a tax overage business can be complex, but '
-              'leveraging free AI tools can dramatically simplify research, marketing, '
-              'communication, and operations.',
-       'title': 'How to Start a Tax Overage Business | Complete and Easy to Follow Guide '
-                '(BizMove)',
-       'url': 'https://www.youtube.com/watch?v=01plOr9pFjQ&t=427s',
-       'video_id': '01plOr9pFjQ'},
-      {'author': 'Hutch & Holmes',
-       'channel': 'Hutch & Holmes',
-       'epistemic_status': 'attributed_practitioner_claim',
-       'markdown': '[00:02:54](https://www.youtube.com/watch?v=L2oKpjOoh20&t=174s)',
-       'relevance': 'Attributed practitioner commentary on small-team division of labor across '
-                    'research VAs, acquisition specialists, and state-licensed co-counsel.',
-       'source_type': 'video_pro_tip',
-       'text': 'So, clarity first, leads second. If you need help getting more clarity on this '
-               "business ain't cuz you're interested in it, here's what you can do. Join the "
-               'free Facebook community. Uh there I have monthly training going on, live '
-               "Q&A's, uh business building support.",
-       'timestamp': 174,
-       'timestamp_label': '[00:02:54]',
-       'timestamp_seconds': 174,
-       'tip': 'So, clarity first, leads second. If you need help getting more clarity on this '
-              "business ain't cuz you're interested in it, here's what you can do. Join the "
-              "free Facebook community. Uh there I have monthly training going on, live Q&A's, "
-              'uh business building support.',
-       'title': 'How to Recover Foreclosure Surplus Funds (3-Step System) (Hutch & Holmes)',
-       'url': 'https://www.youtube.com/watch?v=L2oKpjOoh20&t=174s',
-       'video_id': 'L2oKpjOoh20'},
-      {'author': 'Surplus_Prosperity',
-       'channel': 'Surplus_Prosperity',
-       'epistemic_status': 'attributed_practitioner_claim',
-       'markdown': '[00:04:24](https://www.youtube.com/watch?v=MYo3k2Sxj1Q&t=264s)',
-       'relevance': 'Attributed practitioner commentary on small-team division of labor across '
-                    'research VAs, acquisition specialists, and state-licensed co-counsel.',
-       'source_type': 'video_pro_tip',
-       'text': "It'll take you about, it'll take you less than two minutes to fill it out. "
-               "From there, my team reviews it and we'll reach out to you and let you know "
-               'what we find.',
-       'timestamp': 264,
-       'timestamp_label': '[00:04:24]',
-       'timestamp_seconds': 264,
-       'tip': "It'll take you about, it'll take you less than two minutes to fill it out. From "
-              "there, my team reviews it and we'll reach out to you and let you know what we "
-              'find.',
-       'title': 'What Are Surplus Funds? How to Claim Money Owed to You After Foreclosure or '
-                'Tax Sale (Surplus_Prosperity)',
-       'url': 'https://www.youtube.com/watch?v=MYo3k2Sxj1Q&t=264s',
-       'video_id': 'MYo3k2Sxj1Q'},
+       'text': "The process is very different from one state and one county to another. It's not "
+               'that you need an attorney to do this, but there are lots of barricades and hoops '
+               'to be able to do the proper paperwork with the clerk of court.',
+       'timestamp': 151,
+       'timestamp_label': '[00:02:31]',
+       'timestamp_seconds': 151,
+       'tip': "The process is very different from one state and one county to another. It's not "
+              'that you need an attorney to do this, but there are lots of barricades and hoops to '
+              'be able to do the proper paperwork with the clerk of court.',
+       'title': 'Is Surplus Foreclosure Recovery A Scam?',
+       'url': 'https://www.youtube.com/watch?v=qc33fVKUnTU&t=151s',
+       'video_id': 'qc33fVKUnTU'},
       {'author': 'Overage Acquisition',
        'channel': 'Overage Acquisition',
        'epistemic_status': 'attributed_practitioner_claim',
-       'markdown': '[00:01:09](https://www.youtube.com/watch?v=6UiKunbtUa0&t=69s)',
-       'relevance': 'Attributed practitioner commentary on small-team division of labor across '
-                    'research VAs, acquisition specialists, and state-licensed co-counsel.',
+       'markdown': '[00:02:17](https://www.youtube.com/watch?v=F9-rceUCqYE&t=137s)',
+       'relevance': 'Practitioner instructions for the Texas tax-sale petition destination.',
        'source_type': 'video_pro_tip',
-       'text': "I've included in this training, there's different words and names for "
-               "overages, but if you use, you know, different words, it's okay. The browser "
-               "will know what you're looking for just by the other keywords. And then you "
-               'want to include the date.',
-       'timestamp': 69,
-       'timestamp_label': '[00:01:09]',
-       'timestamp_seconds': 69,
-       'tip': "I've included in this training, there's different words and names for overages, "
-              "but if you use, you know, different words, it's okay. The browser will know "
-              "what you're looking for just by the other keywords. And then you want to "
-              'include the date.',
-       'title': 'How To Find Excess Proceeds List In 2025 (Proven Strategies) (Overage '
-                'Acquisition)',
-       'url': 'https://www.youtube.com/watch?v=6UiKunbtUa0&t=69s',
-       'video_id': '6UiKunbtUa0'},
-      {'author': "Bob Diamond - America's Tax Sale Attorney",
-       'channel': "Bob Diamond - America's Tax Sale Attorney",
+       'text': 'In Texas, the claim goes directly to the district court that originally ordered '
+               'the sale, filed under the same case number as the original tax case, not to the '
+               'county clerk or the tax collector.',
+       'timestamp': 137,
+       'timestamp_label': '[00:02:17]',
+       'timestamp_seconds': 137,
+       'tip': 'In Texas, the claim goes directly to the district court that originally ordered the '
+              'sale, filed under the same case number as the original tax case, not to the county '
+              'clerk or the tax collector.',
+       'title': 'How Texas Surplus Funds Recovery Actually Works (No One Tells You This)',
+       'url': 'https://www.youtube.com/watch?v=F9-rceUCqYE&t=137s',
+       'video_id': 'F9-rceUCqYE'},
+      {'author': 'Money Making Juggernaut',
+       'channel': 'Money Making Juggernaut',
        'epistemic_status': 'attributed_practitioner_claim',
-       'markdown': '[00:09:09](https://www.youtube.com/watch?v=qGPsbhsEAVQ&t=549s)',
-       'relevance': 'Attributed practitioner commentary on small-team division of labor across '
-                    'research VAs, acquisition specialists, and state-licensed co-counsel.',
+       'markdown': '[00:05:08](https://www.youtube.com/watch?v=FIgAVvrCcC8&t=308s)',
+       'relevance': 'Practitioner explanation of the Florida tax-sale review waiting period.',
        'source_type': 'video_pro_tip',
-       'text': "Court is the judicial system, so that's why it's a judicial claim. Now, when "
-               "you have to do those you're going to hire an attorney to do the claim for you, "
-               "because you can't represent someone else in court.",
-       'timestamp': 549,
-       'timestamp_label': '[00:09:09]',
-       'timestamp_seconds': 549,
-       'tip': "Court is the judicial system, so that's why it's a judicial claim. Now, when "
-              "you have to do those you're going to hire an attorney to do the claim for you, "
-              "because you can't represent someone else in court.",
-       'title': "Tax Sale Overages Course (Bob Diamond - America's Tax Sale Attorney)",
-       'url': 'https://www.youtube.com/watch?v=qGPsbhsEAVQ&t=549s',
-       'video_id': 'qGPsbhsEAVQ'},
-      {'author': 'Surplus Institute / David Church / Unclaimed Funds',
-       'channel': 'Surplus Institute / David Church / Unclaimed Funds',
+       'text': 'In Florida on the tax sales side, 120 days have to expire after the notice of '
+               'surplus funds letter has been issued, in which they will not review any claims '
+               'within the 120-day period.',
+       'timestamp': 308,
+       'timestamp_label': '[00:05:08]',
+       'timestamp_seconds': 308,
+       'tip': 'In Florida on the tax sales side, 120 days have to expire after the notice of '
+              'surplus funds letter has been issued, in which they will not review any claims '
+              'within the 120-day period.',
+       'title': 'How To Do Surplus Funds Recovery in FLORIDA (Asset recovery business)',
+       'url': 'https://www.youtube.com/watch?v=FIgAVvrCcC8&t=308s',
+       'video_id': 'FIgAVvrCcC8'},
+      {'author': 'Overages Overflow',
+       'channel': 'Overages Overflow',
        'epistemic_status': 'attributed_practitioner_claim',
-       'markdown': '[00:05:10](https://www.youtube.com/watch?v=1AMk1-SB5ic&t=310s)',
-       'relevance': 'Attributed practitioner commentary on small-team division of labor across '
-                    'research VAs, acquisition specialists, and state-licensed co-counsel.',
+       'markdown': '[00:06:00](https://www.youtube.com/watch?v=5j5vNm58Lpk&t=360s)',
+       'relevance': 'Practitioner agreement-design recommendation in the California fee-cap '
+                    'discussion.',
        'source_type': 'video_pro_tip',
-       'text': "Free training on Thursday night the link to registers down below and I'm also "
-               'putting up a link for my free Facebook group if you want to join that if you '
-               "haven't feel free to join that as well and I'll see you all around thanks.",
-       'timestamp': 310,
-       'timestamp_label': '[00:05:10]',
-       'timestamp_seconds': 310,
-       'tip': "Free training on Thursday night the link to registers down below and I'm also "
-              'putting up a link for my free Facebook group if you want to join that if you '
-              "haven't feel free to join that as well and I'll see you all around thanks.",
-       'title': "Unclaimed Funds: How to Get Your Client's Documents in Order⚡️Unclaimed fund "
-                'Client Document finding (Surplus Institute / David Church / Unclaimed Funds)',
-       'url': 'https://www.youtube.com/watch?v=1AMk1-SB5ic&t=310s',
-       'video_id': '1AMk1-SB5ic'},
-      {'author': 'Probate Mastery',
-       'channel': 'Probate Mastery',
+       'text': 'You must include explicit written disclosures stating the former owner can file '
+               'directly with the government at absolutely no cost.',
+       'timestamp': 360,
+       'timestamp_label': '[00:06:00]',
+       'timestamp_seconds': 360,
+       'tip': 'You must include explicit written disclosures stating the former owner can file '
+              'directly with the government at absolutely no cost.',
+       'title': 'Surviving the California Cap on Fees for Surplus Funds',
+       'url': 'https://www.youtube.com/watch?v=5j5vNm58Lpk&t=360s',
+       'video_id': '5j5vNm58Lpk'},
+      {'author': 'Nick Fullmer- Overage Syndicate',
+       'channel': 'Nick Fullmer- Overage Syndicate',
        'epistemic_status': 'attributed_practitioner_claim',
-       'markdown': '[00:05:48](https://www.youtube.com/watch?v=AAF69oF79DU&t=348s)',
-       'relevance': 'Attributed practitioner commentary on small-team division of labor across '
-                    'research VAs, acquisition specialists, and state-licensed co-counsel.',
+       'markdown': '[00:01:46](https://www.youtube.com/watch?v=ahrG-1tcbxM&t=106s)',
+       'relevance': 'Practitioner description of the proposed California compensation ceiling.',
        'source_type': 'video_pro_tip',
-       'text': "And what is her intent does she want to hold it or sell it. So it's a listing "
-               'appointment. And she needs to do it quick. So why do I, so I can pull the '
-               'deed, I can find out the information and what do I need to tell her she needs '
-               'to do to lead - Hire a probate attorney.',
-       'timestamp': 348,
-       'timestamp_label': '[00:05:48]',
-       'timestamp_seconds': 348,
-       'tip': "And what is her intent does she want to hold it or sell it. So it's a listing "
-              'appointment. And she needs to do it quick. So why do I, so I can pull the deed, '
-              'I can find out the information and what do I need to tell her she needs to do '
-              'to lead - Hire a probate attorney.',
-       'title': 'Sub-to strategy for probate investing | Probate foreclosures | Probate real '
-                'estate marketing tips (Probate Mastery)',
-       'url': 'https://www.youtube.com/watch?v=AAF69oF79DU&t=348s',
-       'video_id': 'AAF69oF79DU'}],
+       'text': 'The compensation to assist somebody in recovering excess proceeds shall not exceed '
+               '10% of the amount of excess proceeds.',
+       'timestamp': 106,
+       'timestamp_label': '[00:01:46]',
+       'timestamp_seconds': 106,
+       'tip': 'The compensation to assist somebody in recovering excess proceeds shall not exceed '
+              '10% of the amount of excess proceeds.',
+       'title': 'URGENT: California Seeking To Take Excess Proceeds-Place Cap on Fees For Surplus '
+                'Recovery Specialist',
+       'url': 'https://www.youtube.com/watch?v=ahrG-1tcbxM&t=106s',
+       'video_id': 'ahrG-1tcbxM'},
+      {'author': 'Dreams & Dollars: The Everyday Entrepreneur',
+       'channel': 'Dreams & Dollars: The Everyday Entrepreneur',
+       'epistemic_status': 'attributed_practitioner_claim',
+       'markdown': '[00:03:25](https://www.youtube.com/watch?v=Zpz5fpHax1w&t=205s)',
+       'relevance': 'Practitioner distinction between a research lead and verified remaining '
+                    'funds.',
+       'source_type': 'video_pro_tip',
+       'text': 'A list is a lead. It is not proof, and it is not a balance.',
+       'timestamp': 205,
+       'timestamp_label': '[00:03:25]',
+       'timestamp_seconds': 205,
+       'tip': 'A list is a lead. It is not proof, and it is not a balance.',
+       'title': 'Surplus Funds Explained: Find Foreclosure Overages & Avoid Scams',
+       'url': 'https://www.youtube.com/watch?v=Zpz5fpHax1w&t=205s',
+       'video_id': 'Zpz5fpHax1w'},
+      {'author': 'Overage Acquisition',
+       'channel': 'Overage Acquisition',
+       'epistemic_status': 'attributed_practitioner_claim',
+       'markdown': '[00:04:09](https://www.youtube.com/watch?v=V0TgTN8wjyM&t=249s)',
+       'relevance': 'Practitioner instructions for testing competing lienholder demands.',
+       'source_type': 'video_pro_tip',
+       'text': 'Your job is to verify the claim, request a written payoff statement, check whether '
+               'the lien amount matches the records, and look at whether extra fees have been '
+               'tacked on.',
+       'timestamp': 249,
+       'timestamp_label': '[00:04:09]',
+       'timestamp_seconds': 249,
+       'tip': 'Your job is to verify the claim, request a written payoff statement, check whether '
+              'the lien amount matches the records, and look at whether extra fees have been '
+              'tacked on.',
+       'title': 'Surplus Funds Recovery: How to Handle Competing Lienholders',
+       'url': 'https://www.youtube.com/watch?v=V0TgTN8wjyM&t=249s',
+       'video_id': 'V0TgTN8wjyM'},
+      {'author': 'Haynes Law Group',
+       'channel': 'Haynes Law Group',
+       'epistemic_status': 'attributed_practitioner_claim',
+       'markdown': '[00:01:54](https://www.youtube.com/watch?v=KRskCa_1Isg&t=114s)',
+       'relevance': 'Firsthand practitioner warning about delayed Florida owner claims and state '
+                    'transfer.',
+       'source_type': 'video_pro_tip',
+       'text': 'If a claim for the surplus funds is not made within that year, what can happen is '
+               'the surplus funds can be sent to the state and the case can be closed.',
+       'timestamp': 114,
+       'timestamp_label': '[00:01:54]',
+       'timestamp_seconds': 114,
+       'tip': 'If a claim for the surplus funds is not made within that year, what can happen is '
+              'the surplus funds can be sent to the state and the case can be closed.',
+       'title': "Florida Owner's Claim for Foreclosure Surplus Funds: Timing",
+       'url': 'https://www.youtube.com/watch?v=KRskCa_1Isg&t=114s',
+       'video_id': 'KRskCa_1Isg'},
+      {'author': 'Lenny the Lawyer-Live',
+       'channel': 'Lenny the Lawyer-Live',
+       'epistemic_status': 'attributed_practitioner_claim',
+       'markdown': '[00:03:35](https://www.youtube.com/watch?v=NhVq21SVd8k&t=215s)',
+       'relevance': 'Practitioner selection question emphasizing experience with the particular '
+                    'case type.',
+       'source_type': 'video_pro_tip',
+       'text': 'Does the attorney have actual experience in handling your type of case.',
+       'timestamp': 215,
+       'timestamp_label': '[00:03:35]',
+       'timestamp_seconds': 215,
+       'tip': 'Does the attorney have actual experience in handling your type of case.',
+       'title': 'How To Recover Surplus Funds in 2025!',
+       'url': 'https://www.youtube.com/watch?v=NhVq21SVd8k&t=215s',
+       'video_id': 'NhVq21SVd8k'},
+      {'author': 'Overage Acquisition',
+       'channel': 'Overage Acquisition',
+       'epistemic_status': 'attributed_practitioner_claim',
+       'markdown': '[00:02:04](https://www.youtube.com/watch?v=AqiLBDlPAYQ&t=124s)',
+       'relevance': 'Firsthand practitioner workflow for preserving county-specific filing '
+                    'experience.',
+       'source_type': 'video_pro_tip',
+       'text': 'I also keep a county-by-county log of exactly what worked in each county, so I '
+               'never have to figure it out twice.',
+       'timestamp': 124,
+       'timestamp_label': '[00:02:04]',
+       'timestamp_seconds': 124,
+       'tip': 'I also keep a county-by-county log of exactly what worked in each county, so I '
+              'never have to figure it out twice.',
+       'title': 'AVOID These 5 Surplus Funds Mistakes in Florida (2026 UPDATE)',
+       'url': 'https://www.youtube.com/watch?v=AqiLBDlPAYQ&t=124s',
+       'video_id': 'AqiLBDlPAYQ'}],
+ 11: [{'author': 'Surplus Funds 101',
+       'channel': 'Surplus Funds 101',
+       'epistemic_status': 'attributed_practitioner_claim',
+       'markdown': '[00:05:36](https://www.youtube.com/watch?v=QbqHu-FTlPY&t=336s)',
+       'relevance': 'Practitioner testimony on distinguishing the current payment address from the '
+                    'historical property record.',
+       'source_type': 'video_pro_tip',
+       'text': 'This right here is the address to where they currently live. This is where the '
+               'state is going to send the money to.',
+       'timestamp': 336,
+       'timestamp_label': '[00:05:36]',
+       'timestamp_seconds': 336,
+       'tip': 'This right here is the address to where they currently live. This is where the '
+              'state is going to send the money to.',
+       'title': 'California State Funds: Exact Steps For Filling Out Investigator Agreement. '
+                'surplus funds',
+       'url': 'https://www.youtube.com/watch?v=QbqHu-FTlPY&t=336s',
+       'video_id': 'QbqHu-FTlPY'},
+      {'author': 'Money Making Juggernaut',
+       'channel': 'Money Making Juggernaut',
+       'epistemic_status': 'attributed_practitioner_claim',
+       'markdown': '[00:05:08](https://www.youtube.com/watch?v=kuCEYN64vtQ&t=308s)',
+       'relevance': 'Practitioner testimony on searching surplus clients for additional state-held '
+                    'accounts.',
+       'source_type': 'video_pro_tip',
+       'text': 'We actually helped them get $12,000 more from the state treasury because they had '
+               'a savings account that they never claimed.',
+       'timestamp': 308,
+       'timestamp_label': '[00:05:08]',
+       'timestamp_seconds': 308,
+       'tip': 'We actually helped them get $12,000 more from the state treasury because they had a '
+              'savings account that they never claimed.',
+       'title': 'Unclaimed State Funds VS Surplus Funds Recovery',
+       'url': 'https://www.youtube.com/watch?v=kuCEYN64vtQ&t=308s',
+       'video_id': 'kuCEYN64vtQ'},
+      {'author': 'Pierce Law Group',
+       'channel': 'Pierce Law Group',
+       'epistemic_status': 'attributed_practitioner_claim',
+       'markdown': '[00:00:29](https://www.youtube.com/watch?v=Uxc6KOSzdLc&t=29s)',
+       'relevance': 'Practitioner testimony on the North Carolina timing restriction, discussed '
+                    "alongside the speaker's stated exception.",
+       'source_type': 'video_pro_tip',
+       'text': 'These agreements generally cannot be signed during the first 24 months after the '
+               'property is paid or delivered to the state.',
+       'timestamp': 29,
+       'timestamp_label': '[00:00:29]',
+       'timestamp_seconds': 29,
+       'tip': 'These agreements generally cannot be signed during the first 24 months after the '
+              'property is paid or delivered to the state.',
+       'title': "Can I use a finder's-fee agreement to claim unclaimed funds? | NC",
+       'url': 'https://www.youtube.com/watch?v=Uxc6KOSzdLc&t=29s',
+       'video_id': 'Uxc6KOSzdLc'},
+      {'author': 'Money Making Juggernaut',
+       'channel': 'Money Making Juggernaut',
+       'epistemic_status': 'attributed_practitioner_claim',
+       'markdown': '[00:02:31](https://www.youtube.com/watch?v=EyQovsqVOnE&t=151s)',
+       'relevance': 'Practitioner testimony on claim research before outreach and contracting.',
+       'source_type': 'video_pro_tip',
+       'text': "Do your due diligence to make sure a claim hasn't been filed yet, to understand "
+               'the claim, how these funds came about, so that you can have a professional '
+               'conversation with somebody.',
+       'timestamp': 151,
+       'timestamp_label': '[00:02:31]',
+       'timestamp_seconds': 151,
+       'tip': "Do your due diligence to make sure a claim hasn't been filed yet, to understand the "
+              'claim, how these funds came about, so that you can have a professional conversation '
+              'with somebody.',
+       'title': 'BANKRUPTCY Unclaimed Funds Explained: UNTAPPED NICHE (Surplus Funds Recovery)',
+       'url': 'https://www.youtube.com/watch?v=EyQovsqVOnE&t=151s',
+       'video_id': 'EyQovsqVOnE'},
+      {'author': 'Money Making Juggernaut',
+       'channel': 'Money Making Juggernaut',
+       'epistemic_status': 'attributed_practitioner_claim',
+       'markdown': '[00:06:58](https://www.youtube.com/watch?v=7WZONOtYbjc&t=418s)',
+       'relevance': 'Practitioner testimony on entity research and identifying authorized '
+                    'corporate signers.',
+       'source_type': 'video_pro_tip',
+       'text': 'If you are somebody who is savvy with searching entities and figuring out who the '
+               "presidents, CEOs, authorized members to sign on behalf of the company, then you'll "
+               'do great in this industry.',
+       'timestamp': 418,
+       'timestamp_label': '[00:06:58]',
+       'timestamp_seconds': 418,
+       'tip': 'If you are somebody who is savvy with searching entities and figuring out who the '
+              "presidents, CEOs, authorized members to sign on behalf of the company, then you'll "
+              'do great in this industry.',
+       'title': 'The Different Types Of Unclaimed Funds - COMPLETE LIST (Surplus Funds Recovery)',
+       'url': 'https://www.youtube.com/watch?v=7WZONOtYbjc&t=418s',
+       'video_id': '7WZONOtYbjc'},
+      {'author': 'Unclaimed Funds Finder',
+       'channel': 'Unclaimed Funds Finder',
+       'epistemic_status': 'attributed_practitioner_claim',
+       'markdown': '[00:01:06](https://www.youtube.com/watch?v=NDXBOlfVC5E&t=66s)',
+       'relevance': 'Practitioner testimony distinguishing foreclosure custodians from state '
+                    'property programs.',
+       'source_type': 'video_pro_tip',
+       'text': 'In many places, those funds are held by a court, sheriff, trustee, or county '
+               'office rather than the state unclaimed property program.',
+       'timestamp': 66,
+       'timestamp_label': '[00:01:06]',
+       'timestamp_seconds': 66,
+       'tip': 'In many places, those funds are held by a court, sheriff, trustee, or county office '
+              'rather than the state unclaimed property program.',
+       'title': 'The Difference Between Unclaimed Property vs  Foreclosure Surplus Funds',
+       'url': 'https://www.youtube.com/watch?v=NDXBOlfVC5E&t=66s',
+       'video_id': 'NDXBOlfVC5E'},
+      {'author': 'Money Making Juggernaut',
+       'channel': 'Money Making Juggernaut',
+       'epistemic_status': 'attributed_practitioner_claim',
+       'markdown': '[00:10:05](https://www.youtube.com/watch?v=NxCoaATrtq4&t=605s)',
+       'relevance': "Whitman's estimate of shared bankruptcy database coverage and its "
+                    'missing-court qualification.',
+       'source_type': 'video_pro_tip',
+       'text': "This list doesn't have every single bankruptcy court. It's almost every single; "
+               "it's probably 95%.",
+       'timestamp': 605,
+       'timestamp_label': '[00:10:05]',
+       'timestamp_seconds': 605,
+       'tip': "This list doesn't have every single bankruptcy court. It's almost every single; "
+              "it's probably 95%.",
+       'title': 'Unclaimed Bankruptcy Funds webinar',
+       'url': 'https://www.youtube.com/watch?v=NxCoaATrtq4&t=605s',
+       'video_id': 'NxCoaATrtq4'},
+      {'author': 'Money Making Juggernaut',
+       'channel': 'Money Making Juggernaut',
+       'epistemic_status': 'attributed_practitioner_claim',
+       'markdown': '[00:03:58](https://www.youtube.com/watch?v=91o6wv-g6D0&t=238s)',
+       'relevance': 'Practitioner testimony on the paid bankruptcy lead and CRM tool.',
+       'source_type': 'video_pro_tip',
+       'text': 'Another tool that I use for this is bankruptcy surplus.com. They actually update '
+               'their site with fully skip-traced leads every single week.',
+       'timestamp': 238,
+       'timestamp_label': '[00:03:58]',
+       'timestamp_seconds': 238,
+       'tip': 'Another tool that I use for this is bankruptcy surplus.com. They actually update '
+              'their site with fully skip-traced leads every single week.',
+       'title': 'UNTAPPED Business - Unclaimed BANKRUPTCY Funds Recovery ($5B)',
+       'url': 'https://www.youtube.com/watch?v=91o6wv-g6D0&t=238s',
+       'video_id': '91o6wv-g6D0'},
+      {'author': 'Money Making Juggernaut',
+       'channel': 'Money Making Juggernaut',
+       'epistemic_status': 'attributed_practitioner_claim',
+       'markdown': '[00:07:14](https://www.youtube.com/watch?v=waps0YmW8BI&t=434s)',
+       'relevance': 'Guest testimony on the negotiated fee for the paid bankruptcy claim.',
+       'source_type': 'video_pro_tip',
+       'text': 'We agreed upon 20% on this one.',
+       'timestamp': 434,
+       'timestamp_label': '[00:07:14]',
+       'timestamp_seconds': 434,
+       'tip': 'We agreed upon 20% on this one.',
+       'title': 'UNTAPPED OPPORTUNITY: $34k From 1 Claim (Unclaimed Bankruptcy Funds)',
+       'url': 'https://www.youtube.com/watch?v=waps0YmW8BI&t=434s',
+       'video_id': 'waps0YmW8BI'},
+      {'author': 'NLP Sales',
+       'channel': 'NLP Sales',
+       'epistemic_status': 'attributed_practitioner_claim',
+       'markdown': '[00:01:26](https://www.youtube.com/watch?v=VwDsj48KI80&t=86s)',
+       'relevance': 'Practitioner testimony on client-facing transparency and communication.',
+       'source_type': 'video_pro_tip',
+       'text': 'Our process is designed to be transparent and straightforward, keeping you '
+               'informed every step of the way.',
+       'timestamp': 86,
+       'timestamp_label': '[00:01:26]',
+       'timestamp_seconds': 86,
+       'tip': 'Our process is designed to be transparent and straightforward, keeping you informed '
+              'every step of the way.',
+       'title': 'Reclaiming bankruptcy overage with NLP Sales',
+       'url': 'https://www.youtube.com/watch?v=VwDsj48KI80&t=86s',
+       'video_id': 'VwDsj48KI80'},
+      {'author': 'FundSleuth - Unclaimed Funds Info and Training',
+       'channel': 'FundSleuth - Unclaimed Funds Info and Training',
+       'epistemic_status': 'attributed_practitioner_claim',
+       'markdown': '[00:01:16](https://www.youtube.com/watch?v=J6DNZZLasK0&t=76s)',
+       'relevance': 'Practitioner testimony on the Discover stage of the five-part recovery '
+                    'framework.',
+       'source_type': 'video_pro_tip',
+       'text': "Availability is really important. You don't want to work on something that's no "
+               'longer available.',
+       'timestamp': 76,
+       'timestamp_label': '[00:01:16]',
+       'timestamp_seconds': 76,
+       'tip': "Availability is really important. You don't want to work on something that's no "
+              'longer available.',
+       'title': 'The framework I’ve used for every Surplus, Overage or Unclaimed Funds case I’ve '
+                'handled since 2012!',
+       'url': 'https://www.youtube.com/watch?v=J6DNZZLasK0&t=76s',
+       'video_id': 'J6DNZZLasK0'},
+      {'author': 'ACE SURPLUS',
+       'channel': 'ACE SURPLUS',
+       'epistemic_status': 'attributed_practitioner_claim',
+       'markdown': '[00:00:28](https://www.youtube.com/watch?v=daCZb9lQvnc&t=28s)',
+       'relevance': 'Practitioner testimony on the origin of undelivered bankruptcy distributions.',
+       'source_type': 'video_pro_tip',
+       'text': 'Unclaimed funds in a bankruptcy case typically arise when a payment such as a '
+               'dividend or distribution from the bankruptcy estate cannot be delivered to the '
+               'intended recipient.',
+       'timestamp': 28,
+       'timestamp_label': '[00:00:28]',
+       'timestamp_seconds': 28,
+       'tip': 'Unclaimed funds in a bankruptcy case typically arise when a payment such as a '
+              'dividend or distribution from the bankruptcy estate cannot be delivered to the '
+              'intended recipient.',
+       'title': 'What are Unclaimed Bankruptcy Funds?',
+       'url': 'https://www.youtube.com/watch?v=daCZb9lQvnc&t=28s',
+       'video_id': 'daCZb9lQvnc'},
+      {'author': 'Unclaimed CEO',
+       'channel': 'Unclaimed CEO',
+       'epistemic_status': 'attributed_practitioner_claim',
+       'markdown': '[00:04:31](https://www.youtube.com/watch?v=XdU7CVOntKk&t=271s)',
+       'relevance': 'Practitioner testimony on validating a process before hiring assistance.',
+       'source_type': 'video_pro_tip',
+       'text': "Don't hire people to do something in your business that you haven't proved to "
+               'yourself that you can successfully do.',
+       'timestamp': 271,
+       'timestamp_label': '[00:04:31]',
+       'timestamp_seconds': 271,
+       'tip': "Don't hire people to do something in your business that you haven't proved to "
+              'yourself that you can successfully do.',
+       'title': "Here's the Truth about Unclaimed Funds and Tax Overages",
+       'url': 'https://www.youtube.com/watch?v=XdU7CVOntKk&t=271s',
+       'video_id': 'XdU7CVOntKk'},
+      {'author': 'Held',
+       'channel': 'Held',
+       'epistemic_status': 'attributed_practitioner_claim',
+       'markdown': '[00:00:44](https://www.youtube.com/watch?v=Q5-VYr50NM0&t=44s)',
+       'relevance': 'On-camera testimony on bankruptcy locator inputs and participating-court '
+                    'selection.',
+       'source_type': 'video_pro_tip',
+       'text': 'Search is public name, not social security. Creditor name or debtor name, at least '
+               'three characters. Leave the court blank for all participating districts or pick '
+               'one.',
+       'timestamp': 44,
+       'timestamp_label': '[00:00:44]',
+       'timestamp_seconds': 44,
+       'tip': 'Search is public name, not social security. Creditor name or debtor name, at least '
+              'three characters. Leave the court blank for all participating districts or pick '
+              'one.',
+       'title': "Owed money in someone's bankruptcy? The free federal court search",
+       'url': 'https://www.youtube.com/watch?v=Q5-VYr50NM0&t=44s',
+       'video_id': 'Q5-VYr50NM0'},
+      {'author': 'Unclaimed CEO',
+       'channel': 'Unclaimed CEO',
+       'epistemic_status': 'attributed_practitioner_claim',
+       'markdown': '[00:07:21](https://www.youtube.com/watch?v=doqCC8csJa0&t=441s)',
+       'relevance': 'Practitioner comparison of state-fund deal size and tax-surplus deal size.',
+       'source_type': 'video_pro_tip',
+       'text': 'In most scenarios you might be closing like two or three deals to equal the power '
+               'of one deal for tax surplus.',
+       'timestamp': 441,
+       'timestamp_label': '[00:07:21]',
+       'timestamp_seconds': 441,
+       'tip': 'In most scenarios you might be closing like two or three deals to equal the power '
+              'of one deal for tax surplus.',
+       'title': 'State Funds or Tax Surplus - Which is Better?',
+       'url': 'https://www.youtube.com/watch?v=doqCC8csJa0&t=441s',
+       'video_id': 'doqCC8csJa0'},
+      {'author': 'Spring Solutions, LLC',
+       'channel': 'Spring Solutions, LLC',
+       'epistemic_status': 'attributed_practitioner_claim',
+       'markdown': '[00:03:53](https://www.youtube.com/watch?v=mZSZf1u7A70&t=233s)',
+       'relevance': "Practitioner testimony on the payment-control arrangement used in Porter's "
+                    'bankruptcy workflow.',
+       'source_type': 'video_pro_tip',
+       'text': "In bankruptcy you get the funds directly. That's the process that I show you. The "
+               "funds go directly to you and you're tasked with submitting their portion to the "
+               'client.',
+       'timestamp': 233,
+       'timestamp_label': '[00:03:53]',
+       'timestamp_seconds': 233,
+       'tip': "In bankruptcy you get the funds directly. That's the process that I show you. The "
+              "funds go directly to you and you're tasked with submitting their portion to the "
+              'client.',
+       'title': 'Difference between State Unclaimed Funds and Bankruptcy Unclaimed Funds',
+       'url': 'https://www.youtube.com/watch?v=mZSZf1u7A70&t=233s',
+       'video_id': 'mZSZf1u7A70'}],
  12: [{'author': 'Money Making Juggernaut',
        'channel': 'Money Making Juggernaut',
        'epistemic_status': 'attributed_practitioner_claim',
-       'markdown': '[00:03:29](https://www.youtube.com/watch?v=lFoZDRAGylo&t=209s)',
-       'relevance': 'Attributed practitioner commentary on 30-60-90 day launch execution, '
-                    'weekly cohort KPIs, and pre-submission compliance audits.',
+       'markdown': '[00:01:47](https://www.youtube.com/watch?v=DK8BPV7WVvI&t=107s)',
+       'relevance': 'Verbatim practitioner testimony from Chapter Q12.',
        'source_type': 'video_pro_tip',
-       'text': "Now, I'm not going to lie to you and tell you that you'll close 10 deals in "
-               'your first month. If you put in 2 to 3 hours a day, call it an hour of '
-               "research and maybe a couple of hours of phone calls, you'll be able to call "
-               'around 200 people a day.',
-       'timestamp': 209,
-       'timestamp_label': '[00:03:29]',
-       'timestamp_seconds': 209,
-       'tip': "Now, I'm not going to lie to you and tell you that you'll close 10 deals in "
-              'your first month. If you put in 2 to 3 hours a day, call it an hour of research '
-              "and maybe a couple of hours of phone calls, you'll be able to call around 200 "
-              'people a day.',
-       'title': 'How Much Money Can You *REALISTICALLY* Make With Surplus Funds Recovery '
-                '(Money Making Juggernaut)',
-       'url': 'https://www.youtube.com/watch?v=lFoZDRAGylo&t=209s',
-       'video_id': 'lFoZDRAGylo'},
-      {'author': "Bob Diamond - America's Tax Sale Attorney",
-       'channel': "Bob Diamond - America's Tax Sale Attorney",
+       'text': "If you want to do this full-time, don't quit your job yet. Counties don't pay "
+               'overnight.',
+       'timestamp': 107,
+       'timestamp_label': '[00:01:47]',
+       'timestamp_seconds': 107,
+       'tip': "If you want to do this full-time, don't quit your job yet. Counties don't pay "
+              'overnight.',
+       'title': 'Give Me 17 Minutes, I’ll Give You 10,000 Hours of Surplus Funds Knowledge',
+       'url': 'https://www.youtube.com/watch?v=DK8BPV7WVvI&t=107s',
+       'video_id': 'DK8BPV7WVvI'},
+      {'author': 'Surplus Funds List',
+       'channel': 'Surplus Funds List',
        'epistemic_status': 'attributed_practitioner_claim',
-       'markdown': '[00:06:16](https://www.youtube.com/watch?v=lzU09FRqmhg&t=376s)',
-       'relevance': 'Attributed practitioner commentary on 30-60-90 day launch execution, '
-                    'weekly cohort KPIs, and pre-submission compliance audits.',
+       'markdown': '[00:04:10](https://www.youtube.com/watch?v=lOnYUxDdOdI&t=250s)',
+       'relevance': 'Verbatim practitioner testimony from Chapter Q12.',
        'source_type': 'video_pro_tip',
-       'text': "United States, and they just add up, you know, day after day at 1500 that's "
-               "what, 70 552 weeks a year. So that's about 1500 sales per day. That's about "
-               "7500 sales per week. That's about 30,000 sales per month.",
-       'timestamp': 376,
-       'timestamp_label': '[00:06:16]',
-       'timestamp_seconds': 376,
-       'tip': "United States, and they just add up, you know, day after day at 1500 that's "
-              "what, 70 552 weeks a year. So that's about 1500 sales per day. That's about "
-              "7500 sales per week. That's about 30,000 sales per month.",
-       'title': "How To Claim Surplus Funds From Foreclosure (Bob Diamond - America's Tax Sale "
-                'Attorney)',
-       'url': 'https://www.youtube.com/watch?v=lzU09FRqmhg&t=376s',
-       'video_id': 'lzU09FRqmhg'},
-      {'author': 'Surplus Institute / David Church / Unclaimed Funds',
-       'channel': 'Surplus Institute / David Church / Unclaimed Funds',
+       'text': 'You can also update the status on the client portal so the homeowner can go on '
+               'your site and search for the case.',
+       'timestamp': 250,
+       'timestamp_label': '[00:04:10]',
+       'timestamp_seconds': 250,
+       'tip': 'You can also update the status on the client portal so the homeowner can go on your '
+              'site and search for the case.',
+       'title': 'How to Run a Surplus Funds Business with One CRM: Full 2026 Walkthrough',
+       'url': 'https://www.youtube.com/watch?v=lOnYUxDdOdI&t=250s',
+       'video_id': 'lOnYUxDdOdI'},
+      {'author': 'Money Making Juggernaut',
+       'channel': 'Money Making Juggernaut',
        'epistemic_status': 'attributed_practitioner_claim',
-       'markdown': '[00:02:49](https://www.youtube.com/watch?v=ieI6zKICpKo&t=169s)',
-       'relevance': 'Attributed practitioner commentary on 30-60-90 day launch execution, '
-                    'weekly cohort KPIs, and pre-submission compliance audits.',
+       'markdown': '[00:02:29](https://www.youtube.com/watch?v=9Tua3eW94Og&t=149s)',
+       'relevance': 'Verbatim practitioner testimony from Chapter Q12.',
        'source_type': 'video_pro_tip',
-       'text': "'s having a good CRM, which I have a CRM video that I use. I like either "
-               'Trello or ClickUp, but I hope this helps. Um just a couple of the yeses I got '
-               "today. Literally, a 16,000 day in commission is huge. It's a nice way to start "
-               'the week.',
-       'timestamp': 169,
-       'timestamp_label': '[00:02:49]',
-       'timestamp_seconds': 169,
-       'tip': "'s having a good CRM, which I have a CRM video that I use. I like either Trello "
-              'or ClickUp, but I hope this helps. Um just a couple of the yeses I got today. '
-              "Literally, a 16,000 day in commission is huge. It's a nice way to start the "
-              'week.',
-       'title': '$16,000 Live Cold Calling Commission (Surplus Institute / David Church / '
-                'Unclaimed Funds)',
-       'url': 'https://www.youtube.com/watch?v=ieI6zKICpKo&t=169s',
-       'video_id': 'ieI6zKICpKo'},
-      {'author': 'Surplus Funds 101',
-       'channel': 'Surplus Funds 101',
-       'epistemic_status': 'attributed_practitioner_claim',
-       'markdown': '[00:04:18](https://www.youtube.com/watch?v=foMCyYJ4LgY&t=258s)',
-       'relevance': 'Attributed practitioner commentary on 30-60-90 day launch execution, '
-                    'weekly cohort KPIs, and pre-submission compliance audits.',
-       'source_type': 'video_pro_tip',
-       'text': "Okay, one cancellation a week, nine calls one cancel. It's a pretty good ratio "
-               'right there, very first thought is she has the highest overall cells average. '
-               'Okay, so she can successfully close most transactions or people that she '
-               "speaks well, that's really good.",
-       'timestamp': 258,
-       'timestamp_label': '[00:04:18]',
-       'timestamp_seconds': 258,
-       'tip': "Okay, one cancellation a week, nine calls one cancel. It's a pretty good ratio "
-              'right there, very first thought is she has the highest overall cells average. '
-              'Okay, so she can successfully close most transactions or people that she speaks '
-              "well, that's really good.",
-       'title': 'State Funds Tutorial: What To Do When A Deal Cancels While Working Your State '
-                'Funds Business. (Surplus Funds 101)',
-       'url': 'https://www.youtube.com/watch?v=foMCyYJ4LgY&t=258s',
-       'video_id': 'foMCyYJ4LgY'},
-      {'author': 'Courtney Fricke',
-       'channel': 'Courtney Fricke',
-       'epistemic_status': 'attributed_practitioner_claim',
-       'markdown': '[00:31:41](https://www.youtube.com/watch?v=W-FX20iI9Jk&t=1901s)',
-       'relevance': 'Attributed practitioner commentary on 30-60-90 day launch execution, '
-                    'weekly cohort KPIs, and pre-submission compliance audits.',
-       'source_type': 'video_pro_tip',
-       'text': "'t know what you don't know. So ultimately the first deal does not make you a "
-               "title expert overnight. And I don't want you to present yourself as one "
-               'either, right? You want to be able to start learning that pattern recognition '
-               'of recognizing problems.',
-       'timestamp': 1901,
-       'timestamp_label': '[00:31:41]',
-       'timestamp_seconds': 1901,
-       'tip': "'t know what you don't know. So ultimately the first deal does not make you a "
-              "title expert overnight. And I don't want you to present yourself as one either, "
-              'right? You want to be able to start learning that pattern recognition of '
-              'recognizing problems.',
-       'title': 'How to Get Your First Curative Title Deal: A Step-by-Step Guide (Courtney '
-                'Fricke)',
-       'url': 'https://www.youtube.com/watch?v=W-FX20iI9Jk&t=1901s',
-       'video_id': 'W-FX20iI9Jk'},
-      {'author': 'Logan Fullmer',
-       'channel': 'Logan Fullmer',
-       'epistemic_status': 'attributed_practitioner_claim',
-       'markdown': '[00:52:38](https://www.youtube.com/watch?v=dJ-LTFmMsTg&t=3158s)',
-       'relevance': 'Attributed practitioner commentary on 30-60-90 day launch execution, '
-                    'weekly cohort KPIs, and pre-submission compliance audits.',
-       'source_type': 'video_pro_tip',
-       'text': "But, they also it's important to remember that I need to get this deal to "
-               'cycle. I need to get it these sellers paid. I need to close my problems out. I '
-               "need to resell it, make some money. And if I'm doing one or two deals at a "
-               'time, I need one to close every 30 days.',
-       'timestamp': 3158,
-       'timestamp_label': '[00:52:38]',
-       'timestamp_seconds': 3158,
-       'tip': "But, they also it's important to remember that I need to get this deal to "
-              'cycle. I need to get it these sellers paid. I need to close my problems out. I '
-              "need to resell it, make some money. And if I'm doing one or two deals at a "
-              'time, I need one to close every 30 days.',
-       'title': "Skip Tracing for Curative Title: Find Owners Others Can't (Logan Fullmer)",
-       'url': 'https://www.youtube.com/watch?v=dJ-LTFmMsTg&t=3158s',
-       'video_id': 'dJ-LTFmMsTg'},
-      {'author': 'Surplus Institute / David Church / Unclaimed Funds',
-       'channel': 'Surplus Institute / David Church / Unclaimed Funds',
-       'epistemic_status': 'attributed_practitioner_claim',
-       'markdown': '[00:01:35](https://www.youtube.com/watch?v=eiQ53kxE6ZA&t=95s)',
-       'relevance': 'Attributed practitioner commentary on 30-60-90 day launch execution, '
-                    'weekly cohort KPIs, and pre-submission compliance audits.',
-       'source_type': 'video_pro_tip',
-       'text': "I've said an account that they had. That's going to tell the person I'm not a "
-               'some sort of telemarketer from Africa calling. I get call backs all day long '
-               'on that. Not everybody calls me back, but my marketing system is five new '
-               'leads 5 days a week.',
-       'timestamp': 95,
-       'timestamp_label': '[00:01:35]',
-       'timestamp_seconds': 95,
-       'tip': "I've said an account that they had. That's going to tell the person I'm not a "
-              'some sort of telemarketer from Africa calling. I get call backs all day long on '
-              'that. Not everybody calls me back, but my marketing system is five new leads 5 '
-              'days a week.',
-       'title': 'How To Find family members of a deceased person! (Surplus Institute / David '
-                'Church / Unclaimed Funds)',
-       'url': 'https://www.youtube.com/watch?v=eiQ53kxE6ZA&t=95s',
-       'video_id': 'eiQ53kxE6ZA'},
-      {'author': 'Courtney Fricke',
-       'channel': 'Courtney Fricke',
-       'epistemic_status': 'attributed_practitioner_claim',
-       'markdown': '[00:00:59](https://www.youtube.com/watch?v=-QzABvCmtVc&t=59s)',
-       'relevance': 'Attributed practitioner commentary on 30-60-90 day launch execution, '
-                    'weekly cohort KPIs, and pre-submission compliance audits.',
-       'source_type': 'video_pro_tip',
-       'text': "Now, let's go ahead and jump in to the deal. But before we do, today's "
-               'conversation is important because one of the first steps in learning how to do '
-               'the curative title deals is to learn how to spot the problems like the title '
-               'issues and the ownership issues.',
-       'timestamp': 59,
-       'timestamp_label': '[00:00:59]',
-       'timestamp_seconds': 59,
-       'tip': "Now, let's go ahead and jump in to the deal. But before we do, today's "
-              'conversation is important because one of the first steps in learning how to do '
-              'the curative title deals is to learn how to spot the problems like the title '
-              'issues and the ownership issues.',
-       'title': 'How to Underwrite a Curative Title Deal (And Know When to Walk Away) '
-                '(Courtney Fricke)',
-       'url': 'https://www.youtube.com/watch?v=-QzABvCmtVc&t=59s',
-       'video_id': '-QzABvCmtVc'},
-      {'author': 'Surplus Funds 101',
-       'channel': 'Surplus Funds 101',
-       'epistemic_status': 'attributed_practitioner_claim',
-       'markdown': '[00:07:27](https://www.youtube.com/watch?v=t4w_wFimZ9A&t=447s)',
-       'relevance': 'Attributed practitioner commentary on 30-60-90 day launch execution, '
-                    'weekly cohort KPIs, and pre-submission compliance audits.',
-       'source_type': 'video_pro_tip',
-       'text': 'So bring up all the objections that client has and resolve all of those '
-               "potential issues that might stall a deal : Guy, this is how you're gonna wanna "
-               'start clearing objections, so you wanna be able to know what they might say, '
-               'and bring it up ahead of time.',
-       'timestamp': 447,
-       'timestamp_label': '[00:07:27]',
-       'timestamp_seconds': 447,
-       'tip': 'So bring up all the objections that client has and resolve all of those '
-              "potential issues that might stall a deal : Guy, this is how you're gonna wanna "
-              'start clearing objections, so you wanna be able to know what they might say, '
-              'and bring it up ahead of time.',
-       'title': 'State Funds Tutorial: Cold Calling Objections vs. Complaints. Surplus Funds '
-                '101 (Surplus Funds 101)',
-       'url': 'https://www.youtube.com/watch?v=t4w_wFimZ9A&t=447s',
-       'video_id': 't4w_wFimZ9A'},
-      {'author': 'Ted Thomas',
-       'channel': 'Ted Thomas',
-       'epistemic_status': 'attributed_practitioner_claim',
-       'markdown': '[00:09:44](https://www.youtube.com/watch?v=d5TLZqkPX14&t=584s)',
-       'relevance': 'Attributed practitioner commentary on 30-60-90 day launch execution, '
-                    'weekly cohort KPIs, and pre-submission compliance audits.',
-       'source_type': 'video_pro_tip',
-       'text': "I don't know what the market value is but we got a tax value. All right, okay "
-               'so the auction will start at the back taxes, so very close to that, all right, '
-               "however someone else bids it up. They're willing to pay 45,000 for the "
-               'property.',
-       'timestamp': 584,
-       'timestamp_label': '[00:09:44]',
-       'timestamp_seconds': 584,
-       'tip': "I don't know what the market value is but we got a tax value. All right, okay "
-              'so the auction will start at the back taxes, so very close to that, all right, '
-              "however someone else bids it up. They're willing to pay 45,000 for the "
-              'property.',
-       'title': 'How To Claim Tax Sale Overages (Ted Thomas)',
-       'url': 'https://www.youtube.com/watch?v=d5TLZqkPX14&t=584s',
-       'video_id': 'd5TLZqkPX14'},
-      {'author': 'ohiocommerce',
-       'channel': 'ohiocommerce',
-       'epistemic_status': 'attributed_practitioner_claim',
-       'markdown': '[00:01:45](https://www.youtube.com/watch?v=GrE0UUh_3BI&t=105s)',
-       'relevance': 'Attributed practitioner commentary on 30-60-90 day launch execution, '
-                    'weekly cohort KPIs, and pre-submission compliance audits.',
-       'source_type': 'video_pro_tip',
-       'text': 'Want you to know that this is your BBB BBB is your first line of resource to '
-               'check out businesses to file complaints to get solutions to start your '
-               'businesses to have business resourc our es all around this is your BBB next.',
-       'timestamp': 105,
-       'timestamp_label': '[00:01:45]',
-       'timestamp_seconds': 105,
-       'tip': 'Want you to know that this is your BBB BBB is your first line of resource to '
-              'check out businesses to file complaints to get solutions to start your '
-              'businesses to have business resourc our es all around this is your BBB next.',
-       'title': 'Claiming your Unclaimed Funds (ohiocommerce)',
-       'url': 'https://www.youtube.com/watch?v=GrE0UUh_3BI&t=105s',
-       'video_id': 'GrE0UUh_3BI'},
-      {'author': 'Spencer Vann',
-       'channel': 'Spencer Vann',
-       'epistemic_status': 'attributed_practitioner_claim',
-       'markdown': '[00:01:59](https://www.youtube.com/watch?v=ZEobF_ck678&t=119s)',
-       'relevance': 'Attributed practitioner commentary on 30-60-90 day launch execution, '
-                    'weekly cohort KPIs, and pre-submission compliance audits.',
-       'source_type': 'video_pro_tip',
-       'text': "Routine looks like it's really simple it's about five minutes so the first "
-               "thing I'll do is I'll sit in my chair I'll sit in good posture okay and I will "
-               'take deep breaths.',
-       'timestamp': 119,
-       'timestamp_label': '[00:01:59]',
-       'timestamp_seconds': 119,
-       'tip': "Routine looks like it's really simple it's about five minutes so the first "
-              "thing I'll do is I'll sit in my chair I'll sit in good posture okay and I will "
-              'take deep breaths.',
-       'title': 'Surplus Fund Cold Calls: How to ACTUALLY close deals (99% have no clue) '
-                '(Spencer Vann)',
-       'url': 'https://www.youtube.com/watch?v=ZEobF_ck678&t=119s',
-       'video_id': 'ZEobF_ck678'},
-      {'author': 'Probate Mastery',
-       'channel': 'Probate Mastery',
-       'epistemic_status': 'attributed_practitioner_claim',
-       'markdown': '[00:01:13](https://www.youtube.com/watch?v=T2gvkByDlFU&t=73s)',
-       'relevance': 'Attributed practitioner commentary on 30-60-90 day launch execution, '
-                    'weekly cohort KPIs, and pre-submission compliance audits.',
-       'source_type': 'video_pro_tip',
-       'text': "Here in California, um there's a law that was if it was a primary residence "
-               'for either living or deceased, um you can get, you know, a guaranteed 90-day '
-               'extension with listing. And another 90 days if you can fall in the escrow.',
-       'timestamp': 73,
-       'timestamp_label': '[00:01:13]',
-       'timestamp_seconds': 73,
-       'tip': "Here in California, um there's a law that was if it was a primary residence for "
-              'either living or deceased, um you can get, you know, a guaranteed 90-day '
-              'extension with listing. And another 90 days if you can fall in the escrow.',
-       'title': '🚨 Probate Property Headed to Foreclosure Auction… Is It Worth Pursuing? '
-                '(Probate Mastery)',
-       'url': 'https://www.youtube.com/watch?v=T2gvkByDlFU&t=73s',
-       'video_id': 'T2gvkByDlFU'},
-      {'author': 'Michael Curtis',
-       'channel': 'Michael Curtis',
-       'epistemic_status': 'attributed_practitioner_claim',
-       'markdown': '[00:05:56](https://www.youtube.com/watch?v=Fn04U_Yfuzg&t=356s)',
-       'relevance': 'Attributed practitioner commentary on 30-60-90 day launch execution, '
-                    'weekly cohort KPIs, and pre-submission compliance audits.',
-       'source_type': 'video_pro_tip',
-       'text': "Below this video if you're on youtube um if you're on my website just share "
-               'the page um let others know about the site thanks for watching and I hope this '
-               'video did help you in some way and I thank you for watching and you have a '
-               'really wonderful day take care now bye.',
-       'timestamp': 356,
-       'timestamp_label': '[00:05:56]',
-       'timestamp_seconds': 356,
-       'tip': "Below this video if you're on youtube um if you're on my website just share the "
-              'page um let others know about the site thanks for watching and I hope this '
-              'video did help you in some way and I thank you for watching and you have a '
-              'really wonderful day take care now bye.',
-       'title': 'Michigan Unclaimed Property - This is How You Make an Unclaimed Property '
-                'Claim (Michael Curtis)',
-       'url': 'https://www.youtube.com/watch?v=Fn04U_Yfuzg&t=356s',
-       'video_id': 'Fn04U_Yfuzg'},
+       'text': 'Typically you can look to receive a check within 30 to 45 days after that initial '
+               'period is done.',
+       'timestamp': 149,
+       'timestamp_label': '[00:02:29]',
+       'timestamp_seconds': 149,
+       'tip': 'Typically you can look to receive a check within 30 to 45 days after that initial '
+              'period is done.',
+       'title': 'How To Get Paid FAST in Surplus Funds Recovery (Asset Recovery Business)',
+       'url': 'https://www.youtube.com/watch?v=9Tua3eW94Og&t=149s',
+       'video_id': '9Tua3eW94Og'},
       {'author': 'SurplusFundsRiches',
        'channel': 'SurplusFundsRiches',
        'epistemic_status': 'attributed_practitioner_claim',
-       'markdown': '[01:03:22](https://www.youtube.com/watch?v=4W8c0I28pxQ&t=3802s)',
-       'relevance': 'Attributed practitioner commentary on 30-60-90 day launch execution, '
-                    'weekly cohort KPIs, and pre-submission compliance audits.',
+       'markdown': '[00:03:09](https://www.youtube.com/watch?v=Y7MXP9nRGuA&t=189s)',
+       'relevance': 'Verbatim practitioner testimony from Chapter Q12.',
        'source_type': 'video_pro_tip',
-       'text': "That list at least three four times a week so you know what you're dealing "
-               "with and you're never gonna get oopsie we already had that file.",
-       'timestamp': 3802,
-       'timestamp_label': '[01:03:22]',
-       'timestamp_seconds': 3802,
-       'tip': "That list at least three four times a week so you know what you're dealing with "
-              "and you're never gonna get oopsie we already had that file.",
-       'title': 'Free Surplus Funds Training - Indepth, full hour! SurplusFundsRiches '
-                '(SurplusFundsRiches)',
-       'url': 'https://www.youtube.com/watch?v=4W8c0I28pxQ&t=3802s',
-       'video_id': '4W8c0I28pxQ'}]}
+       'text': 'We tell them what created the funds and how we bring value to the table.',
+       'timestamp': 189,
+       'timestamp_label': '[00:03:09]',
+       'timestamp_seconds': 189,
+       'tip': 'We tell them what created the funds and how we bring value to the table.',
+       'title': "Surplus Funds: What They're Not Telling You     #surplusfunds #taxoverages",
+       'url': 'https://www.youtube.com/watch?v=Y7MXP9nRGuA&t=189s',
+       'video_id': 'Y7MXP9nRGuA'},
+      {'author': 'Money Making Juggernaut',
+       'channel': 'Money Making Juggernaut',
+       'epistemic_status': 'attributed_practitioner_claim',
+       'markdown': '[00:02:26](https://www.youtube.com/watch?v=zrj6RA8N9HA&t=146s)',
+       'relevance': 'Verbatim practitioner testimony from Chapter Q12.',
+       'source_type': 'video_pro_tip',
+       'text': "Go ahead and Google surplus funds attorney and the state that you're working.",
+       'timestamp': 146,
+       'timestamp_label': '[00:02:26]',
+       'timestamp_seconds': 146,
+       'tip': "Go ahead and Google surplus funds attorney and the state that you're working.",
+       'title': '3 WAYS To Find A Surplus Funds Attorney FAST (Asset Recovery Business)',
+       'url': 'https://www.youtube.com/watch?v=zrj6RA8N9HA&t=146s',
+       'video_id': 'zrj6RA8N9HA'},
+      {'author': 'Surplus Funds Secrets',
+       'channel': 'Surplus Funds Secrets',
+       'epistemic_status': 'attributed_practitioner_claim',
+       'markdown': '[00:34:20](https://www.youtube.com/watch?v=c2vik3KCA5g&t=2060s)',
+       'relevance': 'Verbatim practitioner testimony from Chapter Q12.',
+       'source_type': 'video_pro_tip',
+       'text': "It doesn't matter if I've sent my attorney a bad case, he's still getting paid "
+               'that retainer.',
+       'timestamp': 2060,
+       'timestamp_label': '[00:34:20]',
+       'timestamp_seconds': 2060,
+       'tip': "It doesn't matter if I've sent my attorney a bad case, he's still getting paid that "
+              'retainer.',
+       'title': 'Full Circle Asset Recovery LIVE | Surplus Funds Office Hours & Q&A',
+       'url': 'https://www.youtube.com/watch?v=c2vik3KCA5g&t=2060s',
+       'video_id': 'c2vik3KCA5g'},
+      {'author': 'Foreclosure Recovery Inc',
+       'channel': 'Foreclosure Recovery Inc',
+       'epistemic_status': 'attributed_practitioner_claim',
+       'markdown': '[00:00:31](https://www.youtube.com/watch?v=pBzLGn7xg9U&t=31s)',
+       'relevance': 'Verbatim practitioner testimony from Chapter Q12.',
+       'source_type': 'video_pro_tip',
+       'text': 'When funds are recovered, you receive a 10% referral fee, typically $800 to $8,500 '
+               'per case.',
+       'timestamp': 31,
+       'timestamp_label': '[00:00:31]',
+       'timestamp_seconds': 31,
+       'tip': 'When funds are recovered, you receive a 10% referral fee, typically $800 to $8,500 '
+              'per case.',
+       'title': 'Attorney Partnership: Earn Passive Revenue from Surplus Fund Recoveries',
+       'url': 'https://www.youtube.com/watch?v=pBzLGn7xg9U&t=31s',
+       'video_id': 'pBzLGn7xg9U'},
+      {'author': 'Money Making Juggernaut',
+       'channel': 'Money Making Juggernaut',
+       'epistemic_status': 'attributed_practitioner_claim',
+       'markdown': '[00:05:00](https://www.youtube.com/watch?v=TJMvg6ZeN5Y&t=300s)',
+       'relevance': 'Verbatim practitioner testimony from Chapter Q12.',
+       'source_type': 'video_pro_tip',
+       'text': "Remember guys, we can't control the outcome. We can only control the output.",
+       'timestamp': 300,
+       'timestamp_label': '[00:05:00]',
+       'timestamp_seconds': 300,
+       'tip': "Remember guys, we can't control the outcome. We can only control the output.",
+       'title': 'Why 95% Of People FAIL at the Surplus Funds Recovery Business',
+       'url': 'https://www.youtube.com/watch?v=TJMvg6ZeN5Y&t=300s',
+       'video_id': 'TJMvg6ZeN5Y'},
+      {'author': 'Jordan Tejeda Marketing',
+       'channel': 'Jordan Tejeda Marketing',
+       'epistemic_status': 'attributed_practitioner_claim',
+       'markdown': '[00:26:24](https://www.youtube.com/watch?v=-bhX4mtOKPs&t=1584s)',
+       'relevance': 'Verbatim practitioner testimony from Chapter Q12.',
+       'source_type': 'video_pro_tip',
+       'text': "The lawyer gets $2,500, leaves us with $7,500. It's a 70-30% split for JV "
+               'partnering.',
+       'timestamp': 1584,
+       'timestamp_label': '[00:26:24]',
+       'timestamp_seconds': 1584,
+       'tip': "The lawyer gets $2,500, leaves us with $7,500. It's a 70-30% split for JV "
+              'partnering.',
+       'title': 'How I Started A Asset Recovery Business & Scaled It To Over 100K In The 1st Year/ '
+                'Surplus Rocket!!!',
+       'url': 'https://www.youtube.com/watch?v=-bhX4mtOKPs&t=1584s',
+       'video_id': '-bhX4mtOKPs'},
+      {'author': 'Surplus Systems',
+       'channel': 'Surplus Systems',
+       'epistemic_status': 'attributed_practitioner_claim',
+       'markdown': '[00:02:03](https://www.youtube.com/watch?v=fsPM6ribYtI&t=123s)',
+       'relevance': 'Verbatim practitioner testimony from Chapter Q12.',
+       'source_type': 'video_pro_tip',
+       'text': 'We do four live Q&A calls every single week.',
+       'timestamp': 123,
+       'timestamp_label': '[00:02:03]',
+       'timestamp_seconds': 123,
+       'tip': 'We do four live Q&A calls every single week.',
+       'title': 'Surplus Funds Recovery Business: Training, Tools & Support Included',
+       'url': 'https://www.youtube.com/watch?v=fsPM6ribYtI&t=123s',
+       'video_id': 'fsPM6ribYtI'},
+      {'author': 'Money Making Juggernaut',
+       'channel': 'Money Making Juggernaut',
+       'epistemic_status': 'attributed_practitioner_claim',
+       'markdown': '[00:03:52](https://www.youtube.com/watch?v=7REA1e46Yvo&t=232s)',
+       'relevance': 'Verbatim practitioner testimony from Chapter Q12.',
+       'source_type': 'video_pro_tip',
+       'text': 'Those who succeed are well organized. They have a consistent tracking on auction '
+               'results.',
+       'timestamp': 232,
+       'timestamp_label': '[00:03:52]',
+       'timestamp_seconds': 232,
+       'tip': 'Those who succeed are well organized. They have a consistent tracking on auction '
+              'results.',
+       'title': 'How Saturated Is The Surplus Funds Recovery Business Model?',
+       'url': 'https://www.youtube.com/watch?v=7REA1e46Yvo&t=232s',
+       'video_id': '7REA1e46Yvo'},
+      {'author': 'Money Making Juggernaut',
+       'channel': 'Money Making Juggernaut',
+       'epistemic_status': 'attributed_practitioner_claim',
+       'markdown': '[00:01:43](https://www.youtube.com/watch?v=k9f1r7jg4nA&t=103s)',
+       'relevance': 'Verbatim practitioner testimony from Chapter Q12.',
+       'source_type': 'video_pro_tip',
+       'text': 'Every single week, every single month, you should know exactly what counties, '
+               "exactly what states you're working.",
+       'timestamp': 103,
+       'timestamp_label': '[00:01:43]',
+       'timestamp_seconds': 103,
+       'tip': 'Every single week, every single month, you should know exactly what counties, '
+              "exactly what states you're working.",
+       'title': 'My FAIL-PROOF Surplus Funds Recovery System (Close More Deals)',
+       'url': 'https://www.youtube.com/watch?v=k9f1r7jg4nA&t=103s',
+       'video_id': 'k9f1r7jg4nA'},
+      {'author': 'Money Making Juggernaut',
+       'channel': 'Money Making Juggernaut',
+       'epistemic_status': 'attributed_practitioner_claim',
+       'markdown': '[00:17:41](https://www.youtube.com/watch?v=Hzupqw4cjhI&t=1061s)',
+       'relevance': 'Verbatim practitioner testimony from Chapter Q12.',
+       'source_type': 'video_pro_tip',
+       'text': 'You got to get your team together. You have to be able to identify their roles.',
+       'timestamp': 1061,
+       'timestamp_label': '[00:17:41]',
+       'timestamp_seconds': 1061,
+       'tip': 'You got to get your team together. You have to be able to identify their roles.',
+       'title': 'Surplus Funds Recovery: Scaling & Automation [Full Training]',
+       'url': 'https://www.youtube.com/watch?v=Hzupqw4cjhI&t=1061s',
+       'video_id': 'Hzupqw4cjhI'},
+      {'author': 'Money Making Juggernaut',
+       'channel': 'Money Making Juggernaut',
+       'epistemic_status': 'attributed_practitioner_claim',
+       'markdown': '[00:02:51](https://www.youtube.com/watch?v=pZt-fAltsNk&t=171s)',
+       'relevance': 'Verbatim practitioner testimony from Chapter Q12.',
+       'source_type': 'video_pro_tip',
+       'text': 'Most clients respond to typically that second or third text.',
+       'timestamp': 171,
+       'timestamp_label': '[00:02:51]',
+       'timestamp_seconds': 171,
+       'tip': 'Most clients respond to typically that second or third text.',
+       'title': 'AVOID These 5 Common Surplus Funds Recovery MISTAKES',
+       'url': 'https://www.youtube.com/watch?v=pZt-fAltsNk&t=171s',
+       'video_id': 'pZt-fAltsNk'},
+      {'author': 'Spencer Vann',
+       'channel': 'Spencer Vann',
+       'epistemic_status': 'attributed_practitioner_claim',
+       'markdown': '[00:04:27](https://www.youtube.com/watch?v=OvHZIY5JYBY&t=267s)',
+       'relevance': 'Verbatim practitioner testimony from Chapter Q12.',
+       'source_type': 'video_pro_tip',
+       'text': 'Step number one is have focus. Pick a niche and pick a geographic location.',
+       'timestamp': 267,
+       'timestamp_label': '[00:04:27]',
+       'timestamp_seconds': 267,
+       'tip': 'Step number one is have focus. Pick a niche and pick a geographic location.',
+       'title': 'Why most people fail at Surplus Funds and Overages',
+       'url': 'https://www.youtube.com/watch?v=OvHZIY5JYBY&t=267s',
+       'video_id': 'OvHZIY5JYBY'},
+      {'author': 'Unclaimed CEO',
+       'channel': 'Unclaimed CEO',
+       'epistemic_status': 'attributed_practitioner_claim',
+       'markdown': '[00:03:35](https://www.youtube.com/watch?v=c56x3h_z_XE&t=215s)',
+       'relevance': 'Verbatim practitioner testimony from Chapter Q12.',
+       'source_type': 'video_pro_tip',
+       'text': 'Do not bounce around from state to state to state. If you decide you are going to '
+               'abandon a state, then just be done with it.',
+       'timestamp': 215,
+       'timestamp_label': '[00:03:35]',
+       'timestamp_seconds': 215,
+       'tip': 'Do not bounce around from state to state to state. If you decide you are going to '
+              'abandon a state, then just be done with it.',
+       'title': 'Why 90% of People Fail in the Tax Surplus Industry (And How to Avoid It)',
+       'url': 'https://www.youtube.com/watch?v=c56x3h_z_XE&t=215s',
+       'video_id': 'c56x3h_z_XE'}]}

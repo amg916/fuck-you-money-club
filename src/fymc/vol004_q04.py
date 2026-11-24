@@ -1,121 +1,909 @@
+from __future__ import annotations
+
 CHAPTER_4 = {
-    "id": "Q4", "chapter_id": "Q4", "chapter_number": 4, "question_number": 4,
-    "slug": "startup-capital-cloud-credits-and-api-multiplexing",
-    "question_prompt": "What cash, credits, and infrastructure does a durable micro SaaS require?",
+    "id": "Q4",
+    "chapter_id": "Q4",
+    "chapter_number": 4,
+    "question_number": 4,
+    "slug": "product-hunt-launch-postgresql-multi-tenant-rls",
+    "question_prompt": "What do these videos teach about launching an app on Product Hunt, isolating tenant data in PostgreSQL, building multi-tenant APIs with EF Core or Claude Code and Prisma, and enabling, creating, and applying basic and advanced Supabase RLS policies—including AI-generated policies—to control access and prevent data leaks?",
     "kicker": "Q4 / THE BIG MONEY PLAYBOOKS",
-    "title": "Realistic Startup Requirements, Cloud Credit Grants & API Routers",
-    "subtitle": "$10,000-$100,000 Runway Allocation, $50k-$350k Cloud/LLM Credit Aggregation, Multi-Provider API Multiplexing & Zero-Idle Serverless Stacks",
-    "layout_template": "comparison_table", "reading_time_minutes": 14,
-    "executive_summary": "Buy evidence before capacity. A $10,000 MVP, $35,000 acquisition wedge, and $100,000 studio fund different experiments, not three versions of the same launch. Treat credits as restricted discounts rather than cash, price every request at the rate due after expiry, and keep idle infrastructure lean. A cached router can reduce repeat calls, but weak data and cascading retries destroy that saving. This chapter ties capital to milestones, contracts to ownership, and usage to margins so the business can survive without grants, free quotas, or unpaid founder labor hiding its costs.",
+    "title": "Launching on Product Hunt and Securing Multi-Tenant Apps with PostgreSQL RLS",
+    "subtitle": "An app launch on Product Hunt, plus PostgreSQL tenant isolation and row-level authorization using Supabase, EF Core, Prisma, Claude Code, and AI-generated policies.",
+    "layout_template": "comparison_matrix",
+    "reading_time_minutes": 15,
+    "executive_summary": (
+        "Jack Smith's Product Hunt launch finished with 17 upvotes after late social promotion "
+        "and a bespoke video that received two views. Their next attempt would emphasize a "
+        "clearer tagline, earlier outreach, and more engaging content. Across the database "
+        "demonstrations, practitioners move row authorization into PostgreSQL rather than trusting "
+        "every application query to remember its filter. The mechanics are enabling RLS, defining "
+        "policies, supplying caller context, and testing through the actual application role. "
+        "Milan Jovanović uses an EF Core connection interceptor; Alex Rusin builds transaction-scoped "
+        "Prisma access with Claude Code. Supabase demonstrates dashboard templates, AI-generated "
+        "policies, and relational authorization. Alternatives differ on policy granularity, session "
+        "handling, and encryption architecture. Repeated traps include owner bypass, privileged "
+        "views, unrestricted policies, missing write permissions, and misleadingly successful interfaces."
+    ),
     "key_metrics": [
-        {"label": "Capital", "value": "$10k-$100k", "context": "Three launch budgets", "note": "Not revenue forecasts"},
-        {"label": "Fixed spend", "value": "$2k-$15k/mo", "context": "Before usage costs", "note": "Include paid labor"},
-        {"label": "Credit target", "value": "$50k-$350k", "context": "Conditional face value", "note": "Not assured or cash"},
+        {
+            "label": "First Product Hunt launch result",
+            "metric": "First Product Hunt launch result",
+            "value": "17 upvotes",
+            "confidence": "attributed_practitioner_claim",
+            "context": (
+                "Jack Smith reports the first launch's result and adopts that result as the "
+                "benchmark to beat on the next attempt."
+            ),
+            "source": "Jack Smith ([hJtOsLAfxxE @ 00:12:20])",
+        },
+        {
+            "label": "Bespoke launch video audience",
+            "metric": "Bespoke launch video audience",
+            "value": "2 views",
+            "confidence": "attributed_practitioner_claim",
+            "context": (
+                "Jack Smith spent hours scripting and producing a Product Hunt-specific video, "
+                "then reported two views and wished the time had gone into outbound content."
+            ),
+            "source": "Jack Smith ([hJtOsLAfxxE @ 00:09:04])",
+        },
+        {
+            "label": "Prisma concurrency exercise",
+            "metric": "Prisma concurrency exercise",
+            "value": "800 concurrent requests; no contamination",
+            "confidence": "attributed_practitioner_claim",
+            "context": (
+                "Alex Rusin reports this result from the generated hammer script, explicitly "
+                "limiting the finding to the tested configuration and failure mode."
+            ),
+            "source": "Alex Rusin ([ctJy5AxgVXM @ 00:07:51])",
+        },
+        {
+            "label": "Product Hunt hidden-vote opening",
+            "metric": "Product Hunt hidden-vote opening",
+            "value": "First 4 hours",
+            "confidence": "attributed_practitioner_claim",
+            "context": (
+                "Jack Smith describes upvotes being hidden and products appearing in randomized "
+                "order before vote totals become visible and ordering changes."
+            ),
+            "source": "Jack Smith ([hJtOsLAfxxE @ 00:01:13])",
+        },
     ],
     "sections": [
         {
-            "heading": "1. Buy one proof point with each cash tranche",
-            "epistemic_status": "illustrative_model",
+            "id": "practitioner-consensus",
+            "title": "The Practitioner Consensus",
             "paragraphs": [
-                "Start with the job a buyer will pay to finish, not the number of models your app can call. The $10,000 bootstrapped MVP funds one narrow workflow and one sales channel. Reserve $2,000 for build work, $1,000 for setup and contracts, $1,000 for customer tests, and $6,000 for operating cash. At $2,000 of monthly fixed expense, that reserve buys three months before usage charges, taxes, or revenue. It does not buy a full salaried team. Name the founder hours supplied outside the cash budget and price them separately when judging viability. Release the build money only after interviews reveal a repeated paid task. Ship a small paid pilot before spending the reserve on broad feature work or speculative hiring plans.",
-                "The $35,000 paid acquisition wedge puts $8,000 into product work, $2,000 into setup, $10,000 into measured channel tests, and $15,000 into operating cash. At $5,000 monthly fixed expense, the reserve again covers three months before variable costs. Spend the channel budget in small batches tied to paid conversion and retained accounts, not cheap signups. The $100,000 studio allocates $20,000 to shared product foundations, $5,000 to setup, $15,000 to launch tests, and $60,000 to reserve. At $15,000 fixed monthly expense, that is four months, not a year. Build a second product only when the first shows repeat purchases or renewals. Sharing authentication and billing can reduce work; sharing an unproven market thesis across five apps simply multiplies the same unresolved commercial risk.",
-                "Use a weekly cash ledger with separate columns for one time build costs, fixed operating expense, usage costs, collections, and restricted credits. The $2,000 to $15,000 monthly range is a planning envelope, not a vendor quote or a promise that every team fits inside it. Include actual founder pay, contractor retainers, bookkeeping, support tools, and minimum service fees where incurred. Keep per request inference, storage growth, and outbound traffic outside fixed expense so rising usage stays visible. Runway equals available unrestricted cash divided by expected net monthly cash burn; a static expense ratio is only a starting estimate. Model slow collections and refunds before adding projected sales. A credit balance cannot pay a contractor, cover payroll tax, or replace money needed for the next rent payment."
-            ],
-            "table": {"caption": "Capital allocation; all amounts USD", "headers": ["Use", "MVP", "Wedge", "Studio"], "rows": [["Build", "2,000", "8,000", "20,000"], ["Setup", "1,000", "2,000", "5,000"], ["Tests", "1,000", "10,000", "15,000"], ["Reserve", "6,000", "15,000", "60,000"], ["Total", "10,000", "35,000", "100,000"]]}
-        },
-        {
-            "heading": "2. Own the code and track the tax basis",
-            "epistemic_status": "operating_framework",
-            "paragraphs": [
-                "Form one genuine operating entity where the facts support it. A Delaware LLC is not a credit entitlement, and a home state LLC can be simpler for a small local team. Compare filing costs, annual charges, registered agent fees, and foreign registration needs before choosing. Keep the entity name, tax records, bank account, website, and program applications consistent. Do not spin up shell entities to reset grants or free quotas. Separate the business cash ledger from personal funds and retain invoices for cloud spend, development work, and purchased assets. This makes both grant review and year end accounting less painful. More importantly, it gives you a reliable picture of cash that belongs to the business rather than cash temporarily advanced by its owner to survive.",
-                "For US software entities, 26 U.S.C. section 174 deserves explicit attention, but the old blanket capitalization summary is no longer enough. For tax years beginning after 2024, section 174A generally permits current deduction of domestic research or experimental expenditures, with elections and transition provisions to assess. Section 174 generally retains capitalization and fifteen year amortization for foreign research expenditures, with software development included under the applicable statutory rules. Earlier tax years may involve domestic five year amortization and later transition choices. Track where development occurs, when costs arise, and which entity incurs them. Have the tax preparer classify the work rather than treating every invoice as research. Tax deductions and amortization affect taxable income; neither automatically restores the cash spent building the product that month.",
-                "Secure ownership before the first paid release. Under 17 U.S.C. section 201(b), an employer or commissioning party owns a qualifying work made for hire unless the parties agree otherwise in a signed writing. Contractor software is not automatically work made for hire simply because an invoice uses that phrase; commissioned works face specific statutory requirements. Use a signed present assignment covering the contractor's transferable rights in the deliverables, backed by a list of preexisting materials and their licenses. Section 204(a) generally requires a signed writing for a copyright ownership transfer other than by operation of law. Obtain repository access, build instructions, and rights to modify the work. Track third party packages separately because the contractor cannot assign ownership of code they merely use under license."
-            ]
-        },
-        {
-            "heading": "3. Aggregate eligible credits, not imaginary cash",
-            "epistemic_status": "operating_framework",
-            "paragraphs": [
-                "The cloud_ai_startup_credit_aggregation_arbitrage play means collecting eligible infrastructure discounts against work you already intend to run. Build an application register covering AWS Activate, Google for Startups Cloud, Microsoft Founders Hub, Cloudflare startup offerings, and any currently available OpenAI and Anthropic startup credit routes. Program names, eligibility, partner referrals, award ceilings, and covered services change. Confirm current terms directly before applying; do not assume a standing public grant exists for every provider. Use the same genuine Delaware or state LLC records across applications and disclose prior awards where requested. A $50,000 to $350,000 aggregate is a conditional planning target for qualifying applicants, not an expected check. Never count overlapping offer tiers twice or treat a partner's advertised ceiling as an award already earned by your own company.",
-                "Create a credit ledger with awarded amount, activation date, expiry date, permitted services, billing account, prior award restrictions, and the next cash charge date. Distinguish an application from an accepted award and an accepted award from usable billing credit. Compute economic value as eligible spend actually displaced before expiry, less the extra costs of using that platform. A $100,000 award applied to only $12,000 of planned eligible usage is worth at most $12,000 before migration effort and other incremental expenses. Do not move customer data between regions just to spend a grant. Likewise, a cloud balance may not cover marketplace models, support, taxes, or another provider's API. Check each exclusion and keep the uncovered line items in the cash budget from the first production week.",
-                "Run two monthly cost views: the cash invoice after credits and the same workload priced at ordinary unsubsidized rates. Use the second view for product pricing, customer limits, and hiring decisions. Schedule expiry reviews ninety, sixty, and thirty days ahead; update the cash forecast when a program changes rather than waiting for the first full bill. Move only portable workloads when savings exceed engineering and reliability costs. A small team should not maintain three cloud stacks to save less than the contractor time needed to patch them. Keep exports, infrastructure configuration, and restore instructions usable outside the subsidized account. The objective is time to reach retained revenue, not maximum nominal grant volume. Credits should reduce financing pressure while the business proves that customers will fund its normal operations.",
-                "Maintain one unified ninety, sixty, and thirty day credit cliff migration calendar across every billing account, rather than separate reminders that hide simultaneous expirations. Give each award an owner, source terms link, last verified date, activation deadline, balance, eligible daily burn, contractual expiry, and projected exhaustion date. Trigger the calendar from the earlier of exhaustion or expiry; a large award can disappear months before its stated end date when customer traffic accelerates. Ninety days before that date, export invoices and usage by service, calculate the unsubsidized monthly bill, and identify workloads whose data, dependencies, and recovery requirements make relocation practical. Include migration labor, duplicate storage, egress, and parallel operation in the comparison. Sixty days before the cliff, restore a representative dataset into the destination, replay a sanitized workload, compare accepted results and latency, and verify that backup retention and deletion behavior still meet the product promise. Keep customer data within its permitted processing locations and document any services that cannot move economically. Thirty days before the cliff, reserve cash for the first ordinary invoice, reduce unnecessary capacity, communicate any planned maintenance, and record a reversible cutover sequence with an owner and rollback deadline. Recheck balances weekly during the final month and daily when a traffic spike could exhaust the remaining credit. If staying is cheaper, close the migration task with the retail budget rather than moving merely to chase another award. Treat the directory ranges as illustrative screening bands, not verified current offers; zero remains the planning value until the provider confirms eligibility and an award is usable. Partner specific rows intentionally leave amounts unspecified where no durable public tier can be assumed. Store the actual award letter beside its current exclusions, including whether model usage, GPU instances, support, or marketplace charges qualify. Distinguish hosted model billing from a direct model provider API account, because credits generally do not transfer between those billing relationships. Reconcile both back to the same workload forecast so the team does not count one future invoice as displaced twice."
+                (
+                    "Jack Smith describes Product Hunt as a place to reach early adopters, feedback, "
+                    "and sometimes press, primarily among people already in technology. Products receive "
+                    "a homepage listing for 24 hours; the opening four hours hide votes and randomize "
+                    "ordering, after which vote totals determine placement. Their launch strategy separates "
+                    "inbound votes from people browsing the platform and outbound votes from people brought "
+                    "there through an existing audience. The execution starts with the icon, product name, "
+                    "and especially the tagline, because those are the pieces visible before someone opens "
+                    "the listing. Smith's mobile app, Quotable, did not solve a pain point shared by much "
+                    "of that audience, and their retrospective focuses on making its relevant benefits "
+                    "clearer rather than abandoning the platform [hJtOsLAfxxE @ 00:07:21]. On the application "
+                    "side, Alex Rusin demonstrates an equally concrete dependency: a family-tree endpoint "
+                    "returns another account's person when its account filter disappears "
+                    "[ctJy5AxgVXM @ 00:00:00]. Milan Jovanović reproduces the same failure with notes "
+                    "belonging to two users after removing an EF Core filter. Both developers move the "
+                    "authorization condition into PostgreSQL so the omitted application filter no longer "
+                    "exposes the other user's rows [OwCgDPa0DnA @ 00:02:22]."
+                ),
+                (
+                    "The database consensus is an authorization rule attached to the data, not a promise "
+                    "that every caller will remember the right condition. Paul Copplestone, speaking on "
+                    "Microsoft Developer, explains RLS as an implicit WHERE clause: a profile query can "
+                    "omit its own user filter while the policy still evaluates which rows the caller "
+                    "may access. Their distinction is precise: authentication determines whether a user "
+                    "or role can enter; authorization determines what that caller can access afterward "
+                    "[vZT1Qx2xUCo @ 00:02:05]. Past The Diagram applies the same mechanism to unpaid "
+                    "invoices, with the database comparing tenant_id against the current session's "
+                    "tenant rather than relying on the developer to add that comparison. The application "
+                    "must supply the tenant resolved after authentication, and the policy needs attention "
+                    "to both existing rows and incoming values [h1KAW_izGl8 @ 00:00:43]. updownx adds "
+                    "the operating prerequisites: enabled RLS without a policy denies rows by default, "
+                    "while superusers and BYPASSRLS roles bypass enforcement. Their recommended application "
+                    "connection uses a dedicated non-superuser role with the required table privileges. "
+                    "They also use the pg_policies view to inspect policy names, roles, commands, and "
+                    "USING and WITH CHECK expressions, making the configured rules visible rather than "
+                    "assuming that a table toggle explains every permission [MEkM0aC1JaI @ 00:02:46]."
+                ),
+                (
+                    "The dashboard walkthroughs agree that enabling RLS is a table-specific operation "
+                    "and that allowing the intended actions is a separate task. Money Tools Academy "
+                    "starts by choosing the correct project, opening Table Editor, selecting the actual "
+                    "table, and checking that its RLS status remains enabled afterward. They emphasize "
+                    "that changing one table does not change every related table in the project "
+                    "[OBXv-uTBD7A @ 00:01:01]. SmartMoneyTutorials takes the authentication, configuration, "
+                    "and policies route, finds a table marked disabled, and enables it. Their important "
+                    "qualification is that enabling alone grants nothing: without policies, access is "
+                    "denied, so the intended reads and writes still need rules "
+                    "[Sctm5VrwWTw @ 00:02:09]. Shortcut Academy reaches the same controls from the "
+                    "database and tables area and says a table created in the dashboard may already "
+                    "have RLS enabled. Check the current toggle rather than assuming its state "
+                    "[4ncm-XBGErs @ 00:00:55]. Codewithguillaume demonstrates the consequence: enabling "
+                    "a read-all template makes orders appear in Postman, including another user's "
+                    "orders. They then remove that broad policy and choose the own-data template. "
+                    "Getting data back establishes that a policy permits the query; their demonstration "
+                    "then narrows the permission to the intended owner [Vx1q8Nfp0BE @ 00:01:48]."
+                ),
             ],
             "table": {
-                "caption": "12-Program Cloud, GPU & LLM Startup Credit Grant Directory (Verify Current Provider Terms & Eligibility)",
-                "headers": ["Program / Provider", "Illustrative Tier Range", "Typical Eligibility Path", "Covered Workloads", "Expiry / Exclusions", "Unsubsidized Exit Plan"],
+                "caption": "Baseline mechanics the practitioners actually put into operation",
+                "headers": ["Operating baseline", "What the practitioner does", "Expert Source"],
                 "rows": [
-                    ["AWS Activate Founders", "$1k screening band; verify", "Eligible early startup; direct application", "Eligible AWS compute, storage, databases", "Award deadline; inspect support and marketplace exclusions", "Budget retail instances; export data and infrastructure config"],
-                    ["AWS Activate Portfolio (Partner/Accelerator)", "$5k-$100k screening band; verify", "Qualifying Activate partner referral; prior awards matter", "Eligible AWS services; confirm GPU and model SKUs", "Partner tier and award expiry; do not add overlapping tiers", "Right-size at retail; reserve egress and migration cash"],
-                    ["Microsoft for Startups Founders Hub", "$1k-$150k screening band; verify current route", "Startup application; progression and partner terms vary", "Eligible Azure services; verify model and GPU access separately", "Stage deadlines; credits do not ensure capacity", "Price Azure retail; preserve portable containers and exports"],
-                    ["Google for Startups Cloud Program", "$2k-$350k screening band; verify tier", "Startup stage, funding and AI eligibility vary", "Eligible Google Cloud compute, data and AI services", "Tier schedules and coverage percentages; inspect excluded SKUs", "Forecast full retail including egress; test alternate runtime"],
-                    ["Cloudflare for Startups", "Award-specific; budget $0 until confirmed", "Eligible startup or accepted partner referral", "Eligible Workers, storage and edge services", "Product caps, expiry and paid add-ons vary", "Cap requests; budget paid Workers and portable origin"],
-                    ["DigitalOcean Hatch", "Historical program name; verify active successor", "Confirm current startup application or partner route", "Eligible compute, managed databases and storage", "Availability, award duration and service exclusions vary", "Right-size paid compute; rehearse database restore elsewhere"],
-                    ["Vercel Startup / Partner Credits", "Partner-specific; no assumed public award", "Current startup or partner offer if available", "Eligible deployment, functions and bandwidth", "Plan fees, seats and excess usage may remain payable", "Model paid plan plus usage; test alternate Next.js hosting"],
-                    ["Supabase / Neon Startup Tiers", "Separate offers; verify each award", "Provider-specific startup application or partner route", "Eligible Postgres compute, storage and platform usage", "Independent balances; inspect backup, egress and feature limits", "Test Postgres export; inventory proprietary extensions and auth"],
-                    ["OpenAI Startup / Partner API Credits", "Offer-specific; budget $0 until awarded", "Current partner, accelerator or selected startup route", "Only API projects and models named in award", "Expiry, model restrictions; consumer subscriptions separate", "Token caps and paid API reserve; benchmark compatible fallback"],
-                    ["Anthropic Startup / Partner API Credits", "Offer-specific; no universal tier assumed", "Verify current provider or authorized partner route", "Eligible direct API usage specified by award", "Expiry and model limits; cloud reseller billing separate", "Price retail tokens; validate fallback quality and processing terms"],
-                    ["PostHog for Startups", "Award-specific credits or discounts; verify", "Startup eligibility and prior participation review", "Eligible analytics, replay and other named products", "Product allowances, retention and overages vary", "Sample events; shorten retention; forecast retail ingestion"],
-                    ["Sentry / Datadog Startup Plans", "Independent offers; verify each provider", "Separate startup or partner applications", "Eligible error tracking, logs, traces or monitoring", "Host, event and ingestion meters differ; expiry varies", "Set sampling and retention; retain portable telemetry export"]
-                ]
+                    [
+                        "Separate Product Hunt discovery from the audience you bring to the launch.",
+                        "Smith distinguishes inbound platform browsers from outbound supporters, then works on listing appeal, audience outreach, and the launch date.",
+                        "Jack Smith ([hJtOsLAfxxE @ 00:02:33])",
+                    ],
+                    [
+                        "Move the forgotten user filter into a database authorization policy instead.",
+                        "Jovanović removes the application filter, exposes both users' notes, and demonstrates PostgreSQL applying the missing restriction through row-level security.",
+                        "Milan Jovanović ([OwCgDPa0DnA @ 00:02:22])",
+                    ],
+                    [
+                        "Treat identity verification and row authorization as separate questions to answer.",
+                        "Copplestone distinguishes entering the database from deciding which particular data the admitted user or role may subsequently access.",
+                        "Microsoft Developer ([vZT1Qx2xUCo @ 00:02:05])",
+                    ],
+                    [
+                        "Inspect the actual table because related tables do not inherit this toggle.",
+                        "The walkthrough selects the project and table individually, then checks the status indicator to confirm that RLS remains enabled.",
+                        "Money Tools Academy ([OBXv-uTBD7A @ 00:01:01])",
+                    ],
+                    [
+                        "Expect missing policies to deny requests rather than automatically restore functionality.",
+                        "The enabling guide explicitly separates activating RLS from adding policies that permit the exact reads and writes the application needs.",
+                        "SmartMoneyTutorials ([Sctm5VrwWTw @ 00:02:09])",
+                    ],
+                    [
+                        "Use policy metadata and an application role subject to the configured rules.",
+                        "updownx recommends inspecting pg_policies and running application queries as a dedicated non-superuser with the necessary privileges on the protected tables.",
+                        "updownx ([MEkM0aC1JaI @ 00:04:28])",
+                    ],
+                ],
+            },
+        },
+        {
+            "id": "exact-street-mechanics",
+            "title": "Exact Street Mechanics, Tools & Numbers",
+            "paragraphs": [
+                (
+                    "Build the first policy around an explicit operation and condition. SmartMoneyTutorials "
+                    "opens the chosen table's policy creation screen, selects a template or starts from "
+                    "scratch, gives the policy a clear name and description, selects the operation, and "
+                    "compares the row's user identifier with the authenticated user. They finish by saving "
+                    "and testing through the application's authenticated calls "
+                    "[sfzubTrNiiU @ 00:02:00]. Shortcut Academy separates the expressions: USING controls "
+                    "accessible rows and the rows targeted by update or delete, while WITH CHECK validates "
+                    "new or changed rows for insert and update. Their ownership example mirrors the "
+                    "condition in both places [4ncm-XBGErs @ 00:01:53]. Supabase demonstrates the AI "
+                    "version without changing those mechanics: ask the SQL assistant to enable RLS, "
+                    "accept the generated change, and run it; then request read access only when the "
+                    "published column is true. The policy editor displays a diff before acceptance and "
+                    "saving. Next, switch from the dashboard's privileged postgres role to anonymous or "
+                    "a specific authenticated user and inspect the resulting rows "
+                    "[hu2SQjvCXIw @ 00:02:44]. Codewithguillaume's orders example shows why the selected "
+                    "template matters: read-all returns other users' orders, so their replacement is "
+                    "the template for viewing only one's own data [Vx1q8Nfp0BE @ 00:02:09]."
+                ),
+                (
+                    "Milan Jovanović implements caller context with an EF Core database connection "
+                    "interceptor. Their API extracts the user identifier from JWT claims, and the "
+                    "interceptor overrides ConnectionOpenedAsync so the session setting is established "
+                    "before EF Core continues executing the query. They inject the HTTP context accessor, "
+                    "read the name-identifier claim, create a database command, and set the application "
+                    "user value. Registration includes the accessor, the interceptor service, and the "
+                    "database context's interceptor configuration [OwCgDPa0DnA @ 00:07:44]. Alex Rusin "
+                    "uses Claude Code to generate Prisma migrations and a transaction-scoped account "
+                    "wrapper instead. The sequence is enable RLS, create the account policy, discover "
+                    "owner bypass, force enforcement, and then supply account context. Their wrapper "
+                    "uses set_config with its local flag true so the setting reverts at transaction "
+                    "end rather than following a pooled connection into another request "
+                    "[ctJy5AxgVXM @ 00:05:31]. Rusin then replaces repeated route-level wrapping with "
+                    "a Prisma client extension: the raw client stays inside db.ts, while the exported "
+                    "account-scoped interface wraps every model operation in a scoped transaction. "
+                    "Past The Diagram likewise requires transaction-local context and warns that ordinary "
+                    "SET survives on the connection after it returns to the pool "
+                    "[h1KAW_izGl8 @ 00:02:09]."
+                ),
+                (
+                    "Supabase's advanced email client starts with an identity mismatch: application users "
+                    "have integer IDs, while auth.users has UUIDs. The implementation adds a nullable, "
+                    "unique supabase_id foreign key, producing a one-to-one link without deleting the "
+                    "application user's email history when the authentication user disappears. A trigger "
+                    "function inserts the public user or updates the existing email match with the new "
+                    "authentication ID [PdEutzhsrws @ 00:02:17]. The email read policy then resolves "
+                    "the public user ID through that link and allows emails where the user is sender "
+                    "or recipient. Folder visibility follows email visibility with an EXISTS subquery, "
+                    "so the referenced email policy governs which folder records contribute to the "
+                    "display. Supabase's blog walkthrough uses the same relational technique: a comment "
+                    "is readable when its associated post can be selected, avoiding a duplicate "
+                    "implementation of the post's visibility rules [Ow_Uzedfohk @ 00:10:45]. Write "
+                    "permissions remain separate: the email example checks that the authenticated user "
+                    "is the sender, and the blog example combines post visibility with comment ownership. "
+                    "Copplestone also explains USING as checking existing values and WITH CHECK as "
+                    "checking incoming values, including preventing an update from changing ownership "
+                    "to another user [vZT1Qx2xUCo @ 00:10:59]."
+                ),
+            ],
+            "table": {
+                "caption": "Execution paths, concrete tools, and the settings that carry the work",
+                "headers": ["Execution task", "Exact practitioner workflow", "Expert Source"],
+                "rows": [
+                    [
+                        "Prepare the launch listing and bring existing followers into the launch day.",
+                        "Smith works on icon, name, tagline, description, images, video, and first comment, then links the launch from X and LinkedIn.",
+                        "Jack Smith ([hJtOsLAfxxE @ 00:03:34])",
+                    ],
+                    [
+                        "Create a named table policy with the intended action and ownership condition.",
+                        "Choose a template or start from scratch, select the operation, define the condition, save the policy, and test authenticated application calls.",
+                        "SmartMoneyTutorials ([sfzubTrNiiU @ 00:02:00])",
+                    ],
+                    [
+                        "Use the AI editor to generate published-post visibility and inspect its change.",
+                        "Supabase requests published-only reads, examines the generated policy and diff, accepts the change, and saves it against the database.",
+                        "Supabase ([hu2SQjvCXIw @ 00:02:09])",
+                    ],
+                    [
+                        "Set the claims-derived user before EF Core executes the application query.",
+                        "Jovanović overrides the connection-opened method, reads the HTTP user's claim, executes the session-setting command, and registers the interceptor with the context.",
+                        "Milan Jovanović ([OwCgDPa0DnA @ 00:07:44])",
+                    ],
+                    [
+                        "Keep Prisma access scoped without asking every route to remember a wrapper.",
+                        "Rusin keeps the raw client private inside db.ts and exports account-scoped access whose extension wraps every model operation in a transaction.",
+                        "Alex Rusin ([ctJy5AxgVXM @ 00:09:22])",
+                    ],
+                    [
+                        "Make related-table visibility follow the authorization already enforced on its parent.",
+                        "Supabase selects the associated post inside a comment policy and uses EXISTS so comments are visible only when their post is visible.",
+                        "Supabase ([Ow_Uzedfohk @ 00:11:00])",
+                    ],
+                ],
+            },
+            "callout": {
+                "kind": "INSIDER PRO-TIPS",
+                "title": "Small implementation choices with concrete practitioner payoffs",
+                "body": "Use the specific lever each practitioner demonstrated, including the conditions around it.",
+                "items": [
+                    (
+                        "Smith used Max Blade's live-updating Product Hunt stats and comments stream "
+                        "to remain at the top of followers' X feeds; their next idea was to alternate "
+                        "that stream with a live coding session and more interaction. "
+                        "[Jack Smith — hJtOsLAfxxE @ 00:10:55]"
+                    ),
+                    (
+                        "Copplestone recommends wrapping an RLS function call in SELECT so the planner "
+                        "can obtain the value once instead of evaluating the function for every row. "
+                        "[Microsoft Developer — vZT1Qx2xUCo @ 00:13:04]"
+                    ),
+                    (
+                        "Inspect pg_policies for the policy name, affected roles, command, USING, "
+                        "WITH CHECK, and whether the policy is permissive or restrictive. "
+                        "[updownx — MEkM0aC1JaI @ 00:02:46]"
+                    ),
+                    (
+                        "Use the table editor's authenticated role and choose a specific user to test "
+                        "actual permitted actions, not only the rows visible to the privileged dashboard role. "
+                        "[Supabase — hu2SQjvCXIw @ 00:03:43]"
+                    ),
+                ],
             },
             "sop_steps": [
-                {"step": 1, "title": "Map eligibility", "action": "Check current program terms.", "detail": "Record entity history, funding stage, referral needs, and prior awards."},
-                {"step": 2, "title": "Apply accurately", "action": "Submit consistent business records.", "detail": "Use genuine accounts; do not duplicate identities to reset benefits."},
-                {"step": 3, "title": "Book usable value", "action": "Match awards to planned eligible spend.", "detail": "Exclude overlap, expired balances, and uncovered services."},
-                {"step": 4, "title": "Reprice monthly", "action": "Compare subsidized and retail costs.", "detail": "Fund the next invoice before credits expire."}
-            ]
+                {
+                    "step": 1,
+                    "title": "Prepare the listing and outbound promotion",
+                    "action": "Work on the homepage tagline and prepare audience-facing launch content before launch day.",
+                    "detail": (
+                        "Smith identifies the tagline as the missed opportunity to communicate features "
+                        "and regrets posting only on launch day rather than building interest beforehand. "
+                        "[Jack Smith — hJtOsLAfxxE @ 00:08:30] "
+                        "[Jack Smith — hJtOsLAfxxE @ 00:10:25]"
+                    ),
+                },
+                {
+                    "step": 2,
+                    "title": "Enable the intended table and create explicit permissions",
+                    "action": "Confirm the project and table, enable RLS, and save the policies for the intended operations.",
+                    "detail": (
+                        "Verify the selected table's enabled indicator; then select the action and role, "
+                        "and define the USING and WITH CHECK conditions appropriate to that action. "
+                        "[Money Tools Academy — OBXv-uTBD7A @ 00:02:11] "
+                        "[Shortcut Academy — 4ncm-XBGErs @ 00:01:34]"
+                    ),
+                },
+                {
+                    "step": 3,
+                    "title": "Connect enforcement to caller context",
+                    "action": "Use an application role subject to RLS and supply the authenticated tenant in transaction-local scope.",
+                    "detail": (
+                        "Past The Diagram says to derive tenant context after authentication, not from a "
+                        "caller-chosen header, and to use SET LOCAL inside the transaction. Rusin's "
+                        "Prisma wrapper uses the equivalent local flag in set_config. "
+                        "[Past The Diagram — h1KAW_izGl8 @ 00:01:49] "
+                        "[Alex Rusin — ctJy5AxgVXM @ 00:05:31]"
+                    ),
+                },
+                {
+                    "step": 4,
+                    "title": "Exercise both allowed and forbidden access",
+                    "action": "Test another tenant's known row through the real application role and test the write operations too.",
+                    "detail": (
+                        "Past The Diagram expects zero rows for the cross-tenant read and extends testing "
+                        "to insert, update, and delete. Rusin also deliberately removes FORCE to make "
+                        "the isolation test fail and checks pooled requests under concurrency. "
+                        "[Past The Diagram — h1KAW_izGl8 @ 00:03:52] "
+                        "[Alex Rusin — ctJy5AxgVXM @ 00:14:30]"
+                    ),
+                },
+            ],
         },
         {
-            "heading": "4. Route for a valid answer, not the cheapest call",
-            "epistemic_status": "operating_framework",
+            "id": "disagreements-and-alternatives",
+            "title": "Where Practitioners Disagree & Alternative Playbooks",
             "paragraphs": [
-                "The free_tier_api_waterfall_multiplexing play maintains a catalog of twenty to forty developer enrichment, search, and language model tiers, but a request should touch only a short compatible route. These services are not interchangeable. Define separate capability pools, normalized response schemas, licensing rules, freshness requirements, and quality tests. Pick a primary and one or two permitted fallbacks within each pool. Authenticate with your own legitimate accounts and respect rate limits and commercial use conditions; rotating accounts to evade limits is not infrastructure leverage. Store permitted results in Postgres using keys that include tenant scope, normalized inputs, provider version, and transformation version. Attach provenance and expiry times. Prevent one customer's private data from becoming another customer's cache hit, and never cache a provider response beyond the retention its terms allow.",
-                "A cache miss should enter a bounded decision path. Check remaining provider quota and the customer's cost budget, acquire a concurrency slot, and issue one timed request. Validate the returned schema and minimum quality before calling it a success. Retry only suitable transient failures within a small shared attempt budget; use jitter and honor retry timing signals. Open a circuit after repeated failures, then probe recovery with limited traffic. Do not waterfall through forty APIs during an outage. Authentication errors, forbidden uses, and invalid inputs need correction rather than another provider bill. Persist a job identifier for asynchronous work so client retries do not duplicate expensive processing. Record attempts, latency, token or unit consumption, and retail equivalent cost for every completed job, including unsuccessful attempts that still incur charges.",
-                "Benchmark the router against a simple single provider baseline before trusting its savings. Measure cost per accepted result, cache hit rate, stale answer rate, fallback frequency, and tail latency by customer cohort. A free search response that requires manual correction can cost more than a paid accurate response. Set a maximum spend per job and return a clear deferred or unavailable state when no acceptable route remains. Keep paid capacity available for customers whose service promise requires it, and charge for usage above the included allowance. Route sensitive inputs only to providers covered by the customer's processing requirements. Keep secrets outside browser bundles and redact logs. The router earns its maintenance cost only when the savings on valid delivered outcomes exceed its engineering, support, and extra failure handling burden."
+                (
+                    "Policy granularity is a genuine difference in implementation style. Milan Jovanović "
+                    "creates one user-isolation policy for all commands in the notes example, explicitly "
+                    "choosing SELECT, UPDATE, INSERT, and DELETE together "
+                    "[OwCgDPa0DnA @ 00:04:01]. Supabase's introductory blog walkthrough also begins "
+                    "with an all-actions ownership policy, then adds a separate published-post read "
+                    "policy and later a moderation policy. That demonstration uses additional permissions "
+                    "to expand what the application can do without granting another user ownership "
+                    "of the post [Ow_Uzedfohk @ 00:04:25]. Copplestone recommends the opposite "
+                    "organizational default: avoid FOR ALL, create one policy per operation and role, "
+                    "and place the relevant conditions inside that policy. Their reason is the mental "
+                    "model of multiple policies: permissive policies combine with OR, while restrictive "
+                    "policies combine with AND. They find the combination harder to reason about "
+                    "than a granular policy containing its own logic [vZT1Qx2xUCo @ 00:12:01]. "
+                    "updownx teaches both mechanisms as available controls, illustrating a permissive "
+                    "admin rule alongside a restrictive local-socket requirement. The alternatives are "
+                    "not competing claims about whether authorization belongs in PostgreSQL; they are "
+                    "different ways to arrange and reason about the conditions that admit a row "
+                    "[MEkM0aC1JaI @ 00:01:22]."
+                ),
+                (
+                    "Caller context is where the implementations diverge more sharply. Jovanović obtains "
+                    "the user from authenticated claims and sets the session value after opening the "
+                    "EF Core connection. They prefer establishing it once per API request rather than "
+                    "repeating the database round trip for every query. They also explicitly identify "
+                    "the boundary of their helper: an HTTP context accessor returns no user in a "
+                    "message consumer or background job, so those paths require another way to supply "
+                    "identity [OwCgDPa0DnA @ 00:12:32]. Rusin's demonstration obtains the account from "
+                    "a request header and feeds it to the account-scoped Prisma client, with transaction "
+                    "locality handling pooled-connection reuse [ctJy5AxgVXM @ 00:09:56]. Past The "
+                    "Diagram draws a stricter trust boundary: a tenant header is caller-chosen, so "
+                    "the application must use the tenant it resolved after authentication and must "
+                    "not simply trust client input. They also reject connection-persistent SET in "
+                    "favor of SET LOCAL inside a transaction [h1KAW_izGl8 @ 00:01:49]. These are "
+                    "specific differences in provenance and lifetime, not interchangeable recipes. "
+                    "Jovanović demonstrates where EF Core can inject context; Rusin demonstrates "
+                    "how to make scoped access the exported interface; Past The Diagram specifies "
+                    "which source of tenant identity their isolation model accepts."
+                ),
+                (
+                    "The Postgres Conference playbook pursues cryptographic isolation rather than only "
+                    "row authorization. Rajan, presenting Baffle's architecture, describes shared tables "
+                    "or logical databases whose tenants' data is encrypted with different keys. The "
+                    "proposed system combines a SQL proxy, database extensions, and a management console. "
+                    "Applications connect to the proxy, which identifies protected values and transforms "
+                    "them before forwarding queries to PostgreSQL [VRoHkeV_-iI @ 00:15:17]. Tenant "
+                    "determination can use a tenant column, a SQL comment, or a session variable; "
+                    "separate logical databases instead allow the database name in the connection "
+                    "to select the tenant key. Their bring-your-own-key model places management with "
+                    "the SaaS provider, while hold-your-own-key retains the tenant's own key-management "
+                    "environment and its associated burden. Copplestone's database-centric alternative "
+                    "focuses on SQL authorization and the security posture inherited by applications "
+                    "above PostgreSQL [vZT1Qx2xUCo @ 00:04:41]. Product Hunt timing also has "
+                    "competing choices in Smith's account: they wanted a weekend for less competition, "
+                    "chose Monday under a deadline using Mark Lou's advice, and afterward questioned "
+                    "whether Monday morning outreach had hurt participation. Their next move is to "
+                    "try a weekend, not claim that the alternate day has already produced a better "
+                    "result [hJtOsLAfxxE @ 00:10:25]."
+                ),
             ],
             "table": {
-                "caption": "API Waterfall Capability Pools, Cache Keys & Circuit-Breaker Spec",
-                "headers": ["Capability Pool", "Primary + Permitted Fallback", "Postgres Cache Key & TTL", "Timeout / Retry Budget", " Retail Unit Cost Ceiling"],
+                "caption": "Different approaches, with their actual boundaries left intact",
+                "headers": ["Decision with alternatives", "Practitioner positions and distinctions", "Expert Source"],
                 "rows": [
-                    ["Company/domain enrichment", "Licensed company API A -> licensed API B with matching fields, provenance and permitted use; reject low-confidence matches", "tenant_id + normalized_domain + provider_version + schema_version; 7 days maximum, shortened to licensed retention; invalidate on correction", "5s total; at most 2 attempts across both providers; open per-provider circuit after 5 transient failures/60s, probe once after 60s", "Illustrative $0.02/accepted lookup including billed failures; defer if remaining budget cannot fund fallback"],
-                    ["DNS/technographic lookup", "Managed DNS resolver -> alternate resolver for DNS; licensed technology detector -> compatible detector only for technology evidence", "tenant_id + domain + query_type + capability + provider_version + schema_version; DNS capped by authoritative TTL; technology evidence 24h maximum", "3s total; at most 2 attempts; honor negative DNS TTL; 5 transient failures/60s opens circuit for 60s, then one probe", "Illustrative $0.005/accepted lookup; licensed technology fees included, not disguised as free DNS"],
-                    ["Headless DOM/WCAG render", "Sandboxed browser worker -> permitted alternate renderer using the same viewport and accessibility rules; automated findings are not a complete WCAG assessment", "tenant_id + URL + auth_scope_hash + viewport + browser_version + ruleset_version + content_revision; 1h maximum for permitted snapshots; private pages uncached by default", "20s total; at most 2 attempts within deadline; 3 transient failures/60s opens circuit for 120s, then one probe; block private-network navigation", "Illustrative $0.03/render with automated checks, including failed browser time; reject pages above resource budget"],
-                    ["Fast structured JSON extraction LLM", "Low-latency model -> schema-tested alternative with approved processing terms; validate types, required fields and extraction evidence", "tenant_id + input_hash + model_version + prompt_version + JSON_schema_hash + decoding_config; 24h maximum if retention permits; no caching of prohibited inputs", "8s total; at most 2 attempts including malformed-output repair; 5 transient failures/60s opens circuit for 60s, then one probe", "Illustrative $0.01/accepted extraction; reserve input plus maximum output cost before each attempt"],
-                    ["Grounded frontier synthesis LLM", "Frontier model with retrieval evidence -> benchmarked alternative using identical evidence and citation checks; defer if evidence is insufficient", "tenant_id + query_hash + evidence_hash + evidence_access_scope + model_version + prompt_version + decoding_config; 1h maximum or earliest evidence expiry; invalidate on access change", "45s asynchronous job deadline; at most 2 attempts; 3 transient failures/60s opens circuit for 120s, then one probe; no silent downgrade", "Illustrative $0.10/accepted synthesis including retrieval and failed attempts; separately metered premium route, not the $0.02 base-job assumption"],
-                    ["Transactional email/webhook delivery", "Email provider -> permitted alternate only after definitive nonacceptance; webhook worker -> same intended endpoint, never an unrelated destination", "tenant_id + event_id + destination_hash + payload_version; durable outbox with 7-day dedup record, not response cache; retain longer than retry horizon", "5s/attempt; at most 3 attempts in 15m asynchronous window with jitter and Retry-After; 5 transient failures/60s opens circuit for 60s, then one probe; reconcile ambiguous email acceptance before resend", "Illustrative $0.005/logical delivery including attempts; signed webhook with receiver deduplication; park exhausted jobs without claiming delivery"]
-                ]
+                    [
+                        "Choose between an all-commands ownership policy and granular operation-specific policy organization.",
+                        "Jovanović selects all commands for the notes example; Copplestone recommends one policy per operation and role to simplify the authorization mental model.",
+                        "Milan Jovanović ([OwCgDPa0DnA @ 00:04:01]); Microsoft Developer ([vZT1Qx2xUCo @ 00:12:23])",
+                    ],
+                    [
+                        "Decide whether to combine policies or consolidate their conditions into one rule.",
+                        "updownx explains permissive OR and restrictive AND combinations; Copplestone calls combinations complicated and prefers keeping conditions together within granular policies.",
+                        "updownx ([MEkM0aC1JaI @ 00:01:22]); Microsoft Developer ([vZT1Qx2xUCo @ 00:12:01])",
+                    ],
+                    [
+                        "Distinguish the demo's header-supplied account from a tenant resolved after authentication.",
+                        "Rusin passes the account header into scoped Prisma access; Past The Diagram explicitly rejects trusting caller-chosen tenant headers as the identity source.",
+                        "Alex Rusin ([ctJy5AxgVXM @ 00:09:56]); Past The Diagram ([h1KAW_izGl8 @ 00:01:49])",
+                    ],
+                    [
+                        "Separate automatic authorization filtering from the query filters used for performance.",
+                        "Rusin removes manual account filters after adding scoped access; Copplestone still recommends explicit WHERE clauses to reduce work before RLS evaluation.",
+                        "Alex Rusin ([ctJy5AxgVXM @ 00:06:25]); Microsoft Developer ([vZT1Qx2xUCo @ 00:15:54])",
+                    ],
+                    [
+                        "Compare provider-managed tenant keys with keys retained in each tenant's environment.",
+                        "Rajan describes bring-your-own-key as reducing tenant management burden, while hold-your-own-key keeps management in the tenant's chosen environment with additional responsibility.",
+                        "Postgres Conference ([VRoHkeV_-iI @ 00:25:37]); Postgres Conference ([VRoHkeV_-iI @ 00:27:40])",
+                    ],
+                    [
+                        "Weigh the desired lower-competition weekend against the deadline-driven Monday launch choice.",
+                        "Smith preferred a weekend, launched Monday under the hackathon deadline, questioned that timing afterward, and planned to try a weekend next.",
+                        "Jack Smith ([hJtOsLAfxxE @ 00:05:35]); Jack Smith ([hJtOsLAfxxE @ 00:12:03])",
+                    ],
+                ],
             },
-            "callout": {"kind": "OPERATOR GATE", "title": "Prove the unsubsidized route", "body": "Before expanding paid traffic, replay a representative workload with free quotas and credits disabled in the cost model.", "items": ["Accepted results meet the product quality target.", "Retry totals remain inside the job budget.", "Retail delivery cost fits the subscription allowance.", "Tenant isolation and outage behavior are tested."]}
         },
         {
-            "heading": "5. Keep idle cost low and owner profit explicit",
-            "epistemic_status": "illustrative_model",
+            "id": "failure-modes-and-economics",
+            "title": "Firsthand Failure Modes, Traps & Economics Checks",
             "paragraphs": [
-                "The serverless_edge_free_tier_empire_hosting play places a lean Next.js application on a supported edge deployment path, uses Workers for suitable request handling, and connects to serverless Postgres through a compatible pooled connection layer. Verify runtime and framework support before selecting packages. Keep long model jobs outside the interactive request using a queue and an idempotent worker. Static assets and sleeping compute can make idle execution nearly free, but domains, database storage, backups, minimum plans, and observability can still cost money. Free tiers also have ceilings and may lack the recovery features a paid service needs. Set spend alerts and enforce application usage limits because alerts alone do not stop bills. Test cold starts, connection exhaustion, and a database restore before promising customers dependable turnaround for a business critical workflow.",
-                "Keep the annual business scenarios separate from the startup cash envelopes. Conservative means $50,000 gross subscription billings, $10,000 inference and hosting COGS, and $32,500 other operating costs, leaving $7,500 net owner profit at 15%. Base means $375,000 gross, $56,250 COGS, and $206,250 other costs, leaving $112,500 at 30%. Scaled means $700,000 gross, $84,000 COGS, and $301,000 other costs, leaving $315,000 at 45%. Staffing is respectively 1 FT + 2 C, 1 FT + 2 C, and 2 FT + 3 C, where FT means full time and C means part time contractors, not three additional full salaries. Here net owner profit means residual operating profit before owner income taxes and distributions, after recorded labor expense. The conservative case cannot fund a normal full time salary plus two substantial retainers; it assumes low founder cash pay and tightly capped contractor hours.",
-                "Make the subsidy removal test concrete. Assume a $49 monthly account requests 1,000 jobs, a permitted cache serves 60%, and each of the remaining 400 jobs costs $0.02 at retail. Add a 10% billed attempt overhead, producing $8.80 in API costs, plus $2 in allocated hosting COGS. That leaves $38.20 before processing fees, acquisition, support, labor, refunds, and taxes; it is not owner profit. At only 20% cache hits, the same assumptions produce $17.60 in API costs and $29.40 before those other expenses. Replace these illustrative inputs with cohort measurements. Annual scenarios assume billings equal recognized revenue and collected cash for simplicity; actual prepayments and refunds require separate tracking. Other operating costs include acquisition and labor, so they need not equal the monthly fixed expense envelope. Reconcile both views before hiring."
+                (
+                    "Smith's launch economics are an allocation-of-effort story with a visible result: "
+                    "17 upvotes, not the product-of-the-day win teased in the opening. They spent "
+                    "hours writing and producing a bespoke video aimed at Product Hunters, but it "
+                    "received two views. Their retrospective redirects that effort toward more engaging "
+                    "outbound content instead of treating an elaborate listing video as essential "
+                    "[hJtOsLAfxxE @ 00:09:04]. The social posts mostly requested support without "
+                    "providing something funny, interesting, or valuable, and promotion began on the "
+                    "day rather than building interest earlier. Their small following also constrained "
+                    "the number of people who could encounter those posts. Rusin reports a different "
+                    "operating cost after isolation works: row policies add evaluation overhead, may "
+                    "change query plans, and need measurement on the application's own data. Logging "
+                    "the claimed and resolved account IDs improves debugging, but their implementation "
+                    "adds a round trip, so they discuss putting it behind a production debug flag "
+                    "[ctJy5AxgVXM @ 00:11:37]. Copplestone likewise revises the attractive idea of "
+                    "blanket SELECT queries: explicit WHERE conditions remain useful for reducing "
+                    "the data considered before policy evaluation. Their performance advice keeps "
+                    "the database-enforced rule while still writing selective application queries "
+                    "[vZT1Qx2xUCo @ 00:15:54]."
+                ),
+                (
+                    "Several demonstrations show enforcement appearing present while the actual access "
+                    "path escapes it. Jovanović enables the notes policy and still receives every "
+                    "row because the current postgres connection has elevated privileges. The result "
+                    "changes after creating and using the less-privileged application role "
+                    "[OwCgDPa0DnA @ 00:04:51]. Rusin encounters a related but distinct failure: "
+                    "their Prisma role is not a superuser, yet owns the protected tables, so the "
+                    "first migration does not stop the leak. FORCE makes that owner subject to "
+                    "the policy; missing account context then produces empty results "
+                    "[ctJy5AxgVXM @ 00:03:40]. Supabase's advanced email client exposes another "
+                    "path: enabling RLS on emails does not hide the displayed emails because the "
+                    "application reads a view. Setting security_invoker true fixes that path, but "
+                    "folder counts remain wrong until the related email_folders table and its "
+                    "policy are addressed [PdEutzhsrws @ 00:09:50]. Codewithguillaume's orders "
+                    "walkthrough adds the broad-policy trap: the read-all template restores visible "
+                    "data but includes orders belonging to another user. They delete it before "
+                    "installing the own-data rule. These demonstrations identify different causes "
+                    "behind apparently working requests: elevated roles, table ownership, view "
+                    "execution, related-table coverage, and permission conditions that admit too "
+                    "many rows [Vx1q8Nfp0BE @ 00:01:48]."
+                ),
+                (
+                    "Test the denied action, not just the successful screen. Past The Diagram asks "
+                    "for a test that establishes tenant A's session, queries a known tenant B "
+                    "row, and receives zero rows through the real application role and connection "
+                    "path. They extend that exercise to insert, update, and delete rather than "
+                    "stopping at a read assertion [h1KAW_izGl8 @ 00:03:52]. CyberSecurityTV "
+                    "similarly calls for allow and deny assertions against two seeded tenants "
+                    "in a temporary CI database, plus checks of REST endpoints, views, and RPCs. "
+                    "Their warning is that ordinary functional tests can succeed while another "
+                    "tenant's data remains accessible [3yDr4mrZXAw @ 00:04:45]. Rusin runs "
+                    "a generated concurrency script and reports 800 concurrent requests without "
+                    "contamination, explicitly describing that as a result for the tested "
+                    "configuration rather than proof of every property. They also insist on "
+                    "reading generated tests and making the isolation test fail by removing "
+                    "FORCE [ctJy5AxgVXM @ 00:07:51]. Supabase demonstrates a smaller negative "
+                    "test directly in the table editor: selecting as an authenticated user works, "
+                    "but inserting a post with a blank ownership column fails. Supplying that "
+                    "user's ID succeeds. The exercised action and supplied identity expose whether "
+                    "the intended permission actually exists [hu2SQjvCXIw @ 00:05:33]."
+                ),
             ],
             "table": {
-                "caption": "Forensic checks before infrastructure savings become margin claims",
-                "headers": ["Naive Trap", "Detection Metric", "Durable Operator Fallback"],
+                "caption": "Observed failures and the checks practitioners used to expose them",
+                "headers": ["Failure or operating cost", "Observed result and practitioner response", "Expert Source"],
                 "rows": [
-                    ["Count grant face value as cash", "Eligible spend before expiry", "Budget only displaced invoices; reserve cash for uncovered costs"],
-                    ["Try every free API", "Attempts per accepted result and tail latency", "Use bounded capability pools and circuit breakers"],
-                    ["Share all cached results", "Cross-tenant access tests and stale hit rate", "Scope keys and enforce retention and deletion"],
-                    ["Assume idle means free forever", "Storage, minimum fees, and restore coverage", "Pay for required backups and cap usage"],
-                    ["Call contribution owner profit", "Retail COGS plus acquisition and paid labor", "Reconcile gross billings to residual operating profit"],
-                    ["Treat low founder pay as efficiency", "Hours valued at replacement rates", "Show cash profit and normalized labor economics separately"]
-                ]
-            }
+                    [
+                        "Hours spent producing a bespoke launch video did not produce meaningful viewing.",
+                        "Smith reports two video views and wishes that production time had instead supported more engaging content for bringing outbound visitors.",
+                        "Jack Smith ([hJtOsLAfxxE @ 00:09:04])",
+                    ],
+                    [
+                        "Enabling a table policy did not constrain the elevated demonstration database connection.",
+                        "Jovanović still selected every note as postgres, then created a less-privileged application role and changed the application's connection to use it.",
+                        "Milan Jovanović ([OwCgDPa0DnA @ 00:05:07])",
+                    ],
+                    [
+                        "A non-superuser connection still bypassed policies because it owned the protected table.",
+                        "Rusin's first migration left the unsafe route leaking; forcing RLS exposed the next issue, which was missing account context.",
+                        "Alex Rusin ([ctJy5AxgVXM @ 00:03:40])",
+                    ],
+                    [
+                        "The email interface continued showing data after RLS was enabled on emails.",
+                        "Supabase traced the reads through a view, enabled security_invoker, and then investigated related tables when folder counts continued showing other data.",
+                        "Supabase ([PdEutzhsrws @ 00:09:50])",
+                    ],
+                    [
+                        "A successful read-all template returned another user's orders alongside the current user's.",
+                        "Codewithguillaume removed the broad read policy and replaced it with the template intended to let users view only their own data.",
+                        "Codewithguillaume ([Vx1q8Nfp0BE @ 00:02:09])",
+                    ],
+                    [
+                        "Working functional flows did not establish that cross-tenant requests were actually denied.",
+                        "CyberSecurityTV recommends a temporary CI database with two tenants, explicit allow and deny assertions, and failures when the deny checks permit access.",
+                        "CyberSecurityTV ([3yDr4mrZXAw @ 00:04:45])",
+                    ],
+                ],
+            },
+            "callout": {
+                "kind": "OPERATOR GATE",
+                "title": "Checks grounded in the demonstrations and their reported reversals",
+                "body": "Check the actual outcome, execution role, access path, and denied operation.",
+                "items": [
+                    (
+                        "Compare launch effort with the observed response: Smith's bespoke video "
+                        "received two views after hours of work, and their preferred reallocation "
+                        "was more engaging outbound content. "
+                        "[Jack Smith — hJtOsLAfxxE @ 00:09:04]"
+                    ),
+                    (
+                        "Run isolation checks as the actual application role; table owners, superusers, "
+                        "and BYPASSRLS roles can make an apparently configured policy ineffective. "
+                        "[Past The Diagram — h1KAW_izGl8 @ 00:02:48]"
+                    ),
+                    (
+                        "Check views and related-table counts after enabling a base table: Supabase "
+                        "had to change view execution and address email_folders before the email "
+                        "client's visible data and counts followed the intended rules. "
+                        "[Supabase — PdEutzhsrws @ 00:10:37]"
+                    ),
+                    (
+                        "Make the negative test fail deliberately, then exercise pooled access: Rusin "
+                        "removes FORCE to check the test and separately reports the concurrency "
+                        "script's configuration-specific result. "
+                        "[Alex Rusin — ctJy5AxgVXM @ 00:14:30] "
+                        "[Alex Rusin — ctJy5AxgVXM @ 00:07:51]"
+                    ),
+                ],
+            },
         },
     ],
-    "pull_quote": "Credits can postpone a cloud invoice; only sound pricing, owned code, and bounded usage can keep that invoice from consuming the business.",
-    "diagram_id": "diag-07-startup-runway-stack",
-    "action_checklist": ["Allocate cash to one launch budget.", "Record fixed burn and founder pay.", "Collect signed code assignments.", "Log credit restrictions and expiry dates.", "Set router cost and retry caps.", "Price one cohort without subsidies."],
+    "pull_quote": (
+        "\"Isolation that depends on every query remembering a filter is not a security model, "
+        "it is a hope.\" — Past The Diagram (h1KAW_izGl8 @ 00:00:03)."
+    ),
+    "diagram_id": "diag-07",
+    "action_checklist": [
+        (
+            "Refine the Product Hunt tagline around features the audience can recognize, and "
+            "prepare engaging outbound posts before the launch rather than only asking for "
+            "support on the day. [Jack Smith — hJtOsLAfxxE @ 00:08:30] "
+            "[Jack Smith — hJtOsLAfxxE @ 00:09:35]"
+        ),
+        (
+            "Open the correct project and table, confirm the RLS toggle, and add the policies "
+            "needed for the intended reads and writes instead of stopping after enabling it. "
+            "[Money Tools Academy — OBXv-uTBD7A @ 00:01:01] "
+            "[SmartMoneyTutorials — Sctm5VrwWTw @ 00:02:09]"
+        ),
+        (
+            "Name each policy clearly, choose its action and role, define existing-row and "
+            "incoming-value conditions where applicable, and test authenticated calls after saving. "
+            "[Shortcut Academy — 4ncm-XBGErs @ 00:01:34] "
+            "[SmartMoneyTutorials — sfzubTrNiiU @ 00:02:34]"
+        ),
+        (
+            "Use the authenticated tenant as context, keep pooled-connection context transaction-local, "
+            "and inspect whether the application role owns tables or bypasses enforcement. "
+            "[Past The Diagram — h1KAW_izGl8 @ 00:01:49] "
+            "[updownx — MEkM0aC1JaI @ 00:03:26]"
+        ),
+        (
+            "Review AI-generated policy changes, test as a selected authenticated user, and "
+            "inspect views and related-table policies when visible rows or counts remain wrong. "
+            "[Supabase — hu2SQjvCXIw @ 00:02:44] "
+            "[Supabase — PdEutzhsrws @ 00:11:22]"
+        ),
+        (
+            "Add cross-tenant read and write denials, inspect generated tests, make an isolation "
+            "test fail deliberately, and run the concurrent account-access exercise. "
+            "[CyberSecurityTV — 3yDr4mrZXAw @ 00:04:45] "
+            "[Alex Rusin — ctJy5AxgVXM @ 00:11:18] "
+            "[Alex Rusin — ctJy5AxgVXM @ 00:14:30]"
+        ),
+    ],
     "statutory_citations": [
-        {"title": "26 U.S.C. section 174", "url": "https://uscode.house.gov/view.xhtml?req=granuleid:USC-prelim-title26-section174&num=0&edition=prelim", "relevance": "Foreign research capitalization; assess domestic costs under section 174A."},
-        {"title": "17 U.S.C. section 201(b)", "url": "https://uscode.house.gov/view.xhtml?req=granuleid:USC-prelim-title17-section201&num=0&edition=prelim", "relevance": "Ownership of qualifying works made for hire."},
-        {"title": "17 U.S.C. section 204(a)", "url": "https://uscode.house.gov/view.xhtml?req=granuleid:USC-prelim-title17-section204&num=0&edition=prelim", "relevance": "Signed writing for copyright ownership transfers."},
+        {
+            "title": "Jack Smith — Launching My App on Product Hunt [00:09:04]",
+            "url": "https://www.youtube.com/watch?v=hJtOsLAfxxE&t=544s",
+            "relevance": "Primary practitioner testimony on bespoke launch-video effort, two views, and reallocating effort toward outbound content.",
+        },
+        {
+            "title": "Past The Diagram — Postgres Row-Level Security for Multi-Tenant SaaS [00:03:52]",
+            "url": "https://www.youtube.com/watch?v=h1KAW_izGl8&t=232s",
+            "relevance": "Primary practitioner testimony on proving tenant isolation with a known foreign-tenant row and the real application connection.",
+        },
+        {
+            "title": "Alex Rusin — Claude Code + Prisma: Multi-Tenant Postgres API That Can't Leak Data [00:05:31]",
+            "url": "https://www.youtube.com/watch?v=ctJy5AxgVXM&t=331s",
+            "relevance": "Primary practitioner testimony on transaction-local tenant context and avoiding identity persistence on pooled connections.",
+        },
+        {
+            "title": "Supabase — Advanced Row Level Security (RLS) Policies // Authorization Deep Dive [00:10:37]",
+            "url": "https://www.youtube.com/watch?v=PdEutzhsrws&t=637s",
+            "relevance": "Primary practitioner testimony on changing view execution to security_invoker so underlying row policies govern results.",
+        },
+    ],
+    "source_citations": [
+        {
+            "source_type": "video_pro_tip",
+            "video_id": "hJtOsLAfxxE",
+            "title": "Launching My App on Product Hunt",
+            "channel": "Jack Smith",
+            "author": "Jack Smith",
+            "text": "I spent hours and hours doing this; in the end it got two views.",
+            "tip": "I spent hours and hours doing this; in the end it got two views.",
+            "timestamp": 544,
+            "timestamp_seconds": 544,
+            "timestamp_label": "[00:09:04]",
+            "url": "https://www.youtube.com/watch?v=hJtOsLAfxxE&t=544s",
+            "markdown": "[00:09:04](https://www.youtube.com/watch?v=hJtOsLAfxxE&t=544s)",
+            "epistemic_status": "attributed_practitioner_claim",
+            "relevance": "Practitioner testimony on launch-content effort and the observed audience for the bespoke video.",
+        },
+        {
+            "source_type": "video_pro_tip",
+            "video_id": "h1KAW_izGl8",
+            "title": "Postgres Row-Level Security for Multi-Tenant SaaS",
+            "channel": "Past The Diagram",
+            "author": "Past The Diagram",
+            "text": "Write a test that sets the session to tenant A, queries for a row you know belongs to tenant B, and asserts it gets nothing back.",
+            "tip": "Write a test that sets the session to tenant A, queries for a row you know belongs to tenant B, and asserts it gets nothing back.",
+            "timestamp": 232,
+            "timestamp_seconds": 232,
+            "timestamp_label": "[00:03:52]",
+            "url": "https://www.youtube.com/watch?v=h1KAW_izGl8&t=232s",
+            "markdown": "[00:03:52](https://www.youtube.com/watch?v=h1KAW_izGl8&t=232s)",
+            "epistemic_status": "attributed_practitioner_claim",
+            "relevance": "Practitioner testimony on negative testing against a known cross-tenant row.",
+        },
+        {
+            "source_type": "video_pro_tip",
+            "video_id": "vZT1Qx2xUCo",
+            "title": "Everything you need to know about Postgres Row Level Security | POSETTE 2024",
+            "channel": "Microsoft Developer",
+            "author": "Microsoft Developer",
+            "text": "If you were calling a function inside your RLS policy, then you should try to wrap it in a SELECT statement.",
+            "tip": "If you were calling a function inside your RLS policy, then you should try to wrap it in a SELECT statement.",
+            "timestamp": 784,
+            "timestamp_seconds": 784,
+            "timestamp_label": "[00:13:04]",
+            "url": "https://www.youtube.com/watch?v=vZT1Qx2xUCo&t=784s",
+            "markdown": "[00:13:04](https://www.youtube.com/watch?v=vZT1Qx2xUCo&t=784s)",
+            "epistemic_status": "attributed_practitioner_claim",
+            "relevance": "Practitioner testimony on reducing repeated function evaluation within RLS policies.",
+        },
+        {
+            "source_type": "video_pro_tip",
+            "video_id": "MEkM0aC1JaI",
+            "title": "PostgreSQL Row-Level Security Explained with Multi-Tenancy",
+            "channel": "updownx",
+            "author": "updownx",
+            "text": "The pg_policies view in PostgreSQL provides metadata for each row security policy, including the policy name, roles it applies to, command type, and USING and WITH CHECK expressions.",
+            "tip": "The pg_policies view in PostgreSQL provides metadata for each row security policy, including the policy name, roles it applies to, command type, and USING and WITH CHECK expressions.",
+            "timestamp": 166,
+            "timestamp_seconds": 166,
+            "timestamp_label": "[00:02:46]",
+            "url": "https://www.youtube.com/watch?v=MEkM0aC1JaI&t=166s",
+            "markdown": "[00:02:46](https://www.youtube.com/watch?v=MEkM0aC1JaI&t=166s)",
+            "epistemic_status": "attributed_practitioner_claim",
+            "relevance": "Practitioner testimony on inspecting the actual policy configuration.",
+        },
+        {
+            "source_type": "video_pro_tip",
+            "video_id": "VRoHkeV_-iI",
+            "title": "Data Isolation in Multitenant PostgreSQL",
+            "channel": "Postgres Conference",
+            "author": "Postgres Conference",
+            "text": "Different tenants' data will be encrypted with different keys, so that it provides strong cryptographic data isolation.",
+            "tip": "Different tenants' data will be encrypted with different keys, so that it provides strong cryptographic data isolation.",
+            "timestamp": 571,
+            "timestamp_seconds": 571,
+            "timestamp_label": "[00:09:31]",
+            "url": "https://www.youtube.com/watch?v=VRoHkeV_-iI&t=571s",
+            "markdown": "[00:09:31](https://www.youtube.com/watch?v=VRoHkeV_-iI&t=571s)",
+            "epistemic_status": "attributed_practitioner_claim",
+            "relevance": "Practitioner testimony on the tenant-specific encryption-key alternative.",
+        },
+        {
+            "source_type": "video_pro_tip",
+            "video_id": "OwCgDPa0DnA",
+            "title": "Building Multi-Tenant APIs Using EF Core and Row-Level Security",
+            "channel": "Milan Jovanović",
+            "author": "Milan Jovanović",
+            "text": "If I were using this from a message consumer or a background job, this is going to return null. So I'd need a different approach to set who is the current user.",
+            "tip": "If I were using this from a message consumer or a background job, this is going to return null. So I'd need a different approach to set who is the current user.",
+            "timestamp": 781,
+            "timestamp_seconds": 781,
+            "timestamp_label": "[00:13:01]",
+            "url": "https://www.youtube.com/watch?v=OwCgDPa0DnA&t=781s",
+            "markdown": "[00:13:01](https://www.youtube.com/watch?v=OwCgDPa0DnA&t=781s)",
+            "epistemic_status": "attributed_practitioner_claim",
+            "relevance": "Practitioner testimony on the HTTP context accessor's boundary outside HTTP requests.",
+        },
+        {
+            "source_type": "video_pro_tip",
+            "video_id": "PdEutzhsrws",
+            "title": "Advanced Row Level Security (RLS) Policies // Authorization Deep Dive",
+            "channel": "Supabase",
+            "author": "Supabase",
+            "text": "We can actually use this little trick to enforce policies from another table.",
+            "tip": "We can actually use this little trick to enforce policies from another table.",
+            "timestamp": 944,
+            "timestamp_seconds": 944,
+            "timestamp_label": "[00:15:44]",
+            "url": "https://www.youtube.com/watch?v=PdEutzhsrws&t=944s",
+            "markdown": "[00:15:44](https://www.youtube.com/watch?v=PdEutzhsrws&t=944s)",
+            "epistemic_status": "attributed_practitioner_claim",
+            "relevance": "Practitioner testimony on deriving email-folder visibility from the emails table's policies.",
+        },
+        {
+            "source_type": "video_pro_tip",
+            "video_id": "ctJy5AxgVXM",
+            "title": "Claude Code + Prisma: Multi-Tenant Postgres API That Can't Leak Data",
+            "channel": "Alex Rusin",
+            "author": "Alex Rusin",
+            "text": "It has to be a transaction and this flag true in set_config, that's the local flag. It makes this the equivalent of SET LOCAL. The value gets reverted when the transaction ends.",
+            "tip": "It has to be a transaction and this flag true in set_config, that's the local flag. It makes this the equivalent of SET LOCAL. The value gets reverted when the transaction ends.",
+            "timestamp": 348,
+            "timestamp_seconds": 348,
+            "timestamp_label": "[00:05:48]",
+            "url": "https://www.youtube.com/watch?v=ctJy5AxgVXM&t=348s",
+            "markdown": "[00:05:48](https://www.youtube.com/watch?v=ctJy5AxgVXM&t=348s)",
+            "epistemic_status": "attributed_practitioner_claim",
+            "relevance": "Practitioner testimony on transaction-scoped tenant context for pooled Prisma connections.",
+        },
+        {
+            "source_type": "video_pro_tip",
+            "video_id": "Ow_Uzedfohk",
+            "title": "Implement Authorization using Row Level Security (RLS) with Supabase (Step By Step Guide)",
+            "channel": "Supabase",
+            "author": "Supabase",
+            "text": "If we can see a post it makes sense that we can see all of its comments.",
+            "tip": "If we can see a post it makes sense that we can see all of its comments.",
+            "timestamp": 629,
+            "timestamp_seconds": 629,
+            "timestamp_label": "[00:10:29]",
+            "url": "https://www.youtube.com/watch?v=Ow_Uzedfohk&t=629s",
+            "markdown": "[00:10:29](https://www.youtube.com/watch?v=Ow_Uzedfohk&t=629s)",
+            "epistemic_status": "attributed_practitioner_claim",
+            "relevance": "Practitioner testimony on inheriting comment visibility from the associated post.",
+        },
+        {
+            "source_type": "video_pro_tip",
+            "video_id": "Vx1q8Nfp0BE",
+            "title": "Row Level Security with @Supabase — Course part 10 (2025)",
+            "channel": "Codewithguillaume",
+            "author": "Codewithguillaume",
+            "text": "What I would like to do is just to query my own orders and not the orders from other users.",
+            "tip": "What I would like to do is just to query my own orders and not the orders from other users.",
+            "timestamp": 108,
+            "timestamp_seconds": 108,
+            "timestamp_label": "[00:01:48]",
+            "url": "https://www.youtube.com/watch?v=Vx1q8Nfp0BE&t=108s",
+            "markdown": "[00:01:48](https://www.youtube.com/watch?v=Vx1q8Nfp0BE&t=108s)",
+            "epistemic_status": "attributed_practitioner_claim",
+            "relevance": "Practitioner testimony motivating replacement of read-all with owner-specific access.",
+        },
+        {
+            "source_type": "video_pro_tip",
+            "video_id": "sfzubTrNiiU",
+            "title": "How To Create RLS Policies In Supabase [Step-By-Step 2026]",
+            "channel": "SmartMoneyTutorials",
+            "author": "SmartMoneyTutorials",
+            "text": "Always test with your app's authenticated calls to confirm the behavior matches your expectations.",
+            "tip": "Always test with your app's authenticated calls to confirm the behavior matches your expectations.",
+            "timestamp": 154,
+            "timestamp_seconds": 154,
+            "timestamp_label": "[00:02:34]",
+            "url": "https://www.youtube.com/watch?v=sfzubTrNiiU&t=154s",
+            "markdown": "[00:02:34](https://www.youtube.com/watch?v=sfzubTrNiiU&t=154s)",
+            "epistemic_status": "attributed_practitioner_claim",
+            "relevance": "Practitioner testimony on verifying a saved policy through authenticated application requests.",
+        },
+        {
+            "source_type": "video_pro_tip",
+            "video_id": "hu2SQjvCXIw",
+            "title": "Use AI to enable and generate RLS policies for Postgres with Supabase",
+            "channel": "Supabase",
+            "author": "Supabase",
+            "text": "We've written a policy to enable the select action but the insert action is still being denied by RLS.",
+            "tip": "We've written a policy to enable the select action but the insert action is still being denied by RLS.",
+            "timestamp": 237,
+            "timestamp_seconds": 237,
+            "timestamp_label": "[00:03:57]",
+            "url": "https://www.youtube.com/watch?v=hu2SQjvCXIw&t=237s",
+            "markdown": "[00:03:57](https://www.youtube.com/watch?v=hu2SQjvCXIw&t=237s)",
+            "epistemic_status": "attributed_practitioner_claim",
+            "relevance": "Practitioner testimony on testing separate operation permissions after AI-assisted policy creation.",
+        },
+        {
+            "source_type": "video_pro_tip",
+            "video_id": "Sctm5VrwWTw",
+            "title": "How To Enable Row Level Security In Supabase [RLS Guide 2026]",
+            "channel": "SmartMoneyTutorials",
+            "author": "SmartMoneyTutorials",
+            "text": "Enabling RLS by itself doesn't grant access. If there are no policies, all access is denied by default.",
+            "tip": "Enabling RLS by itself doesn't grant access. If there are no policies, all access is denied by default.",
+            "timestamp": 129,
+            "timestamp_seconds": 129,
+            "timestamp_label": "[00:02:09]",
+            "url": "https://www.youtube.com/watch?v=Sctm5VrwWTw&t=129s",
+            "markdown": "[00:02:09](https://www.youtube.com/watch?v=Sctm5VrwWTw&t=129s)",
+            "epistemic_status": "attributed_practitioner_claim",
+            "relevance": "Practitioner testimony separating the RLS toggle from explicit permission policies.",
+        },
+        {
+            "source_type": "video_pro_tip",
+            "video_id": "3yDr4mrZXAw",
+            "title": "Supabase RLS Security Explained: How to Protect Your Database From Data Leaks | CyberSecurityTV",
+            "channel": "CyberSecurityTV",
+            "author": "CyberSecurityTV",
+            "text": "Add a CI job that spins up a temporary database, seeds two tenants, and runs both allow and deny assertions.",
+            "tip": "Add a CI job that spins up a temporary database, seeds two tenants, and runs both allow and deny assertions.",
+            "timestamp": 285,
+            "timestamp_seconds": 285,
+            "timestamp_label": "[00:04:45]",
+            "url": "https://www.youtube.com/watch?v=3yDr4mrZXAw&t=285s",
+            "markdown": "[00:04:45](https://www.youtube.com/watch?v=3yDr4mrZXAw&t=285s)",
+            "epistemic_status": "attributed_practitioner_claim",
+            "relevance": "Practitioner testimony on continuous allow-and-deny testing for tenant isolation.",
+        },
+        {
+            "source_type": "video_pro_tip",
+            "video_id": "4ncm-XBGErs",
+            "title": "How to Create Policy (rls) in Supabase [2026 Full Guide]",
+            "channel": "Shortcut Academy",
+            "author": "Shortcut Academy",
+            "text": "The USING expression filters which rows are accessible for SELECT and also controls which rows a user can target with UPDATE or DELETE.",
+            "tip": "The USING expression filters which rows are accessible for SELECT and also controls which rows a user can target with UPDATE or DELETE.",
+            "timestamp": 113,
+            "timestamp_seconds": 113,
+            "timestamp_label": "[00:01:53]",
+            "url": "https://www.youtube.com/watch?v=4ncm-XBGErs&t=113s",
+            "markdown": "[00:01:53](https://www.youtube.com/watch?v=4ncm-XBGErs&t=113s)",
+            "epistemic_status": "attributed_practitioner_claim",
+            "relevance": "Practitioner testimony on the existing-row side of a policy's authorization expressions.",
+        },
+        {
+            "source_type": "video_pro_tip",
+            "video_id": "OBXv-uTBD7A",
+            "title": "How to Turn On Row Level Security in Supabase (Full Guide 2026)",
+            "channel": "Money Tools Academy",
+            "author": "Money Tools Academy",
+            "text": "Look for the toggle to remain on or any status indicator that shows RLS is active.",
+            "tip": "Look for the toggle to remain on or any status indicator that shows RLS is active.",
+            "timestamp": 131,
+            "timestamp_seconds": 131,
+            "timestamp_label": "[00:02:11]",
+            "url": "https://www.youtube.com/watch?v=OBXv-uTBD7A&t=131s",
+            "markdown": "[00:02:11](https://www.youtube.com/watch?v=OBXv-uTBD7A&t=131s)",
+            "epistemic_status": "attributed_practitioner_claim",
+            "relevance": "Practitioner testimony on confirming the selected table's RLS state after enabling it.",
+        },
     ],
 }

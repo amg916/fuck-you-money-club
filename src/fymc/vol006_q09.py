@@ -5,740 +5,990 @@ CHAPTER_9 = {
     "chapter_id": "Q9",
     "chapter_number": 9,
     "question_number": 9,
-    "slug": "contracts-statutory-guardrails-licensing-outreach-scripts",
-    "question_prompt": "Which federal/state statutes, licensing boundaries, contract clauses, and compliant outreach scripts govern productized ai agencies?",
+    "slug": "ai-agents-rag-and-knowledge-graphs-explained",
+    "question_prompt": "How do RAG and AI agents work, how can retrieved knowledge help reduce LLM hallucinations, and when should you choose vector retrieval, knowledge graphs, GraphRAG, or agentic workflows? Explore their trade-offs, common retrieval limitations, and practical approaches to building knowledge bases and enterprise RAG systems.",
     "kicker": "Q9 / THE BIG MONEY PLAYBOOKS",
-    "title": "Contracts, Statutory Guardrails, Licensing & Outreach Scripts",
-    "subtitle": "CFAA Access Boundaries, FTC Review Rules, TCPA Outreach, Carrier Duties, and Fixed-Scope AI Delivery Contracts",
-    "layout_template": "legal_compliance_notes",
-    "reading_time_minutes": 14,
+    "title": "AI Agents, RAG, and Knowledge Graphs Explained",
+    "subtitle": "An introduction to retrieval-augmented generation, embeddings, vector databases, knowledge graphs, and agentic workflows—covering hallucinations, retrieval strategies, Open WebUI knowledge bases, and enterprise-ready RAG systems.",
+    "layout_template": "tool_resource_directory",
+    "reading_time_minutes": 15,
     "executive_summary": (
-        "Candidate #29, Productized AI Agencies, holds Rank #08 with an 89/100 "
-        "Money-to-Manpower Score across 23 mapped plays. The operating advantage "
-        "comes from selling bounded implementation outcomes, not assuming clients' "
-        "regulatory duties or treating their transaction volume as agency revenue. "
-        "This chapter connects written access authority, data-processing terms, "
-        "intellectual-property allocation, consequential-decision review, and "
-        "substantiated outreach to fixed-scope sprints and support retainers. Annual "
-        "owner profit remains $20,000 Conservative, $165,000 Base, and $400,000 "
-        "Scaled. Two hazardous mapped plays receive explicit boundaries: reputation "
-        "monitoring must not become review suppression, and telecom utilities must "
-        "not depend on artificial traffic or jurisdiction shopping. Use the clause "
-        "matrix, scripts, and evidence checkpoints to sell repeatable services "
-        "without inheriting unbounded operational exposure."
+        "Jeff Su, IBM Technology, and Mirketa put the same problem first: a capable model "
+        "still needs the company's actual knowledge. Retrieval supplies that context; agents "
+        "choose tools and next steps. Professor Patterns demonstrates knowledge-base uploads "
+        "in Open WebUI, while Adam Lucek builds GraphRAG with 1,200-token chunks and "
+        "100-token overlaps. Cole Medin favors reranking, agentic retrieval, and context-aware "
+        "chunking. The architecture debate stays practical: IBM favors long context for bounded "
+        "whole-document reasoning; Neo4j emphasizes connected knowledge; Writer preserves graph "
+        "relationships through a different storage approach. Mirketa rejects vector search for "
+        "every problem. Across these approaches, the recurring bottlenecks are weak retrieval, "
+        "broken context, stale information, and added processing costs. Unstructured ties the "
+        "build to business outcomes, permission-aware retrieval, and continuing evaluation."
     ),
     "key_metrics": [
         {
-            "label": "Conservative",
-            "value": "$100,000",
-            "context": "Annual implementation fees and support retainers; client automation revenue excluded",
-            "note": "20% net margin; $20,000 annual owner net profit; 2 FT + 3 C",
+            "label": "GraphRAG demonstration chunking",
+            "metric": "GraphRAG demonstration chunking",
+            "value": "1,200 tokens per chunk; 100-token overlap",
+            "confidence": "attributed_practitioner_claim",
+            "context": (
+                "Adam Lucek describes these defaults while indexing the fine-tuning guide; "
+                "the demonstration produces about 53 chunks."
+            ),
+            "source": "Adam Lucek ([6vG_amAshTk @ 00:12:17])",
         },
         {
-            "label": "Base",
-            "value": "$550,000",
-            "context": "Annual implementation fees and support retainers; client automation revenue excluded",
-            "note": "30.0% net margin; $165,000 annual owner net profit; 2 FT + 3 C",
+            "label": "Enterprise evaluation starting set",
+            "metric": "Enterprise evaluation starting set",
+            "value": "100 to a few hundred Q&A pairs",
+            "confidence": "attributed_practitioner_claim",
+            "context": (
+                "Daniel Scoffield recommends a golden set of important questions for "
+                "offline testing before prompt or chunking changes are deployed."
+            ),
+            "source": "Unstructured ([ruilmyfVgrI @ 00:17:28])",
         },
         {
-            "label": "Scaled",
-            "value": "$1,000,000",
-            "context": "Annual implementation fees and support retainers; client automation revenue excluded",
-            "note": "40% net margin; $400,000 annual owner net profit; 3 FT + 4 C",
+            "label": "Claimed hallucination reduction",
+            "metric": "Claimed hallucination reduction",
+            "value": "70–90%",
+            "confidence": "attributed_practitioner_claim",
+            "context": (
+                "Hey sidG claims this reduction when RAG is set up correctly; "
+                "Mirketa separately emphasizes that grounding can still fail."
+            ),
+            "source": "Hey sidG ([r4hp_y9_V3w @ 00:02:18])",
+        },
+        {
+            "label": "Reported support resolution improvement",
+            "metric": "Reported support resolution improvement",
+            "value": "28.6% lower median per-issue resolution time",
+            "confidence": "attributed_practitioner_claim",
+            "context": (
+                "The Neo4j presenters report this result from LinkedIn's customer-support "
+                "research while discussing knowledge graphs, rather than their own demo."
+            ),
+            "source": "AI Engineer ([XNneh6-eyPg @ 00:06:32])",
         },
     ],
     "sections": [
         {
-            "heading": "1. Establish access authority before connecting client systems",
-            "epistemic_status": "operating_framework",
+            "id": "practitioner-consensus",
+            "title": "The Practitioner Consensus",
             "paragraphs": [
                 (
-                    "Start every sprint with an authority schedule, not a shared password. "
-                    "Name the client entity, authorized signer, system owner, permitted "
-                    "datasets, allowed operations, production window, and expiration date. "
-                    "The Computer Fraud and Abuse Act, 18 U.S.C. § 1030, makes access "
-                    "boundaries material; possession of credentials does not establish "
-                    "permission to enter every connected account. Separate client "
-                    "authorization from platform permission: a merchant can authorize "
-                    "work on its Salesforce tenant but cannot authorize bypassing "
-                    "Google, Yelp, or another provider's access restrictions. Use "
-                    "OAuth scopes, dedicated service accounts, and an access register "
-                    "that records who can read, modify, export, or delete each object. "
-                    "For Zapier, Make, n8n, and model APIs, document which service "
-                    "receives the payload and whether logs retain content. Prefer "
-                    "synthetic fixtures during development and minimized fields during "
-                    "production. Require a named client reviewer before consequential "
-                    "employment, credit, health, or eligibility decisions are released. "
-                    "That reviewer needs source evidence, correction authority, and "
-                    "enough time to disagree; a checkbox after an automatic rejection "
-                    "does not create meaningful review. End access promptly when the "
-                    "engagement ends, and retain revocation evidence without retaining "
-                    "the client's underlying sensitive records."
+                    "The shared starting point is missing company knowledge, not a model that cannot write. "
+                    "Jeff Su illustrates the distinction with a coffee-chat request: an LLM can draft the "
+                    "invitation, but it cannot know the next appointment without access to the calendar. "
+                    "Their explanation separates limited proprietary knowledge from passivity: the model waits "
+                    "for an input rather than independently operating the business [FwOTs4UxQS4 @ 00:01:56]. "
+                    "Kaushal makes the same point through a new developer asking for the company's production "
+                    "deployment policy. The answer already exists across documents and internal systems; the "
+                    "hard part is finding the right knowledge for that question, rather than returning every "
+                    "page containing the word production [cxGMp3DBkMk @ 00:01:49]. Mirketa's Rajiv and Alec "
+                    "bring that distinction into support. An eligibility-check question can require the customer's "
+                    "configuration, a troubleshooting article, three similar resolved cases, and a recent release "
+                    "note. Those pieces give the model something specific to reason with instead of a generic "
+                    "explanation of claim failures [8N3k2qP_0SY @ 00:04:48]. In each account, the useful change "
+                    "is concrete: retrieve the business evidence before generating the response. The knowledge "
+                    "layer supplies the circumstances that the base model does not already possess."
                 ),
                 (
-                    "Translate privacy obligations into a data-processing schedule "
-                    "with concrete fields: purpose, categories, retention, subprocessors, "
-                    "security controls, deletion method, incident contacts, and permitted "
-                    "secondary uses. California Civil Code § 1798.100(d) requires "
-                    "specified contractual protections when a covered business discloses "
-                    "personal information to service providers, contractors, or third "
-                    "parties. Classification depends on actual conduct and contract "
-                    "terms, not the label printed above a signature. Colorado Revised "
-                    "Statutes § 6-1-1305 separately specifies controller-processor "
-                    "duties and contractual requirements. Assess each state's coverage, "
-                    "exemptions, sensitive-data rules, and consumer-request duties "
-                    "before reusing a national template. A dental workflow involving "
-                    "protected health information can require a business associate "
-                    "agreement under 45 CFR §§ 164.502(e) and 164.504(e), plus "
-                    "appropriate downstream arrangements. A public medspa review does "
-                    "not authorize confirming that the reviewer received treatment. "
-                    "Recording discovery calls also needs a state-specific analysis; "
-                    "California Penal Code § 632 protects confidential communications "
-                    "and can require every party's consent. Record the participants' "
-                    "locations, announce recording, and offer an unrecorded alternative. "
-                    "Avoid storing raw call transcripts merely because transcription "
-                    "is inexpensive; assign a deletion deadline and identify the "
-                    "person responsible for carrying it out."
+                    "The baseline mechanics are deliberately ordinary: prepare the documents, retrieve relevant "
+                    "pieces, and include those pieces with the question. KodeKloud explains embeddings as numerical "
+                    "representations that preserve meaning, then applies the same conversion to the user's question. "
+                    "Semantic search compares that question representation with stored document representations; "
+                    "augmentation inserts the retrieved information into the prompt at runtime "
+                    "[_HQ2H_0Ayy0 @ 00:01:50]. This is different from expecting the model to memorize the "
+                    "company's entire document collection. IBM's Marina Danilevsky describes the resulting prompt "
+                    "as three parts: the instruction, the retrieved content, and the user's question. The model "
+                    "then generates an answer that can point back to evidence [T-D1OfcDW1M @ 00:04:00]. "
+                    "Mirketa adds an important division of labor: the vector database does retrieval, not "
+                    "reasoning. It neither decides the next action nor answers the customer; its job is finding "
+                    "candidate information [8N3k2qP_0SY @ 00:12:28]. That separation also explains the attraction "
+                    "of retrieval for changing business knowledge. Danilevsky's approach updates the content store "
+                    "rather than retraining the model whenever the underlying facts change. The answer is still "
+                    "generated, but the relevant knowledge is supplied at answering time, with an identifiable "
+                    "source rather than only a remembered association."
                 ),
                 (
-                    "There is no general federal license simply to implement a "
-                    "business automation workflow, but the underlying activity may "
-                    "cross a licensed boundary. An agency configuring appointment "
-                    "reminders is different from diagnosing patients, advising on "
-                    "securities, adjusting insurance claims, or providing legal "
-                    "representation. Describe the deliverable as software "
-                    "configuration and documented operating support when that is "
-                    "what the team actually supplies. Do not rename regulated "
-                    "professional judgment as an AI recommendation to avoid the "
-                    "applicable rule. Employment deployments need particular care: "
-                    "Title VII, 42 U.S.C. § 2000e-2, remains relevant when a tool "
-                    "screens applicants, and New York City Administrative Code "
-                    "§§ 20-870 through 20-874 imposes additional requirements on "
-                    "covered automated employment decision tools. Human involvement "
-                    "does not automatically remove a tool from local coverage. "
-                    "Build a jurisdiction-and-use register covering the client's "
-                    "locations, affected people, data flows, and decision categories. "
-                    "Route clinical or other licensed judgments to the client's "
-                    "qualified professional rather than agency contractors. When "
-                    "the intended use changes from summarizing documents to "
-                    "ranking people, pause that function and reprice the assessment. "
-                    "The original discovery budget should not silently absorb a "
-                    "new regulated product category."
+                    "Retrieval and agency solve different parts of the job. Jeff Su's make.com example moves "
+                    "news links through Google Sheets, Perplexity summaries, and Claude-written social posts on "
+                    "a daily schedule. Because Su sets the path and manually revises disappointing prompts, "
+                    "they call it a workflow. The transition to an agent happens when the LLM becomes the "
+                    "decision maker, reasoning about the approach and using tools to execute it "
+                    "[FwOTs4UxQS4 @ 00:05:25]. Hey sidG makes the business distinction as recalling information "
+                    "versus acting on it: finding a travel policy is different from filing an expense report "
+                    "or escalating a support ticket. Their hybrid architecture gives the agent retrieval as "
+                    "one tool among others, rather than replacing knowledge lookup with orchestration "
+                    "[r4hp_y9_V3w @ 00:04:29]. Unstructured's Daniel Scoffield puts the commercial starting point "
+                    "before either architecture. Look for high-value friction: expensive employees spending time "
+                    "finding important information, support staff moving between sources, or salespeople searching "
+                    "internal repositories for questionnaire answers [ruilmyfVgrI @ 00:10:01]. The common operating "
+                    "picture is therefore grounded answers attached to an actual workflow. Retrieval supplies "
+                    "knowledge, tools provide actions, and the business use case determines which capabilities "
+                    "are worth assembling in the first place."
                 ),
             ],
             "table": {
-                "caption": "Access, Privacy, and Sector Requirements Translated into Delivery Evidence",
+                "caption": "The common operating model, from missing knowledge to useful action",
                 "headers": [
-                    "Operating boundary and primary authority",
-                    "Required implementation decision",
-                    "Evidence retained for the engagement",
-                    "Failure response and scope consequence",
+                    "Operating Principle",
+                    "Practitioner Mechanic",
+                    "Expert Source",
                 ],
                 "rows": [
                     [
-                        "Client system access under 18 U.S.C. § 1030",
-                        "Limit service accounts to expressly authorized objects and operations",
-                        "Signed authority schedule plus dated OAuth permission export",
-                        "Suspend the affected connector when authority expires or changes",
+                        "Company knowledge must reach the model before the answer",
+                        "Fetch relevant internal information rather than expecting general training to contain the company's private policies or customer configuration.",
+                        "Jeff Su ([FwOTs4UxQS4 @ 00:01:56]); AI Engineering with Kaushal ([cxGMp3DBkMk @ 00:04:59])",
                     ],
                     [
-                        "California disclosures under Civil Code § 1798.100(d)",
-                        "Determine recipient role and prohibit incompatible secondary data uses",
-                        "Executed processing terms and versioned subprocessor disclosure register",
-                        "Remove unapproved data flows before resuming production processing",
+                        "Questions and document chunks both receive numerical meaning representations",
+                        "Embed the question, compare it with stored document embeddings, and retrieve pieces using semantic similarity instead of exact wording alone.",
+                        "KodeKloud ([_HQ2H_0Ayy0 @ 00:01:50])",
                     ],
                     [
-                        "Colorado processing contracts under Revised Statutes § 6-1-1305",
-                        "Specify processing instructions, confidentiality, assistance, deletion, and audit arrangements",
-                        "Controller instructions linked to each deployed automation workflow",
-                        "Reassess changed purposes before adding new datasets or destinations",
+                        "The final prompt combines instructions with evidence and question",
+                        "Tell the model to retrieve relevant content first, then generate an answer from that content together with the user's request.",
+                        "IBM Technology ([T-D1OfcDW1M @ 00:04:00])",
                     ],
                     [
-                        "Health information under 45 CFR § 164.504(e)",
-                        "Execute applicable business associate arrangements before processing protected information",
-                        "Signed agreements and documented downstream service eligibility checks",
-                        "Use synthetic records until the protected workflow is ready",
+                        "A retrieval database does not decide the customer's next action",
+                        "Keep the database's mathematical retrieval job distinct from the model's interpretation and the agent's choice of tools and workflow steps.",
+                        "Mirketa Inc ([8N3k2qP_0SY @ 00:12:28])",
                     ],
                     [
-                        "Confidential recording under California Penal Code § 632",
-                        "Assess participant locations and obtain required recording permissions",
-                        "Dated recording notice with documented participant permission evidence",
-                        "Continue discovery without recording when permission is withheld",
+                        "An agent changes who selects the next operational step",
+                        "Su distinguishes human-programmed paths from an LLM that reasons, acts through tools, observes interim results, and decides whether to iterate.",
+                        "Jeff Su ([FwOTs4UxQS4 @ 00:09:29])",
                     ],
                     [
-                        "Employment automation under NYC Administrative Code §§ 20-870–20-874",
-                        "Assess covered use and required audit and notice obligations",
-                        "Use classification, responsible employer, and current audit evidence",
-                        "Keep the covered screening function disabled until requirements are met",
+                        "The business starting point is valuable information-search friction",
+                        "Scoffield targets important information that expensive employees struggle to locate, then measures outcomes already meaningful to their business leaders.",
+                        "Unstructured ([ruilmyfVgrI @ 00:10:01]); Unstructured ([ruilmyfVgrI @ 00:11:34])",
                     ],
-                ],
-            },
-            "callout": {
-                "kind": "OPERATOR GATE",
-                "title": "Four checks before production access",
-                "body": (
-                    "The delivery lead records these checks against the specific "
-                    "workflow version, rather than relying on a generic client signature."
-                ),
-                "items": [
-                    "Verify the signer controls the named tenant and has authorized every requested read, write, export, and deletion operation.",
-                    "Trace one synthetic record through every connector, model endpoint, log destination, and backup location before admitting client records.",
-                    "Confirm applicable processing agreements, sector restrictions, retention settings, and a reachable incident-response contact.",
-                    "Test reviewer override, connector revocation, and rollback using an intentionally incorrect output before enabling consequential actions.",
                 ],
             },
         },
         {
-            "heading": "2. Price bounded obligations and allocate ownership explicitly",
-            "epistemic_status": "illustrative_model",
+            "id": "street-mechanics",
+            "title": "Exact Street Mechanics, Tools & Numbers",
             "paragraphs": [
                 (
-                    "Use a master services agreement for recurring commercial "
-                    "terms and a statement of work for each bounded sprint. "
-                    "The statement should name inputs, connectors, output formats, "
-                    "volume limits, supported environments, acceptance tests, and "
-                    "exclusions. Replace 'automate customer support' with 'classify "
-                    "up to 2,000 monthly tickets into twelve agreed categories, "
-                    "draft responses, and route every draft to a client reviewer.' "
-                    "Define a measurable quality test using a client-approved "
-                    "evaluation set, including ambiguous examples and prohibited "
-                    "disclosures. Specify that changes to categories, source "
-                    "systems, languages, or autonomous actions require a priced "
-                    "change order. A fee trigger can be 50% at booking, 30% "
-                    "when the sandbox passes named tests, and 20% at production "
-                    "handoff; payment milestones and accounting recognition are "
-                    "separate questions. Give the client a defined acceptance "
-                    "window and a written method for identifying reproducible "
-                    "defects. Do not make silence waive hidden security defects "
-                    "or mandatory statutory rights. Support terms must distinguish "
-                    "response time from restoration time and identify excluded "
-                    "third-party outages. Document client dependencies, especially "
-                    "credential delivery and reviewer availability, so their delay "
-                    "moves the schedule rather than creating unpaid standby work."
+                    "Professor Patterns demonstrates the shortest visible path to a working knowledge base in "
+                    "Open WebUI. Open Workspace, select Knowledge, create a collection, and upload a directory "
+                    "of documents. Their example uses candidate resumes in PDF and Word formats. In the chat, "
+                    "attach that collection, paste a job description, and ask which candidates fit; they then "
+                    "open the underlying resumes to inspect the recommendations [LmXaPUky_u4 @ 00:00:28]. "
+                    "The document settings expose the next operational layer: the embedding model, chunk settings, "
+                    "top K, and the RAG template. Top K controls how many relevant chunks are passed along, "
+                    "while the template provides instructions and citation examples around the retrieved context "
+                    "[LmXaPUky_u4 @ 00:09:24]. KodeKloud builds the corresponding Python lab with a virtual "
+                    "environment, UV, Chroma DB, Sentence Transformers, OpenAI, and Flask. The lab inspects "
+                    "Markdown handbooks, product specifications, meeting notes, and frequently asked questions "
+                    "before creating persistent vector storage [_HQ2H_0Ayy0 @ 00:05:28]. Both demonstrations make "
+                    "the document collection tangible rather than abstract. One exposes ingestion and retrieval "
+                    "through an interface; the other walks through scripts and file-based checks. The common "
+                    "sequence is to load known documents, make them searchable, ask concrete questions, and "
+                    "inspect the resulting evidence and answer."
                 ),
                 (
-                    "Allocate intellectual property by category rather than writing "
-                    "'client owns everything.' List preexisting agency libraries, "
-                    "reusable templates, client-specific configuration, client source "
-                    "data, third-party components, and generated outputs separately. "
-                    "Under 17 U.S.C. § 204(a), transfers of copyright ownership "
-                    "generally require a signed writing; contractor work should "
-                    "not be assumed to qualify automatically as work made for "
-                    "hire. Obtain contractor assignments where appropriate and "
-                    "give the client a durable license to embedded reusable "
-                    "components. Do not promise exclusive copyright in purely "
-                    "machine-generated material or rights the model provider "
-                    "cannot convey. Data terms should prohibit using client "
-                    "records to train unrelated products without a separate, "
-                    "specific agreement. Address subprocessors, export formats, "
-                    "deletion, and transition support at termination. Negotiate "
-                    "a liability cap tied to a defined fee period, with "
-                    "express treatment of confidentiality, intellectual-property "
-                    "claims, fraud, and liabilities that applicable law will "
-                    "not allow parties to limit. A dispute clause should "
-                    "identify governing law, forum, escalation timing, and "
-                    "whether arbitration applies. Narrow any anti-circumvention "
-                    "term to identified introductions and deliberate fee "
-                    "avoidance; exclude preexisting relationships and independent "
-                    "inbound contacts instead of claiming ownership over the "
-                    "client's entire market."
+                    "Chunking and ranking are the hands-on adjustments, not decorative settings. In KodeKloud's "
+                    "chunking walkthrough, the script uses size 500 and overlap 100, prints chunk statistics, "
+                    "and writes a verification file. The ingestion stage later specifies size 500 and stride "
+                    "400 while storing embeddings alongside metadata [_HQ2H_0Ayy0 @ 00:06:16]. Cole Medin's "
+                    "preferred retrieval adjustment is reranking: first fetch a larger candidate set, then use "
+                    "a specialized model, often a cross encoder, to select the few chunks the answering "
+                    "model actually receives. They describe this as considering more knowledge without dumping "
+                    "20, 50, or more chunks directly into the LLM; the second model adds some cost "
+                    "[tLMViADvSNE @ 00:02:48]. Mirketa turns relevance filtering into an empirical task. When "
+                    "tuning Case Resolver, Alec tested retrieval separately, measured the scores of real matches "
+                    "and unrelated matches on known cases, and placed the similarity cutoff between those "
+                    "groups [8N3k2qP_0SY @ 00:30:10]. These are three different controls: how documents are "
+                    "broken apart, which candidates get promoted, and whether a candidate is relevant enough "
+                    "to use at all. KodeKloud also asks learners to inspect the semantic-search results rather "
+                    "than treating a successfully written output file as the end of the exercise."
                 ),
                 (
-                    "Keep scenario economics tied to implementation fees and "
-                    "support retainers. An illustrative Conservative mix is ten "
-                    "$6,000 sprints plus five $8,000 annual support packages: "
-                    "$60,000 + $40,000 = $100,000 revenue. At 20% net "
-                    "margin, annual costs total $80,000 and owner profit "
-                    "equals $20,000. Base can comprise twenty-five $14,000 "
-                    "sprints plus ten $20,000 annual retainers: $350,000 + "
-                    "$200,000 = $550,000 revenue, with $385,000 costs and "
-                    "$165,000 owner profit at 30.0%. Scaled can comprise "
-                    "forty $15,000 sprints plus twenty $20,000 annual "
-                    "retainers: $600,000 + $400,000 = $1,000,000 revenue, "
-                    "with $600,000 costs and $400,000 owner profit at 40%. "
-                    "The canonical teams remain 2 FT + 3 C for "
-                    "Conservative and Base, and 3 FT + 4 C for "
-                    "Scaled. Contractor counts describe roster size, not "
-                    "automatically full-time commitments. These are annualized "
-                    "illustrations, not evidence that five market-rate salaries "
-                    "fit the Conservative budget. Reconcile actual compensation, "
-                    "API charges, insurance, acquisition, rework, and support "
-                    "against the cost envelope before hiring. Client sales "
-                    "influenced by automation, carrier settlement receipts, "
-                    "and customer transaction principal never become agency "
-                    "revenue merely because the agency dashboard displays them."
+                    "Adam Lucek's GraphRAG build starts with a fine-tuning guide converted from PDF to text, "
+                    "with the glossary, abstract, title page, and references removed. Initialize the project, "
+                    "configure the model and embedding credentials in the settings, and index the corrected "
+                    "input directory [6vG_amAshTk @ 00:09:07]. The indexing flow splits text, extracts entities "
+                    "and relationships, merges the per-chunk subgraphs, embeds nodes, detects communities, and "
+                    "generates community reports. Their demonstration uses 1,200-token chunks with 100-token "
+                    "overlaps, producing about 53 chunks [6vG_amAshTk @ 00:12:17]. The Neo4j presenters divide "
+                    "construction into a lexical graph of documents and chunks, an entity-and-relationship "
+                    "layer, and enrichment through graph algorithms. Existing structured entities can be supplied "
+                    "so extraction becomes recognition and relationship finding rather than starting from nothing "
+                    "[XNneh6-eyPg @ 00:10:42]. Cole Medin supplies another concrete storage arrangement for "
+                    "agentic retrieval: Neon with Postgres and PG Vector, one table containing chunks, and "
+                    "another holding document-level information. The agent can choose a semantic search or "
+                    "read a whole document [tLMViADvSNE @ 00:03:56]. Across these builds, the richer retrieval "
+                    "path comes from explicit stored structure: document membership, entity relationships, "
+                    "community summaries, or access to the complete source behind a retrieved chunk."
                 ),
             ],
             "table": {
-                "caption": "Six Commercial Clauses That Protect a Fixed-Scope Implementation Margin",
+                "caption": "Concrete implementation moves and the settings actually demonstrated",
                 "headers": [
-                    "Clause and commercial purpose",
-                    "Specific language elements to negotiate",
-                    "Supporting delivery record",
-                    "Boundary that prevents expensive disputes",
+                    "Build Move",
+                    "Exact Execution Detail",
+                    "Expert Source",
                 ],
                 "rows": [
                     [
-                        "Scope and acceptance for one bounded workflow sprint",
-                        "Name connectors, volume ceilings, tests, exclusions, and acceptance timing",
-                        "Versioned statement of work with client-approved evaluation fixtures",
-                        "Treat additional autonomous actions as separately priced scope changes",
+                        "Create a named knowledge collection and attach it in chat",
+                        "In Open WebUI, use Workspace, Knowledge, the plus icon, and a directory upload; select that collection alongside the job-description prompt.",
+                        "Professor Patterns ([LmXaPUky_u4 @ 00:00:28])",
                     ],
                     [
-                        "Fee triggers and collection for staged implementation work",
-                        "Tie each installment to an observable contractual delivery milestone",
-                        "Invoice references linked to booking, sandbox tests, and handoff",
-                        "Separate cash collection timing from recognized service revenue",
+                        "Prepare the Python environment and inspect the document collection",
+                        "KodeKloud installs UV, Chroma DB, Sentence Transformers, OpenAI, and Flask, then reviews simulated Markdown documents before building persistent storage.",
+                        "KodeKloud ([_HQ2H_0Ayy0 @ 00:05:28])",
                     ],
                     [
-                        "Narrow anti-circumvention protection for documented commercial introductions",
-                        "Identify protected contacts, reasonable duration, and deliberate avoidance conduct",
-                        "Dated introduction register excluding established and independently sourced relationships",
-                        "Avoid broad restraints that prevent ordinary unrelated client purchasing",
+                        "Record chunk boundaries and inspect the produced ingestion artifacts",
+                        "The initial script specifies size 500 and overlap 100; ingestion later specifies size 500 and stride 400, with vectors and metadata stored together.",
+                        "KodeKloud ([_HQ2H_0Ayy0 @ 00:06:16]); KodeKloud ([_HQ2H_0Ayy0 @ 00:07:23])",
                     ],
                     [
-                        "Liability allocation for bounded services and identifiable risks",
-                        "Specify cap period, exclusions, insurance, and defense responsibilities",
-                        "Negotiated agreement aligned with actual coverage and operational controls",
-                        "Reject obligations exceeding available protection without deliberate commercial repricing",
+                        "Retrieve broadly before narrowing the context with another model",
+                        "Medin uses a specialized reranker, often a cross encoder, to reduce a larger candidate set to the few chunks sent into generation.",
+                        "Cole Medin ([tLMViADvSNE @ 00:02:48])",
                     ],
                     [
-                        "Dispute resolution and orderly continuity during disagreements",
-                        "State governing law, venue, escalation deadlines, and arbitration election",
-                        "Signed agreement with named commercial and technical escalation contacts",
-                        "Preserve client data export while handling contested payment obligations",
+                        "Build graph entities and communities from a prepared text document",
+                        "Lucek describes 1,200-token chunks with 100-token overlaps, followed by entity extraction, merged relationships, community detection, and community-report generation.",
+                        "Adam Lucek ([6vG_amAshTk @ 00:11:21]); Adam Lucek ([6vG_amAshTk @ 00:12:17])",
                     ],
                     [
-                        "Ownership and licensing across client and agency assets",
-                        "Separate source data, custom work, reusable libraries, and generated outputs",
-                        "Asset schedule supported by contractor assignments and license inventory",
-                        "Promise only rights the agency actually controls and can transfer",
-                    ],
-                ],
-            },
-            "sop_steps": [
-                {
-                    "step": 1,
-                    "title": "Translate discovery into measurable scope",
-                    "action": "List each input, connector, output, volume ceiling, and excluded action.",
-                    "detail": "Attach a small evaluation dataset with expected routing and failure behavior before quoting the sprint.",
-                },
-                {
-                    "step": 2,
-                    "title": "Price dependencies and exception work",
-                    "action": "Estimate delivery hours, API use, reviewer effort, support load, and rework.",
-                    "detail": "Compare total engagement costs with the applicable annual scenario envelope and price additional obligations explicitly.",
-                },
-                {
-                    "step": 3,
-                    "title": "Execute rights and processing schedules",
-                    "action": "Obtain signatures covering access, data handling, asset ownership, fees, and acceptance.",
-                    "detail": "Confirm contractor assignments and applicable downstream agreements before deploying client-specific assets.",
-                },
-                {
-                    "step": 4,
-                    "title": "Handoff with revocable access",
-                    "action": "Deliver test evidence, operating instructions, escalation contacts, and termination procedures.",
-                    "detail": "Demonstrate rollback, credential revocation, data export, and deletion using the actual supported environment.",
-                },
-            ],
-        },
-        {
-            "heading": "3. Turn reputation monitoring into a defensible service, not suppression",
-            "epistemic_status": "operating_framework",
-            "paragraphs": [
-                (
-                    "The mapped play review_gating_reputation_extortion_funnels "
-                    "requires a firm redesign around legitimate monitoring. "
-                    "For medspas, dental implant practices, roofers, and auto "
-                    "dealers, monitor new one-star reviews on Google Business "
-                    "Profiles, Trustpilot, and Yelp only through permitted "
-                    "interfaces, licensed feeds, or authorized manual review. "
-                    "Do not evade rate limits or assume public visibility "
-                    "creates permission for unrestricted extraction. Offer "
-                    "timestamped alerts, review-velocity reporting, response "
-                    "drafts, and evidence-based platform-policy assessments. "
-                    "An alert within minutes is a measured service objective "
-                    "only where the authorized feed supports that latency; "
-                    "otherwise state the actual polling interval. The "
-                    "Federal Trade Commission Act, 15 U.S.C. § 45, "
-                    "prohibits deceptive practices, while 16 CFR Part 465 "
-                    "addresses fake reviews, specified incentive practices, "
-                    "and review suppression. Never condition a refund, "
-                    "service recovery, or payment on removing an honest "
-                    "negative review. Never threaten exposure, fabricate "
-                    "policy violations, or claim a special platform "
-                    "relationship. The Consumer Review Fairness Act, "
-                    "15 U.S.C. § 45b, also restricts covered form-contract "
-                    "terms that prohibit or penalize honest consumer "
-                    "reviews. A B2B agency contract should require "
-                    "client cooperation with these operating boundaries "
-                    "rather than quietly funding prohibited tactics."
-                ),
-                (
-                    "Apply the fallback precisely: provide equal post-service "
-                    "review invitations to all eligible customers, without "
-                    "filtering by satisfaction, and flag only genuine "
-                    "platform-policy-violating spam or other documented "
-                    "violations. Equal treatment alone is insufficient if "
-                    "the solicitation violates the destination platform's "
-                    "rules. Google prohibits incentivized reviews, and "
-                    "Yelp discourages businesses from soliciting reviews; "
-                    "use a neutral private-feedback channel where direct "
-                    "solicitation is unsuitable. Recheck current platform "
-                    "rules before activating each destination. A Google "
-                    "invitation can read: 'Thank you for choosing our "
-                    "team. If you would like to share your experience, "
-                    "you can leave an honest review using the review "
-                    "link in this message. Positive, mixed, and critical "
-                    "feedback are equally welcome. Participation is "
-                    "optional and does not affect your service.' The "
-                    "system supplies the verified business link and "
-                    "uses an authorized communication channel. Do not "
-                    "send happy customers to a public review page "
-                    "while diverting unhappy customers into a private "
-                    "form. For a disputed review, preserve the original "
-                    "text, URL, timestamp, policy provision, and "
-                    "supporting evidence. Request platform review "
-                    "without promising removal. A healthcare response "
-                    "should invite private contact without confirming "
-                    "patient status or discussing treatment details."
-                ),
-                (
-                    "Make the unit economics support patient, evidence-led "
-                    "work rather than coercive urgency. An illustrative "
-                    "$500 monthly monitoring package across twenty "
-                    "locations produces $10,000 monthly service billings, "
-                    "or $120,000 annualized if retained for twelve "
-                    "months. Budget $80 per location for authorized "
-                    "data and messaging, $100 for human review, "
-                    "and $70 for account operations: $250 direct "
-                    "cost per location and $5,000 monthly contribution "
-                    "before acquisition and shared overhead. This is "
-                    "an optional service-line illustration inside an "
-                    "agency portfolio, not an addition to the "
-                    "canonical scorecard or an owner-profit forecast. "
-                    "At sixty alerts monthly and twelve minutes "
-                    "of review per alert, the team needs twelve "
-                    "reviewer hours before escalations. If volume "
-                    "doubles, the contract must specify additional "
-                    "capacity pricing or a revised response target. "
-                    "The fallback is a lower-frequency monitoring "
-                    "and neutral-feedback service, not automated "
-                    "mass reporting. Measure alert latency, evidence "
-                    "quality, response turnaround, and client retention. "
-                    "Do not sell predicted star-rating increases "
-                    "or recovered sales without defensible measurement. "
-                    "For any performance claim, retain the baseline, "
-                    "measurement window, sample size, exclusions, "
-                    "and attribution limits. Never classify every "
-                    "negative reviewer as a competitor or every "
-                    "removed review as proof of agency-created revenue."
-                ),
-            ],
-            "table": {
-                "caption": "Reputation Service Evidence Matrix for Google Business Profiles, Trustpilot, and Yelp",
-                "headers": [
-                    "Observed event requiring operator attention",
-                    "Permitted service action and boundary",
-                    "Evidence needed before client communication",
-                    "Client-facing language or commercial fallback",
-                ],
-                "rows": [
-                    [
-                        "A newly posted one-star review triggers monitoring",
-                        "Read through permitted access and classify the complaint",
-                        "Original review link, publication time, and retrieval timestamp",
-                        "We identified new feedback and prepared a factual response draft.",
-                    ],
-                    [
-                        "A review appears to describe another business",
-                        "Compare identifiable facts against the platform's published reporting grounds",
-                        "Location mismatch and directly relevant public factual evidence",
-                        "We can submit the documented mismatch for platform review.",
-                    ],
-                    [
-                        "A client requests removal of legitimate criticism",
-                        "Decline suppression and offer service recovery without review conditions",
-                        "Original complaint and records supporting the proposed corrective action",
-                        "We can address the experience without conditioning help on deletion.",
-                    ],
-                    [
-                        "A completed service qualifies for an invitation",
-                        "Apply equal eligibility rules and destination-specific solicitation requirements",
-                        "Service completion record and authorized messaging preference evidence",
-                        "Positive, mixed, and critical feedback are equally welcome.",
-                    ],
-                    [
-                        "A healthcare review contains sensitive treatment details",
-                        "Prepare a neutral response without confirming any patient relationship",
-                        "Approved response template and designated privacy review record",
-                        "Please contact our office privately so we can address your concern.",
-                    ],
-                    [
-                        "A client requests a promised rating increase",
-                        "Offer measured monitoring deliverables instead of an unsupported outcome",
-                        "Historical baseline, delivery metrics, and documented attribution limits",
-                        "Our package covers monitoring and response support, not purchased sentiment.",
+                        "Preserve both chunk-level retrieval and complete-document access for agents",
+                        "Medin's Neon setup uses Postgres with PG Vector, a chunks table, and document-level storage so the agent can choose different search approaches.",
+                        "Cole Medin ([tLMViADvSNE @ 00:03:56])",
                     ],
                 ],
             },
             "callout": {
                 "kind": "INSIDER PRO-TIPS",
-                "title": "Protect the margin by preserving evidence early",
+                "title": "Adjust the retrieval machinery, not just the final wording",
                 "body": (
-                    "Reputation operations become expensive when the team reconstructs "
-                    "facts after an angry client has already promised an outcome."
+                    "These implementation choices come directly from the practitioners' "
+                    "demonstrations and working preferences."
                 ),
                 "items": [
-                    "Store the exact platform-policy provision beside each proposed report so a second reviewer can distinguish spam from ordinary criticism.",
-                    "Separate review-alert timestamps from response-draft timestamps; otherwise feed latency gets mistaken for contractor delay.",
-                    "Set an included monthly investigation allowance and price evidence-heavy escalations before selling multi-location monitoring.",
-                    "Maintain different templates for public replies, private service recovery, and platform reports; never reuse sensitive client facts across those channels.",
+                    (
+                        "Use a reranker to inspect more candidate knowledge while sending only a few "
+                        "high-relevance chunks to the answering model. Medin uses this in almost every "
+                        "RAG implementation. [Cole Medin — tLMViADvSNE @ 00:02:17]"
+                    ),
+                    (
+                        "Keep existing entities available during graph extraction. Neo4j describes "
+                        "passing known products, partners, clients, or other structured entities into "
+                        "the prompt so the model recognizes them and extracts relationships. "
+                        "[AI Engineer — XNneh6-eyPg @ 00:11:00]"
+                    ),
+                    (
+                        "Tune the similarity cutoff against known cases. Case Resolver's team measured "
+                        "relevant and unrelated match scores before drawing the dividing line. "
+                        "[Mirketa Inc — 8N3k2qP_0SY @ 00:30:10]"
+                    ),
+                    (
+                        "After changing the embedding model in Open WebUI, reimport the documents. "
+                        "Professor Patterns demonstrates uploading the directory again even though "
+                        "the resumes remain visible in the collection. "
+                        "[Professor Patterns — LmXaPUky_u4 @ 00:08:04]"
+                    ),
                 ],
             },
+            "sop_steps": [
+                {
+                    "step": 1,
+                    "title": "Select the business friction and its outcome",
+                    "action": "Identify the important information employees repeatedly struggle to find.",
+                    "detail": (
+                        "Use Scoffield's high-value, high-friction starting point, then connect the "
+                        "project to existing outcomes such as support handle time or sales-cycle "
+                        "length. [Unstructured — ruilmyfVgrI @ 00:10:01] "
+                        "[Unstructured — ruilmyfVgrI @ 00:11:34]"
+                    ),
+                },
+                {
+                    "step": 2,
+                    "title": "Load a concrete knowledge collection",
+                    "action": "Create a collection, upload documents, and ask questions tied to those documents.",
+                    "detail": (
+                        "Follow Professor Patterns' Workspace-to-Knowledge sequence in Open WebUI: "
+                        "create the collection, upload a directory, attach the collection in chat, "
+                        "and inspect the underlying documents behind the recommendations. "
+                        "[Professor Patterns — LmXaPUky_u4 @ 00:00:28]"
+                    ),
+                },
+                {
+                    "step": 3,
+                    "title": "Improve the evidence reaching generation",
+                    "action": "Inspect chunks, rerank candidates, and measure the relevance cutoff.",
+                    "detail": (
+                        "Use Medin's two-stage retrieval to narrow a larger candidate set, then "
+                        "apply Mirketa's separate retrieval testing on known relevant and unrelated "
+                        "matches. [Cole Medin — tLMViADvSNE @ 00:02:48] "
+                        "[Mirketa Inc — 8N3k2qP_0SY @ 00:30:10]"
+                    ),
+                },
+                {
+                    "step": 4,
+                    "title": "Add structure or tool choice where the question needs it",
+                    "action": "Choose graph traversal, broader document access, or iterative retrieval deliberately.",
+                    "detail": (
+                        "Lucek demonstrates local, global, and DRIFT search for different levels of "
+                        "detail; Medin lets an agent choose between semantic chunks and complete "
+                        "documents with clear search instructions. "
+                        "[Adam Lucek — 6vG_amAshTk @ 00:22:49] "
+                        "[Cole Medin — tLMViADvSNE @ 00:04:26]"
+                    ),
+                },
+            ],
         },
         {
-            "heading": "4. Screen telecom economics and use evidence-based outreach scripts",
-            "epistemic_status": "operating_framework",
+            "id": "disagreements-and-alternatives",
+            "title": "Where Practitioners Disagree & Alternative Playbooks",
             "paragraphs": [
                 (
-                    "The mapped play telecom_voice_traffic_pumping_8yy_sms_arbitrage "
-                    "describes revenue-sharing CLECs, international Tier-2/3 "
-                    "switches, free conference bridges, AI voice lines, "
-                    "radio call-in utilities, and OTP or A2P endpoints "
-                    "generating very large termination volumes. Treat "
-                    "that description as a high-risk screening case, "
-                    "not an implementation recipe. FCC access-stimulation "
-                    "rules include 47 CFR § 61.3(bbb) and "
-                    "§ 51.914; ordinary customer demand does not "
-                    "automatically exempt a revenue-sharing arrangement. "
-                    "Require the carrier to identify the applicable "
-                    "service classification, settlement basis, access-stimulation "
-                    "analysis, and responsible contracting entities. An "
-                    "agency supplying software should not casually "
-                    "become the telecommunications provider of record. "
-                    "Depending on the actual service, federal "
-                    "authorizations, state public-utility obligations, "
-                    "registration, contributions, and other carrier "
-                    "duties may apply. Toll-free and messaging "
-                    "economics require separate analysis; voice "
-                    "attestation cannot validate SMS consent. Do "
-                    "not build artificial call generation, OTP "
-                    "abuse, or routing intended to obscure "
-                    "responsibility. The suggested fallback of "
-                    "distributing traffic across jurisdictions does "
-                    "not cure an unlawful arrangement. Replace "
-                    "it with a genuine user-requested utility "
-                    "funded by transparent subscriptions or "
-                    "documented service fees, using providers "
-                    "authorized for the actual routes and "
-                    "retaining attributable demand records."
+                    "IBM Technology gives long context a serious place instead of treating a vector database "
+                    "as mandatory. For a bounded collection requiring global reasoning, such as comparing full "
+                    "requirements with release notes, the speaker favors placing the documents directly in "
+                    "context. A search for omitted requirements can retrieve matching snippets without exposing "
+                    "the gap between the complete documents [UabBYexBD4k @ 00:06:15]. That simplicity has a "
+                    "processing trade-off: IBM's example of a 500-page manual represents roughly 250,000 tokens "
+                    "processed repeatedly, while RAG pays the manual's indexing cost upfront. Prompt caching "
+                    "partly offsets the repeated work for static information, not constantly changing streams "
+                    "[UabBYexBD4k @ 00:07:35]. Cole Medin offers an intermediate playbook through hierarchical "
+                    "retrieval: search small chunks precisely, use their metadata to identify the parent file, "
+                    "and return the entire document when it is small enough to read "
+                    "[tLMViADvSNE @ 00:09:06]. Mirketa draws a different boundary altogether. For account "
+                    "balances, case status, entitlement levels, or order numbers, Alec recommends ordinary "
+                    "structured database queries. Semantic retrieval earns its place with nuanced documents, "
+                    "emails, and case notes [8N3k2qP_0SY @ 00:26:41]. The contrast is about the question "
+                    "and the data: complete-document comparison, targeted passage retrieval, and exact structured "
+                    "lookup are not the same operational job."
                 ),
                 (
-                    "Use simple economics to expose dependence on questionable "
-                    "settlements. At 20 million voice minutes monthly "
-                    "and an assumed $0.002 net settlement spread, "
-                    "the headline contribution is $40,000 before "
-                    "disputes, transport, fraud losses, and operating "
-                    "costs. A $0.002 change eliminates that entire "
-                    "spread. Those receipts belong to the relevant "
-                    "telecom operator, not automatically to the "
-                    "implementation agency. A safer illustrative agency "
-                    "engagement charges $12,000 for a bounded utility "
-                    "deployment plus $1,500 monthly support, producing "
-                    "$30,000 first-year fees over twelve support "
-                    "months. At $8,000 implementation cost and "
-                    "$800 monthly support cost, direct costs "
-                    "are $17,600 and contribution is $12,400 "
-                    "before shared overhead. Keep that illustration "
-                    "inside the canonical portfolio totals. Require "
-                    "genuine human initiation for the utility "
-                    "and verified caller identity where applicable. "
-                    "STIR/SHAKEN under 47 CFR § 64.6301 "
-                    "addresses caller-ID authentication duties for "
-                    "covered voice providers; it does not prove "
-                    "consent, lawful content, or lawful compensation. "
-                    "Use provider-documented attestation handling "
-                    "rather than inventing an agency certification. "
-                    "If carrier economics fail, retain the "
-                    "customer's legitimate workflow through "
-                    "subscription billing and ordinary metered "
-                    "transport, or discontinue the uneconomic "
-                    "feature. Never repair margin by manufacturing "
-                    "traffic or bypassing provider controls."
+                    "Graph advocates also take different implementation paths. The Neo4j presenters describe a "
+                    "graph retriever beginning with an index search, then following relationships from those "
+                    "entry points to bring back additional relevant context. The starting search can be vector, "
+                    "full text, or another supported approach; the graph adds connected information rather "
+                    "than merely another isolated text fragment [XNneh6-eyPg @ 00:12:44]. Writer's Sam Julien "
+                    "reports a historical move away from a conventional graph-database implementation after "
+                    "the team encountered scaling costs, expertise limits, and difficulties with the matching "
+                    "they needed. Writer instead stored graph-structured data points as JSON in a Lucene-based "
+                    "search engine, retaining relationships while using infrastructure the team understood "
+                    "[XlAIgmi_Vow @ 00:09:42]. Adam Lucek explores another distinction inside Microsoft's "
+                    "GraphRAG: local search gathers specific entity-linked information, global search works "
+                    "with community reports, and DRIFT combines broader community information with follow-up "
+                    "local searches [6vG_amAshTk @ 00:22:49]. Their comparison produces different answer "
+                    "styles, not simply different storage labels. Local retrieval emphasizes particulars; "
+                    "global retrieval emphasizes themes; DRIFT generates a more detailed response through "
+                    "additional exploration. Lucek explicitly describes graph methods and regular embeddings "
+                    "as complementary. Julien likewise argues that the benefits of graph relationships can "
+                    "be obtained through different underlying storage approaches."
                 ),
                 (
-                    "Keep outbound acquisition separate from deployed client "
-                    "messaging. Commercial email, including B2B outreach, "
-                    "is subject to CAN-SPAM, 15 U.S.C. § 7704: "
-                    "use accurate headers and subjects, applicable "
-                    "advertising identification, a valid physical "
-                    "postal address, and a working opt-out. "
-                    "Honor opt-outs within ten business days "
-                    "and supervise contractors sending on the "
-                    "agency's behalf. The scripts below are "
-                    "message bodies; production email must append "
-                    "the agency's verified postal address and "
-                    "functioning unsubscribe mechanism. Do not "
-                    "invent an address to make a template "
-                    "look complete. Before calls or texts, "
-                    "classify the technology, number type, "
-                    "purpose, recipient location, and applicable "
-                    "consent requirements under 47 U.S.C. "
-                    "§ 227 and 47 CFR § 64.1200, "
-                    "alongside state restrictions. A published "
-                    "business number is not blanket permission "
-                    "for an AI-voice campaign. Artificial "
-                    "or prerecorded voice rules can apply "
-                    "independently of whether a system is "
-                    "an automatic telephone dialing system. "
-                    "Log the precise consent language, "
-                    "number, timestamp, source, and revocation "
-                    "status when consent is required. "
-                    "A discovery conversation should establish "
-                    "authority, baseline workload, permitted "
-                    "data, and measurable acceptance before "
-                    "discussing savings. Use named deliverables "
-                    "and observed facts instead of invented "
-                    "urgency, removal promises, or carrier-income "
-                    "claims the agency cannot substantiate."
+                    "The sharpest agentic disagreement concerns how much machinery the problem deserves. Hey "
+                    "sidG promotes an agent as the orchestrator, with RAG in its toolbox and a loop that "
+                    "retrieves, reads, critiques, and searches again when the evidence is insufficient. They "
+                    "also acknowledge the extra latency and compute from repeated thinking and retrieval "
+                    "[r4hp_y9_V3w @ 00:04:46]. Kaushal objects to skipping directly from simple RAG to "
+                    "agentic RAG while ignoring intermediate choices such as better chunking, metadata, hybrid "
+                    "search, and reranking. If classic retrieval already solves the business problem, their "
+                    "position is to keep it rather than move automatically to graphs or agents "
+                    "[cxGMp3DBkMk @ 00:18:36]. Mirketa challenges another shortcut: agentic does not automatically "
+                    "mean autonomous. Alec describes recommendation, preparation, reviewed action, and automatic "
+                    "action as different levels; Case Resolver drafts responses and recommendations with "
+                    "human review for outgoing work [8N3k2qP_0SY @ 00:30:45]. Cole Medin favors agentic "
+                    "retrieval but calls it less predictable and asks for clear instructions about when "
+                    "each search method should be used [tLMViADvSNE @ 00:04:26]. These positions share "
+                    "retrieval as useful infrastructure while differing on orchestration and autonomy. The "
+                    "additional loop is a capability with operational costs, not a requirement attached "
+                    "to every knowledge-base project."
                 ),
             ],
             "table": {
-                "caption": "Verbatim Outreach and Discovery Bodies with Channel-Specific Preconditions",
+                "caption": "Alternative playbooks and the conditions each speaker emphasizes",
                 "headers": [
-                    "Channel and verified prerequisite",
-                    "Verbatim message or discovery question",
-                    "Operational evidence captured afterward",
-                    "Fallback when the condition is absent",
+                    "Architecture Choice",
+                    "Side-by-Side Practitioner Position",
+                    "Expert Source",
                 ],
                 "rows": [
                     [
-                        "Commercial email with verified sender and required footer",
-                        "Subject: Fixed-scope support workflow pilot. This is a commercial introduction. We configure ticket classification and human-reviewed reply drafts. Would a fifteen-minute discussion about your current workload be useful? Reply unsubscribe to stop future marketing emails.",
-                        "Sent content, delivery record, postal footer, and suppression status",
-                        "Use another permitted prospecting channel without recontacting suppressed recipients",
+                        "Long context versus retrieval for bounded whole-document reasoning tasks",
+                        "IBM favors full context for bounded global comparisons, while preserving retrieval for enterprise collections that cannot fit inside the context window.",
+                        "IBM Technology ([UabBYexBD4k @ 00:10:13])",
                     ],
                     [
-                        "Reputation outreach based on an actually observed public review",
-                        "We noticed a recent public review of your business. We offer monitoring and factual response support, not promised removals. Would you like a description of our fixed-scope service? Reply unsubscribe to stop marketing emails.",
-                        "Verified review URL and accurate description of available services",
-                        "Send a general service introduction without claiming an observed event",
+                        "Ordinary structured queries versus semantic lookup across messy documents",
+                        "Mirketa uses database queries for predictable fields and vector retrieval for nuanced unstructured information, rather than applying vector search to everything.",
+                        "Mirketa Inc ([8N3k2qP_0SY @ 00:26:41])",
                     ],
                     [
-                        "Live discovery with the client's authorized system owner",
-                        "Which entity controls this account, who can authorize our access, and which records may we read or change during the pilot?",
-                        "Named owner, authorized signer, permitted objects, and operation boundaries",
-                        "Continue process mapping with synthetic records until authority is documented",
+                        "Graph database traversal versus graph relationships stored in search infrastructure",
+                        "Neo4j follows relationships after index lookup; Writer describes retaining graph structure as JSON inside a Lucene-based search engine after historical implementation difficulties.",
+                        "AI Engineer ([XNneh6-eyPg @ 00:12:44]); AI Engineer ([XlAIgmi_Vow @ 00:09:42])",
                     ],
                     [
-                        "Baseline discovery before any productivity or savings claim",
-                        "How many items arrive each week, how long does handling take, and which errors require human review before anything reaches a customer?",
-                        "Measured volume, handling sample, error categories, and reviewer availability",
-                        "Quote a measurement sprint instead of promising unsupported savings",
+                        "Local specifics versus global themes versus combined exploratory retrieval",
+                        "Lucek distinguishes local entity-linked evidence, global community reports, and DRIFT's combination of community information with follow-up local searches.",
+                        "Adam Lucek ([6vG_amAshTk @ 00:22:49])",
                     ],
                     [
-                        "Carrier discovery before building a voice utility",
-                        "Which entity provides the telecommunications service, what genuine customer demand supports it, and what documented charges fund the utility without artificial traffic?",
-                        "Provider contracts, service classification, demand records, and settlement explanation",
-                        "Offer subscription-funded software using ordinary metered transport instead",
+                        "Simple retrieval versus automatic escalation into an agentic architecture",
+                        "Kaushal keeps classic RAG when it solves the problem; Hey sidG emphasizes iterative agentic retrieval while acknowledging additional latency and compute.",
+                        "AI Engineering with Kaushal ([cxGMp3DBkMk @ 00:18:36]); Hey sidG ([r4hp_y9_V3w @ 00:05:33])",
                     ],
                     [
-                        "SMS only after applicable permission and channel checks",
-                        "You asked us to contact you about a workflow pilot. Is tomorrow at 10 a.m. suitable for a brief discussion? Reply STOP to stop texts.",
-                        "Actual request record, permission evidence, message timestamp, and revocation status",
-                        "Do not send the message when the stated request never occurred",
+                        "Confident grounding claims versus explicit limits on hallucination reduction",
+                        "Hey sidG claims a 70–90% hallucination drop; Mirketa says wrong, stale, incomplete, or misunderstood retrieval can still produce incorrect confident answers.",
+                        "Hey sidG ([r4hp_y9_V3w @ 00:02:18]); Mirketa Inc ([8N3k2qP_0SY @ 00:17:28])",
                     ],
                 ],
             },
         },
+        {
+            "id": "failure-modes-and-economics",
+            "title": "Firsthand Failure Modes, Traps & Economics Checks",
+            "paragraphs": [
+                (
+                    "Writer's journey shows where a working retrieval prototype stopped being enough. Sam Julien "
+                    "reports that ordinary search handled basic keywords but did not deliver the advanced "
+                    "matching the team needed. Vector retrieval then introduced two problems: chunking could "
+                    "blur facts, and dense enterprise collections used so much overlapping language that "
+                    "nearest-neighbor results became difficult to distinguish. Their Apple timeline example "
+                    "confuses the Macintosh date with the nearby Lisa date, while the phone-company example "
+                    "has thousands of documents sharing camera and battery terminology "
+                    "[XlAIgmi_Vow @ 00:05:34]. Graphs improved context, but converting data into graph structure "
+                    "became challenging and costly at scale. The team also encountered expertise limits and "
+                    "matching difficulties, leading to a specialized extraction model and a different storage "
+                    "approach [XlAIgmi_Vow @ 00:07:47]. Adam Lucek's demonstration exposes the other side of "
+                    "richer retrieval: DRIFT gives a longer, more specific answer, but arrives after minutes "
+                    "rather than the seconds seen with earlier searches. Their closing comparison explicitly "
+                    "includes construction, maintenance, computational overhead, and scaling difficulty "
+                    "[6vG_amAshTk @ 00:38:31]. Cole Medin similarly describes LLM-based graph extraction as "
+                    "slower and more expensive [tLMViADvSNE @ 00:05:08]. Preserving relationships improves "
+                    "what can be retrieved, but these builders do not describe that structure as free."
+                ),
+                (
+                    "Mirketa's most practical retrieval trap is that nearest does not necessarily mean relevant. "
+                    "Alec explains that vector search can return the closest available match even when "
+                    "the question concerns an undocumented problem. Case Resolver therefore adds similarity "
+                    "thresholds and reranking instead of accepting the first returned candidate "
+                    "[8N3k2qP_0SY @ 00:11:39]. The same team calls a confident answer built on a stale "
+                    "document especially hard to catch: the wording looks correct even though the evidence "
+                    "has expired or been replaced. Their framework communicates document age and replacement "
+                    "status, while their evaluation separates retrieved information, interpretation, and whether "
+                    "the recommendation helped resolve the case [8N3k2qP_0SY @ 00:17:28]. IBM's Marina "
+                    "Danilevsky identifies the opposite failure: a model instructed to answer only from "
+                    "grounding information may decline an answerable question if the retriever fails to "
+                    "surface the right source [T-D1OfcDW1M @ 00:05:35]. KodeKloud's own walkthrough also "
+                    "requires careful reading of settings. The initial chunking explanation says overlap "
+                    "100, but the closing recap says overlap 400 for the test while retaining stride "
+                    "400 for ingestion [_HQ2H_0Ayy0 @ 00:09:18]. Those are different stated settings, not "
+                    "a single consistent preset. The working checks remain the retrieved passages, their "
+                    "boundaries, and the answers produced from them."
+                ),
+                (
+                    "Enterprise rollout introduces failures beyond the answer itself. Unstructured's Daniel Scoffield "
+                    "describes organizations with thousands of pilots and inconsistent ingestion stacks: separate "
+                    "teams write PDF scripts, extract Salesforce information differently, and use incompatible "
+                    "chunking logic. Their team has repeatedly been brought in to untangle that maintenance "
+                    "problem, and Scoffield favors a shared ingestion and RAG ETL layer "
+                    "[ruilmyfVgrI @ 00:19:29]. Their evaluation workflow begins with important question-answer "
+                    "pairs, tests context relevance and answer faithfulness before changes, and routes negative "
+                    "user feedback into retrieval-versus-generation triage. Fixed cases then join the golden "
+                    "set [ruilmyfVgrI @ 00:17:28]. Professor Patterns demonstrates a smaller but immediate "
+                    "maintenance trap: changing the embedding model in Open WebUI requires reimporting the "
+                    "documents even when the collection still displays them [LmXaPUky_u4 @ 00:08:04]. "
+                    "Mirketa brings the economics back to support outcomes: did resolution improve, did "
+                    "agents accept recommendations, did escalations decline, and did the case remain resolved "
+                    "[8N3k2qP_0SY @ 00:30:26]? Scoffield likewise criticizes measuring only technical accuracy "
+                    "or tool engagement while ignoring business outcomes. A successful upload, a generated "
+                    "answer, and a sophisticated retrieval diagram are separate from that outcome measurement. "
+                    "The recurring operational work is keeping ingestion consistent, diagnosing failures at "
+                    "the correct stage, and checking whether the system improves the workflow."
+                ),
+            ],
+            "table": {
+                "caption": "Observed bottlenecks, demonstrated inconsistencies, and the checks practitioners use",
+                "headers": [
+                    "Failure or Economic Pressure",
+                    "Reported Experience and Practical Check",
+                    "Expert Source",
+                ],
+                "rows": [
+                    [
+                        "Dense overlapping vocabulary undermined Writer's earlier vector retrieval approach",
+                        "Julien reports difficulty comparing similar products across concentrated enterprise documents; preserving relationships and additional context improved the team's retrieval approach.",
+                        "AI Engineer ([XlAIgmi_Vow @ 00:06:22])",
+                    ],
+                    [
+                        "Graph construction and scaling exceeded the team's comfortable implementation path",
+                        "Writer encountered conversion costs, expertise limits, and matching difficulties, then used specialized extraction and graph-structured JSON in search infrastructure.",
+                        "AI Engineer ([XlAIgmi_Vow @ 00:07:47]); AI Engineer ([XlAIgmi_Vow @ 00:09:42])",
+                    ],
+                    [
+                        "A closest vector match can still be irrelevant evidence",
+                        "Case Resolver adds thresholds and reranking, with its cutoff tuned by measuring relevant and unrelated matches separately on known test cases.",
+                        "Mirketa Inc ([8N3k2qP_0SY @ 00:11:39]); Mirketa Inc ([8N3k2qP_0SY @ 00:30:10])",
+                    ],
+                    [
+                        "More detailed graph answers carried additional retrieval and maintenance overhead",
+                        "Lucek observed slower graph retrieval and lists construction, updates, computational overhead, domain expertise, storage, and scaling among the practical drawbacks.",
+                        "Adam Lucek ([6vG_amAshTk @ 00:38:31])",
+                    ],
+                    [
+                        "Visible documents remained after an embedding model change required reimporting",
+                        "Professor Patterns shows Open WebUI's model-change warning and uploads the directory again rather than treating visible collection entries as completed re-embedding.",
+                        "Professor Patterns ([LmXaPUky_u4 @ 00:08:04])",
+                    ],
+                    [
+                        "Independent departmental pilots multiplied inconsistent code and ongoing maintenance",
+                        "Scoffield reports repeated cleanup work across divergent enterprise pipelines and recommends a shared ingestion layer plus continuing retrieval and generation evaluation.",
+                        "Unstructured ([ruilmyfVgrI @ 00:19:29]); Unstructured ([ruilmyfVgrI @ 00:20:47])",
+                    ],
+                ],
+            },
+            "callout": {
+                "kind": "OPERATOR GATE",
+                "title": "Checks before calling the knowledge system operational",
+                "body": (
+                    "Use the practitioners' retrieval, maintenance, permission, and outcome checks "
+                    "to distinguish a working demonstration from a dependable business workflow."
+                ),
+                "items": [
+                    (
+                        "Can known relevant cases be separated from unrelated nearest matches? "
+                        "Test retrieval alone, measure the match scores, and tune the cutoff as "
+                        "Case Resolver's team did. [Mirketa Inc — 8N3k2qP_0SY @ 00:30:10]"
+                    ),
+                    (
+                        "Does retrieved access match source-system access? Scoffield describes "
+                        "mirroring existing permissions, with metadata prefiltering and finer "
+                        "post-retrieval checks as one production approach. "
+                        "[Unstructured — ruilmyfVgrI @ 00:15:04] "
+                        "[Unstructured — ruilmyfVgrI @ 00:16:24]"
+                    ),
+                    (
+                        "Has a changed embedding model been followed by document reimport? "
+                        "Professor Patterns performs that step after Open WebUI's warning even "
+                        "though the existing resume collection remains visible. "
+                        "[Professor Patterns — LmXaPUky_u4 @ 00:08:04]"
+                    ),
+                    (
+                        "Do the measured benefits reach business outcomes rather than only "
+                        "technical scores? Scoffield uses handle time and sales-cycle length; "
+                        "Mirketa checks resolution, recommendation acceptance, and escalations. "
+                        "[Unstructured — ruilmyfVgrI @ 00:11:34] "
+                        "[Mirketa Inc — 8N3k2qP_0SY @ 00:30:26]"
+                    ),
+                ],
+            },
+        },
     ],
-    "pull_quote": "Sell a bounded workflow with provable authority, not an outcome whose economics depend on somebody else's exposure.",
+    "pull_quote": (
+        '"You retrieve first, and then you generate second." — '
+        "Mirketa Inc (8N3k2qP_0SY @ 00:05:37)."
+    ),
     "diagram_id": "diag-05",
     "action_checklist": [
-        "Execute a tenant-specific access schedule identifying the signer, system owner, permitted operations, expiration, and revocation procedure.",
-        "Map every data destination and confirm applicable processing terms, sector agreements, retention deadlines, and consequential-decision reviewers.",
-        "Attach measurable acceptance tests, milestone fees, change-order triggers, support limits, ownership categories, and termination assistance to each sprint.",
-        "Configure reputation monitoring around permitted access, equal invitation eligibility, platform-specific solicitation rules, and evidence-based reporting.",
-        "Reject artificial telecom demand and jurisdiction-based avoidance; require provider classification, documented settlement economics, and a subscription-funded fallback.",
-        "Deploy outreach only after sender, postal-footer, suppression, channel-permission, and claim-substantiation checks are recorded.",
+        (
+            "Identify a high-value information-search bottleneck and connect the project to "
+            "an existing business outcome before choosing the architecture. "
+            "[Unstructured — ruilmyfVgrI @ 00:10:01]"
+        ),
+        (
+            "Create an Open WebUI knowledge collection, upload a document directory, attach "
+            "it in chat, and inspect the underlying documents behind the answer. "
+            "[Professor Patterns — LmXaPUky_u4 @ 00:00:28]"
+        ),
+        (
+            "Preserve document structure while chunking, then rerank a larger candidate "
+            "set into a smaller set of context for generation. "
+            "[Cole Medin — tLMViADvSNE @ 00:07:27] "
+            "[Cole Medin — tLMViADvSNE @ 00:02:48]"
+        ),
+        (
+            "Match the retrieval path to the question: compare local entity retrieval, "
+            "global community summaries, and DRIFT when relationships and broader themes matter. "
+            "[Adam Lucek — 6vG_amAshTk @ 00:22:49]"
+        ),
+        (
+            "Distinguish a fixed workflow from an LLM choosing tools and next steps, and "
+            "give agentic search clear instructions about when to use each retrieval method. "
+            "[Jeff Su — FwOTs4UxQS4 @ 00:05:58] "
+            "[Cole Medin — tLMViADvSNE @ 00:04:26]"
+        ),
+        (
+            "Test retrieval separately from generation, route failed answers into diagnosis, "
+            "and add corrected question-answer pairs to the continuing evaluation set. "
+            "[Mirketa Inc — 8N3k2qP_0SY @ 00:29:36] "
+            "[Unstructured — ruilmyfVgrI @ 00:18:30]"
+        ),
     ],
     "statutory_citations": [
         {
-            "title": "18 U.S.C. § 1030 — Fraud and related activity in connection with computers",
-            "url": "https://www.law.cornell.edu/uscode/text/18/1030",
-            "relevance": "Supports explicit access boundaries, named authorized systems, scoped credentials, and prompt revocation rather than assuming possession of a password establishes authority.",
+            "title": "Jeff Su — AI Agents, Clearly Explained [00:05:58]",
+            "url": "https://www.youtube.com/watch?v=FwOTs4UxQS4&t=358s",
+            "relevance": (
+                "Primary practitioner testimony on the distinction between a human-defined "
+                "workflow and an LLM acting as the decision maker."
+            ),
         },
         {
-            "title": "California Civil Code § 1798.100 — Consumer information and disclosure obligations",
-            "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=1798.100.&lawCode=CIV",
-            "relevance": "Subsection (d) establishes contractual requirements for covered disclosures to service providers, contractors, and third parties.",
+            "title": "IBM Technology — What is Retrieval-Augmented Generation (RAG)? [00:04:00]",
+            "url": "https://www.youtube.com/watch?v=T-D1OfcDW1M&t=240s",
+            "relevance": (
+                "Primary practitioner testimony on combining instructions, retrieved "
+                "content, and the user's question before generation."
+            ),
         },
         {
-            "title": "45 CFR § 164.504 — Uses and disclosures: organizational requirements",
-            "url": "https://www.ecfr.gov/current/title-45/subtitle-A/subchapter-C/part-164/subpart-E/section-164.504",
-            "relevance": "Defines business associate contract requirements relevant to agency workflows involving protected health information.",
+            "title": "Adam Lucek — Knowledge Graph or Vector Database… Which is Better? [00:22:49]",
+            "url": "https://www.youtube.com/watch?v=6vG_amAshTk&t=1369s",
+            "relevance": (
+                "Primary practitioner testimony on local, global, and DRIFT retrieval "
+                "over graph-organized knowledge."
+            ),
         },
         {
-            "title": "California Penal Code § 632 — Confidential communications",
-            "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=632.&lawCode=PEN",
-            "relevance": "Requires assessment of permission before recording confidential discovery or support conversations involving California participants.",
+            "title": "Unstructured — Webinar: How to Build Enterprise-Ready RAG Systems [00:17:28]",
+            "url": "https://www.youtube.com/watch?v=ruilmyfVgrI&t=1048s",
+            "relevance": (
+                "Primary practitioner testimony on golden-set evaluation before "
+                "deploying prompt and chunking changes."
+            ),
+        },
+    ],
+    "source_citations": [
+        {
+            "source_type": "video_pro_tip",
+            "video_id": "FwOTs4UxQS4",
+            "title": "AI Agents, Clearly Explained",
+            "channel": "Jeff Su",
+            "author": "Jeff Su",
+            "text": (
+                "The one massive change that has to happen in order for this AI workflow "
+                "to become an AI agent is for me, the human decision maker, to be replaced by an LLM."
+            ),
+            "tip": (
+                "The one massive change that has to happen in order for this AI workflow "
+                "to become an AI agent is for me, the human decision maker, to be replaced by an LLM."
+            ),
+            "timestamp": 358,
+            "timestamp_seconds": 358,
+            "timestamp_label": "[00:05:58]",
+            "url": "https://www.youtube.com/watch?v=FwOTs4UxQS4&t=358s",
+            "markdown": "[00:05:58](https://www.youtube.com/watch?v=FwOTs4UxQS4&t=358s)",
+            "epistemic_status": "attributed_practitioner_claim",
+            "relevance": "Practitioner testimony on the decision-making distinction between workflows and agents.",
         },
         {
-            "title": "42 U.S.C. § 2000e-2 — Unlawful employment practices",
-            "url": "https://www.law.cornell.edu/uscode/text/42/2000e-2",
-            "relevance": "Employment discrimination obligations remain relevant when an agency configures applicant screening or related decision-support workflows.",
+            "source_type": "video_pro_tip",
+            "video_id": "UabBYexBD4k",
+            "title": "Is RAG Still Needed? Choosing the Best Approach for LLMs",
+            "channel": "IBM Technology",
+            "author": "IBM Technology",
+            "text": (
+                "The answer existed in the data, but the LLM never saw it because "
+                "the retrieval step didn't return the right results."
+            ),
+            "tip": (
+                "The answer existed in the data, but the LLM never saw it because "
+                "the retrieval step didn't return the right results."
+            ),
+            "timestamp": 355,
+            "timestamp_seconds": 355,
+            "timestamp_label": "[00:05:55]",
+            "url": "https://www.youtube.com/watch?v=UabBYexBD4k&t=355s",
+            "markdown": "[00:05:55](https://www.youtube.com/watch?v=UabBYexBD4k&t=355s)",
+            "epistemic_status": "attributed_practitioner_claim",
+            "relevance": "Practitioner testimony on silent retrieval failure.",
         },
         {
-            "title": "17 U.S.C. § 204 — Execution of transfers of copyright ownership",
-            "url": "https://www.law.cornell.edu/uscode/text/17/204",
-            "relevance": "Supports signed assignments and clear separation of client-specific work, agency libraries, third-party assets, and generated outputs.",
+            "source_type": "video_pro_tip",
+            "video_id": "XlAIgmi_Vow",
+            "title": "When Vectors Break Down: Graph-Based RAG for Dense Enterprise Knowledge - Sam Julien, Writer",
+            "channel": "AI Engineer",
+            "author": "AI Engineer",
+            "text": (
+                "We take the graph structure, we convert it into JSON, and we put it in the search engine."
+            ),
+            "tip": (
+                "We take the graph structure, we convert it into JSON, and we put it in the search engine."
+            ),
+            "timestamp": 582,
+            "timestamp_seconds": 582,
+            "timestamp_label": "[00:09:42]",
+            "url": "https://www.youtube.com/watch?v=XlAIgmi_Vow&t=582s",
+            "markdown": "[00:09:42](https://www.youtube.com/watch?v=XlAIgmi_Vow&t=582s)",
+            "epistemic_status": "attributed_practitioner_claim",
+            "relevance": "Sam Julien's account of storing graph structure in search infrastructure.",
         },
         {
-            "title": "15 U.S.C. § 45 — Unfair methods of competition and unfair or deceptive acts or practices",
-            "url": "https://www.law.cornell.edu/uscode/text/15/45",
-            "relevance": "Anchors truthful service claims, substantiated performance representations, and nondeceptive reputation operations.",
+            "source_type": "video_pro_tip",
+            "video_id": "6vG_amAshTk",
+            "title": "Knowledge Graph or Vector Database… Which is Better?",
+            "channel": "Adam Lucek",
+            "author": "Adam Lucek",
+            "text": (
+                "It is first split by default into chunks of 1,200 tokens with 100-token overlaps."
+            ),
+            "tip": (
+                "It is first split by default into chunks of 1,200 tokens with 100-token overlaps."
+            ),
+            "timestamp": 737,
+            "timestamp_seconds": 737,
+            "timestamp_label": "[00:12:17]",
+            "url": "https://www.youtube.com/watch?v=6vG_amAshTk&t=737s",
+            "markdown": "[00:12:17](https://www.youtube.com/watch?v=6vG_amAshTk&t=737s)",
+            "epistemic_status": "attributed_practitioner_claim",
+            "relevance": "Practitioner testimony on the demonstrated GraphRAG chunking defaults.",
         },
         {
-            "title": "16 CFR Part 465 — Rule on the Use of Consumer Reviews and Testimonials",
-            "url": "https://www.ecfr.gov/current/title-16/chapter-I/subchapter-D/part-465",
-            "relevance": "Addresses fake reviews, specified incentive practices, and prohibited review-suppression conduct.",
+            "source_type": "video_pro_tip",
+            "video_id": "cxGMp3DBkMk",
+            "title": "RAG Explained: Why LLMs Hallucinate Without a Knowledge Layer",
+            "channel": "AI Engineering with Kaushal",
+            "author": "AI Engineering with Kaushal",
+            "text": "RAG is only as good as its retrieval.",
+            "tip": "RAG is only as good as its retrieval.",
+            "timestamp": 520,
+            "timestamp_seconds": 520,
+            "timestamp_label": "[00:08:40]",
+            "url": "https://www.youtube.com/watch?v=cxGMp3DBkMk&t=520s",
+            "markdown": "[00:08:40](https://www.youtube.com/watch?v=cxGMp3DBkMk&t=520s)",
+            "epistemic_status": "attributed_practitioner_claim",
+            "relevance": "Practitioner testimony on evidence quality as the retrieval bottleneck.",
         },
         {
-            "title": "15 U.S.C. § 45b — Consumer review protection",
-            "url": "https://www.law.cornell.edu/uscode/text/15/45b",
-            "relevance": "Restricts covered form-contract provisions that prohibit or penalize honest consumer reviews or improperly claim rights in them.",
+            "source_type": "video_pro_tip",
+            "video_id": "_HQ2H_0Ayy0",
+            "title": "RAG Explained For Beginners",
+            "channel": "KodeKloud",
+            "author": "KodeKloud",
+            "text": "I write a small script that chunks text with a size 500 and overlap 100.",
+            "tip": "I write a small script that chunks text with a size 500 and overlap 100.",
+            "timestamp": 376,
+            "timestamp_seconds": 376,
+            "timestamp_label": "[00:06:16]",
+            "url": "https://www.youtube.com/watch?v=_HQ2H_0Ayy0&t=376s",
+            "markdown": "[00:06:16](https://www.youtube.com/watch?v=_HQ2H_0Ayy0&t=376s)",
+            "epistemic_status": "attributed_practitioner_claim",
+            "relevance": "Practitioner testimony on the initial chunking script's stated settings.",
         },
         {
-            "title": "47 CFR § 61.3 — Definitions",
-            "url": "https://www.ecfr.gov/current/title-47/chapter-I/subchapter-B/part-61/subpart-A/section-61.3",
-            "relevance": "Includes the access-stimulation definition used to screen telecom compensation arrangements rather than relying on marketing labels.",
+            "source_type": "video_pro_tip",
+            "video_id": "XNneh6-eyPg",
+            "title": "Practical GraphRAG: Making LLMs smarter with Knowledge Graphs — Michael, Jesus, and Stephen, Neo4j",
+            "channel": "AI Engineer",
+            "author": "AI Engineer",
+            "text": "Median per-issue resolution time was reduced by 28.6%.",
+            "tip": "Median per-issue resolution time was reduced by 28.6%.",
+            "timestamp": 392,
+            "timestamp_seconds": 392,
+            "timestamp_label": "[00:06:32]",
+            "url": "https://www.youtube.com/watch?v=XNneh6-eyPg&t=392s",
+            "markdown": "[00:06:32](https://www.youtube.com/watch?v=XNneh6-eyPg&t=392s)",
+            "epistemic_status": "attributed_practitioner_claim",
+            "relevance": "The Neo4j presenters' reported result from LinkedIn's support research.",
         },
         {
-            "title": "47 CFR § 51.914 — Additional provisions applicable to access stimulation",
-            "url": "https://www.ecfr.gov/current/title-47/chapter-I/subchapter-B/part-51/subpart-J/section-51.914",
-            "relevance": "Imposes additional obligations relevant to carriers and traffic arrangements involving access stimulation.",
+            "source_type": "video_pro_tip",
+            "video_id": "8N3k2qP_0SY",
+            "title": "Beyond the Case | Episode 6: RAG, AI Agents & Vector Databases — Without the Hype",
+            "channel": "Mirketa Inc",
+            "author": "Mirketa Inc",
+            "text": (
+                "When we tuned Case Resolver's similarity cutoff, we tested retrieval on its own, "
+                "and then we measured where the real and unrelated matches scored on our test "
+                "data, and then we drew the line between them."
+            ),
+            "tip": (
+                "When we tuned Case Resolver's similarity cutoff, we tested retrieval on its own, "
+                "and then we measured where the real and unrelated matches scored on our test "
+                "data, and then we drew the line between them."
+            ),
+            "timestamp": 1810,
+            "timestamp_seconds": 1810,
+            "timestamp_label": "[00:30:10]",
+            "url": "https://www.youtube.com/watch?v=8N3k2qP_0SY&t=1810s",
+            "markdown": "[00:30:10](https://www.youtube.com/watch?v=8N3k2qP_0SY&t=1810s)",
+            "epistemic_status": "attributed_practitioner_claim",
+            "relevance": "Firsthand testimony on tuning Case Resolver's retrieval cutoff.",
         },
         {
-            "title": "47 CFR § 64.6301 — Caller ID authentication",
-            "url": "https://www.ecfr.gov/current/title-47/chapter-I/subchapter-B/part-64/subpart-HH/section-64.6301",
-            "relevance": "Establishes caller-ID authentication requirements for covered providers without replacing consent, content, or settlement-law analysis.",
+            "source_type": "video_pro_tip",
+            "video_id": "T-D1OfcDW1M",
+            "title": "What is Retrieval-Augmented Generation (RAG)?",
+            "channel": "IBM Technology",
+            "author": "IBM Technology",
+            "text": (
+                "So the prompt now has three parts: the instruction to pay attention to, "
+                "the retrieved content, together with the user's question."
+            ),
+            "tip": (
+                "So the prompt now has three parts: the instruction to pay attention to, "
+                "the retrieved content, together with the user's question."
+            ),
+            "timestamp": 240,
+            "timestamp_seconds": 240,
+            "timestamp_label": "[00:04:00]",
+            "url": "https://www.youtube.com/watch?v=T-D1OfcDW1M&t=240s",
+            "markdown": "[00:04:00](https://www.youtube.com/watch?v=T-D1OfcDW1M&t=240s)",
+            "epistemic_status": "attributed_practitioner_claim",
+            "relevance": "Marina Danilevsky's explanation of the augmented prompt.",
         },
         {
-            "title": "15 U.S.C. § 7704 — Requirements for transmission of messages",
-            "url": "https://www.law.cornell.edu/uscode/text/15/7704",
-            "relevance": "Governs commercial email headers, subjects, required identification and address information, opt-out mechanisms, and suppression timing.",
+            "source_type": "video_pro_tip",
+            "video_id": "r4hp_y9_V3w",
+            "title": "The Future of Enterprise AI: RAG vs. Agentic Workflows",
+            "channel": "Hey sidG",
+            "author": "Hey sidG",
+            "text": (
+                "We're talking a 70 to 90% drop in those pesky hallucinations when "
+                "you get RAG set up correctly."
+            ),
+            "tip": (
+                "We're talking a 70 to 90% drop in those pesky hallucinations when "
+                "you get RAG set up correctly."
+            ),
+            "timestamp": 138,
+            "timestamp_seconds": 138,
+            "timestamp_label": "[00:02:18]",
+            "url": "https://www.youtube.com/watch?v=r4hp_y9_V3w&t=138s",
+            "markdown": "[00:02:18](https://www.youtube.com/watch?v=r4hp_y9_V3w&t=138s)",
+            "epistemic_status": "attributed_practitioner_claim",
+            "relevance": "Practitioner claim about hallucination reduction from correctly configured RAG.",
         },
         {
-            "title": "47 U.S.C. § 227 — Restrictions on use of telephone equipment",
-            "url": "https://www.law.cornell.edu/uscode/text/47/227",
-            "relevance": "Provides the statutory framework for assessing outbound calling and messaging technology, purpose, recipient, and permission requirements.",
+            "source_type": "video_pro_tip",
+            "video_id": "LmXaPUky_u4",
+            "title": "Open WebUI Knowledge Bases: RAG & Embeddings (Beginner's Guide)",
+            "channel": "Professor Patterns",
+            "author": "Professor Patterns",
+            "text": (
+                "If you update or change your embedding model you'll have to reimport all of your documents."
+            ),
+            "tip": (
+                "If you update or change your embedding model you'll have to reimport all of your documents."
+            ),
+            "timestamp": 484,
+            "timestamp_seconds": 484,
+            "timestamp_label": "[00:08:04]",
+            "url": "https://www.youtube.com/watch?v=LmXaPUky_u4&t=484s",
+            "markdown": "[00:08:04](https://www.youtube.com/watch?v=LmXaPUky_u4&t=484s)",
+            "epistemic_status": "attributed_practitioner_claim",
+            "relevance": "Demonstrated Open WebUI maintenance requirement after changing embeddings.",
         },
         {
-            "title": "47 CFR § 64.1200 — Delivery restrictions",
-            "url": "https://www.ecfr.gov/current/title-47/chapter-I/subchapter-B/part-64/subpart-L/section-64.1200",
-            "relevance": "Supplies operational calling and messaging restrictions that must be assessed alongside applicable state requirements.",
+            "source_type": "video_pro_tip",
+            "video_id": "ruilmyfVgrI",
+            "title": "Webinar: How to Build Enterprise-Ready RAG Systems",
+            "channel": "Unstructured",
+            "author": "Unstructured",
+            "text": (
+                "You basically build what's called a golden set. So this is maybe "
+                "100 to a few hundred Q&A pairs of your most important questions."
+            ),
+            "tip": (
+                "You basically build what's called a golden set. So this is maybe "
+                "100 to a few hundred Q&A pairs of your most important questions."
+            ),
+            "timestamp": 1048,
+            "timestamp_seconds": 1048,
+            "timestamp_label": "[00:17:28]",
+            "url": "https://www.youtube.com/watch?v=ruilmyfVgrI&t=1048s",
+            "markdown": "[00:17:28](https://www.youtube.com/watch?v=ruilmyfVgrI&t=1048s)",
+            "epistemic_status": "attributed_practitioner_claim",
+            "relevance": "Daniel Scoffield's proposed starting point for offline RAG evaluation.",
+        },
+        {
+            "source_type": "video_pro_tip",
+            "video_id": "tLMViADvSNE",
+            "title": "Every RAG Strategy Explained in 13 Minutes (No Fluff)",
+            "channel": "Cole Medin",
+            "author": "Cole Medin",
+            "text": "I would look at reranking, agentic RAG, and context-aware chunking.",
+            "tip": "I would look at reranking, agentic RAG, and context-aware chunking.",
+            "timestamp": 747,
+            "timestamp_seconds": 747,
+            "timestamp_label": "[00:12:27]",
+            "url": "https://www.youtube.com/watch?v=tLMViADvSNE&t=747s",
+            "markdown": "[00:12:27](https://www.youtube.com/watch?v=tLMViADvSNE&t=747s)",
+            "epistemic_status": "attributed_practitioner_claim",
+            "relevance": "Practitioner recommendation for an initial combination of retrieval strategies.",
+        },
+        {
+            "source_type": "video_pro_tip",
+            "video_id": "UabBYexBD4k",
+            "title": "Is RAG Still Needed? Choosing the Best Approach for LLMs",
+            "channel": "IBM Technology",
+            "author": "IBM Technology",
+            "text": (
+                "You really do need to have a retrieval layer to filter information "
+                "down to something that fits into the LLM context window."
+            ),
+            "tip": (
+                "You really do need to have a retrieval layer to filter information "
+                "down to something that fits into the LLM context window."
+            ),
+            "timestamp": 613,
+            "timestamp_seconds": 613,
+            "timestamp_label": "[00:10:13]",
+            "url": "https://www.youtube.com/watch?v=UabBYexBD4k&t=613s",
+            "markdown": "[00:10:13](https://www.youtube.com/watch?v=UabBYexBD4k&t=613s)",
+            "epistemic_status": "attributed_practitioner_claim",
+            "relevance": "Additional practitioner testimony on retrieval for enterprise-scale collections.",
+        },
+        {
+            "source_type": "video_pro_tip",
+            "video_id": "8N3k2qP_0SY",
+            "title": "Beyond the Case | Episode 6: RAG, AI Agents & Vector Databases — Without the Hype",
+            "channel": "Mirketa Inc",
+            "author": "Mirketa Inc",
+            "text": (
+                "You can retrieve the wrong information. You can retrieve outdated "
+                "information. And you can retrieve just incomplete information."
+            ),
+            "tip": (
+                "You can retrieve the wrong information. You can retrieve outdated "
+                "information. And you can retrieve just incomplete information."
+            ),
+            "timestamp": 1048,
+            "timestamp_seconds": 1048,
+            "timestamp_label": "[00:17:28]",
+            "url": "https://www.youtube.com/watch?v=8N3k2qP_0SY&t=1048s",
+            "markdown": "[00:17:28](https://www.youtube.com/watch?v=8N3k2qP_0SY&t=1048s)",
+            "epistemic_status": "attributed_practitioner_claim",
+            "relevance": "Additional practitioner testimony on grounding failures despite retrieval.",
+        },
+        {
+            "source_type": "video_pro_tip",
+            "video_id": "ruilmyfVgrI",
+            "title": "Webinar: How to Build Enterprise-Ready RAG Systems",
+            "channel": "Unstructured",
+            "author": "Unstructured",
+            "text": (
+                "You're not creating new metrics here. You're actually moving the needle on their metrics."
+            ),
+            "tip": (
+                "You're not creating new metrics here. You're actually moving the needle on their metrics."
+            ),
+            "timestamp": 694,
+            "timestamp_seconds": 694,
+            "timestamp_label": "[00:11:34]",
+            "url": "https://www.youtube.com/watch?v=ruilmyfVgrI&t=694s",
+            "markdown": "[00:11:34](https://www.youtube.com/watch?v=ruilmyfVgrI&t=694s)",
+            "epistemic_status": "attributed_practitioner_claim",
+            "relevance": "Additional practitioner testimony on measuring existing business outcomes.",
         },
     ],
 }

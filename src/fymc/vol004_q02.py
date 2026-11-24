@@ -1,134 +1,954 @@
+from __future__ import annotations
+
 CHAPTER_2 = {
-    "id": "Q2", "chapter_id": "Q2", "chapter_number": 2, "question_number": 2,
-    "slug": "who-pays-billing-rails-and-embedded-fintech",
-    "question_prompt": "Who pays, why do they pay, and which payment rails preserve owner profit?",
+    "id": "Q2",
+    "chapter_id": "Q2",
+    "chapter_number": 2,
+    "question_number": 2,
+    "slug": "choose-a-vertical-and-examine-its-defensibility",
+    "question_prompt": "When should a founder choose vertical SaaS or a vertical AI agent, and what makes the product harder to replace than a generic AI wrapper?",
     "kicker": "Q2 / THE BIG MONEY PLAYBOOKS",
-    "title": "Who Pays, Why They Pay & Embedded Fintech Monetization",
-    "subtitle": "Departmental Card Budgets vs. Enterprise Procurement, Annual Prepay Cashflow, Merchant-of-Record vs. Stripe & Embedded VCC Interchange",
-    "layout_template": "executive_summary", "reading_time_minutes": 14,
-    "executive_summary": "Sell a measurable departmental outcome before adding payment revenue. A corporate card can fund a narrow workflow at $99-$499 monthly; cheap prosumers require volume, while enterprise contracts consume sales time and security resources. Choose billing infrastructure by total operating cost, not headline processing fees. Annual prepayment can fund acquisition, but its cash includes future service obligations. Embedded vendor payments add revenue only when suppliers accept cards and the platform actually receives a contractual share. Model subscription billings, inference and hosting costs, payment contribution, labor, and owner profit separately. Money moving through your software is not automatically your revenue.",
+    "title": "Choose a Vertical and Examine Its Defensibility",
+    "subtitle": "Vertical versus horizontal SaaS, niche AI solutions, specialized data, agents replacing business functions, wrapper risks, and competing views on AI disruption",
+    "layout_template": "executive_summary",
+    "reading_time_minutes": 15,
+    "executive_summary": (
+        "Rob Walling favors vertical SaaS for founders pursuing focused, capital-efficient businesses; "
+        "Jordan Crawford and Abdalla Emam put buyer knowledge ahead of easily copied features. "
+        "Jake Heller shows the machinery behind specialization: legal databases, document integrations, "
+        "OCR handling, chained prompts, and extensive tests. Jamie Cuffe targets insurance work already "
+        "outsourced under documented procedures and reports 50–75% customer cost savings. Bessemer "
+        "reports vertical AI contracts reaching around 80% of existing software contract values among "
+        "overlapping customers. The disagreement is substantial: Sean and BergTube describe seat-based "
+        "software giving way to outcomes, while Practical Founders argues for software plus AI plus "
+        "data. MicroConf challenges switching-cost defenses; Sahill Poddar emphasizes relationships, "
+        "capital, and services beyond software. Wrapper speed opens the door; workflow execution, "
+        "customer understanding, and operating depth determine what follows."
+    ),
     "key_metrics": [
-        {"label": "Departmental price", "value": "$99-$499/mo", "context": "Corporate-card workflow", "note": "Buyer limits vary."},
-        {"label": "Annual incentive", "value": "10 monthly payments", "context": "Twelve months delivered", "note": "16.7% discount."},
-        {"label": "VCC hypothesis", "value": "140-195 bps", "context": "Contract-dependent gross economics", "note": "Not guaranteed platform revenue."},
+        {
+            "label": "Walling's vertical SaaS revenue objective",
+            "metric": "Walling's vertical SaaS revenue objective",
+            "value": "$2–20 million ARR",
+            "confidence": "attributed_practitioner_claim",
+            "context": (
+                "Walling presents this as a founder objective for which vertical SaaS can be a "
+                "better fit, while also mentioning a possible $2–30 million range."
+            ),
+            "source": "Rob Walling ([FlJaIqI0N10 @ 00:05:51])",
+        },
+        {
+            "label": "Vertical AI contract pricing comparison",
+            "metric": "Vertical AI contract pricing comparison",
+            "value": "Around 80% of existing software ACVs",
+            "confidence": "attributed_practitioner_claim",
+            "context": (
+                "Katie describes Bessemer's comparison of vertical AI and vertical software "
+                "companies selling into overlapping customers, including EvenUp and Litify."
+            ),
+            "source": "Bessemer Venture Partners ([icnddcX1NFA @ 00:02:17])",
+        },
+        {
+            "label": "Pace customer cost savings",
+            "metric": "Pace customer cost savings",
+            "value": "50–75%",
+            "confidence": "attributed_practitioner_claim",
+            "context": (
+                "Jamie Cuffe reports these savings for some insurance customers replacing "
+                "outsourced operations with Pace, achieved over a short period of working together."
+            ),
+            "source": "Sequoia Capital ([Uqr2U24uxOs @ 00:13:38])",
+        },
+        {
+            "label": "Gig ML marketplace evaluation depth",
+            "metric": "Gig ML marketplace evaluation depth",
+            "value": "10,000 test cases",
+            "confidence": "attributed_practitioner_claim",
+            "context": (
+                "Y Combinator describes a detailed evaluation set tailored to Zepto and similar "
+                "instant-delivery marketplaces, rather than a general-purpose support demonstration."
+            ),
+            "source": "Y Combinator ([ASABxNenD_U @ 00:28:14])",
+        },
     ],
     "sections": [
         {
-            "heading": "1. Sell to the budget owner, not the largest audience",
-            "epistemic_status": "operating_framework",
+            "id": "practitioner-consensus",
+            "title": "The Practitioner Consensus",
             "paragraphs": [
-                "A departmental buyer pays to remove a recurring queue: invoice exceptions, missed renewals, or document review that blocks revenue. Price the finished workflow at $99-$499 monthly and identify whose corporate card carries the charge. This range can sit below CFO procurement friction, but no universal spending exemption exists. Ask about purchasing limits, data access, and vendor registration during discovery. Demonstrate one completed job using realistic inputs, then measure hours saved against the buyer's existing process. A $299 product that reliably saves ten hours has a clearer purchase argument than an unlimited assistant with no defined output. Capture the budget owner, daily user, renewal date, and measurable success threshold in the account record before celebrating the sale. Those fields explain retention better than signup counts.",
-                "The $5 monthly prosumer looks easy to acquire because the purchase decision is small. The economics become difficult when a single support exchange costs more than several months of revenue. At an illustrative $30 loaded hourly support cost, ten minutes consumes the entire monthly bill before payment fees, inference, hosting, refunds, or acquisition. Low prices also attract intermittent usage: customers subscribe for one task and leave. Do not assume a large audience cures this structure. Test repeat use across several billing periods and track support minutes per paying account. If the workflow genuinely belongs to consumers, constrain expensive usage and automate recovery from common failures. Otherwise, package the same capability around a business deadline that supports a higher price and accountable renewal conversation.",
-                "An enterprise buyer offering $25,000 or more annually changes the operating model rather than merely increasing revenue per account. A six-month sales cycle involving SOC 2 evidence, security review, procurement, and contract negotiation is a planning scenario, not a mandatory duration or universal certification rule. Count founder selling time and engineering requests against the deal before treating its value as available cash. A small operator can run out of runway while a promising contract waits for a signature. Keep enterprise features separate from the departmental product unless several qualified buyers need them. Request a paid pilot with a defined result and decision date where feasible. Compare cash collected per sales hour across segments; a signed annual commitment does not pay expenses until collection actually occurs."
+                (
+                    "Rob Walling defines vertical SaaS as software built for a specific industry: dental "
+                    "practice management, real-estate CRM, legal case tracking, or contractor project "
+                    "management. The attraction is depth rather than breadth. These products tend to "
+                    "be integral to running the customer’s business, not optional conveniences, and "
+                    "Walling reports lower churn among the vertical companies across their investments. "
+                    "The narrower market can still support the founder’s intended business; Walling "
+                    "contrasts venture-scale ambitions with a founder seeking a much smaller recurring "
+                    "revenue company and an eventual sale. The argument is not that every vertical "
+                    "beats every horizontal product, but that less sophisticated, less funded competition "
+                    "can make the bootstrap route easier [FlJaIqI0N10 @ 00:05:51]. Sean makes the "
+                    "same industry-specific choice through Clockless, a billing automation product for "
+                    "small law firms, describing domain language and an exact customer problem as the "
+                    "opening against broad platforms [GK9LZkd6aHM @ 00:02:05]. Jordan Crawford puts "
+                    "the commercial advantage in narrow expertise connected to buying behavior. "
+                    "Customers’ reasons for purchasing often remain in their heads or emerge only "
+                    "during calls; Crawford says models do not automatically possess that knowledge. "
+                    "A tightly defined segment lets a company turn those insights into targeted "
+                    "workflows, focused messaging, and a better buying experience instead of researching "
+                    "many disconnected personas [RINTsdOTWfc @ 00:01:31]."
+                ),
+                (
+                    "Abdalla Emam separates using a model API from having no durable advantage. Building "
+                    "on infrastructure is ordinary; the dangerous position is a product whose value "
+                    "disappears when the underlying model adds a feature. Emam identifies proprietary "
+                    "data, workflow ownership, and vertical specialization as concrete forms of "
+                    "defensibility. Data becomes valuable when it comes from actual cases, decisions, "
+                    "and operating workflows. Workflow ownership means handling activities such as "
+                    "insurance claims, caregiver scheduling, customer support pipelines, or internal "
+                    "documentation deeply enough that replacement becomes painful "
+                    "[NwYdSzPW6yg @ 00:02:47]. New Machina describes vertical agents through the same "
+                    "domain depth: specialized language, data, workflows, and connections to existing "
+                    "industry systems. An agent does work through natural-language interaction or "
+                    "autonomous execution rather than merely presenting menus and forms; relevant "
+                    "integrations include healthcare records and sales CRMs "
+                    "[orVropqNnCA @ 00:01:19]. Practical Founders makes the incumbent version of this "
+                    "argument with concrete-pumping software. Understanding how the trade operates, "
+                    "how work is priced, and how customers interact with the surrounding ecosystem "
+                    "is not something a generalized model automatically reproduces. The investment "
+                    "thesis combines software, AI, proprietary workflow information, customer "
+                    "knowledge, and relationships. Automation adds value to that existing base rather "
+                    "than requiring the business to discard its system of record "
+                    "[Avxi60Ny5SM @ 00:34:12]."
+                ),
+                (
+                    "Y Combinator’s vertical-agent thesis expands the target beyond the software budget. "
+                    "Traditional SaaS still requires people to enter data, operate workflows, and "
+                    "complete the surrounding work. The proposed agent business combines software "
+                    "and work previously performed by people, reaching payroll expenditure as well "
+                    "as application spending. The panel argues that this could make vertical-agent "
+                    "companies much larger than their SaaS equivalents; it is their market thesis, "
+                    "not a description of every existing agent business "
+                    "[ASABxNenD_U @ 00:20:27]. Bessemer supplies a specific commercial comparison: "
+                    "Litify runs the core workflow of personal-injury law firms, while EvenUp "
+                    "delivers demand-letter work using AI behind the scenes. Customers compare that "
+                    "service with expensive labor and the value of its output, rather than simply "
+                    "treating it as another software subscription. Bessemer also reports customers "
+                    "taking on more work, not merely cutting headcount "
+                    "[icnddcX1NFA @ 00:04:40]. Jamie Cuffe applies the same budget logic at Pace "
+                    "by starting with insurance processes already outsourced at scale. Those "
+                    "customers already have operating procedures, accuracy checks, and a spending "
+                    "line to examine. Pace prioritizes high-volume work with substantial potential "
+                    "ROI, commonly submission intake or claims intake, before moving further "
+                    "through policy administration or claims operations. The initial target is an "
+                    "existing operating activity with an established handoff, not a request for the "
+                    "customer to invent an AI use case [Uqr2U24uxOs @ 00:11:30]."
+                ),
             ],
             "table": {
-                "caption": "Forensic buyer and billing traps",
-                "headers": ["Naive Trap", "Detection Metric", "Durable Operator Fallback"],
+                "caption": "The recurring reasons practitioners choose a narrow operating market",
+                "headers": ["Operating choice", "Practitioner mechanics", "Expert Source"],
                 "rows": [
-                    ["Cheap users mean cheap growth", "Support cost per account", "Price a recurring business outcome"],
-                    ["Enterprise pipeline equals cash", "Days to collected payment", "Paid, bounded pilot"],
-                    ["Prepay equals profit", "Unserved subscription months", "Reserve delivery cash"],
-                    ["Payment volume equals revenue", "Net settled partner share", "Separate settlement ledger"]
-                ]
-            }
+                    [
+                        "Choose industry depth when the founder wants a focused bootstrap business",
+                        "Walling favors essential vertical workflows, differentiated products, and less sophisticated competition over needing to win a broad horizontal market.",
+                        "Rob Walling ([FlJaIqI0N10 @ 00:06:19])",
+                    ],
+                    [
+                        "Start with an identifiable buyer instead of an undirected product build",
+                        "Sean tells founders to find the buyer first and build around real customer needs, rather than seeking customers after building.",
+                        "Bootstrapper's Paradise ([GK9LZkd6aHM @ 00:02:53])",
+                    ],
+                    [
+                        "Capture purchasing knowledge that remains inside conversations and customer experience",
+                        "Crawford says buying behavior is often not written down, making a narrow segment and direct buyer understanding commercially valuable.",
+                        "Jordan Crawford (Blueprint) ([RINTsdOTWfc @ 00:01:31])",
+                    ],
+                    [
+                        "Make specialized intelligence operate through the customer's existing industry systems",
+                        "New Machina describes agents with domain-specific data, language, and workflows, plus integrations into relevant tools such as electronic health records.",
+                        "New Machina ([orVropqNnCA @ 00:01:19])",
+                    ],
+                    [
+                        "Build proprietary learning through actual cases rather than interface decoration",
+                        "Emam identifies real workflows, real decisions, proprietary data, and embedded operations as advantages that competitors cannot easily reproduce.",
+                        "Indy Pixels | Abdalla Emam ([NwYdSzPW6yg @ 00:02:47])",
+                    ],
+                    [
+                        "Sell completed work against an existing services or labor budget",
+                        "Bessemer describes EvenUp as replacing demand-letter work, with spending reallocated from services rather than requiring an entirely new technology budget.",
+                        "Bessemer Venture Partners ([icnddcX1NFA @ 00:04:40])",
+                    ],
+                ],
+            },
         },
         {
-            "heading": "2. Buy the billing responsibilities you actually need",
-            "epistemic_status": "operating_framework",
+            "id": "exact-street-mechanics",
+            "title": "Exact Street Mechanics, Tools & Numbers",
             "paragraphs": [
-                "Stripe Billing plus Stripe Tax gives a direct seller subscription tooling and tax calculation capabilities, with available registration and filing services depending on product coverage and configuration. It does not automatically make Stripe the merchant of record for that arrangement. Map who registers, collects, files, remits, refunds, and answers tax notices before comparing prices. Paddle and Lemon Squeezy offer merchant-of-record models for eligible products and supported transactions, typically taking seller-facing responsibility for transaction taxes within their contractual scope. They do not erase your own income taxes, payroll duties, or obligations outside those sales. Compare the complete contract: permitted products, geographic coverage, payout timing, reserves, chargebacks, subscription migration, and customer invoice identity. A lower fee is meaningless if the provider cannot support your specific business model.",
-                "Wayfair removed the physical-presence requirement that previously constrained state sales-tax collection duties; it did not declare every SaaS transaction taxable everywhere. State economic-nexus thresholds, taxable product definitions, exemptions, and sourcing rules still matter. Global VAT brings a different jurisdictional map, especially for customer location and business status. Maintain a country and state sales ledger with product classification and customer evidence rather than treating a tax percentage as a complete operating system. Under a merchant-of-record contract, verify which transactions the provider sells and which obligations remain yours. Under direct billing, assign responsibility for registrations and returns explicitly. Review new territories before material sales accumulate. This is a cost allocation decision as much as a tax decision: administrative hours belong in the comparison beside processing and subscription fees.",
-                "Run a representative month through both billing models using actual ticket sizes, currencies, refunds, and annual purchases. Separate payment processing, subscription software, tax services, foreign exchange, dispute charges, and internal administration. A merchant-of-record premium may purchase valuable operating capacity for one founder; a mature domestic business may prefer direct control. Do not compare a bundled rate with an unbundled card rate and call the difference pure savings. Test lifecycle behavior as well: a refund must update entitlements correctly, duplicate webhooks must not create duplicate credits, and a failed renewal must enter a recoverable state. Store provider identifiers alongside internal account identifiers so migration remains possible. Export invoices and reconcile payouts monthly. The durable rail is the one whose economics and operational responsibilities remain visible when something fails.",
-                "Graduate from a merchant of record to direct Stripe plus ACH when the business can buy back those responsibilities for less than the recurring premium, not simply when revenue crosses an arbitrary milestone. Start with the last ninety days of tax-exclusive collections, grouped by country, state, currency, customer business status, payment method, and invoice size. Price the same basket under both arrangements, including fixed transaction charges, Billing, tax tooling, filing services, currency conversion, disputes, failed collections, and the operator hours required to reconcile them. The fee figures in the matrix are planning assumptions rather than current provider quotations; verify the relevant country schedule and signed commercial terms before budgeting. For a concrete migration screen, assume $40,000 of monthly collections and an illustrative two-percentage-point reduction in total collection costs. That creates $800 monthly headroom. If added administration and services cost $500 monthly and migration costs $3,000, the remaining $300 takes ten months to recover that transition cost, before customer disruption or collection failures. A longer payback may justify staying with the merchant of record while improving retention instead. Direct billing becomes more attractive when a concentrated domestic B2B customer base accepts annual bank payments, tax classifications are stable, and someone already owns reconciliation. It becomes less attractive when small international invoices create many registrations and support exceptions. Treat ACH debit and bank wire as distinct workflows: debit needs an authorization and can be returned, while a wire invoice needs remittance matching and confirmation of receipt. Neither method makes an unpaid invoice available cash. Pilot direct billing on new eligible customers first, keeping existing subscriptions on their original provider until renewal or an agreed migration. Confirm whether customer payment credentials are portable; do not assume tokens can be exported or that a merchant-of-record customer relationship transfers automatically. Preserve original invoice access, credit notes, cancellation dates, and paid-through entitlements across both systems. Assign each subscription exactly one collecting provider during the transition, and reconcile overlapping webhook events against that assignment. Document who handles refunds for historical transactions and who answers tax notices after the switch. Release the migration budget only from existing surplus, not from delivery reserves. Continue comparing net collected contribution, collection failure rates, support minutes, and refund handling for several renewal cycles. The decision is successful when lower fees survive the extra work and customers retain uninterrupted service, not when the first direct invoice looks cheaper."
+                (
+                    "Crawford’s selection exercise starts by imagining the product expanded into every "
+                    "candidate vertical, then asking which customer would receive vastly more value "
+                    "over the following years. Crawford recommends Claude for inspiration and "
+                    "potentially ChatGPT for research, looking for less competition, more customer "
+                    "value, and a way to deliver a permissionless value proposition. Exploration "
+                    "should happen serially rather than through ten simultaneous attempts: pick a "
+                    "segment, pursue it, and use the contrast between attempts to identify where "
+                    "buying is easier. That focus also means declining some customers who could "
+                    "benefit, in order to serve the stronger segment "
+                    "[RINTsdOTWfc @ 00:06:09]. Sean makes the next move explicit: have a real "
+                    "buyer waiting and use a conversation to avoid months of building the wrong "
+                    "thing [GK9LZkd6aHM @ 00:03:07]. Y Combinator’s examples show how close "
+                    "observation produces that starting point. Sweetspot’s founders noticed a "
+                    "friend repeatedly refreshing a government website for opportunities to bid. "
+                    "Another founder went to work with their dentist parent and observed the "
+                    "repetitive claims-processing workload, then began writing software for that "
+                    "clinic. The panel’s instruction is to seek boring, repetitive administrative "
+                    "work connected to experience or an existing relationship. The opportunity "
+                    "begins with watching an actual task, not choosing an industry label and "
+                    "assuming its workflows [ASABxNenD_U @ 00:40:37]."
+                ),
+                (
+                    "Simon Høiberg starts from a production problem their own team experiences: generic "
+                    "stock footage is undesirable, while shooting custom B-roll consumes time. The "
+                    "demonstrated product accepts uploaded images, creates a character, and generates "
+                    "clips featuring that character. Lovable supplies the interface, Supabase supplies "
+                    "the backend through Lovable Cloud, and Replicate runs the models. Høiberg "
+                    "uploads images as a ZIP, starts a fine-tuning job, generates a character image, "
+                    "and passes that image to a video model as the starting frame. This is a "
+                    "specialized output assembled from models rather than another general chat "
+                    "interface [QIA9Ry42Lbs @ 00:05:13]. Jake Heller’s legal workflow uses a "
+                    "different chain but an equally explicit definition of the end result. Start "
+                    "with the research memo the lawyer wants, then work backward through search "
+                    "queries, retrieved cases, reading, notes, an outline, and cited writing. "
+                    "Heller describes a dozen or two dozen individual prompts, with tests for "
+                    "each stage and gold-standard expected answers "
+                    "[eBVi_sLaYsc @ 00:21:14]. The surrounding application also matters: legal "
+                    "document-management connections, proprietary annotations, and OCR handling "
+                    "for handwriting, tilted scans, and four printed pages squeezed onto one "
+                    "sheet. Heller describes dozens of requirements before the language model "
+                    "even receives the information, followed by careful formatting, prompting, "
+                    "and evaluation [eBVi_sLaYsc @ 00:25:40]."
+                ),
+                (
+                    "Cuffe’s deployment sequence begins with the insurance carrier’s operations "
+                    "leadership and a real task, not dummy demonstration data. Pace defines success "
+                    "criteria upfront, works onsite, and takes in existing procedures that may "
+                    "span 50–100 pages and around 60 steps. The team converts those instructions "
+                    "into agent operating procedures expressed in a document-like interface. "
+                    "Agents use tools for difficult document retrieval, rules, and writing back "
+                    "into industry systems; Pace uses APIs where available and web agents where "
+                    "they are not [Uqr2U24uxOs @ 00:35:32]. Sahill Poddar describes an adjacent "
+                    "data-to-action chain in financing: use language models to resolve entities "
+                    "in bank transactions, categorize debt, expenses, revenue, and missed payments, "
+                    "then feed the transformed time series into a model that projects cash "
+                    "flows. The work strengthens underwriting rather than stopping at a display "
+                    "of financial insights [y6eOdHpH5W8 @ 00:37:32]. Bessemer reports that "
+                    "most of its AI-enabled services businesses operate at gross margins above "
+                    "60%, with model costs only a fraction of the cost base. The value sits "
+                    "in workflow, know-how, go-to-market execution, customer success, and "
+                    "last-mile operations. Its explanation is specific: adding models and "
+                    "people alone is insufficient; differentiated delivery requires custom "
+                    "functionality, processes, and expertise "
+                    "[icnddcX1NFA @ 00:10:21]."
+                ),
             ],
             "table": {
-                "caption": "8-Rail B2B Billing, Embedded Fintech & Global Tax Comparison Matrix",
-                "headers": ["Billing / Payment Rail", "Merchant of Record?", "Typical Effective Fee", "Sales-Tax / VAT Liability", "Best Fit Ticket & Workflow", "Key Operational Risk"],
+                "caption": "Execution details and numbers attached to specific operating examples",
+                "headers": ["Execution move", "Exact mechanics and stated numbers", "Expert Source"],
                 "rows": [
-                    ["Stripe Billing + Stripe Tax (Card)", "No; you are the direct seller", "Illustrative US domestic card base: 2.9% + $0.30; Billing, Tax, FX and other services extra", "Seller owns nexus, registration and returns; tools cover configured services", "$99-$499 monthly departmental subscriptions", "Comparing base processing with an all-in MoR quote understates cost"],
-                    ["Stripe ACH Direct Debit / Wire Annual Invoice", "No", "Illustrative US ACH debit: 0.8%, $5 cap; wire and invoicing priced separately; verify eligibility", "Seller retains sales-tax / VAT duties", "$2,990 annual B2B invoice; debit authorization or matched incoming wire", "Debit returns, wire mismatches and delayed settlement; neither is instant cleared cash"],
-                    ["Paddle (Merchant of Record)", "Yes, for covered sales", "Planning baseline: 5% + $0.50; negotiated terms and exceptions vary", "MoR handles covered transaction taxes; seller retains its own taxes", "Eligible international software subscriptions needing bundled collection", "Payout reserves, product eligibility and customer migration constraints"],
-                    ["Lemon Squeezy (Merchant of Record)", "Yes, for covered sales", "Planning baseline: 5% + $0.50; subscription, international or method surcharges may apply", "MoR handles covered transaction taxes, not seller income or payroll taxes", "Small eligible SaaS offers with global self-service checkout", "Headline rate misses surcharges; payout timing and supported-country limits"],
-                    ["FastSpring B2B MoR", "Yes, within contract", "Custom quote; model transaction, currency and service charges together", "MoR handles transaction taxes within contracted coverage", "B2B software quotes and invoicing; confirm required payment methods", "Quote-to-cash features and settlement terms may differ by contract"],
-                    ["Embedded Commercial VCC AP Settlement (140-195 bps partner pool)", "Not inherently; partner roles govern settlement", "140-195 bps is a hypothetical gross partner pool, not a fee or guaranteed platform share", "Underlying vendor sale retains its own tax treatment; settlement changes no tax classification", "Accepted supplier invoices with contracted issuer / partner revenue share", "Supplier refusal, reversals, fraud allocation and share deductions reduce contribution"],
-                    ["Multi-MID Payment Orchestration Analytics", "No; authorized merchant identities remain", "Processor charges plus orchestration software or contracted service fee; no universal blended rate", "Each underlying seller retains its applicable duties", "Merchants needing authorized routing visibility and settlement reconciliation", "Duplicate captures, impermissible retries and mismatched merchant identities"],
-                    ["Web2App Quiz -> External Web Checkout", "Depends on checkout provider", "Underlying card or MoR charges; 6% is an illustrative collection assumption, not a quote", "Direct seller or MoR according to actual checkout arrangement", "Mobile onboarding with permitted web purchase and authenticated account linking", "Regional platform rules, lower conversion and broken app entitlements"]
-                ]
-            }
-        },
-        {
-            "heading": "3. Use annual cash without spending tomorrow's delivery budget",
-            "epistemic_status": "illustrative_model",
-            "paragraphs": [
-                "Two months free means charging ten monthly payments for twelve months of service, a 16.7% discount against monthly billing. At $299 monthly, the annual invoice is $2,990 rather than $3,588. Assume illustrative collection costs of 4%, acquisition spending of $600, and inference plus hosting of $35 monthly. Collection leaves $2,870.40; after acquisition and reserving $420 for twelve months of technical delivery, $1,850.40 remains before support, payroll, overhead, refunds, and taxes. That remainder is not owner profit. Annual prepayment creates a negative working-capital pattern when customers pay before delivery costs fall due. It can finance acquisition from customer cash, but only when collection timing, refund exposure, and future service costs support the schedule. A prepaid customer is still owed eleven more months after the first month closes.",
-                "Build the cash schedule by acquisition cohort rather than averaging the whole company. Record invoice date, cleared payout date, acquisition cash paid, expected service usage, support allowance, and renewal month. Separate collected cash from revenue earned over the service period; annual prepayment changes cash timing without making twelve months of service immediately delivered. Stress the reserve with twice the expected inference usage and a delayed provider payout. If the business must spend next year's renewal money to serve this year's subscribers, the apparent financing benefit conceals a funding gap. Maintain liquidity for contractual refunds and disputed payments separately from projected growth spending. The useful question is not whether annual customers pay more today, but whether each cohort can fund its remaining promises without requiring another cohort to arrive.",
-                "Offer annual billing after the customer sees repeat value, not as camouflage for weak monthly retention. Compare annual renewal behavior with monthly cohorts at equivalent customer ages, and count cancellations even when access continues until the prepaid term ends. Show the total annual charge, renewal timing, and cancellation process clearly at purchase. For online consumer negative-option transactions, 15 U.S.C. section 8403 requires material disclosures before billing information is obtained, express informed consent before charging, and simple mechanisms to stop recurring charges. A business workflow should also make renewal expectations easy to understand, while applicable duties depend on the transaction. Track collected annual cash, remaining delivery obligations, and earned subscription revenue as distinct measures. Avoid rewarding a sales channel merely because it produces a large first invoice followed by expensive refunds."
-            ],
-            "table": {
-                "caption": "Verbatim Departmental Card & Annual-Prepay Quote Templates",
-                "headers": ["Buying Scenario", "Target Approver", "Verbatim Offer / Invoice Framing", "Cash-Reserve Rule"],
-                "rows": [
-                    ["Sub-$299/mo departmental manager card", "Department manager with purchasing authority", "For $249 per month plus applicable tax, your team gets one invoice-exception queue, three named users, and up to 500 documents monthly. Extra volume requires a separate quote. Billing renews monthly; cancel before renewal to stop the next charge, with access through the paid period. Can this fit your existing departmental purchasing limit?", "Reserve the next service month's inference, hosting and support costs; exclude collected tax and unsettled card proceeds from spendable cash."],
-                    ["Day 14 annual upgrade: 10 months for 12", "Existing $299/month account's budget owner", "You have now used the workflow for fourteen days. Keep your current month, or schedule twelve months for $2,990 plus applicable tax starting at your next renewal: ten monthly payments for twelve months of service, saving $598 against $3,588 monthly. Nothing changes unless you accept. The annual plan renews at $2,990 a year unless changed with advance notice; cancel before renewal to prevent the next charge.", "For the chapter's illustrative 4% collection cost and $600 acquisition spend, reserve $420 technical delivery; the $1,850.40 remainder still precedes support, overhead, refunds and taxes. Do not charge acquisition twice."],
-                    ["Quarterly paid pilot with explicit scope cap", "Workflow owner and departmental budget owner", "The pilot is $897 plus applicable tax, prepaid for three months, covering one workflow, three named users, and 1,500 documents total. We will measure exception turnaround against your baseline. Custom integrations and excess documents are excluded and separately quoted. The pilot ends after three months; any continuation requires a new agreement.", "Reserve all three months of delivery and scoped onboarding after fees; retain contractual refund liquidity and do not assume a renewal funds completion."],
-                    ["ACH annual invoice avoiding 2.9% card fee", "Accounts payable contact and authorized budget owner", "Your annual invoice is $2,990 plus applicable tax for twelve months beginning on the service date shown. Choose authorized ACH debit rather than card payment to avoid the illustrative 2.9% card percentage charge in our collection costs; bank, invoicing and other fees may still apply. Payment is due before service begins. We will confirm receipt and your paid-through date.", "Do not spend against an issued invoice. On a $2,990 tax-exclusive charge, illustrative 2.9% + $0.30 card processing is $87.01 versus $5 capped ACH processing; reserve for returns and delivery, and verify all added fees."],
-                    ["Multi-seat team expansion trigger", "Department owner controlling the expanded budget", "You have requested access for a fourth teammate, exceeding the three seats included in your $299 monthly plan. We can add a three-seat pack for $99 monthly starting at the next renewal, bringing the total to $398 plus applicable tax. Document limits remain unchanged. No added charge applies until you accept the expansion; any annual quote will state the remaining-term total separately.", "Reserve incremental onboarding, support and usage costs before spending expansion receipts; prorated annual collections must cover the same remaining service period."],
-                    ["Supplier VCC opt-in settlement pitch", "Supplier receivables contact authorized to select payment method", "Would you like this approved invoice paid by a single-use commercial virtual card? Confirm your acceptance, any supplier-side processing costs, and the agreed payment amount before we issue it. If card payment does not work for you, we will use the agreed bank-payment method instead. Selecting a card does not change the invoice amount or due date without a separate agreement.", "Invoice principal is settlement volume, never operating cash. Reserve only from earned, settled contractual share after partner deductions, reversals and payment-operations costs; do not budget the entire 140-195 bps pool as revenue."]
-                ]
+                    [
+                        "Explore candidate segments serially before committing to the strongest buying lane",
+                        "Crawford suggests picking a segment perhaps each month, rather than trying ten simultaneously, and comparing how easily customers adopt.",
+                        "Jordan Crawford (Blueprint) ([RINTsdOTWfc @ 00:07:14])",
+                    ],
+                    [
+                        "Express the law-firm offer in recovered revenue rather than seats",
+                        "Sean illustrates Clockless recovering $5,000 in monthly billable time while charging $99; the example frames value rather than reporting measured customer results.",
+                        "Bootstrapper's Paradise ([GK9LZkd6aHM @ 00:04:57])",
+                    ],
+                    [
+                        "Assemble a niche generation product from frontend backend and model services",
+                        "Høiberg uses Lovable for the interface, Supabase for stored characters and clips, and Replicate to host and run the AI models.",
+                        "Simon Høiberg ([QIA9Ry42Lbs @ 00:01:53])",
+                    ],
+                    [
+                        "Turn a professional deliverable into individually evaluated intermediate reasoning tasks",
+                        "Heller describes a dozen or two dozen prompts, then expanding tests from dozens to hundreds and thousands for individual stages.",
+                        "Y Combinator ([eBVi_sLaYsc @ 00:23:22])",
+                    ],
+                    [
+                        "Move established insurance operating instructions into executable agent operating procedures",
+                        "Pace ingests procedures described as 50–100 pages with around 60 steps, then combines natural-language instructions with specialized execution tools.",
+                        "Sequoia Capital ([Uqr2U24uxOs @ 00:36:30])",
+                    ],
+                    [
+                        "Compare AI-enabled services margins with the actual delivery work underneath",
+                        "Bessemer reports most of its AI-enabled services businesses above 60% gross margins, emphasizing workflow, customer success, expertise, and last-mile operations.",
+                        "Bessemer Venture Partners ([icnddcX1NFA @ 00:10:34])",
+                    ],
+                ],
+            },
+            "callout": {
+                "kind": "INSIDER PRO-TIPS",
+                "title": "The narrow work behind a product that does more than chat",
+                "body": "Buyer selection, tested intermediate work, and dependable execution are explicit parts of these practitioners' builds.",
+                "items": [
+                    (
+                        "Explore segments one after another and compare buying behavior; Crawford "
+                        "explicitly warns against trying ten segments simultaneously. "
+                        "[Jordan Crawford (Blueprint) — RINTsdOTWfc @ 00:07:14]"
+                    ),
+                    (
+                        "Test the image model directly on Replicate, then copy its configuration "
+                        "into the Lovable implementation and specify the polling behavior. "
+                        "[Simon Høiberg — QIA9Ry42Lbs @ 00:08:22]"
+                    ),
+                    (
+                        "Write gold-standard answers for individual workflow stages before tuning "
+                        "prompts; Heller uses expected search queries as a concrete example. "
+                        "[Y Combinator — eBVi_sLaYsc @ 00:23:51]"
+                    ),
+                    (
+                        "Give forward-deployed engineers the ability to ship product code, so an "
+                        "onsite customer issue can become a direct fix rather than a distant ticket. "
+                        "[Sequoia Capital — Uqr2U24uxOs @ 00:22:10]"
+                    ),
+                ],
             },
             "sop_steps": [
-                {"step": 1, "title": "Quote", "action": "Display the annual total.", "detail": "State renewal timing and discount against monthly billing."},
-                {"step": 2, "title": "Collect", "action": "Wait for cleared settlement.", "detail": "Record fees, reserves, and payout timing."},
-                {"step": 3, "title": "Reserve", "action": "Fund twelve months of delivery.", "detail": "Stress inference, support, and refund assumptions."},
-                {"step": 4, "title": "Deploy", "action": "Release only surplus acquisition cash.", "detail": "Reconcile cohort obligations each month."}
-            ]
-        },
-        {
-            "heading": "4. Monetize legitimate payment activity, not hidden routing",
-            "epistemic_status": "operating_framework",
-            "paragraphs": [
-                "The b2b_commercial_vcc_interchange_rebate_arbitrage play embeds accounts-payable invoice approval and vendor settlement inside vertical B2B software. Treat 140-195 basis points as a commercial VCC economics hypothesis requiring a written partner offer, not an automatic platform yield. Interchange generally flows to issuers; software earns only the negotiated rebate or revenue share after contractual deductions. Regulation II, 12 CFR Part 235, addresses debit-card interchange and routing; it does not establish a commercial credit-card rebate entitlement. Model eligible settled card spend, supplier acceptance, issuer economics, partner share, reversals, and payment operations separately. A vendor declining cards produces no card revenue, however large its invoice. Keep ACH or another agreed settlement method available. The product earns trust by closing invoices accurately, not by forcing every supplier onto a more expensive rail.",
-                "Consider $1 million of monthly invoice opportunities with 40% supplier card acceptance. At an illustrative 170 basis points on $400,000 settled eligible spend, the gross economics pool is $6,800. If the platform contract allocates 50% of that pool to the software business, its revenue is $3,400 before support, reversals, partner charges, or fraud losses assigned by contract. These assumptions are arithmetic, not a market quote. Invoice principal remains settlement volume and never becomes subscription revenue. Confirm who funds the transaction, holds customer funds, underwrites credit, and handles disputes; a software integration does not itself confer those capabilities. Use a partner-provided card token, amount limit, supplier restriction where supported, and expiration. Reconcile invoice, authorization, capture, settlement, and cancellation states before recognizing the share as earned revenue.",
-                "The high_risk_payfac_iso_mid_cascading_arbitrage play is best framed here as payment-orchestration and multi-MID routing analytics software for complex merchants. Sell visibility into authorized merchant accounts, processor availability, decline categories, reconciliation gaps, and total acceptance costs. Routing must remain within acquiring agreements and accurate merchant identities; never conceal prohibited activity or send blocked transactions through unrelated accounts. Retry only where network rules and processor guidance permit it, and distinguish technical failures from hard declines. Use idempotency keys and a shared payment state so a timeout cannot trigger two captures through different processors. Attribute revenue lift to settled transactions after refunds and chargebacks, not raw authorization gains. Charge for analytical value or a clearly contracted service fee rather than assuming the software owns processor economics simply because it recommends a route."
+                {
+                    "step": 1,
+                    "title": "Observe an accessible administrative workflow",
+                    "action": "Find repetitive work through direct experience or an existing relationship.",
+                    "detail": (
+                        "Y Combinator describes a founder observing claims processing in their "
+                        "dentist parent's clinic and beginning with software for that practice. "
+                        "[Y Combinator — ASABxNenD_U @ 00:41:15]"
+                    ),
+                },
+                {
+                    "step": 2,
+                    "title": "Choose the buyer before expanding the build",
+                    "action": "Discuss the real buyer's needs before treating product development as validation.",
+                    "detail": (
+                        "Sean instructs founders to find the buyer first and build around real "
+                        "customers, saying one buyer conversation can save months of misdirected work. "
+                        "[Bootstrapper's Paradise — GK9LZkd6aHM @ 00:02:53]"
+                    ),
+                },
+                {
+                    "step": 3,
+                    "title": "Work backward from the professional output",
+                    "action": "Break the desired deliverable into the steps a strong practitioner would perform.",
+                    "detail": (
+                        "Heller starts with a cited legal memo, then decomposes the work into "
+                        "search queries, reading, notes, outlines, and writing, with tests for "
+                        "the intermediate prompts. "
+                        "[Y Combinator — eBVi_sLaYsc @ 00:21:14]"
+                    ),
+                },
+                {
+                    "step": 4,
+                    "title": "Deploy against defined customer success criteria",
+                    "action": "Use real operating work, existing procedures, and the customer's actual systems.",
+                    "detail": (
+                        "Cuffe defines success upfront and works onsite with customer procedures; "
+                        "Pace writes back through APIs where possible and web agents where necessary. "
+                        "[Sequoia Capital — Uqr2U24uxOs @ 00:36:00] "
+                        "[Sequoia Capital — Uqr2U24uxOs @ 00:38:49]"
+                    ),
+                },
             ],
-            "callout": {
-                "kind": "OPERATOR GATE", "title": "Count only contracted, settled economics",
-                "body": "Subscription revenue and payment contribution need separate ledgers.",
-                "items": ["Obtain the partner's share formula and exclusions.", "Measure supplier acceptance on actual invoices.", "Exclude invoice principal from company revenue.", "Prevent duplicate captures across processors."]
-            }
         },
         {
-            "heading": "5. Keep distribution savings separate from owner profit",
-            "epistemic_status": "illustrative_model",
+            "id": "disagreements-and-alternatives",
+            "title": "Where Practitioners Disagree & Alternative Playbooks",
             "paragraphs": [
-                "The web2app_quiz_subscription_billing_bypass play acquires mobile SaaS customers through a useful web onboarding quiz, then collects subscription payment through Stripe or Paddle where platform rules and local requirements permit that journey. The quiz should identify a relevant workflow and lead to an honest product recommendation, not manufacture urgency. A claim of retaining 94% or more assumes total web collection costs at or below 6%; it excludes acquisition, refunds, tax amounts collected for authorities, and delivery costs. The familiar 70% App Store comparison assumes a 30% commission, which is not universal across programs, subscription tenure, regions, or transaction types. Verify the applicable rules before using either number. Web billing changes the collection channel, not the obligation to deliver the mobile experience or provide a functional cancellation path.",
-                "At a $20 tax-exclusive subscription, an illustrative 6% web collection cost leaves $18.80 before delivery, while a 30% store commission leaves $14.00. The $4.80 difference is collection contribution, not extra net owner profit. Web acquisition can erase it through lower conversion, additional advertising expense, or customer support needed to connect purchases with app access. Measure the same audience across the full funnel: quiz start, completed checkout, successful account linking, first useful result, refund, and retained paid month. Preserve entitlements across devices with authenticated account mapping rather than trusting an email string supplied by a browser. Validate billing events server-side, deduplicate webhook deliveries, and revoke access according to the actual subscription state. Compare contribution per acquired customer over a consistent horizon instead of promoting the highest checkout retention percentage.",
-                "The annual scenarios below are operating targets, not forecasts. Gross means tax-exclusive subscription billings before operating costs; the steady-state illustration assumes billings approximate earned revenue and ignores material deferred-revenue movements. Net owner profit here is the residual before owner income tax, after the listed operating expenses, with founder compensation coming from that residual rather than an additional salary. FT denotes full-time operators and C denotes scoped contractors, not three salaried employees in the smallest case. Conservative economics cannot fund market salaries for that headcount; the founder supplies the full-time work and contractors receive limited project budgets. In scaled operations, paid employee wages must fit inside nontechnical expenses. Embedded payment contribution is excluded from all three cases until validated separately. If founder labor is valued at a market wage, economic profit falls accordingly."
+                (
+                    "Sean argues for an AI-native rebuild: intelligence should be the product’s "
+                    "foundation rather than a chatbot added to conventional software. Clockless "
+                    "is the example because reading meetings, extracting billable time, and "
+                    "calculating otherwise lost revenue constitute the product itself "
+                    "[GK9LZkd6aHM @ 00:03:21]. BergTube takes the replacement argument further, "
+                    "describing vertical agents that find, qualify, and book leads instead of "
+                    "merely tracking them. Its proposed shift is from tools humans operate to "
+                    "systems delivering outcomes, including payment when a call is booked or "
+                    "a deal closes [ -_NbEobmiAY @ 00:03:24]. Practical Founders rejects the "
+                    "blanket conclusion that B2B SaaS is dead. Its alternative is software "
+                    "plus AI plus data: preserve the useful system of record, automate more "
+                    "of the work, improve internal efficiency, and add capabilities customers "
+                    "can pay for. Existing companies can build new AI-enabled products without "
+                    "abandoning their operating base [Avxi60Ny5SM @ 00:29:39]. The CNBC "
+                    "guest also distinguishes threatened products from software generally. "
+                    "The interview describes a transition from systems of record to systems "
+                    "of action, but says AI is not eating all software. Thin products that "
+                    "are not embedded in deep business workflows face the sharper threat. "
+                    "The guest also describes proactive agent reliability as still developing, "
+                    "rather than treating every demonstrated action as ready for mainstream "
+                    "business use [Dc-hThrOqF8 @ 00:03:59]."
+                ),
+                (
+                    "Walling regards embedded workflows and high switching costs as contributors "
+                    "to lower churn. Expansion revenue can then produce net negative churn: "
+                    "revenue grows in a month even without adding customers, provided pricing "
+                    "supports expansion [FlJaIqI0N10 @ 00:03:28]. The DNSimple founder "
+                    "speaking at MicroConf challenges that protection directly. AI tools can "
+                    "help customers migrate between providers, and features become faster to "
+                    "reproduce. The speaker is less certain about integrations because "
+                    "connected systems keep changing, but still questions treating integration "
+                    "work as a durable moat. The proposed defenses instead emphasize "
+                    "collaboration and network effects, regulated environments, operational "
+                    "excellence, and capital-intensive infrastructure "
+                    "[msH7lUkWZAY @ 00:02:27]. Emam retains workflow ownership as a "
+                    "defensibility category, specifically because replacing deeply embedded "
+                    "operating processes is painful. That is a different emphasis from "
+                    "MicroConf’s skepticism about switching barriers "
+                    "[NwYdSzPW6yg @ 00:03:04]. Poddar supplies another alternative: move "
+                    "beyond pure software. Financing has capital requirements, funding "
+                    "relationships, history, and scale that a software interface alone does "
+                    "not reproduce. Poddar contrasts having billions in lending capacity "
+                    "with having tens of millions and describes raising a major debt "
+                    "facility as work that takes months. Their defense rests partly on "
+                    "what the business can fund and execute outside the application, not "
+                    "just how the application looks [y6eOdHpH5W8 @ 00:43:55]."
+                ),
+                (
+                    "Heller’s CoCounsel engineering emphasizes decomposing a professional task "
+                    "into tightly understood stages, each with prompts and extensive tests. "
+                    "A research workflow can contain a dozen or two dozen prompts, and "
+                    "the team knows what a good intermediate answer should look like "
+                    "[eBVi_sLaYsc @ 00:23:22]. Cuffe pushes against constraining AI "
+                    "inside small workflow boxes surrounded by deterministic code. Pace "
+                    "aims for agents that follow an operating procedure end to end, "
+                    "retaining the context needed to make decisions across the process. "
+                    "Cuffe argues that fragmented AI nodes miss part of what current "
+                    "agents can do; the longer-term direction includes learning from "
+                    "gradable end-to-end outputs [Uqr2U24uxOs @ 00:09:17]. Bessemer’s "
+                    "commercial alternatives are similarly distinct: a copilot improves "
+                    "an existing worker, an agent performs work associated with internal "
+                    "headcount, and an AI-enabled service addresses outsourced spending. "
+                    "These are separate delivery models rather than one mandatory product "
+                    "shape [icnddcX1NFA @ 00:06:50]. Pricing also remains contested. "
+                    "Against declarations that seats must disappear, the MicroConf "
+                    "speaker recommends experimenting with outcome pricing while noting "
+                    "that subscriptions and other charging methods can coexist. Token "
+                    "costs affect the economics, but the task is to find where each "
+                    "pricing mechanism fits rather than assume that every product needs "
+                    "one universal replacement model [msH7lUkWZAY @ 00:09:45]."
+                ),
             ],
             "table": {
-                "caption": "Illustrative annual subscription economics; dollars, before owner income tax",
-                "headers": ["Scenario", "Gross subscription billings", "Inference / hosting COGS", "Other operating expenses", "Net owner profit", "Net margin", "Staffing"],
+                "caption": "Contrasts that change the product and business a founder actually builds",
+                "headers": ["Decision under dispute", "Contrasting practitioner positions", "Expert Source"],
                 "rows": [
-                    ["Conservative", "$50,000", "$10,000", "$32,500", "$7,500", "15%", "1 FT + 2 C"],
-                    ["Base", "$375,000", "$56,250", "$206,250", "$112,500", "30%", "1 FT + 2 C"],
-                    ["Scaled", "$700,000", "$84,000", "$301,000", "$315,000", "45%", "2 FT + 3 C"]
-                ]
-            }
+                    [
+                        "Replace conventional software entirely or extend a useful operating platform",
+                        "Sean advocates AI-native products rather than bolt-ons; Practical Founders favors software plus AI plus data and new capabilities atop existing platforms.",
+                        "Bootstrapper's Paradise ([GK9LZkd6aHM @ 00:03:21]); Practical Founders - with Greg Head ([Avxi60Ny5SM @ 00:29:39])",
+                    ],
+                    [
+                        "Treat high switching costs as protection or expect assisted migration",
+                        "Walling links embedded vertical products with lower churn; MicroConf argues AI tools can guide and execute departures from existing providers.",
+                        "Rob Walling ([FlJaIqI0N10 @ 00:03:28]); MicroConf ([msH7lUkWZAY @ 00:02:54])",
+                    ],
+                    [
+                        "Decompose the job into tested stages or preserve end-to-end agent context",
+                        "Heller describes numerous individually tested prompts; Cuffe rejects tiny AI boxes and favors agents following complete operating procedures.",
+                        "Y Combinator ([eBVi_sLaYsc @ 00:23:22]); Sequoia Capital ([Uqr2U24uxOs @ 00:09:17])",
+                    ],
+                    [
+                        "Replace access fees with outcomes or combine multiple charging mechanisms",
+                        "BergTube describes payment when work delivers an outcome; MicroConf says outcome pricing and subscriptions can coexist in the same business.",
+                        "BergTube ([-_NbEobmiAY @ 00:03:24]); MicroConf ([msH7lUkWZAY @ 00:10:17])",
+                    ],
+                    [
+                        "Specialize around an industry or around a role across many industries",
+                        "Walling also proposes orthogonal SaaS: horizontal applicability with a specific buyer or user role, such as marketers, salespeople, or HR.",
+                        "Rob Walling ([FlJaIqI0N10 @ 00:07:16])",
+                    ],
+                    [
+                        "Compete as pure software or add capital and service execution",
+                        "Poddar argues financing capacity, funding relationships, and business history matter; MicroConf similarly identifies capital expenditures as an infrastructure moat.",
+                        "Verticals: A Weekly Biz Show On Vertical AI ([y6eOdHpH5W8 @ 00:43:55]); MicroConf ([msH7lUkWZAY @ 00:06:13])",
+                    ],
+                ],
+            },
+        },
+        {
+            "id": "failure-modes-and-economics",
+            "title": "Firsthand Failure Modes, Traps & Economics Checks",
+            "paragraphs": [
+                (
+                    "Heller spent years trying to get lawyers to annotate case law and contribute "
+                    "content. The model borrowed inspiration from user-generated communities, "
+                    "but Heller calls it a total failure: lawyers billed by the hour, "
+                    "were short on time, and would not donate enough work. Casetext "
+                    "pivoted toward natural-language processing and automated approaches "
+                    "instead [eBVi_sLaYsc @ 00:06:43]. Even better technology was not "
+                    "automatically enough to move the market. Heller recalls established "
+                    "lawyers seeing incremental improvements as a reason to change a "
+                    "profitable practice they preferred to leave alone. The reaction "
+                    "changed when customers perceived the technology shift as fundamental "
+                    "rather than marginal [eBVi_sLaYsc @ 00:08:38]. On Verticals, "
+                    "Luke recounts signing an early customer worth almost a million "
+                    "dollars in annual contract value, promising the requested enterprise "
+                    "product, and failing to deliver what was promised. Rebuilding "
+                    "trust took years. The lesson Luke draws is not to oversell; "
+                    "the team had not understood how long the enterprise requirements "
+                    "would take [y6eOdHpH5W8 @ 00:16:51]. Poddar answers with "
+                    "Paraffin’s own selling discipline: offer the minimal valuable "
+                    "product, identify the single strongest value proposition, and "
+                    "return to the drawing board if that alone is not worth buying. "
+                    "Additional capabilities can then delight the customer instead of "
+                    "becoming unpaid promises [y6eOdHpH5W8 @ 00:17:57]."
+                ),
+                (
+                    "Høiberg’s B-roll demonstration exposes a concrete operational hole: "
+                    "authentication was omitted while a mock user simplified the prototype. "
+                    "Publishing that version would let anyone generate clips against "
+                    "Høiberg’s Replicate account. Høiberg explicitly tells builders to "
+                    "resolve the security issues before publishing, and also explains "
+                    "that the smooth demonstration leaves out the back-and-forth normally "
+                    "required with Lovable [QIA9Ry42Lbs @ 00:11:33]. Heller’s "
+                    "reliability problems sit deeper inside the workflow. Changing a "
+                    "prompt to fix one set of tests can break another set, which "
+                    "is why the team treated prompting as test-driven development "
+                    "rather than an exercise in attractive demonstrations "
+                    "[eBVi_sLaYsc @ 00:24:42]. Customer trust is unforgiving in "
+                    "the legal setting Heller served: small mistakes generated immediate "
+                    "complaints, and a poor first encounter could cause a busy lawyer "
+                    "to postpone trying AI again. The first week therefore had to "
+                    "work well enough for customers to invest in the product "
+                    "[eBVi_sLaYsc @ 00:30:03]. MicroConf’s DNSimple founder makes "
+                    "operating quality a central defense for the same broad reason. "
+                    "As code creation gets easier, the speaker expects pressure to "
+                    "shift toward running dependable systems; customers encountering "
+                    "fragile one-off applications still value technical execution. "
+                    "The proposed advantage is operational excellence, not simply "
+                    "the quantity of generated features [msH7lUkWZAY @ 00:05:08]."
+                ),
+                (
+                    "Cuffe describes a large traditional outsourcing business with unchanged "
+                    "economics as Pace’s failure case. The ambition is to move from "
+                    "roughly 10% gross margins toward 80%, with product improvements "
+                    "continually lifting margins; Cuffe does not present that target "
+                    "as the company’s already achieved result. An expanding service "
+                    "business still needs a path to better delivery economics "
+                    "[Uqr2U24uxOs @ 00:06:28]. Bessemer’s observed companies provide "
+                    "a separate comparison: most of its AI-enabled services businesses "
+                    "were operating above 60% gross margins, supported by specialized "
+                    "workflows and operating expertise "
+                    "[icnddcX1NFA @ 00:10:34]. Valen’s discussion adds the "
+                    "performance-pricing exposure: when revenue depends on customer "
+                    "success, models, optimization, and trust affect the vendor’s "
+                    "margins. Outcome alignment is presented as operational complexity "
+                    "as well as a source of retention "
+                    "[CJf8KAHBVKA @ 00:02:49]. Poddar supplies an expansion "
+                    "check from actual platform screening. Paraffin examines merchant "
+                    "growth, acquisition, and churn before deciding whether lending "
+                    "makes economic sense. Poddar says platforms below roughly a "
+                    "billion dollars in payments generally should concentrate on "
+                    "their core business before adding lending, while acknowledging "
+                    "exceptions. Paraffin has also turned off large platforms because "
+                    "merchant churn was too high. Scale alone did not compensate "
+                    "for deterioration in the underlying customer base "
+                    "[y6eOdHpH5W8 @ 00:23:39]."
+                ),
+            ],
+            "table": {
+                "caption": "Reported breakdowns and the operating checks practitioners put beside them",
+                "headers": ["Failure or exposure", "Practitioner experience and response", "Expert Source"],
+                "rows": [
+                    [
+                        "A content strategy depended on busy professionals contributing unpaid work",
+                        "Heller calls the lawyer-annotation effort a total failure; hourly billing and lack of time undermined participation, prompting a different technical approach.",
+                        "Y Combinator ([eBVi_sLaYsc @ 00:06:43])",
+                    ],
+                    [
+                        "An early enterprise sale promised more product than the team delivered",
+                        "Luke reports an almost million-dollar annual contract and years rebuilding trust after overselling; Poddar advocates selling the minimal valuable product.",
+                        "Verticals: A Weekly Biz Show On Vertical AI ([y6eOdHpH5W8 @ 00:16:51])",
+                    ],
+                    [
+                        "A working demonstration left paid model generation open to everyone",
+                        "Høiberg used a mock user and omitted authentication, then identified that publishing would expose the Replicate account to unrestricted clip generation.",
+                        "Simon Høiberg ([QIA9Ry42Lbs @ 00:11:33])",
+                    ],
+                    [
+                        "A prompt improvement repaired one problem while breaking other tested behavior",
+                        "Heller describes regression across test sets and explains why prompt development needed explicit tests instead of relying on apparently successful outputs.",
+                        "Y Combinator ([eBVi_sLaYsc @ 00:24:42])",
+                    ],
+                    [
+                        "A growing outsourcing business could preserve the wrong delivery economics",
+                        "Cuffe names unchanged outsourcing economics as the failure case and targets rising gross margins through product improvements rather than indefinite human scaling.",
+                        "Sequoia Capital ([Uqr2U24uxOs @ 00:06:28])",
+                    ],
+                    [
+                        "A large platform still failed the underlying merchant-retention economics check",
+                        "Poddar reports turning off large platforms with excessive merchant churn and often deferring lending until the platform has sufficient payment scale.",
+                        "Verticals: A Weekly Biz Show On Vertical AI ([y6eOdHpH5W8 @ 00:23:54])",
+                    ],
+                ],
+            },
+            "callout": {
+                "kind": "OPERATOR GATE",
+                "title": "Checks drawn from actual product and operating friction",
+                "body": "These checks follow the failures, deployment requirements, and economic tests the practitioners describe.",
+                "items": [
+                    (
+                        "Identify the single value proposition a customer will buy without a "
+                        "promised enterprise wishlist; Poddar sells the minimal valuable product, "
+                        "while Luke describes years repairing trust after overselling. "
+                        "[Verticals: A Weekly Biz Show On Vertical AI — y6eOdHpH5W8 @ 00:17:57]"
+                    ),
+                    (
+                        "Resolve missing authentication before publishing a paid-generation "
+                        "application; Høiberg's mock-user build otherwise let anyone consume "
+                        "the founder's Replicate account. "
+                        "[Simon Høiberg — QIA9Ry42Lbs @ 00:11:33]"
+                    ),
+                    (
+                        "Run the existing tests after prompt changes, not only the examples "
+                        "that motivated the change; Heller reports fixes breaking other test sets. "
+                        "[Y Combinator — eBVi_sLaYsc @ 00:24:42]"
+                    ),
+                    (
+                        "Track whether product improvements raise gross margins; Cuffe "
+                        "explicitly requires a path away from traditional outsourcing economics. "
+                        "[Sequoia Capital — Uqr2U24uxOs @ 00:07:15]"
+                    ),
+                ],
+            },
         },
     ],
-    "pull_quote": "The customer pays for a finished workflow; your profit depends on what remains after delivering it, collecting payment, and supporting the next renewal.",
-    "diagram_id": "diag-04-billing-rail-take-rates",
+    "pull_quote": (
+        '"What gets stronger about this company every month that passes?" '
+        "— Indy Pixels | Abdalla Emam (NwYdSzPW6yg @ 00:08:07)."
+    ),
+    "diagram_id": "diag-04",
     "action_checklist": [
-        "Interview five departmental budget owners about purchasing limits.",
-        "Measure support minutes and inference cost per paid account.",
-        "Price a representative month on direct and MoR rails.",
-        "Build a twelve-month prepaid delivery cash schedule.",
-        "Obtain written VCC revenue-share and supplier acceptance terms.",
-        "Reconcile subscriptions, settlements, and owner labor separately."
+        (
+            "Compare an industry-specific product with Walling's orthogonal alternative: "
+            "a cross-industry tool focused on one clearly identified buyer or user role. "
+            "[Rob Walling — FlJaIqI0N10 @ 00:07:16]"
+        ),
+        (
+            "Explore candidate customer segments serially and compare where the product "
+            "delivers more value and encounters easier buying behavior. "
+            "[Jordan Crawford (Blueprint) — RINTsdOTWfc @ 00:07:14]"
+        ),
+        (
+            "Ask what compounds each month: proprietary data, workflow ownership, industry "
+            "expertise, distribution, or customer relationships. "
+            "[Indy Pixels | Abdalla Emam — NwYdSzPW6yg @ 00:08:07]"
+        ),
+        (
+            "Work backward from the customer deliverable and write expected answers for "
+            "the individual stages that need reliable model behavior. "
+            "[Y Combinator — eBVi_sLaYsc @ 00:23:51]"
+        ),
+        (
+            "For an outsourced-process agent, inspect existing procedures, accuracy checks, "
+            "high-volume tasks, and the customer's actual outsourcing expenditure. "
+            "[Sequoia Capital — Uqr2U24uxOs @ 00:11:30]"
+        ),
+        (
+            "Experiment with outcome pricing where it fits while evaluating how it can "
+            "coexist with subscriptions rather than assuming one must eliminate the other. "
+            "[MicroConf — msH7lUkWZAY @ 00:10:01]"
+        ),
     ],
     "statutory_citations": [
-        {"title": "South Dakota v. Wayfair, 585 U.S. 162 (2018)", "url": "https://www.supremecourt.gov/opinions/17pdf/17-494_j4el.pdf", "relevance": "Physical presence is not required for sales-tax nexus."},
-        {"title": "12 CFR Part 235", "url": "https://www.ecfr.gov/current/title-12/chapter-II/subchapter-A/part-235", "relevance": "Regulation II governs debit interchange and routing, not a commercial credit rebate entitlement."},
-        {"title": "15 U.S.C. section 8403", "url": "https://uscode.house.gov/view.xhtml?req=granuleid:USC-prelim-title15-section8403&num=0&edition=prelim", "relevance": "Online negative-option sales require material disclosures, informed consent, and simple cancellation mechanisms."}
-    ]
+        {
+            "title": "Rob Walling — Vertical SaaS vs Horizontal SaaS - Which is More Profitable? [00:05:51]",
+            "url": "https://www.youtube.com/watch?v=FlJaIqI0N10&t=351s",
+            "relevance": (
+                "Primary practitioner testimony on choosing vertical or horizontal SaaS "
+                "according to the founder's revenue, financing, and exit objectives."
+            ),
+        },
+        {
+            "title": "Y Combinator — Why Vertical LLM Agents Are The New $1 Billion SaaS Opportunities [00:23:22]",
+            "url": "https://www.youtube.com/watch?v=eBVi_sLaYsc&t=1402s",
+            "relevance": (
+                "Primary practitioner testimony from Jake Heller on chained prompts, "
+                "intermediate quality standards, and extensive testing."
+            ),
+        },
+        {
+            "title": "Sequoia Capital — What’s the Future of Vertical SaaS in an AGI World? Jamie Cuffe, CEO of Pace [00:11:30]",
+            "url": "https://www.youtube.com/watch?v=Uqr2U24uxOs&t=690s",
+            "relevance": (
+                "Primary practitioner testimony on selecting already-outsourced insurance "
+                "workflows with operating procedures, accuracy checks, and existing expenditure."
+            ),
+        },
+        {
+            "title": "Bessemer Venture Partners — Vertical AI shows potential to dwarf legacy SaaS | State of the Cloud 2024 [00:10:34]",
+            "url": "https://www.youtube.com/watch?v=icnddcX1NFA&t=634s",
+            "relevance": (
+                "Primary practitioner testimony on reported AI-enabled services gross "
+                "margins and the workflow and operational layers supporting value."
+            ),
+        },
+    ],
+    "source_citations": [
+        {
+            "source_type": "video_pro_tip",
+            "video_id": "FlJaIqI0N10",
+            "title": "Vertical SaaS vs Horizontal SaaS - Which is More Profitable?",
+            "channel": "Rob Walling",
+            "author": "Rob Walling",
+            "text": "You don't have to be the best marketer in the world; you just have to be better than your competition.",
+            "tip": "You don't have to be the best marketer in the world; you just have to be better than your competition.",
+            "timestamp": 379,
+            "timestamp_seconds": 379,
+            "timestamp_label": "[00:06:19]",
+            "url": "https://www.youtube.com/watch?v=FlJaIqI0N10&t=379s",
+            "markdown": "[00:06:19](https://www.youtube.com/watch?v=FlJaIqI0N10&t=379s)",
+            "epistemic_status": "attributed_practitioner_claim",
+            "relevance": "Verbatim practitioner testimony from Chapter Q2.",
+        },
+        {
+            "source_type": "video_pro_tip",
+            "video_id": "GK9LZkd6aHM",
+            "title": "Vertical AI vs Traditional SaaS | Game Over",
+            "channel": "Bootstrapper's Paradise",
+            "author": "Bootstrapper's Paradise",
+            "text": "The new rule is to find the buyer, then build around the needs of real customers.",
+            "tip": "The new rule is to find the buyer, then build around the needs of real customers.",
+            "timestamp": 173,
+            "timestamp_seconds": 173,
+            "timestamp_label": "[00:02:53]",
+            "url": "https://www.youtube.com/watch?v=GK9LZkd6aHM&t=173s",
+            "markdown": "[00:02:53](https://www.youtube.com/watch?v=GK9LZkd6aHM&t=173s)",
+            "epistemic_status": "attributed_practitioner_claim",
+            "relevance": "Verbatim practitioner testimony from Chapter Q2.",
+        },
+        {
+            "source_type": "video_pro_tip",
+            "video_id": "orVropqNnCA",
+            "title": "What are Vertical Agents ?",
+            "channel": "New Machina",
+            "author": "New Machina",
+            "text": "They are agents or agentic systems that are specialized for a specific domain or industry.",
+            "tip": "They are agents or agentic systems that are specialized for a specific domain or industry.",
+            "timestamp": 17,
+            "timestamp_seconds": 17,
+            "timestamp_label": "[00:00:17]",
+            "url": "https://www.youtube.com/watch?v=orVropqNnCA&t=17s",
+            "markdown": "[00:00:17](https://www.youtube.com/watch?v=orVropqNnCA&t=17s)",
+            "epistemic_status": "attributed_practitioner_claim",
+            "relevance": "Verbatim practitioner testimony from Chapter Q2.",
+        },
+        {
+            "source_type": "video_pro_tip",
+            "video_id": "Avxi60Ny5SM",
+            "title": "AI Is Not Killing Vertical SaaS - It’s Practical Leverage",
+            "channel": "Practical Founders - with Greg Head",
+            "author": "Practical Founders - with Greg Head",
+            "text": "We think software plus AI is the right approach. Software, AI, plus data.",
+            "tip": "We think software plus AI is the right approach. Software, AI, plus data.",
+            "timestamp": 1779,
+            "timestamp_seconds": 1779,
+            "timestamp_label": "[00:29:39]",
+            "url": "https://www.youtube.com/watch?v=Avxi60Ny5SM&t=1779s",
+            "markdown": "[00:29:39](https://www.youtube.com/watch?v=Avxi60Ny5SM&t=1779s)",
+            "epistemic_status": "attributed_practitioner_claim",
+            "relevance": "Verbatim practitioner testimony from Chapter Q2.",
+        },
+        {
+            "source_type": "video_pro_tip",
+            "video_id": "RINTsdOTWfc",
+            "title": "Why Vertical SaaS Companies Will Win in the AI GTM Race",
+            "channel": "Jordan Crawford (Blueprint)",
+            "author": "Jordan Crawford (Blueprint)",
+            "text": "Explore serially. So don't try ten things at once.",
+            "tip": "Explore serially. So don't try ten things at once.",
+            "timestamp": 434,
+            "timestamp_seconds": 434,
+            "timestamp_label": "[00:07:14]",
+            "url": "https://www.youtube.com/watch?v=RINTsdOTWfc&t=434s",
+            "markdown": "[00:07:14](https://www.youtube.com/watch?v=RINTsdOTWfc&t=434s)",
+            "epistemic_status": "attributed_practitioner_claim",
+            "relevance": "Verbatim practitioner testimony from Chapter Q2.",
+        },
+        {
+            "source_type": "video_pro_tip",
+            "video_id": "NwYdSzPW6yg",
+            "title": "The Harsh Truth About AI Wrappers (From a Venture Investor)",
+            "channel": "Indy Pixels | Abdalla Emam",
+            "author": "Indy Pixels | Abdalla Emam",
+            "text": "What gets stronger about this company every month that passes.",
+            "tip": "What gets stronger about this company every month that passes.",
+            "timestamp": 487,
+            "timestamp_seconds": 487,
+            "timestamp_label": "[00:08:07]",
+            "url": "https://www.youtube.com/watch?v=NwYdSzPW6yg&t=487s",
+            "markdown": "[00:08:07](https://www.youtube.com/watch?v=NwYdSzPW6yg&t=487s)",
+            "epistemic_status": "attributed_practitioner_claim",
+            "relevance": "Verbatim practitioner testimony from Chapter Q2.",
+        },
+        {
+            "source_type": "video_pro_tip",
+            "video_id": "eBVi_sLaYsc",
+            "title": "Why Vertical LLM Agents Are The New $1 Billion SaaS Opportunities",
+            "channel": "Y Combinator",
+            "author": "Y Combinator",
+            "text": "Getting to the final result may be a dozen or two dozen different individual prompts.",
+            "tip": "Getting to the final result may be a dozen or two dozen different individual prompts.",
+            "timestamp": 1402,
+            "timestamp_seconds": 1402,
+            "timestamp_label": "[00:23:22]",
+            "url": "https://www.youtube.com/watch?v=eBVi_sLaYsc&t=1402s",
+            "markdown": "[00:23:22](https://www.youtube.com/watch?v=eBVi_sLaYsc&t=1402s)",
+            "epistemic_status": "attributed_practitioner_claim",
+            "relevance": "Verbatim practitioner testimony from Chapter Q2.",
+        },
+        {
+            "source_type": "video_pro_tip",
+            "video_id": "QIA9Ry42Lbs",
+            "title": "Get rich building niche AI SaaS (...not another ChatGPT wrapper)",
+            "channel": "Simon Høiberg",
+            "author": "Simon Høiberg",
+            "text": "If I publish this app, everyone could create B-roll clips using my Replicate account, which is obviously a huge issue.",
+            "tip": "If I publish this app, everyone could create B-roll clips using my Replicate account, which is obviously a huge issue.",
+            "timestamp": 693,
+            "timestamp_seconds": 693,
+            "timestamp_label": "[00:11:33]",
+            "url": "https://www.youtube.com/watch?v=QIA9Ry42Lbs&t=693s",
+            "markdown": "[00:11:33](https://www.youtube.com/watch?v=QIA9Ry42Lbs&t=693s)",
+            "epistemic_status": "attributed_practitioner_claim",
+            "relevance": "Verbatim practitioner testimony from Chapter Q2.",
+        },
+        {
+            "source_type": "video_pro_tip",
+            "video_id": "y6eOdHpH5W8",
+            "title": "How to Build a Vertical SaaS Company AI Can’t Replace | Sahill Poddar",
+            "channel": "Verticals: A Weekly Biz Show On Vertical AI",
+            "author": "Verticals: A Weekly Biz Show On Vertical AI",
+            "text": "Always sell the minimal, minimal, minimal valuable product from a sales perspective.",
+            "tip": "Always sell the minimal, minimal, minimal valuable product from a sales perspective.",
+            "timestamp": 1077,
+            "timestamp_seconds": 1077,
+            "timestamp_label": "[00:17:57]",
+            "url": "https://www.youtube.com/watch?v=y6eOdHpH5W8&t=1077s",
+            "markdown": "[00:17:57](https://www.youtube.com/watch?v=y6eOdHpH5W8&t=1077s)",
+            "epistemic_status": "attributed_practitioner_claim",
+            "relevance": "Verbatim practitioner testimony from Chapter Q2.",
+        },
+        {
+            "source_type": "video_pro_tip",
+            "video_id": "CJf8KAHBVKA",
+            "title": "Death of SaaS Company in 2026 (said ChatGPT)",
+            "channel": "Valen I AI Agent for Work",
+            "author": "Valen I AI Agent for Work",
+            "text": "It does add complexity because now your revenue is fully tied to performance. So, if customers don't succeed, you don't either.",
+            "tip": "It does add complexity because now your revenue is fully tied to performance. So, if customers don't succeed, you don't either.",
+            "timestamp": 169,
+            "timestamp_seconds": 169,
+            "timestamp_label": "[00:02:49]",
+            "url": "https://www.youtube.com/watch?v=CJf8KAHBVKA&t=169s",
+            "markdown": "[00:02:49](https://www.youtube.com/watch?v=CJf8KAHBVKA&t=169s)",
+            "epistemic_status": "attributed_practitioner_claim",
+            "relevance": "Verbatim practitioner testimony from Chapter Q2.",
+        },
+        {
+            "source_type": "video_pro_tip",
+            "video_id": "ASABxNenD_U",
+            "title": "Vertical AI Agents Could Be 10X Bigger Than SaaS",
+            "channel": "Y Combinator",
+            "author": "Y Combinator",
+            "text": "You should go after something that you directly have some sort of experience or relationship to.",
+            "tip": "You should go after something that you directly have some sort of experience or relationship to.",
+            "timestamp": 2437,
+            "timestamp_seconds": 2437,
+            "timestamp_label": "[00:40:37]",
+            "url": "https://www.youtube.com/watch?v=ASABxNenD_U&t=2437s",
+            "markdown": "[00:40:37](https://www.youtube.com/watch?v=ASABxNenD_U&t=2437s)",
+            "epistemic_status": "attributed_practitioner_claim",
+            "relevance": "Verbatim practitioner testimony from Chapter Q2.",
+        },
+        {
+            "source_type": "video_pro_tip",
+            "video_id": "Uqr2U24uxOs",
+            "title": "What’s the Future of Vertical SaaS in an AGI World? Jamie Cuffe, CEO of Pace",
+            "channel": "Sequoia Capital",
+            "author": "Sequoia Capital",
+            "text": "For some of our customers we've been able to achieve 50 to 75% cost savings in a very short period of time working with them.",
+            "tip": "For some of our customers we've been able to achieve 50 to 75% cost savings in a very short period of time working with them.",
+            "timestamp": 818,
+            "timestamp_seconds": 818,
+            "timestamp_label": "[00:13:38]",
+            "url": "https://www.youtube.com/watch?v=Uqr2U24uxOs&t=818s",
+            "markdown": "[00:13:38](https://www.youtube.com/watch?v=Uqr2U24uxOs&t=818s)",
+            "epistemic_status": "attributed_practitioner_claim",
+            "relevance": "Verbatim practitioner testimony from Chapter Q2.",
+        },
+        {
+            "source_type": "video_pro_tip",
+            "video_id": "-_NbEobmiAY",
+            "title": 'The Death of SaaS | Why "Vertical AI" is Taking Over in 2026',
+            "channel": "BergTube",
+            "author": "BergTube",
+            "text": "Test one specific workflow this week. Maybe it's just your invoice follow-ups.",
+            "tip": "Test one specific workflow this week. Maybe it's just your invoice follow-ups.",
+            "timestamp": 490,
+            "timestamp_seconds": 490,
+            "timestamp_label": "[00:08:10]",
+            "url": "https://www.youtube.com/watch?v=-_NbEobmiAY&t=490s",
+            "markdown": "[00:08:10](https://www.youtube.com/watch?v=-_NbEobmiAY&t=490s)",
+            "epistemic_status": "attributed_practitioner_claim",
+            "relevance": "Verbatim practitioner testimony from Chapter Q2.",
+        },
+        {
+            "source_type": "video_pro_tip",
+            "video_id": "Dc-hThrOqF8",
+            "title": "Are we in a 'SaaSapocalypse'? Tech VC explains AI's disruption of software",
+            "channel": "CNBC International Live",
+            "author": "CNBC International Live",
+            "text": "The caveat I would say, though, is AI is not eating all software.",
+            "tip": "The caveat I would say, though, is AI is not eating all software.",
+            "timestamp": 295,
+            "timestamp_seconds": 295,
+            "timestamp_label": "[00:04:55]",
+            "url": "https://www.youtube.com/watch?v=Dc-hThrOqF8&t=295s",
+            "markdown": "[00:04:55](https://www.youtube.com/watch?v=Dc-hThrOqF8&t=295s)",
+            "epistemic_status": "attributed_practitioner_claim",
+            "relevance": "Verbatim practitioner testimony from Chapter Q2.",
+        },
+        {
+            "source_type": "video_pro_tip",
+            "video_id": "msH7lUkWZAY",
+            "title": "AI Generated Apps vs SaaS: Which Moats Still Work in 2026",
+            "channel": "MicroConf",
+            "author": "MicroConf",
+            "text": "Don't forget that Anthropic also charges you a subscription fee. So, it's both. They can work together.",
+            "tip": "Don't forget that Anthropic also charges you a subscription fee. So, it's both. They can work together.",
+            "timestamp": 617,
+            "timestamp_seconds": 617,
+            "timestamp_label": "[00:10:17]",
+            "url": "https://www.youtube.com/watch?v=msH7lUkWZAY&t=617s",
+            "markdown": "[00:10:17](https://www.youtube.com/watch?v=msH7lUkWZAY&t=617s)",
+            "epistemic_status": "attributed_practitioner_claim",
+            "relevance": "Verbatim practitioner testimony from Chapter Q2.",
+        },
+        {
+            "source_type": "video_pro_tip",
+            "video_id": "icnddcX1NFA",
+            "title": "Vertical AI shows potential to dwarf legacy SaaS | State of the Cloud 2024",
+            "channel": "Bessemer Venture Partners",
+            "author": "Bessemer Venture Partners",
+            "text": "Most of our AI-enabled services businesses are operating at 60-plus percent gross margins, and those gross margins are only getting better.",
+            "tip": "Most of our AI-enabled services businesses are operating at 60-plus percent gross margins, and those gross margins are only getting better.",
+            "timestamp": 634,
+            "timestamp_seconds": 634,
+            "timestamp_label": "[00:10:34]",
+            "url": "https://www.youtube.com/watch?v=icnddcX1NFA&t=634s",
+            "markdown": "[00:10:34](https://www.youtube.com/watch?v=icnddcX1NFA&t=634s)",
+            "epistemic_status": "attributed_practitioner_claim",
+            "relevance": "Verbatim practitioner testimony from Chapter Q2.",
+        },
+    ],
 }

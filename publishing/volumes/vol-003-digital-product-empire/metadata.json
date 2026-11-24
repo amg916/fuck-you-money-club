@@ -9,49 +9,49 @@
       "EMPIRE"
     ],
     "deck": [
-      "VALIDATE DEMAND. LIQUIDATE CAC.",
-      "SCALE THE CATALOG."
+      "192 PRACTITIONERS BUILD PDFS, EBOOKS, APPS, AND NOTION TEMPLATES",
+      "TEST BUYER DEMAND, STOREFRONTS, CONTENT, AND OFFER SEQUENCES"
     ],
-    "lead": "The Complete Playbook for High-Margin Templates, Self-Liquidating Funnels, Merchant-of-Record Checkout & Scaling an $800k/yr 4-Person Catalog",
-    "summary": "From Ad-Library pain validation and modular B2B systems to Merchant-of-Record global tax automation, order bumps, and evergreen traffic loops: build a zero-COGS digital product portfolio with disciplined contribution margins.",
+    "lead": "Build a digital product around a specific buyer and problem, then connect product creation, storefront setup, distribution, and follow-on offers while tracking customer outcomes and sales economics.",
+    "summary": "All 12 chapters of Digital Product Empire synthesize 192 verbatim YouTube practitioner testimonies with timestamped inline attribution. The accounts connect AI-assisted products and Notion templates with storefront economics, payment choices, upsells, paid funnels, communities, launch models, newsletters, and faceless content, examining both demonstrated workflows and operational bottlenecks.",
     "chapters": [
-      "What is a digital product empire?",
-      "Who pays & Merchant-of-Record rails",
-      "Pricing, order bumps & SLO unit math",
-      "Startup stack & zero-COGS hosting",
-      "Disputes, tax nexus & piracy traps",
-      "Demand mining & 72-hour pre-sales",
-      "Packaging, checkout & onboarding",
-      "Pixels, micro-extensions & GEO",
-      "Billing rules, VAT & DMCA protection",
-      "Viral loops & faceless traffic engines",
-      "Scaling a 4-person multi-SKU pod",
-      "First 30-day SKU launch sprint"
+      "Choose Your Digital Product Business Model",
+      "Build Products with AI: PDFs, eBooks, and Apps",
+      "Create and Sell Notion Templates",
+      "Choose a Storefront and Calculate What You Keep",
+      "Payments, Sales Tax, and Merchant-of-Record Choices",
+      "Build the Order Bump and Upsell Sequence",
+      "Build a Self-Liquidating Offer Funnel",
+      "Low-Ticket Ads, Funnel Economics, and Scaling Cases",
+      "Launch and Operate a Paid Community",
+      "Choose Between Cohorts, Live Launches, and Evergreen",
+      "Build and Monetize an Expertise-Led Newsletter",
+      "Sell Digital Products Through Faceless Content"
     ],
     "flow": [
       [
-        "VALIDATE",
-        "Mine pain & pre-sell"
+        "CHOOSE THE BUYER",
+        "Research a specific buyer and painful problem, then define the offer before choosing the product format."
       ],
       [
-        "PACKAGE",
-        "Ship modular v1.0 SKU"
+        "BUILD AND INSPECT",
+        "Create a focused PDF, ebook, app, or Notion template; edit AI output and inspect the pages, formulas, and functions before sale."
       ],
       [
-        "WIRE",
-        "MoR tax & order bumps"
+        "SET UP THE SALE",
+        "Publish the product listing, make access instructions clear, connect payments, and test the app purchase flow with a real credit card."
       ],
       [
-        "LIQUIDATE",
-        "Co-reg & SLO funnels"
+        "BUILD DISTRIBUTION",
+        "Start audience-building during creation, connect a small-win freebie to the paid offer, and use organic content to test demand before paid promotion."
       ],
       [
-        "PROTECT",
-        "CE 3.0 & DMCA hygiene"
+        "CONNECT THE OFFERS",
+        "Use email follow-up and relevant courses, memberships, or coaching to extend the entry product without switching to a different customer."
       ],
       [
-        "ASCEND",
-        "Compound annual LTV"
+        "DIAGNOSE AND IMPROVE",
+        "Separate weak views, visits, and purchases when diagnosing sales; improve listings and support instructions while tracking actual customer outcomes."
       ]
     ]
   },
@@ -59,10 +59,10 @@
   "book_series": "THE BIG MONEY PLAYBOOKS",
   "tagline": "Big Money. Small Teams. No Bullshit.",
   "title": "DIGITAL PRODUCT EMPIRE",
-  "subtitle": "The Complete Playbook for High-Margin Templates, Self-Liquidating Funnels, Merchant-of-Record Checkout & Scaling an $800k/yr 4-Person Catalog",
+  "subtitle": "Solve One Buyer Problem, Build AI-Assisted Products, and Sell Through Templates, Offer Stacks, Newsletters, Communities, and Faceless Content",
   "chapter_count": 12,
-  "total_word_count": 59252,
-  "expert_youtube_link_count": 202,
+  "total_word_count": 67048,
+  "expert_youtube_link_count": 192,
   "min_expert_youtube_links_required": 150,
   "target_expert_youtube_links": "150-200+",
   "min_expert_youtube_links_per_chapter": 12,
@@ -77,5 +77,5 @@
   "publication_status": "approved_master",
   "public_deploy_approved": false,
   "paid_sales_approved": false,
-  "updated_at": "2026-11-23T22:47:59Z"
+  "updated_at": "2026-11-24T15:53:32Z"
 }

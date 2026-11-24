@@ -1,156 +1,1089 @@
+from __future__ import annotations
+
 CHAPTER_5 = {
-    "id": "Q5", "chapter_id": "Q5", "chapter_number": 5, "question_number": 5,
-    "slug": "super-affiliate-edges-and-platform-risk-traps",
-    "question_prompt": "What do experienced super-affiliates know that beginners miss?",
+    "id": "Q5",
+    "chapter_id": "Q5",
+    "chapter_number": 5,
+    "question_number": 5,
+    "slug": "capture-buyer-searches-with-reviews-and-comparisons",
+    "question_prompt": "How do I identify buyer-oriented searches and turn them into affiliate reviews, comparison pages, alternative pages, and an organized content strategy?",
     "kicker": "Q5 / THE BIG MONEY PLAYBOOKS",
-    "title": "What Experienced Super-Affiliates Know That Beginners Miss",
-    "subtitle": "Surviving Google Site Reputation Abuse Enforcement, Preventing Last-Click Coupon Poaching, Authorized Brand-Bidding Rights & First-Party Lead Ownership",
-    "layout_template": "corroborated_insights", "reading_time_minutes": 14,
-    "executive_summary": "Candidate #24 ranks #02 with 92/100 and 35 mapped operator plays. Its durable edge is control over distribution, contract rights, attribution evidence, and audience access. This chapter turns three fragile plays into defensible operating systems without confusing merchant sales with affiliate income. Search visibility can disappear; merchants can cut rates; checkout tools can overwrite credit. Build around earned commissions after reversals, then subtract every operating cost before calling the remainder profit. Use the defense matrix, attribution procedure, audience experiment, and scenario ledger to decide which traffic deserves another dollar and which exposure needs replacing.",
+    "title": "Capture Buyer Searches with Reviews and Comparisons",
+    "subtitle": "SaaS competitor pages, alternative keywords, Kajabi comparisons, Semrush competitor audits, affiliate article conversion, and ClickFunnels mass-page SEO.",
+    "layout_template": "case_study",
+    "reading_time_minutes": 15,
+    "executive_summary": (
+        "Buyer searches start with a decision, not a traffic target. Vasco Aires, Greg "
+        "Jeffries, and Grow and Convert prioritize comparisons and alternatives because "
+        "searchers already recognize products and need help choosing. Grow and Convert "
+        "reports alternative-content conversion above 7.5% to product-related actions; "
+        "ODi Productions reports 56 organic pages approaching 20,000 monthly organic "
+        "visits. Execution ranges from free autocomplete research and tightly linked "
+        "product clusters to Semrush competitor audits and Tony Hayes's mass-page "
+        "reverse engineering. Jamie IF pushes decisive verdicts and differentiated "
+        "recommendations; Taylor Scher emphasizes actual feature differences. The "
+        "disagreements matter: handwritten content versus automation, separate pages "
+        "versus merged intent, and budget replacements versus feature-driven switching. "
+        "The operating checks are equally concrete: inspect search results, match the "
+        "buyer, maintain prices, and distinguish rankings from sales."
+    ),
     "key_metrics": [
-        {"label": "Conservative", "value": "$10,000", "context": "$50,000 commissions; 20% margin", "note": "1 FT + 2 C"},
-        {"label": "Base", "value": "$113,750", "context": "$325,000 commissions; 35% margin", "note": "1 FT + 2 C"},
-        {"label": "Scaled", "value": "$300,000", "context": "$600,000 commissions; 50% margin", "note": "2 FT + 3 C"}
+        {
+            "label": "Alternative-content conversion",
+            "metric": "Alternative-content conversion",
+            "value": "Greater than 7.5%",
+            "confidence": "attributed_practitioner_claim",
+            "context": (
+                "Grow and Convert describes the average for competitor-name alternatives "
+                "posts in Meg Riley's analysis. Conversion means a product-related action "
+                "such as a trial start or demo request, not newsletter registration."
+            ),
+            "source": "The Grow and Convert Marketing Show ([ZciLGXWg1uA @ 00:05:28])",
+        },
+        {
+            "label": "ODi's compact content portfolio",
+            "metric": "ODi's compact content portfolio",
+            "value": "56 organic pages; just under 20,000 monthly organic visits",
+            "confidence": "attributed_practitioner_claim",
+            "context": (
+                "ODi opens the case study with these figures, compared with 13 pages "
+                "and 100 monthly organic visits at the mid-February starting point."
+            ),
+            "source": "ODi Productions ([3VdHNnSitDw @ 00:00:00])",
+        },
+        {
+            "label": "Watch-alternative page clicks",
+            "metric": "Watch-alternative page clicks",
+            "value": "Almost 3,000 clicks over time",
+            "confidence": "attributed_practitioner_claim",
+            "context": (
+                "Alex reports this cumulative result for a client alternative page, "
+                "then ranking fifth after previously ranking second and third."
+            ),
+            "source": "Alex COLLINSEO ([MzA9HXeEoMA @ 00:02:26])",
+        },
+        {
+            "label": "Mass-page keyword footprint",
+            "metric": "Mass-page keyword footprint",
+            "value": "751 ranking keywords",
+            "confidence": "attributed_practitioner_claim",
+            "context": (
+                "Tony Hayes reads 751 keywords from Ahrefs while inspecting another "
+                "affiliate's ClickFunnels site. This is the spoken dashboard figure, "
+                "and measures rankings rather than verified commissions."
+            ),
+            "source": "Affiliate Marketing How To ([H6zM2ZJJCzk @ 00:08:15])",
+        },
     ],
     "sections": [
         {
-            "heading": "1. Own the recommendation, not borrowed search rank",
-            "epistemic_status": "operating_framework",
+            "id": "practitioner-consensus",
+            "title": "The Practitioner Consensus",
             "paragraphs": [
-                "The parasitic_seo play mistakes rented authority for an owned sales channel. An unedited affiliate subfolder on a strong publisher domain may rank before its operator has earned any trust. That does not make the traffic durable. Google's Site Reputation Abuse policy targets third party content placed to exploit a host site's ranking signals; editorial involvement alone does not make that arrangement safe. A loss of visibility can arrive before the next payroll cycle, although no precise enforcement date is predictable. Replace the rent seeking premise with original tests, named reviewers, useful comparisons, and distribution that does not depend on the host. The merchant should still receive qualified buyers if the publisher stops ranking tomorrow. Treat overnight disappearance as a stress case, not a forecast or a claim that every guest contribution violates policy.",
-                "Before buying a placement, ask who owns the page, who can change its claims, and who keeps the audience when the agreement ends. Review actual products rather than recycling merchant copy. Save the evidence behind each comparison and date every price statement. A publisher can legitimately sell advertising, but paid access to ranking signals is not a permanent business asset. Separate referral visits from search visits in reporting, and require a clear sponsorship disclosure where the relationship would affect how readers weigh a recommendation. A page with no independent reader value is not rescued by adding a staff biography. Make the test concrete: would a buyer bookmark this page if search engines never sent another visitor? If not, spend the next production cycle building something worth returning to instead of renewing the placement.",
-                "Measure search dependence at the profit level, not just the traffic level. A channel that supplies half the visits may supply nearly all profitable sales. Keep a weekly register of earned commissions by page, host, merchant, and acquisition source, allowing for the settlement delay. Model losing the largest host while retaining fixed costs for the next eight weeks. If cash runs out, cut commitments before increasing production. Export your original work under the rights you actually hold and maintain an independent destination for returning readers. Do not move the same abusive arrangement to another publisher and call that diversification. The durable replacement is a useful recommendation business with multiple routes to its audience, not a portfolio of hosts exposed to the same policy and the same sudden loss of search demand."
+                (
+                    "Start where the buyer is choosing, not where the biggest traffic number "
+                    "appears. Vasco Aires illustrates the distinction with an iPhone repair "
+                    "shop: someone asking how to repair a phone may want to do the work, "
+                    "while someone asking where to repair it or what it costs is looking "
+                    "for a provider. The larger search-volume figure does not settle which "
+                    "visitor matters to the business. For software, their examples become "
+                    "competitor alternatives, competitor-versus-competitor comparisons, and "
+                    "questions about missing features [C2ne_saHpSs @ 00:17:11]. Greg Jeffries "
+                    "makes the same buyer-stage argument while building Kajabi comparison "
+                    "videos: the searcher knows the products, is on the fence, and wants "
+                    "information immediately before deciding [yGAUu-eFDOM @ 00:02:11]. Grow "
+                    "and Convert adds an observed conversion distinction rather than just "
+                    "a traffic argument. Its comparison analysis counts trial starts, demo "
+                    "requests, and sales-contact actions, not ebook downloads or newsletter "
+                    "signups [ZciLGXWg1uA @ 00:04:08]. The team reports an average above "
+                    "7.5% for competitor-name alternatives posts. That is the attraction: "
+                    "reach people already investigating a solution, then answer the decision "
+                    "they came to make. It is not a reported affiliate commission rate or "
+                    "a reason to treat every visitor as an eventual paid customer "
+                    "[ZciLGXWg1uA @ 00:05:28]."
+                ),
+                (
+                    "A comparison earns its place by explaining differences that affect fit. "
+                    "Taylor Scher recommends actual competitor comparisons, a visible table, "
+                    "data, social proof, and a conversion option near the top. Their criticism "
+                    "of all-green feature grids is practical: someone recruited on an "
+                    "incomplete picture can leave when the missing feature becomes obvious "
+                    "[7tT35Ww4GBg @ 00:04:16]. Rock The Rankings makes that same connection "
+                    "between comparison content and customer fit. Its preferred page pulls "
+                    "in people who need the available feature set while directing unsuitable "
+                    "users toward a competitor that serves them better; reducing churn is "
+                    "part of the stated purpose [DXrqf5Xqpd4 @ 00:02:28]. Jamie IF translates "
+                    "the decision into affiliate writing: open a versus article with a "
+                    "confident, segmented verdict, then compare the products through the "
+                    "attributes that matter to those segments. A beginner and a buyer "
+                    "willing to spend more can receive different recommendations on the "
+                    "same page [fo-OxsDnUVQ @ 00:24:38]. The SEO Desk similarly starts with "
+                    "a short answer, identifies who each product suits, and limits the "
+                    "table to meaningful differences rather than shared capabilities. Team "
+                    "size, budget, technical skill, and a must-have feature are its stated "
+                    "decision variables. The shared job is to help the reader choose, not "
+                    "merely announce that both products exist [DyyeBcHNuHU @ 00:06:11]."
+                ),
+                (
+                    "Reviews and comparisons work as a connected library, not just isolated "
+                    "money pages. Sam Oh at Ahrefs organizes affiliate research into general "
+                    "comparisons, branded comparisons, product reviews, and trust-and-authority "
+                    "topics. Their product cluster connects a general comparison with "
+                    "individual reviews, then links those reviews back where relevant. "
+                    "The car-seat example starts with a best-for-three-year-olds roundup "
+                    "and six supporting product reviews [SLm9lJnBvyo @ 00:05:40]. ODi "
+                    "Productions builds a similarly tight web inside a narrow category. "
+                    "Two products can generate individual reviews, a head-to-head comparison, "
+                    "and supporting informational content; relevant reviews link together "
+                    "rather than sit behind an unrelated latest-post widget "
+                    "[3VdHNnSitDw @ 00:12:06]. Vasco's SEO Tips gives software operators "
+                    "another organizing spine: comparison pages, alternative pages, and "
+                    "informational pages about competitors. Each serves a different kind "
+                    "of question while introducing the operator's own solution "
+                    "[9emLMxmFCYA @ 00:07:12]. Taylor Scher also treats comparisons as "
+                    "sales-enablement pages that visitors can navigate to, even when a "
+                    "particular comparison has no search volume. Their usefulness is not "
+                    "restricted to an organic landing session [7tT35Ww4GBg @ 00:05:50]. "
+                    "Across these approaches, the baseline is a clear subject, related "
+                    "products, and deliberate connections between pages. Sam's cluster and "
+                    "ODi's category web both let existing product research support later "
+                    "comparisons instead of starting every article from nothing."
+                ),
             ],
             "table": {
-                "caption": "Site-Reputation-Abuse, Merchant Clawback & Attribution-Loss Defense Matrix",
-                "headers": ["Naive Trap", "Detection Metric", "Durable Operator Fallback"],
+                "caption": "The common operating logic behind buyer-search content.",
+                "headers": ["Buyer-search principle", "Practitioner execution", "Expert Source"],
                 "rows": [
-                    ["Unedited parasitic media subfolder leasing", "Share of net profit from third-party rented hosts (>30% alert)", "Build owned vertical calculator domains + disclosed editorial partnerships"],
-                    ["80% single-merchant revenue concentration", "Trailing 60-day settled commission share per merchant (>25% cap)", "Pre-approve Primary, Runner-Up & Fallback offers behind `/go/` edge router"],
-                    ["Overnight 30% -> 5% partner rate slash", "Effective realized payout per conversion vs contractual baseline", "Trigger automated ClickFlare EPC rule shifting traffic to Offer B in <2h"],
-                    ["Unauthorized TM+ brand-keyword bidding", "Brand-Monitor compliance flags or unpaid balance holds", "Apply account-wide negative brand lists OR sign a written TM+ co-bidding rider"],
-                    ["ACPA typo-squatted lookalike domains", "Trademark similarity screen under 15 U.S.C. 1125(d)", "Register neutral category benchmark domains (`payrollswitchlab.com`)"],
-                    ["Tab-under / forced cookie-stuffing scripts", "Abnormal click-to-order ratio (<0.1%) & sub-second session flags", "Use explicit user-clicked comparison CTAs & merchant-authorized deal pages"],
-                    ["Checkout coupon-toolbar last-click poaching", "Assisted conversions lost to promo-code affiliates at cart", "Negotiate exclusive partner landing URLs with coupon-field suppression + S2S"],
-                    ["Direct-linking cold traffic to vendor homepages", "0% reachable first-party email/quiz asset on bouncing clicks", "Insert a 30-second ROI calculator + optional migration-checklist opt-in first"]
-                ]
-            }
+                    [
+                        "Choose purchase-oriented questions rather than the largest available traffic estimate.",
+                        "Vasco contrasts repair-provider searches with instructions for doing repairs yourself.",
+                        "Vasco Aires ([C2ne_saHpSs @ 00:17:11])",
+                    ],
+                    [
+                        "Reach people who already recognize products and need help choosing.",
+                        "Greg identifies Kajabi versus searches as late-stage buyer decision questions.",
+                        "SEO Affiliate Domination ([yGAUu-eFDOM @ 00:02:11])",
+                    ],
+                    [
+                        "Measure the product-related action rather than a newsletter signup.",
+                        "Grow and Convert counts trials, demo requests, and sales-contact submissions.",
+                        "The Grow and Convert Marketing Show ([ZciLGXWg1uA @ 00:04:08])",
+                    ],
+                    [
+                        "Explain the actual differences instead of displaying universal green ticks.",
+                        "Taylor recommends comparison tables supported by data and relevant social proof.",
+                        "Taylor Scher ([7tT35Ww4GBg @ 00:06:03])",
+                    ],
+                    [
+                        "Use the comparison to attract suitable customers and redirect unsuitable ones.",
+                        "Rock The Rankings connects feature fit with reducing avoidable customer churn.",
+                        "Rock The Rankings: B2B SaaS GEO & SEO Agency ([DXrqf5Xqpd4 @ 00:02:28])",
+                    ],
+                    [
+                        "Connect individual product reviews with a broader relevant comparison page.",
+                        "Sam links the roundup to reviews and reviews back to the roundup.",
+                        "Ahrefs ([SLm9lJnBvyo @ 00:05:56])",
+                    ],
+                ],
+            },
         },
         {
-            "heading": "2. Price merchant dependence before buying growth",
-            "epistemic_status": "illustrative_model",
+            "id": "exact-street-mechanics",
+            "title": "Exact Street Mechanics, Tools & Numbers",
             "paragraphs": [
-                "Suppose one merchant provides eighty percent of earned commissions and cuts its rate from thirty percent to five percent overnight. Hold eligible sales volume and reversal rates constant to isolate the shock. That merchant now pays one sixth of its former amount; the remaining portfolio keeps its old earnings. Total commissions fall to one third of the starting level, a loss of roughly two thirds before any cost savings. This is not an eighty percent traffic problem. It is a contract pricing problem that can destroy a profitable acquisition budget while traffic looks healthy. Read notice periods, exclusions, and amendment rights before accepting the exposure. Record the effective date and which transactions receive the old rate. Never assume an announced rate change applies retroactively or that pending earnings are protected without checking the agreement.",
-                "Build substitutes while the leading offer still works. Compare customer fit, eligible order value, refund patterns, payout timing, support quality, and the merchant's ability to close qualified leads. A nominally higher rate can produce less cash if the sales team misses calls or the program rejects renewals. Send a limited matched cohort to a second merchant and wait through its reversal window before declaring victory. Keep a route for customers whose needs the first merchant cannot meet rather than forcing every reader into the same offer. Set a concentration ceiling from the cash loss you can withstand, not from a universal percentage borrowed from another business. The useful question is whether the company survives losing its largest contribution stream while still paying staff and honoring its existing production commitments through the replacement period.",
-                "Keep three amounts separate in every review: referred merchant gross merchandise value, affiliate commissions earned after reversals, and owner net profit after operating costs. A million dollars of customer purchases is not a million dollars of publisher revenue. Pending commissions are not settled cash either. Track the difference between booked, approved, payable, and received amounts, with the merchant's reason codes attached to changes. A contract may permit unpaid balance forfeiture for prohibited promotion; do not describe that outcome as automatic under every program or as a statutory penalty. Ask for the specific clause, an evidence trail, and a dispute route. Budget traffic, content, tooling, staff, and contractors against collectible commission income. When evidence is missing, preserve the disputed amount separately rather than making payroll depend on an optimistic dashboard number that the merchant has not accepted."
+                (
+                    "Build the candidate list with the product name plus versus. Greg "
+                    "Jeffries types that pattern into both Google and YouTube because "
+                    "their suggestions overlap without being identical. The method supplies "
+                    "competitor names without requiring the affiliate to know the whole "
+                    "market first [Kol8N2k5VQw @ 00:03:39]. Their next move is to inspect "
+                    "vendor comparison links. LearnWorlds exposes additional names in its "
+                    "footer that did not appear in autocomplete, including Absorb LMS "
+                    "[cjhrLqpWHc0 @ 00:01:47]. Alex COLLINSEO uses a more tool-driven "
+                    "version for alternatives: ask ChatGPT for popular brands, place "
+                    "alternative and alternatives into Ahrefs or Semrush, and include the "
+                    "competitor names. For the watch client, Alex requested the fifty most "
+                    "popular watch brands before inspecting matching searches "
+                    "[MzA9HXeEoMA @ 00:00:44]. The next filter is the actual results page, "
+                    "not merely the keyword list. The SEO Desk looks for vendor pages, "
+                    "thin lists, forum discussions, and outdated comparisons; three strong, "
+                    "recent independent comparisons are its reason to choose another pair "
+                    "[DyyeBcHNuHU @ 00:01:40]. Greg's free discovery route and Alex's "
+                    "filtered database route both produce candidate decisions. The SEO "
+                    "Desk's inspection then asks whether there is a useful opening for "
+                    "a focused page, rather than assuming that every suggested pairing "
+                    "deserves publication."
+                ),
+                (
+                    "Turn competitor research into a sheet with a specific next action. "
+                    "ToolTester Pro starts with a direct competitor serving the same "
+                    "buyers, then reads the traffic trend before choosing what to imitate. "
+                    "A growing site supplies working patterns; a declining one may expose "
+                    "lost ground [boGwMjAxtuk @ 00:00:28]. The practical columns are "
+                    "competitor URL, topic or keyword, estimated traffic, search intent, "
+                    "format, and whether the opportunity needs a new page or an existing-page "
+                    "update. Five rows are enough for its starting plan "
+                    "[boGwMjAxtuk @ 00:14:42]. For the writing itself, Jamie IF says to "
+                    "write the buying guide first even though product reviews usually "
+                    "appear before it. The guide expresses the research and supplies the "
+                    "criteria that make recommendations differentiated instead of generic "
+                    "[fo-OxsDnUVQ @ 00:05:23]. Vasco's SEO Tips demonstrates the software "
+                    "comparison sequence: explain the first product, explain the second, "
+                    "compare features and pricing in a table, then explain where the "
+                    "operator's own tool fits better [9emLMxmFCYA @ 00:08:53]. ToolTester "
+                    "also opens the successful competitor page and searches the query "
+                    "directly to read intent. That inspection asks what the first screen "
+                    "delivers and whether the visitor wants examples or explanation. "
+                    "The sheet supplies the assignment; the buying criteria and comparison "
+                    "supply the actual decision support."
+                ),
+                (
+                    "Make the recommendation visible, then give the reader the deeper "
+                    "comparison. Jamie IF uses a Lasso block near the top, with two "
+                    "products for a one-to-one comparison. The following H2 sections "
+                    "become a buying guide organized around meaningful attributes, each "
+                    "cross-comparing the products and explaining the effect on the "
+                    "reader's experience [fo-OxsDnUVQ @ 00:25:22]. ODi Productions then "
+                    "connects the finished pages within the category and retroactively "
+                    "applies winning templates to older content. Their case study uses "
+                    "Keywords Everywhere for keyword research and JetPage for the site; "
+                    "Ahrefs is being used to inspect performance rather than to source "
+                    "that campaign's keywords [3VdHNnSitDw @ 00:15:48]. Tony Hayes shows "
+                    "a very different production mechanism while inspecting a ClickFunnels "
+                    "affiliate site: repeated content across mass-generated pages. Their "
+                    "proposed improvement is to separate intent groups, including fifty-two "
+                    "affiliate-related pages, rather than send every search to the same "
+                    "general pitch [H6zM2ZJJCzk @ 00:12:35]. Vasco Aires demonstrates "
+                    "another automation route with Arvo custom templates: supply competitor "
+                    "names through a spreadsheet and substitute the competitor variable "
+                    "inside the template [C2ne_saHpSs @ 00:22:07]. These are distinct "
+                    "production choices. Jamie's verdict-first article, ODi's linked "
+                    "portfolio, Tony's intent-grouped campaigns, and Vasco's variable-driven "
+                    "templates describe how each operator packages and distributes "
+                    "buyer-search answers."
+                ),
             ],
+            "table": {
+                "caption": "Concrete research and production moves taught by the practitioners.",
+                "headers": ["Execution move", "Tool or exact operating detail", "Expert Source"],
+                "rows": [
+                    [
+                        "Collect competitor names from both search engines before choosing comparisons.",
+                        "Type the product name followed by versus into Google and YouTube.",
+                        "SEO Affiliate Domination ([Kol8N2k5VQw @ 00:03:39])",
+                    ],
+                    [
+                        "Expand the candidate set beyond the names appearing in autocomplete.",
+                        "Inspect vendor footer comparisons such as the LearnWorlds list containing Absorb LMS.",
+                        "SEO Affiliate Domination ([cjhrLqpWHc0 @ 00:01:47])",
+                    ],
+                    [
+                        "Filter alternative queries by the competing brands relevant to the business.",
+                        "Alex combines alternative and alternatives with included competitor names in Ahrefs or Semrush.",
+                        "Alex COLLINSEO ([MzA9HXeEoMA @ 00:01:00])",
+                    ],
+                    [
+                        "Record opportunities in a sheet that distinguishes new pages from updates.",
+                        "Use competitor URL, keyword, estimated traffic, intent, format, and the proposed action.",
+                        "ToolTester Pro ([boGwMjAxtuk @ 00:14:42])",
+                    ],
+                    [
+                        "Research the buying criteria before drafting the individual product recommendations.",
+                        "Jamie writes the buying guide first but normally displays product reviews before it.",
+                        "Seeking Profit ([fo-OxsDnUVQ @ 00:05:23])",
+                    ],
+                    [
+                        "Split mass-page campaigns according to what the visitor actually wants.",
+                        "Tony finds fifty-two affiliate pages, seventeen pricing keywords, and twenty-two cost keywords.",
+                        "Affiliate Marketing How To ([H6zM2ZJJCzk @ 00:12:35]); Affiliate Marketing How To ([H6zM2ZJJCzk @ 00:13:42])",
+                    ],
+                ],
+            },
             "callout": {
                 "kind": "INSIDER PRO-TIPS",
-                "title": "Super-Affiliate Defenses Against Poaching & Rate Cuts",
-                "body": "Seven-figure referral operators insulate their margins from platform and merchant shocks with four structural plays:",
+                "title": "Small moves inside the buyer's decision",
+                "body": "Specific research, positioning, and conversion moves used by the practitioners.",
                 "items": [
-                    "Request a Dedicated Vanity Partner Code Alongside Your S2S Link: When a buyer watches your YouTube teardown on mobile and types the URL on desktop later, an exclusive 10%-off or extended-trial partner code (`SWITCHLAB`) captures cross-device conversions cookies miss.",
-                    "Audit 'BrandVerity / AdPolice' Broad-Match Leaks Weekly: Even honest non-brand Google Ads (`best payroll software`) match `[merchant name] payroll` under Broad Match unless every restricted partner brand is locked in an account-level Phrase/Exact negative list.",
-                    "Negotiate 30-Day Written Rate-Protection Windows: Standard network clickwrap lets merchants cut payouts on 24 hours' notice; once you deliver 15+ monthly customers, ask for a 30-day written rate-change notice rider so paid media never gets ambushed mid-flight.",
-                    "Keep Runner-Up Offer 'Warm' With 15%-20% Split Traffic: Never wait until Offer A pauses or slashes commissions to apply to Offer B—send 15%-20% of calculator traffic to Offer B continuously so your S2S postback, AM relationship, and VIP tier stay hot.",
-                ]
-            }
-        },
-        {
-            "heading": "3. Replace stolen intent with explicit commercial rights",
-            "epistemic_status": "operating_framework",
-            "paragraphs": [
-                "The mapped play typo_squatting_brand_bid_hijacking belongs in the replacement ledger, not the launch queue. Do not register confusing typo domains or run covert geo-cloaked brand ads to escape merchant review. The ACPA addresses qualifying domain conduct involving bad faith intent to profit; trademark advertising raises separate confusion and representation questions under section 1125(a). Nominative fair use depends on facts and jurisdiction, not on an affiliate's declaration. Replace these tactics with written merchant TM+ co-bidding addenda or truthful [Competitor] vs [Brand] comparison ads that satisfy platform rules and relevant rights. A merchant's permission cannot license a competitor's mark or override law. The addendum should identify allowed queries, territories, ad language, destinations, exclusions, bidding limits, and termination treatment. Without those particulars, a friendly email saying to drive more volume is weak protection against a later unpaid balance dispute.",
-                "The mapped play coupon_checkout_tab_under_injection requires an equally decisive replacement. Banned tab-under tools and forced cookie-stuffing injectors can assign affiliate credit without a deliberate customer referral. They expose balances to program sanctions and erase the distinction between generating demand and taking credit for an existing buyer. Use transparent merchant-authorized promo or cashback pages instead, with verified terms and an intentional outbound action. Test code eligibility, expiry, minimum spend, product exclusions, and cashback payment timing before publication. Do not promise that a code works merely because it attracts searches. Put the commercial relationship where buyers encounter the recommendation, consistent with the FTC endorsement guides. A disclosure buried in a footer cannot reliably explain a paid recommendation several screens away. Measure whether the page helps a buyer choose or save, rather than celebrating every last click as newly created demand.",
-                "Last-click coupon poaching is an attribution diagnosis, not a label for every coupon publisher. A buyer may discover your review, reach checkout, search for a code, and legitimately click another affiliate under the merchant's attribution rules. Preserve permitted referral identifiers, timestamps, campaign tags, and settlement records to distinguish that sequence from a forced overwrite. Request merchant-side evidence without collecting unnecessary customer details. Negotiate attribution windows, protected lead rules, or split credit where the program supports them; do not assume any particular model is available. An owned audience can give you another chance to help the buyer, but it does not confer ownership of the sale. Compare capture against direct linking with matched traffic and settled economics. The table sets a bounded experiment whose assumptions can be challenged, rather than presenting capture as an automatic increase in profit."
-            ],
-            "table": {
-                "caption": "Owned-Audience Capture vs. Direct-Linking Economics Comparison",
-                "headers": ["Matched 30-day cohort", "Direct link", "Optional capture + follow-up"],
-                "rows": [
-                    ["Cold visits / acquisition cost", "1,000 / $1,000", "1,000 / $1,000"],
-                    ["Permissioned leads", "0", "250; 25% capture"],
-                    ["Attributed eligible orders", "10; 1% of visits", "15; 6% of leads"],
-                    ["Merchant GMV at $1,000/order", "$10,000", "$15,000"],
-                    ["Commission at 20% before reversals", "$2,000", "$3,000"],
-                    ["Reversals at 10% / earned commission", "$200 / $1,800", "$300 / $2,700"],
-                    ["Content and allocated labor", "$400", "$400"],
-                    ["Capture and messaging cost", "$0", "$200"],
-                    ["Cohort contribution after listed costs", "$400", "$1,100"],
-                    ["Limit", "No later revenue assumed", "No bypass orders or later revenue assumed"]
-                ]
+                    (
+                        "Use vendor footer comparisons to uncover names that Google and "
+                        "YouTube autocomplete did not surface. Greg finds additional "
+                        "comparison candidates on LearnWorlds. "
+                        "[SEO Affiliate Domination — cjhrLqpWHc0 @ 00:01:47]"
+                    ),
+                    (
+                        "Write the buying guide before the product sections so its criteria "
+                        "generate meaningful best-for segments rather than generic praise. "
+                        "[Seeking Profit — fo-OxsDnUVQ @ 00:05:23]"
+                    ),
+                    (
+                        "Compare two established competitors, then introduce your own "
+                        "software as a third option for the job it serves better. "
+                        "[Vasco's SEO Tips — 9emLMxmFCYA @ 00:09:39]"
+                    ),
+                    (
+                        "Open the competitor's winning page and inspect its first screen, "
+                        "structure, and answer format; then search the same term to read "
+                        "what the user actually wants. "
+                        "[ToolTester Pro — boGwMjAxtuk @ 00:10:43]"
+                    ),
+                ],
             },
             "sop_steps": [
-                {"step": 1, "title": "Document rights", "action": "Archive the signed addendum.", "detail": "Map permitted queries, destinations, regions, and termination terms to each campaign."},
-                {"step": 2, "title": "Trace intentional referrals", "action": "Run a merchant-authorized test journey.", "detail": "Record the user action and referral identifiers without generating disallowed self-referral commissions."},
-                {"step": 3, "title": "Reconcile credit", "action": "Match approved orders to source records.", "detail": "Separate last-click reassignment, reversals, reporting delay, and unexplained loss."},
-                {"step": 4, "title": "Resolve and reprice", "action": "Submit evidence and update acquisition limits.", "detail": "Pause the affected tactic while a rights dispute is unresolved; continue unrelated permitted channels."}
-            ]
-        },
-        {
-            "heading": "4. Capture a useful relationship before surrendering the visit",
-            "epistemic_status": "operating_framework",
-            "paragraphs": [
-                "Sending cold traffic straight to a merchant homepage combines two weaknesses: the destination may not answer the buyer's question, and you lose the ability to help if they leave. Offer a useful first party asset before the referral: an email buying guide, an optional SMS reminder, or a quiz that produces a genuine recommendation. Keep an accessible route for visitors who prefer to continue without subscribing. Ownership here means control over a permissioned relationship and portable records, not unrestricted rights over a person or their data. Explain the follow-up they will receive, separate email from SMS choices, and honor withdrawal. Collect only what improves the recommendation. A quiz about business software needs workflow and budget information, not sensitive personal history. Match the outbound destination to the identified use case instead of dropping every visitor onto the merchant's generic homepage.",
-                "The capture comparison assumes identical traffic quality and a fixed thirty day measurement window. Direct linking produces ten orders; capture produces fifteen orders from two hundred fifty leads, including any immediate purchases within that group. Count each order once. Both routes pay the same acquisition bill, use the same order value, and suffer the same modeled reversal rate. Capture adds two hundred dollars of messaging and infrastructure cost. Its eleven hundred dollar contribution exceeds direct linking by seven hundred dollars, but the conclusion reverses if lead quality or follow-up conversion deteriorates enough. At one hundred eighty dollars of earned commission per order, capture needs more than eleven orders to beat the direct route's four hundred dollar contribution under these assumptions. Round to twelve orders for an operational target, then verify settlement rather than extrapolating from form submissions.",
-                "Run the experiment with a stable allocation rule and preserve channel, device, and offer mixes across groups. Compare outcomes only after both cohorts have had equal time to buy and reverse. Track delivery failures, unsubscribes, sales, and earned commissions per original visitor; a higher capture rate alone proves little. Keep the recommendation useful even when the best product pays nothing, because credibility supports future visits. Export permission records and source tags regularly so a messaging vendor outage does not erase the relationship. Stop follow-up when someone withdraws permission, and do not treat email permission as permission to text. Budget the labor required to maintain the sequence and answer replies. The owned asset is economically real only when it produces incremental collectible income after those costs, not when a database contains a large number of unreachable or uninterested contacts."
+                {
+                    "step": 1,
+                    "title": "Find real comparison candidates",
+                    "action": "Collect product-versus suggestions and related vendor comparisons.",
+                    "detail": (
+                        "Run the product name plus versus through Google and YouTube, "
+                        "then inspect vendor comparison links for additional candidates. "
+                        "[SEO Affiliate Domination — yGAUu-eFDOM @ 00:01:11] "
+                        "[SEO Affiliate Domination — cjhrLqpWHc0 @ 00:01:47]"
+                    ),
+                },
+                {
+                    "step": 2,
+                    "title": "Inspect the opening and record the assignment",
+                    "action": "Read the live results and create the opportunity sheet.",
+                    "detail": (
+                        "Look for thin, outdated, or vendor-dominated comparisons; "
+                        "record competitor URL, keyword, estimated traffic, intent, "
+                        "format, and new-page versus update status. "
+                        "[The SEO Desk — DyyeBcHNuHU @ 00:01:40] "
+                        "[ToolTester Pro — boGwMjAxtuk @ 00:14:42]"
+                    ),
+                },
+                {
+                    "step": 3,
+                    "title": "Build the decision before polishing the pitch",
+                    "action": "Research buying criteria, then draft the verdict and comparisons.",
+                    "detail": (
+                        "Write the buying guide first. For a versus page, open with "
+                        "a segmented judgment and compare the important attributes "
+                        "under individual H2 sections. "
+                        "[Seeking Profit — fo-OxsDnUVQ @ 00:05:23] "
+                        "[Seeking Profit — fo-OxsDnUVQ @ 00:25:22]"
+                    ),
+                },
+                {
+                    "step": 4,
+                    "title": "Connect the product cluster and maintain its facts",
+                    "action": "Link related reviews and comparisons, then check changing information.",
+                    "detail": (
+                        "Link the roundup to individual product reviews and back where "
+                        "appropriate. Keep a short list of changeable facts and use "
+                        "a genuine last-checked date. "
+                        "[Ahrefs — SLm9lJnBvyo @ 00:05:56] "
+                        "[The SEO Desk — DyyeBcHNuHU @ 00:09:29]"
+                    ),
+                },
             ],
-            "callout": {
-                "kind": "OPERATOR GATE",
-                "title": "Spend follows rights and settled evidence",
-                "body": "Expand only the tactic whose permissions, attribution, and cash contribution can be demonstrated. A failed check stops that tactic, not the whole business.",
-                "items": [
-                    "Brand campaigns match the written TM+ addendum and platform rules.",
-                    "Promo referrals require an intentional customer action; no forced overwrites.",
-                    "Email and SMS records support the actual follow-up channel used.",
-                    "Matched cohorts outperform after reversals and incremental operating costs."
-                ]
-            }
         },
         {
-            "heading": "5. Underwrite the business on retained commissions",
-            "epistemic_status": "illustrative_model",
+            "id": "disagreements-and-alternatives",
+            "title": "Where Practitioners Disagree & Alternative Playbooks",
             "paragraphs": [
-                "Candidate #24's three scenarios are annual planning cases, not reported operator outcomes. Gross earned commissions means affiliate revenue after reversals and clawbacks but before operating expenses; it never means referred merchant GMV. The ledger uses a twenty percent nominal commission rate and ten percent reversal rate solely to bridge merchant volume to the specified earned revenue. Actual programs require their own rates, exclusions, and refund history. Divide earned commissions by eighteen percent to obtain the illustrative eligible GMV. Then subtract traffic, content, tooling, labor, and other operating expenses to reach owner net profit. These profit figures are before the owner's personal income tax and exclude financing effects. Count compensation for work once in the cost envelope; residual profit is not another salary expense. The distinction prevents a sales volume headline from hiding a weak publisher business.",
-                "Conservative operations retain fifty thousand dollars of commissions and spend forty thousand dollars, leaving ten thousand dollars at a twenty percent margin. The base case retains three hundred twenty five thousand dollars and spends two hundred eleven thousand two hundred fifty dollars, leaving one hundred thirteen thousand seven hundred fifty dollars at thirty five percent. Scaled operations retain six hundred thousand dollars and spend three hundred thousand dollars, leaving three hundred thousand dollars at fifty percent. These are the required planning identities, not proof that the staffing is affordable. One full time operator plus two contractors must fit the conservative and base envelopes; two full time operators plus three contractors must fit the scaled envelope. Contractor counts say nothing about hours. If realistic compensation exceeds the envelope, the scenario fails and needs higher commissions or a different cost structure.",
-                "Use milestones tied to evidence rather than celebrating a larger dashboard balance. In the first week, reconcile the largest merchant and document channel rights. During the next three weeks, launch a small substitute offer test and the matched capture experiment. After a complete settlement cycle, update costs and reversal assumptions from actual cohorts before expanding spend. The concentration shock shown below holds noncommission costs constant and assumes the exposed merchant represents eighty percent of earned revenue in each case. That deliberately harsh test makes the downside visible without pretending to estimate its probability. Maintain a separate cash calendar for payout delays and disputed balances; accounting profit cannot pay bills before collection. Scale only when replacement distribution, verified attribution, and sufficient liquidity survive the modeled loss. A bigger affiliate operation should become harder to break, not merely more expensive to stop."
+                (
+                    "The sharpest production split is handcrafted depth versus automated "
+                    "scale. ODi Productions explicitly describes the case-study content "
+                    "as handwritten and zero percent AI, contrasting its tightly linked "
+                    "pages with hundreds of weak automated articles that give readers "
+                    "little reason to buy [3VdHNnSitDw @ 00:14:56]. Vasco Aires takes "
+                    "the opposite tooling position: Arvo can mass-produce comparisons "
+                    "from a custom template and competitor list, while the same work "
+                    "can also be done manually. Their stated benefit is saved time, "
+                    "not a separate kind of information that only AI can create "
+                    "[C2ne_saHpSs @ 00:22:43]. Tony Hayes goes further into mass-page "
+                    "tactics. They inspect an affiliate site with repeated content, "
+                    "changing titles, and hidden keyword appearances they associate "
+                    "with schema. Tony then proposes Niche Ripper automation and "
+                    "intent-specific content campaigns rather than one universal page "
+                    "[H6zM2ZJJCzk @ 00:04:42]. Authority acquisition produces another "
+                    "fork. Derek Pierce prefers auctioned domains with existing age "
+                    "and backlinks over starting fresh and building links slowly. "
+                    "ExpiredDomains.net and GoDaddy auctions with bids are their "
+                    "discovery route [mxJacfpHw9U @ 00:01:01]. ODi's small linked "
+                    "portfolio, Vasco's template production, Tony's repeated-content "
+                    "campaigns, and Derek's aged-domain approach are separate playbooks. "
+                    "Their recommendations differ on where to put the initial work: "
+                    "article quality and structure, production automation, or an "
+                    "existing domain's authority."
+                ),
+                (
+                    "Even the word alternative does not receive one universal interpretation. "
+                    "Jamie IF argues that physical-product alternatives usually mean a "
+                    "cheaper way to obtain the same utility. Their preferred framing "
+                    "is a budget replacement that still performs the job, rather than "
+                    "an undifferentiated list of products [fo-OxsDnUVQ @ 00:34:13]. "
+                    "The Seeking Profit discussion immediately distinguishes SaaS, where "
+                    "support and features create other reasons to switch. The SEO Desk "
+                    "makes those reasons the organizing principle: price changes, missing "
+                    "features, acquisition, or shutdown can each determine the right "
+                    "answer. A free-alternative search also imposes a constraint that "
+                    "a list of paid tools does not meet [DyyeBcHNuHU @ 00:02:11]. "
+                    "Page architecture is contested too. Vasco's SEO Tips explicitly "
+                    "teaches comparison, alternative, and informational pages as three "
+                    "types [9emLMxmFCYA @ 00:07:12]. Rock The Rankings says one "
+                    "competitor comparison page can often target both a versus query "
+                    "and a competitor-alternative query, and describes alternatives "
+                    "as somewhat higher in the funnel than direct comparisons "
+                    "[DXrqf5Xqpd4 @ 00:03:36]. The choices are therefore not merely "
+                    "different headlines on an identical assignment. Jamie's budget "
+                    "replacement, the SEO Desk's reason-for-leaving page, Vasco's "
+                    "separate formats, and Rock The Rankings' combined target each "
+                    "start from a different reading of the buyer's question."
+                ),
+                (
+                    "Positioning ranges from a light introduction of competitors to "
+                    "an extensive head-to-head argument. Grow and Convert shows both. "
+                    "Its Climb Hire example mentions practical Year Up restrictions "
+                    "and then spends most of the page explaining the client's own "
+                    "program. Its TapClicks example instead compares integrations and "
+                    "setup in depth. The team says it has not isolated which approach "
+                    "converts better across those different businesses "
+                    "[ZciLGXWg1uA @ 00:24:41]. Taylor Scher favors explicit differences "
+                    "and dislikes grids that portray the publisher as winning every "
+                    "feature without revealing omissions [7tT35Ww4GBg @ 00:04:16]. "
+                    "Greg Jeffries offers a concrete fit-based alternative in the "
+                    "Kajabi-versus-Gumroad discussion: they like Gumroad for simpler "
+                    "digital products and Kajabi for a broader ecosystem of courses, "
+                    "content, memberships, and marketing. Their recommendation changes "
+                    "with what the seller is trying to accomplish "
+                    "[Kol8N2k5VQw @ 00:10:48]. Their Absorb LMS discussion is different: "
+                    "Greg says they have never used it and reads the apparent "
+                    "business-training orientation from the vendor's positioning, "
+                    "contrasting that with their own Kajabi use "
+                    "[cjhrLqpWHc0 @ 00:03:18]. Those are different foundations for "
+                    "a recommendation: firsthand product use, inspection of another "
+                    "vendor's presentation, and a client's chosen positioning. The "
+                    "practitioners do not all use the same depth, tone, or relationship "
+                    "to the compared products."
+                ),
             ],
             "table": {
-                "caption": "Conservative / Base / Scaled Risk-Adjusted Scenario Ledger",
-                "headers": ["Annual Illustrative Measure", "Conservative", "Base", "Scaled", "Concentration Stress & Governance Rule"],
+                "caption": "Contrasting approaches without collapsing them into one universal formula.",
+                "headers": ["Decision fork", "Contrasting practitioner approaches", "Expert Source"],
                 "rows": [
-                    ["Eligible referred merchant GMV, rounded", "$277,778", "$1,805,556", "$3,333,333", "Off-statement customer order volume assuming 20% gross commission before 10% scrub"],
-                    ["Commission before reversals, rounded", "$55,556", "$361,111", "$666,667", "Provisional webhook commissions prior to trial cancellations, refunds, and clawbacks"],
-                    ["Reversals at 10%, rounded", "$5,556", "$36,111", "$66,667", "Modeled 10% lock-window scrub deduction tracked by traffic source and merchant"],
-                    ["Gross earned commissions, net of reversals", "$50,000", "$325,000", "$600,000", "Recognized affiliate top-line revenue after reversals"],
-                    ["Traffic cost allowance", "$10,000", "$80,000", "$110,000", "Paid BOFU search, sponsorships, and email acquisition with source-level kill switches"],
-                    ["Content cost allowance, excluding labor below", "$4,000", "$16,000", "$25,000", "Independent vendor test accounts, calculators, datasets, and video assets"],
-                    ["Tooling cost allowance", "$2,000", "$10,000", "$15,000", "First-party `/go/` edge router, S2S ledger, email ESP, and SERP/uptime monitors"],
-                    ["FT + contractor compensation allowance", "$22,000", "$95,000", "$135,000", "Non-owner contractor scopes in Conservative/Base; includes second FT operator at Scaled"],
-                    ["Other operating costs", "$2,000", "$10,250", "$15,000", "Legal riders, accounting, entity compliance, insurance, and payment fees"],
-                    ["Total cost ceiling", "$40,000", "$211,250", "$300,000", "Fixed+variable annual expense budget stress-tested against merchant commission cuts"],
-                    ["Owner net profit / margin", "$10,000 / 20%", "$113,750 / 35%", "$300,000 / 50%", "Unshocked pre-tax owner operating profit and margin"],
-                    ["Staffing", "1 FT + 2 C", "1 FT + 2 C", "2 FT + 3 C", "Lean pod ceiling; never sign fixed commitments against single-merchant concentration"],
-                    ["80% exposure: 30% to 5% rate shock; retained revenue", "$16,667", "$108,333", "$200,000", "Harsh stress test: dominant 80%-share partner slashes commission rate by 83.3% overnight"],
-                    ["Shock profit with unchanged costs, rounded", "-$23,333", "-$102,917", "-$100,000", "Resulting operating loss proving why a <=25% single-merchant cap is mandatory"],
-                    ["Evidence milestone", "Reconcile first settled cohort", "Validate substitute and capture", "Repeat profitable diversified cohorts", "Required portfolio defense gate before graduating to the next operating tier"]
-                ]
-            }
-        }
+                    [
+                        "Choose how much production depends on handcrafted articles versus generated templates.",
+                        "ODi reports handwritten content; Vasco demonstrates spreadsheet-fed Arvo comparison templates.",
+                        "ODi Productions ([3VdHNnSitDw @ 00:14:56]); Vasco Aires ([C2ne_saHpSs @ 00:22:43])",
+                    ],
+                    [
+                        "Choose between a compact linked portfolio and repeated-content mass-page campaigns.",
+                        "ODi emphasizes relevant interlinking; Tony proposes segmented campaigns across many generated pages.",
+                        "ODi Productions ([3VdHNnSitDw @ 00:11:32]); Affiliate Marketing How To ([H6zM2ZJJCzk @ 00:12:35])",
+                    ],
+                    [
+                        "Decide whether the alternative buyer primarily wants savings or another capability.",
+                        "Jamie emphasizes physical-product budgets; The SEO Desk organizes alternatives around switching reasons.",
+                        "Seeking Profit ([fo-OxsDnUVQ @ 00:34:13]); The SEO Desk ([DyyeBcHNuHU @ 00:02:11])",
+                    ],
+                    [
+                        "Choose separate alternative pages or a comparison targeting both search patterns.",
+                        "Vasco separates page types; Rock The Rankings describes one page capturing both queries.",
+                        "Vasco's SEO Tips ([9emLMxmFCYA @ 00:07:12]); Rock The Rankings: B2B SaaS GEO & SEO Agency ([DXrqf5Xqpd4 @ 00:03:36])",
+                    ],
+                    [
+                        "Decide whether to mention competitors lightly or compare their differences extensively.",
+                        "Grow and Convert demonstrates both styles without claiming a measured winner between them.",
+                        "The Grow and Convert Marketing Show ([ZciLGXWg1uA @ 00:24:41])",
+                    ],
+                    [
+                        "Match the recommendation to a simple product sale or broader business ecosystem.",
+                        "Greg favors Gumroad for simpler offers and Kajabi for a fuller business platform.",
+                        "SEO Affiliate Domination ([Kol8N2k5VQw @ 00:10:48])",
+                    ],
+                ],
+            },
+        },
+        {
+            "id": "failure-modes-and-economics",
+            "title": "Firsthand Failure Modes, Traps & Economics Checks",
+            "paragraphs": [
+                (
+                    "Ranking counts can hide a weak route from search to action. Tony "
+                    "Hayes finds a ClickFunnels affiliate page ranking for a trial-related "
+                    "query but criticizes the generic direction given to visitors. "
+                    "An affiliate-program searcher receives essentially the same try-the-tool "
+                    "pitch as everyone else. Tony's remedy is different content and "
+                    "calls to action for affiliate, pricing, and alternative intent, "
+                    "rather than celebrating rankings alone [H6zM2ZJJCzk @ 00:12:16]. "
+                    "ToolTester Pro finds another disconnect in its Semrush inspection: "
+                    "613 AI Overview positions produced 1,410 visits over six months, "
+                    "while twenty-eight additional placements did not move traffic. "
+                    "The observed placements and the resulting clicks are different "
+                    "measurements [boGwMjAxtuk @ 00:03:52]. Jamie IF identifies the "
+                    "writing equivalent: a list where everything sounds equally good "
+                    "does not give the reader confidence to choose. More products "
+                    "can create decision paralysis rather than more sales "
+                    "[fo-OxsDnUVQ @ 00:15:14]. Jamie also reports that lower time "
+                    "on page can accompany higher earnings when readers act sooner. "
+                    "Their response is to foreground the verdict and conversion "
+                    "block, not prolong the visit for its own sake "
+                    "[fo-OxsDnUVQ @ 00:19:24]. Tony's observed pitch mismatch, "
+                    "ToolTester's placement-to-click gap, and Jamie's experience with "
+                    "decisive writing all challenge the same shortcut: using visible "
+                    "activity as a substitute for the action the page is meant to earn."
+                ),
+                (
+                    "A comparison can fail before publication if the proposed alternative "
+                    "does not fit the buyer. Alex COLLINSEO tests a wedding-neon-sign "
+                    "alternative against a client's large screen product and calls "
+                    "the fit a stretch: someone wanting another decorative light "
+                    "may not want a huge screen. Alex explicitly allows that this "
+                    "choice might produce no sales and says an excessive relevance "
+                    "stretch is not worth pursuing [MzA9HXeEoMA @ 00:04:44]. The "
+                    "SEO Desk warns about the corresponding comparison trap: keyword "
+                    "tools can suggest pairs that serve entirely different people, "
+                    "so a page may rank without finding a real decision-making "
+                    "audience. It also treats every comparison as a maintenance "
+                    "commitment because prices, features, and ownership change "
+                    "[DyyeBcHNuHU @ 00:08:40]. Greg Jeffries supplies an observed "
+                    "pricing-research example while revisiting Gumroad: they remember "
+                    "tiered pricing, open the current pricing presentation, and "
+                    "describe a shift toward transaction-based charging rather "
+                    "than the former subscription framing "
+                    "[Kol8N2k5VQw @ 00:07:35]. In the LearnDash discussion, Greg "
+                    "also discovers the LiquidWeb acquisition while researching "
+                    "the comparison [yGAUu-eFDOM @ 00:04:54]. These are concrete "
+                    "reasons to inspect the product again instead of recycling "
+                    "an old description. A familiar brand name does not mean "
+                    "the pricing model, ownership, or suitable customer has "
+                    "remained the same."
+                ),
+                (
+                    "The economics check also applies to the asset and the evidence "
+                    "behind the recommendation. Derek Pierce warns that inexperienced "
+                    "auction bidders can overpay for domains without corresponding "
+                    "value. Their inspection includes indexation, historical content, "
+                    "and backlink quality rather than assuming that an aged "
+                    "domain is automatically attractive [mxJacfpHw9U @ 00:09:50]. "
+                    "They specifically dislike relying on only one or two authority "
+                    "links because losing them reduces the domain's value "
+                    "[mxJacfpHw9U @ 00:07:41]. Grow and Convert identifies a "
+                    "different comparison problem in its own work: expensive "
+                    "five-figure annual enterprise contracts and free programs "
+                    "have different conversion conditions. The team declines "
+                    "to read its light-touch and detailed examples as a clean "
+                    "test of writing style [ZciLGXWg1uA @ 00:24:41]. Jamie IF "
+                    "adds an unusually direct limit to their own product-review "
+                    "advice: they say they have never been good at ranking "
+                    "individual product reviews and do not make much money "
+                    "from them, while describing their supporting role inside "
+                    "larger commercial clusters [fo-OxsDnUVQ @ 00:31:41]. Keep "
+                    "those distinctions intact when choosing the playbook. "
+                    "Derek's domain strategy includes bidding and link-loss "
+                    "exposure; Grow and Convert's conversion figures depend "
+                    "on the offer; Jamie's strongest product-review argument "
+                    "is partly about helping the surrounding money pages. "
+                    "None is the same measurement as commissions from one "
+                    "new comparison article."
+                ),
+            ],
+            "table": {
+                "caption": "Observed bottlenecks and practitioner checks before treating visibility as earnings.",
+                "headers": ["Observed trap or exposure", "Practitioner check or response", "Expert Source"],
+                "rows": [
+                    [
+                        "A ranking affiliate-program page sends readers toward a generic free-trial pitch.",
+                        "Tony separates affiliate, pricing, and alternative content with matching calls to action.",
+                        "Affiliate Marketing How To ([H6zM2ZJJCzk @ 00:12:16])",
+                    ],
+                    [
+                        "Hundreds of AI Overview placements return comparatively few visits to the site.",
+                        "ToolTester reads the 613 positions alongside the 1,410 visits over six months.",
+                        "ToolTester Pro ([boGwMjAxtuk @ 00:03:52])",
+                    ],
+                    [
+                        "A proposed wedding-light alternative stretches toward a substantially different screen product.",
+                        "Alex questions whether the actual buyer would want that alternative at all.",
+                        "Alex COLLINSEO ([MzA9HXeEoMA @ 00:04:44])",
+                    ],
+                    [
+                        "Remembered product pricing no longer matches the presentation encountered during research.",
+                        "Greg reopens Gumroad pricing and describes the apparent transaction-based pricing shift.",
+                        "SEO Affiliate Domination ([Kol8N2k5VQw @ 00:07:35])",
+                    ],
+                    [
+                        "An auctioned domain depends on too few valuable backlinks remaining available.",
+                        "Derek checks backlink quality and dislikes reliance on only one or two authority links.",
+                        "Derek Pierce ([mxJacfpHw9U @ 00:07:41])",
+                    ],
+                    [
+                        "Individual product-review advice exceeds the speaker's own direct ranking success.",
+                        "Jamie acknowledges weak individual-review results while explaining their supporting cluster value.",
+                        "Seeking Profit ([fo-OxsDnUVQ @ 00:31:41])",
+                    ],
+                ],
+            },
+            "callout": {
+                "kind": "OPERATOR GATE",
+                "title": "Checks the practitioners actually put in the way",
+                "body": "Use the stated fit, intent, maintenance, and asset checks before expanding the campaign.",
+                "items": [
+                    (
+                        "Does the alternative genuinely fit the searcher's request? "
+                        "Alex says to pass when the relationship is too much of a "
+                        "stretch, rather than assume a ranking will generate sales. "
+                        "[Alex COLLINSEO — MzA9HXeEoMA @ 00:06:11]"
+                    ),
+                    (
+                        "Does each intent group receive the right next action? "
+                        "Tony distinguishes an affiliate-program invitation from "
+                        "a pricing or trial offer instead of using one generic pitch. "
+                        "[Affiliate Marketing How To — H6zM2ZJJCzk @ 00:14:17]"
+                    ),
+                    (
+                        "Have the changing facts actually been checked? Keep a short "
+                        "list of vulnerable facts and make the last-check date real. "
+                        "[The SEO Desk — DyyeBcHNuHU @ 00:09:29]"
+                    ),
+                    (
+                        "If using an auctioned domain, check indexation, historical "
+                        "content, and backlink quality; Derek warns that bidding "
+                        "without adequate research can mean paying more than its value. "
+                        "[Derek Pierce — mxJacfpHw9U @ 00:09:33] "
+                        "[Derek Pierce — mxJacfpHw9U @ 00:09:50]"
+                    ),
+                ],
+            },
+        },
     ],
-    "pull_quote": "The valuable affiliate asset is not a ranking or a pending balance; it is permission, proof, and an audience you can reach again.",
-    "diagram_id": "diag-05-compliance-and-scrub-guardrail-tree",
+    "pull_quote": (
+        "\"The tool gave you the topic. Google tells you the job the page has to do.\" "
+        "— ToolTester Pro (boGwMjAxtuk @ 00:11:17)."
+    ),
+    "diagram_id": "diag-05",
     "action_checklist": [
-        "Export commissions by merchant and source.",
-        "Stress-test the largest merchant's rate cut.",
-        "Archive signed brand-bidding permissions.",
-        "Trace one authorized checkout attribution test.",
-        "Launch a matched owned-capture experiment.",
-        "Reconcile reversals, costs, and cash weekly."
+        (
+            "Type the promoted product's name plus versus into Google and YouTube "
+            "and collect the comparison suggestions from both. "
+            "[SEO Affiliate Domination — yGAUu-eFDOM @ 00:01:11]"
+        ),
+        (
+            "Search alternative and alternatives in Ahrefs or Semrush, include "
+            "relevant competitor names, and inspect the resulting opportunities. "
+            "[Alex COLLINSEO — MzA9HXeEoMA @ 00:01:00]"
+        ),
+        (
+            "Inspect a direct competitor's strongest page and record the keyword, "
+            "intent, format, estimated traffic, and new-page or update decision. "
+            "[ToolTester Pro — boGwMjAxtuk @ 00:14:42]"
+        ),
+        (
+            "Write the buying guide before the product sections, then open the "
+            "versus page with a clear recommendation for each relevant segment. "
+            "[Seeking Profit — fo-OxsDnUVQ @ 00:05:23] "
+            "[Seeking Profit — fo-OxsDnUVQ @ 00:24:38]"
+        ),
+        (
+            "Connect the roundup, individual reviews, and branded comparisons "
+            "through relevant internal links rather than leaving the pages isolated. "
+            "[Ahrefs — SLm9lJnBvyo @ 00:05:56] "
+            "[Ahrefs — SLm9lJnBvyo @ 00:06:59]"
+        ),
+        (
+            "Recheck changing prices and features, record a genuine last-check "
+            "date, and update comparisons when the products change. "
+            "[The SEO Desk — DyyeBcHNuHU @ 00:09:29]"
+        ),
     ],
     "statutory_citations": [
-        {"title": "15 U.S.C. section 1125(a)", "url": "https://uscode.house.gov/view.xhtml?req=granuleid:USC-prelim-title15-section1125&num=0&edition=prelim", "relevance": "False designation and misleading representations; nominative fair use is context-dependent doctrine, not blanket statutory permission."},
-        {"title": "15 U.S.C. section 1125(d)", "url": "https://uscode.house.gov/view.xhtml?req=granuleid:USC-prelim-title15-section1125&num=0&edition=prelim", "relevance": "ACPA addresses qualifying domain conduct with bad-faith intent to profit from a protected mark."},
-        {"title": "16 CFR Part 255", "url": "https://www.ecfr.gov/current/title-16/chapter-I/subchapter-B/part-255", "relevance": "FTC endorsement guides address truthful endorsements and disclosure of material connections."}
-    ]
+        {
+            "title": (
+                "The Grow and Convert Marketing Show — How to Create Comparison Content "
+                "(Without Making Your CEO Nervous): A Data Backed Approach [00:05:28]"
+            ),
+            "url": "https://www.youtube.com/watch?v=ZciLGXWg1uA&t=328s",
+            "relevance": (
+                "Primary practitioner testimony on the reported conversion performance "
+                "of competitor-name alternatives content."
+            ),
+        },
+        {
+            "title": (
+                "Seeking Profit — The Formula Behind High-Converting Affiliate "
+                "Articles (w/Jamie IF) [00:25:22]"
+            ),
+            "url": "https://www.youtube.com/watch?v=fo-OxsDnUVQ&t=1522s",
+            "relevance": (
+                "Primary practitioner testimony on two-product comparison blocks "
+                "and attribute-by-attribute buying-guide structure."
+            ),
+        },
+        {
+            "title": (
+                "Ahrefs — Content Strategy for Affiliate Marketing Sites [3.3] [00:05:56]"
+            ),
+            "url": "https://www.youtube.com/watch?v=SLm9lJnBvyo&t=356s",
+            "relevance": (
+                "Primary practitioner testimony on internal links connecting "
+                "general comparisons and individual product reviews."
+            ),
+        },
+        {
+            "title": (
+                "Affiliate Marketing How To — Clickfunnels Affiliate 'Mass Page "
+                "Building' SEO Campaign Ranks For 763 Keywords! [00:12:35]"
+            ),
+            "url": "https://www.youtube.com/watch?v=H6zM2ZJJCzk&t=755s",
+            "relevance": (
+                "Primary practitioner testimony on segmenting mass-page content "
+                "by affiliate-program intent instead of repeating one generic pitch."
+            ),
+        },
+    ],
+    "source_citations": [
+        {
+            "source_type": "video_pro_tip",
+            "video_id": "C2ne_saHpSs",
+            "title": "SaaS SEO Strategy - How I make $4,000/day with a SaaS",
+            "channel": "Vasco Aires",
+            "author": "Vasco Aires",
+            "text": "Traffic is a vanity metric. You want to be focusing on buying intent.",
+            "tip": "Traffic is a vanity metric. You want to be focusing on buying intent.",
+            "timestamp": 1031,
+            "timestamp_seconds": 1031,
+            "timestamp_label": "[00:17:11]",
+            "url": "https://www.youtube.com/watch?v=C2ne_saHpSs&t=1031s",
+            "markdown": "[00:17:11](https://www.youtube.com/watch?v=C2ne_saHpSs&t=1031s)",
+            "epistemic_status": "attributed_practitioner_claim",
+            "relevance": "Practitioner testimony on choosing buyer intent over traffic volume.",
+        },
+        {
+            "source_type": "video_pro_tip",
+            "video_id": "7tT35Ww4GBg",
+            "title": "Competitor Comparison Landing Pages: Best Practices for Creating a High Converting Comparison Page",
+            "channel": "Taylor Scher",
+            "author": "Taylor Scher",
+            "text": (
+                "Make sure you can incorporate data, make sure you can incorporate "
+                "social proof."
+            ),
+            "tip": (
+                "Make sure you can incorporate data, make sure you can incorporate "
+                "social proof."
+            ),
+            "timestamp": 363,
+            "timestamp_seconds": 363,
+            "timestamp_label": "[00:06:03]",
+            "url": "https://www.youtube.com/watch?v=7tT35Ww4GBg&t=363s",
+            "markdown": "[00:06:03](https://www.youtube.com/watch?v=7tT35Ww4GBg&t=363s)",
+            "epistemic_status": "attributed_practitioner_claim",
+            "relevance": "Practitioner testimony on comparison-page evidence and presentation.",
+        },
+        {
+            "source_type": "video_pro_tip",
+            "video_id": "3VdHNnSitDw",
+            "title": "This Google SEO Strategy is CRUSHING IT in 2024! (Tutorial)",
+            "channel": "ODi Productions",
+            "author": "ODi Productions",
+            "text": (
+                "We started this case study in mid-February where we had 100 organic "
+                "traffic per month and 13 pages. We're currently at 56 organic pages "
+                "with just under 20,000 organics per month."
+            ),
+            "tip": (
+                "We started this case study in mid-February where we had 100 organic "
+                "traffic per month and 13 pages. We're currently at 56 organic pages "
+                "with just under 20,000 organics per month."
+            ),
+            "timestamp": 0,
+            "timestamp_seconds": 0,
+            "timestamp_label": "[00:00:00]",
+            "url": "https://www.youtube.com/watch?v=3VdHNnSitDw&t=0s",
+            "markdown": "[00:00:00](https://www.youtube.com/watch?v=3VdHNnSitDw&t=0s)",
+            "epistemic_status": "attributed_practitioner_claim",
+            "relevance": "Practitioner testimony on the compact affiliate-site case study.",
+        },
+        {
+            "source_type": "video_pro_tip",
+            "video_id": "ZciLGXWg1uA",
+            "title": "How to Create Comparison Content (Without Making Your CEO Nervous): A Data Backed Approach",
+            "channel": "The Grow and Convert Marketing Show",
+            "author": "The Grow and Convert Marketing Show",
+            "text": "The average of the posts that Meg evaluated here is greater than 7.5%.",
+            "tip": "The average of the posts that Meg evaluated here is greater than 7.5%.",
+            "timestamp": 328,
+            "timestamp_seconds": 328,
+            "timestamp_label": "[00:05:28]",
+            "url": "https://www.youtube.com/watch?v=ZciLGXWg1uA&t=328s",
+            "markdown": "[00:05:28](https://www.youtube.com/watch?v=ZciLGXWg1uA&t=328s)",
+            "epistemic_status": "attributed_practitioner_claim",
+            "relevance": "Practitioner testimony on alternative-content product-action conversion.",
+        },
+        {
+            "source_type": "video_pro_tip",
+            "video_id": "9emLMxmFCYA",
+            "title": "SaaS SEO Marketing Ideas and Strategy (Micro SaaS Growth Tips)",
+            "channel": "Vasco's SEO Tips",
+            "author": "Vasco's SEO Tips",
+            "text": "Three types of pages: comparison pages, alternative pages and information pages.",
+            "tip": "Three types of pages: comparison pages, alternative pages and information pages.",
+            "timestamp": 432,
+            "timestamp_seconds": 432,
+            "timestamp_label": "[00:07:12]",
+            "url": "https://www.youtube.com/watch?v=9emLMxmFCYA&t=432s",
+            "markdown": "[00:07:12](https://www.youtube.com/watch?v=9emLMxmFCYA&t=432s)",
+            "epistemic_status": "attributed_practitioner_claim",
+            "relevance": "Practitioner testimony on the three software competitor-content formats.",
+        },
+        {
+            "source_type": "video_pro_tip",
+            "video_id": "MzA9HXeEoMA",
+            "title": "How To Outrank Your Competitors Using “Alternative” Keyword Pages",
+            "channel": "Alex COLLINSEO",
+            "author": "Alex COLLINSEO",
+            "text": (
+                "At the moment, we're ranking number five. In the past, it was "
+                "number two, number three. And you can see over time, this page "
+                "actually gave almost 3,000 clicks."
+            ),
+            "tip": (
+                "At the moment, we're ranking number five. In the past, it was "
+                "number two, number three. And you can see over time, this page "
+                "actually gave almost 3,000 clicks."
+            ),
+            "timestamp": 146,
+            "timestamp_seconds": 146,
+            "timestamp_label": "[00:02:26]",
+            "url": "https://www.youtube.com/watch?v=MzA9HXeEoMA&t=146s",
+            "markdown": "[00:02:26](https://www.youtube.com/watch?v=MzA9HXeEoMA&t=146s)",
+            "epistemic_status": "attributed_practitioner_claim",
+            "relevance": "Practitioner testimony on a watch-alternative page's observed search performance.",
+        },
+        {
+            "source_type": "video_pro_tip",
+            "video_id": "boGwMjAxtuk",
+            "title": "How to Steal Your Competitor’s SEO Strategy in 15 Minutes (Semrush Traffic & AI Audit)",
+            "channel": "ToolTester Pro",
+            "author": "ToolTester Pro",
+            "text": (
+                "Your columns are going to be competitor URL, topic or keyword, "
+                "estimated traffic, search intent, format, and one more: new page "
+                "or update to something you already have."
+            ),
+            "tip": (
+                "Your columns are going to be competitor URL, topic or keyword, "
+                "estimated traffic, search intent, format, and one more: new page "
+                "or update to something you already have."
+            ),
+            "timestamp": 882,
+            "timestamp_seconds": 882,
+            "timestamp_label": "[00:14:42]",
+            "url": "https://www.youtube.com/watch?v=boGwMjAxtuk&t=882s",
+            "markdown": "[00:14:42](https://www.youtube.com/watch?v=boGwMjAxtuk&t=882s)",
+            "epistemic_status": "attributed_practitioner_claim",
+            "relevance": "Practitioner testimony on converting a competitor audit into a content sheet.",
+        },
+        {
+            "source_type": "video_pro_tip",
+            "video_id": "fo-OxsDnUVQ",
+            "title": "The Formula Behind High-Converting Affiliate Articles (w/Jamie IF)",
+            "channel": "Seeking Profit",
+            "author": "Seeking Profit",
+            "text": (
+                "Buying guide after the product reviews, but write the buying guide first."
+            ),
+            "tip": (
+                "Buying guide after the product reviews, but write the buying guide first."
+            ),
+            "timestamp": 323,
+            "timestamp_seconds": 323,
+            "timestamp_label": "[00:05:23]",
+            "url": "https://www.youtube.com/watch?v=fo-OxsDnUVQ&t=323s",
+            "markdown": "[00:05:23](https://www.youtube.com/watch?v=fo-OxsDnUVQ&t=323s)",
+            "epistemic_status": "attributed_practitioner_claim",
+            "relevance": "Practitioner testimony on research order versus published article order.",
+        },
+        {
+            "source_type": "video_pro_tip",
+            "video_id": "H6zM2ZJJCzk",
+            "title": "Clickfunnels Affiliate 'Mass Page Building' SEO Campaign Ranks For 763 Keywords!",
+            "channel": "Affiliate Marketing How To",
+            "author": "Affiliate Marketing How To",
+            "text": "You can see here he's ranking for 751 keywords.",
+            "tip": "You can see here he's ranking for 751 keywords.",
+            "timestamp": 495,
+            "timestamp_seconds": 495,
+            "timestamp_label": "[00:08:15]",
+            "url": "https://www.youtube.com/watch?v=H6zM2ZJJCzk&t=495s",
+            "markdown": "[00:08:15](https://www.youtube.com/watch?v=H6zM2ZJJCzk&t=495s)",
+            "epistemic_status": "attributed_practitioner_claim",
+            "relevance": "Practitioner testimony on the observed mass-page site's keyword footprint.",
+        },
+        {
+            "source_type": "video_pro_tip",
+            "video_id": "yGAUu-eFDOM",
+            "title": "Kajabi Review: Kajabi vs LearnDash Affiliate SEO Strategy",
+            "channel": "SEO Affiliate Domination",
+            "author": "SEO Affiliate Domination",
+            "text": (
+                "If you just type this into Google or YouTube, you can do Kajabi "
+                "versus, and get a list of these competitors here."
+            ),
+            "tip": (
+                "If you just type this into Google or YouTube, you can do Kajabi "
+                "versus, and get a list of these competitors here."
+            ),
+            "timestamp": 71,
+            "timestamp_seconds": 71,
+            "timestamp_label": "[00:01:11]",
+            "url": "https://www.youtube.com/watch?v=yGAUu-eFDOM&t=71s",
+            "markdown": "[00:01:11](https://www.youtube.com/watch?v=yGAUu-eFDOM&t=71s)",
+            "epistemic_status": "attributed_practitioner_claim",
+            "relevance": "Practitioner testimony on free discovery of buyer-oriented comparison topics.",
+        },
+        {
+            "source_type": "video_pro_tip",
+            "video_id": "DyyeBcHNuHU",
+            "title": "Comparison And Alternative Queries For Small Sites (2026)",
+            "channel": "The SEO Desk",
+            "author": "The SEO Desk",
+            "text": (
+                "Put the real last check date on the page, and make it true, because "
+                "updating the date without checking anything is worse than leaving "
+                "it old. Keep a short list of the facts most likely to change and "
+                "check those first."
+            ),
+            "tip": (
+                "Put the real last check date on the page, and make it true, because "
+                "updating the date without checking anything is worse than leaving "
+                "it old. Keep a short list of the facts most likely to change and "
+                "check those first."
+            ),
+            "timestamp": 569,
+            "timestamp_seconds": 569,
+            "timestamp_label": "[00:09:29]",
+            "url": "https://www.youtube.com/watch?v=DyyeBcHNuHU&t=569s",
+            "markdown": "[00:09:29](https://www.youtube.com/watch?v=DyyeBcHNuHU&t=569s)",
+            "epistemic_status": "attributed_practitioner_claim",
+            "relevance": "Practitioner testimony on comparison-page maintenance and changing facts.",
+        },
+        {
+            "source_type": "video_pro_tip",
+            "video_id": "cjhrLqpWHc0",
+            "title": "Kajabi Review: FreshLearn vs Kajabi Comparison and Strategy",
+            "channel": "SEO Affiliate Domination",
+            "author": "SEO Affiliate Domination",
+            "text": (
+                "They've got an even longer list with some of the solutions that "
+                "didn't even appear in the search here in YouTube or Google with "
+                "the autosuggest."
+            ),
+            "tip": (
+                "They've got an even longer list with some of the solutions that "
+                "didn't even appear in the search here in YouTube or Google with "
+                "the autosuggest."
+            ),
+            "timestamp": 122,
+            "timestamp_seconds": 122,
+            "timestamp_label": "[00:02:02]",
+            "url": "https://www.youtube.com/watch?v=cjhrLqpWHc0&t=122s",
+            "markdown": "[00:02:02](https://www.youtube.com/watch?v=cjhrLqpWHc0&t=122s)",
+            "epistemic_status": "attributed_practitioner_claim",
+            "relevance": (
+                "Practitioner testimony on vendor comparison links that lead Greg "
+                "to the Absorb LMS comparison."
+            ),
+        },
+        {
+            "source_type": "video_pro_tip",
+            "video_id": "Kol8N2k5VQw",
+            "title": "Kajabi Review: Kajabi vs Gumroad, Plus SEO Strategy",
+            "channel": "SEO Affiliate Domination",
+            "author": "SEO Affiliate Domination",
+            "text": (
+                "I've used both platforms. They're both great, but they just kind "
+                "of have different, like, one can be better than the other, "
+                "depending on what you're trying to accomplish."
+            ),
+            "tip": (
+                "I've used both platforms. They're both great, but they just kind "
+                "of have different, like, one can be better than the other, "
+                "depending on what you're trying to accomplish."
+            ),
+            "timestamp": 847,
+            "timestamp_seconds": 847,
+            "timestamp_label": "[00:14:07]",
+            "url": "https://www.youtube.com/watch?v=Kol8N2k5VQw&t=847s",
+            "markdown": "[00:14:07](https://www.youtube.com/watch?v=Kol8N2k5VQw&t=847s)",
+            "epistemic_status": "attributed_practitioner_claim",
+            "relevance": "Practitioner testimony on firsthand, use-case-based platform comparison.",
+        },
+        {
+            "source_type": "video_pro_tip",
+            "video_id": "SLm9lJnBvyo",
+            "title": "Content Strategy for Affiliate Marketing Sites [3.3]",
+            "channel": "Ahrefs",
+            "author": "Ahrefs",
+            "text": (
+                "We can simply connect these pages by using an internal link from "
+                "our general comparison post to our product reviews. And it would "
+                "also make sense to link from our product reviews to our general "
+                "comparison post."
+            ),
+            "tip": (
+                "We can simply connect these pages by using an internal link from "
+                "our general comparison post to our product reviews. And it would "
+                "also make sense to link from our product reviews to our general "
+                "comparison post."
+            ),
+            "timestamp": 356,
+            "timestamp_seconds": 356,
+            "timestamp_label": "[00:05:56]",
+            "url": "https://www.youtube.com/watch?v=SLm9lJnBvyo&t=356s",
+            "markdown": "[00:05:56](https://www.youtube.com/watch?v=SLm9lJnBvyo&t=356s)",
+            "epistemic_status": "attributed_practitioner_claim",
+            "relevance": "Practitioner testimony on the internal-link structure of product clusters.",
+        },
+        {
+            "source_type": "video_pro_tip",
+            "video_id": "DXrqf5Xqpd4",
+            "title": "SaaS Competitor Comparison Pages: Why you NEED to Build them",
+            "channel": "Rock The Rankings: B2B SaaS GEO & SEO Agency",
+            "author": "Rock The Rankings: B2B SaaS GEO & SEO Agency",
+            "text": (
+                "We're building this page in order to also reduce churn for clients "
+                "and customers that won't be a fit for our product and to actually "
+                "pull in those users that are looking for a specific feature set "
+                "that we have."
+            ),
+            "tip": (
+                "We're building this page in order to also reduce churn for clients "
+                "and customers that won't be a fit for our product and to actually "
+                "pull in those users that are looking for a specific feature set "
+                "that we have."
+            ),
+            "timestamp": 148,
+            "timestamp_seconds": 148,
+            "timestamp_label": "[00:02:28]",
+            "url": "https://www.youtube.com/watch?v=DXrqf5Xqpd4&t=148s",
+            "markdown": "[00:02:28](https://www.youtube.com/watch?v=DXrqf5Xqpd4&t=148s)",
+            "epistemic_status": "attributed_practitioner_claim",
+            "relevance": "Practitioner testimony on comparison pages, feature fit, and churn.",
+        },
+        {
+            "source_type": "video_pro_tip",
+            "video_id": "mxJacfpHw9U",
+            "title": "My Best Affiliate Marketing SEO Strategy (2022 Guide)",
+            "channel": "Derek Pierce",
+            "author": "Derek Pierce",
+            "text": (
+                "You don't want just one or two because if you lose those links "
+                "then that's going to basically make the domain less valuable."
+            ),
+            "tip": (
+                "You don't want just one or two because if you lose those links "
+                "then that's going to basically make the domain less valuable."
+            ),
+            "timestamp": 461,
+            "timestamp_seconds": 461,
+            "timestamp_label": "[00:07:41]",
+            "url": "https://www.youtube.com/watch?v=mxJacfpHw9U&t=461s",
+            "markdown": "[00:07:41](https://www.youtube.com/watch?v=mxJacfpHw9U&t=461s)",
+            "epistemic_status": "attributed_practitioner_claim",
+            "relevance": "Practitioner testimony on backlink concentration when selecting aged domains.",
+        },
+    ],
 }

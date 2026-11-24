@@ -1,0 +1,725 @@
+from __future__ import annotations
+
+CHAPTER_7 = {
+    "id": "Q7",
+    "chapter_id": "Q7",
+    "chapter_number": 7,
+    "question_number": 7,
+    "slug": "reach-claimants-and-address-distrust",
+    "question_prompt": "How do I find usable contact information, organize outreach, and respond when people distrust the recovery offer?",
+    "kicker": "Q7 / THE BIG MONEY PLAYBOOKS",
+    "title": "Reach Claimants and Address Distrust",
+    "subtitle": "Skip-tracing services, DNC screening, calling volume, lead follow-up, objection scripts, alternatives to calling, and pre-foreclosure Facebook ads.",
+    "layout_template": "thirty_day_roadmap",
+    "reading_time_minutes": 15,
+    "executive_summary": (
+        "The practitioners converge on better contact data, repeated contact, concrete evidence, and a clear explanation of contingency fees. "
+        "Eric Richardson describes 150–200 daily leads with dialing software, while David Church farms smaller groups and follows unfinished claims. "
+        "Shawn Bougie uses deeds, tax mailing addresses, relatives, and returned envelopes to find displaced owners. "
+        "David Wilkerson favors bulk data preparation and repeated offers; Richardson instead makes proof the first-call priority. "
+        "Their disagreements matter: Spencer Vann accepts free searches for cash-constrained beginners, Bougie rejects cheap data, and Joe Green's mutual-friend tactic is precisely the approach Bougie criticizes. "
+        "Richardson's DNC lawsuit changes the outreach discussion. Caleb Luketic supplies a separate inbound play: $25–$40 pre-foreclosure leads generated through a helpful guide rather than a cash-offer pitch."
+    ),
+    "key_metrics": [
+        {
+            "label": "Richardson's software-assisted daily outreach",
+            "metric": "Richardson's software-assisted daily outreach",
+            "value": "150–200 leads per day",
+            "confidence": "attributed_practitioner_claim",
+            "context": "Richardson gives this target for two to three hours using the dialer, with voicemail, texts, and later follow-up rather than a single abandoned attempt.",
+            "source": "Money Making Juggernaut ([JQrEcneXSbk @ 00:03:24])",
+        },
+        {
+            "label": "Bougie's relatives-and-associates uplift",
+            "metric": "Bougie's relatives-and-associates uplift",
+            "value": "40–50% higher hit rate",
+            "confidence": "attributed_practitioner_claim",
+            "context": "Bougie estimates this improvement from the more expensive approach of contacting possible relatives and associates alongside the owner.",
+            "source": "SurplusFundsRiches ([ujbTh1In_c4 @ 00:03:10])",
+        },
+        {
+            "label": "Wilkerson's Batch Lead Stacker pricing",
+            "metric": "Wilkerson's Batch Lead Stacker pricing",
+            "value": "About $40/month plus about $0.15 per skip trace",
+            "confidence": "attributed_practitioner_claim",
+            "context": "Wilkerson quotes starting membership and search pricing, then says files without hits and duplicate leads are not charged.",
+            "source": "Surplus Funds 101 ([xqXetexqH30 @ 00:03:05])",
+        },
+        {
+            "label": "Luketic's inbound pre-foreclosure lead cost",
+            "metric": "Luketic's inbound pre-foreclosure lead cost",
+            "value": "$25–$40 per lead",
+            "confidence": "attributed_practitioner_claim",
+            "context": "Luketic reports this Facebook acquisition cost for pre-foreclosure leads in a real estate investment operation, using a free guide.",
+            "source": "Caleb Luketic ([oGjbQZW0yuA @ 00:00:00])",
+        },
+    ],
+    "sections": [
+        {
+            "id": "practitioner-consensus",
+            "title": "The Practitioner Consensus",
+            "paragraphs": [
+                (
+                    "A claimant's first question is often why a stranger found money that the claimant never heard about. "
+                    "Israel Miller opens by acknowledging the exact reaction to an unexpected text about a property the recipient no longer owns. "
+                    "Miller explains surplus as the difference between the debt behind an auction and the higher sale price, then explains why notices can miss former owners: "
+                    "the letter goes to the foreclosed residence, or its legal language gets set aside. Miller's offer is research, paperwork, and the claim process on contingency, "
+                    "with nothing charged upfront and a percentage collected only after recovery. Nick Fullmer describes the same basic business: monitor sales, identify an overage, "
+                    "find the former homeowner, and help reunite that person with the funds. Fullmer also points to notices sent to the lost property as a reason owners remain unaware. "
+                    "Richardson's answer to distrust is not a faster pitch. The first call establishes identity, confirms the correct person, and asks for an email address so the claimant "
+                    "can inspect the details independently. The common operating position is specific: explain where the money came from, explain why the message is unexpected, and show "
+                    "what the recovery service actually does before asking the person to trust it. "
+                    "Surplus_Prosperity [MYo3k2Sxj1Q @ 00:01:54]; Nick Fullmer- Overage Syndicate [QDRGMRtpIOs @ 00:04:18]; "
+                    "Money Making Juggernaut [rJjMD-YvK30 @ 00:01:37]."
+                ),
+                (
+                    "Finding a usable number starts with finding the right person, not merely buying a search result. Shawn Bougie describes former owners living in cars, "
+                    "with parents, or on a friend's couch; those moves make current credit-header contact information harder to obtain. Bougie favors IDI Data for claimant phone numbers, "
+                    "addresses, and emails, and Microbilt for possible relatives and associates. David Wilkerson likewise treats accurate data as an operating investment rather than "
+                    "a place to save pennies regardless of results. Wilkerson prepares data in bulk because repeatedly chasing tiny lists, stripping spreadsheet columns, and building "
+                    "a master key interrupts prospecting. Sunday afternoon or another low-contact period is the time Wilkerson assigns to that work. Spencer Vann also connects "
+                    "better data with fewer wasted calls, while framing the purchase around available time and capital. Vann reports hearing of one correct number in fifty or one hundred "
+                    "calls with True People Search, versus one in five, seven, or ten with services such as TLO or IDI Core. Those are Vann's reported experiences from conversations, "
+                    "not a single shared test across the services. Across these approaches, usable contact information includes more than the first phone number: Bougie explicitly "
+                    "values addresses, email, and relatives when the direct route does not reach the claimant. "
+                    "SurplusFundsRiches [ujbTh1In_c4 @ 00:00:41]; Surplus Funds 101 [xqXetexqH30 @ 00:00:57]; "
+                    "Spencer Vann [ZTs6XQ9lr-c @ 00:02:22]."
+                ),
+                (
+                    "Repeated contact is central to both small-list farming and higher-volume calling. David Church starts with ten leads from a list and works them rather than treating "
+                    "the entire list as a single pass. Church reports success in late morning and early afternoon, while saying many successful people Church coaches reach prospects "
+                    "between eight and nine or after five. A morning attempt followed by an evening callback is a specific pattern Church favors. Richardson similarly describes "
+                    "calls, voicemail, texts, and later double-tap follow-up instead of blasting through numbers once. Church keeps unreached names on paper or a Google sheet, "
+                    "recording attempted numbers, and reserves the CRM for people actually contacted. That differs from Richardson's imported-lead dialing workflow, but both keep "
+                    "contact attempts connected to subsequent action. Wilkerson adds that a conversation needs an offer: summarize what was discussed and ask whether paperwork "
+                    "can be sent and whether a notary visit tomorrow or Friday works better. Wilkerson emphasizes contact rate and offer rate over clever one-liners. "
+                    "The overlap is sustained work, not a universal script or identical database setup. Church's pipeline includes old conversations alongside new claims; "
+                    "Richardson's workflow combines channels; Wilkerson's closing habit prevents an otherwise useful conversation from ending without an explicit next step. "
+                    "Surplus Institute / David Church / Unclaimed Funds [gApaLMe_Eec @ 00:03:58]; "
+                    "Money Making Juggernaut [JQrEcneXSbk @ 00:03:24]; Surplus Funds 101 [-A2pNSevACs @ 00:04:35]."
+                ),
+            ],
+            "table": {
+                "caption": "The recurring foundations beneath different outreach styles",
+                "headers": ["Operating foundation", "Practitioner execution and scope", "Expert Source"],
+                "rows": [
+                    [
+                        "Explain why an unexpected message concerns a former property",
+                        "Miller acknowledges suspicion, explains auction surplus, and describes notices going to the residence the former owner has already left.",
+                        "Surplus_Prosperity ([MYo3k2Sxj1Q @ 00:01:54])",
+                    ],
+                    [
+                        "Describe recovery as research and service rather than ownership",
+                        "Fullmer monitors foreclosure and tax sales, finds former owners, helps recover surplus, and charges a commission for that work.",
+                        "Nick Fullmer- Overage Syndicate ([QDRGMRtpIOs @ 00:04:18])",
+                    ],
+                    [
+                        "Make independent verification the first conversation's practical objective",
+                        "Richardson confirms the person and requests an email address before sending records that the claimant can inspect without relying on the pitch.",
+                        "Money Making Juggernaut ([rJjMD-YvK30 @ 00:01:37])",
+                    ],
+                    [
+                        "Protect calling time by preparing contact data in batches",
+                        "Wilkerson moves bulk skip tracing and spreadsheet cleanup into Sunday afternoon or other low-contact periods instead of interrupting peak prospecting.",
+                        "Surplus Funds 101 ([xqXetexqH30 @ 00:01:35])",
+                    ],
+                    [
+                        "Return to unanswered leads at a different daily window",
+                        "Church describes morning calls followed by calls after five, referring back to the earlier message and the specific account or property.",
+                        "Surplus Institute / David Church / Unclaimed Funds ([gApaLMe_Eec @ 00:04:36])",
+                    ],
+                    [
+                        "Close a useful conversation with an explicit next step",
+                        "Wilkerson summarizes the discussion, asks to send paperwork, and offers alternative times for a notary rather than waiting for a clever line.",
+                        "Surplus Funds 101 ([-A2pNSevACs @ 00:04:35])",
+                    ],
+                ],
+            },
+        },
+        {
+            "id": "exact-street-mechanics",
+            "title": "Exact Street Mechanics, Tools & Numbers",
+            "paragraphs": [
+                (
+                    "Bougie's search sequence starts wide: first and last name plus the property address, initially leaving out the middle name and directional components such as northwest "
+                    "or southeast. If the match fails, tighten the search or change the address. The deed may show a mailing address different from the property, particularly when the "
+                    "purchase was an investment or for someone else. The tax assessor's card is another source of a separate notification address. Bougie repeatedly asks for these "
+                    "records because they provide additional reference points for finding the correct owner. Bougie also checks returned mail for 'forwarding order expired'; the return "
+                    "can include the destination address that had previously been used. For live contact through another person, White Pages Premium is Bougie's reverse-address option: "
+                    "a renter still at the property may supply the former owner's contact details. Wilkerson's bulk alternative is Batch Lead Stacker, quoted at about forty dollars "
+                    "monthly and fifteen cents per skip trace. Wilkerson says it does not charge for no-hit files or duplicate leads and remembers identifying details across uploads. "
+                    "The workflows differ in scale, but the actions are concrete: prepare the identifying records, search against more than one address when needed, and retain useful "
+                    "information from failed delivery rather than treating every returned envelope as the end of the search. "
+                    "SurplusFundsRiches [bt6FqwHwtBY @ 00:00:30]; SurplusFundsRiches [ujbTh1In_c4 @ 00:03:29]; "
+                    "Surplus Funds 101 [xqXetexqH30 @ 00:03:05]."
+                ),
+                (
+                    "Richardson budgets two to three hours for a solo operator, describing two hours of calls and one hour of research. Manual dialing produces about fifty calls "
+                    "in the stated daily routine; the software-assisted target is 150–200 leads. Richardson names Batch Dialer and PhoneBurner as alternatives charging roughly "
+                    "one hundred to one hundred thirty dollars monthly per seat, then describes Excess Elite's built-in dialer without an additional seat charge. Leads must be imported "
+                    "in the correct format. The workflow leaves a voicemail when possible and sends a text suited to the recipient: a former owner receives a property-related message, "
+                    "while a relative receives a relationship-confirmation message. Richardson separately reports changing outreach after a DNC lawsuit, filtering DNC-listed contacts, "
+                    "not using voicemail drops or auto dialers, and using a one-number-at-a-time power dialer. These are different descriptions from Richardson, not interchangeable "
+                    "instructions about the same dialing behavior. Church's smaller-list version records attempts before CRM entry, makes callbacks at different times, and uses "
+                    "specific email subjects such as the property address and account information. Church starts involving relatives after two or three unsuccessful attempts, "
+                    "describing a check associated with the property rather than announcing an embarrassing foreclosure to family members. Both practitioners describe follow-up "
+                    "as part of the work, not something left to memory after an unanswered call. "
+                    "Money Making Juggernaut [JQrEcneXSbk @ 00:01:17]; Money Making Juggernaut [Zh5fus4SGzc @ 00:02:21]; "
+                    "Surplus Institute / David Church / Unclaimed Funds [gApaLMe_Eec @ 00:05:30]."
+                ),
+                (
+                    "Richardson's proof package contains county sale results, the state-law reference, the court record, and the business website. The first-call response is straightforward: "
+                    "the claimant need not take a stranger's word for it, nothing is charged upfront, and the records can be reviewed independently. Richardson also says not to ask "
+                    "for Social Security or bank information on that call. For the objection that all the money went to debt, Richardson demonstrates the arithmetic with fifteen thousand "
+                    "dollars in taxes and a fifty-thousand-dollar sale, leaving thirty-five thousand before other possible debts; Richardson says to check liens before calling. "
+                    "For fear of theft, explain the actual payment path through the county, court, or trustee and, in many cases, an attorney escrow account distributing according "
+                    "to the signed agreement. Miller's text-to-video approach also explains the contingency arrangement and then asks for a short form covering state, sale type, "
+                    "and approximate timing. Church opens with the specific account, address, and check rather than small talk, then explains ongoing case follow-up and document "
+                    "handling as the service. Church asks permission to email agreements and arrange a notary. Each practitioner gives the claimant something concrete to evaluate: "
+                    "records, a recognizable account, a stated payment arrangement, or an identifiable next action. "
+                    "Money Making Juggernaut [rJjMD-YvK30 @ 00:02:22]; Surplus_Prosperity [MYo3k2Sxj1Q @ 00:04:08]; "
+                    "Surplus Institute / David Church / Unclaimed Funds [jNXoU7Ep1vY @ 00:03:46]."
+                ),
+            ],
+            "table": {
+                "caption": "Named tools, search inputs, and scripts practitioners actually describe",
+                "headers": ["Specific operating move", "Exact mechanics, numbers, or wording", "Expert Source"],
+                "rows": [
+                    [
+                        "Start the person search broadly before adding restrictive details",
+                        "Bougie begins with first name, last name, and address, omits middle names and directional components initially, then tightens the search if necessary.",
+                        "SurplusFundsRiches ([bt6FqwHwtBY @ 00:00:30])",
+                    ],
+                    [
+                        "Search a different mailing address when property matching fails",
+                        "Bougie checks the owner's deed and tax assessor information for notification addresses different from the foreclosed property's street address.",
+                        "SurplusFundsRiches ([L0EsEWU9jis @ 00:03:29])",
+                    ],
+                    [
+                        "Use different data services for different contact problems",
+                        "Bougie favors IDI Data for claimant details, Microbilt for relatives and associates, and White Pages Premium for reverse-address searching.",
+                        "SurplusFundsRiches ([ujbTh1In_c4 @ 00:01:18]; [ujbTh1In_c4 @ 00:03:29])",
+                    ],
+                    [
+                        "Budget the bulk data subscription separately from individual searches",
+                        "Wilkerson quotes about forty dollars monthly plus fifteen cents per trace and says no-hit files and duplicate leads are not charged.",
+                        "Surplus Funds 101 ([xqXetexqH30 @ 00:03:05])",
+                    ],
+                    [
+                        "Present the fee plainly rather than postponing the discussion",
+                        "Richardson states nothing upfront, usually fifteen to thirty percent depending on the case, and nothing owed if the claim does not recover money.",
+                        "Money Making Juggernaut ([rJjMD-YvK30 @ 00:11:40])",
+                    ],
+                    [
+                        "Answer the attorney objection by offering cooperation and research",
+                        "Richardson offers to share research with the claimant's attorney and work directly together rather than arguing against the claimant's existing relationship.",
+                        "Money Making Juggernaut ([rJjMD-YvK30 @ 00:07:52])",
+                    ],
+                ],
+            },
+            "callout": {
+                "kind": "INSIDER PRO-TIPS",
+                "title": "Small contact details with practical leverage",
+                "body": "These are the specific search and conversation moves the practitioners describe using.",
+                "items": [
+                    "Inspect the bottom of returned envelopes: Bougie says an expired forwarding order can still reveal the address to which mail had been forwarded. [SurplusFundsRiches — bt6FqwHwtBY @ 00:03:12]",
+                    "Keep the claimant's name on mail sent to possible relatives or associates; Bougie asks callers for the name on the mailing to locate the corresponding file. [SurplusFundsRiches — bt6FqwHwtBY @ 00:02:41]",
+                    "Where the county record shows an undeliverable certified notice, Richardson points to the attempted delivery date and address when explaining why the claimant never heard about the money. [Money Making Juggernaut — rJjMD-YvK30 @ 00:04:11]",
+                    "Rehearse the calling script ten times before getting on the phone; Wilkerson emphasizes delivery and engaging conversation rather than hunting for a clever one-liner. [Surplus Funds 101 — -A2pNSevACs @ 00:07:40]",
+                ],
+            },
+            "sop_steps": [
+                {
+                    "step": 1,
+                    "title": "Build the identifying record",
+                    "action": "Gather the property address, deed mailing address, and tax notification address.",
+                    "detail": "Bougie uses the deed and tax assessor information as additional search inputs when a property-address lookup does not locate the owner. [SurplusFundsRiches — L0EsEWU9jis @ 00:03:29] [SurplusFundsRiches — L0EsEWU9jis @ 00:04:44]",
+                },
+                {
+                    "step": 2,
+                    "title": "Prepare the reachable calling list",
+                    "action": "Batch the data work and apply Richardson's DNC filtering workflow.",
+                    "detail": "Wilkerson prepares bulk data during low-contact periods; Richardson describes filtering everyone on the DNC list out of contact after the lawsuit experience. [Surplus Funds 101 — xqXetexqH30 @ 00:01:35] [Money Making Juggernaut — Zh5fus4SGzc @ 00:02:21]",
+                },
+                {
+                    "step": 3,
+                    "title": "Establish identity and send evidence",
+                    "action": "Confirm the person, request an email address, and send the proof package.",
+                    "detail": "Richardson sends sale results, a state-law reference, court records, and the business website, while avoiding Social Security and bank-information requests on the first call. [Money Making Juggernaut — rJjMD-YvK30 @ 00:02:22]",
+                },
+                {
+                    "step": 4,
+                    "title": "Work the next contact deliberately",
+                    "action": "Record attempts, use a different calling window, and make the next-step offer.",
+                    "detail": "Church records unreached contacts on paper or a Google sheet and describes morning/evening callbacks; Wilkerson asks to send paperwork and arrange a notary. Richardson says an explicit stop request goes on the do-not-call list that same day. [Surplus Institute / David Church / Unclaimed Funds — gApaLMe_Eec @ 00:05:30] [Surplus Funds 101 — -A2pNSevACs @ 00:04:35] [Money Making Juggernaut — rJjMD-YvK30 @ 00:13:18]",
+                },
+            ],
+        },
+        {
+            "id": "disagreements-and-alternatives",
+            "title": "Where Practitioners Disagree & Alternative Playbooks",
+            "paragraphs": [
+                (
+                    "The data-buying disagreement is explicit. Bougie says to get a real service and quotes one dollar fifty to six dollars per search even in bulk, depending "
+                    "on depth. Free services and penny searches are precisely what Bougie rejects. Vann does not require every beginner to start at the expensive end. "
+                    "Vann puts True People Search, Fast People Search, and basic White Pages at one end, with TLO and IDI Core toward the other, and asks whether time "
+                    "or money is the limiting resource. A person with more time and less money may start with free searches or lower-priced services such as BeenVerified; "
+                    "someone with less time and more capital may move up. Vann also says access requirements can take weeks and recommends speaking with the provider before "
+                    "creating a business entity, so the required documents are understood. Wilkerson's choice is different again: bulk Batch Lead Stacker data, with no-hit and "
+                    "duplicate exclusions central to the economics. These practitioners are not quoting one universal market price or naming one unanimous winner. Bougie "
+                    "emphasizes deeper claimant research, Vann emphasizes entry-point tradeoffs and onboarding friction, and Wilkerson emphasizes recurring batch preparation "
+                    "and the charges avoided when lists overlap or a search produces no telephone number. "
+                    "SurplusFundsRiches [bt6FqwHwtBY @ 00:00:13]; Spencer Vann [ZTs6XQ9lr-c @ 00:03:51]; "
+                    "Surplus Funds 101 [xqXetexqH30 @ 00:03:24]."
+                ),
+                (
+                    "Objection handling divides between immediate proof, staged resistance handling, and aggressive persistence. Richardson says pressure fails when someone calls the offer "
+                    "a scam; send evidence and give the claimant room to verify it. Wilkerson calls many objections buyer questions in disguise, but treats the first complaint "
+                    "as something to ignore while continuing the presentation. On its second appearance, Wilkerson acknowledges it, answers briefly, then drops and diverts. "
+                    "The third appearance becomes a true objection: repeat it, explain in detail, ask for remaining questions, and tie down the answer before moving on. "
+                    "Church educates first, presents the service, and follows people who say they will claim independently. Church describes asking to check back in three "
+                    "or four weeks, then says the callback still happens even if the person says not to. Richardson draws the opposite line on an explicit stop: stop and "
+                    "put the person on the do-not-call list that day. This is a direct disagreement, not merely a different tone. Church also distinguishes ordinary moved-account "
+                    "owners from people discovering inherited accounts, saying the latter more often use the service. Richardson accepts that people can file themselves in "
+                    "simple cases and argues for the service through paperwork, deadlines, and difficult claims rather than denying that option. "
+                    "Money Making Juggernaut [rJjMD-YvK30 @ 00:13:18]; Surplus Funds 101 [z_Y10SDCdp4 @ 00:03:35]; "
+                    "Surplus Institute / David Church / Unclaimed Funds [jNXoU7Ep1vY @ 00:03:59]."
+                ),
+                (
+                    "Joe Green's alternatives are letters, emails, social media, holiday cards, and local visits. Green handwrites envelopes, uses email subjects that feel conversational, "
+                    "and describes Snow Greeting Cards for personalized-looking cards mailed by the service. Green's Facebook tactic is to connect with a lead's friends and relatives "
+                    "first, so the eventual request appears to come from someone already connected to familiar people. Bougie specifically objects to that friend-of-a-friend method, "
+                    "calling it a business relationship started through deceit. Green's local play is a brief doorstep delivery within about twenty miles: confirm the name, hand "
+                    "over a black envelope, introduce the service, and leave contact details rather than occupying much time. Green favors this more for state funds than tax overages. "
+                    "Caleb Luketic offers a separate pre-foreclosure seller-acquisition workflow: Facebook selfie-style ads offer a state-specific guide of about seventeen pages "
+                    "instead of a cash offer. The form asks whether the homeowner wants to sell and how far behind payments are. Leads enter seller, information-gathering, or "
+                    "MLS-listed tracks. GoHighLevel handles guide delivery and follow-up, with interested sellers handed to acquisitions. Luketic describes follow-up lasting over "
+                    "two years for undecided leads and stopping at close; the reported twenty-five-to-forty-dollar cost belongs to that pre-foreclosure campaign. "
+                    "Unclaimed CEO [WlbnzGtdoSY @ 00:02:21]; SurplusFundsRiches [bt6FqwHwtBY @ 00:03:29]; "
+                    "Caleb Luketic [oGjbQZW0yuA @ 00:04:27]."
+                ),
+            ],
+            "table": {
+                "caption": "Contrasts that change the actual outreach playbook",
+                "headers": ["Choice or disagreement", "Side-by-side practitioner positions and execution", "Expert Source"],
+                "rows": [
+                    [
+                        "Start with inexpensive data or pay for deeper searches",
+                        "Bougie rejects free and penny searches; Vann allows cheaper entry points when money is scarce and time is available.",
+                        "SurplusFundsRiches ([bt6FqwHwtBY @ 00:00:13]); Spencer Vann ([ZTs6XQ9lr-c @ 00:03:24])",
+                    ],
+                    [
+                        "Treat the first complaint immediately or wait for repetition",
+                        "Richardson answers scam fears with proof; Wilkerson ignores the first complaint, briefly addresses the second, and fully handles the third.",
+                        "Money Making Juggernaut ([rJjMD-YvK30 @ 00:01:37]); Surplus Funds 101 ([z_Y10SDCdp4 @ 00:03:35])",
+                    ],
+                    [
+                        "Continue the follow-up despite refusal or honor the stop",
+                        "Church describes calling back even when told not to; Richardson says a clear stop requires same-day placement on the do-not-call list.",
+                        "Surplus Institute / David Church / Unclaimed Funds ([jNXoU7Ep1vY @ 00:04:12]); Money Making Juggernaut ([rJjMD-YvK30 @ 00:13:18])",
+                    ],
+                    [
+                        "Create mutual Facebook connections or reject the appearance tactic",
+                        "Green connects with friends and relatives before requesting the lead; Bougie criticizes that apparent familiarity as starting the relationship with deceit.",
+                        "Unclaimed CEO ([WlbnzGtdoSY @ 00:02:21]); SurplusFundsRiches ([bt6FqwHwtBY @ 00:03:29])",
+                    ],
+                    [
+                        "Replace another cold call with a short local delivery",
+                        "Green describes a roughly twenty-mile local radius, black envelopes from Amazon, identity confirmation, a brief introduction, and departure after delivery.",
+                        "Unclaimed CEO ([WlbnzGtdoSY @ 00:04:39])",
+                    ],
+                    [
+                        "Acquire pre-foreclosure sellers through a helpful guide instead",
+                        "Luketic uses Facebook ads, a state-specific PDF, form questions, three follow-up tracks, and an acquisitions handoff for people who want to sell.",
+                        "Caleb Luketic ([oGjbQZW0yuA @ 00:04:27])",
+                    ],
+                ],
+            },
+        },
+        {
+            "id": "failure-modes-and-economics",
+            "title": "Firsthand Failure Modes, Traps & Economics Checks",
+            "paragraphs": [
+                (
+                    "Richardson's DNC account is a reversal grounded in a lawsuit, not a theoretical warning. Richardson says calls went unscrubbed from the start of the business "
+                    "in 2018 until about September 2024 because the requirement was not understood, and says most skip-tracing providers were not performing a DNC check. "
+                    "The contact concerned an entity owed surplus and its registered agent, whose phone number was publicly available. Richardson believed the business-to-business "
+                    "context supported the contact, yet the other party filed a federal case and brought a class action. Richardson stresses the cost of defending the case "
+                    "regardless of who was right. The forty-thousand-dollar figure is the attorney's described potential cost of fighting through court and depositions, not "
+                    "a reported settlement payment. Richardson reports paying three thousand dollars for specialist training, then describes DNC filtering, no voicemail drops, "
+                    "and one-at-a-time power dialing. Luketic also reports being sued over an offer-check letter sent through ordinary direct mail, before explaining the "
+                    "move toward inbound pre-foreclosure leads. Bougie adds a separate data-handling burden: providers may require annual testing, a verifiable business "
+                    "location, and secure handling of regulated information. Bougie describes destroying regulated material with a cross-cut shredder or a destruction company "
+                    "when disposing of the file, rather than simply discarding it intact. "
+                    "Money Making Juggernaut [Zh5fus4SGzc @ 00:00:29]; Caleb Luketic [oGjbQZW0yuA @ 00:00:25]; "
+                    "SurplusFundsRiches [L0EsEWU9jis @ 00:06:40]."
+                ),
+                (
+                    "A friendly conversation is not the same as returned paperwork. Church describes an older claimant who sounded enthusiastic, requested documents, and then "
+                    "claimed directly. Church had prepared everything before checking the state record and discovering the claim was already made. The experience sits beside "
+                    "Church's stronger follow-up results: a two-hundred-sixty-thousand-dollar stock claim involved at least six or seven conversations, and two previously "
+                    "contacted clients returned paperwork during a week when Church made no new-deal calls. Church's point is that an old pipeline can produce work, while "
+                    "some apparently agreeable prospects still go around the service. Wilkerson supplies a separate comparison from two virtual assistants given the same number "
+                    "of leads. One averaged two weekly deals with no cancellations; the other averaged six or seven with two cancellations. Wilkerson describes the latter "
+                    "as ending with four transactions rather than two and emphasizes the net number remaining. Wilkerson also says excessive cancellations can signal pushiness, "
+                    "while none may mean the list is not being fully worked. Richardson's reported Ashley example adds another timescale: a skeptical claimant required six "
+                    "months of friendly follow-up on a one-hundred-ninety-six-thousand-dollar surplus, producing about fifty-eight-thousand-eight-hundred dollars at a thirty "
+                    "percent fee. The practitioners describe both patient wins and work that never becomes a paid recovery. "
+                    "Surplus Institute / David Church / Unclaimed Funds [jNXoU7Ep1vY @ 00:07:36]; "
+                    "Surplus Funds 101 [-A2pNSevACs @ 00:08:26]; Money Making Juggernaut [rJjMD-YvK30 @ 00:02:50]."
+                ),
+                (
+                    "Access and search quality can consume the time an operator expected to spend talking with claimants. Vann describes TLO's company verification, office "
+                    "or home inspection, and paper-shredder checks as burdensome despite valuing the data. Vann says the onboarding process can take weeks and warns that "
+                    "Fiverr or Upwork sellers may advertise TLO access while actually using True People Search. Vann describes outsourced searching as hit-or-miss, not a "
+                    "dependable shortcut simply because a seller names a premium database. Bougie reports another bottleneck: overseas researchers may lack the U.S. address, "
+                    "company setup, and banking arrangements needed to obtain the services directly, which is why some research for Bougie's operation instead. Even a good "
+                    "database can miss an owner when courthouse information is not refreshed frequently or the owner did not live at the property. Bougie therefore returns "
+                    "to the original deed and separate notification address rather than assuming the first no-hit settles the matter. Wilkerson's financial check is equally "
+                    "specific: recurring duplicate leads and searches without hits affect what the data actually costs, which is why those exclusions matter in the chosen "
+                    "subscription. Wilkerson reports having spent more than thirty thousand dollars on skip tracing and emphasizes consistent usable data, batch preparation, "
+                    "and avoiding repeated charges rather than evaluating a platform only by its monthly membership price. "
+                    "Spencer Vann [ZTs6XQ9lr-c @ 00:04:38]; Spencer Vann [ZTs6XQ9lr-c @ 00:07:53]; "
+                    "SurplusFundsRiches [L0EsEWU9jis @ 00:07:07]; Surplus Funds 101 [xqXetexqH30 @ 00:04:02]."
+                ),
+            ],
+            "table": {
+                "caption": "Failures and operating costs, with the reported scope kept intact",
+                "headers": ["Failure or economics check", "What the practitioner experienced or specifically reported", "Expert Source"],
+                "rows": [
+                    [
+                        "A public business contact still led to expensive litigation",
+                        "Richardson contacted a registered agent, faced a federal case and class action, and describes defense expense despite believing the contact was justified.",
+                        "Money Making Juggernaut ([Zh5fus4SGzc @ 00:01:04])",
+                    ],
+                    [
+                        "The forty-thousand-dollar figure describes possible defense expense only",
+                        "Richardson recounts the attorney's argument that fighting through court could cost more; the figure is not presented as a paid settlement.",
+                        "Money Making Juggernaut ([Zh5fus4SGzc @ 00:02:06])",
+                    ],
+                    [
+                        "Ordinary direct mail did not prevent an outreach lawsuit",
+                        "Luketic says an offer-check letter sent through regular mail triggered a lawsuit before describing the inbound Facebook guide strategy.",
+                        "Caleb Luketic ([oGjbQZW0yuA @ 00:00:25])",
+                    ],
+                    [
+                        "An agreeable prospect can claim without returning your paperwork",
+                        "Church prepared documents after a friendly call, followed up when nothing returned, and discovered the claimant had already claimed directly.",
+                        "Surplus Institute / David Church / Unclaimed Funds ([jNXoU7Ep1vY @ 00:07:36])",
+                    ],
+                    [
+                        "Cancellation counts must be read beside the remaining transactions",
+                        "Wilkerson contrasts a two-deal assistant with another producing six or seven weekly deals and two cancellations, emphasizing the higher remaining result.",
+                        "Surplus Funds 101 ([-A2pNSevACs @ 00:08:26])",
+                    ],
+                    [
+                        "A premium database name does not establish outsourced quality",
+                        "Vann warns that freelancers can advertise TLO access but deliver free-site searches instead, making this outsourced route highly inconsistent.",
+                        "Spencer Vann ([ZTs6XQ9lr-c @ 00:07:53])",
+                    ],
+                ],
+            },
+            "callout": {
+                "kind": "OPERATOR GATE",
+                "title": "Checks drawn from the practitioners' actual traps",
+                "body": "Keep these specific checks attached to list preparation, active conversations, and unfinished claims.",
+                "items": [
+                    "Check the DNC filtering before calling: Richardson says most providers were not checking it and describes excluding listed contacts after the lawsuit. [Money Making Juggernaut — Zh5fus4SGzc @ 00:00:45] [Money Making Juggernaut — Zh5fus4SGzc @ 00:02:21]",
+                    "Record an explicit stop on the do-not-call list that same day; Richardson says not to argue or continue pushing after that request. [Money Making Juggernaut — rJjMD-YvK30 @ 00:13:18]",
+                    "Do not turn the surplus balance into a promised claimant payout without checking other debts: Richardson says second mortgages or liens can take part of the funds and should be checked before calling. [Money Making Juggernaut — rJjMD-YvK30 @ 00:05:13]",
+                    "When promised paperwork does not return, check the claim status: Church discovered a friendly claimant had already filed directly after documents had been prepared. [Surplus Institute / David Church / Unclaimed Funds — jNXoU7Ep1vY @ 00:07:49]",
+                ],
+            },
+        },
+    ],
+    "pull_quote": "“Pressure doesn't work here. Proof does.” — Money Making Juggernaut (rJjMD-YvK30 @ 00:01:37).",
+    "diagram_id": "diag-01",
+    "action_checklist": [
+        "Collect the owner's deed and tax assessor mailing information, then try those addresses when the property-address search fails. [SurplusFundsRiches — bt6FqwHwtBY @ 00:01:19]",
+        "Prepare bulk skip-trace data during Sunday afternoon or another low-contact period so spreadsheet work does not replace peak prospecting. [Surplus Funds 101 — xqXetexqH30 @ 00:01:35]",
+        "Use Richardson's DNC exclusion workflow and put explicit stop requests on the do-not-call list the same day. [Money Making Juggernaut — Zh5fus4SGzc @ 00:02:21] [Money Making Juggernaut — rJjMD-YvK30 @ 00:13:18]",
+        "Confirm the claimant, request an email address, and send sale results, the state-law reference, court records, and the business website. [Money Making Juggernaut — rJjMD-YvK30 @ 00:02:22]",
+        "Record unanswered attempts and try Church's morning-and-after-five pattern; use the address and account details in follow-up messages. [Surplus Institute / David Church / Unclaimed Funds — gApaLMe_Eec @ 00:04:36] [Surplus Institute / David Church / Unclaimed Funds — gApaLMe_Eec @ 00:05:43]",
+        "For Luketic's separate pre-foreclosure inbound play, offer the state-specific guide, ask whether the homeowner wants to sell, and route seller, information-gathering, and MLS-listed leads into their described tracks. [Caleb Luketic — oGjbQZW0yuA @ 00:02:27] [Caleb Luketic — oGjbQZW0yuA @ 00:04:53]",
+    ],
+    "statutory_citations": [
+        {
+            "title": "Money Making Juggernaut — What Nobody Tells You About The Surplus Funds Recovery Business [00:02:21]",
+            "url": "https://www.youtube.com/watch?v=Zh5fus4SGzc&t=141s",
+            "relevance": "Primary practitioner testimony on DNC filtering after Richardson's lawsuit experience.",
+        },
+        {
+            "title": "Money Making Juggernaut — 8 Surplus Funds Objections SCRIPTS You Need To Copy (Cold Calling Leads) [00:02:22]",
+            "url": "https://www.youtube.com/watch?v=rJjMD-YvK30&t=142s",
+            "relevance": "Primary practitioner testimony on the proof package used to answer claimant distrust.",
+        },
+        {
+            "title": "SurplusFundsRiches — Surplus Funds skiptracing: tips, who to use, stay legal! [00:03:29]",
+            "url": "https://www.youtube.com/watch?v=L0EsEWU9jis&t=209s",
+            "relevance": "Primary practitioner testimony on deeds and alternative mailing addresses as skip-trace inputs.",
+        },
+        {
+            "title": "Caleb Luketic — How To Get Cheap Pre-Foreclosure Motivated Seller Leads From Facebook Ads [00:04:27]",
+            "url": "https://www.youtube.com/watch?v=oGjbQZW0yuA&t=267s",
+            "relevance": "Primary practitioner testimony on the inbound guide funnel and distinct pre-foreclosure follow-up tracks.",
+        },
+    ],
+    "source_citations": [
+        {
+            "source_type": "video_pro_tip",
+            "video_id": "Zh5fus4SGzc",
+            "title": "What Nobody Tells You About The Surplus Funds Recovery Business",
+            "channel": "Money Making Juggernaut",
+            "author": "Money Making Juggernaut",
+            "text": "If they're on the DNC list, I'm not contacting them.",
+            "tip": "If they're on the DNC list, I'm not contacting them.",
+            "timestamp": 141,
+            "timestamp_seconds": 141,
+            "timestamp_label": "[00:02:21]",
+            "url": "https://www.youtube.com/watch?v=Zh5fus4SGzc&t=141s",
+            "markdown": "[00:02:21](https://www.youtube.com/watch?v=Zh5fus4SGzc&t=141s)",
+            "epistemic_status": "attributed_practitioner_claim",
+            "relevance": "Verbatim practitioner testimony from Chapter Q7.",
+        },
+        {
+            "source_type": "video_pro_tip",
+            "video_id": "MYo3k2Sxj1Q",
+            "title": "What Are Surplus Funds? How to Claim Money Owed to You After Foreclosure or Tax Sale",
+            "channel": "Surplus_Prosperity",
+            "author": "Surplus_Prosperity",
+            "text": "If we don't recover anything, you owe us nothing.",
+            "tip": "If we don't recover anything, you owe us nothing.",
+            "timestamp": 165,
+            "timestamp_seconds": 165,
+            "timestamp_label": "[00:02:45]",
+            "url": "https://www.youtube.com/watch?v=MYo3k2Sxj1Q&t=165s",
+            "markdown": "[00:02:45](https://www.youtube.com/watch?v=MYo3k2Sxj1Q&t=165s)",
+            "epistemic_status": "attributed_practitioner_claim",
+            "relevance": "Verbatim practitioner testimony from Chapter Q7.",
+        },
+        {
+            "source_type": "video_pro_tip",
+            "video_id": "JQrEcneXSbk",
+            "title": "How I Call 200 SURPLUS Funds LEADS In 2 HOURS! (Unclaimed Funds Cold Calling)",
+            "channel": "Money Making Juggernaut",
+            "author": "Money Making Juggernaut",
+            "text": "Call 150 to 200 leads per day just by effectively using the auto dialer.",
+            "tip": "Call 150 to 200 leads per day just by effectively using the auto dialer.",
+            "timestamp": 204,
+            "timestamp_seconds": 204,
+            "timestamp_label": "[00:03:24]",
+            "url": "https://www.youtube.com/watch?v=JQrEcneXSbk&t=204s",
+            "markdown": "[00:03:24](https://www.youtube.com/watch?v=JQrEcneXSbk&t=204s)",
+            "epistemic_status": "attributed_practitioner_claim",
+            "relevance": "Verbatim practitioner testimony from Chapter Q7.",
+        },
+        {
+            "source_type": "video_pro_tip",
+            "video_id": "gApaLMe_Eec",
+            "title": "How to Nail Cold Calling: 3 Killer Bonus Tips to Reach Your Leads | Surplus Funds Cold Calling 2024",
+            "channel": "Surplus Institute / David Church / Unclaimed Funds",
+            "author": "Surplus Institute / David Church / Unclaimed Funds",
+            "text": "I don't put them in my CRM if I don't make contact.",
+            "tip": "I don't put them in my CRM if I don't make contact.",
+            "timestamp": 317,
+            "timestamp_seconds": 317,
+            "timestamp_label": "[00:05:17]",
+            "url": "https://www.youtube.com/watch?v=gApaLMe_Eec&t=317s",
+            "markdown": "[00:05:17](https://www.youtube.com/watch?v=gApaLMe_Eec&t=317s)",
+            "epistemic_status": "attributed_practitioner_claim",
+            "relevance": "Verbatim practitioner testimony from Chapter Q7.",
+        },
+        {
+            "source_type": "video_pro_tip",
+            "video_id": "jNXoU7Ep1vY",
+            "title": "Mastering Objection Handling: Proven Scripts for Overcoming Sales Challenges. #surplus_funds",
+            "channel": "Surplus Institute / David Church / Unclaimed Funds",
+            "author": "Surplus Institute / David Church / Unclaimed Funds",
+            "text": "You don't ever want to fabricate a false story. What you want to do is you want to stick to true data.",
+            "tip": "You don't ever want to fabricate a false story. What you want to do is you want to stick to true data.",
+            "timestamp": 187,
+            "timestamp_seconds": 187,
+            "timestamp_label": "[00:03:07]",
+            "url": "https://www.youtube.com/watch?v=jNXoU7Ep1vY&t=187s",
+            "markdown": "[00:03:07](https://www.youtube.com/watch?v=jNXoU7Ep1vY&t=187s)",
+            "epistemic_status": "attributed_practitioner_claim",
+            "relevance": "Verbatim practitioner testimony from Chapter Q7.",
+        },
+        {
+            "source_type": "video_pro_tip",
+            "video_id": "z_Y10SDCdp4",
+            "title": "Handling objections & complaints in your Surplus Business. state funds",
+            "channel": "Surplus Funds 101",
+            "author": "Surplus Funds 101",
+            "text": "Objections are usually buyer questions in disguise.",
+            "tip": "Objections are usually buyer questions in disguise.",
+            "timestamp": 102,
+            "timestamp_seconds": 102,
+            "timestamp_label": "[00:01:42]",
+            "url": "https://www.youtube.com/watch?v=z_Y10SDCdp4&t=102s",
+            "markdown": "[00:01:42](https://www.youtube.com/watch?v=z_Y10SDCdp4&t=102s)",
+            "epistemic_status": "attributed_practitioner_claim",
+            "relevance": "Verbatim practitioner testimony from Chapter Q7.",
+        },
+        {
+            "source_type": "video_pro_tip",
+            "video_id": "QDRGMRtpIOs",
+            "title": "Tax Sale Overages & Surplus Funds Is A Scam!",
+            "channel": "Nick Fullmer- Overage Syndicate",
+            "author": "Nick Fullmer- Overage Syndicate",
+            "text": "You find the former homeowner, reunite them with their funds, and you receive a commission for your work.",
+            "tip": "You find the former homeowner, reunite them with their funds, and you receive a commission for your work.",
+            "timestamp": 258,
+            "timestamp_seconds": 258,
+            "timestamp_label": "[00:04:18]",
+            "url": "https://www.youtube.com/watch?v=QDRGMRtpIOs&t=258s",
+            "markdown": "[00:04:18](https://www.youtube.com/watch?v=QDRGMRtpIOs&t=258s)",
+            "epistemic_status": "attributed_practitioner_claim",
+            "relevance": "Verbatim practitioner testimony from Chapter Q7.",
+        },
+        {
+            "source_type": "video_pro_tip",
+            "video_id": "rJjMD-YvK30",
+            "title": "8 Surplus Funds Objections SCRIPTS You Need To Copy (Cold Calling Leads)",
+            "channel": "Money Making Juggernaut",
+            "author": "Money Making Juggernaut",
+            "text": "Pressure doesn't work here. Proof does.",
+            "tip": "Pressure doesn't work here. Proof does.",
+            "timestamp": 97,
+            "timestamp_seconds": 97,
+            "timestamp_label": "[00:01:37]",
+            "url": "https://www.youtube.com/watch?v=rJjMD-YvK30&t=97s",
+            "markdown": "[00:01:37](https://www.youtube.com/watch?v=rJjMD-YvK30&t=97s)",
+            "epistemic_status": "attributed_practitioner_claim",
+            "relevance": "Verbatim practitioner testimony from Chapter Q7.",
+        },
+        {
+            "source_type": "video_pro_tip",
+            "video_id": "-A2pNSevACs",
+            "title": "Surplus Funds Cold Calling: What Making 400 Cold Calls A Day Has Taught Me About Closing Deals.",
+            "channel": "Surplus Funds 101",
+            "author": "Surplus Funds 101",
+            "text": "Read the script 10 times every day before you get on the phone.",
+            "tip": "Read the script 10 times every day before you get on the phone.",
+            "timestamp": 460,
+            "timestamp_seconds": 460,
+            "timestamp_label": "[00:07:40]",
+            "url": "https://www.youtube.com/watch?v=-A2pNSevACs&t=460s",
+            "markdown": "[00:07:40](https://www.youtube.com/watch?v=-A2pNSevACs&t=460s)",
+            "epistemic_status": "attributed_practitioner_claim",
+            "relevance": "Verbatim practitioner testimony from Chapter Q7.",
+        },
+        {
+            "source_type": "video_pro_tip",
+            "video_id": "ujbTh1In_c4",
+            "title": "Surplus Funds - skip tracing claimants",
+            "channel": "SurplusFundsRiches",
+            "author": "SurplusFundsRiches",
+            "text": "It really, I would say, probably increases our hit rate by anywhere from 40 to 50 percent.",
+            "tip": "It really, I would say, probably increases our hit rate by anywhere from 40 to 50 percent.",
+            "timestamp": 190,
+            "timestamp_seconds": 190,
+            "timestamp_label": "[00:03:10]",
+            "url": "https://www.youtube.com/watch?v=ujbTh1In_c4&t=190s",
+            "markdown": "[00:03:10](https://www.youtube.com/watch?v=ujbTh1In_c4&t=190s)",
+            "epistemic_status": "attributed_practitioner_claim",
+            "relevance": "Verbatim practitioner testimony from Chapter Q7.",
+        },
+        {
+            "source_type": "video_pro_tip",
+            "video_id": "xqXetexqH30",
+            "title": "State Funds Business: Best Websites For Skip Tracing Claimant Information",
+            "channel": "Surplus Funds 101",
+            "author": "Surplus Funds 101",
+            "text": "You're never going to pay for a duplicate lead.",
+            "tip": "You're never going to pay for a duplicate lead.",
+            "timestamp": 242,
+            "timestamp_seconds": 242,
+            "timestamp_label": "[00:04:02]",
+            "url": "https://www.youtube.com/watch?v=xqXetexqH30&t=242s",
+            "markdown": "[00:04:02](https://www.youtube.com/watch?v=xqXetexqH30&t=242s)",
+            "epistemic_status": "attributed_practitioner_claim",
+            "relevance": "Verbatim practitioner testimony from Chapter Q7.",
+        },
+        {
+            "source_type": "video_pro_tip",
+            "video_id": "bt6FqwHwtBY",
+            "title": "Surplus Funds - skip tracing!",
+            "channel": "SurplusFundsRiches",
+            "author": "SurplusFundsRiches",
+            "text": "Don't put in the middle name at first. Start with the first and last name.",
+            "tip": "Don't put in the middle name at first. Start with the first and last name.",
+            "timestamp": 30,
+            "timestamp_seconds": 30,
+            "timestamp_label": "[00:00:30]",
+            "url": "https://www.youtube.com/watch?v=bt6FqwHwtBY&t=30s",
+            "markdown": "[00:00:30](https://www.youtube.com/watch?v=bt6FqwHwtBY&t=30s)",
+            "epistemic_status": "attributed_practitioner_claim",
+            "relevance": "Verbatim practitioner testimony from Chapter Q7.",
+        },
+        {
+            "source_type": "video_pro_tip",
+            "video_id": "L0EsEWU9jis",
+            "title": "Surplus Funds skiptracing: tips, who to use, stay legal!",
+            "channel": "SurplusFundsRiches",
+            "author": "SurplusFundsRiches",
+            "text": "The deed will oftentimes reference who the buyer is and a mailing address for them.",
+            "tip": "The deed will oftentimes reference who the buyer is and a mailing address for them.",
+            "timestamp": 209,
+            "timestamp_seconds": 209,
+            "timestamp_label": "[00:03:29]",
+            "url": "https://www.youtube.com/watch?v=L0EsEWU9jis&t=209s",
+            "markdown": "[00:03:29](https://www.youtube.com/watch?v=L0EsEWU9jis&t=209s)",
+            "epistemic_status": "attributed_practitioner_claim",
+            "relevance": "Verbatim practitioner testimony from Chapter Q7.",
+        },
+        {
+            "source_type": "video_pro_tip",
+            "video_id": "ZTs6XQ9lr-c",
+            "title": "Surplus Fund Skip Trace Sites (Best and Worst)",
+            "channel": "Spencer Vann",
+            "author": "Spencer Vann",
+            "text": "Where you want to start with skip tracing really depends on where you're at in your journey of entrepreneurship, whether you have more available capital or you have more available time to put into it.",
+            "tip": "Where you want to start with skip tracing really depends on where you're at in your journey of entrepreneurship, whether you have more available capital or you have more available time to put into it.",
+            "timestamp": 112,
+            "timestamp_seconds": 112,
+            "timestamp_label": "[00:01:52]",
+            "url": "https://www.youtube.com/watch?v=ZTs6XQ9lr-c&t=112s",
+            "markdown": "[00:01:52](https://www.youtube.com/watch?v=ZTs6XQ9lr-c&t=112s)",
+            "epistemic_status": "attributed_practitioner_claim",
+            "relevance": "Verbatim practitioner testimony from Chapter Q7.",
+        },
+        {
+            "source_type": "video_pro_tip",
+            "video_id": "WlbnzGtdoSY",
+            "title": "5 Things To Do Instead Of Cold Calling | Tax Surplus | Unclaimed Funds",
+            "channel": "Unclaimed CEO",
+            "author": "Unclaimed CEO",
+            "text": "Send holiday greeting cards and make sure that greeting card has a call to action.",
+            "tip": "Send holiday greeting cards and make sure that greeting card has a call to action.",
+            "timestamp": 207,
+            "timestamp_seconds": 207,
+            "timestamp_label": "[00:03:27]",
+            "url": "https://www.youtube.com/watch?v=WlbnzGtdoSY&t=207s",
+            "markdown": "[00:03:27](https://www.youtube.com/watch?v=WlbnzGtdoSY&t=207s)",
+            "epistemic_status": "attributed_practitioner_claim",
+            "relevance": "Verbatim practitioner testimony from Chapter Q7.",
+        },
+        {
+            "source_type": "video_pro_tip",
+            "video_id": "oGjbQZW0yuA",
+            "title": "How To Get Cheap Pre-Foreclosure Motivated Seller Leads From Facebook Ads",
+            "channel": "Caleb Luketic",
+            "author": "Caleb Luketic",
+            "text": "I'm generating pre-foreclosure leads from Facebook ads for between 25 and 40 dollars a pop.",
+            "tip": "I'm generating pre-foreclosure leads from Facebook ads for between 25 and 40 dollars a pop.",
+            "timestamp": 0,
+            "timestamp_seconds": 0,
+            "timestamp_label": "[00:00:00]",
+            "url": "https://www.youtube.com/watch?v=oGjbQZW0yuA&t=0s",
+            "markdown": "[00:00:00](https://www.youtube.com/watch?v=oGjbQZW0yuA&t=0s)",
+            "epistemic_status": "attributed_practitioner_claim",
+            "relevance": "Verbatim practitioner testimony from Chapter Q7.",
+        },
+    ],
+}

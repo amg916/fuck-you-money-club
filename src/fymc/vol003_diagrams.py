@@ -1,0 +1,722 @@
+__all__ = [
+    "VOLUME_003_SUBTITLE",
+    "build_volume_003_diagrams_data",
+    "VOLUME_003_POSITIONING_ALTERNATIVES",
+]
+
+VOLUME_003_SUBTITLE: str = (
+    "Solve One Buyer Problem, Build AI-Assisted Products, and Sell Through "
+    "Templates, Offer Stacks, Newsletters, Communities, and Faceless Content"
+)
+
+
+def build_volume_003_diagrams_data() -> list[dict]:
+    return [
+        {
+            "diagram_id": "diag-01-buyer-to-supported-product",
+            "chapter_number": 1,
+            "title": "Choose the Buyer Before the File Format",
+            "subtitle": (
+                "Research the problem, create a useful product, connect the "
+                "offer, and make delivery understandable."
+            ),
+            "caption": (
+                "Victor Jaro emphasizes buyer research; Baddie In Business "
+                "demonstrates Canva production; Rochelle Be connects a free "
+                "win to a paid offer; Richard Yu simplifies sales links; "
+                "Tatyana Savage supplies access instructions."
+            ),
+            "assumptions_note": (
+                "These practitioners describe complementary practices, not "
+                "a jointly operated business or a guaranteed sales sequence."
+            ),
+            "note": (
+                "Jaro reports no sales from their first student-and-teacher "
+                "templates. Savage describes instructions in listing images "
+                "and delivered files as a way to reduce customer questions."
+            ),
+            "chart_type": "process_flow",
+            "stages": [
+                {
+                    "step": "01",
+                    "label": "Research the buyer",
+                    "value": "Step 1",
+                    "detail": (
+                        "Victor Jaro researches the buyer and topic before "
+                        "investing hours in a paid Notion template."
+                    ),
+                },
+                {
+                    "step": "02",
+                    "label": "Build the useful product",
+                    "value": "Step 2",
+                    "detail": (
+                        "Baddie In Business duplicates a working Canva page "
+                        "layout and exports the ebook as PDF standard."
+                    ),
+                },
+                {
+                    "step": "03",
+                    "label": "Connect a small win",
+                    "value": "Step 3",
+                    "detail": (
+                        "Rochelle Be makes the freebie goal-specific and "
+                        "outcome-focused, with a direct connection to the "
+                        "paid product."
+                    ),
+                },
+                {
+                    "step": "04",
+                    "label": "Simplify the purchase path",
+                    "value": "Step 4",
+                    "detail": (
+                        "Richard Yu links a single product directly to its "
+                        "sales page and recommends at most three intermediate "
+                        "links when several offers are available."
+                    ),
+                },
+                {
+                    "step": "05",
+                    "label": "Explain access and usage",
+                    "value": "Step 5",
+                    "detail": (
+                        "Tatyana Savage puts download instructions and FAQs "
+                        "in listing images and usage instructions inside "
+                        "the delivered files."
+                    ),
+                },
+            ],
+        },
+        {
+            "diagram_id": "diag-02-related-offer-price-path",
+            "chapter_number": 6,
+            "title": "From a $7 Entry Product to a $57 Bundle",
+            "subtitle": (
+                "Related products expand the order; delivery must match "
+                "what the buyer actually purchases."
+            ),
+            "caption": (
+                "Maik Kleinert | Content-to-Conversion Systems describes "
+                "a $7 entry product, a mini course reduced to $20, and "
+                "another product reduced to $30, producing a $57 order."
+            ),
+            "assumptions_note": (
+                "Maik Kleinert's amounts are product prices and the reported "
+                "combined order, not audience counts or conversion rates. "
+                "The first three amounts are individual line items, not "
+                "running subtotals. The final amount repeats at delivery."
+            ),
+            "note": (
+                "Maik Kleinert checks whether a promotional DM was already "
+                "sent and whether the person already purchased. Funnel "
+                "Building Secrets recommends placing a test order through "
+                "checkout and the additional offers."
+            ),
+            "chart_type": "funnel",
+            "stages": [
+                {
+                    "label": "Entry product",
+                    "value": 7,
+                    "display": "$7",
+                    "conversion": "Buyer conversion not reported",
+                    "detail": (
+                        "Maik Kleinert identifies the entry product as the "
+                        "starting offer in the DM-connected product bundle."
+                    ),
+                },
+                {
+                    "label": "Mini-course addition",
+                    "value": 20,
+                    "display": "$20 add-on",
+                    "conversion": "Optional purchase; acceptance not reported",
+                    "detail": (
+                        "Maik Kleinert describes reducing the mini course "
+                        "from $27 to $20."
+                    ),
+                },
+                {
+                    "label": "Related product addition",
+                    "value": 30,
+                    "display": "$30 add-on",
+                    "conversion": "Optional purchase; acceptance not reported",
+                    "detail": (
+                        "Maik Kleinert describes reducing the other product "
+                        "from $47 to $30."
+                    ),
+                },
+                {
+                    "label": "Combined order",
+                    "value": 57,
+                    "display": "$57",
+                    "conversion": "Applies when all three products are bought",
+                    "detail": (
+                        "Maik Kleinert reports that the combined purchase "
+                        "is $57 rather than the $7 entry purchase alone."
+                    ),
+                },
+                {
+                    "label": "Purchased-product delivery",
+                    "value": 57,
+                    "display": "$57 order, unchanged",
+                    "conversion": "Delivery checkpoint, not another charge",
+                    "detail": (
+                        "Keep access tied to the purchased products. "
+                        "Funnel Building Secrets calls for a test order "
+                        "to confirm the purchase path works."
+                    ),
+                },
+            ],
+        },
+        {
+            "diagram_id": "diag-03-template-checkout-money-checkpoints",
+            "chapter_number": 3,
+            "title": "Separate Sale Price, Proceeds, and Commission",
+            "subtitle": (
+                "Reported checkout examples clarify what a template seller "
+                "can compare without treating commission as the full cost."
+            ),
+            "caption": (
+                "Stack Receipts reports a $20 domestic-card sale leaving "
+                "$18.50 through Lemon Squeezy or $18.12 through Payhip Free "
+                "after Stripe. Smart Capital reports a $2.90 Gumroad "
+                "commission on a $29 template before processing."
+            ),
+            "assumptions_note": (
+                "Each total starts an independent checkout example. Stack "
+                "Receipts supplies the proceeds directly; no intermediate "
+                "fee amounts are estimated. Smart Capital's final deduction "
+                "is commission only, and no Gumroad net payout is asserted."
+            ),
+            "note": (
+                "These Stack Receipts and Smart Capital storefront examples "
+                "apply to template checkout planning. Job4all separately "
+                "reports Notion Marketplace charges of 8% plus $0.40; those "
+                "charges must not be applied to these other platforms."
+            ),
+            "chart_type": "waterfall",
+            "bars": [
+                {
+                    "label": "Lemon Squeezy sale",
+                    "value": 20,
+                    "display": "$20",
+                    "kind": "total",
+                },
+                {
+                    "label": "Lemon Squeezy proceeds",
+                    "value": 18.50,
+                    "display": "$18.50",
+                    "kind": "result",
+                },
+                {
+                    "label": "Payhip Free sale",
+                    "value": 20,
+                    "display": "$20",
+                    "kind": "total",
+                },
+                {
+                    "label": "Payhip proceeds after Stripe",
+                    "value": 18.12,
+                    "display": "$18.12",
+                    "kind": "result",
+                },
+                {
+                    "label": "Gumroad template sale",
+                    "value": 29,
+                    "display": "$29",
+                    "kind": "total",
+                },
+                {
+                    "label": "Gumroad commission only",
+                    "value": 2.90,
+                    "display": "$2.90 deducted before processing",
+                    "kind": "deduction",
+                },
+            ],
+        },
+        {
+            "diagram_id": "diag-04-ai-product-price-reference-points",
+            "chapter_number": 2,
+            "title": "Price the Specific Result",
+            "subtitle": (
+                "Beginner downloads, edited PDFs, and a resource-app bundle "
+                "carry different practitioner price recommendations."
+            ),
+            "caption": (
+                "Baddie In Business suggests $9–$27 beginner downloads. "
+                "Richard Yu recommends $27–$47 for an edited, pain-specific "
+                "PDF. Nathan Nazareth demonstrates a $39 one-time guide, "
+                "member area, and AI resource-app offer."
+            ),
+            "assumptions_note": (
+                "Baddie In Business and Richard Yu provide range endpoints, "
+                "not observed price distributions. Each endpoint is shown "
+                "separately with identical minimum, maximum, and reference "
+                "values; none is asserted to be a statistical typical price."
+            ),
+            "note": (
+                "Nathan Nazareth puts the offer before the product and "
+                "recommends testing the published app through a real "
+                "credit-card purchase after functional cleanup."
+            ),
+            "chart_type": "horizontal_bars",
+            "unit": "USD per offer; fixed reference points",
+            "bars": [
+                {
+                    "label": "Baddie beginner lower endpoint",
+                    "min": 9,
+                    "max": 9,
+                    "typical": 9,
+                    "display": "$9, lower end of $9–$27",
+                },
+                {
+                    "label": "Baddie beginner upper endpoint",
+                    "min": 27,
+                    "max": 27,
+                    "typical": 27,
+                    "display": "$27, upper end of $9–$27",
+                },
+                {
+                    "label": "Richard Yu PDF lower endpoint",
+                    "min": 27,
+                    "max": 27,
+                    "typical": 27,
+                    "display": "$27, lower end of $27–$47",
+                },
+                {
+                    "label": "Richard Yu PDF upper endpoint",
+                    "min": 47,
+                    "max": 47,
+                    "typical": 47,
+                    "display": "$47, upper end of $27–$47",
+                },
+                {
+                    "label": "Nathan Nazareth resource-app bundle",
+                    "min": 39,
+                    "max": 39,
+                    "typical": 39,
+                    "display": "$39 one-time",
+                },
+            ],
+        },
+        {
+            "diagram_id": "diag-05-payment-provider-readiness-gates",
+            "chapter_number": 5,
+            "title": "Choose the Payment Route Before Migrating",
+            "subtitle": (
+                "Check eligibility, tax responsibility, product operations, "
+                "and payout timing before relying on a replacement checkout."
+            ),
+            "caption": (
+                "Gaurav Tiwari prioritizes seller eligibility and license "
+                "keys; SoloBuild compares tax administration and payout "
+                "terms; OCH Platform distinguishes Stripe Tax activation "
+                "from a Stripe connection; heyymilian identifies missing "
+                "product-delivery functions."
+            ),
+            "assumptions_note": (
+                "These are Gaurav Tiwari, SoloBuild, OCH Platform, and "
+                "heyymilian's reported checks. Eligibility, coverage, and "
+                "pricing depend on the provider and product configuration; "
+                "a payment connection alone does not establish tax handling."
+            ),
+            "note": (
+                "Gaurav Tiwari recommends retaining control of the customer "
+                "list, license server, and checkout links. SoloBuild reports "
+                "a $100 Paddle payout minimum and monthly payment by "
+                "the fifteenth."
+            ),
+            "chart_type": "decision_tree",
+            "nodes": [
+                {
+                    "gate": "G1",
+                    "question": (
+                        "Does the destination accept the seller location "
+                        "and intended product?"
+                    ),
+                    "pass_next": "G2",
+                    "fail_action": (
+                        "Choose an eligible destination before migrating. "
+                        "Gaurav Tiwari reports that their India-based plugin "
+                        "business is excluded from the Managed Payments "
+                        "path they discuss."
+                    ),
+                },
+                {
+                    "gate": "G2",
+                    "question": (
+                        "Are tax responsibility, coverage, and the "
+                        "administrative trade-off understood?"
+                    ),
+                    "pass_next": "G3",
+                    "fail_action": (
+                        "Compare filing time and accountant costs with "
+                        "the handoff premium as SoloBuild recommends. "
+                        "For the Stripe Tax route, follow OCH Platform's "
+                        "separate dashboard and integration activation."
+                    ),
+                },
+                {
+                    "gate": "G3",
+                    "question": (
+                        "Are delivery, license keys, download links, "
+                        "storefront functions, and affiliates accounted for?"
+                    ),
+                    "pass_next": "G4",
+                    "fail_action": (
+                        "Arrange the missing functions before switching. "
+                        "heyymilian says Managed Payments does not include "
+                        "these Lemon Squeezy functions; Gaurav Tiwari puts "
+                        "existing license keys ahead of promotional fees."
+                    ),
+                },
+                {
+                    "gate": "G4",
+                    "question": (
+                        "Do payout timing and minimum balances fit "
+                        "the business?"
+                    ),
+                    "pass_next": (
+                        "Proceed with the eligible route and the "
+                        "accounted-for delivery and licensing arrangements."
+                    ),
+                    "fail_action": (
+                        "Reconsider the provider or cash timing before "
+                        "depending on payouts. SoloBuild reports Paddle's "
+                        "monthly schedule and $100 minimum."
+                    ),
+                },
+            ],
+        },
+        {
+            "diagram_id": "diag-06-expertise-newsletter-operating-functions",
+            "chapter_number": 11,
+            "title": "Build the Newsletter Around a Reader Problem",
+            "subtitle": (
+                "Connect positioning, repeatable publishing, suitable "
+                "advertising, and outcome-led offers."
+            ),
+            "caption": (
+                "Nicolas Cole emphasizes positioning and discovery; "
+                "beehiiv demonstrates repeatable production and advertising "
+                "operations; Write • Build • Scale develops reader "
+                "conversations; Matt McGarry connects cohort assignments "
+                "to promised outcomes."
+            ),
+            "assumptions_note": (
+                "Nicolas Cole, beehiiv, Write • Build • Scale, and Matt "
+                "McGarry describe operating practices, not a shared "
+                "staffing structure. The functions do not imply separate "
+                "employees, and publisher headcount is not specified."
+            ),
+            "note": (
+                "beehiiv reports up to five claimed advertising offers "
+                "at once and five days to publish. Stack Receipts advises "
+                "comparing advertising earnings with the plan bill at "
+                "the same list size and billing cadence."
+            ),
+            "chart_type": "org_architecture",
+            "center": {
+                "role": "Expertise-led newsletter publisher",
+                "headcount": "Not specified",
+                "focus": (
+                    "Serve a specific reader problem with a repeatable "
+                    "publication and relevant paid outcomes, following "
+                    "Nicolas Cole and Write • Build • Scale."
+                ),
+            },
+            "spokes": [
+                {
+                    "role": "Positioning and discovery",
+                    "type": "Audience-development function",
+                    "kpi": (
+                        "Reader acquisition by source; Nicolas Cole reports "
+                        "over 50% of Write With AI's acquisition came from "
+                        "inside Substack's ecosystem."
+                    ),
+                },
+                {
+                    "role": "Repeatable issue production",
+                    "type": "Editorial function",
+                    "kpi": (
+                        "A repeatable issue format and publishing routine; "
+                        "beehiiv's Dope Act example saves the drafting "
+                        "process as a Claude skill."
+                    ),
+                },
+                {
+                    "role": "Advertising operations",
+                    "type": "Placement and reporting function",
+                    "kpi": (
+                        "Suitable placements within beehiiv's reported "
+                        "five-day claim window; reject unsuitable offers "
+                        "with a reason."
+                    ),
+                },
+                {
+                    "role": "Reader outcomes and paid offers",
+                    "type": "Product and learning function",
+                    "kpi": (
+                        "Assignments sufficient for the promised outcome, "
+                        "as Matt McGarry requires; use reader conversations "
+                        "about goals and obstacles as Write • Build • Scale "
+                        "recommends."
+                    ),
+                },
+            ],
+        },
+        {
+            "diagram_id": "diag-07-storefront-base-rate-comparison",
+            "chapter_number": 4,
+            "title": "Compare Base Rates Without Hiding Other Charges",
+            "subtitle": (
+                "Percentage charges are only one part of the storefront "
+                "decision."
+            ),
+            "caption": (
+                "Smart Capital reports 10% Gumroad commission and 5% on "
+                "Payhip Free. Stack Receipts uses 5% plus $0.50 for Lemon "
+                "Squeezy. Job4all reports 8% plus $0.40 for Notion Marketplace."
+            ),
+            "assumptions_note": (
+                "Smart Capital, Stack Receipts, and Job4all describe separate "
+                "platform alternatives. The percentages are not additive, "
+                "the low and high values repeat each quoted base rate, and "
+                "fixed charges and processing are not converted into "
+                "invented effective-rate estimates."
+            ),
+            "note": (
+                "Smart Capital explicitly separates commission from "
+                "processing. Stack Receipts specifies a domestic-card "
+                "example. Job4all also mentions foreign exchange and "
+                "possible refund or chargeback costs. These reported "
+                "schedules are not promises of current platform terms."
+            ),
+            "chart_type": "stacked_comparison",
+            "unit": "Percent of sale; independent platform alternatives",
+            "total_range": (
+                "Quoted base percentage rates span 5%–10%; do not sum "
+                "the alternatives"
+            ),
+            "buckets": [
+                {
+                    "label": "Gumroad commission",
+                    "low": 10,
+                    "high": 10,
+                    "notes": (
+                        "Smart Capital reports 10%, equivalent to $2.90 "
+                        "on its $29 template example, before processing."
+                    ),
+                },
+                {
+                    "label": "Payhip Free platform charge",
+                    "low": 5,
+                    "high": 5,
+                    "notes": (
+                        "Smart Capital reports 5%, equivalent to $1.45 "
+                        "on its $29 example, before processing."
+                    ),
+                },
+                {
+                    "label": "Lemon Squeezy base percentage",
+                    "low": 5,
+                    "high": 5,
+                    "notes": (
+                        "Stack Receipts applies 5% plus $0.50 to its "
+                        "$20 domestic-card example and reports $18.50 "
+                        "in proceeds."
+                    ),
+                },
+                {
+                    "label": "Notion Marketplace percentage",
+                    "low": 8,
+                    "high": 8,
+                    "notes": (
+                        "Job4all reports 8% plus $0.40 per transaction, "
+                        "with foreign-exchange and possible refund or "
+                        "chargeback costs discussed separately."
+                    ),
+                },
+            ],
+        },
+        {
+            "diagram_id": "diag-08-faceless-content-purchase-readiness",
+            "chapter_number": 12,
+            "title": "Connect Faceless Content to a Working Purchase Path",
+            "subtitle": (
+                "Choose the buyer problem, demonstrate the product, "
+                "connect checkout, and distinguish attention from sales."
+            ),
+            "caption": (
+                "Nick Nyxson and Nataleh Nicole connect useful content to "
+                "relevant offers; Success With Sam demonstrates screen "
+                "recordings; Rochelle Be checks generated video; Brem "
+                "tests checkout links; DIGITAL INCOME PROJECT separates "
+                "audience growth from monetization."
+            ),
+            "assumptions_note": (
+                "The weekly slots organize these practitioners' actions "
+                "without imposing production quotas. Nick Nyxson, Nataleh "
+                "Nicole, Success With Sam, Rochelle Be, and Brem do not "
+                "establish a shared four-week completion or revenue promise."
+            ),
+            "note": (
+                "DIGITAL INCOME PROJECT reports 10,000 followers and over "
+                "500,000 views in 30 days while stating that monetization "
+                "is still being tested. Richard Yu warns that affiliate "
+                "refunds can remove commissions."
+            ),
+            "chart_type": "timeline_roadmap",
+            "weeks": [
+                {
+                    "week": "Week 1",
+                    "title": "Choose the problem and relevant offer",
+                    "deliverable": (
+                        "A buyer problem and an offer that useful content "
+                        "can demonstrate, following Nick Nyxson and "
+                        "Nataleh Nicole."
+                    ),
+                    "gate": (
+                        "For affiliate offers, read buyer feedback and "
+                        "try the product where possible, as Richard Yu "
+                        "recommends before risking audience trust."
+                    ),
+                },
+                {
+                    "week": "Week 2",
+                    "title": "Produce and inspect the demonstration",
+                    "deliverable": (
+                        "A screen-recorded product demonstration in the "
+                        "style shown by Success With Sam, with main search "
+                        "keywords in the title and curiosity in the "
+                        "thumbnail as Nataleh Nicole recommends."
+                    ),
+                    "gate": (
+                        "Preview generated video and correct misplaced "
+                        "overlays or awkward text before publication, "
+                        "following Rochelle Be."
+                    ),
+                },
+                {
+                    "week": "Week 3",
+                    "title": "Connect the content to checkout",
+                    "deliverable": (
+                        "A description with the relevant product link "
+                        "and a connected purchase button. One Person "
+                        "Business places the offer link at the top "
+                        "of the description."
+                    ),
+                    "gate": (
+                        "Press the live-preview purchase button and "
+                        "confirm the intended checkout opens, as Brem "
+                        "does with Gumroad embedded in Framer."
+                    ),
+                },
+                {
+                    "week": "Week 4",
+                    "title": "Separate audience traction from sales",
+                    "deliverable": (
+                        "Separate audience and purchase observations, "
+                        "following DIGITAL INCOME PROJECT's distinction "
+                        "between reach and monetization."
+                    ),
+                    "gate": (
+                        "Do not treat follower or view counts as product "
+                        "sales. DIGITAL INCOME PROJECT explicitly leaves "
+                        "monetization under test after reporting "
+                        "audience growth."
+                    ),
+                },
+            ],
+        },
+    ]
+
+
+VOLUME_003_POSITIONING_ALTERNATIVES: list[dict] = [
+    {
+        "title": "One Buyer, One Useful Product",
+        "subtitle": (
+            "Turn a specific problem into an edited PDF, a focused Notion "
+            "template, or a working resource app."
+        ),
+        "audience": (
+            "First-time digital-product sellers and practitioners packaging "
+            "a specific solution instead of a broad information collection."
+        ),
+        "research_basis": (
+            "Brian Moran attributes a failed broad ebook to missing "
+            "one-person, one-problem specificity. Nathan Nazareth puts "
+            "the offer before the product. Mike and Matty replace "
+            "template overload with focused frameworks and beginner "
+            "guidance. Make Money with Stacy La calls for inspecting "
+            "generated content and functionality before sale."
+        ),
+        "sources": [
+            "https://www.youtube.com/watch?v=3iU4a1yWGn0&t=180s",
+            "https://www.youtube.com/watch?v=6cm2o8zzuNw&t=85s",
+            "https://www.youtube.com/watch?v=keOebOEv-Oc&t=306s",
+            "https://www.youtube.com/watch?v=gGW2IMNOz68&t=659s",
+        ],
+        "validation_status": (
+            "Grounded strictly in Vol. 003 YouTube practitioner transcripts."
+        ),
+    },
+    {
+        "title": "The Connected Offer Stack",
+        "subtitle": (
+            "Link a useful entry product to relevant additions, explicit "
+            "purchase choices, and acquisition-cost discipline."
+        ),
+        "audience": (
+            "Digital-product sellers building checkout bumps, post-purchase "
+            "offers, and paid acquisition around an existing buyer problem."
+        ),
+        "research_basis": (
+            "Marketing Mark demonstrates a $27 checkout with a $17 bump "
+            "charging $44. Maik Kleinert reports a $7 entry product "
+            "expanding into a $57 order. Pete McPherson keeps the product "
+            "suite closely related. Jonathan Montoya requires explicit "
+            "one-click charging choices. Jan Pole asks whether added "
+            "advertising spending still brings added money back."
+        ),
+        "sources": [
+            "https://www.youtube.com/watch?v=qUqLPLYblBI&t=191s",
+            "https://www.youtube.com/watch?v=pE2Z7vTYfSw&t=207s",
+            "https://www.youtube.com/watch?v=wYKYVjEiqLY&t=1148s",
+            "https://www.youtube.com/watch?v=g9_sJ3XLyHs&t=2011s",
+            "https://www.youtube.com/watch?v=J5lslxUECxE&t=305s",
+        ],
+        "validation_status": (
+            "Grounded strictly in Vol. 003 YouTube practitioner transcripts."
+        ),
+    },
+    {
+        "title": "Expertise Into Products and Membership",
+        "subtitle": (
+            "Use useful content and email to support courses, cohorts, "
+            "and communities built around customer progress."
+        ),
+        "audience": (
+            "Experts, educators, and content-led operators connecting "
+            "digital products to ongoing implementation and support."
+        ),
+        "research_basis": (
+            "Nicolas Cole emphasizes newsletter positioning and platform "
+            "discovery. Matt McGarry requires assignments that can produce "
+            "the promised outcome. Adnan Pilditch repairs community "
+            "onboarding with a roadmap and activation sequence. Brittany "
+            "Darrington repurposes converting live-launch materials into "
+            "automation. Success With Sam demonstrates faceless product "
+            "content through screen recordings."
+        ),
+        "sources": [
+            "https://www.youtube.com/watch?v=RaVsgiJeovE&t=769s",
+            "https://www.youtube.com/watch?v=1JVlUJAc6to&t=866s",
+            "https://www.youtube.com/watch?v=mf1WAw0FyaI&t=193s",
+            "https://www.youtube.com/watch?v=LhSL-O1SNLs&t=258s",
+            "https://www.youtube.com/watch?v=H3AW2eLqDt4&t=114s",
+        ],
+        "validation_status": (
+            "Grounded strictly in Vol. 003 YouTube practitioner transcripts."
+        ),
+    },
+]

@@ -1,0 +1,885 @@
+from __future__ import annotations
+
+CHAPTER_4 = {
+    "id": "Q4",
+    "chapter_id": "Q4",
+    "chapter_number": 4,
+    "question_number": 4,
+    "slug": "read-wills-estate-files-and-probate-procedures",
+    "question_prompt": "How do I interpret wills and estate files, extract family relationships, and understand the probate procedures affecting inherited real estate?",
+    "kicker": "Q4 / THE BIG MONEY PLAYBOOKS",
+    "title": "Read Wills, Estate Files, and Probate Procedures",
+    "subtitle": "Will wording, testate and intestate documents, guardianship, court-case structure, probate-file analysis, land records, women's rights, Texas heirship affidavits, and Florida real-estate probate",
+    "layout_template": "comparison_matrix",
+    "reading_time_minutes": 15,
+    "executive_summary": (
+        "Read the estate, not just the will. James Tanner, Mike O’Neill, Melissa Finley, "
+        "Sherry Hudson Passi, Judy Russell, and Laurie Bradshaw follow petitions, bonds, "
+        "inventories, guardianships, receipts, and distributions to reconstruct families "
+        "and property transfers. Their examples stretch decades beyond death, including "
+        "Russell’s 42-year reopening. Al Nicoletti starts Florida transactions with the "
+        "vesting deed and quotes ordinary 4–8-week proceedings; Nancy Perry Eden and "
+        "Jeremy Krit inspect Texas appointment letters and administration restrictions. "
+        "Bruce turns that document literacy into practical estate service. The sharp "
+        "differences concern executor authority, homestead signatures, affidavit acceptance, "
+        "bond payments, and inventory value. Nicoletti’s failed wetlands deal and Bruce’s "
+        "restricted closing show why a promising family tree does not finish the transaction."
+    ),
+    "key_metrics": [
+        {
+            "label": "Illustrated probate packet",
+            "metric": "Illustrated probate packet",
+            "value": "62 pages",
+            "confidence": "attributed_practitioner_claim",
+            "context": (
+                "James Tanner’s Utah example contains 62 pages, with filings extending "
+                "from an 1871 death into 1904."
+            ),
+            "source": "BYU Library Family History Center ([07zaZ3sQwi8 @ 00:01:27])",
+        },
+        {
+            "label": "Delayed estate reopening",
+            "metric": "Delayed estate reopening",
+            "value": "42 years",
+            "confidence": "attributed_practitioner_claim",
+            "context": (
+                "Judy Russell describes an estate following an 1806 death that reopened "
+                "in 1848 when the widow died."
+            ),
+            "source": "Genealogy TV ([jydLZrDuzCM @ 00:13:57])",
+        },
+        {
+            "label": "Nicoletti’s preferred timeline",
+            "metric": "Nicoletti’s preferred timeline",
+            "value": "4–8 weeks",
+            "confidence": "attributed_practitioner_claim",
+            "context": (
+                "Al Nicoletti prefers quoting this range for the uncontested Florida "
+                "proceedings discussed, while describing faster counties and backlogs."
+            ),
+            "source": "Courtney Fricke ([Dutmzc9gb30 @ 00:57:30])",
+        },
+        {
+            "label": "Nicoletti’s single-probate cost example",
+            "metric": "Nicoletti’s single-probate cost example",
+            "value": "Approximately $4,000–$4,500",
+            "confidence": "attributed_practitioner_claim",
+            "context": (
+                "Al Nicoletti uses this approximate cost for one probate and explains "
+                "that additional deceased owners and downstream estates multiply expense."
+            ),
+            "source": "Courtney Fricke ([Dutmzc9gb30 @ 00:57:30])",
+        },
+    ],
+    "sections": [
+        {
+            "id": "practitioner-consensus",
+            "title": "The Practitioner Consensus",
+            "paragraphs": [
+                (
+                    "Start with the distinction that keeps the search from collapsing into a will hunt: "
+                    "testate means a will exists; intestate means no valid will governs the proceeding. "
+                    "James Tanner explains that probate can transfer property in either situation, and "
+                    "that personal representative can describe the person administering either kind of "
+                    "estate. Mike O’Neill separates intestate proceedings from letters, bonds, inventories, "
+                    "sale records, and guardianships because those papers answer different questions. "
+                    "A missing will therefore does not end the family investigation. Tanner’s procedural "
+                    "outline runs through petition, administration, inventory, accounting and bills, then "
+                    "closing and distribution. Melissa Finley describes the same practical work: inventory "
+                    "assets, pay debts, distribute what remains, and protect minors’ inheritances. Read "
+                    "each document for its job in that sequence rather than treating every named person "
+                    "as a beneficiary. O’Neill says administrative names often identify friends, associates, "
+                    "neighbors, or relatives without specifying which relationship applies. Finley’s "
+                    "estate examples likewise distinguish petitioners, guardians, purchasers, and children. "
+                    "The operating baseline is a connected estate file: who died, who requested action, "
+                    "who received authority, what property appeared, and who ultimately received it. "
+                    "That last question requires distribution evidence, not merely the deceased person’s "
+                    "stated wishes. [CyAfgfoF-eo @ 00:08:10] [pGyFJ46jwTE @ 00:04:16] "
+                    "[Xe2NEfqDwTQ @ 00:04:30] [fCvgh_QabMY @ 00:00:07]"
+                ),
+                (
+                    "Read family relationships through the legal setting that produced the words. "
+                    "Tanner says will language is conservative: recurring structures help decipher "
+                    "difficult handwriting, but unfamiliar terms still need deliberate lookup. His "
+                    "reading sequence identifies the testator, testamentary intent, family and heirs, "
+                    "estate manager, gifts, special directions, signature, and witnesses. O’Neill adds "
+                    "that children’s order can narrow a search, while an eldest son’s special rights "
+                    "may place that child before older sisters. Neither an ordered list nor a familiar "
+                    "surname settles every relationship. Guardianship makes the danger especially clear. "
+                    "O’Neill distinguishes management of a child’s finances from physical custody, and "
+                    "Judy Russell explains that children could remain with their mother while another "
+                    "relative managed their property. Russell also separates a widow’s dower life "
+                    "interest from outright ownership and distinguishes unmarried or widowed women "
+                    "from married women under the historical systems discussed. Those distinctions "
+                    "change what a later land transfer or estate reopening means. A guardian’s "
+                    "appointment does not establish the mother’s death, and a widow’s continuing "
+                    "use of land does not by itself establish ownership of the whole property. "
+                    "Extract the stated relationship and the stated interest before attaching a "
+                    "family story to either. [7120UjJPqZM @ 00:05:05] [pGyFJ46jwTE @ 00:03:33] "
+                    "[7_oRhXnhlag @ 00:01:11] [jydLZrDuzCM @ 00:04:10]"
+                ),
+                (
+                    "The shared retrieval habit is to follow the estate across time, repositories, "
+                    "and related property records. Tanner’s Utah example contains 62 pages and reaches "
+                    "nearly 33 years beyond the death; his opening move is to inspect the last "
+                    "document because it may summarize the proceeding. Sherry Hudson Passi follows "
+                    "Edmund S. Price’s administration from 1868 into 1884 and treats later annual "
+                    "returns as useful evidence rather than administrative clutter. Laurie Bradshaw "
+                    "reports an ancestor’s estate remaining open for ten years until a youngest son "
+                    "was located in Indiana; the resulting receipt proved family membership. These "
+                    "are reasons to search beyond a death-year index entry. Tanner’s later research "
+                    "lecture adds a repository check before a name search: inspect the available "
+                    "collection catalogs, investigate county boundaries, and find where older records "
+                    "actually went. Hudson Passi follows index references to the real book and page, "
+                    "sometimes on another digitized film. Bradshaw adds court minute books and "
+                    "original papers, which can retain heirs’ names, ages, and residences absent "
+                    "elsewhere. The will, the index, and the first online packet are starting "
+                    "points. Receipts, later filings, and relocated records can supply the family "
+                    "connection that the opening paperwork never states. [07zaZ3sQwi8 @ 00:01:27] "
+                    "[Gv4Mibtn8CM @ 00:08:31] [Xzst9ZSC1M0 @ 00:17:17] "
+                    "[TBB8OPPFSsM @ 00:31:33]"
+                ),
+            ],
+            "table": {
+                "caption": "The common document-reading foundation",
+                "headers": ["Document or question", "Operator reading", "Expert Source"],
+                "rows": [
+                    [
+                        "A will is missing but estate property still needs distribution.",
+                        "Separate intestate proceedings from the mistaken assumption that no will means no probate evidence.",
+                        "BYU Library Family History Center ([CyAfgfoF-eo @ 00:08:10])",
+                    ],
+                    [
+                        "The will contains repeated formulas and unfamiliar operative words.",
+                        "Identify the testator, intent, estate manager, gifts, signature, and witnesses before interpreting individual provisions.",
+                        "BYU Library Family History Center ([7120UjJPqZM @ 00:05:05])",
+                    ],
+                    [
+                        "Administrative papers name people without explicitly describing their relationships.",
+                        "Treat those names as family and associate leads rather than automatically labeling every participant an heir.",
+                        "Five-minute genealogy ([pGyFJ46jwTE @ 00:04:16])",
+                    ],
+                    [
+                        "A child receives a guardian while their mother remains alive.",
+                        "Read the appointment as financial administration rather than automatically concluding custody changed or both parents died.",
+                        "Five-minute genealogy ([7_oRhXnhlag @ 00:01:11])",
+                    ],
+                    [
+                        "An index points toward a separate record book and page.",
+                        "Follow the reference into the actual document even when another digitized film holds the relevant volume.",
+                        "FamilySearch ([Gv4Mibtn8CM @ 00:16:43])",
+                    ],
+                    [
+                        "The estate remains open while an absent beneficiary is located.",
+                        "Inspect eventual receipts because Bradshaw’s missing son in Indiana became identifiable through the delayed distribution.",
+                        "Gary Foster ([Xzst9ZSC1M0 @ 00:17:17])",
+                    ],
+                ],
+            },
+        },
+        {
+            "id": "street-mechanics",
+            "title": "Exact Street Mechanics, Tools & Numbers",
+            "paragraphs": [
+                (
+                    "Build the reading workflow around actual pages. Tanner recommends Black’s Law "
+                    "Dictionary and the searchable sixth edition on Internet Archive for unfamiliar "
+                    "will language. In his court-case training, he also uses Google with Define "
+                    "and the troublesome term, noting that spelling suggestions can rescue a "
+                    "misread word. Bradshaw insists on preserving spelling in transcriptions rather "
+                    "than silently repairing the record or filling an unreadable gap. Finley’s "
+                    "Daniel Chapman example adds a physical instruction: inspect the reverse side, "
+                    "where more information appears. Her mixed New Hampshire volume adds another: "
+                    "adjacent entries can belong to different estates. Tanner’s Utah walkthrough "
+                    "starts with the last document, then retains the cover sheet for court, case, "
+                    "date, and name information. These moves complement one another: orient the "
+                    "file, read the operative wording, and examine the pages that an index or "
+                    "front-side image can hide. Bradshaw’s codicil warning belongs in the same "
+                    "pass because later pages can modify the apparent gift. Finley’s examples "
+                    "show why a packet label is not the entire chronology; petitions, guardian "
+                    "appointments, and sale requests can carry different dates across years. "
+                    "Keep those document dates distinct while following the proceeding. "
+                    "[7120UjJPqZM @ 00:04:04] [BAgypTLrbR4 @ 00:12:24] "
+                    "[Xzst9ZSC1M0 @ 00:40:11] [fCvgh_QabMY @ 00:08:25]"
+                ),
+                (
+                    "For inherited real estate, Al Nicoletti starts with the vesting deed rather "
+                    "than the family’s account of ownership. His Florida intake gathers death "
+                    "certificates, any will, identities, family information, and assets; documents "
+                    "then circulate for signatures before filing, judicial review, and recording "
+                    "the resulting orders. His family questions are deliberately precise: was a "
+                    "spouse alive when the owner died, how many children did the owner ever "
+                    "have, and did a deceased child die before or after the owner? In his "
+                    "three-child example, one predeceased child’s five children enter the analysis. "
+                    "Nancy Perry Eden begins Texas intake with estate contents, debts, the will, "
+                    "and heirs, while Jeremy Krit physically inspects letters and distinguishes "
+                    "independent from dependent administration. Bruce’s transaction file similarly "
+                    "includes the will, letters, and deed, followed by inventory and any required "
+                    "sale authorization. The documents answer different questions: family evidence "
+                    "identifies interested people, the deed establishes the ownership starting point, "
+                    "and appointment papers reveal the representative’s authority and restrictions. "
+                    "Nicoletti’s Florida homestead discussion then changes the signing analysis: "
+                    "a representative does not simply replace the six children’s signatures in "
+                    "his six-heir example. Read the property and authority together. "
+                    "[Dutmzc9gb30 @ 00:11:45] [Dutmzc9gb30 @ 00:19:11] "
+                    "[n8jP0gweIR4 @ 00:23:34] [7xCfSyqYEys @ 00:45:35]"
+                ),
+                (
+                    "Extract kinship through distributions as well as names. O’Neill’s Elizabeth Morey "
+                    "Slough example uses settlement arithmetic: the children’s combined distribution "
+                    "equals the portion of each of Elizabeth’s siblings, establishing the "
+                    "grandchildren relationship where baptism and probate traces were missing. "
+                    "Hudson Passi builds a different evidence trail from Edmund Price’s son’s "
+                    "petition, the named bond participants, signatures, and estate purchasers. "
+                    "She compares signatures to distinguish same-name people and researches "
+                    "purchasers through neighbors, census records, and the friends-associates-neighbors "
+                    "network. Finley follows inherited land into deeds indexed under collective "
+                    "sellers such as and others; her Kirkpatrick example identifies relatives "
+                    "as they divide inherited property. Nicoletti adds current transaction costs "
+                    "to this documentary work: approximately $4,000–$4,500 for one probate, with "
+                    "additional proceedings multiplying expense. He describes a contract allocation "
+                    "in which the buyer pays the first $3,000–$4,000 and the seller carries "
+                    "the excess, and prefers quoting four to eight weeks for the uncontested "
+                    "matters discussed. His firm can defer fees until closing. Those figures "
+                    "belong to his operating model; the historical settlement amounts belong "
+                    "to relationship reconstruction. Keep both uses of arithmetic attached to "
+                    "the particular estate and transaction being examined. [NYz_-ZkJbBE @ 00:05:03] "
+                    "[Gv4Mibtn8CM @ 00:05:40] [fCvgh_QabMY @ 00:15:36] "
+                    "[Dutmzc9gb30 @ 00:57:30]"
+                ),
+            ],
+            "table": {
+                "caption": "Concrete reading, retrieval, and transaction mechanics",
+                "headers": ["Working task", "Exact method or attributed number", "Expert Source"],
+                "rows": [
+                    [
+                        "Decode unfamiliar wording before deciding who receives the property.",
+                        "Use Black’s Law Dictionary, including the searchable sixth edition Tanner identifies on Internet Archive.",
+                        "BYU Library Family History Center ([7120UjJPqZM @ 00:04:42])",
+                    ],
+                    [
+                        "Orient a long estate packet before reading every filing sequentially.",
+                        "Tanner starts with the last document and retains the cover sheet identifying court and case information.",
+                        "BYU Library Family History Center ([07zaZ3sQwi8 @ 00:01:47])",
+                    ],
+                    [
+                        "Recover family evidence when a will names recipients only collectively.",
+                        "Compare settlement portions where a deceased beneficiary’s children together receive the share of one sibling.",
+                        "Five-minute genealogy ([NYz_-ZkJbBE @ 00:05:03])",
+                    ],
+                    [
+                        "Investigate inherited land when conventional probate evidence is missing.",
+                        "Browse deed indexes for collective sellers and examine the deeds describing inherited land divided among relatives.",
+                        "FamilySearch ([fCvgh_QabMY @ 00:15:36])",
+                    ],
+                    [
+                        "Budget the chain rather than assuming one deceased owner means one filing.",
+                        "Nicoletti quotes approximately $4,000–$4,500 for one probate and warns that additional proceedings multiply expense.",
+                        "Courtney Fricke ([Dutmzc9gb30 @ 00:57:30])",
+                    ],
+                    [
+                        "Prioritize a probate list by the representative’s distance from the property.",
+                        "Bruce’s Claude-built HTML tool ranks representatives more than 50 miles away before closer separate households and co-residents.",
+                        "Probate Mastery ([7xCfSyqYEys @ 01:30:39])",
+                    ],
+                ],
+            },
+            "callout": {
+                "kind": "INSIDER PRO-TIPS",
+                "title": "Read the evidence other people skip",
+                "body": (
+                    "The useful detail may sit on the reverse, in a receipt, "
+                    "inside a collective deed, or under an alternate name."
+                ),
+                "items": [
+                    "Inspect both sides of petitions: Finley finds additional Chapman information on the reverse. [FamilySearch — fCvgh_QabMY @ 00:08:48]",
+                    "Keep the cover sheet and read the last filing first; Tanner uses both to orient the Utah estate. [BYU Library Family History Center — 07zaZ3sQwi8 @ 00:01:47]",
+                    "Compare signatures on bonds and related papers to distinguish people sharing a name. [FamilySearch — Gv4Mibtn8CM @ 00:06:44]",
+                    "Cross-reference property-appraiser names with clerk searches, including AKA names, before starting a duplicate case. [Courtney Fricke — Dutmzc9gb30 @ 00:29:31]",
+                ],
+            },
+            "sop_steps": [
+                {
+                    "step": 1,
+                    "title": "Locate the court and complete record run",
+                    "action": "Search catalogs, identify historical jurisdictions, and ask where older holdings moved.",
+                    "detail": (
+                        "Tanner checks FamilySearch, Ancestry, MyHeritage, and Findmypast collection "
+                        "coverage before relying on a name search, then contacts county or court "
+                        "staff about archives and access. [BYU Library Family History Center — "
+                        "TBB8OPPFSsM @ 00:31:33]"
+                    ),
+                },
+                {
+                    "step": 2,
+                    "title": "Read and transcribe the complete instrument",
+                    "action": "Identify operative clauses, examine every page, and preserve original spelling.",
+                    "detail": (
+                        "Bradshaw searches for codicils and warns against changing spelling or "
+                        "filling unreadable gaps without viewing the document. [Gary Foster — "
+                        "Xzst9ZSC1M0 @ 00:13:48] [Gary Foster — Xzst9ZSC1M0 @ 00:43:59]"
+                    ),
+                },
+                {
+                    "step": 3,
+                    "title": "Follow relationships into actual distributions",
+                    "action": "Read settlements, receipts, purchaser lists, and inherited-land deeds.",
+                    "detail": (
+                        "O’Neill establishes the Slough grandchildren through their combined "
+                        "settlement share; Finley finds heirs dividing inherited land in deeds. "
+                        "[Five-minute genealogy — NYz_-ZkJbBE @ 00:05:03] "
+                        "[FamilySearch — fCvgh_QabMY @ 00:17:50]"
+                    ),
+                },
+                {
+                    "step": 4,
+                    "title": "Match the property to the signing authority",
+                    "action": "Inspect the vesting deed, letters, administration restrictions, and relevant heirs.",
+                    "detail": (
+                        "Nicoletti starts with title and distinguishes Florida homestead signatures; "
+                        "Krit physically inspects Texas letters and identifies dependent administration. "
+                        "[Courtney Fricke — Dutmzc9gb30 @ 00:12:05] "
+                        "[Texas Probate Real Estate — n8jP0gweIR4 @ 00:29:19]"
+                    ),
+                },
+            ],
+        },
+        {
+            "id": "disagreements-alternative-playbooks",
+            "title": "Where Practitioners Disagree & Alternative Playbooks",
+            "paragraphs": [
+                (
+                    "Signing authority is the biggest place where a portable slogan breaks down. "
+                    "Bradshaw says a will-named executor still needs court approval, while O’Neill "
+                    "describes jurisdictions where the named executor can begin without letters "
+                    "or first proving the will. Nancy Perry Eden’s Texas account is emphatic "
+                    "about letters of administration preceding representative contracting. Her "
+                    "problem case involved a child contracting before appointment or filing, "
+                    "then announcing an affidavit sale while the heirship investigation remained "
+                    "unfinished. Nicoletti takes a different Florida route: properly identified "
+                    "heirs can contract before probate opens. His homestead example places "
+                    "the signing requirement on all six children, not a representative "
+                    "purporting to override them. His contrasting Sarasota second-home example "
+                    "uses formal administration and one appointed representative signing for "
+                    "the estate. These approaches turn on the role being exercised and "
+                    "the property context each speaker describes. Do not flatten heir "
+                    "contracts into representative contracts, or a homestead example into "
+                    "every inherited parcel. The disagreement is operationally important "
+                    "because the same family narrative can conceal different owners, "
+                    "different signers, and different authority documents. Nicoletti’s own "
+                    "starting instruction remains the vesting deed, while Eden’s case "
+                    "shows what remains unresolved when the claimed family arrangement "
+                    "outruns the heirship investigation. [Xzst9ZSC1M0 @ 00:17:17] "
+                    "[NYz_-ZkJbBE @ 00:01:44] [n8jP0gweIR4 @ 00:17:43] "
+                    "[Dutmzc9gb30 @ 00:43:44]"
+                ),
+                (
+                    "Even a bond’s face amount produces a real interpretive split. Hudson Passi "
+                    "describes the $1,000 Price bond with payment language, while Russell "
+                    "expressly explains a bond as a contingent promise rather than necessarily "
+                    "cash deposited upfront. Russell’s separate commercial example uses a $100 "
+                    "premium for a $1,000 bond, distinguishing the obligation from its purchase "
+                    "cost. Both treatments make the named participants worth investigating, "
+                    "but Russell’s explanation prevents the face amount from automatically "
+                    "becoming evidence of money already spent. Inventories create another "
+                    "difference in emphasis. O’Neill finds their direct relationship evidence "
+                    "limited and looks instead at purchasers who may reveal daughters’ married "
+                    "names. Hudson Passi emphasizes possessions, occupations, household life, "
+                    "and purchaser networks; Finley likewise follows kin and neighbors buying "
+                    "goods while refusing to assume that every unidentified buyer is unrelated. "
+                    "Finley’s Bassett packet has no Bassett-surnamed purchaser or identifiable "
+                    "widow, but that absence does not identify all buyers as strangers. "
+                    "The alternative playbooks therefore ask different questions of the same "
+                    "paper: does it state a relationship, suggest an associate, describe "
+                    "property, or document a financial obligation? A rich inventory can "
+                    "answer several of those questions without directly naming a child. "
+                    "[Gv4Mibtn8CM @ 00:05:40] [jydLZrDuzCM @ 00:08:13] "
+                    "[pGyFJ46jwTE @ 00:05:12] [fCvgh_QabMY @ 00:05:42]"
+                ),
+                (
+                    "Texas affidavit acceptance is disputed inside one conversation, not merely "
+                    "between states. Eden reports title-company refusals after omitted-heir "
+                    "or witness problems, while Krit reports routinely completing affidavit "
+                    "transactions through almost ten years in real estate. Their searches "
+                    "among Texas probate lawyers produce mixed experiences, and Eden allows "
+                    "that resistance may be regional. Her preferred affidavit situation is "
+                    "narrower: spouses whose children were all born within their marriage, "
+                    "with two disinterested witnesses. A separate research disagreement "
+                    "concerns how often a probate should exist. Bradshaw reports informal "
+                    "family settlement and says only about 25% of wills were probated "
+                    "as late as the nineteenth century; Tanner makes much broader "
+                    "historical necessity claims for property owners. Neither position "
+                    "turns an unsuccessful online search into proof that no estate "
+                    "evidence survives. Bruce’s approach also separates prospecting depth "
+                    "from case depth: he markets broadly and does not spend a full "
+                    "day researching every cold lead, then studies viable prospects "
+                    "and their needs. That is a different allocation of research "
+                    "effort from Bradshaw’s complete-file genealogical work, not a "
+                    "replacement for reading the deed, letters, and restrictions "
+                    "when a transaction becomes real. [n8jP0gweIR4 @ 00:03:28] "
+                    "[Xzst9ZSC1M0 @ 00:05:19] [TBB8OPPFSsM @ 00:05:11] "
+                    "[7xCfSyqYEys @ 00:00:23]"
+                ),
+            ],
+            "table": {
+                "caption": "Contrasts that must remain attached to their stated contexts",
+                "headers": ["Disputed question", "Side-by-side practitioner positions", "Expert Source"],
+                "rows": [
+                    [
+                        "Must a named executor always wait for formal court authority?",
+                        "Bradshaw requires court approval; O’Neill identifies local exceptions permitting a named executor to begin before letters.",
+                        "Gary Foster ([Xzst9ZSC1M0 @ 00:17:17]); Five-minute genealogy ([NYz_-ZkJbBE @ 00:01:44])",
+                    ],
+                    [
+                        "Can an inherited-property contract precede the opening of probate?",
+                        "Eden wants Texas representative authority first; Nicoletti allows researched Florida heir contracts before opening the proceeding.",
+                        "Texas Probate Real Estate ([n8jP0gweIR4 @ 00:17:43]); Courtney Fricke ([Dutmzc9gb30 @ 00:51:42])",
+                    ],
+                    [
+                        "Does the face amount of a bond establish money already paid?",
+                        "Hudson Passi uses payment wording; Russell distinguishes contingent liability from an upfront cash payment or commercial premium.",
+                        "FamilySearch ([Gv4Mibtn8CM @ 00:05:40]); Genealogy TV ([jydLZrDuzCM @ 00:08:13])",
+                    ],
+                    [
+                        "How much direct genealogical value should an inventory receive?",
+                        "O’Neill stresses indirect purchaser clues; Hudson Passi emphasizes occupations, household possessions, signatures, and broader associate investigation.",
+                        "Five-minute genealogy ([pGyFJ46jwTE @ 00:05:12]); FamilySearch ([Gv4Mibtn8CM @ 00:05:40])",
+                    ],
+                    [
+                        "Are Texas title companies still accepting affidavits of heirship?",
+                        "Eden reports refusals and possible regional differences; Krit reports continued transactions, with mixed attorney experiences discussed.",
+                        "Texas Probate Real Estate ([n8jP0gweIR4 @ 00:04:34])",
+                    ],
+                    [
+                        "Should historical ownership always produce an accessible probate proceeding?",
+                        "Tanner describes broad historical necessity; Bradshaw describes informal settlement and approximately 25% of wills being probated.",
+                        "BYU Library Family History Center ([TBB8OPPFSsM @ 00:05:11]); Gary Foster ([Xzst9ZSC1M0 @ 00:05:19])",
+                    ],
+                ],
+            },
+        },
+        {
+            "id": "failure-modes-economics",
+            "title": "Firsthand Failure Modes, Traps & Economics Checks",
+            "paragraphs": [
+                (
+                    "The expensive failure is solving probate before discovering that the property "
+                    "does not support the deal. Nicoletti describes a chain requiring four "
+                    "probates, ending with a surviving spouse and seven children. Signatures "
+                    "were obtained and filing authorized; the next day, environmental work "
+                    "exposed wetlands and approximately $50,000 in remediation or agency "
+                    "involvement. The deal stopped after legal work had begun. His response "
+                    "is title work, the commitment and supporting papers, environmental "
+                    "investigation, and examination of mortgages, liens, code violations, "
+                    "taxes, and auction exposure before commissioning the full effort. "
+                    "Bruce supplies a different avoidable loss of momentum: a closing "
+                    "failed because heirs were eight and eleven and the related "
+                    "representative was not an heir; the letters would have exposed "
+                    "the restriction. Eden’s affidavit-sale story leaves a further "
+                    "unanswered problem: the client announced a sale before the "
+                    "heirship investigation concluded, and Eden did not know the "
+                    "actual heirs or whether a title company closed it. These "
+                    "accounts identify specific unfinished work, not one generic "
+                    "probate delay. One deal failed on environmental economics, "
+                    "another on restricted authority, and another bypassed an "
+                    "unresolved family investigation before the practitioner could "
+                    "establish who actually held the interests. [Dutmzc9gb30 @ 00:01:29] "
+                    "[7xCfSyqYEys @ 00:45:35] [n8jP0gweIR4 @ 00:17:43]"
+                ),
+                (
+                    "Research fails more quietly when a persuasive story outruns the documents. "
+                    "O’Neill dismantles the Jacob Slough account of a wicked stepfather "
+                    "and rebellious partition: the petition followed routine intestate "
+                    "procedure, including an assessment by twelve disinterested men of "
+                    "whether division would reduce the land’s value. His guardianship "
+                    "discussion identifies the related mistake of equating financial "
+                    "protection with custody. Finley finds another trap in mixed "
+                    "record books, where consecutive entries concern different estates "
+                    "rather than one continuous packet. Tanner’s Utah example defeats "
+                    "the narrow death-location search: the deceased lived in Provo "
+                    "but died in Sheffield, England, and an appointment order arrived "
+                    "more than seven years after death. It also defeats the word "
+                    "final as a stopping rule, because final accounts, later orders, "
+                    "supplemental distribution, and discharge can follow one another. "
+                    "The practical reversal is to let the document’s function and "
+                    "chronology explain the event before assigning motives or closing "
+                    "the search. O’Neill’s family could use an ordinary legal process "
+                    "without the feud attributed to them, while Tanner’s estate "
+                    "could keep producing useful evidence long after a document "
+                    "already carried a supposedly conclusive title. [pGyFJ46jwTE @ 00:01:02] "
+                    "[7_oRhXnhlag @ 00:04:06] [fCvgh_QabMY @ 00:12:40] "
+                    "[07zaZ3sQwi8 @ 00:14:50]"
+                ),
+                (
+                    "Economics checks must include the evidence behind the numbers. Bruce recounts "
+                    "a house inventoried at $400,000 from tax value and sold for "
+                    "$600,000, creating an asserted $200,000 gain in his account. "
+                    "When amendment discussions produced an unsupported $700,000 value, "
+                    "he rejected that number and emphasized retaining a screenshot "
+                    "or other valuation receipt. Nicoletti’s cost warning is equally "
+                    "concrete: count deceased titleholders and downstream estates before "
+                    "multiplying probate expense against the transaction. His eight-probate, "
+                    "five-heir land example illustrates how a cheap acquisition can "
+                    "still carry an uneconomic chain. Historical files impose a "
+                    "different cost: the search itself can outlast the expected "
+                    "window. Russell’s 1806 estate reopened in 1848 after the "
+                    "widow died and county boundaries had changed. Tanner describes "
+                    "a Maryland digitization project with years of work remaining, "
+                    "possible copy and access charges, and a short widow’s packet "
+                    "that might reflect only partial digitization. These experiences "
+                    "support examining the value source, counting the actual "
+                    "proceedings, and checking the repository’s coverage. They also "
+                    "explain why an apparently short packet or inexpensive parcel "
+                    "can conceal substantially more work than its first page "
+                    "or asking price suggests. [7xCfSyqYEys @ 00:22:36] "
+                    "[Dutmzc9gb30 @ 00:57:30] [jydLZrDuzCM @ 00:13:07] "
+                    "[TBB8OPPFSsM @ 00:46:20]"
+                ),
+            ],
+            "table": {
+                "caption": "Reported failures and the specific checks they produced",
+                "headers": ["Experienced trap", "Practitioner response or unresolved outcome", "Expert Source"],
+                "rows": [
+                    [
+                        "Four probates were authorized before wetlands undermined the property economics.",
+                        "Nicoletti describes approximately $50,000 in environmental complications and emphasizes property diligence before authorizing the legal work.",
+                        "Courtney Fricke ([Dutmzc9gb30 @ 00:01:29])",
+                    ],
+                    [
+                        "A closing failed with child heirs aged eight and eleven.",
+                        "Bruce says the letters would have disclosed restrictions involving the representative and the minor beneficiaries before closing.",
+                        "Probate Mastery ([7xCfSyqYEys @ 00:45:35])",
+                    ],
+                    [
+                        "The client announced an affidavit sale before heirship investigation concluded.",
+                        "Eden could not establish the actual heirs or whether a title company had completed the reported transaction.",
+                        "Texas Probate Real Estate ([n8jP0gweIR4 @ 00:17:43])",
+                    ],
+                    [
+                        "A published family narrative turned routine partition into personal hostility.",
+                        "O’Neill identifies the ordinary assessment of divisibility and the eldest son’s opportunity to purchase the other shares.",
+                        "Five-minute genealogy ([pGyFJ46jwTE @ 00:01:02])",
+                    ],
+                    [
+                        "A tax-value inventory figure was followed by a substantially higher sale.",
+                        "Bruce reports the $400,000 inventory and $600,000 sale, rejects unsupported revision, and retains evidence supporting valuation.",
+                        "Probate Mastery ([7xCfSyqYEys @ 00:22:36])",
+                    ],
+                    [
+                        "A widow’s death reopened an estate forty-two years after the original death.",
+                        "Russell extends the search beyond death-year records and accounts for changed county boundaries during the interval.",
+                        "Genealogy TV ([jydLZrDuzCM @ 00:13:07])",
+                    ],
+                ],
+            },
+            "callout": {
+                "kind": "OPERATOR GATE",
+                "title": "Four checks drawn from deals and files that went wrong",
+                "body": (
+                    "Use the specific failure as the check: property economics, "
+                    "signing authority, family interpretation, and file completeness."
+                ),
+                "items": [
+                    "Before authorizing paid probate work, finish the title and property investigation that Nicoletti’s four-probate wetlands deal lacked. [Courtney Fricke — Dutmzc9gb30 @ 00:01:29]",
+                    "Physically inspect letters and determine whether dependent administration requires a sale order; Krit describes a roughly two-week order delay affecting transaction timing. [Texas Probate Real Estate — n8jP0gweIR4 @ 00:23:34]",
+                    "Do not convert a guardian appointment into a custody story: O’Neill’s Slough correction identifies precisely that mistaken inference. [Five-minute genealogy — 7_oRhXnhlag @ 00:04:06]",
+                    "Check whether a short online packet is only partially digitized, and ask the court or relevant societies about remaining documents. [BYU Library Family History Center — TBB8OPPFSsM @ 00:48:45]",
+                ],
+            },
+        },
+    ],
+    "pull_quote": (
+        "“the rule here is to look for the last document first.” — "
+        "James Tanner, BYU Library Family History Center "
+        "(07zaZ3sQwi8 @ 00:01:47)."
+    ),
+    "diagram_id": "diag-07",
+    "action_checklist": [
+        "Identify the historical court, jurisdiction, and record location; search online before contacting the clerk about older storage. [BYU Library Family History Center — CyAfgfoF-eo @ 00:02:45]",
+        "Read the will’s identity, intent, gifts, manager, signature, and witness provisions, looking up unfamiliar terms rather than guessing. [BYU Library Family History Center — 7120UjJPqZM @ 00:04:04]",
+        "Follow petitions through administration, inventory, accounting, and distribution instead of treating the will as the entire estate. [BYU Library Family History Center — Xe2NEfqDwTQ @ 00:04:30]",
+        "Compare settlement shares and descendant groups to recover relationships not individually stated in a will. [Five-minute genealogy — NYz_-ZkJbBE @ 00:05:03]",
+        "Search deeds and generic court records when probate is missing, including collective sellers and unindexed order books. [FamilySearch — fCvgh_QabMY @ 00:15:36]",
+        "Read the vesting deed and authority papers, identify the required signers, and investigate the property before authorizing the transaction’s probate work. [Courtney Fricke — Dutmzc9gb30 @ 00:01:29] [Texas Probate Real Estate — n8jP0gweIR4 @ 00:29:19]",
+    ],
+    "statutory_citations": [
+        {
+            "title": "BYU Library Family History Center — Probate  Part 5,  \" What are Probate Procedures\" by James Tanner [00:10:17]",
+            "url": "https://www.youtube.com/watch?v=Xe2NEfqDwTQ&t=617s",
+            "relevance": "Primary practitioner testimony distinguishing the law governing probate from the procedures governing the case.",
+        },
+        {
+            "title": "Genealogy TV — Understanding Wills, Probate, Estate Records, and Women's Rights for Genealogy [00:13:57]",
+            "url": "https://www.youtube.com/watch?v=jydLZrDuzCM&t=837s",
+            "relevance": "Primary practitioner testimony on a widow’s death triggering estate activity forty-two years after the original death.",
+        },
+        {
+            "title": "Texas Probate Real Estate — Affidavits of Heirship and Other Texas Probate Pitfalls | TPRE Podcast Ep 3 [00:29:19]",
+            "url": "https://www.youtube.com/watch?v=n8jP0gweIR4&t=1759s",
+            "relevance": "Primary practitioner testimony on physically inspecting appointment letters and understanding administration restrictions.",
+        },
+        {
+            "title": "Courtney Fricke — Florida Probate Explained: What Happens When Someone Dies Owning Real Estate? [00:12:05]",
+            "url": "https://www.youtube.com/watch?v=Dutmzc9gb30&t=725s",
+            "relevance": "Primary practitioner testimony on beginning inherited-property analysis with the title to the property.",
+        },
+    ],
+    "source_citations": [
+        {
+            "source_type": "video_pro_tip",
+            "video_id": "CyAfgfoF-eo",
+            "title": "Probate  Part 2, Wills by James Tanner",
+            "channel": "BYU Library Family History Center",
+            "author": "BYU Library Family History Center",
+            "text": "it's important to understand the probate may be necessary either with or without a will.",
+            "tip": "it's important to understand the probate may be necessary either with or without a will.",
+            "timestamp": 490,
+            "timestamp_seconds": 490,
+            "timestamp_label": "[00:08:10]",
+            "url": "https://www.youtube.com/watch?v=CyAfgfoF-eo&t=490s",
+            "markdown": "[00:08:10](https://www.youtube.com/watch?v=CyAfgfoF-eo&t=490s)",
+            "epistemic_status": "attributed_practitioner_claim",
+            "relevance": "Verbatim practitioner testimony on probate with and without a will.",
+        },
+        {
+            "source_type": "video_pro_tip",
+            "video_id": "7120UjJPqZM",
+            "title": "Probate  Part 3,  \"Wording of Wills\"  by James Tanner",
+            "channel": "BYU Library Family History Center",
+            "author": "BYU Library Family History Center",
+            "text": "if you don't know the meaning of the word look it up.",
+            "tip": "if you don't know the meaning of the word look it up.",
+            "timestamp": 244,
+            "timestamp_seconds": 244,
+            "timestamp_label": "[00:04:04]",
+            "url": "https://www.youtube.com/watch?v=7120UjJPqZM&t=244s",
+            "markdown": "[00:04:04](https://www.youtube.com/watch?v=7120UjJPqZM&t=244s)",
+            "epistemic_status": "attributed_practitioner_claim",
+            "relevance": "Verbatim practitioner testimony on reading unfamiliar will terminology.",
+        },
+        {
+            "source_type": "video_pro_tip",
+            "video_id": "Xe2NEfqDwTQ",
+            "title": "Probate  Part 5,  \" What are Probate Procedures\" by James Tanner",
+            "channel": "BYU Library Family History Center",
+            "author": "BYU Library Family History Center",
+            "text": "the parties to a probate must follow both the law and the procedures.",
+            "tip": "the parties to a probate must follow both the law and the procedures.",
+            "timestamp": 617,
+            "timestamp_seconds": 617,
+            "timestamp_label": "[00:10:17]",
+            "url": "https://www.youtube.com/watch?v=Xe2NEfqDwTQ&t=617s",
+            "markdown": "[00:10:17](https://www.youtube.com/watch?v=Xe2NEfqDwTQ&t=617s)",
+            "epistemic_status": "attributed_practitioner_claim",
+            "relevance": "Verbatim practitioner testimony on the distinction between substantive law and procedure.",
+        },
+        {
+            "source_type": "video_pro_tip",
+            "video_id": "07zaZ3sQwi8",
+            "title": "Probate  Part 7, \"Example of a Probate File\" by James Tanner",
+            "channel": "BYU Library Family History Center",
+            "author": "BYU Library Family History Center",
+            "text": "the rule here is to look for the last document first.",
+            "tip": "the rule here is to look for the last document first.",
+            "timestamp": 107,
+            "timestamp_seconds": 107,
+            "timestamp_label": "[00:01:47]",
+            "url": "https://www.youtube.com/watch?v=07zaZ3sQwi8&t=107s",
+            "markdown": "[00:01:47](https://www.youtube.com/watch?v=07zaZ3sQwi8&t=107s)",
+            "epistemic_status": "attributed_practitioner_claim",
+            "relevance": "Verbatim practitioner testimony on orienting a long probate file.",
+        },
+        {
+            "source_type": "video_pro_tip",
+            "video_id": "BAgypTLrbR4",
+            "title": "The Anatomy of a Court Case for Genealogists - James Tanner",
+            "channel": "BYU Library Family History Center",
+            "author": "BYU Library Family History Center",
+            "text": "get to work with a dictionary and online searches and figure it out.",
+            "tip": "get to work with a dictionary and online searches and figure it out.",
+            "timestamp": 2395,
+            "timestamp_seconds": 2395,
+            "timestamp_label": "[00:39:55]",
+            "url": "https://www.youtube.com/watch?v=BAgypTLrbR4&t=2395s",
+            "markdown": "[00:39:55](https://www.youtube.com/watch?v=BAgypTLrbR4&t=2395s)",
+            "epistemic_status": "attributed_practitioner_claim",
+            "relevance": "Verbatim practitioner testimony on interpreting court-record vocabulary.",
+        },
+        {
+            "source_type": "video_pro_tip",
+            "video_id": "pGyFJ46jwTE",
+            "title": "Primary sources: Intestate probate documents",
+            "channel": "Five-minute genealogy",
+            "author": "Five-minute genealogy",
+            "text": "Jacob’s motion was just a routine procedure in intestate proceedings.",
+            "tip": "Jacob’s motion was just a routine procedure in intestate proceedings.",
+            "timestamp": 114,
+            "timestamp_seconds": 114,
+            "timestamp_label": "[00:01:54]",
+            "url": "https://www.youtube.com/watch?v=pGyFJ46jwTE&t=114s",
+            "markdown": "[00:01:54](https://www.youtube.com/watch?v=pGyFJ46jwTE&t=114s)",
+            "epistemic_status": "attributed_practitioner_claim",
+            "relevance": "Verbatim practitioner testimony correcting a family-conflict interpretation of routine partition.",
+        },
+        {
+            "source_type": "video_pro_tip",
+            "video_id": "NYz_-ZkJbBE",
+            "title": "Primary Sources: testate probate documents",
+            "channel": "Five-minute genealogy",
+            "author": "Five-minute genealogy",
+            "text": "Settlements can also help when the recipient of one of the decedent’s bequests passed away.",
+            "tip": "Settlements can also help when the recipient of one of the decedent’s bequests passed away.",
+            "timestamp": 303,
+            "timestamp_seconds": 303,
+            "timestamp_label": "[00:05:03]",
+            "url": "https://www.youtube.com/watch?v=NYz_-ZkJbBE&t=303s",
+            "markdown": "[00:05:03](https://www.youtube.com/watch?v=NYz_-ZkJbBE&t=303s)",
+            "epistemic_status": "attributed_practitioner_claim",
+            "relevance": "Verbatim practitioner testimony on descendants appearing in settlement distributions.",
+        },
+        {
+            "source_type": "video_pro_tip",
+            "video_id": "7_oRhXnhlag",
+            "title": "Primary Sources: Understanding guardianship in probate proceedings",
+            "channel": "Five-minute genealogy",
+            "author": "Five-minute genealogy",
+            "text": "Guardianship was about finances, not about raising a child.",
+            "tip": "Guardianship was about finances, not about raising a child.",
+            "timestamp": 71,
+            "timestamp_seconds": 71,
+            "timestamp_label": "[00:01:11]",
+            "url": "https://www.youtube.com/watch?v=7_oRhXnhlag&t=71s",
+            "markdown": "[00:01:11](https://www.youtube.com/watch?v=7_oRhXnhlag&t=71s)",
+            "epistemic_status": "attributed_practitioner_claim",
+            "relevance": "Verbatim practitioner testimony distinguishing historical financial guardianship from custody.",
+        },
+        {
+            "source_type": "video_pro_tip",
+            "video_id": "Gv4Mibtn8CM",
+            "title": "Analyzing Probate Records: Finding Our Ancestor's Stories",
+            "channel": "FamilySearch",
+            "author": "FamilySearch",
+            "text": "signatures are valuable to help you determine if people are the same.",
+            "tip": "signatures are valuable to help you determine if people are the same.",
+            "timestamp": 404,
+            "timestamp_seconds": 404,
+            "timestamp_label": "[00:06:44]",
+            "url": "https://www.youtube.com/watch?v=Gv4Mibtn8CM&t=404s",
+            "markdown": "[00:06:44](https://www.youtube.com/watch?v=Gv4Mibtn8CM&t=404s)",
+            "epistemic_status": "attributed_practitioner_claim",
+            "relevance": "Verbatim practitioner testimony on signature comparison for identity research.",
+        },
+        {
+            "source_type": "video_pro_tip",
+            "video_id": "fCvgh_QabMY",
+            "title": "Records Analysis: Level up Your Probate Skills",
+            "channel": "FamilySearch",
+            "author": "FamilySearch",
+            "text": "there's actually a back side of this that has more information.",
+            "tip": "there's actually a back side of this that has more information.",
+            "timestamp": 528,
+            "timestamp_seconds": 528,
+            "timestamp_label": "[00:08:48]",
+            "url": "https://www.youtube.com/watch?v=fCvgh_QabMY&t=528s",
+            "markdown": "[00:08:48](https://www.youtube.com/watch?v=fCvgh_QabMY&t=528s)",
+            "epistemic_status": "attributed_practitioner_claim",
+            "relevance": "Verbatim practitioner testimony on examining the reverse of estate papers.",
+        },
+        {
+            "source_type": "video_pro_tip",
+            "video_id": "jydLZrDuzCM",
+            "title": "Understanding Wills, Probate, Estate Records, and Women's Rights for Genealogy",
+            "channel": "Genealogy TV",
+            "author": "Genealogy TV",
+            "text": "42 years later when his Widow died.",
+            "tip": "42 years later when his Widow died.",
+            "timestamp": 837,
+            "timestamp_seconds": 837,
+            "timestamp_label": "[00:13:57]",
+            "url": "https://www.youtube.com/watch?v=jydLZrDuzCM&t=837s",
+            "markdown": "[00:13:57](https://www.youtube.com/watch?v=jydLZrDuzCM&t=837s)",
+            "epistemic_status": "attributed_practitioner_claim",
+            "relevance": "Verbatim practitioner testimony on the delayed reopening of an estate after the widow’s death.",
+        },
+        {
+            "source_type": "video_pro_tip",
+            "video_id": "Xzst9ZSC1M0",
+            "title": "Using Land and Probate Records in Family History Research Laurie Bradshaw",
+            "channel": "Gary Foster",
+            "author": "Gary Foster",
+            "text": "if you get a will and there's several pages read all of the pages.",
+            "tip": "if you get a will and there's several pages read all of the pages.",
+            "timestamp": 828,
+            "timestamp_seconds": 828,
+            "timestamp_label": "[00:13:48]",
+            "url": "https://www.youtube.com/watch?v=Xzst9ZSC1M0&t=828s",
+            "markdown": "[00:13:48](https://www.youtube.com/watch?v=Xzst9ZSC1M0&t=828s)",
+            "epistemic_status": "attributed_practitioner_claim",
+            "relevance": "Verbatim practitioner testimony on reading complete wills and finding later provisions.",
+        },
+        {
+            "source_type": "video_pro_tip",
+            "video_id": "TBB8OPPFSsM",
+            "title": "What’s in a Probate Record and How to Use it for Genealogical Research– James Tanner (10 Sep 2023)",
+            "channel": "BYU Library Family History Center",
+            "author": "BYU Library Family History Center",
+            "text": "always check the catalog of the available records to see if there are probate records before you start trying to do searches and things like that.",
+            "tip": "always check the catalog of the available records to see if there are probate records before you start trying to do searches and things like that.",
+            "timestamp": 2150,
+            "timestamp_seconds": 2150,
+            "timestamp_label": "[00:35:50]",
+            "url": "https://www.youtube.com/watch?v=TBB8OPPFSsM&t=2150s",
+            "markdown": "[00:35:50](https://www.youtube.com/watch?v=TBB8OPPFSsM&t=2150s)",
+            "epistemic_status": "attributed_practitioner_claim",
+            "relevance": "Verbatim practitioner testimony on establishing collection coverage before name searching.",
+        },
+        {
+            "source_type": "video_pro_tip",
+            "video_id": "n8jP0gweIR4",
+            "title": "Affidavits of Heirship and Other Texas Probate Pitfalls | TPRE Podcast Ep 3",
+            "channel": "Texas Probate Real Estate",
+            "author": "Texas Probate Real Estate",
+            "text": "I want to physically inspect them.",
+            "tip": "I want to physically inspect them.",
+            "timestamp": 1759,
+            "timestamp_seconds": 1759,
+            "timestamp_label": "[00:29:19]",
+            "url": "https://www.youtube.com/watch?v=n8jP0gweIR4&t=1759s",
+            "markdown": "[00:29:19](https://www.youtube.com/watch?v=n8jP0gweIR4&t=1759s)",
+            "epistemic_status": "attributed_practitioner_claim",
+            "relevance": "Verbatim practitioner testimony on physically inspecting the representative’s letters.",
+        },
+        {
+            "source_type": "video_pro_tip",
+            "video_id": "Dutmzc9gb30",
+            "title": "Florida Probate Explained: What Happens When Someone Dies Owning Real Estate?",
+            "channel": "Courtney Fricke",
+            "author": "Courtney Fricke",
+            "text": "You got to start with the title to the property.",
+            "tip": "You got to start with the title to the property.",
+            "timestamp": 725,
+            "timestamp_seconds": 725,
+            "timestamp_label": "[00:12:05]",
+            "url": "https://www.youtube.com/watch?v=Dutmzc9gb30&t=725s",
+            "markdown": "[00:12:05](https://www.youtube.com/watch?v=Dutmzc9gb30&t=725s)",
+            "epistemic_status": "attributed_practitioner_claim",
+            "relevance": "Verbatim practitioner testimony on beginning Florida inherited-property analysis with title.",
+        },
+        {
+            "source_type": "video_pro_tip",
+            "video_id": "7xCfSyqYEys",
+            "title": "Probate Process for Real Estate Agents & Investors: 12 Steps From Filing to Sale",
+            "channel": "Probate Mastery",
+            "author": "Probate Mastery",
+            "text": "Just because it's not on their list of inventory does not mean that there's no real estate.",
+            "tip": "Just because it's not on their list of inventory does not mean that there's no real estate.",
+            "timestamp": 3589,
+            "timestamp_seconds": 3589,
+            "timestamp_label": "[00:59:49]",
+            "url": "https://www.youtube.com/watch?v=7xCfSyqYEys&t=3589s",
+            "markdown": "[00:59:49](https://www.youtube.com/watch?v=7xCfSyqYEys&t=3589s)",
+            "epistemic_status": "attributed_practitioner_claim",
+            "relevance": "Verbatim practitioner testimony on incomplete inventories and property outside the listed estate assets.",
+        },
+    ],
+}

@@ -1,314 +1,334 @@
 {
   "diagrams": [
     {
-      "diagram_id": "diag-01-value-ladder-workflow",
-      "chart_type": "process_flow",
-      "title": "From pain signal to recurring portfolio cashflow",
-      "subtitle": "Five-stage digital product value ladder",
+      "diagram_id": "diag-01-buyer-to-supported-product",
       "chapter_number": 1,
-      "epistemic_tag": "operating_framework",
-      "assumptions_note": "Numeric values indicate operating sequence, not guaranteed conversion rates.",
-      "caption": "Validate willingness to pay before full asset production, then compound LTV via order bumps, 1-click upsells, and recurring updates.",
+      "title": "Choose the Buyer Before the File Format",
+      "subtitle": "Research the problem, create a useful product, connect the offer, and make delivery understandable.",
+      "caption": "Victor Jaro emphasizes buyer research; Baddie In Business demonstrates Canva production; Rochelle Be connects a free win to a paid offer; Richard Yu simplifies sales links; Tatyana Savage supplies access instructions.",
+      "assumptions_note": "These practitioners describe complementary practices, not a jointly operated business or a guaranteed sales sequence.",
+      "note": "Jaro reports no sales from their first student-and-teacher templates. Savage describes instructions in listing images and delivered files as a way to reduce customer questions.",
+      "chart_type": "process_flow",
       "stages": [
         {
-          "label": "Validate pain",
+          "step": "01",
+          "label": "Research the buyer",
           "value": "Step 1",
-          "numeric_value": 1.0,
-          "detail": "Mine Ad Libraries, search queries, and Reddit threads; pre-sell or smoke-test before full build."
+          "detail": "Victor Jaro researches the buyer and topic before investing hours in a paid Notion template."
         },
         {
-          "label": "Ship core SKU",
+          "step": "02",
+          "label": "Build the useful product",
           "value": "Step 2",
-          "numeric_value": 2.0,
-          "detail": "Package a modular template, toolkit, or micro-course that delivers a measurable win in 15 minutes."
+          "detail": "Baddie In Business duplicates a working Canva page layout and exports the ebook as PDF standard."
         },
         {
-          "label": "Expand basket",
+          "step": "03",
+          "label": "Connect a small win",
           "value": "Step 3",
-          "numeric_value": 3.0,
-          "detail": "Attach a contextual $19-$29 order bump and a 1-click post-purchase implementation upsell."
+          "detail": "Rochelle Be makes the freebie goal-specific and outcome-focused, with a direct connection to the paid product."
         },
         {
-          "label": "Automate onboarding",
+          "step": "04",
+          "label": "Simplify the purchase path",
           "value": "Step 4",
-          "numeric_value": 4.0,
-          "detail": "Deliver license tokens, Visa CE 3.0 receipts, and a 5-part activation sequence to cut refunds."
+          "detail": "Richard Yu links a single product directly to its sales page and recommends at most three intermediate links when several offers are available."
         },
         {
-          "label": "Ascend LTV",
+          "step": "05",
+          "label": "Explain access and usage",
           "value": "Step 5",
-          "numeric_value": 5.0,
-          "detail": "Convert proven buyers into annual data feeds, paid communities, or quarterly template drops."
+          "detail": "Tatyana Savage puts download instructions and FAQs in listing images and usage instructions inside the delivered files."
         }
       ]
     },
     {
-      "diagram_id": "diag-02-demand-validation-funnel",
-      "chart_type": "funnel",
-      "title": "Self-liquidating acquisition to backend ascension",
-      "subtitle": "Illustrative cohort of 1,000 targeted visitors",
+      "diagram_id": "diag-02-related-offer-price-path",
       "chapter_number": 6,
-      "epistemic_tag": "illustrative_model",
-      "assumptions_note": "Invented nested cohort counts illustrating funnel math; actual conversion varies by traffic source and offer.",
-      "caption": "Newsletter co-registration and front-end order bumps offset acquisition spend so backend community and bundle sales become high-margin profit.",
+      "title": "From a $7 Entry Product to a $57 Bundle",
+      "subtitle": "Related products expand the order; delivery must match what the buyer actually purchases.",
+      "caption": "Maik Kleinert | Content-to-Conversion Systems describes a $7 entry product, a mini course reduced to $20, and another product reduced to $30, producing a $57 order.",
+      "assumptions_note": "Maik Kleinert's amounts are product prices and the reported combined order, not audience counts or conversion rates. The first three amounts are individual line items, not running subtotals. The final amount repeats at delivery.",
+      "note": "Maik Kleinert checks whether a promotional DM was already sent and whether the person already purchased. Funnel Building Secrets recommends placing a test order through checkout and the additional offers.",
+      "chart_type": "funnel",
       "stages": [
         {
-          "label": "Targeted clicks",
-          "value": "1,000",
-          "numeric_value": 1000.0,
-          "detail": "High-intent visitors from YouTube tutorials, Reddit SERP threads, GEO citations, or paid tests."
+          "label": "Entry product",
+          "value": 7,
+          "display": "$7",
+          "conversion": "Buyer conversion not reported",
+          "detail": "Maik Kleinert identifies the entry product as the starting offer in the DM-connected product bundle."
         },
         {
-          "label": "Lead-magnet opt-ins",
-          "value": "380",
-          "numeric_value": 380.0,
-          "detail": "38% opt-in to a free calculator or lite template with optional paid newsletter co-registration."
+          "label": "Mini-course addition",
+          "value": 20,
+          "display": "$20 add-on",
+          "conversion": "Optional purchase; acceptance not reported",
+          "detail": "Maik Kleinert describes reducing the mini course from $27 to $20."
         },
         {
-          "label": "Core SKU buyers",
-          "value": "34",
-          "numeric_value": 34.0,
-          "detail": "3.4% front-end conversion on a $49 operational toolkit or template system."
+          "label": "Related product addition",
+          "value": 30,
+          "display": "$30 add-on",
+          "conversion": "Optional purchase; acceptance not reported",
+          "detail": "Maik Kleinert describes reducing the other product from $47 to $30."
         },
         {
-          "label": "Bump & upsell buyers",
-          "value": "13",
-          "numeric_value": 13.0,
-          "detail": "38% order-bump attachment and 14% 1-click post-purchase bundle upgrades."
+          "label": "Combined order",
+          "value": 57,
+          "display": "$57",
+          "conversion": "Applies when all three products are bought",
+          "detail": "Maik Kleinert reports that the combined purchase is $57 rather than the $7 entry purchase alone."
         },
         {
-          "label": "Annual subscribers",
-          "value": "5",
-          "numeric_value": 5.0,
-          "detail": "Ascended members on a $290-$490/yr update feed or operator community."
+          "label": "Purchased-product delivery",
+          "value": 57,
+          "display": "$57 order, unchanged",
+          "conversion": "Delivery checkpoint, not another charge",
+          "detail": "Keep access tied to the purchased products. Funnel Building Secrets calls for a test order to confirm the purchase path works."
         }
       ]
     },
     {
-      "diagram_id": "diag-03-slo-contribution-waterfall",
-      "chart_type": "waterfall",
-      "title": "Gross checkout receipts to net contribution margin",
-      "subtitle": "Illustrative $100 blended basket on Merchant-of-Record rails",
+      "diagram_id": "diag-03-template-checkout-money-checkpoints",
       "chapter_number": 3,
-      "epistemic_tag": "illustrative_model",
-      "assumptions_note": "USD per $100 gross checkout basket; opening and closing bars are totals, middle bars are deductions.",
-      "caption": "$100 gross receipts less $5.50 MoR processing, $4.00 refund reserve, $12.00 affiliate/support allocation, and $23.50 media spend leaves $55.00 contribution.",
-      "stages": [
+      "title": "Separate Sale Price, Proceeds, and Commission",
+      "subtitle": "Reported checkout examples clarify what a template seller can compare without treating commission as the full cost.",
+      "caption": "Stack Receipts reports a $20 domestic-card sale leaving $18.50 through Lemon Squeezy or $18.12 through Payhip Free after Stripe. Smart Capital reports a $2.90 Gumroad commission on a $29 template before processing.",
+      "assumptions_note": "Each total starts an independent checkout example. Stack Receipts supplies the proceeds directly; no intermediate fee amounts are estimated. Smart Capital's final deduction is commission only, and no Gumroad net payout is asserted.",
+      "note": "These Stack Receipts and Smart Capital storefront examples apply to template checkout planning. Job4all separately reports Notion Marketplace charges of 8% plus $0.40; those charges must not be applied to these other platforms.",
+      "chart_type": "waterfall",
+      "bars": [
         {
-          "label": "Gross basket",
-          "value": "$100.00",
-          "numeric_value": 100.0,
-          "detail": "Combined front-end SKU, order bump, and post-purchase upsell receipts excluding pass-through VAT."
+          "label": "Lemon Squeezy sale",
+          "value": 20,
+          "display": "$20",
+          "kind": "total"
         },
         {
-          "label": "MoR & payment fee",
-          "value": "-$5.50",
-          "numeric_value": -5.5,
-          "detail": "Merchant-of-Record 5% + $0.50 fee handling global VAT/sales-tax remittance and fraud screening."
+          "label": "Lemon Squeezy proceeds",
+          "value": 18.5,
+          "display": "$18.50",
+          "kind": "result"
         },
         {
-          "label": "Refunds & disputes",
-          "value": "-$4.00",
-          "numeric_value": -4.0,
-          "detail": "4% combined refund and dispute allowance under clear click-to-cancel terms."
+          "label": "Payhip Free sale",
+          "value": 20,
+          "display": "$20",
+          "kind": "total"
         },
         {
-          "label": "Support & affiliates",
-          "value": "-$12.00",
-          "numeric_value": -12.0,
-          "detail": "Blended affiliate payout share and Tier-1 support/fulfillment automation cost."
+          "label": "Payhip proceeds after Stripe",
+          "value": 18.12,
+          "display": "$18.12",
+          "kind": "result"
         },
         {
-          "label": "Net ad spend",
-          "value": "-$23.50",
-          "numeric_value": -23.5,
-          "detail": "Paid media outlay net of Day-1 SparkLoop / co-registration lead-magnet liquidation."
+          "label": "Gumroad template sale",
+          "value": 29,
+          "display": "$29",
+          "kind": "total"
         },
         {
-          "label": "Contribution margin",
-          "value": "$55.00",
-          "numeric_value": 55.0,
-          "detail": "Closing contribution before fixed studio opex, contractor retainers, and owner taxes."
+          "label": "Gumroad commission only",
+          "value": 2.9,
+          "display": "$2.90 deducted before processing",
+          "kind": "deduction"
         }
       ]
     },
     {
-      "diagram_id": "diag-04-mor-vs-direct-fee-bars",
-      "chart_type": "horizontal_bars",
-      "title": "Effective take-rate across checkout & distribution rails",
-      "subtitle": "Illustrative % platform & payment fee on a $100 digital order",
+      "diagram_id": "diag-04-ai-product-price-reference-points",
       "chapter_number": 2,
-      "epistemic_tag": "illustrative_model",
-      "assumptions_note": "Percent of a $100 digital sale; excludes optional paid discovery boosts and state registration overhead.",
-      "caption": "Direct Stripe has the lowest card fee but leaves global VAT/Wayfair nexus compliance on the seller; MoR platforms absorb tax liability for ~2% more.",
-      "stages": [
+      "title": "Price the Specific Result",
+      "subtitle": "Beginner downloads, edited PDFs, and a resource-app bundle carry different practitioner price recommendations.",
+      "caption": "Baddie In Business suggests $9–$27 beginner downloads. Richard Yu recommends $27–$47 for an edited, pain-specific PDF. Nathan Nazareth demonstrates a $39 one-time guide, member area, and AI resource-app offer.",
+      "assumptions_note": "Baddie In Business and Richard Yu provide range endpoints, not observed price distributions. Each endpoint is shown separately with identical minimum, maximum, and reference values; none is asserted to be a statistical typical price.",
+      "note": "Nathan Nazareth puts the offer before the product and recommends testing the published app through a real credit-card purchase after functional cleanup.",
+      "chart_type": "horizontal_bars",
+      "unit": "USD per offer; fixed reference points",
+      "bars": [
         {
-          "label": "Direct Stripe + Tax",
-          "value": "3.7% / $3.70",
-          "numeric_value": 3.7,
-          "detail": "2.9% + $0.30 card fee plus ~0.5% Stripe Tax; seller still owns state/VAT registrations."
+          "label": "Baddie beginner lower endpoint",
+          "min": 9,
+          "max": 9,
+          "typical": 9,
+          "display": "$9, lower end of $9–$27"
         },
         {
-          "label": "MoR (Paddle / LS)",
-          "value": "5.5% / $5.50",
-          "numeric_value": 5.5,
-          "detail": "5% + $0.50 Merchant-of-Record fee; MoR acts as legal seller and remits global VAT/sales tax."
+          "label": "Baddie beginner upper endpoint",
+          "min": 27,
+          "max": 27,
+          "typical": 27,
+          "display": "$27, upper end of $9–$27"
         },
         {
-          "label": "Gumroad Direct",
-          "value": "10.5% / $10.50",
-          "numeric_value": 10.5,
-          "detail": "10% + $0.50 direct-link fee; simple starter rail but expensive above $10k/mo volume."
+          "label": "Richard Yu PDF lower endpoint",
+          "min": 27,
+          "max": 27,
+          "typical": 27,
+          "display": "$27, lower end of $27–$47"
         },
         {
-          "label": "App Store In-App",
-          "value": "30.0% / $30.00",
-          "numeric_value": 30.0,
-          "detail": "Standard 30% mobile store commission (15% Small Business Program) vs Web2App external web checkout."
+          "label": "Richard Yu PDF upper endpoint",
+          "min": 47,
+          "max": 47,
+          "typical": 47,
+          "display": "$47, upper end of $27–$47"
+        },
+        {
+          "label": "Nathan Nazareth resource-app bundle",
+          "min": 39,
+          "max": 39,
+          "typical": 39,
+          "display": "$39 one-time"
         }
       ]
     },
     {
-      "diagram_id": "diag-05-piracy-refund-triage-tree",
-      "chart_type": "decision_tree",
-      "title": "Checkout compliance, chargeback & piracy defense tree",
-      "subtitle": "Operational triage before scaling paid traffic",
+      "diagram_id": "diag-05-payment-provider-readiness-gates",
       "chapter_number": 5,
-      "epistemic_tag": "operating_framework",
-      "assumptions_note": "Numbers identify decision nodes; keep dispute ratio well below the 0.75% card-network threshold.",
-      "caption": "Prevent friendly-fraud chargebacks and group-buy leaks structurally through MoR tax handling, CE 3.0 logs, 1-click refunds, and fingerprinted files.",
-      "stages": [
+      "title": "Choose the Payment Route Before Migrating",
+      "subtitle": "Check eligibility, tax responsibility, product operations, and payout timing before relying on a replacement checkout.",
+      "caption": "Gaurav Tiwari prioritizes seller eligibility and license keys; SoloBuild compares tax administration and payout terms; OCH Platform distinguishes Stripe Tax activation from a Stripe connection; heyymilian identifies missing product-delivery functions.",
+      "assumptions_note": "These are Gaurav Tiwari, SoloBuild, OCH Platform, and heyymilian's reported checks. Eligibility, coverage, and pricing depend on the provider and product configuration; a payment connection alone does not establish tax handling.",
+      "note": "Gaurav Tiwari recommends retaining control of the customer list, license server, and checkout links. SoloBuild reports a $100 Paddle payout minimum and monthly payment by the fifteenth.",
+      "chart_type": "decision_tree",
+      "nodes": [
         {
-          "label": "Global tax covered?",
-          "value": "Node 1",
-          "numeric_value": 1.0,
-          "detail": "Yes via MoR or registered tax engine: advance to Node 2. No: route international/nexus checkout to MoR."
+          "gate": "G1",
+          "question": "Does the destination accept the seller location and intended product?",
+          "pass_next": "G2",
+          "fail_action": "Choose an eligible destination before migrating. Gaurav Tiwari reports that their India-based plugin business is excluded from the Managed Payments path they discuss."
         },
         {
-          "label": "CE 3.0 telemetry?",
-          "value": "Node 2",
-          "numeric_value": 2.0,
-          "detail": "Log IP, device, timestamp, license activation, and download events to win friendly-fraud representments."
+          "gate": "G2",
+          "question": "Are tax responsibility, coverage, and the administrative trade-off understood?",
+          "pass_next": "G3",
+          "fail_action": "Compare filing time and accountant costs with the handoff premium as SoloBuild recommends. For the Stripe Tax route, follow OCH Platform's separate dashboard and integration activation."
         },
         {
-          "label": "Dispute rate <0.4%?",
-          "value": "Node 3",
-          "numeric_value": 3.0,
-          "detail": "Yes: scale traffic. Elevated: enable self-serve 1-click refunds/cancellations so unhappy buyers refund instead of disputing."
+          "gate": "G3",
+          "question": "Are delivery, license keys, download links, storefront functions, and affiliates accounted for?",
+          "pass_next": "G4",
+          "fail_action": "Arrange the missing functions before switching. heyymilian says Managed Payments does not include these Lemon Squeezy functions; Gaurav Tiwari puts existing license keys ahead of promotional fees."
         },
         {
-          "label": "Canary watermark?",
-          "value": "Node 4",
-          "numeric_value": 4.0,
-          "detail": "Embed buyer-specific canary hashes and automate 17 U.S.C. 512(c) DMCA notices on leaked repos."
+          "gate": "G4",
+          "question": "Do payout timing and minimum balances fit the business?",
+          "pass_next": "Proceed with the eligible route and the accounted-for delivery and licensing arrangements.",
+          "fail_action": "Reconsider the provider or cash timing before depending on payouts. SoloBuild reports Paddle's monthly schedule and $100 minimum."
         }
       ]
     },
     {
-      "diagram_id": "diag-06-four-person-empire-org",
-      "chart_type": "org_architecture",
-      "title": "One full-time architect, three specialized contractors",
-      "subtitle": "Illustrative 4-person ($425k-$800k/yr) portfolio pod",
+      "diagram_id": "diag-06-expertise-newsletter-operating-functions",
       "chapter_number": 11,
-      "epistemic_tag": "operating_framework",
-      "assumptions_note": "Numeric values are role identifiers, not FTE salaries. All contractor work requires signed IP assignment.",
-      "caption": "Keep headcount lean by automating fulfillment, tax, and Tier-1 FAQ triage while focusing human talent on SKU quality and creative velocity.",
-      "stages": [
+      "title": "Build the Newsletter Around a Reader Problem",
+      "subtitle": "Connect positioning, repeatable publishing, suitable advertising, and outcome-led offers.",
+      "caption": "Nicolas Cole emphasizes positioning and discovery; beehiiv demonstrates repeatable production and advertising operations; Write • Build • Scale develops reader conversations; Matt McGarry connects cohort assignments to promised outcomes.",
+      "assumptions_note": "Nicolas Cole, beehiiv, Write • Build • Scale, and Matt McGarry describe operating practices, not a shared staffing structure. The functions do not imply separate employees, and publisher headcount is not specified.",
+      "note": "beehiiv reports up to five claimed advertising offers at once and five days to publish. Stack Receipts advises comparing advertising earnings with the plan bill at the same list size and billing cadence.",
+      "chart_type": "org_architecture",
+      "center": {
+        "role": "Expertise-led newsletter publisher",
+        "headcount": "Not specified",
+        "focus": "Serve a specific reader problem with a repeatable publication and relevant paid outcomes, following Nicolas Cole and Write • Build • Scale."
+      },
+      "spokes": [
         {
-          "label": "Owner / product architect",
-          "value": "1 FT",
-          "numeric_value": 1.0,
-          "detail": "Owns market selection, offer positioning, pricing, funnel math, and capital allocation."
+          "role": "Positioning and discovery",
+          "type": "Audience-development function",
+          "kpi": "Reader acquisition by source; Nicolas Cole reports over 50% of Write With AI's acquisition came from inside Substack's ecosystem."
         },
         {
-          "label": "Product & UI builder",
-          "value": "1 C",
-          "numeric_value": 2.0,
-          "detail": "Builds modular Notion/Sheets/Figma systems, calculators, and micro-extension updates under written IP assignment."
+          "role": "Repeatable issue production",
+          "type": "Editorial function",
+          "kpi": "A repeatable issue format and publishing routine; beehiiv's Dope Act example saves the drafting process as a Claude skill."
         },
         {
-          "label": "Video & ad editor",
-          "value": "1 C",
-          "numeric_value": 3.0,
-          "detail": "Produces faceless YouTube tutorials, VSL hooks, and weekly Meta/TikTok creative variants."
+          "role": "Advertising operations",
+          "type": "Placement and reporting function",
+          "kpi": "Suitable placements within beehiiv's reported five-day claim window; reject unsuitable offers with a reason."
         },
         {
-          "label": "Ops & affiliate lead",
-          "value": "1 C",
-          "numeric_value": 4.0,
-          "detail": "Manages Tier-2 customer tickets, refund QA, DMCA sweeps, and affiliate/newsletter partner payouts."
+          "role": "Reader outcomes and paid offers",
+          "type": "Product and learning function",
+          "kpi": "Assignments sufficient for the promised outcome, as Matt McGarry requires; use reader conversations about goals and obstacles as Write • Build • Scale recommends."
         }
       ]
     },
     {
-      "diagram_id": "diag-07-zero-cogs-startup-stack",
-      "chart_type": "stacked_comparison",
-      "title": "Disciplined $10,000 digital product launch allocation",
-      "subtitle": "Illustrative pilot budget with 50% untouched cash reserve",
+      "diagram_id": "diag-07-storefront-base-rate-comparison",
       "chapter_number": 4,
-      "epistemic_tag": "illustrative_model",
-      "assumptions_note": "USD; four additive components total $10,000 for a multi-SKU launch scenario. Serverless hosting and startup credits keep fixed tech COGS near zero.",
-      "caption": "Never sink $10,000 into unvalidated course production; cap initial build + legal setup and preserve liquidity for post-validation traffic scaling.",
-      "stages": [
+      "title": "Compare Base Rates Without Hiding Other Charges",
+      "subtitle": "Percentage charges are only one part of the storefront decision.",
+      "caption": "Smart Capital reports 10% Gumroad commission and 5% on Payhip Free. Stack Receipts uses 5% plus $0.50 for Lemon Squeezy. Job4all reports 8% plus $0.40 for Notion Marketplace.",
+      "assumptions_note": "Smart Capital, Stack Receipts, and Job4all describe separate platform alternatives. The percentages are not additive, the low and high values repeat each quoted base rate, and fixed charges and processing are not converted into invented effective-rate estimates.",
+      "note": "Smart Capital explicitly separates commission from processing. Stack Receipts specifies a domestic-card example. Job4all also mentions foreign exchange and possible refund or chargeback costs. These reported schedules are not promises of current platform terms.",
+      "chart_type": "stacked_comparison",
+      "unit": "Percent of sale; independent platform alternatives",
+      "total_range": "Quoted base percentage rates span 5%–10%; do not sum the alternatives",
+      "buckets": [
         {
-          "label": "Entity & IP setup",
-          "value": "$1,200",
-          "numeric_value": 1200.0,
-          "detail": "LLC formation, business banking, domain portfolio, and contractor work-made-for-hire / IP templates."
+          "label": "Gumroad commission",
+          "low": 10,
+          "high": 10,
+          "notes": "Smart Capital reports 10%, equivalent to $2.90 on its $29 template example, before processing."
         },
         {
-          "label": "Design & tooling",
-          "value": "$1,300",
-          "numeric_value": 1300.0,
-          "detail": "Screen-recording gear, analytics, email engine, and modular design assets not covered by free tiers."
+          "label": "Payhip Free platform charge",
+          "low": 5,
+          "high": 5,
+          "notes": "Smart Capital reports 5%, equivalent to $1.45 on its $29 example, before processing."
         },
         {
-          "label": "Validation ad tests",
-          "value": "$2,500",
-          "numeric_value": 2500.0,
-          "detail": "Bounded 72-hour pre-sale smoke tests and SLO creative experiments with strict kill gates."
+          "label": "Lemon Squeezy base percentage",
+          "low": 5,
+          "high": 5,
+          "notes": "Stack Receipts applies 5% plus $0.50 to its $20 domestic-card example and reports $18.50 in proceeds."
         },
         {
-          "label": "Operating reserve",
-          "value": "$5,000",
-          "numeric_value": 5000.0,
-          "detail": "Untouched liquidity buffer for scaling proven ROAS winners and covering payout timing."
+          "label": "Notion Marketplace percentage",
+          "low": 8,
+          "high": 8,
+          "notes": "Job4all reports 8% plus $0.40 per transaction, with foreign-exchange and possible refund or chargeback costs discussed separately."
         }
       ]
     },
     {
-      "diagram_id": "diag-08-thirty-day-launch-roadmap",
-      "chart_type": "timeline_roadmap",
-      "title": "Thirty days from pain signal to cash-flowing SKU",
-      "subtitle": "Four weekly validation, build, launch & optimization gates",
+      "diagram_id": "diag-08-faceless-content-purchase-readiness",
       "chapter_number": 12,
-      "epistemic_tag": "operating_framework",
-      "assumptions_note": "Numeric values are milestone end-days. Advance to paid scaling only after front-end unit economics clear target thresholds.",
-      "caption": "Ship a focused v1.0 painkiller in 14 days, validate real checkout conversion in Week 3, and lock onboarding + affiliate leverage by Day 30.",
-      "stages": [
+      "title": "Connect Faceless Content to a Working Purchase Path",
+      "subtitle": "Choose the buyer problem, demonstrate the product, connect checkout, and distinguish attention from sales.",
+      "caption": "Nick Nyxson and Nataleh Nicole connect useful content to relevant offers; Success With Sam demonstrates screen recordings; Rochelle Be checks generated video; Brem tests checkout links; DIGITAL INCOME PROJECT separates audience growth from monetization.",
+      "assumptions_note": "The weekly slots organize these practitioners' actions without imposing production quotas. Nick Nyxson, Nataleh Nicole, Success With Sam, Rochelle Be, and Brem do not establish a shared four-week completion or revenue promise.",
+      "note": "DIGITAL INCOME PROJECT reports 10,000 followers and over 500,000 views in 30 days while stating that monetization is still being tested. Richard Yu warns that affiliate refunds can remove commissions.",
+      "chart_type": "timeline_roadmap",
+      "weeks": [
         {
-          "label": "Mine & pre-sell",
-          "value": "Days 1-7",
-          "numeric_value": 7.0,
-          "detail": "Audit Ad Libraries and Reddit threads, wire MoR pre-sale lander, and confirm real buyer conversion."
+          "week": "Week 1",
+          "title": "Choose the problem and relevant offer",
+          "deliverable": "A buyer problem and an offer that useful content can demonstrate, following Nick Nyxson and Nataleh Nicole.",
+          "gate": "For affiliate offers, read buyer feedback and try the product where possible, as Richard Yu recommends before risking audience trust."
         },
         {
-          "label": "Build & wire SKU",
-          "value": "Days 8-14",
-          "numeric_value": 14.0,
-          "detail": "Assemble modular v1.0 product, order bump, 1-click upsell, CE 3.0 webhooks, and 5-email onboarding."
+          "week": "Week 2",
+          "title": "Produce and inspect the demonstration",
+          "deliverable": "A screen-recorded product demonstration in the style shown by Success With Sam, with main search keywords in the title and curiosity in the thumbnail as Nataleh Nicole recommends.",
+          "gate": "Preview generated video and correct misplaced overlays or awkward text before publication, following Rochelle Be."
         },
         {
-          "label": "Launch & liquidate",
-          "value": "Days 15-21",
-          "numeric_value": 21.0,
-          "detail": "Publish YouTube/Reddit/DM triggers, activate newsletter co-reg, and run $50/day SLO split tests."
+          "week": "Week 3",
+          "title": "Connect the content to checkout",
+          "deliverable": "A description with the relevant product link and a connected purchase button. One Person Business places the offer link at the top of the description.",
+          "gate": "Press the live-preview purchase button and confirm the intended checkout opens, as Brem does with Gumroad embedded in Framer."
         },
         {
-          "label": "Audit & scale",
-          "value": "Days 22-30",
-          "numeric_value": 30.0,
-          "detail": "Reconcile net contribution margin, cut refund friction, onboard affiliates, and scale winning hooks."
+          "week": "Week 4",
+          "title": "Separate audience traction from sales",
+          "deliverable": "Separate audience and purchase observations, following DIGITAL INCOME PROJECT's distinction between reach and monetization.",
+          "gate": "Do not treat follower or view counts as product sales. DIGITAL INCOME PROJECT explicitly leaves monetization under test after reporting audience growth."
         }
       ]
     }

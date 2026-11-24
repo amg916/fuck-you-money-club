@@ -1,0 +1,905 @@
+from __future__ import annotations
+
+CHAPTER_4 = {
+    "id": "Q4",
+    "chapter_id": "Q4",
+    "chapter_number": 4,
+    "question_number": 4,
+    "slug": "verify-the-surplus-and-research-competing-debt",
+    "question_prompt": "How do I verify an available surplus and research the debts and ownership records before contacting a claimant?",
+    "kicker": "Q4 / THE BIG MONEY PLAYBOOKS",
+    "title": "Verify the Surplus and Research Competing Debt",
+    "subtitle": "Already-claimed funds, title searches, property liens, junior lienholders, claimant entitlement, and Florida county auction documents.",
+    "layout_template": "comparison_matrix",
+    "reading_time_minutes": 15,
+    "executive_summary": (
+        "Eric Richardson, Alfred Taren, and Nick Fullmer agree that a surplus list is only the beginning: "
+        "check existing claims, identify ownership, and research competing debt. Richardson uses county "
+        "dockets, tax-deed portals, and recorder searches; Taren adds the foreclosure file, Propwire, "
+        "the money holder, and current lienholder payoffs. Florida county walkthroughs show why document "
+        "names and PDF update direction matter. Fullmer reports title-search prices around $100–$150; "
+        "Richardson describes a wider $60–$500 range. Their approaches diverge on when to spend money "
+        "and pursue uncertain files. Taren sometimes submits close cases to obtain the actual breakdown. "
+        "Sade describes a more aggressive Texas owner-claim route when notified junior creditors fail "
+        "to act, while explicitly retaining the possibility of later debt collection."
+    ),
+    "key_metrics": [
+        {
+            "label": "Already-filed application example",
+            "metric": "Already-filed application example",
+            "value": "$47,000 surplus",
+            "confidence": "attributed_practitioner_claim",
+            "context": (
+                "Richardson shows a surplus with an application already filed and says "
+                "he would leave that case alone."
+            ),
+            "source": "Money Making Juggernaut ([ZU8-PRxVeCg @ 00:03:15])",
+        },
+        {
+            "label": "Fullmer's title-search price observation",
+            "metric": "Fullmer's title-search price observation",
+            "value": "$100–$150",
+            "confidence": "attributed_practitioner_claim",
+            "context": (
+                "Fullmer reports prices he found online while discussing alternatives "
+                "for counties without online records."
+            ),
+            "source": "Nick Fullmer- Overage Syndicate ([KOYBZFn2k7w @ 00:04:29])",
+        },
+        {
+            "label": "Illustrated mortgage-surplus remainder",
+            "metric": "Illustrated mortgage-surplus remainder",
+            "value": "$180,000 becomes $55,000",
+            "confidence": "attributed_practitioner_claim",
+            "context": (
+                "Taren's worked example subtracts a $95,000 second mortgage, "
+                "$8,000 HOA debt, and $22,000 judgment from the listed surplus."
+            ),
+            "source": "Alfred Taren ([SzfjJzM76ls @ 00:01:26])",
+        },
+        {
+            "label": "Undisclosed child-support lien",
+            "metric": "Undisclosed child-support lien",
+            "value": "$30,000",
+            "confidence": "attributed_practitioner_claim",
+            "context": (
+                "A speaker on Dustin Hahn's show recounts an early wholesale deal "
+                "where the seller disclosed a $70,000 mortgage but omitted this lien."
+            ),
+            "source": "Dustin Hahn ([6IAi_pcEgFY @ 00:01:34])",
+        },
+    ],
+    "sections": [
+        {
+            "id": "practitioner-consensus",
+            "title": "The Practitioner Consensus",
+            "paragraphs": [
+                (
+                    "The first agreement is blunt: a surplus figure does not tell you whether the file is still open "
+                    "for business or what the former owner can collect. Eric Richardson starts mortgage-foreclosure "
+                    "research with the civil case number, taken from the auction calendar or foreclosure information, "
+                    "and searches the county docket for an existing surplus claim. For tax-sale files, he checks a "
+                    "tax-deed portal or a county list; when neither supplies the answer, he calls or emails the county "
+                    "for unclaimed excess proceeds. Alfred Taren attacks the other half of the problem: the listed "
+                    "amount can already be spoken for by competing creditors, so he checks the actual case or sale "
+                    "file and what has already been paid. The Polk County demonstration makes both checks visible. "
+                    "Its results page shows a sold property and a $45,000 surplus balance, but the researcher still "
+                    "opens the documents tab for claims and the disbursement tab for remaining funds. Richardson's "
+                    "application-status examples also distinguish an application, denial, appeal, and payment rather "
+                    "than treating the dollar amount as the whole story. These practitioners work through the file, "
+                    "not merely through the headline number on a list. "
+                    "Money Making Juggernaut [ZU8-PRxVeCg @ 00:00:39]; "
+                    "Alfred Taren [SzfjJzM76ls @ 00:04:17]; "
+                    "Tax Deed Surplus & Lien-Research Records [C9X-hGZ_2bI @ 00:00:26]."
+                ),
+                (
+                    "The second agreement is that competing debt has to be researched before treating surplus as "
+                    "the owner's payout. Taren describes second mortgages, home-equity lines, HOA claims, judgments, "
+                    "tax liens, and city charges as recurring items. On the mortgage-foreclosure side, his sequence "
+                    "is the foreclosing lender, later liens in order, and then the owner; a loan recorded before the "
+                    "foreclosing loan usually stays with the house rather than drawing from that surplus. On the "
+                    "tax-sale side, he explains that removing a lien from the house can move the creditor's claim "
+                    "over to the money. Sade gives the same basic distinction in a Texas illustration: the tax sale "
+                    "removes the collateral, but the mortgage debt remains, and the lender can seek excess proceeds. "
+                    "Dave at Private Investigator Videos adds that dates alone are not the entire title analysis: "
+                    "government claims, municipal claims, and certain priority liens can behave differently. AFX "
+                    "Research's Texas search route therefore reaches beyond mortgages into tax records, judgments, "
+                    "and commercial UCC filings. None of these speakers reduces the work to spotting the word "
+                    "'mortgage' and subtracting one recorded figure. Their recurring subjects are the sale type, "
+                    "recording history, creditor priority, and what debt actually remains. "
+                    "Alfred Taren [LdemHPCk0dk @ 00:01:10]; "
+                    "SadeLegal Law Firm [rNxycxH3ATc @ 00:01:08]; "
+                    "Private Investigator Videos [GWuQIN0aSwQ @ 00:00:50]; "
+                    "AFX Research LLC [HPyO3dkjbCQ @ 00:01:49]."
+                ),
+                (
+                    "Ownership research is the other baseline prerequisite, and the speakers make it more specific "
+                    "than finding a name beside an address. Nick Fullmer says to confirm who owned the property at "
+                    "the time of sale and, in certain states, who was on the mortgage. He singles out Minnesota as "
+                    "a place where, in his account, the surplus belongs to the mortgagor rather than necessarily "
+                    "the person named on the deed. Richardson's county-recorder method begins with the previous "
+                    "owner's name, because that is how he searches recorded liens and then checks the asset tied "
+                    "to each document. Dustin Hahn's show demonstrates another ownership problem: someone claiming "
+                    "to own the whole property may have another person on title, or may actually be another wholesaler. "
+                    "The panel uses county records to expose those mismatches before a contract reaches the title "
+                    "company. Taren adds deceased-owner files to the picture. He says the right to the funds can pass "
+                    "to family, with relationship or heirship evidence and sometimes probate, and suggests an obituary "
+                    "or skip trace to locate them. The practical agreement is to establish whose interest you are "
+                    "researching before presenting a potential recovery to the person who answers the phone. "
+                    "Nick Fullmer- Overage Syndicate [KOYBZFn2k7w @ 00:01:15]; "
+                    "Money Making Juggernaut [q95klfFm9mE @ 00:02:04]; "
+                    "Dustin Hahn [6IAi_pcEgFY @ 00:04:48]; "
+                    "Alfred Taren [SzfjJzM76ls @ 00:03:24]."
+                ),
+            ],
+            "table": {
+                "caption": "The recurring checks before a listed surplus becomes an owner-recovery prospect.",
+                "headers": ["Research Question", "Practitioner Method and Meaning", "Expert Source"],
+                "rows": [
+                    [
+                        "Has somebody already submitted a claim against this surplus?",
+                        "Search the mortgage case docket, tax-deed portal, or county list; request unclaimed funds information when necessary.",
+                        "Money Making Juggernaut ([ZU8-PRxVeCg @ 00:01:35])",
+                    ],
+                    [
+                        "Does the displayed balance also establish that nobody has claimed?",
+                        "Polk's $45,000 balance still leads to separate inspection of the documents tab and the disbursement tab.",
+                        "Tax Deed Surplus & Lien-Research Records ([C9X-hGZ_2bI @ 00:00:46])",
+                    ],
+                    [
+                        "Which creditor interests stand ahead of the former owner?",
+                        "Taren distinguishes the foreclosing lender, later liens, and earlier loans that usually remain with the house.",
+                        "Alfred Taren ([LdemHPCk0dk @ 00:01:29])",
+                    ],
+                    [
+                        "Did the tax sale eliminate collateral without eliminating mortgage debt?",
+                        "Sade explains that the mortgage lender can seek excess proceeds even though the property collateral is gone.",
+                        "SadeLegal Law Firm ([rNxycxH3ATc @ 00:01:08])",
+                    ],
+                    [
+                        "Does the deed identify the relevant claimant in every state?",
+                        "Fullmer says ownership at sale matters and identifies Minnesota's mortgagor distinction as an additional research detail.",
+                        "Nick Fullmer- Overage Syndicate ([KOYBZFn2k7w @ 00:01:30])",
+                    ],
+                    [
+                        "Could somebody besides the person speaking also hold title?",
+                        "The wholesale panel checks county ownership records before discovering an additional decision-maker later at the title company.",
+                        "Dustin Hahn ([6IAi_pcEgFY @ 00:04:48])",
+                    ],
+                ],
+            },
+        },
+        {
+            "id": "street-mechanics",
+            "title": "Exact Street Mechanics, Tools & Numbers",
+            "paragraphs": [
+                (
+                    "Richardson's inexpensive lien search starts with a county-provided property information report "
+                    "or owner's and encumbrance report. He says these identify the title holder, liens, and book-and-page "
+                    "references for recorded documents. Without that report, he searches the county recorder under "
+                    "the previous owner's name, then opens the deed and lien documents. Taren starts even closer to "
+                    "the foreclosure: in a court case, the parties named in the lawsuit can reveal other lienholders, "
+                    "and the final judgment usually includes the bank's interest and fees. For a trustee sale, he "
+                    "starts with the notice of sale. He uses NETR Online as a directory to county recording offices "
+                    "and Propwire as a free property-data starting point, while calling its balances estimates. AFX "
+                    "Research separates Texas searches by office: county clerk for recorded property documents, "
+                    "tax assessor-collector for unpaid property taxes, district or county clerk for judgments, and "
+                    "Secretary of State for commercial UCC filings. Rent Own Sell supplies another paid-data option, "
+                    "PropertyShark, and says title companies can perform lien searches for a fee. These are the actual "
+                    "routes the speakers name; the county report, recorded instrument, and estimated property-data "
+                    "balance serve different jobs in their research. "
+                    "Money Making Juggernaut [q95klfFm9mE @ 00:00:53]; "
+                    "Alfred Taren [LdemHPCk0dk @ 00:03:03]; "
+                    "AFX Research LLC [HPyO3dkjbCQ @ 00:01:09]; "
+                    "Rent Own Sell [VBvaq5etzV4 @ 00:01:23]."
+                ),
+                (
+                    "The Florida walkthroughs turn Richardson's report-and-records method into county-specific clicks. "
+                    "In Polk, search the tax-deed number, confirm sold rather than redeemed, and open the property "
+                    "information report. Its owner-information area supplies the deed's book and page; the official "
+                    "records search retrieves the deed. Notification addresses sit under NOA party labels, not simply "
+                    "NOA parties. Miami-Dade also takes the tax-deed number, but its results page does not display "
+                    "available surplus. The researcher opens the documents and surplus letter, then finds a title "
+                    "search on the last page. That report lists two deed references, which the demonstration follows "
+                    "to a warranty deed and a quitclaim deed. Notification addresses appear under Comm parties, and "
+                    "the tax-deed certification is labeled DR513. Citrus nests the property information report inside "
+                    "the application. Its owner section again supplies book and page, while notification addresses "
+                    "are called letters clerk's affidavit. Citrus also updates the surplus-notice file with later "
+                    "claim materials, so the researcher scrolls beyond blank forms into submitted documents. Richardson "
+                    "describes book-and-page references as the route to the official record; these county examples "
+                    "show where those references and related claim materials actually appear. "
+                    "Tax Deed Surplus & Lien-Research Records [C9X-hGZ_2bI @ 00:01:26]; "
+                    "Tax Deed Surplus & Lien-Research Records [sschUpuRZoU @ 00:01:37]; "
+                    "Tax Deed Surplus & Lien-Research Records [bmmWj7_LTrw @ 00:01:25]; "
+                    "Money Making Juggernaut [q95klfFm9mE @ 00:01:06]."
+                ),
+                (
+                    "The remaining Florida examples require a different scrolling strategy, not a different objective. "
+                    "Volusia puts the documents into one large PDF and adds incoming claims at the top. The "
+                    "demonstration searches by auction date, uses Control-F to locate the entry, and then finds the "
+                    "surplus notice, certificate of mailing, application, and property report. The deed comes from "
+                    "the report's owner-information book-and-page reference. Leon places the title search inside a "
+                    "document labeled with a year-like number; the opening page is an order form, so the researcher "
+                    "scrolls to the report and finds the owner's quitclaim deed in the same document. Leon's notification "
+                    "addresses come from the case's parties tab rather than a separate address document. Escambia "
+                    "requires the auction date and tax-deed number, opens its combined PDF through a magnifying-glass "
+                    "icon, and appends new documents at the end. Its surplus notice therefore appears toward the "
+                    "bottom. Fullmer supplies the fallback when a county offers no online documents at all: ask the "
+                    "recorder about a one-off search, pay a local researcher, or order a title search. He names "
+                    "Facebook Marketplace, Craigslist, and real-estate groups as places to find somebody who can "
+                    "visit the recorder's office. "
+                    "Tax Deed Surplus & Lien-Research Records [0bYWIHqHiOI @ 00:01:22]; "
+                    "Tax Deed Surplus & Lien-Research Records [nfSp1p7EQWw @ 00:01:40]; "
+                    "Tax Deed Surplus & Lien-Research Records [6GqKOOHC8D8 @ 00:02:40]; "
+                    "Nick Fullmer- Overage Syndicate [KOYBZFn2k7w @ 00:04:29]."
+                ),
+            ],
+            "table": {
+                "caption": "Six Florida document routes demonstrated by Tax Deed Surplus & Lien-Research Records.",
+                "headers": ["County and Entry Route", "Documents and Navigation Details", "Expert Source"],
+                "rows": [
+                    [
+                        "Polk: enter the tax-deed number in the case-number search.",
+                        "Use the property report for deed references; choose NOA party labels for the notification names and addresses.",
+                        "Tax Deed Surplus & Lien-Research Records ([C9X-hGZ_2bI @ 00:03:10])",
+                    ],
+                    [
+                        "Miami-Dade: enter the tax-deed number and inspect the documents.",
+                        "Find the title search, follow both deed references, use Comm parties for addresses, and locate the DR513.",
+                        "Tax Deed Surplus & Lien-Research Records ([sschUpuRZoU @ 00:03:26])",
+                    ],
+                    [
+                        "Volusia: select the auction date and locate the relevant entry.",
+                        "Open the combined PDF, inspect incoming claims at the top, and find notification addresses under certificate of mailing.",
+                        "Tax Deed Surplus & Lien-Research Records ([0bYWIHqHiOI @ 00:01:41])",
+                    ],
+                    [
+                        "Citrus: search the tax-deed number using the case-number tab.",
+                        "Find the report inside the application and scroll beyond blank surplus forms to later submitted claim documents.",
+                        "Tax Deed Surplus & Lien-Research Records ([bmmWj7_LTrw @ 00:03:09])",
+                    ],
+                    [
+                        "Leon: search the tax-deed number and open the documents tab.",
+                        "Scroll inside the combined document for title and deed; obtain notification names and addresses from the parties tab.",
+                        "Tax Deed Surplus & Lien-Research Records ([nfSp1p7EQWw @ 00:01:57])",
+                    ],
+                    [
+                        "Escambia: use the auction date and tax-deed number together.",
+                        "Open the magnifying-glass PDF, follow the report's deed reference, and look toward the bottom for the surplus notice.",
+                        "Tax Deed Surplus & Lien-Research Records ([6GqKOOHC8D8 @ 00:02:40])",
+                    ],
+                ],
+            },
+            "callout": {
+                "kind": "INSIDER PRO-TIPS",
+                "title": "Small research details the practitioners actually use",
+                "body": "Owner-name searches, embedded claim documents, exact labels, and direct payoff questions drive these methods.",
+                "items": [
+                    (
+                        "Richardson searches recorded liens under the previous owner's name, then checks the asset "
+                        "identified in the document rather than relying on the property address alone. "
+                        "[Money Making Juggernaut — q95klfFm9mE @ 00:02:04]"
+                    ),
+                    (
+                        "In Polk, choose NOA party labels for notification names and addresses; the researcher "
+                        "first opens NOA parties and then corrects that selection. "
+                        "[Tax Deed Surplus & Lien-Research Records — C9X-hGZ_2bI @ 00:03:10]"
+                    ),
+                    (
+                        "In Citrus, keep scrolling beyond the blank claim forms: the same file accumulates "
+                        "emails, letters, completed claims, and supporting documents. "
+                        "[Tax Deed Surplus & Lien-Research Records — bmmWj7_LTrw @ 00:03:09]"
+                    ),
+                    (
+                        "For a lien with no amount, Fullmer's question is: 'Is that lien still outstanding and "
+                        "how much is the lien for?' Use the case number or property address when calling its recorder. "
+                        "[Nick Fullmer- Overage Syndicate — KOYBZFn2k7w @ 00:03:47]"
+                    ),
+                ],
+            },
+            "sop_steps": [
+                {
+                    "step": 1,
+                    "title": "Check the existing claim record",
+                    "action": "Open the relevant docket, tax-deed portal, or county list.",
+                    "detail": (
+                        "Richardson searches a mortgage foreclosure by civil case number. For tax surplus, "
+                        "he checks the portal or list and calls or emails the county when those routes do not "
+                        "provide unclaimed-funds information. "
+                        "[Money Making Juggernaut — ZU8-PRxVeCg @ 00:00:39]"
+                    ),
+                },
+                {
+                    "step": 2,
+                    "title": "Identify ownership and recorded competing interests",
+                    "action": "Read the property report and retrieve the associated recorded documents.",
+                    "detail": (
+                        "Richardson uses a property information or owner's and encumbrance report for the "
+                        "title holder, liens, and book-and-page references, then searches the previous owner's "
+                        "name in the county recorder's records. "
+                        "[Money Making Juggernaut — q95klfFm9mE @ 00:01:06]"
+                    ),
+                },
+                {
+                    "step": 3,
+                    "title": "Separate held funds from current creditor balances",
+                    "action": "Ask the money holder and resolve missing lien amounts directly.",
+                    "detail": (
+                        "Taren asks the clerk, trustee, or county what sold and how much money is held; "
+                        "current second-mortgage and HOA balances come from lienholders. Fullmer calls the "
+                        "entity that recorded a lien when its amount is missing. "
+                        "[Alfred Taren — LdemHPCk0dk @ 00:04:51] "
+                        "[Nick Fullmer- Overage Syndicate — KOYBZFn2k7w @ 00:03:25]"
+                    ),
+                },
+                {
+                    "step": 4,
+                    "title": "Check the claimant before making the recovery call",
+                    "action": "Review the sale file, competing debt, and the person entitled to pursue funds.",
+                    "detail": (
+                        "Taren's pre-call checks are the actual case or sale file, everything recorded against "
+                        "the house, and the right person to contact. For a deceased owner, he names an obituary "
+                        "or skip trace as ways to find family. "
+                        "[Alfred Taren — SzfjJzM76ls @ 00:04:17]"
+                    ),
+                },
+            ],
+        },
+        {
+            "id": "disagreements-and-alternatives",
+            "title": "Where Practitioners Disagree & Alternative Playbooks",
+            "paragraphs": [
+                (
+                    "The sharpest contrast is not whether junior creditors exist, but what happens when they do not "
+                    "act. Taren's baseline is that the former owner stands behind qualifying creditors, yet he also "
+                    "says missed filing deadlines can move more money to the owner. Richardson makes a more specific "
+                    "Florida timing claim: he describes 120 days on the tax-sale side after the notice notification "
+                    "and 60 days on the mortgage-foreclosure side, while telling viewers to ask the county about the "
+                    "applicable period. Sade develops a more aggressive Texas owner-claim illustration. With $190,000 "
+                    "in excess proceeds and a $100,000 mortgage, the ordinary split in the example is $100,000 to "
+                    "the lender and $90,000 to the owner. Sade says the owner can pursue all the excess if the "
+                    "required procedural steps and notices are followed and the lender fails to intervene. That "
+                    "does not erase Sade's separate warning about the surviving debt: the lender can pursue a personal "
+                    "judgment, and Sade discusses bankruptcy or negotiating a smaller settlement as possible responses. "
+                    "The contrast is a creditor-payment baseline versus an owner pursuing funds after creditor inaction, "
+                    "not an assertion that every tax sale automatically cancels every debt. "
+                    "Alfred Taren [SzfjJzM76ls @ 00:03:05]; "
+                    "Money Making Juggernaut [q95klfFm9mE @ 00:03:28]; "
+                    "SadeLegal Law Firm [rNxycxH3ATc @ 00:02:39]; "
+                    "SadeLegal Law Firm [rNxycxH3ATc @ 00:05:33]."
+                ),
+                (
+                    "The research budget has several competing playbooks, and the quoted prices are not uniform. "
+                    "Richardson describes county reports and recorder searches as the easy, inexpensive route, then "
+                    "puts paid title searches anywhere from $60 to $300–$500. Fullmer reports finding searches around "
+                    "$100–$150 online and calls that expensive for the obstacle he is discussing. Rather than presenting "
+                    "a paid report as the only answer, he offers a local researcher, a recorder willing to help on "
+                    "a single case, or a local title-company referral that might produce a better rate. Rent Own Sell "
+                    "adds PropertyShark as an address-based third-party search for a nominal fee and notes that title "
+                    "companies can also supply buyer history. AFX Research emphasizes the broader professional-search "
+                    "job: a full chain of title, possible ownership gaps, easements, and covenants alongside liens. "
+                    "The scope is therefore different as well as the price. Richardson is teaching surplus-related "
+                    "lien discovery; AFX is describing title review for purchasers, investors, and lenders. Fullmer's "
+                    "cost discussion concerns getting unavailable local records. Those figures and methods sit side "
+                    "by side as attributed options, rather than collapsing into one supposedly standard price or "
+                    "one universal search package. "
+                    "Money Making Juggernaut [q95klfFm9mE @ 00:03:00]; "
+                    "Nick Fullmer- Overage Syndicate [KOYBZFn2k7w @ 00:04:29]; "
+                    "Rent Own Sell [VBvaq5etzV4 @ 00:01:38]; "
+                    "AFX Research LLC [HPyO3dkjbCQ @ 00:02:24]."
+                ),
+                (
+                    "The speakers also draw different lines around imperfect information. Richardson shows a $47,000 "
+                    "surplus with an application already filed and says he would leave it alone. Taren describes a "
+                    "different situation: a file where competing debt leaves the likely owner remainder uncertain. "
+                    "He does not always discard that file. He tells the homeowner it costs nothing to take a look, "
+                    "submits the claim, and asks for an itemized breakdown; the real answer arrives with lienholder "
+                    "payoffs. These are alternative responses to different obstacles, not conflicting instructions "
+                    "about the same case. Dave's title-search approach is firmer about the evidence used to understand "
+                    "the property: inspect the official title abstract rather than accepting the auction company's "
+                    "or owner's word. Taren still uses owner conversations to fill gaps, asking whether a recorded "
+                    "debt was paid, what the last payoff showed, and how far behind the owner was. Sade's aggressive "
+                    "claim discussion similarly separates a possible outcome from effortless execution: Sade describes "
+                    "repeated notices, chances for intervention, and substantial courtroom work. Across these approaches, "
+                    "the dividing questions are whether someone already filed, whether the remaining amount is merely "
+                    "uncertain, and whether the contemplated claim requires a contested procedural fight. "
+                    "Money Making Juggernaut [ZU8-PRxVeCg @ 00:03:15]; "
+                    "Alfred Taren [LdemHPCk0dk @ 00:06:09]; "
+                    "Private Investigator Videos [GWuQIN0aSwQ @ 00:02:29]; "
+                    "SadeLegal Law Firm [rNxycxH3ATc @ 00:07:18]."
+                ),
+            ],
+            "table": {
+                "caption": "Contrasts in search scope, timing, and treatment of uncertain or contested files.",
+                "headers": ["Decision or Contrast", "Attributed Alternative Playbooks", "Expert Source"],
+                "rows": [
+                    [
+                        "Use inexpensive county research or purchase a title search?",
+                        "Richardson starts with county reports and recorder searches, then quotes paid title searches from $60 up to $300–$500.",
+                        "Money Making Juggernaut ([q95klfFm9mE @ 00:03:00])",
+                    ],
+                    [
+                        "Buy a national search or seek help inside the county?",
+                        "Fullmer quotes $100–$150 searches and suggests local researchers, recorder assistance, or referrals to local title companies.",
+                        "Nick Fullmer- Overage Syndicate ([KOYBZFn2k7w @ 00:04:29])",
+                    ],
+                    [
+                        "Research recorded liens alone or examine the broader ownership chain?",
+                        "AFX's professional-search discussion also covers ownership transfers, chain gaps, easements, and covenants affecting the property.",
+                        "AFX Research LLC ([HPyO3dkjbCQ @ 00:02:24])",
+                    ],
+                    [
+                        "Walk away from a filed application or pursue uncertain balances?",
+                        "Richardson leaves the already-filed $47,000 example alone; Taren sometimes submits close files to obtain actual payoff information.",
+                        "Money Making Juggernaut ([ZU8-PRxVeCg @ 00:03:15]); Alfred Taren ([LdemHPCk0dk @ 00:06:24])",
+                    ],
+                    [
+                        "Treat creditor priority as automatic payment or examine creditor inaction?",
+                        "Taren says missed deadlines can enlarge the owner's remainder; Sade describes pursuing all funds after required notices and creditor inaction.",
+                        "Alfred Taren ([SzfjJzM76ls @ 00:03:05]); SadeLegal Law Firm ([rNxycxH3ATc @ 00:05:33])",
+                    ],
+                    [
+                        "Accept an owner's description or inspect an official title abstract?",
+                        "Dave rejects owner and auction-company assurances as the final evidence; Taren uses owner questions to investigate payoff gaps.",
+                        "Private Investigator Videos ([GWuQIN0aSwQ @ 00:02:29]); Alfred Taren ([LdemHPCk0dk @ 00:05:23])",
+                    ],
+                ],
+            },
+        },
+        {
+            "id": "failure-modes",
+            "title": "Firsthand Failure Modes, Traps & Economics Checks",
+            "paragraphs": [
+                (
+                    "The clearest firsthand economics reversal comes from Dustin Hahn's wholesale panel, not from a "
+                    "surplus-recovery payout. A speaker recounts an early deal where the seller reported a $70,000 "
+                    "mortgage. The speaker considered contracting at $100,000 and wholesaling at roughly $120,000, "
+                    "expecting about $20,000. The title company then uncovered a $30,000 child-support lien the seller "
+                    "had omitted, changing the deal. The panel also reports sellers forgetting second mortgages and "
+                    "contracts arriving without every person on title involved. Taren supplies the surplus-recovery "
+                    "version of the bottleneck: files have sat for months because one lienholder had not sent a "
+                    "payoff. Some liens later turn out not to exist anymore, increasing the potential remainder; "
+                    "other files shrink when the actual debt comes back. These accounts are different from Taren's "
+                    "explicit arithmetic illustrations. His $180,000 example falls to $55,000 after the stated "
+                    "second mortgage, HOA debt, and judgment; his $60,000 tax-surplus example produces nothing for "
+                    "an owner facing a $70,000 mortgage claim. The firsthand lesson is hidden debt and delayed "
+                    "payoffs; the worked examples show the economic direction without pretending they are completed "
+                    "recoveries or measured average results. "
+                    "Dustin Hahn [6IAi_pcEgFY @ 00:00:55]; "
+                    "Alfred Taren [LdemHPCk0dk @ 00:06:24]; "
+                    "Alfred Taren [SzfjJzM76ls @ 00:01:26]."
+                ),
+                (
+                    "Fullmer's demonstrated obstacle is a recorded Medicaid-related lien renewal with no dollar "
+                    "amount. The record confirms an interest but does not answer the question he needs answered: "
+                    "how much competing debt exists. He points to Healthcare and Family Services in Chicago on "
+                    "the document and recommends calling the recording entity with the case number or address "
+                    "to ask whether the lien remains outstanding and what it totals. Taren explains another "
+                    "reason a visible amount can mislead. Interest, penalties, fees, and lender advances for "
+                    "taxes or insurance can accumulate while public records lag; human data entry can introduce "
+                    "errors as well. His money-holder call establishes what is being held, not today's second-mortgage "
+                    "or HOA payoff. AFX Research supplies the reverse problem: a debt may have been paid without "
+                    "the lien ever being officially released. Its response is to contact the lienholder and ensure "
+                    "a release is filed once the matter is resolved. Dave adds that lien age, priority, and possible "
+                    "negotiation deserve inspection rather than assumptions. Together, these speakers identify "
+                    "missing amounts, stale amounts, and unreleased instruments as separate research problems. "
+                    "A document can be real while the economic conclusion drawn from its face is still wrong. "
+                    "Nick Fullmer- Overage Syndicate [KOYBZFn2k7w @ 00:03:02]; "
+                    "Alfred Taren [LdemHPCk0dk @ 00:04:17]; "
+                    "AFX Research LLC [HPyO3dkjbCQ @ 00:02:44]; "
+                    "Private Investigator Videos [GWuQIN0aSwQ @ 00:01:22]."
+                ),
+                (
+                    "The document walkthroughs expose small navigation failures with direct consequences for what "
+                    "the researcher sees. In Polk, the presenter opens NOA parties, fails to find the expected "
+                    "addresses, and corrects the choice to NOA party labels. Miami-Dade's surplus letter shows "
+                    "an original $233,356, but the researcher also identifies claims from Royal Properties and "
+                    "Miami Florida Home Solutions. That is an original-surplus figure accompanied by competing "
+                    "filings, not a displayed owner payout. Richardson's own examples make the same distinction "
+                    "with a $47,000 surplus he would leave alone because an application was already filed. "
+                    "Taren's closing warning addresses what happens if research shortcuts reach the phone call: "
+                    "say 'possible funds' or 'estimated surplus,' and do not promise a number. He has seen the "
+                    "actual remainder move in both directions after lien information arrives. The county "
+                    "demonstrations also show why the operator needs the document itself: a label can lead "
+                    "to the wrong notification material, while an earlier surplus letter can sit beside later "
+                    "claims. The money displayed, the documents submitted, and the amount ultimately left for "
+                    "the claimant are different facts in these practitioners' examples. Their checks keep those "
+                    "facts separate instead of turning an attractive list entry into a promised recovery. "
+                    "Tax Deed Surplus & Lien-Research Records [C9X-hGZ_2bI @ 00:02:49]; "
+                    "Tax Deed Surplus & Lien-Research Records [sschUpuRZoU @ 00:01:14]; "
+                    "Money Making Juggernaut [ZU8-PRxVeCg @ 00:03:15]; "
+                    "Alfred Taren [LdemHPCk0dk @ 00:07:15]."
+                ),
+            ],
+            "table": {
+                "caption": "Separate firsthand reversals, demonstrated record problems, and illustrative economics.",
+                "headers": ["Observed Problem or Illustration", "What the Practitioner Actually Reports", "Expert Source"],
+                "rows": [
+                    [
+                        "Firsthand wholesale reversal after a seller omitted competing debt.",
+                        "A planned roughly $20,000 wholesale spread encountered an undisclosed $30,000 child-support lien during the title-company review.",
+                        "Dustin Hahn ([6IAi_pcEgFY @ 00:01:14])",
+                    ],
+                    [
+                        "Firsthand surplus-file delay while waiting for current payoff information.",
+                        "Taren says files have sat for months waiting for one lienholder; later findings can enlarge or shrink surplus.",
+                        "Alfred Taren ([LdemHPCk0dk @ 00:06:24])",
+                    ],
+                    [
+                        "Demonstrated lien renewal establishes an interest without stating its amount.",
+                        "Fullmer's Medicaid-related example requires contacting the recording entity to ask the amount and whether it remains outstanding.",
+                        "Nick Fullmer- Overage Syndicate ([KOYBZFn2k7w @ 00:01:15])",
+                    ],
+                    [
+                        "Demonstrated county navigation error while locating notification names and addresses.",
+                        "The Polk researcher first opens NOA parties, then corrects the selection to NOA party labels for the addresses.",
+                        "Tax Deed Surplus & Lien-Research Records ([C9X-hGZ_2bI @ 00:03:10])",
+                    ],
+                    [
+                        "Demonstrated original surplus letter appears beside two already-submitted claims.",
+                        "Miami-Dade's $233,356 letter accompanies claims identified as Royal Properties and Miami Florida Home Solutions.",
+                        "Tax Deed Surplus & Lien-Research Records ([sschUpuRZoU @ 00:01:14])",
+                    ],
+                    [
+                        "Illustrated owner recovery disappears when mortgage debt exceeds available surplus.",
+                        "Taren's tax-sale example has $60,000 surplus against a $70,000 mortgage claim, leaving the former owner zero.",
+                        "Alfred Taren ([SzfjJzM76ls @ 00:02:25])",
+                    ],
+                ],
+            },
+            "callout": {
+                "kind": "OPERATOR GATE",
+                "title": "Practitioner checks before treating the file as a recovery",
+                "body": "Existing applications, unidentified debt, missing payoffs, and ownership mismatches are the recurring stop-and-check points.",
+                "items": [
+                    (
+                        "Inspect the application status rather than chasing the displayed amount: Richardson "
+                        "leaves his $47,000 example alone because somebody has already filed. "
+                        "[Money Making Juggernaut — ZU8-PRxVeCg @ 00:03:15]"
+                    ),
+                    (
+                        "Resolve a lien's missing amount with its recording entity; Fullmer's lien-renewal "
+                        "example does not disclose the balance needed to judge the surplus case. "
+                        "[Nick Fullmer- Overage Syndicate — KOYBZFn2k7w @ 00:03:25]"
+                    ),
+                    (
+                        "Keep the owner-facing amount estimated: Taren reports delayed payoffs and remainders "
+                        "that rise or shrink, then explicitly says never to promise a number. "
+                        "[Alfred Taren — LdemHPCk0dk @ 00:07:15]"
+                    ),
+                    (
+                        "Check who is actually on title before relying on one person's ownership account; "
+                        "the wholesale panel describes discovering another owner only after the contract reached title review. "
+                        "[Dustin Hahn — 6IAi_pcEgFY @ 00:05:01]"
+                    ),
+                ],
+            },
+        },
+    ],
+    "pull_quote": (
+        '"That\'s the starting number, that is not your deal." '
+        "— Alfred Taren (SzfjJzM76ls @ 00:04:48)."
+    ),
+    "diagram_id": "diag-07",
+    "action_checklist": [
+        (
+            "Search the mortgage case docket or tax-deed portal for existing surplus claims; call or email "
+            "the county for unclaimed-funds information when the online routes do not provide it. "
+            "[Money Making Juggernaut — ZU8-PRxVeCg @ 00:01:35]"
+        ),
+        (
+            "Read the foreclosure file or trustee-sale notice, then search recorded mortgages, liens, "
+            "and judgments; use NETR Online to locate the county recording office. "
+            "[Alfred Taren — LdemHPCk0dk @ 00:03:03]"
+        ),
+        (
+            "Use the property report's owner-information book and page to retrieve the deed, as the "
+            "Polk walkthrough demonstrates through the official records search. "
+            "[Tax Deed Surplus & Lien-Research Records — C9X-hGZ_2bI @ 00:01:26]"
+        ),
+        (
+            "Call the entity that recorded a lien when the document omits its amount; ask whether "
+            "the lien is still outstanding and how much it is for. "
+            "[Nick Fullmer- Overage Syndicate — KOYBZFn2k7w @ 00:03:47]"
+        ),
+        (
+            "Ask the clerk, trustee, or county how much money is held, and obtain current competing "
+            "balances from the relevant lienholders rather than treating the held balance as the owner's remainder. "
+            "[Alfred Taren — LdemHPCk0dk @ 00:04:51]"
+        ),
+        (
+            "Confirm the right person to contact; when the former owner has died, Taren uses an "
+            "obituary or skip trace to find family instead of automatically abandoning the file. "
+            "[Alfred Taren — SzfjJzM76ls @ 00:04:17]"
+        ),
+    ],
+    "statutory_citations": [
+        {
+            "title": (
+                "Money Making Juggernaut — How To Find If Surplus Fund Has Been CLAIMED Already "
+                "(Excess Proceeds, Tax Deed Overages etc) [00:00:39]"
+            ),
+            "url": "https://www.youtube.com/watch?v=ZU8-PRxVeCg&t=39s",
+            "relevance": "Primary practitioner testimony on checking mortgage-foreclosure dockets for existing surplus claims.",
+        },
+        {
+            "title": "Alfred Taren — How to Check for Liens Before You Call About Surplus Funds [00:01:29]",
+            "url": "https://www.youtube.com/watch?v=LdemHPCk0dk&t=89s",
+            "relevance": "Primary practitioner testimony on mortgage-sale priority and the different treatment of tax-sale debt.",
+        },
+        {
+            "title": (
+                "Nick Fullmer- Overage Syndicate — Overages & Surplus Fund Debt & Title Research: "
+                "Not As Easy As It Seems.  Two tips To Help [00:03:25]"
+            ),
+            "url": "https://www.youtube.com/watch?v=KOYBZFn2k7w&t=205s",
+            "relevance": "Primary practitioner testimony on obtaining a missing lien amount directly from its recording entity.",
+        },
+        {
+            "title": (
+                "SadeLegal Law Firm — Junior Liens and Tax Foreclosure Overages / Excess Proceeds "
+                "- www.allthingsoverages.com [00:05:33]"
+            ),
+            "url": "https://www.youtube.com/watch?v=rNxycxH3ATc&t=333s",
+            "relevance": "Primary practitioner testimony on pursuing excess proceeds after required notices and the remaining debt exposure.",
+        },
+    ],
+    "source_citations": [
+        {
+            "source_type": "video_pro_tip",
+            "video_id": "HPyO3dkjbCQ",
+            "title": "HOW TO FIND LIENS & TITLE SEARCH IN TEXAS",
+            "channel": "AFX Research LLC",
+            "author": "AFX Research LLC",
+            "text": "First, contact the lienholder — sometimes a lien has been paid but never officially released.",
+            "tip": "First, contact the lienholder — sometimes a lien has been paid but never officially released.",
+            "timestamp": 164,
+            "timestamp_seconds": 164,
+            "timestamp_label": "[00:02:44]",
+            "url": "https://www.youtube.com/watch?v=HPyO3dkjbCQ&t=164s",
+            "markdown": "[00:02:44](https://www.youtube.com/watch?v=HPyO3dkjbCQ&t=164s)",
+            "epistemic_status": "attributed_practitioner_claim",
+            "relevance": "Practitioner testimony on paid debts that still appear as unreleased liens.",
+        },
+        {
+            "source_type": "video_pro_tip",
+            "video_id": "GWuQIN0aSwQ",
+            "title": "What liens remain on a title search after foreclosure?",
+            "channel": "Private Investigator Videos",
+            "author": "Private Investigator Videos",
+            "text": "Take a look at that official title abstract, see what's really there; don't take the word of the auction company or even the property owner.",
+            "tip": "Take a look at that official title abstract, see what's really there; don't take the word of the auction company or even the property owner.",
+            "timestamp": 149,
+            "timestamp_seconds": 149,
+            "timestamp_label": "[00:02:29]",
+            "url": "https://www.youtube.com/watch?v=GWuQIN0aSwQ&t=149s",
+            "markdown": "[00:02:29](https://www.youtube.com/watch?v=GWuQIN0aSwQ&t=149s)",
+            "epistemic_status": "attributed_practitioner_claim",
+            "relevance": "Practitioner testimony on using the official title abstract rather than verbal assurances.",
+        },
+        {
+            "source_type": "video_pro_tip",
+            "video_id": "ZU8-PRxVeCg",
+            "title": "How To Find If Surplus Fund Has Been CLAIMED Already (Excess Proceeds, Tax Deed Overages etc)",
+            "channel": "Money Making Juggernaut",
+            "author": "Money Making Juggernaut",
+            "text": "You are going to be able to take the case number and you'll be able to search it directly on the county's docket.",
+            "tip": "You are going to be able to take the case number and you'll be able to search it directly on the county's docket.",
+            "timestamp": 39,
+            "timestamp_seconds": 39,
+            "timestamp_label": "[00:00:39]",
+            "url": "https://www.youtube.com/watch?v=ZU8-PRxVeCg&t=39s",
+            "markdown": "[00:00:39](https://www.youtube.com/watch?v=ZU8-PRxVeCg&t=39s)",
+            "epistemic_status": "attributed_practitioner_claim",
+            "relevance": "Practitioner testimony on the civil-docket route for checking an existing surplus claim.",
+        },
+        {
+            "source_type": "video_pro_tip",
+            "video_id": "LdemHPCk0dk",
+            "title": "How to Check for Liens Before You Call About Surplus Funds",
+            "channel": "Alfred Taren",
+            "author": "Alfred Taren",
+            "text": "Always say possible funds or estimated surplus. Never promise them a number.",
+            "tip": "Always say possible funds or estimated surplus. Never promise them a number.",
+            "timestamp": 435,
+            "timestamp_seconds": 435,
+            "timestamp_label": "[00:07:15]",
+            "url": "https://www.youtube.com/watch?v=LdemHPCk0dk&t=435s",
+            "markdown": "[00:07:15](https://www.youtube.com/watch?v=LdemHPCk0dk&t=435s)",
+            "epistemic_status": "attributed_practitioner_claim",
+            "relevance": "Practitioner testimony on communicating an estimated rather than promised owner remainder.",
+        },
+        {
+            "source_type": "video_pro_tip",
+            "video_id": "VBvaq5etzV4",
+            "title": "How to Check for Property Liens - Complete Guide",
+            "channel": "Rent Own Sell",
+            "author": "Rent Own Sell",
+            "text": "Third-party companies such as PropertyShark will research the property's address for possible liens for a nominal fee.",
+            "tip": "Third-party companies such as PropertyShark will research the property's address for possible liens for a nominal fee.",
+            "timestamp": 98,
+            "timestamp_seconds": 98,
+            "timestamp_label": "[00:01:38]",
+            "url": "https://www.youtube.com/watch?v=VBvaq5etzV4&t=98s",
+            "markdown": "[00:01:38](https://www.youtube.com/watch?v=VBvaq5etzV4&t=98s)",
+            "epistemic_status": "attributed_practitioner_claim",
+            "relevance": "Practitioner testimony naming a paid third-party lien-search option.",
+        },
+        {
+            "source_type": "video_pro_tip",
+            "video_id": "6IAi_pcEgFY",
+            "title": "The 2 Minute Wholesale Title Search Strategy",
+            "channel": "Dustin Hahn",
+            "author": "Dustin Hahn",
+            "text": "I've also had people who have conveniently forgotten about their second mortgage on their property.",
+            "tip": "I've also had people who have conveniently forgotten about their second mortgage on their property.",
+            "timestamp": 94,
+            "timestamp_seconds": 94,
+            "timestamp_label": "[00:01:34]",
+            "url": "https://www.youtube.com/watch?v=6IAi_pcEgFY&t=94s",
+            "markdown": "[00:01:34](https://www.youtube.com/watch?v=6IAi_pcEgFY&t=94s)",
+            "epistemic_status": "attributed_practitioner_claim",
+            "relevance": "Firsthand practitioner testimony about seller accounts that omit competing mortgage debt.",
+        },
+        {
+            "source_type": "video_pro_tip",
+            "video_id": "KOYBZFn2k7w",
+            "title": "Overages & Surplus Fund Debt & Title Research: Not As Easy As It Seems.  Two tips To Help",
+            "channel": "Nick Fullmer- Overage Syndicate",
+            "author": "Nick Fullmer- Overage Syndicate",
+            "text": "Contact the entity that recorded the lien and ask them what the lien amount is and if it's still outstanding.",
+            "tip": "Contact the entity that recorded the lien and ask them what the lien amount is and if it's still outstanding.",
+            "timestamp": 205,
+            "timestamp_seconds": 205,
+            "timestamp_label": "[00:03:25]",
+            "url": "https://www.youtube.com/watch?v=KOYBZFn2k7w&t=205s",
+            "markdown": "[00:03:25](https://www.youtube.com/watch?v=KOYBZFn2k7w&t=205s)",
+            "epistemic_status": "attributed_practitioner_claim",
+            "relevance": "Practitioner testimony on resolving a recorded lien that lacks a stated amount.",
+        },
+        {
+            "source_type": "video_pro_tip",
+            "video_id": "SzfjJzM76ls",
+            "title": "Who Gets Surplus Funds After a Foreclosure or Tax Sale? (It's Not Who You Think).",
+            "channel": "Alfred Taren",
+            "author": "Alfred Taren",
+            "text": "Look at the actual case or sale file and see what's already been paid.",
+            "tip": "Look at the actual case or sale file and see what's already been paid.",
+            "timestamp": 257,
+            "timestamp_seconds": 257,
+            "timestamp_label": "[00:04:17]",
+            "url": "https://www.youtube.com/watch?v=SzfjJzM76ls&t=257s",
+            "markdown": "[00:04:17](https://www.youtube.com/watch?v=SzfjJzM76ls&t=257s)",
+            "epistemic_status": "attributed_practitioner_claim",
+            "relevance": "Practitioner testimony on checking the actual file instead of trusting the listed surplus.",
+        },
+        {
+            "source_type": "video_pro_tip",
+            "video_id": "C9X-hGZ_2bI",
+            "title": "Polk County - Locate all Info and Documents for Tax Deed Auction Excess Proceeds Claims",
+            "channel": "Tax Deed Surplus & Lien-Research Records",
+            "author": "Tax Deed Surplus & Lien-Research Records",
+            "text": "I didn't want the NOA parties. I wanted the NOA parties labels. That gives you the name and address of each person or company that needed to get a notification about this tax deed sale.",
+            "tip": "I didn't want the NOA parties. I wanted the NOA parties labels. That gives you the name and address of each person or company that needed to get a notification about this tax deed sale.",
+            "timestamp": 190,
+            "timestamp_seconds": 190,
+            "timestamp_label": "[00:03:10]",
+            "url": "https://www.youtube.com/watch?v=C9X-hGZ_2bI&t=190s",
+            "markdown": "[00:03:10](https://www.youtube.com/watch?v=C9X-hGZ_2bI&t=190s)",
+            "epistemic_status": "attributed_practitioner_claim",
+            "relevance": "Demonstrated correction identifying Polk's notification-address document.",
+        },
+        {
+            "source_type": "video_pro_tip",
+            "video_id": "sschUpuRZoU",
+            "title": "Miami-Dade County - Locate all Info and Documents for Tax Deed Auction Excess Proceeds Claims",
+            "channel": "Tax Deed Surplus & Lien-Research Records",
+            "author": "Tax Deed Surplus & Lien-Research Records",
+            "text": "So that was the original surplus, but two claims have been put in from Royal Properties and Miami Florida Home Solutions.",
+            "tip": "So that was the original surplus, but two claims have been put in from Royal Properties and Miami Florida Home Solutions.",
+            "timestamp": 74,
+            "timestamp_seconds": 74,
+            "timestamp_label": "[00:01:14]",
+            "url": "https://www.youtube.com/watch?v=sschUpuRZoU&t=74s",
+            "markdown": "[00:01:14](https://www.youtube.com/watch?v=sschUpuRZoU&t=74s)",
+            "epistemic_status": "attributed_practitioner_claim",
+            "relevance": "Demonstrated distinction between an original surplus letter and existing competing claims.",
+        },
+        {
+            "source_type": "video_pro_tip",
+            "video_id": "0bYWIHqHiOI",
+            "title": "Volusia County FL: Locate the Documents (Tax Deed Auctions and Excess Proceeds)",
+            "channel": "Tax Deed Surplus & Lien-Research Records",
+            "author": "Tax Deed Surplus & Lien-Research Records",
+            "text": "They just give you one large PDF with everything, and even after surplus claims come in they add those to it as well, which those would be added to the top.",
+            "tip": "They just give you one large PDF with everything, and even after surplus claims come in they add those to it as well, which those would be added to the top.",
+            "timestamp": 101,
+            "timestamp_seconds": 101,
+            "timestamp_label": "[00:01:41]",
+            "url": "https://www.youtube.com/watch?v=0bYWIHqHiOI&t=101s",
+            "markdown": "[00:01:41](https://www.youtube.com/watch?v=0bYWIHqHiOI&t=101s)",
+            "epistemic_status": "attributed_practitioner_claim",
+            "relevance": "Practitioner testimony on Volusia's combined PDF and placement of incoming claims.",
+        },
+        {
+            "source_type": "video_pro_tip",
+            "video_id": "bmmWj7_LTrw",
+            "title": "Citrus County FL: Locate the Documents (Tax Deed Auctions and Excess Proceeds)",
+            "channel": "Tax Deed Surplus & Lien-Research Records",
+            "author": "Tax Deed Surplus & Lien-Research Records",
+            "text": "If you keep scrolling down past the blank ones you'll start seeing emails, letters, filled out claim forms and all of the documents that the claimant has submitted.",
+            "tip": "If you keep scrolling down past the blank ones you'll start seeing emails, letters, filled out claim forms and all of the documents that the claimant has submitted.",
+            "timestamp": 189,
+            "timestamp_seconds": 189,
+            "timestamp_label": "[00:03:09]",
+            "url": "https://www.youtube.com/watch?v=bmmWj7_LTrw&t=189s",
+            "markdown": "[00:03:09](https://www.youtube.com/watch?v=bmmWj7_LTrw&t=189s)",
+            "epistemic_status": "attributed_practitioner_claim",
+            "relevance": "Practitioner testimony on finding submitted claims inside Citrus's updated document file.",
+        },
+        {
+            "source_type": "video_pro_tip",
+            "video_id": "nfSp1p7EQWw",
+            "title": "Leon County FL: Locate the Documents (Tax Deed Auctions and Excess Proceeds)",
+            "channel": "Tax Deed Surplus & Lien-Research Records",
+            "author": "Tax Deed Surplus & Lien-Research Records",
+            "text": "For the notification addresses, Leon County doesn't put a document in here with that, but what you can do is create your own by looking at the parties tab on the case.",
+            "tip": "For the notification addresses, Leon County doesn't put a document in here with that, but what you can do is create your own by looking at the parties tab on the case.",
+            "timestamp": 117,
+            "timestamp_seconds": 117,
+            "timestamp_label": "[00:01:57]",
+            "url": "https://www.youtube.com/watch?v=nfSp1p7EQWw&t=117s",
+            "markdown": "[00:01:57](https://www.youtube.com/watch?v=nfSp1p7EQWw&t=117s)",
+            "epistemic_status": "attributed_practitioner_claim",
+            "relevance": "Practitioner testimony on Leon's parties-tab alternative to a separate notification-address document.",
+        },
+        {
+            "source_type": "video_pro_tip",
+            "video_id": "6GqKOOHC8D8",
+            "title": "Escambia County FL: Locate the Documents (Tax Deed Auctions and Excess Proceeds)",
+            "channel": "Tax Deed Surplus & Lien-Research Records",
+            "author": "Tax Deed Surplus & Lien-Research Records",
+            "text": "When Escambia does their documents, when a new one comes along they add it to the end of this PDF.",
+            "tip": "When Escambia does their documents, when a new one comes along they add it to the end of this PDF.",
+            "timestamp": 160,
+            "timestamp_seconds": 160,
+            "timestamp_label": "[00:02:40]",
+            "url": "https://www.youtube.com/watch?v=6GqKOOHC8D8&t=160s",
+            "markdown": "[00:02:40](https://www.youtube.com/watch?v=6GqKOOHC8D8&t=160s)",
+            "epistemic_status": "attributed_practitioner_claim",
+            "relevance": "Practitioner testimony on Escambia's document order and the location of later surplus notices.",
+        },
+        {
+            "source_type": "video_pro_tip",
+            "video_id": "q95klfFm9mE",
+            "title": "2 Ways To Check If There's a Lien On a Property (For Surplus Funds Recovery)",
+            "channel": "Money Making Juggernaut",
+            "author": "Money Making Juggernaut",
+            "text": "You're going to search that individual's name. These documents are registered and recorded under their name.",
+            "tip": "You're going to search that individual's name. These documents are registered and recorded under their name.",
+            "timestamp": 124,
+            "timestamp_seconds": 124,
+            "timestamp_label": "[00:02:04]",
+            "url": "https://www.youtube.com/watch?v=q95klfFm9mE&t=124s",
+            "markdown": "[00:02:04](https://www.youtube.com/watch?v=q95klfFm9mE&t=124s)",
+            "epistemic_status": "attributed_practitioner_claim",
+            "relevance": "Practitioner testimony on searching county-recorded liens under the former owner's name.",
+        },
+        {
+            "source_type": "video_pro_tip",
+            "video_id": "rNxycxH3ATc",
+            "title": "Junior Liens and Tax Foreclosure Overages / Excess Proceeds - www.allthingsoverages.com",
+            "channel": "SadeLegal Law Firm",
+            "author": "SadeLegal Law Firm",
+            "text": "You could do that and get away with it by claiming all of the excess proceeds as a former owner as long as you follow all the notice requirements.",
+            "tip": "You could do that and get away with it by claiming all of the excess proceeds as a former owner as long as you follow all the notice requirements.",
+            "timestamp": 333,
+            "timestamp_seconds": 333,
+            "timestamp_label": "[00:05:33]",
+            "url": "https://www.youtube.com/watch?v=rNxycxH3ATc&t=333s",
+            "markdown": "[00:05:33](https://www.youtube.com/watch?v=rNxycxH3ATc&t=333s)",
+            "epistemic_status": "attributed_practitioner_claim",
+            "relevance": "Practitioner testimony on the owner-claim alternative discussed alongside continuing debt and procedural complexity.",
+        },
+    ],
+}

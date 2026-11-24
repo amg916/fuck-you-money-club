@@ -9,49 +9,49 @@
       "RECOVERY"
     ],
     "deck": [
-      "FIND THE SURPLUS. VERIFY THE CLAIM.",
-      "BUILD THE RECOVERY FIRM."
+      "TEST FREE-LIST RESEARCH, CLAIMANT OUTREACH, AND CLAIM VERIFICATION",
+      "BUILD REPEATABLE RECOVERY WORKFLOWS FROM RECORDS TO PAYOUT"
     ],
-    "lead": "The Complete Playbook for Tax-Sale Overages, Foreclosure Excess Proceeds & Building a Contingent Recovery Firm",
-    "summary": "From tax-sale records and foreclosure dockets to claimant verification, lien priority, and documented disbursement: build a small-team recovery operation around traceable funds and carefully costed casework.",
+    "lead": "Follow practitioner workflows for finding surplus funds, verifying claimant entitlement and competing debt, reaching owners and heirs, and moving documented claims toward recovery.",
+    "summary": "All 12 chapters synthesize 192 verbatim YouTube practitioner testimonies with timestamped inline attribution. They trace surplus recovery from free-list research and claimant outreach through agreements, claim submission, state-specific timing, and payout risks, distinguishing reported recoveries and collected fees from contracted or expected income.",
     "chapters": [
-      "The surplus recovery business model",
-      "Tax-sale overages & foreclosure proceeds",
-      "Finding surplus funds records",
-      "Screening recovery opportunities",
-      "Tracing owners & eligible claimants",
-      "Lien priority & competing claims",
-      "Claimant outreach & engagement",
-      "Contingency agreements & fee limits",
-      "Building the recovery claim",
-      "Filing & tracking disbursement",
-      "Recovery fees & case economics",
-      "Scaling a contingent recovery firm"
+      "How the Surplus Recovery Business Works",
+      "Starting and Growing a Surplus Funds Recovery Business",
+      "Find Free Lists and Build Your Own",
+      "Verify the Surplus and Research Competing Debt",
+      "Mortgage Foreclosures and Sheriff-Sale Recovery",
+      "Difficult Claimants, Heirs, and Estate Cases",
+      "Reach Claimants and Address Distrust",
+      "The Surplus-Funds Call: Scripts and Live Examples",
+      "From Signed Agreement to Claim Submission",
+      "State Rules, Claim Timing, and Payout Risks",
+      "Beyond Foreclosure: State and Bankruptcy Funds",
+      "Build a Repeatable Recovery Operation"
     ],
     "flow": [
       [
-        "DISCOVER",
-        "Find tax-sale & foreclosure surplus"
+        "FIND",
+        "Search county surplus and excess-proceeds records, compare auction results, and learn how the holding office publishes balances and claim instructions."
       ],
       [
-        "SCREEN",
-        "Verify funds & filing deadlines"
+        "VERIFY",
+        "Confirm funds remain, check existing claims and deadlines, and research ownership and competing debt as they stood at the sale."
       ],
       [
-        "RESEARCH",
-        "Trace claimants & lien priority"
+        "LOCATE",
+        "Identify the correct claimant, trace current contact details, and examine deeds and death dates when heirs or estates may be involved."
       ],
       [
-        "ENGAGE",
-        "Document authority & fee terms"
+        "CONTACT",
+        "Use calls, texts, and letters to reach claimants, address distrust with evidence, and keep a record of each contact and follow-up."
       ],
       [
-        "FILE",
-        "Submit the supported claim"
+        "DOCUMENT",
+        "Secure the applicable agreement and claim paperwork, resolve identification gaps, and check originals, notarization, and attorney needs."
       ],
       [
-        "RECOVER",
-        "Reconcile proceeds & close"
+        "SUBMIT AND TRACK",
+        "Submit to the appropriate holding office, follow the claim through processing, and distinguish recovery proceeds, owner allocations, expenses, and collected fees."
       ]
     ]
   },
@@ -59,10 +59,10 @@
   "book_series": "THE BIG MONEY PLAYBOOKS",
   "tagline": "Big Money. Small Teams. No Bullshit.",
   "title": "SURPLUS FUNDS RECOVERY",
-  "subtitle": "The Complete Playbook for Tax-Sale Overages, Foreclosure Excess Proceeds & Building a Contingent Recovery Firm",
+  "subtitle": "Find the Funds, Prove the Claim, Reach Owners and Heirs, and Build a Repeatable Recovery Pipeline",
   "chapter_count": 12,
-  "total_word_count": 62159,
-  "expert_youtube_link_count": 202,
+  "total_word_count": 68341,
+  "expert_youtube_link_count": 194,
   "min_expert_youtube_links_required": 150,
   "target_expert_youtube_links": "150-200+",
   "min_expert_youtube_links_per_chapter": 12,
@@ -77,5 +77,5 @@
   "publication_status": "approved_master",
   "public_deploy_approved": false,
   "paid_sales_approved": false,
-  "updated_at": "2026-11-23T22:47:58Z"
+  "updated_at": "2026-11-24T15:53:32Z"
 }

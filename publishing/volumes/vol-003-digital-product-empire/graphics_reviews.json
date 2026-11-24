@@ -29,14 +29,14 @@
     "08_phone_tablet_mockup",
     "09_series_collection_mockup",
     "10_social_promo_pack",
-    "diag-01-value-ladder-workflow",
-    "diag-02-demand-validation-funnel",
-    "diag-03-slo-contribution-waterfall",
-    "diag-04-mor-vs-direct-fee-bars",
-    "diag-05-piracy-refund-triage-tree",
-    "diag-06-four-person-empire-org",
-    "diag-07-zero-cogs-startup-stack",
-    "diag-08-thirty-day-launch-roadmap"
+    "diag-01-buyer-to-supported-product",
+    "diag-02-related-offer-price-path",
+    "diag-03-template-checkout-money-checkpoints",
+    "diag-04-ai-product-price-reference-points",
+    "diag-05-payment-provider-readiness-gates",
+    "diag-06-expertise-newsletter-operating-functions",
+    "diag-07-storefront-base-rate-comparison",
+    "diag-08-faceless-content-purchase-readiness"
   ],
   "cover_graphic_ids": [
     "cover_front",
@@ -54,14 +54,14 @@
     "10_social_promo_pack"
   ],
   "diagram_graphic_ids": [
-    "diag-01-value-ladder-workflow",
-    "diag-02-demand-validation-funnel",
-    "diag-03-slo-contribution-waterfall",
-    "diag-04-mor-vs-direct-fee-bars",
-    "diag-05-piracy-refund-triage-tree",
-    "diag-06-four-person-empire-org",
-    "diag-07-zero-cogs-startup-stack",
-    "diag-08-thirty-day-launch-roadmap"
+    "diag-01-buyer-to-supported-product",
+    "diag-02-related-offer-price-path",
+    "diag-03-template-checkout-money-checkpoints",
+    "diag-04-ai-product-price-reference-points",
+    "diag-05-payment-provider-readiness-gates",
+    "diag-06-expertise-newsletter-operating-functions",
+    "diag-07-storefront-base-rate-comparison",
+    "diag-08-faceless-content-purchase-readiness"
   ],
   "allowed_statuses": [
     "approved",
@@ -486,11 +486,11 @@
         "reviewed_at": null
       }
     },
-    "diag-01-value-ladder-workflow": {
+    "diag-01-buyer-to-supported-product": {
       "concept_a": {
-        "graphic_id": "diag-01-value-ladder-workflow",
+        "graphic_id": "diag-01-buyer-to-supported-product",
         "graphic_type": "diagram",
-        "label": "From pain signal to recurring portfolio cashflow",
+        "label": "Choose the Buyer Before the File Format",
         "concept_id": "concept_a",
         "concept_label": "Concept A — Black & Gold Executive",
         "status": "pending_review",
@@ -498,9 +498,9 @@
         "reviewed_at": null
       },
       "concept_b": {
-        "graphic_id": "diag-01-value-ladder-workflow",
+        "graphic_id": "diag-01-buyer-to-supported-product",
         "graphic_type": "diagram",
-        "label": "From pain signal to recurring portfolio cashflow",
+        "label": "Choose the Buyer Before the File Format",
         "concept_id": "concept_b",
         "concept_label": "Concept B — Bold Editorial",
         "status": "pending_review",
@@ -508,9 +508,9 @@
         "reviewed_at": null
       },
       "concept_c": {
-        "graphic_id": "diag-01-value-ladder-workflow",
+        "graphic_id": "diag-01-buyer-to-supported-product",
         "graphic_type": "diagram",
-        "label": "From pain signal to recurring portfolio cashflow",
+        "label": "Choose the Buyer Before the File Format",
         "concept_id": "concept_c",
         "concept_label": "Concept C — Modern Wealth Intelligence",
         "status": "pending_review",
@@ -518,11 +518,11 @@
         "reviewed_at": null
       }
     },
-    "diag-02-demand-validation-funnel": {
+    "diag-02-related-offer-price-path": {
       "concept_a": {
-        "graphic_id": "diag-02-demand-validation-funnel",
+        "graphic_id": "diag-02-related-offer-price-path",
         "graphic_type": "diagram",
-        "label": "Self-liquidating acquisition to backend ascension",
+        "label": "From a $7 Entry Product to a $57 Bundle",
         "concept_id": "concept_a",
         "concept_label": "Concept A — Black & Gold Executive",
         "status": "pending_review",
@@ -530,9 +530,9 @@
         "reviewed_at": null
       },
       "concept_b": {
-        "graphic_id": "diag-02-demand-validation-funnel",
+        "graphic_id": "diag-02-related-offer-price-path",
         "graphic_type": "diagram",
-        "label": "Self-liquidating acquisition to backend ascension",
+        "label": "From a $7 Entry Product to a $57 Bundle",
         "concept_id": "concept_b",
         "concept_label": "Concept B — Bold Editorial",
         "status": "pending_review",
@@ -540,9 +540,9 @@
         "reviewed_at": null
       },
       "concept_c": {
-        "graphic_id": "diag-02-demand-validation-funnel",
+        "graphic_id": "diag-02-related-offer-price-path",
         "graphic_type": "diagram",
-        "label": "Self-liquidating acquisition to backend ascension",
+        "label": "From a $7 Entry Product to a $57 Bundle",
         "concept_id": "concept_c",
         "concept_label": "Concept C — Modern Wealth Intelligence",
         "status": "pending_review",
@@ -550,11 +550,11 @@
         "reviewed_at": null
       }
     },
-    "diag-03-slo-contribution-waterfall": {
+    "diag-03-template-checkout-money-checkpoints": {
       "concept_a": {
-        "graphic_id": "diag-03-slo-contribution-waterfall",
+        "graphic_id": "diag-03-template-checkout-money-checkpoints",
         "graphic_type": "diagram",
-        "label": "Gross checkout receipts to net contribution margin",
+        "label": "Separate Sale Price, Proceeds, and Commission",
         "concept_id": "concept_a",
         "concept_label": "Concept A — Black & Gold Executive",
         "status": "pending_review",
@@ -562,9 +562,9 @@
         "reviewed_at": null
       },
       "concept_b": {
-        "graphic_id": "diag-03-slo-contribution-waterfall",
+        "graphic_id": "diag-03-template-checkout-money-checkpoints",
         "graphic_type": "diagram",
-        "label": "Gross checkout receipts to net contribution margin",
+        "label": "Separate Sale Price, Proceeds, and Commission",
         "concept_id": "concept_b",
         "concept_label": "Concept B — Bold Editorial",
         "status": "pending_review",
@@ -572,9 +572,9 @@
         "reviewed_at": null
       },
       "concept_c": {
-        "graphic_id": "diag-03-slo-contribution-waterfall",
+        "graphic_id": "diag-03-template-checkout-money-checkpoints",
         "graphic_type": "diagram",
-        "label": "Gross checkout receipts to net contribution margin",
+        "label": "Separate Sale Price, Proceeds, and Commission",
         "concept_id": "concept_c",
         "concept_label": "Concept C — Modern Wealth Intelligence",
         "status": "pending_review",
@@ -582,11 +582,11 @@
         "reviewed_at": null
       }
     },
-    "diag-04-mor-vs-direct-fee-bars": {
+    "diag-04-ai-product-price-reference-points": {
       "concept_a": {
-        "graphic_id": "diag-04-mor-vs-direct-fee-bars",
+        "graphic_id": "diag-04-ai-product-price-reference-points",
         "graphic_type": "diagram",
-        "label": "Effective take-rate across checkout & distribution rails",
+        "label": "Price the Specific Result",
         "concept_id": "concept_a",
         "concept_label": "Concept A — Black & Gold Executive",
         "status": "pending_review",
@@ -594,9 +594,9 @@
         "reviewed_at": null
       },
       "concept_b": {
-        "graphic_id": "diag-04-mor-vs-direct-fee-bars",
+        "graphic_id": "diag-04-ai-product-price-reference-points",
         "graphic_type": "diagram",
-        "label": "Effective take-rate across checkout & distribution rails",
+        "label": "Price the Specific Result",
         "concept_id": "concept_b",
         "concept_label": "Concept B — Bold Editorial",
         "status": "pending_review",
@@ -604,9 +604,9 @@
         "reviewed_at": null
       },
       "concept_c": {
-        "graphic_id": "diag-04-mor-vs-direct-fee-bars",
+        "graphic_id": "diag-04-ai-product-price-reference-points",
         "graphic_type": "diagram",
-        "label": "Effective take-rate across checkout & distribution rails",
+        "label": "Price the Specific Result",
         "concept_id": "concept_c",
         "concept_label": "Concept C — Modern Wealth Intelligence",
         "status": "pending_review",
@@ -614,11 +614,11 @@
         "reviewed_at": null
       }
     },
-    "diag-05-piracy-refund-triage-tree": {
+    "diag-05-payment-provider-readiness-gates": {
       "concept_a": {
-        "graphic_id": "diag-05-piracy-refund-triage-tree",
+        "graphic_id": "diag-05-payment-provider-readiness-gates",
         "graphic_type": "diagram",
-        "label": "Checkout compliance, chargeback & piracy defense tree",
+        "label": "Choose the Payment Route Before Migrating",
         "concept_id": "concept_a",
         "concept_label": "Concept A — Black & Gold Executive",
         "status": "pending_review",
@@ -626,9 +626,9 @@
         "reviewed_at": null
       },
       "concept_b": {
-        "graphic_id": "diag-05-piracy-refund-triage-tree",
+        "graphic_id": "diag-05-payment-provider-readiness-gates",
         "graphic_type": "diagram",
-        "label": "Checkout compliance, chargeback & piracy defense tree",
+        "label": "Choose the Payment Route Before Migrating",
         "concept_id": "concept_b",
         "concept_label": "Concept B — Bold Editorial",
         "status": "pending_review",
@@ -636,9 +636,9 @@
         "reviewed_at": null
       },
       "concept_c": {
-        "graphic_id": "diag-05-piracy-refund-triage-tree",
+        "graphic_id": "diag-05-payment-provider-readiness-gates",
         "graphic_type": "diagram",
-        "label": "Checkout compliance, chargeback & piracy defense tree",
+        "label": "Choose the Payment Route Before Migrating",
         "concept_id": "concept_c",
         "concept_label": "Concept C — Modern Wealth Intelligence",
         "status": "pending_review",
@@ -646,11 +646,11 @@
         "reviewed_at": null
       }
     },
-    "diag-06-four-person-empire-org": {
+    "diag-06-expertise-newsletter-operating-functions": {
       "concept_a": {
-        "graphic_id": "diag-06-four-person-empire-org",
+        "graphic_id": "diag-06-expertise-newsletter-operating-functions",
         "graphic_type": "diagram",
-        "label": "One full-time architect, three specialized contractors",
+        "label": "Build the Newsletter Around a Reader Problem",
         "concept_id": "concept_a",
         "concept_label": "Concept A — Black & Gold Executive",
         "status": "pending_review",
@@ -658,9 +658,9 @@
         "reviewed_at": null
       },
       "concept_b": {
-        "graphic_id": "diag-06-four-person-empire-org",
+        "graphic_id": "diag-06-expertise-newsletter-operating-functions",
         "graphic_type": "diagram",
-        "label": "One full-time architect, three specialized contractors",
+        "label": "Build the Newsletter Around a Reader Problem",
         "concept_id": "concept_b",
         "concept_label": "Concept B — Bold Editorial",
         "status": "pending_review",
@@ -668,9 +668,9 @@
         "reviewed_at": null
       },
       "concept_c": {
-        "graphic_id": "diag-06-four-person-empire-org",
+        "graphic_id": "diag-06-expertise-newsletter-operating-functions",
         "graphic_type": "diagram",
-        "label": "One full-time architect, three specialized contractors",
+        "label": "Build the Newsletter Around a Reader Problem",
         "concept_id": "concept_c",
         "concept_label": "Concept C — Modern Wealth Intelligence",
         "status": "pending_review",
@@ -678,11 +678,11 @@
         "reviewed_at": null
       }
     },
-    "diag-07-zero-cogs-startup-stack": {
+    "diag-07-storefront-base-rate-comparison": {
       "concept_a": {
-        "graphic_id": "diag-07-zero-cogs-startup-stack",
+        "graphic_id": "diag-07-storefront-base-rate-comparison",
         "graphic_type": "diagram",
-        "label": "Disciplined $10,000 digital product launch allocation",
+        "label": "Compare Base Rates Without Hiding Other Charges",
         "concept_id": "concept_a",
         "concept_label": "Concept A — Black & Gold Executive",
         "status": "pending_review",
@@ -690,9 +690,9 @@
         "reviewed_at": null
       },
       "concept_b": {
-        "graphic_id": "diag-07-zero-cogs-startup-stack",
+        "graphic_id": "diag-07-storefront-base-rate-comparison",
         "graphic_type": "diagram",
-        "label": "Disciplined $10,000 digital product launch allocation",
+        "label": "Compare Base Rates Without Hiding Other Charges",
         "concept_id": "concept_b",
         "concept_label": "Concept B — Bold Editorial",
         "status": "pending_review",
@@ -700,9 +700,9 @@
         "reviewed_at": null
       },
       "concept_c": {
-        "graphic_id": "diag-07-zero-cogs-startup-stack",
+        "graphic_id": "diag-07-storefront-base-rate-comparison",
         "graphic_type": "diagram",
-        "label": "Disciplined $10,000 digital product launch allocation",
+        "label": "Compare Base Rates Without Hiding Other Charges",
         "concept_id": "concept_c",
         "concept_label": "Concept C — Modern Wealth Intelligence",
         "status": "pending_review",
@@ -710,11 +710,11 @@
         "reviewed_at": null
       }
     },
-    "diag-08-thirty-day-launch-roadmap": {
+    "diag-08-faceless-content-purchase-readiness": {
       "concept_a": {
-        "graphic_id": "diag-08-thirty-day-launch-roadmap",
+        "graphic_id": "diag-08-faceless-content-purchase-readiness",
         "graphic_type": "diagram",
-        "label": "Thirty days from pain signal to cash-flowing SKU",
+        "label": "Connect Faceless Content to a Working Purchase Path",
         "concept_id": "concept_a",
         "concept_label": "Concept A — Black & Gold Executive",
         "status": "pending_review",
@@ -722,9 +722,9 @@
         "reviewed_at": null
       },
       "concept_b": {
-        "graphic_id": "diag-08-thirty-day-launch-roadmap",
+        "graphic_id": "diag-08-faceless-content-purchase-readiness",
         "graphic_type": "diagram",
-        "label": "Thirty days from pain signal to cash-flowing SKU",
+        "label": "Connect Faceless Content to a Working Purchase Path",
         "concept_id": "concept_b",
         "concept_label": "Concept B — Bold Editorial",
         "status": "pending_review",
@@ -732,9 +732,9 @@
         "reviewed_at": null
       },
       "concept_c": {
-        "graphic_id": "diag-08-thirty-day-launch-roadmap",
+        "graphic_id": "diag-08-faceless-content-purchase-readiness",
         "graphic_type": "diagram",
-        "label": "Thirty days from pain signal to cash-flowing SKU",
+        "label": "Connect Faceless Content to a Working Purchase Path",
         "concept_id": "concept_c",
         "concept_label": "Concept C — Modern Wealth Intelligence",
         "status": "pending_review",
@@ -743,5 +743,5 @@
       }
     }
   },
-  "updated_at": "2026-11-23T22:47:59Z"
+  "updated_at": "2026-11-24T15:53:32Z"
 }

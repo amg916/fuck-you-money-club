@@ -5,715 +5,992 @@ CHAPTER_4 = {
     "chapter_id": "Q4",
     "chapter_number": 4,
     "question_number": 4,
-    "slug": "startup-capital-lean-infrastructure-pre-flight-stack",
-    "question_prompt": "How do you allocate startup capital ($5,000–$60,000 USD) and configure a lean, low-opex ($2,500–$18,000 USD/mo) production stack without wasting cash on bloated overhead?",
+    "slug": "package-projects-into-monthly-retainers",
+    "question_prompt": "How can an agency package discrete services, price their delivery, and turn one-time projects into recurring client relationships?",
     "kicker": "Q4 / THE BIG MONEY PLAYBOOKS",
-    "title": "Startup Capital, Lean Infrastructure & Pre-Flight Stack",
-    "subtitle": "Reserve-First Funding, Postgres Waterfalls, Authorized Messaging, and Tenant-Isolated Delivery Under 18 U.S.C. § 1030",
-    "layout_template": "comparison_table",
-    "reading_time_minutes": 14,
+    "title": "Package Projects into Monthly Retainers",
+    "subtitle": "Project-versus-retainer pricing, 90-day client relationships, productized service formats, B2B automations, AI avatars, newsletter services, scope boundaries, and voice-platform costs.",
+    "layout_template": "comparison_matrix",
+    "reading_time_minutes": 15,
     "executive_summary": (
-        "Candidate #29, Productized AI Agencies, holds Rank #08 with an 89/100 "
-        "Money-to-Manpower Score across 23 mapped plays. Allocate sixty percent of "
-        "startup cash to working capital, then buy only infrastructure that supports "
-        "a contracted workflow, measurable acceptance test, or recoverable deployment. "
-        "This chapter converts the $5,000–$60,000 funding range into reserve-first "
-        "budgets and a twelve-layer production stack, with explicit limits on "
-        "outbound automation and enrichment waterfalls. Recognized revenue consists "
-        "of implementation fees and support retainers, never client sales attributed "
-        "to automation. Canonical annual owner profit remains $20,000 Conservative, "
-        "$165,000 Base, and $400,000 Scaled. Earn those outcomes through bounded "
-        "scope, authorized access, tenant isolation, usage metering, and tested "
-        "recovery rather than prepaid software collections or speculative hiring."
+        "Nick Saraev, Automate AI Consulting, and Liam Ottley connect recurring revenue to "
+        "successful delivery, existing trust, and work that continues after installation. "
+        "Their packages range from maintenance and prepaid build time to ongoing automation "
+        "partnerships. Jeff Sauer sells accountability through a 90-day relationship; Sean "
+        "Malone sells the client's problem disappearing rather than the underlying AI. "
+        "Execution varies sharply: Sean Standberry proposes $500 setup plus $1,000 monthly "
+        "for avatar content and lead conversion, while Agency Stack Guide illustrates a "
+        "$297 managed newsletter. Wayfront and Brett Malinowski distinguish fixed deliverables "
+        "from request queues. Practitioners disagree about beginner retainers, pitch timing, "
+        "communication access, and account ownership. Their economics checks expose developer "
+        "hours, client revisions, underused capacity, and voice-platform access fees as "
+        "decisive parts of the monthly offer."
     ),
     "key_metrics": [
         {
-            "label": "Conservative",
-            "value": "$100,000",
-            "context": "Annual implementation-fee and support-retainer revenue only",
-            "note": "20% net margin; $20,000 annual owner net profit; 2 FT + 3 C",
+            "label": "Prepaid build-time example",
+            "metric": "Prepaid build-time example",
+            "value": "$100 per hour for 20 hours monthly",
+            "confidence": "attributed_practitioner_claim",
+            "context": (
+                "Nick Saraev illustrates replacing variable work at $120 per hour with "
+                "20 locked-in monthly hours at $100, giving the client $400 in savings "
+                "and the agency scheduling stability."
+            ),
+            "source": "Nick Saraev ([RmYTguzXrVM @ 00:23:46])",
         },
         {
-            "label": "Base",
-            "value": "$550,000",
-            "context": "Annual implementation-fee and support-retainer revenue only",
-            "note": "30.0% net margin; $165,000 annual owner net profit; 2 FT + 3 C",
+            "label": "Maintenance labor pricing buffer",
+            "metric": "Maintenance labor pricing buffer",
+            "value": "At least 2 to 3 times estimated developer cost",
+            "confidence": "attributed_practitioner_claim",
+            "context": (
+                "Liam Ottley recommends estimating or limiting developer maintenance "
+                "hours and marking the resulting cost up because client demands can "
+                "double or triple."
+            ),
+            "source": "Liam Ottley ([kgE01J875dY @ 00:18:22])",
         },
         {
-            "label": "Scaled",
-            "value": "$1,000,000",
-            "context": "Annual implementation-fee and support-retainer revenue only",
-            "note": "40% net margin; $400,000 annual owner net profit; 3 FT + 4 C",
+            "label": "Avatar and conversion-system package",
+            "metric": "Avatar and conversion-system package",
+            "value": "$500 setup plus $1,000 per month",
+            "confidence": "attributed_practitioner_claim",
+            "context": (
+                "Sean Standberry proposes a High Level setup covering landing pages, "
+                "calendar integration, automation sequences, and CRM, followed by "
+                "ongoing avatar content, posting, and system maintenance."
+            ),
+            "source": "Sean Standberry ([5558JLgLk50 @ 00:11:13])",
+        },
+        {
+            "label": "AI enablement relationship runway",
+            "metric": "AI enablement relationship runway",
+            "value": "90 days",
+            "confidence": "attributed_practitioner_claim",
+            "context": (
+                "Jeff Sauer describes 90 days to get the first real project working, "
+                "learn the client's operation, and establish enough trust for the "
+                "client to follow recommendations."
+            ),
+            "source": "Jeff Sauer - Service Stacking ([afaXZkksQs0 @ 00:05:09])",
         },
     ],
     "sections": [
         {
-            "heading": "1. Protect sixty percent of capital before funding delivery",
-            "epistemic_status": "illustrative_model",
+            "id": "practitioner-consensus",
+            "title": "The Practitioner Consensus",
             "paragraphs": [
                 (
-                    "Start with cash survival, not a software shopping list. At $5,000 "
-                    "of opening capital, place $3,000 in working-capital reserve, $700 "
-                    "in deployment setup, $800 in entity, contract, and insurance "
-                    "preparation, and $500 in measured customer acquisition. At $20,000, "
-                    "allocate $12,000, $2,500, $2,500, and $3,000 respectively. At "
-                    "$60,000, allocate $36,000, $9,000, $6,000, and $9,000. Each "
-                    "allocation preserves sixty percent as liquid float; none assumes "
-                    "that every discretionary dollar must immediately be spent. These "
-                    "are planning envelopes, not universal vendor quotes. Entity fees "
-                    "and insurance depend on jurisdiction and underwriting. If mandatory "
-                    "formation or coverage costs exceed the smallest envelope, reduce "
-                    "acquisition spending, defer the start, or add capital rather than "
-                    "raid the reserve. Keep tax liabilities, refundable deposits, and "
-                    "funds owed to suppliers separately identified; they are not free "
-                    "runway. With first deals typically taking one to four months, "
-                    "$3,000 covers only 1.2 months at a $2,500 monthly burn. The "
-                    "smallest launch therefore requires existing runway, an early paid "
-                    "diagnostic, or substantially lower pre-delivery spending. Do not "
-                    "hire a nominal full-time team against a reserve that cannot "
-                    "fund its actual obligations."
+                    "Nick Saraev makes the first project the opening move, not the whole "
+                    "relationship. Introduce the intention to work together monthly during "
+                    "the first sales conversation, choose an initial build that exposes "
+                    "other business bottlenecks, and document what the installation changes. "
+                    "Their monday.com CRM proposal explicitly raised a future retainer "
+                    "while still quoting the one-time job. Automate AI Consulting gives "
+                    "beginners a narrower starting line: close two to four projects with "
+                    "fixed scope, fixed price, and a clear endpoint; save screenshots and "
+                    "testimonials; then offer ongoing help once the system works. Their "
+                    "first real estate marketing client bought after seeing a live "
+                    "demonstration of lead generation and appointment scheduling. Liam "
+                    "Ottley agrees that early delivery experience matters more than "
+                    "assembling an elaborate monthly offer. Their beginner prescription "
+                    "is one niche, one deliverable, and repeated sales until delivery "
+                    "becomes familiar. The shared sequence is proof before a large "
+                    "ongoing commitment: an installed system, a client who has experienced "
+                    "the work, and identifiable reasons to keep working together. Saraev "
+                    "starts talking about that destination early; Automate AI Consulting "
+                    "makes the continuation conversation concrete with updates, fixes, "
+                    "and improvements to what already runs. Nick Saraev "
+                    "[RmYTguzXrVM @ 00:07:47]; Automate AI Consulting "
+                    "[m9wI5V0nSe0 @ 00:07:41]; Liam Ottley "
+                    "[kgE01J875dY @ 00:07:26]."
                 ),
                 (
-                    "Use three monthly cash envelopes without pretending they are the "
-                    "canonical annual income statements. A $2,500 envelope comprises "
-                    "$250 software, $1,400 delivery contractors, $300 acquisition, "
-                    "$300 administration and insurance, and $250 contingency. An "
-                    "$8,000 envelope comprises $750, $4,700, $1,000, $800, and "
-                    "$750 in those same categories. An $18,000 envelope comprises "
-                    "$1,500, $11,500, $2,000, $1,500, and $1,500. Owner payroll, "
-                    "additional employees, project-specific subcontracting, taxes, and "
-                    "other costs must be added whenever incurred; these envelopes "
-                    "cannot support two salaried employees by assertion. The canonical "
-                    "Conservative case remains $100,000 revenue less $80,000 total "
-                    "costs, producing $20,000 profit. Base remains $550,000 less "
-                    "$385,000, producing $165,000. Scaled remains $1,000,000 less "
-                    "$600,000, producing $400,000. Staffing stays 2 FT + 3 C, "
-                    "2 FT + 3 C, and 3 FT + 4 C respectively. The scorecard "
-                    "does not supply compensation assumptions, so test local labor "
-                    "economics before adopting any case. Reconcile every monthly "
-                    "cash forecast to a complete annual cost ledger. The operating "
-                    "envelope is a spending-control device, not an alternate margin "
-                    "calculation or a claim that seven people cost $18,000 monthly."
+                    "The recurring purchase needs a business job attached to it. Sean "
+                    "Malone calls this naming the job rather than the tool: an after-hours "
+                    "front desk, immediate replies to new leads, or follow-up that never "
+                    "forgets. Their first-call question is what part of the week drives "
+                    "the owner nuts; the owner's exact answer becomes the proposal, demo, "
+                    "and follow-up language. Jeff Sauer reaches the same destination "
+                    "through the role of AI enablement partner. Their preferred clients "
+                    "want results and accountability but do not want to push the buttons "
+                    "or hire a full-time chief AI officer. Sauer describes a real client "
+                    "sequence that began with a dashboard, moved to a CRM when the "
+                    "dashboard exposed a lead problem, and continued into conversion "
+                    "work when the CRM exposed the website. Sean Standberry applies "
+                    "this outcome logic to avatar content: the clone attracts attention, "
+                    "but the conversion system supports the monthly fee. Their package "
+                    "connects content to a landing page, CRM, booking calendar, and "
+                    "follow-up rather than stopping at likes. All three make ongoing "
+                    "value visible through work the owner recognizes: calls answered, "
+                    "appointments booked, decisions supported, and the next business "
+                    "problem addressed. Sean Malone | Close Bigger Deals "
+                    "[fXrfPpcs7fw @ 00:03:39]; Jeff Sauer - Service Stacking "
+                    "[afaXZkksQs0 @ 00:06:31]; Sean Standberry "
+                    "[5558JLgLk50 @ 00:07:56]."
                 ),
                 (
-                    "Translate sales into recognized service revenue with explicit "
-                    "units. One illustrative Conservative mix is eight $10,000 "
-                    "implementations plus twenty $1,000 support client-months, totaling "
-                    "$100,000. Base can comprise twenty $20,000 implementations plus "
-                    "one hundred $1,500 support client-months, totaling $550,000. "
-                    "Scaled can comprise twenty-five $28,000 implementations plus "
-                    "one hundred fifty $2,000 support client-months, totaling "
-                    "$1,000,000. These mixes demonstrate arithmetic, not additional "
-                    "forecast evidence. Attribute no client sales, recovered invoices, "
-                    "or processed transaction volume to agency revenue. For a "
-                    "$10,000 fixed-scope sprint, a negotiated 50/30/20 collection "
-                    "schedule creates $5,000 at booking, $3,000 at a demonstrated "
-                    "milestone, and $2,000 at acceptance. Collection timing does not "
-                    "itself determine revenue recognition; record undelivered obligations "
-                    "and refund exposure. Tie contractor commitments to funded "
-                    "milestones and maintain an aging report for every receivable. "
-                    "Define two integrations, one workflow, specified test cases, and "
-                    "a fixed revision allowance before signing. Price an added "
-                    "integration separately instead of absorbing it into support. "
-                    "Review remaining delivery hours weekly: a $3,000 cost overrun "
-                    "consumes fifteen percent of Conservative annual profit. Maintain "
-                    "a thirteen-week cash forecast with base collections, delayed "
-                    "collections, and refund stress cases before releasing reserve cash."
+                    "Productization does not require pretending every subscription has "
+                    "the same workload. Wayfront separates hosting-style retainers that "
+                    "do not reopen a work order monthly, recurring services with monthly "
+                    "tasks, fixed quantities of client-requested deliverables, and "
+                    "unlimited request queues with concurrency limits. Their podcast "
+                    "editing example delivers two or four episodes, while unlimited "
+                    "editing plans limit how many projects can run together. Brett "
+                    "Malinowski describes the queue version through a designer charging "
+                    "$5,000 monthly: clients list requests on Trello, one request becomes "
+                    "active, delivery takes 48 hours, and feedback stays on that card. "
+                    "The operational promise is a repeatable service with an explicit "
+                    "way to request and receive work. Agency Stack Guide demonstrates "
+                    "a different repeatable unit inside High Level: research news, "
+                    "prepare a newsletter using a copy of an existing branded template, "
+                    "and notify the operator for review. The proposed $297 monthly "
+                    "service includes researching, preparing, reviewing, and managing "
+                    "newsletters. These formats make the recurring activity explicit "
+                    "without requiring the same selling unit. A queue sells access to "
+                    "sequential production; a fixed-deliverable plan specifies output "
+                    "quantity; the newsletter example sells a managed recurring "
+                    "publication rather than merely handing over an agent. Wayfront "
+                    "[0M1GD8qDDUw @ 00:01:27]; Brett Malinowski "
+                    "[vBXCdVHBK3o @ 00:00:48]; Agency Stack Guide "
+                    "[raRxPWQp8ao @ 00:05:23]."
                 ),
             ],
             "table": {
-                "caption": "Reserve-First Capital Allocation and Cash-Control Matrix",
-                "headers": [
-                    "Funding decision and operating purpose",
-                    "Exact allocation or arithmetic rule",
-                    "Release condition and accountable evidence",
-                    "Failure response preserving operating capacity",
-                ],
+                "caption": "Recurring relationships begin with a defined job and a defined delivery format.",
+                "headers": ["Operating choice", "Practitioner mechanics", "Expert Source"],
                 "rows": [
                     [
-                        "Small launch funded with five thousand dollars",
-                        "$3,000 reserve; $700 setup; $800 hygiene; $500 acquisition",
-                        "Founder documents paid scope before committing delivery purchases",
-                        "Delay launch when required insurance exceeds available allocation",
+                        "Build initial proof through a small fixed-scope project",
+                        "Close two to four clearly bounded projects, document results, and offer ongoing help after the client sees the system working.",
+                        "Automate AI Consulting ([m9wI5V0nSe0 @ 00:07:41])",
                     ],
                     [
-                        "Working launch funded with twenty thousand dollars",
-                        "$12,000 reserve; $2,500 setup; $2,500 hygiene; $3,000 acquisition",
-                        "Bookkeeper reconciles reserve balance against outstanding supplier commitments",
-                        "Freeze discretionary subscriptions when thirteen-week forecast becomes negative",
+                        "Introduce the monthly relationship during the first conversation",
+                        "Saraev raises the long-term goal while proposing the initial project, explaining that deeper business knowledge supports more valuable work.",
+                        "Nick Saraev ([RmYTguzXrVM @ 00:07:47])",
                     ],
                     [
-                        "Expanded launch funded with sixty thousand dollars",
-                        "$36,000 reserve; $9,000 setup; $6,000 hygiene; $9,000 acquisition",
-                        "Delivery lead releases setup budget against signed implementations",
-                        "Retain unused allocation rather than prepay speculative capacity",
+                        "Name the business job rather than the technology",
+                        "Malone turns AI voice agents into an after-hours front desk and uses the customer's own language throughout the sales conversation.",
+                        "Sean Malone | Close Bigger Deals ([fXrfPpcs7fw @ 00:05:05])",
                     ],
                     [
-                        "Minimum monthly operating envelope before additional payroll",
-                        "$250 software; $1,400 contractors; $300 acquisition; $300 administration; $250 contingency",
-                        "Owner separately budgets employee compensation and actual project overruns",
-                        "Reduce delivery commitments before missing contractor payment obligations",
+                        "Sell accountability to clients who want ongoing execution",
+                        "Sauer targets clients who want AI working in their business without personally operating it or hiring a full-time executive.",
+                        "Jeff Sauer - Service Stacking ([afaXZkksQs0 @ 00:03:37])",
                     ],
                     [
-                        "Middle monthly operating envelope before additional payroll",
-                        "$750 software; $4,700 contractors; $1,000 acquisition; $800 administration; $750 contingency",
-                        "Accountant reconciles cash spending against complete annual expense ledger",
-                        "Reprice low-contribution accounts before adding another recurring tool",
+                        "Separate fixed monthly output from unlimited request queues",
+                        "Wayfront distinguishes recurring tasks, fixed deliverable counts, and unlimited requests constrained by the number of simultaneously active projects.",
+                        "Wayfront ([0M1GD8qDDUw @ 00:02:05])",
                     ],
                     [
-                        "Upper monthly operating envelope before additional payroll",
-                        "$1,500 software; $11,500 contractors; $2,000 acquisition; $1,500 administration; $1,500 contingency",
-                        "Finance owner validates capacity without replacing canonical cost totals",
-                        "Stop unfunded expansion when collections lag delivery commitments",
+                        "Keep design requests and their feedback together asynchronously",
+                        "Malinowski describes a Trello workflow with one active request, delivery onto the same card, and client feedback directly on the board.",
+                        "Brett Malinowski ([vBXCdVHBK3o @ 00:00:48])",
                     ],
                 ],
             },
         },
         {
-            "heading": "2. Assemble twelve replaceable layers instead of a platform empire",
-            "epistemic_status": "operating_framework",
+            "id": "street-mechanics",
+            "title": "Exact Street Mechanics, Tools & Numbers",
             "paragraphs": [
                 (
-                    "Choose one default stack and make exceptions earn their "
-                    "maintenance burden. The twelve-layer matrix gives exact reference "
-                    "tier prices, not live procurement quotes; confirm current vendor "
-                    "terms, taxes, regional availability, and included usage before "
-                    "purchase. Annual-billing prices represent monthly equivalents and "
-                    "can require upfront payment. Start with GitHub Free, Cloudflare "
-                    "Free, a Render Starter worker, Supabase Pro when production "
-                    "needs justify it, metered OpenAI inference, Make Free for low "
-                    "volume orchestration, Bitwarden Teams, Google Workspace Business "
-                    "Starter, Sentry Developer, Better Stack's free uptime service, "
-                    "Stripe standard payments, and Tawk.to's free chat software. "
-                    "For two operators, the listed paid fixed components total "
-                    "$54 monthly: $7 Render, $25 Supabase, $8 Bitwarden, and "
-                    "$14 Workspace. Add model usage, payment fees, domain renewal, "
-                    "backup storage, bandwidth, and any workflow upgrades separately. "
-                    "This is a component subtotal, not a complete production "
-                    "operating budget. Free plans can lack required retention, "
-                    "availability commitments, or administrative controls. Upgrade "
-                    "because a signed requirement needs those features, not because "
-                    "a pricing page labels a tier professional. Keep vendor accounts "
-                    "under the agency or client entity rather than an individual "
-                    "contractor's personal identity."
+                    "Saraev's conversion sequence starts before delivery. Establish "
+                    "measurable indicators such as return, fulfillment cycle time, or "
+                    "software savings; send project updates every day or two; and "
+                    "collect additional opportunities while working inside the business. "
+                    "At handoff, add the configuration, a Google Doc operating procedure, "
+                    "and Loom training rather than sending only the finished build. "
+                    "Their delivery message spends roughly 70% celebrating completed "
+                    "work and 30% discussing further opportunities. One actual Upwork "
+                    "client progressed from low hourly work to fixed-price projects "
+                    "and then a long-term retainer after a delivery email proposed "
+                    "additional margin improvements. Ottley's maintenance-plus-improvement "
+                    "package supplies a specific recurring task: capture chatbot "
+                    "questions answered with 'I don't know' through Zapier into Google "
+                    "Sheets, review them weekly, obtain answers from the client, and "
+                    "add those answers to the knowledge base. ArriSse Corp supplies "
+                    "the intake structure around delivery: a payment confirmation, "
+                    "welcome packet, and kickoff link within two hours, followed by "
+                    "a diagnostic intake with one designated sign-off lead. Its "
+                    "scope fence makes exclusions as visible as inclusions, while "
+                    "out-of-scope requests become either a phase-two backlog item "
+                    "or a separately priced change with a revised schedule. Nick "
+                    "Saraev [RmYTguzXrVM @ 00:18:18]; Liam Ottley "
+                    "[kgE01J875dY @ 00:14:34]; ArriSse Corp "
+                    "[XKoGenFWVHs @ 00:01:35]."
                 ),
                 (
-                    "Separate the control plane from each client's data plane. "
-                    "GitHub stores reviewed code and deployment definitions; it should "
-                    "not store client exports or production credentials. Cloudflare "
-                    "handles DNS and selected edge protections, while the application "
-                    "still enforces authentication, authorization, and rate limits. "
-                    "Render executes bounded jobs against tenant-scoped Supabase "
-                    "records. Make connects approved events, not unrestricted "
-                    "administrative sessions. Give each integration the narrowest "
-                    "supported scope, separate development and production credentials, "
-                    "and record who authorized access. Under 18 U.S.C. § 1030, "
-                    "access boundaries have concrete legal significance; a service "
-                    "contract does not authorize every account or dataset a "
-                    "technician can reach. Use distinct client projects when shared "
-                    "isolation would be difficult to test. For a shared database, "
-                    "test row-level policies with two deliberately different tenant "
-                    "identities and verify that service credentials never enter a "
-                    "browser bundle. Store secrets in deployment secret facilities, "
-                    "use Bitwarden for human credential workflows, and redact "
-                    "tokens from logs. If a client requires private connectivity "
-                    "or data residency beyond the lean architecture, price that "
-                    "requirement explicitly or decline that scope rather than "
-                    "implying the default stack already provides it."
+                    "For a discrete B2B entry product, Saraev demonstrates proposal "
+                    "generation, contextual follow-up, and cyclic article production. "
+                    "The proposal workflow begins with a sales-call form containing "
+                    "the website, problem, solution, scope, cost, and delivery timing. "
+                    "AI turns those inputs into variables that replace fields in a "
+                    "Google Slides template; the alternative sends differently "
+                    "formatted copy through the PandaDoc API. The Google Slides "
+                    "option is presented as free, while the PandaDoc route costs "
+                    "more. In the AI Hustle Lab demonstration, follow-up starts "
+                    "with a Google Sheets CRM and a last-touch field. The workflow "
+                    "checks elapsed days, retrieves sent and received email history, "
+                    "feeds that history into AI, and creates a draft. Its routes "
+                    "use four, eight, and fourteen days, with a daily run. Malone "
+                    "provides the sales framing for this kind of build: repeat the "
+                    "owner's problem word for word and demonstrate one recognizable "
+                    "moment rather than touring every feature. For a voice system, "
+                    "the prospect calls from their own phone and hears the booking "
+                    "happen. The next questions ask what happens to that formerly "
+                    "missed call now and how many similar calls arrive weekly. "
+                    "Nick Saraev [T9diMzLIpqQ @ 00:01:46]; AI Hustle Lab "
+                    "[6FS1eyS2agI @ 00:05:16]; Sean Malone | Close Bigger Deals "
+                    "[fXrfPpcs7fw @ 00:09:20]."
                 ),
                 (
-                    "Meter workload before selecting a model or committing to an "
-                    "annual automation subscription. At the reference GPT-4.1 mini "
-                    "rates of $0.40 per million input tokens and $1.60 per "
-                    "million output tokens, a task using 2,000 input and 500 "
-                    "output tokens costs $0.0016 in uncached text inference. "
-                    "Ten thousand such tasks cost $16 before retries, tool "
-                    "charges, retrieval, and storage. A twenty percent retry "
-                    "allowance makes the inference estimate $19.20, not a "
-                    "complete delivery cost. A single hour of debugging at "
-                    "$75 exceeds that monthly model bill. Optimize repeated "
-                    "failures before shaving token fractions. Record tenant, "
-                    "workflow version, model version, token count, latency, and "
-                    "review outcome without retaining unnecessary source content. "
-                    "Set application-enforced usage limits because provider billing "
-                    "alerts may not stop spending. Sentry receives sanitized "
-                    "exceptions; uptime checks exercise a harmless health endpoint; "
-                    "backup jobs write recoverable copies outside the primary "
-                    "failure domain. Test restoration into an isolated environment "
-                    "and compare record counts and sampled hashes. An outage "
-                    "fallback should queue work or switch to manual processing, "
-                    "not silently send client content to an unapproved model "
-                    "provider merely because that provider is cheaper."
+                    "Standberry's avatar package starts with Sora 2 characters. Their "
+                    "demonstration records a short character video, uses good lighting "
+                    "and a quiet room, then places the character inside a prompted "
+                    "scene. A mascot alternative attaches a reference image instead. "
+                    "Standberry demonstrates their own likeness and describes obtaining "
+                    "the business owner's consent on the call before generating "
+                    "their clone. The commercial package charges $500 to configure "
+                    "High Level landing pages, calendar integration, sequences, and "
+                    "CRM, then $1,000 monthly for content, scheduling, maintenance, "
+                    "and usually three to five videos weekly. Agency Stack Guide "
+                    "shows the newsletter route in the same platform: describe the "
+                    "agent's role, specify the branded template, configure a schedule, "
+                    "inspect the generated draft, and send a test email to check "
+                    "custom fields and links. AI Money Math proposes a smaller "
+                    "local-business offer: missed-call text-back, an owner alert, "
+                    "and a monthly three-line report counting missed calls, texts, "
+                    "and replies. Its setup request asks for phone-system access, "
+                    "the owner's preferred message wording, and the alert number. "
+                    "The illustrated price is $750 setup plus $100 monthly, with "
+                    "the first setup fee waived in exchange for a result and "
+                    "testimonial. Sean Standberry [5558JLgLk50 @ 00:11:13]; "
+                    "Agency Stack Guide [raRxPWQp8ao @ 00:04:59]; AI Money Math "
+                    "[VZQaUF7kKNw @ 00:06:33]."
                 ),
             ],
             "table": {
-                "caption": "Twelve-Layer Named-Vendor Stack with Reference Prices and Lean Substitutes",
-                "headers": [
-                    "Layer and named vendor deployment choice",
-                    "Exact reference tier price and basis",
-                    "Production role and required control boundary",
-                    "Cheaper lean alternative and operational tradeoff",
-                ],
+                "caption": "Execution units that practitioners turn into repeatable paid work.",
+                "headers": ["Execution unit", "Exact workflow or offer", "Expert Source"],
                 "rows": [
                     [
-                        "Layer 01: GitHub Free source and release management",
-                        "Free tier: $0 subscription, with included usage limits",
-                        "Review changes and preserve reproducible releases without embedded secrets",
-                        "Local Git plus encrypted remote backups sacrifices hosted collaboration",
+                        "Turn delivery documentation into the next commercial conversation",
+                        "Include configuration, a Google Doc operating procedure, and Loom documentation; use the handoff to introduce extensions and a retainer conversation.",
+                        "Nick Saraev ([RmYTguzXrVM @ 00:18:18])",
                     ],
                     [
-                        "Layer 02: Cloudflare Free DNS and edge services",
-                        "Free tier: $0 subscription, excluding separately purchased domain registration",
-                        "Manage DNS and supported protections without replacing application authorization",
-                        "Registrar-provided DNS avoids another dashboard but reduces edge tooling",
+                        "Convert unanswered chatbot questions into a weekly improvement",
+                        "Capture unanswered questions in Google Sheets through Zapier, ask the client's team for answers, and improve the chatbot knowledge base.",
+                        "Liam Ottley ([kgE01J875dY @ 00:14:34])",
                     ],
                     [
-                        "Layer 03: Render Starter application execution service",
-                        "Starter compute reference: $7 monthly per selected service instance",
-                        "Run bounded workers with health checks and scoped deployment secrets",
-                        "Existing authorized client compute avoids incremental hosting but increases coordination",
+                        "Generate tailored proposals directly from sales-call form inputs",
+                        "Collect the problem, proposed solution, scope, cost, and timing; generate copy and populate the Google Slides proposal template.",
+                        "Nick Saraev ([T9diMzLIpqQ @ 00:01:46])",
                     ],
                     [
-                        "Layer 04: Supabase Pro relational storage and authentication",
-                        "Pro reference: $25 monthly subscription, plus applicable usage charges",
-                        "Store tenant-scoped records and validate row-level authorization policies explicitly",
-                        "Supabase Free costs $0 but production requirements may exceed limits",
+                        "Use last-touch dates and conversation history for follow-up",
+                        "Read CRM rows, evaluate elapsed time, retrieve sent and received emails, and generate contextual drafts using four-, eight-, and fourteen-day routes.",
+                        "AI Hustle Lab ([6FS1eyS2agI @ 00:07:18])",
                     ],
                     [
-                        "Layer 05: OpenAI GPT-4.1 mini text inference",
-                        "Uncached text: $0.40/million input tokens; $1.60/million output tokens",
-                        "Execute evaluated tasks with token ceilings and documented data routing",
-                        "Deterministic rules avoid inference charges when extraction needs no generation",
+                        "Package recurring avatar content with the lead-conversion system",
+                        "Charge the proposed $500 setup and $1,000 monthly for the High Level system, content scheduling, maintenance, and three to five weekly videos.",
+                        "Sean Standberry ([5558JLgLk50 @ 00:11:13])",
                     ],
                     [
-                        "Layer 06: Make Free event orchestration service",
-                        "Free tier: $0 subscription, subject to current included allowances",
-                        "Connect authorized triggers with deduplication and recoverable execution records",
-                        "Python scheduled jobs remove orchestration subscription but require maintenance ownership",
-                    ],
-                    [
-                        "Layer 07: Bitwarden Teams shared human credential management",
-                        "Teams reference: $4 per user monthly when billed annually",
-                        "Control shared human credentials with access reviews and timely offboarding",
-                        "Bitwarden Free individual vaults cost $0 but lack equivalent team controls",
-                    ],
-                    [
-                        "Layer 08: Google Workspace Business Starter business identity",
-                        "Business Starter reference: $7 per user monthly with annual commitment",
-                        "Provide managed email identities and enforce supported multifactor authentication",
-                        "Existing client-managed identities avoid duplicate seats but require explicit ownership",
-                    ],
-                    [
-                        "Layer 09: Sentry Developer application error visibility",
-                        "Developer tier: $0 subscription, subject to current event allowances",
-                        "Capture sanitized exceptions and connect failures to specific workflow versions",
-                        "Structured local logs avoid subscriptions but demand manual incident review",
-                    ],
-                    [
-                        "Layer 10: Better Stack free uptime monitoring",
-                        "Free uptime tier: $0 subscription, within current monitor allowances",
-                        "Check harmless health endpoints and route actionable service alerts",
-                        "Independent scheduled probes cost little but require reliable external hosting",
-                    ],
-                    [
-                        "Layer 11: Stripe standard domestic online card collection",
-                        "U.S. domestic online cards reference: 2.9% plus $0.30 per transaction",
-                        "Collect service invoices and reconcile fees, refunds, and unsettled balances",
-                        "Bank ACH invoicing may cost less; compare actual bank tariffs",
-                    ],
-                    [
-                        "Layer 12: Tawk.to free customer chat software",
-                        "Core chat software: $0 subscription; optional paid services excluded",
-                        "Route support requests without inviting credentials into conversational transcripts",
-                        "Shared support email avoids another widget but weakens queue visibility",
+                        "Prepare branded newsletters while retaining review before sending",
+                        "Use a copy of the existing template, inspect the generated newsletter, and test custom fields and links by emailing yourself first.",
+                        "Agency Stack Guide ([raRxPWQp8ao @ 00:04:59])",
                     ],
                 ],
             },
             "callout": {
                 "kind": "INSIDER PRO-TIPS",
-                "title": "Buy reversibility before buying another subscription",
+                "title": "Make the recurring value tangible",
                 "body": (
-                    "A cheap stack becomes expensive when credentials, data formats, "
-                    "or workflow logic cannot move without a complete rebuild."
+                    "Practitioners attach the monthly conversation to documentation, "
+                    "visible improvements, controlled access, and reviewed deliverables."
                 ),
                 "items": [
-                    "Export Make workflow definitions and keep the business rules in tested Python functions whenever practical.",
-                    "Tag every paid API request with a tenant and workflow identifier so one noisy client cannot hide inside aggregate spending.",
-                    "Negotiate client-owned production accounts for sensitive deployments, while documenting the agency's exact support access and removal process.",
-                    "Benchmark ten deliberately difficult examples before increasing model spend; malformed inputs and missing context often dominate model choice.",
-                ],
-            },
-        },
-        {
-            "heading": "3. Fund signal-based acquisition and permissioned enrichment economics",
-            "epistemic_status": "illustrative_model",
-            "paragraphs": [
-                (
-                    "Deploy high_velocity_dm_outbound_systems as a warm-signal operating "
-                    "system, not a mass-message engine. Publish a useful workflow "
-                    "diagnostic and invite a specific comment, reaction, or inbound "
-                    "message through a platform-supported interaction. A reaction "
-                    "counts only where the platform permits that messaging route "
-                    "and the invitation clearly describes the requested follow-up. "
-                    "Require that user-initiated trigger before automated dispatch, "
-                    "and send external links only after the prospect replies. "
-                    "Route permitted conversations among authorized business inboxes "
-                    "for ownership and response coverage, never to evade limits. "
-                    "For illustration, 400 qualifying interactions at a thirty "
-                    "percent reply rate produce 120 replies; a twenty percent "
-                    "booking rate produces 24 calls; a twenty-five percent "
-                    "close rate produces six projects. At $10,000 each, that "
-                    "is $60,000 in potential signed implementation value, recognized "
-                    "only as contractual obligations are delivered. With $1,200 "
-                    "campaign spending and twelve labor hours at $50, modeled "
-                    "acquisition cost is $300 per closed project. Track actual "
-                    "cohorts rather than presenting these conversion assumptions as "
-                    "proven results. If replies halve, recalculate capacity and "
-                    "acquisition economics before increasing dispatch volume. Preserve "
-                    "the trigger record so operators can distinguish requested "
-                    "follow-up from opportunistic unsolicited contact."
-                ),
-                (
-                    "PeerFloodError and silent Message Request graveyards are "
-                    "signals to stop and inspect the channel, not instructions "
-                    "to rotate accounts. Pause dispatch after platform restrictions, "
-                    "duplicate messages, missing trigger evidence, or recipient "
-                    "objections. Fall back to the public conversation or wait "
-                    "for an inbound message where permitted. Use approved APIs "
-                    "and platform-native automation; an internal trigger record "
-                    "does not override channel rules. Maintain recipient suppression "
-                    "across inboxes, deduplicate event identifiers, and expire "
-                    "stale signals. Store only the conversation metadata needed "
-                    "for service and measurement. For commercial email follow-up, "
-                    "apply 15 U.S.C. § 7704 requirements, including accurate "
-                    "headers, required identification and address information, and "
-                    "timely processing of opt-out requests; do not assume those "
-                    "email rules describe every social messaging channel. Review "
-                    "performance claims under 15 U.S.C. § 45: saying an "
-                    "automation saved forty hours requires a defensible baseline "
-                    "and measured comparison. Keep paid pilot results separate "
-                    "from estimates and exclude rejected outputs from success "
-                    "counts. If a client requests appointment volume without "
-                    "limits on method, rewrite the scope around permitted "
-                    "signals, qualified conversations, and response handling before "
-                    "building any automated outreach."
-                ),
-                (
-                    "Treat free_tier_api_waterfall_multiplexing as a rights-aware "
-                    "enrichment service. Evaluate thirty to sixty providers with "
-                    "genuine ongoing developer allowances, often fifty to one "
-                    "thousand lookups monthly, rather than expiring trials. "
-                    "Maintain forty or more interchangeable adapters as the "
-                    "catalog matures, but activate only providers whose terms "
-                    "permit the intended caching, derived output, and resale. "
-                    "Do not manufacture accounts to multiply allowances. Forty "
-                    "providers with five hundred eligible lookups each offer "
-                    "twenty thousand nominal calls, not twenty thousand complete "
-                    "records. At a sixty percent valid Postgres cache-hit rate, "
-                    "ten thousand requested records leave four thousand misses. "
-                    "At two calls per miss, upstream demand becomes eight "
-                    "thousand calls before retries and field-specific bottlenecks. "
-                    "Twenty customers paying $199 monthly generate $3,980 "
-                    "monthly service revenue within the $99–$499 offering range. "
-                    "An illustrative $600 labor, $100 infrastructure, and $200 "
-                    "paid-overflow budget leaves $3,080 contribution before "
-                    "acquisition and general overhead, not owner profit. Prioritize "
-                    "fresh local graph hits; if quotas tighten, use permitted "
-                    "public-web, DNS, or MX extraction and label unresolved "
-                    "fields accurately. MX presence does not verify a mailbox. "
-                    "Respect website restrictions and privacy duties, and count "
-                    "this service inside agency revenue rather than adding it "
-                    "again to canonical totals."
-                ),
-            ],
-            "table": {
-                "caption": "Mapped Play Unit Economics, Rights Checks, and Failure Fallbacks",
-                "headers": [
-                    "Operating play and measurable production unit",
-                    "Illustrative arithmetic with explicitly bounded assumptions",
-                    "Required evidence before spending or dispatch",
-                    "Fallback when the primary mechanism fails",
-                ],
-                "rows": [
-                    [
-                        "high_velocity_dm_outbound_systems: qualifying user-triggered interaction entering supported messaging workflow",
-                        "400 triggers produce 120 replies at thirty percent response",
-                        "Retain invitation wording, trigger timestamp, and supported channel permission",
-                        "Wait for inbound contact when channel authorization is insufficient",
-                    ],
-                    [
-                        "high_velocity_dm_outbound_systems: qualified sales conversation converted into project",
-                        "120 replies yield 24 calls and six modeled projects",
-                        "Separate booked calls, attended calls, contracts, and recognized revenue",
-                        "Revise offer relevance before increasing permitted message frequency",
-                    ],
-                    [
-                        "high_velocity_dm_outbound_systems: acquisition cost including operator handling time",
-                        "$1,200 spending plus $600 labor divided by six equals $300",
-                        "Record actual operator hours and acquisition spend by cohort",
-                        "Pause restricted inboxes rather than rotating identities around limits",
-                    ],
-                    [
-                        "free_tier_api_waterfall_multiplexing: nominal provider capacity before field-specific constraints",
-                        "Forty adapters times five hundred allowances equals twenty thousand calls",
-                        "Document current entitlements, resale rights, caching restrictions, and expiry",
-                        "Remove restricted adapters and shrink the promised field coverage",
-                    ],
-                    [
-                        "free_tier_api_waterfall_multiplexing: cache-adjusted external request demand per monthly batch",
-                        "10,000 requests minus sixty percent hits requires 8,000 upstream calls",
-                        "Validate freshness windows and two-call assumption against observed workloads",
-                        "Use permitted public DNS extraction without claiming mailbox verification",
-                    ],
-                    [
-                        "free_tier_api_waterfall_multiplexing: subscription contribution before acquisition and general overhead",
-                        "Twenty $199 subscriptions less $900 modeled costs leaves $3,080",
-                        "Include support labor and paid overflow despite free lookup allowances",
-                        "Cap usage, disclose degraded fields, and reprice unsustainable accounts",
-                    ],
-                ],
-            },
-        },
-        {
-            "heading": "4. Verify entity hygiene, data boundaries, and recoverable delivery",
-            "epistemic_status": "operating_framework",
-            "paragraphs": [
-                (
-                    "Establish the entity, bank account, and bookkeeping before "
-                    "mixing customer deposits with personal spending. Obtain an "
-                    "EIN directly through the IRS when required, maintain "
-                    "state registrations and applicable local licenses, and "
-                    "review current ownership-reporting obligations rather than "
-                    "relying on an old formation checklist. Use an entity-owned "
-                    "operating account and a separately tracked reserve balance. "
-                    "Confirm account ownership, bank identity, deposit-insurance "
-                    "treatment, transfer controls, and payment approval authority "
-                    "before moving material funds. Enable multifactor authentication "
-                    "and independently verify changed supplier banking instructions. "
-                    "Ask an insurance broker for technology errors and "
-                    "omissions and cyber coverage matching the actual services, "
-                    "data types, subcontractors, and contractual indemnities. "
-                    "Compare exclusions, deductibles, defense provisions, and "
-                    "retroactive dates, not just premiums. A certificate alone "
-                    "does not establish that a particular automation failure "
-                    "is covered. The service agreement should define acceptance, "
-                    "support hours, usage limits, suspension rights, incident "
-                    "notice duties, subprocessors, retention, and deletion. Under "
-                    "17 U.S.C. § 204(a), transfers of copyright ownership "
-                    "generally require a signed writing; distinguish assigned "
-                    "client deliverables from licensed agency templates and "
-                    "third-party components. Secure contractor assignments where "
-                    "needed before promising ownership that the agency has "
-                    "not actually acquired."
-                ),
-                (
-                    "Turn data-processing terms into executable configuration. "
-                    "Inventory source systems, personal-information categories, "
-                    "authorized purposes, recipients, storage locations, and "
-                    "retention periods for each workflow. Where the California "
-                    "Consumer Privacy Act applies, California Civil Code "
-                    "§ 1798.100(d) requires specified contractual protections "
-                    "when a business discloses personal information to covered "
-                    "recipients; configure the relevant restrictions instead "
-                    "of relying on a generic confidentiality paragraph. "
-                    "A client administrator should authorize named system "
-                    "access, scopes, and duration. Capture that authorization "
-                    "before connecting production accounts. Seed staging with "
-                    "synthetic records and run cross-tenant access attempts, "
-                    "prompt-injection samples, malformed payloads, expired "
-                    "tokens, and duplicate webhook deliveries. Treat retrieved "
-                    "documents as data rather than executable instructions; "
-                    "keep tool permissions outside model-generated text. "
-                    "Require human review for consequential employment, "
-                    "credit, healthcare, or comparable decisions and define "
-                    "who has authority to act. A low-confidence result "
-                    "must enter a review queue, not quietly become an "
-                    "automated decision. Preserve enough evidence to explain "
-                    "an output while minimizing retained client content. "
-                    "Test deletion through caches, exports, and scheduled "
-                    "backup expiration, documenting any retention obligations "
-                    "that prevent immediate removal from particular records."
-                ),
-                (
-                    "Launch only after four evidence-backed checks pass: "
-                    "commercial funding, authorized access, measured quality, "
-                    "and recoverable operations. For commercial funding, "
-                    "confirm the signed scope, collected deposit, supplier "
-                    "commitments, and reserve runway under a thirty-day "
-                    "collection delay. For access, verify tenant separation, "
-                    "credential rotation, provider routing permissions, and "
-                    "a tested offboarding procedure. For quality, use a "
-                    "versioned evaluation set containing normal cases and "
-                    "known failure modes; agree the acceptance threshold "
-                    "with the client before seeing production results. "
-                    "For recovery, restore a backup, replay a failed "
-                    "job safely, disable outbound actions, and demonstrate "
-                    "a manual work queue. Assign each test an owner, "
-                    "timestamp, artifact, and repeat condition. A successful "
-                    "demo is insufficient evidence of reliable recovery. "
-                    "Limit the first production batch to an agreed "
-                    "volume that a human can inspect, then expand "
-                    "only when measured outcomes remain within the "
-                    "contracted thresholds. Route incidents to an accountable "
-                    "person rather than a shared inbox without coverage. "
-                    "After each launch, compare estimated hours, actual "
-                    "hours, token charges, support demand, and collection "
-                    "timing. Feed those numbers into the next fixed-price "
-                    "quote so growth strengthens contribution instead of "
-                    "concealing unpaid labor beneath attractive software margins."
-                ),
-            ],
-            "table": {
-                "caption": "Pre-Launch Evidence Register for Entity, Data, Quality, and Recovery",
-                "headers": [
-                    "Control area and accountable operating owner",
-                    "Evidence required before the first production batch",
-                    "Concrete verification procedure and passing condition",
-                    "Response when evidence or behavior fails",
-                ],
-                "rows": [
-                    [
-                        "Entity and banking ownership assigned to business principal",
-                        "Formation records, bank ownership evidence, and reconciled opening balances",
-                        "Verify payment authority and independently confirm changed supplier instructions",
-                        "Hold transfers until authorized signers resolve the ownership discrepancy",
-                    ],
-                    [
-                        "Insurance and contract alignment assigned to operating principal",
-                        "Broker-reviewed coverage terms and signed scope with bounded obligations",
-                        "Compare exclusions and deductibles against actual workflow failure exposures",
-                        "Narrow service commitments or obtain suitable coverage before delivery",
-                    ],
-                    [
-                        "Client access authorization assigned to designated client administrator",
-                        "Named systems, permitted scopes, access duration, and revocation owner",
-                        "Attempt prohibited cross-tenant reads and verify requests are rejected",
-                        "Remove credentials and repair isolation before reconnecting production systems",
-                    ],
-                    [
-                        "Output quality and human review assigned to delivery lead",
-                        "Versioned evaluation results and client-agreed thresholds for consequential outputs",
-                        "Exercise adversarial inputs and confirm uncertain outputs reach reviewers",
-                        "Return workflow to manual processing while correcting failure causes",
-                    ],
-                    [
-                        "Restore and replay readiness assigned to incident owner",
-                        "Completed restore record and replay logs showing duplicate prevention",
-                        "Recover isolated data and replay failed jobs without repeated actions",
-                        "Suspend automation until recovery works within the agreed objective",
-                    ],
-                    [
-                        "Spend and service limits assigned to account owner",
-                        "Tenant usage ceilings, collection status, and documented suspension conditions",
-                        "Exhaust test allowance and confirm expensive actions stop safely",
-                        "Queue requests and notify client instead of creating uncapped charges",
-                    ],
-                ],
-            },
-            "callout": {
-                "kind": "OPERATOR GATE",
-                "title": "Four pre-flight checks with artifacts, owners, and stop conditions",
-                "body": (
-                    "A check passes only when the designated owner can reproduce "
-                    "the result and locate the supporting artifact."
-                ),
-                "items": [
-                    "Funding check: verify collected deposit, signed scope, and reserve coverage after modeling a thirty-day collection delay.",
-                    "Access check: demonstrate authorized scopes, rejected cross-tenant access, working revocation, and approved provider data routes.",
-                    "Quality check: meet the client's predetermined evaluation threshold and demonstrate human review for consequential decisions.",
-                    "Recovery check: restore an isolated backup, replay one failed job without duplicate effects, and stop outbound actions on demand.",
+                    (
+                        "Use Saraev's 70/30 delivery split: celebrate completed work "
+                        "for most of the handoff, then introduce the next opportunities. "
+                        "[Nick Saraev — RmYTguzXrVM @ 00:19:01]"
+                    ),
+                    (
+                        "Offer one new feature monthly rather than letting a maintenance "
+                        "and improvement package imply infinite additions. "
+                        "[Liam Ottley — kgE01J875dY @ 00:13:59]"
+                    ),
+                    (
+                        "Bundle CRM build time with maintenance and defined Slack "
+                        "availability; Saraev illustrates 40 new-build hours and "
+                        "noon-to-2 p.m. access Monday through Friday. "
+                        "[Nick Saraev Daily — LjJGh4J1eqM @ 00:13:44]"
+                    ),
+                    (
+                        "Send the newsletter to yourself before client distribution "
+                        "and check that custom fields work and every link opens. "
+                        "[Agency Stack Guide — raRxPWQp8ao @ 00:04:59]"
+                    ),
                 ],
             },
             "sop_steps": [
                 {
                     "step": 1,
-                    "title": "Lock the commercial envelope",
-                    "action": "Record scope, milestones, collections, and reserve allocation.",
+                    "title": "Sell a bounded first result",
+                    "action": "Choose a fixed-scope project with a clear endpoint.",
                     "detail": (
-                        "Attach the signed service schedule and thirteen-week cash "
-                        "forecast; identify every supplier commitment before release."
+                        "Automate AI Consulting recommends two to four initial projects, "
+                        "such as lead qualification, follow-up, or customer intake, "
+                        "followed by screenshots and testimonials documenting delivery. "
+                        "[Automate AI Consulting — m9wI5V0nSe0 @ 00:07:41]"
                     ),
                 },
                 {
                     "step": 2,
-                    "title": "Provision bounded production access",
-                    "action": "Create entity-controlled accounts and tenant-scoped credentials.",
+                    "title": "Set delivery boundaries immediately",
+                    "action": "Send onboarding material and identify one sign-off lead.",
                     "detail": (
-                        "Retain client authorization, enforce multifactor authentication, "
-                        "and test credential removal with the designated administrator."
+                        "ArriSse Corp specifies confirmation, a welcome packet, and a "
+                        "kickoff link within two hours; the diagnostic intake records "
+                        "one authorized sign-off lead and the communication rules. "
+                        "[ArriSse Corp — XKoGenFWVHs @ 00:01:35]"
                     ),
                 },
                 {
                     "step": 3,
-                    "title": "Prove quality and recovery",
-                    "action": "Run the evaluation set, restore exercise, and replay test.",
+                    "title": "Deliver and show the next opportunity",
+                    "action": "Package the completed system with documentation and training.",
                     "detail": (
-                        "Save results with workflow versions; verify manual review, "
-                        "duplicate prevention, and application-enforced usage ceilings."
+                        "Saraev delivers configuration, a textual operating procedure, "
+                        "and video documentation, then introduces extensions while the "
+                        "client is receiving the completed work. "
+                        "[Nick Saraev — RmYTguzXrVM @ 00:18:18]"
                     ),
                 },
                 {
                     "step": 4,
-                    "title": "Release a bounded first batch",
-                    "action": "Process the agreed pilot volume and reconcile actual economics.",
+                    "title": "Price the ongoing work and expose its value",
+                    "action": "Estimate maintenance effort and attach a recurring improvement.",
                     "detail": (
-                        "Compare accepted outputs, operator hours, API charges, "
-                        "support requests, and collections before expanding throughput."
+                        "Ottley estimates or caps developer hours and marks costs up "
+                        "at least two to three times. Their chatbot improvement example "
+                        "turns unanswered questions into a weekly knowledge-base update. "
+                        "[Liam Ottley — kgE01J875dY @ 00:18:22] "
+                        "[Liam Ottley — kgE01J875dY @ 00:14:34]"
                     ),
                 },
             ],
         },
+        {
+            "id": "alternative-playbooks",
+            "title": "Where Practitioners Disagree & Alternative Playbooks",
+            "paragraphs": [
+                (
+                    "There is no shared monthly price across these playbooks. AI Money "
+                    "Math proposes $100 monthly for missed-call text-back and explicitly "
+                    "puts monthly tools at $20 to $50 per client, leaving $50 to $80 "
+                    "before other work. Its first-client strategy sacrifices the $750 "
+                    "setup fee for proof. Ottley takes the opposite beginner position: "
+                    "small retainers can consume sales time, create admin, and leave "
+                    "too little profit after developer work. Their preferred early "
+                    "move is repeated sales of the main product, with ongoing "
+                    "maintenance becoming more practical once an employee can handle "
+                    "the routine. Standberry rejects $3,000 to $5,000 monthly as "
+                    "the entry offer for the local businesses they target and "
+                    "proposes $1,000 for content plus conversion infrastructure. "
+                    "Sauer instead describes a broader enablement role worth "
+                    "$2,000 to $15,000 monthly, depending on scope, with a roster "
+                    "of five to ten clients. These speakers are not quoting the "
+                    "same bundle: one message and an owner handoff, maintenance "
+                    "obligations, ongoing avatar marketing, and continuing business "
+                    "enablement are different jobs. Their actual disagreement is "
+                    "how much recurring responsibility a beginner should accept "
+                    "and what client relationship makes that responsibility worthwhile. "
+                    "AI Money Math [VZQaUF7kKNw @ 00:08:10]; Liam Ottley "
+                    "[kgE01J875dY @ 00:23:11]; Sean Standberry "
+                    "[5558JLgLk50 @ 00:09:58]; Jeff Sauer - Service Stacking "
+                    "[afaXZkksQs0 @ 00:07:26]."
+                ),
+                (
+                    "Timing and access reveal another split. Saraev plants the monthly "
+                    "idea during the first conversation but asks for the retainer "
+                    "immediately after project delivery, when the client has received "
+                    "the work and the extra documentation. Their offer can begin "
+                    "with one month and no lock-in, supported by a 90-day roadmap. "
+                    "ArriSse Corp argues that introducing a retainer only at the "
+                    "end makes it feel discretionary; its 60-day engine puts a "
+                    "no-charge value snapshot at day 21 and a quarterly business "
+                    "review at day 45. Sauer gives the relationship a longer "
+                    "initial runway, saying 90 days are needed to get the first "
+                    "real project working and learn how the client operates. "
+                    "The service channel also changes the bargain. Saraev includes "
+                    "strategy calls and a defined Slack availability window as "
+                    "valuable extras. Ottley's Morningside model deliberately keeps "
+                    "communication in Trello comments to reduce Slack chatter. "
+                    "Clients prioritize scoped automation requests, developers "
+                    "track work centrally in Airtable, and the next task starts "
+                    "after the current one is completed. Saraev sells accessible "
+                    "partnership; Ottley describes a production queue with more "
+                    "communication friction and less administrative back-and-forth. "
+                    "Nick Saraev [RmYTguzXrVM @ 00:21:36]; ArriSse Corp "
+                    "[XKoGenFWVHs @ 00:05:30]; Jeff Sauer - Service Stacking "
+                    "[afaXZkksQs0 @ 00:05:09]; Liam Ottley "
+                    "[kgE01J875dY @ 00:31:44]."
+                ),
+                (
+                    "Ownership and billing create alternatives even when the automation "
+                    "looks similar. Ottley's basic maintenance and improvement "
+                    "packages run in the client's accounts, with the client paying "
+                    "platform costs. Their automation-as-a-service option runs in "
+                    "the agency's accounts, with the agency paying costs and "
+                    "charging a flat monthly fee, a fee plus usage, or usage alone. "
+                    "Ottley calls the latter arrangement stickier but harder to "
+                    "sell because clients ask whether they own or can access "
+                    "the bot. AI Money Math explicitly makes client-owned "
+                    "accounts a selling point: add the operator as manager "
+                    "and explain that the business keeps its system if the "
+                    "operator disappears. Saraev's daily retainer examples favor "
+                    "bundled deliverables or hours, and they say they usually "
+                    "do not bill by usage. Their voice illustration instead "
+                    "asks the operator to calculate provider costs for the "
+                    "included talk time and add weekly analysis effort. MIA "
+                    "My Intelligent Assistant makes that underlying supplier "
+                    "choice concrete: Bland AI charges subscription plus usage, "
+                    "whereas SuperMIA offers a credit pool serving voice and "
+                    "chat. Its comparison favors different platforms at different "
+                    "volumes rather than treating the advertised minute rate "
+                    "as the entire bill. Liam Ottley [kgE01J875dY @ 00:15:40]; "
+                    "AI Money Math [VZQaUF7kKNw @ 00:08:31]; Nick Saraev Daily "
+                    "[LjJGh4J1eqM @ 00:16:29]; MIA My Intelligent Assistant "
+                    "[v38lkQnptDg @ 00:00:58]."
+                ),
+            ],
+            "table": {
+                "caption": "Different scopes produce different prices, terms, and operating systems.",
+                "headers": ["Decision under dispute", "Side-by-side practitioner positions", "Expert Source"],
+                "rows": [
+                    [
+                        "Whether a beginner should accept small monthly obligations",
+                        "AI Money Math proposes $100 monthly text-back; Ottley warns that small maintenance retainers can distract beginners from higher-value selling.",
+                        "AI Money Math ([VZQaUF7kKNw @ 00:06:33]); Liam Ottley ([kgE01J875dY @ 00:23:11])",
+                    ],
+                    [
+                        "Whether local content pricing fits broader enablement work",
+                        "Standberry proposes $1,000 monthly for content and conversion infrastructure; Sauer places broader AI enablement between $2,000 and $15,000 monthly.",
+                        "Sean Standberry ([5558JLgLk50 @ 00:10:13]); Jeff Sauer - Service Stacking ([afaXZkksQs0 @ 00:07:26])",
+                    ],
+                    [
+                        "When the retainer becomes an explicit commercial conversation",
+                        "Saraev pitches immediately after delivery; ArriSse introduces a day-21 value snapshot and day-45 business review during the project.",
+                        "Nick Saraev ([RmYTguzXrVM @ 00:21:36]); ArriSse Corp ([XKoGenFWVHs @ 00:05:30])",
+                    ],
+                    [
+                        "Whether direct messaging access belongs inside the package",
+                        "Saraev bundles a Slack response window; Ottley keeps communication in Trello comments specifically to reduce chatter and administrative overhead.",
+                        "Nick Saraev Daily ([Z5rSDEbn7wU @ 00:09:27]); Liam Ottley ([kgE01J875dY @ 00:31:44])",
+                    ],
+                    [
+                        "Who owns the accounts that keep automation running",
+                        "Ottley offers agency-hosted automation as a service; AI Money Math explicitly sells client-owned accounts with the operator added as manager.",
+                        "Liam Ottley ([kgE01J875dY @ 00:15:40]); AI Money Math ([VZQaUF7kKNw @ 00:08:31])",
+                    ],
+                    [
+                        "Whether voice billing favors access fees or pooled credits",
+                        "MIA's comparison favors SuperMIA at smaller volumes but estimates Bland cheaper at 100,000 monthly minutes for voice-only workloads.",
+                        "MIA My Intelligent Assistant ([v38lkQnptDg @ 00:04:18])",
+                    ],
+                ],
+            },
+        },
+        {
+            "id": "failure-modes",
+            "title": "Firsthand Failure Modes, Traps & Economics Checks",
+            "paragraphs": [
+                (
+                    "The first failure can happen before any retainer exists. Automate "
+                    "AI Consulting describes spending months improving demos and "
+                    "rewriting offers without sending a single outreach message. "
+                    "Their first cold-email campaign sent about 200 emails and "
+                    "received zero replies. Looking back, they identify insufficient "
+                    "outreach, missing follow-up, an unclear offer, and copy that "
+                    "resembled everyone else's. Malone reports a related selling "
+                    "slump after roughly six months of running a mastermind: "
+                    "their pitch drifted toward hiring, onboarding, training, "
+                    "and constructing a lead-generation system. They changed "
+                    "the framing to getting three hours back for family time. "
+                    "Sauer identifies a retention trap after the sale: about "
+                    "half the people they coach are DIYers who ask intensely, "
+                    "get the answer, and leave to implement it themselves. "
+                    "Those engagements deliver value but do not compound into "
+                    "the continuing revenue Sauer wants. Their alternative "
+                    "client wants execution without operating the technology. "
+                    "Across these firsthand accounts, technical work alone "
+                    "does not settle the commercial problem: Automate AI "
+                    "Consulting had to show the offer, Malone had to sell "
+                    "the destination, and Sauer had to distinguish temporary "
+                    "instruction from an ongoing operating relationship. "
+                    "Automate AI Consulting [m9wI5V0nSe0 @ 00:09:30]; "
+                    "Sean Malone | Close Bigger Deals [fXrfPpcs7fw @ 00:08:12]; "
+                    "Jeff Sauer - Service Stacking [afaXZkksQs0 @ 00:02:57]."
+                ),
+                (
+                    "Recurring access can become recurring drag. Ottley introduces "
+                    "their retainer advice through mistakes and pitfalls from "
+                    "running their own agency, then singles out difficult "
+                    "clients, underpricing, long lock-ins, and selling retainers "
+                    "too early. A difficult client paired with subjective "
+                    "chatbot responses creates repeated arguments about whether "
+                    "delivery is acceptable. A $300 or $500 monthly agreement "
+                    "can leave only about $100 profit in their example once "
+                    "an employee contributes a few hours weekly, while the "
+                    "owner still carries messages and mental clutter. ArriSse "
+                    "Corp's scope controls target the same operational leakage: "
+                    "delayed assets, contradictory stakeholder feedback, revision "
+                    "loops, and requests sent to a personal phone outside "
+                    "business hours. Its response is one sign-off lead, "
+                    "visible exclusions, a 48-hour feedback expectation, and "
+                    "day-for-day schedule movement when the client causes "
+                    "delay. Saraev adds a firsthand reminder about delivery "
+                    "timing: the client whose margins improved by more than "
+                    "the proposed 5% took longer than initially anticipated. "
+                    "Their earlier retainer pitch became a real relationship, "
+                    "but the improvement still required more time. Monthly "
+                    "pricing and optimistic delivery expectations remain "
+                    "separate operating questions in these accounts. Liam "
+                    "Ottley [kgE01J875dY @ 00:21:19]; ArriSse Corp "
+                    "[XKoGenFWVHs @ 00:04:09]; Nick Saraev "
+                    "[RmYTguzXrVM @ 00:20:30]."
+                ),
+                (
+                    "Keep the financial examples attached to their actual cost "
+                    "boundaries. Saraev's daily explanation compares $850 left "
+                    "from a $1,000 project after $150 acquisition spending with "
+                    "$5,850 left from six $1,000 monthly payments after the "
+                    "same acquisition expense. They explicitly introduce that "
+                    "calculation before software, business expenses, personal "
+                    "pay, and taxes. Agency Stack Guide likewise calls five "
+                    "$297 newsletter clients $1,485 in recurring revenue before "
+                    "expenses. MIA My Intelligent Assistant supplies a supplier "
+                    "comparison rather than an agency profit figure: at 1,000 "
+                    "monthly minutes, it places SuperMIA at $114 and Bland "
+                    "AI at $419; at 10,000 minutes, approximately $1,300 "
+                    "versus $1,600. At 100,000 voice-only minutes, its estimates "
+                    "reverse to roughly $7,500 for Bland and $8,500 for "
+                    "SuperMIA. The channel attributes the reversal to the "
+                    "relative importance of the subscription and minute "
+                    "charges, while noting that adding chat changes the "
+                    "comparison again. Saraev's voice-retainer illustration "
+                    "similarly requires pricing the included talk time against "
+                    "the provider's billable rate and adding the operator's "
+                    "weekly analysis time. They explicitly say that they "
+                    "have bundled voice agents but have not sold a "
+                    "voice-agent-specific retainer. Nick Saraev Daily "
+                    "[Z5rSDEbn7wU @ 00:07:08]; Agency Stack Guide "
+                    "[raRxPWQp8ao @ 00:05:46]; MIA My Intelligent Assistant "
+                    "[v38lkQnptDg @ 00:02:48]; Nick Saraev Daily "
+                    "[LjJGh4J1eqM @ 00:14:57]."
+                ),
+            ],
+            "table": {
+                "caption": "Reported mistakes and explicit cost checks behind the monthly headline.",
+                "headers": ["Failure or economics check", "Practitioner account and operating response", "Expert Source"],
+                "rows": [
+                    [
+                        "Preparing impressive demos without ever exposing the offer",
+                        "Automate AI Consulting reports months spent tweaking builds without outreach, followed by a roughly 200-email campaign that received zero responses.",
+                        "Automate AI Consulting ([m9wI5V0nSe0 @ 00:01:20]); Automate AI Consulting ([m9wI5V0nSe0 @ 00:09:30])",
+                    ],
+                    [
+                        "Selling the construction process instead of the destination",
+                        "Malone reports a slump after pitching systems and VA onboarding, then changed the pitch toward reclaiming three hours for family time.",
+                        "Sean Malone | Close Bigger Deals ([fXrfPpcs7fw @ 00:08:12])",
+                    ],
+                    [
+                        "Assuming every satisfied coaching client wants ongoing execution",
+                        "Sauer describes DIY clients as intense while engaged but likely to leave once they have enough direction to implement independently.",
+                        "Jeff Sauer - Service Stacking ([afaXZkksQs0 @ 00:02:57])",
+                    ],
+                    [
+                        "Locking the agency into small and demanding retainers",
+                        "Ottley warns that low monthly profit, ongoing communication, and six-month commitments can become dead weight as the main service grows.",
+                        "Liam Ottley ([kgE01J875dY @ 00:24:25])",
+                    ],
+                    [
+                        "Letting unpriced requests silently consume the delivery margin",
+                        "ArriSse uses visible exclusions, a phase-two backlog, priced changes, official communication channels, and schedule extensions for client-caused delays.",
+                        "ArriSse Corp ([XKoGenFWVHs @ 00:04:09])",
+                    ],
+                    [
+                        "Comparing voice platforms using only the advertised minute rate",
+                        "MIA distinguishes access fees from included minutes and shows the estimated cost winner changing with volume and voice-only versus voice-plus-chat needs.",
+                        "MIA My Intelligent Assistant ([v38lkQnptDg @ 00:02:00]); MIA My Intelligent Assistant ([v38lkQnptDg @ 00:04:18])",
+                    ],
+                ],
+            },
+            "callout": {
+                "kind": "OPERATOR GATE",
+                "title": "Check the obligation behind the monthly payment",
+                "body": (
+                    "Ottley stresses client fit, sufficient margin, and an exit route; "
+                    "the other practitioners make workload and supplier costs explicit."
+                ),
+                "items": [
+                    (
+                        "Before accepting a long relationship, consider whether the "
+                        "client is workable, especially when chatbot outputs invite "
+                        "subjective criticism. "
+                        "[Liam Ottley — kgE01J875dY @ 00:22:21]"
+                    ),
+                    (
+                        "Make the sign-off lead explicit and route extra work either "
+                        "to the phase-two backlog or to a priced change with a "
+                        "schedule adjustment. "
+                        "[ArriSse Corp — XKoGenFWVHs @ 00:02:47] "
+                        "[ArriSse Corp — XKoGenFWVHs @ 00:04:40]"
+                    ),
+                    (
+                        "Prefer a month-to-month exit over a small six-month "
+                        "maintenance commitment that can become dead weight as "
+                        "the agency's main product grows. "
+                        "[Liam Ottley — kgE01J875dY @ 00:24:25]"
+                    ),
+                    (
+                        "Count the platform access fee as well as usage; compare "
+                        "voice-only requirements against the combined voice-and-chat "
+                        "credit pool before treating a minute rate as the whole bill. "
+                        "[MIA My Intelligent Assistant — v38lkQnptDg @ 00:02:00] "
+                        "[MIA My Intelligent Assistant — v38lkQnptDg @ 00:04:49]"
+                    ),
+                ],
+            },
+        },
     ],
-    "pull_quote": "Protect the reserve, meter the workflow, and buy capacity only after a customer funds the constraint.",
+    "pull_quote": (
+        "'One-time projects get you in the game. Retainers keep you in the game.' "
+        "— Automate AI Consulting (m9wI5V0nSe0 @ 00:03:20)."
+    ),
     "diagram_id": "diag-07",
     "action_checklist": [
-        "Select the $5,000, $20,000, or $60,000 capital envelope and ring-fence sixty percent as liquid working capital.",
-        "Build a thirteen-week cash forecast that includes real staffing obligations, delayed collections, refund exposure, and supplier commitments.",
-        "Confirm all twelve stack prices and contractual limits, then provision only the components required by the first signed workflow.",
-        "Implement user-triggered messaging with supported platform routes, cross-inbox suppression, and external links withheld until a prospect replies.",
-        "Catalog enrichment-provider rights and quotas, validate cache freshness, and enforce paid-overflow limits before selling subscriptions.",
-        "Complete the four pre-flight checks, retain reproducible artifacts, and release a human-reviewable first production batch.",
+        (
+            "Choose a fixed-scope first project, deliver it, and collect screenshots "
+            "and testimonials before offering the continuation. "
+            "[Automate AI Consulting — m9wI5V0nSe0 @ 00:07:41]"
+        ),
+        (
+            "Ask which part of the client's week drives them nuts, record their "
+            "exact words, and use that sentence in the proposal and demo. "
+            "[Sean Malone | Close Bigger Deals — fXrfPpcs7fw @ 00:03:39]"
+        ),
+        (
+            "Choose the delivery format explicitly: recurring tasks, fixed monthly "
+            "deliverables, or an unlimited request queue with concurrency limits. "
+            "[Wayfront — 0M1GD8qDDUw @ 00:01:27] "
+            "[Wayfront — 0M1GD8qDDUw @ 00:02:05]"
+        ),
+        (
+            "Send the completed system with textual and video documentation, then "
+            "introduce the next opportunities using Saraev's 70/30 delivery split. "
+            "[Nick Saraev — RmYTguzXrVM @ 00:18:18] "
+            "[Nick Saraev — RmYTguzXrVM @ 00:19:01]"
+        ),
+        (
+            "Estimate or cap maintenance hours, mark developer costs up at least "
+            "two to three times, and make included improvements finite. "
+            "[Liam Ottley — kgE01J875dY @ 00:18:22] "
+            "[Liam Ottley — kgE01J875dY @ 00:13:59]"
+        ),
+        (
+            "Keep value visible by discussing the client's next decisions and "
+            "reporting what you are working on, including during quieter months. "
+            "[Jeff Sauer - Service Stacking — afaXZkksQs0 @ 00:06:19]"
+        ),
     ],
     "statutory_citations": [
         {
-            "title": "18 U.S.C. § 1030 — Fraud and related activity in connection with computers",
-            "url": "https://www.law.cornell.edu/uscode/text/18/1030",
-            "relevance": (
-                "Establish authorized client-system access and document scope; "
-                "technical reach does not establish permission."
-            ),
+            "title": "Nick Saraev — How I Turn One AI Project Into $5K Monthly Retainers [00:18:18]",
+            "url": "https://www.youtube.com/watch?v=RmYTguzXrVM&t=1098s",
+            "relevance": "Primary practitioner testimony on documentation, project handoff, and introducing future retainer work.",
         },
         {
-            "title": "15 U.S.C. § 45 — Unfair methods of competition and unfair or deceptive acts or practices",
-            "url": "https://www.law.cornell.edu/uscode/text/15/45",
-            "relevance": (
-                "Substantiate material performance and savings claims with "
-                "measured baselines and accurately described results."
-            ),
+            "title": "Liam Ottley — Complete Guide to AI Automation Agency Monthly Retainers [00:18:22]",
+            "url": "https://www.youtube.com/watch?v=kgE01J875dY&t=1102s",
+            "relevance": "Primary practitioner testimony on estimating maintenance labor and maintaining a pricing buffer.",
         },
         {
-            "title": "15 U.S.C. § 7704 — Requirements for transmission of messages",
-            "url": "https://www.law.cornell.edu/uscode/text/15/7704",
-            "relevance": (
-                "Apply commercial-email requirements to email follow-up, including "
-                "accurate transmission information and required opt-out handling."
-            ),
+            "title": "Jeff Sauer - Service Stacking — Turn Your AI Skills Into Long-Term Clients (The 90-Day Method) [00:05:09]",
+            "url": "https://www.youtube.com/watch?v=afaXZkksQs0&t=309s",
+            "relevance": "Primary practitioner testimony on the 90-day enablement relationship and learning the client's business.",
         },
         {
-            "title": "17 U.S.C. § 204 — Execution of transfers of copyright ownership",
-            "url": "https://www.law.cornell.edu/uscode/text/17/204",
-            "relevance": (
-                "Document copyright transfers in signed writings where required "
-                "and distinguish client assignments from agency template licenses."
-            ),
+            "title": "ArriSse Corp — The Exact System Boutique Agencies Use to Stop Scope Creep & Close $5k/mo Retainers [00:04:40]",
+            "url": "https://www.youtube.com/watch?v=XKoGenFWVHs&t=280s",
+            "relevance": "Primary practitioner testimony on backlog treatment, priced changes, and schedule boundaries.",
+        },
+    ],
+    "source_citations": [
+        {
+            "source_type": "video_pro_tip",
+            "video_id": "RmYTguzXrVM",
+            "title": "How I Turn One AI Project Into $5K Monthly Retainers",
+            "channel": "Nick Saraev",
+            "author": "Nick Saraev",
+            "text": "Project delivery is your highest leverage moment for retainer conversion.",
+            "tip": "Project delivery is your highest leverage moment for retainer conversion.",
+            "timestamp": 1098,
+            "timestamp_seconds": 1098,
+            "timestamp_label": "[00:18:18]",
+            "url": "https://www.youtube.com/watch?v=RmYTguzXrVM&t=1098s",
+            "markdown": "[00:18:18](https://www.youtube.com/watch?v=RmYTguzXrVM&t=1098s)",
+            "epistemic_status": "attributed_practitioner_claim",
+            "relevance": "Practitioner testimony on using completed delivery to introduce recurring work.",
         },
         {
-            "title": "California Civil Code § 1798.100(d) — Personal-information disclosure contracts",
-            "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=1798.100.&lawCode=CIV",
-            "relevance": (
-                "Where applicable, implement required recipient contract terms "
-                "and align data use, retention, and downstream processing with them."
-            ),
+            "source_type": "video_pro_tip",
+            "video_id": "m9wI5V0nSe0",
+            "title": "One-Time Projects vs Retainers: Which Gets You to $10K/Month?",
+            "channel": "Automate AI Consulting",
+            "author": "Automate AI Consulting",
+            "text": "One-time projects get you in the game. Retainers keep you in the game.",
+            "tip": "One-time projects get you in the game. Retainers keep you in the game.",
+            "timestamp": 200,
+            "timestamp_seconds": 200,
+            "timestamp_label": "[00:03:20]",
+            "url": "https://www.youtube.com/watch?v=m9wI5V0nSe0&t=200s",
+            "markdown": "[00:03:20](https://www.youtube.com/watch?v=m9wI5V0nSe0&t=200s)",
+            "epistemic_status": "attributed_practitioner_claim",
+            "relevance": "Practitioner testimony on sequencing first projects and recurring relationships.",
+        },
+        {
+            "source_type": "video_pro_tip",
+            "video_id": "kgE01J875dY",
+            "title": "Complete Guide to AI Automation Agency Monthly Retainers",
+            "channel": "Liam Ottley",
+            "author": "Liam Ottley",
+            "text": "You want to mark it up at least two to three times, ideally more if you can get it, depending on your prior results.",
+            "tip": "You want to mark it up at least two to three times, ideally more if you can get it, depending on your prior results.",
+            "timestamp": 1102,
+            "timestamp_seconds": 1102,
+            "timestamp_label": "[00:18:22]",
+            "url": "https://www.youtube.com/watch?v=kgE01J875dY&t=1102s",
+            "markdown": "[00:18:22](https://www.youtube.com/watch?v=kgE01J875dY&t=1102s)",
+            "epistemic_status": "attributed_practitioner_claim",
+            "relevance": "Practitioner testimony on maintenance cost estimation and pricing margin.",
+        },
+        {
+            "source_type": "video_pro_tip",
+            "video_id": "5558JLgLk50",
+            "title": "NEW AI Agency Business Model I'm Using to Make $474,996/mo",
+            "channel": "Sean Standberry",
+            "author": "Sean Standberry",
+            "text": "You charge a one-time setup fee of $500 to build out their complete High Level system, including the landing pages, calendar integration, automation sequences, and CRM setup.",
+            "tip": "You charge a one-time setup fee of $500 to build out their complete High Level system, including the landing pages, calendar integration, automation sequences, and CRM setup.",
+            "timestamp": 673,
+            "timestamp_seconds": 673,
+            "timestamp_label": "[00:11:13]",
+            "url": "https://www.youtube.com/watch?v=5558JLgLk50&t=673s",
+            "markdown": "[00:11:13](https://www.youtube.com/watch?v=5558JLgLk50&t=673s)",
+            "epistemic_status": "attributed_practitioner_claim",
+            "relevance": "Practitioner testimony on the setup component of the avatar-content retainer.",
+        },
+        {
+            "source_type": "video_pro_tip",
+            "video_id": "LjJGh4J1eqM",
+            "title": "3 AI Agency Retainer Options You Can Steal Today",
+            "channel": "Nick Saraev Daily",
+            "author": "Nick Saraev Daily",
+            "text": "I'm going to maintain all of your old systems plus give you 40 hours of new build time.",
+            "tip": "I'm going to maintain all of your old systems plus give you 40 hours of new build time.",
+            "timestamp": 840,
+            "timestamp_seconds": 840,
+            "timestamp_label": "[00:14:00]",
+            "url": "https://www.youtube.com/watch?v=LjJGh4J1eqM&t=840s",
+            "markdown": "[00:14:00](https://www.youtube.com/watch?v=LjJGh4J1eqM&t=840s)",
+            "epistemic_status": "attributed_practitioner_claim",
+            "relevance": "Practitioner testimony on bundling maintenance and new-build capacity.",
+        },
+        {
+            "source_type": "video_pro_tip",
+            "video_id": "Z5rSDEbn7wU",
+            "title": "AI Automation Agency Retainer Model Explained",
+            "channel": "Nick Saraev Daily",
+            "author": "Nick Saraev Daily",
+            "text": "They prepay. They pay you ahead of time. They lock in the hours.",
+            "tip": "They prepay. They pay you ahead of time. They lock in the hours.",
+            "timestamp": 359,
+            "timestamp_seconds": 359,
+            "timestamp_label": "[00:05:59]",
+            "url": "https://www.youtube.com/watch?v=Z5rSDEbn7wU&t=359s",
+            "markdown": "[00:05:59](https://www.youtube.com/watch?v=Z5rSDEbn7wU&t=359s)",
+            "epistemic_status": "attributed_practitioner_claim",
+            "relevance": "Practitioner testimony on prepayment and scheduling stability.",
+        },
+        {
+            "source_type": "video_pro_tip",
+            "video_id": "afaXZkksQs0",
+            "title": "Turn Your AI Skills Into Long-Term Clients (The 90-Day Method)",
+            "channel": "Jeff Sauer - Service Stacking",
+            "author": "Jeff Sauer - Service Stacking",
+            "text": "A retainer is a fee for availability. An AI enablement partner is a fee with accountability.",
+            "tip": "A retainer is a fee for availability. An AI enablement partner is a fee with accountability.",
+            "timestamp": 297,
+            "timestamp_seconds": 297,
+            "timestamp_label": "[00:04:57]",
+            "url": "https://www.youtube.com/watch?v=afaXZkksQs0&t=297s",
+            "markdown": "[00:04:57](https://www.youtube.com/watch?v=afaXZkksQs0&t=297s)",
+            "epistemic_status": "attributed_practitioner_claim",
+            "relevance": "Practitioner testimony on positioning an ongoing AI enablement role.",
+        },
+        {
+            "source_type": "video_pro_tip",
+            "video_id": "vBXCdVHBK3o",
+            "title": "7 Productized Services That Will Make You $100,000/month (One Person Business)",
+            "channel": "Brett Malinowski",
+            "author": "Brett Malinowski",
+            "text": "This graphic designer offers unlimited design services for $5,000 a month, but the catch is you can only make one request at a time and each request takes 48 hours to complete.",
+            "tip": "This graphic designer offers unlimited design services for $5,000 a month, but the catch is you can only make one request at a time and each request takes 48 hours to complete.",
+            "timestamp": 48,
+            "timestamp_seconds": 48,
+            "timestamp_label": "[00:00:48]",
+            "url": "https://www.youtube.com/watch?v=vBXCdVHBK3o&t=48s",
+            "markdown": "[00:00:48](https://www.youtube.com/watch?v=vBXCdVHBK3o&t=48s)",
+            "epistemic_status": "attributed_practitioner_claim",
+            "relevance": "Practitioner description of a concurrency-limited subscription service.",
+        },
+        {
+            "source_type": "video_pro_tip",
+            "video_id": "0M1GD8qDDUw",
+            "title": "Every Type Of Productized Service EVER + Examples",
+            "channel": "Wayfront",
+            "author": "Wayfront",
+            "text": "A limit to how many concurrent requests the client can have at the same time maintains a reasonable workload.",
+            "tip": "A limit to how many concurrent requests the client can have at the same time maintains a reasonable workload.",
+            "timestamp": 140,
+            "timestamp_seconds": 140,
+            "timestamp_label": "[00:02:20]",
+            "url": "https://www.youtube.com/watch?v=0M1GD8qDDUw&t=140s",
+            "markdown": "[00:02:20](https://www.youtube.com/watch?v=0M1GD8qDDUw&t=140s)",
+            "epistemic_status": "attributed_practitioner_claim",
+            "relevance": "Practitioner description of workload boundaries in unlimited-request services.",
+        },
+        {
+            "source_type": "video_pro_tip",
+            "video_id": "T9diMzLIpqQ",
+            "title": "Sell These 3 Simple AI Automations for $1.7K to B2B Agencies",
+            "channel": "Nick Saraev",
+            "author": "Nick Saraev",
+            "text": "Here are three boring AI automations you can sell right now to B2B agencies, digital marketing companies, and SEO businesses for 1.7K a pop or up.",
+            "tip": "Here are three boring AI automations you can sell right now to B2B agencies, digital marketing companies, and SEO businesses for 1.7K a pop or up.",
+            "timestamp": 0,
+            "timestamp_seconds": 0,
+            "timestamp_label": "[00:00:00]",
+            "url": "https://www.youtube.com/watch?v=T9diMzLIpqQ&t=0s",
+            "markdown": "[00:00:00](https://www.youtube.com/watch?v=T9diMzLIpqQ&t=0s)",
+            "epistemic_status": "attributed_practitioner_claim",
+            "relevance": "Practitioner offer framing for discrete B2B automation projects.",
+        },
+        {
+            "source_type": "video_pro_tip",
+            "video_id": "fXrfPpcs7fw",
+            "title": "How to Sell AI Automation Services (Without Pitching AI)",
+            "channel": "Sean Malone | Close Bigger Deals",
+            "author": "Sean Malone | Close Bigger Deals",
+            "text": "The simple rule: name the job, not the tool.",
+            "tip": "The simple rule: name the job, not the tool.",
+            "timestamp": 305,
+            "timestamp_seconds": 305,
+            "timestamp_label": "[00:05:05]",
+            "url": "https://www.youtube.com/watch?v=fXrfPpcs7fw&t=305s",
+            "markdown": "[00:05:05](https://www.youtube.com/watch?v=fXrfPpcs7fw&t=305s)",
+            "epistemic_status": "attributed_practitioner_claim",
+            "relevance": "Practitioner testimony on outcome-led positioning for retainers.",
+        },
+        {
+            "source_type": "video_pro_tip",
+            "video_id": "6FS1eyS2agI",
+            "title": "Sell These 3 Simple AI Automations for $1.7K to B2B Agencies",
+            "channel": "AI Hustle Lab",
+            "author": "AI Hustle Lab",
+            "text": "In my case, I've done 4 days, 8 days, and 14 days. And then just have this run once per day.",
+            "tip": "In my case, I've done 4 days, 8 days, and 14 days. And then just have this run once per day.",
+            "timestamp": 438,
+            "timestamp_seconds": 438,
+            "timestamp_label": "[00:07:18]",
+            "url": "https://www.youtube.com/watch?v=6FS1eyS2agI&t=438s",
+            "markdown": "[00:07:18](https://www.youtube.com/watch?v=6FS1eyS2agI&t=438s)",
+            "epistemic_status": "attributed_practitioner_claim",
+            "relevance": "Practitioner demonstration of timed contextual follow-up routes.",
+        },
+        {
+            "source_type": "video_pro_tip",
+            "video_id": "VZQaUF7kKNw",
+            "title": "How to Sell AI Automations to Local Businesses (Beginner Guide)",
+            "channel": "AI Money Math",
+            "author": "AI Money Math",
+            "text": "The numbers I used last time: $750 for setup and $100 a month to run it.",
+            "tip": "The numbers I used last time: $750 for setup and $100 a month to run it.",
+            "timestamp": 393,
+            "timestamp_seconds": 393,
+            "timestamp_label": "[00:06:33]",
+            "url": "https://www.youtube.com/watch?v=VZQaUF7kKNw&t=393s",
+            "markdown": "[00:06:33](https://www.youtube.com/watch?v=VZQaUF7kKNw&t=393s)",
+            "epistemic_status": "attributed_practitioner_claim",
+            "relevance": "Practitioner pricing illustration for missed-call text-back.",
+        },
+        {
+            "source_type": "video_pro_tip",
+            "video_id": "XKoGenFWVHs",
+            "title": "The Exact System Boutique Agencies Use to Stop Scope Creep & Close $5k/mo Retainers",
+            "channel": "ArriSse Corp",
+            "author": "ArriSse Corp",
+            "text": "Option A logs the request into a phase two backlog, while option B prices the change and adjusts the current schedule.",
+            "tip": "Option A logs the request into a phase two backlog, while option B prices the change and adjusts the current schedule.",
+            "timestamp": 280,
+            "timestamp_seconds": 280,
+            "timestamp_label": "[00:04:40]",
+            "url": "https://www.youtube.com/watch?v=XKoGenFWVHs&t=280s",
+            "markdown": "[00:04:40](https://www.youtube.com/watch?v=XKoGenFWVHs&t=280s)",
+            "epistemic_status": "attributed_practitioner_claim",
+            "relevance": "Practitioner instruction on commercial treatment of scope changes.",
+        },
+        {
+            "source_type": "video_pro_tip",
+            "video_id": "raRxPWQp8ao",
+            "title": "Build This AI Agent & Charge $297/Month Per Client! (Step-by-Step)",
+            "channel": "Agency Stack Guide",
+            "author": "Agency Stack Guide",
+            "text": "Five clients would be $1,485 in recurring revenue before expenses.",
+            "tip": "Five clients would be $1,485 in recurring revenue before expenses.",
+            "timestamp": 346,
+            "timestamp_seconds": 346,
+            "timestamp_label": "[00:05:46]",
+            "url": "https://www.youtube.com/watch?v=raRxPWQp8ao&t=346s",
+            "markdown": "[00:05:46](https://www.youtube.com/watch?v=raRxPWQp8ao&t=346s)",
+            "epistemic_status": "attributed_practitioner_claim",
+            "relevance": "Practitioner revenue illustration for the proposed managed newsletter service.",
+        },
+        {
+            "source_type": "video_pro_tip",
+            "video_id": "v38lkQnptDg",
+            "title": "Bland AI vs SuperMIA vs Retell AI: Which Voice Platform Wins at 10K Calls?",
+            "channel": "MIA My Intelligent Assistant",
+            "author": "MIA My Intelligent Assistant",
+            "text": "That monthly subscription fee from Bland is purely for platform access. It doesn't buy you a single minute of call time.",
+            "tip": "That monthly subscription fee from Bland is purely for platform access. It doesn't buy you a single minute of call time.",
+            "timestamp": 120,
+            "timestamp_seconds": 120,
+            "timestamp_label": "[00:02:00]",
+            "url": "https://www.youtube.com/watch?v=v38lkQnptDg&t=120s",
+            "markdown": "[00:02:00](https://www.youtube.com/watch?v=v38lkQnptDg&t=120s)",
+            "epistemic_status": "attributed_practitioner_claim",
+            "relevance": "Practitioner comparison of platform access fees and voice usage costs.",
         },
     ],
 }

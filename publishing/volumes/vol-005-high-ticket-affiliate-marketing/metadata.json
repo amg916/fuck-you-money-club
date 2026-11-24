@@ -9,49 +9,49 @@
       "MARKETING"
     ],
     "deck": [
-      "INTERCEPT BUYER INTENT. WIRE S2S.",
-      "COMPOUND RECURRING SHARES."
+      "TEST RECURRING OFFERS, BUYER INTENT, AND ACQUISITION ECONOMICS",
+      "BUILD BRIDGE FUNNELS, TRACKED LEAD FLOWS, AND EMAIL AUDIENCES"
     ],
-    "lead": "The Complete Playbook for Recurring B2B Software Shares, Stacked Fintech CPA Bounties, S2S Attribution & Scaling a $600k/yr 3-to-5 Person Referral Portfolio",
-    "summary": "From bottom-of-funnel comparison calculators and PartnerStack/Impact/Everflow S2S postbacks to FTC 16 CFR Part 255 disclosures, SparkLoop co-reg, and <=25% merchant-concentration caps: build an exit-ready referral media asset.",
+    "lead": "Explore how practitioners select recurring and high-ticket offers, build trust through content and funnels, and track affiliate sales, calls, and leads against acquisition costs and program rules.",
+    "summary": "All 12 chapters synthesize 192 verbatim YouTube practitioner testimonies with timestamped inline attribution. They examine offer selection, affiliate networks, bridge funnels, search visibility, call and lead delivery, conversion tracking, paid acquisition, newsletters, and disclosure requirements while distinguishing reported results from illustrative economics.",
     "chapters": [
-      "High-ticket recurring & CPA models",
-      "Merchant LTV & 8 attribution rails",
-      "Net EPC, clawbacks & Net-60 float",
-      "Edge comparison hubs & clean domains",
-      "Site-reputation abuse & poaching defense",
-      "Spend-velocity & BOFU query mining",
-      "Calculators, S2S postbacks & ping-post",
-      "Extensions, pixels & multi-engine GEO",
-      "FTC 255, TM+ riders & TCPA consent",
-      "YouTube, SparkLoop co-reg & SERP loops",
-      "3-to-5 person pods & 30x-45x exits",
-      "First 30-day commission launch sprint"
+      "Recurring SaaS & High-Ticket Affiliate Marketing",
+      "Find and Manage Offers on PartnerStack and Impact",
+      "Build Bridge Pages and High-Ticket Sales Funnels",
+      "Borrowed-Authority SEO and Reputation-Abuse Risk",
+      "Capture Buyer Searches with Reviews and Comparisons",
+      "AI-Era SEO, GEO & High-Ticket Affiliate Growth",
+      "Pay-Per-Call Affiliate Marketing: Traffic, Buyers, Tracking & Scaling",
+      "Lead Arbitrage: Traffic, Buyers, and Delivery",
+      "Track Referrals, Sold Leads, and Conversion Events",
+      "Paid Affiliate Traffic and Acquisition Economics",
+      "Newsletter Growth, Email Offers, and Paid Recommendations",
+      "Affiliate Disclosures, Endorsements, and Brand-Name Advertising"
     ],
     "flow": [
       [
-        "UNDERWRITE",
-        "Approve 3+ high-LTV offers"
+        "QUALIFY OFFERS AND BUYERS",
+        "Match products to audience problems, inspect demand and retention, apply to relevant programs, and confirm commission terms, refund windows, buyer criteria, and payment timing."
       ],
       [
-        "PRE-SELL",
-        "Ship edge ROI calculator"
+        "BUILD THE CONVERSION PATH",
+        "Connect opt-in pages, bridge videos, useful follow-up emails, and offer-specific destinations; for calls and leads, establish routing, delivery, and buyer acceptance requirements."
       ],
       [
-        "TRACK",
-        "Mint click_id & S2S webhooks"
+        "CREATE BUYER-FOCUSED CONTENT",
+        "Publish reviews, comparisons, tutorials, and newsletters grounded in product experience, clear answers, and consistent entities; weigh borrowed-authority visibility against removal and reputation-abuse risk."
       ],
       [
-        "DISCLOSE",
-        "Enforce FTC 255 & TM+ rules"
+        "VALIDATE TRACKING AND PERMISSIONS",
+        "Test affiliate links, referral IDs, call routes, webhooks, and sold-lead events before sending traffic; verify clear disclosures, endorsement accuracy, and brand-advertising permissions."
       ],
       [
-        "ACQUIRE",
-        "BOFU search, YouTube & co-reg"
+        "TEST ACQUISITION ECONOMICS",
+        "Run bounded traffic tests, check search terms and subscriber quality, and compare acquisition costs with accepted calls, sold leads, commissions, refunds, and delayed payment."
       ],
       [
-        "DIVERSIFY",
-        "Cap single merchant <=25%"
+        "REFINE AND SCALE SELECTIVELY",
+        "Use conversion evidence and buyer feedback to improve content, targeting, and follow-up; expand only where margins, lead acceptance, retention, and delivery capacity support it."
       ]
     ]
   },
@@ -59,10 +59,10 @@
   "book_series": "THE BIG MONEY PLAYBOOKS",
   "tagline": "Big Money. Small Teams. No Bullshit.",
   "title": "HIGH-TICKET AFFILIATE MARKETING",
-  "subtitle": "The Complete Playbook for Recurring B2B Software Shares, Stacked Fintech CPA Bounties, S2S Attribution & Scaling a $600k/yr 3-to-5 Person Referral Portfolio",
+  "subtitle": "Recurring SaaS, Buyer-Intent Content, and Trust-Building Funnels—Scale Calls, Leads, Paid Traffic, and Email with Verified Tracking and Clear Disclosures",
   "chapter_count": 12,
-  "total_word_count": 70289,
-  "expert_youtube_link_count": 216,
+  "total_word_count": 66004,
+  "expert_youtube_link_count": 192,
   "min_expert_youtube_links_required": 150,
   "target_expert_youtube_links": "150-200+",
   "min_expert_youtube_links_per_chapter": 12,
@@ -77,5 +77,5 @@
   "publication_status": "approved_master",
   "public_deploy_approved": false,
   "paid_sales_approved": false,
-  "updated_at": "2026-11-23T22:48:00Z"
+  "updated_at": "2026-11-24T15:53:32Z"
 }
